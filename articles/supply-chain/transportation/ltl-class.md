@@ -1,84 +1,71 @@
 ---
-# required metadata
-
 title: Create a new LTL class
 description: This topic describes how to create a new LTL class in Dynamics 365 Supply Chain Management. 
-author: GalynaFedorova
+author: Henrikan
 ms.date: 04/05/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: WHSLTLClass
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: v-gfedorova
+ms.author: henrikan
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: 10.0.8
-
 ---
-# **Set up an LTL class**
+
+# Set up an LTL class
 
 [!include [banner](../includes/banner.md)]
 
-The LTL class stands for less-than-truckload freight shipping class and enables classifying the items that can be shipped. Generally, every type of product or commodity has a National Motor Freight Classification (NMFC), which corresponds to a specific freight class number for LTL shipments. LTL freight class represents a category of items while NMFC codes relate to specific commodities within each of the 18 freight classes.
+A less thant truckload (LTL) class is a freight shipping class used to classify items that can be shipped. Generally, every type of product or commodity has a National Motor Freight Classification (NMFC), which corresponds to a specific freight class number for LTL shipments. The LTL freight class represents a category of items while NMFC codes relate to specific commodities within each of the 18 freight classes.
 
-This feature can help workers determine a commodity’s freight class. Here are some examples:
--	Company can establish the commodity’s freight classes. It allows you to determine its packing requirements, ensuring that your goods are well protected and shipped safely.
--	Knowing the freight class of your goods will help you get an accurate shipping estimate. 
--	Company will be able to accurately assess a commodity’s class.
+This feature can help you to:
 
-This topic describes how to create an LTL class in Dynamics 365 Supply Chain management.
+- Establish the LTL freight classes in use at your company.
+- Determine packing requirements for each class, ensuring that your products are well protected and shipped safely. <!-- KFM: How can we do this? Maybe we should mention it (for example, by providing the name of the page where we make this association). -->
+- Accurately assess the LTL class of each product. <!-- KFM: assess and assign? -->
+- Get accurate shipping estimates by knowing the freight class for each of your products.
 
-## **Create an LTL class**
+This topic describes how to create LTL classes in Dynamics 365 Supply Chain management.
+
+## Create an LTL class
 
 To create an LTL class, follow these steps:
 
-1. Go to  **Warehouse management**  \>  **Setup**  \>  **Inventory**  \>  **LTL classes**.
+1. Do one of the following:
+    - Go to  **Warehouse management \> Setup \> Inventory \> LTL classes**.
+    - Go to  **Transportation management \> Setup \> Transportation standards \> LTL classes**.
 
-   *–or–*
+2. Select **New** to create a new LTL class and specify the following details:
 
-   Go to  **Transportation management**  \>  **Setup**  \>  **Transportation standards**  \>  **LTL classes**.
+    - **LTL class** – Enter the LTL class identifier (ID) for commodity type.
+    - **Name** – Enter a name for the LTL class. <!-- KFM: "Enter a descriptive name that will help you and other users select the correct class for each product"?  -->
+    - **Class** – Enter the LTL class that is associated with a LTL class. <!-- KFM: The difference between **LTL class** and **Class** isn't clear. In the examples they are always the same. Might one be NMFC?  -->
 
-2. Select **New** to create a new LTL class and specify the details as described in the following table.
+## Example of how to set up LTL classes
 
-    - **LTL class** - Enter the LTL class identifier (ID) for commodity type. 
-    - **Name** - Enter a name for the LTL class. 
-    - **LTL class** - Enter the LTL class that is associated with a LTL class. 
+The following example shows how to set up two different LTL classes to use with different types of products.
 
-## **Example: Different LTL classes**
-
-The products sold by your organization may come in variants differentiated by LTL classes as following:
-
-1. Go to **Warehouse management**  \>  **Setup**  \>  **Inventory**  \>  **LTL classes**.
+1. Go to **Warehouse management \> Setup \> Inventory \> LTL classes**.
 1. On the Action Pane, select **New**.
 1. On the new line, set the following values:
 
     - **LTL class:** *92.5*
     - **Name:** *Computers, monitors, refrigerators*
-    - **LTL class:** *92.5*
+    - **Class:** *92.5*
 
 1. On the Action Pane, select **Save**.
 1. On the Action Pane, select **New**.
 1. On the new line, set the following values:
 
-     - **LTL class:** *125*
-    - **Name:** *Small household appliances*
     - **LTL class:** *125*
+    - **Name:** *Small household appliances*
+    - **Class:** *125*
 
 1. On the Action Pane, select **Save**.
 
-## **Related tasks**
+## Additional resources
 
-[Create a bill of landing](https://docs.microsoft.com/en-us/dynamics365/supply-chain/transportation/create-bill-of-lading)
+- [Create a bill of lading](create-bill-of-lading.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
