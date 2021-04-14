@@ -1072,8 +1072,6 @@
           href: lifecycle-services/getting-started-lcs.md
         - name: What's new or changed in Lifecycle Services
           href: lifecycle-services/whats-new-lcs.md
-        - name: Known issues
-          href: lifecycle-services/known-issues.md
         - name: Removed or deprecated features in Lifecycle Services (LCS)
           href: lifecycle-services/removed-deprecated-features.md
       - name: Lifecycle Services user guide
