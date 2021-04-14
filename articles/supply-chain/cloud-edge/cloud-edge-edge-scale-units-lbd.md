@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.19
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Edge scale units can be deployed by creating a local business data (LBD) environment and then configuring it to function as a scale unit in your distributed hybrid topology for Microsoft Dynamics Supply Chain Management. To achieve this effect, you associate the LBD environment with a hub Supply Chain Management cloud environment.
+Edge scale units can be deployed by creating a local business data (LBD) environment and then configuring it to function as a scale unit in your distributed hybrid topology for Microsoft Dynamics Supply Chain Management. To achieve this effect, you associate the LBD environment with a Supply Chain Management cloud environment that functions as a hub.
 
 Edge scale units are still in preview. Therefore, you may use an environment of this type only according to the [preview terms](https://aka.ms/scmcnepreviewterms).
 
