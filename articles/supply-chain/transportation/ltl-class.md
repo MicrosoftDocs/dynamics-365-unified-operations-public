@@ -19,12 +19,14 @@ ms.dyn365.ops.version: 10.0.8
 
 A less than truckload (LTL) class is a freight shipping class used to classify items that can be shipped. Generally, every type of product or commodity has a National Motor Freight Classification (NMFC), which corresponds to a specific freight class number for LTL shipments. The LTL freight class represents a category of items while NMFC codes relate to specific commodities within each of the 18 freight classes.
 
-This feature can help you to:
+This feature enables you to use your system to:
 
 - Establish the LTL freight classes in use at your company.
-- Determine packing requirements for each class, ensuring that your products are well protected and shipped safely. <!-- KFM: How can we do this? Maybe we should mention it (for example, by providing the name of the page where we make this association). -->
-- Accurately assess the LTL class of each product. <!-- KFM: assess and assign? -->
-- Get accurate shipping estimates by knowing the freight class for each of your products.
+- Assign each LTL class to an NMFC code using the **NMFC Codes** page.
+- Assign an NMFC code (and thereby its associated LTL code) to each product using the **Products** page.
+- Accurately assess the LTL class of each product for which an NMFC code is assigned.
+- Determine packing requirements for each class by checking the international LTL standards, thus ensuring that your products will be well protected and shipped safely.
+- Get accurate shipping estimates based on the LTL freight class for each of your products.
 
 This topic describes how to create LTL classes in Dynamics 365 Supply Chain management.
 
@@ -38,9 +40,9 @@ To create an LTL class, follow these steps:
 
 2. Select **New** to create a new LTL class and specify the following details:
 
-    - **LTL class** – Enter the LTL class identifier (ID) for commodity type.
-    - **Name** – Enter a name for the LTL class. <!-- KFM: "Enter a descriptive name that will help you and other users select the correct class for each product"?  -->
-    - **Class** – Enter the LTL class that is associated with a LTL class. <!-- KFM: The difference between **LTL class** and **Class** isn't clear. In the examples they are always the same. Might one be NMFC?  -->
+    - **LTL class** – Enter your company's internal LTL class identifier for this commodity type. Most companies use the international standard, which would then match the value set in the **Class** field. However, if your company has it's own standard, enter that value instead.
+    - **Name** – Enter a descriptive name that will help you and other users select the correct class for each NMFC code.
+    - **Class** – Enter the international standard LTL class identifier (ID) for this commodity type. The code entered here must match the  official standard.
 
 ## Example of how to set up LTL classes
 
