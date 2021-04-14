@@ -41,9 +41,19 @@ ms.dyn365.ops.version: 10.0.1
 
 ## **Trouble shooting guide**
 
-- **Step 1: Check setoff rule settings**
+- **Step 1: Find the setoff rule version currently used**
 
-  1. Go to "*Modules -> Tax -> Setup -> Sales tax hierarchies*".
+- 1. Go to "*Modules -> Tax -> Setup ->Sales tax -> Maintain setoff hierarchy profiles*".
+
+  2. Find the setoff rule version currently used according to the effective date.
+
+     For example, customers want to settle transactions in 2/19/2020. As shown in the figure below, the version 1 setoff rule is used according to the effective date. 
+
+     [![Direct taxes (tab)](./media/setoff-rule-error-Picture01.png)](./media/setoff-rule-error-Picture01.png)
+
+- **Step 2: Check setoff rule settings**
+
+  1. Go to "*Modules -> Tax -> Setup -> Sales tax -> Sales tax hierarchies*", mark the setoff rule currently used.
 
   2. Click "View" to check the sales tax hierarchies under usage.
 
@@ -53,12 +63,11 @@ ms.dyn365.ops.version: 10.0.1
 
      [![Direct taxes (tab)](./media/setoff-rule-error-Picture2.png)](./media/setoff-rule-error-Picture2.png)
 
-  4. According to the setoff, check if both *Recoverable* and *Payable* nodes are well set; If yes, it maybe posting issue, please go to Microsoft.
+  4. According to the setoff, check if both *Recoverable* and *Payable* nodes are well set; If yes, it maybe posting issue, please go to Microsoft; otherwise, please edit the setoff rule.
 
      [![Direct taxes (tab)](./media/setoff-rule-error-Picture3.png)](./media/setoff-rule-error-Picture3.png)
 
-- **Step 2: If no issue is found in above steps, check whether customization exists. If not, create a service request to Microsoft for further support.**
-
+- **Step 3: If no issue is found in above steps, check whether customization exists. If not, create a service request to Microsoft for further support.**
 
 
 [!INCLUDE[footer-include](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/includes/footer-banner.md)]
