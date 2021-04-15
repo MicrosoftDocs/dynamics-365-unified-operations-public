@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 10.0.5
 This topic describes features that are either new or changed in Finance and Operations apps, including Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management version 10.0.5. This version has a build number of 10.0.197. While the general availability date is in October, the new features are available for early release in August. For more information about version 10.0.5, see [Additional resources](whats-new-changed-10-0-5.md#additional-resources).
 
 
-To learn about the new features and changes in the latest releases of Dynamics 365 Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.5](/dynamics365/unified-operations/retail/get-started/whats-new-10-0-5).
+To learn about the new features and changes in the latest releases of Dynamics 365 Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.5](../../../commerce/get-started/whats-new-10-0-5.md).
 
 
 ## Revenue recognition
