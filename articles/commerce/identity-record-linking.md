@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable automatic linking of identity records to customer accounts 
-description: This topic reviews the ability to automatic link identity records to customer accounts in Microsoft Dynamics 365 Commerce.
+description: This topic describes how to enable automatic linking of identity records to customer accounts in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
 ms.date: 03/01/2021
@@ -34,21 +34,25 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic reviews the ability to automatic link identity records to customer accounts in Microsoft Dynamics 365 Commerce.
+This topic describes how to enable automatic linking of identity records to customer accounts in Microsoft Dynamics 365 Commerce.
 
-This topic covers the identity record automatic linking feature to enable authenticated users to be automatically linked to an existing customer account record. This feature is used in B2B site flows to allow approved customers to sign-up in an Azure Active Directory (AAD) B2C tenant and be linked to their created customer record. It can also be used in B2C site flows to automatically link a user signing up to a customer account record created earlier in Dynamics 365 Commerce through Point of Sale, Call Center, or Headquarters.
+This topic covers the identity record automatic linking feature to enable authenticated users to be automatically linked to an existing customer account record. This feature is used in business-to-consumer (B2C) site flows to allow approved customers to sign-up in an Azure Active Directory (Azure AD) B2C tenant and be linked to their created customer record. It can also be used in B2C site flows to automatically link a user signing up to a customer account record created earlier in Dynamics 365 Commerce through Point of Sale, Call Center, or Headquarters.
 
-[!WARNING] Please note that this feature should be used with AAD B2C as the identity provider. In the 'Sign up and sign in' user flow, the "Local account sign up page" page layout should retain the default setting of the "Email Address" User attribute with the **Requires verification** option set to "Yes". Ensure the email verification remains for the sign-up flow if using the automatic linking feature.
+> [!WARNING] 
+> The identity record automatic linking feature should be used with Azure AD B2C as the identity provider. In the 'Sign up and sign in' user flow, the "Local account sign up page" page layout should retain the default setting of the "Email Address" User attribute with the **Requires verification** option set to "Yes". Ensure the email verification remains for the sign-up flow if using the automatic linking feature.
 
-Dynamics 365 Commerce works with an Identity Provider service such as Azure Active Directory B2C to store a user's authentication specific details such as username and password. The identity record for the user in the Identity Provider is referenced by a linking table in Commerce to link the authenticated user to a customer account in Commerce. 
+Dynamics 365 Commerce works with identity provider services such as Azure AD B2C to store a user's authentication details such as username and password. The identity record for the user in the identity provider is referenced by a linking table in Commerce to link the authenticated user to a customer account in Commerce. 
 
 ## Enable the automatic linking feature in Commerce headquarters 
 
-To enable automatic linking for your environment, in Headquarters navigate to the **Feature management** page. 
+To enable the automatic linking feature for your environment in Commerce headquarters, follow these steps. 
 
-Under **All** features, search for the feature flag named **Local Identity Record and Commerce Customer automatic linking**. Select **Enable** to enable this feature.
+1. Go to **System administration \> Workspaces \> Feature management** and select the **All** tab. 
+1. Search for the feature named **Local Identity Record and Commerce Customer automatic linking** Select **Enable** to enable this feature.
+1. Select the feature, and then select **Enable now** in the properties pane.
 
-[!NOTE] This feature will be enabled for all channels in the environment which it is enabled. Keep this in mind if you are hosting different types of sites within the environment.
+> [!NOTE] ]
+> Once enabled, the automatic linking feature will be enabled for all channels in your environment. Keep this in mind if you are hosting different types of sites within your environment.
 
 ## Automatic linking on B2B sites 
 
