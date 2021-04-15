@@ -131,7 +131,7 @@ For more information, see [ER Import a configuration from Lifecycle Services](..
 
 These configuration versions are released as public preview and will be updated based on feedback received. Use them to learn how electronic formats of sales, purchase books, additional sheets, and factures journals are configured with Electronic reporting. Do not use these configurations as base configurations for derived customized configurations in a live environment.
 
-For more information, see [Sales books, purchase books, and invoice-factures journals](/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books).
+For more information, see [Sales books, purchase books, and invoice-factures journals](../../../finance/localizations/rus-sales-books-purchase-books.md).
 
 
 
