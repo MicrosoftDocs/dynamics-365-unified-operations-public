@@ -77,13 +77,13 @@ This step creates a functional LBD environment. However, the environment doesn't
 
         > [!NOTE]
         > The InstanceId parameter should be only 2 characters. The first is @ and the second one can be any capital letter of the english alphabet.
-        > Valid values:
-        > - @D
-        > - @X
-        > Invalid values:
-        > - @a
-        > - @4
-        > - @#
+        > - Valid values:
+        >   - @D
+        >   - @X
+        > - Invalid values:
+        >   - @a
+        >   - @4
+        >   - @#
 
 1. Deploy the environment by using the latest base topology that is available.
 
@@ -172,9 +172,9 @@ While edge scale units are still in preview, you must use the [scale unit deploy
 
 1. Open PowerShell and navigate to the folder containing the **UserConfig.xml**.
 1. Run the tool:
-    ```powershell
-        .\CLI.exe
-    ```
+```powershell
+.\CLI.exe
+```
 > [!NOTE]
 > After every action you will have to start the the tool again.
 
@@ -185,7 +185,7 @@ While edge scale units are still in preview, you must use the [scale unit deploy
     > [!NOTE]
     > If you are not running this command from a clean installation and it fails carry the following actions:
     > - Remove all folders from the aos-storage folder (except for GACAssemblies).
-    > - Run the following SQL command:
+    > - Run the following SQL command on your business database (AXDB):
     > ```sql 
     > delete from storagefoler
     > ```
