@@ -4,7 +4,7 @@
 title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-ms.date: 03/31/2021
+ms.date: 04/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
