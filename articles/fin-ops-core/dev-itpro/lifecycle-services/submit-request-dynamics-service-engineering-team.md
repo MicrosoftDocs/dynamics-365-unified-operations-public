@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 3
 A service request is a ticket that you use to request that the Dynamics Service Engineering (DSE) team perform a predefined set of tasks on your environments.
 
 > [!NOTE]
-> Service requests are only required for environments that are **Microsoft Managed**. Most environments are Self-service. For more information on environment types, see [Cloud deployment overview](../deployment/cloud-deployment-overview.md).
+> Service requests are only required for environments that are **Microsoft-managed**. Most environments are self-service. For more information on environment types, see [Cloud deployment overview](../deployment/cloud-deployment-overview.md).
 
 Don't use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this topic, submit a support ticket instead. For more information about support tickets, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](lcs-support.md).
 
