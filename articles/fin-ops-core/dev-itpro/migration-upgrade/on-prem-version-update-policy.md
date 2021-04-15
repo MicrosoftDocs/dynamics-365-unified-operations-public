@@ -66,7 +66,7 @@ Every service update release has a specific expiration date after which the rele
 
 #### Continuous combined releases (Application and Platform)
 
-With [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates), application and platform are released together. The [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?toc=%2fdynamics365%2ffinance%2ftoc.json#targeted-release-schedule-dates-subject-to-change) specifies the dates for early access, public release, and expiration of the release.
+With [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates), application and platform are released together. The [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) specifies the dates for early access, public release, and expiration of the release.
 
 | Product | Deployment options | Application version | Platform release | Release or expiration dates|
 |--------|--------|----|----|--------|
