@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 7.3
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017 and has a build number of 7.3.11971.56116.
 
-To learn more about the new features and changes in all of the latest product releases, see [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md) and [What's new or changed in Dynamics 365 for Retail](../../../commerce/get-started/whats-new.md).
+To learn more about the new features and changes in all of the latest product releases, see [What's new or changed](whats-new-changed.md) and [What's new or changed in Dynamics 365 for Retail](../../../commerce/get-started/whats-new.md).
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development.
 
