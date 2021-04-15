@@ -63,7 +63,7 @@ On the **General** tab of the **Electronic reporting parameters** page, set the 
 - **Enable design mode**
 
     - Set this option to **Yes** to enable embedded ER designers, so that users can create their own ER configurations.
-    - Set this option to **No** to require that users access the functionality of ER designers by signing up for [Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+    - Set this option to **No** to require that users access the functionality of ER designers by signing up for [Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 - **Disable tracing of ER performance in data handling**
 
@@ -98,7 +98,7 @@ On the **LCS** tab of the **Electronic reporting parameters** page, define the n
 
 ## RCS parameters
 
-On the **RCS** tab of the **Electronic reporting parameters** page, sign up for [Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+On the **RCS** tab of the **Electronic reporting parameters** page, sign up for [Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 [![RCS tab of the Electronic reporting parameters page](./media/er-configure-parameters-rcs.png)](./media/er-configure-parameters-rcs.png)
 
@@ -133,7 +133,7 @@ In addition to the basic functionality, ER has other functionality that you can 
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
-- [Configuration service of Regulatory Services](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration)
+- [Configuration service of Regulatory Services](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

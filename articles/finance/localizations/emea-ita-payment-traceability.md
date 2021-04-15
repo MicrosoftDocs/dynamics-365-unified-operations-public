@@ -37,7 +37,7 @@ For Italian companies who work with public sector companies, there might be requ
 Before you can use the payment traceability functionality, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Italy.
-- The feature **(Italy) Base document tracking improvements** must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The feature **(Italy) Base document tracking improvements** must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Feature details
 
