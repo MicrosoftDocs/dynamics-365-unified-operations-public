@@ -31,11 +31,26 @@ To reclassify a fixed asset, you must transfer it to a new fixed asset group or 
 
 When a fixed asset is reclassified:
 
-* All books for the existing fixed asset are created for the new fixed asset. Any information that was set up for the original fixed asset is copied to the new fixed asset. The status of the books for the original fixed asset is Closed. 
+- All books for the existing fixed asset are created for the new fixed asset. Any information that was set up for the original fixed asset is copied to the new fixed asset. The status of the books for the original fixed asset is Closed. 
 
-* The new books of the new fixed asset contain the date of the reclassification in the **Acquisition date** field. The date in the **Depreciation run date** field is copied from the original asset information. If the depreciation has already started, the **Date when depreciation was last run** field displays the date of the reclassification. 
+- The new books of the new fixed asset contain the date of the reclassification in the **Acquisition date** field. The date in the **Depreciation run date** field is copied from the original asset information. If the depreciation has already started, the **Date when depreciation was last run** field displays the date of the reclassification. 
 
-* The existing fixed asset transactions for the original fixed asset are canceled and regenerated for the new fixed asset.
+- The existing fixed asset transactions for the original fixed asset are canceled and regenerated for the new fixed asset.
+
+- When an asset that has a transfer transaction has been reclassified, the system will display a message in the **Action center** to indicate that a transfer transaction wasn't completed when the reclassification process was done. It's necessary to complete a transfer transaction to move the existing reclassification transactions to the appropriate financial dimensions. 
+
+   During the reclassification process the system runs the following actions to reclassify the asset balance from original asset to the new asset. 
+   
+   - The reclassification process copies the data from the original fixed asset book to the new fixed asset book.
+
+   - The reclassification transaction uses information from the original posted acquisition that includes financial dimension information that include in that acquisition transaction.  
+   
+   - At the same time the reclassification process reverses the original asset acquisition and asset transfer transaction. 
+
+The following diagram provides a graphical representation of the process. 
+
+[![Diagram showing the reclassicification process](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
+
 
 Follow these steps to reclassify a fixed asset:
 
