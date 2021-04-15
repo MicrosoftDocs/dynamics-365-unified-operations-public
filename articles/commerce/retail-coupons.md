@@ -45,6 +45,7 @@ To create a coupon, you create the discount and the coupon separately. You then 
 
 > [!NOTE]
 > After a coupon is linked to a discount, several fields on the discount page in Commerce become read-only, because they are managed by the coupon's settings. These fields include the fields for the status and standard date ranges.
+> While using the coupon in the call center channel, the users need to press the "Recalculate" button (Sell tab -> Calculate -> Recalculate) for the discount associated to the coupon to get applied. This additional step will be removed in the future releases.
 
 ### Limited-use coupons
 
