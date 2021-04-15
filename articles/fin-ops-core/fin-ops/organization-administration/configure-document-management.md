@@ -128,17 +128,17 @@ Document management appears to users as the **Attach** button at the top of most
 The **Attach** button also shows a count of the attachments for the currently selected record. Therefore, you can determine whether there are attachments for the current record without having to open the **Attachments** page. The button shows exact counts for zero through nine attachments. If there are more than nine attachments, the button shows **9+** as the count. In this way, the performance impact and visual noise that exact larger counts might cause are reduced.
 
 ### Showing related document attachments
-In version 10.0.12, the **Show related document attachments** feature changes the document attachment experience in two ways. 
+In version 10.0.12, the **Show related document attachments** feature changes the document attachment experience in the following ways. 
 
-1.  When the feature is enabled, the **Attachments** page no longer shows only attachments that are related to a single data source. Instead, users can see and access attachments from other data sources on the page that are related to the active record in particular ways. The criteria are that the data source must: 
-    -  Be directly related to the parent data source by means of an inner or outer join
-    -  Be directly related to the parent data source by means of an active, delayed, or passive join with a 1:1 or 0:1 cardinality
+-  When the feature is enabled, the **Attachments** page no longer shows only attachments that are related to a single data source. Instead, users can see and access attachments from other data sources on the pages that are related to the active record. For this to occur, the data source must: 
+    -  Be directly related to the parent data source by means of an inner or outer join.
+    -  Be directly related to the parent data source by means of an active, delayed, or passive join with either 1:1 or 0:1 cardinality.
 
-    Notably, these criteria exclude showing attachments from child collections (e.g. lines) when looking at attachments on the header record.  
+    Note that this criteria excludes showing attachments from child collections (such as lines) when looking at attachments on the header record.  
 
     The count of attachments on the **Attach** button also reflects this change. 
 
-2.  Users can move and copy attachments between the related data sources on the **Attachments** page.
+-  Users can move and copy attachments between the related data sources on the **Attachments** page.
 
 ## Document attachment history
 
