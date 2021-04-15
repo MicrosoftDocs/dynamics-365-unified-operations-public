@@ -5,7 +5,7 @@ title: Platform settings file
 description: This topic covers the various properties that are configured in the platform settings file in Microsoft Dynamics 365 Commerce.
 
 author: samjarawan
-ms.date: 04/13/2021
+ms.date: 04/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
