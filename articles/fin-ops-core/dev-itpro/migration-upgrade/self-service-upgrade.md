@@ -2,7 +2,7 @@
 # required metadata
 
 title: Self-service upgrade to the latest version
-description: This topic explains the process for moving to the latest update of Finance and Operations.
+description: This topic describes the process for moving to the latest update of Finance and Operations.
 author: laneswenka
 ms.date: 02/20/2020
 ms.topic: article
