@@ -41,7 +41,7 @@ The Finance and Operations online service is covered by the Modern Lifecycle Pol
     - Dynamics 365 for Finance and Operations, Enterprise edition 7.3
     - Dynamics 365 for Finance and Operations, version 8.0 (April 2018)
 
-- Platform versions maintain backward compatibility with the application versions that are supported at the time of the platform release within the application support lifecycle. For more information about platform versions, see [Cloud platform monthly updates FAQ](../sysadmin/faq-platform-monthly-updates.md).
+- Platform versions maintain backward compatibility with the application versions that are supported at the time of the platform release within the application support lifecycle. For more information about platform versions, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md).
 
 - Critical fixes and non-critical updates are handled in the following way:
 
