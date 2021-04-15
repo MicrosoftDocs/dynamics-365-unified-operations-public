@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.19
 > [!IMPORTANT]
 > The scale unit capability for Microsoft Dynamics 365 Supply Chain Management is made available to you under the terms that govern the use of the service. For more information, see [Microsoft Dynamics Legal Information](https://go.microsoft.com/fwlink/?LinkID=290927).
 >
-> By enabling cloud and edge scale units, you affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. To learn more about data processing for cloud and edge scale units, see the [Data processing during management of scale units](#data-processing-when-managing-scale-units) section later in this topic.
+> By enabling cloud and edge scale units, you affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. To learn more about data processing for cloud and edge scale units, see the [Data processing during management of scale units](#data-processing-management) section later in this topic.
 
 ## Core value proposition for scale units
 
@@ -119,7 +119,7 @@ Management capabilities that can help with the movement of workloads are limited
 
 Metrics and measures that might help you select the best application for your scale units aren't yet available. Work with your Microsoft contact or implementation partner to select the most beneficial application.
 
-### Data processing during management of scale units
+### <a name="data-processing-management"></a>Data processing during management of scale units
 
 When you enable your Dynamics 365 environment to support the distributed, hybrid topology for cloud and edge scale units, some management services will be hosted only in the United States, as for LCS. This behavior affects the transfer and storage of some administrative and configuration information that is used by the [Scale Unit Manager portal](https://sum.dynamics.com). Here are some examples:
 
