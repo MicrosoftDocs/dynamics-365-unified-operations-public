@@ -243,7 +243,7 @@ Customer reported issues are searchable via Lifecycle Services Issue Search.  Yo
 
 ### How can I upgrade to 8.x?
 
-Refer to the [Process for moving to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md#scenario-3-upgrade-to-the-latest-application-release-1) topic to learn how to upgrade to the latest application. Updating from [8.0 to 8.1](../../dev-itpro/migration-upgrade/appupdate-80-81.md) will not require any data upgrade and will be a self-serve update with much reduced downtime.
+Refer to the [Process for moving to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md) topic to learn how to upgrade to the latest application. Updating from [8.0 to 8.1](../../dev-itpro/migration-upgrade/appupdate-80-81.md) will not require any data upgrade and will be a self-serve update with much reduced downtime.
 
 ## Commerce service updates
 
