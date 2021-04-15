@@ -4,7 +4,7 @@
 title: Set up Azure Key Vault for secure key management
 description: This topic describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.  
 author: samjarawan
-ms.date: 04/13/2021
+ms.date: 04/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
