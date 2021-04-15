@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.18 of Finance and Operations apps.
 author: sericks007
-ms.date: 03/24/2021
+ms.date: 04/15/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -55,9 +55,9 @@ The following features are included in this release. Some of the listed features
 
 - Updates to the global address book<br>- For more information, see [Address books FAQ](../../fin-ops/organization-administration/qa-address-books.md).
 
--  Automatic retry settings for batch jobs<br>- In a cloud application, there is a chance of connection loss to the database. Currently, if the application experiences a connection loss, the batch jobs are terminated. In release 10.0.18, a **retryable** flag has been introduced, which sets a flag on every Microsoft batch job. This flag is used to safely retry batch jobs when a transient connection loss is experienced. This is a fully extensible property and can be extended to set the retry property on custom batch jobs.
+-  [Automatic retry settings for batch jobs](/Dynamics-365-Operations/blob/master/articles/fin-ops-core/dev-itpro/sysadmin/DataMaintenancePortal.md
 
-Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
+Most of these features must be enabled using [Feature management](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/automatic-retry-settings-batch-jobs) before you can use them.
 
 ## Additional resources
 
