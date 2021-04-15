@@ -53,10 +53,10 @@ You can find information about how to do the following tasks in [Financial repor
 - Configure Electronic reporting to use the results of financial report calculations.
 - Configure electronic messages to generate the financial report and store the results.
 
-For more information about configuring printing for financial reports in Excel, see [Configure financial reports in Excel (Russia)](../../finance/localizations/rus-excel-financial-report.md)
+For more information about configuring printing for financial reports in Excel, see [Configure financial reports in Excel (Russia)](../../../finance/localizations/rus-excel-financial-report.md)
 
 ### Assessed tax registers and electronic format of declaration version 5.05 (2019)
-This functionality allows you to keep technical and tax information for realty assets, calculate assessed tax registers, and generate assessed tax declaration in electronic format, applicable from the reporting for year 2019. For more information, see [Assessed tax declaration (Russia)](../../finance/localizations/rus-assessed-tax-declaration.md)
+This functionality allows you to keep technical and tax information for realty assets, calculate assessed tax registers, and generate assessed tax declaration in electronic format, applicable from the reporting for year 2019. For more information, see [Assessed tax declaration (Russia)](../../../finance/localizations/rus-assessed-tax-declaration.md)
 
 ### Transport tax registers and electronic format of declaration
 This functionality allows you to keep technical and tax information for vehicles, calculate transport tax registers, and generate transport tax declaration in electronic format.
@@ -66,10 +66,10 @@ This functionality allows you to keep technical and tax information for ground a
 
 ### VAT declaration in electronic format version 5.06 (2019)
 This functionality allows you to generate a VAT statement in XML format that is applicable from the reporting for year 2019.
-For more information, see [VAT declaration (Russia)](../../finance/localizations/rus-VAT-declaration.md).
+For more information, see [VAT declaration (Russia)](../../../finance/localizations/rus-VAT-declaration.md).
 
 ### Sales, purchase books, and factures journals in electronic format (2019)
-This functionality allows you to generate sales, purchase books, and factures journals in electronic format applicable from the year 2019. For details about how to work with sales and purchase books, see [Sales books, purchase books, and invoice-factures journals](../../finance/localizations/rus-sales-books-purchase-books.md).
+This functionality allows you to generate sales, purchase books, and factures journals in electronic format applicable from the year 2019. For details about how to work with sales and purchase books, see [Sales books, purchase books, and invoice-factures journals](../../../finance/localizations/rus-sales-books-purchase-books.md).
 
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
