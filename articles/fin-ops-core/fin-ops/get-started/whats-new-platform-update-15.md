@@ -67,7 +67,7 @@ Data management honors the configuration key settings on data entities, tables, 
 
 ## Embed Power Apps
 
-Microsoft Power Apps, a service that allows developers and nontechnical users to build custom business apps without writing code, is now supported. You can add an embedded PowerApp to a page as well as edit, delete, or share the embedded PowerApp. You can also build a PowerApp to leverage data from Finance and Operations. For more information, see [Embed Power Apps](/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
+Microsoft Power Apps, a service that allows developers and nontechnical users to build custom business apps without writing code, is now supported. You can add an embedded PowerApp to a page as well as edit, delete, or share the embedded PowerApp. You can also build a PowerApp to leverage data from Finance and Operations. For more information, see [Embed Power Apps](embed-power-apps.md).
 
 ## Extension and overlayering options in Visual Studio
 
