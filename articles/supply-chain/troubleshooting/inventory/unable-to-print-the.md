@@ -1,5 +1,5 @@
 ---
-title: Unable to print the notes attached to picking route
+title: Unable to print the notes attached to a picking route
 description: Unable to print the notes attached to picking route
 author: SmithaNataraj
 ms.date: 4/11/2021
@@ -13,14 +13,14 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Unable to print the notes attached to picking route
+# Unable to print the notes attached to a picking route
 
 KB Number: 4611660
 
 ## Issue description
 
-Unable to print the notes attached to sales picking route.
+Unable to print the notes attached to a picking route.
 
 ## Resolution
 
-This report currently only prints document on sales line and header. Customer need to do customization to show other documents.
+This report <!-- KFM: Which report? --> only prints documents on the sales older line and header. You must customize the system to show other documents, such as notes.

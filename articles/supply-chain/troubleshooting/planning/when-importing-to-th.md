@@ -1,6 +1,6 @@
 ---
-title: When importing to the Item coverage V2 entity in certain scenarios when accessing the Item coverage form after import/update, you will receive the error: "Do you want to save your changes before closing?", even though the user made no changes.
-description: When importing to the Item coverage V2 entity in certain scenarios when accessing the Item coverage form after import/update, you will receive the error: "Do you want to save your changes before closing?", even though the user made no changes.
+title: You are asked to save item coverage settings after making no changes
+description: You are asked to save item coverage settings after making no changes
 author: SmithaNataraj
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,14 +13,21 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# When importing to the Item coverage V2 entity in certain scenarios when accessing the Item coverage form after import/update, you will receive the error: "Do you want to save your changes before closing?", even though the user made no changes.
+# You are asked to save item coverage settings after making no changes
+
+<!-- KFM: Missing KB number? -->
 
 ## Issue description
 
-When importing to the Item coverage V2 entity in certain scenarios when accessing the Item coverage form after import/update, you will receive the error: "Do you want to save your changes before closing?", even though the user made no changes.
+In some scenarios, you may receive the following message on accessing **Item coverage** page after importing items to the item coverage V2 entity:
+
+> Do you want to save your changes before closing?
+
+You see this message even though you haven't made any changes.
 
 ## Resolution
 
-Coverage form has a complex defaulting logic that might lead to the observed message in case there were direct modifications in the database or entity imports before.
+The **Item coverage** page includes complex defaulting logic that might lead to the observed message after direct modifications have recently been made in the database, such as entity imports.
 
+<!-- KFM: The following instruction is not clear. How/when/where do we do this? We normally should not use internal field names. Talk directly to the reader; don't tell them what "a user" needs to do. -->
 To change PRODUCTCOVERAGEGROUPID through the entity a user needs to set AREGENERALSETTINGSOVERRIDDEN to Yes

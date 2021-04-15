@@ -1,6 +1,6 @@
 ---
-title: When customer is trying to select the LOTID field the Batch number which is already entered is vanishing.
-description: When customer is trying to select the LOTID field the Batch number which is already entered is vanishing.
+title: Batch number vanishes when selecting the LOTID field
+description: Batch number vanishes when selecting the LOTID field
 author: SmithaNataraj
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -12,14 +12,15 @@ ms.author: datra
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
+<!-- KFM: The context is not clear. Much more detail is needed here. What is "LOT"? -->
 
-# When customer is trying to select the LOTID field the Batch number which is already entered is vanishing.
+# Batch number vanishes when selecting the LOTID field
 
 KB Number: 4613107
 
 ## Issue description
 
-When customer is trying to select the LOTID field the Batch number which is already entered is vanishing.
+When you select the LOTID field the Batch number which is already entered is vanishing.
 
 ## Resolution
 

@@ -12,7 +12,7 @@ ms.author: johanho
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-
+<!-- KFM: Please spell out "FG", but also keep the title under 80 chars. -->
 # Raw material lines are allowed for unpicking and deletion even after FG creation
 
 KB Number: 4614721
@@ -23,4 +23,4 @@ Raw material lines are allowed for unpicking and deletion even after FG creation
 
 ## Resolution
 
-The Microsoft core team has made an assessment of this support case and with a by-design resolution. Adjustments to raw material consumption can be done up until the Ended state of the production order.
+This is the expected behavior. Adjustments to raw material consumption can be done up until the production order reaches a status of *Ended*.

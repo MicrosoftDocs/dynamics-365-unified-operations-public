@@ -12,7 +12,7 @@ ms.author: smnatara
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-<!-- KFM: Where is this tab? The context is not clear. This topic needs to be expanded or deleted. -->
+<!-- KFM: Where is this tab? The context is not clear. More detail is needed here. -->
 # There is no "From date" on the "Active prices" tab
 
 KB Number: 4613548

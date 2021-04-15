@@ -1,6 +1,6 @@
 ---
-title: Flushing principle not respected
-description: Flushing principle not respected
+title: Flushing principle settings on BOM lines aren't respected
+description: Flushing principle settings on BOM lines aren't respected
 author: SmithaNataraj
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -12,15 +12,15 @@ ms.author: johanho
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-
-# Flushing principle not respected
+<!-- KFM: Please review and confirm this edit. I added details that weren't clear in the original. -->
+# Flushing principle settings on BOM lines aren't respected
 
 KB Number: 4612725
 
 ## Issue description
 
-When the Automatic BOM consumption parameter in Receive Purchase order section of the Automatic update tab is set to Flushing principle, all BOM lines are auto consumed when the PO is received, including those BOM lines set to Manual. BOM lines set to Manual should not be auto consumed by definition.
+This issue occurs when the **Automatic BOM consumption** setting (on the **Automatic update** tab of the **Production control parameters** page) is set to *Flushing principle*. This setting means that all bill of material (BOM) lines should automatically be consumed when a purchase order is received. However, you would expect that BOM lines with **Flushing principle** explicitly set to *Manual* should not be auto-consumed (by definition), but when this issue occurs, BOM lines set to *Manual* are still auto-consumed anyway.
 
 ## Resolution
 
-Please check the setting of Automatic BOM consumption in the production control parameters by site. In standard demo data it is set to Always which means that the flushing principles on the BOM lines will be disregarded and always flushed. Try set it to Flushing principle instead.
+If you are seeing this behavior, it could be because your production control parameters are set to override the **Flushing principle** setting on BOM lines. To find out, open the **Automatic update** tab of the **Production control parameters** page and then check the **Automatic BOM consumption** setting. If this is set to *Always*, then the system will disregard the **Flushing principle** set on all BOM lines and will instead always flush them. Change this setting to *Flushing principle* to instead respect the flushing principle setting for each BOM line.

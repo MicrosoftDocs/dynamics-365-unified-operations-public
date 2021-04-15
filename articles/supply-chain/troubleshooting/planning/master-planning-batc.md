@@ -19,8 +19,10 @@ KB Number: 4612572
 
 ## Issue description
 
-Customer is unable to run the master planning as per the provided filter. The filter is not working when the batch job is created as well
+<!-- KFM: This issue description is not clear. Please revise in a way that addresses the general reader rather than referring to particular customer case. -->
+
+Customer is unable to run the master planning as per the provided filter. The filter is not working when the batch job is created as well.
 
 ## Resolution
 
-The observed behavior is by design as batch job filter is used solely to filter items to include in the planning, after that we run planning for all the coverage groups those filtered items have. Including a particular coverage group in items filter does not affect the planning output once the item actually included in the run.
+This is the expected behavior. The batch job filter is only able to filter items to include in the planning. After that, the system runs planning for all the coverage groups those filtered items have. Any coverage groups that are included in the items filter won't affect the planning output after a given item is already included in the run.

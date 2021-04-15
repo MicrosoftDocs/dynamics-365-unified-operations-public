@@ -12,7 +12,7 @@ ms.author: jeyao
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-
+<!-- KFM: The context of this topic is not clear. Please revise and clarify. -->
 # Purchase Requisition - after the request change, it is not possible to add line
 
 KB Number: 4611211

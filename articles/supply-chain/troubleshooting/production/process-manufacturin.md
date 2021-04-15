@@ -1,5 +1,5 @@
 ---
-title: Process Manufacturing Formula line Step Conversion setup does not always work in a Batch Order if the finished good Quantity is changed.
+title: Formula line step conversion setup doesn't always work in a batch order
 description: Process Manufacturing Formula line Step Conversion setup does not always work in a Batch Order if the finished good Quantity is changed.
 author: SmithaNataraj
 ms.date: 4/11/2021
@@ -12,8 +12,8 @@ ms.author: aslynko
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-
-# Process Manufacturing Formula line Step Conversion setup does not always work in a Batch Order if the finished good Quantity is changed.
+<!-- KFM: This topic is incomplete. Requires a rewrite. -->
+# Formula line step conversion setup doesn't always work in a batch order
 
 KB Number: 4611503
 
