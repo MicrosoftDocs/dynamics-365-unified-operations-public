@@ -12,7 +12,6 @@ ms.author: smnatara
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-<!-- KFM: Title is over 80 characters. Please find a way to reduce -->
 
 # Multiple inventory transactions for batch numbers without "On physical update"
 
@@ -26,13 +25,7 @@ When creating an item where the batch number group has **On Physical Update** se
 
 ## Resolution
 
-This works as expected. The **On physical update** setting for batch number groups works as follows:
+This is the expected behavior. The **On physical update** setting for batch number groups works as follows:
 
 1. When **On physical update** is set to *Yes*, new batch numbers are only created after a physical update. (For example, on shipment or receipt of items.)
 1. When **On physical update** is set to *No*, a new batch number is created on every update when applicable. (For example, when adding new quantity to a purchase order.)
-
-<!-- KFM: I recommend that we remove the following for publishing on Docs:
- 
-We acknowledge that this can be counter productive in a scenario such as this adding an overhead on processing resulting vendor invoices. For that reason we encourage you to create an entry on the Ideas Portal to allow Microsoft to understand the extent to which this requested, which in turn will allow Microsoft to decide whether to include this in future feature planning.
-
--->
