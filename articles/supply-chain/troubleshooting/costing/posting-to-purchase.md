@@ -1,5 +1,5 @@
 ---
-title: Posting to purchase accrual with amount zero is created when product receipt is posted with zero value
+title: Purchase accrual posted with amount zero for zero-value product receipt
 description: The system creates a posting to purchase accrual with amount zero when a product receipt with zero value is posted
 author: SmithaNataraj
 ms.date: 4/11/2021
@@ -12,8 +12,8 @@ ms.author: smnatara
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-<!-- KFM: Title is over 80 characters. Please find a way to reduce -->
-# Posting to purchase accrual with amount zero is created when product receipt is posted with zero value
+
+# Purchase accrual posted with amount zero for zero-value product receipt
 
 KB Number: 4612588
 

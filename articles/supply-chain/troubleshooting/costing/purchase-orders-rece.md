@@ -23,6 +23,5 @@ Physically received purchase orders don't appear in the *check open quantities* 
 
 ## Resolution
 
-The *check open quantities* report shows issue transactions that can't be covered by financial on-hand. You can also choose to include receipts in the report. Physical receipts will only be shown if they can cover the issues that can't be covered by financial on-hand. For more information ,see [Preparing to run inventory close](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/preparing-to-run-inventory-close).
+The *check open quantities* report shows issue transactions that can't be covered by financial on-hand. You can also choose to include receipts in the report. Physical receipts will only be shown if they can cover the issues that can't be covered by financial on-hand. For more information ,see [Preparing to run inventory close](/dynamicsax-2012/appuser-itpro/preparing-to-run-inventory-close).
 
-<!-- KFM: is this info available on the D365 doc set? For example in or arround: https://docs.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-close?  -->
