@@ -82,7 +82,7 @@ The existing functionality for financial journals (general journal, fixed asset 
 
 - **Fall '18 and later releases** – The functional gaps will be filled. After the functional gaps are filled, the One voucher functionality will be permanently turned off.
 
-See the [One voucher documentation](/dynamics365/unified-operations/financials/general-ledger/one-voucher) for detailed information about the use and deprecation of this functionality.
+See the [One voucher documentation](../../../finance/general-ledger/one-voucher.md) for detailed information about the use and deprecation of this functionality.
 
 ## Extensibility and customization
 
