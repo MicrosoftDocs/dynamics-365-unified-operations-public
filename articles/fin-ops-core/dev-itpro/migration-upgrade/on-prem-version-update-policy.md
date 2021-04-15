@@ -73,7 +73,7 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 | ... |
 | Finance + Operations | Base deployment + Service update | 10.0.20 | PU44 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
 | Finance + Operations | Service update | 10.0.19 | PU43 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Service update | 10.0.18 | PU42 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.mdn#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Service update | 10.0.18 | PU42 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
 | Finance + Operations | Base deployment + Service update | 10.0.17 | PU41 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
 | Finance + Operations | Service update | 10.0.16 | PU40 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
 | Finance + Operations | Service update | 10.0.15 | PU39 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
