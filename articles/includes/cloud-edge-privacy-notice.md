@@ -1,4 +1,2 @@
 > [!Important]
-> **Privacy Notice:** Enabling a scale unit will allow for the transfer of certain customer data, including personal data, to the geographic region where you've configured your hub. To learn more about edge scale units, see the [Supply Chain Management cloud and edge scale units landing page](https://aka.ms/scmcne) and its related topics.
->
-> Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+> **Privacy Notice:** Enabling a cloud scale unit allows the transfer of certain customer data, including personal data, to the geographic region where your cloud scale unit is deployed. Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
