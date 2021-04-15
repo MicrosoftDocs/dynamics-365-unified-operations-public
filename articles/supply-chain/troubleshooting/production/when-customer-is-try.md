@@ -12,7 +12,7 @@ ms.author: datra
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-<!-- KFM: The context is not clear. Much more detail is needed here. What is "LOT"? -->
+<!-- KFM: The context of this topic is not clear. Much more detail is needed, please rewrite. What is "LOT"? -->
 
 # Batch number vanishes when selecting the LOTID field
 
