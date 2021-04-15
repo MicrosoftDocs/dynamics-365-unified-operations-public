@@ -147,7 +147,7 @@ While edge scale units are still in preview, you must use the [scale unit deploy
         ```
 
     1. Additionally for this same ScaleUnitInstance set the following values:
-        - In the field Domain specify the url of your Hub. For example: https://cnehublbd.sandbox.operations.dynamics.com/
+        - In the field Domain specify the url of your Hub. For example: https://cloudhub.sandbox.operations.dynamics.com/
         - In the field EnvironmentType ensure the value LCSHosted is set.
 
     1. Under the section ScaleUnitConfiguration for the second ScaleUnitInstance modify the AuthConfiguration section.
