@@ -28,6 +28,7 @@ ms.dyn365.ops.version: Release 10.0.10
 # Calculate inventory availability for retail channels
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic describes how a company can use Microsoft Dynamics 365 Commerce to view estimated on-hand availability for products in the online and store channels.
 
@@ -101,7 +102,7 @@ The **GetEstimatedAvailability** API offers the following input parameters to su
 - `FilterByChannelFulfillmentGroup` and `SearchArea` - Use these two parameters to query inventory for a product from all pickup locations within a specific search area, based on `longitude`, `latitude`, and `radius`. 
 - `FilterByChannelFulfillmentGroup` and `DeliveryModeTypeFilterValue` - Use these two parameters to query inventory for a product from specific warehouses that are linked to an online channel's fulfillment group and are configured to support certain modes of delivery. The `DeliveryModeTypeFilterValue` parameter supports the **all** (default), **shipping**, and **pickup** options. For example, in a scenario where an online order can be fulfilled from multiple shipping warehouses, you can use these two parameters to query a product's inventory availability in all of those shipping warehouses. The API in this case returns the product's on-hand quantity and inventory level in each of the shipping warehouses, plus an aggregated quantity and an aggregated inventory level from all shipping warehouses in the query scope.
  
-Commerce buy box, store selector, wishlist, cart, and cart icon modules consume the APIs and parameters mentioned above to display inventory level messages across the e-commerce site. Commerce site builder provides various inventory settings to control merchandising and purchase behavior. For more information, see [Apply inventory settings](inventory-settings.md).
+The Commerce buy box, store selector, wishlist, cart, and cart icon modules consume the APIs and parameters mentioned above to display inventory level messages across the e-commerce site. Commerce site builder provides various inventory settings to control merchandising and purchase behavior. For more information, see [Apply inventory settings](inventory-settings.md).
 
 ## POS inventory lookup with channel-side calculation
 
