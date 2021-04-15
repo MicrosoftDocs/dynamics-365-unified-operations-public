@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/known-issues.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/index",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/dev-tools/enable-development-machine.md",
       "redirect_url": "access-instances",
       "redirect_document_id": "false"
