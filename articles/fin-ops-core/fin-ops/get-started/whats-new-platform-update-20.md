@@ -173,7 +173,7 @@ Platform update 20 includes the following extensibility enhancements:
 - Enable Chain of Command for data entities.
 - Enable Chain of Command on nested types within forms, including data sources and controls.
 
-For more information about all the extensibility capabilities, see the [Extensibility home page](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page).
+For more information about all the extensibility capabilities, see the [Extensibility home page](../../dev-itpro/extensibility/extensibility-home-page.md).
 
 ## Performance improvement in the Visual Studio development environment
 
