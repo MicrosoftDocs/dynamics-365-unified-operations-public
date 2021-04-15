@@ -55,7 +55,7 @@ The following features are included in this release. Some of the listed features
 
 - Updates to the global address book<br>- For more information, see [Address books FAQ](../../fin-ops/organization-administration/qa-address-books.md).
 
--  [Automatic retry settings for batch jobs](/Dynamics-365-Operations/blob/master/articles/fin-ops-core/dev-itpro/sysadmin/DataMaintenancePortal.md
+-  [Automatic retry settings for batch jobs](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/automatic-retry-settings-batch-jobs)
 
 Most of these features must be enabled using [Feature management](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/automatic-retry-settings-batch-jobs) before you can use them.
 
