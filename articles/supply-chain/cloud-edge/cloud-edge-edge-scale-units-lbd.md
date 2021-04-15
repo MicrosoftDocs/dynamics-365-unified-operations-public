@@ -113,16 +113,16 @@ While edge scale units are still in preview, you must use the [scale unit deploy
 1. Create a copy of the UserConfig.sample.xml and name it **UserConfig.xml**.
 1. Create an AAD application in your AAD tenant as mentioned [here](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#aad-application-registrations)
     1. Once created navigate to the Azure Active Directory applications form (SysAADClientTable) on your hub.
-    1. Create a new entry and set the Client Id to the Id of the application you created, the Name to ScaleUnits and the User ID to Admin.
+    1. Create a new entry and set the Client ID to the ID of the application you created, the Name to ScaleUnits and the User ID to Admin.
 
 1. Create an ADFS application as mentioned [here](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#adfs-application-registrations)
     1. Once created navigate to the Azure Active Directory applications form (SysAADClientTable) on your Edge Scale Unit.
-    1. Create a new entry and set the Client Id to the Id of the application you created, and the User ID to Admin.
+    1. Create a new entry and set the Client ID to the ID of the application you created, and the User ID to Admin.
 
 1. Modify the **UserConfig.xml**.
-    1. Under the section InterAOSAADConfiguration you need to enter the information from the AAD application you created previously.
-        - In field AppId enter the application ID of the Azure application.
-        - In field AppSecret enter the application secret of the Azure application.
+    1. Under the section InterAOSAADConfiguration, you need to enter the information from the AAD application you created previously.
+        - In the field AppId, enter the application ID of the Azure application.
+        - In the field AppSecret, enter the application secret of the Azure application.
         - The field Authority needs to carry the URL specifying the security authority for your tenant.
 
         ```xml
@@ -134,8 +134,8 @@ While edge scale units are still in preview, you must use the [scale unit deploy
         ```
 
     1. Under the section ScaleUnitConfiguration for the first ScaleUnitInstance modify the AuthConfiguration section.
-        - In field AppId enter the application ID of the Azure application.
-        - In field AppSecret enter the application secret of the Azure application.
+        - In the field AppId, enter the application ID of the Azure application.
+        - In the field AppSecret, enter the application secret of the Azure application.
         - The field Authority needs to carry the URL specifying the security authority for your tenant.
 
         ```xml
@@ -166,7 +166,7 @@ While edge scale units are still in preview, you must use the [scale unit deploy
     1. Additionally for this same ScaleUnitInstance set the following values:
         - In the field Domain specify the url of your Edge Scale Unit. For example: https://ax.contoso.com/
         - In the field EnvironmentType ensure the value LBD is set.
-        - In the field ScaleUnitId input the same value you specified for the InstanceId when configuring the **Configure-CloudandEdge.ps1** predeployment script.
+        - In the field ScaleUnitId, input the same value you specified for the InstanceId when configuring the **Configure-CloudandEdge.ps1** predeployment script.
         > [!NOTE]
         > If you don't use the default Id (@A), ensure you update the ScaleUnitId for each ConfiguredWorkload under the Workloads section.
 
@@ -178,9 +178,9 @@ While edge scale units are still in preview, you must use the [scale unit deploy
 > [!NOTE]
 > After every action you will have to start the the tool again.
 
-1. In the tool select Prepare environments for workload installation (2).
+1. In the tool, select Prepare environments for workload installation (2).
     1. Prepare the Hub (1)
-    1. Prepre the Scale Unit (2)
+    1. Prepare the Scale Unit (2)
 
     > [!NOTE]
     > If you are not running this command from a clean installation and it fails carry the following actions:
@@ -198,7 +198,7 @@ While edge scale units are still in preview, you must use the [scale unit deploy
     ```
 
 1. Verify that change tracking has been enabled on your business database (AXDB)
-    1. Open Sql Server Management Studio (SSMS).
+    1. Start SQL Server Management Studio (SSMS).
     1. Right click on your business database (AXDB) and select properties.
     1. In the window that opens up select Change Tracking.
         - Change Tracking: True
@@ -206,7 +206,7 @@ While edge scale units are still in preview, you must use the [scale unit deploy
         - Retention Units: Days
         - Auto Cleanup: True
 
-1. In the tool select Install workloads (3)
+1. In the tool, select Install workloads (3)
     1. Install on Hub (1)
     1. Install on Scale Unit (2)    
 
