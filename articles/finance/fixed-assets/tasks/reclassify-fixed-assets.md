@@ -47,10 +47,9 @@ When a fixed asset is reclassified:
    
    - At the same time the reclassification process reverses the original asset acquisition and asset transfer transaction. 
 
-The following diagram provides a graphical representation of the process. 
+The diagram and procedure that follow offer an example of the reclassification process. 
 
 [![Diagram showing the reclassicification process](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
-
 
 Follow these steps to reclassify a fixed asset:
 
