@@ -5,7 +5,7 @@ title: Enable automatic linking of identity records to customer accounts
 description: This topic describes how to enable automatic linking of identity records to customer accounts in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 03/01/2021
+ms.date: 04/16/2021
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -56,29 +56,31 @@ To enable the automatic linking feature for your environment in Commerce headqua
 
 ## Automatic linking on B2B sites 
 
-A B2B site is a Commerce site connected to an **Online store** with the **Customer type** property set to "B2B" upon the channel creation. For B2B Sites, automatic linking is crucial to the customer approval and login process. Customer records are created when a B2B prospect record is approved, or a B2B Admin creates the user record. Once the customer record exists, the user will navigate to the site and click sign-in. Once directed to the AAD B2C sign-in experience, the user can choose to **sign-up**. When the sign-up is complete, the user is re-directed back to the B2B Site. On this return call, Commerce will review the automatic link options for the customer's initial login.
+A B2B site is a Commerce site connected to an online store with the **Customer type** property set to "B2B" during channel creation. For B2B sites, automatic linking of identity records to customer accounts is critical to the customer approval and sign-in process. Customer records are created when a B2B record is approved, or when a B2B administrator creates the user record. Once the customer record exists, the user will navigate to the site and sign in. Once directed to the Azure AD B2C sign-in experience, the user can choose to sign up. When sign-up is complete, the user is redirected back to the B2B site. On this return call, Commerce will review the automatic link options for the customer's initial sign-in.
 
-The email used as the user's AAD B2C User ID will be searched across the B2B customer records within the legal entity. automatic linking is reviewing customer records of type **person** where **isB2B** is true, matching against the primary email address set for the customer record.
+The email used as the user's Azure AD B2C user ID will be searched across all of the B2B customer records within the legal entity. The Commerce automatic linking feature  reviews customer records of type **person** where **isB2B** is true, and matching against the primary email address configured for the customer record.
 
-For B2B sites, automatic linking will perform the various checks:
+For B2B sites, automatic linking will perform the following checks:
 
-- If only one customer record within the legal entity meets the matching condition, the signing in user is automatically linked to that record.
-- If **no customer records** within the legal entity meet the matching condition, the Commerce service will throw a **CommerceIdentityNotFound** error (error code: *Microsoft_Dynamics_CommerceIdentityNotFound*).
-- If **more than one** customer record is found within the legal entity with matching conditions, the Commerce service will throw a **CustomerServiceMultipleCustomerAccountsFoundErrorOccurredWhenAutoLinking** error (error code:  *Microsoft_Dynamics_Commerce_Runtime_MultipleCustomerAccountsFoundWithSameEmailAddress*).
+- If only one customer record within the legal entity meets the matching condition, the user signing up is automatically linked to that record.
+- If no customer records within the legal entity meets the matching conditions, Commerce will generate a **CommerceIdentityNotFound** error with error code "Microsoft_Dynamics_CommerceIdentityNotFound".
+- If more than one customer record within the legal entity is found to have matching conditions, Commerce will generate a **CustomerServiceMultipleCustomerAccountsFoundErrorOccurredWhenAutoLinking** error with error code "Microsoft_Dynamics_Commerce_Runtime_MultipleCustomerAccountsFoundWithSameEmailAddress."
 
 ## Automatic linking on B2C sites
 
-A B2C site is a Commerce site connected to an **Online store** with the **Customer type** property set to "B2C" upon the channel creation. For B2C Sites, auto linking will review if a single customer account exists within the legal entity with the email utilized on sign up.
+A B2C site is a Commerce site connected to an online store with the **Customer type** property set to "B2C" during channel creation. For B2C sites, the automatic linking feature will review if a single customer account with the email address used for sign-up exists within the legal entity.
 
-The email used as the user's AAD B2C User ID will be searched across the B2C customer records within the legal entity. Auto linking is reviewing customer records of type **person**.
+The email address used as the user's Azure AD B2C user ID will be searched across all of the B2C customer records within the legal entity. The Commerce automatic linking feature  reviews customer records of type **person**.
 
-For B2C sites, auto linking will perform the various checks:
+For B2C sites, automatic linking will perform the following checks:
 
-- If only one customer record within the legal entity meets the matching condition, the signing up user is automatic linked to that record.
-- If **no customer records** within the legal entity meet the matching condition, the Commerce service will create a new customer record (linked to the identity provider record). 
-- If **more than one** customer record is found within the legal entity with matching conditions, the Commerce service will throw a **CustomerServiceMultipleCustomerAccountsFoundErrorOccurredWhenAutoLinking** error (error code:  *Microsoft_Dynamics_Commerce_Runtime_MultipleCustomerAccountsFoundWithSameEmailAddress*).
+- If only one customer record within the legal entity meets the matching condition, the user signing up is automatically linked to that record.
+- If no customer records within the legal entity meet the matching condition, Commerce will generate a new customer record that is linked to the identity provider record. 
+- If more than one customer record within the legal entity meets the matching conditions, Commerce will generate a **CustomerServiceMultipleCustomerAccountsFoundErrorOccurredWhenAutoLinking** error with error code "Microsoft_Dynamics_Commerce_Runtime_MultipleCustomerAccountsFoundWithSameEmailAddress."
 
-## Additional information
+> [!NOTE]
+> - The Commerce notifications module can be extended to display error messages to the user if error conditions are met.
+> - Social identity provider records set up in Azure AD B2C will also automatically link to the same customer record with matching conditions if a single record is found. A Commerce customer account can be linked to both a local identity record and a social identity record simultaneously.
 
-- The Notifications module can be extended to surface error messages to the user if error conditions are met.
-- Social Identity Provider records set up in AAD B2C will also automatically link to the same customer record with matching conditions if a single record is found. A Commerce customer account can be linked to both a local identity record and Social Identity Records simultaneously.
+## Additional resources
+
