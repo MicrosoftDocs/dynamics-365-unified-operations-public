@@ -61,7 +61,7 @@ This step creates a functional LBD environment. However, the environment doesn't
     > [!IMPORTANT]
     > Read the rest of this section **before** you complete the steps in that topic.
 
-1. When you describe your configuration in the infrastructure\\ConfigTemplate.xml file, don't specify any MR (Financial Reporting) nodes.
+1. When you describe your configuration in the infrastructure\\ConfigTemplate.xml file, don't specify any MR (Financial Reporting) nodes. Financial Reporting is not a supported module for scale units.
 1. Set up a database that contains empty data, as described in [Configure databases](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb). Use the empty data.bak file for this step.
 1. Set up the pre-deployment script. For more information, see [Local agent pre-deployment and post-deployment scripts](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md).
 
