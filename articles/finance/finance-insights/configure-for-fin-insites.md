@@ -991,7 +991,7 @@ Follow these steps to set up the entity store in your Finance environment.
 
 1. Go to **System administration \> Setup \> System parameters \> Data connections**.
 2. Set the **Enable Data Lake integration** option to **Yes**.
-3. Set the following Key Vault fields:
+3. Set the following key vault fields:
 
     - **Application (client) ID** – Enter the application client ID that you created earlier.
     - **Application Secret** – Enter the secret that you saved for the application that you created earlier.
