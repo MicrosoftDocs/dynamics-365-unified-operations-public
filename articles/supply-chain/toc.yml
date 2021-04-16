@@ -179,7 +179,7 @@
         - name: Architecture for Finance and Operations apps
           href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
         - name: Microsoft FastTrack
-          href: https://docs.microsoft.com/dynamics365/fasttrack/
+          href: /dynamics365/fasttrack/
         - name: Onboard an implementation project
           href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
         - name: Environment planning
@@ -206,6 +206,64 @@
       items:
       - name: Globalization resources
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
+      - name: Globalization services
+        items:
+        - name: Globalization services overview
+          href: ../finance/localizations/globalization-services-overview.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Regulatory configuration service
+          items:
+          - name: Regulatory configuration service overview
+            href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Regulatory configuration service - Globalization features
+            href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
+            href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Electronic Invoicing
+          items: 
+          - name: Electronic Invoicing overview
+            href: ../finance/localizations/e-invoicing-service-overview.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Electronic Invoicing administration components
+            href: ../finance/localizations/e-invoicing-service-administration.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Configure Electronic Invoicing in Regulatory Configuration Services (RCS)
+            href: ../finance/localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Issue electronic invoices in Finance and Supply Chain Management
+            href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Create an Azure storage account and a Key Vault
+            href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Get started 
+            items:
+            - name: Get started with Electronic Invoicing service administration
+              href: ../finance/localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Get started with Electronic Invoicing
+              href: ../finance/localizations/e-invoicing-get-started.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Get started with Electronic Invoicing for Brazil
+              href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Get started with Electronic Invoicing for Egypt
+              href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Get started with Electronic Invoicing for Italy
+              href: ../finance/localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Get started with the Electronic Invoicing for Mexico
+              href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Set up Electronic Invoicing
+              href: ../finance/localizations/e-invoicing-setup.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Electronic Invoicing FAQ
+            href: ../finance/localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Tax Calculation
+          items:
+          - name: Tax Calculation overview
+            href: ../finance/localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Get started with Tax Calculation
+            href: ../finance/localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Tax feature support for transfer orders
+            href: ../finance/localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Add data fields in tax configurations
+            href: ../finance/localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Add data fields in the tax integration by using extensions
+            href: ../finance/localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Multiple VAT registration numbers
+            href: ../finance/localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Set up an environment for master data lookup
+            href: ../finance/localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/supply-chain/toc.json
       - name: Regulatory updates
         href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
       - name: India
@@ -1628,7 +1686,7 @@
         - name: Cost controlling
           href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
         - name: Expense management
-          href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+          href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
         - name: Inventory on-hand
           href: inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
         - name: Invoice approvals
@@ -1636,11 +1694,11 @@
         - name: My team
           href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
         - name: Project mobile applications overview
-          href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/supply-chain/toc.json
+          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
         - name: Project time entry
-          href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
         - name: Project timesheet
-          href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/supply-chain/toc.json
+          href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
         - name: Purchase order approval
           href: procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
         - name: Sales orders

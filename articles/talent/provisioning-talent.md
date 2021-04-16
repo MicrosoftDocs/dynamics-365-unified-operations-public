@@ -65,7 +65,7 @@ After you've created an LCS project, you can provision Talent into an environmen
 
 3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Talent Test Drive experience. This is beneficial for long-term demo or training environments, and should never be used for production environments.  Note that you must choose this option upon initial deployment. You cannot update an existing deployment later.
 
-4. Talent is always provisioned into a Microsoft Power Apps environment to enable Power Apps integration and extensibility. Read the “Selecting a Power Apps environment” section of this topic before you continue. If you don't already have a Power Apps environment, select Manage environments in LCS or navigate to the Power Apps Admin center. Then follow the steps to [Create a Power Apps environment](https://docs.microsoft.com/powerapps/administrator/create-environment).
+4. Talent is always provisioned into a Microsoft Power Apps environment to enable Power Apps integration and extensibility. Read the “Selecting a Power Apps environment” section of this topic before you continue. If you don't already have a Power Apps environment, select Manage environments in LCS or navigate to the Power Apps Admin center. Then follow the steps to [Create a Power Apps environment](/powerapps/administrator/create-environment).
 
 5. Select the environment to provision Talent into.
 
@@ -106,7 +106,7 @@ Use the following guidance when determining which Power Apps environment to depl
  
 ## Grant access to the environment
 
-By default, the global administrator who created the environment has access to it. However, additional application users must be explicitly granted access. To grant access, you need to add users and assign the appropriate roles to them in the Human Resources environment. The global administrator that deployed Talent must also launch both Attract and Onboard to complete the initialization and enable access for other tenant users.  Until this happens, other users will not be able to access Attract and Onboard and will get access violation errors. For more information, see [Create new users](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+By default, the global administrator who created the environment has access to it. However, additional application users must be explicitly granted access. To grant access, you need to add users and assign the appropriate roles to them in the Human Resources environment. The global administrator that deployed Talent must also launch both Attract and Onboard to complete the initialization and enable access for other tenant users.  Until this happens, other users will not be able to access Attract and Onboard and will get access violation errors. For more information, see [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

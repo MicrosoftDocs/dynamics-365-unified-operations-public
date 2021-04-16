@@ -37,7 +37,7 @@ For Belgian bank statement imports, you'll use the CODA file format. This featur
 ## Import transactions from a bank statement
 To import a bank statement file for a bank account, complete the following steps. **Note**: Before you import a bank statement file, you must have already completed the following:
 
--   Import the CODA configurations from Lifecycle Services (LCS). For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+-   Import the CODA configurations from Lifecycle Services (LCS). For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 -   Select the imported CODA configuration on the **CODA parameters** page.
 
 1.  Go to the **Bank accounts** page.

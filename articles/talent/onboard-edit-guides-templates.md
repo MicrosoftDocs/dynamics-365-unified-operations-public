@@ -82,7 +82,7 @@ You can import activities from one or more templates into a guide or template.
 
 4. To preview the tasks in a new tab in your browser, select the **Open in new tab** button on any template.
 
-   [![Import activities](./media/onboard-edit-guide-preview-activities.png)](./media/onboard-edit-guide-preview-activities.png)
+   [![Preview activities](./media/onboard-edit-guide-preview-activities.png)](./media/onboard-edit-guide-preview-activities.png)
 
 5. Drag and drop the desired template to the place in your guide template where you want the activities to appear. Continue editing your guide or template.
 
@@ -190,7 +190,7 @@ To edit a contact, select the **Edit** button (the pencil symbol) to the right o
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
 - [What's new or changed in Dynamics 365 Talent](./whats-new.md)
-- [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Release plans](/business-applications-release-notes/index)
 - [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)
 
 

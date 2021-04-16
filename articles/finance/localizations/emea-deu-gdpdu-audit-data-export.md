@@ -253,7 +253,7 @@ The following tables show the Fixed assets data structure definitions.
 
 ## Additional resources
 
-- [Electronic Reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Electronic Reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Import German audit file configuration](./tasks/import-german-audit-file-configuration.md)
 - [Customize German audit file configuration](./tasks/customize-german-audit-file-configuration.md)
 - [Generate German audit file](./tasks/german-audit-file.md)

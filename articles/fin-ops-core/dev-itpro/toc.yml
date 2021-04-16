@@ -303,19 +303,19 @@
             - name: Configure Project Service Automation integration
               items:
               - name: Project Service Automation overview
-                href: ../../finance/project-management/PSA-integration.md
+                href: /dynamics365/project-operations/prod-pma/PSA-integration
               - name: Project Service Automation integration parameters
-                href: ../../finance/project-management/PSA-parameters.md
+                href: /dynamics365/project-operations/prod-pma/PSA-parameters
               - name: Synchronize project contracts and projects
-                href: ../../finance/project-management/project-contracts-templates.md
+                href: /dynamics365/project-operations/prod-pma/project-contracts-templates
               - name: Synchronize project tasks
-                href: ../../finance/project-management/project-tasks-template.md
+                href: /dynamics365/project-operations/prod-pma/project-tasks-template
               - name: Synchronize project expense categories
-                href: ../../finance/project-management/project-categories-templates.md
+                href: /dynamics365/project-operations/prod-pma/project-categories-templates
               - name: Synchronize project estimates from to project forecasts
-                href: ../../finance/project-management/project-estimates-templates.md
+                href: /dynamics365/project-operations/prod-pma/project-estimates-templates
               - name: Synchronize project actuals to the project integration journal
-                href: ../../finance/project-management/project-actuals-templates.md
+                href: /dynamics365/project-operations/prod-pma/project-actuals-templates
       - name: Consuming external web services
         href: data-entities/consume-external-web-service.md
       - name: Electronic messaging
@@ -691,7 +691,7 @@
           - name: Create models and data model elements overview
             href: dev-tools/create-data-model-elements.md
           - name: Naming guidelines for extensions
-            href: extensibility/NamingGuidelines.md
+            href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
           - name: Turn off model customization and deprecate functionality
             href: dev-tools/lock-models.md
         - name: Customization Analysis Report
@@ -1030,10 +1030,14 @@
             href: perf-test/atl-faq.md
       - name: Date effectivity
         href: dev-tools/date-effectivity.md
-      - name: ISV licensing
-        href: dev-tools/isv-licensing.md
-      - name: ISV licensing on-premises
-        href: dev-tools/isv-licensing-on-prem.md
+      - name: Development for independent software vendors
+        items:
+        - name: Link X++ modules to packages by using ISV Studio
+          href: dev-tools/isv-studio-solutions.md
+        - name: ISV licensing
+          href: dev-tools/isv-licensing.md
+        - name: ISV licensing on-premises
+          href: dev-tools/isv-licensing-on-prem.md
     - name: General Data Protection Regulation (GDPR)
       items:
       - name: General Data Protection Regulation overview
@@ -1068,8 +1072,6 @@
           href: lifecycle-services/getting-started-lcs.md
         - name: What's new or changed in Lifecycle Services
           href: lifecycle-services/whats-new-lcs.md
-        - name: Known issues
-          href: lifecycle-services/known-issues.md
         - name: Removed or deprecated features in Lifecycle Services (LCS)
           href: lifecycle-services/removed-deprecated-features.md
       - name: Lifecycle Services user guide
@@ -1894,4 +1896,3 @@
     href: ../../finance/index.md
   - name: Dynamics 365 Commerce
     href: ../../commerce/index.md
-

@@ -97,7 +97,7 @@ To obtain the latest data upgrade deployable package for a target environment th
     > [!NOTE]
     > If you are validating the data upgrade of your production database running on the earlier release: To copy a database from a production environment back to a demo or development environment, follow the steps in [Export a copy of the standard user acceptance testing (UAT) database](../database/dbmovement-scenario-exportuat.md).   
     > 
-    > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For information about how to download AzCopy, and how to use it to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/documentation/articles/storage-use-azcopy/).
+    > For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For information about how to download AzCopy, and how to use it to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](/azure/storage/common/storage-use-azcopy-v10).
 
 3. Rename the original database by adding the suffix **\_orig**. Rename the newly restored database so that it has the same name as the original database. In this way, the two databases switch places.
 
@@ -410,7 +410,7 @@ After upgrade, values in encrypted fields in the database will be unreadable. Ho
 
 ## Additional resources
 
-[Process for moving to the latest update of Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
+[Process for moving to the latest update of Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

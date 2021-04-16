@@ -50,7 +50,7 @@ Users can enter and publish lines for financial journals from Microsoft Excel. A
 
 When the lines are published, they are validated to make sure that they comply with the rules that are set up in the financial journals. After the lines are published, users can edit or post the vouchers from Dynamics 365 Finance. 
 
-To add financial dimensions to a template, additional changes are required. For additional information, see [Add dimensions to the Microsoft Excel template](../../dev-itpro/financial/add-dimensions-excel-templates.md). After dimensions are added to the entity, they are available in the Excel designer and can be added to the template.
+To add financial dimensions to a template, additional changes are required. For additional information, see [Add dimensions to the Microsoft Excel template](../../fin-ops-core/dev-itpro/financial/add-dimensions-excel-templates.md). After dimensions are added to the entity, they are available in the Excel designer and can be added to the template.
 
 
 

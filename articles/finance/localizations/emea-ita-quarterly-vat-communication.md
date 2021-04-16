@@ -57,7 +57,7 @@ For example:
 
    ![Set up number sequence for Quarterly VAT Communication (LIPE) report](./media/num-seq.png)
 
-Find more information about how to set up number sequences in [Set up number sequences](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-number-sequences) section.
+Find more information about how to set up number sequences in [Set up number sequences](/dynamicsax-2012/appuser-itpro/set-up-number-sequences) section.
 
 ### Import and update Electronic reporting configurations
 
@@ -69,7 +69,7 @@ Find more information about how to set up number sequences in [Set up number seq
     | Quarterly VAT Communication model mapping | Model mapping    | The model mapping for data collection from Microsoft Dynamics 365 Finance to the Italian **Quarterly VAT Communication (LIPE)** report. |
     | Quarterly VAT Communication               | Exporting format | The ER format for the **Italian Quarterly VAT Communication (LIPE)** report in XML format.                                              |
 
-    For more information, see [Download ER configurations from the Global repository](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo).
+    For more information, see [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
     > [!IMPORTANT]
     > Be sure to import the most recent versions of these configurations. The description of each version usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in that version.

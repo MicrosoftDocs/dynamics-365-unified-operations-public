@@ -37,6 +37,11 @@ The new user interface (UI) is clearer and more comfortable to use. The **Busine
 
 You can use the **New document** button to create and edit a template in an Electronic reporting (ER) format configuration that is provided by another provider. In the example in this topic, the provider is Microsoft. Alternatively, you can create a template by uploading your own template in Excel format.
 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWAVQg]
+
+The [Create a new business document using Business document management](https://youtu.be/gAIYl-mM_pw) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+
 ## Make the new document UI in Business document management available
 
 To start to use the new document UI in Business document management, you must turn on the **Office-like UI experience for Business document management** feature in the **Feature management** workspace.

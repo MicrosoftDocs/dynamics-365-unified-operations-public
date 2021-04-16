@@ -177,7 +177,7 @@ For each disposition code that you define, you must select a disposition action.
 
 ## See also
 
-[Quarantine order (form)](https://technet.microsoft.com/library/aa554073(v=ax.60))
+[Quarantine order (form)](/dynamicsax-2012//quarantine-order-form)
 
 [Disposition codes (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 
