@@ -39,46 +39,39 @@ The following table shows the delimiters that can be used in the command line ex
 
 | Delimiter                 | Description |
 |---------------------------|-------------|
-| -C or -Config             | Specify the location and file name of the configuration file to use as part of this installation. |
-| -FilePath                 | Specify a custom installation location.<p>We don't recommend that you use this delimiter for a standard installation.</p> |
-| -LogFile                  | Specify a custom file location for the installation logs.<p>We don't recommend that you use this delimiter for a standard installation.</p> |
-| -SkipPrerequisiteCheck    | Skip the check for prerequisites and prerequisite installation.<p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
-| -SkipSystemInfoCollection | Skip the process of collecting system information at the beginning of the installation.<p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
-| -SkipMerchantInfo         | Skip the installation of merchant account information at the end of the legacy self-service installer for Hardware station.<p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
-| -SkipAppxInstallation     | Beginning in the October 2018 release of Dynamics 365, this delimiter will skip the installation of the APPX Retail Modern POS application. This delimiter is required to perform the application installation through the SYSTEM account or a service account (Any account that does not have a user profile). |
-| -Port | The port to be associated and used by the Retail Server virtual directory. If no port is set, the default port of 443 will be used. |
-| -SslCertThumbprint | The thumbprint of the certificate to be used to encrypt HTTP traffic to the scale unit. This thumbprint will be used to search the LocalMachine/My store location and name to find the correct certificate to use. Do not use this parameter along with the SslCertFullPath parameter. |
-| -SslcertFullPath | The fully formatted URN path with the thumbprint as the search metric of certificate's location to be used to encrypt HTTP traffic to the scale unit. For example: **store:\/\/My\/LocalMachine\?FindByThumbprint\=\<MyThumbprint\>** is a properly formatted URN where the value **\< MyThumbprint \>** would be replaced with the certificate thumbprint to be used. Do not use this parameter along with the SslCertThumbprint parameter. |
-| -AsyncClientCertThumbprint | The thumbprint of the Async Client Identity certificate to be used to authenticate with AAD for communications with Headquarters. This thumbprint will be used to search the LocalMachine/My store location and name to find the correct certificate to use. Do not use this parameter along with the AsyncClientCertFullPath parameter. |
-| -AsyncClientCertFullPath | The fully formatted URN path with the thumbprint as the search metric of the Async Client Identity certificate's location to be used to authenticate with AAD for communications with Headquarters. For example: store://My/LocalMachine?FindByThumbprint=<MyThumbprint> is a properly formatted URN where the value '< MyThumbprint >' would be replaced with the certificate thumbprint to be used. Do not use this parameter along with the AsyncClientCertThumbprint parameter. |
-| -RetailServerCertThumbprint | The thumbprint of the Retail Server Identity certificate to be used to authenticate with AAD for communications with Headquarters. This thumbprint will be used to search the LocalMachine/My store location and name to find the correct certificate to use. Do not use this parameter along with the RetailServerCertFullPath parameter. |
-| -RetailServerCertFullPath | The fully formatted URN path with the thumbprint as the search metric of the Retail Server Identity certificate to be used to authenticate with AAD for communications with Headquarters. For example: store://My/LocalMachine?FindByThumbprint=<MyThumbprint> is a properly formatted URN where the value '< MyThumbprint >' would be replaced with the certificate thumbprint to be used. Do not use this parameter along with the RetailServerCertThumbprint parameter. |
-| -AsyncClientAadClientId | AAD client id to be used by Async Client while communicating with HQ. |
-| -RetailServerAadClientId | AAD client id to be used by Retail Server while communicating with HQ. |
-| -CposAadClientId | AAD client id to be used by Cloud POS while activating a device. Not required for LBD deployments. |
-| -RetailServerAadResourceId | Retail Server's AAD App Resource ID to be used while activating a device. Not required for LBD deployments. |
-| -SqlServerName | SQL Server Name, if not specified the installer will try to locate default instance. |
-| -SkipSqlFullTextCheck | Switch indicating whether to skip validating SQL Server prerequisite requiring Full Text Search. Default is false. |
-| -TrustSqlServerCertificate | Switch indicating whether to trust Server Certificate while establishing a connection to SQL Server. To avoid security risks production deployments should never supply a value of 'True' here. Default is false. |
 | -AadTokenIssuerPrefix | AAD Token Issuer prefix. |
+| -AsyncClientAadClientId | AAD client id to be used by Async Client while communicating with HQ. |
 | -AsyncClientAppInsightsInstrumentationKey | Async Client AppInsights instrumentation key. |
+| -AsyncClientCertFullPath | The fully formatted URN path with the thumbprint as the search metric of the Async Client Identity certificate's location to be used to authenticate with AAD for communications with Headquarters. For example: store://My/LocalMachine?FindByThumbprint=<MyThumbprint> is a properly formatted URN where the value '< MyThumbprint >' would be replaced with the certificate thumbprint to be used. Do not use this parameter along with the AsyncClientCertThumbprint parameter. |
+| -AsyncClientCertThumbprint | The thumbprint of the Async Client Identity certificate to be used to authenticate with AAD for communications with Headquarters. This thumbprint will be used to search the LocalMachine/My store location and name to find the correct certificate to use. Do not use this parameter along with the AsyncClientCertFullPath parameter. |
 | -ClientAppInsightsInstrumentationKey | Client AppInsights instrumentation key. |
 | -CloudPosAppInsightsInstrumentationKey | Cloud POS AppInsights instrumentation key. |
-| - EnvironmentId | Environment ID. |
+| -CposAadClientId | AAD client id to be used by Cloud POS while activating a device. Not required for LBD deployments. |
+| -EnvironmentId | Environment ID. |
 | -HardwareStationAppInsightsInstrumentationKey | Hardware Station AppInsights instrumentation key. |
+| -Port | The port to be associated and used by the Retail Server virtual directory. If no port is set, the default port of 443 will be used. |
+| -RetailServerAadClientId | AAD client id to be used by Retail Server while communicating with HQ. |
+| -RetailServerAadResourceId | Retail Server's AAD App Resource ID to be used while activating a device. Not required for LBD deployments. |
+| -RetailServerCertFullPath | The fully formatted URN path with the thumbprint as the search metric of the Retail Server Identity certificate to be used to authenticate with AAD for communications with Headquarters. For example: store://My/LocalMachine?FindByThumbprint=<MyThumbprint> is a properly formatted URN where the value '< MyThumbprint >' would be replaced with the certificate thumbprint to be used. Do not use this parameter along with the RetailServerCertThumbprint parameter. |
+| -RetailServerCertThumbprint | The thumbprint of the Retail Server Identity certificate to be used to authenticate with AAD for communications with Headquarters. This thumbprint will be used to search the LocalMachine/My store location and name to find the correct certificate to use. Do not use this parameter along with the RetailServerCertFullPath parameter. |
+| -SkipAadCredentialsCheck| Switch indicating whether to skip AAD credentials prerequisite checks. Default is false. |
+| -SkipCertCheck | Switch indicating whether to skip then certificate prerequisite checks. Default is false. |
+| -SkipIisCheck | Switch indicating whether to skip IIS prerequisite checks. Default is false. |
+| -SkipNetFrameworkCheck | Switch indicating whether to skip .Net framework prerequisite checks. Default is false. |
+| -SkipScaleUnitHealthcheck | Switch indicating whether to skip runnig healthcheck on installed components. Default is false. |
+| -SkipSChannelCheck | Switch indicating whether to skip the secure channel prerequisite checks. Default is false. |
+| -SkipSqlFullTextCheck | Switch indicating whether to skip validating SQL Server prerequisite requiring Full Text Search. Default is false. |
+| -SkipSqlServerCheck | Switch indicating whether to skip SQL Server prerequisite checks. Default is false. |
+| -SqlServerName | SQL Server Name, if not specified the installer will try to locate default instance. |
+| -SslcertFullPath | The fully formatted URN path with the thumbprint as the search metric of certificate's location to be used to encrypt HTTP traffic to the scale unit. For example: **store:\/\/My\/LocalMachine\?FindByThumbprint\=\<MyThumbprint\>** is a properly formatted URN where the value **\< MyThumbprint \>** would be replaced with the certificate thumbprint to be used. Do not use this parameter along with the SslCertThumbprint parameter. |
+| -SslCertThumbprint | The thumbprint of the certificate to be used to encrypt HTTP traffic to the scale unit. This thumbprint will be used to search the LocalMachine/My store location and name to find the correct certificate to use. Do not use this parameter along with the SslCertFullPath parameter. |
 | -StoreSystemAosUrl | Headquarters (AOS) URL. |
 | -StoreSystemChannelDatabaseId | Channel database ID (Name). |
 | -TenantId | AAD Tenant ID. |
 | -TransactionServiceAzureAuthority | Transaction Service AAD Authority. |
 | -TransactionServiceAzureResource | Transaction Service AAD Resource. |
+| -TrustSqlServerCertificate | Switch indicating whether to trust Server Certificate while establishing a connection to SQL Server. To avoid security risks production deployments should never supply a value of 'True' here. Default is false. |
 | -WindowsPhoneAppInsightsInstrumentationKey | Hardware Station AppInsights instrumentation key. |
-| -SkipScaleUnitHealthcheck | Switch indicating whether to skip runnig healthcheck on installed components. Default is false. |
-| -SkipCertCheck | Switch indicating whether to skip then certificate prerequisite checks. Default is false. |
-| -SkipAadCredentialsCheck| Switch indicating whether to skip AAD credentials prerequisite checks. Default is false. |
-| -SkipSChannelCheck | Switch indicating whether to skip the secure channel prerequisite checks. Default is false. |
-| -SkipIisCheck | Switch indicating whether to skip IIS prerequisite checks. Default is false. |
-| -SkipSqlServerCheck | Switch indicating whether to skip SQL Server prerequisite checks. Default is false. |
-| -SkipNetFrameworkCheck | Switch indicating whether to skip .Net framework prerequisite checks. Default is false. |
 
 ## General overview
 
