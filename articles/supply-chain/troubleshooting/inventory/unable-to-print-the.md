@@ -1,7 +1,7 @@
 ---
 title: Unable to print the notes attached to a picking route
 description: Unable to print the notes attached to picking route
-author: SmithaNataraj
+author: niwang
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: WMSPickingRoutesJournal

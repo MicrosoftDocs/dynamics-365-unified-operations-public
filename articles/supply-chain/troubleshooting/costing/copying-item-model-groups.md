@@ -1,7 +1,7 @@
 ---
 title: Missing field settings on copying item model groups to another legal entity
 description: Missing field settings on copying item model groups to another legal entity
-author: SmithaNataraj
+author: niwang
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: InventModelGroup

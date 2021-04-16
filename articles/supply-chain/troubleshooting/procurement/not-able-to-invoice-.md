@@ -1,7 +1,7 @@
 ---
 title: not able to invoice the customer-facing sales order in the VEL company
 description: not able to invoice the customer-facing sales order in the VEL company
-author: SmithaNataraj
+author: niwang
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: SalesEditLines

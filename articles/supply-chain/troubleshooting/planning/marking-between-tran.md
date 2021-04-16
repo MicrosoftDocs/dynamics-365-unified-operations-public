@@ -1,7 +1,7 @@
 ---
 title: Marking between Transfer order receipt and batch order is not working correctly when using "Firm and consolidate"
 description: Marking between Transfer order receipt and batch order is not working correctly when using "Firm and consolidate"
-author: SmithaNataraj
+author: ChristianRytt
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: ReqTransPo,PmfBulkPlanConsolidate

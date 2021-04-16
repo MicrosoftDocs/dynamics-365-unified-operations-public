@@ -1,7 +1,7 @@
 ---
 title: Cumulating customer rebates using item rebate groups fails
 description: Cumulating customer rebates using item rebate groups fails
-author: SmithaNataraj
+author: sherry-zheng
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: PdsRebateTableListPage

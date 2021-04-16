@@ -1,7 +1,7 @@
 ---
 title: Planned purchase order created when a purchase exists within negative days
 description: Planning Optimization creates a planned purchase order when a purchase exists within negative days if the coverage code is min/max
-author: SmithaNataraj
+author: ChristianRytt
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: ReqTransPo,MpsIntegrationParameters

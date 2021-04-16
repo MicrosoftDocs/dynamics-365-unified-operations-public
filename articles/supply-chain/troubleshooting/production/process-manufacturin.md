@@ -1,7 +1,7 @@
 ---
 title: Formula line step conversion setup doesn't always work in a batch order
 description: Process Manufacturing Formula line Step Conversion setup does not always work in a Batch Order if the finished good Quantity is changed.
-author: SmithaNataraj
+author: johanhoffmann
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: ProdTableListPage,ProdTable

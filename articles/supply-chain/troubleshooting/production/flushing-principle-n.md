@@ -1,7 +1,7 @@
 ---
 title: Flushing principle settings on BOM lines aren't respected
 description: Flushing principle settings on BOM lines aren't respected
-author: SmithaNataraj
+author: johanhoffmann
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: PurchTable,ProdParameters

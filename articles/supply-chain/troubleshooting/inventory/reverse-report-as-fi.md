@@ -1,7 +1,7 @@
 ---
 title: Reversing a report as finished creates an unexpected open transaction
 description: Reverse report as finished with marking creates an open transaction with the quantity reversed having the same inventory dimensions of the transaction reversed.
-author: SmithaNataraj
+author: niwang
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: ProdTable

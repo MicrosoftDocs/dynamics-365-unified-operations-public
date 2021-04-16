@@ -1,7 +1,7 @@
 ---
 title: Multiple inventory transactions for batch numbers without "On physical update"
 description: Multiple inventory transactions are created after adjusting a purchase order line for items where the batch number group has "On physical update" set to "No".
-author: SmithaNataraj
+author: niwang
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: InventNumGroup

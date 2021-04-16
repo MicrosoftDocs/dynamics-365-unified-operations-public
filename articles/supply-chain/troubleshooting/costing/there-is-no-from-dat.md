@@ -1,7 +1,7 @@
 ---
 title: There is no "From date" on the "Active prices" tab
 description: There is no "From date" on the "Active prices" tab
-author: SmithaNataraj
+author: niwang
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: InventItemPrice

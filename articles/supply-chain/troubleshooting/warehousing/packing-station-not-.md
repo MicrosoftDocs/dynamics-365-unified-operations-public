@@ -1,7 +1,7 @@
 ---
 title: Packing station doesn't display product notes
 description: Packing station doesn't display product notes
-author: SmithaNataraj
+author: perlynne
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: WHSPack

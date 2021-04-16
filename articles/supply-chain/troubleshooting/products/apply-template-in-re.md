@@ -1,7 +1,7 @@
 ---
 title: Can't apply a template to a released product
 description: Can't apply a template to a released product 
-author: SmithaNataraj
+author: t-benebo
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: EcoResProductDetailsExtended

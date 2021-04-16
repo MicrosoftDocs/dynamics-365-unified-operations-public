@@ -1,7 +1,7 @@
 ---
 title: Purchase Requisition - after the request change, it is not possible to add line
 description: Purchase Requisition - after the request change, it is not possible to add line
-author: SmithaNataraj
+author: niwang
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: PurchReqTable

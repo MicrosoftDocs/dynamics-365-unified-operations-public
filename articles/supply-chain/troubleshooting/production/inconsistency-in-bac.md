@@ -1,7 +1,7 @@
 ---
 title: Inconsistency in backflushing WMS-enabled raw materials
 description: When backflushing raw materials, the system behaves differently for materials enabled for advanced warehouse management (WMS) when compared to materials not enabled for WMS.
-author: SmithaNataraj
+author: johanhoffmann
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: ProdTableListPage

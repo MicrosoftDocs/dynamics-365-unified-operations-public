@@ -1,7 +1,7 @@
 ---
 title: Master planning batch job filter is not working as expected
 description: Master planning batch job filter is not working as expected
-author: SmithaNataraj
+author: ChristianRytt
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: ReqTransPo

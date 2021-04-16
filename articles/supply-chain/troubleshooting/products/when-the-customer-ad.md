@@ -1,7 +1,7 @@
 ---
 title: Purchase orders don't show translated text.
 description: Purchase orders don't show translated text.
-author: SmithaNataraj
+author: t-benebo
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: EcoResProductDetailsExtended, SysTranslationDetail

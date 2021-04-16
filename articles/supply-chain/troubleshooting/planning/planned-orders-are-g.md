@@ -1,7 +1,7 @@
 ---
 title: Planned orders are generated for phantom products after running master planning
 description: Planned orders are generated for phantom products after running master planning
-author: SmithaNataraj
+author: ChristianRytt
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: ReqTransPo

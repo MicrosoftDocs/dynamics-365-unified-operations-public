@@ -1,7 +1,7 @@
 ---
 title: Late selection not respected when resetting production orders via batch job
 description: Late selection isn't respected when you use a recurring batch job to reset the status of a production order.
-author: SmithaNataraj
+author: johanhoffmann
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: ProdTableListPage

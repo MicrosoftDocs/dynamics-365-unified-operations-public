@@ -1,7 +1,7 @@
 ---
 title: Error on posting report as finished journal
 description: On posting the report as finished journal, the following error is shown - "Quantity ordered cannot be reduced because there are not enough open inventory transactions with the ordered status"
-author: SmithaNataraj
+author: johanhoffmann
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: ProdTableListPage, ProdParameters

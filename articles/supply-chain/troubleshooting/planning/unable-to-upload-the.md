@@ -1,7 +1,7 @@
 ---
 title: Unable to upload the cost price in demand forecast entries
 description: You are unable to upload the cost price in demand forecast entries through data management entities
-author: SmithaNataraj
+author: ChristianRytt
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: DataManagementWorkspace

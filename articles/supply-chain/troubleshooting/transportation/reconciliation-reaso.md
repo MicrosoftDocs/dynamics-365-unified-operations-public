@@ -1,7 +1,7 @@
 ---
 title: Reconciliation reason does not allow to add Cost center or any other dimension in credit account except main account
 description: Reconciliation reason does not allow to add Cost center or any other dimension in credit account except main account
-author: SmithaNataraj
+author: Henrikan
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: TMSFBDetailReconcile

@@ -1,7 +1,7 @@
 ---
 title: Available physical calculation for Negative inventory items
 description: Available physical calculation for Negative inventory items
-author: SmithaNataraj
+author: perlynne
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: InventOnhandItem

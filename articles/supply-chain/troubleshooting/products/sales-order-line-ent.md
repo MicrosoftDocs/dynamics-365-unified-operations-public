@@ -1,7 +1,7 @@
 ---
 title: Sales Order Line entry function, the filter functionality will not save to "contains" and always defaults to "begins with". 
 description: Sales Order Line entry function, the filter functionality will not save to "contains" and always defaults to "begins with". 
-author: SmithaNataraj
+author: t-benebo
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: SalesTable
@@ -12,7 +12,7 @@ ms.author: myvakalo
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-<!-- KFM: Do we really want to publish issues noted as "not reproducible"? (Not edited) -->
+<!-- KFM: Do we really want to publish issues noted as "not reproducible"? This topic is otherwise unclear and requires revision, and the title must be less than 80 chars. (Not edited) -->
 # Sales Order Line entry function, the filter functionality will not save to "contains" and always defaults to "begins with"
 
 KB Number: 4611879

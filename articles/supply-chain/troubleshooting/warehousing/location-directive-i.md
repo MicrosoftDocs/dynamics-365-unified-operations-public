@@ -1,7 +1,7 @@
 ---
 title: Location directive isn't working for net weight or volume based setups
 description: Location directive isn't working for net weight or volume based setups
-author: SmithaNataraj
+author: perlynne
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: WHSLocDirTable

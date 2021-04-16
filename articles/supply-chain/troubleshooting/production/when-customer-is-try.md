@@ -1,7 +1,7 @@
 ---
 title: Batch number vanishes when selecting the LOTID field
 description: Batch number vanishes when selecting the LOTID field
-author: SmithaNataraj
+author: johanhoffmann
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: ProdJournalTransBOM

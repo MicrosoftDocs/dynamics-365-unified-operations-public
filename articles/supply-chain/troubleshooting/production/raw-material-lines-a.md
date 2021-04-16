@@ -1,7 +1,7 @@
 ---
 title: Raw material lines are allowed for unpicking and deletion even after FG creation
 description: Raw material lines are allowed for unpicking and deletion even after FG creation
-author: SmithaNataraj
+author: johanhoffmann
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: ProdTableListPage

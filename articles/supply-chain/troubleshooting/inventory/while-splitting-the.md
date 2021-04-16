@@ -1,7 +1,7 @@
 ---
 title: While splitting the CW quantity into batches ,the system is automatically changing the ‘Pick quantity’ based on minimum quantity setup on the item whereas it should change based on nominal quantity setup on the item.
 description: While splitting the CW quantity into batches ,the system is automatically changing the ‘Pick quantity’ based on minimum quantity setup on the item whereas it should change based on nominal quantity setup on the item.
-author: SmithaNataraj
+author: niwang
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: WMSPickingRegistration

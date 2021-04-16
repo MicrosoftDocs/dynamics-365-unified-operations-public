@@ -1,7 +1,7 @@
 ---
 title: You are asked to save item coverage settings after making no changes
 description: You are asked to save item coverage settings after making no changes
-author: SmithaNataraj
+author: ChristianRytt
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: DataManagementWorkspace_

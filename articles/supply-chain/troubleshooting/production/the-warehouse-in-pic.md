@@ -1,7 +1,7 @@
 ---
 title: The warehouse in the picking list journal is not linked to a BOM line
 description: The warehouse in the picking list journal is not linked to a BOM line
-author: SmithaNataraj
+author: johanhoffmann
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: ProdJournalTransBOM

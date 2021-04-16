@@ -1,7 +1,7 @@
 ---
 title: Physically received purchase orders don't appear in the inventory closing report
 description: Physically received purchase orders don't appear in the "Check open quantities" inventory closing report.
-author: SmithaNataraj
+author: niwang
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: InventOpenQtyCritical

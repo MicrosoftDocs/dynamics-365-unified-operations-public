@@ -1,7 +1,7 @@
 ---
 title: Can't import an item using the Released products V2 entity
 description: Can't import an item using the Released products V2 entity
-author: SmithaNataraj
+author: t-benebo
 ms.date: 4/11/2021
 ms.topic: troubleshooting
 ms.search.form: EcoResProductDetailsExtended, DataManagementWorkspace
