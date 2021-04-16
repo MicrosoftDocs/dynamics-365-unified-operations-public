@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Human Resources (February 25, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for February 25, 2020.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/25/2020
 ms.topic: article
 ms.prod: 
@@ -109,7 +108,7 @@ The following preview features became available on February 3, 2020:
 ## See also
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
-[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
 

@@ -4,7 +4,6 @@
 title: Opt out of web activity event collection
 description: This topic explains how you can let visitors to your website opt out of web activity event collection in Microsoft Dynamics 365 Commerce. 
 author: aamiral
-manager: AnnBe
 ms.date: 05/15/2020
 ms.topic: article
 ms.prod: 

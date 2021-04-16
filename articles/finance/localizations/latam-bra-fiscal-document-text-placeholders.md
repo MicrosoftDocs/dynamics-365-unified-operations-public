@@ -4,7 +4,6 @@
 title: Fiscal document text placeholders for Brazil
 description: Fiscal document text placeholders are predefined tags that represent specific values. You can include the placeholders in the <strong>Text </strong>field on the <strong>Fiscal document source texts </strong>page when you create a fiscal document source text.
 author: sndray
-manager: AnnBe
 ms.date: 08/13/2020
 ms.topic: article
 ms.prod: 

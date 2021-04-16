@@ -4,7 +4,6 @@
 title: Work with preset layouts
 description: This topic describes how to work with preset layouts in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Messaging system for Finance and Operations apps
 description: This topic describes the rich, powerful messaging system in Finance and Operations apps.
 author: jasongre
-manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Maintenance request types
 description: This topic explains how to set up a maintenance request types in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 07/26/2019
 ms.topic: article
 ms.prod: 

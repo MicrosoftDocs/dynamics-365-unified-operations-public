@@ -4,7 +4,6 @@
 title: Wave allocation
 description: This topic describes how to set up the wave allocation step, including how to enable parallel processing for it.
 author: Mirzaab
-manager: tfehr
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: 

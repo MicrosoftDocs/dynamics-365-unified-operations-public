@@ -4,7 +4,6 @@
 title: Create an Azure storage account and a key vault
 description: This topic explains how to create an Azure storage account and key vault. 
 author: gionoder
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
@@ -36,8 +35,8 @@ ms.dyn365.ops.version: AX 10.0.12
 
 Before you can complete the steps in this topic, you must make sure that the following tasks have been completed:
 
-- Create a key vault resource in Azure. For more information, see [About Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview).
-- Create an Azure storage account (Blob storage). For more information, see [Maintaining Azure Storage Account](https://docs.microsoft.com/azure/storage/blobs/).
+- Create a key vault resource in Azure. For more information, see [About Azure Key Vault](/azure/key-vault/general/overview).
+- Create an Azure storage account (Blob storage). For more information, see [Maintaining Azure Storage Account](/azure/storage/blobs/).
 
 ## Overview
 
@@ -89,4 +88,3 @@ In this topic, you will complete two main steps:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

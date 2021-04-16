@@ -4,7 +4,6 @@
 title: Partial fixed asset disassembly (liquidation)
 description: This topic provides information about partial fixed asset disassembly or liquidation for Russia.
 author: v-oloski
-manager: AnnBe
 ms.date: 09/14/2018
 ms.topic: article
 ms.prod: 

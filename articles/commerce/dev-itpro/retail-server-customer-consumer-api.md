@@ -4,7 +4,6 @@
 title: Commerce Scale Unit customer and consumer APIs
 description: This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients.
 author: mugunthanm
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Bank data usability enhancement
 description: This topic explains how you can help save time and simplify bank data registration for customers and vendors.
 author: ilkond
-manager: AnnBe
 ms.date: 11/12/2019
 ms.topic: article
 ms.prod: 
@@ -37,11 +36,11 @@ Companies often have to enter and maintain a large amount of banking information
 Before you begin, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Italy.
-- The **Bank account setup enhancement** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The **Bank account setup enhancement** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Import bank groups
 
-You can import the list of banks by using the **Bank groups** entity and the Data management framework. For more information, see [Data import and export jobs overview](../../dev-itpro/data-entities/data-import-export-job.md).
+You can import the list of banks by using the **Bank groups** entity and the Data management framework. For more information, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
 
 The source data that is used to import bank groups can be presented as a Microsoft Excel file that has the following column names:
 

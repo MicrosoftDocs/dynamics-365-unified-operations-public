@@ -4,7 +4,6 @@
 title: Create a fixed asset with additional depreciation
 description: In Japan, a fixed asset is permitted to post an additional depreciation amount, under certain conditions. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

@@ -4,7 +4,6 @@
 title: Year-end processing in the public sector
 description: This article provides information about year-end processing for a public sector organizations.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

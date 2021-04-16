@@ -4,7 +4,6 @@
 title: Create a benefits plan
 description: Set up benefit plans in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 03/24/2021
 ms.topic: article
 ms.prod: 

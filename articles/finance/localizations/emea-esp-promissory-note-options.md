@@ -4,7 +4,6 @@
 title: Spanish promissory note options
 description: This topic describes options and changes for the basic promissory note functionality that is implemented in Microsoft Dynamics 365 Finance for legal entities in Spain.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

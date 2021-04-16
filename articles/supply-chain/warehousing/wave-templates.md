@@ -4,7 +4,6 @@
 title: Wave templates
 description: This topic describes how to set up the criteria that determine whether waves are processed manually or automatically, and the work that is generated for a warehouse when a wave is processed.
 author: Mirzaab
-manager: tfehr
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: 

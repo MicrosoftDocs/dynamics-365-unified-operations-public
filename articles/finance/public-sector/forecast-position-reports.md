@@ -4,7 +4,6 @@
 title: Forecast position reports for the public sector
 description: You can use the Forecast position summary and Forecast position detail reports to generate information about forecast positions during a budget plan and scenario that you specify. 
 author: velofog
-manager: AnnBe
 ms.date: 10/29/2019
 ms.topic: article
 ms.prod: 

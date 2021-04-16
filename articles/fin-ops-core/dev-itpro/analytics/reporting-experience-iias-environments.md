@@ -4,7 +4,6 @@
 title: Default reporting experiences in IaaS environments
 description: This topic provides information about paginated reporting in Finance and Operations apps.
 author: RichdiMSFT
-manager: AnnBe
 ms.date: 05/13/2020
 ms.topic: article
 ms.prod: 
@@ -39,7 +38,7 @@ The Document Reporting Service bundled with Finance and Operations apps provide 
 - **Document generation** – The production of structured documents, where the primary purpose are often printing and bulk email distribution.
 - **BI and analytics** – Interactive visualizations that are based on aggregations, and that contain embedded links to referenced data. Users rely on these visualizations to identify patterns and trends in large amounts of data.
 
-Although the Document Reporting Service continues to be the ideal tool for bulk production of business documents, they lack the extensibility options that power users require so that they can adapt analytical views and account for frequent changes in the business environment. At the same time, the [Microsoft Power BI service](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview) is recognized as an industry leader in the delivery of powerful analytics for businesses of all sizes. Integration options for Finance and Operations apps and the Power BI service are available to accommodate seamless exploration of customer business data.
+Although the Document Reporting Service continues to be the ideal tool for bulk production of business documents, they lack the extensibility options that power users require so that they can adapt analytical views and account for frequent changes in the business environment. At the same time, the [Microsoft Power BI service](/power-bi/fundamentals/power-bi-overview) is recognized as an industry leader in the delivery of powerful analytics for businesses of all sizes. Integration options for Finance and Operations apps and the Power BI service are available to accommodate seamless exploration of customer business data.
 
 > [!NOTE]
 > When the platform updates for version 10.0.12 are released, the Dynamics 365 service will discontinue support for the Report Viewer control that is used to facilitate BI and analytics interactions with paginated reports. Instead, reports that the Document Reporting service renders on the screen will use the embedded PDF viewer. For more information about the embedded PDF viewer, see [Preview PDF documents with an embedded viewer](preview-pdf-documents.md).
@@ -54,7 +53,7 @@ The following table compares the fundamentals of the two reporting experiences.
 |--------------------------|---------|------------------|
 | **Display format**       | PDF and Office documents | HTML |
 | **Data volume**          | One to hundreds of rows | Tens of thousands of rows or more |
-| **Interactive features** | Printing, text search, and sharing | [Drill-through, drill-down, and nested regions](https://docs.microsoft.com/sql/reporting-services/report-design/drillthrough-drilldown-subreports-and-nested-data-regions?view=sql-server-ver15) |
+| **Interactive features** | Printing, text search, and sharing | [Drill-through, drill-down, and nested regions](/sql/reporting-services/report-design/drillthrough-drilldown-subreports-and-nested-data-regions?view=sql-server-ver15) |
 | **Data source**          | Transactional database | Data warehouse |
 | **Report author**        | Developer | Power user |
 | **Layout**               | Structured, predefined layout | Adaptive, flexible layout |

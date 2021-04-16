@@ -4,7 +4,6 @@
 title: Payroll data updates FAQ
 description: This topic lists questions and answers that address changes to payroll data.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

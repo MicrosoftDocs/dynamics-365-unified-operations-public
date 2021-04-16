@@ -4,7 +4,6 @@
 title: Upgrade from AX 2012 - Estimate effort by using the Code upgrade service
 description: This topic explains how to use the Code upgrade service in LCS to estimate the tasks and effort that are required in order to upgrade a code base.
 author: LaneSwenka
-manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Products and categories don't appear in Commerce site builder after a new site is mapped
 description: This topic provides troubleshooting guidance that can help when products and categories don't appear in Commerce site builder after a new site is mapped.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 

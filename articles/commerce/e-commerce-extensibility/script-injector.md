@@ -4,7 +4,6 @@
 title: Script injectors
 description: This topic covers script injectors that can be used to add scripts to online pages in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 

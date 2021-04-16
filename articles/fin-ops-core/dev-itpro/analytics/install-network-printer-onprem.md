@@ -4,7 +4,6 @@
 title: Install network printer devices in on-premises environments
 description: This topic explains how to connect an on-premises deployment of Microsoft Dynamics 365 Finance + Operations (on-premises), to existing network printer devices.
 author: RichdiMSFT
-manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
@@ -31,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to connect an on-premises deployment of Microsoft Dynamics 365 Finance + Operations (on-premises) to existing network printer devices. Network printing in the on-premises application is supported by the [Print and Document Services](https://technet.microsoft.com/library/hh831468(v=ws.11).aspx) feature in Microsoft Windows Server 2016. This feature lets you centralize tasks that are related to printer management. To install and configure Print and Document Services, you must have administrative access to the server that hosts the primary instance of Application Object Server (AOS).
+This topic explains how to connect an on-premises deployment of Microsoft Dynamics 365 Finance + Operations (on-premises) to existing network printer devices. Network printing in the on-premises application is supported by the [Print and Document Services](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831468(v=ws.11)) feature in Microsoft Windows Server 2016. This feature lets you centralize tasks that are related to printer management. To install and configure Print and Document Services, you must have administrative access to the server that hosts the primary instance of Application Object Server (AOS).
 
 Two roles are associated with the configuration of network printing services:
 
@@ -44,8 +43,8 @@ Before the organization administrator can begin to add network printers, the ser
 
 The environment administrator uses the information in this section to enable network printing services.
 
-1. Install Print and Document Services by following the instructions in [Install Print and Document Services](https://technet.microsoft.com/library/jj134159(v=ws.11).aspx).
-2. Configure Print and Document Services by following the instructions in [Configure Print and Document Services](https://technet.microsoft.com/library/jj134163(v=ws.11).aspx).
+1. Install Print and Document Services by following the instructions in [Install Print and Document Services](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134159(v=ws.11)).
+2. Configure Print and Document Services by following the instructions in [Configure Print and Document Services](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134163(v=ws.11)).
 3. Follow these steps for each server that is used to host the AXService application:
 
     1. On the local server, start the **Local Users and Groups** manager.

@@ -4,7 +4,6 @@
 title: Advance holders reports
 description: This topic describes the Advance holder reports that are available for Russia. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/05/2018
 ms.topic: article
 ms.prod: 
@@ -219,7 +218,7 @@ In the **Details and sorting parameters** section, select the available fields t
 
 ## Additional resources
 
-[SQL Server Reporting Services Reports report](https://docs.microsoft.com/dynamics/s-e/)
+[SQL Server Reporting Services Reports report](/dynamics/s-e/)
 
 
 

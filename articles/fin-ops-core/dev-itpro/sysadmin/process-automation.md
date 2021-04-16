@@ -4,7 +4,6 @@
 title: Process automation
 description: This topic provides details about how process automation allows simple scheduling of processes that will be run by the batch server.
 author: RyanCCarlson2
-manager: tonyafehr
 ms.date: 08/12/2020
 ms.topic: article
 ms.prod:

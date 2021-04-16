@@ -4,7 +4,6 @@
 title: Derogatory depreciation for France
 description: This article provides information about derogatory depreciation and how to set it up. In derogatory depreciation, an extra amount of depreciation is calculated as the difference between the depreciation amount on the tax value model and the depreciation amount on the accounting value model during the life of a fixed asset.
 author: Anasyash
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

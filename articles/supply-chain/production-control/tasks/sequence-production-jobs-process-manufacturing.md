@@ -4,7 +4,6 @@
 title: Sequence production jobs for process manufacturing
 description: This procedure uses paint products as an example to show how to sequence planned orders according to the priority of color and package size. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

@@ -4,7 +4,6 @@
 title: What's new or changed in Finance and Operations version 10.0.2 (May 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.2. This version will be released in May.
 author: tonyafehr
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Channel setup prerequisites
 description: This topic presents an overview of channels setup prerequisites in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 02/21/2020
 ms.topic: article
 ms.prod: 

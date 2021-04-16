@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Element designers
 description: This topic reviews the element designers and explains how to use them.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
 audience: Developer
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
 ms.custom: 79871
 ms.assetid: 636a4e41-f772-477f-bde8-538a09a79f6e
 ms.search.region: Global
-# ms.search.industry:
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Element designers

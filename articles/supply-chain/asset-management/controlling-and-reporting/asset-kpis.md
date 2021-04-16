@@ -4,7 +4,6 @@
 title: Asset KPIs
 description: This topic explains asset KPIs in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: 

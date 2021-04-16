@@ -4,7 +4,6 @@
 title: Microsoft Dynamics Insider Program
 description: These Supplemental Preview Terms (“Preview Terms”) are in addition to and supplement the Microsoft Dynamics 365 Insider Program Agreement (“Program Agreement” and, as supplemented by these Preview Terms, the “Agreement”) that Participant accepted.
 author: ShellyBakke
-manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 

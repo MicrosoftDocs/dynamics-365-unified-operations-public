@@ -4,7 +4,6 @@
 title: Set up and run the Cash position inquiry
 description: This topic provides information about the Cash position inquiry. This inquiry lets you determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions.
 author: velofog
-manager: AnnBe
 ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 

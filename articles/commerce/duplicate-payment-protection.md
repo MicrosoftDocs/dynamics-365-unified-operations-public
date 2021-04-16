@@ -4,7 +4,6 @@
 title: Duplicate payments prevention
 description: This topic describes how Dynamics 365 Commerce helps to prevent duplicate payments in the Modern POS.
 author: rubendel
-manager: AnnBe
 ms.date: 10/23/2020
 ms.topic: article
 ms.prod: 

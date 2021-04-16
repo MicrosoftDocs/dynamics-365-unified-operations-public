@@ -4,7 +4,6 @@
 title: Rule-based tax settlement
 description: This topic explains how to set up and work with rule-based tax settlements.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 

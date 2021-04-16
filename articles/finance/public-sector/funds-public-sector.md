@@ -4,7 +4,6 @@
 title: Funds in the public sector
 description: A fund is a self-balancing set of financial books that is used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements. Public-sector organizations use funds to demonstrate their fiscal accountability.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
@@ -78,9 +77,8 @@ Here’s a list of some of the funds that might be used by a town government:
 
 The following table shows these funds grouped by fund class and fund type.
 
-|                |                        |                 |                                  |
+| Fund class | Fund type          | Fund number | Fund name                    |
 |----------------|------------------------|-----------------|----------------------------------|
-| **Fund class** | **Fund type**          | **Fund number** | **Fund name**                    |
 | Governmental   | General Fund           | 1103            | General Fund                     |
 |                | Special Revenue Funds  | 1343            | School of Technology             |
 |                |                        | 1372            | Information Technology           |

@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Human Resources (August 20, 2020)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for August 20, 2020.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: 
@@ -71,15 +70,15 @@ A DMF entity is now available for accrual suspensions.
 
 You can make fields mandatory by using Human Resources personalization capabilities. This feature requires **Saved views**. For more information about saved views, see:
 
-- [Saved views - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) in the Dynamics 365 2020 release wave 2 plan
-- [Build forms that fully utilize saved views](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
+- [Saved views - general availability](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) in the Dynamics 365 2020 release wave 2 plan
+- [Build forms that fully utilize saved views](../fin-ops-core/dev-itpro/user-interface/understanding-saved-views.md)
 
 ### Human Resources application in Teams
 
 Employees can view and request time away from work within Microsoft Teams. They can interact with a bot to create leave requests. For more information, see:
 
-- [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 1 plan
-- [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
+- [Employee leave and absence experience in Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 1 plan
+- [Human Resources app in Teams](./hr-admin-teams-leave-app.md)
 
 ## Coming soon
 
@@ -123,7 +122,7 @@ We have recently discovered two issues regarding the **BenefitsPlanEmployee** en
 ## See also
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
-[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
 

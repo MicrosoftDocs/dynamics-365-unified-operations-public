@@ -4,7 +4,6 @@
 title: Electronic reporting (ER) destinations
 description: This topic provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: nselin
-manager: tfehr
 ms.date: 02/24/2021
 ms.topic: article
 ms.prod: 
@@ -63,7 +62,7 @@ The default behavior for an ER format configuration depends on the execution typ
 
 In the **Intrastat Report** dialog box, on the **Run in the background** FastTab, if you set the **Batch processing** option to **No**, an ER format is run immediately in interactive mode. When this execution is successfully completed, a generated outbound document is made available for download.
 
-If you set the **Batch processing** option to **Yes**, an ER format is run in [batch](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) mode. The appropriate batch job is created, based on the parameters that you specify on the **Run in the background** tab of the **ER parameters** dialog box.
+If you set the **Batch processing** option to **Yes**, an ER format is run in [batch](../sysadmin/batch-processing-overview.md) mode. The appropriate batch job is created, based on the parameters that you specify on the **Run in the background** tab of the **ER parameters** dialog box.
 
 > [!NOTE]
 > The job description informs you about the run of an ER format mapping. It also contains the name of the ER component that is run.
@@ -76,7 +75,7 @@ You can find information about this job in several places:
 - Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs** to check the status of the scheduled job and the execution results of the completed job. When job execution is successfully completed, select **Show files** on the **Electronic reporting jobs** page to get a generated outbound document.
 
     > [!NOTE]
-    > This document is stored as an attachment of the current job record and is controlled by the [Document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) framework. The [document type](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) that is used to store ER artifacts of this type is configured in the [ER parameters](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+    > This document is stored as an attachment of the current job record and is controlled by the [Document management](../../fin-ops/organization-administration/configure-document-management.md) framework. The [document type](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) that is used to store ER artifacts of this type is configured in the [ER parameters](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 - On the **Electronic reporting jobs** page, select **Show files** to view the list of any errors and warnings that were generated during job execution.
 

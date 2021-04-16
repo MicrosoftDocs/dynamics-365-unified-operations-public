@@ -5,7 +5,6 @@
 title: Power BI content home page
 description: This topic lists PowerBI.com solutions that are available and points you to resources where you can learn more about the solutions.
 author: sericks007
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Prerequisites for ISO 20022 credit transfer format 
 description: This topic provides information about importing the requirements needed to set the ISO20022 (FR) (pain.001) payment format.
 author: neserovleo
-manager: AnnBe
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: 

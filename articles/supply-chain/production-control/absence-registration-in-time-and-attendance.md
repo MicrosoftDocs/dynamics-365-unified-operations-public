@@ -4,7 +4,6 @@
 title: Absence registration in Time and attendance
 description: This topic explains how to handle absence registrations in Time and attendance.
 author: johanhoffmann
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 

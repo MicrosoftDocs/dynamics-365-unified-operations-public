@@ -4,7 +4,6 @@
 title: Procurement and sourcing workflows
 description: Some organizations require that purchase requisitions and purchase orders are approved by a user other than the person who entered the transaction. To set up an approval process, you can create a workflow.
 author: kamaybac
-manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 

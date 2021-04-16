@@ -4,7 +4,6 @@
 title: Migrate Segmented Entry controls
 description: This topic describes migration scenarios for the Segmented Entry control.
 author: robinarh
-manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 

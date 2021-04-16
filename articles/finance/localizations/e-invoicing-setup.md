@@ -4,7 +4,6 @@
 title: Set up Electronic invoicing
 description: This topic explains how to set up electronic invoicing  in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
-manager: AnnBe
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 
@@ -81,7 +80,7 @@ Follow these steps to add ER formats to the Electronic invoicing feature.
     > [!NOTE]
     > While you're editing the format, the status of the configuration version is set to **Draft**.
 
-3. Use the **Format designer** page to change the file format configuration. For more information, see [Create electronic document configurations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
+3. Use the **Format designer** page to change the file format configuration. For more information, see [Create electronic document configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
     ![Format designer page](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 

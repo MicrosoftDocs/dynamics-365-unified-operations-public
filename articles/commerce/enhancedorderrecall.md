@@ -4,7 +4,6 @@
 title: Recall order operation in POS
 description: This topic explains feature capabilities available for improved order recall pages in POS.
 author: hhainesms
-manager: annbe
 ms.date: 03/12/2021
 ms.topic: article
 ms.prod:

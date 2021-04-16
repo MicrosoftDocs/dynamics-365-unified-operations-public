@@ -4,7 +4,6 @@
 title: Create workflows overview
 description: This topic explains how to create a workflow.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 

@@ -3,7 +3,6 @@
 title: Inventory profile overview
 description: This topic provides information about the inventory profile which is intended for the implementation of and accounting for movements and on-hand inventory as they relate to activities.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 

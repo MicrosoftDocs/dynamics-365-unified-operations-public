@@ -4,7 +4,6 @@
 title: Denmark overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Denmark. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 

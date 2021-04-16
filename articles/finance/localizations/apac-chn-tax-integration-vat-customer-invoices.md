@@ -4,7 +4,6 @@
 title: Chinese tax integration modification for VAT customer invoices FAQ
 description: You can generate value-added tax (VAT) customer invoices, and then export them as text files. You can then import reference numbers for the VAT customer invoices that can be linked to the original invoices.
 author: mrolecki
-manager: AnnBe
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
@@ -43,7 +42,7 @@ Yes. You can create one tax integration profile for multiple types of documents.
 
 ## Can I create an invoice that has different sales tax codes and sales tax rates in lines?
 
-Yes. If you turn on the **Allow multiple tax codes in VAT customer invoices lines for Chinese Golden tax integration** feature (see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md)), and if there is a tax integration profile where the **Sales tax code** field is blank on **Tax integration profile** page (**Accounts receivable \> Setup \> Tax integration**), you can create and post invoices that have different sales tax codes and sales tax rates. You can also export the invoices to the file.   
+Yes. If you turn on the **Allow multiple tax codes in VAT customer invoices lines for Chinese Golden tax integration** feature (see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)), and if there is a tax integration profile where the **Sales tax code** field is blank on **Tax integration profile** page (**Accounts receivable \> Setup \> Tax integration**), you can create and post invoices that have different sales tax codes and sales tax rates. You can also export the invoices to the file.   
 
 ## When should I split a VAT customer invoice?
 You should split a VAT customer invoice if the **Over amount limit** check box is selected on the **VAT invoice integration** page. The **Over amount limit** option is selected for the invoices that have a total invoice amount that exceeds the amount limit that you specify in the **Maximum invoice amount** field on the **Tax integration profiles** page.

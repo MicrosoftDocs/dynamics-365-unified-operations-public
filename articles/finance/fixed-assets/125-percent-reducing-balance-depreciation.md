@@ -4,7 +4,6 @@
 title: 125 percent reducing balance depreciation
 description: This article gives an overview of the 125 percent reducing balance method of depreciation.
 author: saraschi2
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -70,7 +69,7 @@ If you select **Fiscal** as the depreciation year, the following options are ava
 
 ## Example of 125% reducing balance depreciation
 
-|                                |        |
+| &nbsp;                         | &nbsp; |
 |--------------------------------|--------|
 | Acquisition cost               | 11,000 |
 | Salvage value                  | 1,000  |

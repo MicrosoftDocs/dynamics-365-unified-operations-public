@@ -4,7 +4,6 @@
 title: Cloud-powered search overview
 description: This topic gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-manager: annbe
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Regulatory Configuration Services (RCS) - Globalization features
 description: This topic explains how to use Microsoft Regulatory Configuration Services (RCS) and the Global repository to create and use Globalization features. 
 author: JaneA07
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 

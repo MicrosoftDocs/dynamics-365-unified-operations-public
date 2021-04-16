@@ -4,7 +4,6 @@
 title: Extend tax engine configurations
 description: This topic provides information about extending tax engine configurations.
 author: yijialuan
-manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
 ms.prod: 

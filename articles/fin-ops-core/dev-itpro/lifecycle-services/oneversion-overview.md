@@ -4,7 +4,6 @@
 title: One Version service updates overview
 description: This topic gives an overview of the various steps that make up the experience for managing service updates initiated by Microsoft as part of One Version.
 author: angelmarshall
-manager: AnnBe
 ms.date: 05/21/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Automated Entity store refresh
 description: This topic describes how to enable automated Entity store refresh.
 author: MilindaV2
-manager: AnnBe
 ms.date: 01/24/2019
 ms.topic: article
 ms.prod: 

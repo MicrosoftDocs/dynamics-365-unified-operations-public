@@ -4,7 +4,6 @@
 title: Cloud operations and servicing
 description: This topic describes cloud operations and servicing.
 author: laneswenka
-manager: AnnBe
 ms.date: 10/03/2019
 ms.topic: article
 ms.prod: 

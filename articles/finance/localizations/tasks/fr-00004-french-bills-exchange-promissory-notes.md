@@ -4,7 +4,6 @@
 title: FR-00004 French bills of exchange and promissory notes
 description: The French bill of exchange remittance report displays details about remitted bills of exchange. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

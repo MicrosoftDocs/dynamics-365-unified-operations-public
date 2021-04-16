@@ -4,7 +4,6 @@
 title: Create a vendor certification type in the public sector
 description: This topic provides information about how to create and assign vendor certification types in the public sector. 
 author: twheeloc
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

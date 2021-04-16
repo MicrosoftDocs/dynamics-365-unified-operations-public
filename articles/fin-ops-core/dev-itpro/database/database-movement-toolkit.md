@@ -4,7 +4,6 @@
 title: Database movement toolkit
 description: This topic explains how to download and use the Database movement toolkit. 
 author: laneswenka
-manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Create a new workflow type
 description: This topic describes how to create a workflow type in Application Explorer.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 

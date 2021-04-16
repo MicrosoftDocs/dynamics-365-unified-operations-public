@@ -4,7 +4,6 @@
 title: Test forms that use custom patterns
 description: This topic how to test forms using custom patterns.
 author: jasongre
-manager: AnnBe
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 

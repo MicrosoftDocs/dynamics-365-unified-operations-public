@@ -226,6 +226,10 @@
                   href: data-entities/dual-write/integrated-hr.md
                 - name: Party and global address book
                   href: data-entities/dual-write/party-gab.md
+                - name: Using Power Portal with the Party data model
+                  href: data-entities/dual-write/party-gab-portal.md
+                - name: Upgrade to the party and global address book model
+                  href: data-entities/dual-write/upgrade-party-gab.md
                 - name: Note integration
                   href: data-entities/dual-write/notes-integration.md
                 - name: Mapping reference
@@ -712,6 +716,8 @@
         items:
         - name: X++ and debugger features
           href: dev-tools/new-x-debugger-features.md
+        - name: Visual Studio 2017 requirements for X++
+          href: dev-tools/developer-tools-vs2017.md
         - name: Debug X++ code
           href: dev-tools/debug-xpp.md
         - name: EventHandlerResult classes in request or response scenarios
@@ -1024,10 +1030,14 @@
             href: perf-test/atl-faq.md
       - name: Date effectivity
         href: dev-tools/date-effectivity.md
-      - name: ISV licensing
-        href: dev-tools/isv-licensing.md
-      - name: ISV licensing on-premises
-        href: dev-tools/isv-licensing-on-prem.md
+      - name: Development for independent software vendors
+        items:
+        - name: Link X++ modules to packages by using ISV Studio
+          href: dev-tools/isv-studio-solutions.md
+        - name: ISV licensing
+          href: dev-tools/isv-licensing.md
+        - name: ISV licensing on-premises
+          href: dev-tools/isv-licensing-on-prem.md
     - name: General Data Protection Regulation (GDPR)
       items:
       - name: General Data Protection Regulation overview
@@ -1062,8 +1072,6 @@
           href: lifecycle-services/getting-started-lcs.md
         - name: What's new or changed in Lifecycle Services
           href: lifecycle-services/whats-new-lcs.md
-        - name: Known issues
-          href: lifecycle-services/known-issues.md
         - name: Removed or deprecated features in Lifecycle Services (LCS)
           href: lifecycle-services/removed-deprecated-features.md
       - name: Lifecycle Services user guide
@@ -1140,10 +1148,10 @@
           href: lifecycle-services/use-translation-service-tm.md
     - name: Microsoft Power Platform integration
       items:
+      - name: Microsoft Power Platform integration with Finance and Operations
+        href: power-platform/overview.md
       - name: Virtual entities
         items:
-        - name: Microsoft Power Platform integration with Finance and Operations
-          href: power-platform/overview.md
         - name: Entity modeling
           href: power-platform/entity-modeling.md
         - name: Application lifecycle management
@@ -1452,6 +1460,8 @@
         href: lifecycle-services/support-experience.md
       - name: Manage support experiences for Finance and Operations apps
         href: lifecycle-services/cloud-powered-support-lcs.md
+      - name: Production support and monitoring
+        href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
     - name: System administration
       items:
       - name: System administration home page

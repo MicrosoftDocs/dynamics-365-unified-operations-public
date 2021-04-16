@@ -4,7 +4,6 @@
 title: Task recorder resources
 description: This topic describes how to use Task recorder to record business processes.
 author: jasongre
-manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 

@@ -3,7 +3,6 @@
 title: Local specific posting of sales VAT
 description: This topic explains specific settings for posting value-added tax (VAT) payable transactions in accordance with Russian legislation.
 author: anasyash
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
@@ -34,7 +33,7 @@ ms.dyn365.ops.version: 10.0.1
 2. Tax codes are combined into sales tax groups and item sales tax groups.
 3. When a purchase or sales transaction is performed, sales tax groups and item sales tax groups will be indicated. The system determines which taxes (tax codes) are included in both the sales tax group and the item sales tax group. It also calculates the taxes, and generates accounting transactions for them when the operation is posted.
 
-For more information, see [Indirect taxes overview](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview).
+For more information, see [Indirect taxes overview](../general-ledger/indirect-taxes-overview.md).
 
 ## Posting of VAT payable in Russia
 The following table shows an example of accounting entries for sales of goods and services in Russia.

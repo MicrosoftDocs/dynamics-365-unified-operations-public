@@ -4,7 +4,6 @@
 title: Page model glossary
 description: This topic describes the various elements that are used on the pages of a Microsoft Dynamics 365 Commerce site.
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 

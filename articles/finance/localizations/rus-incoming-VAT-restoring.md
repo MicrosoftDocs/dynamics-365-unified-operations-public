@@ -1,9 +1,8 @@
 ---
 # required metadata
 title: Incoming VAT restoring  
-description: This topic provides information about restoring previously deducted VAT amounts for fixed assets.
+description: This topic explains how to restore previously deducted VAT amounts for fixed assets.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 11/12/2019
 ms.topic: article
 ms.prod: 
@@ -126,7 +125,7 @@ incoming invoices.
 1. On the **Fixed assets** page, select **FA usage**.
 2. On the **Product/output mileage** page, in the **Output/run export** or **Output/run nontaxable** field, define how the fixed asset is used in export or non-taxable activities.
 
-For more information about product/output mileage, see [Product/output mileage depreciation method](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-depreciation-methods#product-output-mileage-depreciation-method).
+For more information about product/output mileage, see [Product/output mileage depreciation method](/dynamics365/unified-operations/financials/localizations/rus-depreciation-methods#product-output-mileage-depreciation-method).
 
 ## VAT restoration process
 
@@ -222,7 +221,7 @@ Use the **VAT restoring journal** page to create, approve, and cancel VATrestora
 
             ![Incoming VAT for indirect costs](media/4%20VAT%20distribution.jpg)
               
-            This information is required to define the VAT amount that must be deducted when export is confirmed, or when the deadline for confirmation will expire but export isn't confirmed. This information is also used in the VAT declaration. For more information, see [VAT declaration (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-vat-declaration).
+            This information is required to define the VAT amount that must be deducted when export is confirmed, or when the deadline for confirmation will expire but export isn't confirmed. This information is also used in the VAT declaration. For more information, see [VAT declaration (Russia)](/dynamics365/unified-operations/financials/localizations/rus-vat-declaration).
 
 ### Approve the VAT restoring journal
 

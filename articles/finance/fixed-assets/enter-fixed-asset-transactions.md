@@ -4,7 +4,6 @@
 title: Fixed asset transaction options
 description: This topic describes the different methods available to create fixed asset transactions.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 02/07/2019
 ms.topic: article
 ms.prod: 

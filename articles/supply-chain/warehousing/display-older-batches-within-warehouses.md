@@ -4,7 +4,6 @@
 title: Configure Display older batches within warehouse on a mobile device
 description: This topic describes how to set up a mobile device to display a list of locations with batches older than the current location of a work line.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 

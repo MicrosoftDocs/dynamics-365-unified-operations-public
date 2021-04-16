@@ -3,7 +3,6 @@
 title: Use an inventory profile in documents and queries
 description: This topic provides information about using inventory profile.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 

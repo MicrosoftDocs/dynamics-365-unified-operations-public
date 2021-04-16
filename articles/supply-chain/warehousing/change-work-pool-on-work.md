@@ -4,7 +4,6 @@
 title: Change work pool on work
 description: This topic explains how you can use the Change work pool button for work items to change the work pool of existing work.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 

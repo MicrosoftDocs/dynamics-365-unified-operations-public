@@ -4,7 +4,6 @@
 title: SPED fiscal resolution 13/2019 RJ
 description: This topic explains how to set up and generate SPED ECD text files.
 author: v-oloski
-manager: AnnBe
 ms.date: 10/22/2019
 ms.topic: article
 ms.prod: 

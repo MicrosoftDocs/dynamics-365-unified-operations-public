@@ -4,7 +4,6 @@
 title: Set up PIS and COFINS tables (Brazil)
 description: Before the PIS and COFINS tax assessment can be created, you must set up the tables for the credit source and credit type. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  

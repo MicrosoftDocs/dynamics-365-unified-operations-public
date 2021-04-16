@@ -4,7 +4,6 @@
 title: BOM calculations groups
 description: This article provides information about calculation groups for bills of materials (BOMs) and how to set them up. To run a BOM calculation, you must either set up calculation groups and assign them to individual items, or set a default calculation group. The calculation settings from the calculation group are then used as default values on the BOM calculation page at the time of BOM calculation. 
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

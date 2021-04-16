@@ -3,7 +3,6 @@
 title: List module
 description: A list is a control that contains any numbers of rows.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 

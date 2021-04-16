@@ -4,7 +4,6 @@
 title: Map module
 description: This topic covers map modules and describes how to configure them in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod:

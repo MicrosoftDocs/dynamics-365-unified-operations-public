@@ -4,7 +4,6 @@
 title: Dimension-based product configuration overview
 description: Dimension-based product configuration represents a simple solution for creating many product variants from a single product master and its bill of materials.
 author: cvocph
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 

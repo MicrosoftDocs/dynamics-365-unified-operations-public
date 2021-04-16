@@ -4,7 +4,6 @@
 title: Primary forms for NVFA, Working clothes and Special riggings (Russia)
 description: This topic provides information about Primary forms for NVFA, Working clothes and Special riggings for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/12/2019
 ms.topic: article
 ms.prod: 

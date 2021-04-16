@@ -4,7 +4,6 @@
 title: Get started with Electronic invoicing for Italy
 description: This topic provides information that will help you get started with Electronic invoicing for Italy.
 author: gionoder
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
@@ -207,7 +206,7 @@ After you turn on the **Configurable Electronic invoicing integration** feature 
 You can submit the documents manually, based on your demand for e-invoice documents.
 
 > [!NOTE]
-> Before you continue, verify that the setup that is required for Italian e-invoices was completed. For more information, see [Customer electronic invoices](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Be aware that some of the setup steps that are described in that topic might be unavailable because of Electronic invoicing activation.
+> Before you continue, verify that the setup that is required for Italian e-invoices was completed. For more information, see [Customer electronic invoices](./emea-ita-e-invoices.md). Be aware that some of the setup steps that are described in that topic might be unavailable because of Electronic invoicing activation.
 
 1. Go to **Organization administration \> Periodic \> Electronic documents \> Submit electronic documents**.
 2. For the first submission of any document, set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.

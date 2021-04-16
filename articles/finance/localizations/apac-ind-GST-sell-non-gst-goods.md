@@ -4,7 +4,6 @@
 title: Sales of non-GST goods
 description: This topic provides information about the sale of goods that aren't subject to Goods and Services Tax (GST).
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 

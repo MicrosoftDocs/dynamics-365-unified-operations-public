@@ -4,7 +4,6 @@
 title: Consume Retail Server APIs in external applications
 description: This topic describes how to consume the Retail Server APIs in external applications.
 author: mugunthanm
-manager: AnnBe
 ms.date: 03/02/2021
 ms.topic: article
 ms.prod: 
@@ -88,7 +87,7 @@ Application registration establishes a trust relationship between your app and t
 
 ### Create the app registration for the client
 
-13. Follow steps 2-8 from the above procedure, making sue to provide a different name for the app registration.
+13. Follow steps 2-8 from the above procedure, making sure to provide a different name for the app registration.
 14. Select **API permission**.
 15. On the **Request API permissions** page, select **APIs my organization uses** and then search for the app that you created in steps 2-8.
 16. Select the API and then check the permission. In the new window that opens, select **Add permissions**
@@ -113,7 +112,7 @@ The client secret is also known as an *application password*. It's a string valu
 2. On the **Identity providers** FastTab, select the provider that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are set based on your selection.
 3. On the **Relying parties** FastTab, select **Add**. Enter the client ID that was generated during the Retail server app registration in Azure. Set the **Type** field to **Confidential** and the **UserType** field to **Application**.
 4. On the Action Pane, select **Save**.
-5. Select the new relying party, and then on the **Server resource IDs** FastTab, select **Add**. In the **Server Resource ID** column, enter the Application ID URI (this is the API URI generated in step 12).
+5. Select the new relying party, and then on the **Server resource IDs** FastTab, select **Add**. In the **Server Resource ID** column, enter the Application ID URI (this is the API URI generated during the Retail Server app registration).
 6. On the Action Pane, select **Save**.
 7. Go to **Retail and commerce** &gt; **Retail and commerce IT** &gt; **Distribution Schedule**, and run Commerce Data Exchange (CDX) job **1110**.
 
@@ -145,9 +144,9 @@ For the full list of APIs, see [Commerce Scale Unit customer and consumer APIs](
     | Key            | Value                                                              |
     |----------------|--------------------------------------------------------------------|
     | grant\_type    | **client\_credentials**                                            |
-    | client\_id     | The client ID that was generated during Azure app registration.     |
-    | client\_secret | The client secret that was generated during Azure app registration. |
-    | resource       | Enter the Application ID URI (this is the API URI generated in step 12).       |
+    | client\_id     | The client ID that was generated during Azure Retail Server app registration.     |
+    | client\_secret | The client secret that was generated during Azure Retail Server app registration. |
+    | resource       | Enter the Application ID URI (this is the API URI generated during the Retail Server app registration).       |
 
 2. After the request has finished running, the **access\_token** value will be generated in the response body. Copy this token value. You will use it to connect to the Retail Server.
 
@@ -194,7 +193,7 @@ After the request has finished running, the response body will contain the custo
         <add key="aadClientSecret" value="client secret generated during Retail server app registration in Azure" />
         <add key="aadAuthority" value="https://sts.windows.net/tenant id/" />
         <add key="retailServerUrl" value="https://RetailserverURL/Commerce" /> 
-        <add key="resource" value="api://2fxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /> <!-- //Application ID URI -->
+        <add key="resource" value="api://2fxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /> <!-- //Application ID URI generated during the Retail Server app registration -->
         <add key="operatingUnitNumber" value="OUN value" />
     </appSettings>
     ```
@@ -245,7 +244,7 @@ After the request has finished running, the response body will contain the custo
         ClientCredentialsToken clientCredentialsToken = new ClientCredentialsToken(authResult.AccessToken);
         RetailServerContext retailServerContext = RetailServerContext.Create(retailServerUrl, operatingUnitNumber, clientCredentialsToken);
         ManagerFactory factory = ManagerFactory.Create(retailServerContext);
-        return factory;
+        return  factory;
     }
     ```
 
@@ -272,7 +271,7 @@ After the request has finished running, the response body will contain the custo
     {
         GetConfiguration();
         Microsoft.Dynamics.Commerce.RetailProxy.PagedResult<SalesOrder> orderHistory = Task.Run(async () => await GetOrderHistory("2001")).Result;
-        Console.WriteLine(orderHistory.FirstOrDefault<SalesOrder>().Id);
+        Console.WriteLine(orderHistory.Results.GetEnumerator().Current.Id);
     }
     ```
 

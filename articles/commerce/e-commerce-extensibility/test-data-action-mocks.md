@@ -4,7 +4,6 @@
 title: Test data actions with mocks
 description: This topic describes how to test data actions with mock data.
 author: samjarawan
-manager: annbe
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 

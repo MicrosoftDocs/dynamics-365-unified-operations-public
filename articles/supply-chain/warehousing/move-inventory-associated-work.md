@@ -4,7 +4,6 @@
 title: Movement of inventory with associated work in Warehouse management
 description: Using movement of inventory, you can decide which warehouse workers are allowed to move reserved inventory.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 

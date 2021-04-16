@@ -4,7 +4,6 @@
 title: Saudi Arabia overview
 description: This topic provides links to documentation resources for Saudi Arabia. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
@@ -38,8 +37,8 @@ This topic provides links to documentation resources for Saudi Arabia.
 
 ## Additional resources
 
-- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Microsoft Dynamics Localization Portal: Australia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/saudiarabia.html)
 
 

@@ -4,7 +4,6 @@
 title: Subcontracting
 description: This topic will help you build a walkthrough of subcontracting in manufacturing in Dynamics 365 Supply Chain Management.
 author: christophernread 
-manager: tfehr
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 

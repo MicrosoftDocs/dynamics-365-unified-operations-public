@@ -4,7 +4,6 @@
 title: Numbering documents and vouchers chronologically
 description: This topic explains how to set up and use chronological numbers for applicable documents and related vouchers.  
 author: ikond
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 

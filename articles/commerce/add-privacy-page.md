@@ -4,7 +4,6 @@
 title: Add a privacy policy page
 description: This topic describes how to add a privacy policy page to your site in Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 

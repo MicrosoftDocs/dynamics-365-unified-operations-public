@@ -4,7 +4,6 @@
 title: Create a request for quotation
 description: This procedure shows you how to create a request for quotation. 
 author: kamaybac
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
