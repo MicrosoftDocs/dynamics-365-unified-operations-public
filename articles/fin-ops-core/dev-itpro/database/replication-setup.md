@@ -21,7 +21,7 @@ ms.search.validFrom: 2021-04-30
 
 This topic is a process guide that will help Microsoft Dynamics AX 2012 customers with a large database to upgrade to Finance and Operations apps.  This process uses SQL Transactional Replication to bring the schema and data from the AX 2012 on-premises database to the sandbox environment.
 
-We strongly recommend that you run the data upgrade process in a development environment before you run it in a shared sandbox environment. This approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](prepare-data-upgrade.md).
+We strongly recommend that you run the data upgrade process in a development environment before you run it in a shared sandbox environment. This approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](../migration-upgrade/prepare-data-upgrade.md).
 
 ## Replication setup
 
