@@ -43,9 +43,8 @@ Azure is an open and flexible cloud platform that enables you to quickly build, 
 ## The Azure services model
 Azure offers three types of services: Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS), and Infrastructure-as-a-Service (IaaS).
 
-|                                    |            |                                                                                                                                                                                                                            |
-|------------------------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Type of service**                | **Use to** | **Description**                                                                                                                                                                                                            |
+|    **Type of service**         |   **Use to**          |     **Description**          |
+|------------------------------------|------------|------------------------------------------|
 | Software as a service (SaaS)       | Consume    | You use a web browser to use applications that are hosted in the cloud.                                                                                                                                                    |
 | Platform as a service (PaaS)       | Build      | You don’t manage or control the network, servers, or operating system. PaaS is more developer-oriented. It allows you to focus on the business logic of applications and quickly move applications from concept to launch. |
 | Infrastructure as a service (IaaS) | Host       | You have control over your virtual machines and the network configuration, but you don’t have to worry about hardware.                                                                                                     |
