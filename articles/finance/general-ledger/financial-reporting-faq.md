@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial reporting FAQ 
-description: This topic lists questions related to financial reporting that other users have had. 
+description: This topic provides answers to frequently asked questions about financial reporting. 
 author: jiwo
 ms.date: 01/13/2021
 ms.topic: index-page
@@ -28,34 +28,34 @@ ms.dyn365.ops.version: 10.0.14
 
 # Financial reporting FAQ 
 
-This topic lists questions related to financial reporting that other users have had. 
-
+This topic provides answers to frequently asked questions about financial reporting. 
 
 ## How do I restrict access to a report using Tree security?
 
-Scenario: The USMF demo company has a Balance sheet report that it doesn’t want all Financial reporting users to be able to view in D365. 
-Solution: You can utilize Tree security to restrict access to a single report so that only certain users can access the report. 
+The following examples shows how to restrict access to a report using Tree security.
 
-1.	Log into Financial Reporter Report Designer
+The USMF demo company has a Balance sheet report that not all Financial reporting users should have access to. To restrict acces, you can use Tree security to restrict access to a single report so that only certain users can access the report. Follow these steps to do this: 
 
-2.	Create a new Tree Definition (File | New | Tree Definition)
-  a.	Double-click the **Summary** line in the **Unit Security** column.
-      i.	Click Users and Groups.  
-          1.	Select the User(s) or Group that would like to access this report. 
+1.	Sign in to Financial Reporter Report Designer.
+
+2.	Ceate a new tree definition. Go to **File > New > Tree Definition**.
+3.	Double-click the **Summary** line in the **Unit Security** column.
+4.	Select **Users and Groups**.  
+5.	Select the users or groups that need access to this report. 
           
 [![user screen](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
 
 [![security screen](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)
 
-  b.	Click **Save**.
+6. Select **Save**.
   
 [![save button](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)
 
-3.	In your Report Definition add your new Tree Definition
+7.	In the report definition, add your new tree definition.
 
 [![tree definition form](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)
 
-A.	While in the Tree Definition click on Setting and under “Reporting unit selection” check “Include all units”
+A.	In the tree definition, select **Setting**. Under **Reporting unit selection**, select **Include all units**.
 
 [![reporting unit selection form](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)
 
@@ -65,48 +65,42 @@ A.	While in the Tree Definition click on Setting and under “Reporting unit sel
 **After:**
           [![after screenshot](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)
 
-Note: Reason for the above message is my user does not have access to that report after applying Unit Security
+> [!NOTE]
+> Reason for the above message is my user does not have access to that report after applying Unit Security
 
+## How do I determine which accounts do not match my balances?
 
+When you have a report that doesn't match the balances, here are some steps you can take to identify each of the accounts and variances. 
 
-## How do I determine which account(s) do not matching my balances in D365?
-
-When you have a report that doesn't match what you would expect in D365, here are some steps you could take to identify those accounts and the variances. 
-
-### In Financial Reporter Report Designer
-
-1.	Create a new Row Definition 
-  a.	Click Edit | Insert Rows from Dimensions 
-    i.	Select MainAccount
+**Financial Reporter Report Designer**
+1. In Financial Reporter Report Designer, create a new row definition. 
+2. Select **Edit > Insert Rows from Dimensions**.
+3. Select **MainAccount**.
         [![Select Main screen_](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)
     
-    ii.	Click Ok
-  b.	Save the Row Definition
-
-2.	Create a new Column Definition
+4. Select **OK**.
+5. Save the row definition.
+6. Create a new column definition
         [![Create a new column definition](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)
 
-3.	Create a new Report Definition
-  a.	Click Settings and uncheck 
+7.	Create a new report definition.
+8.	Select **Settings** and unmark this option.  
       [![Settings form](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png)
    
-4.	Generate the Report. 
+9.	Generate the report. 
+10.	Export the report to Microsoft Excel.
 
-5.	Export the Report to Excel.
-
-### In D365: 
-1.	Click General Ledger | Inquiries and Reports | Trial Balance
-  a.	Parameters
-    i.	From Date: Start of Fiscal Year
-    ii.	To Date: Date you generated the report for
-    iii.	Financial Dimension Set “Main Account set”
+**Dynamics 365 Finance** 
+1. In Dynamics 365 Finance, go to **General Ledger > Inquiries and Reports > Trial Balance**.
+2. Set the following parameters:
+  - From Date: Start of Fiscal Year
+  - To Date: Date you generated the report for
+  - Financial Dimension Set “Main Account set”
        [![Main Account Form](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)
       
-  b.	Click Calculate
+ 3. Select **Calculate**.
+ 4. Export the report to Microsoft Excel.
 
-2.	Export the report to Excel
-
-You should now be able to copy the data from the FR Excel Report and to the D365 Trial Balance report and compare the “Closing Balance” columns.
-
+You should now be able to copy the data from the Financial Reporter Excel report and to the Trial Balance report and compare the **Closing Balance** columns.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
