@@ -90,7 +90,7 @@ For information about the new features included in each release, select the link
 | Dynamics AX                                                 | Major release              | [7.0](../../fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                    | 7.0.1265.3015    | February 2016    | June 2017          |
 
 
-\* All customers must be on the latest version of Finance and Operations by April 2019. However, we are making an exception for customers who have unfulfilled [extension requests](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page) that have been submitted to Microsoft. Those customers who submitted extensibility requests by January 1, 2019, will be supported on version 7.3 until their extensibility requests are fulfilled. Customers are expected to upgrade to the latest version within 90 days of the extensibility request being fulfilled. For more information, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md).
+\* All customers must be on the latest version of Finance and Operations by April 2019. However, we are making an exception for customers who have unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that have been submitted to Microsoft. Those customers who submitted extensibility requests by January 1, 2019, will be supported on version 7.3 until their extensibility requests are fulfilled. Customers are expected to upgrade to the latest version within 90 days of the extensibility request being fulfilled. For more information, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md).
 
 ### Table 3: Platform releases
 
