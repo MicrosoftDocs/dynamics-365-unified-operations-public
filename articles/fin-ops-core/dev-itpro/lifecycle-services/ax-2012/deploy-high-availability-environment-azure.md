@@ -401,10 +401,10 @@ The procedures for setting up and configuring AX 2012 R3 on Azure are the same p
 <tr>
 <td>Use the Microsoft Dynamics AX web search tool</td>
 <td><ul>
-<li><a href="/dynamics365/fin-ops-core/fin-ops/get-started/websearchax-retired">Web search for developers</a></li>
-<li><a href="/dynamics365/fin-ops-core/fin-ops/get-started/websearchax-retired">Web search for system administrators</a></li>
-<li><a href="/dynamics365/fin-ops-core/fin-ops/get-started/websearchax-retired">Web search for application users</a></li>
-<li><a href="/dynamics365/fin-ops-core/fin-ops/get-started/websearchax-retired">Combined web search</a></li>
+<li><a href="../../../fin-ops/get-started/websearchax-retired.md">Web search for developers</a></li>
+<li><a href="../../../fin-ops/get-started/websearchax-retired.md">Web search for system administrators</a></li>
+<li><a href="../../../fin-ops/get-started/websearchax-retired.md">Web search for application users</a></li>
+<li><a href="../../../fin-ops/get-started/websearchax-retired.md">Combined web search</a></li>
 </ul></td>
 </tr>
 </tbody>
