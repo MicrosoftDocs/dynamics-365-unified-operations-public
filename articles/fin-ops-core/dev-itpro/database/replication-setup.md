@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Replication setup
+title: Upgrade from AX 2012 - SQL Transactional Replication process to upgrade data in sandbox tiers 2-5 environments
 description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
 author: sarvanisathish
 ms.date: 04/13/2021
@@ -19,7 +19,7 @@ ms.search.validFrom: 2021-04-30
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-This topic is a process guide that will help Microsoft Dynamics AX 2012 customers with a large database to upgrade to Finance and Operations apps.  This process uses SQL Transactional Replication to bring the schema and data from theAX 2012 on-premise database to the sandbox environment.
+This topic is a process guide that will help Microsoft Dynamics AX 2012 customers with a large database to upgrade to Finance and Operations apps.  This process uses SQL Transactional Replication to bring the schema and data from the AX 2012 on-premises database to the sandbox environment.
 
 We strongly recommend that you run the data upgrade process in a development environment before you run it in a shared sandbox environment. This approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](prepare-data-upgrade.md).
 
@@ -90,9 +90,9 @@ The following prerequisites are needed for the **Online Database Migration Toolk
          	  <DistributorLogFolder>D:\SQLServer\Data</DistributorLogFolder>
          	  <!-- Based on the number of cores, you can set this, but the max this value can be is 8. This value should be between 4 to 8 -->
          	  <MaxBCPThreads>4</MaxBCPThreads>
-         	  <!-- To increase the performance of the replication. This value should be between 1 and 3.This value will be used to create the number of publishers for tables with primary keys. -->
+         	  <!-- To increase the performance of the replication. This value should be between one and three. This value will be used to create the number of publishers for tables with primary keys. -->
          	  <NumberOfPublishers>2</NumberOfPublishers>
-         	  <!-- Ignore DB objects xml file. The db objects listed in these files will be not be replicated. -->
+         	  <!-- Ignore DB objects xml file. The database objects listed in these files will be not be replicated. -->
         	   <IgnoreTablesList>\Data\ignoretables.xml</IgnoreTablesList>
         	   <IgnoreFunctionsList>\Data\ignorefunctions.xml</IgnoreFunctionsList>
      	</SQLReplicationSettings>
