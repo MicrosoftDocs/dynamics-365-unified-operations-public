@@ -36,7 +36,7 @@ Here is an overview of the deployment steps.
 
 1. **Set up and deploy an LBD environment with an *empty* database.**
 
-    Use LCS to deploy the LBD environment with the latest topology and an empty database. For more information, see the [Setup and deploy an LBD environment with empty database](#set-up-deploy) section later in this topic.
+    Use LCS to deploy the LBD environment with the latest topology and an empty database. For more information, see the [Setup and deploy an LBD environment with empty database](#set-up-deploy) section later in this topic. You must use version 10.0.19 with platform update 43 or higher across hub and scale unit environments.
 
 1. **Upload target packages into LBD project assets in LCS.**
 
@@ -56,7 +56,7 @@ The remaining sections of this topic provide more details about how to complete 
 
 This step creates a functional LBD environment. However, the environment doesn't necessarily have the same application and platform versions as the hub environment. Additionally, it's still missing the customizations, and it hasn't yet been enabled to work as a scale unit.
 
-1. Follow the instructions in [Setup and deploy on-premises environments (Platform update 41 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md).
+1. Follow the instructions in [Setup and deploy on-premises environments (Platform update 41 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). You must use version 10.0.19 with platform update 43 or higher across hub and scale unit environments
 
     > [!IMPORTANT]
     > Read the rest of this section **before** you complete the steps in that topic.
