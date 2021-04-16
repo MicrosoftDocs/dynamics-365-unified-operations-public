@@ -18,7 +18,9 @@ ms.dyn365.ops.version: 10.0.19
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Edge scale units can be deployed by creating a local business data (LBD) environment and then configuring it to function as a scale unit in your distributed hybrid topology for supply chain management. This is achieved by associating the LBD environment with a hub Supply Chain Management cloud environment.  
+Edge scale units play an important role in the distributed hybrid topology for supply chain management. In the hybrid topology you can distribute workloads between your SCM cloud hub and additional scale units in the cloud or on the edge. 
+
+In the preview, edge scale units can be deployed by creating a local business data (LBD) [on-premises environment](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) and then configuring it to function as a scale unit in your distributed hybrid topology for supply chain management. This is achieved by associating the on-premises LBD environment with a Supply Chain Management environment in the cloud which has been configured to function as a hub.  
 
 Edge scale units are still in preview. Therefore you may use such environment only according to the [preview terms](https://aka.ms/scmcnepreviewterms).
 
@@ -63,7 +65,7 @@ Do the following:
     > [!IMPORTANT]
     > Read the rest of this section before you proceed to carry out the steps in the guide above.
 
-1. When describing your configuration in the infrastructure\ConfigTemplate.xml do not specify any MR (Financial Reporting) nodes.
+1. When describing your configuration in the infrastructure\ConfigTemplate.xml do not specify any MR (Financial Reporting) nodes. Financial Reporting is not a supported module for scale units.
 1. Set up a database that contains empty data as described in [Configure databases](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb). Use the empty `data.bak` file for this step.
 1. Set up the pre-deployment script. For more information, see [Local agent pre-deployment and post-deployment scripts](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md)
 
