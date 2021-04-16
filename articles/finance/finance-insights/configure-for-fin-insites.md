@@ -73,7 +73,7 @@ You can complete the manual configuration steps that follow, or you can speed up
     13. Select **Resources \> All Legacy Settings**.
     14. On the top navigation bar, select **Settings**, and then select **Customizations**.
     15. Select **Developer Resources**.
-    16. Set the **Instance Reference Information ID** field to the Dataverse organization ID value that you made a note of earlier.
+    16. Copy the **Dataverse organization ID** value.
     17. In the browser's address bar, make a note of the URL for the Dataverse organization. For example, the URL might be `https://org42b2b3d3.crm.dynamics.com`.
 
 2. If you plan to use the Cash flow forecasts or Budget forecasts feature, follow these steps to update the annotation limit for your organization to at least 50 megabytes (MB):
@@ -947,18 +947,7 @@ finally {
 ```
 ---
 
-## Configure the entity store
 
-Follow these steps to set up the entity store in your Finance environment.
-
-1. Go to **System administration \> Setup \> System parameters \> Data connections**.
-2. Set the **Enable Data Lake integration** option to **Yes**.
-3. Set the following Key Vault fields:
-
-    - **Application (client) ID** – Enter the application client ID that you created earlier.
-    - **Application Secret** – Enter the secret that you saved for the application that you created earlier.
-    - **DNS name** – You can find the Domain Name System (DNS) name on the application details page for the application that you created earlier.
-    - **Secret name** – Enter **storage-account-connection-string**.
 
 ## Configure the data lake
 
@@ -995,6 +984,19 @@ The add-in will be installed within a few minutes.
     | CDS Tenant ID (Directory ID from AAD)               | The tenant ID of the Dataverse instance. To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value. |
     | Provide user object ID who has system administrator role | The Azure AD user object ID of the user in Dataverse. This user must be a system administrator of the Dataverse instance. To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory \> Users**, select the user, and then, in the **Identity** section, copy the **Object ID** value. |
     | Is this the default CDS environment for the tenant?      | If the Dataverse instance was the first production instance that was created, select this check box. If the Dataverse instance was manually created, clear this check box. |
+
+## Configure the entity store
+
+Follow these steps to set up the entity store in your Finance environment.
+
+1. Go to **System administration \> Setup \> System parameters \> Data connections**.
+2. Set the **Enable Data Lake integration** option to **Yes**.
+3. Set the following key vault fields:
+
+    - **Application (client) ID** – Enter the application client ID that you created earlier.
+    - **Application Secret** – Enter the secret that you saved for the application that you created earlier.
+    - **DNS name** – You can find the Domain Name System (DNS) name on the application details page for the application that you created earlier.
+    - **Secret name** – Enter **storage-account-connection-string**.
 
 ## Feedback and support
 
