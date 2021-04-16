@@ -53,10 +53,12 @@ Before you install the Inventory Visibility Add-in, you must do the following:
 - Obtain an LCS implementation project with at least one environment deployed.
 - Make sure that the prerequisites for setting up add-ins provided in the [Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) have been completed. Inventory Visibility doesn't require dual-write linking.
 - Contact the Inventory Visibility Team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to get the following three required files:
-
     - `Inventory Visibility Dataverse Solution.zip`
     - `Inventory Visibility Configuration Trigger.zip`
     - `Inventory Visibility Integration.zip` (if the version of Supply Chain Management that you're running is earlier than version 10.0.18)
+- Follow this [guide](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app) to register an application and add a client secret to AAD under your azure subscription.
+    - Only [Register an application](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app) and [Add a client secret](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#add-a-certificate) qre required steps to finish.
+    - The **Application(Client) Id**, **Client Secret** and **Tenant ID** will be used in the following steps.
 
 > [!NOTE]
 > The currently supported countries and regions include Canada, the United States, and the European Union (EU).
@@ -86,6 +88,11 @@ Follow these steps to set up Dataverse.
     1. Select **Assign Role**, and then select **System Administrator**. If there is a role that is named **Common Data Service User**, select it too.
 
     For more information, see [Create an application user](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+
+1. If the default language of your Dataverse is not **English**:
+
+    1. Go to **Advanced Setting \> Administration \> Languages**,
+    1. Select **English (LanguageCode=1033)** and click **Apply**.
 
 1. Import the `Inventory Visibility Dataverse Solution.zip` file, which includes Dataverse configuration related entities and Power Apps:
 
@@ -163,12 +170,12 @@ Make sure that the following features are turned on in your Supply Chain Managem
 
     Find your LCS environment's Azure region, and then enter the URL. The URL has the following form:
 
-    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com`
 
     For example, if you're in Europe, your environment will have one of the following URLs:
 
-    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
-    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com`
 
     The following regions are currently available.
 
@@ -217,13 +224,13 @@ Get a security service token by doing the following:
 
     ```json
     {
-    "token_type": "Bearer",
-    "expires_in": "3599",
-    "ext_expires_in": "3599",
-    "expires_on": "1610466645",
-    "not_before": "1610462745",
-    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
-    "access_token": "eyJ0eX...8WQ"
+        "token_type": "Bearer",
+        "expires_in": "3599",
+        "ext_expires_in": "3599",
+        "expires_on": "1610466645",
+        "not_before": "1610462745",
+        "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+        "access_token": "eyJ0eX...8WQ"
     }
     ```
 
@@ -260,6 +267,43 @@ Get a security service token by doing the following:
         "expires_in": 1200
     }
     ```
+
+### <a name="inventory-visibility-sample-request"></a>Sample Request
+
+For your reference, here is a sample http request, you can use any tools or coding language to send this request, such as  ``Postman``.
+
+```json
+# Url
+# replace {RegionShortName} and {EnvironmentId} with your value
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
+
+# Method
+Post
+
+# Header
+# replace {access_token} with the one get from security service
+Api-version: "1.0"
+Content-Type: "application/json"
+Authorization: "Bearer {access_token}"
+
+# Body
+{
+    "id": "id-bike-0001",
+    "organizationId": "usmf",
+    "productId": "Bike",
+    "quantities": {
+        "pos": {
+            "inbound": 5
+        }  
+    },
+    "dimensions": {
+        "SizeId": "Small",
+        "ColorId": "Red",
+        "SiteId": "1",
+        "LocationId": "11"
+    }
+}
+```
 
 ### <a name="inventory-visibility-configuration"></a>Configure the Inventory Visibility API
 
@@ -343,7 +387,7 @@ Here is a sample query on the product with color and size combination.
 {
     "filters": {
         "OrganizationId": ["usmf"],
-        "ProductId": ["MyProduct"],
+        "ProductId": ["MyProduct1", "MyProduct2"],
         "LocationId": ["21"],
         "SiteId": ["2"],
         "ColorId": ["Red"]
@@ -355,6 +399,8 @@ Here is a sample query on the product with color and size combination.
     "returnNegative": true
 }
 ```
+
+For `filters` field, currently only `ProductId` suppoorts multiple values, if the `ProductId` is an empty array, all products will be queried.
 
 #### Custom measurement
 
