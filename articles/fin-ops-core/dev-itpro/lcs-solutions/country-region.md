@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ## Local and regional deployments
 If your government regulations require data to be stored differently or serviced differently than is required for other countries/regions, there might be country/region requirements you must consider during deployment. Consider the following resources that might be relevant to you:
 
-[Finance and Operations apps operated by 21Vianet in China](/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Finance and Operations apps operated by 21Vianet in China](../deployment/china-local-deployment.md)
 
 ## Localization and regulatory features
 
