@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Upgrade from AX 2012 - SQL Transactional Replication process to upgrade data in sandbox tiers 2-5 environments
+title: Upgrade from AX 2012 - SQL Transactional Replication 
 description: This topic shows how to upgrade a large Microsoft Dynamics AX 2012 database to Finance and Operations apps.
 author: sarvanisathish
 ms.date: 04/13/2021
@@ -13,7 +13,7 @@ ms.author: sarvanis
 ms.search.validFrom: 2021-04-30
 ---
 
-# Upgrade from AX 2012 - SQL Transactional Replication process to upgrade data in sandbox tiers 2-5 environments
+# Upgrade from AX 2012 - SQL Transactional Replication 
 
 [!include [banner](../includes/banner.md)]
 
