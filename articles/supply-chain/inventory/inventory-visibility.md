@@ -58,7 +58,7 @@ Before you install the Inventory Visibility Add-in, you must do the following:
     - `Inventory Visibility Integration.zip` (if the version of Supply Chain Management that you're running is earlier than version 10.0.18)
 - Follow the instructions given in [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) to register an application and add a client secret to AAD under your azure subscription.
     - [Register an application](/azure/active-directory/develop/quickstart-register-app)
-    - [Add a client secret](azure/active-directory/develop/quickstart-register-app#add-a-certificate)
+    - [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
     - The **Application(Client) Id**, **Client Secret** and **Tenant ID** will be used in the following steps.
 
 > [!NOTE]
