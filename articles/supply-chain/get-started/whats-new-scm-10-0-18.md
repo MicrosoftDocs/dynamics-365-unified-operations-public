@@ -40,15 +40,15 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 
 ## Features included in this release
 
-The following features are included in this release. Follow the links to the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
+The following features are included in this release. Follow the links to the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
 
-- Automatic release of purchase orders (enhancement for [Warehouse execution with scale units in the cloud](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - For more information, see [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md).
+- Automatic release of purchase orders (enhancement for [Warehouse execution with scale units in the cloud](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - For more information, see [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md).
 
-- [Enterprise-scale inventory performance improvements and archiving](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - For more information, see [Archive inventory transactions](../inventory/archive-inventory-transactions.md)
+- [Enterprise-scale inventory performance improvements and archiving](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - For more information, see [Archive inventory transactions](../inventory/archive-inventory-transactions.md)
 
-- [Rebate management](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - For more information, see [Rebate management module overview](../rebate-management/rebate-management-overview.md)
+- [Rebate management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - For more information, see [Rebate management module overview](../rebate-management/rebate-management-overview.md)
 
-- Simplified interface for clock in and out only (enhancement for [Enhanced production floor execution interface for manufacturing](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - For more information, see [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
+- Simplified interface for clock in and out only (enhancement for [Enhanced production floor execution interface for manufacturing](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - For more information, see [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
 
 Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them. Some of the listed features are still in preview, while others may already be generally available. 
 
@@ -75,7 +75,7 @@ For information about the bug fixes included in each of the updates that are par
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2021 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2021 release wave 1 plan](/dynamics365-release-plan/2021wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Supply Chain Management features
 

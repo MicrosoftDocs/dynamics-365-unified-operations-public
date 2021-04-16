@@ -56,7 +56,7 @@ To learn more, see [Inventory close](../cost-management/inventory-close.md).
 
 ### Manufacturing and Supply Chain Management blogs
 You can find opinions, news, and other information about Inventory management and other solutions on the
-[Dynamics AX Manufacturing R&D Team Blog](https://blogs.msdn.microsoft.com/axmfg) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+[Dynamics AX Manufacturing R&D Team Blog](/archive/blogs/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### Task guides
 Additional help is available as task guides. To access task guides, click the **Help** button on any page
