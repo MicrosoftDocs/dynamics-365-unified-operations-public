@@ -34,10 +34,9 @@ This topic provides answers to frequently asked questions about financial report
 
 The following example shows how to restrict access to a report using tree security.
 
-The USMF demo company has a Balance sheet report that not all Financial reporting users should have access to. To restrict access, you can use tree security to restrict access to a single report so that only certain users can access the report. Follow these steps to do restrict access: 
+The USMF demo company has a Balance sheet report that not all Financial reporting users should have access to. To restrict access, you can use tree security to restrict access to a single report so that only certain users can access the report. Follow these steps to restrict access: 
 
 1. Sign in to Financial Reporter Report Designer.
-
 2. Create a new tree definition. Go to **File > New > Tree Definition**.
 3. Double-click the **Summary** line in the **Unit Security** column.
 4. Select **Users and Groups**.  
@@ -65,12 +64,12 @@ If you have a report that doesn't have matching balances, here are some steps yo
 **Dynamics 365 Finance** 
 1. In Dynamics 365 Finance, go to **General Ledger > Inquiries and Reports > Trial Balance**.
 2. Set the following parameters:
-   - **From Date**- Enter the start of the fiscal year.
+   - **From Date** - Enter the start of the fiscal year.
    - **To Date** - Enter the date you are generating the report for.
    - **Financial Dimension** - Set this field to **Main Account set**.
  3. Select **Calculate**.
  4. Export the report to Microsoft Excel.
 
-You should now be able to copy the data from the Financial Reporter Excel report and to the Trial Balance report and compare the **Closing Balance** columns.
+You should now be able to copy the data from the Financial Reporter Excel report to the Trial Balance report, so you can compare the **Closing Balance** columns.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
