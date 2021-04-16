@@ -56,8 +56,9 @@ Before you install the Inventory Visibility Add-in, you must do the following:
     - `Inventory Visibility Dataverse Solution.zip`
     - `Inventory Visibility Configuration Trigger.zip`
     - `Inventory Visibility Integration.zip` (if the version of Supply Chain Management that you're running is earlier than version 10.0.18)
-- Follow this [guide](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app) to register an application and add a client secret to AAD under your azure subscription.
-    - Only [Register an application](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app) and [Add a client secret](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#add-a-certificate) qre required steps to finish.
+- Follow the instructions given in [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) to register an application and add a client secret to AAD under your azure subscription.
+    - [Register an application](/azure/active-directory/develop/quickstart-register-app)
+    - [Add a client secret](azure/active-directory/develop/quickstart-register-app#add-a-certificate)
     - The **Application(Client) Id**, **Client Secret** and **Tenant ID** will be used in the following steps.
 
 > [!NOTE]
@@ -92,7 +93,7 @@ Follow these steps to set up Dataverse.
 1. If the default language of your Dataverse is not **English**:
 
     1. Go to **Advanced Setting \> Administration \> Languages**,
-    1. Select **English (LanguageCode=1033)** and click **Apply**.
+    1. Select **English (LanguageCode=1033)** and select **Apply**.
 
 1. Import the `Inventory Visibility Dataverse Solution.zip` file, which includes Dataverse configuration related entities and Power Apps:
 
@@ -400,7 +401,7 @@ Here is a sample query on the product with color and size combination.
 }
 ```
 
-For `filters` field, currently only `ProductId` suppoorts multiple values, if the `ProductId` is an empty array, all products will be queried.
+For the `filters` field, currently only `ProductId` supports multiple values. If the `ProductId` is an empty array, all products will be queried.
 
 #### Custom measurement
 
