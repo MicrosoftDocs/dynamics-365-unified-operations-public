@@ -140,7 +140,7 @@ To add, select **Add a Software Assurance plan** when you create the support inc
 For a quick and effective way to escalate issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable, see [Report a production outage](report-production-outage.md).
 
 ## Phone support
-We prefer that you contact Support following the steps in [Open a new incident](../cloud-powered-support-lcs.md#open-a-new-incident). If you're unable to open a new incident in LCS, phone support is available using [Premier phone support](https://support.microsoft.com/premier/contacts).
+We prefer that you contact Support following the steps in [Open a new incident](cloud-powered-support-lcs.md#open-a-new-incident). If you're unable to open a new incident in LCS, phone support is available using [Premier phone support](https://support.microsoft.com/premier/contacts).
 
 
 
