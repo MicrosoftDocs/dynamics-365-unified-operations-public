@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Microsoft uses encryption technology to protect customer data while at rest in an environment's SQL Server database and Azure Storage.
 
-All instances utilize [Microsoft SQL Server Transparent Data Encryption (TDE)](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption) and [Azure Storage encryption](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) to perform real-time encryption of data when written to the disk at rest. 
+All instances utilize [Microsoft SQL Server Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption) and [Azure Storage encryption](/azure/storage/common/storage-service-encryption) to perform real-time encryption of data when written to the disk at rest. 
 
 Finance and Operations apps use server-side encryption using service-managed keys. All key management aspects such as key issuance, rotation, and backup are handled by Microsoft.
 
@@ -62,9 +62,9 @@ Finance and Operations apps only support the following cipher suites:
 
 ## Additional resources
 
-* [Azure Data Encryption-at-Rest](https://docs.microsoft.com/azure/security/fundamentals/encryption-atrest)
-* [Microsoft SQL Server Transparent Data Encryption (TDE)](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption)
-* [Azure Storage encryption](https://docs.microsoft.com/azure/storage/common/storage-service-encryption)
+* [Azure Data Encryption-at-Rest](/azure/security/fundamentals/encryption-atrest)
+* [Microsoft SQL Server Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption)
+* [Azure Storage encryption](/azure/storage/common/storage-service-encryption)
 * [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
 
 
