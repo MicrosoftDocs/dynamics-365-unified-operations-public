@@ -106,7 +106,7 @@ The Azure management portal provides developers and IT professionals the ability
 -   Connect to virtual machines.
 -   Monitor the health and status of your AX 2012 R3 environment.
 
-After you purchase an Azure subscription, you can access the management portal by clicking [here](https://manage.windowsazure.com/?whr=live.com). The following image shows the management portal. [![PlanYouAXR3DeploymentonAzure1](./media/planyouaxr3deploymentonazure1.jpg)](./media/planyouaxr3deploymentonazure1.jpg)  
+After you purchase an Azure subscription, you can access the management portal by clicking [here](https://manage.windowsazure.com/?whr=live.com). The following image shows the management portal. [![Management portal](./media/planyouaxr3deploymentonazure1.jpg)](./media/planyouaxr3deploymentonazure1.jpg)  
 
 ## Become familiar with the Azure VM agent
 The Azure VM Agent is now automatically deployed with every VM deployed via Lifecycle Services. The Azure VM Agent is used to install, configure, manage and run Azure Virtual Machine Extensions (VM Extensions). VM extensions can help you monitor and manage your VMs.
@@ -114,9 +114,8 @@ The Azure VM Agent is now automatically deployed with every VM deployed via Life
 ## Consider Cloud Services resource requirements
 When a topology is deployed, the deployment system will inspect the virtual machine (VM) SKUs that were selected. In order to ensure that Azure deploys these VMs to the proper clusters where the VMs are available, each level of VM SKU must have its own Azure Cloud Service. The VM SKU breakdown is as follows:
 
-|         |                                 |
+|  **SKU**        |   **Size**                               |
 |---------|---------------------------------|
-| **SKU** | **Size**                        |
 | A       | Standard A’s \[A0-A4\]          |
 | AM      | Standard A's \[A5-A7\]          |
 | AL      | Standard A’s (large) \[A8-A11\] |
