@@ -72,7 +72,7 @@ The following flowchart summarizes the information provided in this topic so you
 ![Exception flowchart](media/exception-diagram.png "Exception flowchart")
 
 > [!NOTE]
-> You can only request an exception for a tenant that currently include, or will include, a production environment, not for a tenant with sandbox environments only. If you need to disable the Planning Optimization exception error on an infrastructure as a service (IaaS) sandbox environment, run the SQL query provided in [Sandbox environments](#faq-sandbox).
+> You can only request an exception for tenants that currently include, or will include, a production environment, not for tenants with sandbox environments only. If you need to disable the Planning Optimization exception error on an infrastructure as a service (IaaS) sandbox environment, run the SQL query provided in [Sandbox environments](#faq-sandbox).
 
 ## Frequently asked questions
 
