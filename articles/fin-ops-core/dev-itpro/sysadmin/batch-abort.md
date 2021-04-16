@@ -50,7 +50,7 @@ Starting in version 10.0.16, an enhancement to the batch cancellation functional
 To use the new functionality, refer to the following steps:
 
 1. Make sure you are running version 10.0.16 or later, or have the necessary quality package installed.
-2. Enable the **Enhanced batch abort** feature in the [Feature management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) workspace.
+2. Enable the **Enhanced batch abort** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 3. Follow the same instructions to [cancel an executing batch job](#legacy-abort).
  
 You will be prompted that the batch server, which is running the canceling tasks, will be restarted. This can potentially disrupt a list of other batch jobs. You must proceed in order to end the canceling tasks.

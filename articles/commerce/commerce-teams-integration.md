@@ -28,7 +28,6 @@ ms.dyn365.ops.version: 10.0.18
 # Dynamics 365 Commerce and Microsoft Teams integration overview
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic presents an overview of Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 

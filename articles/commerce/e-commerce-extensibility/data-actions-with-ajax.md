@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.5
 # Call server-side data actions with AJAX
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how to call server-side data actions by using Asynchronous JavaScript and XML (AJAX) in Microsoft Dynamics 365 Commerce.
 

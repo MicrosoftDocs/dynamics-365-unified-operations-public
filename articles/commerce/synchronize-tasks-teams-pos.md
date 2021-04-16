@@ -28,7 +28,6 @@ ms.dyn365.ops.version: 10.0.18
 # Synchronize task management between Microsoft Teams and Dynamics 365 Commerce POS
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to synchronize task management between Microsoft Teams and Dynamics 365 Commerce point of sale (POS).
 
