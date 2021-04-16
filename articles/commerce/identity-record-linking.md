@@ -51,7 +51,7 @@ To enable the automatic linking feature for your environment in Commerce headqua
 1. Search for the feature named **Local Identity Record and Commerce Customer automatic linking** Select **Enable** to enable this feature.
 1. Select the feature, and then select **Enable now** in the properties pane.
 
-> [!NOTE] ]
+> [!NOTE]
 > Once enabled, the automatic linking feature will be enabled for all channels in your environment. Keep this in mind if you are hosting different types of sites within your environment.
 
 ## Automatic linking on B2B sites 
