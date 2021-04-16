@@ -60,7 +60,7 @@ An overview of each path is given below:
 
 4.  Using Hyper-V, launch a virtual machine (VM) and attach the VHD. (Note that the machine must be Generation 1.)
 
-5.  Connect to the VM. You can find the credentials in [Running the Virtual Machine (VM) locally](/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally).
+5.  Connect to the VM. You can find the credentials in [Running the Virtual Machine (VM) locally](../dev-tools/access-instances.md#running-the-virtual-machine-vm-locally).
 
 6.  Depending on your planned on-premises target version of 10.0.x and the VHD image you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployable package**. For more information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
@@ -122,7 +122,7 @@ An overview of each path is given below:
 
     c.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
      
-    d.  The database will need to be configured. Follow the steps in [Configure the Finance and Operations database](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database).
+    d.  The database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance-and-operations-database).
 
     e.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you specify should be the one created in step 13c (typically AXDB).
 
