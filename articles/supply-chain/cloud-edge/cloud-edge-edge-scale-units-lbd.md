@@ -124,9 +124,9 @@ While edge scale units are still in preview, you must use the [scale unit deploy
 
 1. Modify the `UserConfig.xml` file.
     1. Under the `InterAOSAADConfiguration` section, enter the information from the Azure AD application you created previously.
-        - In the `AppId` attribute, enter the application ID of the Azure application.
-        - In the `AppSecret` attribute, enter the application secret of the Azure application.
-        - The `Authority` attribute must contain the URL specifying the security authority for your tenant.
+        - In the `AppId` element, enter the application ID of the Azure application.
+        - In the `AppSecret` element, enter the application secret of the Azure application.
+        - The `Authority` element must contain the URL specifying the security authority for your tenant.
 
         ```xml
         <InterAOSAADConfiguration>
@@ -137,9 +137,9 @@ While edge scale units are still in preview, you must use the [scale unit deploy
         ```
 
     1. Under the `ScaleUnitConfiguration` section, for the first `ScaleUnitInstance`, modify the `AuthConfiguration` section.
-        - In the `AppId` attribute, enter the application ID of the Azure application.
-        - In the `AppSecret` attribute, enter the application secret of the Azure application.
-        - The `Authority` attribute must contain the URL specifying the security authority for your tenant.
+        - In the `AppId` element, enter the application ID of the Azure application.
+        - In the `AppSecret` element, enter the application secret of the Azure application.
+        - The `Authority` element must contain the URL specifying the security authority for your tenant.
 
         ```xml
         <AuthConfiguration>
@@ -150,13 +150,13 @@ While edge scale units are still in preview, you must use the [scale unit deploy
         ```
 
     1. Additionally, for this same `ScaleUnitInstance`, set the following values:
-        - In the `Domain` attribute, specify the URL of your hub. For example: `https://cloudhub.sandbox.operations.dynamics.com/`
-        - In the `EnvironmentType` attribute, ensure the value `LCSHosted` is set.
+        - In the `Domain` element, specify the URL of your hub. For example: `https://cloudhub.sandbox.operations.dynamics.com/`
+        - In the `EnvironmentType` element, ensure the value `LCSHosted` is set.
 
     1. Under the `ScaleUnitConfiguration` section, for the second `ScaleUnitInstance`, modify the `AuthConfiguration` section.
-        - In the `AppId` attribute, enter the application ID of the AD FS application.
-        - In the `AppSecret` attribute, enter the application secret of the ADFS application.
-        - The `Authority` attribute must contain the URL of your AD FS instance.
+        - In the `AppId` element, enter the application ID of the AD FS application.
+        - In the `AppSecret` element, enter the application secret of the ADFS application.
+        - The `Authority` element must contain the URL of your AD FS instance.
 
         ```xml
         <AuthConfiguration>
@@ -167,9 +167,9 @@ While edge scale units are still in preview, you must use the [scale unit deploy
         ```
 
     1. Additionally, for this same `ScaleUnitInstance`, set the following values:
-        - In the `Domain` attribute, specify the URL of your edge scale unit. For example: https://ax.contoso.com/
-        - In the `EnvironmentType` attribute, ensure the value LBD is set.
-        - In the `ScaleUnitId` attribute, input the same value you specified for the `InstanceId` when configuring the `Configure-CloudandEdge.ps1` pre-deployment script.
+        - In the `Domain` element, specify the URL of your edge scale unit. For example: https://ax.contoso.com/
+        - In the `EnvironmentType` element, ensure the value LBD is set.
+        - In the `ScaleUnitId` element, input the same value you specified for the `InstanceId` when configuring the `Configure-CloudandEdge.ps1` pre-deployment script.
 
         > [!NOTE]
         > If you don't use the default Id (@A), ensure you update the ScaleUnitId for each ConfiguredWorkload under the Workloads section.
