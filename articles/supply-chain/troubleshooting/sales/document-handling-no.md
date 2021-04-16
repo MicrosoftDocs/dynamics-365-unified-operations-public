@@ -1,6 +1,6 @@
 ---
-title: Document handling notes do not transfer from Original Sales Order to Direct Delivery Purchase Order 
-description: Document handling notes do not transfer from Original Sales Order to Direct Delivery Purchase Order 
+title: Document handling notes are not copied to direct delivery purchase orders 
+description: Document handling notes aren't copied from an original sales order to its related direct delivery purchase order.
 author: SmithaNataraj
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,16 +13,14 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Document handling notes do not transfer from Original Sales Order to Direct Delivery Purchase Order 
+# Document handling notes are not copied to direct delivery purchase orders
 
 KB Number: 4611854
 
 ## Issue description
 
-Document handling notes do not transfer from Original Sales Order to Direct Delivery Purchase Order.
- 
+Document handling notes aren't copied from an original sales order to its related direct delivery purchase order.
+
 ## Resolution
 
-Microsoft has investigated the reported issue. Notes are only copied across purchase and sales orders for intercompany. Notes are not copied in the context of direct delivery, which is what is requested. Works as intended.  
-  
-If you would like Microsoft to consider this request in future product planning, then please enter a request on the Ideas Portal site.  
+This is the expected behavior. Notes are only copied across purchase and sales orders <!-- KFM: what do you mean by "across purchase and sales orders"? The issue doesn't mention purchase orders. --> for intercompany <!-- KFM: intercompany what? sales orders? -->. Notes are not copied in the context of direct delivery. <!-- KFM: Are "notes" and "document handling note" always the same thing? -->

@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.19
 
 ## Issue description
 
-In some scenarios, you may receive the following message on accessing **Item coverage** page after importing items to the item coverage V2 entity:
+In some scenarios, you may receive the following message on accessing **Item coverage** page after importing items to the *Item coverage V2* entity:
 
 > Do you want to save your changes before closing?
 

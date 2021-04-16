@@ -19,8 +19,8 @@ KB Number: 4611372
 
 ## Issue description
 
-When using customer rebate agreements (type amount) in combination with item rebate groups,rebates are calculated but the cumulation of these calculated rebates fail
+When using customer rebate agreements (of type *amount*) in combination with item rebate groups, rebates are calculated but the cumulation fails.
 
 ## Resolution
-
-This is by design as the item group only group the items that have the same threshold condition.
+<!-- KFM: It isn't clear how this description relates to the issue, which doesn't mention "threshold condition". More information is needed. -->
+This is the expected behavior. Item groups only group items that have the same threshold condition.

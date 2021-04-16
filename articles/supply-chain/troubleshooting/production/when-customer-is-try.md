@@ -24,6 +24,6 @@ When you select the LOTID field the Batch number which is already entered is van
 
 ## Resolution
 
-This is working as expected. When changing LOT, the whole item context is changed and thus, the batch number is reset.
+This is the expected behavior.  When changing LOT, the whole item context is changed and thus, the batch number is reset.
 
 If the batch number wants to be associated with the LOT, then user has to set the LOT first.

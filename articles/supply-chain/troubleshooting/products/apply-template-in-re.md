@@ -1,6 +1,6 @@
 ---
-title: Apply template in Released product not working, 
-description: Apply template in Released product not working, 
+title: Can't apply a template to a released product
+description: Can't apply a template to a released product 
 author: SmithaNataraj
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,12 +13,12 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Apply template in Released product not working, 
+# Can't apply a template to a released product
 
 KB Number: 4612097
 
 ## Issue description
-
+<!-- This isn't an issue description. Where is the issue? -->
 Click Product information and management – Products - Released products - new
 Click options -record info
 Select user template or company template
@@ -27,7 +27,8 @@ Click Released products – Products -  Released products -  New
 Enter Product number and name and Drop down to Apply template.
 
 ## Resolution
+<!-- It isn't clear what problem this is solving. What is the "record info functionality"? -->
+To create an item template, use the product-specific templates, not the record info functionality. To create an item template:
 
-To create an item template, please use the product specific templates, not the record info functionality.
-From the released products page, on product tab, click on Template, under New. Then choose if a personal or a shared template is needed.
-
+1. Go to **Product information management \> Products \> Released products**.
+1. On the Action Pane, open the **Product** tab and, from the **New** group, select either **Template \> Create personal template** or **Template \> Create shared template** as needed.

@@ -1,6 +1,6 @@
 ---
-title: When the customer adds text transactions, product name on the PO is still original text.
-description: When the customer adds text transactions, product name on the PO is still original text.
+title: Purchase orders don't show translated text.
+description: Purchase orders don't show translated text.
 author: SmithaNataraj
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,15 +13,14 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# When the customer adds text transactions, product name on the PO is still original text.
+# Purchase orders don't show translated product text
 
 KB Number: 4612098
 
 ## Issue description
 
-The customer added text transactions and created PO, then changed language. Product name on the PO is still original text.
-The customer struggles with their employees who works at overseas branch can’t check a product order.
+You are able to define text translations for product names. However, the product name is always be shown in the original language, regardless of the language setting in the app.
 
 ## Resolution
 
-Unfortunately, this is by design. Product translations are only supported on external facing documents as described in https://docs.microsoft.com/en-us/dynamics365/supply-chain/pim/translations-product-related-information#where-can-i-view-the-translated-information
+This is the expected behavior. Product translations are only shown on external facing documents, not to internal users. For more information ,see [Product-related translations FAQ](../../pim/translations-product-related-information.md#where-can-i-view-the-translated-information)

@@ -1,6 +1,6 @@
 ---
-title: Error “Cannot update quantity ## with new dimensions.” when choosing the location for WMS item in picking list registration 
-description: Error “Cannot update quantity ## with new dimensions.” when choosing the location for WMS item in picking list registration 
+title: An error occurs when choosing the location during picking list registration
+description: An error occurs when choosing the location during picking list registration
 author: SmithaNataraj
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -12,20 +12,21 @@ ms.author: perlynne
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-
-# Error “Cannot update quantity ## with new dimensions.” when choosing the location for WMS item in picking list registration 
+<!-- KFM: I don't understand any of this content. Please review and confirm whether this is meaningful. -->
+# An error occurs when choosing the location during picking list registration
 
 KB Number: 4613106
 
 ## Issue description
 
-With automatic reservation on sales orders, when trying to select the location on a Picking list registration line the error "Can't update quantity with new dimensions” when running with warehouse management reservation processes.
+This issue occurs when your system is configured to reserve sales orders automatically. If you then try to select the location for a picking list registration line, you receive the following error when running with a warehouse management reservation processes:
+
+> Can't update quantity with new dimensions
 
 ## Resolution
 
-Microsoft has evaluated this issue and determined not to fix this issue as a hot-fix.
+This is the expected behavior.
 
-In the specific scenario the inventory on-hand availability for the location value specified on the picking registration line is lower than the quantity on the picking line and thereby the lower reservation on the location level cannot get applied.
+In the specific scenario <!-- KFM: Which "specific scenario" are you referring to? --> the inventory on-hand availability for the location value specified on the picking registration line is lower than the quantity on the picking line, which means the lower reservation on the location level can't be applied.
 
-In scenarios using the warehouse level reservation process where the inventory on-hand will not get reserved on all the inventory dimensions levels and not having enough inventory on-hand on one location it is recommended to use the "Reserve Lot" function via a manual reservation process from the picking registration line. This process will perform the distribution of the lower reservation for all the available inventory on-hand quantities.
-
+In scenarios using the warehouse-level reservation process, where the inventory on-hand will not get reserved on all the inventory dimensions levels, and you don't have enough inventory on-hand on one location, we recommend using the *Reserve lot* function via a manual reservation process from the picking registration line. This process will distribute the lower reservations for all the available inventory on-hand quantities.

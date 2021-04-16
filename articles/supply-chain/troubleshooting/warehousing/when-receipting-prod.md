@@ -1,6 +1,6 @@
 ---
-title: When receipting product in, if multiple work created for one part, only one label prints
-description: When receipting product in, if multiple work created for one part, only one label prints
+title: Only one label prints for multiple work headers on a single receipt
+description: Only one label prints for multiple work headers on a single receipt
 author: SmithaNataraj
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,15 +13,16 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# When receipting product in, if multiple work created for one part, only one label prints
+# Only one label prints for multiple work headers on a single receipt
 
 KB Number: 4614667
 
 ## Issue description
 
-When receipting product in, if multiple work created for one part, only one label prints
+If multiple work headers are created for a single product, only one license plate label prints when receiving the product.
 
 ## Resolution
 
-Microsoft has evaluated this issue and determined not to fix this issue as a hot-fix.
-In the current design it is a single license plate label which gets generated based on a single work information and not 'work labels' getting created based on target license plates.
+This is the expected behavior.
+<!--KFM: The following sentence doesn't make sense. Please revise. -->
+In the current design, a single license plate label is generated based on a single work header and not 'work labels' getting created based on target license plates.

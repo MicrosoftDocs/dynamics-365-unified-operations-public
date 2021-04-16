@@ -12,8 +12,8 @@ ms.author: myvakalo
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-
-# Sales Order Line entry function, the filter functionality will not save to "contains" and always defaults to "begins with". 
+<!-- KFM: Do we really want to publish issues noted as "not reproducible"? (Not edited) -->
+# Sales Order Line entry function, the filter functionality will not save to "contains" and always defaults to "begins with"
 
 KB Number: 4611879
 
@@ -23,4 +23,4 @@ Sales Order Line entry function, the filter functionality will not save to "cont
 
 ## Resolution
 
-This issue is not reproduceable on the latest application version (10.0.19). On a sales order, when a new sales order line is added and the filtering criteria on the item number is changed to 'contains', then for all the other sales lines, the filtering criteria will be set to 'contains'.
+This issue is not reproducible on the latest application version (10.0.19). On a sales order, when a new sales order line is added and the filtering criteria on the item number is changed to 'contains', then for all the other sales lines, the filtering criteria will be set to 'contains'.

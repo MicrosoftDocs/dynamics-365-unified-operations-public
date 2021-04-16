@@ -12,17 +12,19 @@ ms.author: henrikan
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-
+<!-- KFM: The title must be less than 80 chars. Please revise. -->
 # Reconciliation reason does not allow to add Cost center or any other dimension in credit account except main account
 
 KB Number: 4603538
 
 ## Issue description
-
-Reconciliation reason does not allow to add Cost center or any other dimension in credit account except main account whereas debut account has an option to select other dimensions
+<!-- KFM: The following is unclear. Please revise. Also, "debut account" or "debit account"?-->
+The reconciliation reason does not allow you to add the cost center or any other dimension to the credit account except the main account, whereas the debut account has an option to select other dimensions.
 
 ## Resolution
 
-It is correct that it is not supported that the user can select a financial dimension for the credit account when the reconsolidation reason is not to pay the vendor but to credit a specific main account. This is not a product bug but a limitation in the current design. As such it works as expected. If the account structure dictates that a specific financial dimension value for the credit main account is required, then the resulting vendor journal cannot be automatically posted as the financial dimension value for the credit account must first be specified. This will have to be done manually in the vendor invoice journal form. As a dimension value for the credit account is required, it means that the vendor invoice journal cannot be auto posted and has to be posted manually after the dimension value has been manually added to the main account for the credit line.
-  
-We encourage you to create an entry on the Ideas Portal for this request. That will allow Microsoft to assess this feature extension request with other requests for future product planning.  
+This is the expected behavior. The system doesn't allows users to select a financial dimension for the credit account when the reconsolidation reason is not to pay the vendor but to credit a specific main account.
+
+If the account structure dictates that a specific financial dimension value for the credit main account is required, then the resulting vendor journal can't be automatically posted as the financial dimension value. You must first specify the credit account manually using the **Vendor invoice journal** page. <!-- KFM: Is this the correct page name? I couldn't find it -->
+
+Because a dimension value for the credit account is required, the vendor invoice journal can't be auto posted. It must be posted manually after manually adding the dimension value to the main account for the credit line.

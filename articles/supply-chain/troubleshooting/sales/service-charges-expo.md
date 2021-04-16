@@ -1,6 +1,6 @@
 ---
-title: Service Charges exported disappear if Sales order is Invoiced 
-description: Service Charges exported disappear if Sales order is Invoiced 
+title: Service charges aren't included in exported sales orders that have been invoiced 
+description: Service charges aren't included in exported sales orders that have been invoiced
 author: SmithaNataraj
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,18 +13,21 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Service Charges exported disappear if Sales order is Invoiced
+# Service charges aren't included in exported sales orders that have been invoiced
 
 KB Number: 4613100
 
 ## Issue description
 
-Service charges for an Open sales order is exported viaSales order line charges V2 and visible in the Excel spreadsheet, however when the Sales order in Invoiced and the Sales order line charges V2 export is run again, the service charges are no longer exported.
+An open sales order is exported using the *Sales order line charges V2* entity. The order includes service charges, and these are visible in the exported Excel spreadsheet. However, when the same sales order is invoiced and then exported again using *Sales order line charges V2*, the service charges are no longer included in the exported file.
 
 ## Resolution
 
-When miscellaneous charges of category fixed are added to a sales order header or sales order line, once the sales order and sales order line is fully invoiced they will not longer be present on the sales order line, as the charge has been invoiced. The keep flag on the miscellaneous charge determines if the miscellaneous charge record is removed or kept for the sales order or sales order line, also after invoicing, even though the charge is no longer needed for the sales order or sales order line.
+This is the expected behavior.
 
-PowerBI reporting for invoiced sales, should not use the sales order and sales order line tables as data source, as this data can be changed after invoiced. PowerBI reporting for invoiced sales should use the CustInvoiceJournal and CustInvoiceLines as data source as this is static and represent always the actual and correct invoiced amounts.
+Service charges are classified as miscellaneous charges of category *fixed*. You are able to add this type of charge to sales order headers and lines, but once a sales order header or line has been fully invoiced, these charges are removed because now they have been invoiced.
 
-This is not a bug, but works as intended.
+The **Keep** flag on a miscellaneous charge determines whether the charge record will be removed or kept for the sales order or sales order line after invoicing, even though the charge is no longer needed for the sales order or sales order line. <!-- KFM: It's not clear what we mean here. Are we recommending to use this setting as a solution to the issue? -->
+
+As an additional result of this behavior, PowerBI reporting for invoiced sales should not use the sales order and sales order line tables as a data source, as these can be changed after invoicing. PowerBI reporting for invoiced sales should instead use the `CustInvoiceJournal` and `CustInvoiceLines` tables as a data sources because these are static and always represent the actual and correct invoiced amounts. <!-- KFM: We should probably use the internal names for all four of the tables mentioned in this paragraph. -->
+
