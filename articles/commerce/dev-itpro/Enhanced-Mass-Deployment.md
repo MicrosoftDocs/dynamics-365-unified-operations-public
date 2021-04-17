@@ -46,18 +46,20 @@ The following table shows the delimiters that can be used in the command line ex
 | -AsyncClientCertThumbprint | The thumbprint of the Async Client Identity certificate to be used to authenticate with AAD for communications with Headquarters. This thumbprint will be used to search the LocalMachine/My store location and name to find the correct certificate to use. Do not use this parameter along with the AsyncClientCertFullPath parameter. |
 | -ClientAppInsightsInstrumentationKey | Client AppInsights instrumentation key. |
 | -CloudPosAppInsightsInstrumentationKey | Cloud POS AppInsights instrumentation key. |
+| -Config | The configuration file to be used during installation.  A file name example would be **Contoso.CommerceScaleUnit.xml**. |
 | -CposAadClientId | AAD client id to be used by Cloud POS while activating a device. Not required for LBD deployments. |
-| -Device | s |
-| -EnvironmentId | Environment ID. |
+| -Device | The device ID, seen in the **Devices** page in Headquarters. |
+| -EnvironmentId | The environment ID. |
 | -HardwareStationAppInsightsInstrumentationKey | Hardware Station AppInsights instrumentation key. |
-| -InstallOffline | s |
+| -Install | Install the component this installer provides. |
+| -InstallOffline | For Modern POS this parameter specifies to additionally install and configure the offline database. Use the parameter **-SQLServerName** as well or the installer will attempt to find a default instance that meets prerequisites. |
 | -Port | The port to be associated and used by the Retail Server virtual directory. If no port is set, the default port of 443 will be used. |
-| -Register | s |
+| -Register | The register ID, seen in the **Registers** page in Headquarters. |
 | -RetailServerAadClientId | AAD client id to be used by Retail Server while communicating with HQ. |
 | -RetailServerAadResourceId | Retail Server's AAD App Resource ID to be used while activating a device. Not required for LBD deployments. |
-| -RetailServerCertFullPath | The fully formatted URN path with the thumbprint as the search metric of the Retail Server Identity certificate to be used to authenticate with AAD for communications with Headquarters. For example: store://My/LocalMachine?FindByThumbprint=<MyThumbprint> is a properly formatted URN where the value '< MyThumbprint >' would be replaced with the certificate thumbprint to be used. Do not use this parameter along with the RetailServerCertThumbprint parameter. |
-| -RetailServerCertThumbprint | The thumbprint of the Retail Server Identity certificate to be used to authenticate with AAD for communications with Headquarters. This thumbprint will be used to search the LocalMachine/My store location and name to find the correct certificate to use. Do not use this parameter along with the RetailServerCertFullPath parameter. |
-| -RetailServerURL | s |
+| -RetailServerCertFullPath | The fully formatted URN path with the thumbprint as the search metric of the Retail Server Identity certificate to be used to authenticate with AAD for communications with Headquarters. For example: **store://My/LocalMachine?FindByThumbprint=<MyThumbprint>** is a properly formatted URN where the value **< MyThumbprint >** would be replaced with the certificate thumbprint to be used. Do not use this parameter along with the **-RetailServerCertThumbprint** parameter. |
+| -RetailServerCertThumbprint | The thumbprint of the Retail Server Identity certificate to be used to authenticate with AAD for communications with Headquarters. This thumbprint will be used to search the **LocalMachine/My** store location and name to find the correct certificate to use. Do not use this parameter along with the **-RetailServerCertFullPath** parameter. |
+| -RetailServerURL | The Retail Server URL (Also called the CSU, or Commerce Scale Unit, URL) to be used by the installer (For Modern POS, this value will be used during device activation). |
 | -SkipAadCredentialsCheck| Switch indicating whether to skip AAD credentials prerequisite checks. Default is false. |
 | -SkipCertCheck | Switch indicating whether to skip then certificate prerequisite checks. Default is false. |
 | -SkipIisCheck | Switch indicating whether to skip IIS prerequisite checks. Default is false. |
@@ -75,6 +77,7 @@ The following table shows the delimiters that can be used in the command line ex
 | -TransactionServiceAzureAuthority | Transaction Service AAD Authority. |
 | -TransactionServiceAzureResource | Transaction Service AAD Resource. |
 | -TrustSqlServerCertificate | Switch indicating whether to trust Server Certificate while establishing a connection to SQL Server. To avoid security risks production deployments should never supply a value of 'True' here. Default is false. |
+| -Verbosity | The level of logging requested during installation.  This value typically should not be used. |
 | -WindowsPhoneAppInsightsInstrumentationKey | Hardware Station AppInsights instrumentation key. |
 
 ## General overview
@@ -101,14 +104,7 @@ Migrating from the legacy Self-service framework component installers to the new
   <li>**Commerce Scale Unit (CSU, Self-hosted)** - As a series of IIS websites, the new installer framework requires a reworking of how the base folder structure exists.  Due to this, a full uninstallation of legacy components is required prior to installation of the new framework CSU (Self-hosted) component.</li>
 </ul>
 
-
-
-
-
-
-
-
-## Mass deployment of Modern POS
+## Modern POS
 
 ### Before you begin
 
@@ -116,82 +112,108 @@ It is critical to remove the legacy Self-service Modern POS component. See the m
 
 ### Examples of silent deployment
 
-This section shows examples of commands that are used for legacy self-service mass deployment of Modern POS, even Modern POS with offline and the installer without offline support. Examples of Windows PowerShell scripts are also included to help users do the installations.
+This section shows examples of commands that are used for installation of Modern POS.
 
 #### Silently install Modern POS
 
-The following command silently installs (or updates) Modern POS. It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**.
+The following command silently installs (or updates) Modern POS. It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe**.
 
-This command uses the configuration file that is in the same location as the executable file for the installer, if a configuration file exists there. It should not be used if multiple configuration files are available.
+This basic command runs the executable file installer.
 
 ```Console
-ModernPOSSetup_V73.exe -S
+ModernPOS.exe
 ```
 
 > [!NOTE]
-> A configuration file isn't required for Modern POS. However, the Modern POS application that is installed can't be activated in the appropriate manner unless the associated configuration file can be read from.
+> A configuration file isn't required for Modern POS. The installer now has parameters (Shown above) for the various values used in device activation.
 
-#### Silently install Modern POS by using a specific configuration file
-
-The following command silently installs the current installation of Modern POS by using a specific configuration file. This configuration file might not be in the same location as the executable file for the installer, or multiple configuration files might be available.
+This command specifies all parameters to be used during device activation once the Modern POS application is installed. In the below example, we use the **Houston-3** register which is a commonly used value in Dynamics 365 Commerce demo data.
 
 ```Console
-ModernPOSSetup_V72.exe -S -C "C:\Temp\ModernPOSSetup_V73_Houston-3.xml"
+ModernPOS.exe -Register "Houston-3" -Device "Houston-3" -RetailServerURL "https://MyDynamics365CommerceURL.dynamics.com/Commerce"
 ```
 
-#### Silently install Retail hardware station
-
-> [!NOTE]
-> The **-SkipMerchantInfo** delimiter is required to install Retail hardware station. The Merchant Account Information Utility that is opened at the end of a GUI-based installation of Hardware station no longer has to be used. Because of feature functionality, when Modern POS is paired to Hardware station, it also pushes the latest merchant account information to the component.
-
-The following command silently installs (or updates) Retail hardware station. It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**. It also uses the **-SkipMerchantInfo** delimiter to skip the download of merchant account information through the utility. This command uses the configuration file that is in the same location as the executable file for the installer.
+This command specifies specifies the parameters to install and configure the offline database.  The SQL server is additionally specified along with a configuration file to use.
 
 ```Console
-HardwareStationSetup_V10.exe -S -SkipMerchantInfo
+ModernPOS.exe -InstallOffline -SQLServerName "SQLExpress" -Config "ModernPOS.Houston-3.xml"
 ```
 
-> [!NOTE]
-> A configuration file is required to silently deploy Retail hardware station.
+Mix and match these concepts to achieve the installation results desired.
 
-#### Silently install Commerce Scale Unit (Self-hosted)
-
-
-## Silent servicing
+## Hardware station
 
 ### Before you begin
 
-Note that silent servicing maintains all components that are currently installed. If any configuration is still required, complete it before you begin to follow the instructions in this topic.
+It is critical to remove the legacy Self-service hardware station component. See the migration steps above for additional information.  There is no longer a Merchant Account Information Tool, instead the merchant account information is installed when a POS terminal pairs with the hardware station.
 
-### Examples of commands for silent servicing
+### Examples of silent deployment
 
-This section shows examples of commands that are used for legacy self-service mass deployment. These commands work for all the standard installers, such as the installers for Modern POS (both the installer that has offline support and the installer that doesn't have offline support), Hardware station, and Commerce Scale Unit (self-hosted).
+This section shows examples of commands that are used for installation of hardware station.
 
-#### Silently update the current installation of Modern POS
+#### Silently install hardware station
 
-The following command silently updates the current installation of Modern POS. This command has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**. This command uses the configuration file that is located in the same file location as the installer, if a configuration file exists there.
+The following command silently installs (or updates) hardware station. It has the standard command structure that is used for servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe**.
+
+This basic command runs the executable file installer.
 
 ```Console
-ModernPOSSetup_V72.exe -S
+HardwareStation.exe -Port 443 -StoreSystemAOSURL "https://MyDynamics365CommerceURL.dynamics.com/" -StoreSystemChannelDatabaseID "Houston" -SSLCertThumbprint "mysslcertificatethumbprintoftenhasnumberstoo"
 ```
 
 > [!NOTE]
-> A configuration file is still required for Retail Store Scale Unit. However, the installer keeps all the values that are currently installed, whenever it can.
+> A configuration file isn't required for hardware station. The installer now has parameters (Shown above) for the various values necessary.
 
-#### Silently update the current installation of Commerce Scale Unit (self-hosted)
-
-The following command silently updates the current installation of Commerce Scale Unit (self-hosted) by using a specific configuration file. (This configuration file might not be in the same location as the executable file for the installer.) This command skips the prerequisite check and moves on to the installation steps. We recommend that you use this command only for testing and development purposes.
+This command specifies all parameters necessary to skip the prerequisite checks during a standard installation.
 
 ```Console
-StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipPrerequisiteCheck
+HardwareStation.exe -Config "HardwareStation.Houston.xml"
 ```
 
+Mix and match these concepts to achieve the installation results desired.
 
-#### Mass deployment examples using InTune
+## Commerce Scale Unit (Self-hosted)
 
+### Before you begin
 
-#### Mass deployment examples using SCCM (System Center Configuration Manager)
+It is critical to remove the legacy Self-service Commerce Scale Unit (CSU, Self-hosted) component. See the migration steps above for additional information.
 
+### Examples of silent deployment
 
+This section shows examples of commands that are used for installation of CSU (Self-hosted).
+
+#### Silently install CSU (Self-hosted)
+
+The following command silently installs (or updates) CSU (Self-hosted). It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe**.
+
+This is a basic command that to run the executable file installer.
+
+```Console
+CommerceScaleUnit.exe -port 446 -SSLCertThumbprint "mysslcertificatethumbprintoftenhasnumberstoo" -retailservercertfullpath "store:///My/LocalMachine?FindByThumbprint=B48FCB4C8A6D6D54CF02D62D9EBFDF9A5929A469" -AsyncClientAadClientId "d3150d79-1d84-4f22-a9c3-5a6a3a41b1de" -RetailServerAadClientId "d3150d79-1d84-4f22-a9c3-5a6a3a41b1de" -CposAadClientId "bb8751eb-70c2-4410-a462-6dadb5b50e57" -RetailServerAadResourceId "https://retailstorescaleunit.retailserver.com" -TrustSqlServerCertificate -config "Contoso.StoreSystemSetup.xml"
+```
+
+> [!NOTE]
+> A configuration file is still required for CSU (Self-hosted).
+
+This is a thorough command to run the executable file installer.
+
+```Console
+CommerceScaleUnit.exe -port 446 -sslcertfullpath \"store:///My/LocalMachine?FindByThumbprint=7F506987C32A752E20E297C6E6E20943744439B3\" -asyncclientcertfullpath \"store:///My/LocalMachine?FindByThumbprint=B48FCB4C8A6D6D54CF02D62D9EBFDF9A5929A469\" -retailservercertfullpath \"store:///My/LocalMachine?FindByThumbprint=B48FCB4C8A6D6D54CF02D62D9EBFDF9A5929A469\" -AsyncClientAadClientId \"d3150d79-1d84-4f22-a9c3-5a6a3a41b1de\" -RetailServerAadClientId \"d3150d79-1d84-4f22-a9c3-5a6a3a41b1de\" -CposAadClientId \"bb8751eb-70c2-4410-a462-6dadb5b50e57\" -RetailServerAadResourceId \"https://retailstorescaleunit.retailserver.com\" -TrustSqlServerCertificate -Verbosity Trace -config \"Contoso.StoreSystemSetup.xml\"
+```
+
+This command specifies specifies the parameters to install and configure the offline database.  The SQL server is additionally specified along with a configuration file to use.
+
+```Console
+ModernPOS.exe -InstallOffline -SQLServerName "SQLExpress" -Config "ModernPOS.Houston-3.xml"
+```
+
+Mix and match these concepts to achieve the installation results desired.
+
+## Mass deployment examples using InTune
+This section shall be added in a future update.
+
+## Mass deployment examples using SCCM (System Center Configuration Manager)
+This section shall be added in a future update.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
