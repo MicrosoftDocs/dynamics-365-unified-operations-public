@@ -2,7 +2,7 @@
 # required metadata
 
 title: Voucher isn't generated
-description: This topic provides information about how to troubleshoot when a voucher should be generated, but isn't.
+description: This topic provides troubleshooting information that can help when a voucher should be generated but isn't.
 author: qire
 manager: beya
 ms.date: 04/13/2021
@@ -27,27 +27,25 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
 ---
 
-
-
 # Voucher isn't generated
 
 [!include [banner](../includes/banner.md)]
 
-When a voucher should be generated, but the **Voucher transactions** page doesn't show any vouchers, use the sections in this topic to try and resolve the issue.
+If a voucher should be generated, but the **Voucher transactions** page doesn't show any vouchers, follow the steps in the following sections as required to troubleshoot this issue.
 
-  [![Voucher transactions page](./media/voucher-not-generated-Picture1.png)](./media/voucher-not-generated-Picture1.png)
-  
+[![Voucher transactions page that has no vouchers](./media/voucher-not-generated-Picture1.png)](./media/voucher-not-generated-Picture1.png)
 
-## Check the tax applicability 
+## Check the tax applicability
 
-1. Go to **Tax** > **Periodic tasks** > **Subledger journal entries not yet transferred**.
-2. If there is a journal record, select the record, and then select **Transfer now**.
-3. Check the **Voucher transactions** page again to see if the voucher was generated. 
+1. Go to **Tax** \> **Periodic tasks** \> **Subledger journal entries not yet transferred**.
+2. If there is a journal record, select it, and then select **Transfer now**.
 
-     [![Subledger journal entries not yet transferred page](./media/voucher-not-generated-Picture2.png)](./media/voucher-not-generated-Picture2.png)
+    [![Transfer now button on the Subledger journal entries not yet transferred page](./media/voucher-not-generated-Picture2.png)](./media/voucher-not-generated-Picture2.png)
+
+3. Open the **Voucher transactions** page again to see whether the voucher was generated.
 
 ## Determine whether customization exists
-If you've completed the steps in the previous sections but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.
 
+If you've completed the steps in the previous section but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
