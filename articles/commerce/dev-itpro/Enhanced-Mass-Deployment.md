@@ -51,7 +51,7 @@ The following table shows the delimiters that can be used in the command line ex
 | -Device | The device ID, seen in the **Devices** page in Headquarters. |
 | -EnvironmentId | The environment ID. |
 | -HardwareStationAppInsightsInstrumentationKey | Hardware Station AppInsights instrumentation key. |
-| -Install | Install the component this installer provides. |
+| -Install | Install the component this installer provides.  This field is not required. |
 | -InstallOffline | For Modern POS this parameter specifies to additionally install and configure the offline database. Use the parameter **-SQLServerName** as well or the installer will attempt to find a default instance that meets prerequisites. |
 | -Port | The port to be associated and used by the Retail Server virtual directory. If no port is set, the default port of 443 will be used. |
 | -Register | The register ID, seen in the **Registers** page in Headquarters. |
