@@ -47,13 +47,17 @@ The following table shows the delimiters that can be used in the command line ex
 | -ClientAppInsightsInstrumentationKey | Client AppInsights instrumentation key. |
 | -CloudPosAppInsightsInstrumentationKey | Cloud POS AppInsights instrumentation key. |
 | -CposAadClientId | AAD client id to be used by Cloud POS while activating a device. Not required for LBD deployments. |
+| -Device | s |
 | -EnvironmentId | Environment ID. |
 | -HardwareStationAppInsightsInstrumentationKey | Hardware Station AppInsights instrumentation key. |
+| -InstallOffline | s |
 | -Port | The port to be associated and used by the Retail Server virtual directory. If no port is set, the default port of 443 will be used. |
+| -Register | s |
 | -RetailServerAadClientId | AAD client id to be used by Retail Server while communicating with HQ. |
 | -RetailServerAadResourceId | Retail Server's AAD App Resource ID to be used while activating a device. Not required for LBD deployments. |
 | -RetailServerCertFullPath | The fully formatted URN path with the thumbprint as the search metric of the Retail Server Identity certificate to be used to authenticate with AAD for communications with Headquarters. For example: store://My/LocalMachine?FindByThumbprint=<MyThumbprint> is a properly formatted URN where the value '< MyThumbprint >' would be replaced with the certificate thumbprint to be used. Do not use this parameter along with the RetailServerCertThumbprint parameter. |
 | -RetailServerCertThumbprint | The thumbprint of the Retail Server Identity certificate to be used to authenticate with AAD for communications with Headquarters. This thumbprint will be used to search the LocalMachine/My store location and name to find the correct certificate to use. Do not use this parameter along with the RetailServerCertFullPath parameter. |
+| -RetailServerURL | s |
 | -SkipAadCredentialsCheck| Switch indicating whether to skip AAD credentials prerequisite checks. Default is false. |
 | -SkipCertCheck | Switch indicating whether to skip then certificate prerequisite checks. Default is false. |
 | -SkipIisCheck | Switch indicating whether to skip IIS prerequisite checks. Default is false. |
