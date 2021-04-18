@@ -31,7 +31,7 @@ This topic describes advanced planned cross-docking. Cross-docking is a warehous
 
 Cross-docking lets workers skip inbound put-away and outbound picking of inventory that is already marked for an outbound order. Therefore, the number of times that inventory is touched is minimized, where possible. Additionally, because there is less interaction with the system, time and space savings on the warehouse shop floor are increased.
 
-Before cross-docking can be run, the user must configure a new cross-docking template, where the supply source and other sets of requirements for cross-docking are specified. As the outbound order is created, the line must be marked against an inbound order that contains the same item.
+Before cross-docking can be run, the user must configure a new cross-docking template, where the supply source and other sets of requirements for cross-docking are specified. As the outbound order is created, the line must be marked against an inbound order that contains the same item. The directive code field can be selected on the cross-docking template similar to replenishment and purchase order setup.
 
 At the time of inbound order receiving, the cross-docking setup automatically identifies the need for cross-docking and creates the movement work for the required quantity, based on the setup of the location directive.
 
@@ -43,7 +43,9 @@ At the time of inbound order receiving, the cross-docking setup automatically id
 If your system doesn't already include the features described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the following features in the following order:
 
 1. *Planned cross docking*
-2. *Cross docking templates with location directives*
+1. *Cross docking templates with location directives*
+    > [!NOTE]
+    > This feature enables the **Directive code** field to be specified on the cross-docking template similar to replenishment templates. Enabling this feature would prevent you from adding a directive code on the cross-docking work template lines for the final *Put* line. This ensures that the final put location can be determined during work creation before considering work templates.
 
 ## Setup
 
@@ -91,9 +93,9 @@ Planned cross-docking is implemented as a load posting method. After you turn on
 
         This option defines whether the supply should be revalidated during receipt. If this option is set to *Yes*, both the maximum time window and the expiration days range are checked.
 
-    - **Directive code** Leave this field blank
+    - **Directive code:** Leave this field blank
 
-        This option enables the system to use location directives to help determine the best location to move cross-docking inventory to. You can set it up by assigning a directive code to each relevant cross-docking template. Each directive code identifies a unique location directive.
+        This option is enabled by the *Cross docking templates with location directives* feature. The system uses location directives to help determine the best location to move cross-docking inventory to. You can set it up by assigning a directive code to each relevant cross-docking template. If a directive code is set, the system will search location directives by directive code when work is generated. In this way, you can limit location directives that are used for a particular cross-docking template.
 
     - **Validate time window:** *Yes*
 
