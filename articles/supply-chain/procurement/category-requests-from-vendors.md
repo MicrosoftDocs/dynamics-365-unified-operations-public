@@ -4,7 +4,7 @@ description: This topic describes how vendors can request procurement categories
 author: TaylorVH
 ms.date: 04/19/2021
 ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: VendRequestNewCategory
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -78,130 +78,157 @@ For more information on how to set up workflows, see [Workflow system overview](
 
 This section describes how vendors can use the vendor information workspace to create, edit, view, and submit category requests.
 
+### Start a new category request
+
 To start a new category request:
 
 1. Open the vendor information workspace.
-2. From the start page of the vendor information workspace, select the **Category requests** tile.
-3. The **Category requests** page opens.
-4. Select **New category request** from the Action Pane.
-5. The **New category request** dialog box opens. Find the category you want to apply for by navigating the tree and/or using the filter at the top of the list. Then mark the check box for each relevant category. Note:
-  - Categories that are currently active on your vendor account show as selected and can't be removed.
-  - You can request multiple procurement categories in a single category request.
-6. Select **OK** to create the draft request.
-7. The new draft request now shows on the **Category requests** page.
-8. Open the new draft request to review and edit it as needed.
+1. From the start page of the vendor information workspace, select the **Category requests** tile.
+1. The **Category requests** page opens.
+1. Select **New category request** from the Action Pane.
+1. The **New category request** dialog box opens. Find the category you want to apply for by navigating the tree and/or using the filter at the top of the list. Then mark the check box for each relevant category. Note:
 
-- To see the list of categories currently included in this request, expand the **Requested categories** FastTab.
-- To view your active categories, open the **Active categories** FactBox on the right side of the page.
+    - Categories that are currently active on your vendor account show as selected and can't be removed.
+    - You can request multiple procurement categories in a single category request.
 
-- To add a new category, select **Add** from the  **Requested categories** FastTab toolbar.
-- To remove a listed category from the request, select the target category on the **Requested categories** FastTab and then select **Remove** from the toolbar.
-- To attach a document to the request, select **Attachments** on the Action Pane. Attached documents will be available to approvers when they review the category request.
-- To remove attached documents, select **Attachments** on the Action Pane. Select the document to remove and then select **Delete** from the Action Pane.
+1. Select **OK** to create the draft request.
+1. The new draft request now shows on the **Category requests** page.
+1. Open the new draft request to review and edit it as needed.
 
-9. If you're ready to submit the request, select **Submit** from the Action Pane and follow the next steps. Otherwise just close the page to come back to it later.
-10. Read any **Submission instructions** that appear here and then select **Submit**.
-11. Enter additional information in the **Comment** box if needed and then select **Submit** to complete the request.
+    - To see the list of categories currently included in this request, expand the **Requested categories** FastTab.
+    - To view your active categories, open the **Active categories** FactBox on the right side of the page.
+    - To add a new category, select **Add** from the  **Requested categories** FastTab toolbar.
+    - To remove a listed category from the request, select the target category on the **Requested categories** FastTab and then select **Remove** from the toolbar.
+    - To attach a document to the request, select **Attachments** on the Action Pane. Attached documents will be available to approvers when they review the category request.
+    - To remove attached documents, select **Attachments** on the Action Pane. Select the document to remove and then select **Delete** from the Action Pane.
+
+1. If you're ready to submit the request, select **Submit** from the Action Pane and follow the next steps. Otherwise just close the page to come back to it later.
+1. Read any **Submission instructions** that appear here and then select **Submit**.
+1. Enter additional information in the **Comment** box if needed and then select **Submit** to complete the request.
+
+### Edit a draft or recalled category request
 
 To edit a draft or recalled category request:
 
-1. Open the **Category requests** page.
-2. Select the draft or recalled request to open it.
-3. Edit the request as needed and then either close or submit it (see also the previous procedure).
+1. Open the vendor information workspace.
+1. From the start page of the vendor information workspace, select the **Category requests** tile.
+1. Select the draft or recalled request to open it.
+1. Edit the request as needed and then either close or submit it (see also the previous procedure).
+
+### Submit a draft or recalled request
 
 To submit a draft or recalled request:
 
-1. Open the **Category requests** page.
-2. Select the draft or recalled request you want to submit.
-3. Select **Submit** on the Action Pane.
-4. More instructions may appear here and then select **Submit**.
-5. Enter additional information in the **Comment** box if needed and then select **Submit** to complete the request.
-6. The status of the category request changes as follows:
-  - _Pending review –_ Indicates that the request is in workflow.
-  - _Pending approval_ – Indicates that approval is needed.
+1. Open the vendor information workspace.
+1. From the start page of the vendor information workspace, select the **Category requests** tile.
+1. Select the draft or recalled request you want to submit.
+1. Select **Submit** on the Action Pane.
+1. More instructions may appear here and then select **Submit**.
+1. Enter additional information in the **Comment** box if needed and then select **Submit** to complete the request.
+1. The status of the category request changes as follows:
+    - _Pending review_ – Indicates that the request is in workflow.
+    - _Pending approval_ – Indicates that approval is needed.
+
+### Recall a submitted request that hasn't yet been approved
 
 To recall a submitted request that hasn't yet been approved:
 
-1. Open the **Category requests** page.
-2. Select the pending request that you want to recall.
-3. Select **Recall** on the Action Pane.
-4. Enter additional information in the **Enter a comment** box if needed and then select **Submit** to complete the request.
-5. The status of the category request changes to _Cancelled_. The request will remain in this state until you delete or resubmit it.
+1. Open the vendor information workspace.
+1. From the start page of the vendor information workspace, select the **Category requests** tile.
+1. Select the pending request that you want to recall.
+1. Select **Recall** on the Action Pane.
+1. Enter additional information in the **Enter a comment** box if needed and then select **Submit** to complete the request.
+1. The status of the category request changes to _Cancelled_. The request will remain in this state until you delete or resubmit it.
+
+### Delete a draft or recalled request
 
 To delete a draft or recalled request:
 
-1. Open the **Category requests** page.
-2. Select the draft or recalled request you want to delete.
-3. Select **Delete** on the Action Pane.
-4. Select **Yes** to confirm the deletion.
+1. Open the vendor information workspace.
+1. From the start page of the vendor information workspace, select the **Category requests** tile.
+1. Select the draft or recalled request you want to delete.
+1. Select **Delete** on the Action Pane.
+1. Select **Yes** to confirm the deletion.
+
+### View completed requests
 
 To view completed requests:
 
-1. Open the **Category requests** page.
-2. The status of the category request changes as follows:
-  - _Approved_ – Indicates that the request was approved. The requested categories can be seen in the following location.
-    1. Open the vendor information workspace.
-    2. Open More details and select **Categories**. The newly added categories will show here.
-  - _Rejected_ – Indicates that the request was rejected. If needed, a new category request can be created.
+1. Open the vendor information workspace.
+1. From the start page of the vendor information workspace, select the **Category requests** tile.
+1. The status of the category request changes as follows:
+    - _Approved_ – Indicates that the request was approved. The requested categories can be seen by doing the following:
+        1. Open the vendor information workspace.
+        1. Open **More details** and select **Categories**. The newly added categories will show here.
+    - _Rejected_ – Indicates that the request was rejected. If needed, a new category request can be created.
 
-## Reviewing a category request
-This section describes how customers can approve, reject, and delegate vendor submitted category requests and view completed requests. These workflow actions are for the entire category request.
+## Review category requests
+
+This section describes how to approve, reject, and delegate vendor submitted category requests and view completed requests. These workflow actions are for the entire category request.
+
+### View category requests
 
 To view category requests:
 
-1. Open **Procurement and sourcing > Vendors > Vendor collaboration requests > Category requests**.
-2. The **Category requests** page opens.
-3. Category requests **Pending action** will show initially.
-4. To view all requests, click **Show requests** and select All.
-5. Open a request to review and edit it as needed.
-  - To see the list of categories currently included in this request, expand the **Requested categories** FastTab.
-  - To view your active categories, open the **Active categories** FactBox on the right side of the page.
-  - If documents were submitted, the attachments icon will display a count of attachments. To view attached documents, select **Attachments** on the Action Pane. Select a document you want to view. Select **Open** to view the document.
-  - To attach a document to the request, select **Attachments** on the Action Pane. Attached documents will be available to approvers when they review the category request.
-  - To remove attached documents, select **Attachments** on the Action Pane. Select the document to remove and then select **Delete** from the Action Pane.
-  - To view workflow history, select **Workflow** on the Action Pane. Select **More** and **Workflow history** from the workflow options. The **Workflow history** page will open.
+1. Go to **Procurement and sourcing > Vendors > Vendor collaboration requests > Category requests**.
+1. The **Category requests** page opens.
+1. Category requests of status *Pending action* will show initially.
+1. To view all requests, select *All* from the **Show requests** drop-down list.
+1. Open a request to review and edit it as needed.
+    - To see the list of categories currently included in this request, expand the **Requested categories** FastTab.
+    - To view your active categories, open the **Active categories** FactBox on the right side of the page.
+    - If documents were submitted, the attachments icon will display a count of attachments. To view attached documents, select **Attachments** on the Action Pane. Select a document you want to view and then select **Open** to view the document.
+    - To attach a document to the request, select **Attachments** on the Action Pane. Attached documents will be available to approvers when they review the category request.
+    - To remove attached documents, select **Attachments** on the Action Pane. Select the document to remove and then select **Delete** from the Action Pane.
+    - To view workflow history, select **Workflow** on the Action Pane. Select **More** and **Workflow history** from the workflow options. The **Workflow history** page will open.
+
+### Approve a pending category request
 
 To approve a pending category request:
 
-1. Open the **Category requests** page.
-2. Select the pending request you want to approve.
-3. Review the category request.
-4. Optionally you can select a **Reason code** and enter a **Reason comment** in the **General** FastTab.
-5. Select **Workflow** on the Action Pane.
-6. Select **Approve** from the workflow options.
-7. Enter additional information in the **Comment** box if needed and then select **Approve** to complete the request.
-8. The status of the category request changes to _Approved_ and the procurement categories are added to the vendor.
+1. Go to **Procurement and sourcing > Vendors > Vendor collaboration requests > Category requests**.
+1. Select the pending request you want to approve.
+1. Review the category request.
+1. Optionally, you can select a **Reason code** and enter a **Reason comment** on the **General** FastTab.
+1. Select **Workflow** on the Action Pane.
+1. Select **Approve** from the workflow options.
+1. Enter additional information in the **Comment** box if needed and then select **Approve** to complete the request.
+1. The status of the category request changes to _Approved_ and the procurement categories are added to the vendor.
+
+### Reject a pending category request
 
 To reject a pending category request:
 
-1. Open the **Category requests** page.
-2. Select the pending request you want to reject.
-3. Review the category request.
-4. Select **Edit** from the Action Pane.
-5. Select a **Reason code** and enter a **Reason comment** in the **General** FastTab.
-6. Select **Save** from the Action Pane.
-7. Select **Workflow** on the Action Pane.
-8. Select **More** and **Reject** from the workflow options.
-9. Enter additional information in the **Comment** box if needed and then select **Reject** to complete the request.
-10. The status of the category request changes to _Rejected._ If needed, a new category request can be created by the vendor.
+1. Go to **Procurement and sourcing > Vendors > Vendor collaboration requests > Category requests**.
+1. Select the pending request you want to reject.
+1. Review the category request.
+1. Select **Edit** from the Action Pane.
+1. Select a **Reason code** and enter a **Reason comment** in the **General** FastTab.
+1. Select **Save** from the Action Pane.
+1. Select **Workflow** on the Action Pane.
+1. Select **More** and **Reject** from the workflow options.
+1. Enter additional information in the **Comment** box if needed and then select **Reject** to complete the request.
+1. The status of the category request changes to _Rejected._ If needed, a new category request can be created by the vendor.
+
+### Delegate a pending category request
 
 To delegate a pending category request to another user:
 
-1. Open the **Category requests** page.
-2. Select the pending request you want to approve.
-3. Select **Workflow** on the Action Pane.
-4. Select **More** and **Delegate** from the workflow options.
-5. Select a **User** to assign the category request to for review.
-6. Enter additional information in the **Comment** box if needed.
-7. Select **Delegate** to complete the delegation. The user selected during delegation can now review the category request.
+1. Go to **Procurement and sourcing > Vendors > Vendor collaboration requests > Category requests**.
+1. Select the pending request you want to approve.
+1. Select **Workflow** on the Action Pane.
+1. Select **More** and **Delegate** from the workflow options.
+1. Select a **User** to assign the category request to for review.
+1. Enter additional information in the **Comment** box if needed.
+1. Select **Delegate** to complete the delegation. The user selected during delegation can now review the category request.
+
+### View procurement categories for a vendor
 
 To view procurement categories for a vendor after a category request is approved:
 
-1. Open **Accounts payable > Vendors > All vendors**.
-2. The **All vendors** page opens.
-3. Select the vendor you want to view.
-4. Select **General** from the Action Pane.
-5. Select **Set up** and **Categories** from the ribbon.
-6. The **Categories** page opens.
-7. Procurement categories added by the category request show in the **Procurement** FastTab.
-8. From the **Procurement** FastTab changes can be made, such as setting the **Vendor category status** to _Preferred_.
+1. Go to **Procurement and sourcing > Vendors > Vendor collaboration requests > Category requests**.
+1. The **All vendors** page opens. Select the vendor you want to view.
+1. Select **General** from the Action Pane.
+1. Select **Set up** and **Categories** from the ribbon.
+1. The **Categories** page opens. Procurement categories added by the category request show in the **Procurement** FastTab.
+1. on the **Procurement** FastTab, you can make changes such as setting the **Vendor category status** to _Preferred_.
