@@ -187,7 +187,7 @@ The following table lists common equivalents in TSLint and ESLint.
 | // tslint:disable-next-line:cyclomatic-complexity | // eslint-disable-next-line complexity |
 | // tslint:disable-next-line:no-empty | // eslint-disable-next-line no-empty |
 
-#### COntinuing to lint with TSLint
+#### Continuing to lint with TSLint
 If you wish to continue to lint using TSLint, you can use the –use-tslint argument in the package.json **build** and **start** commands as shown here
 
 ```json
