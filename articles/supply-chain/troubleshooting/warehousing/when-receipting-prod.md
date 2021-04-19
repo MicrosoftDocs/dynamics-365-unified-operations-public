@@ -19,10 +19,12 @@ KB Number: 4614667
 
 ## Issue description
 
-If multiple work headers are created for a single product, only one license plate label prints when receiving the product.
+If multiple work headers are created for the same target license plate as part of a single warehouse app receiving event, only one license plate label prints when receiving the product.
 
 ## Resolution
 
 This is the expected behavior.
-<!--KFM: The following sentence doesn't make sense. Please revise. -->
-In the current design, a single license plate label is generated based on a single work header and not 'work labels' getting created based on target license plates.
+
+In the current design, a single license plate label is generated, regardless of how many work header and work line combinations exist. The generated label will only include the information for one of these combinations.
+
+To work around this issue, make sure your work header creation always maps to just one target license plate.
