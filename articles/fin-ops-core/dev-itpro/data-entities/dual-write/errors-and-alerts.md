@@ -49,7 +49,16 @@ You can drill down further to view the synchronization direction where the error
 
 ![Viewing the synchronization direction error](media/sync-direction-error.png)
 
-In a similar way, the **Catch-up errors** tab can help you troubleshoot issues when you resume from a paused state.
+## Queued records insights and error management
+
+The ability to pause a table map was primarily built to address planned/unplanned maintenance. To ensure business continuity, especially during planned or unplanned maintenance, you could pause the table map(s), manually or automatically via rules. This will let users continue to do their day to day work and create records while the app is being recovered from maintenance.    
+
+When you Pause a table map that is in Running state, all records created or updated are queued until you resume the table map. The queued records are stored in a secure Azure storage and replayed back when you resume and put the table map back into Running state. This feature is particularly useful for planned or unplanned maintenance, as mentioned in above section.
+
+> [!NOTE]
+> When a table map is in paused state, there are limits to the number of records and amount of time you can queue the records, whichever comes first. We will start with soft limits and eventually enforce harder limits to protect you from exceeding the storage limits.
+
+Records created or updated for a table map in Paused state can be viewed under Queued records for each table map. 
 
 ## Alert notifications
 
