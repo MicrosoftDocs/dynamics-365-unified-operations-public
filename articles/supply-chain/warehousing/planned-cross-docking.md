@@ -31,12 +31,12 @@ This topic describes advanced planned cross-docking. Cross-docking is a warehous
 
 Cross-docking lets workers skip inbound put-away and outbound picking of inventory that is already marked for an outbound order. Therefore, the number of times that inventory is touched is minimized, where possible. Additionally, because there is less interaction with the system, time and space savings on the warehouse shop floor are increased.
 
-Before cross-docking can be run, the user must configure a new cross-docking template, where the supply source and other sets of requirements for cross-docking are specified. As the outbound order is created, the line must be marked against an inbound order that contains the same item. The directive code field can be selected on the cross-docking template similar to replenishment and purchase order setup.
+Before you can run cross-docking, you must configure a new cross-docking template, where the supply source and other sets of requirements for cross-docking are specified. As the outbound order is created, the line must be marked against an inbound order that contains the same item. You can select the directive code field on the cross-docking template, similar to the way you set up replenishment and purchase orders.
 
 At the time of inbound order receiving, the cross-docking setup automatically identifies the need for cross-docking and creates the movement work for the required quantity, based on the setup of the location directive.
 
 > [!NOTE]
-> Inventory transactions are **not** unregistered when crossing-dock work is canceled, even if the setting for this capability is turned on in Warehouse management parameters.
+> Inventory transactions are *not* unregistered when crossing-dock work is canceled, even if the setting for this capability is turned on in Warehouse management parameters.
 
 ## Turn on the planned cross docking features
 
