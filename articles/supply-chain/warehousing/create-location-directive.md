@@ -146,7 +146,7 @@ The fields on the **Location directives** FastTab are specific to the work order
 - **Directive code** – Select the directive code to associate with a work template or replenishment template. On the **Directive code** page, you can create new codes that can be used to connect work templates or replenishment templates to location directives. Directive codes can also be used to establish a link between any work template line and a location directive (such as the bay door or stage location).
 
     > [!TIP]
-    > If a directive code is set, the system won't search location directives by sequence number when work must be generated. Instead, it will search by directive code. In this way, you can be more specific about the location template that is used for a particular step in a work template, such as the step for staging the materials.
+    > If a directive code is set, the system won't search location directives by sequence number when work must be generated. Instead, it will search by directive code. In this way, you can be more specific about the location directive that is used for a particular step in a work template, such as the step for staging the materials.
 
 - **Multiple SKU** – Set this option to *Yes* to enable multiple stockkeeping units (SKUs) to be used on a location. For example, multiple SKUs must be enabled for the bay door location. If you enable multiple SKUs, your put location will be specified in work, as expected. However, the put location will be able to handle only a multi-item put (if work includes different SKUs that must be picked and put). It won't be able to handle a single-SKU put. If you set this option to *No*, your put location will be specified only if your put has just one kind of SKU.
 
