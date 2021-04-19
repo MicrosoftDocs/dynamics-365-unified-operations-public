@@ -23,4 +23,4 @@ Late selection isn't respected when you use a recurring batch job to reset the s
 
 ## Resolution
 
-Late selection is not supported for the process *Reset status*.
+In the current design the use of Late selection is not supported for the process *Reset status*.
