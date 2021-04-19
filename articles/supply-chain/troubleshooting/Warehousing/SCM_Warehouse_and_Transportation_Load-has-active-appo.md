@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSLoadTable,WHSLoadPlanningListPage,WHSLoadPlanningWorkbench,WHSTransportLoad,WHSShipPlanningListPage,WHSShipmentDetails,WHSWorkTable,WHSWorkTableListPage
+ms.search.form: WHSLoadTable_WHSShipConfirm,WHSLoadPlanningListPage_WHSShipConfirm,WHSLoadPlanningWorkbench_WHSShipConfirm,WHSTransportLoad_WHSShipConfirm,WHSShipPlanningListPage_WHSShipConfirm,WHSShipmentDetails_WHSShipConfirm,WHSWorkTable_WHSShipConfirm,WHSWorkTableListPage_WHSShipConfirm,Dialog_WHSOutboundShipConfirmController_WHSOutboundShipConfirm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -31,7 +31,9 @@ ms.author: lbc@microsoft.com
 
 Error code: TRX2716
 
+The system displays the following error message:
 
+> The calendar type %1 requires the appointment %2 to be checked in and out.
 
 ## Symptoms
 The load can't be ship confirmed in current state.
