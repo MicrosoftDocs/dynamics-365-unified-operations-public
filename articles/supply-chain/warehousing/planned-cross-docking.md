@@ -45,7 +45,7 @@ If your system doesn't already include the features described in this topic, go 
 1. *Planned cross docking*
 1. *Cross docking templates with location directives*
     > [!NOTE]
-    > This feature enables the **Directive code** field to be specified on the cross-docking template similar to replenishment templates. Enabling this feature would prevent you from adding a directive code on the cross-docking work template lines for the final *Put* line. This ensures that the final put location can be determined during work creation before considering work templates.
+    > This feature enables the **Directive code** field to be specified on the cross-docking template, similar to the way you set up replenishment templates. Enabling this feature prevents you from adding a directive code on the cross-docking work template lines for the final *Put* line. This ensures that the final put location can be determined during work creation before considering work templates.
 
 ## Setup
 
