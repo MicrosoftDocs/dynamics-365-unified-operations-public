@@ -1,6 +1,6 @@
 ---
-title: LTL classes
-description: This topic describes what less thant truckload (LTL) classes are and how to set them up in Dynamics 365 Supply Chain Management. 
+title: Less than truckload (LTL) classes
+description: This topic explains what less than truckload (LTL) classes are and describes how to set them up in Microsoft Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 04/05/2021
 ms.topic: article
@@ -13,40 +13,41 @@ ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: 10.0.8
 ---
 
-# LTL classes
+# Less than truckload (LTL) classes
 
 [!include [banner](../includes/banner.md)]
 
-A less than truckload (LTL) class is a freight shipping class used to classify items that can be shipped. Generally, every type of product or commodity has a National Motor Freight Classification (NMFC), which corresponds to a specific freight class number for LTL shipments. The LTL freight class represents a category of items while NMFC codes relate to specific commodities within each of the 18 freight classes.
+A less than truckload (LTL) class is a freight shipping class that is used to classify items that can be shipped. Generally, every type of product or commodity has a National Motor Freight Classification (NMFC) code that corresponds to a specific freight class number for LTL shipments. LTL freight classes represent categories of items, whereas NMFC codes are related to specific commodities in each of the 18 freight classes.
 
-This feature enables you to use your system to:
+This feature lets you use your system to perform the following tasks:
 
-- Establish the LTL freight classes in use at your company.
-- Assign each LTL class to an NMFC code using the **NMFC Codes** page.
-- Assign an NMFC code (and thereby its associated LTL code) to each product using the **Products** page.
-- Accurately assess the LTL class of each product for which an NMFC code is assigned.
-- Determine packing requirements for each class by checking the international LTL standards, thus ensuring that your products will be well protected and shipped safely.
-- Get accurate shipping estimates based on the LTL freight class for each of your products.
+- Define the LTL freight classes that are used at your company.
+- Assign each LTL class to an NMFC code on the **NMFC Codes** page.
+- Assign an NMFC code (and therefore its associated LTL code) to each product on the **Products** page.
+- Accurately assess the LTL class of each product that an NMFC code is assigned to.
+- Determine packing requirements for each LTL class by checking the international LTL standards. In this way, you ensure that your products will be well protected and safely shipped.
+- Get accurate shipping estimates, based on the LTL freight class for each product.
 
-This topic describes how to create LTL classes in Dynamics 365 Supply Chain management.
+This topic describes how to create LTL classes in Microsoft Dynamics 365 Supply Chain Management.
 
 ## Create an LTL class
 
-To create an LTL class, follow these steps:
+To create an LTL class, follow these steps.
 
-1. Do one of the following:
-    - Go to  **Warehouse management \> Setup \> Inventory \> LTL classes**.
-    - Go to  **Transportation management \> Setup \> Transportation standards \> LTL classes**.
+1. Follow one of these steps:
 
-2. Select **New** to create a new LTL class and specify the following details:
+    - Go to **Warehouse management \> Setup \> Inventory \> LTL classes**.
+    - Go to **Transportation management \> Setup \> Transportation standards \> LTL classes**.
 
-    - **LTL class** – Enter your company's internal LTL class identifier for this commodity type. Most companies use the international standard, which would then match the value set in the **Class** field. However, if your company has it's own standard, enter that value instead.
-    - **Name** – Enter a descriptive name that will help you and other users select the correct class for each NMFC code.
-    - **Class** – Enter the international standard LTL class identifier (ID) for this commodity type. The code entered here must match the  official standard.
+2. On the Action Pane, select **New** to create an LTL class. Then set the following fields:
 
-## Example of how to set up LTL classes
+    - **LTL class** – Enter your company's internal LTL class identifier (ID) for the commodity type. Most companies use the international standard. In that case, the value of this field will match the value of the **Class** field. However, if your company uses its own standard, enter a code that conforms to that standard.
+    - **Name** – Enter a descriptive name that will help you and other users select the correct LTL class for each NMFC code.
+    - **Class** – Enter the international standard LTL class ID for the commodity type. The code that you enter here must conform to the official standard.
 
-The following example shows how to set up two different LTL classes to use with different types of products.
+## Example: Set up LTL classes
+
+The following example shows how to set up two different LTL classes that you can use with different types of products.
 
 1. Go to **Warehouse management \> Setup \> Inventory \> LTL classes**.
 1. On the Action Pane, select **New**.
