@@ -48,9 +48,9 @@ This list is intended to help you consider these removals and deprecations for y
 |------------|--------------------|
 | **Reason for deprecation/removal** | The job card device is being replaced by the production floor execution interface |
 | **Replaced by another feature?**   | Yes, the job card device is replaced by the new production floor execution interface |
-| **Product areas affected**         | Supply Chain Management - warehouse app |
+| **Product areas affected**         | Supply Chain Management - Production control |
 | **Deployment option**              | Cloud and on-premises |
-| **Status**                         | Deprecated. The warehouse app will receive support with bug and security fixes, but feature enhancements will no longer be provided. After April 2022, the old warehouse app will no longer be supported and customers will be asked to move to the new Warehouse Management mobile app. The old warehouse app will then be removed from the Microsoft Store and Google Play store.  |
+| **Status**                         | Deprecated. The job card device will receive support with bug and security fixes, but feature enhancements will no longer be provided. After April 2022, the job card device will no longer be supported and customers will be asked to move to the new production floor execution interface. |
 
 
 
