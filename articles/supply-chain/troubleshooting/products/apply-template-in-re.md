@@ -1,4 +1,4 @@
----
+(---
 title: Can't apply a template to a released product
 description: Can't apply a template to a released product 
 author: t-benebo
@@ -19,6 +19,7 @@ KB Number: 4612097
 
 ## Issue description
 <!-- This isn't an issue description. Where is the issue? -->
+<!-- Beatriz: the issue here is that the templates are not working as the customer is expecting them to work. He is using the "templates" functionality that is some functionality that is working for making templates in many places in the application. Below are the steps on how he is using them. -->
 Click Product information and management – Products - Released products - new
 Click options -record info
 Select user template or company template
@@ -28,6 +29,7 @@ Enter Product number and name and Drop down to Apply template.
 
 ## Resolution
 <!-- It isn't clear what problem this is solving. What is the "record info functionality"? -->
+<!-- Beatriz: the thing here is that that general templates that the customer is trying to use with the repro steps above does not work for making templates on products. Products have a specific functionality for making templates, so they should use this product specific functionality, with the repro steps shown below -->
 To create an item template, use the product-specific templates, not the record info functionality. To create an item template:
 
 1. Go to **Product information management \> Products \> Released products**.
