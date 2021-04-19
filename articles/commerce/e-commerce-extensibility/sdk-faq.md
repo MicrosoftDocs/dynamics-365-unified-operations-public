@@ -187,6 +187,17 @@ The following table lists common equivalents in TSLint and ESLint.
 | // tslint:disable-next-line:cyclomatic-complexity | // eslint-disable-next-line complexity |
 | // tslint:disable-next-line:no-empty | // eslint-disable-next-line no-empty |
 
+#### COntinuing to lint with TSLint
+If you wish to continue to lint using TSLint, you can use the –use-tslint argument in the package.json **build** and **start** commands as shown here
+
+```json
+"start": "yarn msdyn365b start local --use-tslint",
+"build": "yarn msdyn365b build --use-tslint",
+"build-prod": "yarn clean && yarn msdyn365b build --use-tslint",
+```
+
+However, please note that support for TSLint will be limited and it is encouraged to use ESLint whenever possible.
+
 #### Completely disable linting during build time
 
 If you want to completely disable linting during build time, you can use the **--disable-linter** argument in the **package.json** build command, as shown here.
