@@ -1,6 +1,6 @@
 ---
-title: Raw material lines are allowed for unpicking and deletion even after FG creation
-description: Raw material lines are allowed for unpicking and deletion even after FG creation
+title: Users can unpick material lines for products that have been reported as finished
+description: The system allows users to unpick raw material lines for products that have been reported as finished
 author: johanhoffmann
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -12,14 +12,14 @@ ms.author: johanho
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-<!-- KFM: Please spell out "FG", but also keep the title under 80 chars. -->
-# Raw material lines are allowed for unpicking and deletion even after FG creation
+
+# Users can unpick material lines for products that have been reported as finished
 
 KB Number: 4614721
 
 ## Issue description
 
-Raw material lines are allowed for unpicking and deletion even after FG creation
+The system allows users to unpick raw material lines for products that have been reported as finished.
 
 ## Resolution
 

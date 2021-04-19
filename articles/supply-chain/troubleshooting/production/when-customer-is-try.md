@@ -1,6 +1,6 @@
 ---
-title: Batch number vanishes when selecting the LOTID field
-description: Batch number vanishes when selecting the LOTID field
+title: Batch number is cleared on selecting a new lot ID
+description: When reviewing a picking list journal line, the specified batch number is cleared when you select a new value for the lot ID.
 author: johanhoffmann
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -12,18 +12,17 @@ ms.author: datra
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-<!-- KFM: The context of this topic is not clear. Much more detail is needed, please rewrite. What is "LOT"? -->
 
-# Batch number vanishes when selecting the LOTID field
+# Batch number is cleared on selecting a new lot ID
 
 KB Number: 4613107
 
 ## Issue description
 
-When you select the LOTID field the Batch number which is already entered is vanishing.
+When reviewing a picking list journal line, the specified **Batch number** is cleared when you select a new value for the **Lot ID**.
 
 ## Resolution
 
-This is the expected behavior.  When changing LOT, the whole item context is changed and thus, the batch number is reset.
+This is the expected behavior.  Changing the **Lot ID** changes the item context, and therefore the batch number is reset.
 
-If the batch number wants to be associated with the LOT, then user has to set the LOT first.
+If you want to associate the batch number with a lot ID, you must set the lot ID first.

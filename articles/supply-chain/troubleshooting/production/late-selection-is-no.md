@@ -12,7 +12,7 @@ ms.author: johanho
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-<!--KFM: This topic is not clear. Please add more context and detail. -->
+
 # Late selection not respected when resetting production orders via batch job
 
 KB Number: 4614634

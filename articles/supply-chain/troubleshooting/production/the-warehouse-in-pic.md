@@ -12,15 +12,15 @@ ms.author: smnatara
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-
-# The warehouse in the picking list journal is not linked to a BOM line
+<!--KFM: Johan will revisit this topic before publishing. -->
+# The warehouse in the picking list journal is not updated on a BOM line
 
 KB Number: 4614848
 
 ## Issue description
-<!-- FKM: more detail is needed here. -->
-The warehouse in picking list journal is not linked with BOM line
+
+The warehouse in the picking list journal is not updated on a bill of material (BOM) line.
 
 ## Resolution
-<!-- KFM: This is not clear. Please revise. Also, spell out "LOT" on first usage. -->
-Production BOM (parts) is a blueprint for a picking list line. If a picking list line is added retrospectively for non-existing material LOT new production BOM is created with the provided info (including dimensions). Now, if a picking line is updated (e.g. dimension is changed) related production BOM line is NOT updated. The rationality here is 1:N relationship between production BOM LOT and picking list line LOT. If that would be the case it would make production BOM blueprint error prone to invalid updates.
+
+This is the expected behavior. If a picking list line is added to a production picking list journal, and references an existing production BOM line (via lot ID), a new production BOM line *is not* created with the provided info. If the picking list journal line is then updated (for example, by changing the warehouse), the related production BOM line *is not* updated.

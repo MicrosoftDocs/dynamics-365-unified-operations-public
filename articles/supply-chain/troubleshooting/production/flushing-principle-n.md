@@ -12,7 +12,7 @@ ms.author: johanho
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-<!-- KFM: Please review and confirm this edit. I added details that weren't clear in the original. -->
+
 # Flushing principle settings on BOM lines aren't respected
 
 KB Number: 4612725

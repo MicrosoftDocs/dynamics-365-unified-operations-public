@@ -12,7 +12,7 @@ ms.author: aslynko
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-<!-- KFM: This topic is incomplete. Requires a rewrite. -->
+<!-- KFM: Request more info from  aslynko. -->
 # Formula line step conversion setup doesn't always work in a batch order
 
 KB Number: 4611503
