@@ -1,6 +1,6 @@
 ---
-title: The warehouse in the picking list journal is not linked to a BOM line
-description: The warehouse in the picking list journal is not linked to a BOM line
+title: The warehouse in the picking list journal is not updated on a bill of material (BOM) line.
+description: The warehouse in the picking list journal is not updated on a bill of material (BOM) line.
 author: johanhoffmann
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -23,4 +23,4 @@ The warehouse in the picking list journal is not updated on a bill of material (
 
 ## Resolution
 
-This is the expected behavior. If a picking list journal line is created with a reference to a production BOM line (via the Lot ID), then the warehouse on the production BOM line will not be updated if the warehouse dimension on the production picking list journal line is later changed.
+If a picking list journal line is created with a reference to a production BOM line (via the Lot ID), then the warehouse on the production BOM line will not be updated if the warehouse dimension on the production picking list journal line is changed. This is by design.
