@@ -74,18 +74,18 @@ Commerce provides the following APIs for e-commerce scenarios to query inventory
 - **GetEstimatedProductWarehouseAvailability** – Use this API to query inventory for a product or product variant from a specific warehouse.
 
 > [!NOTE]
-> These APIs replace the **GetProductAvailabilities** and **GetAvailableInventoryNearby** APIs in the Commerce version 10.0.7 release and earlier.
+> These APIs replace the **GetProductAvailabilities** and **GetAvailableInventoryNearby** APIs in Commerce release 10.0.7 and earlier.
 
 Both APIs internally use the channel-side calculation logic and return estimated **physical available** quantity, **total available** quantity, **unit of measure (UoM)**, and **inventory level** for the requested product and warehouse. The returned values can be shown on your e-commerce site if you want, or they can be used to trigger other business logic on your e-commerce site. For example, you can prevent the purchase of products with an "out of stock" inventory level.
 
 Although other APIs that are available in Commerce can go directly to headquarters to fetch on-hand quantities for products, we don't recommend that they be used in an e-commerce environment because of potential performance issues and the impact that these frequent requests can have on your headquarters servers. Additionally, with channel-side calculation, the two APIs mentioned above can provide a more accurate estimate of a product's availability by taking into account the transactions created in the channels that aren’t yet known to headquarters.
 
-To use the two APIs, you must enable the **Optimized product availability calculation** feature through the **Feature management** workspace in headquarters. If your online and store channels use the same fulfillment warehouses, you must also enable the **Enhanced e-Commerce channel-side inventory calculation logic** feature to have the channel-side calculation logic within the two APIs to factor in the unposted transactions (cash-and-carry, customer orders, returns) created in the store channel. Please ensure you run the **1070** (**Channel configuration**) job after enabling features.
+To use the two APIs, you must enable the **Optimized product availability calculation** feature through the **Feature management** workspace in headquarters. If your online and store channels use the same fulfillment warehouses, you must also enable the **Enhanced e-Commerce channel-side inventory calculation logic** feature to have the channel-side calculation logic within the two APIs to factor in the unposted transactions (cash-and-carry, customer orders, returns) created in the store channel. You will need to run the **1070** (**Channel configuration**) job after enabling these features.
 
 To define how product quantity should be returned in the API output, follow these steps.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
-1. Select **Inventory** tab, and then in the **Inventory availability APIs for e-Commerce** FastTab configure the value of the **Quantity in API output** setting.
+1. Select the **Inventory** tab, and then on the **Inventory availability APIs for e-Commerce** FastTab configure the value of the **Quantity in API output** setting.
 1. Run the **1070** (**Channel configuration**) job to sync the latest setting to channels.
 
 The **Quantity in API output** setting provides three options:
@@ -106,7 +106,7 @@ The Commerce buy box, store selector, wishlist, cart, and cart icon modules cons
 
 ## POS inventory lookup with channel-side calculation
 
-In the Commerce version 10.0.9 release and earlier, the **Inventory lookup** operation in POS used a real-time service call to headquarters to get inventory information for the selected product for both the user's current store and any other stores that are configured for the fulfillment group as part of the channel configuration for the store. In Commerce version 10.0.10 release and later, you can turn off real-time service calls to headquarters and instead use channel-side calculation on the Commerce server to determine the on-hand inventory that is physically available for the store and any other locations that are defined in the fulfillment group. This channel-calculated inventory configuration is also useful for locations where internet connectivity is unreliable, because you don't have to be online to get inventory lookups headquarters.
+In the Commerce release 10.0.9 and earlier, the **Inventory lookup** operation in POS used a real-time service call to headquarters to get inventory information for the selected product for both the user's current store and any other stores that are configured for the fulfillment group as part of the channel configuration for the store. In Commerce release 10.0.10 and later, you can turn off real-time service calls to headquarters and instead use channel-side calculation on the Commerce server to determine the on-hand inventory that is physically available for the store and any other locations that are defined in the fulfillment group. This channel-calculated inventory configuration is also useful for locations where internet connectivity is unreliable, because you don't have to be online to get inventory lookups headquarters.
 
 When channel-side calculation is correctly configured and managed, it can provide a more reliable estimate of the current store inventory because it uses the transactional data that is in the Commerce channel database but that headquarters might not yet have information about. For example, if you use the existing real-time service call for inventory lookups in POS, headquarters probably won't yet have information about a cash-and-carry sale that just occurred for a product. Therefore, the on-hand inventory value that headquarters returns for that product will probably exceed the store's actual on-hand inventory by one unit. However, if you use channel-side calculation, the cash-and-carry sale can be factored into the calculation and deducted from the on-hand value that is shown. Although the values that both the channel-side calculation and the real-time service call provide are only estimates of on-hand inventory, the value that the channel-side calculation provides is much more likely to be accurate for the current store.
 
@@ -138,9 +138,9 @@ To ensure the best possible estimate of inventory, it's critical that you use th
 
 > [!NOTE]
 > - It is a best practice to run the **Product availability** and **1130** jobs on an hourly basis, and to schedule P-job, synchronize orders, and trickle feed posting-related jobs with the same or higher frequency.
-> - For performance reasons, when channel-side inventory availability calculations are used to make an inventory availability request using the e-Commerce API's or the new POS channel-side inventory logic, the calculation uses a cache to determine whether enough time has passed to justify running the calculation logic again. The default cache is set to 60 seconds. For example, you turned on channel-side calculation for your store and viewed the on-hand inventory for a product on the **Inventory lookup** page. If one unit of the product is then sold, the **Inventory lookup** page won't show the reduced inventory until the cache has been cleared. After users post transactions in POS, they should wait 60 seconds before they verify that the on-hand inventory has been reduced.
+> - For performance reasons, when channel-side inventory availability calculations are used to make an inventory availability request using the e-Commerce API's or the POS channel-side inventory logic, the calculation uses a cache to determine whether enough time has passed to justify running the calculation logic again. The default cache is set to 60 seconds. For example, you turned on channel-side calculation for your store and viewed the on-hand inventory for a product on the **Inventory lookup** page. If one unit of the product is then sold, the **Inventory lookup** page won't show the reduced inventory until the cache has been cleared. After users post transactions in POS, they should wait 60 seconds before they verify that the on-hand inventory has been reduced.
 
-If your business scenario requires a smaller cache time, contact your product support representative for help.
+If your business scenario requires a smaller cache time, contact your product support representative for assistance.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
