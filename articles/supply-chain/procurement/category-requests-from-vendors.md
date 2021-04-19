@@ -1,89 +1,81 @@
 ---
-# required metadata
-
 title: Category requests from vendors
 description: This topic describes how vendors can request procurement categories for their account. It also includes the related approval process that is completed by the procurement agent.
-author: taylorvh
-manager: 
-ms.date: 04/09/2021
+author: TaylorVH
+ms.date: 04/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: 
-# ms.devlang: 
-ms.reviewer: 
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: 
-# ms.search.industry: 
-ms.author: 
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.author: taylorvh
+ms.search.validFrom: 2021-04-19
+ms.dyn365.ops.version: 10.0.18
 ---
 
 # Category requests from vendors
 
 [!include [banner](../includes/banner.md)]
 
-The category request process allows vendors to request new procurement categories to associate with their vendor account. These procurement categories can then be utilized by the related procurement and sourcing processes. For more information, see [Procurement catalogs overview - Supply Chain Management | Dynamics 365 | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-catalogs). These requests are started in the **Vendor information** workspace by the vendor. They're then submitted to your agency for review. Approved categories are added to the list of procurement categories on the vendor&#39;s account. This functionality requires the **Allow vendors to apply for procurement categories through vendor collaboration** feature. This feature is disabled by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for help with enabling this feature.
+The category request process allows vendors to request new procurement categories to associate with their vendor account. These procurement categories can then be utilized by the related procurement and sourcing processes (see also [Procurement catalogs overview](procurement-catalogs.md)). These requests are started in the **Vendor information** workspace by the vendor. They're then submitted to your agency for review. Approved categories are added to the list of procurement categories on the vendor's account
 
-After this feature is enabled, procurement categories can still be added to vendors manually when necessary. For more information, see [Approve vendors for specific procurement categories - Supply Chain Management | Dynamics 365 | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories#:~:text=%20Approve%20vendors%20for%20specific%20procurement%20categories%20,DESK%20ACCESSORIES%20%28OFFICE...%207%20Select%20Save.%20More%20).
+## Turn on this feature for your system
+
+If your system doesn't already include the features described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Allow vendors to apply for procurement categories through vendor collaboration* feature.
+
+After this feature is enabled, you will still be able to add procurement categories to vendors manually when necessary, as described in [Approve vendors for specific procurement categories](tasks/approve-vendors-specific-procurement-categories.md).
 
 ## Vendor collaboration requirements
-For vendors to interact with category requests they must be set up for vendor collaboration.
+
+For vendors to interact with category requests, they must be set up for vendor collaboration.
 
 The vendor must have at least one vendor collaboration user. This vendor user must have one or more of the following security roles. Vendor users with either of these roles can create and submit category requests.
+
 - Vendor contact (external)
 - Vendor admin (external)
 
-For more information, see [Set up and maintain vendor collaboration - Supply Chain Management | Dynamics 365 | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/set-up-maintain-vendor-collaboration).
+For more information, see [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
 
 ## Vendor category request workflow setup
-The **Vendor category request workflow** must be set up in the procurement and sourcing workflows. Vendors will submit new category requests that you can review and approve. Requested procurement categories are added to a vendor account after a category request is approved.
 
-The following example shows how to set up a simple **Vendor category request workflow** with a single approver. You'll need to review your internal processes to determine the appropriate workflow set up for your agency.
+The *Vendor category request workflow* must be set up in the procurement and sourcing workflows. Vendors will submit new category requests that you can review and approve. Requested procurement categories are added to a vendor account after a category request is approved.
 
-1. **Open Procurement and sourcing > Setup > Procurement and sourcing workflows**.
-2. Select **New** from the Action Pane.
-3. Select the **Vendor category request workflow**.
-4. Log in to the workflow editor.
-5. The workflow editor opens.
-6. Select **Properties** from the Action Pane.
-7. The Properties page for the **Vendor category request workflow** opens.
-8. Enter **Submission instructions**. These instructions are visible to vendors when submitting a category request.
-9. Select **Close** on the **Properties** page.
-10. Drag the **Approve new category request** workflow element onto the canvas.
-11. Drag a link from the **Start** workflow element to the **Approve new category request** workflow element.
-12. Drag a link from the **Approve new category request** workflow element to the **End** workflow element.
-13. Double-click the **Approve new category request** workflow element.
-14. Right-click the **Step 1** workflow element and select **Properties**.
-15. The Properties page for the **Approve new category request** workflow element opens.
-16. Enter a **Work item subject**. This text shows as the **Subject** in **Work items assigned to me**.
-17. Enter **Work item instructions**. These instructions are visible to approvers when selecting **Workflow** from the Action Pane of a Category request.
-18. Select **Assignment** on the left.
-19. Select an Assignment type of **User**.
-20. Select the **User** tab.
-21. Select an example approver from the list of **Available users**. For example, a user in procurement department.
-22. Click the **>** icon to move the example approver to the list of **Selected users**.
-23. Close the **Properties** page.
-24. Select **Save and close**.
-25. Enter **Version notes** for the workflow.
-26. Select **OK** to save the workflow.
-27. Select **Activate the new version** if you're ready to begin testing this workflow. Otherwise select **Do not activate the new version**.
-28. Select **OK** to complete the workflow setup.
+The following example shows how to set up a simple *Vendor category request workflow* with a single approver. You'll need to review your internal processes to determine the appropriate workflow set up for your agency.
 
-Tip: If your agency doesn't require approval of category requests, then workflow should be configured for automatic approval.
+1. Go to **Procurement and sourcing > Setup > Procurement and sourcing workflows**.
+1. Select **New** from the Action Pane.
+1. Select **Vendor category request workflow** from the dialog box.
+1. Allow the workflow editor to open and sign in. The workflow editor opens.
+1. Select **Properties** from the Action Pane.
+1. The **Properties** page for the workflow opens.
+1. Enter text in the **Submission instructions** field. These instructions are visible to vendors when submitting a category request.
+1. Select **Close** on the **Properties** page.
+1. Drag the **Approve new category request** workflow element onto the canvas.
+1. Drag a link from the **Start** workflow element to the **Approve new category request** workflow element.
+1. Drag a link from the **Approve new category request** workflow element to the **End** workflow element.
+1. Double-click the **Approve new category request** workflow element.
+1. Right-click the **Step 1** workflow element and select **Properties**.
+1. The **Properties** page for the workflow element opens.
+1. Enter text in the **Work item subject** field. This text shows as the **Subject** in **Work items assigned to me**.
+1. Enter text in the **Work item instructions** field. These instructions are visible to approvers when selecting **Workflow** from the Action Pane of a category request.
+1. Select **Assignment** in the pane on the left.
+1. On the **Assignment type** tab, select *User*.
+1. Open the **User** tab and select an example approver from the list of **Available users**. For example, select a user in procurement department.
+1. Click the **>** icon to move the example approver to the list of **Selected users**.
+1. Close the **Properties** page.
+1. Select **Save and close**.
+1. Enter **Version notes** for the workflow.
+1. Select **OK** to save the workflow.
+1. Select **Activate the new version** if you're ready to begin testing this workflow. Otherwise select **Do not activate the new version**.
+1. Select **OK** to complete the workflow setup.
 
-For more information on workflow setup, see [Set Up Workflows - Business Central | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/business-central/across-set-up-workflows).
+> [!TIP]
+> If your agency doesn't require approval of category requests, then the workflow should be configured for automatic approval.
+
+For more information on how to set up workflows, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 
 ## Create and submit a category request
+
 This section describes how vendors can use the vendor information workspace to create, edit, view, and submit category requests.
 
 To start a new category request:
@@ -93,7 +85,7 @@ To start a new category request:
 3. The **Category requests** page opens.
 4. Select **New category request** from the Action Pane.
 5. The **New category request** dialog box opens. Find the category you want to apply for by navigating the tree and/or using the filter at the top of the list. Then mark the check box for each relevant category. Note:
-  - Categories that are currently active on your vendor account show as selected and can&#39;t be removed.
+  - Categories that are currently active on your vendor account show as selected and can't be removed.
   - You can request multiple procurement categories in a single category request.
 6. Select **OK** to create the draft request.
 7. The new draft request now shows on the **Category requests** page.
