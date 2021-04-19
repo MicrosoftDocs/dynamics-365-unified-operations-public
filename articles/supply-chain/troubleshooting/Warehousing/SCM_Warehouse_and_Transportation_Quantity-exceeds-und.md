@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSLoadTable,WHSLoadPlanningListPage,WHSLoadPlanningWorkbench,WHSTransportLoad,WHSShipPlanningListPage,WHSShipmentDetails,WHSWorkTable,WHSWorkTableListPage
+ms.search.form: WHSLoadTable_WHSShipConfirm,WHSLoadPlanningListPage_WHSShipConfirm,WHSLoadPlanningWorkbench_WHSShipConfirm,WHSTransportLoad_WHSShipConfirm,WHSShipPlanningListPage_WHSShipConfirm,WHSShipmentDetails_WHSShipConfirm,WHSWorkTable_WHSShipConfirm,WHSWorkTableListPage_WHSShipConfirm,Dialog_WHSOutboundShipConfirmController_WHSOutboundShipConfirm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -31,7 +31,9 @@ ms.author: lbc@microsoft.com
 
 Error code: WAX1686
 
+The system displays the following error message:
 
+> The shipment for load %1 could not be confirmed because the quantity for item %2 exceeds the percentage that is defined for under delivery.
 
 ## Symptoms
 The load or shipment can't be ship confirmed in current state.
