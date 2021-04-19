@@ -15,6 +15,8 @@ ms.dyn365.ops.version: 10.0.19
 
 # Item arrival journal for return orders creates inconsistent inventory quantity
 
+<!-- To KFM from Henrikan: Remove this topic as it is currently being addressed in a deliverable. -->
+
 KB Number: 4613883
 
 ## Issue description
