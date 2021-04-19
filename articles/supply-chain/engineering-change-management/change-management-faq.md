@@ -1,11 +1,11 @@
 ---
-title: Engineering change management FAQs
-description: This topic presents several frequently asked questions (FAQs), and their answers, regarding the engineering change management feature
+title: Engineering change management FAQ
+description: This topic provides answers to frequently asked questions about the engineering change management feature.
 author: t-benebo
 manager: tfehr
 ms.date: 03/25/2021
 ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -14,71 +14,71 @@ ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# Engineering change management FAQs
+# Engineering change management FAQ
 
 [!include [banner](../includes/banner.md)]
 
-This topic presents several frequently asked questions (FAQs), and their answers, regarding the engineering change management feature
+This topic provides answers to frequently asked questions about the engineering change management feature.
 
-## Should I choose to track the version in transactions?
+## Should I track the version in transactions?
 
-When you create an engineering change category, the **Engineering change category details** page provides a settings called **Track version in transactions**. What is this setting and what does it do?
+When you create an engineering change category, the **Engineering change category details** page provides an option that is named **Track version in transactions**. What is this setting, and what does it do?
 
-- Set **Track version in transactions** to *Yes*, the **Dimension group** field will be filtered to only show dimension groups where version is an active dimension.
-- Set **Track version in transactions** to *No*, the **Dimension group** field will be filtered to only show dimension groups where the version dimension isn't an active dimension.
+- If you set the **Track version in transactions** option to *Yes*, the **Dimension group** field will be filtered so that it shows only dimension groups where version is an active dimension.
+- If you set the **Track version in transactions** option to *No*, the **Dimension group** field will be filtered so that it shows only dimension groups where the version dimension is **not** an active dimension.
 
-### If you do track the version in transactions
+### If you track the version in transactions
 
-For engineering catagories where you have selected a **Dimension group** where version is an active dimension, then you will track versions in transactions for products in that category. In this case, engineering product will be a product master and each version of the product will be a product variant that uses the version dimension. Other dimensions can also be used together with the version dimension.
+For engineering categories where you've selected a dimension group where version is an active dimension, you will track versions in transactions for products in that category. In this case, the engineering product will be a product master, and each version of the product will be a product variant that uses the version dimension. Other dimensions can be used together with the version dimension.
 
-This means that each engineering version will be treated as a variant in all processes. Therefore, if you have a specific variant in a transaction (so that you can know which variant was sold or purchased), you would also have to manage stock for each version, master planning would plan supply for each version, and so on. If you choose to retire a version from the market, you would need to manually adjust its effective-from and -to dates  to reflect the change and also manage your inventory to make sure you don't have non-used versions of items in your warehouses.
+In this case, each engineering version will be treated as a variant in all processes. Therefore, if you have a specific variant in a transaction (so that you can determine which variant was sold or purchased), you must manage stock for each version, master planning will plan supply for each version, and so on. If you retire a version from the market, you must manually adjust its effective-from and effective-to dates so that they reflect the change. You must also manage your inventory to make sure that you don't have unused versions of items in your warehouses.
 
-We recommend this option if you need high traceability of the specific versions used in each transaction. However, it does require more management effort.
+Although this option requires more management effort, we recommend it if you require high traceability of the specific versions that are used in each transaction.
 
 ### If you don't track the version in transactions
 
-For engineering catagories where you have selected a **Dimension group** where version is *not* an active dimension, then you will *not* track versions in transactions for products in that category. In this case, the engineering product (if you don't use any other dimension) will be a distinct product. The product will still be versioned, and you can manage information on the specific versions such as its BOM and route, but you won't be able to trace which specific version was used in each transaction. The effective-from and -to dates indicate the validity of each of version.
+For engineering categories where you've selected a dimension group where version is **not** an active dimension, you will **not** track versions in transactions for products in that category. In this case, if you don't use any other dimension, the engineering product will be a distinct product. The product will still be versioned, and you can manage information about specific versions (for example, their bill of materials \[BOM] and route), but you won't be able to trace which specific version was used in each transaction. The effective-from and effective-to dates indicate the validity of each version.
 
-This option is much easier to manage because changing from one version to another is as easy as making the needed changes in a change order and then updating the effective-from and -to dates in the engineering version. The production processes will then pick up the needed BOM and route for the product (and its specific version).
+This option is much easier to manage, because if you want to change from one version to another, you just have to make the required changes in a change order, and then update the effective-from and effective-to dates in the engineering version. The production processes will then pick up the required BOM and route for the product (and its specific version).
 
-Most organizations choose this option because it provides version and change management without adding the extra overhead of tracking the version in each transaction, in inventory, and during master planning.
+Most organizations choose this option because it provides version and change management, but it doesn't add the extra overhead of tracking the version in each transaction, in inventory, and during master planning.
 
 ## Which fields are copied to the released item template?
 
-When an engineering company creates an engineering product, that product is created as a released product in the engineering company based on the selected *released item template* (which is itself an existing released product). Likewise, when that product is released to an operational company, the released item template is also used. In each case released item template establishes most of the field values for the released product, and these values come from the associated **Released product details** page. 
+When an engineering company creates an engineering product, that product is created as a released product in the engineering company. The released product that is created is based on the selected *released item template*. (The released item template is itself an existing released product.) The released item template is also used when the product is released to an operational company. In each case, the released item template defines most of the field values for the released product, and those values come from the associated **Released product details** page.
 
-The following tables specifies which fields are copied during these processes.
+The following tables shows the fields that are copied during these processes.
 
-| FastTab | Fields copied on creation by the engineering company | Fields copied on release to an operational company |
+| FastTab | Fields that are copied on product creation in the engineering company | Fields that are copied on release to an operational company |
 |---|---|---|
-| **General** | All fields from the **Administration** field group. | Same as for the engineering company. |
-| **Purchase** | All fields. | All fields except **Unit**. |
-| **Sell** | All fields from the following field groups: **Sales order**, **Administration**, **Taxation**, **Price update**, **Base sales price**, **Charges**, **Discounts**, and **Alternative product**. | Same as for the engineering company, but excluding the **Unit** field. |
+| **General** | All fields in the **Administration** section | The same fields that are copied for the engineering company |
+| **Purchase** | All fields | All fields except **Unit** |
+| **Sell** | All fields in the following sections: **Sales order**, **Administration**, **Taxation**, **Price update**, **Base sales price**, **Charges**, **Discounts**, and **Alternative product** | All the same fields that are copied for the engineering company, except **Unit** |
 | **Foreign trade** | All fields | All fields |
-| **Manage inventory** | All fields and field groups *except* **Physical dimensions** and **Catch weight**.  | Same as for the engineering company, but excluding the **Unit** field. |
-| **Engineer**, **Plan**, **Manage costs**, **Manage projects**, **Financial dimensions**, and **Warehouse** | All fields | All fields except **BOM Unit**. |
-| **Product variants** | All fields from the **Default product variant** field group. | Same as for the engineering company. |
+| **Manage inventory** | All fields and sections *except* **Physical dimensions** and **Catch weight** | All the same fields that are copied for the engineering company, except **Unit** |
+| **Engineer**, **Plan**, **Manage costs**, **Manage projects**, **Financial dimensions**, and **Warehouse** | All fields | All fields except **BOM Unit** |
+| **Product variants** | All fields in the **Default product variant** section | The same fields that are copied for the engineering company |
 
-In addition to the fields listed in the previous table, all default order settings are also copied from the released item template, both when creating the product in the engineering company and when releasing it to an operational company. (To view the default order settings for a released item template, open the relevant **Released product details** page and, on the Action Pane, open the **Manage inventory** tab and select **Default order settings**.)
+In addition to the fields that are shown in the previous table, all default order settings are copied from the released item template, both when the product is created in the engineering company and when it's released to an operational company. (To view the default order settings for a released item template, open the relevant **Released product details** page, and then, on the Action Pane, on the **Manage inventory** tab, select **Default order settings**.)
 
-## Should I create a separate legal entity for engineering products or use an existing one?
+## Should I create a separate legal entity for engineering products or use an existing legal entity?
 
-The choice of whether or not to create a new legal entity for engineering products depends on your business needs.
+Your business requirements determine whether you should create a new legal entity for engineering products.
 
-By creating a separate engineering company, you will be able to keep engineering data separate and then add modifications as needed for your local operational companies. This will allow you to:
+By creating a separate engineering company, you can keep engineering data separate and then add modifications as they are required for your local operational companies. In this way, you can achieve the following goals:
 
 - Keep a separate entity where the engineering products are created and managed.
 - Prevent engineering products from appearing together with the rest of your released products until they are ready and released.
-- Clearly distinguish which data is dictated by engineering and which is local.
+- Clearly distinguish data that is dictated by engineering and local data.
 
-On the other hand, you should probably use an existing legal entity as an engineering company if the following apply to you:
+On the other hand, you should probably use an existing legal entity as an engineering company if the following conditions apply to you:
 
-- You only have one legal entity in your system and/or do not require a clear separation between products being engineered.
-- You don't want to duplicate some data such as resource groups, resources, operations, and possibly sites.
+- You have only one legal entity in your system, and/or you don't require a clear separation between products that are being engineered.
+- You don't want to duplicate some data, such as resource groups, resources, operations, and (perhaps) sites.
 
 ## What is the nomenclature for engineering versions and variants?
 
-The nomenclature for engineering products and product variants work in the following way:
+The nomenclature for engineering products and product variants works in the following way:
 
-- For the engineering product (the distinct product in cases where no dimensions are used or the product master in case any dimension is used) the number rule nomenclature is defined on the engineering product category. There, you have the option to use a number sequence, text constants, and attribute names and values.
-- For each variant of an engineering product (in cases where your engineering product is a product master, this is set up in the category where you specify the dimension group) the number rule nomenclature for each of the variants is defined in the dimension group. In this case, you can use the product ID of the master and also the dimension values and names.
+- For the engineering product (that is, the distinct product if no dimensions are used, or the product master if any dimension is used), the number rule nomenclature is defined in the engineering product category. There, you have the option to use a number sequence, text constants, and attribute names and values.
+- For each variant of an engineering product (if your engineering product is a product master, variants are set up in the category where you specify the dimension group), the number rule nomenclature for each variant is defined in the dimension group. In this case, you can use the product ID of the master, and the dimension values and names.
