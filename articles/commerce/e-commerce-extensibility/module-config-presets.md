@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers how to create module configuration presets, which are default configuration field values used in the site builder tool  when no value is set.
+This topic covers how to create module configuration presets, which are default configuration field values used in the site builder tool when no value is set.
 
 ## Overview
 
@@ -65,6 +65,8 @@ The JSON file is configured similar to a [module mock file](module-mock-file.md)
 ### Preset JSON field definitions
 * "id" - maps to the module Id
 * "config" - the config section contains a list of configuration values based on the name of the configuration stored in the modules definition file.
+
+**Note** configuration fields of type "image" are not currently supported.
 
 
 ## Additional resources
