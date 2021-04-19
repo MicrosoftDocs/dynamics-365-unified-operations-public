@@ -39,6 +39,21 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+
+## Features removed or deprecated in the Supply Chain Management 10.0.19 release
+
+### Job card device
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The job card device is being replaced by the production floor execution interface |
+| **Replaced by another feature?**   | Yes, the job card device is replaced by the new production floor execution interface |
+| **Product areas affected**         | Supply Chain Management - warehouse app |
+| **Deployment option**              | Cloud and on-premises |
+| **Status**                         | Deprecated. The warehouse app will receive support with bug and security fixes, but feature enhancements will no longer be provided. After April 2022, the old warehouse app will no longer be supported and customers will be asked to move to the new Warehouse Management mobile app. The old warehouse app will then be removed from the Microsoft Store and Google Play store.  |
+
+
+
 ## Features removed or deprecated in the Supply Chain Management 10.0.18 release
 
 ### Dynamics 365 for Finance and Operations - Warehousing (the warehouse app)
