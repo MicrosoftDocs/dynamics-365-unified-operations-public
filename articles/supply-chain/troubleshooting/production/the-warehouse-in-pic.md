@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4614848
 
-## Issue description
+## Symptoms
 
 The warehouse in the picking list journal is not updated on a bill of material (BOM) line.
 

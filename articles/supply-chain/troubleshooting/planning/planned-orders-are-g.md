@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4614729
 
-## Issue description
+## Symptoms
 
 Planned orders are generated for phantom products after running master planning.
 

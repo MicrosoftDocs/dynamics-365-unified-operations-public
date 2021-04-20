@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612098
 
-## Issue description
+## Symptoms
 
 You are able to define text translations for product names. However, the product name is always be shown in the original language, regardless of the language setting in the app.
 

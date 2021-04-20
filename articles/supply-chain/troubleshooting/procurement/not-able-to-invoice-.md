@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4611793
 
-## Issue description
+## Symptoms
 
 Customer not able to invoice the original sales order and the original direct delivery purchase order after set the "Post invoice automatically" parameters
 

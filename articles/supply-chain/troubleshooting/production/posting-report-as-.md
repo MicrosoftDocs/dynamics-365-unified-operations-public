@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612891
 
-## Issue description
+## Symptoms
 
 On posting the *Report as finished* journal, the following error is shown:
 

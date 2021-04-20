@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4614408
 
-## Issue description
+## Symptoms
 
 This issue occurs when the **Warehouse** dimension is not assigned on the **Forecast dimensions** tab of the **Demand forecasting parameter** page. Even with this setting, you are still able to see the **Warehouse** column on the **Demand forecast** page (**Master planning \> Forecasting \> Manual forecast entity \> Demand forecast lines**).
 

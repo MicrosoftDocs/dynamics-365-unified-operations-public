@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4613100
 
-## Issue description
+## Symptoms
 
 An open sales order is exported using the *Sales order line charges V2* entity. The order includes service charges, and these are visible in the exported Excel spreadsheet. However, when the same sales order is invoiced and then exported again using *Sales order line charges V2*, the service charges are no longer included in the exported file.
 

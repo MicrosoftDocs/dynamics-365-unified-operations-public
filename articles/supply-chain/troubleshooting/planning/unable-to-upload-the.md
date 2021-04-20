@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4614109
 
-## Issue description
+## Symptoms
 <!-- KFM: Do you mean "demand forecast entries" or "demand forecast entities". Both terms appear in this topic. Do you mean "upload" or "update"? -->
 You are unable to upload the cost price in demand forecast entries through data management entities.
 

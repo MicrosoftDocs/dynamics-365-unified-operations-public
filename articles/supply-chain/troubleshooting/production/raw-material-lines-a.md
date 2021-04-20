@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4614721
 
-## Issue description
+## Symptoms
 
 The system allows users to unpick raw material lines for products that have been reported as finished.
 

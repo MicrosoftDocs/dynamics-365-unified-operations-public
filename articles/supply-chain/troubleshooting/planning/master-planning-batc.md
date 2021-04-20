@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612572
 
-## Issue description
+## Symptoms
 
 <!-- KFM: This issue description is not clear. Please revise in a way that addresses the general reader rather than referring to particular customer case. -->
 

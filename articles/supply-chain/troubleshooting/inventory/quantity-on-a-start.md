@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4613113
 
-## Issue description
+## Symptoms
 
 When you create a quarantine order and try to split the order, the order quantity isn't updated to the split remaining quantity.
 

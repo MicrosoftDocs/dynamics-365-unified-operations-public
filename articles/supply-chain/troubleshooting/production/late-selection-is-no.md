@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4614634
 
-## Issue description
+## Symptoms
 
 Late selection isn't respected when you use a recurring batch job to reset the status of a production order.
 

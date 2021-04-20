@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 <!-- KFM: Missing KB number? -->
 
-## Issue description
+## Symptoms
 
 In some scenarios, you may receive the following message on accessing **Item coverage** page after importing items to the *Item coverage V2* entity:
 

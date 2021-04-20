@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4613548
 
-## Issue description
+## Symptoms
 
 There is no **From date** on the **Active prices** tab.
 

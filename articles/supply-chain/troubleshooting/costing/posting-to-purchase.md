@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612588
 
-## Issue description
+## Symptoms
 
 The system creates a posting to purchase accrual with amount zero when a product receipt with zero value is posted.
 

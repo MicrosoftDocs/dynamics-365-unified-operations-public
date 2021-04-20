@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4603538
 
-## Issue description
+## Symptoms
 <!-- KFM: The following is unclear. Please revise. Also, "debut account" or "debit account"?-->
 When you setup a Reconciliation reason in Transportation managementit is not supported to add Cost center or any other dimension in credit account except main account, whereas the debit account has an option to select other dimensions.
 

@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4613390
 
-## Issue description
+## Symptoms
 
 Multiple inventory transactions are created after adjusting a purchase order line for items where the batch number group has **On physical update** set to *No*.
 

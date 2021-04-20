@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4611660
 
-## Issue description
+## Symptoms
 
 Unable to print the notes attached to a picking route.
 

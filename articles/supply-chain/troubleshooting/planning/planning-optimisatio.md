@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4614298
 
-## Issue description
+## Symptoms
 
 Planning Optimization creates a planned purchase order when a purchase exists within negative days if the coverage code is min/max.
 

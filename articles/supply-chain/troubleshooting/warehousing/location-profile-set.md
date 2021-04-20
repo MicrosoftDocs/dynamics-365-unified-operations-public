@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4613622
 
-## Issue description
+## Symptoms
 
 The location profile setting **Allow negative inventory** is set to *No*, but the system is still allowing negative on-hand inventory.
 

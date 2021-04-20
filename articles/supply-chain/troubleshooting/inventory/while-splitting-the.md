@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612073
 
-## Issue description
+## Symptoms
 
 <!-- KFM: This topic doesn't seem to be very helpful. Consider removing or adding more detail. It's not clear where any of these settings are. -->
 While splitting the CW <!-- KFM: Spell out "CW" --> quantity into batches, the system automatically changes the pick quantity based on the item's minimum quantity setup. The pick quantity doesn't change based on the nominal quantity setup on the item.

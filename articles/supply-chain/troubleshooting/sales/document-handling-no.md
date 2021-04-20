@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4611854
 
-## Issue description
+## Symptoms
 
 Document handling notes aren't copied from an original sales order to its related direct delivery purchase order.
 

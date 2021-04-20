@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4611211
 
-## Issue description
+## Symptoms
 
 It is not allowed to add line to purchase requisition after request change.
 

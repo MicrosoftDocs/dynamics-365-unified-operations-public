@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4614667
 
-## Issue description
+## Symptoms
 
 If multiple work headers are created for the same target license plate as part of a single warehouse app receiving event, only one license plate label prints when receiving the product.
 

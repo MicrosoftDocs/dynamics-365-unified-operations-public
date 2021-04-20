@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612803
 
-## Issue description
+## Symptoms
 
 The "Last tested date" field isn't updated when creating multiple quality orders. 
 

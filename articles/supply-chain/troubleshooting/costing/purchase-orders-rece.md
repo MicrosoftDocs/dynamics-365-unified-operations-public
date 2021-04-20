@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612595
 
-## Issue description
+## Symptoms
 
 Physically received purchase orders don't appear in the *Check open quantities* inventory closing report.
 

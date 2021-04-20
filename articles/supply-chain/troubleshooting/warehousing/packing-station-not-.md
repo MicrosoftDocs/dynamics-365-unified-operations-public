@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4614615
 
-## Issue description
+## Symptoms
 
 Packing notes aren't displayed on the packing form when the packing instructions attachment is added either to a product master or to a product variant.
 

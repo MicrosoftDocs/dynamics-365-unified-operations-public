@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4611372
 
-## Issue description
+## Symptoms
 
 When using customer rebate agreements (of type *amount*) in combination with item rebate groups, rebates are calculated but the cumulation fails.
 

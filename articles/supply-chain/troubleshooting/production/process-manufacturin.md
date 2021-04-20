@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4611503
 
-## Issue description
+## Symptoms
 
 Process Manufacturing Formula line Step Conversion setup does not always work in a Batch Order if the finished good Quantity is changed.
 

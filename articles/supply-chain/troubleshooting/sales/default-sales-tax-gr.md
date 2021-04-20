@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612561
 
-## Issue description
+## Symptoms
 <!-- KFM: The issue needs to be described more clearly. -->
 
 Default sales tax group to sales order either from delivery address or customer account.

@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4613106
 
-## Issue description
+## Symptoms
 
 This issue occurs when your system is configured to reserve sales orders automatically. If you then try to select the location for a picking list registration line, you receive the following error when running with a warehouse management (WMS) reservation processes:
 

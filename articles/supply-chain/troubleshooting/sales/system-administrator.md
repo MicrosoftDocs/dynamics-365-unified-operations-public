@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4614642
 
-## Issue description
+## Symptoms
 
 System administrators can't clear sales order holds unless they also have the specific role assigned in the order hold code.
 

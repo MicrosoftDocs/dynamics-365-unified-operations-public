@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4613107
 
-## Issue description
+## Symptoms
 
 When reviewing a picking list journal line, the specified **Batch number** is cleared when you select a new value for the **Lot ID**.
 

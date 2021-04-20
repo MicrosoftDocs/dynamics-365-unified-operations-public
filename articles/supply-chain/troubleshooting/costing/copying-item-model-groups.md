@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612800
 
-## Issue description
+## Symptoms
 
 When you copy *item model groups* to another legal entity (company) using the *Item model group inventory policies* entity, some field setting such as the inventory model and description are missing in the new model group at the destination company.
 

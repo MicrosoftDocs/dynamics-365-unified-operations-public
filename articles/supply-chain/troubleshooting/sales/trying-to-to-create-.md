@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4611508
 
-## Issue description
+## Symptoms
 
 If you try to create a contact for a customer account while dual-write is active, you will see the following error message"
 

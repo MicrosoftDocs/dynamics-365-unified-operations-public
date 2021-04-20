@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612127
 
-## Issue description
+## Symptoms
 <!-- KFM: In what way does it work incorrectly? -->
 Marking between Transfer order receipt and batch order is not working correctly when using "Firm and consolidate".
 

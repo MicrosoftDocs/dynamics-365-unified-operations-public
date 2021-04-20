@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4611825
 
-## Issue description
+## Symptoms
 
 When you try to import an item using the *Released products V2* entity, you get an error message similar to the following example:
 

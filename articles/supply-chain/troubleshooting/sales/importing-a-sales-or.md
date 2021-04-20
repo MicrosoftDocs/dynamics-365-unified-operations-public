@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612088
 
-## Issue description
+## Symptoms
 <!-- KFM: Spell out "DMF" -->
 
 The system doesn't calculate auto charges when you import a sales order record through DMF.
