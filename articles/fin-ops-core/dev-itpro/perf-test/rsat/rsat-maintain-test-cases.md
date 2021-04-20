@@ -1,6 +1,6 @@
 ---
-title: Maintain test cases within Regression suite automation tool
-description: 
+title: Maintain test cases in Regression suite automation tool (RSAT)
+description: This topic explains how to maintain test cases and attachments in Regression suite automation tool (RSAT).
 author: FrankDahl
 ms.date: 04/12/2021
 ms.topic: article
@@ -13,80 +13,86 @@ ms.search.validFrom: 2021-04-12
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Maintain test cases within Regression suite automation tool
+# Maintain test cases in Regression suite automation tool (RSAT)
 
 [!include [banner](../../includes/banner.md)]
 
-Regression suite automation tool (RSAT) version 2.2 and later lets you maintain test cases and attachments within RSAT. This improves usability and productivity significantly compared to earlier versions where you had to shift between using Azure DevOps for maintaining test cases and RSAT for running tests. Many operations can be done fully within RSAT and it's a simpler way of working with test suites.
+Regression suite automation tool (RSAT) version 2.2 and later lets you maintain test cases and attachments in the tool itself. In earlier versions, you had to use Microsoft Azure DevOps to maintain test cases and then switch to RSAT to run tests. Therefore, newer versions offer better usability and help improve productivity. Many operations can be done completely in RSAT, and it's also easier to work with test suites.
 
-Test plans and test suites continue to be maintained in DevOps.
+Test plans and test suites continue to be maintained in Azure DevOps.
 
-The option **Enable upload to Azure DevOps** must be enabled to use this feature. Changes made in RSAT will automatically upload to DevOps and be available in DevOps. This way, tests suites will include the updated test cases available to other users or for running in DevOps by pipeline.
+To use this feature, you must enable the **Enable upload to Azure DevOps** option. Changes that are made in RSAT are then automatically uploaded to Azure DevOps and will be available there. Therefore, test suites will include the updated test cases that are available to other users or that can be run in Azure DevOps by a pipeline.
 
 ## View test case information
 
-To view test case information, use the context menu that is in the test cases grid. Locate the relevant test case and hover the mouse until the ellipsis appears between the **Title** and **Parameters File** columns, as shown in the following screenshot.
+Follow these steps to view information about a test case.
 
-![Test case details](media/test-case-details.PNG)
+1. In the **Test Cases** grid, find the relevant test case, and hover over the row until an ellipsis button (**...**) appears between the **Title** and **Parameters File** columns.
 
-Select the context menu to display the two options, **Open Test Case** and **Delete Test Case**, as shown in the following screenshot.
+    ![Ellipsis button in the Test Cases grid](media/test-case-details.PNG)
 
-![Test case details context](media/test-case-details-context.PNG)
+2. Select the ellipsis button. The menu that appears has two commands: **Open test case** and **Delete Test Case**.
 
-Select **Open Test Case** to open **Test Case information** form.
+    ![Commands on the ellipsis button menu](media/test-case-details-context.PNG)
 
-![Test Case Information](media/test-case-information.png)
+3. Select **Open test case** to open the **Test Case information** dialog box.
 
-The **Test Case information** form shows details the test case.
+    ![Test Case information dialog box](media/test-case-information.PNG)
 
-+ The name assigned in the test suite is shown at the top and can be changed within this form.
-+ The recording name is shown from the recording Xml that was used when the recording was made in the Task Recorder within the Finance and Operations app or by using the POS client.
-+ The list of the attachment files available with the test case is shown. You can also find this list by using the Directory action under the attachments subfolder.
+The **Test Case information** dialog box shows the following information about the test case:
 
-## Create test case with attachments
++ The name that is assigned to the test case in the test suite appears at the top of the dialog box and can be changed.
++ The recording name appears under the test case name. This name is taken from the recording XML file that was used when the recording was made in Task Recorder in the Finance and Operations app or by using the point of sale (POS) client.
++ The **Attachments** grid shows the list of attachment files that are available with the test case. You can also find this list by using the **Directory** action under the attachments subfolder.
 
-You add a new test case using RSAT by selecting **New Test Case**. It adds a new test case to the highlighted test case, as shown in the following screenshot for **Procure to Pay – v2**.
+## Create a test case that has attachments
 
-![Test case Add](media/test-case-add.PNG)
+Follow these steps to add a new test case by using RSAT.
 
-Select **New Test Case** to open the **Test Case information** form. On the form, you supply the test case name and add attachment files that include the recording Xml file with steps for the case. To add attachment files, select **Add** to open a file dialogue for picking the files to add. An example is shown in the following screenshot.
+1. Select the test suite that you want to add a new test case to (**Procure to Pay – v2** in this example). Then select **New Test Case** to open the **Test Case information** dialog box.
 
-![Add test case](media/add-test-case.PNG)
+    ![New Test Case button](media/test-case-add.PNG)
 
-When you are done, select **Save** to save the test case, or **Cancel** to discard the test case.
+2. Enter the name of the test case, and add attachment files. These files include the recording XML file that contains steps for the test case. To add attachment files, select **Add**, and then, in the dialog box that appears, select the files to add as attachments.
+3. When you've finished, select **Save** to save the new test case or **Cancel** to discard it.
 
-When you save a new test case, RSAT copies the attachment files you selected into your local RSAT working directory and maintains that copy to be used with the test case.
+    ![Add and Save buttons](media/add-test-case.PNG)
 
-There is no automatic feature to clone test cases from one suite to another, but you can do it manually, by following these steps:
+When you save a new test case, RSAT copies the attachment files that you selected into your local RSAT working directory. It maintains the copies there so that they can be used with the test case.
 
-1. Create a new case as explained including adding the recording xml.
-2. Then save the test case and note the assigned **caseID**.
-3. You can add a parameter Excel file to the case, but it must match the caseID. Copy the parameter Excel file from the case you are cloning, and change the file name of the copy to match the new caseID.
-4. Open the file and change all instances of the old caseID to the new caseID.
-5. After you update caseID, select **Add** to attach the prepared parameter file to the new case.
+There is no feature that automatically clones test cases from one test suite to another. However, but you can manually clone test cases by following these steps.
 
-An alternative approach is to generate a parameter file with the new case first, and manually edit this file to match the parameter file you are cloning.
+1. Create a test case as described in the previous procedure. As part of this step, add the recording XML file.
+2. Save the new test case, and make a note of the **CaseID** value that is assigned to it.
+3. You can add a parameter Excel file to the new test case. However, the file name must match the new **CaseID** value. Copy the parameter Excel file from the test case that you're cloning, and change the file name of the copy so that it matches the new **CaseID** value.
+4. Open the new parameter Excel file, and change all instances of the old **CaseID** value to the new **CaseID** value.
+5. After you've finished updating the new parameter Excel file, add it to the new test case as an attachment.
 
-## Remove attachment from a test case
+Alternatively, you can generate a parameter Excel file for the new test case first, and then manually edit it so that it matches the parameter Excel file of the test case that you're cloning.
 
-You can remove attachments from a test case when you don't need them anymore. Right-click on the line with the attachment file in the **Test Case information** form, and in the context menu that will open, select **Remove**.
+## Remove an attachment from a test case
 
-![Remove attachment](media/remove-attachment.png)
+You can remove attachments from a test case when you no longer require them.
 
-You might want to do this if you have edited the recording Xml and want to upload a new version to the case. In this case, remove the existing file first and then add the new file.
+- In the **Test Case information** dialog box, select and hold (or right-click) the row for the attachment file, and then select **Remove**.
 
-## Delete test case
+    ![Remove button](media/remove-attachment.PNG)
 
-To delete a test case, open the test cases grid. Locate the relevant test case and hover the mouse until the ellipsis appears between the **Title** and **Parameters File** columns.
+You can also use this procedure if you've edited the recording XML file and you want to upload the new version to the test case. In this case, you should first remove the existing file and then add the new file.
 
-Select **Delete Test Case**, as shown in the following screenshot.
+## Delete a test case
 
-![Delete Test Case](media/delete-test-case.PNG)
+Follow these steps to delete a test case.
 
-Confirm that you want to delete the test case, and optionally, include a reason.
+1. In the **Test Cases** grid, find the relevant test case, and hover over the row until an ellipsis button (**...**) appears between the **Title** and **Parameters File** columns.
+2. Select the ellipsis button, and then select **Delete Test Case** on the menu.
 
-Deleting a test case in RSAT removes the test case from the current test suite both locally and in DevOps.
+    ![Delete Test Case command](media/delete-test-case.PNG)
 
-In DevOps, work items represent test cases, and test suites contain links to the test case work items. A test case is reused by linking to it from more than one test suite. When a test case is deleted within RSAT, RSAT determines if the test case is linked with one or more test suites. If the test case is used only by the current test suite, then RSAT deletes the DevOps work item representing the test case. If the test case is used in other test suites, then RSAT deletes the only link to the work item. It does not delete the work item, because it is still used in the other test suites.
+3. Confirm that you want to delete the test case, and optionally specify a reason for the deletion.
+
+A test case that you delete in RSAT is removed from the current test suite, both locally and in Azure DevOps.
+
+In Azure DevOps, work items represent test cases, and test suites contain links to the test case work items. A test case is reused by linking to it from more than one test suite. When a test case is deleted in RSAT, RSAT determines whether the test case is linked to one test suite or more than one test suite. If the test case is used only by the current test suite, RSAT deletes the Azure DevOps work item that represents the test case. If the test case is used by other test suites, RSAT doesn't delete the work item itself. Instead, it deletes only the link to the work item.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
