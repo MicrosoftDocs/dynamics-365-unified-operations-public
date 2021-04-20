@@ -1,0 +1,1 @@
+[Missing field settings on copying item model groups to another legal entity](troubleshooting/costing/copying-item-model-groups.md)
