@@ -1,0 +1,105 @@
+---
+# required metadata
+
+title: What's new or changed in Dynamics 365 Human Resources April 19, 2021
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for April 5, 2021.
+author: marcelbf
+ms.date: 04/19/2021
+ms.topic: article
+ms.prod:
+ms.service: dynamics-human-resources
+ms.technology:
+
+# optional metadata
+
+ms.search.form:
+# ROBOTS:
+audience: Application User
+# ms.devlang:
+ms.reviewer: anbichse
+ms.search.scope: Human Resources
+# ms.tgt_pltfrm:
+ms.custom:
+ms.assetid:
+ms.search.region: Global
+# ms.search.industry:
+ms.author: marcelbf
+ms.search.validFrom: 2021-04-19
+ms.dyn365.ops.version: Human Resources
+
+---
+
+# What's new or changed in Dynamics 365 Human Resources April 19, 2021
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources.
+
+For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
+
+For more information about new features and their expected general availability dates, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
+
+## In this release
+
+This release includes the following new features and bug fixes. Changes apply to build number 8.1.4113.
+
+### New features
+
+The following features are generally available with this release.
+
+| Feature | Release plan | Documentation |
+| --- | --- | --- |
+| Show a notification to the user upon login if reason codes need to be migrated. - (574101) | | |
+| Privilege for viewing 'Workers without employment' when XDS is on. - (565054) | | |
+| Integrate missing code from Elevate into Life Events  - (526420) | | |
+| [GA] Cross company clean up preview switch and flight - (556591) | | |
+| [EHR] Custom field support in Plan Coverage Options - (543139) | | |
+| ## PU 41 Uptake - (570278) | | |
+
+### Bug fixes
+
+The following bug fixes are included in this release.
+
+> [!NOTE]
+> Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
+
+| Issue number | Issue |  Description |
+| --- | --- | --- |
+| ## Affordable Care coverage option is taking to the main Affordable Care coverage group form instead of Affordable Care coverage form for the particular Employee - (565963) | | |
+| ## Cannot add Period to BenefitPlan - (573676) On the BenefitPlan form (Benefits Management > Links > Benefit plans) | | |
+| ## Benefits Workspace V2 feature does not handle GA feature stage dynamically based on feature management - (573617) | | |
+| ## “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda - (552164) | | |
+| ## “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda - (574502) | | |
+| ## Address secret retrieval failures during boxsetup in environments with newer powershell version(s). - (574016) | | |
+| ## HcmCompensationCrossCompanyFeature uses the same "Learn More" FwLink URL as HcmPerformanceReviewReportFeature.xml - (445141) | | |
+| ## Leave request validation fails when employment is terminated before the latest transaction for that worker across all leave plans - (570586) | | |
+| ## Required reason code not displaying when Cross Company Leave view feature enabled - (572343) If you have the Cross Company Leave view feature enabled, and have security set up for users that are LE specific....the required reason code does not show up for users in the time off form    | | |
+| ## Benefits - Life event Options: discrepancies in the tooltip documentation and code behavior. - (560614) | | |
+| ## Benefits - Life event Options : Life event options are editable in Worker Benefit plan but changes are not affected - (560616) | | |
+| ##  Cross company leave view, enabling/ disabling it from HRShareParameters influences the process of Request time off from ESS for user with Employee role - (570783) | | |
+
+## In preview
+
+The following new features are in preview. For more information about turning features on or off, see [Manage features](hr-admin-manage-features.md).
+
+| Feature | Release plan | Documentation |
+| --- | --- | --- |
+| Benefits management workspace | [Benefits management workspace (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
+
+## Coming soon
+
+| Feature | Details |
+| --- | --- |
+| Skills entered by a manager for their employees can be auto-approved by a workflow | Coming soon. |
+| Platform update 10.0.17 (41) | Platform update 10.0.17 is scheduled to begin rolling out with the next release on April 19, 2021. For more information, see [Platform updates for version 10.0.17 of Finance and Operations apps (April 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md). |
+
+For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
+
+## See also
+
+[What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
+[Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
+[Update process](hr-admin-setup-update-process.md)</br>
+[Manage features](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
