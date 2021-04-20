@@ -63,7 +63,7 @@ The JSON file is configured similarly to a [module mock file](module-mock-file.m
 ```
 ### Preset JSON field definitions
 
-- **id** - Maps to the module ID.
+- **ID** - Maps to the module ID.
 - **config** - Contains a list of configuration values that are based on the name of the configuration that is stored in the module's definition file.
 
 > [!NOTE]
