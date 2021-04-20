@@ -17,23 +17,23 @@ ms.dyn365.ops.version: 10.0.18
 
 Error code: WAX1285
 
-The system displays the following error message:
+The system shows the following error message:
 
 > The last closed work line must be a put.
 
 ## Issue description
 
-The work can't be canceled in current state.
+The work can't be canceled in its current state.
 
-The last work line that has **Work status** set to *Closed* and doesn't have **Work type** set to *Put*.
+On the last work line, the **Work status** field is set to *Closed*, but the **Work type** field isn't set to *Put*.
 
 ## Resolution
 
-To cancel the work, do the following steps:
+To cancel the work, follow these steps.
 
 1. Go to **Warehouse management \> Periodic tasks \> Clean up \> Cancel work**.
-1. In the **Work ID** field, specify the work ID that you want to cancel.
+1. In the **Work ID** field, specify the ID of the work that you want to cancel.
 1. Select **OK**.
 1. Select **Yes** to confirm that you want to cancel the work.
 
-For more information, see [Cancel warehouse work for exception handling](../../warehousing/cancel-warehouse-work.md)
+For more information, see [Cancel warehouse work for exception handling](../../warehousing/cancel-warehouse-work.md).
