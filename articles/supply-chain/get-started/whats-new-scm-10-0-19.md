@@ -35,21 +35,21 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 - Allow vendors to apply for procurement categories through vendor collaboration<br> - For more information, see [Category requests from vendors](../procurement/category-requests-from-vendors.md)
 - [Approve and save vendor-submitted bank details](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details)
 - [Contact person data entity export optimization](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)
-- [Incremental enhancements for warehouse execution capabilities with scale units](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) <br> - For more information, see [Message processor messages](../cloud-edge/cloud-edge-message-processor-messages.md), [Warehouse inventory adjustment](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md), and [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md)
+- [Incremental enhancements for warehouse execution capabilities with scale units](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) <br> - For more information, see [Message processor messages](../cloud-edge/cloud-edge-message-processor-messages.md), [Warehouse inventory adjustment](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md), and [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md).
 - [Lookup functionality for Document introduction and Document conclusion fields on Sales quotation page](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page)
-- [Warehouse execution with edge scale units on your custom hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware)<br> - For more information, see [Deploy edge scale units on custom hardware using LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md)
+- [Warehouse execution with edge scale units on your custom hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware)<br> - For more information, see [Deploy edge scale units on custom hardware using LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md).
 
 ### Manufacturing
 
-- [Manufacturing execution with edge scale units on your custom hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware)<br> - For more information, see [Deploy edge scale units on custom hardware using LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md)
+- [Manufacturing execution with edge scale units on your custom hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware)<br> - For more information, see [Deploy edge scale units on custom hardware using LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md).
 
 ### Planning
 
-- Query-based planned order firming<br> - For more information, see [Firm planned orders](../master-planning/planning-optimization/planned-order-firming.md)
+- Query-based planned order firming<br> - For more information, see [Firm planned orders](../master-planning/planning-optimization/planned-order-firming.md).
 
 ### Product information management
 
-- [Variant suggestions page improvements](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements)<br> - For more information, see [Create predefined product variants](../pim/tasks/create-predefined-product-variants.md)
+- [Variant suggestions page improvements](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements)<br> - For more information, see [Create predefined product variants](../pim/tasks/create-predefined-product-variants.md).
 
 
 ## New and updated documentation resources
