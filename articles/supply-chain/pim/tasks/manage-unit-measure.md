@@ -53,9 +53,8 @@ To create or edit a unit of measure, follow these steps.
     - **Unit** – Enter the ID or symbol to use to refer to the unit in the system language. This ID or symbol is usually a common abbreviation for the unit, such as *ea* for each or *cm* for centimeter.
     - **Description** – Enter a descriptive name for the unit in the system language. This name is usually the full name of the unit, such as *Each* or *Centimeter*.
 
-1. On the **General** FastTab, set the following fields:
+1. On the **General** FastTab, set the following fields:<!-- KFM: confirm this:    - **Fixed unit assignment** and **Fixed unit** – These fields have an effect only if you're using the Microsoft Retail Essentials product. If the current unit can be mapped to one of the fixed units that are used by Retail Essentials, set the **Fixed unit assignment** option to *Yes*. Then select the fixed unit in the **Fixed unit** field. -->
 
-<!-- KFM: confirm this:    - **Fixed unit assignment** and **Fixed unit** – These fields have an effect only if you're using the Microsoft Retail Essentials product. If the current unit can be mapped to one of the fixed units that are used by Retail Essentials, set the **Fixed unit assignment** option to *Yes*. Then select the fixed unit in the **Fixed unit** field. -->
     - **Unit class** – Select the property that the unit measures (such as length, area, mass, or quantity).
     - **System of units** – Select the measurement system that the unit belongs to (*Metric units* or *United States customary units*).
     - **Base unit** – Set this option to *Yes* to use the current unit as the base unit for its unit class. In this case, you only have to specify the conversion factor between the base unit and each additional unit in the unit class. The system can then convert between all units in that unit class. Therefore, it's easier to set up conversions.
