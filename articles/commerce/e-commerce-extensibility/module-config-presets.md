@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.18
 
 This topic covers module configuration presets and how to configure them in Microsoft Dynamics 365 Commerce.
 
-Module configuration presets are default configuration values used in Dynamics 365 Commerce site builder when no configuration values have been set at the template or layout level.
+Module configuration presets are default values that are used in Dynamics 365 Commerce site builder when no configuration values have been set at the template or layout level.
 
 Module configuration presets can be created at the module level or within a theme, allowing different sets of data to be used based on the theme selected. If no theme module preset exists for a given theme, Commerce site builder will default to the module-level presets if they exist. If both a module level preset and a theme preset exist, the theme-level presets will override the module-level presets.
 
@@ -43,7 +43,7 @@ The module configuration preset data is stored in a JSON preview file with the n
 
 ## Theme configuration presets
 
-Themes can also contain module configuration preset files which are used when a theme is selected. The module configuration preset file must be created under the theme directory using a pattern **\src\themes\THEME_NAME\previews\modules\\<MODULE_NAME\>\\<MODULE_NAME\>.preview.json"**. For example, for a theme called "spring" the "product-feature" module theme configuration preset file would be **\src\themes\spring\previews\modules\product-feature\product-feature.preview.json**. 
+Themes can also contain module configuration preset files that are used when a theme is selected. The module configuration preset file must be created under the theme directory using a pattern **\src\themes\THEME_NAME\previews\modules\\<MODULE_NAME\>\\<MODULE_NAME\>.preview.json**. For example, for a theme called "spring," the "product-feature" module theme configuration preset file would be **\src\themes\spring\previews\modules\product-feature\product-feature.preview.json**. 
 
 ## Preset file structure
 
@@ -64,7 +64,7 @@ The JSON file is configured similarly to a [module mock file](module-mock-file.m
 ### Preset JSON field definitions
 
 - **id** - Maps to the module ID.
-- **config** - The config section contains a list of configuration values based on the name of the configuration stored in the module's definition file.
+- **config** - Contains a list of configuration values that are based on the name of the configuration that is stored in the module's definition file.
 
 > [!NOTE]
 > Configuration fields of type **image** are not currently supported.
