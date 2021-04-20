@@ -42,13 +42,13 @@ Check out the latest information about dual-write features and changes in the [r
 
 ## April 2021 release
 
-The April 2021 release of the [Dual-write application orchestration solution version  2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The April 2021 hotfix release of the [Dual-write application orchestration solution version  2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
 | Feature | Description |Status |
 |------|---------|-------|
-| Bug fix| Bug fix on Notes entity to understand Null value | General availability |
+| Bug fix| Bug fix on Notes entity to understand Null value. | General availability |
 | Bug fix| Dual write orchestration package 2.2.2.50 does not replace the existing key (**msdyn_locationid** field) on the Address table with the new key (combination of **msdyn_locationid** and **parentid** fields). Instead it shows both keys. This has been addressed with the new version 2.2.2.60. This new version is applicable only when you are using the [party and global address book](party-gab.md) solution.| General availability|
 
 
