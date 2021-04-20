@@ -256,7 +256,7 @@ The controller can make DSR requests regarding telemetry data by using the [Micr
 
 ## Representation of a person in Finance and Operations
 
-Finance and Operations has a common [Global address book](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book). Typically, every time that you add a contact, customer, user, worker, or other person in your system, you first create an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as Customer, User, or Worker, and has a role ID: CustID, UserID, WorkerID, and so on.
+Finance and Operations has a common [Global address book](../../fin-ops/organization-administration/overview-global-address-book.md). Typically, every time that you add a contact, customer, user, worker, or other person in your system, you first create an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as Customer, User, or Worker, and has a role ID: CustID, UserID, WorkerID, and so on.
 
 ![Data model for the Global address book](../media/gdpr-address-data-model.jpg)
 
