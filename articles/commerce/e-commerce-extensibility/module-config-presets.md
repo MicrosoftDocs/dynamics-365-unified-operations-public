@@ -37,7 +37,7 @@ Module configuration presets are default values that are used in Dynamics 365 Co
 
 Module configuration presets can be created at the module level or within a theme, allowing different sets of data to be used based on the theme selected. If no theme module preset exists for a given theme, Commerce site builder will default to the module-level presets if they exist. If both a module-level preset and a theme preset exist, the theme-level presets will override the module-level presets.
 
-## Module configuration presets
+## Module-level configuration presets
 
 The module configuration preset data is stored in a JSON preview file with the name **\<MODULE_NAME\>.preview.json** in a **previews** directory under the module's directory. For example, a custom module named "product-feature" would have its preview file stored at **\src\modules\product-feature\previews\product-feature.preview.json**.
 
