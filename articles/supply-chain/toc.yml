@@ -3264,7 +3264,7 @@
         - name: The "Last tested date" field isn't updated when creating multiple quality orders
           href: troubleshooting/inventory/the-field-last-test.md
         - name: While splitting the CW quantity into batches, the system automatically changes the pick quantity based on the item's minimum quantity setup
-          href: troubleshooting/inventory/while-splitting-the.md)
+          href: troubleshooting/inventory/while-splitting-the.md
       - name: Master planning
         items:
         - name: Directly derived firmed orders are processed by an in-review workflow
@@ -3282,13 +3282,13 @@
         - name: Master planning batch job filter is not working as expected
           href: troubleshooting/planning/master-planning-batc.md
         - name: Unable to upload the cost price in demand forecast entries
-          href: troubleshooting/planning/unable-to-upload-the.md)
+          href: troubleshooting/planning/unable-to-upload-the.md
       - name: Procurement
         items:
         - name: Can't invoice a customer-facing sales order in the VEL company
           href: troubleshooting/procurement/not-able-to-invoice-.md
         - name: Purchase Requisition - after the request change, it is not possible to add line
-          href: troubleshooting/procurement/purchase-requisition.md)
+          href: troubleshooting/procurement/purchase-requisition.md
       - name: Product information management
         items:
         - name: Can't apply a template to create a released product
@@ -3296,7 +3296,7 @@
         - name: Can't import an item using the Released products V2 entity
           href: troubleshooting/products/cannot-import-with-r.md
         - name: Purchase orders don't show translated product text
-          href: troubleshooting/products/when-the-customer-ad.md)
+          href: troubleshooting/products/when-the-customer-ad.md
       - name: Production control
         items:
         - name: Flushing principle settings on BOM lines aren't respected
@@ -3312,11 +3312,11 @@
         - name: Error on posting report as finished journal
           href: troubleshooting/production/posting-report-as-.md
         - name: The warehouse in the picking list journal is not updated on a BOM line
-          href: troubleshooting/production/the-warehouse-in-pic.md)
+          href: troubleshooting/production/the-warehouse-in-pic.md
       - name: Rebate management
         items:
         - name: Cumulating customer rebates using item rebate groups fails
-          href: troubleshooting/rebates/cumulating-customer-.md)
+          href: troubleshooting/rebates/cumulating-customer-.md
       - name: Sales and marketing
         items:
         - name: Default sales tax group to sales order either from delivery address or customer account
@@ -3330,11 +3330,11 @@
         - name: Service charges aren't included in exported sales orders that have been invoiced
           href: troubleshooting/sales/service-charges-expo.md
         - name: Can't create contacts for a customer account while dual-write is active
-          href: troubleshooting/sales/trying-to-to-create-.md)
+          href: troubleshooting/sales/trying-to-to-create-.md
       - name: Transportation management
         items:
         - name: When you setup a Reconciliation reason in Transportation managementit is not supported to add Cost center or any other dimension in credit account except main account
-          href: troubleshooting/transportation/reconciliation-reaso.md)
+          href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:
         - name: An error occurs when choosing the location during picking list registration
@@ -3344,7 +3344,7 @@
         - name: Location profile disallows negative inventory, but negative on-hand is permitted
           href: troubleshooting/warehousing/location-profile-set.md
         - name: Only one label prints for multiple work headers on a single receipt
-          href: troubleshooting/warehousing/when-receipting-prod.md)
+          href: troubleshooting/warehousing/when-receipting-prod.md
   - name: Finance and Operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 
