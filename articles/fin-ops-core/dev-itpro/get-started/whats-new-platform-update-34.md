@@ -40,7 +40,7 @@ This topic lists the platform updates for version 10.0.10 of Finance and Operati
 
 - [Embed actions in the message bar](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/embed-actions-message-bar) - For more information, see [Messaging APIs - Action center, message bar, and message details](../user-interface/messaging-api-center-bar-details.md).
 - [Updates to Saved views](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--saved-views--phase-2) - For more information, see [Saved views](../../fin-ops/get-started/saved-views.md) and [Task recorder resources](../user-interface/task-recorder.md).
-- [Continued stabilization of the new grid control](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--new-grid-control--phase-2) - For more information, see [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md?toc=%2fdynamics365%2ffinance%2ftoc.json). 
+- [Continued stabilization of the new grid control](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--new-grid-control--phase-2) - For more information, see [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md). 
 
 
 ## Additional resources
