@@ -61,12 +61,13 @@ The following procedure shows how to embed a website into an existing page.
 4. Configure the embedded app.
     - The **Name** field indicates the text shown for the tab that will contain the embedded app. Oftentimes, you may want to repeat the name of the app for this field.
     - The **URL** field specifies the location of the application.
-        -  https
-        -  webiste must allow itself to be embedded (xframe options) 
-        -  
-4. After confirming that the configuration is correct, click **Save** to embed the app on the page. 
-5. The app will be added as the last tab or section in the group. Confirm that the app is displaying as expected.  If the app is not shown, see the Troubleshooting section below.  
-6. Open the view selector and select **Save** or **Save as...** depending on whether this app should be associated with the current view or if you want to save this app to a different view.  
+        -  For security reasons, the URL must use Hypertext Transfer Protocol Secure (HTTPS)
+        -  The app or website must be configured to allow itself to be embedded. 
+
+5. After confirming that the configuration is correct, click **Save** to embed the app on the page. 
+6. The app will be added as the last tab or section in the group. Confirm that the app is displaying as expected. If the app is not shown, see the [Troubleshooting][#troubleshooting] section below. 
+    
+7. Open the view selector and select **Save** or **Save as...** depending on whether this app should be associated with the current view or if you want to save this app to a different view.  
     -  If the page doesn't have a view selector (e.g. a dialog page or a workspace), then you can skip this step. 
 
 ## Sharing an embedded app
@@ -93,6 +94,17 @@ After an app has been embedded onto a page, you may need to make some changes to
 5. If deleting the app, select **Delete**.
 6. Re-save or re-publish the view. Note if you leave the page without explicitly saving the view, the actions taken in the **Edit website** pane will not be maintained.  
 
-## Appendix
+## Troubleshooting
+
+If the website isn't rendering correctly after being embedded in a Finance and Operation app, this usually indicates that the website is configured to restrict itself from being embedded in an iframe. To confirm this, do the following: 
+
+1. Open the developer tools for the browser you are using. 
+2. Switch to the **Network** tab
+3. Look for the response from the embedded site. 
+4. With that response highlighted, look in **Headers > Response headers** for x-frame-options. 
+
+If x-frame-options exists in the response headers with a value of DENY or SAMEORIGIN, then the website cannot currently be embedded.  
+
+x-frame-options that restrict it from being embedded in an iframe. You can confirm this by 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
