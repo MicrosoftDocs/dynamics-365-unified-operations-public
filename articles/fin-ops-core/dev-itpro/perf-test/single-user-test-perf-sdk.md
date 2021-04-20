@@ -114,7 +114,7 @@ When you've finished recording the end-to-end scenario, you must generate a C\# 
 
 Use the following tips and tricks for single-user testing that uses Task recorder and the Performance SDK:
 
-- Run your business end-to-end scenario first, before you capture it by using Task recorder.
+- Run your business end-to-end scenario first before you capture it by using Task recorder.
 - When you record your scenario by using Task recorder, enter values manually instead of selecting them in drop-down lists.
 - Replay your task recording to make sure that everything works as you expect.
 - Restart Visual Studio if you don't see your test case after the solution is built.
