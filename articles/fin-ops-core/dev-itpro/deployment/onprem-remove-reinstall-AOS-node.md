@@ -158,7 +158,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
 
     During upgrade of the cluster configuration, if you receive an error message that states that you previously added a node through the **Add-ServiceFabricNode** command, you will need to run a configuration upgrade without making any changes to the configuration file except for the version number. You can use the **Get-ServiceFabricClusterConfiguration** and **Start-ServiceFabricClusterConfigurationUpgrade** commands for this purpose.
 
-    ![Get command and result](media/329b9c2bd807d7bca96e106037504e0e.png)
+    ![Run a configuration upgrade without making any changes to the configuration file except for the version number.](media/329b9c2bd807d7bca96e106037504e0e.png)
 
     You can also view the progress in Service Fabric Explorer.
 
