@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce online SDK FAQ
 description: This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 03/05/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -187,8 +187,9 @@ The following table lists common equivalents in TSLint and ESLint.
 | // tslint:disable-next-line:cyclomatic-complexity | // eslint-disable-next-line complexity |
 | // tslint:disable-next-line:no-empty | // eslint-disable-next-line no-empty |
 
-#### Continuing to lint with TSLint
-If you wish to continue to lint using TSLint, you can use the –use-tslint argument in the package.json **build** and **start** commands as shown here
+#### Continue to lint with TSLint
+
+If you want to continue to lint using TSLint, you can use the **–use-tslint** argument in the package.json **build** and **start** commands, as shown here.
 
 ```json
 "start": "yarn msdyn365b start local --use-tslint",
