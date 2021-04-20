@@ -1,6 +1,6 @@
 ---
-title: Multi-user Performance SDK testing
-description: This topic explains how to do multi-user testing by using Microsoft Visual Studio, the Performance SDK, and the Task Recorder test scripts.
+title: Multi-user testing using Performance SDK
+description: This topic explains how to do multi-user testing by using Microsoft Visual Studio, the Performance SDK, and the Task recorder test scripts.
 author: kesaelen
 ms.date: 04/13/2020
 ms.topic: article
@@ -23,7 +23,7 @@ ms.dyn365.ops.version: AX 10.0.0
 
 ---
 
-# Multi-user testing using the Performance SDK
+# Multi-user testing using Performance SDK
 
 [!include [banner](../includes/banner.md)]
 
@@ -75,13 +75,13 @@ The following configurations need to be done on the development machine we are u
 
 6. Double-click the certificate to open it, and then select **Install**. Install this certificate to your local machine, and then browse to the **Personal** store. Repeat this process for the local machine, and browse specifically to the **Trusted Root Certification Authorities** store.
 
-5. Double-click the personal information exchange (.pfx) file to open it, and select **Install**. Install this certificate to your local machine, enter the password saved in step 2, and browse to the **Personal** store. Repeat this process for the local machine location, enter the password saved in step 2, and browse specifically to the **Trusted Root Certification Authorities** store.
+5. Double-click the personal information exchange (.pfx) file to open it and select **Install**. Install this certificate to your local machine, enter the password saved in step 2, and browse to the **Personal** store. Repeat this process for the local machine location, enter the password saved in step 2 and browse specifically to the **Trusted Root Certification Authorities** store.
 
-6. Double-click the certificate file to open it. Browse to the **Details** tab, and scroll down until you see the **Thumbprint** section. Select **Thumbprint**, and copy the ID in the text box. Save this thumbprint to update the Performance SDK **CloudEnvironment.config** thumbprint.
+6. Double-click the certificate file to open it. Browse to the **Details** tab and scroll down until you see the **Thumbprint** section. Select **Thumbprint** and copy the ID in the text box. Save this thumbprint to update the Performance SDK **CloudEnvironment.config** thumbprint.
 
 
 > [NOTE]
-> The certificate will be auto-rotated by Microsoft before it expires, at which time you will need to download a new version of this certificate. For self-service environments this will be rotated every 90 days during a downtime window that is closest to the expiry. These downtime windows include customer initiated package deployment, and database movement operations that target the environment.
+> The certificate will be auto-rotated by Microsoft before it expires, at which time you will need to download a new version of this certificate. For self-service environments this will be rotated every 90 days during a downtime window that is closest to the expiry. These downtime windows include customer-initiated package deployment, and database movement operations that target the environment.
 
 ## Prepare the PerfSDKSample solution for multi-user testing
 
@@ -198,7 +198,7 @@ Perform the following steps to add a performance test to the test mix.
 
 Test users need to be added to the target environment with a matching naming pattern as the one specified in the **CloudEnvironment.config** configuration file. This can be done by either manually creating users in Microsoft Dynamics 365 environment of by using the **MS.Dynamics.Performance.CreateUsers.exe** console application which can be found in the Performnce SDK folder.
 
-If you choose to create the users manually please ensure the **System Administrator** security role is assigned to each user.
+If you choose to create the users manually, please ensure the **System Administrator** security role is assigned to each user.
 
 It is recommended to create the users through the console application as this already reads the configuration files and calls the appropriate service endpoints.  
 
