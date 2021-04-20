@@ -454,7 +454,7 @@ If you re-create a user in AD DS, remember that the SID will change. In this cas
 
 ### Issue
 
-When you performing the [Configure the databases](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configuredb) procedure, if the SQL Server instance is a named instance, use the **-DatabaseServer \[FQDN/Instancename\]** parameter.
+When you performing the [Configure the databases](setup-deploy-on-premises-pu12#configuredb) procedure, if the SQL Server instance is a named instance, use the **-DatabaseServer \[FQDN/Instancename\]** parameter.
 
 ### Issue
 
