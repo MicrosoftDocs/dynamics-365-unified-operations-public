@@ -8,11 +8,11 @@ ms.search.form: ProdTableListPage,ProdTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: aslynko
+ms.author: andrewsl
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-<!-- KFM: Request more info from  aslynko. -->
+<!-- KFM: Request more info from  andrewsl. -->
 # Formula line step conversion setup doesn't always work in a batch order
 
 KB Number: 4611503
