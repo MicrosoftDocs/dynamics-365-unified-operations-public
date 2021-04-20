@@ -234,8 +234,9 @@ To clean up an existing environment and redeploy, follow these steps.
 
     For information about how to correctly fill in the fields in the templates, see the appropriate setup and deployment topic for your environment:
 
+    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md)
     - [Platform update 12](setup-deploy-on-premises-pu12.md)
-    - [Platform update 8 and Platform update 11](./setup-deploy-on-premises-pu12.md)
+  
 
 5. In LCS, open the project, and update the LCS on-premises connector as required.
 
@@ -247,8 +248,8 @@ To clean up an existing environment and redeploy, follow these steps.
 
 6. Deploy again by following the instructions in the appropriate setup and deployment topic for the environment:
 
+    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md)
     - [Platform update 12](setup-deploy-on-premises-pu12.md)
-    - [Platform update 8 and Platform update 11](./setup-deploy-on-premises-pu12.md).
 
 ## Find the local agent values that are used
 
@@ -356,8 +357,8 @@ You can also manually add the following values in the **components** section of 
 
 3. Make sure that the same certificate that is specified in the local agent configuration in LCS was used to complete the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:
 
+    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configurelcs)
     - [Platform update 12](setup-deploy-on-premises-pu12.md#configurelcs)
-    - [Platform update 8 and Platform update 11](./setup-deploy-on-premises-pu12.md#configurelcs)
 
 4. Uninstall the local agent.
 5. Specify the correct certificate in the local agent configuration, and download the configuration file again.
@@ -396,8 +397,8 @@ To resolve the error, run the .\Set-CertificateAcls.ps1 script to reset the ACLs
 
 3. Make sure that the "Set up file storage" section of the appropriate setup and deployment topic for your environment is completed:
 
+    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupfile)
     - [Platform update 12](setup-deploy-on-premises-pu12.md#setupfile)
-    - [Platform update 8 and Platform update 11](./setup-deploy-on-premises-pu12.md#setupfile)
 
 4. Uninstall the local agent.
 5. Specify the correct file share in the local agent configuration, and download the configuration file again.
