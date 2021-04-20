@@ -130,7 +130,7 @@ Electronic addresses are available only on this grid. In future releases, all el
 
 ## Setup instructions
 
-1. Install the latest version (2.2.2.50 or later) of [Dual-write application orchestration solution](https://aka.ms/dual-write-app).
+1. Install the latest version (2.2.2.60 or later) of [Dual-write application orchestration solution](https://aka.ms/dual-write-app).
 
 2. Install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).
 
@@ -163,7 +163,7 @@ Electronic addresses are available only on this grid. In future releases, all el
     `Salutations (msdyn_salutations)` | 1.0.0.0 | This is a new map added as part of this release.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | This is a new map added as part of this release.
 
-5. Before running the above maps, make sure the integration keys are updated properly as follows:
+5. Before running the above maps, make sure to update the integration keys manually as shown below and click Save.
 
     | Map | Keys |
     |-----|------|
