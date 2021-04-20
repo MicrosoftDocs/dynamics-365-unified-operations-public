@@ -45,7 +45,7 @@ The USMF demo company has a Balance sheet report that not all Financial reportin
 7. In the report definition, add your new tree definition.
 8. In the tree definition, select **Setting**. Under **Reporting unit selection**, select **Include all units**.
 
-## How do I determine which accounts do not match my balances?
+## How do I identify which accounts do not match my balances?
 
 If you have a report that doesn't have matching balances, here are some steps you can take to identify each of the accounts and variances. 
 
