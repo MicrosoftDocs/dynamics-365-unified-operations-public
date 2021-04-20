@@ -2037,6 +2037,8 @@
           href: pim/tasks/create-product-master.md
         - name: Create predefined product variants
           href: pim/tasks/create-predefined-product-variants.md
+        - name: Manage units of measure
+          href: pim/tasks/manage-unit-measure.md
         - name: Unit of measure conversion per product variant
           href: pim/uom-conversion-per-product-variant.md
         - name: Create a released product for a single company
@@ -2199,6 +2201,8 @@
         href: engineering-change-management/product-readiness.md
       - name: Release product structure
         href: engineering-change-management/release-product-structure.md
+      - name: Engineering change management FAQs
+        href: engineering-change-management/change-management-faq.md
     - name: Production control
       items:
       - name: Production process overview
@@ -2225,8 +2229,6 @@
             href: production-control/phantom-items.md
           - name: BOM calculations
             href: cost-management/bom-calculations.md
-          - name: Manage unit of measure
-            href: pim/tasks/manage-unit-measure.md
           - name: Production parameters in Manufacturing execution
             href: production-control/production-parameters-manufacturing-execution.md
           - name: Operations resources
@@ -2907,6 +2909,8 @@
         href: transportation/tasks/load-template.md
       - name: Rating profiles
         href: transportation/tasks/setup-a-rating-profile.md
+      - name: LTL classes
+        href: transportation/ltl-class.md
       - name: Set up a carrier fuel index
         href: transportation/tasks/set-up-carrier-fuel-index.md
       - name: Set up a transportation tender

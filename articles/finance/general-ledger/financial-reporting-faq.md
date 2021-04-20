@@ -2,10 +2,10 @@
 # required metadata
 
 title: Financial reporting FAQ 
-description: This topic provides answers to frequently asked questions about financial reporting. 
+description: This topic lists questions related to financial reporting that other users have had. 
 author: jiwo
 ms.date: 01/13/2021
-ms.topic: article
+ms.topic: index-page
 ms.prod: 
 ms.technology: 
 

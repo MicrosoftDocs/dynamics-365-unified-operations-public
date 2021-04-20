@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce online SDK FAQ
 description: This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 03/05/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -187,6 +187,19 @@ The following table lists common equivalents in TSLint and ESLint.
 | // tslint:disable-next-line:cyclomatic-complexity | // eslint-disable-next-line complexity |
 | // tslint:disable-next-line:no-empty | // eslint-disable-next-line no-empty |
 
+#### Continue to lint with TSLint
+
+If you want to continue to lint using TSLint, you can use the **–use-tslint** argument in the package.json **build** and **start** commands, as shown here.
+
+```json
+"start": "yarn msdyn365b start local --use-tslint",
+"build": "yarn msdyn365b build --use-tslint",
+"build-prod": "yarn clean && yarn msdyn365b build --use-tslint",
+```
+
+> [NOTE] 
+> Support for TSLint is limited and it is encouraged to use ESLint whenever possible.
+
 #### Completely disable linting during build time
 
 If you want to completely disable linting during build time, you can use the **--disable-linter** argument in the **package.json** build command, as shown here.
@@ -198,7 +211,7 @@ If you want to completely disable linting during build time, you can use the **-
 
 ### After upgrading to module library version 9.27 (Commerce version 10.0.17 release), buy box module view extensions might generate a compilation error.
 
-The compilation error is caused by code sharing that is related to the product quick view module that was introduced in the Commerce version 10.0.17 release. Because the quick view module shares lots of functionality with the buy box module, some common components were moved to a common folder, so that the buy box and quick view modules can share the code.
+The compilation error is caused by code sharing that is related to the product quick view module that was introduced in the Commerce version 10.0.17 release. Because the quick view module shares many functionalities with the buy box module, some common components were moved to a common folder, so that the buy box and quick view modules can share the code.
 
 To fix the compilation error, update any import references in the buybox.tsx view file, as shown in the examples that follow.
 
@@ -229,7 +242,7 @@ import { IBuyboxFindInStoreViewProps } from './components/buybox-find-in-store';
 
 ### After upgrading to module library version 9.24 (10.0.14 release), cloned modules that use data actions may display the error, "UserAuthorizationException. Customer account number on the request was wrong".
 
-The following list of [core data actions](core-data-actions.md) have a signature change that moves the user account number parameter to the second parameter (instead of the first) and is now set as an optional parameter. In most scenarios where the user account number is no longer needed, the data action will execute in the context of the current signed-in user. In some custom scenarios where the user account number is different than the user account number of the signed-in user, you can fetch the user account number by using the **get-customer** data action and passing it to the data action.
+The [core data actions](core-data-actions.md) listed below have a signature change that moves the user account number parameter to the second parameter (instead of the first) and is now set as an optional parameter. In most scenarios where the user account number is no longer needed, the data action will execute in the context of the current signed-in user. In some custom scenarios where the user account number is different than the user account number of the signed-in user, you can fetch the user account number by using the **get-customer** data action and passing it to the data action.
 
 Core data actions with signature changes include:
  

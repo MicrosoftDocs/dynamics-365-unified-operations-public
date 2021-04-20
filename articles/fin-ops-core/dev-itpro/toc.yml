@@ -1580,6 +1580,8 @@
           href: migration-upgrade/prepare-data-upgrade.md
         - name: AX 2012 upgrade - Data upgrade in sandbox environments using dacpac process
           href: migration-upgrade/upgrade-data-sandbox-dacpac.md
+        - name: Upgrade from AX 2012 - SQL Transactional Replication
+          href: database/replication-setup.md
         - name: AX 2012 upgrade - Data upgrade in sandbox environments
           href: migration-upgrade/upgrade-data-sandbox.md
         - name: AX 2012 upgrade - On-premises environments
