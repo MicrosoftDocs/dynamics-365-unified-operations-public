@@ -5,7 +5,7 @@ title: Mass deployment of new, sealed Commerce self-service components
 description: This topic explains how you can use the new framework of self-service component installers to perform silent installation and servicing deployments. It also explains aspects of special deployments.
 author: jashanno
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
