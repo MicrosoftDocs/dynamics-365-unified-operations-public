@@ -17,17 +17,17 @@ ms.dyn365.ops.version: 10.0.18
 
 Error code: WeightMustBePositive
 
-The system displays the following error message:
+The system shows the following error message:
 
 > Weight must be positive.
 
 ## Issue description
 
-The **Gross Weight** is set to zero or a negative value.
+The **Gross Weight** field is set to *0* (zero) or a negative value.
 
 ## Resolution
 
-To specify a weight, do one of the following:
+To specify a weight, follow one of these steps.
 
-- In the **Gross weight** filed, set a value and then specify a unit in the drop-down list.
-- Select **Get system weight** to calculate the **Gross weight**.
+- In the **Gross weight** field, set a value. Then select a unit in the drop-down list.
+- Select **Get system weight** to calculate the **Gross weight** value.
