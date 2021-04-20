@@ -1,0 +1,101 @@
+---
+title: Preview of Dynamics 365 Supply Chain Management 10.0.19 (July 2021) 
+description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.19. 
+author: kamaybac
+ms.date: 04/23/2021
+ms.topic: article
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.author: kamaybac
+ms.search.validFrom: 2021-04-23
+ms.dyn365.ops.version: 10.0.19
+---
+
+# Preview of Dynamics 365 Supply Chain Management 10.0.19 (June 2021)
+
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.19. This version has a build number of 10.0.793 <!-- KFM: Update build number --> and is available as follows:
+
+- **Preview of release:** April 2021
+- **General availability of release (self-update):** May 2021
+- **General availability of release (auto-update):** June 2021
+
+## Features included in this release
+
+The following features are included in this release. Follow the links to the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
+
+Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them. Some of the listed features are still in preview, while others may already be generally available.
+
+### Inventory and logistics
+
+- Allow vendors to apply for procurement categories through vendor collaboration<br> - For more information, see [Category requests from vendors](../procurement/category-requests-from-vendors.md)
+- [Approve and save vendor-submitted bank details](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details)
+- [Contact person data entity export optimization](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)
+- [Incremental enhancements for warehouse execution capabilities with scale units](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) <br> - For more information, see [Message processor messages](../cloud-edge/cloud-edge-message-processor-messages.md), [Warehouse inventory adjustment](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md), and [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md)
+- [Lookup functionality for Document introduction and Document conclusion fields on Sales quotation page](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page)
+- [Warehouse execution with edge scale units on your custom hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware)<br> - For more information, see [Deploy edge scale units on custom hardware using LBD (Preview)](../cloud-edge/cloud-edge-edge-scale-units-lbd.md)
+
+### Manufacturing
+
+- [Manufacturing execution with edge scale units on your custom hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware)<br> - For more information, see [Deploy edge scale units on custom hardware using LBD (Preview)](../cloud-edge/cloud-edge-edge-scale-units-lbd.md)
+
+### Planning
+
+- Query-based planned order firming<br> - For more information, see [Firm planned orders](../master-planning/planning-optimization/planned-order-firming.md)
+
+### Product information management
+
+- [Variant suggestions page improvements](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements)<br> - For more information, see [Create predefined product variants](../pim/tasks/create-predefined-product-variants.md)
+
+
+## New and updated documentation resources
+
+We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
+
+- [Engineering change management FAQs](../engineering-change-management/change-management-faq.md)
+- [LTL classes](../transportation/ltl-class.md)
+- [Manage unit of measure](../pim/tasks/manage-unit-measure.md)
+- [Product configuration model calculations](../pim/config-model-calculations.md)
+- [Troubleshoot warehouse batch and serial reservation hierarchies](../warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md)
+- [Unified number sequence for job IDs](../production-control/unified-job-ids.md)
+- [Wave creation and processing](../warehousing/wave-processing.md)
+- [Warehouse parameters for wave processing](../warehousing/wave-warehouse-parameters.md)
+- [Wave templates](../warehousing/wave-templates.md)
+- [Wave allocation](../warehousing/wave-allocation-method.md)
+- [Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md)
+- [Containerization](../warehousing/wave-containerization.md)
+- [Wave execution notifications](../warehousing/wave-execution-notifications.md)
+
+## Additional resources
+
+### Platform updates for Finance and Operations apps
+
+Microsoft Dynamics 365 Supply Chain Management 10.0.19 includes platform updates. To learn more, see [Platform updates for version 10.0.19 of Finance and Operations apps (May 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md). <!-- KFM: Confirm link -->
+
+### Bug fixes
+
+For information about the bug fixes included in each of the updates that are part of 10.0.19, sign in to Lifecycle Services (LCS) and view the [KB article]().<!-- KFM: Get link -->
+
+### Dynamics 365: 2021 release wave 1 plan
+
+Wondering about upcoming and recently released capabilities in any of our business apps or platform?
+
+Check out the [Dynamics 365: 2021 release wave 1 plan](/dynamics365-release-plan/2021wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+
+### Removed and deprecated Supply Chain Management features
+
+The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
+
+- A *removed* feature is no longer available in the product.
+- A *deprecated* feature is not in active development and may be removed in a future update.
+
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic 12 months prior to the removal.
+
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
