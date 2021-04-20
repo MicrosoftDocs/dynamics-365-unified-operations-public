@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 37
 > The functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change. To test this capability, configure integration priorities on the **Throttling priority mapping** page.  
 
 [!Note]
-Priority-based throttling is enabled by default starting in 10.0.19 (PU43). Please refer to the [FAQ document](throttling-faq.md) to learn about how you can ready your environment prior to updating to PU43.
+Priority-based throttling is enabled by default starting in 10.0.19 (PU43). Please refer to the [FAQ document](throttling-faq.md) to learn about how you can ready your environment prior to updating to PU43. To test this capability, configure integration priorities on the **Throttling priority mapping** page.
 
 Priority-based throttling introduces service protection settings that prevents the over-utilization of resources to preserve the system's responsiveness and ensure consistent availability and performance for environments running Dynamics 365 Finance and Operations apps.
 
