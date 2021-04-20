@@ -38,8 +38,8 @@ You can access Service Fabric Explorer in a web browser by using the default add
 
 To verify the address, note the value that was used in the "Create DNS zones and add A records" section of the appropriate setup and deployment topic for your environment:
 
+- [Platform update 41 and later](setup-deploy-on-premises-pu41.md##createdns)
 - [Platform update 12](setup-deploy-on-premises-pu12.md#createdns)
-- [Platform update 8 and Platform update 11](./setup-deploy-on-premises-pu12.md#createdns)
 
 You can access the site only if the client certificate is in cert:\\CurrentUser\\My on the machine that you're accessing the site on. (In Certificate Manger, go to **Certificates - Current User** \> **Personal** \> **Certificates**.) When you access the site, select the client certificate when you're prompted.
 
