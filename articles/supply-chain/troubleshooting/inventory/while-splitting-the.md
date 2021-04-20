@@ -18,7 +18,7 @@ KB Number: 4612073
 
 ## Symptoms
 
-While splitting the catch-weight quantity into batches, the minimum quantity setup on the item is used for 'pick qty' field instead of the nominal quantity.
+While splitting the catch-weight quantity into batches, the minimum quantity setup on the item is used for 'pick qty' field instead of the nominal quantity set on the item.
 
 ## Resolution
 
