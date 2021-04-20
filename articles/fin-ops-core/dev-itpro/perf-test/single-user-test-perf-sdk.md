@@ -1,6 +1,6 @@
 ---
-title: Single-user testing with Task recorder and the Performance SDK
-description: This topic explains how to do single-user testing by using Microsoft Visual Studio, the Performance SDK, and a Task Recorder performance test script. 
+title: Single-user testing using Performance SDK and Task recorder
+description: This topic explains how to do single-user testing by using Microsoft Visual Studio, the Performance SDK, and a Task recorder performance test script. 
 author: hasaid
 ms.date: 05/28/2020
 ms.topic: article
@@ -23,7 +23,7 @@ ms.dyn365.ops.version: AX 10.0.0
 
 ---
 
-# Single-user testing using the Performance SDK and Task recorder
+# Single-user testing using Performance SDK and Task recorder
 
 [!include [banner](../includes/banner.md)]
 
