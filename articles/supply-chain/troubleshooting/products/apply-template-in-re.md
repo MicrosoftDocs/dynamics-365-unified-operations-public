@@ -25,7 +25,7 @@ When you are creating a new released product using the **New released product** 
 
 Many pages Supply Chain Management provide the ability to create a template to establish initial settings for the type of records shown by that page. You can create these templates by selecting **Record info** from the **Options** tab on the Action Pane. However, released products are much more complex than most other types of records, so you can't use these templates for products. Instead, you must create dedicated product templates.
 
-The system will allow you to create a record-info template for released products, and will also allow you to select those templates when creating a released product. However, record-info templates won't provided the field values you may be expecting for the new released product. Create and select product templates instead.
+The system will allow you to create record-info templates for the **Released products** page, and will also allow you to select those templates when creating a released product. However, record-info templates won't provided the field values you may be expecting for the new released product. Create and select product templates instead.
 
 ## Resolution
 
