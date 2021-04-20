@@ -59,7 +59,7 @@ The following procedure shows how to embed a canvas app from Power Apps into the
 
     - The **Name** field indicates the text shown for the button or tab that will contain the embedded app. Oftentimes, you may want to repeat the name of the app in this field.
     - The **App ID** field indicates the globally unique identifier (GUID) for the canvas app that you want to embed. To retrieve this value, find the app on [make.powerapps.com](https://make.powerapps.com), and then look in the **App ID** field under **Details**.
-    - For **Input context for the app**, you can optionally select the field that contains the data that you want to pass to the app as input. See the section later in this topic titled [Building an app that leverages data sent from Finance and Operations apps](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) for details on how the app can access the data sent from Finance and Operations apps. 
+    - For **Input context for the app**, you can optionally select the field that contains the data that you want to pass to the app as input. For details about how the app can access the data sent from Finance and Operations apps, see the section later in this topic titled [Building an app that leverages data sent from Finance and Operations apps](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps). 
         - Starting in version 10.0.17, the current legal entity will also be passed as context to the canvas app via the **cmp** URL parameter. This will have no impact on the target canvas app until that app makes use of this information. 
     - Choose the **Application size** that matches the type of app that you're embedding. Select **Thin** for apps built for mobile devices, and **Wide** for apps built for tablets. This ensures a sufficient amount of space is allotted for the embedded app.
     - The **Legal entities** FastTab provides the ability to choose which legal entities the app is available for. The default is to make the app accessible to all legal entities. This option is only available when the [Saved views](saved-views.md) feature is disabled. 
@@ -122,7 +122,7 @@ After an app has been embedded onto a page, there are two ways to remove it if n
 
 ### [Developer] Modeling a canvas app on a form
 
-While this article focuses on embedding canvas apps through personalization, developers also have the option of adding a canvas app to a form via the Visual Studio development experience. To do this, simply add a PowerAppsHostControl to the form. The metadata properties available on the control provide the same capabilities as the personalization experience.  
+While this topic focuses on embedding canvas apps through personalization, developers also have the option to add a canvas app to a form using the Visual Studio development experience. To do this, simply add a PowerAppsHostControl to the form. The metadata properties available on the control provide the same capabilities as the personalization experience.
 
 
 ### [Developer] Specifying where an app can be embedded
