@@ -4,7 +4,7 @@
 title: Set up an environment for master data lookup
 description: This topic explains how to set up your environment to use the Tax Calculation master data lookup functionality.
 author: kai-cloud
-ms.date: 03/31/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,8 +29,6 @@ ms.dyn365.ops.version: 10.0.18
 # Set up an environment for master data lookup
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to set up your environment to use the Tax Calculation master data lookup functionality.
 
