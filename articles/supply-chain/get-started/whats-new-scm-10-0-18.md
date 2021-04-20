@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview of Dynamics 365 Supply Chain Management 10.0.18 (May 2021) 
+title: What's new or changed in Dynamics 365 Supply Chain Management version 10.0.18 (May 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.18. 
 author: kamaybac
 ms.date: 03/01/2021
@@ -27,12 +27,11 @@ ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.18 (May 2021)
+# What's new or changed in Dynamics 365 Supply Chain Management version 10.0.18 (May 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.18. This version has a build number of 10.0.793 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.18. This version has a build number of 10.0.793 and is available as follows:
 
 - **Preview of release:** March 2021
 - **General availability of release (self-update):** April 2021
@@ -50,7 +49,7 @@ The following features are included in this release. Follow the links to the [re
 
 - Simplified interface for clock in and out only (enhancement for [Enhanced production floor execution interface for manufacturing](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - For more information, see [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
 
-Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them. Some of the listed features are still in preview, while others may already be generally available. 
+Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 ## New and updated documentation resources
 
