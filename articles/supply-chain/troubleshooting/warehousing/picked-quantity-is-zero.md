@@ -35,7 +35,7 @@ There are several forms where we have shipments and loads, so a couple are descr
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. Select the load that cannot be ship confirmed.
-1. Open the **Load lines** tab and select the load line for the item that exceeds the underdelivery.
+1. On the **Load lines** FastTab, select the load line for the item that exceeds the underdelivery.
 1. Adjust the **Underdelivery** field percentage or **Quantity** field value to fulfill the requirement to ship confirm.
 
     - Alternative pick more quantities from the related work.

@@ -42,8 +42,8 @@ To set the load line quantity:
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. Select the load that cannot be ship confirmed
-1. Open the **Load lines** tab and select the load line for the item that exceeds the overdelivery
-1. Open the **Line details** tab and, select **Order**
+1. On the **Load lines** FastTab, select the load line for the item that exceeds the overdelivery
+1. Expand the **Line details** FastTab and select **Order**
 1. In the **Quantity** field set the value to the picked quantity (**Work created quantity**), allowing shipment confirmation to proceed.
 
 ### Set the overdelivery percentage
@@ -52,6 +52,6 @@ To set the overdelivery percentage:
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. Select the load that cannot be ship confirmed
-1. Open the **Load lines** tab and select the load line for the item that exceeds the overdelivery
-1. Open the **Line details** tab and, select **General**
+1. On the **Load lines** FastTab, select the load line for the item that exceeds the overdelivery
+1. Expand the **Line details** FastTab and select **General**
 1. In the **Overdelivery** field set the percentage to a large value, accommodating the quantity picked against the load quantity, allowing shipment confirmation to proceed.

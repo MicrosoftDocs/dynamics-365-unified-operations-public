@@ -33,7 +33,7 @@ Load or shipment is currently in a state where shipment confirmation fails. Navi
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. Select the load that cannot be ship confirmed.
-1. Open the **Load lines** tab and select the load line.
+1. On the **Load lines** FastTab, select the load line.
 1. Note the **Work created quantity**.
 1. On the Action Pane, open the **Loads** tab and, from the **Related information** group, select **Work**.
 
