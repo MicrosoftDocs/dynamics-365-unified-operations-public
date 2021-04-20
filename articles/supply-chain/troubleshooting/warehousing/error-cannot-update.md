@@ -27,6 +27,6 @@ This can happen when you do not have enough on-hand inventory for a specified lo
 
 ## Resolution
 
-This is the expected behavior.
+The system is behaving as designed.
 
 In scenarios using the warehouse-level reservation process, where the inventory on-hand will not get reserved on all inventory-dimension levels, and you don't have enough inventory on-hand at a specified location, we recommend using the manual reservation process from the picking line. Then you can use the *Reserve lot* function to distribute the lower reservations, such as location, for all of the available on-hand quantities. 

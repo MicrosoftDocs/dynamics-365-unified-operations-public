@@ -25,7 +25,7 @@ When creating an item where the batch number group has **On Physical Update** se
 
 ## Resolution
 
-This is the expected behavior. The **On physical update** setting for batch number groups works as follows:
+The system is behaving as designed. The **On physical update** setting for batch number groups works as follows:
 
 1. When **On physical update** is set to *Yes*, new batch numbers are only created after a physical update. (For example, on shipment or receipt of items.)
 1. When **On physical update** is set to *No*, a new batch number is created on every update when applicable. (For example, when adding new quantity to a purchase order.)

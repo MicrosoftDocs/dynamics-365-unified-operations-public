@@ -24,7 +24,7 @@ Default sales tax group to sales order either from delivery address or customer 
 
 ## Resolution
 
-This is the expected behavior. The system applies sales tax as illustrated in the following example:
+The system is behaving as designed. The system applies sales tax as illustrated in the following example:
 
 1. Suppose a customer has two delivery addresses: <!-- KFM: The rest of the example doesn't mention these two addresses. Later, we talk about a "blank" address. -->
     - A primary address without a sales tax group

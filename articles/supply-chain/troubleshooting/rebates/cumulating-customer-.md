@@ -23,4 +23,4 @@ When using customer rebate agreements (of type *amount*) in combination with ite
 
 ## Resolution
 <!-- KFM: It isn't clear how this description relates to the issue, which doesn't mention "threshold condition". More information is needed. -->
-This is the expected behavior. Item groups only group items that have the same threshold condition.
+The system is behaving as designed. Item groups only group items that have the same threshold condition.

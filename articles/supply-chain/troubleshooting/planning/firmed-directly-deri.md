@@ -23,4 +23,4 @@ Directly derived firmed orders are processed by a workflow with a status of *In-
 
 ## Resolution
 <!-- KFM: This is not clear. Please revise. Is it the workflow or the order that has an in-review status? -->
-This is the expected behavior. Firmed derived orders (subcontract purchase orders) are assigned an *In-review* status when change tracking is enabled.
+The system is behaving as designed. Firmed derived orders (subcontract purchase orders) are assigned an *In-review* status when change tracking is enabled.

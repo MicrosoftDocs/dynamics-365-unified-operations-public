@@ -25,4 +25,4 @@ Customer is unable to run the master planning as per the provided filter. The fi
 
 ## Resolution
 
-This is the expected behavior. The batch job filter is only able to filter items to include in the planning. After that, the system runs planning for all the coverage groups those filtered items have. Any coverage groups that are included in the items filter won't affect the planning output after a given item is already included in the run.
+The system is behaving as designed. The batch job filter is only able to filter items to include in the planning. After that, the system runs planning for all the coverage groups those filtered items have. Any coverage groups that are included in the items filter won't affect the planning output after a given item is already included in the run.

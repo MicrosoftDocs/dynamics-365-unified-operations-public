@@ -23,4 +23,4 @@ You are able to define text translations for product names. However, the product
 
 ## Resolution
 
-This is the expected behavior. Product translations are only shown on external facing documents, not to internal users. For more information ,see [Product-related translations FAQ](../../pim/translations-product-related-information.md#where-can-i-view-the-translated-information)
+The system is behaving as designed. Product translations are only shown on external facing documents, not to internal users. For more information ,see [Product-related translations FAQ](../../pim/translations-product-related-information.md#where-can-i-view-the-translated-information)

@@ -23,6 +23,6 @@ When reviewing a picking list journal line, the specified **Batch number** is cl
 
 ## Resolution
 
-This is the expected behavior.  Changing the **Lot ID** changes the item context, and therefore the batch number is reset.
+The system is behaving as designed.  Changing the **Lot ID** changes the item context, and therefore the batch number is reset.
 
 If you want to associate the batch number with a lot ID, you must set the lot ID first.

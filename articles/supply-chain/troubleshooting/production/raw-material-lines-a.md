@@ -23,4 +23,4 @@ The system allows users to unpick raw material lines for products that have been
 
 ## Resolution
 
-This is the expected behavior. Adjustments to raw material consumption can be done up until the production order reaches a status of *Ended*.
+The system is behaving as designed. Adjustments to raw material consumption can be done up until the production order reaches a status of *Ended*.

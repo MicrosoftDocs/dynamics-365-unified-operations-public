@@ -23,7 +23,7 @@ If multiple work headers are created for the same target license plate as part o
 
 ## Resolution
 
-This is the expected behavior.
+The system is behaving as designed.
 
 In the current design, a single license plate label is generated, regardless of how many work header and work line combinations exist. The generated label will only include the information for one of these combinations.
 

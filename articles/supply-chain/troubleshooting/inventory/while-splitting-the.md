@@ -22,4 +22,4 @@ While splitting the catch-weight quantity into batches, the minimum quantity set
 
 ## Resolution
 
-This is the expected behavior. The system uses each item's minimum quantity setup for picking.
+The system is behaving as designed. The system uses each item's minimum quantity setup for picking.

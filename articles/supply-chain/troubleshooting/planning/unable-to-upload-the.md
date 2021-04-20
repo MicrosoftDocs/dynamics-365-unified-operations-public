@@ -23,4 +23,4 @@ You are unable to upload the cost price in demand forecast entries through data 
 
 ## Resolution
 
-This is the expected behavior. We do not currently support updating the forecasted unit cost on the demand forecast entity. The field is read-only on this entity.
+The system is behaving as designed. We do not currently support updating the forecasted unit cost on the demand forecast entity. The field is read-only on this entity.

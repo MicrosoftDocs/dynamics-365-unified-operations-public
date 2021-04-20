@@ -23,6 +23,6 @@ Packing notes aren't displayed on the packing form when the packing instructions
 
 ## Resolution
 
-This is the expected behavior.
+The system is behaving as designed.
 
 The current logic for displaying packing notes on the packing form requires the notes to be associated with the shipments.

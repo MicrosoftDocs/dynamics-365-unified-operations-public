@@ -23,4 +23,4 @@ The "Last tested date" field isn't updated when creating multiple quality orders
 
 ## Resolution
 
-This is the expected behavior. The last tested date isn't related to quality order. it stores the date when the finished goods are first purchased or manufactured. This date is be used to calculate the shelf life advice day. <!--KFM: What is a "shelf life advice day"? -->
+The system is behaving as designed. The last tested date isn't related to quality order. it stores the date when the finished goods are first purchased or manufactured. This date is be used to calculate the shelf life advice day. <!--KFM: What is a "shelf life advice day"? -->

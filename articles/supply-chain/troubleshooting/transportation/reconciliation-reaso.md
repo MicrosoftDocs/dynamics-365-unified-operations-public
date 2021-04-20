@@ -23,7 +23,7 @@ When you setup a Reconciliation reason in Transportation managementit is not sup
 
 ## Resolution
 
-This is the expected behavior. The system doesn't allows users to select a financial dimension for the credit account when the reconsolidation reason is not to pay the vendor but to credit a specific main account.
+The system is behaving as designed. The system doesn't allows users to select a financial dimension for the credit account when the reconsolidation reason is not to pay the vendor but to credit a specific main account.
 
 If the account structure dictates that a specific financial dimension value for the credit main account is required, then the resulting vendor journal can't be automatically posted as the financial dimension value is missing. You must therefore first specify the credit account manually using the **Invoice journal** page. <!-- KFM: Is this the correct page name? I couldn't find it : Henrikan: Updated-->
 

@@ -23,7 +23,7 @@ An open sales order is exported using the *Sales order line charges V2* entity. 
 
 ## Resolution
 
-This is the expected behavior.
+The system is behaving as designed.
 
 Service charges are classified as miscellaneous charges of category *fixed*. You are able to add this type of charge to sales order headers and lines, but once a sales order header or line has been fully invoiced, these charges are removed because now they have been invoiced.
 
