@@ -34,18 +34,19 @@ ms.dyn365.ops.version: Platform update 37
 > [!NOTE]
 > The functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change. To test this capability, configure integration priorities on the **Throttling priority mapping** page.  
 
+[!Note]
+Priority-based throttling is enabled by default starting in 10.0.19 (PU43). Please refer to the [FAQ document](throttling-faq.md) to learn about how you can ready your environment prior to updating to PU43.
 
-Priority-based throttling prevents the over-utilization of resources to preserve the system's responsiveness and ensure consistent availability and performance for environments running Dynamics 365 Finance and Operations apps.
+Priority-based throttling introduces service protection settings that prevents the over-utilization of resources to preserve the system's responsiveness and ensure consistent availability and performance for environments running Dynamics 365 Finance and Operations apps.
 
-- Integrations can be prioritized based on business-critical needs. Throttling honors these priorities. 
-- For OData and custom service requests, a 429 error "Too many requests", will occur. 
+You have the ability to set relative priority for the each OData and custom service-based integrations, depending on your business-critical need for these integrations. The throttling manager will then honor these priorities set for these requests.
+
+- For OData and custom service requests, a 429 error "Too many requests", will be send when system health and performance is affected. 
 - You can query throttling events on the **Lifecycle Services Monitoring** page.  
 
-Priority-based throttling provides the ability to set priorities for OData and custom service-based integrations, depending on the business-critical need of integrations.
+The **Throttling Priority Mapping** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. 
 
-The **Integration priority** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. 
-
-Setting appropriate priorities ensures that low-priority integrations will be throttled before high-priority integrations, based on the integration. For more information about how to set up integration, see [Enable connectivity with external services](https://docs.microsoft.com/learn/modules/integrate-azure-finance-operations/7-connect-external). 
+Setting appropriate priorities ensures that low-priority integrations will be throttled before high-priority integrations. For more information about how to set up integration, see [Enable connectivity with external services](https://docs.microsoft.com/learn/modules/integrate-azure-finance-operations/7-connect-external). 
 
 There are two kinds of applications are supported in Microsoft Azure Active Directory (Azure AD):
 
