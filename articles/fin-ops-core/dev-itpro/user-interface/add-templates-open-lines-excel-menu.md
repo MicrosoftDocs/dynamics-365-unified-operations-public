@@ -35,7 +35,7 @@ This topic describes how you can promote a template to the Open lines in the Exc
 
 Some of the most frequently used templates are the journal templates. Some of these journal templates have been promoted so that they appear on the **Open lines in Excel** menu by default. However, when you add a new template to the system, it must be promoted so that it's available on both the **Open in Office** and the **Open lines in Excel** menu.  To accomplish this, complete the following steps.
 
-1.  Create a Microsoft Excel template, and save it locally. For more information, see the "Create Open in Excel experiences" article.
+1.  Create a Microsoft Excel template, and save it locally. For more information, see [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md).
 
 2.  In Microsoft Visual Studio, create a new project for a model that has a reference to the ApplicationSuite model. 
 
