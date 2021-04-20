@@ -20,7 +20,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: 
 # ms.search.industry: 
-ms.author: leguo
+ms.author: anasyash
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
 
@@ -140,6 +140,3 @@ To generate GB/T 24589-2010 parameters, complete the following steps.
 
 5. Go to **Organization administration &gt; Electronic reporting &gt; Electronic reporting jobs**
 6. Select the line and when the job status is marked as **Finished**, select **Show files** to review the generated files.
-
-
-
