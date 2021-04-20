@@ -49,7 +49,7 @@ This release contains the features and bug fixes listed in the following table.
 | Feature | Description |Status |
 |------|---------|-------|
 | Bug fix| Bug fix on Notes entity to understand Null value | General availability |
-| Bug fix| Dual write orchestration package has gone through a change that requires Dynamics365FinanceExtended solution to be an upgrade rather than an update. With this change the key field on the Address table would correctly reflect as **msdyn_locationid, parentid**. This new version is applicable only when you are using the [party and global address book](party-gab.md) solution.| General availability|
+| Bug fix| Dual write orchestration package 2.2.2.50 does not replace the existing key (**msdyn_locationid** field) on the Address table with the new key (combination of **msdyn_locationid** and **parentid** fields). Instead it shows both keys. This has been addressed with the new version 2.2.2.60. This new version is applicable only when you are using the [party and global address book](party-gab.md) solution.| General availability|
 
 
 ## March 2021 release
