@@ -38,7 +38,7 @@ You can access Service Fabric Explorer in a web browser by using the default add
 
 To verify the address, note the value that was used in the "Create DNS zones and add A records" section of the appropriate setup and deployment topic for your environment:
 
-- [Platform update 41 and later](setup-deploy-on-premises-pu41.md##createdns)
+- [Platform update 41 and later](setup-deploy-on-premises-pu41.md#createdns)
 - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#createdns)
 
 You can access the site only if the client certificate is in cert:\\CurrentUser\\My on the machine that you're accessing the site on. (In Certificate Manger, go to **Certificates - Current User** \> **Personal** \> **Certificates**.) When you access the site, select the client certificate when you're prompted.
@@ -138,7 +138,7 @@ Note the current deployment status for the environment in Microsoft Dynamics Lif
 
 Run Test-D365FOConfiguration.ps1 as noted in the "Set up a standalone Service Fabric cluster" section of the appropriate setup and deployment topic for your environment. Note any errors.
 
-- [Platform update 41 and later](setup-deploy-on-premises-pu41.md##setupsfcluster)
+- [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupsfcluster)
 - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupsfcluster)
 
 
@@ -456,7 +456,7 @@ If you re-create a user in AD DS, remember that the SID will change. In this cas
 
 ### Issue
 
-When you performing the [Configure the databases](setup-deploy-on-premises-pu12#configuredb) procedure, if the SQL Server instance is a named instance, use the **-DatabaseServer \[FQDN/Instancename\]** parameter.
+When you performing the [Configure the databases](setup-deploy-on-premises-pu12.md#configuredb) procedure, if the SQL Server instance is a named instance, use the **-DatabaseServer \[FQDN/Instancename\]** parameter.
 
 ### Issue
 
