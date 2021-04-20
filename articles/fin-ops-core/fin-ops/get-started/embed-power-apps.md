@@ -84,7 +84,7 @@ See [Personalize the user experience](personalize-user-experience.md) for more d
 
 ## Building a canvas app that uses data that is sent from Finance and Operations apps
 
-When you build a canvas app that will be embedded in a Finance and Operations app, one important part of the process is to use the input data from that Finance and Operations app. From the Power Apps development experience, the input data that is passed from a Finance and Operations app can be accessed by using the **Param("EntityId")** variable. Additionally, starting in 10.0.17 / Platfrom update 43, the current legal entity will also be passed to the canvas app via the **Param("cmp")** variable. 
+When you build a canvas app that will be embedded in a Finance and Operations app, one important part of the process is to use the input data from that Finance and Operations app. From the Power Apps development experience, the input data that is passed from a Finance and Operations app can be accessed by using the **Param("EntityId")** variable. Additionally, starting in version 10.0.17, the current legal entity will also be passed to the canvas app via the **Param("cmp")** variable. 
 
 For example, in the OnStart function of the app, you could set the input data from Finance and Operations apps to a variable like this:
 
