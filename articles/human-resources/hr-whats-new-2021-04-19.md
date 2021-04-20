@@ -53,8 +53,8 @@ The following features are generally available with this release.
 | Privilege for viewing 'Workers without employment' when XDS is on. - (565054) | | |
 | Integrate missing code from Elevate into Life Events  - (526420) | | |
 | [GA] Cross company clean up preview switch and flight - (556591) | | |
-| [EHR] Custom field support in Plan Coverage Options - (543139) | | |
 | Platform update 10.0.17 (41) | -- | [Platform updates for version 10.0.17 of Finance and Operations apps (April 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
+| Custom Fields support in Benefits Management forms | [Release Plan document](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [Benefits Management documentation ](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-management-overview)|
 
 ### Bug fixes
 
@@ -66,15 +66,15 @@ The following bug fixes are included in this release.
 | Issue number | Issue |  Description |
 | --- | --- | --- |
 | ## Affordable Care coverage option is taking to the main Affordable Care coverage group form instead of Affordable Care coverage form for the particular Employee - (565963) | | |
-| ## Cannot add Period to BenefitPlan - (573676) On the BenefitPlan form (Benefits Management > Links > Benefit plans) | | |
+| 573676 | Cannot add Period to BenefitPlan - (573676) On the BenefitPlan form (Benefits Management > Links > Benefit plans) | Fixed bugs where Periods could not be added or updated on existing Benefit plans on th form |
 | ## Benefits Workspace V2 feature does not handle GA feature stage dynamically based on feature management - (573617) | | |
 | ## “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda - (552164) | | |
 | ## “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda - (574502) | | |
 | ## HcmCompensationCrossCompanyFeature uses the same "Learn More" FwLink URL as HcmPerformanceReviewReportFeature.xml - (445141) | | |
 | ## Leave request validation fails when employment is terminated before the latest transaction for that worker across all leave plans - (570586) | | |
 | ## Required reason code not displaying when Cross Company Leave view feature enabled - (572343) If you have the Cross Company Leave view feature enabled, and have security set up for users that are LE specific....the required reason code does not show up for users in the time off form    | | |
-| ## Benefits - Life event Options: discrepancies in the tooltip documentation and code behavior. - (560614) | | |
-| ## Benefits - Life event Options : Life event options are editable in Worker Benefit plan but changes are not affected - (560616) | | |
+| 560614 | Benefits - Life event Options: discrepancies in the tooltip documentation and code behavior | Updated tooltips in Life EVent options to depict correct behavior |
+| 560616 | Benefits - Life event Options : Life event options are editable in Worker Benefit plan but changes are not affected | Updated behavior of Life Event Option switches to enable / disable based on dependant options as per tooltip documentation |
 | ##  Cross company leave view, enabling/ disabling it from HRShareParameters influences the process of Request time off from ESS for user with Employee role - (570783) | | |
 
 ## In preview
@@ -91,6 +91,7 @@ The following new features are in preview. For more information about turning fe
 | --- | --- |
 | Skills entered by a manager for their employees can be auto-approved by a workflow | Coming soon. |
 | Platform update 10.0.18 (42) | Platform update 10.0.18 is scheduled to begin rolling out with the service release on May 17, 2021. For more information, see [Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
+| Custom Field support in Benefits Management Eligibity rules  | [Coming Soon for Public Preview](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) | 
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
