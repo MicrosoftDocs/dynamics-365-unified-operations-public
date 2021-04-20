@@ -54,7 +54,7 @@ The following features are generally available with this release.
 | Integrate missing code from Elevate into Life Events  - (526420) | | |
 | [GA] Cross company clean up preview switch and flight - (556591) | | |
 | [EHR] Custom field support in Plan Coverage Options - (543139) | | |
-| ## PU 41 Uptake - (570278) | | |
+| Platform update 10.0.17 (41) | -- | [Platform updates for version 10.0.17 of Finance and Operations apps (April 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
 
 ### Bug fixes
 
@@ -70,7 +70,6 @@ The following bug fixes are included in this release.
 | ## Benefits Workspace V2 feature does not handle GA feature stage dynamically based on feature management - (573617) | | |
 | ## “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda - (552164) | | |
 | ## “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda - (574502) | | |
-| ## Address secret retrieval failures during boxsetup in environments with newer powershell version(s). - (574016) | | |
 | ## HcmCompensationCrossCompanyFeature uses the same "Learn More" FwLink URL as HcmPerformanceReviewReportFeature.xml - (445141) | | |
 | ## Leave request validation fails when employment is terminated before the latest transaction for that worker across all leave plans - (570586) | | |
 | ## Required reason code not displaying when Cross Company Leave view feature enabled - (572343) If you have the Cross Company Leave view feature enabled, and have security set up for users that are LE specific....the required reason code does not show up for users in the time off form    | | |
@@ -91,7 +90,6 @@ The following new features are in preview. For more information about turning fe
 | Feature | Details |
 | --- | --- |
 | Skills entered by a manager for their employees can be auto-approved by a workflow | Coming soon. |
-| Platform update 10.0.17 (41) | Platform update 10.0.17 is scheduled to begin rolling out with the next release on April 19, 2021. For more information, see [Platform updates for version 10.0.17 of Finance and Operations apps (April 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md). |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
