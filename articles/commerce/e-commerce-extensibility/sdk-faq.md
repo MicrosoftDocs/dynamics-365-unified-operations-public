@@ -197,7 +197,8 @@ If you want to continue to lint using TSLint, you can use the **–use-tslint** 
 "build-prod": "yarn clean && yarn msdyn365b build --use-tslint",
 ```
 
-However, please note that support for TSLint will be limited and it is encouraged to use ESLint whenever possible.
+> [NOTE] 
+> Support for TSLint is limited and it is encouraged to use ESLint whenever possible.
 
 #### Completely disable linting during build time
 
