@@ -17,28 +17,28 @@ ms.dyn365.ops.version: 10.0.18
 
 Error code: WHSWorkBlockingExecutingWaveReason_ErrorMessage
 
-The system displays the following error message:
+The system shows the following error message:
 
 > Work %1 remains blocked because the related wave %2 has status %3.
 
 ## Issue description
 
-The work is currently being processed on a wave and can't be unblocked and you see one of the following symptoms:
+The work is currently being processed on a wave and can't be unblocked, and you see one of the following symptoms:
 
-- On the **Blocking reasons** tab, the **Work blocking reason** is set to *Processing wave* for one or more of the lines.
-- On the Action Pane, open the **Related information** and, from the **Related information** group, select **Wave**. The **Wave status** is set to *Processing*.
+- On the **Blocking reasons** tab, the **Work blocking reason** field for one or more lines is set to *Processing wave*.
+- When you select **Wave** in the **Related information** group on the **Related information** tab of the Action Pane, the **Wave status** field is set to *Processing*.
 
 ## Resolution
 
-On the Action Pane, open the **Related information** and, from the **Related information** group, select **Wave**. On Action Pane of the **Waves** page, open the **Wave** tab and, from the **Wave** group, select **Cleanup wave data**.
+On the Action Pane, on the **Related information** tab, in the **Related information** group, select **Wave**. Then, on the **Waves** page, on the Action Pane, on the **Wave** tab, in the **Wave** group, select **Cleanup wave data**.
 
 ## Workaround
 
-If the previous steps didn't resolve the issue, you can cancel the work using the following steps:
+If the previous steps didn't fix the issue, you can cancel the work by following these steps.
 
 1. Go to **Warehouse management \> Periodic tasks \> Clean up \> Cancel work**.
-1. In the **Work ID** field, specify the work ID that you want to cancel, and which currently has a **Work status** of *Open*, *In progress*, *Canceled*, *Combined* or *Closed*.
+1. In the **Work ID** field, specify the ID of the work that you want to cancel, and that currently has a **Work status** value of *Open*, *In progress*, *Canceled*, *Combined*, or *Closed*.
 1. Select **OK**.
 1. Select **Yes** to confirm that you want to cancel the work.
 
-For more information, see [Cancel warehouse work for exception handling](../../warehousing/cancel-warehouse-work.md)
+For more information, see [Cancel warehouse work for exception handling](../../warehousing/cancel-warehouse-work.md).
