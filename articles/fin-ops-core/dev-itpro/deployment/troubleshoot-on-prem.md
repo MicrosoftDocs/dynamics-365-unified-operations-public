@@ -138,8 +138,9 @@ Note the current deployment status for the environment in Microsoft Dynamics Lif
 
 Run Test-D365FOConfiguration.ps1 as noted in the "Set up a standalone Service Fabric cluster" section of the appropriate setup and deployment topic for your environment. Note any errors.
 
+- [Platform update 41 and later](setup-deploy-on-premises-pu41.md##setupsfcluster)
 - [Platform update 12](setup-deploy-on-premises-pu12.md#setupsfcluster)
-- [Platform update 8 and Platform update 11](./setup-deploy-on-premises-pu12.md#setupsfcluster)
+
 
 Be sure to complete these steps:
 
