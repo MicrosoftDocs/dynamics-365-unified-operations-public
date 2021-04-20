@@ -58,7 +58,22 @@ When you Pause a table map that is in Running state, all records created or upda
 > [!NOTE]
 > When a table map is in paused state, there are limits to the number of records and amount of time you can queue the records, whichever comes first. We will start with soft limits and eventually enforce harder limits to protect you from exceeding the storage limits.
 
-Records created or updated for a table map in Paused state can be viewed under Queued records for each table map. 
+Records created or updated for a table map in Paused state can be viewed under **Queued records** for each table map. 
+
+![Queued records insights](media/Queued-Insights1.png "Queued records insights")
+
+The **Total queued record count** shows the total number of records queued for a given table map. You can click on **Load more** to see additional records in the paginated view. Additionally, you can also filter the records on Integration key.
+When you resume the table map, it switches from Pause to Running state and writes the records from the queue to the destination application. It is possible that some records error out and fail to write due to various reasons including business validations on destination app. In such cases, the records will continue to remain in the queue and can be viewed under the **Catch-up errors** tab. 
+
+![Queued records retry selected](media/Queued-Insights-retry-selected3.png "Queued records retry selected")
+
+The detailed Error message will aid you to fix the underlying issue after which you could **Retry selected** records or **Retry All** records. Once the retry is successful, **Retry status** will be marked as **Completed**.
+
+![Queued records retry selected](media/Queued-Insights-retry-selected4.png "Queued records retry selected")
+
+> [!NOTE] 
+> Errored records will be available in the queue for 7 days after which will the queue will be purged. In some cases, you may no longer need these records and can be **Deleted** from the queue.
+
 
 ## Alert notifications
 
