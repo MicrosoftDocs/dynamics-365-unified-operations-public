@@ -42,7 +42,7 @@ For more information about Platform update 32, see [Additional resources](whats-
 
 ### File size limit for data management export has been removed
 
-For more information about this feature, see [Data management export file size limit removed](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-management-export-file-size-limit-removed).
+For more information about this feature, see [Data management export file size limit removed](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-management-export-file-size-limit-removed).
 
 ### Finance and Operations AOS (kernel) improvements
 
@@ -50,22 +50,22 @@ For more information about this feature, see [Finance and Operations AOS (kernel
 
 ### Continued stabilization of saved views
 
-For more information about this feature, see [User productivity – Saved views](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-saved-views).
+For more information about this feature, see [User productivity – Saved views](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-saved-views).
 
 ### Improved responsiveness of Action Panes on smaller screens
 
-For more information about this feature, see [Improved experience on mobile devices – Phase 1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/improved-experience-mobile-devices-phase-1).
+For more information about this feature, see [Improved experience on mobile devices – Phase 1](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/improved-experience-mobile-devices-phase-1).
 
 ### Ability to filter on blank values by using the filter pane and filters in grid column headers
 
-For more information about this feature, see [User productivity – Filtering enhancements](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-filtering-enhancements).
+For more information about this feature, see [User productivity – Filtering enhancements](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-filtering-enhancements).
 
 ### Continued evolution of the new grid
 
-For more information about this feature, see [User productivity – New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-new-grid).
+For more information about this feature, see [User productivity – New grid](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-new-grid).
 
 ### Priority-based scheduling for batch jobs
-Two new system batch jobs are introduced to prepare existing batch jobs and tasks for the [Priority-based scheduling for batch jobs](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/priority-based-scheduling-batch-jobs) feature. The two new system batch jobs are:
+Two new system batch jobs are introduced to prepare existing batch jobs and tasks for the [Priority-based scheduling for batch jobs](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/priority-based-scheduling-batch-jobs) feature. The two new system batch jobs are:
 
 - **System job to seed batch group associations to batch jobs:** This batch job, with class name **SysMigrateBatchGroupsForPriorityBasedScheduling**, associates batch jobs with batch groups.
 - **System job to clean up expired batch heartbeat records:** This batch job, with class name **SysCleanupBatchHeartbeatTable**, cleans up the new internal monitoring **BatchHeartbeatTable** table.
@@ -82,7 +82,7 @@ For information about the bug fixes that are included in each update that is par
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2019 release wave 2 plan](/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated platform features
 
