@@ -113,7 +113,7 @@ After an app has been embedded onto a page, you may need to make some changes to
 
 ### Troubleshooting
 
-If the website isn't rendering correctly after being embedded in a Finance and Operation app, this usually indicates that the website is configured to restrict itself from being embedded in an iframe. To confirm this, do the following: 
+If the website isn't rendering correctly after being embedded in a Finance and Operation app or if you get an error message saying the URL was "denied a connection", this usually indicates that the website is configured to restrict itself from being embedded in an iframe. To confirm this, do the following: 
 
 1. Open the developer tools for the browser you are using. 
 2. Switch to the **Network** tab
