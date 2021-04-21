@@ -4,7 +4,7 @@
 title: Priority-based throttling FAQ
 description: This topic provides answers to frequently asked questions (FAQ) about priority-based throttling for OData and custom service-based integrations.
 author: hasaid
-ms.date: 09/23/2020
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,11 +37,11 @@ This topic provides answers to some frequently asked questions (FAQ) about [prio
 ## How do I access the Data management Yammer group?
 Follow this link: [Data management Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13408417).
 
-## In which product update/ version is throttling enabled by default?
-The throttling feature has been in preview since PU37 and will be enabled by default starting in PU43 (10.0.19). If you are operating in a previous version you can manually trigger throttling in your environment by setting the priority for your OData and Custom service requests. However, starting PU43 (10.0.19), throttling will be enable by default even if you have not set priorties.
+## In what product update will throttling be enabled by default?
+The throttling feature has been in preview since Finance 10.0.13 and will be enabled by default starting in 10.0.19. You can manually trigger throttling in your environment by setting the priority for your OData and Custom service requests. However, starting with the release of Finance 10.0.19, throttling will be automatically enabled even if you haven't set priorties.
 
-## What is the release date for PU43 (10.0.19)?
-PU43 (10.0.19) will be available in PEAP on April 23,2021 and for PROD on June 18,2021.
+## What is the release date for the platform update for Finance 10.0.19?
+Finance 10.0.19 will be available for pre-release in late April 2021 and will be generally available in June 2021.
 
 ## Will a retry request receive preferential treatment over a new request?
 No.
