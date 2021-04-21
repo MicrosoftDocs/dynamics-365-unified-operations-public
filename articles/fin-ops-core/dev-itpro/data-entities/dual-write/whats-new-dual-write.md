@@ -48,8 +48,8 @@ This release contains the features and bug fixes listed in the following table.
 
 | Feature | Description |Status |
 |------|---------|-------|
-| Bug fix| Bug fix on Notes entity to understand Null value. | General availability |
-| Bug fix| Dual write orchestration package 2.2.2.50 does not replace the existing key (**msdyn_locationid** field) on the Address table with the new key (combination of **msdyn_locationid** and **parentid** fields). Instead it shows both keys. This has been addressed with the new version 2.2.2.60. This new version is applicable only when you are using the [party and global address book](party-gab.md) solution.| General availability|
+| Bug fix| The **Notes** table now understands the **Null** value. | General availability |
+| Bug fix| Dual write orchestration package 2.2.2.50 does not replace the existing key (**msdyn_locationid** field) on the **Address** table with the new key which is a combination of the **msdyn_locationid** and **parentid** fields. Instead it shows both keys. This has been fixed with the new version 2.2.2.60. This new version is applicable only when you are using the [party and global address book](party-gab.md) solution.| General availability |
 
 
 ## March 2021 release
