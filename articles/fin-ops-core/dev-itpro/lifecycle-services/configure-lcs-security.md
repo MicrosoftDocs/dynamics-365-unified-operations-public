@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. Additionally, the members of a project might not all be members of the same organization. <br>
 
-Currently, users can sign in by using the Microsoft Azure Active Directory (Azure AD) credentials that they created in the [Microsoft 365 portal](https://go.microsoft.com/fwlink/?LinkID=324287) when they signed up. Users who are administrators for their organization in Azure AD will be administrators in Lifecycle Services (LCS). 
+Currently, users can sign in by using the Microsoft Azure Active Directory (Azure AD) credentials that they created in the Microsoft 365 portal when they signed up. Users who are administrators for their organization in Azure AD will be administrators in Lifecycle Services (LCS). 
 
 Project-level access to LCS is by invitation. You can invite members of your organization to be project owners and team members. Additionally, you can invite users who aren't part of your organization, and who don't have accounts in Azure AD to be team members.
 
