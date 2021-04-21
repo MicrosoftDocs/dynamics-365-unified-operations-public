@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.12 (August 2020)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.12 preview release.
 author: roschlom
-manager: AnnBe
 ms.date: 05/20/2020
 ms.topic: article
 ms.prod: 
@@ -39,19 +38,19 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 - **Auto-update:** August 2020
 
 ## Features included in this release
-The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
+The following features are included in this release. The feature titles link to additional information on the [Release plans](/dynamics365/release-plans/) site. 
 
 ### Dynamics 365 Finance
-- [Customer payment predictions](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/customer-payment-predictions)
- - [Treasurer workspace](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/treasurer-workspace)
- - [Forecast bank balance](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/forecast-bank-balance)
- - [External data for cashflow forecasting](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/external-data-cash-forecasting)
- - [Advanced ledger settlement: Settlement and reverse settlement processed separately](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/advanced-ledger-settlement-settlement-reverse-settlement-processed-separately)
- - [Automatic vendor payment proposal](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/automatic-vendor-payment-proposal)
+- [Customer payment predictions](/dynamics365-release-plan/2020wave1/dynamics365-finance/customer-payment-predictions)
+ - [Treasurer workspace](/dynamics365-release-plan/2020wave1/dynamics365-finance/treasurer-workspace)
+ - [Forecast bank balance](/dynamics365-release-plan/2020wave1/dynamics365-finance/forecast-bank-balance)
+ - [External data for cashflow forecasting](/dynamics365-release-plan/2020wave1/dynamics365-finance/external-data-cash-forecasting)
+ - [Advanced ledger settlement: Settlement and reverse settlement processed separately](/dynamics365-release-plan/2020wave1/dynamics365-finance/advanced-ledger-settlement-settlement-reverse-settlement-processed-separately)
+ - [Automatic vendor payment proposal](/dynamics365-release-plan/2020wave1/dynamics365-finance/automatic-vendor-payment-proposal)
  
  ### Public sector
- - [Allow interest distribution and escheatment to update bank balances when posting](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-interest-distribution-escheatment-use-feature--lets-update-bank-balances-when-posting-advanced-ledger-entries)
- - [Remove option to replace budget plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/remove-option-replace-budget-plan)
+ - [Allow interest distribution and escheatment to update bank balances when posting](/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-interest-distribution-escheatment-use-feature--lets-update-bank-balances-when-posting-advanced-ledger-entries)
+ - [Remove option to replace budget plan](/dynamics365-release-plan/2020wave1/dynamics365-finance/remove-option-replace-budget-plan)
  
 ## Additional resources
 
@@ -62,13 +61,13 @@ Dynamics 365 Finance 10.0.12 includes platform updates. To learn more, see [Plat
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=453382&dbType=3&qc=a68cf77635c0ab926e7b1b75c6925c82a23058c524c4d728ba8b30fedaf41746).
 
 ### Regulatory updates
-For information about regulatory updates for Dynamics 365 Finance and Operations apps, see [Regulatory updates](https://docs.microsoft.com/dynamics365/finance/localizations/regulatory-updates). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
+For information about regulatory updates for Dynamics 365 Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
 
 ### Dynamics 365: 2020 release wave 1 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 

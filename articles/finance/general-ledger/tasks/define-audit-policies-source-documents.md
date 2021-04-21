@@ -4,7 +4,6 @@
 title: Define audit policies for source documents
 description: This topic explains how to set up and run audit policy rules. 
 author: panolte
-manager: AnnBe 
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  

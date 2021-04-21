@@ -4,7 +4,6 @@
 title: Credit management setup
 description: This topic describes the setup that is required for Credit management.
 author: mikefalkner
-manager: AnnBe
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 

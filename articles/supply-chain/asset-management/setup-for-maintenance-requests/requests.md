@@ -4,7 +4,6 @@
 title: Maintenance requests
 description: This topic provides an overview of maintenance requests in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 07/26/2019
 ms.topic: article
 ms.prod: 

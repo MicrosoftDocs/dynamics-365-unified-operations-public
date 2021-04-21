@@ -4,7 +4,6 @@
 title: What's new and changed in Platform update 31 for Finance and Operations apps (January 2020)
 description: This topic describes features that are in preview in Platform update 31 for Finance and Operations apps. 
 author: tonyafehr
-manager: AnnBe
 ms.date: 03/10/2020
 ms.topic: article
 ms.prod: 
@@ -42,7 +41,7 @@ For more information about Platform update 31, see [Additional resources](whats-
 ## Turn on the new (preview) grid control through Feature management
 Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments using the Feature management workspace. Refer to the following instructions about how to enable the flight in non-production environments. Qualified environments include Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments. Note that this feature cannot be turned on in production until version 10.0.9, Platform update 33.
 
-To learn more about the new grid control, see [User productivity - New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
+To learn more about the new grid control, see [User productivity - New grid](/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
 
 To enable the new grid while this feature is in preview, follow these steps:
 
@@ -96,7 +95,7 @@ The Excel Add-in has several authentication and authorization enhancements to im
 - **Authorization failure information now provided** - Previously, if the user authenticated successfully but didn't have authorization permissions to communicate with the server, then the Excel Add-in would present a "Load applets" link, because the loading of the applets would fail. This was an implicit authorization permissions failure. Now the authorization permissions failure will be detailed explicitly for the user so they understand what has happened and verify that they are signing in as the correct user to the correct server.
 
 ## skipAutoOrderBy API
-When using the AX Query object by explicitly specifying not to include an ORDER BY clause, the kernel adds the Primary key to the ORDER BY clause. This API will skip the ORDER BY clause and it will not be added to the query. For more information, see [Q classes](../dev-ref/q-classes.md).
+When using the AX Query object by explicitly specifying not to include an ORDER BY clause, the kernel adds the Primary key to the ORDER BY clause. This API will skip the ORDER BY clause and it will not be added to the query. For more information, see [Q classes](/dotnet/api/dynamics.ax.application).
 
 ## Batch framework contention reduction
 Performance enhancements have been made to reduce heavy blocking/contention on batch framework tables. This fix is for customer environments that are currently experiencing contention when selecting batch tasks and finishing batch jobs. There are no functional changes associated with this feature. The feature can be enabled under Feature management.
@@ -109,7 +108,7 @@ For information about the bug fixes included in each of the updates that are par
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2019 release wave 2 plan](/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated.

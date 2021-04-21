@@ -4,7 +4,6 @@
 title: Printer ER destination type
 description: This topic explains how you can configure a printer destination for each FOLDER or FILE component of an Electronic reporting (ER) format. 
 author: NickSelin
-manager: AnnBe
 ms.date: 02/24/2021
 ms.topic: article
 ms.prod: 
@@ -36,7 +35,7 @@ You can send a generated document directly to a network printer for direct print
 
 ## Prerequisites
 
-Before you begin, you must install and configure the Document Routing Agent, and then register the network printers. For more information, see [Install the Document Routing Agent to enable network printing](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent).
+Before you begin, you must install and configure the Document Routing Agent, and then register the network printers. For more information, see [Install the Document Routing Agent to enable network printing](./install-document-routing-agent.md).
 
 ## Make the Printer destination available
 

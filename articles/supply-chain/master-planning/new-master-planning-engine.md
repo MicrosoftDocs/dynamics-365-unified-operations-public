@@ -4,7 +4,6 @@
 title: Migration to Planning Optimization for master planning
 description: This topic provides information about the new master planning engine, Planning Optimization, and about migration from the existing engine. 
 author: ChristianRytt
-manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
@@ -68,8 +67,12 @@ Currently, exceptions for Planning Optimization migration are only relevant if y
 
 After the required features become available, Microsoft will provide a grace period until the exception expires. The environment admin will be informed when the required features have become available and the grace period has started.
 
+The following flowchart summarizes the information provided in this topic so you can quickly find out whether you should request an exception. If you do need to request an exception, please fill out and submit the [Planning Optimization migration and exception questionnaire](https://go.microsoft.com/fwlink/?linkid=2144962).
+
+![Exception flowchart](media/exception-diagram.png "Exception flowchart")
+
 > [!NOTE]
-> You can only request an exception for production environments, not for sandbox environments. If you need to disable the Planning Optimization exception error on an infrastructure as a service (IaaS) sandbox environment, run the SQL query provided in [Sandbox environments](#faq-sandbox).
+> You can only request an exception for tenants that currently include, or will include, a production environment, not for tenants with sandbox environments only. If you need to disable the Planning Optimization exception error on an infrastructure as a service (IaaS) sandbox environment, run the SQL query provided in [Sandbox environments](#faq-sandbox).
 
 ## Frequently asked questions
 

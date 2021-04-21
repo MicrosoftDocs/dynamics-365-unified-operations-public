@@ -4,7 +4,6 @@
 title: Work with publish groups
 description: This topic describes the publish groups feature in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 

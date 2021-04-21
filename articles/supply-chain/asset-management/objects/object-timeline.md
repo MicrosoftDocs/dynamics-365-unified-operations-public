@@ -4,7 +4,6 @@
 title: Asset event history
 description: This topic explains how to access asset event history in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 

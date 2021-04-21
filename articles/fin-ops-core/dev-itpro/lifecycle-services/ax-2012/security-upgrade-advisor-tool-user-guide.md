@@ -4,7 +4,6 @@
 title: Security Upgrade Advisor Tool user guide
 description: The Security Upgrade Advisor Tool is intended to help simplify upgrading security settings from Microsoft Dynamics AX to Microsoft Dynamics AX 2012. 
 author: kfend
-manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
@@ -77,7 +76,7 @@ The following procedures describe the process you should follow when running the
 
 The outputs of the wizard are custom roles in the AOT, named with a prefix that you specify. No users are assigned to these roles automatically. After roles are generated, you must manually assign roles to each user. Clicking **Next** runs each step of the wizard. Clicking **Cancel** closes the wizard.
 
-1. Drain the client connections that are connected to the instance of Application Object Server (AOS) that you are working with. For more information, see [Drain users from an AOS](https://technet.microsoft.com/library/d19bd816-cd9e-423a-94c7-aceb946baa30(AX.60).aspx).
+1. Drain the client connections that are connected to the instance of Application Object Server (AOS) that you are working with. For more information, see [Drain users from an AOS](/dynamicsax-2012/appuser-itpro/drain-users-from-an-aos).
 2. In **Administrative Tools** &gt; **Services**, stop the **Microsoft Dynamics AX Object Server 6.0** service.
 3. Use Windows PowerShell or AXUtil to import the model **SecurityUpgradeAdvisorTool.axmodel** into the Microsoft Dynamics AX 2012 AOT.
 
@@ -85,7 +84,7 @@ The outputs of the wizard are custom roles in the AOT, named with a prefix that 
     Install-AXModel -File SecurityUpgradeAdvisorTool.axmodel -Details
     ```
 
-   For more information, see [How to: Export and Import a Model](https://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx).
+   For more information, see [How to: Export and Import a Model](/dynamicsax-2012/developer/how-to-export-and-import-a-model).
 
 4. Start the **Microsoft Dynamics AX Object Server 6.0** service.
 5. Open the Security Upgrade Advisor project, and open the <strong>Forms</strong> &gt; <strong>SecurityUpgradeWizard</strong> form.

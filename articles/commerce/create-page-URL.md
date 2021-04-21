@@ -4,7 +4,6 @@
 title: Create a page URL
 description: This topic covers the basic concepts and procedures for creating a page URL on your site.
 author: bicyclingfool
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 

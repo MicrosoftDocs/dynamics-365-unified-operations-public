@@ -4,7 +4,6 @@
 title: Separate accounts for credit notes
 description: This topic explains how to set up and use separate accounts for credit notes.
 author: ilkond
-manager: AnnBe
 ms.date: 09/16/2019
 ms.topic: article
 ms.prod: 
@@ -35,7 +34,7 @@ In Italy, a company can define the accounting policy so that credit note amounts
 ## Prerequisites
 
 - The primary address of the legal entity must be in Italy.
-- In the **Feature management** workspace, turn on the **Separate accounts for credit notes** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, turn on the **Separate accounts for credit notes** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up posting accounts
 

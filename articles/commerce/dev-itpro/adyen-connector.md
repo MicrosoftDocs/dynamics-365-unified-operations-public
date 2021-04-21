@@ -4,7 +4,6 @@
 title: Dynamics 365 Payment Connector for Adyen
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-manager: AnnBe
 ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
@@ -130,6 +129,14 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
 | adyen_v1_59p7 | adyen_v1_59p7 |
+| | *Note: Please see details below regarding cash out of gift cards.* |
+
+# [10.0.18](#tab/10-0-18)
+### Dynamics 365 Retail POS version 10.0.18
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_59p7 | adyen_v1_62p9 |
+| | *Note: Please see details below regarding cash out of gift cards* |
 
 ---
 
@@ -137,7 +144,8 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 > Adyen may release minor version updates after Microsoft has tested the major version. As long as a major version is supported, it's okay to have minor version updates within the same major version. These updates are normally very targeted fixes and don't meet the bar for full retesting, as long as the same major firmare version was previously tested. Updates shouldn't exceed the maximum Adyen firmware version listed in documentation. 
 >
 > Migrating from a Adyen firmware version earlier than version 53 to version 53 requires POS KB **4577957** for monthly updates of Commerce, versions 10.0.11 through 10.0.14. If one of those versions is in use and doesn't include the hotfix, post-upgrade of the payment terminal will only allow payments via NFC. Applying the hotfix to the POS resolves this issue. If the POS version is older than version 10.0.11, file a support request noting that a fix for KB **4577957** is required for an out of service MPOS.
-
+> 
+> For Adyen firmware versions 59p7 through 62p9, the **gift card cash out** operation requests PIN entry twice in scenarios where the gift card is manually entered. This issue is not reproduced when the gift card is swiped. Adyen is investigating. 
 
 ### Supported payment terminals
 The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api). It supports all payment terminals that this application programming interface (API) supports. For a complete list of supported payment terminals, visit the [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals) page.
@@ -343,7 +351,7 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 
 ## Sign up with Adyen
 
-To use the Dynamics 365 Payment Connector for Adyen, you must have a separate agreement with Adyen. To learn more about Adyen's services, or to create a test merchant account, visit the [Adyen website](https://www.adyen.com/partners).
+To use the Dynamics 365 Payment Connector for Adyen, you must have a separate agreement with Adyen. To learn more about Adyen's services, or to create a test merchant account, visit the [Adyen website](https://www.adyen.com/signup).
 
 ## Setup and configuration
 

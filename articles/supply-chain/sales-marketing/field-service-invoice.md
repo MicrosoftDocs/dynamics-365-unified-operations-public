@@ -4,7 +4,6 @@
 title: Synchronize agreement invoices in Field Service to free text invoices in Supply Chain Management
 description: This topic discusses the templates and underlying tasks that are used to synchronize agreement invoices in Dynamics 365  Field Service to free text invoices in Dynamics 365 Supply Chain Management.
 author: ChristianRytt
-manager: tfehr
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 

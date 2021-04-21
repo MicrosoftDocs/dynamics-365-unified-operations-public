@@ -4,7 +4,6 @@
 title: Year-end close
 description: This topic describes the required setup and steps for running the general ledger year-end close process. 
 author: kweekley
-manager: AnnBe
 ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 

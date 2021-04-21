@@ -4,7 +4,6 @@
 title: Shipment consolidation policies
 description: This topic provides an overview of the functionality that provides flexible configuration of shipment consolidation policies.
 author: GarmMSFT
-manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod:

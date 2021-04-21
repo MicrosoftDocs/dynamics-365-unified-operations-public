@@ -4,7 +4,6 @@
 title: Product lifecycle state overview
 description: A product lifecycle state documents the lifecycle state of a released product or product variant.  
 author: cvocph
-manager: tfehr
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 

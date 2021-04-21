@@ -4,7 +4,6 @@
 title: Work order lifecycle states
 description: This topic explains work order lifecycle states in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 

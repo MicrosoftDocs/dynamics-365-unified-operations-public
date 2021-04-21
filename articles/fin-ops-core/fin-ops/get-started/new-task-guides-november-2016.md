@@ -4,7 +4,6 @@
 title: New or updated task guides (November 2016)
 description: This topic lists the new or updated Task guides that were released to the Microsoft (November 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations. No new Getting Started Library was released.
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

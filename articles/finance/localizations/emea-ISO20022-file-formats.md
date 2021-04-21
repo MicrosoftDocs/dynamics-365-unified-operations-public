@@ -4,7 +4,6 @@
 title: Import ISO20022 files 
 description: This topic explains how to import payment files of the ISO 20022 camt.054 and pain.002 formats into Microsoft Dynamics 365 Finance.
 author: neserovleo
-manager: AnnBe
 ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
@@ -122,7 +121,7 @@ For example, consider this scenario: you use ISO20022 payments to generate credi
  - **Pain.002** – this format will be used together with the Payment model mapping to destination ISO20022 in order to import the pain.002 file into vendor payments transfers journal
  - **Camt.054** – this format will be used together with the Payment model mapping to destination ISO20022 to import the camt.054 file into vendor payments transfers journal. The same format configuration will be used in customer payments import functionality, but the different mapping will be used in the Payment model mapping to destination ISO20022 configuration.
 
-For more information about Electronic reporting, refer to [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md).
+For more information about Electronic reporting, refer to [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## Additional resources
 - [Create and export vendor payments using ISO20022 payment format](./tasks/create-export-vendor-payments-iso20022-payment-format.md)

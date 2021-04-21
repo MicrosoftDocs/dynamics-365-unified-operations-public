@@ -4,7 +4,6 @@
 title: Software lifecycle policy and on-premises releases
 description: This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 Finance + Operations (on-premises) releases.
 author: cabeln
-manager: AnnBe
 ms.date: 02/22/2021
 ms.topic: article
 ms.prod: 
@@ -67,19 +66,19 @@ Every service update release has a specific expiration date after which the rele
 
 #### Continuous combined releases (Application and Platform)
 
-With [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates), application and platform are released together. The [One Version schedule](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change) specifies the dates for early access, public release, and expiration of the release.
+With [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates), application and platform are released together. The [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) specifies the dates for early access, public release, and expiration of the release.
 
 | Product | Deployment options | Application version | Platform release | Release or expiration dates|
 |--------|--------|----|----|--------|
 | ... |
-| Finance + Operations | Base deployment + Service update | 10.0.20 | PU44 | [One Version schedule](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Service update | 10.0.19 | PU43 | [One Version schedule](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Service update | 10.0.18 | PU42 | [One Version schedule](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Base deployment + Service update | 10.0.17 | PU41 | [One Version schedule](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Service update | 10.0.16 | PU40 | [One Version schedule](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Service update | 10.0.15 | PU39 | [One Version schedule](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Base deployment + Service update | 10.0.14* |  PU38 | [One Version schedule](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Service update | 10.0.13* | PU37 |[One Version schedule](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Base deployment + Service update | 10.0.20 | PU44 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Service update | 10.0.19 | PU43 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Service update | 10.0.18 | PU42 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Base deployment + Service update | 10.0.17 | PU41 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Service update | 10.0.16 | PU40 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Service update | 10.0.15 | PU39 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Base deployment + Service update | 10.0.14* |  PU38 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Service update | 10.0.13* | PU37 |[One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
 
 \* Expired version. All customers must be on the latest version of Finance + Operations according to the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy).
 
@@ -115,4 +114,3 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 |  Platform update 8 | 7.0.4565.1612 | July 2017 | April 2018 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

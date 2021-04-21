@@ -4,7 +4,6 @@
 title: Create and acquire assets from Accounts payable
 description: This task guide will walk through creation and acquisition of a fixed asset with the purchasing process. 
 author: saraschi2
-manager: AnnBe 
 ms.date: 08/13/2019
 ms.topic: business-process 
 ms.prod:  

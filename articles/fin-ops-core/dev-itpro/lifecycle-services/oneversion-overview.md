@@ -4,7 +4,6 @@
 title: One Version service updates overview
 description: This topic gives an overview of the various steps that make up the experience for managing service updates initiated by Microsoft as part of One Version.
 author: angelmarshall
-manager: AnnBe
 ms.date: 05/21/2019
 ms.topic: article
 ms.prod: 
@@ -56,7 +55,7 @@ Users must opt in to new features and turn them on. All updates are applied firs
 
 ## Notice
 
-[Release plans](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/) will be available to help you plan ahead and understand what is changing. You can learn about upcoming features up to three months in advance. The [What's new](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) topics provide details about the updates for specific months.
+[Release plans](/business-applications-release-notes/april19/dynamics365-finance-operations/) will be available to help you plan ahead and understand what is changing. You can learn about upcoming features up to three months in advance. The [What's new](../../fin-ops/get-started/whats-new-changed.md) topics provide details about the updates for specific months.
 
 Additionally, a notification email will be sent five days in advance, and a notification will appear in LCS just before an update, as shown in the following illustration.
 

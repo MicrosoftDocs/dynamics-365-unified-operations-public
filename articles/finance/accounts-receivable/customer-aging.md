@@ -4,7 +4,6 @@
 title: Customer aging report
 description: The Customer aging report displays the balances that are due from customers, sorted by date interval, or aging period.
 author: JodiChristiansen
-manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 

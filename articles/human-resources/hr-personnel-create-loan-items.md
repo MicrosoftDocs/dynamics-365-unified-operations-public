@@ -4,7 +4,6 @@
 title: Create loan items
 description: Loan items are records that help you track physical items, such as phones or computers, that your company lends to workers. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

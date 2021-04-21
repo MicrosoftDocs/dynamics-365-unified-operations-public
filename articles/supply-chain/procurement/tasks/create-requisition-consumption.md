@@ -4,7 +4,6 @@
 title: Create a requisition for consumption
 description: This topic describes the process of creating a requisition. 
 author: kamaybac
-manager: tfehr 
 ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  

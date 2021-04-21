@@ -4,7 +4,6 @@
 title: What's new or changed in Finance and Operations apps version 10.0.6 (November 2019)
 description: This topic describes features that are either new or changed in Finance and Operations apps version 10.0.6. This version will be released in October.
 author: tonyafehr
-manager: AnnBe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
@@ -34,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.6
 
 This topic describes features that are either new or changed in Finance and Operations apps, including Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management for version 10.0.6. This version has a build number of 10.0.234. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Additional resources](whats-new-changed-10-0-6.md#additional-resources).
 
-To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 Retail, see [What's new or changed in Dynamics 365 Retail version 10.0.6](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new-10-0-6).
+To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 Retail, see [What's new or changed in Dynamics 365 Retail version 10.0.6](../../../commerce/get-started/whats-new-10-0-6.md).
 
 ## Product configuration models V2 data entity
 
@@ -68,7 +67,7 @@ Version 10.0.6 includes Platform update 30. To learn more about Platform update 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2019 release wave 2 plan](/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated.

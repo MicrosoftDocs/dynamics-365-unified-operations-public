@@ -4,7 +4,6 @@
 title: Warehouse management workloads for cloud and edge scale units
 description: This topic provides information about the feature that enables scale units to run selected processes from your warehouse management workload.
 author: perlynne
-manager: tfeyr
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
@@ -30,20 +29,19 @@ ms.dyn365.ops.version: 10.0.15
 # Warehouse management workloads for cloud and edge scale units
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
 > Not all warehouse management business functionality is fully supported for warehouses running a workload on a scale unit. Be sure to use only the processes that this topic explicitly describes as supported.
 
 ## Warehouse execution on scale units
 
-This feature enables scale units to run selected processes from the warehouse management capabilities. Cloud scale units run their workloads in the cloud by using dedicated processing capacity in your selected Microsoft Azure region. For edge scale units, you can run some workloads independently on premises, even while the scale units are temporarily disconnected from the cloud.
+This feature enables scale units to run selected processes from the warehouse management capabilities.
 
 In this topic, warehouse management executions in a warehouse that is defined as a scale unit are known as a *Warehouse execution system* (*WES*).
 
 ## Prerequisites
 
-You must have a Dynamics 365 Supply Chain Management hub and a scale unit that has been deployed with the warehouse management workload. For more information about the architecture and deployment process, see [Cloud and edge scale units for manufacturing and warehouse management workloads](cloud-edge-landing-page.md).
+You must have a Dynamics 365 Supply Chain Management hub and a scale unit that has been deployed with the warehouse management workload. For more information about the architecture and deployment process, see [Use scale units to increase resilience for supply chain management workloads](cloud-edge-landing-page.md).
 
 ## How the WES workload works on scale units
 
@@ -72,7 +70,7 @@ The hub owns the following data:
 - Order allocation and outbound load processing
 - The release to warehouse, shipment creation, wave creation, and wave finalization processes
 
-The scale units own the actual wave processing (such as work allocation, replenishment work, and demand work creation) after the release of the wave. Therefore, warehouse workers can process outbound work by using a warehouse app that is connected to the scale unit.
+The scale units own the actual wave processing (such as work allocation, replenishment work, and demand work creation) after the release of the wave. Therefore, warehouse workers can process outbound work by using a Warehouse Management mobile app that is connected to the scale unit.
 
 ![Wave processing flow](./media/wes-wave-processing-ga.png "Wave processing flow")
 
@@ -96,7 +94,7 @@ You must sign in on the hub to use the *Release to warehouse* process. Go to one
 
 When using **Automatic release of purchase orders**, you can select specific purchase order lines based on a query. A typical scenario would be to set up a recurrent batch job that releases all the confirmed purchase order lines expected to arrive the next day.
 
-The worker can run the receiving process by using a warehouse app that is connected to the scale unit. The data is then recorded by the scale unit and reported against the inbound warehouse order. The creation and processing of the subsequent putaway will also be handled by the scale unit.
+The worker can run the receiving process by using a Warehouse Management mobile app that is connected to the scale unit. The data is then recorded by the scale unit and reported against the inbound warehouse order. The creation and processing of the subsequent putaway will also be handled by the scale unit.
 
 If you aren't using the *release to warehouse* process, and therefore aren't using *warehouse orders*, the hub can process warehouse receiving and work processing independently from scale units.
 
@@ -119,10 +117,10 @@ Users who act as warehouse managers on both the hub and scale units should be as
 The following warehouse execution processes can be enabled for a WES workload on a scale unit:
 
 - Selected wave methods for sales and transfer orders (allocation, demand replenishment, containerization, work creation, and wave label printing)
-- Processing sales and transfer order warehouse work using the warehouse app (including replenishment work)
-- Querying on-hand inventory by using the warehouse app
-- Creating and running inventory movements by using the warehouse app
-- Registering purchase orders and doing putaway work by using the warehouse app
+- Processing sales and transfer order warehouse work using the Warehouse Management mobile app (including replenishment work)
+- Querying on-hand inventory by using the Warehouse Management mobile app
+- Creating and running inventory movements by using the Warehouse Management mobile app
+- Registering purchase orders and doing putaway work by using the Warehouse Management mobile app
 
 The following work order types are currently supported for WES workloads on scale unit deployments:
 
@@ -135,7 +133,7 @@ The following work order types are currently supported for WES workloads on scal
 No other types source-documents processing or warehouse work are currently supported on scale units. For example, for a WES workload on a scale unit, you can't perform a transfer order receiving process (transfer receipt) or process cycle counting work.
 
 > [!NOTE]
-> Mobile device menu items and buttons for unsupported functionalities aren't shown in the _warehouse app_ when it is connected to a scale unit deployment.
+> Mobile device menu items and buttons for unsupported functionalities aren't shown in the _Warehouse Management mobile app_ when it is connected to a scale unit deployment.
 
 > [!WARNING]
 > When you run a workload on a scale unit, you can't run unsupported processes for that specific warehouse on the hub. The tables provided later in this topic document the supported capabilities.
@@ -166,7 +164,7 @@ The following warehouse management functionality isn't currently supported for s
 - Warehouse work processing with shipment notes
 - Warehouse work processing with cycle counting threshold triggering
 - Warehouse work processing with material handling/warehouse automation
-- Use of product master data image (for example, on the warehouse app)
+- Use of product master data image (for example, on the Warehouse Management mobile app)
 
 > [!WARNING]
 > Some warehouse functionality won't be available for warehouses running the warehouse management workloads on a scale unit, and also isn't supported on the hub or on the scale unit workload.
@@ -255,7 +253,7 @@ The following table shows which warehouse operations and exception handing featu
 | Movement                                           | Yes | Yes                          |
 | Movement by template                               | Yes | Yes                          |
 | Warehouse transfer                                 | Yes | No                           |
-| Create transfer order from warehouse app           | Yes | No                           |
+| Create transfer order from the Warehouse Management mobile app           | Yes | No                           |
 | Adjustment (in/out)                                | Yes | No                           |
 | Inventory status change                            | Yes | No                           |
 | Cycle counting and Counting discrepancy processing | Yes | No                           |
@@ -301,6 +299,8 @@ On the workload in scale units, you can manage the following batch jobs at **War
 - Process wave table records
 - Warehouse hub to scale unit message processor
 - Process quantity update requests for warehouse order lines
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

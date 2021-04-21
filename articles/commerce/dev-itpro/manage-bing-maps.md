@@ -5,7 +5,6 @@
 title: Manage Bing Maps for your organization
 description: This topic describes how to manage Bing Maps for your application.
 author: aamirallaqaband 
-manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 

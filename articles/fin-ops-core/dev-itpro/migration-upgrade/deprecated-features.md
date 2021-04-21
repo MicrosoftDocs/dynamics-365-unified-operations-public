@@ -4,7 +4,6 @@
 title: Removed or deprecated features in previous releases
 description: This topic describes features that have been removed, or that were planned for removal from Dynamics 365 for Finance and Operations and previous releases.
 author: sericks007
-manager: AnnBe
 ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
@@ -44,7 +43,7 @@ This topic describes features that have been removed or deprecated from Dynamics
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
-Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
 ## Finance 10.0.7 with Platform update 31
 
@@ -154,7 +153,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Header alignment with other Dynamics and Office products. For more details, see [Updated navigation bar that aligns with the Office header](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
+| **Reason for deprecation/removal** | Header alignment with other Dynamics and Office products. For more details, see [Updated navigation bar that aligns with the Office header](/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
 | **Replaced by another feature?**   | Starting in Platform update 24, a restyled navigation bar that features search was introduced. |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
@@ -168,7 +167,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The legacy behavior for default actions in grids results in an unexpected column having the default action link after grid columns have been reordered via personalization. The new sticky default action feature corrects this. For more details, see [Sticky default actions in grids](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Reason for deprecation/removal** | The legacy behavior for default actions in grids results in an unexpected column having the default action link after grid columns have been reordered via personalization. The new sticky default action feature corrects this. For more details, see [Sticky default actions in grids](/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
 | **Replaced by another feature?**   | Starting in Platform update 21, a feature for "sticky default actions" was introduced. This feature can be enabled on the **Client performance options** page. |
 | **Product areas affected**         | Grids in the web client |
 | **Deployment option**              | All |
@@ -179,7 +178,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 |&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The "is one of" filtering experience went through a redesign in Platform update 22,with the plan for this to eventually be the only "is one of" filtering experience. |
-| **Replaced by another feature?**   | Starting in Platform update 22, an improved "is one of" filtering experience became available on the **Client performance options** page. For more information, see [Optimized is one of filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Replaced by another feature?**   | Starting in Platform update 22, an improved "is one of" filtering experience became available on the **Client performance options** page. For more information, see [Optimized is one of filtering experience](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior. |
@@ -1340,7 +1339,7 @@ Sites Services let you build websites that extend your business processes to the
 
 ### Virtual company accounts
 
-The virtual companies feature is no longer supported in Dynamics AX. The virtual companies feature let users set up tables that could be shared by a set of companies. For a description of the feature, see [Company accounts and Virtual company accounts](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies. Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.
+The virtual companies feature is no longer supported in Dynamics AX. The virtual companies feature let users set up tables that could be shared by a set of companies. For a description of the feature, see [Company accounts and Virtual company accounts](../../fin-ops/get-started/ax4-content-retired.md). The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies. Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

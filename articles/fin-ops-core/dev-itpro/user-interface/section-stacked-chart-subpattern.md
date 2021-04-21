@@ -4,7 +4,6 @@
 title: Section Stacked Chart subpattern
 description: This article provides information about the Section Stacked Chart subpattern.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

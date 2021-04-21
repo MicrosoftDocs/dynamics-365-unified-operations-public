@@ -4,7 +4,6 @@
 title: Set the session inactivity timeout
 description: This topic describes how to set the session inactivity timeout.
 author: paulliew
-manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 

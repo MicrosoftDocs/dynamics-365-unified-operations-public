@@ -4,7 +4,6 @@
 title: Create and associate a device
 description: This procedure walks through how to create a new device and associate it to a register. 
 author: jashanno
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

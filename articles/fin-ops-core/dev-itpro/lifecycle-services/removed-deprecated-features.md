@@ -4,7 +4,6 @@
 title: Removed or deprecated features in Lifecycle Services (LCS)
 description: This topic describes features that have been removed, or that are planned for removal from Microsoft Dynamics Lifecycle Services (LCS).
 author: AngelMarshall
-manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 

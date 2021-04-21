@@ -4,7 +4,6 @@
 title: Accounts payable home page
 description: This topic provides an overview of Accounts payable.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 02/15/2019
 ms.topic: index-page
 ms.prod: 
@@ -128,7 +127,7 @@ The following topics provide information about settlements. Settlement is the pr
 
 #### What's new and in development
 
-Go to the [Microsoft Dynamics 365 release plans](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features are planned. 
+Go to the [Microsoft Dynamics 365 release plans](/dynamics365/release-plans/) to see what new features are planned. 
 
 #### Blogs
 

@@ -4,7 +4,6 @@
 title: Include GST when calculating tax collections
 description: This topic explains how to include Goods and Services Tax (GST) when you calculate tax collections.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 

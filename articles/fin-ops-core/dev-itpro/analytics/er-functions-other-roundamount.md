@@ -4,7 +4,6 @@
 title: ROUNDAMOUNT ER function
 description: This topic provides information about how the ROUNDAMOUNT Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
@@ -76,7 +75,7 @@ When the `round rule` parameter is set to **RoundOffType.RoundDown**, this funct
 
 When the `round rule` parameter is set to **RoundOffType.RoundUp**, this function rounds away from zero to the nearest round-off amount.
 
-When the `round rule` parameter is set to **RoundOffType.Ordinary**, this function behaves like the [MROUND](https://support.office.com/article/mround-function-c299c3b0-15a5-426d-aa4b-d2d5b3baf427) Excel function and the [ROUND](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-math-run-time-functions#round) X++ function.
+When the `round rule` parameter is set to **RoundOffType.Ordinary**, this function behaves like the [MROUND](https://support.office.com/article/mround-function-c299c3b0-15a5-426d-aa4b-d2d5b3baf427) Excel function and the [ROUND](../dev-ref/xpp-math-run-time-functions.md#round) X++ function.
 
 ## Remarks
 

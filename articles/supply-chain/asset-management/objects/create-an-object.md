@@ -4,7 +4,6 @@
 title: Create an asset
 description: This topic describes how to create an asset in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 

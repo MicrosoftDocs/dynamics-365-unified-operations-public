@@ -4,7 +4,6 @@
 title: Set up and generate positive pay files
 description: This topic explains how to set up positive pay and generate positive pay files. 
 author: panolte
-manager: AnnBe
 ms.date: 03/06/2019
 ms.topic: article
 ms.prod: 

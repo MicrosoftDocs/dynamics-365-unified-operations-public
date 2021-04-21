@@ -4,7 +4,6 @@
 title: Service order stages  
 description: By defining the stages for a service order and assigning them to workers, you control the flow of a service order through the tasks that various people perform in the service organization.
 author: ShylaThompson
-manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: 

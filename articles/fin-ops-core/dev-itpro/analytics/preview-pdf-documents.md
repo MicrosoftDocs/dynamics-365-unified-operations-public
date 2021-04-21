@@ -3,8 +3,7 @@
 
 title: Preview PDF documents using a PDF viewer 
 description: This topic explains how to use the embedded PDF Preview option to view business documents.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +20,7 @@ ms.reviewer: kfend
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2019-05-21 
 ms.dyn365.ops.version: Platform update 28
 ---
@@ -45,7 +44,7 @@ The legacy HTML-based preview experience is being replaced by a true document pr
 - A built-in tooling that allows users to quickly navigate the contents of the business document.
 
 ## Accessing the PDF preview experience (Platform update 36 or later)
-The PDF preview experience is enabled by default in [Self-Service deployments](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/infrastructure-stack) and in environments hosted on Platform update 39 or later. To use the PDF preview experience in cloud-hosted and Microsoft-managed environments running Platform updates 36 thru 38, use Feature Management to enable the **Report PDF viewer** feature.
+The PDF preview experience is enabled by default in [Self-Service deployments](../deployment/infrastructure-stack.md) and in environments hosted on Platform update 39 or later. To use the PDF preview experience in cloud-hosted and Microsoft-managed environments running Platform updates 36 thru 38, use Feature Management to enable the **Report PDF viewer** feature.
 
 ## Additional feature information
 - Expandable/collapsible sections are available by default. These interactive operations do not function after the PDF document has been created.

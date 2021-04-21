@@ -3,7 +3,6 @@
 title: Application lifecycle management
 description: This topic describes the benefits of making dual-write solution-aware.
 author: sabinn-msft
-manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Quick import export
 description: The purpose of Quick import export is to let you import and export with fewer steps.
 author: margoc
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 

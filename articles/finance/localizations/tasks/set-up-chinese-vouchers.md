@@ -4,7 +4,6 @@
 title: Set up Chinese vouchers
 description: This procedure walks you through setting up Chinese vouchers with specific demo data. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

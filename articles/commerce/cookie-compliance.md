@@ -4,8 +4,7 @@
 title: Cookie compliance
 description: This topic describes considerations for cookie compliance and the default policies that are included in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-manager: annbe
-ms.date: 08/31/2020
+ms.date: 04/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -56,6 +55,57 @@ The following table shows the current reference list of cookies placed by Dynami
 | x-ms-cpim-slice                             | Used to route requests to the appropriate production authentication server instance. |
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Used for maintaining the SSO session.                        |
 | x-ms-cpim-trans                             | Used for tracking transactions (the number of open tabs authenticating against a business-to-consumer (B2C) site), including the current transaction. |
+| \_msdyn365___muid_                            | Used if Experimentation is activated for the environment; utilized as a userId for experimentation purposes. |
+| \_msdyn365___exp_                             | Used if Experimentation is activated for the environment; used to measure performance load balancing.         |
+
+
+
+If a site user selects any social media links within a site, the cookies in the following table will also be tracked on their browser.
+
+
+| Domain                      | Cookie               | Description                                                  | Source                                          |
+| --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| .linkedin.com                | UserMatchHistory         | LinkedIn Ads ID syncing                                      | LinkedIn Feed and Insight tag                                |
+| .linkedin.com               | li_sugr                  | Browser identifier                                           | LinkedIn Insight tag if IP address is not in a designated country |
+| .linkedin.com               | BizographicsOptOut       | Determines opt-out status for third-party tracking.              | LinkedIn guest controls and industry opt-out pages           |
+| .linkedin.com               | \_guid                    | Browser identifier for Google Ads.                            | LinkedIn Feed                                                |
+| .linkedin.com               | li_oatml                 | Member indirect identifier for conversion tracking, retargeting, and analytics. | LinkedIn Ads and Insight tags                                |
+| Various first-party domains | li_fat_id                | Member indirect identifier for conversion tracking, retargeting, and analytics. | LinkedIn Ads and Insight tags                                |
+| .adsymptotic.com            | U                        | Browser identifier                                           | LinkedIn Insight tag if IP address is not in a Designated Country |
+| .linkedin.com                | bcookie                  | Browser ID cookie                                            | Requests to LinkedIn                                         |
+| .linkedin.com                | bscookie                 | Secure browser cookie                                        | Requests to LinkedIn                                         |
+| .linkedin.com               | lang                     | Sets default locale and language.                                 | Requests to LinkedIn                                         |
+| .linkedin.com                | lidc                     | Used for routing.                                             | Requests to LinkedIn                                         |
+| .linkedin.com               | aam_uuid                 | Adobe audience manager cookie                                                     | Set for ID sync                                              |
+| .linkedin.com               | \_ga                      | Google Analytics cookie                                            | Google Analytics                                             |
+| .linkedin.com               | \_gat                     | Google Analytics cookie                                             | Google Analytics                                             |
+| .linkedin.com               | liap                     | Google Analytics cookie                                             | Google Analytics                                             |
+| .linkedin.com               | lissc                    |                                                              |                                                              |
+| .facebook.com               | c_user                   | Cookie contains the user ID of the currently signed-in user.  |   Facebook                                                           |
+| .facebook.com               | datr                     | Used to identify the web browser that is used to connect to Facebook independent of the signed-in user. | Facebook                                                             |
+| .facebook.com               | wd                       | Stores the browser window dimensions and is used by Facebook to optimize the rendering of the page. | Facebook                                                             |
+| .facebook.com               | xs                       | Two-digit number representing the session number. The second portion of the value is a session secret. |  Facebook                                                            |
+| .facebook.com               | fr                       | Contains a unique browser and user ID, used for targeted advertising. |  Facebook                                                            |
+| .facebook.com               | sb                       | Used to improve Facebook friend suggestions.                                |  Facebook                                                            |
+| .facebook.com               | spin                     |                                                              |  Facebook                                                            |
+| .twitter.com                | guest_id                 |                                                              |  Twitter                                                            |
+| .twitter.com                | kdt                      |                                                              |  Twitter                                                             |
+| .twitter.com                | personalization_id       | Cookie contains the user ID of the currently signed-in in user.  |  Twitter                                                             |
+| .twitter.com                | remember_checked_on      |                                                              | Twitter                                                              |
+| .twitter.com                | twid                     |                                                              |  Twitter                                                             |
+| .pinterest.com              | \_auth                    | Cookie contains the user ID of the currently signed-in user.  |   Pinterest                                                           |
+| .pinterest.com              | \_b                       |                                                              |   Pinterest                                                           |
+| .pinterest.com              | \_pinterest_pfob          |                                                              |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_referrer      | Cookie contains pages when user selects the Pinterest button.      |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_sess          | Cookie contains pages when user selects the Pinterest button.      |  Pinterest                                                            |
+| .pinterest.com              | \_routing_id              |                                                              |  Pinterest                                                            |
+| .pinterest.com              | bei                      |                                                              |  Pinterest                                                            |
+| .pinterest.com              | cm_sub                   | Contains a user ID and the timestamp when the cookie was created. |  Pinterest                                                            |
+| .pinterest.com              | csrftoken                | Cookie contains pages when user selects the Pinterest button.      | Pinterest                                                             |
+| .pinterest.com              | sessionFunnelEventLogged | Cookie contains pages when user selects the Pinterest button.      | Pinterest                                                             |
+| .pinterest.com              | Local storage            |                                                              |  Pinterest                                                            |
+| .pinterest.com              | Service Workers          |                                                              |  Pinterest                                                            |
+
 
 ## Site user cookie consent on an e-Commerce site 
 

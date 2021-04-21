@@ -226,6 +226,10 @@
                   href: data-entities/dual-write/integrated-hr.md
                 - name: Party and global address book
                   href: data-entities/dual-write/party-gab.md
+                - name: Using Power Portal with the Party data model
+                  href: data-entities/dual-write/party-gab-portal.md
+                - name: Upgrade to the party and global address book model
+                  href: data-entities/dual-write/upgrade-party-gab.md
                 - name: Note integration
                   href: data-entities/dual-write/notes-integration.md
                 - name: Mapping reference
@@ -299,19 +303,19 @@
             - name: Configure Project Service Automation integration
               items:
               - name: Project Service Automation overview
-                href: ../../finance/project-management/PSA-integration.md
+                href: /dynamics365/project-operations/prod-pma/PSA-integration
               - name: Project Service Automation integration parameters
-                href: ../../finance/project-management/PSA-parameters.md
+                href: /dynamics365/project-operations/prod-pma/PSA-parameters
               - name: Synchronize project contracts and projects
-                href: ../../finance/project-management/project-contracts-templates.md
+                href: /dynamics365/project-operations/prod-pma/project-contracts-templates
               - name: Synchronize project tasks
-                href: ../../finance/project-management/project-tasks-template.md
+                href: /dynamics365/project-operations/prod-pma/project-tasks-template
               - name: Synchronize project expense categories
-                href: ../../finance/project-management/project-categories-templates.md
+                href: /dynamics365/project-operations/prod-pma/project-categories-templates
               - name: Synchronize project estimates from to project forecasts
-                href: ../../finance/project-management/project-estimates-templates.md
+                href: /dynamics365/project-operations/prod-pma/project-estimates-templates
               - name: Synchronize project actuals to the project integration journal
-                href: ../../finance/project-management/project-actuals-templates.md
+                href: /dynamics365/project-operations/prod-pma/project-actuals-templates
       - name: Consuming external web services
         href: data-entities/consume-external-web-service.md
       - name: Electronic messaging
@@ -687,7 +691,7 @@
           - name: Create models and data model elements overview
             href: dev-tools/create-data-model-elements.md
           - name: Naming guidelines for extensions
-            href: extensibility/NamingGuidelines.md
+            href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
           - name: Turn off model customization and deprecate functionality
             href: dev-tools/lock-models.md
         - name: Customization Analysis Report
@@ -712,6 +716,8 @@
         items:
         - name: X++ and debugger features
           href: dev-tools/new-x-debugger-features.md
+        - name: Visual Studio 2017 requirements for X++
+          href: dev-tools/developer-tools-vs2017.md
         - name: Debug X++ code
           href: dev-tools/debug-xpp.md
         - name: EventHandlerResult classes in request or response scenarios
@@ -1024,10 +1030,14 @@
             href: perf-test/atl-faq.md
       - name: Date effectivity
         href: dev-tools/date-effectivity.md
-      - name: ISV licensing
-        href: dev-tools/isv-licensing.md
-      - name: ISV licensing on-premises
-        href: dev-tools/isv-licensing-on-prem.md
+      - name: Development for independent software vendors
+        items:
+        - name: Link X++ modules to packages by using ISV Studio
+          href: dev-tools/isv-studio-solutions.md
+        - name: ISV licensing
+          href: dev-tools/isv-licensing.md
+        - name: ISV licensing on-premises
+          href: dev-tools/isv-licensing-on-prem.md
     - name: General Data Protection Regulation (GDPR)
       items:
       - name: General Data Protection Regulation overview
@@ -1062,8 +1072,6 @@
           href: lifecycle-services/getting-started-lcs.md
         - name: What's new or changed in Lifecycle Services
           href: lifecycle-services/whats-new-lcs.md
-        - name: Known issues
-          href: lifecycle-services/known-issues.md
         - name: Removed or deprecated features in Lifecycle Services (LCS)
           href: lifecycle-services/removed-deprecated-features.md
       - name: Lifecycle Services user guide
@@ -1140,10 +1148,10 @@
           href: lifecycle-services/use-translation-service-tm.md
     - name: Microsoft Power Platform integration
       items:
+      - name: Microsoft Power Platform integration with Finance and Operations
+        href: power-platform/overview.md
       - name: Virtual entities
         items:
-        - name: Microsoft Power Platform integration with Finance and Operations
-          href: power-platform/overview.md
         - name: Entity modeling
           href: power-platform/entity-modeling.md
         - name: Application lifecycle management
@@ -1452,6 +1460,8 @@
         href: lifecycle-services/support-experience.md
       - name: Manage support experiences for Finance and Operations apps
         href: lifecycle-services/cloud-powered-support-lcs.md
+      - name: Production support and monitoring
+        href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
     - name: System administration
       items:
       - name: System administration home page
@@ -1570,6 +1580,8 @@
           href: migration-upgrade/prepare-data-upgrade.md
         - name: AX 2012 upgrade - Data upgrade in sandbox environments using dacpac process
           href: migration-upgrade/upgrade-data-sandbox-dacpac.md
+        - name: Upgrade from AX 2012 - SQL Transactional Replication
+          href: database/replication-setup.md
         - name: AX 2012 upgrade - Data upgrade in sandbox environments
           href: migration-upgrade/upgrade-data-sandbox.md
         - name: AX 2012 upgrade - On-premises environments
@@ -1886,4 +1898,3 @@
     href: ../../finance/index.md
   - name: Dynamics 365 Commerce
     href: ../../commerce/index.md
-

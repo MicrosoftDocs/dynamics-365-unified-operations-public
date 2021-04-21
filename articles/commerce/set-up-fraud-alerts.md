@@ -4,7 +4,6 @@
 title: Set up and work with call center fraud alerts
 description: This topic explains how to set up rules to alert customer service representatives of potentially fraudulent information when orders are processed. You can define specific codes that are used to automatically or manually put suspicious orders on hold. 
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: 

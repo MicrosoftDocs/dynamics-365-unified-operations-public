@@ -4,7 +4,6 @@
 title: Embed canvas apps from Power Apps
 description: This topic explains how to embed canvas apps from Microsoft Power Apps into the client to augment the product's functionality.
 author: jasongre
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
@@ -37,7 +36,7 @@ To learn more about embedding Power Apps, watch the short [How to embed Power Ap
 
 ### Overview
 
-Before you embed a canvas app from Power Apps into the client, you must find or build an app that has the desired visuals or functionality. This topic doesn't include a detailed description of the process for building apps. If you're new to Power Apps, see the [Power Apps documentation](https://docs.microsoft.com/powerapps/).
+Before you embed a canvas app from Power Apps into the client, you must find or build an app that has the desired visuals or functionality. This topic doesn't include a detailed description of the process for building apps. If you're new to Power Apps, see the [Power Apps documentation](/powerapps/).
 
 There are two ways to access a specific canvas app on a page when you're ready to embed the app. You can choose whichever approach fits your scenario better. The first approach uses the **Power Apps** button that has been added to the standard Action Pane. Apps that you add by using this approach appear as items on the **Power Apps** menu button. When you select one of these items, a side pane that contains the embedded app appears. Alternatively, you can embed an app directly on a page as a new tab, FastTab, or blade, or as a new section in a workspace.
 
@@ -70,7 +69,7 @@ The following procedure shows how to embed a canvas app from Power Apps into the
 
 After you've embedded a canvas app on a page and confirmed that it's working correctly with any data context that is passed from that page, you might want to share the app with other users in the system. To share an embedded canvas app, follow these steps.
 
-1. [Share the canvas app](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app) with the appropriate users, so that they can access the app in Power Apps. 
+1. [Share the canvas app](/powerapps/maker/canvas-apps/share-app) with the appropriate users, so that they can access the app in Power Apps. 
 
 2. Make sure that the targeted users have the appropriate personalizations, so that the embedded app appears when those users view the page. You can use either of the following approaches:
 

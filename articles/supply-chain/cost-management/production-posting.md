@@ -4,7 +4,6 @@
 title: Production posting
 description: This article provides information about different types of postings in the production process.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

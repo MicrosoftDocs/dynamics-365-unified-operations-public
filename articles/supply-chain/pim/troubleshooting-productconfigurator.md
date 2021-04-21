@@ -4,7 +4,6 @@
 title: Troubleshoot the product configurator
 description: This topic describes how to fix issues that you might encounter while you work with product configurator.
 author: SmithaNataraj
-manager: tfehr
 ms.date: 11/04/2020
 ms.topic: article
 ms.prod: 

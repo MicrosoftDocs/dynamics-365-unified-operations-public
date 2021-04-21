@@ -4,7 +4,6 @@
 title: Platform updates for version 10.0.16 of Finance and Operations apps (February 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.16 of Finance and Operations apps.
 author: sericks007
-manager: AnnBe
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod: 
@@ -39,7 +38,7 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
+The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
 -  User session management<br>- Administrators have the ability to set a maximum session timeout for individual users.  The range of the session can be from 1 hour to 2160 hours.  When this session length expires, the user is required to sign in with their credentials. For more information, see [User session management](../sysadmin/user-session-management.md).
 
@@ -48,18 +47,18 @@ The following features are included in this release. Some of the listed features
 -  Removing support for Visual Studio 2015<br>- Version 10.0.16 is the last version to support Visual Studio 2015. For more information, see [
 Removing support for Visual Studio 2015](removed-deprecated-features-platform-updates.md#visual-studio-2015).
 
--  [Email throttling](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/email-throttling)<br>- This feature allows non-interactive email providers to adhere to a per-minute email sending limit, which prevents errors that are currently triggered when the system attempts to send more emails than the provider can handle. When email throttling is enabled, sending limits for Microsoft 365 email providers will be set automatically; manual configuration is required for all other email providers. For more information, see 
-[Configure and send email](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email).
+-  [Email throttling](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/email-throttling)<br>- This feature allows non-interactive email providers to adhere to a per-minute email sending limit, which prevents errors that are currently triggered when the system attempts to send more emails than the provider can handle. When email throttling is enabled, sending limits for Microsoft 365 email providers will be set automatically; manual configuration is required for all other email providers. For more information, see 
+[Configure and send email](../../fin-ops/organization-administration/configure-email.md).
 
--  [Document (attachment) history](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/document-attachment-history)<br>- This document management feature creates a history mechanism for record attachments. This allows your organization to maintain an audit of actions related to individual attachments. For example, you can see when an attachment was created, marked for pending deletion, restored, deleted, or moved and who performed the action. The default history retention period is 180 days, however this is configurable on the **Document management parameters** page. For more information, see 
-[Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
+-  [Document (attachment) history](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/document-attachment-history)<br>- This document management feature creates a history mechanism for record attachments. This allows your organization to maintain an audit of actions related to individual attachments. For example, you can see when an attachment was created, marked for pending deletion, restored, deleted, or moved and who performed the action. The default history retention period is 180 days, however this is configurable on the **Document management parameters** page. For more information, see 
+[Configure document management](../../fin-ops/organization-administration/configure-document-management.md).
 
--  [General availability of the Grouping with grids feature](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/grouping-subtotals-grids-general-availability)<br>- For more information, see 
-[Grid capabilities](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities#grouping-tabular-data).
+-  [General availability of the Grouping with grids feature](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/grouping-subtotals-grids-general-availability)<br>- For more information, see 
+[Grid capabilities](../../fin-ops/get-started/grid-capabilities.md#grouping-tabular-data).
 
--  [New HTML editor control](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-html-editor-control)<br>
+-  [New HTML editor control](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-html-editor-control)<br>
 
--  Enhanced the Message::AddAction API<br>- The Message::AddAction API now surfaces the action in notifications when messages are routed to the Action center or Message details pane. For more information, see [Messaging APIs](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/messaging-api-center-bar-details#message).
+-  Enhanced the Message::AddAction API<br>- The Message::AddAction API now surfaces the action in notifications when messages are routed to the Action center or Message details pane. For more information, see [Messaging APIs](../user-interface/messaging-api-center-bar-details.md#message).
 
 - [Mitigate a SQL injection attack](../dev-ref/query-with-parameters.md)<br>- Use the new **Statement.executeQueryWithParameters** API to mitigate SQL injection attacks.
 
@@ -75,7 +74,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 2 plan](/dynamics365-release-plan/2020wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated platform features
 

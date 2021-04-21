@@ -4,7 +4,6 @@
 title: Payments FAQ
 description: This topic describes the payment options that are available in Dynamics 365 Commerce.
 author: athinesh99
-manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod:

@@ -4,7 +4,6 @@
 title: Withholding tax in Thailand
 description: This topic provides information about withholding tax and how to set it up for Thailand.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/05/2021
 ms.topic: article
 ms.prod: 

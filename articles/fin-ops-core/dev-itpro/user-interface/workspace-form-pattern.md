@@ -4,7 +4,6 @@
 title: Workspace form pattern
 description: This topic discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages.
 author: jasongre
-manager: AnnBe
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
@@ -146,8 +145,8 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 links
 
--   [MSDN Role Center Page Reference \[AX 2012\]](https://msdn.microsoft.com/library/cc558235.aspx)
--   [MSDN Role Center User Experience Guidelines \[AX 2012\]](https://msdn.microsoft.com/library/gg886608.aspx)
+-   [MSDN Role Center Page Reference \[AX 2012\]](/dynamicsax-2012/developer/role-center-page-reference)
+-   [MSDN Role Center User Experience Guidelines \[AX 2012\]](/dynamicsax-2012/developer/role-center-user-experience-guidelines)
 
 ### AX 2012 example
 

@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Talent (December 10, 2019)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent for December 10, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 12/10/2019
 ms.topic: article
 ms.prod: 
@@ -47,7 +46,7 @@ Changes described in this section apply to build number 8.1.2660. The numbers in
 
 ### Feature management workspace
 
-The **Feature management** workspace provides a list of features delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them. For more information about Feature management, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+The **Feature management** workspace provides a list of features delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them. For more information about Feature management, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 All new features remain in preview for at least 30 days, and typically 30-60 days. Major features are generally available in October and April of each year following the preview period. As soon as you see new capabilities in the **Feature management** workspace, you can turn them on. Some features may be on by default.
  
@@ -85,7 +84,7 @@ Preview features are only available in **Sandbox** environments.
 
 ### Print performance reviews
 
-See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
+See [Print performance reviews](/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
 
 
 

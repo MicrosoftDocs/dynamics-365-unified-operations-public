@@ -4,7 +4,6 @@
 title: Create item requirements for service orders 
 description: If you need to reserve specific items for a service order, you can create inventory item requirements for it.  
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Point of sale (POS) device activation
 description: This article explains the new guided device activation for Cloud POS and Modern POS.
 author: athinesh99
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

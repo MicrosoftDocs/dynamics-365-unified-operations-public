@@ -4,7 +4,6 @@
 title: Revenue recognition reallocation
 description: This topic provides information about reallocation, which enables organizations to recalculate revenue prices when the terms of a contractual sale are changed. It includes links to other topics that describe how to recognize revenue in multiple scenarios.
 author: kweekley
-manager: aolson
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: 

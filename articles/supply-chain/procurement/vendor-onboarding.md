@@ -4,7 +4,6 @@
 title: Onboard vendors
 description: This topic describes the process for onboarding new vendors. It explains the actions that are required by various roles during this process.
 author: kamaybac
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

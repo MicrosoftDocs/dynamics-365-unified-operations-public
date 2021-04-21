@@ -4,8 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-manager: AnnBe
-ms.date: 04/12/2021
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -70,8 +69,8 @@ These components depend on the following system software:
     > [!IMPORTANT]
     > The domain controller must be Microsoft Windows Server 2012 R2 or later, and it must have a domain functional level of 2012 R2 or more. For more information about domain functional levels, see the following topics:
     >
-    > - [What Are Active Directory Functional Levels?](https://technet.microsoft.com/library/cc787290(v=ws.10).aspx)
-    > - [Understanding Active Directory Domain Services (AD DS) Functional Levels](https://technet.microsoft.com/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
+    > - [What Are Active Directory Functional Levels?](/previous-versions/windows/it-pro/windows-server-2003/cc787290(v=ws.10))
+    > - [Understanding Active Directory Domain Services (AD DS) Functional Levels](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10))
     > - [Full 2-way trust](../../fin-ops/get-started/system-requirements-on-prem.md#full-2-way-trust)
 
 - Optional but **highly** recommended: Active Directory Certificate Services (AD CS) on Windows Server 2016
@@ -82,7 +81,7 @@ Finance + Operations bits are distributed through Microsoft Dynamics Lifecycle S
 
 ## Authentication
 
-The on-premises application works with AD FS. To interact with LCS, you must also configure Azure Active Directory (Azure AD). To complete the deployment and configure the LCS local agent, you must have Azure AD. If you don't already have an Azure AD tenant, you can get one for free by using one of the options that Azure AD provides. For more information, see [Quickstart: Set up a tenant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
+The on-premises application works with AD FS. To interact with LCS, you must also configure Azure Active Directory (Azure AD). To complete the deployment and configure the LCS local agent, you must have Azure AD. If you don't already have an Azure AD tenant, you can get one for free by using one of the options that Azure AD provides. For more information, see [Quickstart: Set up a tenant](/azure/active-directory/develop/active-directory-howto-tenant).
 
 ## Standalone Service Fabric
 
@@ -241,7 +240,7 @@ For example, if your company's domain is contoso.com, your zone for Finance + Op
 
 ### <a name="plancert"></a>Step 2. Plan and acquire your certificates
 
-Secure Sockets Layer (SSL) certificates are required to secure a Service Fabric cluster and all the applications that are deployed. For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as [DigiCert](https://www.digicert.com/ssl-certificate/), [Comodo](https://ssl.comodo.com/), [Symantec](https://www.websecurity.symantec.com/ssl-certificate), [GoDaddy](https://www.godaddy.com/web-security/ssl-certificate), or [GlobalSign](https://www.globalsign.com/en/ssl/). If your domain is set up with [AD CS](https://technet.microsoft.com/library/cc772393(v=ws.10).aspx), you can use the Microsoft setup scripts to create the templates and certificates. Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.
+Secure Sockets Layer (SSL) certificates are required to secure a Service Fabric cluster and all the applications that are deployed. For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as [DigiCert](https://www.digicert.com/ssl-certificate/), [Comodo](https://ssl.comodo.com/), [Symantec](https://www.websecurity.symantec.com/ssl-certificate), [GoDaddy](https://www.godaddy.com/web-security/ssl-certificate), or [GlobalSign](https://www.globalsign.com/en/ssl/). If your domain is set up with [AD CS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772393(v=ws.10)), you can use the Microsoft setup scripts to create the templates and certificates. Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.
 
 Self-signed certificates can be used only for testing purposes. For the sake of convenience, the setup scripts that are provided in LCS include scripts that generate and export self-signed certificates. If you're using self-signed scripts, you will be instructed to run the creation scripts during later steps in this topic. As has been mentioned, these certificates can be used only for testing purposes.
 
@@ -352,7 +351,7 @@ In the new DNS zone, for **each** Service Fabric cluster node of the **Orchestra
 
 ### <a name="joindomain"></a>Step 5. Join VMs to the domain
 
-Join each VM to the domain by completing the steps in [Join a Computer to a Domain](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/join-a-computer-to-a-domain). Alternatively, use the following Windows PowerShell script.
+Join each VM to the domain by completing the steps in [Join a Computer to a Domain](/windows-server/identity/ad-fs/deployment/join-a-computer-to-a-domain). Alternatively, use the following Windows PowerShell script.
 
 ```powershell
 $domainName = Read-Host -Prompt 'Specify domain name (ex: contoso.com)'
@@ -505,7 +504,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 
 > [!NOTE]
 > - The following procedure requires execution on multiple VMs. However, to simplify the process, you can use the remoting scripts that are provided. These scripts let you run the required scripts from a single machine, such as the same machine that is used to run the **.\\Export-Scripts.ps1** command. When the remoting scripts are available, they are declared after a **\# If Remoting** comment in the Windows PowerShell sections. If you use the remoting scripts, you might not have to run the remaining scripts in a section. In these cases, see the section text.
-> - Remoting uses [WinRM](https://msdn.microsoft.com/library/aa384426(v=vs.85).aspx). In some cases, it requires that [CredSSP](https://msdn.microsoft.com/library/windows/desktop/bb931352(v=vs.85).aspx) be enabled. The remoting module enables and disables CredSSP on an execution-by-execution basis. We recommend that you disable CredSSP enabled when it isn't used. Otherwise, there is a risk of credential theft. When you've completed the setup, see the [Step 20. Tear down CredSSP, if remoting was used](#teardowncredssp) section later in this topic.
+> - Remoting uses [WinRM](/windows/win32/winrm/portal). In some cases, it requires that [CredSSP](/windows/win32/secauthn/credential-security-support-provider) be enabled. The remoting module enables and disables CredSSP on an execution-by-execution basis. We recommend that you disable CredSSP enabled when it isn't used. Otherwise, there is a risk of credential theft. When you've completed the setup, see the [Step 20. Tear down CredSSP, if remoting was used](#teardowncredssp) section later in this topic.
 
 1. Copy the contents of each **infrastructure\\VMs\\\<VMName\>** folder to the corresponding VM. (If the remoting scripts are used, they will automatically copy the contents to the target VMs.) Then run the following command as an administrator.
 
@@ -581,7 +580,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 
     > [!IMPORTANT]
     > - If your client machine is a server machine (for example, a machine that is running Windows Server 2016), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
-    > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
+    > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
 
 ### <a name="configurelcs"></a>Step 11. Configure LCS connectivity for the tenant
 
@@ -608,7 +607,7 @@ Only user accounts that have the Global Administrator directory role can add cer
     ```
 
     > [!IMPORTANT]
-    > If you previously installed AzureRM, you should remove it, because it might not be compatible with any existing AzureRM installations in Windows PowerShell 5.1. For more information, see [Migrate Azure PowerShell from AzureRM to Az](https://docs.microsoft.com/powershell/azure/migrate-from-azurerm-to-az).
+    > If you previously installed AzureRM, you should remove it, because it might not be compatible with any existing AzureRM installations in Windows PowerShell 5.1. For more information, see [Migrate Azure PowerShell from AzureRM to Az](/powershell/azure/migrate-from-azurerm-to-az).
 
 3. If the script indicates that the certificate isn't registered, run the following command.
 
@@ -633,11 +632,11 @@ You must set up the following SMB 3.0 file shares:
     > [!WARNING]
     > Keep this file share path as short as possible, to avoid exceeding the maximum path length on the files that will be put in the share.
 
-For information about how to enable SMB 3.0, see [SMB Security Enhancements](https://technet.microsoft.com/library/dn551363(v=ws.11).aspx#BKMK_disablesmb1).
+For information about how to enable SMB 3.0, see [SMB Security Enhancements](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn551363(v=ws.11)#BKMK_disablesmb1).
 
 > [!IMPORTANT]
 > - Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.0 to SMB 1.0. Therefore, we strongly recommend that you disable the SMB 1.0 server. In this way, you can take advantage of the full capabilities of SMB encryption.
-> - To help ensure that your data is protected while it's at rest in your environment, you must enable BitLocker Drive Encryption on every machine. For information about how to enable BitLocker, see [BitLocker: How to deploy on Windows Server 2012 and later](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server).
+> - To help ensure that your data is protected while it's at rest in your environment, you must enable BitLocker Drive Encryption on every machine. For information about how to enable BitLocker, see [BitLocker: How to deploy on Windows Server 2012 and later](/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server).
 
 1. On the file share machine, run the following command.
 
@@ -698,7 +697,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 1. Install SQL Server 2016 SP2 with high availability, unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. (Nevertheless, you might want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
 
     > [!IMPORTANT]
-    > You must enable the [SQL Server and Windows Authentication mode](https://docs.microsoft.com/sql/database-engine/configure-windows/change-server-authentication-mode).
+    > You must enable the [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode).
 
     You can install SQL Server with high availability either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration. Verify that the Database Engine, SSRS, Full-Text Search, and SQL Server Management Tools are already installed.
 
@@ -896,7 +895,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     ```
 
     > [!IMPORTANT]
-    > - Before you can invoke the **Invoke-ServiceFabricEncryptText** command, you must install the [Microsoft Azure Service Fabric software development kit (SDK)](https://docs.microsoft.com/azure/service-fabric/service-fabric-get-started#sdk-installation-only).
+    > - Before you can invoke the **Invoke-ServiceFabricEncryptText** command, you must install the [Microsoft Azure Service Fabric software development kit (SDK)](/azure/service-fabric/service-fabric-get-started#sdk-installation-only).
     > - After you install the Service Fabric SDK, you might receive the following error message: "Invoke-ServiceFabricEncryptText is not recognized command." In this case, restart the computer, and try again.
 
     > [!WARNING]
@@ -910,7 +909,7 @@ To enable Data management and SSIS workloads, you must install SSIS on each AOS 
 2. On the **Feature Selection** page, in the **Features** pane, select the **Integration Services** and **SQL Client Connectivity SDK** check boxes.
 3. Complete the setup, and verify that the installation was successful.
 
-For more information, see [Install Integration Services (SSIS)](https://docs.microsoft.com/sql/integration-services/install-windows/install-integration-services).
+For more information, see [Install Integration Services (SSIS)](/sql/integration-services/install-windows/install-integration-services).
 
 ### <a name="setupssrs"></a>Step 17. Set up SSRS
 
@@ -1087,7 +1086,7 @@ The following illustration shows a successful deployment. Notice that the upper-
 
 ### When you run the New-D365FOGMSAAccounts cmdlet, you receive the following error message: "Key does not exist" 
 
-If you're creating and generating gMSA passwords in your domain for the first time, you must first create the Key Distribution Services KDS Root Key. For more information, see [Create the Key Distribution Services KDS Root Key](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key).
+If you're creating and generating gMSA passwords in your domain for the first time, you must first create the Key Distribution Services KDS Root Key. For more information, see [Create the Key Distribution Services KDS Root Key](/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key).
 
 ### When you run the remoting script Configure-Prereqs-AllVms cmdlet, you receive the following error message: "The WinRM client cannot process the request"
 

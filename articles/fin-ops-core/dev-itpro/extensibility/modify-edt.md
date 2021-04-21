@@ -1,16 +1,11 @@
 ---
-# required metadata
-
 title: Modify extended data types (EDTs) through extension
 description: You can customize several properties on extended data types (EDTs) by using extensions.
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

@@ -3,7 +3,6 @@
 title: Land tax declaration 
 description: This topic provides information about the land tax declaration for Russia.
 author: anasyash
-manager: AnnBe
 ms.date: 06/12/2019
 ms.topic: article
 ms.prod: 
@@ -703,7 +702,7 @@ Generate a land tax declaration
 
     -   Land tax advance calculation format 5.06
 
-    For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+    For more information, see [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 2.  You can upload Data management package settings to work with the assessed
     tax declaration. Follow these steps:

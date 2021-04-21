@@ -4,7 +4,6 @@
 title: Welcome to Dynamics 365 Talent - Onboard
 description: This topic introduces you to the Microsoft Dynamics 365 Talent - Onboard app. Onboard will help you create an amazing onboarding experience for your new employees.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 

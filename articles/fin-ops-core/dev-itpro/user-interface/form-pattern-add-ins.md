@@ -4,7 +4,6 @@
 title: Visual Studio add-ins that support form patterns
 description: The tools for Visual Studio include a number of add-ins that support pattern usage. 
 author: jasongre
-manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 

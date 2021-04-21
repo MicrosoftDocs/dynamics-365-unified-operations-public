@@ -1,31 +1,16 @@
 ---
-# required metadata
-
 title: Macros in X++
 description: This topic describes how to create and use macros in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 189441
-ms.assetid: a2de1498-2c9d-4c5d-b396-5c8703a5ef72
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Macros in X++

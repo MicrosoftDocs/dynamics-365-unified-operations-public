@@ -4,7 +4,6 @@
 title: Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 description: The topic provides an overview of cleanup routines in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: dvliegen
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 

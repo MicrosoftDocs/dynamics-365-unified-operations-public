@@ -4,7 +4,6 @@
 title: Process allocations
 description: This article provides information about allocations, the options for processing them in Microsoft Dynamics 365 Finance, and how they can be used in budget planning. Allocations are used to distribute amounts across multiple ledger account combinations. They help ensure that expenses or revenues are charged to the correct object in accounting.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

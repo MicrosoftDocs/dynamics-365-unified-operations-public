@@ -4,7 +4,6 @@
 title: Nomenclature of product variant numbers and names
 description: This topic describes how you can set up a product number nomenclature to replace the fixed [Product master number - Configuration - Size - Color - Style] format.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 

@@ -4,15 +4,14 @@
 title: Manage leases through the Lease import framework
 description: This topic explains how to use the Lease import framework to adjust multiple leases at the same time.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: AssetLeaseLeaseImportHeader
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -57,9 +56,9 @@ To view the lease staging data before processing is run, select **Staging data**
 The compare function lets you compare a record that you're importing with the corresponding record that's already in your system. To compare an individual lease record, select a lease, and then select **Compare**. You should complete this step to generate a **Differences** report before you migrate the lease records. The Compare functionality compares the values in the staging data to the values for leases that are currently in the system.
 
 > [!NOTE]
-> The Compare functionality doesn't work for leases that have the **Add record** process type, because there is nothing to compare against that lease.
+> The Compare functionality won't work for leases that have the **Add record** process type, because there is nothing to compare against that lease.
 >
-> To compare multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic \> Compare**, and select **Compare**.
+> To compare multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic**, and select **Compare**.
 
 For each entity, you can view the differences between what is currently in the system and what is in the staging tables. For each entity in the staging tables, select **See differences**. The dialog box that appears shows the current value and the proposed staging value.
 
@@ -68,17 +67,17 @@ You can also update the staging value by changing it in the **New Value** column
 You can validate leases to ensure that the records can be brought into the system without introducing errors. Before a lease record is migrated, the system runs several validations to ensure that the record will be successfully imported. To validate an individual lease, select **Validate**.
 
 > [!NOTE]
-> To validate multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic \> Validate**, and select **Compare**.
+> To validate multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic**, and select **Validate**.
 
 To process an individual lease, select **Migrate lease records** on the **Import header** page. When a lease is migrated, the system performs the action that is specified in the **Process type** field.
 
 > [!NOTE]
-> To validate multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic \> Validate**, and select **Compare**.
+> To migrate multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic**, and select **Migrate**.
 
 After the leases are compared, you can run a report to view the differences for each lease that is included in the import ID. To run the report for one lease, select that lease in the staging data, and then select **Compare and view report \> Differences report**.
 
 > [!NOTE]
-> To validate multiple leases at the same time, go to **Asset leasing \> Inquiries and reports \> Differences report**, and select **Compare**.
+> To compare multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic** and select **Compare**. 
 
 ## Set up update fields
 

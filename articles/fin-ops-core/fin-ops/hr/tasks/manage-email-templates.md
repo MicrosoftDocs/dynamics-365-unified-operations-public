@@ -4,7 +4,6 @@
 title: Manage email templates
 description: This topic explains how to manage email templates.  
 author: andreabichsel
-manager: AnnBe 
 ms.date: 08/02/2019
 ms.topic: business-process 
 ms.prod:  

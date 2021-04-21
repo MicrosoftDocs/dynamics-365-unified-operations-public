@@ -4,8 +4,7 @@
 title: Trace the execution of ER formats to troubleshoot performance issues
 description: This topic provides information about how to use the performance trace feature in Electronic reporting (ER) to troubleshoot performance issues.
 author: NickSelin
-manager: AnnBe
-ms.date: 06/12/2019
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -54,10 +53,10 @@ You must also download and locally store the following files.
 
 | File                                  | Content                               |
 |---------------------------------------|---------------------------------------|
-| Performance trace model.version.1     | [Sample ER data model configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
-| Performance trace metadata.version.1  | [Sample ER metadata configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)      |
-| Performance trace mapping.version.1.1 | [Sample ER model mapping configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Performance trace format.version.1.1  | [Sample ER format configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)       |
+| Performance trace model.version.1     | [Sample ER data model configuration](https://download.microsoft.com/download/0/a/a/0aa84e48-8040-4c46-b542-e3bf15c9b2ad/Performancetracemodelversion.1.xml)    |
+| Performance trace metadata.version.1  | [Sample ER metadata configuration](https://download.microsoft.com/download/a/9/3/a937e8c4-1f8a-43e4-83ee-7d599cf7d983/Performancetracemetadataversion.1.xml)      |
+| Performance trace mapping.version.1.1 | [Sample ER model mapping configuration](https://download.microsoft.com/download/7/7/3/77379bdc-7b22-4cfc-9b64-a9147599f931/Performancetracemappingversion1.1.xml) |
+| Performance trace format.version.1.1  | [Sample ER format configuration](https://download.microsoft.com/download/8/6/8/868ba581-5a06-459e-b173-fb00f038b37f/Performancetraceformatversion1.1.xml)       |
 
 ### Configure ER parameters
 

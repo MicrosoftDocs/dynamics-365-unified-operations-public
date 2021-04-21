@@ -4,7 +4,6 @@
 title: Sample for POS integration with control units for Sweden (legacy)
 description: This topic is the building and installation guide for the sample for control unit integration for Sweden. 
 author: EvgenyPopovMBS
-manager: Annbe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 

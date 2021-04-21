@@ -4,7 +4,6 @@
 title: Create and assign a cost distribution policy to a cost control unit
 description: Cost distribution rules are used to distribute costs that have been financially counted on a collective cost center. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 06/27/2017
 ms.topic: business-process 
 ms.prod:  

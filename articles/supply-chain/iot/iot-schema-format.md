@@ -4,7 +4,6 @@
 title: Schema formats for IoT Hub messages
 description: This topic explains how you should design a message schema that you can use in IoT Intelligence.
 author: robinarh
-manager: tfehr
 ms.date: 04/25/2020
 ms.topic: article
 ms.prod: 
@@ -107,7 +106,7 @@ Here is a message for the **Product quality** scenario.
 
 Both the preceding messages contain **id** and **value** properties. The **id** values can be mapped in the **Signal Data Values** table during scenario setup. For the **Equipment downtime** scenario, you will map the **IoTInt.Machine1225.PartOut** value. For the **Product quality** scenario, you will map the **IoTInt.Machine1225.Temperature** value.
 
-For more information, see [Azure IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub/).
+For more information, see [Azure IoT Hub Documentation](/azure/iot-hub/).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

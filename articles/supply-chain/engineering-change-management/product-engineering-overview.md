@@ -4,7 +4,6 @@
 title: Engineering change management overview
 description: This topic provides an overview of engineering change management, which helps you plan and manage product versioning, and manage product lifecycles and engineering changes.
 author: t-benebo
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 
@@ -54,7 +53,7 @@ Before you can use engineering change management, you must enable both the *Engi
 
 First, turn on the features by following these steps.
 
-1. Go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+1. Go to the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 1. Check for updates.
 1. Turn on the feature that is named **Engineering Change Management**.
 1. If you want to use it, then also turn on the feature that is named **Product dimension version**.

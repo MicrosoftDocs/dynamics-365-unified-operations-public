@@ -4,7 +4,6 @@
 title: Assign workers to a leave plan
 description: Assign employees and contractors to leave plans in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 

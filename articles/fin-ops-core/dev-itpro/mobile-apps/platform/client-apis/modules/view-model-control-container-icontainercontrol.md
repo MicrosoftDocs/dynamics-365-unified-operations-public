@@ -3,7 +3,6 @@
 title: Container module
 description: A container control can contain any number of controls.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 

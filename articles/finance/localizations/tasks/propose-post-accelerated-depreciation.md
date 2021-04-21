@@ -4,7 +4,6 @@
 title: Propose and post accelerated depreciation
 description: For Japan, you can propose an accelerated depreciation based on the data on confirmed accelerated depreciation documents. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

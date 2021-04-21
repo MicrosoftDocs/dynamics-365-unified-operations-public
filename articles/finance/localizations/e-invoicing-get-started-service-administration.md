@@ -1,11 +1,10 @@
 ---
 # required metadata
 
-title: Get started with Electronic invoicing add-in service administration
-description: This topic explains how to get started with the Electronic invoicing add-in.
+title: Get started with Electronic invoicing service administration
+description: This topic explains how to get started with Electronic invoicing.
 author: gionoder
-manager: AnnBe
-ms.date: 03/12/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,7 +27,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Get started with Electronic invoicing add-in service administration
+# Get started with Electronic invoicing service administration
 
 [!include [banner](../includes/banner.md)]
 
@@ -56,14 +55,14 @@ Before you complete the procedures in this topic, the following prerequisites mu
 4. Make sure that the **Preview feature enabled** option is set to **Yes**.
 5. On your LCS dashboard, select your LCS deployment project. The LCS project must be running.
 7. On the **Environment add-ins** tab, select **Install a new add-in**.
-8. Select **e-invoicing Services** and in the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This is a 
-fixed value.
+8. Select **e-invoicing Services**.
+9. In the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This is a fixed value.
 10. In the **AAD tenant ID** field, enter the tenant ID of your Azure subscription account.
 11. Review the terms and conditions, and then select the check box.
 12. Select **Install**.
 
 
-## Set up the parameters for RCS integration with the Electronic invoicing add-in
+## Set up the parameters for RCS integration with Electronic invoicing
 
 1. Sign in to your RCS account.
 2. In the **Electronic reporting** workspace, in the **Related links** section, select **Electronic reporting parameters**.
@@ -77,58 +76,56 @@ fixed value.
     | West EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
 
 4. Verify that the **Application Id** field is set to **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value.
-5. In the **LCS Environment Id** field, enter the ID of your LCS subscription account.
+5. In the **LCS Environment Id** field, enter the ID of your LCS environment.
 6. Select **Save**, and then close the page.
 
-## Create Key Vault secret
+## Create Key Vault references
 
 1. Sign in to your RCS account.
-2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing add-in** tile.
+2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing** tile.
 3. On the **Environment setups** page, on the action Pane, select **Service environment**, and then select **Key Vault parameters**.
-4. Select **New** to create a key vault secret.
-5. In the **Name** field, enter the name of the key vault secret. In the **Description** field, enter a description.
-6. In the **Key Vault URI** field, paste the secret from Azure Key Vault.
+4. Select **New** to create a key vault reference.
+5. In the **Name** field, enter the name of the key vault reference. In the **Description** field, enter a description.
+6. In the **Key Vault URI** field, paste the key vault secret from Azure Key Vault. For more information, see [Create an Azure storage account and a key vault](e-invoicing-create-azure-storage-account-key-vault.md).
 7. Select **Save**.
 
 ## Create Storage account secret
 
-1. Go to **System administration** > **Setup** > **Key Vault parameters**, and select a Key vault secret.
-2. In the **Certificates** section, select **Add**.
-3. In the **Name** field, enter the name of the storage account secret and in the **Description** field, enter a description.
-4. In the **Type** field, select **Certificate**.
-5. Select **Save**, and then close the page.
+1. On the **Environment setups** page, on the Action Pane, select **Service environment** > **Key Vault parameters**.
+2. Select a **Key Vault reference** and in the **Certificates** section, select **Add**.
+3. In the **Name** field, enter the name of the storage account secret. For more information, see [Create an Azure storage account and a key vault](e-invoicing-create-azure-storage-account-key-vault.md).
+4. In the **Description** field, enter a description.
+5. In the **Type** field, select **Secret**.
+6. Select **Save**, and then close the page.
 
 ## Create a digital certificate secret
 
-1. Go to **System administration** > **Setup** > **Key Vault parameters**, and select a Key vault secret.
-2. In the **Certificates** section, select **Add**.
-3. In the **Name** field, enter the name of the digital certificate secret and in the **Description** field, enter a description.
-4. In the **Type** field, select **Certificate**.
-5. Select **Save**, and then close the page.
-
-## Create an Electronic invoicing add-in environment
-
-1. Sign in to your RCS account.
-2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing add-in** tile.
+1. On the **Environment setups** page, on the action Pane, select **Service environment** and then select **Key Vault parameters**.
+2. Select a **Key Vault reference** and then in the **Certificates** section, select **Add**.
+3. In the **Name** field, enter the name of the digital certificate secret. For more information, see [Create an Azure storage account and a key vault](e-invoicing-create-azure-storage-account-key-vault.md).
+4. In the **Description** field, enter a description.
+5. In the **Type** field, select **Certificate**.
+6. Select **Save**, and then close the page.
 
 ## Create a service environment
 
-1. On the **Environment setups** page, on the Action Pane, select **Service environment**.
-2. Select **New** to create a new service environment.
-3. In the **Name** field, enter the name of the e-Invoicing environment. In the **Description** field, enter a description.
-4. In the **Storage SAS token secret** field, select the name of the storage account secret that must be used to authenticate access to the storage account.
-5. In the **Users** section, select **Add** to add a user who is allowed to submit electronic invoices through the environment and also connect to the storage account.
-6. In the **User ID** field, enter the alias of the user. In the **Email** field, enter the user's email address.
-7. Select **Save**.
-8. If your country/region-specific invoices require a chain of certificates to apply digital signatures, on the Action pane, select **Key Vault parameters**, then select **Chain of certificates**, and follow these steps:
-
+1. Sign in to your RCS account.
+2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing** tile.
+3. On the **Environment setups** page, on the Action Pane, select **Service environment**.
+4. Select **New** to create a new service environment.
+5. In the **Name** field, enter the name of the e-Invoicing environment. In the **Description** field, enter a description.
+6. In the **Storage SAS token secret** field, select the name of the storage account secret that must be used to authenticate access to the storage account.
+7. In the **Users** section, select **Add** to add a user who is allowed to submit electronic invoices through the environment and also connect to the storage account.
+8. In the **User ID** field, enter the alias of the user. In the **Email** field, enter the user's email address.
+9. Select **Save**.
+10. If your country/region-specific invoices require a chain of certificates to apply digital signatures, on the Action pane, select **Key Vault parameters**, then select **Chain of certificates**, and follow these steps:
     1. Select **New** to create a chain of certificates.
     2. In the **Name** field, enter the name of the chain of certificate. In the **Description** field, enter a description.
     3. In the **Certificates** section, select **Add** to add a certificate to the chain.
     4. Use the **Up** or **Down** button to change the position of the certificate in the chain.
     5. Select **Save**, and then close the page.
     6. Close the page.
-9. On **Service environment** page, on the Action Pane, select **Publish** to publish the environment to the cloud. The value of the **Status** field is changed to **Published**.
+11. On **Service environment** page, on the Action Pane, select **Publish** to publish the environment to the cloud. The value of the **Status** field is changed to **Published**.
 
 ## Create a connected application
 
@@ -147,12 +144,12 @@ fixed value.
 3. In the **Service environment** field, select a service environment.
 4. Select **Save**, and then close the page.
 
-## Set up the Electronic invoicing add-in integration in Finance and Supply Chain Management
+## Set up Electronic invoicing integration in Finance and Supply Chain Management
 
-### Turn on the Electronic invoicing add-in integration feature
+### Turn on the Electronic invoicing integration feature
 
 1. Sign in to your Finance or Supply Chain Management instance.
-2. In the **Feature management** workspace, search for the **Electronic invoicing add-in integration** feature. If this feature doesn't appear on the page, select **Check for updates**.
+2. In the **Feature management** workspace, search for the **Electronic invoicing integration** feature. If this feature doesn't appear on the page, select **Check for updates**.
 3. Select the feature, and then select **Enable now**.
 
 ### Set up the service endpoint URL
@@ -167,8 +164,18 @@ fixed value.
     | North EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
     | West EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
 
-3. In the **Environment** field, enter the name of the Electronic invoicing add-in environment.
+3. In the **Environment** field, enter the name of the service environment published in Electronic invoicing.
 4. Select **Save**, and then close the page.
 
+### Enable Flighting keys
+
+Enable Flight keys for  Microsoft Dynamics 365 Finance or  Microsoft Dynamics 365 Supply Chain Management versions 10.0.17 or earlier. 
+1. Execute the following SQL command:
+
+    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BusinessDocumentSubmissionServiceEnabled', 1)
+    
+    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('ElectronicInvoicingServiceIntegrationFeature', 1)
+
+2. Perform an IISreset command for all AOS's.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

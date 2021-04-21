@@ -4,7 +4,6 @@
 title: Electronic reporting framework API changes for Application update 10.0.17
 description: This topic describes how the APIs of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.17.
 author: NickSelin
-manager: AnnBe
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: 
@@ -69,7 +68,7 @@ if(formatMappingRun.parmShowPromptDialog(true))
 ```
 
 > [!IMPORTANT]
-> To set up action-dependent destinations and force the ER framework to use the provided action code, you must first turn on the **Configure specific ER destinations to be used for different PM actions** feature in the [Feature management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview#the-feature-management-workspace) workspace.
+> To set up action-dependent destinations and force the ER framework to use the provided action code, you must first turn on the **Configure specific ER destinations to be used for different PM actions** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
 
 ## Additional resources
 

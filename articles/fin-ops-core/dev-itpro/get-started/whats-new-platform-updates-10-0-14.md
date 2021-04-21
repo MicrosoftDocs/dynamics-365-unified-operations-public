@@ -4,7 +4,6 @@
 title: Platform updates for version 10.0.14 of Finance and Operations apps (November 2020)
 description: This topic lists the features are included in the platform updates for version 10.0.14 of Finance and Operations apps.
 author: sericks007
-manager: AnnBe
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: 
@@ -39,11 +38,11 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
--  [**Enable a drop-down list on multi-line controls**](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/enable-dropdown-list-multi-line-controls)<br>- This feature adds drop-down lists/lookup capabilities for multi-line string controls. Previously, only single-line input controls permitted drop-down lists.<br>- For more information about enabling lookup behavior on any control, see 
-[Lookup controls](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/lookups-controls).
+-  [**Enable a drop-down list on multi-line controls**](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/enable-dropdown-list-multi-line-controls)<br>- This feature adds drop-down lists/lookup capabilities for multi-line string controls. Previously, only single-line input controls permitted drop-down lists.<br>- For more information about enabling lookup behavior on any control, see 
+[Lookup controls](../user-interface/lookups-controls.md).
 
--  [**Updates to the (Preview) Grouping in grids feature**](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/grouping-subtotals-grids-general-availability)<br>- With this update, you can now expand/collapse groups and select or unselect all rows in a group.<br>- For more information, see 
-[Grid capabilities](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities).
+-  [**Updates to the (Preview) Grouping in grids feature**](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/grouping-subtotals-grids-general-availability)<br>- With this update, you can now expand/collapse groups and select or unselect all rows in a group.<br>- For more information, see 
+[Grid capabilities](../../fin-ops/get-started/grid-capabilities.md).
 
 ## Additional resources
 
@@ -55,7 +54,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 2 plan](/dynamics365-release-plan/2020wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated platform features
 

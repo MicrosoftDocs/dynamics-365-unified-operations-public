@@ -3,8 +3,7 @@
 
 title: Customize embedded reports in analytical workspaces
 description: This topic describes how power users can customize the application reports that are embedded in analytical workspaces.
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
@@ -22,7 +21,7 @@ ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: milindav
+ms.author: richdi
 ms.search.validFrom: 2019-07-20
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -76,7 +75,7 @@ To customize the embedded application solutions, a user must be a member of the 
     By default, you see the standard analytical workspace solution that is packaged with your application. The reports in this solution are automatically deployed and configured for your environment during the provisioning process.
 
     > [!NOTE]
-    > The analytical workspaces require a hosted Microsoft Power BI service that is available only for dedicated environments. For more information, see [Accessing Analytical Workspaces and Reports on 1Box environment](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/).
+    > The analytical workspaces require a hosted Microsoft Power BI service that is available only for dedicated environments. For more information, see [Accessing Analytical Workspaces and Reports on 1Box environment](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment).
 
 3. On the Action Pane, on the **Options** tab, in the **Power BI** group, select **Edit Analytics**.
 
@@ -86,7 +85,7 @@ To customize the embedded application solutions, a user must be a member of the 
 
     ![Analytical workspace report editor](media/analytical-workspace-edit-view.png)
 
-4. Use the Power BI web designer tools to customize the report canvas. The intuitive web controls let you perform typical actions such as adding and removing visuals, changing visual types, and formatting the content. You can also inspect the source of the report visualizations to make sure that decisions are based on the most relevant data that is available in the system. For more information, see [Add visualizations to a Power BI report](https://docs.microsoft.com/power-bi/visuals/power-bi-report-add-visualizations-i).
+4. Use the Power BI web designer tools to customize the report canvas. The intuitive web controls let you perform typical actions such as adding and removing visuals, changing visual types, and formatting the content. You can also inspect the source of the report visualizations to make sure that decisions are based on the most relevant data that is available in the system. For more information, see [Add visualizations to a Power BI report](/power-bi/visuals/power-bi-report-add-visualizations-i).
 5. After you've completed your report customizations, select the **Save** button to promote the report edits. Customizations to the report are reflected immediately in the service. Therefore, users in your organization have access to the latest innovations.
 
     > [!NOTE]

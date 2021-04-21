@@ -4,7 +4,6 @@
 title: Saved views
 description: This topic describes how to use the saved views features.
 author: jasongre
-manager: AnnBe
 ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 

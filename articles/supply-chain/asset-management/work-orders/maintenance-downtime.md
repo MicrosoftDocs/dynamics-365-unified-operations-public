@@ -4,7 +4,6 @@
 title: Maintenance downtime for work orders
 description: This topic describes how to create maintenance downtime registrations on the asset that is selected on a work order.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 

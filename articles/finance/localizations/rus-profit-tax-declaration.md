@@ -3,7 +3,6 @@
 title: Profit tax declaration 
 description: This topic provides information about the profit tax declaration for Russia.
 author: anasyash
-manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
@@ -51,7 +50,7 @@ A data package is available that contains predefined cells names for the profit 
     - Financial reports model mapping (RU)
     - Profit tax declaration format 5.08 (RU)
 
-    For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2. Upload the Data management package settings.
 
@@ -79,7 +78,7 @@ A data package is available that contains predefined cells names for the profit 
     > [!NOTE]
     > Sort the financial report cells that are loaded from the package by the **Description** column. In this way, cells on the page appear in the same order in which they appear in the paper version of the declaration.
 
-    For more information about how to set up financial reports for Russia, see [Financial reporting (Russia)](https://docs.microsoft.com/dynamics365/finance/localizations/rus-financial-reports).
+    For more information about how to set up financial reports for Russia, see [Financial reporting (Russia)](./rus-financial-reports.md).
 
 5. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and validate the electronic message processing that is imported. Most of the data that is imported is presented in the Russian language.
 
@@ -112,7 +111,7 @@ A data package is available that contains predefined cells names for the profit 
     3. Set the **Show dialog** option to **Yes**.
     4. In the **Format mapping** field, select the **Profit tax declaration format 5.08 (RU)** configuration that you downloaded earlier.
 
-For more information about how to set up electronic messaging functionality, see [Electronic messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electronic-messaging).
+For more information about how to set up electronic messaging functionality, see [Electronic messaging](../general-ledger/electronic-messaging.md).
 
 ### Generate a profit tax declaration in electronic format
 

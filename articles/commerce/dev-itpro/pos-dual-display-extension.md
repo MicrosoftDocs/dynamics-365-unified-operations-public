@@ -4,7 +4,6 @@
 title: Extend the point of sale (POS) Dual display view
 description: This topic explains how to extend the POS Dual display view so that it shows custom information. 
 author: mugunthanm
-manager: AnnBe
 ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 

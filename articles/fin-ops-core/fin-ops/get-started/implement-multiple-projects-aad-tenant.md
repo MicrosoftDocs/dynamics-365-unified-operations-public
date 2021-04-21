@@ -4,8 +4,7 @@
 title: Multiple LCS projects and environments on one Azure AD tenant
 description: This topic explains how to implement multiple LCS projects and production environments on the same Azure Active Directory tenant.
 author: ClaudiaBetz-Haubold 
-manager: AnnBe
-ms.date: 07/14/2020
+ms.date: 04/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,7 +33,7 @@ For any new cloud project, one Microsoft Dynamics Lifecycle Services (LCS) Imple
 - A global implementation's requirements for data residency, latency, or data volume can't be met by one instance.
 - Different business units in an organization are implementing the product separately as independent applications.
 
-Manual intervention by the Microsoft Dynamics Service Engineering (DSE) team is required in order to create additional LCS projects on a shared Azure AD tenant. This approach should be used only if a single-instance strategy truly isn't feasible. Before additional LCS projects can be created, customers must provide the business justification and confirm that they understand all the implications of the approach. This process should be started as early in the implementation lifecycle as possible. Customers who decide to proceed should inform the FastTrack solution architect who is assigned to their project that they require additional LCS projects. If no solution architect is assigned to their project, customers should open a support ticket.
+Manual intervention by the Microsoft Dynamics Service Engineering (DSE) team is required in order to create additional LCS projects on a shared Azure AD tenant. This approach should be used only if a single-instance strategy truly isn't feasible. Before additional LCS projects can be created, customers must provide the business justification and confirm that they understand all the implications of the approach. This process should be started as early in the implementation lifecycle as possible. Customers who decide to proceed should open a support ticket through their existing LCS project.
 
 ## Licensing requirements
 

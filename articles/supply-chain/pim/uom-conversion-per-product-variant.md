@@ -4,7 +4,6 @@
 title: Unit of measure conversion per product variant
 description: This topic explains how to set up unit of measure conversions for product variants. It includes an example of the setup.
 author: johanhoffmann
-manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
@@ -110,7 +109,7 @@ To export unit conversions to Excel, on the **Unit conversions** page, on the Ac
 
 ## Additional resources
 
-[Manage unit of measure](tasks/manage-unit-measure.md)
+[Manage units of measure](tasks/manage-unit-measure.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

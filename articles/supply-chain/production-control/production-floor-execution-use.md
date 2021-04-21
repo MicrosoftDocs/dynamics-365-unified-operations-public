@@ -4,7 +4,6 @@
 title: How workers use the production floor execution interface
 description: This topic describes how to use the production floor execution interface from a worker's point of view.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
@@ -141,7 +140,7 @@ The worker selects the third job on the **All jobs** tab and then selects **Bund
 
 ## Working on indirect activities
 
-Indirect activities are activities that aren't directly related to a production order. Indirect activities can be flexibly defined, as described in [Set up indirect activities for time and attendance](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
+Indirect activities are activities that aren't directly related to a production order. Indirect activities can be flexibly defined, as described in [Set up indirect activities for time and attendance](/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
 
 For example, Shannon, a floor worker at Contoso, wants to attend a company meeting, and meetings are considered an indirect activity. One of the following two scenarios applies:
 

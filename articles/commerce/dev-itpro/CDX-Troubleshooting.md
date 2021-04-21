@@ -4,7 +4,6 @@
 title: Commerce Data Exchange troubleshooting
 description: This topic provides information that will help you troubleshoot CDX in implementations.
 author: jashanno
-manager: AnnBe
 ms.date: 08/01/2020
 ms.topic: article
 ms.prod: 

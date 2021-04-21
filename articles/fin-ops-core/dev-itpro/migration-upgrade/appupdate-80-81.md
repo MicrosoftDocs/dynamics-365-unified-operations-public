@@ -4,7 +4,6 @@
 title: Update environments from version 8.0 to 10.0.X
 description: This topic explains the steps required to update existing Finance and Operations 8.0 environments to 10.0.X application releases.
 author: laneswenka
-manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 

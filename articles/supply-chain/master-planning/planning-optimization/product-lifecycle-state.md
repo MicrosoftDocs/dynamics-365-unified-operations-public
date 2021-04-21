@@ -4,7 +4,6 @@
 title: Exclude products that have specific product lifecycle states
 description: This topic explains how to exclude products based on their lifecycle state when Planning Optimization functionality is used.
 author: ChristianRytt
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 

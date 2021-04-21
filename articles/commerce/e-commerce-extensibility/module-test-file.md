@@ -4,7 +4,6 @@
 title: Module test file
 description: This topic covers the module test file in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 

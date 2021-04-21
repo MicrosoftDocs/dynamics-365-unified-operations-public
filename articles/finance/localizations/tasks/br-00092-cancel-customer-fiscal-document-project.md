@@ -4,7 +4,6 @@
 title: Cancel a customer fiscal document (project) (Brazil)
 description: You can cancel a customer invoice for a project. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  

@@ -4,8 +4,7 @@
 title: Prepare for go-live
 description: This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
-manager: AnnBe
-ms.date: 11/30/2020
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -99,7 +98,7 @@ Regardless of whether the environment is a cloud-hosted environment or a downloa
 
 ## FastTrack Go-live assessment
 
-All customers must complete a go-live review with the Microsoft FastTrack team before their production environment can be deployed. This assessment should be successfully completed before you request your production environment. If you aren't familiar with Microsoft FastTrack, see [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md).
+All customers must complete a go-live review with the Microsoft FastTrack team before their production environment can be deployed. This assessment should be successfully completed before you request your production environment. If you aren't familiar with Microsoft FastTrack, see [FastTrack for Dynamics 365 home page](/dynamics365/fasttrack/).
 
 About eight weeks before go-live, the FastTrack team will ask you to fill in a go-live checklist. 
 

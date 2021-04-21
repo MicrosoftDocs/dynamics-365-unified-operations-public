@@ -4,7 +4,6 @@
 title: Stay compliant with user licensing requirements
 description: This topic provides information about how you can stay compliant with the user licensing requirements for Finance and Operations apps.
 author: peakerbl 
-manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
@@ -38,7 +37,7 @@ The licensing requirements for users are determined by the security roles that a
 - Privileges
 - Directly referenced securable objects 
 
-For more information, see [Role-based security](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security).
+For more information, see [Role-based security](./role-based-security.md).
 
 The licensing requirements for users are determined at the organization or tenant level. This topic is focused on the requirements for a single environment. If you have multiple environments, the requirements must be analyzed across all of them.
 
@@ -112,9 +111,9 @@ The totals per specific full user license counts aren't divided into *base* lice
 
 For information about how to buy and license Finance and Operations apps, see [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
-For information about how to assign licenses to users in the Microsoft 365 admin center, see [Assign licenses to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+For information about how to assign licenses to users in the Microsoft 365 admin center, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
-Additional user licenses are required when multiple implementation projects exist for the same tenant. For more information, see [Multiple LCS projects and production environments on one Azure AD tenant](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant#licensing-requirements).
+Additional user licenses are required when multiple implementation projects exist for the same tenant. For more information, see [Multiple LCS projects and production environments on one Azure AD tenant](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md#licensing-requirements).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

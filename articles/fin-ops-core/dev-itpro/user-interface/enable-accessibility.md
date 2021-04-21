@@ -4,7 +4,6 @@
 title: Accessibility in forms, products, and controls
 description: This topic describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
 author: RobinARH
-manager: AnnBe
 ms.date: 08/13/2018
 ms.topic: article
 ms.prod: 

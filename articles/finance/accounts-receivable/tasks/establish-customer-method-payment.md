@@ -4,7 +4,6 @@
 title: Establish customer method of payment
 description: This topic explains how to create a method of payment for customer payments. 
 author: ShivamPandey-msft
-manager: AnnBe 
 ms.date: 07/31/2019
 ms.topic: business-process 
 ms.prod:  

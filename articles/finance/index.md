@@ -4,7 +4,6 @@
 title: Finance home page
 description: This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance. 
 author: roschlom
-manager: AnnBe
 ms.date: 06/20/2018
 ms.topic: index-page
 ms.prod: 
@@ -44,11 +43,11 @@ Select a feature area to learn more about it.
         - [Cost accounting](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Expense management](expense-management/expense-management.md)
-        - [Financial reporting](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
+        - [Expense management](/dynamics365/project-operations/prod-exp/expense-management)
+        - [Financial reporting](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
         - [Fixed assets](fixed-assets/fixed-assets.md)
         - [General ledger and Financial reporting](general-ledger/general-ledger.md) 
-        - [Project management and accounting](project-management/overview-project-management-accounting.md)
+        - [Project management and accounting](/dynamics365/project-operations/prod-pma/overview-project-management-accounting)
         - [Public sector](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
@@ -71,7 +70,7 @@ Check out the how-to videos that are now available on the [Microsoft Dynamics 36
 
 ### Country/region functionality
 
-Country/region regulations affect tax setup and other areas of financial management. Refer to the [Localization and regulatory features](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) section of our help content to learn about country/region-specific functionality.
+Country/region regulations affect tax setup and other areas of financial management. Refer to the [Localization and regulatory features](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json) section of our help content to learn about country/region-specific functionality.
 
 ### Additional content
 
@@ -79,6 +78,6 @@ Supply chain management functionality covers parts of the procure-to-pay process
 
 ## eLearning courses
 
-For online courses and training, check out [Dynamics 365 Finance on Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-finance&resource_type=learning%20path).
+For online courses and training, check out [Dynamics 365 Finance on Microsoft Learn](/learn/browse/?products=dynamics-finance&resource_type=learning+path).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

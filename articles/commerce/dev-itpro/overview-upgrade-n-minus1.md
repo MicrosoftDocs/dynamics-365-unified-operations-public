@@ -4,7 +4,6 @@
 title: Upgrade and N-1 support for Commerce
 description: Upgrade support and N-1 support have been enabled in the release of Dynamics 365 Commerce.
 author: athinesh99
-manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 

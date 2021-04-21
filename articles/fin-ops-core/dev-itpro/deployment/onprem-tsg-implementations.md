@@ -2,8 +2,7 @@
 title: Scripts for resolving issues in on-premises environments
 description: This topic will serve as a central repository for scripts that you can use to fix issues in on-premises environments.
 author: faix
-manager: AnnBe
-ms.date: 04/12/2021
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
