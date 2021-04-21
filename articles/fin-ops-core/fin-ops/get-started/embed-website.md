@@ -123,7 +123,7 @@ If the website isn't rendering correctly after being embedded in a Finance and O
 If x-frame-options exists in the response headers with a value of DENY or SAMEORIGIN, then the website cannot currently be embedded. You will need to work with the owner of the app to safely allow it to be embedded.  
 
 ### [Developer] Modeling a website on a form
-While this topic focuses on embedding third-party apps or websites through personalization, developers also have the option to embedding these apps to a form using the Visual Studio development experience. To do this, simply add a WebHostControl to the form. The metadata properties available on the control provide the same capabilities as the personalization experience.
+While this topic focuses on embedding third-party apps or websites through personalization, developers also have the option to embedding these apps to a form using the Visual Studio development experience. To do this, simply add a WebsiteHostControl to the form. The metadata properties available on the control provide the same capabilities as the personalization experience.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
