@@ -34,14 +34,28 @@ This topic explains how to set up your environment to use the Tax Calculation ma
 
 1. Set up power platform integration in Lifecycle Services (LCS). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
 2. Set up Dynamics 365 Finance and Microsoft Dataverse. For more information, see [Getting the solution](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution) and [Authentication and authorization](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
-3. Import the *Prerequisite tax service virtual entity solution* from the [Tax service virtual entity](https://go.microsoft.com/fwlink/?linkid=2158160).
+3. Follow the [Enabling virtual entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/admin-reference#enabling-virtual-entities) to set up these entities:
+      - CompanyInfoEntity
+      - CurrencyEntity
+      - CustCustomerV3Entity
+      - DeliveryTermsEntity
+      - EcoResProductCategoryEntity
+      - EcoResReleasedProductV2Entity
+      - LogisticsAddressCityEntity
+      - LogisticsAddressCountryRegionTranslationEntity
+      - LogisticsAddressStateEntity
+      - PurchProcurementChargeCDSEntity
+      - SalesChargeCDSEntity
+      - TaxGroupEntity
+      - TaxItemGroupHeadingEntity
+      - VendVendorV2Entity
 4. Set up the Dynamics 365 Regulatory Configuration Service (RCS). 
 5. Create a service request for Microsoft to enable flighting of the following features:
 
       - ERCdsFeature
       - TaxServiceCDSFeature
 
-6. In Finance, go to the **Feature management** workspace, and enable the following features:
+6. Go to the **Feature management** workspace, and enable the following features:
 
       - (Preview) Electronic reporting Dataverse datasources support
       - (Preview) Tax Service Dataverse datasources support
