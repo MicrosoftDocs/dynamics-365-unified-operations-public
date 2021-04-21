@@ -64,7 +64,7 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-|565054 |Unable to view 'Workers without employment' when XDS is on. |This fixed the issues that once XDS was turned on, only system admins can view the contents of the Workers without employments list. You will need to turn this functionality on in feature management.  Learn more about [Workers without employment](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-personnel-workers-without-employment)|
+|565054 |Unable to view 'Workers without employment' list content when 'Advanced access' is on. |This fixed the issue that once 'Advanced access' was turned on, only system admins could view the contents of the 'Workers without Employment' list. Because this is a security change you will need to opt in for this in feature management. Once the feature is on, those roles that have access to the form will see the contents, even though advanced access is on.  Learn more about [Workers without employment](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-personnel-workers-without-employment)|
 | ## Affordable Care coverage option is taking to the main Affordable Care coverage group form instead of Affordable Care coverage form for the particular Employee - (565963) | | |
 | 573676 | Cannot add Period to BenefitPlan - (573676) On the BenefitPlan form (Benefits Management > Links > Benefit plans) | Fixed bugs where Periods could not be added or updated on existing Benefit plans on th form |
 | ## Benefits Workspace V2 feature does not handle GA feature stage dynamically based on feature management - (573617) | | |
