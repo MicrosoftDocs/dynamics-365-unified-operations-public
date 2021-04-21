@@ -144,6 +144,8 @@ For this lookup field, the following master data sources are available for the s
 - Sales tax group
 - Customer account ID
 - Customer group
+- Vendor account ID (starting from KB4615826)
+- Vendor group (starting from KB4615826)
 
 This lookup field defines conditions that are based on current company's master data sources. These conditions will produce a mark of **1** for the corresponding element from the list of designations that are related to the procedures under the **\<SprzedazWiersz\>** tag. Several designations can be marked for the same output VAT record. Therefore, if a company must report different designations, separate conditions must be defined.
 
