@@ -4,7 +4,7 @@
 title: Set up an environment for master data lookup
 description: This topic explains how to set up your environment to use the Tax Calculation master data lookup functionality.
 author: kai-cloud
-ms.date: 04/20/2021
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ This topic explains how to set up your environment to use the Tax Calculation ma
 
 1. Set up power platform integration in Lifecycle Services (LCS). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
 2. Set up Dynamics 365 Finance and Microsoft Dataverse. For more information, see [Getting the solution](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution) and [Authentication and authorization](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
-3. Follow the [Enabling virtual entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/admin-reference#enabling-virtual-entities) to set up these entities:
+3. Set up the following entities. For more information, see [Enabling virtual entities](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#enabling-virtual-entities).
       - CompanyInfoEntity
       - CurrencyEntity
       - CustCustomerV3Entity
