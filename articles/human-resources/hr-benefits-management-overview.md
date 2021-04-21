@@ -4,7 +4,7 @@
 title: Benefits management overview
 description: Overview of Benefits management feature in Dynamics 365 Human Resources. Offer your employees extended benefits options with an easy-to-use online experience.
 author: andreabichsel
-ms.date: 09/17/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,6 +45,9 @@ To remain competitive, you must offer a rich set of benefits to attract and reta
 - Qualified life event processing supports future life events.
 
 If you would like to access the demo data, you'll need to redeploy your sandbox environment.
+
+>[!NOTE]
+>You can now customize Benefits management forms. You can now add custom fields related to coverage rates to the **Coverage option** form for benefit plans. For more information about working with custom fields, see [Custom fields](hr-developer-custom-fields.md).
 
 ## Enable Benefits management
 
