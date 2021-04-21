@@ -61,20 +61,20 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| 526420 | Integrate missing code from Elevate into Life events |  |
-| 565054 | Unable to view 'Workers without employment' list content when 'Advanced access' is on. | This fixed the issue that once 'Advanced access' was turned on, only system admins could view the contents of the 'Workers without Employment' list. Because this is a security change you will need to opt in for this in feature management. Once the feature is on, those roles that have access to the form will see the contents, even though advanced access is on.  Learn more about [Workers without employment](hr-personnel-workers-without-employment.md). |
-| 565963 | Affordable Care coverage option is taking to the main Affordable Care coverage group form instead of Affordable Care coverage form for the particular Employee | |
-| 573676 | Cannot add Period to BenefitPlan On the BenefitPlan form (Benefits Management > Links > Benefit plans) | Fixed bugs where Periods could not be added or updated on existing Benefit plans on th form |
-| 573617 | Benefits Workspace V2 feature does not handle GA feature stage dynamically based on feature management | |
-| 574101 | Show a notification to the user upon login if reason codes need to be migrated |  |
-| 552164 | “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda | |
-| 574502 | “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda | |
 | 445141 | HcmCompensationCrossCompanyFeature uses the same "Learn More" FwLink URL as HcmPerformanceReviewReportFeature.xml | |
-| 570586 | Leave request validation fails when employment is terminated before the latest transaction for that worker across all leave plans | After an employment is terminated, leave request validation doesn't fail based on employee leave transactions.|
-| 572343 | Required reason code isn't displayed when Cross Company Leave view feature enabled |When Cross company leave is enabled, reason code now the requiring a reason code now displays as expected. |
+| 526420 | Integrate missing code from Elevate into Life events |  |
+| 552164 | “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda | |
 | 560614 | Benefits - Life event Options: discrepancies in the tooltip documentation and code behavior | Updated tooltips in Life EVent options to depict correct behavior |
 | 560616 | Benefits - Life event Options : Life event options are editable in Worker Benefit plan but changes are not affected | Updated behavior of Life Event Option switches to enable / disable based on dependant options as per tooltip documentation |
+| 565054 | Unable to view 'Workers without employment' list content when 'Advanced access' is on. | This fixed the issue that once 'Advanced access' was turned on, only system admins could view the contents of the 'Workers without Employment' list. Because this is a security change you will need to opt in for this in feature management. Once the feature is on, those roles that have access to the form will see the contents, even though advanced access is on.  Learn more about [Workers without employment](hr-personnel-workers-without-employment.md). |
+| 565963 | Affordable Care coverage option is taking to the main Affordable Care coverage group form instead of Affordable Care coverage form for the particular Employee | |
+| 570586 | Leave request validation fails when employment is terminated before the latest transaction for that worker across all leave plans | After an employment is terminated, leave request validation doesn't fail based on employee leave transactions.|
 | 570783 | Enabling and disabling cross company leave in Human resources shared parameters changes what employees employed in a single company see in leave requests. | Employees employed in a single company see no changes in requesting time off if the parameter is enabled or disabled.|
+| 572343 | Required reason code isn't displayed when Cross Company Leave view feature enabled |When Cross company leave is enabled, reason code now the requiring a reason code now displays as expected. |
+| 573617 | Benefits Workspace V2 feature does not handle GA feature stage dynamically based on feature management | |
+| 573676 | Cannot add Period to BenefitPlan On the BenefitPlan form (Benefits Management > Links > Benefit plans) | Fixed bugs where Periods could not be added or updated on existing Benefit plans on th form |
+| 574101 | Show a notification to the user upon login if reason codes need to be migrated |  |
+| 574502 | “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda | |
 
 ## In preview
 
@@ -92,7 +92,7 @@ The following new features are in preview. For more information about turning fe
 | --- | --- |
 | Skills entered by a manager for their employees can be auto-approved by a workflow | Coming soon. |
 | Platform update 10.0.18 (42) | Platform update 10.0.18 is scheduled to begin rolling out with the service release on May 17, 2021. For more information, see [Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
-| Custom field support in Benefits management eligibity rules  | [Custom field support for eligibility processin](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
+| Custom field support in Benefits management eligibility rules  | [Custom field support for eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
