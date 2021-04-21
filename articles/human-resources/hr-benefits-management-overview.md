@@ -48,6 +48,7 @@ If you would like to access the demo data, you'll need to redeploy your sandbox 
 
 >[!NOTE]
 >You can now customize Benefits management forms. You can now add custom fields related to coverage rates to the **Coverage option** form for benefit plans. For more information about working with custom fields, see [Custom fields](hr-developer-custom-fields.md).
+>![Benefits management custom fields](media/hr-benefits-management-custom-fields.png)
 
 ## Enable Benefits management
 
