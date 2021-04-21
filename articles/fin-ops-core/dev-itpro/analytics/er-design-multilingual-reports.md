@@ -4,7 +4,7 @@
 title: Design multilingual reports in Electronic reporting
 description: This topic explains how you can use Electronic reporting (ER) labels to design and generate multilingual reports.
 author: NickSelin
-ms.date: 09/14/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -164,31 +164,31 @@ ER supports different ways to specify a language for a generated report. In the 
 
     ![Specify in the ER Operation designer a runtime defined language as the language of a generated report](./media/er-multilingual-labels-language-context-runtime.png)
 
-## Culture specific formatting
+## Culture-specific formatting
 
-ER supports different ways to specify a culture for a generated report to do proper culture specific date, time, and numeric values formatting. When you design an ER format, in the **Culture preferences** field on the **Format** tab, you can select the following values for every format component of the **Common\File**, **Excel\File**, **PDF\File**, or **PDF\Merger** type:
+ER supports different ways to specify a culture for a generated report which allows for the correct culture-specific date, time, and numeric value formatting. When you design an ER format, on the **Format** tab in the **Culture preferences** field, you can select the following values for every format component of the **Common\File**, **Excel\File**, **PDF\File**, or **PDF\Merger** type:
 
-- **User preference** – Format values in a generated report based on the user's preferred culture that is defined on the **Preferences** tab of the **User options** page in the **Date, time, and number format** field.
+   - **User preference**: Format the values in a generated report based on the user's preferred culture which is defined on the **Preferences** tab of the **User options** page in the **Date, time, and number format** field.
 
-    ![Specify in the ER Operation designer a user preferred culture as the culture of a generated report](./media/er-multilingual-labels-culture-context-user-preferred.png)
+   ![Specify in the ER Operation designer a user preferred culture as the culture of a generated report](./media/er-multilingual-labels-culture-context-user-preferred.png)
 
-- **Explicitly defined** – Format values by using a culture that is specified at design time.
+   - **Explicitly defined**: Format the values according to the culture that is specified at design time.
 
-    ![Specify in the ER Operation designer a design time defined culture as the culture of a generated report](./media/er-multilingual-labels-culture-context-fixed.png)
+   ![Specify in the ER Operation designer a design time defined culture as the culture of a generated report](./media/er-multilingual-labels-culture-context-fixed.png)
 
-- **Defined at run-time** – Format values in a generated report based on the culture that is specified at runtime. If you select this value,  on the **Mapping** tab, in the **Date, time, and number format** field, configure an ER expression that returns the culture code for the culture, such as the culture of the corresponding customer.
+   - **Defined at run-time**: Format the values in a generated report based on the culture that is specified at runtime. If you select this value, on the **Mapping** tab, in the **Date, time, and number format** field, configure an ER expression that returns the culture code for the culture, such as the culture of the corresponding customer.
 
-    ![Specify in the ER Operation designer a runtime defined culture as the culture of a generated report](./media/er-multilingual-labels-culture-context-runtime.png)
+   ![Specify in the ER Operation designer a runtime defined culture as the culture of a generated report](./media/er-multilingual-labels-culture-context-runtime.png)
 
 
-> [!NOTE]
-> An ER component for which you specified a particular culture may contain child ER components that were configured to populate a text value. By default, a culture of the parent component is used for formatting values of such components. You can use the following built-in ER functions to configure bindings for such components and apply an alternative culture for values formatting:
->- [DATEFORMAT](er-functions-datetime-dateformat.md#syntax-2)
->- [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
->- [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
+   > [!NOTE]
+   > An ER component for which you specified a particular culture may contain child ER components that were configured to populate a text value. By default, a culture of the parent component is used to format the values of such components. You can use the following built-in ER functions to configure bindings for such components and apply an alternative culture for values formatting:
+   > - [DATEFORMAT](er-functions-datetime-dateformat.md#syntax-2)
+   > - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
+   > - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
 
-> [!NOTE]
-> In version 10.0.20 and later, the locale of the format components of the **Common\File** and **Excel\File** type is used for values formatting during the [PDF conversion](electronic-reporting-destinations.md#OutputConversionToPDF) of a generated document.
+   > [!NOTE]
+   > In version 10.0.20 and later, the locale of the format components of the **Common\File** and **Excel\File** type is used for values formatting during the [PDF conversion](electronic-reporting-destinations.md#OutputConversionToPDF) of a generated document.
 
 ## Translation
 
