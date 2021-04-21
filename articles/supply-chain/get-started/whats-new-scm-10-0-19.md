@@ -47,19 +47,14 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
 
-- [Engineering change management FAQs](../engineering-change-management/change-management-faq.md)
-- [LTL classes](../transportation/ltl-class.md)
-- [Manage unit of measure](../pim/tasks/manage-unit-measure.md)
-- [Product configuration model calculations](../pim/config-model-calculations.md)
-- [Troubleshoot warehouse batch and serial reservation hierarchies](../warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md)
-- [Unified number sequence for job IDs](../production-control/unified-job-ids.md)
-- [Wave creation and processing](../warehousing/wave-processing.md)
-- [Warehouse parameters for wave processing](../warehousing/wave-warehouse-parameters.md)
-- [Wave templates](../warehousing/wave-templates.md)
-- [Wave allocation](../warehousing/wave-allocation-method.md)
-- [Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md)
-- [Containerization](../warehousing/wave-containerization.md)
-- [Wave execution notifications](../warehousing/wave-execution-notifications.md)
+| Feature area | New or updated topics |
+|---|---|
+| Engineering change management | [Engineering change management FAQs](../engineering-change-management/change-management-faq.md) |
+| Product information management | [Manage unit of measure](../pim/tasks/manage-unit-measure.md)<br><br>[Product configuration model calculations](../pim/config-model-calculations.md) |
+| Production control | [Unified number sequence for job IDs](../production-control/unified-job-ids.md) |
+| Transportation management | [LTL classes](../transportation/ltl-class.md) |
+| Warehouse management | [Troubleshoot warehouse batch and serial reservation hierarchies](../warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md) |
+| Warehouse management, wave creation and processing | [Wave creation and processing](../warehousing/wave-processing.md)<br><br>[Warehouse parameters for wave processing](../warehousing/wave-warehouse-parameters.md)<br><br>[Wave templates](../warehousing/wave-templates.md)<br><br>[Wave allocation](../warehousing/wave-allocation-method.md)<br><br>[Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Containerization](../warehousing/wave-containerization.md)<br><br>[Wave execution notifications](../warehousing/wave-execution-notifications.md) |
 
 ## Additional resources
 
