@@ -692,5 +692,8 @@ When you generate the JPK-V7M report in XML format for a period that is shorter 
 - The **\<Miesiac\>** tag will contain information about the date interval that report is generated for.
 - The **\<P_\*\>** tag of the **Deklaracja** part of the report contains calculated values that represent the aggregation of amounts from the **SprzedazWiersz** and **ZakupWiersz** parts of the report. The values in this tag will be rounded to 'a two-digit decimal value, but not an integer value.
 
+## Report documents from different counterparties with same NIP numbers from different countries
+
+Current data structure used by the report allows to collect only first found ISO code form **Tax exempt numbers** table for the **Tax exempt number** used for invoices and posted in **Tax transactions** table. We recommend using different Tax exempt numbers for different countries. To differentiate identic **Tax exempt number** from different countries a prefix with ISO code can be used. First two letters of ISO country code will be omitted during reporting in 'NrDostawcy' tag.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
