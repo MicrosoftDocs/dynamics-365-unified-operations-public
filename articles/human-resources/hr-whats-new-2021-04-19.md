@@ -49,7 +49,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Show a notification to the user upon login if reason codes need to be migrated. - (574101) | | |
+| Show a notification to the user upon login if reason codes need to be migrated (574101) | | |
 | Integrate missing code from Elevate into Life Events  - (526420) | | |
 | Platform update 10.0.17 (41) | -- | [Platform updates for version 10.0.17 of Finance and Operations apps (April 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
 | Custom Fields support in Benefits Management forms | [Custom field support in benefits management](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [Benefits management overview](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-management-overview)|
