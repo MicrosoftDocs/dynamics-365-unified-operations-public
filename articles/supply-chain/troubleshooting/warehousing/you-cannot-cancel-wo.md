@@ -17,15 +17,15 @@ ms.dyn365.ops.version: 10.0.18
 
 Error code: WAX708
 
+## Symptoms
+
 The system shows the following error message:
 
 > You cannot cancel work that is on a user.
 
-## Issue description
+## Cause
 
-The work is locked by a user and can't be canceled.
-
-On the **General** tab, the **Work status** field is set to *In progress*, and the **Locked by** field is set to a user ID.
+The work is locked by a user and can't be canceled. To confirm this, open the work ID and then open the **General** tab. If the work is locked, the **Work status** field will be set to *In progress*, and the **Locked by** field will be set to a user ID.
 
 ## Resolution
 

@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 03/22/2021
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -299,15 +299,17 @@ You must create several user or service accounts for Finance + Operations to wor
 | Financial Reporting Application Service Account         | gMSA | | Contoso\\svc-FRAS$ |
 | Financial Reporting Process Service Account             | gMSA | | Contoso\\svc-FRPS$ |
 | Financial Reporting Click Once Designer Service Account | gMSA | | Contoso\\svc-FRCO$ |
-| AOS Service Account                                     | gMSA | You should create this user for future proofing. Microsoft plans to enable AOS to work with the gMSA in upcoming releases. By creating this user at the time of setup, you help to ensure a seamless transition to the gMSA. | Contoso\\svc-AXSF$ |
+| AOS Service Account                                     | gMSA | You should create this user for future proofing. Microsoft plans to enable AOS to work with the gMSA in upcoming releases. By creating this user at the time of setup, you help to ensure a seamless transition to the gMSA.\* | Contoso\\svc-AXSF$ |
 | SSRS bootstrapper Service Account                       | gMSA | The reporting service bootstrapper uses this account to configure the SSRS service. | Contoso\\svc-ReportSvc$ |
-| AOS Service Account                                     | Domain account | AOS uses this user in the general availability (GA) release. | Contoso\\AXServiceUser |
-| AOS SQL DB Admin user                                   | SQL user | Finance + Operations uses this user to authenticate with SQL\*. This user will also be replaced by the gMSA user in upcoming releases\*\*. | AXDBAdmin |
+| AOS Service Account                                     | Domain account | AOS uses this user in the general availability (GA) release.\* | Contoso\\AXServiceUser |
+| AOS SQL DB Admin user                                   | SQL user | Finance + Operations uses this user to authenticate with SQL\*\*. This user will also be replaced by the gMSA user in upcoming releases\*\*\*. | AXDBAdmin |
 | Local Deployment Agent Service Account                  | gMSA | The local agent uses this account to orchestrate the deployment on various nodes. | Contoso\\Svc-LocalAgent$ |
 
-\* If the password of the SQL user contains special characters, you might encounter issues during deployment.
+\* These accounts should not have their regional settings changed. They should have the default EN-US region settings. 
 
-\*\* The SQL user name and password for SQL authentication are secured because they are encrypted and stored in the file share.
+\*\* If the password of the SQL user contains special characters, you might encounter issues during deployment.
+
+\*\*\* The SQL user name and password for SQL authentication are secured because they are encrypted and stored in the file share.
 
 ### <a name="createdns"></a>Step 4. Create DNS zones and add A records
 

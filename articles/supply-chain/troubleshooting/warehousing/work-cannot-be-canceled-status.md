@@ -17,11 +17,13 @@ ms.dyn365.ops.version: 10.0.18
 
 Error code: WAX2190
 
+## Symptoms
+
 The system shows the following error message:
 
 > You cannot cancel work %1 because it has a status of %2.
 
-## Issue description
+## Cause
 
 The work can't be canceled in its current state.
 

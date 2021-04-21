@@ -17,11 +17,13 @@ ms.dyn365.ops.version: 10.0.18
 
 Error code: WeightMustBePositive
 
+## Symptoms
+
 The system shows the following error message:
 
 > Weight must be positive.
 
-## Issue description
+## Cause
 
 The **Gross Weight** field is set to *0* (zero) or a negative value.
 
