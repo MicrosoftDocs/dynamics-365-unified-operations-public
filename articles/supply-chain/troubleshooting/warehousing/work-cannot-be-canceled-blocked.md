@@ -17,11 +17,13 @@ ms.dyn365.ops.version: 10.0.18
 
 Error code: WHSCancellationOfWorkBlockedByExecutingWave_ErrorMessage
 
+## Symptoms
+
 The system shows the following error message:
 
 > Work %1 cannot be cancelled because it is blocked by reason type %2. The work must be unblocked before it can be cancelled.
 
-## Issue description
+## Cause
 
 The work is blocked and can't be canceled.
 

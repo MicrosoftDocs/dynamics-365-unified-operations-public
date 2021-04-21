@@ -17,13 +17,15 @@ ms.dyn365.ops.version: 10.0.18
 
 Error code: WHSWorkBlockingExecutingWaveReason_ErrorMessage
 
+## Symptoms
+
 The system shows the following error message:
 
 > Work %1 remains blocked because the related wave %2 has status %3.
 
-## Issue description
+## Cause
 
-The work is currently being processed on a wave and can't be unblocked, and you see one of the following symptoms:
+The work is currently being processed on a wave and can't be unblocked, as indicated by one of the following conditions:
 
 - On the **Blocking reasons** tab, the **Work blocking reason** field for one or more lines is set to *Processing wave*.
 - When you select **Wave** in the **Related information** group on the **Related information** tab of the Action Pane, the **Wave status** field is set to *Processing*.
