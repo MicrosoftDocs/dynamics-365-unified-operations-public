@@ -613,6 +613,8 @@
         href: hr-personnel-modify-reporting-relationships-position.md
       - name: Enter worker information
         href: hr-personnel-enter-worker-information.md
+      - name: Workers without employment
+        href: hr-personnel-workers-without-employment.md
       - name: Loan items to workers
         href: hr-personnel-loan-item-worker.md
       - name: Create loan items
