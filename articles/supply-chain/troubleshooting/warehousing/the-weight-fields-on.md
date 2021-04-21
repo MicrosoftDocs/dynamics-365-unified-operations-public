@@ -17,11 +17,13 @@ ms.dyn365.ops.version: 10.0.18
 
 Error codes: WHSLoadWeightOnLinesDoNotMatchLoadWarning
 
+## Symptoms
+
 The system shows the following error message:
 
 > The weight fields on load lines do not match the weight fields on load %1. Run the Warehouse load weight consistency check to recalculate the weight fields.
 
-## Issue description
+## Cause
 
 The **Net weight** and **Tara weight** fields are set to *0* (zero) on the load line. However, the weight fields aren't set to *0* for the weight measurements on the product. When weight fields aren't set on the load line, any corrections of the quantity on the load line might cause incorrect weight calculation on the load. This issue might occur if the weights on the product have been changed since the load line was created.
 

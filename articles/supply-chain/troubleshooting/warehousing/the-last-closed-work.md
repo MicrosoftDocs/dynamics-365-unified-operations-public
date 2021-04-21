@@ -17,11 +17,13 @@ ms.dyn365.ops.version: 10.0.18
 
 Error code: WAX1285
 
+## Symptoms
+
 The system shows the following error message:
 
 > The last closed work line must be a put.
 
-## Issue description
+## Cause
 
 The work can't be canceled in its current state.
 

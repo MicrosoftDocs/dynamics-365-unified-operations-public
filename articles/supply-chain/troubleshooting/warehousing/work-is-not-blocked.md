@@ -17,14 +17,16 @@ ms.dyn365.ops.version: 10.0.18
 
 Error code: WHSUnblockNotBlockedWorkErrorMessage
 
+## Symptoms
+
 The system shows the following error message:
 
 > Work with Id %1 is not blocked.
 
-## Issue description
+## Cause
 
-The **Blocked wave** option on the wave is set to *No*.
+The **Blocked wave** option on the wave is set to *No*. The work can't be unblocked because it isn't currently blocked.
 
 ## Resolution
 
-The work can't be unblocked because it isn't currently blocked. Only work where the **Blocked wave** option is set to *Yes* can be unblocked.
+ Only work where the **Blocked wave** option is set to *Yes* can be unblocked.
