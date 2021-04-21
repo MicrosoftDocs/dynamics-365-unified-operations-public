@@ -386,6 +386,8 @@ The JPK_V7M processing uses the **EMGenerateJPKVDEKReportController_PL** executa
 
 In the dialog box for the executable class, the **Retail-specific sales marking** group of parameters is used for retail-specific scenarios. For more information about how to report **RO** and **FP** document types for retail operations, see the "Report RO and FP document types for retail operations" section later in this topic.
 
+**Consider VAT report date codes** parameter in the dialog box for the executable class is available. Use this parameter to collect Value-added tax (VAT) transactions to the report based on rules you define in **VAT report date codes**. This parameter does not affect retail-specific transactions to be reported as ‘FP’ document type. For more information about **VAT report date codes** feature, see [Set up VAT report date codes](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/pol-set-up-vat-report-date-codes).
+
 ### Set up security roles for electronic message processing
 
 Different groups of users might require access to the JPK_V7M processing. You can limit access to the processing, based on security groups that are defined in the system.
