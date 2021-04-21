@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to globalize modules by using the **CultureInfoFormatter** class.
 
-## Overview
-
 Globalization of an online site should include not only string localization, but also number, date, and currency formatting for the various languages and regions that your website serves.
 
 The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) provides a **CultureInfoFormatter** class that helps meet typical globalization requirements for the format of numbers, currencies as well as dates and times.

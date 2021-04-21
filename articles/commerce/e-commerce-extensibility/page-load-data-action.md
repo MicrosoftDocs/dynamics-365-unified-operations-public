@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers page load data actions in Microsoft Dynamics 365 Commerce. 
 
-## Overview
-
 Every page that is rendered, whether it's a product details page, a department page, or a home page, requires data. Page load data actions are used to obtain that data.
 
 ## The createInput method
