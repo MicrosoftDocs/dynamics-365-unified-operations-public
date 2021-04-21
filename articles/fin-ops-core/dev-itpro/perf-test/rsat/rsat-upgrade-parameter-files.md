@@ -1,6 +1,6 @@
 ---
-title: Upgrade of parameter files
-description: 
+title: Upgrade parameter files
+description: This topic explains how to upgrade the parameter files that are used with Regression suite automation tool (RSAT).
 author: FrankDahl
 ms.date: 04/12/2021
 ms.topic: article
@@ -13,74 +13,74 @@ ms.search.validFrom: 2021-04-12
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Upgrade the parameter files
+# Upgrade parameter files
 
 [!include [banner](../../includes/banner.md)]
 
-The format of parameter Excel files used with RSAT changed with the 2.0 release, into a more intuitive format showing test steps. New cases created with version 2.0 and later automatically create parameter files in this new format. You might have tests that were authored before that version which still use the old format. The old format parameter files are supported by RSAT to run cases at least up to the next major release of RSAT.
+The format of parameter Microsoft Excel files that are used with Regression suite automation tool (RSAT) changed in the 2.0 release. The format is now more intuitive and shows test steps. New test cases that are created in RSAT version 2.0 and later automatically generate parameter files in the new format. However, you might have tests that were created before version 2.0 and that still use the old format. RSAT will continue to support running test cases that use parameter files in the old format at least until the next major release. RSAT can also upgrade old parameter files to the new format.
 
-RSAT can upgrade old parameter files into the new format.
-
-Parameter files can be edited freely in Excel. There are situations a parameter file can't be fully upgraded. In these cases that some manual work will be needed to complete the upgrade. The next section explains the mechanics of the upgrade process.
+Parameter files can be freely edited in Excel. In some situations, a parameter file can't be fully upgraded, and some manual work is required to complete the process. The next section explains the mechanics of the upgrade process.
 
 ## Upgrade process
 
-The upgrade process attempts to complete a full upgrade, but there are situations where this cannot safely be completed.
+The upgrade process tries to do a full upgrade. However, in some situations, this process can't be safely completed.
 
-When upgrade can complete fully, then the parameter file is simply replaced with the new one. A copy of the original file is created, with **_BAK** appended to the file name.
+When the full upgrade process can be completed, the old parameter file is replaced with a new one. A copy of the original file is created, and **\_BAK** is appended to the file name.
 
-When only a part of the parameter file can be safely upgraded, then the original file is not changed. A new file is created, with **_PARTIAL** appended to the file name. The partial file contains the information that was possible to upgrade. You can use the partial file to manually bring over missing parts from the original to complete the new file. When you are done, rename your old parameter file to a backup name, for example, appending **_BAK** to the file name. Rename the new parameter file by removing the **_PARTIAL** from the file name. The new file becomes the new parameter file.
+If only part of the parameter file can be safely upgraded, the original file isn't changed. Instead, a new file is created, and **\_PARTIAL** is appended to the file name. The partial file contains the information that could be upgraded. You can use the partial file to manually transfer missing parts from the original file and complete the new file. When you've finished, rename the original file to a backup name (for example, append **\_BAK** to the file name). Then rename the new file by removing **\_PARTIAL** from the file name. The new file then becomes the new parameter file.
 
 > [!NOTE]
-> You can use the old parameter files until the new file is ready. RSAT will continue to support the old parameter file format at least up to the next major release.
+> You can continue to use the old parameter file until the new file is ready. RSAT will continue to support the old format for parameter files at least until the next major release.
 
-The upgrade process can usually upgrade unedited parameter files. It can also upgrade files where only cell values have been changed in the file. When additional cells have been added and referenced, then upgrade cannot automatically complete. In this case, the partial file include cells with value **#MISSING** to indicate cell references are missing. This is where you manually add the information from the original parameter file into the new partial file.
+The upgrade process can usually upgrade unedited parameter files. It can also upgrade files where only cell values have been changed in the file. However, if additional cells have been added and referenced, the upgrade process can't be completed automatically. In this case, the partial file will include cells that have the value **\#MISSING**. This value indicates that cell references are missing. You must manually add the information from the original parameter file to the new partial file.
 
 > [!IMPORTANT]
-> Going forward, add new cells to the new **CustomParameters** sheet, in the same way they are added in the partial file.
+> From now on, add new cells to the new **CustomParameters** sheet in the parameter file, just as they are added in the partial file.
 
-The parameter file with RSAT release 2.2 and later has a sheet named **CustomParameters**. This is included to help future-proof the upgrade of parameter files. If you add cells, put them in this sheet. We plan to bring forward this sheet directly in later releases of the upgrade feature.
+In RSAT release 2.2 and later, the parameter file has a sheet that is named **CustomParameters**. This sheet is included to help future-proof the upgrade of parameter files. If you add cells, add them to this sheet. Microsoft plans to bring forward this sheet directly in later releases of the upgrade feature.
 
-Cells you added into the old Parameter files with a Name assigned to the cell, those will move into the CustomParameters sheet automatically during the upgrade, that is providing the cell value does not also reference other cells.
+If you added a cell to the old parameter file and assigned a name to that cell, the named cell is automatically moved to the **CustomParameters** sheet during the upgrade, provided that its value doesn't reference other cells.
 
-If you added a cell to the old parameter file, and you assigned a name to the cell, and the cell value does not reference other cells, then that named will be moved to the **CustomerParameters** sheet in the upgrade.
-
-After you have moved your added cells into the partial file, make sure that you change the references from **TestCaseSteps** sheet that had **#MISSING** as the value. Change the reference to match the relevant cells in **CustomParameters**. Ideally, you should always reference cells by an assigned name (like **MyQuantity**) and not by the cell identifier (like **E4**).
+After you've finished moving your added cells to the partial file, if any references on the **TestCaseSteps** sheet have **\#MISSING** as the value, change the references so that they match the relevant cells on the **CustomParameters** sheet. Ideally, you should always reference cells by their assigned name (for example, **MyQuantity**), not by the cell identifier (for example, **E4**).
 
 > [!NOTE]
-> It is a best practice to assign names to any cells added into the **CustomerParameters** sheet and reference the cells by name from case steps.
+> As a best practice, you should assign names to any cells that are added to the **CustomerParameters** sheet. Then reference the cells by name from test case steps.
 
-After the upgrade, you should run your test cases to make sure the new parameter file produces the expected results. Do this both when the upgrade completed fully and when the upgrade required manual work.
+After the upgrade, you should run your test cases to make sure that the new parameter file produces the expected results. Complete this step both when the upgrade was fully completed and when the upgrade required manual work.
 
-After you are done creating and testing the new files, you can delete the backup and partial files.
+When you've finished creating and testing the new files, you can delete the backup and partial files.
 
-## Running the paramenter file upgrade
+## Run the parameter file upgrade process
 
-To upgrade the parameter files, open RSAT. Select that test cases that have the parameter files that you want to upgrade. On the **New** menu, select **Upgrade Parameter files (will auto generate Test Execution files**, as shown in the following screenshot.
+To upgrade the parameter files, follow these steps.
 
-![New drop down menu](media/new_dropdown_menu.png)
+1. Open RSAT.
+2. Select that test cases that have the parameter files that you want to upgrade.
+3. On the **New** menu, select **Upgrade Parameter files (will auto generate Test Execution files)**.
+
+    ![Upgrade Parameter files (will auto generate Test Execution files) command on the New menu](media/new_dropdown_menu.png)
 
 The parameter files for all the selected cases are upgraded.
 
 The upgrade process skips test cases where the parameter file is already in the new format. A parameter file is considered upgraded if it contains the **CustomParameters** sheet.
 
-When the upgrade is done, a summary is shown. The summary includes:
+When the upgrade process is completed, a message box appears that shows a summary. The summary includes the following information:
 
 + The total number of selected test cases that were marked for upgrade.
-+ The number of successful upgrades. For these upgrades, there are new parameter files and **_BAK** files.
-+ The number of failed upgrades. For these upgrades, there are new **_PARTIAL** files.
++ The number of successful upgrades. For these upgrades, there are new parameter files and **\_BAK** files.
++ The number of failed upgrades. For these upgrades, there are new **\_PARTIAL** files.
 + The number of skipped upgrades.
 + An explanation of the results.
 
-This is an example of the summary dialog:
+The following illustration shows an example of the summary message box.
 
-![Upgrade summary message](media/upgrade_summary.png)
+![Summary message box](media/upgrade_summary.png)
 
-For a failed upgrade, you can find more information by clicking the yellow triange next to the title case title. This is an example of the dialog:
+For a failed upgrade, you can find more information by selecting the yellow triangular warning symbol next to the test case title. The following illustration shows an example of the message box that appears.
 
-![Upgade warning triangle message](media/upgrade_triangle_error.png)
+![Warning message box for a failed upgade](media/upgrade_triangle_error.png)
 
 > [!IMPORTANT]
-> You can run the upgraded repeatedly, and newly upgraded parameter files will be skipped. However, new partial files will overwrite existing partial files. We recommend that you complete all partial files and rename them before running the upgrade again.
+> You can run the upgrade repeatedly. In this case, newly upgraded parameter files will be skipped. However, new partial files will overwrite existing partial files. We recommend that you complete all partial files and rename them before you rerun the upgrade.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
