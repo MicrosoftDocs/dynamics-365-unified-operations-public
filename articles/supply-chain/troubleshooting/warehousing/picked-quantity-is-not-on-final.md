@@ -1,6 +1,6 @@
 ---
-title: Picked quantity is not on final shipping location throughout shipment confirmation.
-description: Picked quantity is not on final shipping location throughout shipment confirmation.
+title: Can't confirm shipment because items haven't been picked
+description: Can't confirm shipment because items haven't been picked
 author: perlynne
 ms.date: 04/21/2021
 ms.topic: troubleshooting
@@ -12,30 +12,32 @@ ms.author: lbc
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.18
 ---
-<!-- KFM: Does this describe the issue the customer wants to solve? -->
-# Picked quantity is not on final shipping location throughout shipment confirmation
+
+# Can't confirm a shipment because items haven't been picked
 
 Error code: LoadNotPickedAndMovedToFinalShippingLocation
 
 ## Symptoms
 
-The system displays the following error message:
+When you are trying to confirm a shipment, the system displays the following error message:
 
 > Some of the items that are needed for load %1 have not yet been picked and moved to the final shipping location.
 
-The load or shipment can't be ship confirmed in current state. <!-- KFM: What is "ship confirmed"? Confirmed as shipped? Confirmed for shipment? -->
+## Cause
 
-The related work have not yet been picked and moved to the final shipping location. Picked work quantity do no match the created work quantity on the load line.  <!-- KFM: Is this a symptom or a cause? -->
+The load or shipment can't be confirmed in its current state because one of the following may be true:
+
+- The related work has not yet been picked and moved to the final shipping location.
+- The picked work quantity doesn't match the created work quantity on the load line.
 
 ## Resolution
 
-Load or shipment is currently in a state where shipment confirmation fails. Navigate to related orders for the load / shipment ensuring the work is completed on final shipping location and quantities matches.
+Check the related sales or transfer orders for the load or shipment and make sure all of the related work is completed on final shipping location, and that the quantities match.
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. Select the load that cannot be ship confirmed.
 1. On the **Load lines** FastTab, select the load line.
 1. Note the **Work created quantity**.
 1. On the Action Pane, open the **Loads** tab and, from the **Related information** group, select **Work**.
-
-    - Validate that the work is completed on final shipping location and the picked **Work quantity** is matching the load line **Work created quantity**
-    - Go through above steps for all load lines to ensure criteria is meet.
+1. Validate that the work is completed on final shipping location and the picked **Work quantity** is matching the load line **Work created quantity**
+1. Repeat this procedure for all load lines to ensure criteria is met.

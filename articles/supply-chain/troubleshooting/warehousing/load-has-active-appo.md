@@ -1,6 +1,6 @@
 ---
-title: Load has active appointments throughout shipment confirmation
-description: Load has active appointments throughout shipment confirmation
+title: Can't confirm shipment because of a problem with the calendar
+description: Can't confirm shipment because of a problem with the calendar
 author: perlynne
 ms.date: 04/21/2021
 ms.topic: troubleshooting
@@ -12,24 +12,26 @@ ms.author: lbc
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.18
 ---
-<!-- KFM: Does this describe the issue the customer wants to solve? -->
-# Load has active appointments throughout shipment confirmation
+
+# Can't confirm a shipment because of a problem with the calendar
 
 Error code: TRX2716
 
 ## Symptoms
 
-The system displays the following error message:
+When you are trying to confirm a shipment, the system displays the following error message:
 
 > The calendar type %1 requires the appointment %2 to be checked in and out.
 
-Therefore, the load can't be ship confirmed in current state. <!-- KFM: What is "ship confirmed"? Confirmed as shipped? Confirmed for shipment? -->
+Therefore, you can't confirm the shipment for this load.
 
-Active appointments for the load exist with a related appoint rule that requires driver check-in. <!-- KFM: Is this a symptom or a cause? -->
+## Cause
+
+Active appointments for the load exist with a related appoint rule that requires driver check-in. Therefore, the load is currently in a state where shipment confirmation fails.
 
 ## Resolution
 
-The load is currently in a state where shipment confirmation fails.
+To solve this issue, you must resolve the active appointments that are linked to the load. To investigate and resolve the situation, do the following steps:
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. Select the load that cannot be ship confirmed

@@ -1,6 +1,6 @@
 ---
-title: Picked quantity is zero throughout shipment confirmation
-description: Picked quantity is zero throughout shipment confirmation
+title: Can't confirm a shipment because there is zero quantity
+description: Can't confirm a shipment because there is zero quantity
 author: perlynne
 ms.date: 04/21/2021
 ms.topic: troubleshooting
@@ -13,29 +13,30 @@ ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# Picked quantity is zero throughout shipment confirmation
+# Can't confirm a shipment because there is zero quantity
 
 Error code: LoadLineWarningUpdatedToZero
 
 ## Symptoms
 
-The system displays the following error message:
+When you are trying to confirm a shipment, the system displays the following error message:
 
 > Load line for item %1 and shipment %2 has been updated to have zero quantity due to underdelivery setup allowing not to ship any quantities for this item.
 
-The load or shipment can't be ship confirmed in current state. <!-- KFM: "ship confirmed"-->
+## Cause
 
-The calculation if picked quantity is within delivery percentage limit is based on picked quantity, load line quantity and the underdelivery percentage. <!-- KFM: I think this sentence contains typos. -->  If the result of the calculation has picked load line quantity zero then it will not be allowed to ship confirm. That can happen, for example, this error may appear if work has been cancelled and the underdelivery percentage is 100% on the load line.
+The load or shipment can't be confirmed in current state.
+
+The system evaluates whether the picked quantity is within delivery percentage limit based on the picked quantity, load line quantity, and underdelivery percentage. It the system finds that the picked load line quantity is zero, then you will not be allowed to confirm the shipment. For example, this error may appear if work has been cancelled and the underdelivery percentage is 100% on the load line.
 
 ## Resolution
 
-Either the load or the shipment is currently in a state where shipment confirmation fails. Go to the related orders for the load or shipment to make sure the work is completed or cancelled.
-
-There are several forms where we have shipments and loads, so a couple are described here: <!-- KFM: Only one is described here. Are we missing some? -->
+Check your load lines to make sure the underdelivery percentage and quantities are in alignment with the picked work.
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. Select the load that cannot be ship confirmed.
 1. On the **Load lines** FastTab, select the load line for the item that exceeds the underdelivery.
-1. Adjust the **Underdelivery** field percentage or **Quantity** field value to fulfill the requirement to ship confirm.
+1. Adjust the **Underdelivery** field percentage or **Quantity** field value as required.
 
-    - Alternative pick more quantities from the related work.
+> [!TIP]
+> If the issue remains unresolved, you may need to complete more picking work for the related sales or transfer orders until the available quantity is alignment with the load or shipment.
