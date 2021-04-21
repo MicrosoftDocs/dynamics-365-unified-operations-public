@@ -82,6 +82,7 @@ If the app you want to embed is not related to an existing page, or you just wan
 After you've embedded an app using either of the two approaches mentioned above, you may want to share the view with other users in the system. To share an embedded canvas app, choose one of these options.
 
 -  [Recommended] **Publish the view**: When the embedded app has been saved to a view, the recommended and preferred sharing approach is to **publish** the view to users in the appropriate security role(s). This approach ensures that all users who have the security roles targeted by the published view will see the app in Finance and Operations apps. See the **Published views** section  in the [Saved views](saved-views.md#publishing-views) article for more details on how to publish a view.
+    - You can also publish app that have been embedded as a full-page experience from the dashboard by right-clicking on the corresponding tile from the dashboard, selecting **Personalize**, and then selecting **Publish page**. Note that this publish option only allows publishing to security roles. The ability to publish to legal entities will be added before the feature becomes generally available.  
 
 -  **Copy the personalization**: For forms that do not support views (e.g. dialogs, workspaces) or for the full-page app experience, you can **copy** the personalization to the appropriate users. See the **Sharing personalizations** section in the [Personalize the user experience](personalize-user-experience.md#sharing-personalizations) article for more details. 
 
@@ -108,7 +109,9 @@ After an app has been embedded onto a page, you may need to make some changes to
     -  On the **Edit website** pane, make the desired modifications to the app configiration and then select **Save** 
 5.  To remove the embedded app, select **Remove page**.
 
-## Troubleshooting
+## Appendix
+
+### Troubleshooting
 
 If the website isn't rendering correctly after being embedded in a Finance and Operation app, this usually indicates that the website is configured to restrict itself from being embedded in an iframe. To confirm this, do the following: 
 
@@ -118,5 +121,9 @@ If the website isn't rendering correctly after being embedded in a Finance and O
 4. With that response highlighted, look in **Headers > Response headers** for x-frame-options. 
 
 If x-frame-options exists in the response headers with a value of DENY or SAMEORIGIN, then the website cannot currently be embedded. You will need to work with the owner of the app to safely allow it to be embedded.  
+
+### [Developer] Modeling a website on a form
+While this topic focuses on embedding third-party apps or websites through personalization, developers also have the option to embedding these apps to a form using the Visual Studio development experience. To do this, simply add a WebHostControl to the form. The metadata properties available on the control provide the same capabilities as the personalization experience.
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
