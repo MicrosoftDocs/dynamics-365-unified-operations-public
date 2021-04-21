@@ -33,17 +33,13 @@ This topic explains why opening balances might be missing when you close a year,
 
 ## Why are there no beginning balances after running the General ledger year-end close? 
 
-## Answer
-
 Here are a few things to check if you have run the General ledger year-end close and no opening balances are shown on the trial balance for the next fiscal year.
 
 ### Run close vs Undo close
 
 If the Undo previous close selection is set to Yes, the previous year-end close for the same fiscal year is being reversed. When running an undo, all closing balance and opening balance entries will be deleted, as if the year-end close had never been run. The vouchers are also deleted. The year-end close will not run again automatically. You must start the process again, this time changing Undo previous close to No.
 
-
-This scenario is covered in the year-end close FAQ topic. For more information, see [Year-end activities FAQ](faq-year-end-activities.md). (https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/faq-year-end-activities).
-
+This scenario is covered in the year-end close FAQ topic. For more information, see [Year-end activities FAQ](faq-year-end-activities.md).
 
 I ran year-end close with the option Undo previous close set to No, and I still do not have opening balances for my fiscal year.
 
