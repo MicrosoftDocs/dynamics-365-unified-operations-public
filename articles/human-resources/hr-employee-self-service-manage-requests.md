@@ -51,7 +51,6 @@ This preview feature provides the following enhancements:
 
 ![Manager experience](media/hr-leave-and-absence-manager-experience.png)
 
-
 ## See also
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
