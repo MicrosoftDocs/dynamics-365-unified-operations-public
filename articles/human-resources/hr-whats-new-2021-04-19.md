@@ -71,11 +71,11 @@ The following bug fixes are included in this release.
 | ## “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda - (552164) | | |
 | ## “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda - (574502) | | |
 | ## HcmCompensationCrossCompanyFeature uses the same "Learn More" FwLink URL as HcmPerformanceReviewReportFeature.xml - (445141) | | |
-| ## Leave request validation fails when employment is terminated before the latest transaction for that worker across all leave plans - (570586) | | |
-| ## Required reason code not displaying when Cross Company Leave view feature enabled - (572343) If you have the Cross Company Leave view feature enabled, and have security set up for users that are LE specific....the required reason code does not show up for users in the time off form    | | |
+|570586 |Leave request validation fails when employment is terminated before the latest transaction for that worker across all leave plans | After an employment is terminated, leave request validation doesn't fail based on employee leave transactions.|
+|572343| Required reason code isn't displayed when Cross Company Leave view feature enabled |When Cross company leave is enabled, reason code now the requiring a reason code now displays as expected. | 
 | 560614 | Benefits - Life event Options: discrepancies in the tooltip documentation and code behavior | Updated tooltips in Life EVent options to depict correct behavior |
 | 560616 | Benefits - Life event Options : Life event options are editable in Worker Benefit plan but changes are not affected | Updated behavior of Life Event Option switches to enable / disable based on dependant options as per tooltip documentation |
-| ##  Cross company leave view, enabling/ disabling it from HRShareParameters influences the process of Request time off from ESS for user with Employee role - (570783) | | |
+| 570783 |Enabling and disabling cross company leave in Human resources shared parameters changes what employees employed in a single company see in leave requests.  |Employees employed in a single company see no changes in requesting time off if the parameter is enabled or disabled.|
 
 ## In preview
 
@@ -85,6 +85,7 @@ The following new features are in preview. For more information about turning fe
 | --- | --- | --- |
 | Benefits management workspace | [Benefits management workspace (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
 | Leave and absence workflow experience enhancements | [Leave and absence workflow experience enhancements](https://go.microsoft.com/fwlink/?linkid=2147528)| [Request time off](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-employee-self-service-request-time-off)|
+| Enable simplified payroll integration (Payroll integration APIs) | [Enable simplified integration with payroll providers](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers)| [Payroll integration API](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-admin-integration-payroll-api-introduction)|
 
 ## Coming soon
 
