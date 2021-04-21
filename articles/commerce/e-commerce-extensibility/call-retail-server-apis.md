@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Retail Server from a data action or directly from module code.
 
-## Overview
-
 To call Retail Server APIs, you must use the Retail Server proxy library that Retail Server provides. This proxy library is also known as TypeScriptProxy or TSProxy. It allows for streamlined communication with Retail Server from JavaScript-based or TypeScript-based environments.
 
 ## Install the Retail Server proxy
