@@ -53,7 +53,7 @@ The following features are generally available with this release.
 | Integrate missing code from Elevate into Life Events  - (526420) | | |
 | [GA] Cross company clean up preview switch and flight - (556591) | | |
 | Platform update 10.0.17 (41) | -- | [Platform updates for version 10.0.17 of Finance and Operations apps (April 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
-| Custom Fields support in Benefits Management forms | [Release Plan document](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [Benefits Management documentation ](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-management-overview)|
+| Custom Fields support in Benefits Management forms | [Custom field support in benefits management](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [Benefits Management documentation ](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-management-overview)|
 
 ### Bug fixes
 
@@ -84,6 +84,7 @@ The following new features are in preview. For more information about turning fe
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
 | Benefits management workspace | [Benefits management workspace (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
+| Leave and absence workflow experience enhancements | [Leave and absence workflow experience enhancements](https://go.microsoft.com/fwlink/?linkid=2147528)| [Request time off](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-employee-self-service-request-time-off)|
 
 ## Coming soon
 
