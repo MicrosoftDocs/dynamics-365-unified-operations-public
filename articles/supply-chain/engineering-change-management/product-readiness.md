@@ -152,4 +152,11 @@ For each row that you add, set the following fields.
 | Mandatory | Select this check box for checks that must be completed by the assigned user. Mandatory checks can't be skipped. |
 
 
+## Readiness checks on standard products
+
+Product readiness checks can also be used for standard products. For these, you'll need to enable the feature Product readiness checks in feature management. Note you will also need to have enabled Engineering change management. 
+In this case, they work the same way as explained above. The difference is that the readiness policy is assigned on the shared product (not on the released product) as the standard products do not have an engineering category. 
+Note that when this feature is enabled, both the engineering products and the standard products will apply the readiness checks according to the readiness policy on the shared product record. This means that for engineering products the readiness policy on the engineering category is defaulted to the shared product, and it can then be changed. 
+
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
