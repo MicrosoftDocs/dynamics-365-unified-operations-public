@@ -100,4 +100,27 @@ When setting up virtual tables in the **Microsoft Dataverse integration** page, 
 
 This message indicates that permissions haven't been granted in Human Resources application to the app set up for virtual tables. You can resolve this by completing the steps to [Grant app permissions in Human Resources](./hr-admin-integration-common-data-service-virtual-entities.md#grant-app-permissions-in-human-resources).
 
+### What do I do if the Finance and Operations Virtual Data Source Configurations option isn't available in my Microsoft Dataverse environment?
+
+During the setup of the virtual tables, you need to install the Dynamics 365 HR Virtual Table app, whicn adds the option for **Finance and Operations Virtual Data Source Configurations**. Steps for doing this in the **Microsoft Dataverse integration** page are outlined in the [Configure Dataverse virtual tables](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities#install-the-dynamics-365-hr-virtual-table-app) documentation. 
+
+If the **Install virtual table app** action on the **Microsoft Dataverse integration** page doesn't complete successfully, the action can be performed from the Power Platform admin center.
+
+1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+2. In the **Environments** list, select the Power Apps environment associated with your Human Resources instance.
+
+3. In the **Resources** section of the page, select **Dynamics 365 apps**.
+
+4. Select the **Install app** action.
+
+5. Select **Dynamics 365 HR Virtual Table**, and select **Next**.
+
+6. Review and mark to agree to the terms of service.
+
+7. Select **Install**.
+
+The install takes a few minutes. When it completes, the **Finance and Operations Virtual Data Source Configurations** entity is generated in the environment.
+
+![Install the Dynamics 365 HR Virtual Table app from the Power Platform admin center](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
