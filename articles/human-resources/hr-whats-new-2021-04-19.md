@@ -49,10 +49,8 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Show a notification to the user upon login if reason codes need to be migrated (574101) | | |
-| Integrate missing code from Elevate into Life Events  - (526420) | | |
 | Platform update 10.0.17 (41) | -- | [Platform updates for version 10.0.17 of Finance and Operations apps (April 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
-| Custom Fields support in Benefits Management forms | [Custom field support in benefits management](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [Benefits management overview](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-management-overview)|
+| Custom Fields support in Benefits Management forms | [Custom field support in benefits management](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [Benefits management overview](hr-benefits-management-overview.md)|
 
 ### Bug fixes
 
@@ -63,15 +61,17 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-|565054 |Unable to view 'Workers without employment' list content when 'Advanced access' is on. |This fixed the issue that once 'Advanced access' was turned on, only system admins could view the contents of the 'Workers without Employment' list. Because this is a security change you will need to opt in for this in feature management. Once the feature is on, those roles that have access to the form will see the contents, even though advanced access is on.  Learn more about [Workers without employment](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-personnel-workers-without-employment)|
-| ## Affordable Care coverage option is taking to the main Affordable Care coverage group form instead of Affordable Care coverage form for the particular Employee - (565963) | | |
-| 573676 | Cannot add Period to BenefitPlan - (573676) On the BenefitPlan form (Benefits Management > Links > Benefit plans) | Fixed bugs where Periods could not be added or updated on existing Benefit plans on th form |
-| ## Benefits Workspace V2 feature does not handle GA feature stage dynamically based on feature management - (573617) | | |
-| ## “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda - (552164) | | |
-| ## “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda - (574502) | | |
-| ## HcmCompensationCrossCompanyFeature uses the same "Learn More" FwLink URL as HcmPerformanceReviewReportFeature.xml - (445141) | | |
-|570586 |Leave request validation fails when employment is terminated before the latest transaction for that worker across all leave plans | After an employment is terminated, leave request validation doesn't fail based on employee leave transactions.|
-|572343| Required reason code isn't displayed when Cross Company Leave view feature enabled |When Cross company leave is enabled, reason code now the requiring a reason code now displays as expected. | 
+| 526420 | Integrate missing code from Elevate into Life events |  |
+| 565054 | Unable to view 'Workers without employment' list content when 'Advanced access' is on. | This fixed the issue that once 'Advanced access' was turned on, only system admins could view the contents of the 'Workers without Employment' list. Because this is a security change you will need to opt in for this in feature management. Once the feature is on, those roles that have access to the form will see the contents, even though advanced access is on.  Learn more about [Workers without employment](hr-personnel-workers-without-employment.md). |
+| 565963 | Affordable Care coverage option is taking to the main Affordable Care coverage group form instead of Affordable Care coverage form for the particular Employee | |
+| 573676 | Cannot add Period to BenefitPlan On the BenefitPlan form (Benefits Management > Links > Benefit plans) | Fixed bugs where Periods could not be added or updated on existing Benefit plans on th form |
+| 573617 | Benefits Workspace V2 feature does not handle GA feature stage dynamically based on feature management | |
+| 574101 | Show a notification to the user upon login if reason codes need to be migrated |  |
+| 552164 | “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda | |
+| 574502 | “Saved view” on Employee selfservice > Open courses not working properly in case of a course that has an agenda | |
+| 445141 | HcmCompensationCrossCompanyFeature uses the same "Learn More" FwLink URL as HcmPerformanceReviewReportFeature.xml | |
+| 570586 | Leave request validation fails when employment is terminated before the latest transaction for that worker across all leave plans | After an employment is terminated, leave request validation doesn't fail based on employee leave transactions.|
+| 572343 | Required reason code isn't displayed when Cross Company Leave view feature enabled |When Cross company leave is enabled, reason code now the requiring a reason code now displays as expected. |
 | 560614 | Benefits - Life event Options: discrepancies in the tooltip documentation and code behavior | Updated tooltips in Life EVent options to depict correct behavior |
 | 560616 | Benefits - Life event Options : Life event options are editable in Worker Benefit plan but changes are not affected | Updated behavior of Life Event Option switches to enable / disable based on dependant options as per tooltip documentation |
 | 570783 |Enabling and disabling cross company leave in Human resources shared parameters changes what employees employed in a single company see in leave requests.  |Employees employed in a single company see no changes in requesting time off if the parameter is enabled or disabled.|
