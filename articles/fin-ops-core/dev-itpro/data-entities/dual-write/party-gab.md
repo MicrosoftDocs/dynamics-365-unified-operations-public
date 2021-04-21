@@ -163,7 +163,7 @@ Electronic addresses are available only on this grid. In future releases, all el
     `Salutations (msdyn_salutations)` | 1.0.0.0 | This is a new map added as part of this release.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | This is a new map added as part of this release.
 
-5. Before running the above maps, make sure to update the integration keys manually as shown below and click Save.
+5. Before running the above maps, you must update the integration keys manually as described in the following steps. Then select **Save**.
 
     | Map | Keys |
     |-----|------|
