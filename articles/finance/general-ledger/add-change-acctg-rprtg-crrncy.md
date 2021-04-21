@@ -65,7 +65,7 @@ If the accounting and reporting currency fields are not enabled on your **Ledger
 
 **The only option to modify or add the accounting and reporting currencies is to create a new legal entity with the correct currencies. To make the creation of the legal entity easier, use Data management within the system to copy setup and master records from the current legal entity to the new legal entity.** 
 
-Changing the accounting or reporting currency is a pervasive change. This change doesn’t impact General ledger only, but also every subledger (Accounte receivable, Accounts payable, Inventory, Project, and so on), ISV solution, as well as any extension that you might have made that stores amounts.   
+Changing the accounting or reporting currency is a pervasive change. This change doesn’t impact General ledger only, but also every subledger (Accounts receivable, Accounts payable, Inventory, Project, and so on), ISV solution, as well as any extension that you might have made that stores amounts.   
 
 Finding and translating each of these amounts to a different currency is subject to error. Because of this, the engineering team won’t approve a script to modify or add the accounting and reporting currencies.  Also, while a tool used to be available for Microsoft Dynamics AX 2012 to modify or add the accounting and reporting currency, that tool was deprecated for both Microsoft Dynamics AX 2012 R3 and Dynamics 365 Finance. 
 
