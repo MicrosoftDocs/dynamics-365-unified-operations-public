@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic describes the process of changing the accounting or reporting currency, or adding a reporting currency to the setup of a ledger.
 
-## How do I change the accounting or reporting currency or add a reporting currency to the Ledger setup?
+## How do I change the accounting or reporting currency, or add a reporting currency to the Ledger setup?
 
 The following scenarios typically trigger this question:
 
