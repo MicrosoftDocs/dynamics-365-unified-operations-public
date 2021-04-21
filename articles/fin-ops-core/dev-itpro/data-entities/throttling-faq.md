@@ -38,7 +38,7 @@ This topic provides answers to some frequently asked questions (FAQ) about [prio
 Follow this link: [Data management Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13408417).
 
 ## In what product update will throttling be enabled by default?
-The throttling feature has been in preview since Finance 10.0.13 and will be enabled by default starting in 10.0.19. You can manually trigger throttling in your environment by setting the priority for your OData and Custom service requests. However, starting with the release of Finance 10.0.19, throttling will be automatically enabled even if you haven't set priorties.
+The throttling feature has been in preview since Finance 10.0.13 and will be enabled by default starting in 10.0.19. You can manually trigger throttling in your environment by setting the priority for your OData and Custom service requests. However, starting with the release of Finance 10.0.19, throttling will be automatically enabled even if you haven't set priorities.
 
 ## What is the release date for the platform update for Finance 10.0.19?
 Finance 10.0.19 will be available for pre-release in late April 2021 and will be generally available in June 2021.
@@ -47,10 +47,10 @@ Finance 10.0.19 will be available for pre-release in late April 2021 and will be
 No.
 
 ## Will my environment be subjected to any API limits?
-No. As part of this release we are primarily focused on resources-based performance. We will be analyzing and introducing usage-based limits in the future that will be subjected to API call volumes.
+No. At this time, environments aren't subjected to any API limits. 
 
 ## Is there a report that determines when throttling might occur?
-Yes. A report is available and can be accessed through the **Raw logs** on the **Environment monitoring** page in in LCS. The requests that are listed in this view are likely to be throttled when this feature is turned on by default starting in Finance 10.0.19.
+Yes. A report is available and can be accessed through the **Raw logs** on the **Environment monitoring** page in LCS. The requests that are listed in this view are likely to be throttled when this feature is turned on by default starting in Finance 10.0.19.
 
 ## Will throttling affect the Data Import/Export Framework (DIXF) and batch?
 No. Throttling is only for OData and custom service integrations.
@@ -86,14 +86,14 @@ Throttling helps maintain a healthy system when there is a resource constraint. 
 When a request is throttled, the response header includes a time that will be used in retry logic. You can use the **Retry-After** HTTP header to fetch the value that will be provided in seconds. For example, **Retry-After: 60**.
 
 ## What is the message that is shown as part of the 429 HTTP response?
-You will receive the message, "This request could not be processed at this time due to system experiencing high resource utilization. Please retry the request after {0} seconds".
+You will receive the message, "This request could not be processed at this time due to system experiencing high resource utilization. Retry the request after {0} seconds".
 Where **{0}** will have the dynamically calculated retry-after time interval.
 
 ## Does throttling apply to internal Microsoft services?
-Internal Microsoft services, such as DRA, WHSMobile, and RetailAPI are currently exempt from throttling. However, telemetry is being collected on the performance and effect of these services on the overall system health. Microsoft will work with each of these internal service teams to establish usage-based limits in the near future.
+Internal Microsoft services, such as DRA, WHSMobile, and RetailAPI are currently exempt from throttling. However, telemetry is being collected on the performance and effect of these services on the overall system health. Microsoft will work with each of these internal service teams to establish usage-based limits at some point.
 
 ## Is it recommended to use a dedicated integration account instead of just the generic admin user account?
-Yes, we strongly recommend this approach. As these service protection settings are set up for user specific values, using the same user account for most or all of your integration will limit your ability to assign relative priorites across your integration needs. Further, if the same user account is used, all integration requests that originate from that user account will be subjected to throttling.
+Yes, we strongly recommend this approach. As these service protection settings are set up for user-specific values, using the same user account for most or all of your integration will limit your ability to assign relative priorities across your integration needs. Further, if the same user account is used, all integration requests that originate from that user account will be subjected to throttling.
 
 ## Does throttling depend on the tier that my environment is running on?
 In the initial release, no. Throttling will calculate its threshold based on the resources that are available for each environment.
