@@ -18,7 +18,10 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-These topics explains how to create a POS extension using the independent POS extension model and sealed SDK. This topic applies to Retail software development kit (SDK) version 10.0.18 and later.
+These topics explain how to create a POS extension using the independent POS extension model and sealed SDK. This topic applies to Retail software development kit (SDK) version 10.0.18 and later.
+
+[Getting started with POS extension](pos-getting-started.md)
+
 
 ## Supported apps
 
@@ -37,30 +40,12 @@ Android hybrid app | The Android hybrid app is a shell app that runs on an Andro
 
 ## POS Independent extension
 
-POS application can be extended independently for extension scenarios by using the POS SDK, the POS SDK supports modifying/creating the POS user experience, OOB functional enhancements or modifications, validations and adding custom feature/functionalities.
+A POS application can be extended independently by using the POS SDK. The POS SDK supports modifying and creating the POS user experience, out-of-bx functional enhancements or modifications, validations, and adding custom features. The extensions include:
 
-### Extend POS UI:
++ Extend POS UI: The POS UI can be extended to add custom columns, app bar buttons, and custom controls depending on the view. The cart view and the welcome screen support configuration using the screen layout designer. Other views can be extended by writing custom code.
++ Override POS business logic: You can extend POS business logic to add custom logic by overriding the POS request handlers.
++ Pre and post triggers: You can add custom logic before or after any POS operation.
++ Consume APIs: POS exposes APIs and UX controls which can be consumed in extension scenarios.
++ Custom UX and APIs: You can extend POS to add custom views and APIs to support new functionalities and features.
++ Custom operations: You can add custom operations to perform custom functionalities.
 
-The POS UI can be extended to add custom columns, App bar buttons and Custom controls depending on the view. Cart view and Welcome screen supports configuration using the screen layout designer, other views can be extended by writing custom code.
-
-### Override POS Business logic:
-
-POS business logic can be extended to add custom logic by overriding the POS request handlers.
-
-### Pre and Post triggers:
-
-Custom logic can be added before or after any POS operations.
-
-### Consume APIs:
-
-POS also exposes APIs and UX controls which can be consumed in extension scenarios.
-
-### Custom UX and APIs:
-
-POS can be extended to add custom views and APIs to support new functionalities and features.
-
-### Custom operations:
-	
-Custom operations can be added in POS to perform any custom functionalities.
-
- [Getting started with POS extension](pos-getting-started.md)
