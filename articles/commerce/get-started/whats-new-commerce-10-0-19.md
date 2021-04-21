@@ -42,14 +42,11 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- Call server-side data actions with AJAX<br> - For more information, see [Call server-side data actions with AJAX](../e-commerce-extensibility/data-actions-with-ajax.md)
-- Add a QR code or bar code to transactional and receipt emails<br> - For more information, see [Add a QR code or bar code to transactional and receipt emails](../add-qr-code-barcode-email.md)
-- [Configure receipt emails to use custom layouts and templates](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/email-receipt-improvements-new-features)<br> - For more information, see [Configure receipt emails to use custom layouts and templates](../configure-emailed-receipt-formats.md)
-- Additions to the Commerce online SDK FAQ<br> - For more information, see [Dynamics 365 Commerce online SDK FAQ](../e-commerce-extensibility/sdk-faq.md)
-- [Download Retail SDK samples and reference packages from GitHub and NuGet](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/simplified-commerce-sdk-update-developer-experience)<br> - For more information, see [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md)
-- [Retrieve quantity in Sell unit of measure (UoM) from e-Commerce inventory APIs](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enhancements-e-commerce-inventory-availability-lookup-apis)<br> - For more information, see [Calculate inventory availability for retail channels](../calculated-inventory-retail-channels.md)
-- [Improvements to the POS inventory lookup operation](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/improvements-pos-inventory-lookup-operation)
-- [Highly performant and scalable customer search experience using the new cloud search infrastructure](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/highly-performant-scalable-customer-search-experience-using-new-cloud-search-infrastructure)
+- Set up Microsoft Clarity in Dynamics 365 Commerce<br> - For more information, see [Set up Microsoft Clarity in Dynamics 365 Commerce](../set-up-clarity.md)
+- Apply unit of measure settings<br> - For more information, see [Apply unit of measure settings](../unit-of-measure.md)
+- Check-in for pickup module<br> - For more information, see [Check-in for pickup module](../check-in-pickup-module.md)
+- [Customer check-in for curbside order fulfillment](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/customer-check-in-touchless-commerce)<br> - For more information, see [Enable customer check-in notifications in point of sale (POS)](../enable-customer-check-in.md)
+- Configure gift with purchase promotions<br> - For more information, see [Configure gift with purchase promotions](../gift-with-purchase.md)
 
 ## Additional resources
 
