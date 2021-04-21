@@ -27,7 +27,7 @@ Therefore, you can't confirm the shipment for this load.
 
 ## Cause
 
-Active appointments for the load exist with a related appoint rule that requires driver check-in. Therefore, the load is currently in a state where shipment confirmation fails.
+Active appointments for the load exist, such as a rule that requires driver check-in. Therefore, the load is currently in a state where shipment confirmation fails.
 
 ## Resolution
 

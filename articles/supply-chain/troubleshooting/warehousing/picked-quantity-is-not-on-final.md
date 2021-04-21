@@ -23,6 +23,8 @@ When you are trying to confirm a shipment, the system displays the following err
 
 > Some of the items that are needed for load %1 have not yet been picked and moved to the final shipping location.
 
+Therefore, you can't confirm the shipment for this load.
+
 ## Cause
 
 The load or shipment can't be confirmed in its current state because one of the following may be true:
@@ -32,7 +34,7 @@ The load or shipment can't be confirmed in its current state because one of the 
 
 ## Resolution
 
-Check the related sales or transfer orders for the load or shipment and make sure all of the related work is completed on final shipping location, and that the quantities match.
+Check the related sales or transfer orders for the load or shipment and make sure all of the related work is completed at final shipping location, and that the quantities match.
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. Select the load that cannot be ship confirmed.
@@ -40,4 +42,4 @@ Check the related sales or transfer orders for the load or shipment and make sur
 1. Note the **Work created quantity**.
 1. On the Action Pane, open the **Loads** tab and, from the **Related information** group, select **Work**.
 1. Validate that the work is completed on final shipping location and the picked **Work quantity** is matching the load line **Work created quantity**
-1. Repeat this procedure for all load lines to ensure criteria is met.
+1. Repeat this procedure for all load lines to ensure all criteria are met.

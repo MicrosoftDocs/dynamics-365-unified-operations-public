@@ -23,11 +23,11 @@ When you are trying to confirm a shipment, the system displays the following err
 
 > Load line for item %1 and shipment %2 has been updated to have zero quantity due to underdelivery setup allowing not to ship any quantities for this item.
 
+Therefore, you can't confirm the shipment for this load.
+
 ## Cause
 
-The load or shipment can't be confirmed in current state.
-
-The system evaluates whether the picked quantity is within delivery percentage limit based on the picked quantity, load line quantity, and underdelivery percentage. It the system finds that the picked load line quantity is zero, then you will not be allowed to confirm the shipment. For example, this error may appear if work has been cancelled and the underdelivery percentage is 100% on the load line.
+The system evaluates whether the picked quantity is within the expected limits based on the picked quantity, load line quantity, and underdelivery percentage. Also, if the system finds that the picked load line quantity is zero, then you will not be allowed to confirm the shipment. For example, this error may appear if work has been cancelled and the underdelivery percentage is 100% on the load line.
 
 ## Resolution
 

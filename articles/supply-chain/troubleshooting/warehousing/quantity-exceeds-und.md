@@ -23,9 +23,11 @@ When you are trying to confirm a shipment, the system displays the following err
 
 > The shipment for load %1 could not be confirmed because the quantity for item %2 exceeds the percentage that is defined for underdelivery.
 
+Therefore, you can't confirm the shipment for this load.
+
 ## Cause
 
-The load or shipment can't be confirmed in its current state. The quantity of the load or shipment has only been partially picked and is not within the range of underdelivery percentage. The quantity is currently less than picked and not with the range of the allowed underdelivery.
+The quantity of the load or shipment has only been partially picked and is not within the range of underdelivery percentage. The quantity is currently less than picked and not with the range of the allowed underdelivery.
 
 ## Resolution
 
