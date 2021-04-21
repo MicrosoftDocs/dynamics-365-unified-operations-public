@@ -5,7 +5,7 @@ title: Install network printer devices in on-premises environments
 description: This topic explains how to connect an on-premises deployment of Microsoft Dynamics 365 Finance + Operations (on-premises), to existing network printer devices.
 author: TJVass
 manager: AnnBe
-ms.date: 04/12/2021
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -81,7 +81,7 @@ To install printers on nodes where AXService is executing under a gMSA, follow t
 
 > [!NOTE]
 > - The following procedure requires execution on multiple VMs. However, to simplify the process, you can use the remoting scripts that are provided. These scripts let you run the required scripts from a single machine, such as the same machine that is used to run the **.\\Export-Scripts.ps1** command. When the remoting scripts are available, they are declared after a **\# If Remoting** comment in the Windows PowerShell sections.
-> - Remoting uses [WinRM](/windows/win32/winrm/portal?redirectedfrom=MSDN). In some cases, it requires that [CredSSP](/windows/win32/secauthn/credential-security-support-provider?redirectedfrom=MSDN) be enabled. The remoting module enables and disables CredSSP on an execution-by-execution basis. We recommend that you disable CredSSP enabled when it isn't used. Otherwise, there is a risk of credential theft. When you've completed the setup, run the following command.
+> - Remoting uses [WinRM](/windows/win32/winrm/portal?redirectedfrom=MSDN). In some cases, it requires that [CredSSP](/windows/win32/secauthn/credential-security-support-provider?redirectedfrom=MSDN) be enabled. The remoting module enables and disables CredSSP on an execution-by-execution basis. We recommend that you disable CredSSP when it isn't used. Otherwise, there is a risk of credential theft. When you've completed the setup, run the following command.
 > 
 > ```powershell
 > .\Disable-CredSSP-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml.
