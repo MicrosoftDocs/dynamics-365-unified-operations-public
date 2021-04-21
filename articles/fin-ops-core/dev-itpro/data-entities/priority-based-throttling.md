@@ -31,17 +31,14 @@ ms.dyn365.ops.version: Platform update 37
 
 [!include [banner](../includes/banner.md)]
 
-> [!NOTE]
-> The functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change. To test this capability, configure integration priorities on the **Throttling priority mapping** page.  
+> [!Note]
+> Priority-based throttling is enabled by default starting in platform update for Dynamics 365 Fincance 10.0.19. To learn about how you can ready your environment prior to updating to 10.0.19, see [FAQ document](throttling-faq.md). To test this capability, configure the integration priorities on the **Throttling priority mapping** page.
 
-[!Note]
-Priority-based throttling is enabled by default starting in 10.0.19 (PU43). Please refer to the [FAQ document](throttling-faq.md) to learn about how you can ready your environment prior to updating to PU43. To test this capability, configure integration priorities on the **Throttling priority mapping** page.
+Priority-based throttling introduces service protection settings that prevent the over-utilization of resources to preserve the system's responsiveness and ensure consistent availability and performance for environments running Dynamics 365 Finance and Operations apps.
 
-Priority-based throttling introduces service protection settings that prevents the over-utilization of resources to preserve the system's responsiveness and ensure consistent availability and performance for environments running Dynamics 365 Finance and Operations apps.
+You have the ability to set relative priority for the OData and custom service-based integrations, depending on your business-critical need for these integrations. The throttling manager will then honor these priorities set for these requests.
 
-You have the ability to set relative priority for the each OData and custom service-based integrations, depending on your business-critical need for these integrations. The throttling manager will then honor these priorities set for these requests.
-
-- For OData and custom service requests, a 429 error "Too many requests", will be send when system health and performance is affected. 
+- For OData and custom service requests, a 429 error "Too many requests", will be sent when system health and performance are affected. 
 - You can query throttling events on the **Lifecycle Services Monitoring** page.  
 
 The **Throttling Priority Mapping** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. 
@@ -96,7 +93,7 @@ When a request is throttled, the system provides a value indicating the duration
 
 ## Monitoring
 
-To have a successful onboarding experience with the throttling capability, you must also be able to monitor your Odata and custom service integration patterns. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center, contains a collection of monitoring and diagnostics tools that can help ensure that you have an accurate view of the environments you manage. For more details, see [Monitoring and diagnostics tools in Lifecycle Services (LCS)](../lifecycle-services/monitoring-diagnostics.md).
+To have a successful onboarding experience with the throttling capability, you must also be able to monitor your Odata and custom service integration patterns. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center, contains a collection of monitoring and diagnostics tools that can help ensure that you have an accurate view of the environments you manage. For more information, see [Monitoring and diagnostics tools in Lifecycle Services (LCS)](../lifecycle-services/monitoring-diagnostics.md).
 
 You can use a set of predefined queries to get raw logs for an issue. You can then export the logs for a more advanced analysis. The following types of queries are available:
 
