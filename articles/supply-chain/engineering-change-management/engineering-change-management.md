@@ -107,7 +107,11 @@ When you review a request for change, you can search for dependencies. In this w
     - **Search** – Scans all open transactions, and then open the **Business impact to open transactions** dialog box, which lists all transactions that will be affected by the change.
     - **View previous search** – Open the **Business impact to open transactions** dialog box, which lists the results of the previous search. (A new search isn't done.)
 
-1. If the issue that requires a change is found to be critical, you can block the open transactions or notify the responsible user by using the buttons on the toolbar in the **Business impact to open transactions** dialog box.
+1. If the issue that requires a change is found to be critical, you can block the open transactions or notify the responsible user (sales responsible or purchase responsible) by using the buttons on the toolbar in the **Business impact to open transactions** dialog box. This person will get a task on their list of tasks assigned to them.
+
+1. You can also **notify production** when the product being changed is on a production order. In the case of production orders, there is not a production order responsible that would take charge of the production order end to end, as it happens with the sales order or the purchase order, that have a clear responsible. For production in most cases, different supervisors or planners take ownership for a site or part of the production (resources or resource groups). You'll be able to view the production orders that have engineering notifications in two different ways. 
+The first, to be able to view all production orders where an engineering notification has been sent is on the page Engineering notifications, that can be opened from the All production orders page. 
+The second, to be able to view the engineering notifications that would apply to a specific supervisor is from the Production floor management workspace, where there is a tile "Engineering notifications". This tile will take into account the engineering notifications that apply to the supervisor (that has configured its own workspace according to his/her area of responsability). Any production order with engineering notification which has a route including a site or resource matching his ownership, will appear in the tile count. 
 
 ### Create a change order from a change request
 
