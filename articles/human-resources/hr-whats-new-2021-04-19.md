@@ -50,7 +50,6 @@ The following features are generally available with this release.
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
 | Show a notification to the user upon login if reason codes need to be migrated. - (574101) | | |
-| Privilege for viewing 'Workers without employment' when XDS is on. | |[Workers without employment](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-personnel-workers-without-employment)|
 | Integrate missing code from Elevate into Life Events  - (526420) | | |
 | [GA] Cross company clean up preview switch and flight - (556591) | | |
 | Platform update 10.0.17 (41) | -- | [Platform updates for version 10.0.17 of Finance and Operations apps (April 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
@@ -65,6 +64,7 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
+|565054 |Unable to view 'Workers without employment' when XDS is on. |This fixed the issues that once XDS was turned on, only system admins can view the contents of the Workers without employments list. You will need to turn this functionality on in feature management.  Learn more about [Workers without employment](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-personnel-workers-without-employment)|
 | ## Affordable Care coverage option is taking to the main Affordable Care coverage group form instead of Affordable Care coverage form for the particular Employee - (565963) | | |
 | 573676 | Cannot add Period to BenefitPlan - (573676) On the BenefitPlan form (Benefits Management > Links > Benefit plans) | Fixed bugs where Periods could not be added or updated on existing Benefit plans on th form |
 | ## Benefits Workspace V2 feature does not handle GA feature stage dynamically based on feature management - (573617) | | |
