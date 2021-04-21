@@ -20,8 +20,10 @@ ms.dyn365.ops.version: AX 10.0.18
 
 These topics explain how to create a POS extension using the independent POS extension model and sealed SDK. This topic applies to Retail software development kit (SDK) version 10.0.18 and later.
 
-[Getting started with POS extension](pos-getting-started.md)
-
++ [Getting started with POS extensions](pos-getting-started.md)
++ [Debug a POS extension](debug-pos-extension.md)
++ [Create a POS extension package project](create-pos-extension-package.md)
++ [Create a Modern POS extension appx file](create-pos-extension-appx.md)
 
 ## Supported apps
 
