@@ -42,7 +42,7 @@ Manage time-off requests from the **Employee self-service** workspace in Dynamic
 
 ## (Preview) Leave request workflow experience enhancements
 
-[!include [Preview feature](../includes/preview-feature.md)]
+[!include [Preview feature](/includes/preview-feature.md)]
 
 This preview feature provides the following enhancements:
 
