@@ -18,6 +18,15 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
+A POS application can be extended independently by using the POS SDK. The POS SDK supports modifying and creating the POS user experience, out-of-bx functional enhancements or modifications, validations, and adding custom features. The extensions include:
+
++ Extend POS UI: The POS UI can be extended to add custom columns, app bar buttons, and custom controls depending on the view. The cart view and the welcome screen support configuration using the screen layout designer. Other views can be extended by writing custom code.
++ Override POS business logic: You can extend POS business logic to add custom logic by overriding the POS request handlers.
++ Pre and post triggers: You can add custom logic before or after any POS operation.
++ Consume APIs: POS exposes APIs and UX controls which can be consumed in extension scenarios.
++ Custom UX and APIs: You can extend POS to add custom views and APIs to support new functionalities and features.
++ Custom operations: You can add custom operations to perform custom functionalities.
+
 These topics explain how to create a POS extension using the independent POS extension model and sealed SDK. This topic applies to Retail software development kit (SDK) version 10.0.18 and later.
 
 + [Getting started with POS extensions](pos-getting-started.md)
@@ -39,15 +48,4 @@ Cloud Point of Sale (CPOS) | CPOS is a hosted version of the POS that runs in th
 Store Commerce | The Store Commerce app is a Windows app from Microsoft Store that runs on a Windows device. The Store Commerce app uses the Chromium engine to render the app. The rendering using the Chromium engine has better rendering performance than the native JavaScript UWP app in Windows. Store Commerce app will replace MPOS when Store Commerce  has full functional parity with MPOS, Currently, the Store Commerce doesn't support running offline (when there is no connectivity to Retail Server).
 iOS hybrid app | The iOS hybrid app is a shell app that runs on an iOS device. The shell hosts CPOS.
 Android hybrid app | The Android hybrid app is a shell app that runs on an Android device. The shell hosts CPOS. 
-
-## POS Independent extension
-
-A POS application can be extended independently by using the POS SDK. The POS SDK supports modifying and creating the POS user experience, out-of-bx functional enhancements or modifications, validations, and adding custom features. The extensions include:
-
-+ Extend POS UI: The POS UI can be extended to add custom columns, app bar buttons, and custom controls depending on the view. The cart view and the welcome screen support configuration using the screen layout designer. Other views can be extended by writing custom code.
-+ Override POS business logic: You can extend POS business logic to add custom logic by overriding the POS request handlers.
-+ Pre and post triggers: You can add custom logic before or after any POS operation.
-+ Consume APIs: POS exposes APIs and UX controls which can be consumed in extension scenarios.
-+ Custom UX and APIs: You can extend POS to add custom views and APIs to support new functionalities and features.
-+ Custom operations: You can add custom operations to perform custom functionalities.
 
