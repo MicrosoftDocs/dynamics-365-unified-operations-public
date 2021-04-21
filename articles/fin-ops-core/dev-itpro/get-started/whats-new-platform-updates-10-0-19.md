@@ -42,7 +42,7 @@ This topic lists the features that are included in the platform updates for vers
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
--  Pass legal entity context to embedded canvas apps<br> - This feature improves the integration of Finance and Operations with Power Apps by automatically passing the user's current legal entity, in addition to the previously selected context field, to any embedded canvas app.<br>- For more information, see [Embed canvas apps from Power Apps](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/embed-power-apps?toc=/dynamics365/commerce/toc.json).
+-  Pass legal entity context to embedded canvas apps<br> - This feature improves the integration of Finance and Operations with Power Apps by automatically passing the user's current legal entity, in addition to the previously selected context field, to any embedded canvas app. For more information, see [Embed canvas apps from Power Apps](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/embed-power-apps?toc=/dynamics365/commerce/toc.json).
 
 -  Visual update for wizards<br> - This feature modernizes the visual appearance of wizards in Finance and Operations apps and more closely aligns the wizard user experience to other Dynamics 365 products.
 
