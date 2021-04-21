@@ -178,7 +178,76 @@ One unique personalization capability that is available on the dashboard is the 
 
 ## Sharing personalizations
 
-After you personalize a page, you can share your personalizations with other users by exporting the personalized page. You can then ask other users to import the personalization file. Alternatively, you can give your personalizations to a user who has admin privileges. That user can then apply your personalization file to many users at the same time by using the **Personalization** administration page.
+After you personalize a page, you can share those personalizations with other users in a few ways. These are ordered from most recommended to least recommended. 
+
+1.  Publish views to users
+2.  Copy views or personalizations to users
+3.  Export and import views or personalizations
+
+###  Publishing views to others
+If the [Saved views](saved-views.md) feature is enabled and the page supports views, the best way to share personalizations with other users is to publish the view to users in one or more security roles. See the **Publishing views** section in the [Saved views](saved-views.md#publishing-views) article for more details.
+
+### Copying views or personalizations to users
+If Saved views is not enabled or the page does not support views, the suggested sharing route is to copy personalizations between users. This action is only available to privileged users (e.g. system administrators); however, the admin can look up a particular user's personalization in the system (including a user's personal view if Saved views are enabled) and copy that configuration to other users. 
+
+To copy personalizations:
+    -  Navigate to the **Personalization** page under **System administration > Setup**.
+    -  If saved views are enabled:
+        - For copying personal views,
+            1.  Select **Personal views**. 
+            2.  Choose the desired view(s) in the list,
+            3.  Select **Copy to users**. 
+            4.  Choose the users you want to distribute the view(s) to. 
+        - For copying personalizations on pages that don't support views, 
+            1.  Select **User settings**.
+            2.  Choose the user who has the personalization you want to distribute.
+            3.  Select **Manage all personalizations**.
+            4.  Choose the desired personalization(s) in the list.
+            5.  Select **Copy to users**.
+            6.  Choose the users you want to distribute the personalization(s) to. 
+    -  If saved views are not enabled: 
+        1.  Select the **Apply** blade.
+        2.  Choose the user(s) you want to distribute the personalization to.
+        3.  Select **Select existing personalization**.
+        4.  Find the (single) personalization you are interested in.
+        5.  Select **OK**. 
+
+### Exporting/importing personalizations 
+One other option for sharing personalizations is via export and import. This can be done by individual users exporting their own personalizations or views (or an admin exporting on behalf of a user), and then giving the exported file to other users to import. Alternatively, you can give your exported personalizations to a user who has admin privileges, and that user can then apply your personalization file to many users at the same time by using the **Personalization** administration page.
+
+#### Exporting
+In general, you can export one of your own views or personalizations by navigating to the desired page, opening the personalization toolbar, and then selecting **Export**. See the [personalization toolbar](#the-personalization-toolbar) section for more details on the personalization toolbar. Alternatively, but only if [Saved views](saved-views.md) are enabled, you can navigate to **Settings > User options > Personalization** to see a list of all your personalizations in the system. From here, you can select the views or personalizations you want to export and select **Export**. 
+
+Administrators also have the ability to export other users' personalizations by doing the following:
+1.  Navigate to the **Personalization** administration page under **System administration > Setup**.  
+2.  Select the **Users** tab.
+3.  Choose the desired user.
+4.  Find the view or personalization you are interested in.
+5.  Select **Export**.  
+
+#### Importing
+To import a personalization or view, you can simply open the personalization toolbar and select **Import**. 
+
+Administrators also have the ability to import a file and give it to one or more users immediately by doing the following: 
+
+1.  Navigate to the **Personalization** administration page under **System administration > Setup**. 
+2.  If saved views are enabled:
+    - Select **Import views > User views** from the Action pane
+    - Select the mode for importing the file by choosing: 
+        - **Select specific users** if you want to pick the user(s) to give the view or personalization to
+        - **Import as-is** if you want to import to the same person who exported the personalization
+    -  Select **Browse** and locate the personalization you want to import. 
+    -  Select **Next**.
+    -  If you chose **Select specific users**, select the users you want to import the personalization to. 
+    -  Select **Import**.
+    -  Resolve conflicts as needed.
+
+3.  If saved are not enabled: 
+    -  Select the **Apply** blade.
+    -  Choose the user(s) you want to distribute the personalization to.
+    -  Select **Import personalizations from a file**.
+    -  Select **Browse** and find the personalization you want to import.
+    -  Select **OK**. 
 
 ## Administration of personalizations
 
