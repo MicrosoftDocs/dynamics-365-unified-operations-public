@@ -36,9 +36,9 @@ Manage time-off requests from the **Employee self-service** workspace in Dynamic
 
 1. In the **Employee self-service** workspace, select **My team**.
 
-2. Under **My team information**, select the **Leave and absence** tab. 
+2. Under **My team information**, select the **Leave and absence** tab.
 
-3. View and approve your team members' time-off requests as necessary.
+3. View and approve your team members' time-off requests as necessary. You can select multiple leave requests.
 
 ## See also
 
