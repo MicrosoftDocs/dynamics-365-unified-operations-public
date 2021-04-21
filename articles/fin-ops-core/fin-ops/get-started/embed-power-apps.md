@@ -60,7 +60,7 @@ The following procedure shows how to embed a canvas app from Power Apps into the
     - The **Name** field indicates the text shown for the button or tab that will contain the embedded app. Oftentimes, you may want to repeat the name of the app in this field.
     - The **App ID** field indicates the globally unique identifier (GUID) for the canvas app that you want to embed. To retrieve this value, find the app on [make.powerapps.com](https://make.powerapps.com), and then look in the **App ID** field under **Details**.
     - For **Input context for the app**, you can optionally select the field that contains the data that you want to pass to the app as input. For details about how the app can access the data sent from Finance and Operations apps, see the section later in this topic titled [Building an app that leverages data sent from Finance and Operations apps](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps). 
-        - Starting in version 10.0.17, the current legal entity will also be passed as context to the canvas app via the **cmp** URL parameter. This will have no impact on the target canvas app until that app makes use of this information. 
+        - Starting in version 10.0.19, the current legal entity will also be passed as context to the canvas app via the **cmp** URL parameter. This will have no impact on the target canvas app until that app makes use of this information. 
     - Choose the **Application size** that matches the type of app that you're embedding. Select **Thin** for apps built for mobile devices, and **Wide** for apps built for tablets. This ensures a sufficient amount of space is allotted for the embedded app.
     - The **Legal entities** FastTab provides the ability to choose which legal entities the app is available for. The default is to make the app accessible to all legal entities. This option is only available when the [Saved views](saved-views.md) feature is disabled. 
 
@@ -84,7 +84,7 @@ See [Personalize the user experience](personalize-user-experience.md) for more d
 
 ## Building a canvas app that uses data that is sent from Finance and Operations apps
 
-When you build a canvas app that will be embedded in a Finance and Operations app, one important part of the process is to use the input data from that Finance and Operations app. From the Power Apps development experience, the input data that is passed from a Finance and Operations app can be accessed by using the **Param("EntityId")** variable. Additionally, starting in version 10.0.17, the current legal entity will also be passed to the canvas app via the **Param("cmp")** variable. 
+When you build a canvas app that will be embedded in a Finance and Operations app, one important part of the process is to use the input data from that Finance and Operations app. From the Power Apps development experience, the input data that is passed from a Finance and Operations app can be accessed by using the **Param("EntityId")** variable. Additionally, starting in version 10.0.19, the current legal entity will also be passed to the canvas app via the **Param("cmp")** variable. 
 
 For example, in the OnStart function of the app, you could set the input data from Finance and Operations apps to a variable like this:
 
