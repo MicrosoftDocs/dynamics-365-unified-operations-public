@@ -55,13 +55,13 @@ This topic includes information and links to resources that can help you set up 
 - [Setup method of payment](tasks/fr-00004-setup-method-payment.md)
 - [Update method of payment on customer](tasks/fr-00004-update-method-payment-customer.md)
 - Commerce
-  - [Cash register functionality](../../retail/localizations/emea-fra-cash-registers.md)
-  - [Deployment guidelines for cash registers](../../retail/localizations/emea-fra-deployment.md)
+  - [Cash register functionality](../../commerce/localizations/emea-fra-cash-registers.md)
+  - [Deployment guidelines for cash registers](../../commerce/localizations/emea-fra-deployment.md)
 
 ## Additional resources
 
-- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Microsoft Dynamics Localization Portal: Australia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/france.html)
 
 

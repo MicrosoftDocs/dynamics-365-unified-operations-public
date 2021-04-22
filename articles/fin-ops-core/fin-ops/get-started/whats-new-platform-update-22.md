@@ -37,7 +37,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the October '18 release notes](/dynamics365/release-plans/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Platform update 22 bug fixes
 
@@ -45,7 +45,7 @@ For information about the bug fixes included in each of the updates that are par
 
 ## Extensibility enhancements
 
-With Platform update 22, a third wave of platform extensibility enhancements are available. For more information, see [Platform extensibility enhancements wave 3](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility3).
+With Platform update 22, a third wave of platform extensibility enhancements are available. For more information, see [Platform extensibility enhancements wave 3](/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility3).
 
 ## Export up to 1 million rows to Excel
 
@@ -53,7 +53,7 @@ The Export to Excel feature can now be configured to allow users to export up to
 
 ## Improved usability of the navigation pane
 
-The navigation pane is a highly used navigation mechanism in Finance and Operations that provides access to favorites, recently opened pages, workspaces, and notably the main menu. Because of its high usage, the navigation pane has been enhanced in a few ways to improve its usability. These changes are available starting in Platform Update 22. To learn more, see [Improved usability of the navigation pane](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updated-navigation-pane).
+The navigation pane is a highly used navigation mechanism in Finance and Operations that provides access to favorites, recently opened pages, workspaces, and notably the main menu. Because of its high usage, the navigation pane has been enhanced in a few ways to improve its usability. These changes are available starting in Platform Update 22. To learn more, see [Improved usability of the navigation pane](/business-applications-release-notes/October18/dynamics365-finance-operations/updated-navigation-pane).
 
 ## Restyled personalization toolbar
 
@@ -73,13 +73,13 @@ The following image shows how the personalization toolbar appears in Platform up
 
 ## Optimized "is one of" filtering experience
 
-The "is one of" filtering operator is available for most fields when using the Filter Pane and grid header drop-down lists. This operator allows a user to filter a field based on multiple, different values. A new and improved experience for the "is one of" operator is available in Platform update 22. To learn more, see [Optimized "is one of" filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
+The "is one of" filtering operator is available for most fields when using the Filter Pane and grid header drop-down lists. This operator allows a user to filter a field based on multiple, different values. A new and improved experience for the "is one of" operator is available in Platform update 22. To learn more, see [Optimized "is one of" filtering experience](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
 ## Paste lists from Excel into filter fields with the "is one of" operator
 
 For some tasks, users might have a list of values in Excel that they'd like to use to filter data in Finance and Operations. For example, a finance user might have identified a set of vouchers from a report that need additional research in the system, and it would be ideal for this user to be able to copy the list directly from Excel into a filter field in Finance and Operations.
 
-Starting in Platform update 22, the "is one of" operator in the Filter Pane and grid column filtering now recognizes lists copied from Excel so that they can be pasted directly into a filter field. This includes a collection of values copied from different rows and columns in Excel. To learn more about this feature, see [Paste lists from Excel into filter fields with the "is one of" operator](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+Starting in Platform update 22, the "is one of" operator in the Filter Pane and grid column filtering now recognizes lists copied from Excel so that they can be pasted directly into a filter field. This includes a collection of values copied from different rows and columns in Excel. To learn more about this feature, see [Paste lists from Excel into filter fields with the "is one of" operator](/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
 ## Batch job to handle SQL index defragmentation
 In Platform update 22, a new system batch job has been introduced to rebuild fragmented indexes. Index fragmentation results in notable performance degradation in specific scenarios. To address fragmentation issues and keep the database in a top-performing state, this batch job will rebuild highly fragmented indexes periodically at a scheduled time. By default, the job scheduled to run at 3:00 AM local time every day for a maximum of 2 hours. If the batch job finds that not many fragmented indexes need to be rebuilt, it will complete early.  

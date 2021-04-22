@@ -79,7 +79,9 @@ Here is an explanation of the parameters:
 - **tdn (target database name)** – The name of the database to import into. The database should **not** already exist.
 - **sf (source file)** – The path and name of the file to import from.
 
-> [!NOTE]
+> [!IMPORTANT]
+> To ensure that imported data is compatible with the metadata, you must trigger a full database synchronization from Visual Studio. 
+
 > During import, the user name and password aren't required. By default, SQL Server uses Microsoft Windows authentication for the user who is currently signed in.
 
 ## Update the database

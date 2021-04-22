@@ -36,7 +36,7 @@ You can enter the bid as either a vendor or a procurement professional. For more
 
 ## Enter a reply as a vendor
 
-1. On the dashboard, select **Vendor bidding**.
+1. Go to **Vendor collaboration \> Workspaces \> Vendor bidding**.
 2. In the **New bid invitations** list, find an RFQ that was just sent. Select the RFQ to review what was requested.
 3. Select **RFQ attachments** to review any attachments that have been added.
 4. Select **Bid** to make the fields editable. Notice that the **Bid progress** field is set to **Vendor is updating**.

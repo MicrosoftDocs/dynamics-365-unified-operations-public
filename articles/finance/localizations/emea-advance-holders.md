@@ -83,7 +83,7 @@ To correctly register and post a purchase order through an advance holder, you m
 
 ### Create an advance holder
 
-Before you can create an advance holder, you must have already set up workers. For more information, see [Enter worker information (Task guide)](../../fin-and-ops/hr/tasks/enter-worker-information.md). 
+Before you can create an advance holder, you must have already set up workers. For more information, see [Enter worker information (Task guide)](../../human-resources/hr-personnel-enter-worker-information.md). 
 
 1. Select **Accounts payable** \> **Advance holders** \> **Advance holders**.
 

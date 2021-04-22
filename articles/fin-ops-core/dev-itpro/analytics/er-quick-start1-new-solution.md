@@ -124,7 +124,7 @@ The following steps explain how a user in the System Administrator, Electronic R
 
 - [Additional resources](#References)
 
-In this example, you will create a new ER solution for the [Questionnaire](https://docs.microsoft.com/dynamics365/human-resources/hr-learning-questionnaires) module. This new ER solution lets you design a report by using a Microsoft Excel worksheet as a template. You can then generate the **Questionnaire** report in Excel or PDF format, in addition to generating the existing SQL Server Reporting Services (SSRS) report. You can also modify the new report later, upon request. No coding is required.
+In this example, you will create a new ER solution for the [Questionnaire](../../../human-resources/hr-learning-questionnaires.md) module. This new ER solution lets you design a report by using a Microsoft Excel worksheet as a template. You can then generate the **Questionnaire** report in Excel or PDF format, in addition to generating the existing SQL Server Reporting Services (SSRS) report. You can also modify the new report later, upon request. No coding is required.
 
 1. To run the existing report, go to **Questionnaire** \> **Design** \> **Questionnaires report**.
 

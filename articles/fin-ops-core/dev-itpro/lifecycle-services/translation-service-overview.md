@@ -46,7 +46,7 @@ Existing linguistic assets can be recycled only when the assets are uploaded in 
 DTS uses a Microsoft Translator service and a custom translator to customize Microsoft Translator’s advanced neural machine translation for Microsoft Dynamics products. The custom-trained MT system can only be used for GA languages, unless partners upload XLIFF TM files that contain more than 10,000 translation units (TUs). (A TU typically contains a source string, translation, state, state qualifier, and note.) In those cases, DTS creates a custom-trained MT system that is specific to the translation request that the XLIFF TM files are submitted for.
 
 > [!NOTE]
-> Microsoft Translator supports the text translation through the Microsoft Translator Text API. DTS uses V3 Translator API because V2 will be discontinued on April 30, 2019 with the retirement of[Microsoft Translator Hub](https://www.microsoft.com/translator/business/hub/). For information about the supported languages for V3, see [Language and region support for the Translator Text API](https://docs.microsoft.com/azure/cognitive-services/translator/language-support#customization). 
+> Microsoft Translator supports the text translation through the Microsoft Translator Text API. DTS uses V3 Translator API because V2 will be discontinued on April 30, 2019 with the retirement of[Microsoft Translator Hub](https://www.microsoft.com/translator/business/hub/). For information about the supported languages for V3, see [Language and region support for the Translator Text API](/azure/cognitive-services/translator/language-support#customization). 
 
 ## Supported products
 DTS currently supports the following product versions.

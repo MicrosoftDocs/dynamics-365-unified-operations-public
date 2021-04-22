@@ -46,7 +46,7 @@ This link takes you to AI Builder, where you can learn more about the current mo
 
 The page that is opened shows the following information:
 
-- In the **Performance** section, the model performance grade provides perspective on the quality of the model. For more information about this grade, see [Prediction model performance](https://docs.microsoft.com/ai-builder/prediction-performance) in the AI Builder documentation.
+- In the **Performance** section, the model performance grade provides perspective on the quality of the model. For more information about this grade, see [Prediction model performance](/ai-builder/prediction-performance) in the AI Builder documentation.
 - The **Most influential data** section shows how important different input types of data were for your model. You can evaluate this list and the corresponding percentages to determine whether the information is consistent with what you know about your business and market.
 
     [![Performance and Most influential data sections for the prediction model](./media/models.png)](./media/models.png)

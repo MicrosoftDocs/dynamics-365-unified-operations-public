@@ -22,7 +22,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2020-11-31 
+ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
 ---
 
@@ -38,17 +38,17 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following features are included in this release. Follow the links to the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
+The following features are included in this release. Follow the links to the [release plan](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
 
-- [Customizable shop floor execution interface](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - For more information, see [Set up a device to run the production floor execution interface](../production-control/production-floor-execution-setup.md).
+- [Customizable shop floor execution interface](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - For more information, see [Set up a device to run the production floor execution interface](../production-control/production-floor-execution-setup.md).
 
-- [Inventory Visibility Add-in for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - For more information, see [Inventory Visibility Add-in](../inventory/inventory-visibility.md)
+- [Inventory Visibility Add-in for Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - For more information, see [Inventory Visibility Add-in](../inventory/inventory-visibility.md)
 
 - Unified number sequence for job IDs<br> - For more information, see [Unified number sequence for job IDs](../production-control/unified-job-ids.md).
 
-- [Validate license plates on source document lines](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - For more information, see [Warehouse configuration overview](../warehousing/warehouse-configuration.md).
+- [Validate license plates on source document lines](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - For more information, see [Warehouse configuration overview](../warehousing/warehouse-configuration.md).
 
-- [Warehouse management outbound workload visualization](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - For more information, see [Outbound workload visualization](../warehousing/outbound-workload-visualization.md)
+- [Warehouse management outbound workload visualization](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - For more information, see [Outbound workload visualization](../warehousing/outbound-workload-visualization.md)
 
 Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
@@ -104,7 +104,7 @@ For information about the bug fixes included in each of the updates that are par
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 2 plan](/dynamics365-release-plan/2020wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Supply Chain Management features
 

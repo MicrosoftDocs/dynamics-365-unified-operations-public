@@ -60,7 +60,7 @@ The current platform doesn't allow the use the on-premises version and there are
 
 ## Does Electronic invoicing interface with the vendor import automation feature?
 
-No. There are plans for this interface, but there is no planned timeline. When planned, the dates will be announced in the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/).
+No. There are plans for this interface, but there is no planned timeline. When planned, the dates will be announced in the [Release plans](/dynamics365/release-plans/).
 
 ## How does Electronic invoicing handle file attachments into the electronic invoice? Is a SharePoint server needed when embedding PDF files into the XML file?
 

@@ -4,7 +4,6 @@ description: This topic describes the Party and global address book functionalit
 author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
-ms.service: dynamics-ax-applications
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
@@ -131,7 +130,7 @@ Electronic addresses are available only on this grid. In future releases, all el
 
 ## Setup instructions
 
-1. Install the latest version (2.2.2.50 or later) of [Dual-write application orchestration solution](https://aka.ms/dual-write-app).
+1. Install the latest version (2.2.2.60 or later) of [Dual-write application orchestration solution](https://aka.ms/dual-write-app).
 
 2. Install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).
 
@@ -164,13 +163,13 @@ Electronic addresses are available only on this grid. In future releases, all el
     `Salutations (msdyn_salutations)` | 1.0.0.0 | This is a new map added as part of this release.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | This is a new map added as part of this release.
 
-5. Before running the above maps, make sure the integration keys are updated properly as follows:
+5. Before running the above maps, you must update the integration keys manually as described in the following steps. Then select **Save**.
 
     | Map | Keys |
     |-----|------|
     | Account |  accountnumber [Account Number]<br>msdyn_company.cdm_companycode [Company (Company Code)] |
     | Contact | msdyn_contactpersonid [Account Number/Contact Person ID]<br>msdyn_company.cdm_companycode [Company (Company Code)] |
-    | Contact For Customer/Vendor | msdyn_contactforpartynumber [Contact For Party Number]<br>msdyn_associatedcompanyid.cdm_companycode [Company (Company Code)] |
+    | Contact For Customer/Vendor | msdyn_contactforpartynumber [Contact For Party Number]<br>msdyn_associatedcompanyid.cdm_companycode [Associated Company (Company Code)] |
     | Vendor | msdyn_vendoraccountnumber [Vendor Account Number]<br>msdyn_company.cdm_companycode [Company (Company Code)]|
 
 6. In Dataverse, the duplicate detection rules character limits have increased from 450 to 700 characters. This limit lets you add one or more keys to the duplicate detection rules. Expand the duplicate detection rule for the **Accounts** table by setting the following fields.

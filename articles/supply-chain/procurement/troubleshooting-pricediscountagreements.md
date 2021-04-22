@@ -40,7 +40,7 @@ When you change the shipping date, you might receive a message that states, "Upd
 
 The message is triggered whenever any of the dates or some other parameters are changed. The purpose of the message is to make sure that you're aware of price changes that can occur because of those changes.
 
-The message is the trade agreement evaluation (TAE) prompt. For a full description, see [Trade agreement evaluation policies](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper).
+The message is the trade agreement evaluation (TAE) prompt. For a full description, see [Trade agreement evaluation policies](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper).
 
 ## A purchase order receipt doesn't include all charges.
 
