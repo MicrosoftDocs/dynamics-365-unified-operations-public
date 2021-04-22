@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.18
 
 This topic covers module configuration presets and how to configure them in Microsoft Dynamics 365 Commerce.
 
-Module configuration presets are default values that are used in Dynamics 365 Commerce site builder when no configuration values have been set at the template or layout level.
+Module configuration presets are default values that are used in Commerce site builder when no configuration values are set at the template or layout level.
 
 Module configuration presets can be created at the module level or within a theme. Therefore, different sets of data can be used, depending on the theme that is selected. By default, if no presets exist for a given theme, Commerce site builder uses the module-level presets if they exist. If both module-level presets and theme presets exist, the theme presets override the module-level presets.
 
