@@ -636,6 +636,8 @@
           href: tender_based_discounts.md
         - name: Shipping discount overview 
           href: retail-shipping-discount.md
+        - name: Configure gift with purchase promotions
+          href: gift-with-purchase.md
         - name: Set up coupons  
           href: retail-coupons.md
         - name: Show discounts in POS
@@ -1202,8 +1204,8 @@
         href: store-performance-information.md
       - name: Set up Recency, Frequency, and Monetary (RFM) analysis
         href: set-up-rfm-analysis.md
-      - name: Configure gift with purchase promotions
-        href: gift-with-purchase.md
+      - name: Set up Microsoft Clarity in Dynamics 36 Commerce
+        href: set-up-clarity.md
     - name: Globalization
       items:
       - name: Fiscal integration overview for Commerce channel
