@@ -104,17 +104,17 @@ You must register your Human Resources instance in the Azure portal so the Micro
 
 ### Install the Dynamics 365 HR Virtual Table app
 
-Install the Dynamics 365 HR Virtual Table app in your Power Apps environment to deploy the virtual table solution package to Dataverse. 
+Install the Dynamics 365 HR Virtual Table app in your Power Apps environment to deploy the virtual table solution package to Dataverse.
 
 1. In Human Resources, open the **Microsoft Dataverse integration** page.
 
 2. Select the **Virtual tables** tab.
 
-3. Select the **Install virtual table app** action.
+3. Select **Install virtual table app**.
 
-### Configure the virtual table data source 
+### Configure the virtual table data source
 
-The next step is to configure the virtual table data source in the Power Apps environment. 
+The next step is to configure the virtual table data source in the Power Apps environment.
 
 1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -126,8 +126,8 @@ The next step is to configure the virtual table data source in the Power Apps en
 
 5. On the **Advanced Find** page, in the **Look for** dropdown list, select **Finance and Operations Virtual Data Source Configurations**.
 
-    > [!NOTE]
-    > The install of the virtual table app from the previous setup step can take a few minutes. If Finance and Operations Virtual Data Source Configurations isn't available in the list, wait for a minute and refresh the list.
+   > [!NOTE]
+   > The installation of the virtual table app from the previous setup step can take a few minutes. If **Finance and Operations Virtual Data Source Configurations** isn't available in the list, wait for a minute and refresh the list.
 
 6. Select **Results**.
 
