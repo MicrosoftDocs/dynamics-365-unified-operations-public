@@ -4,7 +4,7 @@
 title: What's new and changed in Dynamics 365 Commerce 10.0.19 (July 2021)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.19. 
 author: josaw1
-ms.date: 03/04/2021
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
