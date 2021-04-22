@@ -4,11 +4,9 @@
 title: Modeling a lean organization
 description: The article provides information about the key concepts in modeling a lean organization. 
 author: cvocph
-manager: tfehr
 ms.date: 09/24/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,7 +55,7 @@ The future-state value stream can be modeled as a production flow version. All p
 
 The value stream itself is modeled as an operating unit. Therefore, the value stream can be used as a financial dimension.
 
-For more information about operating units, see [Create an operating unit](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md).
+For more information about operating units, see [Create an operating unit](../../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md).
 
 ## Costing for lean manufacturing based on the production flow
 The periodic consolidation of the cost for a production flow corrects the related WIP account and enables variances to be determined for the products that are supplied by the production flow.

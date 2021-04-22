@@ -4,11 +4,9 @@
 title: Create advanced rules for journals
 description: This procedure steps through creating advanced rules for journals. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

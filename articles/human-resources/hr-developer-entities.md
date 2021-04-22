@@ -4,11 +4,9 @@
 title: Dataverse tables
 description: Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility and integration scenarios.
 author: andreabichsel
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -37,7 +35,7 @@ ms.dyn365.ops.version: Human Resources
 Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility and integration scenarios.
 
 > [!NOTE]
-> Human Resources entities correspond to Dataverse tables. For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Human Resources entities correspond to Dataverse tables. For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 The following Dataverse tables are available based on Human Resources entities.
 
@@ -188,8 +186,8 @@ The following Dataverse tables are available based on Human Resources entities.
 [Configure Dataverse integration](hr-admin-integration-common-data-service.md)<br>
 [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Human Resources virtual tables FAQ](hr-admin-virtual-entity-faq.md)<br>
-[What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Terminology updates](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+[What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Terminology updates](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

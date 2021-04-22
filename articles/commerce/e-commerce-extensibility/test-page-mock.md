@@ -4,11 +4,9 @@
 title: Test modules by using page mocks
 description: This topic describes how to test modules by using page mocks.
 author: samjarawan
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to test modules by using page mocks.
-
-## Overview
 
 Some modules are built to interact with other modules. You can use page mocks to test those modules together in a local development environment.
 

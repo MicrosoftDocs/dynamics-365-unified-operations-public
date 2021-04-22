@@ -4,11 +4,9 @@
 title: Fixed asset allocation rules for Japan
 description: This article answers some frequently asked questions about fixed asset allocation rules for Japan.
 author: yijialuan
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

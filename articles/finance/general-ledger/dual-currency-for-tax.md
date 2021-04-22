@@ -4,11 +4,9 @@
 title: Dual currency support for tax
 description: This topic explains how to extend dual currency accounting feature in tax domain and the impact for tax calculation and posting
 author: EricWang
-manager: Ann Beebe
 ms.date: 12/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

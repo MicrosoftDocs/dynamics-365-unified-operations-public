@@ -4,11 +4,9 @@
 title: Posting of online sales and payments
 description: This procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions. 
 author: psimolin
-manager: AnnBe 
 ms.date: 08/06/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

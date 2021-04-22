@@ -4,11 +4,9 @@
 title: Purchases of taxable goods that have shipping charges
 description: This topic provides information about the purchase of taxable goods that have shipping charges. 
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata

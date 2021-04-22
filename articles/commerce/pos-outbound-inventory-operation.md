@@ -4,12 +4,10 @@
 title: Outbound inventory operation in POS
 description: This topic describes capabilities of the point of sale (POS) outbound inventory operation.
 author: hhaines
-manager: annbe
 
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

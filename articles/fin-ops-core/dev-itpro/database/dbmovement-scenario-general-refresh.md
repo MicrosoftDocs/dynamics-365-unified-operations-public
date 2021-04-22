@@ -4,7 +4,6 @@
 title: Refresh for training purposes
 description: This topic explains a general-purpose database refresh scenario for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
-manager: AnnBe
 ms.date: 01/28/2019
 ms.topic: article
 ms.prod: 

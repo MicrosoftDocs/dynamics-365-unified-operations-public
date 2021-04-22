@@ -4,11 +4,9 @@
 title: View plan history and planning logs
 description: This topic explains how to view the history of planning jobs that are triggered by the Planning Optimization functionality.
 author: ChristianRytt
-manager: tfehr
 ms.date: 10/30/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.13 (October 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.13. 
 author: kamaybac
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,23 +38,23 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
+The following features are included in this release. The feature titles link to additional information on the [Release plans](/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- [Change the terminology of "inventory closing cancellation" to "inventory closing reverse"](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - For more information, see [Inventory close](../cost-management/inventory-close.md).
+- [Change the terminology of "inventory closing cancellation" to "inventory closing reverse"](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - For more information, see [Inventory close](../cost-management/inventory-close.md).
 
-- [Confirm outbound shipments from batch jobs](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - For more information, see [Confirm outbound shipments from batch jobs](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
+- [Confirm outbound shipments from batch jobs](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - For more information, see [Confirm outbound shipments from batch jobs](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
 
-- [Delegation of multiple purchasing work items](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - For more information, see [Delegate work items in a workflow](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md).
+- [Delegation of multiple purchasing work items](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - For more information, see [Delegate work items in a workflow](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md).
 
-- [Enter serial numbers while reporting as finished from the job card device](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - For more information, see [Report as finished from the job card device](../production-control/report-finished-job-device.md).
+- [Enter serial numbers while reporting as finished from the job card device](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - For more information, see [Report as finished from the job card device](../production-control/report-finished-job-device.md).
 
-- [New inventory dimensions for product version tracking and enhanced extensibility](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - For more information, see [Product dimensions](../pim/product-dimensions.md).
+- [New inventory dimensions for product version tracking and enhanced extensibility](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - For more information, see [Product dimensions](../pim/product-dimensions.md).
 
-- [Order-committed reservation based on license plates](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - For more information, see [Flexible license plate reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
+- [Order-committed reservation based on license plates](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - For more information, see [Flexible license plate reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
 
-- [Work pick line overview](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
+- [Work pick line overview](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
 
-- [Work policy enhancements for inbound work](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - For more information, see [Warehouse policies](../warehousing/warehouse-work-policies.md).
+- [Work policy enhancements for inbound work](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - For more information, see [Warehouse policies](../warehousing/warehouse-work-policies.md).
 
 ## Additional resources
 
@@ -72,7 +70,7 @@ For information about the bug fixes included in each of the updates that are par
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 2 plan](/dynamics365-release-plan/2020wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Supply Chain Management features
 

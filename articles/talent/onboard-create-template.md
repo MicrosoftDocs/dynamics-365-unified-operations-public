@@ -4,11 +4,9 @@
 title: Create an onboarding template by using Dynamics 365 Talent - Onboard
 description: This topic explains you to use the Dynamics 365 Talent - Onboard app to create a template for an onboarding guide for your new hires. This task is an essential first step in a human capital management (HCM) hire-to-retire strategy.
 author: andreabichsel
-manager:
 ms.date: 05/02/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-talent
 ms.technology:
 
 # optional metadata
@@ -65,7 +63,7 @@ Microsoft Dynamics 365 Talent: Onboard provides various templates that can help 
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
 - [What's new or changed in Dynamics 365 Talent](./whats-new.md)
-- [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Release plans](/business-applications-release-notes/index)
 - [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)
 
 

@@ -4,8 +4,7 @@
 title: SPLITLIST ER function
 description: This topic provides information about how the SPLITLIST Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
-ms.date: 12/12/2019
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,10 +33,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The `SPLITLIST` function splits the specified list into sublists (or batches), each of which contains the specified number of records. It then returns the result as a new *Record list* value that consists of the batches.
 
-## Syntax
+## Syntax 1
 
 ```vb
 SPLITLIST (list, number)
+```
+
+## Syntax 2
+
+```vb
+SPLITLIST (list, number, on-demand reading flag)
 ```
 
 ## Arguments
@@ -49,6 +54,10 @@ The valid path of a data source of the *Record list* data type.
 `number`: *Integer*
 
 The maximum number of records per batch.
+
+`on-demand reading flag`: *Boolean*
+
+A *Boolean* value that specifies whether elements of sublists should be generated on demand.
 
 ## Return values
 
@@ -67,6 +76,8 @@ The list of batches that is returned contains the following elements:
 - **BatchNumber:** *Integer*
 
     The number of the current batch in the returned list.
+
+When the on-demand reading flag is set to **True**, sublists are generated upon request which allows for a reduction in memory consumption but may cause performance degradation if elements aren't used sequentially.
 
 ## Example
 

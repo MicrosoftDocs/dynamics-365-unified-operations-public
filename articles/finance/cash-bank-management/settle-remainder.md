@@ -4,11 +4,9 @@
 title: Settle remainder
 description: You can settle the amount remaining from settlement activity by applying that amount to a ledger account.
 author: mikefalkner
-manager: aolson
 ms.date: 10/16/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

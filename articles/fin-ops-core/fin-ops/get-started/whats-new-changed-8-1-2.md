@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 for Finance and Operations version 8.1.2 (December 2018)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.2. This version was released in December 2018.
 author: tonyafehr
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
@@ -34,13 +33,13 @@ ms.dyn365.ops.version: Release 8.1.2
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1.2. This version was released in December 2018 and has a build number of 8.1.195.
 
-To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new).
+To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail](../../../commerce/get-started/whats-new.md).
 
 ### Dynamics 365 October '18 release notes
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the October '18 release notes](/dynamics365/release-plans/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ## Bug fixes
 
@@ -132,7 +131,7 @@ For more information, see [ER Import a configuration from Lifecycle Services](..
 
 These configuration versions are released as public preview and will be updated based on feedback received. Use them to learn how electronic formats of sales, purchase books, additional sheets, and factures journals are configured with Electronic reporting. Do not use these configurations as base configurations for derived customized configurations in a live environment.
 
-For more information, see [Sales books, purchase books, and invoice-factures journals](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books).
+For more information, see [Sales books, purchase books, and invoice-factures journals](../../../finance/localizations/rus-sales-books-purchase-books.md).
 
 
 

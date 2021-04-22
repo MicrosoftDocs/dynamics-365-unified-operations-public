@@ -3,12 +3,10 @@
 
 title: Manage vendor collaboration users
 description: This topic describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -24,7 +22,7 @@ ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
 
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -70,7 +68,7 @@ Before you can request that a new user is provisioned, that person must be set u
 4. In the **Assign user roles** section, select the **Assign** check box for the security roles that the new user should have.
 5. Click **Submit**.
 
-When the vendor user request is submitted, the **Vendor collaboration access allowed** field is set to **Yes** for the selected vendor account and a user request workflow is started. As part of the workflow, a new user is created, and security roles are assigned. In addition, an Azure B2B service is activated which initiates interaction with Azure portal and associates a new or existing AAD account with the Supply Chain Management user account. For more information, see [What is Azure AD B2B collaboration?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+When the vendor user request is submitted, the **Vendor collaboration access allowed** field is set to **Yes** for the selected vendor account and a user request workflow is started. As part of the workflow, a new user is created, and security roles are assigned. In addition, an Azure B2B service is activated which initiates interaction with Azure portal and associates a new or existing AAD account with the Supply Chain Management user account. For more information, see [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### Inactivate a user
 

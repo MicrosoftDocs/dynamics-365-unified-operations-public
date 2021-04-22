@@ -4,11 +4,9 @@
 title: Import letter of credit
 description: This procedure walks through the process of importing a letter of credit. 
 author: kweekley
-manager: AnnBe 
 ms.date: 02/28/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

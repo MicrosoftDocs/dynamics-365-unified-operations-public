@@ -4,7 +4,6 @@
 title: Customization analysis in Lifecycle Services (LCS)
 description: Customization analysis is a Microsoft Dynamics AX 2012 automated tool that validates model files against best-practice rules. 
 author: RobinARH
-manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
@@ -37,7 +36,7 @@ In Microsoft Dynamics Lifecycle Services, Customization analysis offers Microsof
 Prerequisites
 -------------
 
-You must have Microsoft Dynamics AX 2012 model files to be analyzed. For more information about model files, see [How to: Export and Import a Model](https://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx).
+You must have Microsoft Dynamics AX 2012 model files to be analyzed. For more information about model files, see [How to: Export and Import a Model](/dynamicsax-2012/developer/how-to-export-and-import-a-model).
 
 ## Getting started
 To use Customization analysis, you must upload model files and then evaluate the reports to determine what changes you want to make.
@@ -70,7 +69,7 @@ To remove a job from the list of customizations for a project, hover over the jo
 Additional resources
 --------
 
-[Best Practices for Microsoft Dynamics AX Development](https://msdn.microsoft.com/library/833e44ff-d89a-459a-84be-0cc5da57ee90(AX.60).aspx)
+[Best Practices for Microsoft Dynamics AX Development](/dynamicsax-2012/developer/best-practices-for-microsoft-dynamics-ax-development)
 
 
 

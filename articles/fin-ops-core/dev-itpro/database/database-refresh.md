@@ -4,7 +4,6 @@
 title: Refresh database
 description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
-manager: AnnBe
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod:
@@ -35,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a refresh of the database to a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the transactional and financial reporting databases of your production environment into the target, sandbox UAT environment. If you have another sandbox environment, you can also copy the databases from that environment to your target, sandbox UAT environment.
 
 > [!IMPORTANT]
+> Copying production data during business hours or peak hours could have an impact on the production system. It's highly recommended to do the refresh database operation during off-peak hours and limit only one refresh operation at a time.
+
 > Copying production data to your sandbox environment for the purpose of production reporting is not supported.
 
 ## Self-service database refresh

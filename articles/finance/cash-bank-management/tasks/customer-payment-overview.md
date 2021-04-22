@@ -4,11 +4,9 @@
 title: Customer payment overview
 description: This task guide walks through various methods used to enter customer payments. 
 author: kweekley
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

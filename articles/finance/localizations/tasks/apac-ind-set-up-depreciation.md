@@ -4,11 +4,9 @@
 title: Set up parameters to calculate depreciation (India)
 description: This procedure walks you through setting up fixed assets parameters to calculate depreciation based on the Companies Act of India and to generate the Depreciation schedule report. 
 author: AdamTrukawka
-manager: AnnBe 
 ms.date: 12/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

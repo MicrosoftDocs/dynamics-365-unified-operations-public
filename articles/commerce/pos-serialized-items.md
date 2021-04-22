@@ -4,11 +4,9 @@
 title: Work with serialized items in the POS
 description: This topic explains how to manage serialized items in the point of sale (POS) application.
 author: boycezhu
-manager: annbe
 ms.date: 01/08/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

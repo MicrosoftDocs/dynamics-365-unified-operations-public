@@ -4,7 +4,6 @@
 title: VALUEIN ER function
 description: This topic provides information about how the VALUEIN Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 08/18/2020
 ms.topic: article
 ms.prod: 

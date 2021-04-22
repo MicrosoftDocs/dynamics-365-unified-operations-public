@@ -4,7 +4,6 @@
 title: Model aggregate data
 description: This tutorial will walk you through the process of modeling aggregate data.
 author: MilindaV2
-manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
@@ -214,7 +213,7 @@ Now that you have completed modeling the aggregate measurement, you can deploy t
 | Option                | Considerations |
 |-----------------------|----------------|
 | In-memory real-time   | This option will leverage the In-memory Column store indexes of SQL Server database to deploy Aggregate Measurements. This option is recommended when the Aggregate measurement is used for embedded analytics within the client where you need **real-time analytics**. For an overview of concepts on real-time analytics, see [Analytics, aggregate measurements, and KPI modeling](analytics.md). |
-| Stage in Entity Store | This option leverages Entity store, the operational data store that enables **near real-time PowerBI reporting**. If you choose this option, Aggregate measurement can be deployed to Entity store and you can schedule the data to be refreshed periodically. For an overview of this approach, refer to the blog post here: [https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) |
+| Stage in Entity Store | This option leverages Entity store, the operational data store that enables **near real-time PowerBI reporting**. If you choose this option, Aggregate measurement can be deployed to Entity store and you can schedule the data to be refreshed periodically. For an overview of this approach, refer to the blog post here: [https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update) |
 
 > [!NOTE]
 > **SSAS Cube** option is no longer supported when modeling aggregate measurements.

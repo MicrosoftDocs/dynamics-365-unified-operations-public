@@ -4,7 +4,6 @@
 title: Date/time data and time zones
 description: This article provides information about date and time fields, and time zones.
 author: pvillads
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

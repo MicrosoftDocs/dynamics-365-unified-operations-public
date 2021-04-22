@@ -4,11 +4,9 @@
 title: Specify how to dispose of returned items 
 description: Specify how to dispose of returned items.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -179,7 +177,7 @@ For each disposition code that you define, you must select a disposition action.
 
 ## See also
 
-[Quarantine order (form)](https://technet.microsoft.com/library/aa554073(v=ax.60))
+[Quarantine order (form)](/dynamicsax-2012//quarantine-order-form)
 
 [Disposition codes (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 

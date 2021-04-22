@@ -4,11 +4,9 @@
 title: Add to your performance journal and send praise to someone
 description: The performance journal holds information that relates to how you met your goals or how you performed during a period. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

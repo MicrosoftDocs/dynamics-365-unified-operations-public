@@ -1,31 +1,16 @@
 ---
-# required metadata
-
 title: X++ class library
 description: This topic describes the library of classes in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/18/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 150303
-ms.assetid: 1b2d76d1-52d9-46b2-937f-5a3b62f2d516
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ class library

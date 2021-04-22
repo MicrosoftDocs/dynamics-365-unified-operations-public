@@ -4,7 +4,6 @@
 title: Troubleshoot AX 2012 R3 deployments on Azure
 description: This topic explains how to resolve common issues and how to get assistance with your Microsoft Dynamics AX 2012 R3 environment on Azure.
 author: kfend
-manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
@@ -50,7 +49,7 @@ If you need to renew the trial license for Windows on the virtual machine in a d
 A command prompt window will be displayed briefly, and then the virtual machine will restart. The license is now good for 180 days. You can complete this procedure 3 times.
 
 ## How do I renew the Microsoft Dynamics AX license on a demo virtual machine?
-If you need to renew the license for Microsoft Dynamics AX on the virtual machine in a demo environment, follow the steps listed in [Provide license information](https://technet.microsoft.com/library/aa496447.aspx).
+If you need to renew the license for Microsoft Dynamics AX on the virtual machine in a demo environment, follow the steps listed in [Provide license information](/dynamicsax-2012/appuser-itpro/provide-license-information).
 
 ## How do I activate Windows on the virtual machines in my non-demo environment?
 Windows is automatically activated on the virtual machines that are included with non-demo environments. However, the activation may take up to 4 days to complete. If you continue to see messages that prompt you to activate Windows after 4 days, contact the Azure support team. For information on how to contact the Azure support team, see the following section.
@@ -75,7 +74,7 @@ Dynamics AX clients may crash upon first login after a restart or after a period
 Kernels are cumulative and the most recent kernel can be found here: <https://blogs.msdn.microsoft.com/axsupport/2012/03/29/overview-of-microsoft-dynamics-ax-build-numbers/>
 
 ## How do I monitor for storage account throttling?
-To monitor storage account throttling, see [How to Monitor for Storage Account Throttling](https://blogs.msdn.microsoft.com/mast/2014/08/02/how-to-monitor-for-storage-account-throttling/). Alerts and notifications can be utilized to notify you when storage is being throttled. If this is happening, see the [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md) topic for information about leveraging multiple Azure Connectors and/or LCS projects.
+To monitor storage account throttling, see [How to Monitor for Storage Account Throttling](/archive/blogs/mast/how-to-monitor-for-storage-account-throttling). Alerts and notifications can be utilized to notify you when storage is being throttled. If this is happening, see the [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md) topic for information about leveraging multiple Azure Connectors and/or LCS projects.
 
 ## How do I contact Support?
 If you need to contact Microsoft with licensing or technical questions, you must first determine which support team to contact. Use the information below to best identify which support team to contact.

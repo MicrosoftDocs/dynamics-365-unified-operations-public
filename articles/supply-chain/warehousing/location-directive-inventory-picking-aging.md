@@ -4,11 +4,9 @@
 title: Location directive inventory picking aging
 description: This topic explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking.
 author: mirzaab
-manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

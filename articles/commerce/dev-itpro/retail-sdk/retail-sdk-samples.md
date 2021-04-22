@@ -4,11 +4,9 @@
 title: Extend Commerce Store receipts
 description: This topic describes how to extend Commerce store receipts.
 author: mugunthanm
-manager: AnnBe
 ms.date: 03/02/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Attract features and capabilities
 description: This topic describes the features that Microsoft Dynamics 365 Talent - Attract provides for managing the process of hiring new talent.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata

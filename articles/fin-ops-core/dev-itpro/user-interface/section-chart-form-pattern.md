@@ -4,7 +4,6 @@
 title: Section Chart form pattern
 description: This topic provides information about the Section Chart form pattern.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

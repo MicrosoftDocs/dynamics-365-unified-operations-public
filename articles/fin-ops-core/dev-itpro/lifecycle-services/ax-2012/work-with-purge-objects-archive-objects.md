@@ -4,7 +4,6 @@
 title: Work with purge and archive objects
 description: This topic provides information about purge and archive objects in the Intelligent Data Management Framework (IDMF).
 author: kfend
-manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 

@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Talent (October 29, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for October 29, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 10/29/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -71,13 +69,13 @@ With our announcement in the [Strategic investments in core HR drive operational
 
 ### Print performance reviews
 
-See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
+See [Print performance reviews](/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
 
 ### Feature management workspace
 
 Features are added and updated in every release. The feature management experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.
 
-To learn more about the changes coming with feature management, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+To learn more about the changes coming with feature management, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

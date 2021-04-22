@@ -4,11 +4,9 @@
 title: Post the pre-acquisition of a fixed asset
 description: This topic explains how to set up and post fixed asset pre-acquisitions.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

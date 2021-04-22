@@ -4,11 +4,9 @@
 title: Competence date for transactions and the Fiscal journal report
 description: This topic provides information about the competence date and explains how to turn on the functionality for transactions in Italy
 author: anasyash
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

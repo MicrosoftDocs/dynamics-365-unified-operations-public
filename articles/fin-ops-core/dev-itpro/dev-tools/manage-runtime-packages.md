@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Manage third-party models and runtime packages by using source control
 description: This topic outlines a recommended strategy for managing, distributing, and deploying third-party solutions.
 author: jorisdg
-manager: AnnBe
 ms.date: 05/21/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 26731
 ms.assetid:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Manage third-party models and runtime packages by using source control
@@ -76,6 +62,13 @@ After you install the deployable package on a development VM, follow these steps
 6. On the next page, on the **Excluded items** tab, select all files by clicking one of the files and then pressing Ctrl+A. At the bottom of the selection window, click **Include item(s)**. When you're ready, click **Finish**.
 7. Open the **Pending Changes** window from the **Team Explorer** pane or by clicking **View** > **Other Windows** > **Pending Changes**.
 8. Review the changes, enter a check-in comment, and then click **Check In**.
+
+## Including source-controlled third-party packages
+
+After checking in the package binaries into source control as described in the previous section, you include the binaries in deployable packages generated during build automation. There are two options:
+
++ On a build virtual machine, the standard legacy pipeline will automatically find and include the binaries into the deployable package it generates.
++ Using the [new pipeline](hosted-build-automation.md) or using the new packaging task in the legacy pipeline, review the [create deployable packages](pipeline-create-deployable-package.md) documentation. The documentation has examples for including source-controlled binaries in deployable packages.
 
 ## Deploying third-party code
 Because the models and runtime packages are in source control, other developers who use other development environments can just synchronize the models and packages to their workspace by using the **Get latest** feature of source control.

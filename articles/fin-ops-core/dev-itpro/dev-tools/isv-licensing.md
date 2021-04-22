@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Independent software vendor (ISV) licensing
 description: This topic describes the independent software vendor (ISV) licensing feature. 
 author: jorisdg
-manager: AnnBe
 ms.date: 05/08/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Independent software vendor (ISV) licensing
@@ -55,7 +41,7 @@ Each ISV solution that is tied to a license runs only when a valid license key e
 
 ### There are two types of license: Boolean and Number
 
-ISVs can create two types of license: **Boolean** and **Number**. ISVs can associate an expiration date with either type of license. This expiration date is applied only to the ISV licenses and is independent of the system expiration date. A Boolean license is a simple activation license. The type of license (**Boolean** or **Number**) is set through a property in the license code node. ISVs can write their own custom logic to check the count that is provided in the ISV license, to make sure that their solutions are being used within the license terms. For more information, see [Licensing Framework for ISVs](https://msdn.microsoft.com/library/jj677284.aspx).
+ISVs can create two types of license: **Boolean** and **Number**. ISVs can associate an expiration date with either type of license. This expiration date is applied only to the ISV licenses and is independent of the system expiration date. A Boolean license is a simple activation license. The type of license (**Boolean** or **Number**) is set through a property in the license code node. ISVs can write their own custom logic to check the count that is provided in the ISV license, to make sure that their solutions are being used within the license terms. For more information, see [Licensing Framework for ISVs](/dynamicsax-2012/developer/licensing-framework-for-isvs-of-microsoft-dynamics-ax).
 
 ### License validation errors
 
@@ -170,14 +156,15 @@ Follow these steps to enable licensing for your solution.
     | --metadatadir                 | Use this parameter to specify the metadata directory. You should use the default packages directory.   |
     | --bindir                      | Use this parameter to specify the binaries directory. You should use the default packages directory.   |
     | --sqlserver                   | Use this parameter to specify the Microsoft SQL Server. For one-box environment, use a period (**.**). |
-    | --sqluser                     | Use this parameter to specify the SQL Server user. You should pass in **AOSUser**.                     |
+    | --sqldatabase                 | Use this parameter to specify the SQL Server database. For one-box environments, use **AXDB**.     |
+    | --sqluser                     | Use this parameter to specify the SQL Server user. You should use **axdbadminr**.                  |
     | --sqlpwd                      | Use this parameter to specify the SQL Server password.                                                 |
     | --licensefilename             | Use this parameter to specify the license file that will be loaded.                                    |
 
     Here is an example.
 
     ```Console
-    C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd ******** --licensefilename c:\templicense.txt
+    C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ******** --licensefilename c:\templicense.txt
     ```
 
 4.  The corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, see the **ISVConfigurationKey1** configuration key in the following screenshot. 
@@ -225,7 +212,7 @@ For Platform update 34 and earlier:
     makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
     ```
 
-    For more information, see the [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968(v=vs.85).aspx) documentation.
+    For more information, see the [MakeCert](/windows/win32/seccrypto/makecert) documentation.
 
 2. Create a certificate by using the CA.
 

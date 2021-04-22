@@ -4,11 +4,9 @@
 title: Improved inquiry on debit/credit settlement
 description: This topic explains how you can view information about invoice and payment settlements in a convenient and simple format.
 author: ilkond
-manager: AnnBe
 ms.date: 11/21/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -38,7 +36,7 @@ This topic explains how you can view invoice and payment settlement information 
 Before you can use this functionality, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Italy.
-- In the **Feature management** workspace, turn on the **Improved inquiry on debit/credit settlement** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, turn on the **Improved inquiry on debit/credit settlement** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Use the Invoice/payments list page
 

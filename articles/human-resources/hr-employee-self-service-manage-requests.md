@@ -4,11 +4,9 @@
 title: Manage leave and absence requests
 description: View and approve leave and absence requests in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
-ms.date: 02/03/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -38,9 +36,20 @@ Manage time-off requests from the **Employee self-service** workspace in Dynamic
 
 1. In the **Employee self-service** workspace, select **My team**.
 
-2. Under **My team information**, select the **Leave and absence** tab. 
+2. Under **My team information**, select the **Leave and absence** tab.
 
 3. View and approve your team members' time-off requests as necessary.
+
+## (Preview) Leave request workflow experience enhancements
+
+[!include [Preview feature](includes/preview-feature.md)]
+
+This preview feature provides the following enhancements:
+
+- You can select multiple leave requests and perform the same action on all of them.
+- The ribbon across the top and a new workflow button on the page show the actions you can take on leave requests.
+
+![Manager experience](media/hr-leave-and-absence-manager-experience.png)
 
 ## See also
 

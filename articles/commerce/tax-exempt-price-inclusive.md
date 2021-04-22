@@ -4,11 +4,9 @@
 title: Calculation of tax exemption
 description: This topic describes functionality for tax exemption calculations in the point of sale (POS) and call center. 
 author: rubendel
-manager: annbe
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

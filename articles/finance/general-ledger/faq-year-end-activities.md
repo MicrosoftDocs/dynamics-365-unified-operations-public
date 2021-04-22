@@ -4,11 +4,9 @@
 title: Year-end activities FAQ 
 description: This topic has been compiled to assist with year-end closing activities.
 author: kweekley
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -28,6 +26,8 @@ ms.dyn365.ops.version: 10.0.14
 ---
 
 # Year-end activities FAQ 
+
+[!include [banner](../includes/banner.md)]
 
 This topic has been compiled to assist with year-end closing activities. The information in this topic primarily focuses on questions concerning year-end closing activities  for General ledger and Accounts payable.
 

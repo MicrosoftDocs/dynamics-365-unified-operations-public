@@ -3,12 +3,10 @@
 
 title: Set up vendor accounts
 description: This topic describes the types of information that you must specify when you create a new vendor account.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

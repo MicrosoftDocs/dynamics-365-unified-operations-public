@@ -4,11 +4,9 @@
 title: Set up a warehouse
 description: This topic describes how to set up a warehouse to be used with a new channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

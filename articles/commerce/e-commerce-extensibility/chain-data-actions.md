@@ -4,11 +4,9 @@
 title: Chain data actions
 description: This topic describes how to chain data actions.
 author: samjarawan
-manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to chain data actions.
-
-## Overview
 
 To create a maintainable and compact codebase, you will often need a suite of composable data actions that can easily use each another to create more complex code flows. The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) lets you seamlessly chain data actions but still provide all the out-of-box benefits of the data action architecture (caching, batching, and deduplicating).
 

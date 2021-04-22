@@ -4,11 +4,9 @@
 title: Yearly tax communication
 description: This topic provides information about the yearly tax communication report in Italy. 
 author: anasyash
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -49,7 +47,7 @@ Set up Italian sales tax books by following the instructions in [Italian sales t
     - **Yearly tax communication (IT)**
     - **Yearly VAT communication model mapping**
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 5. In Finance, go to **Tax \> Setup \> Parameters \> General ledger parameters**.
 6. On the **Number sequences** tab, select a number sequence for the **Tax communication ID** reference.
@@ -218,7 +216,7 @@ In the **Format** column, you can specify a field format. In addition to **NU**a
     |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Tax communication ID | The identification number of the **Yearly tax communication** report.                                                                                                                                                                                                                                                      |
     | Years                | The year of the tax communication. This field is automatically set to the previous year. For example, if you're creating the report in 2020, this field is set to **2019**.                                                                                                                                                |
-    | ATECOFIN Code        | The tax code that is associated with the classification of possible company activities. This field is filled in from the **Italian sales tax books** page. For more information, see [Italian sales tax books](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-fiscal-books#set-up-sales-tax-books). |
+    | ATECOFIN Code        | The tax code that is associated with the classification of possible company activities. This field is filled in from the **Italian sales tax books** page. For more information, see [Italian sales tax books](./emea-ita-fiscal-books.md#set-up-sales-tax-books). |
     | Exported             | A value that indicates whether the .ivc file has been exported. This field and the next two fields are automatically set when you select **Export and generate file**.                                                                                                                                                     |
     | Date of export       | The date when the .ivc file was exported.                                                                                                                                                                                                                                                                                  |
     | Export file name     | The name of the .ivc file that was exported.                                                                                                                                                                                                                                                                               |
@@ -1104,7 +1102,7 @@ Fields with **Total** selected in the **Calculation** field are marked in bold.
 
 ## Appendix 2. Example of the Yearly tax communication setup for 2020
 
-To download example setup for the 2020 declaration, see [IVA example setup 2020](https://docs.microsoft.com/dynamics/s-e/ax/ItalianAnnualVATdeclaration_delta). To access the link, you need to have access to CustomerSource.
+To download example setup for the 2020 declaration, see [IVA example setup 2020](/dynamics/s-e/ax/ItalianAnnualVATdeclaration_delta). To access the link, you need to have access to CustomerSource.
 
 1. Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
 2. Select the **Open in Microsoft Office** button, and then, under **Open in Excel**, select **Yearly tax communication setup (DEMF)**.

@@ -4,11 +4,9 @@
 title: Pre-extended columns in the channel database
 description: This topic explains how the pre-extended columns in the channel database are consumed for extensions.
 author: mugunthanm
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -174,6 +172,9 @@ The following table lists the columns that are pre-extended.
 | RETAILASYNCADDRESS            | COUNTY                                                                        | nvarchar(60)  |                       |                                     |
 | RETAILASYNCCUSTOMER           | STREET                                                                        | nvarchar(400) |                       |                                     |
 | RETAILASYNCCUSTOMER           | COUNTY                                                                        | nvarchar(60)  |                       |                                     |
+| CUSTOMERTABLETYPE_V2           | FIRSTNAME                                                                        | nvarchar(100)  | ValidateCustomerNameLengthServiceRequest                     |                                     |
+| CUSTOMERTABLETYPE_V2          | MIDDLENAME                                                                        | nvarchar(100)  | ValidateCustomerNameLengthServiceRequest                       |                                     |
+| CUSTOMERTABLETYPE_V2           | LASTNAME                                                                        | nvarchar(100)  |  ValidateCustomerNameLengthServiceRequest                      |                                     |
 | RETAILFISCALDOCUMENT\_BR      | FEADDRESSSTREET                                                               | nvarchar(400) |                       |                                     |
 | RETAILFISCALDOCUMENT\_BR      | THIRDPARTYADDRESSSTREET                                                       | nvarchar(400) |                       |                                     |
 | RETAILTAXFILTERS              | COUNTYID                                                                      | nvarchar(60)  |                       |                                     |

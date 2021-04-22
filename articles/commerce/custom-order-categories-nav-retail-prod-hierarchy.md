@@ -4,11 +4,9 @@
 title: Change the sort order for merchandising entities
 description: This topic explains the concepts that are related to controlling the display order for various merchandising-related entities in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

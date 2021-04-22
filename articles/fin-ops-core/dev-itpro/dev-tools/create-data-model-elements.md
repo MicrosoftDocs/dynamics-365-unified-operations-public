@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Create models and data model elements overview
 description: In this tutorial, you'll use Visual Studio's Dynamics 365 menu to create a new model named Fleet Management tutorial.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 23421
 ms.assetid: 1b7789f4-12c1-480b-bb39-c354b5b03276
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Create models and data model elements overview
@@ -48,7 +34,7 @@ This tutorial requires that you have access to an environment, and that you be p
 ## Create the Fleet Management tutorial model
 
 1. Start Visual Studio using **Run as administrator**.
-2. From the **Dynamics 365** window, select **Model Management &gt; Create model** to open the **Create model** wizard.
+2. From the **Dynamics 365** menu, select **Model Management &gt; Create model** to open the **Create model** wizard.
 3. Enter the following values for model parameters.
 
     | Property               | Value                                                                                                                    |

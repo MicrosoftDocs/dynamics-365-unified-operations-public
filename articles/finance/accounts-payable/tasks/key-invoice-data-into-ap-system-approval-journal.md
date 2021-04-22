@@ -4,11 +4,9 @@
 title: Key invoice data into accounts payable using an approval journal
 description: This topic explains how to use the invoice register to create invoices and then use the approval journal to update the expense accounts. 
 author: abruer
-manager: AnnBe 
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

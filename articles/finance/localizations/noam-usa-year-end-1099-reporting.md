@@ -4,11 +4,9 @@
 title: Year-end 1099 reporting
 description: If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information to the US tax authorities at the end of the calendar year.
 author: abruer
-manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

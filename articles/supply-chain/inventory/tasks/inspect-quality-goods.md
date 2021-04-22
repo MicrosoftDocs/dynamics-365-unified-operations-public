@@ -4,11 +4,9 @@
 title: Inspect the quality of goods
 description: This topic explains how to process a quality order. 
 author: perlynne
-manager: tfehr 
 ms.date: 08/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

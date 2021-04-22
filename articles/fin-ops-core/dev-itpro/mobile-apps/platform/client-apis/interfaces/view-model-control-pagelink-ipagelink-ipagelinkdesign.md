@@ -3,7 +3,6 @@
 title: PageLinkDesign type
 description: Pagelink design object type.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
@@ -182,7 +181,7 @@ This property can only be added through the design object.
 icon: string (optional) 
 
 Name of the icon that is displayed in the pagelink control.
-Here is a [list of available icons](https://docs.microsoft.com/dynamics/s-e/).
+Here is a [list of available icons](/dynamics/s-e/).
 
 
 ### justifyItems

@@ -4,11 +4,9 @@
 title: Modify reporting relationships for a position
 description: This procedure shows how to change the reporting relationship for an employee. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

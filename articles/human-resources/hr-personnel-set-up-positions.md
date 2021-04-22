@@ -4,11 +4,9 @@
 title: Set up positions
 description: Positions are an important element of the lower level of an organization hierarchy. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

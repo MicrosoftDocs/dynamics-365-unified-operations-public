@@ -3,12 +3,10 @@
 
 title: Procurement and sourcing home page
 description: This topic provides a list of the help topics and other resources that are available for Procurement and sourcing.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -91,12 +89,12 @@ Procurement and sourcing covers all steps from identifying a need for product an
 ## Prices and discounts
 -   [Purchase agreements](purchase-agreements.md)
 -   [Create a purchase agreement](tasks/create-purchase-agreement.md)
--   [Vendor rebates](https://docs.microsoft.com/dynamics/s-e/) (white paper)
+-   [Vendor rebates](/dynamics/s-e/) (white paper)
 
 ## Product receipt and invoicing
 -   [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
--   [Overview of vendor invoices](../../financials/accounts-payable/vendor-invoices-overview.md)
--   [Vendor posting profiles](../../financials/accounts-payable/vendor-posting-profiles.md)
+-   [Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
+-   [Vendor posting profiles](../../finance/accounts-payable/vendor-posting-profiles.md)
 
 ## Procurement and sourcing workflows
 -   [Procurement and sourcing overview](procurement-sourcing-overview.md)

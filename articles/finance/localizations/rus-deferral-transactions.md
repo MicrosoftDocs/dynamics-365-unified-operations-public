@@ -3,11 +3,9 @@
 title: Receipt of deferrals 
 description: This topic explains how to create and post receipt transactions for deferrals that were manually created. It also explains how to reverse receipt transactions.
 author: anasyash
-manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,7 +4,6 @@
 title: Create a query for a workflow type
 description: This topic describes how to create a query for a workflow type.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
@@ -46,7 +45,7 @@ Before you create a workflow type, you must create a query that will access the 
 4. On the **Properties** sheet, set the **Table** property to the main table for the document type that you're defining a workflow for.
 5. In the Application Object Tree (AOT), right-click the new query, and then select **Save**.
 
-For more information about how to create queries, see [Create queries by using the AOT](https://docs.microsoft.com/dynamicsax-2012/developer/how-to-create-queries-by-using-the-aot).
+For more information about how to create queries, see [Create queries by using the AOT](/dynamicsax-2012/developer/how-to-create-queries-by-using-the-aot).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

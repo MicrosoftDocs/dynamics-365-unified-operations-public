@@ -4,11 +4,9 @@
 title: Set up and create depreciation profiles
 description: Depreciation profiles determine the type and the frequency of depreciation for an asset. 
 author: saraschi2
-manager: AnnBe 
 ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -4,11 +4,9 @@
 title: Wave template grouping
 description: Wave template grouping enables the system to use wave template setups to determine, based on criteria that you define, how it should split released lines and assign them to new or existing waves. This feature can be useful in warehouses where waves are created based on specific criteria, but where managers prefer to create waves automatically instead of manually.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

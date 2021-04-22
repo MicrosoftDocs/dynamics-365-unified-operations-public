@@ -4,11 +4,9 @@
 title: Improved handling of batch-tracked items
 description: This topic describes the improvements that have been made to the handling of batches for batch-tracked items during the statement posting process.
 author: josaw1
-manager: AnnBe
 ms.date: 11/04/2019
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

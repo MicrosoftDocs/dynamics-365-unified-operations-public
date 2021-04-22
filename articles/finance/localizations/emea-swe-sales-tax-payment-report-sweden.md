@@ -4,11 +4,9 @@
 title: Sales tax report for Sweden
 description: This topic explains how to set up and generate the sales tax report for legal entities in Sweden.
 author: anasyash
-manager: AnnBe
 ms.date: 03/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

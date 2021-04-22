@@ -1,31 +1,16 @@
 ---
-# required metadata
-
 title: X++ conversion runtime functions
 description: This topic describes the conversion run-time functions.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/26/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 31321
-ms.assetid: cf3e4f05-5ef0-49b1-b76e-8269913ee29d
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ conversion runtime functions

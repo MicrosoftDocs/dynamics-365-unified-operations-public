@@ -3,12 +3,10 @@
 
 title: Procurement and sourcing workflows
 description: Some organizations require that purchase requisitions and purchase orders are approved by a user other than the person who entered the transaction. To set up an approval process, you can create a workflow.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 2074
 ms.assetid: e54a1d59-b9fb-421b-821d-01f32878aa9b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -54,7 +52,7 @@ The following workflow types are available for Procurement and sourcing.
 | Vendor add application workflow | Create review and approval workflows for adding new vendors via vendor requests. |
 
 > [!IMPORTANT]
-> When you are adding a new workflow, you might also see the following obsolete workflows listed in the **Create workflow** dialog box. These are related to the *confirmation of receipt* functionality that was available in [Dynamics AX 2012](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows), but which has now been deprecated. These workflows are currently unsupported.
+> When you are adding a new workflow, you might also see the following obsolete workflows listed in the **Create workflow** dialog box. These are related to the *confirmation of receipt* functionality that was available in [Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows), but which has now been deprecated. These workflows are currently unsupported.
 > 
 > - Delivery due date notification workflow
 > - Invoice received notification workflow

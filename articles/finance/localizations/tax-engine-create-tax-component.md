@@ -4,11 +4,9 @@
 title: Create tax components
 description: This topic explains how to create tax components manually and by using predefined rules.
 author: yijialuan
-manager: Krstin Fender
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

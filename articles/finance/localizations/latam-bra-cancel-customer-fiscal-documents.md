@@ -4,11 +4,9 @@
 title: Cancel a customer fiscal document (Brazil) 
 description: This topic provides information about canceling a customer fiscal document for Brazil. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/05/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata

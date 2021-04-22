@@ -4,11 +4,9 @@
 title: Miscellaneous charges per kilogram in an Intrastat declaration
 description: This topic explains how to turn on, set up, and use the feature for miscellaneous charges per kilogram in an Intrastat declaration.
 author: ilkond
-manager: AnnBe
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -38,7 +36,7 @@ Among other reporting elements, an Intrastat declaration contains information ab
 ## Prerequisites
 
 - The primary address of the legal entity must be in Italy.
-- In the **Feature management** workspace, turn on the **Miscellaneous charges per kilogram in Intrastat declaration** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, turn on the **Miscellaneous charges per kilogram in Intrastat declaration** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up miscellaneous charges per kilogram
 

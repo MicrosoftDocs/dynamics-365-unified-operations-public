@@ -4,7 +4,6 @@
 title: Deploy AX 2012 R3 on Azure by using Lifecycle Services (LCS)
 description: This topic provides information about how use Lifecycle Services (LCS) to deploy Microsoft Dynamics AX 2012 R3.  
 author: kfend
-manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
@@ -39,26 +38,25 @@ Azure is an open and flexible cloud platform that enables you to quickly build, 
 -   **Gain flexibility** The cloud enables you to easily scale up (or scale down) to meet the changing needs of your business.
 
 > [!NOTE]
-> Dynamics AX 2012 R3 can also be deployed on-premises. For details, see the topic [Install Microsoft Dynamics AX 2012](https://technet.microsoft.com/library/dd362138.aspx).
+> Dynamics AX 2012 R3 can also be deployed on-premises. For details, see the topic [Install Microsoft Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/install-microsoft-dynamics-ax-2012).
 
 ## The Azure services model
 Azure offers three types of services: Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS), and Infrastructure-as-a-Service (IaaS).
 
-|                                    |            |                                                                                                                                                                                                                            |
-|------------------------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Type of service**                | **Use to** | **Description**                                                                                                                                                                                                            |
+|    **Type of service**         |   **Use to**          |     **Description**          |
+|------------------------------------|------------|------------------------------------------|
 | Software as a service (SaaS)       | Consume    | You use a web browser to use applications that are hosted in the cloud.                                                                                                                                                    |
 | Platform as a service (PaaS)       | Build      | You don’t manage or control the network, servers, or operating system. PaaS is more developer-oriented. It allows you to focus on the business logic of applications and quickly move applications from concept to launch. |
 | Infrastructure as a service (IaaS) | Host       | You have control over your virtual machines and the network configuration, but you don’t have to worry about hardware.                                                                                                     |
 
 When you deploy AX 2012 R3 on Azure, you will be using the IaaS offering. This means that Azure provides the virtual machines, storage, and networking capabilities. You must manage and secure the operating systems, applications, and data installed on the virtual machines. 
 
-[![DeployAXonAzureUsingLCS1](./media/deployaxonazureusinglcs1.jpg)](./media/deployaxonazureusinglcs1.jpg)
+[![When you deploy AX 2012 R3 on Azure, you will be using the IaaS offering.](./media/deployaxonazureusinglcs1.jpg)](./media/deployaxonazureusinglcs1.jpg)
 
 ## Architecture of AX 2012 R3 on Azure
 To deploy AX 2012 R3 on Azure, you can use Microsoft Dynamics Lifecycle Services. Lifecycle Services is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. The Cloud-hosted environments tool, available on the Lifecycle Services website, helps you deploy AX 2012 R3 environments on Azure. When you use the Cloud-hosted environments tool to deploy, you’ll need to select the type of environment that you want to deploy on Azure, such as a demo or development/test environment. Based on your selection, the Cloud-hosted environments tool provisions the appropriate number of virtual machines on Azure. These virtual machines have AX 2012 R3 components—and all of their prerequisites—already installed on them. For example, if you deploy an AX 2012 R3 test environment, the architecture looks like this: 
 
-[![DeployAXonAzureUsingLCS2](./media/deployaxonazureusinglcs2.jpg)](./media/deployaxonazureusinglcs2.jpg)   
+[![To deploy AX 2012 R3 on Azure, you can use Microsoft Dynamics Lifecycle Services.](./media/deployaxonazureusinglcs2.jpg)](./media/deployaxonazureusinglcs2.jpg)   
 
 You can deploy the following types of AX 2012 R3 environments on Azure with the Cloud-hosted environments tool:
 

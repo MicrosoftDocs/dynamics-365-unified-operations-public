@@ -4,11 +4,9 @@
 title: Work line details
 description: This topic provides information about the Work line details page, which shows a comprehensive, sortable, and filterable list of the individual work lines in your system.
 author: mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
