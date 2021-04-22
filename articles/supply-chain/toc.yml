@@ -3349,7 +3349,7 @@
         items:
         - name: Can't invoice a customer-facing sales order in the VEL company
           href: troubleshooting/procurement/not-able-to-invoice-.md
-        - name: Purchase Requisition - after the request change, it is not possible to add line
+        - name: Can't add a line to a purchase requisition after requesting a change
           href: troubleshooting/procurement/purchase-requisition.md
       - name: Product information management
         items:
