@@ -38,7 +38,7 @@ Vendors can use the Vendor collaboration functionality to maintain their bank ac
 
 After you give access to vendors, they can add information for new bank accounts. You can then review that information and complete the pre-note process, so that the new accounts will be used for payments to those vendors.
 
-You can maintain your vendor account in the **Vendor information** workspace. There, vendors will select **More details** and **Bank accounts**. To add a new bank account, select **Add** above the bank account grid. In the **New** dialog box that appears, you can enter the following information:
+You can maintain your vendor account in the **Vendor information** workspace. There, vendors will select **More details** and then **Bank accounts** from the drop-down list. To add a new bank account, select **Add** above the bank account grid. In the **New** dialog box that appears, you can enter the following information:
 
 - Bank account
 - Bank name
@@ -52,7 +52,7 @@ If the legal entity is outside the United States, the dialog box also includes f
 
 If there are any documents that are related to the specific certification, you can attach them by selecting **Document**.
 
-Bank information that vendors enter on the page will show **Vendor** as the source. The customer can also enter bank account information on a vendor's behalf under vendor bank accounts. That information will appear here, and **Customer** will be shown as the source.
+Bank information that vendors enter on the page will show **Vendor** as the source. You can also enter bank account information on a vendor's behalf. That information will appear here, and **Customer** will be shown as the source. For more information, see [Create a vendor bank account](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/tasks/create-vendor-bank-account).
 
 After an account has been added, vendors can edit their bank's effective and expiration dates as required.
 
