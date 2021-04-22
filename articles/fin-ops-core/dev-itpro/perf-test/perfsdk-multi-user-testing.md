@@ -59,7 +59,7 @@ The following configurations need to be done on the development machine we are u
     ```
     [ENVIRONMENT]::GETENVIRONMENTVARIABLE("TESTROOT", "USER") | Write-Host
     ```
-2. Open the **environment details page on LifeCycle Services**.
+2. Open the **environment details page on Lifecycle Services**.
 
 3. Under the **Maintain** menu option you'll see two new options.
     - Download RSAT certificate
