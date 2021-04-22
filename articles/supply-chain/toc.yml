@@ -72,12 +72,12 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
+          - name: Supply Chain Management 10.0.19 (July 2021)
+            href: get-started/whats-new-scm-10-0-19.md
           - name: Supply Chain Management 10.0.18 (May 2021)
             href: get-started/whats-new-scm-10-0-18.md
           - name: Supply Chain Management 10.0.17 (April 2021)
             href: get-started/whats-new-scm-10-0-17.md
-          - name: Supply Chain Management 10.0.16 (February 2021)
-            href: get-started/whats-new-scm-10-0-16.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -282,12 +282,18 @@
       items:
       - name: Cloud and edge scale units for manufacturing and warehouse management workloads
         href: cloud-edge/cloud-edge-landing-page.md
+      - name: Deploy edge scale units on custom hardware using LBD
+        href: cloud-edge/cloud-edge-edge-scale-units-lbd.md
       - name: Manufacturing execution workloads for cloud and edge scale units
         href: cloud-edge/cloud-edge-workload-manufacturing.md
       - name: Warehouse management workloads for cloud and edge scale units
         href: cloud-edge/cloud-edge-workload-warehousing.md
       - name: Warehouse orders for cloud and edge scale units
         href: cloud-edge/cloud-edge-warehouse-order.md
+      - name: Warehouse inventory adjustment
+        href: cloud-edge/cloud-edge-warehouse-inventory-adjustment.md
+      - name: Message processor messages
+        href: cloud-edge/cloud-edge-message-processor-messages.md
     - name: Asset management
       items:
       - name: Asset management overview
@@ -1569,8 +1575,8 @@
           href: master-planning/planning-optimization/coverage-time-fence.md
         - name: Approve planned orders
           href: master-planning/planning-optimization/approved-planned-order.md
-        - name: Auto-firming with Planning Optimization
-          href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+        - name: Firm planned orders
+          href: master-planning/planning-optimization/planned-order-firming.md
         - name: Planning with negative on-hand quantities
           href: master-planning/planning-optimization/negative-on-hand.md 
         - name: View plan history and planning logs

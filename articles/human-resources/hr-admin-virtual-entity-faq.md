@@ -4,7 +4,7 @@
 title: Human Resources virtual tables FAQ
 description: This topic is a list of frequently asked questions about Human Resources virtual entities.
 author: jaredha
-ms.date: 12/15/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic is a collection of frequently asked questions about virtual tables in Dynamics 365 Human Resources. 
+This topic is a collection of frequently asked questions about virtual tables in Dynamics 365 Human Resources.
 
 > [!NOTE]
 > For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
@@ -100,4 +100,27 @@ When setting up virtual tables in the **Microsoft Dataverse integration** page, 
 
 This message indicates that permissions haven't been granted in Human Resources application to the app set up for virtual tables. You can resolve this by completing the steps to [Grant app permissions in Human Resources](./hr-admin-integration-common-data-service-virtual-entities.md#grant-app-permissions-in-human-resources).
 
+### What do I do if the Finance and Operations Virtual Data Source Configurations option isn't available in my Microsoft Dataverse environment?
+
+During the setup of the virtual tables, you need to install the Dynamics 365 HR Virtual Table app, which adds the option for **Finance and Operations Virtual Data Source Configurations**. For more information about installing the app in the **Microsoft Dataverse integration** page, see [Configure Dataverse virtual tables](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities#install-the-dynamics-365-hr-virtual-table-app).
+
+If the **Install virtual table app** action on the **Microsoft Dataverse integration** page doesn't complete successfully, you can perform the action in the Power Platform admin center.
+
+1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+2. In the **Environments** list, select the Power Apps environment associated with your Human Resources instance.
+
+3. In the **Resources** section of the page, select **Dynamics 365 apps**.
+
+4. Select the **Install app** action.
+
+5. Select **Dynamics 365 HR Virtual Table**, and then select **Next**.
+
+6. Review and mark to agree to the terms of service.
+
+7. Select **Install**.
+
+The installation takes a few minutes. When it completes, the **Finance and Operations Virtual Data Source Configurations** entity is generated in the environment.
+
+![Install the Dynamics 365 HR Virtual Table app from the Power Platform admin center](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
