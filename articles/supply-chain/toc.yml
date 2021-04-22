@@ -2911,6 +2911,8 @@
         href: transportation/tasks/setup-a-rating-profile.md
       - name: LTL classes
         href: transportation/ltl-class.md
+      - name: NMFC codes
+        href: transportation/nmfc-codes.md
       - name: Set up a carrier fuel index
         href: transportation/tasks/set-up-carrier-fuel-index.md
       - name: Set up a transportation tender

@@ -1,77 +1,58 @@
 ---
-# required metadata
-
-title: Create a new NMFC code
-description: This topic describes how to create a new NMFC code in Dynamics 365 Supply Chain Management. 
-author: GalynaFedorova
-ms.date: 04/05/2021
+title: NMFC codes
+description: This topic describes how to work with NMFC codes in Dynamics 365 Supply Chain Management
+author: Henrikan
+ms.date: 04/22/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: v-gfedorova
-ms.search.validFrom: 2021-04-05
+ms.author: henrikan
+ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.8
-
 ---
 
 # NMFC codes
 
 [!include [banner](../includes/banner.md)]
 
-The NMFC code stands for National Motor Freight Classification and enables classifying the items that can be shipped. The NMFC code is a designation of grouping commodities that allows transport companies to evaluate goods for shipment like fitting into truck, difficulties to load, item handling, perishability etc. Commodities are grouped into one of 18 classes - ranging from 50 to 500 - based on an evaluation of four transportation characteristics: density, stowability, handling and liability. Together, these characteristics establish a commodity's transportability.
+National Motor Freight Classification (NMFC) codes help you to classify items that can be shipped. The NMFC code is a designation for grouping commodities that allows transport companies to evaluate goods for shipment, classifying items according to truck fit, loading issues, handling issues, perishability, and so on. Commodities are grouped into one of 18 classes&mdash;using numbers ranging from 50 to 500&mdash;based on an evaluation of four transportation characteristics: density, stowability, handling, and liability. Together, these characteristics establish a commodity's transportability.
 
-Each LTL (Less than truck load) shipping item has an NMFC code associated with it. For example, a laptop may be assigned NMFC which classes at 2.5, whereas electric cords may be assigned NMFC which classes at 65.
+Each LTL (Less than truck load) shipping item has an NMFC code associated with it. For example, a laptop may be assigned an NMFC that classes at 2.5, whereas electric cords may be assigned an NMFC that classes at 65.
 
-This feature can help workers classify the LTL shipping items through an NMFC code. Here are some examples:
+This feature can help workers classify the LTL shipping items using NMFC codes. Here are some examples:
 
-- If your company include freight description on the BOL, the carrier will have an idea what the freight is. Freight is an important classification because many transportation companies base their entire business model off of the types of freight they ship.
-
-- This classification is essential for your company for determining the cost of a given load.
-
+- If your company includes  freight description on the bill of lading (BOL), the carrier will have an idea what the freight is. Freight is an important classification because many transportation companies base their entire business model on the types of freight they ship.
+- This classification may be essential to your company for determining the cost of a given load.
 - Your company can identify the profitability of an LTL logistics and transportation company.
 
-This topic describes how to create an NMFC code in Dynamics 365 Supply Chain management.
+This topic describes how to work with NMFC codes in Dynamics 365 Supply Chain management.
 
-## **Prerequisites**
+## Prerequisites
 
-Before you can create an NMFC code, you might need to follow these steps to make sure that the prerequisites are in place. 
+Before you can create NMFC codes, you must set up all of the LTL classes required to map to them. LTL freight classes represent categories of items, whereas NMFC codes are related to specific commodities in each of the 18 freight classes. For details about how to work with LTL classes, see [Less than truckload (LTL) classes](ltl-class.md).
 
-1. Go to **Warehouse management**  \>  **Setup**  \>  **Inventory**  \>  **LTL classes**.
-1. Create an LTL class. For more information, see LTL class.
-
-## **Create an NMFC code**
+## Create an NMFC code
 
 To create an NMFC code, follow these steps:
 
-1. Go to  **Warehouse management**  \>  **Setup**  \>  **Inventory**  \>  **NMFC codes**.  
-   *–or–*  
-   Go to  **Transportation management**  \>  **Setup**  \>  **Transportation standards**  \>  **NMFC codes**.
+1. Follow one of these steps:
+    - Go to  **Warehouse management** \> **Setup** \> **Inventory** \> **NMFC codes**.  
+    - Go to  **Transportation management** \> **Setup** \> **Transportation standards** \> **NMFC codes**.
 
-2. Select **New** to create a new NMFC code and specify the details as described below.
+2. Select **New** to create a new NMFC code. Then set the following fields:
 
-    -  **NMFC code** - Enter the NMFC code identifier (ID) for commodity type. 
-    -   **Name** - Enter a name for the NMFC code. 
-    -   **LTL class** - Select the LTL class that is associated with the NMFC code. LTL class number is assigned by NMFC for proper rating. 
-    -   **BOL handling unit** - Define the default handling type for the shipment 
+    - **NMFC code** – Enter the NMFC code identifier (ID) for commodity type.
+    - **Name** – Enter a name for the NMFC code.
+    - **LTL class** – Select the LTL class that is associated with the NMFC code.
+    - **BOL handling unit** – Define the default handling type for the shipment.
 
-## **Example: Different NMFC codes**
+## Example: Set up NMFC codes
 
-The products sold by your organization may come in variants differentiated by NMFC codes as following:
+The following example shows how to set up two different NMFC codes for use with different products.
 
-1. Go to **Warehouse management**  \>  **Setup**  \>  **Inventory**  \>  **NMFC codes**.
+1. Go to **Warehouse management** \> **Setup** \> **Inventory** \> **NMFC codes**.
 1. On the Action Pane, select **New**.
 1. On the new line, set the following values:
 
@@ -88,10 +69,12 @@ The products sold by your organization may come in variants differentiated by NM
     - **Name:** *Phones*
     - **LTL class:** *125*
     - **BOL handling unit:** *Unit*
+
 1. On the Action Pane, select **Save**.
 
-## **Related tasks**
+## Additional resources
 
-[Create a bill of landing](https://docs.microsoft.com/en-us/dynamics365/supply-chain/transportation/create-bill-of-lading)
+- [Less than truckload (LTL) classes](ltl-class.md)
+- [Create a bill of landing](create-bill-of-lading.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
