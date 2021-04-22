@@ -288,6 +288,10 @@
         href: cloud-edge/cloud-edge-workload-warehousing.md
       - name: Warehouse orders for cloud and edge scale units
         href: cloud-edge/cloud-edge-warehouse-order.md
+      - name: Warehouse inventory adjustment
+        href: cloud-edge/cloud-edge-warehouse-inventory-adjustment.md
+      - name: Message processor messages
+        href: cloud-edge/cloud-edge-message-processor-messages.md
     - name: Asset management
       items:
       - name: Asset management overview
