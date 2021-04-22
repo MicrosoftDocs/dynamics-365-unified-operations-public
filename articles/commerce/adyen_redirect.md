@@ -44,11 +44,11 @@ This topic describes Strong Customer Authentication (SCA) support built into the
 
 ## Overview
 
-PSD2.0 requires that SCA be supported during online shopping checkout so a customer can be authenticated by the bank that issued their payment method. The authentication commonly occurs when a shopper is going through the checkout for an online order and after they have provided their payment details. Those details are evaluated, and based on criteria provided by PSD2.0, the customer may be redirected to their bank. After being redirected to their bank, the customer is required to provide some form of authentication to confirm that they are an authorized user for the payment instrument. If the user is confirmed to be the cardholder, they are then redirected back to the storefront where the payment was previously submitted, after which checkout is allowed to proceed. If SCA fails, the process will not allowed to continue for the transaction.
+PSD2.0 requires that SCA is supported during online shopping checkout so a customer can be authenticated by the bank that issued their payment method. The authentication commonly occurs when a shopper is going through the checkout for an online order and after they have provided their payment details. Those details are evaluated, and based on criteria provided by PSD2.0, the customer may be redirected to their bank. After being redirected to their bank, the customer is required to provide some form of authentication to confirm that they are an authorized user for the payment instrument. If the user is confirmed to be the cardholder, they are then redirected back to the storefront where the payment was previously submitted, after which checkout is allowed to proceed. If SCA fails, the process will not be allowed to continue for the transaction.
 
 ## Prerequisites for SCA support
 
-Support for SCA is provided by the out-of-box [Dynamics 365 Payment Connector for Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3). This can be implemented by any third-party connector using the payments SDK.
+Support for SCA is provided by the out-of-box [Dynamics 365 Payment Connector for Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3). The connector can be implemented by any third-party connector using the payments SDK.
 
 ## Setup
 
