@@ -29,7 +29,7 @@ A POS application can be extended independently by using the POS SDK. The POS SD
 
 These topics explain how to create a POS extension using the independent POS extension model and sealed SDK. This topic applies to Retail software development kit (SDK) version 10.0.18 and later.
 
-+ [Getting started with POS extensions](pos-getting-started.md)
++ [Getting started with POS extensions](pos-extension-getting-started.md)
 + [Create a POS extension package project](create-pos-extension-package.md)
 + [Create a Modern POS extension appx file](create-pos-extension-appx.md)
 + [Debug a POS extension](debug-pos-extension.md)
