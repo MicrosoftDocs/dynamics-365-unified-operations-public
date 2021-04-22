@@ -47,6 +47,7 @@ The following features are included in this release. The feature titles link to 
 - Check-in for pickup module<br> - For more information, see [Check-in for pickup module](../check-in-pickup-module.md).
 - [Customer check-in for curbside order fulfillment](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/customer-check-in-touchless-commerce)<br> - For more information, see [Enable customer check-in notifications in point of sale (POS)](../enable-customer-check-in.md).
 - Configure gift with purchase promotions<br> - For more information, see [Configure gift with purchase promotions](../gift-with-purchase.md).
+- - Module configuration presets<br> - For more information, see [Module configuration presets](../e-commerce-extensibility/module-config-presets.md).
 
 ## Additional resources
 
