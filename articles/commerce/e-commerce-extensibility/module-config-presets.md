@@ -39,7 +39,7 @@ Module configuration presets can be created at the module level or within a them
 
 ## Module-level configuration presets
 
-The data for module configuration presets is stored in a JavaScript Object Notation (JSON) preview file that is stored in a **previews** directory under the module's directory. The file is named **\<MODULE\_NAME\>.preview.json**. For example, the path of the preview file for a custom module that's named "product-feature" is **\\src\\modules\\product-feature\\previews\\product-feature.preview.json**.
+The data for module configuration presets is stored in a JavaScript Object Notation (JSON) preview file. This file is stored in a **previews** directory under the module's directory. The file is named **\<MODULE\_NAME\>.preview.json**. For example, the path of the preview file for a custom module that's named "product-feature" is **\\src\\modules\\product-feature\\previews\\product-feature.preview.json**.
 
 ## Theme configuration presets
 
