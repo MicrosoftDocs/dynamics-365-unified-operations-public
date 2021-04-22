@@ -33,6 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The Dynamics Symbol font defines the set of out-of-box symbols that are available in the product. These symbols are primarily used for buttons, tiles, and image controls. In every release, there might be updates to this font. For example, symbols might be added or removed.
 
-To access the list of available symbols (the name and an image) for every release that updated the Symbol font, visit the [Dynamics Symbol Font](https://docs.microsoft.com/dynamics/s-e/ax/axsymbolfont_60) page. A description of the various locations where symbols are used in the product and usage guidelines for each location is also included.
+To access the list of available symbols (the name and an image) for every release that updated the Symbol font, visit the [Dynamics Symbol Font](/dynamics/s-e/ax/axsymbolfont_60) page. A description of the various locations where symbols are used in the product and usage guidelines for each location is also included.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

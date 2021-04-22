@@ -45,7 +45,7 @@ For more information about how to import data, including how to clean up data af
 
 ## Example
 
-You can use the following file as an example. Download the [HistoricalDemandData](https://docs.microsoft.com/dynamics/s-e/). This file contains the historical demand data for item D0001. It contains only the following mandatory fields: site, quantity, and the demand date.
+You can use the following file as an example. Download the [HistoricalDemandData](/dynamics/s-e/). This file contains the historical demand data for item D0001. It contains only the following mandatory fields: site, quantity, and the demand date.
 
 1. Select the company to import the historical demand data into.
 2. Open the **Data management** workspace.

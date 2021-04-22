@@ -42,7 +42,7 @@ The following setup needs to be completed in order for data to display in **Cash
 2. Go to **General Ledger > Calendars > Fiscal calendars** to validate fiscal calendar dates assigned to the active time period.
 3. Go to **General Ledger > Setup > Ledger** to set **Accounting Currency** and **Exchange Rate Type**.
 4. Define exchange rates between transaction currencies and accounting currency, accounting currency and system currency, and accounting currency and bank currencies. To do this, go **General Ledger > Currencies > Currency exchange rates**.
-5. Configure and run Cash Flow Forecasting. For more information about how to set up Cash flow forecasting, see [Cash flow forecasting](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
+5. Configure and run Cash Flow Forecasting. For more information about how to set up Cash flow forecasting, see [Cash flow forecasting](./cash-flow-forecasting.md). 
 6. Go to **System administration > Setup > Entity Store** to refresh the **LedgerCovLiquidityMeasurement** aggregate measurement.
 
 ## Accessing the Power BI content

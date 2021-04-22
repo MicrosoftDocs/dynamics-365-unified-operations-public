@@ -54,7 +54,7 @@ For a list of the prerequisites, see [Prepare for go-live](hr-admin-go-live-pr
 
 ## What is a go-live assessment?  
 
-The go-live assessment is part of the [Microsoft FastTrack program](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview). During this review, a solution architect assesses whether an implementation project is ready for a successful cutover and go-live. This review is mandatory for every implementation project before you can request to go live in a production environment. 
+The go-live assessment is part of the [Microsoft FastTrack program](/dynamics365/fasttrack/). During this review, a solution architect assesses whether an implementation project is ready for a successful cutover and go-live. This review is mandatory for every implementation project before you can request to go live in a production environment. 
 
 ## Our Sandbox environments are deployed in the Central US datacenter. We want our Production environments to be deployed in the West US datacenter. Can I select West US as the datacenter in my Production configuration? 
 
@@ -62,7 +62,7 @@ LCS doesn't restrict you from selecting a different data center when you deploy 
 
 If you want your Production environment to be in the West US datacenter, you should first redeploy your Sandbox environments to the West US datacenter, test them, and sign off. 
 
-For information about selecting the correct datacenter, see [Network requirements](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements#network-requirements). 
+For information about selecting the correct datacenter, see [Network requirements](../fin-ops-core/fin-ops/get-started/system-requirements.md#network-requirements). 
 
 ## What level of access do I have to the Azure resources for my Human Resources environments?  
 
@@ -70,7 +70,7 @@ Access to the Human Resources environments is limited. You can't access the virt
 
 Although you can't access your Azure resources or Dynamics 365 Human Resources environment directly, there are additional features you can use to access your data:
 
-- You can deploy an Azure SQL database in your own Azure tenant and use the Bring Your Own Database (BYOD) feature to synchronize data. For more information, see [Bring your own database (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database).
+- You can deploy an Azure SQL database in your own Azure tenant and use the Bring Your Own Database (BYOD) feature to synchronize data. For more information, see [Bring your own database (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md).
 
 - You can use Dataverse integration to synchronize select entities into the Dataverse database. For more information, see [Dataverse tables](hr-developer-entities.md). 
 
@@ -86,11 +86,11 @@ Databases are protected by automatic backups at the following frequencies:
 
 Microsoft retains sufficient backups to allow for Point in Time Restore (PITR) within the last 14 days. 
 
-For more information, see [Learn about automatic SQL Database backups](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
+For more information, see [Learn about automatic SQL Database backups](/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
 
 ## Can I request a copy of the backup of my production database? 
 
-No. You can submit a database refresh service request to copy your Production environment to your Sandbox environment, however. You can deploy an Azure SQL database in your own Azure tenant and use the BYOD feature to synchronize data from your Production environment. For more information, see [Bring your own database (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database). 
+No. You can submit a database refresh service request to copy your Production environment to your Sandbox environment, however. You can deploy an Azure SQL database in your own Azure tenant and use the BYOD feature to synchronize data from your Production environment. For more information, see [Bring your own database (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md). 
 
 ## How do I move my Sandbox environment to Production for go-live? 
 
@@ -100,7 +100,7 @@ We recommend maintaining a clear list of entities configured in your Sandbox thr
 
 ## What should I do if my Production environment is down? 
 
-To report a Production outage, follow the process described in [Report a production outage](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage). 
+To report a Production outage, follow the process described in [Report a production outage](../fin-ops-core/dev-itpro/lifecycle-services/report-production-outage.md). 
 
  ## See also
 

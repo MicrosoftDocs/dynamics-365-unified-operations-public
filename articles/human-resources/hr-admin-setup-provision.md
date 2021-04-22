@@ -85,7 +85,7 @@ After you've created an LCS project, you can provision Human Resources into an e
     
 3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Human Resources Test Drive experience. Demo data is beneficial for long-term demo or training environments, and should never be used for production environments. You must choose this option upon initial deployment. You can't update an existing deployment later.
 
-4. Human Resources is always provisioned into a Microsoft Power Apps environment to enable Power Apps integration and extensibility. Read the “Selecting a Power Apps environment” section of this article before you continue. If you don't already have a Power Apps environment, select Manage environments in LCS or navigate to the Power Apps Admin center. Then follow the steps to [Create a Power Apps environment](https://docs.microsoft.com/powerapps/administrator/create-environment).
+4. Human Resources is always provisioned into a Microsoft Power Apps environment to enable Power Apps integration and extensibility. Read the “Selecting a Power Apps environment” section of this article before you continue. If you don't already have a Power Apps environment, select Manage environments in LCS or navigate to the Power Apps Admin center. Then follow the steps to [Create a Power Apps environment](/powerapps/administrator/create-environment).
 
 5. Select the environment to provision Human Resources into.
 
@@ -129,7 +129,7 @@ Use the following guidance when determining which Power Apps environment to depl
  
 ## Grant access to the environment
 
-By default, the global administrator who created the environment has access to it. You must explicitly grant access to additional application users. You must add users and assign the appropriate roles to them in the Human Resources environment. The global administrator that deployed Human Resources must also launch both Attract and Onboard to complete the initialization and enable access for other tenant users. Until this happens, other users will not be able to access Attract and Onboard and will get access violation errors. For more information, see [Create new users](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+By default, the global administrator who created the environment has access to it. You must explicitly grant access to additional application users. You must add users and assign the appropriate roles to them in the Human Resources environment. The global administrator that deployed Human Resources must also launch both Attract and Onboard to complete the initialization and enable access for other tenant users. Until this happens, other users will not be able to access Attract and Onboard and will get access violation errors. For more information, see [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

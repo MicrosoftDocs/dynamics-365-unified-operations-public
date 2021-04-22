@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Series registration
 description: This topic describes how to create a series for the process automation framework.
 author: RyanCCarlson2

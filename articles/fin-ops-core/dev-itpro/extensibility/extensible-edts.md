@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Extended data types
 description: This topic provides information about extended data types (EDTs).
 author: MichaelFruergaardPontoppidan
@@ -9,8 +7,6 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

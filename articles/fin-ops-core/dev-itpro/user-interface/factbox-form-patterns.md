@@ -155,7 +155,7 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [AX 2012 MSDN List Page Guidelines (including FactBoxes)](https://msdn.microsoft.com/library/gg853328.aspx)
+-   [AX 2012 MSDN List Page Guidelines (including FactBoxes)](/dynamicsax-2012/developer/list-page-user-experience-guidelines)
 
 #### AX 2012 example
 

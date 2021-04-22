@@ -83,7 +83,7 @@ To export a financial report, on the Action Pane, click **Export**. The report i
 Additional resources
 --------
 
-[Financial reporting](../../dev-itpro/analytics/financial-reporting-intro.md)
+[Financial reporting](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md)
 
 
 

@@ -13,7 +13,7 @@ To import a database to a developer environment after you've downloaded a databa
 - Keep a copy of the existing AxDB database, so that you can revert to it later if needed.
 - Import the new database under a new name, such as **AxDB\_fromProd**.
 
-To ensure the best performance, copy the \*.bacpac file to the local computer that you're importing from. Download sqlpackage .NET Core for Windows from [Get sqlpackage .NET Core for Windows](https://docs.microsoft.com/sql/tools/sqlpackage-download?view=sql-server-ver15#get-sqlpackage-net-core-for-windows). Open a **Command Prompt** window, and run the following commands from the sqlpackage .NET Core folder.
+To ensure the best performance, copy the \*.bacpac file to the local computer that you're importing from. Download sqlpackage .NET Core for Windows from [Get sqlpackage .NET Core for Windows](/sql/tools/sqlpackage-download?view=sql-server-ver15#get-sqlpackage-net-core-for-windows). Open a **Command Prompt** window, and run the following commands from the sqlpackage .NET Core folder.
 
 ```
 
@@ -29,4 +29,4 @@ Here is an explanation of the parameters:
 > [!NOTE]
 > During import, the user name and password aren't required. By default, SQL Server uses Microsoft Windows authentication for the user who is currently signed in.
 
-For information about how to complete the manual import operations into a Tier 1 environment, see [Import the database](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-exportuat#import-the-database). 
+For information about how to complete the manual import operations into a Tier 1 environment, see [Import the database](../database/dbmovement-scenario-exportuat.md#import-the-database).

@@ -100,9 +100,11 @@ Many retailers set up their retail store environment in a way that multiple user
 
 [Create a retail functionality profile](retail-functionality-profile.md)
 
+
 [Set up extended logon functionality for MPOS and Cloud POS](extended-logon.md)
 
 [Security best practices for Cloud POS in shared environments](dev-itpro/secure-retail-cloud-pos.md)
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

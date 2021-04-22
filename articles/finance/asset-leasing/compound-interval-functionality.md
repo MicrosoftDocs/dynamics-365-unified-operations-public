@@ -4,14 +4,14 @@
 title: Compounding interval functionality
 description: This topic provides information that will help you choose among monthly, quarterly, semiannual, and annual compounding intervals.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: AssetLeaseDetail
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -41,5 +41,12 @@ The following table lists the required Visual Studio components.
 | --- | --- | --- | --- |
 | Workload | .NET desktop development | Yes | |
 | Individual component | Modeling SDK | Yes | |
-| Individual component | Directed Graph Markup Language (.dgml) editor | No | This component is used for dependency graph features. |
+| Individual component | DGML editor | No | This component is used for dependency graph features using the Directed Graph Markup Language. |
 | Visual Studio Marketplace | Microsoft Reporting Services Projects | Yes | This component is needed for report development. If the component isn't installed, Visual Studio will prompt you when you try to open report designs. |
+
+## Dynamics 365 Commerce
+
+For more information on Commerce and Visual Studio 2017, see these topics.
+
+- [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](../../../commerce/dev-itpro/retail-sdk/migrate-sdk.md)
+- [Development and ALM changes from version 10.0.10 to 10.0.13](../../../commerce/dev-itpro/dev-changes-10-13.md)

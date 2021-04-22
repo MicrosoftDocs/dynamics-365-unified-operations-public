@@ -36,7 +36,7 @@ To receive a supply of goods or services free of sales tax in Italy, companies t
 The following prerequisites must be met before you invoice:
 
 - The primary address of the legal entity must be in Italy.
-- The **Intent letters - invoicing of usual exporters** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The **Intent letters - invoicing of usual exporters** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up Accounts receivable parameters
 

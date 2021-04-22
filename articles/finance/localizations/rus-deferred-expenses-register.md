@@ -46,7 +46,7 @@ Here are some examples of deferrals:
 
 ## Deferrals setup
 
-For more information about how to set up deferrals, see [Set up deferrals (Russia)](https://docs.microsoft.com/dynamics365/finance/localizations/rus-set-up-deferrals).
+For more information about how to set up deferrals, see [Set up deferrals (Russia)](./rus-set-up-deferrals.md).
 
 ### Set up deferral creation when you sell fixed assets
 

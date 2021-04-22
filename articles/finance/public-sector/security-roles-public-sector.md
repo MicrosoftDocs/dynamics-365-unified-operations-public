@@ -100,7 +100,7 @@ After the users are created, you assign them to roles on the **Assign users to r
 Additional resources
 --------
 
-[Role-based security](../../dev-itpro/sysadmin/role-based-security.md)
+[Role-based security](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md)
 
 
 

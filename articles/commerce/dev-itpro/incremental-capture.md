@@ -155,7 +155,7 @@ For users investigating payment issues in headquarters or in their processor's p
 
 ## Additional resources
 
-[Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+[Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3)
 

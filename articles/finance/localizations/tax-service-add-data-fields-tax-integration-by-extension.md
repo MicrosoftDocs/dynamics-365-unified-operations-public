@@ -4,7 +4,7 @@
 title: Add data fields in the tax integration by using extensions
 description: This topic explains how to use X++ extensions to add data fields in the tax integration.
 author: qire
-ms.date: 03/26/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to use X++ extensions to add data fields in the tax integration. These fields can be extended to the tax data model of the tax service and used to determine tax codes. For more information, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 

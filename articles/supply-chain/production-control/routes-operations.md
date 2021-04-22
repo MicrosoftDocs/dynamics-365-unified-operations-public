@@ -83,7 +83,7 @@ A route must be approved before it can be used in the planning or manufacturing 
 
 Each route can be approved or unapproved separately. However, note that, when a route is unapproved, all related route versions are also unapproved. In the Production control parameters, you can specify whether routes can be unapproved, and whether approved routes can be changed.  
 
-If you must keep a log that records who approves each route, you can require electronic signatures for route approval. Users will then have to confirm their identity by using an [electronic signature](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
+If you must keep a log that records who approves each route, you can require electronic signatures for route approval. Users will then have to confirm their identity by using an [electronic signature](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md).
 
 ## Operations
 An operation is a step in the production process. Each operation has an ID and a simple description. The following tables shows typical examples of operations from a machine shop.
@@ -189,7 +189,7 @@ When you activate a route version, you designate it as the default route version
 
 ### Electronic signatures
 
-If you must keep a log that records who approves and activates each route version, you can require electronic signatures for these tasks. Users who approve and activate route versions will then have to confirm their identity by using an [electronic signature](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
+If you must keep a log that records who approves and activates each route version, you can require electronic signatures for these tasks. Users who approve and activate route versions will then have to confirm their identity by using an [electronic signature](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md).
 
 ### Product change that uses case management
 
@@ -257,7 +257,7 @@ Therefore, when Activation is selected for Overlap, the rest of the settings (Jo
 
 - [Resource capabilities](resource-capabilities.md)
 
-- [Electronic signature overview](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+- [Electronic signature overview](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
 
 
 
