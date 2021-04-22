@@ -35,7 +35,7 @@ This topic covers module configuration presets and how to configure them in Micr
 
 Module configuration presets are default values that are used in Commerce site builder when no configuration values are set at the template or layout level.
 
-Module configuration presets can be created at the module level or within a theme. Therefore, different sets of data can be used, depending on the theme that is selected. By default, if no presets exist for a given theme, Commerce site builder uses the module-level presets if they exist. If both module-level presets and theme presets exist, the theme presets override the module-level presets.
+Module configuration presets can be created at the module level or within a theme. Therefore, different sets of data can be used, depending on the theme that is selected. If no presets exist for a given theme, Commerce site builder uses the module-level presets by default if they exist. If both module-level presets and theme presets exist, the theme presets override the module-level presets.
 
 ## Module-level configuration presets
 
@@ -47,7 +47,7 @@ Themes can contain module configuration preset files that are used when a theme 
 
 ## JSON preview file structure
 
-The JSON preview file is configured like a [module mock file](module-mock-file.md), except regarding images (see the note later in this topic). Here is an example of a JSON preview file.
+The JSON preview file is configured like a [module mock file](module-mock-file.md), except regarding images (see the note later in this topic). Here's an example of a JSON preview file.
 
 ```json
 {
