@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 2012
 
 You can use Task recorder and Business process modeler (BPM) to create user acceptance test libraries. Task recorder is a powerful tool to record test cases and organize them by business process using BPM. As a Microsoft partner you can use BPM to distribute test libraries to your customers via LCS and LCS solutions. If you are a customer, use BPM to author and distribute test libraries across different projects and team.
 
-Because BPM can be synchronized with Azure DevOps (formerly known as Visual Studio Team Services), you can automatically create test cases (including test steps) in your Azure DevOps project. Azure DevOps can then serve as your test configuration and test management tool where you can create targeted test plans and test suites, manage the execution of tests and investigate results. For more information about testing with Azure DevOps, see [What are test plans, test suites, and test cases?](https://docs.microsoft.com/azure/devops/test/create-a-test-plan?view=azure-devops#what-are-test-plans-test-suites-and-test-cases)
+Because BPM can be synchronized with Azure DevOps (formerly known as Visual Studio Team Services), you can automatically create test cases (including test steps) in your Azure DevOps project. Azure DevOps can then serve as your test configuration and test management tool where you can create targeted test plans and test suites, manage the execution of tests and investigate results. For more information about testing with Azure DevOps, see [What are test plans, test suites, and test cases?](/azure/devops/test/create-a-test-plan?view=azure-devops#what-are-test-plans-test-suites-and-test-cases)
 
 This topic walks through the process of creating and executing acceptance test suites to be used for manual or automated testing.
 
@@ -156,7 +156,7 @@ After you have a test suite, you are ready to use it for regression testing afte
 
 ![VSTS test marked](./media/vsts_test_marked.png "VSTS test marked")
 
-Azure DevOps also provides a tool, **Test Runner**, to manage manual test case execution. For more information about using Test Runner, see [Run manual tests](https://docs.microsoft.com/vsts/manual-test/getting-started/run-manual-tests).
+Azure DevOps also provides a tool, **Test Runner**, to manage manual test case execution. For more information about using Test Runner, see [Run manual tests](/vsts/manual-test/getting-started/run-manual-tests).
 
 We recommend that you take advantage of Azure DevOps as it provides a rich set of management features not only for testing, but result management and mitigation.
 
@@ -170,7 +170,7 @@ Functional power users can automate the execution of their test cases using the 
 
 #### Investigate test runs
 Once an automated run is complete, on the Azure DevOps toolbar, select **Test > Runs** (or **Test Plans > Runs**) to investigate your test run. Select the desired test run to investigate test case failures and errors. You can also go to your test suite in Azure DevOps to see the latest results associated with your test cases.
-For more information on testing and test management in Azure DevOps, see the [Azure DevOps documentation](https://docs.microsoft.com/azure/devops).
+For more information on testing and test management in Azure DevOps, see the [Azure DevOps documentation](/azure/devops).
 
 
 

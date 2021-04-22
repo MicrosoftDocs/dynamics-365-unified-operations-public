@@ -82,7 +82,7 @@ When you generate earnings, you might receive the following message: "The select
 
 ## Don't see your question here?
 
-We're working to include as many questions as we can, so that Help will be more useful to people just like you. Tell us what question you would like to add to this topic. Send email to <adocs@microsoft.com>. Announcements: To see known issues and recent fixes, use [Issue search](https://go.microsoft.com/fwlink/?LinkID=389258) in [Microsoft Dynamics Lifecycle Services](https://go.microsoft.com/fwlink/?LinkID=306505) (LCS).
+We're working to include as many questions as we can, so that Help will be more useful to people just like you. Tell us what question you would like to add to this topic. Send email to <adocs@microsoft.com>. Announcements: To see known issues and recent fixes, use [Issue search](/dynamicsax-2012/appuser-itpro/issue-search-lifecycle-services-lcs) in [Microsoft Dynamics Lifecycle Services](https://go.microsoft.com/fwlink/?LinkID=306505) (LCS).
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

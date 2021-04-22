@@ -179,7 +179,7 @@
         - name: Architecture for Finance and Operations apps
           href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
         - name: Microsoft FastTrack
-          href: https://docs.microsoft.com/dynamics365/fasttrack/
+          href: /dynamics365/fasttrack/
         - name: Onboard an implementation project
           href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
         - name: Environment planning
@@ -1686,7 +1686,7 @@
         - name: Cost controlling
           href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
         - name: Expense management
-          href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+          href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
         - name: Inventory on-hand
           href: inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
         - name: Invoice approvals
@@ -1694,11 +1694,11 @@
         - name: My team
           href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
         - name: Project mobile applications overview
-          href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/supply-chain/toc.json
+          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
         - name: Project time entry
-          href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
         - name: Project timesheet
-          href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/supply-chain/toc.json
+          href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
         - name: Purchase order approval
           href: procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
         - name: Sales orders
@@ -2037,6 +2037,8 @@
           href: pim/tasks/create-product-master.md
         - name: Create predefined product variants
           href: pim/tasks/create-predefined-product-variants.md
+        - name: Manage units of measure
+          href: pim/tasks/manage-unit-measure.md
         - name: Unit of measure conversion per product variant
           href: pim/uom-conversion-per-product-variant.md
         - name: Create a released product for a single company
@@ -2199,6 +2201,8 @@
         href: engineering-change-management/product-readiness.md
       - name: Release product structure
         href: engineering-change-management/release-product-structure.md
+      - name: Engineering change management FAQs
+        href: engineering-change-management/change-management-faq.md
     - name: Production control
       items:
       - name: Production process overview
@@ -2225,8 +2229,6 @@
             href: production-control/phantom-items.md
           - name: BOM calculations
             href: cost-management/bom-calculations.md
-          - name: Manage unit of measure
-            href: pim/tasks/manage-unit-measure.md
           - name: Production parameters in Manufacturing execution
             href: production-control/production-parameters-manufacturing-execution.md
           - name: Operations resources
@@ -2907,6 +2909,8 @@
         href: transportation/tasks/load-template.md
       - name: Rating profiles
         href: transportation/tasks/setup-a-rating-profile.md
+      - name: LTL classes
+        href: transportation/ltl-class.md
       - name: Set up a carrier fuel index
         href: transportation/tasks/set-up-carrier-fuel-index.md
       - name: Set up a transportation tender
@@ -3295,6 +3299,28 @@
         href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
       - name: Extend inventory on-hand data entities
         href: inventory/extend-on-hand-entities.md
+    - name: Troubleshooting
+      items:
+      - name: Warehouse management
+        items:
+        - name: The last closed work line must be a put
+          href: troubleshooting/warehousing/the-last-closed-work.md
+        - name: The weight fields on load lines do not match the weight fields on load
+          href: troubleshooting/warehousing/the-weight-fields-on.md
+        - name: Wave is not eligible for cleanup
+          href: troubleshooting/warehousing/wave-is-not-eligible.md
+        - name: Weight must be positive
+          href: troubleshooting/warehousing/weight-must-be-posit.md
+        - name: Work can't be cancelled because it is blocked
+          href: troubleshooting/warehousing/work-cannot-be-canceled-blocked.md
+        - name: Work can't be canceled because of status
+          href: troubleshooting/warehousing/work-cannot-be-canceled-status.md
+        - name: Work is not blocked
+          href: troubleshooting/warehousing/work-is-not-blocked.md
+        - name: Work remains blocked
+          href: troubleshooting/warehousing/work-remains-blocked.md
+        - name: You can't cancel work that is on a user
+          href: troubleshooting/warehousing/you-cannot-cancel-wo.md
   - name: Finance and Operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

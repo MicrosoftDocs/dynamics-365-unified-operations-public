@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10
 
 This topic describes features that are new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0. This version has a build number of 10.0.8. For more information about version 10.0, see [Additional resources](whats-new-changed-10.md#additional-resources).
 
-To learn about the features in Retail, see [What's new or changed in Dynamics 365 for Retail (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/april-whats-new).
+To learn about the features in Retail, see [What's new or changed in Dynamics 365 for Retail (April 2019)](../../../commerce/get-started/april-whats-new.md).
 
 ## Extensibility enhancements
 
@@ -196,7 +196,7 @@ Microsoft Dynamics 365 for Finance and Operations version 10.0 includes Platform
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the April '19 release notes](/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
