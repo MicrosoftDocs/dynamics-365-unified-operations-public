@@ -40,7 +40,7 @@ The Retail Experience app supports the Android and iOS phone platforms. The app 
 
 You can download Xamarin from [Visual Studio Tools for Xamarin](https://www.xamarin.com/download). 
 
-For a tutorial that shows how to install Xamarin on Windows, see [Installing Xamarin](https://docs.microsoft.com/xamarin/get-started/installation/index?pivots=windows).
+For a tutorial that shows how to install Xamarin on Windows, see [Installing Xamarin](/xamarin/get-started/installation/index?pivots=windows).
 
 ### Update Xamarin
 
