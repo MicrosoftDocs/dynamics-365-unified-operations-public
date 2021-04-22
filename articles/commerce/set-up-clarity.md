@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up Microsoft Clarity in Dynamics 36 Commerce
+title: Set up Microsoft Clarity in Dynamics 365 Commerce
 description: This topic covers how to set up Microsoft Clarity in your Dynamics 365 Commerce environment. 
 author: BrianShook
 manager: annbe
