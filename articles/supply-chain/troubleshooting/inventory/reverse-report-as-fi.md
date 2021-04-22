@@ -12,14 +12,14 @@ ms.author: smnatara
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-<!-- KFM: this topic is unclear. Please revise or remove. -->
+
 # Reversing a report as finished creates an unexpected open transaction
 
 KB Number: 4612469
 
 ## Symptoms
 
-Reverse report as finished with marking creates an open transaction with the quantity reversed having the same inventory dimensions of the transaction reversed.
+If you reverse a report as finished with marking, the system creates an open transaction where the reversed quantity has the same inventory dimensions of the transaction that was reversed.
 
 ## Resolution
 
