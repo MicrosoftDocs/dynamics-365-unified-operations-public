@@ -28,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.18
 # Archive inventory transactions
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Over time, the inventory transactions table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This topic describes how you can use the *Inventory transactions archive* feature to archive data about inventory transactions to help improve system performance.
 

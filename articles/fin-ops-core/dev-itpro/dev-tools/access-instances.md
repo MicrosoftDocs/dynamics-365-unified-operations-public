@@ -92,7 +92,7 @@ Follow the steps in this section if you are also configuring for Commerce.
 
 To use the downloadable VHD for POS customizations, you must also follow this step.
 
--   On the host computer, enable Nested VM support. For more information, see [Run Hyper-V in a Virtual Machine with Nested Virtualization](https://msdn.microsoft.com/virtualization/hyperv_on_windows/user_guide/nesting).
+-   On the host computer, enable Nested VM support. For more information, see [Run Hyper-V in a Virtual Machine with Nested Virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization).
 
 ### Running the virtual machine locally
 
@@ -122,7 +122,7 @@ Follow these steps to run the VM from Hyper-V Manager.
 For POS customizations, you must also follow these steps on the guest VM.
 
 1.  Download and install [Microsoft Emulator for Windows 10 Mobile Anniversary Update](https://www.microsoft.com/download/details.aspx?id=53424).
-2.  Start the Hyper-V host service. For more information, see [Hyper-V: The Hyper-V Virtual Machine Management service must be running](https://technet.microsoft.com/library/ee956894(v=ws.10).aspx). If errors occur during startup, you can also try to uninstall and reinstall the Hyper-V role on the guest VM.
+2.  Start the Hyper-V host service. For more information, see [Hyper-V: The Hyper-V Virtual Machine Management service must be running](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee956894(v=ws.10)). If errors occur during startup, you can also try to uninstall and reinstall the Hyper-V role on the guest VM.
 
 ### Provisioning the administrator user
 
@@ -146,7 +146,7 @@ Follow the steps in this section if you are also configuring for Commerce.
 #### For Dynamics 365 for Operations 7.0
 
 1.  Install [Microsoft Online Services Sign-In Assistant for IT Professionals RTW](https://go.microsoft.com/fwlink/?LinkID=286152).
-2.  Install [Azure Active Directory Module for Windows PowerShell (64-bit version)](https://go.microsoft.com/fwlink/p/?linkid=236297).
+2.  Install [Azure Active Directory Module for Windows PowerShell (64-bit version)](/collaborate/connect-redirect?DownloadID=59185).
 3.  Query Azure AD for your tenant and user ID. Open a Windows PowerShell Integrated Scripting Environment (ISE) window with administrative privileges, and run the following command. You will be prompted for Azure AD credentials. Use the same user account that you used in the admin user provisioning tool earlier.
 
     ```powershell
@@ -225,8 +225,8 @@ On a VM, you can find most of the application configuration by opening the web.c
 ### Commerce configuration
 
 The software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize applications, see the following topics:
--   [Retail software development kit (SDK) architecture](../../../retail/dev-itpro/retail-sdk/retail-sdk-overview.md)
--   [Point of sale (POS) device activation](../../../retail/dev-itpro/retail-device-activation.md)
+-   [Retail software development kit (SDK) architecture](../../../commerce/dev-itpro/retail-sdk/retail-sdk-overview.md)
+-   [Point of sale (POS) device activation](../../../commerce/dev-itpro/retail-device-activation.md)
 
 ## Redeploying or restarting the runtime on the VM
 To restart the local runtime and redeploy all the packages, follow these steps.

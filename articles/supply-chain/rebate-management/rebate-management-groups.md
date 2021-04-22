@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.18
 # Rebate management groups
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Rebate and deduction calculations can be driven by groups. Rebate management groups can be created for customers, vendors, and items. They can be attached to a master record.
 

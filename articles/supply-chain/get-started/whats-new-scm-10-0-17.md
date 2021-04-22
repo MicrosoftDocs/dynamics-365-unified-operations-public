@@ -40,7 +40,7 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 The following features are included in this release.  Follow the links to the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
 
-Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them. Some of the listed features may still be in preview, though most are now generally available.
+Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 ### Asset management
 

@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - SQL Transactional Replication 
 description: This topic shows how to upgrade a large Microsoft Dynamics AX 2012 database to Finance and Operations apps.
 author: sarvanisathish
-ms.date: 04/13/2021
+ms.date: 04/20/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -115,7 +115,7 @@ The **SQLTransactionalReplication** folder has all the Windows PowerShell script
 2. **Replication_02_Distributor.ps1** - Upon completion, the distributor database will get created in the source database server under the system database.
 3. **Replication_03_PublisherTables.ps1** - After the publisher scripts are successfully executed, publication will be created under the replication folder. Note that this will take some time to complete. This creates publishers AXDB_PUB_TABLE_Obj_[*].
 
-    > [WARNING!]
+    > [!WARNING]
     > Wait for data replication to complete before executing cutover scripts. You can check the status in the following ways:
     > - Replication monitor: On the source server, right- click the **Replicatior** folder and select **Launch Replication Monitor**. 
     > - Run GetStatus.ps1 script embedded in the replication toolkit. **DataReplicationStatus** must be set to complete for each AXDB_PUB_TABLE_Obj_[*] publication.
