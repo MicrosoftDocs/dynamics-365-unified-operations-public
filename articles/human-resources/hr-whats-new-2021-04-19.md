@@ -61,7 +61,7 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| 552164 | **Saved view** on **Employee self service > Open courses** doesn't work for courses that contain an agenda |  |
+| 552164 | **Saved view** on **Employee self service > Open courses** doesn't work for courses that contain an agenda | If a Saved view is used on Open courses (ESS), and one of the courses has an Agenda attached to it, then the view will no longer show multiple lines for that Course |
 | 560614 | **Benefits > Life event options** show discrepancies in the tooltip documentation and code behavior. | Updated tooltips in Life event options to show correct behavior. |
 | 560616 | **Benefits > Life event options** are editable in the worker benefit plan, but changes aren't affected. | Updated behavior of Life event option switches to enable or disable, based on dependant options, per tooltip documentation. |
 | 565054 | Unable to view **Workers without employment** list content when **Advanced access** is on. | This release fixes the issue where, when **Advanced access** was turned on, only system admins could view the contents of the **Workers without employment** list. Because this fix is a security change, you'll need to opt in to it in Feature management. Once the feature is on, those roles that have access to the form will see the contents, even though advanced access is on. For more information, see [Workers without employment](hr-personnel-workers-without-employment.md). |
