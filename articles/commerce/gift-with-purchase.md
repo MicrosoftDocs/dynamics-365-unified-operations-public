@@ -60,3 +60,5 @@ The "View available discounts" feature helps sales associates and customers lear
 
 ## Additional resources
 
+[Cross-sell and upsell by using discounts](discounts-pos.md#cross-sell-and-upsell-by-using-discounts)
+
