@@ -30,13 +30,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers the module data file in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 A module data file contains the typings for data actions that the module uses to fetch data. The naming convention for module data files is *MODULE\_NAME.data.ts*.
 
-
 The software development kit (SDK) includes a set of core data actions that can get data from Dynamics 365 Commerce, ratings and reviews, or the recommendations service. You can find the list of data actions under the SDK's \\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib directory.
-
 
 ## Example
 

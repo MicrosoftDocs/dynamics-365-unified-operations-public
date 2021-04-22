@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to extend a theme to add module extensions in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Dynamics 365 Commerce e-Commerce themes can optionally contain the following module extensions to either the set of modules in the Commerce module library or custom modules:
 
 - Module view extensions that provide new layout views on a module

@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to create, test, and preview a layout container module.
 
-## Overview
-
 The Microsoft Dynamics 365 Commerce online software development kit (SDK) provides a **yarn msdyn365 add-module MODULE\_NAME** command-line interface (CLI) command. To create a new layout container module, you run this command to create a standard module, replacing **MODULE\_NAME** with the name that you want to give to your module. Then change the **$type** value to **containerModule**.
 
 ### Examples

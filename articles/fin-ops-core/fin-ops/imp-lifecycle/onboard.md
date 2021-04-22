@@ -60,7 +60,7 @@ To get started with LCS, see [Lifecycle Services (LCS) for Finance and Operation
 
 After the LCS **Implementation project** workspace is provisioned, the Microsoft FastTrack team will monitor your onboarding progress. If project onboarding is not completed within a few weeks after creating an LCS **Implementation project**, a reminder will be sent to the project team. 
 
-For more information about the FastTrack program and the services provided, see [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md).
+For more information about the FastTrack program and the services provided, see [Microsoft FastTrack](/dynamics365/fasttrack/).
 
 For more information about LCS project onboarding, see [LCS project onboarding](../../dev-itpro/lifecycle-services/project-onboarding.md).
 
