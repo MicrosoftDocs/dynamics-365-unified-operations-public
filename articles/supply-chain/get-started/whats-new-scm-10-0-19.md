@@ -26,49 +26,35 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 
 ## Features included in this release
 
-The following features are included in this release. Follow the links to the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
+The following table lists the features included in this release. The *Feature* column provides links to the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), where you can see the official release dates for each feature. The *More information* column provides links to related documentation.
 
 Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them. Some of the listed features are still in preview, while others may already be generally available.
 
-### Inventory and logistics
-
-- Allow vendors to apply for procurement categories through vendor collaboration<br> - For more information, see [Category requests from vendors](../procurement/category-requests-from-vendors.md)
-- [Approve and save vendor-submitted bank details](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details)
-- [Contact person data entity export optimization](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)
-- [Incremental enhancements for warehouse execution capabilities with scale units](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) <br> - For more information, see [Message processor messages](../cloud-edge/cloud-edge-message-processor-messages.md), [Warehouse inventory adjustment](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md), and [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md).
-- [Lookup functionality for Document introduction and Document conclusion fields on Sales quotation page](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page)
-- [Warehouse execution with edge scale units on your custom hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware)<br> - For more information, see [Deploy edge scale units on custom hardware using LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md).
-
-### Manufacturing
-
-- [Manufacturing execution with edge scale units on your custom hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware)<br> - For more information, see [Deploy edge scale units on custom hardware using LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md).
-
-### Planning
-
-- Query-based planned order firming<br> - For more information, see [Firm planned orders](../master-planning/planning-optimization/planned-order-firming.md).
-
-### Product information management
-
-- [Variant suggestions page improvements](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements)<br> - For more information, see [Create predefined product variants](../pim/tasks/create-predefined-product-variants.md).
+| Feature area | Feature | More information |
+|---|---|---|
+| Inventory and logistics | Allow vendors to apply for procurement categories through vendor collaboration  | [Category requests from vendors](../procurement/category-requests-from-vendors.md) |
+| Inventory and logistics | [Approve and save vendor-submitted bank details](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details) | *Not available* |
+| Inventory and logistics | [Contact person data entity export optimization](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | *Not available* |
+| Inventory and logistics | [Incremental enhancements for warehouse execution capabilities with scale units](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Message processor messages](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Warehouse inventory adjustment](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md) |
+| Inventory and logistics | [Lookup functionality for Document introduction and Document conclusion fields on Sales quotation page](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | *Not available* |
+| Inventory and logistics | [Warehouse execution with edge scale units on your custom hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [Deploy edge scale units on custom hardware using LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
+| Manufacturing | [Manufacturing execution with edge scale units on your custom hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Deploy edge scale units on custom hardware using LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md).
+| Planning | Query-based planned order firming | [Firm planned orders](../master-planning/planning-optimization/planned-order-firming.md).
+| Product information management | [Variant suggestions page improvements](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Create predefined product variants](../pim/tasks/create-predefined-product-variants.md) |
 
 
 ## New and updated documentation resources
 
 We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
 
-- [Engineering change management FAQs](../engineering-change-management/change-management-faq.md)
-- [LTL classes](../transportation/ltl-class.md)
-- [Manage unit of measure](../pim/tasks/manage-unit-measure.md)
-- [Product configuration model calculations](../pim/config-model-calculations.md)
-- [Troubleshoot warehouse batch and serial reservation hierarchies](../warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md)
-- [Unified number sequence for job IDs](../production-control/unified-job-ids.md)
-- [Wave creation and processing](../warehousing/wave-processing.md)
-- [Warehouse parameters for wave processing](../warehousing/wave-warehouse-parameters.md)
-- [Wave templates](../warehousing/wave-templates.md)
-- [Wave allocation](../warehousing/wave-allocation-method.md)
-- [Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md)
-- [Containerization](../warehousing/wave-containerization.md)
-- [Wave execution notifications](../warehousing/wave-execution-notifications.md)
+| Feature area | New or updated topics |
+|---|---|
+| Engineering change management | [Engineering change management FAQs](../engineering-change-management/change-management-faq.md) |
+| Product information management | [Manage unit of measure](../pim/tasks/manage-unit-measure.md)<br><br>[Product configuration model calculations](../pim/config-model-calculations.md) |
+| Production control | [Unified number sequence for job IDs](../production-control/unified-job-ids.md) |
+| Transportation management | [LTL classes](../transportation/ltl-class.md) |
+| Warehouse management | [Troubleshoot warehouse batch and serial reservation hierarchies](../warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md) |
+| Warehouse management, wave creation and processing | [Wave creation and processing](../warehousing/wave-processing.md)<br><br>[Warehouse parameters for wave processing](../warehousing/wave-warehouse-parameters.md)<br><br>[Wave templates](../warehousing/wave-templates.md)<br><br>[Wave allocation](../warehousing/wave-allocation-method.md)<br><br>[Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Containerization](../warehousing/wave-containerization.md)<br><br>[Wave execution notifications](../warehousing/wave-execution-notifications.md) |
 
 ## Additional resources
 
