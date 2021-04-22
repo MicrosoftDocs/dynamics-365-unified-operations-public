@@ -34,18 +34,19 @@ ms.dyn365.ops.version: AX 10.0.19
 This topic applies to Dynamics 365 commerce application version 10.0.19 and later.
 
 Store commerce provides rich commerce functionalities for all first-line workers, such as cashiers, sales and inventory associates, stock clerks, and store managers etc. to perform various commerce operations like cash and carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
-Store commerce app is Windows Store app that runs in the windows device, the Store commerce app uses the windows chromium engine to render the app which has better rendering performance when compared to the native JavaScript UWP app in windows. The Store commerce app will be available in Windows store for easier discovery, download and deployment, this simplifies the overall ALM of deployment and servicing.
 
-This topic is applicable to app
+Store commerce app is Microsoft Store app that runs in the windows device, the Store commerce app uses the Chromium engine to render the app, the app will be available in Microsoft Store for easier discovery, download and deployment, this simplifies the overall ALM of deployment and servicing.
 
-The Store commerce app is a shell app for Windows which uses the WebView to render the Cloud Point of Sale (CPOS), the CPOS can run only in web browser but the Store commerce can run as native windows app similar to [Modern Point of Sale (MPOS)](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-modern-pos-architecture) and support local hardware station, can be directly integrated to Payment terminal, printer, cash drawer etc. no need to setup shared hardware station to use hardware devices. 
-Store commerce uses the windows chromium engine to render the UI instead of the UWP app rendering, the key difference between MPOS and the Store commerce app is the Store commerce app uses the windows chromium engine to render which provides better rendering performance than Windows UWP JavaScript app.
+The Store commerce app is a shell app for Windows which uses the Microsoft Edge WebView2 to render the Cloud Point of Sale (CPOS), the CPOS can run only in web browser but the Store commerce can run as native windows app like [Modern Point of Sale (MPOS)](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-modern-pos-architecture) and support local hardware station, can be directly integrated to Payment terminal, printer, cash drawer etc. no need to setup shared hardware station to use hardware devices. 
+Store commerce uses the Chromium engine to render the UI instead of the UWP app rendering framework, the key difference between MPOS and the Store commerce app is the Store commerce app uses the Chromium engine to render the app.
 
-In the future the Store commerce app will replace the Modern Point of Sale (MPOS) when it has full functional parity with MPOS, currently the Store commerce app don’t support in offline mode (when there is no connectivity to Retail Server) but MPOS supports offline. For more details about the different POS app and topology refer this [doc.](https://docs.microsoft.com/en-us/dynamics365/commerce/mpos-or-cpos)
+In the future the Store commerce app will replace the Modern Point of Sale (MPOS) when it has full functional parity with MPOS, currently the Store commerce app don’t support offline mode (when there is no connectivity to Retail Server) but MPOS supports offline. For more details about the different POS app and topology refer this [doc.](https://docs.microsoft.com/en-us/dynamics365/commerce/mpos-or-cpos)
 
 ## Setup and Installation:
 
-The Store commerce is available in windows store to download and installation. Open Microsoft Store and search for Microsoft Dynamics 365 Commerce – Store Commerce, after the app discovery click Get to install the app. After installation in the start menu search for Store commerce and open the app.
+Prerequisites: Install the Microsoft Edge browser, the app uses the Microsoft Edge WebView2 control.
+
+The Store commerce is available in Microsoft Store to download and installation. Open Microsoft Store and search for Microsoft Dynamics 365 Commerce – Store Commerce, after the app discovery click Get to install the app. After installation in the start menu search for Store commerce and open the app.
 
 Once the app is launched follow the below steps for configuration and activating the app:
 1.	In the app start page, enter the Cloud POS URL, you can find the Cloud POS URL from LCS environment details page or in Dynamics 365 commerce > Channel Setup > Channel Profiles.
