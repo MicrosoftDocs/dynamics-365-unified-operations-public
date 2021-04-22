@@ -20,8 +20,9 @@ ms.reviewer: sericks
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jasongre
-ms.search.validFrom: 2018-02-28
-ms.dyn365.ops.version: Platform update 33
+ms.search.validFrom: 2021-04-30
+ms.dyn365.ops.version: 10.0.19
+
 ---
 
 # Embed third-party apps
