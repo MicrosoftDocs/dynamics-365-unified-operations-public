@@ -61,20 +61,14 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| 445141 | HcmCompensationCrossCompanyFeature uses the same **Learn more** forward link as HcmPerformanceReviewReportFeature. | |
-| 526420 | Integrate missing code from Elevate into Life events. |  |
 | 552164 | **Saved view** on **Employee self service > Open courses** doesn't work for courses that contain an agenda |  |
 | 560614 | **Benefits > Life event options** show discrepancies in the tooltip documentation and code behavior. | Updated tooltips in Life event options to show correct behavior. |
 | 560616 | **Benefits > Life event options** are editable in the worker benefit plan, but changes aren't affected. | Updated behavior of Life event option switches to enable or disable, based on dependant options, per tooltip documentation. |
 | 565054 | Unable to view **Workers without employment** list content when **Advanced access** is on. | This release fixes the issue where, when **Advanced access** was turned on, only system admins could view the contents of the **Workers without employment** list. Because this fix is a security change, you'll need to opt in to it in Feature management. Once the feature is on, those roles that have access to the form will see the contents, even though advanced access is on. For more information, see [Workers without employment](hr-personnel-workers-without-employment.md). |
-| 565963 | Affordable Care Act coverage option takes you to the main Affordable Care Act coverage group form instead of for the employee. | |
 | 570586 | Leave request validation fails when employment ends before the latest transaction for that worker across all leave plans. | After an employment ends, leave request validation doesn't fail based on employee leave transactions.|
 | 570783 | Enabling and disabling cross company leave in Human Resources shared parameters changes what employees employed in a single company see in leave requests. | Employees employed in a single company see no changes in requesting time off if the parameter is enabled or disabled. |
 | 572343 | Required reason code isn't displayed when the Cross Company leave view feature is enabled. | When the Cross company leave feature is enabled, reason code now displays as expected. |
-| 573617 | Benefits workspace v2 feature doesn't handle the GA feature stage dynamically in Feature management. | |
 | 573676 | Can't add **Period** to **Benefits management > Links > Benefit plans**. | Fixed bugs where **Period** couldn't be added or updated on existing **Benefit plan** form. |
-| 574101 | Show a notification to the user upon sign-in if reason codes need to be migrated. |  |
-| 574502 | **Saved view** on **Employee self service > Open courses** doesn't work for courses that contain an agenda. |  |
 
 ## In preview
 
