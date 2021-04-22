@@ -63,6 +63,13 @@ After you install the deployable package on a development VM, follow these steps
 7. Open the **Pending Changes** window from the **Team Explorer** pane or by clicking **View** > **Other Windows** > **Pending Changes**.
 8. Review the changes, enter a check-in comment, and then click **Check In**.
 
+## Including source-controlled third-party packages
+
+After checking in the package binaries into source control as described in the previous section, you include the binaries in deployable packages generated during build automation. There are two options:
+
++ On a build virtual machine, the standard legacy pipeline will automatically find and include the binaries into the deployable package it generates.
++ Using the [new pipeline](hosted-build-automation.md) or using the new packaging task in the legacy pipeline, review the [create deployable packages](pipeline-create-deployable-package.md) documentation. The documentation has examples for including source-controlled binaries in deployable packages.
+
 ## Deploying third-party code
 Because the models and runtime packages are in source control, other developers who use other development environments can just synchronize the models and packages to their workspace by using the **Get latest** feature of source control.
 

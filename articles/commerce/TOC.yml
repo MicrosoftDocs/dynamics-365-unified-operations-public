@@ -280,7 +280,9 @@
           href: dev-itpro/secure-retail-cloud-pos.md
         - name: Retail Hardware Station configuration and installation
           href: retail-hardware-station-configuration-installation.md
-        - name: Mass deployment of legacy self-service components
+        - name: Mass deployment of sealed Commerce self-service components
+          href: dev-itpro/Enhanced-Mass-Deployment.md
+        - name: Mass deployment of self-service components
           href: dev-itpro/retail-mass-deployment.md
         - name: Commerce component events for diagnostics and troubleshooting
           href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
@@ -1202,6 +1204,14 @@
         href: localizations/setting-up-fiscal-integration-for-retail-channel.md
       - name: User-defined certificate profiles for retail stores
         href: localizations/certificate-profiles-for-retail-stores.md
+      - name: Regulatory configuration service
+        items:
+        - name: Regulatory configuration service overview
+          href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+        - name: Regulatory configuration service - Globalization features
+          href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
+        - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
+          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
       - name: Austria
         items:
         - name: Fiscal registration service integration sample for Austria

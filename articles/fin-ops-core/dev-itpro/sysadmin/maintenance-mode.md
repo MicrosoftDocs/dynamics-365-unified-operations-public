@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance mode
-description: This topic desribes maintenance mode, which is a system-wide setting that lets system administrators make system changes that can affect system functionality.
+description: This topic describes maintenance mode, which is a system-wide setting that lets system administrators make system changes that can affect system functionality.
 author: laneswenka
 ms.date: 05/10/2019
 ms.topic: article

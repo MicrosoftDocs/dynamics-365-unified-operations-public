@@ -294,7 +294,7 @@ Users can access Finance + Operations by using the most recent versions of these
 - Internet Explorer 11 (deprecated, not recommended)
 
 > [!NOTE]
-> For optimal performance and an optimal experience, we recommend that you use the latest version of a modern browser, especially Microsoft Edge. Support for Internet Explorer 11 is deprecated. For more information, see the [Internet Explorer deprecation announcement](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/removed-deprecated-features-platform-updates#platform-updates-for-version-10015-of-finance-and-operations-apps).
+> For optimal performance and an optimal experience, we recommend that you use the latest version of a modern browser, especially Microsoft Edge. Support for Internet Explorer 11 is deprecated. For more information, see the [Internet Explorer deprecation announcement](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10015-of-finance-and-operations-apps).
 
 ## Software requirements for Active Directory Federation Services
 
@@ -302,8 +302,8 @@ Active Directory Federation Services (AD FS) on Windows Server 2016 is required
 
 The domain controller must be Windows Server 2012 R2 or later, and the domain functional level must be 2012 R2 or more. For more information about domain functional levels, see the following pages:
 
-- [What Are Active Directory Functional Levels](https://technet.microsoft.com/library/cc787290(v=ws.10).aspx)
-- [Understanding Active Directory Domain Services Functional Levels](https://technet.microsoft.com/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
+- [What Are Active Directory Functional Levels](/previous-versions/windows/it-pro/windows-server-2003/cc787290(v=ws.10))
+- [Understanding Active Directory Domain Services Functional Levels](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10))
 - [Full 2-way trust](../../fin-ops/get-started/system-requirements-on-prem.md#full-2-way-trust)
 
 ## Supported Microsoft Office applications

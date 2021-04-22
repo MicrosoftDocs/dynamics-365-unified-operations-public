@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to override module library components to allow for customizations in a theme.
 
-## Overview
-
 The Microsoft Dynamics 365 Commerce module library contains a set of TypeScript components that various module library modules use, and that can be overridden. These components consist of helper APIs that contain business logic and other logic to help render the HTML for the module HTML, handle events, and make server-side calls.
 
 If you must change any logic in a component, you can use the command-line interface (CLI) [add-component-override](cli-command-reference.md#add-component-override) command to override the component for a selected theme. For example, if you want to change the logic for strikethrough pricing, you can override the Price component. Other changes, such as [module view overrides](theme-module-extensions.md), can also be used for visual changes. In rare cases, you might have to [clone a module](clone-starter-module.md) to make all the changes that you require.

@@ -90,7 +90,7 @@ print bank data on standard reports.
 
 #### What's new and in development
 
-Go to the [Microsoft Dynamics 365 release plans](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features have been planned. 
+Go to the [Microsoft Dynamics 365 release plans](/dynamics365/release-plans/) to see what new features have been planned. 
 
 #### Blogs
 

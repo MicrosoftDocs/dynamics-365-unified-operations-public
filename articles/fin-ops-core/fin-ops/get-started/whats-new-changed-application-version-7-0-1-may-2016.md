@@ -81,7 +81,7 @@ This article describes features that are either new or changed in Microsoft Dyna
 </tr>
 <tr>
 <td>Support BOMs that include items with different product dimensions of the same item.</td>
-<td>When using one or multiple of the product dimensions in production, you can have situations where you would like to produce an item, based on a different variant of the same item. For more information, see <a href="https://blogs.msdn.microsoft.com/axmfg/2015/12/22/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item/">this blog</a>.</td>
+<td>When using one or multiple of the product dimensions in production, you can have situations where you would like to produce an item, based on a different variant of the same item. For more information, see <a href="/archive/blogs/axmfg/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item">this blog</a>.</td>
 </tr>
 <tr>
 <td>Production orders with circular structures at the first level of their BOMs are excluded from BOM level calculation for material resource planning.</td>

@@ -44,7 +44,7 @@ Changes described in this section apply to build number 8.1.2674. The numbers in
 
 ### Print performance reviews
 
-Printing performance reviews is now available in all environments. To enable this functionality, use the **Feature management** workspace. For more information about Feature management, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview). For more information about printing performance reviews, see [Performance reviews](https://docs.microsoft.com/dynamics365/talent/performance-management-overview#performance-reviews).
+Printing performance reviews is now available in all environments. To enable this functionality, use the **Feature management** workspace. For more information about Feature management, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). For more information about printing performance reviews, see [Performance reviews](../human-resources/hr-develop-performance-management-overview.md#performance-reviews).
 
 ### Retired position with direct reports "floats" in org diagram as an open position (385436)
 

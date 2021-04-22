@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.18
 # Rebate management parameters
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The **Rebate management parameters** page is used to define settings that apply across the **Rebate management** module. These settings affect posting, status updates, number sequences, and other behavior. The setup on this page is shared across legal entities and can be modified by users who have the appropriate security permissions.
 

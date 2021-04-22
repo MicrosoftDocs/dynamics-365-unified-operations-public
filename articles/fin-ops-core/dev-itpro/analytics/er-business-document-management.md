@@ -4,7 +4,7 @@
 title: Business document management overview
 description: This topic provides information about how to use the Business document management feature of the ER framework.
 author: NickSelin
-ms.date: 12/15/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,9 +50,9 @@ To use Business document management for editing templates in Excel or Word forma
 
 ## Business document availability
 
-For a complete list of all the reports planned for the October 2019 release, see [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
+For a complete list of all the reports planned for the October 2019 release, see [Configurable business documents reporting in Word and Excel](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-For a complete list of all the reports planned for the October 2020 release, see [Configurable business documents – Word templates](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
+For a complete list of all the reports planned for the October 2020 release, see [Configurable business documents – Word templates](/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
 More reports will become available in future releases. Special notifications about additional reports will be sent separately. To learn how to review the list of currently available reports, see the section [List of ER configurations that have been released in Finance to support configurable business documents](#list-of-configurations-cbd) below.
 
@@ -277,7 +277,23 @@ The **Edit template** option is available for the selected template. This option
 
 ![Confirm the start of the editing process to create a new template](./media/BDM-Overview-EditingTemplate4.png)
 
+If there is no any provider it will be offered to create. If there is no active provider it will be offered to choose it for activate.
+
+To create a provider, change the name of the provider in the **Name** field, update the internet address of the new provider in the **Internet address** field, and select **OK** to confirm.
+
+   ![Create new provider in BDM](./media/bdm_create_provider.png)
+
+To activate existing provider, choose the name of the provider in the **Configuration provider** field, and select **OK** to set the provider as active.
+
+   ![Activate provider in BDM](./media/bdm_choose_provider.png)
+
+> [!NOTE]
+> Each BDM template refers to the provider as the author of the configuration. This is why an active provider is required for the template.
+
+
 The **New document** option is always available for a template in an ER format configuration provided by current and another provider (Microsoft in this example) that doesn't have any revision. The edited template will then be stored in a new ER format configuration that is automatically generated.
+
+
 
 ### Start editing a template
 
@@ -424,7 +440,7 @@ Most likely you signed in to the current instance of the app of the Azure AD dom
 
 ## <a name="list-of-configurations-cbd"></a>List of ER configurations that have been released in Finance to support configurable business documents
 
-The [list](general-electronic-reporting.md#list-of-configurations) of ER configurations for Finance is constantly updated. Open the [Global repository](er-download-configurations-global-repo.md) to review the list of ER configurations that are currently supported. You can [filter](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) the Global repository to review the list of ER configurations that are used to support configurable business documents.
+The [list](general-electronic-reporting.md#list-of-configurations) of ER configurations for Finance is constantly updated. Open the [Global repository](er-download-configurations-global-repo.md) to review the list of ER configurations that are currently supported. You can [filter](../../../finance/localizations/enhanced-filtering-global-repo.md) the Global repository to review the list of ER configurations that are used to support configurable business documents.
 
 ![Filtering the content of the Global repository on the Configuration repository page](./media/bdm-overview-filterglobalrepo.gif)
 

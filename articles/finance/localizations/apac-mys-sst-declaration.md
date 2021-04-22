@@ -46,7 +46,7 @@ The primary address of the legal entity must be in Malaysia.
 
 In the **Feature management** workspace, turn on the feature that is named **(Malaysia) Category hierarchy for Sales and purchase tax report**.
 
-For more information about how to turn on features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+For more information about how to turn on features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Download Electronic reporting configurations
 

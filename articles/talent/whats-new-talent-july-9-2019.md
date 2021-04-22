@@ -52,7 +52,7 @@ Changes described in this section apply to build number 8.1.2374.
 
 ### Platform update 28 for Finance and Operations
 
-For more details about Platform update 28 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 28 (July 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
+For more details about Platform update 28 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 28 (July 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
 ### Table support for custom columns in Dataverse 
 
@@ -95,9 +95,9 @@ Plans that are set up with no accruals can now show a balance.
 
 ### Preview features are enabled only in sandbox instances
 
-When you provision a new instance of Talent, you can specify whether the instance type is **Production** or **Sandbox**. Instances of the **Sandbox** type allow for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
+When you provision a new instance of Talent, you can specify whether the instance type is **Production** or **Sandbox**. Instances of the **Sandbox** type allow for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
 
-For more information about how changes are published, see [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
+For more information about how changes are published, see [Provision Talent](/dynamics365/unified-operations/talent/provisioning-talent).
 
 ### Restrict leave types in time-off requests
 

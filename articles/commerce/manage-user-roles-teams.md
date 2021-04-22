@@ -28,7 +28,6 @@ ms.dyn365.ops.version: 10.0.18
 # Manage user roles in Microsoft Teams
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to manage Microsoft Dynamics 365 Commerce user roles in Microsoft Teams.
 

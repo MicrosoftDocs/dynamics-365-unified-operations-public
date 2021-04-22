@@ -693,7 +693,7 @@ First, follow these steps to export the report designs from Report designer.
 You can copy or upload the file to a secure location.
 
 > [!WARNING]
-> Be aware of the behavior of drive D on Microsoft Azure virtual machines (VMs). Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+> Be aware of the behavior of drive D on Microsoft Azure virtual machines (VMs). Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](/archive/blogs/mast/understanding-the-temporary-drive-on-windows-azure-virtual-machines).
 
 ### Import report definitions
 

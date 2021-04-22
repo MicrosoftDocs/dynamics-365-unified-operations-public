@@ -138,7 +138,7 @@ Note that the row selection and row status columns in the new grid are always fr
 
 **10.0.9 / Platform update 33 and later**
 
-The **New grid control** feature is available directly in Feature management in any environment. Like other public preview features, enabling this feature in production is subject to the [Supplemental Terms of Use Agreement](https://go.microsoft.com/fwlink/?linkid=2105274).  
+The **New grid control** feature is available directly in Feature management in any environment. Like other public preview features, enabling this feature in production is subject to the [Supplemental Terms of Use Agreement](public-preview-terms.md).  
 
 **10.0.8 / Platform update 32 and 10.0.7 / Platform update 31**
 
