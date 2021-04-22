@@ -19,7 +19,7 @@ KB Number: 4612803
 
 ## Symptoms
 
-The "Last tested date" field isn't updated when creating multiple quality orders. 
+The "Last tested date" field isn't updated when creating multiple quality orders.
 
 ## Resolution
 

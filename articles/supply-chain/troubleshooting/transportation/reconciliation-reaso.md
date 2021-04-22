@@ -13,17 +13,17 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 <!-- KFM: The title must be less than 80 chars. Please revise. -->
-# When you setup a Reconciliation reason in Transportation managementit is not supported to add Cost center or any other dimension in credit account except main account
+# When you setup a Reconciliation reason in Transportation management, it is not supported to add Cost center or any other dimension in credit account except main account
 
 KB Number: 4603538
 
 ## Symptoms
 <!-- KFM: The following is unclear. Please revise. Also, "debut account" or "debit account"?-->
-When you setup a Reconciliation reason in Transportation managementit is not supported to add Cost center or any other dimension in credit account except main account, whereas the debit account has an option to select other dimensions.
+When you setup a reconciliation reason in transportation management, it is not supported to add cost center or any other dimension in credit account except main account, whereas the debit account has an option to select other dimensions.
 
 ## Resolution
 
-The system is behaving as designed. The system doesn't allows users to select a financial dimension for the credit account when the reconsolidation reason is not to pay the vendor but to credit a specific main account.
+The system doesn't allows users to select a financial dimension for the credit account when the reconsolidation reason is not to pay the vendor but to credit a specific main account.
 
 If the account structure dictates that a specific financial dimension value for the credit main account is required, then the resulting vendor journal can't be automatically posted as the financial dimension value is missing. You must therefore first specify the credit account manually using the **Invoice journal** page. <!-- KFM: Is this the correct page name? I couldn't find it : Henrikan: Updated-->
 

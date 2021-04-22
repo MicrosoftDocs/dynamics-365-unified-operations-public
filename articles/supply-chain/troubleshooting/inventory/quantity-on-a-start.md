@@ -23,4 +23,4 @@ When you create a quarantine order and try to split the order, the order quantit
 
 ## Resolution
 
-The system is behaving as designed. The system doesn't change the original quantity from the quarantine order to make sure you can track the original quantity created for the quarantine order. However, the system does track how much quantity is split from a quarantine order using a back-end field called `QuantityThatHasSplitIntoOtherQuarantineOrders`, but this field isn't visible in user interface.
+The system doesn't change the original quantity from the quarantine order to make sure you can track the original quantity created for the quarantine order. However, the system does track how much quantity is split from a quarantine order using a back-end field called `QuantityThatHasSplitIntoOtherQuarantineOrders`, but this field isn't visible in user interface.

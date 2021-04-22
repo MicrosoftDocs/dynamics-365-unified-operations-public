@@ -23,4 +23,4 @@ Document handling notes aren't copied from an original sales order to its relate
 
 ## Resolution
 
-The system is behaving as designed. Notes are only copied across purchase and sales orders <!-- KFM: what do you mean by "across purchase and sales orders"? The issue doesn't mention purchase orders. --> for intercompany <!-- KFM: intercompany what? sales orders? -->. Notes are not copied in the context of direct delivery. <!-- KFM: Are "notes" and "document handling note" always the same thing? -->
+The system is behaving as designed. Notes are only copied across purchase and sales orders <!-- KFM: what do you mean by "across purchase and sales orders"?  --> for intercompany <!-- KFM: intercompany what? sales orders? -->. Notes are not copied in the context of direct delivery. <!-- KFM: Are "notes" and "document handling note" always the same thing? -->

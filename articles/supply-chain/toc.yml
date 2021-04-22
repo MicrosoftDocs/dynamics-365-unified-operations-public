@@ -3263,7 +3263,7 @@
           href: troubleshooting/inventory/quantity-on-a-start.md
         - name: The "Last tested date" field isn't updated when creating multiple quality orders
           href: troubleshooting/inventory/the-field-last-test.md
-        - name: While splitting the CW quantity into batches, the system automatically changes the pick quantity based on the item's minimum quantity setup
+        - name: On splitting a catch-weight quantity, minimum instead of nominal quantity is used
           href: troubleshooting/inventory/while-splitting-the.md
       - name: Master planning
         items:

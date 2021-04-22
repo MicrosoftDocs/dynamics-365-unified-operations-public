@@ -23,6 +23,6 @@ Reverse report as finished with marking creates an open transaction with the qua
 
 ## Resolution
 
-The system is behaving as designed. When you reverse a report-as-finished operation, the inventory dimension is initialized from the production journal, so it gets the batch number. The sales order transactions will inherit the batch number due to marking.
+When you reverse a report-as-finished operation, the inventory dimension is initialized from the production journal, so it gets the batch number. The sales order transactions will inherit the batch number due to marking.
 
 The dimension can be reset when posting report as finished.
