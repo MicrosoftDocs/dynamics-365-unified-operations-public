@@ -138,9 +138,11 @@ For information about how to create new Retail Server APIs, see [Create a new Re
 
 ## Exception handling
 
-Extension code can add `try`/`catch` statement in the code to handle exception and log it to Application insights or propagate the error message to the client application if required. Don’t return aggregated exception from CRT or RS if you want to propagate the error message to the client, instead catch exception at individual task level and throw it. For more details on how to handle exception in Task refer [Exception handling document](https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/exception-handling-task-parallel-library).
+You can add a `try...catch` statement to your extension code to handle an exception and log it to Application Insights or propagate it to the client application. Don’t return an aggregated exception from CRT or Retail Server if you want to propagate the error message to the client. Instead, catch the exception at the individual task level and rethrow it. For more information, see these topics:
 
-Also refer  [Log extension events to Application Insights](commerce-application-insights.md) and [Localize Commerce extension resources and label files](extension-resource-localization.md) for logging and showing CRT exception in the client application.
++ [Exception handling (Task Parallel Library)](https://docs.microsoft.com/dotnet/standard/parallel-programming/exception-handling-task-parallel-library).
++ [Log extension events to Application Insights](commerce-application-insights.md)
++ [Localize Commerce extension resources and label files](extension-resource-localization.md), for logging and showing CRT exception in the client application.
 
 ## Register the CRT extension
 
