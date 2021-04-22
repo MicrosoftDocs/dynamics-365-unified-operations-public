@@ -2,7 +2,7 @@
 # required metadata
 
 title: Priority-based throttling FAQ
-description: This topic provides answers to frequently asked questions (FAQ) about priority-based throttling for OData and custom service-based integrations.
+description: This topic provides answers to frequently asked questions about priority-based throttling for OData and custom service-based integrations.
 author: hasaid
 ms.date: 04/20/2021
 ms.topic: article
@@ -32,25 +32,24 @@ ms.dyn365.ops.version: Platform update 37
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic provides answers to some frequently asked questions (FAQ) about [priority-based throttling](priority-based-throttling.md) for Open Data Protocol (OData) and custom service-based integrations.
+This topic provides answers to some frequently asked questions about [priority-based throttling](priority-based-throttling.md) for Open Data Protocol (OData) and custom service-based integrations.
 
 ## How do I access the Data management Yammer group?
-Follow this link: [Data management Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13408417).
+To access the Data management Yammer group, go to [Data management Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13408417).
 
-## In what product update will throttling be enabled by default?
-The throttling feature has been in preview since Finance 10.0.13 and will be enabled by default starting in 10.0.19. You can manually trigger throttling in your environment by setting the priority for your OData and Custom service requests. However, starting with the release of Finance 10.0.19, throttling will be automatically enabled even if you haven't set priorities.
+## When will throttling be enabled by default?
+The throttling feature has been in preview since Finance 10.0.13 and will be enabled by default starting in version 10.0.19. You can manually trigger throttling in your environment by setting the priority for your OData and Custom service requests. However, starting with the release of Finance 10.0.19, throttling will be automatically enabled even if you haven't set priorities.
 
-## What is the release date for the platform update for Finance 10.0.19?
-Finance 10.0.19 will be available for pre-release in late April 2021 and will be generally available in June 2021.
+Finance version 10.0.19 will be available for pre-release in late April 2021 and will be generally available in June 2021.
 
 ## Will a retry request receive preferential treatment over a new request?
 No.
 
 ## Will my environment be subjected to any API limits?
-No. At this time, environments aren't subjected to any API limits. 
+No. At this time, environments aren't subject to any API limits. 
 
 ## Is there a report that determines when throttling might occur?
-Yes. A report is available and can be accessed through the **Raw logs** on the **Environment monitoring** page in LCS. The requests that are listed in this view are likely to be throttled when this feature is turned on by default starting in Finance 10.0.19.
+Yes. A report is available and can be accessed through the **Raw logs** on the **Environment monitoring** page in LCS. The requests that are listed in this view are likely to be throttled when this feature is turned on by default starting in Finance version 10.0.19.
 
 ## Will throttling affect the Data Import/Export Framework (DIXF) and batch?
 No. Throttling is only for OData and custom service integrations.
@@ -71,7 +70,7 @@ Currently, if a request isn't retried when a 429 error is received, the request 
 Yes. For one month, you can export the information to Excel for more analysis and archiving.
 
 ## Is throttling functionality version-specific? If it is, which version is it available in?
-Priority-based throttling will be available in Preview starting with the **Platform updates for version 10.0.13 of Finance and Operations apps** release.
+Priority-based throttling will be available in Preview starting with the version 10.0.13 of Finance and Operations apps.
 
 ## Are there plans to provide an option for the Priority mapping grid entry?
 Microsoft will consider this request in a future release.
@@ -90,7 +89,7 @@ You will receive the message, "This request could not be processed at this time 
 Where **{0}** will have the dynamically calculated retry-after time interval.
 
 ## Does throttling apply to internal Microsoft services?
-Internal Microsoft services, such as DRA, WHSMobile, and RetailAPI are currently exempt from throttling. However, telemetry is being collected on the performance and effect of these services on the overall system health. Microsoft will work with each of these internal service teams to establish usage-based limits at some point.
+Internal Microsoft services, such as DRA, WHSMobile, and RetailAPI are currently exempt from throttling. However, telemetry is being collected on the performance of these services on the overall system health. Microsoft will work with each of these internal service teams to establish usage-based limits at some point.
 
 ## Is it recommended to use a dedicated integration account instead of just the generic admin user account?
 Yes, we strongly recommend this approach. As these service protection settings are set up for user-specific values, using the same user account for most or all of your integration will limit your ability to assign relative priorities across your integration needs. Further, if the same user account is used, all integration requests that originate from that user account will be subjected to throttling.
