@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.19 (June 2021) 
+title: Preview of Dynamics 365 Supply Chain Management 10.0.19 (July 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.19. 
 author: kamaybac
 ms.date: 04/23/2021
@@ -18,11 +18,11 @@ ms.dyn365.ops.version: 10.0.19
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.19. This version has a build number of 10.0.793 <!-- KFM: Update build number --> and is available as follows:
+This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.19. This version has a build number of 10.0.837 and is available as follows:
 
 - **Preview of release:** April 2021
-- **General availability of release (self-update):** May 2021
-- **General availability of release (auto-update):** June 2021
+- **General availability of release (self-update):** June 2021
+- **General availability of release (auto-update):** July 2021
 
 ## Features included in this release
 
@@ -57,13 +57,17 @@ We have recently added or significantly updated the following help topics. They 
 
 ## Additional resources
 
+<!-- KFM: Get these 2 links
+
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.19 includes platform updates. To learn more, see [Platform updates for version 10.0.19 of Finance and Operations apps (May 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.19 includes platform updates. To learn more, see [Platform updates for version 10.0.19 of Finance and Operations apps (July 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md).
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.19, sign in to Lifecycle Services (LCS) and view the [KB article]().<!-- KFM: Get link -->
+For information about the bug fixes included in each of the updates that are part of 10.0.19, sign in to Lifecycle Services (LCS) and view the [KB article](). 
+
+-->
 
 ### Dynamics 365: 2021 release wave 1 plan
 
