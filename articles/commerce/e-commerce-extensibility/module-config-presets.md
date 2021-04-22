@@ -47,7 +47,7 @@ Themes can contain module configuration preset files that are used when a theme 
 
 ## JSON preview file structure
 
-The JSON preview file is configured like a [module mock file](module-mock-file.md), except with regard to images (see the note later in this topic). Here is an example of a JSON preview file.
+The JSON preview file is configured like a [module mock file](module-mock-file.md), except regarding images (see the note later in this topic). Here is an example of a JSON preview file.
 
 ```json
 {
