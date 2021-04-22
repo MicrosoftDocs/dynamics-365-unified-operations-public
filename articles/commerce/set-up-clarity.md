@@ -5,7 +5,7 @@ title: Set up Microsoft Clarity in Dynamics 36 Commerce
 description: This topic covers how to set up Microsoft Clarity in your Dynamics 365 Commerce environment. 
 author: BrianShook
 manager: annbe
-ms.date: 03/23/2021
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
