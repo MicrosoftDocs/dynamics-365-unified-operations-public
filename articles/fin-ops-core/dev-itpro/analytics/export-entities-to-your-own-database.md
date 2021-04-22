@@ -67,6 +67,8 @@ If you're using the BYOD feature for integration with a business intelligence (B
 
 > [!NOTE]
 > Your BYOD database must be accessible to Finance and Operations apps. If you encounter issues where you are unable access to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately.
+> 
+> The use of a performance tier for the Azure SQL database is recommended. For more information about tiers, see [SQL Azure tiers](https://docs.microsoft.com/en-us/azure/azure-sql/database/service-tiers-dtu).
 
 ## Configuring the entity export option
 
