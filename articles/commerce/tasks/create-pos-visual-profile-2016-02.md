@@ -4,7 +4,6 @@
 title: Create point of sale (POS) visual profiles
 description: This procedure walks through creating a new point of sale (POS) visual profile. 
 author: jashanno
-manager: AnnBe 
 ms.date: 12/05/2015
 ms.topic: business-process 
 ms.prod:  

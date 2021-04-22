@@ -4,7 +4,6 @@
 title: Post fixed asset transactions to posting layers
 description: This article gives an overview of posting layer functionality for fixed asset transactions.
 author: moaamer
-manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 

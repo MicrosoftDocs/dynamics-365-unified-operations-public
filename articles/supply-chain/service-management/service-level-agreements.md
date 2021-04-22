@@ -4,7 +4,6 @@
 title: Service level agreements overview
 description: In a service level agreement, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 

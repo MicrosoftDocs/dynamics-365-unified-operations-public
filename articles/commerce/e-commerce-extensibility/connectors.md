@@ -4,7 +4,6 @@
 title: Configure and enable connectors
 description: This topic describes connectors and explains how to configure and enable them in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 

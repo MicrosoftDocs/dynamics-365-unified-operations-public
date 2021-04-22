@@ -1,16 +1,11 @@
 ---
-# required metadata
-
 title: Class extension model in X++
 description: This article describes the new class extension model in X++.
 author: pvillads
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
 ms.technology:
-
-# optional metadata
 
 # ms.search.form:
 # ROBOTS:

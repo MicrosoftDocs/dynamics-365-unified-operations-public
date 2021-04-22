@@ -4,7 +4,6 @@
 title: Configure the Warehousing app for on-premises deployments
 description: This topic describes the prerequisites for the warehousing app for on-premises deployments.
 author: MarkusFogelberg
-manager: AnnBe
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: 
@@ -94,7 +93,7 @@ To enable Finance + Operations to use your AD FS application, you must create a 
 ## Certificates 
 
 Make sure that the devices with the app installed have the correct certificates to access the resources. If you are using self-signed certificates, these will need to be installed on each device by importing star(AX) and AD FS to the trusted route of the computer account/user account. For more information, see [Create and export a self-signed
-certificate](https://technet.microsoft.com/library/ff710475(v=ws.10).aspx).
+certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff710475(v=ws.10)).
 
 > [!IMPORTANT]
 > Environments with self-signed certificates will not be accessible from Android devices. If you need to access the environment from an Android device, use publicly trusted certificates for AD FS and Finance + Operations. Alternatively, you can also use AD CS to generate the certificates for AD FS and Finance + Operations. However, if you do this you will have to manually import the certificate authority certificate into your Android device.   

@@ -4,7 +4,6 @@
 title: Separation of localization models
 description: This article describes how to split the solution into separate models for each feature type.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/17/2017
 ms.topic: article
 ms.prod: 

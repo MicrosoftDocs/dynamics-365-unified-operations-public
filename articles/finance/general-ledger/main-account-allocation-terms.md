@@ -4,7 +4,6 @@
 title: Allocation terms
 description: This topic provides information about using allocation terms on a main account. 
 author: rachel-profitt
-manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 

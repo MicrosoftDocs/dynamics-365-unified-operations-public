@@ -4,7 +4,6 @@
 title: Exchange rate adjustments
 description: This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 

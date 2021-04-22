@@ -4,7 +4,6 @@
 title: Condition assessment
 description: This topic explains how to create a condition assessment template and registration on an asset in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 

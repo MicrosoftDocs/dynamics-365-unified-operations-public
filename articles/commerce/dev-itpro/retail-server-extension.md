@@ -4,7 +4,6 @@
 title: Create a new Retail Server extension
 description: This topic explains how to create a new Commerce Scale Unit extension.
 author: mugunthanm
-manager: AnnBe
 ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
@@ -39,7 +38,7 @@ This topic applies to Retail SDK version 10.0.10 and earlier.
 The Retail software development kit (SDK) includes only a few samples of end-to-end Commerce Scale Unit extensions that include the Commerce Runtime (CRT). You can use these samples as templates to start your extensions. You can find the sample extensions in the RetailSDK\\SampleExtensions\\RetailServer folder.
 
 > [!NOTE]
-> The CommerceController extension model will be soon deprecated. You will need to migrate all Retail server extensions to IController. Having both CommerceController and IController is not supported. For more information about IController, see [Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-server-icontroller-extension).
+> The CommerceController extension model is deprecated in April 2021 (Application release - 10.0.18). You will need to migrate all Retail server extensions to IController. Having both CommerceController and IController is not supported. For more information about IController, see [Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-server-icontroller-extension).
 
 ## End-to-end sample repository in the Retail SDK
 

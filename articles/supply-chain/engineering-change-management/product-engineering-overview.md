@@ -4,7 +4,6 @@
 title: Engineering change management overview
 description: This topic provides an overview of engineering change management, which helps you plan and manage product versioning, and manage product lifecycles and engineering changes.
 author: t-benebo
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 
@@ -54,7 +53,7 @@ Before you can use engineering change management, you must enable both the *Engi
 
 First, turn on the features by following these steps.
 
-1. Go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+1. Go to the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 1. Check for updates.
 1. Turn on the feature that is named **Engineering Change Management**.
 1. If you want to use it, then also turn on the feature that is named **Product dimension version**.
@@ -63,9 +62,9 @@ Next, turn on the configuration keys by following these steps.
 
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.
-1. Expand the **Trade** node
-1. Select the **Engineering Change Management** check box.
-1. If you want to use it, then also select the **Product dimension - Version** check box.
+1. Expand the **Trade** node.
+1. Enable the configuration key for the main feature by selecting the **Engineering Change Management** check box. (It isn't necessary to expand the node unless you also want to disable one or both of its sub-features.)
+1. If you also want to use the version dimension, then select the **Product dimension - Version** check box. (This check box is further down the list, not nested under the **Engineering Change Management** node.)
 1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

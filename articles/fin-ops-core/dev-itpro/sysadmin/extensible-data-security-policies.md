@@ -4,7 +4,6 @@
 title: Extensible data security policies 
 description: This topic provides an overview of Extensible Data Security (XDS) policies in Finance and Operations apps.
 author: Peakerbl
-manager: AnnBe
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod: 
@@ -84,7 +83,7 @@ carefully designed and tested, policy queries can have a significant performance
 impact. Therefore, make sure to follow simple but important guidelines when
 developing an extensible data security policy. For more information, see the "Developing efficient
 extensible data security policies" section in [Developing Extensible Data Security Policies (White paper) [AX
-2012]](https://technet.microsoft.com/library/hh272862.aspx).
+2012]](/dynamicsax-2012/appuser-itpro/developing-extensible-data-security-policies-white-paper).
 
 When two or more security policies apply, the intersection (not the union) of
 the records that are included by each policy are the only records that can be
@@ -100,10 +99,10 @@ more please refer to these resources:
 - [Create a simple security policy](create-simple-security-policy.md)
 
 - [Developing Extensible Data Security Policies (white paper) [AX
-2012]](https://technet.microsoft.com/library/hh272862.aspx)
+2012]](/dynamicsax-2012/appuser-itpro/developing-extensible-data-security-policies-white-paper)
 
 - [Securing Data by Dimension Value by using Extensible Data Security (white
-paper) [AX 2012]](https://technet.microsoft.com/library/hh335188.aspx)
+paper) [AX 2012]](/dynamicsax-2012/appuser-itpro/securing-data-by-dimension-value-by-using-extensible-data-security-white-paper)
 
 - [Extensible Data Security examples – by Andre Arnaud De
 Calavon [blog]](https://dynamicspedia.com/tag/xds/)

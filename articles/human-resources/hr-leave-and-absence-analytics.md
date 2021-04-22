@@ -4,7 +4,6 @@
 title: View analytics for leave and absence
 description: View leave analytics, accruals and balances, and balance trends in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 

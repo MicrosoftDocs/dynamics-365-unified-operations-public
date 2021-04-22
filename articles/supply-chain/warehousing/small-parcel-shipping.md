@@ -4,7 +4,6 @@
 title: Small parcel shipping
 description: This topic provides information about the small parcel shipping (SPS) feature. This feature enables Microsoft Dynamics 365 Supply Chain Management to submit details about a packed container to the carrier, and then receive a shipping label, shipping rate, and tracking number back from that carrier.
 author: Mirzaab
-manager: tfehr
 ms.date: 01/08/2021
 ms.topic: article
 ms.prod: 
@@ -64,7 +63,7 @@ Follow these steps to get the demo rate engine.
 For information about how to create and deploy functional rate engines so that they can be used in a production or test environment, see the following topics:
 
 - [Create a new transportation management engine](../transportation/create-new-transportation-management-engine.md)
-- [Set up transportation management engines](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
+- [Set up transportation management engines](/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
 
 For more information about how to create an SPS rate engine, see the following blog post: [Small Parcel Shipping: How to leverage small parcel shipping functionality in Microsoft Dynamics 365](https://hub.bhsolutions.com/creating-a-mock-parcel-engine-in-d365?submissionGuid=46a1fccf-80b0-4b70-a6a0-4bf45a8756b5).
 

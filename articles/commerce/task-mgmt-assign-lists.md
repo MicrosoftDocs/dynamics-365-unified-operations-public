@@ -4,7 +4,6 @@
 title: Assign task lists to stores or employees
 description: This topic describes how to assign task lists to stores or employees in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: 

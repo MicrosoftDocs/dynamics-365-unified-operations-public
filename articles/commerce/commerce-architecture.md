@@ -4,7 +4,6 @@
 title: Dynamics 365 Commerce architecture overview
 description: This topic provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
-manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
@@ -67,6 +66,10 @@ Because of the accessible, persistent, up-to-date, and unified organizational da
 #### Dynamics 365
 
 Dynamics 365 is a collection of applications that together provide comprehensive and flexible enterprise resource planning (ERP) solutions for medium to large businesses. It provides an extensible framework and ecosystem that can be tailored to customer-specific requirements via an extensive set of partners. Dynamics 365 applications provide capabilities for their target business segments. They also take advantage of each other, and other Microsoft services and offerings, to provide solutions that help run customers' complex businesses.
+
+#### POS
+
+POS simplifies the experience for the retailers by providing Omnichannel solutions in emerging channels. These channels perform a variety of commerce business operations like cash and carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
 
 #### Modern POS
 

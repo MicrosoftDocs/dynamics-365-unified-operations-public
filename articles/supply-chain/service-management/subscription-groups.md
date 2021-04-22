@@ -4,7 +4,6 @@
 title: Subscription groups 
 description: This topic outlines what is defined in subscription group.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

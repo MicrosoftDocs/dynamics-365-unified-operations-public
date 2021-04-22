@@ -4,7 +4,6 @@
 title: Set up collections
 description: This article explains how to set up the collections functionality.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 

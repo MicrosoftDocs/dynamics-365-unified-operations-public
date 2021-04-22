@@ -4,7 +4,6 @@
 title: Execute kanban process jobs
 description: This procedure focuses on executing kanban process jobs. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

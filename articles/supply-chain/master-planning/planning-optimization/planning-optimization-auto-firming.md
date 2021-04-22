@@ -4,7 +4,6 @@
 title: Autofirming with Planning Optimization
 description: This topic explains how to use automatic firming with Planning Optimization.
 author: ChristianRytt
-manager: tfehr
 ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 

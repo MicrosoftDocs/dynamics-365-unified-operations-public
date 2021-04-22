@@ -4,7 +4,6 @@
 title: EUR-00015 Set up VAT ID
 description: This procedure walks you through VAT ID registration prerequisites, such as setting up a registration type and assigning it to a registration category. 
 author: v-oloski
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

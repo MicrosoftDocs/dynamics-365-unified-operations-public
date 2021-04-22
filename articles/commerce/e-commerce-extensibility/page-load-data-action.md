@@ -4,7 +4,6 @@
 title: Page load data actions
 description: This topic covers page load data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 09/30/2020
 ms.topic: article
 ms.prod: 
@@ -32,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 
 This topic covers page load data actions in Microsoft Dynamics 365 Commerce. 
-
-## Overview
 
 Every page that is rendered, whether it's a product details page, a department page, or a home page, requires data. Page load data actions are used to obtain that data.
 

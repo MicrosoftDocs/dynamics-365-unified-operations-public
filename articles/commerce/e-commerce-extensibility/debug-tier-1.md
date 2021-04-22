@@ -4,7 +4,6 @@
 title: Configure an e-commerce development environment against a Commerce cloud environment
 description: This topic describes how to set up an e-commerce online development environment to debug against a Microsoft Dynamics 365 Commerce cloud development environment.
 author: samjarawan
-manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
@@ -30,8 +29,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 This topic describes how to set up an e-commerce online development environment to debug against a Microsoft Dynamics 365 Commerce cloud development environment.
-
-## Overview
 
 An e-commerce development environment can be configured to debug your live e-commerce website or to test e-commerce configuration changes against various Commerce cloud environments, such as "Dev," "Test," "UAT," or "Prod" environments. This environment is useful for testing and debugging e-commerce modules and data actions against Retail Server extensions. After it's configured, modules and data actions that use Retail Server APIs will directly call the Retail Server in the Commerce cloud environment. Otherwise, mock data will be required.
 

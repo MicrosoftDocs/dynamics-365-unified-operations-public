@@ -4,7 +4,6 @@
 title: Consolidation and elimination overview
 description: This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
 author: aprilolson
-manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 

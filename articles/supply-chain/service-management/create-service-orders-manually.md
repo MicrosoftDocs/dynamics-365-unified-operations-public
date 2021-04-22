@@ -4,7 +4,6 @@
 title: Create service orders manually   
 description: You can create service orders manually by using a service agreement or by using the **Service orders** form. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

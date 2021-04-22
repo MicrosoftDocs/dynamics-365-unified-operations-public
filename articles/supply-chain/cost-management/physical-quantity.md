@@ -4,7 +4,6 @@
 title: Inventory object values
 description: This article provides information about how the values of an inventory object are calculated. 
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -145,7 +144,7 @@ Additional resources
 
 [Cost entries](cost-entries.md)
 
-[What's new and changed](../../fin-and-ops/get-started/whats-new-changed.md)
+[What's new and changed](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 
 
 

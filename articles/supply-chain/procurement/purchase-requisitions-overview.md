@@ -4,7 +4,6 @@
 title: Purchase requisition overview
 description: This topic describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
 author: kamaybac
-manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 

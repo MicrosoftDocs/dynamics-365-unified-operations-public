@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.14 (October 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.14. 
 author: kamaybac
-manager: tfehr
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
@@ -39,7 +38,7 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-This release includes an updated platform and general improvements, but doesn't include any new features specific to Supply Chain Management. For more information about upcoming features, see the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site.
+This release includes an updated platform and general improvements, but doesn't include any new features specific to Supply Chain Management. For more information about upcoming features, see the [Release plans](/dynamics365/release-plans/) site.
 
 ## Additional resources
 
@@ -55,7 +54,7 @@ For information about the bug fixes included in each of the updates that are par
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 2 plan](/dynamics365-release-plan/2020wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Supply Chain Management features
 

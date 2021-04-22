@@ -4,7 +4,6 @@
 title: Maintain employee injury and illness information
 description: It is recommended to complete the 'Setup injury and illness' task guide first, as some of the setup information is used here. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

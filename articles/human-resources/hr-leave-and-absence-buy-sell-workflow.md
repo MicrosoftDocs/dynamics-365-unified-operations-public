@@ -4,7 +4,6 @@
 title: Create a buy and sell leave request workflow
 description: Create a buy and sell leave request workflow to manage to buy and sell leave requests consistently in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: 
@@ -49,7 +48,7 @@ You can create a workflow in Dynamics 365 Human Resources to consistently manage
 
 4. When the **Open this file?** message box appears, select **Open** and sign in with your company credentials.
 
-5. Use the workflow editor to create a workflow for your leave requests. For more information about working with workflows, see [Create workflows overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)
+5. Use the workflow editor to create a workflow for your leave requests. For more information about working with workflows, see [Create workflows overview](../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=%2fdynamics365%2fcommerce%2ftoc.json.)
 
 ## Leave and absence request workflow data elements
 
@@ -78,7 +77,7 @@ You can use the following data elements to create conditional or automatic appro
 
 These examples show how you can create different types of workflow conditions by using these data elements:
 
-- Use **Submitted by Human resources** and **Submitted by manager** in an automatic action to automatically approve buy and sell leave requests that these roles submit on behalf of employees. For more information about automatic actions, see [Configure approval processes in a workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow).
+- Use **Submitted by Human resources** and **Submitted by manager** in an automatic action to automatically approve buy and sell leave requests that these roles submit on behalf of employees. For more information about automatic actions, see [Configure approval processes in a workflow](../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md).
 
 - Use **Leave type** in a conditional statement or automatic action to control how the workflow routes requests with certain leave types.
 

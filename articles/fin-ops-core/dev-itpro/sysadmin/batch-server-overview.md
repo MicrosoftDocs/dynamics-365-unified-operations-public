@@ -4,7 +4,6 @@
 title: Batch processing and batch servers
 description: This topic describes batch processing and batch servers, and how to plan for their use.
 author: Peakerbl
-manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Customer invoices and return sales orders in Eastern European countries
 description: This topic describes how to set up information for customer invoices and return sales orders in Eastern European countries.
 author: epopov
-manager: annbe
 ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 

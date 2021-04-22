@@ -2,9 +2,8 @@
 # required metadata
 
 title: Generate and work with pay statements
-description: This topic describes the process for generating pay statements. It also describes other tasks, such as reversing a pay statement, that you might have to complete after you generate pay statements.
+description: This topic describes the process for generating pay statements.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Configuration data projects
 description: This topic describes configuration data projects and configuration data templates.
 author: mikefalkner
-manager: AnnBe
 ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 

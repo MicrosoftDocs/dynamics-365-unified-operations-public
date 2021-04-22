@@ -4,7 +4,6 @@
 title: Identify a hypothesis and determine metrics for an experiment
 description: This topic describes how to identify the hypothesis and success metrics for an experiment you'll run on an e-Commerce website in Dynamics 365 Commerce.
 author:  sushma-rao 
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 

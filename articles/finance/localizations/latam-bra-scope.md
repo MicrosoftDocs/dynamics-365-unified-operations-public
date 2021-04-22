@@ -4,7 +4,6 @@
 title: Scope of the Brazilian localization
 description: This topic describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil. 
 author: sndray
-manager: AnnBe
 ms.date: 03/25/2020
 ms.topic: article
 ms.prod: 
@@ -60,7 +59,7 @@ In general, the Microsoft strategy for addressing the tax, financial, accounting
 
 - They implement the federal tax requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section of this topic.
 - They implement, for the following states, the state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section: São Paulo (SP), Rio de Janeiro (RJ), Paraná (PR), Santa Catarina (SC), and Rio Grande do Sul (RS).
-- They deliver specific new regulatory features through configurations or development of new functionality that implements the federal and state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section, in accordance with the business rules that are specified in this topic and the Microsoft Dynamics roadmap on the [Microsoft Dynamics Localization Portal](https://docs.microsoft.com/dynamics/s-e/).
+- They deliver specific new regulatory features through configurations or development of new functionality that implements the federal and state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section, in accordance with the business rules that are specified in this topic and the Microsoft Dynamics roadmap on the [Microsoft Dynamics Localization Portal](/dynamics/s-e/).
 - They deliver specific new regulatory features in the most recent service pack that is available, or in a new service pack, for supported versions of Microsoft Dynamics.
 - They apply National Standards and competitive features that Microsoft, at its sole discretion, determines to be necessary or appropriate, based on business needs in the region.
 - They don't focus on the requirements of specific businesses, segments, verticals, regions, or large enterprises, even when these requirements are required by laws, statutes, or regulations at the federal, state, or city level.
@@ -76,7 +75,7 @@ The user interface (UI) and online Help for Microsoft Dynamics are translated in
 
 The localization scope for Microsoft Dynamics available in Brazil is limited to tax calculation, accounting transactions, issuing/receiving fiscal documents, and issuing fiscal receipts in the following four scenarios: procure to pay, quote to cash, commerce, and regulatory/statutory reporting.
 
-The features that Microsoft delivers and supports as part of the Brazilian localization for Microsoft Dynamics are listed in the [Brazilian localization features](#brazilian-localization-features) section of this topic. Details about each of the features can be found in Help in Microsoft Dynamics, and in white papers that are published on the [Microsoft Dynamics Localization Portal](https://docs.microsoft.com/dynamics/s-e/).
+The features that Microsoft delivers and supports as part of the Brazilian localization for Microsoft Dynamics are listed in the [Brazilian localization features](#brazilian-localization-features) section of this topic. Details about each of the features can be found in Help in Microsoft Dynamics, and in white papers that are published on the [Microsoft Dynamics Localization Portal](/dynamics/s-e/).
 
 ## Market availability
 
@@ -1149,7 +1148,7 @@ The following tax reporting requirements are out of scope for fiscal books for t
 
 ## References
 
-The [Microsoft Dynamics Localization Portal](https://docs.microsoft.com/dynamics/s-e/) provides information about localization features and documents that have been released by Microsoft, and also localization features and documents that are planned for release.
+The [Microsoft Dynamics Localization Portal](/dynamics/s-e/) provides information about localization features and documents that have been released by Microsoft, and also localization features and documents that are planned for release.
 
 ## Notes
 

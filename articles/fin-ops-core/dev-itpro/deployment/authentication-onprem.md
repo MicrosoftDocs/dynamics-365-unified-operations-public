@@ -4,7 +4,6 @@
 title: Authentication in Dynamics 365 Finance + Operations (on-premises)
 description: This topic provides background information about how the authentication process works so that if you have issues you can work to resolve them.
 author: faix
-manager: AnnBe
 ms.date: 11/18/2020
 ms.topic: article
 ms.prod:

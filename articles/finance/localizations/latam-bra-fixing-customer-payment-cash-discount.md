@@ -4,7 +4,6 @@
 title: Enable customer payments and cash discounts
 description: This topic explains how to enable recalculation of cash discounts.
 author: kfend
-manager: AnnBe
 ms.date: 10/16/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Financial dimensions and posting 
 description: When you plan and set up your chart of accounts, you must consider how the various components will work together when you post a document or journal. These components include account structures, advanced rules, and balancing and fixed dimensions. This topic explains what each component is and how the components work together.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
 ms.prod: 
@@ -89,17 +88,17 @@ The default dimension on the journal header will cause department 023 to be appl
 
 However, when the line is posted, the fixed dimension is applied, and the line is posted to department 022. The following illustration shows the posted voucher, where the fixed dimension is applied for the sales account.
 
-[![Voucher transactions](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Voucher transactions with fixed dimension applied](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### Example 2
 
 This example uses the same setup as the first example. However, we will add a second component and use the Department dimension as a balancing dimension. In the following illustration, **Department** is set as the balancing financial dimension for the USMF ledger.
 
-[![Ledger](./media/ledger.png)](./media/ledger.png)
+[![Illustration showing Deparatment as the balancing financial dimension](./media/ledger.png)](./media/ledger.png)
 
 When the same journal header setup is used, and the same transaction is posted, the fixed dimension is applied first. Then the balancing logic is applied to help guarantee that every department has a balanced entry. The following illustration shows voucher transactions that include the balancing entry after the fixed dimension is applied.
 
-[![Voucher transactions](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Voucher transactions after the balancing entry is applied](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### Example 3
 
@@ -125,11 +124,11 @@ Some of the following resources refer to an earlier version of our software. How
 
 [Plan your chart of accounts](plan-chart-of-accounts.md) 
 
-[Planning your chart of accounts in AX 2012 blog](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – This link goes to part 1 of a seven-part series.
+[Planning your chart of accounts in AX 2012 blog](/archive/blogs/axsa/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7) – This link goes to part 1 of a seven-part series.
 
-[Dimension defaulting in accounting distributions](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
+[Dimension defaulting in accounting distributions](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-in-accounting-distributions-part-1-introduction)
 
-[Dimension defaulting in Dimensions framework](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+[Dimension defaulting in Dimensions framework](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

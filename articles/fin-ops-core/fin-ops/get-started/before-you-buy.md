@@ -4,7 +4,6 @@
 title: Before you buy
 description: Step-by-step guidance to use when you're considering purchasing Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce.  
 author: ShellyBakke
-manager: AnnBe
 ms.date: 11/23/2020
 ms.topic: article
 ms.prod: 
@@ -93,7 +92,7 @@ For additional resources, see:
 
 ## Step four: Learn about FastTrack and plan your deployment
 
-Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success. For more information, see [Microsoft FastTrack](fasttrack-dynamics-365-overview.md).
+Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success. For more information, see [Microsoft FastTrack](/dynamics365/fasttrack/).
 
 ## If you are upgrading from Dynamics AX 2012 or migrating from AX 2009
 

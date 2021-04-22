@@ -4,7 +4,6 @@
 title: Help secure mobile workspaces
 description: This topic describes how to limit a user's access to a workspace.
 author: robinarh
-manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 

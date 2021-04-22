@@ -4,7 +4,6 @@
 title: Import ISO20022 direct debit configuration
 description: This procedure demonstrates how to import a customer payment electronic reporting configuration. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

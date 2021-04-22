@@ -5,7 +5,6 @@
 title: Customize image focal points
 description: This topic describes how to customize image focal points in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 

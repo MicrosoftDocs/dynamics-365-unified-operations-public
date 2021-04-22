@@ -4,7 +4,6 @@
 title: Product receipt against purchase orders
 description: This topic describes the various options for registering products as received.
 author: kamaybac
-manager: tfehr
 ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
@@ -70,7 +69,7 @@ Additional resources
 
 [Approve and confirm purchase orders](purchase-order-approval-confirmation.md)
 
-[Overview of vendor invoices](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

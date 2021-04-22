@@ -4,7 +4,6 @@
 title: Deferred expenses register
 description: This topic provides information about how to generate and set up deferrals.
 author: Akroshkina
-manager: anasyash
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 
@@ -47,7 +46,7 @@ Here are some examples of deferrals:
 
 ## Deferrals setup
 
-For more information about how to set up deferrals, see [Set up deferrals (Russia)](https://docs.microsoft.com/dynamics365/finance/localizations/rus-set-up-deferrals).
+For more information about how to set up deferrals, see [Set up deferrals (Russia)](./rus-set-up-deferrals.md).
 
 ### Set up deferral creation when you sell fixed assets
 

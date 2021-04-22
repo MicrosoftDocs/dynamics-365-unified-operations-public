@@ -4,7 +4,6 @@
 title: Module React component file
 description: This topic provides information about the module React component file in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
-manager: annbe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
@@ -31,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.8
 [!include [banner](../includes/banner.md)]
 
 This topic provides information about the module React component file in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 The module React component file is a TypeScript (.ts) file that contains business logic and controls a module's view. The React **render()** method is responsible for generating the module's HTML.  
 

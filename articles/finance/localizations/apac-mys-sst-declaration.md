@@ -4,7 +4,6 @@
 title: SST-02 declaration for Malaysia
 description: This topic explains how to configure and generate the SST-02 return form for Malaysia.
 author: sndray
-manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
@@ -47,7 +46,7 @@ The primary address of the legal entity must be in Malaysia.
 
 In the **Feature management** workspace, turn on the feature that is named **(Malaysia) Category hierarchy for Sales and purchase tax report**.
 
-For more information about how to turn on features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+For more information about how to turn on features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Download Electronic reporting configurations
 

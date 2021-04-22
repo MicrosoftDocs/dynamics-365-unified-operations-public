@@ -4,7 +4,6 @@
 title: Cash and bank management home page
 description: You can use Cash and bank management to maintain the legal entity’s bank accounts and the financial instruments that are associated with those bank accounts. 
 author: panolte
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: 
@@ -91,7 +90,7 @@ print bank data on standard reports.
 
 #### What's new and in development
 
-Go to the [Microsoft Dynamics 365 release plans](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features have been planned. 
+Go to the [Microsoft Dynamics 365 release plans](/dynamics365/release-plans/) to see what new features have been planned. 
 
 #### Blogs
 

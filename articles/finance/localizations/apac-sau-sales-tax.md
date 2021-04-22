@@ -4,7 +4,6 @@
 title: Sales tax for Saudi Arabia
 description: This topic provides information about sales taxes for Saudi Arabia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 

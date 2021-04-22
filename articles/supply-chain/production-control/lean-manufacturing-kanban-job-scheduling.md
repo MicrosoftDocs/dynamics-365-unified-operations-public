@@ -4,7 +4,6 @@
 title: Kanban job scheduling for lean manufacturing
 description: This article provides information about visual control over kanban job scheduling and various ways to schedule kanban jobs.  
 author: cvocph
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

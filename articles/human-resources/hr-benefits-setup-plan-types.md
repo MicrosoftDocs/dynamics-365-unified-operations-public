@@ -4,7 +4,6 @@
 title: Create plan types
 description: A plan type in Microsoft Dynamics 365 Human Resources is a high-level grouping of specific types of benefits. Each plan type has a plan type code that determines rules for the plan type.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 

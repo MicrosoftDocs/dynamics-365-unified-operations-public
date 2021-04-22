@@ -4,7 +4,6 @@
 title: General budget reservations
 description: This topic provides information about general budget reservations for Public sector.
 author: AlexRenney
-manager: AnnBe
 ms.date: 04/25/2019
 ms.topic: article
 ms.prod: 

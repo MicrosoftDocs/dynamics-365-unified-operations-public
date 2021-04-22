@@ -4,7 +4,6 @@
 title: Bills of exchange protest import 
 description: This topic explains how to set up and import Protest information from an electronic Bill of exchange protest file.
 author: neserovleo
-manager: AnnBe
 ms.date: 04/15/2020
 ms.topic: article
 ms.prod: 
@@ -37,7 +36,7 @@ This topic explains how to set up and import Protest information from the electr
 Before you can use the Bill of exchange protest import functionality, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Italy.
-- The Protest handling for bills of exchange feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The Protest handling for bills of exchange feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Import Electronic reporting configurations
 

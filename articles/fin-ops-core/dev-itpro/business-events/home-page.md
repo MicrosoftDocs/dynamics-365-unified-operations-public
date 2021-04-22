@@ -4,7 +4,6 @@
 title: Business events overview
 description: This topic provides information about business events, which allow external systems to receive notifications from Dynamics 365 Finance and Operations apps.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
@@ -200,7 +199,7 @@ The integration requirements and integration solution design for implementations
 - Business events can be consumed using Power Automate, Service Bus, Event Grid, or other endpoint types.
 - Customers must bring their own subscriptions to use Power Automate, Service Bus, Event Grid, or other endpoint types.
 - A business event can be activated in all legal entities or in specific legal entities.
-- A business event can be sent to a unique endpoint or the same endpoints.
+- A business event can be sent to a unique endpoint or multiple endpoints.
 - Power Automate can directly subscribe to business events.
 
 ## Idempotency

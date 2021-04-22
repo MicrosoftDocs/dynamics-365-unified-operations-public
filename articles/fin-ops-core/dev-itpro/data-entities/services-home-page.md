@@ -4,7 +4,6 @@
 title: Service endpoints overview
 description: This topic describes the service endpoints that are available.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 

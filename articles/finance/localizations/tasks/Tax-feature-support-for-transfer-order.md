@@ -4,8 +4,7 @@
 title: Tax feature support for transfer orders
 description: This topic explains the new tax feature support for transfer orders by using the tax calculation service.
 author: kailiang
-manager: tfehr
-ms.date: 03/10/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,8 +30,6 @@ ms.dyn365.ops.version: 10.0.18
 # Tax feature support for transfer orders
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [banner](../../includes/preview-banner.md)]
 
 This topic provides information about tax calculation and posting integration in transfer orders. This functionality lets you set up tax calculation and posting in transfer orders for stock transfers. Under European Union (EU) value-added tax (VAT) regulations, stock transfers are considered intra-community supply and intra-community acquisitions.
 

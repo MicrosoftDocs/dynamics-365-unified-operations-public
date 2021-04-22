@@ -4,7 +4,6 @@
 title: Create a new kanban rule by duplicating an existing kanban rule
 description: This procedure focuses on creating a duplicate of an existing kanban rule. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

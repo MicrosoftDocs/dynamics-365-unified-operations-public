@@ -4,7 +4,6 @@
 title: Auto-release shipment for cross-docking 
 description: This topic describes a cross-docking strategy that lets you automatically release a demand order to the warehouse when the production order that supplies the demand quantity is reported as finished, so that the quantity is moved directly from the production output location to the outbound location.
 author: omulvad
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
@@ -169,7 +168,7 @@ To cross-dock the quantity of finished goods to the outbound location of the ass
 8. On the **Production order** page, on the Action Pane, on the **Production order** tab, in the **Process** group, select **Estimate**, and then select **OK**. The order is estimated, and the raw material quantity is reserved for the production.
 9. On the Action Pane, on the **Production order** tab, in the **Process** group, select **Release**, and then select **OK**. Warehouse pick work is created for the raw materials.
 10. Open and review the work. On the Action Pane, on the **Warehouse** tab, in the **General** group, select **Work details**. Make a note of the work ID.
-11. Sign in to the warehouse app to run work in warehouse 51.
+11. Sign in to the Warehouse Management mobile app to run work in warehouse 51.
 12. Go to **Production** \> **Production pick**.
 13. Enter the work ID to start and complete the raw material picking. 
 

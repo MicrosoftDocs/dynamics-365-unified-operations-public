@@ -4,7 +4,6 @@
 title: NT2020.006 – Intermediary sales digital platform for NF-e
 description: This topic explains how to tag intermediary digital sales for NF-e.
 author: gionoder
-manager: AnnBe
 ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Map configuration tax types - Customs
 description: This topic explains how to map configuration tax types for customs.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 

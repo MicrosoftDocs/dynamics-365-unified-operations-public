@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 for Finance and Operations platform update 20 (September 2018)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 20. This version was released in September 2018.
 author: tonyafehr
-manager: AnnBe
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: 
@@ -40,7 +39,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the October '18 release notes](/dynamics365/release-plans/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Platform update 20 bug fixes
 
@@ -174,7 +173,7 @@ Platform update 20 includes the following extensibility enhancements:
 - Enable Chain of Command for data entities.
 - Enable Chain of Command on nested types within forms, including data sources and controls.
 
-For more information about all the extensibility capabilities, see the [Extensibility home page](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page).
+For more information about all the extensibility capabilities, see the [Extensibility home page](../../dev-itpro/extensibility/extensibility-home-page.md).
 
 ## Performance improvement in the Visual Studio development environment
 

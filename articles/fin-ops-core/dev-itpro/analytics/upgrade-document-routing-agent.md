@@ -3,8 +3,7 @@
 
 title: Update the Document Routing Agent
 description: This topic explains how to update the Document Routing Agent.
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
@@ -20,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

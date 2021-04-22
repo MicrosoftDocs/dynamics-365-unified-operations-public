@@ -4,7 +4,6 @@
 title: Restrictions on costing versions for standard costs
 description: This topic describes the restrictions that apply to a costing version for standard costs. 
 author: AndersGirke
-manager: tfehr
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: 

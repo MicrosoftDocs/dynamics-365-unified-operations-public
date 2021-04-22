@@ -2,10 +2,9 @@
 # required metadata
 
 title: Configure life event types
-description: Microsoft Dynamics 365 Human Resources uses life event types to define events where it is valid to update employee benefits enrollment.
+description: Microsoft Dynamics 365 Human Resources uses life event types to define events where it's valid to update employee benefits enrollment.
 author: andreabichsel
-manager: tfehr
-ms.date: 04/06/2020
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,12 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dynamics 365 Human Resources uses life event types to define events where it is valid to update employee benefits enrollment. For example, getting married or having a child. Each life event type ID may only be associated with one life event type. For example, if you create a life event ID called Address change that is associated with the life event type Employee address change, you can’t create another ID labeled Employee address change and associate it with the life event type Employee address change. 
-
-After you create life event types, you need to associate them with plan types. For more information, see [Create plan types](hr-benefits-setup-plan-types.md).
-
-   > [!NOTE]
-   > When you create a life event, you need to associate it with a plan type. For more information, see [Create plan types](hr-benefits-setup-life-event-types.md).
+Dynamics 365 Human Resources uses life event types to define events where it is valid to update employee benefits enrollment, such as getting married or having a child. Each life event type ID may only be associated with one life event type. For example, if you create a life event ID called Address change that is associated with the life event type Employee address change, you can’t create another ID labeled Employee address change and associate it with the life event type Employee address change. If a life event type isn't associated with a plan type, the life event type won't trigger a life event. For more information, see [Create plan types](hr-benefits-setup-plan-types.md).
 
 ## Create a life event type
 
@@ -58,7 +52,7 @@ After you create life event types, you need to associate them with plan types. F
 
 ## View attached plans
 
-You can see a list of plans that are attached to the selected life event type. Life events are attached to a plan type, and plan types are associated with a plan. 
+You can see a list of plans that are attached to the selected life event type. Life events are attached to a plan type, and plan types are associated with a plan.
 
 1. In the **Benefits management** workspace, under **Setup**, select **Life event types**.
 
@@ -73,27 +67,28 @@ You can choose from the following life events when you create a life event type:
 | Life event | Location | Trigger |
 | --- | --- | --- |
 | **Marital status change** | Worker > Profile > Personal information > Marital status| Change in marital status |
-| **Employment status change** | <ul><li>Worker > Employment</li><li>Employment history page</li></ul> | Change in employment status |
-| **Employee address change** | <ul><li>Worker > Profile > Addresses </li><li>Worker > Personal information > Personal contacts > Address</li></ul> Added, edited, or deleted address |
-| **Dependent change** | <ul><li>Worker > Profile > Personal information > Personal contacts > Add or delete a dependent</li><li>Employee self service</li></ul> | Added or deleted dependent. The personal contact relationship must be child, spouse, domestic partner, or ex-spouse. Updating the **Valid from** date triggers the life event. If you don’t update that date, no life event will trigger. |
-| **Birth or Adoption (dependent)** | <ul><li>Worker > Profile > Personal information > Personal contacts > Dependent details</li><li>Employee self service</li></ul> | **Adoption date** field populated. The birthdate of the child is required. |
+| **Employment status change** | Worker > Employment<br>Employment history page | For a worker with an existing employment detail, creating a new employment detail with a different employment status will trigger a life event.  Updating an existing employment detail with a different employment status will also trigger a life event.  |
+| **Employee address change** | Worker > Profile > Addresses<br>Worker > Personal information > Personal contacts > Address | Change in address. Address must be primary to trigger a life event. |
+| **Dependent change** | Worker > Profile > Personal information > Personal contacts<br>Employee self service | Add a personal contact specifying them as a dependent and defining **Valid from**. Update a personal contact’s dependent **Valid to** information. The personal contact relationship must be child, spouse, domestic partner, or ex-spouse.  |
+| **Birth or Adoption (dependent)** | Worker > Profile > Personal information > Personal contacts<br>Employee self service > Edit personal details > Personal contacts | **Birth date** or **Adoption date** are added or updated. The **Birth date** of the child is required. |
 | **Loss of coverage (Spouse / domestic partner)** | Worker > Profile > Personal information > Personal contacts >  Dependent details > Loss of coverage | **Loss of coverage** selected for a personal contact, along with **Effective date** |
-| Domestic partner employment change | Worker > Profile > Personal information > Personal contacts > Dependent details >Employed. | <ul><li>Dependent details record created and **Personal contact employed** box = Yes</li><li>**Personal contact employed** box changed (Yes or No)</li></ul> |
-| **Leave of absence (Spouse/domestic partner)** | Worker > Profile > Personal information > Personal contacts > Dependent details > Leave of absence | <ul><li>Dependent details record created and **EhrLOAEffectiveDate** filled in</li><li>**personPrivateDetails.EhrIsLOA** is changed (Yes or No)</li><li>**personPrivateDetails.EhrLOAEffectiveDate** is changed</li></ul> |
-| **Change in coverage (Position)** | <ul><li>Worker > Position Assignment > Worker position assignments</li><li>Positions > Positions</li></ul> | <ul><li>Change to the position in the worker position assignment records</li><li>Change of the worker assignment in the position</li></ul> |
-| **Medicare (Employee / dependent)** | Worker > Profile > Personal information > Personal contacts > Dependent details > Medicare effective date | Not automatically triggered when a personal contact enters an effective date. |
-| **Court ordered support** | Worker > Profile > Personal information > Personal contacts > Dependent > Court ordered support (QMSCO/QDRO and effective dates | Doesn't trigger any automatic updates. It doesn't impact eligibility; it records a life event. |
-| **Deceased** | Worker > Profile > Personal information > Deceased date | A deceased date is entered |
-| **Evidence of insurance** | <ul><li>Worker > Worker > Versions > Employment history > Date manager > Benefit details</li><li> Worker > Employment > Benefit Details > Verification Date</li></ul> | <ul><li>A worker enters a verification date</li><li>A worker sets the EvidenceOfInsurability field to **Yes**</li></ul> |
-| **Beneficiary** | Worker > Profile > Personal information > Personal contacts | A personal contact is added and the **Beneficiary** box and **Effective date** are populated. The personal contact must be of type **Child**, **Spouse**, **DomesticPartner**, **Sibling**, **FamilyContact**, **OtherContact**, **Parent**, **BeneficiaryEstate**, **BeneficiaryOrg**, or **BeneficiaryTrust**. |
-| **Employee Medicare** | Worker > Worker > Versions > Employment history > Date manager > Benefit details | <ul><li>**EhrMedicareEligibilityDate** is changed</li><li>**MedicareEligibile** is set to **Yes**</li></ul> |
-| **Birthday** | Worker > Profile > Personal information > Personal contacts > Dependent details > Birth date | A birth date is added or updated (not after Life event change processing). Example: If **Personal contact eligibility options** for a child is set to Age: 26 in Setup > Benefits > Personal contact eligibility options, and if HR personnel run Life event change processing any day after the dependent turns 26, a message appears alerting them that the dependent is no longer eligible for coverage. |
-| **Worker eligibility change (not US-specific)** | <ul><li>Worker > Employment</li><li>Worker > Worker > Versions > Employment history</li></ul> | <ul><li>Employee type, Employment category, or the five user-definable eligibility fields change</li><li>**HcmEmploymentDetail.EhrEmploymentType** changes (only processed for *changed* employment detail records, not processed for *new* employment records, like rehire and termination)</li></ul> |
-| **New eligibility override (not US-specific)** | Human resources advanced > Benefits > Plans > Benefits > Eligibility rule override | Using Life event processing | EhrBenefitEligibilityRuleOverride.ValidFrom |
-| **Eligibility rule override change (not US-specific)** | Human resources advanced > Benefits > Plans > Benefits > Eligibility rule override | Using Life event processing (only catches changes to **ValidFrom** and **ValidTo** fields on the Eligibility rule override) |
-| **Eligibility rule override expiration (not US-specific)** | Human resources advanced > Benefits > Plans > Benefits > Eligibility rule override | Using Life event change processing. For example, if you edit a plan’s eligibility rule override expiration date to be today at 5:00 pm, anytime after 5:00 pm or the following days, and then run Life event change processing, a message appears saying that the eligibility rule override has expired. |
-| **New benefit plan (not US-specific)** | Human resources advanced > Benefits > Plans > New | <ul><li>Eligibility options are added to a current plan</li><li>A new plan with eligibility options attached is added</li></ul></br></br>HR personnel should run Life event eligibility processing in this instance. |
-| **Eligibility rule change (not US-specific)** | Human resources advanced > Benefits > Rules/options > Eligibility rules | Using Life event eligibility processing. Logged when **EhrBenefitEligibilityRule** records have the following values changed: **UseEmplCategory**, **UseEmplStatus**, or **UseEmplType**. Only updates life event transactions that already exist for a changed rule or eligibility criteria. |
+| Domestic partner employment change | Worker > Profile > Personal information > Personal contacts > Dependent details > Employed | Creating a personal contact and setting **Employed** to **Yes**. Updating a personal contact and changing **Employed**.  |
+| **Leave of absence (Spouse/domestic partner)** | Worker > Profile > Personal information > Personal contacts > Dependent details > Leave of absence | Personal contact created and **Leave of absence effective date** is defined. Personal contact **Leave of absence** is updated. Personal contact **Leave of absence effective date** is updated.  |
+| **Change in coverage (Position)** | Worker > Position Assignment > Worker position assignments<br>Positions > Positions | Change to the position in the worker position assignment records. Change of the worker assignment in the position. |
+| **Change in coverage (salary)** | Worker > Compensation > Fixed plan<br>Worker > Personal information > Benefits annual salary | If Benefits management > Human resources shared parameters > Benefits > Benefits annual salary isn't enabled, updating Worker > Compensation > Fixed plan will create a life event. If Benefits management > Human resources shared parameters > Benefits > Benefits annual salary is enabled, updating Worker > Personal Information > Benefits annual salary will create a life event. |
+| **Medicare (Employee / dependent)** | Worker > Profile > Personal information > Personal contacts > Dependent details > Medicare effective date | Adding or updating **Medicare effective** date for a personal contact creates this life event. |
+| **Court ordered support** | Worker > Profile > Personal information > Personal contacts > Dependent > Court ordered support (QMSCO/QDRO and effective dates | When creating a personal contact, a life event will be created if **Court ordered support** is **Yes**. Updating **Court ordered support** or **Court ordered expiration date** will also trigger a life event. |
+| **Deceased** | Worker > Profile > Personal information > Deceased date | A deceased date is entered or updated. |
+| **Evidence of insurance** | Worker > Worker > Versions > Employment history > Date manager > Benefit details | **Evidence of insurability** is set to **Yes**. **Evidence of insurability verification date** is defined. |
+| **Beneficiary** | Worker > Profile > Personal information > Personal contacts | A personal contact is added and the **Beneficiary** box and **Effective date** are populated. The personal contact must be of type **Child**, **Spouse**, **DomesticPartner**, **Sibling**, **FamilyContact**, **OtherContact**, or **Parent**. |
+| **Employee Medicare** | Worker > Worker > Versions > Employment history > Date manager > Benefit details | **Medicare eligible** is set to **Yes**. **Medicare eligibility date** is changed. |
+| **Birthday** | Benefits management > Life event change processing | These life events are created from **Life event change processing**. The process analyzes the chosen period and legal entity and finds associated workers. It calculates their last birthday and creates a birthday life event if one hasn't already been created. |
+| **Worker eligibility change (not US-specific)** | Worker > Employment<br>Worker > Worker > Versions > Employment history | Creates a life event when:<br><ul><li>Creating a new employment, and there's a previous employment, and the worker type changes.</li><li>Creating a new employment detail, and there's a previous employment detail, and the employment type or employment category changes.</li><li>Updating an employment record and a different worker type is defined.</li><li>Updating an employment detail record and a different employment type or category is specified.</li></ul> |
+| **New eligibility override (not US-specific)** | Human resources advanced > Benefits > Plans > Benefits > Eligibility rule override | Using Life event processing<br>Creating a new benefit plan eligibility override for a worker triggers this life event.<br>BenefitEligibilityRuleOverride.ValidFrom. |
+| **Eligibility rule override change (not US-specific)** | Human resources advanced > Benefits > Plans > Benefits > Eligibility rule override | Updating **Valid from** or **Valid to** on a benefit plan eligibility override triggers this life event. |
+| **Eligibility rule override expiration (not US-specific)** | Benefits management > Life event change processing  | These life events are created from **Life event change processing**. The process analyzes the chosen period and legal entity and finds associated benefit plan eligibility overrides. It creates life events if the overrides have expired. |
+| **New benefit plan (not US-specific)** | Human resources advanced > Benefits > Plans > New | Eligibility options are added to a current plan. A new plan with eligibility options attached is added.</br></br>HR personnel should run Life event eligibility processing in this instance. |
+| **Eligibility rule change (not US-specific)** | Benefits management > Eligibility rules | Using Life event eligibility processing. Logged when **BenefitEligibilityRule** records have the following values changed: **UseEmplCategory**, **UseEmplStatus**, or **UseEmplType**. Only updates life event transactions that already exist for a changed rule or eligibility criteria. |
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

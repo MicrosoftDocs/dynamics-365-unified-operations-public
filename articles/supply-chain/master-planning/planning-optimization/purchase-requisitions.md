@@ -4,7 +4,6 @@
 title: Purchase requisitions
 description: This topic describes how purchase requisitions are supported in Planning Optimization.
 author: ChristianRytt
-manager: tfehr
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
