@@ -762,6 +762,8 @@
           href: notifications-pos.md
         - name: Sell continuity programs and process sales orders
           href: tasks/use-continuity-program.md
+        - name: Enable customer check-in notifications in point of sale (POS)
+          href: enable-customer-check-in.md
       - name: Returns  
         items:
         - name: Linked refunds
@@ -924,6 +926,8 @@
           href: manage-csp.md
         - name: Opt out of web activity event collection
           href: web-activity-opt-out.md
+        - name: Apply unit of measure settings
+          href: unit-of-measure.md
       - name: Manage your site content 
         items:
         - name: Ways to add content
@@ -1094,6 +1098,8 @@
             href: delivery-options-module.md
           - name: Pickup information module
             href: pickup-info-module.md
+          - name: Check-in for pickup module
+            href: check-in-pickup-module.md
           - name: Order details module
             href: order-confirmation-module.md 
           - name: Gift card module
@@ -1196,6 +1202,8 @@
         href: store-performance-information.md
       - name: Set up Recency, Frequency, and Monetary (RFM) analysis
         href: set-up-rfm-analysis.md
+      - name: Configure gift with purchase promotions
+        href: gift-with-purchase.md
     - name: Globalization
       items:
       - name: Fiscal integration overview for Commerce channel
