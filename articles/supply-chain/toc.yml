@@ -3333,7 +3333,7 @@
           href: troubleshooting/sales/trying-to-to-create-.md
       - name: Transportation management
         items:
-        - name: When you setup a Reconciliation reason in Transportation managementit is not supported to add Cost center or any other dimension in credit account except main account
+        - name: Can only add the main account as the credit account for reconciliation reasons
           href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:

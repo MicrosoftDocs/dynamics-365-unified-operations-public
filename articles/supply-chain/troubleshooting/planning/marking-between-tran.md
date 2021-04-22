@@ -1,6 +1,6 @@
 ---
-title: Marking between Transfer order receipt and batch order is not working correctly when using "Firm and consolidate"
-description: Marking between Transfer order receipt and batch order is not working correctly when using "Firm and consolidate"
+title: Incorrect marking between transfer order receipt and batch order when firming
+description: Marking between transfer order receipt and batch order is not working correctly when using "Firm and consolidate"
 author: ChristianRytt
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,13 +13,13 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 <!-- KFM: This topic is not clear. Please clarify or remove. -->
-# Marking between transfer order receipt and batch order is not working correctly when using "Firm and consolidate"
+# Incorrect marking between transfer order receipt and batch order when firming
 
 KB Number: 4612127
 
 ## Symptoms
 <!-- KFM: In what way does it work incorrectly? -->
-Marking between Transfer order receipt and batch order is not working correctly when using "Firm and consolidate".
+Marking between transfer order receipt and batch order is not working correctly when using *Firm and consolidate*.
 
 ## Resolution
 <!-- KFM: More detail is needed. Where are these settings? Which setting needs to be changed on Master planning parameters? -->
