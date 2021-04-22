@@ -320,7 +320,7 @@ For the storefront, the gift card must also be included in the storefront's asso
 
 ### Set up notification emails for virtual gift cards
 
-For information about email setup, see [Configure email functionality](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/configure-email-functionality-in-microsoft-dynamics-ax).
+For information about email setup, see [Configure email functionality](/dynamicsax-2012/appuser-itpro/configure-email-functionality-in-microsoft-dynamics-ax).
 
 For information about how to set up email notifications for Commerce, see [Set up an email notification profile](../email-notification-profiles.md).
 

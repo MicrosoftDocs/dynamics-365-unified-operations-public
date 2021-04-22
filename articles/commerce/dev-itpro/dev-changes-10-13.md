@@ -58,7 +58,7 @@ The following features are available across products and users. Some features ap
 
 For a general overview of each application release, always check the "What's new or changed" topics:
 
-- [What's new or changed in Finance and Operations apps home page](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-changed?toc=/dynamics365/commerce/toc.json)
+- [What's new or changed in Finance and Operations apps home page](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=%2fdynamics365%2fcommerce%2ftoc.json)
 - [What's new or changed in Dynamics 365 Commerce](../get-started/whats-new-home-page.md)
 - [What's new and changed in Platform updates](../../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md)
 
