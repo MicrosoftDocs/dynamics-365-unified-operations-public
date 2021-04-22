@@ -54,6 +54,15 @@ Once the app is launched follow the below steps for configuration and activating
 3.	After Saving the URL follow the steps to activate the store commerce app, for detailed steps to activate the app refer [POS activation guide](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-device-activation#activate-a-modern-pos-or-cloud-pos-device-by-using-guided-activation).
 4.	Once the app is activated, login with employee account and perform commerce operations.
 
+### Troubleshooting setup issues:
+
+#### Reset the app:
+
+Suppose if you entered invalid CPOS URL and want to change it or the app get into some error state during activation , then you can restart the process by resetting the app, follow the below steps to reset the app:
++ Right-click the app in the Start menu and Choose More > App settings.
++ Scroll down the app settings page to the “Reset” button.
++ Click “Reset” and acknowledge the confirmation prompt.
+
 ## Customizing the app:
 
 The Store commerce app can be customized using the POS SDK, the POS SDK supports modifying/creating new POS user experience, out of the box functional enhancements or modifications, validations and adding custom feature/functionalities. 
