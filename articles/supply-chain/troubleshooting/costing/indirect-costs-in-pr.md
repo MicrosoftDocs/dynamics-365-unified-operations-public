@@ -19,7 +19,7 @@ KB Number: 4612748
 
 ## Symptoms
 
-The *indirect costs in process* report presents information on production orders that were partially processed and later deleted.
+The 'Indirect costs in process' report presents information on production orders that were partially processed and later deleted.
 
 ## Resolution
 
