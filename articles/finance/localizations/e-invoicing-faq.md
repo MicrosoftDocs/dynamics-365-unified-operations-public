@@ -100,14 +100,14 @@ Yes. For information about the availability of Electronic Invoicing features and
 
 ## Does the Electronic Invoicing service allow a legal entity in Finance or Supply Chain Management that is configured for a specific country to consume electronic invoicing features from different country/regions?
 
-Yes. The electronic invoicing features can be consumed to process business document submissions independent from the country of the legal entity, if:
+Yes. The electronic invoicing features can be consumed to process business document submissions independent from the country of the legal entity, if the following is true:
 
    - The business document being generated uses the appropriate document model mapping.
    - There's a match between the business document and applicability rules configured in the electronic invoicing feature.
 
 ## Does the Electronic Invoicing service use the same configuration and design experience provided by the Electronic reporting module in Finance and Supply Chain Management? 
 
-Yes. The same designer tools that are used in the Electronic reporting module in Finance and Supply Chain Managementused to create and configure data model mapping and file format configurations, are also used in Regulatory Configuration Services (RCS) to create and configure Data model mapping and file format configurations that are used in the configuration of the e-invoicing features.
+Yes. The same designer tools that are used in the Electronic reporting (ER) module in Finance and Supply Chain Management are used to create and configure data model mapping and file format configurations. These designer tools are also used in Regulatory Configuration Services (RCS) to create and configure Data model mapping and file format configurations that are used in the configuration of the e-invoicing features.
 
 ## Can the applicability rules be extended and configured so that they aren't tied to any specific parameter, such as a legal entity?
 
@@ -127,7 +127,7 @@ The focus of the Electronic Invoicing service is to exchange electronic invoice 
 
 ## Does the Electronic Invoicing service support importing or merging customizations made in the ER format configurations from the legacy Electronic invoicing feature?
 
-You can reuse ER format configurations in the Electronic Invoicing service. However, the ER format configuration must be derived from the same ER invoice model mapping the electronic invoice feature was designed to use, and which is configured in the Finance or Supply Chain Management to generate the business documents.
+You can reuse ER format configurations in the Electronic Invoicing service. However, the ER format configuration must be derived from the same ER invoice model mapping the electronic invoice feature was designed to use, and which is configured in Finance or Supply Chain Management to generate the business documents.
 
 ## Does the Electronic Invoicing service support issuing electronic invoices from custom-made tables? If so, how do you create the ER data model configurations for these new tables and entities?
 
@@ -137,9 +137,9 @@ Yes. However, it requires customizing the invoice model mapping and adding the n
 
 Electronic Invoicing supports different web-services end points. You can use configurable integration with REST web services or a number of parametrized country-specific web service integrations. Different endpoints can be configured for the same web-services and APIs using different versions of configurations. For more information, see [List of parameters by action](e-invoicing-setup.md#list-of-parameters-by-action).
 
-## Is Electronic Invoicing integrated with the various invoice operators' APIs from the Nordic countries, or is that something that must be handled on a case-by-case basis?
+## Is Electronic Invoicing integrated with the various invoice operators' APIs from the Nordic countries, or should that be handled on a case-by-case basis?
 
-Microsoft continuously extends functional coverage to provide out-of-the box integrations by using the electronic invoicing features. For more information, see [Availability of electronic invoicing features](e-invoicing-configuration-rcs.md?toc=/dynamics365/finance/toc.json#availability-of-electronic-invoicing-features) with formats and integrations for the most up-to-date information on what integrations are supported.
+Microsoft continuously extends functional coverage to provide out-of-the box integrations by using the electronic invoicing features. For more information about the formats and integrations that are supported, see [Availability of electronic invoicing features](e-invoicing-configuration-rcs.md?toc=/dynamics365/finance/toc.json#availability-of-electronic-invoicing-features).
 
 > [!NOTE] 
 > If you didn't find the answer you are looking for, email your question to the Product Development Team at <D365EInvoicePreview@microsoft.com>. We will either contact you or improve the coverage of this FAQ.
