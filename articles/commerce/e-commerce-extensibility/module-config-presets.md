@@ -35,19 +35,19 @@ This topic covers module configuration presets and how to configure them in Micr
 
 Module configuration presets are default values that are used in Dynamics 365 Commerce site builder when no configuration values have been set at the template or layout level.
 
-Module configuration presets can be created at the module level or within a theme, allowing different sets of data to be used based on the theme selected. If no theme module preset exists for a given theme, Commerce site builder will default to the module-level presets if they exist. If both a module-level preset and a theme preset exist, the theme-level presets will override the module-level presets.
+Module configuration presets can be created at the module level or within a theme. Therefore, different sets of data can be used, depending on the theme that is selected. By default, if no presets exist for a given theme, Commerce site builder uses the module-level presets if they exist. If both module-level presets and theme presets exist, the theme presets override the module-level presets.
 
 ## Module-level configuration presets
 
-The module configuration preset data is stored in a JSON preview file with the name **\<MODULE_NAME\>.preview.json** in a **previews** directory under the module's directory. For example, a custom module named "product-feature" would have its preview file stored at **\src\modules\product-feature\previews\product-feature.preview.json**.
+The data for module configuration presets is stored in a JavaScript Object Notation (JSON) preview file that is stored in a **previews** directory under the module's directory. The file is named **\<MODULE\_NAME\>.preview.json**. For example, the path of the preview file for a custom module that is named "product-feature" is **\\src\\modules\\product-feature\\previews\\product-feature.preview.json**.
 
 ## Theme configuration presets
 
-Themes can also contain module configuration preset files that are used when a theme is selected. The module configuration preset file must be created under the theme directory using the structure **\src\themes\THEME_NAME\previews\modules\\<MODULE_NAME\>\\<MODULE_NAME\>.preview.json**. For example, for a theme called "spring," the "product-feature" module theme configuration preset file would be **\src\themes\spring\previews\modules\product-feature\product-feature.preview.json**. 
+Themes can contain module configuration preset files that are used when a theme is selected. The module configuration preset file must be created under the theme directory. The following structure must be used: **\\src\\themes\\\<THEME\_NAME\>\\previews\\modules\\\<MODULE\_NAME\>\\<MODULE\_NAME\>.preview.json**. For example, for a theme that is named "spring," the path of the configuration preset file for the "product-feature" module is **\\src\\themes\\spring\\previews\\modules\\product-feature\\product-feature.preview.json**.
 
 ## JSON preview file structure
 
-The JSON preview file is configured similarly to a [module mock file](module-mock-file.md) except for images (see note below), as in the following example JSON file.
+The JSON preview file is configured like a [module mock file](module-mock-file.md), except with regard to images (see the note later in this topic). Here is an example of a JSON preview file.
 
 ```json
 {
@@ -61,19 +61,19 @@ The JSON preview file is configured similarly to a [module mock file](module-moc
     }
 }
 ```
+
 ### JSON preview field definitions
 
-- **ID** - Maps to the module ID.
-- **config** - Contains a list of configuration values that are based on the name of the configuration that is stored in the module's definition file.
+- **id** – This field is mapped to the module ID.
+- **config** – This field contains a list of configuration values that are based on the name of the configuration that is stored in the module's definition file.
 
 > [!NOTE]
-> Configuration fields of type **image** are not currently supported.
+> Configuration fields of the **image** type aren't currently supported.
 
 ## Additional resources
 
 [E-commerce architectural overview](architectural-overview.md)
 
 [Module mock file](module-mock-file.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
