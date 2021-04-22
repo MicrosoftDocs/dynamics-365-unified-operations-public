@@ -4,7 +4,7 @@
 title: Business events overview
 description: This topic provides information about business events, which allow external systems to receive notifications from Dynamics 365 Finance and Operations apps.
 author: Sunil-Garg
-ms.date: 11/03/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -235,7 +235,7 @@ this information to subscribe to more specific topics as required.
 include custom fields. This is a developer experience.
 
 ## Role-based security for business events
-Starting in Platform update 29, role-based security can be applied to business events to meet the following requirements using the appropriate security artifact.
+Role-based security can be applied to business events to meet the following requirements using the appropriate security artifact.
 
 | **Requirement**                                                                                                                                | **Privilege**                                 | **Duty**                          |
 |------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|-----------------------------------|
@@ -273,7 +273,7 @@ to business events in the organizations to which they have access to via their r
 
 ### Backward compatibility
 
-To ensure backward compatibility of business events with versions prior to Platform update 29, the following behavior must be understood.
+To ensure backward compatibility, the following behavior must be understood.
 
 -   Role-based security for business events will be disabled by default.
 
