@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources April 19, 2021
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for April 5, 2021.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for April 19, 2021.
 author: marcelbf
 ms.date: 04/19/2021
 ms.topic: article
@@ -62,12 +62,12 @@ The following bug fixes are included in this release.
 | Issue number | Issue |  Description |
 | --- | --- | --- |
 | 552164 | **Saved view** on **Employee self service > Open courses** doesn't work for courses that contain an agenda | If a Saved view is used on Open courses (ESS), and one of the courses has an Agenda attached to it, then the view will no longer show multiple lines for that Course |
-| 560614 | **Benefits > Life event options** show discrepancies in the tooltip documentation and code behavior. | Updated tooltips in Life event options to show correct behavior. |
+| 560614 | **Benefits > Life event options** show discrepancies in the tooltip documentation and code behavior. | Updated tooltips in **Life event options** to show correct behavior. |
 | 560616 | **Benefits > Life event options** are editable in the worker benefit plan, but changes aren't affected. | Updated behavior of Life event option switches to enable or disable, based on dependant options, per tooltip documentation. |
 | 565054 | Unable to view **Workers without employment** list content when **Advanced access** is on. | This release fixes the issue where, when **Advanced access** was turned on, only system admins could view the contents of the **Workers without employment** list. Because this fix is a security change, you'll need to opt in to it in Feature management. Once the feature is on, those roles that have access to the form will see the contents, even though advanced access is on. For more information, see [Workers without employment](hr-personnel-workers-without-employment.md). |
 | 570586 | Leave request validation fails when employment ends before the latest transaction for that worker across all leave plans. | After an employment ends, leave request validation doesn't fail based on employee leave transactions.|
 | 570783 | Enabling and disabling cross company leave in Human Resources shared parameters changes what employees employed in a single company see in leave requests. | Employees employed in a single company see no changes in requesting time off if the parameter is enabled or disabled. |
-| 572343 | Required reason code isn't displayed when the Cross Company leave view feature is enabled. | When the Cross company leave feature is enabled, reason code now displays as expected. |
+| 572343 | Required reason code isn't displayed when the Cross company leave view feature is enabled. | When the Cross company leave feature is enabled, reason code now displays as expected. |
 | 573676 | Can't add **Period** to **Benefits management > Links > Benefit plans**. | Fixed bugs where **Period** couldn't be added or updated on existing **Benefit plan** form. |
 
 ## In preview
@@ -78,7 +78,7 @@ The following new features are in preview. For more information about turning fe
 | --- | --- | --- |
 | Benefits management workspace | [Benefits management workspace (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
 | Leave and absence workflow experience enhancements | [Leave and absence workflow experience enhancements](https://go.microsoft.com/fwlink/?linkid=2147528) | [Request time off](hr-employee-self-service-request-time-off.md)|
-| Enable simplified payroll integration (Payroll integration APIs) | [Enable simplified integration with payroll providers](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Payroll integration API](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-admin-integration-payroll-api-introduction)|
+| Enable simplified payroll integration (Payroll integration APIs) | [Enable simplified integration with payroll providers](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Payroll integration API](hr-admin-integration-payroll-api-introduction.md)|
 
 ## Coming soon
 
