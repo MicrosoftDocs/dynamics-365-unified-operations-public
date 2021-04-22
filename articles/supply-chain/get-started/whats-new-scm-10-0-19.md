@@ -32,7 +32,6 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 | Feature area | Feature | More information |
 |---|---|---|
-| Inventory and logistics | Allow vendors to apply for procurement categories through vendor collaboration  | [Category requests from vendors](../procurement/category-requests-from-vendors.md) |
 | Inventory and logistics | [Contact person data entity export optimization](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | *Not available* |
 | Inventory and logistics | [Incremental enhancements for warehouse execution capabilities with scale units](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Message processor messages](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Warehouse inventory adjustment](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md) |
 | Inventory and logistics | [Lookup functionality for Document introduction and Document conclusion fields on Sales quotation page](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | *Not available* |
@@ -40,7 +39,6 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 | Manufacturing | [Manufacturing execution with edge scale units on your custom hardware](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Deploy edge scale units on custom hardware using LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md).
 | Planning | Query-based planned order firming | [Firm planned orders](../master-planning/planning-optimization/planned-order-firming.md).
 | Product information management | [Variant suggestions page improvements](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Create predefined product variants](../pim/tasks/create-predefined-product-variants.md) |
-
 
 ## New and updated documentation resources
 
