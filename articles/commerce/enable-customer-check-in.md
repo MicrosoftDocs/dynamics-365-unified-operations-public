@@ -69,4 +69,4 @@ After a customer notifies the store that they are present for pickup, they recei
 
 ## Additional resources
 
-[Customer check-in module](check-in-pickup-module.md)
+[Check-in for pickup module](check-in-pickup-module.md)
