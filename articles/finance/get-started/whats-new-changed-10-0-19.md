@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Finance 10.0.19 (July 2021)
-description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.18 preview release.
+description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.19 preview release.
 author: roschlom
 ms.date: 04/23/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.19
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.18. This version has a build number of 10.0.837 and is available as follows:
+This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.19. This version has a build number of 10.0.837 and is available as follows:
 
 - **Preview release:** April 2021
 - **General availability (self-update):** June 2021
@@ -46,15 +46,14 @@ The following features are included in this release. Some of the listed features
 
 ## Globalization changes
 
-- [Tax service – supporting multiple VAT ID (preview)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service--supporting-multiple-vat-id-preview)
-- [Tax service – supporting tax in transfer order (preview)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service--supporting-tax-transfer-order-preview)
-- [Tax service (preview)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service-preview)
-- [XXX](XXX)
+- [Tax service – supporting multiple VAT ID (preview)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service--supporting-multiple-vat-id-preview)
+- [Tax service – supporting tax in transfer order (preview)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service--supporting-tax-transfer-order-preview)
+- [Tax service (preview)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service-preview)
 
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
-Dynamics 365 Finance 10.0.18 includes platform updates. To learn more, see [Platform updates for version 10.0.19 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md). 
+Dynamics 365 Finance 10.0.19 includes platform updates. To learn more, see [Platform updates for version 10.0.19 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md). 
 
 ### Bug fixes 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](*Link not available yet*).
