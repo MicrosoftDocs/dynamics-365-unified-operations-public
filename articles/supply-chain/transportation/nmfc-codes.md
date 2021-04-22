@@ -38,8 +38,8 @@ Before you can create NMFC codes, you must set up all of the LTL classes require
 To create an NMFC code, follow these steps:
 
 1. Follow one of these steps:
-    - Go to  **Warehouse management** \> **Setup** \> **Inventory** \> **NMFC codes**.  
-    - Go to  **Transportation management** \> **Setup** \> **Transportation standards** \> **NMFC codes**.
+    - Go to  **Warehouse management \> Setup \> Inventory \> NMFC codes**.  
+    - Go to  **Transportation management \> Setup \> Transportation standards \> NMFC codes**.
 
 2. Select **New** to create a new NMFC code. Then set the following fields:
 
@@ -52,7 +52,7 @@ To create an NMFC code, follow these steps:
 
 The following example shows how to set up two different NMFC codes for use with different products.
 
-1. Go to **Warehouse management** \> **Setup** \> **Inventory** \> **NMFC codes**.
+1. Go to **Warehouse management \> Setup \> Inventory \> NMFC codes**.
 1. On the Action Pane, select **New**.
 1. On the new line, set the following values:
 
