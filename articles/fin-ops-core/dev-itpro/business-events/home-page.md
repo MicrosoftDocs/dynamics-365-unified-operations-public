@@ -100,31 +100,31 @@ The application doesn't provision the endpoints. It just sends events to the end
 
 To create a new endpoint, select **New**. Then, in the **Endpoint type** field, select the appropriate endpoint type. To create an endpoint to a Service Bus queue, select **Azure Service Bus Queue**.
 
-![Business events new endpoint](../media/businesseventsnewendpoint1.png)
+![To create an endpoint to a Service Bus queue, select **Azure Service Bus Queue**](../media/businesseventsnewendpoint1.png)
 
 Select **Next**, and specify the name of the endpoint and the Service Bus queue. In addition, you must set up Azure Key Vault to provide the secret to the Azure messaging resource. You must also set up the Azure Active Directory (Azure AD) application ID and application secret.
 
-![Business events new endpoint](../media/businesseventsnewendpoint2.png)
+![Specify the name of the endpoint and the Service Bus queue](../media/businesseventsnewendpoint2.png)
 
 In the **Queue Name** field, enter the **Azure Service Bus Queue** name that you created in the Azure Service Bus Queue configuration in Azure.  
 
-![Business events Queue Name](../media/BusinessEventsSBQueueName.PNG)
+![Enter the **Azure Service Bus Queue** name that you created in the Azure Service Bus Queue configuration in Azure](../media/BusinessEventsSBQueueName.PNG)
 
 In the **Azure Active Directory application ID** field, enter the application ID that is created in Azure AD in the Azure portal.
 
-![Business events configure Azure AD](../media/businesseventsaad1.png)
+![Enter the application ID that is created in Azure AD in the Azure portal](../media/businesseventsaad1.png)
 
 In the **Azure application secret** field, enter the secret value for the application.
 
-![Business events configure Azure AD](../media/businesseventsaad2.png)
+![Enter the secret value for the application](../media/businesseventsaad2.png)
 
 In the **Key vault DNS name** field, enter the name from your Key Vault setup.
 
-![Business events configure Azure Key Vault](../media/businesseventskeyvault1.png)
+![Enter the name from your Key Vault setup](../media/businesseventskeyvault1.png)
 
 In the **Key vault secret name** field, enter the secret name for the endpoint resource that must be created in Key Vault.
 
-![Business events configure Azure Key Vault](../media/businesseventskeyvault2.png)
+![Enter the secret name for the endpoint resource that must be created in Key Vault](../media/businesseventskeyvault2.png)
 
 The **Key Vault Secret** value, in Azure, will be the Azure Service Bus **Primary Connection String** value. This value is found in the Azure Service Bus that you configured in **Shared Access Policies > RootManagedSharedAccessKey**.
 
