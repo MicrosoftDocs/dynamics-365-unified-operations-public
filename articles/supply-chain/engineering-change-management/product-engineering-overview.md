@@ -63,7 +63,6 @@ Next, turn on the configuration keys by following these steps.
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.
 1. Expand the **Trade** node
-1. Select the **Engineering Change Management** check box.
 1. If you want to use it, then also select the **Product dimension - Version** check box.
 1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
