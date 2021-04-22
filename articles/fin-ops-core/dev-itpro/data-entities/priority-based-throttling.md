@@ -2,7 +2,7 @@
 # required metadata
 
 title: Priority-based throttling
-description: This topic provides information about priority-based throttling for Odata and custom service-based integrations.
+description: This topic provides information about priority-based throttling for OData and custom service-based integrations.
 author: hasaid
 ms.date: 09/25/2020
 ms.topic: article
@@ -31,14 +31,14 @@ ms.dyn365.ops.version: Platform update 37
 
 [!include [banner](../includes/banner.md)]
 
-> [!Note]
-> Priority-based throttling is enabled by default starting in platform update for Dynamics 365 Fincance 10.0.19. To learn about how you can ready your environment prior to updating to 10.0.19, see [FAQ document](throttling-faq.md). To test this capability, configure the integration priorities on the **Throttling priority mapping** page.
+> [!NOTE]
+> Priority-based throttling is enabled by default starting in Dynamics 365 Finance version 10.0.19. To learn about how you can prepare your environment prior to updating to  version 10.0.19, see [FAQ document](throttling-faq.md). To test this capability, configure the integration priorities on the **Throttling priority mapping** page.
 
-Priority-based throttling introduces service protection settings that prevent the over-utilization of resources to preserve the system's responsiveness and ensure consistent availability and performance for environments running Dynamics 365 Finance and Operations apps.
+Priority-based throttling introduces service protection settings that prevent the over-utilization of resources to preserve the system's responsiveness and ensure consistent availability and performance for environments running Finance and Operations apps.
 
 You have the ability to set relative priority for the OData and custom service-based integrations, depending on your business-critical need for these integrations. The throttling manager will then honor these priorities set for these requests.
 
-- For OData and custom service requests, a 429 error "Too many requests", will be sent when system health and performance are affected. 
+- For OData and custom service requests, an error which states "Too many requests" will be sent when system health and performance are affected. 
 - You can query throttling events on the **Lifecycle Services Monitoring** page.  
 
 The **Throttling Priority Mapping** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. 
@@ -93,7 +93,7 @@ When a request is throttled, the system provides a value indicating the duration
 
 ## Monitoring
 
-To have a successful onboarding experience with the throttling capability, you must also be able to monitor your Odata and custom service integration patterns. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center, contains a collection of monitoring and diagnostics tools that can help ensure that you have an accurate view of the environments you manage. For more information, see [Monitoring and diagnostics tools in Lifecycle Services (LCS)](../lifecycle-services/monitoring-diagnostics.md).
+To have a successful onboarding experience with the throttling capability, you must also be able to monitor your OData and custom service integration patterns. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center, contains a collection of monitoring and diagnostics tools that can help ensure that you have an accurate view of the environments you manage. For more information, see [Monitoring and diagnostics tools in Lifecycle Services (LCS)](../lifecycle-services/monitoring-diagnostics.md).
 
 You can use a set of predefined queries to get raw logs for an issue. You can then export the logs for a more advanced analysis. The following types of queries are available:
 
@@ -106,8 +106,8 @@ You can use a set of predefined queries to get raw logs for an issue. You can th
 2. In the **Environments** section, select the environment to view, and then select **Full details**.
 3. On the **Environment details** page, select **Environment monitoring** to open the Monitoring and diagnostics portal. 
 4. On the **Environment monitoring** page, select the **Activity** tab to view the **Raw logs** page. 
-5. Select the **Query name**, and then select **All throttling events** for all Odata and custom services activities.
-6. Select the **Query name**, and then select **Requests throttled** for all Odata and custom services requests that have been throttled.
+5. Select the **Query name**, and then select **All throttling events** for all OData and custom services activities.
+6. Select the **Query name**, and then select **Requests throttled** for all OData and custom services requests that have been throttled.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
