@@ -4,7 +4,7 @@
 title: Sales tax calculation on general journal lines
 description: This topic explains how sales taxes are calculated for different types of accounts (vendor, customer, ledger, and project) on general journal lines.
 author: EricWang
-ms.date: 08/14/2019
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -123,9 +123,7 @@ This section describes how the sales tax amount sign is calculated.
 
 ![Sales tax transactions page](media/sales-tax-amount-sign.jpg)
 
-The following table shows the generic rule for determining the sign of sales tax amounts in the temporary sales tax table.
-
-## Determine the sales tax direction and amount sign
+The following table shows the generic rule for determining the sales tax direction and sign of sales tax amounts in the temporary sales tax table.
 
 | Journal line amount | Sales tax direction  | Sales tax amount sign |
 |---------------------|----------------------|-----------------------|
@@ -134,7 +132,7 @@ The following table shows the generic rule for determining the sign of sales tax
 | Negative            | Sales Tax Receivable | Negative              |
 | Negative            | Sales Tax Payable    | Positive              |
 
-There is a special rule for vouchers that have only **Project** or **Ledger** lines, when a sales tax group or item sales tax group is selected on the **Ledger** line. This rule is controlled by the feature **Enable independent sales tax calculation feature for general journals**. When this feature is turned off, the tax amount of the **Ledger** line uses the debit/credit direction of the **Project** line. When the feature is turned on, the tax amount of the **Ledger** line uses its own debit/credit direction. The following tables show the rule for each scenario. 
+There is a special rule for vouchers that have only **Project** or **Ledger** lines, when a sales tax group or item sales tax group is selected on the **Ledger** line. This rule is controlled by the feature, **Enable independent sales tax calculation feature for general journals**. When this feature is turned off, the tax amount of the **Ledger** line uses the debit/credit direction of the **Project** line. When the feature is turned on, the tax amount of the **Ledger** line uses its own debit/credit direction. The following tables show the rule for each scenario. 
 
 **Rule when the feature is turned on**
 
