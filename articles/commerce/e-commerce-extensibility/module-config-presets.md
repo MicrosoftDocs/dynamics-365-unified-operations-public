@@ -35,19 +35,19 @@ This topic covers module configuration presets and how to configure them in Micr
 
 Module configuration presets are default values that are used in Commerce site builder when no configuration values are set at the template or layout level.
 
-Module configuration presets can be created at the module level or within a theme. Therefore, different sets of data can be used, depending on the theme that is selected. If no presets exist for a given theme, Commerce site builder uses the module-level presets by default if they exist. If both module-level presets and theme presets exist, the theme presets override the module-level presets.
+Module configuration presets can be created at the module level or within a theme. That way, different sets of data can be used, depending on the theme that is selected. If no presets exist for a given theme, site builder uses the module-level presets by default if they exist. If both module-level presets and theme presets exist, the theme presets override the module-level presets.
 
 ## Module-level configuration presets
 
-The data for module configuration presets is stored in a JavaScript Object Notation (JSON) preview file that is stored in a **previews** directory under the module's directory. The file is named **\<MODULE\_NAME\>.preview.json**. For example, the path of the preview file for a custom module that is named "product-feature" is **\\src\\modules\\product-feature\\previews\\product-feature.preview.json**.
+The data for module configuration presets is stored in a JavaScript Object Notation (JSON) preview file that is stored in a **previews** directory under the module's directory. The file is named **\<MODULE\_NAME\>.preview.json**. For example, the path of the preview file for a custom module that's named "product-feature" is **\\src\\modules\\product-feature\\previews\\product-feature.preview.json**.
 
 ## Theme configuration presets
 
-Themes can contain module configuration preset files that are used when a theme is selected. The module configuration preset file must be created under the theme directory. The following structure must be used: **\\src\\themes\\\<THEME\_NAME\>\\previews\\modules\\\<MODULE\_NAME\>\\<MODULE\_NAME\>.preview.json**. For example, for a theme that is named "spring," the path of the configuration preset file for the "product-feature" module is **\\src\\themes\\spring\\previews\\modules\\product-feature\\product-feature.preview.json**.
+Themes can contain module configuration preset files that are used when a theme is selected. The module configuration preset file must be created under the theme directory. The following structure must be used: **\\src\\themes\\\<THEME\_NAME\>\\previews\\modules\\\<MODULE\_NAME\>\\<MODULE\_NAME\>.preview.json**. For example, for a theme that's named "spring," the path of the configuration preset file for the "product-feature" module is **\\src\\themes\\spring\\previews\\modules\\product-feature\\product-feature.preview.json**.
 
 ## JSON preview file structure
 
-The JSON preview file is configured like a [module mock file](module-mock-file.md), except regarding images (see the note later in this topic). Here's an example of a JSON preview file.
+The JSON preview file is configured like a [module mock file](module-mock-file.md), except for images (see the note later in this topic). Here's an example of a JSON preview file.
 
 ```json
 {
