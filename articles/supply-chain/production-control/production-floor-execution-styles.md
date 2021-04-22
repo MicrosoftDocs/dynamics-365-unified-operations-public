@@ -233,3 +233,5 @@ Styles can be applied to the **Cancel** button in a dialog only if the following
 
 + The button is contained in a form group.
 + The group name starts with **CancelButtonGroup**.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
