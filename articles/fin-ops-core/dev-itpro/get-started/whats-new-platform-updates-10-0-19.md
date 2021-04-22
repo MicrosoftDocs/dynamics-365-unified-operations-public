@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.19
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists the features that are included in the platform updates for version 10.0.19 of Finance and Operations apps. This version has a build number of 7.0.XXXX and is available on the following schedule:
+This topic lists the features that are included in the platform updates for version 10.0.19 of Finance and Operations apps. This version has a build number of 7.0.6009 and is available on the following schedule:
 
 - **Preview of release:** April 2021
 - **General availability of release (self-update):** June 2021
@@ -46,12 +46,6 @@ The following features are included in this release. Some of the listed features
 
 -  Visual update for wizards<br> - This feature modernizes the visual appearance of wizards in Finance and Operations apps and more closely aligns the wizard user experience to other Dynamics 365 products.
 
--  [Feature](URL to feature in Release Plans)<br>- For more information, see [Name of article](URL to article that contains more details about feature).
-
--  [Feature](URL to feature in Release Plans)<br>- For more information, see [Name of article](URL to article that contains more details about feature).
-
--  [Feature](URL to feature in Release Plans)<br>- For more information, see [Name of article](URL to article that contains more details about feature).
-
 Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 ## Additional resources
@@ -64,7 +58,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2021 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2021 release wave 1 plan](/dynamics365-release-plan/2021wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated platform features
 
