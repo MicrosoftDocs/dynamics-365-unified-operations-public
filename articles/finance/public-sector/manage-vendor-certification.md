@@ -40,8 +40,8 @@ To add a new certification, click the **Add** button that's located above the **
 - Enter a liability amount if applicable. 
 - Enter an effective date. 
 - Enter an expiration date.  
-- Comments are optional.
- 
+- Comments are optional.<br> 
+
 If there are documents related to the specific certification, you can attach them by clicking the **Document** button.
 
 Certifications that are entered by the vendor on this page will be assigned a source of “Vendor”. You can enter certificate information on the vendors behalf under vendor bank accounts, and the information will display here and the source will display **Customer**.
