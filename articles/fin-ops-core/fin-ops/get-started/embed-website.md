@@ -24,7 +24,7 @@ ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 33
 ---
 
-# (Preview) Embed third-party apps
+# Embed third-party apps
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
