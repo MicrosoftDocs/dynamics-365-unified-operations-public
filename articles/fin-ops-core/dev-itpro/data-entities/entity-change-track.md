@@ -34,8 +34,8 @@ Change tracking enables incremental export of data from Finance and Operations a
 
 Change tracking can be enabled for both bring your own database (BYOD) and non-BYOD scenarios. This includes retrieving record changes through Dataverse virtual entities.
 
-    > [!NOTE]
-    > Change tracking will track record deletion only for bring your own database (BYOD) and Dataverse virtual entity use cases, if the entity supports it. Other non-BYOD scenarios will not include tracking record deletion. Deletion is tracked only for the root data source in the entity.
+> [!NOTE]
+> Change tracking will track record deletion only for bring your own database (BYOD) and Dataverse virtual entity use cases, if the entity supports it. Other non-BYOD scenarios will not include tracking record deletion. Deletion is tracked only for the root data source in the entity.
 
 ## Enable change tracking for BYOD
 You can enable change tracking when you publish one or more entities to a data store (BYOD).
