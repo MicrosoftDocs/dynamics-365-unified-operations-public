@@ -4,11 +4,9 @@
 title: Unique certification
 description: This topic provides information about the Unique certification for companies in Italy.
 author: ilkond
-manager: AnnBe
 ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -43,7 +41,7 @@ In Italy, withholding tax agents must electronically communicate the Unique cert
 The following prerequisites must be met before the functionality can be used:
 
 - The primary address of the legal entity must be in Italy.
-- The **Unique certification** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The **Unique certification** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up the Unique certification
 
@@ -73,7 +71,7 @@ The format of the telematics model of unique certification has been updated acco
 
 Values that are specified on **Setup Unique Certification values** page, and marked with **Yes** in the **Active** column, will be available in the related lookup fields on the **Unique certification** page. Use this page for future regulatory upgrades of the unique certification to add or delete values.
 
-You can import the initial set of values for **Setup Unique Certification values** by using the **Setup Unique certification values** (UniqueCertificationValueEntity) entity and the Data management framework. For more information, see [Data import and export jobs overview](../../dev-itpro/data-entities/data-import-export-job.md). You can download the initial set of values for the **Setup Unique Certification values** from the **IT SetupUniqueCertificationValues** file in the **Data package** asset data type section of the **Shared asset library** in the [LCS portal](https://lcs.dynamics.com/v2) and then import it in to the Data management framework.
+You can import the initial set of values for **Setup Unique Certification values** by using the **Setup Unique certification values** (UniqueCertificationValueEntity) entity and the Data management framework. For more information, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md). You can download the initial set of values for the **Setup Unique Certification values** from the **IT SetupUniqueCertificationValues** file in the **Data package** asset data type section of the **Shared asset library** in the [LCS portal](https://lcs.dynamics.com/v2) and then import it in to the Data management framework.
 
 The source data used for import can be presented as a Microsoft Excel file that has the following column names:
 

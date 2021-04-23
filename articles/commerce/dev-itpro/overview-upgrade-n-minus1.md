@@ -2,13 +2,11 @@
 # required metadata
 
 title: Upgrade and N-1 support for Commerce
-description: Upgrade support and N-1 support have been enabled in the release of Dynamics 365 Commerce. N-1 support lets customers who have stores that run AX 2012 R3 CU10 work with Dynamics 365 Commerce headquarters after an upgrade. 
+description: Upgrade support and N-1 support have been enabled in the release of Dynamics 365 Commerce.
 author: athinesh99
-manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -42,19 +40,18 @@ The following features let customers upgrade in a seamless manner:
 - The upgrade process has enhanced error handling and messaging, so that customers can quickly debug issues.
 - Users can use tools to bring forward custom X++ code in their existing Headquarters to the upgraded version of the headquarters.
 
-The upgrade procedure is largely the same as the procedure for upgrading Retail to the latest version. For details about upgrade in general, see [Upgrade overview: AX 2012 to Dynamics 365 Retail](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md).
+The upgrade procedure is largely the same as the procedure for upgrading Retail to the latest version. For details about upgrade in general, see [Upgrade overview: AX 2012 to Dynamics 365 Retail](../../fin-ops-core/dev-itpro/migration-upgrade/upgrade-overview-2012.md).
 
 Planned downtime is required. Upgrade analysis is done first. The upgrade analysis runs against the Microsoft Dynamics AX 2012 database and is based on the Microsoft Dynamics Lifecycle Services (LCS) Diagnostic service. This step identifies tasks that can help make upgrade faster and less expensive. It also identifies the required SQL configuration, data headquarters cleanup, and deprecated features.
   
 The actual data upgrade process then occurs. The AX 2012 database is moved to Microsoft Azure SQL Database, and then the data upgrade package is run as usual, through the runbook process. Upgrade validation is then done. A validation tool is run against the upgraded environment before it's used. This tool does an automated smoke test to verify that the service is running and accessible, row counts match, financials and inventory reconcile, and so on.
- 
+
 Most of the post-upgrade configuration for channels requires few manual steps. Customers can then use the pre-upgrade and post-upgrade checklists to learn about the tasks that must be completed. The post-upgrade tasks include initiating a full sync to the stores from the upgraded database, validating channels, registers, and devices against the upgraded database, validating transaction synchronization, and validating that N-1 support is in place.
- 
+
 For N-1 support, the customer must install the N-1 package in Commerce headquarters. No setup is required in the stores. This installation must be done during the upgrade window, after the N-1-related configuration has been completed.
 
 After the Commerce headquarters upgrade and N-1 setup are completed, the N-1 store components can communicate with Commerce headquarters. No channel-side components must be installed for N-1 support. However, to enable the N-1 store to communicate with Commerce headquarters, cashiers must change their password the first time that they sign in.
- 
-For instructions for N-1 installation, see [Phased Rollout (N-1) installation, configuration, and cutover guide](n-1-installation-configuration.md).
 
+For instructions for N-1 installation, see [Phased Rollout (N-1) installation, configuration, and cutover guide](n-1-installation-configuration.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

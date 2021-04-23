@@ -4,11 +4,9 @@
 title: Plan loads and shipments using the Load planning workbench
 description: This topic shows how to use the load planning workbench to create a load for a sales order. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 07/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

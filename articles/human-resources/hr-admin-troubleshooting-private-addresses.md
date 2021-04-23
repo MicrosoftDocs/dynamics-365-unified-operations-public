@@ -4,11 +4,9 @@
 title: Access to private addresses by security role
 description: This article explains how to resolve the issue where a customer can't access private addresses.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata

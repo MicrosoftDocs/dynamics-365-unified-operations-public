@@ -4,11 +4,9 @@
 title: Letter of guarantee transaction
 description: This procedure walks through the Letter of guarantee process. 
 author: kweekley
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

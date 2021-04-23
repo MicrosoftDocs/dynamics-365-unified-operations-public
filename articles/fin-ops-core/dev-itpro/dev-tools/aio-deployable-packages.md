@@ -1,26 +1,13 @@
 ---
-# required metadata
-
 title: All-in-one deployable packages
 description: This topic describes the all-in-one deployable package concept and its use.
 author: laneswenka
-manager: AnnBe
 ms.date: 09/23/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang:
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.9

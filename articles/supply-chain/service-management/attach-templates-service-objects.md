@@ -4,11 +4,9 @@
 title: Attach templates to service objects   
 description: A template bill of materials (BOM) can be attached to a service object relation. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

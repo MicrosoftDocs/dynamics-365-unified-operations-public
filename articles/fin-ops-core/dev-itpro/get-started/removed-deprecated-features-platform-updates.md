@@ -4,7 +4,6 @@
 title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
-manager: AnnBe
 ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
@@ -37,13 +36,13 @@ This topic describes features that have been removed, or that are planned for re
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
-Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
 ## Feature removed effective January 28, 2021
 
 ### Batch job to handle SQL index defragmentation
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | In order to reduce the overhead of operating, monitoring, and maintaining the index management by customers, this feature has been removed. |
 | **Replaced by another feature?**   | Going forward, the index maintenance will be performed by Microsoft services. This will happen continuously without affecting the user workloads. |
@@ -54,12 +53,10 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ## Platform updates for version 10.0.17 of Finance and Operations apps
 
-> [!IMPORTANT]
-> Version 10.0.17 is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
 ### Visual Studio 2015
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | To support the latest versions of Visual Studio, some changes have to be made to the X++ extensions for Visual Studio. These changes are incompatible with Visual Studio 2015. |
 | **Replaced by another feature?**   | Visual Studio 2017 will replace Visual Studio 2015 as the deployed and required version. |
@@ -69,7 +66,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ### User avatar 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The user avatar that displays on the right side of the navigation bar was retrieved using an API from the Dynamics 365 header control, which has been deprecated. |
 | **Replaced by another feature?**   | Users will see their initials in a circle in the navigation bar instead. This is the same visual currently used on development machines. |
@@ -79,7 +76,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ### Enterprise Portal (EP) deprecation  
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The metadata artifacts associated with Dynamics AX 2012 Enterprise Portal (EP) have been deprecated, as EP was never supported in the Finance and Operations apps. |
 | **Replaced by another feature?**   | No |
@@ -91,7 +88,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ### Internet Explorer 11 support for Dynamics 365 is deprecated
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won’t be supported after August 2021.<br><br>This will impact customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
 | **Replaced by another feature?**   | We recommend that customers transition to Microsoft Edge.|
@@ -102,7 +99,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ### Visual Studio add-in to apply metadata hotfixes
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Metadata hotfixes are no longer supported with the [One Version](../../fin-ops/get-started/one-version.md) service updates that were introduced in July 2018 with version 8.1. |
 | **Replaced by another feature?**   | Individual metadata hotfixes are not available for supported versions. Cumulative quality updates are applied instead. |
@@ -115,7 +112,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ### Online users page 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | This is a legacy page that was built for previous client/server architecture. The information on this page is not always accurate, which can be confusing and misleading. |
 | **Replaced by another feature?**   | We will provide a new page in a future update.|
@@ -129,17 +126,17 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ### Custom code defined in SSRS report properties 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | In general, custom code offers limited benefits while at the same time, requires significant resourcing and compute to support. Custom code is primarily used by report authors to call public methods from a custom code assembly. However, the cloud-hosted service does not support references to custom assemblies for SSRS reports. |
-| **Replaced by another feature?**   | Report authors may choose to continue referencing public .NET APIs for Math, Conversion, and Format operations from any textbox expression. For more information, see [Add Code to a Report (SSRS)](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Replaced by another feature?**   | Report authors may choose to continue referencing public .NET APIs for Math, Conversion, and Format operations from any textbox expression. For more information, see [Add Code to a Report (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
 | **Product areas affected**         | Subset of application report designs defined in RDL that contain custom code. |
 | **Deployment option**              | All |
 | **Status**                         | With version 10.0.13, the compiler will begin issuing a warning for instances where custom code is detected in a SSRS report definition. To fix the issue, open the report design definition and remove all custom code artifacts. This warning will be replaced with a compiler error in a future update.   |
 
 ### Upgrade of three jQuery component libraries 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Three jQuery component libraries are being updated for security fixes and to maintain currency.   
 | **Replaced by another feature?**   | The following libraries are being affected: jQuery (to version 3.5.0 from version 2.1.4), jQuery UI (to version 1.12.1 from version 1.11.4), jQuery qTip (to version 3.0.3 from 2.2.1). Migration guidance has been provided online by jQuery.  |
@@ -149,7 +146,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ### Existing grid control/forceLegacyGrid() API
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The existing grid control is being replaced by the new grid control. |
 | **Replaced by another feature?**   | The [new grid control](../..//fin-ops/get-started/grid-capabilities.md) |
@@ -159,7 +156,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ### Personalization without saved views 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The personalization subsystem has been overhauled with the saved views feature, so that it has better performance and offers additional capabilities. |
 | **Replaced by another feature?**   | Saved views |
@@ -172,7 +169,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ### Grid or group control form extensions containing invalid field references
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The data group property on grid or group controls is used to automatically show all the fields of a field group. A grid or group control added by extension could contain fields that are no longer defined on the field group, or it might be missing fields that are defined on the field group. This can cause inconsistent behavior at runtime. Platform updates for version 10.0.12 of Finance and Operations apps now categorize this issue as a compiler *warning*. To fix this issue, open the form extension and save it.
 | **Replaced by another feature?**   | This compiler warning will be replaced with a compiler error in a future update. |
@@ -184,17 +181,17 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ### Explicit safe lists for self-service environments
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The process for moving IP to safe lists has changed. Self-service no longer supports IP safe lists. |
-| **Replaced by another feature?**   | For more information, see [Configuring Azure Active Directory Conditional Access](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
+| **Replaced by another feature?**   | For more information, see [Configuring Azure Active Directory Conditional Access](/appcenter/general/configuring-aad-conditional-access).|
 | **Product areas affected**         | Security |
 | **Deployment option**              | Cloud |
 | **Status**                         | **Deprecated:** This feature is fully-deprecated for self-service deployments. |
 
 ### Visual Studio 2015
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | To support the latest versions of Visual Studio, some changes have to be made to the X++ extensions for Visual Studio. These changes are incompatible with Visual Studio 2015. |
 | **Replaced by another feature?**   | Visual Studio 2017 will replace Visual Studio 2015 as the deployed and required version. |
@@ -204,7 +201,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ### Field groups containing invalid field references
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Field groups in table metadata definitions can contain field references that aren't valid. If these field groups are deployed, they can cause runtime failures in Financial Reporting and Microsoft SQL Server Reporting Services (SSRS). Platform update 23 introduced a compiler *warning* that enabled this metadata issue to be addressed. Platform updates for version 10.0.11 of Finance and Operations apps categorize this issue as a compiler *error*.<p>To fix this issue, follow these steps.</p><ol><li>Remove the invalid field reference from the table field group definition.</li><li>Recompile.</li><li>Make sure that any errors are addressed.</li></ol> |
 | **Replaced by another feature?**   | This compiler error permanently replaces the compiler warning.  |
@@ -214,7 +211,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ### ISV licenses created by using the SHA1 hashing algorithm
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The process for creating independent software vendor (ISV) licenses has changed. For more information, see [Independent software vendor (ISV) licensing](../dev-tools/isv-licensing.md#appendix-create-self-signed-certificates-for-test-purposes). |
 | **Replaced by another feature?**   | Yes. Use Windows PowerShell to create licenses. |
@@ -225,22 +222,24 @@ Detailed information about objects in Finance and Operations apps can be found i
 ## Platform update 32
 
 ### Workflow request change dialog box no longer includes user selection drop-down list
-|   |  |
+
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | This was a security issue because the request for change could be sent to an unintended user. This was also a usability issue because it forced the user to determine who the workflow originator was and manually select them.  |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Workflow |
 | **Deployment option**              | All |
-| **Status**                         | The user selection drop-down list was removed from the request change dialog box in Platform update 32. Request change requests will be automatically sent to the originator as intended. For more information about this functionality, see [Actions in workflow approval processes](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change). |
+| **Status**                         | The user selection drop-down list was removed from the request change dialog box in Platform update 32. Request change requests will be automatically sent to the originator as intended. For more information about this functionality, see [Actions in workflow approval processes](../../fin-ops/organization-administration/workflow-actions.md?toc=%2fdynamics365%2fcommerce%2ftoc.json#request-change). |
 
 ### Embedded drill-through links are no longer supported in paginated documents rendered by the cloud-hosted service 
-|   |  |
+
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Navigation URLs embedded in documents rendered by the service may contain sensitive business data. We are removing support for embedded drill-through links in documents as a security precaution to further protect customer's data. Users will also benefit from improved performance while interactively producing documents as a result of this change.  |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Reporting |
 | **Deployment option**              | All |
-| **Status**                         | This feature is actively being removed from the service.<br><br>The modern client offers numerous options for producing views that include auto-generated links to assist in navigating the application. Paginated documents rendered by the service are recommended for external communications that are emailed, archived, and printed for recipients. We have improved the experience for previewing documents directly in the browser, which offers direct access to local printers. For more information, see [Preview PDF documents with an embedded viewer](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/preview-pdf-documents). |
+| **Status**                         | This feature is actively being removed from the service.<br><br>The modern client offers numerous options for producing views that include auto-generated links to assist in navigating the application. Paginated documents rendered by the service are recommended for external communications that are emailed, archived, and printed for recipients. We have improved the experience for previewing documents directly in the browser, which offers direct access to local printers. For more information, see [Preview PDF documents with an embedded viewer](../analytics/preview-pdf-documents.md). |
 
 ## Previous announcements about removed or deprecated features
 To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../migration-upgrade/deprecated-features.md).

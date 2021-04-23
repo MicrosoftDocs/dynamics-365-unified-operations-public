@@ -3,8 +3,7 @@
 
 title: Environment planning
 description: This topic provides an overview of various aspects that you must consider while you plan for your project's environment.
-author: petryo
-manager: AnnBe
+author: laneswenka
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
@@ -22,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: petryo
+ms.author: laswenka
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
 
@@ -62,7 +61,7 @@ You can use the following environment types for your project:
 |--------|-------------------|
 | Single-box environment | Multi-box environment |
 | All components are installed on the same server. These components include Application Object Server (AOS), the database, Dynamics 365 Commerce, and Management Reporter. | Components are installed on multiple servers. |
-| Microsoft SQL Server is used. | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/) is used. |
+| Microsoft SQL Server is used. | [Azure SQL Database](/azure/sql-database/) is used. |
 | The architecture differs from the architecture of the production environment to maximize efficiency and cost of the development team. | The architecture is the same as the architecture of the production environment, even though this type of environment has a different sizing and isn't enabled for disaster recovery. |
 | The environment can be cloud-hosted, or it can be deployed as an environment image (VHD). | The environment can be deployed only as a standard environment or an add-on environment. It can't be cloud-hosted. |
 | The environment isn't suitable for UAT or performance testing. | The environment is suitable for UAT and performance testing. |
@@ -106,7 +105,7 @@ Production system readiness includes, but isn't limited to, the following condit
 
 Customers should use the production environment to **operate** the solution, not build it. The production environment is sized to run your business. The sizing is based on the subscription estimate and diagnostic data from performance testing. After deployment, customers can and should do a mock cutover and a final round of validation on the production environment. Before the final cutover, customers can request a Point in time restore to restore the production environment to a clean snapshot (maximum 28 days in the past).
 
-To select the appropriate data center for the production environment, consider the latency from the geographic locations where the business operates. Use tools such as [PsPing](https://docs.microsoft.com/sysinternals/downloads/psping) and [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) to test latency to Azure data centers.
+To select the appropriate data center for the production environment, consider the latency from the geographic locations where the business operates. Use tools such as [PsPing](/sysinternals/downloads/psping) and [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) to test latency to Azure data centers.
 
 The following illustrations shows the environment planning process.
 

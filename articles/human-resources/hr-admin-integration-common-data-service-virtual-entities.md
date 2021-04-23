@@ -4,11 +4,9 @@
 title: Configure Dataverse virtual tables
 description: This topic shows how to configure virtual tables for Dynamics 365 Human Resources. Generate and update existing virtual tables, and analyze generated and available tables. 
 author: andreabichsel
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -40,7 +38,7 @@ Dynamics 365 Human Resources is a virtual data source in Microsoft Dataverse. It
 To enable CRUD operations on Human Resources entities from Dataverse, you must make the entities available as virtual tables in Dataverse. This lets you perform CRUD operations from Dataverse and Microsoft Power Platform on data that's in Human Resources. The operations also support the full business logic validations of Human Resources to ensure data integrity when writing data to the entities.
 
 > [!NOTE]
-> Human Resources entities correspond to Dataverse tables. For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Human Resources entities correspond to Dataverse tables. For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 ## Available virtual tables for Human Resources
 
@@ -57,7 +55,7 @@ Virtual tables for Human Resources aren't the same as the native Dataverse table
 The native tables for Human Resources are generated separately and maintained in the HCM Common solution in Dataverse. With native tables, the data is stored in Dataverse and requires synchronization with the Human Resources application database.
 
 > [!NOTE]
-> For a list of the native Dataverse tables for Human Resources, see [Dataverse tables](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
+> For a list of the native Dataverse tables for Human Resources, see [Dataverse tables](./hr-developer-entities.md).
 
 ## Setup
 
@@ -77,7 +75,7 @@ For more information about enabling and disabling features, see [Manage features
 
 ### Register the app in Microsoft Azure
 
-You must register your Human Resources instance in the Azure portal so the Microsoft identity platform can provide authentication and authorization services for the app and users. For more information about registering apps in Azure, see [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+You must register your Human Resources instance in the Azure portal so the Microsoft identity platform can provide authentication and authorization services for the app and users. For more information about registering apps in Azure, see [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
 
 1. Open the [Microsoft Azure portal](https://portal.azure.com).
 
@@ -99,7 +97,7 @@ You must register your Human Resources instance in the Azure portal so the Micro
 
 10. Provide a description, select a duration, and select **Add**.
 
-11. Record the secret's value. You'll enter this information when you [Configure the virtual table data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
+11. Record the secret's value from the **Value** property of the table. You'll enter this information when you [Configure the virtual table data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
     > [!IMPORTANT]
     > Be sure to take note of the secret's value at this time. The secret is never displayed again after you leave this page.
@@ -108,27 +106,15 @@ You must register your Human Resources instance in the Azure portal so the Micro
 
 Install the Dynamics 365 HR Virtual Table app in your Power Apps environment to deploy the virtual table solution package to Dataverse.
 
-1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In Human Resources, open the **Microsoft Dataverse integration** page.
 
-2. In the **Environments** list, select the Power Apps environment associated with your Human Resources instance.
+2. Select the **Virtual tables** tab.
 
-3. In the **Resources** section of the page, select **Dynamics 365 apps**.
+3. Select **Install virtual table app**.
 
-4. Select the **Install app** action.
+### Configure the virtual table data source
 
-5. Select **Dynamics 365 HR Virtual Table**, and select **Next**.
-
-6. Review and mark to agree to the terms of service.
-
-7. Select **Install**.
-
-The install takes a few minutes. When it completes, continue to the next steps.
-
-![Install the Dynamics 365 HR Virtual Table app from the Power Platform admin center](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
-
-### Configure the virtual table data source 
-
-The next step is to configure the virtual table data source in the Power Apps environment. 
+The next step is to configure the virtual table data source in the Power Apps environment.
 
 1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -139,6 +125,9 @@ The next step is to configure the virtual table data source in the Power Apps en
 4. In the **Solution Health Hub**, select the **Advanced Find** icon in the top right of the application page.
 
 5. On the **Advanced Find** page, in the **Look for** dropdown list, select **Finance and Operations Virtual Data Source Configurations**.
+
+   > [!NOTE]
+   > The installation of the virtual table app from the previous setup step can take a few minutes. If **Finance and Operations Virtual Data Source Configurations** isn't available in the list, wait for a minute and refresh the list.
 
 6. Select **Results**.
 
@@ -192,7 +181,7 @@ Grant permissions for the two Azure AD applications in Human Resources:
 
 When setup completes, you can select the virtual tables you want to generate and enable in your Dataverse instance.
 
-1. In Human Resources, open the **Dataverse integration** page.
+1. In Human Resources, open the **Microsoft Dataverse integration** page.
 
 2. Select the **Virtual tables** tab.
 
@@ -203,7 +192,7 @@ When setup completes, you can select the virtual tables you want to generate and
 
 4. Select **Generate/refresh**.
 
-![Dataverse Integraton](./media/hr-admin-integration-common-data-service-integration.jpg)
+![Dataverse Integraton](./media/hr-admin-integration-dataverse-integration.png)
 
 ## Check table generation status
 
@@ -221,12 +210,11 @@ The slideout pane displays the most recent execution results for the process. Yo
 
 ## See also
 
-[What is Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
-[Tables in Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
-[Table relationships overview](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
-[Create and edit virtual tables that contain data from an external data source](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
-[What is Power Apps portals?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
-[Overview of creating apps in Power Apps](https://docs.microsoft.com/powerapps/maker/)
-
+[What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)<br>
+[Tables in Dataverse](/powerapps/maker/common-data-service/entity-overview)<br>
+[Table relationships overview](/powerapps/maker/common-data-service/relationships-overview)<br>
+[Create and edit virtual tables that contain data from an external data source](/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
+[What is Power Apps portals?](/powerapps/maker/portals/overview)<br>
+[Overview of creating apps in Power Apps](/powerapps/maker/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

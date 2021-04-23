@@ -4,11 +4,9 @@
 title: Transfer fixed assets (Russia)
 description: This topic explains how to transfer a fixed asset in Microsoft Dynamics 365 Finance in Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

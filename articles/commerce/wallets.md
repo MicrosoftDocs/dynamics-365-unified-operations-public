@@ -4,11 +4,9 @@
 title: Wallet payment support
 description: This topic provides an overview of wallet payment support for Microsoft Dynamics 365 Commerce.
 author: rubendel
-manager: annbe
 ms.date: 11/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -73,6 +71,9 @@ When this page opens, it queries available payment connectors to collect a set o
 To map a processor payment method to a card or wallet, select the card or wallet, select the processor payment method, and then select **Add**. The processor payment method moves to the **Mapped** column. When a matching payment authorization is received, it will be mapped to the chosen card or wallet.
 
 ![Mapped processor payment method](media/Payments/Mapped.png)
+
+> [!NOTE]
+> The **Processor payment method mapping** capability adds a new table that must be synchonized to the channel database. To add this data to the Commerce scheduler, you need to initialize the Commerce scheduler. For details, please refer to documentation related to [updating commerce scheduler configurations](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/cdx-best-practices#updating-configurations). 
 
 ### When not to use processor payment method mapping
 

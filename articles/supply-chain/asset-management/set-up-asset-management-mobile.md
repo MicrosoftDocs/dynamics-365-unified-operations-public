@@ -4,11 +4,9 @@
 title: Set up the Asset management mobile workspace
 description: This topic describes how to set up Microsoft Dynamics 365 Supply Chain Management and the Finance and Operations (Dynamics 365) mobile app to run an Asset management mobile workspace that workers can use to perform asset management tasks.
 author: johanhoffmann
-manager: tfehr
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

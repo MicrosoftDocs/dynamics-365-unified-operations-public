@@ -4,11 +4,9 @@
 title: Setup payment fee for Japan
 description: This task walks you through setting up a payment fee for Japan. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.12 (August 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.12. 
 author: kamaybac
-manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,25 +38,25 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation or videos that are currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
+The following features are included in this release. The feature titles link to additional information on the [Release plans](/dynamics365/release-plans/) site. Additional links point to additional documentation or videos that are currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- [Allow locking the job card touchscreen for sanitization](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization)<br> - For more information, see [Configure job card for devices](../production-control/config-job-card-device.md).
+- [Allow locking the job card touchscreen for sanitization](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization)<br> - For more information, see [Configure job card for devices](../production-control/config-job-card-device.md).
 
-- [Capture product variants and tracking dimensions in the warehouse app during load item receiving](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving)<br> - For more information, see [Set up mobile devices for warehouse work](../warehousing/configure-mobile-devices-warehouse.md).
+- [Capture product variants and tracking dimensions in the warehouse app during load item receiving](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving)<br> - For more information, see [Set up mobile devices for warehouse work](../warehousing/configure-mobile-devices-warehouse.md).
 
 - Cost calculation level (new BOM level)<br> - For more information, see [Cost calculation level](../cost-management/cost-calculation-level.md).
 
-- [Customer portal for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences)<br> - For more information, see [Customer portal for Dynamics 365 Supply Chain Management overview](../sales-marketing/customer-portal-overview.md).
+- [Customer portal for Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences)<br> - For more information, see [Customer portal for Dynamics 365 Supply Chain Management overview](../sales-marketing/customer-portal-overview.md).
 
-- [IoT intelligence core insights](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - For more information, see [IoT Intelligence home page](../iot/iot-intelligence-home-page.md).
+- [IoT intelligence core insights](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - For more information, see [IoT Intelligence home page](../iot/iot-intelligence-home-page.md).
 
-- [License plate receiving enhancements for the warehouse app (continued)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - For more information, see [License plate receiving via the warehouse app](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [License plate receiving enhancements for the warehouse app (continued)](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - For more information, see [License plate receiving via the Warehouse Management mobile app](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Mass deployment for Warehouse mobile app](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - For more information, see [Install and configure the warehouse app overview](../warehousing/install-configure-warehousing-app.md).
+- [Mass deployment for Warehouse mobile app](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - For more information, see [Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md).
 
-- [Maximum execution time for the warehouse management on-hand entries cleanup job](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - For more information, see [Warehouse management on-hand entries cleanup job](../warehousing/onhand-cleanup.md).
+- [Maximum execution time for the warehouse management on-hand entries cleanup job](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - For more information, see [Warehouse management on-hand entries cleanup job](../warehousing/onhand-cleanup.md).
 
-- [Planning Optimization support for purchase trade agreements](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements)<br> - For more information, see [Master planning with purchase trade agreements](../master-planning/planning-optimization/purchase-trade-agreement.md).
+- [Planning Optimization support for purchase trade agreements](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements)<br> - For more information, see [Master planning with purchase trade agreements](../master-planning/planning-optimization/purchase-trade-agreement.md).
 
 ## Additional resources
 
@@ -74,7 +72,7 @@ For information about the bug fixes included in each of the updates that are par
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Supply Chain Management features
 

@@ -4,11 +4,9 @@
 title: Removed or deprecated features in Dynamics 365 Finance 
 description: This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
 author: roschlom
-manager: AnnBe
-ms.date: 02/08/2021
+ms.date: 04/14/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -39,13 +37,26 @@ This topic describes features that have been removed, or that are planned for re
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 > [!NOTE]
-> Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+> Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+
+## Features removed or deprecated in the Finance 10.0.20 release
+
+### RTIR Query Invoice Data Request (HU) format configuration
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Excluded from electronic messaging processing of interoperation with Hungarian online invoicing system |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By April 15, 2022, we plan to no longer support "RTIR Query Invoice Data Request (HU)" format configuration. |
+
 
 ## Features removed or deprecated in the Finance 10.0.17 release
 
 ### LCS repository as a storage option for Electronic reporting configurations
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Replaced with the new Regulatory Configuration Service (RCS) Global repository |
 | **Replaced by another feature?**   | Yes |
@@ -57,7 +68,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### "VAT declaration (CZ)" and "Control statement export (CZ)" Electronic reporting formats for Czech Republic
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Replaced with new formats |
 | **Replaced by another feature?**   | Yes |
@@ -67,7 +78,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### "Ledger transaction export format (BE)" Electronic reporting format and respective "Ledger transaction export (BE)" model for Belgium
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Replaced with new ER format under "Standard Audit File (SAF-T)" model.  |
 | **Replaced by another feature?**   | Yes |
@@ -77,7 +88,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### "VAT 100" report for the United Kingdom in SSRS format
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Replaced with new ER format - "VAT Declaration Excel (UK)" format under "Tax declaration model".  |
 | **Replaced by another feature?**   | Yes |
@@ -89,7 +100,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Internet Explorer 11 support for Dynamics 365 is deprecated
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won’t be supported after August 2021.<br><br>This will impact customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
 | **Replaced by another feature?**   | We recommend that customers transition to Microsoft Edge.|
@@ -101,7 +112,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Polish SSRS reports: Sales VAT register, Purchase VAT register, EU summary VAT register – Feature reference PL-00014
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Not legally required.  |
 | **Replaced by another feature?**   | Yes (Excel format for Standard Audit File with VAT declaration - JPK_VDEK) |
@@ -113,7 +124,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Norwegian Standard main accounts
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Redesign  |
 | **Replaced by another feature?**   | Yes (Replaced with ER format application-specific parameters) |
@@ -124,7 +135,8 @@ This list is intended to help you consider these removals and deprecations for y
 ## Features removed or deprecated in the Finance 10.0.7 release
 
 ### Workflow request change dialog box no longer includes user selection drop-down list
-|   |  |
+
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Changed to the feature with account groups selection.  |
 | **Replaced by another feature?**   | Yes |

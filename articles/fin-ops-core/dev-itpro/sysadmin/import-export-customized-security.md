@@ -4,7 +4,6 @@
 title: Import or export a customized security configuration by using Data management 
 description: The topic explains how a customized security configuration can be exported and imported across environments by using the Data management framework.
 author: tonyafehr
-manager: Peakerbl
 ms.date: 07/17/2020
 ms.topic: article
 ms.prod:

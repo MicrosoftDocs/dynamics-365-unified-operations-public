@@ -4,7 +4,6 @@
 title: Configure action-dependent ER destinations
 description: This topic explains how to configure action-dependent destinations for an Electronic reporting (ER) format that is configured to generate outbound documents.
 author: NickSelin
-manager: AnnBe
 ms.date: 02/09/2021
 ms.topic: article
 ms.prod: 
@@ -66,7 +65,7 @@ If you select the **Any** document type, **Autodetect** is automatically selecte
     - When the **Send** action is provided at runtime, the **Email** ER destination is applied.
     - When the **Print** action is provided at runtime, the **Printer** ER destination is applied.
 
-For example, you can use the **Free text invoice (Excel)** ER format to print a [free text invoice](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) when you post it. To route a generated document, you must configure ER destinations for this ER format. For example, you may need to configure these ER destinations to perform the following on a generated document:
+For example, you can use the **Free text invoice (Excel)** ER format to print a [free text invoice](../../../finance/accounts-receivable/create-free-text-invoice-new.md) when you post it. To route a generated document, you must configure ER destinations for this ER format. For example, you may need to configure these ER destinations to perform the following on a generated document:
 
 - Archive the document if the ER format is run but no action code is provided (for example, when the document is sent electronically).
 - Preview the document in a web browser when a user performs the **View** action.
@@ -88,7 +87,7 @@ The following illustration shows how you can achieve the same alternatively conf
 
 When an ER format is run, if user actions have been provisioned by users who have the appropriate [permissions](electronic-reporting-destinations.md#security-considerations) to change configured destination settings at runtime, a dialog box appears that gives the option to change the configured destination settings. This dialog box is optional, and its appearance depends on how the call that the ER framework makes to run an ER format has been implemented. If this dialog box appears, the ER destinations in it will be enabled according to the user action that is provided.
 
-The following illustration shows an example of the **Electronic reporting format destinations** dialog box that appears when a free text invoice is [posted](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) and the **Free text invoice (Excel)** ER format is run to generate this document, if the **Printer** action was provisioned and ER destinations were configured for this format as shown earlier in this topic.
+The following illustration shows an example of the **Electronic reporting format destinations** dialog box that appears when a free text invoice is [posted](../../../finance/accounts-receivable/create-free-text-invoice-new.md) and the **Free text invoice (Excel)** ER format is run to generate this document, if the **Printer** action was provisioned and ER destinations were configured for this format as shown earlier in this topic.
 
 ![Dialog box that gives the option to change the initialy configured ER destinations for the running ER format](./media/er-destination-action-dependent-02.gif)
 

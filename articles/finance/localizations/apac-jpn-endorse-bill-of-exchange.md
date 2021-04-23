@@ -4,11 +4,9 @@
 title: Pay a vendor by endorsing a bill of exchange for Japan
 description: This topic includes information about endorsing bills of exchange (BOE) to pay a vendor in Japan.
 author: yijialuan
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

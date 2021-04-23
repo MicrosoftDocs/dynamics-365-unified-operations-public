@@ -4,7 +4,6 @@
 title: VAT declaration for Egypt
 description: This topic explains how to configure and generate the VAT return form for Egypt.
 author: sndray
-manager: AnnBe
 ms.date: 03/10/2021
 ms.topic: article
 ms.prod:
@@ -16,7 +15,7 @@ ms.technology:
 # ms.search.form:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: kfend
 ms.search.scope:
 # ms.tgt_pltfrm: 
 # ms.custom: NotInTOC

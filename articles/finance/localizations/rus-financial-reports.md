@@ -7,7 +7,6 @@ author: Anasyash
 ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -218,7 +217,7 @@ Use the following procedure to create operations for report cells.
 
 ## Configure ER to use the results of financial report calculations
 
-For more information, see [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md). 
+For more information, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md). 
 
 The following example shows how to configure ER to use the results of financial report calculations.
 
@@ -281,7 +280,7 @@ The following example shows how to configure ER to use the results of financial 
            - Items \> Value \<-\> ParmFieldAmount 
            - Items \> ReportCode \<-\> FinancialReport\_UIP
 
-    ![Binding](media/binding.jpg)
+    ![List of bound fields](media/binding.jpg)
 
 7. Set up the format of the report. For more derails on how to add a new format congfiguration, see [ER Create a format configuration]( ../../dev-itpro/analytics/tasks/er-format-configuration-2016-11.md). 
 

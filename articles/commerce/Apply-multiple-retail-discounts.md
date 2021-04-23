@@ -4,11 +4,9 @@
 title: Apply multiple Retail discounts to a product
 description: This topic reviews all the factors considered when multiple discounts can be applied to a product. 
 author: shajain
-manager: AnnBe
 ms.date: 12/31/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

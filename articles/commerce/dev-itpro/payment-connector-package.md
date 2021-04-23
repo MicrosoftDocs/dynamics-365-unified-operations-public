@@ -4,11 +4,9 @@
 title: Create Commerce payment packaging for Finance and Operations deployment
 description: This topic explains how to package a payment connector for Finance and Operations deployment in Microsoft Dynamics 365 Commerce.
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -74,7 +72,7 @@ https://AOSUrl/resources/styles/Mycss.css
 9. If you don't have any other payment X++ extensions that are related to the payment connector, build the solution.
 
 > [!NOTE]
-> If there are no other extensions package, then continue with these steps. If you have additional extensions packages, then combine all of them into  all-in-one deployable packages. If you do not do this, this package will override other packages. For more information, see [All-in-one deployable packages](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages).
+> If there are no other extensions package, then continue with these steps. If you have additional extensions packages, then combine all of them into  all-in-one deployable packages. If you do not do this, this package will override other packages. For more information, see [All-in-one deployable packages](../../fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages.md).
 
 10. To create the deployable package, on the **Dynamics 365** menu, select **Deploy \> Create Deployment Package**.
 11. Select the model that you created earlier, specify the location of the package file, and then select **Create**.

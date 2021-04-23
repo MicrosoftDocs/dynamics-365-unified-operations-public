@@ -2,9 +2,8 @@
 # required metadata
 
 title: Manage recruiting processes
-description: This article describes a concept that recruiters can use to track the steps in a recruiting process, including efforts to advertise open positions and recruit applicants, tracking applicant and application information, interviewing applicants, and selecting one or more candidates to fill the open positions in your organization.
+description: This article describes a concept that recruiters can use to track the steps in a recruiting process.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

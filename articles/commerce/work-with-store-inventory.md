@@ -4,11 +4,9 @@
 title: Store inventory management
 description: This topic describes the types of documents that you can use to manage inventory.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

@@ -4,7 +4,6 @@
 title: Batch business events
 description: This topic provides details about batch business events.
 author: sarvanisathish
-manager: AnnBe
 ms.date: 02/25/2021
 ms.topic: article
 ms.prod:
@@ -29,7 +28,6 @@ ms.dyn365.ops.version: 10.0.17
 # Batch business events
 
 [!include[banner](../includes/banner.md)]
-[!include[preview banner](../includes/preview-banner.md)]
 
 The batch framework emits the following system business events.
 

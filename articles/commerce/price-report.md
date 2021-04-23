@@ -4,11 +4,9 @@
 title: Retail price reports
 description: This topic provides an overview of the price report feature that can used to view the upcoming price changes for the assorted products. 
 author: shajain
-manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

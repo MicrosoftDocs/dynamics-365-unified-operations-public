@@ -4,11 +4,9 @@
 title: Dynamics 365 Payment Connector for PayPal
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal.
 author: rubendel
-manager: annbe
 ms.date: 11/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -111,6 +109,9 @@ To test the PayPal Payment Connector, you must first create PayPal developer cre
 6. Specify an **ID**, such as **PayPal**. Set an **Electronic payment name**, such as **PayPal**. Set **Type** to **Wallet**, and then specify a name for the **Issuer**, such as **PayPal**. Select **Save**.
 7. Select the entry previously created and select **Processor mapping**.
 8. On the **Processor payment method mapping** page, select the previously created **PayPal** card type. In the middle column, select the **Dynamics 365 Payment Connector for PayPal** and select **Add**. 
+
+> [!NOTE]
+> The **Processor payment method mapping** capability adds a new table that must be synchonized to the channel database. To add this data to the Commerce scheduler, you need to initialize the Commerce scheduler. For details, please refer to documentation related to [updating commerce scheduler configurations](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/cdx-best-practices#updating-configurations). 
 
 ### Set up the PayPal Payment Connector in payment services
 

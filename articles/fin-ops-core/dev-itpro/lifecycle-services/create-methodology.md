@@ -4,7 +4,6 @@
 title: Create or update methodologies
 description: Lifecycle Services provides methodologies that you can use to ensure a more repeatable and predictable implementation project experience.
 author: angelmarshall
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

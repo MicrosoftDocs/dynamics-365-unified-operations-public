@@ -4,11 +4,9 @@
 title: Warehouse location status
 description: This topic provides an overview of the Warehouse location status feature.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -58,7 +56,7 @@ Before you can use the *Warehouse location status* feature, it must be turned on
 
 ### Prepare the sample data that is required for the example scenario
 
-Before you start to work through the scenario, you must activate sample data and set up the feature as described in this section. To complete the example scenario, you must use either the warehouse app or the browser-based emulator. The steps that are provided here use the warehouse app. The steps for the browser-based emulator are similar.
+Before you start to work through the scenario, you must activate sample data and set up the feature as described in this section. To complete the example scenario, you must use either the Warehouse Management mobile app or the browser-based emulator. The steps that are provided here use the Warehouse Management mobile app. The steps for the browser-based emulator are similar.
 
 #### Use the USMF legal entity
 

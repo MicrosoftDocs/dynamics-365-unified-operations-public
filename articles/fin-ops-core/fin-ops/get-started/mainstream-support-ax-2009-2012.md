@@ -4,7 +4,6 @@
 title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2
 description: This topic provides details about the end of  mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2.
 author: ShellyBakke
-manager: AnnBe
 ms.date: 07/10/2020
 ms.topic: article
 ms.prod: 
@@ -37,8 +36,8 @@ Dynamics AX 2009 SP1, Dynamics AX 2012, and Dynamics AX 2012 R2 customers can se
 
 Customers are advised to upgrade to the latest version of Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Retail, and Human Resources:
 
-- Dynamics AX 2009 Service Pack 1 customers should use the [migration tool](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page) that is available.
-- Dynamics AX 2012 and Dynamics AX 2012 R2 customers should upgrade to Finance and Operations apps through Dynamics AX 2012 R3 using the upgrade tool that is available. Additional upgrade information is available in the [Upgrade from AX 2012 to Finance and Operations apps](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012) topic.
+- Dynamics AX 2009 Service Pack 1 customers should use the [migration tool](../../dev-itpro/migration-upgrade/upgrade-home-page.md) that is available.
+- Dynamics AX 2012 and Dynamics AX 2012 R2 customers should upgrade to Finance and Operations apps through Dynamics AX 2012 R3 using the upgrade tool that is available. Additional upgrade information is available in the [Upgrade from AX 2012 to Finance and Operations apps](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md) topic.
 
 ## Frequently asked questions
 

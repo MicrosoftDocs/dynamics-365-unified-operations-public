@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Talent (April 2, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for April 2, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -60,13 +58,13 @@ In Attract and Onboard, problems logged by end users through the report a proble
 Changes described in this section apply to build number 8.1.2216.
 
 ### Platform update 25 for Finance and Operations
-For more information about Platform update 25 for Finance and Operations, see [Preview features in Dynamics 365 for Finance and Operations platform update 25 (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+For more information about Platform update 25 for Finance and Operations, see [Preview features in Dynamics 365 for Finance and Operations platform update 25 (April 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  Advanced compensation security (fixed and variable)
 In many organizations, compensation and benefits managers might only have access to certain compensation records. These might include records for executives or regional employees. This change allows HR to manage and maintain compensation plans for different employee groups in the organization. You can assign security roles to fixed and variable plans. These security roles determine access to plans and related employee data, such as salary or bonus records, so that only those roles can process compensation for the employee groups.
 
 ### Upgrade to Dataverse
-Deadlines to upgrade to Dataverse are rapidly approaching. Sign in to the Microsoft Power Apps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Dataverse](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Deadlines to upgrade to Dataverse are rapidly approaching. Sign in to the Microsoft Power Apps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Dataverse](/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## In preview
 

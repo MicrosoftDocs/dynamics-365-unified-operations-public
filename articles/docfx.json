@@ -80,10 +80,11 @@
           "folder_relative_path_in_docset": ".",
           "depot_name": "MSDN.d365OpsHR"
         }
-      }
+      },
+      "recommendations": "true"
     },
     "fileMetadata": {
-      "search.app":{
+      "search.app": {
         "finance/**/*.md": [
           "Finance"
         ],
@@ -131,47 +132,48 @@
           "dynamics-finance-operations"
         ]
       },
-        "feedback_product_url": {
-          "retail/**/*.md": "https://ideas.dynamics.com"
-        },
-       "searchScope": {
-          "talent/**.md": [
-            "Dynamics 365",
-            "Unified Operations",
-            "Talent"
+      "feedback_product_url": {
+        "retail/**/*.md": "https://ideas.dynamics.com"
+      },
+      "searchScope": {
+        "talent/**.md": [
+          "Dynamics 365",
+          "Unified Operations",
+          "Talent"
         ],
-          "retail/**/**.md": [
-            "Dynamics 365",
-            "Unified Operations",
-            "Retail"
+        "retail/**/**.md": [
+          "Dynamics 365",
+          "Unified Operations",
+          "Retail"
         ],
-           "human-resources/**/**.md": [
-           "Dynamics 365",
-           "Unified Operations",
-           "Human Resources"
+        "human-resources/**/**.md": [
+          "Dynamics 365",
+          "Unified Operations",
+          "Human Resources"
         ]
-       },
+      },
       "titleSuffix": {
         "commerce/**.md": "Commerce | Dynamics 365",
         "fin-ops-core/**.md": "Finance & Operations | Dynamics 365",
         "fin-ops-core/fin-ops/hr/**.md": "Human Resources | Dynamics 365",
-        "finance/**.md": "Finance | Dynamics 365",                
+        "finance/**.md": "Finance | Dynamics 365",
         "human-resources/**.md": "Human Resources | Dynamics 365",
         "supply-chain/**.md": "Supply Chain Management | Dynamics 365",
         "talent/**.md": "Talent | Dynamics 365"
       },
       "breadcrumb_path": {
-        "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/ops-bc/toc.json"},
-      "ms.service" : {
+        "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/ops-bc/toc.json"
+      },
+      "ms.service": {
         "commerce/**/**.md": "dynamics-365-commerce ",
         "finance/**/**.md": "dynamics-365-finance",
-        "fin-ops-core/**/**.md": "dynamics-365-crossapp",
+        "fin-ops-core/**/**.md": "dynamics-365-cross-app",
         "fin-ops-core/dev-itpro/lifecycle-services/ax-2012/**/**.md": "",
         "human-resources/**/**.md": "dynamics-365-human-resources",
         "supply-chain/**/**.md": "dynamics-365-supply-chain",
         "talent/**/**.md": "dynamics-365-talent"
       },
-      "ms.search.scope" : {
+      "ms.search.scope": {
         "commerce/**/**.md": "Core, Operations, Retail, Commerce, ShowInHelp",
         "commerce/dev-itpro/**/**.md": "Operations, Retail, Commerce, Developer",
         "commerce/dev-itpro/retail-sdk/**/**.md": "Operations, Retail, Commerce, Developer",

@@ -4,11 +4,9 @@
 title: Customer attributes
 description: This topic provides information about customer attributes and explains how you can use configurations to add new fields to the customer master record.
 author: mugunthanm 
-manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

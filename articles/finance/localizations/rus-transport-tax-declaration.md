@@ -3,11 +3,9 @@
 title: Transport tax declaration (Russia)
 description: This topic provides information about the Transport tax declaration for Russia.
 author: anasyash
-manager: AnnBe
 ms.date: 06/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -658,7 +656,7 @@ Generate a transport tax declaration
 
 >   For more information, see [Download Electronic reporting configurations from
 >   Lifecycle
->   Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+>   Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 1.  You can upload Data management package settings to work with the transport
     tax declaration. Follow these steps:

@@ -4,11 +4,9 @@
 title: Include CIAP credit from a previous period (Brazil)
 description: Use the CIAP fixed asset transactions page to create CIAP credit installments. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

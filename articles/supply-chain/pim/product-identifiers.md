@@ -4,11 +4,9 @@
 title: Product identifiers 
 description: This topic provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
 author: cvocph
-manager: tfehr
 ms.date: 03/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 

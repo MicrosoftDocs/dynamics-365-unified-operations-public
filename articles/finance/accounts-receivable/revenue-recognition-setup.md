@@ -4,11 +4,9 @@
 title: Revenue recognition setup 
 description: This topic describes the setup options for Revenue recognition, and their implications.
 author: kweekley
-manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

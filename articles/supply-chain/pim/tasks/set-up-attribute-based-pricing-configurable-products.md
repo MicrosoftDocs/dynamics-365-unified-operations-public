@@ -4,11 +4,9 @@
 title: Set up attribute-based pricing for configurable products
 description: This topic explains how to set up attribute-based pricing. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -33,17 +31,18 @@ This topic explains how to set up attribute-based pricing. As a prerequisite, yo
 
 
 ## Create a new price model
-1. Select **Product variant model definition** on the home page.
-2. Select **Product configuration models** in the **links** section.
-3. In the list, select the **High End Speaker** line, but don't select the link for the name.
-4. On the Action Pane, select **Model**.
-5. Select **Price models**.
-6. Select **New**.
-7. In the **Price model name** field, type a value. Use a name that makes the model easy to identify.  
-8. In the **Description** field, type a value.
-9. Select **Save**.
+
+1. Go to **Product information management \> Products \> Product configuration models**.
+1. In the list, select the **High End Speaker** line, but don't select the link for the name.
+1. On the Action Pane, select **Model**.
+1. Select **Price models**.
+1. Select **New**.
+1. In the **Price model name** field, type a value. Use a name that makes the model easy to identify.  
+1. In the **Description** field, type a value.
+1. Select **Save**.
 
 ## Add price elements
+
 1. Select **Edit**. Each component in a product model can have a base price element and any number of price expression rules. You can also add prices in different currencies.  
 2. In the **Base price expression** field, type a value. For example, type 100. A base price expression can be a numerical value, or it can consist of an arithmetic calculation that involves one or more attributes.  
 3. Select **Add**.

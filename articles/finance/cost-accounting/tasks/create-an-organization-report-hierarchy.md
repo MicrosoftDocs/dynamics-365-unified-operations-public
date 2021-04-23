@@ -4,11 +4,9 @@
 title: Create an organization report hierarchy
 description: Use this procedure to create a report hierarchy for organization reporting. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 10/30/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

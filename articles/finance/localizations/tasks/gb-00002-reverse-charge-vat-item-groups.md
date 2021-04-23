@@ -4,11 +4,9 @@
 title: GB-00002 Set up reverse charge VAT item groups, rules, and parameters
 description: This task walks you through setting up reverse charge item groups, applicability rules for purchasing and for sales purposes, and reverse charge parameters for the United Kingdom. 
 author: epodkolz
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -4,11 +4,9 @@
 title: Set up asset retirement obligation for fixed assets for Japan
 description: This article explains how the ARO liability is recognized, amortized, and accrued, and how the fixed asset and ARO liability are retired for Japan.
 author: yijialuan
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

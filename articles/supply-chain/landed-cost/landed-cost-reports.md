@@ -4,7 +4,6 @@
 title: Landed cost reports
 description: This topic describes how to find and use the various types of reports that are available for the Landed cost module.
 author: sherry-zheng
-manager: tfehr
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
@@ -30,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Landed cost reports
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 ## Outstanding invoices
 

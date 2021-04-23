@@ -4,11 +4,9 @@
 title: Straight line life remaining depreciation
 description: This article gives an overview of the Straight line life remaining method of depreciation.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,7 +60,7 @@ If you select **Fiscal** in the **Depreciation year** field, straight line life 
 ## Example of straight line depreciation of an unchanged fixed asset
 A fixed asset has the following characteristics.
 
-|                     |        |
+| Field               | Value  |
 |---------------------|--------|
 | Acquisition cost    | 11,000 |
 | Salvage value       | 1,000  |

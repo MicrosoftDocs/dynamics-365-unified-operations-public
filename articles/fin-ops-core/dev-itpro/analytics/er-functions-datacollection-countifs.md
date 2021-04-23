@@ -4,7 +4,6 @@
 title: COUNTIFS ER function
 description: This topic provides information about how the COUNTIFS Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 

@@ -4,11 +4,9 @@
 title: Register items for a basic warehousing enabled item using an item an item arrival journal
 description: This procedure shows you how to register items using the item arrival journal when you are using "basic warehousing" in the Inventory management module. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -3,12 +3,10 @@
 
 title: Cash flow forecasting
 description: This topic provides an overview of the cash flow forecasting process. It also explains how cash flow forecasting is integrated with other modules in the system.
-author: saraschi2
-manager: AnnBe
-ms.date: 08/03/2020
+author: JodiChristiansen
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,8 +48,7 @@ Cash flow forecasting can be integrated with General ledger, Accounts payable, A
 - **Budget register entries** – Budget register entries that are selected for cash flow forecasts.
 - **Demand forecasts** – Inventory forecast model lines that are selected for cash flow forecasts.
 - **Supply forecasts** – Inventory forecast model lines that are selected for cash flow forecasts.
-
-Although there is no direct integration with Project management and accounting, there are several ways to include project transactions in the cash flow forecast. Posted project invoices are included in the forecast as part of open customer transactions. Project-initiated sales orders and purchase orders are included in the forecast as open orders after they are entered in the system. You can also transfer project forecasts to a ledger budget model. This ledger budget model is then included in the cash flow forecast as part of the budget register entries.
+- **Project forecasts** - Project management and accounting forecasts using forecast model.
 
 ## Configuration
 
@@ -102,6 +99,14 @@ A new tab on the **Cash flow forecasting setup** page lets you control what fina
 
 On the **Dimensions** tab, choose from the list of dimensions to use for filtering, and use the arrow keys to move them to the right-hand column. Only two dimensions can be selected for filtering cash flow forecast data. 
 
+### Project management and accounting
+
+In version 10.0.17, a new feature enables integration with Project management and accounting and Cash flow forecasting. In the **Feature management** workspace, turn on the **Cash flow Project forecast** feature to include the forecasted costs and revenues in the cash flow forecast. On the **Project management and accounting** tab of the **Cash flow forecast setup** page, select the project types and transaction types that should be included in the cash flow forecast. Then select the project forecast model. A reduction type submodel works best. The liquidity accounts that were entered in the Accounts receivable setup are used as the default liquidity accounts. Therefore, you don't have to enter default liquidity accounts when you set up the cash flow forecast. A budget model can also be used, but only one type can be selected on the **Cash flow forecast setup** page for Project management and accounting. A forecast model provides the most flexibility when Project management and accounting or Project Operations is used.
+
+After Cash flow project forecast feature is turned on, the cash flow forecast can be viewed for each project on the **All projects** page. On the Action Pane, on the **Plan** tab, in the **Forecast** group, select **Cash flow forecast**. In the **Cash overview** workspaces (see the [Reporting](#reporting) section later in this topic), the Project forecast transaction type shows the inflows (project forecast revenue) and the outflows (project forecast costs). The amounts can be included only if the **Project stage** field in the **Cash overview** workspaces is set to **In process**.
+
+Project transactions are still included in the cash flow forecast in several ways, regardless of whether the **Cash flow project forecast** feature is turned on. Posted project invoices are included in the forecast as part of open customer transactions. Project-initiated sales orders and purchase orders are included in the forecast as open orders after they are entered in the system. You can also transfer project forecasts to a ledger budget model. This ledger budget model is then included in the cash flow forecast as part of the budget register entries. If you've turned on the **Cash flow project forecast** feature, don't transfer project forecasts to a ledger budget model, because this action will cause the project forecasts to be counted two times.
+
 ### Calculation
 
 Before you can view cash flow forecasting analytics, you must run the cash flow calculation process. The calculation process will project the future cash impacts of transactions that have been entered.
@@ -142,9 +147,9 @@ Access to the workspace for the current company is controlled through the **View
 
 The **Cash overview – all companies** workspace shows cash flow forecasting analytics in the system currency. The system currency and the system exchange rate type that are used for the analytics are defined on the **System parameters** page. This workspace shows an overview of cash flow forecasting and bank account balances for all companies. A chart of cash inflows and outflows gives an overview of future cash movements and balances in the system currency, together with detailed information about the forecasted transactions. You can also see the forecasted currency balances.
 
-The **Cash overview – current company** workspace shows cash flow forecasting analytics in the company’s defined accounting currency. The accounting currency that is used for the analytics is defined on the **Ledger** page. This workspace shows an overview of cash flow forecasting and bank account balances for the current company. A chart of cash inflows and outflows gives an overview of future cash movements and balances in the accounting currency, together with detailed information about the forecasted transactions. You can also see the forecasted currency balances.
+The **Cash overview – current company** workspace shows cash flow forecasting analytics in the company's defined accounting currency. The accounting currency that is used for the analytics is defined on the **Ledger** page. This workspace shows an overview of cash flow forecasting and bank account balances for the current company. A chart of cash inflows and outflows gives an overview of future cash movements and balances in the accounting currency, together with detailed information about the forecasted transactions. You can also see the forecasted currency balances.
 
-For more information about the cash flow forecasting analytics, see the [Cash overview Power BI content](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content) topic.
+For more information about the cash flow forecasting analytics, see the [Cash overview Power BI content](./cash-overview-power-bi-content.md) topic.
 
 Additionally, you can view cash flow forecasting data for specific accounts, orders, and items on the following pages:
 

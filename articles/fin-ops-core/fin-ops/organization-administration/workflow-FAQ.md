@@ -4,7 +4,6 @@
 title: Workflow FAQ
 description: This topic answers frequently asked questions about the workflow system.
 author: ChrisGarty 
-manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
 ms.prod: 
@@ -53,9 +52,9 @@ Here are a few key areas to note about adding alerts to workflows to provide not
     - In a future update we will be adding an Action Center message so a user is assigned a workflow work item. 
 - Adding notifications to workflows
     - Action Center messages can be created for specific users, such as a message created from a workflow in X++.
-    - [Workflows have business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) that the customer could use to trigger Flows have the notifications that they are looking for.   
+    - [Workflows have business events](../../dev-itpro/business-events/business-events-workflow.md) that the customer could use to trigger Flows have the notifications that they are looking for.   
 
-In summary, if a user does not get the proper notification from the Action Center when they are assigned a workflow work item, then leverage [Workflow business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) with Microsoft Power Automate to provide additional or different notifications.
+In summary, if a user does not get the proper notification from the Action Center when they are assigned a workflow work item, then leverage [Workflow business events](../../dev-itpro/business-events/business-events-workflow.md) with Microsoft Power Automate to provide additional or different notifications.
 
 ## Why is workflow editor not able to start under AD FS?
 When running under Active Directory Federation Services (AD FS) in an upgraded environment, the workflow editor may have trouble starting. If it does, make sure that the URL "https://dynamicsaxworkfloweditor/" is added to the property **Microsoft Dynamics 365 for Operations On-premises - Workflow - Native application** in the ADFS settings.

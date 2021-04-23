@@ -4,7 +4,6 @@
 title: Create localizable labels
 description: This article explains how to create localizable labels for client components and HTML/JavaScript controls.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

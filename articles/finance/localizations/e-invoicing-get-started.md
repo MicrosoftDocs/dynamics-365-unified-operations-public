@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Get started with the Electronic invoicing add-on
-description: This topic provides information that will help you get started with the Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+title: Get started with Electronic invoicing
+description: This topic provides information that will help you get started with Electronic invoicing in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
-manager: AnnBe
-ms.date: 02/22/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -29,77 +27,75 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Get started with the Electronic invoicing add-on
+# Get started with Electronic invoicing
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you get started with the Electronic invoicing add-on.
-
-The following table lists the Electronic invoicing features and the business documents that they can be applied to.
-
-| Feature name                         | Business document |
-|--------------------------------------|-------------------|
-| Austrian electronic invoices (AT)    | <p>Sales invoice</p><p>Project invoice</p> |
-| Belgian electronic invoice (BE)      | <p>Sales invoice</p><p>Project invoice</p> |
-| Brazilian NF-e (BR)                  | <p>Fiscal document model 55</p><p>Correction letter</p> |
-| Brazilian NFS-e ABRASF Curitiba (BR) | Service Fiscal document |
-| Brazilian NFS-e São Paulo (BR)       | Service Fiscal document |
-| Danish electronic invoice (DK)       | <p>Sales invoice</p><p>Project invoice</p> |
-| Egyptian electronic invoice (EG)     | <p>Sales invoice</p><p>Project invoice</p> |
-| Estonian electronic invoice (EE)     | <p>Sales invoice</p><p>Project invoice</p> |
-| Finish electronic invoice (FI)       | <p>Sales invoice</p><p>Project invoice</p> |
-| French electronic invoice (FR)       | <p>Sales invoice</p><p>Project invoice</p> |
-| German electronic invoice (DE)       | <p>Sales invoice</p><p>Project invoice</p> |
-| FatturaPA (IT)                       | <p>Sales invoice</p><p>Project invoice</p> |
-| Mexican CFDI Interfactura (MX)       | <p>Sales invoice</p><p>Packing slip</p><p>Inventory transfer</p><p>Payment complement</p> |
-| Dutch electronic invoice (NL)        | <p>Sales invoice</p><p>Project invoice</p> |
-| Norwegian electronic invoice (NO)    | <p>Sales invoice</p><p>Project invoice</p> |
-| Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> |
-| PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> |
+This topic provides information that will help you get started with Electronic invoicing. This topic guides you through the common configuration steps in Regulatory Configuration Services (RCS) and Dynamics 365 Finance, and provides the steps you must follow to submit business documents and review the processing results.
 
 ## Prerequisites
 
 Before you complete the procedures in this topic, the following prerequisites must be in place:
 
-- Configure your Regulatory Configuration Service (RCS) and your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment so that you can submit to the Electronic invoicing add-on.
-- Create a service environment, and publish it to the Electronic invoicing add-on. For more information, see [Get started with the Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md).
-- Create a connected application. For more information, see [Get started with the Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md).
-- Create a configuration provider for your organization. For more information, see [Create configuration provider and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+- Configure your Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), and your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment. For more information, see [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md).
+- Create a configuration provider for your organization. For more information, see [Create a configuration provider and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## Import an Electronic invoicing feature from the Microsoft configuration provider 
 
 1. Sign in to your Regulatory Configuration Service (RCS) account.
-2. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing add-on** tile.
+2. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile.
 3. Select **Import**, and then select **Synchronize**.
 4. Filter the **Configuration provider** column by the term **Microsoft**.
 5. Select the name of an Electronic invoicing feature from the table at the beginning of this topic, and then select **Import**.
 
 ## Create an Electronic invoicing feature under your organization provider
 
-1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing add-on** tile.
+1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing** tile.
 2. Select **Add** > **Based on existing feature**, and in the **Name** field, enter the name of the Electronic invoicing feature.
 3. In the **Description** field, enter a description of the feature.
 4. In the **Base feature field**, select the imported Electronic invoicing feature from the Microsoft configuration provider.
 5. Select **Create feature**.
 
-## Configure the Electronic invoicing feature
+## Country-specific configuration for Electronic invoicing feature
 
-Depending on the country or region, the Electronic invoicing feature might require additional configuration. 
+Depending on the country or region, the Electronic invoicing feature might require specific configuration. 
 
 For the specific steps, see the "Get started" documentation that is available for your country or region.
+
+## Import the model mapping configurations from Electronic reporting
+
+1. In RCS, select the **Electronic reporting** workspace.
+2. From the list of **Microsoft** Configuration providers, select **Repositories**.
+3. Select **Global** and on Action Pane, select **Open**.
+4. Import the model mapping configurations according to the following table by feature name.
+
+| Feature name                         | Model mapping configuration |
+|--------------------------------------|-----------------------------|
+| Austrian electronic invoices (AT)    | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Belgian electronic invoice (BE)      | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Brazilian NF-e (BR)                  | <p>Customer invoice context model</p><p>Fiscal documents</p><p>Response message model</p> |
+| Brazilian NFS-e ABRASF Curitiba (BR) | <p>Customer invoice context model</p><p>Fiscal documents</p><p>Response message model</p> |
+| Danish electronic invoice (DK)       | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Egyptian electronic invoice (EG)     | <p>Customer invoice context model</p><p>Invoice model</p><p>Response message model</p> |
+| Estonian electronic invoice (EE)     | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Finish electronic invoice (FI)       | <p>Customer invoice context model</p><p>Invoice model</p> |
+| French electronic invoice (FR)       | <p>Customer invoice context model</p><p>Invoice model</p> |
+| German electronic invoice (DE)       | <p>Customer invoice context model</p><p>Invoice model</p> |
+| FatturaPA (IT)                       | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Mexican CFDI Interfactura (MX)       | <p>Customer invoice context model</p><p>Invoice model</p><p>Response message model</p> |
+| Dutch electronic invoice (NL)        | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Norwegian electronic invoice (NO)    | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Spanish electronic invoice (ES)      | <p>Customer invoice context model</p><p>Invoice model</p> |
+| PEPPOL electronic invoice            | <p>Customer invoice context model</p><p>Invoice model</p> |
+
 
 ## Configure the application setup
 
 1. Select the Electronic invoicing feature that you created.
-2. On the **Version** tab, verify that the **Draft** version is selected.
-3. On the **Setups** tab, select **Application setup**.
-
-    > [!NOTE]
-    > Verify that your organization is set as the **Active** configuration provider. For more information, see [Create configuration provider and mark them as active.](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
-
-4. Select **Feature setup**, and then select **Connected application**.
-5. In the **Electronic document types** section, select **Add**.
-6. For each business document that the feature supports, select and enter a **Table name** value according to the following table.
+2. On the **Setups** tab, select **Application setup**.
+3. In the **Connect application** field, select the connection that is associated with your instance of Finance or Supply Chain Management.
+4. In the **Electronic document types** section, select **Add**.
+5. Select and enter a **Table name** value according to the following table.
 
     | Feature name                         | Business document | Table name |
     |--------------------------------------|-------------------|------------|
@@ -107,7 +103,6 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Belgian electronic invoice (BE)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
     | Brazilian NF-e (BR)                  | <p>Fiscal document</p><p>Correction letter</p> | Fiscal document |
     | Brazilian NFS-e ABRASF Curitiba (BR) | Service Fiscal document | Fiscal document |
-    | Brazilian NFS-e São Paulo (BR)       | Service Fiscal document | Fiscal document |
     | Danish electronic invoice (DK)       | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
     | Egyptian electronic invoice (EG)     | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
     | Estonian electronic invoice (EE)     | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
@@ -121,7 +116,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
 
-7. For each business document that the feature supports, select and enter a **Context** value according to the following table.
+7. For each table name you create, select and enter a context value according to the following table.
 
     | Feature name                         | Business document | Context |
     |--------------------------------------|-------------------|---------|
@@ -129,7 +124,6 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Belgian electronic invoice (BE)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
     | Brazilian NF-e (BR)                  | <p>Fiscal document</p><p>Correction letter</p> | <p>Customer invoice context model – Fiscal document context</p><p>Customer invoice context model – FD correction letter context</p> |
     | Brazilian NFS-e ABRASF Curitiba (BR) | Service Fiscal document| Customer invoice context model – Fiscal document context |
-    | Brazilian NFS-e São Paulo (BR)       | Service Fiscal document| Customer invoice context model – Fiscal document context |
     | Danish electronic invoice (DK)       | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
     | Egyptian electronic invoice (EG)     | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
     | Estonian electronic invoice (EE)     | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
@@ -143,7 +137,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
 
-8. For each business document that the feature supports, select and enter a **Business document mapping** value according to the following table.
+8. For each table name and context, select and enter a business document mapping value according to the following table.
 
     | Feature name                         | Business document | Business document mapping |
     |--------------------------------------|-------------------|---------------------------|
@@ -151,7 +145,6 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Belgian electronic invoice (BE)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
     | Brazilian NF-e (BR)                  | <p>Fiscal document</p><p>Correction letter</p> | <p>Fiscal document mapping – Fiscal document mapping</p><p>Fiscal document mapping – correction letter mapping</p> |
     | Brazilian NFS-e ABRASF Curitiba (BR) | Service Fiscal document | Fiscal document mapping – Fiscal document mapping |
-    | Brazilian NFS-e São Paulo (BR)       | Service Fiscal document | Fiscal document mapping – Fiscal document mapping |
     | Danish electronic invoice (DK)       | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
     | Egyptian electronic invoice (EG)     | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
     | Estonian electronic invoice (EE)     | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
@@ -165,21 +158,32 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
 
-Depending on the country or region, the Electronic invoicing feature might require additional configuration.
 
-For specific steps, see the "Get started" documentation that is available for your country or region.
+## Country-specific configuration of application setup
 
-## Deploy the Electronic invoicing feature
+Depending on the country or region, the Application setup might require specific configuration. 
+
+For the specific steps, see the "Get started" documentation that is available for your country or region.
+
+## Deploy the Electronic invoicing feature to Service environment
 
 1. On the **Versions** tab, select the version of the Electronic invoicing feature that you want to deploy.
 2. Select **Change status** \> **Complete**.
 3. Select **Change status** \> **Publish**.
 4. Select **Deploy**.
+5. Set the **Deploy to connected application** option to **No**.
+6. Set the **Deploy to service environment** option to **Yes**.
+7. In the **Service environment** field, select the Electronic invoicing service environment where you want to deploy the Electronic invoicing feature.
+8. In the **From date** field, select the date when the Electronic invoicing feature must become effective in Electronic invoicing.
+9. Select **OK**.
+
+## Deploy the Electronic invoicing feature to Connected application
+
+1. On the **Versions** tab, select a version of the Electronic invoicing feature that you want to deploy.
+4. Select **Deploy**.
 5. Set the **Deploy to connected application** option to **Yes**.
-6. On the **Connect application** page, select the connection that is associated with your instance of Finance or Supply Chain Management.
-7. Set the **Deploy to service environment** option to **Yes**.
-8. In the **Service environment** field, select the Electronic invoicing add-on service environment where you want to deploy the Electronic invoicing feature.
-9. In the **From date** field, select the date when the Electronic invoicing feature must become effective in the Electronic invoicing add-on.
+6. On the **Connect application** field, select the connection that is associated with your instance of Finance or Supply Chain Management.
+7. Set the **Deploy to service environment** option to **No**.
 10. Select **OK**.
 
 ## Turn on the Electronic invoicing feature in Finance or Supply Chain Management
@@ -237,11 +241,11 @@ For specific steps, see the "Get started" documentation that is available for yo
 
 ## Related topics
 
-- [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
-- [Get started with Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md)
-- [Get started with the Electronic invoicing add-on for Brazil](e-invoicing-bra-get-started.md)
-- [Get started with the Electronic invoicing add-on for Mexico](e-invoicing-mex-get-started.md)
-- [Get started with the Electronic invoicing add-on for Italy](e-invoicing-ita-get-started.md)
+- [Electronic invoicing overview](e-invoicing-service-overview.md)
+- [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md)
+- [Get started with Electronic invoicing for Brazil](e-invoicing-bra-get-started.md)
+- [Get started with Electronic invoicing for Mexico](e-invoicing-mex-get-started.md)
+- [Get started with Electronic invoicing for Italy](e-invoicing-ita-get-started.md)
 - [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
 
 

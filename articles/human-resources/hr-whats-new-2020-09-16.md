@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Human Resources (September 16, 2020)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for September 16, 2020.
 author: jcart1106
-manager: tfehr
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -40,8 +38,8 @@ This topic describes features that are either new or changed in Dynamics 365 Hum
 
 ## Included in this release
 
--  [Saved views - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- For more information, see 
-[Saved views](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/saved-views). 
+-  [Saved views - general availability](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- For more information, see 
+[Saved views](../fin-ops-core/fin-ops/get-started/saved-views.md). 
 
 - The **Position actions** form has an updated dimensions grid and new dialogue (469495).
 
@@ -84,21 +82,21 @@ This topic describes features that are either new or changed in Dynamics 365 Hum
 
 Employees can view and request time away from work within Microsoft Teams. They can interact with a bot to create leave requests. For more information, see:
 
-- [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 1 plan
-- [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841) in Human Resources documentation
+- [Employee leave and absence experience in Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 1 plan
+- [Human Resources app in Teams](./hr-admin-teams-leave-app.md) in Human Resources documentation
 
 ### Human Resources app in Teams preview features
  
 -  **Notifications**: Submitters and approvers of time-off requests will be notified in the Human Resources app in Teams. Approvers can approve or deny time-off requests. Submitters will be notified if the request was approved or denied. For more information, see:
-   - [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 2 plan
-   - [Enable notifications for the Human Resources app in Teams](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#enable-notifications-for-the-human-resources-app-in-teams) in Human Resources documentation
-   - [Turn Teams notifications on or off for individual users](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#turn-teams-notifications-on-or-off-for-individual-users) in Human Resources documentation
-   - [Teams notifications](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#teams-notifications) in Human Resources documentation
-   - [View your team's leave calendar](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) in Human Resources documentation
+   - [Employee leave and absence experience in Microsoft Teams](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 2 plan
+   - [Enable notifications for the Human Resources app in Teams](./hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams) in Human Resources documentation
+   - [Turn Teams notifications on or off for individual users](./hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users) in Human Resources documentation
+   - [Teams notifications](./hr-teams-leave-app.md#respond-to-teams-notifications) in Human Resources documentation
+   - [View your team's leave calendar](./hr-teams-leave-app.md#view-your-teams-leave-calendar) in Human Resources documentation
  
 - **Manager time-off calendar**: Managers can see approved and pending time off for their direct reports in a calendar view. This view provides an easy understanding of when their team members are away from work. For more information, see:
-   - [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 2 plan
-   - [View your team's leave calendar](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) in Human Resources documentation
+   - [Employee leave and absence experience in Microsoft Teams](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 2 plan
+   - [View your team's leave calendar](./hr-teams-leave-app.md#view-your-teams-leave-calendar) in Human Resources documentation
 
 ### Configuration option to position Work items assigned to me list (477004)
 
@@ -106,7 +104,7 @@ A new option is now available to position the **Work items assigned to me** list
 
 This feature also promotes the workflow options that appear in the personnel actions forms. Workflow options also appear above the action fast tab for quick access. For more information, see: 
 
-- [Organization and personnel management workflow experience enhancements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) in the Dynamics 365 2020 release wave 2 plan
+- [Organization and personnel management workflow experience enhancements](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) in the Dynamics 365 2020 release wave 2 plan
 
 ![Work items assigned to me](./media/hr-workflow-work-items-assigned-to-me.png)
 
@@ -114,7 +112,7 @@ This feature also promotes the workflow options that appear in the personnel act
 
 ### Leave and absence calendar
 
-This release includes additional calendar options for leave and absence calendars. For more information, see [View team and company calendars](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-calendar).
+This release includes additional calendar options for leave and absence calendars. For more information, see [View team and company calendars](./hr-employee-self-service-calendar.md).
 
 ## Coming Soon
 
@@ -129,7 +127,7 @@ Benefits management reason codes will soon be combined with existing reason code
 ## See also
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
-[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
 

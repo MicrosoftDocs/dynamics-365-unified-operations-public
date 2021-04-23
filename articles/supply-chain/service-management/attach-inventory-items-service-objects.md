@@ -4,11 +4,9 @@
 title: Attach inventory items to service objects  
 description: This topic explains how to attach an inventory item to a service object.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

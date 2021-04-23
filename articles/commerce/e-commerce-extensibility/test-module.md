@@ -4,11 +4,9 @@
 title: Preview and debug a module
 description: This topic describes how to test a module by previewing and debugging it in a web browser.
 author: samjarawan
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to test a module by previewing and debugging it in a web browser.
-
-## Overview
 
 During development of a module, you can preview and debug the module in your local web browser.
 

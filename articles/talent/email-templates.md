@@ -4,11 +4,9 @@
 title: Create email templates in Attract
 description: This topic provides information about the email templates that you can create and use in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: tfehr
 ms.date: 10/19/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata

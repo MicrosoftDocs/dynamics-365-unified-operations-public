@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Talent (November 5, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for November 5, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -50,9 +48,9 @@ Changes described in this section apply to build number 8.1.2598. The numbers in
 
 In this week's release, you can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Talent: Core HR database to a sandbox environment. If you have another sandbox environment, you can also copy the database from that environment to a targeted sandbox environment. For more information, see:
 
-- [Broader environment management](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/broader-environment-management) in the Dynamics 365: 2019 release wave 2 plan
+- [Broader environment management](/dynamics365-release-plan/2019wave2/dynamics365-talent/broader-environment-management) in the Dynamics 365: 2019 release wave 2 plan
 
-- [Copy a Core HR instance](hr-copy-instance.md) in Talent documentation
+- [Copy a Core HR instance](../human-resources/hr-admin-setup-copy-instance.md) in Talent documentation
 
 ### Dataverse integration batch jobs aren't created when Dataverse integration is enabled (388030)
 
@@ -82,13 +80,13 @@ This release fixes an issue where addresses updated in Talent weren't updating i
 
 ### Print performance reviews
 
-See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
+See [Print performance reviews](/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
 
 ### Feature management workspace
 
 Features are added and updated in every release. The feature management experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.
 
-To learn more about the changes coming with feature management, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+To learn more about the changes coming with feature management, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

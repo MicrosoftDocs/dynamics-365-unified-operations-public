@@ -4,11 +4,9 @@
 title: Fixed asset counting (Russia)
 description: This topic provides information about fixed asset counting for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

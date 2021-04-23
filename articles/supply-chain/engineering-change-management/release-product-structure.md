@@ -4,11 +4,9 @@
 title: Release product structures
 description: This topic explains how you can release complete product structures in addition to releasing products together with their engineering versions. In this way, you can ensure that engineering-relevant product data can easily be reused in different legal entities.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

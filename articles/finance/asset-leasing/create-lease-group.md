@@ -4,16 +4,14 @@
 title: Create a lease group
 description: This topic explains how to set up lease groups. Lease groups are required to create new leases.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: TaxTable
+ms.search.form: AssetLeaseGroupTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

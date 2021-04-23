@@ -4,11 +4,9 @@
 title: EUR-00002 Generate an EU Intrastat declaration
 description: This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format. 
 author: Anasyash
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

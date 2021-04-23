@@ -4,11 +4,9 @@
 title: NL-00010 Electronic tax declarations (EVAT)
 description: This procedure walks you through setting up electronic tax declaration for the Netherlands. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

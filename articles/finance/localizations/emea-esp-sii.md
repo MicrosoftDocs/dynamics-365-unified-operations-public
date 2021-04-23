@@ -7,7 +7,6 @@ author: liza-golub
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -71,7 +70,7 @@ For more information about how to download ER configurations from the Microsoft 
 
 ## Import a package of data entities that includes a predefined EM setup
 
-Electronic message functionality is provided to maintain the different processes that are used in electronic reporting for different document types. For more information about electronic messages, see [Electronic messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electronic-messaging).
+Electronic message functionality is provided to maintain the different processes that are used in electronic reporting for different document types. For more information about electronic messages, see [Electronic messaging](../general-ledger/electronic-messaging.md).
 
 The process of setting up the electronic message functionality to interoperate with the SII system has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables, and that you import the ER configurations before you import the data entities.
 
@@ -82,13 +81,13 @@ The process of setting up the electronic message functionality to interoperate w
 
 3.  After the file is downloaded, open Finance, and select the company that you will interoperate with the SII system from.
 4.  Go to **Workspaces \> Data management**.
-5.  In the **Data management** workspace, go to **Framework parameters \> Entity settings**, and select **Refresh entity list**. Wait for confirmation that the refresh has been completed. For more information about how to refresh the entity list, see [Entity list refresh](https://docs.microsoft.com/dynamics365/dev-itpro/data-entities/data-entities#entity-list-refresh).
-6.  Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](https://docs.microsoft.com/dynamics365/dev-itpro/data-entities/data-import-export-job#validate-that-the-source-data-and-target-data-are-mapped-correctly).
+5.  In the **Data management** workspace, go to **Framework parameters \> Entity settings**, and select **Refresh entity list**. Wait for confirmation that the refresh has been completed. For more information about how to refresh the entity list, see [Entity list refresh](../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
+6.  Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
 7.  Before the data entities are used for the first time to import the data from the package, sync the mapping of the source data and target data. In the list for the package, select a data entity, and then, on the Action Pane, select **Modify target mapping**.
 8.  Above the grid for the package, select **Generate mapping** to create a mapping from scratch, and then save the mapping.
 9.  Repeat steps 7 and 8 for every data entity in the package before you start the import.
 
-For more information about data management, see [Data management overview](https://docs.microsoft.com/dynamics365/dev-itpro/data-entities/data-entities-data-packages).
+For more information about data management, see [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 Import data from the **ES SII setup.zip** file into the selected company. In the **Data management** workspace, select **Import**, specify a **Group name**, select **Add file**, and then, in the drop-down dialog box, set the **Source data format** field to **Package** and set the **Source data format** field to **Package**.
 
@@ -578,7 +577,7 @@ To correctly report both the preceding scenarios that involve a VAT rate of 0.00
 
 According to SII system rules, an extended set of parameters must be used when intra-community invoices are reported to the SII system. To submit additional information in a specific format for intra-community invoices, **SII** processing in Finance fills in the **OperacionesIntracomunitarias** message item type for invoices that were previously reported as standard invoices. The **GenerateMessageItem** action runs the **SIIGenerateItems** executable class. Based on the following criteria, it identifies invoices as invoices of the **OperacionesIntracomunitarias** message item type:
 
--   The **Intra-community** check box is selected for the sales tax group (**Tax \> Sales tax \> Sales tax group**) that is used in the sales tax transaction that is related to the invoice. Verify that the [Intra-community VAT for Spain](https://docs.microsoft.com/dynamics365/finance/localizations/emea-esp-intra-community-vat) feature is set up and used in your system.
+-   The **Intra-community** check box is selected for the sales tax group (**Tax \> Sales tax \> Sales tax group**) that is used in the sales tax transaction that is related to the invoice. Verify that the [Intra-community VAT for Spain](./emea-esp-intra-community-vat.md) feature is set up and used in your system.
 -   The country/region of the primary address of the counterparty from the invoice is identified as **EU** in the **Country/region properties** section of the **Foreign trade parameters** page (**Tax \> Setup \> Foreign trade \> Foreign trade parameters**).
 -   The counterparty is included in the SII intra-community setup (go to **Tax \> Setup \> Electronic messages \> Message item additional fields**, and then, in the **TipoOperacion** field, specify those counterparties for which invoices must be reported as intra-community invoices).
 

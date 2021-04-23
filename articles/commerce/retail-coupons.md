@@ -4,11 +4,9 @@
 title: Set up coupons for retail sales
 description: This topic provides an overview of coupons and explains how to set them up.
 author: scott-tucker
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -47,6 +45,8 @@ To create a coupon, you create the discount and the coupon separately. You then 
 
 > [!NOTE]
 > After a coupon is linked to a discount, several fields on the discount page in Commerce become read-only, because they are managed by the coupon's settings. These fields include the fields for the status and standard date ranges.
+> 
+> While using the coupon in the call center channel, you need to select the **Recalculate** button **(Sell tab > Calculate > Recalculate)** in order for the discount associated to the coupon to get applied. This additional step will be removed in a future release.
 
 ### Limited-use coupons
 

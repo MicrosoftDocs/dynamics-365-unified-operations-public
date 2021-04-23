@@ -4,7 +4,6 @@
 title: User interface control styles for production floor execution
 description: The topic explains how to configure form controls so that the default production floor execution styles are applied to them.
 author: inkharki
-manager: tfehr
 ms.date: 02/22/2021
 ms.topic: article
 ms.service: dynamics-365-supply-chain
@@ -24,8 +23,6 @@ ms.dyn365.ops.version: Release 10.0.15
 # User interface control styles for production floor execution
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview banner](../includes/preview-banner.md)]
 
 The topic explains how to configure form controls so that the default production floor execution styles are applied to them.
 

@@ -4,11 +4,9 @@
 title: German audit file (GDPdU/GoBD) overview
 description: Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics 365 Finance supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
 author: mrolecki
-manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 03/11/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -218,10 +216,44 @@ The following tables show the Accounts payable data structure definitions.
 | 12  | BUCHUNGSART              | Zeichen   | Buchungsart                           | $VendTrans/TransType                                      |
 | 13  | STATUS                   | Zeichen   | Status                                | $VendTrans/Approved                                       |
 
+### Fixed assets
 
-## Additional information
+Starting in version **33** of the **Data export model** configuration, Fixed assets data export is supported.
 
-- [Electronic Reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
+The following tables show the Fixed assets data structure definitions.
+
+#### Anlagen
+
+| Number | Feldname       | Feldtyp | Beschreibung                                 | Electronic Reporting Data Source Path |
+|------------|--------------------|-------------|--------------------------------------------------|-------------------------------------------|
+| 1          | ANLAGENNUMMER      | Zeichen     | Interne Nummer der Anlage                        | AssetTable/AssetId                        |
+| 2          | ANLAGENBEZEICHNUNG | Zeichen     | Bezeichnung der Anlage                           | AssetTable/Name                           |
+| 3          | ANLAGENGRUPPE      | Zeichen     | Gruppe, der die Anlage zugeordnet ist            | AssetTable/AssetGroup                     |
+| 4          | ANLAGENTYP         | Zeichen     | Typ der Anlage                                   | AssetTable/AssetType                      |
+| 5          | ANLAGENSTANDORT    | Zeichen     | Standort der Anlage                              | AssetTable/Location                       |
+| 6          | HAUPTANLAGE        | Zeichen     | Nummer der Anlage, der die Anlage zugeordnet ist | AssetTable/MainAssetId                    |
+| 7          | ANLAGENHERSTELLER  | Zeichen     | Hersteller der Anlage                            | AssetTable/Make                           |
+| 8          | ANLAGENMODELL      | Zeichen     | Modellnummer der Anlage                          | AssetTable/Model                          |
+| 9          | STATUS             | Zeichen     | Status der Anlage, ob vorhanden oder nicht       | AssetTable/\$AssetBook/Status             |
+
+#### Anlagenbuchungen
+
+| Number | Feldname       | Feldtyp | Beschreibung                                 | Electronic Reporting Data Source Path |
+|------------|-----------------|-------------|-----------------------------------------------|--------------------------------------------------------|
+| 1          | ANLAGENNUMMER   | Zeichen     | Interne Nummer der Anlage                     | \$AssetTransJoin/\$AssetTrans/AssetId                  |
+| 2          | WERTSTELLUNG    | Datum       | Datum der Wertstellung der Buchung            | \$AssetTransJoin/\$AssetTrans/TransDate                |
+| 3          | BELEGNUMMER     | Zeichen     | Interne Nummer des Buchungsbelegs             | \$AssetTransJoin/\$AssetTrans/Voucher                  |
+| 4          | BUCHUNGSBETRAG  | Num(2Dez)   | Betrag der Buchung                            | \$AssetTransJoin/\$AssetTrans/AmountCur                |
+| 5          | BUCHUNGSWÄHRUNG | Zeichen     | Währung der Buchung                           | \$AssetTransJoin/\$AssetTrans/CurrencyCode             |
+| 6          | BUCHUNGSWERT    | Num(2Dez)   | Wert der Buchung in Firmenwährung             | \$AssetTransJoin/\$AssetTrans/AmountMST                |
+| 7          | BUCHUNGSART     | Zeichen     | Art der Anlagenbuchung                        | \$AssetTransJoin/\$AssetTrans/TransType                |
+| 8          | BUCHUNGSTEXT    | Zeichen     | Text zur Anlagenbuchung                       | \$AssetTransJoin/\$AssetTrans/Txt                      |
+| 9          | ANLAGENGRUPPE   | Zeichen     | Gruppe, der die Anlagenbuchung zugeordnet ist | \$AssetTransJoin/\$AssetTrans/AssetGroup               |
+| 10         | BUCHUNGSEBENE   | Zeichen     | 0- Steuerbilanz; sonst: interne Buchungen     | \$AssetTransJoin/\$AssetBookTable/CurrentOperationsTax |
+
+## Additional resources
+
+- [Electronic Reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Import German audit file configuration](./tasks/import-german-audit-file-configuration.md)
 - [Customize German audit file configuration](./tasks/customize-german-audit-file-configuration.md)
 - [Generate German audit file](./tasks/german-audit-file.md)

@@ -4,7 +4,6 @@
 title: Plan AX 2012 R3 deployments on Azure
 description: Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make.
 author: kfend
-manager: AnnBe
 
 ms.date: 04/24/2020
 
@@ -41,13 +40,13 @@ Deployments of AX 2012 R3 on Azure are supported by Microsoft in the following s
 - Customer or partner-driven deployments that have been performed strictly adhering to the following guidance: 
    - SQL is deployed in a High Availability topology (using SQL Clustering/Always On).
    - SQL best practices have been followed for deployment in Azure, using the [Performance best practices for SQL Server in Azure Virtual Machines](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance). 
-   - Best practices for SQL Server configuration for AX 2012 have been followed, as specified in [Configure SQL Server and storage settings (TechNet)](https://technet.microsoft.com/library/dd309734.aspx). 
+   - Best practices for SQL Server configuration for AX 2012 have been followed, as specified in [Configure SQL Server and storage settings (TechNet)](/dynamicsax-2012/appuser-itpro/configure-sql-server-and-storage-settings). 
    - The System diagnostic tool is installed and best practices are followed, as specified in [System diagnostics in Lifecycle Services (LCS)](system-diagnostics-lcs.md) 
 
 > [!NOTE]
 > If you have an issue in an unsupported AX 2012 R3 on Azure environment, and can reproduce the same issue in an AX 2012 R3 environment that was either deployed to Azure through LCS, or deployed locally, Microsoft can provide support.
 > 
-> AX 2012 R3 can also be deployed on-premises. For details, see the topic [Install Microsoft Dynamics AX 2012](https://technet.microsoft.com/library/dd362138.aspx).
+> AX 2012 R3 can also be deployed on-premises. For details, see the topic [Install Microsoft Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/install-microsoft-dynamics-ax-2012).
 
 ## Verify that you can log on to Lifecycle Services
 Lifecycle Services (LCS) is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use the Cloud-hosted environments tool, available on the Lifecycle Services website, to deploy AX 2012 R3 on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. [Verify that you can log on to Lifecycle Services](https://lcs.dynamics.com/)
@@ -107,7 +106,7 @@ The Azure management portal provides developers and IT professionals the ability
 -   Connect to virtual machines.
 -   Monitor the health and status of your AX 2012 R3 environment.
 
-After you purchase an Azure subscription, you can access the management portal by clicking [here](https://manage.windowsazure.com/?whr=live.com). The following image shows the management portal. [![PlanYouAXR3DeploymentonAzure1](./media/planyouaxr3deploymentonazure1.jpg)](./media/planyouaxr3deploymentonazure1.jpg)  
+After you purchase an Azure subscription, you can access the management portal by clicking [here](https://manage.windowsazure.com/?whr=live.com). The following image shows the management portal. [![Management portal](./media/planyouaxr3deploymentonazure1.jpg)](./media/planyouaxr3deploymentonazure1.jpg)  
 
 ## Become familiar with the Azure VM agent
 The Azure VM Agent is now automatically deployed with every VM deployed via Lifecycle Services. The Azure VM Agent is used to install, configure, manage and run Azure Virtual Machine Extensions (VM Extensions). VM extensions can help you monitor and manage your VMs.
@@ -115,9 +114,8 @@ The Azure VM Agent is now automatically deployed with every VM deployed via Life
 ## Consider Cloud Services resource requirements
 When a topology is deployed, the deployment system will inspect the virtual machine (VM) SKUs that were selected. In order to ensure that Azure deploys these VMs to the proper clusters where the VMs are available, each level of VM SKU must have its own Azure Cloud Service. The VM SKU breakdown is as follows:
 
-|         |                                 |
+|  **SKU**        |   **Size**                               |
 |---------|---------------------------------|
-| **SKU** | **Size**                        |
 | A       | Standard A’s \[A0-A4\]          |
 | AM      | Standard A's \[A5-A7\]          |
 | AL      | Standard A’s (large) \[A8-A11\] |
@@ -130,22 +128,22 @@ A Cloud Service will be created with the following naming scheme: Version-Topolo
 Please consider the Cloud Services resource requirements for your deployments and request additional Cloud Services capacity in your Azure Subscription from Azure Support if necessary.
 
 ## Plan for storage accounts
-For each project created in Lifecycle Services, one or more distinct storage accounts will be created in the Azure subscription. A storage account is created when you connect your project to your Azure subscription. This storage account is a Locally Redundant Storage (LRS) account, and is used to house scripts and VHDs which are required for deployments. An additional Premium storage account is created for each project when the first Premium storage-enabled topology is deployed from the project. Storage accounts are not shared across Lifecycle Services projects, even if the deployments are to the same Azure subscription. When a Premium storage account is created, it too is created as LRS. For more information about storage, click [here](https://azure.microsoft.com/pricing/details/storage). Consider which topologies and the number of environments that will be deployed into the same Lifecycle Services (LCS) project and Azure Connector. Premium storage account aside, by default there is 1 storage account for each LCS project and Azure Connector. Be aware that Azure storage has [limits](https://azure.microsoft.com/documentation/articles/azure-subscription-service-limits/#storage-limits), specifically 20,000 IOPS (input/output operations per second) per standard storage account. Combined with 500 IOPS per VHD, that leaves roughly 40 ***highly utilized*** VHDs before throttling occurs. To mitigate this, we recommend that you leverage multiple Azure Connectors and/or multiple LCS projects. For example, consider having production environments in one LCS project, and Dev/Test environments in another. 
+For each project created in Lifecycle Services, one or more distinct storage accounts will be created in the Azure subscription. A storage account is created when you connect your project to your Azure subscription. This storage account is a Locally Redundant Storage (LRS) account, and is used to house scripts and VHDs which are required for deployments. An additional Premium storage account is created for each project when the first Premium storage-enabled topology is deployed from the project. Storage accounts are not shared across Lifecycle Services projects, even if the deployments are to the same Azure subscription. When a Premium storage account is created, it too is created as LRS. For more information about storage, click [here](https://azure.microsoft.com/pricing/details/storage). Consider which topologies and the number of environments that will be deployed into the same Lifecycle Services (LCS) project and Azure Connector. Premium storage account aside, by default there is 1 storage account for each LCS project and Azure Connector. Be aware that Azure storage has [limits](/azure/azure-resource-manager/management/azure-subscription-service-limits#storage-limits), specifically 20,000 IOPS (input/output operations per second) per standard storage account. Combined with 500 IOPS per VHD, that leaves roughly 40 ***highly utilized*** VHDs before throttling occurs. To mitigate this, we recommend that you leverage multiple Azure Connectors and/or multiple LCS projects. For example, consider having production environments in one LCS project, and Dev/Test environments in another. 
 
 > [!NOTE]
 > Not all VHDs that LCS deploys will be highly utilized, such as the installation VHD.
 
 ## Plan your SQL Server configuration
-Azure Premium Storage delivers high-performance, low-latency disk support for I/O intensive workloads running on Azure virtual machines (VMs). With Premium Storage, your applications can have up to 32 TB of storage per VM, achieve 50,000 IOPS per VM, and have extremely low latencies for read operations. Premium Storage is required for AX 2012 R3 deployments that will be used in a production capacity. Premium Storage is enabled by default for High Availability deployments when Azure DS-series VMs are selected. Premium Storage is only offered on DS-series VMs at this time. Premium Storage is enabled exclusively for the SQL Server AlwaysOn database servers, while non-Premium storage is used for all other storage needs. When a SQL Server AlwaysOn availability set is created, Lifecycle Services will attach a disk for every disk slot supported by the DS-series VM selected. For more information about VM disk capacity, click [here](https://msdn.microsoft.com/library/azure/dn197896.aspx). Different VM sizes will come with varying maximums for throughput and IOPS. As a result, when you are planning your SQL Server configuration, please be familiar with these limitations to ensure that you are deploying the most efficient and cost effective solution for your business. Please follow the guidance found in [Premium Storage: High-Performance Storage for Azure Virtual Machine Workloads](https://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/), particularly the section, **Throttling when using Premium Storage**. The SQL Server AlwaysOn availability set is created automatically through Lifecycle Services. It is important to consider your data and performance needs before deploying a High Availability topology for use with a production system. Please refer to Azure Premium Storage information [here](https://azure.microsoft.com/documentation/articles/storage-premium-storage-preview-portal/). Once you have planned your deployment with Premium Storage, the High Availability topology provides configuration options to help you achieve your cost and performance objectives. Under Advanced Settings for the High Availability topology, the following SQL Server configuration options appear:
+Azure Premium Storage delivers high-performance, low-latency disk support for I/O intensive workloads running on Azure virtual machines (VMs). With Premium Storage, your applications can have up to 32 TB of storage per VM, achieve 50,000 IOPS per VM, and have extremely low latencies for read operations. Premium Storage is required for AX 2012 R3 deployments that will be used in a production capacity. Premium Storage is enabled by default for High Availability deployments when Azure DS-series VMs are selected. Premium Storage is only offered on DS-series VMs at this time. Premium Storage is enabled exclusively for the SQL Server AlwaysOn database servers, while non-Premium storage is used for all other storage needs. When a SQL Server AlwaysOn availability set is created, Lifecycle Services will attach a disk for every disk slot supported by the DS-series VM selected. For more information about VM disk capacity, click [here](/previous-versions/azure/dn197896(v=azure.100)). Different VM sizes will come with varying maximums for throughput and IOPS. As a result, when you are planning your SQL Server configuration, please be familiar with these limitations to ensure that you are deploying the most efficient and cost effective solution for your business. Please follow the guidance found in [Premium Storage: High-Performance Storage for Azure Virtual Machine Workloads](/azure/virtual-machines/disks-types), particularly the section, **Throttling when using Premium Storage**. The SQL Server AlwaysOn availability set is created automatically through Lifecycle Services. It is important to consider your data and performance needs before deploying a High Availability topology for use with a production system. Please refer to Azure Premium Storage information [here](/azure/virtual-machines/disks-types). Once you have planned your deployment with Premium Storage, the High Availability topology provides configuration options to help you achieve your cost and performance objectives. Under Advanced Settings for the High Availability topology, the following SQL Server configuration options appear:
 
 -   **Customize the SQL Server image configuration** – This option allows the use of a custom SQL Server Enterprise image or an Azure Gallery SQL Server Enterprise image.
     -   Custom SQL Server image (default) – This image contains a trial edition of SQL Server Enterprise 2014. The trial license is enabled for 3-6 months. Use this option if you want to use an existing EA/etc. license.
-    -   Gallery SQL Server image – This image contains SQL Server Enterprise 2014 and uses consumption-based Azure pricing. More information can be found on the [Azure Virtual Machines Pricing](https://azure.microsoft.com/pricing/details/virtual-machines/#sql-server) page and the [SQL Server in Azure Virtual Machines](https://msdn.microsoft.com/library/azure/jj823132.aspx)
+    -   Gallery SQL Server image – This image contains SQL Server Enterprise 2014 and uses consumption-based Azure pricing. More information can be found on the [Azure Virtual Machines Pricing](https://azure.microsoft.com/pricing/details/virtual-machines/#sql-server) page and the [SQL Server in Azure Virtual Machines](/previous-versions/azure/jj823132(v=azure.100))
 -   **Customize the SQL Server storage space configuration** – You can specify the number and size of the disks that will be attached to the SQL Server VMs.
 
 Keep the following points in mind when specifying the number of disks that should be used to create the storage space within SQL Server:
 
--   The VM size that is selected for the database server dictates how many disks are supported by that VM SKU. Information about the number of disks that are supported by each VM can be found [here](https://msdn.microsoft.com/library/azure/dn197896.aspx).
+-   The VM size that is selected for the database server dictates how many disks are supported by that VM SKU. Information about the number of disks that are supported by each VM can be found [here](/previous-versions/azure/dn197896(v=azure.100)).
 -   One of the available disk slots on the VM will be used by the Lifecycle Services deployment service. This means the VM’s maximum number of disks—minus 1—equals the available slots to fill.
 -   Leaving this setting blank will allow the deployment service to attach disks up to the maximum supported by the VM. It is recommended for production deployments that the maximum disks be used.
 
@@ -235,7 +233,7 @@ Licensing the various components of the AX 2012 R3 virtual machine environment i
 <ul>
 <li><strong>License Mobility through Software Assurance on Azure program</strong> License Mobility through Software Assurance gives Microsoft volume licensing customers the flexibility to deploy eligible server applications with active Software Assurance on Azure. With this Software Assurance benefit, there is no need to purchase new licenses and no associated mobility fees. This enables you to easily deploy existing licenses on the Azure cloud platform. For more information, see <a href="https://www.windowsazure.com/pricing/license-mobility/">this page</a>. For Development, Test, and High Availability topologies trial versions of SharePoint, Visual Studio, SQL Server, and Office are provided. The trials range from 30-180 days. Please apply licenses accordingly.</li>
 <li><strong>Microsoft Dynamics AX volume licensing buyer’s guide</strong> For an overview of key licensing options with Microsoft Dynamics AX, see <a href="https://go.microsoft.com/fwlink/?LinkId=397363">this page</a>.</li>
-<li><strong>Shared computer activation for Microsoft 365 Apps for enterprise</strong> Shared computer activation lets you to deploy Microsoft 365 Apps for enterprise to a computer in your organization that is accessed by multiple users. For more information, see <a href="https://technet.microsoft.com/library/dn782860(v=office.15).aspx">this page</a>.</li>
+<li><strong>Shared computer activation for Microsoft 365 Apps for enterprise</strong> Shared computer activation lets you to deploy Microsoft 365 Apps for enterprise to a computer in your organization that is accessed by multiple users. For more information, see <a href="/deployoffice/overview-shared-computer-activation">this page</a>.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -529,7 +527,7 @@ This environment includes several virtual machines, by default. These virtual ma
 <li>Management Studio</li>
 </ul></li>
 </ul>
-    <strong>Note: </strong> Reporting Services is configured to run in Native mode. To use Power View, you’ll need to complete additional configuration steps. For more information, see the prerequisites listed in <a href="https://technet.microsoft.com/library/jj933492.aspx">Create a report by using Power View to connect to a cube</a>.
+    <strong>Note: </strong> Reporting Services is configured to run in Native mode. To use Power View, you’ll need to complete additional configuration steps. For more information, see the prerequisites listed in <a href="/dynamicsax-2012/appuser-itpro/create-a-report-by-using-power-view-to-connect-to-a-cube">Create a report by using Power View to connect to a cube</a>.
 <ul>
 <li>AX 2012 R3 or AX 2012 R3 CU8 components:
 <ul>
@@ -881,7 +879,7 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 <td><strong>Note</strong></td>
 </tr>
 <tr class="even">
-<td>Reporting Services is configured to run in Native mode. To use Power View, you’ll need to complete additional configuration steps. For more information, see the prerequisites listed in <a href="https://technet.microsoft.com/library/jj933492.aspx">Create a report by using Power View to connect to a cube</a>.</td>
+<td>Reporting Services is configured to run in Native mode. To use Power View, you’ll need to complete additional configuration steps. For more information, see the prerequisites listed in <a href="/dynamicsax-2012/appuser-itpro/create-a-report-by-using-power-view-to-connect-to-a-cube">Create a report by using Power View to connect to a cube</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -912,7 +910,7 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 <td><strong>Note</strong></td>
 </tr>
 <tr class="even">
-<td>Reporting Services is configured to run in Native mode. To use Power View, you’ll need to complete additional configuration steps. For more information, see the prerequisites listed in <a href="https://technet.microsoft.com/library/jj933492.aspx">Create a report by using Power View to connect to a cube</a>.</td>
+<td>Reporting Services is configured to run in Native mode. To use Power View, you’ll need to complete additional configuration steps. For more information, see the prerequisites listed in <a href="/dynamicsax-2012/appuser-itpro/create-a-report-by-using-power-view-to-connect-to-a-cube">Create a report by using Power View to connect to a cube</a>.</td>
 </tr>
 </tbody>
 </table>

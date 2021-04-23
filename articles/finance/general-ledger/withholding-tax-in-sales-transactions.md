@@ -5,11 +5,9 @@ title: Withholding tax in sales transactions
 description: This topic lists the steps for avoiding the calculation of withholding tax for selected customers. For customers who specify withholding tax in their payments to you, you can assign the default withholding tax group. 
 
 author: roschlom
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

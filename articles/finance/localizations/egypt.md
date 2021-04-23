@@ -4,11 +4,9 @@
 title: Egypt overview
 description: This topic provides an overview of functionality specific to Egypt. 
 author: ilkond
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

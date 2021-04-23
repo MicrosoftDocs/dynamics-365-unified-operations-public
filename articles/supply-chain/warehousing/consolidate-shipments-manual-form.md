@@ -4,11 +4,9 @@
 title: Consolidate shipments manually by using the Consolidate shipments page
 description: This topic presents a scenario where multiple orders are released to the warehouse and then consolidated later by using the Consolidate shipments page.
 author: GarmMSFT
-manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata

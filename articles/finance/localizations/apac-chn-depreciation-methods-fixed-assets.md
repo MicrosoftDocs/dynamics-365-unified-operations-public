@@ -4,11 +4,9 @@
 title: Fixed assets depreciation methods for China
 description: This topic describes the depreciation method set up for legal entities in China.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

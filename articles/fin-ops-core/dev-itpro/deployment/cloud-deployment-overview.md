@@ -4,8 +4,7 @@
 title: Cloud deployment overview
 description: This topic describes the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
 author: LaneSwenka
-manager: AnnBe
-ms.date: 01/12/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -208,10 +207,8 @@ Beginning August 1, 2020, new projects for Finance and Operations will be onboar
 - East US
 - West US
 - Central US
-
-### My environments are currently in the regions that will be deprecated. How will this change affect me?
-We will deprecate support for the following regions only for new projects that will be onboarded on or after August 1, 2020:
-
+ > [!IMPORTANT]
+ > Central US is no longer an option for Self Service migrations beginning April 1, 2021.
 -	East US2
 -	West US2
 -	West Central US

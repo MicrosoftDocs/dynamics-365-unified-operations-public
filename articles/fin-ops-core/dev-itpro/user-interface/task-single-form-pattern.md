@@ -4,7 +4,6 @@
 title: Task Single form pattern
 description: This article provides information about the Task Single form pattern.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

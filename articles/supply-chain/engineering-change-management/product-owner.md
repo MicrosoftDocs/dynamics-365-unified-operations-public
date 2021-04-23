@@ -4,11 +4,9 @@
 title: Product owners
 description: This topic provides information about product owners. A product owner is a group of users who are responsible for specific products. Only members of the group can release those products. The product owner can also be used in the approval workflow.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

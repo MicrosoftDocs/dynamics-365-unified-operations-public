@@ -4,11 +4,9 @@
 title: Data action cache options
 description: This topic provides an overview of supported data action cache options in Dynamics 365 Commerce. 
 author: samjarawan
-manager: annbe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

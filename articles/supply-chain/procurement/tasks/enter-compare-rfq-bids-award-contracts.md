@@ -3,12 +3,10 @@
  
 title: Enter and compare RFQ bids and award contracts
 description: This topic explains how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors. 
-author: RichardLuan
-manager: tfehr 
+author: kamaybac
 ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -21,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -38,7 +36,7 @@ You can enter the bid as either a vendor or a procurement professional. For more
 
 ## Enter a reply as a vendor
 
-1. On the dashboard, select **Vendor bidding**.
+1. Go to **Vendor collaboration \> Workspaces \> Vendor bidding**.
 2. In the **New bid invitations** list, find an RFQ that was just sent. Select the RFQ to review what was requested.
 3. Select **RFQ attachments** to review any attachments that have been added.
 4. Select **Bid** to make the fields editable. Notice that the **Bid progress** field is set to **Vendor is updating**.

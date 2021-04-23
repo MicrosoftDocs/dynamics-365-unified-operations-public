@@ -4,7 +4,6 @@
 title: Estimate and manage landed costs
 description: The system uses your auto cost setup to determine an estimate for your landed cost. This topic explains how you can define various scenarios to deliver a more accurate estimate.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/26/2021
 ms.topic: article
 ms.prod: 
@@ -30,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Estimate and manage landed costs
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The system uses your [auto cost setup](auto-cost-setup.md) to determine an estimate for your landed cost. Additionally, you can define various scenarios to deliver a more accurate estimate. These scenarios are stored. Therefore, you can review them later and compare them to actuals on a report. You can also update the item price.
 

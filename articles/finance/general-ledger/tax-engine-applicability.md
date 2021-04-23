@@ -4,11 +4,9 @@
 title: Tax engine applicability
 description: This topic provides information about Tax engine applicability.
 author: yijialuan
-manager: AnnBe
 ms.date: 10/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -20,7 +18,7 @@ ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: riluan
+ms.author: pacheren
 ms.search.validFrom: 2018-10-07
 ms.dyn365.ops.version: 7.3
 
@@ -67,7 +65,7 @@ Select the tax component CGST, and click the pencil icon, to check the detailed 
 
 ![CGST condition details](media/gte-tax-document-applicability-cgst-condition.png)
 
-The condition is actually an [Electronic Reporting](../../dev-itpro/analytics/general-electronic-reporting.md) expression. It is comprised of the fields on the left in **Data source**, and **Functions** on the right. For a list of supported functions, see [Formula designer in Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md). 
+The condition is actually an [Electronic Reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) expression. It is comprised of the fields on the left in **Data source**, and **Functions** on the right. For a list of supported functions, see [Formula designer in Electronic reporting (ER)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md). 
 
 The following condition means that *Taxable Document Type* cannot be "Invent transfer order receive", "Invent transfer order shipment", or "Invent transfer order". This also means that either HSN Code or SAC should be specified.
 
@@ -130,7 +128,7 @@ If the static applicability rules are complex, or it is a dynamic applicability 
 ### Lookup for static applicability rules
 Select **GST**, click **Lookups**.
 
-![CGST condition](media/gte-tax-document-applicability-static-lookups.png)
+![CGST condition for lookups](media/gte-tax-document-applicability-static-lookups.png)
 
 Because a lookup can handle both static applicability rules and dynamic applicability rules, the **Source type** drop-down list is for this purpose. Use **Configuration** for the static applicability rule, which means that the data used in the lookup comes from the configuration. Use **User data** for the dynamic applicability rule, which means that the data used in the lookup comes from the runtime environment.
 

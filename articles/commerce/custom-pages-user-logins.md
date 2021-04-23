@@ -4,11 +4,9 @@
 title: Set up custom pages for user sign-ins
 description: This topic describes how to build custom pages in Microsoft Dynamics 365 Commerce that handle customized sign-ins for users of Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants.
 author: brianshook
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -36,7 +34,12 @@ This topic describes how to build custom pages in Microsoft Dynamics 365 Commerc
 
 To use custom pages that are authored in Dynamics 365 Commerce to handle user sign-in flows, you must set up the Azure AD policies that will be referenced in the Commerce environment. You can configure the "Sign up and sign in," "Profile editing," and "Password reset" Azure AD B2C policies by using the Azure AD B2C application. The Azure AD B2C tenant and policy names can then be referenced during the provisioning process that is done for the Commerce environment by using Microsoft Dynamics Lifecycle Services (LCS).
 
-The custom Commerce pages can be built by using the sign in, sign up, account profile edit, or password reset module. The page URLs that are published for these custom pages should then be referenced in Azure AD B2C policy configurations in the Azure portal.
+The custom Commerce pages can be built by using the sign in, sign up, account profile edit, password reset, or generic AAD modules. The page URLs that are published for these custom pages should then be referenced in Azure AD B2C policy configurations in the Azure portal.
+
+> [!WARNING] 
+> Azure AD B2C will retire old (legacy) user flows by August 1, 2021. Therefore, you should plan to migrate your user flows to the new recommended version. The new version provides feature parity and new features. For more information, see [User flows in Azure Active Directory B2C](/azure/active-directory-b2c/user-flow-overview).
+
+>The module library for Commerce version 10.0.15 or higher should be used with the recommended B2C user flows. The default user policy pages offered in Azure AD B2C can also be used, and allow for added background image, logo, and background color changes related to company branding. Though more limited in design capabilities, the default user policy pages provide Azure AD B2C policy functionality without creating and configuring dedicated custom pages. 
 
 ## Set up B2C policies
 
@@ -50,7 +53,7 @@ You can now configure the "Sign up and sign in," "Profile editing," and "Passwor
 
 To configure the "Sign up and sign in" policy, follow these steps.
 
-1. Select **New user flow**, and then, on the **Recommended** tab, select the **Sign up and sign in** policy.
+1. Select **New user flow**, select **Sign up and sign in**, select the **Recommended** tab,  and then select **Create**.
 1. Enter a name for the policy (for example, **B2C\_1\_SignInSignUp**).
 1. In the **Identity Providers** section, select the identity providers to use for the policy. At a minimum, **Email signup** must be selected.
 1. In the **Collect attribute** column, select the check boxes for **Email Address**, **Given Name**, and **Surname**.
@@ -73,10 +76,10 @@ You will return to this policy to finish the setup after you've built the custom
 
 To configure the "Profile editing" policy, follow these steps.
 
-1. Select **New user flow**, and then, on the **Recommended** tab, select the **Profile editing** policy.
+1. Select **New user flow**, select **Profile editing**, select the **Recommended** tab, and then select **Create**.
 1. Enter a name for the policy (for example, **B2C\_1\_EditProfile**).
 1. In the **Identity Providers** section, select the identity providers to use for the policy. At a minimum, **Local Account SignIn** must be selected.
-1. In the **Collect attribute** column, select the check boxes for **Email Addresses** and **Surname**.
+1. In the **Collect attribute** column, select the check boxes for **Given Name** and **Surname**.
 1. In the **Return claim** column, select the check boxes for **Email Addresses**, **Given Name**, **Identity Provider**, **Surname**, and **User's Object ID**.
 1. Select **OK** to create the policy.
 1. Double-click the new policy name, and then, in the navigation pane, select **Properties**.
@@ -88,16 +91,10 @@ You will return to this policy to finish the setup after you've built the custom
 
 To configure the "Password reset" policy, follow these steps.
 
-1. Select **New user flow**, and then, on the **Preview** tab, select the **Password reset v1.1** policy.
-
-    ![Password reset v1.1 policy selected on the Preview tab](./media/B2C_ForgetPassword_Menu.png)
-
+1. Select **New user flow**, and then select the **Password reset** option, and choose the **Recommended** tab, and click **Create**.
 1. Enter a name for the policy (for example, **B2C\_1\_ForgetPassword**).
 1. In the **Identity Providers** section, select **Reset password using email address**.
 1. In the **Return claim** column, select the check boxes for **Email Addresses**, **Given Name**, **Surname**, and **User's Object ID**.
-
-    ![Claims selected](./media/B2C_ForgetPassword_Attributes.png)
-
 1. Select **OK** to create the policy.
 1. Double-click the new policy name, and then, in the navigation pane, select **Properties**.
 1. Set the **Enable JavaScript enforcing page layout (preview)** option to **On**.
@@ -106,16 +103,24 @@ You will return to this policy to finish the setup after you've built the custom
 
 ## Build the custom pages
 
-To build the custom pages to handle user sign-ins, follow these steps.
+Dedicated Azure AD modules are included in Commerce to build custom pages for Azure AD B2C user policies. Pages can be built specifically for each user policy page's layout using the main Azure AD B2C modules detailed below. Alternatively, the **AAD Generic** module can be used for all page layouts and policies in Azure AD B2C (even for page layout options within policies not listed below). 
 
-1. In the Commerce authoring tools, go to your site.
-1. Build the following five templates and five pages:
+- Page-specific Azure AD modules are bound to data input items rendered by Azure AD B2C. These modules give you more control over the positioning of the elements in your pages. However, more pages and module extensions may need to be built to account for variances beyond the default settings described below.
+- The **AAD Generic** module creates the "div" element for Azure AD B2C to render all elements in the user policy page layout, giving more flexibility to the B2C functions of the page, but less control of the positioning and styling (though CSS can be used to match the look and feel of your site).
 
-    - A **Sign In** template and page that use the sign in module.
-    - A **Sign Up** template and page that use the sign up module.
+You can create a single page with the **AAD Generic** module and use it for all of your user policy pages, or you can build out specific pages using the individual Azure AD modules for sign-in, sign-up, profile edit, password reset, and password reset verification. You may also use a mix of both, using the specific Azure AD pages for the page layouts noted below, and the generic AAD module page for remaining page layouts within these or other user policies pages.
+
+To learn more about the Azure AD Modules that ship with the module library, read more at [Identity management pages and modules](identity-mgmt-modules.md).
+
+To build the custom pages with specific identity modules to handle user sign-ins, follow these steps.
+
+1. In Commerce site builder, go to your site.
+1. Build the following five templates and pages (if not already present in your site):
+    - A **Sign In** template and page that use the sign-in module.
+    - A **Sign Up** template and page that use the sign-up module.
     - A **Password Reset** template and page that use the password reset module.
     - A **Password Reset verification** template and page that use the password reset verification module.
-    - A **Profile Edit** template and page that use the account profile edit module
+    - A **Profile Edit** template and page that use the account profile edit module.
 
 When you build the pages, follow these guidelines:
 
@@ -124,7 +129,7 @@ When you build the pages, follow these guidelines:
 - After the pages and URLs are published, collect the URLs that must be used for the Azure AD B2C policy configurations. A **?preloadscripts=true** suffix will be added to every URL when it's used.
 
 > [!IMPORTANT]
-> Don't reuse universal headers and footers that have relative links. Because these pages will be hosted in the Azure AD B2C domain when they are used, only absolute URLs should be used for all links.
+> Pages built to be referenced in Azure AD B2C are served directly from the Azure AD B2C tenant's domain. Do not reuse universal headers and footers that have relative links. Because these pages will be hosted in the Azure AD B2C domain when they are used, only absolute URLs should be used for all links. It is recommended to create a specific header and footer with absolute URLs for your Azure AD-related custom pages, with any Commerce-specific modules that require connection to Retail Server removed. For example, the favorites, search bar, sign-in link, and cart modules should not be included in any pages which will be used in Azure AD B2C user flows.
 
 ## Configure Azure AD B2C policies with custom page information 
 
@@ -138,51 +143,53 @@ To update the "Sign up and sign in" policy with custom page information, follow 
 1. Select the **Unified sign up or sign in page** layout.
 1. Set the **Use custom page content** option to **Yes**.
 1. In the **Custom page URI** field, enter the full sign-in URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/sign-in?preloadscripts=true``.
-1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
+1. In the **Page Layout Version** field, select version **2.1.0** or later (requires module library for Commerce version 10.0.15 or higher).
+1. Select **Save**.
 1. Select the **Local account sign up page** layout.
 1. Set the **Use custom page content** option to **Yes**.
 1. In the **Custom page URI** field, enter the full sign-up URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/sign-up?preloadscripts=true``.
-1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
+1. In the **Page Layout Version** field, select version **2.1.0** or later (requires module library for Commerce version 10.0.15 or higher).
 1. In the **User attributes** section, follow these steps:
+    1. For the **Given Name** and **Surname** attributes, select **No** in the **Requires Verification** column.
+    1. For **Email Address** attribute, it is recommended to leave the default value **Yes** selected in the **Requires Verification** column. This option ensures that users signing up with a given email address verify that they own the email address.
+    1. For the **Email Address**, **Given Name**, and **Surname** attributes, select **No** in the **Optional** column.
+1. Select **Save**.
 
-    1. For the **Email Address**, **Given Name**, and **Surname** attributes, select **No** in the **Requires Verification** field.
-    1. For the **Given Name** and **Surname** attributes, select **No** in the **Optional** field.
-
-    ![Configuration of the Local account sign up page policy](./media/B2C_SignUp_PageURLConfig.png)
+    ![Configuration of the local account sign up page policy](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
 
 ### Update the "Profile editing" policy with custom page information
 
 To update the "Profile editing" policy with custom page information, follow these steps.
 
 1. In the **Profile Editing** policy that you configured earlier, in the navigation pane, select **Page layouts**.
-1. Select the **Profile edit page** layout.
+1. Select the **Profile edit page** layout (may require scrolling down past other layout options, depending on your screen).
 1. Set the **Use custom page content** option to **Yes**.
 1. In the **Custom page URI** field, enter the full profile edit URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/profile-edit?preloadscripts=true``.
-1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
+1. For **Page Layout Version**, select version **2.1.0** or higher (requires module library for Commerce version 10.0.15 or higher).
 1. In the **User attributes** section, follow these steps:
-
-    1. For the **Email Address**, **Given Name** attributes, select **No** in the **Requires Verification** field.
-    1. For the **Given Name** and **Surname** attributes, select **No** in the **Optional** field.
+    1. For the **Given Name** and **Surname** attributes, select **No** in the **Optional** column.
+    1. For the **Given Name** and **Surname** attributes, select **No** in the **Requires verification** column.
+1. Select **Save**.
 
 ### Update the "Password reset" policy with custom page information
 
 To update the "Password reset" policy with custom page information, follow these steps.
 
 1. In the **Password Reset** policy that you configured earlier, in the navigation pane, select **Page layouts**.
-1. Select the **New password page** layout.
+1. Select the **Forgot password page** layout.
 1. Set the **Use custom page content** option to **Yes**.
-1. In the **Custom page URI** field, enter the full password reset URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/passwordreset?preloadscripts=true``.
-1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
-1. Select the **Account verification page** layout.
-1. Set the **Use custom page content** option to **Yes**.
-1. In the **Custom page URI** field, enter the full password reset verification URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/passwordreset-verification?preloadscripts=true``.
-1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
-
-
+1. In the **Custom page URI** field, enter the full password reset verification URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/password-reset-verification?preloadscripts=true``.
+1. In the **Page Layout Version** field, select version **2.1.0** or higher (requires module library for Commerce version 10.0.15 or higher).
+2. Select **Save**.
+3. Select the **Change password page** layout.
+4. Set the **Use custom page content** option to **Yes**.
+5. In the **Custom page URI** field, enter the full password reset URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/password-reset?preloadscripts=true``.
+6. In the **Page Layout Version** field, select version **2.1.0** or higher (requires module library for Commerce version 10.0.15 or higher).
+7. Select **Save**.
 
 ## Customize default text strings for labels and descriptions
 
-In the module library, sign-in modules are prefilled with default text strings for the labels and descriptions. You can customize these strings in the software development kit (SDK) by updating the values in the global.json file for the sign in module.
+In the module library, sign-in modules are prefilled with default text strings for the labels and descriptions. You can customize the strings in the properties pane of the module you are working on. Additional strings on the page (such as the **Forgotten password?** link text or the **Create an account** call to action text) will require using the Commerce software development kit (SDK) and updating the values in the global.json file for the sign-in module.
 
 For example, the default text for the forgotten password link is **Forgotten password?**. The following shows this default text on the sign-in page.
 

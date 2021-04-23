@@ -4,11 +4,9 @@
 title: Scenario setup for IoT Intelligence
 description: This topic explains how to configure scenarios for IoT Intelligence in Microsoft Dynamics 365 Supply Chain Management.
 author: robinarh
-manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -49,7 +47,7 @@ The **Equipment downtime** scenario has the following dependencies:
 To configure the scenario, follow these steps.
 
 1. Sign in to Supply Chain Management.
-2. Enable the IoT Intelligence feature flag. For more information, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+2. Enable the IoT Intelligence feature flag. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 3. Configure the metrics. For more information, see [How to configure metrics](iot-metrics-setup.md#configure-metrics).
 4. Go to **Production control \> Setup \> IoT Intelligence \> Scenario management**.
 6. On the **Equipment downtime** tile, select **Configure** to open the configuration wizard.

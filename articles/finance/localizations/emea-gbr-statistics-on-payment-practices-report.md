@@ -3,11 +3,9 @@
 title: Statistics on payment practices report
 description: This topic provides information about the Statistics on payment practices report.
 author: anasyash
-manager: AnnBe
 ms.date: 01/29/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -49,7 +47,7 @@ The **Statistics on payment practices (UK)** report is exported to Microsoft Exc
 
 Before you use this report, download the latest version of the **Statistics on payment practices (UK)** Electronic reporting (ER) configuration, the **Statistics on invoices** ER model, and the **Statistics on invoices model mapping** ER model mapping.
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Post documents and define the date when the invoice is received
 

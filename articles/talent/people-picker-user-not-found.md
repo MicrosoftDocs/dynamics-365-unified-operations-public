@@ -4,11 +4,9 @@
 title: User not found in People Picker in Attract or Onboard
 description: This topic explains what to do when users in the company tenant aren't showing up in the People Picker in Dynamics 365 Talent - Attract or Onboard.
 author: andreabichsel
-manager: tfehr
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -41,9 +39,9 @@ Certain valid users in Microsoft Azure Active Directory (Azure AD) for the tenan
 
 Certain user types are not currently supported in Attract and Onboard. Verify that the user is not an Azure AD Business to Business (B2B) guest user. "User Type" information can be found in the Azure Active Directory blade on the Azure portal.
 
-For more information about Azure B2B, see [What is guest user access in Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
+For more information about Azure B2B, see [What is guest user access in Azure Active Directory B2B](/azure/active-directory/b2b/what-is-b2b).
 
-For non-B2B users, there are certain users who may have an incomplete "User Type" property on the **User** object. This can be verified and fixed using the Azure AD Powershell module. For more information, see [Azure AD](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0).
+For non-B2B users, there are certain users who may have an incomplete "User Type" property on the **User** object. This can be verified and fixed using the Azure AD Powershell module. For more information, see [Azure AD](/powershell/module/azuread).
 
 ## Resolution
 

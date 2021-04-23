@@ -4,11 +4,9 @@
 title: System grouping on an open work list
 description: This topic describes how to filter the open work list on a mobile device.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

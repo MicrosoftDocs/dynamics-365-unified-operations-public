@@ -4,11 +4,9 @@
 title: Cash management improvements
 description: This topic describes the cash management improvements in POS for Dynamics 365 Commerce.
 author: anpurush
-manager: AnnBe
 ms.date: 05/21/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Talent (August 20, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for August 21, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -72,7 +70,7 @@ A new option will let managers view the performance of both their direct reports
 
 #### Platform update 29 for Finance and Operations
 
-For more details about Platform update 29 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 29 (October 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+For more details about Platform update 29 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 29 (October 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

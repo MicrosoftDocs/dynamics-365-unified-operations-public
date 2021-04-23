@@ -3,7 +3,6 @@
 title: Manage Finance and Operations updates and your custom code lifecycle
 description: This topic describes how to manage Finance and Operations updates and your custom code lifecycle.
 author: rbadawy
-manager: AnnBe
 ms.date: 10/22/2020
 ms.topic: article
 audience: Developer
@@ -138,7 +137,7 @@ The release branches contain the code base of your official releases. In the pre
 
 When you're ready to release a new version of your custom code, create a new release branch that is based on the **main** branch. For this example, you will create a new release branch that is based on **main** and named **2020-July**.
 
-You might have private branches that individual developers work in while they work on a specific work item that is based on a specific branch of your code. Private branches are merged back into their parent branch when the work is completed. For more information, see [Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy](https://docs.microsoft.com/azure/devops/repos/tfvc/branching-strategies-with-tfvc).
+You might have private branches that individual developers work in while they work on a specific work item that is based on a specific branch of your code. Private branches are merged back into their parent branch when the work is completed. For more information, see [Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy](/azure/devops/repos/tfvc/branching-strategies-with-tfvc).
 
 ## <a id="apply-next-update"></a>Apply the next version of a Microsoft service update
 

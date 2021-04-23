@@ -4,11 +4,9 @@
 title: Prerequisites for standard costs overview
 description: This topic describes the basic steps for using standard costs. 
 author: AndersGirke
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

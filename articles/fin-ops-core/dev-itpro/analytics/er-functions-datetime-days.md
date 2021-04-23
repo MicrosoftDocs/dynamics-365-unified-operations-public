@@ -4,7 +4,6 @@
 title: DAYS ER function
 description: This topic provides information about how the DAYS Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/04/2019
 ms.topic: article
 ms.prod: 

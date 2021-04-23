@@ -4,11 +4,9 @@
 title: Budget proposals (preview)
 description: This topic describes the process for using a machine learning model with your organization's historical data to generate a budget proposal.
 author: panolte
-manager: AnnBe
 ms.date: 07/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

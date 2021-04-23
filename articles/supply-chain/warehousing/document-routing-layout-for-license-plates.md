@@ -4,11 +4,9 @@
 title: Document routing layout for license plate labels
 description: This topic describes how to use formatting methods to print values on labels.
 author: perlynne
-manager: tfehr
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -79,7 +77,7 @@ The following examples show how you can customize the work quantity (**Qty**) fi
 - To always show four digits (by using zeros as placeholders), use `$Qty:0000$`. For example, if the quantity is 10, the label will show "0010."
 - To always show two decimal places, use `$Qty:0.00$`. For example, if the quantity is 10, the label will show "10.00."
 
-For a complete list of the available number format strings, see [Custom numeric format strings](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).
+For a complete list of the available number format strings, see [Custom numeric format strings](/dotnet/standard/base-types/custom-numeric-format-strings).
 
 ## Custom string formats
 
@@ -101,7 +99,7 @@ $PrintedDate:dd-MM-yyyy$
 
 In this example, the date April 30, 2020, will be printed as "30-04-2020."
 
-For a complete list of the available date/time formats, see [Custom date and time format strings](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).
+For a complete list of the available date/time formats, see [Custom date and time format strings](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## Print individual lines from multiline data
 

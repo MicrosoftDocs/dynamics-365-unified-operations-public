@@ -3,11 +3,9 @@
 title: Daily operations for advance holders in Russia
 description: This topic provides information about daily operations, such as handling cash and closing balances, for advance holders for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -1,16 +1,11 @@
 ---
-# required metadata
-
 title: Extend the scope of number sequences
 description: This topic explains how developers can extend number sequence scope.
 author: RobinARH
-manager: AnnBe
 ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

@@ -4,11 +4,9 @@
 title: Vendor payment overview
 description: This task guide will walk you through various methods used to create vendor payments, including how to use a payment proposal or manually entering a one-off payment. 
 author: kweekley
-manager: AnnBe 
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

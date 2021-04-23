@@ -4,11 +4,9 @@
 title: Tax branch dimensions
 description: This topic provides information about tax branches for Thailand.
 author: anasyash
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics365-financials
 ms.technology: 
 
 # optional metadata

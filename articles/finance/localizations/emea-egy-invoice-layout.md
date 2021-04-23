@@ -4,11 +4,9 @@
 title: Configure invoice layout for Egypt
 description: This topic explains how to configure the invoice layout for Egypt.
 author: ilkond
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -32,7 +30,6 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to configure printable invoice layouts to ensure compliance with Egyptian legal requirements. Egypt-specific invoice layouts are implemented by using the concept of *configurable business documents*. For more information about configurable business documents, see [Business document management overview](../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md). 
 
@@ -48,7 +45,7 @@ In the **Feature management** workspace, turn on the following features:
 - Credit invoicing layout for sales and project invoice reports
 - Convert Electronic reporting outbound documents from Microsoft Office formats to PDF
 
-For more information about how to turn on features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+For more information about how to turn on features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a id="ERConfigs"></a>Import Electronic reporting configurations
 
@@ -63,7 +60,7 @@ In the **Electronic reporting** workspace, import the following Electronic repor
 > [!NOTE]
 > These formats are derived from related standard formats. The formats are based on the invoice model, and use the invoice model mapping. All required additional configurations are automatically imported.
 
-For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Configure conversion to PDF
 

@@ -4,7 +4,6 @@
 title: Goods-in-transit processing
 description: This topic describes how to work with goods-in-transit orders. When an order or voyage is set up to use goods-in-transit processing, goods can be invoiced before they have been received in the warehouse for consumption.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: 
@@ -30,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Goods-in-transit processing
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes how to work with goods-in-transit orders. This type of order is used only by the **Landed cost** module. When an order or voyage is set up to use goods-in-transit processing, you don't have to wait until goods are received in the warehouse before you can invoice them. Instead, the goods are invoiced when they leave the vendor's warehouse or port of origin, and the financial costs are recognized when the voyage begins. This functionality lets you correctly take ownership of inventory, because goods often become the property of your organization when they leave the shipping port.
 
@@ -46,7 +44,7 @@ When you enable the **Landed cost** module, the standard *terms of delivery* ent
 
 When the **Goods in transit management** option is set to *Yes* for the applicable terms of delivery record, the goods are put into the goods-in-transit warehouse. This action is triggered only if the inventory receipt isn't processed before an invoice is processed. When the delivery terms for an order are set to use goods in transit, users can no longer post a product receipt for the purchase order. If they try, an error occurs. The error message states that they must use the goods-in-transit functionality to proceed.
 
-To work with delivery terms information for goods in transit, go to **Procurement and Sourcing \> Setup \> Distribution \> Terms of delivery**. The following table describes the fields that the **Landed cost** module adds to the **Terms of delivery** page to support the goods-in-transit functionality. Both fields are on the **General** FastTab. For more information about the other fields on this page, see [Terms of delivery (form)](https://technet.microsoft.com/library/aa575567.aspx).
+To work with delivery terms information for goods in transit, go to **Procurement and Sourcing \> Setup \> Distribution \> Terms of delivery**. The following table describes the fields that the **Landed cost** module adds to the **Terms of delivery** page to support the goods-in-transit functionality. Both fields are on the **General** FastTab. For more information about the other fields on this page, see [Terms of delivery (form)](/dynamicsax-2012//terms-of-delivery-form).
 
 | Field | Description |
 |---|---|
@@ -61,7 +59,7 @@ Landed cost adds two new types of warehouse: *goods in transit* and *under-deliv
 
 The *goods in transit* warehouse type will be associated with your goods-in-transit warehouse, and that warehouse will be used to process the goods on goods-in-transit orders before they are received at the final destination warehouse. In general, one goods-in-transit warehouse is enough for each site if Site and Warehouse are the only inventory dimensions that are used for inventory management. If the Location inventory dimension is also used, a goods-in-transit warehouse must be set up for each combination of a site and warehouse, so that the default location can also be specified.
 
-To work with goods-in-transit settings for your warehouses, go to **Inventory management \> Setup \> Inventory breakdown \> Warehouses**. The following table describes the fields that the **Landed cost** module adds to the **Warehouses** page to support the goods-in-transit functionality. Both fields appear on the **General** FastTab. For information about the other fields on the page, see [Warehouses (form)](https://technet.microsoft.com/library/aa620570.aspx).
+To work with goods-in-transit settings for your warehouses, go to **Inventory management \> Setup \> Inventory breakdown \> Warehouses**. The following table describes the fields that the **Landed cost** module adds to the **Warehouses** page to support the goods-in-transit functionality. Both fields appear on the **General** FastTab. For information about the other fields on the page, see [Warehouses (form)](/dynamicsax-2012//warehouses-form).
 
 | Field | Description |
 |---|---|
@@ -115,7 +113,7 @@ You can also receive goods by creating an arrival journal. You can create an arr
     - **Create from goods in transit** - Set this option to *Yes* to take quantities from the selected in-transit lines for the selected voyage, container, or folio.
     - **Create from order lines** – Set this option to *Yes* to set the default quantity in the arrival journal from the purchase order lines. The default quantity in the arrival journal can be set in this way only if the quantity on the purchase order line matches the quantity on the goods-in-transit order.
 
-1. Process the arrival journal as described in [Register item receipts with an item arrival journal](https://technet.microsoft.com/library/aa571129.aspx).
+1. Process the arrival journal as described in [Register item receipts with an item arrival journal](/dynamicsax-2012/appuser-itpro/register-item-receipts-with-an-item-arrival-journal).
 
 > [!NOTE]
 > The arrival journal is generally used in situations where locations and batch/serial tracking are used, but warehouse management isn't used.
@@ -137,15 +135,14 @@ Landed cost adds the following work creation processes to the mobile device menu
 - Goods in transit item receiving
 - Goods in transit item receiving and putaway
 
-The configuration settings for these processes resemble the settings for the [purchase order receive and putaway work creation processes](https://technet.microsoft.com/library/dn553216.aspx). However, the *Goods in transit item receiving and putaway* process also adds the following field.
+The configuration settings for these processes resemble the settings for the [purchase order receive and putaway work creation processes](/dynamicsax-2012/appuser-itpro/configure-mobile-devices-for-warehouse-work). However, the *Goods in transit item receiving and putaway* process also adds the following field.
 
-- **Enable shipping container complete** – If this option is set to *Yes*, when the putaway work is completed, the warehouse app will provide an additional option that is named **Shipping container complete**. When that option is selected, the worker will be asked to confirm that the container is complete. At that point, all short receipts will be processed as an under transaction.
+- **Enable shipping container complete** – If this option is set to *Yes*, when the putaway work is completed, the Warehouse Management mobile app will provide an additional option that is named **Shipping container complete**. When that option is selected, the worker will be asked to confirm that the container is complete. At that point, all short receipts will be processed as an under transaction.
 
 ### Location directives
 
-Landed cost adds a new work order type that is named *Goods in transit* to the **Location directives** page. This work order type should be configured in the same manner as the [purchase order work order types](https://technet.microsoft.com/library/dn553184.aspx).
+Landed cost adds a new work order type that is named *Goods in transit* to the **Location directives** page. This work order type should be configured in the same manner as the [purchase order work order types](/dynamicsax-2012/appuser-itpro/create-a-work-template).
 
 ### Work templates
 
-Landed cost adds a new work order type that is named *Goods in transit* to the **Work templates** page. This work order type should be configured in the same manner as the [purchase order work templates](https://technet.microsoft.com/library/dn553184.aspx).
-
+Landed cost adds a new work order type that is named *Goods in transit* to the **Work templates** page. This work order type should be configured in the same manner as the [purchase order work templates](/dynamicsax-2012/appuser-itpro/create-a-work-template).

@@ -4,7 +4,6 @@
 title: Application Connector
 description: This topic provides information about the Application Connector for Microsoft Power Automate and Logic Apps.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: 
