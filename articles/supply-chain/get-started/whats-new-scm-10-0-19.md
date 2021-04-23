@@ -55,17 +55,13 @@ We have recently added or significantly updated the following help topics. They 
 
 ## Additional resources
 
-<!-- KFM: Get these 2 links
-
 ### Platform updates for Finance and Operations apps
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.19 includes platform updates. To learn more, see [Platform updates for version 10.0.19 of Finance and Operations apps (July 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md).
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.19, sign in to Lifecycle Services (LCS) and view the [KB article](). 
-
--->
+For information about the bug fixes included in each of the updates that are part of 10.0.19, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=575415).
 
 ### Dynamics 365: 2021 release wave 1 plan
 
