@@ -73,9 +73,9 @@ The **Contact** table can store the following types of rows.
 | A person who is both a customer and a vendor | A striped contact record where the **Company** field isn't blank, the **Is Customer** field is set to **Yes**, and the **Is Vendor** field is set to **Yes**. A person can be both a producer for one product and a consumer for another product. Both Finance and Operations apps and dual-write support this relationship. |
 | A person who is a contact person for an organization, but isn't a customer or a vendor | An unstriped contact record where the **Company** field is blank, the **Is Customer** field is set to **No**, and the **Is Vendor** field is set to **No**. |
 
-## Contact for Party
+## Contact for Party table
 
-**Contact for Party** stores and handles N:N relationships between **Account** rows and **Contact** rows. It can filter out the striped **Contact** rows from unstriped rows and associate only the unstriped **Contact** rows with **Account** or **Vendor** rows.
+The **Contact for Party** table stores and handles N:N relationships between **Account** rows and **Contact** rows. It can filter out the striped **Contact** rows from unstriped rows and associate only the unstriped **Contact** rows with **Account** or **Vendor** rows.
 
 For example, Natasha Jones and Miguel Reyes are veterinarians who provide care for farms in their areas. Natasha serves the Seattle area, and Miguel serves the Kent area. In the customer engagement app, the farms are represented as customers, and the veterinarians are represented as contact persons. A single **Contact** record for Natasha is associated with all the farms that Natasha works with. Likewise, a single **Contact** record for Miguel is associated with all the farms that Miguel works with.
 
