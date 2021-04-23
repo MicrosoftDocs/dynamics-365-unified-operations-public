@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  DefaultDashboard, UserWorkspaceAdd, UserWorkspaceConfigureWebsite
+ms.search.form: DefaultDashboard, UserWorkspaceAdd, UserWorkspaceConfigureWebsite
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -30,105 +30,108 @@ ms.dyn365.ops.version: 10.0.19
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-## Overview 
+Many customers use a range of applications to run their business. Some of those applications are third-party web apps that work in conjunction with Finance and Operations apps. To provide a more seamless user experience, you can use the **(Preview) Full page apps** feature to embed those third-party apps directly into your Finance and Operations apps (provided that the third-party apps allow themselves to be embedded). In this way, users can access the websites and apps that they require without having to switch tabs or windows.
 
-Many customers utilize a range of applications to run their businesses, including applications that work in conjunction with Finance and Operations apps. To provide a more seamless user experience, you can directly embed those third-party web apps (given that those apps allow themselves to be embedded) within your Finance and Operations apps via the **(Preview) Full page apps** feature. This allows users to access the websites and apps they need without having to switch tabs or windows. 
+Before you can embed third-party apps into the product, you must turn on the **(Preview) Full page apps** feature in Feature management. You can then use one of the following methods to embed a third-party app or website. These methods are analogous to the methods that are used to embed canvas apps from Microsoft Power Apps into Finance and Operations apps.
 
-Before you can embed a third-party app into the product, you must first enable the **(Preview) Full page apps** feature in Feature management. Once enabled, you can choose one of two ways to embed a third-party app or website into the product. These are analagous to embedding canvas apps from Power Apps into Finance and Operations apps.
+- Embed the app or website on an existing page as a new tab page (pivot tab, FastTab, blade, or workspace section).
+- Create a new full-page experience for the app or website from the dashboard.
 
-1. Embed as a new tab page (pivot tab, FastTab, blade, or workspace section) in an existing page. 
-2. Create a new full-page experience for the app from the dashboard.
+## Embed a website on an existing page
 
-## Embedding a website into an existing page
+Use this procedure if you want to supplement an existing page in the system with an embedded app.
 
-You may want to supplement an existing page in the system with an embedded app. You can accomplish through using the following procedure:
- 
-1.  Go to the page where you want to embed the app. 
+1. Open the page where you want to embed the app.
+2. Open the **Add an app** pane:
 
-2.  Open the **Add an app** pane.
-    - Open the personalization toolbar by selecting **Settings** and then **Personalize**.  
-    - Under the **More** button, choose **Add an app**.  
-    - Select the region of the page where you would like to add the app. This must be a *tab container* for a pivot tab, FastTab, blade, or workspace section. 
+    1. Select **Settings** and then **Personalize** to open the **Personalization** toolbar.
+    2. Select **More \> Add an app**.
 
-3.  Select **Website**. 
+3. Select the region of the page where you want to add the app. This region must be a *tab container* for a pivot tab, FastTab, blade, or workspace section.
+4. Select **Website**.
+5. Configure the embedded app:
 
-4.  Configure the embedded app.
-    - The **Name** field indicates the text shown for the tab that will contain the embedded app. Oftentimes, you may want to repeat the name of the app for this field.
-    - The **URL** field specifies the location of the application.
-        -  For security reasons, the URL must use Hypertext Transfer Protocol Secure (HTTPS).
-        -  The app or website must be configured to allow itself to be embedded. 
+    - **Name** – Enter the text that should be shown for the tab that contains the embedded app. Often, you will want this text to be the name of the app.
+    - **URL** – Specify the location of the app.
 
-5.  Select **Save** to embed the app on the page. 
-6.  The app will be added as the last tab or section in the group. Confirm that the app is displaying as expected. If the app does not render, see the [Troubleshooting][#troubleshooting] section below. 
-    
-7.  Open the view selector and select **Save** or **Save as...** depending on whether this app should be associated with the current view, or if you want to save this app to a different view.  
-    -  If the page doesn't have a view selector (e.g. a dialog page or a workspace), then you can skip this step. 
+    > [!IMPORTANT]
+    > - For security reasons, the URL must use Hypertext Transfer Protocol Secure (HTTPS).
+    > - The app or website must be configured to allow itself to be embedded.
 
-## Embedding a website as a full-page experience from the dashboard
+6. Select **Save** to embed the app on the page. The app is added as the last tab or section in the group.
+7. Confirm that the app appears as expected. If the app isn't rendered, see the [Troubleshooting](#troubleshooting) section later in this topic.
+8. Open the view selector, and select either **Save** (if the app should be associated with the current view) or **Save as** (to save the app to a different view).
 
-If the app you want to embed is not related to an existing page, or you just want a full-page experience for the app inside of the Finance and Operations app, you can use the  following procedure. 
+    If the page doesn't have a view selector (for example, if the page is a dialog box or a workspace), you can skip this step.
 
-1.  Go to the dashboard.
-2.  Right-click on the page, select **Personalize**, and then select **Add a page**. 
-3.  In the **Add a page** pane, select **Website**.
-4.  Configure the embedded app.
-    - The **Name** field indicates the text shown on the tile added to the dashboard for this embedded app. Oftentimes, you may want to repeat the name of the app for this field.
-    - The **URL** field specifies the location of the application.
-        -  For security reasons, the URL must use Hypertext Transfer Protocol Secure (HTTPS).
-        -  The app or website must be configured to allow itself to be embedded. 
-5.  Select **Save** to add the app as a new tile on the dashboard. 
-6.  Select the new tile on the dashboard and confirm that the app is displaying as expected. If the app does not render, see the [Troubleshooting][#troubleshooting] section below.
+## Embed a website as a full-page experience from the dashboard
 
-## Sharing an embedded app
+Use this procedure if the app that you want to embed isn't related to an existing page, or if you just want a full-page experience for the app inside the Finance and Operations app.
 
-After you've embedded an app using either of the two approaches mentioned above, you may want to share the view with other users in the system. To share an embedded canvas app, choose one of these options.
+1. Open the dashboard.
+2. Select and hold (or right-click) the page, select **Personalize**, and then select **Add a page**.
+3. In the **Add a page** pane, select **Website**.
+4. Configure the embedded app:
 
-- (Recommended) **Publish the view**: When the embedded app has been saved to a view, the recommended and preferred sharing approach is to **publish** the view to users in the appropriate security role(s). This approach ensures that all users who have the security roles targeted by the published view will see the app in Finance and Operations apps. See [Publishing views](saved-views.md#publishing-views) for more details on how to publish a view.
+    - **Name** – Enter the text that should be shown on the tile that is added for the embedded app on the dashboard. Often, you will want this text to be the name of the app.
+    - **URL** – Specify the location of the app.
 
- You can also publish apps that have been embedded as a full-page experience from the dashboard by right-clicking on the corresponding tile from the dashboard, selecting **Personalize**, and then selecting **Publish page**. Note that this publish option only allows publishing to security roles. The ability to publish to legal entities will be added before the feature becomes generally available.  
+    > [!IMPORTANT]
+    > - For security reasons, the URL must use HTTPS.
+    > - The app or website must be configured to allow itself to be embedded.
 
-- **Copy the personalization**: For forms that do not support views (e.g. dialogs, workspaces) or for the full-page app experience, you can **copy** the personalization to the appropriate users. See the [Sharing personalizations](personalize-user-experience.md#sharing-personalizations) for more details. 
+5. Select **Save** to add the app to the dashboard as a new tile.
+6. Select the new tile on the dashboard, and confirm that the app appears as expected. If the app isn't rendered, see the [Troubleshooting](#troubleshooting) section later in this topic.
 
-## Viewing an embedded app
+## Sharing embedded apps
 
-To view an embedded app on a page in Finance and Operations apps, navigate to the page that has an embedded app. Remember that on some pages, embedded apps can be accessed by using the **Power Apps** button on the standard Action Pane, or they may directly on the page as a new tab, or FastTab, or blade, or as a new section in a workspace. 
+After you've embedded an app by using one of the methods that are described in the previous sections, you might want to share the view with other users in the system. To share an embedded app, use one of the following methods:
 
-## Editing or removing an embedded app
+- **Publish the view (Recommended):** If the embedded app has been saved to a view, the recommended and preferred way to share it is to publish the view to users who have the appropriate security roles. Then, all users who have the security roles that are targeted by the published view will see the app in Finance and Operations apps. For more information about how to publish a view, see [Publishing views](saved-views.md#publishing-views).
 
-After an app has been embedded onto a page, you may need to make some changes to the configuration of the app (e.g. modify the section label or the URL) or remove it from the page. Follow the appropriate steps below to edit the configuration of an embedded app or remove it entirely:
+    You can also publish an app that has been embedded as a full-page experience from the dashboard. On the dashboard, select and hold (or right-click) the tile that is associated with the app, select **Personalize**, and then select **Publish page**. Currently, you can publish only to security roles. However, the capability to publish to legal entities will be added before the feature becomes generally available.
 
-### Apps embedded in existing pages
-1. Navigate to the page where the app is located.
-2. Select **Settings** and then **Personalize** to open the personalization toolbar. 
-3. With the **Select** tool chosen, click the embedded app. 
-4  If editing the app, make the needed modifications to the app configuration, and then select **Save**.
-5. If deleting the app, select **Delete**.
-6. Re-save or re-publish the view. Note if you leave the page without explicitly saving the view, the actions taken in the **Edit website** pane will not be maintained.  
+- **Copy the personalization:** For pages that don't support views (for example, dialog boxes or workspaces), or for the full-page app experience, you can copy the personalization to the appropriate users. For more information, see [Sharing personalizations](personalize-user-experience.md#sharing-personalizations).
 
-### Apps embedded from the dashboard
-1. Navigate to the dashboard.
-2. Right-click on the tile associated with the app, select **Personalize**.
-3. To edit the embedded app, select **Edit page**. 
-   
-   On the **Edit website** pane, make the desired modifications to the app configiration and then select **Save**.
-   
-5. To remove the embedded app, select **Remove page**.
+## Viewing embedded apps
+
+To view an embedded app on a page in Finance and Operations apps, open the page that has the embedded app. Remember that, on some pages, embedded apps can be accessed by using the **Power Apps** button on the standard Action Pane. Alternatively, they might appear directly on the page as a new tab, FastTab, or blade, or as a new section in a workspace.
+
+## Editing or removing embedded apps
+
+After an app has been embedded on a page, you might have to edit its configuration (for example, by changing the section label or the URL). Alternatively, you might have to remove it from the page. Use one of the following procedures to edit the configuration of an embedded app or remove it completely.
+
+### Apps that are embedded on existing pages
+
+1. Open the page where the app is embedded.
+2. Select **Settings** and then **Personalize** to open the **Personalization** toolbar.
+3. Select the **Select** tool, and then select the embedded app.
+4. To edit the app, make the required changes to its configuration, and then select **Save**.
+
+    Alternatively, to remove the app, select **Delete**.
+
+5. Re-save or republish the view. Note that if you leave the page without explicitly saving the view, none of the actions that you performed in the **Edit website** pane will be maintained.
+
+### Apps that are embedded from the dashboard
+
+1. Open the dashboard.
+2. Select and hold (or right-click) the tile that is associated with the embedded app, and then select **Personalize**.
+3. To edit the app, select **Edit page**. In the **Edit website** pane, make the required changes to the app configuration, and then select **Save**.
+
+    Alternatively, to remove the app, select **Remove page**.
 
 ## Appendix
 
 ### Troubleshooting
 
-If the website isn't rendering correctly after being embedded in a Finance and Operation app or if you get an error message saying the URL was "denied a connection", this usually indicates that the website is configured to restrict itself from being embedded in an iframe. To confirm this, do the following: 
+If a website isn't rendered correctly after it's embedded in a Finance and Operation app, or if you receive an error message that states that the URL was denied a connection, the website is probably configured to prevent itself from being embedded in an iframe. Follow these steps to determine whether the website can be embedded.
 
-1. Open the developer tools for the browser you are using. 
-2. Switch to the **Network** tab.
-3. Look for the response from the embedded site. 
-4. With that response highlighted, look in **Headers > Response headers** for x-frame-options. 
-
-If x-frame-options exists in the response headers with a value of DENY or SAMEORIGIN, then the website cannot currently be embedded. You will need to work with the owner of the app to safely allow it to be embedded.  
+1. Open the developer tools for the browser that you're using.
+2. On the **Network** tab, find and select the response from the embedded site.
+3. On the **Headers** tab, under **Response Headers**, look for **x-frame-options**. If **x-frame-options** exists in the response headers, and has a value of **DENY** or **SAMEORIGIN**, the website can't currently be embedded. You will have to work with the owner of the app to enable it to be safely embedded.
 
 ### [Developer] Modeling a website on a form
-While this topic focuses on embedding third-party apps or websites through personalization, developers also have the option to embedding these apps to a form using the Visual Studio development experience. To do this, simply add a WebsiteHostControl to the form. The metadata properties available on the control provide the same capabilities as the personalization experience.
 
+Although this topic is focused on embedding third-party apps or websites through personalization, developers can also embed them in a form by using the Visual Studio development experience. Just add a **WebsiteHostControl** control to the form. The metadata properties that are available for the control provide the same capabilities as the personalization experience.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
