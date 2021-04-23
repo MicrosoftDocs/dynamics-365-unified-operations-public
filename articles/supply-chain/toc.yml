@@ -3321,9 +3321,9 @@
           href: troubleshooting/warehousing/picked-quantity-is-not-on-final.md
         - name: You can't confirm a shipment because there is zero quantity
           href: troubleshooting/warehousing/picked-quantity-is-zero.md
-        - name: You can't confirm a shipment because the quantity exceeds the overdelivery percentage
+        - name: Can't confirm a shipment because quantity exceeds overdelivery percentage
           href: troubleshooting/warehousing/quantity-exceeds-ove.md
-        - name: You can't confirm a shipment because the quantity exceeds the underdelivery percentage
+        - name: Can't confirm a shipment because quantity exceeds underdelivery percentage
           href: troubleshooting/warehousing/quantity-exceeds-und.md
         - name: The last closed work line must be a put
           href: troubleshooting/warehousing/the-last-closed-work.md
