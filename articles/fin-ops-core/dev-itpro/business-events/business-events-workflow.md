@@ -84,7 +84,7 @@ An approval or task work item can be completed in Power Automate using the follo
 
 To enable external completion of work items, the work item action manager class needs to implement the IValidateWorkflowWorkItemAction interface. The standard WorkflowWorkItemActionManager class has implemented this interface. In Platform update 32, the TrvWorkflowWorkItemActionManager class was updated to implement the IValidateWorkflowWorkItemAction interface. Use the existing IValidateWorkflowWorkItemAction implementations as examples to notify updates about other WorkflowWorkItemActionManager classes.
 
-For a step-by-step guide to setting up work item completion in Microsoft Power Automate, see [Consume workflow approval business events](/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow).
+For a step-by-step guide to setting up work item completion in Microsoft Power Automate, see [Consume workflow approval business events](how-to/how-to-flow.md).
 
 ## Templates for work item completion in Power Automate
 
