@@ -1993,6 +1993,8 @@
           href: procurement/vendor-collaboration-work-external-vendors.md
         - name: Vendor collaboration with customers
           href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
+        - name: Maintain vendor bank account information
+          href: ../finance/accounts-payable/maintain-vendor-bank-info.md
         - name: Import vendor catalogs
           href: procurement/vendor-catalogs-import.md
         - name: Set up an external catalog for PunchOut e-procurement
