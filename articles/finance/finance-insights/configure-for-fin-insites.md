@@ -46,15 +46,15 @@ Deploy the environments by following these steps.
 
 ## Configure Dataverse
 
-Please follow the steps listed below to configure Dataverse for Finance insights.
+Use the follownig steps to configure Dataverse for Finance insights.
 
-1. Open the environment page in LCS please verify the **Power Platform Integration** section is already setup.
-    1. If already setup, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed. Please copy the Dataverse environment name.
-    2. If no already setup, please follow the steps below:
-        1. Click on the setup button in the Power Platform Integration section. It may take up to an hour for the environment to be setup.
-        2. If the Dataverse environment is successfully setup, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed. Please copy the Dataverse environment name.
+1. Open the environment page in LCS and verify that the **Power Platform Integration** section is already setup.
+    1. If it is already set up, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed. Copy the Dataverse environment name.
+    2. If it is not set up, follow these steps:
+        1. Select the **Setup** button in the Power Platform Integration section. It may take up to an hour for the environment to be set up.
+        2. If the Dataverse environment is successfully set up, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed. Copy the Dataverse environment name.
 > [!NOTE]
-> After completing the environment set up, **DO NOT** click on the **Link to CDS for Apps** button.  This is not needed for Finance Insights and will disable the ability to complete the required Environment Add-ins in LCS.
+> After completing the environment set up, **DO NOT** select the **Link to CDS for Apps** button. This is not needed for Finance Insights and will disable the ability to complete the required Environment Add-ins in LCS.
 
 2. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and follow these steps to create a new Dataverse environment in the same Active Directory tenant:
 
@@ -107,11 +107,11 @@ Follow these steps to configure Azure by using the Windows PowerShell script. Yo
 
 1. In the [Azure portal](https://portal.azure.com), go to your target Azure subscription. Select the **Cloud Shell** button to the right of the **Search** field.
 2. Select **PowerShell**.
-3. Create storage, if you're prompted to do so.
-4. Go to the Azure CLI tab and select Copy.  
-5. Open Notepad and Paste the PowerShell script.  Save the file as ConfigureDataLake.ps1.
+3. Create storage if you're prompted to do so.
+4. Go to the **Azure CLI** tab and select **Copy**.  
+5. Open Notepad and paste the PowerShell script. Save the file as ConfigureDataLake.ps1.
 6. Upload the Windows PowerShell script to the session using the menu option for upload in Cloud Shell.
-7. Run the script - .\ConfigureDataLake.ps1.
+7. Run the script .\ConfigureDataLake.ps1.
 8. Follow the prompts to run the script.
 9. Use the information from the script output to install the **Export to Data Lake** add-in in LCS.
 10. Use the information from the script output to enable the entity store on the **Data connections** page in Finance (**System administration \> System parameters \> Data connections**).
@@ -790,9 +790,9 @@ The add-in will be installed within a few minutes.
 
     | Value                                                    | Description |
     |----------------------------------------------------------|-------------|
-    | CDS Organization URL                                     | The Dataverse organization URL copied above |
-    | CDS Org ID                                               | The Dataverse organization ID copied above |
-5. Enable “Is this the default environment for you Tenant?” 
+    | CDS Organization URL                                     | The Dataverse organization URL copied from above. |
+    | CDS Org ID                                               | The Dataverse organization ID copied from above. |
+5. Enable **Is this the default environment for you Tenant**.
     
 ## Configure the entity store
 
@@ -805,9 +805,9 @@ Follow these steps to set up the entity store in your Finance environment.
     - **Application Secret** – Enter the secret that you saved for the application that you created earlier.
     - **DNS name** – You can find the Domain Name System (DNS) name on the application details page for the application that you created earlier.
     - **Secret name** – Enter **storage-account-connection-string**.
-3. Enable **Enable Data Lake integration**
-4. Click **Test Azure Key Vault** and verify there are no errors
-5. Click **Test Azure storage** and verify there are no errors
+3. Enable **Enable Data Lake integration**.
+4. Select **Test Azure Key Vault** and verify there are no errors.
+5. Select **Test Azure storage** and verify there are no errors.
 
 ## Feedback and support
 
