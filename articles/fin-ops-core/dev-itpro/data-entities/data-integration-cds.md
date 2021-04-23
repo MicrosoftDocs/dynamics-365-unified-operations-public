@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data integration using Dataverse overview
-description: This topic provides a brief overview of the mechanics of synchronous and asynchronous integration.
+description: You can use Dataverse to enable the flow of data between Finance and Operations apps and Dynamics 365 Sales. For example, customer information in Sales can flow to Finance and Operations apps. You don’t have to manually move the data or use a third-party data integration tool.
 author: Sunil-Garg
 ms.date: 10/02/2019
 ms.topic: article
