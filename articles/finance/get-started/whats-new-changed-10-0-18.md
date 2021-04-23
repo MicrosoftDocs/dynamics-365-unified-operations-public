@@ -42,7 +42,7 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365/release-plans/) for official release dates for each feature.
 
-- [Vendor collaboration bank changes](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/vendor-collaboration-bank-changes)
+- [Vendor collaboration bank changes](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/vendor-collaboration-bank-changes) - This feature will be included in the 10.0.19 release, instead of 10.0.18.
 - [Public sector - Restrict ability to edit accounting distribution on vendor invoices](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/restrict-ability-edit-accounting-distribution-vendor-invoices)
 
 ## Globalization changes

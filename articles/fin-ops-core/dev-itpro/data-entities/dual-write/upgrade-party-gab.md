@@ -47,11 +47,11 @@ These prerequisites are required:
 
 2. Sign in to [Microsoft Azure](https://portal.azure.com/).
 
-3. Create a [resource group](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal).
+3. Create a [resource group](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
-4. Create a [storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal) in the resource group that you created.
+4. Create a [storage account](/azure/storage/common/storage-account-create?tabs=azure-portal) in the resource group that you created.
 
-5. Create a [data factory](https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-portal) in above resource group that you created.
+5. Create a [data factory](/azure/data-factory/quickstart-create-data-factory-portal) in above resource group that you created.
 
 6. Open the data factory and select the **Author & Monitor** tile.
 
@@ -76,7 +76,7 @@ These prerequisites are required:
     FO Linked Service_properties_type Properties_service Principal Id | Specify the application's client ID.
     Dynamics Crm Linked Service_properties_type Properties_username | The username to connect to Dynamics.
 
-    For more information, see [Manually promote a Resource Manager template for each environment](https://docs.microsoft.com/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Linked service properties](https://docs.microsoft.com/azure/data-factory/connector-dynamics-ax#linked-service-properties), and [Copy data using Azure Data Factory](https://docs.microsoft.com/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    For more information, see [Manually promote a Resource Manager template for each environment](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Linked service properties](/azure/data-factory/connector-dynamics-ax#linked-service-properties), and [Copy data using Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. After deployment, validate the datasets, data flow, and linked service of the data factory.
 
@@ -153,7 +153,7 @@ These prerequisites are required:
 8. Import the new **Party** records in the Finance and Operations app.
 
     + Download the `FONewParty.csv` file from Azure blob storage. The path is `partybootstrapping/output/FONewParty.csv`.
-    + Convert the `FONewParty.csv` file into an Excel file and import the Excel file into the Finance and Operations app.  If the csv import works for you, you can import csv file directly. The import could take a few hours to run, depending on the data volume. For more information, see [Data import and export jobs overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job).
+    + Convert the `FONewParty.csv` file into an Excel file and import the Excel file into the Finance and Operations app.  If the csv import works for you, you can import csv file directly. The import could take a few hours to run, depending on the data volume. For more information, see [Data import and export jobs overview](../data-import-export-job.md).
 
     ![Import the Datavers party records](media/data-factory-import-party.png)
 

@@ -207,7 +207,7 @@ Business events enable idempotent behavior on the consuming side by having a con
 
 ## Filtering in Azure Event Grid and Azure Service Bus
 Azure Service Bus and Azure Event Grid supports subscribing to topics by
-specifying criteria on the incoming message. For more information, see [Topic filters and actions](https://docs.microsoft.com/azure/service-bus-messaging/topic-filters) and [Understand event filtering for Event Grid subscriptions](https://docs.microsoft.com/azure/event-grid/event-filtering).
+specifying criteria on the incoming message. For more information, see [Topic filters and actions](/azure/service-bus-messaging/topic-filters) and [Understand event filtering for Event Grid subscriptions](/azure/event-grid/event-filtering).
 
 A business event that is sent to an Azure Service Bus or Azure Event Grid
 has the following fields made available for this purpose. Subscribers can use

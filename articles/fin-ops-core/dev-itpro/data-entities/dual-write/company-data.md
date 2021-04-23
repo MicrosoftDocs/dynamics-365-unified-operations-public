@@ -93,7 +93,7 @@ There are several ways to auto-populate the company name in customer engagement 
 
     :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Choosing a row changes the default company.":::
 
-+ If you are a system configurator or administrator, and you want to auto-populate company data on a custom form, then you can use [form events](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Add a JavaScript reference to **msdyn_/DefaultCompany.js** and use the following events. You can use any out-of-the-box form, for example, the **Account** form.
++ If you are a system configurator or administrator, and you want to auto-populate company data on a custom form, then you can use [form events](/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Add a JavaScript reference to **msdyn_/DefaultCompany.js** and use the following events. You can use any out-of-the-box form, for example, the **Account** form.
 
     + **OnLoad** event for the form: Set the **defaultCompany** column.
     + **OnChange** event for the **Company** column: Set the **updateDefaultCompany** column.
