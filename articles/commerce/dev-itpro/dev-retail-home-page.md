@@ -85,6 +85,14 @@ This page lists the resources that are available for IT pros and developers who 
 - [POS Cart view events and handlers](cart-view-handlers.md)
 - [Add custom buttons to the POS header bar](pos-header-bar.md)
 
+## POS independent-packaging SDK
+
+- [POS extension overview](pos-extension/pos-extension-overview.md)
+- [Getting started with POS extensions](pos-extension/pos-extension-getting-started.md)
+- [Create a POS extension package project](pos-extension/create-pos-extension-package.md)
+- [Create a Modern POS extension appx file](pos-extension/create-pos-extension-appx.md)
+- [Debug a POS extension](pos-extension/debug-pos-extension.md)
+
 ## Integrating Commerce
 
 - [Create and apply branding to the Retail Experience app](create-retail-experience-app.md)

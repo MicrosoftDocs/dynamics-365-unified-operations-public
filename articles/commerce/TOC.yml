@@ -2424,6 +2424,18 @@
           href: dev-itpro/cart-view-handlers.md
         - name: Add custom buttons to the POS header bar
           href: dev-itpro/pos-header-bar.md
+        - name: POS independent-packaging SDK 
+          items:
+            - name: POS extension overview
+              href: dev-itpro/pos-extension/pos-extension-overview.md
+            - name: Getting started with POS extensions
+              href: dev-itpro/pos-extension/pos-extension-getting-started.md
+            - name: Create a POS extension package project
+              href: dev-itpro/pos-extension/create-pos-extension-package.md
+            - name: Create a Modern POS extension appx file
+              href: dev-itpro/pos-extension/create-pos-extension-appx.md
+            - name: Debug a POS extension
+              href: dev-itpro/pos-extension/debug-pos-extension.md
       - name: Hardware Station extensibility
         items:
         - name: Hardware Station and extensibility
