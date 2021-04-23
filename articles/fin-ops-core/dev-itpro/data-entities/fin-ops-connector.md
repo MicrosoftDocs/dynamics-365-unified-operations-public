@@ -36,12 +36,12 @@ The application connector allows Microsoft Power Automate, Power Apps, Data Inte
 We recommend that you read the following topics as a prerequisite to familiarize yourself with connectors before proceeding further
 
 - [Connectors](/connectors/) 
-- [Data management package REST API](/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api?toc=%2ffin-and-ops%2ftoc.json)
-- [Open Data Protocol (OData)](/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=%2ffin-and-ops%2ftoc.json) 
-- [Recurring integrations](/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=%2ffin-and-ops%2ftoc.json) 
+- [Data management package REST API](data-management-api.md)
+- [Open Data Protocol (OData)](odata.md) 
+- [Recurring integrations](recurring-integrations.md) 
 
 ## Triggers
-Business events are exposed using the trigger *When a business event occurs*. For detailed information about business events, refer to [Business events in Microsoft Power Automate](/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) and [Business events](/dynamics365/unified-operations/dev-itpro/business-events/home-page).
+Business events are exposed using the trigger *When a business event occurs*. For detailed information about business events, refer to [Business events in Microsoft Power Automate](../business-events/business-events-flow.md) and [Business events](../business-events/home-page.md).
 
 ## Actions
 
