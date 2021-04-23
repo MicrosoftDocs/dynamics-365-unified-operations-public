@@ -1991,6 +1991,8 @@
           href: procurement/vendor-onboarding.md
         - name: Vendor collaboration with external vendors
           href: procurement/vendor-collaboration-work-external-vendors.md
+        - name: Category requests from vendors
+          href: procurement/category-requests-from-vendors.md
         - name: Vendor collaboration with customers
           href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
         - name: Maintain vendor bank account information
@@ -3311,6 +3313,18 @@
       items:
       - name: Warehouse management
         items:
+        - name: You can't confirm a shipment because of an issue with the calendar
+          href: troubleshooting/warehousing/load-has-active-appo.md
+        - name: You can't confirm a shipment because of incomplete or missing work
+          href: troubleshooting/warehousing/open-or-no-work-exis.md
+        - name: You can't confirm a shipment because items haven't been picked
+          href: troubleshooting/warehousing/picked-quantity-is-not-on-final.md
+        - name: You can't confirm a shipment because there is zero quantity
+          href: troubleshooting/warehousing/picked-quantity-is-zero.md
+        - name: You can't confirm a shipment because the quantity exceeds the overdelivery percentage
+          href: troubleshooting/warehousing/quantity-exceeds-ove.md
+        - name: You can't confirm a shipment because the quantity exceeds the underdelivery percentage
+          href: troubleshooting/warehousing/quantity-exceeds-und.md
         - name: The last closed work line must be a put
           href: troubleshooting/warehousing/the-last-closed-work.md
         - name: The weight fields on load lines do not match the weight fields on load

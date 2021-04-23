@@ -47,6 +47,7 @@ We have recently added or significantly updated the following help topics. They 
 | Feature area | New or updated topics |
 |---|---|
 | Engineering change management | [Engineering change management FAQs](../engineering-change-management/change-management-faq.md) |
+| Procurement and sourcing | [Category requests from vendors](../procurement/category-requests-from-vendors.md) |
 | Product information management | [Manage unit of measure](../pim/tasks/manage-unit-measure.md)<br><br>[Product configuration model calculations](../pim/config-model-calculations.md) |
 | Production control | [Unified number sequence for job IDs](../production-control/unified-job-ids.md) |
 | Transportation management | [LTL classes](../transportation/ltl-class.md) |
@@ -55,17 +56,13 @@ We have recently added or significantly updated the following help topics. They 
 
 ## Additional resources
 
-<!-- KFM: Get these 2 links
-
 ### Platform updates for Finance and Operations apps
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.19 includes platform updates. To learn more, see [Platform updates for version 10.0.19 of Finance and Operations apps (July 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md).
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.19, sign in to Lifecycle Services (LCS) and view the [KB article](). 
-
--->
+For information about the bug fixes included in each of the updates that are part of 10.0.19, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=575415).
 
 ### Dynamics 365: 2021 release wave 1 plan
 
