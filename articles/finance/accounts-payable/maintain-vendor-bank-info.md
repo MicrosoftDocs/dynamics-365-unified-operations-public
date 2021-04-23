@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 10.0.17
 # Maintain vendor bank account information
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Vendors can use the Vendor collaboration functionality to maintain their bank account information. This topic explains how to add and maintain bank information for vendors that you do business with.
 
