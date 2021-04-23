@@ -86,4 +86,4 @@ set AbsolutePathToExtensionPackageProject=K:\RetailCloudPos\WebRoot\Extensions\ 
 5.	Set up a workspace that points to the root directory of your Cloud POS Extension package (First Time Only)
 6.	Ensure that you have JavaScript Source Mapping Enabled.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

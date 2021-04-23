@@ -146,4 +146,4 @@ The steps below describe how to create a POS extension package project, set of e
 
 After creating the extensions, it must be packaged to deploy to Cloud POS or MPOS. For MPOS [Create the appx file before creating the installer](pos-extension-appx.md).
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

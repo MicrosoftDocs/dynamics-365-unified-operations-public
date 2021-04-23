@@ -120,4 +120,4 @@ The steps below describe how to create a Modern POS packaging project using Visu
 
     3.  Select the Hardware Station Extension projects.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
