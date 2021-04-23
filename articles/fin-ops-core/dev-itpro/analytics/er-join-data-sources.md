@@ -106,7 +106,7 @@ In advance, you must also download and save the following sample ER configuratio
     3. Select **Browse** to find the **Format to learn JOIN data sources.version.1.1.xml** file.
     4. Select **OK**.
 5. In the configurations tree, expand the **Model to learn JOIN data sources** item as well as other model items (when available).
-6. Observe the list of ER configurations in the tree as well as version details on the **Versions** fast tab – they will be used as the source of data for your sample report.
+6. Observe the list of ER configurations in the tree as well as version details on the **Versions** FastTab – they will be used as the source of data for your sample report.
 
     ![Electronic reporting configurations page](./media/GER-JoinDS-ConfigurationsTree.PNG)
 
@@ -130,7 +130,7 @@ Review settings of the ER model-mapping component. The component is configured t
 4. Select **Show details**.
 5. In the configurations tree, expand the **Set1** and **Set1.Details** data model items:
 
-    1. Binding **Details: Record list = Versions** indicates that the **Set1.Details** item is bound to the **Versions** data source returning records of the **ERSolutionVersionTable** table. Each record of this table represents a single version of an ER configuration. The content of this table is presented in the **Versions** fast tab on the **Configurations** page.
+    1. Binding **Details: Record list = Versions** indicates that the **Set1.Details** item is bound to the **Versions** data source returning records of the **ERSolutionVersionTable** table. Each record of this table represents a single version of an ER configuration. The content of this table is presented in the **Versions** FastTab on the **Configurations** page.
     2. Binding **ConfigurationVersion: String = @.PublicVersionNumber** means that the value of the public version of each ER configuration’s version is taken from the **PublicVersionNumber** field of the **ERSolutionVersionTable** table and placed to the **ConfigurationVersion** item.
     3. Binding **ConfigurationTitle: String = @.'>Relations'.Solution.Name** indicates that the name of an ER configuration is taken from the **Name** field of the **ERSolutionTable** table assessing by using the many-to-one relation (**'>Relations'**) between the **ERSolutionVersionTable** and **ERSolutionTable** tables. Names of ER configurations of the current application instance are presented in the configurations tree on the **Configurations** page.
     4. Binding **@.'>Relations'.Solution.'>Relations'.SolutionVendor.Name** means that the name of the configuration provider that owns the current configuration is taken from the **Name** field of the **ERVendorTable** table assessing by using the many-to-one relation between **ERSolutionTable** and **ERVendorTable** tables. Names of ER configuration providers are presented in the configurations tree on the **Configurations** page on the page header for each configuration. The entire list of ER configuration providers can be found on the **Organization administration \> Electronic reporting \> Configuration provider** table page.
