@@ -39,7 +39,9 @@ The steps below describe how to create a Modern POS packaging project using Visu
 
          1.  Search for "Windows JavaScript" and select "Blank App (Universal Windows)"
 
+            ```xml
             <img src="media/image9.png" alt="Graphical user interface, application Description automatically generated" width="480" height="360" />
+            ```
 
          2.  Set the Target Version and Minimum version as shown below.
 
@@ -47,9 +49,9 @@ The steps below describe how to create a Modern POS packaging project using Visu
 
 2.  Delete Generated Source Files
 
-       1.  Delete the "js" and "css" folders, the index.html and the package.appxmanifest file.
+        1.  Delete the "js" and "css" folders, the index.html and the package.appxmanifest file.
 
-        **Note:** Don't delete the image file used as the logo for the app package (images\\StoreLogo.png) unless you content include a replacement logo
+            **Note:** Don't delete the image file used as the logo for the app package (images\\StoreLogo.png) unless you content include a replacement logo
 
 3.  Edit the project and import the customization package props file created in the steps above.
 

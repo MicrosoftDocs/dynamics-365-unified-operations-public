@@ -78,4 +78,4 @@ To create your own extension, follow the steps in  [Create a POS extension packa
 
 To debug your extension, follow the steps in [Debug a POS extension](debug-pos-extension.md).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
