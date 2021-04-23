@@ -52,7 +52,7 @@ Analytical workspaces can be used for operational analytics scenarios in two way
 - Use and extend the ready-made analytical workspaces, so that you don't have to build workspaces from scratch.
 - Build your own Power BI–based analytical reports.
 
-For more information, see [Embedded Power BI in workspaces](../analytics/embed-power-bi-workspaces.md?toc=%2fdynamics365%2ffinance%2ftoc.json).
+For more information, see [Embedded Power BI in workspaces](../analytics/embed-power-bi-workspaces.md).
 
 ## BYOD
 
