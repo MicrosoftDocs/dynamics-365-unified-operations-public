@@ -46,7 +46,7 @@ Deploy the environments by following these steps.
 
 ## Configure Dataverse
 
-Use the follownig steps to configure Dataverse for Finance insights.
+Use the following steps to configure Dataverse for Finance insights.
 
 1. Open the environment page in LCS and verify that the **Power Platform Integration** section is already setup.
     1. If it is already set up, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed. Copy the Dataverse environment name.
