@@ -47,6 +47,7 @@ We have recently added or significantly updated the following help topics. They 
 | Feature area | New or updated topics |
 |---|---|
 | Engineering change management | [Engineering change management FAQs](../engineering-change-management/change-management-faq.md) |
+| Procurement and sourcing | [Category requests from vendors](../procurement/category-requests-from-vendors.md) |
 | Product information management | [Manage unit of measure](../pim/tasks/manage-unit-measure.md)<br><br>[Product configuration model calculations](../pim/config-model-calculations.md) |
 | Production control | [Unified number sequence for job IDs](../production-control/unified-job-ids.md) |
 | Transportation management | [LTL classes](../transportation/ltl-class.md) |
