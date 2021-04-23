@@ -1,6 +1,6 @@
 ---
-title: Unable to show the new notes attached to a picking list journal in the picking list report
-description: Unable to show the new notes attached to a picking list journal in the picking list report
+title: Unable to show new notes attached to a journal in the picking list report
+description: You are unable to show the new notes attached to a picking list journal in the picking list report
 author: niwang
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,13 +13,13 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Unable to show the new notes attached to a picking list journal in the picking list report
+# Unable to show new notes attached to a journal in the picking list report
 
 KB Number: 4611660
 
 ## Symptoms
 
-Unable to show the new notes attached to a picking list journal in the picking list report.
+You are unable to show the new notes attached to a picking list journal in the picking list report.
 
 ## Resolution
 

@@ -3305,13 +3305,13 @@
         items:
         - name: Missing field settings on copying item model groups to another legal entity
           href: troubleshooting/costing/copying-item-model-groups.md
-        - name: Indirect costs in process report includes deleted production orders
+        - name: The Indirect costs in process report includes deleted production orders
           href: troubleshooting/costing/indirect-costs-in-pr.md
         - name: Purchase accrual posted with amount zero for zero-value product receipt
           href: troubleshooting/costing/posting-to-purchase.md
         - name: Physically received purchase orders don't appear in the inventory closing report
           href: troubleshooting/costing/purchase-orders-rece.md
-        - name: There is no "From date" on the "Active prices" tab
+        - name: There is no From date on the Active prices tab of the Item price page
           href: troubleshooting/costing/there-is-no-from-dat.md
       - name: Inventory management
         items:
@@ -3319,7 +3319,7 @@
           href: troubleshooting/inventory/multiple-inventory-t.md
         - name: Reversing a report as finished creates an unexpected open transaction
           href: troubleshooting/inventory/reverse-report-as-fi.md
-        - name: Unable to print the notes attached to a picking route
+        - name: Unable to show new notes attached to a journal in the picking list report
           href: troubleshooting/inventory/unable-to-print-the.md
         - name: Quantity on a started quarantine order doesn't update when the order is split
           href: troubleshooting/inventory/quantity-on-a-start.md

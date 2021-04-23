@@ -23,7 +23,7 @@ The system creates a posting to purchase accrual with amount zero when a product
 
 ## Resolution
 
-For ledger postings type `Purchase, accrual`, the field `IsTransferredIndetail` is always set to value Summary by default in subledger transactions.  Therefore, the system creates a related voucher entry regardless of whether the amount is zero or not.
+For ledger postings of type *Purchase, accrual*, the field `IsTransferredIndetail` is always set to a value of *Summary* by default in subledger transactions. Therefore, the system creates a related voucher entry regardless of whether the amount is zero or not.
 
 If you would like to skip this posting type when the amount is zero, extend the `subledgerJournalizer.markDoNotTransferEntries` method to include `ledgerPostingType = PurchPckSlpPurchaseOffsetAccount`, as illustrated in the following example:
 
