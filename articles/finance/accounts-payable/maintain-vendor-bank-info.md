@@ -52,7 +52,7 @@ If the legal entity is outside the United States, the dialog box also includes f
 
 If there are any documents that are related to the specific certification, you can attach them by selecting **Document**.
 
-Bank information that vendors enter on the page will show **Vendor** as the source. You can also enter bank account information on a vendor's behalf. That information will appear here, and **Customer** will be shown as the source. For more information, see [Create a vendor bank account](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/tasks/create-vendor-bank-account).
+Bank information that vendors enter on the page will show **Vendor** as the source. You can also enter bank account information on a vendor's behalf. That information will appear here, and **Customer** will be shown as the source. For more information, see [Create a vendor bank account](../../supply-chain/procurement/tasks/create-vendor-bank-account.md).
 
 After an account has been added, vendors can edit their bank's effective and expiration dates as required.
 
