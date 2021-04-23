@@ -86,7 +86,7 @@ Before you start development via the Retail SDK, you must restore all the packag
 3. Run the **msbuild /t:rebuild** command from the root of the SDK folder. The dirs.proj file in the root of the SDK folder (RetailSDK\\dirs.proj or RetailSDK\\Code\\dirs.proj) contains all the details that are required to build the full SDK.
 
 > [!NOTE]
-> Starting Retail SDK version 10.0.18 or later, by default the retail SDK msbuild will check whether the SDK prerequisites installed or not, if not installed it will show the error message and scripts to run to install the prerequisites. You can skip the prerequisites check by passing the parameter msbuild /p:CheckVSDependencies=false
+> Starting in Retail SDK version 10.0.18 or later, by default the retail SDK MSBuild will check whether the SDK prerequisites are installed, if not it will show the error message and scripts to run to install the prerequisites. You can skip the prerequisites check by passing the parameter MSBuild /p:CheckVSDependencies=false.
 
  ![Running MSBuild from a Command Prompt window](media/retail-sdk-command-prompt.png)
 
