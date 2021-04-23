@@ -4,7 +4,7 @@
 title: Warehouse management workloads for cloud and edge scale units
 description: This topic provides information about the feature that enables scale units to run selected processes from your warehouse management workload.
 author: perlynne
-ms.date: 10/06/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -23,7 +23,7 @@ ms.search.region: global
 ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
-ms.dyn365.ops.version: 10.0.15
+ms.dyn365.ops.version: 10.0.19
 ---
 
 # Warehouse management workloads for cloud and edge scale units
