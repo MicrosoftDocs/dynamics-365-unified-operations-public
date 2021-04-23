@@ -35,12 +35,12 @@ Before you can attach guides to Asset management work orders, you must complete 
 - [Set up Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) version 10.0.9 or later.
 - [Turn on dual-write for Supply Chain Management apps](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
 - [Turn on flight](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) for the **MRGuidesFeature** feature. (For production environments, you must first submit a support ticket to have your tenant added to the flighting group.)
-- [Turn on the following configuration keys](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) on the **License configuration** page:
+- [Turn on the following configuration keys](/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) on the **License configuration** page:
 
     - Asset management \> Asset management mixed reality
     - Mixed reality \> Mixed reality guide
 
-- [Set up Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 200.0.0.96 or later.
+- [Set up Dynamics 365 Guides](/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 200.0.0.96 or later.
 
 ## Use Dynamics 365 Guides with Asset management
 
@@ -52,8 +52,8 @@ To associate a guide with a maintenance checklist template, follow these steps.
 
 1. Create a guide by using the Dynamics 365 Guides PC and HoloLens apps. For information about how to create a guide, see the following topics:
 
-    - [Use the PC app to create a guide](https://docs.microsoft.com/dynamics365/mixed-reality/guides/pc-app-overview)
-    - [Use the HoloLens app to place your holograms](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-overview)
+    - [Use the PC app to create a guide](/dynamics365/mixed-reality/guides/pc-app-overview)
+    - [Use the HoloLens app to place your holograms](/dynamics365/mixed-reality/guides/hololens-app-overview)
 
 1. In Supply Chain Management, [create a maintenance checklist template](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-checklist-template).
 1. Associate the guide that you created with a maintenance checklist line in the new maintenance checklist template:

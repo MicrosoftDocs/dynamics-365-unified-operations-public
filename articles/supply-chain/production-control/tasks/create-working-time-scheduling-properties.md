@@ -29,19 +29,21 @@ ms.dyn365.ops.version: Version 7.0.0
 
 Working time scheduling properties are used to categorize working time intervals and define the settings that operators must take into account. This procedure shows how to define a working time scheduling property and associated property values. You can walk through this procedure in demo data company USMF, or using your own data.
 
-1. Go to All workspaces > Resource lifecycle management.
-2. Click Properties.
+1. Go to **Workspaces \> Resource lifecycle management**.
+2. Select **Properties**.
 
 ## Create property
-1. Click New.
-2. In the Property field, type a value.
-3. In the Name field, type a value.
+
+1. Select **New**.
+2. In the **Property** field, type a value.
+3. In the **Name** field, type a value.
 
 ## Create property values
+
 1. In the list, mark the selected row.
-2. In the Name field, type a value.
-3. In the Value field, type a value.
-4. Click Save.
+2. In the **Name** field, type a value.
+3. In the **Value** field, type a value.
+4. Select **Save**.
 
 
 

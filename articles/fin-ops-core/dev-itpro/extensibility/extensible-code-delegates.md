@@ -31,7 +31,7 @@ Although you can subscribe to existing delegates, don't create new delegates. Th
 
 Instead of creating new delegates, structure your code in small methods that have good names, as described in the [guidelines for writing extensible methods](extensible-methods.md).
 
-If you decide to use delegates, consider ensuring no more than one response where applicable. For more information, see [EventHandlerResult classes in request or response scenarios](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/event-handler-result-class).
+If you decide to use delegates, consider ensuring no more than one response where applicable. For more information, see [EventHandlerResult classes in request or response scenarios](../dev-tools/event-handler-result-class.md).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

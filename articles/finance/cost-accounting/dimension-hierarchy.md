@@ -335,7 +335,7 @@ The settings for the access list hierarchy are used to control the data that is 
     - Data Power BI visualizations that are embedded in the Dynamics 365 Finance client
 
 > [!NOTE] 
-> - Before the access list hierarchy can affect data in Power BI, access list hierarchy and row-level security in Power BI must be paired. For more information, see [Set up security for Cost accounting content pack](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Before the access list hierarchy can affect data in Power BI, access list hierarchy and row-level security in Power BI must be paired. For more information, see [Set up security for Cost accounting content pack](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - The access list hierarchy doesn't help secure the export of data to Excel. Therefore, that reporting tool should be used only by cost accountants and managers who must have full access to view the data.
 
 

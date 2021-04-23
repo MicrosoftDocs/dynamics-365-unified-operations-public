@@ -60,7 +60,7 @@ After you run the *Update product receipts* periodic task, the system automatica
 
 ### Issue resolution
 
-A new inbound load handling feature, *Over receipt of load quantities*, fixes this issue. To turn on this feature, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the following features (in the order that they are listed in):
+A new inbound load handling feature, *Over receipt of load quantities*, fixes this issue. To turn on this feature, go to the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace and turn on the following features (in the order that they are listed in):
 
 1. Associate purchase order inventory transactions with load
 1. Over receipt of load quantities

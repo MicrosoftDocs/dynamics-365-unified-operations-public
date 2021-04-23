@@ -38,7 +38,7 @@ This topic describes the omni-channel Commerce order payments feature in Microso
 | Term | Description |
 |---|---|
 | Commerce payment | A payment that is associated with a customer order that was generated at the POS or in the e-commerce storefront. |
-| Order completion | The business logic in the call center that ensures that payments have been collected before an order is submitted. The **Enable order completion** setting in the call center parameters is used to turn on this business logic. For more information, see [Enable order completion](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion). 
+| Order completion | The business logic in the call center that ensures that payments have been collected before an order is submitted. The **Enable order completion** setting in the call center parameters is used to turn on this business logic. For more information, see [Enable order completion](../set-up-order-processing-options.md#enable-order-completion). 
 | Call center order | An order that a call center user creates in Commerce headquarters. |
 | Accounts receivable (AR) sales order | An order that a user who isn't a call center user creates through Accounts receivable in Commerce headquarters. Payments for AR sales orders can't be edited through call center order completion. |
 
@@ -75,7 +75,7 @@ The following features are required for omni-channel Commerce order payments to 
 | Feature name | Description |
 |---|---|---|
 | Unified payment posting journal defaults for Commerce | This feature changes the way that business logic creates customer payment and customer refund payment journals for orders that are created through the call center, POS, or e-commerce channel. |
-| Omni-channel payments | This feature enables omni-channel payment scenarios, such as buy online, pick up in store. For more information, see [Omni-channel payments overview](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments). |  
+| Omni-channel payments | This feature enables omni-channel payment scenarios, such as buy online, pick up in store. For more information, see [Omni-channel payments overview](../omni-channel-payments.md). |  
 | Duplicate payment protection on invoicing | This feature enables duplicate payment protection for invoicing scenarios. Commerce payments functionality might affect customizations in invoicing scenarios. If your organization has invoicing customizations, make sure that they are refactored before you turn on Commerce payments functionality in production environments. | 
 | Enable refunds over multiple captures | This functionality improves that capability to do multiple linked refunds against an order. |
 | Enable manual void of expired credit card payment lines when authorizations are expired | This feature adds support for manual deletion of payment lines if they expire and the authorization cannot be refreshed. |
@@ -92,15 +92,15 @@ The following illustration shows the mapping of a payment method to an operation
 
 #### Configure a call center
 
-To manage POS and e-commerce order payments through Commerce headquarters, you must configure at least one call center channel. For more information about how to create a call center channel, see [Set up a call center channel](https://docs.microsoft.com/dynamics365/commerce/channel-setup-callcenter#overview).
+To manage POS and e-commerce order payments through Commerce headquarters, you must configure at least one call center channel. For more information about how to create a call center channel, see [Set up a call center channel](../channel-setup-callcenter.md#overview).
 
 #### Set up users as call center users
 
-Users who will edit Commerce payments in Commerce headquarters must be set up as users of the call center channel. For more information about how to set up call center users, see [Set up a call center channel user](https://docs.microsoft.com/dynamics365/commerce/channel-setup-callcenter#set-up-channel-users).
+Users who will edit Commerce payments in Commerce headquarters must be set up as users of the call center channel. For more information about how to set up call center users, see [Set up a call center channel user](../channel-setup-callcenter.md#set-up-channel-users).
 
 #### Turn on order completion for call centers
 
-The order completion function must be turned on for call centers. Order completion enforces business logic that makes sure that orders can be paid during fulfillment. For more information about order completion, see [Enable order completion](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion).
+The order completion function must be turned on for call centers. Order completion enforces business logic that makes sure that orders can be paid during fulfillment. For more information about order completion, see [Enable order completion](../set-up-order-processing-options.md#enable-order-completion).
 
 #### Remove the Pay later option from the POS
 

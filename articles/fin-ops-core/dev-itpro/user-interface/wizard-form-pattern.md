@@ -113,8 +113,8 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [MSDN Wizards in Microsoft Dynamics AX \[AX 2012\]](https://msdn.microsoft.com/library/aa622644.aspx)
--   [MSDN Guidelines for Wizard Development \[AX 2012\]](https://msdn.microsoft.com/library/aa853845.aspx)
+-   [MSDN Wizards in Microsoft Dynamics AX \[AX 2012\]](/dynamicsax-2012/developer/wizards-in-microsoft-dynamics-ax)
+-   [MSDN Guidelines for Wizard Development \[AX 2012\]](/dynamicsax-2012/developer/guidelines-for-wizard-development)
 
 #### AX 2012 example
 

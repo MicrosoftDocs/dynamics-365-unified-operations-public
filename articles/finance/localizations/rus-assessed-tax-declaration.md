@@ -409,7 +409,7 @@ To create corrective registers, follow these steps.
     - Property tax declaration model mapping
     - Property tax declaration format 5.06
 
-    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2. You can upload Data management package settings to work with the assessed tax declaration. Follow these steps:
 

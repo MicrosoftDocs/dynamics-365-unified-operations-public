@@ -38,7 +38,7 @@ The Dynamics 365 Human Resources User Guide provides you with instructions on se
 
 [Configure Human resources parameters](hr-setup-parameters.md)</br>
 [Configure Human resources shared parameters](hr-setup-shared-parameters.md)</br>
-[Set up Human resource workflows](hr-setup-workflows.md)</br>
+[Set up Human resource workflows](./hr-workflow-manage-employee-information.md)</br>
 [Understand Date and Time fields](hr-setup-date-time-fields.md)</br>
 
 ## Configure organization settings

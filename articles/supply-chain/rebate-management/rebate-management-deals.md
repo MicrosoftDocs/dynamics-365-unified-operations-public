@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.18
 # Rebate management deals
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Rebate management deals are used to control different methods and bases for calculating rebates and royalties. They include rules for inclusions and exclusions. There are three types of Rebate management deals: customer rebates, customer royalties, and vendor rebates. All three types use similar settings. This topic points out differences where they exist.
 

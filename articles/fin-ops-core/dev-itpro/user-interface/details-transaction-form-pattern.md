@@ -197,8 +197,8 @@ None currently.
 
 #### AX 2012 links
 
--   [MSDN Details Form with Lines User Experience Guidelines \[AX 2012\]](https://msdn.microsoft.com/library/gg886601.aspx)
--   [MSDN Details Form \[AX 2012\]](https://msdn.microsoft.com/library/hh397318.aspx)
+-   [MSDN Details Form with Lines User Experience Guidelines \[AX 2012\]](/dynamicsax-2012/developer/details-form-with-lines-user-experience-guidelines)
+-   [MSDN Details Form \[AX 2012\]](/dynamicsax-2012/developer/details-forms)
 
 #### AX 2012 example
 

@@ -91,7 +91,7 @@ You can create a new version if, for example, URLs must be updated. For more inf
 
     ![Opening the Format designer page](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
-3. Use the **Format designer** page to edit and view the ER format file configurations. For more information, see [Create electronic document configurations](../../dev-itpro/analytics/electronic-reporting-configuration.md).
+3. Use the **Format designer** page to edit and view the ER format file configurations. For more information, see [Create electronic document configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
     ![Format designer page](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
@@ -166,7 +166,7 @@ To set up Electronic invoicing in Finance, you will complete these tasks:
 ### Import the ER data model, ER data model mapping, and context configurations for CFDI invoices
 
 1. Sign in to Finance.
-2. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** title. Make sure that this configuration provider is set to **Active**. For information about how to set a provider to **Active**, see [Create configuration providers and mark them as active](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** title. Make sure that this configuration provider is set to **Active**. For information about how to set a provider to **Active**, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Select **Repositories**.
 4. Select **Global resource \> Open**.
 5. Import **Invoice model**, **Invoice model mapping**, **CFDI invoice format (MX)**, **CFDI invoice cancelation request format (MX)**, and **CFDI invoice cancel format (MX)**.
@@ -220,7 +220,7 @@ During the processing of CFDI invoices in Finance through Electronic invoicing, 
 After you turn on the **Configurable Electronic invoicing integration** feature, the **Export/Import electronic invoice** process (**Accounts receivable \> Invoices \> E-invoices**) for submitting CFDI invoices can no longer be used. It's replaced by a new process that is named **Submit electronic documents**.
 
 > [!NOTE]
-> Before you use the new **Submit electronic documents** process, verify that the setup that is required for Mexican e-invoices was completed. For more information, see [CFDI layout version 3.3](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3).
+> Before you use the new **Submit electronic documents** process, verify that the setup that is required for Mexican e-invoices was completed. For more information, see [CFDI layout version 3.3](./latam-mex-cfdi-3-3.md).
 
 1. Go to **Organization administration \> Periodic \> Electronic documents \> Submit electronic documents**.
 2. For the first submission of any document, always set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.

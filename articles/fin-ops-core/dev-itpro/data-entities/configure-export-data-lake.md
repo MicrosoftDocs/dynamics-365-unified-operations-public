@@ -4,7 +4,7 @@
 title: Configure export to Azure Data Lake
 description: This topic provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
-ms.date: 01/04/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -83,12 +83,14 @@ The steps, which take place in the Azure portal, are as follows:
 > [!NOTE]
 > When you are working in the Azure portal, you will be instructed to save several values for subsequent steps. You will also provide some of these values to your Finance and Operations apps by using Lifecycle Services (LCS). You will need Administrator access to LCS in order to do this.
 1. [Create an application in Azure Active Directory](#createapplication)
-2. [Grant access control roles to applications](#grantaccess)
-3. [Create a Data Lake Storage (Gen2 account) in your subscription](#createsubscription)
+2. [Create a Data Lake Storage (Gen2 account) in your subscription](#createsubscription)
+3. [Grant access control roles to applications](#grantaccess)
 4. [Create a key vault](#createkeyvault)
 5. [Add secrets to the key vault](#addsecrets)
 6. [Authorize the application to read secrets in the key vault](#authorize)
-7. [Install the Export to Data Lake add-in in LCS](#installaddin)
+7. [Power Platform integration](#powerplatformintegration)
+8. [Install the Export to Data Lake add-in in LCS](#installaddin)
+
 
 ## <a name="createapplication"></a>Create an application in Azure Active Directory
 
@@ -130,19 +132,20 @@ You need to grant your application permissions to read and write to the storage 
 2. Select **Access Control (IAM)** in the left navigation. 
 3. On the **Access control** page, select the **Role assignments** tab.
 4. Select **Add** at the top of the page, and then select **Add role assignment**.
-5. In the **Add role assignment** dialog, select the **Role** field, and then select **Owner**.
+5. In the **Add role assignment** dialog box, select the **Role** field, and then select **Storage blob data contributor**.
+6. In the **Select** field, select the application that you registered earlier.
 
 > [!NOTE]
 > Don't make any changes to the fields, **Assign access to** and **Azure AD user, group, or service principal**.
 
-6. In the **Select** field, select the application that you registered earlier.
 7. Select **Save**.
-8. Add the remaining roles shown in the following table by repeating steps 4-7.
+8. Repeat steps 4-7 to add the **Storage blob data reader** role, as shown.
+9. Validate the storage account role assignment for [the application](#appid) you created earlier. 
 
-|   Application to be selected     |     Role to be assigned     |
-|----------------------------------|-----------------------------|
-| [The application](#appid) you created earlier | Storage blob data contributor |
-| [The application](#appid) you created earlier | Storage blob data reader     |
+     |   Application     |     Role     |
+     |----------------------------------|-----------------------------|
+     | [The application](#appid) you created earlier | Storage blob data contributor |
+     | [The application](#appid) you created earlier | Storage blob data reader     |
 
 ## <a name="createkeyvault"></a>Create a key vault
 
@@ -157,7 +160,7 @@ A key vault is a secure way to share details such as storage account name to you
 
 You are going to create three secrets in the Key vault and then add the values saved from previous steps. For each of the secrets, you will need to provide a secret name and provide the value you saved from earlier steps.
 
-| <a name="suggest"></a>**Suggested secret name** | **Secret value that you saved earlier**  | **Example** |
+| <a name="suggest"></a>**Suggested secret name** | **Secret value that you saved earlier**  | **Example secret value** |
 |---------------------------|------------------------------------------------------------------|-------------|
 | app-id                    | The ID of the application [created earlier](#appid).             |8936e905-197b-xxx-xxxx-xxxxxxxxx|
 | app-secret                | The [client secret](#secret) specified earlier.                  |NaeIxxxxxxx---xxxx7eixxx~1g-|
@@ -194,7 +197,21 @@ You should see application with access to your key vault as shown below.
 
 7.  Select **Save**.
 
+## <a name="powerplatformintegration"></a>Power Platform integration 
+If this is the first time you are installing add-ins in this environment, you may need to enable the **Power Platform integration**  for this environment. There are two options to set up Power Platform integration in Finance and Operations app environments.
 
+### Option 1: Set up Power Platform integration using LCS
+
+To set up Power Platform integration from LCS, see [Add-ins overview](../power-platform/add-ins-overview.md).
+
+### Option 2: Set up Power Platform integration using the Dual-write wizard
+
+Another way to set up **Power Platform integration** is to create a Power Platform environment with a database and then use the Dual-write setup. Complete the following steps to create the Power Platform environment and complete the integration. 
+
+1. [Create an environment with database](/power-platform/admin/create-environment#create-an-environment-with-a-database.md).
+2. [Complete the requirement and prerequisite](dual-write/requirements-and-prerequisites.md).  
+3. Use the [dual-write wizard to link your environment](dual-write/link-your-environment.md).
+4. Validate that the Power Platform integration is set up and added in the LCS environment page.  
 
 ## <a name="installaddin"></a>Install the Export to Data Lake add-in in LCS 
 
@@ -212,12 +229,20 @@ You need the following information before you start. Keep the information handy 
 
 1.  Sign in to [LCS](https://lcs.dynamics.com) and navigate to your environment.
 2.  On the **Environment** page, select the **Environment add-ins** tab. If **Export Data Lake** appears in the list, the Data Lake add-in is already installed, and you can skip the rest of this procedure. Otherwise, complete the remaining steps.
-3.  If this is the first time you are installing add-ins in this environment, you may need to enable **Power platform integration**  for this environment. This is a one-time operation to be performed by the LCS administrator. For more information, see [Add-ins overview](../power-platform/add-ins-overview.md). Refer to the troubleshooting section for common issues.
-4.  Select **Install a new add-in**, and in the dialog box, select **Export to Data lake**. If **Export to data lake** isn't listed, the feature might not be available for your environment at this time.
-5.  In the **Setup add-in** dialog box, provide the required information. To answer the questions, you must already have a storage account. If you don't already have a storage account, create one, or ask your admin to create one on your behalf.
-6.  Accept the terms of the offer by selecting the check box, and then select **Install**.
+3.  Select **Install a new add-in**, and in the dialog box, select **Export to Data lake**. If **Export to data lake** isn't listed, the feature might not be available for your environment at this time.
+4.  In the **Setup add-in** dialog box, enter the required information. To answer the questions, you must already have a storage account. If you don't already have a storage account, create one, or ask your admin to create one on your behalf.
+5.  Accept the terms of the offer by selecting the check box, and then select **Install**.
 
 The system installs and configures the data lake for the environment. After installation and configuration are complete, you should see **Azure Data Lake** listed on the **Environment** page.
+
+## <a name="troubleshooting"></a> Troubleshooting
+
+### Error UnableToInitializeLakeDueToUserError
+
+The error, **UnableToInitializeLakeDueToUserError** indicates that the **Export to Data Lake** service can't connect to a storage account or [the application](#appid) doesn't have the required access to the storage account. To resolve this issue, try the following:
+
+- Validate that the secret values stored in the key vault are valid and correct. For more information, see [add secrets to the key vault](#addsecrets).   
+- Validate that the Azure Active Directory (Azure AD) app you have requires access to the storage account. For more information, see [Grant access control roles to applications](#grantaccess).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
