@@ -56,10 +56,10 @@ The following example shows how to set up a simple *Vendor category request* wor
 1. Drag a link from the **Approve new category request** workflow element to the **End** workflow element.
 1. Double-tap (or double-click) the **Approve new category request** workflow element.
 1. Select and hold (or right-click) the **Step 1** workflow element, and then select **Properties**.
-1. On the **Properties** page for the workflow element, in the **Work item subject** field, enter subject text. This text will be shown as the value of the **Subject** field in **Work items assigned to me**.
+1. On the **Properties** page for the workflow element, in the **Work item subject** field, enter subject text. This text will be shown as the value of the **Subject** field on the **Work items assigned to me** page.
 1. In the **Work item instructions** field, enter instruction text. The instructions will be visible to approvers when they select **Workflow** on the Action Pane of a category request.
 1. In the left pane, select **Assignment**.
-1. On the **Assignment type** tab, select *User*.
+1. On the **Assignment type** tab, set **Assign users to this workflow element** to *User*.
 1. On the **User** tab, in the **Available users** list, select an approver. For example, select a user in the Procurement department.
 1. Select the right arrow button (**\>**) to move the approver to the **Selected users** list.
 1. Close the **Properties** page.
@@ -140,7 +140,7 @@ To recall a category request that has been submitted but hasn't yet been approve
 1. On the Action Pane, select **Recall**.
 1. In the **Enter a comment** box, enter any additional information that is required. Then select **Submit** to complete the request.
 
-    The status of the category request is changed to _Cancelled_. The request will remain in this status until you delete or resubmit it.
+    The status of the category request is changed to _Canceled_. The request will remain in this status until you delete or resubmit it.
 
 ### Delete a draft or recalled request
 
@@ -153,14 +153,10 @@ To delete a draft or recalled category request, follow these steps.
 
 ### View completed requests
 
-To view completed requests, follow these steps.
+To view completed requests, open the **Vendor information** workspace and select the **Category requests** tile. Category requests that have been completed will have one of the following statuses:
 
-- In the **Vendor information** workspace, select the **Category requests** tile.
-
-    Category requests that have been completed will have one of the following statuses:
-
-    - _Approved_ – The request was approved. To view the newly added categories, in the **Vendor information** workspace, open **More details**, and then select **Categories**.
-    - _Rejected_ – The request was rejected. You can create a new category request as required.
+- _Approved_ – The request was approved. To view the newly added categories, go back to the **Vendor information** workspace, open the **More details** drop-down list in the left pane, and then select **Categories**.
+- _Rejected_ – The request was rejected. You can create a new category request as required.
 
 ## Review category requests
 
@@ -179,7 +175,7 @@ To view category requests, follow these steps.
 
     - To view the list of categories that are currently included in the request, select the **Requested categories** FastTab.
     - To view the active categories, open the **Active categories** FactBox on the right side of the page.
-    - If documents were submitted, the attachments symbol shows a count of the attached documents. To view attached documents, select **Attachments** on the Action Pane. Select the document to view, and then select **Open** to view it.
+    - If documents were submitted, the  **Attachments** (paper clip) button on the Action Pane shows a count of the attached documents. To view attached documents, select the **Attachments** button. Then select the document to view and select **Open** to view it.
     - To attach a document to the request, select **Attachments** on the Action Pane. Attached documents will be available to approvers when they review the category request.
     - To remove an attached document from the request, select **Attachments** on the Action Pane. Select the document to remove, and then select **Delete** on the Action Pane.
     - To view the workflow history, select **Workflow** on the Action Pane. In the workflow options, select **More** and then **Workflow history**. The **Workflow history** page appears.
@@ -230,11 +226,10 @@ To delegate a pending category request to another user, follow these steps.
 
 To view procurement categories for a vendor after a category request is approved, follow these steps.
 
-1. Go to **Procurement and sourcing \> Vendors \> Vendor collaboration requests \> Category requests**.
+1. Go to **Procurement and sourcing \> Vendors \> All vendors**.
 1. On the **All vendors** page, select the vendor that you want to view procurement categories for.
-1. On the Action Pane, select **General**.
-1. Select **Set up** and then **Categories** on the ribbon.
+1. On the Action Pane, open the **General** tab and, from the **Set up** group, select **Categories**.
 
     The **Categories** page appears. The **Procurement** FastTab shows procurement categories that were added through the category request.
 
-1. On the **Procurement** FastTab, you can make changes. For example, you can set the **Vendor category status** field to _Preferred_.
+1. On the **Procurement** FastTab, you can make changes if needed. For example, you can set the **Vendor category status** field to _Preferred_.
