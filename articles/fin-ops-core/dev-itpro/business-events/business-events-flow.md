@@ -54,7 +54,7 @@ Multiple flows can subscribe to the same business event in different legal entit
 > [!NOTE]
 > The Power Automate endpoint must not be configured manually. The endpoint will automatically get created from Power Automate as explained above.
 
-For how-to information about using business events in Microsoft Flow, see [Consume business events in Microsoft Flow](/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow). 
+For how-to information about using business events in Microsoft Flow, see [Consume business events in Microsoft Flow](how-to/how-to-flow.md). 
 
 ## Other ways to consume business events in Power Automate
 
