@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 # Create a Modern POS extension appx file 
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The steps below describe how to create a Modern POS packaging project using Visual Studio 2017. These steps are only required if you are developing extensions for Modern POS. The Modern POS extension packaging project is responsible for generating the Universal Windows Platform Modification package (MSIX) that will extend the Modern POS App.
 
@@ -119,3 +119,5 @@ The steps below describe how to create a Modern POS packaging project using Visu
     2.  Select the "Projects" tab on the left side of the Reference Manager.
 
     3.  Select the Hardware Station Extension projects.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

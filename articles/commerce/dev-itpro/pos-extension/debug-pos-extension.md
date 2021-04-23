@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 # Debugging POS extensions 
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to debug POS extension, this topic applies to Retail software development kit (SDK) version 10.0.18 and later.
 
@@ -85,3 +85,5 @@ set AbsolutePathToExtensionPackageProject=K:\RetailCloudPos\WebRoot\Extensions\ 
 4.	Press F12 to launch the Edge Dev Tools
 5.	Set up a workspace that points to the root directory of your Cloud POS Extension package (First Time Only)
 6.	Ensure that you have JavaScript Source Mapping Enabled.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

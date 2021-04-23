@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 # POS extension overview
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A POS application can be extended independently by using the POS SDK. The POS SDK supports modifying and creating the POS user experience, out-of-bx functional enhancements or modifications, validations, and adding custom features. The extensions include:
 
@@ -49,5 +49,4 @@ Store Commerce | The Store Commerce app is a Windows app from Microsoft Store th
 iOS hybrid app | The iOS hybrid app is a shell app that runs on an iOS device. The shell hosts CPOS.
 Android hybrid app | The Android hybrid app is a shell app that runs on an Android device. The shell hosts CPOS.
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

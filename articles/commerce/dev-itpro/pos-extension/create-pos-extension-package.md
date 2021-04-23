@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 # Create a POS extension package project 
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The steps below describe how to create a POS extension package project, set of extensions that when combined enable a custom end to end POS scenario using Visual Studio. POS extension package projects are applicable to both Modern POS and Cloud POS extension scenarios.
 
@@ -187,3 +187,5 @@ Ex:
 11.  All the base metadata for creating the extension is completed, now add your extension and update the manifest.json to include your extension. To develop the extension UX/logic refer the samples in the [GitHub](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.28/src/PosSample/Pos.Extension).
 
 After creating the extensions, it must be packaged to deploy to Cloud POS or MPOS. For MPOS [Create the appx file before creating the installer](pos-extension-appx.md).
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
