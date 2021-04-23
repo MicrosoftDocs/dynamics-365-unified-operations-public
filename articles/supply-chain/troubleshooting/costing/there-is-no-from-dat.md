@@ -1,6 +1,6 @@
 ---
-title: There is no "From date" on the "Active prices" tab
-description: There is no "From date" on the "Active prices" tab
+title: There is no "From date" on the "Active prices" tab in "Item price" form
+description: There is no "From date" on the "Active prices" tab in "Item price" form
 author: niwang
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -12,14 +12,14 @@ ms.author: smnatara
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-<!-- KFM: Where is this tab? The context is not clear. More detail is needed here. -->
-# There is no "From date" on the "Active prices" tab
+
+# There is no "From date" on the "Active prices" tab in "Item price" form
 
 KB Number: 4613548
 
 ## Symptoms
 
-There is no **From date** on the **Active prices** tab.
+There is no **From date** on the **Active prices** tab in "Item price" form.
 
 ## Resolution
 
