@@ -23,4 +23,4 @@ The system doesn't calculate auto charges when you import a sales order record t
 
 ## Resolution
 
-The data entity supports a field called `SkipCreateAutoCharges` that controls whether or not auto charges are calculated upon import. To calculated auto charges on import, set the value of `SkipCreateAutoCharges` in the imported file to *No*.
+The data entity supports a field called `SkipCreateAutoCharges` that controls whether or not auto charges are calculated upon import. To enable calculation of auto charges on import, set the value of `SkipCreateAutoCharges` in the imported file to *No*.
