@@ -5,7 +5,7 @@ title: Create predefined product variants
 description: This procedure walks through creating product variants for a product master using the combinations of product dimensions. 
 author: t-benebo 
 manager: tfehr 
-ms.date: 03/25/2021
+ms.date: 04/22/2021
 
 ms.topic: business-process 
 ms.prod:  
@@ -91,14 +91,14 @@ The following improvements are added by this feature:
 - **Deferred generation of variant suggestions:** The **Variant suggestions** page no longer shows suggestions when you first open it. Instead, you must explicitly choose which values you will need and then select the **Suggest** button to generate the combinations. This makes the process more visible and interactive.
 - **Selection of dimensions values:** When you have many dimension values, you are typically interested in generating variant suggestions that include just a few of them (such as when introducing a new set of colors or styles). With the improved design, you can select the dimension values for which you want to generate product variant suggestions. This greatly increases the relevance of the suggested variants and improves both system performance and user productivity.
 
-## Turn on the Variant suggestions page improvements feature
+### Turn on the Variant suggestions page improvements feature
 
 Before you can use *Variant suggestions page improvements* feature, it must be turned on in your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Product information management*
 - **Feature name:** *Variant suggestions page improvements*
 
-## Work with the feature
+### Work with the improved variant suggestions
 
 To generate product variant suggestions when the *Variant suggestions page improvements* feature is enabled:
 

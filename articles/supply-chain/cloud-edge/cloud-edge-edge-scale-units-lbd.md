@@ -2,7 +2,7 @@
 title: Deploy edge scale units on custom hardware using LBD (Preview)
 description: This topic explains how to provision on-premises edge scale units by using custom hardware and deployment that is based on local business data (LBD). 
 author: cabeln
-ms.date: 04/13/2021
+ms.date: 04/22/2021
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: IT Pro
