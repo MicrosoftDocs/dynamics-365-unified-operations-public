@@ -215,7 +215,7 @@ First, sign in to the environment by using the admin account that can be found o
 
 When the system is configured as you require, you can enable selected users to access the environment. By default, all users except the admin and Microsoft service accounts are disabled.
 
-Go to **System administration** \> **Users** \> **Users**, and enable the users that should have access to the Production environment. If many users must be enabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](../office-integration/use-excel-add-in.md#open-entity-data-in-excel-when-you-start-from-finance-and-operations).
+Go to **System administration** \> **Users** \> **Users**, and enable the users that should have access to the Production environment. If many users must be enabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](../use-excel-add-in.md#open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app).
 
 ## Community tools
 
