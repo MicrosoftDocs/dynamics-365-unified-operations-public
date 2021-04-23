@@ -22,7 +22,7 @@ A less than truckload (LTL) class is a freight shipping class that is used to cl
 This feature lets you use your system to perform the following tasks:
 
 - Define the LTL freight classes that are used at your company.
-- Assign each LTL class to an NMFC code on the **NMFC Codes** page. For more information, see [NMFC codes](nmfc-codes.md).
+- Assign each LTL class to an NMFC code on the **NMFC Codes** page. For more information, see [National Motor Freight Classification (NMFC) codes](nmfc-codes.md).
 - Assign an NMFC code (and therefore its associated LTL code) to each product on the **Products** page.
 - Accurately assess the LTL class of each product that an NMFC code is assigned to.
 - Determine packing requirements for each LTL class by checking the international LTL standards. In this way, you ensure that your products will be well protected and safely shipped.
@@ -69,7 +69,7 @@ The following example shows how to set up two different LTL classes that you can
 
 ## Additional resources
 
-- [NMFC codes](nmfc-codes.md)
+- [National Motor Freight Classification (NMFC) codes](nmfc-codes.md)
 - [Create a bill of lading](create-bill-of-lading.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
