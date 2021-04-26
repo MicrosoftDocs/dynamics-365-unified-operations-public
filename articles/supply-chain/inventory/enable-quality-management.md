@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable quality and nonconformance management
-description: This topic provides an overview of how to set up and configure quality and nonconformance management features in Dynamics 365 Supply Chain Management.
+description: This topic provides an overview of the process for setting up and configuring quality and nonconformance management features in Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
 manager: tfehr
 ms.date: 03/23/2021
@@ -32,54 +32,52 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of how to set up and configure quality and nonconformance management features in Dynamics 365 Supply Chain Management.
+This topic provides an overview of the process for setting up and configuring quality and nonconformance management features in Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="enable-qm"></a>Enable quality and nonconformance management
 
-Do the following to enable quality management on your system:
+Follow these steps to enable quality management on your system.
 
-1. Go to **Inventory management > Setup > Inventory and warehouse management parameters**.
-1. Select the **Quality management** tab.
-1. Set the **Use quality management option** to *Yes*.
+1. Go to **Inventory management \> Setup \> Inventory and warehouse management parameters**.
+1. On the **Quality management** tab, set the **Use quality management** option to *Yes*.
 1. In the **Hourly rate** field, enter an hourly labor rate in the local currency. The hourly rate is used to calculate costs for operations that are related to a nonconformance. The hourly rate and calculated costs provide reference information for a nonconformance. They don't interact with other functionality.
-1. Select **Report setup**. Add new lines here for the various report types, and select the type of document to be used for each report.  
+1. Select **Report setup**.
+1. Add new lines for the various report types, and select the type of document to use for each report.
 1. Close the page.
 1. Close the page.
 
 ## Quality management configuration process
 
-To start using the quality management features and generate quality orders, you must configure the system and prerequisites. The following list shows the steps that must be taken to configure quality management.
+Before you can start to use the quality management features and generate quality orders, you must configure the system and prerequisites. Here is a list of the steps that are required to configure quality management.
 
-1. [Enable quality and nonconformance management](#enable-qm)
-2. [Configure test instruments](quality-test-instruments.md) (Optional)
-3. [Configure tests](quality-tests.md)
-4. [Configure test variables and outcomes](quality-test-variables.md)
-5. [Configure test groups](quality-test-groups.md)
-6. [Configure quality groups and link to products](quality-groups.md) (Optional)
-7. [Configure quality associations](quality-associations.md) (Optional)
+1. [Enable quality and nonconformance management](#enable-qm).
+2. Optional: [Configure test instruments](quality-test-instruments.md).
+3. [Configure tests](quality-tests.md).
+4. [Configure test variables and outcomes](quality-test-variables.md).
+5. [Configure test groups](quality-test-groups.md).
+6. Optional: [Configure quality groups, and link to products](quality-groups.md).
+7. Optional: [Configure quality associations](quality-associations.md).
 
-Once the configuration is complete, you can start creating and processing quality orders. For more information about creating and working with quality orders, see [Quality orders](quality-orders.md).
+After the configuration is completed, you can start to create and process quality orders. For more information about how to create and work with quality orders, see [Quality orders](quality-orders.md).
 
 ## Nonconformance management configuration process
 
-To start using the nonconformance management features and generate nonconformances, you must configure the system and pre-requisites. The following list shows the steps that must be taken to configure nonconformance management.
+Before you can start to use the nonconformance management features and generate nonconformances, you must configure the system and prerequisites. Here is a list of the steps that are required to configure nonconformance management.
 
-1. [Enable quality and nonconformance management](#enable-qm)
-2. [Configure workers responsible for approving nonconformances](quality-responsible-workers.md)
-3. [Configure problem types](quality-problem-types.md)
-4. [Configure quarantine zones](quality-quarantine-zones.md)
-5. [Configure diagnostic types](quality-diagnostic-types.md)
-6. [Configure operations](quality-operations.md)
-7. [Configure quality charges](quality-charges.md) (Optional)
+1. [Enable quality and nonconformance management](#enable-qm).
+2. [Configure workers who are responsible for approving nonconformances](quality-responsible-workers.md).
+3. [Configure problem types](quality-problem-types.md).
+4. [Configure quarantine zones](quality-quarantine-zones.md).
+5. [Configure diagnostic types](quality-diagnostic-types.md).
+6. [Configure operations](quality-operations.md).
+7. Optional: [Configure quality charges](quality-charges.md).
 
-Once the configuration is complete, you can start creating and processing nonconformances. For more information about creating and working with nonconformances, see [Create and process nonconformances](tasks/create-process-non-conformance.md).
-
+After the configuration is completed, you can start to create and process nonconformances. For more information about how to create and work with nonconformances, see [Create and process nonconformances](tasks/create-process-non-conformance.md).
 
 ## Additional resources
 
 - [Quality management overview](quality-management-processes.md)
 - [Enable quality and nonconformance management](enable-quality-management.md)
 - [Quality management for warehouse processes](quality-management-for-warehouses-processes.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
