@@ -32,7 +32,7 @@ The **Online Database Migration Toolkit** can be downloaded from Lifecycle Servi
 ## Prerequisites
 The following prerequisites are needed for the **Online Database Migration Toolkit**.
 
--	The source SQL Server should have the replication feature installed ane enabled. To check whether replication is enabled, execute the following SQL script.
+- The source SQL Server should have the replication feature installed ane enabled. To check whether replication is enabled, execute the following SQL script.
 
      ```sql
      -- If @installed is 0, replication must be added to the SQL Server installation. 
@@ -42,7 +42,7 @@ The following prerequisites are needed for the **Online Database Migration Toolk
     EXEC @installed = sys.sp_MS_replication_installed;  
     SELECT @installed; 
      ```
-    - If the replication components are not installed, then please follow the steps in this article [Install SQL Server replication](https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-replication?view=sql-server-ver15). 
+    - If the replication components are not installed, follow the steps in [Install SQL Server replication](/sql/database-engine/install-windows/install-sql-server-replication?view=sql-server-ver15). 
 
 -	SQL Agent should be running in the source database server.
 
