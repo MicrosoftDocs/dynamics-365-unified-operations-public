@@ -1,6 +1,6 @@
 ---
-title: Unable to upload the cost price in demand forecast entries
-description: You are unable to upload the cost price in demand forecast entries through data management entities
+title: Unable to update the forecasted unit cost when importing demand forecast records
+description: When you use data entities to import demand forecast records, the cost price for existing records doesn't get updated to match the imported data
 author: ChristianRytt
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,14 +13,18 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Unable to upload the cost price in demand forecast entries
+# Unable to update the forecasted unit cost when importing demand forecast records
 
 KB Number: 4614109
 
 ## Symptoms
-<!-- KFM: Do you mean "demand forecast entries" or "demand forecast entities". Both terms appear in this topic. Do you mean "upload" or "update"? -->
-You are unable to upload the cost price in demand forecast entries through data management entities.
+
+When you use data entities to import demand forecast records, the **Forecasted unit cost** for existing records doesn't get updated to match the imported data.
+
+## Cause
+
+**Forecasted unit cost** is a read-only field. Its value is set based on the product unit cost and can't be set directly through import.
 
 ## Resolution
 
-We do not currently support updating the forecasted unit cost on the demand forecast entity. The field is read-only on this entity.
+The field is read only, so you can't import values for it. The value will be calculated according to the existing business logic.
