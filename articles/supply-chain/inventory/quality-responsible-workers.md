@@ -39,7 +39,7 @@ Nonconformances must be approved before users can start to enter details such as
 
 ## Enable a user for nonconformance processing
 
-Before a user can approve or reject nonconformances, you must link their user record to a worker record. In this way, you enable the approval fields to be automatically set and the current user to be automatically filled in for the timesheet. Before the user can use the document notes, you must activate document handling in their user options.
+Before a user can approve or reject nonconformances, you must link their user record to a worker record. The approval fields can then be automatically set, and the current user can be automatically filled in for the timesheet. Before the user can use the document notes, you must activate document handling in their user options.
 
 1. Go to **System administration \> Users \> Users**.
 1. Find and open the user who should be able to approve or reject nonconformances.
