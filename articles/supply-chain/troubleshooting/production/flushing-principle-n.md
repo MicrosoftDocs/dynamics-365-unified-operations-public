@@ -19,7 +19,7 @@ KB Number: 4612725
 
 ## Symptoms
 
-This issue occurs when the **Automatic BOM consumption** setting (on the **Automatic update** tab of the **Production control parameters** page) is set to *Flushing principle*. This setting means that all bill of material (BOM) lines should automatically be consumed when a purchase order is received. However, you would expect that BOM lines with **Flushing principle** explicitly set to *Manual* should not be auto-consumed (by definition), but when this issue occurs, BOM lines set to *Manual* are still auto-consumed anyway.
+This issue occurs when the **Automatic BOM consumption** setting (on the **Automatic update** tab of the **Production control parameters** page) is set to *Flushing principle*. This setting means that all bill of material (BOM) lines should automatically be consumed when a purchase order is received. However, you would expect that BOM lines with **Flushing principle** explicitly set to *Manual* should not be autoconsumed (by definition), but when this issue occurs, BOM lines set to *Manual* are still autoconsumed anyway.
 
 ## Resolution
 
