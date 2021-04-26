@@ -51,12 +51,12 @@ Follow these steps to enable quality management on your system.
 Before you can start to use the quality management features and generate quality orders, you must configure the system and prerequisites. Here is a list of the steps that are required to configure quality management.
 
 1. [Enable quality and nonconformance management](#enable-qm).
-2. Optional: [Configure test instruments](quality-test-instruments.md).
-3. [Configure tests](quality-tests.md).
-4. [Configure test variables and outcomes](quality-test-variables.md).
-5. [Configure test groups](quality-test-groups.md).
-6. Optional: [Configure quality groups, and link to products](quality-groups.md).
-7. Optional: [Configure quality associations](quality-associations.md).
+1. Optional: [Configure test instruments](quality-test-instruments.md).
+1. [Configure tests](quality-tests.md).
+1. [Configure test variables and outcomes](quality-test-variables.md).
+1. [Configure test groups](quality-test-groups.md).
+1. Optional: [Configure quality groups, and link to products](quality-groups.md).
+1. Optional: [Configure quality associations](quality-associations.md).
 
 After the configuration is completed, you can start to create and process quality orders. For more information about how to create and work with quality orders, see [Quality orders](quality-orders.md).
 
@@ -65,12 +65,12 @@ After the configuration is completed, you can start to create and process qualit
 Before you can start to use the nonconformance management features and generate nonconformances, you must configure the system and prerequisites. Here is a list of the steps that are required to configure nonconformance management.
 
 1. [Enable quality and nonconformance management](#enable-qm).
-2. [Configure workers who are responsible for approving nonconformances](quality-responsible-workers.md).
-3. [Configure problem types](quality-problem-types.md).
-4. [Configure quarantine zones](quality-quarantine-zones.md).
-5. [Configure diagnostic types](quality-diagnostic-types.md).
-6. [Configure operations](quality-operations.md).
-7. Optional: [Configure quality charges](quality-charges.md).
+1. [Configure workers who are responsible for approving nonconformances](quality-responsible-workers.md).
+1. [Configure problem types](quality-problem-types.md).
+1. [Configure quarantine zones](quality-quarantine-zones.md).
+1. [Configure diagnostic types](quality-diagnostic-types.md).
+1. [Configure operations](quality-operations.md).
+1. Optional: [Configure quality charges](quality-charges.md).
 
 After the configuration is completed, you can start to create and process nonconformances. For more information about how to create and work with nonconformances, see [Create and process nonconformances](tasks/create-process-non-conformance.md).
 
