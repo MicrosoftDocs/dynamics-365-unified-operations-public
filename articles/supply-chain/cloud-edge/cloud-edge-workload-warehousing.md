@@ -91,8 +91,6 @@ The hub owns the following data:
 > The inbound purchase order flow is conceptually different from the outbound flow. You can operate the same warehouse on either the scale unit or the hub depending on whether the purchase order has been released to warehouse or not. Once you have released an order to the warehouse, you can only work with that order while signed in on the scale unit.
 If you're using the *Release to warehouse* process, [*warehouse orders*](cloud-edge-warehouse-order.md) are created, and ownership of the related receiving flow is assigned to the scale unit. The hub won't be able to register inbound receiving.
 
-![Inbound processing flow](./media/WES-inbound-processing-19.png "Inbound processing flow")
-
 You must sign in on the hub to use the *Release to warehouse* process. Go to one of the following pages to run or schedule it:
 
 - **Procurement and sourcing > Purchase orders > All purchase orders > Warehouse > Actions > Release to warehouse**
@@ -105,6 +103,10 @@ The worker can run the receiving process by using a Warehouse Management mobile 
 If you aren't using the *release to warehouse* process, and therefore aren't using *warehouse orders*, the hub can process warehouse receiving and work processing independently from scale units.
 
 ![Inbound process flow](./media/wes-inbound-ga.png "Inbound process flow")
+
+When performing the inbound registration via a Warehouse app receiving process against the scale unit warehouse order, the scale unit workload will signal back to the hub that the related purchase order line transactions must get updated to *Registered*. And as soon as this has proceed it will be possible to run a purchase order product receipt on the hub.
+
+![Inbound processing flow](./media/WES-inbound-processing-19.png "Inbound processing flow")
 
 ## Supported processes and roles
 
