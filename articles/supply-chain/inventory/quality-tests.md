@@ -2,7 +2,7 @@
 # required metadata
 
 title: Quality management tests
-description: This topic describes how you can use create tests for use with quality orders in Dynamics 365 Supply Chain Management.
+description: This topic describes how to create tests that can be used for quality orders in Microsoft Dynamics 365 Supply Chain Management.
 author: rachel-profitt
 manager: tfehr
 ms.date: 03/23/2021
@@ -33,36 +33,38 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how you can create and use tests for use with quality orders in Dynamics 365 Supply Chain Management.
+This topic describes how to create tests that can be used for quality orders in Microsoft Dynamics 365 Supply Chain Management.
 
-Use the **Tests** page to define and view the individual tests that determine whether your products meet quality specifications. You can assign one or more individual tests to a test group. In this case, you also specify test-specific information, such as the acceptable measurement values. Measurement values are used for quantitative tests, and test variables are used for qualitative tests.
+You use the **Tests** page to define and view the individual tests that determine whether your products meet quality specifications. You can assign one or more individual tests to a test group. In this case, you also specify test-specific information, such as the acceptable measurement values. Measurement values are used for quantitative tests. For qualitative tests, test variables are used.
 
-- A quantitative test has a test **Type** of *Integer* or *Fraction*, and also has a designated unit of measure. Quality specifications and test results are expressed as numbers.
-- A qualitative test has a test **Type** of *Option*. Qualitative tests require additional information about the test variable that is being measured and its enumerated options. Quality specifications and test results are expressed according to an outcome.
+- For quantitative tests, the **Type** field is set to *Integer* or *Fraction*. A unit of measure is also specified. Quality specifications and test results are expressed as numbers.
+- For qualitative tests, the **Type** field is set to *Option*. Qualitative tests require additional information about the test variable that is being measured and its enumerated options. Quality specifications and test results are expressed according to an outcome.
 
-You can optionally assign a test instrument to a test; however, test instruments are not required to create and use tests with Quality orders. For more information, refer to [Quality management test instruments](quality-test-instruments.md).
+You can optionally assign a test instrument to a test. However, test instruments aren't required to create and use tests with quality orders. For more information, see [Quality management test instruments](quality-test-instruments.md).
 
-You can also optionally specify a unit for a test. When a unit is specified this indicated the unit of measurement that results are recorded in for this test. For example, a test for the temperature might include a unit of either centigrade or fahrenheit.
+You can also optionally specify a unit for a test, to indicate the unit of measure that test results are recorded in. For example, a test for temperature might include a unit of either degrees Fahrenheit or degrees Celsius.
 
 ## Example of a test
 
-A manufacturing company performs two tests on purchased material: a quantitative test about material quality and a qualitative test about packaging damage. The company defines additional information about the qualitative test to identify the test variable such as damaged packaging, and its outcomes. The company uses the **Test groups** page to assign the two tests to a test group and to specify the test-specific information. The test group is assigned to a quality order, so that the company can report test results for the two tests.
+A manufacturing company performs two tests on purchased material: a quantitative test for material quality and a qualitative test for packaging damage. The company specifies additional information about the qualitative test to define the test variable (for example, damaged packaging) and its outcomes. The company uses the **Test groups** page to assign the two tests to a test group and to specify the test-specific information. The test group is assigned to a quality order so that the company can report test results for the two tests.
 
 ## Create a test
 
-To create a test:
+Follow these steps to create a test.
 
-1. Go to **Inventory management > Setup > Quality control > Tests**.
-1. Select **New** on the Action Pane to add a new row to the grid and then make the following settings for it:
-    - **Test** - Enter a unique ID or name for the test.
-    - **Description** - Enter a detailed description for the test.
-    - **Type** - Select the type of results produced by the test. For quantitative tests, choose *Fraction* or *Integer*. For qualitative tests, choose *Option*.
-    - **Test instrument** - Select a [test instrument](quality-test-instruments.md) to be used for the test.
-    - **Unit** - Select the unit of measurement to be used for recording the test results for tests with a **Type** of *Fraction* or *Integer*.
+1. Go to **Inventory management \> Setup \> Quality control \> Tests**.
+1. On the Action Pane, select **New** to add a row to the grid. Then set the following fields for the new row:
+
+    - **Test** – Enter a unique ID or name for the test.
+    - **Description** – Enter a detailed description of the test.
+    - **Type** – Select the type of results that the test produces. For quantitative tests, select *Fraction* or *Integer*. For qualitative tests, select *Option*.
+    - **Test instrument** – Select a [test instrument](quality-test-instruments.md) that should be used for the test.
+    - **Unit** – If you selected *Fraction* or *Integer* in the **Type** field (that is, if the test is a quantitative test), select the unit of measure that test results should be recorded in.
+
 1. Close the page.
 
 > [!NOTE]
-> Once you save a test, you can no longer edit the **Type** field in the grid. If you need to change the type of test result that will be recorded for a test, select **Change quality test type** on the Action Pane to open the **Change quality test type** dialog box. Then set **New type** to the desired type and select **OK** to close the dialog box.
+> After you save a test, you can no longer edit the **Type** field in the grid. If you must change the type of test results that will be recorded for a test, select **Change quality test type** on the Action Pane. In the **Change quality test type** dialog box, set the **New type** field to the desired type, and then select **OK** to close the dialog box.
 
 ## Additional resources
 
@@ -70,6 +72,5 @@ To create a test:
 - [Quality management test groups](quality-test-groups.md)
 - [Quality management test variables](quality-test-variables.md)
 - [Quality associations](quality-associations.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
