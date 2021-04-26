@@ -35,22 +35,30 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to create and use quarantine zones for nonconformances.
 
-Use the **Quarantine zones** page to define zones that can be assigned to a nonconformance. When you create a nonconformance, you can specify the **Quarantine zone** and the **Quarantine type** on the **General** tab of the **Non conformances** page. The **Quarantine zone** typically indicates the area or location where the item is located. While the **Quarantine** type defines if the item is **Restricted usage** or **Unusable**.
+You use the **Quarantine zones** page to define zones that can be assigned to nonconformances. When you create a nonconformance, you can set the **Quarantine zone** and **Quarantine type** fields on the **General** tab of the **Non conformances** page. The **Quarantine zone** field typically indicates the area or location where the item is located. The **Quarantine type** field defines the item as either *Restricted usage* or *Unusable*.
 
-When you print a nonconformance or corrections report for a nonconformance, you can view the **Quarantine zone** where the item is at.
+When you print a nonconformance or corrections report for a nonconformance, you can view the quarantine zone where the item is located.
 
-You can also print a nonconformance tag for a nonconformance. This report will show the assigned quarantine zone and information about usage to provide guidance about how to handle defective material. The zones might correspond to inventory locations or operations resources.
+You can also print a nonconformance tag for a nonconformance. This report shows the assigned quarantine zone and information about usage to provide guidance about how defective material should be handled. The quarantine zones might correspond to inventory locations or operations resources.
 
 ## Examples of quarantine zones
 
-You work at an electronics manufacturing company who produces and distributes televisions, speakers, and media players. You could configure the quarantine zones to represent these types of products. In another example, three bins and two racks are used to store items that are nonconforming. In this example, you could configure five quarantine zones to represent each bin and each rack.
+### Example 1
+
+You work at an electronics manufacturing company that produces and distributes televisions, speakers, and media players. In this case, you can configure a quarantine zone to represent each type of product.
+
+### Example 2
+
+Three bins and two racks are used to store items that are nonconforming. In this case, you can configure five quarantine zones, one for each bin and each rack.
 
 ## Create a quarantine zone
 
-1. Go to **Inventory management >  Setup > Quality management > Quarantine zones**.
-1. On the Action pane, select **New** to add a new row to the grid, and then make the following settings for it:
-    - **Quarantine zone** - Enter a unique ID or name for the problem type.
-    - **Description** - Enter a detailed description for the problem type.
+1. Go to **Inventory management \> Setup \> Quality management \> Quarantine zones**.
+1. On the Action Pane, select **New** to add a row to the grid. Then set the following fields for the new row:
+
+    - **Quarantine zone** – Enter a unique ID or name for the quarantine zone.
+    - **Description** – Enter a detailed description of the quarantine zone.
+
 1. Close the page.
 
 ## Additional resources
@@ -63,6 +71,5 @@ You work at an electronics manufacturing company who produces and distributes te
 - [Quality charges for nonconformances](quality-charges.md)
 - [Operations for nonconformances](quality-operations.md)
 - [Quality management for warehouse processes](quality-management-for-warehouses-processes.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
