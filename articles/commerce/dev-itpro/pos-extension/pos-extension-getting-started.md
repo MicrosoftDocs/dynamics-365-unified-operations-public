@@ -74,7 +74,7 @@ To use the sample, clone the **release** branch samples from the GitHub repo and
 
 ## Custom extensions
 
-To create your own extension, follow the steps in  [Create a POS extension package project](create-pos-extension-package.md).
+To create your own extension, follow the steps in [Create a POS extension package project](create-pos-extension-package.md).
 
 To debug your extension, follow the steps in [Debug a POS extension](debug-pos-extension.md).
 

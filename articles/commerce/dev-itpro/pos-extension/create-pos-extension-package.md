@@ -125,14 +125,14 @@ The steps below describe how to create a POS extension package project, set of e
 
     Example:
 
-    ```JavaScript
+    ```JSON
     {
-    "$schema": "./devDependencies/schemas/manifestSchema.json",
-    "name": "Contoso.Pos.Developer.Samples",
-    "publisher": "Contoso",
-    "version": "1.0.0",
-    "minimumPosVersion": "9.28.0.0",
-    "description": "An extension package containing POS developer samples to showcase various types of POS extensions.",
+        "$schema": "./devDependencies/schemas/manifestSchema.json",
+        "name": "Contoso.Pos.Developer.Samples",
+        "publisher": "Contoso",
+        "version": "1.0.0",
+        "minimumPosVersion": "9.28.0.0",
+        "description": "An extension package containing POS developer samples to showcase various types of POS extensions.",
     }
     ```
 
