@@ -22,22 +22,22 @@ This topic explains how to create a POS extension development environment and ge
 
 POS allows extension through the SDK that lets you independently develop, deploy, and service the extension. After an extension is created, the extension can use the installer package to create the extension installer to deploy the extensions. The installer is idempotent after any changes or enhancements are made to the extension. Just create the installer and run it to deploy the extensions.
 
-Extension installers are independent from the core POS installer. They are are separate and packaged differently. The advantage is that extensions and the core POS can be independently serviced. Also, the POS framework supports multiple extension installers. Extensions from ISVs, partners, and customers can all be independently installed and serviced.
+Extension installers are independent from the core POS installer. They are separate and are packaged differently. The advantage is that extensions and the core POS can be independently serviced. Also, the POS framework supports multiple extension installers. Extensions from ISVs, partners, and customers can all be independently installed and serviced.
 
 The independent POS extension model is supported ny Dynamics 365 Commerce application version 10.0.18 and later. In earlier versions, extensions and the core POS code are packaged as one installer and serviced together, therefore, you can’t independently deploy extension and core POS changes.
 
-The POS independent extension model isolates the extension from the out-of-box component using the Windows Optional package framework for MPOS and POS extension framework for CPOS. The other app types uses the CPOS extension model because the Store Commerce, Hybrid iOS and Android app is a shell which hosts the CPOS.
+The POS independent extension model isolates the extension from the out-of-box component using the Windows Optional package framework for MPOS and POS extension framework for CPOS. The other app types use the CPOS extension model because the Store Commerce, Hybrid iOS and Android app is a shell (wrapper) that hosts the CPOS.
 
 ## Getting started with POS extension
 
 Depending on your Store topology, choose the POS application type. The extension developed for one POS app type can be used in other POS app types. If your extension has a dependency on the POS application type, then it can’t be used in another application type. We recommend that you try to avoid such dependencies during extension development.
 
-## Setup the POS development environment
+## Set up the POS development environment
 
 ### Prerequisites
 
 + Windows 10 1809 or newer or Windows Server 2019 for Modern POS.
-+ Visual Studio 2017 Community, Professional or Enterprise with the following workloads and components:
++ Visual Studio 2017 Community, Professional, or Enterprise with the following workloads and components:
 + Visual Studio workloads
     + Visual Studio core editor (usually selected by default)
     + .NET desktop development

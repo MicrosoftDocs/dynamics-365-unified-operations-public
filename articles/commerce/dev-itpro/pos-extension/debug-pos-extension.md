@@ -68,7 +68,7 @@ Run the following steps the first time that an extension package is developed on
 
 10. Verify the whether the link folder for your extension package is created in the Cloud POS extension package directory looks like the image below.
 
-## Debugging Cloud POS Using Edge Dev Tools
+## Debugging Cloud POS using Edge developer tools
 
 1. Completed the steps in [Configuring the Cloud POS extension development environment](#configure-cloud-pos).
 2. Build your Cloud POS extension project.

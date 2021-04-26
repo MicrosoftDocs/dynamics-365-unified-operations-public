@@ -120,9 +120,9 @@ The steps in this document describe how to create a POS extension package projec
         + **description**: A description of the extension package's functionality.
         + **publisher**: The name of the extension package publisher or organization.
         + **version**: The extension package version. This must follow semantic versioning pattern.
-        + **minimumPosVersion**: The minimum POS version required to run this extension package. This version number depends on POS NuGet package you are consuming, and the POS application installed. For example, the extension project should not use POS APIs, extension artifacts from version higher than the POS app that is installed. During runtime, the the POS app will check the version of the extension package. If it's higher than the installed POS app, then the extension package will not be loaded.
+        + **minimumPosVersion**: The minimum POS version required to run this extension package. This version number depends on POS NuGet package you are consuming, and the POS application installed. For example, the extension project should not use POS APIs, extension artifacts from version higher than the POS app that is installed. During runtime, the POS app will check the version of the extension package. If it's higher than the installed POS app, then the extension package will not be loaded.
 
-        This is an exampl of the manifest file:
+        This is an example of the manifest file:
 
         ```JSON
         {

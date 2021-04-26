@@ -22,8 +22,8 @@ A POS application can be extended independently by using the POS extension featu
 
 + Extend the POS UI: Add custom columns, app bar buttons, and custom controls depending on the view. The cart view and the welcome screen support configuration using the screen layout designer. Other views can be extended by writing custom code.
 + Override POS business logic: Extend POS business logic to add custom logic by overriding the POS request handlers.
-+ Pre and post triggers: Add custom logic before or after any POS operation.
-+ Consume APIs: POS exposes APIs and UX controls which can be consumed in extension scenarios.
++ Pre- and post-triggers: Add custom logic before or after any POS operation.
++ Consume APIs: POS exposes APIs and UX controls that can be consumed in extension scenarios.
 + Custom UX and APIs: Extend POS to add custom views and APIs to support new functionalities and features.
 + Custom operations: Add custom operations to perform custom functionalities.
 
@@ -36,7 +36,7 @@ These topics explain how to create a POS extension using the independent POS ext
 
 ## Supported apps
 
-The code base is same for the different POS applications but how the extensions is packaged, deployed, and rendered varies by platform and the app type. Customizations that you develop work across different app types without duplicating or rewriting the code for different apps. There may be some extension components that are app-specific, but most of the extension code can work across apps.
+The code base is same for the different POS applications but how the extensions are packaged, deployed, and rendered varies by platform and the app type. Customizations that you develop work across different app types without duplicating or rewriting the code for different apps. There may be some extension components that are app-specific, but most of the extension code can work across apps.
 
 You can create POS extensions for the apps in the following table.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-The following steps show you how to create a Modern POS packaging project using Visual Studio 2017. These steps are only required if you are developing extensions for Modern POS. The Modern POS extension packaging project generates the [MSIX Windows app package](https://docs.microsoft.com/windows/msix/overview) that will extend the Modern POS App.
+The following steps show you how to create a Modern POS packaging project using Visual Studio 2017. These steps are only required if you are developing extensions for Modern POS. The Modern POS extension packaging project generates the [MSIX Windows app package](https://docs.microsoft.com/windows/msix/overview) that will extend the Modern POS app.
 
 1. Create a new JavaScript Universal Windows Platform App project by following these steps:
 
@@ -50,7 +50,7 @@ The following steps show you how to create a Modern POS packaging project using 
 
     1. Right-click the project Solution Explorer and select **Properties**.
     2. Open the Configuration Manager.
-    3. In the **Active solution platform** drop down, select **Edit**.
+    3. In the **Active solution platform** drop-down, select **Edit**.
     4. Remove all other platforms except for **x86**.
 
          ![Platform config](media/platform.png)
@@ -80,7 +80,7 @@ The following steps show you how to create a Modern POS packaging project using 
 
 7. Add a reference from the Modern POS **jsproj** to the **POS.Extension Package** project created above, by following these steps:
 
-    1. Right-click the Modern POS project in Solution Explorer and click **Add** and then **Reference**.
+    1. Right-click the Modern POS project in Solution Explorer and select **Add** and then **Reference**.
     2. Select the **Projects** tab on the left side of the Reference Manager.
     3. Select the **POS Extension Package** project created above. When you select the project, Visual Studio asks you confirm the unsupported reference. Select **Yes**.
 
