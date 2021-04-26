@@ -91,7 +91,7 @@ export default createObservableDataAction({
 });
 ```
 
-The **createObservableDataAction** method is equivalent to the **createDataAction** method, but returns an **IObservableAction** interface instead of an **IAction** interface.  The **IObservableAction** interface returns an **AsyncResult** class instead of the **Promise** class that a standard **IAction** interface returns. The **AsyncResult** class provides additional data including the **status** and **error** properties of the data action. 
+The **createObservableDataAction** method returns an **IObservableAction** interface.  The **IObservableAction** interface returns an **AsyncResult** class which provides additional data including the **status** and **error** properties of the data action. 
 
 A mock can be created to test the data action, as shown in the following example.
 
