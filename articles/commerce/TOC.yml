@@ -286,7 +286,7 @@
           href: retail-hardware-station-configuration-installation.md
         - name: Mass deployment of sealed Commerce self-service components
           href: dev-itpro/Enhanced-Mass-Deployment.md
-        - name: Mass deployment of self-service components
+        - name: Mass deployment of legacy self-service components
           href: dev-itpro/retail-mass-deployment.md
         - name: Commerce component events for diagnostics and troubleshooting
           href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
