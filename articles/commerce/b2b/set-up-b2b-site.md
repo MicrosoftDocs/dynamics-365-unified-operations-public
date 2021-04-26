@@ -4,7 +4,8 @@
 title: Set up a B2B e-commerce site
 description: This topic describes how to set up a business-to-business (B2B) e-commerce site in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/20/2021
+manager: AnnBe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,6 +28,7 @@ ms.dyn365.ops.version: 10.0.14
 # Set up a B2B e-commerce site
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Business-to-business (B2B) e-commerce sites provide some key capabilities that optimize the workflow for a B2B user. This topic describes how to set up a B2B e-commerce site in Microsoft Dynamics 365 Commerce. It goes through the modules and site settings that must be configured to enable B2B-specific scenarios.
 
@@ -286,9 +288,35 @@ To create an invoice details page in site builder, follow these steps.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Publish the URL for the page.
 
+## Add a quick add module to the cart page
+
+The quick add module provides a way to quickly add multiple items to the cart by using item IDs (also known as stock keeping unit \[SKU\] IDs). The quick add module is added to a site's cart page.
+
+To add a quick add module to a cart page in Commerce site builder, follow these steps.
+
+1. Go to **Templates**, and select your site's cart page template.
+1. Select **Edit**.
+1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Quick add** module, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
+1. Go to **Pages**, and select your site's cart page.
+1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the  properties pane for the **Container** module, under **Width**, select **Fill Container**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Quick add** module, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
+
+> [!NOTE] 
+> The quick add module is available as of the Commerce version 10.0.17 release. If you're updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions, see [SDK and module library updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
 ## Additional resources
 
 [Module library overview](../starter-kit-overview.md)
+
+[SDK and module library updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)
 
 [Authoring page overview](../authoring-home-overview.md)
 
@@ -302,7 +330,7 @@ To create an invoice details page in site builder, follow these steps.
 
 [Content block module](../add-hero-module.md)
 
-[Product Collection](../product-collection-module-overview.md)
+[Product collection module](../product-collection-module-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -33,7 +33,7 @@ This topic explains how to configure buy online, pickup in store (BOPIS) in a Mi
 
 ## Prerequisite
 
-Complete the procedures in this topic only after your Commerce evaluation environment has been provisioned and configured. For information about how to provision and configure your environment, see [Provision a Dynamics 365 Commerce evaluation environment](provisioning-guide.md) and [Configure a Dynamics 365 Commerce evaluation environment](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
+Complete the procedures in this topic only after your Commerce evaluation environment has been provisioned and configured. For information about how to provision and configure your environment, see [Provision a Dynamics 365 Commerce evaluation environment](provisioning-guide.md) and [Configure a Dynamics 365 Commerce evaluation environment](./cpe-post-provisioning.md).
 
 After your Commerce environment has been provisioned and configured end to end, you can use this topic to enable BOPIS scenarios.
 
@@ -41,7 +41,7 @@ After your Commerce environment has been provisioned and configured end to end, 
 
 ### Configure Modern POS
 
-BOPIS scenarios that involve a credit card payment require a hardware station. The hardware station is built into Modern POS for Windows and Android clients. If you're using Cloud POS or Modern POS for iOS, the point of sale (POS) client must be paired with a shared hardware station. This topic explains how to configure BOPIS for Windows and Android clients. For information about how to set up a shared hardware station, see [Configure and install Retail hardware station](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation).
+BOPIS scenarios that involve a credit card payment require a hardware station. The hardware station is built into Modern POS for Windows and Android clients. If you're using Cloud POS or Modern POS for iOS, the point of sale (POS) client must be paired with a shared hardware station. This topic explains how to configure BOPIS for Windows and Android clients. For information about how to set up a shared hardware station, see [Configure and install Retail hardware station](./retail-hardware-station-configuration-installation.md).
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
 2. Select register **SANFRAN-5**, and then select **Edit**.
@@ -91,7 +91,7 @@ BOPIS scenarios that involve a credit card payment require a hardware station. T
 
 ### Create a storefront order for in-store pickup
 
-1. Go to the URL that you specified in the [Initialize e-Commerce](https://docs.microsoft.com/dynamics365/commerce/provisioning-guide#initialize-e-commerce) step during environment configuration.
+1. Go to the URL that you specified in the [Initialize e-Commerce](./provisioning-guide.md#initialize-e-commerce) step during environment configuration.
 2. Select an item, and select **Add to cart**.
 3. On the shopping bag page, select **Pick this up** for the order line that you just added.
 4. In the **Select a store** dialog box, enter **San Francisco**, and then select the **Search** button.
@@ -116,7 +116,7 @@ BOPIS scenarios that involve a credit card payment require a hardware station. T
 
 ### Synchronize online orders to the back office
 
-For information about how to synchronize online orders, see [Posting of online sales and payments](https://docs.microsoft.com/dynamics365/commerce/tasks/posting-online-sales-payments).
+For information about how to synchronize online orders, see [Posting of online sales and payments](./tasks/posting-online-sales-payments.md).
 
 ### Pick up an order in the store
 
@@ -152,19 +152,19 @@ For all general issues, you should always consult the Modern POS or Internet Inf
 
 [Dynamics 365 Commerce evaluation environment FAQ](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Adyen payment connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
+[Adyen payment connector](./dev-itpro/adyen-connector.md?tabs=8-1-3)
 
-[Saving online payment instruments with the Adyen connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
+[Saving online payment instruments with the Adyen connector](./dev-itpro/adyen-connector-listpi.md)
 
-[Omni-channel payments overview](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+[Omni-channel payments overview](./omni-channel-payments.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
