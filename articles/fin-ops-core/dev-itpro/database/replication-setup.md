@@ -42,6 +42,7 @@ The following prerequisites are needed for the **Online Database Migration Toolk
     EXEC @installed = sys.sp_MS_replication_installed;  
     SELECT @installed; 
      ```
+    - If the replication components are not installed, then please follow the steps in this article [Install SQL Server replication](https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-replication?view=sql-server-ver15). 
 
 -	SQL Agent should be running in the source database server.
 
