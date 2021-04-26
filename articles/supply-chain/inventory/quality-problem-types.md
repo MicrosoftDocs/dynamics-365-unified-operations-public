@@ -44,7 +44,7 @@ You use the **Problem types** page to define a classification of the quality pro
 - **Production** – Nonconformances of this type are related to batch orders or production orders.
 - **Co-product production** – Nonconformances of this type are related to batch orders for co-products.
 
-When you create a new problem type, select **Non conformance types** on the Action Pane to create a list of one or more nonconformance types that are authorized for the problem type. For example, a problem type that is related to a defect code might apply to all nonconformance types, whereas a problem type that is related to customer complaints might apply only to the **Customer** and **Service request** nonconformance types.
+When you create a new problem type, select **Non conformance types** on the Action Pane to create a list of one or more nonconformance types that are authorized for the problem type. For example, a problem type that is related to a defect code might apply to all nonconformance types. However, a problem type that is related to customer complaints might apply only to the **Customer** and **Service request** nonconformance types.
 
 ## Examples of problem types
 
