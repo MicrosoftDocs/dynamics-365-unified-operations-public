@@ -72,11 +72,15 @@ The hub owns the following data:
 - The release to warehouse, shipment creation, wave creation, and wave finalization processes
 
 The scale units own the actual wave processing (such as work allocation, replenishment work, and demand work creation) after the release of the wave. Therefore, warehouse workers can process outbound work by using a Warehouse Management mobile app that is connected to the scale unit.
+
 ![Wave processing flow](./media/wes-wave-processing-ga.png "Wave processing flow")
 
 ### Process work and ship
-As soon as the final work process puts the inventory at a final shipping location (Baydoor) the scale unit will signal to the hub that the source document inventory transactions must get updated to *Picked*. Until this process runs and gets synchronized back, the inventory on-hand on the scale unit workload will be reserved physical on the warehouse level.
-As soon as the hub has updated the transactions to picked you can from the hub process the outbound shipment confirmation and the following sales packing slip/transfer order shipment from the load.
+
+As soon as the final work process puts the inventory at a final shipping location (Baydoor) the scale unit signals the hub to update the source document inventory transactions to *Picked*. Until this process runs and gets synchronized back, the inventory on-hand on the scale unit workload will be physically reserved at the warehouse level.
+
+As soon as the hub has updated the transactions to *Picked*, it can process the outbound shipment confirmation and the associated sales packing slip or transfer order shipment for the load.
+
 ![Outbound processing flow](./media/WES-outbound-processing-19.png "Outbound processing flow")
 
 ## Inbound process flow
@@ -89,7 +93,8 @@ The hub owns the following data:
 
 > [!NOTE]
 > The inbound purchase order flow is conceptually different from the outbound flow. You can operate the same warehouse on either the scale unit or the hub depending on whether the purchase order has been released to warehouse or not. Once you have released an order to the warehouse, you can only work with that order while signed in on the scale unit.
-If you're using the *Release to warehouse* process, [*warehouse orders*](cloud-edge-warehouse-order.md) are created, and ownership of the related receiving flow is assigned to the scale unit. The hub won't be able to register inbound receiving.
+>
+> If you're using the *Release to warehouse* process, [*warehouse orders*](cloud-edge-warehouse-order.md) are created, and ownership of the related receiving flow is assigned to the scale unit. The hub won't be able to register inbound receiving.
 
 You must sign in on the hub to use the *Release to warehouse* process. Go to one of the following pages to run or schedule it:
 
@@ -104,7 +109,7 @@ If you aren't using the *release to warehouse* process, and therefore aren't usi
 
 ![Inbound process flow](./media/wes-inbound-ga.png "Inbound process flow")
 
-When performing the inbound registration via a Warehouse app receiving process against the scale unit warehouse order, the scale unit workload will signal back to the hub that the related purchase order line transactions must get updated to *Registered*. And as soon as this has proceed it will be possible to run a purchase order product receipt on the hub.
+When performing inbound registration via a warehouse app receiving process against the scale unit warehouse order, the scale unit workload will signal the hub to updated the related purchase order line transactions to *Registered*. As soon as this is finished, you will be able to run a purchase order product receipt on the hub.
 
 ![Inbound processing flow](./media/WES-inbound-processing-19.png "Inbound processing flow")
 
