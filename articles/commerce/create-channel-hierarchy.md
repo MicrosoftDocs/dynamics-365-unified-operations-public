@@ -81,7 +81,7 @@ To add products to category nodes, follow these steps.
 1. On the action pane, select **Save**.
 
 > [!NOTE]
-> Adding products to a node inside the channel navigation hierarchy is not sufficient for the products to show up on a selected channel, the products must also be assorted to a channel. See the [Assortment management](assortments.md) document for more details.
+> Adding products to a node inside the channel navigation hierarchy is not sufficient for the products to show up on a selected channel, the products must also be assorted to a channel. See the [Assortment management](assortments.md) topic for more details.
 
 The following image shows an example node with products added.
 
