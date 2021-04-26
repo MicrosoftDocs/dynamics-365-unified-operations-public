@@ -16,6 +16,7 @@ ms.dyn365.ops.version: 10.0.19
 # You are asked to save item coverage settings after making no changes
 
 KB Number: 4615588
+<!-- KFM: The focus of the KB seems pretty far from the focus of this topic. Rewrite may be needed. -->
 
 ## Symptoms
 
@@ -29,5 +30,5 @@ You see this message even though you haven't made any changes.
 
 The **Item coverage** page includes complex defaulting logic that might lead to the observed message after direct modifications have recently been made in the database, such as entity imports.
 
-<!-- KFM: The following instruction is not clear. How/when/where do we do this? We normally should not use internal field names. Talk directly to the reader; don't tell them what "a user" needs to do. Remove from this PR for next time. -->
+<!-- KFM: The following instruction is not clear. Our problem is about getting an unexpected error, but here we are talking about import fields.  -->
 To change PRODUCTCOVERAGEGROUPID through the entity a user needs to set AREGENERALSETTINGSOVERRIDDEN to Yes

@@ -19,7 +19,7 @@ KB Number: 4612572
 
 ## Symptoms
 
-<!-- KFM: This issue description is not clear. Please revise in a way that addresses the general reader rather than referring to particular customer case. Remove this and add to a new PR. -->
+<!-- KFM: This issue description is not clear. More context is needed. -->
 
 Customer is unable to run the master planning as per the provided filter. The filter is not working when the batch job is created as well.
 
