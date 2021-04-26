@@ -12,7 +12,7 @@ ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
 ---
 
-# Create a Modern POS extension appx file 
+# Create a Modern POS extension appx file
 
 [!include [banner](../../includes/banner.md)]
 
