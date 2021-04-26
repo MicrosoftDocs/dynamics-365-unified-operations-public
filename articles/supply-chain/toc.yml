@@ -3305,7 +3305,7 @@
         items:
         - name: Missing field settings on copying item model groups to another legal entity
           href: troubleshooting/costing/copying-item-model-groups.md
-        - name: The Indirect costs in process report includes deleted production orders
+        - name: The "Indirect costs in process" report includes deleted production orders
           href: troubleshooting/costing/indirect-costs-in-pr.md
         - name: Purchase accrual posted with amount zero for zero-value product receipt
           href: troubleshooting/costing/posting-to-purchase.md
