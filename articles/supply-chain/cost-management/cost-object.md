@@ -71,13 +71,13 @@ The following table shows what is a cost object and what is an inventory object.
 Additional resources
 --------
 
-[Product dimension group](https://technet.microsoft.com/library/aa499382.aspx)
+[Product dimension group](/dynamicsax-2012/appuser-itpro/about-product-dimensions)
 
-[Storage dimension group](https://technet.microsoft.com/library/hh209317.aspx)
+[Storage dimension group](/dynamicsax-2012//storage-dimension-groups-form)
 
-[Tracking dimension group](https://technet.microsoft.com/library/hh209465.aspx)
+[Tracking dimension group](/dynamicsax-2012//tracking-dimension-groups-form)
 
-[What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md)
+[What's new or changed](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 
 [Cost entries](cost-entries.md)
 

@@ -52,7 +52,7 @@ The parameters for the archival job are based on the age of the transaction in d
 
 ## Document management dependency
 
-When the archival job is run, document management is used to export XML data about aged credit card authorizations in a zip file. If document management isn't set up in an environment, the archival job can't successfully be run. For more information, see [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
+When the archival job is run, document management is used to export XML data about aged credit card authorizations in a zip file. If document management isn't set up in an environment, the archival job can't successfully be run. For more information, see [Configure document management](../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md).
 
 The archival job processes all credit card payment data that meets the criterion that is defined by the **Minimum transaction age in days** value. If the job is active and, based on the defined criterion, a large number of records must be processed, job execution might take several days. However, after the backlog of payments has been archived, the job won't take as long to run.
 
@@ -85,7 +85,7 @@ After you select **Yes**, the archival job becomes active, and all XML data abou
 
 ## Additional resources
 
-[Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+[Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3)
 

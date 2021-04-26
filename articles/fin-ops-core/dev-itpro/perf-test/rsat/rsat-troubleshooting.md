@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Troubleshoot the Regression suite automation tool
 description: This topic contains information about how to troubleshoot the Regression suite automation tool (RSAT).
 author: FrankDahl
@@ -8,8 +6,6 @@ ms.date: 01/15/2021
 ms.topic: article
 ms.prod:
 ms.technology:
-
-# optional metadata
 
 # ms.search.form:
 # ROBOTS:

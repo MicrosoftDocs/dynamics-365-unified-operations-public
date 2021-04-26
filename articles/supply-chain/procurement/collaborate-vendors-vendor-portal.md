@@ -102,7 +102,7 @@ Additional resources
 
 [Vendor portal user security](configure-security-vendor-portal-users.md)
 
-[Vendor collaboration invoicing workspace](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
+[Vendor collaboration invoicing workspace](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md)
 
 
 

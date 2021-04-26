@@ -4,7 +4,7 @@
 title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-ms.date: 03/31/2021
+ms.date: 04/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -105,7 +105,7 @@ The attachments preview uses the Web app Open Platform Interface (WOPI) that is 
 
 ### For a Microsoft Dynamics 365 Finance + Operations (on-premises) environment
 
-The default cloud-based WOPI server in Finance + Operations can't read the attachment file to provide a preview. If previews are required, you must [install an on-premises Office Online Server instance](https://technet.microsoft.com/library/jj219455.aspx) and configure it inside the environment. Set the **Office Web Apps Server** field to the host name of the installed Office Online Server instance, and then click **Save**.
+The default cloud-based WOPI server in Finance + Operations can't read the attachment file to provide a preview. If previews are required, you must [install an on-premises Office Online Server instance](/officeonlineserver/deploy-office-online-server) and configure it inside the environment. Set the **Office Web Apps Server** field to the host name of the installed Office Online Server instance, and then click **Save**.
 
 If previews aren't required, set the **Office Web Apps Server** field to `https://localhost`. The preview will then show the message "No preview available" instead of an error message.
 
@@ -127,7 +127,18 @@ Document management appears to users as the **Attach** button at the top of most
 
 The **Attach** button also shows a count of the attachments for the currently selected record. Therefore, you can determine whether there are attachments for the current record without having to open the **Attachments** page. The button shows exact counts for zero through nine attachments. If there are more than nine attachments, the button shows **9+** as the count. In this way, the performance impact and visual noise that exact larger counts might cause are reduced.
 
-In version 10.0.12, the **Show related document attachments** feature changes the document attachment experience in two ways. First, when the feature is enabled, the **Attachments** page doesn't show only attachments that are related to a single data source. Instead, it shows attachments from all data sources on the page that are related to the active record. The count of attachments on the **Attach** button also reflects this change. Second, users can move and copy attachments between the related data sources on the **Attachments** page.  
+### Showing related document attachments
+In version 10.0.12, the **Show related document attachments** feature changes the document attachment experience in the following ways. 
+
+-  When the feature is enabled, the **Attachments** page no longer shows only attachments that are related to a single data source. Instead, users can see and access attachments from other data sources on the pages that are related to the active record. For this to occur, the data source must: 
+    -  Be directly related to the parent data source by means of an inner or outer join.
+    -  Be directly related to the parent data source by means of an active, delayed, or passive join with either 1:1 or 0:1 cardinality.
+
+    Note that this criteria excludes showing attachments from child collections (such as lines) when looking at attachments on the header record.  
+
+    The count of attachments on the **Attach** button also reflects this change. 
+
+-  Users can move and copy attachments between the related data sources on the **Attachments** page.
 
 ## Document attachment history
 

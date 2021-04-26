@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Respond by using EventHandlerResult
 description: This topic describes how to subscribe to events that has a parameter of any type that implements the IEventHandlerResult interface.
 author: LarsBlaaberg
@@ -8,8 +6,6 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

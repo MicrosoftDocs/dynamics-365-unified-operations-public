@@ -144,7 +144,7 @@ Additional resources
 
 [Cost entries](cost-entries.md)
 
-[What's new and changed](../../fin-and-ops/get-started/whats-new-changed.md)
+[What's new and changed](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 
 
 

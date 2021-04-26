@@ -67,7 +67,7 @@ After you've downloaded a database backup (.bacpac) file, you can begin the manu
 - Keep a copy of the existing AxDB database, so that you can revert to it later if you must.
 - Import the new database under a new name, such as **AxDB\_fromProd**.
 
-To ensure the best performance, copy the \*.bacpac file to the local computer that you're importing from. Download sqlpackage .NET Core for Windows from [Get sqlpackage .NET Core for Windows](https://docs.microsoft.com/sql/tools/sqlpackage-download?view=sql-server-ver15#get-sqlpackage-net-core-for-windows). Open a **Command Prompt** window, and run the following commands from the sqlpackage .NET Core folder.
+To ensure the best performance, copy the \*.bacpac file to the local computer that you're importing from. Download sqlpackage .NET Core for Windows from [Get sqlpackage .NET Core for Windows](/sql/tools/sqlpackage-download?view=sql-server-ver15#get-sqlpackage-net-core-for-windows). Open a **Command Prompt** window, and run the following commands from the sqlpackage .NET Core folder.
 
 ```Console
 SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
@@ -79,7 +79,9 @@ Here is an explanation of the parameters:
 - **tdn (target database name)** – The name of the database to import into. The database should **not** already exist.
 - **sf (source file)** – The path and name of the file to import from.
 
-> [!NOTE]
+> [!IMPORTANT]
+> To ensure that imported data is compatible with the metadata, you must trigger a full database synchronization from Visual Studio. 
+
 > During import, the user name and password aren't required. By default, SQL Server uses Microsoft Windows authentication for the user who is currently signed in.
 
 ## Update the database
@@ -280,8 +282,8 @@ This issue can occur when the platform build number of the current environment i
 The following guidelines can help you achieve optimal performance:
 
 - Always import the .bacpac file locally on the computer that runs the SQL Server instance. Don't import it from Management Studio on a remote machine.
-- In a one-box environment that is hosted in Azure, put the .bacpac file on drive D when you import it. (A one-box environment is also known as a Tier 1 environment.) For more information about the temporary drive on Azure virtual machines (VMs), see the [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) blog post.
-- Grant the account that runs the SQL Server Windows service [Instance File Initialization](https://msdn.microsoft.com/library/ms175935.aspx) rights. In this way, you can help improve the speed of the import process and the speed of a restore from a \*.bak file. For a developer environment, you can easily make sure that the account that runs the SQL Server service has these rights by setting SQL Server to run as the axlocaladmin account.
+- In a one-box environment that is hosted in Azure, put the .bacpac file on drive D when you import it. (A one-box environment is also known as a Tier 1 environment.) For more information about the temporary drive on Azure virtual machines (VMs), see the [Understanding the temporary drive on Windows Azure Virtual Machines](/archive/blogs/mast/understanding-the-temporary-drive-on-windows-azure-virtual-machines) blog post.
+- Grant the account that runs the SQL Server Windows service [Instance File Initialization](/sql/relational-databases/databases/database-instant-file-initialization) rights. In this way, you can help improve the speed of the import process and the speed of a restore from a \*.bak file. For a developer environment, you can easily make sure that the account that runs the SQL Server service has these rights by setting SQL Server to run as the axlocaladmin account.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

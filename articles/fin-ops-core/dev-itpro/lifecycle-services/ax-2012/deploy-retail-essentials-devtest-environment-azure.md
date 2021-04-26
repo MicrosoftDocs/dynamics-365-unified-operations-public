@@ -67,7 +67,7 @@ Connect the LCS project to your Azure subscription. This will enable LCS to depl
 
 4. Click **Next**.
 5. Click **Download** to download a management certificate. This management certificate enables LCS to communicate with Azure on your behalf. By default, the management certificate is saved to the **Downloads** folder on your computer and is named **LifecycleServicesDeployment.cer.**
-6. Upload the management certificate to Azure. To do so, see the instructions in [Upload an Azure Management API Management Certificate](https://docs.microsoft.com/azure/azure-api-management-certs).
+6. Upload the management certificate to Azure. To do so, see the instructions in [Upload an Azure Management API Management Certificate](/azure/azure-api-management-certs).
 
 7. Go back to the browser that displays the **Microsoft Azure setup** panel in LCS. Click **Next**.
 8. Select a region. The AX 2012 R3 environment will be deployed to a datacenter in this region.
@@ -180,11 +180,11 @@ Log on to the ESSEN-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;Dyn
 
 ### Compile Dynamics AX 2012 R3
 
-Compile Dynamics AX 2012 R3 by using AxBuild.exe. For instructions, see [AxBuild.exe for Parallel Compile on AOS of X++ to p-code](https://technet.microsoft.com/library/dn528954.aspx).
+Compile Dynamics AX 2012 R3 by using AxBuild.exe. For instructions, see [AxBuild.exe for Parallel Compile on AOS of X++ to p-code](/dynamicsax-2012/developer/axbuild-exe-for-parallel-compile-on-aos-of-x-to-p-code).
 
 ### Initialize Dynamics AX 2012 R3
 
-Open the Dynamics AX 2012 R3 client and complete the initialization checklists. For instructions, see [Initialization checklists](https://technet.microsoft.com/library/aa497061.aspx).
+Open the Dynamics AX 2012 R3 client and complete the initialization checklists. For instructions, see [Initialization checklists](/dynamicsax-2012/appuser-itpro/initialization-checklists).
 
 ### Install sample data
 
@@ -250,14 +250,14 @@ To enable corporate users to access resources on the virtual machines in the Azu
 
 ### Create a domain trust
 
-To enable corporate users to access resources on the virtual machines in your Azure domain, you must create an Active Directory trust between the domains. For information about how to create a trust, see [Create a Forest Trust](https://technet.microsoft.com/library/cc754626.aspx). This process is the same process you would use to create a trust between two on-premises domains.
+To enable corporate users to access resources on the virtual machines in your Azure domain, you must create an Active Directory trust between the domains. For information about how to create a trust, see [Create a Forest Trust](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754626(v=ws.11)). This process is the same process you would use to create a trust between two on-premises domains.
 
 ### Give users access
 
 To enable your users to access Dynamics AX, complete the following tasks:
 
 -   Add each user’s domain account to the Remote Desktop Users group on the CLI-&lt;GUID&gt; virtual machine.
--   Give users access to Dynamics AX. For instructions, see [Create new users in Microsoft Dynamics AX](https://technet.microsoft.com/library/aa548139.aspx).
+-   Give users access to Dynamics AX. For instructions, see [Create new users in Microsoft Dynamics AX](/dynamicsax-2012/appuser-itpro/create-new-users-in-microsoft-dynamics-ax).
 
 > [!NOTE]
 > If you don’t want to create a VPN connection and a domain trust, you can still give users access to Dynamics AX. To do so, you’ll need to log on to the virtual machine that serves as the domain controller, and create domain accounts for each user. Then, you’ll need to complete the two tasks mentioned above.

@@ -4,7 +4,7 @@
 title: Removed or deprecated features in Dynamics 365 Finance 
 description: This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
 author: roschlom
-ms.date: 02/08/2021
+ms.date: 04/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,7 +37,20 @@ This topic describes features that have been removed, or that are planned for re
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 > [!NOTE]
-> Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+> Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+
+## Features removed or deprecated in the Finance 10.0.20 release
+
+### RTIR Query Invoice Data Request (HU) format configuration
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Excluded from electronic messaging processing of interoperation with Hungarian online invoicing system |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By April 15, 2022, we plan to no longer support "RTIR Query Invoice Data Request (HU)" format configuration. |
+
 
 ## Features removed or deprecated in the Finance 10.0.17 release
 

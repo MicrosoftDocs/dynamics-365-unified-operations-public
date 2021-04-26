@@ -170,7 +170,7 @@ The entity work is now complete, and we can build it.
 
 ## Additional resources
 
-[Export Dynamics AX 7 Entities to your own Azure SQL Database](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/27/export-dynamics-ax7-entities-to-your-own-azure-sql-database/)
+[Export Dynamics AX 7 Entities to your own Azure SQL Database](/archive/blogs/dynamicsaxbi/export-dynamics-ax7-entities-to-your-own-azure-sql-database)
 
 
 

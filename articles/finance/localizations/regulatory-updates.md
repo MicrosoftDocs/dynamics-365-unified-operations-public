@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0
 
 This topic lists the regulatory updates that are planned and released in Dynamics 365 Finance supported localizations. Delivery timelines might change, and projected functionality might be different or might not be released. For more information, see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
-Regulatory updates are features that are implemented to support new or changed country-specific legislation. For additional information about planned and released country-specific features, refer to the [Dynamics 365 and Power Platform release plans](https://docs.microsoft.com/business-applications-release-notes/index).
+Regulatory updates are features that are implemented to support new or changed country-specific legislation. For additional information about planned and released country-specific features, refer to the [Dynamics 365 and Power Platform release plans](/business-applications-release-notes/index).
 
 Microsoft strives to implement new regulatory requirements as early as possible. The actual delivery date depends on the law announcement date, availability of the requirement details from the local authorities, the availability of the validation tools, and on the size and complexity of the change.
 
@@ -53,6 +53,7 @@ For the latest regulatory update plans, refer to the following table.
 |      Brazil         |   October 2020      | 10.0.16      |   DRCST declaration SC - SEF 262/2020   |
 |      Brazil         |   October 2020      | 10.0.16      |   SPED Fiscal ICMS / IPI record C176   |
 |      Brazil         |   December 2020      | 10.0.17, 10.0.16HF, 10.0.15HF      |   NF-e NT2020.006  - Identification of the digital platform intermediary (Layout and validation rules updates)   |
+|      Brazil         |   March 2021         | 10.0.17, 10.0.18, 10.0.19         |    SPED REINF layout 1.5.1
 |      Europe        |   January 2021       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit - Northern Ireland Protocol impact to Intra-community trade reporting in EU countries  |
 |      Germany        |   January 2021       | 10.0.16HF      |   ELSTER UstVA VAT advance notification format was extended with two new boxes 37,50 for unrecoverable debts writing off  |
 |      Germany        |   January 2021       | 10.0.17      |   Changes in ELSTER VAT advance notification XML structure (UstVA)  |

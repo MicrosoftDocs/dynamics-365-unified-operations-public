@@ -4,7 +4,7 @@
 title: Asset leasing conventions
 description: This topic describes conventions for leased assets.
 author: moaamer
-ms.date: 1/14/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 

@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Continuous delivery home page
 description: These topics describe tools and guidelines related to application lifecycle management and continuous delivery of your solution.
 author: RobinARH
 ms.date: 10/16/2019
 ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 189643
 ms.assetid: 11271903-30bc-4d0f-a1da-2a595d973289
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Continuous delivery home page
@@ -42,7 +29,7 @@ FAQ and guidelines
 - [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md)
 - [Build automation that uses Microsoft-hosted agents and Azure Pipelines](hosted-build-automation.md)
 - [Testing and validations](../perf-test/testing-validation.md)
-- [Merge the build systems for Commerce and Finance](../../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [Merge the build systems for Commerce and Finance](../../../commerce/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [SysTest filtering using class and method attributes](../perf-test/systest-filtering.md)
 - [Acceptance test library resources](../perf-test/acceptance-test-library.md)
 

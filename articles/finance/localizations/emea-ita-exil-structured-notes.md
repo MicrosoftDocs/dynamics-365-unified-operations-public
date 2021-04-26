@@ -35,7 +35,7 @@ The Advanced notes management feature lets you set up predefined notes that appl
 
 Before you begin the setup, the following prerequisites must be met:
 
-- The **Advanced notes management** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The **Advanced notes management** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Advanced notes setup
 

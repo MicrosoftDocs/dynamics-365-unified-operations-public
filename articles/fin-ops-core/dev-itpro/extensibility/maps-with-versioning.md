@@ -1,7 +1,5 @@
 ---
 
-# required metadata
-
 title: Extend table maps that are used for versioning
 description: This topic describes how to extend table maps that can be used for versioning.
 author: LarsBlaaberg
@@ -9,8 +7,6 @@ ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

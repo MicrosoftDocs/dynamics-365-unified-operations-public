@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to create an observable data action in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Observable data actions are used to track the status of a data action as it's running. This capability is helpful if you must run logic or render a user interface (UI) in response to the current status of a data action. Observable data actions use a special promise-like class that is named **AsyncResult**. This class adds "observer" functionality to a standard promise.
 
 The following example shows how to take advantage of an **AsyncResult** class. This data action waits three seconds before it returns a string.

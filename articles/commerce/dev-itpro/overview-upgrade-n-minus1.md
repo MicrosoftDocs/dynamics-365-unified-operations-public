@@ -40,7 +40,7 @@ The following features let customers upgrade in a seamless manner:
 - The upgrade process has enhanced error handling and messaging, so that customers can quickly debug issues.
 - Users can use tools to bring forward custom X++ code in their existing Headquarters to the upgraded version of the headquarters.
 
-The upgrade procedure is largely the same as the procedure for upgrading Retail to the latest version. For details about upgrade in general, see [Upgrade overview: AX 2012 to Dynamics 365 Retail](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md).
+The upgrade procedure is largely the same as the procedure for upgrading Retail to the latest version. For details about upgrade in general, see [Upgrade overview: AX 2012 to Dynamics 365 Retail](../../fin-ops-core/dev-itpro/migration-upgrade/upgrade-overview-2012.md).
 
 Planned downtime is required. Upgrade analysis is done first. The upgrade analysis runs against the Microsoft Dynamics AX 2012 database and is based on the Microsoft Dynamics Lifecycle Services (LCS) Diagnostic service. This step identifies tasks that can help make upgrade faster and less expensive. It also identifies the required SQL configuration, data headquarters cleanup, and deprecated features.
   

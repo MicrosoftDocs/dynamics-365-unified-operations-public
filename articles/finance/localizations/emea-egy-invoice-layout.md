@@ -45,7 +45,7 @@ In the **Feature management** workspace, turn on the following features:
 - Credit invoicing layout for sales and project invoice reports
 - Convert Electronic reporting outbound documents from Microsoft Office formats to PDF
 
-For more information about how to turn on features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+For more information about how to turn on features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a id="ERConfigs"></a>Import Electronic reporting configurations
 
@@ -60,7 +60,7 @@ In the **Electronic reporting** workspace, import the following Electronic repor
 > [!NOTE]
 > These formats are derived from related standard formats. The formats are based on the invoice model, and use the invoice model mapping. All required additional configurations are automatically imported.
 
-For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Configure conversion to PDF
 

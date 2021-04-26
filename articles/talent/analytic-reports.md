@@ -84,11 +84,11 @@ Job Analytics reports display data for the selected job. Analytics Hub reports a
 
 ## Cross-filter
 
-One of the great features of Power BI is the way all visuals on a report page are interconnected. If you select a data point on one of the visuals, all the other visuals on the page that contain that data change, based on that selection. Find out more and see an example in [How visuals cross-filter each other in a Power BI report](https://docs.microsoft.com/power-bi/consumer/end-user-interactions).
+One of the great features of Power BI is the way all visuals on a report page are interconnected. If you select a data point on one of the visuals, all the other visuals on the page that contain that data change, based on that selection. Find out more and see an example in [How visuals cross-filter each other in a Power BI report](/power-bi/consumer/end-user-interactions).
 
 ## Export to Excel
 
-To view report data in Excel, you can click the options menu (three dots) on a visual and select **Export underlying data**. Exported data will export as filtered, respecting user permissions in Attract. For more information, see [Export data from visualizations](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).
+To view report data in Excel, you can click the options menu (three dots) on a visual and select **Export underlying data**. Exported data will export as filtered, respecting user permissions in Attract. For more information, see [Export data from visualizations](/power-bi/visuals/power-bi-visualization-export-data).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

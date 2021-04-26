@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Attributes that make methods extensible
 description: This topic provides information about attributes that make methods extensible.
 author: MichaelFruergaardPontoppidan
@@ -9,8 +7,6 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
