@@ -97,10 +97,10 @@ This feature will only apply for new transactions. For tax transaction already s
 
 To prevent preceding scenario, we recommend changing this parameter value in a new (clean) tax settlement period that doesn't contain any unsettled tax transactions. To change this value in the middle of a tax settlement period, please run "Settle and post sales tax" program for current tax settlement period before changing this parameter value.
 
-This feature will introduce further realized currency exchange gain & loss accounting entries to the realized currency adjustment profits/loss accounts when revaluation is done during sales tax settlement (see details in [Tax settlement auto-balance in reporting currency](#tax-settlement-auto-balance-in-reporting-currency)). The configuration of the ledger account structures shall be evaluated to ensure financial dimensions can be populated into these accounts in such cases.
-> [!NOTE]
-> During settlement, financial dimensions are populated from sales tax accounts (B/S accounts) to currency adjustment profits/loss accounts (P&L accounts). Different value restrictions on financial dimensions between B/S and P&L accounts could fail the "Settle and post sales tax" program. To avoid modifications to account structures, you can enable feature "Populate financial dimensions to the realized currency adjustment profits/loss accounts for sales tax settlement" to force the derivation of financial dimensions to currency adjustment profits/loss accounts.
+This feature will add accounting entries that further gains and losses from currency exchanges. The entries will be made to the realized currency adjustment profit and loss accounts when revaluation is done during sales tax settlement. For more information, see [Tax settlement auto-balance in reporting currency](#tax-settlement-auto-balance-in-reporting-currency) in this topic.
 
+> [!NOTE]
+> During settlement, information for financial dimensions is entered from sales tax accounts, which are balance sheet accounts, to currency adjust profit and loss accounts, which are profit and loss statement accounts. Varying restrictions on the value of financial dimensions between balance sheet and profit and loss statement accounts can result in an error in the Settle and post sales tax process. To avoid modifying account structures, you can enable feature "Populate financial dimensions to the realized currency adjustment profits/loss accounts for sales tax settlement." This feature will force the derivation of financial dimensions to currency adjustment profits/loss accounts. 
 
 ## Track reporting currency tax amount
 
