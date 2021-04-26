@@ -72,8 +72,12 @@ The hub owns the following data:
 - The release to warehouse, shipment creation, wave creation, and wave finalization processes
 
 The scale units own the actual wave processing (such as work allocation, replenishment work, and demand work creation) after the release of the wave. Therefore, warehouse workers can process outbound work by using a Warehouse Management mobile app that is connected to the scale unit.
-
 ![Wave processing flow](./media/wes-wave-processing-ga.png "Wave processing flow")
+
+### Process work and ship
+As soon as the final work process puts the inventory at a final shipping location (Baydoor) the scale unit will signal to the hub that the source document inventory transactions must get updated to *Picked*. Until this process runs and gets synchronized back, the inventory on-hand on the scale unit workload will be reserved physical on the warehouse level.
+As soon as the hub has updated the transactions to picked you can from the hub process the outbound shipment confirmation and the following sales packing slip/transfer order shipment from the load.
+![Outbound processing flow](./media/WES-outbound-processing-19.png "Outbound processing flow")
 
 ## Inbound process flow
 
@@ -85,8 +89,9 @@ The hub owns the following data:
 
 > [!NOTE]
 > The inbound purchase order flow is conceptually different from the outbound flow. You can operate the same warehouse on either the scale unit or the hub depending on whether the purchase order has been released to warehouse or not. Once you have released an order to the warehouse, you can only work with that order while signed in on the scale unit.
-
 If you're using the *Release to warehouse* process, [*warehouse orders*](cloud-edge-warehouse-order.md) are created, and ownership of the related receiving flow is assigned to the scale unit. The hub won't be able to register inbound receiving.
+
+![Inbound processing flow](./media/WES-inbound-processing-19.png "Inbound processing flow")
 
 You must sign in on the hub to use the *Release to warehouse* process. Go to one of the following pages to run or schedule it:
 
