@@ -4,7 +4,7 @@
 title: Use JOIN data sources in ER model mappings to get data from multiple application tables
 description: This topic explains how you can use JOIN type data sources in Electronic reporting (ER).
 author: NickSelin
-ms.date: 04/23/2021
+ms.date: 04/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -133,13 +133,13 @@ Review settings of the ER model-mapping component. The component is configured t
     3. Binding **ConfigurationTitle: String = @.'>Relations'.Solution.Name** indicates that the name of an ER configuration is taken from the **Name** field of the **ERSolutionTable** table assessing by using the many-to-one relation (**'>Relations'**) between the **ERSolutionVersionTable** and **ERSolutionTable** tables. Names of ER configurations of the current application instance are presented in the configurations tree on the **Configurations** page.
     4. Binding **@.'>Relations'.Solution.'>Relations'.SolutionVendor.Name** means that the name of the configuration provider that owns the current configuration is taken from the **Name** field of the **ERVendorTable** table assessing by using the many-to-one relation between **ERSolutionTable** and **ERVendorTable** tables. Names of ER configuration providers are presented in the configurations tree on the **Configurations** page on the page header for each configuration. The entire list of ER configuration providers can be found on the **Organization administration \> Electronic reporting \> Configuration provider** table page.
 
-    ![ER model mapping designer page](./media/GER-JoinDS-Set1Review.PNG)
+    ![ER model mapping designer page, list of bound data model items](./media/GER-JoinDS-Set1Review.PNG)
 
 6. In the configurations tree, expand the **Set1.Summary** data model item:
 
     1. Binding **VersionsNumber: Integer = VersionsSummary.aggregated.VersionsNumber** indicates that the **Set1.Summary.VersionsNumber** item is bound to the **VersionsNumber** aggregation field of the **VersionsSummary** data source of the **GroupBy** type that was configured to return the number of records of the **ERSolutionVersionTable** table via the **Versions** data source.
 
-    ![GROUPBY data source parameters page](./media/GER-JoinDS-Set1GroupByReview.PNG)
+    ![Edit 'Group By' parameters page](./media/GER-JoinDS-Set1GroupByReview.PNG)
 
 7. Close the page.
 
@@ -149,11 +149,11 @@ Review settings of the ER model-mapping component. The component is configured t
 
 1. In the configurations tree, expand the **Set2** and **Set2.Details** data model items. The binding **Details: Record list = Details** indicates that the **Set2.Details** item is bound to the **Details** data source configured as the data source of the **Join** type.
 
-    ![ER model mapping designer page](./media/GER-JoinDS-Set2Review.PNG)
+    ![ER model mapping designer page showing expanded Set2:Record data model items](./media/GER-JoinDS-Set2Review.PNG)
 
     The **Join** data source can be added by selecting the **Functions\Join** data source:
 
-    ![ER model mapping designer page](./media/GER-JoinDS-AddJoinDS.PNG)
+    ![ER model mapping designer page, Join data source type](./media/GER-JoinDS-AddJoinDS.PNG)
 
 2. Select **Detail**s data source.
 3. Select **Edit** in the **Data sources** pane.
@@ -201,21 +201,21 @@ Review settings of the ER model-mapping component. The component is configured t
 
     This format is designed to populate a generated text file with a new line for every version of an ER configuration (**Version** sequence). Each generated line will contain the name of a configuration provider owning the current configuration, the configuration name, and the configuration version separated by semicolon mark. The final line of generated file will contain the number of discovered versions of ER configurations (**Summary** sequence).
 
-    ![ER format designer page](./media/GER-JoinDS-FormatReview.PNG)
+    ![ER format designer page, Format tab](./media/GER-JoinDS-FormatReview.PNG)
 
     The **Data** and **Summary** data sources are used to populate configuration version details to the generated file:
 
     - Information from the **Set1** data model is used when you choose **No** for the **Selector** data source at runtime on the user dialog page when running ER format.
     - Information from the **Set2** data model is used when you choose **Yes** for the **Selector** data source at runtime on the user dialog page.
 
-    ![ER format designer page](./media/GER-JoinDS-FormatMappingReview.PNG)
+    ![ER format designer page, Mapping tab](./media/GER-JoinDS-FormatMappingReview.PNG)
 
 9. Select **Run**.
 10. On the dialog page, select **No** in the **Use JOIN data source** field.
 11. Select **OK**.
 12. Review generated file.
 
-    ![ER user dialog page](./media/GER-JoinDS-Set1Run.PNG)
+    ![Electronic report parameters generated file not using JOIN data source](./media/GER-JoinDS-Set1Run.PNG)
 
 #### Analyze ER format execution trace
 
@@ -229,7 +229,7 @@ Review settings of the ER model-mapping component. The component is configured t
     - **ERSolutionTable** has been called as many times as you have configuration version records in the **ERSolutionVersionTable** table, while the number of such calls could be reduced in times for performance improvement.
     - **ERVendorTable** has been called twice for every configuration version record that was discovered in the **ERSolutionVersionTable** table, while the number of such calls could be reduced as well.
 
-    ![ER model mapping designer page](./media/GER-JoinDS-Set1Run2.PNG)
+    ![Eexcution statistics on the ER Model mapping designer page](./media/GER-JoinDS-Set1Run2.PNG)
 
 5. Close the page.
 
@@ -241,7 +241,7 @@ Review settings of the ER model-mapping component. The component is configured t
 4. Select **OK**.
 5. Review generated file.
 
-    ![ER user dialog page](./media/GER-JoinDS-Set2Run.PNG)
+    ![Electronic report parameters generated file using JOIN data source](./media/GER-JoinDS-Set2Run.PNG)
 
 #### <a name="analyze"></a> Analyze ER format execution trace
 
@@ -254,11 +254,11 @@ Review settings of the ER model-mapping component. The component is configured t
 
     - Application database has been called once to get records from **ERVendorTable**, **ERSolutionTable**, and **ERSolutionVersionTable** tables to access required fields.
 
-    ![ER model mapping designer page](./media/GER-JoinDS-Set2Run2.PNG)
+    ![ER Model mapping designer page performance statistics details](./media/GER-JoinDS-Set2Run2.PNG)
 
     - Application database has been called once to calculate the number of configuration versions by using joins that were configured in the **Details** data source.
 
-    ![ER model mapping designer page](./media/GER-JoinDS-Set2Run3.PNG)
+    ![ER Model mapping designer page showing application database calls](./media/GER-JoinDS-Set2Run3.PNG)
 
 ## Limitations
 
