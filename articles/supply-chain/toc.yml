@@ -3339,10 +3339,6 @@
           href: troubleshooting/planning/marking-between-tran.md
         - name: Planned purchase order created when a purchase exists within negative days
           href: troubleshooting/planning/planning-optimisatio.md
-        - name: You are asked to save item coverage settings after making no changes
-          href: troubleshooting/planning/when-importing-to-th.md
-        - name: Master planning batch job filter is not working as expected
-          href: troubleshooting/planning/master-planning-batc.md
         - name: Unable to upload the cost price in demand forecast entries
           href: troubleshooting/planning/unable-to-upload-the.md
       - name: Procurement
@@ -3363,8 +3359,6 @@
         items:
         - name: Flushing principle settings on BOM lines aren't respected
           href: troubleshooting/production/flushing-principle-n.md
-        - name: Formula line step conversion setup doesn't always work in a batch order
-          href: troubleshooting/production/process-manufacturin.md
         - name: Batch number is cleared on selecting a new lot ID
           href: troubleshooting/production/when-customer-is-try.md
         - name: Late selection not respected when resetting production orders via batch job
@@ -3381,18 +3375,8 @@
           href: troubleshooting/rebates/cumulating-customer-.md
       - name: Sales and marketing
         items:
-        - name: Default sales tax group to sales order either from delivery address or customer account
-          href: troubleshooting/sales/default-sales-tax-gr.md
-        - name: Auto charges aren't calculated when importing sales orders
-          href: troubleshooting/sales/importing-a-sales-or.md
         - name: System administrators can't clear order holds because they aren't authorized
           href: troubleshooting/sales/system-administrator.md
-        - name: Document handling notes are not copied to direct delivery purchase orders
-          href: troubleshooting/sales/document-handling-no.md
-        - name: Service charges aren't included in exported sales orders that have been invoiced
-          href: troubleshooting/sales/service-charges-expo.md
-        - name: Can't create contacts for a customer account while dual-write is active
-          href: troubleshooting/sales/trying-to-to-create-.md
       - name: Transportation management
         items:
         - name: Can only add the main account as the credit account for reconciliation reasons
