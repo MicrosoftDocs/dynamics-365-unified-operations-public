@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Workers responsible for quality
-description: This topic describes how to configure workers responsible for approving nonconformances.
+title: Workers responsible for approving nonconformances
+description: This topic describes how to configure workers that are responsible for approving nonconformances.
 author: rachel-profitt
 manager: tfehr
 ms.date: 03/23/2021
@@ -33,28 +33,27 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure workers responsible for approving nonconformances.
+This topic describes how to configure workers that are responsible for approving nonconformances.
 
-Nonconformances must be approved before users can start entering details such as corrections or operations. For a user to be able to approve a nonconformance, their user ID must be linked to a worker record. You can also optionally configure workers responsible for quality and allow a worker to approve work on behalf of another worker.
+Nonconformances must be approved before users can start to enter details such as corrections or operations. Before users can approve or reject nonconformances, their user ID (user record) must be linked to a worker record. You can optionally configure workers that are responsible for quality and then allow one worker to approve work on behalf of another worker.
 
 ## Enable a user for nonconformance processing
 
-For a user to be able to approve or reject nonconformances, their user record must be linked to a worker record. This allows the approval fields to auto populate and for the timesheet to default the current user. To use the document notes, the user must also have document handling activated in the user options. To make these settings:
+Before a user can approve or reject nonconformances, you must link their user record to a worker record. In this way, you enable the approval fields to be automatically set and the current user to be automatically filled in for the timesheet. Before the user can use the document notes, you must activate document handling in their user options.
 
-1. Go to **System administration > Users > Users**.
-1. Find and open the user you want to enable.
-1. Set **Person** to the name of the worker related to the current user record. 
-1. On the Action Pane, select **User options** to open the **Options** page for the current user record.
-1. Open the **Preferences** tab.
-1. Set **Enable document handling** to *Yes*.
+1. Go to **System administration \> Users \> Users**.
+1. Find and open the user who should be able to approve or reject nonconformances.
+1. Set the **Person** field to the name of the worker that is related to the current user record.
+1. On the Action Pane, select **User options**.
+1. On the **Options** page for the current user record, on the **Preferences** tab, set the **Enable document handling** option to *Yes*.
 1. Close the pages.
 
-## Define workers responsible for quality
+## Define workers that are responsible for quality
 
-1. Go to **Inventory management > Setup > Quality control > Workers responsible for quality**.
-2. Select **New** in the Action Pane.
+1. Go to **Inventory management \> Setup \> Quality control \> Workers responsible for quality**.
+2. On the Action Pane, select **New**.
 3. In the **Worker** field, select the worker that enters quality data.
-4. In the **Worker responsible** field, select the worker that the selected worker enters work on behalf of. This worker will default into **Worker** fields when creating and updating nonconformances.
+4. In the **Worker responsible** field, select the worker that the selected worker enters work on behalf of. When nonconformances are created and updated, this worker will be entered by default in **Worker** fields.
 
 ## Additional resources
 
@@ -66,6 +65,5 @@ For a user to be able to approve or reject nonconformances, their user record mu
 - [Quality charges for nonconformances](quality-charges.md)
 - [Operations for nonconformances](quality-operations.md)
 - [Quality management for warehouse processes](quality-management-for-warehouses-processes.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
