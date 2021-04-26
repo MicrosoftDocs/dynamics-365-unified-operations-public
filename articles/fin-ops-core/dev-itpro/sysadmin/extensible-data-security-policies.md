@@ -38,17 +38,17 @@ be accessible from the restricted tables.
 ## Data security policy components
 
 -   **Constrained tables**: The table or tables from which data is filtered or
-    secured. For example, in a policy that secures access to customers based on
-    customer group, the **CustTable** would be the constrained table.
+    secured. For example, in a policy that secures access to transactions based on
+    customer, the **CustTrans** would be an example of a constrained table.
 
 -   **Primary table**: Used to secure the content of the related constrained
-    table. In the above example, the **CustGroup** table would be the primary table.
-    The primary table must have an explicit relationship to the constrained table.
+    table. In the below conceptual example, the **CustTable** table would be the primary table.
+    The primary table must have an explicit relationship to the constrained tables.
 
 -   **Policy query**: Used to secure the constrained tables content using a range
     condition on the primary table contents. Only records that are included in
     the range will be accessible. The range can, for example, be based on a
-    specific value for Customer Group.
+    specific value for Customer.
 
 -   **Context** – Controls the conditions under which a policy is applicable.
     Two main types of contexts are available:
