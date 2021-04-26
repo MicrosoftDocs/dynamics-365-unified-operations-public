@@ -3343,14 +3343,12 @@
           href: troubleshooting/planning/firmed-directly-deri.md
         - name: Master planning generates planned orders for phantom products
           href: troubleshooting/planning/planned-orders-are-g.md
-        - name: Can't remove the warehouse demand forecast dimension from forecast lines
-          href: troubleshooting/planning/warehouse-removal-fr.md
-        - name: Marking between transfer order receipt and batch order is not working correctly when using "Firm and consolidate"
-          href: troubleshooting/planning/marking-between-tran.md
         - name: Planned purchase order created when a purchase exists within negative days
           href: troubleshooting/planning/planning-optimisatio.md
         - name: Unable to upload the cost price in demand forecast entries
           href: troubleshooting/planning/unable-to-upload-the.md
+        - name: Can't remove the warehouse demand forecast dimension from forecast lines
+          href: troubleshooting/planning/warehouse-removal-fr.md
       - name: Procurement
         items:
         - name: Can't invoice a customer-facing sales order in the VEL company
