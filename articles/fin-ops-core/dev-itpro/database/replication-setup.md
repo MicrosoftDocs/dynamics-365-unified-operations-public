@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - SQL Transactional Replication 
 description: This topic shows how to upgrade a large Microsoft Dynamics AX 2012 database to Finance and Operations apps.
 author: sarvanisathish
-ms.date: 04/20/2021
+ms.date: 04/26/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
