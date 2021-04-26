@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to perform nonconformance management based on an existing quality order. Typically, nonconformance management is performed by a quality clerk. As a prerequisite, you must have a quality order available. (For information about how to create a quality order, see [Inspect the quality of goods](inspect-quality-goods.md).)
+This topic describes how to perform nonconformance management based on an existing quality order. Typically, nonconformance management is done by a quality clerk. As a prerequisite, you must have a quality order available. (For information about how to create a quality order, see [Inspect the quality of goods](inspect-quality-goods.md).)
 
 Before a user can process the approval of a nonconformance, a worker must be assigned to them in the **Person** field on the **Users** page. Additionally, before the user can use the document notes, the **Enable document handling** option must be set to *Yes* in their user options.
 
@@ -51,14 +51,14 @@ To approve or reject a nonconformance, follow these steps.
     > [!NOTE]
     > You can add a correction only to nonconformances that are approved.
 
-1. On the Action Pane, select **Functions \> Approve non conformance** to approve the nonconformance or **Functions \> Refuse non conformance** to reject it. You can associate approved nonconformances with [related operations](../quality-operations.md) to record work that is done as part of the nonconformance handling and the processing of correction handling.
+1. On the Action Pane, select **Functions \> Approve non conformance** to approve the nonconformance or **Functions \> Refuse non conformance** to reject it. You can associate approved nonconformances with [related operations](../quality-operations.md). In this way, you can record work that is done as part of the nonconformance handling and the processing of correction handling.
 1. You're prompted to confirm your selection. Select **Yes** to continue.
 
 ## Add operations and other details to nonconformances
 
 After you've created a nonconformance, you can start to add related operations and specify additional information about those operations. You can add related operations only to nonconformances that are approved.
 
-In addition to the basic information, you can add the following details to an operation:
+Besides the basic information, you can add the following details to an operation:
 
 - **Items** – You can create a list of items that are consumed to perform the correction. For example, the items might be products that are required to repair equipment or ingredients that are required to rework a finished product.
 - **Quality charges** – You can create a list of charges that are incurred or billed out to external sources.
@@ -150,8 +150,8 @@ To add a timesheet to an operation, follow these steps.
 1. On the Action Pane, select **Timesheet**.
 1. On the **Related operation time sheets** page, on the Action pane, select **New** to add a row to the grid. Then set the following fields for the new row:
 
-    - **Date** – Specify the date when work was performed. By default, this field is set to the current date.
-    - **Worker** – Select the worker who performed the work. By default, this field is set to the worker that is assigned to the current user.
+    - **Date** – Specify the date when work was done. By default, this field is set to the current date.
+    - **Worker** – Select the worker who did the work. By default, this field is set to the worker that is assigned to the current user.
     - **Operation hours** – Enter the number of hours that were worked on the selected operation.
     - **Invoiced** – Select this check box if the time has been charged to a customer or vendor on an invoice.
 
