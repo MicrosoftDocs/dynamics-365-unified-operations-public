@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to create quality charges that can be used with operations for a nonconformance.
 
-You use the **Quality charges** page to define the types of charges that can be added to operations for a nonconformance. Charges lets you track details about fees or charges that you owe to a customer for nonconforming products, or that a vendor owes to you for nonconforming products that you received. You might also use charges to track costs that are required for external vendors or services to perform an operation.
+You use the **Quality charges** page to define the types of charges that can be added to operations for a nonconformance. Charges let you track details about fees or charges that you owe to a customer for nonconforming products, or that a vendor owes to you for nonconforming products that you received. You might also use charges to track costs that are required for external vendors or services to perform an operation.
 
 ## Examples of quality charges
 
