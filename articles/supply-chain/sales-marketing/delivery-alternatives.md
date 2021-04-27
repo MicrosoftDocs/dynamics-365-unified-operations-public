@@ -4,11 +4,9 @@
 title: Delivery alternatives
 description: Sales order takers can use the Delivery alternatives page to discover alternative order fulfillment options.
 author: ChristianRytt
-manager: tfehr
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -154,3 +152,6 @@ This FastTab highlights the impact of the selected delivery alternative. If you 
 ## Additional resources
 
 [Order promising](delivery-dates-available-promise-calculations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

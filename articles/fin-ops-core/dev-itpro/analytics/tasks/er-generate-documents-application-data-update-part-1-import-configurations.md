@@ -4,11 +4,9 @@
 title: Import configurations to generate documents that have application data
 description: To complete the steps in this procedure, you must first complete the procedure, "ER Create a configuration provider and mark it as active". 
 author: NickSelin
-manager: AnnBe 
 ms.date: 11/02/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -79,3 +77,6 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
     * Review the structure of the format used to generate the Intrastat report. Note that it is designed to generate an XML file by populating data from the data model, which is based on the root item 'For outgoing document'. Verify that the name for generated file is defined on the user dialog form ('fn' data source is used for that).   
 30. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

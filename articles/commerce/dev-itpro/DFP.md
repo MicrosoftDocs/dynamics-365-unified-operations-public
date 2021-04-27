@@ -4,11 +4,9 @@
 title: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
 description: This topic describes out-of-box integrations that are available between Microsoft Dynamics 365 Fraud Protection and Dynamics 365 Commerce. 
 author: rubendel
-manager: AnnBe
 ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -126,7 +124,7 @@ Next, select the Key Vault URL that is used to store the Fraud Protection secret
 ![Fraud Protection setup in Retail parameters](../media/Payments/DFPSetupParams1.png)
 
 > [!NOTE]
-> The Key Vault and Fraud Protection settings are company-specific. To enable Fraud Protection for production environments, you don't enter the Azure AD client ID through the user interface (UI). Instead, you must create and submit a [service request](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team). In the title of your request, clearly indicate that the request is to configure Fraud Protection purchase protection for a production Commerce or Retail environment.
+> The Key Vault and Fraud Protection settings are company-specific. To enable Fraud Protection for production environments, you don't enter the Azure AD client ID through the user interface (UI). Instead, you must create and submit a [service request](../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md). In the title of your request, clearly indicate that the request is to configure Fraud Protection purchase protection for a production Commerce or Retail environment.
 
 ## Loss prevention in Commerce
 
@@ -150,7 +148,7 @@ To set up Fraud Protection, [request a callback](https://dynamics.microsoft.com/
 
 #### Turn on Data Lake Storage Gen2 for your Commerce environment
 
-Before the data can be available in Data Lake Storage Gen2, the service must be turned on for the Commerce environment. For information about how to turn on Data Lake Storage Gen2 for your Commerce environment, see [Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](https://docs.microsoft.com/dynamics365/commerce/enable-adls-environment).
+Before the data can be available in Data Lake Storage Gen2, the service must be turned on for the Commerce environment. For information about how to turn on Data Lake Storage Gen2 for your Commerce environment, see [Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](../enable-adls-environment.md).
 
 #### Turn on Loss prevention
 
@@ -168,5 +166,8 @@ Your privacy is important to Microsoft. To learn more, read the [Microsoft Priva
 
 ## Related articles
 
-- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-- [Dynamics 365 payment data use](https://docs.microsoft.com/dynamics365/retail/payment-connector-data-fields)
+- [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Dynamics 365 payment data use](../payment-connector-data-fields.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

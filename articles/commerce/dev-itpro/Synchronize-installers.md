@@ -2,13 +2,11 @@
 # required metadata
 
 title: Synchronize self-service installers in Dynamics 365 Commerce
-description: This topic explains how to use Asset and Shared asset libraries in Microsoft Dynamics Lifecycle Services (LCS), and Dynamics 365 Headquarters, to upload and synchronize self-service installers so that they can be used with the standard self-service download mechanism.
+description: This topic explains how to upload and synchronize self-service installers so that they can be used with the standard self-service download mechanism.
 author: jashanno
-manager: AnnBe
 ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics-365-retail
 ms.technology:  
 
 # optional metadata
@@ -63,8 +61,8 @@ The following illustration shows a generic example of the **Retail Self-service 
     >
     > As noted at the beginning of this topic, the earlier self-service package upload method is obsolete but will continue to be supported until it's removed in the future.
 
-4. On the same page, you can select default packages that will be used throughout headquarters in their relevant locations (**Devices**, **All stores**, and **Channel database**).
-5. Perform standard configuration and installation flows for Modern POS, hardware station, or Commerce Scale Unit by using the links in the following table.
+3. On the same page, you can select default packages that will be used throughout headquarters in their relevant locations (**Devices**, **All stores**, and **Channel database**).
+4. Perform standard configuration and installation flows for Modern POS, hardware station, or Commerce Scale Unit by using the links in the following table.
 
 > [!NOTE]
 > There are several installers.  Modern POS, Modern POS with offline (note that this is a separate installer), Commerce Scale Unit (self-hosted, formerly named *Retail Store Scale Unit*), hardware station, and the less frequent installers (AX 2012 R3 support installers and the Peripheral Simulator).
@@ -74,3 +72,6 @@ The following illustration shows a generic example of the **Retail Self-service 
 | Modern POS | [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md) |
 | Hardware station | [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) |
 | Commerce Scale Unit (formerly known as Retail Store Scale Unit) | [Configure and install Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md) |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

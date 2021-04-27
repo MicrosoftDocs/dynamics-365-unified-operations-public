@@ -4,11 +4,9 @@
 title: App settings
 description: This topic covers app settings in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 
 This topic covers app settings in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 The \\src\\settings\\app.settings.json file holds app settings for global configurations, routes, and themes. The following example shows a JavaScript Object Notation (JSON) file that includes a section for each type of setting.
 
@@ -142,6 +138,8 @@ Here is an example of a resource file.
 
 [Request properties object](request-properties-object.md)
 
+[Platform settings file](platform-settings.md)
+
 [Extend a module definition file](extend-module-definition.md)
 
 [Cookie API overview](cookie-api-overview.md)
@@ -155,3 +153,6 @@ Here is an example of a resource file.
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
 
 [Set up Azure Key Vault for secure key management](set-up-key-vault.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Fixed asset allocation rules for Japan
 description: This article answers some frequently asked questions about fixed asset allocation rules for Japan.
 author: yijialuan
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -64,3 +62,6 @@ If the total rounded-down depreciation cost that must be allocated across each d
 
 ## Additional resources
 - [Allocate carrying amount of shared asset and goodwill to cash generating units](./tasks/allocate-carrying-amount.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

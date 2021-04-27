@@ -4,11 +4,9 @@
 title: Export data from Attract and Onboard
 description: Export data from Dynamics 365 Talent - Attract and Onboard.
 author: andreabichsel
-manager: tfehr
 ms.date: 01/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -116,3 +114,5 @@ The download is a .zip file that contains:
 ## See also
 
 [Retiring Dynamics 365 Talent: Attract and Dynamics 365 Talent: Onboard Apps](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

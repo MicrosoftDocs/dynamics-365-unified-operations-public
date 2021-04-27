@@ -4,16 +4,14 @@
 title: Record right-of-use asset depreciation (Preview)
 description: This topic explains how to create the journal entry for the amortization that is required for leases that are recognized on an organization's balance sheet. 
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: AssetLeaseAssetSchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -91,3 +89,6 @@ In accordance with International Financial Reporting Standard 16 (IFRS 16) and A
 | 1                                    | 22,889.87 ÷ 24 = 953.74                 |
 | 2                                    | 22,889.87 ÷ 24 = 953.74                 |
 | 3                                    | 22,889.87 ÷ 24 = 953.74                 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

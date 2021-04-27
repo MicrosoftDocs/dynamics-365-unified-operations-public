@@ -4,11 +4,9 @@
 title: Service activities 
 description: Create service activities to define and maintain tasks in a service order.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -44,3 +42,6 @@ You can view the status of service activities in the **Dispatch board** form. Yo
 
 [Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

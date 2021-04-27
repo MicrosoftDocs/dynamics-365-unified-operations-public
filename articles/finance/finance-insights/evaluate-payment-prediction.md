@@ -4,11 +4,9 @@
 title: Evaluate the initial customer payment prediction model (preview)
 description: This topic describes the steps that you can take to understand the customer payment prediction model and evaluate its effectiveness. 
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -48,7 +46,7 @@ This link takes you to AI Builder, where you can learn more about the current mo
 
 The page that is opened shows the following information:
 
-- In the **Performance** section, the model performance grade provides perspective on the quality of the model. For more information about this grade, see [Prediction model performance](https://docs.microsoft.com/ai-builder/prediction-performance) in the AI Builder documentation.
+- In the **Performance** section, the model performance grade provides perspective on the quality of the model. For more information about this grade, see [Prediction model performance](/ai-builder/prediction-performance) in the AI Builder documentation.
 - The **Most influential data** section shows how important different input types of data were for your model. You can evaluate this list and the corresponding percentages to determine whether the information is consistent with what you know about your business and market.
 
     [![Performance and Most influential data sections for the prediction model](./media/models.png)](./media/models.png)
@@ -73,7 +71,7 @@ For a deeper analysis of the results, a good starting point is to review the "Co
 
 You can expand this data in the following way.
 
-|                          | Predicted On time | Predicted Late | Predicted Very late |
+| &nbsp;                   | Predicted On time | Predicted Late | Predicted Very late |
 |--------------------------|-------------------|----------------|---------------------|
 | Actual on time payment   | **71**            | 0              | 21                  |
 | Actual late payment      | 5                 | **0**          | 27                  |
@@ -105,3 +103,6 @@ For more information about how to evaluate prediction models, [Results of machin
 
 #### Privacy notice
 Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

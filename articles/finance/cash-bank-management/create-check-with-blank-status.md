@@ -4,11 +4,9 @@
 title: Create checks that have Blank status 
 description: This topic explains how to create blank checks for a bank account on the Checks page. 
 author: abruer
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -43,3 +41,6 @@ On the **Checks** page, you perform maintenance tasks for checks. For example, y
 To open the **Checks** page, go to **Cash and bank management \> Bank accounts \> Bank accounts**, and then, on the Action Pane, on the **Manage payments** tab, in the **Related information** group, select **Checks**. Alternatively, go to **Cash and bank management \> Inquiries and reports \> Checks**.
 
 Then, to create checks that have **Blank** status, on the Action Pane, select **Create blank checks**. While the system is creating blank checks, the associated bank account is temporarily inactivated. This behavior reduces the risk that payments will be generated at the same time that blank checks are created. When the processing is completed, the associated bank account is reactivated.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

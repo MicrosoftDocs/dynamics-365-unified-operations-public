@@ -4,11 +4,9 @@
 title: Define resource capabilities
 description: Resource capabilities describe what operations resources can do. 
 author: sorenva
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -50,3 +48,6 @@ Resource capabilities describe what operations resources can do. During scheduli
 5. In the Level field, enter a number.
     * When you specify that a job or operation requires a particular capability, you can also specify the minimum level that is required. Use the capability level to differentiate resources that can perform the same job, but at different speeds, strengths, sizes, and so on.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

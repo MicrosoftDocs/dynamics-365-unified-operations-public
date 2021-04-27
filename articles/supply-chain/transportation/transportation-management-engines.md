@@ -4,11 +4,9 @@
 title: Transportation management engines
 description: Transportation management engines define the logic that is used to generate and process transportation rates in Transportation management. 
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -103,3 +101,12 @@ Metadata for transportation management engines is configured differently for the
 | 3        | Destination start postal code | Assignment | String    | Postal Code    | Selected  |
 | 4        | Destination end postal code   | Assignment | String    | Postal Code    | Selected  |
 | 5        | Destination country           | Assignment | String    | Country/region |           |
+
+### Whitepaper
+
+For more information, download the following white paper (written to support AX2012, but still applies for Dynamics 365 Supply Chain Management)
+
+- [Transportation management engines](https://download.microsoft.com/download/e/0/9/e0957665-c12f-43c7-94c0-611cc49d7d61/TransportationManagementEnginesInAX.pdf)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

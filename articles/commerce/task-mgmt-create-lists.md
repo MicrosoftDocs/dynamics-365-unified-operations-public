@@ -4,11 +4,9 @@
 title: Create task lists and add tasks
 description: This topic describes how to create task lists and add tasks to them in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.9
 [!include [banner](includes/banner.md)]
 
 This topic describes how to create task lists and add tasks to them in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 A *task* defines a specific piece of work or an action that someone must complete on or before a specified due date. In Dynamics 365 Commerce, a task can include detailed instructions and information about a contact person. It can also include links to back-office operations, point of sale (POS) operations, or site pages, to help improve productivity and provide the context that the task owner requires to complete the task efficiently.
 
@@ -96,3 +92,6 @@ To configure a POS operation so that it can be linked to a task, follow these st
 [Assign task lists to stores or employees](task-mgmt-assign-lists.md)
 
 [Task management in POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Associate a workflow document class with a workflow type
 description: The topic describes how to associate a workflow document class with a workflow type.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -51,3 +49,6 @@ Before you begin the following procedure, you must create a workflow document cl
 [Create a new workflow type](workflow-type-create-new.md)
 
 [Create a workflow document class](workflow-type-document-create.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Forced electronic invoices generation
 description: This topic explains how to set up and use the functionality for forced generation of electronic invoices.
 author: ilkond
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -32,13 +30,11 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 This topic explains how to configure the forced generation of electronic invoice files immediately after related customer invoices are posted, regardless of the printing options that are selected.
 
 ## Prerequisites
 
-1. In the **Feature management** workspace, turn on the **Forced electronic invoices generation** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+1. In the **Feature management** workspace, turn on the **Forced electronic invoices generation** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 2. Configure the system to enable electronic invoice generation. Although the configuration of electronic invoices is a country/region-specific process, it includes common steps that used for all supported countries and regions. For an example, see [Norwegian electronic invoices](emea-nor-e-invoices.md).
 
 ## Post invoices
@@ -52,3 +48,6 @@ For more information about ER destinations, see [Electronic reporting destinatio
 
 > [!NOTE]
 > The **Forced electronic invoices generation** feature isn't applicable to Italy. Italian electronic invoices depend only on the existence of related ER destinations. They always disregard printing options that are used during invoice posting.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

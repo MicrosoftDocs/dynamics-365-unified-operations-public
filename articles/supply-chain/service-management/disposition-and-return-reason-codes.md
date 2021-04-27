@@ -4,11 +4,9 @@
 title: Customer returns overview
 description: Create and use return reason codes and disposition codes to support the process for returning products.
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -58,3 +56,6 @@ Assign a disposition code when an item is received or during the physical inspec
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

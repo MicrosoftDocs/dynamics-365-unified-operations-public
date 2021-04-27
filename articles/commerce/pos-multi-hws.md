@@ -4,11 +4,9 @@
 title: Dedicated payment terminals and prompts for a printer and cash drawer
 description: This topic provides information about the capability to have a dedicated payment terminal and prompt the user to select a cash drawer and a receipt printer.
 author: rubendel
-manager: AnnBe
 ms.date: 05/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -158,3 +156,6 @@ Store associates are prompted to select a hardware station only one time per tra
 - [Set up POS hybrid app on Android and iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
 - [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
 - [Network peripheral support overview](https://go.microsoft.com/fwlink/?linkid=2129965)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

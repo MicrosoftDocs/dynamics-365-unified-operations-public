@@ -4,11 +4,9 @@
 title: Automatic allocation of charges
 description: The charges feature in Microsoft Dynamics 365 Supply Chain Management helps you automatically allocate charges to purchase orders or sales orders.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 10/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -151,7 +149,7 @@ After your charges codes are set up, follow these steps to define the auto charg
     - **Site** and **Warehouse** – Specify a site and warehouse if charges should be applied only for a specific site and warehouse.
     - **Keep** – Select this check box to keep the charges transactions after invoicing is completed, so that the charge will be applied every time that you create a new invoice for the selected customer account.
 
-1. **For sales orders only:** If you want to calculate tiered charges, see [Tiered charges on sales orders](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) for information.
+1. **For sales orders only:** If you want to calculate tiered charges, see [Tiered charges on sales orders](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) for information.
 
 ## Allocate charges from the header to a line
 
@@ -181,3 +179,6 @@ The following procedure shows how to allocate header-level charges to a line. Be
         > When you work with the **Choose lines to exclude from allocation** grid, be sure to leave the grid open until you select **Allocate**. If you close the grid before you select **Allocate**, your settings in the grid will be lost. Therefore, charges will be allocated based on the criteria that you previously defined.
 
 1. Select **Allocate** to apply your settings and close the dialog box.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

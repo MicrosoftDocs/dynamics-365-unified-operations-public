@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Run test cases by using the Regression suite automation tool (RSAT)
 description: This topic explains how to load test cases from Azure DevOps, run tests, and save your work back to Azure DevOps.
-author: robadawy
-manager: AnnBe
+author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
-
-# optional metadata
 
 # ms.search.form:
 # ROBOTS:
@@ -22,7 +16,7 @@ ms.reviewer: rhaertle
 ms.custom: 21631
 ms.search.region: Global
 # ms.search.industry:
-ms.author: robadawy
+ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -201,3 +195,6 @@ You can set up the test case so that it isn't run unless it has a status of **Re
 ### Signoffs
 
 When your test run is complete, RSAT can create sign-off work items in Azure DevOps. Select the **Sign-off tasks** check box. Then set the type of work item that should be created for each person who signs off. You can select the **Functional**, **IT Manager**, or **Team Manager** role for sign-offs, and then specify appropriate email addresses. Work items will then be created in Azure DevOps and assigned to owners for approval.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

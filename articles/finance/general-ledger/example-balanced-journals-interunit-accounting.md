@@ -4,11 +4,9 @@
 title: Balanced journals for interunit accounting
 description: This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -37,7 +35,7 @@ This article shows how a journal is automatically balanced when a balancing fina
 
 If account entries don't balance at the level of the financial dimension values, additional account entries are created automatically to balance the journal. These account entries use the **Interunit - debit** and **Interunit - credit** posting types on the **Accounts for automatic transactions** page to determine the main account. For example, Business Unit, which is the second segment of the ledger account, is selected as the balancing financial dimension, and the following accounting entries are about to be created.
 
-|                      |           |
+| &nbsp;               | &nbsp;    |
 |----------------------|-----------|
 | 6100 – MSP – OU\_256 | 100.00 DR |
 | 6100 – NY – OU\_249  | 100.00 DR |
@@ -50,7 +48,7 @@ In this case, the following balances are determined:
 
 Therefore, the following accounting entries are created automatically to balance the  journal at the level of the financial dimension values.
 
-|                                   |           |
+| &nbsp;                            | &nbsp;    |
 |-----------------------------------|-----------|
 | (Interunit Debit) – MSP – OU\_256 | 100.00 DR |
 | (Interunit Credit) – NY – OU\_249 | 100.00 CR |
@@ -59,3 +57,6 @@ Therefore, the following accounting entries are created automatically to balance
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

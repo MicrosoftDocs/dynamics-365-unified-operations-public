@@ -4,11 +4,9 @@
 title: Budget control overview
 description: This article introduces budget control and provides information to help you configure budget control in Microsoft Dynamics 365 Finance so that you can manage financial resources.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -131,3 +129,6 @@ After budget control is turned on, users will receive budget control warning and
 From this page, users can drill into the **Budget control statistics by period** page to view budget availability details and reservations for a selected budget control dimension combination. Users can also drill into the **Budget control statistic** page to view the budget availability for all financial dimension combinations that are used in budget control. 
 
 If budget control is turned on for purchase orders, the budget manager can use the **Ledger budgets and forecasts** workspace to review the queue of all unconfirmed purchase orders that have budget check warnings and errors. If the budget manager has over-budget permissions configured, the purchase orders can be confirmed directly in the workspace.    
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,18 +1,12 @@
 ---
-# required metadata
-
 title: Write extensible methods
 description: This topic provides information about how to write extensible methods.
 author: smithanataraj
-manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -118,3 +112,6 @@ Here are some guidelines to follow when you write extensible code:
 	- Use **SysQueryInsertRecordSet** to convert insert_recordset to a query.
 	- Avoid field lists in select statements. In this way, you enable extenders to retrieve their additional fields without having to extend.
 	- Use the **in** keyword in query ranges to enable extenders to add more values to the query range. We recommend this approach especially for query ranges that have enum values.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

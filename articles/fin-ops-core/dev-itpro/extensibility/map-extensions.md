@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Table map extension
 description: To extend table maps, we have refactored table maps into a model, which allows you to extend a solution with additional fields and methods. 
 author: LarsBlaaberg
-manager: AnnBe
 ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -70,3 +64,6 @@ The conflict is not resolved if the ability to add fields or methods is added to
 
 Even if the the compiler enforced that all fields and methods on a table map must be mapped to all tables implementing the table map, the conflict would not be resolved. Instead of receiving runtime errors, adding a field or a method would clear a breaking change, as tables not having a new field mapped or a new method implemented would compile when the model containing the added field/method is applied. To extend table maps, we have refactored table maps into a model, which allows you to extend a solution with additional fields and methods.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Create a kanban rule using a kanban line event
 description: This procedure creates a kanban rule by using the kanban line event setting to trigger pull from a process activity. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -70,3 +68,6 @@ This procedure creates a kanban rule by using the kanban line event setting to t
     * Notice that a kanban for 27 was created to process the  activity based on the created kanban rule.  
     * This is the last step.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

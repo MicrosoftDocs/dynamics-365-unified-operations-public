@@ -3,11 +3,9 @@
 title: Set up an inventory profile 
 description: This topic provides information about setting up inventory profile.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -326,3 +324,6 @@ Find more details in the following topics:
 
 - [Inventory profile overview](rus-inventory-profile-overview.md)
 - [Use an inventory profile in documents and queries](rus-use-inventory-profile-documents-queries.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

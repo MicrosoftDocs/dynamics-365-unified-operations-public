@@ -3,11 +3,9 @@
 title: Defer module
 description: Defer type
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -117,3 +115,6 @@ resolve &lt;T&gt;(value?: T &#124; PromiseLike &lt;T&gt;): Promise &lt;T&gt;
 
 #### Returns Promise &lt;T&gt;
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

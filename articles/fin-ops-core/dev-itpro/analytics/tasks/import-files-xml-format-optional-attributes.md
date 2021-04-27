@@ -4,11 +4,9 @@
 title: (RCS) Import files in XML format with optional attributes
 description: This topic provides information about how a user can design ER format configuration to import files in XML format containing optional attributes.
 author: NickSelin
-manager: AnnBe 
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -126,3 +124,6 @@ The following steps explain how a user in the System Administrator or Electronic
 
 > [!NOTE]
 > The same file has been imported as the format design now consider the 'id' attribute for the 'document' element as optional.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Create a workflow document class
 description: This topic describes how to create a workflow document class.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,7 +33,7 @@ ms.dyn365.ops.version: Platform update 1
 
 You define table fields in a query to create workflow conditions. In a typical scenario, calculated fields are used to determine the behavior of a workflow. For example, a dynamic sales total of all records in a table can be used as a workflow condition to determine whether the step should be used. However, a limitation of queries is that you can't define calculated fields in the queries themselves. To overcome this query limitation, you must use a workflow document class. This topic describes how to create a workflow document class.
 
-The workflow document class that you create defines table fields for conditions in two ways: the Application Explorer query and parameter methods. You must override the **getQueryName** method of the [WorkflowDocument class](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg798542(v=ax.60)) to return the name of the query. You can optionally add calculated fields by adding parameter methods that have a specific signature on the class. For more information about workflow conditions, see [Configure workflow properties](configure-workflow-properties.md) and [Configure conditional decisions in a workflow](configure-conditional-decision-workflow.md).
+The workflow document class that you create defines table fields for conditions in two ways: the Application Explorer query and parameter methods. You must override the **getQueryName** method of the [WorkflowDocument class](/previous-versions/dynamics/ax-2012/application-classes/gg798542(v=ax.60)) to return the name of the query. You can optionally add calculated fields by adding parameter methods that have a specific signature on the class. For more information about workflow conditions, see [Configure workflow properties](configure-workflow-properties.md) and [Configure conditional decisions in a workflow](configure-conditional-decision-workflow.md).
 
 The following procedures explain how to create a workflow document class that includes a parameter method for a calculated field. Before you begin, you must create a query that specifies the data that will be accessed. For more information about workflow queries, see [Create a query for a workflow type](workflow-type-query.md).
 
@@ -62,7 +60,7 @@ The following procedures explain how to create a workflow document class that in
 5. Right-click the new class, point to **Override Method**, and then select **getQueryName**. A method node that is named **getQueryName** appears under the workflow document class node, and the **Editor** window appears.
 
     > [!NOTE]
-    > Be sure to select **getQueryName** as the method to override. The [WorkflowDocument.getQuery method](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg798533(v=ax.60)) is used only internally to retrieve the actual query, based on the string that is returned by the [WorkflowDocument.getQueryName method](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg798541(v=ax.60)).
+    > Be sure to select **getQueryName** as the method to override. The [WorkflowDocument.getQuery method](/previous-versions/dynamics/ax-2012/application-classes/gg798533(v=ax.60)) is used only internally to retrieve the actual query, based on the string that is returned by the [WorkflowDocument.getQueryName method](/previous-versions/dynamics/ax-2012/application-classes/gg798541(v=ax.60)).
 
 6. In the **Editor** window, enter the following code for the query method.
 
@@ -99,3 +97,6 @@ You can add a calculated field to the workflow document class only if it meets t
 ## See also
 
 [Associate a workflow document class with a workflow type](workflow-type-associate-document.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

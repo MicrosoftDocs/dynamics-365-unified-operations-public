@@ -4,11 +4,9 @@
 title: Payment slip report for Europe
 description: This topic provides information about payment slip reports for Europe.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -66,3 +64,6 @@ After you set up the payment slip attachment format for sales invoices, free tex
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

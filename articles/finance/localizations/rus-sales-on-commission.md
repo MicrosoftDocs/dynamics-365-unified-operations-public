@@ -3,11 +3,9 @@
 title: Sales on commission
 description: This topic provides information about the functionality for sales on commission. 
 author: v-nadyuz
-manager: AnnBe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -251,3 +249,6 @@ Find more details in the following topics:
 
 - [Transactions through intermediary](rus-transactions-through-intermediary.md) 
 - [Purchases on commission](rus-purchases-on-commission.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: ER Use Document Management files in format outputs (Part 3 - Create format)
 description: This topic describes how to configure an Electronic reporting format to use Document Management files in ER output. (Part 3)
 author: NickSelin
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -124,3 +122,6 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 23. Click Save.
 24. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Import a database
 description: This topic explains how to import a database for Finance and Operations apps.
 author: LaneSwenka
-manager: AnnBe
 ms.date: 08/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -62,3 +60,6 @@ If you've used the Admin User Provisioning Tool on your environment to change th
 ## Steps to complete after a database import for environments that use Commerce functionality
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

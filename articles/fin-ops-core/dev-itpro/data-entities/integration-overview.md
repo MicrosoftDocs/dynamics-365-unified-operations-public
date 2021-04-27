@@ -4,11 +4,9 @@
 title: Choose a data integration strategy 
 description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 11/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -96,7 +94,7 @@ The following examples illustrate this point. You can't assume that the caller w
 | OData          | DbResourceContextSaveChanges         | DbResourceContextSaveChangesAsync |
 | Custom service | httpRequestGetResponse               | httpRequestBeginGetResponse |
 | SOAP           | UserSessionServiceGetUserSessionInfo | UserSessionServiceGetUserSessionInfoAsync |
-| Batch data API | ImportFromPackage                   | [BeginInvoke](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
+| Batch data API | ImportFromPackage                   | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
 
 Both OData and custom services are synchronous integration patterns, because when these APIs are called, business logic is immediately run. Here are some examples:
 
@@ -342,3 +340,6 @@ It's typical that the application calls out to an external web service that is h
 > If you can't modify the target service so that it uses TLS 1.2 or later, you can work around this issue by introducing a broker service and making a two-hop call, as shown in the following illustration.
 >
 > ![TLS requirements](./media/integration-tls.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

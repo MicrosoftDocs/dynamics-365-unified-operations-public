@@ -4,11 +4,9 @@
 title: Enable duplicate payment protection for payment connector
 description: This topic describes how to enable duplicate payment protection for a given payment connector.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -196,3 +194,6 @@ public GetTransactionByTransactionReferencePaymentTerminalDeviceResponse(Payment
 |---|---|
 | paymentInfo | The recovered payment transaction. This is identical to the payment response returned for any other payment request, such as **Authorize** or **Refund**. |
                                                                                                                                                                                                                                                                                                             
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

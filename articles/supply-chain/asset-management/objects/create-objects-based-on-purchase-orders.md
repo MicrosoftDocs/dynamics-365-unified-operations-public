@@ -3,12 +3,10 @@
 
 title: Create assets based on purchase orders
 description: This topic explains how you can create a list of asset items that can be used as a basis for creating assets for maintenance jobs in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -74,3 +72,6 @@ You can run a **Pending asset count** to check for pending assets. For example, 
 3. You can set up this job to run as a batch job, for example, once each day.
 
 **Caution:** If data is changed on a purchase order *after* you have created an asset based on the appertaining item, those changes will not be reflected on the asset.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

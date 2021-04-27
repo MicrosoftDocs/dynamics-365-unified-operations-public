@@ -4,11 +4,9 @@
 title: Create a hiring process template in Attract
 description: This topic provides information about how to create a hiring process template in Attract.
 author: andreabichsel
-manager: tfehr
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -76,3 +74,6 @@ Follow these steps to create a hiring process template.
     - To remove an activity, expand it, and then select the trash can button on the activity header.
 
 8. Select **Save**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

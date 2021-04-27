@@ -4,11 +4,9 @@
 title: Deploy a new environment
 description: This topic explains how to deploy a new environment using the self-service deployment experience.
 author: rashmansur
-manager: AnnBe
 ms.date: 12/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -64,3 +62,6 @@ You can delete an environment that is in the deployed state directly through the
 
 > [!IMPORTANT]
 > For existing customers using channel functionality in the cloud, to ensure continued and uninterrupted support for your business, we require that you [Initialize Retail Cloud Scale Unit](initialize-retail-channels.md) no later than January 31, 2020. There is no action required for customers who exclusively use Store Scale Unit. Contact your Microsoft FastTrack Solution Architect if you require an extension.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

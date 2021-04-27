@@ -4,11 +4,9 @@
 title: Respond to GDPR data requests resources
 description: This topic provides links to information that can help you respond to a data rights request under the General Data Protection Regulation (GDPR).
 author: rschloma
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -64,7 +62,7 @@ There are a number of resources to help you learn more about Compliance Manager 
 
 - [Compliance Manager preview is now available](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Compliance-Manager-Preview-is-now-available/ba-p/124662) (Tech Community, November 2017)
 
-- [Get to know the new Service Trust Portal](https://blogs.technet.microsoft.com/scottschnoll/2017/11/21/get-to-know-the-new-service-trust-portal/) (TechNet, November 2017) 
+- [Get to know the new Service Trust Portal](/archive/blogs/scottschnoll/get-to-know-the-new-service-trust-portal) (TechNet, November 2017) 
 
 - [Announcing Compliance Manager](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Manage-Your-Compliance-from-One-Place-Announcing-Compliance/ba-p/106493) (Tech Community, September 2017)
 
@@ -76,3 +74,6 @@ There are a number of resources to help you learn more about Compliance Manager 
 ## Additional resources
 
 For more information about the GDPR and the actions that your organization might need to take in response to a request for data, visit the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77b002ad-06f7-4a9b-8493-e18e2cb0577f&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Define HSN codes and Service Accounting Codes
 description: This topic explains how to define Harmonized System of Nomenclature (HSN) codes and Service Accounting Codes (SACs). This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -103,3 +101,6 @@ The following setup is required for the calculation of GST:
     When this charge code is selected for a transaction, the defined tax information is automatically entered, and GST is calculated accordingly.
 
     
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

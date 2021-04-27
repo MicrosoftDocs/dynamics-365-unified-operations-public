@@ -4,11 +4,9 @@
 title: View independent software vendor license status
 description: The topic explains how to view the status of an independent software vendor in Finance and Operations apps.
 author: Peakerbl
-manager: AnnBe
-ms.date: 01/26/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -30,6 +28,7 @@ ms.dyn365.ops.version: 10.0.17
 # View independent software vendor license status
 
 [!include [banner](../includes/banner.md)]
+
 
 This topic explains how you can view the status of independent software vendor (ISV) licenses for Finance and Operations apps, such as Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce.
 
@@ -53,3 +52,6 @@ For more information about the ISV licensing feature, see [Independent software 
 For more information about how to import ISV licenses into an on-premises deployment, see [Independent software vendor (ISV) licensing (on-premises)](../dev-tools/isv-licensing-on-prem.md).
 
 For more information about the configuration keys report, see [License codes and configuration keys report](license-codes-configuration-keys-report.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

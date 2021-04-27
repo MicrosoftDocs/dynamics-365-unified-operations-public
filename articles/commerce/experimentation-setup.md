@@ -4,11 +4,9 @@
 title: Set up an experiment
 description: This topic describes how to set up an experiment in a third-party service.
 author:  sushma-rao 
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -57,3 +55,6 @@ To set up your success metrics, follow these steps.
 
 ## Next step
 [Connect and edit an experiment](experimentation-connect-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Electronic reporting advanced formula editor
 description: This topic describes how the advanced formula editor can be used to configure expressions in Electronic reporting (ER) model mapping and format components.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -176,3 +174,6 @@ The editor is currently supported in the following web browsers:
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 - [Monaco editor](https://microsoft.github.io/monaco-editor)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

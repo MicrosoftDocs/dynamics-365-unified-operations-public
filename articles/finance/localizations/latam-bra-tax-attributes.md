@@ -4,11 +4,9 @@
 title: Tax attributes for Brazil
 description: This topic explains how to set up fiscal information for addresses, legal entities, customers, and vendors, and for products that are released to a Brazilian legal entity. This information is required for tax calculation, and for fiscal documents and other required statements that you submit from Fiscal books.
 author: sndray
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -101,3 +99,6 @@ The following fields on the **Product information** page are required for a Braz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

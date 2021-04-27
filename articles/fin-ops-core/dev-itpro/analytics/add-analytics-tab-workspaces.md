@@ -3,12 +3,10 @@
 
 title: Add analytics to workspaces by using Power BI Embedded
 description: This topic shows how to embed a Power BI report on the Analytics tab of a workspace. 
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -22,7 +20,7 @@ ms.reviewer: kfend
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: July 2017 update 
 ---
@@ -181,3 +179,6 @@ public static void initializeReportControl(
 | showFilterPane   | A Boolean value that indicates whether the filter pane should be shown (**true**) or hidden (**false**).     |
 | showNavPane      | A Boolean value that indicates whether the navigation pane should be shown (**true**) or hidden (**false**). |
 | defaultFilters   | The default filters for the Power BI report.                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

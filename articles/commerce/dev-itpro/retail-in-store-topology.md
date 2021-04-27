@@ -4,11 +4,9 @@
 title: Select an in-store topology
 description: This topic provides information about the various Dynamics 365 Commerce in-store topologies.
 author: rassadi
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -78,3 +76,6 @@ The Commerce Scale Unit (self-hosted) is a set of components that can be deploye
 For more information, see:
 - [Configure and install Commerce Scale Unit (self-hosted)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation)
 - [Commerce Scale Unit (self-hosted)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

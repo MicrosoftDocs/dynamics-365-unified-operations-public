@@ -4,11 +4,9 @@
 title: Create a new theme
 description: This topic describes how to create a new theme for a Microsoft Dynamics 365 Commerce online site. 
 author: samjarawan
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to create a new theme for a Microsoft Dynamics 365 Commerce online site.
-
-## Overview
 
 The Dynamics 365 Commerce online software development kit (SDK) lets you create custom themes that can be applied to your online site. They can also be shared across the sites in a single tenant if desired.
 
@@ -122,3 +118,6 @@ In a similar way, if you're mocking data for a custom module, you can add new mo
 [Add custom resources to your customization code](add-custom-resources.md)
 
 [Configure a development .env file](configure-env-file.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

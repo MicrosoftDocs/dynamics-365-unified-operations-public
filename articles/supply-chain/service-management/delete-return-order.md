@@ -4,11 +4,9 @@
 title: Delete a return order   
 description: Use the Delete return order form to delete multiple return orders.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -48,3 +46,6 @@ Use the **Delete return order** form to delete multiple return orders.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

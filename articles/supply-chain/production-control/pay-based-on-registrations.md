@@ -4,11 +4,9 @@
 title: Pay based on registrations
 description: This topic explains how pay is calculated based on worker registrations.
 author: johanhoffmann
-manager: tfehr
 ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -602,3 +600,6 @@ If the worker doesn't show up for work on a workday, and there is no planned abs
 - Auto insert absence
 
 When the daily registrations are calculated for a worker who is enabled for flexible hours, the absence code that is specified in the **Auto insert flex-** field is used as a default absence code. If the worker isn't enabled for flexible hours, the absence code that is specified in the **Auto insert absence** field is used. If a company has a combination of workers who are enabled for flexible hours and workers who aren't enabled for flexible hours, both parameters must be set up.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

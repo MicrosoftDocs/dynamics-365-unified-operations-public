@@ -4,11 +4,9 @@
 title: Trial balance with transactional detail report
 description: This topic describes the default report for trial balances. It also describes the building blocks that are associated with this report and how you can modify the report to fit your business requirements.
 author: v-kiarnd
-manager: AnnBe
 ms.date: 10/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -207,3 +205,6 @@ Depending on the type of transaction, such as an advanced ledger entry (ALE) or 
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

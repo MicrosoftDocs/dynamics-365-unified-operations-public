@@ -4,11 +4,9 @@
 title: Leave and absence management
 description: This topic provides an overview of the Leave and absence management module. 
 author: andreabichsel
-manager: tfehr
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -69,3 +67,6 @@ Leave and absence management provides the following features:
 - **Submit time-off requests.**
 
     Employees can submit time-off requests against their available hours. Requests can be simple single-day requests or multiple-day requests that include multiple leave and absence types. If a workflow isn't enabled, the requests are automatically approved. If a workflow is enabled, the approval can be automatic, or it can require sign-off, depending on the workflow configuration.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

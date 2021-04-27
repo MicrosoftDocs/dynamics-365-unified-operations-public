@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Talent (September 10, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent for September 10, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -58,7 +56,7 @@ For more information about how changes are published, see [Provision Talent](./p
 
 ### Platform update 29
 
-For more details about Platform update 29, see [Preview features in Dynamics 365 for Finance and Operations platform update 29 (October 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+For more details about Platform update 29, see [Preview features in Dynamics 365 for Finance and Operations platform update 29 (October 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
 
 ### New job base table available in data management framework (347202)
 
@@ -107,3 +105,6 @@ This release now provides the ability to apply checklists for employees that are
 This functionality is now available in sandbox environments. To turn this feature on, navigate to **System administration > Links > Setup > System parameters > Preview features**. Select **Enhanced worker form and navigation**. This will enable these changes for all users. You can turn this option off at any time.
 
 For more information, see [Streamlined employee entry and navigation](./streamlined-employee-entry.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

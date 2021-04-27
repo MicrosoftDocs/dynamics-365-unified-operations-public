@@ -4,11 +4,9 @@
 title: E-invoicing CFDI
 description: This topic walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method. 
 author: sndray
-manager: AnnBe 
 ms.date: 08/19/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -62,3 +60,6 @@ This topic walks you through creating and posting a customer invoice as an elect
 27. In the navigation pane, go to **Modules > Accounts receivable > Inquiries and reports > CFDI (electronic invoices)**.
 28. In the list, select the electronic invoice to review.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

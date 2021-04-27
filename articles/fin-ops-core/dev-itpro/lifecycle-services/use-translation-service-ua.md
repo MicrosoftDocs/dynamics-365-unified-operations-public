@@ -4,11 +4,9 @@
 title: Translate documentation files
 description: This topic explains how to translate a documentation file for a Microsoft Dynamics product or solution.
 author: kfend
-manager: AnnBe
 ms.date: 03/29/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -126,3 +124,6 @@ When you've finished reviewing and editing a .docx review file, you must regener
 You can repeat the regeneration process as many times as you require.
 
 For more information about the Microsoft Dynamics 365 Translation Service (DTS), see [Dynamics 365 Translation Service overview](./translation-service-overview.md). For information about how to translate a user interface (UI) file, see [Translate user interface files](./use-translation-service.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: TRANSLATE ER function
 description: This topic provides information about how the TRANSLATE Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 04/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -82,3 +80,6 @@ The `TRANSLATE` function replaces one character at a time. The function replaces
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

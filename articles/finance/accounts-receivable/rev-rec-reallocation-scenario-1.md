@@ -4,11 +4,9 @@
 title: Revenue recognition reallocation - Scenario 1
 description: This topic goes through a reallocation scenario where two sales orders are entered, but they are only confirmed. The same scenario will produce similar results if more than two sales orders are in a confirmed state.
 author: kweekley
-manager: aolson
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -63,3 +61,6 @@ To complete the reallocation, select **Process**. You're prompted for a posting 
 > To provide context about why these additional items are shown, you can add other columns to the grid, such as **Reallocation ID** and **Sales order**.
 > 
 > [![Additional columns on the Revenue price allocations page](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

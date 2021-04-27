@@ -4,11 +4,9 @@
 title: Delivery schedules
 description: Delivery schedules allow you to track order line quantity when you are using multiple deliveries for a single sales order, sales quotation, or purchase order.
 author: ShylaThompson
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -61,3 +59,6 @@ When you confirm sales quotations, the resulting sales orders show the whole del
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

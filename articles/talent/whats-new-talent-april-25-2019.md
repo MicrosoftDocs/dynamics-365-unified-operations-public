@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Talent (April 23, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for April 25, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -83,3 +81,6 @@ With this change, duplicates are detected as you enter name columns, and a statu
 
 ### Email support for alerts
 With Platform update 26 for Finance and Operations, users can create alert rules that automatically send email notifications to contacts when triggered by an event.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Income statement financial report
 description: This article describes the default report for income statements. It also describes the building blocks that are associated with this report. 
 author: jcart1106
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -75,3 +73,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Asset criticality types
 description: The topic explains asset criticality types in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -66,3 +64,6 @@ To set up criticality, you first create the criticality types that should be use
 - The criticality on a work order is recalculated every time that a work order line is added to or deleted from the work order.
 - If a work order contains several work order jobs, the highest criticality, according to the **Factor** field on the **Criticality types** page, is always used on the work order.
 - Generally, asset criticality can change over a period. Criticality can be affected by the purchase of new equipment, refurbishments, and so on. Consider reevaluating your asset criticalities at regular intervals (for example, once per year or every other year) to make sure that your criticality definitions match your current production setup.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

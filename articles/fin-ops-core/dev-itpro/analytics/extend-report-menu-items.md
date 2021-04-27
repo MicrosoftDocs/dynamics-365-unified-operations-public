@@ -3,12 +3,10 @@
 
 title: Extend report menu items to redirect user navigation
 description: This topic shows how to extend existing application menu items so that navigations are redirected to a custom reporting solution. 
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 266674
 ms.assetid: 7bf76862-e320-4a81-81a4-5bda7288e573
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 
@@ -65,3 +63,6 @@ The following walkthrough shows how to use menu item extensions to redirect user
 5. **Rebuild the solution, and deploy the custom report.**
 
 You've now finished extending the report menu item. Navigations to the standard menu item will now be redirected to your custom reporting solution.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

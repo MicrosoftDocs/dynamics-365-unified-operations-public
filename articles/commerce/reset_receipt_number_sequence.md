@@ -4,11 +4,9 @@
 title: Reset receipt numbers 
 description: This topic describes how to reset the receipt numbers that are used for various actions on a desired date (for example, the fiscal year or calendar year).
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-Commerce
 ms.technology: 
 
 # optional metadata
@@ -71,3 +69,6 @@ You can use the **Clear reset date** functionality to clear future reset dates. 
 
 > [!NOTE]
 > Depending on the reset date that you select, and the receipt format, you might have duplicate receipt numbers. Although the point of sale (POS) system can handle these situations, they increase the amount of time that is required to process returns, because sales associates must select among the duplicate receipts. Other complications that are related to data cleanup can occur if the duplicate receipts weren't a planned consequence. Therefore, we recommend that you use dynamic date characters (for example, **ddd**, **MM**, **DD**, and **YY**) to help prevent duplicate receipt numbers after a reset.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

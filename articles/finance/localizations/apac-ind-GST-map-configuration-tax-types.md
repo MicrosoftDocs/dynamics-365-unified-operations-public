@@ -4,11 +4,9 @@
 title: Map configuration tax types - Customs
 description: This topic explains how to map configuration tax types for customs.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -100,3 +98,6 @@ For each node for the tax component, on the **Reporting** tab, in the **Period**
 
 > [!NOTE]
 > Tax main accounts can be defined either at the level of the tax type or the level of the tax component. The value at the tax component level overrides the value at the tax type level. If the field is left blank for a posting type at the tax component level, the corresponding value from the tax type level is used for posting. We recommend that you set up the tax accounts at the tax component level per registration.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

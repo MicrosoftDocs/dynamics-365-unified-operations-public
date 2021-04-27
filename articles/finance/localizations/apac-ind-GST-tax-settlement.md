@@ -4,11 +4,9 @@
 title: Rule-based tax settlement
 description: This topic explains how to set up and work with rule-based tax settlements.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -96,3 +94,6 @@ To update challan information, select **Functions** \> **Challan information**.
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
 2. Select the settlement period, and then select **Sales tax payments**.
 3. Verify that the settlement for the selected registration for the period is successfully posted.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

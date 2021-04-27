@@ -4,11 +4,9 @@
 title: Set up master data for inclusion of deductible expenses for multiple posting layers
 description: This procedure walks you through creating fixed asset rules with required master data for inclusion of deductible expenses for multiple posting layers. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -68,3 +66,6 @@ This procedure walks you through creating fixed asset rules with required master
 12. Click Save.
 13. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,16 +4,14 @@
 title: Design the production floor execution interface
 description: This topic describes how to design the content of the user interface for each configuration.
 author: johanhoffmann
-manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: JmgProductionFloorExecutionConfiguration, JmgProductionFloorExecutionConfigurationTab
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -29,7 +27,6 @@ ms.dyn365.ops.version: Release 10.0.16
 # Design the production floor execution interface
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 You can design the content of the user interface for each configuration used by the production floor execution interface. For example, workers in one work cell might need to be able to open job instructions on the production floor, while in another work cell, instructions are not needed. In that case, two configurations should be created, one with a button for opening document attachments and one without this button.
 
@@ -50,7 +47,7 @@ The following elements are shown in the illustration:
 
 To create and configure a new tab, follow these steps:
 
-1. Go to **Production control &gt; Setup &gt; Manufacturing execution**.
+1. Go to **Production control \> Setup \> Manufacturing execution \> Configure production floor execution**.
 
 1. Select **Design tabs** on the Action Pane to open the **Design tabs** page.
 
@@ -72,7 +69,7 @@ To create and configure a new tab, follow these steps:
 
 After you designed all the tabs you need, you can associate them with a configuration.
 
-1. Go to **Production control &gt; Setup &gt; Configure production floor execution**.
+1. Go to **Production control \> Setup \> Manufacturing execution \> Configure production floor execution**.
 
     ![Configure production floor execution](media/pfe-config-prod-floor-execution.png "Configure production floor execution")
 
@@ -83,3 +80,6 @@ After you designed all the tabs you need, you can associate them with a configur
 1. Continue to add additional tabs as needed.
 
 1. Use the **Move up** and **Move down** buttons on the toolbar to arrange the tabs as needed. The tabs will be displayed from left to right in the order shown in the above screenshot (the tab at the top is shown on the left).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

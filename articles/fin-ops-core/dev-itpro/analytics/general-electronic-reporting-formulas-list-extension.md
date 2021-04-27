@@ -4,11 +4,9 @@
 title: Extend the list of Electronic reporting (ER) functions
 description: This article includes an overview of key tasks that you must complete to introduce a new function.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -119,3 +117,6 @@ The following guidance is intended to help you design your custom Electronic rep
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

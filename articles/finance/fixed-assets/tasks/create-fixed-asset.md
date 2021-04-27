@@ -4,11 +4,9 @@
 title: Create a fixed asset
 description: This topic explains how to create a new fixed asset record from the Fixed asset list page.
 author: moaamer
-manager: AnnBe 
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -57,3 +55,6 @@ If you didn't define the fixed asset number in the template of the Excel add-in,
 
 > [!WARNING]
 > The fixed asset record won't be deleted if transactions were posted to the associated book, or if the newly created fixed asset is entered on a journal line but not posted. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

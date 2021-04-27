@@ -2,11 +2,9 @@
 title: Project onboarding
 description: This topic provides information about the Project onboarding wizard in Microsoft Dynamics Lifecycle Services.
 author: vetrivicky
-manager: AnnBe
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,7 +38,7 @@ To access Project onboarding, sign in to LCS, and then, on the main menu, select
 > Project onboarding is available for implementation projects and must be completed before any of the Microsoft-managed environments are deployed. For more information about implementation projects, see [Lifecycle Services (LCS) for Finance and Operations apps customers](lcs-works-lcs.md#lcs-workspace-for-the-current-versions-of-the-finance-and-operations-apps).
 
 
-For more information about the onboarding process, see [Onboard an implementation project](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/onboard#lcs-implementation-project-workspace), and watch the [Finance and Operations: Onboarding to Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) TechTalk.
+For more information about the onboarding process, see [Onboard an implementation project](../../fin-ops/imp-lifecycle/onboard.md#lcs-implementation-project-workspace), and watch the [Finance and Operations: Onboarding to Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) TechTalk.
 
 
 ## Onboarding steps
@@ -57,7 +55,7 @@ The **Welcome** page provides general guidance and information that you will nee
 
 - Provide the overview information for the implementation project.
 - Describe the vision and goals for the project in a few sentences. This information will help Microsoft understand the goals that you want to achieve and how you define success for the project.
-- Provide the Partner MPN ID, which you can get from the implementation partner team. If a partner is not involved or not yet identified, choose the appropriate option in the implementation partner drop-down list. Note that providing accurate partner data is a pre-requisite for [FastTrack Program](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/commerce/toc.json) assignment. You could miss the opportunity for valuable services if you do not provide the correct partner information. Once partner identified, you need to update the MPN ID.
+- Provide the Partner MPN ID, which you can get from the implementation partner team. If a partner is not involved or not yet identified, choose the appropriate option in the implementation partner drop-down list. Note that providing accurate partner data is a pre-requisite for [FastTrack Program](/dynamics365/fasttrack/?toc=%2fdynamics365%2fcommerce%2ftoc.json) assignment. You could miss the opportunity for valuable services if you do not provide the correct partner information. Once partner identified, you need to update the MPN ID.
 - Specify the estimated number of user licenses after full roll-out including current licenses. This number can differ from the current license purchase. If no change is planned, provide the current user license count. If a license type isn't applicable, enter **0** (zero).
 - If your implementation project is a demo project, or if you're moving from another tenant, provide the details.
 
@@ -72,7 +70,7 @@ The **Welcome** page provides general guidance and information that you will nee
 - Set the **Primary contact for FastTrack** option to **Yes** for at least two users who have an active email address in the user list. If this option isn't set to **Yes** for any team member, FastTrack will reach out to all team members for implementation guidance during your implementation. If necessary, you should nominate at least one customer and one partner team member to be contacted by FastTrack.
 - Each team member will be assigned a project security role and an implementation role. The project security role is relevant to access to the LCS project workspace, and the implementation role is relevant to the individual team member's role on the implementation team. We highly recommend that you include representatives from the customer among the project team members who have a monitored email address.
 
-For more information, see [Configuring project security](configure-lcs-security.md#configuring-project-security) and [Roles in a Dynamics 365 implementation](https://docs.microsoft.com/learn/modules/get-started-implementation-project/01-2-roles).
+For more information, see [Configuring project security](configure-lcs-security.md#configuring-project-security) and [Roles in a Dynamics 365 implementation](/learn/modules/get-started-implementation-project/01-2-roles).
 
 ## Define milestone dates
 
@@ -109,3 +107,6 @@ The **Next Steps** page provides additional resources about the most critical as
 - You can complete Project onboarding only after all previous steps have been completed. If any previous steps haven't been completed, the **Complete onboarding** button won't be available.
 - Any skipped steps are marked with an asterisk (\*). You can also view any missing steps.
 - After you complete Project onboarding, you can continue to update information, such as project scope values.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

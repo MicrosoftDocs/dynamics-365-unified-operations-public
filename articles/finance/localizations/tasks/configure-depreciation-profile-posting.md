@@ -4,11 +4,9 @@
 title: Configure depreciation profile and posting profile for additional depreciation
 description: Use this procedure to learn how to configure a depreciation profile and a posting profile for special depreciation. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -63,3 +61,6 @@ This procedure was created using the demo data company JPMF.
     * Optional: configure the Main account and Offset account.  
     * You must click Edit before you can modify these account fields.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 for Finance and Operations platform update 21 (November 2018)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 21. This version was released in November 2018.
 author: tonyafehr
-manager: AnnBe
 ms.date: 01/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -38,7 +36,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the October '18 release notes](/dynamics365/release-plans/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ## Bug fixes
 
@@ -46,7 +44,7 @@ For information about the bug fixes included in each of the updates that are par
 
 ## Extensibility enhancements
 
-The Release notes contain information about [the second wave of platform extensibility enhancements for the October 2018 release](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility2), which are coming with Platform update 21. There are eleven enhancements detailed, with one of the highlights being the new ability to put the next call inside a chain of command method within a try-finally block to facilitate standard exception handling.
+The Release notes contain information about [the second wave of platform extensibility enhancements for the October 2018 release](/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility2), which are coming with Platform update 21. There are eleven enhancements detailed, with one of the highlights being the new ability to put the next call inside a chain of command method within a try-finally block to facilitate standard exception handling.
 
 ## TransientSqlConnectionError X++ exception
 
@@ -74,7 +72,7 @@ With sticky default actions off, which corresponds to how default actions work p
 
 With sticky default actions on, the default action hyperlink will be on the same column regardless of any personalizations applied to the form. This means that for this customer list, the **Account** column will continue to be the default action column regardless of whether the **Account** column is moved or hidden.
 
-![Sticky default actions off](media/stickyDAOn.png "With sticky default actions on, the Account column is still the default action column despite any personalizations.")
+![Sticky default actions on](media/stickyDAOn.png "With sticky default actions on, the Account column is still the default action column despite any personalizations.")
 
 With Platform update 21, the sticky default action feature is off, but a system administrator can turn it on for an environment. To turn on this feature, go to the **Client performance options** page under **System administration** and find the **Enable sticky default action** option.
 
@@ -87,3 +85,6 @@ With the release of Platform update 21, an additional level of control over when
 - Set the recurrence for anytime within the active period. For example, your administrator might select to run the batch jobs every hour, but only between the hours of 6:00 PM and 8:00 AM.
 
 For more information, see [Batch active period](../../dev-itpro/sysadmin/activeperiod.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

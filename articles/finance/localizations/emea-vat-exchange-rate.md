@@ -4,11 +4,9 @@
 title: VAT exchange rate overview
 description: This topic provides information about exchange rates for the VAT calculation. The exchange rate that is used for VAT calculation can differ from the exchange rate that is used for company accounting functions. When a document in a foreign currency is posted, any exchange rate differences that occur are posted to specific ledger accounts.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -63,3 +61,6 @@ After you've configured the system to use VAT exchange rates, if you must enter 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

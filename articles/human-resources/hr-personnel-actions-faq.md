@@ -4,11 +4,9 @@
 title: Personnel actions FAQ
 description: This article contains answers to questions that you might have if your organization uses personnel actions. Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -32,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Personnel actions FAQ
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article contains answers to questions that you might have if your organization uses personnel actions. Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks. Examples of tasks that might require personnel actions are when you create new positions, modify existing position values, hire new workers, transfer workers, change worker compensation, change position assignments, or terminate workers.
 
@@ -102,3 +102,6 @@ For example:
 - The effective date of a **Hire a worker** action is the date that you entered in the **Employment start date** field.
 - The effective date of a **Transfer a worker** action is the date that you entered in the **Assignment start date** field for the worker.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

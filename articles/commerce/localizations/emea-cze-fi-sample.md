@@ -5,11 +5,9 @@
 title: Fiscal registration service integration sample for Czech Republic
 description: This topic provides an overview of the fiscal integration sample for Czech Republic.
 author: josaw
-manager: annbe
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -415,3 +413,6 @@ The configuration file is located in the **Configuration** folder of the extensi
 
 - **Endpoint address** – The URL of the fiscal registration service.
 - **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

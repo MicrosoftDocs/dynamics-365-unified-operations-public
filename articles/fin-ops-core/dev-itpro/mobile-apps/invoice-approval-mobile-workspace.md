@@ -4,11 +4,9 @@
 title: Invoice approvals mobile workspace
 description: This topic provides information about the Invoice approvals mobile workspace.
 author: abruer 
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -91,3 +89,6 @@ Download and install the Finance and Operations mobile app:
 7.	Select **Attachments** to view any notes or files that are attached to the invoice.
 8.	On the **Invoice details** page, select the appropriate workflow action to complete your review process.
 9.	Select **Done**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

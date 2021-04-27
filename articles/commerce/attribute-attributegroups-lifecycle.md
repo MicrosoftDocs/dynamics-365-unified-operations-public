@@ -4,11 +4,9 @@
 title: Manage attributes and attribute groups
 description: This topic describes how to use attributes to provide a way to describe a product and its characteristics through user-defined fields. 
 author: ashishmsft
-manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -107,7 +105,7 @@ Here are the remaining attribute metadata options on the **Attributes** page:
 
 These options were originally intended to improve the search functionality for the online storefront. Although Commerce doesn't include the online storefront out of the box, it does include the eCommerce Publishing Software Development Kit (SDK). Customers can use this SDK to put products into a search index of their choice. Although the product data is imported, customers should still be able to distinguish searchable data, data that can be queried, and so on. In that way, they can build an optimal index to make sure that they index only attributes that, *in their opinion*, should be indexed.
 
-For information about the purpose of these remaining options, see [Overview of the search schema in SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
+For information about the purpose of these remaining options, see [Overview of the search schema in SharePoint Server 2013](/SharePoint/search/search-schema-overview).
 
 ## Filter settings for attributes
 
@@ -260,3 +258,6 @@ The default values of attributes can be overridden for individual products at th
 
     > [!NOTE]
     > If shared product media and shared product attributes are created, they apply to all the products.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

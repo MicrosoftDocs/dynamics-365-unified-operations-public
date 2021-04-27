@@ -4,11 +4,9 @@
 title: Modern POS (MPOS) architecture
 description: This topic describes the POS topology.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -52,3 +50,6 @@ The view, view-controller, and devices layers depend on the operating system (fo
 Cloud POS is a hosted version of Modern POS, and varies only in the way that it is rendered on specific devices or in specific browsers. Additionally, Modern POS supports offline mode and therefore a local CRT. Other native peripheral support is also specific to Modern POS.
 
 ![CloudPOS and MPOS](./media/cloudpos-and-mpos.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

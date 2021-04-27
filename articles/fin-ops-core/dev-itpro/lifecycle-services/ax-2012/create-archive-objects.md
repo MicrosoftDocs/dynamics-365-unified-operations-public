@@ -4,11 +4,9 @@
 title: Create archive objects for the Intelligent Data Management Framework
 description: This topic describes how to use archive objects.
 author: kfend
-manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -325,3 +323,6 @@ This section provides a walkthrough for working with an archive template.
 5.  Click **OK** in the dialog box to continue.
 6.  On the toolbar, click **Archive templates/Archive Objects**. You do not see **BankChequeTable\_object** in the list. Unlike Purge Objects, Archive Objects are saved with the same name, but with a new version. In this case, the **BankChequeTable** object is created with a version name **BankChequeTable\_object**. As always, the latest version is effective.
 7.  Notice that the icon of **BankChequeTable** is changed compared to earlier, which indicates that it is saved as an object.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

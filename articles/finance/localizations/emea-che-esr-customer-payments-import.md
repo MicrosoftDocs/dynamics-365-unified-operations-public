@@ -4,11 +4,9 @@
 title: ESR customer payments import
 description: This topic provides information about importing customer payments in the ESR format.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -58,3 +56,6 @@ After you import the payment file, payment journal lines are created and marked 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

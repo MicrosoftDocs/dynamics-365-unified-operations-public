@@ -4,11 +4,9 @@
 title: Manufacturing execution workloads for cloud and edge scale units
 description: This topic describes how manufacturing execution workloads work with cloud and edge scale units.
 author: cabeln
-manager: 
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -34,9 +32,10 @@ ms.dyn365.ops.version: 10.0.15
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
+> The manufacturing execution workload is available in preview at this point in time.
 > Some business functionality isn't fully supported in the public preview when workload scale units are used.
 
-In manufacturing execution, cloud and edge scale units deliver the following capabilities, even when edge units aren't connected to the hub:
+In manufacturing execution, scale units deliver the following capabilities:
 
 - Machine operators and shop floor supervisors can access the operational production plan.
 - Machine operators can keep the plan up to date by running discrete and process manufacturing jobs.
@@ -112,3 +111,7 @@ To review the history of manufacturing jobs that have been processed on a scale 
 ### Manufacturing hub to scale unit message processor job
 
 The _Manufacturing hub to scale unit message processor_ job processes data from the hub to the scale unit. This job is automatically started when the manufacturing execution workload is deployed. However, you can run it manually at any time by going to **Production control \> Periodic tasks \> Backoffice workload management \> Manufacturing hub to scale unit message processor**.
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

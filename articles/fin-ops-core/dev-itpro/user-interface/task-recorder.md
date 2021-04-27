@@ -4,11 +4,9 @@
 title: Task recorder resources
 description: This topic describes how to use Task recorder to record business processes.
 author: jasongre
-manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -475,3 +473,6 @@ After a business process recording has been completed by using Task recorder, a 
   -   Does not support displaying a "generic value" during the task guide. Currently displays the value that was used during recording.
 - Filter pane, which is the filter that pops out from the left side
   -   The task guide does not point to the individual elements within the Filter pane that need to be clicked on.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

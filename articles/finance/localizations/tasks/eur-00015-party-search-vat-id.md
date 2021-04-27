@@ -4,11 +4,9 @@
 title: EUR-00015 Party search using VAT ID
 description: This procedure shows how to complete a party search using a registration ID. 
 author: v-oloski
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -44,3 +42,6 @@ This procedure applies to all European countries/regions. The procedure was crea
 7. Click Find.
     * All parties with that registration ID will be displayed.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Manage a data source for the cost accounting ledger
 description: Use this procedure to manage the general ledger data source for a cost accounting ledger. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 06/27/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -50,3 +48,6 @@ Use this procedure to manage the general ledger data source for a cost accountin
 14. In the Posting layer field, select Current.
 15. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

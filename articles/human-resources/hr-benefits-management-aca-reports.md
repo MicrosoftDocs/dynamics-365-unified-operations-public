@@ -4,11 +4,9 @@
 title: Generate Affordable Care Act reports in Benefits management
 description: This topics describes how Benefits management helps you track information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate.
 author: andreabichsel
-manager: tfehr
 ms.date: 12/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Generate ACA reports in Benefits management
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Benefits management helps you track information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate. Like the ACA reporting capability in the old **Benefits** workspace, this functionality applies only to legal entities in the United States.
 
@@ -213,3 +213,6 @@ Coverage information for the employee's dependents is shown.
 
 > [!NOTE]
 > The page shows only benefits plans that are marked as **ACA reportable**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

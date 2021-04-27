@@ -4,11 +4,9 @@
 title: Extend Commerce Data Exchange - Real-time Service
 description: This topic explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class.
 author: mugunthanm
-manager: AnnBe
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -172,3 +170,6 @@ if(request.RequestContext.Runtime.Configuration.IsMasterDatabaseConnectionString
 ```
 
 -   If the connection to the CDX method failed, an error message might display saying that the operation cannot be performed if there is no connectivity to HQ or that you need to have mitigation logic if this operation needs to work if there is no connectivity to the CDX method.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Brazil taxes overview
 description: Microsoft Dynamics 365 Finance calculates Brazilian taxes based on the tax type that you specify for the sales tax code. 
 author: sndray
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -107,3 +105,6 @@ For sales transactions with taxation codes that have a fiscal value of **1. with
 -   [Brazilian withholding taxes](tasks/br-00009-brazilian-withholding-taxes.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

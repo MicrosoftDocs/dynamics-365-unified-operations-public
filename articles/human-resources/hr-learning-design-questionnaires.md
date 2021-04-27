@@ -4,11 +4,9 @@
 title: Create questionnaires
 description: This article describes the process for creating a questionnaire. The first step is to design the questionnaire. When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated. 
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Create questionnaires
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article describes the process for creating a questionnaire. The first step is to design the questionnaire. When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated. 
 
@@ -241,3 +241,5 @@ To use conditional questions to create a question hierarchy in a questionnaire, 
 A legal entity offers both items and services to its customers. As typically occurs in such cases, some customers purchase only items, some purchase only services, and some purchase both items and services. Therefore, when the legal entity distributes a customer satisfaction survey, it applies a conditional structure to the questionnaire, so that customers who purchase only services don't have to answer questions about items. 
 
 Alternatively, you set up a questionnaire so that if a respondent selects answer A for question 1, question 2 is next in the question sequence. However, if the respondent selects answer B for question 1, question 5 is next.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Troubleshoot partial releases and partial shipments
 description: This topic describes how to fix common issues that you might encounter while you work with partial releases and partial shipments in Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -45,3 +43,6 @@ For example, a sales order has two items: one for delivery and one for pickup. B
 ### Issue resolution
 
 The release status applies only to order lines where the items are enabled for warehouse management. Therefore, the release status remains *Partially released* in this scenario. Microsoft has evaluated this issue and has determined that it's a feature limitation. An extension could be added as part of the packing slip and invoicing process to update the release status.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

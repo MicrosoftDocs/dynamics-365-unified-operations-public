@@ -4,11 +4,9 @@
 title: Configure and install Retail hardware station
 description: This topic explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 author: jashanno
-manager: AnnBe
 ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -211,3 +209,6 @@ You can use Control Panel in Microsoft Windows to uninstall Retail hardware stat
 2. In Control Panel, select **Programs** &gt; **Uninstall a program**. The **Programs and Features** window opens.
 3. Select **Microsoft Dynamics 365 for Retail hardware station**, and then select **Uninstall** above the list of programs.
 4. Wait for the uninstaller to finish removing the program.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

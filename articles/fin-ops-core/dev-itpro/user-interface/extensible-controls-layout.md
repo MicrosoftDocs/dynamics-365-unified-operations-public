@@ -4,11 +4,9 @@
 title: Extensible control layout guidelines
 description: This article provides guidelines that you should follow when you specify the layout and sizing of extensible controls.
 author: jasongre
-manager: AnnBe
 ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -118,3 +116,6 @@ If these classes don't appear as you expected, examine the usage of your binding
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

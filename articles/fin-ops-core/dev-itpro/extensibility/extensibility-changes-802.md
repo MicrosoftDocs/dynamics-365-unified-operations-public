@@ -1,18 +1,12 @@
 ---
-# required metadata
-
 title: Extensibility changes in Dynamics 365 for Finance and Operations update 8.0.2
 description: This topic lists the extensibility features that were released in Dynamics 365 for Finance and Operations update 8.0.2.
 author: FrankDahl
-manager: AnnBe
 ms.date: 06/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -94,3 +88,6 @@ In addition to the refactored methods, the following extensibility enhancements 
 - Support for extensions to map: CustVendTrans
 - Support for extensions to map: CustVendTransOpen
 - Support extensibility for SQL statement:  PriceDiscAdmCheckPost.postJournal
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

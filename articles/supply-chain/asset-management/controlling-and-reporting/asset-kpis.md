@@ -3,12 +3,10 @@
 
 title: Asset KPIs
 description: This topic explains asset KPIs in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -94,3 +92,6 @@ The figure below shows a screenshot of a KPI calculation for four assets.
 - You can multi-select several assets in **All assets** and click the **Asset KPIs** button on the **General** tab. Then click **OK** in the **Calculate asset KPIs** dialog to calculate KPIs for the selected assets.  
 - Results from a KPI calculation may or may not include [maintenance downtime registrations](../work-orders/maintenance-downtime.md), depending on the setup and use of maintenance downtime reason codes. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

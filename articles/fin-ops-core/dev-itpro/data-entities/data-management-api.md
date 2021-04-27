@@ -4,11 +4,9 @@
 title: Data management package REST API
 description: This topic describes the Data management framework's package REST API.
 author: Sunil-Garg
-ms.date: 06/18/2020
-manager: AnnBe
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -31,7 +29,7 @@ ms.dyn365.ops.version: Platform update 5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the Data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate by using data packages. The REST API can be used with both cloud deployments and on-premises deployments. For on-premises deployments, this functionality is currently available for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with platform update 12 (November 2017) (version 7.2), build 7.0.4709.41184, and later.
+This topic describes the Data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate by using data packages. The REST API can be used with both cloud deployments and on-premises deployments. 
 
 Although on-premises support has been added, API names haven't been changed. Therefore, Microsoft can keep a single API set for both cloud deployments and on-premises deployments.
 
@@ -46,7 +44,6 @@ Two APIs support file-based integration scenarios: the Data management framework
 | Transformation      | Support for Extensible Stylesheet Language Transformations (XSLT) if the data file is in XML format | Transformations that are external to the system |
 | Supported protocols | SOAP and REST | REST |
 | Service type        | Custom service | Open Data Protocol (OData) action |
-| Availability        | Microsoft Dynamics Finance and Operations (February 2016) and later. Note: This is not supported with the on-premises version of Dynamics 365 Finance and Operations. | Microsoft Dynamics 365 for Finance and Operations with platform update 5 (March 2017) and later |
 
 If you decide that the recurring integrations API meets your requirement better than the Data management framework's package API, see [Recurring integrations](recurring-integrations.md). The rest of this topic discusses the Data management framework's package API.
 
@@ -247,7 +244,7 @@ HTTP/1.1 200 OK
 The **ImportFromPackage** API is used to initiate an import from the data package that is uploaded to the Blob storage that is associated with your implementation. For on-premises deployments, the import will be initiated from the local storage that the file was uploaded previously to.
 
 > [!NOTE]
-> Starting in Platform update 12, the **ImportFromPackage** API supports composite entities. However, the limitation is that there can be only one composite entity in a package.
+> The **ImportFromPackage** API supports composite entities. However, the limitation is that there can be only one composite entity in a package.
 
 ```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage
@@ -457,3 +454,6 @@ The following illustration shows how the Data management package methods can be 
 ![Data package file export that uses the Data management package methods](./media/data-package-export.png)
 
 A sample console application that showcases the data import and data export methods is available on GitHub. For more information, go to <https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/FileBasedIntegrationSamples/ConsoleAppSamples>.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

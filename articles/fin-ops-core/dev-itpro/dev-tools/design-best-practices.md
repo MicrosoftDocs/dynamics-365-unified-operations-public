@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Design principles and best practices for data entities
 description: This article describes design principles for data entities.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 26421
 ms.assetid: b41f6fc4-7883-4987-8160-374576b11d16
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Design principles and best practices for data entities
@@ -106,3 +91,6 @@ A data entity should provide a holistic object that encapsulates the relevant bu
 ### Number of columns in a data entity
 Note that Microsoft Excel based import/export supports a maximum of 255 columns. If it is expected for an entity to be able to export/import more than 255 columns, then a non-Excel format must be planned or the entity should have less than or equal to 255 columns.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

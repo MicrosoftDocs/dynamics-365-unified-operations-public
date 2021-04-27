@@ -4,11 +4,9 @@
 title: Electronic reporting (ER) destinations
 description: This topic provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: nselin
-manager: AnnBe
-ms.date: 01/21/2021
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -64,7 +62,7 @@ The default behavior for an ER format configuration depends on the execution typ
 
 In the **Intrastat Report** dialog box, on the **Run in the background** FastTab, if you set the **Batch processing** option to **No**, an ER format is run immediately in interactive mode. When this execution is successfully completed, a generated outbound document is made available for download.
 
-If you set the **Batch processing** option to **Yes**, an ER format is run in [batch](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) mode. The appropriate batch job is created, based on the parameters that you specify on the **Run in the background** tab of the **ER parameters** dialog box.
+If you set the **Batch processing** option to **Yes**, an ER format is run in [batch](../sysadmin/batch-processing-overview.md) mode. The appropriate batch job is created, based on the parameters that you specify on the **Run in the background** tab of the **ER parameters** dialog box.
 
 > [!NOTE]
 > The job description informs you about the run of an ER format mapping. It also contains the name of the ER component that is run.
@@ -77,7 +75,7 @@ You can find information about this job in several places:
 - Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs** to check the status of the scheduled job and the execution results of the completed job. When job execution is successfully completed, select **Show files** on the **Electronic reporting jobs** page to get a generated outbound document.
 
     > [!NOTE]
-    > This document is stored as an attachment of the current job record and is controlled by the [Document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) framework. The [document type](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) that is used to store ER artifacts of this type is configured in the [ER parameters](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+    > This document is stored as an attachment of the current job record and is controlled by the [Document management](../../fin-ops/organization-administration/configure-document-management.md) framework. The [document type](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) that is used to store ER artifacts of this type is configured in the [ER parameters](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 - On the **Electronic reporting jobs** page, select **Show files** to view the list of any errors and warnings that were generated during job execution.
 
@@ -171,12 +169,14 @@ To make the PDF conversion option available in the current Finance instance, ope
 
 ### Applicability
 
-The PDF conversion option can be turned on only for file components that are used to generate output in Office (Excel or Word) format (**Excel file**). When this option is turned on, output that is generated in Office format is automatically converted to PDF format.
-
-### Limitations
+The PDF conversion option can be turned on only for file components that are used to generate output in Office (Excel or Word) format (**Excel file**). When this option is turned on, output that is generated in Office format is automatically converted to PDF format. In versions of Finance **before version 10.0.18**, you can turn on this option only for components of the **Excel\\File** type that are used to generate output in [Excel](er-fillable-excel.md) or [Word](er-design-configuration-word.md) format. However, in **version 10.0.18 and later**, you can also turn on this option for components of the **Common\\File** type.
 
 > [!NOTE]
-> This feature is a preview feature and is subject to the terms of use that are described in [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://go.microsoft.com/fwlink/?linkid=2105274).
+> Pay attention to the warning message that you receive when you turn on the PDF conversion option for an ER component of the **Common\\File** type. This message informs you that there is no way to guarantee, at design time, that the selected file component will expose the content in PDF format or the PDF-convertible content at runtime. Therefore, you should turn on the option only if you're sure that the selected file component was configured to expose the content in PDF format or the PDF-convertible content at runtime.
+> 
+> If you turn on the PDF conversion option for a component of the **Excel\\File** type, if that component exposes content in a format other than PDF, and if the exposed content can't be converted to PDF format, an exception will occur at runtime. The message that you receive informs you that the generated content can't be converted to PDF format.
+
+### Limitations
 
 The PDF conversion option is available only for cloud deployments.
 
@@ -246,3 +246,6 @@ Your format must first be available in the ER configurations. If this prerequisi
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Configure action-dependent ER destinations](er-action-dependent-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

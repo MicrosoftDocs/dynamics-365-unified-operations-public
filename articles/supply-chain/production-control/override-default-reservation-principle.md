@@ -4,16 +4,14 @@
 title: Override the default reservation principle for materials in production
 description: This topic describes how to set a default reservation principle for each item model group, so that different reservation principles can automatically be applied for each item that is part of a production bill of materials (BOM) or batch order formula.
 author: johanhoffmann
-manager: tfehr
 ms.date: 12/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+ms.search.form: InventModelGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -30,7 +28,7 @@ ms.dyn365.ops.version: 10.0.17
 # Override the default reservation principle for materials in production
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 The *Override default production reservation* feature lets you set a default reservation principle for each item model group. Therefore, different reservation principles can automatically be applied for each item that is part of a production bill of materials (BOM) or batch order formula. You can select whether each item model group should override the default reservation principle that is set for an order, and what reservation principle should be used instead (*manual*, *estimation*, *scheduling*, *release*, or *start*).
 
@@ -43,11 +41,11 @@ For example, if you have raw materials or ingredients that require pick work, BO
 Before you can use the feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Production control*
-- **Feature name:** *Override default production reservation*
+- **Feature name:** *(Preview) Override default production reservation*
 
 ## Assign a production reservation policy to an item model group
 
-1. Go to **Cost management &gt; Inventory accounting policies setup &gt; Item model groups**.
+1. Go to **Cost management \> Inventory accounting policies setup \> Item model groups**.
 1. Create or select an item model group.
 1. On the **Inventory policies** FastTab, select the **Override item production reservation** check box.
 1. In the **Reservation** field, select the reservation principle for items that belong to the selected model group. (Those items include items that are on a BOM or formula line.)
@@ -63,3 +61,6 @@ Before you can use the feature, it must be turned on in your system. Admins can 
 A bulk lubricant material is produced in a 1,000-liter mixer. After the bulk material is ready, it's pumped out to several filling stations, where bottles of different sizes are filled. After filling is completed, the bottles are packed into boxes. Those boxes are then packed onto pallets.
 
 In this scenario, a batch order to make 1,000 liters of bulk material is created. (This order is the bulk order.) When this batch order is completed, it's reported as finished to the material input location of the filling stations. A batch order to fill and pack each bottle size is then created. (These orders are the pack orders.) The pack orders have a formula that consists of the bulk material, an empty bottle, a label, and other packing materials. Because the bulk material flows directly from the mixer tank to the filling stations, no warehouse work is required to pick this ingredient, and the bulk material is consumed directly from the input location. Therefore, the reservation principle is set to *manual*. The other materials are staged to the filling station by pick work. Therefore, the reservation principle for these lines is set to *release*, for example, so that the reservation automatically occurs when the pack order is released.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

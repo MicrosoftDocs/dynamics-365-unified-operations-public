@@ -4,11 +4,9 @@
 title: E-commerce site overview
 description: This topic provides an overview of the support for e-commerce sites in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-manager: AnnBe
 ms.date: 11/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -124,3 +122,6 @@ For information about how to manage site content, see the following topics:
 [Enable location-based store detection](enable-store-detection.md)
 
 [Set up custom pages for user logins](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

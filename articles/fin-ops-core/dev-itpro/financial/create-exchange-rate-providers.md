@@ -4,11 +4,9 @@
 title: Create exchange rate providers
 description: This topic describes how to set up an exchange rate provider. 
 author: RobinARH
-manager: AnnBe
 ms.date: 05/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -512,3 +510,6 @@ Because there are no limits to the method that the exchange rate providers use t
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

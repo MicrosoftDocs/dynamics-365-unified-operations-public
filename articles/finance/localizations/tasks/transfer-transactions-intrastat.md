@@ -4,11 +4,9 @@
 title: Transfer transactions to the Intrastat
 description: This procedure walks you through how to set up Intrastat parameters and transfer transactions to Intrastat. 
 author: Anasyash
-manager: AnnBe 
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -155,3 +153,6 @@ This procedure walks you through how to set up Intrastat parameters and transfer
     
 Review transferred data, including country\region of destination/dispatch, country of origin, weight, quantity, quantity in additional units, commodity, transaction code, invoice amounts and statistical amounts. You can modify data if necessary.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

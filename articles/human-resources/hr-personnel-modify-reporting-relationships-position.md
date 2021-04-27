@@ -4,11 +4,9 @@
 title: Modify reporting relationships for a position
 description: This procedure shows how to change the reporting relationship for an employee. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -27,6 +25,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Modify reporting relationships for a position
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -47,3 +47,6 @@ This procedure shows how to change the reporting relationship for an employee. T
 12. In the Reports to position field, enter or select a value.  Example:  000437
 13. Click Save.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

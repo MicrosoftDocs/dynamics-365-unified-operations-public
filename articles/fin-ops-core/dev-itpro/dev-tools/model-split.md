@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Model split
 description: This topic explains the split of the stack into three main models -  the Application Platform, the Application Foundation, and the Application Suite.
 author: maertenm
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 26941
 ms.assetid: feaa09c5-efc7-4594-921e-b42536b18852
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Model split
@@ -137,4 +122,4 @@ There are currently support code extensions, table extensions, form extensions, 
 
 
 
-
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

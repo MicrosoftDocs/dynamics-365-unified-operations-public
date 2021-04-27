@@ -4,11 +4,9 @@
 title: When to reset a data mart
 description: This topic lists the circumstances that might be improved by resetting a data mart and circumstances in which resetting your data mart is unlikely to help.
 author: jinniew
-manager: AnnBe
 ms.date: 12/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -60,3 +58,6 @@ There are some circumstances when we don't recommend resetting a data mart. Thes
 > The following points specify two things that resetting a data mart will *not* do. <br>
 > - Resets do not clear report designs. <br>
 > - Resets do not clear company data or user data unless selected.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

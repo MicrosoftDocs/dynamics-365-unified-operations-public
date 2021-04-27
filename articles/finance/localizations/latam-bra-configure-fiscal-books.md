@@ -4,11 +4,9 @@
 title: Configure fiscal books
 description: This topic explains how to configure fiscal books. Fiscal books help you consolidate fiscal and statutory books into electronic files, so that you can fulfill the requirements under SPED.
 author:  v-gonode
-manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -175,3 +173,6 @@ On the **Fixed asset groups** page, you can set up a fixed asset group.
 > The fields for steps 8, 9, and 10 aren't available when version 3.0 is selected. This information has been changed and is included in the configuration of the fiscal organization.
 
 On the **Accountant details** page, you can set up accountant information for tax booking.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

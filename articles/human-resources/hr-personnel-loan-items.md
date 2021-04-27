@@ -4,11 +4,9 @@
 title: Manage items that are lent to workers
 description: Loan items are records that help managers track the physical items that your company lends to its workers. 
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Manage items that are lent to workers
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Loan items are records that help managers track the physical items that your company lends to its workers. 
 
@@ -60,3 +60,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

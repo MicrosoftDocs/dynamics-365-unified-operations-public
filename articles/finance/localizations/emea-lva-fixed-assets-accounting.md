@@ -4,11 +4,9 @@
 title: Fixed assets accounting for tax purposes
 description: This topic provides information about the tax Depreciation functionality for Latvia. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -86,3 +84,6 @@ The **Tax depreciation** report provides Latvian users with tax reporting that i
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

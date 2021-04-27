@@ -4,11 +4,9 @@
 title: Create exchange rate providers in Finance and Operations version 8.0
 description: This topic explains how to set up an exchange rate provider in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).
 author: aolson
-manager: AnnBe
 ms.date: 09/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -482,3 +480,6 @@ Because there are no limits to the methods that exchange rate providers use to g
 - **Providers that retrieve exchange rates from other exchange rate types** – If you implement this scenario, it will enable synchronization of exchange rates among various exchange rate types. This functionality can be useful in situations where many exchange rate types exist, because it will help maintain isolation between different ledgers.
 - **Providers that use Extensible Stylesheet Language Transformations (XSLT) to transform any format for an exchange rate service into an instance of the ExchangeRateResponse class** – If you implement this scenario, users can add the XSLT transform that is required for their exchange rate service, and the application will support the service. Provider-specific code isn't required.
 - **Some exchange rate provider services charge for every rate that is consumed** – Consider combining the first idea in this list with a limit on the number of rates that you retrieve from the service. This functionality can be useful for scenarios where you're charged for each rate that is consumed from the service.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

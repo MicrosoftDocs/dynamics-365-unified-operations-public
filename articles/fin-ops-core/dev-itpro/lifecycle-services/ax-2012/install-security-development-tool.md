@@ -4,11 +4,9 @@
 title: Install the Security Development Tool
 description: This topic provides information about how to install the Security Development Tool. 
 author: kfend
-manager: AnnBe
 ms.date: 07/26/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -58,7 +56,7 @@ This section lists the procedures required to install and configure the Security
 
 ### Import and compile the tool
 
-1.  Drain the client connections from the instance of Application Object Server (AOS) that you are working with. For more information, see [Drain users from an AOS](https://technet.microsoft.com/library/hh433538.aspx).
+1.  Drain the client connections from the instance of Application Object Server (AOS) that you are working with. For more information, see [Drain users from an AOS](/dynamicsax-2012/appuser-itpro/drain-users-from-an-aos).
 2.  Go to **Administrative Tools**, click **Services**, and stop the **Microsoft Dynamics AX Object Server 6.0** service.
 3.  Use Windows PowerShell or AXUtil to import the **SecurityDevelopmentTool.axmodel** model into the Microsoft Dynamics AX AOT.
     1.  On the Start menu, point to **All Programs**, point to **Administrative Tools**, and then click **Microsoft Dynamics AX Management Shell**.
@@ -68,7 +66,7 @@ This section lists the procedures required to install and configure the Security
         Install-AXModel -File “C:\Program Files (x86)\Microsoft\Security Development Tool\SecurityDevelopmentTool.axmodel”
         ```
 
-        For more information, see [How to: Export and Import a Model](https://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx).
+        For more information, see [How to: Export and Import a Model](/dynamicsax-2012/developer/how-to-export-and-import-a-model).
 
 4.  Start the Microsoft Dynamics AX Object Server 6.0 service.
 5.  Start the Microsoft Dynamics AX client. The Model store has been modified dialog box opens.
@@ -80,3 +78,6 @@ This section lists the procedures required to install and configure the Security
     |-------------------------------|------------------------------------|
     | SysSecRoleEntryPointDeveloper | SysContextMenu (AOT Add-Ins)       |
     | SysSecRoleEntryPoint          | System AdministrationSetupSecurity |
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

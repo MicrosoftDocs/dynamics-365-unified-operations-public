@@ -1,18 +1,12 @@
 ---
 
-# required metadata
-
 title: Add values to enums through extension
 description: This topic explains how to add new values to an enum by extending the enum.
 author: smithanataraj
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -65,3 +59,6 @@ There are two ways to extend an enum:
     ![Create an extension enum (method 2)](media/AddEnum03.png)
 		
 The enum extension is created in the selected model. You can add new enum values to this extension.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

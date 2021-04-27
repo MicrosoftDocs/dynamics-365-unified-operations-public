@@ -4,11 +4,9 @@
 title: Localize Commerce extension resources and label files
 description: This topic explains how to modify POS UI labels, POS messages, receipt labels, and error messages for Commerce Scale Unit or CRT.
 author: mugunthanm
-manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -128,3 +126,6 @@ throw new CommerceException("Microsoft_Dynamics_Commerce_CustomId1", ExceptionSe
                         LocalizedMessageParameters = new object[] { }
                     };
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

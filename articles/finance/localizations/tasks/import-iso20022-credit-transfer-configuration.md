@@ -4,11 +4,9 @@
 title: Import ISO20022 credit transfer configuration
 description: This procedure shows how to import a vendor payment electronic reporting configuration. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -47,3 +45,6 @@ This is the first of five tasks, that together illustrate the vendor payment pro
     * If the Import button is not available, it means that the configuration has  already been imported.  
 9. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

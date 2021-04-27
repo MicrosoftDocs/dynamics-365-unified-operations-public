@@ -4,11 +4,9 @@
 title: Show discounts in POS 
 description: This topic explains how Microsoft Dynamics 365 Commerce helps sales associates learn about promotions and how they can be used for cross-sell and upsell motions.
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-Commerce
 ms.technology: 
 
 # optional metadata
@@ -72,3 +70,6 @@ The following illustration shows the logic that is used when the discount concur
 The following illustration shows the logic that is used when the discount concurrency control is set to **Best price only within priority, always compound across priority**.
 
 ![Logic for Best price only within priority, always compound across priority](./media/Model_2.png "Logic for Best price only within priority, always compound across priority").
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

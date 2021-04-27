@@ -4,11 +4,9 @@
 title: Set up Form I-9 document types
 description: This procedure shows how to view and set up document types that are used for I-9 verification. 
 author: ShielaSogge
-manager: AnnBe 
 ms.date: 11/01/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -47,3 +45,6 @@ This procedure shows how to view and set up document types that are used for I-9
 9. Select the agency that issued the document type. Example: Province/territory
 10. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

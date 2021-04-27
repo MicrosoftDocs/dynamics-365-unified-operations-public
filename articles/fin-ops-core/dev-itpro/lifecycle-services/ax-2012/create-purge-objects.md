@@ -4,11 +4,9 @@
 title: Create purge objects for the Intelligent Data Management Framework
 description: This topic describes how to create IDMF purge objects that define hierarchical relationships among application tables in Microsoft Dynamics AX.
 author: kfend
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -205,3 +203,6 @@ This section provides a walkthrough for working with a purge template.
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

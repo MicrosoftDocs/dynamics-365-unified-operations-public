@@ -4,11 +4,9 @@
 title: Rename a local development (VHD) environment
 description: This topic explains how to rename a local environment so that you can access a Microsoft Azure DevOps project and install One Version service updates.
 author: MargoC
-manager: AnnBe
 ms.date: 07/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.custom: 25911
 ms.assetid: 4f5ff29b-9ae5-4ba2-8b6e-1e5d94e004b3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -98,3 +96,6 @@ Open a Microsoft Windows PowerShell command window as an admin, and run the foll
 cd <update folder>\MROneBox\Scripts\Update
 .\ConfigureMRDatabase.ps1 -NewAosDatabaseName AxDB -NewAosDatabaseServerName new_name -NewMRDatabaseName ManagementReporter -NewAxAdminUserPassword AOSWebSite@123 -NewMRAdminUserName MRUser -NewMRAdminUserPassword MRWebSite@123 -NewMRRuntimeUserName MRUSer -NewMRRuntimeUserPassword MRWebSite@123 -NewAxMRRuntimeUserName MRUser -NewAxMRRuntimeUserPassword MRWebSite@123
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

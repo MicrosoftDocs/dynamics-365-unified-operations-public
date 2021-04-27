@@ -4,11 +4,9 @@
 title: Location license plate positioning
 description: License plate location positioning lets you see where a license plate is located in a multi-pallet location, such as a location that uses double-deep pallet racking.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -283,3 +281,6 @@ Now that the *Location license plate positioning* feature has been set up, and t
     ![Position 1 location](media/LocationLicensePlatePositioning.png "Position 1 location")
 
 1. Enter the license plate ID that you created for the location, and then follow the prompts to pick the sales order.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

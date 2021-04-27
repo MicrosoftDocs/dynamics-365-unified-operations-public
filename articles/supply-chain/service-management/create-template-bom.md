@@ -4,11 +4,9 @@
 title: Create a template BOM   
 description: You can create a template BOM by using a variety of methods. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -37,9 +35,9 @@ You can create a template BOM by using any of the following methods. For all met
 
 ## Create a template BOM manually
 
-1.  Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.
+1.  Go to **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.
 
-2.  Press CTRL+N to open the **Create template BOM** form.
+2.  Select **New** to open the **Create template BOM** form.
 
 3.  Under **Copy BOM lines from reference**, select the **Manual** option.
 
@@ -49,15 +47,15 @@ You can create a template BOM by using any of the following methods. For all met
 
 6.  In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.
 
-7.  Click **OK**.
+7.  Select **OK**.
 
 A new, blank template BOM is created.
 
 ## Create a template BOM based on another template BOM
 
-1.  Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.
+1.  Select **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.
 
-2.  Press CTRL+N to open the **Create template BOM** form.
+2.  Select **New** to open the **Create template BOM** form.
 
 3.  Under **Copy BOM lines from reference**, select the **Template BOM** option.
 
@@ -67,15 +65,15 @@ A new, blank template BOM is created.
 
 6.  In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.
 
-7.  Click **OK**.
+7.  Select **OK**.
 
 A new template BOM is created by using lines that correspond to the lines in the original template BOM.
 
 ## Create a template BOM based on an item BOM
 
-1.  Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.
+1.  Select **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.
 
-2.  Press CTRL+N to open the **Create template BOM** form.
+2.  Select **New** to open the **Create template BOM** form.
 
 3.  Under **Copy BOM lines from reference**, select **BOM**.
 
@@ -85,15 +83,15 @@ A new template BOM is created by using lines that correspond to the lines in the
 
 6.  In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.
 
-7.  Click **OK**.
+7.  Select **OK**.
 
 A new template BOM is created by using lines that correspond to the lines of the BOM listed in **Bills of materials**.
 
 ## Create a template BOM based on a production BOM
 
-1.  Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.
+1.  Select **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.
 
-2.  Press CTRL+N to open the **Create template BOM** form.
+2.  Select **New** to open the **Create template BOM** form.
 
 3.  Under **Copy BOM lines from reference**, select **Production**.
 
@@ -103,7 +101,7 @@ A new template BOM is created by using lines that correspond to the lines of the
 
 6.  In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.
 
-7.  Click **OK**.
+7.  Select **OK**.
 
 A new template BOM is created by using lines that correspond to the lines of the BOM listed in **BOM**.
 
@@ -114,3 +112,6 @@ A new template BOM is created by using lines that correspond to the lines of the
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

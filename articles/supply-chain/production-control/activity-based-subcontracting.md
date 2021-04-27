@@ -4,11 +4,9 @@
 title: Activity-based subcontracting
 description: This topic describes, in detail, how to use subcontracted activities in a production flow for lean manufacturing.
 author: cvocph
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -109,3 +107,6 @@ Supply Chain Management now supports BOM calculation that includes transport ser
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Engineering attributes and engineering attribute search
 description: This topic explains how you can use engineering attributes to specify all non-standard characteristics, to ensure that all product master data can be registered in the system. It also explains how you can use engineering attribute search to easily find products, based on those registered characteristics.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -97,3 +95,6 @@ You must specify the engineering category that the product belongs to. The categ
 You can use engineering attribute search to find products by searching for their engineering attributes values. Therefore, you can easily find engineering products, based on their characteristics. You can search in the products that belong to an engineering product category, or you can search across all engineering products.
 
 The search is available on product master data pages and from transactional items in the system, such as sales orders. For a transactional item, you can use the **Engineering attribute search** page to search for a product. You can then use the **Add as new line** button to add the product to the sales order lines. Products in the search results can also be added directly to the order.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

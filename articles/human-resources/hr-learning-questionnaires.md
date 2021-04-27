@@ -4,11 +4,9 @@
 title: Questionnaires
 description: This article provides general information about questionnaires, and links to more detailed information. A questionnaire is a set of questions that is used to collect information for various purposes. You can design, create, distribute, and complete questionnaires, and then analyze the results. 
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -32,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Questionnaires
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This article provides general information about questionnaires, and links to more detailed information. A questionnaire is a set of questions that is used to collect information for various purposes. You can design, create, distribute, and complete questionnaires, and then analyze the results. 
 
 You can customize a questionnaire to fit your specific requirements by using various features that are available in Microsoft Dynamics 365 Finance. Here are some examples of how questionnaires can be used:
@@ -49,3 +49,6 @@ The following table provides links to information about the core questionnaire t
 | [Design a questionnaire](hr-learning-design-questionnaires.md) | This article provides information about how to design a questionnaire. The design process involves setting up prerequisites, answers, and questions, and then combining them into a questionnaire. |
 | [Distribute and schedule questionnaires](hr-learning-distribute-questionnaires.md) | This article provides information about how to distribute a questionnaire to respondents and how to complete questionnaires. |
 | [View and evaluate the results of questionnaire](hr-learning-evaluate-questionnaire-results.md) | This article provides information about how to view and evaluate the results from completed questionnaires. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

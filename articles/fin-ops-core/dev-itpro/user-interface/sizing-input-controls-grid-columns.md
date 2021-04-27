@@ -4,11 +4,9 @@
 title: Input controls and grid column sizes
 description: This topic describes how to create a consistent look and feel for forms by controlling the size of controls and grids.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -71,3 +69,6 @@ As the previous table shows, if you change the width of a grid-hosted control fr
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Hazardous materials inquiries and reports
 description: This topic explains how to work with the various reports that are related to hazardous materials. Many of these reports are required so that you remain compliant with various hazardous material regulations during shipping and storage.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -29,7 +27,6 @@ ms.dyn365.ops.version: Release 10.0.11
 # Hazardous materials inquiries and reports
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management provides various reports that are related to hazardous materials. Many of these reports are required so that you remain compliant with various hazardous material regulations during shipping and storage.
 
@@ -114,3 +111,6 @@ When the hazardous materials feature is turned on in your system, the **bill of 
 ## Packing list report
 
 When the hazardous materials feature is turned on in your system, packing lists include additional information that is related to the shipping print text for an item. This report is available from the **All loads** page, as usual.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

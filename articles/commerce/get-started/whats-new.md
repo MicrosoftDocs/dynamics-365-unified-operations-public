@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Retail
 description: This page points you to resources that can help you learn about the new features in the latest releases of Microsoft Dynamics 365 Retail.
 author: sericks007
-manager: AnnBe
 ms.date: 10/20/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -46,3 +44,6 @@ This page points you to resources that can help you learn about the new features
 | Dynamics 365 for Retail - 7.3.2.5 | 7.3.21971.64091 | June 2018 | [KB 4342134Microsoft Dynamics 365 for Retail - Version 7.3.2.5 - BugFix Package 1\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342134&bugId=225730&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |
 
 \* The link points to a Knowledge Base (KB) article. You must log in to Lifecycle Services (LCS) to view the KB article.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

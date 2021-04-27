@@ -4,11 +4,9 @@
 title: Set up, import, and verify NF-e XML documents and DANFE
 description: You can automatically extract and import the XML from the Nota Fiscal Eletrônica (NF-e) and its DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) from e-mails sent by the vendor for your company.
 author: v-gonode
-manager: AnnBe
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -67,3 +65,6 @@ The imported XML and DANFE files can be viewed on the **Received NF-e XML docume
 1. On the **Inquire about NF-e access key status** page, in the **Limit of cancellation** field, enter the number of hours that the vendor has to cancel the NF-e.
 2. In the **Minimum inquiry interval** field, enter the minimum interval in minutes, between the inquiries for the received NF-e access key at the SEFAZ.
 3. If necessary, enter the batch processing parameters, recurrences, and schedule.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

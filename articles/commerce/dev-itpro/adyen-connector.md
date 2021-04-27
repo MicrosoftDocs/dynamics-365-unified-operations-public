@@ -4,11 +4,9 @@
 title: Dynamics 365 Payment Connector for Adyen
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-manager: AnnBe
-ms.date: 02/03/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -71,13 +69,6 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
-# [10.0.7](#tab/10-0-7)
-### Dynamics 365 Retail POS version 10.0.7
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_38p5 | adyen_v1_45p3 |
-| | *Note: Validation testing has been performed on adyen_v1_56p5. See the note below for more details.* |
-
 # [10.0.8](#tab/10-0-8)
 ### Dynamics 365 Retail POS version 10.0.8
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
@@ -133,13 +124,28 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | --- | --- |
 | adyen_v1_56p9 | adyen_v1_56p9 |
 
+# [10.0.17](#tab/10-0-17)
+### Dynamics 365 Retail POS version 10.0.17
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_59p7 | adyen_v1_59p7 |
+| | *Note: Please see details below regarding cash out of gift cards.* |
+
+# [10.0.18](#tab/10-0-18)
+### Dynamics 365 Retail POS version 10.0.18
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_59p7 | adyen_v1_62p9 |
+| | *Note: Please see details below regarding cash out of gift cards* |
+
 ---
 
 > [!NOTE]
 > Adyen may release minor version updates after Microsoft has tested the major version. As long as a major version is supported, it's okay to have minor version updates within the same major version. These updates are normally very targeted fixes and don't meet the bar for full retesting, as long as the same major firmare version was previously tested. Updates shouldn't exceed the maximum Adyen firmware version listed in documentation. 
 >
 > Migrating from a Adyen firmware version earlier than version 53 to version 53 requires POS KB **4577957** for monthly updates of Commerce, versions 10.0.11 through 10.0.14. If one of those versions is in use and doesn't include the hotfix, post-upgrade of the payment terminal will only allow payments via NFC. Applying the hotfix to the POS resolves this issue. If the POS version is older than version 10.0.11, file a support request noting that a fix for KB **4577957** is required for an out of service MPOS.
-
+> 
+> For Adyen firmware versions 59p7 through 62p9, the **gift card cash out** operation requests PIN entry twice in scenarios where the gift card is manually entered. This issue is not reproduced when the gift card is swiped. Adyen is investigating. 
 
 ### Supported payment terminals
 The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api). It supports all payment terminals that this application programming interface (API) supports. For a complete list of supported payment terminals, visit the [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals) page.
@@ -195,7 +201,7 @@ The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnos
 | Givex | ✔ | ✔ |
 | SVS | ✔ | ✔ |
 
-To support these external gift card schemes through the Dynamics 365 Payment Connector for Adyen, you must complete additional steps. For more information, see [Support for external gift cards](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/gift-card).
+To support these external gift card schemes through the Dynamics 365 Payment Connector for Adyen, you must complete additional steps. For more information, see [Support for external gift cards](/dynamics365/unified-operations/retail/dev-itpro/gift-card).
 
 #### Supported wallets
 
@@ -216,7 +222,7 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 
 #### Supported card present countries
 
-The following countries have Commerce components available and card present support from Adyen. For current international availability of Commerce, visit the [International availability page](https://docs.microsoft.com/dynamics365/get-started/availability).
+The following countries have Commerce components available and card present support from Adyen. For current international availability of Commerce, visit the [International availability page](/dynamics365/get-started/availability).
 
 | Country | Supported |
 | --- | :-: |
@@ -252,7 +258,7 @@ The following countries have Commerce components available and card present supp
 
 #### Supported card not present countries
 
-The following countries are supported by Adyen for card not present tranactions. [Contact Adyen](https://www.adyen.com/contact/sales) for details about support for a specific country. For current international availability of Commerce, visit the [International availability page](https://docs.microsoft.com/dynamics365/get-started/availability).
+The following countries are supported by Adyen for card not present tranactions. [Contact Adyen](https://www.adyen.com/contact/sales) for details about support for a specific country. For current international availability of Commerce, visit the [International availability page](/dynamics365/get-started/availability).
 
 | Country | 
 | --- | --- |
@@ -327,24 +333,25 @@ The following countries are supported by Adyen for card not present tranactions.
 | United States of America including Puerto Rico  |
 
 #### Supported Dynamics 365 payment features
-The following table shows the set of features that the Dynamics 365 Payment Connector for Adyen supports. These features use enhancements that were introduced in the payments SDK and some components in December 2018. They aren't exclusive to the Dynamics 365 Payment Connector for Adyen. For more information about how to uptake these enhancements for a different payment connector, see [Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension).
+The following table shows the set of features that the Dynamics 365 Payment Connector for Adyen supports. These features use enhancements that were introduced in the payments SDK and some components in December 2018. They aren't exclusive to the Dynamics 365 Payment Connector for Adyen. For more information about how to uptake these enhancements for a different payment connector, see [Create an end-to-end payment integration for a payment terminal](/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension).
 
 | Scheme | Card present | Card not present |
 |---|:-:|:-:|
-| [Cash Out Gift Card Balance](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/gift-card-cash-out) | ✔ | |
-| [Duplicate Payment Protection](https://docs.microsoft.com/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
+| [Cash Out Gift Card Balance](/dynamics365/unified-operations/retail/dev-itpro/gift-card-cash-out) | ✔ | |
+| [Duplicate Payment Protection](/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
 | Omni Channel Tokenization | ✔ | ✔ |
 | Linked Refunds | ✔<br>(Starting with 10.0.1) | ✔<br>(Starting with 10.0.1) |
 | [Save online payments](../dev-itpro/adyen-connector-listPI.md) | | ✔<br>(Starting with 10.0.2) | 
-| [External gift cards for call center and e-commerce](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/gift-card) | ✔<br>(Starting with 10.0.10) | 
-| [SCA payment redirect](https://go.microsoft.com/fwlink/?linkid=2131175) | | ✔<br>(Starting with 10.0.12) |
-| [Dedicated payment terminals and prompts for a printer and cash drawer](https://docs.microsoft.com/dynamics365/commerce/pos-multi-hws) | ✔<br>(Starting with 10.0.12) | |
+| [External gift cards for call center and e-commerce](./gift-card.md) | ✔<br>(Starting with 10.0.10) | 
+| [SCA payment redirect](../adyen_redirect.md) | | ✔<br>(Starting with 10.0.12) |
+| [Dedicated payment terminals and prompts for a printer and cash drawer](../pos-multi-hws.md) | ✔<br>(Starting with 10.0.12) | |
 | [SDK-level tipping support through the Adyen connector](tipping.md) | ✔<br>(Starting with 10.0.14) | |
+| [Incremental capture for order invoicing](incremental-capture.md) |  | ✔<br>(Starting with 10.0.18) |
 
 
 ## Sign up with Adyen
 
-To use the Dynamics 365 Payment Connector for Adyen, you must have a separate agreement with Adyen. To learn more about Adyen's services, or to create a test merchant account, visit the [Adyen website](https://www.adyen.com/partners).
+To use the Dynamics 365 Payment Connector for Adyen, you must have a separate agreement with Adyen. To learn more about Adyen's services, or to create a test merchant account, visit the [Adyen website](https://www.adyen.com/signup).
 
 ## Setup and configuration
 
@@ -376,7 +383,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. "V002" should be used for all new implementations, as it leverages a newer Adyen API for card not present payments and is required for [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175).  | Yes | Yes | "V001"/"V002" |
+    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. "V002" should be used for all new implementations, as it leverages a newer Adyen API for card not present payments and is required for [SCA support](../adyen_redirect.md).  | Yes | Yes | "V001"/"V002" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. This is the unique identifier for your Live environment in the form **[random]-[company name]**. This is present as the prefix inside the API URLs under **Account > API URLs** in your company's Live account on the Adyen Customer Area portal. For additional details, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints). | Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
@@ -547,7 +554,7 @@ To configure the Dynamics 365 Payment Connector for Adyen for call center paymen
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. "V002" should be used for all new implementations, as it leverages a newer Adyen API for card not present payments and is required for [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175).  | Yes | Yes | "V001"/"V002" |
+    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. "V002" should be used for all new implementations, as it leverages a newer Adyen API for card not present payments and is required for [SCA support](../adyen_redirect.md).  | Yes | Yes | "V001"/"V002" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. | Yes | Yes | Live |
     | Optional Domain | Enter the domain to use when payment requests are made to Adyen. This is the unique identifier for your Live environment in the form **[random]-[company name]**. This is present as the prefix inside the API URLs under **Account > API URLs** in your company's Live account on the Adyen Customer Area portal. For additional details, see, [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints). | Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
@@ -658,4 +665,6 @@ When payment transactions aren't successfully processed through the Adyen paymen
 
 ## Additional resources
 
-- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+[Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+
+[!INCLUDE [footer-include](../../includes/footer-banner.md)]

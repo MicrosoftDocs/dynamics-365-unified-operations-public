@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Single-user testing with Task recorder and the Performance SDK
 description: This topic explains how to do single-user testing by using Microsoft Visual Studio, the Performance SDK, and a Task Recorder performance test script. 
 author: hasaid
-manager: AnnBe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -134,3 +128,6 @@ Use the following tips and tricks for single-user testing that uses Task recorde
 ## Troubleshooting
 
 For information about single-user or multi-user testing that uses the Performance SDK, see [Troubleshooting guide for single-user or multi-user testing with the Performance SDK](troubleshoot-perf-sdk-user-testing.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Benefits Power BI content
 description: This topic describes the Benefits Power BI content.
 author: jcart1106 
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -73,3 +71,6 @@ The following data is used to fill the reports in the **Benefits** Power BI cont
 | Employee Name            | First name, last name, and full name                                                                       | Current Employee, Terminated Employee, Employee Trend |
 | Employee Title           | Title and seniority date                                                                                   | Current Employee, Terminated Employee, Employee Trend |
 | Employee Trend           | Workers over time, headcount, company, and position                                                        | Company, Compensation, Geographic Location, Employee Name, Reports To, Calendar Offset, Date, Employee Title, Demographics, Employment, Job, Benefits |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

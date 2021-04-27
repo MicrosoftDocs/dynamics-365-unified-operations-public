@@ -4,11 +4,9 @@
 title: Purchases from registered vendors
 description: This topic explains how to work with purchases that are made by registered vendors.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -147,3 +145,6 @@ The following illustration shows the financial entry for the purchase of goods w
 The following illustration shows the financial entry for the purchase of goods where the reverse charge is set to 70 percent and the ITC category is set to **Others**.
 
 ![Financial entry for the purchase of goods where the reverse charge is set to 70 percent and the ITC category is set to Others](media/Annotation-2019-05-15-173734.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

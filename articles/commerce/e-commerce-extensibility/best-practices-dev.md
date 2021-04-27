@@ -5,10 +5,9 @@ title: Best practices for Dynamics 365 Commerce development
 description: This topic describes some best practices to follow when developing Dynamics 365 Commerce customizations. 
 author: samjarawan
 manager: annbe
-ms.date: 01/07/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -30,6 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 # Best practices for Dynamics 365 Commerce development 
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic describes some best practices to follow when developing Dynamics 365 Commerce customizations.
 
@@ -44,9 +44,7 @@ The [Dynamics 365 Commerce ecosystem](../commerce-architecture.md) comprises var
 
 ## Minimize HTML, CSS, and JavaScript file sizes
 
-The Dynamics 365 online SDK provides development extensions that use TypeScript and Sassy Cascading Style Sheets (SCSS) files. When a configuration package is built using the [yarn msdyn365 pack](cli-command-reference.md#pack) command, or the Node server is started on a local development environment using the [yarn start](setup-dev-environment.md#run-your-node-app) command, the TypeScript and SCSS files will compile down to JavaScript and Cascading Style Sheets (CSS) files, respectively. These files are also minified to reduce network bandwidth.
-
-You should ensure that extra, unused JavaScript and CSS files are not included in your extension package. Some tools are listed at the bottom of this document to help measure page load times and can help in identifying problem areas with CSS and JavaScript. Refer to the [Tools for performance analysis](#tools-for-performance-analysis) section laster in this document to find a list of tools that can help you measure page load times and can help in identifying problem areas with CSS and JavaScript.
+The Dynamics 365 Commerce online SDK provides development extensions that use TypeScript and Sassy Cascading Style Sheets (SCSS) files. When a configuration package is built by using the [yarn msdyn365 pack](cli-command-reference.md#pack) command, or when the Node server is started in a local development environment by using the [yarn start](setup-dev-environment.md#run-your-node-app) command, the TypeScript files are compiled down to JavaScript files, and the SCSS files are compiled down to Cascading Style Sheets (CSS) files. These files are also minified to help reduce network bandwidth. You should make sure that extra, unused JavaScript and CSS files aren't included in your extension package.
 
 ### Reduce JavaScript by excluding unused modules
 
@@ -56,9 +54,7 @@ Modules can be excluded by adding the module name to the **excludeModules** prop
 
 ```JSON
 {
-
-    "excludeModules": ["<EXCLUDED_MODULE_NAME1>","<EXCLUDED_MODULE_NAME2>"]
-
+    "excludedModules": ["<EXCLUDED_MODULE_NAME1>","<EXCLUDED_MODULE_NAME2>"]
 }
 ```
 
@@ -79,29 +75,46 @@ When building modules with images, the HTML should always include the width and 
 ### Image types and file sizes
 
 There are three aspects that are important when determining the file size of an image:
+
 - The resolution of the image (width and height).
-- How the image is encoded (JPEG, GIF, or PNG). 
-- The quality parameter (JPEG only). 
+- How the image is encoded (JPEG, GIF, or PNG).
+- The quality parameter (JPEG only).
 
-JPEG uses lossy compression that decreases the file size by discarding image detail. The amount of detail discarded is controlled by the quality parameter, which is a number between 0 and 100, with 100 being the best quality. A lower quality parameter number results in a lower quality image, but also a smaller file size. 
+JPEG uses lossy compression that decreases the file size by discarding image detail. The amount of detail discarded is controlled by the quality parameter, which is a number between 0 and 100, with 100 being the best quality. A lower-quality parameter number results in a lower-quality image, but also a smaller file size.
 
-PNG is a lossless format, so no image detail is lost but the image file size will be larger. For images with text, sharp lines, or color gradients, PNG may be a better choice because the JPEG format may show undesirable artifacts as a result of the lossy compression. 
+PNG is a lossless format, so no image detail is lost but the image file size will be larger. For images with text, sharp lines, or color gradients, PNG may be a better choice because the JPEG format may show undesirable artifacts as a result of the lossy compression.
 
 GIF is also a lossless format, but it only supports 256 colors in a single image. For images with text or sharp lines that also don't have many colors, GIF may be a better format choice over PNG or JPEG. GIF also has support for simple animations.
 
 Ultimately, the goal is to find the right balance to maintain image quality while keeping the image size as small as possible.
 
+### Disable lazy loading for images
+
+Modules that show images, such as the [content block module](../add-hero-module.md), generally don't load the images until they are needed. This "lazy loading" behavior might cause a perception of performance issues, because an image isn't loaded when the user is ready to view it. For example, when a user selects the "next" arrow in a carousel module, the next image might take a second or two to be loaded if lazy loading is enabled. Therefore, these types of modules that show images have a configuration setting that lets you disable lazy loading. Images are then loaded before they are needed, and users might perceive improved performance in some scenarios.
+
+The following illustration image shows an example where the **Disable Lazy Load** option is selected for a content block module in Commerce site builder.
+
+![Disable lazy load option selected in Commerce site builder](media/best-practices-dev-1.png)
+
+## Enable lazy loading for a product collection module
+
+The data action calls for the [product collection module](../product-collection-module-overview.md) can cause a small increase in page load times. Therefore, the product collection module has an **Enable module lazy load** configuration setting that enables the module to be rendered on the client side after the page has been rendered. In this way, the page is available for user interaction sooner. 
+
+The following illustration shows an example where the **Enable module lazy load** option is selected for a product collection module in Commerce site builder.
+
+![Enable module lazy load option selected in Commerce site builder](media/best-practices-dev-2.png)
+
 ## Cache configuration
 
 Caching is often used on static content that doesn't often change, such as images, product content, and JavaScript and CSS files. Some scenarios may require custom cache settings to achieve the best performance results.
 
-### Image caching 
+### Image caching
 
 The default content delivery network (CDN) cache time for images is set to 5 minutes. This means that after 5 minutes the next request to get a specific image will need to be retrieved from the origin, and so will be slower. Increasing the cache time setting is possible, but it must be done by opening a support ticket.
 
 ### Data caching
 
-Product-specific data is cached in the e-Commerce rendering Node layer. Caching times are different for each entity type and can be configured inside of the **cache.settings.json** file in the SDK "/src/settings/" directory.  For more information, see [Data cache settings](data-action-cache-settings.md).
+Product-specific data is cached in the e-Commerce rendering Node layer. Caching times are different for each entity type and can be configured inside of the **cache.settings.json** file in the SDK "/src/settings/" directory. For more information, see [Data cache settings](data-action-cache-settings.md).
 
 ## Browser hint meta tags
 
@@ -112,7 +125,7 @@ The **preconnect** browser hint meta tag can be used if a page relies on resourc
 The following is an example of a **preconnect** meta tag hint used in HTML.
 
 ```html
-<link rel="preconnect" href="https://<DOMAIN_TO_PRECONNECT>">    
+<link rel="preconnect" href="https://<DOMAIN_TO_PRECONNECT>">
 ```
 
 The **dns-prefetch** browser hint meta tag can be used if a resource is likely to be navigated to or used on a page. DNS prefetching can resolve a domain's address earlier than usual to avoid this time-expensive step later.
@@ -125,17 +138,9 @@ The following is an example of a **dns-prefetch** browser hint meta tag used in 
 
 Adding meta tags to a page can be done in Commerce site builder using the **Metatags** module. The **Metatags** module should be added to a page template's "HTML Head" section. For more information, see [Work with templates](../work-with-templates.md).
 
-## Tools for performance analysis
+## Performance analysis
 
-The following tools are recommended for performance analysis.
-
-### Use WebPageTest to analyze page load times 
-
-[WebPageTest](https://webpagetest.org) can provide detailed analysis of page load times across different regions using different connection speeds.  
-
-### Use BlazeMeter to analyze performance under load 
-
-[BlazeMeter](https://blazemeter.com) can generate load on site pages from different regions to help measure load times when content is cached. 
+It's very important that e-commerce site pages be performance tested before they go live. You can use a wide range of existing webpage performance testing tools for this purpose. At a minimum, you can use your web browser's F12 Developer Tools to examine the network loads for individual parts of a page. This approach can help identify any performance bottlenecks so that you can investigate them further.
 
 ## Restrict your e-commerce website from loading inside external website HTML iframe elements
 
@@ -161,4 +166,7 @@ The **frame-ancestors** directive can be used to restrict the loading of your e-
 
 [Manage Content Security Policy](../manage-csp.md)
 
+[Platform settings file](platform-settings.md)
 
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

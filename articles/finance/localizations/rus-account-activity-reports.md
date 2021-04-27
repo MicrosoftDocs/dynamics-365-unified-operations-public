@@ -3,11 +3,9 @@
 title: Account activity reports
 description: This topic provides information about account activity reports including the Turnover sheet with correspondence.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -224,3 +222,6 @@ You can use the **Journal order/account activity** report to review movement on 
 > - Select the total account cell to open the transactions on all accounts that are included in the range of the specified total account, and that generated activity on the total account.
 > - Select **Select** to change the report generation parameters.
 > - Select **Print** to print the report in Excel.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

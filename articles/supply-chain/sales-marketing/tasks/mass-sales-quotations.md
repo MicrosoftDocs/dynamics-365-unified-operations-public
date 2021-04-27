@@ -4,11 +4,9 @@
 title: Mass create sales quotations
 description: This procedure demonstrates how to efficiently create quotations offering a set of products or services that are to be sent to multiple customers. 
 author: omulvad
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -103,3 +101,6 @@ This procedure demonstrates how to efficiently create quotations offering a set 
 11. Go to Sales and marketing > Sales quotations > All quotations.
     * Verify that quotations have been created for all the customers specified in the mass update routine, as based on the selected template.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

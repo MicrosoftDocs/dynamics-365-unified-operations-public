@@ -4,11 +4,9 @@
 title: Troubleshoot warehouse setup
 description: This topic describes how to fix common issues that you might encounter while you set up warehouses in Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -42,4 +40,7 @@ You can't any use role except the administrator tole to access the mobile device
 
 ### Issue resolution
 
-The mobile device app emulator is set to work only with the administrator account. For all testing and live process purposes, we recommend that you use the warehouse app itself.
+The mobile device app emulator is set to work only with the administrator account. For all testing and live process purposes, we recommend that you use the Warehouse Management mobile app itself.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

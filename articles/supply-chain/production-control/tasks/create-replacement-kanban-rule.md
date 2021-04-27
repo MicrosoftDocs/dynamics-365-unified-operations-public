@@ -4,11 +4,9 @@
 title: Create a replacement kanban rule
 description: This procedure focuses on replacing an existing kanban rule with a new kanban rule on a specific date. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -57,3 +55,6 @@ This procedure focuses on replacing an existing kanban rule with a new kanban ru
 1. Set Maximum quantity to '100'.
     * Expand the Quantities FastTab to see the Maximum quantity field. Changing the maximum quantity to 100 will allow up to 100 kanbans to be processed.    This is the last step in this task.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

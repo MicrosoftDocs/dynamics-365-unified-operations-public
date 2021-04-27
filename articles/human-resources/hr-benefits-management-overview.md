@@ -4,11 +4,9 @@
 title: Benefits management overview
 description: Overview of Benefits management feature in Dynamics 365 Human Resources. Offer your employees extended benefits options with an easy-to-use online experience.
 author: andreabichsel
-manager: tfehr
-ms.date: 09/17/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -32,6 +30,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Benefits management overview
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 To remain competitive, you must offer a rich set of benefits to attract and retain your best employees. In addition to standard benefits like medical and dental coverage, you might also want to offer expanded services like adoption assistance, recreation programs, and clothing allowances. Benefits management in Microsoft Dynamics 365 Human Resources provides you with a flexible solution that supports a wide variety of benefit options. Human Resources also includes an easy-to-use employee experience that showcases your offerings.
 
 - Enhanced benefits plans let you create and manage unique benefit plans and support complex benefit rate tables and nested tiers. You can easily create benefit programs, bundles, and auto-enrollment rules for an easier employee experience.
@@ -45,6 +45,10 @@ To remain competitive, you must offer a rich set of benefits to attract and reta
 - Qualified life event processing supports future life events.
 
 If you would like to access the demo data, you'll need to redeploy your sandbox environment.
+
+>[!NOTE]
+>You can now customize Benefits management forms. You can now add custom fields related to coverage rates to the **Coverage option** form for benefit plans. For more information about working with custom fields, see [Custom fields](hr-developer-custom-fields.md).
+>![Benefits management custom fields](media/hr-benefits-management-custom-fields.png)
 
 ## Enable Benefits management
 
@@ -102,3 +106,6 @@ You need to process some of your changes to make them active.
 - [Process life event eligibility](hr-benefits-process-life-event-eligibility.md)
 - [Process rate changes](hr-benefits-process-rate-changes.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

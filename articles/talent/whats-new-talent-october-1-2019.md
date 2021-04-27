@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (October 1, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for October 1, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -87,3 +85,6 @@ In this week's build, the description will display when selecting the job in the
 ### Print performance reviews
 
 Employees, managers, and HR professionals will be able to print an employee's performance review.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

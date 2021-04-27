@@ -4,11 +4,9 @@
 title: Spain overview
 description: This topic provides links to documentation resources for Spain. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -49,3 +47,6 @@ This topic provides links to documentation resources for Spain.
 - [Sales and purchase cycles](emea-esp-sales-purchase-cycle.md)
 - [Special entries and opening sheets](emea-esp-opening-sheets-spain.md)
 - [Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)](emea-esp-sii.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

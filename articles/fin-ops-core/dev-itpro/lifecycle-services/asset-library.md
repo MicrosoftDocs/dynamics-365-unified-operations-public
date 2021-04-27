@@ -4,11 +4,9 @@
 title: Asset library in Lifecycle Services (LCS)
 description: This topic provides information about the Asset Library functionality in Lifecycle Services (LCS).
 author: laneswenka
-manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 03/31/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -112,3 +110,18 @@ After you've edited an asset, follow these steps to move the edited asset back t
 2. Select the asset to save, and then click **Save to my library**.
 
 The asset is saved from the project-level Asset library back to the Shared asset library, and the scope is set to **Me**.
+
+## Asset library (Preview) 
+To improve the performance and reliability of the Asset library, we’re enabling a Preview version of the Asset library with an improved page loading experience. 
+
+The Preview version of the Asset library will be available for both the **Shared asset library** and the **project-level Asset library** across all LCS regions and project types. 
+
+The Asset library (Preview) supports all types of assets and has the same functionalities with a few enhancements:
+
+- **Asset load on demand**: To reduce the page loading time, there will be no default asset displayed upon loading the asset library page until you select the asset type that you want to access. Also, you won’t need to wait until the entire asset library page completes loading to navigate through the asset types.
+- **Refresh for file assets**:  A new refresh button is added to refresh a file list. You’ll be able to refresh a file asset list without having to refresh the entire page. 
+
+You can still access the existing Asset library while trying out the Preview version. We’ll monitor the performance and usage during the preview period for the coming month and address any known issues before we switch to the new experience permanently. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

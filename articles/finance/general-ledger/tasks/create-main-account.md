@@ -4,11 +4,9 @@
 title: Create a main account
 description: This task guide steps through adding a main account to an existing chart of accounts. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 07/11/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -54,3 +52,6 @@ This task guide steps through adding a main account to an existing chart of acco
 21. In the **Currency translation type** field, select the method for calculating exchange rates for the account.
 22. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: LIST ER function
 description: This topic provides information about how the LIST Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -78,3 +76,6 @@ In this case, the expression `LIST('Record 1', 'Record 2')` returns a new list t
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

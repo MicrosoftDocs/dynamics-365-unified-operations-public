@@ -4,11 +4,9 @@
 title: Price adjustments and discounts
 description: This article provides information about price adjustments and discounts in Dynamics 365 Commerce.
 author: scott-tucker
-manager: AnnBe
-ms.date: 11/16/2020
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -26,7 +24,6 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
 
 ---
 
@@ -55,3 +52,11 @@ There are many types of discounts:
 - **Shipping discount** – A discount that is applied when the transaction total is more than a specified amount and a specific mode of delivery (for example, two day shipping or overnight shipping) is used on the order.
 
 Both price adjustments and discounts can be associated with price groups. Price groups can then be associated with channels, catalogs, affiliations, and loyalty programs.
+
+> [!NOTE]
+> The mix and match discount and the threshold discount have properties named **Count non-discountable products** and **Count non-discountable products towards threshold**, respectively. If these properties are enabled, an item that is not eligible for any discount (or any further discount) can still help qualify a transaction for the discount, but the ineligible item will not get the discount. 
+> 
+> For example, if you create a mix and match discount with two lines, A and B, where a customer should get 10% off on both items, but there is already an exclusive 5% discount applied to item A, this would typically stop item A from being included in the discount. However, if the **Count non-discountable products** property is enabled, then item A can be used to qualify for the mix and match discount, with the 10% discount only being applied to item B. Similar logic applies to the threshold discount.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

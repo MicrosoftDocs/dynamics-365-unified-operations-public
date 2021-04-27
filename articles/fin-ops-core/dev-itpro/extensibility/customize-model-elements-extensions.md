@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Customize model elements through extension
 description: This topic describes the Fleet Management Extension model. This model contains elements that extend the functionality of the Fleet Management application.
 author: jorisdg
-manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
-
-# optional metadata
 
 # ms.search.form:
 # ROBOTS:
@@ -470,3 +464,6 @@ To deploy your extension to another environment, for example, a test, pre-produc
 ## Additional resources
 
 [Download FMLab sample code](https://github.com/Microsoft/FMLab)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

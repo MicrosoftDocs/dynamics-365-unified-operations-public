@@ -4,11 +4,9 @@
 title: Set up fixed assets
 description: This topic provides an overview of the setup of the Fixed assets module.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -88,3 +86,6 @@ You can configure reason codes so that they are required for changes to a fixed 
 Finally, on the **Number sequences** tab, you define number sequences for fixed assets. The **Fixed asset** number sequence can be overridden by the **Fixed asset group** number sequence if it has been specified.
 
 For more information, see [Create a fixed asset](tasks/create-fixed-asset.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Safety margins
 description: This topic describes how safety margins can be used with the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management.
 author: ChristianRytt
-manager: tfehr
 ms.date: 09/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -92,7 +90,7 @@ Notice that when an issue margin is applied, related supply and demand requireme
 
 ### Turn on safety margins in Feature management
 
-Before you can use this feature with Planning Optimization, it must be turned on in your system. Admins can use the [Feature management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+Before you can use this feature with Planning Optimization, it must be turned on in your system. Admins can use the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
 - **Module:** _Master planning_
 - **Feature name:** _Margins for Planning Optimization_
@@ -185,3 +183,6 @@ For example, an item has lead time of one day and a receipt margin of three days
 [Get started with Planning Optimization](get-started.md)
 
 [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

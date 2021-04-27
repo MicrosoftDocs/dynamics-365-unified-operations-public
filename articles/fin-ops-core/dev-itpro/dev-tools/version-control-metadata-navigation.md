@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Version control, metadata search, and navigation
 description: This tutorial will walk you through configuring Azure DevOps to enable source control on your models.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/24/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 23401
 ms.assetid: 46ed0115-6f8b-4757-b8d2-d4ccb76c733d
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Version control, metadata search, and navigation
@@ -310,3 +295,6 @@ You can use Application Explorer to search for all or some elements of a model a
 
     > [!TIP]
     > To create a project from search results, you can add any type, name, or other filters to your search as long as all results are in the same model. For example: *model:"Fleet Management" type:Table name:^FM* will return all tables in the Fleet Management model with a name starting with the letters FM.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

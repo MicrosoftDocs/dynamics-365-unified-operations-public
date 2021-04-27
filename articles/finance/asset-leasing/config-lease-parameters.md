@@ -4,16 +4,14 @@
 title: Configure lease parameters (Preview)
 description: This topic describes the configuration settings for Asset leasing, such as security information and accounting settings.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: TaxTable
+ms.search.form: AssetLeasePostingAccounts
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -51,3 +49,6 @@ Several configuration settings affect how Asset leasing behaves. These settings 
 
     > [!NOTE]
     > We recommend that you keep this option set to **No**. The setting of this option is used as a validation and control to prevent a closed book version from being accidently depreciated. By keeping the option set to **No**, you help keep the net book value and future depreciation calculations accurate.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

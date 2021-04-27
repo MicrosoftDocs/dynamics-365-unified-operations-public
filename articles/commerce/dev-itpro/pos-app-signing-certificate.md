@@ -4,11 +4,9 @@
 title: Sign MPOS with a code signing certificate
 description: This topic explains how to sign MPOS with a code signing certificate.
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -53,26 +51,43 @@ Using a Secure File task is the recommended approach for Universal Windows Platf
 > [!NOTE]
 > Currently the OOB packaging supports signing only the appx file, the different self-service installers like MPOIS, RSSU, and HWS are not signed by this process. You need to manually sign it using SignTool or other signing tools. The certificate used for signing the appx file must be installed in the machine where Modern POS is installed.
 
-## Steps to configure the certificate for signing
+## Steps to configure the certificate for signing in Azure Pipelines
 
 ### Certificate in the file system/secure location
 
 Download the [DownloadFile task](https://docs.microsoft.com/visualstudio/msbuild/downloadfile-task) and add it as the first step in the build process. The advantage of using the Secure File task is that the file is encrypted and placed in the disk during build no matter if the build pipeline succeeds, fails, or is canceled. The file is deleted from the download location after the build process is completed.
 
-1. Download and add the Secure File task as the first step in the Azure DevOps build pipeline. You can download the Secure File task from [DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile).
+1. Download and add the Secure File task as the first step in the Azure build pipeline. You can download the Secure File task from [DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile).
 2. Upload the certificate to the Secure File task and set the Reference name under Output Variables, as shown in the following image.
     > [!div class="mx-imgBorder"]
     > ![Secure file task](media/SecureFile.png)
-3. Create a new variable in the Azure DevOps pipeline by clicking **New Variable** under the **Variables** tab.
-4. Provide a name for the variable in the value field **$(MySigningCert.secureFilePath)**, for example, **CertFile**.
+3. Create a new variable in Azure Pipelines by selecting **New Variable** under the **Variables** tab.
+4. Provide a name for the variable in the value field, for example, **MySigningCert**.
 5. Save the variable.
-6. Open the **Customization.settings** file from **RetailSDK\\BuildTools** and update the **ModernPOSPackageCertificateKeyFile** with the variable name created in the Azure DevOps pipeline (step 3). For example:
+6. Open the **Customization.settings** file from **RetailSDK\\BuildTools** and update the **ModernPOSPackageCertificateKeyFile** with the variable name created in the pipeline (step 3). For example:
 
     ```Xml
-    <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(CertFile)</ModernPOSPackageCertificateKeyFile>
+    <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(MySigningCert)</ModernPOSPackageCertificateKeyFile>
+    ```
+    This step is required if the certificate is not password protected. If the certificate is password protected, continue with the following steps.
+ 
+7. On the pipeline’s **Variables** tab, add a new secure-text variable. Set the name to **MySigningCert.secret** and set the value of the password for the certificate. Select the lock icon to secure the variable.
+8. Add a **Powershell Script** task to the pipeline (after the Download Secure File and before the Build step). Provide the **Display** name and set the Type as **Inline**. Copy and paste the following into the script section.
+
+    ```powershell
+    Write-Host "Start adding the PFX file to the certificate store."
+    $pfxpath = '$(MySigningCert.secureFilePath)'
+    $secureString = ConvertTo-SecureString "$(MySigningCert.secret)" -AsPlainText -Force
+    Import-PfxCertificate -FilePath $pfxpath -CertStoreLocation Cert:\CurrentUser\My -Password $secureString
     ```
 
-## Download or generate a certificate to sign the MPOS app
+9. Open the **Customization.settings** file from **RetailSDK\\BuildTools** and update the **ModernPOSPackageCertificateThumbprint** with the certificate thumbprint value.
+
+    ```Xml
+       <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
+    ```
+ 
+## Download or generate a certificate to sign the MPOS app manually using msbuild in SDK
 
 If a downloaded or generated certificate is used to sign the MPOS app, then the update the **ModernPOSPackageCertificateKeyFile** node in the **BuildTools\\Customization.settings** file to point to the pfx file location (**$(SdkReferencesPath)\\appxsignkey.pfx**). For example:
 
@@ -129,3 +144,6 @@ Next, generate a new customized Modern POS package that is signed using this cer
 - If using a new, trusted certificate (or a new, self-signed certificate), you will be  required to install a new certificate on every device. After that, you need to take the newly created Modern POS Package (installer), uninstall the existing application, and then reinstall the new Modern POS package. You will need to perform a device activation of Modern POS on every device.
 
 - If using the renewed Contoso certificate, you will be required to install the new certificate on every device and install the Modern POS Package (installer). You are not required to uninstall, however you must reinstall on the device. Note that device activation of Modern POS will not be required. This option is a temporary solution. Only use this option to avoid reactivation and resolve the issue before obtaining a new trusted certificate.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

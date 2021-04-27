@@ -4,11 +4,9 @@
 title: Dynamics 365 Commerce evaluation environment overview
 description: This topic gives an overview of the Microsoft Dynamics 365 Commerce evaluation environment.
 author: v-chgri
-manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,6 @@ This topic gives an overview of the Microsoft Dynamics 365 Commerce evaluation e
 
 > [!NOTE]
 > Commerce evaluation environments aren't generally available, and are granted to partners and customers on a per-request basis. For more information, reach out to your Microsoft partner contact.
-
-## Overview
 
 The Commerce evaluation environment is an optional end-to-end environment of Dynamics 365 Commerce that lets partners and potential customers try out the Commerce product.
 
@@ -67,3 +63,6 @@ To provision the Commerce evaluation environment, see [Provision a Commerce eval
 [Configure optional features for a Dynamics 365 Commerce evaluation environment](cpe-optional-features.md)
 
 [Dynamics 365 Commerce evaluation environment FAQ](cpe-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Set up reason codes
 description: Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing.
 author: andreabichsel
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Set up reason codes
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing.
 
@@ -84,3 +84,5 @@ You'll see a banner on the **Links** page of the **Benefits management** workspa
 After reason codes migrate to Personnel management, the option for using them in Benefits management is automatically set to **Yes**.
 
 [![Use reason code in Benefits management](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

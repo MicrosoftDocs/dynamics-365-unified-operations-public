@@ -4,11 +4,9 @@
 title: SPED fiscal ICMS-IPI layout 014
 description: This topic explains how to set up and generate SPED fiscal statement layout 014.
 author: sndray
-manager: AnnBe
 ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -243,3 +241,6 @@ Record G140 is generated to identify the fiscal document of CIAP operations. The
 | 7      | VL\_ICMS\_ST\_APLICADO  | The ICMS-ST amount of the incoming fiscal document. This amount comes from the **ICMS-ST** column of the CIAP assessment. |
 | 8      | VL\_ICMS\_FRT\_APLICADO | The ICMS amount of the incoming fiscal document. This amount comes from the **ICMS on the freight** column of the CIAP assessment. |
 | 9      | VL\_ICMS\_DIF\_APLICADO | The ICMS-DIF amount of the incoming fiscal document. This amount comes from the **ICMS-DIF** column of the CIAP assessment. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

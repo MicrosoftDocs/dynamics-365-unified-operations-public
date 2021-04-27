@@ -4,11 +4,9 @@
 title: Task recorder and Help for Retail Modern POS (MPOS) and Cloud POS
 description: This topic describes how to use Task recorder in Retail Modern POS and Cloud POS.
 author: mugunthanm
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -149,3 +147,6 @@ When you click a Task guide in the search results, you can either view the steps
 
 > [!NOTE]
 > Help in Retail Modern POS and Cloud POS will not bring up task guides according to what form you're on or operation you're doing. You have to type the process name in the search box and then click **Search**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

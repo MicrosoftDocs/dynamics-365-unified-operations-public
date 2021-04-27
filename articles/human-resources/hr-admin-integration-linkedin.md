@@ -4,11 +4,9 @@
 title: Integrate with LinkedIn Talent Hub
 description: This topic explains how to set up integration between Microsoft Dynamics 365 Human Resources and LinkedIn Talent Hub.
 author: jaredha
-manager: tfehr
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Integrate with LinkedIn Talent Hub
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [banner](includes/preview-feature.md)]
 
@@ -135,7 +135,7 @@ After you save and close the new application user in the previous section, you'r
 ### Create the table in Dataverse
 
 > [!IMPORTANT]
-> The integration with LinkedIn Talent Hub depends on virtual tables in Dataverse for Human Resources. As a prerequisite for this step in the setup, you must configure virtual tables. For information about how to configure virtual tables, see [Configure Dataverse virtual tables](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+> The integration with LinkedIn Talent Hub depends on virtual tables in Dataverse for Human Resources. As a prerequisite for this step in the setup, you must configure virtual tables. For information about how to configure virtual tables, see [Configure Dataverse virtual tables](./hr-admin-integration-common-data-service-virtual-entities.md).
 
 1. In Human Resources, open the **Dataverse integration** page.
 
@@ -194,4 +194,7 @@ The following details are imported and included on the new employee record:
 ## See also
 
 [Configure Dataverse virtual tables](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+[What is Microsoft Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

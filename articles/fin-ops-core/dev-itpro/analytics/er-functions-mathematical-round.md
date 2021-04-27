@@ -4,11 +4,9 @@
 title: ROUND ER function
 description: This topic provides information about how the ROUND Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -80,3 +78,6 @@ If the value of the `decimals` argument is less than 0 (zero), the specified num
 ## Additional resources
 
 [Mathematical functions](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

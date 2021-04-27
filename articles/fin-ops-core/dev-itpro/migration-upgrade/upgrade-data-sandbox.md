@@ -4,11 +4,9 @@
 title: Upgrade from AX 2012 - Data upgrade in sandbox environments
 description: This topic explains how to perform a data upgrade from Microsoft Dynamics AX 2012 to Finance and Operations in a sandbox environment. 
 author: laneswenka
-manager: AnnBe
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -308,3 +306,6 @@ For more information, see [Upgrade data in development or demo environments](upg
 ### Upgrade a copy of the database in a development environment
 
 It is highly recommended to have upgraded the same database in a development environment. If you have a copy of the database available for development environments, it will be much easier to investigate bugs that are found in the upgraded sandbox environment.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Quality check
 description: This topic provides information about the Quality check feature. This feature lets warehouse workers do quick spot checks for quality while they receive items to the inbound dock area.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -305,7 +303,7 @@ After the purchase order has been created, it can be received by using the **PO 
 
 #### Receive pallet 1
 
-1. Sign in to the warehouse app as a user for warehouse *51*. (Enter *51* as the user ID and *1* as the password.)
+1. Sign in to the Warehouse Management mobile app as a user for warehouse *51*. (Enter *51* as the user ID and *1* as the password.)
 1. Go to **Inbound \> PO line receiving**.
 1. In the **PONUM** field, enter the purchase order number.
 1. Confirm the purchase order number.
@@ -400,3 +398,6 @@ For this scenario, pallet 3 will be accepted.
 1. Select the Menu button (**≡**) at the top of the page, and then, on the menu, select **Cancel** to return to the menu.
 
 You can now close the mobile app.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

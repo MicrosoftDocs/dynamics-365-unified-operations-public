@@ -4,11 +4,9 @@
 title: Create a withdrawal kanban rule
 description: This procedure shows the setup that is needed to create a withdrawal kanban rule for transferring material in a lean environment. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -65,3 +63,6 @@ This procedure shows the setup that is needed to create a withdrawal kanban rule
     * This will create two kanbans.  
     * Note that 2 kanbans, for 5 each, was created for this withdrawal kanban rule.  This is the last step in this procedure.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

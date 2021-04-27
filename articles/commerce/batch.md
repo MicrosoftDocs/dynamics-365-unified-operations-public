@@ -4,11 +4,9 @@
 title: Improved handling of batch-tracked items
 description: This topic describes the improvements that have been made to the handling of batches for batch-tracked items during the statement posting process.
 author: josaw1
-manager: AnnBe
 ms.date: 11/04/2019
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -49,3 +47,6 @@ To define the default batch ID that is used for sales order invoicing through st
 
 > [!NOTE]
 > Support for improved handling of batch-tracked items during statement posting for non-advanced warehouse management scenarios was introduced in Retail version 10.0.5.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

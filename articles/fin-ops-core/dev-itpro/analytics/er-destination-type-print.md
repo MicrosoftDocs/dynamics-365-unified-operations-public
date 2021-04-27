@@ -4,11 +4,9 @@
 title: Printer ER destination type
 description: This topic explains how you can configure a printer destination for each FOLDER or FILE component of an Electronic reporting (ER) format. 
 author: NickSelin
-manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,7 +35,7 @@ You can send a generated document directly to a network printer for direct print
 
 ## Prerequisites
 
-Before you begin, you must install and configure the Document Routing Agent, and then register the network printers. For more information, see [Install the Document Routing Agent to enable network printing](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent).
+Before you begin, you must install and configure the Document Routing Agent, and then register the network printers. For more information, see [Install the Document Routing Agent to enable network printing](./install-document-routing-agent.md).
 
 ## Make the Printer destination available
 
@@ -53,8 +51,6 @@ To make the **Printer** destination available in the current instance of Microso
 The **Printer** destination can be configured only for file components that are used to generate output in either printable PDF format (PDF Merger or PDF file format elements) or Microsoft Office Excel/Word format (Excel file). When output is generated in PDF format, it's sent to a printer. When output is generated in Microsoft Office format, it's automatically converted to PDF format and then sent to a printer.
 
 ### Limitations
-
-This feature is a preview feature and is subject to the terms of use that are described in [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://go.microsoft.com/fwlink/?linkid=2105274).
 
 The **Printer** destination is implemented only for cloud deployments.
 
@@ -75,3 +71,6 @@ To use a specific [page orientation](electronic-reporting-destinations.md#Select
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

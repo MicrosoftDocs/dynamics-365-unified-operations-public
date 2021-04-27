@@ -4,11 +4,9 @@
 title: Store order fulfillment
 description: This topic provides an overview of store order fulfillment. 
 author: rubencdelgado
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -222,3 +220,6 @@ Order fulfillment at the point of sale includes filtering to help the user easil
 - Created date
 - Delivery date
 - Receipt date
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

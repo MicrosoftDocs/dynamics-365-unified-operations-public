@@ -4,11 +4,9 @@
 title: Lookup controls
 description: This article discusses how to enable lookup behavior on controls.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -125,3 +123,6 @@ Lookup controls should open lookup forms when the lookup button is used (not sli
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

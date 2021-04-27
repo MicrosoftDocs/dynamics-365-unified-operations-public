@@ -4,11 +4,9 @@
 title: Replenishment strategies
 description: This topic provides information about replenishment strategies and explains how you can use the Replenishment strategy field on wave demand replenishment template lines to select how replenishment is done.
 author: mirzaab
-manager: tfehr
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -119,3 +117,6 @@ The outcomes differ because of the information that is available when you create
 [![Example 2](media/ReplenTemp_example_2.png "Example 2")](media/ReplenTemp_example_2_large.png)
 
 Therefore, to get the maximum quantity to the replenished locations, you should set the **Allow split** option to *Yes* on the location directives for replenishment picking.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

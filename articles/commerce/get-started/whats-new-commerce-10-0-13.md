@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.13 (October 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.13. 
 author: josaw1
-manager: AnnBe
 ms.date: 09/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -76,3 +74,6 @@ The [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

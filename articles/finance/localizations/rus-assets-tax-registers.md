@@ -3,11 +3,9 @@
 title: Fixed assets and intangible assets registers
 description: This topic provides information about fixed assets and intangible assets registers.
 author: anasyash
-manager: AnnBe
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -460,3 +458,6 @@ Data from the **Depreciation bonus recovery** register is included in the **Inco
     | The naming of object of the account | Depreciation bonus recovery for FA \# 4031                                  |
     | Income amount                       | 60,000.00                                                                   |
     | CTL amount                          | 12,000.00                                                                   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

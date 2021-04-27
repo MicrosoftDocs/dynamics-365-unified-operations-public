@@ -3,12 +3,10 @@
 
 title: Asset lifecycle states
 description: This topic explains asset lifecycle states and lifecycle models in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -74,3 +72,6 @@ After you've created the required asset lifecycle states, you can set up lifecyc
 
 6. Select **Lifecycle state updates** to define the asset lifecycle states that can follow a selected lifecycle state.
 7. You use the **Asset state** FastTab if you handle assets that you receive for repair. In the **Inbound/outbound** section, you can select asset lifecycle states to indicate the workflow of an asset that you receive for repair. If you offer loan assets to customers or departments, in the **Loan** section, you can select lifecycle states for loan assets.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Quick view module
 description: This topic covers quick view modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Quick view module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers quick view modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
@@ -83,3 +80,6 @@ To add a quick view module to a product collection module in Commerce site build
 [Product collection module](product-collection-module-overview.md)
 
 [Search results module](search-result-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

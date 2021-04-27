@@ -4,11 +4,9 @@
 title: Batch processing and batch servers
 description: This topic describes batch processing and batch servers, and how to plan for their use.
 author: Peakerbl
-manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -109,3 +107,6 @@ Batch throttling can prevent excessive tasks by limiting the average number of e
 
 > [!NOTE]
 > The batch framework is able to detect instances when there are no non-throttled tasks to be scheduled and executed at any given time. When this occurs, the batch will try to fetch batch tasks from the throttled classes queue to prevent resources from being idle.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

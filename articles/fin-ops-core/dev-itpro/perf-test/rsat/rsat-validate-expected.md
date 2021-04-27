@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Validate expected values
 description: This topic shows how to use the Regression suite automation for validation of expected values. 
-author: robadawy
-manager: AnnBe
+author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -22,7 +16,7 @@ ms.reviewer: rhaertle
 ms.custom: 21631
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -56,3 +50,6 @@ When recording test cases, Task Recorder supports additional validation action:
 + Validate whether a control is editable or read-only.
 
 To take advantage of this validation, you need to be use a Finance and Operations app running on 10.0.13 (or newer) and RSAT 2.0 (or newer). For more information, see [Validate](../../user-interface/task-recorder.md#validate).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

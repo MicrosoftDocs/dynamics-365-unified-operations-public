@@ -4,11 +4,9 @@
 title: FR-00004 Setup method of payment
 description: The procedure walks you through setting up methods of payment so that you can create and post the bill of exchange after approving it from the draw bill of exchange journal. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -67,3 +65,6 @@ You should have a role of Accounts receivables manager to perform this procedure
 20. Select or clear the Run export script check box.
 21. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

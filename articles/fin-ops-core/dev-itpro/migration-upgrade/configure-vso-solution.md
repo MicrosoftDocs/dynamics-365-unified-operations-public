@@ -4,11 +4,9 @@
 title: Configure the Azure DevOps mapping during code migration
 description: This tutorial shows how to map your development box to the Azure DevOps project after the LCS code upgrade service has completed. 
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -64,3 +62,6 @@ The LCS code upgrade service automatically checks your upgraded code into Azure 
 [![vstsmapping](./media/vstsmapping.png)](./media/vstsmapping.png) 
 
 After you have mapped these folders, you can synchronize the code to your local box. Right-click **Metadata** and select **Get latest**. Similarly synchronize the Projects folder. After synchronizing the metadata folder, refresh your models in Visual Studio from **Finance and Operations** &gt; **Model Management** &gt; **Refresh Models**. [![VSRefreshModels](./media/vsrefreshmodels.png)](./media/vsrefreshmodels.png) You are now ready to open your projects, resolve conflicts, build, test, and complete your code migration.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

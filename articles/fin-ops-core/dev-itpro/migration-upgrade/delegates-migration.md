@@ -4,11 +4,9 @@
 title: Solve dependencies among models by using delegates during code migration
 description: This topic explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
 author: maertenm
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -158,3 +156,6 @@ Methods two and three can be used in parallel to the metadata search. The class 
 Similar to finding class references, finding all references can be done on the SubscribesTo keyword. The resulting list will include all static delegate handlers. Manually going through this list provides another means for finding static delegate handlers. This will not return dynamically declared delegate handlers that do not use the SubscribesTo keyword. 
 
 [![Del18](./media/del18-1024x328.png)](./media/del18.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

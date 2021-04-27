@@ -4,11 +4,9 @@
 title: Data templates with multiple worksheets
 description: This topic describes how to import data using Excel data entity templates into Finance and Operations.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 01/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -55,3 +53,6 @@ In cases where a new version of the same file or a completely new file must be u
 ## Upload a file using Run project
 
 You can upload an Excel file while using the **Run project** option to execute an import project. You must be careful to upload only files that have the same worksheets as the existing mappings on the data entities in the data project. If a worksheet is not found in the newly uploaded file, the system displays an error and will stop the import. If the mapping to the worksheet must be changed for an entity, then the mappings in the data project must be first updated from within the data project before using the file in the **Run project** experience.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

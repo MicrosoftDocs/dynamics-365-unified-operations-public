@@ -4,11 +4,9 @@
 title: Vendor invoices overview
 description: This topic provides general information about vendor invoices.
 author: abruer
-manager: AnnBe
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -134,3 +132,6 @@ You can view the invoice total on the **Pending vendor invoices** page by enabli
 - [Key invoice data into accounts payable using an approval journal](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Key invoice data into the AP system using invoice pool](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Record a vendor invoice in the invoice journal](tasks/record-vendor-invoice-invoice-journal.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

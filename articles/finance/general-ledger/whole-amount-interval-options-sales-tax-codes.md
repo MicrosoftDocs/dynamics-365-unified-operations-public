@@ -4,11 +4,9 @@
 title: Whole amount and Interval calculation options for sales tax codes
 description: This article explains the options for the Calculation method field on sales tax codes and how sales tax is calculated for intervals and whole amounts.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,9 +50,8 @@ If an amount is the Maximum limit of the previous interval and the Minimum limit
 ## Example: Whole amount method of calculation
 In the Sales tax code values page, sales tax rates are set up in the following intervals:
 
-|                   |                   |              |
+| Minimum limit     | Maximum limit     | Tax rate     |
 |-------------------|-------------------|--------------|
-| **Minimum limit** | **Maximum limit** | **Tax rate** |
 | 0.00              | 50.00             | 30%          |
 | 50.00             | 100.00            | 20%          |
 | 100.00            | 0.00              | 10%          |
@@ -71,9 +68,8 @@ The sales tax is calculated on the whole taxable amount.
 ## Example: Interval method of calculation
 In the Values page, sales tax rates are set up in the following intervals:
 
-|                   |                   |              |
+| Minimum limit     | Maximum limit     | Tax rate     |
 |-------------------|-------------------|--------------|
-| **Minimum limit** | **Maximum limit** | **Tax rate** |
 | 0.00              | 50.00             | 30%          |
 | 50.00             | 100.00            | 20%          |
 | 100.00            | 0.00              | 10%          |
@@ -95,3 +91,6 @@ For more information, see [Sales tax rates based on the Marginal base and Calcul
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

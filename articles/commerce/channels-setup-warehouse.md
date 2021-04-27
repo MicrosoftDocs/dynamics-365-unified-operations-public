@@ -4,11 +4,9 @@
 title: Set up a warehouse
 description: This topic describes how to set up a warehouse to be used with a new channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,12 +27,9 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Warehouse set up
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to set up a warehouse to be used with a new channel in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Each Commerce channel requires a configured warehouse to be associated with it. The following procedures provide the minimum configuration required to set up a warehouse for a Commerce channel. For more information regarding warehouse setup, please see the [Warehouse management overview](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
@@ -150,3 +145,6 @@ The following image shows details for a configured warehouse.
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

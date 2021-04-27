@@ -4,11 +4,9 @@
 title: Out-of-box security reports
 description: This topic describes the security reports that help you understand the set of security roles running in your environment and the users assigned to each role.
 author:  peakerbl
-manager: AnnBe
 ms.date: 08/14/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -74,3 +72,6 @@ Any of the above reports can be set to run as a batch job by going to the **Run 
 
 ![Batch processing of reports](media/a6142c903497381171bf6c6b27495895.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

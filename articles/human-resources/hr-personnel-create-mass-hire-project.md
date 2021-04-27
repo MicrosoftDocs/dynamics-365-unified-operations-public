@@ -4,11 +4,9 @@
 title: Create a mass hire project
 description: This procedure walks through the process of setting up a mass hire project. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -27,6 +25,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create a mass hire project
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -51,3 +51,6 @@ This procedure walks through the process of setting up a mass hire project. A re
     * Optionally, select the Department for the new positions.  
 13. Click OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

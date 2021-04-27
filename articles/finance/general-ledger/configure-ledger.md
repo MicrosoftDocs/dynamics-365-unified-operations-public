@@ -4,11 +4,9 @@
 title: Configure ledgers
 description: This topic provides information about how to configure ledgers for each legal entity. It includes information about how to select currencies, fiscal calendars, the chart of accounts, and the account structures that should be used with each legal entity.
 author: kweekley
-manager: 
 ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -86,3 +84,6 @@ If you use two currencies, or if you use a single currency but transactions are 
 Realized gains and losses are profits and losses that are made from completed transactions. They are recorded on the profit and loss statement. Unrealized gains and losses are profits and losses that have materialized, but the transaction isn't completed. In other words, you've posted an invoice, for example, but the invoice isn't yet settled and paid. Unrealized gains and losses are recorded on the balance sheet.
 
 For more information about how to use two currencies, see [Dual currency](dual-currency.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Batch processing of alerts
 description: This topic provides information about batch processing of alerts.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/10/2010
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -22,7 +20,7 @@ ms.reviewer: sericks
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-3-30 
 ms.dyn365.ops.version: Platform update 15
 ---
@@ -88,3 +86,6 @@ If you set up a batch processing window, an alert is sent when the alert rule is
 
 1. Go to **System administration** &gt; **Periodic tasks** &gt; **Alerts** &gt; **Due date alerts**.
 2. In the **Due date alerts** dialog box, enter the appropriate information.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -5,11 +5,9 @@
 title: Synchronize work orders in Field Service to sales orders in Supply Chain Management
 description: This topic discusses the templates and underlying tasks that are used to synchronize work orders in Field Service to sales orders in Supply Chain Management. 
 author: ChristianRytt
-manager: tfehr
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -282,3 +280,6 @@ Filter:
 (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and ((msdyn_linestatus eq 690970001) or (msdynce_headersystemstatus eq 690970004) or (msdyn_allocated ne true))
 
 [![Template mapping in Data integration](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

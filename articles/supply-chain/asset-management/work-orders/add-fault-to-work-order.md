@@ -4,12 +4,10 @@
 
 title: Add fault to work order
 description: This topic describes how to add fault registrations to work orders in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -24,7 +22,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -86,3 +84,6 @@ From the **All assets** list page, you can print an asset fault report that show
 >[!NOTE]
 >To print a fault report for several assets or asset types, select **Asset management** > **Reports** > **Assets** > **Asset fault**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

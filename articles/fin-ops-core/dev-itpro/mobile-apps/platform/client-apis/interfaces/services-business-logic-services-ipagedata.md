@@ -4,11 +4,9 @@
 title: PageData type
 description: Represents the data that is loaded into a page.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -85,3 +83,6 @@ may not have a simple value and thus cannot be accessed via this API.
 
 #### Returns any
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Propose and post the impairment amount by using fixed asset journal
 description: Use this procedure to learn how to propose and post the impairment amount by using a fixed asset journal. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -53,3 +51,6 @@ This procedure was created using the demo data company JPMF.
     * Two fixed assets in the Impairment test were proposed with the following information: Fixed asset number, the impairment amount on credit, and the date as the date in impairment test.  
 11. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

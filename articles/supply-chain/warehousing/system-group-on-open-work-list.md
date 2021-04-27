@@ -4,11 +4,9 @@
 title: System grouping on an open work list
 description: This topic describes how to filter the open work list on a mobile device.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -45,3 +43,6 @@ Use these steps to set up system grouping on an open work list.
 | System grouping field | Available only if <strong>Allow system work</strong> is set to <strong>Yes</strong>. Select the field that determines how picking work will be grouped for workers. For example, if you select the <strong>ShipmentId</strong> field, the worker will scan the shipment ID to group the picking work. All work for the shipment is then assigned to the worker. This field requires that you create a menu item to use existing work that is grouped by the system. Use the <strong>System grouping label</strong> field to inform the worker what to scan. |
 | System grouping label |                       Available only if <strong>Allow system work</strong> is set to <strong>Yes</strong>. Enter information for the worker about what to scan when picking work is grouped. For example, if you use the <strong>ShipmentId</strong> field to group picking work by shipment, you might enter Shipment ID in the field. This field requires that you create a menu item to use existing work that is grouped by the system. You must also select the field to group by in the <strong>System grouping</strong> field.                       |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

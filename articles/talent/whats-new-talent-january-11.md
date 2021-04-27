@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Talent - Core HR (January 11, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR for January 11, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 01/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -70,3 +68,6 @@ When the **Employee self-service** workspace is selected as the initial startup 
 
 ### Termination reason code updates position assignment record
 The termination reason code will now update the position assignment when terminating an employee and ending the position. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

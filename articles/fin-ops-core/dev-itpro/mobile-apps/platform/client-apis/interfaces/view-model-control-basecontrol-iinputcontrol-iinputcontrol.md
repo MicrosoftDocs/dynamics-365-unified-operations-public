@@ -4,11 +4,9 @@
 title: InputControl type
 description: Input control interface with methods and attributes for all input controls.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -209,3 +207,6 @@ onDataChanged: [EventHook](event-ievent-ieventhook.md) &lt;null&gt;
 An event that is triggered when the input control's data changes.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

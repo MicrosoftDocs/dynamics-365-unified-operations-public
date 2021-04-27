@@ -4,11 +4,9 @@
 title: Troubleshoot live synchronization issues
 description: This topic provides troubleshooting information that can help you fix issues with live synchronization.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -137,3 +135,6 @@ To fix the issue, follow these steps.
 
 3. Make sure that the **externalenvironmentURL** column has the correct Dataverse or app URL. Delete any duplicate rows that point to the wrong Dataverse URL. Delete the corresponding rows in the DUALWRITEPROJECTFIELDCONFIGURATION and DUALWRITEPROJECTCONFIGURATION tables.
 4. Stop the table mapping, and then restart it
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

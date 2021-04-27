@@ -4,11 +4,9 @@
 title: Align workforce skills with business needs
 description: You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively. You can also specify the skills that are required for a specific job.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Align workforce skills with business needs
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively. You can also specify the skills that are required for a specific job.
 
@@ -68,3 +68,6 @@ Skill-mapping profiles allow you to find current employees or candidates with qu
 You can create a skill profile analysis to view a list of the competencies of a worker, applicant, or contact person as of a specific date. You can create a skill gap analysis to compare a person’s skills and the skills that are required for a specific job.  
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

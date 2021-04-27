@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Deploy and use a continuous build and test automation environment
 description: This topic describes how to deploy a developer topology that supports continuous build and test automation.
 author: RobinARH
-manager: AnnBe
 ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -173,3 +167,6 @@ Select specific completed build and view success/ failure details.
 [![View details of build success or failure](./media/build10-1024x446.jpg)](./media/build10.jpg) Click on Test link to visualize test execution failure. 
 
 [![Visualize test execution failure](./media/build11-1024x455.jpg)](./media/build11.jpg)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

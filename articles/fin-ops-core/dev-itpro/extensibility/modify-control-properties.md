@@ -1,19 +1,13 @@
 ---
 
-# required metadata
-
 title: Modify the properties of form controls through extension
 description: This topic explains how you can modify the properties of a control by using an extension.
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -74,3 +68,6 @@ When you've finished, the page includes additional fields, catch weight informat
 
 > [!NOTE]
 > You can't modify the **AutoDeclaration** property on controls. However, you can still access the controls by name from code. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

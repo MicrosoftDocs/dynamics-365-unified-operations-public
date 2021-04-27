@@ -4,11 +4,9 @@
 title: Modules overview
 description: This topic provides an overview of module development in Microsoft Dynamics 365 Commerce. It includes best practices about when and how to extend a module's style or features.
 author: samjarawan
-manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -79,7 +77,7 @@ By using Commerce site builder, you can make the following code-free style chang
 
 By using the online SDK, you can make custom theme changes to achieve the following results:
 
-- [Modify the module CSS](../css-override-files.md) to change any of a module's styling.
+- [Modify the module CSS](theming.md) to change any of a module's styling.
 - [Extend a module's view](theme-module-extensions.md) to change the rendered HTML layout.
 - [Extend a module's definition file](theme-module-extensions.md) to add or remove configuration fields, slots, data actions, or resources.
 - [Override a module library component](override-theme-component.md) to change the component behavior.
@@ -227,3 +225,6 @@ If you require a feature that isn't available in the set of modules in the modul
 [Create a new module](create-new-module.md)
 
 [Data action overrides](data-action-overrides.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

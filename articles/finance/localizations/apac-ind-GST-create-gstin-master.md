@@ -4,11 +4,9 @@
 title: Create a GSTIN master
 description: This topic explains how to create a Goods and Services Tax Identification Number (GSTIN) master. This task is part of the master data setup that is required to make the India localization solution for GST available.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -86,3 +84,6 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 6. In the **Business vertical** field, select a value.
 
 ![Customer registration numbers](media/IND-GST-GSTIN-4.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

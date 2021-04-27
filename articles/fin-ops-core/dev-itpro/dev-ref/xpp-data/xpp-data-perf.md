@@ -1,28 +1,13 @@
 ---
-# required metadata
-
 title: Conversion of operations from set-based to record-by-record
 description: This topic describes how to speed up SQL operations in the X++ language.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: robinr
-# ms.tgt_pltfrm: 
 ms.custom: 150273
-ms.assetid: 999a5ecf-559b-4d66-8b05-9a8e477e0518
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
@@ -36,8 +21,8 @@ You can use the following statements and methods to help improve performance by 
 - [delete_from](xpp-delete.md#delete-from-statement)
 - [update_recordset](xpp-update.md#update-recordset-statement)
 - [insert_recordset](xpp-insert.md#insert-recordset-statement)
-- [RecordSortedList.insertDatabase](../system-classes/recordsortedlist-class.md#method-insertdatabase)
-- [RecordInsertList.insertDatabase](../system-classes/recordinsertlist-class.md#method-insertdatabase)
+- [RecordSortedList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)
+- [RecordInsertList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)
 
 In some situations, these record set–based operations can be converted to slower record-by-record operations. The following table identifies these situations.
 
@@ -68,3 +53,6 @@ public void tutorialRecordInsertList()
     insertList.insertDatabase();
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

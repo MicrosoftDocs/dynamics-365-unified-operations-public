@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: X++ data selection and manipulation overview
 description: This topic provides links to topics about X++ data selection and manipulation.
 author: robinarh
-manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
-ms.prod:
-ms.service: dynamics-ax-platform
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
 audience: Developer
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
 ms.custom: 150273
 ms.search.region: Global
-# ms.search.industry:
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
@@ -40,7 +26,7 @@ You can use SQL statements, either interactively or in source code, to retrieve 
 - [Insert data](xpp-insert.md): Add one or more new records to a table.
 
     - **[insert](xpp-insert.md#insert-method) and [doInsert](xpp-insert.md#do-insert-method) methods** – Insert one record at a time.
-    - **[insert\_recordset](xpp-insert.md#insert-recordset-statement), [RecordInsertList.insertDatabase](../system-classes/recordinsertlist-class.md#method-insertdatabase), and [RecordSortedList.insertDatabase](../system-classes/recordsortedlist-class.md#method-insertdatabase) methods** – Insert multiple records at the same time.
+    - **[insert\_recordset](xpp-insert.md#insert-recordset-statement), [RecordInsertList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase), and [RecordSortedList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase) methods** – Insert multiple records at the same time.
 
 - [Update data](xpp-update.md): Modify the data in existing table records.
 
@@ -65,3 +51,6 @@ The [Conversion of operations from set-based to record-by-record](xpp-data-perf.
 You can also use the [SysDa classes](../sysda.md) to retrieve and modify data. The extensible SysDa API provides almost all the data access possibilities that are available in X++.
 
 The **executeQueryWithParameters** API can help [mitigate a SQL injection attack](../query-with-parameters.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

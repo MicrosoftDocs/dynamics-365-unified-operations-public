@@ -3,13 +3,11 @@
 
 
 title: Manage Bing Maps for your organization
-description: Learn how you can manage Bing Maps for your application. When Bing Maps is turned on, people can view a map of a store, warehouse, or other location when creating orders. 
+description: This topic describes how to manage Bing Maps for your application.
 author: aamirallaqaband 
-manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -51,3 +49,5 @@ obtain a key.
 If you enable the Bing Maps feature, address information is automatically sent over the internet to the Bing Maps service to display an online map of the address within this application. If you click on Bing Maps within this application, you will be redirected to [www.bing.com/maps](https://www.bing.com/maps). Your use of Bing Maps is also governed by the [Bing Maps End User Terms of Use](https://go.microsoft.com/?linkid=9710837).  
   
 Administrators can turn the Bing Maps feature on or off under **Commerce shared Parameters** > **Bing Maps**. Turning the Bing Maps app off makes the feature unavailable in this application.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

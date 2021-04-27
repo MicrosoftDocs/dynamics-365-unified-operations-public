@@ -1,32 +1,16 @@
 ---
-# required metadata
-
 title: X++ attribute classes
 description: This topic describes the use of attributes in X++.
 author: pvillads
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 150243
-ms.assetid: 9c927660-3268-4a77-9a83-97759a487483
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ attribute classes
@@ -181,3 +165,6 @@ static void AttributeReflection33Job(Args _args)
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Synchronize sales invoice headers and lines directly from Supply Chain Management to Sales
 description: This topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Dynamics 365 Supply Chain Management to Dynamics 365 Sales. 
 author: ChristianRytt
-manager: tfehr
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -141,3 +139,6 @@ The following illustrations show an example of a template mapping in Data integr
 [Synchronize contacts directly from Sales to contacts or customers in Supply Chain Management](contacts-template-mapping-direct.md)
 
 [Synchronization of sales orders directly between Sales and Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

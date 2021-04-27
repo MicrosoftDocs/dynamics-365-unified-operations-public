@@ -4,11 +4,9 @@
 title: Asset leasing conventions
 description: This topic describes conventions for leased assets.
 author: moaamer
-manager: Ann Beebe
-ms.date: 1/14/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,6 +33,7 @@ ms.dyn365.ops.version: 10.0.17
 # Asset leasing conventions
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes conventions for leased assets. Leasing conventions are used to determine the commencement date of a lease book. If the leasing convention is set to **None**, the commencement date is the same as the start date for the lease (that is, the value of the **Lease start date** field). If the leasing convention is set to **Full month**, the commencement date is the first day of the month that the lease's start date falls in.
 
@@ -58,3 +57,6 @@ To view or assign the leasing convention, follow these steps.
 3. Select **Save**.
 
 When a lease is created, the commencement date of each book is automatically entered based on the start date that is entered for the lease and the leasing convention that is specified for the book.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

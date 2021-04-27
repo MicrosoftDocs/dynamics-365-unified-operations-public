@@ -4,11 +4,9 @@
 title: Track commissions in the point of sale (POS) by using sales groups
 description: It's a common retail practice to track sales by the associate who worked with the customer—providing assistance, up-selling, cross-selling, and processing the transaction.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -92,3 +90,6 @@ POS allows users to configure button grids, which are included in screen layouts
 ## Calculating commissions
 
 Commission is calculated for the workers in the specified sales groups at the time of statement posting or sales order posting. The commission amount is determined based on the worker's commission share, as defined in the sales group and the associated commission calculation settings for the customer and/or products on the transaction.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

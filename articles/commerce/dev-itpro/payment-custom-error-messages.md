@@ -4,11 +4,9 @@
 title: Create custom localized error messages for payment terminal extensions
 description: This topic explains how to create custom error messages for payment terminal extensions.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -262,3 +260,6 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

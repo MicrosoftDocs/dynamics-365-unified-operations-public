@@ -4,11 +4,9 @@
 title: On-premises disaster recovery configuration
 description: This topic describes how to configure Dynamics 365 Finance + Operations (on-premises) for disaster recovery.
 author: faix
-manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -108,7 +106,7 @@ The disaster recovery environment should have a similar configuration as the pro
 
 ## SQL Server Always-On Availability configuration
 
-The business data database (AXDB) should be replicated to the secondary datacenter, typically using SQL Server Always-On availability groups feature. For more information, see [Always On availability groups](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
+The business data database (AXDB) should be replicated to the secondary datacenter, typically using SQL Server Always-On availability groups feature. For more information, see [Always On availability groups](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
 
 | Database | Replicated |
 |----------|------------|
@@ -276,3 +274,6 @@ Clean up your DR environment by manually unprovisioning all Dynamics Service Fab
 
 >[!IMPORTANT]
 > Your primary environment will be functioning as usual and can be serviced after you ensure that all items in the checklist are verified.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

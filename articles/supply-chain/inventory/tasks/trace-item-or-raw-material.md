@@ -4,11 +4,9 @@
 title: Trace an item or raw material
 description: This procedure demonstrates how to use item tracing to identify where items or raw materials have been used or are being used. 
 author: pjacobse
-manager: tfehr 
 ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -61,3 +59,6 @@ The top node of the tree represents the on hand quantity of the selected item an
 9. Click **Shipped sales orders**.
 10. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

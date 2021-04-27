@@ -3,12 +3,10 @@
 
 title: Asset attribute overview
 description: This topic provides an overview of asset attributes in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -44,3 +42,6 @@ The **Asset attribute overview** page shows a separate line for each asset. The 
 3. Select **OK**. A list shows all the assets that use the selected asset type. For each asset, all related asset attribute types are shown on the same line.
 
 The **Asset attribute** page shows a separate line for each attribute type that is used on an asset. To open this page, select **Asset management** \> **Inquiries** \> **Assets** \> **Asset attribute**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

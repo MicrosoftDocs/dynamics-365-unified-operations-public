@@ -4,11 +4,9 @@
 title: VALUEINLARGE ER function
 description: This topic provides information about how the VALUEINLARGE Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 08/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -94,3 +92,6 @@ EXISTS (SELECT 'x' FROM tempdb."DBO".? T2 WHERE ((T2.PARTITION=?) AND (T1.RecId=
 [Logical functions](er-functions-category-logical.md)
 
 [VALUEIN functions](er-functions-logical-valuein.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

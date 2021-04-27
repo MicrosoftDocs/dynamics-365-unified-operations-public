@@ -3,11 +3,9 @@
 title: Customs declaration numbers
 description: This topic provides information about how to set up and track customs declaration numbers.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -101,3 +99,6 @@ Before you can register customs declaration numbers for newly received goods, yo
 
     ![Invoice facture](media/7%20Invoice-facture.jpg)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

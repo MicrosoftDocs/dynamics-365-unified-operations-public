@@ -3,11 +3,9 @@
 title: Transactions through intermediary
 description: This topic provides information about the functionality for accounting intermediary deals that are made by an agent. 
 author: v-nadyuz
-manager: AnnBe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -93,3 +91,6 @@ The current implementation of this functionality has the following limitations:
 2. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the **Report code** reference.
 
 For more information, see [Purchases on commission](rus-purchases-on-commission.md) and [Sales on commission](rus-sales-on-commission.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

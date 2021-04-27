@@ -3,12 +3,10 @@
 
 title: Document Reporting Services
 description: This topic describes the reporting solution that simplifies service administration, increases developer productivity, and provides enhanced report viewing.
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 69191
 ms.assetid: 57aaba22-4068-4c3f-9428-7fcd99632295
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -107,3 +105,6 @@ The process for developing a report in the current version is easier than it is 
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

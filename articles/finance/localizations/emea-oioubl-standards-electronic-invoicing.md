@@ -3,11 +3,9 @@
 title: Supported standards for electronic invoicing in Europe
 description: This topic explains the level of coverage that exists for electronic invoicing for Europe. 
 author: mrolecki
-manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,7 +48,7 @@ The following country-specific formats of electronic invoices are available:
 -   Estonian specific format version 1.2
 -   Finvoice 3.0 for Finland
 
-Electronic invoicing is based on [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). An **Invoice model** data model, invoice model mapping, and several country/region-specific ER format configurations have been created for the following countries/regions: 
+Electronic invoicing is based on [Electronic reporting (ER)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md). An **Invoice model** data model, invoice model mapping, and several country/region-specific ER format configurations have been created for the following countries/regions: 
 
 - Austria (AT)
 - Denmark (DK)
@@ -111,7 +109,7 @@ The setup and specifics of electronic invoices depend on the country/region that
 - [PEPPOL](https://support.microsoft.com/help/4490320)
 
 ## Additional resources
-For more details about how to set up electronic invoices, you can play the following [Task guides](../../fin-and-ops/get-started/help-overview.md#task-guides) in the Help pane:
+For more details about how to set up electronic invoices, you can play the following [Task guides](../../fin-ops-core/fin-ops/get-started/help-overview.md#task-guides) in the Help pane:
 
  - Set up OIOUBL electronic invoicing
  - Import OIOUBL electronic invoicing configurations
@@ -119,3 +117,6 @@ For more details about how to set up electronic invoices, you can play the follo
 
 > [!NOTE] 
 > Although these Task guides were created for Danish-specific e-invoice format *OIOUBL*, they are applicable for other supported countries/regions with minor deviations.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

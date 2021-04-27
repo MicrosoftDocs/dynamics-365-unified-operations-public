@@ -4,11 +4,9 @@
 title: Map cost element dimension members to a common set of dimension members
 description: By mapping different cost element dimension members to a common set of cost element dimension members, you merge data into a common format for analysis purposes.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,3 +55,6 @@ You can update the mapping definitions for a cost element dimension at any time.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

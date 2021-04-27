@@ -4,11 +4,9 @@
 title: Database movement API - Reference - v1 - Overview
 description: This topic provides a reference for version 1 (v1) of the Database Movement application programming interface (API).
 author: laneswenka
-manager: AnnBe
 ms.date: 09/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -34,3 +32,6 @@ ms.dyn365.ops.version: 10.0.0
 Welcome to the Database Movement application programming interfaces (API) reference for the version 1 (v1) endpoint. Use the table of contents to the left to view details of each endpoint that is available.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

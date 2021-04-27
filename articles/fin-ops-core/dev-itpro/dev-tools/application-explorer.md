@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Application Explorer
 description: This topic reviews Application Explorer, and the views and filtering methods in it. The topic also describes how to work with elements in Application Explorer.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 74934
 ms.assetid: cf2154eb-56a9-4867-b1ef-85690440b177
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Application Explorer
@@ -129,3 +114,6 @@ These actions can be used only when the filter results are limited to a single m
 [Develop and customize home page](developer-home-page.md)
 
 [Development tools in Visual Studio](development-tools-overview.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

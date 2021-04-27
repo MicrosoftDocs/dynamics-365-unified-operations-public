@@ -4,11 +4,9 @@
 title: Budgeting home page
 description: This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 Finance.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/09/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -75,3 +73,6 @@ For example, you can define who does budgeting, what is budgeted, and what the p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

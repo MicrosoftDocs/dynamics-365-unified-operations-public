@@ -4,11 +4,9 @@
 title: Year-end processing in the public sector
 description: This article provides information about year-end processing for a public sector organizations.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -63,3 +61,6 @@ Posting definitions govern the accounting that occurs on the closing entries, an
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

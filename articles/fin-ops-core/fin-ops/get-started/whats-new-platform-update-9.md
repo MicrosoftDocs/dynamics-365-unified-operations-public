@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9 (July 2017)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9. This version was released in July 2017.
 author: tonyafehr
-manager: AnnBe
 ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -111,3 +109,6 @@ Performance issues with loading metadata have been addressed, so you should no l
 
 > [!NOTE]
 > This issue will still occur on virtual machines that are used as build machines (VMs that have enlistments and compile code).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Development and continuous delivery FAQ
 description: This topic answers to questions that are frequently asked by ISVs and partners about development, testing, delivery, and lifecycle management.
 author: RobinARH
-manager: AnnBe
 ms.date: 01/21/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 202614
 ms.assetid: bc80fee3-8f54-43c4-9162-f058056c956c
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
@@ -65,7 +51,7 @@ For example, if you apply a binary hotfix or platform update to a build VM, the 
 
 ### What strategy do I use for test automation?
 
-For test automation, concentrate on unit tests (use the SysTest framework) that are data independent or create their own data. Use a smaller number of functional scenario tests (based on Task Recorder) that rely on test data to execute. Scenario tests are more expensive to maintain. Unit tests can then be executed on any development environment easily and quickly. Review the [Test Automation Pyramid](https://blogs.msdn.microsoft.com/dave_froslie/2016/03/09/test-automation-pyramid/) blog article and refer to [Automated testing guidance](https://blogs.msdn.microsoft.com/axdevalm/2016/08/12/automated-testing-guidance-for-ax-7/).
+For test automation, concentrate on unit tests (use the SysTest framework) that are data independent or create their own data. Use a smaller number of functional scenario tests (based on Task Recorder) that rely on test data to execute. Scenario tests are more expensive to maintain. Unit tests can then be executed on any development environment easily and quickly. Review the [Test Automation Pyramid](/archive/blogs/dave_froslie/test-automation-pyramid) blog article and refer to [Automated testing guidance](/archive/blogs/axdevalm/automated-testing-guidance-for-ax-7).
 
 ![media/testautomationpyramid1.png](media/testautomationpyramid1.png) Some key concepts to keep in mind:
 
@@ -158,3 +144,6 @@ The following servicing requests and tools are supported by LCS, which may help 
 6.  Apply updates (Hotfixes, customizations) to a sandbox environments for validation before applying them to a production environment.
 
 For more information about planning an environment, see [Environment planning](../../fin-ops/imp-lifecycle/environment-planning.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

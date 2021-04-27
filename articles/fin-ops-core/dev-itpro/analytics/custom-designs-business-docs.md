@@ -3,12 +3,10 @@
 
 title: Create custom designs for business documents
 description: This topic shows how to create a custom report design for an existing application business document by using a pure extension model. 
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 266574
 ms.assetid: fba7faa3-716b-4adf-ab3e-8573f3614894
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 
@@ -108,3 +106,6 @@ The following walkthrough shows the process of introducing a custom report desig
     [![Print Management settings after compilation](./media/app-extension-print-mgt-after-1024x608.png)](./media/app-extension-print-mgt-after.png)
 
 You’ve now finished customizing the business document. Users will now be presented with the custom report design for the business document when they process transactions in the application.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

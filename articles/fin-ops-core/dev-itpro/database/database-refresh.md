@@ -4,11 +4,9 @@
 title: Refresh database
 description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
-manager: AnnBe
-ms.date: 11/30/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata
@@ -36,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a refresh of the database to a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the transactional and financial reporting databases of your production environment into the target, sandbox UAT environment. If you have another sandbox environment, you can also copy the databases from that environment to your target, sandbox UAT environment.
 
 > [!IMPORTANT]
+> Copying production data during business hours or peak hours could have an impact on the production system. It's highly recommended to do the refresh database operation during off-peak hours and limit only one refresh operation at a time.
+
 > Copying production data to your sandbox environment for the purpose of production reporting is not supported.
 
 ## Self-service database refresh
@@ -62,7 +62,7 @@ The information in this section lists certain elements of the database that are 
 * All users except the admin will be set to **Disabled** status.
 
 #### When refreshing from sandbox environment to production environment
-This is also referred to as [Golden configuration promotion](/dbmovement-scenario-goldenconfig.md).
+This is also referred to as [Golden configuration promotion](dbmovement-scenario-goldenconfig.md).
 * Batch job history is stored in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
 
 #### These elements are removed for all database refresh operations
@@ -130,3 +130,6 @@ The database refresh process (self-service or via service request) cannot be com
 If upgrading your sandbox UAT environment to a newer Application version (for example, 7.3 to 8.1), be sure to perform the database refresh action prior to starting the upgrade. After your sandbox is upgraded to the newer version, you cannot restore an older production environment database in to the sandbox UAT environment.
 
 Conversely, if your production environment is newer than your target sandbox, you will need to either upgrade the target sandbox prior to the refresh or simply deallocate, delete, and redeploy prior to performing the refresh.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

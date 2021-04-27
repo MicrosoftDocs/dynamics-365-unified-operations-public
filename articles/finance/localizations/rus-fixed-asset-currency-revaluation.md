@@ -4,11 +4,9 @@
 title: Fixed asset currency revaluation
 description: This topic provides information about fixed asset currency revaluation for Russia.
 author: Anasyash
-manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -58,3 +56,6 @@ The following changes occur when currency is revaluated (depreciated):
 ## Reverse revaluation transactions
 
 Revaluation transactions are reversed in the same way as acquisition transactions (putting into operation transactions). Two transactions are created: a cost revaluation transaction and a depreciation revaluation transaction.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: SQL Server Reporting Services (SSRS) reports that are available
 description: This topic points you to a report that lists the SQL Server Reporting Services (SSRS) reports available.
 author: sericks007
-manager: AnnBe
-ms.date: 01/25/2018
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -43,4 +41,7 @@ Reports can be defined simply as any visualization of a structured data set. Thi
 For more information, see [Create reporting solutions](create-nextgen-reporting-solutions.md).
 
 ## To view the report
-The [SQL Server Reporting Services Reports report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each report that is available. The report indicates the data set used for each report, as well as the filters and fields available on each report. For more information, see [Find information about standard data entities](../data-entities/data-entities-report.md).
+The **SQL Server Reporting Services Reports report**, included with the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61), lists each SSRS report that is available. The report indicates the data set used for each report, as well as the filters and fields available on each report.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Update an environment
 description: This topic explains how to update an environment that was deployed by using the self-service deployment experience.
 author: laneswenka
-manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -122,3 +120,6 @@ After you've marked an update as a release candidate, follow these steps to upda
 
 > [!IMPORTANT]
 > For environments that are deployed in the modern infrastructure stack, if servicing is unsuccessful, the environment is automatically rolled back. To learn why the operation was unsuccessful, you can download the logs from the environment history page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

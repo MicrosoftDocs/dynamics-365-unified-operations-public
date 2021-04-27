@@ -4,11 +4,9 @@
 title: Deploy a demo environment
 description: This topic explains how to deploy a demo environment on Microsoft Azure using Microsoft Dynamics Lifecycle Services (LCS).
 author: sarvanisathish
-manager: AnnBe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -54,7 +52,7 @@ Use this procedure to deploy a demo environment on Azure using LCS.
     - For Finance and Operations, select the most recent Azure Resource Manager (ARM) topology for Finance and Operations.
     - For Commerce, select **Dynamics 365 for Commerce - Demo**.
 4. In the **Deploy environment** dialog box, enter the name of the environment. This name should be unique in the Azure subscription. To make environments easy to identify, consider forming an acronym using the user’s name and the topology.
-5. Select the size of the virtual machine (VM). You must use **Ev3-series sizes** for Finance and Operations workloads. We recommend **Ev3**. If you experience allocation failures, see the [Azure troubleshooting guide](https://docs.microsoft.com/azure/virtual-machines/troubleshooting/allocation-failure).
+5. Select the size of the virtual machine (VM). You must use **Ev3-series sizes** for Finance and Operations workloads. We recommend **Ev3**. If you experience allocation failures, see the [Azure troubleshooting guide](/azure/virtual-machines/troubleshooting/allocation-failure).
 6. Set the **Instances** field to 1.
 
     > [!NOTE] 
@@ -75,3 +73,6 @@ To log on to your demo environment, do the following.
 
       - **Log on to Finance and Operations**
       - **Log on to Commerce**
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

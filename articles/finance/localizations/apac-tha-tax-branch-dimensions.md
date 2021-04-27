@@ -4,11 +4,9 @@
 title: Tax branch dimensions
 description: This topic provides information about tax branches for Thailand.
 author: anasyash
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics365-financials
 ms.technology: 
 
 # optional metadata
@@ -116,3 +114,6 @@ Use the **Sites** page to create one or more sites, and to assign a tax branch t
 5. On the **Tax branch** FastTab, in the **Tax branch** field, select the tax branch code.
 
 6. On the **Addresses** FastTab, select **Add**, and then, in the **New address** dialog box, enter the address details.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

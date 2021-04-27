@@ -4,16 +4,14 @@
 title: Asset leasing reports
 description: This topic lists and briefly describes the reports that are available in Asset leasing.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/27/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: SysOperationTemplateForm 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -169,3 +167,6 @@ The Weighted-average discount rate report satisfies the US GAAP disclosure requi
 |     Currency                       	|     The abbreviation for the transactional currency used. All reports will convert the transactional currency to the reporting currency. 	|
 |     Lease payments remaining       	|     The total amount of unpaid lease payments from the payment schedule remaining from the **As of** date.         	|
 |     Weighted payments remaining    	|     The lease payments remaining multiplied by the discount rate used.   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

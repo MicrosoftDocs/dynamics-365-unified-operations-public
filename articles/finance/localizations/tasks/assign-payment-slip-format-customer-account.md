@@ -4,11 +4,9 @@
 title: Assign a payment slip format to a customer account
 description: This procedure walks you through setting up the payment slip attachment format for a selected customer. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -54,3 +52,6 @@ This functionality is available for legal entities whose primary address is in D
     * None – Do not print a payment slip. Choose this option if the payment amount is in a currency other than Danish kroner (DKK).   FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.   FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.     
 12. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

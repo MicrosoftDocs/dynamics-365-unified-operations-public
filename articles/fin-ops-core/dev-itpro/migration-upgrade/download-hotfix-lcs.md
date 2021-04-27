@@ -4,11 +4,9 @@
 title: Download updates from Lifecycle Services (LCS)
 description: This topic covers what updates you should expect to see and how you can get the updates from Lifecycle Services (LCS).
 author: AngelMarshall
-manager: AnnBe
 ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -90,7 +88,7 @@ Based on your product and version, you will have different update options from L
 > [!NOTE]
 > If you are on a release that is noted above, you need to upgrade as soon as possible. 
 >
-> For the X++ updates that have been released for these versions, they are available from [Issue Search in Lifecycle Services](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs).
+> For the X++ updates that have been released for these versions, they are available from [Issue Search in Lifecycle Services](../lifecycle-services/issue-search-lcs.md).
 
   
 ## Download binary updates
@@ -133,3 +131,6 @@ To download X++ updates, follow these steps in LCS.
 ## Additional resources
 - [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md)
 - [Install metadata hotfixes in development environments](./install-metadata-hotfix-package.md) 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,16 +4,14 @@
 title: Creating work orders
 description: This topic explains how to create work orders in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -68,9 +66,6 @@ To create work orders that are based on your maintenance schedule, follow these 
 
 ## Group work order lines that are automatically created while a maintenance plan runs
 
-> [!IMPORTANT]
-> The functionality that is described in this section is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
-
 This feature lets you define rules for grouping work order lines under a single work order when the system is set up to generate work orders automatically, based on a maintenance plan. Previously, automatically generated work orders could contain only one line. However, you can now group work orders by, for example, asset, asset type, or functional location. (Manually generated work orders could already be grouped in this way, as described in the previous section of this topic.)
 
 ### Enable grouping for automatically generated work orders
@@ -78,7 +73,7 @@ This feature lets you define rules for grouping work order lines under a single 
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Asset Management*
-- **Feature name:** *(Preview) Apply rules for grouping work orders while running a maintenance plan*
+- **Feature name:** *Apply rules for grouping work orders while running a maintenance plan*
 
 ### Set up grouping for automatically generated work orders
 
@@ -101,3 +96,6 @@ To set up grouping for automatically generated work orders, follow these steps.
 1. If you want the options to apply when you run only some of your maintenance plans, on the **Records to include** FastTab, add filters as you require, just as you might do for other batch jobs in Microsoft Dynamics 365 Supply Chain Management.
 1. On the **Run in the background** FastTab, set up batch and scheduling options as you require, just as you might do for other batch jobs in Supply Chain Management.
 1. Select **OK** to run and/or schedule the selected maintenance plans.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

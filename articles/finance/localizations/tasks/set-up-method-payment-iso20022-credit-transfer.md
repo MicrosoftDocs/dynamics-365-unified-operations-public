@@ -4,11 +4,9 @@
 title: Set up method of payment for ISO20022 credit transfer
 description: This procedure shows how to set up the vendor method of payment for ISO20022 credit transfer or any other payment type using electronic reporting to generate a file. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -50,3 +48,6 @@ This is the third procedure, out of five, that illustrates the vendor payment pr
 10. In the Payment account field, specify the values 'DEMF OPER'.
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

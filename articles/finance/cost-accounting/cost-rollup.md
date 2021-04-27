@@ -4,11 +4,9 @@
 title: Cost rollup policy and overhead calculation 
 description: This topic provides information about how to determine the correct level of secondary cost elements and create cost rollup rules that fit into organization reporting and cost traceability. 
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -306,3 +304,6 @@ The clear separation between **Cost allocation** and **Cost rollup policies** pr
 -  [Cost element dimensions](cost-elements.md)
 -  [Dimension hierarchy](dimension-hierarchy.md)
 -  [Overhead calculation](overhead-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

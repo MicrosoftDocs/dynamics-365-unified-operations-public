@@ -4,11 +4,9 @@
 title: Intent letters - Invoicing usual exporters
 description: This topic provides information about how to set up intent letters and how to use them when you issue invoices.
 author: ilkond
-manager: AnnBe
 ms.date: 12/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -38,7 +36,7 @@ To receive a supply of goods or services free of sales tax in Italy, companies t
 The following prerequisites must be met before you invoice:
 
 - The primary address of the legal entity must be in Italy.
-- The **Intent letters - invoicing of usual exporters** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The **Intent letters - invoicing of usual exporters** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up Accounts receivable parameters
 
@@ -95,3 +93,6 @@ The amount of the invoice transaction will be subject to sales tax calculation o
 The details of the intent letter will be also included in a printable layout of the invoice.
 
 ![Print invoice](media/emea-ita-exil-intent-inv-print.jpg)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

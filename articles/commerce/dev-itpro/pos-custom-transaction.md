@@ -4,11 +4,9 @@
 title: Add custom controls to Modern POS (MPOS) transaction pages
 description: This topic explains how to add a new custom control on a transaction page by using the screen layout designer.
 author: mugunthanm
-manager: AnnBe
 ms.date: 11/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -409,3 +407,6 @@ You can add more information to a transaction page by using custom controls. You
 3. Add any item to the transaction, and then select the line item that you added.
 
     The custom control should show the ID and description for the selected line item.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

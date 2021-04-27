@@ -4,11 +4,9 @@
 title: Turnover and balances statement for Poland
 description: This topic provides information about the Turnover and balances statement for Poland.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,3 +44,6 @@ The standard way to calculate the account balance is to include the difference i
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Set up coupons for retail sales
 description: This topic provides an overview of coupons and explains how to set them up.
 author: scott-tucker
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -47,6 +45,8 @@ To create a coupon, you create the discount and the coupon separately. You then 
 
 > [!NOTE]
 > After a coupon is linked to a discount, several fields on the discount page in Commerce become read-only, because they are managed by the coupon's settings. These fields include the fields for the status and standard date ranges.
+> 
+> While using the coupon in the call center channel, you need to select the **Recalculate** button **(Sell tab > Calculate > Recalculate)** in order for the discount associated to the coupon to get applied. This additional step will be removed in a future release.
 
 ### Limited-use coupons
 
@@ -88,3 +88,6 @@ Coupon functionality comprises multiple distinct features. Commerce Headquarters
 - **HQ is partially updated, but Commerce Scale Unit and POS aren't updated.** In an HQ update, the coupon and discount pages are updated, and the commerce price engine is also updated. If only one of those two components is updated, some pages in Commerce won't match the price calculation data. Therefore, unexpected discount calculations or errors might occur during discount calculations.
 - **HQ is updated, but Commerce Scale Unit and POS aren't updated (N-1).** Because not all stores can be updated at the same time, we recommend that you update HQ before you update stores. In the N-1 scenario, new functionality that is related to coupons won't be available in stores that haven't been updated yet. For example, the coupon functionality introduces "exclude" lines. If you use exclude lines on a discount, they won't be applied in a store that is running an earlier version.
 - **HQ isn't updated, but Commerce Scale Unit and POS are updated (N+1).** Because the updated price engine in Commerce Scale Unit can handle legacy discount codes during price calculations, the update should have no functional impact in this scenario.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

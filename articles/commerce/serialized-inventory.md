@@ -4,11 +4,9 @@
 title: Point of sale (POS) improvements for serialized products
 description: This topic lists improvements that have been made to serialized products to help you save time and be more productive.
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -45,3 +43,6 @@ Based on the settings in Commerce Headquarters, products can be classified as ei
 - **Serial numbers aren't required in order to place customer orders** – Customer orders can be placed in one store and fulfilled from another. A cashier who places a customer order doesn't have to provide the serial number. The serial number will be provided during the picking or pickup step. However, a serial number must be provided for all line items that the **Carry out** delivery type is selected for. Otherwise, the transaction can't be completed.
 - **Serialized products aren't aggregated on the transaction screen** – The **Aggregate products** setting in the **Terminal** field group on the **Functionality profile** page lets you aggregate the same non-serialized products on the transaction screen. When the same products are aggregated, they are easier to see in the transaction grid. However, because serial numbers are generally unique, and sales associates don't have to enter serial numbers until checkout, the **Aggregate products** setting doesn't apply to serialized products. Therefore, serialized products won't be aggregated on the transaction screen if the **Aggregate products** setting is selected.
 - **Ability to search the journals by serial number** – The journals can now be additionally searched by serial numbers. To do so, open the "Journals" operation and press the "Advanced search" button in the app bar. Using the "Add filter" button, a filter can be applied to search for the serial numbers as well.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Packing materials and fees
 description: This topic provides information about packing material fees that are paid to recycling companies at specific intervals.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 02/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -115,3 +113,6 @@ You can print packing material weights on an invoice and indicate who pays the r
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. On the **Updates** tab, on the **Invoice** FastTab, set the **Print packing material weight** option to **Yes**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

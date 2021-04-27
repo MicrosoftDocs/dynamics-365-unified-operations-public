@@ -2,11 +2,9 @@
 title: Complete tasks in Business process modeler (BPM)
 description: This topic provides information about additional tasks that you can complete in Business process modeler (BPM).
 author: AngelMarshall 
-manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service:  dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -78,3 +76,6 @@ When you distribute a BPM library, the library will be available to all users wh
 1. Ask the customer to invite you to their project.
 2. Sign in to the customer's LCS project by using your organization's account.
 3. On the **Business process libraries** page, copy the library from the **Corporate libraries** pane to the customer's project.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

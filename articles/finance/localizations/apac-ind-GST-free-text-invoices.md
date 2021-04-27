@@ -4,11 +4,9 @@
 title: Free text invoices
 description: This topic explains how to create a free text invoice.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -60,3 +58,6 @@ ms.dyn365.ops.version: 10.0.4
 2. Select **Voucher**.
 
 ![Financial entries for both the intrastate and interstate transactions](media/Annotation-2019-05-20-133425.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

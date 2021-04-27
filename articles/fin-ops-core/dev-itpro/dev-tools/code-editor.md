@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Code editor features
 description: This topic describes the code editor for Visual Studio.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod:
-ms.service: dynamics-ax-platform
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
 audience: Developer
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
 ms.custom: 23941
 ms.assetid: 87d75162-a9dd-43d2-a316-833e2c799f08
 ms.search.region: Global
-# ms.search.industry:
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Code editor features
@@ -54,3 +39,6 @@ You can open the element designer that corresponds to the current X++ source cod
 [Develop and customize home page](developer-home-page.md)
 
 [Development tools in Visual Studio](development-tools-overview.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

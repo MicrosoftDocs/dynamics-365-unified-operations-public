@@ -1,31 +1,16 @@
 ---
-# required metadata
-
 title: X++ and C# comparison
 description: This topic compares X++ and C# syntax and programming.
 author: RobinARH
-manager: AnnBe
 ms.date: 04/10/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 72424
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ and C# comparison
@@ -1644,3 +1629,6 @@ The following table lists other differences of the **select** statement between 
 |Cursors for navigating returned rows.|The while select statement provides cursor functionality. The alternative is to use the **next** keyword.|You can declare a **cursor** for looping through the rows that are returned from a **select** statement.||
 |**From** clause.|The **from** keyword is optional when no columns are listed and only one table is referenced. The following two syntax options are equivalent: <br>`select \* from tCustTable;` <br>`select tCustTable;`|A **select** statement cannot read from a table unless the **from** clause is used.|In X++ SQL, the simple **select** statement fills the table buffer variable with the first row that was returned. This is illustrated by the following code fragment: <br>`select \* from tCustTable;` <br>`info(tCustTable.Name);`|
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

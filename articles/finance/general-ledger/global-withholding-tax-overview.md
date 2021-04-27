@@ -4,11 +4,9 @@
 title: Global withholding tax
 description: This topic provides information about global withholding tax functionality and how to set it up. Global withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated at the item level.
 author: roschlom
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,3 +48,6 @@ Global withholding tax functionality is enhanced for vendor and customer transac
 
 > [!NOTE]
 > Global withholding tax functionality can’t be turned on for countries/regions where localized withholding tax solutions already exist. These areas include but are not restricted to India, Brazil, Thailand, Saudi Arabia, Ireland, Great Britain and the United States.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

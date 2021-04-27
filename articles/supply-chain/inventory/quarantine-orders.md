@@ -4,11 +4,9 @@
 title: Quarantine orders
 description: This topic describes how quarantine orders are used to block inventory.
 author: perlynne
-manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -71,3 +69,6 @@ Additional resources
 --------
 
 [Inventory blocking](inventory-blocking.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Commerce Data Exchange best practices
-description: This topic is intended for people who implement functionality that is related to data synchronization, Commerce Data Exchange (CDX), in a Microsoft Dynamics 365 Commerce environment.
+description: This topic describes data synchronization with Commerce Data Exchange (CDX) in a Microsoft Dynamics 365 Commerce environment.
 author: jashanno
-manager: AnnBe
-ms.date: 02/08/2021
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -29,6 +27,7 @@ ms.dyn365.ops.version: 10.0.12
 ---
 
 # Commerce Data Exchange best practices
+
 [!include[banner](../includes/banner.md)]
 
 This topic is intended for people who implement functionality that is related to data synchronization, Commerce Data Exchange (CDX), in a Microsoft Dynamics 365 Commerce environment. It gives best practices advice for implementations.
@@ -41,7 +40,20 @@ Before you go through this topic, it's important that you understand the concept
 
 The main content of this topic is organized into tables, where the first column includes lists of tag-like "associated areas" to help you more quickly find best practices that are related to your areas of concern. For new implementations, you might find it useful to copy these tables to a location where you can check off the various best practices as they are completed. In this way, you can help ensure that the implementation is prepared as well as possible before you move forward to production.
 
+## Recommended configurations (with up-to-date maturity information to denote confidence of functionality)
+
+The following configurations have been released but cause changes to logic that may not be useful for all usage scenarios. These features have been tested but have not been thoroughly validated in all scenarios. In the following table, maturity has been listed to provide insight in regard to confidence of functionality.
+
+The features will change from month to month, so it is valuable to check back regarding the maturity of a particular feature and whether any new features have been added. To apply any of the following features, go to **Retail and Commerce > Headquarters setup > Parameters > Commerce parameters**.  On the leftmost menu, select **Configuration parameters**.  In the page that appears, enter the key (shown in the table below) into the **Name** field and the default value (listed in the **Description** column in the table below) into the **Value** field.
+
+| Feature | Key | Description |  Maturity |
+|------------------|---------------------|------------------------------|-----------------------------------|
+| Delayed download session creation | CDX_ENABLE_DELAYED_OFFLINE_DOWNLOAD_SESSION_CREATION | This parameter delays the download sessions from being created until after the Modern POS device is activated.  This delay prevents creating unnecessary download sessions that may not be used for an extended period of time. The default value is **0**, which means disabled. To enable the feature, set the value to **1**.| High<br><br>(Feature was released in version 10.0.15.) |
+| Package order enforcement | CDX_ENABLE_DOWNLOAD_SESSION_DEPENDENCY_ENFORCEMENT | This parameter enforces download session application to apply in order. If a download session application fails (which would occur after a number of attempts that are defined in the **Try count times** value that is by default a value of three), the session will be marked as **Suspended** and session applications will not proceed until the suspended session is retried or canceled. Using this key, you cannot rerun previously applied sessions (sessions that are not in the **Available** or **Suspended** state).<br><br>This feature will prevent download sessions failures due to unique key exceptions that could occur after applying download sessions out of order. The default value is **0**, which means disabled. | Moderate<br><br>(Feature was released in version 10.0.18.) |
+| Roll back on failure | CDX_ENABLE_ROLLBACK_ON_FAILURE | **Due to a known issue with this key, it is not recommended for use.**  When synchronizing transactions from an offline database to the channel database (based on the P-job distribution schedule), the system normally merges records. This means that records with duplicate transaction IDs will be overwritten. With this feature, the offline synchronization will instead insert records. This insert prevents the overwrite and throws an error so the issue can be investigated. At this time, the purge of offline transactions post synchronization could fail, triggering the insert error and stopping the offline sync. Due to this, it is currently recommended that this feature should be disabled. The default value is **1**, meaning that it's enabled by default.  It is highly recommended to change this value to **0**. | Low, due to known issue.<br><br>(Feature was released in version 10.0.13.) |
+
 ## Updating configurations
+
 The following should be performed after every update to the Dynamics 365 environment.
 
 | Associated areas | Best practice |
@@ -66,10 +78,12 @@ The following should be performed after every update to the Dynamics 365 environ
 
 ## Additional resources
 
-- [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md) 
-- [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md) 
-- [Dynamics 365 Commerce architecture overview](../commerce-architecture.md) 
-- [Select an in-store topology](retail-in-store-topology.md) 
-- [Device management implementation guidance](../implementation-considerations-devices.md) 
-- [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md) 
-- [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md) 
+- [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md)
+- [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md)
+- [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
+- [Select an in-store topology](retail-in-store-topology.md)
+- [Device management implementation guidance](../implementation-considerations-devices.md)
+- [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
+- [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

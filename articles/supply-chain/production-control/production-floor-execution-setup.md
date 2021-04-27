@@ -4,16 +4,14 @@
 title: Set up a device to run the production floor execution interface
 description: The production floor execution interface is set up for every device on the production floor. Companies typically set up each device differently, depending on the purpose that the device serves. For example, a company might have one device in the reception area, where workers clock in and clock out, and another on the shop floor, where workers manage their jobs.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -29,7 +27,6 @@ ms.dyn365.ops.version: Release 10.0.15
 # Set up a device to run the production floor execution interface
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The production floor execution interface is set up for every device on the production floor. Companies typically set up each device differently, depending on the purpose that the device serves. For example, a company might have one device in the reception area, where workers clock in and clock out, and another on the shop floor, where workers manage their jobs.
 
@@ -84,3 +81,6 @@ The upper part of the following illustration shows how the interface looks by de
 By default, the production floor execution interface automatically signs out if nobody uses it for 12 hours. A Supply Chain Management user must then sign in again. However, you can extend the time-out limit to up to 90 days.
 
 To extend the time-out limit, sign in to Supply Chain Management, and go to **System administration \> Users \> Session extensions**. Specify the Supply Chain Management user account that is used to sign in to the device, and the number of hours that the session should stay active for.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

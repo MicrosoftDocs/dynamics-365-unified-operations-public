@@ -3,12 +3,10 @@
 
 title: Functional location lifecycle states
 description: This topic describes how to set up functional location states and lifecycle models in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -67,3 +65,6 @@ When you have created the lifecycle states required for your functional location
 5. If you want to select all the available states for a model, click the ![select all available stages](media/03-setup-for-functional-locations.png) button. All states are transferred to the **Lifecycle states selected** section.
 6. If you want to remove a selected state from the model, select the state in the **Lifecycle states selected** section and then select the ![back arrow](media/04-setup-for-functional-locations.png) button.
 7. Select **Lifecycle state updates** to define which lifecycle states can follow a selected state.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

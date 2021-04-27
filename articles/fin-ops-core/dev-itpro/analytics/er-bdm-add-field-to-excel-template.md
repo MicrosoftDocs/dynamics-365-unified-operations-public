@@ -4,11 +4,9 @@
 title: Add new fields to a business document template in Microsoft Excel
 description: This topic provides information about how to add new fields to a business document template in Microsoft Excel by using Business document management feature.
 author: NickSelin
-manager: AnnBe
 ms.date: 11/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -174,3 +172,6 @@ The modified template is used to generate the free text invoice report for the s
 [Business document management overview](er-business-document-management.md)
 
 [Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

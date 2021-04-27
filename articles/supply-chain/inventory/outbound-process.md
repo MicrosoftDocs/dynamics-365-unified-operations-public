@@ -4,11 +4,9 @@
 title: Outbound process overview
 description: This topic provides an overview of the outbound process in Inventory management. 
 author: perlynne
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -88,3 +86,6 @@ The inventory that hasn't already been reserved is reserved during picking list 
 As soon as all the picking lines have been picked on the **Picking list registration** page, the associated shipment is completed. The process for sales order packing slips can then be initialized based on the picked inventory.
 
 [![Update outbound shipments](./media/outbound-shipments.png)](./media/outbound-shipments.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

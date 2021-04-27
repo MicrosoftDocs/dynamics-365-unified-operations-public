@@ -4,11 +4,9 @@
 title: Leave and absence concepts
 description: This topic describes leave and absence concepts, and how time-off balances are determined. 
 author: andreabichsel
-manager: tfehr
 ms.date: 01/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -29,7 +27,7 @@ ms.dyn365.ops.version:
 # Leave and absence concepts
 
 The concepts and terms that are described in this topic can help you determine how an employee is awarded time off, and how that employee's time balances are calculated. For more information about leave and absence management, see 
-[Leave and absence management](https://docs.microsoft.com/dynamics365/unified-operations/talent/leave-absence-overview).
+[Leave and absence management](/dynamics365/unified-operations/talent/leave-absence-overview).
 
 ## Leave plan details
 
@@ -299,3 +297,6 @@ Forecasted balance (30) = Accrual amount (10 × 1) + Current balance (40) – Ca
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0.00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
 | Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.00    |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

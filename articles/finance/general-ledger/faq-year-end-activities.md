@@ -4,11 +4,9 @@
 title: Year-end activities FAQ 
 description: This topic has been compiled to assist with year-end closing activities.
 author: kweekley
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -28,6 +26,8 @@ ms.dyn365.ops.version: 10.0.14
 ---
 
 # Year-end activities FAQ 
+
+[!include [banner](../includes/banner.md)]
 
 This topic has been compiled to assist with year-end closing activities. The information in this topic primarily focuses on questions concerning year-end closing activities  for General ledger and Accounts payable.
 
@@ -142,3 +142,6 @@ Dynamics 365 Finance doesn’t print the 1096 Annual Summary and Transmittal of 
 A new Public sector feature, **Update 1099 information by main account**, has been added, which you can enable in the **Feature management** workspace. This feature lets you associate the 1099 values for a vendor by the main account in the accounting distribution, rather than the default account on the vendor record.
 
 For more information, see [Set up vendors for 1099 reporting](../localizations/noam-usa-set-up-vndrs-1099-rprtg.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Master planning and multisite functionality overview
 description: Master planning takes the settings of the site and warehouse inventory dimensions into account. 
 author: roxanadiaconu
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -55,3 +53,6 @@ The following topics describe how the planning engine works, when different sett
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

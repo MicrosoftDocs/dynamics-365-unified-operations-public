@@ -4,11 +4,9 @@
 title: Reverse the production order status
 description: This topic describes how to reverse production order status. 
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -56,3 +54,6 @@ When you reverse the status of a production order from **Started** to **Released
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

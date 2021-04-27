@@ -4,11 +4,9 @@
 title: Service objects overview
 description: Service objects are a customer’s assets and products for which you can perform a service.
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -69,3 +67,6 @@ line, and line 2 is the annual audit with a yearly interval assigned to it.
 
 [Create service objects](create-service-objects.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

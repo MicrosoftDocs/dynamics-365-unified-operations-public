@@ -4,11 +4,9 @@
 title: Performance troubleshooting using tools in Lifecycle Services (LCS)
 description: This topic describes tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you diagnose and mitigate performance issues.
 author: laneswenka
-manager: AnnBe
 ms.date: 10/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -78,3 +76,6 @@ All SQL performance tools in LCS are available under the **SQL Insights** tab on
 6. Go to the **Queries** tab and run **Current blocking query** to verify if the blocking statement was terminated.
 7. You can also check the **Environment History** page to see details on what process was terminated.
 8. To avoid this issue in the future, you should use indexes or plan guides, or turn off lock escalation, or use page locks if processes are blocking each other while operating on different records. If processes are operating on the same records, the only way to avoid blocking is by refactoring or rescheduling the processes to not operate on the same records at the same time.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

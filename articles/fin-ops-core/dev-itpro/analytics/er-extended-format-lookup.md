@@ -4,11 +4,9 @@
 title: Electronic reporting (ER) extended format lookup
 description: This topic describes how an ER format reference can be set up in the ER format lookup when the required format is stored in the Global repository.
 author: NickSelin
-manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,7 +35,7 @@ You can use the [Electronic reporting](general-electronic-reporting.md) (ER) fra
 
 Usually, you must specify what ER format must be used in a certain business process. To do that, select a single ER format in a lookup field that is configured as part of business process-specific parameters. These lookup fields are usually implemented by using the appropriate API of the ER framework. For more information, see [ER framework API - code to display a format mapping lookup](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
-For example, when you configure [foreign trade parameters](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters), you need to set up the references to individual ER formats that will be used to generate the Intrastat declaration and the Intrastat declaration control report. The screenshots below show how the ER formats lookup field looks like in the **Foreign trade parameters** page.
+For example, when you configure [foreign trade parameters](../../../finance/localizations/emea-intrastat.md#set-up-foreign-trade-parameters), you need to set up the references to individual ER formats that will be used to generate the Intrastat declaration and the Intrastat declaration control report. The screenshots below show how the ER formats lookup field looks like in the **Foreign trade parameters** page.
 
 If the current Finance instance contains no Intrastat business process-related ER formats, this lookup field will be empty.
 
@@ -98,3 +96,6 @@ If you have enabled the **Extended lookup of ER format configurations allowing t
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) framework API](er-apis-app73.md)
 - [Manage Electronic reporting (ER) configurations lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

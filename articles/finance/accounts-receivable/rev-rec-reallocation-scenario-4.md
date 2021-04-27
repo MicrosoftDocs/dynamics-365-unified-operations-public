@@ -4,11 +4,9 @@
 title: Revenue recognition reallocation - Scenario 4
 description: This topic goes through a reallocation scenario where a line is removed from an existing, partially invoiced sales order. This scenario produces the same result, regardless of whether the line is removed from the sales order or set to a canceled status.
 author: kweekley
-manager: aolson
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -82,3 +80,6 @@ When you select **Voucher**, the invoice journal shows the original accounting e
 Next, open the **All customers** page (**Accounts receivable \> Customers \> All customers**), select customer **US\_SI\_0003**, and then select **Transactions**. The **Customer transactions** page shows only the original invoice (000008), together with the original accounting entry. Because the **Post invoice corrections to Accounts receivable** option is set to **No** on the **General ledger parameters** page, only General ledger is updated. Therefore, the reversing and updated accounting entries aren't shown. Note that the revenue adjustment transactions that were created in [scenario 3](rev-rec-reallocation-scenario-3.md) are shown.
 
 [![Original accounting entry on the Customer transactions page](./media/47_rev-rec-scenarios.png)](./media/47_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

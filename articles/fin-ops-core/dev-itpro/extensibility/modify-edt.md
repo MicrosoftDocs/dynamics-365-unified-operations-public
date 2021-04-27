@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Modify extended data types (EDTs) through extension
 description: You can customize several properties on extended data types (EDTs) by using extensions.
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -61,3 +55,6 @@ If multiple ISVs have extended the same extended data type, the properties of th
 > [!NOTE]
 > Instead of extending an existing EDT, you can create a new one, deriving it from the existing EDT. This allows you to edit more properties than you could edit using the extension approach. This means that you would need to modify the fields using this EDT to use your new EDT.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

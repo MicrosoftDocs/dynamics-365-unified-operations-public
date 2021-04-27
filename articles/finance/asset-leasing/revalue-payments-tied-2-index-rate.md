@@ -4,16 +4,14 @@
 title: Revalue lease payments that are linked to an index rate
 description: This topic describes the adjustment that is made to lease the liability for a right-of-use (ROU) asset when variable lease payments change because of a change in the index rate.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: AssetLeaseIndexRevaluation
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -72,3 +70,6 @@ To view the effects of the lease revaluation process on IFRS 16 leases, open the
 You can view the newly generated payment schedule that starts on the revaluation date and show the total updated payment amount. A new lease liability amortization schedule and an asset depreciation schedule have also been created to reflect the adjusted payment schedule.
 
 The journal entry has automatically posted the adjustment journal entry to the account for the change in lease payments that are related to the index revaluation.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

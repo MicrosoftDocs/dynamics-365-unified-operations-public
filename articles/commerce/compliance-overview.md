@@ -4,11 +4,9 @@
 title: Compliance overview
 description: This topic is an overview of the compliance guidance that is provided with Microsoft Dynamics 365 Commerce to help you make your company's sites compliant.
 author: BrianShook
-manager: annbe
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -50,3 +48,6 @@ To learn more about the basic principles that Microsoft uses, visit the [Microso
 [Add a privacy policy page](add-privacy-page.md)
 
 [Replace user IDs associated with tracked content changes](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

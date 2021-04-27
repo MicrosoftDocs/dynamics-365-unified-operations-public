@@ -4,11 +4,9 @@
 title: Test services by using third-party utilities
 description: This topic describes how to set up third-party utilities to test services.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -163,3 +161,6 @@ SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with
     ![Validate the results](./media/soapui8.png)
 
 In our example, we have now successfully authenticated and then queried UserSessionService via SOAP.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

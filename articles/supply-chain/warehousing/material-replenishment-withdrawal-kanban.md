@@ -4,11 +4,9 @@
 title: Replenishment with withdrawal kanbans
 description: This topic describes how the withdrawal kanban is used for material replenishment for manufacturing activities.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -89,3 +87,6 @@ In the following scenario, the transfer activity of the withdrawal kanban is con
 
 After a kanban is consumed at the production input location, the kanban is reported as empty, and a new kanban is added to the flow. When the kanban is created, a wave line is added to a kanban wave. When the kanban wave is processed, warehouse work for kanban picking is created. The warehouse worker processes the work for kanban picking and is directed by the work to pick the material for the kanban in a warehouse location. As this warehouse worker confirms the pick, the kanban is automatically completed, and the warehouse worker is guided to the put the material to the production input location.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

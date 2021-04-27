@@ -4,11 +4,9 @@
 title: Revaluate foreign currency for advance holders (Russia)
 description: This topic provides information about foreign currency revaluation for advance holders in Russia.
 author: ilkond
-manager: AnnBe
 ms.date: 09/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -91,3 +89,6 @@ After the calculation is completed, a new line for the exchange adjustment is ge
 - Select **Voucher** to open the **Voucher transactions** page, where you can review the transactions that were completed for the general ledger.
 - Select **Transactions** to open the **Advance holder transactions** page, where you can review the transactions that were completed for the advance holder.
 - Select **Reviewed** to mark the selected line as reviewed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

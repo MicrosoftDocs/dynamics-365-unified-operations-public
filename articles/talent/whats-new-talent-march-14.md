@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (March 14, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for March 14, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 03/14/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -50,7 +48,7 @@ Changes made in this release enable performance management scenarios when using 
 With this change, you can now select multiple employees and bulk assign one or more checklists to those employees. 
 
 ### Platform update 24 for Finance and Operations
-For additional details about Platform update 24 for Finance and Operations, see [What's new or changed in Finance and Operations platform update 24 (March 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). Significant changes in platform 24 include: 
+For additional details about Platform update 24 for Finance and Operations, see [What's new or changed in Finance and Operations platform update 24 (March 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). Significant changes in platform 24 include: 
 
 - Alerts are enabled in Talent.
 - The updated navigation bar now aligns with the Office header.
@@ -74,3 +72,6 @@ With Platform update 24 for Finance and Operations, users can create alert rules
 
 ### Duplicate employee check: Interface changes
 With this change, duplicates are detected as you enter name columns, and a status displays how many were found. You can select the provided link to open a new page to evaluate whether to use the detected match. The duplicates form doesn't automatically open, to avoid interrupting data entry.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

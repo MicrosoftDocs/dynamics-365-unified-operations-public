@@ -4,16 +4,14 @@
 title: Coverage time fences
 description: This topic describes how to set up coverage time fences when you're using Planning Optimization. A coverage time fence indicates your planning horizon and limit.
 author: ChristianRytt
-manager: tfehr
 ms.date: 01/18/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: ReqCreatePlanWorkspace
+ms.search.form: ReqGroup, ReqItemTable, ReqPlanSched
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -88,3 +86,6 @@ As you're setting up coverage time fences, consider the following points:
 - Intercompany demand will be ignored if the requested ship date that is calculated isn't inside the coverage time fence. Note that, for built-in master planning, intercompany demand isn't limited by the coverage time fence.
 - Demand forecasts will be ignored if the budget date isn't inside the coverage time fence. Note that, for built-in master planning, demand forecasts aren't limited by the coverage time fence.
 - Planning Optimization is time zone–aware. It considers the time zone at the supply and demand sites, and the time of the planning run. For example, master planning is triggered at 11 AM on October 15 from a site in Denmark (GMT+1 time zone), and a coverage time fence of ten days is used. In this case, supply and demand from a site in Seattle (GMT-8 time zone) is included until 2 AM on October 25 (= ten 24-hour days after master planning was triggered, minus the time zone difference of nine hours). Note that the built-in master planning engine considers only the date of the time fence. Therefore, the result can differ.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

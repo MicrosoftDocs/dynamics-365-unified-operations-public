@@ -4,11 +4,9 @@
 title: Show counts in fields
 description: This topic explains how to calculate a count that is correct and that appears quickly. 
 author: robinarh
-manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -58,3 +56,6 @@ Follow these steps to configure the workspace page to use the recommended approa
 
 By using this approach, you also get the localized labels for **pageLink** controls. The result is a much faster experience when workspaces are loaded.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

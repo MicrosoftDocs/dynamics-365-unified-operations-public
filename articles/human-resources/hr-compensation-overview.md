@@ -4,11 +4,9 @@
 title: Compensation plans
 description: Compensation and Benefits Managers can use Compensation management to maintain and process fixed and variable compensation plans for the organization's employees.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Compensation plans
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Compensation and Benefits Managers can use Compensation management to maintain and process fixed and variable compensation plans for the organization's employees.
 
@@ -137,3 +137,6 @@ After you run a process event, you can recommend adjustments to an employee’s 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Calculation of tax exemption
 description: This topic describes functionality for tax exemption calculations in the point of sale (POS) and call center. 
 author: rubendel
-manager: annbe
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -123,3 +121,6 @@ The following steps show how to test this capability in demo data scenarios. The
 18. When the jobs have completed synchronization, open the POS.
 19. Add item **91050** to a transaction. The total that is due is **$75.06**.
 20. Add **Matthew Tolley** to the transaction. Taxes are recalculated to reflect this customer's exemption.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

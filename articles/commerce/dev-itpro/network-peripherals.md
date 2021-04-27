@@ -4,11 +4,9 @@
 title: Support for network peripherals
 description: This topic provides an overview of network peripherals that are supported in the store.
 author: rubendel
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -52,7 +50,7 @@ Functionality for network peripherals is supported by the Modern POS for Windows
 
 This functionality supports network-enabled payment terminals and receipt printers. You can provide cash drawer support by connecting the cash drawer to the network-enabled receipt printer via the d/k port.
 
-Out-of-box support for this functionality is provided by the [Microsoft Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). However, other payment connectors might be supported via the Commerce software development kit (SDK). Supported receipt printers include network-enabled receipt printers from Star Micronics and Epson.
+Out-of-box support for this functionality is provided by the [Microsoft Dynamics 365 Payment Connector for Adyen](./adyen-connector.md?tabs=8-1-3). However, other payment connectors might be supported via the Commerce software development kit (SDK). Supported receipt printers include network-enabled receipt printers from Star Micronics and Epson.
 
 Out-of-box support is provided for network protocols for Epson and Star Micronics receipt printers. Cash drawers that are connected to those printers via the d/k port are supported via ESC/P protocols.
 
@@ -60,7 +58,7 @@ Out-of-box support is provided for network protocols for Epson and Star Micronic
 
 ### Adyen payment terminal
 
-For information about how to set up an Adyen payment terminal, see the "POS payment terminal" section in [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3#pos-payment-terminal).
+For information about how to set up an Adyen payment terminal, see the "POS payment terminal" section in [Dynamics 365 Payment Connector for Adyen](./adyen-connector.md?tabs=8-1-3#pos-payment-terminal).
 
 ### Epson or Star Micronics receipt printer and a cash drawer
 
@@ -120,7 +118,7 @@ The Modern POS for iOS and Modern POS for Cloud applications don't have built-in
 10. On the cash drawer FastTab, enter the IP address of the printer. Leave the field for the port number blank.
 
     > [!NOTE]
-    > For detailed information about how to set up shared hardware stations, see [Configure and install Retail hardware station](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation).
+    > For detailed information about how to set up shared hardware stations, see [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md).
 
 11. Select **Save**
 12. Search for **Distribution schedules**.
@@ -135,6 +133,9 @@ Payment terminals can be shared only if a shared hardware station is deployed to
 
 ## Related articles
 
-- [Set up POS hybrid app on Android and iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
-- [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Dedicated payment terminals and prompts for a printer and cash drawer](https://go.microsoft.com/fwlink/?linkid=2129966)
+- [Set up POS hybrid app on Android and iOS](./hybridapp.md)
+- [Dynamics 365 Payment Connector for Adyen](./adyen-connector.md?tabs=8-1-3)
+- [Dedicated payment terminals and prompts for a printer and cash drawer](../pos-multi-hws.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

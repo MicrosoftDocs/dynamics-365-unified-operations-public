@@ -4,11 +4,9 @@
 title: Autofirming with Planning Optimization
 description: This topic explains how to use automatic firming with Planning Optimization.
 author: ChristianRytt
-manager: tfehr
 ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -29,6 +27,8 @@ ms.dyn365.ops.version: AX 10.0.7
 
 ---
 
+<!-- KFM: delete this topic and redirect to [Firm planned orders](planned-order-firming.md) -->
+
 # Autofirming with Planning Optimization
 
 [!include [banner](../../includes/banner.md)]
@@ -37,6 +37,8 @@ Automatic firming lets you firm (that is, release) planned orders as part of the
 
 > [!NOTE]
 > Auto-firming of a planned purchase order can occur only if the item is associated with a vendor.
+> 
+> Firmed derived orders (subcontract purchase orders) will show a status of *In-review* when case change tracking is enabled.
 
 ## Turn on autofirming
 
@@ -70,3 +72,6 @@ Both Planning Optimization and the planning engine that is built into Microsoft 
 - Autofirming is based on the requirement date (end date).
 - To help guarantee that orders are firmed in due time, the firming time fence must be longer than the lead time.
 - If you want to firm all orders that must start during the current week, the firming time fence must be the lead time plus one week.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

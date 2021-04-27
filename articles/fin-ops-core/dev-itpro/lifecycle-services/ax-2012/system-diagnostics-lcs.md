@@ -4,11 +4,9 @@
 title: System diagnostics in Lifecycle Services (LCS)
 description: This topic provides information about System diagnostics in Lifecycle Services (LCS).
 author: kfend
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 19061
 ms.assetid: 9a217373-f72b-4a28-adef-79900e40c872
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 
@@ -63,3 +61,6 @@ The following topics explain how to install and use System diagnostics.
 -   [System diagnostics in Lifecycle Services (LCS)](system-diagnostics-lcs.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

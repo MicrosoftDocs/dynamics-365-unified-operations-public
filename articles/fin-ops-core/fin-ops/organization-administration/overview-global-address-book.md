@@ -2,13 +2,11 @@
 # required metadata
 
 title: Global address book overview
-description: The global address book can help you understand the relationships among people and organizations that are associated with your organization. For example, a customer may also be a vendor in a marketing campaign, or a worker in your organization may also be a vendor.
+description: The global address book can help you understand the relationships among people and organizations that are associated with your organization.
 author: msftbrking
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -75,3 +73,6 @@ Each party record's addresses, locations, and contact information are shared acr
 ### Locations and transactions
 
 When a party role is included in a transaction, the location, address, or contact information of the party can be accessed when transaction details are entered.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

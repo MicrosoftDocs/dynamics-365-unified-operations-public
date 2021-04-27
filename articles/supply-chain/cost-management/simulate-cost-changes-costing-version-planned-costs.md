@@ -4,11 +4,9 @@
 title: Simulate cost changes by using a costing version for planned costs
 description: This article explains how you can simulate the effects of cost changes on a manufactured item’s calculated costs by using a separate costing version for planned costs.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,3 +60,6 @@ After you enter the simulated cost changes, calculate the costs for manufactured
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

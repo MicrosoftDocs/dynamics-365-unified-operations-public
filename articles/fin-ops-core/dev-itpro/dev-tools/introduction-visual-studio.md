@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Development tools tutorial
 description: This tutorial tours the Fleet Management solution in Visual Studio and introduces you to the development tools.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod:
-ms.service: dynamics-ax-platform
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
 audience: Developer
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
 ms.custom: 23441
 ms.assetid: ba523585-bab1-49c9-b6c9-6db1403494d9
 ms.search.region: Global
-# ms.search.industry:
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Development tools tutorial
@@ -127,3 +112,6 @@ The code in a solution is stored as XML. The following instructions show you how
 3. On the **View** menu, click **Error List** to see the list of best-practice warnings. We've deliberately left some warnings in the build to demonstrate this feature.
 4. Double-click any warning message to view the code or resource that caused the warning.
 5. In the **Window** menu, click **Close All Documents** to close all open documents.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

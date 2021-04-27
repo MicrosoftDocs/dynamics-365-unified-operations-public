@@ -4,11 +4,9 @@
 title: Regulatory job category
 description: This topic describes the Regulatory job category option set for Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -28,6 +26,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Regulatory job category
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This topic describes the Regulatory job category option set for Dynamics 365 Human Resources.
 
@@ -53,3 +53,6 @@ This enumeration specifies the option set for regulatory job category option set
 
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
 [Example query for Recruiting request](hr-admin-integration-ats-api-recruiting-request-example-query.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

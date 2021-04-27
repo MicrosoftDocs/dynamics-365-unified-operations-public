@@ -2,11 +2,9 @@
 title: Delivering ISV solutions using One Version
 description: The topic provides information about how independent software vendors (ISVs) can use One Version to deliver their solutions.
 author: FrankDahl
-manager: AnnBe
 ms.date: 04/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -193,7 +191,7 @@ The currently released product that is maintained in the servicing branch should
 
 If the testing is successful, this step will validate that a customer installation of the current version of your ISV solution won't have to be updated when Microsoft broadcasts the new release to the customer.
 
-If the testing isn't successful, you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, in turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
+If the testing isn't successful, you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, in turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
 
 ### Currently released products – Testing design-time compatibility
 
@@ -203,7 +201,7 @@ You should run your suite of automated developer tests, automated functional tes
 
 If the testing is successful, this step will validate that your ISV solution won't have to be updated even if source code is supplied to the customer and the customer recompiles the ISV solution.
 
-If the testing isn't successful, and the issue isn't one of the categories that are described in [Breaking changes](../extensibility/breaking-changes.md), you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, it turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
+If the testing isn't successful, and the issue isn't one of the categories that are described in [Breaking changes](../extensibility/breaking-changes.md), you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, it turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
 
 ### Currently released products – Updating the base build
 
@@ -213,7 +211,7 @@ As Microsoft updates your customers to new releases, you should periodically upd
 
 You validate your new solution development on either the latest released version or the released version that you plan for to use for servicing when your new release goes out. However, in both cases, consider doing validation on the most current version. This validation will help with early discovery of issues or uptake work that you must do.
 
-If an unexpected break occurs, then you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process.
+If an unexpected break occurs, then you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process.
 
 ## Deploying updates
 
@@ -245,3 +243,6 @@ Here are some areas where alignment will be required:
 Binary compatibility is supported, provided that you don't recompile. We recommend that your ISV solution not be compiled in customer environments. Instead, you should deploy precompiled binaries that you've prepared and validated. Your solution binaries can then be created from your servicing branch, based on an earlier version, when this approach is practical.
 
 If an implementation partner or customer compiles your solution in an updated environment, new warnings and errors might occur, as was mentioned in the [Design-time compatibility](#design-time-compatibility) section of this topic. Therefore, we recommend that implementation partners not compile your solution. However, this recommendation doesn't mean that you shouldn't share your source code to help support debugging, for example. You should just consider taking steps to avoid compilation of your code, so that implementation partners aren't exposed to design-time issues.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

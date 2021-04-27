@@ -4,11 +4,9 @@
 title: Omni-channel payments overview
 description: This topic provides an overview of omni-channel payments in Dynamics 365 Commerce.
 author: rubendel
-manager: AnnBe
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -244,3 +242,6 @@ When an order that has multiple tenders and multiple lines is picked up, the cas
 - [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
 - [Configure BOPIS in a Dynamics 365 Commerce evaluation environment](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

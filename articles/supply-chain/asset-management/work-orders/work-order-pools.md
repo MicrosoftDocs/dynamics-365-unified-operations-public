@@ -3,12 +3,10 @@
 
 title: Work order pools
 description: This topic describes how to work with work order pools in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -114,3 +112,6 @@ As described in the previous section, you can add work orders to a work order po
 
 To remove a work order from a work order pool, repeat these steps, but select **Remove** in step 3.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

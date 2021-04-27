@@ -4,11 +4,9 @@
 title: Troubleshoot sales orders
 description: This topic describes how to fix issues that you might encounter while you work with sales orders.
 author: SmithaNataraj
-manager: tfehr
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -115,3 +113,6 @@ Supply Chain Management doesn't currently support the calculation of commissions
 The bundle item isn't available for the purchase order because, if you examine the sales order lines for the bundle item, you will notice that the quantity is *0* (zero) and the status is *Canceled*. This behavior is by design. The sales order buys only the components of the bundle item. It doesn't buy the bundle item itself.
 
 If you must buy a bundle, consider whether you have to mark it as bundle item, because this functionality is designed for revenue recognition scenarios. For more information about bundle items, see [Bundles](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

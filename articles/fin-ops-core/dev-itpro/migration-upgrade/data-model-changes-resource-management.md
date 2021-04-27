@@ -4,11 +4,9 @@
 title: Project resource scheduling data model
 description: This topic provides information about the Project resource scheduling data model.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -114,3 +112,6 @@ The following table lists the facade classes that you can use as a starting poin
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

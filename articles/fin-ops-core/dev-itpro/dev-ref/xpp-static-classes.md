@@ -1,31 +1,16 @@
 ---
-# required metadata
-
 title: X++ static classes
 description: This topic describes static classes in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 150303
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ static classes
@@ -117,3 +102,6 @@ ClassName::methodName();
 
 The accessor keywords on methods never restrict calls between two methods that are in the same class, regardless of which method is static or non-static. In a static method, calls to the **new** constructor method are valid even if the **new** constructor method is decorated with the **private** modifier. The syntax for these calls requires that the **new** keyword be used. The code in a static method must construct an instance object of its own class before it can call any instance methods on the class.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

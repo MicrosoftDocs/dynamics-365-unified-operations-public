@@ -4,11 +4,9 @@
 title: Configure authentication providers
 description: This topic provides an overview of the process for configuring a new OpenID authentication provider.
 author: kfend
-manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -48,3 +46,6 @@ Here is a walkthrough of the process for registering OpenID providers so that th
     ```xml
     redirectUrl=https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/Pages/OauthV2Redirect/OauthV2Redirect.aspx
     ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

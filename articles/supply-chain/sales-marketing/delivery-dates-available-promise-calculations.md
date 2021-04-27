@@ -4,11 +4,9 @@
 title: Order promising
 description: This topic provides information about order promising. Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
 author: ShylaThompson
-manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -85,3 +83,6 @@ Therefore, the ship date is set to 10 days from now, based on the ATP calculatio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

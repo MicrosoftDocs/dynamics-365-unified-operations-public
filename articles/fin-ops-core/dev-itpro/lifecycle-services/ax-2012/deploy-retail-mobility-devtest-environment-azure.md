@@ -4,11 +4,9 @@
 title: Deploy Retail mobility dev/test environments on Azure
 description: This topic explains how to deploy a Retail mobility dev/test environment on Microsoft Azure by using the cloud-hosted environments tool.
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -69,7 +67,7 @@ Connect the LCS project to your Azure subscription. This will enable LCS to depl
 
 4. Click **Next**.
 5. Click **Download** to download a management certificate. This management certificate enables LCS to communicate with Azure on your behalf. By default, the management certificate is saved to the **Downloads** folder on your computer and is named **LifecycleServicesDeployment.cer.**
-6. Upload the management certificate to Azure. To do so, see the instructions in [Upload an Azure Management API Management Certificate](https://docs.microsoft.com/azure/azure-api-management-certs).
+6. Upload the management certificate to Azure. To do so, see the instructions in [Upload an Azure Management API Management Certificate](/azure/azure-api-management-certs).
 
 7. Go back to the browser that displays the **Microsoft Azure setup** panel in LCS. Click **Next**.
 8. Select a region. The AX 2012 R3 environment will be deployed to a datacenter in this region.
@@ -182,12 +180,12 @@ Before you complete the following procedures, make sure that the following prere
 
 | Prerequisite                                                                                                                                                     | More information                                                                                                                                                                                                                                                                                                       |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Set up and configure the Dynamics AX application object server (AOS), database, and client. As mentioned, Dynamics AX may be installed on-premises, or on Azure. | [System setup for Microsoft Dynamics AX](https://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)                                                                                                                                                                                        |
+| Set up and configure the Dynamics AX application object server (AOS), database, and client. As mentioned, Dynamics AX may be installed on-premises, or on Azure. | [System setup for Microsoft Dynamics AX](/dynamicsax-2012/appuser-itpro/system-setup-for-microsoft-dynamics-ax)                                                                                                                                                                                        |
 | Import data into Dynamics AX.                                                                                                                                    | If you want sample data installed in your Dynamics AX environment, use the Test Data Transfer tool to install the sample data. For instructions, see [Test Data Transfer Tool (beta)](test-data-transfer-tool-beta-2012.md). |
-| Set up and configure Async Server.                                                                                                                               | [Commerce Data Exchange: Async Server](https://technet.microsoft.com/library/8f802c2f-37bc-4a5c-805e-bece3640245f(AX.60).aspx)                                                                                                                                                                                          |
-| Set up and configure Real-time Service.                                                                                                                          | [Commerce Data Exchange: Real-time Service](https://technet.microsoft.com/library/7dc09b26-47ba-403e-9b69-a61601d46bae(AX.60).aspx)                                                                                                                                                                                     |
-| Sync metadata for Commerce Data Exchange.                                                                                                                        | [Enter parameters for Retail Scheduler](https://technet.microsoft.com/library/bfe69872-8fb9-41d9-8f61-d206055dbd87(AX.60).aspx)                                                                                                                                                                                         |
-| Create a channel profile for the Retail Server using the public-facing URL of your Retail Server.                                                                | [Set up a channel profile](https://technet.microsoft.com/library/4ef00ad9-9da2-4d21-b3e1-637f77cab208(AX.60).aspx)                                                                                                                                                                                                      |
+| Set up and configure Async Server.                                                                                                                               | [Commerce Data Exchange: Async Server](/dynamicsax-2012/appuser-itpro/commerce-data-exchange-async-server)                                                                                                                                                                                          |
+| Set up and configure Real-time Service.                                                                                                                          | [Commerce Data Exchange: Real-time Service](/dynamicsax-2012/appuser-itpro/commerce-data-exchange-real-time-service)                                                                                                                                                                                     |
+| Sync metadata for Commerce Data Exchange.                                                                                                                        | [Enter parameters for Retail Scheduler](/dynamicsax-2012/appuser-itpro/enter-parameters-for-retail-scheduler)                                                                                                                                                                                         |
+| Create a channel profile for the Retail Server using the public-facing URL of your Retail Server.                                                                | [Set up a channel profile](/dynamicsax-2012/appuser-itpro/set-up-a-channel-profile)                                                                                                                                                                                                      |
 
 ### 
 
@@ -210,7 +208,7 @@ From the **Cloud-hosted environments** page, select your Retail mobility environ
 
 ### Install Modern POS on external devices
 
-Dynamics AX includes Modern POS, a point-of-sale app for PCs, tablets, and phones. For instructions about how to install it, see [Install Retail Modern POS](https://technet.microsoft.com/library/dn741434.aspx).
+Dynamics AX includes Modern POS, a point-of-sale app for PCs, tablets, and phones. For instructions about how to install it, see [Install Retail Modern POS](/dynamicsax-2012/appuser-itpro/install-retail-modern-pos).
 
 ## 6. Learn more about the service accounts for this environment
 The following sections provide information about the service accounts that were created when you deployed the environment.
@@ -234,3 +232,6 @@ Each virtual machine that you deployed has a local administrator account. This a
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

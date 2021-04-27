@@ -4,11 +4,9 @@
 title: Enroll an employee in a variable compensation plan
 description: The Compensation and Benefits manager can enroll employees in variable compensation plans to calculate cash and non-cash awards for employees. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -29,6 +27,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Enroll an employee in a variable compensation plan
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 The Compensation and Benefits manager can enroll employees in variable compensation plans to calculate cash and non-cash awards for employees. This procedure assumes that a variable compensation plan has been created with the Enable enrolment field set to Yes, and that eligibility rules have been created for that variable compensation plan. The demo data company used to create this procedure is USMF. To begin this procedure, go to Human resources > Workers > Employees > Compensation > Variable plan enrolment
 
 1. Click New.
@@ -45,3 +45,6 @@ The Compensation and Benefits manager can enroll employees in variable compensat
 8. Toggle the expansion of the Organizational overrides section.
     * If the employee's performance should take into consideration, the performance of different departments, or a department other than the one assigned on the employee's position, the department can be overridden. The Percent column should total 100.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

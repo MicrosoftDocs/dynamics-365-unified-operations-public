@@ -4,11 +4,9 @@
 title: Analyzing questionnaire results
 description: Questionnaire statistics can be used to calculate averages, totals, and percentages based on a set of demographic data. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -27,6 +25,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Analyzing questionnaire results
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -72,3 +72,6 @@ Questionnaire statistics can be used to calculate averages, totals, and percenta
 2. Click Result.
 3. Close the page.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

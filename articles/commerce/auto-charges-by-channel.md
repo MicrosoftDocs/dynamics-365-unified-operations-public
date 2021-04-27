@@ -3,11 +3,9 @@
 title: Enable and configure auto charges by channel
 description: This topic explains how to enable and configure auto charges by channel in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 # optional metadata
 # ms.search.form:  
@@ -130,3 +128,6 @@ By selecting **Transaction options \> Charges \> Manage charges** in the POS app
 [Omni-channel advanced auto charges](omni-auto-charges.md)
 
 [Prorate header charges to matching sales lines](pro-rate-charges-matching-lines.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

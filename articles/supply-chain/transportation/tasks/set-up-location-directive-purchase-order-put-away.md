@@ -4,11 +4,9 @@
 title: Set up a location directive for purchase order put-away
 description: This topic explains how to set up a simple location directive. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -87,3 +85,6 @@ This topic explains how to set up a simple location directive. The example that'
 4. In the **Criteria** field, type a value.
 5. Select **OK**. You can continue to add directive lines and directive actions until you have covered all the possible scenarios in your warehouse.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

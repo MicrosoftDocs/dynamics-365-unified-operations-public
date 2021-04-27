@@ -4,11 +4,9 @@
 title: Get support for Microsoft Dynamics 365 Talent
 description: This topic explains how to get help with Microsoft Dynamics 365 Talent.
 author: andreabichsel
-manager: tfehr
 ms.date: 05/07/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -53,3 +51,6 @@ To get support for the Onboard stand-alone app, use the resources in the followi
 | Report an issue. | Select the **Help** button (**?**) in the upper-right corner of the page, and then select **Report a problem**. Enter a description of the issue, and include an email address if you want to follow up on the issue. |
 | Get help with questions about Talent licensing. | Contact your partner or Microsoft sales representative. |
 | Request new features and functionality in Onboard. | Select the **Help** button (**?**), and then select **Ideas**. You can also visit [Dynamics 365 Talent: Onboard Ideas](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard) to view, search, or vote for existing ideas, or to add new ideas. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

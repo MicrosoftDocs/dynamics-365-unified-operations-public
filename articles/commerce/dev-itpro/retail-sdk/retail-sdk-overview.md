@@ -2,13 +2,11 @@
 # required metadata
 
 title: Retail software development kit (SDK)
-description: This topic provides general information about the Retail software development kit (SDK). The Retail SDK includes code, code samples, templates, and tools that you can use to customize commerce functionality.
+description: The Retail SDK includes code, code samples, templates, and tools that you can use to customize commerce functionality.
 author: robinarh
-manager: AnnBe
 ms.date: 01/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -77,7 +75,7 @@ To develop or build extensions by using the Retail SDK, you must have the follow
     + [runtime-2.1.17-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.1.17-windows-x64-installer)
     + TypeScript version 2.2.2
 
-        Visual Studio 2017 has TypeScript 3.1 as the default version. You must install version 2.2.2, because the POS app is based on that version. In Visual Studio, select **Tools \> Get Tools and Features**. On the **Individual components** tab, select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section, and install it. 
+        Visual Studio 2017 has TypeScript 3.1 as the default version. You must install version 2.2.2, because the POS app is based on that version. In Visual Studio, select **Tools \> Get Tools and Features**. On the **Individual components** tab, select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section, and install it.
 
 ## Build the Retail SDK
 
@@ -87,7 +85,10 @@ Before you start development via the Retail SDK, you must restore all the packag
 2. In the Command Prompt window, go to the Retail SDK folder.
 3. Run the **msbuild /t:rebuild** command from the root of the SDK folder. The dirs.proj file in the root of the SDK folder (RetailSDK\\dirs.proj or RetailSDK\\Code\\dirs.proj) contains all the details that are required to build the full SDK.
 
-    ![Running MSBuild from a Command Prompt window](media/retail-sdk-command-prompt.png)
+> [!NOTE]
+> Starting in Retail SDK version 10.0.18 or later, by default the retail SDK MSBuild will check whether the SDK prerequisites are installed, if not it will show the error message and scripts to run to install the prerequisites. You can skip the prerequisites check by passing the parameter MSBuild /p:CheckVSDependencies=false.
+
+ ![Running MSBuild from a Command Prompt window](media/retail-sdk-command-prompt.png)
 
 ## Retail SDK components
 
@@ -275,6 +276,7 @@ The following tables provide information about the components in the Retail SDK 
 </table>
 
 ### TypeScript proxy
+
 <table>
 <tbody>
 <tr>
@@ -462,3 +464,6 @@ It's important to emphasize that the non-customized Retail SDK should be stored 
 For development, a new customization branch should be created. At the beginning of the initial branch-out, this branch will be an exact copy of the Retail SDK mirror branch. It's the branch that will be used for the team's development. The version of the customization branch must be incremented at least every time that a build is created for testing. It can even be incremented every day. The file version to increment is defined by using the **CustomVersion** property in the Customization.setting file. If you update the version and rebuild, all binaries, packages, and manifest files are updated accordingly.
 
 The **CustomAssemblyVersion** property should be updated only when the update isn't backward-compatible and/or for major new releases. In other words, you should rarely update this property. In the previous illustration, the current file version of the customization branch is 1.0.2.\* (based on Microsoft version 7.0.2200.3). The file version of the first rolled-out release was 1.0.0.40 (based on Microsoft version 7.0.2000.0). When a testing phase is completed, and the final packages are being deployed with that version, it's important that you either increment the version or create a source control label.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

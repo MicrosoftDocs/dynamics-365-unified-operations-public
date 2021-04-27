@@ -4,11 +4,9 @@
 title: Refresh for training purposes
 description: This topic explains a general-purpose database refresh scenario for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
-manager: AnnBe
 ms.date: 01/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -141,3 +139,6 @@ To complete this reconfiguration more quickly, we recommend that you build a cus
 When the system is configured as you require, you can enable selected users to let them access the environment. By default, all users except the admin and Microsoft service accounts are disabled.
 
 Go to **System administration** \> **Users** \> **Users**, and enable the users that should have access to the UAT environment. If many users must be enabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](../office-integration/use-excel-add-in.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: RCS enhanced filtering in the RCS/Global repository
 description: This topic describes enhanced filtering capabilities for the RCS Global repository, which have been improved to include the additional filters.
 author: JaneA07      
-manager: AnnBe
 ms.date: 04/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -50,3 +48,6 @@ You can further refine the search by selecting document type, for example 'vendo
 [![Applied filter and Import for business document type](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG) 
 
 Filtered results can be imported into a users RCS repository or a Dynamics 365 Finance environment, either individually or as a set. To do this, select the group of configurations, and click **Import**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

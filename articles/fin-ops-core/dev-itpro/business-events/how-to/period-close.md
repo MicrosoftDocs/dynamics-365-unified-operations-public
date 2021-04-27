@@ -4,11 +4,9 @@
 title: Business events in financial period close
 description: This topic explains how to use business events in the financial period close business process to gain insights and provide internal controls.
 author: suhasrao1985
-manager: AnnBe
 ms.date: 10/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -128,3 +126,6 @@ In conclusion, business events offer unique opportunities for extending function
 - Business events functionality continues to get enhanced. Be on the lookout for new capabilities.
 
 Business events and Power Automate offer great opportunities for implementing low-code or no-code extensions. The important thing is that you identify opportunities where this framework can help, but that you also understand some of the limitations.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

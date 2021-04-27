@@ -4,11 +4,9 @@
 title: Transportation management miscellaneous charges
 description: This topic explains how transportation-generated charges must be associated with a charge code.
 author: Henrikan
-manager: tfehr
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,3 +33,6 @@ As with all miscellaneous charges, transportation-generated charges must be asso
 Go to **Transportation management > Setup > Rating > Miscellaneous charges** to define the qualifying criteria that determine when a specific **Charges code** is applied to a charge.
 
 You should have at least one setup for each relevant **Charges module** setting (*Customer* and *Vendor*) where the **Miscellaneous charge type** is set to *None*. If this is missing, the miscellaneous charge will *not* be added to the order.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

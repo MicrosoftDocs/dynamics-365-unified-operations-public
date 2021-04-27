@@ -4,11 +4,9 @@
 title: Manage AX 2012 R3 deployments on Azure
 description: This topic provides information about how to work in and maintain a Microsoft Dynamics AX 2012 R3 deployment on Microsoft Azure.
 author: kfend
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -250,3 +248,6 @@ If you want users to use Remote Desktop via tunneled access to the Azure Virtual
 1.  The Azure Internal Load Balancer endpoint created by Lifecycle Services can be found in the details pane of the Cloud-Hosted Environments page in Lifecycle Services. Specifically, it is the endpoint domain specified by the link “RDS Farm Access”. It will appear like this: RDSFarm\#\#\#\#\#.domain.com
 2.  Obtain the IP address created for this domain by opening [http://manage.windowsazure.com](http://manage.windowsazure.com/) in a browser and logging into your subscription. Open **Cloud Services** and click the Cloud Service name associated with the RDS machines. Locate the RDS\* VM IP that is an internal IP (eg. 10.1.3.4) with port 3389. This is the IP of the Azure Internal Load Balancer associated with the RDSFarm\#\#\#.domain.com address.
 3.  Set up the appropriate routing and DNS entries for your users on the corporate network to reach that domain name/IP/load balancer. Once that is done, the users will be able to use Remote Desktop access from the corporate network.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

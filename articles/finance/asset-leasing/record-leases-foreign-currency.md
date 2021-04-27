@@ -4,16 +4,14 @@
 title: Record leases in foreign currencies
 description: This topic explains how to record leases in currencies other than the accounting or reporting currency.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: AssetLeaseDetail
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -57,3 +55,6 @@ When you create the depreciation expense journal entries against a lease that is
 The final depreciation expense amount can be calculated by using a slightly different exchange rate, so that the ROU asset is fully depreciated in both the accounting currency and the reporting currency.
 
 If the lease has been reclassified as **Deferred rent**, the system automatically clears the exchange rates of the accounting and reporting currencies, if they have already been defined.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

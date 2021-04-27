@@ -4,11 +4,9 @@
 title: Page design guidelines
 description: This topic provides in-depth information on designing mobile apps.
 author: robinarh
-manager: AnnBe
 ms.date: 04/23/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -146,3 +144,6 @@ The number of records returned in a list page is controlled by the **List fetch 
 2. Click the **Grid** node and then click **Properties**.
 3. The **Control properties** dialog box will contain a default fetch size of 50 records.
 4. Adjust the fetch size as needed.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

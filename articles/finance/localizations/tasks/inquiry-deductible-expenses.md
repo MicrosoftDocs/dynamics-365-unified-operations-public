@@ -4,11 +4,9 @@
 title: Inquiry on deductible expenses
 description: This task walks you through running a query on deductible expenses. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -45,3 +43,6 @@ This task was created using the demo data company JPMF.
 6. In the Report date field, enter a date.
     * Change the date to see other fiscal years.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

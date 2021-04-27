@@ -4,11 +4,9 @@
 title: Create an interest code with a range
 description: Interest codes can be set up to calculate different interest amounts based on a range of values. 
 author: ShivamPandey-msft
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -53,3 +51,6 @@ Interest codes can be set up to calculate different interest amounts based on a 
 21. Enter the interest percent per month that will be used to calculate the interest starting in month 7. For this example, it is 2.5.
 22. Click Close to complete the setup.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

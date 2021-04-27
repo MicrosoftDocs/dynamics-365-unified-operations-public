@@ -4,11 +4,9 @@
 title: Data management and integration by using data entities overview
 description: This topic provides a brief overview of the mechanics of synchronous and asynchronous integration.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -64,3 +62,6 @@ When you import text files, string sizes are limited to 32,768 characters. If th
 If you need to import strings that are larger than 32,768 characters, we suggest that you use container entity fields.
 
 For more information, watch the FastTrack Tech Talk video: [Dynamics 365 for Operations – Tech Talk: Integration](https://www.youtube.com/watch?v=fooBvQhIo6I).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

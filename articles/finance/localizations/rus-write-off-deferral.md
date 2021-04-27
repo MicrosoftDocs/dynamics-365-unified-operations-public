@@ -3,11 +3,9 @@
 title: Write off deferrals (Russia)
 description: This topic explains how to write off a deferral and how to reverse the writing off of a deferral. 
 author: anasyash
-manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -74,3 +72,6 @@ You can create a journal line for a single write-off.
 7. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can set up the selection criteria.
 8. Select **OK** to return to the **Journal voucher** page.
 9. On the Action Pane, select **Post** \> **Post** to post the reversal voucher. The deferrals and ledger transactions that are specified in the posting profile are generated.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

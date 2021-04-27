@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (June 18, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for June 18, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -64,9 +62,9 @@ This change lets users enter compensation data when they fill in the **Transfer 
 
 ### Preview features will be enabled only in sandbox environments
 
-For more information about how changes are published, see [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
+For more information about how changes are published, see [Provision Talent](/dynamics365/unified-operations/talent/provisioning-talent).
 
-When you provision a new instance of Talent, you can indicate whether the instance type is **Production** or **Sandbox**. The **Sandbox** instance type allows for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
+When you provision a new instance of Talent, you can indicate whether the instance type is **Production** or **Sandbox**. The **Sandbox** instance type allows for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
 
 ### Restrict the leave types in time-off requests
 
@@ -89,3 +87,6 @@ A new option will let managers view the performance of both their direct reports
 ### Print performance reviews
 
 Employees, managers, and HR will be able to print an employee's performance review.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

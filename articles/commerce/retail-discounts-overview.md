@@ -4,11 +4,9 @@
 title: Retail discounts
 description: This topic provides an overview of the discount functionality in Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management.
 author: shajain
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -180,3 +178,6 @@ Starting with the Retail 8.1.1 release, we have added the capability to set up d
 - Expire discounts when they are no longer valid. In this way, you prevent the total number of discounts that the pricing engine considers during a transaction from growing unbounded. Otherwise, the performance of discount calculation can be affected over time.
 - Leverage the supplemental categories to group the products, for example clearance products or last season products.
 - Always avoid or minimize overlapping discount lines.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Help secure mobile workspaces
 description: This topic describes how to limit a user's access to a workspace.
 author: robinarh
-manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -55,3 +53,6 @@ You can also specify whether the workspace is hidden or shown, based on paramete
 
 ## Add a menu item and override the workspaceHidden method
 You can use both the preceding methods in your app. The menu item provides a security check, and the **workspaceHidden** method contains additional logic that is related to the visibility of the workspace.
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Accrue time off based on hours worked
 description: This topic describes how leave plans can be configured to accrue time off based on hours worked.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -106,3 +104,6 @@ A single date can only have one of each type associated with it.
 | 000337                | 8/8/2018             | Regular               | 8                    |
 | 000337                | 8/7/2018             | Regular               | 8                    |
 | 000337                | 8/9/2018             | Regular               | 8                    |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

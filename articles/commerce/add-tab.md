@@ -4,11 +4,9 @@
 title: Tab module 
 description: This topic covers tab modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,8 +31,6 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 This topic covers tab modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Tab modules are container-like modules that are used to organize the information on a site page on tabs. They can be used on any page where information must be presented on tabs.
 
@@ -87,3 +83,6 @@ To add a tab module to a page and set the properties, follow these steps.
 [Accordion module](add-accordion.md)
 
 [Text block module](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

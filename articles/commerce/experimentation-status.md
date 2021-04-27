@@ -4,11 +4,9 @@
 title: Review the status of an experiment
 description: This topic explains what status an experiment has in the experimentation lifecycle in Dynamics 365 Commerce. 
 author:  sushma-rao 
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -48,3 +46,6 @@ Similarly, in the **third-party status** column, the following values may be dis
 The diagram below shows both sets of statuses and how they relate to each other.
 
 [ ![Experimentation statuses](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Retail price reports
 description: This topic provides an overview of the price report feature that can used to view the upcoming price changes for the assorted products. 
 author: shajain
-manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -47,3 +45,6 @@ To enable the price report, the **Enable price report for store** parameter must
 | Display products with price changes | Setting this to **Yes** will display the prices for only those dates on which the price has been changed. The price for *one day before* the selected **From date** will always be displayed, so that the store manager can easily identity the products which have not changed prices for the entire selected duration, and can also view the current price. |
 
 After the report is generated, the Excel file can be downloaded for any additional filtering needs. The price report can also be used to check the historical prices of products for past dates.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

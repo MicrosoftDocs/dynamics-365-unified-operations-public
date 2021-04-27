@@ -4,11 +4,9 @@
 title: Extend a module definition file
 description: This topic describes how to extend a module definition file.
 author: samjarawan
-manager: annbe
 ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to extend a module definition file. For example, you can create an extended module of another module to add new configuration fields.
-
-## Overview
 
 When you extend a property that is an object, you must extend the whole object. For example, to add a configuration property to your extended module, you first copy the existing configuration properties from the parent module to the child module. You then add the desired property.
 
@@ -75,6 +71,8 @@ After deployment, both the base module and the extended module appear in Microso
 
 [App settings](app-settings.md)
 
+[Platform settings file](platform-settings.md)
+
 [Cookie API overview](cookie-api-overview.md)
 
 [Interactive components overview](interactive-components.md)
@@ -86,3 +84,6 @@ After deployment, both the base module and the extended module appear in Microso
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
 
 [Set up Azure Key Vault for secure key management](set-up-key-vault.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

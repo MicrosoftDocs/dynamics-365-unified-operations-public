@@ -4,11 +4,9 @@
 title: Planning with negative on-hand quantities
 description: This topic explains how negative on-hand is handled when you use planning optimization. 
 author: ChristianRytt
-manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -89,3 +87,6 @@ The result is a planned order of 25 pcs. (= 25 pcs. &minus; 0 pcs.) to refill wa
 [View plan history and planning logs](plan-history-logs.md)
 
 [Cancel a planning job](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

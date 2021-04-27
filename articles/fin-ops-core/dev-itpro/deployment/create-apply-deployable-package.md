@@ -4,11 +4,9 @@
 title: Create deployable packages of models
 description: This topic describes the workflow for creating and applying a deployable package.
 author: jorisdg
-manager: AnnBe
 ms.date: 05/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -68,3 +66,6 @@ To apply a deployable package to an environment, see [Apply updates to cloud env
 
 ## Remove a deployable package
 To uninstall or remove a deployable package from an environment, see [Uninstall a package](uninstall-deployable-package.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

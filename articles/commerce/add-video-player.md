@@ -4,11 +4,9 @@
 title: Video player module
 description: This topic covers video player modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -30,12 +28,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Video player module
 
-
 [!include [banner](includes/banner.md)]
 
 This topic covers video player modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 The video player module is used to support video playback. It can be added to any page, provided that video content is uploaded to and available in the content management system (CMS). The video player module supports the .mp4 media type.
 
@@ -110,3 +105,6 @@ To add a video player module to a new page and set the required properties, foll
 [Text block module](add-content-rich-block.md)
 
 [Content block module](add-hero-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

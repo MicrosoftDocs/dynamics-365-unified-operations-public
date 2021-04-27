@@ -4,11 +4,9 @@
 title: Product lifecycle states and transactions
 description: This topic explains how you can control which transactions are allowed for each lifecycle state as an engineering product goes through its lifecycle.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -79,3 +77,6 @@ The following fields are available for each process that is listed on the **Enab
 | Policy | Select one of the following values to control whether and how the current process will be permitted for products that are in this lifecycle state:<ul><li>**Enabled** – The business process is allowed.</li><li>**Blocked** – The process isn't allowed. If a user tries to use the process on a product that is in this lifecycle state, the system will block the attempt and show an error instead. For example, you might block end-of-life products from being purchased.</li><li>**Enabled with warning** – The process is allowed, but a warning will be shown. For example, you might want a prototype product to be put on a production order that is created by the Research and Development department. However, other departments should be aware that they should not produce the product yet.</li></ul> |
 
 If you're adding more lifecycle state rules as a customization, you can view those rules in the user interface (UI) by selecting **Refresh processes** in the upper pane. The **Refresh processes** button is available only to administrators.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

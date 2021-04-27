@@ -1,31 +1,16 @@
 ---
-# required metadata
-
 title: Mitigate a SQL injection attack
 description: This topic explains how to mitigate SQL injection attacks in X++.
 author: pvillads
-manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 31301
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Mitigate a SQL injection attack
@@ -35,6 +20,8 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [preview-banner](../includes/preview-banner.md)]
 
 An SQL injection attack occurs when malicious data values are passed to Microsoft SQL Server in a query string. Those values can cause lots of damage in a database. SQL injection can occur if you aren't careful about how you use a query to pass data that comes from an uncontrolled source, such as user input, to SQL Server. SQL injection isn't usually an issue in Finance and Operations apps, because the built-in data access statements in X++ prevent it. However, if you use Direct-SQL, SQL injection can occur when raw SQL code is passed to the server.
+
+A new API will help mitigate these attacks. The API is available starting with platform updates for version 10.0.17 of Finance and Operations apps (April 2021).
 
 ## The issue
 
@@ -145,3 +132,6 @@ public void InsertWithStrParameter()
 As Microsoft introduces the new methods, we are also marking the existing methods (that is, the methods without the parameters) as obsolete. The usual deprecation periods apply. Therefore, you can update your code to take advantage of the new protection that the parameters provide.
 
 Although the new **executeQueryWithParameters** API helps you protect your customers from disasters, you aren't required to use it. You can still do string concatenations and provide an empty parameter set. However, in this case, you don't gain the advantages that the parameters provide. We hope that you will take this opportunity to eliminate any dangerous usage that you have in your code.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

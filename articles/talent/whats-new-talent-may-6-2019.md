@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (May 6, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for May 6, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 05/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -50,7 +48,7 @@ Changes described in this section apply to build number 8.1.2282. The numbers in
 
 ### Platform update 26 for Finance and Operations
 
-For additional details about Platform update 26 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 26 (May 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
+For additional details about Platform update 26 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 26 (May 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
 ### Dataverse table support for custom columns
 
@@ -96,3 +94,6 @@ The ability to track employee time off and understand how time off is calculated
 ### Indicate instance type when provisioning Talent
 
 When provisioning a new instance of Talent, you will be able to indicate whether the instance type is **Production** or **Sandbox**, allowing for early testing of new features. All existing Talent instances will be updated to the Production instance type. If you want one of your existing instances to be updated to the Sandbox instance type, please contact Support to initiate the change request.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

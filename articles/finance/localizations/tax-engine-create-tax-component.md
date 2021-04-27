@@ -4,11 +4,9 @@
 title: Create tax components
 description: This topic explains how to create tax components manually and by using predefined rules.
 author: yijialuan
-manager: Krstin Fender
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -82,3 +80,6 @@ If you set the **Reverse charge** option to **Yes**, the component supports reve
 If you set the **Non deductible** option to **Yes**, the component supports non-deductible behavior. The user can then specify the conditions where non-deductible behavior applies, and tax will be calculated and posted accordingly.
 
 After the tax component is created by using predefined rules, you should define the applicability rule for the tax component itself, the rate, reverse charge, and so on. For more information, see [Tax engine applicability](../general-ledger/tax-engine-applicability.md). You can always manually edit the tax measures, formulas, posting profiles, and so on.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Add a new site page
 description: This topic describes how to add a new site page in Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -30,12 +28,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add a new site page
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a new site page in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 After you've created templates and fragments for your site, the next step is to start to create pages that use them. To get started, you must select a template or layout, a page name, and a page URL.
 
@@ -97,3 +92,6 @@ To add a new site page to your site, follow these steps.
 [Verify page content accessibility](verify-accessibility.md)
 
 [Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

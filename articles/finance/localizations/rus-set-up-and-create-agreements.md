@@ -3,11 +3,9 @@
 title: Set up and create agreements 
 description: This topic provides information about creating purchase and sales agreements.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 02/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -163,3 +161,6 @@ Find more details in the following topics:
 - [Agreements](rus-agreements.md)
 - [Register transactions with reference to agreements](rus-register-transactions-with-reference-to-agreements.md)
 - [Inquiries and reports with agreements](rus-inquiries-reports-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

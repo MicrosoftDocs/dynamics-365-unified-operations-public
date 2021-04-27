@@ -3,12 +3,10 @@
 
 title: Vendor collaboration with external vendors
 description: This topic explains how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -40,7 +38,7 @@ For more information about what external vendors can do in the vendor collaborat
 > [!NOTE]
 > The information about vendor collaboration in this topic applies only to the current version of Supply Chain Management. In Microsoft Dynamics AX 7.0 (February 2016) and Microsoft Dynamics AX application version 7.0.1 (May 2016), you collaborate with vendors by using the **Vendor portal** module. For information about the **Vendor portal** module, see [Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md).
 
-For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
+For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
 
 ## Defining the information that is shown to vendors when they respond to POs
 
@@ -264,3 +262,6 @@ The user who sets up parameters for the RFQ process can create multiple email te
 - %createddate%
 
 If an amendment is required and is sent after the RFQ is sent, the RFQ will be resent to all invited vendors. The published document will also be updated on the **Open published requests for quotations** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

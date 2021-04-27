@@ -4,11 +4,9 @@
 title: Add to your performance journal and send praise to someone
 description: The performance journal holds information that relates to how you met your goals or how you performed during a period. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -29,6 +27,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Add to your performance journal and send praise to someone
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 The performance journal holds information that relates to how you met your goals or how you performed during a period. You can also praise the actions of a co-worker from the journal. The demo data company used to create this procedure is USMF. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 
@@ -59,3 +59,6 @@ The performance journal holds information that relates to how you met your goals
 20. In the Description field, enter 'Thanks for all the help at the conference!'.
 21. Click Send.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

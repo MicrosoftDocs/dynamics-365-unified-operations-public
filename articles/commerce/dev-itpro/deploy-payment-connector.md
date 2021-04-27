@@ -4,11 +4,9 @@
 title: Deploy payment connectors
 description: This topic describes how to deploy a payment connector package to the appropriate components.
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
 ms.technology:
 
 # optional metadata
@@ -63,7 +61,7 @@ To package the payment connector files, copy the payment assemblies to the folde
         - Commerce scale unit (self-hosted)
 
 > [!NOTE]
-> In releases earlier than 10.0.10, the RetailDeployablePackage can be deployed to both AOS and CSU. For later releases, the RetailDeployablePackage can be deployed only to CSU. To deploy the payment connector to AOS application version 10.0.10 and later, follow the information in [Create payment packaging for Application Explorer for self-service deployment](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/payment-connector-package).
+> In releases earlier than 10.0.10, the RetailDeployablePackage can be deployed to both AOS and CSU. For later releases, the RetailDeployablePackage can be deployed only to CSU. To deploy the payment connector to AOS application version 10.0.10 and later, follow the information in [Create payment packaging for Application Explorer for self-service deployment](./payment-connector-package.md).
 
 ### Upload and deploy deployable packages
 
@@ -79,7 +77,7 @@ To package the payment connector files, copy the payment assemblies to the folde
 5. Click **Upload**.
 6. Select the zipped package, upload it, and then click **Confirm**.
 
-After you've uploaded your deployable packages to the LCS asset library, you can deploy them to your environments through the LCS portal. After you've validated your deployment in your sandbox environment, you can create a service request to deploy it to your production environment. For more information, see [Apply a deployable package](../../dev-itpro/deployment/apply-deployable-package-system.md).
+After you've uploaded your deployable packages to the LCS asset library, you can deploy them to your environments through the LCS portal. After you've validated your deployment in your sandbox environment, you can create a service request to deploy it to your production environment. For more information, see [Apply a deployable package](../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md).
 
 #### Download and run installers on client computers
 
@@ -122,3 +120,6 @@ E-commerce sites aren't deployed in LCS-managed environments. You should work wi
 [Guide to implementing a payment connector and a payment device](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 
 [Create deployable packages](retail-sdk/retail-sdk-packaging.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

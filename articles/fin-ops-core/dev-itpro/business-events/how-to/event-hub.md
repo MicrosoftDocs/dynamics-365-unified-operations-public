@@ -4,11 +4,9 @@
 title: Business events and Azure Event Hubs
 description: This tutorial describes the steps that you must follow to make business events work with Microsoft Azure Event Hubs.
 author: AXnU
-manager: AnnBe
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -66,3 +64,6 @@ This tutorial describes the steps that you must follow to make business events w
 14. In the **Key Vault secret name** field, enter the name from the secret that was created earlier.
 15. Select **OK**.
 16. You can now activate one or more business events that should be sent to this endpoint.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

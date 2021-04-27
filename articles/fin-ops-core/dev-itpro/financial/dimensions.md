@@ -4,11 +4,9 @@
 title: Support for different dimension patterns
 description: To support different dimension patterns, a set of framework data entities can be used as data sources in other entities that involve dimensions.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -145,3 +143,6 @@ This section describes how to add a dimension data source to a new entity. The n
 5.  Override the **persistEntity** method, and enter the following X++ code. 
 
     [![Overriding the persistEntity method](./media/dim16.png)](./media/dim16.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,11 +3,9 @@
 title: LookupMetadata type
 description: Lookup metadata type.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -309,3 +307,6 @@ OnValueChanged: function(value: any): void (optional)
 An event that is triggered by a value being changed.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

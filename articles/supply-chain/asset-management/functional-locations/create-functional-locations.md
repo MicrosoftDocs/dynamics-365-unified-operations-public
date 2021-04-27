@@ -3,12 +3,10 @@
 
 title: Create functional locations
 description: This topic explains how to create a functional location in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -138,3 +136,6 @@ A functional location with related sub locations can be deleted if no assets hav
 
 >[!NOTE]
 >If you cannot delete a functional location, instead you can handle deletion by setting up a functional location lifecycle state for this purpose. For example, you can set up a "Scrapped" or "Deleted" stage, which should not be an active stage, in the **Functional location lifecycle states** form.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

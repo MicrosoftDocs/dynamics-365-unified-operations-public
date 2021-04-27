@@ -1,14 +1,10 @@
 ---
-# required metadata
-
 title: Run processes
 description: This topic describes how to run processes for the process automation framework.
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -39,7 +35,7 @@ The **getListOfWorkToBePerformed** method determines whether there is work that 
 
 The process automation framework supports a list for those processes that do parallel processing and that want multiple batch tasks. If the process that is being run is an older process that implements **RunBaseBatch**, it can't be returned through the list. In this case, you have two options:
 
-- Convert the process to **SysOperationServiceController**. For more information, see [SysOperations Framework](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview). This option is recommended, if it's feasible.
+- Convert the process to **SysOperationServiceController**. For more information, see [SysOperations Framework](/dynamicsax-2012/developer/sysoperation-framework-overview). This option is recommended, if it's feasible.
 - Wrap the legacy **RunBaseBatch** class with a new class that inherits from **SysOperationServiceController**. For an example, see **LedgerCovTotalProcessAutomationProcessor** in the Application Object Tree (AOT).
 
 The following example shows an implementation of the **ProcessAutomationTask** interface.
@@ -95,3 +91,6 @@ The **ProcessScheduleWorkItem** class has many pieces of information and is desi
 | `public ProcessScheduleDateTime parmScheduledDateTime(ProcessScheduleDateTime _scheduledDateTime = scheduledDateTime)` | The date and time when the process was scheduled to run. This date and time might differ from the actual date and time when the process runs. |
 | `public UserGroupId parmOwnerId(UserGroupId _ownerId = ownerId)` | The owner of the occurrence that is being run. |
 | `public void initializeFromScheduleWorkItem(ProcessScheduleWorkItem _item)` | Initializes an instance of **ProcessScheduleWorkItem** from another instance. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

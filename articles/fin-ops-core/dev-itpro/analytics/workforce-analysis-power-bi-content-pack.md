@@ -4,11 +4,9 @@
 title: Workforce metrics Power BI content
 description: This topic describes the Workforce metrics Power BI content.
 author: jcart1106 
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -91,3 +89,6 @@ The following table shows the entities that the content was based on.
 | Employee Trend           | Workers over time, headcount, company, and position                                 | Company, Geographic Location, Employee Name, Reports To, Calendar Offset, Date, Employee Title, Demographics, Employment, Job |
 | Mass Hire Project        | Number of mass hire projects, project owner, and project status                     | Company, Mass Hire Line |
 | Mass Hire Line           | Department, employment type, and position                                           | Date, Job, Mass Hire Project |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

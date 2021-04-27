@@ -5,11 +5,9 @@
 title: Digital asset management overview
 description: This topic provides an overview of digital asset management in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
-manager: annbe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -34,8 +32,6 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 This topic provides an overview of digital asset management in Microsoft Dynamics 365 Commerce site builder.
-
-## Overview
 
 Dynamics 365 Commerce site builder's Media Library features rich digital asset management functionality, including support for the following:
 - Image assets
@@ -64,3 +60,6 @@ Digital assets and management features are located within site builder under **M
 [Customize image focal points](dam-custom-focal-point.md)
 
 [Upload and serve static files](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

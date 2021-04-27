@@ -3,12 +3,10 @@
 
 title: Requests for quotation (RFQs) overview
 description: This topic provides an overview of requests for quotation (RFQs). Organizations issue RFQs when they want to receive competitive offers from several vendors for the items or services that they must purchase.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 2154
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -68,7 +66,7 @@ This topic covers the process for handling RFQs when vendor collaboration isn't
 used. If your system is set up for vendor collaboration, vendors can enter bids
 directly in Supply Chain Management. For more
 information, see [Vendor collaboration with
-customers](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) and [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
+customers](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) and [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
 
 If you must amend an RFQ after you send it, you can resend the RFQ to vendors
 when you've finished by using the two amendment actions: Create and Finalize.
@@ -297,7 +295,7 @@ use the amendment process to notify vendors about changes to the RFQ case. This
 process helps prevent the situation where vendors bid on an outdated RFQ case
 while their bid is in progress. For more information about vendor collaboration,
 see [Vendor collaboration with external
-vendors](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+vendors](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 If you want to invite additional vendors to bid, and no changes have been made
 to the RFQ case, you can use the **Send** button. The vendors that you added
@@ -435,3 +433,6 @@ rejected on the RFQ case header and line.
 | Accept one of the bids. (or at least one line) |                          Received                           |                           Accepted                           |                    Received                    |                    Accepted                     |                   Received                   |                   Accepted                    |
 |           Reject all the other bids.           |                          Rejected                           |                           Accepted                           |                    Rejected                    |                    Accepted                     |                   Rejected                   |                   Accepted                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

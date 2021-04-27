@@ -4,11 +4,9 @@
 title: Troubleshoot GTE 
 description: This topic provides information about some of the issues that you might encounter while you use the tax engine (GTE), and explains how to fix them.
 author: yijialuan
-manager: Annbe
 ms.date: 03/18/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -121,3 +119,6 @@ To work around this issue, follow these steps.
     ![Add a new version of the sales tax hierarchies](media/IND-GST-add-new-hierarchy.png)
 
 2. On the **Maintain setoff hierarchy profiles** page, make the new version available by following the steps in [Set up a sales tax hierarchy](apac-ind-GST-set-up-activate-tax-hierarchy-tree.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

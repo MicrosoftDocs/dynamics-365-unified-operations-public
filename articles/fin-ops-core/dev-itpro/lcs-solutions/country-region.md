@@ -3,12 +3,10 @@
 
 title: Globalization resources
 description: This topic includes lists of resources that can help you learn more about country/region-specific functionality and offerings.  
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/02/2019
+author: kfend
+ms.date: 02/19/2021
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +19,7 @@ ms.reviewer: sericks
 ms.custom: 104173
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -32,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ## Local and regional deployments
 If your government regulations require data to be stored differently or serviced differently than is required for other countries/regions, there might be country/region requirements you must consider during deployment. Consider the following resources that might be relevant to you:
 
-[Finance and Operations apps operated by 21Vianet in China](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Finance and Operations apps operated by 21Vianet in China](../deployment/china-local-deployment.md)
 
 ## Localization and regulatory features
 
@@ -59,7 +57,6 @@ The following resources provide information about planned and new localization f
 
 #### Regulatory updates
 -   [Regulatory updates](../../../finance/localizations/regulatory-updates.md)
--   [Localization portal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (Updated weekly)
 -   [Issue search in Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (Updated daily)
 
 #### Communication and alerts
@@ -67,7 +64,7 @@ The following resources provide information about planned and new localization f
 -   [Submit alerts about country/region-specific regulatory features](submit-localization-alerts.md)
 
 #### Dynamics 365 release plans
-The [Dynamics 365 release plans](https://docs.microsoft.com/business-applications-release-notes/) provide descriptions of new and enhanced capabilities that are planned for Dynamics 365 business applications and application platforms. 
+The [Dynamics 365 release plans](/business-applications-release-notes/) provide descriptions of new and enhanced capabilities that are planned for Dynamics 365 business applications and application platforms. 
 
 #### Finance and Operations apps what's new
 The [What's new or changed in Finance and Operations home page](../../fin-ops/get-started/whats-new-changed.md) lists the features that are included in specific releases of the Finance and Operations apps.
@@ -137,3 +134,6 @@ To learn more, see [Help system](../../fin-ops/get-started/help-overview.md#task
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

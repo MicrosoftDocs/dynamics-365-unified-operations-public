@@ -4,11 +4,9 @@
 title: Malaysia Goods and Services Tax
 description: This topic provides information about how to set up Goods and Services Tax (GST) for a Malaysian company.
 author: mrolecki
-manager: AnnBe
 ms.date: 05/17/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -192,3 +190,6 @@ You should run the **Settle and post sales tax** process before you generate the
 - [Print GST customer invoices with a relief clause](./tasks/my-00006-02-print-gst-customer-invoices-relief-clause.md)
 - [Print GST tax invoices](./tasks/my-00005-print-gst-tax-invoices.md)
 - [Set up GST relief clauses](./tasks/my-00006-01-gst-relief-clauses.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

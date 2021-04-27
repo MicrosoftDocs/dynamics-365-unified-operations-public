@@ -4,11 +4,9 @@
 title: Subscriptions, LCS projects, and Azure Active Directory tenants FAQ
 description: This topic provides answers to frequently asked questions about subscriptions and licenses, Azure AD tenants, and LCS Implementation projects.
 author: ClaudiaBetz-Haubold 
-manager: AnnBe
 ms.date: 08/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -83,3 +81,6 @@ Some of the environment's operations may be impacted by the subscription status:
 - **Suspended** - Your subscription has expired beyond the grace period. This subscription status may reduce the license quantity, impact your ability to deploy a new environment, or impact your ability to perform environment operations. 
 - **Deleted** - Your subscription has been deleted. This will impact your ability to deploy a new environment or perform environment operations.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

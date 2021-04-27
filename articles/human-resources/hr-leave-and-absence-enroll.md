@@ -4,11 +4,9 @@
 title: Assign workers to a leave plan
 description: Assign employees and contractors to leave plans in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Assign workers to a leave plan
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 After you've created a leave and absence plan in Dynamics 365 Human Resources, assign it to workers.
 
@@ -65,3 +65,5 @@ After you've created a leave and absence plan in Dynamics 365 Human Resources, a
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
 - [Create a leave and absence plan](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

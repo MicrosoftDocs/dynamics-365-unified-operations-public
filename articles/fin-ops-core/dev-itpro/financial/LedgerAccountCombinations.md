@@ -4,11 +4,9 @@
 title: Ledger account combinations
 description: This topic provides information about combinations of ledger accounts in the dimension framework.
 author: jasonsto
-manager: jdinham
 ms.date: 05/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -403,3 +401,6 @@ The dimension framework doesn't directly support versioning or date-effective da
 When a structure or rule is changed, if ledger account combinations have been saved on unposted transactions, the dimension framework creates new combinations and updates any foreign key references to them on unposted transaction tables. It doesn't change the original combinations, because those combinations might be referenced from posted transactions. The two combinations aren't linked in any way. There is no way to determine what a structure and its rules looked like before the change. Some information can be determined by the data that is stored in the combination. However, because blank values aren't stored, this data is incomplete and can't be used to reconstruct a previous version.
 
 The dimension framework supports "valid from" and "valid to" dates at the level of a dimension value. These dates indicate when the value is considered "valid." They don't represent the historical state of the value in the same way that date-effective data does.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

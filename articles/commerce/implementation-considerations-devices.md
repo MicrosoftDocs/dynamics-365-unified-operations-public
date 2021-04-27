@@ -4,11 +4,9 @@
 title: Device management implementation guidance
 description: This topic is intended for people who implement functionality that is related to device management in a commerce environment. It gives implementation tips and guidance that you should consider as you plan your implementation.
 author: jashanno
-manager: AnnBe
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -111,3 +109,6 @@ Unfortunately, things sometimes go wrong. It's important that you consider worst
 - **Lost/stolen device** – When a device is lost or stolen, it becomes a critical issue, because private data can end up in the hands of a malicious person. The first step is to deactivate any lost or stolen device on the **Devices** page in Headquarters, to immediately prevent sign-on to that device. If you created a disaster plan, follow the rest of the guidelines to complete all tasks that are required in order to tag the device as gone, file all important documents (which might include documents for insurance and the police), and work to replace the device and continue business. If appropriate procedures have been created, a replacement device should already be ready.
 - **Infrastructure issues** – Network equipment might go bad, the store layout might have to be altered, or, as a part of a store update, the devices might be changed from desktops to tablets. When issues arise that can affect the management of devices, it can be difficult to react appropriately and fix the issues. In the best-case scenario, you've already discussed these issues and listed then in the procedures, servicing, and disaster plans. At a minimum, before something is done that affects the layout of a business location, you should update the store layout documents to reflect the new layout, so that fewer surprises are met. As we mentioned earlier, for issues that affect MPOS specifically, the ability to reactivate should help mitigate downtime and should help with change management. If you're concerned about outages of network equipment, or if outages occur, the MPOS client can support offline databases. This functionality can help mitigate the impact that outages have on business.
 - **Disaster** – When a disaster occurs, everything is affected. If the disaster is environmental, the employees should always be the highest priority. However, eventually, you must handle the management of the internal systems, and those systems must be repaired. Unfortunately, no simple advice or specific considerations can be listed. Instead, you should plan early in a more general way. What sorts of disasters could affect the business? Utilities such as water and power can have devastating effects on equipment. How can you mitigate the effects on employees, locations, and equipment in various disasters? Keep in mind concepts such as the data that is stored in the location, and when and how it's backed up and secured.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

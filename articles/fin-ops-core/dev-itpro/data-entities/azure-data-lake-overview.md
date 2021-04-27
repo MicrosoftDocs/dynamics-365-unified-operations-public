@@ -4,11 +4,9 @@
 title: Azure Data Lake overview
 description: This topic provides an overview of Microsoft Azure Data Lake.
 author: MilindaV2
-manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -39,7 +37,7 @@ Microsoft Azure Data Lake is a technology in Azure cloud that enables big data a
 
 Data lakes provide cloud storage that is less expensive than the cloud storage that relational databases provide. Therefore, large amounts of data can be stored in the cloud. This data includes both business data that is traditionally stored in business systems and data warehouses, device and sensor data, such as signals from devices. In addition, Data Lake supports a range of tools and programming languages that enable large amounts of data to be reported on, queried, and transformed.
 
-For an overview of Data Lake Storage Gen2, see [Introduction to Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction).
+For an overview of Data Lake Storage Gen2, see [Introduction to Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction).
 
 Dynamics 365 products, such as Finance and Operations apps, use Data Lake for AI and analytics scenarios. Therefore, customers can take advantage of the strengths and cost advances that this technology offers. The following sections provide an overview of the scenarios.
 
@@ -54,13 +52,13 @@ Analytical workspaces can be used for operational analytics scenarios in two way
 - Use and extend the ready-made analytical workspaces, so that you don't have to build workspaces from scratch.
 - Build your own Power BI–based analytical reports.
 
-For more information, see [Embedded Power BI in workspaces](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/finance/toc.json).
+For more information, see [Embedded Power BI in workspaces](../analytics/embed-power-bi-workspaces.md).
 
 ## BYOD
 
 Bring your own database (BYOD) is a service that lets customers extract data from Finance and Operations apps into their own data warehouses. We recommend that you use BYOD when you must combine data from Finance and Operations apps with other systems or with reporting that uses earlier data.
 
-For more information, see [Bring your own database (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database).
+For more information, see [Bring your own database (BYOD)](../analytics/export-entities-to-your-own-database.md).
 
 ## Data Lake combines BYOD and Entity store
 
@@ -102,7 +100,7 @@ The following illustration shows the Common Data Model folder structure from Fin
 
 ![Common Data Model folder structure from Finance and Operations apps](./media/FnO-CDM-Folder-Structure.png)
 
-For more information about Common Data Model in Data Lake, see [Use the Common Data Model to optimize Azure Data Lake Storage Gen2](https://docs.microsoft.com/common-data-model/data-lake).
+For more information about Common Data Model in Data Lake, see [Use the Common Data Model to optimize Azure Data Lake Storage Gen2](/common-data-model/data-lake).
 
 Here is an example:
 
@@ -112,7 +110,7 @@ Here is an example:
 Like Finance and Operations apps, other services (including Dataverse), Azure IoT, and many third-party tools and service can understand and work with data in Common Data Model folders. The list of services is growing. Here are some examples:
 
 - Dataverse lets you export data to your own data lake. For more information, see [Exporting Dataverse data to Azure Data Lake is Generally Available](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/).
-- Power users can transform data in Data Lake by using Dataverse dataflows. For more information, see [Use the Common Data Model to optimize Azure Data Lake Storage Gen2](https://docs.microsoft.com/common-data-model/data-lake).
+- Power users can transform data in Data Lake by using Dataverse dataflows. For more information, see [Use the Common Data Model to optimize Azure Data Lake Storage Gen2](/common-data-model/data-lake).
 
 ## How you can use Data Lake later if you're currently using BYOD
 
@@ -203,3 +201,6 @@ You can plan your transition to Data Lake in multiple stages, as shown in the fo
 2. **Getting easy access to data:** As you gain access to tables, entities, and aggregate measurements in Data Lake, you will be able to retire BYOD and use the data that is readily available. Therefore, management effort and costs can be reduced, as was discussed earlier. You can keep your existing downstream data warehouses and pipelines to manage project scope and budget.
 3. **Empowering power users:** Analytical workspaces will be transitioned to Data Lake as a service update. Therefore, ready-made analytical workspaces are based on the same data that is available in the data lake. Power users can easily extend analytical workspaces. When the service update occurs, you will be able to make the full capabilities of PowerBI.com available to your power users. By using capabilities such as Power BI dataflows, power users can easily combine data from online services and data is already available in the data lake. The same reports that are available in analytical workspaces can be consumed directly on PowerBI.com.  
 4. **Modernizing your previous data warehouse:** Modernization will probably be the investment that brings the most benefits. You can move data that currently exists in your on-premises data warehouse to the cloud. You can rely on cloud-based computing services and apply the same transformations on a pay-per-use basis. You can also combine your business data with sensor and device data.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

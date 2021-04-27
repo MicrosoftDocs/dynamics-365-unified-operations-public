@@ -4,11 +4,9 @@
 title: ContainerControl type
 description: Container control interface with methods and attributes for all container controls. A container control can contain any number of controls.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -234,3 +232,6 @@ Returns the root form instance (page) of this control.
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Loyalty overview
 description: This topic describes the loyalty capabilities within Dynamics 365 Commerce and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
 author: scott-tucker
-manager: AnnBe
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -155,3 +153,6 @@ Additionally, retailers can define the maximum loyalty reward point limit per lo
 
     > [!NOTE]
     > Unlike other periodic discounts such as quantity, simple, mix and match, and threshold discounts, the shipping discount does not create discount lines, rather edits the shipping charge directly and appends the name of the discount to the charge description.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

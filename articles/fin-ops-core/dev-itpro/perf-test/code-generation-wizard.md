@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Acceptance test library Code generation wizard
 description: This topic provides information about the Code generation wizard for the Acceptance test library.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -88,3 +82,6 @@ Follow these steps to create the `AtlSpec` class by using the **Code generation*
 ### Additional optional steps
 
 Add a `spec` method to the data class that returns an instance of the `AtlSpec` class that you created earlier in this topic.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

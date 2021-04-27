@@ -4,11 +4,9 @@
 title: Tile and list caching for workspaces
 description: This topic discusses framework support for caching data that is used for tiles and lists, so that workspaces perform well and are responsive.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -185,3 +183,6 @@ Here a few general guidelines to consider when you optimize queries. This isn't 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

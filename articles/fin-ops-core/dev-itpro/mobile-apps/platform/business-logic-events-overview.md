@@ -4,11 +4,9 @@
 title: Business logic events
 description: Code that executes in business logic can make runtime modifications to the metadata of Pages, Actions, and Controls.
 author: robinarh
-manager: AnnBe
 ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -39,3 +37,6 @@ Code that executes in business logic can make runtime modifications to the metad
 
 Code that executes in the business logic of the app can make runtime modifications to business data that is stored in the app. These modifications (when performed according to correct practices) participate in the normal data processing framework as other business data in the app. That means adhering to the offline-first capabilities and asynchronous save behaviors provided by the framework.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

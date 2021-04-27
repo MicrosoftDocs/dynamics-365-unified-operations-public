@@ -4,11 +4,9 @@
 title: Loyalty extension sample
 description: This topic explains how to set up the system so that customers can both earn loyalty points and pay by using loyalty points in the same transaction.
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 05/15/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -186,3 +184,6 @@ namespace Contoso
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

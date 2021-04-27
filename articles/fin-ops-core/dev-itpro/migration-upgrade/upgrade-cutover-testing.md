@@ -4,11 +4,9 @@
 title: Upgrade from AX 2012 - Cutover testing (Mock cutover)
 description: This topic explains how to test the cutover process between turning off a Microsoft Dynamics AX 2012 environment and turning on Finance and Operations. 
 author: jorisdg
-manager: AnnBe
 ms.date: 06/06/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -93,3 +91,6 @@ When you have fully configured your environment, add users, and perform appropri
 ## Roll back to AX 2012
 
 The goal of this task is to restore the database by using the backup that was made when AX 2012 was turned off, and then turn AX 2012 back on. The state of integrated systems might also have to be restored. However, because integrated systems vary from business to business, you must plan for this scenario independently, based on your specific circumstances. Although it's unlikely that you will have to roll back, it's very important that you have a tested process in case you require it.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Cash discounts for overpayments
 description: This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays. 
 author: panolte
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -143,3 +141,6 @@ The cash discount amount is reduced from 10.50 to 10.00. The payment and invoice
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

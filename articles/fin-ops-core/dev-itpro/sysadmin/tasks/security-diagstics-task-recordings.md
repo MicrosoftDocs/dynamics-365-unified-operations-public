@@ -4,11 +4,9 @@
 title: Security diagnostics for task recordings
 description: This topic provides information about how to analyze and manage security permission requirements based on a task recording.
 author: Peakerbl
-manager: AnnBe 
 ms.date: 05/05/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -52,3 +50,6 @@ This topic provides information about how to analyze and manage security permiss
 	- If **Role** is selected, select **Add role to user**. This will open the **Assign users to roles** page. For more information, see [Assign users to security roles](assign-users-security-roles.md) page.
 	- If **Duty** is selected, select **Add duty to role**, select the roles that the duty should be added to, and then select **OK**.
 	- If **Privilege** is selected, select **Add privilege to duties**, select the roles that the duty should be added to, and then select **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

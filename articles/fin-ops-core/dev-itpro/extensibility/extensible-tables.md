@@ -1,18 +1,12 @@
 ---
-# required metadata
-
 title: Write extensible tables
 description: This topic provides information about how to write extensible tables.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -48,3 +42,6 @@ Avoid calling **doInsert()**, **doUpdate()**, and **doDelete()**. These methods 
 
 ## Field groups
 Always use field groups to group related fields, and to build forms and reports. By consistently using this approach, you enable the extension to surface additional fields in forms and on reports by extending the field group.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: No Yes
 description: This topic describes the No Yes option set for Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -29,6 +27,8 @@ ms.dyn365.ops.version: Human Resources
 
 # No Yes
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the No Yes option set for Dynamics 365 Human Resources.
 
 ## Option set: No Yes
@@ -46,3 +46,6 @@ This enumeration provides option set for typical Boolean properties in Human Res
 
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
 [Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

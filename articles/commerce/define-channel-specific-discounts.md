@@ -4,11 +4,9 @@
 title: Define channel-specific discounts
 description: Retailers often set different discounts in different channels. This topic reviews the concepts you need to know to create a discount for a specific channel. 
 author: scott-tucker
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -66,3 +64,6 @@ The following example illustrates the tasks involved in setting up a channel dis
 ## Additional resources
 
 [Price adjustments and discounts](price-adjustments-discounts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

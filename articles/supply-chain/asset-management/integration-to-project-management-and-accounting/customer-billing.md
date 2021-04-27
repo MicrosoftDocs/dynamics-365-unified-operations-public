@@ -4,16 +4,14 @@
 title: Bill for maintenance on customer-owned assets
 description: This topic explains how to create, process, and bill maintenance work that is done on assets that your customers own.
 author: johanhoffmann
-manager: tfehr
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: EntAssetWorkOrderProjCostInfoPart 
+ms.search.form: ProjProjectContractsListPage, ProjInvoiceTable, ProjProjectsListPage, ProjTable, EntAssetWorkOrderType, EntAssetWorkOrderProjectSetup, EntAssetObjectTable, EntAssetWorkOrderTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -181,3 +179,6 @@ In this section, you will continue to work on the work order that you worked on 
 1. On the Action Pane, on the **Invoicing** tab, select **New invoice proposal**.
 1. In the **Create invoice proposal** dialog box, in the **Project transactions** section, select the **Select** check box for every line  that you want to invoice.
 1. Select **OK** to close the dialog box and view the new invoice proposal.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

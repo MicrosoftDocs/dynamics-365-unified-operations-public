@@ -4,11 +4,9 @@
 title: Add custom controls to POS views
 description: This topic explains how you can enhance the information that appears in the Dynamics 365 Commerce POS views by adding custom controls. 
 author: mugunthanm
-manager: AnnBe
 ms.date: 09/15/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -202,3 +200,6 @@ Next, you must add the constructor and initialize the data list with the product
     ![Product availability information in the product details view](media/pos-custom-control-2.png)
 
 You can copy the full code for this sample from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

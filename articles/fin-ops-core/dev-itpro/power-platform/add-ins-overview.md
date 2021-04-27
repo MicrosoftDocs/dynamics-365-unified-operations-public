@@ -4,11 +4,9 @@
 title: Add-ins overview
 description: This topic provides information about add-ins, which can be used to extend the functionality of Finance and Operations apps.
 author: ankugo
-manager: AnnBe
-ms.date: 01/27/2021
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -32,10 +30,10 @@ ms.dyn365.ops.version: 10.0.15
 
 Add-ins provide a way to extend the functionality of Finance and Operations apps. The following topics provide some examples of add-ins:
 
-- [Planning Optimization overview](https://docs.microsoft.com/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-overview)
-- [Inventory Visibility Add-in](https://docs.microsoft.com/dynamics365/supply-chain/inventory/inventory-visibility)
-- [Configure export to Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)
-- [IoT Intelligence home page](https://docs.microsoft.com/dynamics365/supply-chain/iot/iot-intelligence-home-page)
+- [Planning Optimization overview](../../../supply-chain/master-planning/planning-optimization/planning-optimization-overview.md)
+- [Inventory Visibility Add-in](../../../supply-chain/inventory/inventory-visibility.md)
+- [Configure export to Azure Data Lake](../data-entities/configure-export-data-lake.md)
+- [IoT Intelligence home page](../../../supply-chain/iot/iot-intelligence-home-page.md)
 
 ## Prerequisites for setting up add-ins
 
@@ -51,14 +49,14 @@ Add-ins provide a way to extend the functionality of Finance and Operations apps
     
         ![Power Platform settings](media/PowerPlatformSettings.png)
     
-- For organizations that do not allow **Everyone** to create Power Platform production environments, the Finance and Operations environment administrator account must be added as the admin.
+- Organizations must select **Everyone** for production environments.
     
     The Finance and Operations environment administrator must be added to one of the following roles. You will need a Global Administrator to perform this action.
     - Global admins
     - Dynamics 365 admins
     - Power Platform admins
     
-    For more information, see [Use service admin roles to manage your tenant](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant).
+    For more information, see [Use service admin roles to manage your tenant](/power-platform/admin/use-service-admin-role-manage-tenant).
 
 ## Set up add-ins
 
@@ -92,3 +90,6 @@ Add-ins provide a way to extend the functionality of Finance and Operations apps
     ![Dual-write setup failure](media/Error.png)
 
 - Provisioning of the Dataverse environment might sometimes fail because of capacity and licensing issues. In these cases, sign in to the Power Platform admin center, and fix the issues. Then, in the **Power Platform integration** section of the **Environment details** page in LCS, select **Resume**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Set up the Azure Key Vault client
 description: This topic provides information about storing advanced certificates and defining the certificate storage type.
 author: anasyash
-manager: AnnBe
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -79,3 +77,6 @@ If the secret version isn't defined in the Key Vault secret key, the system retr
 - After you upload a new version of the existing certificate to the Key Vault storage, update the **\<SecretVersion\>** attribute in the **Key Vault certificate secret** field.
 
 Use the **Validate** function to verify that you've correctly defined the reference to the certificate, and that the certificate is valid.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

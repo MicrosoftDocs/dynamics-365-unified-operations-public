@@ -4,11 +4,9 @@
 title: GUIDVALUE ER function
 description: This topic provides information about how the GUIDVALUE Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -69,3 +67,6 @@ You can then use an expression such as `FILTER (Users, Users.objectId = myID)` t
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

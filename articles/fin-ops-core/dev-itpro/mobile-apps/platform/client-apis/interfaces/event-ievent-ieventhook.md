@@ -4,11 +4,9 @@
 title: EventHook type<T>
 description: EventHook type
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
   
 # optional metadata
@@ -86,3 +84,6 @@ Remove all listeners from this event.
 
 #### Returns void
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

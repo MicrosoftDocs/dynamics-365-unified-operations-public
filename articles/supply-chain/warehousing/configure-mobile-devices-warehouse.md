@@ -4,11 +4,9 @@
 title: Set up mobile devices for warehouse work
 description: This topic describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -69,7 +67,7 @@ If the **Mode** field for a menu item is set to **Indirect**, you can create a m
 | Flush number sequence cache | Delete number sequence numbers from the number sequence cache. This activity is typically performed by a system administrator to resolve caching issues when mobile devices are used. |
 | Change batch disposition | Allow a worker to specify a batch disposition code for an item and batch. This selection updates the disposition code that is specified for the batch. |
 | Display open work list | Show a list of available work to a particular user. The user can then select work to perform and will be directed to it. This list is intended to be viewed on tablet devices that have a screen size of 7 inches or more. When you select this option, the **Edit query** and **Field list** menu items become available. The **Edit query** page lets you set up criteria for the work that appears in the list. The **Field list** page lets you select what fields appear in the work list. For example, you can reduce the number of fields that appear, so that the user can more quickly select the most appropriate work item. On the **General** FastTab, in the **Records per page** field, you can also select how many work records are shown per page. If the **Allow users to filter work by transaction type** option is selected, the work list will include a **Filter work** control that the user can use to filter by transaction type. In the work list, users will see only work that they have permission to access. You must make sure that users have permission for one or more user-directed menu items that support the specific work class types that they should be able to access. Permissions are verified when a user tries to perform work from the list.|
-| Create transfer order from license plates | Allows warehouse workers create and process transfer orders directly from the warehouse app. The warehouse workers start by selecting the destination warehouse and can then scan one or more license plates using the app. When the warehouse worker selects **Complete order**, a batch job will create the required transfer order and order lines based on the on-hand inventory registered for those license plates. For more information, see [Create transfer orders from the warehouse app](create-transfer-order-from-warehouse-app.md)
+| Create transfer order from license plates | Allows warehouse workers create and process transfer orders directly from the Warehouse Management mobile app. The warehouse workers start by selecting the destination warehouse and can then scan one or more license plates using the app. When the warehouse worker selects **Complete order**, a batch job will create the required transfer order and order lines based on the on-hand inventory registered for those license plates. For more information, see [Create transfer orders from the warehouse app](create-transfer-order-from-warehouse-app.md)
 
 
 ## Configure menu items to create work for another worker or process
@@ -443,3 +441,6 @@ Additional resources
 [Inventory statuses](../inventory/inventory-statuses.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

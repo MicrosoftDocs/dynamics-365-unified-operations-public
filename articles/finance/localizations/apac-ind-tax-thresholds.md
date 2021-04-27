@@ -4,11 +4,9 @@
 title: Tax thresholds for India FAQ
 description: This topic provides information about tax thresholds for India.
 author: yijialuan
-manager: AnnBe
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -79,3 +77,6 @@ When you create a withholding tax code that uses a threshold, leave the **Value*
 ## Don't see your question here?
 
 Comment on this topic to let us know what question you were expecting to get answered here.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

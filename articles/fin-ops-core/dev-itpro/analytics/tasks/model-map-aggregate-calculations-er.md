@@ -4,11 +4,9 @@
 title: Use model mapping configurations for aggregate calculations at the database level
 description: This topic describes how to design a new Electronic reporting model mapping configuration and use built-in ER functions for efficient aggregate calculations. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 12/12/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -121,3 +119,6 @@ This procedure is created for users with the assigned role of System administrat
 68. Click Save.
     * Note that the 'Execution at' field indicates that this grouping will be performed at run-time in memory even though there are no aggregations defined and the selected data source of 'Table records' type refers to the same 'Intrastat' table. This is because the data source contains some calculated fields which can't yet be translated to the SQL database level.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

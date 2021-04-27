@@ -7,7 +7,6 @@ ms.date: 07/23/2020
 ms.author: margoc
 
 ms.prod:
-ms.service: Dynamics365Operations
 ms.technology:
 
 # optional metadata
@@ -185,3 +184,6 @@ Find the right online training, in person workshops, and events for your role as
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

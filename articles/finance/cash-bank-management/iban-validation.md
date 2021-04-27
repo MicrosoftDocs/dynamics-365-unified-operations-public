@@ -4,11 +4,9 @@
 title: Manage International Bank Account Number (IBAN) account validation
 description: This topic explains how to manage International Bank Account Number (IBAN) account validation.
 author: mikefalkner
-manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,3 +51,6 @@ Information about the structure of the IBAN is stored in Microsoft Dynamics 365 
     The validation also verifies that the bank account number matches the part of the IBAN that represents the bank account number. If the bank account number doesn't match, you will receive a warning message. This message is only a warning. You can continue even if the bank account number doesn't match.
 
     The validation also verifies that the bank routing number matches the part of the IBAN that represents the bank routing number. The routing number includes a bank number and often an additional bank branch. If the bank routing number doesn't match, you will receive a warning message. This message is only a warning. You can continue even if the bank routing number doesn't match.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Cost accounting terminology
 description: This topic defines the key terms that are used in Cost accounting.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -211,3 +209,6 @@ Statements are views for the managers who are responsible for controlling costs.
 Versions are used to simulate, view, and compare various outcomes. By default, all actual costs are viewed in one base version that is known as *actual*. For budgets and calculations, you can work with as many versions as you require. For example, you can import budget data into an original version and then revise the budget in a revised version. For calculations, you can create multiple versions. In these various versions, you can then create calculations by using different calculation rules that will be applied for cost allocation.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

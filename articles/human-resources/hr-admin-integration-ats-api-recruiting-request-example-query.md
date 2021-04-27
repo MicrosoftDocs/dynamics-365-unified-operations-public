@@ -4,11 +4,9 @@
 title: Example query for Recruiting request
 description: This topic provides an example query for the Recruiting request entity in Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -28,6 +26,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Example query for Recruiting request
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This topic provides an example query for the Recruiting request entity in Dynamics 365 Human Resources.
 
@@ -187,3 +187,5 @@ GET [Organizaton URI]/api/data/v9.1/mshr_hcmrecruitingrequestentities(<recruitin
 ## See also
 
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

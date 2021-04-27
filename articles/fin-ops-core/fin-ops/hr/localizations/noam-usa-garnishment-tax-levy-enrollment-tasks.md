@@ -2,13 +2,11 @@
 # required metadata
 
 title: Enroll workers in garnishments or tax levies
-description: This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps ensure that the payroll impact of garnishments and tax levies is handled correctly.
+description: This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees.
 author: andreabichsel
-manager: AnnBe
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -322,3 +320,6 @@ If the combined amount exceeds the maximum deduction limit, set the following va
 ## Additional resources
 
 [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

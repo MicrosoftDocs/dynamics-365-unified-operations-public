@@ -4,11 +4,9 @@
 title: Actual vs budget Power BI content
 description: This topic describes the Actual vs budget Power BI content. It explains how to access the reports and provides information about the data model.
 author: panolte
-manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -61,3 +59,6 @@ The following table provides details about the metrics that are found on each re
 | Ledgers                   | Ledgers that can be used to filter the report to the current ledger              |
 | Budget Codes              | Budget codes to filter reports by                                                |
 | Legal Entities            | Legal entities that can be used to filter the report to the current legal entity |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

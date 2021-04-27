@@ -4,11 +4,9 @@
 title: Working time calendars
 description: This topic describes working time calendars in Dynamics 365 Human Resources as well as how to set up calendars.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -60,3 +58,6 @@ To set up a calendar, follow these steps:
 10. To assign a calendar to employees, select **Assign to employees** in the Action Pane. Select the employees that you would like to assign this calendar to, and then click **Assign**.
 
 Employees aren't required to have calendars assigned. If there is a working time calendar defined, off days are automatically excluded from the request. The amount, in hours or days, defaults to the working times defined in the calendar. If an employee doesn't have a calendar assigned, all days are available for time off and the amount of time off is not the default for the request. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

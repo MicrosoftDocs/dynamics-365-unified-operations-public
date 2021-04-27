@@ -4,11 +4,9 @@
 title: Move licenses between agreement types
 description: This topic explains how to move licenses between agreement types.
 author: ClaudiaBetz-Haubold 
-manager: AnnBe
 ms.date: 01/27/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -100,3 +98,6 @@ Follow these steps for every environment that was deployed under the old agreeme
 
 > - The movement of files that are stored in Azure Blob storage isn't supported in sandbox environments.
 > - Commerce customers should be aware that extra steps are required in order for components to work correctly after the move. For more information, see [Data management overview](../../dev-itpro/data-entities/data-entities-data-packages.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

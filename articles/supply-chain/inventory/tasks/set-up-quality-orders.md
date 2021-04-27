@@ -4,11 +4,9 @@
 title: Set up quality orders
 description: This procedure shows you how to enable a quality management process where incoming inventory must be inspected immediately after arrival registration. 
 author: perlynne
-manager: tfehr 
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -137,3 +135,5 @@ This procedure shows you how to enable a quality management process where incomi
 
 > [!NOTE]
 > The *Quality management for warehouse processes* feature provides additional options for setting up quality associations. It adds a new condition (**Applicable warehouse type**) and a new setting (**Quality processing policy**). If you have enabled this feature, then see [Quality management for warehouse processes](../quality-management-for-warehouses-processes.md) for details.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

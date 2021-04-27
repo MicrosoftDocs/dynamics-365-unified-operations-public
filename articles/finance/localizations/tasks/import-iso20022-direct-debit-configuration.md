@@ -4,11 +4,9 @@
 title: Import ISO20022 direct debit configuration
 description: This procedure demonstrates how to import a customer payment electronic reporting configuration. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -51,3 +49,6 @@ This is the first of five procedures that demonstrate the customer payment proce
     * If the Import button is not available, it means that the configuration has been imported already.  
 9. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

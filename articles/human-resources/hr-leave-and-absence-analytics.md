@@ -4,11 +4,9 @@
 title: View analytics for leave and absence
 description: View leave analytics, accruals and balances, and balance trends in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -32,6 +30,8 @@ ms.dyn365.ops.version: Human Resources
 
 # View analytics for leave and absence
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Dynamics 365 Human Resources provides analytics to help give you insight into your organization's leave and absence trends.
 
 ## View Leave and absence analytics
@@ -50,3 +50,5 @@ Dynamics 365 Human Resources provides analytics to help give you insight into yo
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
 - [Create a leave and absence plan](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

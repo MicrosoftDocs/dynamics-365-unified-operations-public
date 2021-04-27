@@ -4,11 +4,9 @@
 title: Define vendor payment terms
 description: This topic explains how to set up payment terms for vendor invoices.  
 author: abruer
-manager: AnnBe 
 ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -49,3 +47,6 @@ This topic explains how to set up payment terms for vendor invoices. This task u
 16. Enter the main account to which the cash discount will be posted for customer invoices, then enter the main account to which the cash discount will be posted for vendor invoices. If **Discount offset accounts** is set to **Use main account for vendor discount**, then the Main account will be used. If the option is set to **Accounts on the invoice lines**, the cash discount will be posted to the asset/expense accounts on the invoice's lines.  
 17. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

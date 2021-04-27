@@ -4,11 +4,9 @@
 title: Translation memory files
 description: This topic describes when and where translation memory files can be created, edited, and used to result in a quality translation output file.
 author: kfend
-manager: AnnBe
 ms.date: 03/29/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -116,3 +114,6 @@ To verify the translations, you can apply a filter to show only strings that are
 Strings that have been reviewed should be marked as **Translated**, **Final**, or **Signed off**, so that they can be used for recycling. Translations that are marked as **Needs Review** aren't included for recycling.
 
 After you've finished editing the XLIFF TM, remember to have DTS regenerate the refreshed output file in the source format. For more information about how to regenerate the file, see [Translate user interface files](./use-translation-service.md#regenerate-output-files).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

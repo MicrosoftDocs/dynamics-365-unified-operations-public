@@ -4,11 +4,9 @@
 title: Set up Azure DevOps code sharing and create a build pipeline
 description: This topic describes how to set up code sharing with Microsoft Azure DevOps and create a build pipeline for your Dynamics 365 Commerce online extensibility code. 
 author: samjarawan
-manager: annbe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,9 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to set up code sharing with Microsoft Azure DevOps and create a build pipeline for your Dynamics 365 Commerce online extensibility code. 
 
-## Overview
-
-By taking advantage of the capabilities of [Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops), you can help your team plan work, collaborate on code development, and automate the building of deployment packages for Dynamics 365 Commerce e-Commerce.
+By taking advantage of the capabilities of [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops), you can help your team plan work, collaborate on code development, and automate the building of deployment packages for Dynamics 365 Commerce e-Commerce.
 
 This topic guides you through the steps that are required to complete the following tasks:
 
@@ -44,7 +40,7 @@ This topic guides you through the steps that are required to complete the follow
 
 ## Create an Azure DevOps GitHub repo
 
-You can create an Azure DevOps GitHub repo project from a new or existing Azure DevOps service subscription. For more information, see [Azure DevOps Service](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/). To get started with a free trial account, see the [Get started with Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) quickstart guide.
+You can create an Azure DevOps GitHub repo project from a new or existing Azure DevOps service subscription. For more information, see [Azure DevOps Service](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/). To get started with a free trial account, see the [Get started with Azure DevOps](/azure/devops/user-guide/sign-up-invite-teammates) quickstart guide.
 
 To create an Azure DevOps GitHub repo, follow these steps.
 
@@ -214,3 +210,6 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 [Configure a development environment (.env) file](configure-env-file.md)
 
 [Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

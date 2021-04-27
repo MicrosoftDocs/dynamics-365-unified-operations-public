@@ -4,11 +4,9 @@
 title: New or updated task guides (December 2017)
 description: This topic lists the new or updated Task guides that were released to the Microsoft (December 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations. No new Getting Started Library was released.
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -375,3 +373,6 @@ When a BPM line is deleted, any task guide that was associated with the BPM line
 **Deleted BPM line**
 
 - Move scheduled kanban jobs
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

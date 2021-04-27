@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Troubleshoot warehouse app connection issues
+title: Troubleshoot Warehouse Management mobile app connection issues
 description: This topic describes how to fix common issues that you might encounter while connecting the Dynamics 365 for Finance and Operations - Warehousing application to Dynamics 365 Supply Chain Management.
 author: ivanv-microsoft
-manager: tfehr
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -28,7 +26,7 @@ ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.14
 ---
 
-# Troubleshoot warehouse app connection issues
+# Troubleshoot Warehouse Management mobile app connection issues
 
 This topic describes how to fix common issues that you might encounter while connecting the Dynamics 365 for Finance and Operations - Warehousing application to Dynamics 365 Supply Chain Management.
 
@@ -87,3 +85,6 @@ Install the downloaded certificate by doing the following:
 1. Open the security settings for your device and choose the menu option to install a certificate from a file. (The exact steps for this vary based on device and OS version.)
 1. The new certificate should now be shown on the **User** tab for trusted certificates.
 1. Repeat this procedure for each affected device.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Synchronize products with inventory unit from Supply Chain Management to Field Service
 description: This topic discusses the templates and underlying task that are used to synchronize products with inventory unit from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 author: ChristianRytt
-manager: tfehr
 ms.date: 03/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -66,3 +64,6 @@ The following illustrations show the template mapping in Data integration.
 ### Field Service Products with Inventory unit (Supply Chain Management to Field Service): Products
 
 [![Template mapping in Data integration](./media/FSProduct1.png)](./media/FSProduct1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

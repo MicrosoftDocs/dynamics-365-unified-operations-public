@@ -4,11 +4,9 @@
 title: Configure leave and absence parameters
 description: Define human resources parameters for leave and absence in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure leave and absence parameters
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Before you set up leave and absence plans in Dynamics 365 Human Resources, it's a good idea to verify the settings for all related human resources parameters, including:
 
@@ -97,3 +97,6 @@ Before you set up leave and absence plans in Dynamics 365 Human Resources, it's 
 ## See also
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

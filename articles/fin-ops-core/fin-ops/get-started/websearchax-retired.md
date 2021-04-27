@@ -4,11 +4,9 @@
 title: WebSearchAX page has been retired
 description: We've had to retire the WebSearchAX page. We recommend that you use site search from your favorite search engine to replace it.
 author: margoc
-manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -40,3 +38,6 @@ site:technet.microsoft.com dynamics ax 2012 "search term"
 –or–
 
 site:msdn.microsoft.com dynamics ax 2012 "search term"
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

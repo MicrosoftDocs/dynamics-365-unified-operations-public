@@ -4,11 +4,9 @@
 title: Activate Storno accounting for Poland
 description: This topic provides information about storno accounting for Poland.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -88,3 +86,6 @@ On the  **Accounts payable parameters** page, in the **Invoice** area, set the *
  8. In the **Invoice date** field, enter a date.  
  9. Click **Post**.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Import or manually create postal codes
 description: This topic explains how to import and manually create postal codes in the correct format. 
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -51,3 +49,6 @@ For some countries, you must use the Data management framework to import codes, 
 Instead of importing codes, you can use the **Address setup** page to manually add new ZIP/postal codes.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

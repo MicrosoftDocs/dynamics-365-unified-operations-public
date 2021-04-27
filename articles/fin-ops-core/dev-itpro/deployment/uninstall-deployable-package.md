@@ -4,11 +4,9 @@
 title: Uninstall a package
 description: This topic explains how to remove a deployable package from your environment.
 author: laneswenka
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -54,3 +52,6 @@ A model is a design-time concept that is part of a package. When a model isn't t
 4. Upload the package to the Lifecycle Services asset library. Wait for the asset to finish validation, and review any warnings that are shown on the Asset Details panel on the right side of the page.
 5. Install the deployable package. For more information about how to install deployable packages, see [Apply updates to cloud environments](apply-deployable-package-system.md).
 6. Verify that the package was uninstalled before you complete this procedure in a production environment.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

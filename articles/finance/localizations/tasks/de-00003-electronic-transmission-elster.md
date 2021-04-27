@@ -4,11 +4,9 @@
 title: DE-00003 Electronic transmission of VAT declaration (ELSTER)
 description: This procedure walks you through setting electronic tax declaration. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -57,3 +55,6 @@ You should have a valid user certificate (like test-soft-pse.pfx) and a Tax auth
 13. Close the page.
 14. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

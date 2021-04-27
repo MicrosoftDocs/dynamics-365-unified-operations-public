@@ -4,11 +4,9 @@
 title: Finance insights home page (preview)
 description: Finance insights provides configurable and extensible models to help you accurately and intelligently predict your company's cash flow, predict when you will receive payment for outstanding receivables, and generate a budget proposal that can speed up your budgeting process. All these features are based on intelligent machine learning models.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 07/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -37,7 +35,7 @@ Finance insights provides configurable and extensible models to help you accurat
 
 Finance insights preview is available for trial deployments in the United States of America, Europe, and the United Kingdom. Microsoft is incrementally adding support for more regions.
 
-Preview features can and should be turned on only in Tier-2 sandbox environments. Setup and artificial intelligence (AI) models that are created in a sandbox environment can't be migrated to a production environment. For more information, see [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://docs.microsoft.com/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+Preview features can and should be turned on only in Tier-2 sandbox environments. Setup and artificial intelligence (AI) models that are created in a sandbox environment can't be migrated to a production environment. For more information, see [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
 
 ## Prerequisites
 
@@ -49,7 +47,7 @@ To apply for the preview program, fill out the [Finance insights Preview for Dyn
 
 ### System requirements
 
-A Tier-2 sandbox environment (multi-box) is required to preview Finance insights. For background information about environments, see [Environment planning](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
+A Tier-2 sandbox environment (multi-box) is required to preview Finance insights. For background information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### Version requirements
 
@@ -85,7 +83,7 @@ You'll need to create a data integrator project so that data that the machine le
 When you've completed the configuration steps and set up demo data, you must turn on and set up each capability that you plan to use: customer payment predictions, cash flow forecasting, and budget proposals.
 
 ### Enable Customer payment predictions
-If you are using demo data to test customer payment predictions, you may have to import additional demo data to create your AI model successfully. For the specific steps to import demo data, see [Set up demo data for payment predictions](set-up-demo-data.md).
+If you are using demo data to test customer payment predictions, you may have to import additional demo data to create your AI model successfully. 
 
 To enable Customer payment predictions, you must complete a set of steps to build a machine learning model that uses your organization's data your organization's data to generate predictions about when customers are likely to pay outstanding invoices, and when specific invoices are likely to be paid. For more information and the specific steps to complete, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md). 
 
@@ -133,3 +131,6 @@ Please send an email to [Customer payment insights (Preview)](mailto:fiap@micros
 ## Privacy notice
 
 Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

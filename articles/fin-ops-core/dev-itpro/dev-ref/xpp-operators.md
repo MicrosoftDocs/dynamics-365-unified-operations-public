@@ -1,31 +1,16 @@
 ---
-# required metadata
-
 title: X++ operators
 description: This topic describes the operators supported in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 150373
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ operators
@@ -324,3 +309,6 @@ The order that a compound expression is evaluated in can be important. For examp
 Operators on the same line have equal precedence. If an expression includes more than one of these operators, it's evaluated from left to right, unless assignment operators are used. (Assignment operators are evaluated from right to left.) For example, `&&` (logical `AND`) and `||` (logical `OR`) have the same precedence, and are evaluated from left to right. Therefore: 
 + `0 && 0 || 1` is equal to `1`
 + `1 || 0 && 0` is equal to `0`.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

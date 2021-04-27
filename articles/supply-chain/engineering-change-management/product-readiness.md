@@ -4,11 +4,9 @@
 title: Product readiness
 description: This topics explains how you can use readiness checks to ensure that the required master data is completed for a product before it's used in transactions.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -149,6 +147,9 @@ For each row that you add, set the following fields.
 | Company | If you set the **Execute in** field to *Single company*, select the company. |
 | Owner type | Select whether readiness checks that the row generates should be assigned to a person or a team. |
 | Owner | Select the person or team that readiness checks that the row generates should be assigned to. |
-| Questionnaire | Select the questionnaire that should be used for the checklist. The checklist is a local checklist in the company where the readiness check is done. The system must be able to evaluate whether the checklist is correctly answered. Therefore, the checklist must be set up so that an evaluation is done based on correct answers. For more information about how to create questionnaires, see [Using questionnaires](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) and its related topics. |
+| Questionnaire | Select the questionnaire that should be used for the checklist. The checklist is a local checklist in the company where the readiness check is done. The system must be able to evaluate whether the checklist is correctly answered. Therefore, the checklist must be set up so that an evaluation is done based on correct answers. For more information about how to create questionnaires, see [Using questionnaires](/dynamicsax-2012/appuser-itpro/using-questionnaires) and its related topics. |
 | Automatic approval | Readiness check records include an **Approved** check box that indicates the approval status. Select the **Automatic approval** check box for checks that should be set to approved immediately after the assigned user completes them. Clear this check box to require explicit approval as an extra step. |
 | Mandatory | Select this check box for checks that must be completed by the assigned user. Mandatory checks can't be skipped. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

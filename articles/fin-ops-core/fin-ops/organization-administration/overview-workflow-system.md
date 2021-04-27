@@ -4,11 +4,9 @@
 title: Workflow system overview
 description: This topic describes the workflow system.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -77,3 +75,6 @@ There are several benefits of using the workflow system in your organization:
 + [Configure parallel branches in a workflow](configure-parallel-branch-workflow.md)
 + [Configure line-item workflows](configure-line-item-workflow.md)
 + [Workflow FAQ](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

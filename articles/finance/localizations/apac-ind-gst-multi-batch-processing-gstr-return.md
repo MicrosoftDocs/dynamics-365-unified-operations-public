@@ -4,11 +4,9 @@
 title: Enable multi-batch processing for GSTR reports
 description: This topic explains how to enable multi-batch processing for Goods and Services Tax return (GSTR) reports.
 author: prabhatb
-manager: RichardLuan
 ms.date: 09/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -56,3 +54,6 @@ In India, every legal entity must file Goods and Services Tax (GST) returns. Typ
 2. Select the comma-separated values (CSV) files that you want. For example, select **GER export to GSTR CSV\_\_Merged**. This file is generated as a merged file.
 
 ![Get CSV Files ](media/Multi-batchprocessing-003.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

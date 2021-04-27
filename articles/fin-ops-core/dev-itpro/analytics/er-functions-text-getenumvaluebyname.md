@@ -4,11 +4,9 @@
 title: GETENUMVALUEBYNAME ER function
 description: This topic provides information about how the GETENUMVALUEBYNAME Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -122,3 +120,6 @@ If you plan to use this approach for a large amount of transactional data, you m
 [FIRSTORNULL ER function](er-functions-list-firstornull.md)
 
 [WHERE ER function](er-functions-list-where.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

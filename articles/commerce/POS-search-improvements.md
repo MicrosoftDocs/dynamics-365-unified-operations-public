@@ -4,11 +4,9 @@
 title: Product search and customer search in the point of sale (POS)
 description: This topic provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 Commerce. 
 author: ShalabhjainMSFT
-manager: AnnBe
-ms.date: 07/28/2020
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -54,11 +52,8 @@ A local product search searches in the following product properties:
 - Barcode
 - Search name
 
-### Enhancements to local product searches
+### Additional local product search capabilities
 
-The experience for local product searches is now more user-friendly. The following enhancements have been made:
-
-- Product and customer drop-down menus have been added to the search bar, so that employees can select either **Product** or **Customer** before they do the search. By default, **Product** is selected, as shown in the illustration that follows.
 - For multiple-keyword searches (that is, for searches that use search terms), retailers can configure whether the search results include results that match *any* search term or only results that match *all* search terms. The setting for this functionality is available in the POS functionality profile, in a new group that is named **Product search**. The default setting is **Match any search term**. This setting is also the recommended setting. When the **Match any search term** setting is used, all products that fully or partially match one or more search terms are returned as results. Those results are automatically sorted in ascending order of products that have the most keyword matches (full or partial).
 
     The **Match all search terms** setting returns only products that match all the search terms (full or partial). This setting is helpful when the product names are lengthy, and employees want to see only limited products in the search results. However, this type of search has two limitations:
@@ -66,7 +61,7 @@ The experience for local product searches is now more user-friendly. The followi
     - The search is done on individual product properties. For example, only products that have all the searched keywords in at least one product property are returned.
     - Dimensions aren't searched.
 
-- Retailers can now configure product search to show search suggestions as users type product names. A new setting for this functionality is available in the POS functionality profile, in a group that is named **Product search**. The setting is named **Show search suggestions while typing**. This functionality can help employees quickly find the product that they are searching for, because they don't have to type the whole name manually.
+- Retailers can configure product search to show search suggestions as users type product names. A new setting for this functionality is available in the POS functionality profile, in a group that is named **Product search**. The setting is named **Show search suggestions while typing**. This functionality can help employees quickly find the product that they are searching for, because they don't have to type the whole name manually.
 - The product search algorithm now also searches for the searched terms in the **Search name** property of the product.
 
 ![Product suggestions](./media/Productsuggestions.png "Product suggestions")
@@ -91,18 +86,18 @@ To search globally, employees can select the **Filter results** button at the bo
 > [!NOTE]
 > A minimum of four characters must be entered for a remote customer search to return results.
 
-In a remote customer search, the customer ID isn't shown for customers from the other legal entities, because no customer ID has been created for those parties in the current company. However, if an employee opens the customer details page, the system automatically generates a customer ID for the party and also associates the store's customer address books with the customer. Therefore, the customer will be visible in local store searches that are done later.
+The customer ID isn't shown for customers queried from other legal entities, because no customer ID has been created for those parties in the current company. However, if an employee opens the customer details page, the system automatically generates a customer ID for the party and also associates the store's customer address books with the customer. Therefore, the customer will be visible in local store searches that are done later.
 
 ![Global customer search](./media/Globalcustomersearch.png "Global customer search")
 
-### Enhancements to local customer search
+### Additional local customer search capabilities
 
-Searches that are based on the phone number have been simplified. These searches now ignore special characters, such as spaces, hyphens, and brackets, that might have been added when the customer was created. Therefore, cashiers don't have to worry about the phone number format when they search. For example, if a customer's phone number was entered as **123-456-7890**, a cashier can search for the customer by typing **1234567890**, or by entering the first few numbers of the phone number.
+When the user searches for a phone number, the system ignores special characters (such as spaces, hyphens, and brackets) that might have been added when the customer was created. Therefore, cashiers don't have to worry about the phone number format when they search. For example, if a customer's phone number was entered as **123-456-7890**, a cashier can search for the customer by typing **1234567890**, or by entering the first few numbers of the phone number.
 
 > [!NOTE]
 > A customer can have multiple phone numbers and multiple emails. The customer search algorithm also searches through these secondary emails and phone numbers, but the customer search results page only displays the primary email and phone number. This may cause some confusion as the returned customer results would not show the searched email or phone number. In a future release we plan to improve the customer search results screen to show this information.
 
-The traditional customer search can be time-consuming, because it searches across multiple fields. Instead, cashiers can now search in a single customer property, such as name, email address, or phone number. The properties that the customer search algorithm uses are collectively known as the *customer search criteria*. The system admin can easily configure one or more criteria as shortcuts that will appear in POS. Because the search is limited to a single criterion, only the relevant search results are shown, and the performance is much better than the performance of a standard customer search. The following illustration shows the customer search shortcuts in POS.
+The traditional customer search can be time-consuming, because it searches across multiple fields. Instead, cashiers can search in a single customer property, such as name, email address, or phone number. The properties that the customer search algorithm uses are collectively known as the *customer search criteria*. The system admin can easily configure one or more criteria as shortcuts that will appear in POS. Because the search is limited to a single criterion, only the relevant search results are shown, and the performance is much better than the performance of a standard customer search. The following illustration shows the customer search shortcuts in POS.
 
 ![Customer search shortcuts](./media/SearchShortcutsPOS.png "Customer search shortcuts")
 
@@ -118,7 +113,46 @@ The **Display order** field determines the order in which shortcuts are shown in
 > [!NOTE]
 > A custom property that is added to the enum doesn't affect the standard customer search algorithm. In other words, the customer search algorithm won't search in the custom property. Users can use a custom property for searches only if that custom property is added as a shortcut, or if the default search algorithm is overridden.
 
-In an upcoming release of Commerce, retailers will be able to set the default customer search mode in POS to **Search all stores**. This configuration can be helpful in scenarios where customers that were created outside POS must be searched immediately (for example, even before the distribution job is run). A new **Default customer search mode** option will be available in the POS functionality profile. Set it to **On** to set the default search mode to **Search all stores**. Every customer search attempt will then make a real-time call to the headquarters.
+Retailers can also set the default customer search mode in POS to **Search all stores**. This configuration can be helpful in scenarios where customers that were created outside POS must be searched immediately (for example, even before the distribution job is run). To do so, the retailer must turn on the **Default customer search mode** option in the POS functionality profile. Once it is set to **Yes**, every customer search attempt will then make a real-time call to headquarters.
 
 To help prevent unexpected performances issues, this configuration is hidden behind a flighting flag that his named **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Therefore, to show the **Default customer search mode** setting the user interface (UI), the retailer should create a support ticket for its user acceptance testing (UAT) and production environments. After the ticket is received, the engineering team will work with the retailer to make sure that the retailer does testing in its non-production environments to assess the performance and implement any optimizations that are required.
 
+## Cloud-powered customer search
+
+Public preview of the customer search capability using the Azure Cognitive Search service has been released as part of the Commerce 10.0.18 release. In addition to performance improvements, users of the service also benefit from rich refinement and improved relevance capabilities. The performance improvements are especially evident when the global search feature ("Search all stores") of the POS is used. This is because search results are fetched from the Azure search index instead of queried from the data in Commerce headquarters. 
+
+### Enable the cloud-powered search feature
+
+> [!NOTE]
+> It is required that both Commerce headquarters and Commerce Scale Unit are updated to version 10.0.18. Updating the POS is not required.
+
+To enable the cloud-powered search feature in Commerce headquarters, follow these steps.
+
+1. Go to **System administration \> Workspaces \> Feature management**.
+1. Find and select the **(Preview) Cloud powered customer search** feature, and then select **Enable now**.
+1. Go to **Retail and Commerce > Headquarters setup > Commerce scheduler > Initialize commerce scheduler** and select **OK** to display the new **1010_CustomerSearch** job on the **Distribution schedule** form.
+1. Go to **Retail and Commerce > Retail and Commerce IT > Distribution schedule**.
+1. Run the **1010_CustomerSearch** job. This job publishes the date to the Azure search index. When publishing of the index is completed, the status of the job will be set to **Applied**.
+1. After the **1010_CustomerSearch** job status is set to **Applied**, run the **1110 - Global configuration** job to update the POS channels of the newly enabled feature in **Feature management**.
+1. Subsequently, run the **1010_CustomerSearch** job at regular intervals to send customer updates to the search index.
+
+> [!NOTE]
+> For the initial index publish, the **1010_CustomerSearch** job may take a few hours to complete as it will send all the customer records to the Azure search index. Subsequent updates should take a few minutes. In the time period when the cloud-powered search feature is enabled but the index publishing is not yet completed, the customer search from POS will default to the existing SQL-based search. This ensures that there are no interruptions to store operations.
+
+### Functional differences from the existing search
+
+The following list shows the how the cloud-powered customer search functionality differs from the existing search functionality. 
+
+- Customers created and edited in Commerce headquarters are sent to the Azure search index when the **1010_CustomerSearch** job is run. These updates take a minimum of 15 to 20 minutes to update the index. POS users will be able to search for new customers (or search based on updated information) about 15 to 20 minutes after the updates occur in Commerce headquarters. If your business process requires that customers created in Commerce headquarters are immediately searchable in POS, this might not be the right service for you.
+- New customers created in POS are sent to the Azure search index from the Commerce Scale Unit and are immediately searchable across any store. However, if the Async customer creation feature is turned on, new customer records will not be published to the Azure search index from the Commerce Scale Unit and will not be searchable from POS until the customer information is synced with Commerce headquarters and customer IDs are generated for Async customers. The **1010_CustomerSearch** job will then be able to send the Async customer records to the Azure search index. On average, it will be around 30 minutes before newly created Async customers can be searched on POS. This estimate assumes that the **1010_CustomerSearch**, **P-job**, and **Synchronize customers and business partners from async mode** jobs are scheduled to run every 15 minutes.
+- Cloud-powered search also searches for the secondary emails and phone numbers of customers, but currently customer search results only display the primary phone number and primary email address of customers. At first glance it may seem that irrelevant search results have been returned, but checking the secondary email and phone number of a customer in search results can help verify if the searched-for keyword resulted in a customer match. To avoid such confusion, there are plans to improve the search results page to make it easy for users to understand why a search result was returned.
+- The requirement of searching using at least 4 characters in a global search ("Search all stores") is not applicable to this service.
+
+> [!NOTE]
+> The customer search capability using the Azure Cognitive Search service is available in limited regions for preview. The customer search capability is *not* available in the following regions:
+> - Brazil
+> - India
+> - Canada
+> - United Kingdom
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

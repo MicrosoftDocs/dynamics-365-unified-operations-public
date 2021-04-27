@@ -4,11 +4,9 @@
 title: QRCODE ER function
 description: This topic provides information about how the QRCODE Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -66,3 +64,6 @@ When you run the configured ER format, the text value of the **LabelText** field
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Visual Studio add-ins that support form patterns
 description: The tools for Visual Studio include a number of add-ins that support pattern usage. 
 author: jasongre
-manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -43,3 +41,6 @@ The **Form statistics** add-in provides a summary of the pattern usage for forms
 The **Form Patterns** report provides pattern information about every form, including whether the form uses a top-level form pattern, is a custom form, or is not specifying a form pattern. To generate the **Form Patterns** report, start Microsoft Visual Studio, click the **DYNAMICS 365** menu, expand **Add-ins**, and then click **Run the form patterns report**. The process will take several seconds. After the report has been generated, a dialog box will provide the location of the report. Browse to the specified location, and open the file in Microsoft Excel. You can then filter the report down to the models that interest you.
 
 For more information about Visual Studio add-ins, see [Tools add-ins for Visual Studio](../dev-tools/developer-tools-add-ins.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Database movement operations home page
 description: This topic provides links to quick start guides and tutorials available for Database Movement features in Lifecycle Services. 
 author: laneswenka
-manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -63,3 +61,6 @@ The Database Movement application programming interface (API) lets you integrate
 * [Throttling](./api/dbmovement-api-throttling.md)
 * [Reference](./api/v1/dbmovement-api-v1-overview.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

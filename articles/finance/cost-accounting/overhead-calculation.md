@@ -4,11 +4,9 @@
 title: Overhead calculation
 description: This topic describes the typical processes for calculating and allocating overhead costs.
 author: AndersGirke
-manager: AnnBe
 ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -1418,3 +1416,6 @@ In Financial accounting, a cost of 10,000.00 for Electricity is posted to a dumm
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Create a goal
 description: You can create goals, add activities to goals, track measurements, and link the goals to a review. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -29,6 +27,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Create a goal
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can create goals, add activities to goals, track measurements, and link the goals to a review. This procedure was created using the USMF demo data company. This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.
 
@@ -63,3 +63,6 @@ You can create goals, add activities to goals, track measurements, and link the 
     * There are often several goals that are the same or similar for team members or all employees.     Your HR administrator or manager can create goal groups that contain one or more goal templates. You can add goals from a goal group, and then modify them to match your timelines.  
     * When you create a review, you can add goals to that review. Refer to the task guide for reviews to see how you can add goals to your reviews.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

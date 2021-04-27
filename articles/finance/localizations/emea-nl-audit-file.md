@@ -7,7 +7,6 @@ author: liza-golub
 ms.date: 05/06/2020
 ms.topic: article
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -50,3 +49,6 @@ The steps in this procedure walk you through using the Audit file.
 3. In the **To date** field, enter a date. 
 4. In the **Format mapping** field, enter **Audit file (NL)**.
 5. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

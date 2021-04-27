@@ -1,18 +1,12 @@
 ---
-# required metadata
-
 title: Extensibility changes in Dynamics 365 for Finance and Operations version 8.1.3
 description: This topic lists the extensibility features that were released in Dynamics 365 for Finance and Operations version 8.1.3
 author: FrankDahl
-manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -434,3 +428,6 @@ These methods have been refactored to support extensibility.
 The following additional changes have been made for extensibility.
 
 - Updated aging and balance list classes and forms to support the ability for customizations to increase the number of calculated aging buckets. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

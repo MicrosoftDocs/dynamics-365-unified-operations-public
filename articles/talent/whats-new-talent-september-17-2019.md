@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Talent (September 17, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent September 17, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -62,3 +60,6 @@ In this release, the job family column has been added to the **Manage changes** 
 This functionality is now available in sandbox environments. To turn this feature on, navigate to **System administration > Links > Setup > System parameters > Preview features**. Select **Enhanced worker form and navigation**. This will enable these changes for all users. You can turn this option off at any time.
 
 For more information, see [Streamlined employee entry and navigation](./streamlined-employee-entry.md). To see the changes, watch the video [Dynamics 365 for Talent 2019 release wave 2 overview](https://aka.ms/ROGT19RW2ROV).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

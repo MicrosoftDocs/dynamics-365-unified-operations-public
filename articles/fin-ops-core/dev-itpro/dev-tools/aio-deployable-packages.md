@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: All-in-one deployable packages
 description: This topic describes the all-in-one deployable package concept and its use.
 author: laneswenka
-manager: AnnBe
 ms.date: 09/23/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang:
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.9
@@ -70,3 +56,6 @@ ISVs can send license deployable packages to provide or update a license. Howeve
 The best practice of using fully deployable packages helps reduce the complexity and number of packages that are applied to a given environment. In some circumstances, installation of different packages can change the behavior of your environment. For example, if you install ModelA and then ModelB instead of ModelB and then ModelA.
 
 In addition, this approach is a hard requirement for self-service environments. This is because those environments use containerization technology and build a brand-new environment every time that you apply a package. If you apply ModelA today and then apply only ModelB tomorrow, you will effectively uninstall ModelA.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

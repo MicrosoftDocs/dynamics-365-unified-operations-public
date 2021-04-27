@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Testing and validations
 description: This tutorial shows you how to create and run test cases.
 author: jorisdg
-manager: AnnBe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -191,3 +185,6 @@ You can generate test code from Task Recorder recording to execute headless (non
 After the test module is a part of source control, the build process template will discover all test modules, which contain the word **Test** in the name. The following illustration shows build and test execution as part of Visual Studio Online. 
 
 [![Build and test execution](./media/69.png)](./media/69.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

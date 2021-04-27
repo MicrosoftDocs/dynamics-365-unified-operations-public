@@ -3,11 +3,9 @@
 title: Application lifecycle management
 description: This topic describes the benefits of making dual-write solution-aware.
 author: sabinn-msft
-manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -43,7 +41,7 @@ There two types of solutions: managed and unmanaged.
 
 A managed solution can't be modified, and it can be uninstalled after it's imported. When you import an unmanaged solution, you add all the components of that solution into your environment. When you import an unmanaged solution that contains components that you've already customized, your customizations are overwritten by the customizations in the imported unmanaged solution.
 
-For more information about solutions, see the [solutions overview](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview).
+For more information about solutions, see the [solutions overview](/powerapps/maker/common-data-service/solutions-overview).
 
 ## Install the dual-write core solution
 
@@ -155,7 +153,7 @@ After you run the solution checker and make sure that there are no issues, you e
 
 You've now customized your tables, added them to a new solution, and created a solution file that can be imported and applied to other environments. (This capability can be useful if you want to move table maps between test and production environments.) In a similar way, you can create a backup of all your table maps by adding them to a solution and exporting the solution as a package. That package can then be imported into to any environment to restore the table maps.
 
-For information about how to publish the package to AppSource, see [Publish your app on AppSource](https://docs.microsoft.com/powerapps/developer/common-data-service/publish-app-appsource).
+For information about how to publish the package to AppSource, see [Publish your app on AppSource](/powerapps/developer/common-data-service/publish-app-appsource).
 
 ### Test your exported solution package
 
@@ -201,3 +199,6 @@ Sometimes, a solution might contain different implementations of a table map. Fo
     ![Upgrading your table maps](media/upgrade-entity-maps.png)
 
 The upgrade takes a few minutes. When it's completed, you receive a notification.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Switch between vendor designs
 description: This topic describes how to switch vendor data integration between Finance and Operations apps and Dataverse.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -82,3 +80,6 @@ To create new workflow processes by using the workflow process templates, follow
 4. Create a workflow process for the **Contact** table, and select the **Update Vendors of type Person in Vendors Table** template.
 5. You can configure the workflows as either real-time workflows or background workflows, depending on your requirements. To configure a workflow as a background workflow, select **Convert to a background workflow**.
 6. Activate the workflows that you created on the **Contact** and **Vendor** tables to start to use the **Contact** table to store information for vendors of the **Person** type.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

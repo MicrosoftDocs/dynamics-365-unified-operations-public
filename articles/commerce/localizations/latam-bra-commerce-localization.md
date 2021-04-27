@@ -4,11 +4,9 @@
 title: Commerce localization for Brazil
 description: This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Brazil.
 author: josaw
-manager: annbe
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -108,3 +106,6 @@ Commerce supports fiscal registration via the [Fiscal integration framework](../
 | Integration of the POS with fiscal printers                              |                |                           |         | X           |
 
 \* *Fiscal book statements* are SPED (Sistema Público de Escrituração Digital) Fiscal, SPED Contributions, and ICMS-ST (Imposto sobre Circulação de Mercadorias e Serviços - Substituição Tributária) compensation and restitution statements for the supported states.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

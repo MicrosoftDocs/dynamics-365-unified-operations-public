@@ -4,11 +4,9 @@
 title: Deferred expenses register
 description: This topic provides information about how to generate and set up deferrals.
 author: Akroshkina
-manager: anasyash
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -48,7 +46,7 @@ Here are some examples of deferrals:
 
 ## Deferrals setup
 
-For more information about how to set up deferrals, see [Set up deferrals (Russia)](https://docs.microsoft.com/dynamics365/finance/localizations/rus-set-up-deferrals).
+For more information about how to set up deferrals, see [Set up deferrals (Russia)](./rus-set-up-deferrals.md).
 
 ### Set up deferral creation when you sell fixed assets
 
@@ -292,3 +290,6 @@ The following two examples use the **RUMF** company:
 
 17. Approve the journal, and then create the tax register journal for two months of the 2019 calendar year.
 18. Calculate the registers. In the **Deferrals** register, you should see the same line that you saw in the **Deferrals** register for one month. However, the **Amount of months** field will be set to **2.00** instead of **1.00**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

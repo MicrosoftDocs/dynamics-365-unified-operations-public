@@ -4,11 +4,9 @@
 title: Revenue recognition bundles
 description: This topic describes the bundle functionality that is included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item and multiple component items.
 author: kweekley
-manager: aolson
 ms.date: 01/04/2021
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -115,3 +113,6 @@ The invoice journal that is created after posting occurs doesn't include the par
 It's important that the invoice journal not include the parent item from the bundle, because any processes that are performed after the invoice is posted are based on that invoice journal. For example, if you create a credit note from the **Sell** tab on the Action Pane, the credit note that is created will include the component items but not the parent item.
 
 [![Credit note that shows the component items but not the parent item](./media/bundle-09.png)](./media/bundle-09.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

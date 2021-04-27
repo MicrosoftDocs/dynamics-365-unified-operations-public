@@ -4,11 +4,9 @@
 title: On-premises deployment home page
 description: This topic provides information and links to content about on-premises deployments.
 author: sericks007
-manager: AnnBe
-ms.date: 11/23/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -44,12 +42,14 @@ You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose 
 
 ## Onboard
 - [Set up on-premises projects in Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md)
+- [Set up and deploy on-premises environments (Platform update 41 and later)](setup-deploy-on-premises-pu41.md)
+- [Set up and deploy on-premises environments (Platform updates 12 through 40)](setup-deploy-on-premises-pu12.md)
 - [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md)
 - [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md)
 - [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md)
 
 ## Work in your on-premises deployment
+- [Configure high availability for SQL Server Reporting Services (SSRS) nodes](onprem-SSRSHA.md)
 - [Configure document management](../../fin-ops/organization-administration/configure-document-management.md)
 - [Import Electronic reporting (ER) configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Document generation, publishing, and printing in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
@@ -61,10 +61,10 @@ You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose 
 - [Reuse the same AD FS instance for multiple environments](onprem-reuseadfs.md)
 
 ## Commerce
-- [Commerce capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md)
+- [Commerce capabilities that are available in on-premises deployments](../../../commerce/retail-onprem.md)
 - [Installation steps for Retail channel components in an on-premises environment](deploy-retail-onprem.md)
-- [Configure, install, and activate Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md)
-- [Configure and install Commerce Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Configure, install, and activate Modern POS (MPOS)](../../../commerce/retail-modern-pos-device-activation.md)
+- [Configure and install Commerce Scale Unit](../../../commerce/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
 ## Upgrade
 - [In-place upgrade process for on-premises environments](../migration-upgrade/on-prem-upgrade.md)
@@ -77,3 +77,6 @@ You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose 
 - [Removed or deprecated features for Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Software lifecycle policy and on-premises releases](../migration-upgrade/on-prem-version-update-policy.md)
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

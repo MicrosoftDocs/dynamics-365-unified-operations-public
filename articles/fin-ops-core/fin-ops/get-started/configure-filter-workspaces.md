@@ -4,11 +4,9 @@
 title: Configure and filter workspaces
 description: This article provides an overview about how to configure and filter workspaces.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -68,3 +66,6 @@ If individual sections of the workspace have filters, you can filter each sectio
 [![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 As with a workspace-wide filter, select or enter a value in the field to filter the contents of the section.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Asset Management parameters
 description: In Asset Management, general parameters relating to assets, work orders, and work order scheduling must be set up.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -111,3 +109,6 @@ Select the document types that should be available for printing attachments rela
 ## The Number sequences tab
 
 Select the required number sequences in this section. There are two number sequences for assets: one for manually created assets and one for assets created through pending assets.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

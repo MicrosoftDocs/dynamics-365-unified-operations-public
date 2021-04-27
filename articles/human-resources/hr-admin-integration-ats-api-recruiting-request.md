@@ -4,11 +4,9 @@
 title: Recruiting request
 description: This topic describes the Recruiting request entity for Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -28,6 +26,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Recruiting request
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This topic describes the Recruiting request entity for Dynamics 365 Human Resources.
 
@@ -102,7 +102,8 @@ Describes a request to recruit for a job.
 | **Job Type ID Value**<br>_mshr_fk_jobtype_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_hcmjobtypeentityid of mshr_hcmjobtypenentity entity | The system-generated unique identifier of the job type associated with the job for the recruiting request. |
 | **Exempt Status**<br>mshr_exemptstatus<br>*JobExemptStatus* option set | Read-only<br>Optional | The FLSA exempt status based on the job type. |
 | **Estimated Start Date**<br>mshr_estimatedstartdate<br>*Date* | Read/write<br>Required | The estimated date a candidate would start work. |
-| **External Description**<br>mshr_externaldescription<br>*String* | Read/write<br>Optional | A candidate-facing description of the job/position. | Compensation Low Threshold<br>mshr_compensationlowthreshold<br>*Double* | Read/write<br>Optional | Lower bound for the compensation level. |
+| **External Description**<br>mshr_externaldescription<br>*String* | Read/write<br>Optional | A candidate-facing description of the job/position. | 
+| **Compensation Low Threshold**<br>mshr_compensationlowthreshold<br>*Double* | Read/write<br>Optional | Lower bound for the compensation level. |
 | **Compensation Control Point**<br>mshr_compensationcontrolpoint<br>*Double* | Read/write<br>Optional | Control point for the compensation level. |
 | **Compensation High Threshold**<br>mshr_compensationhighthreshold<br>*Double* | Read/write<br>Optional | Upper bound for the compensation level. |
 | **Compensation Level**<br>mshr_compensationlevelid<br>*String* | Read/write<br>Optional | The compensation level of the job. A job can be set up with multiple compensation levels. This attribute indicates the selected job compensation level for this request. |
@@ -112,3 +113,6 @@ Describes a request to recruit for a job.
 
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
 [Example query for Recruiting request](hr-admin-integration-ats-api-recruiting-request-example-query.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

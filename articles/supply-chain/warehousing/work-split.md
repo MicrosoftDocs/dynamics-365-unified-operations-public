@@ -4,11 +4,9 @@
 title: Work split
 description: This topic provides information about work split functionality. This functionality lets you split large work orders into several smaller work orders that you can then assign to multiple warehouse workers. In this way, the same work can be picked simultaneously by several warehouse workers.
 author: mirzaab
-manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -73,7 +71,7 @@ The *Work split* feature adds the following two buttons to the **Work** tab on t
 >
 > - The work is currently being split by another user. If you try to open the splitting page for work that is already being split by another user, you receive the following error message: "The work with ID \#\#\#\# is currently being split. Retry in a few minutes. If you continue to receive this message, contact a supervisor."
 
-A new work blocking reason, *Split work*, indicates when the work ID is in the process of being split. It's shown both on the **Split work** page and in the warehouse app if a user tries to run the work. When blocking reasons are used, the name of the **Blocked wave** field from the work ID is changed to **Blocked**.
+A new work blocking reason, *Split work*, indicates when the work ID is in the process of being split. It's shown both on the **Split work** page and in the Warehouse Management mobile app if a user tries to run the work. When blocking reasons are used, the name of the **Blocked wave** field from the work ID is changed to **Blocked**.
 
 ## Initiate a work split
 
@@ -151,10 +149,13 @@ To finish splitting work, the *Split work* blocking reason must be removed. Ther
 
 After the *Split work* blocking reason is removed, the work can be run on the mobile device, provided that the **Blocked** state is set to *No* on the work ID.
 
-## User blocking on the warehouse app
+## User blocking on the Warehouse Management mobile app
 
-If you try to use the warehouse app to run picking work against a work ID that is being split, you will receive the following error message: "The work with ID \#\#\#\# is currently being split." If you receive this message, select **Cancel**. You can then continue to process other work.
+If you try to use the Warehouse Management mobile app to run picking work against a work ID that is being split, you will receive the following error message: "The work with ID \#\#\#\# is currently being split." If you receive this message, select **Cancel**. You can then continue to process other work.
 
 ## Other blocked operations
 
 Any operations that modify work lines, work inventory transactions, or replenishment links that are related to work that is being split will fail, and the following error message will be shown: "The work with ID \#\#\#\# is currently being split."
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

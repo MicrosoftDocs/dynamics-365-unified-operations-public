@@ -3,11 +3,9 @@
 title: Set up and process payment orders for Russia
 description: This topic explains how to set up and process payment orders for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -131,3 +129,6 @@ To run the report, complete the following steps.
 4. Define the following filters for payment orders: **Payment order status**, **Curreny code**, **Bank account** and **Electronic payment** remark (All, Electronic, Printout form).
 5. Click **OK** to generate the report.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

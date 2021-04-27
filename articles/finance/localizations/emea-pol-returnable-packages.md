@@ -4,11 +4,9 @@
 title: Returnable packaging for Poland
 description: The topic describes how to set up and use returnable packaging for Poland.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -111,3 +109,6 @@ To enter information about the packages that customers return, click **Accounts 
 After you've finished entering information about package returns, click **Post** to post the return transactions. On the posting page, set the **Print** option to **Yes** to print the **Return packages confirmation** report. To reprint the confirmation report later, you can click **Print** on the **Return packages confirmation** page. Users can inquire about return package transactions. Click **Inventory management** &gt; **Setup** &gt; **Packing materials** &gt; **Return packages**, and then, on the **Transactions** tab, click **Transactions** to open the **Return packages transactions** page. Return package transactions will have negative values in the **Package quantity** field. Click **Voucher** to view the details of a selected transaction. Click **Printout** to print the **Return packages confirmation** report.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

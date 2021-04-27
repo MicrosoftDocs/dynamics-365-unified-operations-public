@@ -4,11 +4,9 @@
 title: Create and update store hours
 description: This topic describes how to create and update store hours in Commerce Headquarters.
 author: josaw1
-manager: AnnBe
 ms.date: 7/30/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -83,3 +81,6 @@ Follow these steps to add store hours to the printed POS receipts.
 POS receipts now include the store hours. If any holidays were included in the template, they are shown on the receipt.
 
 ![Receipt example](../dev-itpro/media/Storehours3.png "Receipt example")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Create vendor payments by using a payment proposal
 description: This topic provides an overview of the payment proposal options and includes some examples that show how payment proposals work. 
 author: abruer
-manager: AnnBe
 ms.date: 04/04/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -127,3 +125,6 @@ You can define a standard debiting payment account per method of payment regardl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

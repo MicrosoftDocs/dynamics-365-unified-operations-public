@@ -4,11 +4,9 @@
 title: Sales returns
 description: This topic provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
 author: omulvad
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -342,3 +340,6 @@ In this example, the return order line is created by using the **Find sales orde
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

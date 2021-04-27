@@ -4,11 +4,9 @@
 title: Generate a statistical baseline forecast
 description: This topic provides information about the parameters and filters that are used in the calculation of demand forecasting. 
 author: roxanadiaconu
-manager: tfehr
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -81,3 +79,6 @@ Additional resources
 - [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 
 - [Authorize an adjusted forecast](authorize-adjusted-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

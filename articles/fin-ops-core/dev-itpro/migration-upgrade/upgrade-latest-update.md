@@ -4,11 +4,9 @@
 title: Process for moving to the latest update of Finance and Operations
 description: This topic explains the process for moving to the latest update of Finance and Operations.
 author: laneswenka
-manager: AnnBe
 ms.date: 10/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -72,3 +70,6 @@ This path involves configuring your project for continuous updates.
 
 [Configure service updates through Lifecycle Services (LCS)](../lifecycle-services/configure-service-updates.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

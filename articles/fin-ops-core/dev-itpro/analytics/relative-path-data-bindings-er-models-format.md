@@ -4,11 +4,9 @@
 title: Use a relative path in data bindings of ER models and formats
 description: The Electronic reporting tool lets you define electronic format structures and then describe how those structures should be filled. 
 author: NickSelin
-manager: AnnBe
 ms.date: 07/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -65,3 +63,6 @@ This feature does not break the backward compatibility of the ER framework. All 
 ## Additional resources
 
 [ER formula language](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

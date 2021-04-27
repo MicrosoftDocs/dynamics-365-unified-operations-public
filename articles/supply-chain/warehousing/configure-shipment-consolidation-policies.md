@@ -4,11 +4,9 @@
 title: Configure shipment consolidation policies
 description: This topic explains how to set up default and custom shipment consolidation policies.
 author: GarmMSFT
-manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -358,3 +356,6 @@ The following scenarios illustrate how you could use the shipment consolidation 
 ## Additional resources
 
 - [Shipment consolidation policies](about-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

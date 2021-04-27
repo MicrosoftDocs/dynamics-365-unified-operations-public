@@ -4,11 +4,9 @@
 title: Super types and sub types
 description: Describes support for inheritance patterns in data entities.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -95,3 +93,6 @@ Mapping fields from base and multiple derived types in a single data entity is a
 In this example, the **Party** type is computed by using the **InstanceRelationType** column on DirPartyTable. This approach works for reading data. However, to do **Create** or **Update** operations, you must write code where you override the **initializeEntityDataSource** method on the data entity, based on type, and set a correct instance of the derived type for the data source run-time context buffer.
 
 [![sub11](./media/sub11.png)](./media/sub11.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

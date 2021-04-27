@@ -4,11 +4,9 @@
 title: Position budgeting troubleshooting
 description: This article provides answers to questions that you might have when you configure position budgeting. It addresses frequently asked questions about how to create budget cost elements, compensation groups, and compensation grids. 
 author: panolte
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -68,3 +66,6 @@ The dates on the forecast position cost element line must be within the followin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

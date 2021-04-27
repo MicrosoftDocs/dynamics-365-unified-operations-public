@@ -4,11 +4,9 @@
 title: Advanced notes management
 description: This topic explains how to set up and print predefined notes for customers, vendors, and products.
 author: ilkond
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -37,7 +35,7 @@ The Advanced notes management feature lets you set up predefined notes that appl
 
 Before you begin the setup, the following prerequisites must be met:
 
-- The **Advanced notes management** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The **Advanced notes management** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Advanced notes setup
 
@@ -119,3 +117,6 @@ In Accounts payable, notes are automatically generated as attachments to new pur
 Advanced notes which are defined as **External** are printed in the related business documents depending on the settings on the **Form setup**
 
 ![Setup for printing advanced notes](media/emea-ita-exil-notes-printing.jpg)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

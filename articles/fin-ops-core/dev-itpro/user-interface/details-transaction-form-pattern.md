@@ -4,11 +4,9 @@
 title: Details Transaction form pattern
 description: This topic provides information about the Details Transaction form pattern. Using this pattern, users can switch between a Header view and a Line view.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -199,8 +197,8 @@ None currently.
 
 #### AX 2012 links
 
--   [MSDN Details Form with Lines User Experience Guidelines \[AX 2012\]](https://msdn.microsoft.com/library/gg886601.aspx)
--   [MSDN Details Form \[AX 2012\]](https://msdn.microsoft.com/library/hh397318.aspx)
+-   [MSDN Details Form with Lines User Experience Guidelines \[AX 2012\]](/dynamicsax-2012/developer/details-form-with-lines-user-experience-guidelines)
+-   [MSDN Details Form \[AX 2012\]](/dynamicsax-2012/developer/details-forms)
 
 #### AX 2012 example
 
@@ -218,3 +216,6 @@ None currently.
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

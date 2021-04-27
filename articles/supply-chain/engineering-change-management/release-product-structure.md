@@ -4,11 +4,9 @@
 title: Release product structures
 description: This topic explains how you can release complete product structures in addition to releasing products together with their engineering versions. In this way, you can ensure that engineering-relevant product data can easily be reused in different legal entities.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -80,8 +78,6 @@ For an example of how to accept a product, see [Review and accept the product be
 ## Release policies
 
 Not all operational companies need the same product data. In general, operational companies that manufacture engineering products require a BOM, whereas operational company that only sell engineering products don't require a BOM. You can use release policies to establish the parameters that are used for the release of products.
-
-For engineering products, the release policy is assigned in the engineering product category, and the field is mandatory. For standard products, the policy is assigned to the shared product, and the field is optional.
 
 For more information about engineering product categories, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
 
@@ -163,3 +159,6 @@ This behavior applies only when a product is directly selected for release. Prod
 For example, product X is assigned to the *Design cabinets* product owner group. Product X is also part of the BOM of product Y, which is assigned to the *Design speakers* product owner group. If a user from the *Design speakers* product owner group releases product Y and its BOM, product X will be released together with product Y.
 
 For more information, see [Product owners](product-owner.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

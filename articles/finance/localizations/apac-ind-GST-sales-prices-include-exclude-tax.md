@@ -4,11 +4,9 @@
 title: Sales where prices include and exclude tax
 description: This topic provides information about sales where the prices on some order lines include sales tax and the prices on other order lines exclude sales tax.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -78,3 +76,6 @@ ms.dyn365.ops.version: 10.0.4
 2. Select **Voucher**.
 
 ![Example](media/Annotation-2019-05-20-153808.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

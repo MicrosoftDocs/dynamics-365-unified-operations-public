@@ -4,11 +4,9 @@
 title: Settlement overview for centralized payments
 description: This topic describes settlement for centralized payments for Microsoft Dynamics 365 Finance. 
 author: abruer
-manager: AnnBe
 ms.date: 08/02/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -111,3 +109,6 @@ For vendor payments, the due-to and due-from transactions in the legal entity of
 
 ## Withholding tax
 The vendor account that is associated with the invoice is used to determine whether withholding tax should be calculated. If withholding tax applies, it is calculated in the legal entity that is associated with the invoice. If the legal entities use different currencies, the exchange rate from the legal entity that is associated with the invoice is used.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

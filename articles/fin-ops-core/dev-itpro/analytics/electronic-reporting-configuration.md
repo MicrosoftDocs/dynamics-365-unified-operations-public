@@ -4,11 +4,9 @@
 title: Create Electronic reporting (ER) configurations
 description: This article provides background information that will help you start to use Electronic reporting to create configurations. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -171,3 +169,6 @@ You can choose how to move your electronic reporting functionality into GER. How
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Manage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

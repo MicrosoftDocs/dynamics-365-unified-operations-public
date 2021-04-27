@@ -3,12 +3,10 @@
 
 title: On-premises deployment overview
 description: Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers. 
-author: kfend
-manager: AnnBe
-ms.date: 09/18/2019
+author: cabeln
+ms.date: 03/18/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: arifk
+ms.author: cabeln
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
@@ -35,9 +33,9 @@ ms.dyn365.ops.version: Platform Update 8
 Microsoft Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers. With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center. Customers and partners will utilize Microsoft Dynamics Lifecycle Services (LCS) to manage their on-premises deployments. LCS is an application management portal that provides tools and services for managing the application lifecycle of your implementations in the cloud and on-premises. LCS features, such as business process modeling, software deployment and patching, and monitoring and diagnostics, are used to help support on-premises deployments.
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Azure. 
+> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) services.
 
-## Architecture 
+## Architecture
 
 The on-premises deployment option uses cloud components running on-premises using Microsoft Azure Server Service Fabric standalone clusters. Service Fabric is the next-generation Microsoft middleware platform for building and managing enterprise-class high-scale applications. Service Fabric standalone clusters can be deployed on any computer that is running Windows Server. 
 
@@ -70,3 +68,6 @@ Table 1: Customer data stored in Microsoft Azure data centers located in the Uni
   
 
 Additional services or components can be configured to extend an on-premises deployment as needed; however, configuration choices may cause core customer data to be transferred outside of the customer’s data center. For example, configuring data management features that are used to integrate external services with an on-premises deployment may result in the transfer of core customer data outside the on-premises deployment. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

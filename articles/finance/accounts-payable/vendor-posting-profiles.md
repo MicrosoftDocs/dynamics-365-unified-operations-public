@@ -4,11 +4,9 @@
 title: Vendor posting profiles
 description: Vendor posting profiles control the posting of vendor transactions to the general ledger.
 author: abruer
-manager: AnnBe
 ms.date: 06/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -123,3 +121,6 @@ Specify the following values to set up your posting profile
 | **Settlement** | Select this option to enable automatic settlement of transactions that have this posting profile. If this option is cleared, you must manually settle transactions by using the **Settle open transactions** page. |
 | **Cancel**     | Select this option if you want to be able to cancel transactions that have this posting profile.                                                                                                               |
 | **Close**      | Select a posting profile to change to when transactions that have this posting profile are closed. A transaction is regarded as closed when it has been settled in full.                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

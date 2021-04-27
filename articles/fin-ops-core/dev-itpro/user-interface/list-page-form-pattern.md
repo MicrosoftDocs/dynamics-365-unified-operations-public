@@ -4,11 +4,9 @@
 title: List Page form pattern
 description: This article provides information about the List Page form pattern. A list page presents a set of data, so that you can find and work with a specific record. 
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -138,9 +136,12 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [MSDN AX 2012 List Page User Experience Guidelines](https://msdn.microsoft.com/library/gg853328.aspx)
--   [MSDN AX 2012 List Page Forms](https://msdn.microsoft.com/library/cc635077.aspx)
+-   [MSDN AX 2012 List Page User Experience Guidelines](/dynamicsax-2012/developer/list-page-user-experience-guidelines)
+-   [MSDN AX 2012 List Page Forms](/dynamicsax-2012/developer/list-page-forms)
 
 #### AX 2012 example
 
 [![Example](./media/listpage3-1024x671.png)](./media/listpage3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

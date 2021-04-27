@@ -4,11 +4,9 @@
 title: Confirm and transfer
 description: This topic explains how to use the Confirm and transfer feature, which lets users ship loads out of the warehouse before they complete all the work that is associated with those loads.
 author: mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -233,3 +231,6 @@ You can also confirm that transaction relations have been updated in the followi
 - The **Split quantity to new load** option also works when some of the remaining work headers have a status of *In process*. Therefore, you can still use the functionality even if workers are already running the pick orders.
 - If you select **Cancel unfulfilled quantity** while there is remaining work that has a status of *Open* or *In progress*, you receive the following error message: "Unable to cancel remaining qty for load. Work exists for load."
 - If you select **Cancel unfulfilled quantity** when there is no remaining work but there are unreleased load lines on the load, you receive the following error message: "The shipment for load could not be confirmed because the quantity for item exceeds the percentage that is defined for under delivery." To avoid the error, you can set the **Under delivery** percentage on the unreleased load line to 100 percent. Unreleased lines won't be moved to a new load, but the current load will be confirmed with under-delivery. In this case, you won't be able to re-release the original order. Therefore, so you will have to handle it in some other way.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

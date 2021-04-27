@@ -1,18 +1,12 @@
 ---
-# required metadata
-
 title: Extensibility changes in Dynamics 365 for Finance and Operations version 8.1.2
 description: This topic lists the extensibility features that were released in Dynamics 365 for Finance and Operations version 8.1.2
 author: FrankDahl
-manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: NOINDEX, NOFOLLOW
@@ -375,3 +369,6 @@ The following table lists additional changes that have been made for extensibili
 - Enable percent controlled for a catch weight item.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

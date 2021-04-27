@@ -4,11 +4,9 @@
 title: Client disconnects
 description: This article explains what to do if the customer is disconnected from his or her environment and doesn't know why.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Client disconnects
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Environment details** 
 
@@ -58,3 +58,6 @@ Microsoft Dynamics 365 Human Resources disconnects users when two different sess
 Make sure that only one environment is open at a time for a given browser type. Users can open multiple sessions to the same environment (that is, multiple tabs in the same browser).
 
 Users who want to jump between two environments at the same time should open each environment in a different browser type. (For example, user A can view environment 1 in Chrome and environment 2 in Microsoft Edge.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

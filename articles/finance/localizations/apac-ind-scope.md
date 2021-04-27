@@ -4,11 +4,9 @@
 title: Scope of the Indian localization
 description: This topic provides information about the strategy and scope of the tax, finance, and accounting laws and regulations in India that were implemented as part of Microsoft Dynamics 365 Finance. 
 author: kfend
-manager: AnnBe
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -105,7 +103,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 
 ## Indian localization: Key benefits
 
-- Configurable localization of [the Tax engine (GTE)](../general-ledger/tax-engine.md) and [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md) offers major benefits:
+- Configurable localization of [the Tax engine (GTE)](../general-ledger/tax-engine.md) and [Electronic reporting (ER)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) offers major benefits:
 
     - **Extensible transaction type** – A unified model is used in the tax calculation. The addition of transaction types requires additions only to the model mapping.
     - **Extensible tax calculation** – Formula-based calculation can be done by a power user.
@@ -372,3 +370,6 @@ The following table lists the localization features that are supported in Financ
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

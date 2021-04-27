@@ -4,11 +4,9 @@
 title: Service tasks overview
 description: Use service tasks to describe the task to be completed during a service order. Both technicians and customers can see this information. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -117,3 +115,6 @@ should be grouped by service task ID as their initial grouping criteria.
 2. On the **Setup** tab, select **By service task** in the **Combine service orders** field.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

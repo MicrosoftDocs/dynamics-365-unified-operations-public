@@ -4,11 +4,9 @@
 title: Generate documents that have application data
 description: To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 4 - Modify format)". 
 author: NickSelin
-manager: AnnBe 
 ms.date: 06/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -82,3 +80,6 @@ Review the generated XML file.
 6. Close the page.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

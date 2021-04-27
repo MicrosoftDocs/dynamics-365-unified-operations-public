@@ -4,11 +4,9 @@
 title: Set up postdated checks
 description: This topic explains how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments. 
 author: kweekley
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -59,3 +57,6 @@ The role of this procedure is Treasurer. This procedure uses the USMF demo compa
 18. Click Save.
 19. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,11 +3,9 @@
 title: Enable dual-write for existing Finance and Operations apps
 description: Learn how to enable dual-write for existing instances of Finance and Operations apps, and also for a new or existing Dataverse environment.
 author: sabinn-msft
-manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,3 +48,6 @@ Each part is described in a separate topic.
 ## Next steps
 
 [System requirements and prerequisites](requirements-and-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

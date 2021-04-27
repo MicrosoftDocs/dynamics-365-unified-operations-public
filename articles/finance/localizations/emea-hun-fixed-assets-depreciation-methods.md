@@ -4,11 +4,9 @@
 title: Fixed assets depreciation methods for Hungary
 description: This topic provides information about fixed asset depreciation for legal entities in Hungary.
 author: Anasyash
-manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -166,3 +164,6 @@ If you set the period frequency to a unit that is smaller than a **Yearly** (for
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

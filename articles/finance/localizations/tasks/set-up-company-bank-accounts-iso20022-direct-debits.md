@@ -4,11 +4,9 @@
 title: Set up company bank accounts for ISO20022 direct debits
 description: This task walks you through setting up the company specific bank account information that is required for generating customer payment files. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -62,3 +60,6 @@ This is the second of five procedures that demonstrate the customer payment proc
     * For example, select the "DEMF OPER" bank account.  
 6. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

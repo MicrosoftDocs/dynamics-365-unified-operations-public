@@ -4,11 +4,9 @@
 title: Create a purchase order from a sales order
 description: This procedure shows you how to create a purchase order that is based on a sales order. 
 author: omulvad
-manager: tfehr 
 ms.date: 06/26/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -71,3 +69,6 @@ This procedure shows you how to create a purchase order that is based on a sales
     - The **Reference lot** guarantees that the costs from the current purchase are charged on the attached sales order.  
     - You can navigate to the originating sales order by opening the link in the **Reference number** field.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

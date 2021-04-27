@@ -4,11 +4,9 @@
 title: References to original invoices in credit notes
 description: This topic explains how to set up and print the original invoice numbers in related credit notes.
 author: ilkond
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -32,13 +30,12 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 In some countries and regions, there is a legal requirement that printed credit notes include references to the original invoices. This topic explains how to set up and print the original invoice numbers in related credit notes.
 
 ## Prerequisites
 
-- In the **Feature management** workspace, turn on the **Credit invoicing layout for sales and project invoice reports** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, turn on the **Credit invoicing layout for sales and project invoice reports** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - The printable formats of the required documents must be configured in Print management.
 
 The functionality that is described in this topic applies to the following documents:
@@ -102,3 +99,6 @@ When you print free text, customer, and project credit notes, they will include 
 
 > [!NOTE]
 > Make sure that the printable formats of the documents are correctly configured, on the assumption that references to original invoices will be printed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Human Resources (February 7, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for February 7, 2020.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -30,6 +28,8 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 # What's new or changed in Dynamics 365 Human Resources (February 7, 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -59,7 +59,7 @@ The following preview features are available on February 3, 2020:
 
 ### Platform update 32 
 
-Platform update 32 will be available soon. [Find out more information about Platform update 32 here](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
+Platform update 32 will be available soon. [Find out more information about Platform update 32 here](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
 
 ### Updated Dataverse Solution
 
@@ -79,6 +79,8 @@ A new Dataverse solution will be available soon with the following changes:
 ## See also
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
-[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

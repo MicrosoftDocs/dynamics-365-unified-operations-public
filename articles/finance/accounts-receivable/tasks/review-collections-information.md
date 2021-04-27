@@ -4,11 +4,9 @@
 title: Review collections information
 description: This topic explains how to review collections information as well as various setup options and collections transactions. 
 author: ShivamPandey-msft
-manager: AnnBe 
 ms.date: 08/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -145,3 +143,6 @@ This topic explains how to review collections information as well as various set
 5. Select **Show list**.
 - Select a customer account or accept the default entry. By default this is the selected customer account on the list page or in the form from which you opened this form. If you opened the form from a list page, the customers in the list are the customers who are included in the collections pool that is used on the list page.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

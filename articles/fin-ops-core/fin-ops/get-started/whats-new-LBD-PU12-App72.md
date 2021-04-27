@@ -4,11 +4,9 @@
 title: What's new or changed in on-premises deployments of Dynamics 365 for Finance and Operations, Enterprise edition 7.2 with platform update 12 (March 2018)
 description: This topic describes features that are either new or changed in on-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.2 with platform update 12. This deployment option became available in March 2018.
 author: sericks007
-manager: AnnBe
 ms.date: 03/14/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -54,3 +52,6 @@ Hotfixes that you can download from LCS provide additional features for your on-
 
 - **[KB 4091763 - Admin toggles for Client connectivity and Skype presence](https://fix.lcs.dynamics.com/Issue/Details?kb=4091763&bugId=3934773&qc=fd949f8a204ceeedaa0a586ca8a1bfdbd6535b35225da98506d688e093d086f6):** This hotfix enables administrators to disable experiences that depend on internet connectivity on client machines. For more information, see [Client internet connectivity](../../dev-itpro/user-interface/client-disconnected.md).
 - **[KB 4093454 - ISV license support for on-premises](https://fix.lcs.dynamics.com/Issue/Details?kb=4093454&bugId=3936799&qc=766427475435463a174e287b531401ab8cc8f1aeedf12bf2c2d4f8d1a1774592):** When deploying an on-premises environment starting from platform update 12, the tenant GUID is automatically populated from LCS to the on-prem environment. Licensing validation can read this value and successfully validate the licenses. For more information, see [Independent software vendor (ISV) licensing (on-premises)](../../dev-itpro/dev-tools/isv-licensing-on-prem.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

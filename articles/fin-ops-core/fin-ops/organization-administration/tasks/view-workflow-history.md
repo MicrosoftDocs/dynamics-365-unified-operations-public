@@ -4,11 +4,9 @@
 title: View workflow history
 description: This topic describes the steps to view the status of a document that was submitted to the workflow system for processing and approval.  
 author: jasongre
-manager: AnnBe 
 ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -49,3 +47,6 @@ This topic describes the steps to view the status of a document that was submitt
     - The **Reassign** button will open a dialog box where you can reassign a work item to another user.  
     - Make sure the **Tracking details** section is expanded. In this section you can view the workflow history of the selected document.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

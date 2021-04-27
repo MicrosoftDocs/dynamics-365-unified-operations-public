@@ -3,12 +3,10 @@
 
 title: Maintenance rounds
 description: This topic explains maintenance rounds in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -121,3 +119,6 @@ The two illustrations below show a schedule job in the **Schedule maintenance ro
 - You can set up a batch job on the **Run in the background** FastTab to schedule rounds at regular intervals.  
 - If a round is included in several work order pools (refer to [Work order pools](../work-orders/work-order-pools.md)), one record is shown for each pool in **Open maintenance schedule pools**. This is done to optimize the filtering options for work order pools.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

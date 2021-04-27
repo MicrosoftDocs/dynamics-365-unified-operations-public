@@ -4,11 +4,9 @@
 title: Adjust an ER format to generate a custom electronic document
 description: This topic explains how to adjust a Microsoft-provided Electronic reporting (ER) format so that it generates a custom electronic document.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -199,7 +197,7 @@ You must add bank information for a vendor account that will be referred to late
 
 ### <a id="EnterVendorPayment"></a>Enter a vendor payment
 
-You must enter a new vendor payment by using a [payment proposal](https://docs.microsoft.com/dynamics365/finance/accounts-payable/create-vendor-payments-payment-proposal).
+You must enter a new vendor payment by using a [payment proposal](../../../finance/accounts-payable/create-vendor-payments-payment-proposal.md).
 
 1. Go to **Accounts payable** \> **Payments** \> **Vendor payment journal**.
 2. On the **Vendor payment journal** page, select **New**.
@@ -519,3 +517,6 @@ To start to use the new functionality of version 3.3 of the **BACS (UK)** format
 - [Electronic Reporting overview](general-electronic-reporting.md)
 - [Download ER configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 - [Download ER configurations from Global repository of Configuration service](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Infrastructure estimator in Lifecycle Services (LCS)
 description: The Microsoft Dynamics Lifecycle Services Infrastructure estimator provides an automated rough first estimate of the hardware needs of an environment.
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -121,3 +119,6 @@ On the main Infrastructure estimator page, select an estimate to view the detail
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

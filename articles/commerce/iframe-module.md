@@ -4,11 +4,9 @@
 title: Iframe module
 description: This topic covers the iframe module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-commerce
 ms.technology:
 
 # optional metadata
@@ -33,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.13
 [!include [banner](includes/banner.md)]
 
 This topic covers the iframe module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 An iframe module provides an iframe (inline frame) that hosts external content on a site. For example, it can be used to host a YouTube video or a PDF file viewer on any site page. 
 
@@ -80,3 +76,6 @@ To add an iframe module to a page to show an external video, follow these steps.
 [Module library overview](starter-kit-overview.md)
 
 [Manage Content Security Policy (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

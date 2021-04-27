@@ -4,11 +4,9 @@
 title: General troubleshooting
 description: This topic provides general troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -127,3 +125,6 @@ To re-enable the **Information** form option, follow these steps:
 2. Find the **Information** form under the forms node. 
 3. Select the **Information** form and click **Enable security roles**. 
 4. Change the security setting to **Display to everyone**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

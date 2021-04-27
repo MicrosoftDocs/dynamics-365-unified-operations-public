@@ -3,12 +3,10 @@
 
 title: Service level and description
 description: This topic explains service level and description in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -60,3 +58,6 @@ When you create a work order, you might want to define the service levels for it
 2. Select **New**.
 3. In the **Description** field, enter the description.
 4. Select **Save**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

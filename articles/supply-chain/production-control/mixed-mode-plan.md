@@ -4,11 +4,9 @@
 title: Mixed mode planning - Combine discrete, process, and lean sourcing
 description: This topic provides information about mixed mode planning. 
 author: cvocph
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -72,3 +70,6 @@ For full flexibility in mixed mode, we recommend that you use production type BO
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

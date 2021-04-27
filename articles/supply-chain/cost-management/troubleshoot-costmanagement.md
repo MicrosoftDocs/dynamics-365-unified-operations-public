@@ -3,12 +3,10 @@
 
 title: Troubleshoot cost management
 description: This topic describes how to fix issues that you might encounter while working with cost management.
-author: riluan
-manager: tfehr
+author: AndersGirke
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: riluan
+ms.author: aevengir
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
 
@@ -41,7 +39,7 @@ The [Inventory aging report storage](inventory-aging-report-storage.md) and [Inv
 
 Subtotals can cause issues when the result is exported, especially if users change the record sequence.
 
-To check the subtotals, you can export the result into Microsoft Excel. Alternatively, if you want to check subtotals within Supply Chain Management, use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable the *New grid control* and *(Preview) Grouping in grids* features, which provide a much more flexible way to see the subtotal for any group by column. For more information, see [Grid capabilities](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
+To check the subtotals, you can export the result into Microsoft Excel. Alternatively, if you want to check subtotals within Supply Chain Management, use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable the *New grid control* and *Grouping in grids* features, which provide a much more flexible way to see the subtotal for any group by column. For more information, see [Grid capabilities](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
 
 ### Inventory value storage report doesn't support ledger account information
 
@@ -85,3 +83,6 @@ Until Microsoft releases a solution to fix the issue, consider using the followi
 - Avoid decimal values in the standard cost. Try to define the standard cost so that the **Price quantity** field is set to *1*. If you must specify a **Price quantity** value that is more than *1*, try to minimize the number of decimal places in the unit standard cost. (Ideally, there should be fewer than two decimal places.) For example, avoid defining standard cost settings such as **Price** = *10* and **Price quantity** = *3*, because they will produce a unit standard cost of 3.333333 (where the decimal value repeats).
 - In a majority of documents, avoid having multiple lines that hold the same combination of product and financial inventory dimensions.
 - Reduce the degree of parallelization. (In this case, your system might become faster, because fewer update conflicts and retries occur.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

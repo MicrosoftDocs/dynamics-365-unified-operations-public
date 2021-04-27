@@ -4,11 +4,9 @@
 title: ImageDesign type
 description: Image design object type.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -232,3 +230,6 @@ The relative horizontal size of the image.
 Sizes are about equivalent to CSS em sizes.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

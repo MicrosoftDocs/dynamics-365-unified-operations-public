@@ -4,11 +4,9 @@
 title: Migration guidance for Segmented Entry controls
 description: This topic guides you through the process of migrating a Segmented Entry control.
 author: robinarh
-manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -1013,3 +1011,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

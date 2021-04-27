@@ -4,11 +4,9 @@
 title: Credit management setup
 description: This topic describes the setup that is required for Credit management.
 author: mikefalkner
-manager: AnnBe
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -160,3 +158,6 @@ Follow these steps to add lines that represent the credit limit that will be gen
 2. Select the comparison operator that defines how the scoring group information should be evaluated.
 3. Enter the value that should be compared to the value that is specified for the scoring group.
 4. Enter the credit limit that should be assigned if the customer information matches the value that is specified for the scoring group. For example, you create an automatic credit limit for the **Low** scoring group. If the years in business is one of the scoring groups, you can define one line that assigns a 100,000 credit limit if the customer has been in business five years and another line that assigns a 200,000 credit limit if the customer has been in business for 10 years.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

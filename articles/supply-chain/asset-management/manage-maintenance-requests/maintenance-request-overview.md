@@ -3,12 +3,10 @@
 
 title: Maintenance requests
 description: This topic provides an overview about managing maintenance requests in Asset Management
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -77,3 +75,6 @@ The buttons on the Action Pane are organized on tabs. The following table briefl
 | Send loan asset                  | Select a loan asset that should be a temporary replacement for the asset that is selected on the selected maintenance request. |
 | Return loan asset                | Register the loan asset as returned. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

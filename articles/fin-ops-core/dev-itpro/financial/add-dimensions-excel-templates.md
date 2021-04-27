@@ -4,11 +4,9 @@
 title: Add lookup values for financial dimensions to Excel templates
 description: This topic provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
 author: aprilolson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -113,3 +111,6 @@ The only value that is present on Microsoft Excel templates after installation i
 [Extensibility home page](../extensibility/extensibility-home-page.md)
 
 [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

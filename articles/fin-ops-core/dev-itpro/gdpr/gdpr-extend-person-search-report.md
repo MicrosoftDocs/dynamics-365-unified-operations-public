@@ -4,11 +4,9 @@
 title: Extend the Person search report
 description: This topic walks you through the process of extending the Person search report for Finance and Operations.
 author: rschloma
-manager: AnnBe
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -131,3 +129,6 @@ You can learn more about the GDPR on the [European Union's website](https://euro
 
 ### Disclaimer
 (c)2018 Microsoft Corporation. All rights reserved. This document is provided "as-is." Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

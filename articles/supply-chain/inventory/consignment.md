@@ -4,11 +4,9 @@
 title: Set up consignment
 description: This topic explains how to use the inbound consignment inventory processes.
 author: perlynne
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -107,3 +105,6 @@ If your vendors are using the vendor collaboration interface, they can use this 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Extensibility in Attract
 description: This topic describes how you can extend Microsoft Dynamics 365 Talent - Attract by using the Microsoft Power platform.
 author: andreabichsel
-manager: tfehr
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -39,7 +37,7 @@ Microsoft Dynamics 365 Talent is built on top of Dataverse, and can be extended 
 
 ## Extending Choice columns in Attract
 
-A **Choice** column (picklist) is a type of column that can be included in an table. It defines a set of options. When a Choice column is displayed in a form it uses a drop-down list control.  In Attract there are multiple columns that are Choice columns.  We are beginning to introduce the capability to extend the Choice columns, beginning with the Rejection reason column, Employment type column, and Seniority type column.   Also, you can add localized display labels for the options that you add. For more information, see [Customize labels to support multiple languages](https://docs.microsoft.com/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
+A **Choice** column (picklist) is a type of column that can be included in an table. It defines a set of options. When a Choice column is displayed in a form it uses a drop-down list control.  In Attract there are multiple columns that are Choice columns.  We are beginning to introduce the capability to extend the Choice columns, beginning with the Rejection reason column, Employment type column, and Seniority type column.   Also, you can add localized display labels for the options that you add. For more information, see [Customize labels to support multiple languages](/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
 
 > [!NOTE]
 > The job posting to LinkedIn functionality requires the use of the **Employment type** and **Seniority type** column on the **Job details** page. The default values in these columns are supported by LinkedIn and are displayed when the job is posted. Therefore, if you are posting jobs to LinkedIn and you modify the existing Choice values for these columns, the job will still post, but LinkedIn will not display the custom **Employment type** and **Seniority type** values.  
@@ -68,15 +66,15 @@ Because all the data from Attract resides in Dataverse, you can use tools from t
 
 You can use Power Apps to easily build apps that connect to your Attract data, and that use expressions like the expressions in Microsoft Excel to add logic. Apps that you build by using Power Apps can run on the web, and on Apple iOS and Google Android devices.
 
-For example, you can make university career fairs easier for recruiters by building a lightweight app that lets them scan resumes and feed candidates to a position in Attract. Alternatively, you can build an app that helps meet your organization's compliance needs. For more information about Power Apps and how to use it to build apps, see [Integrate data into Dataverse](https://docs.microsoft.com/powerapps).
+For example, you can make university career fairs easier for recruiters by building a lightweight app that lets them scan resumes and feed candidates to a position in Attract. Alternatively, you can build an app that helps meet your organization's compliance needs. For more information about Power Apps and how to use it to build apps, see [Integrate data into Dataverse](/powerapps).
 
 ### Microsoft Power Automate 
 
-You can use Microsoft Power Automate to create automated workflows that run on top of Attract data. You can easily connect to hundreds of popular apps and services without having to write code. By building flows that interact with the Attract Job, Candidate, and Application Tables in Dataverse, you can automate various actions. For example, when a candidate accepts an offer, a notification can be sent to an onboarding team, or the news can be announced on Twitter. For more information about flows, see the [Microsoft Power Automate documentation](https://docs.microsoft.com/flow/).
+You can use Microsoft Power Automate to create automated workflows that run on top of Attract data. You can easily connect to hundreds of popular apps and services without having to write code. By building flows that interact with the Attract Job, Candidate, and Application Tables in Dataverse, you can automate various actions. For example, when a candidate accepts an offer, a notification can be sent to an onboarding team, or the news can be announced on Twitter. For more information about flows, see the [Microsoft Power Automate documentation](/flow/).
 
 ### Power BI
 
-Power BI lets you build and view custom reports and dashboards that give you deeper insight into your Attract data. For more information about Power BI and how to build interactive reports and dashboards, see the [Power BI documentation](https://docs.microsoft.com/power-bi/).
+Power BI lets you build and view custom reports and dashboards that give you deeper insight into your Attract data. For more information about Power BI and how to build interactive reports and dashboards, see the [Power BI documentation](/power-bi/).
 
 ### Custom activities 
 
@@ -95,3 +93,6 @@ The Web content (iframe) activity lets you embed a custom web solution that you'
 
 > [!NOTE]
 > The Web content activity is available only with the Comprehensive hiring add-on.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

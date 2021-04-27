@@ -4,11 +4,9 @@
 title: Develop composite data entities
 description: A composite entity is a concept that allows you to build a single entity by leveraging multiple entities that are related to each other. 
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 03/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -170,3 +168,6 @@ We recommend that you import and export the data as a normal entity from DIXF st
     - Use this file for initial mapping only.
     - When the mapping is successful, import the actual file which does not have the line data into the entity. Use reimport or upload a new file.
     - This should import files with partial data (blank child records), depending on the validity of the records.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

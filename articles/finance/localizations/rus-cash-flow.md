@@ -4,11 +4,9 @@
 title: Cash flow management (Russia)
 description: This topic walks you through an example that shows how to set up and use cash flow management in Microsoft Dynamics 365 Finance.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 02/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -651,3 +649,6 @@ This step should be completed for a Treasury company.
 Standard payment proposal functionality will process open transactions that are linked to a payment request that has **Accepted** status.
 
 The payment proposal algorithm includes additional changes that are applied when payment requests are used. The system considers the posting profile, the setting of the **Prepayment** parameter, and the payment order requisites that are filled in on payment requests.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Shipping discount overview
 description: This topic describes the shipping discount capabilities within Dynamics 365 Commerce and the corresponding setup steps required to start using these discounts.
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -51,3 +49,6 @@ When the cashier creates a customer order on POS or the customer places an order
 
 > [!NOTE]
 > Unlike product discounts such as quantity, simple, mix and match, and threshold discounts, the shipping discount does not create discount lines. Instead, the shipping discount edits the shipping charge directly and appends the name of the discount to the charge description. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -5,11 +5,9 @@
 title: Avoid text truncation on the position hierarchy and export to Visio
 description: This article explains how to resolve an issue where the names of individuals and positions are truncated when customers view the position hierarchy in Microsoft Dynamics 365 Human Resources. Text truncation can make it difficult to take a screenshot or print the hierarchy.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -33,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Avoid text truncation on the position hierarchy and export to Visio
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 **Issue**
 
 When a customer views the position hierarchy in Microsoft Dynamics 365 Human Resources, the names of individuals and positions are truncated. Therefore, it can be difficult to take a screenshot, or to print and distribute the hierarchy.
@@ -45,7 +45,7 @@ This behavior is by design.
 
 **Resolution**
 
-Unfortunately, users can't easily change the size of the text. However, you can export the position hierarchy out of Human Resources and then import it into Microsoft Visio. Although the following article was written for Microsoft Dynamics AX 2012, the process still applies to Human Resources: [Export a position hierarchy to Microsoft Visio](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
+Unfortunately, users can't easily change the size of the text. However, you can export the position hierarchy out of Human Resources and then import it into Microsoft Visio. Although the following article was written for Microsoft Dynamics AX 2012, the process still applies to Human Resources: [Export a position hierarchy to Microsoft Visio](/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
 
 Follow these steps to export to Visio.
 
@@ -111,3 +111,6 @@ Based on the fields that you selected to include in the diagram, each node shows
 **Additional option**
 
 In Human Resources, you might also be able to use the **People** workspace to view some hierarchy-related information.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Promote a variation and complete an experiment
 description: This topic describes how to promote a successful variation and complete an experiment in Dynamics 365 Commerce.
 author:  sushma-rao 
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -64,3 +62,6 @@ To delete an experiment in Commerce site builder, follow these steps.
 
 ## Previous step
 [Run and monitor an experiment](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

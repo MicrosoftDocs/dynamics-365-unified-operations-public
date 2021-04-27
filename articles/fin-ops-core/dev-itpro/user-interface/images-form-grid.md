@@ -4,11 +4,9 @@
 title: Images on a page or in a grid
 description: This topic describes the steps for displaying images on a page or in a grid.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -492,3 +490,6 @@ ttscommit;
 Like the display method that is described in the "Using a display method to show an image from a URL string" section, this code causes the user's browser to download the image from the specified URL. Although this approach involves some overhead, you can use a single API to handle images that are created from binary data, URLs, AOT resources, or symbols. You can even mix and match image types between rows of data.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

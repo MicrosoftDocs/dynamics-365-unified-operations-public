@@ -4,11 +4,9 @@
 title: Make a question dependent on the answer of the previous question
 description: Conditional questions allow you to specify what follow-up question will be presented to a respondent, based on the answer to the preceding question. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -27,6 +25,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Make a question dependent on the answer of the previous question
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -59,3 +59,6 @@ Conditional questions allow you to specify what follow-up question will be prese
 10. In the tree, select 'Questions\I am paid fairly for the work I do.'.
     * Note that the question tree updated to show the dependency.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: ER Generate electronic documents for payments using a format configuration
 description: This topic describes how to use a new Electronic reporting (ER) format configuration to generate electronic documents for processing payments. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -84,3 +82,6 @@ To complete these steps, you must first complete the steps in the "Create a conf
 25. Click OK.
     * Analyze the created payment file in XML format. Compare it with the designed document layout and defined payment transaction attributes.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

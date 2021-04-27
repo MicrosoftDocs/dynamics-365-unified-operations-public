@@ -4,11 +4,9 @@
 title: Publish mobile workspaces
 description: This topic describes the steps that system administrators must follow to publish a mobile workspace.
 author: sericks007
-manager: AnnBe
 ms.date: 09/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -46,3 +44,6 @@ After a new workspace is published, users must pull to refresh the list of mobil
 
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

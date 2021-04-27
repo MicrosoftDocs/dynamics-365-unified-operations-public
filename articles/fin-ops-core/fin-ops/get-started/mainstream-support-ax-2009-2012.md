@@ -3,12 +3,10 @@
 
 title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2
 description: This topic provides details about the end of  mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2.
-author: meeramahabala
-manager: AnnBe
+author: ShellyBakke
 ms.date: 07/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +19,7 @@ ms.reviewer: sericks
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: meeram
+ms.author: smiller
 ms.search.validFrom: 2018-10-31 
 ms.dyn365.ops.version: 8.1
 ---
@@ -38,8 +36,8 @@ Dynamics AX 2009 SP1, Dynamics AX 2012, and Dynamics AX 2012 R2 customers can se
 
 Customers are advised to upgrade to the latest version of Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Retail, and Human Resources:
 
-- Dynamics AX 2009 Service Pack 1 customers should use the [migration tool](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page) that is available.
-- Dynamics AX 2012 and Dynamics AX 2012 R2 customers should upgrade to Finance and Operations apps through Dynamics AX 2012 R3 using the upgrade tool that is available. Additional upgrade information is available in the [Upgrade from AX 2012 to Finance and Operations apps](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012) topic.
+- Dynamics AX 2009 Service Pack 1 customers should use the [migration tool](../../dev-itpro/migration-upgrade/upgrade-home-page.md) that is available.
+- Dynamics AX 2012 and Dynamics AX 2012 R2 customers should upgrade to Finance and Operations apps through Dynamics AX 2012 R3 using the upgrade tool that is available. Additional upgrade information is available in the [Upgrade from AX 2012 to Finance and Operations apps](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md) topic.
 
 ## Frequently asked questions
 
@@ -72,3 +70,6 @@ The bug must be reproducible in Dynamics AX 2012 R3. If it is reproducible and a
 ### How are binary hotfixes handled for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, and Dynamics AX 2012 R2?
 
 If a hotfix is needed for a part of the system where Microsoft does not provide the source code and it is not a security bug, the hotfix will not be provided.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

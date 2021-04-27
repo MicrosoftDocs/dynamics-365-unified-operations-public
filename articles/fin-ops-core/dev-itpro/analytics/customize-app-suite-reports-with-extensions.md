@@ -3,12 +3,10 @@
 
 title: Customize App Suite reports by using extensions
 description: This topic discusses a series of scenarios for customizing App Suite reports.
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 266614
 ms.assetid: acf73781-08bb-4f59-9956-8f9f295ddd02
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 
@@ -53,3 +51,6 @@ The other two scenarios offer insights on how to use extensions to redirect appl
 
 - [Extend report menu items to redirect user navigation](extend-report-menu-items.md) – Customize application menu items to redirect references to a custom report design.
 - [Create custom designs for business documents](custom-designs-business-docs.md) – Delegate handlers allow you to add custom report designs to an existing Print Management document instance.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

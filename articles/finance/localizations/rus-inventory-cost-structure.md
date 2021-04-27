@@ -3,11 +3,9 @@
 title: Inventory cost structure
 description: This topic provides information about the inventory cost structure of miscellaneous charges in inventory transactions.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 02/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -221,3 +219,6 @@ On the **Settlements** page, you can view inventory cost adjustment transactions
 On the **Settlements** and **Cost explorer** pages, the miscellaneous charges codes that have the **Item** debit type and the **Ledger account** credit type are shown as a separate line. The miscellaneous charges codes that have other debit and credit types are included in the item cost price as direct charges (standard functionality). They aren't allocated on the **Settlements** page. Therefore, they aren't shown as a separate line on the **Cost explorer** page.
 
 If the **Charges code** field on the **Settlements** page isn't set, a charges code won't be shown on the **Cost explorer** page. If the **Charges code** field on the **Settlements** page is set, the charges code will be shown as a separate line on the **Cost explorer** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

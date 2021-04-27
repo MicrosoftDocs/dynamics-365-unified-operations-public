@@ -4,11 +4,9 @@
 title: Process enrollment eligibility
 description: This article explains how to run the enrollment eligibility process.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Process enrollment eligibility
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article explains how to run the enrollment eligibility process.
 
@@ -77,3 +77,6 @@ This article explains how to view eligibility process results.
    | **Result status** | This will be Eligible or Ineligible. The result status will be Ineligible if the worker didn’t meet the eligibility rule criteria, if the worker is missing required information such as a pay frequency or fixed compensation, or if there is information missing on the benefit plan that prevents workers from being enrolled. |
    | **Result message** | Indicates why a worker is ineligible for a benefit plan or if the eligibility rule passed. |
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

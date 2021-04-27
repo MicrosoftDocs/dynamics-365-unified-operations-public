@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Performance timer
 description: This topic provides an overview of the Performance timer, which is a tool that helps you to determine why your system's performance might be slow. 
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -55,3 +49,6 @@ For more information, click a link. In the next screen, you can see how many SQL
 [![Example of list of SQL queries triggered by call](./media/3_timer.png)](./media/3_timer.png) 
 
 This information can help you to understand what to trace and where to start troubleshooting. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

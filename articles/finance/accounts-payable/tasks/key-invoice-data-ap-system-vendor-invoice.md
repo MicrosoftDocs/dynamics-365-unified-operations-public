@@ -4,11 +4,9 @@
 title: Key invoice data in AP using a vendor invoice
 description: This task guide will help you create a vendor invoice from a purchase order and view the results of matching the purchase order, receipt, and invoice (3 way matching). 
 author: abruer
-manager: AnnBe 
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -75,3 +73,6 @@ This task guide will help you create a vendor invoice from a purchase order and 
 19. Click **Post**.
 20. Close the form. Note that the purchase order is no longer listed as received but not invoiced.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Intercompany accounting setup
 description: This topic explains how to set up intercompany accounting so that you can use intercompany journals for ledger allocations and financial journals, such as daily journals, vendor invoice journals, and payment journals.
 author: kweekley
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -54,3 +52,6 @@ A reciprocal relationship can easily be set up on the **Intercompany accounting*
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

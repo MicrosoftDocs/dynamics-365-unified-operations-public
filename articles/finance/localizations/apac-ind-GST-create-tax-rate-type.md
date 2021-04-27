@@ -4,11 +4,9 @@
 title: Define a tax rate type and assign it to relevant master data  
 description: This topic explains how to define the tax rate type and assign it to the relevant master data. 
 author: yijialuan 
-manager: kfend
 ms.date: 03/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -93,3 +91,6 @@ You can associate the tax rate type to the following taxable master data where i
 - Released product
 - Procurement/Sales categories
 - Charge code
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

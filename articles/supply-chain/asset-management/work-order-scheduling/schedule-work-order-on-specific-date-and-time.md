@@ -3,12 +3,10 @@
 
 title: Schedule work order on specific date and time
 description: This topic explains how to schedule a work order on a specific date and time in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -60,3 +58,6 @@ If a work order must be scheduled on a specific date *and* time, you can overrid
 >[!NOTE]
 >In order to schedule a maintenance worker for the work order, that maintenance worker must be available at the expected start date and time. Worker availability is set up in the [worker calendar](../work-order-scheduling/maintenance-worker-calendar-and-scheduling.md). 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

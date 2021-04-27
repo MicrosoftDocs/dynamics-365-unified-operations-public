@@ -2,13 +2,11 @@
 # required metadata
 
 title: Generate and work with pay statements
-description: This topic describes the process for generating pay statements. It also describes other tasks, such as reversing a pay statement, that you might have to complete after you generate pay statements.
+description: This topic describes the process for generating pay statements.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -167,3 +165,6 @@ Benefit accrual lines are created when you submit a pay statement for payment. Y
 ## Reverse a pay statement
 
 To reverse a pay statement that has been posted or submitted for payment, see [Process existing payroll payments](noam-usa-existing-payroll-payments.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

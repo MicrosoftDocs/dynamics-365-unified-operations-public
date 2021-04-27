@@ -3,11 +3,9 @@
 title: What's new or changed for India GST in 10.0.05 (October 2019)
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.05.
 author: prabhatb
-manager: Annbe
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -166,3 +164,6 @@ Settle the reverse charge liability from the cash account on the last day of the
 -	Base amount should not be zero (0) for a sales order when the transaction line is marked as exempt tax.
 -	Reversal of invoice posted with TDS displays incorrectly in the total invoice amount.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

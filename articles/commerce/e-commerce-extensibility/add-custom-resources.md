@@ -4,11 +4,9 @@
 title: Add custom resources to your customization code
 description: This topic describes how to add custom static resources to your SDK customization code so that they can be accessed from within your theme.
 author: samjarawan
-manager: annbe
 ms.date: 09/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -87,3 +85,6 @@ const url = `${getAsset('webfonts/fa-solid-900.woff', this.props.context.request
 [Override a module library component in a theme](override-theme-component.md)
 
 [Extend a theme from a base theme](extend-theme.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

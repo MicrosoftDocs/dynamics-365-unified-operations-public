@@ -4,11 +4,9 @@
 title: Authentication
 description: This article provides overview information about how to authenticate with the Microsoft Dynamics 365 Human Resources data application programming interface (API).
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Authentication
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article provides overview information about how to authenticate with the Microsoft Dynamics 365 Human Resources data application programming interface (API).
 
@@ -87,7 +87,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
         - For web apps, provide the base URL of the app. For example, `http://localhost:31544` might be the URL for a web app that runs on your local machine. Users then use this URL to sign in to a web client app.
         - For public client apps, provide the URI that Azure AD uses to return token responses. Enter a value that is specific to your app, such as `myapp://auth`.
 
-        To see specific examples for web apps or native apps, see the quickstarts in [Microsoft identity platform (formerly Azure Active Directory for developers)](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
+        To see specific examples for web apps or native apps, see the quickstarts in [Microsoft identity platform (formerly Azure Active Directory for developers)](/azure/active-directory/develop/#quickstarts).
 
 5. Under **API permissions**, select **Add a permission**. Then, on the **APIs my organization uses** tab, search for **Dynamics 365 Human Resources**, and add the **user\_impersonation** permission to your app. The Application ID for Human Resources is f9be0c49-aa22-4ec6-911a-c5da515226ff. Use this ID to ensure you have chosen the correct application.
 
@@ -190,3 +190,6 @@ namespace TalentODataPoC
 ```
 
 Once you've retrieved an access token, you'll pass the token in the Authorization header as a bearer token with each request you send to the data API, as described above.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

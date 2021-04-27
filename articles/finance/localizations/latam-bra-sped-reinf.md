@@ -4,11 +4,9 @@
 title: SPED-Reinf tax statement (Brazil)
 description: This topic provides information about setting up SPED-Reinf events using Fiscal books and the SII reporting register framework in Microsoft Dynamics 365 Finance for Brazil.
 author: sndray
-manager: AnnBe
 ms.date: 01/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -710,3 +708,6 @@ After periodic events R-2010, R-2010, and R-2060 are closed through an event R-2
 11. Select **OK** to confirm the action.
 
 12. The **Evento de fechamento** message item type is updated, and the status of the message item is updated to **Aceito**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

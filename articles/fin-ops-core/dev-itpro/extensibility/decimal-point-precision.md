@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Extending decimal point precision for selected data types
 description: This topic describes how to extend decimal point precision for selected data types.
 author: LarsBlaaberg
-manager: 
 ms.date: 09/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -101,3 +95,6 @@ For example, if amounts need to be maintained with three decimal points, but uni
 The **MarkupValue** extended data type is used for storing and presenting amounts, unit amounts, and percentages.
 The extended data types should be extended to the maximum amount of required decimals points for amounts, unit amounts, and percentages.
 For example, if amounts need to be maintained with three decimal points, unit amounts need to be maintained with four decimal points, and percentages should remain with two decimal points, then the data type should be extended to four decimal points.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

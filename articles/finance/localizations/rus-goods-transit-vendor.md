@@ -3,11 +3,9 @@
 title: Goods in transit from vendor
 description: This topic provides information about the settings and actions that are required for the Counting act for goods in transit (INV-6) report.
 author: anasyash
-manager: AnnBe
 ms.date: 05/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -190,3 +188,6 @@ You can use the **Print of counting act (INV-6)** dialog box to generate a **Cou
 
   ![Printed Counting act (INV-6) report](media/goods-in-transit-vendor-11.png)
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

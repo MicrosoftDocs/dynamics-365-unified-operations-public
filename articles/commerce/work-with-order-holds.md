@@ -4,11 +4,9 @@
 title: Configure and work with call center order holds
 description: This topic describes how to work with holds on orders by using Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -107,3 +105,6 @@ If users want to clear a hold but make additional changes to the order before it
 ## Reporting options
 
 Go to **Retail and Commerce** \> **Inquiries and reports** \> **Call center reports** \> **Order holds report** to run a report about order holds by date range, hold code, or other related criteria.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

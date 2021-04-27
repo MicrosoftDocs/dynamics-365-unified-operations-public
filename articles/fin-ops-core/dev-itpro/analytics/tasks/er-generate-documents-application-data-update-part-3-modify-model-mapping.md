@@ -4,11 +4,9 @@
 title: Modify models and mappings to generate documents that have application data
 description: This topic describes how to design reporting configurations to generate an electronic document and update application data. (Part 2 - Generate documents). 
 author: NickSelin
-manager: AnnBe 
 ms.date: 06/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -172,3 +170,6 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
 66. Close the page.
 67. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

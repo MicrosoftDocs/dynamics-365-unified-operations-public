@@ -3,12 +3,10 @@
 
 title: Maintenance request types
 description: This topic explains how to set up a maintenance request types in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 07/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -49,3 +47,6 @@ A maintenance request type defines the affiliation with a maintenance request li
 The following illustration shows an example of the **Maintenance request types** page.
 
 ![Maintenance request types page](media/07-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

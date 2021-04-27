@@ -4,11 +4,9 @@
 title: DAS-2 report
 description: This topic guides you through the process of generating the Standard Audit File for France (FEC) in Microsoft Dynamics 365 Finance.
 author: sndray
-manager: AnnBe
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -48,7 +46,7 @@ Before you generate the report for the first time, you must download the followi
 - DAS-2 form.version.36.30.15 (FR) or later versions.
 
 > [!NOTE]
-> For more information about how to download ER formats, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+> For more information about how to download ER formats, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 After you've finished downloading the ER configurations from LCS, follow these steps.
 
@@ -115,3 +113,6 @@ Follow these steps to generate the tax declaration report.
 
 > [!NOTE]
 > The DAS-2 report doesn't support transactions that are created and posted from a general journal entry and the accrual schema scenario. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

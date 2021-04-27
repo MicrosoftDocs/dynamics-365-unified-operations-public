@@ -4,11 +4,9 @@
 title: Filtering options
 description: This topic explains the filtering options that are available.
 author: jasongre
-manager: AnnBe
 ms.date: 01/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -143,3 +141,6 @@ Yes, you can use the QuickFilter to filter other collection controls, but you mu
 
 ## Grid column header filtering/sorting
 In Finance and Operations apps, the grid filtering experience is more closely aligned with the experience in Microsoft Excel. When the user clicks a column header (for columns that can be filtered), a drop dialog appears, and the user can use it to filter the column. The filtering experience here mimics the filtering experience in the Filter Pane. Additionally, there are options to sort the grid based on the column that is currently selected. [![Screen shot of grid filtering](./media/4_filter.png)](./media/4_filter.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Partial fixed asset disassembly (liquidation)
 description: This topic provides information about partial fixed asset disassembly or liquidation for Russia.
 author: v-oloski
-manager: AnnBe
 ms.date: 09/14/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -267,3 +265,6 @@ The component depreciated cost is calculated as the difference between the compo
 A partial take-down transaction has an indirect effect on the fixed asset balance. A partial take-down transaction creates value and depreciation revaluation transactions. These transactions, in turn, are already considered in the fixed asset balance.
 
 As a result of the calculation, a balance value, a balance depreciation, and a market value that equals the depreciated cost are created.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

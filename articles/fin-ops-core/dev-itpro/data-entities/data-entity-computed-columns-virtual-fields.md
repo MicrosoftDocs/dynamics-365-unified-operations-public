@@ -4,11 +4,9 @@
 title: Computed columns and virtual fields in data entities
 description: This article provides information about computed and virtual fields, which are the two types of unmapped fields that a data entity can have.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -244,3 +242,6 @@ The following **main** method tests your computed and virtual fields. Both field
 If the X++ method that generates the SQL for a computed column throws an exception, DbSync catches the exception, **sets the value of that column to `NULL`**, and logs a *warning*.
 
 Developers are advised to check configuration keys manually in computed column methods to avoid hitting a `NULL` value, if the generation failed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

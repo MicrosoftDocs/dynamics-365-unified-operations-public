@@ -3,12 +3,10 @@
 
 title: Information access and reporting
 description: This topic explains the various reporting options available as part of the platform.
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 266104
 ms.assetid: dbc1ac2d-7079-411c-b768-5f820859e29e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
@@ -222,3 +220,6 @@ Standard financial reports are provided using the default main account categorie
 - User controls are tailored for the specialized needs of financial reporting.
 - Create roll-up reports containing data across companies or business units.
 - Utilizes a financial data mart for optimized performance.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

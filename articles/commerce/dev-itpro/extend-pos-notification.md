@@ -4,11 +4,9 @@
 title: Show custom notifications in the POS
 description: This topic explains how to add custom notifications in the point of sale (POS).
 author: mugunthanm
-manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -176,3 +174,6 @@ The notification detail entity has the following properties.
 
 3. Debug the CRT code by attaching the CRT project to w3wp.exe. The breakpoint should be hit whenever the notification service is called from the POS.
 4. When the notification is received in the POS, select it. The notification should call the POS operation handler and run the custom logic that is written inside it.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Update the Document Routing Agent
 description: This topic explains how to update the Document Routing Agent.
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -62,3 +60,6 @@ For information about how to install the latest DRA that is available with your 
 
 > [!NOTE]
 > Be sure to open the DRA client after upgrading to refresh network user credentials.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

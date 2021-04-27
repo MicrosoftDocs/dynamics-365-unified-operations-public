@@ -4,11 +4,9 @@
 title: Flushing principles
 description: This topic describes the four flushing principles that are used for raw material consumption.
 author: johanhoffmann
-manager: tfehr
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -66,3 +64,6 @@ The Finish flushing principle indicates that material will be automatically cons
 
 ### Available at location
 The Available at location flushing principle indicates that the material will be automatically consumed when it's registered as picked for production. The material is registered as picked from location when work for the raw material picking is completed, or when material is available on the production input location and the material line is released to the warehouse. The picking list that is generated during the process is posted in a batch job. This principle is relevant if, for example, you have many picking activities against one production order. In this case, you don't have to update the picking list manually, and you can get a current view of the WIP balance.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

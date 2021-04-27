@@ -4,11 +4,9 @@
 title: Build custom response pages for 4xx/5xx status code errors
 description: This topic describes how to build custom response pages for 4xx and 5xx status code errors by using the authoring tools in Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -30,12 +28,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Build custom response pages for 4xx/5xx status code errors
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to build custom response pages for 4xx and 5xx status code errors by using the authoring tools in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 If a request isn't successful, the server issues HTTP status code error responses. The 404 status code is captured and returned if a page isn't found, and the 500 status code is captured and returned if a server error occurs. In Dynamics 365 Commerce, application users can build custom status code error response pages that are shown to users for these status code error responses.
 
@@ -87,3 +82,6 @@ To set up a redirect for the status code error response page, follow these steps
 [Add a new site page](add-new-page.md)
 
 [Create a page URL](create-page-url.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

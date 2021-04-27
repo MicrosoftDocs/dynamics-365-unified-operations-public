@@ -4,11 +4,9 @@
 title: Issue fiscal documents for vendors (Brazil)
 description: You can create and post vendor invoices on behalf of nontaxpayer vendors. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -71,3 +69,6 @@ You can create and post vendor invoices on behalf of nontaxpayer vendors. You mu
 36. Go to Accounts receivable > Fiscal documents > Electronic fiscal documents > Export/import NF-e process.
 37. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

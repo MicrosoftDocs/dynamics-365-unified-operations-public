@@ -4,11 +4,9 @@
 title: Troubleshoot product receipts and invoicing
 description: This topic describes how to fix issues that you might encounter while you work with product receipts and invoicing.
 author: SmithaNataraj
-manager: tfehr
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -112,3 +110,6 @@ The following procedure shows one way to reproduce the issue.
 ### Issue resolution
 
 This depends on the parameter settings for invoices and invoice groups. For more information, see the following blog post: [Accounting for Purchase charge and Stock variation](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

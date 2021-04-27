@@ -4,11 +4,9 @@
 title: File upload control
 description: This topic provides information about the file upload control. This control lets users upload files.
 author: aneesmsft
-manager: AnnBe
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -108,3 +106,6 @@ The following example of the **ScanDocuments** class shows boilerplate code for 
     }
 ```
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

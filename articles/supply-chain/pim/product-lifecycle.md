@@ -4,11 +4,9 @@
 title: Product lifecycle state overview
 description: A product lifecycle state documents the lifecycle state of a released product or product variant.  
 author: cvocph
-manager: tfehr
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -112,3 +110,6 @@ Use the following criteria to select and update the released products and produc
 - [Assign a product lifecycle state to a released product](tasks/product-lifecycle-state-released-product.md)
 - [Find obsolete product variants and assign a product lifecycle state](tasks/obsolete-product-variants.md)
 - [Create a product lifecycle state to exclude products from Master planning](tasks/exclude-products-master-planning.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

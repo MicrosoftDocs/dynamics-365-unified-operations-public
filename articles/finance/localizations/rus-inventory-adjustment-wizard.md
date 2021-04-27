@@ -3,11 +3,9 @@
 title: Inventory adjustment wizard  
 description: This topic provides information about the Inventory adjustment wizard which is used to adjust on-hand inventory and transactions.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -221,3 +219,6 @@ On account 26.100, the **Department** dimension accumulates the amounts that you
 10. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section. Repeat the allocation operation for all warehouses and dimensions that you want to do allocation for.
 
 As you've seen, the system lets you determine the adjustment amount based on the balance on the account in the context of the dimensions. You can also allocate it to the cost price of inventory or warehouse receipts.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

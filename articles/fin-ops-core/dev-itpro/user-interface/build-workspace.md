@@ -4,11 +4,9 @@
 title: Modify a workspace with a tile, list, and data cache
 description: In this tutorial, you'll create a new tile in the summary section of a workspace, build a new list, and create a data cache for the list.
 author: jasongre
-manager: AnnBe
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata
@@ -690,3 +688,6 @@ Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 
 - [Build the Customer form](build-customer-form.md) – See this tutorial if you want more exposure to form patterns. This tutorial will walk through the process of applying the Details Master pattern to a form.
 - [Build navigation](build-navigation.md) – See this tutorial if you want instructions for adding your workspace to the menu structure.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

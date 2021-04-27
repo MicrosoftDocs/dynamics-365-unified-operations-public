@@ -4,11 +4,9 @@
 title: Task Single form pattern
 description: This article provides information about the Task Single form pattern.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -121,3 +119,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![Previous version visual example](./media/tasksingle4.png)](./media/tasksingle4.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

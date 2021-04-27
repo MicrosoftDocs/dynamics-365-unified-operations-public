@@ -3,11 +3,9 @@
 title: Inventory reports
 description: This topic provides information about the Inventory reports available for Russia.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -212,3 +210,6 @@ This report shows all adjustments that were done during the inventory recalculat
 ## Adjustments in currency report
 
 This report shows all adjustments that were done during the inventory recalculation or closing in the reporting currency. To do this, go to **Inventory management** \> **Inquires and reports** \> **Transactional reports** \> **Adjustment (cur.)**. Specify the parameters, and select **OK** to generate a report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

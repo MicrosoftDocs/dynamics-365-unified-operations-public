@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 11 (October 2017)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 11. This version was released in October 2017.
 author: tonyafehr
-manager: AnnBe
 ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -121,3 +119,6 @@ The framework has been extended to better handle scenarios where reporting sessi
 Resource governor is a component that reduces the management overhead for a system administrator. Finance and Operations contains batch and processing tasks that are compute intensive. Users can schedule many jobs as the business demands dictate, such as the month-end workload where there are multiple posting jobs. While these compute processes occupy the server, interactive operations such as front-office processes, continue to run without any degradation of performance.
 
 Resource governor uses the built-in resource governance services offered by SQL Azure database. Dynamics 365 for Finance and Operations Runtime service allocates quotas for interactive, as well as batch processes, so that SQL Azure database (where most of the compute is performed) does not degrade if there are sudden compute spikes.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

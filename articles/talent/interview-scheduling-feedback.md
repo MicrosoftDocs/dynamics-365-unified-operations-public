@@ -4,11 +4,9 @@
 title: Schedule interviews in Attract
 description: This topic provides information about interview scheduling and feedback activities in Attract.
 author: hasrivas
-manager: tfehr
 ms.date: 04/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -105,3 +103,6 @@ If you select the **Inherit feedback participants from Hiring Team** column, the
 The interview activity is an optional activity with three components: **Candidate availability request**, **Schedule**, and **Feedback**. Use the interview activity in the job template if you want all of the candidate’s availability request, schedule, and feedback as part of the process instead of using them individually.
 
 To include or limit the candidates to be interviewed, select a value in the **Who are you interviewing** column. The available options are **All Candidates**, **External Candidates**, and **Internal Candidates**. For example, if you want to skip internal candidates in the first round of interviewing, set **Who are you interviewing** to **External Candidates**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

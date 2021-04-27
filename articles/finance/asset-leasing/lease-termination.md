@@ -4,16 +4,14 @@
 title: Lease termination proposal
 description: This topic explains how to propose a lease for termination.
 author: moaamer
-manager: Ann Beebe
-ms.date: 1/14/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: AssetLease
+ms.search.form: AssetLeaseTerminateLeaseListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -34,6 +32,7 @@ ms.dyn365.ops.version: 10.0.17
 # Propose a lease for termination
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 If a lease is terminated early, Asset leasing can record a termination journal entry to write off the lease liability, right-of-use (ROU) asset, and accumulated depreciation, and book a gain or loss. The early termination process terminates a lease and its associated lease books. It doesn't terminate individual lease books. This topic describes the functionality that lets you propose a lease for termination and process the lease termination journal entry.
 
@@ -165,3 +164,6 @@ The following tables show the values that are set on the **General** and **Payme
 11. To view the net effect of the termination, where the ROU asset and lease liability will be 0 (zero), open the Liability and Asset transactions tables.
 
 The lease status should now be **Terminated**. No additional journal entries will be posted against this lease unless the termination is reversed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

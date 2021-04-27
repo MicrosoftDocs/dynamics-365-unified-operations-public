@@ -4,11 +4,9 @@
 title: Point-in-time restore of the production database to a sandbox environment
 description: This topic describes how to use Microsoft Dynamics Lifecycle Services to do a point-in-time restore of the production database.
 author: LaneSwenka
-manager: AnnBe
 ms.date: 12/15/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -32,7 +30,7 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to do a point-in-time restore (PITR) of the production database to a user acceptance testing (UAT) sandbox environment. Microsoft maintains [automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) of the business and financial reporting databases for 28 days for Production environments and 7 days for Sandbox environments.
+You can use Microsoft Dynamics Lifecycle Services (LCS) to do a point-in-time restore (PITR) of the production database to a user acceptance testing (UAT) sandbox environment. Microsoft maintains [automated backups](/azure/sql-database/sql-database-automated-backups) of the business and financial reporting databases for 28 days for Production environments and 7 days for Sandbox environments.
 
 > [!IMPORTANT]
 > Microsoft doesn't support copying production data to a sandbox environment for the purpose of production reporting.
@@ -141,3 +139,6 @@ The PITR process is not supported between Microsoft-managed and self-service env
 ### Point in time restore between source and target that are both on self-Service, in different regions
 The PITR process is not supported between self-service environments across different regions. For example, if the production environment is in East US and a PITR is needed for the sandbox environment, which is self-service and in West Europe, PITR is not supported. The alternative is to get both the environments in the same region or opt for a regular database refresh instead.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

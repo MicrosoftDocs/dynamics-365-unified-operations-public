@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Extensibility requests
 description: This topic explains how to file a request for additional extension points for Finance and Operations. 
 author: FrankDahl
-manager: AnnBe
 ms.date: 06/02/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -115,3 +109,6 @@ After Dynamics 365 for Finance and Operations release 8.0, we plan to release fr
 ## Still have questions?
 
 Read the [Extensibility FAQ](app-sealing-faq.md) and the other resources listed on the [Extensibility home page](extensibility-home-page.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

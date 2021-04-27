@@ -4,11 +4,9 @@
 title: Dual-write setup from Lifecycle Services
 description: This topic explains how to set up a dual-write connection from Microsoft Dynamics Lifecycle Services (LCS).
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -93,3 +91,6 @@ Follow these steps to set up the dual-write connection.
 > [!NOTE]
 > You can't unlink environments by using LCS. To unlink an environment, open the **Data integration** workspace in the Finance and Operations environment, and then select **Unlink**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

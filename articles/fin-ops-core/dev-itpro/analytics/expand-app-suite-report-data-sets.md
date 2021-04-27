@@ -3,12 +3,10 @@
 
 title: Expand Application Suite report data sets
 description: This topic shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. 
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 266594
 ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 
@@ -138,3 +136,6 @@ The following walkthrough shows the process of expanding an existing application
         ```
 
 You've now finished expanding the report data set. After the application is compiled, it will begin to reroute user navigations to the new report design by using the custom X++ business logic that you defined in the report class handler that is defined in the extension model.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

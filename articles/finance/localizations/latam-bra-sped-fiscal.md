@@ -4,11 +4,9 @@
 title: SPED fiscal files
 description: This topic explains how to set up and generate SPED fiscal export files for Brazil. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/27/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -63,3 +61,6 @@ The SPED fiscal text file provides information about fiscal documents that were 
 7. Set the **Enable block K** option to **Yes**. The default setting is specified on the **SPED fiscal parameters** page.
 8. Optional: On the **Run in the background** FastTab, specify the options for batch processing. You might use batch processing if the file should be generated later or on a server instead of on your computer.
 9. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

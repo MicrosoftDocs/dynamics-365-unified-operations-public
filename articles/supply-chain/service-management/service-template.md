@@ -4,11 +4,9 @@
 title: Service templates
 description: You can define a service agreement as a template and copy the lines of the template later into another service agreement or into a service order.
 author: ShylaThompson
-manager: tfehr
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -74,3 +72,6 @@ templates.
 ## Related topics
 
 [Copy service templates lines](copy-service-template-lines.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

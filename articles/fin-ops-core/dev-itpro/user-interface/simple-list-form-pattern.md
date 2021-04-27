@@ -4,11 +4,9 @@
 title: Simple List form pattern
 description: This article provides information about the Simple List form pattern. This pattern is used to maintain data for simple entities.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -122,3 +120,6 @@ None at this time.
 ### AX 2012 content
 
 [![AX 2012 example](./media/simplelist3.png)](./media/simplelist3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

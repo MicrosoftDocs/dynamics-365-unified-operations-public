@@ -4,11 +4,9 @@
 title: Low-value pool depreciation
 description: This article provides information about the low-value pool depreciation method that is used in Australia. Low-cost and low-value assets can be allocated to a low-value pool if their cost or opening adjustable value is less than a specified amount.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -70,3 +68,6 @@ If you have a low-cost asset that has a net book value of AUD 800.00, the first-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

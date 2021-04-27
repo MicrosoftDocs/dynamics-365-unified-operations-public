@@ -4,11 +4,9 @@
 title: Post periodic journals
 description: Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated each time that the periodic journal is retrieved. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 06/26/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -60,3 +58,6 @@ Periodic journals are sometimes called recurring journals because the amount, te
 27. In the **Periodic journal number** field, enter or select a value.
 28. In the list, click the link in the selected row.
 29. Click **OK**. The period journal can now be reviewed, approved or posted depending on requirement and setup.   
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

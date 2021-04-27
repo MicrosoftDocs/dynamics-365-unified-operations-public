@@ -4,11 +4,9 @@
 title: Monitor sales and margin performance
 description: You can monitor sales and margin performance in real time using Dynamics 365 Commerce.
 author: ashishmsft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -52,3 +50,6 @@ Additionally, two unique reports that take advantage of hierarchical grid struct
 - **Category and product management** workspace &gt; **Retail and Commerce** &gt; **Product and categories** &gt; **Store management** &gt; **Reports**
 - **Pricing and discount management** workspace &gt; **Retail and Commerce** &gt; **Pricing and discounts** &gt; **Store management** &gt; **Reports**
 - **Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

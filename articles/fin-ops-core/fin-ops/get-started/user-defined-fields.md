@@ -4,11 +4,9 @@
 title: Create and work with custom fields
 description: This topic shows you how to create custom fields through the user interface to tailor the application to fit your business.
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -166,3 +164,6 @@ For performance and technical reasons, only tables that meet the following condi
 ### Can I reference custom fields from the developer tools?  
 
 Custom fields can only be managed through the user interface and cannot be referenced by code. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

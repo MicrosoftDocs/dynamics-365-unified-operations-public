@@ -3,12 +3,10 @@
 
 title: Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists
 description: This topic describes maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -271,3 +269,6 @@ In Asset Management, you can automatically update any changes to maintenance job
 2. In the **Update maintenance job type forecast** dialog box, on the **Records to include** FastTab, you can add selections for specific maintenance job types as you require. Select **Filter**, and then select **Select** to make the selections.
 3. On the **Run in the background** FastTab, you can set up the automatic update as a batch job, as you require.
 4. Select **OK** to start the forecast update.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

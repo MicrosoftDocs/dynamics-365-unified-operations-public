@@ -4,11 +4,9 @@
 title: Tax engine integration
 description: This topic provides information about Tax engine integration.
 author: yijialuan
-manager: AnnBe
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -562,3 +560,6 @@ By querying these tables to obtain the JSON string, you can easily check the res
 
 - [Tax engine overview](tax-engine.md)
 - [Extend tax engine configurations](extend-tax-engine-configurations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

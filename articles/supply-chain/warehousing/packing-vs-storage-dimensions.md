@@ -4,16 +4,14 @@
 title: Set different dimensions for packing and storage
 description: This topic shows how to specify which process (packing, storage, or nested packing) each specified dimension is used for.
 author: mirzaab
-manager: tfehr
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: WHSPhysDimUOM
+ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -29,7 +27,7 @@ ms.dyn365.ops.version: Release 10.0.17
 
 # Set different dimensions for packing and storage
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Some items are packed or stored in such a way that you may need to track physical dimensions differently for each of several different processes. The *Packaging product dimensions* feature lets you set up one or several types of dimensions for each product. Each dimension type provides a set of physical measurements (weight, width, depth, and height), and establishes the process where those physical measurement values apply. When this feature is enabled, your system will support the following types of dimensions:
 
@@ -137,3 +135,6 @@ In this process you will create a shipment based on the item *packing* dimension
 1. Open the mobile device, sign in to warehouse 63 and go to **Inventory \> Adjust In**.
 1. Enter **Loc** = *SHORT-01*. Make a new license plate with **Item** = *A0001* and **Quantity** = *1 pcs*.
 1. Select **OK**. You will receive the error "Location SHORT-01 failed because item A0001 does not fit in location's specified dimensions." This is because the *Storage* type dimensions of the product are larger than the dimensions specified on the location profile.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

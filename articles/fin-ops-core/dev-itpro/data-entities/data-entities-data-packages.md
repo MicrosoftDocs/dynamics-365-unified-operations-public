@@ -4,11 +4,9 @@
 title: Data management overview
 description: This topic provides information about data management in Finance and Operations.
 author: Sunil-Garg
-manager: AnnBe
-ms.date: 06/18/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -38,7 +36,7 @@ This topic describes how you can use the data management framework to manage dat
 
 The data management framework consists of the following concepts:
 
-- **Data entities** - A data entity is a conceptual abstraction and encapsulation of one of more underlying tables. A data entity represents a common data concept or functionality, for example, Customers or Vendors. Data entities are intended to be easily understood by users familiar with business concepts. After data entities are created, you can reuse them through the Excel Add-in, use them to define import/export packages, or use them for integrations. 
+- **Data entities** - A data entity is a conceptual abstraction and encapsulation of one or more underlying tables. A data entity represents a common data concept or functionality, for example, Customers or Vendors. Data entities are intended to be easily understood by users familiar with business concepts. After data entities are created, you can reuse them through the Excel Add-in, use them to define import/export packages, or use them for integrations. 
 - **Data project** - A project that contains configured data entities, which include mapping and default processing options.
 - **Data job** - A job that contains an execution instance of the data project, uploaded files, schedule (recurrence), and processing options.
 - **Job history** - Histories of source to staging and staging to target jobs.
@@ -244,7 +242,6 @@ This section provides troubleshooting information for the different stages of da
 ### Export process troubleshooting
 - If you get an error during the export process, click **View execution log** and review the log text, staging log details, and Infolog for more information.
 - If you get an error during the export process with a note directing you to not skip staging, turn off the **Skip staging** option, and then add the entity. If you are exporting multiple data entities, you can use the **Skip staging** button for individual data entities.
-- Prior to platform update 32, there was a 256 MB limit for the file size that can be handled via export. If there are a large number of records that will be exported, be sure that the resulting file size does not exceed this limit. An alternate way to handle such scenarios would be to use filters on the entity to export only a subset of data. If this is not feasible, then bring your own database must be considered for the overall solution. This limitation no longer exists starting in Platform update 32.
 
 ### Import process troubleshooting
 When uploading data entity files:
@@ -309,3 +306,6 @@ For enabling flights in a production environment, a support case must be logged 
 
 ## Additional resources
 - [Data entities overview](data-entities.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

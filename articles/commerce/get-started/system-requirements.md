@@ -4,11 +4,9 @@
 title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
-manager: AnnBe
-ms.date: 02/08/2021
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail 
 ms.technology: 
 
 # optional metadata
@@ -88,7 +86,7 @@ The following Microsoft Office applications are supported:
 
 It is critical to perform proper performance testing prior to going live in production. The following are considered minimum system requirements for applications to function. To achieve desired performance, consider concepts like data volumes, transactional load per hour, and customization impact. Proper performance testing both early into implementation and again prior to final testing will allow for any necessary performance improvements to be made and to validate that the base solution meets the expected operation times required.
 
-[!IMPORTANT] The Microsoft Windows 7 operating system is no longer supported for anything other than security-related fixes. As a result, while Dynamics 365 Commerce components may function on Windows 7, there will be no bug fixes that specifically relate to supporting this operating system. Workarounds may be required for components to function properly on Windows 7, so it is highly recommended to upgrade to a supported operating system.
+[!WARNING] The Microsoft Windows 7 operating system is no longer supported for anything other than security-related fixes. As a result, while Dynamics 365 Commerce components may function on Windows 7, there will be no bug fixes that specifically relate to supporting this operating system. Workarounds may be required for components to function properly on Windows 7, so it is highly recommended to upgrade to a supported operating system.
 
 ## Modern POS for Windows requirements
 
@@ -216,3 +214,6 @@ The only supported collation for Commerce databases in the cloud is **SQL\_Latin
 ## Additional resources
 
 [Get an evaluation copy](../../dev-itpro/dev-tools/get-evaluation-copy.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

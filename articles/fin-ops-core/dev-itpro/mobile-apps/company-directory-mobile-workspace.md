@@ -4,11 +4,9 @@
 title: Company directory mobile workspace
 description: This topic provides information about the Company directory mobile workspace, which lets users view and contact other employees in their organization.
 author: jcart1106
-manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -94,3 +92,6 @@ Download and install the Finance and Operations mobile app:
 1.	In the mobile app, select the **Company directory** workspace.
 2.	In the **Search** field, enter an employee's first name, last name, title, or department to start the search.
 3.	Select an employee. The **Employee profile** page appears. The information on this page includes the employee's first name, last name, title, and department.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

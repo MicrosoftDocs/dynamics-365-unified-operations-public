@@ -4,11 +4,9 @@
 title: Merge the build systems for Commerce and Finance
 description: This topic describes the steps for merging the build systems for both Dynamics 365 Commerce and Dynamics 365 Finance using Azure DevOps.  
 author: andreashofmann1
-manager: AnnBe
 ms.date: 02/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -89,3 +87,6 @@ You must complete this task only if you must add built Retail binaries to the pa
 1. Use a normal AXReference in your Commerce project.
 2. Add the corresponding AXReference folder and the XML file inside it to Azure DevOps.
 3. Update the Copy-RetailBinaries.ps1 file with the appropriate file commands to get the binary file from the Retail SDK to the Retail bin folder. The Microsoft Windows PowerShell file includes a sample that copies the PricingEngine.dll file into the ApplicationSuite bin folder. Depending on the modules that you're building, the files and folders must be changed so that they are in a different location.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Set up order fulfillment for stores
 description: This topic provides an overview of how to set up store order fulfillment. 
 author: rubencdelgado
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -32,8 +30,6 @@ ms.dyn365.ops.version:
 # Set up order fulfillment for stores
 
 [!include [banner](includes/banner.md)]
-
-## Overview
 
 Many retailers would like to optimize order fulfillment by enabling stores to fill orders. Order fulfillment at the store level can help to ease overstock scenarios for a specific store, or may be needed from a logistical standpoint in cases where a store has extra capacity or is located within closer shipping distance to the customer. To address this need, a unified order fulfillment operation is available at the point of sale.
 
@@ -136,3 +132,6 @@ Order fulfillment at the point of sale includes filtering to help the user easil
 - Created date
 - Delivery date
 - Receipt date
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

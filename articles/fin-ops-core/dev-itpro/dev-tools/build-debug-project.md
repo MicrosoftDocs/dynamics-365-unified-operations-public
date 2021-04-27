@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Build and debug projects
 description: This tutorial uses the Fleet Management app to show you how to set breakpoints, modify code, and build the result. 
 author: pvillads
-manager: AnnBe
 ms.date: 02/06/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 26731
 ms.assetid: 5c2378fe-cb34-4a81-a940-57d4e13eb282
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Build and debug projects
@@ -232,3 +217,6 @@ Earlier in this tutorial, you had the opportunity to add code to the project and
 4.  Mark the selections for some of the sets of Best Practice rules. For example, if you select the entry for **CodeStyleRules**, best practice guidelines for variables will be examined. After you've updated the selections, click **OK**.
 5.  Rebuild the Fleet Management project by right-clicking the project name and then clicking **Rebuild**. You'll notice that the violations of the best practice rules that you specified appear in the **Error list** window.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (March 26, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for March 26, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 03/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -78,7 +76,7 @@ In this release, fixed compensation plans now appear when restricting users by c
 With this release, you can now remove job records by using the **Open in Excel** option in Talent.
 
 ### Upgrade to Dataverse
-Deadlines to upgrade to Dataverse are quickly approaching. Sign in to the Power Apps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Dataverse](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Deadlines to upgrade to Dataverse are quickly approaching. Sign in to the Power Apps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Dataverse](/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## In preview
 
@@ -100,3 +98,6 @@ With Platform update 25 for Finance and Operations, users can create alert rules
 
 ### Duplicate employee checks: User interface changes
 With this change, duplicates are detected as you enter name columns, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't open automatically.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

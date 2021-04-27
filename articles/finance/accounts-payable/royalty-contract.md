@@ -4,11 +4,9 @@
 title: Royalty contract management
 description: This topic describes royalty contract management for Microsoft Dynamics 365 Finance.
 author: t-benebo
-manager: AnnBe
 ms.date: 08/02/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -130,3 +128,6 @@ The process for handling royalties involves multiple manual tracking tasks that 
 - Updating the vendor balance and the income statement with the royalties that are due
 
 In this way, the feature helps you avoid potential errors and interest on unpaid royalties, and contributes to a timely cash flow forecast for the company.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

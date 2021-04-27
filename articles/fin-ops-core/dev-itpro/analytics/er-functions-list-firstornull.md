@@ -4,11 +4,9 @@
 title: FIRSTORNULL ER function
 description: This topic explains how the FIRSTORNULL Electronic reporting (ER) function is used
 author: NickSelin
-manager: kfend
 ms.date: 11/29/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -60,3 +58,6 @@ The expression `FIRSTORNULL(SPLIT("",1)).Value` returns an empty string (**""**)
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

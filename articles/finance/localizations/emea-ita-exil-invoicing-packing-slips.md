@@ -4,11 +4,9 @@
 title: Sort sales invoice lines by packing slip
 description: This topic explains how to set up and print accompanying invoices that include required packing slips details.
 author: ilkond
-manager: AnnBe
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -36,7 +34,7 @@ In Italy, companies must often issue *accompanying invoices*. Accompanying invoi
 ## Prerequisites
 
 - The primary address of the legal entity must be in Italy.
-- In the **Feature management** workspace, verify that the **Sales invoice lines sorting by packing slips** feature is turned on. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, verify that the **Sales invoice lines sorting by packing slips** feature is turned on. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Customer invoices must use the new **SalesInvoice.Report\_IT** layout. Go to **Accounts receivable** /> **Setup** /> **Forms** /> **Form setup**, and then, on the **General** tab, select **Print management**. On the **Print management setup** page, under **Module - accounts receivable \> Customer invoice**, select **Original \<Default\>**. Then, in the **Report format** field, select **SalesInvoice.Report\_IT**.
 
     ![New layout selected for customer invoices](media/emea-ita-exil-invoice-packing-slip-pic2.jpg)
@@ -54,3 +52,6 @@ After you've turned on and set up the feature, the printed invoice report will c
 
 > [!NOTE]
 > The new layout is applicable only to invoices that are based on sales orders. It isn't applicable to free-text invoices, because they don't use packing slips.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,11 +3,9 @@
 title: Debug data sources of an executed ER format to analyze data flow and transformation
 description: This topic explains how you can debug the data sources of an executed ER format to better understand the configured data flow and transformation.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -285,3 +283,6 @@ If any of the previously listed configurations are missing in the configuration 
 6. In the **Bank account** field, select **DEMF OPER**.
 7. In the **Generate payments** dialog box, select **OK**.
 8. In the **Electronic report parameters** dialog box, select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

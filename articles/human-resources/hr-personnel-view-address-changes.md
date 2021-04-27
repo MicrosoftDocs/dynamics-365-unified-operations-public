@@ -5,11 +5,9 @@
 title: View and manage address changes
 description: This topic explains how you can view and manage address changes in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -32,6 +30,8 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # View and manage address changes
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This topic explains how you can view and manage address changes in the Employee self-service **Edit personal details** page or the **Worker** details page in Dynamics 365 Human Resources.
 
@@ -132,6 +132,9 @@ HR personnel can view and monitor address changes from the **Personnel managemen
 When you select the **Address changes** tile, a new page displays the details of any address changes. You can optionally select **Include future address changes** in the upper-right corner to display address changes with a future date.
 
 > [!NOTE]
-> If you want to receive an alert or email about these address changes, you can create a new alert rule on the **Options** tab in the Action Pane. For more information about alert rules, see [Create alert rules](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
+> If you want to receive an alert or email about these address changes, you can create a new alert rule on the **Options** tab in the Action Pane. For more information about alert rules, see [Create alert rules](../fin-ops-core/fin-ops/get-started/create-alerts.md).<br><br>
 
-> If you want to configure a workflow for the address changes, you can select the **Send externally** option on your alert rule, and then use Power Automate to trigger the business event and configure a workflow. For more information, see [Alerts as business events](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).
+> If you want to configure a workflow for the address changes, you can select the **Send externally** option on your alert rule, and then use Power Automate to trigger the business event and configure a workflow. For more information, see [Alerts as business events](../fin-ops-core/fin-ops/get-started/create-alerts.md#alerts-as-business-events).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

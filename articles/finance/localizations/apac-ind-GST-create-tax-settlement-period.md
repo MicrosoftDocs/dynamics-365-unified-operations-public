@@ -4,11 +4,9 @@
 title: Create a tax settlement period
 description: This topic explains how to create a tax settlement period. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
 author: kfend
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -55,3 +53,6 @@ Follow these steps to create a tax settlement period.
 3. Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax settlement periods**, and create a tax period for GST.
 
     ![Tax settlement period](media/tax-settlement-period.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

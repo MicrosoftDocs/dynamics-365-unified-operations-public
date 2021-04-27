@@ -4,11 +4,9 @@
 title: Create dimensions and import dimension members
 description: Cost accounting is an independent module that requires master data from other modules.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -59,3 +57,6 @@ After the data is imported into Cost accounting, you can use it to build various
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

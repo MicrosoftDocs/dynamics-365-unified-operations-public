@@ -4,11 +4,9 @@
 title: Cost accounting service home page (private preview)
 description: This topic is the home page for the cost accounting service.
 author: AndersGirke
-manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -41,3 +39,6 @@ The cost accounting service add-in for Microsoft Dynamics 365 Supply Chain Manag
 ## Related resources
 
 [Get started with the cost accounting service](cost-accounting-service-get-started.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Create and configure extended warranties 
 description: This topic covers extended warranties and describes how to create and configure them in Microsoft Dynamics 365 Commerce.
 author:  sijoshi
-manager: annbe
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -242,3 +240,6 @@ A warranty is a service that is provided for a specific, unique product. In Dyna
 [Set up assortments](set-up-assortments.md)
 
 [Number sequences overview](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

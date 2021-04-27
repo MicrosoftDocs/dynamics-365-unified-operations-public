@@ -4,11 +4,9 @@
 title: Cookie consent module 
 description: This topic covers cookie consent modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -34,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.14
 [!include [banner](includes/banner.md)]
 
 This topic covers cookie consent modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 The cookie consent module prompts site users to explicitly provide consent to allow cookies for any feature or module that tracks browser cookies. The consent is required the first time a site user browses a site in a new browser session. When consent is received, it is tracked and the site user will not be prompted for consent again. For more information, see [Cookie compliance](cookie-compliance.md).
 
@@ -66,3 +62,6 @@ For more information about header fragments and modules, see [Header module](aut
 [Header module](author-header-module.md) 
 
 [Cookie compliance](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

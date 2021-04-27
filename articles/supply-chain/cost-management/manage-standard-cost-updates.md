@@ -4,16 +4,14 @@
 title: Manage standard cost updates
 description: Updates to standard cost data can be managed by using two different approaches - the one-version approach or the two-version approach. 
 author: AndersGirke
-manager: tfehr
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: CostingVersion, InventItemPrice
+ms.search.form: CostingVersion, InventItemPrice, InventParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -49,8 +47,13 @@ This example used one additional costing version for managing updates throughout
 
 ## Financial dimensions for the standard cost revaluation
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 Activating a new standard price will typically revaluate the on-hand inventory value by standard cost revaluation transactions. Usually, the financial dimensions of the item are then posted on the transactions. However, if you would like to control whether and how the financial dimensions are posted, use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the feature named *Options of defaulting financial dimensions for inventory standard cost revaluation*. After enabling this feature, go to **Cost management > Inventory accounting policies setup > Parameters** and set the new **Origin of financial dimension** drop-down list to one of the following values:
 
 - **None** – No financial dimensions are posted on the revaluation transactions. If your account structure includes a required financial dimension, the revaluation process will still run, but it will create accounting entries that have no financial dimensions. In this case, users will receive a warning message first, so they can cancel the revaluation if necessary.
 - **Table**  – The financial dimensions of the item are posted on the revaluation transactions. This is the default setting and is consistent with the original system behavior without turning on the feature *Options of defaulting financial dimensions for inventory standard cost revaluation*.
 - **Posting** – The financial dimensions of the transaction that is being revalued are posted on the revaluation transactions. By default, the financial dimensions from the original transaction's inventory account will be used for both the inventory account and the revaluation account.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

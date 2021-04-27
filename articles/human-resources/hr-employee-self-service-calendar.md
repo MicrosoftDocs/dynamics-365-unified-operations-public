@@ -4,11 +4,9 @@
 title: Create a team calendar
 description: View and create team calendars in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # View team and company calendars
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can view team and company calendars in Dynamics 365 Human Resources. Team calendars only display direct reports, as defined in the line hierarchy.
 
@@ -77,3 +77,6 @@ You can also filter calendars by manager or department. The primary position ass
 
 For information about calendar settings, see [Configure calendar parameters](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

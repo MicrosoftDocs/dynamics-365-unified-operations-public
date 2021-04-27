@@ -4,11 +4,9 @@
 title: Budget planning justification documents
 description: Justification documents provide a narrative for those requesting a budget to explain why a specific budget is necessary. 
 author: panolte
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -76,3 +74,6 @@ A budget plan template is created by the budget manager in Microsoft Word and as
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

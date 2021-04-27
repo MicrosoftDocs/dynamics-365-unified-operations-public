@@ -3,11 +3,9 @@
 title: Enable table maps for dual-write
 description: This topic describes how the table maps work for dual-write.
 author: sabinn-msft
-manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -95,3 +93,6 @@ In the Customers V3 table map, you can see that **accountnumber** is mapped to *
 ## Next steps
 
 [Customize table and column mappings](customizing-mappings.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

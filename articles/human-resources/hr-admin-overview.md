@@ -4,11 +4,9 @@
 title: Administration overview
 description: This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -32,6 +30,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Administration overview
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365 Human Resources.
@@ -51,10 +51,10 @@ This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365
   - [Configure integration with Dayforce](hr-admin-integration-dayforce.md)
   - [Create a recurring data export app](hr-admin-integration-recurring-data-export.md)
   - Integrate with Office
-    - [Office integration tutorial](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Update entity data in Excel](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Create Open in Excel experiences](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Troubleshoot Office integration](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Office integration tutorial](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Update entity data in Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Create Open in Excel experiences](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Troubleshoot Office integration](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
 
 - [Manage features](hr-admin-manage-features.md)
 
@@ -89,7 +89,7 @@ This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365
   - [Create documentation or training with Task Recorder](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
 - Troubleshoot Human Resources
-  - [Get support](hr-admin-troubleshooting-support.md)
+  - [Get support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
   - [Optimize performance with auto cleanup tasks](hr-admin-troubleshooting-batch-history.md)
   - [Analytic reports aren't updated](hr-admin-troubleshooting-analytic-reports.md)
   - [Can't create an environment in the Power Apps Admin center](hr-admin-troubleshooting-power-apps.md)
@@ -107,3 +107,5 @@ This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365
 - [What's new or changed in Human Resources](hr-admin-whats-new.md)
 - [Developer Guide](hr-developer-overview.md)
 - [User Guide](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

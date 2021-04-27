@@ -4,11 +4,9 @@
 title: Skip "change due" dialog box in POS
 description: This topic describes how to skip the "Change due" dialog box in the point of sale (POS) when a transaction is paid in full and there is no change due.
 author: rubendel
-manager: annbe
 ms.date: 10/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -58,3 +56,6 @@ To configure the property, follow these steps.
 [Configure cash denominations for the point of sale (POS)](../cash-denominations.md)
 
 [Configure credit card processing](../tasks/configure-credit-card-processing.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

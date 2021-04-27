@@ -4,11 +4,9 @@
 title: Product data entities 
 description: This topic provides information about the different entities that can be used to import and export product data. 
 author: cvocph
-manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,3 +51,6 @@ To import and export product data, you must use data entities. The following tab
 
 > [!NOTE]
 > You can use the **Released Products V2** data entity to import products into the system only if the shared product has already been created. Otherwise, to import products into the system, you must use the **Product creation** data entity.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

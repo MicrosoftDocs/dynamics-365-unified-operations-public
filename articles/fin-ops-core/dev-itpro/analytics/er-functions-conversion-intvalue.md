@@ -4,11 +4,9 @@
 title: INTVALUE ER function
 description: This topic provides information about how the INTVALUE Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -78,3 +76,6 @@ Any decimal places are truncated.
 ## Additional resources
 
 [Type conversion functions](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

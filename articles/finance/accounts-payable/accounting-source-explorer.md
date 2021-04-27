@@ -4,11 +4,9 @@
 title: Accounting source explorer
 description: This article provides information about Accounting source explorer, which you can use for detailed analysis of the source information behind general ledger accounting entries.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -55,3 +53,6 @@ For these documents, you can also navigate to the actual source document from Ac
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

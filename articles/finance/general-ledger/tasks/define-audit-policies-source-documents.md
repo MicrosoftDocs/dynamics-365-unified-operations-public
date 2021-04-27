@@ -4,11 +4,9 @@
 title: Define audit policies for source documents
 description: This topic explains how to set up and run audit policy rules. 
 author: panolte
-manager: AnnBe 
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -90,3 +88,6 @@ This topic explains how to set up and run audit policy rules. The example uses e
 57. Expand the **Associations** section.
 58. In the list, find and select the desired record.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Performance SDK and multiuser testing in on-premises environments
 description: This topic explains how to use the Performance software development kit (SDK) to do multiuser load testing in an on-premises environment.
 author: hasaid
-manager: AnnBe
 ms.date: 03/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -551,3 +545,6 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 #### Solution
 
 A hotfix is available that resolves this issue. The Microsoft Knowledge Base (KB) number is 4095640.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

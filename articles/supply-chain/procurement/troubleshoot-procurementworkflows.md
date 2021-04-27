@@ -4,11 +4,9 @@
 title: Troubleshoot procurement and sourcing workflows
 description: This topic describes how to fix issues that you might encounter while you work with procurement and sourcing workflows.
 author: SmithaNataraj
-manager: tfehr
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -82,3 +80,6 @@ After you cancel purchase orders that were in a *Confirmed* state, the canceled 
 
 This issue occurs only for purchase orders that are subject to change management. It occurs because the cancellation is considered a change that must be approved. The approval can be done automatically by the system. Therefore, the process is to submit the canceled purchase order to the approval workflow so that it can go to an *Approved* state. At that point, the purchase order will no longer appear in the list of draft purchase orders in the **Purchase order preparation** workspace.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

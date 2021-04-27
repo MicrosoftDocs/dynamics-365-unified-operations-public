@@ -4,11 +4,9 @@
 title: Settle a postdated check for a vendor
 description: Settle a postdated check issued to a vendor when the bank has cleared the check transaction after the check has been overdue and cleared by the bank. 
 author: kweekley
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -54,3 +52,6 @@ The role of this procedure is Treasurer. This procedure uses the USMF demo compa
 10. Click Voucher.
 11. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

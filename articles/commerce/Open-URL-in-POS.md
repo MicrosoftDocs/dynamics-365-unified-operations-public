@@ -4,11 +4,9 @@
 title: Open URL in POS
 description: This topic provides an overview of improvements that have been made to product and customer search functionality in  Dynamics 365 Commerce. 
 author: AamirAllaq
-manager: AnnBe
 ms.date: 01/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -87,3 +85,6 @@ To configure a URL to be opened in POS, perform the following steps.
 5. Select **Open URL** as the action.
 6. Enter the URL that you want to use.
 7. Configure whether to open the URL in a new window.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

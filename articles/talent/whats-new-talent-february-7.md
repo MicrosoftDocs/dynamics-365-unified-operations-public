@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Talent (February 7, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for February 7, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/07/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -67,3 +65,6 @@ When changing the job on a position, **Job family** will now default based on th
 
 ### Performance improvements when rendering workspaces
 Analytics tabs on workspaces will now load only when accessing those pages. An indicator will display during the initial rendering of the page in the upper-left corner of the page.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

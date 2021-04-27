@@ -4,11 +4,9 @@
 title: On-premises diagnostics
 description: This topic provides information about how to expose the diagnostic data for Dynamics 365 Finance + Operations (on-premises) deployments. 
 author: PeterRFriis
-manager: AnnBe
-ms.date: 09/18/2019
+ms.date: 04/05/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
 
@@ -149,7 +147,7 @@ To help ensure that Logstash runs on startup, we used the Non-Sucking Service Ma
 
 In the tests that Microsoft performed, NSSM had trouble restarting the installed services. Because NSSM wasn't 100-percent reliable for Logstash and Kibana, the service was treated as an OS startup service and little else.
 
-Microsoft created a configuration file for Logstash and put it in [C:\\ELK\\Logstash\\6.2.4\\config](https://aka.ms/ConfigFilesOnPremises). This file performs useful transformations on diagnostics.
+Microsoft created a configuration file for Logstash called logstash-dyn365finops.conf. This file is available in the LCS Shared Asset library, under the Model asset type in a zipped file called "LBD Diagnostic configurations". Go to the [LCS Shared Asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary) to download this file. After you extract it, you need to put it in C:\\ELK\\Logstash\\6.2.4\\config. This file performs useful transformations on diagnostics.
 
 To make the configuration work for your setup, you must change the **hosts** fields in the **output** section so that they point to the Elasticsearch nodes in your cluster. For example, change **hosts** to **\["ORCH1:9200", "ORCH2:9200"\]**.
 
@@ -158,7 +156,7 @@ The configuration was tested by using the Winlogbeat configuration from the next
 Remember to open the Winlogbeat port (by default, port 5044) in your firewall on the machine that is hosting Logstash, so that Beats can send data to Logstash.
 
 ### Winlogbeat
-Microsoft downloaded Winlogbeat to each Application Object Server (AOS) and Orchestrator node at C:\\ELK\\Winlogbeat, and configured the [winlogbeat.yml file](https://aka.ms/ConfigFilesOnPremises).
+Microsoft downloaded Winlogbeat to each Application Object Server (AOS) and Orchestrator node at C:\\ELK\\Winlogbeat, and configured the winlogbeat.yml file. The sample configuration file for Winlogbeat is available in the LCS Shared Asset library, under the Model asset type in a zipped file called "LBD Diagnostic configurations". Go to the [LCS Shared Asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary) to download this file. 
 
 To make the configuration work for your set up, you must change the **output.logstash.hosts** fields so that they point to all your Logstash nodes. Winlogbeat handles the load balancing.
 
@@ -207,9 +205,9 @@ The following sample queries can help you start probing the diagnostic data. If 
 #### Thirty-day data retention
 To keep its hard disks free from stale data, Microsoft used Curator v5.5 to clean up indexes that were older than 30 days.
 
-Microsoft downloaded Curator to one of the Orchestrator nodes at C:\\ELK\\Curator. Microsoft then used the configuration file that was put in [C:\\ELK\\Curator](https://aka.ms/ConfigFilesOnPremises) to connect Curator to its Elasticsearch cluster.
+Microsoft downloaded Curator to one of the Orchestrator nodes at C:\\ELK\\Curator. The sample configuration file, curator.yml, available in the [LCS Shared Asset library, under the Model asset type in zipped file "LBD Diagnostic configurations"](https://lcs.dynamics.com/V2/SharedAssetLibrary), was then put in C:\\ELK\\Curator to connect Curator to its Elasticsearch cluster. You'll need to edit the file to reference your specific servers. 
 
-Curator runs actions, and Microsoft created an action to clean up 30-day-old indexes that were put in [C:\\ELK\\Curator](https://aka.ms/ConfigFilesOnPremises).
+Curator runs actions, and Microsoft created an action configuration file called "30day_data_retention_actions.yml" to clean up 30-day-old indexes in C:\\ELK\\Curator. The  retention configuration file is available in the LCS Shared Asset Library, under the Model asset type in a zipped file called "LBD Diagnostic configurations". Go to the [LCS Shared Asset Library](https://lcs.dynamics.com/V2/SharedAssetLibrary) to download this file.
 
 Microsoft created a basic task in Windows Task Scheduler. This task has a weekly trigger on Saturday and Sunday, and the trigger has the following settings to start a program:
 
@@ -252,3 +250,6 @@ In Kibana, on the **Discover** tab, write a query, and save it. After you save t
 ## Troubleshooting
 ### You don't receive any data in Kibana
 If you don't receive any data in Kibana, review the logs from Winlogbeat to Logstash, Elasticsearch, and Kibana. Note that the Winlogbeat installation puts its logs in C:\\ProgramData\\winlogbeat\\Logs, whereas the other Elastic Stack components put their logs close to the installation path (for example, in C:\\ELK\\Elasticsearch\\logs).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

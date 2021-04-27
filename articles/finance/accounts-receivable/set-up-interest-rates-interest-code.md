@@ -4,11 +4,9 @@
 title: Set up interest rates for an interest code
 description: Interest codes contain settings that determine when interest is charged and how it is calculated on overdue accounts.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -51,10 +49,19 @@ You can set up interest rates that calculate a specified percentage.
 
 - Interest amount applies to all currencies.
 - Optional interest amount limits can be entered.
-- <strong>Percentage</strong> is selected** <strong>in the **Calculate interest based on</strong> field on the <strong>Set up Interest codes</strong> page.
+- **Percentage** is selected in the **Calculate interest based on** field on the **Set up Interest codes** page.
 
 For example, to set up an interest code that assesses 5 percent interest for every two months that the invoice payment exceeds the transaction due date, you would enter 2 in the **Calculate interest every** field and select **Month**.
 
+> [!NOTE] 
+> The new algorithm for interest note calculation is added using Feature management. To use this algorithm, enable the **(GBL) Allow to calculate interest per day as yearly percent divided by 365** feature. For information about how to enable the feature, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> 
+> The formula for the calculation for the interest note amount is: 
+>  
+> Interest note amount = Amount owed * Yearly interest % / 365 * Number of days late
+>  
+> This feature is available in version 10.0.18 or later.    
+ 
 ## Interest rates based on amounts
 You can set up interest rates that calculate a specified amount per currency.
 - An interest amount is specified for each currency in the interest code.
@@ -135,3 +142,6 @@ To view different versions, you can use the **As of Date** menu choice to select
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

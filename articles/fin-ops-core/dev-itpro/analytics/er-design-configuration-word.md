@@ -4,11 +4,9 @@
 title: Design a new ER configuration to generate reports in Word format
 description: This topic explains how users can configure a new Electronic reporting (ER) format to generate reports as Microsoft Word documents. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 12/17/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -44,7 +42,7 @@ To use a Word document as a template for reports in Word format, you can configu
 The ER format component of the solution must contain the **Excel\\File** format element, and that format element must be linked to the Word document that will be used as the template for generated reports at runtime. To configure the ER format component, you must open the [draft](general-electronic-reporting.md#component-versioning) version of the created ER configuration in the ER format designer. Then add the **Excel\\File** element, attach your Word template to the editable ER format, and link that template to the **Excel\\File** element that you added.
 
 > [!NOTE]
-> When you attach a template, you must use a [document type](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) that has previously been [configured](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) in the ER parameters to store templates of ER formats.
+> When you attach a template, you must use a [document type](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) that has previously been [configured](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) in the ER parameters to store templates of ER formats.
 
 ![Attaching a template on the Format designer page](./media/er-design-configuration-word-image3.gif)
 
@@ -52,11 +50,11 @@ You can add **Excel\\Range** and **Excel\\Cell** nested elements for the **Excel
 
 ![Adding nested elements on the Format designer page](./media/er-design-configuration-word-image4.gif)
 
-When you save your changes to the ER format at design time, the hierarchical format structure is stored in the attached Word template as a [custom XML part](https://docs.microsoft.com/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) that is named **Report**. You must access the modified template, download it from Finance, store it locally, and open it in the Word desktop application. The following illustration shows the locally stored sample template for the control report that contains the **Report** custom XML part.
+When you save your changes to the ER format at design time, the hierarchical format structure is stored in the attached Word template as a [custom XML part](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) that is named **Report**. You must access the modified template, download it from Finance, store it locally, and open it in the Word desktop application. The following illustration shows the locally stored sample template for the control report that contains the **Report** custom XML part.
 
 ![Previewing the sample report template in the Word desktop application](./media/er-design-configuration-word-image5.gif)
 
-When bindings of **Excel\\Range** and **Excel\\Cell** format elements are run at runtime, the data that every binding delivers comes into the generated Word document as an individual field of the **Report** custom XML part. To enter the values from the fields of the custom XML part in a generated document, you must add the appropriate Word [content controls](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) to your Word template to serve as placeholders for data that will be filled in at runtime. To specify how content controls are filled in, map every content control to the appropriate field of the **Report** custom XML part.
+When bindings of **Excel\\Range** and **Excel\\Cell** format elements are run at runtime, the data that every binding delivers comes into the generated Word document as an individual field of the **Report** custom XML part. To enter the values from the fields of the custom XML part in a generated document, you must add the appropriate Word [content controls](/office/client-developer/word/content-controls-in-word) to your Word template to serve as placeholders for data that will be filled in at runtime. To specify how content controls are filled in, map every content control to the appropriate field of the **Report** custom XML part.
 
 ![Adding and mapping content controls in the Word desktop application](./media/er-design-configuration-word-image6.gif)
 
@@ -76,3 +74,6 @@ When you run the configured ER format, the attached Word template is used to gen
 
 - [Reuse ER configurations with Excel templates to generate reports in Word format](./tasks/er-design-configuration-word-2016-11.md)
 - [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

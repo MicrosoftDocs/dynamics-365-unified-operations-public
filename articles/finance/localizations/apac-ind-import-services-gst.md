@@ -4,11 +4,9 @@
 title: Import services that have GST
 description: This topic explains how to import services that have Goods and Services Tax (GST).
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -58,3 +56,6 @@ Complete the procedures in this topic to import services that have Goods and Ser
 5. Select **Inquiries** \> **Voucher**.
 
 ![Example](media/Annotation-2019-05-21-104142.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Priority-based batch scheduling
 description: This topic provides information about the functionality for priority-based batch scheduling.
 author: peakerbl
-manager: AnnBe
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -138,3 +136,6 @@ The batch job is run every day at 1:00 AM, even if the **Batch priority-based sc
 The batch job is also run when the feature is turned on, to migrate any batch jobs since the last execution. The user who turned on the feature will receive a notification that includes a reference to the ID of the migration batch job.
 
 We recommend that you review the automatic batch group assignment after the feature is turned on and the migration is completed. To facilitate this review, the **Batch group** field for tasks is read-only. To support backward compatibility, the value of this field will be propagated from the job when new batch tasks are added.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

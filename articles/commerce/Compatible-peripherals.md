@@ -4,11 +4,9 @@
 title: Peripheral compatibility for Commerce 
 description: This topic lists peripheral devices that have been tested for compatibility with Dynamics 365 Commerce.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 10/08/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -81,3 +79,6 @@ Only devices that have been previously tested for compatibility, with results su
 This document is for informational purposes only. Results are based on testing specific devices and configurations in a controlled lab environment in which the specified Microsoft Dynamics software was used. Any difference in system hardware, software design or configuration, customizations, or transaction mix may affect actual performance or results.
 
 MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS SUMMARY. This document is provided "as-is." Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

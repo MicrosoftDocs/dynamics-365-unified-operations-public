@@ -4,11 +4,9 @@
 title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/08/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
 ms.technology:
 
 # optional metadata
@@ -234,11 +232,15 @@ All new stored procedures, views or functions must be created in the **ext schem
 
 The deployment process determines if there are any modification to the database artifacts. If you have attempted to modify the CRT, AX, or DBO schema objects, or access them for any scenario directly in SQL, then deployment will fail.
 
+## Deployment timeout
+
+SQL server will time outs if the deployment script runs for more than 30 minutes. To avoid timeout and deployment failure, split the long running script into multiple smaller scripts, which run in less than 30 minutes.
+
 ## Extension scripts and deployment
 
 Channel Database extensions are provided by authoring one or more T-SQL script files and including them in a [deployable package](./retail-sdk/retail-sdk-packaging.md). This process is described in the [Retail SDK](./retail-sdk/retail-sdk-overview.md) documentation.
 
-Extension script files must be written using [T-SQL](https://docs.microsoft.com/sql/t-sql/language-reference) and compatible with [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-features).
+Extension script files must be written using [T-SQL](/sql/t-sql/language-reference) and compatible with [Azure SQL Database](/azure/sql-database/sql-database-features).
 The script files must end with the *.sql* file extension, any other files will be ignored or may induce a packaging or deployment failure. If you intend to deploy your Channel Database extensions as part of Commerce Scale Unit or Modern POS offline,
 the scripts must also be compatible with the version of SQL Express and/or SQL Server that will be used for those components.
 
@@ -290,3 +292,6 @@ through the [Commerce Data Exchange](./cdx-extensibility.md). Data uploaded to t
 ### Do write backward compatible channel database extensions
 
 The Channel Database is expected to be backward compatible. This means that updating only the Channel Database without updating Commerce Scale Unit or POS must not prevent existing Commerce Scale Unit or POS operations from functioning correctly. During deployment flows, the different components of your Commerce Scale Unit and Modern POS are updated in the inverse other of dependency. This means that the Channel Database is the first component to be updated, and Commerce Scale Unit or POS are updated next. If Commerce Scale Unit or POS fails to update successfully, those components are rolled back to restore them to their previous working state. However, in such situations, the Channel Database is not rolled back to prevent data loss. If your extensions are not backward compatible, they may fail to work properly until a successful deployment is performed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

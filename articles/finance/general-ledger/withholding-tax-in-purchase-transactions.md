@@ -4,11 +4,9 @@
 title: Withholding tax in purchase transactions
 description: For vendors who are liable to withholding tax, you can assign the default **Withholding tax group** on the **All vendors** page.
 author: roschlom
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -81,3 +79,6 @@ Withholding tax is calculated on **Vendor payment journal**. You can manually ad
 The derived withholding tax amount will be deducted from the vendor payment and posted to the **Withholding tax account** in a related voucher.
 
 ![Withholding tax account showing a related voucher](media/withholding-tax-adjusted.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

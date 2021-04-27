@@ -5,11 +5,9 @@ title: Withholding tax in sales transactions
 description: This topic lists the steps for avoiding the calculation of withholding tax for selected customers. For customers who specify withholding tax in their payments to you, you can assign the default withholding tax group. 
 
 author: roschlom
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -70,3 +68,6 @@ The default Withholding tax group and Item withholding tax group will be used as
 Withholding tax is calculated and posted with **Customer payment journal**. You can manually adjust the applicable withholding tax code, as well as the actual withholding tax amount in the **Withholding tax** tab on the **Settle transactions** page.
 
 The calculated withholding tax amount will be deducted from the customer payment and posted to the **Withholding tax offset** account in a related voucher.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Create and acquire assets from Accounts payable
 description: This task guide will walk through creation and acquisition of a fixed asset with the purchasing process. 
 author: saraschi2
-manager: AnnBe 
 ms.date: 08/13/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -58,3 +56,6 @@ This task guide will walk through creation and acquisition of a fixed asset with
 17. In the list, click the link in the selected row.
 18. Click **Post**. The fixed asset will be created and acquired when the invoice is posted.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,32 +1,16 @@
 ---
-# required metadata
-
 title: X++ collection classes
 description: This topic describes collection classes in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 150183
-ms.assetid: 0ff4e759-851d-4b53-aa67-6f03eee53f02
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ collection classes
@@ -59,3 +43,6 @@ For **Map** objects, as for **Set** objects, if any elements are removed, the it
 You can use the collection classes to form more complex classes. For example, you can easily implement a stack by using a list where elements are always added to the beginning of the list. The newest element then occupies the top of the stack. 
 
 You can also extend the collection classes. For example, you can extend the **List** class to create a list of customer records where the operations are type-safe. In this case, the derived collection class will accept only customer records.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

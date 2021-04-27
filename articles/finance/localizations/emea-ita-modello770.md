@@ -4,11 +4,9 @@
 title: Modello 770 report
 description: This topic provides information about the Modello 770 report for Italy.
 author: ilkond
-manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -85,7 +83,7 @@ Download the *actual versions* of the following Electronic reporting (ER) config
 - **Data model:** Italian tax reports model
 - **Format:** Modello770 report (IT)
  
-For instruction about how to download ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For instruction about how to download ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Create and export the Model 770 report
 The Model 770 report exports the information to an ASCII file that will be submitted to the tax authorities. The name of the ASCII file must be \[company fiscal code\] 77S\[*YY*\].77s, where **YY** is the last two digits of the filing year. For more information about how to complete and file the Model 770 report, see the [Italian Revenue Agency](https://www.agenziaentrate.gov.it) website.
@@ -146,3 +144,6 @@ The Model 770 report exports the information to an ASCII file that will be submi
 23. Select **Export**, and then, on the **Export** page, in the **File name** field, specify the name of the compressed file to download. This compressed file contains the Model 770 report as an ASCII file.
 24. Select the **Final export** check box to start the import process by bypassing the validation logic in the government import tool. You can also select this check box if you're working with a report that was previously submitted and rejected, but that you consider correct and complete per the available information that is published on the [Italian Revenue Agency](https://www.agenziaentrate.gov.it) website.
 25. Select **OK** to export the Model 770 report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

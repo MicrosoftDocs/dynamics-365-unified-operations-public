@@ -2,13 +2,11 @@
 # required metadata 
  
 title: ER Design domain specific data model
-description: THis topic describes how to create a new Electronic reporting (ER) configuration that contains a data model for electronic payment documents. 
+description: This topic describes how to create a new Electronic reporting (ER) configuration that contains a data model for electronic payment documents. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -190,3 +188,6 @@ You're creating a new data model for the selected configuration. This configurat
 65. Click Save.
 66. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

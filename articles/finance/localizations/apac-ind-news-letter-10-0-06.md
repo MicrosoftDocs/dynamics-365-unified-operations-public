@@ -4,11 +4,9 @@
 title: What's new or changed for  India GST in 10.0.06 (November 2019)
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.06.
 author: prabhatb
-manager: Annbe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -31,7 +29,7 @@ ms.dyn365.ops.version: 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes a summary of the new features and critical bug fixes released in version 10.0.06 for India. You can learn more about the shipped features in the topic, [What's new or changed in Finance and Operations version 10.0.6](../../fin-and-ops/get-started/whats-new-changed-10-0-6.md).
+This topic includes a summary of the new features and critical bug fixes released in version 10.0.06 for India. You can learn more about the shipped features in the topic, [What's new or changed in Finance and Operations version 10.0.6](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md).
 
 ## New features
 ### Validate non-existent and duplicate records when importing tax setup 
@@ -82,3 +80,6 @@ Tax information has been enabled for procurement categories. Tax information can
 -	Incorrect calculation of GST for a credit note. 
 -	Incorrect TDS calculation on the **Open vendor invoice** page.  
 -	The **Business verticals** field for the GST registration number on the **Enterprise Tax Registration Numbers** page should be editable and not greyed out. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

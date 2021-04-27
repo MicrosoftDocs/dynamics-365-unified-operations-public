@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Regression suite automation tool best practices
 description: This topic describes how to use the Regression suite automation tool (RSAT)/Task recorder to record client functions.
-author: robadawy
-manager: AnnBe
+author: FrankDahl
 ms.date: 08/01/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
-
-# optional metadata
 
 # ms.search.form:
 # ROBOTS:
@@ -22,7 +16,7 @@ ms.reviewer: rhaertle
 ms.custom: 21631
 ms.search.region: Global
 # ms.search.industry:
-ms.author: robadawy
+ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -118,3 +112,6 @@ As of RSAT version 1.210, this process is easier. To automatically fix all occur
 desired test cases in the grid, and then select **Resolve test case ID mismatch** in the **New** menu.
 
 ![Resolving a mismatch](media/resolve-test-case-id-mismatch.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

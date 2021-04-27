@@ -3,11 +3,9 @@
 title: System requirements and prerequisites
 description: This topic describes the system requirements and prerequisites that must be in place before you can enable dual-write for Finance and Operations apps.
 author: sabinn-msft
-manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -128,7 +126,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     7. Go to **Dynamics 365 \> Settings \> Security**, select **Teams**, and then change the view to **All Owner Teams**.
     8. Select **default team for the root Business Unit**, select **Manage Roles**, and then, in the **Manage Team Roles** dialog box, select a preconfigured **Security Role** to grant a **Read** privilege with a **User** scope for each table integrated through dual-write. 
     
-      For instructions on how to create a Security Role, see [Create or configure a custom security role](https://docs.microsoft.com/power-platform/admin/database-security#create-or-configure-a-custom-security-role).
+      For instructions on how to create a Security Role, see [Create or configure a custom security role](/power-platform/admin/database-security#create-or-configure-a-custom-security-role).
       
       > [!NOTE]
       > The root business unit’s default team will become the default owner for all rows integrated through dual-write.
@@ -175,7 +173,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
 7. Install the **Dual-write application orchestration solution** maps solution.
 
-    In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for the solution that is named **Dual-write application orchestration solution**. Select the solution, and follow the prompts to import it. After installation, you'll find several new solutions listed under **Solutions**. For more information, see [Solutions overview](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview). 
+    In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for the solution that is named **Dual-write application orchestration solution**. Select the solution, and follow the prompts to import it. After installation, you'll find several new solutions listed under **Solutions**. For more information, see [Solutions overview](/powerapps/maker/common-data-service/solutions-overview). 
  
     While the dual-write core solution contains metadata for your table maps, the dual-write application orchestration solution covers these additional master data scenarios:
     
@@ -224,3 +222,6 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 ## Next steps
 
 [Use the dual-write wizard to link your environments](link-your-environment.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

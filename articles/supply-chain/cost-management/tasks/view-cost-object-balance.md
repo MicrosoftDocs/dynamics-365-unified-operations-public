@@ -4,11 +4,9 @@
 title: View cost object balance
 description: The demo data company used to create this procedure is USMF. 
 author: AndersGirke
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -41,3 +39,6 @@ The demo data company used to create this procedure is USMF. This procedure is i
 8. Clear the Location check box.
 9. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

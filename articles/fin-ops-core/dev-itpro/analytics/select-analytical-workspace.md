@@ -3,12 +3,10 @@
 
 title: Select analytical workspaces from Power BI 
 description: This topic explains how to select a report that is hosted in Power BI and use it for an application workspace.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -22,7 +20,7 @@ ms.reviewer: kfend
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2019-07-08 
 ms.dyn365.ops.version: Platform update 26
 ---
@@ -69,7 +67,7 @@ To replace the standard reports, you must be a member of the System Report Edito
     By default, you will see the standard analytical workspace solution that is included with your application. The reports in this solution are automatically deployed and configured for your environment during the provisioning process.
 
     > [!NOTE]
-    > The analytical workspaces require a hosted Power BI service that is available only for dedicated environments. For more information, see the blog post, [Accessing Analytical Workspaces and Reports on 1-Box Environments](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/).
+    > The analytical workspaces require a hosted Power BI service that is available only for dedicated environments. For more information, see the blog post, [Accessing Analytical Workspaces and Reports on 1-Box Environments](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment).
 
 3. On the Action Pane, on the **Options** tab, in the **Power BI** group, select **Select Analytics** to open the **Power BI Reports** dialog box.
 
@@ -94,3 +92,6 @@ After a PowerBI.com report has been embedded in an application workspace, update
 
 2. To view the updates to the workspace, you must reload the page. Either move away from the workspace and then return, or refresh your browser.
 3. In the **Compensation management** workspace, select the **Analytics** tab to access the standard solution that is now embedded in the analytical workspace.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

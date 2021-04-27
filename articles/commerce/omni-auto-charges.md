@@ -4,11 +4,9 @@
 title: Omni-channel advanced auto charges
 description: This topic describes capabilities for managing additional order charges for Commerce channel orders using advanced auto charges features.
 author: hhaines
-manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -225,3 +223,6 @@ If users manually override the calculated charges or add a manual charge to the 
 
 [Prorate header charges to matching sales lines](pro-rate-charges-matching-lines.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

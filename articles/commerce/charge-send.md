@@ -4,11 +4,9 @@
 title: Ship orders from another store by using the Charge send feature
 description: This topic describes the Charge send feature.
 author: ashishmsft
-manager: AnnBe
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -46,3 +44,6 @@ The Charge send feature uses the following POS operations: Ship all products and
 The ability to select "ship to" addresses remains unchanged.
 
 The shipping methods that can be used to fulfill the order line are based on the configuration of valid modes of delivery for products and addresses. Because the rules about valid of modes of delivery are maintained only in the Headquarters (HQ), the POS client makes a real-time call to fetch the valid modes of delivery for a ship line.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

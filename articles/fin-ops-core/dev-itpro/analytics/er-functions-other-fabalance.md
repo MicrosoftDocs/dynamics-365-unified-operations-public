@@ -4,11 +4,9 @@
 title: FA_BALANCE ER function
 description: This topic provides information about how the FA_BALANCE Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -72,3 +70,6 @@ The resulting record value.
 ## Additional resources
 
 [Other (business domain–specific) functions](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

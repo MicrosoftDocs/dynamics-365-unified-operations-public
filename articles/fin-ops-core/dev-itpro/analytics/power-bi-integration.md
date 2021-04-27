@@ -3,12 +3,10 @@
 
 title: Features available through the Power BI integration
 description: This topic explains how you can use the features and services that are included in Microsoft Power BI to access, explore, and gain insight from your data.
-author: TJVass 
-manager: AnnBe
+author: RichdiMSFT 
 ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 31001
 ms.assetid: bf6eff60-4a30-4338-a55f-1f2a97d3debe
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -119,3 +117,6 @@ Power BI tiles that are pinned to the Dynamics 365 client provide insightful vis
 As a power user, a business analyst, or a developer, you can use Power BI desktop to create reports that use Entity store. Not only are these reports rich and interactive, but your users can make changes without having to rely on another person.
 
 Although the reports in PowerBI.com are powerful and interactive on their own, they can also be pinned into workspaces. Your users can pin reports to workspaces themselves. For more information about how to pin reports to workspaces, see [Pin Power BI reports to workspaces](pin-power-bi-reports.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

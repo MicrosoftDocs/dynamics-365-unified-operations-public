@@ -4,11 +4,9 @@
 title: ER Create required configurations to import data from an external file
 description: This topic describes how to design Electronic reporting configurations to import data in to the Microsoft Dynamics 365 Finance app from an external file. 
 author: NickSelin
-manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 03/24/2021
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -29,7 +27,14 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-The following steps explain how a user in the System administrator or Electronic reporting developer role can design Electronic reporting (ER) configurations to import data in to the application from an external file. In this example, you will create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the Task guide, "ER Create a configuration provider and mark it as active." These steps can be completed using the USMF data set. You must also download and save the following files locally using links from the Electronic reporting overview topic (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+The following steps explain how a user in the System administrator or Electronic reporting developer role can design Electronic reporting (ER) configurations to import data in to the application from an external file. In this example, you will create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the Task guide, "ER Create a configuration provider and mark it as active." These steps can be completed using the USMF data set. You must also download and save the following files locally: 
+
+| Content description                       | File name                                     |
+|-------------------------------------------|-----------------------------------------------|
+| ER data model configuration - 1099 | [1099model,xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml)                  |
+| ER format configuration - 1099    | [1099format.xml](https://download.microsoft.com/download/e/8/7/e87154b0-b53f-431f-8e1e-0b7f7c9805a9/1099format.xml)                  |
+| Sample of the incoming document in XML format                          | [1099entries.xml](https://download.microsoft.com/download/4/0/3/403a4958-df24-476a-b8b0-6843a9fa7f89/1099entries.xml)        |
+| Sample of the workbook to manage data of incoming document                          | [1099entries.xlsx](https://download.microsoft.com/download/6/0/0/6001abab-a331-48db-a939-41851fb0f5d0/1099entries.xlsx) |
 
 ER offers business users the ability to configure the process of importing external data files to tables in either .XML or .TXT format. First, an abstract data model and an ER data model configuration must be designed to represent the data that you are importing. Next, you need to define the structure of the file that you are importing and the method that you will use to port the data from the file to the abstract data model. The ER format configuration that maps to the designed data model must be created for that abstract data model. Then, the data model configuration must be extended with a mapping that describes how the imported data is persisted as abstract data model data and how it is used to update tables.  The ER data model configuration must be appended with a new model mapping that describes the binding of the data model to the application's destinations.  
 
@@ -257,3 +262,6 @@ Execute this format mapping for testing purposes. Use the file 1099entries.xml t
 27. Close the page.
 28. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Back up the databases for Finance and Operations apps
 description: This topic provides information about the database backup that is required for your Microsoft Dynamics Lifecycle Services (LCS) solution package.
 author: kfend
-manager: AnnBe
 ms.date: 04/13/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -48,3 +46,6 @@ To compress your database backup, in SQL Server Management Studio, on the **Back
 ## Additional resources
 
 [Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

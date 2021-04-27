@@ -4,11 +4,9 @@
 title: Localize mobile workspaces
 description: This topic describes how you can use workspace classes to provide localization support to workspaces.
 author: robinarh
-manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -87,3 +85,6 @@ A workspace class can be used to provide localized strings for the workspace tit
 The following illustration shows the title and description on a phone that uses English and Danish.
 
 ![Final workspace](media/workspace-api/LocalizeWorkspaceFinal.png)
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

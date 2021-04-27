@@ -3,12 +3,10 @@
 
 title: Set up an email notification profile
 description: This topic describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
-author: samjarawan
-manager: annbe
-ms.date: 03/31/2020
+author: bicyclingfool
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -22,21 +20,18 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: samjar
+ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
 # Set up an email notification profile
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
-Before creating channels, you'll want to set up a profile to ensure that email notifications can be sent out for various events, such as order creation, order shipping status, and payment failure.
+When you create channels, you can set up an email notification profile. In that way, emails can be sent to customers for various transactional events, such as order creation, order shipping status, and payment failure.
 
 For additional email configuration information, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -52,7 +47,7 @@ To create an email notification profile, follow these steps.
 
 ### Create an email template
 
-Before an email notification can be created, you must create an organization email template which contains the senders email information and the email template.
+Before an email notification type can be enabled, you must create an organization email template in Commerce headquarters. This template defines the email subject, sender, default language, and email body for each language that you want to support.
 
 To create an email template, follow these steps.
 
@@ -62,7 +57,7 @@ To create an email template, follow these steps.
 1. In the **Sends name** field, enter the senders name.
 1. In the **Email Description**, enter a meaningful description.
 1. In the **Sender email**, enter the senders email address.
-1. In the **General** section, fill out any optional information needed (such as the email priority).
+1. In the **General** section, select a default language for the email template. The default language will be used when no localized template exists for the specified language.
 1. Expand the **Email message content** section and select **New** to create the template content. For each content item, select the language and provide the email subject line. If the email will have a body, ensure that the **Has body** box is checked.
 1. On the action pane, select **Email message** to provide an email body template.
 
@@ -99,3 +94,6 @@ Before you can send mails, you must configure your outgoing mail service and set
 [Channel setup prerequisites](channels-prerequisites.md)
 
 [Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

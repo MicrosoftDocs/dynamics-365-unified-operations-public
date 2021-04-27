@@ -3,11 +3,9 @@
 title: GenericValue type
 description: Generic value control type.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -241,3 +239,6 @@ An event that is triggered when the input control's data changes.
 > Inherited from [InputControl](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[onDataChanged](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged)
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

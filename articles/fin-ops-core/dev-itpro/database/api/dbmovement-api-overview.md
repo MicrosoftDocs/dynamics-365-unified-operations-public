@@ -4,11 +4,9 @@
 title: Database Movement API
 description: This topic provides an overview of the Microsoft Dynamics Lifecycle Services (LCS) Database Movement application programming interface (API).
 author: laneswenka
-manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -45,3 +43,6 @@ The Database Movement API exposes RESTful endpoints for the following Dynamics 3
 
 * Learn how to set up [authentication](dbmovement-api-authentication.md).
 * Review the [API reference](./v1/dbmovement-api-v1-overview.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

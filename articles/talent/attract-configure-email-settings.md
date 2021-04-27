@@ -4,11 +4,9 @@
 title: Configure email settings in Attract
 description: This topic explains how to configure settings for email that is sent by Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -52,7 +50,7 @@ By connecting your company's email service account, you can create a branded ema
 
     ![Connecting your company's email service account in Attract](./media/attract-admin-email-service-accounts.png)
 
-    For more information about how to create a shared email account, see [Shared mailboxes in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes).
+    For more information about how to create a shared email account, see [Shared mailboxes in Exchange Online](/exchange/collaboration-exo/shared-mailboxes).
 
 3. In the Microsoft sign-in window, sign in by using your corporate credentials.
 4. If you haven't yet set up an email service account, or if you want to add a new one, select **Add new service account**, and then enter your email information. If you've already set up the email service account that you want to use, select it.
@@ -92,3 +90,6 @@ You can upload an image of your company's logo and other information as a brande
     ![Adding links to your company's privacy policy and terms of use for the email footer](./media/attract-admin-email-footer.png)
 
 4. Select **Save** to save your email template settings.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

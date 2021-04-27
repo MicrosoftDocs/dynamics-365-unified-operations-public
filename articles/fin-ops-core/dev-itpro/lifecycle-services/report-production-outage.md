@@ -4,11 +4,9 @@
 title: Report a production outage
 description: This topic explains how to report a production outage through Lifecycle Services (LCS).
 author: angelmarshall
-manager: AnnBe
 ms.date: 05/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -75,3 +73,6 @@ If you're unable to report a production outage in LCS, [phone support](cloud-pow
 
 > [!Note]
 > If you don't see your situation listed in the outage scenarios, enter a support incident through LCS. During the initial investigation by a Microsoft support engineer, if it is found that the situation does not meet the current list of production outage scenarios, the support incident will be transferred to the correct support team and service-level agreement (SLA)  based on your current support plan.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,12 +4,10 @@
 title: Recurring integrations
 description: This topic describes recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 12/12/2019
 
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -95,7 +93,7 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
     ![Manage scheduled data jobs](./media/image013.jpg)
 
 ## Submitting data to recurring data jobs
-You can use integration REST endpoints to integrate with the client, submit documents (import), or poll available documents for download (export). These endpoints support OAuth.
+You can use integration REST endpoints to integrate with the client, submit documents (import), or pull available documents for download (export). These endpoints support OAuth.
 
 ## Integration REST APIs
 The following set of APIs is used to exchange data between the integration client and the application.
@@ -224,3 +222,6 @@ The **File uploaded successfully** column contains a check mark if the file or t
 The dequeue API returns HTTP instead of HTTPS. This behavior can be seen in application environments that use a load balancer, such as production environments. (You cannot see the behavior in one box environments). We recommend that you change the URI scheme to HTTPS in the middleware application that is trying to dequeue from the application.
 
 ![Batch job status](./media/show-batch-status.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

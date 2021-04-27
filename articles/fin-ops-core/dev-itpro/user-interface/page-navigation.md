@@ -4,11 +4,9 @@
 title: Navigation concepts
 description: This articles describes the primary navigation concepts including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -126,3 +124,6 @@ The search keywords are matched not only to the caption of the navigation elemen
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

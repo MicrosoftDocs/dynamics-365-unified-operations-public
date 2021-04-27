@@ -3,11 +3,9 @@
 title: Part module
 description: A part is a container control that contains only a page, allowing for a page to be embedded within a page.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -131,3 +129,6 @@ A part is a container control that contains only a page, allowing for a page to 
 | [Target](../interfaces/view-model-control-part-ipart-ipartmetadata.md#target) |Target: [PageTarget](../interfaces/view-model-ipage-ipagetarget.md) (optional)  <br>|Target page of the part.<br>  |
 | [Type](../interfaces/view-model-control-part-ipart-ipartmetadata.md#type) |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)  <br>|String indicating the control type.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) <br> |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

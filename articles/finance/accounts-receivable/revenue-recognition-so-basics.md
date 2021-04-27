@@ -4,11 +4,9 @@
 title: Revenue recognition on sales orders 
 description: This topic describes the basic functionality for recognizing revenue on sales orders and invoices. Revenue recognition is available on the sales order and on the corresponding invoice that is created from the sales order.
 author: kweekley
-manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -102,3 +100,6 @@ The **Revenue price allocation** button is still available so that you can view 
 The expected revenue recognition schedule is removed and replaced with the final revenue recognition schedule. The revenue schedule details are maintained for each sales order line and are used to release the deferred revenue to actual revenue as the contractual obligations are met.
 
 [![Final revenue recognition schedule](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

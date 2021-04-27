@@ -4,11 +4,9 @@
 title: What's new or changed for India GST in 10.0.09 (April 2020)
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.09.
 author: prabhatb
-manager: Wangcheng
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -107,3 +105,6 @@ With debug mode enabled, the system will generate a log file that contains the d
 -	Tax calculation is incorrect when a customer discount is posted in the **General** journal. 
 -	**Adjusted amount origin** field shows the wrong value. 
 -	Difference between sales tax payment and the actual transaction posted to the tax authority.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

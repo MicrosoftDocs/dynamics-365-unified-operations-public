@@ -4,11 +4,9 @@
 title: Petty cash management for Commerce for Eastern Europe
 description: This topic describes how to set up and use cash management features in Commerce for Eastern Europe.
 author: epopov
-manager: annbe
 ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -96,3 +94,6 @@ Use the following procedure to set up a payment method for cash payments in a st
 
 > [!NOTE]
 > You must set up offset accounts for both the cash tender payment method and the remove tender or float entry payment method for a store. This creates balanced general ledger entries for remove tender or float entry transactions.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

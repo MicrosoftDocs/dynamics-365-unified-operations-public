@@ -4,11 +4,9 @@
 title: Change the service order stage 
 description: You can change the service order stage.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -44,3 +42,6 @@ Follow these steps to move a service order to the next stage in the service work
 4.  In the **Change service stage** form, select the appropriate stage.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

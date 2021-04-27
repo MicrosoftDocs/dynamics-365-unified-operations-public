@@ -2,13 +2,11 @@
 # required metadata
 
 title: Commerce Scale Unit customer and consumer APIs
-description: This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
+description: This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients.
 author: mugunthanm
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -35,9 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
 
-Overview
---------
-
 - Commerce Scale Unit business data and operations are available to any connected device through the OData Web API, across both employee (point of sale) scenarios and customer (online store) scenarios.
 - The embedded commerce runtime (CRT) enables a unified omni-channel platform.
 - The application programming interfaces (APIs) are stateless and can process requests from many channels.
@@ -46,6 +41,7 @@ Overview
 - The APIs are built on the .NET stack by using C\#.
 
 ## Roles
+
 Every request to Commerce Scale Unit (via commerce proxy) operates under these main roles:
 
 - CommerceRole.Employee
@@ -57,7 +53,6 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 
 > [!NOTE]
 > By default, Anonymous access is not enabled. To enable Anonymous access for your environment, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support).
-
 
 ## Customer controller
 
@@ -405,8 +400,6 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetEstimatedAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | ProductWarehouseInventoryInformation  | Employee, Customer, Anonymous, Application               | Get estimated product availability based on search criteria.                                                                                               |
 | GetEstimatedProductWarehouseAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | IEnumerable\<ProductWarehouse\>                 | Employee, Customer, Anonymous, Application               | Get estimated product availability for specific product warehouse pairs.                                                                                               |
 
-
-
 ## Sales orders fulfillment controller
 
 | API                            | Parameter                                                                                                                                  | Return value                       | Supported Commerce Roles | Description                                                                |
@@ -461,22 +454,21 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 |---------------|------------------------------|-----------------------------|--------------------------|----------------------|
 | GetStoreSafes | QueryResultSettings settings | PageResult\<StoreSafe\> | Employee,                | Get store safe list. |
 
-
 ## Warehouse controller
 
 | API              | Parameter                                                                         | Return value                        | Supported Commerce Roles       | Description                                                                                         |
 |------------------|-----------------------------------------------------------------------------------|-------------------------------------|--------------------------------|-----------------------------------------------------------------------------------------------------|
 | GetWarehouseById | string inventLocation                                                             | PageResult\<StoreSafe\>         | Employee, Customer             | Gets a Warehouse by its record identifier.                                                          |
-| SearchWarehouses | string searchText, QueryResultSettings queryResultSettings                        | PageResult\<Warehouse\>         | Application,Employee, Customer | Retrieves a list of warehouses that matches the given search text.                                  |
-| GetLocations     | string inventLocation, QueryResultSettings queryResultSettings                    | PageResult\<WarehouseLocation\> | Application,Employee, Customer | Gets the warehouse locations of the specified Warehouse.                                            |
-| SearchLocations  | string inventLocation, string searchText, QueryResultSettings queryResultSettings | PageResult\<WarehouseLocation\> | Application,Employee, Customer | Retrieves a list of warehouse locations for the given warehouse that matches the given search text. |
+| SearchWarehouses | string searchText, QueryResultSettings queryResultSettings                        | PageResult\<Warehouse\>         | Application, Employee, Customer | Retrieves a list of warehouses that matches the given search text.                                  |
+| GetLocations     | string inventLocation, QueryResultSettings queryResultSettings                    | PageResult\<WarehouseLocation\> | Application, Employee, Customer | Gets the warehouse locations of the specified Warehouse.                                            |
+| SearchLocations  | string inventLocation, string searchText, QueryResultSettings queryResultSettings | PageResult\<WarehouseLocation\> | Application, Employee, Customer | Retrieves a list of warehouse locations for the given warehouse that matches the given search text. |
 
 ## Recommendation controller
 
 | API         | Parameter                                                                               | Return value                          | Supported Commerce Roles                  | Description                                                                                          |
 |-------------|-----------------------------------------------------------------------------------------|---------------------------------------|-------------------------------------------|------------------------------------------------------------------------------------------------------|
-| Get         |                                                                                         | PageResult\<Recommendation\>      | Application,Employee, Customer, Anonymous | Gets the list of recommendations.                                                                    |
-| GetElements | string listId, RecommendationCriteria criteria, QueryResultSettings queryResultSettings | PagedResult\<RecommendedElement\> | Application,Employee, Customer, Anonymous | Gets the collection of recommended elements given the (optional) contextual information as criteria. |
+| Get         |                                                                                         | PageResult\<Recommendation\>      | Application, Employee, Customer, Anonymous | Gets the list of recommendations.                                                                    |
+| GetElements | string listId, RecommendationCriteria criteria, QueryResultSettings queryResultSettings | PagedResult\<RecommendedElement\> | Application, Employee, Customer, Anonymous | Gets the collection of recommended elements given the (optional) contextual information as criteria. |
 
 ## Transfer order controller
 
@@ -510,32 +502,32 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 
 | API                                | Parameter                                                                                                                                                                         | Return value                          | Supported Commerce Roles                  | Description                                                                                             |
 |------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Get                                | QueryResultSettings queryResultSettings                                                                                                                                           | PageResult&lt;OrgUnit&gt;             | Application,Employee, Customer, Anonymous | Gets all organization as IQueryable.                                                                    |
-| GetOrgUnitLocationsByArea          | SearchArea searchArea, QueryResultSettings queryResultSettings                                                                                                                    | PageResult&lt;OrgUnitLocation&gt;     | Application,Employee, Customer, Anonymous | Finds stores in a defined area.                                                                         |
-| SearchOrgUnitLocations             | OrgUnitLocationSearchCriteria orgUnitLocationSearchCriteria, QueryResultSettings queryResultSettings                                                                              | PageResult&lt;OrgUnitLocation&gt;     | Application,Employee, Customer, Anonymous | Search stores with specified filter criteria within current fulfillment group.                          |
-| GetAvailableInventory              | string itemId, string variantId, string barcode, QueryResultSettings queryResultSettings                                                                                          | PageResult&lt;OrgUnitAvailability&gt; | Application,Employee, Customer, Anonymous | Get available inventory across all stores for an item identifier or barcode.                            |
-| GetProductAvailability             | long productId, QueryResultSettings queryResultSettings                                                                                                                           | PageResult&lt;OrgUnitAvailability&gt; | Application,Employee, Customer, Anonymous | Get available inventory across all stores for a product.                                                |
-| SearchProductAvailability          | long productId, OrgUnitAvailabilitySearchCriteria orgUnitAvailabilitySearchCriteria, QueryResultSettings queryResultSettings                                                      | PageResult&lt;OrgUnitAvailability&gt; | Application,Employee, Customer, Anonymous | Search available inventory across all stores for a product.                                             |
-| GetAvailableInventoryNearby        | IEnumerable&lt;ItemUnit&gt; itemIds, SearchArea searchArea, QueryResultSettings queryResultSettings                                                                               | PageResult&lt;OrgUnitAvailability&gt; | Application,Employee, Customer, Anonymous | Get available inventory of nearby stores for given list of items in defined search area.               |
-| GetTillLayout                      | int? height, int? width                                                                                                                                                           | TillLayout                            | Application,Employee, Customer, Anonymous | Gets a single till layout.                                                                              |
-| GetOrgUnitConfiguration            |                                                                                                                                                                                   | ChannelConfiguration                  | Application,Employee, Customer, Anonymous | Gets the configuration for the current organization unit.                                               |
-| Search                             | SearchStoreCriteria storeSearchCriteria, QueryResultSettings queryResultSettings                                                                                                  | PageResult&lt;OrgUnit&gt;             | Application,Employee, Customer, Anonymous | Searches for organization unit by the given search query.                                               |
+| Get                                | QueryResultSettings queryResultSettings                                                                                                                                           | PageResult&lt;OrgUnit&gt;             | Application, Employee, Customer, Anonymous | Gets all organization as IQueryable.                                                                    |
+| GetOrgUnitLocationsByArea          | SearchArea searchArea, QueryResultSettings queryResultSettings                                                                                                                    | PageResult&lt;OrgUnitLocation&gt;     | Application, Employee, Customer, Anonymous | Finds stores in a defined area.                                                                         |
+| SearchOrgUnitLocations             | OrgUnitLocationSearchCriteria orgUnitLocationSearchCriteria, QueryResultSettings queryResultSettings                                                                              | PageResult&lt;OrgUnitLocation&gt;     | Application, Employee, Customer, Anonymous | Search stores with specified filter criteria within current fulfillment group.                          |
+| GetAvailableInventory              | string itemId, string variantId, string barcode, QueryResultSettings queryResultSettings                                                                                          | PageResult&lt;OrgUnitAvailability&gt; | Application, Employee, Customer, Anonymous | Get available inventory across all stores for an item identifier or barcode.                            |
+| GetProductAvailability             | long productId, QueryResultSettings queryResultSettings                                                                                                                           | PageResult&lt;OrgUnitAvailability&gt; | Application, Employee, Customer, Anonymous | Get available inventory across all stores for a product.                                                |
+| SearchProductAvailability          | long productId, OrgUnitAvailabilitySearchCriteria orgUnitAvailabilitySearchCriteria, QueryResultSettings queryResultSettings                                                      | PageResult&lt;OrgUnitAvailability&gt; | Application, Employee, Customer, Anonymous | Search available inventory across all stores for a product.                                             |
+| GetAvailableInventoryNearby        | IEnumerable&lt;ItemUnit&gt; itemIds, SearchArea searchArea, QueryResultSettings queryResultSettings                                                                               | PageResult&lt;OrgUnitAvailability&gt; | Application, Employee, Customer, Anonymous | Get available inventory of nearby stores for given list of items in defined search area.               |
+| GetTillLayout                      | int? height, int? width                                                                                                                                                           | TillLayout                            | Application, Employee, Customer, Anonymous | Gets a single till layout.                                                                              |
+| GetOrgUnitConfiguration            |                                                                                                                                                                                   | ChannelConfiguration                  | Application, Employee, Customer, Anonymous | Gets the configuration for the current organization unit.                                               |
+| Search                             | SearchStoreCriteria storeSearchCriteria, QueryResultSettings queryResultSettings                                                                                                  | PageResult&lt;OrgUnit&gt;             | Application, Employee, Customer, Anonymous | Searches for organization unit by the given search query.                                               |
 | GetTerminalInfo                    | string orgUnitNumber, int deviceType, QueryResultSettings queryResultSettings                                                                                                     | PageResult&lt;TerminalInfo&gt;        | Employee,                                 | Retrieves terminal and device association information data of the store.                                |
-| GetProductAvailabilityByDimensions | IEnumerable&lt;string&gt; inventLocationIds, long productId, IEnumerable&lt;ProductDimensionCombination&gt; productDimensionCombinations, QueryResultSettings queryResultSettings | PageResult&lt;OrgUnitAvailability&gt; | Application,Employee, Customer, Anonymous | Gets orgUnit availabilities at each specified inventory location based on the given product dimensions. |
-| GetStoreHours                      | string storeNumber                                                                                                                                                                | StoreHours                            | Application,Employee, Customer, Anonymous | Retrieve the store hours for a given store number.                                                      |
-| GetEntityByKey                     | string orgUnitNumber                                                                                                                                                              | OrgUnit                               | Application,Employee, Customer, Anonymous | Gets organization entity by key.                                                                        |
+| GetProductAvailabilityByDimensions | IEnumerable&lt;string&gt; inventLocationIds, long productId, IEnumerable&lt;ProductDimensionCombination&gt; productDimensionCombinations, QueryResultSettings queryResultSettings | PageResult&lt;OrgUnitAvailability&gt; | Application, Employee, Customer, Anonymous | Gets orgUnit availabilities at each specified inventory location based on the given product dimensions. |
+| GetStoreHours                      | string storeNumber                                                                                                                                                                | StoreHours                            | Application, Employee, Customer, Anonymous | Retrieve the store hours for a given store number.                                                      |
+| GetEntityByKey                     | string orgUnitNumber                                                                                                                                                              | OrgUnit                               | Application, Employee, Customer, Anonymous | Gets organization entity by key.                                                                        |
 
 ## Catalogs controller
 
 | API         | Parameter                                                                | Return value                     | Supported Commerce Roles                  | Description                   |
 |-------------|--------------------------------------------------------------------------|----------------------------------|-------------------------------------------|-------------------------------|
-| GetCatalogs | long channelId, bool activeOnly, QueryResultSettings queryResultSettings | PageResult&lt;ProductCatalog&gt; | Application,Employee, Customer, Anonymous | Gets catalogs by OData query. |
+| GetCatalogs | long channelId, bool activeOnly, QueryResultSettings queryResultSettings | PageResult&lt;ProductCatalog&gt; | Application, Employee, Customer, Anonymous | Gets catalogs by OData query. |
 
 ## Categories controller
 
 | API           | Parameter                                                                | Return value                        | Supported Commerce Roles                  | Description                                             |
 |---------------|--------------------------------------------------------------------------|-------------------------------------|-------------------------------------------|---------------------------------------------------------|
-| GetCategories | long channelId, QueryResultSettings queryResultSettings                  | PageResult&lt;Category&gt;          | Application,Employee, Customer, Anonymous | Gets categories by OData query.                         |
+| GetCategories | long channelId, QueryResultSettings queryResultSettings                  | PageResult&lt;Category&gt;          | Application, Employee, Customer, Anonymous | Gets categories by OData query.                         |
 | GetChildren   | long channelId, long categoryId, QueryResultSettings queryResultSettings | PageResult&lt;Category&gt;          | Application, Employee, Anonymous          | Gets subcategories by given Channel Id and Category Id. |
 | GetAttributes | long categoryId, QueryResultSettings queryResultSettings                 | PageResult&lt;AttributeCategory&gt; | Application                               | Gets categories' attributes by OData query.             |
 | Get           | QueryResultSettings queryResultSettings                                  | PageResult&lt;Category&gt;          | Application, Employee, Anonymous          | Gets full list of categories as IQueryable.             |
@@ -608,8 +600,8 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 
 | API                          | Parameter                               | Return value                   | Supported Commerce Roles                  | Description                                                           |
 |------------------------------|-----------------------------------------|--------------------------------|-------------------------------------------|-----------------------------------------------------------------------|
-| GetCardTypes                 | QueryResultSettings queryResultSettings | PageResult&lt;CardTypeInfo&gt; | Application,Employee, Customer, Anonymous | Returns the list of card types.                                       |
-| GetSupportedPaymentCardTypes | QueryResultSettings queryResultSettings | PageResult&lt;string&gt;       | Application,Customer,Anonymous                                 | Returns the list of payment cards supported by the payment connector. |
+| GetCardTypes                 | QueryResultSettings queryResultSettings | PageResult&lt;CardTypeInfo&gt; | Application, Employee, Customer, Anonymous | Returns the list of card types.                                       |
+| GetSupportedPaymentCardTypes | QueryResultSettings queryResultSettings | PageResult&lt;string&gt;       | Application, Customer, Anonymous                                 | Returns the list of payment cards supported by the payment connector. |
 
 ## Commission sales group controller
 
@@ -690,10 +682,11 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetEntityByKey                     | string journalId                                                                                                  | StockCountJournal                              | Employee                 | Creates journal entity.                                                                                   |
 | UpdateEntity                       | StockCountJournal entity                                                                                          | StockCountJournal                              | Employee                 | Updates journal entity.                                                                                   |
 | PatchEntity                        | StockCountJournal entity                                                                                          | StockCountJournal                              | Employee                 | Partially updates journal entity.                                                                         |
+
 ## Scan result controller
 
 | API            | Parameter          | Return value | Supported Commerce Roles | Description                        |
 |----------------|--------------------|--------------|--------------------------|------------------------------------|
 | GetEntityByKey | string scannedText | ScanResult   | Employee                 | Gets the ScanResult entity by key. |
 
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

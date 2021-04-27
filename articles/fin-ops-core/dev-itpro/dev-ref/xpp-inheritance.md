@@ -1,32 +1,16 @@
 ---
-# required metadata
-
 title: X++ inheritance
 description: This topic describes inheritance in X++.
 author: robinarh
-manager: AnnBe
 ms.date: 06/18/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 150303
-ms.assetid: 1b2d76d1-52d9-46b2-937f-5a3b62f2d516
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ inheritance
@@ -166,3 +150,6 @@ Overriding occurs when the superclass's implementation of a method is changed by
 
 By contrast, *overloading* occurs when more than one method has the same name, but the methods have different signatures (return types, parameter lists, or both). X++ supports overriding, but it doesn't support overloading.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

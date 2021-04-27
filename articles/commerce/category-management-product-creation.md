@@ -4,11 +4,9 @@
 title: Manage product categories and products
 description: This topic describes how merchandising managers can use product categories to manage relationships between the Commerce product hierarchy and released product details. 
 author: ashishmsft
-manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -58,3 +56,6 @@ Additionally, in the enhanced product category structure, a merchandising manage
 You can use the new enhanced structure for product properties to select updated product properties that must be pushed to the associated products. On the **Commerce product hierarchy** page, on the Action Pane, select **Category**, and then select **Update products** to open the **Update products** dialog box.
 
 ![Update products dialog box](media/NewUpdateProductsEnhancedView.PNG)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

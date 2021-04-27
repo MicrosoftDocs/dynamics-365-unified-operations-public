@@ -4,11 +4,9 @@
 title: Troubleshoot warehouse work
 description: This topic describes how to fix common issues that you might encounter while you work with warehouse work in Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -44,12 +42,15 @@ You can't move a license plate by using a **Movement** menu item if the serial n
 
 This issue will be fixed by changes that are deployed in [KB 4571546](https://fix.lcs.dynamics.com/Issue/Details?kb=4571546&bugId=467880&dbType=3&qc=5b46d7faa9cc326cebfe9854cb30be8ea30b21ef33d3572c325fbb21202de687). Those changes will make the **Serial number** field optional when blank receipt and blank issue are allowed.
 
-## I receive the following error message in the warehouse app when I process movements: "The inventory owner %1 is not allowed in this process."
+## I receive the following error message in the Warehouse Management mobile app when I process movements: "The inventory owner %1 is not allowed in this process."
 
 ### Issue description
 
-The **Owner** tracking dimension is missing when the warehouse app is used to make movements. A regular inventory transfer journal from the Supply Chain Management client appears to work as intended and can be posted only if the **Owner** dimension is filled in.
+The **Owner** tracking dimension is missing when the Warehouse Management mobile app is used to make movements. A regular inventory transfer journal from the Supply Chain Management client appears to work as intended and can be posted only if the **Owner** dimension is filled in.
 
 ### Issue resolution
 
 Microsoft has evaluated this issue and has determined that it's a feature limitation. Currently, warehouse management processes support only inventory that is owned by the legal entity.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

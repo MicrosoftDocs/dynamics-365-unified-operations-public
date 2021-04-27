@@ -4,11 +4,9 @@
 title: Update environments from version 8.0 to 10.0.X
 description: This topic explains the steps required to update existing Finance and Operations 8.0 environments to 10.0.X application releases.
 author: laneswenka
-manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -126,3 +124,6 @@ To prevent this from occurring, ensure that you compile your extensions on an 10
 There is a known issue where IIS/Application Pools are not fully restarted when the DVT or ETW step runs. The failure occurs because the DVTs are trying to connect to your environment's URL. To resolve this issue, click **Resume** on your deployment in LCS to retry the step.  We are working to add a timer and automatic retry to resolve this issue.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Set up the parameters of an ER format per legal entity
 description: This topic explains how you can set up the parameters of an Electronic reporting (ER) format per legal entity.
 author: NickSelin
-manager: AnnBe
 ms.date: 10/29/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -265,3 +263,6 @@ In the preceding example, you have accessed application-specific parameters of a
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 
 [Configure ER formats to use parameters that are specified per legal entity](er-app-specific-parameters-configure-format.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

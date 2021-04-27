@@ -4,11 +4,9 @@
 title: Define new departments
 description: Departments are operating units that represent a functional area of a business, such as sales or accounting. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -27,6 +25,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Define new departments
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -55,3 +55,6 @@ Departments are operating units that represent a functional area of a business, 
 16. In the Describe changes field, type a value.
 17. Click Publish.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

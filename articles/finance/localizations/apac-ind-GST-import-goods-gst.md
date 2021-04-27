@@ -4,11 +4,9 @@
 title: Import goods that have GST
 description:  This topic explains how to import goods that have Goods and Services Tax (GST).
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -107,3 +105,6 @@ Complete the procedures in this topic to import goods that have Goods and Servic
 The following illustration shows an example of a journal entry for an import purchase order that has GST.
 
 ![Journal entry for an import purchase order that has GST](media/Annotation-2019-05-20-165539.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

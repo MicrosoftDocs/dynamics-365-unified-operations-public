@@ -4,11 +4,9 @@
 title: Troubleshoot issues during initial synchronization
 description: This topic provides troubleshooting information that can help you fix issues that might occur during initial synchronization.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -198,7 +196,7 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
 6. Run initial synchronization again for the **Customers V3 (Accounts)** mapping. Because change tracking is turned off, the data for **InvoiceAccount** and **ContactPersonId** will be synced from the Finance and Operations app to Dataverse.
 7. To sync the data for **InvoiceAccount** and **ContactPersonId** from Dataverse to the Finance and Operations app, you must use a data integration project.
 
-    1. In Power Apps, create a data integration project between the **Sales.Account** and **Finance and Operations apps.Customers V3** tables. The data direction must be from Dataverse to the Finance and Operations app. Because **InvoiceAccount** is a new attribute in dual-write, you might want to skip initial synchronization for it. For more information, see [Integrate data into Dataverse](https://docs.microsoft.com/power-platform/admin/data-integrator).
+    1. In Power Apps, create a data integration project between the **Sales.Account** and **Finance and Operations apps.Customers V3** tables. The data direction must be from Dataverse to the Finance and Operations app. Because **InvoiceAccount** is a new attribute in dual-write, you might want to skip initial synchronization for it. For more information, see [Integrate data into Dataverse](/power-platform/admin/data-integrator).
 
         The following illustration shows a project that updates **CustomerAccount** and **ContactPersonId**.
 
@@ -216,3 +214,6 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
     The initial synchronization of the rows is now completed.
 
 8. In the Finance and Operations app, turn change tracking back on for the **Customers V3** table.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Manage buy and sell leave policies
 description: You can enable employees to buy and sell leave in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Manage buy and sell leave policies
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can enable employees to buy and sell leave by creating a buy and sell leave policy. You can configure these policies to use workflow for approvals, set maximum amounts and rates, and set rates for buying and selling. 
 
@@ -85,3 +85,6 @@ You can enable employees to buy and sell leave by creating a buy and sell leave 
 [Accrue leave and absence plans](hr-leave-and-absence-accrue.md)</br>
 [Buy and sell leave](hr-employee-self-service-buy-sell-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

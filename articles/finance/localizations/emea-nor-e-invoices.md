@@ -4,11 +4,9 @@
 title: Customer electronic invoices in Norway
 description: This topic explains how to set up and process customers electronic invoices in Norway.
 author: ilkond
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -51,7 +49,7 @@ In the **Electronic reporting** workspace, import the following Electronic repor
 > [!NOTE]
 > These formats are based on the **Invoice model** configuration and use the **Invoice model mapping** configuration. All required additional configurations are automatically imported.
 
-For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ### Reference the imported ER format configurations
 
@@ -217,3 +215,6 @@ If generation of the electronic invoices fails because of errors, select **Show 
 You can set up ER destinations for electronic invoice formats. In this case, output XML files that contain electronic invoices will automatically be sent to the defined destinations immediately after the invoices are posted. When you post the invoices, you must turn on the **Print invoice** parameter.
 
 For more information about ER destinations, see [Electronic reporting destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

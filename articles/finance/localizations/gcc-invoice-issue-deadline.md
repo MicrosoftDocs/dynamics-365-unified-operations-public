@@ -4,11 +4,9 @@
 title: Invoice issue deadline (GBL)
 description: This topic provides information about how to calculate the due dates for issuing customer invoices.
 author: v-oloski
-manager: Annbe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -39,7 +37,7 @@ This topic explains how to configure Microsoft Dynamics 365 Finance so that it c
 
 In the **Feature management** workspace, turn on the **Invoice issue deadline availability** feature. This feature is available for all countries and regions in version 10.0.15 and later.
 
-For more information about how to turn on features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+For more information about how to turn on features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!NOTE]
 > This feature is the same as the out-of-box feature for European Union (EU) countries. For more information, see [Invoice issue deadline](emea-invoice-issue-deadline.md).
@@ -87,3 +85,6 @@ Based on the settings, the system enters a value in the **Invoice issue due date
 
 > [!NOTE]
 > If you set the **Invoice date control** field on the **Accounts receivable parameters** page to **None**, the system leaves the **Invoice issue due date** field in the packing slip journal blank.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

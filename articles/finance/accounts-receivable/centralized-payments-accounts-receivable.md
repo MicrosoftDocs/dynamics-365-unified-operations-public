@@ -4,11 +4,9 @@
 title: Centralized payments for Accounts receivable
 description: Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments. Therefore, the same transaction doesn't have to be entered in multiple legal entities. This article provides examples that show how posting for centralized payments is handled in various scenarios.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 01/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -300,3 +298,6 @@ Fabrikam receives a payment of 75.00 from customer 4000, Northwind Traders. The 
 | Accounts receivable (Fabrikam West)    |              | 75.00         |
 | Due from Fabrikam East (Fabrikam West) | 25.00        |               |
 | Accounts receivable (Fabrikam West)    |              | 25.00         |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Copy a batch job
 description: This topic provides information about copying a batch job and batch tasks.
 author: Peakerbl
-manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -60,3 +58,6 @@ Complete the following steps to enable a batch job.
 
 1.	On the **Batch job** page, on the Action Pane, click **Batch job** > **Change status**.
 2.	Select the **Waiting** status, and then click **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -7,7 +7,6 @@ author: Anasyash
 ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -32,7 +31,7 @@ ms.dyn365.ops.version: 10.0.1
 
 This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating a financial report in Microsoft Excel format.
 
-Before you read this topic, you should review [Create Electronic reporting (ER) configurations](../../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json) and related electronic reporting topics about creating configurations.
+Before you read this topic, you should review [Create Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=%2ffin-and-ops%2ftoc.json) and related electronic reporting topics about creating configurations.
 
 ## Set up a financial report
 
@@ -48,13 +47,13 @@ Set up a financial report so that it has the list of financial report cells and 
 
 Create an Excel template for your financial report. At a minimum, you should assign names to all the Excel cells that should have values on the report that is generated.
 
-For an example, download the [Excel template example for a Russian balance sheet](https://mbs.microsoft.com/customersource/global/AX/learning/documentation/how-to-articles/BalancesheetRussia).
+For an example, download the [Excel template example for a Russian balance sheet](/dynamics/s-e/).
 
 ## Create an ER configuration for the financial report in Excel format
 
 Create an ER configuration format that is based on the **Financial reports model** ER model.
 
-Before you complete this procedure, see [ER Design a configuration for generating reports in OPENXML format (November 2016)](../../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json) for information about how to set up an ER configuration that generates a report in Excel format.
+Before you complete this procedure, see [ER Design a configuration for generating reports in OPENXML format (November 2016)](../../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=%2ffin-and-ops%2ftoc.json) for information about how to set up an ER configuration that generates a report in Excel format.
 
 1. Download the latest version of the following ER configurations:
 
@@ -62,7 +61,7 @@ Before you complete this procedure, see [ER Design a configuration for generatin
     - Financial reports model mapping (RU)
     - Balance sheet format Excel example (RU)
 
-    For instructions, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    For instructions, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2. Go to **Workspaces \> Electronic reporting**.
 3. Select the **Reporting configurations** tile.
@@ -98,12 +97,12 @@ Before you complete this procedure, see [ER Design a configuration for generatin
         > 1. If the missed data is external, create format User input parameter.
         > 2. Create a derived model that is based on the **Financial reports model**, and add new model elements. Then create a derived model mapping that is based on **Financial reports model mapping**, and bind new model elements to Finance data sources.
         >
-        > For more information about how to create ER data models, see [ER Design domain specific data model](../../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json).
+        > For more information about how to create ER data models, see [ER Design domain specific data model](../../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=%2ffin-and-ops%2ftoc.json).
  
         For more information about how to map data model elements to data sources, see the following topics:
 
-        - [Define ER model mappings and select data sources for them](../../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
-        - [ER Map data model to selected data sources](../../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
+        - [Define ER model mappings and select data sources for them](../../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=%2ffin-and-ops%2ftoc.json)
+        - [ER Map data model to selected data sources](../../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=%2ffin-and-ops%2ftoc.json)
 
     5. Review the cells that the financial report values are exported to. For example, the **АктивВнеОбАНематАктПояснения**, **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, and **АктивВнеОбАНематАктСумПрдшв** cells are mapped to the following calculated field: **Calculations.'\$Values'("\<Input parameter = Cell name\>").Value** or **Calculations.'\$Values'("\<Input parameter = Cell code\>").Text**.
 
@@ -154,3 +153,6 @@ To run the ER format that is based on the **Financial reports model**, follow th
 
 5. Select **OK**.
 6. Review the Excel report that is generated.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

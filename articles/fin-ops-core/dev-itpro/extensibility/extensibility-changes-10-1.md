@@ -1,18 +1,12 @@
 ---
-# required metadata
-
 title: Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.1
 description: This topic lists the extensibility features that were released in Microsoft Dynamics 365 for Finance and Operations version 10.0.1.
 author: FrankDahl
-manager: AnnBe
 ms.date: 05/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -206,3 +200,6 @@ The following methods have been refactored to support extensibility:
 - **Retail channel:** Line item locations can be viewed in OrderFulfillmentView.
 - **Retail channel:** OrderFulfillmentView adds ICustomListColumn to allow for more information.
 - Retail statement posting method adds another aggregation view by using the new RetailTransactionAggregationFieldList table that adds additional fields.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

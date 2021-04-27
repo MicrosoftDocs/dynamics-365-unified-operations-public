@@ -4,11 +4,9 @@
 title: Purchases of fixed assets
 description: This topic provides information about purchases of fixed assets.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -55,3 +53,6 @@ ms.dyn365.ops.version: 10.0.4
 To validate the financial entries, select **Inquiries** \> **Voucher**.
 
 ![Example](media/Annotation-2019-05-16-110044.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

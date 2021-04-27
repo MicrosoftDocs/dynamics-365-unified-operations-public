@@ -4,16 +4,14 @@
 title: Set up lease books
 description: This topic describes the information that is maintained in lease books. Lease books contain the accounting policies that determine how a lease is accounted for in the system.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: TaxTable
+ms.search.form: AssetLeaseBookMaster
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -34,6 +32,7 @@ ms.dyn365.ops.version: 10.0.14
 # Set up lease books
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Lease books contain the accounting policies that determine how a lease is accounted for in the system. In addition to cash basis accounting, Asset leasing supports the following standards:
 
@@ -60,3 +59,6 @@ To create a lease book, follow these steps.
     | Low value threshold                      | Enter an amount to use as a threshold for low-value leases. If the fair value of the asset is less than or equal or the value that you enter here, the system will classify the lease as a low-value lease, and the deferred rent treatment will be applied. |
     | Pay to vendor                            | Set this option to **Yes** to allow lease payments to be posted, as an invoice, to the vendor account that is specified on each lease. When a lease payment is posted, the vendor account will be credited. If this option is set to **No**, the account that is specified for the **Lease payment** posting type on the **Lease posting parameters** page will be credited instead. |
     | Leasing convention                       | Select the convention for the commencement date of the lease:<ul><li><b>None</b> – Use the lease's start date as the commencement date.</li><li><b>Full month</b> – Use the first day of the month that the lease's start date falls in as the commencement date.</li></ul><p>If you select <b>None</b>, there is a risk that the liability amortization and asset depreciation schedules will accrue and post expenses in the middle of the month instead of at the end of the month. By selecting <b>Full month</b>, you ensure that the system will start to account for the lease on the first day of the month, and that the whole month's expense will be accrued and posted on the last day of the month.</p><p><strong>Note:</strong> The feature for leasing conventions must be turned on through Feature management. In the <b>Feature management</b> workspace, find and select the feature that is named <b>Leasing convention for asset leasing</b> feature, and then select <b>Enable now</b>.</p> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

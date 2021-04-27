@@ -4,11 +4,9 @@
 title: Warehouse management overview
 description: Use Warehouse management to monitor and automate warehouse processes. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -76,3 +74,6 @@ You can find opinions, news, and other information about Warehouse management an
 
  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

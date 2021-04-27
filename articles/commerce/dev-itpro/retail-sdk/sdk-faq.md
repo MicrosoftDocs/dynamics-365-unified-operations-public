@@ -4,11 +4,9 @@
 title: Retail SDK FAQ
 description: This topic summarizes answers to questions that are frequently asked by users of the Retail SDK.
 author: mugunthanm 
-manager: AnnBe
 ms.date: 08/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -136,3 +134,6 @@ Could not load file or assembly "Microsoft.Dynamics.Commerce.RetailServer.Extens
 This error may occur if the extension project upgraded from Retail SDK version 10.0.10 or 10.0.11 to Retail SDK version 10.0.12 or later, and there are extension projects referencing Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts.
 
 To fix this issue, remove the reference to Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts in the extension project and regenerate the package and deploy again. Removing this reference library will not impact extension code/functionality because it’s not needed for extension solutions. Starting in version 10.0.11, extensions can refer to Microsoft.Dynamics.Commerce.Hosting.Contracts for Retail server APIs.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

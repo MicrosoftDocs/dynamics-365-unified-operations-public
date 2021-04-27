@@ -4,11 +4,9 @@
 title: Calculate the delivery date for a line, based on the lead time
 description: This topic describes how to calculate a delivery date for a line, based on the vendor's lead time and your organization's working days calendar. 
 author: velofog
-manager: AnnBe
 ms.date: 09/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -106,3 +104,6 @@ Lead time details that are entered for a line on the **Purchase agreement** and 
 
 > [!NOTE]
 > For released items, you can select a purchase lead time. The purchase lead time will automatically calculate the delivery date when a purchase order is created. The delivery date won't be recalculated if the lead time on the purchase order line is 0 (zero).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Key invoice data into the AP system using invoice pool
 description: This topic describes how to use the invoice register to create invoices. 
 author: abruer
-manager: AnnBe 
 ms.date: 07/31/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -71,3 +69,6 @@ This topic describes how to use the invoice register to create invoices. Then us
 13. Select **Transactions**.
 14. Select the invoice that you created. The invoice register accrual was reversed and posted to the appropriate expense account.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

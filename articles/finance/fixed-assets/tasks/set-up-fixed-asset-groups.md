@@ -4,11 +4,9 @@
 title: Set up fixed asset groups
 description: This topic explains how to create a new fixed asset group. 
 author: saraschi2
-manager: AnnBe 
 ms.date: 08/02/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -41,3 +39,6 @@ This topic explains how to create a new fixed asset group. It uses the Accountan
 8. In the **Depreciation convention** field, select an option.
 9. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

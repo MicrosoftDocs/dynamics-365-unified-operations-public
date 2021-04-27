@@ -4,11 +4,9 @@
 title: Point of sale (POS) APIs
 description: This topic contains a list of available POS APIs and how to access them.
 author: mugunthanm 
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -457,3 +455,6 @@ The following table lists APIs exposed to perform store operations-related funct
 | BankDropOperationRequest                 |  Bank drop request.   |        10.0.14        |
 | DeclareStartAmountOperationRequest        |   Declare start amount request.       |          10.0.14        |
 | GetAllDiscountsServiceRequest        | Gets the discount applicable for the current cart.  | 10.0.16 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

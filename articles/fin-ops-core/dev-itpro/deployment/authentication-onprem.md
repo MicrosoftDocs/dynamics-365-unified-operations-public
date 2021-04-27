@@ -4,11 +4,9 @@
 title: Authentication in Dynamics 365 Finance + Operations (on-premises)
 description: This topic provides background information about how the authentication process works so that if you have issues you can work to resolve them.
 author: faix
-manager: AnnBe
 ms.date: 11/18/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -109,3 +107,6 @@ AD FS uses the client ID and the URLs to determine whether the request for acces
 ![AD FS event log error](media/ADFSredirectwrong.png)
 
 If any of the AD FS application group setup is incorrect, you're likely see an error in the event log that explains the value it was looking for, so you can determine what is set incorrectly.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

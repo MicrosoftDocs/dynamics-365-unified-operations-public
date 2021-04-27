@@ -4,11 +4,9 @@
 title: Role-based security
 description: This topic provides an overview of the elements of role-based security. 
 author: peakerbl
-manager: AnnBe
 ms.date: 01/27/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -83,3 +81,6 @@ By default, privileges are provided for all features in Finance and Operations. 
 Each function, such as a form or a service, is accessed through an entry point. Menu items, web content items, and service operations are referred to collectively as entry points. 
 
 In the security model, permissions group the securable objects and access levels that are required to run a function. This includes any tables, fields, forms, or server side methods that are accessed through the entry point.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

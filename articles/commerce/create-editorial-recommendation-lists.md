@@ -4,11 +4,9 @@
 title: Manually create curated recommendations
 description: This topic explains how merchandizers can manually create and manage product lists for Microsoft Dynamics 365 Commerce customers.
 author: bebeale
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -78,3 +76,6 @@ To create a curated product recommendation list, follow these steps.
 [Create recommendations with demo data](product-recommendations-demo-data.md)
 
 [Product recommendations FAQ](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

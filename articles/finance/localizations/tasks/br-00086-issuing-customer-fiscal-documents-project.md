@@ -4,11 +4,9 @@
 title: Issue customer fiscal documents (project) (Brazil)
 description: You can issue a fiscal document for a project. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -78,3 +76,6 @@ You can issue a fiscal document for a project. The fiscal document can be either
 45. Close the page.
 46. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

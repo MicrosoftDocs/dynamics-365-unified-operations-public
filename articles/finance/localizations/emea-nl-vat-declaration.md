@@ -8,12 +8,10 @@ ms.author: AnnBe
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-manager: 
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
@@ -315,3 +313,6 @@ You can also generate the Dutch sales tax report by using the **Report sales tax
    > [!NOTE]
    > If you generate the OB declaration after you've created the original and corrected sales tax payments, the OB declaration will show amounts only from the original sales tax payment.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

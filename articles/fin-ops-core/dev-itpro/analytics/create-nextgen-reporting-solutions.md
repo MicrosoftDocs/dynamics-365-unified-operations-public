@@ -3,12 +3,10 @@
 
 title: Create reporting solutions
 description: This tutorial shows how to create a report, expand predefined views, add navigation to charts, use the free-form report designer, and customize the parameters.
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 21551
 ms.assetid: 2e1c96f8-46c9-428e-bb3d-6791f2a954ef
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -177,7 +175,7 @@ SSRS continues to be the platform for producing advanced Business Document solut
 
 [![Report designer](./media/report-designer-1024x665.png)](./media/report-designer.png) 
 
-The above is a screen-shot of the FMRentalsByCustomer report design definition as viewed using the Visual Studio Precision Designer. The Precision Designer offers a free-form design surface with built-in tools that allow you to customize the content and layout of the report. You can also take advantage of embedded VB code to create run-time design manipulations and support user interactions. As an integrated tool, developers are able to reference AX labels and public APIs to format data in the report body based on AX EDTs. MSDN offers a rich collection of developer documentation related to SSRS formatting capabilities. See the article [Reporting Services Reports (SSRS)](https://msdn.microsoft.com/library/bb522712.aspx) on for a good primer on designing effective SSRS reports.
+The above is a screen-shot of the FMRentalsByCustomer report design definition as viewed using the Visual Studio Precision Designer. The Precision Designer offers a free-form design surface with built-in tools that allow you to customize the content and layout of the report. You can also take advantage of embedded VB code to create run-time design manipulations and support user interactions. As an integrated tool, developers are able to reference AX labels and public APIs to format data in the report body based on AX EDTs. MSDN offers a rich collection of developer documentation related to SSRS formatting capabilities. See the article [Reporting Services Reports (SSRS)](/sql/reporting-services/reports/reporting-services-reports-ssrs) on for a good primer on designing effective SSRS reports.
 
 ## Customizing the parameter experience
 The Reporting Framework offers flexibility through service extensions to facilitate advanced solutions with requirements that cannot be addressed using a modeled solution. Use the VS designer to add basic parameter formatting, grouping, and input validation. X++ based data contract validation is available for more advanced scenarios. Consider adding User Interface (UI) Builder Classes to customize the parameter pane used to prompt for session inputs before running a report. These custom extensions are effective for addressing the following functions:
@@ -251,3 +249,6 @@ This report uses embedded VB script to keep track of running totals so that the 
 - Built-in back office document management capabilities including email support, scheduled executions via Batch, and Print Archive
 - Parameterized views with drill-through navigations to forms and other reports
 - Used to produce precision documents for compliance with local regulatory business practices
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

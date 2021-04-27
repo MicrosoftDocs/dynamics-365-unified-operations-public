@@ -4,11 +4,9 @@
 title: Fiscal document text placeholders for Brazil
 description: Fiscal document text placeholders are predefined tags that represent specific values. You can include the placeholders in the <strong>Text </strong>field on the <strong>Fiscal document source texts </strong>page when you create a fiscal document source text.
 author: sndray
-manager: AnnBe
 ms.date: 08/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -171,3 +169,6 @@ Tags that support fiscal document text for referenced processes
 |--------------------------------|----------------------------------------------------------------------|
 | %Substituto\_ICMS\_tax\_amount | The presumed ICMS tax amount from the ICMS substitute.                |
 | %Substituto\_FCP\_tax\_amount  | The presumed FCP amount from the ICMS substitute.                     |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

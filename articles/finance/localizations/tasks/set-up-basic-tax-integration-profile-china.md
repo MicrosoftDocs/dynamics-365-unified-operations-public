@@ -4,11 +4,9 @@
 title: Set up basic tax integration profile for China
 description: This procedure shows how to set up a tax integration profile, update customer settings for issuing VAT invoices, and set up VAT invoice descriptions for China. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -72,3 +70,6 @@ This procedure was created using the demo data company CNMF. This procedure is f
 35. In the Unit field, enter or select a value.
 36. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

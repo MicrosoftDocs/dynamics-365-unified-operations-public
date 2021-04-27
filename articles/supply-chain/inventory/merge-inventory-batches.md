@@ -4,11 +4,9 @@
 title: Merge inventory batches
 description: This article provides information about how to consolidate two or more inventory batches into a merged batch.
 author: pjacobse
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -144,3 +142,6 @@ You can approve the inventory journal for the batch merge from the **All batch m
 
 ## After I merged a catchweight item, why can’t I see the catchweight information in the inventory journal?
 You can merge batches of catch-weight items just like all other items. However, the catch-weight information doesn't appear in the inventory journal. We recommend that you verify the catch-weight information before you transfer the batch merge to the inventory journal.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

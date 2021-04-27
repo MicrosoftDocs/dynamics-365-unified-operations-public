@@ -4,11 +4,9 @@
 title: HyperLinkDesign type
 description: Hyperlink design object type.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -206,3 +204,6 @@ The type of the control as a string.
 > Inherited from [Design](view-model-ipage-idesign.md).[type](view-model-ipage-idesign.md#type)
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Verify dual-write configuration in Finance and Operations apps and Dataverse
 description: This topic explains how you can determine whether dual-write is configured in Finance and Operations apps and in Dataverse.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,3 +60,6 @@ When you create data, if you see the **Company** column on pages in Dataverse, d
 For information about how to fix issues when you create data in Dataverse, see [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.md).
 
 For information about how to view error details if you encounter any errors while you create data in Dataverse, see [Enable and view the plug-in trace log in Dataverse to view error details](dual-write-troubleshooting.md#enable-view-trace).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

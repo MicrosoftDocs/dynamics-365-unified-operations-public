@@ -4,11 +4,9 @@
 title: Sales of taxable goods to consumers
 description: This topic provides information about the sale of taxable goods to a consumer.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -76,3 +74,6 @@ ms.dyn365.ops.version: 10.0.4
 The following illustration shows the financial entries for both the intrastate transactions and the interstate transactions.
 
 ![Financial entries for intrastate and interstate transactions](media/Annotation-2019-05-20-100324.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

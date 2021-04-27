@@ -4,11 +4,9 @@
 title: Synchronization of sales orders directly between Sales and Supply Chain Management
 description: The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Dynamics 365 Sales and Dynamics 365 Supply Chain Management.
 author: ChristianRytt
-manager: tfehr
 ms.date: 05/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -212,3 +210,6 @@ The following illustrations show an example of a template mapping in Data integr
 ## Related topics
 
 [Prospect to cash](prospect-to-cash.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

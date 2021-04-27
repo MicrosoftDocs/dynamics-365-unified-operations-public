@@ -4,11 +4,9 @@
 title: Set up Recency, Frequency, and Monetary (RFM) analysis
 description: This topic explains how to set up a Recency, Frequency, and Monetary (RFM) analysis of your customers.
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -102,3 +100,6 @@ Use this procedure to view or clear the history of an RFM analysis record.
 2. On the **RFM analysis** page, select the record that you want to view.
 3. To view the record history, select the **History** FastTab.
 4. To clear the history of the record, select **Clear history**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

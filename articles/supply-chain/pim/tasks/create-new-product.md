@@ -4,11 +4,9 @@
 title: Create a new product
 description: This topic describes how to create a new shared product. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -45,3 +43,6 @@ This topic describes how to create a new shared product. It is usually carried o
 3. In the **Tracking dimension group** field, enter or select a value. The tracking dimension group determines which tracking dimensions you must enter for each transaction for the product, and how it will be handled in inventory.  
 4. Select **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

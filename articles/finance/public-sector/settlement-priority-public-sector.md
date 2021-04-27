@@ -4,11 +4,9 @@
 title: Settlement priority in the public sector
 description: This topic provides information about how public sector can automatically or manually prioritize settlements by using billing classifications. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -78,3 +76,6 @@ During the settlement process, settlement attributes are considered first, then 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

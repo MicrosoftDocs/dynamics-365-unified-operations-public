@@ -4,11 +4,9 @@
 title: Warehouse handling of inbound loads for purchase orders
 description: This topic describes the warehouse handling process for inbound loads for purchase orders.
 author: omulvad
-manager: tfehr
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -30,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.10
 
 This topic describes the warehouse handling process for inbound loads for purchase orders.
 
-For each inbound load, your system should already include a related sales order, and it might also contain a related load specification and/or transportation plan. For more information about how to create and manage inbound loads, see [Business process: Planning transportation for inbound loads](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
+For each inbound load, your system should already include a related sales order, and it might also contain a related load specification and/or transportation plan. For more information about how to create and manage inbound loads, see [Business process: Planning transportation for inbound loads](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
 ## Overview: How inbound loads are created, registered, and received
 
@@ -44,11 +42,11 @@ The following illustration shows the typical flow for handling inbound loads tha
 
 1. **An inbound load record is created to plan the arrival and its contents.**
 
-    The inbound load record represents a vendor shipment of one or more purchase orders. The load is expected to arrive at the warehouse as one physical transportation unit (such as a truckload). The inbound load record is used for planning purposes and lets the logistics coordinator track the load's progress from the vendor. It's also used to register order line quantities and manage progress through warehouse operations, such as arrival and put-away work. Loads can be created either automatically or manually, and they can be based on either a purchase order or an advanced shipment notice (ASN) from the vendor. For more information, see [Create or modify an inbound load](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
+    The inbound load record represents a vendor shipment of one or more purchase orders. The load is expected to arrive at the warehouse as one physical transportation unit (such as a truckload). The inbound load record is used for planning purposes and lets the logistics coordinator track the load's progress from the vendor. It's also used to register order line quantities and manage progress through warehouse operations, such as arrival and put-away work. Loads can be created either automatically or manually, and they can be based on either a purchase order or an advanced shipment notice (ASN) from the vendor. For more information, see [Create or modify an inbound load](/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
 
 1. **The vendor confirms load dispatch.**
 
-    When the vendor dispatches the load, the logistics coordinator at the receiving warehouse confirms the load shipment. If the receiving company is using the **Transportation management** module, inbound shipment confirmation will trigger other load management processes that are associated with the inbound loads. For more information, see [Confirm a load for shipping](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
+    When the vendor dispatches the load, the logistics coordinator at the receiving warehouse confirms the load shipment. If the receiving company is using the **Transportation management** module, inbound shipment confirmation will trigger other load management processes that are associated with the inbound loads. For more information, see [Confirm a load for shipping](/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
 
 1. **The load arrives at the warehouse, and workers register quantities.**
 
@@ -70,7 +68,7 @@ When an inbound load first arrives at the warehouse, warehouse workers must regi
 
 - **A mobile device menu that is configured to support load receiving**
 
-    The [warehouse app](install-configure-warehousing-app.md) for mobile devices supports the following work creation processes:
+    The [Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md) for mobile devices supports the following work creation processes:
 
     - Load item receiving
     - Load item receiving and put away
@@ -289,7 +287,7 @@ To work through these scenarios by using the specified sample records and values
 
 Before warehouse receiving clerks can use a mobile device to register inbound inventory that is linked to a load, you must create a mobile device menu item for that purpose.
 
-In this section, you will create a mobile device menu item and add it to an existing menu. A warehouse worker can then select the menu item in the warehouse app.
+In this section, you will create a mobile device menu item and add it to an existing menu. A warehouse worker can then select the menu item in the Warehouse Management mobile app.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**, and make sure that your mobile device menu includes a menu item that has the following settings:
 
@@ -481,3 +479,6 @@ For this scenario, the receiving clerk will inbound-register a quantity that exc
     - **Qty** – Enter _7_, which is the remaining quantity that the vendor is authorized to deliver as part of total purchase order quantity of 12 (where 10 is the original order quantity, and 2 is the allowed overdelivery quantity of 20 percent). Remember that 5 pcs have already been registered against the first load.
 
 The second load has now been updated with the quantity of 7 and can be product receipt–updated based on this quantity.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

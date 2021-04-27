@@ -4,11 +4,9 @@
 title: Create a leave and absence plan
 description: Create leave plans in Dynamics 365 Human Resources for different types of leave.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Create a leave and absence plan
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Define leave and absence plans in Dynamics 365 Human Resources for each type of leave you offer. Leave and absence plans can accrue at different frequencies, such as annually, monthly, or semimonthly. You can also define a plan as a grant, where a single accrual occurs on a specific date. For example, you might create a plan that grants floating holidays annually.
 
@@ -388,3 +388,6 @@ Forecasted balance (30) = Accrual amount (10 × 1) + Current balance (40) – Ca
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
 - [Configure leave and absence types](hr-leave-and-absence-types.md)
 - [Accrue leave and absence plans](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

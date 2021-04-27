@@ -4,11 +4,9 @@
 title: Add custom controls to non-screen designer-based POS views
 description: This topic demonstrates how to add a custom control to a non-screen layout designer-based view.
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/08/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -422,3 +420,6 @@ A custom control is an HTML page with the custom information to be displayed. A 
 
 1. Press **F5** and deploy the POS to test your customization.
 2. After POS launches, login to POS. Search for any product and navigate to the product details view. You should see the custom control that you added.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

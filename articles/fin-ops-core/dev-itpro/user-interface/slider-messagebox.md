@@ -4,11 +4,9 @@
 title: Slider and MessageBox dialogs
 description: There are two dialogs that replace the existing dialog box, the Slider and the MessageBox from Dynamics AX 2012. 
 author: robinarh
-manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -63,3 +61,6 @@ A MessageBox is the correct mechanism to use when you must interrupt the user to
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

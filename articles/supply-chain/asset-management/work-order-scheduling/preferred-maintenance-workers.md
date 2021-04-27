@@ -3,12 +3,10 @@
 
 title: Set up preferred maintenance workers
 description: This topic explains how to set up preferred maintenance workers in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -72,3 +70,6 @@ You can also set up *responsible* maintenance workers who can be selected when a
 
 During work order scheduling, different scores are calculated to determine which workers should complete the jobs related to a work order (those scores are set up in **Asset management parameters** > **Work order scheduling** link). If two or more preferred maintenance workers or responsible maintenance workers get the same score during work order scheduling, one worker is randomly selected. Otherwise, it is always the worker with the highest score who is allocated to complete a work order.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

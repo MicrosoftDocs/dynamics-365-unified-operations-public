@@ -4,11 +4,9 @@
 title: Track user sign-ins 
 description: This topic explains how to create an audit log of users who have signed in and used Microsoft Dynamics 365 Finance and Operations apps.
 author: manalidongre
-manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -48,3 +46,6 @@ To generate an audit log of users who have used the system, follow these steps.
 8. To export the records and keep them for a longer period, select **Export grid**.
 
 To help guarantee a complete audit trail, an IT administrator must complete this procedure every seven days.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

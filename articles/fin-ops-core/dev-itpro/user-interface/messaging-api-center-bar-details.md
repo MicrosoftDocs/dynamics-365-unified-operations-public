@@ -4,11 +4,9 @@
 title: Messaging APIs - Action center, message bar, and message details
 description: This topic describes the messaging system.
 author: jasongre
-manager: AnnBe
 ms.date: 11/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -139,3 +137,6 @@ SystemNotificationsManager::AddNotification(notification);
 ## Additional resources
 
 [User interface development home page](user-interface-development-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

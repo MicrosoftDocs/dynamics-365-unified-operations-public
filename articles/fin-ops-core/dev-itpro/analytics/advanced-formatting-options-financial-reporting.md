@@ -4,11 +4,9 @@
 title: Advanced formatting options in financial reporting
 description: This topic describes advanced formatting functions, including filters, restrictions, non-printing rows, and conditional statements in calculations.
 author: panolte
-manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata
@@ -288,10 +286,10 @@ To restrict a calculation to a single reporting unit in a reporting tree, so tha
 > [!NOTE]
 > To use this function, a reporting tree must be associated with the row definition.
 
-The calculation row can refer to a calculation row or a financial data row. The calculation is recorded in the **Related Formulas/Rows/Units** cell of the row definition and the financial data–type restriction. The calculation must use a conditional calculation that starts with an **IF @Unit** construction. Here is an example: IF @Unit(SALES) THEN @100 ELSE 0 This calculation includes the amount from row 100 in every column of the report, but only for the SALES unit. If multiple units are named SALES, the amount appears in each of those units. Additionally, row 100 can be a financial data row and can be defined as non-printing. In this case, the amount is prevented from appearing in all units in the tree. You can also limit the amount to a single column of the report, such as column H, by using a column restriction to print the value only in that column of the report. You can include **OR** combinations in an **IF** statement. Here is an example: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 You can specify a unit in a calculation-type restriction in one of the following ways:
+The calculation row can refer to a calculation row or a financial data row. The calculation is recorded in the **Related Formulas/Rows/Units** cell of the row definition and the financial data–type restriction. The calculation must use a conditional calculation that starts with an **IF \@Unit** construction. Here is an example: IF @Unit(SALES) THEN @100 ELSE 0 This calculation includes the amount from row 100 in every column of the report, but only for the SALES unit. If multiple units are named SALES, the amount appears in each of those units. Additionally, row 100 can be a financial data row and can be defined as non-printing. In this case, the amount is prevented from appearing in all units in the tree. You can also limit the amount to a single column of the report, such as column H, by using a column restriction to print the value only in that column of the report. You can include **OR** combinations in an **IF** statement. Here is an example: **IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100**. You can specify a unit in a calculation-type restriction in one of the following ways:
 
-- Enter a unit name to include units that match. For example, **IF @Unit(SALES)** enables the calculation for any unit that is named SALES, even if there are several SALES units in the reporting tree.
-- Enter the company and unit name to restrict the calculation to specific units in a specific company. For example, enter **IF @Unit(ACME:SALES**) to restrict the calculation to SALES units in the ACME company.
+- Enter a unit name to include units that match. For example, **IF \@Unit(SALES)** enables the calculation for any unit that is named SALES, even if there are several SALES units in the reporting tree.
+- Enter the company and unit name to restrict the calculation to specific units in a specific company. For example, enter **IF @Unit (ACME:SALES)** to restrict the calculation to SALES units in the ACME company.
 - Enter the full hierarchy code from the reporting tree to restrict the calculation to a specific unit. For example, enter **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**.
 
 > [!NOTE]
@@ -301,7 +299,7 @@ The calculation row can refer to a calculation row or a financial data row. The 
 
 1. In Report Designer, click **Row Definitions**, and then open the row definition to modify.
 2. Double-click the **Format Code** cell, and then select **CAL**.
-3. Click the **Related Formulas/Rows/Units** cell, and then enter a conditional calculation that starts with an **IF @Unit** construction.
+3. Click the **Related Formulas/Rows/Units** cell, and then enter a conditional calculation that starts with an **IF \@Unit** construction.
 
 ### IF/THEN/ELSE statements in a column definition
 
@@ -315,3 +313,5 @@ An **IF/THEN/ELSE** statement enables any calculation to depend on the results f
 You can design reports using dimension values that contain an ampersand (&).
 
 Within any **Link to Financial Dimension** field, you can enter a value such as **'P&L'**. Including single quotes (' ') on both sides of the dimension value indicates that you are using the literal value, such as including the (&) ampersand character.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

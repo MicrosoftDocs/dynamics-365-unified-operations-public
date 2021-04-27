@@ -3,11 +3,9 @@
 title: Prepayments management  
 description: This topic provides information about paying value-added tax (VAT) when prepayments are received from customers.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -354,3 +352,6 @@ You can't cancel the prepayment settlement and the invoice if the VAT was restor
 To cancel the VAT recovery, use the **Sales book (Canceling processed VAT)** page (**Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **Canceling processed VAT**).
 
 You can't cancel the processing of incoming VAT unless the VAT recovery is canceled on the prepayment that is settled to the invoice.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

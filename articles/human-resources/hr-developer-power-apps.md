@@ -4,11 +4,9 @@
 title: Extend Talent with Power Apps and Power Automate
 description: This article describes some examples of extensibility scenarios for Microsoft Dynamics 365 Human Resources that use Microsoft Power Apps and Microsoft Power Automate.
 author: negudava
-manager: tfehr
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology:
 # optional metadata
 
@@ -30,6 +28,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Extend with Power Apps and Power Automate
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -63,4 +63,6 @@ To download the **Power Automate – SQL Connect and execute** template, go to [
 
 ## Additional resources
 
-[The Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
+[The Microsoft Power Platform](/power-platform/admin/admin-documentation)</br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

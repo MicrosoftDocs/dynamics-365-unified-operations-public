@@ -3,12 +3,10 @@
 
 title: Inbound and outbound assets
 description: This topic explains how to register inbound and outbound assets in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -75,3 +73,6 @@ When you've completed the maintenance or repair job, you can register the asset 
 2. Select the asset or maintenance request.
 3. Select **Deliver assets**.
 4. In the **Delivered** field, enter the date and time. Then select **OK**. The record is removed from the **Outbound assets** list page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

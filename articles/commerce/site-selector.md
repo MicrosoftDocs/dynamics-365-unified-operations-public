@@ -4,11 +4,9 @@
 title: Site selector module
 description: This topic covers the site selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-commerce
 ms.technology:
 
 # optional metadata
@@ -33,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.13
 [!include [banner](includes/banner.md)]
 
 This topic covers the site selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 When a business has different sites across markets, regions, and locales, site users need an easy way to switch between sites and select their preferred shopping site. To accommodate this scenario, the site selector module lets users browse across multiple sites.
 
@@ -67,3 +63,6 @@ The site selector module can be added to the [Header module](author-header-modul
 [Breadcrumb module](add-breadcrumb.md)
 
 [Navigation menu module](nav-menu-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: LT-00003 Generate a fixed asset transfer between warehouses document
 description: If your organization needs to move a fixed asset from one department to another and the two departments are not in the same location, the transfer must be verified by a packing slip. 
 author: KimANelson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -96,3 +94,6 @@ This procedure is intended for accountants who are responsible for fixed assets.
 3. Click OK.
     * After the report is generated, all transportation details will be printed.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

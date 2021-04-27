@@ -4,11 +4,9 @@
 title: Audit invoices and key data in accounts payable
 description: This topic shows how to audit invoices and key data in accounts payable. 
 author: saraschi2
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -64,3 +62,6 @@ This procedure uses the USMF demo company. The accounts payable manager or accou
 9. On the Action Pane, click **Review**.
 10. Click **Matching details**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

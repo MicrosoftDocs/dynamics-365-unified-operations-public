@@ -2,13 +2,11 @@
 # required metadata
 
 title: In-house assets for servicing
-description: This topic describes how you can use Microsoft Dtnamics 365 Field Service to service both customer assets and in-house assets.
+description: This topic describes how you can use Microsoft Dynamics 365 Field Service to service both customer assets and in-house assets.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -37,7 +35,7 @@ ms.search.validFrom: 2020-01-27
 
 Microsoft Dynamics 365 Field Service is designed to service customer assets. Asset management for Dynamics 365 Supply Chain Management is designed to maintain in-house assets. Integration of these two apps lets you use Field Service to service both customer assets and in-house assets. You can also classify the assets, based on functional location or hierarchy, and track the servicing at a detailed level.
 
-For more information, see [Integrate Dynamics 365 Field Service and Supply Chain Management](https://docs.microsoft.com/dynamics365/field-service/supply-chain-field-service-integration).
+For more information, see [Integrate Dynamics 365 Field Service and Supply Chain Management](/dynamics365/field-service/supply-chain-field-service-integration).
 
 ## Templates
 
@@ -80,3 +78,6 @@ In-house-assets include a collection of core table maps that work together durin
 [!include [models](includes/AssetManagementModels-msdyn-models.md)]
 
 [!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

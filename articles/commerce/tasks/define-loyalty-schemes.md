@@ -4,11 +4,9 @@
 title: Define loyalty schemes
 description: This procedure walks through how to define a loyalty scheme. 
 author: jashanno
-manager: AnnBe 
 ms.date: 11/14/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
 ms.technology:  
  
 # optional metadata 
@@ -73,3 +71,6 @@ This procedure walks through how to define a loyalty scheme. Loyalty schemes are
 27. Click Save.
     * Anytime you change the channels for a loyalty scheme, you must run Process loyalty schemes. That way, the channels will get updated loyalty schemes.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

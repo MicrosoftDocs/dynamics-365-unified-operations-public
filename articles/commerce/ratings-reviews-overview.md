@@ -3,11 +3,9 @@
 title: Ratings and reviews overview
 description: This topic covers ratings and reviews in Microsoft Dynamics 365 Commerce. 
 author: gvrmohanreddy 
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -61,3 +59,6 @@ The ratings and reviews solution also provides a business intelligence (BI) temp
 [Configure ratings and reviews](configure-ratings-reviews.md)
 
 [Sync product ratings in Dynamics 365 Commerce](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

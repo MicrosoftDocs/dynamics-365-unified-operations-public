@@ -4,11 +4,9 @@
 title: Customer payment insights (Preview)
 description: This topic describes the payment insights capability that helps improve understanding of individual customers' typical payment practices. The feature can help you identify circumstances that justify initiating collection processes earlier than you might have done otherwise.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 11/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -78,3 +76,6 @@ Send email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) i
 Previews (1) may utilize less privacy and security measures than the Dynamics 365 Finance and Operations service, (2) are not included in the service level agreement for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) has limited support.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

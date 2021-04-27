@@ -4,11 +4,9 @@
 title: Import Electronic reporting (ER) configurations
 description: This topic explains how to import Electronic reporting (ER) configurations from Lifecycle Services (LCS) to a local business data application.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/02/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -83,3 +81,6 @@ This topic explains how to download Electronic reporting (ER) configurations fro
 **Question:** When I click **Download all** in the Shared asset library, I receive the following warning: “Zip generation is in progress, please try again in a few minutes.” Why do I receive this warning?
 
 **Answer:** You receive this warning because a new configuration is added to the Shared asset library, and the ER configuration is being archived.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

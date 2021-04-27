@@ -4,11 +4,9 @@
 title: Budget planning
 description: The objective of this lab is to provide a guided view of Microsoft Dynamics 365 Finance functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -250,3 +248,6 @@ C. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning co
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Synchronize BPM libraries with Azure DevOps
 description: This topic provides information about how to synchronize a BPM library in LCS with Azure DevOps.
 author: amarshall
-manager: AnnBe
 ms.date: 05/13/2019
 ms.topic: article
 ms.prod: 
-ms.service:  dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -141,3 +139,6 @@ Here are some common causes and suggested actions to resolve the error.
 | Couldn't find work item to update | Failed to update work item. The work item does not exist, or you do not have permissions to read it. Check the PAT configuration in the project settings or restore the work item if it has been deleted directly from the DevOps project. | Restore the work item from the recycle bin if it was deleted, or create a new Personal Access Token (PAT) and make sure that it has full permissions. |  
 | Personal Access Token is expired | Failed to sync with Visual Studio Team Services. The request response is: Unauthorized. Please check that the PAT is setup correctly and still valid, try again and contact support if the error persists. | Create a new Personal Access Token (PAT) from Azure DevOps and update the PAT value in your LCS Project settings. | 
 | Generic error | Failed to sync with Visual Studio Team Services. The request response is: {0}. Please check that the PAT is setup correctly and still valid, try again and contact support if the error persists. | Contact customer support with the request response that caused the syncing error. | 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

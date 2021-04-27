@@ -4,11 +4,9 @@
 title: Configure credit card processing
 description: This procedure walks through how to view the list of payment providers and how to configure a payment account for accounts receivable. 
 author: jashanno
-manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
 ms.technology:  
  
 # optional metadata 
@@ -64,3 +62,6 @@ This procedure walks through how to view the list of payment providers and how t
 24. Click the Default processor for new credit cards checkbox.
 25. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

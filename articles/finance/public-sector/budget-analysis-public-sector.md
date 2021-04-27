@@ -4,11 +4,9 @@
 title: Budget analysis in the public sector
 description: This topic describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 02/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -111,3 +109,6 @@ After you change the settings at the top of the page, click **Update totals** to
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

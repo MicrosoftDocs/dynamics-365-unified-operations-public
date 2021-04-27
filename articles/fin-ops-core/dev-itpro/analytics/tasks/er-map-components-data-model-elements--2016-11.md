@@ -4,11 +4,9 @@
 title: ER Map components of the created format to data model elements (November 2016)
 description: This topic describes how to map data model elements to components of the created Electronic reporting (ER) configuration. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -116,3 +114,6 @@ Each format version can be configured as available for usage starting from a cer
 1. Expand the ISO Country/region codes section.
     * Each format access can be restricted by identifying particular countries/regions in which a format is applicable. When the list of countries/regions for particular format is empty, this format can be used in any company. When some ISO country/region codes are inserted in the list of countries/regions, the format can only be use in companies if the primary address is in the country/region.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

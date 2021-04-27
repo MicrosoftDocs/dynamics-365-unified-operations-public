@@ -4,11 +4,9 @@
 title: What's new or changed for India GST in 10.0.0 (April 2019)
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.0.
 author: prabhatb
-manager: Wangcheng
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -79,3 +77,6 @@ You can multi-select lookup columns and search available columns.
 - No customer billing name for stock transfer in GSTR.
 -	No default logic for original GST transaction ID for a credit note.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

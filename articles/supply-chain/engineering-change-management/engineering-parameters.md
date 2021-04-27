@@ -4,11 +4,9 @@
 title: Engineering change management parameters
 description: This topic explains how to configure engineering change management features for Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -61,3 +59,6 @@ The following table describes the fields that are available on the **Engineering
 | Severity rule | Select how the severity of an engineering change order should be established. Select *Manual* if the user is expected to enter a value in the **Severity** field. Select *Calculate* to have the system calculate the value of the **Severity** field when you select **Calculate severity** on the Action Pane of the engineering change order. In this case, the system will use the severity rules that are defined on the **Severity rule set** page. Select *Calculate automatically* to have the value of the **Severity** field automatically calculated and filled in according to the severity rule sets. |
 | Re-release impacted products | This field is applicable when you re-release products via an engineering change order. You can select whether all products or only the affected products should be proposed in the **Releases** dialog box. |
 | BOM levels to release | The depth of the BOM level to release. If the BOM has more levels (that is, if it's deeper) than the value that is specified here, only the levels up through the specified value will be released. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

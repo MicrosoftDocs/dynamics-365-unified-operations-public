@@ -3,11 +3,9 @@
 title: Use the dual-write wizard to link your environments
 description: This topic explains how to use the dual-write wizard to link a Finance and Operations app environment to your Dataverse environment.
 author: sabinn-msft
-manager: AnnBe
 ms.date: 05/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -76,3 +74,6 @@ You've now successfully imported and applied a Microsoft-published dual-write ta
 ## Next steps
 
 [Enable table maps for dual-write](enable-entity-map.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

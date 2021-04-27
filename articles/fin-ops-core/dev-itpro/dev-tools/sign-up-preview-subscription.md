@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Sign up for preview subscriptions
 description: This topic explains how to subscribe to the preview/partner offer and deploy an environment.
 author: RobinARH
-manager: AnnBe
 ms.date: 12/16/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 13211
 ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Sign up for preview subscriptions
@@ -172,3 +157,6 @@ LCS is the starting point for performing online administrative activities. Here 
         > To access the page, you must be a member of the **Global Administrator** role for your organization's Microsoft Online Services tenant. The installing user is always a global administrator, but other users must be added to this role.
 
         [![Active users in Microsoft 365 admin center](./media/activeusersadmin.png)](./media/activeusersadmin.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

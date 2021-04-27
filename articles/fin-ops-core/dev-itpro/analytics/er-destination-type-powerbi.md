@@ -4,11 +4,9 @@
 title: Power BI ER destination type
 description: This topic provides information about how to configure the Power BI ER destination type for outbound documents.
 author: NickSelin
-manager: AnnBe
 ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -43,3 +41,6 @@ Set **Enabled** to **Yes** to use your ER configuration to arrange the transfer 
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Revert kanban job status
 description: This procedure focuses on reverting an incorrect kanban job status. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -56,3 +54,6 @@ This procedure focuses on reverting an incorrect kanban job status. This is usef
     * Select the same job.  
     * Notice that the job status for the kanban job is reverted to Planned, which is indicated by an empty kanban icon.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

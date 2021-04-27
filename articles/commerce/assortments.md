@@ -4,11 +4,9 @@
 title: Assortment management
 description: This topic explains the basic concepts of assortment management in Dynamics 365 Commerce and provides implementation considerations for your project.
 author: jblucher
-manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -111,3 +109,6 @@ Consider the following implementation requirements as you plan and manage assort
 - **Sales and returns outside assortments** – This capability helps retailers effectively manage their assortments by letting them limit the number of available products to products that belong to the core product mix for the store. This capability also helps retailers handle situations where a product was mistakenly omitted from an assortment, or where a product was returned outside the effective dates for the assortment.
 
 If product data doesn't exist in the channel database, the POS makes real-time calls to headquarters to retrieve the required information, so that the product can be sold, returned, or put on a customer order. Product information that is retrieved in this manner is available only during the scope of that transaction. The product isn't added to the assortment definition. Therefore, subsequent real-time calls will be made as required.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

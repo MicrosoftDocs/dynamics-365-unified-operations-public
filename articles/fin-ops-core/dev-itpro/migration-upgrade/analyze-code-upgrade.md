@@ -4,11 +4,9 @@
 title: Upgrade from AX 2012 - Estimate effort by using the Code upgrade service
 description: This topic explains how to use the Code upgrade service in LCS to estimate the tasks and effort that are required in order to upgrade a code base.
 author: LaneSwenka
-manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -54,3 +52,6 @@ The following illustration shows an overview of the process for configuring the 
 For information about how to configure the Code upgrade service, see [Configure the code upgrade service in Lifecycle Services (LCS)](../lifecycle-services/configure-execute-code-upgrade.md).
 
 The output of the Code upgrade service is designed to be consumed by a developer. This output will help the developer estimate the effort that is required in order to complete the code upgrade tasks. To form an estimate, the developer must review the tasks that the service generates in Azure DevOps and the new version of the code that the service generates.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

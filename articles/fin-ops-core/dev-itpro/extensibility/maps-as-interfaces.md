@@ -1,18 +1,12 @@
 ---
 
-# required metadata
-
 title: Extend table maps that are used as interfaces
 description: This topic describes how to extend table maps that are used as interfaces.
 author: LarsBlaaberg
-manager: AnnBe
 ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -157,3 +151,6 @@ public class ISV2PurchTableSalesPurchTable extends ISV2SalesPurchTableInterface
 }
 ```
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

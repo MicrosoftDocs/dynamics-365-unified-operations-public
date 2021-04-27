@@ -2,13 +2,11 @@
 # required metadata
 
 title: Data integration using Dataverse overview
-description: This topic provides a brief overview of the mechanics of synchronous and asynchronous integration.
+description: You can use Dataverse to enable the flow of data between Finance and Operations apps and Dynamics 365 Sales. For example, customer information in Sales can flow to Finance and Operations apps. You don’t have to manually move the data or use a third-party data integration tool.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,6 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 You can use Dataverse to enable the flow of data between Finance and Operations apps and Dynamics 365 Sales. For example, customer information in Sales can flow to Finance and Operations apps. You don’t have to manually move the data or use a third-party data integration tool.
 
-For more information about Dataverse data integration, see [Integrate data into Dataverse for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) in the Microsoft Power Apps documentation.
+For more information about Dataverse data integration, see [Integrate data into Dataverse for Apps](/powerapps/administrator/data-integrator) in the Microsoft Power Apps documentation.
 
 For an example of using Dataverse, see [Prospect to cash](../../../supply-chain/sales-marketing/prospect-to-cash.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Reconcile freight in transportation management
 description: This topic describes the freight reconciliation process.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -108,3 +106,6 @@ Another way to do manual matching for this example is to proceed as follows:
 1. Match Inv1 and Inv 2 with FB one after another. FB is fully matched.
 
 As this example shows, matching freight invoices with negative amounts should only be done manually. This will ensure that it is always possible to match the freight invoices with negative amounts to a freight bill not fully matched because that enables you to control the matching sequence.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

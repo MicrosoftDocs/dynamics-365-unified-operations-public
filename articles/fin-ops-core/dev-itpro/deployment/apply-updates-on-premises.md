@@ -4,11 +4,9 @@
 title: Apply updates to on-premises deployments
 description: This topic explains how to apply supported updates to Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
-manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
 
@@ -132,3 +130,6 @@ After you review the logs and determine the cause of the failure, complete one o
     > This option should **not** be used on a production environment. However, it can be used on a sandbox deployment to restore the environment to a healthy state. 
     
     > Because this option requires that you do a fresh deployment of the environment, you lose any updates that were previously applied. Any customizations and binary updates must be reapplied to the environment.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

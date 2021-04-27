@@ -4,11 +4,9 @@
 title: Manage ER model mapping in separate ER configurations
 description: This topic describes how to manage Electronic reporting (ER) model mappings in separate ER configurations. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 06/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -165,3 +163,6 @@ Because ER configurations are shared among companies, you can complete this task
 7. Click OK.
     * The default model-mapping configuration is used by this format configuration for generating the electronic document (the created output contains the company code).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

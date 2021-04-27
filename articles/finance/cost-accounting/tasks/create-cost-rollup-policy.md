@@ -4,11 +4,9 @@
 title: Create a cost rollup policy
 description: This procedure shows how to create a cost rollup policy and create rules for the policy. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 06/27/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -71,3 +69,6 @@ This procedure shows how to create a cost rollup policy and create rules for the
     * Continue until all cost centers are mapped to their corresponding secondary cost elements.  
 16. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

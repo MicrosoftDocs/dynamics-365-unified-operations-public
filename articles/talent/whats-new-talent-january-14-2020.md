@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Talent (January 14, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent for January 14, 2020.
 author: andreabichsel
-manager: tfehr
 ms.date: 01/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -64,3 +62,6 @@ A new Dataverse solution will be available soon with the following changes:
 | **Worker address** table changes | <ul><li>**Street address** added</li><li>**Address line 1**, **Address line 2**, and **Address line 3** marked for deprecation</li></ul> |
 | New variable compensation setup tables | <ul><li>**Compensation variable plan type**</li><li>**Compensation variable plan**</li><li>**Vesting rules**</li><li>**Compensation variable plan level**</li></ul> |
 | New **Worker calendar employment** table | <ul><li>**Work calendar table** added</li></ul> |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Revenue recognition reallocation - Scenario 2
 description: This topic goes through a reallocation scenario where two sales orders are entered, and then the customer adds an item to the contract after first sales order is invoiced. When a new item is added to a contract, it can be added either to a new sales order or to the existing sales order.
 author: kweekley
-manager: aolson
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -95,3 +93,6 @@ The second sales order is now invoiced. The total invoice that is presented to t
 [![Voucher transactions page with the accounting entry that is posted](./media/24_rev-rec-scenarios.png)](./media/24_rev-rec-scenarios.png)
 
 Because the sum of the revenue and sales is more than $1,170.44, the difference is posted for -$130.17. This amount clears the balance from the Partial invoice revenue clearing account. That balance is posted in the new accounting entry after the reallocation.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

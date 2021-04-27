@@ -4,11 +4,9 @@
 title: Quality management overview
 description: This topic describes how you can use quality management in Dynamics 365 Supply Chain Management to help improve product quality within your supply chain.
 author: perlynne
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -507,3 +505,6 @@ Additional resources
 [Nonconformance management](enable-nonconformance-management.md)
 
 [Quality management for warehouse processes](quality-management-for-warehouses-processes.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

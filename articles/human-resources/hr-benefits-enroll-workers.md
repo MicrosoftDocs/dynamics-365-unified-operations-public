@@ -4,11 +4,9 @@
 title: Enroll and remove benefits from workers
 description: This procedure demonstrates how a single worker can be enrolled in one or more benefits, as well as multiple workers can be enrolled in a benefit. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 02/03/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -27,6 +25,8 @@ ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources 
 ---
 # Enroll and remove benefits from workers
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -61,3 +61,6 @@ This procedure demonstrates how a single worker can be enrolled in one or more b
 14. In the list, click the link in the selected row.
 15. This page allows you to view which employees have been enrolled in the benefit, as well as any employees who were not enrolled.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

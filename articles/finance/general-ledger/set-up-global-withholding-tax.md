@@ -5,11 +5,9 @@ title: Set up global withholding tax
 description: This topic lists the steps for setting up global withholding tax for sales and purchases. 
 
 author: roschlom
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -54,3 +52,6 @@ This topic lists the steps for setting up global withholding tax for sales and p
 7. Set up withholding tax groups on the **Item withholding tax groups** page for an item or service.
 
 8. Set up **Minimum invoice amount** on the **General ledger parameters > Withholding tax** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

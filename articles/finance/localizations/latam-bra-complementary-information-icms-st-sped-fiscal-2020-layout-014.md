@@ -4,11 +4,9 @@
 title: SPED fiscal 2020 - Complementary information of the ICMS-ST for Sped fiscal 2020 layout 014
 description: This topic provides information about how to utilize the complement and compensation of ICMS-ST for the 2020 calendar year.
 author: gionoder
-manager: AnnBe
 ms.date: 12/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -79,3 +77,6 @@ The new fields, **Responsible for withholding the ICMS-ST**, **ICMS-ST collectio
 
 > [!NOTE]
 > During the receipt of a fiscal document, when the ICMS-ST is taxable by using taxation code 10, even though it is entered in the **Responsible for withholding ICMS-ST** field, the financial and costing information is not included in the scope of localization.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

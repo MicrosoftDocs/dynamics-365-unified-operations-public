@@ -3,12 +3,10 @@
 
 title: Warranties on assets and asset types
 description: This topic explains how to set up warranties on assets and asset types in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -58,3 +56,6 @@ This topic explains how to set up warranties on assets and asset types in Asset 
 
 > [!NOTE]
 > When you create a work order for an asset that is covered by a vendor warranty, if the work order has an expected start date during the warranty period, you receive a notification about the warranty agreement. You can then cancel the work order, as you require.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

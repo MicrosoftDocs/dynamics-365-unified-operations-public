@@ -4,11 +4,9 @@
 title: Create configuration providers and mark them as active
 description: This topic explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 07/02/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -47,3 +45,6 @@ This topic explains how a user assigned to the System Administrator or Electroni
 2. Select **Set active**.
 
 ![Electronic reporting workspace page](../media/GER-Task-ActiveProvider-1.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

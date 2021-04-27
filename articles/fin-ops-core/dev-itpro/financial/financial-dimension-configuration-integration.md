@@ -4,11 +4,9 @@
 title: Financial dimension configuration
 description: This topic describes the Financial dimension configuration for integrating applications page.
 author: aprilolson
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -51,12 +49,15 @@ The **Financial reporting setup** page has two sections that determine the data 
 
 The **Data entities** tab is where you define the order of financial dimensions for importing data. There is no rule about how you should set the order of your dimension formats. They are designed to be flexible enough that you can take your source files from an external system and import the data without spending time to make the source files match your account structures. Dimension validation still occurs during the import process, to verify that you aren't importing financial dimension values that don't exist for a particular segment. However, outside validation, account structures and dimension formats are independent of each other. There are four dimension format types:
 
-- **Default dimension format** – This format type is required when you import default dimensions, through both Data Management and the Microsoft Excel integration. For example, you might require a default dimension format if you're importing the financial dimensions that are associated with a customer account.
-- **Ledger dimension format** – This format type is required when you import ledger dimensions, through both Data Management and the Excel integration. The ledger dimension format is the most common format, because it's used any time that transactions are imported, such as through the general journal, or any time that setup information is imported, such as on posting profiles.
+- **Default dimension format** – This format type is required when you import default dimensions, through both Data Management and the Microsoft Excel integration. For example, you might require a default dimension format if you're importing the financial dimensions that are associated with a customer or vendor account. Main account is not included in this format.
+- **Ledger dimension format** – This format type is required when you import ledger dimensions, through both Data Management and the Excel integration. The ledger dimension format is the most common format, because it's used any time that transactions are imported, such as through the general journal. The main account is specified on this format. This setting applies across all legal entities and the account structures used in your environment. The setup must include a cumulative set of all dimensions that can be used for transaction import across your legal entities. Any dimensions not used for a given legal entity are to be left blank in the import file. 
 - **Budget register dimension format** – This format type is required any time that you import dimensions for budgeting and budget control, through both Data Management and the Excel integration.
 - **Budget planning dimension format** – This format type is required any time that you import dimensions for budget planning, through both Data Management and the Excel integration.
 
-The dimension format types are not company-specific. The setup is a global setup. You can set up as many of each format type as you require, but only one format type can be active at one time. If no dimension format type is set up, you will receive an error when you import. You will also receive errors if the order is incorrect. Let's look at some examples that show how the dimension formats work. We will use the ledger dimension format for these examples.
+> [!NOTE]
+> *The dimension format types are not company-specific. The setup is a global setup.* You can set up as many of each format type as you need, but only one format type can be active at one time. If no dimension format type is set up, you will receive an error when you import. You will also receive errors if the order is incorrect. 
+ 
+Let's look at some examples that show how the dimension formats work. We will use the ledger dimension format for these examples.
 
 ### Example 1
 
@@ -93,3 +94,5 @@ The second row is imported as defined in the import file: **Main account == 1101
 ## Additional resources
 
 [Add dimensions to Excel templates](dimensions-overview.md)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

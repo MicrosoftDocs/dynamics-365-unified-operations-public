@@ -4,11 +4,9 @@
 title: Validations, default values, and unmapped fields
 description: This topic describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -56,7 +54,7 @@ After the field values from the data entity are copied to mapped data source fie
 
 ![redo2](./media/redo2-1024x636.png)
 
-To skip **validateWrite** for all back-end tables for a data entity, a consumer can call **DataEntity.skipDataSourceValidateWrite(Boolean \_skip)**. This method turns **validateWrite** on or off for all data sources. By using the following API, you can skip validation for a particular field, regardless of the consumer.
+To skip **validateWrite** for all back-end tables for a data entity, a consumer can call **DataEntity.skipDataSourceValidateWrite(Boolean \_skip)**. This method turns **validateWrite** on or off for all data sources. By using the following API, you can skip validation for a particular data source, regardless of the consumer.
 
 [![Over10](./media/over10.png)](./media/over10.png)
 
@@ -258,3 +256,6 @@ The following table provides a computed example if a **UnitOfMeasure** relations
 | Virtual field | Computed field |
 |---------------|----------------|
 | On postLoad()*//Check to see if record exists in UnitOfMeasureInternalCode.UnitOfMeasure//Set hasFixedInternalCode value based on the field*if(this.UnitOfMeasure)this.HasFixedInternalCodeVirtual = NoYes::Yes; else this.HasFixedInternalCodeVirtual = NoYes::No; | On computedFieldMethod()*//Desired SQL computed column statement(CASE WHEN T2.RECID IS NULL THEN 0 ELSE 1 END) AS INT)* |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

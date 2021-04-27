@@ -4,11 +4,9 @@
 title: Horizontal Fields and Buttons Group subpattern
 description: This article provides information about the Horizontal Fields and Buttons Group subpattern, which is used when actions must be defined for an individual field.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -111,3 +109,6 @@ This section will have answers to frequently asked questions that are related to
 **SalesTable** 
 
 [![Example of form](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

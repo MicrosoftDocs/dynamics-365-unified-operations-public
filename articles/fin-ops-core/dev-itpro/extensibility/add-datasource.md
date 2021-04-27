@@ -1,19 +1,13 @@
 ---
 
-# required metadata
-
 title: Add data sources to forms through extension
 description: This topic explains how you can add new data sources to existing forms by using extensions.
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -59,3 +53,6 @@ You can add new data sources to existing forms through extension. Follow these s
 1. You can now view and edit the data in these new fields and tables, as shown in the following illustration.
 
     ![New fields](media/AddFormDataSource04.jpg)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

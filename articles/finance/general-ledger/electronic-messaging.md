@@ -4,11 +4,9 @@
 title: Electronic messaging
 description: This topic provides overview and setup information for electronic messaging in Microsoft Dynamics 365 Finance.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -38,7 +36,7 @@ Recently, the governments and legislative authorities of various countries and r
 
 The Electronic messages functionality in Finance supports various processes for electronic interoperation between Finance and the systems that governments and legislative authorities offer for reporting, submitting, and receiving official information.
 
-The Electronic messages functionality is integrated with the **Electronic Reporting** (ER) module. Therefore, you can set up ER formats for electronic messages. For more information, see [Electronic reporting (ER)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+The Electronic messages functionality is integrated with the **Electronic Reporting** (ER) module. Therefore, you can set up ER formats for electronic messages. For more information, see [Electronic reporting (ER)](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
 
 Electronic messaging is based on the following entities:
 
@@ -65,7 +63,7 @@ The Electronic messages functionality supports the following scenarios:
 
 ## Set up electronic messaging
 
-Electronic messaging can help you maintain different electronic reporting processes for different document types. In some complex scenarios, electronic messaging is set up so that it has a combination of many message statuses, message items statuses, actions, additional fields, and executable classes. For these scenarios, packages of data entities are available for import. If you use these data entity packages, you should import them to a legal entity by using the Data management tool. For more information about how to use the Data management tool, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md).
+Electronic messaging can help you maintain different electronic reporting processes for different document types. In some complex scenarios, electronic messaging is set up so that it has a combination of many message statuses, message items statuses, actions, additional fields, and executable classes. For these scenarios, packages of data entities are available for import. If you use these data entity packages, you should import them to a legal entity by using the Data management tool. For more information about how to use the Data management tool, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 If you don't import a data entity package, you can manually set up the Electronic messages functionality. In this case, you must set up the following elements:
 
@@ -542,3 +540,6 @@ You can now either delete or update the message status. To update the message st
 ![Update the message status](media/update-status.png)
 
 The message status is updated to **Prepared**, and you can now generate the report by selecting **Generate report**. The report is generated, and the message status and action log are updated. To view the generated report, select the **Attachment** button (the paper clip symbol) in the upper-right corner of the page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

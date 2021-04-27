@@ -4,11 +4,9 @@
 title: Assign users to security roles
 description: To access Finance and Operations apps, users must be assigned to security roles. 
 author: Peakerbl
-manager: AnnBe 
 ms.date: 05/06/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -60,3 +58,6 @@ Users who are manually assigned to security roles must also be manually removed 
 2. In the tree, select a role, and in the **Users assigned to role** menu, select **Manually assign / exclude users**.
 4. In the **Assign users to or exclude users from role**, users that have not been assigned the role are listed with the **Assignment mode** set to **None**. Select one or more users that should be assigned the role.
 5. On the **Action pane**, select **Assign to role**. The **Assignment mode** is updated to **Manual** and the users now have a new role assigned.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Negative days and dynamic negative days
 description: This topic provides information about negative days and dynamic negative days, and how you can use them to help your business.
 author: t-benebo
-manager: tfehr
 ms.date: 06/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -253,4 +251,7 @@ To help guarantee that the correct values are entered for your business, you mus
 
 ## See also
 
-For more discussion, see the original [More about (dynamic) negative days](https://blogs.msdn.microsoft.com/axmfg/2015/02/19/more-about-dynamic-negative-days/) blog post.
+For more discussion, see the original [More about (dynamic) negative days](/archive/blogs/axmfg/more-about-dynamic-negative-days) blog post.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

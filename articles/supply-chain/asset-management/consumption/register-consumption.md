@@ -3,12 +3,10 @@
 
 title: Register consumption
 description: This topic explains how to register consumption in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -99,3 +97,6 @@ When you make consumption registrations, financial dimensions related to the dif
 >[!NOTE]
 >For all three registration types, the financial dimension combination is validated, and invalid combinations are blanked. This is standard setup with other Finance and Operations apps.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Set up and deploy on-premises environments home page
 description: This topic provides links to topics about how to plan, set up, and deploy an on-premises environment.
 author: sericks007
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,9 +35,12 @@ The process for deploying on-premises environments differs between Platform upda
 
 For setup instructions, see: 
 - [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md)
-- [Set up and deploy on-premises environments (Platform updates 8 and 11)](setup-deploy-on-premises-pu8-pu11.md)
+- [Set up and deploy on-premises environments (Platform updates 8 and 11)](./setup-deploy-on-premises-pu12.md)
 
 
 > [!NOTE]
 > The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is now available. You can post questions or feedback you may have about the on-premises deployment there.
 > If you have questions or feedback about the content below, please post them in the **Comments** section at the bottom of this page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

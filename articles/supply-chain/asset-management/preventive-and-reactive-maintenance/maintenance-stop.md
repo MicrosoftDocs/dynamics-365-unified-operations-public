@@ -3,12 +3,10 @@
 
 title: Maintenance downtime activities
 description: This topic explains how maintenance downtime is used to get an overview of the capacity required to carry out maintenance jobs on specific assets during a specific period.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -101,3 +99,6 @@ The illustration below shows an example of the **Maintenance downtime activities
 - You can copy assets from one maintenance downtime activity to another. In **All maintenance downtime activities**, select the **Copy maintenance downtime activities** button, and make your selections in the **From maintenance downtime activities** and **To maintenance downtime activities** fields, and click **OK**.
 - In **All maintenance downtime activities**, click the **Maintenance schedule lines** button or the **Active work orders** button to open the related lists and view the lines related to the selected maintenance downtime activity.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

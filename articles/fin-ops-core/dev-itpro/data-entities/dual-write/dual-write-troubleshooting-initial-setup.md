@@ -4,11 +4,9 @@
 title: Troubleshoot issues during initial setup
 description: This topic provides information that can help you fix issues that occur during the initial setup of dual-write integration.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -97,3 +95,6 @@ DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\]
 One or more errors occurred.*
 
 The current limit when you link the environments is approximately 40 legal tables. This error occurs if you try to enable maps, and more than 40 legal tables are linked between the environments.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

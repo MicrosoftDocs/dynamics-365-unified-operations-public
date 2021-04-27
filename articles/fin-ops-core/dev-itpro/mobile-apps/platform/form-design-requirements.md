@@ -4,11 +4,9 @@
 title: Form design requirements
 description: This topic provides in-depth information on designing mobile apps.
 author: robinarh
-manager: AnnBe
 ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -96,3 +94,6 @@ SysTaskRecorderController::isExecutingApp()
 
 The form controls for the various base data types (strings, dates, and numbers) and grids are supported. However, a few common controls have limited support. **Reference groups** Fields from within Reference groups controls are compatible when you design pages. However, they aren't compatible when you design Actions. Although you might be able to select these fields without experience any issue, Reference groups have a fundamental incompatibility with the mobile framework. We recommend that you not use Reference groups. Instead, add a control directly to the form, and then bind the control directly to the surrogate foreign key (SFK) by using the property sheet.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

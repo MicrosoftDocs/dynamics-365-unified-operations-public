@@ -4,11 +4,9 @@
 title: Remove and reinstall, or add an AOS node
 description: This topic explains how to remove an Application Object Server (AOS) node in your on-premises environment to reduce or replace a failed node.
 author: ttreen
-manager: AnnBe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -36,7 +34,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
 
 ### Option 1: Use a configuration file (preferred option)
 
-**Reference document:** [Add or remove nodes to a standalone Service Fabric cluster running on Windows Server](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes)
+**Reference document:** [Add or remove nodes to a standalone Service Fabric cluster running on Windows Server](/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes)
 
 1. In Service Fabric Explorer, select **Cluster**, and make a note of the Microsoft Service Fabric cluster version. For this example, the cluster version is **6.5.676.9590**.
 
@@ -160,7 +158,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
 
     During upgrade of the cluster configuration, if you receive an error message that states that you previously added a node through the **Add-ServiceFabricNode** command, you will need to run a configuration upgrade without making any changes to the configuration file except for the version number. You can use the **Get-ServiceFabricClusterConfiguration** and **Start-ServiceFabricClusterConfigurationUpgrade** commands for this purpose.
 
-    ![Get command and result](media/329b9c2bd807d7bca96e106037504e0e.png)
+    ![Run a configuration upgrade without making any changes to the configuration file except for the version number.](media/329b9c2bd807d7bca96e106037504e0e.png)
 
     You can also view the progress in Service Fabric Explorer.
 
@@ -220,7 +218,7 @@ The next step is to start a new AOS server.
 2. If you're adding a new server to an existing cluster, update the ConfigTemplate.xml file so that it contains the additional information. This information will be used when you push out the prerequisites and apply settings through Windows PowerShell scripts.
 3. Make sure that you've added the **AXServiceUser** and **svc-AXSF\$** group Managed Service Accounts (gMSAs) to the local admin group on the AOS server.
 
-    After the server is connected to the domain, you must follow the prerequisite steps for on-premises environments in [Set up and deploy on-premises environments (Platform update 12 and later)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12#follow-these-steps-for-each-vm-or-use-remoting-from-a-single-machine). The following steps summarize those prerequisite steps.
+    After the server is connected to the domain, you must follow the prerequisite steps for on-premises environments in [Set up and deploy on-premises environments (Platform update 12 and later)](./setup-deploy-on-premises-pu12.md#follow-these-steps-for-each-vm-or-use-remoting-from-a-single-machine). The following steps summarize those prerequisite steps.
 
 4. Copy the contents of each infrastructure\\VMs\<VMName\> folder into the corresponding virtual machine (VM). (If you use remoting scripts, they will automatically copy the contents to the target VMs.) Then run the following Windows PowerShell scripts as an admin.
 
@@ -322,3 +320,6 @@ The next step is to start a new AOS server.
     ![Add command and result](media/e8c153c1b8aa06af684a307f443c9b7b.png)
 
 23. After the node has been added back in, return to Service Fabric Explorer, and view the application deployment status. Several minutes will be required before all the AOS applications are restored (**AXBootstrapperAppType**, **AXSFType**, **RTGatewayAppType**, and **LBDTelemetryType-<envname\>** or **MonitoringAgentAppType**) are pushed out again and installed on the node.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

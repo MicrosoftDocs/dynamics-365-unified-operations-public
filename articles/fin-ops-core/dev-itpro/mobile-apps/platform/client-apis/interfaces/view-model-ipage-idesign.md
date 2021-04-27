@@ -3,11 +3,9 @@
 title: Design type
 description: Design object type.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -173,3 +171,6 @@ type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 The type of the control as a string.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

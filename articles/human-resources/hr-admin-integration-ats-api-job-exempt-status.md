@@ -4,11 +4,9 @@
 title: Job exempt status
 description: This topic describes the Job exempt status option set for Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -29,6 +27,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Job exempt status
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Job exempt status option set for Dynamics 365 Human Resources.
 
 Physical name: cdm_jobexemptstatus
@@ -45,3 +45,6 @@ This enumeration specifies the option set for FLSA job exempt status values. Thi
 
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
 [Example query for Recruiting request](hr-admin-integration-ats-api-recruiting-request-example-query.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

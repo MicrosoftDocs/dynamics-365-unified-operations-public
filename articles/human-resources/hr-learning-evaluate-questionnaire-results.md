@@ -4,11 +4,9 @@
 title: View and evaluate the results of questionnaires
 description: This article explains how you can view and evaluate the results of questionnaires that respondents complete. 
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # View and evaluate the results of questionnaires
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article explains how you can view and evaluate the results of questionnaires that respondents complete. 
 
@@ -77,3 +77,5 @@ You can use questionnaire statistics to analyze the results of a completed quest
 -   Select or verify criteria to analyze results by respondent or questionnaire characteristics. For example, by selecting **ZIP/postal code**, you can analyze the correlation between a respondent’s location and correct answers.
 
 The settings that you define are saved and can be used to periodically recalculate results.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

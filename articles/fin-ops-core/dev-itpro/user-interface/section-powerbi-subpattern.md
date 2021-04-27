@@ -4,11 +4,9 @@
 title: Section Power BI subpattern
 description: This article provides information about the Section PowerBI subpattern.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -84,3 +82,6 @@ None
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

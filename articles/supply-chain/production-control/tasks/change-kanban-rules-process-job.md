@@ -4,11 +4,9 @@
 title: Change kanban rules for a process job
 description: This procedure focuses on changing the used kanban rule for a given kanban. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -51,3 +49,6 @@ This procedure focuses on changing the used kanban rule for a given kanban. This
 7. Click Finish.
     * Now the kanban job is using an another kanban rule. This can be useful to level load work cells.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

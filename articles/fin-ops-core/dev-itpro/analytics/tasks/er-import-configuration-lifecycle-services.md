@@ -4,11 +4,9 @@
 title: Import a configuration from Lifecycle Services
 description: This topic describes how to import a new version of an Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS). 
 author: NickSelin
-manager: AnnBe 
 ms.date: 09/14/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
 
 # optional metadata 
@@ -108,3 +106,6 @@ In this example, you will select the desired version of the ER configuration and
     For this example, select the version of the configuration that has a status of **Shared**.
 
     Notice that shared version 1 of the selected data model configuration is also available now.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

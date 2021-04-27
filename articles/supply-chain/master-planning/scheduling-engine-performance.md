@@ -4,11 +4,9 @@
 title: Improve scheduling engine performance
 description: This topic provides information about the scheduling engine and how to improve performance. 
 author: ChristianRytt
-manager: tfehr
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -332,3 +330,6 @@ The value for **Optimization attempts timeout** controls how many seconds can at
 
 > [!NOTE]
 > The values set for the timeouts will be applied both for scheduling of released production orders and of planned orders as part of MRP. As a result, setting very high values could significantly add to the run time of MRP when running for a plan with many planned production orders.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Define shift depreciation rates (India)
 description: This procedure walks you through defining shift depreciation rates. 
 author: AdamTrukawka
-manager: AnnBe 
 ms.date: 12/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -46,3 +44,6 @@ This procedure walks you through defining shift depreciation rates. You can defi
 13. In the Triple shift percentage field, enter a number.
 14. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

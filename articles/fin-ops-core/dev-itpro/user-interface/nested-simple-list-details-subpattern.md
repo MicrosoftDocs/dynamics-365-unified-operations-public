@@ -4,11 +4,9 @@
 title: Nested Simple List and Details subpattern
 description: This topic provides information about the Nested Simple List and Details (NSL+D) subpattern, used to display information about a secondary or child entity.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -124,3 +122,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![Example](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

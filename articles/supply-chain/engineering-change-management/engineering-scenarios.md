@@ -4,11 +4,9 @@
 title: Engineering change management feature walkthrough
 description: This topic provides an end-to-end walkthrough that shows how to work with engineering change management.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -402,7 +400,6 @@ The engineer now reviews the request from the customer and creates a change orde
 
 1. On the Action Pane, on the **Change order** tab, in the **Change status** group, select **Approve**.
 1. Select **Process** to update the product's information.
-1. Select **Complete** to mark the change order as completed.
 
 ## Release the changed product
 
@@ -415,3 +412,9 @@ The product can now be released again to the *USMF* company and then sent to the
 1. Select each company that you want to release products to.
 1. Select **OK** to close the **Releases** dialog box and return to the change order.
 1. On the Action Pane, on the **Change order** tab, in the **Product releases** group, select **Process** to release the affected products to the selected companies. Alternatively, select **Release product structure** to start the release process.
+
+## Complete the change order
+
+To mark the change order as completed, which indicates that no further actions remain, select **Complete** on the Action Pane.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

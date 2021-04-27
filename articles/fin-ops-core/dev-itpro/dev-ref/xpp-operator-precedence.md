@@ -1,32 +1,16 @@
 ---
-# required metadata
-
 title: Operator precedence
 description: This topic describes operator precedence.
 author: pvillads
-manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 6174
-ms.assetid: dd4a4971-c35a-466d-9c24-244cd75f9020
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Operator precedence
@@ -56,3 +40,6 @@ The operators in the following table are listed in precedence order. The higher 
 | conditional                                              | `? :`                   |
 
 Operators on the same line in the table have equal precedence. If there are more than one of these operators in an expression, the expression is evaluated from left to right unless assignment operators are used. Assignment operators are evaluated from right to left. For example, `&&` (logical AND) and `||` (logical OR) have the same precedence and are evaluated from left to right. This means that `0 && 0 || 1 == 1`, and `1 || 0 && 0 == 0`
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

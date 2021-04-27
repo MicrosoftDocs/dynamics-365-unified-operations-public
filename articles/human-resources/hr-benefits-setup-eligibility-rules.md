@@ -4,11 +4,9 @@
 title: Configure eligibility rules and options
 description: Set eligibility rules and options in Benefits management in Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure eligibility rules and options
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 After you've configured the necessary parameters for Benefits management in Microsoft Dynamics 365 Human Resources, you can create eligibility rules, bundles, periods, and programs that you will associate with your benefit plans.
 
@@ -181,3 +181,6 @@ Programs are a set of benefit plans that share a common set of eligibility rules
    | **Eligibility rules** | Select the eligibility rules to apply to the benefits program. You define the eligibility rules on the **Eligibility rules** tab on this page. |
    
 4. Select **Save**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

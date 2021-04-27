@@ -4,11 +4,9 @@
 title: Actions in workflow approval processes
 description: This article explains the actions that each participant in a workflow approval process can take.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -147,3 +145,6 @@ When an approver requests a change to a document, the document is sent back to t
 For example, Sam has submitted an expense report for USD 12,000, and this document is assigned to Sue. If Sue requests a change, the expense report is sent back to Sam.
 
 Sam can resubmit the expense report. He can make the requested changes first, or he can resubmit the original version of the expense report. If Sam resubmits the expense report, it's sent to Frank for approval, because Frank is the first approver in the approval process.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

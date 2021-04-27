@@ -4,11 +4,9 @@
 title: Simple Details form pattern
 description: This article describes the Simple Details form pattern. This pattern is used when only a simple set of fields must be presented to the user.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -154,3 +152,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 -   Investigate whether Simple Details forms that show a small amount of related content should have a different presentation than a full-page form.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

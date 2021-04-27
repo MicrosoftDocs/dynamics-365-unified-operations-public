@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Talent (February 14, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for February 14, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/14/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -55,3 +53,6 @@ A change has been made to default the "Termination reason" code when ending the 
 
 ### New table created for job compensation levels
 A new data management framework (DMF) table was created. The table provides for creation and updates to compensation levels, market values, and survey information for each job defined in the system.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

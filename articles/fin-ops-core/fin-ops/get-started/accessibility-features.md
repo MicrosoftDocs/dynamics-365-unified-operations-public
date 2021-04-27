@@ -4,11 +4,9 @@
 title: Accessibility features
 description: This topic describes the functionality that is designed to help users who have various disabilities.
 author: TLeforMicrosoft
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -102,3 +100,6 @@ On smartphones and other small screens, the controls and the form layout will re
 ## Guidance to help developers and customers incorporate accessible thinking in their customizations
 
 To learn more about Microsoft best practices for enabling accessibility, see [Accessibility in forms, products, and controls](../../dev-itpro/user-interface/enable-accessibility.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

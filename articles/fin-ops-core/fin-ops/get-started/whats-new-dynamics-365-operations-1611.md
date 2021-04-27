@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 for Operations version 1611 (November 2016)
 description: This topic describes features that are either new or changed in Dynamics 365 for Operations version 1611.
 author: sericks007
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -950,3 +948,6 @@ Currently, Retail Modern POS is available only as a Windows 8.1 application for 
 ## Additional resources
 
 [What's new or changed in Finance and Operations home page](whats-new-changed.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

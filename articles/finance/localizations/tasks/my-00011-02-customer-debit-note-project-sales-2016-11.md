@@ -4,11 +4,9 @@
 title: MY-00011 02 Generate Customer Debit Note for Project sales (November 2016)
 description: This task walks you through creating and printing project debit note for GST. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -109,3 +107,6 @@ This procedure is for a feature that was added in Dynamics 365 for Operations, v
 17. Click OK.
     * Validate debit note report  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

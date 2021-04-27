@@ -4,11 +4,9 @@
 title: Credit holds for sales orders
 description: This topic describes the setup of rules used to place a sales order on credit hold. 
 author: mikefalkner
-manager: AnnBe
 ms.date: 01/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -272,3 +270,6 @@ Sales orders that have a forced hold reason cannot be released automatically. If
 Credit management can only be used currently for sales orders. Free text invoices, point of sales orders and call center orders will use the temporary credit limits and insurance/guarantees that you add to adjust the credit limit. They will not use the blocking rules and they will not be placed in the hold list if there is an issue with the credit limit.
 
 There is no support for project invoices in credit management.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

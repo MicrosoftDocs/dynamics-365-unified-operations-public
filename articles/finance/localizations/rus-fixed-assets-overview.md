@@ -3,11 +3,9 @@
 title: Fixed assets overview 
 description: This topic provides information about the Fixed assets module for Russia.
 author: v-oloski
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -126,3 +124,6 @@ Set up the **Fixed assets** module to help guarantee accurate calculation of acc
     During their life cycle, the cost of these types of assets must be amortized. If the life cycle is longer than the legally defined rate of twelve months, the linear method of depreciation is used. If it's less than twelve months, the cost is written off when the item is issued to the employee. The **Working clothes** and **Special rigging** pages are like the **Fixed assets** page that accounts for all working clothes items and special rigging assets that are issued.
 
 - [Printing forms](printing-forms-fixed-assets.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

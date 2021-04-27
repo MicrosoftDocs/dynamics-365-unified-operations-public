@@ -4,11 +4,9 @@
 title: Zone threshold replenishment
 description: Zone-based replenishment uses a minimum/maximum (min/max) replenishment strategy, but it evaluates whole warehouse zones instead of just individual locations. Therefore, warehouse managers can more quickly learn when additional inventory is required in a picking zone.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -346,3 +344,6 @@ Here are a few notes and tips for working with the feature:
 
 - If you're using dynamic locations, replenishment work will be created either for the first available location or for a location that already contains inventory, if the location directive action is set up to use the **Consolidate** strategy.
 - If you're using fixed locations instead of zones, you should use [standard min/max replenishment](tasks/set-up-min-max-replenishment-process.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

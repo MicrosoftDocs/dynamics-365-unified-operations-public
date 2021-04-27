@@ -4,11 +4,9 @@
 title: Prospect-to-cash in dual-write
 description: This topic provides information about prospect-to-cash in dual-write.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/07/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -54,7 +52,7 @@ Before you can sync sales quotations, you must update the following settings.
 
 In Sales, go to **Settings \> Administration \> System settings \> Sales**, and make sure that the following settings are used:
 
-- The **Use system prizing calculation** system option is set to **Yes**.
+- The **Use system pricing calculation** system option is set to **Yes**.
 - The **Discount calculation method** column is set to **Line item**.
 
 ### Sites and warehouses
@@ -164,3 +162,6 @@ Here are the related core table maps for prospect-to-cash:
 [!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
 
 [!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

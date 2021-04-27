@@ -4,11 +4,9 @@
 title: Report 340 for Spain
 description: This topic provides information about how to set up and generate Report 340 for Spain.
 author: anasyash
-manager: AnnBe
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -187,3 +185,6 @@ For more information, see [Download Electronic reporting configurations from Lif
 14.  Select **OK**, open the downloaded file, and review the data.
 
 ![Spanish VAT register book data](media/6_Spanish_VAT_register_book.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

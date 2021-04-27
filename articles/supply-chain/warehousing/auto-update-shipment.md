@@ -4,11 +4,9 @@
 title: Shipment auto-updates
 description: This topic provides an overview of functionality that provides automatic updates for shipments.
 author: josaw1
-manager: tfehr
 ms.date: 11/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -144,3 +142,6 @@ The wave is processed and creates work for the reserved quantities on the load l
 If a shipment has a status of **Waved** or higher, updates to the quantity on a sales order line aren't reflected on or validated against a load line that is associated with the shipment. Changes to the quantity on a load line must be made directly on the load line.
 
 Validation is done after work has been created for the load line and a reservation has been made. A decrease in the quantity on the sales order line is then validated against the work line reservation.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

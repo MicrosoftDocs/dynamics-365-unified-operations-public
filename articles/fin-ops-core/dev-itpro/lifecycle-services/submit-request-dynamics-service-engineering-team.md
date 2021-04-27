@@ -4,11 +4,9 @@
 title: Submit service requests to the Dynamics Service Engineering team
 description: This topic explains how you can submit service requests directly to the Dynamics Service Engineering team by using Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
-manager: AnnBe
-ms.date: 10/09/2020
+ms.date: 04/15/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -36,7 +34,9 @@ ms.dyn365.ops.version: Platform update 3
 A service request is a ticket that you use to request that the Dynamics Service Engineering (DSE) team perform a predefined set of tasks on your environments.
 
 > [!NOTE]
-> Don't use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this topic, submit a support ticket instead. For more information about support tickets, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](lcs-support.md).
+> Service requests are only required for environments that are **Microsoft-managed**. Most environments are self-service. For more information about environment types, see [Cloud deployment overview](../deployment/cloud-deployment-overview.md).
+
+> Do not use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this topic, submit a support ticket instead. For more information about support tickets, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](lcs-support.md).
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to submit service requests directly to the DSE team. You can also view which requests have been submitted, executed, and canceled for your environments.
 
@@ -74,6 +74,16 @@ There are two ways to create a service request: automatically and on demand.
 
 - **Environment deployment** – To set up deployment options and submit a request to the DSE team to deploy a new environment, in the **Environments** section, select **Configure**.
 - **Package application** – To apply a package to the production environment, on the **Environment details** page, select **Maintain**, select the package to apply, and then select **Schedule**. For more information, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).
+
+    > [!IMPORTANT]
+    > If your scheduled time overlaps with a [planned maintenance window](./planned-maintenance-window-faq.md), you will receive the following warning message. 
+    >
+    > ![Warning message that explains the maintenance conflict](./media/MaintenanceConflict.png)
+    >
+    > If you choose to continue deploying the package, the package deployment operation will be rolled-back in the event of conflict, as planned maintenance takes priority.
+    >
+    > This restriction is appliable to **Microsoft-managed IAAS environments** only. 
+    
 
 ### Create a service request on demand
 Service requests that are created on demand aren't explicitly accepted by the DSE team. They will be addressed during the specified downtime window unless the DSE team has entered a comment in the request or has had to deny the request. For details, review the comments in the service request.
@@ -134,3 +144,6 @@ Here are some typical examples of service requests that will be denied:
 |                                | Production | IP safe list rules | Five hours | Two hours |
 |                                | Production | Power BI Embedded | Five hours | Two hours |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

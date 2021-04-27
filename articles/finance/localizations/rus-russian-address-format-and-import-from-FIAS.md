@@ -3,11 +3,9 @@
 title: Russian address formats
 description: This topic provides information about Russian address formats and importing from the FIAS.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -262,3 +260,6 @@ Try the following procedure:
       ![Entity import execution parameters](media/17%20Entity%20import%20execution%20parameters.jpg)
 
 When you run a full import job, provide several regions, but not all regions, at the same time.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

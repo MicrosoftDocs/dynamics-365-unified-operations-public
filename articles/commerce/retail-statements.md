@@ -4,11 +4,9 @@
 title: Retail statements
 description: This topic describes how statements are created and posted.
 author: ashishmsft
-manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -91,3 +89,6 @@ When you post a statement, sales orders and invoices are created for the sales i
 - Sales for which a customer was added to the transaction in POS generate separate sales orders and invoices, one for each unique customer.
 
 Payment journals are automatically created for the payments in the statement, and the inventory is updated for the POS store.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

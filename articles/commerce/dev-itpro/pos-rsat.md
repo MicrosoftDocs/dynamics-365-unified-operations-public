@@ -4,11 +4,9 @@
 title: Test recorder and Regression suite automation tool for Cloud POS
 description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
-manager: AnnBe
 ms.date: 08/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -401,3 +399,6 @@ Unhandled Exception: System.IO.FileNotFoundException: Could not load file or ass
 ### Multifactor authentication
 
 If multifactor authentication is enabled for the device activation user, then playback may fail. If possible, disable the multifactor authentication for the activation user temporarily. After the activation is completed, then re-enable the multifactor authentication. Activation will be required only for the first-time playback. We recommend that you discuss this approach with your security experts before making this change.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

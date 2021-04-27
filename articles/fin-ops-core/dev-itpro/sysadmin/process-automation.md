@@ -4,11 +4,9 @@
 title: Process automation
 description: This topic provides details about how process automation allows simple scheduling of processes that will be run by the batch server.
 author: RyanCCarlson2
-manager: tonyafehr
-ms.date: 08/12/2020
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -36,7 +34,7 @@ Process automation allows simple scheduling of processes that will be run by the
 
 The central administration page for all process automations is found in the System Administration module under the **Setup** menu. This page will list all automated processes (series) that are set up in the system. It will also allow you to add new process automations directly from this page. After a series is set up, you can manage each series from this list. You can choose to edit the entire series, delete it, view all occurrences in a list view, or disable the series if you would like to pause the scheduled work for a while. 
 
-Any processes that are disabled in feature management won't show when the feature is disabled. Additionally, the process automation scheduling engine won't schedule any occurrences or background processes for a disabled feature. Re-enabling the feature will cause any scheduled occurrences or background processes in the past to run immediately.
+Any processes that are disabled in feature management won't show when the feature is disabled. Additionally, the process automation scheduling engine won't schedule any occurrences or background processes for a disabled feature. Re-enabling the feature will cause any scheduled occurrences or background processes in the past to run immediately. The process automation scheduling engine relies on the system batch job, **Process automation polling system job** to run. The job shouldn't be altered or tampered with at any time. 
 
 ## Calendar view
 
@@ -51,3 +49,6 @@ Each occurrence can be modified without impacting other occurrences defined by t
 ## Developer documentation
 
 The process automation framework allows developers to extend the process automation framework. The [Process automation framework](../process-automation/process-automation-framework.md) documentation provides information about how you can create custom processes that you require to be run by the batch server scheduled with the process automation wizard and appear in the calendar view automatically.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

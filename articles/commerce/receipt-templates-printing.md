@@ -4,11 +4,9 @@
 title: Set up and design receipt formats
 description: This article describes how to modify form layouts to control how receipts, invoices, and other documents are printed. Dynamics 365 Commerce includes a form layout designer that you can use to easily create and modify various kinds of form layouts.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -90,3 +88,6 @@ Receipt profiles are assigned directly to printers through the hardware profile.
 
 > [!NOTE]
 > If two printers are used, one printer can be used to print standard 40-column thermal receipts. The second printer is typically used to print full-page receipt types that require more information. These receipt types include customer order receipts and customer invoices.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

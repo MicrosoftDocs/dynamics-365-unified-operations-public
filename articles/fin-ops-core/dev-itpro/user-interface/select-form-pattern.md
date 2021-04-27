@@ -4,11 +4,9 @@
 title: Form patterns for migrated forms
 description: This topic provides information that will help you select the best form pattern for the forms that you migrate. 
 author: jasongre
-manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -515,3 +513,6 @@ Form: CustTable (TabFinancialDimensions)
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

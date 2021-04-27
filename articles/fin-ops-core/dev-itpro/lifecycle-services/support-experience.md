@@ -4,11 +4,9 @@
 title: Set up technical support for Finance and Operations apps
 description: This topic provides information about the support experience for cloud and on-premises deployments.
 author: kfend
-manager: AnnBe
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -189,3 +187,6 @@ When you deploy your application from Lifecycle Services, no configuration is re
 
 ## Prevent users from creating issues from the client
 By default, the System user role has the privilege, *SysLCSCPSIssueEntry* assigned. This privilege controls access to the **Contact your support team** menu item on the Help menu. If you want to prevent users from being able to create and submit issues from the client, remove this privilege from the System user role.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

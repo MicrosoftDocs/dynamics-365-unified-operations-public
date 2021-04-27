@@ -4,11 +4,9 @@
 title: Office integration overview
 description: This topic reviews Microsoft Office integration concepts and features.
 author: jasongre
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -30,6 +28,8 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Office integration overview
+
+[!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
 
 [!include [banner](../includes/banner.md)]
 
@@ -132,3 +132,6 @@ Open the Document Parameters form and ensure that the SharePoint server has been
 [Troubleshoot the Office integration](office-integration-troubleshooting.md)
 
 [Application stack and server architecture](../dev-tools/application-stack-server-architecture.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

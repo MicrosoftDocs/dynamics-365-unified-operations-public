@@ -4,11 +4,9 @@
 title: Development and ALM changes from version 10.0.10 to 10.0.13 
 description: This topic highlights the major changes in the development tools, software development kits (SDKs), and Application Lifecycle Management (ALM).
 author: RobBertram 
-manager: AnnBe
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -60,7 +58,7 @@ The following features are available across products and users. Some features ap
 
 For a general overview of each application release, always check the "What's new or changed" topics:
 
-- [What's new or changed in Finance and Operations apps home page](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-changed?toc=/dynamics365/commerce/toc.json)
+- [What's new or changed in Finance and Operations apps home page](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=%2fdynamics365%2fcommerce%2ftoc.json)
 - [What's new or changed in Dynamics 365 Commerce](../get-started/whats-new-home-page.md)
 - [What's new and changed in Platform updates](../../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md)
 
@@ -129,7 +127,7 @@ For a general overview of each application release, always check the "What's new
 ## What's changed in the 10.0.13 release
 
 - In version 10.0.13, application development that uses X++ requires Visual Studio 2017. If you haven't yet updated to Visual Studio 2017, review the section about version 10.0.11 earlier in this topic.
-- Microsoft is working to rebuild the VHD templates that are used to provision developer and test environments. When this work is completed, the VHD templates will automatically include Visual Studio 2017. Although there is no confirmed date for when the rebuilt templates will be available, Microsoft expects them to be ready soon after version 10.0.13 is generally available in September 2020. For more information, see [Action Required - .NET version and Visual Studio 2017](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017).
+- Starting with version 10.0.13, the VHD templates that you use to provision developer and test environments will include Visual Studio 2017. For more information, see [Visual Studio 2017 requirements for X++](../../fin-ops-core/dev-itpro/dev-tools/developer-tools-vs2017.md) and [Action Required - .NET version and Visual Studio 2017](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017).
 
 ## Where to go for help
 
@@ -138,3 +136,6 @@ For a general overview of each application release, always check the "What's new
 3. Check the [Retail SDK FAQ](retail-sdk/sdk-faq.md). It's updated as common issues are identified.
 4. Submit a support request through LCS. Provide as much information as you can about the issue. When you submit the request, send a copy to your FastTrack solution architect.
 5. Expect to share your screen with your partner, the support specialist, your solution architect, or even a combination of the three. Be prepared to reproduce the error.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

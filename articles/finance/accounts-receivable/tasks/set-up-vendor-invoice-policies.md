@@ -4,11 +4,9 @@
 title: Set up vendor invoice policies
 description: This topic explains how to set up vendor invoice policies. 
 author: ShivamPandey-msft
-manager: AnnBe 
 ms.date: 07/11/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -75,3 +73,6 @@ This topic explains how to set up vendor invoice policies. Vendor invoice polici
 16. Select **OK**.
 17. Close the pages to return to the home page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

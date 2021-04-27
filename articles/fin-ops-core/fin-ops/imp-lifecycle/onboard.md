@@ -4,11 +4,9 @@
 title: Onboard an implementation project
 description: This topic describes how to onboard a project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
-manager: AnnBe
 ms.date: 05/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -62,7 +60,7 @@ To get started with LCS, see [Lifecycle Services (LCS) for Finance and Operation
 
 After the LCS **Implementation project** workspace is provisioned, the Microsoft FastTrack team will monitor your onboarding progress. If project onboarding is not completed within a few weeks after creating an LCS **Implementation project**, a reminder will be sent to the project team. 
 
-For more information about the FastTrack program and the services provided, see [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md).
+For more information about the FastTrack program and the services provided, see [Microsoft FastTrack](/dynamics365/fasttrack/).
 
 For more information about LCS project onboarding, see [LCS project onboarding](../../dev-itpro/lifecycle-services/project-onboarding.md).
 
@@ -78,3 +76,6 @@ We recommend that you add key project members (such as project managers) from th
 Be sure to keep the milestone dates in your LCS project current. In this way, you help us connect with you at different project stages. When you're closer to your go-live date, we will contact you for a project Go-live assessment before we deploy your production environment.
 
 Milestone dates are stored in the LCS implementation methodology. For more information, see the [Methodologies](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) section of the "LCS for Customers" topic.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
