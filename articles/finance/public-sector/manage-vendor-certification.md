@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Maintain vendor certification
 description: This topic describes the steps that vendors can use to  maintain their certifications using the Vendor collaboration workspace. 
-manager: v-kiarnd
-ms.date: 02/09/2021
+author: roschlom
+ms.date: 04/27/2021
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User
-# ms.devlang: 
-ms.reviewer: roschlom
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: kamaybac
 ms.search.region: Global
-ms.search.industry: supply chain management
 ms.author: roschlom
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.18
-
 ---
 
 # Maintain vendor certification
