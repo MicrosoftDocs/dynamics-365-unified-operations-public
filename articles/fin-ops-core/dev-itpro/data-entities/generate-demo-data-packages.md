@@ -177,10 +177,6 @@ After you load the data packages, you must also manually follow these steps.
 4. After you load the Project management and accounting packages, you must run the **Resource capacity roll-up** batch job. You can run this job from the **Synchronize resource capacity roll-ups** page (**Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resource capacity roll-ups**). Specify an end date that lets you schedule resources a long time in the future. After the batch job is run, automatic generation of team functionality will be enabled in the project's work breakdown structure (WBS).
 5. Add Print management settings for each module.
 
-### Scenario scripts
-
-Scripts have been provided for many of the scenarios that the demo data supports. You can find these scripts in [Demo data scripts](https://go.microsoft.com/fwlink/?linkid=861599).
-
 ## Transactions and automatic posting
 
 Many scenarios for demo data require that transactions be processed after they are imported. You can process transactions by using the Ready to post feature. This feature includes both a page that lets you define the transactions that should be posted, and an entity that lets you import the definitions and automatically run them.
