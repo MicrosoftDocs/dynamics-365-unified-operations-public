@@ -32,11 +32,11 @@ If you encounter issues while you copy pre-existing data between Finance and Ope
 
 ![Initial sync error](media/Initial-sync-rerun-1.png)
 
-Clicking on the individual project will show you the direction in which sync failed (Finance and Operations apps to Dataverse or vice-versa) with details of why it failed. You can choose to fix the underlying issues and **Re-run execution** which retries the entire execution, along with the records that failed or errored out in the last sync. Once this completes, initial sync is completed and the table gets into running state. There may be cases, when you want to ignore the errors and add new incremental data. In such cases, you could choose to **Rerun execution without errors** which lets you add new data and not retry the errored records. 
+Clicking on the individual project will show you the direction in which the sync failed (Finance and Operations app to Dataverse or vice-versa) and details of why it failed. You can choose to fix the underlying issues and then select **Re-run execution** which retries the entire execution, along with the records that failed or errored out in the last sync. Once this completes, initial sync is completed and the table returns to the **Running** state. There may be cases where you want to ignore the errors and add new incremental data. In these cases, you can select **Rerun execution without errors**, which lets you add new data and not retry the errored records. 
 
 ![Initial sync retry with errors](media/Initial-sync-rerun-3.png)
 
-Once it is done, the status is marked Completed after which you could put the table into running state. 
+Once it is done, the status is marked **Completed** and then you can change the table to the **Running** state. 
 
 ![Initial sync retry without errors](media/Initial-sync-rerun-4.png)
 
