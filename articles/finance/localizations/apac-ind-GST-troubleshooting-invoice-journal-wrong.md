@@ -26,8 +26,6 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
 ---
 
-
-
 # Field value in an invoice journal or voucher is wrong
 
 [!include [banner](../includes/banner.md)]
@@ -64,37 +62,36 @@ On the tax document, select **Voucher** to check if the amount is posted to othe
 
 ##  Debug the code to analyze the logic
 
-  1. If field in voucher (table GeneralJournalAccountEntry) is wrong, go to Microsoft.
+- If the field in the voucher (**GeneralJournalAccountEntry** table) is wrong, report the bug to Microsoft.
+- If field in posted sales tax (**TaxTrans** table) is wrong: 
 
-  2. If filed in posted sales tax (table TaxTrans) is wrong. 
+     1. Set a breakpoint in the **TaxAccountingPostTaxTransHandlerBase**.
+
+         [![Breakpoint in TaxAccountingPostTaxTransHandlerBase](./media/field-value-invoice-journal-voucher-Picture4.png)](./media/field-value-invoice-journal-voucher-Picture4.png)
+
+     2. Set breakpoints where the wrong value is assigned in **TaxAccountingPostTaxTransHandler**. For example, set breakpoints for **taxTrans.TaxAmount**.
+
+         [![Breakpoints for taxTrans.TaxAmount](./media/field-value-invoice-journal-voucher-Picture5.png)](./media/field-value-invoice-journal-voucher-Picture5.png)
+
+- If the field in **TaxDocumentRowTransaction** is wrong, set a breakpoint and check the logic.
+
+     1. Set a breakpoint in the **TaxAccountingPostTaxTransHandlerBase**.
+
+         [![Breakpoint for TaxAccountingPostTaxTransHandlerBase](./media/field-value-invoice-journal-voucher-Picture6.png)](./media/field-value-invoice-journal-voucher-Picture6.png)
+
+     2. Set breakpoints where the wrong value is assigned in **TaxAccountingPostTaxRowTransHandler**. For example, set breakpoints for **taxDocumentRowTransaction.BaseAmountCur**. 
+
+         [![Breakpoints for taxDocumentRowTransaction.BaseAmountCur](./media/field-value-invoice-journal-voucher-Picture7.png)](./media/field-value-invoice-journal-voucher-Picture7.png)
+
+- If filed in TaxDocumentComponentTransaction is wrong. Set breakpoint as below, and check the logic.
 
      1. Set breakpoint in the "TaxAccountingPostTaxTransHandlerBase".
 
-         [![Direct taxes (tab)](./media/field-value-invoice-journal-voucher-Picture4.png)](./media/field-value-invoice-journal-voucher-Picture4.png)
-
-     2. Set breakpoints in the wrong  value assigned in "TaxAccountingPostTaxTransHandler". i.e., set breakpoints for "taxTrans.TaxAmount" 
-
-         [![Direct taxes (tab)](./media/field-value-invoice-journal-voucher-Picture5.png)](./media/field-value-invoice-journal-voucher-Picture5.png)
-
-  3. If field in TaxDocumentRowTransaction is wrong. Set breakpoint as below, and check the logic.
-
-  4. 1. Set breakpoint in the "TaxAccountingPostTaxTransHandlerBase".
-
-         [![Direct taxes (tab)](./media/field-value-invoice-journal-voucher-Picture6.png)](./media/field-value-invoice-journal-voucher-Picture6.png)
-
-     2. Set breakpoints in the wrong  value assigned in "TaxAccountingPostTaxRowTransHandler". i.e., set breakpoints for "taxDocumentRowTransaction.BaseAmountCur" 
-
-         [![Direct taxes (tab)](./media/field-value-invoice-journal-voucher-Picture7.png)](./media/field-value-invoice-journal-voucher-Picture7.png)
-
-  5. If filed in TaxDocumentComponentTransaction is wrong. Set breakpoint as below, and check the logic.
-
-  6. 1. Set breakpoint in the "TaxAccountingPostTaxTransHandlerBase".
-
-         [![Direct taxes (tab)](./media/field-value-invoice-journal-voucher-Picture8.png)](./media/field-value-invoice-journal-voucher-Picture8.png)
+         [![Breakpoint for TaxAccountingPostTaxTransHandlerBase](./media/field-value-invoice-journal-voucher-Picture8.png)](./media/field-value-invoice-journal-voucher-Picture8.png)
 
      2. Set breakpoints in the wrong value assigned in "TaxAccountingPostTaxCompTransHandler". i.e., set breakpoints for "taxDocumentComponentTransaction.TaxAmount" 
 
-         [![Direct taxes (tab)](./media/field-value-invoice-journal-voucher-Picture9.png)](./media/field-value-invoice-journal-voucher-Picture9.png)
+         [![Breakpoints for taxDocumentComponentTransaction.TaxAmount](./media/field-value-invoice-journal-voucher-Picture9.png)](./media/field-value-invoice-journal-voucher-Picture9.png)
 
 ## Determine whether customization exists
 
