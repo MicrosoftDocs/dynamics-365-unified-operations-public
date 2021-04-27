@@ -40,25 +40,18 @@ ms.dyn365.ops.version: Platform Update 34
 
 **Export to Data Lake** feature lets you copy data from your Finance and Operations apps into your own Azure Data Lake (Gen 2). The system let's you choose the tables and entities to include. After you select the data that you want, the system will make an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. There may be a delay of a few minutes between data changes in your Finance and Operations apps instances and the time when the data is available in your data lake. 
 
-Before you can use this feature, you must configure the **Export to Data Lake**. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
-
-
 ## Turn on the Export Data to Azure Data Lake feature
-
-An administrator must turn on the **Export to Data Lake** feature before it can be activated. To do this, go to the **Feature management** workspace, locate and select the **Export to Data Lake** feature, and then select **Enable**.
-
-After the feature is enabled, you should see the **Export to Azure Data Lake** option under **System administration**.
+Before you can use this feature, you must configure the **Export to Data Lake**. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
 
 ## Select data
 
 > [!NOTE]
 > If the feature, **Export to Azure Data Lake** isn't available in the **Feature management** module in your environment, sign in to the environment and add the following to the URL in your browser address: &mi=DataFeedsDefinitionWorkspace. For example, https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=DataFeedsDefinitionWorkspace.
 
-
 You can select the tables and entities that should be staged in Data Lake.
 
-1. In your environment, go to **System Administration** \> **Export to Data Lake**.
-2. Select **Export to Data Lake**.
+1. In your environment, go to **System Administration** \> **Setup** \> **Export to Data Lake**.
+2. You can also navigate to **Export to Data Lake** page using the search bar. Enter "Configure" in the search bar. You should see the link to in search results
 3. On the **Export to Data Lake** page, on the **Choose Tables** tab, select the data tables that should be staged in Data Lake. You can search for tables by display name or system name. You can also see whether a table is being synced. 
 4. When you've finished, select **Add Tables** to add the selected tables to Data Lake.
 
