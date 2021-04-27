@@ -66,18 +66,19 @@ If the value is wrong, the issue is related to posting. To resolve the issue, se
 
 ## Verify that the field value transferred to the GSTR report
 
-1. Go to **Workspaces** > **Electronic reporting** > **Reporting configurations*.
-2. Open the designer of related configuration, and then select **Mapping**. 
+1. Go to **Workspaces** > **Electronic reporting** > **Reporting configurations**.
+2. Select the configuration, and then select **Format designer**.
+3. On the **Format designer** page, select the **Mapping** tab. 
 
-     [![Direct taxes (tab)](./media/field-value-incorrect-in-GSTR-report-result-Picture3.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture3.png)
+     [![Format designer page, Mapping tab](./media/field-value-incorrect-in-GSTR-report-result-Picture3.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture3.png)
 
-3. Find the field in the *report name ->Sequence ->Lines ->Sequence* and check if the field mapping is correct, i.e., here we should find "parmPlaceOfSupply".
+4. In the tree, find the report name, and then expand **report name** > **Sequence** > **Lines** > **Sequence** and verify that the field mapping is correct. In the example for this topic, it should be, **parmPlaceOfSupply**.
 
-     [![Direct taxes (tab)](./media/field-value-incorrect-in-GSTR-report-result-Picture4.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture4.png)
+     [![Expanded tree showing the field mapping](./media/field-value-incorrect-in-GSTR-report-result-Picture4.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture4.png)
 
-4. Go to the **TaxGSTRReportContract_IN** class, and search method in report configuration to check if it exists. For example, here we should search "**parmPlaceOfSupply**" in TaxGSTRReportContract_IN. If not, report the bug to Microsoft. Otherwise, continue to the next section.
+5. Go to the **TaxGSTRReportContract_IN** class, and search in the report configuration to check if the field mapping exists. In the example for this topic, you would search on "**parmPlaceOfSupply**" in the **TaxGSTRReportContract_IN** class. If the field mapping doesn't exist, report the bug to Microsoft. Otherwise, continue to the next section.
 
-     [![Direct taxes (tab)](./media/field-value-incorrect-in-GSTR-report-result-Picture5.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture5.png)
+     [![TaxGSTRReportContract_IN class](./media/field-value-incorrect-in-GSTR-report-result-Picture5.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture5.png)
 
 ## Debug code to analyze the field logic
 
