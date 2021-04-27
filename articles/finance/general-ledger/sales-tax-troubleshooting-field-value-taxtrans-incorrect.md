@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-If you find that a field value in **TaxTrans** is incorrect, you can use the information in this topic to try and resolve the issue.
+If a field value in **TaxTrans** is incorrect, use the information in this topic to try to resolve the issue.
 
 ## Overview of values
 The following list shows how **TaxTrans**, **TaxUncommitted**, and **TmpTaxWorkTrans** are similar data sets, but in work differently.
@@ -40,7 +40,7 @@ The following list shows how **TaxTrans**, **TaxUncommitted**, and **TmpTaxWorkT
   - **TaxUncommitted** is the intermediate calculated tax result persisted in the database (if applicable), which will be used later in posting.
   - **TmpTaxWorkTrans** is the temporary calculated tax result in the in-memory table (Table Type = InMemory).
 
-If you find the root cause of an incorrect **TaxTrans** column, you also find the root cause of an incorrect **TaxUncommitted** or **TmpTaxWorkTrans** column, because the three columns are copied from each other.
+If you find the root cause of an incorrect **TaxTrans** column, you've also found the root cause of an incorrect **TaxUncommitted** or **TmpTaxWorkTrans** column. This is because the three columns are copied from each other.
 
 Typically, during tax calculation, **TmpTaxWorkTrans** is generated, and then, if applicable, **TaxUncommitted** is generated. During tax posting, **TaxTrans** is generated.
 
@@ -115,7 +115,7 @@ To add breakpoints, complete the following steps:
 
 ## Reproduce and debug
 
-After the breakpoints are set, every data persistency change is visible during debugging. To find the root cause of an incorrect column of **TaxTrans**, **TaxUncommitted**, or **TmpTaxWorkTrans**, review and note the following:
+After the breakpoints are set, every data persistency change is visible during debugging. To find the root cause of an incorrect column of **TaxTrans**, **TaxUncommitted**, or **TmpTaxWorkTrans**, review and note the following items:
 
 - The last breakpoint where the column is correct.
 - The first breakpoint where the column is incorrect.
