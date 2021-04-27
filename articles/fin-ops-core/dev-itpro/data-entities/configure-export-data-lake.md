@@ -33,15 +33,15 @@ ms.dyn365.ops.version: Platform Update 33
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The **Export to Azure Data Lake** feature is in limited preview and may not be available in all regions and environments supported by Finance and Operations apps. If you are unable to find the **Export to Azure Data Lake** functionality in Lifecycle Services (LCS) or your Finance and Operations apps, this feature is not currently available in your environment. 
+> The **Export to Data Lake** feature is in public preview in United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia and Japan regions. If your Finance and Operations environment is in above regions, you can enable this feature in your environment using Lifecycle Services (LCS).
 >
-> Currently, previews are closed. In the coming months we will enable additional environments in several regions. We are accepting requests from customers who would like to join the preview. If you would like to join a future preview, [complete the survey](https://aka.ms/FnODataLakePreviewSurvey). We will contact you when we are ready to include you. You can also join a Yammer group by [completing the survey](https://aka.ms/FnODataLakePreviewSurvey). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature.  
+> In the coming months we will enable this feature in additional regions based on the demand. If your environment is not in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join a Yammer group by [completing the survey](https://aka.ms/FnODataLakePreviewSurvey). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
 >
-> Until the feature is enabled in your environment, you have the option to prototype/plan the feature implementation using [GitHub tools](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md). The tools will enable you to export data from your sandbox environment into a storage account in the same format as exported by the feature. 
+> **Export to Data Lake** feature is not available in Tier-1 (developer) environments. You need a cloud-based Tier-2 or higher environment to enable this feature. 
+> 
+> With your Tier-1 (developer) environment, you can prototype or plan the feature implementation using [GitHub tools](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md). The tools will enable you to export data from your Tier-1 or Sandbox environment into a storage account in the same format as exported by the feature. 
 >
-> At this time, **Export to Azure Data Lake** feature is not available in Tier-1 (developer) environments. You need a cloud-based Tier-2 or higher environment to enable this feature.
->
-> To make aggregate measurements available in a data lake, continue to use the feature in the manner that is described in [Make entity store available as a Data Lake](entity-store-data-lake.md).
+
 
 ## <a name="createServicePrinciple"></a> Create Service Principle for Microsoft Dynamics ERP Microservices
 
@@ -204,6 +204,7 @@ If this is the first time you are installing add-ins in this environment, you ma
 
 To set up Power Platform integration from LCS, see [Add-ins overview](../power-platform/add-ins-overview.md).
 
+
 ### Option 2: Set up Power Platform integration using the Dual-write wizard
 
 Another way to set up **Power Platform integration** is to create a Power Platform environment with a database and then use the Dual-write setup. Complete the following steps to create the Power Platform environment and complete the integration. 
@@ -212,6 +213,10 @@ Another way to set up **Power Platform integration** is to create a Power Platfo
 2. [Complete the requirement and prerequisite](dual-write/requirements-and-prerequisites.md).  
 3. Use the [dual-write wizard to link your environment](dual-write/link-your-environment.md).
 4. Validate that the Power Platform integration is set up and added in the LCS environment page.  
+
+> [!NOTE]
+> If you follow this approach, you need to choose a Power platform environment in the same region as your Finance and Operations environment. 
+> If you choose a Power platform environment in a  different region, add-in installation may fail
 
 ## <a name="installaddin"></a>Install the Export to Data Lake add-in in LCS 
 
