@@ -1,38 +1,25 @@
 ---
-# required metadata
-
 title: Deferred processing of manual inventory movement operation
-description: This topic describes the functionality that makes deferred processing of inventory movement warehouse work available in  Dynamics 365 Supply Chain Management.
+description: This topic describes how to use deferred processing of manual inventory movement in Dynamics 365 Supply Chain Management
 author: Mirzaab
-ms.date: 04/06/2021
+ms.date: 04/27/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: Mirzaab
-ms.search.validFrom: 2021-4-30
+ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-
 ---
 
 # Deferred processing of manual inventory movement operation
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the functionality that makes deferred processing of manual inventory movement warehouse work available in Dynamics 365 Supply Chain Management.
+This topic describes how to use deferred processing of manual inventory movement in Dynamics 365 Supply Chain Management.
 
-Deferred processing lets warehouse workers continue to do other work while a put operation is processed in the background. Deferred processing is useful when the server can have ad-hoc or unplanned increases in processing time, and the increased processing time might affect workers' productivity. The *Inventory movement* work type has been added to the work types supported by this feature.
+Deferred processing lets warehouse workers continue to do other work while a put operation is processed in the background. Deferred processing is useful when the server can have ad-hoc or unplanned increases in processing time, and the increased processing time might affect workers' productivity. The *Inventory movement* work type has now been added to the work types supported by this feature.
 
 Background processing is achieved using the [Process warehouse app events feature](warehouse-app-events.md).
 
