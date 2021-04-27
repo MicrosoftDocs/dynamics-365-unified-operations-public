@@ -44,15 +44,13 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Job card device
 
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | The job card device is being replaced by the production floor execution interface |
-| **Replaced by another feature?**   | Yes, the job card device is replaced by the new production floor execution interface |
-| **Product areas affected**         | Supply Chain Management - Production control |
-| **Deployment option**              | Cloud and on-premises |
-| **Status**                         | Deprecated. The job card device will receive support with bug and security fixes, but feature enhancements will no longer be provided. After April 2022, the job card device will no longer be supported and customers will be asked to move to the new production floor execution interface. |
-
-
+|   |   |
+|---|---|
+| **Reason for deprecation/removal** | The [job card device](../production-control/config-job-card-device.md) is being replaced by the new [production floor execution interface](../production-control/production-floor-execution-configure.md). |
+| **Replaced by another feature?**   | Yes, the [job card device](../production-control/config-job-card-device.md) is to be replaced by the new [production floor execution interface](../production-control/production-floor-execution-configure.md). |
+| **Product areas affected** | Supply Chain Management - production control |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Deprecated. The job card device will receive support with bug and security fixes, but feature enhancements will no longer be provided. After April 2022, the job card device will no longer be supported and customers will be asked to move to the new production floor execution interface. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.18 release
 
