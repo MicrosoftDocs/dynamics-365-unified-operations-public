@@ -4,7 +4,7 @@
 title: Create an observable data action
 description: This topic describes how to create an observable data action in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/16/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -91,7 +91,7 @@ export default createObservableDataAction({
 });
 ```
 
-The **createObservableDataAction** method returns an **IObservableAction** interface.  The **IObservableAction** interface returns an **AsyncResult** class which provides additional data including the **status** and **error** properties of the data action. 
+The **createObservableDataAction** method returns an **IObservableAction** interface. The **IObservableAction** interface returns an **AsyncResult** class that provides additional data including the **status** and **error** properties of the data action. 
 
 A mock can be created to test the data action, as shown in the following example.
 
