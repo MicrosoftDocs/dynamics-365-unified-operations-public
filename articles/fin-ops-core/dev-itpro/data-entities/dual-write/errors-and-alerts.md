@@ -26,11 +26,12 @@ The activity log provides a chronological list of events that a specific table m
 
 ![Viewing the activity log](media/activity-log.png)
 
-If you encounter issues while you copy pre-existing data between Finance and Operations apps and Dataverse, the **Initial sync details** tab provides a count of the errors. It also lets you rerun the execution after you fix the underlying errors.
+## Re-running execution for Initial sync
 
-![Fixing errors and rerunning](media/fix-error-rerun.png)
+If you encounter issues while you copy pre-existing data between Finance and Operations apps and Dataverse, the **Initial sync details** tab provides a count of the errors. 
 
-You can drill down further to view the synchronization direction where the error occurred. This information can help you narrow down the scope for troubleshooting.
+![Initial sync error](media/sync.png)
+
 
 ![Viewing the synchronization direction error](media/sync-direction-error.png)
 
