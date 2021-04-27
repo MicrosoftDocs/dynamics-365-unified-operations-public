@@ -39,7 +39,7 @@ To use deferred processing, you must set up and use a work processing policy. Fo
 To set up a work processing policy:
 
 1. Go to **Warehouse management \> Setup \> Work \> Work processing policies**.
-1. Either select an existing policy from the list or create a new one by selected **New** on teh Action Pane. Each policy has the following settings in the header:
+1. Either select an existing policy from the list or create a new one by selected **New** on the Action Pane. Each policy has the following settings in the header:
 
     - **Work processing policy name** – The name of the work processing policy.
     - **Description** – A description of the work processing policy.
