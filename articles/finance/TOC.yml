@@ -1108,7 +1108,7 @@
           href: general-ledger/tasks/view-posted-sales-tax-transactions.md   
         - name: Print the Sales tax payment by code report
           href: general-ledger/print-sales-tax-payment-by-code-report.md
-        - name: Troubleshooting
+        - name: Sales tax troubleshooting
           items:
           - name: Tax is posted to the wrong ledger account in the voucher
             href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
