@@ -77,7 +77,7 @@ On the tax document, select **Voucher** to check if the amount is posted to othe
 
      1. Set a breakpoint in the **TaxAccountingPostTaxTransHandlerBase**.
 
-         [![Breakpoint for TaxAccountingPostTaxTransHandlerBase](./media/field-value-invoice-journal-voucher-Picture6.png)](./media/field-value-invoice-journal-voucher-Picture6.png)
+         [![Breakpoint in the TaxAccountingPostTaxTransHandlerBase](./media/field-value-invoice-journal-voucher-Picture6.png)](./media/field-value-invoice-journal-voucher-Picture6.png)
 
      2. Set breakpoints where the wrong value is assigned in **TaxAccountingPostTaxRowTransHandler**. For example, set breakpoints for **taxDocumentRowTransaction.BaseAmountCur**. 
 
