@@ -4,7 +4,7 @@
 title: Create a channel navigation hierarchy
 description: This topic describes how to create a channel navigation hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 01/27/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -81,7 +81,7 @@ To add products to category nodes, follow these steps.
 1. On the action pane, select **Save**.
 
 > [!NOTE]
-> Adding products to a node inside the channel navigation hierarchy is not sufficient for the products to show up on a selected channel, the products must also be assorted to a channel. See the [Assortment management](assortments.md) topic for more details.
+> Adding products to a node inside the channel navigation hierarchy is not sufficient for the products to show up on a selected channel, the products must also be assorted to a channel. For more information on assortments, see [Assortment management](assortments.md).
 
 The following image shows an example node with products added.
 
