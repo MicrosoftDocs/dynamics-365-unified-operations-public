@@ -59,10 +59,10 @@ You can select the tables and entities that should be staged in Data Lake.
 
 1. In your environment, go to **System Administration** \> **Export to Azure Data Lake**.
 2. Select **Configure Data feeds for export to Lake**.
-3. On the **Configure data feeds to Data Lake** page, on the **Choose Tables** tab, select the data tables that should be staged in Data Lake. You can search for tables by display name or system name. You can also see whether a table is being synced. 
+3. On the **Export to Data Lake** page, on the **Choose Tables** tab, select the data tables that should be staged in Data Lake. You can search for tables by display name or system name. You can also see whether a table is being synced. 
 4. When you've finished, select **Add Tables** to add the selected tables to Data Lake.
 
-    ![Selecting tables](./media/Export-Tables-toData-lake-unselectedv2.png)
+    ![Selecting tables](./media/Export-Table-to-Data lake -Tables-Running-state.png)
 
 5. Select **Activate data feed**, and then select **OK**. The system may show the status of this table as **Initializing** when you add the table. This means, the system is making an initial copy of data. When the initial copy is complete, the system changes the status to **Running**
 
@@ -72,15 +72,13 @@ If you aren't familiar with the specific tables that you require, you can select
     
 7. On the **Choose using Entities** tab, select the entities, and then select **Add Tables using Entities**.
 
-    ![Selecting tables by using entities](./media/Export-Entities-toData-lake-unselectedv2.png)
+    ![Selecting tables by using entities](./media/Export-Table-to-Data lake -Entities-Running-state.png)
     
     Regardless of the method that you use to select tables, the tables will be staged in Data Lake.
 
 ## Monitor the tables in Data Lake
 
-You don't have to monitor or schedule data exports because the system keeps the data updated in Data Lake. However, you can view the status of ongoing data exports on the **Active** tab on the **Configure data feeds to Data lake** page.
-
-![Monitoring table progress](./media/Export-Tables-toData-lake-monitorv2.png)
+You don't have to monitor or schedule data exports because the system keeps the data updated in Data Lake. However, you can view the status of ongoing data exports on the **Status** column on the **Export to Data lake** page.
 
 ## Troubleshooting common issues and errors
 
