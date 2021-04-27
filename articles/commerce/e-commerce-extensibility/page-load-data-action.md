@@ -4,7 +4,7 @@
 title: Page load data actions
 description: This topic covers page load data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 09/30/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
