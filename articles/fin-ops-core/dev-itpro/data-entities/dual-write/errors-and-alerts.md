@@ -61,7 +61,7 @@ When you resume the table map, it switches from the **Pause** state to the **Run
 
 The detailed Error message will help you fix the underlying issue after which you could **Retry selected** records or **Retry All** records. Once the retry is successful, **Retry status** will be marked as **Completed**.
 
-![Queued records retry selected](media/Queued-Insights-retry-selected4.png "Queued records retry selected")
+![Queued records completed](media/Queued-Insights-retry-selected4.png "Queued records retry selected")
 
 > [!NOTE]
 > Errored records will be available in the queue for 7 days after which will the queue will be purged. In some cases, you may no longer need these records and they can be deleted from the queue.
