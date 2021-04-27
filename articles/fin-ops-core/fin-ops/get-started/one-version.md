@@ -4,7 +4,7 @@
 title: One Version service updates FAQ
 description: This topic provides clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: ShellyBakke
-ms.date: 04/05/2021
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -210,7 +210,7 @@ Data task automation lets you easily repeat many types of data tasks and validat
 
 ### How can I determine what's changed in a service update?
 
-The What’s new or Changed documentation is the primary source for the details contained in each service update. The [Release plans](/business-applications-release-notes/) are the primary source of information for all new features and changes for a future release. Features will also include help topics in docs.microsoft.com as needed. An impact analysis tool will be available in LCS to help you better understand the impact om the features that you use.
+The What’s new or Changed documentation is the primary source for the details contained in each service update. The [Release plans](/business-applications-release-notes/) are the primary source of information for all new features and changes for a future release. Features will also include help topics in docs.microsoft.com as needed. 
 
 ### How will I know if there is a deprecated feature that will impact me if I’m not doing active development/ recompile my code? 
 
