@@ -51,7 +51,7 @@ Before you can use this feature, you must configure the **Export to Data Lake**.
 You can select the tables and entities that should be staged in Data Lake.
 
 1. In your environment, go to **System Administration** \> **Setup** \> **Export to Data Lake**.
-2. You can also navigate to **Export to Data Lake** page using the search bar. Enter "Configure" in the search bar. You should see the link to in search results
+2. You can also navigate to **Export to Data Lake** page using the search bar. Enter "Configure" in the search bar. You should see the link in search results
 3. On the **Export to Data Lake** page, on the **Choose Tables** tab, select the data tables that should be staged in Data Lake. You can search for tables by display name or system name. You can also see whether a table is being synced. 
 4. When you've finished, select **Add Tables** to add the selected tables to Data Lake.
 
