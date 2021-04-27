@@ -96,9 +96,9 @@ The BYOD feature has the following limitations:
 
 ### Staging tables aren't clearing
 
-**Issue:** When using staging for the project it can occur that the staging tables don't clear out correctly. The data in the tables then continues to grow causing performance issues.
+**Issue:** When using staging for the project, the staging tables don't clear out correctly. The data in the tables then continues to grow, causing performance issues.
 
-**Solution:** Seven days of history is maintained in the staging tables. Historical data older than seven days is automatically cleared from the staging tables by the **Import export staging cleanup** batch job. If this job gets stuck then the tables won't clear out correctly. Restarting this batch job will continue the process to automatically clear out the staging tables.
+**Solution:** Seven days of history is maintained in the staging tables. Historical data older than seven days is automatically cleared from the staging tables by the **Import export staging cleanup** batch job. If this job gets stuck, the tables won't clear out correctly. Restarting this batch job will continue the process to automatically clear out the staging tables.
 
 ## See also
 
