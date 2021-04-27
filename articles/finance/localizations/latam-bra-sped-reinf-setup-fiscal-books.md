@@ -5,7 +5,7 @@ title: Set up fiscal books
 description: This topic explains how to set up SPED-Reinf events by using Fiscal books in Microsoft Dynamics 365 Finance for Brazil.
 author: sndray
 manager: AnnBe
-ms.date: 04/09/2021
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -73,7 +73,7 @@ This setup is used to determine the agriculture acquisition type of incoming fis
     - **CFOP:** All, group, or table
     - **Fiscal classification**
 
-## GILRAT and SENAR taxes
+## Set up GILRAT and SENAR taxes
 
 1. Go to **Fiscal books** \> **Setup** \> **SPED Reinf** \> **GILRAT tax codes** or **SENAR tax codes**.
 2. Identify the sales tax codes that are used to represent GILRAT and SENAR taxes. In the definition of the sales tax codes, the tax type should be set to **Other**. The amount of these taxes is used in the **vlrRatDescPR** and **vlrSenarDesc** tags for event R-2055.
