@@ -1,11 +1,10 @@
 ---
 # required metadata
 
-title: Field value in invoice journal or voucher is wrong
-description:
+title: Field value in an invoice journal or voucher is wrong
+description: This topic provides troubleshooting information to help resolve the issue of incorrect field value in an invoice journal or voucher.
 author: yungu
-manager: beya
-ms.date: 02/04/2021
+ms.date: 02/27/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,44 +28,41 @@ ms.dyn365.ops.version: 10.0.1
 
 
 
-# Field value in invoice journal or voucher is wrong
+# Field value in an invoice journal or voucher is wrong
 
-[!include [banner](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/finance/includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-## **Symptom**
+When working with an invoice journal or voucher, you may find an incorrect field value in the following places:
 
-- The filed in posted sales tax (table TaxTrans) is wrong.
-- The field in TaxDocumentRowTransaction is wrong.
-- The field in TaxDocumentComponentTransaction is wrong.
-- The field in voucher (table GeneralJournalAccountEntry) is wrong.
+- Posted sales tax (**TaxTrans** table)
+- **TaxDocumentRowTransaction**
+- **TaxDocumentComponentTransaction**
+- Voucher (**GeneralJournalAccountEntry** table)
 
- 
+If this occurs, complete the sections in this topic to try to resolve the issue. In this topic, a free text invoice will be used as an example.
 
-## **Trouble shooting guide**
 
-**Here take free text invoice as an example.**
+## Check the tax document
 
-- **Step 1: Check tax document**
+Check whether the tax calculation issue is also on the tax document. If the tax document is incorrect, see [Tax amount is wrong after calculation](./apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md). If it isn't, continue to the next section.
 
-  Click tax document to check if it is tax calculation issue. If tax document is wrong as well, go to [Tax amount is wrong after calculation](./apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md); Otherwise, go to step 2.
+Complete the following steps to check if the tax amount on the tax document is correct.
 
-  For example, check if tax amount of tax document is right or not:
+1. On the **Tax document** page, expand the **Tax details** FastTab, and check the field information on the **Overview** and **Details** tabs.
 
-  1. Check *Tax details*: Overview and Details.
+     [![Tax details FastTab](./media/field-value-invoice-journal-voucher-Picture1.png)](./media/field-value-invoice-journal-voucher-Picture1.png)
 
-     [![Direct taxes (tab)](./media/field-value-invoice-journal-voucher-Picture1.png)](./media/field-value-invoice-journal-voucher-Picture1.png)
+2. In the lines view, select **View tax input** to check additional fields such as **Transaction date**, **Invoice date**, and **Tax direction**.
 
-  2. By the way, for other fields issue, you can also check "View tax input" in lines to find more information, i.e., transaction date, invoice date, tax direction and so on.
+      [![View tax input button](./media/field-value-invoice-journal-voucher-Picture2.png)](./media/field-value-invoice-journal-voucher-Picture2.png)
 
-      [![Direct taxes (tab)](./media/field-value-invoice-journal-voucher-Picture2.png)](./media/field-value-invoice-journal-voucher-Picture2.png)
+## Check voucher
 
-- **Step 2: Check voucher**
-
-  Click Voucher to check if the amount is posted to other account. If yes, go to the [[India GST posting\] Posted ledger account error](onenote:#[India GST posting] Posted ledger account error&section-id={0C2E0F0D-BD8F-4B30-9A49-6E8095D85BDA}&page-id={E441746C-22F2-4E7E-BAA6-C11D83CFB436}&end&base-path=https://microsoftapc.sharepoint.com/teams/dynamicstaxengine/SiteAssets/Dynamics Tax Engine/Tax Integration/Rocks.one); Otherwise, go to Step 3.
+On the tax document, select **Voucher** to check if the amount is posted to other account. If the amount is posted to another account, see [[India GST posting\] Posted ledger account error](onenote:#[India GST posting] Posted ledger account error&section-id={0C2E0F0D-BD8F-4B30-9A49-6E8095D85BDA}&page-id={E441746C-22F2-4E7E-BAA6-C11D83CFB436}&end&base-path=https://microsoftapc.sharepoint.com/teams/dynamicstaxengine/SiteAssets/Dynamics Tax Engine/Tax Integration/Rocks.one). If the amount isn't posted to a different account, continue to the next section.
 
    [![Direct taxes (tab)](./media/field-value-invoice-journal-voucher-Picture3.png)](./media/field-value-invoice-journal-voucher-Picture3.png)
 
-- **Step 3: Check/Debug code to analyze the logic.**
+##  Debug the code to analyze the logic
 
   1. If field in voucher (table GeneralJournalAccountEntry) is wrong, go to Microsoft.
 
@@ -100,8 +96,7 @@ ms.dyn365.ops.version: 10.0.1
 
          [![Direct taxes (tab)](./media/field-value-invoice-journal-voucher-Picture9.png)](./media/field-value-invoice-journal-voucher-Picture9.png)
 
-- **Step 4: If no issue is found in above steps, check whether customization exists. If not, create a service request to Microsoft for further support.**
+## Determine whether customization exists
 
-
-
-[!INCLUDE[footer-include](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/includes/footer-banner.md)]
+If you've completed the steps in the previous section but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
