@@ -61,6 +61,13 @@ When a request is throttled, the system provides a value indicating the duration
             } 
 ```
 
+## What are the current throttling limits for the Human Resources service?
+
+The throttling limits for the Human Resources service are based on three categories:
+- **API burst:** 500 requests in 5 minutes
+- **Time usage:** 5 minutes of total execution time in 5 minutes
+- **Concurrency:** 25 requests at any given time
+
 ## How do I access the Data management Yammer group?
 
 Follow this link: [Data management Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13408417).
