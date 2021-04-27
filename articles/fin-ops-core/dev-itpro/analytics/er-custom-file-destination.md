@@ -36,7 +36,7 @@ The application programming interface (API) of the [Electronic reporting (ER)](g
 
 ## Prerequisites
 
-You must deploy a topology that supports continuous build. For more information, see [Deploy topologies that support continuous build and test automation](../dev-itpro/perf-test/continuous-build-test-automation.md). You must have access to this topology for one of the following roles:
+You must deploy a topology that supports continuous build. For more information, see [Deploy topologies that support continuous build and test automation](../perf-test/continuous-build-test-automation.md). You must have access to this topology for one of the following roles:
 
 - Electronic reporting developer
 - Electronic reporting functional consultant
