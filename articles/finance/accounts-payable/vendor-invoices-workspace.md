@@ -38,7 +38,7 @@ The **Vendor invoice automation** workspace shows information that is related to
 
 ## Set up the workspace to show Power BI content
 
-You must complete this setup before data can be shown in Power BI visualizations in the **Vendor invoice entry** workspace.
+You must complete this setup before data can be shown in Power BI visualizations in the **Vendor invoice automation** workspace.
 
 1. In the **Feature management** workspace, filter the list to find the **Vendor invoice automation** feature.
 3. Select **Enable now**.
