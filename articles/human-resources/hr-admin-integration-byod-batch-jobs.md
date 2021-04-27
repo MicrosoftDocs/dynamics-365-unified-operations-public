@@ -94,6 +94,12 @@ The BYOD feature has the following limitations:
 
 **Solution:** The SQL change tracking tables might not be in the expected state. In cases of this type, we recommend that you turn off change tracking for the entity and then turn it back on. For more information, see [Enable change tracking for entities](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
+### Staging tables aren't clearing
+
+**Issue:** When using staging for the project, the staging tables don't clear out correctly. The data in the tables then continues to grow, causing performance issues.
+
+**Solution:** Seven days of history is maintained in the staging tables. Historical data older than seven days is automatically cleared from the staging tables by the **Import export staging cleanup** batch job. If this job gets stuck, the tables won't clear out correctly. Restarting this batch job will continue the process to automatically clear out the staging tables.
+
 ## See also
 
 [Data management overview](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
