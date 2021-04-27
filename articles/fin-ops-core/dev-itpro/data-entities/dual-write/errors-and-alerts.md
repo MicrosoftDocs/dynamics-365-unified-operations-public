@@ -26,13 +26,19 @@ The activity log provides a chronological list of events that a specific table m
 
 ![Viewing the activity log](media/activity-log.png)
 
-If you encounter issues while you copy pre-existing data between Finance and Operations apps and Dataverse, the **Initial sync details** tab provides a count of the errors. It also lets you rerun the execution after you fix the underlying errors.
+## Re-running execution for Initial sync
 
-![Fixing errors and rerunning](media/fix-error-rerun.png)
+If you encounter issues while you copy pre-existing data between Finance and Operations apps and Dataverse, the **Initial sync details** tab provides a count of the errors. 
 
-You can drill down further to view the synchronization direction where the error occurred. This information can help you narrow down the scope for troubleshooting.
+![Initial sync error](media/Initial-sync-rerun-1.png)
 
-![Viewing the synchronization direction error](media/sync-direction-error.png)
+Clicking on the individual project will show you the direction in which the sync failed (Finance and Operations app to Dataverse or vice-versa) and details of why it failed. You can choose to fix the underlying issues and then select **Re-run execution** which retries the entire execution, along with the records that failed or errored out in the last sync. Once this completes, initial sync is completed and the table returns to the **Running** state. There may be cases where you want to ignore the errors and add new incremental data. In these cases, you can select **Rerun execution without errors**, which lets you add new data and not retry the errored records. 
+
+![Initial sync retry with errors](media/Initial-sync-rerun-3.png)
+
+Once it is done, the status is marked **Completed** and then you can change the table to the **Running** state. 
+
+![Initial sync retry without errors](media/Initial-sync-rerun-4.png)
 
 ## Queued records insights and error management
 
@@ -55,7 +61,7 @@ When you resume the table map, it switches from the **Pause** state to the **Run
 
 The detailed Error message will help you fix the underlying issue after which you could **Retry selected** records or **Retry All** records. Once the retry is successful, **Retry status** will be marked as **Completed**.
 
-![Queued records retry selected](media/Queued-Insights-retry-selected4.png "Queued records retry selected")
+![Queued records completed](media/Queued-Insights-retry-selected4.png "Queued records retry selected")
 
 > [!NOTE]
 > Errored records will be available in the queue for 7 days after which will the queue will be purged. In some cases, you may no longer need these records and they can be deleted from the queue.
