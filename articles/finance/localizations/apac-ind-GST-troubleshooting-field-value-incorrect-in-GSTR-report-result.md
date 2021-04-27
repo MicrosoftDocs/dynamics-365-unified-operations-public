@@ -60,37 +60,35 @@ Refer to [Details for issue 459982 (dynamics.com)](https://fix.lcs.dynamics.com/
        where T3.TaxTransactionId = 'xx'; 
   ```
 
- [![Direct taxes (tab)](./media/field-value-incorrect-in-GSTR-report-result-Picture2.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture2.png)
+ [![Invoice number column in generated report](./media/field-value-incorrect-in-GSTR-report-result-Picture2.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture2.png)
  
-If the value is wrong, the issue is related to posting. To resolve the issue, see [Field value in invoice journal or voucher is wrong](./apac-ind-GST-troubleshooting-invoice-journal-wrong.md). Otherwise move to the next section.
+If the value is wrong, the issue is related to posting. To resolve the issue, see [Field value in invoice journal or voucher is wrong](./apac-ind-GST-troubleshooting-invoice-journal-wrong.md). IF the value is correct, move to the next section.
 
-## Check if code transfers the field value to GSTR report
+## Verify that the field value transferred to the GSTR report
 
-  1. Go to *Workspaces -> Electronic reporting -> Reporting configurations*.
-
-  2. Open the designer of related configuration. 
-
-  3. Click *Mapping*.
+1. Go to **Workspaces** > **Electronic reporting** > **Reporting configurations*.
+2. Open the designer of related configuration, and then select **Mapping**. 
 
      [![Direct taxes (tab)](./media/field-value-incorrect-in-GSTR-report-result-Picture3.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture3.png)
 
-  4. Find the field in the *report name ->Sequence ->Lines ->Sequence* and check if the field mapping is correct, i.e., here we should find "parmPlaceOfSupply".
+3. Find the field in the *report name ->Sequence ->Lines ->Sequence* and check if the field mapping is correct, i.e., here we should find "parmPlaceOfSupply".
 
      [![Direct taxes (tab)](./media/field-value-incorrect-in-GSTR-report-result-Picture4.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture4.png)
 
-  5. Go to class TaxGSTRReportContract_IN, and search method in report configuration to check if it exists. For example, here we should search "**parmPlaceOfSupply**" in TaxGSTRReportContract_IN. If not, report the bug to Microsoft; Otherwise, go to step 5.
+4. Go to the **TaxGSTRReportContract_IN** class, and search method in report configuration to check if it exists. For example, here we should search "**parmPlaceOfSupply**" in TaxGSTRReportContract_IN. If not, report the bug to Microsoft. Otherwise, continue to the next section.
 
      [![Direct taxes (tab)](./media/field-value-incorrect-in-GSTR-report-result-Picture5.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture5.png)
 
-- **Step 5: Check/Debug code to analyze the logic of field.**
+## Debug code to analyze the field logic
 
-- 1. Find references of the method shown in step 4.
+1. Find references of the method as explained earlier in the topic.
+2. Set breakpoints in the places where the method is called, and then debug it.
 
-  2. Set breakpoints in the places where the method is called and debug it.
+   [![Breakpoints in reference](./media/field-value-incorrect-in-GSTR-report-result-Picture6.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture6.png)
 
-     [![Direct taxes (tab)](./media/field-value-incorrect-in-GSTR-report-result-Picture6.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture6.png)
+## Determine whether customization exists
 
-- **Step 6: If no issue is found in above steps, check whether customization exists. If not, create a service request to Microsoft for further support.**
+If you've completed the steps in the previous section but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.
 
 
 
