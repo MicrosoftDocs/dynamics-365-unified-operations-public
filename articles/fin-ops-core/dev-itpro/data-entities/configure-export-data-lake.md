@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform Update 33
 > [!NOTE]
 > The **Export to Data Lake** feature is in public preview in United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia and Japan regions. If your Finance and Operations environment is in above regions, you can enable this feature in your environment using Lifecycle Services (LCS).
 >
-> In the coming months we will enable this feature in additional regions based on the demand. If your environment is not in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join a Yammer group by [completing the survey](https://aka.ms/FnODataLakePreviewSurvey). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
+> In the coming months we will enable this feature in additional regions based on the demand. If your environment is not in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join a preview Yammer group by [visiting the link here](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
 >
 > **Export to Data Lake** feature is not available in Tier-1 (developer) environments. You need a cloud-based Tier-2 or higher environment to enable this feature. 
 > 
