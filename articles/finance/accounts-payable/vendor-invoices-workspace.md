@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Vendor invoice entry workspace
+title: Vendor invoice automation workspace
 description: This topic explains how to set up the workspace that is related to vendor invoices and that shows the information that is available through Microsoft Power BI.
 author: abruer
 ms.date: 09/28/2020
@@ -25,7 +25,7 @@ ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
 ---
 
-# Vendor invoice entry workspace
+# Vendor invoice automation workspace
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -34,7 +34,7 @@ This topic explains how to set up the workspace that is related to vendor invoic
 
 ## Overview
 
-The **Vendor invoice entry** workspace shows information that is related to vendor invoice processing. It includes a **My work** view and an **Analytics - All companies** page. The **My work** view shows summary tiles, vendor transaction grids, and related vendor information. The **Analytics - All companies** page uses the capabilities of Power BI to show visualizations that are related to vendor invoices.
+The **Vendor invoice automation** workspace shows information that is related to vendor invoice processing. It includes a **My work** view and an **Analytics - All companies** page. The **My work** view shows summary tiles, vendor transaction grids, and related vendor information. The **Analytics - All companies** page uses the capabilities of Power BI to show visualizations that are related to vendor invoices.
 
 ## Set up the workspace to show Power BI content
 
@@ -58,7 +58,7 @@ To view the information that displayed in the workspace, you must have the Accou
 
 ### Company selection
 
-When the **Automate vendor invoices** feature is turned on, a **Company** field appears at the top of the workspace. The selection in the **Company** field affects all the information displayed in the workspace. By default, the view shows information for the company that you signed in to. By selecting a different company in the **Company** field, you can show information for that company on the workspace. You can then select a tile in the workspace to go the related page in the selected company.
+When the **Vendor invoice automation** feature is turned on, a **Company** field appears at the top of the workspace. The selection in the **Company** field affects all the information displayed in the workspace. By default, the view shows information for the company that you signed in to. By selecting a different company in the **Company** field, you can show information for that company on the workspace. You can then select a tile in the workspace to go the related page in the selected company.
 
 ### Summary tiles
 
