@@ -147,7 +147,8 @@ As is described in [Engineering companies and data ownership rules](engineering-
 
     - **None** – Update the existing product version (in-version update).
     - **New version** – Create a new version that is based on the selected product version.
-    - **New product** – Create a completely new product or product variant that is based on the selected product version.
+    - **New product** – Create a completely new product that is based on the selected product version.
+    - **New variant** – Create a new variant based on the existing impacted product. Its BOM and route information will be copied. 
 
 - For engineering change orders in an **operational company**, you can change the logistical data of the product. For example, you can enrich the existing BOM with settings for sourcing, add local routes or local BOMs, and even enrich a BOM by adding new BOM lines for local packaging materials, lubrication fluids, or instructions in the local language. Enrichments that users make in the operational company will be preserved when new updates are sent from the engineering company. For more information, see [Engineering companies and data ownership rules](engineering-org-data-ownership-rules.md).
 
