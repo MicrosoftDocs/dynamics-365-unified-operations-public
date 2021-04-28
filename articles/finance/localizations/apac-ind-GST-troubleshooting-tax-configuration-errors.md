@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax configuration errors
-description: This topic privdes troubleshooting iformation that can help with tax configuration errors. 
+description: This topic provides troubleshooting information that can help with tax configuration errors. 
 author: qire
 ms.date: 04/28/2021
 ms.topic: article
@@ -40,7 +40,7 @@ To resolve this issue, when you create a new posting type for a tax payable in a
    
 For more information, see [RCM transaction for GTA vendor does not show as “Y” in RCM column in GSTR2 report](https://fix.lcs.dynamics.com/Issue/Details?bugId=515068&dbType=3).
 
-## Model mapping error when configuring configuring CGST_TDS
+## Model mapping error when configuring CGST_TDS
 
 When you are configuring the CGST_TDS, you might receive a model mapping error that says no model mapping exists for the **TDS TCS Registration Number** data model. To resolve this issue, see [While configuring CGST_TDS facing model mapping error](https://fix.lcs.dynamics.com/Issue/Details?bugId=527080&dbType=3).
 
@@ -62,7 +62,7 @@ When you are configuring the CGST_TDS, you might receive a model mapping error t
 
 ## Error occurs when calculating GST
 
-When you use division in a formula, pay close attention when the divisor is equal to zero as it might cause an error when calculating GST. A pop-up execption with error message similar to the following might occur, *Attempted to divide by zero. Please check the formula of mapping field "xxx" for taxable document mapping "xxx" in active taxable document, it encounters an unhandled exception.* 
+When you use division in a formula, pay close attention when the divisor is equal to zero as it might cause an error when calculating GST. A pop-up exception with error message similar to the following might occur, *Attempted to divide by zero. Please check the formula of mapping field "xxx" for taxable document mapping "xxx" in active taxable document, it encounters an unhandled exception.* 
 
 In this section, **Net price = @.'Net Amount'/@.Quantity**, which is defined on the model mapping **PurchParmTable** is used as an example.
 
