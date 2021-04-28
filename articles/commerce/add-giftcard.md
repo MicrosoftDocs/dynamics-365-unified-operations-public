@@ -68,6 +68,12 @@ In Commerce site builder under **Site Settings \> Extensions**, there is a gift 
 > [!IMPORTANT]
 > These settings are available in the Dynamics 365 Commerce 10.0.11 release and are required only if you need support for SVS or Givex gift cards. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
+## Using internal gift cards in Storefront
+
+Internal gift cards should only be offered for payment in Storefront with extensions to make them more secure. This is because they are not optimized for use in an e-commerce environment. So, the following areas should be extended prior to use of internal gift cards in production. 
+
+- **Gift card number** - Internal gift cards use number sequences to generate gift card numbers. Number sequences can be easily predicted, so gift card number generation should be extended to 
+
 ## Add a gift card module to a page
 
 For instructions on how to add a gift card module to a checkout page and set the required properties, see [Checkout module](add-checkout-module.md).
