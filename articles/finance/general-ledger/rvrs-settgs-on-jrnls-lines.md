@@ -37,7 +37,7 @@ The general journal I created includes a reversing entry and reversing date on t
 
 ## Answer
 
-When the journal is posted, the reversing logic only looks at the **Revering entry** and **Reversing date** settings on the **Lines** section of the voucher. This allows a journal to have some vouchers marked for reversing, and others not.
+When the journal is posted, the reversing process looks only at the **Revering entry** and **Reversing date** settings on the **Lines** section of the voucher. This allows a journal to include some vouchers that are marked for reversing, and others that are not.
 
 The values from the journal are only used as defaults when adding *new* lines. Changing the values on the journal doesn’t affect existing lines. In this example, the voucher lines and were entered first, and then the Reversing entry and Reversing date were set on the journal. This doesn’t update the existing lines. 
 
