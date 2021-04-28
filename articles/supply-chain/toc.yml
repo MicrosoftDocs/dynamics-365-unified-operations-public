@@ -3169,6 +3169,8 @@
             href: warehousing/manage-warehouse-workers.md
           - name: Deferred processing of warehouse work
             href: warehousing/deferred-put.md
+          - name: Deferred processing of manual inventory movement operation
+            href: warehousing/deferred-processing-manual-inventory-movement.md
         - name: Cross-docking
           items:
           - name: Cross-docking from production orders to outbound docks
