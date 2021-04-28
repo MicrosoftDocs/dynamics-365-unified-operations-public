@@ -58,7 +58,7 @@ When you are configuring the CGST_TDS, you might receive a model mapping error t
 
       [![Taxable Document (India) page, Map model to data source button](./media/tax-configuration-errors-Picture4.png)](./media/tax-configuration-errors-Picture4.png)
 
-5. Define a model mapping for the tax identification number that refers to the model mapping of the **GST registration number**. For more information, see [Extend tax engine configurations](extend-tax-engine-configurations.md#complete-data-mapping-for-the-extended-taxable-document)..
+5. Define a model mapping for the tax identification number that refers to the model mapping of the **GST registration number**. For more information, see [Extend tax engine configurations](../general-ledger/extend-tax-engine-configurations.md#complete-data-mapping-for-the-extended-taxable-document).
 
 ## Error occurs when calculating GST
 
