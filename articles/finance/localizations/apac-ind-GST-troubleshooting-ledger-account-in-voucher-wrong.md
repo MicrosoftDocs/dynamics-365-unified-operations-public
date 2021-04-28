@@ -1,11 +1,10 @@
 ---
 # required metadata
 
-title: Ledger account in voucher is wrong
-description:
+title: Incorrect ledger account in the voucher 
+description: This topic provides troubleshooting information to help resolve the issue of an incorrect ledger account in the voucher.
 author: yungu
-manager: beya
-ms.date: 02/04/2021
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,62 +28,56 @@ ms.dyn365.ops.version: 10.0.1
 
 
 
-# Ledger account in voucher is wrong
+# Incorrect ledger account in the voucher 
 
-[!include [banner](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/finance/includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-## **Symptom**
+If you find that the ledger account in the voucher, complete the sections in this topic to try and resolve the issue. This topic will use the **IGST Interim** recoverable amount as the example.
 
-- Ledger account in voucher is wrong.
+## Verify that the amount is posted correctly 
+Check the voucher and verify that the posted amount is correct. If the posted amount is correct, continue to the next section. If the posted amount isn't correct, see [Tax amount is wrong after calculation](apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md)
 
- 
+## Check the tax configuration
 
-## **Trouble shooting guide**
+1. Complete the steps in the topic, [Current tax configuration designer](apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md) to open the designer of current tax configuration.
+2. Expand the **Tax document** node to **Tax document** > **Header** > **Lines** > **GST** > **IGST**, and select **IGST**.
 
-**Here take account for IGST Interim recoverable amount as an example.**
+     [![Expanded Tax document node](./media/ledger-account-voucher-wrong-Picture1.png)](./media/ledger-account-voucher-wrong-Picture1.png)
 
-- **Step 1: Check if the amount for this account is posted correctly in the voucher. If yes, go to step 2; Otherwise, go to** [Tax amount is wrong after calculation](./apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md)
+3. On the **Postings** tab, on the **Details** FastTab, find the account for **Interim Recoverable Amount**. Note the debit and credit information which you will need later. 
 
-- **Step 2: Check tax configuration**
+     [![Details FastTab](./media/ledger-account-voucher-wrong-Picture2.png)](./media/ledger-account-voucher-wrong-Picture2.png)
 
-- 1. According to [How to open designer of current used tax configuration](./apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md) to open the designer of current used tax configuration.
+4. Select **Condition** to open the formula.
 
-  2. Expand *Tax document* node to "*Tax document -> Header -> Lines -> GST ->      IGST*", and click "*IGST*" node.
+     [![Condition button](./media/ledger-account-voucher-wrong-Picture3.png)](./media/ledger-account-voucher-wrong-Picture3.png)
+        
+6. Check the formula to see if your setting matches the condition of the correct account. If they match, continue to the next section. If they don't, correct your settings or in the extension, modify the tax configuration.
 
-     [![Direct taxes (tab)](./media/ledger-account-voucher-wrong-Picture1.png)](./media/ledger-account-voucher-wrong-Picture1.png)
+     [![Formula](./media/ledger-account-voucher-wrong-Picture4.png)](./media/ledger-account-voucher-wrong-Picture4.png)
 
-  3. Click "*Posting*" under the related tax     component and find the account for "Interim Recoverable     Amount". Note down account in     debit and credit side, which will be used in step 3. 
+## Check the tax setup
 
-     [![Direct taxes (tab)](./media/ledger-account-voucher-wrong-Picture2.png)](./media/ledger-account-voucher-wrong-Picture2.png)
+1. Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
+2. On the **Companies** FastTAb, select the related company, and then select **Setup**.
 
-  4. Click "*Condition*" to open the formula. Check if your setting matches the condition of correct account. If yes, go to step 3; otherwise, correct your settings or modify tax configuration in extension.
+     [![Tax setup page](./media/ledger-account-voucher-wrong-Picture5.png)](./media/ledger-account-voucher-wrong-Picture5.png)
 
-     [![Direct taxes (tab)](./media/ledger-account-voucher-wrong-Picture3.png)](./media/ledger-account-voucher-wrong-Picture3.png)
+3. Go to **Tax document** > **Header** > **Lines** > **GST** > **IGST** or **Tax document** > **Header** > **Lines** > **GST** to check the tax values. If both values are empty, modify the tax configuration in the extension.
+4. Verify whether the account is correct. If the account isn't correct, modify it and then move ot the next step. If the account is correct, continue to the next section. The following graphic shows the posting type that is consistent with the debit and credit account you noted earlier the topic.
 
-     [![Direct taxes (tab)](./media/ledger-account-voucher-wrong-Picture4.png)](./media/ledger-account-voucher-wrong-Picture4.png)
+     [![Posting type values](./media/ledger-account-voucher-wrong-Picture6.png)](./media/ledger-account-voucher-wrong-Picture6.png)
 
-- **Step 3: Check tax setup**
+## Debug the code to analyze the logic
 
-- 1. Go to *Modules -> Tax -> Setup -> Tax configuration -> Tax setup.*
+  1. Set a breakpoint in the **TaxAccountingPostFacade::post()** class, and try to debug it to find root cause. If it is hard to debug, report the bug to Microsoft.
 
-  2. Click "*Setup*" in the related company
+     [![Breakpoint in TaxAccountingPostFacade::post()](./media/ledger-account-voucher-wrong-Picture7.png)](./media/ledger-account-voucher-wrong-Picture7.png)
 
-     [![Direct taxes (tab)](./media/ledger-account-voucher-wrong-Picture5.png)](./media/ledger-account-voucher-wrong-Picture5.png)
+## Determine whether customization exists
 
-  3. Click "*Tax document -> Header -> Lines -> GST -> IGST*" or "*Tax document -> Header -> Lines -> GST*" to check values. If they are both empty, modify tax configuration in extension.
-
-  4. Check the account is correct or not. If not, modify it; otherwise, go to step 4. Here posting type is consistency with debit/credit account in step 2.
-
-     [![Direct taxes (tab)](./media/ledger-account-voucher-wrong-Picture6.png)](./media/ledger-account-voucher-wrong-Picture6.png)
-
-- **Step 4: Check/Debug code to analyze the logic.**
-
-  1. Set breakpoint in class "TaxAccountingPostFacade::post()", try to debug it to find root cause. If it is hard to debug, go to Microsoft.
-
-     [![Direct taxes (tab)](./media/ledger-account-voucher-wrong-Picture7.png)](./media/ledger-account-voucher-wrong-Picture7.png)
-
-- **Step 5: If no issue is found in above steps, check whether customization exists. If not, create a service request to Microsoft for further support.**
+If you've completed the steps in the previous section but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.
 
 
 
-[!INCLUDE[footer-include](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
