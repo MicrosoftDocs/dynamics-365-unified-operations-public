@@ -70,12 +70,12 @@ In this section, **Net price = @.'Net Amount'/@.Quantity**, which is defined on 
 2. Select the **Taxable Document** > **Taxable Document (India)**, and the select **Designer**.
 3. On the **Taxable Document (India)** page, select **Map model to datasource**. 
 
-      [![Direct taxes (tab)](./media/tax-configuration-errors-Picture5.png)](./media/tax-configuration-errors-Picture5.png)
+      [![Taxable Document (India) page, Map model to data source](./media/tax-configuration-errors-Picture5.png)](./media/tax-configuration-errors-Picture5.png)
 
 4. Find and select the model mapping, **Bundler.PurchOrderParm**, and then select **Designer**.
 5. In the **Data model** section, expand **Header** > **Lines** and find **Net price**.
 
-      [![Direct taxes (tab)](./media/tax-configuration-errors-Picture6.png)](./media/tax-configuration-errors-Picture6.png)
+      [![Data model, Net price](./media/tax-configuration-errors-Picture6.png)](./media/tax-configuration-errors-Picture6.png)
 
    You can see that the formula of the **Net price** field is **@.'Net Amount'/@.Quantity**.
    
