@@ -31,7 +31,10 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic is for the sealed framework component installers released each month, beginning with the 10.0.18 release. This article explains how to use these installers to perform silent installation and servicing updates via command line arguments. Using these arguments, mass deployment could be performed through a variety of possible ways.
+This topic is for the sealed framework component installers released each month, beginning with the 10.0.18 release and made available in LCS (Lifecycle Services) in the Shared Asset Library. This article explains how to use these installers to perform silent installation and servicing updates via command line arguments. Using these arguments, mass deployment could be performed through a variety of possible ways.
+
+> [!NOTE]
+> The new Self-service sealed installers will not be made available in Headquarters and are only downloadable through LCS.
 
 ## Delimiters for mass deployment
 
