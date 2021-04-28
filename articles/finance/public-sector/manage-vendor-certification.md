@@ -1,12 +1,12 @@
 ---
 title: Maintain vendor certification
 description: This topic describes the steps that vendors can use to  maintain their certifications using the Vendor collaboration workspace. 
-author: roschlom
+author: v-kiarnd
 ms.date: 04/27/2021
 ms.topic: article
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User
-ms.reviewer: kamaybac
+ms.reviewer: roschloma
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-02-09
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.18
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the steps that vendors can use to  maintain their certifications using the **Vendor collaboration workspace**. Examples of certifications might include a Woman Business Enterprise (WBE) or a Leadership in Energy and Environment Design (LEED) company. Vendors will need to enter certification information in the **Vendor information** workspace. From there, vendors will select **More details**, and then select **Certifications**.
+This topic describes the steps that your vendors can use to  maintain their certifications using the **Vendor collaboration workspace**. Examples of certifications might include a Woman Business Enterprise (WBE) or a Leadership in Energy and Environment Design (LEED) company. Vendors will need to enter certification information in the **Vendor information** workspace. From there, vendors will select **More details**, and then select **Certifications**.
 
 To add a new certification, select the **Add** button that is located above the **Certification** grid in the **Vendor information** workspace. Enter the following information:
  
@@ -33,6 +33,6 @@ To add a new certification, select the **Add** button that is located above the 
 
 If there are documents related to the specific certification, you can attach them by selecting the **Document** button.
 
-Certifications that are entered by the vendor on this page will be assigned a source of “Vendor”. You can enter certificate information on the vendors behalf under vendor bank accounts. The information will display here and the source will display as **Customer**.
+Certifications that are entered by your vendors on this page will be assigned a source of “Vendor”. You can enter certificate information on your vendor's behalf under vendor bank accounts. The information will display here and the source will display as **Customer**.
 
 Vendors can edit or delete their certifications as needed.
