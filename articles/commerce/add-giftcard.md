@@ -76,6 +76,18 @@ Internal gift cards should only be offered for payment in Storefront with extens
 - **GetBalance** - The API used to lookup gift cards is public by default. If PIN is not required to look up gift card balances, this API could be abused by brute force attempts to look up gift card numbers with balances. Implementing PIN requirements for internal gift cards or API throttling could both be used to mitigate the risk of brute force attempts to guess gift card numbers.
 - **PIN** - Out of box, internal gift cards do not support PIN numbers. Internal gift cards should be extended to require PIN number for balance lookup. This could also be leveraged to lock gift cards after consecutive wrong PIN attempts.
 
+## Enable gift card payments for guest checkout
+
+By default, gift card payments are not enabled for guest checkout. To enable gift card payments for anonymous checkout, follow the following steps:
+
+1. In the back office, search for **POS Operations**.
+2. In the header of the grid listing POS operations, right click and select **Add a field**.
+3. In the list of columns available, check the box for "**AllowAnonymousAccess**.
+4. Click **Update**.
+5. Set the **AllowAnonymousAccess** value to "1" for operation **520** (Gift card balance) and operation **214**.
+6. Click **Save**
+7. Run the **1090** scheduler job to sync changes to the channel database. 
+
 ## Add a gift card module to a page
 
 For instructions on how to add a gift card module to a checkout page and set the required properties, see [Checkout module](add-checkout-module.md).
