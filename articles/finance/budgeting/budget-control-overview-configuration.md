@@ -3,8 +3,8 @@
 
 title: Budget control overview
 description: This article introduces budget control and provides information to help you configure budget control in Microsoft Dynamics 365 Finance so that you can manage financial resources.
-author: ShylaThompson
-ms.date: 01/11/2018
+author: panolte
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
