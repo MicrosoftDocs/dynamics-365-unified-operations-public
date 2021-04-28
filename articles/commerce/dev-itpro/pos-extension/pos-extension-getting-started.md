@@ -26,11 +26,11 @@ Extension installers are independent from the core POS installer. They are separ
 
 The independent POS extension model is supported ny Dynamics 365 Commerce application version 10.0.18 and later. In earlier versions, extensions and the core POS code are packaged as one installer and serviced together, therefore, you can’t independently deploy extension and core POS changes.
 
-The POS independent extension model isolates the extension from the out-of-box component using the Windows Optional package framework for MPOS and POS extension framework for CPOS. The other app types use the CPOS extension model because the Store Commerce, Hybrid iOS and Android app is a shell (wrapper) that hosts the CPOS.
+The POS independent extension model isolates the extension from the out-of-box component using the Windows Optional package framework for MPOS and POS extension framework for CPOS. The other app types use the CPOS extension model because the Store Commerce app in Microsoft Dynamics 365 Commerce, Hybrid iOS app, and Android app are shells (wrapper) that host the CPOS.
 
 ## Getting started with POS extension
 
-Depending on your Store topology, choose the POS application type. The extension developed for one POS app type can be used in other POS app types. If your extension has a dependency on the POS application type, then it can’t be used in another application type. We recommend that you try to avoid such dependencies during extension development.
+Depending on your store topology, choose the POS application type. The extension developed for one POS app type can be used in other POS app types. If your extension has a dependency on the POS application type, then it can’t be used in another application type. We recommend that you try to avoid such dependencies during extension development.
 
 ## Set up the POS development environment
 
