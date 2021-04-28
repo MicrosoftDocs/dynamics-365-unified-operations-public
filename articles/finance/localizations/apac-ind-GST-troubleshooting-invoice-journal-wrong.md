@@ -56,7 +56,7 @@ Complete the following steps to check if the tax amount on the tax document is c
 
 ## Check voucher
 
-On the tax document, select **Voucher** to check if the amount is posted to other account. If the amount is posted to another account, see [[India GST posting\] Posted ledger account error](onenote:#[India GST posting] Posted ledger account error&section-id={0C2E0F0D-BD8F-4B30-9A49-6E8095D85BDA}&page-id={E441746C-22F2-4E7E-BAA6-C11D83CFB436}&end&base-path=https://microsoftapc.sharepoint.com/teams/dynamicstaxengine/SiteAssets/Dynamics Tax Engine/Tax Integration/Rocks.one). If the amount isn't posted to a different account, continue to the next section.
+On the tax document, select **Voucher** to check if the amount is posted to other account. If the amount is posted to another account, see [Incorrect ledger account in the voucher](apac-ind-GST-troubleshooting-ledger-account-in-voucher-wrong.md). If the amount isn't posted to a different account, continue to the next section.
 
    [![Direct taxes (tab)](./media/field-value-invoice-journal-voucher-Picture3.png)](./media/field-value-invoice-journal-voucher-Picture3.png)
 
