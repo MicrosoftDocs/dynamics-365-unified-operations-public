@@ -1,11 +1,10 @@
 ---
 # required metadata
 
-title: The tax configuration errors
-description:
-author: hailxu
-manager: beya
-ms.date: 02/04/2021
+title: Tax configuration errors
+description: This topic privdes troubleshooting iformation that can help with tax configuration errors. 
+author: qire
+ms.date: 04/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,19 +26,21 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
 ---
 
+# Tax configuration errors
 
+[!include [banner](../includes/banner.md)]
 
-# The tax configuration errors
+## RCM transactions
 
-[!include [banner](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/finance/includes/banner.md)]
+When RCM transactions are posted for a vendor marked as a Goods transport agency (GTA), and the transaction is marked as having a reverse charge percentage updated as 100% in the tax document, then the **Is reverse charge applicable** field isn't updated to **Yes** in the GSTR 2 report.
 
-1. [Details for issue 515068](https://fix.lcs.dynamics.com/Issue/Details?bugId=515068&dbType=3): RCM transaction for GTA vendor does not show as “Y” in RCM col[India GST calculation]     Centralize the tax configuration errorsumn in GSTR2 report
+To resolve this issue, when you create a new posting type for a tax payable in a tax configuration, select **Tax** in the **Tax accounting provider** field and **Tax payable** in the **Tax Posting Type** field.
 
-   **Symptom**: RCM transactions is posted for a vendor marked as GTA and in tax document the transaction is having Reverse charge percentage updated as 100% then in the GSTR 2 report > Invoice and Bill of Supply > Is reverse charge applicable field is not updated as Yes
+   [![Tax accounting provider and Tax posting type fields](./media/tax-configuration-errors-Picture1.png)](./media/tax-configuration-errors-Picture1.png)
+   
+For more information, see [RCM transaction for GTA vendor does not show as “Y” in RCM column in GSTR2 report](https://fix.lcs.dynamics.com/Issue/Details?bugId=515068&dbType=3).
 
-   **Solution**: When creating new posting type for tax payable in tax configuration, make sure set the *Tax* *accounting provided* as "Tax" and *Tax Posting Type* as "Tax Payable".
-
-   [![Direct taxes (tab)](./media/tax-configuration-errors-Picture1.png)](./media/tax-configuration-errors-Picture1.png)
+## Model mapping error when configuring configuring CGST_TDS
 
 2. [Details for issue 527080](https://fix.lcs.dynamics.com/Issue/Details?bugId=527080&dbType=3): IN- While configuring CGST_TDS facing model mapping error. No model mapping exists for the 'TDS TCS Registration Number' data model.
 
@@ -92,5 +93,4 @@ ms.dyn365.ops.version: 10.0.1
    7. Please confirm with business department if the Quantity is allowed to be zero. If no, please correct the transaction and perform the operation again. If yes, please correct the formula to the format like **IF(@.Quantity = 0, @.'Net Amount', @.'Net Amount'/@.Quantity)**
 
 
-
-[!INCLUDE[footer-include](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
