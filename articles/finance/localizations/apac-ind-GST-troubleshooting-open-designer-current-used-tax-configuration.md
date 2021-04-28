@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to open designer of current used tax configuration
+title: Current tax configuration designer
 description:
 author: yungu
 manager: beya
