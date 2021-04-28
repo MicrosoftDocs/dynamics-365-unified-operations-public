@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.17
 
 This topic describes how to use deferred processing of manual inventory movement in Microsoft Dynamics 365 Supply Chain Management.
 
-Deferred processing lets warehouse workers continue to do other work while a put operation is processed in the background. Deferred processing is useful when the server can have ad-hoc or unplanned increases in processing time, and the increased processing time might affect worker productivity. The *Inventory movement* work type has now been added to the set of work types that this feature supports.
+Deferred processing lets warehouse workers continue to do other work while a put operation is processed in the background. Deferred processing is useful when the server can have occasional or unplanned increases in processing time, and the increased processing time might affect worker productivity. The *Inventory movement* work type has now been added to the set of work types that this feature supports.
 
 Background processing is achieved by using the [Process warehouse app events feature](warehouse-app-events.md).
 
