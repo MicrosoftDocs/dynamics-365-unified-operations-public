@@ -4,7 +4,7 @@
 title: Gift card module
 description: This topic covers gift card modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 04/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -68,25 +68,27 @@ In Commerce site builder under **Site Settings \> Extensions**, there is a gift 
 > [!IMPORTANT]
 > These settings are available in the Dynamics 365 Commerce 10.0.11 release and are required only if you need support for SVS or Givex gift cards. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
-## Using internal gift cards in Storefront
+## Extend internal gift cards for use in e-commerce storefronts
 
-Internal gift cards should only be offered for payment in Storefront with extensions to make them more secure. This is because they are not optimized for use in an e-commerce environment. So, the following areas should be extended prior to use of internal gift cards in production. 
+Since internal gift cards are not optimized by default for use in e-commerce environments, they should only be allowed to be used as storefront payment when they have been configured with extensions that make them more secure. The following gift card areas should be extended prior to allowing the use of internal gift cards in production.
 
-- **Gift card number** - Internal gift cards use number sequences to generate gift card numbers. Number sequences can be easily predicted, so gift card number generation should be extended to use a random crypto-secure string for gift card number being issued.
-- **GetBalance** - The API used to lookup gift cards is public by default. If PIN is not required to look up gift card balances, this API could be abused by brute force attempts to look up gift card numbers with balances. Implementing PIN requirements for internal gift cards or API throttling could both be used to mitigate the risk of brute force attempts to guess gift card numbers.
-- **PIN** - Out of box, internal gift cards do not support PIN numbers. Internal gift cards should be extended to require PIN number for balance lookup. This could also be leveraged to lock gift cards after consecutive wrong PIN attempts.
+- **Gift card number** - Internal gift cards use number sequences to generate gift card numbers. Since number sequences can easily be predicted, gift card number generation should be extended to use a random crypto-secure string for the gift card numbers being issued.
+- **GetBalance** - This API is used to look up gift card balances, and is public by default. If a PIN is not required to look up gift card balances, the **GetBalance** API could be abused through the use of brute force attempts to look up gift card numbers with balances. Implementing PIN requirements for internal gift cards and API throttling can both be used to mitigate the risk of brute force attempts to predict gift card numbers.
+- **PIN** - Out-of-the-box internal gift cards do not support PIN numbers by default. Internal gift cards should be extended to require PIN numbers for balance lookup. This functionality can also be used to lock gift cards after consecutive incorrect PIN entry attempts.
 
 ## Enable gift card payments for guest checkout
 
-By default, gift card payments are not enabled for guest checkout. To enable gift card payments for anonymous checkout, follow the following steps:
+By default, gift card payments are not enabled for guest checkout. 
 
-1. In the back office, search for **POS Operations**.
-2. In the header of the grid listing POS operations, right click and select **Add a field**.
-3. In the list of columns available, check the box for "**AllowAnonymousAccess**.
-4. Click **Update**.
-5. Set the **AllowAnonymousAccess** value to "1" for operation **520** (Gift card balance) and operation **214**.
-6. Click **Save**
-7. Run the **1090** scheduler job to sync changes to the channel database. 
+To enable gift card payments for anonymous checkout, follow these steps.
+
+1. In Commerce headquarters, search for **POS Operations**.
+1. Right-click the header of the grid listing POS operations, and then select **Add a field**.
+1. In the list of columns available, select the **AllowAnonymousAccess** check box.
+1. Select **Update**.
+1. For the operations **520** (Gift card balance) and **214**, set the **AllowAnonymousAccess** value to "1."
+1. Select **Save**.
+1. Run the **1090** scheduler job to synchronize changes to the channel database. 
 
 ## Add a gift card module to a page
 
