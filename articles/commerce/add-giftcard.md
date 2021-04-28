@@ -70,7 +70,7 @@ In Commerce site builder under **Site Settings \> Extensions**, there is a gift 
 
 ## Extend internal gift cards for use in e-commerce storefronts
 
-Since internal gift cards are not optimized by default for use in e-commerce environments, they should only be allowed to be used as storefront payment when they have been configured with extensions that make them more secure. The following gift card areas should be extended prior to allowing the use of internal gift cards in production.
+Since internal gift cards are not optimized by default for use in e-commerce storefronts, they should only be allowed to be used as payment when they have been configured with extensions that make them more secure. The following gift card areas should be extended prior to allowing the use of internal gift cards in production.
 
 - **Gift card number** - Internal gift cards use number sequences to generate gift card numbers. Since number sequences can easily be predicted, gift card number generation should be extended to use a random crypto-secure string for the gift card numbers being issued.
 - **GetBalance** - This API is used to look up gift card balances, and is public by default. If a PIN is not required to look up gift card balances, the **GetBalance** API could be abused through the use of brute force attempts to look up gift card numbers with balances. Implementing PIN requirements for internal gift cards and API throttling can both be used to mitigate the risk of brute force attempts to predict gift card numbers.
@@ -80,11 +80,11 @@ Since internal gift cards are not optimized by default for use in e-commerce env
 
 By default, gift card payments are not enabled for guest checkout. 
 
-To enable gift card payments for anonymous checkout, follow these steps.
+To enable gift card payments for anonymous guest checkout, follow these steps.
 
-1. In Commerce headquarters, search for **POS Operations**.
-1. Right-click the header of the grid listing POS operations, and then select **Add a field**.
-1. In the list of columns available, select the **AllowAnonymousAccess** check box.
+1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> POS Operations**.
+1. Right-click the header of the grid listing POS operations, and then select **Insert columns**.
+1. In the **Insert columns** dialog box, select the **AllowAnonymousAccess** check box.
 1. Select **Update**.
 1. For the operations **520** (Gift card balance) and **214**, set the **AllowAnonymousAccess** value to "1."
 1. Select **Save**.
