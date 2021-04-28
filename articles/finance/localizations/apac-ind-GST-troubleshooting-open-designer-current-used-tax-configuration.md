@@ -1,11 +1,10 @@
 ---
 # required metadata
 
-title: Current tax configuration designer
-description:
+title: Open the designer for the current tax configuration 
+description: This topic provides troubleshooting information to help open the designer for the current tax configuration.
 author: yungu
-manager: beya
-ms.date: 02/04/2021
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,50 +28,41 @@ ms.dyn365.ops.version: 10.0.1
 
 
 
-# How to open designer of current used tax configuration
+# Open the designer for the current tax configuration 
 
-[!include [banner](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/finance/includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-## **Symptom**
+This topic explains how to open the designer of the tax configuration currently in use. This topic will use the tax setup in standard environment as an example.
 
-- Unfamiliar with how to open designer of current used tax configuration
+## Find version of current used tax configuration
 
- 
+1. Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
+2. On the **Companies** FastTab, select the related company, and then select **Setup**.
 
-## **Trouble shooting guide**
+     [![Companies FastTab, Setup butotn](./media/open-designer-configuration-Picture1.png)](./media/open-designer-configuration-Picture1.png)
 
-**Here take tax setup in standard environment in Microsoft as an example.**
+3. Note the configuration version listed in the tree.
 
-- **Step 1: Find version of current used tax configuration**
+     [![Configuration version](./media/open-designer-configuration-Picture2.png)](./media/open-designer-configuration-Picture2.png)
 
-  1. Go to *Modules -> Tax -> Setup -> Tax configuration -> Tax setup.*
+## Open the designer of the currently used tax configuration
 
-  2. Click "*Setup*" in the related company
+1. Go to **Workspaces** > **Electronic reporting** > **Tax configurations**.
+2. Expand the **Taxable Document** node, and then expand **Taxable Document (India)** > **Tax (India GST)**.
 
-     [![Direct taxes (tab)](./media/open-designer-configuration-Picture1.png)](./media/open-designer-configuration-Picture1.png)
+     [![Expanded Taxable Document node](./media/open-designer-configuration-Picture3.png)](./media/open-designer-configuration-Picture3.png)
 
-  3. Note down the configuration version
+3. Select the currently used tax configuration based on the configuration version in step 1.
 
-     [![Direct taxes (tab)](./media/open-designer-configuration-Picture2.png)](./media/open-designer-configuration-Picture2.png)
+     [![Configurations page, selected tax configuration](./media/open-designer-configuration-Picture4.png)](./media/open-designer-configuration-Picture4.png)
 
-- **Step 2: Open designer of current used tax configuration**
+4. Select **Designer**.
 
-  1. Go to *Workspaces -> Electronic reporting -> Tax configurations.*
+     [![Configurations page, Designer button](./media/open-designer-configuration-Picture5.png)](./media/open-designer-configuration-Picture5.png)
 
-  2. Expand *Taxable Document* node to the final node. Here is "*Taxable Document -> Taxable Document (India) -> Tax (India GST)*"
+## Determine whether customization exists
 
-     [![Direct taxes (tab)](./media/open-designer-configuration-Picture3.png)](./media/open-designer-configuration-Picture3.png)
-
-  3. Select the current used tax configuration according to the configuration version of step 1.
-
-     [![Direct taxes (tab)](./media/open-designer-configuration-Picture4.png)](./media/open-designer-configuration-Picture4.png)
-
-  4. Click *Designer* button of current used tax configuration.
-
-     [![Direct taxes (tab)](./media/open-designer-configuration-Picture5.png)](./media/open-designer-configuration-Picture5.png)
-
-- **Step xx: If no issue is found in above steps, check whether customization exists. If not, create a service request to Microsoft for further support.**
+If you've completed the steps in the previous section but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.
 
 
-
-[!INCLUDE[footer-include](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
