@@ -72,7 +72,9 @@ In Commerce site builder under **Site Settings \> Extensions**, there is a gift 
 
 Internal gift cards should only be offered for payment in Storefront with extensions to make them more secure. This is because they are not optimized for use in an e-commerce environment. So, the following areas should be extended prior to use of internal gift cards in production. 
 
-- **Gift card number** - Internal gift cards use number sequences to generate gift card numbers. Number sequences can be easily predicted, so gift card number generation should be extended to 
+- **Gift card number** - Internal gift cards use number sequences to generate gift card numbers. Number sequences can be easily predicted, so gift card number generation should be extended to use a random crypto-secure string for gift card number being issued.
+- **GetBalance** - The API used to lookup gift cards is public by default. If PIN is not required to look up gift card balances, this API could be abused by brute force attempts to look up gift card numbers with balances. Implementing PIN requirements for internal gift cards or API throttling could both be used to mitigate the risk of brute force attempts to guess gift card numbers.
+- **PIN** - Out of box, internal gift cards do not support PIN numbers. Internal gift cards should be extended to require PIN number for balance lookup. This could also be leveraged to lock gift cards after consecutive wrong PIN attempts.
 
 ## Add a gift card module to a page
 
