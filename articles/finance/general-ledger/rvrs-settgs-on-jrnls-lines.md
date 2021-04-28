@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reverse settings on journals and lines 
-description: This topic describes 
+description: This topic addresses a question about why a reversing entry that was entered on a general journal wasn't included on the posted transaction.  
 author: kweekley
 ms.date: 04/29/2021
 ms.topic: index-page
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes
+This topic addresses a question about why a reversing entry that was entered on a general journal wasn't included on the posted transaction.  
 
 ## Question
 
-The General journal I created includes a reversing entry and reversing date on the journal. When I posted the journal, none of the vouchers were reversed. Why?
+The general journal I created includes a reversing entry and reversing date on the journal. When I posted the journal, none of the vouchers were reversed. Why?
 
 ## Answer
 
