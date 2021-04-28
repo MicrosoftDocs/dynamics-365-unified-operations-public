@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
+This topic describes how to configure, download, and install Modern POS on various platforms. This document is based on the legacy Self-service installer. For more information about the new, sealed Self-service installers, read the [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md) document. It then describes how to activate Modern POS through device activation.
 
 > [!NOTE]
 > There are two Modern POS installers: Modern POS and Modern POS with offline (this installer also installs the offline database).
