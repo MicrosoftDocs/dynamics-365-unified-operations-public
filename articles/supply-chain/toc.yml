@@ -1429,24 +1429,46 @@
           href: inventory/tasks/set-up-item-arrival-overview-profile.md
       - name: Quality management
         items:
-        - name: Quality management overview
-          href: inventory/enable-quality-management.md
-        - name: Quality management processes
+        - name: Quality and nonconformance management overview
           href: inventory/quality-management-processes.md
-        - name: Quality management for warehouse processes
-          href: inventory/quality-management-for-warehouses-processes.md
-        - name: Nonconformance management
-          href: inventory/enable-nonconformance-management.md
-        - name: Set up prerequisites for management
-          href: inventory/tasks/set-up-prerequisites-nonconformance-management.md
-        - name: Create and process a conformance
-          href: inventory/tasks/create-process-non-conformance.md
-        - name: Quarantine orders
-          href: inventory/quarantine-orders.md
-        - name: Set up quality orders
-          href: inventory/tasks/set-up-quality-orders.md
+        - name: Enable and configure quality and nonconformance management
+          items: 
+          - name: Enable quality and nonconformance management
+            href: inventory/enable-quality-management.md
+          - name: Quality management test instruments
+            href: inventory/quality-test-instruments.md
+          - name: Quality management tests
+            href: inventory/quality-tests.md
+          - name: Quality management test variables
+            href: inventory/quality-test-variables.md
+          - name: Quality management test groups
+            href: inventory/quality-test-groups.md
+          - name: Quality management item groups
+            href: inventory/quality-groups.md
+          - name: Quality management item sampling
+            href: inventory/quality-item-sampling.md
+          - name: Quality associations
+            href: inventory/quality-associations.md
+          - name: Workers responsible for approving nonconformances
+            href: inventory/quality-responsible-workers.md
+          - name: Nonconformance problem types
+            href: inventory/quality-problem-types.md
+          - name: Nonconformance quarantine zones
+            href: inventory/quality-quarantine-zones.md
+          - name: Nonconformance diagnostic types
+            href: inventory/quality-diagnostic-types.md
+          - name: Nonconformance operations
+            href: inventory/quality-operations.md
+          - name: Nonconformance operation charges
+            href: inventory/quality-charges.md
+        - name: Work with quality orders
+          href: inventory/quality-orders.md
         - name: Inspect the quality of goods
-          href: inventory/tasks/inspect-quality-goods.md
+          href: inventory/tasks/inspect-quality-goods.md  
+        - name: Create and process a nonconformance
+          href: inventory/tasks/create-process-non-conformance.md
+        - name: Work with quarantine orders
+          href: inventory/quarantine-orders.md
         - name: Inventory blocking
           href: inventory/inventory-blocking.md
         - name: Create and maintain inventory blocking
@@ -1993,6 +2015,8 @@
           href: procurement/vendor-onboarding.md
         - name: Vendor collaboration with external vendors
           href: procurement/vendor-collaboration-work-external-vendors.md
+        - name: Maintain vendor certification
+          href: ../finance/public-sector/manage-vendor-certification.md
         - name: Category requests from vendors
           href: procurement/category-requests-from-vendors.md
         - name: Vendor collaboration with customers
@@ -3013,6 +3037,8 @@
           href: warehousing/location-product-dimension-mixing.md
         - name: Putaway clusters
           href: warehousing/putaway-clusters.md
+        - name: Quality management for warehouse processes
+          href: inventory/quality-management-for-warehouses-processes.md
         - name: Quality check
           href: warehousing/quality-check.md
         - name: Troubleshoot inbound warehouse operations
@@ -3145,6 +3171,8 @@
             href: warehousing/manage-warehouse-workers.md
           - name: Deferred processing of warehouse work
             href: warehousing/deferred-put.md
+          - name: Deferred processing of manual inventory movement operation
+            href: warehousing/deferred-processing-manual-inventory-movement.md
         - name: Cross-docking
           items:
           - name: Cross-docking from production orders to outbound docks
