@@ -29,6 +29,6 @@ Companies in France are legally required to export data for accounting transacti
 This topic describes:
 
 -	[Pre-requisites to generate FEC compliant with accounting rules in France](emea-fra-fec-audit-file-pre-requisites.md)
--	[Structure of Dynamics 365 Finance data sources for FEC](emea-fra-fec-audit-file-pre-structure.md)
--	[How to prepare your Dynamics 365 Finance to generate FEC](emea-fra-fec-audit-file-pre-setup.md)
--	[How to generate FEC from Dynamics 365 Finance](emea-fra-fec-audit-file-pre-generation.md)
+-	[Structure of Dynamics 365 Finance data sources for FEC](emea-fra-fec-audit-file-structure.md)
+-	[How to prepare your Dynamics 365 Finance to generate FEC](emea-fra-fec-audit-file-setup.md)
+-	[How to generate FEC from Dynamics 365 Finance](emea-fra-fec-audit-file-generation.md)
