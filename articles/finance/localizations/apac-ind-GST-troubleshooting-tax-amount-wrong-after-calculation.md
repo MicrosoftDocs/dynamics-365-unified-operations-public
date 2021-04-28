@@ -2,10 +2,9 @@
 # required metadata
 
 title: Tax amount is wrong after calculation
-description:
+description: This topic provides troubleshooting information that helps you resolve the issue when the calculated tax amount is incorrect.
 author: hailxu
-manager: beya
-ms.date: 02/04/2021
+ms.date: 04/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,27 +30,19 @@ ms.dyn365.ops.version: 10.0.1
 
 # Tax amount is wrong after calculation
 
-[!include [banner](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/finance/includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+ 
+Complete the sections in this topic if the calculated tax on a business document is incorrect. In this topic, a purchase order is used as an example.
 
-## **Symptom**
+## Verify the tax rate is correct
 
-- Tax amount is wrong after calculation
-
-## **Trouble shooting guide**
-
-**The document uses Purchases Order to show the Trouble Shooting process. Other transactions can also refer to the steps.**
-
-**Step 1: Check if the tax rate is correct.**
-
-1. Go to *Tax -> Setup -> Tax configuration -> Tax setup*.
-
-2. In *Tax setup* form, select the company you are working on, then click *Setup.*
+1. Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
+2. On the **Tax setup** page, select the company you are working in, and then select **Setup**.
 
    [![Direct taxes (tab)](./media/tax-amount-wrong-Picture1.png)](./media/tax-amount-wrong-Picture1.png)
 
-3. Navigate to the corresponding Rate node. (e.g. Tax document >Header >Lines >GST >CGST >Rate).
-
-4. Based on the conditions, check if your transaction matches the correct rate. You can view transaction details via *Tax document > View tax input* dialog refer to the **step 2 a - c** of [Tax is not calculated](./apac-ind-GST-troubleshooting-tax-not-calculated.md)
+3. On the tax document, go to the **Header** > **Lines** > **GST** > **CGST** > **Rate** to find the corresponding rate node.
+4. Based on the conditions, see if your transaction matches the correct rate. You can view transaction details on the Tax document by selecting **View tax input**. For more information, see [Tax isn't calculated](apac-ind-GST-troubleshooting-tax-not-calculated.md)
 
    [![Direct taxes (tab)](./media/tax-amount-wrong-Picture2.png)](./media/tax-amount-wrong-Picture2.png)
 
@@ -81,11 +72,10 @@ ms.dyn365.ops.version: 10.0.1
 
    [![Direct taxes (tab)](./media/tax-amount-wrong-Picture5.png)](./media/tax-amount-wrong-Picture5.png)
 
-**Step 4: If no issue is found in above steps, check whether customization exists. If not, create a service request to Microsoft for further support.**
+## Determine whether customization exists
 
+If you've completed the steps in the previous sections but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.
 
-
-[!INCLUDE[footer-include](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/includes/footer-banner.md)]
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
 
