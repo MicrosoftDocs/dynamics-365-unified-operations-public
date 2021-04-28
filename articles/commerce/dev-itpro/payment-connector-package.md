@@ -61,11 +61,11 @@ To create a payment package that you can deploy, follow the steps in the next se
     ![Add Reference dialog box](./media/Reference.png)
     
 [!NOTE]
-> All payment connectors dll must be portable, having portable and non-potable payment connectors dll will cause issues in loading the connector.
+> All payment connector dll’s must be portable, having portable and non-portable payment connector dll’s will cause issues when loading the connector.
 
 8. If your extension needs an HTML and CSS file for the implementation, then add them as a resource file to your project. During deployment, the HTML files will be copied to the AosService\WebRoot\Resources\Html folder. The CSS files will be copied to the AosService\WebRoot\Resources\Styles folder, then accessed with the following URL format.
 
-Ex: GetPaymentAcceptPoint implementation should be updated to return this URL if required.
+Ex: GetPaymentAcceptPoint implementation should be updated to return this URL, if required.
 
 ```
 https://AOSUrl/resources/html/Myhtml.html
