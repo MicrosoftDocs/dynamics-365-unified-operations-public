@@ -4,7 +4,7 @@
 title: Generate demo data by using data packages
 description: This topic explains how to use demo data packages to generate data for your system.
 author: panolte
-ms.date: 06/06/2018
+ms.date: 04/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
