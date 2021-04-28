@@ -42,55 +42,44 @@ For more information, see [RCM transaction for GTA vendor does not show as “Y�
 
 ## Model mapping error when configuring configuring CGST_TDS
 
-2. [Details for issue 527080](https://fix.lcs.dynamics.com/Issue/Details?bugId=527080&dbType=3): IN- While configuring CGST_TDS facing model mapping error. No model mapping exists for the 'TDS TCS Registration Number' data model.
+When you are configuring the CGST_TDS, you might receive a model mapping error that says no model mapping exists for the **TDS TCS Registration Number** data model. To resolve this issue, see [While configuring CGST_TDS facing model mapping error](https://fix.lcs.dynamics.com/Issue/Details?bugId=527080&dbType=3).
 
-   For the specified issue, the solution has been provided. For other issue like "No model mapping exists for the 'xxx' data model", please refer to the trouble shooting guide below.
+   [![Model mapping error](./media/tax-configuration-errors-Picture2.png)](./media/tax-configuration-errors-Picture2.png)
 
-   **Symptom**: While configuring tax setup facing model mapping error. “No model mapping exists for the 'xxx' data model".
+ If you receive similar errors, such as "No model mapping exists for the 'xxx' data model", complete the following steps.
 
-   [![Direct taxes (tab)](./media/tax-configuration-errors-Picture2.png)](./media/tax-configuration-errors-Picture2.png)
+1. Go to **Workspaces** > **Electronic reporting** > **Tax configurations**.
+2. Select **Taxable Document**, select **Taxable Document (India)**, and then select **Designer** to open the designer for the **Taxable Document (India)**.
+3. Go to the **Taxable Document** node, and then expand **Header** > **Lines** > **Tax Identification Number**, and check if the reference model is selected.
 
-   1. Go to *Workspaces -> Electronic reporting -> Tax configurations.*
+      [![Taxable Document (India) page, Tax Identification Number field](./media/tax-configuration-errors-Picture3.png)](./media/tax-configuration-errors-Picture3.png)
 
-   2. Navigate to "*Taxable Document -> Taxable Document (India)"* and Click *Designer* button to open the designer of *Taxable Document (India).*
+4. Select **Map model to datasource**, and check if the model mapping for the reference model exists.
 
-   3. Navigate to the node "*Taxable Document > Header > Lines >* **Tax Identification Number**", check whether the reference model is selected.
+      [![Taxable Document (India) page, Map model to data source button](./media/tax-configuration-errors-Picture4.png)](./media/tax-configuration-errors-Picture4.png)
 
-      [![Direct taxes (tab)](./media/tax-configuration-errors-Picture3.png)](./media/tax-configuration-errors-Picture3.png)
+5. Define a model mapping for the tax identification number that refers to the model mapping of the **GST registration number**. For more information, see [Extend tax engine configurations](extend-tax-engine-configurations.md#complete-data-mapping-for-the-extended-taxable-document)..
 
-   4. Click *Map model to datasource*, check if exists model mapping for the Reference model.
+## Error occurs when calculating GST
 
-      [![Direct taxes (tab)](./media/tax-configuration-errors-Picture4.png)](./media/tax-configuration-errors-Picture4.png)
+When you use division in a formula, pay close attention when the divisor is equal to zero as it might cause an error when calculating GST. A pop-up execption with error message similar to the following might occur, *Attempted to divide by zero. Please check the formula of mapping field "xxx" for taxable document mapping "xxx" in active taxable document, it encounters an unhandled exception.* 
 
-   5. Following [Extend tax engine configurations - Finance |Dynamics 365 | Microsoft Docs ](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/extend-tax-engine-configurations#complete-data-mapping-for-the-extended-taxable-document)to define a model mapping for **Tax Identification Number** refer to the model mapping of **GST Registration Number**.
+In this section, **Net price = @.'Net Amount'/@.Quantity**, which is defined on the model mapping **PurchParmTable** is used as an example.
 
-3. When involving division in formula, the case that the divisor equals to 0     should be considered carefully.
-
-   Here
-
-   **Symptom:** When calculating GST, pop-up a execption with error message like *Attempted to divide by zero. Please check the formula of mapping field "xxx" for taxable document mapping "xxx" in active taxable document, it encounters an unhandled exception.* 
-
-   **Trouble shooting guide**:  
-
-   **Here take "Net price = @.'Net Amount'/@.Quantity" that defined on model mapping "PurchParmTable" as an example.**
-
-   1. Go to *Workspaces -> Electronic reporting -> Tax configurations.*
-
-   2. Navigate to "*Taxable     Document -> Taxable Document (India)"* and Click *Designer* button to open the designer of *Taxable Document (India).*
-
-   3. Click *Map model to datasource*. 
+1. Go to **Workspaces** > **Electronic reporting** > **Tax configurations**.
+2. Select the **Taxable Document** > **Taxable Document (India)**, and the select **Designer**.
+3. On the **Taxable Document (India)** page, select **Map model to datasource**. 
 
       [![Direct taxes (tab)](./media/tax-configuration-errors-Picture5.png)](./media/tax-configuration-errors-Picture5.png)
 
-   4. Find and select the model mapping with name *Bundler.PurchOrderParm*, and click *Designer*.
-
-   5. In *DATA MODEL* section, expand *Header/Lines* and find the field *Net price.*
+4. Find and select the model mapping, **Bundler.PurchOrderParm**, and then select **Designer**.
+5. In the **Data model** section, expand **Header** > **Lines** and find **Net price**.
 
       [![Direct taxes (tab)](./media/tax-configuration-errors-Picture6.png)](./media/tax-configuration-errors-Picture6.png)
 
-   6. Then we can see the formula of the field Net price is **@.'Net Amount'/@.Quantity**. 
-
-   7. Please confirm with business department if the Quantity is allowed to be zero. If no, please correct the transaction and perform the operation again. If yes, please correct the formula to the format like **IF(@.Quantity = 0, @.'Net Amount', @.'Net Amount'/@.Quantity)**
+   You can see that the formula of the **Net price** field is **@.'Net Amount'/@.Quantity**.
+   
+7. Confirm with business department if a quantity of zero is allowed. If it's not, correct the transaction and perform the operation again. If it's allowed, correct the formula to the format like **IF(@.Quantity = 0, @.'Net Amount', @.'Net Amount'/@.Quantity)**.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
