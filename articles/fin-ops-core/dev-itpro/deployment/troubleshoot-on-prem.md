@@ -1558,7 +1558,7 @@ GRANT ALTER ANY EVENT SESSION to axdbadmin;
 
 ## ReportingService fails to start
 
-**Issue:** During deployment, the ReportingService is unhealthy and fails to start. In the event logs you will see the following error:
+**Issue:** During deployment, the ReportingService fails to start. In the event logs you will see the following error:
 
 ```stacktrace
 Could not load file or assembly 'Microsoft.SqlServer.BatchParser, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' or one of its dependencies. An attempt was made to load a program with an incorrect format.
