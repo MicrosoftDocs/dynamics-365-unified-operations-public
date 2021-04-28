@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Tax amount is wrong after calculation
+title: Incorrect tax amount after calculation
 description: This topic provides troubleshooting information that helps you resolve the issue when the calculated tax amount is incorrect.
 author: hailxu
 ms.date: 04/28/2021
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.1
 
 
 
-# Tax amount is wrong after calculation
+# Incorrect tax amount after calculation
 
 [!include [banner](../includes/banner.md)]
  
@@ -39,38 +39,34 @@ Complete the sections in this topic if the calculated tax on a business document
 1. Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
 2. On the **Tax setup** page, select the company you are working in, and then select **Setup**.
 
-   [![Direct taxes (tab)](./media/tax-amount-wrong-Picture1.png)](./media/tax-amount-wrong-Picture1.png)
+   [![Tax setup page](./media/tax-amount-wrong-Picture1.png)](./media/tax-amount-wrong-Picture1.png)
 
 3. On the tax document, go to the **Header** > **Lines** > **GST** > **CGST** > **Rate** to find the corresponding rate node.
 4. Based on the conditions, see if your transaction matches the correct rate. You can view transaction details on the Tax document by selecting **View tax input**. For more information, see [Tax isn't calculated](apac-ind-GST-troubleshooting-tax-not-calculated.md)
 
-   [![Direct taxes (tab)](./media/tax-amount-wrong-Picture2.png)](./media/tax-amount-wrong-Picture2.png)
 
-**Step 2: Check if the tax base is wrong.**
+## Check the tax base
 
-1. Check the number of tax document lines matches the actual number of transactions lines. If no, please refer to [Tax is not calculated](./apac-ind-GST-troubleshooting-tax-not-calculated.md) to check if some lines don't match the condition that defined in tax configuration.
+Complete the following steps to verify that the tax base is correct.
 
-2. Check the tax information of all lines are correctly set, some setting may impact the calculation of  the tax base, such as, *Exempt, Prices include sales tax, Non-GST.*
+1. Check that the number of tax document lines matches the actual number of transaction lines. If the number of lines don't match, see [Tax isn't calculated](apac-ind-GST-troubleshooting-tax-not-calculated.md) to check if some lines don't match the condition defined in the tax configuration.
+2. Check that the tax information is correctly set for all of the lines. Some settings might impact the calculation of the tax base. These settings include:
 
-   Exempt: GST will not be calculated.
+   - **Exempt**: GST will not be calculated.
+   - **Prices include sales tax**: GST will be included in the price.
+   - **Non-GST**: Tax with tax type other than GST (Such as VAT) will be calculated.
 
-   Prices include sales tax: GST will be included in the price.
+      [![Tax information settings](./media/tax-amount-wrong-Picture3.png)](./media/tax-amount-wrong-Picture3.png)
 
-   Non-GST: Tax with tax type other than GST (Such as VAT) will be calculated.
+3. Check that the information on the **Price and discount** tab meets your requirements.
 
-   [![Direct taxes (tab)](./media/tax-amount-wrong-Picture3.png)](./media/tax-amount-wrong-Picture3.png)
+   [![Price and discount tab](./media/tax-amount-wrong-Picture4.png)](./media/tax-amount-wrong-Picture4.png)
 
-3. Check the "Price and discount" meets your requirement.
+## Check that the tax rate is correct
 
-   [![Direct taxes (tab)](./media/tax-amount-wrong-Picture4.png)](./media/tax-amount-wrong-Picture4.png)
+Open the tax document, and on the **Total** FastTab, compare the values in the **Total of Tax Amount** and **Adjusted total of Tax Amount** fields. If they are different, the adjustment was applied.
 
-**Step 3: Check if the tax rate is correct.**
-
-1. Open *Tax document*.
-
-2. Compare Total of Tax Amount and Adjusted total of Tax Amount. If they are different, it means that adjustment was applied.
-
-   [![Direct taxes (tab)](./media/tax-amount-wrong-Picture5.png)](./media/tax-amount-wrong-Picture5.png)
+   [![Tax document page, Totals FastTab](./media/tax-amount-wrong-Picture5.png)](./media/tax-amount-wrong-Picture5.png)
 
 ## Determine whether customization exists
 
