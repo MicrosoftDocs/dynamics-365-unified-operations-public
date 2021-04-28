@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Tax is not calculated
-description:
-author: hailxu
+title: Tax isn't calculated
+description: This topic provides troubleshooting information to resolve the issue when tax isn't being calculated on tax documents.
+author: qire
 manager: beya
-ms.date: 02/04/2021
+ms.date: 04/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,67 +29,57 @@ ms.dyn365.ops.version: 10.0.1
 
 
 
-# Tax is not calculated
+# Tax isn't calculated
 
-[!include [banner](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/finance/includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-## Symptoms
+When you discover that there either tax component or tax document lines are missing from a tax document, complete the sections in this topic to troubleshoot the issue.
+For more information about concepts, such as Tax document and Tax components, related to the Tax engine or GTE, see [Tax engine overview](../general-ledger/tax-engine.md).
 
-- No tax component lines in Tax document.
-- No tax document lines in tax document.
+In this topic, a purchase order is used to show the troubleshooting process. 
 
-## Prerequisites
+## Check the tax applicability in tax configuration
 
-For concepts (e.g. Tax document, Tax components, etc.) related to Tax engine (aka. GTE), please refer to [Tax engine overview - Finance | Dynamics 365 | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/tax-engine).
+1. Refer to [How to open designer of current used tax configuration](./apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md)  to open designer for current tax configuration.
+2. For no tax document lines case, check whether the *Condition/Lookups* on Header node are correct. 
 
+      [![Direct taxes (tab)](./media/tax-not-calculated-Picture1.png)](./media/tax-not-calculated-Picture1.png)
 
+3. For no tax component lines case, check whether the *Condition/Lookups* on *Lines*, *Tax type* or Tax component nodes are correct. 
 
-## Trouble shooting guide
+      [![Direct taxes (tab)](./media/tax-not-calculated-Picture2.png)](./media/tax-not-calculated-Picture2.png)
 
-**In this document, we use Purchase order to show the trouble shooting process. For other transactions, you can also refer to the steps below.**
+## Compare the transaction details with other conditions
 
-- **Step 1:     Check the tax applicability in tax configuration**
-
-  1. Refer to [How to open designer of current used tax configuration](./apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md)  to open designer for current tax configuration.
-  2. For no tax document lines case, check whether the *Condition/Lookups* on Header node are correct. 
-
-  [![Direct taxes (tab)](./media/tax-not-calculated-Picture1.png)](./media/tax-not-calculated-Picture1.png)
-
-  3. For no tax component lines case, check whether the *Condition/Lookups* on *Lines*, *Tax type* or Tax component nodes are correct. 
-
-  [![Direct taxes (tab)](./media/tax-not-calculated-Picture2.png)](./media/tax-not-calculated-Picture2.png)
-
-- **Step 2:     Compare the transaction details with the conditions that found in step 1**
-
-- 1. Click *Tax document* button to open tax document.
-
-  2. Select *Header* node, then click *View tax input* button. The transaction header details will be displayed. Check all those fields are correctly set for tax calculation.
+1. Click *Tax document* button to open tax document.
+2. Select *Header* node, then click *View tax input* button. The transaction header details will be displayed. Check all those fields are correctly set for tax calculation.
 
      [![Direct taxes (tab)](./media/tax-not-calculated-Picture3.png)](./media/tax-not-calculated-Picture3.png)
 
-  3. Select *Line* node, then click *View tax input* button. The transaction line details will be displayed. Check all those fields are correctly set for tax calculation.
+3. Select *Line* node, then click *View tax input* button. The transaction line details will be displayed. Check all those fields are correctly set for tax calculation.
 
      [![Direct taxes (tab)](./media/tax-not-calculated-Picture4.png)](./media/tax-not-calculated-Picture4.png)
 
-  4. Compare the transaction fields in *Tax document > View tax input* dialog with the conditions that is found in step 1, check all those fields are met the corresponding conditions or lookups.
+4. Compare the transaction fields in *Tax document > View tax input* dialog with the conditions that is found in step 1, check all those fields are met the corresponding conditions or lookups.
 
-- **Step 3: If no issue is found in above steps, check whether customization exists. If not, create a service request to Microsoft for further support.**
+## Determine whether customization exists
+
+If you've completed the steps in the previous sections but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.
 
 ## Prevent posting transaction without GST calculated
 
 If you'd like to prevent to post the transaction without GST calculated, you can enable the feature **[India] GTE calculation validation** following the steps below.
 
-1. Go to *Workspaces>Feature management*
+1. Go to **Workspaces** > **Feature management**.
+2. Find the feature, **[India] GTE calculation validation**, and then select **Enable now**.
 
-2. Find the feature *[India] GTE calculation validation*, then click *Enable now*.
+     [![Feature management Enable now button](./media/tax-not-calculated-Picture5.png)](./media/tax-not-calculated-Picture5.png)
 
-   [![Direct taxes (tab)](./media/tax-not-calculated-Picture5.png)](./media/tax-not-calculated-Picture5.png)
+3. Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**. Select the company in which you want to enable the validation, and then select **Parameters**.
 
-3. Go to *Tax -> Setup -> Tax configuration -> Tax setup*. Select a company in which you want to enable the validation and then click *Parameters* button.
+   [![Parameters button](./media/tax-not-calculated-Picture6.png)](./media/tax-not-calculated-Picture6.png)
 
-   [![Direct taxes (tab)](./media/tax-not-calculated-Picture6.png)](./media/tax-not-calculated-Picture6.png)
-
-4. In the pop-up dialog, setup the validation parameter *Empty tax component* and *Zero tax,* and then click *OK* to complete setup
+4. In the dialog box, set up the validation parameter, **Empty tax component** and **Zero tax**, and then select **OK** to complete setup.
 
    None: no validation
 
@@ -97,7 +87,7 @@ If you'd like to prevent to post the transaction without GST calculated, you can
 
    Error: Prompt a error message and block the posting operation.
 
-   [![Direct taxes (tab)](./media/tax-not-calculated-Picture7.png)](./media/tax-not-calculated-Picture7.png)
+   [![Validation field group](./media/tax-not-calculated-Picture7.png)](./media/tax-not-calculated-Picture7.png)
 
 5. Then when you posting transaction without GST calculated, the corresponding error/warning     message will be prompted.
 
@@ -105,8 +95,8 @@ If you'd like to prevent to post the transaction without GST calculated, you can
    - No tax component lines: "No tax component is applicable for line %1, please contact your system administrator, check the tax setup, and try again. "
    - Tax amount is zero: "The tax amount is 0 for line %1, please contact your system administrator, check the tax setup, and try again."
 
-**Note: Enable the validation may also block some normal scenarios e.g. Exempt or Zero rate scenarios. So it's up to you to decide how to do the validation setup per your business.**
+> [!NOTE]
+> Enabling the validation may also block some normal scenarios such as exempt or zero-rate scenarios. You must decide how to perform the validation setup based on your business.
 
 
-
-[!INCLUDE[footer-include](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
