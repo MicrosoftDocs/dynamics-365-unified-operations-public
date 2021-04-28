@@ -70,7 +70,7 @@ After your system is prepared as described in the previous section, you should f
 1. Repeat this procedure for each relevant product.
 
 > [!NOTE]
-> Planning Optimization now supports multi-currency purchase trade agreements. The system will consider the purchase trade agreement line even if its currency differs from the currency of the selected vendor. Therefore, master planning will include information from all relevant purchase trade agreements regardless of the currency.
+> Planning Optimization supports multi-currency purchase trade agreements. The system will consider each purchase trade agreement line even if its currency differs from that of the selected vendor. Therefore, master planning will include information from all relevant purchase trade agreements, regardless of the currency.
 
 ## Examples of how Planning Optimization finds vendor and lead times
 
