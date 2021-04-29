@@ -219,10 +219,12 @@ The following illustration shows two combo box controls. The combo box on the le
 
 ## Dialog
 
-Styles can be applied to a dialog only if the following requirements are met:
+Styles can be applied to a form or dialog only if the following requirements are met:
 
-+ The name of the dialog starts with **JmgProductionFloorExecutionDialog** (for example, **JmgProductionFloorExecutionDialogBatchNumberLookup**).
-+ All the controls in the dialog are configured as described in this topic.
++ If the form or dialog must follow RAF/Scrap design guidelines, then the name must start with **JmgProductionFloorExecutionCustomInputDialog**.
++ The form or dialog may contain a detail form part. To apply styles to the detail form part, the name must start with **JmgProductionFloorExecutionCustomDetailsDialog**.
++ If the form or dialog must have a simple view, then the name must start with **JmgProductionFloorExecutionCustomDialog**.
++ All the controls in the dialog must be configured as described in this topic.
 
 Styles can be applied to the **OK** button in a dialog only if the following requirements are met:
 
