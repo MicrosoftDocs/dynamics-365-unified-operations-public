@@ -44,7 +44,7 @@ If terms of payment are **C.O.D** (Cash On Delivery) on an attached purchase inv
 **Discount**
 If the line discount, multi-line discount, or total discount is attached to an invoice, the TDS is calculated on the invoice amount after considering the discount. For example, if the invoice amount is 10,000 and the line discount is 100, TDS is calculated on 9,900.
 
-**Purchase Invoices with TDS group and TCS group attached to gifferent invoice lines**
+**Purchase Invoices with TDS group and TCS group attached to different invoice lines**
 An invoice with a TDS group and a Tax Collected at Source (TCS) group attached to different invoice lines can't be posted. However, TDS is calculated for the partial invoice amount if the purchase order is partially invoiced.
 
 **Advance payments and prepayments**
@@ -119,9 +119,9 @@ The following table shows the details of  multiple journals posted for TDS compo
 | Threshold specified for withholding  tax component - Rent | Multiple journals selected  for posting | Posting type in all the  journals | Rate of withholding tax | Calculation basis for the tax  code                       | Overlook threshold limit  check box |  Amount  | Marked or not  |
 | --------------------------------------------------------- | --------------------------------------- | --------------------------------- | ----------------------- | --------------------------------------------------------- | ----------------------------------- | ----------- | ------ |
 | 50,000                                                    | Journal number                          | Journal amount                    | TDS group               | Debit – Expenses - Rent   Credit – Vendor  account (3000) | TDS-10%                             | Line amount | Marked |
-| 005                                                       | 20,000                                  | Rent                              | Surcharge-10%           | Excl line amount + [TDS]                                  | Marked                              |             |        |
-| 006                                                       | 20,000                                  | Rent                              | PE-Cess-2%              | Excl line amount + [TDS+ Surcharge]                       | Unmarked                            |             |        |
-| 007                                                       | 9000                                    | Rent                              | SHE-cess-1%             | Excl line amount + [TDS+ Surcharge]                       | Marked                              |             |        |
+| 005                                                       | 20,000                                  | Rent                              | Surcharge-10%           | Excel line amount + [TDS]                                  | Marked                              |             |        |
+| 006                                                       | 20,000                                  | Rent                              | PE-Cess-2%              | Excel line amount + [TDS+ Surcharge]                       | Unmarked                            |             |        |
+| 007                                                       | 9000                                    | Rent                              | SHE-cess-1%             | Excel line amount + [TDS+ Surcharge]                       | Marked                              |             |        |
 | 008                                                       | 2,000                                   | Rent                              |                         |                                                           |                                     |             |        |
 | 009                                                       | 1,000                                   | Rent                              |                         |                                                           | Marked                              |             |        |
 | 010                                                       | 20,000                                  | Rent                              |                         |                                                           | Marked                              |             |        |
