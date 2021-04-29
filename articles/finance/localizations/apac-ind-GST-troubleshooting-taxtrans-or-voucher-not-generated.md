@@ -2,10 +2,10 @@
 # required metadata
 
 title: TaxTrans or voucher isn't generated
-description:
+description: This topic provides troubleshooting information to help resolve this issue when TaxTrans or voucher isn't generated.
 author: shaoling
 manager: beya
-ms.date: 02/04/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,7 +47,7 @@ To check the tax configuration, see [Open the designer for the current tax confi
 1. Check the posting profile of expected measure. Select the posting type in **Debit/Credit** column, and then select **Edit**. 
 2. Check the value of tax accounting provider.
 
-    [![Direct taxes (tab)](./media/taxtrans-voucher-notgenerated-Picture3.png)](./media/taxtrans-voucher-not generated-Picture3.png)
+    ![Tax accounting provider value](./media/taxtrans-voucher-notgenerated-Picture3.png)
 
   The following is the rule for posting tax transactions and voucher decided by tax accounting provider. Correct the configuration if it's not working as expected.
 
@@ -62,14 +62,14 @@ To check the tax configuration, see [Open the designer for the current tax confi
 1. Select **Condition** to open the formula. 
 2. Check the condition, and correct the tax configuration if it's not working as expected.
 
-  [![Direct taxes (tab)](./media/taxtrans-voucher-notgenerated-Picture4.png)](./media/taxtrans-voucher-not generated-Picture4.png)
+  ![Condition field](./media/taxtrans-voucher-notgenerated-Picture4.png)
 
-  [![Direct taxes (tab)](./media/taxtrans-voucher-notgenerated-Picture5.png)](./media/taxtrans-voucher-not generated-Picture5.png)
+  ![Formula](./media/taxtrans-voucher-notgenerated-Picture5.png)
 
 ## Check the posting code logic
 Set a breakpoint in **TaxAccountingPostFacade::post()**, and debug for the logic of generating tax transaction and voucher. 
 
-  [![Direct taxes (tab)](./media/taxtrans-voucher-notgenerated-Picture6.png)](./media/taxtrans-voucher-not generated-Picture6.png)
+  ![Breakpoint](./media/taxtrans-voucher-notgenerated-Picture6.png)
 
 ## Determine whether customization exists
 
