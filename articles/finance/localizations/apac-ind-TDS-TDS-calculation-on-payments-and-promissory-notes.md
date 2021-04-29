@@ -48,7 +48,7 @@ Complete the following steps to calculate TDS on payments and promissory notes.
 
 1. Create journal lines using the journal forms, select the account type and offset account type.
 
-2. Click the **Functions button > settlement** to open the **Open transaction editing** page and select a specific invoice that needs to be settled. If TDS is already calculated at the invoice-level, in the **Amount origin** field, the base amount that the TDS is calculated on is displayed. The TDS amountthat's calculated for the transaction is displayed in the **TDS amount** field. View the net payment amount, which is the payment amount after deducting TDS, in the **Amount** field.
+2. Click the **Functions button > settlement** to open the **Open transaction editing** page and select a specific invoice that needs to be settled. If TDS is already calculated at the invoice-level, in the **Amount origin** field, the base amount that the TDS is calculated on is displayed. The TDS amount that's calculated for the transaction is displayed in the **TDS amount** field. View the net payment amount, which is the payment amount after deducting TDS, in the **Amount** field.
 
 > [!Note]
 > For a payment made against an invoice, the following conditions apply: <br>
