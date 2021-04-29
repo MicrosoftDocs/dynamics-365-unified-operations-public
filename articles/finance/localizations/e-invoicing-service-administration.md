@@ -99,14 +99,18 @@ For more information, see [Create an Azure storage account and a key vault](e-in
 
 
 > [!NOTE]
-> For monitoring the health of your key vaults and receiving alerts, configure the Azure Monitor for key Vault.
-> 
-> If you want to monitor how and when your key vaults are accessed, and by whom, enable the Key Vault logging.
+> For monitoring the health of your key vaults and receiving alerts, configure the Azure Monitor for key Vault. And by enabling Key Vault logging, you can monitor how and when your key vaults are accessed, and by whom.
 > 
 
 For more information, see [Monitoring and alerting for Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/alert).
 
 For more information, see [How to enable Key Vault logging](https://docs.microsoft.com/en-us/azure/key-vault/general/howto-logging?tabs=azure-cli).
+
+> [!NOTE]
+> As best practices, periodically rotate the secrets.
+> 
+
+For more information, see [Secrets documentation](https://docs.microsoft.com/en-us/azure/key-vault/secrets/).
 
 #### Users
 
