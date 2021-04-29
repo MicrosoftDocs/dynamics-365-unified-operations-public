@@ -1,11 +1,10 @@
 ---
 # required metadata
 
-title: [Core Tax Calculation]: Tax transaction id is incorrect
-description:
+title: Tax transaction ID is incorrect
+description: This topic provides troubleshooting information when the tax transaction ID is incorrect.
 author: shaoling
-manager: beya
-ms.date: 02/04/2021
+ms.date: 004/29/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,24 +28,16 @@ ms.dyn365.ops.version: 10.0.1
 
 
 
-# Tax transaction id is incorrect
+# Tax transaction ID is incorrect
 
-[!include [banner](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/finance/includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-## **Symptom**
+Complete the steps in this topic to resolve the issue when the transaction ID of posted tax document is incorrect.
 
-- The transaction Id of posted tax document is incorrect.
+1. The code logic to generate transaction ID is in **TaxGSTInvoiceHelper_IN::generateGSTTransID()**. Set a breakpoint there, and start debugging.
 
-  [![Direct taxes (tab)](./media/tax-transaction-id-incorrect-Picture1.png)](./media/tax-transaction-id-incorrect-Picture1.png)
+  [![Breakpoint for debugging](./media/tax-transaction-id-incorrect-Picture2.png)](./media/tax-transaction-id-incorrect-Picture2png)
 
- 
+2. If the issue isn't resolved after completing step 1, determine whether customization exists. If no customization exists, create a Microsoft service request for further support. If possible,provide trace file of the posting step.
 
-## **Trouble shooting guide**
-
-- **Step 1:** The code logic to generate transaction Id is in TaxGSTInvoiceHelper_IN::generateGSTTransID(). Set breakpoint and start debugging from here.
-
-  [![Direct taxes (tab)](./media/tax-transaction-id-incorrect-Picture2.png)](./media/tax-transaction-id-incorrect-Picture2png)
-
-- **Step 2:** If cannot resolve issue with above steps, check whether customization exists. If not, create a service request to Microsoft for further support (provide trace file of posting step if possible).
-
-[!INCLUDE[footer-include](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
