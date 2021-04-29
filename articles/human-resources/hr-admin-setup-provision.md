@@ -62,7 +62,7 @@ To use LCS to manage your Human Resources environments, you must first create an
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index) by using the account that you used to subscribe to Human Resources.
 
    > [!NOTE]
-   > The account you use to provision the Human Resources environment must be assigned to either the **System Administrator** or **System Customizer** role in the Power Apps environment associated with the Human Resources environment for the provisioning to complete successfully. See [Configure user security to resources](https://docs.microsoft.com/power-platform/admin/database-security) for more information on assigning security roles to users in the Power Platform.
+   > To ensure successful provisioning, the account you use to provision the Human Resources environment must be assigned to either the **System Administrator** or **System Customizer** role in the Power Apps environment associated with the Human Resources environment. See [Configure user security to resources](https://docs.microsoft.com/power-platform/admin/database-security) for more information on assigning security roles to users in the Power Platform.
 
 2. Select the plus sign (**+**) to create a project.
 
@@ -123,22 +123,29 @@ Use the following guidance when determining which Power Apps environment to depl
    
     - **Trial environments** - These environments are created with an expiration date. Upon expiration, your environment and any Human Resources instances contained within it will be removed automatically.
    
-    - **Unsupported geographies** - The environment must be in a supported geography. See [Supported geographies](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-setup-provision#supported-geographies) below for more information.
+    - **Unsupported geographies** - The environment must be in a supported geography. For more information, see [Supported geographies](hr-admin-setup-provision.md#supported-geographies).
 
 6. After you've determined the correct environment to use, you can continue with the provisioning process. 
 
 ### Supported geographies
 
-Geographies currently supported for Human Resources include: United States, Europe, United Kingdom, Australia, Canada, and Asia. 
+Human Resources currently supports the following geographies:
 
-When creating a Human Resources environment you select a Power Apps environment to associate with the Human Resources environment. The Human Resources environment is then provisioned in the same Azure geography as the selected Power Apps environment. You are able to select where the Human Resources environment and database physically reside by selecting the geography when creating the Power Apps enviornment that will be associated with the Human Resources environment.
+- United States
+- Europe
+- United Kingdom
+- Australia
+- Canada
+- Asia 
 
-You are able to select the Azure *geography* in which the environment is provisioned, but you cannot select the specific Azure *region*. Automation determines the specific region within the geography in which the environment is created to optimize load balancing and performance. You can find information on Azure geographies and regions in the documentation on [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies).
+When you create a Human Resources environment, you select a Power Apps environment to associate with the Human Resources environment. The Human Resources environment is then provisioned in the same Azure geography as the selected Power Apps environment. You can select where the Human Resources environment and database physically reside by selecting the geography when creating the Power Apps enviornment that will be associated with the Human Resources environment.
 
-The data for the Human Resources environment will always be contained within the Azure geography in which it is created. However, it will not always be contained within the same Azure region. For disaster recovery purposes the data will be replicated in both the primary Azure region and a secondary failover region within the geography.
+You can select the Azure *geography* in which the environment is provisioned, but you can't select the specific Azure *region*. Automation determines the specific region within the geography in which the environment is created to optimize load balancing and performance. You can find information on Azure geographies and regions in the documentation on [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies).
+
+The data for the Human Resources environment will always be contained within the Azure geography in which it is created. However, it won't always be contained within the same Azure region. For disaster recovery purposes, the data will be replicated in both the primary Azure region and a secondary failover region within the geography.
 
  > [!NOTE]
- > Migrating a Human Resources environment from one Azure region to another is not supported.
+ > Migrating a Human Resources environment from one Azure region to another isn't supported.
 
 ## Grant access to the environment
 
