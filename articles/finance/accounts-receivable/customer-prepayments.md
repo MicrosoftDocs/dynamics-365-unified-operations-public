@@ -3,7 +3,7 @@
 
 title: Customer prepayments
 description: Customer prepayments are used when you receive payment from a customer without an invoice to settle that payment against. These types of payments are also referred to as customer deposits. 
-author: rachel.profitt
+author: rprofitt
 manager: AnnBe
 ms.date: 04/30/2021
 ms.topic: article
@@ -44,7 +44,7 @@ Customer prepayments are used when you receive payment from a customer without a
 
 ## Customer posting profile for prepayments
 
-Typically when you accept prepayments or depostis from your customers before goods or services are delivered, or before an invoice exists in your system, you will want to record the cash as a liability instead of an asset on your chart of accounts. Depending on your country or region there may be different requirements for recoridng these amounts in your general ledger, so be sure to check with your accountants for any local regulataions that apply.
+Typically when you accept prepayments or deposits from your customers before goods or services are delivered, or before an invoice exists in your system, you will want to record the cash as a liability instead of an asset on your chart of accounts. Depending on your country or region, there may be different requirements for recording these amounts in your general ledger, so be sure to check with your accountants for any local regulations that apply.
 
 Generally, the process for creating a posting profile to be used for prepayments is the same as any other posting profile. The key difference is the main account that you select in the **Summary account** field.  For more information, see [**Customer posting profiles**](customer-posting-profiles.md).
 
@@ -64,13 +64,13 @@ There are two main parameters to consider when configuring the system for custom
 When you create the customer payment journal, for each prepayment, you must select the **Prepayment journal voucher** slider in the **Customer payment journal**. Follow these steps to create a customer prepayment.
 
 1. On the Navigation pane click **Modules > Accounts receivable > Payments > Customer payment journal**.
-2. Click **New** to create a new jouranl.
+2. Click **New** to create a new journal.
 3. In the **Name** field, select the journal name you want to use.
 4. Optionally, enter or update a detailed description in the **Description** field.
-5. Click **Lines**. If required, click **New* to create a new line.
+5. Click **Lines**. If necessary, click **New* to create a new line.
 6. In the **Date** field, enter the date for posting the prepayment.
 7. In the **Account** field, select the customer for the prepayment.
-8. Opetionally, enter a detailed description for the transaction in the **Description** field.
+8. Optionally, enter a detailed description for the transaction in the **Description** field.
 9. In the **Credit** field, enter the amount of the prepayment.
 10. In the **Offset account** field, select the account where the payment will offset to. For example, select the bank or main account to post the payment to.
 11. In the **Method of payment** field, select the customer method for paying.
@@ -93,4 +93,4 @@ You can use the **Customer payments** workspace to easily locate and settle paym
 5. Select the **Mark** check box for the invoice and the payment that will be settled.
 6. Click **Post**.
 
-For more information about settling open transactions, refer to the [Settlement overview](/cash-bank-management/settlement-overview.md) page.
+For more information about settling open transactions, see [Settlement overview](/cash-bank-management/settlement-overview.md).
