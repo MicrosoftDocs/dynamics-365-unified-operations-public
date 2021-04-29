@@ -137,9 +137,9 @@ You are able to select the Azure *geography* in which the environment is provisi
 
 The data for the Human Resources environment will always be contained within the Azure geography in which it is created. However, it will not always be contained within the same Azure region. For disaster recovery purposes the data will be replicated in both the primary Azure region and a secondary failover region within the geography.
 
-    > [!NOTE]
-    > Migrating a Human Resources environment from one Azure region to another is not supported.
- 
+ > [!NOTE]
+ > Migrating a Human Resources environment from one Azure region to another is not supported.
+
 ## Grant access to the environment
 
 By default, the global administrator who created the environment has access to it. You must explicitly grant access to additional application users. You must add users and assign the appropriate roles to them in the Human Resources environment. The global administrator that deployed Human Resources must also launch both Attract and Onboard to complete the initialization and enable access for other tenant users. Until this happens, other users will not be able to access Attract and Onboard and will get access violation errors. For more information, see [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
