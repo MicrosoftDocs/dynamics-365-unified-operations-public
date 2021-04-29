@@ -27,40 +27,39 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
 ---
 
-
-
 # Tax isn't calculated
 
 [!include [banner](../includes/banner.md)]
 
-When you discover that there either tax component or tax document lines are missing from a tax document, complete the sections in this topic to troubleshoot the issue.
-For more information about concepts, such as Tax document and Tax components, related to the Tax engine or GTE, see [Tax engine overview](../general-ledger/tax-engine.md).
+When you discover that there are tax component or tax document lines missing from a tax document, complete the sections in this topic to troubleshoot the issue.
+For more information related to the Tax engine, components, or GTE, see [Tax engine overview](../general-ledger/tax-engine.md).
 
 In this topic, a purchase order is used to show the troubleshooting process. 
 
 ## Check the tax applicability in tax configuration
 
-1. Refer to [How to open designer of current used tax configuration](./apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md)  to open designer for current tax configuration.
-2. For no tax document lines case, check whether the *Condition/Lookups* on Header node are correct. 
+1. Open the designer for the current tax configuration. For more information, see [Open the designer for the current tax configuration](apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md)  to open designer for current tax configuration.
+2. If there are no tax document lines, select the **Header** node, and on the **Lookups** tab, verify that the condition is correct. 
 
-      [![Direct taxes (tab)](./media/tax-not-calculated-Picture1.png)](./media/tax-not-calculated-Picture1.png)
+      [![Lookups tab, Condition field](./media/tax-not-calculated-Picture1.png)](./media/tax-not-calculated-Picture1.png)
 
-3. For no tax component lines case, check whether the *Condition/Lookups* on *Lines*, *Tax type* or Tax component nodes are correct. 
+3. If there are no tax component lines, verify that the condition is correct on the **Lookups** tab on the **Lines**, **Tax type**, and **Tax component** nodes. 
 
-      [![Direct taxes (tab)](./media/tax-not-calculated-Picture2.png)](./media/tax-not-calculated-Picture2.png)
+      [![Expanded lines node](./media/tax-not-calculated-Picture2.png)](./media/tax-not-calculated-Picture2.png)
 
-## Compare the transaction details with other conditions
+## Compare transaction details with other conditions
 
-1. Click *Tax document* button to open tax document.
-2. Select *Header* node, then click *View tax input* button. The transaction header details will be displayed. Check all those fields are correctly set for tax calculation.
+1. Select **Tax document** and then select the **Header** node.
+2. Select **View tax input**. The transaction header details will be displayed. Verify that all the fields are set correctly for tax calculation.
 
-     [![Direct taxes (tab)](./media/tax-not-calculated-Picture3.png)](./media/tax-not-calculated-Picture3.png)
+     [![Purchase order header](./media/tax-not-calculated-Picture3.png)](./media/tax-not-calculated-Picture3.png)
 
-3. Select *Line* node, then click *View tax input* button. The transaction line details will be displayed. Check all those fields are correctly set for tax calculation.
+3. Select the **Line** node, and then select **View tax input**. The transaction line details are displayed. Verify that all the fields are set correctly for tax calculation.
 
-     [![Direct taxes (tab)](./media/tax-not-calculated-Picture4.png)](./media/tax-not-calculated-Picture4.png)
+     [![Purchase order lines](./media/tax-not-calculated-Picture4.png)](./media/tax-not-calculated-Picture4.png)
 
-4. Compare the transaction fields in *Tax document > View tax input* dialog with the conditions that is found in step 1, check all those fields are met the corresponding conditions or lookups.
+4. Compare the transaction fields in **Tax document** > **View tax input*** with the conditions found in the previous section.
+5. Verify that all the fields match the corresponding conditions or lookups.
 
 ## Determine whether customization exists
 
@@ -68,7 +67,7 @@ If you've completed the steps in the previous sections but have found no issue, 
 
 ## Prevent posting transaction without GST calculated
 
-If you'd like to prevent to post the transaction without GST calculated, you can enable the feature **[India] GTE calculation validation** following the steps below.
+To prevent posting a transaction without the GST calculated, complete the following steps to enable the feature, **[India] GTE calculation validation**.
 
 1. Go to **Workspaces** > **Feature management**.
 2. Find the feature, **[India] GTE calculation validation**, and then select **Enable now**.
@@ -79,21 +78,19 @@ If you'd like to prevent to post the transaction without GST calculated, you can
 
    [![Parameters button](./media/tax-not-calculated-Picture6.png)](./media/tax-not-calculated-Picture6.png)
 
-4. In the dialog box, set up the validation parameter, **Empty tax component** and **Zero tax**, and then select **OK** to complete setup.
+4. In the dialog box, set up the validation parameter, **Empty tax component** and **Zero tax**, and then select **OK** to complete setup. 
 
-   None: no validation
-
-   Warning: Prompt a warning message, but won't block the posting operation.
-
-   Error: Prompt a error message and block the posting operation.
+      - **None**: No validation
+      - **Warning**: Prompt a warning message, but the operaitons isn't blocked.
+      - **Error**: Prompt a error message and block the posting operation.
 
    [![Validation field group](./media/tax-not-calculated-Picture7.png)](./media/tax-not-calculated-Picture7.png)
 
-5. Then when you posting transaction without GST calculated, the corresponding error/warning     message will be prompted.
+   If someone tries to post a transaction without GST calculated, one of the following corresponding error messages will occur.
 
-   - No tax lines: "No tax document lines are found in tax document. If it is not expected, please contact your system administrator, check the tax configuration, and try again."
-   - No tax component lines: "No tax component is applicable for line %1, please contact your system administrator, check the tax setup, and try again. "
-   - Tax amount is zero: "The tax amount is 0 for line %1, please contact your system administrator, check the tax setup, and try again."
+   - **No tax lines**: "No tax document lines are found in tax document. If it is not expected, please contact your system administrator, check the tax configuration, and try again."
+   - **No tax component lines**: "No tax component is applicable for line %1, please contact your system administrator, check the tax setup, and try again. "
+   - **Tax amount is zero**: "The tax amount is 0 for line %1, please contact your system administrator, check the tax setup, and try again."
 
 > [!NOTE]
 > Enabling the validation may also block some normal scenarios such as exempt or zero-rate scenarios. You must decide how to perform the validation setup based on your business.
