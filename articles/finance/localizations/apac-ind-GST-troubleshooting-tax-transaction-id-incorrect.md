@@ -4,7 +4,7 @@
 title: Tax transaction ID is incorrect
 description: This topic provides troubleshooting information when the tax transaction ID is incorrect.
 author: shaoling
-ms.date: 004/29/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,7 +36,7 @@ Complete the steps in this topic to resolve the issue when the transaction ID of
 
 1. The code logic to generate transaction ID is in **TaxGSTInvoiceHelper_IN::generateGSTTransID()**. Set a breakpoint there, and start debugging.
 
-    [![Breakpoint for debugging](./media/tax-transaction-id-incorrect-Picture2.png)](./media/tax-transaction-id-incorrect-Picture2png)
+    [![Breakpoint for debugging](./media/tax-transaction-id-incorrect-Picture2.png)](./media/tax-transaction-id-incorrect-Picture2.png)
 
 2. If the issue isn't resolved after completing step 1, determine whether customization exists. If no customization exists, create a Microsoft service request for further support. If possible,provide trace file of the posting step.
 
