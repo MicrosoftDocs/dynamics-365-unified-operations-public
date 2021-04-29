@@ -97,6 +97,13 @@ The Electronic invoicing service is responsible for storing all your business da
 
 For more information, see [Create an Azure storage account and a key vault](e-invoicing-create-azure-storage-account-key-vault.md).
 
+
+> [!NOTE]
+> For monitoring the health of your key vaults and receiving alerts, configure the Azure Monitor for key Vault .
+> 
+
+For more information, see [Monitoring and alerting for Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/alert).
+
 #### Users
 
 Each service environment must list the users who can connect from Dynamics 365 Finance and Dynamics 365 Supply Chain Management in Electronic invoicing.
