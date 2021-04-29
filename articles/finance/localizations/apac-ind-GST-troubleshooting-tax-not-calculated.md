@@ -5,7 +5,7 @@ title: Tax isn't calculated
 description: This topic provides troubleshooting information to resolve the issue when tax isn't being calculated on tax documents.
 author: qire
 manager: beya
-ms.date: 04/28/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -81,7 +81,7 @@ To prevent posting a transaction without the GST calculated, complete the follow
 4. In the dialog box, set up the validation parameter, **Empty tax component** and **Zero tax**, and then select **OK** to complete setup. 
 
       - **None**: No validation
-      - **Warning**: Prompt a warning message, but the operaitons isn't blocked.
+      - **Warning**: Prompt a warning message, but the operations isn't blocked.
       - **Error**: Prompt a error message and block the posting operation.
 
    [![Validation field group](./media/tax-not-calculated-Picture7.png)](./media/tax-not-calculated-Picture7.png)
