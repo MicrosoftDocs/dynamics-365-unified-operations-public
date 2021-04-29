@@ -93,15 +93,9 @@ The Electronic invoicing service is responsible for storing all your business da
 - An Azure Key Vault that will store certificates and the uniform resource identifier (URI) of the storage account
 
 
-A dedicated Key Vault and customer storage account must be allocated specifically for use with the Electronic invoicing .
+A dedicated Key Vault and customer storage account must be allocated specifically for use with Electronic Invoicing. For more information, see [Create an Azure storage account and a Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
 
-For more information, see [Create an Azure storage account and a Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
-
-
-
-To monitor the health of your Key Vault and receive alerts, configure the Azure Monitor for key Vault. By enabling Key Vault logging, you can monitor how, when, and by whom your Key Vaults are accessed.
-
-For more information, see [Monitoring and alerting for Azure Key Vault](/azure/key-vault/general/alert) and [How to enable Key Vault logging](/azure/key-vault/general/howto-logging?tabs=azure-cli).
+To monitor the health of your Key Vault and receive alerts, configure the Azure Monitor for key Vault. By enabling Key Vault logging, you can monitor how, when, and by whom your Key Vaults are accessed. For more information, see [Monitoring and alerting for Azure Key Vault](/azure/key-vault/general/alert) and [How to enable Key Vault logging](/azure/key-vault/general/howto-logging?tabs=azure-cli).
 
 As a best practice, periodically rotate the secrets. For more information, see [Secrets documentation](/azure/key-vault/secrets/).
 
