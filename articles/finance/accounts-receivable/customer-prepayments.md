@@ -3,7 +3,7 @@
 
 title: Customer prepayments
 description: Customer prepayments are used when you receive payment from a customer without an invoice to settle that payment against. These types of payments are also referred to as customer deposits. 
-author: rprofitt
+author: roschlom
 manager: AnnBe
 ms.date: 04/30/2021
 ms.topic: article
