@@ -123,12 +123,22 @@ Use the following guidance when determining which Power Apps environment to depl
    
     - **Trial environments** - These environments are created with an expiration date. Upon expiration, your environment and any Human Resources instances contained within it will be removed automatically.
    
-    - **Unsupported regions** - Currently Human Resources is only supported in the following regions: United States, Europe, United Kingdom, Australia, Canada, and Asia.
-
-    > [!NOTE]
-    > The Human Resources environment is provisioned in the same region in which the Power Apps environment is provisioned. Migrating a Human Resources environment to another region is not supported.
+    - **Unsupported geographies** - The environment must be in a supported geography. See [Supported geographies](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-setup-provision#supported-geographies) below for more information.
 
 6. After you've determined the correct environment to use, you can continue with the provisioning process. 
+
+### Supported geographies
+
+Geographies currently supported for Human Resources include: United States, Europe, United Kingdom, Australia, Canada, and Asia. 
+
+When creating a Human Resources environment you select a Power Apps environment to associate with the Human Resources environment. The Human Resources environment is then provisioned in the same Azure geography as the selected Power Apps environment. You are able to select where the Human Resources environment and database physically reside by selecting the geography when creating the Power Apps enviornment that will be associated with the Human Resources environment.
+
+You are able to select the Azure *geography* in which the environment is provisioned, but you cannot select the specific Azure *region*. Automation determines the specific region within the geography in which the environment is created to optimize load balancing and performance. You can find information on Azure geographies and regions in the documentation on [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies).
+
+The data for the Human Resources environment will always be contained within the Azure geography in which it is created. However, it will not always be contained within the same Azure region. For disaster recovery purposes the data will be replicated in both the primary Azure region and a secondary failover region within the geography.
+
+    > [!NOTE]
+    > Migrating a Human Resources environment from one Azure region to another is not supported.
  
 ## Grant access to the environment
 
