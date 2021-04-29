@@ -116,7 +116,7 @@ If the **Overlook threshold** check box is selected for the tax code on the **Wi
 
 The following table shows the details of  multiple journals posted for TDS component – Rent, for vendor account 3000.
 
-| Threshold specified for withholding  tax component - Rent | Multiple journals selected  for posting | Posting type in all the  journals | Rate of withholding tax | Calculation basis for the tax  code                       | Overlook threshold limit  check box |             |        |
+| Threshold specified for withholding  tax component - Rent | Multiple journals selected  for posting | Posting type in all the  journals | Rate of withholding tax | Calculation basis for the tax  code                       | Overlook threshold limit  check box |  Amount  | Marked or not  |
 | --------------------------------------------------------- | --------------------------------------- | --------------------------------- | ----------------------- | --------------------------------------------------------- | ----------------------------------- | ----------- | ------ |
 | 50,000                                                    | Journal number                          | Journal amount                    | TDS group               | Debit – Expenses - Rent   Credit – Vendor  account (3000) | TDS-10%                             | Line amount | Marked |
 | 005                                                       | 20,000                                  | Rent                              | Surcharge-10%           | Excl line amount + [TDS]                                  | Marked                              |             |        |
