@@ -61,6 +61,9 @@ To use LCS to manage your Human Resources environments, you must first create an
 
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index) by using the account that you used to subscribe to Human Resources.
 
+   > [!NOTE]
+   > The account you use to provision the Human Resources environment must be assigned to either the **System Administrator** or **System Customizer** role in the Power Apps environment associated with the Human Resources environment for the provisioning to complete successfully. See [Configure user security to resources](https://docs.microsoft.com/power-platform/admin/database-security) for more information on assigning security roles to users in the Power Platform.
+
 2. Select the plus sign (**+**) to create a project.
 
 3. Select **Microsoft Dynamics 365 Human Resources** as the product name and product version.
