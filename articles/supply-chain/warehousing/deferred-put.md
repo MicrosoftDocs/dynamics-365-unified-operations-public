@@ -114,5 +114,8 @@ The **Outbound work monitoring** workspace has two tiles that help you monitor d
 
 You can delete deferred put processing tasks that have been completed by selecting them and deleting them on the page.
 
+## Additional resources
+
+- [Deferred processing of manual inventory movement operation](deferred-processing-manual-inventory-movement.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

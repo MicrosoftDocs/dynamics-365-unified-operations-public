@@ -4,7 +4,7 @@
 title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
-ms.date: 02/03/2021
+ms.date: 04/28/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -1555,6 +1555,25 @@ Microsoft.Dynamics.AX.InitializationException: Database login failed. Please che
 use master
 GRANT ALTER ANY EVENT SESSION to axdbadmin;
 ```
+
+## ReportingService fails to start
+
+**Issue:** During deployment, the ReportingService fails to start. In the event logs you will see the following error:
+
+```stacktrace
+Could not load file or assembly 'Microsoft.SqlServer.BatchParser, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type) 
+    at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase) at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+    at Microsoft.SqlServer.Management.Common.ServerConnection.GetStatements(String query, ExecutionTypes executionType, Int32& statementsToReverse)
+    at Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteNonQuery(String sqlCommand, ExecutionTypes executionType)
+    at Microsoft.Dynamics.AX.Framework.Reports.Setup.ReportsIdentityUpdater.ExecuteSQlScript(String script)
+    at Microsoft.Dynamics.AX.Framework.Reports.Setup.ReportsIdentityUpdater.CreateReportServerDatabase(String userName, SrsWmi rsconfigSetting)
+    at Microsoft.Dynamics.AX.Framework.Reports.Setup.ReportsServerInstaller.SetInstanceIdentity(String instanceName, String username)
+    at Microsoft.Dynamics.AX.Framework.Reports.Setup.RunReportsSetup.Execute(String path, String encodedConfigurationValues)
+```
+**Reason:** This issue occurs because the correct version of SSMS is not installed. The version of SSMS that should be installed is 17.9.1.
+
+**Resolution:** Install SSMS version 17.9.1.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

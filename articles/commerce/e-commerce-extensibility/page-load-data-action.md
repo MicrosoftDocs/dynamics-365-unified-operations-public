@@ -4,7 +4,7 @@
 title: Page load data actions
 description: This topic covers page load data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 09/30/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,7 +50,7 @@ The **ICreateActionContext** type represents an object that is passed to every *
 - The module's configuration (**inputData.config**)
 - The module's data (**inputData.data**)
 
-In the following example, notice that the **createInput** method in the TypeScript template file has been added to the **createDataAction** call. Therefore, the Dynamics 365 Commerce online software development kit (SDK) can determine that this data action can be run on page load.
+In the following example, notice that the **createInput** method in the TypeScript template file has been added to the **createObservableDataAction** call. Therefore, the Dynamics 365 Commerce online software development kit (SDK) can determine that this data action can be run on page load.
 
 ```typescript
 export default Msdyn365.createObservableDataAction({
