@@ -71,16 +71,7 @@ This following examples explain the consideration of threshold limits when posti
 **Example 1:**
 The following table shows the details of multiple journals posted for the TDS component – Rent, for the vendor account 3000.
 
-| Threshold specified for withholding tax component - Rent | Multiple journals selected  for posting | |  | Posting type in all the  journals | Rate of withholding tax | Calculation basis for the tax  component                                      |
-| -------------------------------------------------------- | --------------------------------------- | --------------------------------- | ----------------------- | --------------------------------------------------------- | ------- | ----------- | ---- | ---- |
-| 120,000                                                  | Journal number                          | Journal amount                    | TDS group               | Debit – Expenses - Rent   Credit – Vendor account  (3000) | TDS-10% | Line amount |      |      |
-| 001                                                      | 40,000                                  | Rent                              | Surcharge-10%           | Excl line amount + [TDS]                                  |         |             |      |      |
-| 002                                                      | 40,000                                  | Rent                              | PE-Cess-2%              | Excl line amount + [TDS+ Surcharge]                       |         |             |      |      |
-| 003                                                      | 40,000                                  | Rent                              | SHE-cess-1%             | Excl line amount + [TDS+ Surcharge]                       |         |             |      |      |
-| 004                                                      | 40,000                                  | Rent                              |                         |                                                           |         |             |      |      |
-|                                                          |                                         |                                   |                         |                                                           |         |             |      |      |
-
- 
+[![Table showing details of multiple journals posted the TDS component](./media/paymnt-pstn-revrsl-01.png)](./media/paymnt-pstn-revrsl-01.png)
 
 When the journals are posted simultaneously, the threshold for posting multiple journals is based on the chronological order of posting the journals. In this example Journal 001 is posted first, then journals 002, 003 and 004 are posted in chronological order.
 
@@ -91,22 +82,14 @@ When the journals are posted simultaneously, the threshold for posting multiple 
 | Expenses – Rent       | 40,000 |        |
 | Vendor account (3000) |        | 40,000 |
 
- 
-
-The voucher entry for the journal 002 is as follows:
-
- 
+ The voucher entry for the journal 002 is as follows:
 
 | Account               | Debit  | Credit |
 | --------------------- | ------ | ------ |
 | Expenses – Rent       | 40,000 |        |
 | Vendor account (3000) |        | 40,000 |
 
- 
-
-The voucher entry for the journal 003 is as follows:
-
- 
+ The voucher entry for the journal 003 is as follows:
 
 | Account               | Debit  | Credit |
 | --------------------- | ------ | ------ |
@@ -168,8 +151,6 @@ The following table shows the details of  multiple journals posted for TDS compo
 | 008     | 2,000.00           | 200.00   | 20.00     | 4.40    | 2.20     |
 | 009     | 1,000.00           | 100.00   | 10.00     | 2.20    | 1.10     |
 | 010     | 20,000.00          | 2,000.00 | 200.00    | 44.00   | 22.00    |
-
- 
 
 > [!Note]
 > In the Indian business scenario, the threshold limit and the exception threshold limit are not applicable to the TCS tax type. However, flexibility is provided in the application to define the threshold limit and the exception threshold limit for the TCS tax components, as well. If defined, the functionality of threshold applicable to the TDS tax codes will be  applied as is, to the TCS tax codes.   
