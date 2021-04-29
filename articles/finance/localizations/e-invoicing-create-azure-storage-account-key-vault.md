@@ -85,6 +85,10 @@ In this topic, you will complete two main steps:
 11. Select **Add**, and then select **Save Key Vault changes**.
 12. On the **Overview** page, copy the **DNS name** value for the key vault. This value will be used during setup of the service in RCS and will be referred as the *key vault URI*.
 
+> [!NOTE]
+> For additional security of the storage account, configure the Azure Defender for Storage.
+
+For more information, see [Introduction to Azure Defender for Storage](https://docs.microsoft.com/en-us/azure/security-center/defender-for-storage-introduction).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
