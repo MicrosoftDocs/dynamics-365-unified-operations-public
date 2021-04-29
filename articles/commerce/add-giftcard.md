@@ -4,7 +4,7 @@
 title: Gift card module
 description: This topic covers gift card modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/28/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
