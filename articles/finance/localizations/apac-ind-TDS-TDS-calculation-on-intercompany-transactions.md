@@ -2,7 +2,7 @@
 # required metadata
 
 title: TDS calculation on intercompany transactions
-description: Tax Deducted at Source (TDS) is calculated on intercompany transactions. This topic describes the process whereby TDS is calculated in phases in intercompany transactions.
+description: This topic describes the process that is used to calculate Tax Deducted at Source (TDS) on intercompany transactions in phases.
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -29,16 +29,17 @@ ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
 
 ---
+
 # TDS calculation on intercompany transactions
 
 [!include [banner](../includes/banner.md)]
 
-Tax Deducted at Source (TDS) is calculated on intercompany transactions. This topic describes the process for calculcating TDS in phases in intercompany transactions.
+This topic describes the process that is used to calculate Tax Deducted at Source (TDS) on intercompany transactions in phases.
 
-When an intercompany purchase order or sales order is created, the default TDS group defined for the customer or vendor is used to calculate the TDS amount. The TDS amount is posted to the recoverable or payable accounts after the invoice is posted.
+When an intercompany purchase order or sales order is created, the default TDS group that is defined for the customer or vendor is used to calculate the TDS amount. The TDS amount is posted to the recoverable or payable accounts after the invoice is posted.
 
-An intercompany sales order or purchase order is created automatically for the original purchase order or sales order. The default TDS group is also displayed on that order to calculate TDS, and it can be modified. If the net invoice amount on the order that was automatically doesn't match the net invoice amount of the original order, the invoice can't be posted. The net amount is the invoice amount after deducting TDS. 
+An intercompany sales order or purchase order is automatically created for the original purchase order or sales order. The default TDS group is shown on the intercompany order, so that TDS can be calculated. You can change the TDS group. The invoice can be posted only if the net invoice amount on the intercompany order that is automatically created matches the net invoice amount on the original order. (The net amount is the invoice amount after TDS is deducted.)
 
-   For example, suppose a sales invoice is created for 50,000, and that TDS group-10% is attached to the invoice. The posted invoice amount is 45,000 and the posted TDS amount is 5,000 for the sales invoice. A purchase order is automatically created for the intercompany sales order with the TDS group-10%. If you change the TDS group to 15%, you cannot post the invoice because the net invoice amount of the sales order that was created automatically doesn't match the net invoice amount of the original order.
+For example, a sales invoice is created for 50,000, and the **10%** TDS group is attached to it. The posted invoice amount is 45,000, and the posted TDS amount for the sales invoice is 5,000. A purchase order is automatically created for the intercompany sales order, and the  **10%** TDS group is attached to it. If you change the TDS group to **15%**, you can't post the invoice, because the net invoice amount of the intercompany sales order that was automatically created doesn't match the net invoice amount of the original sales order.
 
-When a payment journal is created for an intercompany invoice, that journal is posted automatically. If the net payment amount of the automatically created payment journal doesn't match the net payment amount of the original payment journal, the payment journal that was created automatically can't be posted.
+A payment journal that is created for an intercompany invoice is automatically posted. That payment journal can be posted only if the net payment amount on it matches the net payment amount on the original payment journal.
