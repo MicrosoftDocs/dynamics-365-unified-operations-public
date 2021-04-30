@@ -73,13 +73,14 @@ The out of box payment connectors for Adyen and PayPal support the enhanced paym
 > [!NOTE]
 > **V001** of the Adyen connector should no longer be used due to SCA requirements that went into enforcement in the EU on January 1, 2021. For information about configuring the Adyen connector to use **V002** visit the [Adyen connector docs page](adyen-connector?tabs=8-1-3#set-up-a-processor-for-new-credit-cards).
 
-
+## Enabling enhanced SCA
 
 ## Additional resources
 
 - [Payments FAQ](dev-itpro/payments-retail.md)
 - [Dynamics 365 Payment Connector for PayPal](paypal.md)
 - [Dynamics 365 Payment Connector for Adyen](adyen-connector.md)
+- [Adyen redirect](adyen_redirect.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
