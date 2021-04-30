@@ -71,7 +71,8 @@ With the traditional flow, after the payment details had been entered in the iFr
 The out of box payment connectors for Adyen and PayPal support the enhanced payment flows in checkout by default. One key thing to note is that only **V002** of the Adyen connector will truly support enhanced SCA. **V001** will still work when the checkout is configured for enhanced SCA, but behind the scenes that version of the connector will still make two calls. 
 
 > [!NOTE]
-> **V001** of the Adyen connector should no longer be used due to SCA requirements that went into enforcement in the EU on January 1, 2021. For information about configuring the Adyen connector to use **V002** visit the [Adyen connector docs page](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3#set-up-a-processor-for-new-credit-cards). 
+> **V001** of the Adyen connector should no longer be used due to SCA requirements that went into enforcement in the EU on January 1, 2021. For information about configuring the Adyen connector to use **V002** visit the [Adyen connector docs page](adyen-connector?tabs=8-1-3#set-up-a-processor-for-new-credit-cards).
+
 
 
 ## Additional resources
