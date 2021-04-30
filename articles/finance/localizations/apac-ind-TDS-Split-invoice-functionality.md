@@ -2,7 +2,7 @@
 # required metadata
 
 title: Split invoice functionality
-description: This topic describes the setup and functionality for splitting invoices based on delivery addresses and Tax Account Numbers (TAN). 
+description: This topic describes the setup and functionality for splitting invoices by delivery address and tax account number (TAN).
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -29,38 +29,34 @@ ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
 
 ---
+
 # Split invoice functionality
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the setup and functionality for splitting invoices based on delivery addresses and Tax Account Numbers (TAN). 
+This topic describes the setup and functionality for splitting invoices by delivery address and tax account number (TAN).
 
-Select the **Product receipt**, or **Invoice** check boxes in **Accounts payable parameters > General** tab to post and split a product receipt or invoice with different delivery addresses and tax account numbers on the **Purchase order** page. The posted invoice is split per delivery address and tax account number. 
+On the **Accounts payable parameters** page, on the **General** tab, select the **Product receipt** or **Invoice** checkbox to post and split a product receipt or invoice that has different delivery addresses and TANs on the **Purchase order** page. The posted invoice will then be split by delivery address and TAN.
 
-Select the **Confirmation**, **Picking list**, **Packing slip**, or **Invoice** check boxes in **Accounts receivable parameters > Summary update > Split based on > DELIVERY INFORMATION** tab to post and split a confirmation, picking list, packing slip, or invoice with different delivery addresses and tax account numbers defined for different invoice lines on the **Sales order** page. The invoice is split per delivery address and then tax account number.
+On the **Summary update** tab, on the **Split based on** FastTab, in the **Delivery information** row, set the **Confirmation**, **Picking list**, **Packing slip**, or **Invoice** option to **Yes** to post and split a confirmation, picking list, packing slip, or invoice where different delivery addresses and TANs are defined for different invoice lines on the **Sales order** page. The invoice will be split first by delivery address and then by TAN.
 
-### Important Points 
-
-- If the **Split based on delivery information** parameter isn't selected, the invoice is posted as a single invoice and there will be no split of invoice.
-
-- The **Packing slip** check box must be selected in the **Split based on delivery information** parameter to split and post a packing slip with invoice lines having different delivery addresses and tax account numbers.
-
-- The **Invoice** check box must be selected in the **Split** **based** **on** **delivery** **information** parameter to split and post an invoice with invoice lines having different delivery addresses and tax account number.
-
-- An invoice with invoice lines having different delivery addresses but same tax account number can be posted if the **Invoice** check box is not selected in the **Split based on delivery information** parameter. The invoice will be split per delivery address. 
-
+> [!IMPORTANT]
+> - If no options for **Delivery information** are set to **Yes**, the invoice will be posted as a single invoice. No invoice splitting will occur.
+> - To split and post a packing slip where the invoice lines have different delivery addresses and TANs, you must set the **Packing slip** option for **Delivery information** to **Yes**.
+> - To split and post an invoice where the invoice lines have different delivery addresses and TANs, you must set the **Invoice** option for **Delivery information** to **Yes**.
+> - To post an invoice where the invoice lines have different delivery addresses but the same TAN, set the **Invoice** option for **Delivery information** to **No**. The invoice will be split by delivery address.
 
 ## Example
 
-In this example, the **Split based on delivery information** parameter is selected for the **Invoice** option. Suppose that a purchase invoice is posted with the following setup:
+In this example, the **Invoice** option for **Delivery information** is set to **Yes** on the **Summary update** tab of the **Accounts payable parameters** page. A purchase invoice is posted that has the following setup for delivery addresses and TANs on the lines:
 
-- Item line 1, Delivery address 1, TAN-ABCD12345A
-- Item line 2, Delivery address 1, TAN-ABCD12345A
-- Item line 3, Delivery address 2, TAN-ABCE12345B
-- Item line 4, Delivery address 3, TAN-ABCD12345A
+- **Item line 1:** Delivery address 1, TAN-ABCD12345A
+- **Item line 2:** Delivery address 1, TAN-ABCD12345A
+- **Item line 3:** Delivery address 2, TAN-ABCE12345B
+- **Item line 4:** Delivery address 3, TAN-ABCD12345A
 
-The original invoice will be split into two invoices and posted as follows. 
+In this case, the original invoice is split into two invoices and posted in the following way:
 
-- Invoice 1 will be posted for item line 1 and item line 2 because both have common delivery addresses and tax account number.
-- Invoice 2 will be posted for item line 3
-- Invoice 3 will be posted for item line 4.
+- Invoice 1 is posted for item line 1 and item line 2, because both lines have the same delivery address and TAN.
+- Invoice 2 is posted for item line 3.
+- Invoice 3 is posted for item line 4.
