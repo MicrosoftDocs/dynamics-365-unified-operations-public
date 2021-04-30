@@ -5,7 +5,7 @@ title: TaxTrans or voucher isn't generated
 description: This topic provides troubleshooting information to help resolve this issue when TaxTrans or voucher isn't generated.
 author: shaoling
 manager: beya
-ms.date: 04/29/2021
+ms.date: 04/30/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,11 +27,9 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
 ---
 
-
 # TaxTrans or voucher isn't generated
 
-[!include [banner](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/finance/includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Complete the steps in this topic if after posting tax, when you check the voucher and posted sales tax there are records missing.
 
@@ -75,4 +73,4 @@ Set a breakpoint in **TaxAccountingPostFacade::post()**, and debug for the logic
 
 If you've completed the steps in the previous section but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.
 
-[!INCLUDE[footer-include](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
