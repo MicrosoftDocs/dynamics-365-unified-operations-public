@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: References to original invoices in credit notes
-description: This topic explains how to set up and print the original invoice numbers in related credit notes.
+title: Customer aging snapshot
+description: The aging snapshot calculates the aged balances for a group of customers at one point in time. You can create aging snapshot records for all customers, or for the customers in a customer pool.
 author: JodiChristiansen
 ms.date: 04/30/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-The aging snapshot calculates the aged balances for a group of customers at one point in time. Create aging snapshot records for all customers, or for the customers in a customer pool. Aging snapshot information is shown on the **Aged balances** list page and on the **Collections** page. You must create an aging snapshot before you can use the list page. The list page shows information only for customers that an aging snapshot has been created for.
+The aging snapshot calculates the aged balances for a group of customers at one point in time. You can create aging snapshot records for all customers, or for the customers in a customer pool. Aging snapshot information is shown on the **Aged balances** list page and on the **Collections** page. You must create an aging snapshot before you can use the list page. The list page shows information only for customers that an aging snapshot has been created for.
 
 > [!NOTE] 
 > Turn on the Customer aging performance enhancement feature using the **Feature management** workspace. This reduces the time it takes to create an aging snapshot. Do not use customer pools with this enhancement turned on. If a customer pool is selected the feature won’t run.
@@ -82,4 +82,4 @@ We recommend scheduling this process to run in a batch.
 > [!NOTE]
 > In Accounts receivable parameters, select Collections tab and expand Collections defaults. Enter a number in Maximum number of batch tasks field for improved batch performance during the create aging snapshot process. Start with 100 and adjust up or down depending on your situation.
 
-The Customer credit and collections workspace displays the customer aging as well. For more information, see [Credit and collections management Power BI content](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-receivable/credit-collections-power-bi)
+The Customer credit and collections workspace displays the customer aging as well. For more information, see [Credit and collections management Power BI content](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/credit-collections-power-bi)
