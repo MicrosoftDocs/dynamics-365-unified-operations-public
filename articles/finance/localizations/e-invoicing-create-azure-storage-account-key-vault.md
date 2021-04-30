@@ -4,7 +4,7 @@
 title: Create an Azure storage account and a key vault
 description: This topic explains how to create an Azure storage account and key vault. 
 author: gionoder
-ms.date: 02/12/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -85,6 +85,10 @@ In this topic, you will complete two main steps:
 11. Select **Add**, and then select **Save Key Vault changes**.
 12. On the **Overview** page, copy the **DNS name** value for the key vault. This value will be used during setup of the service in RCS and will be referred as the *key vault URI*.
 
+> [!NOTE]
+> For additional security on the storage account, configure the Azure Defender for Storage.
+> 
+> For more information, see [Introduction to Azure Defender for Storage](/azure/security-center/defender-for-storage-introduction).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
