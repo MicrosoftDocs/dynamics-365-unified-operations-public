@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Payment, posting and reversal
+title: Payments, posting, and reversal
 description: This topic describes payments, posting of payments, and reversal of payments that are associated with Tax Deducted at Source (TDS).
 author: kailiang
 manager: AnnBe
@@ -29,77 +29,93 @@ ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
 
 ---
-# Payment, posting and reversal
+
+# Payments, posting, and reversal
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes payments, posting of payments, and reversal of payments that are associated with Tax Deducted at Source (TDS). 
+This topic describes payments, posting of payments, and reversal of payments that are associated with Tax Deducted at Source (TDS).
 
-**Allocation of payments using Proportional TDS payment schedule**
-If the TDS payment schedule that's attached to the invoice specifies **Proportionally** as the withholding tax allocation, the installment amount is calculated based on the net amount, that is, invoice amount minus the TDS amount. For example, if the invoice amount is 100,000 and the TDS amount is 20,000, the installments are calculated based on 80,000 (100,000-20,000).
+## Payment allocation that uses a proportional TDS payment schedule
 
-**Payment term is COD**
-If terms of payment are **C.O.D** (Cash On Delivery) on an attached purchase invoice, TDS is calculated on the invoice. The net amount after deducting the TDS amount is posted to the Cash account
+If the TDS payment schedule that is attached to an invoice specifies **Proportionally** as the withholding tax allocation, the installment amount is calculated based on the net amount (that is, the invoice amount after the TDS amount is deducted). For example, if the invoice amount is 100,000, and the TDS amount is 20,000, the installments are calculated based on 80,000 (100,000 – 20,000).
 
-**Discount**
-If the line discount, multi-line discount, or total discount is attached to an invoice, the TDS is calculated on the invoice amount after considering the discount. For example, if the invoice amount is 10,000 and the line discount is 100, TDS is calculated on 9,900.
+## COD payment terms
 
-**Purchase Invoices with TDS group and TCS group attached to different invoice lines**
-An invoice with a TDS group and a Tax Collected at Source (TCS) group attached to different invoice lines can't be posted. However, TDS is calculated for the partial invoice amount if the purchase order is partially invoiced.
+If the terms of payment on an attached purchase invoice are cash on delivery (COD), TDS is calculated on the invoice. The net amount (after the TDS amount is deducted) is posted to the Cash account.
 
-**Advance payments and prepayments**
-TDS can be calculated on advance payments and prepayments made to vendors. When the prepayment or advance payment is attached to a purchase by clicking **Accounts payable > Purchase order > Functions button > Open transaction editing**, TDS will be calculated only on the amount that exceeds the advance payment or prepayment amount, if any.
+## Discounts
 
-For example, suppose an advance payment transaction for 10,000 is created for Vendor 1. TDS is calculated for the transaction. Later, a purchase invoice is created for 15,000 for Vendor 1 and the advance payment transaction is linked to the invoice. In this transaction, TDS is calculated only for 5,000.
+If a line discount, multiline discount, or total discount is attached to an invoice, the calculation of TDS on the invoice amount considers the discount. For example, if the invoice amount is 10,000, and the line discount is 100, TDS is calculated on 9,900.
 
-> [!Note]
-> If the **Amount incl. sales tax** check box is selected for a prepayment, TDS is calculated on the payment amount inclusive of sales taxes.  
+## Purchase invoices where a TDS group and a TCS group are attached to different invoice lines
 
-**Automatic posting**
-If a purchase invoice is created using a method of payment that has the **Automatic posting** check box selected, an automatic payment voucher is created for the net amount after deducting the TDS amount. For example, if the invoice amount is 100,000 and the total TDS amount is 11,330, the automatic payment voucher is posted for the net amount after deducting the TDS amount, which is, 88,670.
+If a TDS group and a Tax Collected at Source (TCS) group are attached to different invoice lines, the invoice can't be posted. However, if the purchase order is partially invoiced, TDS is calculated for the partial invoice amount.
 
-**Returned item invoices or credit notes**
-If a credit note or a returned item invoice is created using a credit note, the TDS amount that's calculated only on the original invoice is reversed. The TDS amount is not reversed if TDS has already been paid to the tax authority, or if the TDS settlement process has already been run for the period.
+## Advance payments and prepayments
 
-If the returned item invoice or credit note is posted for a partial quantity, the proportionate TDS amount will be reversed.
+TDS can be calculated on advance payments and prepayments that are made to vendors. You can attach a prepayment or advance payment by going to **Accounts payable \> Purchase order** and selecting **Functions \> Open transaction editing**. In this case, TDS will be calculated only on any amount that exceeds the advance payment or prepayment amount.
 
-## Post multiple journals with withholding tax (TDS)
-The calculation and accounting of withholding tax (TDS) in India depends on the threshold limit defined for a withholding tax component. When you post multiple journals, if the cumulative transaction amount for a journal does not exceed the threshold limit specified for the withholding tax component, TDS is not calculated for that journal. When the cumulative transaction amount exceeds the threshold limit specified for the withholding tax component, TDS is calculated for the respective journal amount including the previous transactions on which TDS was applied, but not calculated.
+For example, an advance payment transaction for 10,000 is created for vendor 1, and TDS is calculated for the transaction. Later, a purchase invoice for 15,000 is created for vendor 1, and the advance payment transaction is linked to the invoice. For this transaction, TDS is calculated only on 5,000.
 
-This following examples explain the consideration of threshold limits when posting multiple journals that include withholding tax (TDS). The posting validation rules that are applicable for India withholding tax must be satisfied for the journal to post.
+> [!NOTE]
+> If the **Amount incl. sales tax** checkbox is selected for a prepayment, the payment amount that TDS is calculated on includes sales taxes.
 
-**Example 1:**
-The following table shows the details of multiple journals posted for the TDS component – Rent, for the vendor account 3000.
+## Automatic posting
 
-[![Table showing details of multiple journals posted the TDS component](./media/paymnt-pstn-revrsl-01.png)](./media/paymnt-pstn-revrsl-01.png)
+If a purchase invoice is created by using a method of payment where the **Automatic posting** checkbox is selected, an automatic payment voucher is created for the net amount (after the TDS amount is deducted). For example, if the invoice amount is 100,000, and the total TDS amount is 11,330, the automatic payment voucher is posted for 88,670.
 
-When the journals are posted simultaneously, the threshold for posting multiple journals is based on the chronological order of posting the journals. In this example Journal 001 is posted first, then journals 002, 003 and 004 are posted in chronological order.
+## Credit notes and returned item invoices
 
- The voucher entry for the journal 001 is as follows:
+If a credit note or a returned item invoice is created by using a credit note, only the TDS amount that is calculated on the original invoice is reversed. The TDS amount isn't reversed if TDS has already been paid to the tax authority, or if the TDS settlement process has already been run for the period.
+
+If the credit note or the returned item invoice is posted for a partial quantity, the proportionate TDS amount is reversed.
+
+## Posting multiple journals that have withholding tax (TDS)
+
+The calculation and accounting of withholding tax (TDS) in India depends on the threshold limit that is defined for a withholding tax component. When you post multiple journals, TDS is calculated for a journal only if the cumulative transaction amount exceeds the threshold limit that is specified for the withholding tax component. In this case, the journal amount that TDS is calculated on includes previous transactions that TDS was applied to but wasn't calculated on.
+
+The following examples show how threshold limits are considered when multiple journals that include withholding tax (TDS) are posted. A journal can be posted only if the posting validation rules that are applicable for Indian withholding tax are satisfied.
+
+### Example 1
+
+The following table shows the details of a scenario where multiple journals are posted for the TDS component – Rent for vendor account 3000.
+
+| Threshold specified for withholding tax component - Rent | Multiple journals selected for posting | | | Posting type in all the journals | Rate of withholding tax | Calculation basis for the tax component |
+|---|---|---|---|---|---|---|
+| 120,000 | Journal number | Journal amount | TDS group | Debit – Expenses - Rent Credit – Vendor account (3000) | TDS-10% | Line amount |
+| 001 | 40,000 | Rent | Surcharge-10% | Excl line amount + \[TDS\] | | |
+| 002 | 40,000 | Rent | PE-Cess-2% | Excl line amount + \[TDS + Surcharge\] | | |
+| 003 | 40,000 | Rent | SHE-cess-1% | Excl line amount + \[TDS + Surcharge\] | | |
+| 004 | 40,000 | Rent | | | | |
+
+When the journals are posted simultaneously, the threshold for posting multiple journals is based on the chronological order that the journals are posted in. In this example, journal 001 is posted first. Journals 002, 003, and 004 are then posted in chronological order.
+
+Here is the voucher entry for journal 001.
 
 | Account               | Debit  | Credit |
-| --------------------- | ------ | ------ |
+|-----------------------|--------|--------|
 | Expenses – Rent       | 40,000 |        |
 | Vendor account (3000) |        | 40,000 |
 
- The voucher entry for the journal 002 is as follows:
+Here is the voucher entry for journal 002.
 
 | Account               | Debit  | Credit |
-| --------------------- | ------ | ------ |
+|-----------------------|--------|--------|
 | Expenses – Rent       | 40,000 |        |
 | Vendor account (3000) |        | 40,000 |
 
- The voucher entry for the journal 003 is as follows:
+Here is the voucher entry for journal 003.
 
 | Account               | Debit  | Credit |
-| --------------------- | ------ | ------ |
+|-----------------------|--------|--------|
 | Expenses – Rent       | 40,000 |        |
 | Vendor account (3000) |        | 40,000 |
 
-The voucher entry for the journal 004 is as follows:
+Here is the voucher entry for journal 004.
 
 | Account               | Debit     | Credit    |
-| --------------------- | --------- | --------- |
+|-----------------------|-----------|-----------|
 | Expenses – Rent       | 40,000    |           |
 | Vendor account (3000) |           | 40,000    |
 | Vendor account (3000) | 18,128.00 |           |
@@ -108,56 +124,56 @@ The voucher entry for the journal 004 is as follows:
 | PE-Cess Payable       |           | 352.00    |
 | SHE Cess Payable      |           | 176.00    |
 
- 
+If the **Overlook threshold** checkbox is selected for the tax code on the **Withholding tax groups** page, when the journals are posted, the withholding tax code is calculated on the individual journal amounts for all of them.
 
-If the **Overlook threshold** check box is selected for the tax code on the **Withholding tax groups** page, all the journals are posted with the withholding tax code calculated on the individual journal amounts.
+### Example 2
 
-**Example 2:**
+The following table shows the details of another scenario where multiple journals are posted for TDS component – Rent for vendor account 3000.
 
-The following table shows the details of  multiple journals posted for TDS component – Rent, for vendor account 3000.
+| Threshold specified for withholding tax component - Rent | Multiple journals selected for posting | Posting type in all the journals | Rate of withholding tax | Calculation basis for the tax code | Overlook threshold limit checkbox | Amount | Marked or unmarked |
+|---|---|---|---|---|---|---|---|
+| 50,000 | Journal number | Journal amount | TDS group | Debit – Expenses - Rent Credit – Vendor account (3000) | TDS-10% | Line amount | Marked |
+| 005 | 20,000 | Rent | Surcharge-10% | Excel line amount + \[TDS\] | Marked | | |
+| 006 | 20,000 | Rent | PE-Cess-2% | Excel line amount + \[TDS+ Surcharge\] | Unmarked | | |
+| 007 | 9,000 | Rent | SHE-cess-1% | Excel line amount + \[TDS+ Surcharge\] | Marked | | |
+| 008 | 2,000 | Rent | | | | | |
+| 009 | 1,000 | Rent | | | Marked | | |
+| 010 | 20,000 | Rent | | | Marked | | |
 
-| Threshold specified for withholding  tax component - Rent | Multiple journals selected  for posting | Posting type in all the  journals | Rate of withholding tax | Calculation basis for the tax  code                       | Overlook threshold limit  check box |  Amount  | Marked or not  |
-| --------------------------------------------------------- | --------------------------------------- | --------------------------------- | ----------------------- | --------------------------------------------------------- | ----------------------------------- | ----------- | ------ |
-| 50,000                                                    | Journal number                          | Journal amount                    | TDS group               | Debit – Expenses - Rent   Credit – Vendor  account (3000) | TDS-10%                             | Line amount | Marked |
-| 005                                                       | 20,000                                  | Rent                              | Surcharge-10%           | Excel line amount + [TDS]                                  | Marked                              |             |        |
-| 006                                                       | 20,000                                  | Rent                              | PE-Cess-2%              | Excel line amount + [TDS+ Surcharge]                       | Unmarked                            |             |        |
-| 007                                                       | 9000                                    | Rent                              | SHE-cess-1%             | Excel line amount + [TDS+ Surcharge]                       | Marked                              |             |        |
-| 008                                                       | 2,000                                   | Rent                              |                         |                                                           |                                     |             |        |
-| 009                                                       | 1,000                                   | Rent                              |                         |                                                           | Marked                              |             |        |
-| 010                                                       | 20,000                                  | Rent                              |                         |                                                           | Marked                              |             |        |
+#### Step 1
 
- 
+In this example, journals 005 and 006 are posted together. If the **Overlook threshold limit** checkbox is selected, the taxes are calculated. The following table shows how the taxes for the transaction are calculated.
 
-**Step 1**: In this example the journals 005 and 006 are posted together. The taxes are calculated if the **Overlook threshold limit** check box is marked. The taxes for the transaction are calculated as follows:
+| Journal | Transaction amount | TDS   | Surcharge | PE-Cess | SHE-Cess |
+|---------|--------------------|-------|-----------|---------|----------|
+| 005     | 20,000             | 2,000 | 200       | 44      | 22       |
+| 006     | 20,000             | 2,000 | 200       | 44      | 22       |
 
-| Journal | Transaction Amount | TDS  | Surcharge | PE-Cess | SHE-Cess |
-| ------- | ------------------ | ---- | --------- | ------- | -------- |
-| 005     | 20,000             | 2000 | 200       | 44      | 22       |
-| 006     | 20,000             | 2000 | 200       | 44      | 22       |
+#### Step 2
 
- 
+The **Overlook threshold limit** checkbox is cleared. Journal 007 is posted. Taxes are calculated only if the cumulative transaction amount exceeds the specified threshold limit.
 
-**Step 2**: The **Overlook threshold limit** check box is cleared. The journal 007 is posted. Taxes are not calculated if the cumulative transaction amount does not exceed the specified threshold limit.
+| Journal | Transaction amount | TDS  | Surcharge | PE-Cess | SHE-Cess |
+|---------|--------------------|------|-----------|---------|----------|
+| 007     | 9,000              | 0    | 0         | 0       | 0        |
 
-| Journal | Transaction Amount | TDS  | Surcharge | PE-Cess | SHE-Cess |
-| ------- | ------------------ | ---- | --------- | ------- | -------- |
-| 007     | 9000               | 0    | 0         | 0       | 0        |
+#### Step 3
 
+The **Overlook threshold limit** checkbox is selected. Journals 008, 009, and 010 are posted.
 
-**Step 3**: The **Overlook threshold limit** check box is selected. The journals 008, 009, and 010 are posted. 
-
-| Journal | Transaction Amount | TDS      | Surcharge | PE-Cess | SHE-Cess |
-| ------- | ------------------ | -------- | --------- | ------- | -------- |
+| Journal | Transaction amount | TDS      | Surcharge | PE-Cess | SHE-Cess |
+|---------|--------------------|----------|-----------|---------|----------|
 | 008     | 2,000.00           | 200.00   | 20.00     | 4.40    | 2.20     |
 | 009     | 1,000.00           | 100.00   | 10.00     | 2.20    | 1.10     |
 | 010     | 20,000.00          | 2,000.00 | 200.00    | 44.00   | 22.00    |
 
-> [!Note]
-> In the Indian business scenario, the threshold limit and the exception threshold limit are not applicable to the TCS tax type. However, flexibility is provided in the application to define the threshold limit and the exception threshold limit for the TCS tax components, as well. If defined, the functionality of threshold applicable to the TDS tax codes will be  applied as is, to the TCS tax codes.   
+> [!NOTE]
+> In the Indian business scenario, the threshold limit and the exception threshold limit aren't applicable to the TCS tax type. However, the application lets you define the threshold limit and the exception threshold limit for the TCS tax components. If they are defined, the threshold functionality that is applicable to the TDS tax codes will be applied as-is to the TCS tax codes.
 
-**Reverse transactions**
-If a transaction on which TDS is calculated is reversed by clicking **Accounts payable or Accounts receivable > vendors/customers > transactions button > reverse transaction button or general ledger > chart of accounts > transactions button > reverse transaction button, the TDS amount is reversed with the transaction amount**.
+## Reverse transactions
 
-For invoices that have the TDS calculated on the cumulative amount of a group of invoices because of a threshold limit, the TDS amount is reversed only when the specific invoice on which the TDS is calculated is reversed. For transactions that are created after the reversal transaction, TDS will be calculated again considering the threshold limit.
+You can reverse a transaction that TDS is calculated on by going to **Accounts payable \> Vendors**, **Accounts receivable \> Customers**, or **General ledger \> Chart of accounts**, selecting **Transactions**, and then selecting **Reverse transaction**. In this case, the TDS amount is reversed together with the transaction amount.
 
-For example, the threshold limit is 25,000; three invoices are posted for 10,000, 10,000, and 6,000 respectively. The TDS is calculated on the third invoice on the cumulative amount of 26000. If you reverse the first and second invoice, the TDS amount will not be reversed. The TDS amount is reversed only when you reverse the third invoice.
+In cases where TDS is calculated on the cumulative amount of a group of invoices because of a threshold limit, the TDS amount is reversed only when the specific invoice that the TDS is calculated on is reversed. For transactions that are created after the reversal transaction, TDS will be calculated again, and the calculation will consider the threshold limit.
+
+For example, the threshold limit is 25,000. Three invoices are posted: one for 10,000, another for 10,000, and one for 6,000. TDS is calculated for the third invoice, on the cumulative amount of 26,000. If you reverse the first and second invoices, the TDS amount won't be reversed. It will be reversed only when you reverse the third invoice.
