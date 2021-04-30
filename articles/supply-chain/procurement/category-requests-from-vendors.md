@@ -31,10 +31,7 @@ After the feature is turned on, you can still manually add procurement categorie
 
 Before a vendor can interact with category requests, it must be set up for vendor collaboration.
 
-The vendor must have at least one vendor collaboration user. Only vendor users who have one or both of the following security roles can create and submit category requests:
-
-- Vendor contact (external)
-- Vendor admin (external)
+The vendor must have at least one vendor collaboration user. Only vendor users with the Vendor admin (external) security role can create and submit category requests.
 
 For more information, see [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
 
