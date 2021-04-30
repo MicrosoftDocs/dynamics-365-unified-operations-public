@@ -51,7 +51,7 @@ This two-step method of acquiring payment authorizations was not ideal in all ca
 
 Aside from technical issues, it the traditional method also caused confusion for merchants when they were reviewing payment processing activity and seeing many zero amount requests. 
 
-To address the above issues, payments in the Storefront checkout have been refactored to only require a single request. This single request perfomrs all necessary funtions related to payment processing including:
+To address the above issues, payments in the Storefront checkout have been refactored to only require a single request. This single request perfomrs all necessary functions related to payment processing including:
 
 - Obtaining a card token where supported in case the authorization becomes expired and a new authorization is required for fulfillment. 
 - Support for SCA during the actual authorization request so liability shift is evident on the authoriation for the amount due.
@@ -64,7 +64,15 @@ Once the payments flow is initiated, there is no step to review and submit the o
 
 The above flow is also applicable to payment method which redirect by default such as PayPal. Once payment details have been provided to PayPal, the redirect back to the checkout will initiate placement of the order. 
 
-With the traditional flow, after the 
+With the traditional flow, after the payment details had been entered in the iFrame there was a "Save and continue" button available which would add the tokenized payment to the checkout. In demo environments there may have also been a step to collect the shopper's email or have them agree to terms of use. With the new flow, the validation that was previously perfomed by the final "Save and continue" button is now included in the "Place order" button. So, the new flow saves a click for the customer and eliminates a page load for the checkout flow. 
+
+## Payment connector support
+
+The out of box payment connectors for Adyen and PayPal support the enhanced payment flows in checkout by default. One key thing to note is that only **V002** of the Adyen connector will truly support enhanced SCA. **V001** will still work when the checkout is configured for enhanced SCA, but behind the scenes that version of the connector will still make two calls. 
+
+> [!NOTE]
+> **V001** of the Adyen connector should no longer be used due to SCA requirements that went into enforcement in the EU on January 1, 2021. For information about configuring the Adyen connector to use **V002** visit the [Adyen connector docs page](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3#set-up-a-processor-for-new-credit-cards). 
+
 
 ## Additional resources
 
