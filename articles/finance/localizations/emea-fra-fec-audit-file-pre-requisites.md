@@ -2,9 +2,9 @@
 # required metadata
 
 title: Pre-requisites to generate FEC compliant with accounting rules in France
-description: This topic describes the pre-requisites to generate FEC compliant with accounting rules in France in Microsoft Dynamics 365 Finance.
+description: This topic describes the pre-requisites that must be met before you can generate FEC compliant with accounting rules in France in Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 28/04/2021
+ms.date: 05/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
