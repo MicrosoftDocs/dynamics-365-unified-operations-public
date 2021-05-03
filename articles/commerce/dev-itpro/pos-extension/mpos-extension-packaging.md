@@ -71,3 +71,5 @@ To create the extension installer for a Modern POS extension, follow these steps
     > Before installing the extension installer, install the sealed Modern POS first.
 
 9. After installing the extension, close Modern POS if it's running. Launch Modern POS from the **Install/Update Modern POS** desktop shortcut icon to load the extension. The extension .appx file will be installed after clicking the desktop icon. The previous steps copy the .appx and files to the correct location.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
