@@ -69,8 +69,6 @@ Select No to only include customers with a balance. This option will speed up pe
 We recommend scheduling this process to run in a batch.
 
 > [!NOTE]
-> In Accounts receivable parameters, select Collections tab and expand Collections defaults. Enter a number in Maximum number of batch tasks field for improved batch performance during the create aging snapshot process. Start with 100 and adjust up or down depending on your situation.
-
-[![Customer aging snapshot](./media/customer-aging-snapshot-01.png)](./media/customer-aging-snapshot-01.png)
+> In Accounts receivable parameters, select the **Collections** tab and expand **Collections defaults**. Enter a number in the **Maximum number of batch tasks** field to improve batch performance during the process for creating aging snapshots. We recommend starting with the default setting of 100 in the **Age customer balances** field, and then adjusting it to optimize processing in your situation.
 
 The Customer credit and collections workspace displays the customer aging as well. For more information, see [Credit and collections management Power BI content](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/credit-collections-power-bi)
