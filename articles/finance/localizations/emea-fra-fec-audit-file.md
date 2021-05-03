@@ -2,7 +2,7 @@
 # required metadata
 
 title: Audit file for France (Fichier des écritures comptables, FEC)
-description: This topic walks you through the process of seting up and generating the Audit file for France (FEC) in Microsoft Dynamics 365 Finance.
+description: This topic walks you through the process of setting up and generating the Audit file for France (FEC) in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.date: 05/01/2021
 ms.topic: article
@@ -13,7 +13,8 @@ ms.technology:
 
 # ms.search.form: 
 audience: Application User
-# ms.devlang: 
+# ms.devlang:
+ms.author: elgolu
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -24,7 +25,7 @@ ms.search.region: France
 
 # Audit file for France (Fichier des écritures comptables, FEC)
 
-Companies in France are legally required to export the accounting transaction data from a fiscal year, and then provide the data to auditors within a reasonable time in the format of Fichier des écritures comptables (FEC).
+Companies in France are legally required to export the accounting transaction data from a fiscal year. The companies must then provide the data to auditors within a reasonable time in the format of, *Fichier des écritures comptables (FEC)*.
 
 For more information about these requirements, see the following topics:
 
