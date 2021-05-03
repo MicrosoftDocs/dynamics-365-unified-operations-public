@@ -20,7 +20,7 @@ This topic applies to Dynamics 365 Commerce version 10.0.19 and later.
 
 The Store Commerce app in Microsoft Dynamics 365 Commerce provides rich commerce functionalities for firstline workers, such as cashiers, sales associates, inventory associates, stock clerks, and store managers, to perform various commerce operations like cash and carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
 
-Store Commerce is a Windows app from the Microsoft Store that runs on a Windows device. The app will be available in the Microsoft Store for easier discovery, download and deployment, simplifying the overall lifecycle of deployment and servicing.
+Store Commerce is a Windows app from [Windows Apps - Microsoft Store](https://www.microsoft.com/store/apps/windows) that runs on a Windows device. The app will be available in the Microsoft Store for easier discovery, download and deployment, simplifying the overall lifecycle of deployment and servicing.
 
 Store Commerce is a shell app for Windows that uses Microsoft Edge WebView2 to render the Cloud Point of Sale (CPOS). CPOS can run only in a web browser, but Store commerce can run as a native Windows app like [Modern Point of Sale (MPOS)](retail-modern-pos-architecture.md). Store Commerce supports local hardware station and can be directly integrated to payment terminal, printer, and cash drawer. You don't need to set up shared hardware station to use hardware devices. 
 
@@ -36,7 +36,7 @@ Prerequisite:
 
 Store Commerce is available in Microsoft Store to download and installation. To download the app, follow these steps:
 
-1. Open Microsoft Store and search for **Microsoft Dynamics 365 Commerce – Store Commerce**.
+1. Open [Windows Apps - Microsoft Store](https://www.microsoft.com/store/apps/windows) and search for **Microsoft Dynamics 365 Commerce – Store Commerce**.
 2. Select **Get** to install the app. 
 3. In the Windows Start menu, search for Store Commerce and open the app.
 
