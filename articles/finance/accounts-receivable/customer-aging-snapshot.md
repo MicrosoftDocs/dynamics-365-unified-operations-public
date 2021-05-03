@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer aging snapshot
-description: The aging snapshot calculates the aged balances for a group of customers at one point in time. You can create aging snapshot records for all customers, or for the customers in a customer pool.
+description: This topic provides information about customer aging snapshots. The aging snapshot calculates aged balances for a group of customers at a point in time.
 author: JodiChristiansen
 ms.date: 05/05/2021
 ms.topic: article
@@ -35,7 +35,7 @@ This topic provides information about customer aging snapshots. The aging snapsh
 > [!NOTE] 
 > Turn on the Customer aging performance enhancement feature using the **Feature management** workspace. This reduces the time it takes to create an aging snapshot. Don't use customer pools with this enhancement turned on. If a customer pool is selected the feature won’t run.
 
-Enter information as indicated in the following fields when you're creating a customer againg snapshot. 
+Enter information as indicated in the following fields when you're creating a customer aging snapshot. 
 
 **Aging period definition** - Select the aging period definition for this aging snapshot. You can have one aging snapshot for each aging period definition, but they need to be created separately. 
 
