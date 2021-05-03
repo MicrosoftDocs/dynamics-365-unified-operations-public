@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: PurchTable, SysSecRolesEditUsers
+ms.search.form: PurchTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -61,7 +61,7 @@ The scale units own the following data:
   - **Transfer orders** (only outbound with simple picking and loading work)
 
 - **Warehouse order receipt data** – This data is used only for purchase orders that have been released to a warehouse.
-- **License plate data** – License plates can be created on the hub and the scale unit. Dedicated conflict handling has been provided. Note that this data isn't warehouse-specific.
+- **License plate data** – License plates can be created on the hub and the scale units. Dedicated conflict handling has been provided. Note that this data isn't warehouse-specific. If the same license plate number gets created "at the same time" on both the hub and a scale unit deployment the following syncronization of the data will fail. You can take action in the **System administration > Inquiries > Workload inquiries > Duplicate records** page where the data related to the two entities can get viewed and merged.
 
 ## Outbound process flow
 
