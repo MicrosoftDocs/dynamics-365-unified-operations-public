@@ -69,5 +69,5 @@ Because the Store Commerce renders the CPOS, you follow the CPOS packaging and d
 
 The app can also be extended to integrate with hardware devices. For more information, see [Integrate the POS with a new hardware device document for more details](hardware-device-extension.md).
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
