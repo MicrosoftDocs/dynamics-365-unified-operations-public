@@ -60,7 +60,7 @@ Critical fixes and non-critical updates are handled in the following way:
 
 ### Continuous service updates
 
-Since November 2018, on-premises service updates are released continuously. For more information about version numbers and availability dates, see [Software lifecycle policy and cloud releases](versions-update-policy.md). For more information about One Version service updates, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
+Since November 2018, on-premises service updates are released continuously. For more information about version numbers and availability dates, see [Software lifecycle policy and cloud releases](versions-update-policy.md). For more information about One Version service updates, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.yml).
 
 Every service update release has a specific expiration date after which the release isn't entitled to receive support.
 
@@ -96,7 +96,7 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 | Finance + Operations, Enterprise edition (on-premises) | 7.3 (7.3.11971) | Mar 2018 | Apr 2020* |
 | Finance + Operations, Enterprise edition (on-premises) | July 2017 (7.2.11792) | Jun 2017 | Apr 2019 |
 
-\* All customers must be on the latest version of Finance + Operations. The deadline for this requirement was April 30, 2019. In the transition to [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates), we had given exemptions for customers who had unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that had been submitted to Microsoft. Those customers could stay on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
+\* All customers must be on the latest version of Finance + Operations. The deadline for this requirement was April 30, 2019. In the transition to [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates), we had given exemptions for customers who had unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that had been submitted to Microsoft. Those customers could stay on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.yml).
 
 #### Older platform releases
 

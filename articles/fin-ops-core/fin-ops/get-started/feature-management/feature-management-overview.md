@@ -141,7 +141,7 @@ Feature management lets you control the features that are delivered in each rele
 
 ## New features are optional for 12 months
 
-When a new non-critical feature is installed, it will be optional for a 12-month period. This allows you and your organization time to plan ahead for when to uptake a feature and have it tested against your daily operations. For more information, see [One Version service updates FAQ](../one-version.md#what-about-new-features).
+When a new non-critical feature is installed, it will be optional for a 12-month period. This allows you and your organization time to plan ahead for when to uptake a feature and have it tested against your daily operations. For more information, see [One Version service updates FAQ](../one-version.yml#what-about-new-features).
 
 ## Using Feature management to turn on ISV features or custom features
 

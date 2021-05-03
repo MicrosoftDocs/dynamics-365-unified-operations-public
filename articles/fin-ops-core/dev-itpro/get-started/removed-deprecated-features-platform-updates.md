@@ -101,7 +101,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Metadata hotfixes are no longer supported with the [One Version](../../fin-ops/get-started/one-version.md) service updates that were introduced in July 2018 with version 8.1. |
+| **Reason for deprecation/removal** | Metadata hotfixes are no longer supported with the [One Version](../../fin-ops/get-started/one-version.yml) service updates that were introduced in July 2018 with version 8.1. |
 | **Replaced by another feature?**   | Individual metadata hotfixes are not available for supported versions. Cumulative quality updates are applied instead. |
 | **Product areas affected**         | Visual Studio add-ins |
 | **Deployment option**              | Development virtual machines |

@@ -83,7 +83,7 @@ Based on your product and version, you will have different update options from L
 
 - **Application version 7.1, 7.2, 8.0, or earlier (except version 7.3) with Platform update 32 and earlier** - The product versions noted here are out of service.  No new X++ updates are available. You can apply the X++ updates that have been released previously but no new X++ update will be published to LCS. 
 
-    Also, a platform update will not be available starting with **Platform update 33**. This means that you will not be able to apply the platform only update package if your application version is 7.1, 7.2, or 8.0 and earlier (except version 7.3). If you're running any of these versions, you need to upgrade to the latest version to stay with the latest feature and functionality. For more information, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md).
+    Also, a platform update will not be available starting with **Platform update 33**. This means that you will not be able to apply the platform only update package if your application version is 7.1, 7.2, or 8.0 and earlier (except version 7.3). If you're running any of these versions, you need to upgrade to the latest version to stay with the latest feature and functionality. For more information, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.yml).
 
 > [!NOTE]
 > If you are on a release that is noted above, you need to upgrade as soon as possible. 

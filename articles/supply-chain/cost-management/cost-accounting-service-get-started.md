@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.12
 [!INCLUDE [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> The functionality that is described in this topic is available as part of a private preview release. The content of this topic and the functionality that it describes are subject to change. For more information about preview releases, see [One version service updates FAQ](../../fin-ops-core/fin-ops/get-started/one-version.md).
+> The functionality that is described in this topic is available as part of a private preview release. The content of this topic and the functionality that it describes are subject to change. For more information about preview releases, see [One version service updates FAQ](../../fin-ops-core/fin-ops/get-started/one-version.yml).
 
 The cost accounting service lets you do multiple inventory accounting in the cost accounting ledgers that you've set up. You associate each cost accounting ledger with a *convention*. A convention is a collection of the following types of accounting policies:
 

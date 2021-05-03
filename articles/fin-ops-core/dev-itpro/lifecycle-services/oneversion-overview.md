@@ -34,7 +34,7 @@ The following set of topics provide information that is related to service updat
 
 - [Service update availability](../../fin-ops/get-started/public-preview-releases.md) – This topic provides information about the release cadence and release process.
 - [Software lifecycle policy and cloud releases](../migration-upgrade/versions-update-policy.md) – This topic provides information about the service updates, availability, and end of service.
-- [One Version service updates FAQ](../../fin-ops/get-started/one-version.md) – This topic answers questions about the update process, tools, planning, and Retail service updates.
+- [One Version service updates FAQ](../../fin-ops/get-started/one-version.yml) – This topic answers questions about the update process, tools, planning, and Retail service updates.
 
 The experience for service updates consists of four distinct steps: 
 

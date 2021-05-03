@@ -54,7 +54,7 @@ Much of this content also applies to the related products: Dynamics 365 Commerce
 <p><a href="imp-lifecycle/prepare-go-live.md">Preparing for go-live</a></p>
 
 <h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">One Version service updates</a></h3>
-<p><a href="get-started/one-version.md">One Version service updates FAQ</a></p>
+<p><a href="get-started/one-version.yml">One Version service updates FAQ</a></p>
 <p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Software lifecycle policy: Cloud</a></p>
 <p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Software lifecycle policy: On-premises</a></p>
 <p><a href="get-started/public-preview-releases.md">Standard and First release service updates</a></p>

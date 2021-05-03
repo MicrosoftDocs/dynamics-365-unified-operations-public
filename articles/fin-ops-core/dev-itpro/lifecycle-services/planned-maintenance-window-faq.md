@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 ### What is a planned maintenance window?
-A planned maintenance window is the timeframe that Microsoft has scheduled to apply infrastructure or [service updates](../../fin-ops/get-started/one-version.md) to your cloud service.
+A planned maintenance window is the timeframe that Microsoft has scheduled to apply infrastructure or [service updates](../../fin-ops/get-started/one-version.yml) to your cloud service.
 
 ### How does a planned maintenance window work?
 For planned maintenance scheduled on your Tier 2 through Tier 5 sandbox environments and production environments, Microsoft will send a notification to all stakeholders **five business days** before the start of the patching window. The patching window is the period when the environment is patched. It's defined by geographic region. Details about the maintenance activity will be included in the notification that is sent to stakeholders. For Microsoft-managed Tier 1 environments, we will not send any notifications before the update. 
@@ -60,7 +60,7 @@ Any partner, independent software vendor (ISV), and other interested party who w
 Microsoft is continually working to reduce the necessity of downtime for the service, and many regular maintenance tasks don't incur downtime. However, to help guarantee the most predictability, Microsoft can't yet do all patching in zero downtime.
 
 ## Microsoft service updates 
-A separate set of frequently asked questions (FAQ) provides details about service updates that are done by Microsoft. See [One Version service updates FAQ](../../fin-ops/get-started/one-version.md).
+A separate set of frequently asked questions (FAQ) provides details about service updates that are done by Microsoft. See [One Version service updates FAQ](../../fin-ops/get-started/one-version.yml).
 
 ## Infrastructure updates 
 

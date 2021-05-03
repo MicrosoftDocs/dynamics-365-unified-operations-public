@@ -37,7 +37,7 @@ This topic points to content for system administrators of Finance and Operations
 In July 2018 we announced a change to the way we deliver Dynamics 365 updates that will help you stay current in a consistent, predictable, and seamless manner. The following topics are intended to provide clarity on the Finance and Operations service updates, processes, and tools you can use to stay current.
 
 - [One Version service updates overview](../lifecycle-services/oneversion-overview.md)
-- [One Version service updates FAQ](../../fin-ops/get-started/one-version.md)
+- [One Version service updates FAQ](../../fin-ops/get-started/one-version.yml)
 - [Service update availability](../../fin-ops/get-started/public-preview-releases.md)
 - [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md)
 - [Configure service updates through Lifecycle Services (LCS)](../lifecycle-services/configure-service-updates.md)

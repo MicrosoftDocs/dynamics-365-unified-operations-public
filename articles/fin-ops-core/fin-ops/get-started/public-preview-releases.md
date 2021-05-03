@@ -62,7 +62,7 @@ Customers will be able to take up to 8 service updates per year and are required
 
 Sign up for the PEAP program by joining the Insider Program available at https://experience.dynamics.com. After your nomination has been accepted, join the program.
 
-Public previews are made available as a deployable package via the Shared Asset Library in Lifecycle Services. For more details, see [One Version service updates FAQ](one-version.md). 
+Public previews are made available as a deployable package via the Shared Asset Library in Lifecycle Services. For more details, see [One Version service updates FAQ](one-version.yml). 
 
 ## Service update overview
 Service updates are continuous, touchless updates that provide new features and functionality. They eliminate the need to do expensive upgrades every few years. The service updates maintain backward compatibility, which means there is no need to ‘merge your code’.  We recommend leveraging tools such as the Regression suite automation tool (RSAT) for regression testing.
