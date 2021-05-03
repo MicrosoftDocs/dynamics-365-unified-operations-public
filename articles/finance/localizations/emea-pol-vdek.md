@@ -4,7 +4,7 @@
 title: VAT declaration with registers (JPK_V7M, VDEK)
 description: This topic walks you through the process of setting up VAT declaration with registers (also called JPK_V7M, VDEK) in Poland. 
 author: liza-golub
-ms.date: 11/18/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -60,7 +60,7 @@ The following tasks will prepare Dynamics 365 Finance to report a JPK_V7M:
 
 To prepare Finance for JPK_V7M reporting, you must import the following versions, or later versions, of ER configurations.
 
-| **ER configuration name**         | **Type**           | **Description**                                                                                                 |
+| ER configuration name             | Type               | Description                                                                                                 |
 |-----------------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------|
 | Standard Audit File (SAF-T)       | Model              | The common ER model for Standard Audit Files.                                                                   |
 | Standard Audit File model mapping | Model mapping      | The model mapping that defines data sources for Polish Standard Audit File (JPK) reports.                       |
@@ -82,7 +82,7 @@ Depending on the tax transaction data, the values of some elements in the JPK_V7
 
 The format includes the following lookup fields for setup.
 
-| **Name**                      | **Description**                                                                                                                                                                                                                                                                                         | **Impact**                                                                                                                                                                                       |
+| Name                      | Description                                                                                                                                                                                                                                                                                         | Impact                                                                                                                                                                                       |
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ImportSelector                | A designation that is related to input tax on imports of goods, including goods that are taxed in accordance with article 33a of the VAT Act                                                                                                                                                            | This lookup field is used to define the value of the **IMP** marker for purchase documents.                                                                                                      |
 | ProceduralMarkingsSelector    | Designations that are related to the procedures                                                                                                                                                                                                                                                         | This lookup field is used to define the values of the following markers for sales documents: **SW**, **EE**, **TP**, **TT-WNT**, **TT_D**, **I_42**, **I_63**, **B_SPV**, and **B_SPV_DOSTAWA**. |
@@ -94,7 +94,7 @@ The format includes the following lookup fields for setup.
 | PurchaseDocumentTypesSelector | A designation of the type of the purchase document                                                                                                                                                                                                                                                      | This lookup field is used to define the **MK**, **VAT_RR**, and **WEW** purchase document types.                                                                                                 |
 
 1. In the **Electronic reporting** workspace, select the **Reporting configurations** tile.
-2. On the **Configurations** page, expand **StandardAudit File (SAF-T)**, and select **JPK-V7M XML format (PL)**.
+2. On the **Configurations** page, expand **Standard Audit File (SAF-T)**, and select **JPK-V7M XML format (PL)**.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 
     ![Application specific parameters group](media/setup-app-spec-params.jpg)
@@ -108,8 +108,7 @@ The format includes the following lookup fields for setup.
 
 #### Import transactions (ImportTransaction)
 
-
-| **Name**          | **Label (En)** | **Label (Pl)** | **Description (En)**                                                                                                                         | **Description (Pl)**                                                                                                            |
+| Name          | Label (En) | Label (Pl) | Description (En)                                                                                                                         | Description (Pl)                                                                                                            |
 |-------------------|----------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | ImportTransaction | Import         | Import         | A designation that is related to input tax on imports of goods, including goods that are taxed in accordance with article 33a of the VAT Act | Oznaczenie dotyczące podatku naliczonego z tytułu importu towarów, w tym importu towarów rozliczanego zgodnie z art. 33a ustawy |
 
@@ -124,17 +123,17 @@ Define conditions from the current company's master data sources to determine wh
 
 The following table shows the lookup results for **ImportTransaction**.
 
-| **Name** | **Label (En)** | &nbsp;  | **Label (Pl)** | **Description (En)**                                                                                                                         | **Description (Pl)**                                                                                                            |
-|----------|----------------|---|----------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Import   | Import         |   | Import         | A designation that is related to input tax on imports of goods, including goods that are taxed in accordance with article 33a of the VAT Act | Oznaczenie dotyczące podatku naliczonego z tytułu importu towarów, w tym importu towarów rozliczanego zgodnie z art. 33a ustawy |
-| Inne     | Other          |   |                |                                                                                                                                              |                                                                                                                                 |
+| Name | Label (En) | Label (Pl) | Description (En)                                                                                                                         | Description (Pl)                                                                                                            |
+|----------|----------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| Import   | Import         | Import         | A designation that is related to input tax on imports of goods, including goods that are taxed in accordance with article 33a of the VAT Act | Oznaczenie dotyczące podatku naliczonego z tytułu importu towarów, w tym importu towarów rozliczanego zgodnie z art. 33a ustawy |
+| Inne     | Other          |                |                                                                                                                                              |                                                                                                                                 |
 
 > [!NOTE]
 > It's important that you add **Inne** (**Other**), which must collect data from other cases as the last item in the list. The **Line** value must be the last value in your table. In the **Tax code** column for the **Inne** lookup result, select **\*Not blank\***.
 
 #### Procedural markings (ProceduralMarkingsSelector)
 
-| **Name**                   | **Label (En)**      | **Label (Pl)**                | **Description (En)**                            | **Description (Pl)**          |
+| Name                   | Label (En)      | Label (Pl)                | Description (En)                            | Description (Pl)          |
 |----------------------------|---------------------|-------------------------------|-------------------------------------------------|-------------------------------|
 | ProceduralMarkingsSelector | Procedural markings | Oznaczenia dotyczące procedur | Designations that are related to the procedures | Oznaczenia dotyczące procedur |
 
@@ -144,12 +143,14 @@ For this lookup field, the following master data sources are available for the s
 - Sales tax group
 - Customer account ID
 - Customer group
+- Vendor account ID (as of KB4615826)
+- Vendor group (as of KB4615826)
 
 This lookup field defines conditions that are based on current company's master data sources. These conditions will produce a mark of **1** for the corresponding element from the list of designations that are related to the procedures under the **\<SprzedazWiersz\>** tag. Several designations can be marked for the same output VAT record. Therefore, if a company must report different designations, separate conditions must be defined.
 
 The following table shows the lookup results (designations) for **ProceduralMarkingsSelector**.
 
-| **Name**       | **Label (En)**                                                                                            | **Label (Pl)**                                                         | **Description (En)**                                                                                                                                                                                         | **Description (Pl)**                                                                                                                                                                               |
+| Name       | Label (En)                                                                                            | Label (Pl)                                                         | Description (En)                                                                                                                                                                                         | Description (Pl)                                                                                                                                                                               |
 |----------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | SW             | Mail order sale                                                                                           | Sprzedaży wysyłkowej                                                   | Delivery as part of a mail order sale from the territory of the country, as referred to in article 23 of the VAT Act                                                                                         | Dostawa w ramach sprzedaży wysyłkowej z terytorium kraju, o której mowa w art. 23 ustawy                                                                                                           |
 | EE             | Telecommunications                                                                                        | Usług telekomunikacyjnych                                              | The provision of telecommunications, broadcasting, and electronic services that are referred to in article 28k of the VAT Act                                                                                | Świadczenie usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy                                                                                              |
@@ -168,8 +169,7 @@ The following table shows the lookup results (designations) for **ProceduralMark
 
 #### Goods and services supplying types (ServiceDeliverySelector)
 
-
-| **Name**                | **Label (En)**                     | **Label (Pl)**              | **Description (En)**                                                   | **Description (Pl)**                             |
+| Name                | Label (En)                     | Label (Pl)              | Description (En)                                                   | Description (Pl)                             |
 |-------------------------|------------------------------------|-----------------------------|------------------------------------------------------------------------|--------------------------------------------------|
 | ServiceDeliverySelector | Delivery and provision of services | Dostawy i świadczenia usług | An indicator that is related to the delivery and provision of services | Oznaczenie dotyczące dostawy i świadczenia usług |
 
@@ -184,7 +184,7 @@ This lookup field defines conditions that are based on current company's master 
 
 The following table shows the lookup results (designations) for **ServiceDeliverySelector**.
 
-| **Name** | **Label (En)**                                      | **Label (Pl)**                                      | **Description (En)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | **Description (Pl)**                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Name | Label (En)                                      | Label (Pl)                                      | Description (En)                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Description (Pl)                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |----------|-----------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | GTU_01   | Supply of alcoholic beverages                       | Dostawa napojów alkoholowych                        | The supply of alcoholic beverages, including ethyl alcohol, beer, wine, fermented beverages, and intermediate products, as defined in the provisions on excise duty                                                                                                                                                                                                                                                                                                                          | Dostawa napojów alkoholowych - alkoholu etylowego, piwa, wina, napojów fermentowanych i wyrobów pośrednich, w rozumieniu przepisów o podatku akcyzowym                                                                                                                                                                                                                                                                                      |
 | GTU_02   | Goods that are referred to in article 103, item 5aa | Dostawa towarów, o których mowa w art. 103 ust. 5aa | The delivery of goods that are referred to in article 103, item 5aa of the VAT Act                                                                                                                                                                                                                                                                                                                                                                                                           | Dostawa towarów, o których mowa w art. 103 ust. 5aa ustawy                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -206,7 +206,7 @@ The following table shows the lookup results (designations) for **ServiceDeliver
 
 #### Declaration markers (DeclarationMarkersSelector)
 
-| **Name**                   | **Label (En)**      | **Label (Pl)**     | **Description (En)**                                   | **Description (Pl)**                                     |
+| Name                   | Label (En)      | Label (Pl)     | Description (En)                                   | Description (Pl)                                     |
 |----------------------------|---------------------|--------------------|--------------------------------------------------------|----------------------------------------------------------|
 | DeclarationMarkersSelector | Declaration markers | Markery deklaracji | Markers from the declaration part for tax transactions | Znaczniki z części deklaracji dla transakcji podatkowych |
 
@@ -224,7 +224,7 @@ This lookup field defines conditions that are based on current company's master 
 
 The following table shows the lookup results for **DeclarationMarkersSelector**.
 
-| **Name** | **Label (En)**                               | **Label (Pl)**                             | **Description (En)**                                                                                                                                               | **Description (Pl)**                                                                     |
+| Name | Label (En)                               | Label (Pl)                             | Description (En)                                                                                                                                               | Description (Pl)                                                                     |
 |----------|----------------------------------------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | P_65     | Activities that are mentioned in article 122 | Czynności o których mowa w art. 122 ustawy | Activities that the taxpayer performed and that are mentioned in article 122 of the VAT Act. Tax exemption for the supply, import, and purchase of investment gold | Podatnik wykonywał w okresie rozliczeniowym czynności, o których mowa w art. 122 ustawy  |
 | P_65     | Tax liability reduction                      | Obniżenie kwoty zobowiązania podatkowego   | The tax liability reduction that the taxpayer benefits from and that is mentioned in article 108d of the VAT Act                                                   | Podatnik korzysta z obniżenia zobowiązania podatkowego, o którym mowa w art. 108d ustawy |
@@ -235,7 +235,7 @@ The following table shows the lookup results for **DeclarationMarkersSelector**.
 
 #### Input VAT – Margin (ZakupVAT_MarzaSelector)
 
-| **Name**               | **Label (En)**      | **Label (Pl)**      | **Description (En)**                                                                                                                                                                                                                                                                                    | **Description (Pl)**                                                                                                                                                                                                                                                     |
+| Name               | Label (En)      | Label (Pl)      | Description (En)                                                                                                                                                                                                                                                                                    | Description (Pl)                                                                                                                                                                                                                                                     |
 |------------------------|---------------------|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ZakupVAT_MarzaSelector | Declaration markers | Podatek VAT – marża | The amount of purchases of goods and services from other taxpayers for the direct benefit of tourists, and the amount of second-hand goods, works of art, collectors' items, and antiques that are connected with sales that are taxed based on a margin, in accordance with article 120 of the VAT Act | Kwota nabycia towarów I usług nabytych od innych podatników dla bezpośredniej korzyści turysty, a także nabycia towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków związanych ze sprzedażą opodatkowaną na zasadzie marży zgodnie z art. 120 ustawy |
 
@@ -248,16 +248,16 @@ This lookup field lets you define different conditions to collect amounts that m
 
 The following table shows the lookup results for **ZakupVAT_MarzaSelector**.
 
-| **Name**       | **Label (En)**     | **Label (Pl)**      | **Description (En)**                                                                                                                                                                                                                                                                                    | **Description (Pl)**                                                                                                                                                                                                                                                     |
+| Name       | Label (En)     | Label (Pl)      | Description (En)                                                                                                                                                                                                                                                                                    | Description (Pl)                                                                                                                                                                                                                                                     |
 |----------------|--------------------|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ZakupVAT_Marza | Input VAT – Margin | Podatek VAT–- marża | The amount of purchases of goods and services from other taxpayers for the direct benefit of tourists, and the amount of second-hand goods, works of art, collectors' items, and antiques that are connected with sales that are taxed based on a margin, in accordance with article 120 of the VAT Act | Kwota nabycia towarów i usług nabytych od innych podatników dla bezpośredniej korzyści turysty, a także nabycia towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich I antyków związanych ze sprzedażą opodatkowaną na zasadzie marży zgodnie z art. 120 ustawy |
+| ZakupVAT_Marza | Input VAT – Margin | Podatek VAT – marża | The amount of purchases of goods and services from other taxpayers for the direct benefit of tourists, and the amount of second-hand goods, works of art, collectors' items, and antiques that are connected with sales that are taxed based on a margin, in accordance with article 120 of the VAT Act | Kwota nabycia towarów i usług nabytych od innych podatników dla bezpośredniej korzyści turysty, a także nabycia towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich I antyków związanych ze sprzedażą opodatkowaną na zasadzie marży zgodnie z art. 120 ustawy |
 
 > [!NOTE]
 > It's important that you add **Inne** (**Other**), which must collect data from other cases as the last item in the list. The **Line** value must be the last value in your table. In the **Tax code** column in the **Inne** lookup result, select **\*Not blank\***.
 
 #### Document types for sales (SalesDocumentTypesSelector)
 
-| **Name**                   | **Label (En)** | **Label (Pl)** | **Description (En)**                            | **Description (Pl)**        |
+| Name                       | Label (En)     | Label (Pl)     | Description (En)                                | Description (Pl)            |
 |----------------------------|----------------|----------------|-------------------------------------------------|-----------------------------|
 | SalesDocumentTypesSelector | Document type  | Typ dokumentu  | A designation of the type of the sales document | Oznaczenie dowodu sprzedaży |
 
@@ -271,7 +271,7 @@ For this lookup field, the following master data sources are available for setup
 
 The following table shows the lookup results for **SalesDocumentTypesSelector**.
 
-| **Name** | **Label (En)**                                                   | **Label (Pl)**                                   | **Description (En)**                                                                              | **Description (Pl)**                                                   |
+| Name | Label (En)                                                   | Label (Pl)                                   | Description (En)                                                                              | Description (Pl)                                                   |
 |----------|------------------------------------------------------------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
 | FP       | Invoice that is issued to the receipt by article 109, section 3d | Faktura, o której mowa w art. 109 ust. 3d ustawy | The invoice that is issued to the receipt, as mentioned in article 109, section 3d of the VAT Act | Faktura, o której mowa w art. 109 ust. 3d ustawy                       |
 | RO       | Internal summary document                                        | Dokument zbiorczy wewnętrzny                     | An internal summary document that includes sales from cash registers                              | Dokument zbiorczy wewnętrzny zawierający sprzedaż z kas rejestrujących |
@@ -285,7 +285,7 @@ For more information about how to report **RO** and **FP** document types for re
 
 #### Output VAT – Margin (SprzedazVAT_MarzaSelector)
 
-| **Name**                  | **Label (En)**      | **Label (Pl)**      | **Description (En)**                                                                                                                                | **Description (Pl)**                                                                                                               |
+| Name                  | Label (En)      | Label (Pl)      | Description (En)                                                                                                                                | Description (Pl)                                                                                                               |
 |---------------------------|---------------------|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | SprzedazVAT_MarzaSelector | Output VAT – Margin | VAT należny – marża | The value of gross sales of supplies of goods and services that are taxed based on a margin, in accordance with articles 119 and 120 of the VAT Act | Wartość sprzedaży brutto dostawy towarów i świadczenia usług opodatkowanych na zasadach marży zgodnie z art. 119 i art. 120 ustawy |
 
@@ -298,7 +298,7 @@ This lookup field lets you can define different conditions to report the **MR_T*
 
 The following table shows the lookup results for **SprzedazVAT_MarzaSelector**.
 
-| **Name** | **Label (En)**                                    | **Label (Pl)**                                 | **Description (En)**                                                                                                                                           | **Description (Pl)**                                                                                                                      |
+| Name | Label (En)                                    | Label (Pl)                                 | Description (En)                                                                                                                                           | Description (Pl)                                                                                                                      |
 |----------|---------------------------------------------------|------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | MR_T     | Tourism services that are taxed based on a margin | Usług turystyki opodatkowane na zasadach marży | The provision of tourism services that are taxed based on a margin, in accordance with article 119 of the VAT Act                                              | Świadczenie usług turystyki opodatkowane na zasadach marży zgodnie z art. 119 ustawy                                                      |
 | MR_UZ    | Second-hand goods, art, and antiques              | Towarów używanych, dzieł sztuki, antyków       | The supply of second-hand goods, works of art, collectors' items, and antiques that are taxed based on a margin, in accordance with article 120 of the VAT Act | Dostawa towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków, opodatkowana na zasadach marży zgodnie z art. 120 ustawy |
@@ -309,7 +309,7 @@ The following table shows the lookup results for **SprzedazVAT_MarzaSelector**.
 
 #### Document types for purchases (PurchaseDocumentTypesSelector)
 
-| **Name**                      | **Label (En)**        | **Label (Pl)**  | **Description (En)**                               | **Description (Pl)**     |
+| Name                      | Label (En)        | Label (Pl)  | Description (En)                               | Description (Pl)     |
 |-------------------------------|-----------------------|-----------------|----------------------------------------------------|--------------------------|
 | PurchaseDocumentTypesSelector | Purchase invoice type | Dokument Zakupu | A designation of the type of the purchase document | Oznaczenie dowodu zakupu |
 
@@ -325,7 +325,7 @@ This lookup field defines the combination of a sales tax code (**Tax code**), a 
 
 The following table shows the lookup results for **PurchaseDocumentTypesSelector**.
 
-| **Name** | **Label (En)**                             | **Label (Pl)**          | **Description (En)**                                                                                                                                                          | **Description (Pl)**                                                                                                                  |
+| Name | Label (En)                             | Label (Pl)          | Description (En)                                                                                                                                                          | Description (Pl)                                                                                                                  |
 |----------|--------------------------------------------|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | MK       | Invoice that is referred to in article 21  | Faktura art. 21         | The invoice that is issued by a taxpayer who is a supplier of goods or services, and who has chosen the cash accounting method that is specified in article 21 of the VAT Act | Faktura wystawiona przez podatnika będącego dostawcą lub usługodawcą, który wybrał metodę kasową rozliczeń określoną w art. 21 ustawy |
 | VAT_RR   | Invoice that is referred to in article 116 | Faktura VAT RR, art.116 | The VAT invoice that is referred to in article 116 of the VAT Act                                                                                                             | Faktura VAT RR, o której mowa w art. 116 ustawy                                                                                       |
@@ -352,11 +352,11 @@ For more information about Data management, see [Data management](../../fin-ops-
 
 You must now import data from the PL JPK_V7M EM setup.zip file into the selected company.
 
-1. In the **Data management** workspace, select **Import**, set the **Source data format** field to **Package**and create new importing project by New button on the Action pane.
-2. Click Add file on the Select entities FastTab.
+1. In the **Data management** workspace, select **Import**, set the **Source data format** field to **Package**, and create a new importing project by selecting **New** on the Action Pane.
+2. Select **Add file** on the **Select entities** FastTab.
 3. Select **Upload and add**, select the **PL JPK_V7M EM setup**.**zip** file on your computer, and upload it.
-4. Click Close button when entities from the package are listed in the grid.
-5. Click Import on the Action pane to start importing data from the data entities.
+4. Select **Close** when entities from the package are listed in the grid.
+5. Select **Import** on the Action Pane to start importing data from the data entities.
 
     ![PL JPK_V7M EM setup page](media/import-data-entities.jpg)
 
@@ -386,6 +386,8 @@ The JPK_V7M processing uses the **EMGenerateJPKVDEKReportController_PL** executa
 
 In the dialog box for the executable class, the **Retail-specific sales marking** group of parameters is used for retail-specific scenarios. For more information about how to report **RO** and **FP** document types for retail operations, see the "Report RO and FP document types for retail operations" section later in this topic.
 
+The dialog box for the executable class includes the **Consider VAT report date codes** parameter. Use this parameter to collect VAT transactions in the report, based on rules that you define in VAT report date codes. This parameter doesn't affect retail-specific transactions that will be reported as the **FP** document type. For more information about the VAT report date codes feature, see [Set up VAT report date codes](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/pol-set-up-vat-report-date-codes).
+
 ### Set up security roles for electronic message processing
 
 Different groups of users might require access to the JPK_V7M processing. You can limit access to the processing, based on security groups that are defined in the system.
@@ -400,7 +402,7 @@ Follow these steps to limit access to the JPK_V7M processing.
 Follow these steps to enter an office code in the **KodUrzedu** additional field.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
-2. Select the **JPK-V7M** processing..
+2. Select the **JPK-V7M** processing.
 3. On the **Additional field** FastTab, select the **KodUrzedu** additional field, and then, in the **Default value** field, specify the office code that should be reported in the \<**KodUrzedu**\> element of the report.
 
 ## JPK-V7M reporting
@@ -422,7 +424,7 @@ The implementation of the JPK-V7M report is based on the same sales tax reportin
 
 The following table shows the sales tax reporting codes that are used in the JPK_VAT report and their mapping with **K_\*** elements of the JPK-V7M report.
 
-| **Element name** | **Element description**                                                                                                                                                                                                                                                     | **Sales tax reporting codes**                                                                            |
+| Element name | Element description                                                                                                                                                                                                                                                     | Sales tax reporting codes                                                                            |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | K_10             | The taxable amount of the supply of goods and services in Poland that are exempted from tax                                                                                                                                                                                 | 10302, 10402, 10502, 10602                                                                               |
 | K_11             | The taxable amount of the supply of goods and services outside Poland                                                                                                                                                                                                       | 10101, 10102, 10104, 10105, 10201, 10204                                                                 |
@@ -457,8 +459,8 @@ The following table shows the sales tax reporting codes that are used in the JPK
 | K_43             | The amount of input tax that is eligible for deduction based on article 86, section 2 of the VAT Act, under the conditions that are specified in the VAT Act, and that arises from the purchase of other goods and services                                                 | 20209                                                                                                    |
 | K_44             | The amount of input tax that arises from input tax adjustments that are referred to in articles 90a through 90c and 91 of the VAT Act, because of the acquisition of goods and services that are classified as fixed assets by the taxpayer                                 | 20116                                                                                                    |
 | K_45             | The amount of the input tax base that arises from input tax adjustments that are referred to in articles 90a through 90c and 91 of the VAT Act, because of the purchase of other goods and services                                                                         | 20216                                                                                                    |
-| K_46             | The amount of input tax that arises from the correction of input tax that is referred to in article 89b, section 1 of the VAT Act                                                                                                                                           | 30101, 30102 **Note:** For the "Overdue" scenario, the amount can be collected for **K_43** or **K_41**. |
-| K_47             | The amount of input tax that arises from the correction of input tax that is referred to in article 89b, section 4 of the VAT Act                                                                                                                                           | 30201, 30202 **Note:** For the "Overdue" scenario, the amount can be collected for **K_43** or **K_41**. |
+| K_46             | The amount of input tax that arises from the correction of input tax that is referred to in article 89b, section 1 of the VAT Act                                                                                                                                           | <p>30101, 30102</p><p>**Note:** For the "Overdue" scenario, the amount can be collected for **K_43** or **K_41**.</p> |
+| K_47             | The amount of input tax that arises from the correction of input tax that is referred to in article 89b, section 4 of the VAT Act                                                                                                                                           | <p>30201, 30202</p><p>**Note:** For the "Overdue" scenario, the amount can be collected for **K_43** or **K_41**.</p> |
 
 ### Create an electronic message for JPK-V7M reporting
 
@@ -476,20 +478,23 @@ The following table shows the sales tax reporting codes that are used in the JPK
 6. In the **CelZlozenia** additional field, specify whether this submission is an original report or a correction. Two values are allowed:
 
     - **1** – This submission is the initial submission of the file for the specified period. This value is the default value.
-    - **2** – This submission is a correction of the file for the specified period.
+    - **2** – This submission is a corrected submission of the file for the specified period.
 
-You can also specify manual values for the following elements of the declaration.
+You can also specify manual values for the following additional fields that are related to elements of the declaration.
 
-| **Name** | **Description (En)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | **Description (Pl)**                                                                                                                                                                                                                          |
-|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| P_39     | A non-negative integer that has a maximum of 14 digits. The value of the surplus of input VAT over output VAT that was moved from the previous period.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Wysokość nadwyżki podatku naliczonego nad należnym z poprzedniej deklaracji                                                                                                                                                                   |
-| P_49     | A non-negative integer that has a maximum of 14 digits. The amount that was spent on the purchase of cash registers and that must be deducted in the specified period and therefore reduce the value of output VAT. The amount that is specified in **P_49** can't be more than **P_38** – **P_48**. If **P_38** – **P_48** is less than or equal to 0 (zero), you should show **0**.                                                                                                                                                                                                                                                                                                                | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym pomniejszająca wysokość podatku należnego                                                                                                              |
-| P_50     | A non-negative integer that has a maximum of 14 digits. The amount of tax that is covered by the abandonment of collection. **P_50** can't be more than **P_38** – **P_48** – **P_49**. If **P_38** – **P_48** – **P_49** is less than 0 (zero) or more than or equal to **P_50**, you should show **0**.                                                                                                                                                                                                                                                                                                                                                                                            | Wysokość podatku objęta zaniechaniem poboru                                                                                                                                                                                                   |
-| P_52     | A non-negative integer that has a maximum of 14 digits. The amount that was spent on the purchase of cash registers and that must be deducted in the specified period and returned in the given settlement period, or that increases the amount of input tax that must be transferred to the next settlement period. If **P_48** is more than or equal to **P_38**, or if the amount of benefits for the purchase of cereals registering above from the surplus tax on accrued then in **P_52** manifests itself the remaining amount of benefits for the purchase of cereals are recorded, privileged taxpayer for reimbursement, or deduction from the tax payable for subsequent billing periods. | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym przysługująca do zwrotu w danym okresie rozliczeniowym lub powiększająca wysokość podatku naliczonego do przeniesienia na następny okres rozliczeniowy |
-| P_55     | The refund to the bank account that is referred to in article 87, section 6a of the VAT Act: 1-yes Return to the taxpayer's VAT account within 25 days.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Zwrot na rachunek VAT, o którym mowa w art. 87 ust. 6a ustawy: 1 - tak                                                                                                                                                                        |
-| P_60     | A non-negative integer that has a maximum of 14 digits. The amount of refund that must be credited against future tax liabilities.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Wysokość zwrotu do zaliczenia na poczet przyszłych zobowiązań podatkowych                                                                                                                                                                     |
-| P_61     | A string (1..240) that must be used if **P_60** is used. The type of future tax liability.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Rodzaj przyszłego zobowiązania podatkowego                                                                                                                                                                                                    |
-| P_ORDZU  | A string (1..240). An explanation of the reasons for submitting a corrected VAT return.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Uzasadnienie przyczyn złożenia korekty                                                                                                                                                                                                        |
+| Name     | Tag of the declaration | Description (En) | Description (Pl) |
+|----------|------------------------|------------------|------------------|
+| P_39     | P_39 | A non-negative integer that has a maximum of 14 digits. The value of the surplus of input VAT over output VAT that was moved from the previous period. | Wysokość nadwyżki podatku naliczonego nad należnym z poprzedniej deklaracji |
+| P_49     | P_49 | A non-negative integer that has a maximum of 14 digits. The amount that was spent on the purchase of cash registers, and that must be deducted in the specified period and therefore reduce the value of output VAT. The amount that is specified in **P_49** can't be more than **P_38** – **P_48**. If **P_38** – **P_48** is less than or equal to 0 (zero), you should show **0**. | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym pomniejszająca wysokość podatku należnego |
+| P_50     | P_50 | A non-negative integer that has a maximum of 14 digits. The amount of tax that is covered by the abandonment of collection. **P_50** can't be more than **P_38** – **P_48** – **P_49**. If **P_38** – **P_48** – **P_49** is less than zero (0), or more than or equal to **P_50**, you should show **0**. | Wysokość podatku objęta zaniechaniem poboru |
+| P_52     | P_52 | A non-negative integer that has a maximum of 14 digits. The amount that was spent on the purchase of cash registers, and that must be deducted in the specified period and returned in the given settlement period. Alternatively, the amount that was spent on the purchase of cash registers, and that increases the amount of input tax that must be transferred to the next settlement period. | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym przysługująca do zwrotu w danym okresie rozliczeniowym lub powiększająca wysokość podatku naliczonego do przeniesienia na następny okres rozliczeniowy |
+| P_54     | P_54 | The amount of input tax surplus that must be returned to the account that is designated by the taxpayer. | Wysokość nadwyżki podatku naliczonego nad należnym do zwrotu na rachunek wskazany przez podatnika |
+| P_54_Powód | P_55, P_56, P_57, or P_58, depending on the user selection | The refund to the bank account that is referred to in article 87, section 6a (**P_55**), 6 (**P_56**), 2 (**P_57**), or 5a (**P_58**) of the VAT Act. | Zwrot na rachunek VAT, o którym mowa w art. 87 ust. 6a (P_55) lub 6 (P_56) lub 2 (P_57) lub 5a (P_58) ustawy |
+| P_60     | P_60 | A non-negative integer that has a maximum of 14 digits. The amount of refund that must be credited against future tax liabilities. | Wysokość zwrotu do zaliczenia na poczet przyszłych zobowiązań podatkowych |
+| P_61     | P_61 | A string (1..240) that must be used if **P_60** is used. The type of future tax liability. | Rodzaj przyszłego zobowiązania podatkowego |
+| P_ORDZU  | P_ORDZU | A string (1..240). An explanation of the reasons for submitting a corrected VAT return. | Uzasadnienie przyczyn złożenia korekty |
+
+The **P_54_Powód** additional field is available as of version 98.194 of the **JPK-V7M XML format (PL)** ER configuration and version 98.194.50 of the **JPK-V7M Excel format (PL)** ER configuration. It can be imported by using the **PL JPK_V7M EM setup v.5 KB4614816.zip** file (version 5 or later of the package of data entities that includes a predefined electronic message setup).
 
 ### Generate the JPK-V7M report in Excel format for preview
 
@@ -517,7 +522,7 @@ When you select **OK** in the dialog box, you should see the following declarati
 - **English:** "When you generate the VAT declaration you confirm information in the report is true and complete. Your consent will be recorded in the report. Incomplete payment or non-payment of VAT due to the Tax Authority, this declaration is the basis for the issuance of a writ of execution in accordance with the provisions of the enforcement proceedings in the administration. A false or incomplete declaration may result in prosecution in accordance with regulations of fiscal penal code."
 - **Polish:** "Wygenerowanie deklaracji VAT oznacza potwierdzenie, że informacje w raporcie są prawdziwe i kompletne. Twoja zgoda zostanie odnotowana w raporcie. W przypadku niewpłacenia w obowiązującym terminie podatku podlegającego wpłacie do urzędu skarbowego lub wpłacenia go w niepełnej wysokości niniejsza deklaracja stanowi podstawę do wystawienia tytułu wykonawczego zgodnie z przepisami o postępowaniu egzekucyjnym w administracji. Za podanie nieprawdy lub zatajenie prawdy i przez to narażenie podatku na uszczuplenie grozi odpowiedzialność przewidziana w przepisach Kodeksu karnego skarbowego."
 
-By selecting **OK** on the declaration page you give your consent to the declaration. The JPK_VDEK will be generated only if you consent to the declaration.
+By selecting **OK** on the declaration page, you give your consent to the declaration. The JPK_VDEK will be generated only if you consent to the declaration.
 
 The action log is related to the electronic message log information about the user who generated the JPK_VDEK and performed other actions with the electronic message.
 
@@ -551,7 +556,7 @@ Version 72.150 of the **JPK-V7M XML format (PL)** configuration, and later versi
 - If the procedure is applied by the company, the **\<P_69\>** element of the declaration part must report the amount of VAT for overdue invoices in the reporting period (that is, transactions that are posted to deduct VAT for issued invoices that aren't paid within 150 days after the payment due date).
 - If the procedure is applied by the company, for overdue invoices in the period where the due date is 150 days, this transaction must be reported. Information about the customer from the original invoice and an amount that has a minus sign (–) must be included.
 - If the procedure is applied by the company, for paid overdue invoices in the period when an overdue invoice was paid, this transaction must be reported. All the information about the customer from the original invoice and an amount that has a plus sign (+) must be included.
-- If overdue and paid overdue transactions are in the same reporting period, and if the procedure is applied by the company, you can optionally report both transactions together in the sales register. In this case, the**\<P_68\>** and **\<P_69\>** elements of the declaration part aren't reported.
+- If overdue and paid overdue transactions are in the same reporting period, and if the procedure is applied by the company, you can optionally report both transactions together in the sales register. In this case, the **\<P_68\>** and **\<P_69\>** elements of the declaration part aren't reported.
 
 ### Supported business user scenario in Finance
 
@@ -565,13 +570,13 @@ When there is an overdue customer invoice, the invoice that is issued to a custo
     - The same markers that were applied in the original invoice are applied.
     - The **\<KorektaPodstawyOpodt\>** marker is applied.
 
-     Moreover, the base amount and tax amount from this invoice (internal document) are included and reported in the **P_68** and **P_69** elements of the declaration part of the report.
+    Moreover, the base amount and tax amount from this invoice (internal document) are included and reported in the **P_68** and **P_69** elements of the declaration part of the report.
 
 3. If the invoice is paid after both stage 1 and stage 2 have occurred, the company must again apply the **Overdue debt VAT** periodic task in the period when the invoice was paid. The resulting tax transactions are reflected in the JPK-V7M report. The following information is included:
 
     - All customer information from the original invoice that was posted in stage 1 is included.
     - Amounts are reported in the same **K_\*** elements as in the original invoice, but they have a positive sign.
-    - The same markers that were applied in the original invoice are applied
+    - The same markers that were applied in the original invoice are applied.
     - The **\<KorektaPodstawyOpodt\>** marker is applied.
 
     The base amount and tax amount from this invoice (internal document) are **not** included and reported in the **P_68** and **P_69** elements of the declaration part of the report.
@@ -621,7 +626,7 @@ When the **Aggregate fiscal documents** check box is selected, domestic invoices
 
 When the aggregated **RO** document is included in the report, it has following header fields.
 
-| **Reporting tag**  | **Value**                             |
+| Reporting tag      | Value                                 |
 |--------------------|---------------------------------------|
 | KodKrajuNadaniaTIN | PL                                    |
 | NrKontrahenta      | BRAK                                  |
@@ -642,7 +647,7 @@ By default, the **Report retail POS invoices** check box is cleared. When it's s
 
 The fields of retail POS invoices must be filled in shown in the following table.
 
-| **Reporting tag**  | **Value**                                                                                                           |
+| Reporting tag      | Value                                                                                                               |
 |--------------------|---------------------------------------------------------------------------------------------------------------------|
 | KodKrajuNadaniaTIN | PL                                                                                                                  |
 | NrKontrahenta      | "BRAK" or RetailTransactionFiscalCustomer.SerializedData                                                            |
@@ -654,7 +659,7 @@ The fields of retail POS invoices must be filled in shown in the following table
 
 The fields of the SAFTTaxTransByReportingCode_PL table are filled in from the following data sources.
 
-| **Table name**                        | **Field names**                                                                                    |
+| Table name                            | Field names                                                                                        |
 |---------------------------------------|----------------------------------------------------------------------------------------------------|
 | RetailTransactionTable                | Type, EntryStatus, StatementId, Channel, Store, Terminal, TransactionId                            |
 | RetailTransactionTaxTrans             | TaxCode, TaxPercentage, TaxBaseAmount, Amount, IsExempt, Channel, StoreId, Terminal, TransactionId |
@@ -684,5 +689,8 @@ When you generate the JPK-V7M report in XML format for a period that is shorter 
 - The **\<Miesiac\>** tag will contain information about the date interval that report is generated for.
 - The **\<P_\*\>** tag of the **Deklaracja** part of the report contains calculated values that represent the aggregation of amounts from the **SprzedazWiersz** and **ZakupWiersz** parts of the report. The values in this tag will be rounded to 'a two-digit decimal value, but not an integer value.
 
+## Report invoices from counterparties in different countries that have identical NIP numbers 
+
+The data structure in the JPK_V7M report collects the first International Organization for Standardization (ISO) country/region code that is found from the **Tax exempt numbers** table and posted in the **Tax transactions** table. Use different tax-exempt numbers for counterparties from different countries. To differentiate identical tax-exempt numbers from different countries during setup, use a prefix that includes an ISO country/region code. The first two letters of the ISO country/region code will be omitted during reporting in the **NrDostawcy** tag.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

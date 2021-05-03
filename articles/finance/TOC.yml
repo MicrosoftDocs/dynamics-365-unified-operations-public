@@ -164,6 +164,8 @@
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
         - name: Embed canvas apps from Power Apps
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
+        - name: Embed third-party apps
+          href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/finance/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
         - name: Change the date for a session
@@ -1106,6 +1108,20 @@
           href: general-ledger/tasks/view-posted-sales-tax-transactions.md   
         - name: Print the Sales tax payment by code report
           href: general-ledger/print-sales-tax-payment-by-code-report.md
+        - name: Sales tax troubleshooting
+          items:
+          - name: Tax isn't calculated or the tax amount is zero
+            href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
+          - name: Tax calculation performance affects transactions
+            href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
+          - name: Incorrect field value in TaxTrans
+            href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
+          - name: TaxTrans record isn't generated
+            href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
+          - name: Tax is posted to the wrong ledger account in the voucher
+            href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
+          - name: Voucher isn't generated
+            href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
       - name: Withholding tax
         items:
         - name: Set up withholding tax

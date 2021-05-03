@@ -3,8 +3,8 @@
 
 title: Budgeting overview
 description: Almost every company that uses Financials functionality in Microsoft Dynamics 365 Finance will have to be able to create reports of budget vs. actuals. This article explains the minimum configuration that is required in order to create budgets in Finance and Operations or load them from a third-party program.
-author: ShylaThompson
-ms.date: 01/11/2018
+author: panolte
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
 # ms.search.industry: 
-ms.author: sigitac
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -76,7 +76,7 @@ Functionality that was introduced in Microsoft Dynamics 365 Finance version 10.0
 
 The **Budget register entries for quantity** only feature lets you post a budget register entry with quantity-only amounts. For example, you could post a budget entry with a quantity of 32 and a price of zero, which results in an amount of zero. You can then use this quantity within the context of a financial report to determine a price per quantity. Note that no inquiries or reports were updated as part of this feature; the feature just enables you to post an amount of zero.
 
-The **Budget register entries defaulting of amount type** feature allows the default amount type within a budget register entry to be an amount type other than expense. The budget register entry line now will default to expense when the main account type is expense; will default to revenue when the main account type is expense; and will default to expense for all other account types.
+The **Budget register entries defaulting of amount type** feature allows the default amount type within a budget register entry to be an amount type other than expense. The budget register entry line now will default to expense when the main account type is expense; it will default to revenue when the main account type is revenue; and it will default to expense for all other account types.
 
 ## Using workspaces and inquiry pages to track budget vs. actuals
 The budget manager can review the current state of a budget in the **Ledger budgets and forecasts** workspace. The **Expense over budget** and **Revenue under budget** tabs provide a quick view of the financial dimension combinations where budget targets aren't being met or are approaching the threshold. You can personalize the budget threshold percentage and financial dimension sets that are used on those tabs by clicking **Configure my workspace**. You can click **Unit managers** to see the workers who are responsible for specific financial dimension combinations that are selected on those tabs. For example, if you see that the expense budget of the Operations department is going over the budget threshold, you can easily find and contact the Operations department manager to discuss the issue. 

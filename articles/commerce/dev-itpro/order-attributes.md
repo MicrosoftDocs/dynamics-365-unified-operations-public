@@ -242,6 +242,48 @@ You can find the full sample code in the Retail SDK at Retail SDK\\SampleExtensi
         }
 ```
 
+## Extend a Dynamics 365 Commerce e-commerce site to set values for order attributes in the cart
+
+Use this code to set values for order attibutes in the cart.
+
+```javascript
+public _addOrUpdateSalesOrderAttributes = (cart: Cart): void => {
+    // Create the array of attribute and add attributes
+    const attributeArr: AttributeValueBase[] = [];
+    let attributeObj = {
+        // @ts-ignore
+        '@odata.type': '#Microsoft.Dynamics.Commerce.Runtime.DataModel.AttributeTextValue',
+        Name: 'Brand',
+        ExtensionProperties: [],
+        TextValue: 'OscarBrand-2',
+        TextValueTranslations: []
+    };
+    attributeObj.Name = 'Brand';
+    attributeArr.push(attributeObj);
+
+    attributeObj = {
+        // @ts-ignore
+        '@odata.type': '#Microsoft.Dynamics.Commerce.Runtime.DataModel.AttributeTextValue',
+        Name: 'Connector',
+        ExtensionProperties: [],
+        TextValue: 'OscarConnector-2',
+        TextValueTranslations: []
+    };
+    attributeObj.Name = 'Connector';
+    attributeArr.push(attributeObj);
+
+    cart.AttributeValues = attributeArr;
+    updateAsync({ callerContext: this.props.context.actionContext}, cart)
+                .then(newCart => {
+                    console.log('Success');
+                    this.props.context.actionContext.update(new GetCheckoutCartInput(this.props.context.request.apiSettings), newCart);
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+};
+```
+
 ## Extend attributes to do some business logic in the POS
 
 > [!NOTE]
