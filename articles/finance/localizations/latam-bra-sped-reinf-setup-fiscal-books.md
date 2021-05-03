@@ -75,8 +75,8 @@ This setup is used to determine the agriculture acquisition type of incoming fis
 
 ## Set up GILRAT and SENAR taxes
 
-GILRAT: The tax contribution of the degree of incidence of Labor disability resulting from occupational environmental risks.
-SENAR: The tax contribution related to rural production.
+**GILRAT**: The tax contribution of the degree of incidence of Labor disability resulting from occupational environmental risks.
+**SENAR**: The tax contribution related to rural production.
 
 1. Go to **Fiscal books** \> **Setup** \> **SPED Reinf** \> **GILRAT tax codes** or **SENAR tax codes**.
 2. Identify the sales tax codes that are used to represent GILRAT and SENAR taxes. In the definition of the sales tax codes, the tax type should be set to **Other**. The amount of these taxes is used in the **vlrRatDescPR** and **vlrSenarDesc** tags for event R-2055.
