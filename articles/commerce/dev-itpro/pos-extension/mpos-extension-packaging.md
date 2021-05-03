@@ -33,7 +33,7 @@ To create the extension installer for a Modern POS extension, follow these steps
 
 3. Delete the generated **Program.cs** file.
 
-4. Add a reference to the Retail SDK with POS extension NuGet Package.
+4. Add a reference to the **Microsoft.Dynamics.Commerce.Sdk.Installers.ModernPos** NuGet Package.
 
     1. Right-click the project in Solution Explorer and select **Manage NuGet packages**.
     2. Select the **Browse** tab in the NuGet Package Manager window.
