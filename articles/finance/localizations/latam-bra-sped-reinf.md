@@ -4,7 +4,7 @@
 title: SPED-Reinf events
 description: This topic explains how to set up SPED-Reinf events by using Fiscal books and the SII reporting register framework.
 author: sndray
-ms.date: 04/09/2021
+ms.date: 05/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -182,7 +182,7 @@ Because communications can fail for technical reasons, such as a time-out or an 
 
 If any of the fiscal organization data has been changed, or if the event must be excluded for some reason, event R-1010 must be transmitted again, but the status must be different.
 
-Use the process that is described in the [Repro step – Insertion](#repro-insert) section, and complete all the actions in the [Amendment/Update](#amendmentupdate) flow.
+Use the process that is described in the [Repro step – Insertion](#repro-insert) section, and complete all the actions in the Amendment/Update flow.
 
 Any differences between the information in the last event and the current information will be detected.
 
@@ -191,7 +191,7 @@ Any differences between the information in the last event and the current inform
 
 #### Repro step – Cancel
 
-If, for any reason, the taxpayer wants to cancel or exclude an event that has been accepted, select **Cancel**, and confirm the operation. The status of the event will be updated to **Excluded**. Complete all the actions in the [Cancel/Delete](#canceldelete) flow.
+If, for any reason, the taxpayer wants to cancel or exclude an event that has been accepted, select **Cancel**, and confirm the operation. The status of the event will be updated to **Excluded**. Complete all the actions in the Cancel/Delete flow.
 
 ## Event R-1070 – Administrative and judicial process
 
