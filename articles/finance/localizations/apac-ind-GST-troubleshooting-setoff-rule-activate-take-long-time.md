@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-When you select **Activate** to activate the setoff hierarchy profile, it may take longer than expected. The delay usually happens when activating profile for a long period, such as one year.
+When you select **Activate** to activate the setoff hierarchy profile, it may take longer than expected. The delay usually happens when activating a profile for a long period, such as one year.
 
   [![Activate button](./media/setoff-rule-activation-takes-long-time-Picture1.png)](./media/setoff-rule-activation-takes-long-time-Picture1.png)
 
@@ -52,7 +52,7 @@ When you select **Activate** to activate the setoff hierarchy profile, it may ta
 
   [![Batch jobs page](./media/setoff-rule-activation-takes-long-time-Picture4.png)](./media/setoff-rule-activation-takes-long-time-Picture4.png)
 
-5. If the issue can't be resolved, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.
+5. If the issue can't be resolved, determine whether customization exists. If no customization exists, contact Microsoft Support for further assistance.
 
 
 
