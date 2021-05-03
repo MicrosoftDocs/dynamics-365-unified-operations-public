@@ -59,13 +59,15 @@ If you entered an invalid CPOS URL and want to change it, or the app is in an er
 
 ## Customizing the app
 
-The Store commerce app can be customized using the POS SDK, the POS SDK supports modifying/creating new POS user experience, out of the box functional enhancements or modifications, validations and adding custom feature/functionalities. 
+Store Commerce app can be customized using the POS extension support in the Retail SDK. You can modify and create the POS user experience, make out-of-box functional enhancements or modifications, add validations, and add custom features. For more information see [Point of Sale (POS) extension overview](pos-extension/pos-extension-overview.md).
 
-Extension developed using POS SDK will work for CPOS, MPOS and Store commerce but how its package and deployed between MPOS and CPOS are different.
+Extensions developed using the Retail SDK will work for CPOS, MPOS, and Store Commerce, but how the extension is packaged and deployed between MPOS and CPOS is different.
 
-Since the Store commerce renders the CPOS, so follow the CPOS packaging and deployment options for deploying the store commerce extension.
+Because the Store Commerce renders the CPOS, you follow the CPOS packaging and deployment options for deploying the store commerce extension.
 
-Refer the POS Independent extension document for how to customize the POS using the POS SDK.
+### Hardware station
 
-### Hardware station:
-The app can also be extended to integrate with hardware devices. Refer the [Integrate the POS with a new hardware device document for more details](hardware-device-extension.md).
+The app can also be extended to integrate with hardware devices. For more information, see [Integrate the POS with a new hardware device document for more details](hardware-device-extension.md).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
