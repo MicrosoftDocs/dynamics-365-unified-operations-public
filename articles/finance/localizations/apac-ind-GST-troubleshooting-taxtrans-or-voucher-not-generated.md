@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-Complete the steps in this topic if after posting tax, when you check the voucher and posted sales tax there are records missing.
+Complete the steps in this topic if after posting tax there are records missing when you check the voucher and posted sales tax.
 
 ## Check if the subledger journal transferred. 
 
@@ -42,14 +42,14 @@ Complete the steps in this topic if after posting tax, when you check the vouche
 
 To check the tax configuration, see [Open the designer for the current tax configuration](apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md).  
 
-1. Check the posting profile of expected measure. Select the posting type in **Debit/Credit** column, and then select **Edit**. 
+1. Check the posting profile of the expected measure. Select the posting type in the **Debit/Credit** column, and then select **Edit**. 
 2. Check the value of tax accounting provider.
 
     ![Tax accounting provider value](./media/taxtrans-voucher-notgenerated-Picture3.png)
 
-  The following is the rule for posting tax transactions and voucher decided by tax accounting provider. Correct the configuration if it's not working as expected.
+  The following is the rule for posting tax transactions and vouchers that are decided by the tax accounting provider. Correct the configuration if it's not working as expected.
 
-- | **Tax accounting provider** | **Posting tax transaction** | **Posting voucher** |
+  | **Tax accounting provider** | **Posting tax transaction** | **Posting voucher** |
   | --------------------------- | --------------------------- | ------------------- |
   | Tax                         | Yes                         | Yes                 |
   | Ledger                      | No                          | Yes                 |
@@ -71,6 +71,6 @@ Set a breakpoint in **TaxAccountingPostFacade::post()**, and debug for the logic
 
 ## Determine whether customization exists
 
-If you've completed the steps in the previous section but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.
+If you've completed the steps in the previous section but have found not the issue, determine whether customization exists. If no customization exists, contact Microsoft Support for further assistance.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
