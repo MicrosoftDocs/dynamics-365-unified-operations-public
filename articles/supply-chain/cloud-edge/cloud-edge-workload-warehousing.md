@@ -61,7 +61,10 @@ The scale units own the following data:
   - **Transfer orders** (only outbound with simple picking and loading work)
 
 - **Warehouse order receipt data** – This data is used only for purchase orders that have been released to a warehouse.
-- **License plate data** – License plates can be created on the hub and the scale units. Dedicated conflict handling has been provided. Note that this data isn't warehouse-specific. If the same license plate number gets created "at the same time" on both the hub and a scale unit deployment the following syncronization of the data will fail. You can take action in the **System administration > Inquiries > Workload inquiries > Duplicate records** page where the data related to the two entities can get viewed and merged.
+- **License plate data** – License plates can be created both on the hub and on the scale units. Dedicated conflict handling is provided. 
+
+    > [!IMPORTANT]
+    > License plate data isn't warehouse-specific. If the same license plate number gets created on both the hub and a scale unit during the same sync cycle, the next synchronization will fail. If this occurs, go to **System administration > Inquiries > Workload inquiries > Duplicate records**, where you can view and merge the data.
 
 ## Outbound process flow
 
