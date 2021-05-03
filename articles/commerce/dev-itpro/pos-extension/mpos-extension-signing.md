@@ -45,4 +45,4 @@ The generated test certificate will be available in the project's intermediate o
 - By default, the location is `bld\x86\Debug\MPOS_Extension_Certificate.pfx`.
 - The generated test certificate MUST be manually trusted for the extension package to be successfully installed on the development machine.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

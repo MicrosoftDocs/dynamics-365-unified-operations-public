@@ -66,7 +66,7 @@ The deployment package for CSU can be created by consuming the **Microsoft.Dynam
     2. Select the **Browse** tab in the NuGet Package Manager window.
     3. Search for **Microsoft.Dynamics.Commerce.Sdk.Installers.ScaleUnit**.
     4. Select the package and then select **Install**.
-    5. select the version that matches your go-live version.
+    5. Select the version that matches your go-live version.
 
 5. Add a reference from the **ScaleUnit.Installer** project to the POS.Extension project created above.
 
@@ -108,4 +108,4 @@ The deployment package for CSU can be created by consuming the **Microsoft.Dynam
     > Before installing the extension installer, install the sealed ScaleUnit. If you have Commerce Runtime, Retail Server, or a Database extension, then you must include all these extension projects as references to the **ScaleUnit.Installer** project. Adding the projects generates a combined deployment package that contains all your extensions.
     > You can also create multiple Scale unit installers by extensions and manage them separately. You don’t have to combine all the extensions in one package.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
