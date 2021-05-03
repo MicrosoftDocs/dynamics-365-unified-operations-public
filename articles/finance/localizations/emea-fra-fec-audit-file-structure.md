@@ -24,7 +24,7 @@ ms.search.region: France
 
 # Structure of Dynamics 365 Finance data sources for FEC
 
-In Dynamics 365 Finance, it's possible to generate the FEC main file or the following annexes:
+In Dynamics 365 Finance, you can generate the FEC main file or the following annexes:
 
 -	Customers fiscal year opening balances annex 
 -	Vendors fiscal year opening balances annex 
