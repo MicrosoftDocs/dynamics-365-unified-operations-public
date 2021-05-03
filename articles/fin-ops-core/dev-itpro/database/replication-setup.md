@@ -72,7 +72,7 @@ The following prerequisites are needed for the **Online Database Migration Toolk
 	<Config>
    	  <!-- Edit the properties in this section for your source AX 2012 database -->
     	 <SourceDatabase>
-           	     <Server>SQLINSTANCE\SQLSERVERNAME</Server>
+           	     <Server>SQLSERVERNAME\SQLINSTANCE</Server>
            	     <Database>MicrosoftDynamicsAX</Database>
               	  <UserName>ReplicationUser</UserName>
               	  <Password>********************</Password>
