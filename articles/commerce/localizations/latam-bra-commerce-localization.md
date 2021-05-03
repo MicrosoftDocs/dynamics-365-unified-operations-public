@@ -4,9 +4,11 @@
 title: Commerce localization for Brazil
 description: This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Brazil.
 author: josaw
+manager: annbe
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -15,6 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
+#ms.search.scope: Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
@@ -75,37 +78,59 @@ Fiscal registration is the immediate registration of retail sales per local fisc
 - Registration of a retail sale, in a SAT fiscal device that is connected to the POS, by using a CF-e electronic fiscal document.
 - Registration of a retail sale in a fiscal printer that is connected to the POS.
 
-Commerce supports fiscal registration via the [Fiscal integration framework](../localizations/fiscal-integration-for-retail-channel.md) and its extensions for specific countries or regions. Formats of electronic fiscal documents that meet the legal requirements in Brazil are configured by using the [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) functionality. Electronic fiscal documents are submitted via the [Electronic invoicing service](../../finance/localizations/e-invoicing-get-started.md). For more information about the submission process for electronic fiscal document and configuration for Brazil, see [Electronic invoicing add-on for Brazil](../../finance/localizations/e-invoicing-bra-get-started.md).
+Commerce supports fiscal registration via the [Fiscal integration framework](../localizations/fiscal-integration-for-retail-channel.md) and its extensions for specific countries or regions. Formats of electronic fiscal documents that meet the legal requirements in Brazil are configured by using the [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) functionality.
 
 > [!NOTE]
 > Integration with fiscal printers isn't available in Commerce. You can take advantage of the [N-1 capabilities](../dev-itpro/n-1-installation-configuration.md) to integrate Microsoft Dynamics AX 2012 R3 Retail Enterprise Point of Sale (EPOS), which supports the integration with fiscal printers for Brazil in Commerce headquarters.
 
 ## Availability of Commerce localization features for Brazil
 
-| Feature                                                                  | Public preview | General availability (GA) | Post-GA | Not planned |
-|--------------------------------------------------------------------------|----------------|---------------------------|---------|-------------|
-| Retail product management, and tax setup and calculation                 | X              |                           |         |             |
-| NFC-e (model 65) and DANFE for retail sales                              | X              |                           |         |             |
-| Communication with SEFAZ via [Electronic invoicing service](../../finance/localizations/e-invoicing-get-started.md) | X              |                           |         |             |
-| Retail statements in Commerce headquarters                               | X              |                           |         |             |
-| Handling of fiscal customer information (for example, CPF/CNPJ)          |                | X                         |         |             |
-| NF-e (model 55) and DANFE for sales returns                              |                | X                         |         |             |
-| CF-e (model 59) for sales in São Paulo and integration with a SAT device |                | X                         |         |             |
-| NFC-e/NF-e contingency in the POS (offline mode)                         |                | X                         |         |             |
-| Transmission of NFC-e/NF-e in contingency from Commerce headquarters     |                | X                         |         |             |
-| NFC-e cancellation, discard, cancellation by substitution                |                | X                         |         |             |
-| EFT integration (Adyen and basic capabilities)                           |                | X                         |         |             |
-| Searching for customers by registration numbers in the POS               |                |                           | X       |             |
-| EFT integration (advanced capabilities and additional providers)         |                |                           | X       |             |
-| Fiscal documents for customer orders from the POS                        |                |                           | X       |             |
-| NF-e linked to NFC-e/CF-e and DANFE                                      |                |                           | X       |             |
-| N-1 support for upgrade from AX 2012 R3                                  |                |                           | X       |             |
-| E-Commerce capabilities for Brazil                                       |                |                           | X       |             |
-| Merging CNPJ/CPF in customer master records in the call center           |                |                           | X       |             |
-| Retail fiscal documents in fiscal book statements\*                      |                |                           |         | X           |
-| Integration of the POS with fiscal printers                              |                |                           |         | X           |
+| Feature                                                                  | General availability (GA) | Post-GA | Not planned |
+|--------------------------------------------------------------------------|---------------------------|---------|-------------|
+| Retail product management, and tax setup and calculation                 | X                         |         |             |
+| NFC-e (model 65) and DANFE for retail sales                              | X                         |         |             |
+| Communication with SEFAZ                                                 | X                         |         |             |
+| Retail statements in Commerce headquarters                               | X                         |         |             |
+| Handling of fiscal customer information (for example, CPF/CNPJ)          | X                         |         |             |
+| NF-e (model 55) and DANFE for sales returns                              | X                         |         |             |
+| NFC-e/NF-e contingency in the POS (offline mode)                         | X                         |         |             |
+| Transmission of NFC-e/NF-e in contingency from Commerce headquarters     | X                         |         |             |
+| NFC-e cancellation                                                       | X                         |         |             |
+| NFC-e cancellation by substitution, discard                              |                           | X       |             |
+| EFT integration (Adyen and basic capabilities)                           |                           | X       |             |
+| CF-e (model 59) for sales in São Paulo and integration with a SAT device |                           | X       |             |
+| Searching for customers by registration numbers in the POS               |                           | X       |             |
+| EFT integration (advanced capabilities and additional providers)         |                           | X       |             |
+| Fiscal documents for customer orders from the POS                        |                           | X       |             |
+| NF-e linked to NFC-e/CF-e and DANFE                                      |                           | X       |             |
+| N-1 support for upgrade from AX 2012 R3                                  |                           | X       |             |
+| E-Commerce capabilities for Brazil                                       |                           | X       |             |
+| Merging CNPJ/CPF in customer master records in the call center           |                           | X       |             |
+| Retail fiscal documents in fiscal book statements\*                      |                           |         | X           |
+| Integration of the POS with fiscal printers                              |                           |         | X           |
 
 \* *Fiscal book statements* are SPED (Sistema Público de Escrituração Digital) Fiscal, SPED Contributions, and ICMS-ST (Imposto sobre Circulação de Mercadorias e Serviços - Substituição Tributária) compensation and restitution statements for the supported states.
+
+## Commerce functionality for Brazil
+
+The functionality consists of the following parts:
+
+- Common point-of-sale (POS) features that are available to customers in all countries or regions. 
+- Brazil-specific features, such as communication with SEFAZ.
+
+### Common POS features
+
+To learn about POS features that are available to customers in all countries or regions, see [Commerce home page](../index.md).
+
+### Brazil-specific POS features
+
+The following Brazil-specific POS features are enabled once the [Setting up and deploying Commerce localization for Brazil] are made:
+
+- [NFC-e - Electronic Fiscal Document for Consumers in Brazil].
+- [Customer information management for Brazil].
+- [Cancellation and Return of NFC-e].
+- [Postponed registration of NFC-e issued in contingency mode].
+- [Posting and control of electronic fiscal documents].
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
