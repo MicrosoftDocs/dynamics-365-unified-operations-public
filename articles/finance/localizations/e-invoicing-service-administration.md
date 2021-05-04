@@ -64,10 +64,10 @@ Electronic invoicing is available in several Azure datacenter geographies. The f
 
 | Azure datacenter geography |
 |----------------------------|
-| East US                    |
-| West US                    |
-| North EU                   |
-| West EU                    |
+| United States              |
+| Europe                     |
+| United Kingdom             |
+| Asia                       |
 
 ### Service environments
 
