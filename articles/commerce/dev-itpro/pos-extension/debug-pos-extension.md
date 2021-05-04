@@ -1,6 +1,6 @@
 ---
-title: Debugging POS extensions
-description: This topic explains how to debug a POS extension.
+title: Debug POS extensions
+description: This topic explains how to debug Point of Sale (POS) extensions.
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -12,69 +12,85 @@ ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
 ---
 
-# Debugging POS extensions
+# Debug POS extensions
 
-[!include [banner](../../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This topic explains how to debug a POS extension. It applies to the Retail SDK, version 10.0.18 and later.
+This topic explains how to debug Point of Sale (POS) extensions. It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 
-## Debugging Modern POS using Visual Studio 2017
+## Debug Modern POS by using Visual Studio 2017
 
-Debug your extension by following these steps:
+Follow these steps to debug your extension.
 
-1. Install Sealed Modern POS on the development machine using the Sealed MPOS installer.
-2. Install the UWP app by clicking the shortcut on the desktop.
-3. In Visual Studio, build your Modern POS Extension Package Project (**jsproj**).
-4. In Visual Studio, deploy your Modern POS Extension Package. Right-click the ModernPOS JavaScript project file in Solution Explorer and select **Deploy**.
-5. Launch POS with the debugger attached, by following these steps:
+1. Install Sealed Modern POS (MPOS) on the development machine by using the Sealed MPOS installer.
+2. Install the Universal Windows Platform (UWP) app by selecting the shortcut on the desktop.
+3. In Microsoft Visual Studio, build your MPOS extension package project (the JavaScript project file \[.jsproj file\]).
+4. Deploy your MPOS extension package. In Solution Explorer, select and hold (or right-click) the MPOS .jsproj file, and then select **Deploy**.
+5. Open POS so that the debugger is attached:
 
-    1. In the **Debug** menu, select **Other Debug Targets &gt; Debug Installed App Package**.
-    2. Search for and Select **Commerce Modern POS**.
-    3. Click **Start** to launch the application.
+    1. On the **Debug** menu, select **Other Debug Targets &gt; Debug Installed App Package**.
+    2. Search for and select **Commerce Modern POS**.
+    3. Select **Start** to open the app.
 
-## Running and Debugging Cloud POS
+## Run and debug Cloud POS
 
-### <a name="configure-cloud-pos"></a>Configuring the Cloud POS extension development environment
+### <a name="configure-cloud-pos"></a>Configure the Cloud POS extension development environment
 
-Run the following steps the first time that an extension package is developed on the machine or if the link is deleted. Create a directory symbolic link in the Cloud POS extensions directory to the extension package root directory.
+Follow these steps the first time that an extension package is developed on the machine or if the link is deleted. In the Cloud POS (CPOS) **Extensions** directory, create a directory symbolic link to the root directory of the extension package.
 
-1. Make sure that Cloud POS is deployed on your machine. If it isn't, use the CSU Self-Hosted installer to Deploy Cloud POS.
-2. Open IIS. Open the **Run** menu (**Windows key + R**), and then type: **inetmgr**. Select **OK**.
-3. Expand **Sites &gt; Select RetailCloudPos** and then right-click it and select **Explore**.
-4. Select **File** and then select **Open Windows PowerShell as administrator**.
-5. Open the Windows Command Prompt in the PowerShell Window by running the command `cmd .`.
-6. Change the current directory to the extensions root directory by running the command `cd Extensions`.
-7. Create a session variable with the name of your extension package by running the command `set ExtensionPackageName=Contoso.Pos.Developer.Samples`
-
-    > [!NOTE]
-    > Replace **Contoso.Pos.Developer.Samples** in the command above with the name of your POS extension package. The extension package name must match the name specified in the **ExtensionPackageDefinition** in the Commerce Runtime trigger extension that configures the POS extension package.
-
-8. Create a session variable with the absolute path to your POS extension package project directory by running the command `set AbsolutePathToExtensionPackageProject=%FullPathToPOSExtensionProjectRootDirectory%`
-
-    > [!NOTE]
-    > Replace **%FullPathToPOSExtensionProjectRootDirectory%** with the absolute path to your POS Extension Package project.
-
-    Example:
+1. Make sure that CPOS is deployed on the machine. If it isn't deployed, use the Commerce Scale Unit (self-hosted) installer to deploy it.
+2. Open Internet Information Services (IIS). Select **Windows logo key+R** to open the **Run** dialog box, enter **inetmgr**, and then select **OK**.
+3. Expand **Sites &gt; Select RetailCloudPos**, select and hold (or right-click) it, and then select **Explore**.
+4. Select **File**, and then select **Open Windows PowerShell as administrator**.
+5. In the **Windows PowerShell** window, run the following command to open a Windows command prompt.
 
     ```powershell
-    set AbsolutePathToExtensionPackageProject=K:\RetailCloudPos\WebRoot\Extensions\ Contoso.Pos.Developer.Samples
+    cmd .
     ```
 
-9. Create a link from the Extensions directory to the extension package project root directory by running the command:
+6. Run the following command to change the current directory to the **Extensions** root directory.
+
+   ```powershell
+   cd Extensions
+   ```
+
+7. Run the following command to create a session variable that has the name of your extension package.
 
     ```powershell
-     mklink /D %ExtensionPackageName% %AbsolutePathToExtensionPackageProject%
+    set ExtensionPackageName=Contoso.Pos.Developer.Samples
     ```
 
-10. Verify the whether the link folder for your extension package is created in the Cloud POS extension package directory looks like the image below.
+    > [!NOTE]
+    > Replace **Contoso.Pos.Developer.Samples** with the name of your POS extension package. The name of the extension package must match the name that is specified in **ExtensionPackageDefinition** in the Commerce runtime (CRT) trigger extension that configures the POS extension package.
 
-## Debugging Cloud POS using Edge developer tools
+8. Run the following command to create a session variable that has the absolute path of the directory for your POS extension package project.
 
-1. Completed the steps in [Configuring the Cloud POS extension development environment](#configure-cloud-pos).
-2. Build your Cloud POS extension project.
-3. Navigate to the Cloud POS website in Edge.
-4. Press F12 to launch the Edge developer tools.
-5. Set up a workspace that points to the root directory of your Cloud POS Extension package. You only have to setup the workspace the first time.
+    ```powershell
+    set AbsolutePathToExtensionPackageProject=%FullPathToPOSExtensionProjectRootDirectory%
+    ```
+
+    > [!NOTE]
+    > Replace **%FullPathToPOSExtensionProjectRootDirectory%** with the absolute path of your POS extension package project. Here is an example.
+    >
+    > ```powershell
+    > set AbsolutePathToExtensionPackageProject=K:\RetailCloudPos\WebRoot\Extensions\ Contoso.Pos.Developer.Samples
+    > ```
+
+9. Run the following command to create a link from the **Extensions** directory to the root directory of the extension package project.
+
+    ```powershell
+    mklink /D %ExtensionPackageName% %AbsolutePathToExtensionPackageProject%
+    ```
+
+10. Verify that the link folder for your extension package is created in the directory for the CPOS extension package.
+
+## Debug CPOS by using the Microsoft Edge developer tools
+
+1. Follow the steps in the [Configure the Cloud POS extension development environment](#configure-cloud-pos) section earlier in this topic.
+2. Build your CPOS extension project.
+3. In Microsoft Edge, open the CPOS website.
+4. Select the **F12** key to open the Microsoft Edge developer tools.
+5. Set up a workspace that points to the root directory of your CPOS extension package. You have to set up the workspace only the first time that you complete this procedure.
 6. Make sure that **JavaScript Source Mapping** is enabled.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
