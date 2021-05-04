@@ -4,7 +4,7 @@
 title: Initialize Commerce Scale Unit (cloud)
 description: This topic explains how to initialize Commerce Scale Unit (cloud).
 author: AamirAllaq
-ms.date: 02/09/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod:
 ms.technology:
