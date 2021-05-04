@@ -83,7 +83,7 @@ You can download the ER configuration for the electronic fiscal documents from M
 1. Setup the **SCS**.
 1. Choose the appropriate digital **certificate** for authentication in tax authority service and digital signing of fiscal documents.
     > [!NOTE]
-    > The certificate configured in Fiscal establishment is used for the NFC-es that were issued on POS in offline contingency mode and can then be submitted for authorization through Commerce Headquarters. In order to sign fiscal documents in offline contingency mode a sertificate must be installed in offline certificate storage of POS (point of sale). For more information, see [Postponed registration of NFC-e issued in contingency mode](latam-bra-nfce-contingency-sumbission.md) page.
+    > The certificate configured in Fiscal establishment is used for the NFC-es that were issued on POS in offline contingency mode and can then be submitted for authorization through Commerce Headquarters. In order to sign fiscal documents in offline contingency mode a sertificate must be installed in offline certificate storage of POS (point of sale).
 1. Choose **Environment types "Testing" or "Production"** for NF-e / NFC-e web-services.
 1. Specify the **versions of the NF-e and NFC-e features**.
 1. Select the **Authorities** from **NF-e federal parameters** for NF-e / NFC-e web-services.
@@ -215,7 +215,7 @@ For more information about how to work with Azure Key Vault storage, see [Get st
 Also you can use the [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature that supports failover to offline when Key Vault or Headquarters are not available. The feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
 
 > [!NOTE]
-> In order to sign NFC-es in offline contingency mode a sertificate must be installed in offline certificate storage of POS (point of sale). For more information, see [Make a cash-and-carry sale of goods in offline contingency mode](latam-bra-nfce.md#scenario-3-make-a-cash-and-carry-sale-of-goods-in-offline-contingency-mode) scenario and [Postponed registration of NFC-e issued in contingency mode](latam-bra-nfce-contingency-sumbission.md) page.
+> In order to sign NFC-es in offline contingency mode a sertificate must be installed in offline certificate storage of POS (point of sale).
 
 #### Configure certificates to be used in Retail Server
 
