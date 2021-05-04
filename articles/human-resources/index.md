@@ -55,7 +55,7 @@ Human Resources connects people and operations data to help you optimize workfor
 [System requirements](hr-admin-system-requirements.md)</br>
 [Set up and manage instances](hr-admin-setup-provision.md)</br>
 [Set up data integration](hr-admin-integration-choose-technology.md)</br>
-[Configure data management](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/human-resources/toc.json)</br>
+[Configure data management](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json)</br>
 [Manage features](hr-admin-manage-features.md)</br>
 [Explore the user interface](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
 [Human Resources app in Teams](hr-admin-teams-leave-app.md)</br>
@@ -75,7 +75,7 @@ Human Resources connects people and operations data to help you optimize workfor
 [Troubleshoot development with Dataverse virtual tables](hr-developer-optimize-virtual-table-queries.md)</br>
 [Entity API reference](hr-developer-api-authentication.md)</br>
 [ATS integration API](hr-admin-integration-ats-api-introduction.md)</br>
-[Payroll integration API](hr-admin-integration-payroll-api-introduction)
+[Payroll integration API](hr-admin-integration-payroll-api-introduction.md)
 
 ## User Guide
 
@@ -90,6 +90,6 @@ Human Resources connects people and operations data to help you optimize workfor
 [Manage leave requests in Teams](hr-teams-leave-app.md)</br>
 [Develop employees](hr-develop-performance-management-overview.md)</br>
 [Create courses](hr-learning-courses.md)</br>
-[Set up Employee and Manager self service](hr-employee-manager-self-service-overview)
+[Set up Employee and Manager self service](hr-employee-manager-self-service-overview.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
