@@ -112,6 +112,29 @@ Delete accrual records for a specific plan and date range. Accrual dates must be
 
 2. Under **Manage leave**, select **Delete leave accrual audit**.
 
+## (Preview) Leave accrual transaction auditing
+
+[!include [Preview feature](includes/preview-feature.md)]
+
+This preview feature helps leave and absence managers understand the leave and absence accrual transactions related to an employee’s time off balances for a specific leave type.
+
+To view transaction details:
+
+1. On the employee's record, select **Leave**.
+
+2. Select **View time off**, and then select the **Balances** tab.
+
+To view the accrual transactions related to a specific leave type, select the numerical value in the **Current balance** column.
+
+To view the transaction details for a specific accrual amount, select an accrual row, open the **Related information** panel on the right, and then open the **Transaction details** section. The Transaction details section displays:
+
+- Changes to the employee’s leave type balance
+- Employment details for that specified accrual period
+- Details about the accrual period and rates
+- Any changes made to leave plan configurations
+
+![Display leave accrual transaction auditing](media/hr-leave-and-absence-accrue-audit.png)
+
 ## See also
 
 [Leave and absence overview](hr-leave-and-absence-overview.md)</br>
