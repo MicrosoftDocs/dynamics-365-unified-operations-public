@@ -87,7 +87,7 @@ To set up fiscal establishment and NF-e federal parameters in Commerce headquart
 1. Set up the **SCS**.
 1. Select the appropriate digital **certificate** for authentication in tax authority service and digital signing of fiscal documents.
     > [!NOTE]
-    > The certificate configured in Fiscal establishment is used for the NFC-es that were issued on POS in offline contingency mode and can then be submitted for authorization through Commerce Headquarters. In order to sign fiscal documents in offline contingency mode a sertificate must be installed in offline certificate storage of POS (point of sale).
+    > The certificate configured in Fiscal establishment is used for the NFC-es that were issued on POS in offline contingency mode and can then be submitted for authorization through Commerce Headquarters. In order to sign fiscal documents in offline contingency mode a certificate must be installed in offline certificate storage of POS (point of sale).
 1. Select **Environment types "Testing" or "Production"** for NF-e / NFC-e web-services.
 1. Specify the **versions of the NF-e and NFC-e features**.
 1. Select **Authorities** from **NF-e federal parameters** for NF-e / NFC-e web-services.
@@ -202,16 +202,16 @@ This section provides deployment guidance for enabling Commerce components of th
 
 ### Using certificates for authentication in tax authority service and digital signing of fiscal documents
 
-A digital sertificate for Application Object Server (AOS) must be stored in Azure Key Vault. 
+A digital certificate for Application Object Server (AOS) must be stored in Azure Key Vault. 
 
-Digital sertificates for Retail Server must be installed locally and / or it can be stored in Azure Key Vault. Both location types for Retail Server can be configured simultaneously and used according to their priorities. 
+Digital certificates for Retail Server must be installed locally and / or it can be stored in Azure Key Vault. Both location types for Retail Server can be configured simultaneously and used according to their priorities. 
 
 For more information about how to work with Azure Key Vault storage, see [Get started with Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-get-started) and [Set up the Azure Key Vault client](../../finance/localizations/setting-up-azure-key-vault-client.md).
 
 Also you can use the [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature that supports failover to offline when Key Vault or Headquarters are not available. The feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
 
 > [!NOTE]
-> In order to sign NFC-es in offline contingency mode a sertificate must be installed in offline certificate storage of POS (point of sale).
+> In order to sign NFC-es in offline contingency mode a certificate must be installed in offline certificate storage of POS (point of sale).
 
 #### Configure certificates to be used in Retail Server
 
@@ -228,7 +228,7 @@ These certificates can be either installed in the local certificate storage of t
 
 #### Configure a certificate in AOS
 
-**Application Object Server** uses a certificate that is stored in Azure Key Vault for authentication in tax authority service for submittion through Commerce Headquarters NFC-es that were issued on POS in offline contingency mode. Also it is needed for digital signing of Discard and Cancellation by substitution requests. Parameters of the certificate must be specified in the following **Fiscal establishment settings**:
+**Application Object Server** uses a certificate that is stored in Azure Key Vault for authentication in tax authority service for submission through Commerce headquarters NFC-es that were issued on POS in offline contingency mode. Also it is needed for digital signing of Discard and Cancellation by substitution requests. Parameters of the certificate must be specified in the following **Fiscal establishment settings**:
 
 1. Go to **Organization administration > Organizations > Fiscal establishments > Fiscal establishments**.
 1. Choose the appropriate digital **certificate** for authentication in tax authority service and digital signing of fiscal documents.
