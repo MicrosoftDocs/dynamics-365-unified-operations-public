@@ -62,7 +62,7 @@ Human Resources connects people and operations data to help you optimize workfor
 [Prepare for go-live](hr-admin-go-live-prepare.md)</br>
 [Go-live FAQ](hr-admin-go-live-faq.md)</br>
 [Documentation resources](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
-[Troubleshoot Human Resources](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)</br>
+[Troubleshoot Human Resources](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
 
 ## Developer Guide
 
@@ -72,7 +72,10 @@ Human Resources connects people and operations data to help you optimize workfor
 [Custom fields](hr-developer-custom-fields.md)</br>
 [Dataverse tables](hr-developer-entities.md)</br>
 [Set up data integration](hr-admin-integration-choose-technology.md)</br>
-[Entity API reference](hr-developer-api-authentication.md)
+[Troubleshoot development with Dataverse virtual tables](hr-developer-optimize-virtual-table-queries.md)</br>
+[Entity API reference](hr-developer-api-authentication.md)</br>
+[ATS integration API](hr-admin-integration-ats-api-introduction.md)</br>
+[Payroll integration API](hr-admin-integration-payroll-api-introduction)
 
 ## User Guide
 
@@ -84,8 +87,9 @@ Human Resources connects people and operations data to help you optimize workfor
 [Set up compensation plans](hr-compensation-overview.md)</br>
 [Manage benefits](hr-benefits-management-overview.md)</br>
 [Manage leave and absence](hr-leave-and-absence-overview.md)</br>
+[Manage leave requests in Teams](hr-teams-leave-app.md)</br>
 [Develop employees](hr-develop-performance-management-overview.md)</br>
-[Create courses](hr-learning-courses.md)
-
+[Create courses](hr-learning-courses.md)</br>
+[Set up Employee and Manager self service](hr-employee-manager-self-service-overview)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
