@@ -33,11 +33,11 @@ ms.dyn365.ops.version: 10.0.17
 This topic provides information about customer aging snapshots. The aging snapshot calculates aged balances for a group of customers at a point in time. You can create aging snapshot records for all customers, or for the customers in a customer pool. Information from aging snapshots is shown on the **Aged balances** list page, and on the **Collections** page. You must create an aging snapshot before you can use the list page. The list page only lists customers that an aging snapshot has been created for.
 
 > [!NOTE] 
-> Turn on the Customer aging performance enhancement feature using the **Feature management** workspace. This reduces the time it takes to create an aging snapshot. Don't use customer pools with this enhancement turned on. If a customer pool is selected the feature won’t run.
+> Turn on the Customer aging performance enhancement feature using the **Feature management** workspace. This reduces the time it takes to create an aging snapshot. Don't use customer pools with this enhancement turned on. If a customer pool is selected the enhancement feature won’t run, although you can still create an aging snapshot.
 
 Enter information as indicated in the following fields when you're creating a customer aging snapshot. 
 
-**Aging period definition** - Select the aging period definition for this aging snapshot. You can have one aging snapshot for each aging period definition, but they need to be created separately. 
+**Aging period definition** - Select the aging period definition for this aging snapshot. You can have one aging snapshot for each aging period definition, but they must be created separately. 
 
 - **Pool ID** - This field is optional. Use a pool to define the set of customers to be processed in the aging snapshot. Leave this field blank to create an aging snapshot for all customers. If a customer pool is selected, the aging snapshot process is applied only to the customer accounts that are part of the customer pool. The selected customer pool must be of the **Aging snapshot** type.
 
@@ -46,9 +46,9 @@ Enter information as indicated in the following fields when you're creating a cu
 
 - **Criteria** - The aging snapshot will age based on the date selected. 
 
-  - Transaction date – Age each transaction based on its transaction date.
-  - Due date – Age each transaction based on its due date.
-  - Document date – Age each transaction based on its document date.
+  - Transaction date – This option will age each transaction based on its transaction date.
+  - Due date – This option sill age each transaction based on its due date.
+  - Document date – This option will age each transaction based on its document date.
 
 - **Aging as of** - Select a date to use in the **Current date** field for the aging snapshot. Aging periods are calculated based on this date. If current aging period is 30 days and today’s date is used, then the Current aging period includes today’s date and the prior 29 days. If you specify a date the Current aging period starts with that date and includes the prior 29 days. 
 
