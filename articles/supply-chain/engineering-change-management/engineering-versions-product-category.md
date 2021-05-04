@@ -145,6 +145,8 @@ For each row that you add to the grid, set the following fields.
 
 Use the **Product readiness policy** field to select the readiness policy that applies to products that belong to this category. For more information, see [Product readiness](product-readiness.md).
 
+<!-- KFM Add note about what happens if you enable readiness for all products. Give link to new section. -->
+
 ### Release policy FastTab
 
 Use the **Product release policy** field to select the release policy that applies to products that belong to this category. For more information, see [Release product structures](release-product-structure.md).

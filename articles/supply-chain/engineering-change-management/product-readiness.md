@@ -76,7 +76,7 @@ To view the open readiness checks that are assigned to you, follow one of these 
 - Go to **Engineering change management \> Common \> Product readiness \> My open readiness checks**.
 - Go to **Product information management \> Workspaces \> Product readiness for discrete manufacturing**.
 
-The setup that specifies who a readiness check is assigned to is done for the engineering product category. Readiness checks can be assigned to a person or a team. If a readiness check is assigned to a team, there is one person on the team who must process the readiness check. For more information, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
+The setup that specifies who a readiness check is assigned to is done for the readiness policy. Readiness checks can be assigned to a person or a team. If a readiness check is assigned to a team, there is one person on the team who must process the readiness check.
 
 ## Process open readiness checks
 
@@ -174,7 +174,6 @@ To enable your system to make readiness checks on standard products, you must do
 You create readiness policies for standard products just as you do for engineering products, as described previously in this topic.
 
 When you assign a readiness policy to a standard product (rather then to a released product), you do so using the shared product because standard products don't have an engineering category. <!-- KFM: We should provide an explicit description for how to assign this. -->
-<!-- KFM: Which user is assigned the check? (otherwise assigned per engineering category) -->
 
 ### View and process readiness checks on standard products
 
