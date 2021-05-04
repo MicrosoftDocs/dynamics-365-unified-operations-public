@@ -4,7 +4,7 @@
 title: Change the accounting or reporting currency 
 description: This topic describes the process of changing the accounting or reporting currency, or adding a reporting currency to the setup of a ledger.
 author: kweekley
-ms.date: 01/25/2021
+ms.date: 05/05/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -20,7 +20,7 @@ ms.reviewer: roschlom
 ms.search.region: Global 
 # ms.search.industry: 
 ms.author: kweekley
-ms.search.validFrom: 2020-12-14
+ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
 
 ---
@@ -31,7 +31,9 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic describes the process of changing the accounting or reporting currency, or adding a reporting currency to the setup of a ledger.
 
-## How do I change the accounting or reporting currency, or add a reporting currency to the Ledger setup?
+## Symptom
+
+How do I change the accounting or reporting currency, or add a reporting currency to the Ledger setup?
 
 The following scenarios typically trigger this question:
 
@@ -39,13 +41,13 @@ The following scenarios typically trigger this question:
 
 - A legal entity was set up without a reporting currency, which is optional, and you want to add the reporting currency.
 
-  Some organizations request this to start using the Dual currency capability.
+Some organizations that haven't been using the Dual currency capability, ask how to start using it.
 
-- A legal entity was set up with a reporting currency and you want to remove the reporting currency.
+- A legal entity was set up with a reporting currency and the organization wants to remove the reporting currency.
 
-- An organization is upgrading/migrating to Dynamics 365 Finance and want to change the accounting or reporting currency.
+- An organization is upgrading or migrating to Dynamics 365 Finance and wants to change the accounting or reporting currency.
 
-### Answer
+### Resolution
 
 The most important detail to consider when answering this question is whether any transactions (actual or budget) have been posted into the legal entity for the Ledger setup. **It is not possible to change the accounting or reporting currency or add a reporting currency if a single transaction (actual or budget) has been posted within the legal entity.**  The following steps can be taken regardless of whether or not transactions have been posted. 
 
