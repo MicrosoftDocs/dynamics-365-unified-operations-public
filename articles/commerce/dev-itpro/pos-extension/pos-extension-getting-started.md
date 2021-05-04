@@ -37,8 +37,8 @@ Depending on your store topology, choose the POS application type. The extension
 ### Prerequisites
 
 + Windows 10 1809 or newer or Windows Server 2019 for Modern POS.
-+ Visual Studio 2017 Community, Professional, or Enterprise with the following workloads and components:
-+ Visual Studio workloads
++ Visual Studio 2017 Community, Professional, or Enterprise
++ Visual Studio workloads.
     + Visual Studio core editor (usually selected by default)
     + .NET desktop development
     + Desktop development with C++ (POS)
@@ -55,12 +55,12 @@ Depending on your store topology, choose the POS application type. The extension
     + Visual C++ ATL for x86 and x64
     + Visual C++ MFC for x86 and x64
     + Windows 10 SDK (10.0.17763.0)
-+ .NET Framework/SDK
++ .NET Framework
     + [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1)
     + [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net472-developer-pack-offline-installer) 
 + SQL Server Express 2016 local channel database. (Required only for offline deployments).
 + SQL Server Data Tools
-+ Git for Windows (Source control management).
++ Git for Windows (source control management).
 
 ## Develop a POS extension
 
