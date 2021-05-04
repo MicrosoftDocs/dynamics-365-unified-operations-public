@@ -4,7 +4,7 @@
 title: Get started with Electronic invoicing service administration
 description: This topic explains how to get started with Electronic invoicing.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -54,8 +54,8 @@ Before you complete the procedures in this topic, the following prerequisites mu
 3. In the **Public Preview Features** section, select **Electronic Invoicing**.
 4. Make sure that the **Preview feature enabled** option is set to **Yes**.
 5. On your LCS project dashboard, select a LCS project.
-6. Within the LCS project, on the LCS environment dashboard, select your LCS deployment project. The LCS deployment project must be running.
-7. On the **Power Platform Integration** tab, under the **Environment add-ins** field group, select **Install a new add-in**.
+6. In the LCS project, on the LCS environment dashboard, select your LCS deployment project. The LCS deployment project must be running.
+7. On the **Power Platform Integration** tab, in the **Environment add-ins** field group, select **Install a new add-in**.
 8. Select **Electronic Invoicing**.
 9. In the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This is a fixed value.
 10. In the **AAD tenant ID** field, enter the tenant ID of your Azure subscription account.
