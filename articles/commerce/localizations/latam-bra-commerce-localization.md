@@ -112,7 +112,7 @@ Commerce supports fiscal registration via the [Fiscal integration framework](../
 
 ## Commerce functionality for Brazil
 
-Commerce functionality for Brazi consists of the following parts:
+Commerce functionality for Brazil consists of the following parts:
 
 - Common point-of-sale (POS) features that are available to customers in all countries or regions. 
 - Brazil-specific features, such as communication with SEFAZ.
