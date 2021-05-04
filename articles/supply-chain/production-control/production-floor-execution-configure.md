@@ -75,6 +75,12 @@ This feature adds an asset management tab to the production floor execution inte
 
 - Asset management functionality for the production floor execution interface
 
+### Enable job search
+
+This feature makes it possible to add a search field to the production floor execution interface. Workers can search by entering text or scanning a bar code. If you'd like to use it, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Job search for the production floor execution interface
+
 ## Work with production floor execution configurations
 
 To create and maintain device configurations, go to **Production control \> Setup \> Manufacturing execution \> Configure production floor execution**. The **Configure production floor execution** page shows a list of existing configurations. On this page, you can perform the following actions:
@@ -85,6 +91,7 @@ To create and maintain device configurations, go to **Production control \> Setu
 Next, configure the various settings for the selected device configuration. The following fields are available:
 
 - **Clock in and out only** - Set this option to *Yes* to create a simplified interface that only provides clock-in and clock-out functionality. This disables most of the other options on this page. You must remove all lines from the **Tab selection** FastTab before you can enable this option.
+- **Enable search** - Set this option to *Yes* to include a search field on the production floor execution interface. Workers can search for jobs by entering text or scanning a bar code.
 - **Report quantity at clock-out** – Set this option to *Yes* to prompt workers to report feedback about jobs that are in progress when they clock out. When this option is set to *No*, workers won't be prompted.
 - **Lock employee** – When this option is set to *No*, workers will be signed out immediately after they make a registration (such as a new job). The device will then return to the sign-in page. When this option is set to *Yes*, workers will stay signed in to the job card device. However, a worker can manually sign out so that another worker can sign in while the job card device continues to run under the same system user account. For more information about these types of accounts, see [Assigned users](config-job-card-device.md#assigned-users).
 - **Use the actual time of registration** – Set this option to *Yes* to set the time for each new registration to the exact time when the worker submitted the registration. When this option is set to *No*, the sign-in time is used instead. You will usually want to set this option to *Yes* if you've set the **Lock employee** and/or **Single worker** option to *Yes* in cases where workers often remain signed in for longer periods.
