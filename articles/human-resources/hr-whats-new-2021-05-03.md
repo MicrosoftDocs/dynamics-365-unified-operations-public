@@ -51,7 +51,6 @@ The following features are generally available with this release.
 | --- | --- | --- |
 | ## Improve leave accrual engine comprehension - (569260) | | |
 | ## Life Event Options in EmployeeBenefit form should allow edits to the specific EmployeeBenefit record to enable override. - (570534) | | |
-| ## CloudTest flaky test detection needs to be enabled for all inner loop repos - (547639) | | |
 | ## Add info bar when Life events are created. - (570545) | | |
 
 ### Bug fixes
