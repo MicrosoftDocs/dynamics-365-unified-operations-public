@@ -1,6 +1,26 @@
 {
   "redirections": [
     {
+      "source_path": "articles/supply-chain/inventory/enable-nonconformance-management.md",
+      "redirect_url": "enable-quality-management",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management.md",
+      "redirect_url": "../enable-quality-management",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/inventory/tasks/set-up-quality-orders.md",
+      "redirect_url": "../enable-quality-management",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/master-planning/planning-optimization/planning-optimization-auto-firming.md",
+      "redirect_url": "planned-order-firming",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/known-issues.md",
       "redirect_url": "/dynamics365/fin-ops-core/fin-ops/index",
       "redirect_document_id": "false"
