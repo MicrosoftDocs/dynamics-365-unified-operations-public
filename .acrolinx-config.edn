@@ -1,5 +1,5 @@
 {:allowed-branchname-matches ["^master$" "^acrolinx$"]
- :allowed-filename-matches ["(?i)articles/(?:(?!finance/localizations/*.md))"]
+ :allowed-filename-matches ["articles"]
  :use-skip-label true
  :targets
  {
