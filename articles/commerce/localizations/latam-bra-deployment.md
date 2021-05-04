@@ -159,16 +159,16 @@ In the Receipt format designer, add Brazilian custom fields to the appropriate r
 To enable the registration process, set up Headquarters using the steps below. For more details, see [Set up the fiscal integration for Commerce channels](./setting-up-fiscal-integration-for-retail-channel.md).
 
 1. Open **Commerce shared parameters** and enable **Fiscal integration** on the **General** tab.
-1. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors** menu. Load connector configuration from the [Commerce Fiscal Integration Repo](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations). 
+1. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors** menu. Load connector configuration from the [Commerce Fiscal Integration Repo](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations). 
 
-    The files are located under [**Configurations\\Connectors**](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations%2FConnectors):
+    The files are located under [**Configurations\\Connectors**](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations%2FConnectors):
     
     - SubmitConnector.xml,
     - ContingencyConnector.xml.
 
-1. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers** menu. Load documment provider configurations from [Commerce Fiscal Integration Repo](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations).
+1. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers** menu. Load documment provider configurations from [Commerce Fiscal Integration Repo](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations).
 
-    Configuration files are located under [**Configurations\\DocumentProviders**](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations%2FDocumentProviders):
+    Configuration files are located under [**Configurations\\DocumentProviders**](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations%2FDocumentProviders):
 
     - SubmitProvider.xml,
     - ContingencyProvider.xml.
