@@ -1,5 +1,5 @@
 ---
-title: Migrating POS Extensions to the independent-packaging model
+title: Migrate a POS extension to the independent-packaging model
 description: This topic explains how to migrate POS extensions to the independent-packaging model.
 author: mugunthanm
 ms.date: 04/13/2021
@@ -12,7 +12,7 @@ ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
 ---
 
-# Migrating POS Extensions to the independent-packaging model
+# Migrate a POS extension to the independent-packaging model
 
 [!include [banner](../includes/banner.md)]
 

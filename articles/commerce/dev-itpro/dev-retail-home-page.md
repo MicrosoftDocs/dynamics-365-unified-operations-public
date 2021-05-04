@@ -92,6 +92,18 @@ This page lists the resources that are available for IT pros and developers who 
 - [Create a POS extension package project](pos-extension/create-pos-extension-package.md)
 - [Create a Modern POS extension appx file](pos-extension/create-pos-extension-appx.md)
 - [Debug a POS extension](pos-extension/debug-pos-extension.md)
+- Extension packaging and deployment
+    - [Create a Modern POS extension package](mpos-extension-packaging.md)
+    - [Code signing a Modern POS (MSIX) extension package](mpos-extension-signing.md)
+    - [Create a Cloud POS extension package](cpos-extension-package.md)
+    - [Migrate a POS extension to the independent-packaging model](migrate-pos-extension.md)
+- POS extension development guide
+    - [POS extensibility basics](pos-extensibility-basics.md)
+    - [Create a custom view in POS](custom-pos-view.md)
+    - [POS controls in extensions](pos-controls-extensions.md)
+    - Tasks
+        - [Use knockout.js in POS extensions](knockout-pos-extension.md)
+        - [Consume custom headless Commerce APIs](consume-headless-apis.md)
 
 ## Integrating Commerce
 
