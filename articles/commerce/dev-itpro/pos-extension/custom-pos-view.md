@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 # Create a Custom View in POS
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 This topic explains how to create custom View in POS, this topic applies to Retail software development kit (SDK) version 10.0.18 and later.
 
@@ -194,3 +194,5 @@ public onReady(element: HTMLElement): void {
         });
     }
 ```
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

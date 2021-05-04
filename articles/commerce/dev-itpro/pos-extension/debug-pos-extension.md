@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 # Debugging POS extensions
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 This topic explains how to debug a POS extension. It applies to the Retail SDK, version 10.0.18 and later.
 

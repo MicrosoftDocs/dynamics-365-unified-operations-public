@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 # POS Extensibility basics
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 This topic walkthrough some of the basic of using Knockout.js in POS extensions, this topic applies to Retail software development kit (SDK) version 10.0.18 and later.
 
@@ -93,3 +93,5 @@ a.	An example is available in our PosSamples.
 ```TypeScript
 import ko from "knockout"; // The name of the import 'knockout' must match the one in the tsconfig and manifest file.
 ```
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

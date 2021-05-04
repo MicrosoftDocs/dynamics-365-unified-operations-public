@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 # POS Extensibility basics
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 This topic walkthrough some of the basic POS concepts, this topic applies to Retail software development kit (SDK) version 10.0.18 and later.
 
@@ -157,3 +157,5 @@ o	This value is used to locate and load the POS extension package so the values 
         }
     }  
 ```
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

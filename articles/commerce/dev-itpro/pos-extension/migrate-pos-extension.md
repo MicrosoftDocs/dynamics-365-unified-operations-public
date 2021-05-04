@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 # Migrate a POS extension to the independent-packaging model
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 This topic applies to the Retail SDK version 10.0.18 and later.
 
@@ -49,13 +49,13 @@ To enable Modern POS to support the independent packaging model, the POS framewo
 
 ### Removal of Pos.UI.Sdk library
 
-With the migration to the independent-packaging model we have removed the **Pos.UI.Sdk** library which was dependent on **Knockout.js**. In it's place is a library-agnostic design to use POS controls within extensions. This lets you choose which UI library you want to use when developing extensions, while maintaining a consistent look and feel throughout the application. For more information, see [POS controls in extensions](pos-controls-extensions.md).
+With the migration to the independent-packaging model we have removed the **Pos.UI.Sdk** library which was dependent on **Knockout.js**. In it's place is a library-agnostic design to use POS controls within extensions. This lets you choose which UI library you want to use when developing extensions, while maintaining a consistent look and feel throughout the application. For more information, see [POS controls in extensions](controls-pos-extension.md).
 
 ### Knockout.js changes
 
 One of the biggest changes to the POS APIs in the sealed extensibility model was the removal of all references to **Knockout.js** in the POS contracts.
 
-+ You will notice that the POS UI SDK library has been replaced with **Consume** APIs for POS controls under **PosApi/Consume/Controls**. For more information on how to develop extensions that utilize POS controls, see [POS controls in extensions](pos-controls-extensions.md).
++ You will notice that the POS UI SDK library has been replaced with **Consume** APIs for POS controls under **PosApi/Consume/Controls**. For more information on how to develop extensions that utilize POS controls, see [POS controls in extensions](controls-pos-extension.md).
 + The **knockout.d.ts** file has been removed from the SDK, so the global **ko** variable is not available to extensions. To use **Knockout.js** in your POS extensions, see [Use knockout.js in POS extensions](knockout-pos-extension.md).
 
 ### <a id="custom-view"></a>Changes when creating a custom view
@@ -64,7 +64,7 @@ To provide a more maintainable and intuitive way to create extension views, we h
 
 ### Extension loading changes
 
-To use extension packages that are independently distributed and serviced changed how packages are discovered for loading. POS no longer relies on a single **extensions.json** file to list all the extension packages to be loaded. That approach was incompatible with independent-packaging model. In the independent-packaging model, POS calls the headless Commerce Engine to get the list of extension packages that should be loaded. For more information, see [Configuring extension packages](pos-extensibility-basics.md#configuring-extension-packages)
+To use extension packages that are independently distributed and serviced changed how packages are discovered for loading. POS no longer relies on a single **extensions.json** file to list all the extension packages to be loaded. That approach was incompatible with independent-packaging model. In the independent-packaging model, POS calls the headless Commerce Engine to get the list of extension packages that should be loaded. For more information, see [Configuring extension packages](pos-extension-basics.md#configuring-extension-packages)
 
 ## Code migration steps
 
@@ -85,7 +85,7 @@ To migrate existing POS extensions from the **Pos.Extensions** project in the Re
 4. Required only if using Pos.UI.Sdk: Convert all references to the Pos.UI.Sdk library. The Pos.UI.Sdk library is not supported in independent-packaging, which has a different way of using POS controls in extensions.
 
     1. In Visual Studio, do a global search for **PosUISdk**.
-    2. For each reference to **PosUISdk**, replace the usage of the POS UI SDK control with the new approach to use POS controls from **PosApi/Consume/Controls**. For instructions how to make these updates, see [POS controls in extensions](pos-controls-extensions.md).
+    2. For each reference to **PosUISdk**, replace the usage of the POS UI SDK control with the new approach to use POS controls from **PosApi/Consume/Controls**. For instructions how to make these updates, see [POS controls in extensions](controls-pos-extension.md).
     3. Search the solution again for **PosUISdk** to confirm that all uses have been updated.
 
 5. Required only if using **Knockout.js**: Update all references to **Knockout.js** to use a copy of the library included in your extension package instead of relying on the global instance used in POS. For more information, see [Use knockout.js in POS extensions](knockout-pos-extension.md).

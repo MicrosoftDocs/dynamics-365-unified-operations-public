@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 # POS Controls in Extensions
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 This topic explains how to use POS Controls in Extensions, this topic applies to Retail software development kit (SDK) version 10.0.18 and later.
 
@@ -92,3 +92,5 @@ More examples of how to use POS controls and the control factory can be found in
 | Number Pad   | IAlphanumericNumPad, ICurrencyNumPad, INumericNumPad, ITransactionNumPad | The number pads are used throughout POS with a variety of different behaviors and input formatting.                                                                                                                                                                 <br />The alphanumeric numpad is designed to accept alphanumeric input. <br />The currency numpad is focused on scenarios where the user will be inputting monetary values.                 <br />The numeric numpad is optimized for scenarios where the user will only be entering a numeric value.                                                                             <br />The transaction numpad behavior is targeted for transaction scenarios where the user is likely to be inputting an item identifier and/or quantity.  |
 | Time Picker         | ITimePicker                                 | The time picker control used in POS.                                                                                    |
 | Toggle         | IToggle                                                                    | The toggle switch control used in POS.                                                                                    |
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

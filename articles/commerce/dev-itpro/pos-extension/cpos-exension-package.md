@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 # Create Cloud POS extension package
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 This topic explains how to create Cloud POS extension package. Based on the Cloud POS deployment topology, the Cloud POS can be deployed to Cloud Scale unit (CSU) or Cloud Scale unit (CSU) – Self hosted.
 

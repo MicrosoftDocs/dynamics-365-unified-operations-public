@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 # Getting started with POS extensions
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 This topic explains how to create a POS extension development environment and get started with POS extensions. This topic applies to Retail software development kit (SDK) version 10.0.18 and later.
 

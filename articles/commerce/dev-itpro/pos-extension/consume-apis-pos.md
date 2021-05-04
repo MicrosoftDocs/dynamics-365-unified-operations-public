@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 # Consume Custom Headless Commerce Engine APIs and Entities in POS
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 This topic explains how to Consume Custom Headless Commerce Engine APIs and Entities in POS using Proxy, this topic applies to Retail software development kit (SDK) version 10.0.18 and later.
 
@@ -67,3 +67,5 @@ export default class PreProductSaleTrigger extends Triggers.PreProductSaleTrigge
     }
 }
 ```
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
