@@ -34,8 +34,8 @@ Resetting a data mart can be time consuming. Depending on the circumstances, thi
 ## When do you need to do a data mart reset?
 Consider the following questions before resetting a data mart. Answering yes to one or more questions might indicate that your organization can benefit by resetting the data mart.
 
-- The application database was restored.
-- You've opened a support incident and a support engineer has instructed you to reset the data mart as part of a troubleshooting step.
+- Was the application database was restored?
+- If you've opened a support incidenth has a support engineer instructed you to reset the data mart as part of a troubleshooting step?
  
 ## When it's not appropriate to reset a data mart?
 There are some circumstances when we don't recommend resetting a data mart. These include the following. 
@@ -50,12 +50,12 @@ There are some circumstances when we don't recommend resetting a data mart. Thes
 - A reset will only start when existing tasks are complete. This ensures that old data is not inserted. At this point you may see a message such as, “The data mart reset was unable to be processed because of an active task. Please try again later.”
 - The reset will disable the integration tasks and delete all the data mart data. The integration is re-enabled.
 
-## Data Mart Reset FAQ:
-If I reset the data mart, will I lose my reports that I have already designed. 
- - No, your reports are stored in SQL tables that are not impacted by a reset of the data mart. If you are concerned you could backup your reports by going to Company | Companies | Building Blocks | Export
+## Data Mart Reset FAQ
+If I reset the data mart, will I lose reports that I've already designed? 
+ - No, your reports are stored in SQL tables that are not impacted by a reset of the data mart. If you are concerned you could back up your reports by going to Company | Companies | Building Blocks | Export
  
-Do users have to be out of D365 to reset the data mart.
- - No, during the data mart reset user will not need to be out of D365. They just won’t be able to access any reports that were created by Financial Reporter until the reset has completed. 
+Is it necessary for all users to exit the system to reset the data mart?
+ - No, users can continue working in the system during the data mart reset. However, they won’t be able to access any reports that were created by Financial Reporter until the reset is finished. 
 
 
 
