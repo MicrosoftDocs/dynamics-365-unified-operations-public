@@ -4,7 +4,7 @@
 title: Accrue leave and absence plans
 description: You can accrue leave and absence in Dynamics 365 Human Resources for multiple employees or for an individual.
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -42,7 +42,7 @@ You can accrue leave and absence in Dynamics 365 Human Resources for multiple em
 
 3. The **Accrue leave and absence plans** dialog box appears. In **Accrue as of**, either select **Today's date** or select **Custom date** and enter a custom date.
 
-4. If you want to run accruals for all companies, select **All companies**. If you want to process accruals for a single leave plan, select **No** for **All plans**, and then select a **Leave plan**. If you select all companies, you can't select an individual leave plan. 
+4. If you want to run accruals for all companies, select **All companies**. If you want to process accruals for a single leave plan, select **No** for **All plans**, and then select a **Leave plan**. If you select all companies, you can't select an individual leave plan.
 
 5. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
 
@@ -62,7 +62,7 @@ You can accrue leave and absence in Dynamics 365 Human Resources for multiple em
 
 3. The **Accrue leave and absence plans** dialog box appears. In **Accrue as of**, either select **Today's date** or select **Custom date** and enter a custom date.
 
-4. If you want to run accruals for all companies, select **All companies**. If you want to process accruals for a single leave plan, select **No** for **All plans**, and then select a **Leave plan**. If you select all companies, you can't select an individual leave plan. 
+4. If you want to run accruals for all companies, select **All companies**. If you want to process accruals for a single leave plan, select **No** for **All plans**, and then select a **Leave plan**. If you select all companies, you can't select an individual leave plan.
 
 5. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
 
@@ -82,13 +82,13 @@ Delete accrual records for a specific plan and date range. Accrual dates must be
 
 2. Under **Manage leave**, select **Delete leave and absence plan accruals**.
 
-3. In the **Delete leave and absence plan accruals** dialog box, select the **Leave plan**. 
+3. In the **Delete leave and absence plan accruals** dialog box, select the **Leave plan**.
 
 4. If applicable, choose **Delete balance adjustments**.
 
-5. Enter or select a **Leave accrual date**. This date has to be either today or in the future. 
+5. Enter or select a **Leave accrual date**. This date has to be either today or in the future.
 
-6. Select **OK**. The accrual process will delete accruals with the parameters you set. 
+6. Select **OK**. The accrual process will delete accruals with the parameters you set.
 
 ## Delete leave and absence accruals for a single employee
 
@@ -96,13 +96,13 @@ Delete accrual records for a specific plan and date range. Accrual dates must be
 
 2. Select **Delete leave and absence plan accruals**.
 
-3. In the **Delete leave and absence plan accruals** dialog box, select **Leave plan**. 
+3. In the **Delete leave and absence plan accruals** dialog box, select **Leave plan**.
 
 4. If applicable, choose **Delete balance adjustments**.
 
-5. Enter or select a **Leave accrual date**. This date must be either today or in the future. 
+5. Enter or select a **Leave accrual date**. This date must be either today or in the future.
 
-6. Select **OK**. The accrual process will delete accruals with the parameters you set. 
+6. Select **OK**. The accrual process will delete accruals with the parameters you set.
 
 ## Review leave accrual and deletion processes
 
@@ -116,6 +116,5 @@ Delete accrual records for a specific plan and date range. Accrual dates must be
 
 [Leave and absence overview](hr-leave-and-absence-overview.md)</br>
 [Create a leave and absence plan](hr-leave-and-absence-plans.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
