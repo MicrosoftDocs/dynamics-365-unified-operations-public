@@ -1231,7 +1231,9 @@
       - name: Brazil
         items:
         - name: Commerce localization for Brazil
-          href: localizations/latam-bra-commerce-localization.md 
+          href: localizations/latam-bra-commerce-localization.md
+        - name: Setting up and deploying Commerce localization for Brazil
+          href: localizations/latam-bra-deployment.md
       - name: Eastern Europe
         items: 
         - name: Common
