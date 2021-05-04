@@ -5,7 +5,7 @@ title: Commerce localization for Brazil
 description: This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Brazil.
 author: josaw
 manager: annbe
-ms.date: 07/27/2020
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.13
 # Commerce localization for Brazil
 
 [!include[banner](../includes/banner.md)]
-
 
 This topic describes the scope of the Microsoft Dynamics 365 Commerce functionality that is specific to Brazil. It includes information about features and functionality that are designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that typically affect retail businesses in Brazil (within the scope of the [Brazilian localization](../../finance/localizations/latam-bra-scope.md#brazilian-localization-strategy)).
 
@@ -104,7 +103,7 @@ Commerce supports fiscal registration via the [Fiscal integration framework](../
 | Fiscal documents for customer orders from the POS                        |                           | X       |             |
 | NF-e linked to NFC-e/CF-e and DANFE                                      |                           | X       |             |
 | N-1 support for upgrade from AX 2012 R3                                  |                           | X       |             |
-| E-Commerce capabilities for Brazil                                       |                           | X       |             |
+| E-commerce capabilities for Brazil                                       |                           | X       |             |
 | Merging CNPJ/CPF in customer master records in the call center           |                           | X       |             |
 | Retail fiscal documents in fiscal book statements\*                      |                           |         | X           |
 | Integration of the POS with fiscal printers                              |                           |         | X           |
@@ -113,22 +112,22 @@ Commerce supports fiscal registration via the [Fiscal integration framework](../
 
 ## Commerce functionality for Brazil
 
-The functionality consists of the following parts:
+Commerce functionality for Brazi consists of the following parts:
 
 - Common point-of-sale (POS) features that are available to customers in all countries or regions. 
 - Brazil-specific features, such as communication with SEFAZ.
 
 ### Common POS features
 
-To learn about POS features that are available to customers in all countries or regions, see [Commerce home page](../index.md).
+To learn about POS features that are available to customers in all countries or regions, see the [Commerce home page](../index.md).
 
 ### Brazil-specific POS features
 
-The following Brazil-specific POS features are enabled once the Setting up and deploying Commerce localization for Brazil are made:
+The following Brazil-specific POS features are enabled once setup and deployment of Commerce localization for Brazil have been completed:
 
-- NFC-e - Electronic Fiscal Document for Consumers in Brazil.
+- Electronic Fiscal Document for Consumers in Brazil (NFC-e).
 - Customer information management for Brazil.
-- Cancellation and Return of NFC-e.
+- Cancellation and return of NFC-e.
 - Postponed registration of NFC-e issued in contingency mode.
 - Posting and control of electronic fiscal documents.
 
