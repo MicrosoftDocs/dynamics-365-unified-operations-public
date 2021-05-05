@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 ---
 
-# POS Extensibility basics
+# Use Knockout.js in POS extensions
 
 [!include [banner](../../../includes/banner.md)]
 

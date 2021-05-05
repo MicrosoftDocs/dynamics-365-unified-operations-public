@@ -40,7 +40,7 @@ Follow these steps the first time that an extension package is developed on the 
 
 1. Make sure that CPOS is deployed on the machine. If it isn't deployed, use the Commerce Scale Unit (self-hosted) installer to deploy it.
 2. Open Internet Information Services (IIS). Select **Windows logo key+R** to open the **Run** dialog box, enter **inetmgr**, and then select **OK**.
-3. Expand **Sites &gt; Select RetailCloudPos**, select and hold (or right-click) it, and then select **Explore**.
+3. Expand **Sites**, select and hold (or right-click) **RetailCloudPos**, and then select **Explore**.
 4. Select **File**, and then select **Open Windows PowerShell as administrator**.
 5. In the **Windows PowerShell** window, run the following command to open a Windows command prompt.
 
@@ -82,7 +82,7 @@ Follow these steps the first time that an extension package is developed on the 
     mklink /D %ExtensionPackageName% %AbsolutePathToExtensionPackageProject%
     ```
 
-10. Verify that the link folder for your extension package is created in the directory for the CPOS extension package.
+10. Verify that the linked folder for your extension package is created in the directory for the CPOS extension package.
 
 ## Debug CPOS by using the Microsoft Edge developer tools
 

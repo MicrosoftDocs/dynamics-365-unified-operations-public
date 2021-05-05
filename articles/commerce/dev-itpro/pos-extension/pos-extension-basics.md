@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: POS Extensibility basics
 description: This topic walkthrough some of the basic POS concepts.
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 28021
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-
 ---
 
 # POS Extensibility basics

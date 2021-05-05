@@ -39,7 +39,7 @@ Follow these steps to create the package:
 > [!NOTE]
 > If you have Commerce Runtime, Retail Server, or a Database extension then you must include all these extension projects as references to the **ScaleUnit** project. Adding them generates a combined deployment package that contains all your extensions.
 
-To deploy, follow the steps in [Deploy the package to CSU](../retail-sdk-packaging#deploy-the-package-to-csu).
+To deploy, follow the steps in [Deploy the package to CSU](../retail-sdk-packaging.md#deploy-the-package-to-csu).
 
 ## Packaging for Cloud Scale unit – Self hosted CPOS
 
