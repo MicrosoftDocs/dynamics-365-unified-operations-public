@@ -19,52 +19,48 @@ ms.dyn365.ops.version:
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-When you unlink and relink two dual-write environments, you need to delete the data from the key tables. This requirement applies to sandbox, production, and user acceptance test (UAT) environments, and linking changes like regular backup and restore, and go-live releases. This topic describes how to unlink, delete the data in the key tables, and then relink the dual-write environments.
+When you unlink and relink dual-write connection between environments, you need to delete the data from the key tables. This requirement applies to sandbox, production, and user acceptance test (UAT) environments during activities like backup and restore. This topic describes how to unlink, delete the data in the key tables, and then relink the dual-write environments.
 
 The mappings are preserved when you unlink and relink, because the mappings are stored in Dataverse.
 
 ## Scenario: Dual-write is enabled between production environments
 
-In this scenario, dual-write is enabled between Finance and Operations and Dataverse production environments. You want to back up the Finance and Operations production environment and restore it to Finance and Operations UAT environment, and then the UAT environment becomes your production environment.
+In this scenario, dual-write is enabled between Finance and Operations and Dataverse production environments. You want to back up the Finance and Operations production environment (source) and restore it to Finance and Operations UAT environment (destination). Once you restore, follow these steps on the Finance and Operations UAT environment:
 
-These steps are applicable sandbox, production, and UAT environments.
-
-1. Stop all entity maps.
-2. Unlink the Finance and Operations app and Dataverse.
-3. Perform the database restore.
-4. Delete the data in the key tables in the Finance and Operations app.
+1. Stop all table maps.
+2. Unlink the dual-write connection as the Finance and Operations UAT environment will be pointing towards Dataverse production environment.
+3. Delete the data from the key tables.
 
     - **DualWriteProjectConfiguration**
     - **DualWriteFieldConfiguration**
     - **BusinessEventsDefinition**
 
-5. Relink dual-write.
-6. Enable the maps.
+4. You may want to relink Finance and Operations UAT environment against Dataverse UAT environment. 
+5. Enable the maps.
 
-If the backup and restore processes are running on Dataverse, then follow these steps on the Dataverse environment:
+If the backup and restore processes are running on Dataverse, then follow these steps:
 
-1. Sign in to the Finance and Operations app.
+1. Sign in to Finance and Operations UAT environment.
 2. Stop all table maps.
-3. Unlink the Finance and Operations app and Dataverse.
-4. Run the database restore in Dataverse.
-5. Delete the data in the key tables in the Finance and Operations app.
+3. Unlink the dual-write connection as the Dataverse UAT environment will be pointing towards Finance and Operations production environment.
+4. Delete the data from the key tables on Dataverse.
 
     - **DualWriteProjectConfiguration**
     - **DualWriteFieldConfiguration**
     - **BusinessEventsDefinition**
 
-6. Relink the Finance and Operations app and Dataverse.
+5. You may want to relink Finance and Operations UAT environment against Dataverse UAT environment.
+6. Enable the maps.
 
 ## Scenario: Reset or change linking
 
 If you want to reset your existing sandbox Dataverse instance that is linked for dual-write or you want to change the linking to a different Dataverse instance, then follow these steps:
 
-1. Finance and Operations instance.
-2. Sign in to the Finance and Operations app.
-3. Stop all entity maps.
-4. Unlink the Finance and Operations app and Dataverse.
+1. Sign in to the Finance and Operations app.
+2. Stop all entity maps.
+3. Unlink the dual-write connection between Finance and Operations app and Dataverse.
 5. Reset the Dataverse environment.
-6. Delete the data in the key tables in the Finance and Operations app.
+6. Delete the data from the key tables in the Finance and Operations app.
 
     - **DualWriteProjectConfiguration**
     - **DualWriteFieldConfiguration**
@@ -83,7 +79,7 @@ Follow these steps to mitigate the error:
 1. In the customer engagement app, select **Advanced find**.
 2. In the **Look for** field, select **Dual Write Runtime Configurations**.
 3. Select **Results**.
-4. Select all the results.
+4. Rows will be displayed. Select all the rows.
 5. Select the **Delete** icon.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
