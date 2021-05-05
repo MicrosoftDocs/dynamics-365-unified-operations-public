@@ -24,11 +24,11 @@ The independent-packaging model in the Retail SDK provides a significantly updat
 
 ### No code merge required when updating to the latest version
 
-With the legacy Retail SDK, the design and distribution method required a code merge to update to the latest version of the Commerce components. The code merge was a time-consuming upgrade process, you had to maintain the full Retail SDK in the repo, and you had to compile the core POS.App project. Using the independent-packaging model, you have to maintain only your extension. Updating to the latest Retail SDK is as simple as updating the NuGet package version your project is consuming.
+With earlier versions of the Retail SDK, the design and distribution method required a code merge to update to the latest version of the Commerce components. The code merge was a time-consuming upgrade process, you had to maintain the full Retail SDK in the repo, and you had to compile the core POS.App project. Using the independent-packaging model, you have to maintain only your extension. Updating to the latest Retail SDK is as simple as updating the NuGet package version your project is consuming.
 
 ### Simplified consumption of custom headless Commerce APIs
 
-Another one of the pain points with the legacy Retail SDK was the generation of the TypeScript proxy needed to consume headless Commerce APIs in Point of Sale. With the independent-packaging model, we have simplified this process to automatically generate the TypeScript code for the data service requests and entities. The TypeScript proxy for POS will be automatically generated when building your POS extension project, removing the need to manually run the CommerceProxyGenerator and copy the files.
+Another one of the pain points with the earlier versions of the Retail SDK was the generation of the TypeScript proxy needed to consume headless Commerce APIs in Point of Sale. With the independent-packaging model, we have simplified this process to automatically generate the TypeScript code for the data service requests and entities. The TypeScript proxy for POS will be automatically generated when building your POS extension project, removing the need to manually run the CommerceProxyGenerator and copy the files.
 
 ### Automated packaging and configuration of Commerce Runtime and Hardware Station extensions for MPOS
 
