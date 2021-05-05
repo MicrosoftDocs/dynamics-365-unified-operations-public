@@ -2448,9 +2448,9 @@
               href: dev-itpro/pos-extension/pos-extension-getting-started.md
             - name: Create a POS extension package project
               href: dev-itpro/pos-extension/create-pos-extension-package.md
-            - name: Create a Modern POS extension appx file
+            - name: Create an .appx file for a Modern POS extension package
               href: dev-itpro/pos-extension/create-pos-extension-appx.md
-            - name: Debug a POS extension
+            - name: Debug POS extensions
               href: dev-itpro/pos-extension/debug-pos-extension.md
             - name: Extension packaging and deployment
               items:
@@ -2464,15 +2464,15 @@
                   href: dev-itpro/pos-extension/migrate-pos-extension.md
                 - name: POS extension development guide
                   items:
-                    - name: POS extensibility basics
+                    - name: POS extension basics
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: Create a custom view in POS
                       href: dev-itpro/pos-extension/custom-pos-view.md
-                    - name: POS controls in extensions
+                    - name: Use POS controls in extensions
                       href: dev-itpro/pos-extension/controls-pos-extension.md
                     - name: Tasks
                       items:
-                        - name: Use knockout.js in POS extensions
+                        - name: Use Knockout.js in POS extensions
                           href: dev-itpro/pos-extension/knockout-pos-extension.md
                         - name: Consume custom headless Commerce APIs
                           href: dev-itpro/pos-extension/consume-apis-pos.md

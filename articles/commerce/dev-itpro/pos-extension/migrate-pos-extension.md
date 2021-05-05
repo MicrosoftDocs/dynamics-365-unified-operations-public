@@ -90,7 +90,7 @@ To migrate existing POS extensions from the **Pos.Extensions** project in the Re
 
 5. Required only if using **Knockout.js**: Update all references to **Knockout.js** to use a copy of the library included in your extension package instead of relying on the global instance used in POS. For more information, see [Use knockout.js in POS extensions](knockout-pos-extension.md).
 
-6. Convert all references to **ExtensionViewControllerBase** to **CustomViewControllerBase**. For more information, see the section [Changes when creating a custom view](#custom-view)
+6. Convert all references to **ExtensionViewControllerBase** to **CustomViewControllerBase**. For more information, see the section [Changes when creating a custom view](#custom-view).
 
 7. Build your POS extension project and verify that it builds successfully.
 

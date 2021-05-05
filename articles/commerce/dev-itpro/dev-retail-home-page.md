@@ -90,20 +90,20 @@ This page lists the resources that are available for IT pros and developers who 
 - [POS extension overview](pos-extension/pos-extension-overview.md)
 - [Getting started with POS extensions](pos-extension/pos-extension-getting-started.md)
 - [Create a POS extension package project](pos-extension/create-pos-extension-package.md)
-- [Create a Modern POS extension appx file](pos-extension/create-pos-extension-appx.md)
-- [Debug a POS extension](pos-extension/debug-pos-extension.md)
+- [Create an .appx file for a Modern POS extension package](pos-extension/create-pos-extension-appx.md)
+- [Debug POS extensions](pos-extension/debug-pos-extension.md)
 - Extension packaging and deployment
     - [Create a Modern POS extension package](pos-extension/mpos-extension-packaging.md)
     - [Code signing a Modern POS (MSIX) extension package](pos-extension/mpos-extension-signing.md)
     - [Create a Cloud POS extension package](pos-extension/cpos-extension-package.md)
     - [Migrate a POS extension to the independent-packaging model](pos-extension/migrate-pos-extension.md)
 - POS extension development guide
-    - [POS extensibility basics](pos-extension/pos-extension-basics.md)
+    - [POS extension basics](pos-extension/pos-extension-basics.md)
     - [Create a custom view in POS](pos-extension/custom-pos-view.md)
-    - [POS controls in extensions](pos-extension/controls-pos-extension.md)
+    - [Use POS controls in extensions](pos-extension/controls-pos-extension.md)
     - Tasks
-        - [Use knockout.js in POS extensions](pos-extension/knockout-pos-extension.md)
-        - [Consume custom headless Commerce APIs](pos-extension/consume-apis-pos.md)
+        - [Use Knockout.js in POS extensions](pos-extension/knockout-pos-extension.md)
+        - [Consume custom headless Commerce engine APIs and entities in POS](pos-extension/consume-apis-pos.md)
 
 ## Integrating Commerce
 

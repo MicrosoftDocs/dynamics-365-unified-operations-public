@@ -24,15 +24,15 @@ POS lets extension developers create customizations by using the POS API library
 
 These terms are used in this topic.
 
-Term | Definition | Example
+Term | Definition | Examples
 ---|---|---
-Extension Point | A specific location at which POS can extended, or a technique through which new functionality can be added to POS. | The PreOperationTrigger invocation point, adding a new view
-Extension | An individual component that helps to customize POS by utilizing a specific extension point. | A new operation, new view, a PreOperationTrigger implementation
-Extension Package | A set of extensions that when combined enable a custom end to end POS scenario. | A package that contains an operation that navigates to a new view.
+Extension point | A specific location at which POS can be extended, or a technique through which new functionality can be added to POS. | **PreOperationTrigger** invocation point.<br>Adding a new view.
+Extension | An individual component that helps to customize POS by utilizing a specific extension point. | New operation<br>New view<br>**PreOperationTrigger** implementation
+Extension package | A set of extensions that when combined enable a custom end-to-end POS scenario. | A package that contains an operation that navigates to a new view.
 
 ## Types of Extensions
 
-POS extensions can be classified into two different types of extensions.
+POS extensions can be classified into two types.
 
 + *Extend* extensions modify POS functionality by modifying existing pages or workflows.
 + *Create* extensions supplement POS and create new functionality by introducing new pages or workflows that do not exist out of the box.
@@ -76,7 +76,7 @@ These fields are contained in the manifest file.
 
 Here is an example of a manifest file.
 
-```XML
+```json
 {
     "$schema": "./devDependencies/schemas/manifestSchema.json",
     "name": "Contoso.Pos.Developer.Samples",

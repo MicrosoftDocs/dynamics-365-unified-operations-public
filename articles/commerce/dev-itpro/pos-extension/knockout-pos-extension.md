@@ -34,7 +34,7 @@ This topic shows some basic tasks using **Knockout.js** in POS extensions. It ap
     </Target>
     ```
 
-3. Add the knockout library as a dependency in your package’s **manifest.json** file. Update the manifest.json to add a new entry in the “dependencies” array for Knockout library.
+3. Add the knockout library as a dependency in your package’s **manifest.json** file. Update the manifest.json to add a new entry in the **dependencies** array for the Knockout library.
 
     > [!NOTE]
     > The **modulePath** must match the **KnockoutjsFile** variable in the target shown above.
