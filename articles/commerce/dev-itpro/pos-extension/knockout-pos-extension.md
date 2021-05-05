@@ -57,7 +57,7 @@ This topic shows some basic tasks using **Knockout.js** in POS extensions. It ap
     4. Copy the **knockout.d.ts** file to any folder in the extension project.
     5. Update your **tsconfig.json** file to include a **paths** alias for **Knockout.js**.
 
-        [!NOTE]
+        > [!NOTE]
         > Replace **Libraries/knockout** in the following code example with the relative path to where you copied the **knockout.d.ts** file in the previous step.
 
         ```JSON

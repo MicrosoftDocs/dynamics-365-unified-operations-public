@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 This topic explains how to use POS controls in extensions. It applies to the Retail SDK version 10.0.18 and later.
 
-The **PosApi** library provides a consistent look and feel in the extension UI with the rest of POS by providing access to use common POS controls. These controls are available as interfaces in the **PosApi/Consume/Controls** module. Instances of these controls can be created using the **ControlFactory** provided in the extension context. The UI extension classes include views, dialogs, and custom controls.
+The **PosApi** library provides a consistent look and feel between the extension UI and the rest of POS by providing access to common POS controls. These controls are available as interfaces in the **PosApi/Consume/Controls** module. Instances of these controls can be created using the **ControlFactory** provided in the extension context. The UI extension classes include views, dialogs, and custom controls.
 
 The following code example shows how to use the **ControlFactory** to create a **DataList** control in the **onReady** function of a custom view controller.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../../includes/banner.md)]
 
-This topic describes the basic POS extension concepts. It to the Retail SDK version 10.0.18 and later.
+This topic describes the basic POS extension concepts. It applies to the Retail SDK version 10.0.18 and later.
 
 POS lets extension developers create customizations by using the POS API library.  The POS APIs let you customize both business logic and UI layers of POS.
 
@@ -89,7 +89,7 @@ Here is an example of a manifest file.
 
 ### Extension structure
 
-Each POS extension is contains of one or more TypeScript modules. Extension classes must inherit from the applicable base class exposed from the POS API. The components and types in the POS API can be imported into the extension module using a non-relative import of a POS API module, as shown in the following code example.
+Each POS extension contains one or more TypeScript modules. Extension classes must inherit from the applicable base class exposed from the POS API. The components and types in the POS API can be imported into the extension module using a non-relative import of a POS API module, as shown in the following code example.
 
 ```JavaScript
 import { ApplicationStartTrigger } from “PosApi/Extend/Triggers/ApplicationTriggers”;

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../../includes/banner.md)]
 
-This topic explains how to consume custom headless Commerce engine APIs and entities in POS using Proxy. It topic applies to the Retail SDK version 10.0.18 and later.
+This topic explains how to consume custom headless Commerce engine APIs and entities in POS using Proxy. It applies to the Retail SDK version 10.0.18 and later.
 
 1. Make sure that your Commerce Runtime extension project references the **Microsoft.Dynamics.Commerce.Sdk.Runtime** NuGet package and that your POS extension project references the **Microsoft.Dynamics.Commerce.Sdk.Pos** NuGet package.
 

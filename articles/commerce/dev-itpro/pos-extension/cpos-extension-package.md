@@ -1,6 +1,6 @@
 ---
 title: Create a Cloud POS extension package 
-description: This topic explains how to create Cloud POS extension package.
+description: This topic explains how to create a Cloud POS extension package.
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../../includes/banner.md)]
 
-This topic explains how to create Cloud POS extension package. Based on the Cloud POS deployment topology, the Cloud POS can be deployed to Cloud Scale unit (CSU) or Cloud Scale unit (CSU) – Self hosted.
+This topic explains how to create a Cloud POS extension package. Based on the Cloud POS deployment topology, the Cloud POS can be deployed to Cloud Scale unit (CSU) or Cloud Scale unit (CSU) – Self hosted.
 
 ## Packaging for Cloud Scale unit (CSU) CPOS
 

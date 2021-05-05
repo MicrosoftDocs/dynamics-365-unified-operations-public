@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../../includes/banner.md)]
 
-This topic explains how to create custom view in POS. It applies to the Retail SDK version 10.0.18 and later.
+This topic explains how to create a custom view in POS. It applies to the Retail SDK version 10.0.18 and later.
 
 Creating a custom view in POS is a great way to add new functionality to POS. Creating a new view is best in scenarios where you want to support more scenarios in POS. A custom dialog is better suited to extending existing POS workflows.
 

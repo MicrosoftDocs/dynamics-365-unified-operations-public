@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 This topic applies to the Retail SDK version 10.0.18 and later.
 
-The independent-packaging model in the Retail SDK provides an updated and improved developer experience for Dynamics 365 Commerce extension development. The independent-packaging model in the Retail SDK creates greater separation between the Retail SDK and the extension being developed. The SDK is composed of a set of NuGet packages that contain artifacts to enable Commerce development. Due to the scope of changes in the independent-packaging model, there are a few changes that required. Converting customizations to use the independent-packaging model requires a code migration that is slightly more work than a standard version update. This topic explains the benefits and changes of the independent-packaging model. It also provides a high-level set of steps to convert existing Point of Sale (POS) extensions to the independent-packaging model.
+The independent-packaging model in the Retail SDK provides an updated and improved developer experience for Dynamics 365 Commerce extension development. The independent-packaging model in the Retail SDK creates greater separation between the Retail SDK and the extension being developed. The SDK is composed of a set of NuGet packages that contain artifacts to enable Commerce development. Due to the scope of changes in the independent-packaging model, there are a few required changes. Converting customizations to use the independent-packaging model requires a code migration that is slightly more work than a standard version update. This topic explains the benefits and changes of the independent-packaging model. It also provides a high-level set of steps to convert existing Point of Sale (POS) extensions to the independent-packaging model.
 
 ## Benefits of the independent-packaging model in the Retail SDK
 
@@ -40,7 +40,7 @@ When using the independent-packaging model, generating a deployable package only
 
 ### Modern POS framework and system requirement changes
 
-To enable Modern POS to support the independent packaging model, the POS framework is enhanced to utilize the Microsoft Windows optional package extension model. Modern POS and optional packages are only supported in the Windows Versions listed.
+To enable Modern POS to support the independent-packaging model, the POS framework is enhanced to utilize the Microsoft Windows optional package extension model. Modern POS and optional packages are only supported in the Windows Versions listed.
 
 + Windows 10 version 1809 or later
 + Windows Server 2019 or later
@@ -64,7 +64,7 @@ To provide a more maintainable and intuitive way to create extension views, we h
 
 ### Extension loading changes
 
-To use extension packages that are independently distributed and serviced changed how packages are discovered for loading. POS no longer relies on a single **extensions.json** file to list all the extension packages to be loaded. That approach was incompatible with independent-packaging model. In the independent-packaging model, POS calls the headless Commerce Engine to get the list of extension packages that should be loaded. For more information, see [Configuring extension packages](pos-extension-basics.md#configuring-extension-packages)
+Using extension packages that are independently distributed and serviced changed how packages are discovered for loading. POS no longer relies on a single **extensions.json** file to list all the extension packages to be loaded. That approach was incompatible with the independent-packaging model. In the independent-packaging model, POS calls the headless Commerce Engine to get the list of extension packages that should be loaded. For more information, see [Configuring extension packages](pos-extension-basics.md#configuring-extension-packages)
 
 ## Code migration steps
 
