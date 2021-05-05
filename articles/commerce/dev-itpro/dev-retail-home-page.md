@@ -96,7 +96,7 @@ This page lists the resources that are available for IT pros and developers who 
     - [Create a Modern POS extension package](pos-extension/mpos-extension-packaging.md)
     - [Code signing a Modern POS (MSIX) extension package](pos-extension/mpos-extension-signing.md)
     - [Create a Cloud POS extension package](pos-extension/cpos-extension-package.md)
-    - [Migrate a POS extension to the independent-packaging model](pos-extension/migrate-pos-extension.md)
+- [Migrate a POS extension to the independent-packaging model](pos-extension/migrate-pos-extension.md)
 - POS extension development guide
     - [POS extension basics](pos-extension/pos-extension-basics.md)
     - [Create a custom view in POS](pos-extension/custom-pos-view.md)

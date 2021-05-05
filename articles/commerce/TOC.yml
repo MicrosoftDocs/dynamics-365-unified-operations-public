@@ -2460,22 +2460,22 @@
                   href: dev-itpro/pos-extension/mpos-extension-signing.md
                 - name: Create a Cloud POS extension package
                   href: dev-itpro/pos-extension/cpos-extension-package.md
-                - name: Migrate a POS extension to the independent-packaging model
-                  href: dev-itpro/pos-extension/migrate-pos-extension.md
-                - name: POS extension development guide
+            - name: Migrate a POS extension to the independent-packaging model
+              href: dev-itpro/pos-extension/migrate-pos-extension.md
+            - name: POS extension development guide
+              items:
+                - name: POS extension basics
+                  href: dev-itpro/pos-extension/pos-extension-basics.md
+                - name: Create a custom view in POS
+                  href: dev-itpro/pos-extension/custom-pos-view.md
+                - name: Use POS controls in extensions
+                  href: dev-itpro/pos-extension/controls-pos-extension.md
+                - name: Tasks
                   items:
-                    - name: POS extension basics
-                      href: dev-itpro/pos-extension/pos-extension-basics.md
-                    - name: Create a custom view in POS
-                      href: dev-itpro/pos-extension/custom-pos-view.md
-                    - name: Use POS controls in extensions
-                      href: dev-itpro/pos-extension/controls-pos-extension.md
-                    - name: Tasks
-                      items:
-                        - name: Use Knockout.js in POS extensions
-                          href: dev-itpro/pos-extension/knockout-pos-extension.md
-                        - name: Consume custom headless Commerce APIs
-                          href: dev-itpro/pos-extension/consume-apis-pos.md
+                    - name: Use Knockout.js in POS extensions
+                      href: dev-itpro/pos-extension/knockout-pos-extension.md
+                    - name: Consume custom headless Commerce APIs
+                      href: dev-itpro/pos-extension/consume-apis-pos.md
       - name: Hardware Station extensibility
         items:
         - name: Hardware Station and extensibility
