@@ -75,7 +75,7 @@ This topic explains how to create a Point of Sale (POS) extension package projec
         >
         > [https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json](https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json)
 
-    5. Add the package source location to the **nuget.config** file of your extension project file. (Create a **nuget.config** file for your project if it doesn't already exist.)
+    4. Add the package source location to the **nuget.config** file of your extension project file. (Create a **nuget.config** file for your project if it doesn't already exist.)
 
         ```xml
         <packageSources>

@@ -63,7 +63,7 @@ Depending on your store topology, select the POS app type. In general, an extens
 + The .NET Framework/SDK
 
     + [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1)
-    + [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net472-developer-pack-offline-installer) 
+    + [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net472-developer-pack-offline-installer)
 
 + SQL Server Express 2016 local channel database (required only for offline deployments)
 + SQL Server Data Tools

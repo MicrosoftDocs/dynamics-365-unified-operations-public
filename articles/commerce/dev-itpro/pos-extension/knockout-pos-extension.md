@@ -50,7 +50,7 @@ This topic shows some basic tasks using **Knockout.js** in POS extensions. It ap
     ```
 
 4. Update your Pos.Extensions project file to include the Knockout.js type declarations.
-    
+
     1. Navigate to the knockout official releases.
     2. Download the source code (zip) of the version that was included as a dependency in the manifest.json.
     3. Extract the content of the zip file. The types are located at **<KNOCKOUT_LIBRARY_FOLDER>\build\types\knockout.d.ts**.
