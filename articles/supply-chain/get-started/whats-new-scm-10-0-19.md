@@ -44,7 +44,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 The following table lists the feature enhancements included in this release. Each of these provides an incremental improvement to an existing feature. Because they are only enhancements, they are not listed on the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted). If you want to use any of these features, you must explicitly enable them in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Feature area | Feature | More information |
+| Feature area | Feature name in feature management | More information |
 |---|---|---|
 | Planning | Infinite capacity scheduling for Planning Optimization | This feature enables capacity scheduling with infinite capacity for Planning Optimization. Without this feature, planned production orders get their lead time from the released products inventory lead time, regardless of the scheduling time fence. |
 | Sales and marketing | Sales history cleanup performance improvements | Sales history cleanup can take a long time if run infrequently on environments with a high volume sales updates. To reduce duration and improve reliability, this feature decomposes clean-up into batches that run for a limited duration. Where possible, database capabilities will be leveraged to minimize locking and avoid joining transactional tables during cleanup. |
