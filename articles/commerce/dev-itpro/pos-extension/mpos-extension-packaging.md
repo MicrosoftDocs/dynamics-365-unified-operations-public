@@ -47,7 +47,7 @@ To create the extension installer for a Modern POS extension, follow these steps
     2. Select the **Projects** tab on the left side of the Reference Manager.
     3. Select the **ModernPos.Installer** project created above.
 
-6. For \[Offline channel database extension script projects only\]: add a reference from the Modern Pos project to the Channel database project.
+6. For \[Offline channel database extension script projects only\]: add a reference from the Modern POS project to the Channel database project.
 
     1. Right-click the Modern POS project in Solution Explorer and select **Add -&gt; Reference**.
     2. Select the **Projects** tab on the left side of the Reference Manager.

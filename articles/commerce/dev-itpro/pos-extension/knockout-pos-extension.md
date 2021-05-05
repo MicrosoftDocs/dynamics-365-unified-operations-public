@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 This topic shows some basic tasks using **Knockout.js** in POS extensions. It applies to Retail SDK version 10.0.18 and later.
 
-1. Add a Nuget package reference for the **Knockout.js** library to your Pos.Extensions project.
+1. Add a NuGet package reference for the **Knockout.js** library to your Pos.Extensions project.
 2. Add an MSBuild target to copy the knockout library to your project directory during the build and include it in your package. The Xml is shown in the following example.
 
     ```XML

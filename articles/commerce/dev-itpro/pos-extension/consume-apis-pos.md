@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 This topic explains how to consume custom headless Commerce engine APIs and entities in POS using Proxy. It topic applies to the Retail SDK version 10.0.18 and later.
 
-1. Make sure that your Commerce Runtime extension project references the **Microsoft.Dynamics.Commerce.Sdk.Runtime** Nuget package and that your POS extension project references the **Microsoft.Dynamics.Commerce.Sdk.Pos** Nuget package.
+1. Make sure that your Commerce Runtime extension project references the **Microsoft.Dynamics.Commerce.Sdk.Runtime** NuGet package and that your POS extension project references the **Microsoft.Dynamics.Commerce.Sdk.Pos** NuGet package.
 
 2. Add a project reference from your POS extension project to the Commerce Runtime project that defines your APIs.
 
@@ -27,7 +27,7 @@ This topic explains how to consume custom headless Commerce engine APIs and enti
     + **DataServiceEntities.g.ts**: Contains the TypeScript entities for all the referenced Commerce Runtime extension projects.
     + **DataServiceRequests.g.ts**: Contains the TypeScript data service requests for all the referenced Commerce Runtime extension projects.
 
-4. Import your data service entities and requests inot your extension code as shown in the following code example.
+4. Import your data service entities and requests into your extension code as shown in the following code example.
 
     ```Javascript
     import * as Triggers from "PosApi/Extend/Triggers/ProductTriggers";

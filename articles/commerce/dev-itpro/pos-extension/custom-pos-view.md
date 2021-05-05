@@ -18,14 +18,14 @@ ms.dyn365.ops.version: AX 10.0.18
 
 This topic explains how to create custom view in POS. It applies to the Retail SDK version 10.0.18 and later.
 
-Creating a custom view in POS is a great way to add new functionality to POS. Creating a new view is best in scenarios where you want to support additional scenarios in POS. A custom dialog is better suited to extending existing POS workflows.
+Creating a custom view in POS is a great way to add new functionality to POS. Creating a new view is best in scenarios where you want to support more scenarios in POS. A custom dialog is better suited to extending existing POS workflows.
 
 All new views in POS extend from the **CustomViewControllerBase** class in the **PosApi/Create/Views** module, and they must implement the following abstract methods.
 
 + **onReady** - The POS framework calls the view’s **onReady** method when the page has been added to the DOM. This method is responsible for rendering the view inside of the provided HTML element.
 + **dispose** - The POS framework calls the view’s **dispose** method when the view is removed from the DOM and the POS navigation history. This method should release any resources created by the view.
 
-In addition to the required methods above a custom view controller can also implement the page life cycle methods below.
+In addition to the required methods above, a custom view controller can also implement the page lifecycle methods below.
 
 + **onShown** - This method is called every time the view is displayed.
 + **onHidden** - This method is called every time the view is hidden.
@@ -115,7 +115,7 @@ export default class ExampleView extends Views.CustomViewControllerBase {
 
 ## Using the AppBar
 
-The **config** object contains a **commandBar** which is used to add commands the POS AppBar when the custom view is visible. The command bar configuration contains a collection of command definitions that are displayed when the view is visible. These command definitions are displayed in order with the first command being the furthest right on the page.
+The **config** object contains a **commandBar** that is used to add commands the POS AppBar when the custom view is visible. The command bar configuration contains a collection of command definitions that are displayed when the view is visible. These command definitions are displayed in order with the first command being the furthest right on the page.
 
 Each command definition must implement the **ICommandDefinition** interface that is exported from the **PosApi/Create/Views** module. Below is a list of the fields and methods on the command definition.
 

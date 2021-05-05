@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../../includes/banner.md)]
 
-This topic explains how to how to code sign a Modern POS (MSIX) extension package. This topic applies to the Retail SDK version 10.0.18 and later.
+This topic explains how to code sign a Modern POS (MSIX) extension package. This topic applies to the Retail SDK version 10.0.18 and later.
 
 All MPOS extension .appx files must be signed by a code signing certificate. We recommend that you use a certificate from a trusted authority for production. For information on signing a Universal Windows Platform (UWP) app, see [Create a certificate for package signing](https://docs.microsoft.com/windows/uwp/packaging/create-certificate-package-signing).
 

@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 This topic describes the basic POS extension concepts. It to the Retail SDK version 10.0.18 and later.
 
-POS lets extension developers create a variety of customizations by using the POS API library.  The POS API let you customize both business logic and UI layers of POS.
+POS lets extension developers create customizations by using the POS API library.  The POS APIs let you customize both business logic and UI layers of POS.
 
 ## Terminology
 
@@ -32,12 +32,12 @@ Extension Package | A set of extensions that when combined enable a custom end t
 
 ## Types of Extensions
 
-At a high level POS extensions can be classified into two different types of extensions.
+POS extensions can be classified into two different types of extensions.
 
 + *Extend* extensions modify POS functionality by modifying existing pages or workflows.
 + *Create* extensions supplement POS and create new functionality by introducing new pages or workflows that do not exist out of the box.
 
-The distinction between *extend* and *create* extensions is incorporated throughout the POS extensibility framework. When you are developing an extension it can be helpful to think: “Am I extending an existing POS component or creating entirely new functionality?”
+The distinction between *extend* and *create* extensions is incorporated throughout the POS extensibility framework. When you are developing an extension, it can be helpful to think: “Am I extending an existing POS component or creating entirely new functionality?”
 
 ## POS API
 
@@ -56,11 +56,11 @@ The POS API library contains a set of modules that are organized based on how th
 + **Consume**
     + Modules that allow extensions to execute POS functionality.
 
-The complete list of APIs and the type declarations for the modules in the POS API library can be found in **Pos.Api.d.ts**, which is distributed with the **Microsoft.Dynamics.Commerce.Sdk.Pos** Nuget package.
+The complete list of APIs and the type declarations for the modules in the POS API library can be found in **Pos.Api.d.ts**, which is distributed with the **Microsoft.Dynamics.Commerce.Sdk.Pos** NuGet package.
 
 ## Manifest.json
 
-Each extension package must have a **manifest.json** file in the extension package's root directory. This manifest file contains important information about the extension package and defines the list of extensions contained in the package. The manifest file must follow the manifest schema that is provided in the **Microsoft.Dynamics.Commerce.Sdk.Pos** Nuget package for POS to load the extensions.
+Each extension package must have a **manifest.json** file in the extension package's root directory. This manifest file contains important information about the extension package and defines the list of extensions contained in the package. The manifest file must follow the manifest schema that is provided in the **Microsoft.Dynamics.Commerce.Sdk.Pos** NuGet package for POS to load the extensions.
 
 ### Fields
 
@@ -69,9 +69,9 @@ These fields are contained in the manifest file.
 + **name** - The name of the extension package.
 + **description** - A description of the extension package's functionality.
 + **publisher** - The name of the extension package's publisher or organization.
-+ **version** - The extension package version. This must follow semantic versioning pattern.
++ **version** - The extension package version. The version must follow semantic versioning pattern.
 + **minimumPosVersion** - The minimum POS version that is required to run the extension package. The version number depends on the POS NuGet package that you're consuming and the POS app that is installed. For example, the extension project should not use POS APIs or extension artifacts from a version that is later than the version of the POS app that is installed. At runtime, the POS app checks the version of the extension package. If it's later than the version of the installed POS app, the extension package won't be loaded.
-+ **supportedCountryRegions** - The optional list of country region codes in which to load the extension package. If this is not specified, then the extension package will be loaded regardless of the current POS country region.
++ **supportedCountryRegions** - The optional list of country region codes in which to load the extension package. If this value is not specified, then the extension package will be loaded regardless of the current POS country region.
 + **components** - The list of extensions contained in the extension package.
 
 Here is an example of a manifest file.
@@ -89,7 +89,7 @@ Here is an example of a manifest file.
 
 ### Extension structure
 
-Each POS extension is comprised of one or more TypeScript modules. Extension classes must inherit from the applicable base class exposed from the POS API. The components and types in the POS API can be imported into the extension module using a non-relative import of a POS API module, as shown in the following code example.
+Each POS extension is contains of one or more TypeScript modules. Extension classes must inherit from the applicable base class exposed from the POS API. The components and types in the POS API can be imported into the extension module using a non-relative import of a POS API module, as shown in the following code example.
 
 ```JavaScript
 import { ApplicationStartTrigger } from “PosApi/Extend/Triggers/ApplicationTriggers”;

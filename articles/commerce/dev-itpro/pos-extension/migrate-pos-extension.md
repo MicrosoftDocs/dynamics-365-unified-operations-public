@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 This topic applies to the Retail SDK version 10.0.18 and later.
 
-The independent-packaging model in the Retail SDK provides a significantly updated and improved developer experience for Dynamics 365 Commerce extension development. The independent-packaging model in the Retail SDK creates greater separation between the Retail SDK and the extension being developed. The SDK is composed of a set of NuGet packages that contain artifacts to enable Commerce development. Due to the scope of changes in the independent-packaging model, there are a few changes that required. Converting customizations to use the independent-packaging model requires a code migration that is slightly more work than a standard version update. This topic explains the benefits and changes of the independent-packaging model. It also provides a high-level set of steps to convert existing Point of Sale (POS) extensions to the independent-packaging model.
+The independent-packaging model in the Retail SDK provides an updated and improved developer experience for Dynamics 365 Commerce extension development. The independent-packaging model in the Retail SDK creates greater separation between the Retail SDK and the extension being developed. The SDK is composed of a set of NuGet packages that contain artifacts to enable Commerce development. Due to the scope of changes in the independent-packaging model, there are a few changes that required. Converting customizations to use the independent-packaging model requires a code migration that is slightly more work than a standard version update. This topic explains the benefits and changes of the independent-packaging model. It also provides a high-level set of steps to convert existing Point of Sale (POS) extensions to the independent-packaging model.
 
 ## Benefits of the independent-packaging model in the Retail SDK
 
@@ -36,7 +36,7 @@ Another improvement in the independent-packaging model is that much of the confi
 
 ### Improved build times
 
-When using the the independent-packaging model, generating a deployable package only requires building your Commerce extension solution. This design greatly reduces the build time during extension development and packaging.
+When using the independent-packaging model, generating a deployable package only requires building your Commerce extension solution. This design greatly reduces the build time during extension development and packaging.
 
 ### Modern POS framework and system requirement changes
 
@@ -49,7 +49,7 @@ To enable Modern POS to support the independent packaging model, the POS framewo
 
 ### Removal of Pos.UI.Sdk library
 
-With the migration to the independent-packaging model we have removed the **Pos.UI.Sdk** library which was dependent on **Knockout.js**. In it's place is a library-agnostic design to use POS controls within extensions. This lets you choose which UI library you want to use when developing extensions, while maintaining a consistent look and feel throughout the application. For more information, see [POS controls in extensions](controls-pos-extension.md).
+With the migration to the independent-packaging model, we have removed the **Pos.UI.Sdk** library, which was dependent on **Knockout.js**. In its place is a library-agnostic design to use POS controls within extensions. This model lets you choose which UI library you want to use when developing extensions, while maintaining a consistent look and feel throughout the application. For more information, see [POS controls in extensions](controls-pos-extension.md).
 
 ### Knockout.js changes
 

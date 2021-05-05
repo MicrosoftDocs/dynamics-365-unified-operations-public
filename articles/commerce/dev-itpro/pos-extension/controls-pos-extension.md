@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 This topic explains how to use POS controls in extensions. It applies to the Retail SDK version 10.0.18 and later.
 
-The **PosApi** library provides a consistent look and feel in the extension UI with the rest of POS by providing access to use commonly-used POS controls. These controls are available as interfaces in the **PosApi/Consume/Controls** module. Instances of these controls can be created using the **ControlFactory** provided in the extension context. The UI extension classes include views, dialogs, and custom controls.
+The **PosApi** library provides a consistent look and feel in the extension UI with the rest of POS by providing access to use common POS controls. These controls are available as interfaces in the **PosApi/Consume/Controls** module. Instances of these controls can be created using the **ControlFactory** provided in the extension context. The UI extension classes include views, dialogs, and custom controls.
 
 The following code example shows how to use the **ControlFactory** to create a **DataList** control in the **onReady** function of a custom view controller.
 
@@ -77,7 +77,7 @@ The following controls are supported.
 | Data list | IDataList, IPaginatedDataList | The data list is a responsive list control used throughout POS to display rows of information. |
 | Date picker  | IDatePicker | The date picker control used in POS. |
 | Menu         | IMenu | The menu control used in POS to display contextual information. |
-| Number Pad   | IAlphanumericNumPad, ICurrencyNumPad, INumericNumPad, ITransactionNumPad | Number pads are used throughout POS with a variety of different behaviors and input formatting.<ul><li>Alphanumeric numpad: Accepts alphanumeric input.</li><li>Currency numpad: Accepts monetary values.</li><li>Numeric numpad: Accetps only numeric values.</li><li>Transaction numpad: Accepts an item identifier or quantity. Typically used in a transaction scenario.</li></ul> |
+| Number Pad   | IAlphanumericNumPad, ICurrencyNumPad, INumericNumPad, ITransactionNumPad | Number pads are used throughout POS with various behaviors and input formatting.<ul><li>Alphanumeric numpad: Accepts alphanumeric input.</li><li>Currency numpad: Accepts monetary values.</li><li>Numeric numpad: Accepts only numeric values.</li><li>Transaction numpad: Accepts an item identifier or quantity. Typically used in a transaction scenario.</li></ul> |
 | Time Picker | ITimePicker | The time picker control used in POS. |
 | Toggle | IToggle | The toggle switch control used in POS. |
 

@@ -40,7 +40,7 @@ This topic applies to version 10.0.18 and later of the Retail SDK.
 
 ## Supported apps
 
-The different POS apps have the same code base. However, the extensions are packaged, deployed, and rendered differently, depending on the platform and the app type. Customizations that you develop will work across app types without requiring that the code be duplicated or rewritten for different apps. Although some extension components might be app-specific, most of the extension code can work across apps.
+The different POS apps have the same code base. However, the extensions are packaged, deployed, and rendered differently, depending on the platform and the app type. Customizations that you develop will work across app types without requiring that the code is duplicated or rewritten for different apps. Although some extension components might be app-specific, most of the extension code can work across apps.
 
 The following table shows that apps that you can create POS extensions for.
 
