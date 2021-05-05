@@ -35,7 +35,7 @@ For information about code signing Universal Windows App packages, see these lin
 + [Configure the Build solution build task](https://docs.microsoft.com/windows/uwp/packaging/auto-build-package-uwp-apps#configure-the-build-solution-build-task)
 + [Create a certificate for package signing](https://docs.microsoft.com/windows/msix/package/create-certificate-package-signing)
 
-The sample in the [GitHub](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-InStore?path=%2Fsrc%2FPosSample%2FModernPos%2FModernPos.jsproj) generates a self-signed test certificate during build for development purposes only. This certificate is only available to unblock development scenarios.
+The sample in GitHub generates a self-signed test certificate during build for development purposes only. This certificate is only available to unblock development scenarios.
 
 > [!WARNING]
 > Do not use this development certificate for production app extension packages.
