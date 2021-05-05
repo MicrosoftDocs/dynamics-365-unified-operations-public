@@ -428,6 +428,8 @@
           href: accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md
         - name: Settle a partial customer payment that has multiple discount periods
           href: accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
+        - name: Customer prepayments
+          href: accounts-receivable/customer-prepayments.md
         - name: Reimburse customers
           href: accounts-receivable/reimburse-customers.md
         - name: Customer payments for a partial amount
