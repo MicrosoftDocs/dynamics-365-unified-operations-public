@@ -16,7 +16,8 @@
     </ModuleReferences>
     <Name>AwesomeISV</Name>
     <Publisher>Awesome ISV, Inc.</Publisher>
-    <SolutionId>2471f192-409d-467b-9d8b-90b2e370a3aa</SolutionId>
+    <!-- Replace product-ID-GUID with your product ID GUID -->
+    <SolutionId>product-ID-GUID</SolutionId>
     <VersionBuild>3</VersionBuild>
     <VersionMajor>1</VersionMajor>
     <VersionMinor>2</VersionMinor>
