@@ -16,7 +16,7 @@
     </ModuleReferences>
     <Name>AwesomeISV</Name>
     <Publisher>Awesome ISV, Inc.</Publisher>
-    <!-- Replace product-ID-GUID with your product ID GUID -->
+    <!-- Replace product-ID-GUID with the product ID from Partner Center. -->
     <SolutionId>product-ID-GUID</SolutionId>
     <VersionBuild>3</VersionBuild>
     <VersionMajor>1</VersionMajor>
