@@ -77,7 +77,7 @@ Fiscal registration is the immediate registration of retail sales per local fisc
 - Registration of a retail sale, in a SAT fiscal device that is connected to the POS, by using a CF-e electronic fiscal document.
 - Registration of a retail sale in a fiscal printer that is connected to the POS.
 
-Commerce supports fiscal registration via the [Fiscal integration framework](../localizations/fiscal-integration-for-retail-channel.md) and its extensions for specific countries or regions. Formats of electronic fiscal documents that meet the legal requirements in Brazil are configured by using the [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) functionality.
+Commerce supports fiscal registration via the [Fiscal integration framework](../localizations/fiscal-integration-for-retail-channel.md) and its extensions for specific countries or regions. The [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) functionality is used to configure formats of electronic fiscal documents that meet the legal requirements in Brazil.
 
 > [!NOTE]
 > Integration with fiscal printers isn't available in Commerce. You can take advantage of the [N-1 capabilities](../dev-itpro/n-1-installation-configuration.md) to integrate Microsoft Dynamics AX 2012 R3 Retail Enterprise Point of Sale (EPOS), which supports the integration with fiscal printers for Brazil in Commerce headquarters.
@@ -114,8 +114,8 @@ Commerce supports fiscal registration via the [Fiscal integration framework](../
 
 Commerce functionality for Brazil consists of the following parts:
 
-- Common point-of-sale (POS) features that are available to customers in all countries or regions. 
-- Brazil-specific features, such as communication with SEFAZ.
+- Common POS features that are available to customers in all countries or regions.
+- Brazil-specific features, such as communication with SEFAZ
 
 ### Common POS features
 
@@ -123,13 +123,12 @@ To learn about POS features that are available to customers in all countries or 
 
 ### Brazil-specific POS features
 
-The following Brazil-specific POS features are enabled once setup and deployment of Commerce localization for Brazil have been completed:
+The following Brazil-specific POS features are enabled after the Commerce localization for Brazil has been set up and deployed:
 
-- Electronic Fiscal Document for Consumers in Brazil (NFC-e).
-- Customer information management for Brazil.
-- Cancellation and return of NFC-e.
-- Postponed registration of NFC-e issued in contingency mode.
-- Posting and control of electronic fiscal documents.
-
+- Electronic Fiscal Document for Consumers in Brazil (NFC-e)
+- Customer information management for Brazil
+- Cancellation and return of NFC-e
+- Postponed registration of NFC-e issued in contingency mode
+- Posting and control of electronic fiscal documents
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
