@@ -49,9 +49,9 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| ## Life Event Options in EmployeeBenefit form should allow edits to the specific EmployeeBenefit record to enable override. - (570534) | | |
-| ## Add info bar when Life events are created. - (570545) | | |
 
+| ## Add info bar when Life events are created. | | When a life event is created, the information bar displays a message indicating the type of life event that was created.
+|
 ### Bug fixes
 
 The following bug fixes are included in this release.
@@ -61,9 +61,9 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| ## Localizability: Create a new label for "Jobs" in Personnel Management - (574380) In personnel management -> Organizations -> Jobs | | |
-| ## Level is not shown when creating a fixed compensation plan for an employee - (559312) | | |
-| ## Cannot add Period to BenefitPlan - (573676) - On the BenefitPlan form (Benefits Management > Links > Benefit plans) | | |
+
+| 559312 |Level is not shown when creating a fixed compensation plan for an employee |When there is a timezone mismatch between the user's time zone and the company time zone, the compensation level on the job was not able to be read. The query has been updated to fetch based on UTC time. |
+| 573676|In the benefits plan form, a new period cannot be added. | Updated the form, so that the 'new' button is enabled under the Period fast tab in Benefit Plans |
 
 ## In preview
 
