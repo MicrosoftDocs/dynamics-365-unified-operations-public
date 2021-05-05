@@ -49,7 +49,6 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| ## Improve leave accrual engine comprehension - (569260) | | |
 | ## Life Event Options in EmployeeBenefit form should allow edits to the specific EmployeeBenefit record to enable override. - (570534) | | |
 | ## Add info bar when Life events are created. - (570545) | | |
 
@@ -75,6 +74,7 @@ The following new features are in preview. For more information about turning fe
 | Benefits management workspace | [Benefits management workspace (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
 | Leave and absence workflow experience enhancements | [Leave and absence workflow experience enhancements](https://go.microsoft.com/fwlink/?linkid=2147528) | [Request time off](hr-employee-self-service-request-time-off.md)|
 | Enable simplified payroll integration (Payroll integration APIs) | [Enable simplified integration with payroll providers](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Payroll integration API](hr-admin-integration-payroll-api-introduction.md)|
+| Leave accrual transaction auditing |  | [Leave accrual transaction auditing](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-leave-and-absence-accrue#preview-leave-accrual-transaction-auditing)|
 
 ## Coming soon
 
