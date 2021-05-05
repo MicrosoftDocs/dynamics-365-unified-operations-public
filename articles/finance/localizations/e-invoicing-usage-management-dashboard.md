@@ -59,7 +59,7 @@ Counting is consolidated by the tenant ID of your organization, regardless of th
 
 This KPI provides details about the electronic invoices your organization issues per month.
 
-### Counting criteria
+###  Usage per month: Counting criteria
 
 - The number of submitted business documents, from Finance and Supply Chain Management to the Electronic Invoicing service, independent of number of lines they contain.
 - The number of submitted business documents that are successfully processed by the Electronic Invoicing service. Successfully processed means the completed flow of actions that are defined in the feature setup.
@@ -67,15 +67,15 @@ This KPI provides details about the electronic invoices your organization issues
 > [!NOTE]
 > When an electronic invoice is submitted to an external web service, counting is independent of the web service processing (accepted, rejected, or schema validation error) results. If the web services received and responded to the Electronic Invoicing service request, the submission is considered a valid counting.
 
-### Counting exception criteria
+###  Usage per month: Counting exception criteria
 
 Business documents that are resubmitted from Finance and Supply Chain Management to the Electronic Invoicing service and that require changes in the state or status of the electronic invoice life cycle are not counted. For example, issuing a Brazilian electronic invoice (fiscal document) is counted as valid, but its cancellation request isn't counted.
 
-### Direction
+###  Usage per month: Direction
 
 Export or issuing of electronic invoices.
 
-## Calculation
+## KPI results calculation
 
 The calculation of the KPI results from the components:
 
@@ -111,15 +111,15 @@ Balance volume is the result of the balance of business document submissions to 
 
 This KPI breaks down the usage of the electronic invoicing features deployed by your organization to the Electronic Invoicing service. This KPI shows the used electronic invoicing features for submissions during a defined period.
 
-### Counting criteria
+### Usage by feature: Counting criteria
 
 The same as for KPI Usage per month (export).
 
-### Direction
+### Usage by feature: Direction
 
 The same as for KPI Usage per month (export).
 
-## Calculation
+### Usage by feature: calculation
 
 The Used volume counts the submissions of business documents to the Electronic Invoicing service grouped by the processing of the electronic invoicing feature.
 
@@ -127,15 +127,15 @@ The Used volume counts the submissions of business documents to the Electronic I
 
 This KPI breaks down the usage of the electronic invoicing environments deployed by your organization to the Electronic Invoicing service. This KPI shows which electronic invoicing environment is used during a defined period.
 
-### Counting criteria
+### Usage by environment: Counting criteria
 
 The same as for KPI Usage per month (export).
 
-### Direction
+### Usage by environment: Direction
 
 The same as for KPI Usage per month (export).
 
-## Calculation
+### Usage by environment: Calculation
 
 Used volume is the counting of business document submissions to the Electronic Invoicing service grouped by processing from electronic invoicing environments.
 
@@ -143,15 +143,15 @@ Used volume is the counting of business document submissions to the Electronic I
 
 This KPI provides details about the electronic invoices your organization receives per month.
 
-### Counting criteria
+### Usage per month: Counting criteria
 
 The number of electronic invoices that are imported to Finance and Supply Chain Management, independent of the number of lines they contain.
 
-### Direction
+### Usage per month: Direction
 
 Import or receipt of electronic invoices.
 
-## Calculation
+### Usage per month: Calculation
 
 Received volume is the sum of electronic invoices that are imported to Finance and Supply Chain Management per the defined criteria.
 
