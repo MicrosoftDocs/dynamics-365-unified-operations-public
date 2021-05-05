@@ -40,6 +40,26 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 | Planning | Query-based planned order firming | [Firm planned orders](../master-planning/planning-optimization/planned-order-firming.md) |
 | Product information management | [Variant suggestions page improvements](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Create predefined product variants](../pim/tasks/create-predefined-product-variants.md) |
 
+## Feature enhancements included in this release
+
+The following table lists the feature enhancements included in this release. Each of these provides an incremental improvement to an existing feature. Because they are only enhancements, they are not listed on the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted). If you want to use any of these features, you must explicitly enable them in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+| Feature area | Feature | More information |
+|---|---|---|
+| Planning | Infinite capacity scheduling for Planning Optimization | This feature enables capacity scheduling with infinite capacity for Planning Optimization. Without this feature, planned production orders get their lead time from the released products inventory lead time, regardless of the scheduling time fence. |
+| Sales and marketing | Sales history cleanup performance improvements | Sales history cleanup can take a long time if run infrequently on environments with a high volume sales updates. To reduce duration and improve reliability, this feature decomposes clean-up into batches that run for a limited duration. Where possible, database capabilities will be leveraged to minimize locking and avoid joining transactional tables during cleanup. |
+| Sales and marketing | Contact person data entity export optimization | When this feature is enabled, changes to referenced data will not cause related contacts to be included in the next incremental export. When this feature is disabled, changes to referenced data will cause related contacts to be included in the next incremental export. |
+| Sales and marketing | Update Requested receipt date with Confirmed date for intercompany orders | This feature lets you control what will happen to sales and purchase date field values when using intercompany direct delivery. You can choose whether the system will update requested dates or skip updating them. If you skip the update, the requested dates will represent what the customer has requested. If you enable updating, the requested dates (when using delivery date control) only initially represent what the customer requested. Delivery date control, when different from *None*, will overrule what has initially been requested. You can set this option using the new **Update Requested receipt date with Confirmed date** setting on the intercompany vendor or customer settings.<br><br>If the feature is disabled, the system will overwrite the requested receipt date on original sales orders based on the delivery date control rule, but the requested shipping date will remain as it is. |
+| Sales and marketing | Enable lookup for sales quotation document introduction and document conclusion fields | This feature adds lookup functionality for the **Document introduction** and **Document conclusion** fields on the **Sales quotation** page.<br><br>This feature is enabled by default. |
+| Warehouse management | Round quantities down to nearest sales unit on release to warehouse | This feature adds an option that can restrict order quantities on release to warehouse. When enabled, order quantities will be rounded down to the nearest whole sales unit, and orders that include quantities for less than one sales unit will be rejected for release. |
+| Warehouse management | Organization-wide "Schedule work creation" wave method | On enabling this feature, the *Schedule work creation* wave method will be configured to run in parallel across all legal entities. Several additional settings will also be affected. For complete details, see [Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md). |
+
+
+
+
+
+
+
 ## New and updated documentation resources
 
 We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
