@@ -1,46 +1,75 @@
+---
+# required metadata
+
+title: Usage management dashboard
+description: This topic explains how to use the usage management dashboard to monitor the usage of Electronic Invoicing and remain compliant.
+author: gionoder
+ms.date: 05/05/2021
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.tgt_pltfrm: 
+ms.custom: 97423
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: janeaug
+ms.search.validFrom: 2020-07-08
+ms.dyn365.ops.version: AX 10.0.12
+
+---
+
 # Usage management dashboard
 
-The usage management dashboard helps you monitor the usage of Electronic Invoicing service and keep the compliance over the monthly usage of your organization, by calculating the submission volume and comparing towards the acquired volume of submissions, in order you can identify deviations between acquired volume and used volume.
+[!include [banner](../includes/banner.md)]
 
-The dashboard presents 1 cost KPI (Key Process Indicator), from where you can monitor the consumption for licensing compliance purposes:
+The usage management dashboard helps you monitor the usage of the Electronic Invoicing service and helps your organiazation remain compliant in monthly usage. Compliance is determined by calculating the submission volume and comparing it with the acquired volume of submissions, to identify deviations between the acquired volume and used volume.
 
--   KPI: Usage per month (exporting direction)
+The dashboard includes:
 
-And more 3 operational KPI from where you can track the usage of Electronic Invoicing service, for management purposes:
+   - One cost Key Process Indicator (KPI), from which you can monitor the consumption for licensing compliance purposes:
 
--   KPI: Usage by feature
+        - KPI: Usage per month (exporting direction)
 
--   KPI: Usage by environment
+   - Three operational KPIs from which you can track the usage of the Electronic Invoicing service, for management purposes:
 
--   KPI: Usage per month (importing direction)
+        - KPI: Usage by feature
+        - KPI: Usage by environment
+        - KPI: Usage per month (importing direction)
 
 ## Measurement scope
 
 ### Unit of measure
 
-The Usage management dashboard counts business documents or electronic invoices.
+The Usage management dashboard counts business documents and electronic invoices.
 
 ### Organization
 
-The counting is consolidated by tenant ID of your organization, no matter how many instances of Finance or Supply Chain Management, or Legal entities are enabled to the Electronic Invoicing service.
+Counting is consolidated by the tenant ID of your organization, regardless of the number of instances of Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or the number of Legal entities that have the Electronic Invoicing service enabled.
 
-## KPI: Usage per month (exporting direction)
+## KPI: Usage per month (export)
 
-This KPI shows details of the usage issuing (exporting) electronic invoices per month by your organization.
+This KPI provides details about the electronic invoices your organization issues per month.
 
-### Counting Criteria
+### Counting criteria
 
--   Submissions of business documents, from Finance and Supply Chain Management to the Electronic Invoicing service, independent of number of lines they might contain.
+- The number of submitted business documents, from Finance and Supply Chain Management to the Electronic Invoicing service, independent of number of lines they contain.
+- The number of submitted business documents that are successfully processed by the Electronic Invoicing service. Successfully processed means the completed flow of actions that are defined in the feature setup.
 
--   Submissions of business documents successfully processed by the Electronic Invoicing service. Successfully processed means the complete execution of the flow of actions defined in the feature setup:
+> [!NOTE]
+> When an electronic invoice is submitted to an external web service, counting is independent of the web service processing (accepted, rejected, or schema validation error) results. If the web services received and responded to the Electronic Invoicing service request, the submission is considered a valid counting.
 
-    -   In the scenarios where the electronic invoice is submitted to an external web services, the counting is independent of the result of the web services processing (accepted, rejected or schema validation error). If the web services received and responded to the Electronic Invoicing service request, then it is considered as a valid counting.
+### Counting exception criteria
 
-### Counting exception criteria:
-
--   Resubmissions of business documents, from Finance and Supply Chain Management to the Electronic Invoicing service, required for accomplishing changes in the state/or status of electronic invoice life cycle are not counted:
-
-    -   For example: the issuing of a Brazilian electronic invoice (fiscal document) is counted as valid, but its cancelation request is not counted.
+Business documents that are resubmitted from Finance and Supply Chain Management to the Electronic Invoicing service and that require changes in the state or status of the electronic invoice life cycle are not counted. For example, issuing a Brazilian electronic invoice (fiscal document) is counted as valid, but its cancellation request isn't counted.
 
 ### Direction
 
@@ -48,85 +77,87 @@ Export or issuing of electronic invoices.
 
 ## Calculation
 
-The calculation of the KPI results from the following components:
+The calculation of the KPI results from the components:
+
+   - Free volume
+   - Purchased volume
+   - Used volume
+   - Balance volume
 
 ### Free volume
 
-The Free volume is a package of 100 submissions of business documents to the Electronic Invoicing service the customer gets monthly without need of payments.
+Free volume is a free monthly invoicing service that the customer recieves, which includes a package of 100 business documents that can be submitted to the Electronic Invoicing service. Free volume isn't cumulative and any remaining balance isn't rolled over into the next period.
 
-The Free volume is not cumulative and nor rolled over as balance for the next period.
+### Purchased volume
 
-### Purchased
+Purchased volume is a package of 1,000 business documents that can be submitted to the Electronic Invoicing service. This package must be acquired for your organization on a monthly basis. The Purchased volume isn't cumulative and any remaining balance isn't rolled over into the next period.
 
-The Purchased volume is a package of 1K submissions of business documents to the Electronic Invoicing service you must acquire for your organization per month.
+### Used volume
 
-The Purchased volume is not cumulative and nor rolled over as balance for the next period.
+Used volume is the counting of business document submissions to the Electronic Invoicing service according to specified criteria.
 
-### Used
+### Balance volume
 
-The Used volume is the counting of the submissions of business documents to the Electronic Invoicing service as per criteria defined above.
+Balance volume is the result of the balance of business document submissions to the Electronic Invoicing service. For a given month, the formula for calculation of the Balance volume is:
 
-### Balance
+   Balance volume = Free volume + Purchased volume - Used volume
 
-The Balance volume is the resulting balance of submissions of business documents to the Electronic Invoicing service.
-
-For a given month, the formula for calculation of the Balance volume is:
-
-Balance volume = Free volume + Purchased volume - Used volume
-
-## Important
-
--   If your organization is going to exceed the monthly volume of 100 free submissions, then you will need to purchase the peak volume to stay compliant with the Microsoft licensing policy for Electronic Invoicing service.
-
--   As it is now, the Purchased volume must be entered manually, per date of acquisition, as multiple of packages of 1000 submissions.
+> [!IMPORTANT]
+> If your organization plans to exceed the monthly volume of 100 free submissions, purchase the peak volume to stay compliant with the Microsoft licensing policy for the Electronic Invoicing service.
+>
+> Currently, the Purchased volume must be entered manually, per the date of acquisition, as multiple packages of 1000 submissions.
 
 ## KPI: Usage by feature 
 
-This KPI breaks down the usage of the electronic invoicing features deployed by your organization to the Electronic Invoicing service, showing the used electronic invoicing features for submissions during a defined range period (months).
+This KPI breaks down the usage of the electronic invoicing features deployed by your organization to the Electronic Invoicing service. This KPI shows the used electronic invoicing features for submissions during a defined period.
 
-### Counting Criteria
+### Counting criteria
 
-The same as for KPI Usage per month (exporting direction).
+The same as for KPI Usage per month (export).
 
 ### Direction
 
-The same as for KPI Usage per month (exporting direction).
+The same as for KPI Usage per month (export).
 
 ## Calculation
 
-The Used volume is the counting of the submissions of business documents to the Electronic Invoicing service grouped by processing of electronic invoicing feature.
+The Used volume counts the submissions of business documents to the Electronic Invoicing service grouped by the processing of the electronic invoicing feature.
 
 ## KPI: Usage by environment
 
-This KPI breaks down the usage of the electronic invoicing environments deployed by your organization to the Electronic Invoicing service, showing used electronic invoicing environment during a defined range period (months).
+This KPI breaks down the usage of the electronic invoicing environments deployed by your organization to the Electronic Invoicing service. This KPI shows which electronic invoicing environment is used during a defined period.
 
-### Counting Criteria
+### Counting criteria
 
-The same as for KPI Usage per month (exporting direction).
-
-### Direction
-
-The same as for KPI Usage per month (exporting direction).
-
-## Calculation
-
-The Used volume is the counting of the submissions of business documents to the Electronic Invoicing service grouped by processing from electronic invoicing environments.
-
-## KPI: Usage per month (importing direction)
-
-This KPI shows details of the receiving (importing) electronic invoices per month by your organization.
-
-### Counting Criteria
-
--   Imported electronic invoices to Finance and Supply Chain Management, independent of number of lines they might contain.
+The same as for KPI Usage per month (export).
 
 ### Direction
 
-Import or receiving of electronic invoices.
+The same as for KPI Usage per month (export).
 
 ## Calculation
 
-The Received volume is the sum of the imported electronic invoices to Finance and Supply Chain Management as per criteria defined above.
+Used volume is the counting of business document submissions to the Electronic Invoicing service grouped by processing from electronic invoicing environments.
+
+## KPI: Usage per month (import)
+
+This KPI provides details about the electronic invoices your organization receives per month.
+
+### Counting criteria
+
+The number of electronic invoices that are imported to Finance and Supply Chain Management, independent of the number of lines they contain.
+
+### Direction
+
+Import or receipt of electronic invoices.
+
+## Calculation
+
+Received volume is the sum of electronic invoices that are imported to Finance and Supply Chain Management per the defined criteria.
 
 
-Note: The Usage management dashboard does not show monetized amounts, only volume of counted submissions and/or imported documents.
+> [!NOTE]
+> The Usage management dashboard doesn't show monetized amounts. Instead, only the volume of counted submissions and imported documents are shown.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
