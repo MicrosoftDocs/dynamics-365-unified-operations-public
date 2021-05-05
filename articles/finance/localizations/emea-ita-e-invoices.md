@@ -202,7 +202,12 @@ Follow these steps to define Natura codes and manually associate them with sales
 ### Automatically assigned Natura codes
 
 The system automatically assigns the following Natura codes depending on operations nature:
-N1 
+| Code | Description                 | Required configuration                                                                                                     |
+|---------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| N1      | Art 15                | T|
+| N2.1    | In progress                | aa|
+| N2.2     | In progress               | ss|
+| N6.9      | In progress           | ddd|
 
 ### Reverse charge groups
 
