@@ -1,11 +1,10 @@
 ---
 # required metadata
 
-title: The default value of the field in tax information is not as expected
-description:
-author: xuezho,yungu
-manager: beya
-ms.date: 02/04/2021
+title: Default field value in tax information isn't as expected
+description: This topic provides troubleshooting information to resolve the issue when the default values for tax information are't expected.
+author: yungu
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,11 +26,9 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
 ---
 
+# Default field value in tax information isn't as expected
 
-
-# The default value of the field in tax information is not as expected
-
-[!include [banner](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/finance/includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 **Symptom**
 
@@ -371,5 +368,4 @@ Under each scenario, the fields that the tax information field default value der
       [![Direct taxes (tab)](./media/default-value-not-excepted-Picture35.png)](./media/default-value-not-excepted-Picture35.png)
 
     
-
-[!INCLUDE[footer-include](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
