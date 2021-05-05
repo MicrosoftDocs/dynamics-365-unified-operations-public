@@ -199,6 +199,11 @@ Follow these steps to define Natura codes and manually associate them with sales
 
 ![Setting the Nature code field on the Sales tax codes page](media/emea-ita-natura.jpg)
 
+### Automatically assigned Natura codes
+
+The system automatically assigns the following Natura codes depending on operations nature:
+N1 
+
 ### Reverse charge groups
 
 Reverse charge groups are required when a company uses the reverse charge functionality. They are used to automatically determine the Natura codes that are specific to reverse charge operations.
