@@ -62,6 +62,8 @@ For information about how to set up an Adyen payment terminal, see the "POS paym
 
 ### Epson or Star Micronics receipt printer and a cash drawer
 
+For Commerce to support network peripherals, you must implement communication protocols that are unique for each manufacturer. If a printing protocol isn't listed here, it isn't supported out of box and will require customization. 
+
 #### Epson prerequisite
 
 If your printer supports Epson ePOS-Print, see Epson's product manuals for information about how to access the Epson Printers Configuration Website and enable ePOS-Print. When ePOS-Print is configured, the printer will print a chit that shows its IP address after a power cycle.
