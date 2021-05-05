@@ -43,4 +43,8 @@ For all models that make up your solution, locate the descriptor XML files. In e
 </AxModelInfo>
 ```
 
+:::code language="xml" source="code/descriptor.xml" highlight="19,20":::
+
+
+
 After you recompile, the X++ binaries will contain the product ID and will link to ISV Studio after they are deployed to a Tier2+ sandbox or production environment.
