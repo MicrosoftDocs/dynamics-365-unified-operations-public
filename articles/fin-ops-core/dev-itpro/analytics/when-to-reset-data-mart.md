@@ -52,10 +52,10 @@ There are some circumstances when we don't recommend resetting a data mart. Thes
 
 ## Data Mart Reset FAQ
 If I reset the data mart, will I lose reports that I've already designed? 
- - No, your reports are stored in SQL tables that are not impacted by a reset of the data mart. If you are concerned you could back up your reports by going to Company | Companies | Building Blocks | Export
+ - No, your reports are stored in SQL tables that are not impacted by a reset of the data mart. If you are concerned about losing any reports you've designed, you can back up the designs that you don't want to lose. To back them up, open Report Designer and going to **Company > Companies > Building Blocks > Export**.
  
 Is it necessary for all users to exit the system to reset the data mart?
- - No, users can continue working in the system during the data mart reset. However, they won’t be able to access any reports that were created by Financial Reporter until the reset is finished. 
+ - No, users can continue working in the system during the data mart reset. However, they won’t be able to access any reports that were created with Financial Reporter until the reset is finished. 
 
 
 
