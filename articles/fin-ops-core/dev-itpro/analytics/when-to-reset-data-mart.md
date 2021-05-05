@@ -4,7 +4,7 @@
 title: When to reset a data mart
 description: This topic lists the circumstances that might be improved by resetting a data mart and circumstances in which resetting your data mart is unlikely to help.
 author: jinniew
-ms.date: 12/15/2020
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jiwo
-ms.search.validFrom: 2020-12-15
+ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
 
 ---
@@ -35,7 +35,7 @@ Resetting a data mart can be time consuming. Depending on the circumstances, thi
 Consider the following questions before resetting a data mart. Answering yes to one or more questions might indicate that your organization can benefit by resetting the data mart.
 
 - Was the application database was restored?
-- If you've opened a support incidenth has a support engineer instructed you to reset the data mart as part of a troubleshooting step?
+- If you've opened a support incident has a support engineer instructed you to reset the data mart as part of a troubleshooting step?
  
 ## When it's not appropriate to reset a data mart?
 There are some circumstances when we don't recommend resetting a data mart. These include the following. 
