@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AppliedUpdates xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <Customization>Allow</Customization>
+    <Description>test2</Description>
+    <DisplayName>AwesomeISV</DisplayName>
+    <Id>895972489</Id>
+    <InternalsVisibleTo xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <Layer>8</Layer>
+    <Locked>false</Locked>
+    <ModelModule>AwesomeISV</ModelModule>
+    <ModelReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+    <ModuleReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d2p1:string>ApplicationFoundation</d2p1:string>
+        <d2p1:string>ApplicationPlatform</d2p1:string>
+    </ModuleReferences>
+    <Name>AwesomeISV</Name>
+    <Publisher>Awesome ISV, Inc.</Publisher>
+    <SolutionId>2471f192-409d-467b-9d8b-90b2e370a3aa</SolutionId>
+    <VersionBuild>3</VersionBuild>
+    <VersionMajor>1</VersionMajor>
+    <VersionMinor>2</VersionMinor>
+    <VersionRevision>4</VersionRevision>
+</AxModelInfo>
