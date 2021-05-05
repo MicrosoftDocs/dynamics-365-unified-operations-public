@@ -62,8 +62,7 @@ For information about how to set up an Adyen payment terminal, see the "POS paym
 
 ### Epson or Star Micronics receipt printer and a cash drawer
 
-    > [!NOTE]
-    > Support for network peripherals requires implementation of communication protocols unique for each manufacturer. If a printing protocol is not listed here, it is not supported out of box and will require customization to support. 
+For Commerce to support network peripherals, you must implement communication protocols that are unique for each manufacturer. If a printing protocol isn't listed here, it isn't supported out of box and will require customization. 
 
 #### Epson prerequisite
 
