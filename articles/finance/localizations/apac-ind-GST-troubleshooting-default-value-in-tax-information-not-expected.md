@@ -30,94 +30,76 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-**Symptom**
-
-- The default value of a field in tax information is not as expected.      
-
-  The field in the list below:
+If the default value of a tax information field isn't as expected for one of the following fields, complete the sections in this topic to troubleshoot and resolve the issue.     
 
   - Company location
   - HSN/SAC 
-  - Prices include sales tax
+  - Price inclusive
 
-  For other fields, the general debug point is also provided at the end of this trouble shooting guide. 
+> [!NOTE]
+> If there are other tax information fields whose value isn't as expected, the general debug point is also provided at the end of this topic which can be applied to the fields. 
 
-**Trouble shooting guide**
+Under each of the following scenarios, the fields that the tax information field default value derived from are listed. The paths to these derived from fields are listed in appendix.
 
-For each tax information field in the field list from Symptom part, the relevant scenarios are listed and the value is determined based on scenario.
+## Company location
 
-Please find the relevant tax information field, then find the relevant scenario. 
+The default company location is determined based on different scenarios. For some scenarios, only one location is listed and it's used as default company location. In others, there is a sequential list with all the possible locations to be used as a default company location. Check the locations by following the list sequence until a location exists in your system. This location is used as the default company location.
 
-Under each scenario, the fields that the tax information field default value derived from are listed and the paths to these derived from fields are listed in appendix.
+### Scenario: Project contract
 
-- **Tax information field: Company location**
+Set a breakpoint at the company primary address location and start debugging. 
 
-  The default company location in the tax information would be determined based on different scenarios. 
+  ![Breakpoint at transTaxInformation.CompayLocation](./media/default-value-not-excepted-Picture1.png)
 
-  - For some scenarios, only one location is listed under the scenario, then this location would be used as default company location.
+### Scenario: Project
 
-  - For other scenarios, there is a sequential list with all the possible locations to be used as default     company location. Check the locations by following the list sequence until     a location exists in your system. Then this location will be used as     default company location in the tax information.
+Set a breakpoint at the project contract company location and start debugging.
 
-  - **Scenario: Project contract**
+### Scenario: Project related transactions
 
-    - Company primary address location
+For transactions without inventory dimensions, includingHour journal, Expense journal, Fee journal, project on account, and subscription, set a breakpoint at the company location and start debugging.
 
-    Debug point
+ ![Breakpoint at projTableTransTaxInfo](./media/default-value-not-excepted-Picture2.png)
 
-    [![Direct taxes (tab)](./media/default-value-not-excepted-Picture1.png)](./media/default-value-not-excepted-Picture1.png)
+The following list includes transactions with inventory dimensions. These transaction types include, item journals and project sales orders.
 
-  - **Scenario: Project**
+  - Warehouse default location for delivery purpose
+  - Warehouse primary address location
+  - Site default location for delivery purpose
+  - Site primary address location
+  - Company default location for delivery purpose
+  - Company primary address location
 
-    - Project contract tax information company location
+Set a breakpoint at **locationFetchedBasedOnInventDim** for these transactions with inventory dimensions, and start debugging.
 
-  - **Scenario: Project related transactions**
+   ![Breakpoint at locationFetchedBasedOnInventDim](./media/default-value-not-excepted-Picture3.png)
 
-    - Transactions without inventory dimensions (Hour journal, Expense journal, Fee journal, project     on account, subscription)
+### Scenario: Transactions not related to project
 
-      1. Project tax information company location
+The following is a list of transactions that aren't related to a project and the corresponding company location fields.
+    
+   - Free text invoice/General journal: 
 
-      Debug point
+       - Company primary address location
+    
+   - Other transactions:
 
-      [![Direct taxes (tab)](./media/default-value-not-excepted-Picture2.png)](./media/default-value-not-excepted-Picture2.png)
-
-    - Transactions with inventory dimensions (Item journal, project sales order)
-
-      1. Warehouse default location for delivery purpose
-      2. Warehouse primary address location
-      3. Site default location for delivery purpose
-      4. Site primary address location
-      5. Company default location for delivery purpose
-      6. Company primary address location
-
-      Debug point
-
-      [![Direct taxes (tab)](./media/default-value-not-excepted-Picture3.png)](./media/default-value-not-excepted-Picture3.png)
-
-  - **Scenario: Transactions not related to project.**
-
-    - Free text invoice/General journal
-    1. Company primary address location
-    - Other transactions
-    1. Warehouse default location for delivery purpose
-      2. Warehouse primary address location
-    3. Site default location for delivery purpose
-      4. Site primary address location
-      5. Company default location for delivery purpose
-      6. Company primary address location
+       - Warehouse default location for delivery purpose
+       - Warehouse primary address location
+       - Site default location for delivery purpose
+       - Site primary address location
+       - Company default location for delivery purpose
+       - Company primary address location
   
-    Debug point
+Set a breakpoint at **transTaxInformation.CompanyLocation** and start debugging.
   
-  [![Direct taxes (tab)](./media/default-value-not-excepted-Picture4.png)](./media/default-value-not-excepted-Picture4.png)
+  [![Set breakpoint at locationFetchedBasedOnInventDim](./media/default-value-not-excepted-Picture4.png)](./media/default-value-not-excepted-Picture4.png)
   
-- **Tax information field: HSN/SAC/Exempt/NonGST**
+## HSN/SAC/Exempt/NonGST
 
-  The default HSN/SAC in the tax information would be determined based on different scenarios.
+The default HSN/SAC is determined differntly based on the scenario. In some scenarios, only one value is listed under the scenario. This value is used as the default HSN/SAC/Exempt/NonGST. In other scenarios, there is a sequential list with all possible default values that can be used as the default HSN/SAC/Exempt/NonGST. Check the values by following the list sequence until a value exists in your system. This value used as default HSN/SAC/Exempt/NonGST in the tax information.
 
-- For some scenarios, only one value is listed under the scenario, then this value would be used as     default HSN/SAC/Exempt/NonGST.
-
-- For other scenarios, there is a sequential list with all the possible values to be used as default     HSN/SAC/Exempt/NonGST. Check the values by following the list sequence until a value exists in your system. Then this value would be used as default HSN/SAC/Exempt/NonGST in the tax information.
-
-- **Scenario: Non-project transactions related to inventory item (release product)**
+### Scenario: Non-project transactions related to inventory item (release product)
 
 - - HSN/SAC/Exempt/NonGST = item HSN/SAC/Exempt/NonGST
 
@@ -125,7 +107,7 @@ Under each scenario, the fields that the tax information field default value der
 
 - [![Direct taxes (tab)](./media/default-value-not-excepted-Picture5.png)](./media/default-value-not-excepted-Picture5.png)
 
-- **Scenario: Non-project transactions related to procurement category**
+### Scenario: Non-project transactions related to procurement category
 
 - - HSN/SAC/Exempt/NonGST = procurement category HSN/SAC/Exempt/NonGST
 
@@ -133,7 +115,7 @@ Under each scenario, the fields that the tax information field default value der
 
 - [![Direct taxes (tab)](./media/default-value-not-excepted-Picture6.png)](./media/default-value-not-excepted-Picture6.png)
 
-- **Scenario: Project transactions**
+### Scenario: Project transactions
 
 - - **Field: HSN/Exempt/NonGST**
 
@@ -169,11 +151,11 @@ Under each scenario, the fields that the tax information field default value der
 
        [![Direct taxes (tab)](./media/default-value-not-excepted-Picture11.png)](./media/default-value-not-excepted-Picture11.png)
 
-- **Tax information field: Price inclusive**
+## Price inclusive
 
   The price inclusive would be set in the tax information for the transaction line if any one of the condition is met.
 
-  - **Scenario: Non-project related transactions**
+### Scenario: Non-project related transactions
 
     - **General ledger journal**
 
@@ -188,7 +170,7 @@ Under each scenario, the fields that the tax information field default value der
 
       [![Direct taxes (tab)](./media/default-value-not-excepted-Picture12.png)](./media/default-value-not-excepted-Picture12.png)
 
-  - **Scenario: Project related transactions**
+### Scenario: Project related transactions
 
     - **General ledger journal**
 
@@ -227,7 +209,7 @@ Under each scenario, the fields that the tax information field default value der
 
 
 
-**Appendix: How to find the fields related to default value in tax information**
+## Appendix: How to find the fields related to default value in tax information**
 
 - **Company location derived from fields**
 
