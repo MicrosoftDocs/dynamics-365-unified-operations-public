@@ -185,56 +185,57 @@ For more information about how to work with screen layouts and button grids, see
 
 ## Set up parameters for statements
 
-1. Go to **Organization administration > Number sequences**. Create and set up number sequences for retail statements per each store (Scope = Operating unit). Add references to Statement number and Voucher for Retail store area.
-1. Go to **Retail and Commerce > Catalog and assortments**. Create new assortment(s) with needed products, and add the previously-created stores under the **Commerce channels** tab, then press the publish button.
-1. Go to **Retail and Commerce > Channel setup > Channel categories and product attributes** menu. Publish channel updates.
-1. Go to **Sales and marketing > Setup > Returns > Disposition codes** menu. Add a disposition code.
-1. Go to **Retail and commerce > Products and categories > Released products by category** menu. Choose a product for gift card, and set on the **Blocked at register** checkbox.
-1. Go to **Commerce parameters** form, go to the **Customer orders** tab, and specify the **Disposition code** from the step above.
-1. Switch to the **Posting** tab on the same form and set up the parameters for gift card, including **Gift card company** and **Gift card product**.
+1. Go to **Organization administration \> Number sequences**. Create and set up number sequences for retail statements for each store (operating unit). Add references to statement number and voucher for retail store area.
+1. Go to **Retail and Commerce \> Catalog and assortments**. Create a new assortment(s) with needed products, add the previously-created stores under the **Commerce channels** tab, and then select **Publish**.
+1. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes** and publish channel updates.
+1. Go to **Sales and marketing \> Setup > Returns \> Disposition codes** and add a disposition code.
+1. Go to **Retail and commerce \> Products and categories \> Released products by category**. Select a product for gift card, and select the **Blocked at register** check box.
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**, select the **Customer orders** tab, and then specify the **Disposition code** from step 4 above.
+1. Select the **Posting** tab on the same form and set up the parameters for gift card, including **Gift card company** and **Gift card product**.
 
-## Configuring a production environment
+## Configure a production environment
 
-This section provides deployment guidance for enabling Commerce components of the localization of Dynamics 365 Commerce for Brazil.
+This section provides deployment guidance for enabling Commerce components of Dynamics 365 Commerce localization for Brazil.
 
 > [!NOTE]
 > Some steps in these procedures vary, depending on the product version you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
 
-### Using certificates for authentication in tax authority service and digital signing of fiscal documents
+### Use certificates for authentication in tax authority service and digital signing of fiscal documents
 
 A digital certificate for Application Object Server (AOS) must be stored in Azure Key Vault. 
 
-Digital certificates for Retail Server must be installed locally and / or it can be stored in Azure Key Vault. Both location types for Retail Server can be configured simultaneously and used according to their priorities. 
+Digital certificates for Retail Server must be installed locally or stored in Azure Key Vault. Both location types for Retail Server can be configured simultaneously and used according to their priorities. 
 
 For more information about how to work with Azure Key Vault storage, see [Get started with Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-get-started) and [Set up the Azure Key Vault client](../../finance/localizations/setting-up-azure-key-vault-client.md).
 
-Also you can use the [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature that supports failover to offline when Key Vault or Headquarters are not available. The feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
+Also you can use the [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature that supports failover to offline when Azure Key Vault or Commerce headquarters are not available. The feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
 
 > [!NOTE]
-> In order to sign NFC-es in offline contingency mode a certificate must be installed in offline certificate storage of POS (point of sale).
+> In order to sign NFC-es in offline contingency mode, a certificate must be installed in the offline certificate storage of the POS.
 
 #### Configure certificates to be used in Retail Server
 
-Brazilian **tax service extension** of **Retail server** uses a certificate for authentication in tax authority service, and for digital signing of fiscal documents. 
+The Brazilian tax service extension of Retail Server uses a certificate for tax authority service authentication, and for digital signing of fiscal documents. Retail Server certificates settings are controlled by certificate profiles.
 
-**Retail server** certificates settings are controlled by **Certificate profiles** in the following way:
-- Go to **System administration \> Setup \> Certificate profiles** menu. 
-- Create a certificate profile for the appropriate Legal entities. 
-- Click on the 'Settings' button per each legal entity.
+To configure certificates to be used in Retail Server, follow these steps.
 
-These certificates can be either installed in the local certificate storage of the machine where Retail Server is deployed, or stored in Azure Key Vault, or both location types for Retail Server can be configured simultaneously and used according to their priorities. The settings opened in the previous step must be specified as follows:
-- for the local certificate create a record having **Location type = Local certificate**, and fill in the **Thumbprint** value;
-- for Key Vault certificate create a record having **Location type = Key Vault**, and choose **Key Vault certificate**.
+1. Go to **System administration \> Setup \> Certificate profiles**. 
+1. Create a certificate profile for the appropriate legal entities. 
+1. Select **Settings** for each legal entity.
+    - For the local certificate, create a record where the **Location type** value is **Local certificate**, and enter the **Thumbprint** value.
+    - For the Azure Key Vault certificate, create a record where the **Location type** value is **Key Vault**, and select **Key Vault certificate**.
+
+Certificates can either be installed in the local certificate storage of the machine where Retail Server is deployed, stored in Azure Key Vault, or stored in both location types and configured simultaneously to be used according to their priorities.
 
 #### Configure a certificate in AOS
 
-**Application Object Server** uses a certificate that is stored in Azure Key Vault for authentication in tax authority service for submission through Commerce headquarters NFC-es that were issued on POS in offline contingency mode. Also it is needed for digital signing of Discard and Cancellation by substitution requests. Parameters of the certificate must be specified in the following **Fiscal establishment settings**:
+AOS uses a certificate that is stored in Azure Key Vault for tax authority service authentication for submission through Commerce headquarters NFC-es that were issued on POS in offline contingency mode. The certificate is also needed for digital signing of "discard" and "cancellation by substitution" requests. Parameters of the certificate must be specified in the following **Fiscal establishment settings**:
 
-1. Go to **Organization administration > Organizations > Fiscal establishments > Fiscal establishments**.
-1. Choose the appropriate digital **certificate** for authentication in tax authority service and digital signing of fiscal documents.
+1. Go to **Organization administration \> Organizations \> Fiscal establishments \> Fiscal establishments**.
+1. Select the appropriate digital certificat for tax authority service authentication and digital signing of fiscal documents.
 
 > [!NOTE]
-> Appropriate distribution jobs must be run once the setup is completed.
+> The appropriate distribution jobs must be run in headquarters once the setup is completed.
 
 ### CRT extension components
 
@@ -263,12 +264,14 @@ These certificates can be either installed in the local certificate storage of t
        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
        ```
 
-    > [!WARNING]
-    > **Do not edit** the **Commerceruntime.config** and **CommerceRuntime.MPOSOffline.config** files. These files aren't intended for any customizations.
+> [!WARNING]
+> Do not edit the **Commerceruntime.config** and **CommerceRuntime.MPOSOffline.config** files. These files aren't intended for any customizations.
 
-### Modern POS extension components
+### Enable Modern POS extension components
 
-1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and make sure that it can be compiled without errors. Additionally, make sure that you can run Modern POS from Microsoft Visual Studio by using the **Run** command.
+To enable Modern POS extension components, follow these steps.
+
+1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and ensure that it can be compiled without errors. Also make sure to confirm that you can run Modern POS from Microsoft Visual Studio by using the **Run** command.
 
     > [!NOTE]
     > Modern POS must not be customized. You must enable User Account Control (UAC), and you must uninstall previously installed instances of Modern POS as required.
@@ -289,14 +292,14 @@ These certificates can be either installed in the local certificate storage of t
     ```
 
     > [!NOTE]
-    > For more information and for samples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file in the **Pos.Extensions** project.
+    > For more information and for samples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file of the **Pos.Extensions** project.
 
 1. Rebuild the solution.
 1. Run Modern POS in the debugger, and test the functionality.
 
 ### Cloud POS extension components
 
-1. Enable the extensions to be loaded in **extensions.json** by adding the following lines in the appropriate location.
+To enable the cloud POS extension components to be loaded in **extensions.json**, add the following lines in the appropriate location of the JSON file.
 
     ``` json
     {
@@ -310,3 +313,5 @@ These certificates can be either installed in the local certificate storage of t
         ]
     }
     ``` 
+## Additional resources
+
