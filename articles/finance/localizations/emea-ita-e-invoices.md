@@ -226,14 +226,14 @@ The system automatically assigns the following Natura codes depending on operati
 | N4      | Exempt  | Sales tax code's **VAT type** field's value is equal to **Exempt** and this sales tax code is assosiated with Exempt code of **Exempt reason** different from  **Exempt Art.15** and **Edge regime**.|
 | N5      | Margin scheme / VAT not shown on the invoice  | Sales tax code's **VAT type** field's value is equal to **Exempt** and this sales tax code is assosiated wtith Exempt code that is marked as **Edge regime** in its **Exempt reason** field.|
 | N6.1    | Reverse charge - transfer of scrap and other recycled materials | Sales tax code is marked as **Reverse charge** and related reverse charge group is associated with **Scrap** value in Application specific parameters.|
-| N6.2    | Reverse charge - transfer of gold and pure silver | The same as the previos point but for **Gold** value in Application specific parameters.|
-| N6.3    | Reverse charge - subcontracting in the construction sector | The same as the previos point but for **Subcontracting** value in Application specific parameters.|
-| N6.4    | Reverse charge - sale of buildings | The same as the previos point but for **Buildings** value in Application specific parameters.|
-| N6.5    | Reverse charge - sale of cell phones | The same as the previos point but for **Cell phones** value in Application specific parameters.|
-| N6.6    | Reverse charge - sale of electronic products | The same as the previos point but for **Electronic products** value in Application specific parameters.|
-| N6.7    | Reverse charge - services for the construction sector and related sectors | The same as the previos point but for **Construction sector** value in Application specific parameters.|
-| N6.8    | Reverse charge - energy sector operations | The same as the previos point but for **Energy sector** value in Application specific parameters.|
-| N6.9    | Reverse charge - other cases | The same as the previos point but for **Other** value in Application specific parameters.|
+| N6.2    | Reverse charge - transfer of gold and pure silver | The same as the previous point but for **Gold** value in Application specific parameters.|
+| N6.3    | Reverse charge - subcontracting in the construction sector | The same as the previous point but for **Subcontracting** value in Application specific parameters.|
+| N6.4    | Reverse charge - sale of buildings | The same as the previous point but for **Buildings** value in Application specific parameters.|
+| N6.5    | Reverse charge - sale of cell phones | The same as the previous point but for **Cell phones** value in Application specific parameters.|
+| N6.6    | Reverse charge - sale of electronic products | The same as the previous point but for **Electronic products** value in Application specific parameters.|
+| N6.7    | Reverse charge - services for the construction sector and related sectors | The same as the previous point but for **Construction sector** value in Application specific parameters.|
+| N6.8    | Reverse charge - energy sector operations | The same as the previous point but for **Energy sector** value in Application specific parameters.|
+| N6.9    | Reverse charge - other cases | The same as the previous point but for **Other** value in Application specific parameters.|
 | N7      | VAT paid in another EU state | Sales tax code's **Country/region type** field's value is equal to **EU**|
 
 ### <a id="invoicetypes"></a>Invoice types
