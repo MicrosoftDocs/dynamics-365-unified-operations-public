@@ -30,16 +30,11 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-> [!IMPORTANT]
-> This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Dataverse. The release information for Dataverse is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
-
 Microsoft Power Platform provides a suite of capabilities for Dynamics 365 applications via the Power Platform Admin Center. Today, Finance and Operations apps are not managed by the Power Platform Admin Center, however, over time more and more management capabilities will be migrated from Lifecycle Services (LCS) over to the admin center. In the interim, customers will be able to unlock features, such as dual-write functionality, virtual entities, add-ins, and more via Power Platform integration functionality in LCS.
-
-This topic provides an overview of the various features unlocked by Power Platform integration as well as how to perform the setup steps.
 
 ## Prerequisite reading
 
-To understand the architecture of Power Platform, Microsoft Dataverse, and virtual entities for Finance and Operations apps, you must understand how they work. Therefore, the following documentation is a prerequisite:
+To understand the architecture of Power Platform, Microsoft Dataverse, dual-write, and virtual entities for Finance and Operations apps, you must understand how they work. Therefore, the following documentation is a prerequisite:
 
 - [Administer Power Platform](/power-platform/admin/admin-documentation)
 - [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
