@@ -216,11 +216,17 @@ For more information about this functionality, see the "Reverse charge configura
 The system automatically assigns the following Natura codes depending on operations nature:
 | Code | Description                 | Required configuration                                                                                                     |
 |---------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| N1      | Excluded pursuant to Art. 15    | Sales tax code's **VAT type** field is equal to **Exempt** and this sales tax code is assosiated wtith Exempt code that is marked as **Exempt Art.15** in its **Exempt reason** field.|
-| N2.2    | Not subject - other cases | aa|
-| N3.1    | Not subject - other cases               | ss|
-| N5      | Margin scheme / VAT not shown on the invoice  | Sales tax code's **VAT type** field is equal to **Exempt** and this sales tax code is assosiated wtith Exempt code that is marked as **Edge regime** in its **Exempt reason** field.|
-| N6.9      | In progress           | ddd|
+| N1      | Excluded pursuant to Art. 15    | Sales tax code's **VAT type** field's value is equal to **Exempt** and this sales tax code is assosiated with Exempt code that is marked as **Exempt Art.15** in its **Exempt reason** field.|
+| N2.2    | Not subject to VAT - other cases | Sales tax code's **VAT type** field is equal to **Not subject to VAT**|
+| N3.1    | Non-Taxable - exports | Sales tax code's **VAT type** field's value is equal to **Zero** and customer's address is outside the EU.|
+| N3.2    | Non-Taxable - intra-community transfers | Sales tax code's **VAT type** field's value is equal to **Zero** and customer's address is within the EU.|
+| N3.3    | Non-Taxable - sales to San Marino | Sales tax code's **VAT type** field's value is equal to **Zero** and customer's address is in San Marino.|
+| N3.5    | Non-Taxable - following declarations of intent | Sales tax code's **VAT type** field's value is equal to **Zero** and a valid intent letter is registered.|
+| N3.6    | Non-Taxable - other cases | Default value for all other cases when Sales tax code's **VAT type** field's value is not equal to **Standard**|
+| N4      | Exempt  | Sales tax code's **VAT type** field's value is equal to **Exempt** and this sales tax code is assosiated with Exempt code of **Exempt reason** different from  **Exempt Art.15** and **Edge regime**.|
+| N5      | Margin scheme / VAT not shown on the invoice  | Sales tax code's **VAT type** field's value is equal to **Exempt** and this sales tax code is assosiated wtith Exempt code that is marked as **Edge regime** in its **Exempt reason** field.|
+| N6.9    | In progress           | ddd|
+| N7      | VAT paid in another EU state | Sales tax code's **Country/region type** field's value is equal to **EU**|
 
 ### <a id="invoicetypes"></a>Invoice types
 
