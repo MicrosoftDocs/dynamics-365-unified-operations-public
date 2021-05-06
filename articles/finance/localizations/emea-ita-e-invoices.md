@@ -199,16 +199,6 @@ Follow these steps to define Natura codes and manually associate them with sales
 
 ![Setting the Nature code field on the Sales tax codes page](media/emea-ita-natura.jpg)
 
-### Automatically assigned Natura codes
-
-The system automatically assigns the following Natura codes depending on operations nature:
-| Code | Description                 | Required configuration                                                                                                     |
-|---------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| N1      | Art 15                | T|
-| N2.1    | In progress                | aa|
-| N2.2     | In progress               | ss|
-| N6.9      | In progress           | ddd|
-
 ### Reverse charge groups
 
 Reverse charge groups are required when a company uses the reverse charge functionality. They are used to automatically determine the Natura codes that are specific to reverse charge operations.
@@ -220,6 +210,17 @@ To define specific reverse charge groups for specific products or categories, go
 Additionally, you should set up application-specific parameters that use these reverse charge groups.
 
 For more information about this functionality, see the "Reverse charge configuration" section in [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+
+### Automatically assigned Natura codes
+
+The system automatically assigns the following Natura codes depending on operations nature:
+| Code | Description                 | Required configuration                                                                                                     |
+|---------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| N1      | Excluded pursuant to Art. 15    | Sales tax code's **VAT type** field is equal to **Exempt** and this sales tax code is assosiated wtith Exempt code that is marked as **Exempt Art.15** in its **Exempt reason** field.|
+| N2.2    | Not subject - other cases | aa|
+| N3.1    | Not subject - other cases               | ss|
+| N5      | Margin scheme / VAT not shown on the invoice  | Sales tax code's **VAT type** field is equal to **Exempt** and this sales tax code is assosiated wtith Exempt code that is marked as **Edge regime** in its **Exempt reason** field.|
+| N6.9      | In progress           | ddd|
 
 ### <a id="invoicetypes"></a>Invoice types
 
