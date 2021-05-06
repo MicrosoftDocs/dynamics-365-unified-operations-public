@@ -3303,6 +3303,8 @@
             href: warehousing/configure-app-field-names-priorities-warehouse.md
           - name: Set up mobile devices for warehouse work
             href: warehousing/configure-mobile-devices-warehouse.md
+          - name: Assign step icons and titles
+            href: warehousing/step-icons-titles.md
           - name: Warehouse app event processing
             href: warehousing/warehouse-app-events.md
           - name: License plate receiving via the Warehouse Management mobile app

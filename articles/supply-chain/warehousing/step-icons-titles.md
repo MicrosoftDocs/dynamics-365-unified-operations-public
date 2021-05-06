@@ -25,7 +25,7 @@ The following screenshot shows how step titles and icons appear in the Warehouse
 
 ## Turn on this feature in your system
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview?toc=/dynamics365/supply-chain/toc.json) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+Before you can use this feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module**: *Warehouse management*
 - **Feature name**: *User settings, icons, and step titles for the new warehouse app*
@@ -34,11 +34,11 @@ Before you can use this feature, it must be turned on in your system. Admins can
 
 Each step in a task flow is identified by a step ID, and each step ID has its corresponding step class. The step icon and title are specified in each step class.
 
-### Step IDs and step classes
+### <a name="step-ids-classes"></a>Step IDs and step classes
 
 The following table provides a list of all the currently available step IDs and their corresponding step classes. The control name of the primary input field is used as the step ID.
 
-For an example, see the implementation for the method `WHSMobileAppStepInfoBuilder.stepId()` provided in [Example of assigning step titles and icons for a custom flow](#example), later in this topic.
+For an example of how these are used, see the implementation for the method `WHSMobileAppStepInfoBuilder.stepId()` provided in [Example of assigning step titles and icons for a custom flow](#example), later in this topic.
 
 | Step ID                                        | Step Class                                    |
 |------------------------------------------------|-----------------------------------------------|
@@ -171,7 +171,7 @@ For an example, see the implementation for the method `WHSMobileAppStepInfoBuild
 
 ### <a name="step-icons"></a>Available step icons
 
-The system includes a collection of standard step icons that you can use for your custom steps. The system does not currently support uploading custom step icons, so you must always select one of the standard ones. The following table shows each standard step icon and its name.
+The system includes a collection of standard step icons that you can also reuse for your custom steps. The system does not currently support uploading custom step icons, so you must always select one of the standard ones. The following table shows each standard step icon and its name.
 
 |  |  |  |  |
 |-------------------------|-------------------------|-------------------------|-------------------------|
@@ -204,11 +204,11 @@ The system includes a collection of standard step icons that you can use for you
 
 ## <a name="example"></a>Example of assigning step titles and icons for a custom flow
 
-This example illustrates a custom flow, which is also used in the blog post [Customizing the Warehousing Mobile App](https://cloudblogs.microsoft.com/dynamics365/it/2017/07/06/customizing-the-warehousing-mobile-app/?source=dynamicsaxscm). This task flow works as follows:
+This example illustrates a custom task flow, which is also used in the blog post [Customizing the Warehousing Mobile App](https://cloudblogs.microsoft.com/dynamics365/it/2017/07/06/customizing-the-warehousing-mobile-app). This task flow works as follows:
 
-1. The app shows a screen asking the user to provide a container ID (for example, by scanning a barcode).
-1. If the container ID is valid, the app opens a new screen, asking for the weight. (If the container ID isn't valid, the user is returned to the first screen.)
-1. When the user enters a valid weight, the system stores the weight and returns to the initial screen.
+1. The app shows a screen asking the worker to provide a container ID (for example, by scanning a barcode).
+1. If the container ID is valid, the app opens a new screen, asking for the weight. (If the container ID isn't valid, the worker is returned to the first screen.)
+1. When the worker enters a valid weight, the system stores the weight and returns to the initial screen.
 
 The following illustration shows this task flow.
 
@@ -220,7 +220,7 @@ The container input screen enables the worker to scan or enter a container ID.
 
 ![Container input screen](media/step-icons-example-container-input.png "Container input screen")
 
-On the container input screen, the control name of the input field is `ContainerId`, which is not in the step ID list, so you won't find an existing step based on this control name. Therefore, you must create a step class to present the step. The following code provides an example:
+On the container input screen, the control name of the input field is `ContainerId`, which is not in the [step ID list](#step-ids-classes), so you won't find an existing step based on this control name. Therefore, you must create a step class to present the step. The following code provides an example:
 
 ```xpp
 [WHSMobileAppStepId('ContainerId')]
