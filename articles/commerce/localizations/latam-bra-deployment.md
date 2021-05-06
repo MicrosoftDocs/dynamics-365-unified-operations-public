@@ -5,7 +5,7 @@ title: Set up and deploy Dynamics 365 Commerce localization for Brazil
 description: This topic covers how to set up and deploy Microsoft Dynamics 365 Commerce localization for Brazil.
 author: v-ankvik
 manager: annbe
-ms.date: 05/05/2021
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -84,7 +84,7 @@ To set up fiscal establishment and NF-e (Nota Fiscal Eletrônica) federal parame
 
 1. Go to **Organization administration \> Organizations \> Fiscal establishments \> Fiscal establishment**.
 1. For **tax registration numbers - CNPJ, IE & CCM**, enter the tax registration number(s), and for **address of the establishment** enter an address.
-1. Set up the **SCS**.
+1. Set up CSC (Código de Segurança do Contribuinte) encryption by entering the CSC token and CSC alphanumeric code.
 1. Select the appropriate digital certificate for tax authority service authentication and digital signing of fiscal documents.
     > [!NOTE]
     > The certificate configured in **Fiscal establishment** is used for NFC-e (Nota Fiscal de Consumidor Eletrônica) documents that were issued on POS in offline contingency mode that are then submitted for authorization through Commerce headquarters. In order to sign fiscal documents in offline contingency mode, a certificate must be installed in the offline certificate storage of the POS.
@@ -187,7 +187,8 @@ For more information about how to work with screen layouts and button grids, see
 
 ## Set up parameters for statements
 
-1. Go to **Organization administration \> Number sequences**. Create and set up number sequences for retail statements for each store (operating unit). Add references to statement number and voucher for retail store area.
+1. Go to **Organization administration \> Number sequences**. Create and set up number sequences for retail statements for each store (operating unit).
+1. On the **References** FastTab, add two references for the **Retail store** area: one with the **Reference** value set to **Statement number**, and one with the **Reference** value set to **Voucher**.
 1. Go to **Retail and Commerce \> Catalog and assortments**. Create a new assortment with appropriate products, add the previously-created stores under the **Commerce channels** tab, and then select **Publish**.
 1. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes** and publish channel updates.
 1. Go to **Sales and marketing \> Setup > Returns \> Disposition codes** and add a disposition code.
@@ -231,7 +232,7 @@ Certificates can either be installed in the local certificate storage of the mac
 
 #### Configure a certificate in AOS
 
-AOS uses a certificate that is stored in Azure Key Vault for tax authority service authentication for submission through Commerce headquarters NFC-e documents that were issued on POS in offline contingency mode. The certificate is also needed for digital signing of "discard" and "cancellation by substitution" requests. Parameters of the certificate must be specified in the fiscal establishment settings.
+A certificate for tax authority service authentication is stored in Azure Key Vault. This certificate is used in AOS for submission through Commerce headquarters NFC-e documents that were issued on POS in offline contingency mode. The certificate is also needed for digital signing of "discard" and "cancellation by substitution" requests. Parameters of the certificate must be specified in the fiscal establishment settings.
 
 To configure a certificate in AOS, follow these steps.
 
