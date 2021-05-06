@@ -4,7 +4,7 @@
 title: Records and fields don't show in the GSTR report
 description: This topic provides troubleshooting information to help resolve the issue when records and fields don't show in the GSTR report.
 author: yungu
-ms.date: 04/27/2021
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -70,45 +70,48 @@ If there are fields that are missing in the report, check the field mapping in t
 
 ## Check if the record in TaxDocumentRowTransaction is missing
 
-Complete the following steps to check whether the record exists in the **TaxDocumentRowTransaction** table. If the record doesn't exist, the issue is related to posting issue and you should file a bug with Microsoft. Otherwise, continue to the next section.
+Complete the following steps to check whether the record exists in the **TaxDocumentRowTransaction** table. If the record doesn't exist, the issue is related to posting and you should file a bug with Microsoft. 
 
-In this procedure, the example used is for free text invoice line that are missing records in **TaxDocumentRowTransaction**.
+In this procedure, the example used is for free text invoice lines that are missing records in **TaxDocumentRowTransaction**.
 
-1. Go to the free text invoice you want to check, and right-click in the invoice lines.
+1. Open the free text invoice you want to check, and in the **Invoice lines** grid, right-click.
 
-     [![Direct taxes (tab)](./media/records-fileds-not-show-in-GSTR-report-Picture6.png)](./media/records-fileds-not-show-in-GSTR-report-Picture6.png)
+     [![Free text invoice page form information](./media/records-fileds-not-show-in-GSTR-report-Picture6.png)](./media/records-fileds-not-show-in-GSTR-report-Picture6.png)
 
-2. Select **Form Name: CustFreeInvoice** in brackets, find data source, here is "CustInvoiceLine"
+2. Select **Form Name: CustFreeInvoice**, and note the value in the **DataSource** field. In this example, it's **CustInvoiceLine**.
 
-     [![Direct taxes (tab)](./media/records-fileds-not-show-in-GSTR-report-Picture7.png)](./media/records-fileds-not-show-in-GSTR-report-Picture7.png)
+     [![Form information page, DataSource field](./media/records-fileds-not-show-in-GSTR-report-Picture7.png)](./media/records-fileds-not-show-in-GSTR-report-Picture7.png)
 
-  3. Get "InvoiceId" from the free text invoice.
+  3. On the **Free text invoice** page, note the invoice ID in the **Invoice** field.
 
-     [![Direct taxes (tab)](./media/records-fileds-not-show-in-GSTR-report-Picture8.png)](./media/records-fileds-not-show-in-GSTR-report-Picture8.png)
+     [![Free text invoice page, Invoice field](./media/records-fileds-not-show-in-GSTR-report-Picture8.png)](./media/records-fileds-not-show-in-GSTR-report-Picture8.png)
 
-  4. Execute SQL query to check TaxDocumentRowTransaction if misses records:
+  4. Execute the SQL query to check if **TaxDocumentRowTransaction** misses records.
 
+     ```sql
+     
      select * from TaxDocumentRowTransaction 
 
      inner join TableIdTable on TaxDocumentRowTransaction.TransactionLineTableId = TableIdTable.ID 
 
      and TableIdTable.Name = '**CustInvoiceLine**'
 
-     and TaxDocumentRowTransaction.InvoiceId = '**INMF-000004**';
+     and TaxDocumentRowTransaction.InvoiceId = '**INMF-000004**'
+     ```
 
-- **Step 6: Check/Debug code to analyze logic of missing record**
+## Debug code to analyze the logic of the missing record
 
-  1. Set breakpoint as the figure shows, check if TaxGSTRReportDPHelper_IN::queryTrans gets the missing record in tmpLineDetail. If it's thought a bug here, report the issue to Microsoft.
+  1. Set a breakpoint to check if **TaxGSTRReportDPHelper_IN::queryTrans** gets the missing record in **tmpLineDetail**. If it appears to be a bug, report the issue to Microsoft.
 
-     [![Direct taxes (tab)](./media/records-fileds-not-show-in-GSTR-report-Picture9.png)](./media/records-fileds-not-show-in-GSTR-report-Picture9.png)
+     [![tmpLineDetail record set lines](./media/records-fileds-not-show-in-GSTR-report-Picture9.png)](./media/records-fileds-not-show-in-GSTR-report-Picture9.png)
 
-  2. Set breakpoint as the figure shows, check if TaxGSTRReportDPHelper_IN::filterTrans filters the missing record. If it's thought a bug here, report the issue to Microsoft.
+  2. Set a breakpoint to check if **TaxGSTRReportDPHelper_IN::filterTrans** filters the missing record. If it appears to be a bug, report the issue to Microsoft.
 
-     [![Direct taxes (tab)](./media/records-fileds-not-show-in-GSTR-report-Picture10.png)](./media/records-fileds-not-show-in-GSTR-report-Picture10.png)
+     [![Breakpoint at filterTrans](./media/records-fileds-not-show-in-GSTR-report-Picture10.png)](./media/records-fileds-not-show-in-GSTR-report-Picture10.png)
 
-  3. Set breakpoint as the figure shows, check whether TransCategory field of missing record is correct or if the record is filtered again. If it's thought a bug here, report the issue to Microsoft.
+  3. Set a breakpoint to check if the **TransCategory** field of the missing record is correct or if the record is filtered again. If it appears to be a bug, report the issue to Microsoft.
 
-     [![Direct taxes (tab)](./media/records-fileds-not-show-in-GSTR-report-Picture11.png)](./media/records-fileds-not-show-in-GSTR-report-Picture11.png)
+     [![Breakpoint at tmpLineDetail.TransCategory](./media/records-fileds-not-show-in-GSTR-report-Picture11.png)](./media/records-fileds-not-show-in-GSTR-report-Picture11.png)
 
 
 ## Determine whether customization exists
