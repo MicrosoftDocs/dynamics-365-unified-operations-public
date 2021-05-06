@@ -67,6 +67,37 @@ The following should be performed after every update to the Dynamics 365 environ
 | <ul><li>Parameters</li><li>Commerce scheduler</li><li>Retry</li></ul> | Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce scheduler parameters**, and set **Try count** to **3**. If the value of this field is too high, download sessions might fail during high-usage times.  Additionally, verify (or set) **Full dataset generation interval in days** to **0**. This means full dataset generation will not occur unless required by something other than time. Setting these values allows CDX to function in a more expected manner while reducing possible error or performance issues. |
 | <ul><li>Functionality profile</li><li>Data retention</li><li>Return policy</li> | Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profile**, and then, in the **Functions** section, set **Days transactions exist** to a value that is the same as, or close to the value that is defined for the return policy. For example, if the return policy states an item can be returned within 30 days, set this field to **30**, **31**, or **60** if special exceptions are allowed beyond the usual policy (this would be twice the usual policy, allowing for faster returns even beyond the usual policy limits). |
 | <ul><li>Channel database group</li><li>Distribution schedule</li><li>Offline profile</li><li>Pause</li><li>Data</li><li>Download</li></ul> | We highly recommend that you have either a "dummy" channel database group (that is, a group that isn't associated with any distribution schedule job) that you assign to the newly generated terminals, or a special offline profile where the **Pause offline synchronization** option is set to **Yes**. In this way, data generation can occur when it's required and when the system is most available to do it. (However, the system might pause multiple times as required.) |
+  
+### Enable table and index compression
+It is valueable to enable table/index compression on their on-premises databases (Offline databases for Modern POS and the Channel databases for the CSU (Self-hosted)). This is supported only on SQL Server 2016 SP1 Express, SQL Server 2017 Express, SQL Server 2019 Express and beyond. If the customer is still running SQL Server Express 2014, an upgrade to a newer, supported version will be required.  Generate a report of the top tables using disk space. The user should enable compression for each table and index at the top of the report.  The basic commands are as follows:
+
+```Console
+ALTER TABLE [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX <index1_name> ON [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX <index2_name> ON [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+```
+
+As an example of a table that often benefits from compression, let's look at ax.INVENTDIM:
+
+```Console
+sp_helpindex 'ax.INVENTDIM'
+```
+
+The above query will show all the indexes for the selected table (The list of which is shown below in the next set of commands).  Based on that query, we can take the basic commands originally shown in this topic to compress the table and all related indices 
+
+```Console
+ALTER TABLE [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [I_-65082180_-588450352] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [I_-65082180_-997209838] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [IX_INVENTDIM_DATAAREAID_CONFIGID_INVENTSIZEID_INVENTCOLORID_INVENTSTYLEID_INVENTLOCATIONID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [IX_INVENTDIM_DATAAREAID_INVENTLOCATIONID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [IX_INVENTDIM_DATAAREAID_INVENTLOCATIONID_RECID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [IX_INVENTDIM_INVENTLOCATIONID_INVENTSITEID_LICENSEPLATEID_WMSLOCATIONID_WMSPALLETID_CONFIGID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [IX_INVENTDIM_RECID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+```
+
+It is recommended to repeat this sub-heading for the top tables in the report, until an appropriate database size is reached.
+
 
 ## Practices that affect performance
 
