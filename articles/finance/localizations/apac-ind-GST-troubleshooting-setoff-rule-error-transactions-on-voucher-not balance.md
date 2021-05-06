@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Setoff rule error The transactions on voucher do not balance as per…
-description:
+title: Setoff rule error when running a tax settlement 
+description: This topic provides troubleshooting information to resolve the setoff rule error the you receive when running a tax settlement.
 author: yungu
 manager: beya
-ms.date: 02/04/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,47 +27,38 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
 ---
 
+# Setoff rule error when running a tax settlement 
 
+[!include [banner](../includes/banner.md)]
 
-# Setoff rule error The transactions on voucher do not balance as per…
+When you run a tax settlement, you might receive an error. Complete the sections in this topic to resolve the error.
 
-[!include [banner](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/finance/includes/banner.md)]
+## Find the setoff rule version currently in use
 
-## **Symptom**
+1. Go to **Tax** > **Setup** > **Sales tax** > **Maintain setoff hierarchy profiles**.
+2. Find the setoff rule version currently in use based on the effective date. For example, customers want to settle transactions for 2/19/2020. As the following graphic shows, the version 1 setoff rule is used according to the effective date. 
 
-- Error message "The transactions on voucher do not balance as per…" shows when running sales tax settlement.
+     [![](./media/setoff-rule-error-Picture01.png)](./media/setoff-rule-error-Picture01.png)
 
- 
+## Check the settings of the setoff rule
 
-## **Trouble shooting guide**
+1. Go to **Tax** > **Setup** > **Sales tax** > **Sales tax hierarchies**, and mark the setoff rule currently in use.
+2. Select **View** to check which sales tax hierarchies are used.
 
-- **Step 1: Find the setoff rule version currently used**
+     [![](./media/setoff-rule-error-Picture1.png)](./media/setoff-rule-error-Picture1.png)
 
-- 1. Go to "*Modules -> Tax -> Setup ->Sales tax -> Maintain setoff hierarchy profiles*".
-
-  2. Find the setoff rule version currently used according to the effective date.
-
-     For example, customers want to settle transactions in 2/19/2020. As shown in the figure below, the version 1 setoff rule is used according to the effective date. 
-
-     [![Direct taxes (tab)](./media/setoff-rule-error-Picture01.png)](./media/setoff-rule-error-Picture01.png)
-
-- **Step 2: Check setoff rule settings**
-
-  1. Go to "*Modules -> Tax -> Setup -> Sales tax -> Sales tax hierarchies*", mark the setoff rule currently used.
-
-  2. Click "View" to check the sales tax hierarchies under usage.
-
-     [![Direct taxes (tab)](./media/setoff-rule-error-Picture1.png)](./media/setoff-rule-error-Picture1.png)
-
-  3. Click "Setoff rules for sales tax hierarchies"
+3. Select **Setoff rules for sales tax hierarchies**.
 
      [![Direct taxes (tab)](./media/setoff-rule-error-Picture2.png)](./media/setoff-rule-error-Picture2.png)
 
-  4. According to the setoff, check if both *Recoverable* and *Payable* nodes are well set; If yes, it maybe posting issue, please go to Microsoft; otherwise, please edit the setoff rule.
+4. According to the setoff, check if both *Recoverable* and *Payable* nodes are well set; If yes, it maybe posting issue, please go to Microsoft; otherwise, please edit the setoff rule.
 
      [![Direct taxes (tab)](./media/setoff-rule-error-Picture3.png)](./media/setoff-rule-error-Picture3.png)
 
-- **Step 3: If no issue is found in above steps, check whether customization exists. If not, create a service request to Microsoft for further support.**
+## Determine whether customization exists
+
+If you've completed the steps in the previous section but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.
 
 
-[!INCLUDE[footer-include](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/includes/footer-banner.md)]
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
