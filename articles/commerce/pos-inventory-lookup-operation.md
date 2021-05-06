@@ -51,6 +51,8 @@ For an individual product, the operation provides an inventory lookup list view 
 
 The locations displayed in the list view include all stores and warehouses that are configured in the fulfillment groups that the current store is linked to.
 
+![Inventory lookup operation list view](media/inventory-lookup-list-view.png)
+
 The following actions are available on the app bar:
 
 - **Sort** - This action sorts the data in the list view based on various criteria: **Geo location** (from the closest location to the farthest location, compared with the current store), **Name** (in ascending or descending order), **Store number** (in ascending or descending order), **Inventory** (in descending order), **Reserved** (in descending order), and **Ordered** (in descending order). The geo location based sorting is the default sort option.
@@ -71,6 +73,8 @@ The following actions are available on the app bar:
 ## Inventory lookup matrix view for variants
 
 For a master product with variants, the operation also provides a **dimension based matrix view** showing the inventory availability information for all variants of that product at a selected location. By default, the matrix view shows data for the current store, and you can use the Store action on the app bar to look up the inventory information at other stores configured in the fulfillment groups that the current store is linked to.
+
+![Inventory lookup operation matrix view](media/inventory-lookup-matrix-view.png)
 
 In the matrix view, each cell represents an individual variant. It displays an on-hand **inventory** (available physical) value in the lower-right corner, as well as **reserved** (physical reserved) and **ordered** (ordered in total) value in the upper-left corner. The table below explains the meaning of the various on-hand values.
 
@@ -93,7 +97,9 @@ The following actions are available in the matrix view cell:
 
 ## Launch inventory lookup from other pages in POS
 
-The user can access on-hand inventory information or launch the Inventory lookup operation from other pages in POS.
+The user can access on-hand inventory information or launch the **Inventory lookup** operation from other pages in POS.
+
+![Inventory lookup from product details page](media/inventory-lookup-from-product-details-page.png)
 
 On the product details page of a master product, you can use the **View all variants** action on the app bar to launch the **Inventory lookup** matrix view that shows the inventory availability information for all variants of that product for the current store. For an individual product, the product details page shows the on-hand inventory (available physical) value of that product for the current store. Additionally, the user can click the **Other stores inventory** link to launch the **Inventory lookup** operation to check the inventory availability of that product across other stores or warehouses.
 
