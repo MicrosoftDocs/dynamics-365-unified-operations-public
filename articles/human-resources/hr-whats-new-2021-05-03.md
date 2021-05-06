@@ -50,7 +50,7 @@ The following features are generally available with this release.
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
 | Add info bar when Life events are created. | | When a life event is created, the information bar displays a message indicating the type of life event that was created.
-|
+
 ### Bug fixes
 
 The following bug fixes are included in this release.
