@@ -4,7 +4,7 @@
 title: Open the designer for the current tax configuration 
 description: This topic provides troubleshooting information to help open the designer for the current tax configuration.
 author: yungu
-ms.date: 04/27/2021
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,7 +41,7 @@ This topic explains how to open the designer of the tax configuration currently 
 
      [![Companies FastTab, Setup butotn](./media/open-designer-configuration-Picture1.png)](./media/open-designer-configuration-Picture1.png)
 
-3. Note the configuration version listed in the tree.
+3. Make a note of the configuration version listed in the tree. You will need this information later.
 
      [![Configuration version](./media/open-designer-configuration-Picture2.png)](./media/open-designer-configuration-Picture2.png)
 
@@ -52,7 +52,7 @@ This topic explains how to open the designer of the tax configuration currently 
 
      [![Expanded Taxable Document node](./media/open-designer-configuration-Picture3.png)](./media/open-designer-configuration-Picture3.png)
 
-3. Select the currently used tax configuration based on the configuration version in step 1.
+3. Select the currently used tax configuration that you noted earlier.
 
      [![Configurations page, selected tax configuration](./media/open-designer-configuration-Picture4.png)](./media/open-designer-configuration-Picture4.png)
 
