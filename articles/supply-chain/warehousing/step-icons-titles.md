@@ -28,7 +28,6 @@ The following screenshot shows how step titles and icons appear in the Warehouse
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview?toc=/dynamics365/supply-chain/toc.json) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module**: *Warehouse management*
-
 - **Feature name**: *User settings, icons, and step titles for the new warehouse app*
 
 ## Standard step IDs, classes, and icons
@@ -37,7 +36,9 @@ Each step in a task flow is identified by a step ID, and each step ID has its co
 
 ### Step IDs and step classes
 
-The following table provides a list of all the currently available step IDs and their corresponding step classes. The control name of the primary input field is used as the step ID. For an example, see the implementation for the method WHSMobileAppStepInfoBuilder.stepId() provided in [Use a standard or custom step title and icon for the weight input](#use-a-standard-or-custom-step-title-and-icon-for-the-weight-input), later in this topic.
+The following table provides a list of all the currently available step IDs and their corresponding step classes. The control name of the primary input field is used as the step ID.
+
+For an example, see the implementation for the method `WHSMobileAppStepInfoBuilder.stepId()` provided in [Example of assigning step titles and icons for a custom flow](#example), later in this topic.
 
 | Step ID                                        | Step Class                                    |
 |------------------------------------------------|-----------------------------------------------|
@@ -168,12 +169,13 @@ The following table provides a list of all the currently available step IDs and 
 | DriverCheckOutId                               | WHSMobileAppStepDriverCheckOutId              |
 | LocVerification                                | WHSMobileAppStepLocVerification               |
 
-### Available step icons
+### <a name="step-icons"></a>Available step icons
 
 The system includes a collection of standard step icons that you can use for your custom steps. The system does not currently support uploading custom step icons, so you must always select one of the standard ones. The following table shows each standard step icon and its name.
 
-| ![About step icon](media/step-icons-about.png "About step icon")</br>About | ![Add license plate or item step icon](media/step-icons-add-lp.png "Add license plate or item step icon")</br>AddLpOrItem | ![Batch disposition step icon](media/step-icons-batch-disposition.png "Batch disposition step icon")</br>BatchDisposition | ![Carrier step icon](media/step-icons-carrier.png "Carrier step icon")</br>Carrier |
+|  |  |  |  |
 |-------------------------|-------------------------|-------------------------|-------------------------|
+| ![About step icon](media/step-icons-about.png "About step icon")</br>About | ![Add license plate or item step icon](media/step-icons-add-lp.png "Add license plate or item step icon")</br>AddLpOrItem | ![Batch disposition step icon](media/step-icons-batch-disposition.png "Batch disposition step icon")</br>BatchDisposition | ![Carrier step icon](media/step-icons-carrier.png "Carrier step icon")</br>Carrier |
 | ![Catch weight tag step icon](media/step-icons-cw-tag.png "Catch weight tag step icon")</br>CatchWeightTag | ![Catch weight tag weight step icon](media/step-icons-cw-tag-weight.png "Catch weight tag weight step icon")</br>CatchWeightTagWeight | ![Check digit step icon](media/step-icons-check-digit.png "Check digit step icon")</br>CheckDigit | ![Check in or out ID step icon](media/step-icons-check-in-out.png "Check in or out ID step icon")</br>CheckInOutId |
 | ![Child license plate step icon](media/step-icons-child-lp.png "Child license plate step icon")</br>ChildLP | ![Cluster ID step icon](media/step-icons-cluster-id.png "Cluster ID step icon")</br>ClusterId | ![Cluster position step icon](media/step-icons-cluster-position.png "Cluster position step icon")</br>ClusterPosition | ![Config ID step icon](media/step-icons-config-id.png "Config ID step icon")</br>ConfigId |
 | ![Configured field step icon](media/step-icons-configured-field.png "Configured field step icon")</br>ConfiguredField | ![Con or LP step icon](media/step-icons-con-lp.png "Con or LP step icon")</br>ConOrLP | ![Consolidate from license plate ID step icon](media/step-icons-consolidate-from-LP.png "Consolidate from license plate ID step icon")</br>ConsolidateFromLicensePlateID | ![Consolidate to license plate ID step icon](media/step-icons-consolidate-to-LP.png "Consolidate to license plate ID step icon")</br>ConsolidateToLicensePlateID |
@@ -200,16 +202,13 @@ The system includes a collection of standard step icons that you can use for you
 | ![Work ID to cancel step icon](media/step-icons-work-id-to-cancel.png "Work ID to cancel step icon")</br>WorkIdToCancel | ![Work license plate ID step icon](media/step-icons-work-lp-id.png "Work license plate ID step icon")</br>WorkLicensePlateId | ![Work license plate ID putaway cluster step icon](media/step-icons-work-lp-putaway-cluster.png "Work license plate ID putaway cluster step icon")</br>WorkLPIDPutawayCluster | ![Work pool ID step icon](media/step-icons-work-pool-id.png "Work pool ID step icon")</br>WorkPoolID |
 | ![Zone ID step icon](media/step-icons-zone-pool-id.png "Zone ID step icon")</br>ZoneID |  |  |  |
 
-
-## Example of assigning step titles and icons for a custom flow
+## <a name="example"></a>Example of assigning step titles and icons for a custom flow
 
 This example illustrates a custom flow, which is also used in the blog post [Customizing the Warehousing Mobile App](https://cloudblogs.microsoft.com/dynamics365/it/2017/07/06/customizing-the-warehousing-mobile-app/?source=dynamicsaxscm). This task flow works as follows:
 
-1.  The app shows a screen asking the user to provide a container ID (for example, by scanning a barcode).
-
-2.  If the container ID is valid, the app opens a new screen, asking for the weight. (If the container ID isn't valid, the user is returned to the first screen.)
-
-3.  When the user enters a valid weight, the system stores the weight and returns to the initial screen.
+1. The app shows a screen asking the user to provide a container ID (for example, by scanning a barcode).
+1. If the container ID is valid, the app opens a new screen, asking for the weight. (If the container ID isn't valid, the user is returned to the first screen.)
+1. When the user enters a valid weight, the system stores the weight and returns to the initial screen.
 
 The following illustration shows this task flow.
 
@@ -221,33 +220,27 @@ The container input screen enables the worker to scan or enter a container ID.
 
 ![Container input screen](media/step-icons-example-container-input.png "Container input screen")
 
-On the container input screen, the control name of the input field is ContainerId, which is not in the step ID list, so you won't find an existing step based on this control name. Therefore, you must create a step class to present the step. The following code provides an example:
+On the container input screen, the control name of the input field is `ContainerId`, which is not in the step ID list, so you won't find an existing step based on this control name. Therefore, you must create a step class to present the step. The following code provides an example:
 
-\[WHSMobileAppStepId('ContainerId')\]
-
+```xpp
+[WHSMobileAppStepId('ContainerId')]
 final internal class WHSMobileAppStepContainerId extends WHSMobileAppStep
-
 {
+    private const WHSMobileAppStepIcon PopulationIcon = 'InventBatchID';
+    private const WHSMobileAppStepTitle InputNotFilledTitle = "@WAX:WHSMobileAppStepContainerID_InputNotFilled"; //Scan a container
 
-private const WHSMobileAppStepIcon PopulationIcon = 'InventBatchID';
-
-private const WHSMobileAppStepTitle InputNotFilledTitle = "@WAX:WHSMobileAppStepContainerID\_InputNotFilled"; *//Scan a container*
-
-protected void initValues()
-
-{
-
-defaultStepIcon = PopulationIcon;
-
-defaultStepTitle = InputNotFilledTitle;
+    protected void initValues()
+    {
+        defaultStepIcon = PopulationIcon;
+        defaultStepTitle = InputNotFilledTitle;
+    }
 
 }
+```
 
-}
+The step icon identifier is stored in class member `defaultStepIcon` and step title is stored in class member `defaultStepTitle`.
 
-The step icon identifier is stored in class member defaultStepIcon and step title is stored in class member defaultStepTitle.
-
-To assign a step icon, set defaultStepIcon to one of the icon IDs listed in [Available step icons](#available-step-icons).
+To assign a step icon, set `defaultStepIcon` to one of the icon IDs listed in [Available step icons](#step-icons).
 
 ### Use a standard or custom step title and icon for the weight input
 
@@ -255,74 +248,57 @@ The weight input screen enables the worker to enter a weight.
 
 ![Weight input screen](media/step-icons-example-weight-input.png "Weight input screen")
 
-On the weight input screen, the control name of the input field is **Weight** which is in the step ID list. So, if you can accept the step title and icon defined in class WHSMobileAppStepWeight, then you don't need to change anything this step.
+On the weight input screen, the control name of the input field is `Weight` which is in the step ID list. So, if you can accept the step title and icon defined in class `WHSMobileAppStepWeight`, then you don't need to change anything this step.
 
-However, if you prefer to use a different title or icon for this step, you do so by overriding either the stepId() or stepInfo() method in the builder class. Each task flow has its own step info builder.
+However, if you prefer to use a different title or icon for this step, you do so by overriding either the `stepId()` or `stepInfo()` method in the builder class. Each task flow has its own step info builder.
 
 #### Override the stepId() method
 
-The following code example shows one way to modify a builder class by overriding the stepId() method.
+The following code example shows one way to modify a builder class by overriding the `stepId()` method.
 
-\[WHSWorkExecuteMode(WHSWorkExecuteMode:: WeighContainer)\]
-
+```xpp
+[WHSWorkExecuteMode(WHSWorkExecuteMode:: WeighContainer)]
 public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepInfoBuilder
-
 {
+    protected WHSMobileAppStepId stepId()
+    {
+        WHSMobileAppStepId stepIdLocal = super();
 
-protected WHSMobileAppStepId stepId()
+        if (stepIdLocal == 'Weight')
+        {
+            return 'NewWeight';
+        }
 
-{
-
-WHSMobileAppStepId stepIdLocal = super();
-
-if (stepIdLocal == 'Weight')
-
-{
-
-return 'NewWeight';
+        return stepIdLocal;
+    }
 
 }
+```
 
-return stepIdLocal;
-
-}
-
-}
-
-Then create a step class for the NewWeight step, which should be similar to the ContainerId example provided previously.
+Then create a step class for the `NewWeight` step, which should be similar to the `ContainerId` example provided previously.
 
 #### Override method stepInfo()
 
-The following code example shows one way to modify a builder class by overriding the stepInfo() method.
+The following code example shows one way to modify a builder class by overriding the `stepInfo()` method.
 
-\[WHSWorkExecuteMode(WHSWorkExecuteMode:: WeighContainer)\]
-
+```xpp
+[WHSWorkExecuteMode(WHSWorkExecuteMode:: WeighContainer)]
 public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepInfoBuilder
-
 {
+    protected WHSMobileAppStepInfo stepInfo()
+    {
+        if (stepId != 'Weight')
+        {
+            return super();
+        }
 
-protected WHSMobileAppStepInfo stepInfo()
-
-{
-
-if (stepId != 'Weight')
-
-{
-
-return super();
+        WHSMobileAppStepInfo stepInfo = WHSMobileAppStepInfo::construct();
+        stepInfo.parmStepIcon('NewIcon');
+        stepInfo.parmStepTitle('NewTitle');
+        return stepInfo;
+    }
 
 }
+```
 
-WHSMobileAppStepInfo stepInfo = WHSMobileAppStepInfo::construct();
-
-stepInfo.parmStepIcon('NewIcon');
-
-stepInfo.parmStepTitle('NewTitle');
-
-return stepInfo;
-
-}
-
-}
-
-Then construct a WHSMobileAppStepInfo object and set the icon and/or title directly.
+Then construct a `WHSMobileAppStepInfo` object and set the icon and/or title directly.
