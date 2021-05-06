@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 This topic covers how to set up and deploy Microsoft Dynamics 365 Commerce localization for Brazil.
 
-Dynamics 365 Commerce localization for Brazil consists of several extensions of Commerce components. The extensions let you calculate Brazil-specific taxes, generate electronic fiscal documents for retail sales, print DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) fiscal receipts containing custom fields, manage Brazil-specific customer information, and issue sales in offline contingency mode with postponed registration of electronic fiscal documents. For more information about Dynamics 365 Commerce localization for Brazil, see [Brazilian localization scope](../../finance/localizations/latam-bra-scope.md) and [Commerce localization for Brazil](latam-bra-commerce-localization.md).
+Dynamics 365 Commerce localization for Brazil consists of several extensions of Commerce components. The extensions let you calculate Brazil-specific taxes, generate electronic fiscal documents for retail sales, print DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) fiscal receipts with custom fields, manage Brazil-specific customer information, and issue sales in offline contingency mode with postponed registration of electronic fiscal documents. For more information about Dynamics 365 Commerce localization for Brazil, see [Brazilian localization scope](../../finance/localizations/latam-bra-scope.md) and [Commerce localization for Brazil](latam-bra-commerce-localization.md).
 
 The extensions described here were developed based on the fiscal integration framework. For details about the fiscal integration functionality, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md). Brazilian electronic fiscal documents formats are implemented using [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md).
 
@@ -167,7 +167,7 @@ To set up the fiscal registration process in Commerce headquarters, follow the s
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create three new profiles per document provider from the step above and select the loaded connectors. Update data mapping settings as needed.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create three new profiles and select the loaded connectors from the step above. Update connection settings as needed.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector group**. Create three new groups, one for each connector functional profile from the step above.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Registration process**. Create a new process. Select the three previously-created fiscal connector groups as registration steps.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Registration process**. Create a new process. Select the three previously created fiscal connector groups as registration steps.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select the profile that is linked to the store where the registration process should be activated, and then expand the **Fiscal registration process** FastTab. Select the registration process created above. To enable registration of non-fiscal events on POS, on the **Functions** FastTab set **Audit** to **No**.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** FastTab and select the connector technical profile.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles** and set up profiles for printers.
@@ -189,7 +189,7 @@ For more information about how to work with screen layouts and button grids, see
 
 1. Go to **Organization administration \> Number sequences**. Create and set up number sequences for retail statements for each store (operating unit).
 1. On the **References** FastTab, add two references for the **Retail store** area: one with the **Reference** value set to **Statement number**, and one with the **Reference** value set to **Voucher**.
-1. Go to **Retail and Commerce \> Catalog and assortments**. Create a new assortment with appropriate products, add the previously-created stores under the **Commerce channels** tab, and then select **Publish**.
+1. Go to **Retail and Commerce \> Catalog and assortments**. Create a new assortment with appropriate products, add the previously created stores under the **Commerce channels** tab, and then select **Publish**.
 1. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes** and publish channel updates.
 1. Go to **Sales and marketing \> Setup > Returns \> Disposition codes** and add a disposition code.
 1. Go to **Retail and commerce \> Products and categories \> Released products by category**. Select a product for the gift card, and then select the **Blocked at register** check box.
