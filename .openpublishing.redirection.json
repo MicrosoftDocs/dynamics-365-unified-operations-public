@@ -1,5 +1,235 @@
 {
-  "redirections": [
+  "redirections": [    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/business-process-modeler-lcs.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/business-process-modeler-lcs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/cloud-hosted-environments-lcs.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/cloud-hosted-environments-lifecycle-services-lcs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/code-upgrade-tool-user-guide.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/code-upgrade-tool-user-guide",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/create-archive-objects.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/create-archive-objects-idmf",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/create-purge-objects.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/create-purge-objects-idmf",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/create-tables.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/create-tables-in-aot",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/customization-analysis-lcs.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/customization-analysis-lcs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/define-edit-entry-point-permissions.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/define-edit-entry-point-permissions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/deploy-2012-r3-azure-lcs.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/deploy-2012-r3-azure-lcs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/deploy-development-environment-azure.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/deploy-development-environment-azure",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/deploy-high-availability-environment-azure.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/deploy-high-availability-environment-azure",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/deploy-retail-ecommerce-devtest-environment-azure.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/deploy-retail-ecommerce-devtest-environment-azure ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/deploy-retail-essentials-demo-environment-azure.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/deploy-retail-essentials-demo-environment-azure ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/deploy-retail-essentials-devtest-environment-azure.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/deploy-retail-essentials-devtest-environment-azure ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/deploy-retail-mobility-devtest-environment-azure.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/deploy-retail-mobility-devtest-environment-azure ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/deploy-test-environment-azure.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/deploy-test-environment-azure ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/import-demo-data-ax-2012-r3-test-data-transfer-tool",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/infrastructure-estimator-lcs.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/infrastructure-estimator-lcs ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/install-run-system-diagnostics-lcs.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/install-run-system-diagnostics",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/install-security-development-tool.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/install-security-dev-tool",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/install-test-data-transfer-tool-beta.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/install-test-data-transfer-tool-beta",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/join-enterprise-portal-servers-single-server-farm.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/join-enterprise-portal-servers-single-server-farm",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/lcs-downloadable-tools-formerly-informationsource.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/lifecycle-services-downloadable-tools-formerly-on-informationsource",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/manage-2012-r3-deployment-azure.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/manage-2012-r3-deployment-azure",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/methodologies-lcs.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/methodologies-lifecycle-services-lcs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/overview-security-development-tool-user-interface.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/overview-security-development-tool-user-interface",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/what-s-new-performance-benchmark-software-development-toolkit-sdk-for-microsoft-dynamics-ax-2012",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/plan-2012-r3-deployment-azure.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/plan-2012-r3-deployment-azure",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/projects-lcs.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/projects-lifecycle-services-lcs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/quick-import-export.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/quick-import-export ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/record-entry-points-enterprise-portal.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/record-entry-points-enterprise-portal",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/rfp-responses-lcs.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/rfp-responses-lcs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/run-test-data-transfer-tool-beta.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/run-test-data-transfer-tool-beta",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/schedule-purge-analysis-tasks.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/scheduling-purge-and-analysis-tasks-idmf",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/security-development-tool-user-guide.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/security-development-tool-user-guide",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/security-upgrade-advisor-tool-user-guide.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/security-upgrade-advisor-tool-user-guide",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/system-diagnostics-lcs.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/system-diagnostics-lifecycle-services-lcs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/table-properties.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/table-properties ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/test-data-transfer-tool-beta-2012.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/test-data-transfer-tool-beta-2012",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/troubleshoot-2012-r3-deployment-azure.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/troubleshoot-2012-r3-deployment-azure",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/update-2012-r3-lcs.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/updates-for-microsoft-dynamics-ax-2012-r3-lifecycle-services-lcs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/upgrade-analysis-lcs.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/upgrade-analysis-lifecycle-services-lcs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/usage-profiler-lcs.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/usage-profiler-lifecycle-services-lcs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/view-status-purge-archive-jobs.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/viewing-the-status-of-purge-or-archive-jobs-idmf",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/work-with-purge-objects-archive-objects.md",
+      "redirect_url": "/dynamicsax-2012/appuser-itpro/working-with-purge-objects-and-archive-objects-idmf",
+      "redirect_document_id": "false"
+    },
+
     {
       "source_path": "articles/supply-chain/inventory/enable-nonconformance-management.md",
       "redirect_url": "enable-quality-management",
