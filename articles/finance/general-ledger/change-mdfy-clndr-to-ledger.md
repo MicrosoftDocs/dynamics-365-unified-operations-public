@@ -2,7 +2,7 @@
 # required metadata
 
 title: Change or reassign a ledger calendar 
-description: This topic walks through the process of changing the calendar assigned to a ledger, or assinging an new calendar to the ledger.  
+description: This topic walks through the process of changing the calendar assigned to a ledger, or assigning a new calendar to the ledger.  
 author: kweekley
 ms.date: 05/07/2021
 ms.topic: index-page
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic walks through the process of changing the calendar assigned to a ledger, or assinging an new calendar to the ledger. 
+This topic walks through the process of changing the calendar assigned to a ledger, or assigning a new calendar to the ledger. 
 
 ## Issue
 
@@ -39,17 +39,17 @@ During a company’s development, it’s likely that a situation will arise wher
 
 ## Resolution
 
-There are two scenarios for changing or reassigning a calendar. The first scenario involves making changes to an existing calendar assigned to the Ledger. The second scenario involves creating a new calendar and assigning it to the ledger.  Note that either change be done at any time, even after transactions are posted to the ledger. 
+There are two scenarios for changing or reassigning a calendar. The first scenario involves making changes to an existing calendar assigned to the Ledger. The second scenario involves creating a new calendar and assigning it to the ledger.  Either change be done at anytime, even after transactions are posted to the ledger. 
 
 ### Modify an existing fiscal calendar
 
-To modify a calendar already assigned to your ledger, navigate to **General ledger > Ledger setup > Ledger** and click on the hyperlink for the fiscal calendar. This take you to the **Ledger calendars** page. 
+To modify a calendar already assigned to your ledger, navigate to **General ledger > Ledger setup > Ledger** and click on the hyperlink for the fiscal calendar. This action will take you to the **Ledger calendars** page. 
 
-There are limits to the changes that can be made to a calendar.  For example, you can change the start and end dates of the *periods* within a year, but the start and end date of a *year* within the calendar cannot be changed.  To change the periods, first select the appropriate calendar and year, then use the **Delete period** and **Divide period** buttons.  First delete some or all the existing operating periods.  All the Operating periods can be deleted, except for the first period. Then divide the one remaining period into the new periods by entering the appropriate start date for the next period. 
+There are limits to the changes that can be made to a calendar. For example, you can change the start and end dates of the *periods* within a year, but the start and end date of a *year* within the calendar cannot be changed.  To change the periods, first select the appropriate calendar and year, then use the **Delete period** and **Divide period** buttons.  First delete some or all the existing operating periods.  All the Operating periods can be deleted, except for the first period. Then divide the one remaining period into the new periods by entering the appropriate start date for the next period. 
 
 If any changes are made to the fiscal periods with the calendar, you must run the “Recalculate ledger periods” process in every legal entity that is assigned that calendar. At this time, we don’t even present a warning message to run the Recalculation, but it is required.
 
-To do this, click on the ** Recalculate ledger periods** menu button on the **Ledger setup** page in each company.  This is required in order to update the period assigned to each posted transaction within General ledger.  If the Recalculate process isn’t run, you could see transaction balances included in periods incorrectly on the trial balance or financial statements. If this has happened, you can correct the balances any time by running the Recalculate process. 
+To do this, click on the **Recalculate ledger periods** menu button on the **Ledger setup** page in each company. This step is required to update the period assigned to each posted transaction within General ledger. If the Recalculate process isn’t run, you might see transaction balances included in periods incorrectly on a trial balance or on financial statements. If this has happened, you can correct the balances anytime by running the Recalculate process. 
 
 ### Assign new fiscal calendar
 
