@@ -42,7 +42,7 @@ If this occurs, complete the sections in this topic to try to resolve the issue.
 
 ## Check the tax document
 
-Check whether the tax calculation issue is also on the tax document. If the tax document is incorrect, see [Tax amount is wrong after calculation](./apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md). If it isn't, continue to the next section.
+Check whether the tax calculation issue is also on the tax document. If the tax document is incorrect, see [Tax amount is wrong after calculation](apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md). If it isn't, continue to the next section.
 
 Complete the following steps to check if the tax amount on the tax document is correct.
 
