@@ -99,27 +99,23 @@ Set a breakpoint at **transTaxInformation.CompanyLocation** and start debugging.
 
 The default HSN/SAC is determined differntly based on the scenario. In some scenarios, only one value is listed under the scenario. This value is used as the default HSN/SAC/Exempt/NonGST. In other scenarios, there is a sequential list with all possible default values that can be used as the default HSN/SAC/Exempt/NonGST. Check the values by following the list sequence until a value exists in your system. This value used as default HSN/SAC/Exempt/NonGST in the tax information.
 
-### Scenario: Non-project transactions related to inventory item (release product)
+### Scenario: Non-project transactions related to an inventory item or released product
 
-- - HSN/SAC/Exempt/NonGST = item HSN/SAC/Exempt/NonGST
+When the HSN/SAC/Exempt/NonGST is an inventory item or rleased product, set a breakpoint there and start debugging to find the default HSN/SAC/Exempt/NonGST.
 
-- Debug point
-
-- [![Direct taxes (tab)](./media/default-value-not-excepted-Picture5.png)](./media/default-value-not-excepted-Picture5.png)
+- ![If statements](./media/default-value-not-excepted-Picture5.png)
 
 ### Scenario: Non-project transactions related to procurement category
 
-- - HSN/SAC/Exempt/NonGST = procurement category HSN/SAC/Exempt/NonGST
+When the HSN/SAC/Exempt/NonGST is a procurement category, set a breakpoint there and start debugging to find the default HSN/SAC/Exempt/NonGST.
 
-- Debug point
-
-- [![Direct taxes (tab)](./media/default-value-not-excepted-Picture6.png)](./media/default-value-not-excepted-Picture6.png)
+- ![Breakpoints in If statement for categoryRecId](./media/default-value-not-excepted-Picture6.png)
 
 ### Scenario: Project transactions
 
-- - **Field: HSN/Exempt/NonGST**
+For project transactions, the HSN/Exempt/NonGST is assigned differently.
 
-- 1. Project tax information HSN/Exempt/NonGST
+  - Project tax information HSN/Exempt/NonGST
 
      Debug point
 
@@ -153,18 +149,13 @@ The default HSN/SAC is determined differntly based on the scenario. In some scen
 
 ## Price inclusive
 
-  The price inclusive would be set in the tax information for the transaction line if any one of the condition is met.
+The **Price inclusive** field is set in the tax information for the transaction line if a specific condition is met.
 
 ### Scenario: Non-project related transactions
 
-    - **General ledger journal**
+In the General ledger journal, the journal header is marked as price inclusive. The customer or vendor account that is used on the journal line is marked as the default for the **Price inclusive** field. 
 
-      - Journal header is marked as price inclusive 
-      - Customer/vendor account used in journal line is marked as default price inclusive
-
-    - **Other non-project related transactions**
-
-      - Head of the transaction is marked as price inclusive
+For other non-project related transactions, the transaction header is marked as price inclusive. 
 
       Debug point
 
@@ -172,24 +163,16 @@ The default HSN/SAC is determined differntly based on the scenario. In some scen
 
 ### Scenario: Project related transactions
 
-    - **General ledger journal**
+The general ledger journal header is marked as price inclusive. The customer or vendor account that is used on the journal line is marked as the default for the **Price inclusive** field. Any tax information for the project and the account used in the project is also marked as price inclusive. 
 
-    - - Journal header is marked as price inclusive 
-      - Customer/vendor account used in journal line is marked as default price inclusive
-      - Project tax information is marked as price inclusive
-      - The account used in the project is marked as price inclusive
+For other project related transactions, the transaction header is marked as price inclusive as is the project tax information and the account used in the project.
 
-    - **Other project related transactions**
-
-    - - Header of the transaction is marked as price inclusive
-      - Project tax information is marked as price inclusive
-      - The account used in the project is marked as price inclusive
 
     - Debug point
 
     - [![Direct taxes (tab)](./media/default-value-not-excepted-Picture13.png)](./media/default-value-not-excepted-Picture13.png)
 
-- Other fields
+## Other fields
 
   To check the default value for a certain field in tax information. Debug in the below methods.
 
