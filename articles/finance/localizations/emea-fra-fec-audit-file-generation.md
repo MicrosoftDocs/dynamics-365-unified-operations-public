@@ -28,7 +28,7 @@ To generate a Fichier des écritures comptables (FEC) audit file, follow these s
 
 1. Go to **General Ledger** \> **Periodic tasks** \> **Data export**. 
 2. If the Electronic reporting (ER) format isn't set up in the **Format mapping** field on the **General ledger parameters** page, select **FEC audit file (FR)** in the **Format mapping** field on the **Data export** page. Then select **OK**. 
-3. If the ER format isn't set up in the **Format mapping** field on the **General ledger parameters** page, the **Data export** page doesn't appear. You can go directly to the dialog box for the report.
+3. If the ER format is set up in the **Format mapping** field on the **General ledger parameters** page, the **Data export** page doesn't appear. You can go directly to the dialog box for the report.
 4. On the **Electronic report parameters** page, in the **Period - date from** and **Period - date to** fields, enter the start and end dates of the period.
 5. In the **FEC report content composition** field, select one or more of the following output files to generate, and then select **Select**.
 
