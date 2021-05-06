@@ -4,7 +4,7 @@
 title: Incorrect ledger account in the voucher 
 description: This topic provides troubleshooting information to help resolve the issue of an incorrect ledger account in the voucher.
 author: yungu
-ms.date: 04/27/2021
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
