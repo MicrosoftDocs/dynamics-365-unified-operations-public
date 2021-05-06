@@ -70,7 +70,7 @@ In the following procedure, the formula **Net price = \@.'Net Amount'/\@.Quantit
 2. Select **Taxable Document** \> **Taxable Document (India)**, and then select **Designer** to open the designer for **Taxable Document (India)**.
 3. Select **Map model to datasource**.
 
-    [![Map model to datasource button on the Taxable Document (India) page](./media/tax-configuration-errors-Picture5.png)](./media/tax-configuration-errors-Picture5.png)
+    [![Map model to datasource button](./media/tax-configuration-errors-Picture5.png)](./media/tax-configuration-errors-Picture5.png)
 
 4. Find and select the **Bundler.PurchOrderParm** model mapping, and then select **Designer** to open the model mapping designer.
 5. In the **Data model** section, expand **Header** \> **Lines**, and find **Net price**.
