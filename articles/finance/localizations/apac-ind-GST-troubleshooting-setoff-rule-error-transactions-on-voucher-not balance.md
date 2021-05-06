@@ -2,10 +2,10 @@
 # required metadata
 
 title: Setoff rule error when running a tax settlement 
-description: This topic provides troubleshooting information to resolve the setoff rule error the you receive when running a tax settlement.
+description: This topic provides troubleshooting information to resolve the setoff rule error that occurs during tax settlement.
 author: yungu
 manager: beya
-ms.date: 05/04/2021
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,22 +38,22 @@ When you run a tax settlement, you might receive an error. Complete the sections
 1. Go to **Tax** > **Setup** > **Sales tax** > **Maintain setoff hierarchy profiles**.
 2. Find the setoff rule version currently in use based on the effective date. For example, customers want to settle transactions for 2/19/2020. As the following graphic shows, the version 1 setoff rule is used according to the effective date. 
 
-     [![](./media/setoff-rule-error-Picture01.png)](./media/setoff-rule-error-Picture01.png)
+     [![Setoff hierarchy profiles page](./media/setoff-rule-error-Picture01.png)](./media/setoff-rule-error-Picture01.png)
 
 ## Check the settings of the setoff rule
 
-1. Go to **Tax** > **Setup** > **Sales tax** > **Sales tax hierarchies**, and mark the setoff rule currently in use.
-2. Select **View** to check which sales tax hierarchies are used.
+1. Go to **Tax** > **Setup** > **Sales tax** > **Sales tax hierarchies**, and select the setoff rule currently in use.
+2. On the **Versions** FastTab, select **View** to check which sales tax hierarchies are used.
 
-     [![](./media/setoff-rule-error-Picture1.png)](./media/setoff-rule-error-Picture1.png)
+     [![Sales tax hierarchies page, Versions FastTab, View button](./media/setoff-rule-error-Picture1.png)](./media/setoff-rule-error-Picture1.png)
 
 3. Select **Setoff rules for sales tax hierarchies**.
 
-     [![Direct taxes (tab)](./media/setoff-rule-error-Picture2.png)](./media/setoff-rule-error-Picture2.png)
+     [![Sales tax hierarchies designer page](./media/setoff-rule-error-Picture2.png)](./media/setoff-rule-error-Picture2.png)
 
-4. According to the setoff, check if both *Recoverable* and *Payable* nodes are well set; If yes, it maybe posting issue, please go to Microsoft; otherwise, please edit the setoff rule.
+4. According to the setoff, check if the **Recoverable** and **Payable** nodes are well set. If they are, this could be a posting issue and you should contact Microsoft. Otherwise, edit the setoff rule.
 
-     [![Direct taxes (tab)](./media/setoff-rule-error-Picture3.png)](./media/setoff-rule-error-Picture3.png)
+     [![Recoverable and Payable nodes](./media/setoff-rule-error-Picture3.png)](./media/setoff-rule-error-Picture3.png)
 
 ## Determine whether customization exists
 
