@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Customer aging snapshot
-description: This topic provides information about customer aging snapshots. The aging snapshot calculates aged balances for a group of customers at a point in time.
+title: Customer aging snapshots
+description: This topic provides information about customer aging snapshots. An aging snapshot calculates aged balances for a group of customers at a point in time.
 author: JodiChristiansen
 ms.date: 05/05/2021
 ms.topic: article
@@ -26,49 +26,45 @@ ms.dyn365.ops.version: 10.0.17
 
 ---
 
-# Customer aging snapshot
+# Customer aging snapshots
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about customer aging snapshots. The aging snapshot calculates aged balances for a group of customers at a point in time. You can create aging snapshot records for all customers, or for the customers in a customer pool. Information from aging snapshots is shown on the **Aged balances** list page, and on the **Collections** page. You must create an aging snapshot before you can use the list page. The list page only lists customers that an aging snapshot has been created for.
+This topic provides information about customer aging snapshots. An aging snapshot calculates aged balances for a group of customers at a point in time. You can create aging snapshot records either for all customers or for the customers in a customer pool.
 
-> [!NOTE] 
-> Turn on the Customer aging performance enhancement feature using the **Feature management** workspace. This reduces the time it takes to create an aging snapshot. Don't use customer pools with this enhancement turned on. If a customer pool is selected the enhancement feature won’t run, although you can still create an aging snapshot.
-
-Enter information as indicated in the following fields when you're creating a customer aging snapshot. 
-
-**Aging period definition** - Select the aging period definition for this aging snapshot. You can have one aging snapshot for each aging period definition, but they must be created separately. 
-
-- **Pool ID** - This field is optional. Use a pool to define the set of customers to be processed in the aging snapshot. Leave this field blank to create an aging snapshot for all customers. If a customer pool is selected, the aging snapshot process is applied only to the customer accounts that are part of the customer pool. The selected customer pool must be of the **Aging snapshot** type.
+Information from aging snapshots is shown on the **Aged balances** list page and the **Collections** page. You must create an aging snapshot before you can use the **Aged balances** list page. The list page lists only customers that an aging snapshot has been created for.
 
 > [!NOTE]
-> If the Customer aging performance enhancement feature is turned on, do not select a pool ID. 
+> To help reduce the time that is required to create an aging snapshot, turn on the **Customer aging performance enhancement** feature in the **Feature management** workspace. However, don't use customer pools when this feature is turned on. If a customer pool is selected, the feature won't work, but you can still create an aging snapshot.
 
-- **Criteria** - The aging snapshot will age based on the date selected. 
+When you create a customer aging snapshot, use the following fields to enter information about it:
 
-  - Transaction date – This option will age each transaction based on its transaction date.
-  - Due date – This option sill age each transaction based on its due date.
-  - Document date – This option will age each transaction based on its document date.
+- **Aging period definition** – Select the aging period definition for the aging snapshot. You can have one aging snapshot for each aging period definition. The aging snapshot and the aging period definition must be created separately.
+- **Pool ID** – This field is optional. You can use a pool to define the set of customers that should be processed in the aging snapshot. If you select a customer pool in this field, an aging snapshot is created only for the customer accounts that are part of that customer pool. The selected customer pool must be of the **Aging snapshot** type. If you leave this field blank, an aging snapshot is created for all customer accounts.
 
-- **Aging as of** - Select a date to use in the **Current date** field for the aging snapshot. Aging periods are calculated based on this date. If current aging period is 30 days and today’s date is used, then the Current aging period includes today’s date and the prior 29 days. If you specify a date the Current aging period starts with that date and includes the prior 29 days. 
+    > [!NOTE]
+    > If the **Customer aging performance enhancement** feature is turned on, don't select a customer pool.
 
-Today’s date – Uses the system date. Use this option if processing is set up to occur in a recurring batch. If you use this date, the recurring batch can be run periodically and the system date at that time is used. 
+- **Criteria** – The aging snapshot will age based on the date that you select:
 
-Selected date – Use a date that you specify. If you select this option, enter an aging date. 
+    - **Transaction date** – Each transaction is aged based on its transaction date.
+    - **Due date** – Each transaction is aged based on its due date.
+    - **Document date** – Each transaction is aged based on its document date.
 
-- **Update collection status** - Select **Yes** to update the collection status on transactions on the **Collections** page **Promise to pay** to **Promise to pay broken** if the aging data is beyond the in the **Promise to pay date** field. 
+- **Aging as of** – Select the date to use in the **Current date** field for the aging snapshot. Aging periods are then calculated based on that date. 
 
-Select No to not update the collection status on the Collections form. 
+    - **Today's date** – Use the system date. Select this option if processing is set up to run in a recurring batch. Then, every time that the batch is run, the system date of that run is used.
+    - **Selected date** – Use a date that you specify. If you select this option, you must enter an aging date.
 
-- **Include customers with zero balance** - Select Yes to include all customers regardless of a balance. When including all customers, it is recommended to turn on the Customer aging performance enhancement feature and not use customer pools.
+    For example, the current aging period is 30 days. If you select **Today's date** in this field, the current aging period starts on today's date and then includes the previous 29 days. If you select **Selected date** and enter a date, the current aging period starts on the specified date and then includes the previous 29 days.
 
-Select No to only include customers with a balance. This option will speed up performance as it will skip customers that do not have a balance.
+- **Update collection status** – Set this option to **Yes** to update the collection status of transactions on the **Collections** page from **Promise to pay** to **Promise to pay broken** if the aging date is beyond the date in the **Promise to pay date** field. Set this option to **No** to leave the collection status unchanged on the **Collections** page.
+- **Include customers with zero balance** – Set this option to **Yes** to include all customers, regardless of their balance. If you include all customers, we recommend that you to turn on the **Customer aging performance enhancement** feature, and that you not use customer pools. Set this option to **No** to include only customers that have a balance. This setting helps speed up performance, because customers that don't have a balance are skipped.
+- **Company range** – On the **Company range** tab, select the legal entities (companies) to include in the aging snapshot. Only legal entities that are set up for centralized payments are available for selection. Transactions from the selected legal entities are then included in the aging periods for customers that have the same party ID in all those legal entities. Currency amounts are converted to the currency of the legal entity that you're signed in to when you create the aging snapshot.
 
- - **Company range** - Click the Company range tab and select the legal entities to include in the aging snapshot. Only the companies that are set up for centralized payments are available to select. Transactions from those legal entities are then included in the aging periods for customers with the same party ID in all legal entities that are selected. Currency amounts are converted to the currency of the legal entity that you are logged on to when you create the aging snapshot. 
-
-We recommend scheduling this process to run in a batch.
+We recommend that you schedule this process to run in a batch.
 
 > [!NOTE]
-> In Accounts receivable parameters, select the **Collections** tab and expand **Collections defaults**. Enter a number in the **Maximum number of batch tasks** field to improve batch performance during the process for creating aging snapshots. We recommend starting with the default setting of 100 in the **Age customer balances** field, and then adjusting it to optimize processing in your situation.
+> To help improve batch performance when aging snapshots are created, enter a number in the **Maximum number of batch tasks** field on the **Collections defaults** FastTab on the **Collections** tab of the **Accounts receivable parameters** page. In the **Age customer balances** field, we recommend that you start with the default value of **100** and then adjust the value to optimize processing for your situation.
 
-The Customer credit and collections workspace displays the customer aging as well. For more information, see [Credit and collections management Power BI content](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/credit-collections-power-bi)
+The **Customer credit and collections** workspace also shows the customer aging. For more information, see [Credit and collections management Power BI content](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/credit-collections-power-bi).
