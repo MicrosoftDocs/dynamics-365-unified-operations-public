@@ -72,7 +72,6 @@ The following new features are in preview. For more information about turning fe
 | Benefits management workspace | [Benefits management workspace (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
 | Leave and absence workflow experience enhancements | [Leave and absence workflow experience enhancements](https://go.microsoft.com/fwlink/?linkid=2147528) | [Request time off](hr-employee-self-service-request-time-off.md)|
 | Enable simplified payroll integration (Payroll integration APIs) | [Enable simplified integration with payroll providers](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Payroll integration API](hr-admin-integration-payroll-api-introduction.md)|
-| Leave accrual transaction auditing |  | [Leave accrual transaction auditing](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-accrue#preview-leave-accrual-transaction-auditing)|
 
 ## Coming soon
 
@@ -81,6 +80,8 @@ The following new features are in preview. For more information about turning fe
 | Skills entered by a manager for their employees can be auto-approved by a workflow | Coming soon. |
 | Platform update 10.0.18 (42) | Platform update 10.0.18 is scheduled to begin rolling out with the service release on May 17, 2021. For more information, see [Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
 | Custom field support in Benefits management eligibility rules  | [Custom field support for eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
+| Leave accrual transaction auditing | [Leave accrual transaction auditing](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-accrue#preview-leave-accrual-transaction-auditing)|
+
 
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
