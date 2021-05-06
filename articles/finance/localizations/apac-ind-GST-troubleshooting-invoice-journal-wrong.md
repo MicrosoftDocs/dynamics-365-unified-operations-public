@@ -2,9 +2,9 @@
 # required metadata
 
 title: Field value in an invoice journal or voucher is wrong
-description: This topic provides troubleshooting information to help resolve the issue of incorrect field value in an invoice journal or voucher.
+description: This topic provides troubleshooting information to resolve the issue of incorrect field values in an invoice journal or voucher.
 author: yungu
-ms.date: 02/27/2021
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -83,13 +83,13 @@ On the tax document, select **Voucher** to check if the amount is posted to othe
 
          [![Breakpoints for taxDocumentRowTransaction.BaseAmountCur](./media/field-value-invoice-journal-voucher-Picture7.png)](./media/field-value-invoice-journal-voucher-Picture7.png)
 
-- If filed in TaxDocumentComponentTransaction is wrong. Set breakpoint as below, and check the logic.
+- If the field in **TaxDocumentComponentTransaction** is wrong, set a breakpoint and check the logic.
 
-     1. Set breakpoint in the "TaxAccountingPostTaxTransHandlerBase".
+     1. Set a breakpoint in the **TaxAccountingPostTaxTransHandlerBase**.
 
          [![Breakpoint for TaxAccountingPostTaxTransHandlerBase](./media/field-value-invoice-journal-voucher-Picture8.png)](./media/field-value-invoice-journal-voucher-Picture8.png)
 
-     2. Set breakpoints in the wrong value assigned in "TaxAccountingPostTaxCompTransHandler". i.e., set breakpoints for "taxDocumentComponentTransaction.TaxAmount" 
+     2. Set breakpoints where the wrong value is assigned in **TaxAccountingPostTaxCompTransHandler**. For example, set breakpoints for **taxDocumentComponentTransaction.TaxAmount**. 
 
          [![Breakpoints for taxDocumentComponentTransaction.TaxAmount](./media/field-value-invoice-journal-voucher-Picture9.png)](./media/field-value-invoice-journal-voucher-Picture9.png)
 
