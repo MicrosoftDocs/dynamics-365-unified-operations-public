@@ -176,6 +176,8 @@
                   href: data-entities/dual-write/errors-and-alerts.md
                 - name: Application lifecycle management
                   href: data-entities/dual-write/app-lifecycle-management.md
+                - name: Unlink and relink dual-write environments
+                  href: data-entities/dual-write/relink-environments.md
             - name: Mapping concepts between apps
               items:
                 - name: Integrated customer master
