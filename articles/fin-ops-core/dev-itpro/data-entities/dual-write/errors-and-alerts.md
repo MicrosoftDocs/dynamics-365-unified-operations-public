@@ -74,7 +74,7 @@ The following illustration shows an example where dual-write will be paused if 1
 
 ![Creating one or more alert settings](media/create-alert-settings.png)
 
-By selecting **Create alert settings**, you can create more alerts. You can also select whether notifications should be sent to an individual or a group (using comma separator Ex: id1@contoso.com, id2@contoso.com), and whether the dual-write system should take any action on your behalf.
+By selecting **Create alert settings**, you can create more alerts. You can also select whether notifications should be sent to an individual or a group, and whether the dual-write system should take any action on your behalf. To send alerts to a group, enter the values separated by commas, for example, "id1@contoso.com, id2@contoso.com".
 
 ![Creating alerts and sending notifications](media/create-alert-notification.png)
 
