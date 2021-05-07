@@ -502,6 +502,8 @@
         href: budgeting/budget-planning-justification-docs.md
       - name: Create a budget from transaction accounts and total accounts
         href: budgeting/create-budget-transaction-accounts-total-accounts.md
+      - name: Budget plan narrative
+        href: budgeting/budget-narrative.md
       - name: Budget planning templates for Excel
         href: budgeting/budget-planning-excel-templates.md
       - name: Extend the budget planning layout
