@@ -126,7 +126,7 @@ The installation takes a few minutes. When it completes, the **Finance and Opera
 
 ### Can I generate virtual tables for HR from my Power Apps environment?
 
-Yes. After completing the prerequisite setup steps for virtual tables outlined in the [Configure Dataverse virtual tables](/hr-admin-integration-common-data-service-virtual-entities) documentation, you can generate the virtual tables directly from the Power Apps environment rather than from the Human Resources app, as outlined in the [Generate virtual tables](/hr-admin-integration-common-data-service-virtual-entities#generate-virtual-tables) section of the documentation.
+Yes. After completing the prerequisite setup steps for virtual tables outlined in the [Configure Dataverse virtual tables](./hr-admin-integration-common-data-service-virtual-entities) documentation, you can generate the virtual tables directly from the Power Apps environment rather than from the Human Resources app, as outlined in the [Generate virtual tables](./hr-admin-integration-common-data-service-virtual-entities#generate-virtual-tables) section of the documentation.
 
 1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. In the Environments list, select the Power Apps environment associated with your Human Resources instance.
