@@ -115,7 +115,16 @@ This section describes configurations that you should consider when you begin to
     Additionally, it's helpful to have a "dummy" channel database group that can be used to configure new channel databases, registers that have offline support (in this case, offline databases will be created), and maybe even new but unused Commerce Scale Units (either Cloud or Self-hosted). Because this "dummy" group won't be associated with any distribution schedule jobs, no data generation will ever occur for anything that is associated with it. As time and the implementation progress, the associated entities (for example, channels \[stores\] and register offline databases) will be re-associated with the correct database group. A great alternative to this approach, and perhaps even an improvement, is to use the **Pause offline synchronization** feature that was described earlier.
 
 ### SQL versions and licenses and when to use them
+SQL Server comes in a variety of versions (SQL 2017 vs. SQL 2019, for example) and a variety of editions (SQL Standard vs. SQL Express, for example).  This can be read more in depth in the page [Editions and supported features of SQL Server 2019 (15.x)](https://docs.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-version-15?view=sql-server-ver15#Cross-BoxScaleLimits) and the related links from this page regarding additional versions (SQL Server 2017, for example).
 
+#### Which edition to use
+While not an exhaustive list, here are the most standardly used versions for Dynamics 365 Commerce customers and in what use cases they should be utilized.
+
+| Edition | Use cases |
+|--------------|-------------|
+| Express | SQL Server Express has some major limitations (CPU core count, RAM usage, etc.), but the most major limiting factor is the 10GB database size limit.  As such, Express is often used for a Modern POS offline database but not for a CSU (Self-hosted) Channel database. If the Express edition is used for a CSU (Self-hosted), be aware that there could be    |
+| Standard | SQL Server Standard is often used for CSU (Self-hosted) Channel databases.  It provides enough size and system utilization to typically handle a CSU (Self-hosted) Channel database for one to several retail store locations. |
+| Enterprise | SQL Server Enterprise is rarely necessary, but there are scenarios where it could be valuable. For example, if hosting a CSU (Self-hosted) in a datacenter VM for use across a large area of many devices, removing the limitations could be valuable to maximize performance capabilities. |
 
 ## Resources
 
