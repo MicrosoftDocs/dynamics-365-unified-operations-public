@@ -204,13 +204,13 @@ The system includes a collection of standard step icons that you can also reuse 
 
 ## <a name="example"></a>Example of assigning step titles and icons for a custom flow
 
-This example illustrates a custom task flow, which is also used in the blog post [Customizing the Warehousing Mobile App](https://cloudblogs.microsoft.com/dynamics365/it/2017/07/06/customizing-the-warehousing-mobile-app). This task flow works as follows:
+This example illustrates how to set up step titles and icons for a custom task flow. The scenario is built on a custom task flow example that is also presented and further explored in the blog post [Customizing the Warehousing Mobile App](https://cloudblogs.microsoft.com/dynamics365/it/2017/07/06/customizing-the-warehousing-mobile-app). The task flow works as follows:
 
 1. The app shows a screen asking the worker to provide a container ID (for example, by scanning a barcode).
 1. If the container ID is valid, the app opens a new screen, asking for the weight. (If the container ID isn't valid, the worker is returned to the first screen.)
 1. When the worker enters a valid weight, the system stores the weight and returns to the initial screen.
 
-The following illustration shows this task flow.
+The following figure illustrates this task flow.
 
 ![Task flow diagram](media/step-icons-example-task-flow.png "Task flow diagram")
 
@@ -250,7 +250,7 @@ The weight input screen enables the worker to enter a weight.
 
 On the weight input screen, the control name of the input field is `Weight` which is in the step ID list. So, if you can accept the step title and icon defined in class `WHSMobileAppStepWeight`, then you don't need to change anything this step.
 
-However, if you prefer to use a different title or icon for this step, you do so by overriding either the `stepId()` or `stepInfo()` method in the builder class. Each task flow has its own step info builder.
+However, if you prefer to use a different title or icon for this step, you can do so by overriding either the `stepId()` or `stepInfo()` method in the builder class. Each task flow has its own step info builder.
 
 #### Override the stepId() method
 
@@ -302,3 +302,8 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
 ```
 
 Then construct a `WHSMobileAppStepInfo` object and set the icon and/or title directly.
+
+## Additional resources
+
+- [Install and connect the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
+- [Mobile device user settings](mobile-device-user-settings.md)
