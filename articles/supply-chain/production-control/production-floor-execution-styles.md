@@ -26,7 +26,7 @@ ms.dyn365.ops.version: Release 10.0.15
 
 The topic explains how to configure form controls so that the default production floor execution styles are applied to them.
 
-## Dialog
+## Forms and dialogs
 
 Styles can be applied to a form or dialog only if the following requirements are met:
 
