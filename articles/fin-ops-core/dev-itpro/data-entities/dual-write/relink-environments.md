@@ -34,6 +34,7 @@ In this scenario, dual-write is enabled between Finance and Operations and Datav
     - **DualWriteProjectConfiguration**
     - **DualWriteFieldConfiguration**
     - **BusinessEventsDefinition**
+    - **Dual Write Runtime Configurations**
 
 4. You may want to relink Finance and Operations UAT environment against Dataverse UAT environment. 
 5. Enable the maps.
