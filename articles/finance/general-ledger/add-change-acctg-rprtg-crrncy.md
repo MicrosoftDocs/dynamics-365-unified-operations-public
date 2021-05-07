@@ -2,7 +2,7 @@
 # required metadata
 
 title: Change the accounting or reporting currency 
-description: This topic describes the process of changing the accounting or reporting currency, or adding a reporting currency to the setup of a ledger.
+description: This topic explains how to change the accounting or reporting currency, or add a reporting currency to the setup of a ledger.
 author: kweekley
 ms.date: 05/05/2021
 ms.topic: index-page
@@ -29,77 +29,57 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the process of changing the accounting or reporting currency, or adding a reporting currency to the setup of a ledger.
+This topic explains how to change the accounting or reporting currency, or add a reporting currency to the setup of a ledger.
 
 ## Symptom
 
-How do I change the accounting or reporting currency, or add a reporting currency to the Ledger setup?
+You want to change the accounting or reporting currency, or add a reporting currency to the ledger setup. This issue typically occurs in the following scenarios:
 
-The following scenarios typically trigger this question:
+- The wrong accounting or reporting currency was specified when a legal entity was set up. You now want to change that currency.
+- No reporting currency was specified when a legal entity was set up. (A reporting currency is optional.) You now want to add a reporting currency.
 
-- A legal entity was set up with the wrong accounting or reporting currency and you want to change that currency.
+An organization that didn't previously use the Dual currency capability wants to start to use it.
 
-- A legal entity was set up without a reporting currency, which is optional, and you want to add the reporting currency.
+- A reporting currency was specified when a legal entity was set up, but the organization now wants to remove the reporting currency.
+- The organization is upgrading or migrating to Microsoft Dynamics 365 Finance, and wants to change the accounting or reporting currency.
 
-Some organizations that haven't been using the Dual currency capability, ask how to start using it.
+## Resolution
 
-- A legal entity was set up with a reporting currency and the organization wants to remove the reporting currency.
+The most important consideration is whether any transactions (actual or budget) have been posted in the legal entity for the ledger setup. **You can't change the accounting or reporting currency, or add a reporting currency, if any transactions (actual or budget) have been posted in the legal entity.** Follow the steps in one of the following sections, depending on whether transactions have been posted.
 
-- An organization is upgrading or migrating to Dynamics 365 Finance and wants to change the accounting or reporting currency.
+### No transactions have been posted
 
-### Resolution
+1. In the legal entity that you're updating currencies for, go to **General ledger \> Ledger setup \> Ledger**.
+2. On the **Ledger** page, select **Edit**.
+3. On the **Currency** FastTab, select the accounting currency and reporting currency to use for the legal entity.
+4. Select **Save**.
 
-The most important detail to consider when answering this question is whether any transactions (actual or budget) have been posted into the legal entity for the Ledger setup. **It is not possible to change the accounting or reporting currency or add a reporting currency if a single transaction (actual or budget) has been posted within the legal entity.**  The following steps can be taken regardless of whether or not transactions have been posted. 
+If the fields for the accounting currency and the reporting currency aren't available on the **Ledger** page, one or more transactions (actual or budget) have been posted in the legal entity. Therefore, the currencies can't be changed. In this case, follow the steps in the next section.
 
-#### No transactions posted
+### Transactions have been posted
 
-- In the legal entity that you’re updating currencies for, navigate to **General Ledger > Ledger Setup > Ledger**.
+**If transactions have been posted in the legal entity, the only way to change or add accounting and reporting currencies is to create a new legal entity that has the correct currencies.** To help make this process easier, Data management in the system lets you copy setup records and master records from the current legal entity to a new legal entity.
 
-- On the **Ledger** page, click the **Edit** button in the upper left corner of the page.
+Changes to the accounting and reporting currencies are pervasive. They affect not only General ledger but also every subledger (Accounts receivable, Accounts payable, Inventory, Project, and so on), every independent software vendor (ISV) solutions, and any extension that you've made that stores amounts.
 
-- Beneath the **Currency** FastTab, select the accounting and reporting currencies to use for this legal entity.
+The process of finding and translating each amount to a different currency is subject to error. Therefore, the engineering team won't approve a script that changes or adds accounting and reporting currencies. Additionally, although a tool that used to be available for Microsoft Dynamics AX 2012 let you change or add accounting and reporting currencies, that tool was deprecated for both AX 2012 R3 and Finance.
 
-- Click **Save**.
+Follow these steps to copy the setup and master data from the current legal entity to a new legal entity.
 
-If the accounting and reporting currency fields are not enabled on your **Ledger** page, one or more transactions (actual or budget) have been posted into the legal entity and the currencies can’t be changed. If that is the case, complete the following steps.
+1. Go to **Workspaces \> Data management**.
+2. On the **Import/Export** Action Pane, select **Templates**.
+3. Make sure that templates are available. If no templates are available, select **Load default templates**, and wait for the templates to be generated.
+4. Return to the **Data management** workspace.
+5. Select **Copy into legal entity**.
+6. Enter a group name and description.
+7. In the **Source legal entity** field, select the legal entity to copy data from.
+8. In **Destination legal entities**, select **Create legal entities** to create a new legal entity that you can copy the source legal entity data to. Select **Select existing** to copy data to an existing legal entity.
+9. Set **Copy number sequences** to true. (This step is recommended when you copy data.)
+10. In the bottom window, select **Add template**.
+11. Select the templates to use. Suggested templates for a new legal entity include **025 - General Ledger** and **Financials**. We recommend that you review all the other available templates to determine whether any of them apply to your requirements.
+12. Select **Copy into legal entity** to start a batch process that will create the selected entities and copy them into the destination legal entity.
+13. After the process is completed, but before any transaction are posted, go to the ledger, and update the accounting and reporting currencies as described earlier in this topic.
 
-#### Transactions posted
+If you created a new legal entity so that you can change the accounting or reporting currency, verify that the beginning balances are translated from the currencies of the old legal entity to the new currencies.
 
-**The only option to modify or add the accounting and reporting currencies is to create a new legal entity with the correct currencies. To make the creation of the legal entity easier, use Data management within the system to copy setup and master records from the current legal entity to the new legal entity.** 
-
-Changing the accounting or reporting currency is a pervasive change. This change doesn’t impact General ledger only, but also every subledger (Accounts receivable, Accounts payable, Inventory, Project, and so on), ISV solution, as well as any extension that you might have made that stores amounts.   
-
-Finding and translating each of these amounts to a different currency is subject to error. Because of this, the engineering team won’t approve a script to modify or add the accounting and reporting currencies.  Also, while a tool used to be available for Microsoft Dynamics AX 2012 to modify or add the accounting and reporting currency, that tool was deprecated for both Microsoft Dynamics AX 2012 R3 and Dynamics 365 Finance. 
-
-Here is a step-by-step outline for the process of copying the setup and master data from the current legal entity to the new legal entity.
-
-- Navigate to **Workspaces > Data management**.
-
-- Choose the **Templates** option in the **Import/Export** Action Pane.
-
-- Make sure there are templates available. If no templates are available, select the **Load default templates** menu selection and wait for the templates to be generated.
-
-- Return to the **Data management** workspace.
-
-- Click the **Copy into legal entity** action.
-
-- Enter a group name and description.
-
-- In the **Source legal entity** field, select the company to copy data from.
-
-- In **Destination legal entities**, use the **Create legal entities** option to create a new company in which you want to copy the source company data into. If you wish to copy data into an existing legal entity, click the **Select existing** option to do so.
-
-- Set **Copy number sequences** to true (this is a good idea when performing the copy).
-
-- In the bottom window, choose **Add template** option. 
-
-- Select templates to use. Suggested templates for a new company include "025 - General Ledger", and "Financials". We recommend reviewing all the available templates to see if there are any other ones that apply to your needs.
-
-- Choose the **Copy into legal entity** menu selection to start a batch process that will create and copy the selected entities into the destination company.
-
-- When the process is finished, and before any transaction are posted, go to the ledger and update the accounting and reporting currencies.
-
-If a new legal entity was created to change the accounting or reporting currencies, verify that the beginning balances are translated from the previous legal entities’ currencies to the new accounting or reporting currencies.
-
-For a video describing the steps above, click the following link https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017.
-
+For a video that shows the preceding steps, see [Copy Into Legal Entity](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017).
