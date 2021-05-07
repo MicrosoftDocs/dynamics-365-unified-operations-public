@@ -1490,10 +1490,21 @@
             href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
           - name: Add data fields in the tax integration by using extensions
             href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-          - name: Multiple VAT registration numbers
-            href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
           - name: Set up an environment for master data lookup
             href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+          - name: Multiple VAT registration numbers
+            href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
+          - name: Reporting for multiple VAT registrations overview
+            href: localizations/reporting-multiple-vat-registrations-overview.md?toc=/dynamics365/finance/toc.json
+            items:
+            - name: Reporting for multiple VAT registrations
+              href: localizations/reporting-multiple-vat-registrations.md?toc=/dynamics365/finance/toc.json
+            - name: Netherlands reporting
+              items:
+              - name: VAT declaration
+                href: localizations/emea-nld-VAT-declaration-tax-declaration-model.md
+              - name: EU sales list
+                href: localizations/emea-nld-EU-sales-list.md
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
       - name: Australia
