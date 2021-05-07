@@ -26,24 +26,24 @@ ms.dyn365.ops.version: Release 10.0.15
 
 The topic explains how to configure form controls so that the default production floor execution styles are applied to them.
 
-## Dialog
+## Dialog box
 
-Styles can be applied to a form or dialog only if the following requirements are met:
+Styles can be applied to a form or dialog box only if the following requirements are met:
 
-- If the form should resemble the existing report progress form, then the name of your form or dialog must start with **JmgProductionFloorExecutionCustomInputDialog**.
-- The form or dialog may contain a detail form part. To apply styles to it, the name of the detail form part must start with **JmgProductionFloorExecutionCustomDetailsDialog**.
-- If the form or dialog should have a simple view, then the name of the simple view must start with **JmgProductionFloorExecutionCustomDialog**. Examples of forms that have a simple view include the start form and the indirect activity form.
-- All the controls in the dialog must be configured as described in this topic.
+- If the form should resemble the existing report progress form, then the name of your form or dialog box must start with **JmgProductionFloorExecutionCustomInputDialog**.
+- The form or dialog box can contain a detail form part. To apply styles to it, the name of the detail form part must start with **JmgProductionFloorExecutionCustomDetailsDialog**.
+- If the form or dialog box should have a simple view, then the name of the simple view must start with **JmgProductionFloorExecutionCustomDialog**. Examples of forms that have a simple view include the start form and the indirect activity form.
+- All the controls in the dialog box must be configured as described in this topic.
 
 > [!IMPORTANT]
 > The features mentioned in the first two bullet points of this list require Supply Chain Management version 10.0.19 or later.
 
-Styles can be applied to the **OK** button in a dialog only if the following requirements are met:
+Styles can be applied to the **OK** button in a dialog box only if the following requirements are met:
 
 - The button is contained in a form group.
 - The group name starts with **OkButtonGroup**.
 
-Styles can be applied to the **Cancel** button in a dialog only if the following requirements are met:
+Styles can be applied to the **Cancel** button in a dialog box only if the following requirements are met:
 
 - The button is contained in a form group.
 - The group name starts with **CancelButtonGroup**.
