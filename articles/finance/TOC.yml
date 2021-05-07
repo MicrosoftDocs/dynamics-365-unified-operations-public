@@ -428,6 +428,8 @@
           href: accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md
         - name: Settle a partial customer payment that has multiple discount periods
           href: accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
+        - name: Customer prepayments
+          href: accounts-receivable/customer-prepayments.md
         - name: Reimburse customers
           href: accounts-receivable/reimburse-customers.md
         - name: Customer payments for a partial amount
@@ -1648,8 +1650,16 @@
             href: localizations/bra-use-tax-exemption-nf-e.md
         - name: SPED ECD
           href: localizations/latam-bra-sped-ecd.md
-        - name: SPED-Reinf tax statement
-          href: localizations/latam-bra-sped-reinf.md
+        - name: SPED-Reinf
+          items:
+          - name: SPED-Reinf Overview
+            href: localizations/latam-bra-sped-reinf-overview.md
+          - name: Set up electronic message
+            href: localizations/latam-bra-sped-reinf-electronic-messages.md
+          - name: Set up fiscal books
+            href: localizations/latam-bra-sped-reinf-setup-fiscal-books.md
+          - name: Events
+            href: localizations/latam-bra-sped-reinf.md
         - name: SPED fiscal resolution 13/2019 RJ
           href: localizations/latam-bra-resolution-13-2019-RJ.md
         - name: SPED fiscal 2020 - Complementary information of the ICMS-ST for SPED fiscal layout 014

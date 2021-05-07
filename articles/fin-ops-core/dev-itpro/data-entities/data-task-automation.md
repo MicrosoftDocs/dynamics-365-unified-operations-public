@@ -4,7 +4,7 @@
 title: Data task automation
 description: This topic explains how you can use data task automation to repeat many types of data tasks and validate the outcome of each task.
 author: Sunil-Garg
-ms.date: 12/04/2019
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -58,7 +58,7 @@ We recommend the following approach for data task automation.
     > [!IMPORTANT]
     > Although data task automation can be run in any environments in the cloud, we recommend that you not run any import/export tasks that use integration APIs in a production environment. Data task automation that involves integration APIs should be used only for automated testing.
 
-The following video is a 55-minute TechTalk that walks you through an early release of Data task automation manager: [Task automation framework](https://academylive.blob.core.windows.net/media/PAL/TechTalks-EnterpriseEdition/TaskAutomationFrameworkForDataManagement-DYN447PAL2.mp4).
+The following video is a 55-minute TechTalk that walks you through an early release of [Task automation framework](https://community.dynamics.com/365/b/techtalks/posts/task-automation-framework-for-data-management-march-3-2018).
 
 ## Task manifest
 A task must be defined in an XML manifest. This section describes the manifest. For guidance about how to name and design the manifest, see the "Best practices for manifest design" section later in this topic.
