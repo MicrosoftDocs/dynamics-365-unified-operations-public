@@ -2753,6 +2753,10 @@
           href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
         - name: Audit file (XML Auditfile Financieel XAF)
           href: localizations/emea-nl-audit-file.md
+        - name: VAT declaration (Netherlands)
+          href: localizations/emea-nld-VAT-declaration-tax-declaration-model.md
+        - name: EU sales list
+          href: localizations/emea-nld-EU-sales-list.md
       - name: Norway
         items:
         - name: Norway overview
