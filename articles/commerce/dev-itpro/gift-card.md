@@ -94,7 +94,7 @@ In the following example, if the first four digits of a card number are **6036**
 
 10. Select **Save**.
 11. Select **Card setup**, then select **New** to map the gift card payment method to the newly created external gift card payment method for the San Francisco store.
-12. If the gift car number may be entered in the point of sale, in addition to on the the payment terminal itself, expand the **General** fasttab and set **Allow manual entry** to **Yes**.
+12. If the gift card number can be entered in the POS in addition to on the the payment terminal, expand the **General** FastTab and set **Allow manual entry** to **Yes**.
 
 ## POS setup
 
