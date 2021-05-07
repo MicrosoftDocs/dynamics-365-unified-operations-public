@@ -4,7 +4,7 @@
 title: Usage management dashboard
 description: This topic explains how to use the Usage management dashboard to monitor usage of the Electronic Invoicing service and remain compliant.
 author: gionoder
-ms.date: 05/05/2021
+ms.date: 05/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -62,7 +62,7 @@ This indicator provides details about the electronic invoices that your organiza
 
 ### Counting criteria
 - The number of business documents that are submitted from Finance and Supply Chain Management to the Electronic Invoicing service, regardless of number of lines that those business documents contain.
-- And the number of submitted business documents that are successfully processed by the Electronic Invoicing service. A document is considered successfully processed when the flow of actions that are defined in the feature setup is completed.
+- The number of submitted business documents that are successfully processed by the Electronic Invoicing service. A document is considered successfully processed when the flow of actions that are defined in the feature setup is completed.
 
 > [!NOTE]
 > When an electronic invoice is submitted to an external web service, counting is independent of the results of web service processing (accepted, rejected, or schema validation error). If the web service received and responded to the request from the Electronic Invoicing service, the submission is considered a valid counting.
@@ -72,7 +72,7 @@ This indicator provides details about the electronic invoices that your organiza
 
 ### Calculation
 
-The calculation of the Balance volume is calculated as follows:
+The calculation of the balance volume is calculated as follows:
 
 Balance volume = Free volume + Purchased volume – Used volume
 
