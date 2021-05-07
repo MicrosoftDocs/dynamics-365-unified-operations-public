@@ -94,7 +94,7 @@ In the following example, if the first four digits of a card number are **6036**
 
 10. Select **Save**.
 11. Select **Card setup**, then select **New** to map the gift card payment method to the newly created external gift card payment method for the San Francisco store.
-12. If the gift card number can be entered in the POS in addition to on the the payment terminal, expand the **General** FastTab and set **Allow manual entry** to **Yes**.
+12. If the gift card number can be entered in the POS in addition to on the payment terminal, expand the **General** FastTab and set **Allow manual entry** to **Yes**.
 
 ## POS setup
 
@@ -260,7 +260,7 @@ To configure the payment accounts for your online store to use Adyen for externa
 
 #### Test connector external gift card setup
 
-To set up external gift cards for the test connector, on the **Payment services** page, select **Dyn Online**, and then, in the **Supported Tender Types** field, add **;GiftCard** after **Debit**. Then select **Credit card types**, and assign a payment journal to the gift card payment method.
+To set up external gift cards for the test connector, on the **Payment services** page, select **Dyn Online**, and then, in the **Supported Tender Types** field, add **GiftCard** after **Debit**. Then select **Credit card types**, and assign a payment journal to the gift card payment method.
 
 ### Gift card product setup
 
