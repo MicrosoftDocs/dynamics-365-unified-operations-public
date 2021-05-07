@@ -213,29 +213,29 @@ For more information about this functionality, see the "Reverse charge configura
 
 ### Automatically assigned Natura codes
 
-The system automatically assigns the following Natura codes depending on the operation:
+The system automatically assigns the following Natura codes, depending on the operation.
 
-| Code | Description                 | Required configuration                                                                                                     |
-|---------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| N1      | Excluded pursuant to Art. 15    | The sales tax code's **VAT type** field value is **Exempt**. This sales tax code is assosiated with the exempt code that's marked as **Exempt Art.15** in the **Exempt reason** field.|
-| N2.2    | Not subject to VAT - other cases | The sales tax code's **VAT type** field value is **Not subject to VAT**.|
-| N3.1    | Non-Taxable - exports | The sales tax code's **VAT type** field value is **Zero** and the customer's address is outside the EU.|
-| N3.2    | Non-Taxable - intra-community transfers | The sales tax code's **VAT type** field value is **Zero** and the customer's address is within the EU.|
-| N3.3    | Non-Taxable - sales to San Marino | The sales tax code's **VAT type** field value is **Zero** and the customer's address is in San Marino.|
-| N3.5    | Non-Taxable - following declarations of intent | The sales tax code's **VAT type** field value is **Zero** and a valid intent letter is registered.|
-| N3.6    | Non-Taxable - other cases | The default value for all other cases when the sales tax code's **VAT type** field value isn't set to **Standard**.|
-| N4      | Exempt  | The sales tax code's **VAT type** field value is **Exempt** and this sales tax code is assosiated with the exempt code, **Exempt reason** which is different from  **Exempt Art.15** and **Edge regime**.|
-| N5      | Margin scheme / VAT not shown on the invoice  | The sales tax code's **VAT type** field value is **Exempt**. This sales tax code is assosiated with exempt code that is marked as **Edge regime** in the **Exempt reason** field.|
-| N6.1    | Reverse charge - transfer of scrap and other recycled materials | The sales tax code is marked as **Reverse charge** and the related reverse charge group is associated with **Scrap** value in the application specific parameters.|
-| N6.2    | Reverse charge - transfer of gold and pure silver | The sales tax code is marked as **Reverse charge** and the related reverse charge group is associated with **Gold** value in the application specific parameters.|
-| N6.3    | Reverse charge - subcontracting in the construction sector | TThe sales tax code is marked as **Reverse charge** and the related reverse charge group is associated with **Subcontracting** value in the application specific parameters. |
-| N6.4    | Reverse charge - sale of buildings | The sales tax code is marked as **Reverse charge** and the related reverse charge group is associated with **Buildings** value in the application specific parameters. |
-| N6.5    | Reverse charge - sale of cell phones | The sales tax code is marked as **Reverse charge** and the related reverse charge group is associated with **Cell phones** value in the application specific parameters.|
-| N6.6    | Reverse charge - sale of electronic products | The sales tax code is marked as **Reverse charge** and the related reverse charge group is associated with **Electronic products** value in the application specific parameters.|
-| N6.7    | Reverse charge - services for the construction sector and related sectors | The sales tax code is marked as **Construction sector** and the related reverse charge group is associated with **Scrap** value in the application specific parameters.|
-| N6.8    | Reverse charge - energy sector operations | The sales tax code is marked as **Reverse charge** and the related reverse charge group is associated with **Energy sector** value in the application specific parameters.|
-| N6.9    | Reverse charge - other cases | The sales tax code is marked as **Reverse charge** and the related reverse charge group is associated with **Other** value in the application specific parameters.|
-| N7      | VAT paid in another EU state | Sales tax code's **Country/region type** field value is**EU**. |
+| Code    | Description | Required configuration |
+|---------|-------------|------------------------|
+| N1      | Excluded pursuant to Art. 15 | The sales tax code's **VAT type** field is set to **Exempt**, and the sales tax code is associated with the exempt code that is marked as **Exempt Art.15** in the **Exempt reason** field. |
+| N2.2    | Not subject to VAT - other cases | The sales tax code's **VAT type** field is set to **Not subject to VAT**.|
+| N3.1    | Non-Taxable - exports | The sales tax code's **VAT type** field is set to **Zero**, and the customer's address is outside the EU.|
+| N3.2    | Non-Taxable - intra-community transfers | The sales tax code's **VAT type** field is set to **Zero**, and the customer's address is in the EU.|
+| N3.3    | Non-Taxable - sales to San Marino | The sales tax code's **VAT type** field is set to **Zero**, and the customer's address is in San Marino.|
+| N3.5    | Non-Taxable - following declarations of intent | The sales tax code's **VAT type** field is set to **Zero**, and a valid intent letter is registered.|
+| N3.6    | Non-Taxable - other cases | This code is the default value for all other cases where the sales tax code's **VAT type** field isn't set to **Standard**.|
+| N4      | Exempt | The sales tax code's **VAT type** field is set to **Exempt**, and the sales tax code is associated with an exempt code that is marked as something other than **Exempt Art.15** or **Edge regime** in the **Exempt reason** field.|
+| N5      | Margin scheme / VAT not shown on the invoice | The sales tax code's **VAT type** field is set to **Exempt**, and the sales tax code is associated with the exempt code that is marked as **Edge regime** in the **Exempt reason** field.|
+| N6.1    | Reverse charge - transfer of scrap and other recycled materials | The sales tax code is marked as **Reverse charge**, and the related reverse charge group is associated with the **Scrap** value in the application-specific parameters.|
+| N6.2    | Reverse charge - transfer of gold and pure silver | The sales tax code is marked as **Reverse charge**, and the related reverse charge group is associated with the **Gold** value in the application-specific parameters. |
+| N6.3    | Reverse charge - subcontracting in the construction sector | The sales tax code is marked as **Reverse charge**, and the related reverse charge group is associated with the **Subcontracting** value in the application-specific parameters. |
+| N6.4    | Reverse charge - sale of buildings | The sales tax code is marked as **Reverse charge**, and the related reverse charge group is associated with the **Buildings** value in the application-specific parameters. |
+| N6.5    | Reverse charge - sale of cell phones | The sales tax code is marked as **Reverse charge**, and the related reverse charge group is associated with the **Cell phones** value in the application-specific parameters.|
+| N6.6    | Reverse charge - sale of electronic products | The sales tax code is marked as **Reverse charge**, and the related reverse charge group is associated with the **Electronic products** value in the application-specific parameters.|
+| N6.7    | Reverse charge - services for the construction sector and related sectors | The sales tax code is marked as **Construction sector**, and the related reverse charge group is associated with the **Scrap** value in the application-specific parameters.|
+| N6.8    | Reverse charge - energy sector operations | The sales tax code is marked as **Reverse charge**, and the related reverse charge group is associated with the **Energy sector** value in the application-specific parameters.|
+| N6.9    | Reverse charge - other cases | The sales tax code is marked as **Reverse charge**, and the related reverse charge group is associated with the **Other** value in the application-specific parameters.|
+| N7      | VAT paid in another EU state | The sales tax code's **Country/region type** field is set to **EU**. |
 
 ### <a id="invoicetypes"></a>Invoice types
 
