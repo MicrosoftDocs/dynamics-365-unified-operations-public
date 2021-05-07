@@ -620,7 +620,7 @@ The following peripherals were tested by using the IPC hardware station that is 
 | HP           | F7M67AA  | OPOS      | Powered USB             |
 
  > [!NOTE]
-    > The Star TSP 100 printer is not supported for built-in hardware station. The built-in hardware station uses a 64-bit process, which is not compatible with existing Star TP 100 drivers. 
+ > The Star TSP 100 printer isn't supported for the built-in hardware station. The built-in hardware station uses a 64-bit process, which isn't compatible with existing Star TP 100 drivers. 
 
 #### Bar code scanner
 
