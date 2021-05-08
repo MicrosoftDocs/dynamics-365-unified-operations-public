@@ -34,7 +34,7 @@ ms.dyn365.ops.version:
 
 This topic covers the display settings for product dimensions and describes how to apply them in Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce supports dimensions Size, Style and Color for representing product variants. These dimensions are typically displayed as text value E.g Size = Small, Large, Medium or Color = Black, Brown. However, for a product that supports many variations, browsing through these variants requires multiple selections to view each product variant image. This makes the selection process slow and tedious for a shopper. Refer to [Configure product dimension to be represented as swatch](/dev_itpro/dimensions_ swatch.md) to setup the dimension values to be represented as a swatch. 
+Dynamics 365 Commerce supports dimensions Size, Style and Color for representing product variants. These dimensions are typically displayed as text value E.g Size = Small, Large, Medium or Color = Black, Brown. However, for a product that supports many variations, browsing through these variants requires multiple selections to view each product variant image. This makes the selection process slow and tedious for a shopper. Refer to [Configure product dimension to be represented as swatch](./dev_itpro/media/dimensions_ swatch.md) to setup the dimension values to be represented as a swatch. 
 
 In e-Commerce, dimensions settings are defined at Site Settings > Extensions > Dimension Settings in site builder. There are two settings available:
 
