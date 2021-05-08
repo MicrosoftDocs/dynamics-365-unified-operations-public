@@ -42,7 +42,7 @@ Displaying dimensions as swatches provides a preview of the product and allows y
 The following is an illustration of displaying Colors as a swatch on e-commerce. 
 ![Example of displaying color as swatch on e-commerce product details page](../dev-itpro/media/swatch_pdp.png)
 
-The following is an illustration of refiner experience in e-commerce where the refiner panel shows grouped colors. 
+The following is an illustration of displaying Colors as a swatch on search results page on e-Commerce.
 ![Example of displaying color as swatch on e-commerce list page](../dev-itpro/media/swatch_searchresults.PNG)
 
 ## Feature flag management
