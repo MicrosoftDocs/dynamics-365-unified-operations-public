@@ -1,6 +1,6 @@
 ---
 title: User-specified team owner
-description: 
+description: This topic explains how to switch from using default team owner to user specified team owner  
 author: sabinn-msft
 ms.date: 04/26/2021
 ms.topic: article
@@ -12,14 +12,33 @@ ms.search.validFrom: 2021-04-26
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Error management and alert notifications
+# User specified team owner
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
+In Finance and Operations apps, global tables are not tied to a company or legal entity. For these tables, you can specify a team and not use a default team as owner when writing to Dataverse using dual-write. 
 
+By default, when you enable dual-write, the root business unit’s default team will become the default owner for all rows integrated through dual-write. This may not be desirable in situations wherein you want to limit access to these records to just a subset of users. It’s not uncommon for an organization to have multiple departments defined by Business Units with corresponding teams under it. You don’t want all users of the default team to have access to all the records integrated via dual-write. In such situations, you can specify a different team for each global table(s) as an owner for these records. 
+When you click on a global table map such as Global Products, under Table mappings, you can view the list of teams under the Update owning team. By default, we use the default team indicated by blank value. After you create a new map with a new version, you change the default behavior by picking a new team from the owning team list and hit Save. 
 
+>[!NOTE]
+  >
+  > * Once you set owning team, it will work across both, initial and live sync.. 
+  >
+  > * Owning team setting is not transferrable across environments. 
+  > 
+  
+ 
+ 
+ ![Update owning team](media/owning-team-1.png)
+ 
+ 
+ After you run initial sync, 'Sales team' is owner for the integrated records in Global Products table map.
+ 
+ 
+ ![Initial sync with default and user specified team](media/owning-team-2.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
