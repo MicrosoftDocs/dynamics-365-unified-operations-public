@@ -40,12 +40,15 @@ In e-Commerce, dimensions settings are defined at Site Settings > Extensions > D
 
 - **Dimensions to display as swatch**: This setting defines which dimensions should appear as a swatch on e-commerce experiences such as product details page, refiners, quick view module etc. Any combination of Color, Size, Style can be displayed as a swatch. If a dimension is selected to be displayed as a swatch, e-commerce module rendering will look-up for available hexcode configuration. If there is no hexcode configured, it will fallback and check for an image url configuration. If both are missing, text will be displayed. Below is an example where Color and Size are selected to be swatch. Color shows hexcode but Size fallsback to Text.
 
-![Example of displaying color as swatch on e-commerce product details page](../dev-itpro/media/swatch_pdp.png)
+![Example of displaying color as swatch on e-commerce product details page](./dev-itpro/media/swatch_pdp.png)
 
 - **Dimensions to display in Product card**  This setting allows dimensions to be displayed on the product cards i.e on list pages and lists. If a dimension needs to be displayed on product card, this setting must be enabled for that dimension and it should also be enabled as a swatch. For example, to display Color on the product cards, the following should be configured. In addition, the swatch selection behavior on product cards along with the refiner experience is most optimized for Color dimension. For other dimensions, a view extension may be needed to provide an optimal experience. 
 
-![Example of site settings on Site Builder](../dev-itpro/swatch_site_settings.PNG)
-![Example of displaying color as swatch on e-commerce list page](../dev-itpro/media/swatch_searchresults.PNG)
+The following are examples of Site builder settings and the e-commerce experience on product cards.
+
+![Example of site settings on Site Builder](./dev-itpro/media/swatch_site_settings.PNG)
+
+![Example of displaying color as swatch on e-commerce list page](./dev-itpro/media/swatch_searchresults.PNG)
 
 ## Additional resources
 
