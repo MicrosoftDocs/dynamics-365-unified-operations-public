@@ -48,6 +48,7 @@ The following are examples of Site builder settings and the e-commerce experienc
 
 ![Example of site settings on Site Builder](./dev-itpro/media/swatch_site_settings.PNG)
 
+
 ![Example of displaying color as swatch on e-commerce list page](./dev-itpro/media/swatch_searchresults.PNG)
 
 ## Additional resources
