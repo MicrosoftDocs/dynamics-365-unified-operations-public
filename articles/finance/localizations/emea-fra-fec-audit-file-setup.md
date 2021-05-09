@@ -37,7 +37,7 @@ Before you can generate a Fichier des écritures comptables (FEC) audit file, yo
 
 For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-To use the **FEC audit file (FR)** format, you must define the ER configuration name in a new General ledger parameter. 
+Starting in version 10.0.20, to use the **FEC audit file (FR)** format, you must define the ER configuration name in a new General ledger parameter. 
 
 1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **Ledger** tab, on the **Electronic reporting** FastTab, in the **Ledger transactions export** section, in the **Ledger transactions export** field, select the **FEC audit file (FR)** format.
