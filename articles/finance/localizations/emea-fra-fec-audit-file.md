@@ -27,9 +27,9 @@ ms.search.region: France
 
 Companies in France are legally required to export their accounting transaction data for a fiscal year. They must then provide that data to auditors in Fichier des écritures comptables (FEC) format within a reasonable amount of time.
 
-For more information about the requirements, see the following topics:
+For more information about how to prepare to generate FEC and generate it, see the following topics:
 
 - [Prerequisites for generating an FEC audit file in France](emea-fra-fec-audit-file-pre-requisites.md)
-- [Data source structure for FEC](emea-fra-fec-audit-file-structure.md)
-- [Structure of Dynamics 365 Finance data sources for the FEC](emea-fra-fec-audit-file-setup.md)
+- [Structure of Dynamics 365 Finance data sources for the FEC](emea-fra-fec-audit-file-structure.md)
+- [Prepare your environment to generate an FEC](emea-fra-fec-audit-file-setup.md)
 - [Generate the FEC in Dynamics 365 Finance](emea-fra-fec-audit-file-generation.md)
