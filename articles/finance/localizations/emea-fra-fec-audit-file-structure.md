@@ -45,11 +45,11 @@ The following table shows the **Main FEC file for the period specified** data st
 | 2      | JournalLib    | Alphanumérique | Le libellé journal de l'écriture comptable | The journal caption of the accounting entry. | \$GeneralJournalView\_FR/getGeneralJournalEntry()/deJournalLib\_FR() |
 | 3      | EcritureNum   | Alphanumérique | Le numéro sur une séquence continue de l'écriture comptable | The number in a continuous sequence for the accounting entry. | \$GeneralJournalView\_FR/GeneralJournalEntrySubledgerVoucher |
 | 4      | EcritureDate  | Date           | La date de comptabilisation de l'écriture comptable | The posting date of the accounting entry. | \$GeneralJournalView\_FR/GeneralJournalEntryAccountingDate |
-| 5      | CompteNum     | Alphanumérique | Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français | The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts. | \$GeneralJournalView\_FR/\$MainAccountId |
+| 5      | CompteNum     | Alphanumérique | Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français | The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts. Information on multiple customers or vendors transactions can be found in respective annexes. | \$GeneralJournalView\_FR/\$MainAccountId |
 | 6      | CompteLib     | Alphanumérique | Le libellé de compte, conformément à la nomenclature du plan comptable français | The account name in accordance with the nomenclature of the French chart of accounts. | \$GeneralJournalView\_FR/getGeneralJournalAccountEntry()/getMainAccountName() |
 | 7      | CompAuxNum    | Alphanumérique | Le numéro de compte auxiliaire (à blanc si non utilisé) | The auxiliary account number. This field is blank if it isn't used. | \$GeneralJournalView\_FR/getGeneralJournalAccountEntry()/deCompteAuxNum\_FR() |
 | 8      | CompAuxLib    | Alphanumérique | Le libellé de compte auxiliaire (à blanc si non utilisé) | The auxiliary account description. This field is blank if it isn't used. | \$GeneralJournalView\_FR/getGeneralJournalAccountEntry()/deCompteAuxLib\_FR() |
-| 9      | PieceRef      | Alphanumérique | La référence de la pièce justificative | The reference of the supporting document. | \$GeneralJournalView\_FR/getGeneralJournalEntry()/dePieceNum\_FR() |
+| 9      | PieceRef      | Alphanumérique | La référence de la pièce justificative | The reference of the supporting document. f reference of the supporting document cannot be found, this field is populated with EcritureNum. | \$GeneralJournalView\_FR/getGeneralJournalEntry()/dePieceNum\_FR() |
 | 10     | PieceDate     | Date           | La date de la pièce justificative | The date of the supporting document. | \$GeneralJournalView\_FR/getGeneralJournalEntry()/dePieceDate\_FR() |
 | 11     | EcritureLib   | Alphanumérique | Le libellé de l'écriture comptable | The wording of the accounting entry. | \$GeneralJournalView\_FR/\$ReplaceIntoDeEcritureLib\_FR |
 | 12     | Montant       | Numérique      | Le montant au débit/ au crédit | The debit/credit amount. | \$GeneralJournalView\_FR/\$AbsAmount |
@@ -61,6 +61,8 @@ The following table shows the **Main FEC file for the period specified** data st
 | 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | \$GeneralJournalView\_FR/GeneralJournalAccountEntryTransactionCurrencyCode |
 
 ## Customers fiscal year opening balances annex 
+
+Customers fiscal year opening transactions are posted as summary transactions in general ledger. To provide detailed information on fiscal year opening transactions by customers, the **Customers fiscal year opening balances annex** is implemented. This annex collects amounts of opening balances by customers on the beginning of the fiscal year and represents this information in combination with opening transaction voucher from general ledger.
 
 The following table shows the **Customers fiscal year opening balances annex** data structure definitions (\$CustLedgerBalance).
 
@@ -87,6 +89,8 @@ The following table shows the **Customers fiscal year opening balances annex** d
 
 ## Vendors fiscal year opening balances annex 
 
+Vendors fiscal year opening transactions are posted as summary transactions in general ledger. To provide detailed information on fiscal year opening transactions by vendors, the **Vendors fiscal year opening balances annex** is implemented. This annex collects amounts of opening balances by vendors on the beginning of the fiscal year and represents this information in combination with opening transaction voucher from general ledger.
+
 The following table shows the **Vendors fiscal year opening balances annex** data structure definitions.
 
 | Number | Name          | Type           | Description (FR) | Description (EN) | ER data source |
@@ -112,6 +116,8 @@ The following table shows the **Vendors fiscal year opening balances annex** dat
 
 ## Customers transactions annex for the period specified
 
+**Customers transactions annex for the period specified** annex can be requested to provide additional details on customers transactions. For example, in case a company uses [Allow multiple transactions within one voucher](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/one-voucher) parameter on the **General** tab of the **General ledger parameters** page, one voucher can be assigned to multiple customers transactions. To provide detailed infomration by customers accounts for such scenario, **Customers transactions annex for the period specified** annex is implemented. 
+
 The following table shows the **Customers transactions annex for the period specified** data structure definitions.
 
 | Number | Name          | Type           | Description (FR) | Description (EN) | ER data source |
@@ -136,6 +142,8 @@ The following table shows the **Customers transactions annex for the period spec
 | 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | \$CustTrans/CurrencyCode |
 
 ## Vendors transactions annex for the period specified
+
+**Vendors transactions annex for the period specified** annex can be requested to provide additional details on vendors transactions. For example, in case a company uses [Allow multiple transactions within one voucher](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/one-voucher) parameter on the **General** tab of the **General ledger parameters** page, one voucher can be assigned to multiple vendors transactions. To provide detailed infomration by vendors accounts for such scenario, **Vendors transactions annex for the period specified** annex is implemented. 
 
 The following table shows the **Vendors transactions annex for the period specified** data structure definitions.
 
@@ -170,11 +178,11 @@ The following table shows the **FEC main file including fiscal year opening bala
 | 2      | JournalLib    | Alphanumérique | Le libellé journal de l'écriture comptable | The journal caption of the accounting entry. | \$FECExtendedAggregation/\$JournalLibText |
 | 3      | EcritureNum   | Alphanumérique | Le numéro sur une séquence continue de l'écriture comptable | The number in a continuous sequence for the accounting entry. | \$FECExtendedAggregation/\$Voucher |
 | 4      | EcritureDate  | Date           | La date de comptabilisation de l'écriture comptable | The posting date of the accounting entry. | \$FECExtendedAggregation/\$Date |
-| 5      | CompteNum     | Alphanumérique | Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français | The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts. | \$FECExtendedAggregation/\$LedgerAccount |
+| 5      | CompteNum     | Alphanumérique | Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français | The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts. Information on multiple customers or vendors transactions can be found in respective annexes. | \$FECExtendedAggregation/\$LedgerAccount |
 | 6      | CompteLib     | Alphanumérique | Le libellé de compte, conformément à la nomenclature du plan comptable français | The account name in accordance with the nomenclature of the French chart of accounts. | \$FECExtendedAggregation/\$LedgerAccountName |
 | 7      | CompAuxNum    | Alphanumérique | Le numéro de compte auxiliaire (à blanc si non utilisé) | The auxiliary account number. This field is blank if it isn't used. | \$FECExtendedAggregation/\$AccountNum |
 | 8      | CompAuxLib    | Alphanumérique | Le libellé de compte auxiliaire (à blanc si non utilisé) | The auxiliary account description. This field is blank if it isn't used. | \$FECExtendedAggregation/\$PartyName |
-| 9      | PieceRef      | Alphanumérique | La référence de la pièce justificative | The reference of the supporting document. | \$FECExtendedAggregation/\$PieceNum |
+| 9      | PieceRef      | Alphanumérique | La référence de la pièce justificative | The reference of the supporting document. If reference of the supporting document cannot be found, this field is populated with EcritureNum. | \$FECExtendedAggregation/\$PieceNum |
 | 10     | PieceDate     | Date           | La date de la pièce justificative | The date of the supporting document. | \$FECExtendedAggregation/\$PieceDate |
 | 11     | EcritureLib   | Alphanumérique | Le libellé de l'écriture comptable | The wording of the accounting entry. | \$FECExtendedAggregation/\$EcritureLib |
 | 12     | Montant       | Numérique      | Le montant au débit/ au crédit | The debit/credit amount. | \$FECExtendedAggregation/\$AbsAmount |
@@ -183,4 +191,4 @@ The following table shows the **FEC main file including fiscal year opening bala
 | 15     | DateLet       | Date           | La date de lettrage (à blanc si non utilisé) | The lettering date. This field is blank if it isn't used. | \$FECExtendedAggregation/\$LastSettleDate |
 | 16     | ValidDate     | Date           | La date de validation de l'écriture comptable | The validation date of the accounting entry. | \$FECExtendedAggregation/\$ValidDate |
 | 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | \$FECExtendedAggregation/\$AmountCur |
-| 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. |  |
+| 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | $FECExtendedAggregation/$CurrencyCode |
