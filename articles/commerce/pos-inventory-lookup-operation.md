@@ -47,7 +47,7 @@ For an individual product, the inventory lookup operation provides an inventory 
 - **Ordered** - Refers to the "ordered in total" quantity retrieved from headquarters.
 - **Unit** - Refers to the inventory unit of measure configured in headquarters.
 
-The list view of locations includes all stores and warehouses that are configured in the fulfillment groups that the current store is linked to.
+The list view of locations includes all stores and warehouses that are configured in the fulfillment groups that the current store is linked to, as shown in the following example image.
 
 ![Inventory lookup operation list view](media/inventory-lookup-list-view.png)
 
@@ -71,6 +71,8 @@ The following actions are available on the POS app bar:
 ## Inventory lookup matrix view for variants
 
 For a master product with variants, the inventory lookup operation also provides a dimension-based matrix view that displays inventory availability information for all variants of the master product at a selected location. By default, the matrix view shows data for the current store. You can use the **Store** action on the app bar to look up inventory information at other stores configured in the fulfillment groups that the current store is linked to.
+
+The following example image shows the inventory lookup matrix view in POS.
 
 ![Inventory lookup operation matrix view](media/inventory-lookup-matrix-view.png)
 
@@ -96,6 +98,8 @@ The following actions are available in the matrix view cell:
 ## Access inventory lookup from other pages in POS
 
 POS users can access the inventory lookup operation from other pages in POS.
+
+The following example image shows inventory lookup results from a PDP in POS.
 
 ![Inventory lookup from product details page](media/inventory-lookup-from-product-details-page.png)
 
