@@ -93,7 +93,6 @@ Payment connectors are pluggable. In a development environment, you can put the 
 
 |  Connector | Contents of the IPaymentProcessor Assemblies folder | Contents of the Payment Web Files folder | Contents of the IPaymentDevice Assemblies folder |
 |-----------|-----------------------------|------------------------------|---|
-| Application Object Server (AOS)                                            | &lt;*Aos.PackageDirectory*&gt;/bin/Connectors/ &lt;*Aos.WebRoot*&gt;/bin/ | &lt;*Aos.WebRoot*&gt;/Connectors/        | Not applicable                                   |
 | Commerce Scale Unit                                                              | &lt;*RS.WebRoot*&gt;/bin/                                                 | Not applicable                           | Not applicable                                   |
 | Cloud POS                                                                  | Not applicable                                                            | &lt;*CPOS.WebRoot*&gt;/Connectors/       | Not applicable                                   |
 | Remote Hardware Station (Internet Information Services \[IIS\])            | &lt;*HWS.WebRoot*&gt;/bin/                                                | Not applicable                           | &lt;*HWS.WebRoot*&gt;/bin/                       |
@@ -102,8 +101,6 @@ Payment connectors are pluggable. In a development environment, you can put the 
 
 Here is a key to the preceding table:
 
-- &lt;*Aos.PackageDirectory*&gt; is the package directory of AOS. You can find the path from the web.config file for AOS (key = **Aos.PackageDirectory**).
-- &lt;*Aos.WebRoot*&gt; is the web application root of AOS.
 - &lt;*RS.WebRoot*&gt; is the web application root of Commerce Scale Unit.
 - &lt;*HWS.WebRoot*&gt; is the web application root of a remote Hardware Station.
 - &lt;*MPOS.AppRoot*&gt; is the app installation folder of Modern POS (for example, C:\\Program Files (x86)\\Microsoft Dynamics AX70\\Retail Modern POS).

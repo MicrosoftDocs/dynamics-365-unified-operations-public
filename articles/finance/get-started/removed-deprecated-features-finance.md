@@ -41,7 +41,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Finance 10.0.20 release
 
-### RTIR Query Invoice Data Request (HU) format configuration
+### "RTIR Query Invoice Data Request (HU)" Electronic reporting (ER) format configuration
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -51,6 +51,15 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: By April 15, 2022, we plan to no longer support "RTIR Query Invoice Data Request (HU)" format configuration. |
 
+### "French FEC audit file" Electronic reporting (ER) format for France under "German audit file output" format
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with new "FEC audit file (FR)" format |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: by May 1, 2022, we plan to no longer support "French FEC audit file" Electronic reporting (ER) format for France under "German audit file output" format. New FEC audit file (FR) format is introduced instead under the "Data export model". |
 
 ## Features removed or deprecated in the Finance 10.0.17 release
 
@@ -110,7 +119,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Finance 10.0.12 release
 
-### Polish SSRS reports: Sales VAT register, Purchase VAT register, EU summary VAT register – Feature reference PL-00014
+### Not deprecated: Polish SSRS reports: Sales VAT register, Purchase VAT register, EU summary VAT register – Feature reference PL-00014
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -118,7 +127,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes (Excel format for Standard Audit File with VAT declaration - JPK_VDEK) |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By July 1, 2021, we plan to no longer support the SSRS reports: **Sales VAT register, Purchase VAT register, EU summary VAT register – Feature reference PL-00014**. Excel format example for Standard Audit File with VAT declaration (JPK_VDEK) will be introduced instead. |
+| **Status**                         | Not deprecated: As of April 27, 2021, we plan to continue to support the SSRS reports: **Sales VAT register, Purchase VAT register, EU summary VAT register – Feature reference PL-00014**. Excel format example for Standard Audit File with VAT declaration (JPK_VDEK) has also been introduced. |
 
 ## Features removed or deprecated in the Finance 10.0.11 release
 

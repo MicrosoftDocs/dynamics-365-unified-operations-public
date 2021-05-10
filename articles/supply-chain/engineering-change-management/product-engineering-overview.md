@@ -67,4 +67,7 @@ Next, turn on the configuration keys by following these steps.
 1. If you also want to use the version dimension, then select the **Product dimension - Version** check box. (This check box is further down the list, not nested under the **Engineering Change Management** node.)
 1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
+> [!IMPORTANT]
+> Starting in April 2022, the license keys for both **Engineering Change Management** and **Product dimension - Version** will be enabled by default for all new installations, but you will still be able to disable them if needed.
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

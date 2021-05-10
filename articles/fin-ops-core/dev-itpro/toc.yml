@@ -20,8 +20,6 @@
           href: get-started/whats-new-platform-updates-10-0-18.md
         - name: Platform updates for 10.0.17 (April 2021)
           href: get-started/whats-new-platform-updates-10-0-17.md
-        - name: Platform updates for 10.0.16 (February 2021)
-          href: get-started/whats-new-platform-updates-10-0-16.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -180,6 +178,8 @@
                   href: data-entities/dual-write/app-lifecycle-management.md
                 - name: User-specified team owner
                   href: data-entities/dual-write/user-specified-team-owner.md
+                - name: Unlink and relink dual-write environments
+                  href: data-entities/dual-write/relink-environments.md
             - name: Mapping concepts between apps
               items:
                 - name: Integrated customer master
