@@ -40,6 +40,18 @@ Check out the latest information about dual-write features and changes in the [r
 + [Data in Dataverse – phase 1 & 2](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
 + [Finance and Operations data in Dataverse – Phase 3](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
 
+## May 2021 release
+
+The May 2021 hotfix release of the [Dual-write application orchestration solution version  2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.25](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
+
+This release contains the features and bug fixes listed in the following table.
+
+| Feature | Description |Status |
+|------|---------|-------|
+| Record deletion	| Handle record deletion during transactions with multiple entities.	| General availability
+| Bug fix	| Handle conflict resolution during catch-up sync.	| General availability
+| Bug fix	| Issues related to solution import on environments.	| General availability
+
 ## April 2021 release
 
 The April 2021 hotfix release of the [Dual-write application orchestration solution version  2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
@@ -48,9 +60,10 @@ This release contains the features and bug fixes listed in the following table.
 
 | Feature | Description |Status |
 |------|---------|-------|
-| Bug fix| The **Notes** table now understands the **Null** value. | General availability |
-| Bug fix| Dual write orchestration package 2.2.2.50 does not replace the existing key (**msdyn_locationid** field) on the **Address** table with the new key which is a combination of the **msdyn_locationid** and **parentid** fields. Instead it shows both keys. This has been fixed with the new version 2.2.2.60. This new version is applicable only when you are using the [party and global address book](party-gab.md) solution.| General availability |
-
+| Government Community Cloud support	| Dual-write runtime on the Government Community Cloud region is supported. | General availability |
+| User-friendly error messages | Enables user-friendly error messages for some of the live sync failures. | General availability |
+| Bug fix | The **Notes** table now understands the **Null** value. | General availability |
+| Bug fix | Dual write orchestration package 2.2.2.50 does not replace the existing key (**msdyn_locationid** field) on the **Address** table with the new key which is a combination of the **msdyn_locationid** and **parentid** fields. Instead it shows both keys. This has been fixed with the new version 2.2.2.60. This new version is applicable only when you are using the [party and global address book](party-gab.md) solution.| General availability |
 
 ## March 2021 release
 
