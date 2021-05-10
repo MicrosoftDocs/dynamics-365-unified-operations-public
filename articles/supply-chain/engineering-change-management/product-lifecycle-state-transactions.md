@@ -78,7 +78,7 @@ The following fields are available for each process that is listed on the **Enab
 
 If you're adding more lifecycle state rules as a customization, you can view those rules in the user interface (UI) by selecting **Refresh processes** in the upper pane. The **Refresh processes** button is available only to administrators.
 
-## Product lifecycle state on the released product and on the product variant
+## Lifecycle states on released products and product variants
 
 For a product that has variants (master and variants), the product (master) will have a lifecycle state and each of the variants can also have a different lifecycle state.
 
