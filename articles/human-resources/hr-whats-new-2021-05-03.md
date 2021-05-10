@@ -49,7 +49,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Add info bar when Life events are created. | | When a life event is created, the information bar displays a message indicating the type of life event that was created.
+| Add info bar when life events are created. | - | When you create a life event, the information bar displays a message indicating the type of life event created.
 
 ### Bug fixes
 
@@ -60,8 +60,8 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| 559312 |  Level is not shown when creating a fixed compensation plan for an employee |  When there is a timezone mismatch between the user's time zone and the company time zone, the compensation level on the job was not able to be read. The query has been updated to fetch based on UTC time. |
-| 573676  |In the benefits plan form, a new period cannot be added. | Updated the form, so that the 'new' button is enabled under the Period fast tab in Benefit Plans |
+| 559312 |  Level isn't shown when creating a fixed compensation plan for an employee. |  When there's a time zone mismatch between the user's time zone and the company time zone, the compensation level on the job couldn't be read. The query has been updated to fetch based on UTC time. |
+| 573676  | Can't add a new period in the **Benefits plan** form. | Updated the form so that the **New** button is enabled under the **Period** fast tab in **Benefit plans**. |
 
 ## In preview
 
@@ -72,7 +72,7 @@ The following new features are in preview. For more information about turning fe
 | Benefits management workspace | [Benefits management workspace (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
 | Leave and absence workflow experience enhancements | [Leave and absence workflow experience enhancements](https://go.microsoft.com/fwlink/?linkid=2147528) | [Request time off](hr-employee-self-service-request-time-off.md)|
 | Enable simplified payroll integration (Payroll integration APIs) | [Enable simplified integration with payroll providers](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Payroll integration API](hr-admin-integration-payroll-api-introduction.md)|
-| Leave accrual transaction auditing || [Leave accrual transaction auditing](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-accrue#preview-leave-accrual-transaction-auditing)|
+| Leave accrual transaction auditing | - | [Leave accrual transaction auditing](hr-leave-and-absence-accrue.md#preview-leave-accrual-transaction-auditing)|
 
 ## Coming soon
 
@@ -81,9 +81,6 @@ The following new features are in preview. For more information about turning fe
 | Skills entered by a manager for their employees can be auto-approved by a workflow | Coming soon. |
 | Platform update 10.0.18 (42) | Platform update 10.0.18 is scheduled to begin rolling out with the service release on May 17, 2021. For more information, see [Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
 | Custom field support in Benefits management eligibility rules  | [Custom field support for eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
-
-
-
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
