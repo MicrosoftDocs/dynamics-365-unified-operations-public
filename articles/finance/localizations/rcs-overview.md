@@ -4,7 +4,6 @@
 title: Regulatory Configuration Service
 description: This topic provides an overview of the capabilities of Regulatory Configuration Service (RCS) and explains how to access the service.
 author: JaneA07
-manager: AnnBe
 ms.date: 04/07/2021
 ms.topic: article
 ms.prod: 

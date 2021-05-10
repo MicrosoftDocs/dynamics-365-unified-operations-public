@@ -4,7 +4,6 @@ description: This topic describes how to upgrade dual-write data to the party an
 author: RamaKrishnamoorthy
 ms.date: 03/31/2021
 ms.topic: article
-ms.service: dynamics-ax-applications
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
