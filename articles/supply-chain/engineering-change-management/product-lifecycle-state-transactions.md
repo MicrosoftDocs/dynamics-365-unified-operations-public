@@ -80,18 +80,22 @@ If you're adding more lifecycle state rules as a customization, you can view tho
 
 ## Product lifecycle state on the released product and on the product variant
 
-For a product that has variants (master and variants), the product (master) will have a lifecycle state and each of the variants can have a different lifecycle state as well. 
-For a specific process, in case either the variant or the product is blocked, then the process will be blocked. Specifically, to understand if a process is blocked, the system will check: 
+For a product that has variants (master and variants), the product (master) will have a lifecycle state and each of the variants can also have a different lifecycle state.
 
-For engineering controlled products the following 3 checks performed. 
-1) if current engineering version is blocked -> block,
-2) if current variant is blocked -> block and 
-3) if released product is blocked -> block.
+For specific processes, if either the variant or the product is blocked, then the process will also be blocked. Specifically, to determine whether a process is blocked, the system will make the following checks:
 
-For standard products there are 2 checks performed. 
-1) if current variant is blocked -> block and 
-2) if released product is blocked -> block.
+- For engineering controlled products:
+  - If the current engineering version is blocked, then block the process
+  - If the current variant is blocked, then block the process
+  - If the released product is blocked, then block the process
+- For standard products:
+  - If the current variant is blocked, then block the process
+  - If the released product is blocked, then block the process
 
-Therefore, if for a certain product there is a process that must be allowed for a specific variant but not for the rest (e.g. sell only the red t-shirt), the lifecycle state on the product must allow it (e.g. lifecycle state "sellable" has "sales order" business process allowed, and is assigned to the product), the lifecycle state on the variant must allow it (e.g. the red-thirt lifecycle state will be "sellable") and the rest of variants (e.g. white) must have another lifecycle state where the process is blocked (e.g. "not sellable" lifecycle state, where the business process "sales order" is "blocked").
+For example, suppose you only want to sell one variant (red) of a given product (t-shirt) and block sales of all other variants for now. You could implement this using the following setup:
+
+- Assign the product a lifecycle state that allows the process (for example, assign the t-shirt product a lifecycle state of *Sellable*, which allows the *Sales order* business process).
+- Assign the sellable variant a lifecycle state that allows the process (for example, assign the red variant a lifecycle state of *Sellable* too).
+- All other variants be assigned another lifecycle state where the process is blocked (for example, assign the white variant (and all other variants) a lifecycle state of *Not sellable*, which blocks the *Sales order* business process).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
