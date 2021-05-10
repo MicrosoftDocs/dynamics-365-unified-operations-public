@@ -28,14 +28,10 @@ When you click on a global table map such as Global Products, under Table mappin
 > After you set the owning team, it works across both initial and live sync. 
 > The owning team setting does not transfer across environments. 
   
-![Update owning team](media/owning-team-1.png)
- 
 :::image type="content" source="media/owning-team-1.png" alt-text="Update owning team":::
   
 After you run the initial sync, **Sales team** is the owner for the integrated records in **Global Products** table map.
   
-![Initial sync with default and user specified team](media/owning-team-2.png)
-
 :::image type="content" source="media/owning-team-2.png" alt-text="Initial sync with default and user specified team":::
   
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
