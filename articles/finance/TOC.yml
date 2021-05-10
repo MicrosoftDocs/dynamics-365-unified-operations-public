@@ -1128,6 +1128,10 @@
           href: general-ledger/audit-policy-violations-cases.md
         - name: Define audit policies for source documents
           href: general-ledger/tasks/define-audit-policies-source-documents.md 
+      - name: Troubleshooting
+        items: 
+        - name: Change the accounting or reporting currency
+          href: general-ledger/add-change-acctg-rprtg-crrncy.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
