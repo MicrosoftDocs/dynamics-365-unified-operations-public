@@ -17,13 +17,13 @@ ms.search.validFrom: 2021-05-31
 
 [!include[banner](../includes/banner.md)]
 
-**Important**
+>[!Important]
 
 This functionality requires version 10.0.12 for Finance and Operations
 apps, while service update 189 is required for Dataverse. The release
-information for Dataverse is published on the [***latest version
+information for Dataverse is published on the [latest version
 availability
-page***](https://docs.microsoft.com/en-us/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 **Virtual entities for Finance and Operations apps**
 
@@ -49,7 +49,7 @@ business processes in Finance and Operations.
 
 Core Human Resources entities can also be virtualized like Finance and
 Operations entities. For more information, see [*Core HR virtual
-entities*](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+entities*](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
 
 **Architecture**
 
@@ -123,4 +123,4 @@ always run as the associated Finance and Operations user, and is subject
 to that user's entity and row security settings. Anonymous portal access
 is also supported. For information about this type of access and how it
 can be done, see [*Power Apps Portal
-reference*](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/power-portal-reference).
+reference*](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/power-portal-reference).
