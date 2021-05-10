@@ -103,7 +103,7 @@ Follow these steps to set up Dataverse using the package deployer tool.
     1. Go to **Advanced Setting \> System \> Security \> Users**, and find user named **# InventoryVisibility**.
     1. Select **Assign Role**, and then select **System Administrator**. If there is a role that is named **Common Data Service User**, select it too.
 
-#### Set up Dataverse  manually importing solutions
+#### Set up Dataverse manually by importing solutions
 
 Follow these steps to set up Dataverse by manually importing solutions.
 
