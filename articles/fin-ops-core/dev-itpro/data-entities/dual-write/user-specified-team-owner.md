@@ -34,7 +34,7 @@ When you click on a global table map such as Global Products, under Table mappin
 
 ## View the owning team after initial sync
 
-After you run the initial sync, **Sales team** is the owner for the integrated records in **Global Products** table map. An example is shown in the following screenshot.
+After you run the initial sync, the owner is shown in the integrated records. In the following screenshot, the owner has changed from **dwteam** to **Sales** for the integrated records in **Global Product** table map.
   
 :::image type="content" source="media/owning-team-2.png" alt-text="Initial sync with default and user specified team":::
   
