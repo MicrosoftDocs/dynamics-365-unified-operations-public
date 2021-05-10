@@ -56,6 +56,9 @@ Before you install the Inventory Visibility Add-in, you must do the following:
     - `Inventory Visibility Dataverse Solution.zip`
     - `Inventory Visibility Configuration Trigger.zip`
     - `Inventory Visibility Integration.zip` (if the version of Supply Chain Management that you're running is earlier than version 10.0.18)
+- Alternatively, contact the Inventory Visibility Team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to get the Package Deployer packages; these packages can be used by official PackageDeployer tool.
+    - `InventoryServiceBase.PackageDeployer.zip`
+    - `InventoryServiceApplication.PackageDeployer.zip` (this package contains all changes in `InventoryServiceBase` package, and additionally UI application components.)
 - Follow the instructions given in [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) to register an application and add a client secret to AAD under your azure subscription.
     - [Register an application](/azure/active-directory/develop/quickstart-register-app)
     - [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
@@ -68,7 +71,7 @@ If you have any questions about these prerequisites, please contact the Inventor
 
 ### <a name="setup-microsoft-dataverse"></a>Set up Dataverse
 
-Follow these steps to set up Dataverse.
+Prerequisite
 
 1. Add a service principle to your tenant:
 
@@ -80,6 +83,24 @@ Follow these steps to set up Dataverse.
 
         New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
         ```
+
+Follow these steps to set up Dataverse by PackageDeployer tool.
+
+1. Install CRM Dev Tools as described in [Download tools from NuGet](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget).
+
+1. Based on your business requirement, choose between `InventoryServiceBase` or `InventoryServiceApplication` packages.
+
+1. Import solutions:
+    1. For `InventoryServiceBase` package, unzip `InventoryServiceBase.PackageDeployer.zip` and find folder `InventoryServiceBase`, file `[Content_Types].xml`, file `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll`, file `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`, and file `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`. Copy above folders and files to directory `.\Tools\PackageDeployment` created in install CRM Dev Tools step.
+    1. For `InventoryServiceApplication` package, unzip `InventoryServiceApplication.PackageDeployer.zip` and find folder `InventoryServiceApplication`, file `[Content_Types].xml`, file `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`, file `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`, and file `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`. Copy above folders and files to directory `.\Tools\PackageDeployment` created in install CRM Dev Tools step.
+    1. Execute `.\Tools\PackageDeployment\PackageDeployer.exe`, follow the wizard to import solutions.
+
+1. Assign security role to application user.
+    1. Open the URL of your Dataverse environment.
+    1. Go to **Advanced Setting \> System \> Security \> Users**, and find user named **# InventoryVisibility**.
+    1. Select **Assign Role**, and then select **System Administrator**. If there is a role that is named **Common Data Service User**, select it too.
+
+Follow these steps to set up Dataverse by manually import solutions.
 
 1. Create an application user for Inventory Visibility in Dataverse:
 
