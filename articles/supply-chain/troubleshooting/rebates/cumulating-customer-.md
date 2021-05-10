@@ -1,6 +1,6 @@
 ---
-title: Rebate condition for the item rebate group will only check each item's eligibility not the cumulative eligibility
-description: When set up a rebate, using the item rebate group is to group all the items that the rebate condition needs to check for the eligibility. But the rebate condition is set against each of the item amount, NOT the cumulated amount for any items in the item group. 
+title: Cumulation of customer rebates fails when item rebate groups are used
+description: When you use customer rebate agreements in combination with item rebate groups, rebates are calculated, but cumulation fails.
 author: sherry-zheng
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,14 +13,14 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Cumulating customer rebates using item rebate groups fails
+# Cumulation of customer rebates fails when item rebate groups are used
 
-KB Number: 4611372
+KB number: 4611372
 
 ## Symptoms
 
-When using customer rebate agreements (of type *amount*) in combination with item rebate groups, rebates are calculated but the cumulation fails.
+When you use customer rebate agreements (of the *amount* type) in combination with item rebate groups, rebates are calculated, but cumulation fails.
 
 ## Resolution
 
-The system is behaving as designed. Item groups only group items that have the same threshold condition. The rebate condition (threshold) is set against the amount for each item, not the cumulated amount for any item in the item group.
+The system is behaving as designed. Item groups group only items that have the same threshold condition. The rebate condition (threshold) is set against the amount for each item, not against the cumulated amount for any item in the item group.
