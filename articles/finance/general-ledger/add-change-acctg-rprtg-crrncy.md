@@ -33,12 +33,12 @@ This topic explains how to change the accounting or reporting currency, or add a
 
 ## Symptom
 
-You want to change the accounting or reporting currency, or add a reporting currency to the ledger setup. This issue typically occurs in the following scenarios:
+You want to change the accounting or reporting currency, or add a reporting currency to the ledger setup. This typically occurs in the following scenarios:
 
 - The wrong accounting or reporting currency was specified when a legal entity was set up. You now want to change that currency.
 - No reporting currency was specified when a legal entity was set up. (A reporting currency is optional.) You now want to add a reporting currency.
 
-An organization that didn't previously use the Dual currency capability wants to start to use it.
+An organization that didn't previously use the Dual currency capability wants to start to use it. This issue typically occurs in the following scenarios.
 
 - A reporting currency was specified when a legal entity was set up, but the organization now wants to remove the reporting currency.
 - The organization is upgrading or migrating to Microsoft Dynamics 365 Finance, and wants to change the accounting or reporting currency.
@@ -67,15 +67,15 @@ The process of finding and translating each amount to a different currency is su
 Follow these steps to copy the setup and master data from the current legal entity to a new legal entity.
 
 1. Go to **Workspaces \> Data management**.
-2. On the **Import/Export** Action Pane, select **Templates**.
+2. Select **Templates** under the **Import/Export** group.
 3. Make sure that templates are available. If no templates are available, select **Load default templates**, and wait for the templates to be generated.
 4. Return to the **Data management** workspace.
 5. Select **Copy into legal entity**.
 6. Enter a group name and description.
 7. In the **Source legal entity** field, select the legal entity to copy data from.
-8. In **Destination legal entities**, select **Create legal entities** to create a new legal entity that you can copy the source legal entity data to. Select **Select existing** to copy data to an existing legal entity.
-9. Set **Copy number sequences** to true. (This step is recommended when you copy data.)
-10. In the bottom window, select **Add template**.
+8. In the **Destination legal entities** FastTab, select **Create legal entities** to create a new legal entity that you can copy the source legal entity data to. Select **Select existing** to copy data to an existing legal entity.
+9. Optional: Set the **Copy number sequences** field to **Yes**. (This step is recommended when you copy data.)
+10. In the **Selected entities** area, select **Add template**.
 11. Select the templates to use. Suggested templates for a new legal entity include **025 - General Ledger** and **Financials**. We recommend that you review all the other available templates to determine whether any of them apply to your requirements.
 12. Select **Copy into legal entity** to start a batch process that will create the selected entities and copy them into the destination legal entity.
 13. After the process is completed, but before any transaction are posted, go to the ledger, and update the accounting and reporting currencies as described earlier in this topic.
