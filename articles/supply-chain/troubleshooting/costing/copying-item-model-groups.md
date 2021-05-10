@@ -1,6 +1,6 @@
 ---
-title: Missing field settings on copying item model groups to another legal entity
-description: Missing field settings on copying item model groups to another legal entity
+title: Missing field settings when item model groups are copied to another legal entity
+description: Field settings are missing when item model groups are copied to another legal entity.
 author: niwang
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,14 +13,14 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Missing field settings on copying item model groups to another legal entity
+# Missing field settings when item model groups are copied to another legal entity
 
-KB Number: 4612800
+KB number: 4612800
 
 ## Symptoms
 
-When you copy *item model groups* to another legal entity (company) using the *Item model group inventory policies* entity, some field setting such as the inventory model and description are missing in the new model group at the destination company.
+When you copy item model groups to another legal entity (company) by using the *Item model group inventory policies* entity, some field settings (for example, the inventory model and description) are missing in the new model group in the destination legal entity.
 
 ## Resolution
 
-To create a complete copy of an *item model group* to another legal entities, you must also select both the *item model group inventory policies* (`InventInventoryPolicyEntity`) and the *cost flow assumption policies* (`InventCostFlowAssumptionPolicyEntity`) that are associated with item model group.
+To create a complete copy of an item model group to another legal entity, you must also select both the item model group inventory policies (`InventInventoryPolicyEntity`) and the cost flow assumption policies (`InventCostFlowAssumptionPolicyEntity`) that are associated with the item model group.
