@@ -4,7 +4,7 @@
 title: Generate an FEC in Dynamics 365 Finance
 description: This topic explains how to generate a Fichier des écritures comptables (FEC) audit file in Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 05/03/2021
+ms.date: 05/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,6 +41,6 @@ To generate a Fichier des écritures comptables (FEC) audit file, follow these s
     | Vendors transactions   | Vendor transactions annex for the specified period. | For this part of the report, set the **Period - date from** and **Period - date to** fields. |
     | FEC Main Extended      | FEC main file that includes fiscal year opening balance details for customers and vendors. | For this part of the report, set the **Period - date from** and **Period - date to** fields. Make sure that the specified period includes the beginning of a fiscal year. |
 
-6. General ledger transactions that are included in the **FEC Main** and **FEC Main Extended** report types must be filtered by the **Current** posting layer and only main accounts starting with **1**, **2**, **3**, **4**, **5**, **6** or **7** must be included to the FEC. Use the **Records to include** field to filter for the records that the report should include. Use the filter to report data that complies with the rules in Livre des procédures fiscales, article A47 A-1, chapter VII: "Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français."
+6. General ledger transactions that are included in the **FEC Main** and **FEC Main Extended** report types must be filtered by the **Current** posting layer. Only main accounts starting with **1**, **2**, **3**, **4**, **5**, **6**, or **7** must be included to the FEC. Use the **Records to include** field to filter for the records that the report should include. Use the filter to report data that complies with the rules in Livre des procédures fiscales, article A47 A-1, chapter VII: "Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français."
 7. To generate the report in batch mode, on **Run in the background** FastTab, specify the batch parameters.
 8. When you've finished specifying all the parameters, select **OK** to generate the report.
