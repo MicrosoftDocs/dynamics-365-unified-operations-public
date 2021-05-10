@@ -1,6 +1,6 @@
 ---
 title: You can't apply a template to a released product
-description: You can't apply a template to a released product
+description: You can't apply a template to a released product.
 author: t-benebo
 ms.date: 4/11/2021
 ms.topic: troubleshooting
