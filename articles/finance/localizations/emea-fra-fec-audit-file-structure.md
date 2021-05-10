@@ -116,7 +116,7 @@ The following table shows the **Vendors fiscal year opening balances annex** dat
 
 ## Customers transactions annex for the period specified
 
-**Customers transactions annex for the period specified** annex can be requested to provide additional details on customers transactions. For example, in case a company uses [Allow multiple transactions within one voucher](../finance/general-ledger/one-voucher.md) parameter on the **General** tab of the **General ledger parameters** page, one voucher can be assigned to multiple customers transactions. To provide detailed infomration by customers accounts for such scenario, **Customers transactions annex for the period specified** annex is implemented. 
+**Customers transactions annex for the period specified** annex can be requested to provide additional details on customers transactions. For example, in case a company uses [Allow multiple transactions within one voucher](../../finance/general-ledger/one-voucher.md) parameter on the **General** tab of the **General ledger parameters** page, one voucher can be assigned to multiple customers transactions. To provide detailed infomration by customers accounts for such scenario, **Customers transactions annex for the period specified** annex is implemented. 
 
 The following table shows the **Customers transactions annex for the period specified** data structure definitions.
 
@@ -143,7 +143,7 @@ The following table shows the **Customers transactions annex for the period spec
 
 ## Vendors transactions annex for the period specified
 
-**Vendors transactions annex for the period specified** annex can be requested to provide additional details on vendors transactions. For example, in case a company uses [Allow multiple transactions within one voucher](../finance/general-ledger/one-voucher.md) parameter on the **General** tab of the **General ledger parameters** page, one voucher can be assigned to multiple vendors transactions. To provide detailed infomration by vendors accounts for such scenario, **Vendors transactions annex for the period specified** annex is implemented. 
+**Vendors transactions annex for the period specified** annex can be requested to provide additional details on vendors transactions. For example, in case a company uses [Allow multiple transactions within one voucher](../../finance/general-ledger/one-voucher.md) parameter on the **General** tab of the **General ledger parameters** page, one voucher can be assigned to multiple vendors transactions. To provide detailed infomration by vendors accounts for such scenario, **Vendors transactions annex for the period specified** annex is implemented. 
 
 The following table shows the **Vendors transactions annex for the period specified** data structure definitions.
 
