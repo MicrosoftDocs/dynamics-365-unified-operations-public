@@ -4,7 +4,7 @@
 title: Microsoft Power Platform integration with Finance and Operations
 description: This topic provides an overview for Power Platform Integration via Lifecycle Services for Finance and Operations and Microsoft Dataverse.
 author: Sunil-Garg
-ms.date: 05/06/2021
+ms.date: 05/10/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -58,7 +58,46 @@ Together Virtual Entity, Dual Write, and Business Events allow building applicat
 ### Add-ins functionality
 Add-ins provide a way to extend the functionality of Finance and Operations apps. All add-ins are installed and managed via Lifecycle Services on the environment details page for sandbox and production-type environments. The metadata regarding which add-ins are installed and the configuration options for each add-in are stored in the Microsoft Dataverse database that is provisioned as part of the Power Platform integration. Some add-ins also store business data in the Dataverse database. To learn more about available add-ins, see [Add-ins overview](add-ins-overview.md).
 
-<add sections>
+## Typical scenarios and patterns that use dual-write
+
+Here are some typical scenarios that use dual-write.
+
+### Enable customer service representative to facilitate change of address for Finance and Operations customers 
+A customer relocates and wishes to change their billing and shipping address information. This customer contacts the customer support representative and requests a change of address. The customer support representative takes the call and changes the billing and shipping address information of the customer.
+
+|Decision |  Information| 
+|--------|-------------|
+| Is real-time data required? | Yes |
+| Peak data volume  | - |
+| Frequency | Ad hoc |
+
+#### Recommended solution
+This scenario of near-real time data synchronization is best implemented by dual-write.
+- The customer's information is sourced in a Finance and Operations app.
+- A customer calls customer support and asks to change their billing and shipping address information.
+- A customer support representative retrieves the customer’s record in Dynamics 365 Customer Service.
+- The customer support representative updates the billing and shipping address and saves the data.
+- The new billing and shipping address syncs back to the Finance and Operations app in real-time.
+
+### Sales representatives can change customer credit limits without logging into a Finance and Operations app
+A customer has a credit limit of $2,000 and wants to increase it to $5,000. This customer calls the customer support and requests the increase. The ticket is assigned to the sales department. The head of sales reviews the request, checks the customer's payment history, and determines that the customer is eligible for an increased credit limit. The head of sales approves the request and responds to the ticket. The customer receives an email informing the approval of $5,000 credit limit.
+
+|Decision |  Information| 
+|--------|-------------|
+| Is real-time data required? | Yes |
+| Peak data volume  | - |
+| Frequency | Ad hoc |
+
+#### Recommended solution
+This scenario is best implemented by dual-write.
+- A customer calls customer support and wants to increase their credit limit from $2,000 to $5,000.
+- A customer support representative creates a ticket in Dynamics 365 Customer Service.
+- This ticket is assigned to the sales unit.
+- A sales representative from the sales unit reviews and approves the request.
+- This result is the increase of credit limit of the customer to $5,000 in Dynamics 365 Sales.
+- The credit limit in the Finance and operations app is updated to $5,000.
+- The sales representative responds to the ticket and resolves it.
+- The customer receives an email about the increased credit limit.
 
 ## Prerequisites for setting up the Power Platform integration
 The following list provides details about the prerequisites for setting up the Power Platform integration:
