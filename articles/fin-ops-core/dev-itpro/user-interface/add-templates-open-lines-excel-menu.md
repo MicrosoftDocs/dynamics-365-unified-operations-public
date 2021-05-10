@@ -39,7 +39,7 @@ Some of the most frequently used templates are the journal templates. Some of th
 
 2.  In Microsoft Visual Studio, create a new project for a model that has a reference to the ApplicationSuite model. 
 
-3.  Create a new class, implement the **LedgerIJournalExcelTemplate** interface, and extend **DocuTemplateRegistrationBase**. Your implementation (supported journal type, and so on) defines the context that your template will be available as an option for in the Open in Excel experience. This example uses LedgerJournalHeaderEntity and LedgerJournalLineEntity, but you aren't limited to these entities. You can define your own entities, provided that they entities follow the journal header/line entity pattern. Here is an example from the **LedgerDailyJournalExcelTemplate** class.
+3.  Create a new class, implement the **LedgerIJournalExcelTemplate** interface, and extend **DocuTemplateRegistrationBase**. Your implementation (supported journal type, and so on) defines the context that your template will be available as an option for in the Open in Excel experience. This example uses LedgerJournalHeaderEntity and LedgerJournalLineEntity, but you aren't limited to these entities. You can define your own entities, as long as they follow the journal header/line entity pattern. Here is an example from the **LedgerDailyJournalExcelTemplate** class.
 
     ```xpp
     using Microsoft.Dynamics.Platform.Integration.Office;  

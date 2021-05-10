@@ -365,8 +365,6 @@
           href: asset-management/objects/object-specification-overview.md
       - name: Setup for maintenance requests
         items:
-        - name: Maintenance requests
-          href: asset-management/setup-for-maintenance-requests/requests.md
         - name: Maintenance request lifecycle states
           href: asset-management/setup-for-maintenance-requests/request-stages.md
         - name: Maintenance request types
