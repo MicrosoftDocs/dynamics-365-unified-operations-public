@@ -71,7 +71,9 @@ If you have any questions about these prerequisites, please contact the Inventor
 
 ### <a name="setup-microsoft-dataverse"></a>Set up Dataverse
 
-#### Dataverse prerequisites
+To set up Dataverse for use with Inventory Visibility, you must first prepare the prerequisites and then decide whether to set up Dataverse using either the package deployer tool or by manually importing the solutions (you don't have to do both). Then install the Inventory Visibility Add-in. The following subsections describe how to complete each of these tasks.
+
+#### Prepare Dataverse prerequisites
 
 Before you start to set up Dataverse, add a service principle to your tenant by doing the following steps:
 
@@ -87,7 +89,7 @@ Before you start to set up Dataverse, add a service principle to your tenant by 
 
 #### Set up Dataverse using the package deployer tool
 
-Follow these steps to set up Dataverse using the package deployer tool.
+After you have the prerequisites in place, use the following procedure if you prefer to set up Dataverse using the package deployer tool. See the next section for details about how to import the solutions manually instead (don't do both).
 
 1. Install developer tools as described in [Download tools from NuGet](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget).
 
@@ -105,7 +107,7 @@ Follow these steps to set up Dataverse using the package deployer tool.
 
 #### Set up Dataverse manually by importing solutions
 
-Follow these steps to set up Dataverse by manually importing solutions.
+After you have the prerequisites in place, use the following procedure if you prefer to set up Dataverse by manually importing solutions. See the previous section for details about how to use the package deployer tool instead (don't do both).
 
 1. Create an application user for Inventory Visibility in Dataverse:
 
