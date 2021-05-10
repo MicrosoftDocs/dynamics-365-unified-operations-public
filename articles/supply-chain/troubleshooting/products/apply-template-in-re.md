@@ -1,6 +1,6 @@
 ---
-title: Can't apply a template to a released product
-description: Can't apply a template to a released product 
+title: You can't apply a template to a released product
+description: You can't apply a template to a released product
 author: t-benebo
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,23 +13,21 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Can't apply a template to create a released product
+# You can't apply a template to create a released product
 
-KB Number: 4612097
+KB number: 4612097
 
 ## Symptoms
 
-When you are creating a new released product using the **New released product** dialog box, you are able to select a template, which is supposed to provide default settings for many of the fields for the new released product. However, some or all of the fields are not populated after selecting the template.
+When you create a new released product by using the **New released product** dialog box, you can select a template. The template is supposed to provide default settings for many fields of the new released product. However, some or all of the fields aren't set after you select the template.
 
 ## Cause
 
-Many pages of Supply Chain Management provide the ability to create a template to establish initial settings for the type of records shown by that page. You can create these templates by selecting **Record info** from the **Options** tab on the Action Pane. However, released products are much more complex than most other types of records, so you can't use these templates for products. Instead, you must create dedicated product templates.
-
-The system will allow you to create record-info templates for the **Released products** page, and will also allow you to select those templates when creating a released product. However, record-info templates won't provide the field values you may be expecting for the new released product. Create and select product templates instead.
+Many pages in Microsoft Dynamics 365 Supply Chain Management let you create a template that establishes initial settings for the records that are shown on those pages. You can create one of these templates by selecting **Record info** on the **Options** tab of the Action Pane. However, released products are much more complex than most other types of records. Although you can select **Record info** on the **Released products** page to create a template, and although you can select that template when you create a released product, the template won't provide the expected field values for the new released product. Therefore, you can't use "record info" templates for released products. Instead, you must create dedicated product templates.
 
 ## Resolution
 
-To create a product template, use the command on the **Product** tab of the Action Pane, not the **Record info** functionality. To create a product template:
+To create a product template, use the **Template** menu on the **Product** tab of the Action Pane, not the **Record info** button on the **Options** tab.
 
 1. Go to **Product information management \> Products \> Released products**.
-1. On the Action Pane, open the **Product** tab and, from the **New** group, select either **Template \> Create personal template** or **Template \> Create shared template** as needed.
+1. On the Action Pane, on the **Product** tab, in the **New** group, select **Template**, and then select either **Create personal template** or **Create shared template**, as appropriate.
