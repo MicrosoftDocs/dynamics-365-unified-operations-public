@@ -20,17 +20,17 @@ ms.search.validFrom: 2021-05-31
 >[!Important]
 > This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Dataverse. The release information for Dataverse is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
-**Virtual entities for Finance and Operations apps**
+## Virtual entities for Finance and Operations apps
 
 Finance and Operations apps are a virtual data source in Dataverse, and enable full create, read, update, and delete (CRUD) operations from Dataverse and Microsoft Power Platform. By definition, the data for virtual entities doesn't reside in Dataverse. Instead, the data continues to reside in the application where it belongs. To enable CRUD operations on Finance and Operations entities from Dataverse, entities must be made available as virtual entities in Dataverse. The allows CRUD operations to be performed from Dataverse and Microsoft Power Platform, on data that resides in Finance and Operations apps.
 
 All Open Data Protocol (OData) entities in Finance and Operations apps are available as virtual entities in Dataverse, and therefore also in Power Platform. Makers can now build experiences in customer engagement apps with data directly from Finance and Operations apps with full CRUD capability and without copying to Dataverse. Power Apps portals can be used to build external-facing websites that enable collaboration scenarios for business processes in Finance and Operations apps.
 
-**Virtual entities for core Human Resources**
+## Virtual entities for core Human Resources
 
 Core Human Resources entities can also be virtualized, like Finance and Operations entities. For more information, see [Core HR virtual entities](/human-resources/hr-admin-integration-common-data-service-virtual-entities).
 
-**Architecture**
+## Architecture
 
 Virtual entities are a Dataverse concept that is useful beyond Finance and Operations apps. The following illustration shows how the Finance and Operations provider for virtual entities is implemented. Six primary methods are implemented by the provider. The first five methods are the standard CRUD operations: **Create**, **Update**, **Delete**, **Retrieve**, and **RetrieveMultiple**. The last method, **PerformAction**, is used to call OData actions, as described later in this topic. Calls to the Finance and Operations virtual entity data provider (shown as "VE Plugin" in the illustration) will cause a Secure Sockets Layer (SSL)/Transport Layer Security (TLS) 1.2 secure web call to the CDSVirtualEntityService web API endpoint of Finance and Operations. This web service then converts the queries into calls to the associated physical entities in Finance and Operations, and invokes CRUD or OData operations on those entities. Because a Finance and Operations entity is directly invoked in all operations, any business logic on the entity or its backing tables is also invoked.
 
