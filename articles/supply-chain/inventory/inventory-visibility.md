@@ -46,7 +46,7 @@ You need to install the Inventory Visibility Add-in using Microsoft Dynamics Lif
 
 For more information, see [Lifecycle Services resources](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
-### Prerequisites
+### Inventory Visibility Add-in prerequisites
 
 Before you install the Inventory Visibility Add-in, you must do the following:
 
@@ -96,11 +96,17 @@ After you have the prerequisites in place, use the following procedure if you pr
 1. Based on your business requirements, choose the `InventoryServiceBase` or `InventoryServiceApplication` package.
 
 1. Import the solutions:
-    1. For the `InventoryServiceBase` package, unzip `InventoryServiceBase.PackageDeployer.zip` and find folder `InventoryServiceBase`, file `[Content_Types].xml`, file `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll`, file `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`, and file `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`. Copy each of these folders and files to the `.\Tools\PackageDeployment` directory, which was created when you installed the developer tools.
-    1. For the `InventoryServiceApplication` package, unzip `InventoryServiceApplication.PackageDeployer.zip` and find folder `InventoryServiceApplication`, file `[Content_Types].xml`, file `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`, file `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`, and file `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`. Copy each of these folders and files to the `.\Tools\PackageDeployment` directory, which was created when you installed the developer tools.
-    1. Execute `.\Tools\PackageDeployment\PackageDeployer.exe`. Follow the instructions on your screen to import solutions.
+    1. For the `InventoryServiceBase` package:
+        - Unzip `InventoryServiceBase.PackageDeployer.zip`
+        - Find folder `InventoryServiceBase`, file `[Content_Types].xml`, file `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll`, file `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`, and file `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`. 
+        - Copy each of these folders and files to the `.\Tools\PackageDeployment` directory, which was created when you installed the developer tools.
+    1. For the `InventoryServiceApplication` package:
+        - Unzip `InventoryServiceApplication.PackageDeployer.zip`
+        - Find folder `InventoryServiceApplication`, file `[Content_Types].xml`, file `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`, file `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`, and file `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`.
+        - Copy each of these folders and files to the `.\Tools\PackageDeployment` directory, which was created when you installed the developer tools.
+    1. Execute `.\Tools\PackageDeployment\PackageDeployer.exe`. Follow the instructions on your screen to import the solutions.
 
-1. Assign security role to the application user.
+1. Assign security roles to the application user.
     1. Open the URL of your Dataverse environment.
     1. Go to **Advanced Setting \> System \> Security \> Users**, and find user named **# InventoryVisibility**.
     1. Select **Assign Role**, and then select **System Administrator**. If there is a role that is named **Common Data Service User**, select it too.
