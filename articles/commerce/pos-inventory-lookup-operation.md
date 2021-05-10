@@ -36,7 +36,7 @@ An accurate view of inventory across an organization helps store associates prov
 
 The inventory lookup operation in Commerce POS helps retailers achieve operational excellence and gain insights by connecting stores with Commerce headquarters. This functionality provides an inventory availability view of products across stores and warehouses. It also helps retailers drive additional efficiencies and cost savings by improving inventory planning in real time.
 
-When the inventory lookup operation is started from the POS application, the POS cashier uses the numeric keyboard to enter a product number to query its inventory information. If the product entered has variants, the cashier can optionally select dimension or other values to check inventory information of a specific product variant.
+When the inventory lookup operation is started from the POS application, the POS cashier uses the numeric keyboard to enter a product number to query its inventory information. If the product entered has variants, the cashier can optionally select dimensions or other values to check inventory information of a specific product variant.
 
 ## Inventory lookup list view for individual products
 
@@ -53,7 +53,13 @@ The list view of locations includes all stores and warehouses that are configure
 
 The following actions are available on the POS app bar:
 
-- **Sort** - This action lets the POS user sort the data in the list view based on various criteria: **Geo location** (from the closest location to the farthest location, compared with the current store), **Name** (in ascending or descending order), **Store number** (in ascending or descending order), **Inventory** (in descending order), **Reserved** (in descending order), and **Ordered** (in descending order). Location-based sorting is the default sort option.
+- **Sort** - This action lets the POS user sort the data in the list view based on various criteria. Location-based sorting is the default sort option. 
+  - **Geo location** (from the closest location to the farthest location, compared with the current store)
+  - **Name** (in ascending or descending order)
+  - **Store number** (in ascending or descending order)
+  - **Inventory** (in descending order)
+  - **Reserved** (in descending order)
+  - **Ordered** (in descending order)
 - **Filter** - This action lets the POS user view filtered data for a specific location.
 - **Show store availability** - This action lets the POS user view the available-to-promise (ATP) quantities for a product in the selected store.
 - **Show store location** - This action opens a separate page to show the map view, address, and store hours for the selected store.
@@ -106,13 +112,13 @@ The following example image shows inventory lookup results from a PDP in POS.
 On the PDP of a master product, you can use the **View all variants** action on the app bar to launch the inventory lookup matrix view that displays inventory availability information for the current store for all variants of a product. For an individual product, the PDP displays the on-hand inventory (available physical) value of that product for the current store. Additionally, you can select the **Other stores inventory** link to launch the inventory lookup operation to check the inventory availability of a product across other stores or warehouses.
 
 > [!NOTE]
-> The **View all variants** action on the PDP is available only for master products that have variants. It isn't available for distinct products or kits.
+> The **View all variants** action on the PDP is available only for master products that have variants. It isn't available for specific products or kits.
 
-You can configure the inventory lookup operation to appear as a link in the button grid on the POS transaction screen. Once configured, when the user selects a cart line and then selects the **Inventory lookup** button, the inventory lookup list view for the selected product will be displayed. For more information about how to configure button grids using POS screen layout designer tool, see [POS user interface visual configurations](pos-screen-layouts.md).
+You can configure the inventory lookup operation to appear as a link in the button grid on the POS transaction screen. After configuration, when the user selects a cart line and then selects the **Inventory lookup** button, the inventory lookup list view for the selected product will be displayed. For more information about how to configure button grids using POS screen layout designer tool, see [POS user interface visual configurations](pos-screen-layouts.md).
 
 ## Inventory lookup with channel-side calculation
 
-In the Commerce version 10.0.9 release and earlier, the **available physical** value in the inventory lookup operation is retrieved from Commerce headquarters via a real-time service call. In the Commerce version 10.0.10 release and later, you can configure the POS inventory lookup operation to use channel-side calculation on the Commerce server to determine the available physical value, which can provide a more reliable and more accurate estimate of the on-hand inventory by factoring in the transactional data that is not yet synchronized to headquarters. For more information about channel-side inventory calculation and related POS configuration in headquarters, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
+In Commerce release 10.0.9 and earlier, the **available physical** value in the inventory lookup operation is retrieved from Commerce headquarters via a real-time service call. In Commerce release 10.0.10 and later, you can configure the POS inventory lookup operation to use channel-side calculation on the Commerce server to determine the available physical value, which can provide a more reliable and more accurate estimate of the on-hand inventory by factoring in the transactional data that is not yet synchronized to headquarters. For more information about channel-side inventory calculation and related POS configuration in headquarters, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
 
 ## Additional resources
 
