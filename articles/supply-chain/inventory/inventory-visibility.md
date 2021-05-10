@@ -56,13 +56,13 @@ Before you install the Inventory Visibility Add-in, you must do the following:
   - `Inventory Visibility Dataverse Solution.zip`
   - `Inventory Visibility Configuration Trigger.zip`
   - `Inventory Visibility Integration.zip` (if the version of Supply Chain Management that you're running is earlier than version 10.0.18)
-- Alternatively, contact the Inventory Visibility Team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to get the package deployer packages; these packages can be used by official package deployer tool.
+- Alternatively, contact the Inventory Visibility Team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to get the package deployer packages. These packages can be used by an official package deployer tool.
   - `InventoryServiceBase.PackageDeployer.zip`
   - `InventoryServiceApplication.PackageDeployer.zip` (this package contains all of the changes in the `InventoryServiceBase` package, plus additional UI application components)
 - Follow the instructions given in [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) to register an application and add a client secret to AAD under your azure subscription.
   - [Register an application](/azure/active-directory/develop/quickstart-register-app)
   - [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
-  - The **Application(Client) Id**, **Client Secret** and **Tenant ID** will be used in the following steps.
+  - The **Application(Client) Id**, **Client Secret**, and **Tenant ID** will be used in the following steps.
 
 > [!NOTE]
 > The currently supported countries and regions include Canada, the United States, and the European Union (EU).
@@ -75,7 +75,7 @@ To set up Dataverse for use with Inventory Visibility, you must first prepare th
 
 #### Prepare Dataverse prerequisites
 
-Before you start to set up Dataverse, add a service principle to your tenant by doing the following steps:
+Before you start to set up Dataverse, add a service principle to your tenant by doing the following:
 
 1. Install Azure AD PowerShell Module v2 as described in [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
 
@@ -108,8 +108,8 @@ After you have the prerequisites in place, use the following procedure if you pr
 
 1. Assign security roles to the application user.
     1. Open the URL of your Dataverse environment.
-    1. Go to **Advanced Setting \> System \> Security \> Users**, and find user named **# InventoryVisibility**.
-    1. Select **Assign Role**, and then select **System Administrator**. If there is a role that is named **Common Data Service User**, select it too.
+    1. Go to **Advanced Setting \> System \> Security \> Users**, and find user the named **# InventoryVisibility**.
+    1. Select **Assign Role**, and then select **System Administrator**. If there is a role that is named **Common Data Service User**, select it as well.
 
 #### Set up Dataverse manually by importing solutions
 
