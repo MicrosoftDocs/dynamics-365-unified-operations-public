@@ -4,7 +4,7 @@
 title: Structure of Dynamics 365 Finance data sources for the FEC
 description: This topic describes the structure of Microsoft Dynamics 365 Finance data sources for the Fichier des écritures comptables (FEC).
 author: liza-golub
-ms.date: 05/03/2021
+ms.date: 05/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -49,7 +49,7 @@ The following table shows the **Main FEC file for the period specified** data st
 | 6      | CompteLib     | Alphanumérique | Le libellé de compte, conformément à la nomenclature du plan comptable français | The account name in accordance with the nomenclature of the French chart of accounts. | \$GeneralJournalView\_FR/getGeneralJournalAccountEntry()/getMainAccountName() |
 | 7      | CompAuxNum    | Alphanumérique | Le numéro de compte auxiliaire (à blanc si non utilisé) | The auxiliary account number. This field is blank if it isn't used. | \$GeneralJournalView\_FR/getGeneralJournalAccountEntry()/deCompteAuxNum\_FR() |
 | 8      | CompAuxLib    | Alphanumérique | Le libellé de compte auxiliaire (à blanc si non utilisé) | The auxiliary account description. This field is blank if it isn't used. | \$GeneralJournalView\_FR/getGeneralJournalAccountEntry()/deCompteAuxLib\_FR() |
-| 9      | PieceRef      | Alphanumérique | La référence de la pièce justificative | The reference of the supporting document. f reference of the supporting document cannot be found, this field is populated with EcritureNum. | \$GeneralJournalView\_FR/getGeneralJournalEntry()/dePieceNum\_FR() |
+| 9      | PieceRef      | Alphanumérique | La référence de la pièce justificative | The reference of the supporting document. If reference of the supporting document can't be found, this field is populated with EcritureNum. | \$GeneralJournalView\_FR/getGeneralJournalEntry()/dePieceNum\_FR() |
 | 10     | PieceDate     | Date           | La date de la pièce justificative | The date of the supporting document. | \$GeneralJournalView\_FR/getGeneralJournalEntry()/dePieceDate\_FR() |
 | 11     | EcritureLib   | Alphanumérique | Le libellé de l'écriture comptable | The wording of the accounting entry. | \$GeneralJournalView\_FR/\$ReplaceIntoDeEcritureLib\_FR |
 | 12     | Montant       | Numérique      | Le montant au débit/ au crédit | The debit/credit amount. | \$GeneralJournalView\_FR/\$AbsAmount |
@@ -62,7 +62,7 @@ The following table shows the **Main FEC file for the period specified** data st
 
 ## Customers fiscal year opening balances annex 
 
-Customers fiscal year opening transactions are posted as summary transactions in general ledger. To provide detailed information on fiscal year opening transactions by customers, the **Customers fiscal year opening balances annex** is implemented. This annex collects amounts of opening balances by customers on the beginning of the fiscal year and represents this information in combination with opening transaction voucher from general ledger.
+Customers fiscal year opening transactions are posted as summary transactions in general ledger. To provide detailed information on fiscal year opening transactions by customers, the **Customers fiscal year opening balances annex** is implemented. This annex collects the amounts of opening balances by customers at the beginning of the fiscal year and provides this information together with the opening transaction voucher from the general ledger.
 
 The following table shows the **Customers fiscal year opening balances annex** data structure definitions (\$CustLedgerBalance).
 
