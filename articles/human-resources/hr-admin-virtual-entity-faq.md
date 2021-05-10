@@ -126,14 +126,14 @@ The installation takes a few minutes. When it completes, the **Finance and Opera
 
 ### Can I generate virtual tables for HR from my Power Apps environment?
 
-Yes. After completing the prerequisite setup steps for virtual tables outlined in the [Configure Dataverse virtual tables](./hr-admin-integration-common-data-service-virtual-entities) documentation, you can generate the virtual tables directly from the Power Apps environment rather than from the Human Resources app, as outlined in the [Generate virtual tables](./hr-admin-integration-common-data-service-virtual-entities#generate-virtual-tables) section of the documentation.
+Yes. After completing the prerequisite setup steps for virtual tables outlined in [Configure Dataverse virtual tables](./hr-admin-integration-common-data-service-virtual-entities), you can generate the virtual tables directly from the Power Apps environment rather than from the Human Resources app. This is outlined in the [Generate virtual tables](./hr-admin-integration-common-data-service-virtual-entities#generate-virtual-tables) section of the documentation.
 
 1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. In the Environments list, select the Power Apps environment associated with your Human Resources instance.
 3. Select the **Environment URL** in the Details section of the page.
-4. In the Solution Health Hub, select the **Advanced Find** (funnel) icon in the icon group in the top right of the application page.
+4. In the Solution Health Hub, select the **Advanced Find** (funnel) icon in the icon group in the upper-right corner of the application page.
 5. In the **Look for** drop-down list, select **Available HR Entities**.
-6. Use the filter option to find the entity or entities you want to enable.
+6. Use the filter option to find the entity or entities that you want to enable.
 7. Select an entity from the list.
 8. On the entity page, change the **Has Been Generated** property to **Yes**.
 9. Save and close the entity page.
@@ -141,7 +141,7 @@ Yes. After completing the prerequisite setup steps for virtual tables outlined i
 ![Available HR Entities](./media/hr-admin-integration-virtual-entities-available.jpg)
 
 > [!NOTE]
-> You can generate multiple virtual entities at once by using the Change Multiple Records page. Select multiple records on the page and select the **Edit** action on the ribbon. You are then able to change the **Has Been Generated** property for all selected records.
+> You can generate multiple virtual entities by using the **Change Multiple Records** page. Select multiple records on the page, and then select the **Edit** action on the ribbon. You are then able to change the **Has Been Generated** property for all selected records.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
