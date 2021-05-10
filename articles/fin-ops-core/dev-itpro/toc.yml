@@ -1152,6 +1152,8 @@
         href: power-platform/overview.md
       - name: Virtual entities
         items:
+        - name: Virtual entities overview
+          href: power-platform/virtual-entities-overview.md
         - name: Entity modeling
           href: power-platform/entity-modeling.md
         - name: Application lifecycle management
