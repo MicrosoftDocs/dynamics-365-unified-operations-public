@@ -4,7 +4,7 @@
 title: Configure, install, and activate Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
-ms.date: 04/06/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
+This topic describes how to configure, download, and install Modern POS on various platforms. This topic is based on the legacy self-service installer. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md). It then describes how to activate Modern POS through device activation.
 
 > [!NOTE]
 > There are two Modern POS installers: Modern POS and Modern POS with offline (this installer also installs the offline database).
@@ -101,7 +101,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
 ### Before running the Modern POS installer
 
-- Make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
+- Make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met. If planning to use an offline database, it is recommended to first review the [Commerce Data Exchange implementation guidance](dev-itpro/implementation-considerations-cdx.md#commerce-data-exchange-implementation-guidance) section and the related best practices content it will reference.
 - It is recommended to temporarily turn off antivirus applications.  It has been noted that on aggressive antivirus solutions, the installation may stall due to the antivirus solution checking active files while in use.
 - The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
     - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx     
@@ -204,7 +204,7 @@ This procedure should be completed before you activate Retail Cloud POS or Moder
 ## Activate a device
 
 > [!NOTE]
-> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](https://docs.microsoft.com/azure/active-directory/develop/apple-sso-plugin).
+> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](/active-directory/develop/apple-sso-plugin).
 
 1. Start Modern POS on your computer. Read the instructions on the **Before you start** page, and make sure that they are completed. Then select **Next**.
 2. Select **Activate**. You're redirected to the Azure AD sign-in page.

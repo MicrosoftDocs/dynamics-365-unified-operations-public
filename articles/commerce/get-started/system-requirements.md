@@ -4,7 +4,7 @@
 title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
-ms.date: 02/11/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -42,7 +42,7 @@ The web application can run in any of the following web browsers that run on the
 - Apple Safari (latest publicly available version)
 
 > [!NOTE]
-> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](https://docs.microsoft.com/azure/active-directory/develop/apple-sso-plugin).
+> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](/azure/active-directory/develop/apple-sso-plugin).
 
 To find the latest release for each web browser, go to the software manufacturer's website.
 
@@ -111,6 +111,8 @@ It is critical to perform proper performance testing prior to going live in prod
     - It must have, at a minimum, 3 gigabytes (GB) of random-access memory (RAM). When combining with SQL Server for offline, no less than 4 GB of RAM is required.
     - It must have internet access.
 
+If the terminal will utilize an offline database, it is highly recommended that you review the [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses) section. For SQL Server versions, the recommendation is to use a version that is currently still within the mainstream support date.  Support dates can be searched for, by product, in the [Search Product and Services Lifecycle Information](/lifecycle/products/) article.
+
 ## Modern POS for Apple iPhone or iPad requirements
 
 - iOS 11 or later
@@ -149,7 +151,7 @@ The computer must meet all system requirements for installing and using the foll
 >
 > It is critical to note that this component utilizes a server certificate in addition to Azure Service to Service authentication.  Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
 
-Take note that the minimum system requirements listed below are the bare minimum necessary to get a Commerce Scale Unit to function in a test scenario. The following is not representative of a realistic production environment. It is critical to perform proper performance testing and validate that the hardware used will meet the needs of the users.
+Note that the minimum system requirements listed below are the bare minimum necessary to get a Commerce Scale Unit to function in a test scenario. The following is not representative of a realistic production environment. It is critical to perform proper performance testing and validate that the hardware used will meet the needs of the users. For SQL Server versions, the recommendation is to use a version that is currently still within the mainstream support date. Support dates can be searched for, by product, in  [Search Product and Services Lifecycle Information](/lifecycle/products/).
 
 ### Supported operating systems
 
@@ -169,12 +171,14 @@ Take note that the minimum system requirements listed below are the bare minimum
 - 4 GB of RAM
 - 1.6 GHz i5 (or equivalent) minimum CPU speed per core (2 cores are the minimum).
 - At least 15 GB of free space (the channel database can require a large amount of space).
+- A supported version of SQL Server.  It is recommended to use a standard license or better for a Commerce Scale Unit (self-hosted), as the Express edition could cause synchronization issues due to its known limitations. For more information, see [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses).
 
 ### Recommended system requirements
 
 - 6 GB of RAM
 - 2.4 GHz i7 (or equivalent) minimum CPU speed per core (4 cores are recommended).
 - At least 20 GB of free space (the channel database can require a large amount of space).
+- - A supported version of SQL Server. It is recommended to use a standard license or better for a Commerce Scale Unit (self-hosted), as the Express edition could cause synchronization issues due to its known limitations. For more information, see [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses).
 
 It would be in an organization's best interest to also take the following items into consideration when determining personal hardware needs:
 
