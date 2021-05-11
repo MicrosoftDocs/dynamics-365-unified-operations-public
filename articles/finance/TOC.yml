@@ -2452,7 +2452,7 @@
               href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
             - name: TDS group, PAN, and TAN information setup for vendors and customers
               href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
-          - name: Formula designer and threhold limit for TDS calculation
+          - name: Formula designer and threshold limit for TDS calculation
             items:
             - name: Formula designer for TDS calculations
               href: localizations/apac-ind-TDS-Formula-designer.md
