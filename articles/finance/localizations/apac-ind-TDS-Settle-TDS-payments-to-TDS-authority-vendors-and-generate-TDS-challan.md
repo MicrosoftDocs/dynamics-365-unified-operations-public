@@ -4,7 +4,6 @@
 title: Settle TDS payments to TDS authority vendors and generate TDS challan
 description: This topic explains how to settle Tax Deducted at Source (TDS) payments to TDS authority vendors.
 author: kailiang
-manager: AnnBe
 ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
