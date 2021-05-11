@@ -1,6 +1,6 @@
 ---
-title: Multiple inventory transactions for batch numbers without "On physical update"
-description: Multiple inventory transactions are created after adjusting a purchase order line for items where the batch number group has "On physical update" set to "No".
+title: Multiple inventory transactions for batch numbers when On physical update is disabled
+description: Multiple inventory transactions are created after you adjust a purchase order line for items where the On physical update option of the batch number group is set to No.
 author: niwang
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,19 +13,19 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Multiple inventory transactions for batch numbers without "On physical update"
+# Multiple inventory transactions for batch numbers when On physical update is disabled
 
-KB Number: 4613390
+KB number: 4613390
 
 ## Symptoms
 
-Multiple inventory transactions are created after adjusting a purchase order line for items where the batch number group has **On physical update** set to *No*.
+Multiple inventory transactions are created after you adjust a purchase order line for items where the **On physical update** option of the batch number group is set to *No*.
 
-When creating an item where the batch number group has **On Physical Update** set to *No*, the system automatically creates a new batch number if you modify a purchase line quantity and save the purchase order form.
+When you create an item where the **On physical update** option of the batch number group is set to *No*, the system automatically creates a new batch number if you modify a purchase line quantity and save the purchase order page.
 
 ## Resolution
 
-The **On physical update** setting for batch number groups works as follows:
+The **On physical update** setting for batch number groups works in the following way:
 
-1. When **On physical update** is set to *Yes*, new batch numbers are only created after a physical update. (For example, on shipment or receipt of items.)
-1. When **On physical update** is set to *No*, a new batch number is created on every update when applicable. (For example, when adding new quantity to a purchase order.)
+- When the option is set to *Yes*, new batch numbers are created only after a physical update (for example, when items are shipped or received).
+- When the option is set to *No*, a new batch number is created every time that an applicable update occurs (for example, when a new quantity is added to a purchase order).
