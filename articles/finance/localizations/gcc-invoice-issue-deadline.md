@@ -37,7 +37,7 @@ This topic explains how to configure Microsoft Dynamics 365 Finance so that it c
 
 In the **Feature management** workspace, turn on the **Invoice issue deadline availability** feature. This feature is available for all countries and regions in version 10.0.15 and later.
 
-For more information about how to turn on features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+For more information about how to turn on features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!NOTE]
 > This feature is the same as the out-of-box feature for European Union (EU) countries. For more information, see [Invoice issue deadline](emea-invoice-issue-deadline.md).

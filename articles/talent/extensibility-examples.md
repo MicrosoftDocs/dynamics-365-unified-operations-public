@@ -76,6 +76,6 @@ To download **Referral App**, go to [Dynamics 365 Talent extensibility solution:
 
 ## Additional resources
 
-[The Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
+[The Microsoft Power Platform](/power-platform/admin/admin-documentation)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

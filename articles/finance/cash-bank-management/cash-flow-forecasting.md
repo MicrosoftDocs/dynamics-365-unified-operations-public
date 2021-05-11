@@ -149,7 +149,7 @@ The **Cash overview – all companies** workspace shows cash flow forecasting an
 
 The **Cash overview – current company** workspace shows cash flow forecasting analytics in the company's defined accounting currency. The accounting currency that is used for the analytics is defined on the **Ledger** page. This workspace shows an overview of cash flow forecasting and bank account balances for the current company. A chart of cash inflows and outflows gives an overview of future cash movements and balances in the accounting currency, together with detailed information about the forecasted transactions. You can also see the forecasted currency balances.
 
-For more information about the cash flow forecasting analytics, see the [Cash overview Power BI content](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content) topic.
+For more information about the cash flow forecasting analytics, see the [Cash overview Power BI content](./cash-overview-power-bi-content.md) topic.
 
 Additionally, you can view cash flow forecasting data for specific accounts, orders, and items on the following pages:
 

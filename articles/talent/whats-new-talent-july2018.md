@@ -35,7 +35,7 @@ This topic describes features that are either new or changed in Microsoft Dynami
 
 Talent supports integration with the Microsoft Power Apps service. Power Apps lets both developers and non-technical users build custom business apps for mobile devices, tablets, and the web without having to write code. Apps that you, your organization, or the broader ecosystem develop by using Power Apps can then be embedded in the Talent client to augment the product's functionality. For example, you might build an app that supplements Talent with information that is retrieved from another system.
 
-For more information, see [Embed Power Apps apps](../fin-and-ops/get-started/embed-power-apps.md).
+For more information, see [Embed Power Apps apps](../fin-ops-core/fin-ops/get-started/embed-power-apps.md).
 
 ## Ceridian payroll integration
 
@@ -46,7 +46,7 @@ Integration between Talent and Ceridian Dayforce is now available for the US, Ca
 - Payroll data, such as pay cycles, pay periods, and earning codes
 - Worker data
 
-For more information, see [Configure the payroll integration between Talent and Dayforce](configure-payroll-integration.md).
+For more information, see [Configure the payroll integration between Talent and Dayforce](../human-resources/hr-admin-integration-dayforce.md).
 
 ## Worker tax regions have been expanded beyond the US
 

@@ -4,7 +4,7 @@
 title: Get started with Electronic invoicing service administration
 description: This topic explains how to get started with Electronic invoicing.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,10 +38,10 @@ Before you complete the procedures in this topic, the following prerequisites mu
 - You must have access to your Microsoft Dynamics Lifecycle Services (LCS) account.
 - You must have an LCS project that includes version 10.0.17 or later of Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. Additionally, these apps must be deployed in one of the following Azure geographies:
 
-    - East US
-    - West US
-    - North EU
-    - West EU
+    - United States
+    - Europe
+    - United Kingdom
+    - Asia
 
 - You must have access to your Dynamics 365 Regulatory Configuration Services (RCS) account.
 - You must activate the Globalization feature for your RCS account in Feature management. For more information, see [Regulatory Configuration Services (RCS) - Globalization features](rcs-globalization-feature.md).
@@ -51,11 +51,12 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 1. Sign in to your LCS account.
 2. Select the **Preview feature management** tile.
-3. In the **Public Preview Features** section, select **e-Invoicing service**.
+3. In the **Public Preview Features** section, select **Electronic Invoicing**.
 4. Make sure that the **Preview feature enabled** option is set to **Yes**.
-5. On your LCS dashboard, select your LCS deployment project. The LCS project must be running.
-7. On the **Environment add-ins** tab, select **Install a new add-in**.
-8. Select **e-invoicing Services**.
+5. On your LCS project dashboard, select a LCS project.
+6. In the LCS project, on the LCS environment dashboard, select your LCS deployment project. The LCS deployment project must be running.
+7. On the **Power Platform Integration** tab, in the **Environment add-ins** field group, select **Install a new add-in**.
+8. Select **Electronic Invoicing**.
 9. In the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This is a fixed value.
 10. In the **AAD tenant ID** field, enter the tenant ID of your Azure subscription account.
 11. Review the terms and conditions, and then select the check box.
@@ -70,10 +71,10 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
     | Datacenter Azure geography | Service endpoint URI                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | East US                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | West US                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | North EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | West EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | United States              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Europe                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | United Kingdom             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Asia                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 4. Verify that the **Application Id** field is set to **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value.
 5. In the **LCS Environment Id** field, enter the ID of your LCS environment.
@@ -157,12 +158,12 @@ Before you complete the procedures in this topic, the following prerequisites mu
 1. Go to **Organization administration \> Setup \> Electronic document parameters**.
 2. On the **Submission service** tab, in the **Service endpoint URL** field, enter the appropriate service endpoint for your Azure geography, as shown in the following table.
 
-    | Datacenter Azure geography | Service endpoint URL                                                       |
+    | Datacenter Azure geography | Service endpoint URI                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | East US                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | West US                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | North EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | West EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | United States              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Europe                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | United Kingdom             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Asia                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 3. In the **Environment** field, enter the name of the service environment published in Electronic invoicing.
 4. Select **Save**, and then close the page.

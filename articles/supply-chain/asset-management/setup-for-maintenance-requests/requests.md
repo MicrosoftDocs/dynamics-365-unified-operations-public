@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Maintenance requests
+title: Introduction to maintenance requests
 description: This topic provides an overview of maintenance requests in Asset Management.
 author: johanhoffmann
 ms.date: 07/26/2019
@@ -26,12 +26,10 @@ ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
-
-# Maintenance requests
+<!-- KFM: Delete and redirect to https://docs.microsoft.com/en-us/dynamics365/supply-chain/asset-management/manage-maintenance-requests/maintenance-request-overview -->
+# Introduction to maintenance requests
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 You can set up various types of requests to use in your company. Maintenance requests are one type. Maintenance requests are used to request that a work order be required for a specific job. A maintenance request can be created by any user who has access to Asset Management functionality. A planner or manager can then decide whether a maintenance request should be converted to a work order, or whether it should complete its own lifecycle.
 

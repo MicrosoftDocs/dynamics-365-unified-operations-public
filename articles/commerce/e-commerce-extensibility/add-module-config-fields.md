@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to add module configuration fields in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Configuration fields can be added to a module to expose them to page authors and give them control of various module features. Examples of these features include different views, alignment properties, Boolean switches to turn features on or off, module titles or headings, rich text descriptions, call-to-action links, image URLs, and Commerce product data.
 
 The following illustration shows how these fields appear in the page authoring tools.

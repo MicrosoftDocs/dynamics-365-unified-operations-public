@@ -32,7 +32,7 @@ These topics describe the programs, tools, and processes available related to th
 
 ## Programs
 
-[Microsoft FastTrack](https://aka.ms/D365FastTrackDocs)
+[Microsoft FastTrack](/dynamics365/fasttrack/)
 
 ## Tools
 

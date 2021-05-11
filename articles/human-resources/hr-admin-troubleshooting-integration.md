@@ -58,7 +58,7 @@ By default, the Dataverse integration is turned off in new environments that don
 
 Templates are the starting point. You can create your own template, but a
 template is always needed when creating an integration project. For
-more information about data integrator (DI), templates, and projects, see [Integrate data into Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+more information about data integrator (DI), templates, and projects, see [Integrate data into Microsoft Dataverse](/powerapps/administrator/data-integrator).
 
 ## Can I map financial dimensions to transfer between Human Resources and Finance?
 
@@ -179,7 +179,7 @@ supported in the integration. To include additional data in Dataverse, a change 
 If the entity is supported and the data is available in Dataverse, verify the mapping
 is correct in Data Integrator. If the integrator mapping looks okay, then
 verify the data management jobs have successfully run. Errors may occur during
-the execution of the batch jobs. For more information about Data Management, see [Data management](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+the execution of the batch jobs. For more information about Data Management, see [Data management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json).
 
 ## The addresses for my employees are incorrect after I import them into Finance. What should I do?
 
@@ -211,15 +211,15 @@ of minutes to complete, then you should see those mappings. This issue occurs wh
 
 - Data Integrator (DI): 
 
-  - [Integrate data into Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator)
+  - [Integrate data into Microsoft Dataverse](/powerapps/administrator/data-integrator)
 
-  - [Data Integrator error management and troubleshooting](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
+  - [Data Integrator error management and troubleshooting](/powerapps/administrator/data-integrator-error-management)
 
-  - [Responding to DSR requests for system-generated logs in Power Apps, Microsoft Power Automate, and Dataverse](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Responding to DSR requests for system-generated logs in Power Apps, Microsoft Power Automate, and Dataverse](/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Data Management:
 
-  - [Data management](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Data management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

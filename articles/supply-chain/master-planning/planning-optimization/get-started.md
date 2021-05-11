@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-As [previously announced](https://docs.microsoft.com/dynamics365/supply-chain/get-started/removed-deprecated-features-scm-updates#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios), Planning Optimization is scheduled to replace the existing built-in master planning engine.
+As [previously announced](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios), Planning Optimization is scheduled to replace the existing built-in master planning engine.
 
 If you currently use the built-in master planning engine, you should start planning your migration to Planning Optimization now. It is important to start the migration process right away because your operations may be impacted when deprecation is enforced. To avoid last-minutes issues when deprecation is enforced, we strongly encourage you to complete the migration before December 1, 2020. 
 

@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to configure theme settings in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 The Dynamics 365 Commerce e-Commerce extensibility software development kit (SDK) lets theme designers specify various layouts for each module. Theme designers can then control specific layout options for images. The layouts are specified in the theme.settings.json file in /src/settings/src/settings.
 
 ## Example theme.settings.json file

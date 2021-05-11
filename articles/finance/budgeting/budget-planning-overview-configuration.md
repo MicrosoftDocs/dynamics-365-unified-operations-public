@@ -80,7 +80,7 @@ The following illustration shows an example where the corporate headquarters est
 
 On the **Organization hierarchy** page, you can specify an organization hierarchy as a budget planning hierarchy for each budget planning process. The budget planning hierarchy doesn't have to match the standard organization hierarchy that is used for other purposes. Because this hierarchy is used to aggregate and distribute data, you might want it to have a different structure. In the example schema, the Sales departments are under a headquarters level that includes Budget and Finance departments. This structure likely differs from the structure that is used to manage operations for the Sales departments. Only one organization hierarchy can be assigned to each budget planning process.
 
-For more information, see [Organizations and organizational hierarchies](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
+For more information, see [Organizations and organizational hierarchies](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### User security
 
@@ -168,7 +168,7 @@ In addition to columns for budget amounts, you can define columns for the projec
 
 For the example schema, you might want to create columns for the "PY Sales," "Contracts," and "Forecast" scenarios. (The following illustration shows the relevant section of the schema.) You can then break out one or all of these scenarios into separate columns for each quarter of the fiscal year, so that the Sales department manager can accurately enter forecast amounts for each period.
 
-[![Columns](./media/columns.png)](./media/columns.png)
+[![Illustration of sections of the schema for adding columns](./media/columns.png)](./media/columns.png)
 
 You also specify whether each layout element (column) is editable, and whether it's available in any worksheet template that is created for that layout. For the example schema, in the layout that is used for the "Estimate" stage, the "Forecast" columns are editable, but the "PY Sales" and "Contracts" columns are read-only.
 

@@ -4,7 +4,6 @@
 title: Payroll integration API introduction
 description: This topic describes the Dynamics 365 Human Resources Payroll integration API.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: 
@@ -45,22 +44,22 @@ This API is built on Microsoft Dataverse (formerly Common Data Service). All RES
 
 For more general information about the Microsoft Dataverse Web API, see:
 
-- [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
-- [Use the Microsoft Dataverse Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)
-- [Microsoft Dataverse developer guide](https://docs.microsoft.com/powerapps/developer/data-platform)
+- [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
+- [Use the Microsoft Dataverse Web API](/powerapps/developer/data-platform/webapi/overview)
+- [Microsoft Dataverse developer guide](/powerapps/developer/data-platform)
 
 This documentation includes details and developer guidance for using the Dataverse Web API, including the following topics:
 
-- [Authenticate to Microsoft Dataverse with the Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/authenticate-web-api)
-- [Perform operations using the Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/perform-operations-web-api)
-- [Use Postman with the Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/use-postman-web-api)
-- [Use change tracking to synchronize data with external systems](https://docs.microsoft.com/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems)
+- [Authenticate to Microsoft Dataverse with the Web API](/powerapps/developer/data-platform/webapi/authenticate-web-api)
+- [Perform operations using the Web API](/powerapps/developer/data-platform/webapi/perform-operations-web-api)
+- [Use Postman with the Web API](/powerapps/developer/data-platform/webapi/use-postman-web-api)
+- [Use change tracking to synchronize data with external systems](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems)
 
 ### Virtual tables for Human Resources in Dataverse
 
 The endpoints for the Payroll integration API use the virtual table platform capabilities of Microsoft Dataverse. By default, the virtual tables and their associated API endpoints aren't deployed for Human Resources environments, enabling organizations to determine which OData endpoints will be exposed for the environment. To use the API, the virtual tables for the Human Resources entities must be generated for the environment.
 
-For information on generating the virtual tables for the API, see [Configure Dataverse virtual tables](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+For information on generating the virtual tables for the API, see [Configure Dataverse virtual tables](./hr-admin-integration-common-data-service-virtual-entities.md).
 
 ## Data model
 
@@ -83,7 +82,7 @@ Entities:
 [Generate and review payroll entities](hr-admin-integration-payroll-api-generate-review-entities.md)<br>
 [Configure Human Resources parameters](hr-setup-parameters.md)<br>
 [Configure Human Resources shared parameters](hr-setup-shared-parameters.md)<br>
-[What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Use the Microsoft Dataverse Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)<br>
+[What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Use the Microsoft Dataverse Web API](/powerapps/developer/data-platform/webapi/overview)<br>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

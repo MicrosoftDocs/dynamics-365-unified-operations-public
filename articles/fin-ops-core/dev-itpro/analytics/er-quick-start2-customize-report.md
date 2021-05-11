@@ -197,7 +197,7 @@ You must add bank information for a vendor account that will be referred to late
 
 ### <a id="EnterVendorPayment"></a>Enter a vendor payment
 
-You must enter a new vendor payment by using a [payment proposal](https://docs.microsoft.com/dynamics365/finance/accounts-payable/create-vendor-payments-payment-proposal).
+You must enter a new vendor payment by using a [payment proposal](../../../finance/accounts-payable/create-vendor-payments-payment-proposal.md).
 
 1. Go to **Accounts payable** \> **Payments** \> **Vendor payment journal**.
 2. On the **Vendor payment journal** page, select **New**.
