@@ -42,7 +42,7 @@ The web application can run in any of the following web browsers that run on the
 - Apple Safari (latest publicly available version)
 
 > [!NOTE]
-> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](https://docs.microsoft.com/azure/active-directory/develop/apple-sso-plugin).
+> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](/azure/active-directory/develop/apple-sso-plugin).
 
 To find the latest release for each web browser, go to the software manufacturer's website.
 
@@ -111,7 +111,7 @@ It is critical to perform proper performance testing prior to going live in prod
     - It must have, at a minimum, 3 gigabytes (GB) of random-access memory (RAM). When combining with SQL Server for offline, no less than 4 GB of RAM is required.
     - It must have internet access.
 
-If the terminal will utilize an offline database, it is highly recommended that you review the [Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md#sql-versions-and-licenses-and-when-to-use-them) content. For SQL Server versions, the recommendation is to use a version that is currently still within the mainstream support date.  Support dates can be searched for, by product, in the [Search Product and Services Lifecycle Information](/lifecycle/products/) article.
+If the terminal will utilize an offline database, it is highly recommended that you review the [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses) section. For SQL Server versions, the recommendation is to use a version that is currently still within the mainstream support date.  Support dates can be searched for, by product, in the [Search Product and Services Lifecycle Information](/lifecycle/products/) article.
 
 ## Modern POS for Apple iPhone or iPad requirements
 
@@ -171,14 +171,14 @@ Note that the minimum system requirements listed below are the bare minimum nece
 - 4 GB of RAM
 - 1.6 GHz i5 (or equivalent) minimum CPU speed per core (2 cores are the minimum).
 - At least 15 GB of free space (the channel database can require a large amount of space).
-- A supported version of SQL Server.  It is recommended to use a standard license or better for a Commerce Scale Unit (self-hosted), as the Express edition could cause synchronization issues due to its known limitations. For more information, see [Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md#sql-versions-and-licenses-and-when-to-use-them).
+- A supported version of SQL Server.  It is recommended to use a standard license or better for a Commerce Scale Unit (self-hosted), as the Express edition could cause synchronization issues due to its known limitations. For more information, see [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses).
 
 ### Recommended system requirements
 
 - 6 GB of RAM
 - 2.4 GHz i7 (or equivalent) minimum CPU speed per core (4 cores are recommended).
 - At least 20 GB of free space (the channel database can require a large amount of space).
-- - A supported version of SQL Server. It is recommended to use a standard license or better for a Commerce Scale Unit (self-hosted), as the Express edition could cause synchronization issues due to its known limitations. For more information, see [Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md#sql-versions-and-licenses-and-when-to-use-them).
+- - A supported version of SQL Server. It is recommended to use a standard license or better for a Commerce Scale Unit (self-hosted), as the Express edition could cause synchronization issues due to its known limitations. For more information, see [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses).
 
 It would be in an organization's best interest to also take the following items into consideration when determining personal hardware needs:
 
