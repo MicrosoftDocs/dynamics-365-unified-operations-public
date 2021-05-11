@@ -4,7 +4,6 @@
 title: Set TDS parameters in Accounts payable and Accounts receivable
 description: This topic explains how to set parameters in Accounts payable and Accounts receivable to support Tax Deducted at Source (TDS) deductions.
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
