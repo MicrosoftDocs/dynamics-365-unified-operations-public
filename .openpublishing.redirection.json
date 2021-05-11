@@ -17552,6 +17552,11 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/commerce/product-variants-POS.md",
+      "redirect_url": "pos-inventory-lookup-operation",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/retail/tasks/worker.md",
       "redirect_url": "/dynamics365/commerce/tasks/worker",
       "redirect_document_id": "false"
