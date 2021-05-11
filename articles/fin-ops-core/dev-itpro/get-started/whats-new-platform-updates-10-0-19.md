@@ -7,7 +7,6 @@ author: sericks007
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

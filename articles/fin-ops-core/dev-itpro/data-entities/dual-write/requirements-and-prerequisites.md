@@ -53,7 +53,7 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
 You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environment, as shown in the following image. Alternatively, you can choose a model-driven app for Dynamics 365 environment that comes with Dataverse and already has **Enable Dynamics 365 apps** set to **Yes**.
 
-:::image type="content" source="media/add_database_expanded.png" alt-text="Enable apps switch":::
+:::image type="content" source="media/add_database_expanded2.png" alt-text="Enable apps switch":::
 
 1. Validate the platform update and app version.
 

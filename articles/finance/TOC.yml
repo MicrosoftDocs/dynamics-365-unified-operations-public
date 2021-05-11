@@ -1150,6 +1150,10 @@
           href: general-ledger/audit-policy-violations-cases.md
         - name: Define audit policies for source documents
           href: general-ledger/tasks/define-audit-policies-source-documents.md 
+      - name: Troubleshooting
+        items: 
+        - name: Change the accounting or reporting currency
+          href: general-ledger/add-change-acctg-rprtg-crrncy.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
@@ -2050,8 +2054,18 @@
           href: localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
         - name: Chronological invoices vouchers
           href: localizations/emea-fra-chronological-invoices-vouchers.md
-        - name: Create Standard Audit File for France (FEC)
-          href: localizations/emea-fra-fec-audit-file.md
+        - name: Audit file for France
+          items: 
+          - name: Audit file for France (FEC) overview
+            href: localizations/emea-fra-fec-audit-file.md
+          - name: Prerequisites for generating an FEC audit file in France
+            href: localizations/emea-fra-fec-audit-file-pre-requisites.md
+          - name: Structure of Finance data sources for the FEC
+            href: localizations/emea-fra-fec-audit-file-structure.md
+          - name: Prepare your environment to generate an FEC
+            href: localizations/emea-fra-fec-audit-file-setup.md
+          - name: Generate an FEC in Dynamics 365 Finance
+            href: localizations/emea-fra-fec-audit-file-generation.md
         - name: Customer and vendor account statements
           href: localizations/tasks/fr-00002-customer-vendor-account-statements.md
         - name: Daily interest calculation for late payment and lump sum in the invoice and collection letter

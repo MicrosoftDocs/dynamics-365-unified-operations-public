@@ -4,7 +4,6 @@
 title: Store selector module
 description: This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-manager: annbe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod:
@@ -66,7 +65,7 @@ To enter the latitude and longitude values for a store location in Commerce head
 
 ## Bing Maps integration
 
-The store selector module is integrated with the [Bing Maps REST application programming interfaces (APIs)](https://docs.microsoft.com/bingmaps/rest-services/) to use Bing's Geocoding and Autosuggest features. A Bing Maps API key is required and must be added to the shared parameters page in Commerce headquarters. The Geocoding API is used to convert a location to latitude and longitude values. The integration with the Autosuggest API is used to show search suggestions when users enter locations in the search field.
+The store selector module is integrated with the [Bing Maps REST application programming interfaces (APIs)](/bingmaps/rest-services/) to use Bing's Geocoding and Autosuggest features. A Bing Maps API key is required and must be added to the shared parameters page in Commerce headquarters. The Geocoding API is used to convert a location to latitude and longitude values. The integration with the Autosuggest API is used to show search suggestions when users enter locations in the search field.
 
 For the Autosuggest REST API, you must ensure that the following URLs are allowed per your site's content security policy (CSP). This setup is done in Commerce site builder, by adding allowed URLs to various CSP directives for the site (for example, **img-src**). For more information, see [Content security policy](manage-csp.md). 
 
@@ -82,14 +81,14 @@ The store selector module supports a **Pick up in store** mode that shows a list
 
 The store selector module can be added to a buy box module on a PDP to show stores where a product is available for pickup. It can also be added to a cart module. In this case, the store selector module shows pickup options for each line item in the cart. The store selector module can also be added to other pages or modules via extensions and customizations.
 
-For this scenario to work, products should be configured so that the **pickup** delivery mode is used. Otherwise, the module won't be shown on the product pages. For more information about how to configure the delivery mode, see [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+For this scenario to work, products should be configured so that the **pickup** delivery mode is used. Otherwise, the module won't be shown on the product pages. For more information about how to configure the delivery mode, see [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 The following image shows an example of a store selector module used on a PDP.
 
 ![Example of a store selector module used on a PDP](./media/BOPIS.PNG)
 
 > [!NOTE]
-> In version 10.0.16 and later, a new feature can be enabled which allows an organization to define multiple pick up modes of delivery options for customers.  If this feature is enabled, the store selector and other modules of e-Commerce will be enhanced to allow the shopper to choose from potentially multiple pick up delivery options if configured.  To learn more about this feature, refer to [this documentation](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
+> In version 10.0.16 and later, a new feature can be enabled which allows an organization to define multiple pick up modes of delivery options for customers.  If this feature is enabled, the store selector and other modules of e-Commerce will be enhanced to allow the shopper to choose from potentially multiple pick up delivery options if configured.  To learn more about this feature, refer to [this documentation](./multiple-pickup-modes.md). 
 
 ## Find stores mode
 
@@ -161,11 +160,11 @@ To configure the store selector module to show available stores for a store loca
 
 [Quick tour of cart and checkout](quick-tour-cart-checkout.md)
 
-[Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 [Manage Bing Maps for your organization](dev-itpro/manage-bing-maps.md)
 
-[Bing Maps REST APIs](https://docs.microsoft.com/bingmaps/rest-services/)
+[Bing Maps REST APIs](/bingmaps/rest-services/)
 
 [Maps module](map-module.md)
 
