@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers how the global configuration properties exposed in the site builder tool (under the "Extensions" tab "Configuration" section) can be set to visible/hidden or disabled based on specific Dynamics 365 Commerce feature enablement.  This document will provide the details to show/hide or disable specific configuration properties based on a Dynamics 365 Commerce feature being turned on to provide the best user experience within site builder.
 
-Configuration properties are configured in the /settings/app.settings.json online SDK file using the **visibleWithFeatureFlags** and **disabledWithFeatureFlags** properties.  More information on app settings can be here: (App settings)[app-settings.md].
+Configuration properties are configured in the /settings/app.settings.json online SDK file using the **visibleWithFeatureFlags** and **disabledWithFeatureFlags** properties.  More information on app settings can be here: [App settings](app-settings.md).
 
 ## Make a configuration property visible in app.settings.json file when a specific feature is enabled
 The **disabledWithFeatureFlags** property can be used inside the config setting as shown in the below example.  The below example will show the "b2bQuantityMultiple" configuration in the site builder tool but it will be visible only if the "B2B_INVENTORY_MANAGEMENT" feature is enabled within Dynamics 365 Commerce.
@@ -70,4 +70,4 @@ The **disabledWithFeatureFlags** property can be used inside the config app sett
 }
 ```
 
-For more information about Dynamics 365 Commerce feature enablement see the (Feature management overview)[https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview?toc=/dynamics365/commerce/toc.json] topic.
+For more information about Dynamics 365 Commerce feature enablement see the [Feature management overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview?toc=/dynamics365/commerce/toc.json) topic.
