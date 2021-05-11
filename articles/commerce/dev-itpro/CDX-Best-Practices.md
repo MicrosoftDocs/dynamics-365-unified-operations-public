@@ -69,7 +69,7 @@ The following should be performed after every update to the Dynamics 365 environ
 | <ul><li>Channel database group</li><li>Distribution schedule</li><li>Offline profile</li><li>Pause</li><li>Data</li><li>Download</li></ul> | We highly recommend that you have either a "dummy" channel database group (that is, a group that isn't associated with any distribution schedule job) that you assign to the newly generated terminals, or a special offline profile where the **Pause offline synchronization** option is set to **Yes**. In this way, data generation can occur when it's required and when the system is most available to do it. (However, the system might pause multiple times as required.) |
   
 ### Enable table and index compression
-Prior to reading this topic, we recommended that you read about the different recommended versions of SQL Server used in on-premises database components (offline database and channel database as part of a CSU).  We recommend that you read [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md#implementation-considerations).  It is valueable to enable table/index compression on their on-premises databases, such as the offline databases for Modern POS and the channel databases for the CSU (self-hosted). This is supported only on SQL Server 2016 SP1 Express, SQL Server 2017 Express, SQL Server 2019 Express and later. If the customer is still running SQL Server Express 2014, an upgrade to a newer, supported version will be required.  Generate a report of the top tables using disk space (**SQL Server Management Studio > Reports > Standard Reports > Disk Usage by Top Tables**). The user should enable compression for each table and index at the top of the report.  The basic commands are as follows:
+Before you read this topic, we recommended that you read about the different recommended versions of SQL Server used in on-premises database components (offline database and channel database as part of a CSU) in [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md#implementation-considerations). It's important to enable table/index compression on their on-premises databases, such as the offline databases for Modern POS and the channel databases for the CSU (self-hosted). This is supported only on SQL Server 2016 SP1 Express, SQL Server 2017 Express, SQL Server 2019 Express, and later. If you are still running SQL Server Express 2014, an upgrade to a newer, supported version will be required. Generate a report of the top tables using disk space (**SQL Server Management Studio > Reports > Standard Reports > Disk Usage by Top Tables**). After that, you can enable compression for each table and index at the top of the report. The basic commands are shown below.
 
 ```Console
 ALTER TABLE [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
@@ -77,13 +77,13 @@ ALTER INDEX <index1_name> ON [ax].<table_name> REBUILD PARTITION = ALL WITH (DAT
 ALTER INDEX <index2_name> ON [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
 ```
 
-As an example of a table that often benefits from compression, let's look at ax.INVENTDIM:
+As an example of a table that often benefits from compression, this example uses ax.INVENTDIM:
 
 ```Console
 sp_helpindex 'ax.INVENTDIM'
 ```
 
-The above query will show all the indexes for the selected table (the list of which is shown below in the next set of commands).  Based on that query, we can take the basic commands originally shown in this topic to compress the table and all related indices 
+The above query will show all the indexes for the selected table (the list of which is shown below in the next set of commands). Based on that query, can take the basic commands originally shown in this topic to compress the table and all related indices.
 
 ```Console
 ALTER TABLE [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
@@ -96,7 +96,7 @@ ALTER INDEX [IX_INVENTDIM_INVENTLOCATIONID_INVENTSITEID_LICENSEPLATEID_WMSLOCATI
 ALTER INDEX [IX_INVENTDIM_RECID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
 ```
 
-It is recommended to repeat this section for the top tables in the report, until an appropriate database size is reached.
+We recommend that you repeat this section for the top tables in the report, until an appropriate database size is reached.
 
 
 ## Practices that affect performance
