@@ -2,9 +2,8 @@
 # required metadata
 
 title: Calculate TDS on invoices using journals
-description: This topic lists the steps for calculating Tax Deducted at Source (TDS) on invoices.
+description: This topic lists the steps for calculating Tax Deducted at Source (TDS) on journals.
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
@@ -34,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the steps for calculating Tax Deducted at Source (TDS) on invoices.
+This topic lists the steps for calculating Tax Deducted at Source (TDS) on journals.
 
 Begin by opening the **General journals** page (**General ledger > Journal entries > General journals**).
 
