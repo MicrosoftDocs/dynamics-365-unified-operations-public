@@ -1,6 +1,6 @@
 ---
-title: Packing station doesn't display product notes
-description: Packing station doesn't display product notes
+title: Packing station doesn't show product notes
+description: The packing station doesn't show product notes.
 author: perlynne
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,16 +13,16 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Packing station doesn't display product notes
+# Packing station doesn't show product notes
 
-KB Number: 4614615
+KB number: 4614615
 
 ## Symptoms
 
-Packing notes aren't displayed on the packing form when the packing instructions attachment is added either to a product master or to a product variant.
+Packing notes aren't shown in the packing form when the packing instructions are added as an attachment to a product master or a product variant.
 
 ## Resolution
 
 The system is behaving as designed.
 
-The current logic for displaying packing notes on the packing form requires the notes to be associated with the shipments.
+The current logic for showing packing notes in the packing form requires that the notes be associated with the shipments.
