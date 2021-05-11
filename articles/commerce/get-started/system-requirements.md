@@ -4,7 +4,7 @@
 title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
-ms.date: 02/11/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -111,7 +111,7 @@ It is critical to perform proper performance testing prior to going live in prod
     - It must have, at a minimum, 3 gigabytes (GB) of random-access memory (RAM). When combining with SQL Server for offline, no less than 4 GB of RAM is required.
     - It must have internet access.
 
-If the terminal will utilize an offline database, it is highly recommended to review the [Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md#sql-versions-and-licenses-and-when-to-use-them) document. For SQL versions, the recommendation is to use a version of SQL that is currently still within the mainstream support date.  Support dates can be searched for, by product in the [Search Product and Services Lifecycle Information](https://docs.microsoft.com/en-us/lifecycle/products/) article.
+If the terminal will utilize an offline database, it is highly recommended that you review the [Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md#sql-versions-and-licenses-and-when-to-use-them) content. For SQL Server versions, the recommendation is to use a version that is currently still within the mainstream support date.  Support dates can be searched for, by product, in the [Search Product and Services Lifecycle Information](/lifecycle/products/) article.
 
 ## Modern POS for Apple iPhone or iPad requirements
 
@@ -151,7 +151,7 @@ The computer must meet all system requirements for installing and using the foll
 >
 > It is critical to note that this component utilizes a server certificate in addition to Azure Service to Service authentication.  Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
 
-Take note that the minimum system requirements listed below are the bare minimum necessary to get a Commerce Scale Unit to function in a test scenario. The following is not representative of a realistic production environment. It is critical to perform proper performance testing and validate that the hardware used will meet the needs of the users. For SQL versions, the recommendation is to use a version of SQL that is currently still within the mainstream support date.  Support dates can be searched for, by product in the [Search Product and Services Lifecycle Information](https://docs.microsoft.com/en-us/lifecycle/products/) article.
+Take note that the minimum system requirements listed below are the bare minimum necessary to get a Commerce Scale Unit to function in a test scenario. The following is not representative of a realistic production environment. It is critical to perform proper performance testing and validate that the hardware used will meet the needs of the users. For SQL Server versions, the recommendation is to use a version that is currently still within the mainstream support date.  Support dates can be searched for, by product, in the [Search Product and Services Lifecycle Information](/lifecycle/products/) article.
 
 ### Supported operating systems
 
