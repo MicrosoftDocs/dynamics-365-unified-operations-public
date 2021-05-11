@@ -1,6 +1,6 @@
 ---
-title: Purchase orders don't show translated text.
-description: Purchase orders don't show translated text.
+title: Purchase orders don't show translated product text
+description: Purchase orders don't show translated product text.
 author: t-benebo
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: 10.0.19
 
 # Purchase orders don't show translated product text
 
-KB Number: 4612098
+KB number: 4612098
 
 ## Symptoms
 
-You are able to define text translations for product names. However, the product name is always be shown in the original language, regardless of the language setting in the app.
+You've defined text translations for product names. However, product names are always shown in the original language, regardless of the language setting in the app.
 
 ## Resolution
 
-Product translations are only shown on external facing documents, not to internal users. For more information ,see [Product-related translations FAQ](../../pim/translations-product-related-information.md#where-can-i-view-the-translated-information)
+Product translations are shown only on external-facing documents. They aren't shown to internal users. For more information, see [Product-related translations FAQ](../../pim/translations-product-related-information.md#where-can-i-view-the-translated-information).
