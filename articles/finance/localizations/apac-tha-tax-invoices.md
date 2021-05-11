@@ -4,7 +4,6 @@
 title: Tax invoices
 description: This topic explains how to set up tax invoices and when they are generated.
 author: anasyash
-manager: tfehr
 ms.date: 04/07/2021
 ms.topic: article
 ms.prod:

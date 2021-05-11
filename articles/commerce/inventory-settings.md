@@ -4,7 +4,6 @@
 title: Apply inventory settings
 description: This topic covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-manager: annbe
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 

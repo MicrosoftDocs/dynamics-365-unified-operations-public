@@ -2,7 +2,6 @@
 title: Engineering change management FAQ
 description: This topic provides answers to frequently asked questions about the engineering change management feature.
 author: t-benebo
-manager: tfehr
 ms.date: 03/25/2021
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]

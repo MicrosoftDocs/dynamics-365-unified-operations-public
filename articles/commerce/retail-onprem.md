@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2017-06-30
 
 This topic lists Commerce capabilities that are available in on-premises deployments.
 
-For more information about on-premises deployments, see [On-premises deployment home page](../dev-itpro/deployment/on-premises-deployment-landing-page.md).
+For more information about on-premises deployments, see [On-premises deployment home page](../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md).
 
 | Component            | On-premises status |
 |----------------------|--------------------|

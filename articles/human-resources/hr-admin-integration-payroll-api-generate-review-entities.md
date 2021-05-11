@@ -4,7 +4,6 @@
 title: Generate and review payroll entities
 description: This topic describes how to generate and review payroll entities. 
 author: andreabichsel
-manager: tfehr
 ms.date: 04/07/2021
 ms.topic: article
 ms.prod: 
