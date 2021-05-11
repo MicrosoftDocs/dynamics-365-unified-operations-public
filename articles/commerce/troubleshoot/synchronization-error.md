@@ -7,7 +7,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -51,4 +50,4 @@ To confirm or set the default payment service in Commerce headquarters, follow t
 
 ## Additional resources
 
-[Credit card setup, authorization, and capture](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/credit-card-authorizations)
+[Credit card setup, authorization, and capture](../../finance/accounts-receivable/credit-card-authorizations.md)
