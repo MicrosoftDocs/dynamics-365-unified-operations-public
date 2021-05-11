@@ -1,6 +1,6 @@
 ---
-title: On splitting a catch-weight quantity, minimum instead of nominal quantity is used
-description: While splitting the catch-weight quantity into batches, the minimum quantity setup on the item is used for "Pick qty" field instead of the nominal quantity set on the item.
+title: When a catch-weight quantity is split, minimum quantity is used instead of nominal quantity
+description: When a catch-weight quantity is being split into batches, the Pick qty field uses the minimum quantity that is set for the item, not the nominal quantity.
 author: niwang
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -12,13 +12,13 @@ ms.author: smnatara
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-# On splitting a catch-weight quantity, minimum instead of nominal quantity is used
+# When a catch-weight quantity is split, minimum quantity is used instead of nominal quantity
 
-KB Number: 4612073
+KB number: 4612073
 
 ## Symptoms
 
-While splitting the catch-weight quantity into batches, the minimum quantity setup on the item is used for **Pick qty** field instead of the nominal quantity set on the item.
+When a catch-weight quantity is being split into batches, the **Pick qty** field uses the minimum quantity that is set for the item, not the nominal quantity.
 
 ## Resolution
 
