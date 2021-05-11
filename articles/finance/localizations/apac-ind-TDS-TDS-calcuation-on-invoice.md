@@ -4,7 +4,6 @@
 title: TDS calculation on invoices
 description: This topic provides a reference for transactions where the Tax Deducted at Source (TDS) is calculated at the invoice level.
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
