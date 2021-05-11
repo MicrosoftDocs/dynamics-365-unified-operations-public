@@ -4,7 +4,6 @@
 title: Record TDS concession certificate numbers
 description: This topic explains how to record the Tax Deducted at Source (TDS) concession certificate numbers that are issued to vendors.
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
