@@ -1,6 +1,6 @@
 ---
-title: Reversing a report as finished creates an unexpected open transaction
-description: Reverse report as finished with marking creates an open transaction with the quantity reversed having the same inventory dimensions of the transaction reversed.
+title: Reversal of reporting as finished creates an unexpected open transaction
+description: Reversal of reporting as finished that has marking creates an open transaction where the reversed quantity has the same inventory dimensions as the reversed transaction.
 author: niwang
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,16 +13,16 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Reversing a report as finished creates an unexpected open transaction
+# Reversal of reporting as finished creates an unexpected open transaction
 
-KB Number: 4612469
+KB number: 4612469
 
 ## Symptoms
 
-If you reverse a report as finished with marking, the system creates an open transaction where the reversed quantity has the same inventory dimensions of the transaction that was reversed.
+If you reverse reporting as finished that has marking, the system creates an open transaction where the reversed quantity has the same inventory dimensions as the transaction that was reversed.
 
 ## Resolution
 
-When you reverse a report-as-finished operation, the inventory dimension is initialized from the production journal, so it gets the batch number. The sales order transactions will inherit the batch number due to marking.
+When you reverse a report-as-finished operation, the inventory dimension is initialized from the production journal. Therefore, it gets the batch number. Because of marking, the sales order transactions will inherit the batch number.
 
-The dimension can be reset when posting report as finished.
+The dimension can be reset when the reporting as finished is posted.
