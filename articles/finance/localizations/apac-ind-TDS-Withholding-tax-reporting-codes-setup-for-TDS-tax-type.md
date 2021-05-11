@@ -4,7 +4,6 @@
 title: Set up withholding tax reporting codes for the TDS tax type
 description: Withholding tax reporting codes are used to generate Form 26Q and Form 27Q statements for Tax Deducted at Source (TDS). This topic explains how to set up withholding tax reporting codes steps so that you can set up TDS reporting codes.
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
