@@ -151,7 +151,7 @@ The computer must meet all system requirements for installing and using the foll
 >
 > It is critical to note that this component utilizes a server certificate in addition to Azure Service to Service authentication.  Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
 
-Take note that the minimum system requirements listed below are the bare minimum necessary to get a Commerce Scale Unit to function in a test scenario. The following is not representative of a realistic production environment. It is critical to perform proper performance testing and validate that the hardware used will meet the needs of the users. For SQL Server versions, the recommendation is to use a version that is currently still within the mainstream support date.  Support dates can be searched for, by product, in the [Search Product and Services Lifecycle Information](/lifecycle/products/) article.
+Note that the minimum system requirements listed below are the bare minimum necessary to get a Commerce Scale Unit to function in a test scenario. The following is not representative of a realistic production environment. It is critical to perform proper performance testing and validate that the hardware used will meet the needs of the users. For SQL Server versions, the recommendation is to use a version that is currently still within the mainstream support date. Support dates can be searched for, by product, in  [Search Product and Services Lifecycle Information](/lifecycle/products/).
 
 ### Supported operating systems
 
@@ -171,14 +171,14 @@ Take note that the minimum system requirements listed below are the bare minimum
 - 4 GB of RAM
 - 1.6 GHz i5 (or equivalent) minimum CPU speed per core (2 cores are the minimum).
 - At least 15 GB of free space (the channel database can require a large amount of space).
-- A supported version of SQL Server.  It is recommended to use a standard license or better for a Commerce Scale Unit (self-hosted), as the Express edition could cause synchronization issues due to its known limitations.  For more information, review the [Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md#sql-versions-and-licenses-and-when-to-use-them) content.
+- A supported version of SQL Server.  It is recommended to use a standard license or better for a Commerce Scale Unit (self-hosted), as the Express edition could cause synchronization issues due to its known limitations. For more information, see [Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md#sql-versions-and-licenses-and-when-to-use-them).
 
 ### Recommended system requirements
 
 - 6 GB of RAM
 - 2.4 GHz i7 (or equivalent) minimum CPU speed per core (4 cores are recommended).
 - At least 20 GB of free space (the channel database can require a large amount of space).
-- - A supported version of SQL Server.  It is recommended to use a standard license or better for a Commerce Scale Unit (self-hosted), as the Express edition could cause synchronization issues due to its known limitations.  For more information, review the [Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md#sql-versions-and-licenses-and-when-to-use-them) content.
+- - A supported version of SQL Server. It is recommended to use a standard license or better for a Commerce Scale Unit (self-hosted), as the Express edition could cause synchronization issues due to its known limitations. For more information, see [Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md#sql-versions-and-licenses-and-when-to-use-them).
 
 It would be in an organization's best interest to also take the following items into consideration when determining personal hardware needs:
 
