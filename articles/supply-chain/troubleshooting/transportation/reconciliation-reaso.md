@@ -1,6 +1,6 @@
 ---
-title: Can only add the main account as the credit account for reconciliation reasons
-description: When you setup a reconciliation reason in transportation management, you can only add the main account as the credit account. You can't add a cost center, or any other dimension, as the credit account.
+title: You can add only the main account as the credit account for reconciliation reasons
+description: When you set up a reconciliation reason in Transportation management, you can add only the main account as the credit account.
 author: Henrikan
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,18 +13,18 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Can only add the main account as the credit account for reconciliation reasons
+# You can add only the main account as the credit account for reconciliation reasons
 
-KB Number: 4603538
+KB number: 4603538
 
 ## Symptoms
 
-When you setup a reconciliation reason in transportation management, you can only add the main account as the credit account. You can't add a cost center, or any other dimension, as the credit account. However, the debit account has an option to select other dimensions.
+When you set up a reconciliation reason in Transportation management, you can add only the main account as the credit account. You can't add a cost center or any other dimension as the credit account. However, the debit account lets you select other dimensions.
 
 ## Resolution
 
-The system doesn't allows you to select a financial dimension for the credit account when the reconsolidation reason is not to pay the vendor but to credit a specific main account.
+If the reconciliation isn't done to pay the vendor but to credit a specific main account, the system doesn't allow you to select a financial dimension for the credit account when you set up the reconciliation reason.
 
-If the account structure dictates that a specific financial dimension value for the credit main account is required, then the resulting vendor journal can't be automatically posted because the financial dimension value is missing. You must therefore first specify the credit account manually using the **Invoice journal** page.
+If the account structure requires a specific financial dimension value for the credit main account, the resulting vendor journal can't be posted automatically, because the financial dimension value is missing. Therefore, you must first manually specify the credit account by using the **Invoice journal** page.
 
-Because a dimension value for the credit account is required, the vendor invoice journal can't be auto-posted. It must be posted manually after manually adding the dimension value to the main account for the credit line.
+Because a dimension value is required for the credit account, the vendor invoice journal can't be automatically posted. You must manually post it after you manually add the dimension value to the main account for the credit line.
