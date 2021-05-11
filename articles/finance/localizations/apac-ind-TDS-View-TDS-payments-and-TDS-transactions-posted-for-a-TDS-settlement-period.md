@@ -4,7 +4,6 @@
 title: View posted TDS payments and transactions for a TDS settlement period
 description: This topic explains how to view the Tax Deducted at Source (TDS) payments and transactions that were posted for a settlement period.
 author: kailiang
-manager: AnnBe
 ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
