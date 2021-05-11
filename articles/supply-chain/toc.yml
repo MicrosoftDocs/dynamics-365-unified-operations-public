@@ -2225,6 +2225,8 @@
         href: engineering-change-management/engineering-attributes-and-search.md
       - name: Engineering versions and engineering product categories
         href: engineering-change-management/engineering-versions-product-category.md
+      - name: Manage changes in formulas and their ingredients
+        href: engineering-change-management/manage-formula-changes.md
       - name: Enable change management on existing products
         href: engineering-change-management/change-management-existing-products.md
       - name: Product lifecycle state and transactions
