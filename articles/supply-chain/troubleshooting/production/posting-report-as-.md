@@ -1,6 +1,6 @@
 ---
-title: Error on posting report as finished journal
-description: On posting the report as finished journal, the following error is shown - "Quantity ordered cannot be reduced because there are not enough open inventory transactions with the ordered status"
+title: Error when the Report as finished journal is posted
+description: When you post the Report as finished journal, you receive an error message that states that the ordered quantity ordered can't be reduced.
 author: johanhoffmann
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,18 +13,18 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Error on posting report as finished journal
+# Error when the Report as finished journal is posted
 
-KB Number: 4612891
+KB number: 4612891
 
 ## Symptoms
 
-On posting the *Report as finished* journal, the following error is shown:
+When you post the **Report as finished** journal, an error occurs, and you receive the following error message:
 
 > Quantity ordered cannot be reduced because there are not enough open inventory transactions with the ordered status. The items are Purchased, Received or Registered.
 
-This error only occurs when **Error quantity** is populated on the first journal line and **Good quantity** on the last journal line. If the **Error quantity** line is populated on last line in *Report as finished* journal, then there is no error.
+This error occurs only when the **Error quantity** field is set on the first line of the **Report as finished** journal, and the **Good quantity** field is set on the last line. If the **Error quantity** field is set on the last line, no error occurs.
 
 ## Resolution
 
-To prevent this error, open the **General** tab of the **Production control parameters page** and set **Increase remain qty with error qty** to *Yes*.
+To prevent this error, open the **Production control parameters** page, and then, on the **General** tab, set the **Increase remain qty with error qty** option to *Yes*.
