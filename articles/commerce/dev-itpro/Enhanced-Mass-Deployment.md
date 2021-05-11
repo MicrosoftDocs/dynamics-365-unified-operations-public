@@ -5,7 +5,7 @@ title: Mass deployment of sealed Commerce self-service components
 description: This topic explains how to use the framework for self-service component installers to silently install and service deployments.
 author: jashanno
 manager: AnnBe
-ms.date: 04/21/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -31,10 +31,10 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic is for the sealed framework component installers released each month, beginning with the 10.0.18 release and made available in LCS (Lifecycle Services) in the Shared Asset Library. The legacy installers will be deprecated in the April 2022. This article explains how to use these installers to perform silent installation and servicing updates via command line arguments. Using these arguments, mass deployment could be performed through a variety of possible ways.
+This topic is for the sealed framework, component installers released each month, beginning with the 10.0.18 release and made available in Lifecycle Services (LCS) in the Shared Asset library. The legacy installers will be deprecated in the April 2022 timeframe. This article explains how to use these installers to perform silent installation and servicing updates via command line arguments. Using these arguments, mass deployment could be performed through a variety of possible ways.
 
 > [!NOTE]
-> The new Self-service sealed installers will not be made available in Headquarters and are only downloadable through LCS.
+> The new self-service, sealed installers will not be made available in Headquarters and are only downloadable through LCS.
 
 ## Delimiters for mass deployment
 
