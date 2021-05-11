@@ -40,9 +40,9 @@ Before you can enable Microsoft Teams integration with Commerce, you must regist
 
 To register the Teams application with your tenant in the Azure portal, follow these steps.
 
-1. Follow the steps in [Quickstart: Register an app in the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) to register the Teams application with your tenant in the Azure portal.
+1. Follow the steps in [Quickstart: Register an app in the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) to register the Teams application with your tenant in the Azure portal.
 1. Copy the **Application (client) ID** value from the **Overview** page for the registered app. You will use this value to enable Teams integration in Commerce headquarters.
-1. Copy the certificate value that was entered when you [added a certificate](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-certificate) in step 1. The certificate is also known as the public key or application key. You will use this value to enable Teams integration in Commerce headquarters.
+1. Copy the certificate value that was entered when you [added a certificate](/azure/active-directory/develop/quickstart-register-app#add-a-certificate) in step 1. The certificate is also known as the public key or application key. You will use this value to enable Teams integration in Commerce headquarters.
 
 To enable Teams integration in Commerce headquarters, follow these steps.
 

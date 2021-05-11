@@ -155,7 +155,7 @@ The Commerce-supplied Azure Front Door instance does not support apex domains (r
 
   [Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
 
-  [Set up an online store channel](online-stores.md)
+  [Set up an online store channel](./channel-setup-online.md)
 
   [Create an e-commerce site](create-ecommerce-site.md)
 
