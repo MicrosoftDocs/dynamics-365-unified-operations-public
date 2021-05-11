@@ -2,7 +2,7 @@
 # required metadata
 
 title: Omni-channel advanced auto charges
-description: This topic describes capabilities for managing additional order charges for Commerce channel orders using advanced auto charges features.
+description: This topic describes capabilities for managing other order charges for Commerce channel orders using advanced auto charges features.
 author: hhaines
 ms.date: 03/30/2020
 ms.topic: article
@@ -35,7 +35,7 @@ This topic provides information on configuration and deployment of the advanced 
 
 When the advanced auto charges features are enabled, orders created in any supported Commerce channel (point of sale (POS), call center, and online), can take advantage of the [auto charges](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations defined in the ERP application for both header and line-level related charges.
 
-In releases prior to Retail version 10.0, [auto charge](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations are only accessible by orders created in e-Commerce and call center channels. In versions 10.0 and later, POS-created orders can leverage the auto charges configurations. That way, additional miscellaneous charges can systematically be added to sales transactions.
+In releases prior to Retail version 10.0, [auto charge](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations are only accessible by orders created in e-Commerce and call center channels. In versions 10.0 and later, POS-created orders can use the auto charges configurations. That way, additional miscellaneous charges can systematically be added to sales transactions.
 
 When using releases prior to version 10.0, a POS user is prompted to manually enter a shipping fee during the creation of a "ship all" or "ship selected" POS transaction. While the miscellaneous charges capabilities of the application are utilized in respect to how the charges are written to the order, no systematic calculation is provided – the calculation relies on the user's input to determine the value of the charges. The charges can only be added as a single "shipping" related charges code and cannot easily be edited or changed in the POS after they are created.
 
@@ -78,7 +78,7 @@ In this section, sample use cases are presented to help you understand the confi
 
 #### Use case scenario
 
-A retailer wants to automatically add charges for freight when transactions are created in any Commerce channel that require a shipment of products to the customer. The retailer offers two methods of delivery: Ground and Air. If a customer chooses Ground delivery and the order value is less than $100, the retailer wants to charge the customer a freight charge of $10.00. If the order is over $100 in value and the customer chooses ground shipping, the customer will not be charged any additional freight fees. If the customer chooses the Air method of delivery for all orders, regardless of their total value, will be charged a freight fee of $20.00.
+A retailer wants to automatically add charges for freight when transactions are created in any Commerce channel that require a shipment of products to the customer. The retailer offers two methods of delivery: Ground and Air. If a customer chooses Ground delivery and the order value is less than $100, the retailer wants to charge the customer a freight charge of $10.00. If the order is over $100 in value and the customer chooses ground shipping, the customer will not be charged any extra freight fees. If the customer chooses the Air method of delivery for all orders, regardless of their total value, will be charged a freight fee of $20.00.
 
 #### Setup and configuration
 
