@@ -417,7 +417,7 @@ If the Retail Server stops functioning after a period of time, there are two sim
 - Verify if the password policy requires the service account that was generated to change the password (password expiration).
 - Re-run the same installer over the current installation (idempotent), which will update a service account's password or allow the user to update the selected account's password.
 
-It is highly recommended to review the [Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md#sql-versions-and-licenses-and-when-to-use-them) content, as well.
+We highly recommended that you also review [Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md#sql-versions-and-licenses-and-when-to-use-them).
 
 ### Uninstall Commerce Scale Unit
 
