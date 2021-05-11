@@ -4,7 +4,6 @@
 title: TDS calculation on payments and promissory notes
 description: This topic provides reference information about the different payment transactions that Tax Deducted at Source (TDS) is calculated on.
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
