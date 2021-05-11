@@ -4,7 +4,6 @@
 title: Set up payment schedules with TDS allocation
 description: This topic explains how to set up payment schedules with Tax Deducted at Source (TDS) allocation.
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
