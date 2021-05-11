@@ -4,7 +4,6 @@
 title: Set up withholding tax settlement periods for the TDS tax type
 description: This topic explains how to set up settlement periods for Tax Deducted at Source (TDS) settlement periods.
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
