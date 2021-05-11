@@ -4,8 +4,7 @@
 title: Set up and deploy the Dynamics 365 Commerce localization for Brazil
 description: This topic covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Brazil.
 author: v-ankvik
-manager: annbe
-ms.date: 05/06/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -93,9 +92,11 @@ To set up a fiscal establishment and NF-e (Nota Fiscal Eletrônica) federal para
     > [!NOTE]
     > The certificate that is configured on the **Fiscal establishment** page is used for NFC-e (Nota Fiscal de Consumidor Eletrônica) documents that are issued in POS in offline contingency mode and then submitted for authorization through Commerce headquarters. To enable fiscal documents to be signed in offline contingency mode, you must install a certificate in the offline certificate storage of the POS.
 
-1. Select **Environment types "Testing" or "Production"** for NF-e/NFC-e web-services.
+1. Under **NF-E WEB SERVICE**, in the **Environment** field, select **Testing** or **Production.**
+1. Under **NFC-E WEB SERVICE**, in the **Environment** field, select **Testing** or **Production.**
 1. Specify the versions of the NF-e and NFC-e features.
-1. Select **Authorities** from **NF-e federal parameters** for NF-e/NFC-e web-services.
+1. Under **NF-E WEB SERVICE**, in the **Authority** field, enter the value used at **NF-e federal parameters \> Web services \> Authority**.
+1. Under **NFC-E WEB SERVICE**, in the **Authority** field, enter the value used at **NF-e federal parameters \> Web services \> Authority**.
 1. Go to **Organization administration \> Organizations \> Fiscal establishments \> Electronic fiscal documents \> NF-e federal parameters**.
 1. Create new authorities for the required states, or use existing authorities.
 1. For each state, in the **Internet address for NFC-e inquiry** field, enter QR code URLs.
@@ -307,7 +308,7 @@ To configure CRT extension components, follow these steps.
 
     - **Commerce Scale Unit:** The file is named **Commerceruntime.ext.config**, and it's located in the **bin\\ext** folder under the Internet Information Services (IIS) Commerce Scale Unit site location.
 
-2. Register the CRT change in the extension configuration file.
+1. Register the CRT change in the extension configuration file.
 
        ```xml
        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
@@ -320,6 +321,8 @@ To configure CRT extension components, follow these steps.
 1. Find the extension configuration file for Local CRT on Modern POS:
 
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's located in the local CRT client broker location.
+
+1. Register the local CRT on Modern POS change in the extension configuration file.
 
         ```xml
         <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
