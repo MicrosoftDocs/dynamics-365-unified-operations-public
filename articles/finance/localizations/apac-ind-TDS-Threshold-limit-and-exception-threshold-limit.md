@@ -4,7 +4,6 @@
 title: Threshold limit and exception threshold limit
 description: This topic describes the threshold and exception limits for Tax Deducted at Source (TDS).
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
