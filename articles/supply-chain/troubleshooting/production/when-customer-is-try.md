@@ -1,6 +1,6 @@
 ---
-title: Batch number is cleared on selecting a new lot ID
-description: When reviewing a picking list journal line, the specified batch number is cleared when you select a new value for the lot ID.
+title: Batch number is cleared when a new lot ID is selected
+description: When you're reviewing a picking list journal line, the value in the Batch number field is cleared if you select a new value in the Lot ID field.
 author: johanhoffmann
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -13,16 +13,16 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Batch number is cleared on selecting a new lot ID
+# Batch number is cleared when a new lot ID is selected
 
-KB Number: 4613107
+KB number: 4613107
 
 ## Symptoms
 
-When reviewing a picking list journal line, the specified **Batch number** is cleared when you select a new value for the **Lot ID**.
+When you're reviewing a picking list journal line, the value in the **Batch number** field is cleared if you select a new value in the **Lot ID** field.
 
 ## Resolution
 
-The system is behaving as designed.  Changing the **Lot ID** changes the item context, and therefore the batch number is reset.
+The system is behaving as designed. If you change the lot ID, you change the item context. Therefore, the batch number is reset.
 
-If you want to associate the batch number with a lot ID, you must set the lot ID first.
+To associate the batch number with a lot ID, you must set the lot ID first.
