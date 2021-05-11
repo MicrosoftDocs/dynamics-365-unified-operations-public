@@ -4,7 +4,6 @@
 title: TDS calculation on invoices from the Free text invoice page
 description: This topic explains how to calculate Tax Deducted at Source (TDS) on invoices by using the Free text invoice page.
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
