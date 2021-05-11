@@ -103,7 +103,7 @@ You must specify the following general settings for Sweden.
     - Item sales tax groups
     - Sales tax settings in items (item sales tax groups for sales)
 
-    For more information about how to set up and use sales tax, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+    For more information about how to set up and use sales tax, see [Sales tax overview](../../finance/general-ledger/indirect-taxes-overview.md).
 
 
 2. On the **All stores** page, update store details. Specifically, set the following parameters:

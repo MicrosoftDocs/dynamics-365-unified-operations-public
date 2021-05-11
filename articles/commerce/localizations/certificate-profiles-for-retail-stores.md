@@ -82,7 +82,7 @@ When you add a new line to the **Certificate profile settings** page, set the fo
 - **Key Vault certificate** – This field is required if you set the **Location type** field to **Key Vault**. Use it to specify a Key Vault certificate secret.
 
     > [!NOTE]
-    > Before you use a Key Vault certificate in certificate profiles, be sure to upload a certificate to the key vault storage, and follow the instructions in [Set up the Azure Key Vault client](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client).
+    > Before you use a Key Vault certificate in certificate profiles, be sure to upload a certificate to the key vault storage, and follow the instructions in [Set up the Azure Key Vault client](../../finance/localizations/setting-up-azure-key-vault-client.md).
 
 - **Store name** – This field is optional and is available only if you set the **Location type** field to **Local certificate**. Use it to specify a default store name that should be used to search local certificates.
 - **Store location** – This field is optional and is available only if you set the **Location type** field to **Local certificate**. Use it to specify a default store location that should be used to search local certificates.
