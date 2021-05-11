@@ -39,15 +39,15 @@ The **disabledWithFeatureFlags** property can be used inside the config setting 
 
 ```json
 { 
-    "config": { 
+    "config":{ 
         "b2bQuantityMultiple":{
             "friendlyName":"Quantity multiple",
-            "description":"Number of items needed to be purchased together",
-            "type":"number",
-            "default":2,
-            "visibleWithFeatureFlags":"B2B_INVENTORY_MANAGEMENT",
+            "description":"Number of items needed to be purchased together",
+            "type":"number",
+            "default":2,
+            "visibleWithFeatureFlags":"B2B_INVENTORY_MANAGEMENT",
             "group":"B2B Inventory management"
-         }
+        }
     }
 }
 ```
