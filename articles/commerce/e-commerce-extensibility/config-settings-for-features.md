@@ -63,7 +63,7 @@ The **disabledWithFeatureFlags** property can be used inside the config app sett
             "description":"Limit to the number of copies of an item that can be added to a cart line",
             "type":"number",
             "default":10,
-            "disabledWithFeatureFlags": "B2B_INVENTORY_MANAGEMENT",
+            "disabledWithFeatureFlags":"B2B_INVENTORY_MANAGEMENT",
             "group": "B2B Inventory management"
         }
     }
