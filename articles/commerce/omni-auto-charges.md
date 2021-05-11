@@ -35,7 +35,7 @@ This topic provides information on configuration and deployment of the advanced 
 
 When the advanced auto charges features are enabled, orders created in any supported Commerce channel (point of sale (POS), call center, and online), can take advantage of the [auto charges](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations defined in the ERP application for both header and line-level related charges.
 
-In releases prior to Retail version 10.0, [auto charge](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations are only accessible by orders created in e-Commerce and call center channels. In versions 10.0 and later, POS-created orders can use the auto charges configurations. That way, additional miscellaneous charges can systematically be added to sales transactions.
+In releases prior to Retail version 10.0, [auto charge](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations are only accessible by orders created in e-Commerce and call center channels. In versions 10.0 and later, POS-created orders can use the auto charges configurations. That way, extra miscellaneous charges can systematically be added to sales transactions.
 
 When using releases prior to version 10.0, a POS user is prompted to manually enter a shipping fee during the creation of a "ship all" or "ship selected" POS transaction. While the miscellaneous charges capabilities of the application are utilized in respect to how the charges are written to the order, no systematic calculation is provided – the calculation relies on the user's input to determine the value of the charges. The charges can only be added as a single "shipping" related charges code and cannot easily be edited or changed in the POS after they are created.
 
@@ -43,7 +43,7 @@ The use of manual prompts to add shipping charges is still available in versions
 
 With the advanced auto charges feature, POS users can have systematic calculations for any defined miscellaneous charges based on auto charges setup tables. In addition, users will have the ability to add or edit an unlimited number of additional charges and fees to any POS sales transaction at the header or line-level (for a cash and carry or customer order).
 
-## Enabling advanced auto charges
+## Enable advanced auto charges
 
 On the **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters** page, go to the **Customer orders** tab. On the **Charges** FastTab, set **Use advanced auto-charges** to **Yes**.
 
@@ -53,9 +53,9 @@ When advanced auto charges are enabled, users are no longer prompted to manually
 
 When advanced auto charges are enabled, the existing **Commerce parameters** for **Shipping charges code** and **Refund shipping charges** are no longer utilized. These parameters are only applicable if the **Use advanced auto charges** parameter is set to **No**.
 
-Before you enable this feature, ensure that you have tested and trained your employees, as the enabled feature will change the business process flow of how shipping or other charges are calculated and added to POS sales orders. Make sure that you understand the impact of the process flow to the creation of transactions from POS. For call center and e-Commerce orders, the impact of enabling advanced auto charges is minimal. Call center and e-Commerce applications will continue to have the same behavior they have had historically related to the auto charges tables to calculate additional order fees. Call center channel users will continue to have the ability to manually edit any system calculated auto charges at the header or line level, or manually add additional miscellaneous charges at the header or line level.
+Before you enable this feature, ensure that you have tested and trained your employees, as the enabled feature will change the business process flow of how shipping or other charges are calculated and added to POS sales orders. Make sure that you understand the impact of the process flow to the creation of transactions from POS. For call center and e-Commerce orders, the impact of enabling advanced auto charges is minimal. Call center and e-Commerce applications will continue to have the same behavior they have had historically related to the auto charges tables to calculate extra order fees. Call center channel users will continue to have the ability to manually edit any system calculated auto charges at the header or line level, or manually add additional miscellaneous charges at the header or line level.
 
-## Additional POS operations
+## Add POS operations
 
 For advanced auto charges to work properly in your POS application environment, new POS operations have been added. These operations must be added to your [POS screen layouts](/dynamics365/unified-operations/retail/pos-screen-layouts) and deployed to the POS devices as you deploy advanced auto charges. If these operations are not added, users will not be able to manage or maintain miscellaneous charges on the POS transactions and will have no way of adjusting or changing the charges values that are systematically calculated based on auto charges configurations. At minimum, it is suggested that you deploy the **Manage charges** operation to your POS layout.
 
@@ -110,7 +110,7 @@ In call center scenarios, the user has control over the setting of the delivery 
 
 #### Use case scenario 
 
-A retailer wants to add an additional charge to the customer for setup fees when the customer purchases a particular model of computer. This computer requires additional non-optional setup actions that the retailer will perform for the customer. The retailer has informed customers that there will be an additional fee for this setup. The retailer prefers to manage the charges related to this fee separately from the product sales price for financial reporting purposes. A setup fee of $19.99 will be charged to the customer when this specific computer is purchased in any channel.
+A retailer wants to add an extra charge to the customer for setup fees when the customer purchases a particular model of computer. This computer requires additional non-optional setup actions that the retailer will perform for the customer. The retailer has informed customers that there will be an additional fee for this setup. The retailer prefers to manage the charges related to this fee separately from the product sales price for financial reporting purposes. A setup fee of $19.99 will be charged to the customer when this specific computer is purchased in any channel.
 
 #### Setup and configuration
 
@@ -128,7 +128,7 @@ Send the charges to the Commerce Scale Unit/Channel DB so that the POS can utili
 
 After the configurations steps above are complete and the changes have been applied to the channel database, any customer order or sales transaction created in the POS, call center, or e-Commerce channels that have this item on the order will trigger a line-level charge to be systematically added to the order total.
 
-At this time the charges will apply to any sales line that matches the configuration of the line-level auto charges within the legal entity, as there is no functionality to configure a line-level auto charge to apply only to a specific selling channel.
+At this time, the charges will apply to any sales line that matches the configuration of the line-level auto charges within the legal entity, as there is no functionality to configure a line-level auto charge to apply only to a specific selling channel.
 
 ### Manual header charges example
 
@@ -172,7 +172,7 @@ The **Add line charge** operation must be configured in your [POS screen layout]
 
 #### Sales processing of the manual line charge
 
-To execute the scenario in the POS application, the POS user will create the sales transaction as usual, adding the products and any other configurations to the sale. Prior to collecting payment, the user should select the specific line where the charge will apply from the POS item list display and execute the **Add line charge** operation. The user will be prompted to select a charges code and enter the charges value. Once the user completes the process, the charge will be linked to the line and added to the order total as a line level charge. The user can repeat the process to add additional line charges to other items lines on the transaction if needed.
+To execute the scenario in the POS application, the POS user will create the sales transaction as usual, adding the products and any other configurations to the sale. Prior to collecting payment, the user should select the specific line where the charge will apply from the POS item list display and execute the **Add line charge** operation. The user will be prompted to select a charges code and enter the charges value. Once the user completes the process, the charge will be linked to the line and added to the order total as a line level charge. The user can repeat the process to add more line charges to other items lines on the transaction if needed.
 
 The same process can be applied in the call center by using the "maintain charges" feature found under the **Financials** drop-down menu in the **Sales order lines** section on the **Sales order** page. Selecting this option will open the **Maintain charges** page where the user can add a new line-specific charge to the transaction.
 
@@ -201,7 +201,7 @@ Charges are not systematically refunded to **Return orders** created in Commerce
 The following receipt elements have been added to the receipt line and footer to support the advanced auto charges functionality.
 
 - **Line Shipping Charges** – This line-level element can be used to recap specific charges codes that have been applied to the sales line. Only charges codes that have been flagged as **Shipping** charges on the **Charges code** page will be displayed here.
-- **Line Other Charges** – This line-level element can be used to recap any non-shipping specific charge codes that have been applied to the sales line. These are charges codes where the **Shipping** flag on the **Charges code** page has not been enabled.
+- **Line Other Charges** – This line-level element can be used to recap any non-shipping specific charge codes that have been applied to the sales line. **Line Other Charges** are charges codes where the **Shipping** flag on the **Charges code** page has not been enabled.
 - **Order Shipping Charges Details** – This footer-level element displays the descriptions of the charge codes applied to the order that have been flagged as **Shipping** charges on the **Charges code** setup page.
 - **Order Shipping Charges** – This footer-level element shows the dollar value of the shipping-related charges.
 - **Order Other Charges Details** – This footer-level element displays the description of the charges codes applied to the order that have not been flagged as shipping-related charges.
