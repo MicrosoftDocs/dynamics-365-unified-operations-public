@@ -4,7 +4,6 @@
 title: Split invoice functionality
 description: This topic describes the setup and functionality for splitting invoices by delivery address and tax account number (TAN).
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
