@@ -119,14 +119,14 @@ SQL Server comes in a variety of versions (SQL Server 2017 vs. SQL Server 2019, 
 
 For SQL Server versions, the only recommendation is to use a version that is currently still within the mainstream support date.  Support dates can be searched for, by product, in the [Search Product and Services Lifecycle Information](/lifecycle/products/) article.
 
-#### Which edition to use
-While not an exhaustive list, here are the most standardly used editions for Dynamics 365 Commerce customers and in what use cases they should be utilized.
+#### Which SQL Server edition to use
+While not an exhaustive list, here are the most used SQL Server editions for Dynamics 365 Commerce. The use cases for each edition is also described.
 
 | Edition | Use cases |
 |--------------|-------------|
-| Express | SQL Server Express has some major limitations (CPU core count, RAM usage, etc.), but the most major limiting factor is the 10GB database size limit.  As such, Express is often used for a Modern POS offline database but not for a CSU (Self-hosted) Channel database. If the Express edition is used for a CSU (Self-hosted), be aware that there could be data synchronization issues if the database ever reaches the 10GB maximum size limit that could cause issues such as loss of data.  When using the Express edition, it is crucial to use compression and the Dynamics 365 Commerce features to exclude data from offline databases.  SQL compression can be read more about in the [Commerce Data Exchange best practices](CDX-Best-Practices.md#enable-table-and-index-compression) document.  It is recommended to maintain a database at 8GB in size, or less. |
-| Standard | SQL Server Standard is often used for CSU (Self-hosted) Channel databases.  It provides enough size and system utilization to typically handle a CSU (Self-hosted) Channel database for one to several retail store locations. |
-| Enterprise | SQL Server Enterprise is rarely necessary, but there are scenarios where it could be valuable. For example, if hosting a CSU (Self-hosted) in a datacenter VM for use across a large area of many devices, removing the limitations could be valuable to maximize performance capabilities. |
+| Express | SQL Server Express has some major limitations (CPU core count, RAM usage, etc.), but the most major limiting factor is the 10 GB database size limit.  As such, Express is often used for a Modern POS offline database, but not for a CSU (self-hosted) channel database. If the Express edition is used for a CSU (self-hosted), be aware that there could be data synchronization issues if the database ever reaches the 10 GB maximum size limit that could cause issues such as loss of data.  When using the Express edition, it is crucial to use compression and the Dynamics 365 Commerce features to exclude data from offline databases.  SQL compression can be read more about in the [Commerce Data Exchange best practices](CDX-Best-Practices.md#enable-table-and-index-compression) content.  It is recommended to maintain a database at 8 GB in size, or less. |
+| Standard | SQL Server Standard is often used for CSU (self-hosted) channel databases.  It provides enough size and system utilization to typically handle a CSU (self-hosted) channel database for one to several retail store locations. |
+| Enterprise | SQL Server Enterprise is rarely necessary, but there are scenarios where it could be valuable. For example, if hosting a CSU (self-hosted) in a datacenter VM for use across a large area of many devices, removing the limitations could be valuable to maximize performance capabilities. |
 
 ## Resources
 
