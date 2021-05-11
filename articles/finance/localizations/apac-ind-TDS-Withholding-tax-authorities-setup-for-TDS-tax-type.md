@@ -4,7 +4,6 @@
 title: Set up withholding tax authorities for the TDS tax type
 description: This topic explains how to set up Tax Deducted at Source (TDS) authorities.
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
