@@ -2420,6 +2420,8 @@
             href: localizations/tasks/apac-ind-transfer-capital-items.md
         - name: India TDS
           items: 
+          - name: Indian Tax Deducted at Source (TDS) overview
+            href: localizations/apac-ind-TDS-India-TDS-overview.md
           - name: Basic setup for TDS
             items:           
             - name: Set the TDS parameters
