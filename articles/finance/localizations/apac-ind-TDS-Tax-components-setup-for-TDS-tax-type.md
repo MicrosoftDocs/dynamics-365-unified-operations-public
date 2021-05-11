@@ -4,7 +4,6 @@
 title: Set up tax components for the TDS tax type
 description: This topic explains how to set up withholding tax components for the Tax Deducted at Source (TDS) tax type. It also explains how to define the threshold limit that is used to calculate TDS for each TDS component.
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
