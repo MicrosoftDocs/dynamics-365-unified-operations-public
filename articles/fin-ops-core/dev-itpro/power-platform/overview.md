@@ -45,15 +45,15 @@ To understand the architecture of Power Platform, Microsoft Dataverse, dual-writ
 - [Overview of creating apps in Power Apps](/powerapps/maker/)
 
 ## Tools and services unlocked with Power Platform integration
-Virtual entities, dual-write, and business events together make up the shared data layer of the converged of Finance and Operations apps and Dataverse platform. They are complementary technologies intended to work together. 
+Virtual entities, dual-write, and business events together make up the shared data layer of the convergence of Finance and Operations apps and Dataverse platform. They are complementary technologies intended to work together. 
 
-For scenarios which desire to access the Finance and Operations data from the Power Platform or native Dataverse applications, **virtual entities** allow you to do this. You can query, as well as bind forms to that data, and generally use the full power of the Power Platform against the full breadth of Finance and Operations applications. Data is not copied between systems, but rather directly accessed through the standard Virtual Entity infrastructure which Power Platform technologies can already bind to. For more details, visit <virtual entities overview page>. 
+For scenarios which desire access to the Finance and Operations data from the Power Platform or native Dataverse applications, **virtual entities** allow you to do this. You can query, as well as bind forms to that data, and generally use the full power of the Power Platform against the full breadth of Finance and Operations applications. Data is not copied between systems, but rather directly accessed through the standard virtual entity infrastructure which Power Platform technologies can already bind to. For more details, see [Virtual entities overview](virtual-entities-overview.md). 
 
-If you want to respond to events happening in Finance and Operations applications with Power Platform, **business events** allow you to do this. Business Events can be raised from any application, including Finance and Operations applications, and handled by Power Platform business logic. This will often include querying or interacting with additional data through either Native or Virtual Entities. 
+If you want to respond to events happening in Finance and Operations applications with Power Platform, **business events** allow you to do this. Business events can be raised from any application, including Finance and Operations applications, and handled by Power Platform business logic. This will often include querying or interacting with additional data through either native or virtual entities. 
 
-For a subset of scenarios, data must be physically copied between Finance and Operations applications and native Dataverse entities. These are for overlapping entities which already have a large amount of bound logic in both native Dataverse and Finance and Operations applications, requiring the data be resident in the local database of each. While this is a relatively small number of entities, it includes some of the most important entities such as Account/Customer, Company, Product, and Sales order. For these scenarios, **dual-write** enables near-real-time synchronous copying of data. This allows existing applications to continue to operate against local data as designed, while also ensuring the corresponding overlapping entity is kept in sync. For more details, visit the [Dual-write home page](../data-entities/dual-write/dual-write-home-page.md). 
+For a subset of scenarios, data must be physically copied between Finance and Operations applications and native Dataverse entities. These are for overlapping entities which already have a large amount of bound logic in both native Dataverse and Finance and Operations applications, requiring the data be resident in the local database of each. While this is a relatively small number of entities, it includes some of the most important entities such as Account/Customer, Company, Product, and Sales order. For these scenarios, **dual-write** enables near-real-time synchronous copying of data. This allows existing applications to continue to operate against local data as designed, while also ensuring the corresponding overlapping entity is kept in sync. For more details, see the [Dual-write home page](../data-entities/dual-write/dual-write-home-page.md). 
 
-Together Virtual Entity, Dual Write, and Business Events allow building applications and business processes which span the boundaries between Finance and Operations applications and native Dataverse applications. Most applications and business processes will use a combination or all three of these parts of the shared data layer. As always, extension and customization should reduce the amount of data copied between databases as much as possible, while optimizing for the best possible user experience using these tools. 
+Together virtual entities, dual-write, and business events allow building applications and business processes which span the boundaries between Finance and Operations applications and native Dataverse applications. Most applications and business processes will use a combination or all three of these parts of the shared data layer. As always, extension and customization should reduce the amount of data copied between databases as much as possible, while optimizing for the best possible user experience using these tools. 
 
 ### Add-ins functionality
 Add-ins provide a way to extend the functionality of Finance and Operations apps. All add-ins are installed and managed via Lifecycle Services on the environment details page for sandbox and production-type environments. The metadata regarding which add-ins are installed and the configuration options for each add-in are stored in the Microsoft Dataverse database that is provisioned as part of the Power Platform integration. Some add-ins also store business data in the Dataverse database. To learn more about available add-ins, see [Add-ins overview](add-ins-overview.md).
@@ -62,8 +62,8 @@ Add-ins provide a way to extend the functionality of Finance and Operations apps
 
 Here are some typical scenarios that use dual-write.
 
-### Enable customer service representative to facilitate change of address for Finance and Operations customers 
-A customer relocates and wishes to change their billing and shipping address information. This customer contacts the customer support representative and requests a change of address. The customer support representative takes the call and changes the billing and shipping address information of the customer.
+### Enable a customer service representative to facilitate change of address for Finance and Operations customers 
+A customer relocates and wishes to change their billing and shipping address information. This customer contacts the customer service representative and requests a change of address. The customer service representative takes the call and changes the billing and shipping address information of the customer.
 
 |Decision |  Information| 
 |--------|-------------|
@@ -74,13 +74,13 @@ A customer relocates and wishes to change their billing and shipping address inf
 #### Recommended solution
 This scenario of near-real time data synchronization is best implemented by dual-write.
 - The customer's information is sourced in a Finance and Operations app.
-- A customer calls customer support and asks to change their billing and shipping address information.
-- A customer support representative retrieves the customer’s record in Dynamics 365 Customer Service.
-- The customer support representative updates the billing and shipping address and saves the data.
+- A customer calls customer service and asks to change their billing and shipping address information.
+- A customer service representative retrieves the customer’s record in Dynamics 365 Customer Service.
+- The customer service representative updates the billing and shipping address and saves the data.
 - The new billing and shipping address syncs back to the Finance and Operations app in real-time.
 
 ### Sales representatives can change customer credit limits without logging into a Finance and Operations app
-A customer has a credit limit of $2,000 and wants to increase it to $5,000. This customer calls the customer support and requests the increase. The ticket is assigned to the sales department. The head of sales reviews the request, checks the customer's payment history, and determines that the customer is eligible for an increased credit limit. The head of sales approves the request and responds to the ticket. The customer receives an email informing the approval of $5,000 credit limit.
+A customer has a credit limit of $2,000 and wants to increase it to $5,000. This customer calls and requests the increase. The ticket is assigned to the sales department. The head of sales reviews the request, checks the customer's payment history, and determines that the customer is eligible for an increased credit limit. The head of sales approves the request and responds to the ticket. The customer receives an email about the approval of the $5,000 credit limit.
 
 |Decision |  Information| 
 |--------|-------------|
@@ -90,12 +90,12 @@ A customer has a credit limit of $2,000 and wants to increase it to $5,000. This
 
 #### Recommended solution
 This scenario is best implemented by dual-write.
-- A customer calls customer support and wants to increase their credit limit from $2,000 to $5,000.
+- A customer calls and wants to increase their credit limit from $2,000 to $5,000.
 - A customer support representative creates a ticket in Dynamics 365 Customer Service.
 - This ticket is assigned to the sales unit.
 - A sales representative from the sales unit reviews and approves the request.
 - This result is the increase of credit limit of the customer to $5,000 in Dynamics 365 Sales.
-- The credit limit in the Finance and operations app is updated to $5,000.
+- The credit limit in the Finance and Operations app is updated to $5,000.
 - The sales representative responds to the ticket and resolves it.
 - The customer receives an email about the increased credit limit.
 
