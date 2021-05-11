@@ -2431,9 +2431,33 @@
             - name: Set up withholding tax authorities for the TDS tax type
               href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
             - name: Set up tax components for the TDS tax type
-              href: locallizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+              href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
             - name: Set up withholding tax codes for the TDS tax type
               href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+            - name: Set up withholding tax settlement periods for the TDS tax type
+              href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+            - name: Set up withholding tax reporting codes for the TDS tax type
+              href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+            - name: Set up withholding tax codes for the TDS tax type
+              href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md  
+            - name: Attach TDS tax codes to TDS tax groups and define the formula for calculating TDS
+              href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+            - name: Record TDS concession certificate numbers
+              href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+            - name: Set TDS parameters in Accounts payable and Accounts receivable
+              href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+            - name: Set up payment schedules with TDS allocation
+              href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+            - name: Set up payment fees for TDS authority payments
+              href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+            - name: TDS group, PAN, and TAN information setup for vendors and customers
+              href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+          - name: Formula designer and threhold limit for TDS calculation
+            items:
+            - name: Formula designer for TDS calculations
+              href: localizations/apac-ind-TDS-Formula-designer.md
+            - name: Threshold limit and exception threshold limit
+              href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md 
       - name: Italy
         items:
         - name: Italy overview
