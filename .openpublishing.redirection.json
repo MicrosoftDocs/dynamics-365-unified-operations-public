@@ -31,6 +31,11 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/commerce/product-variants-POS.md",
+      "redirect_url": "pos-inventory-lookup-operation",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/supply-chain/warehousing/tasks/set-up-containerization.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/wave-containerization",
       "redirect_document_id": "false"
