@@ -2418,6 +2418,22 @@
             href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
           - name: Transfer of capital items to the fixed asset
             href: localizations/tasks/apac-ind-transfer-capital-items.md
+        - name: India TDS
+          items: 
+          - name: Basic setup for TDS
+            items:           
+            - name: Set the TDS parameters
+              href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+            - name: Set up TDS ledger accounts
+              href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+            - name: Set up TDS registration numbers for legal entities
+              href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+            - name: Set up withholding tax authorities for the TDS tax type
+              href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+            - name: Set up tax components for the TDS tax type
+              href: locallizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+            - name: Set up withholding tax codes for the TDS tax type
+              href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
       - name: Italy
         items:
         - name: Italy overview
