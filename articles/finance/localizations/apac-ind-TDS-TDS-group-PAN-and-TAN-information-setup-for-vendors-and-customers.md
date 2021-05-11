@@ -4,7 +4,6 @@
 title: Set up TDS group, PAN, and TAN information for vendors and customers
 description: This topic explains how to set up information about the Tax Deducted at Source (TDS) group, permanent account number (PAN), and tax account number (TAN) for vendors and customers.
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
