@@ -7,7 +7,6 @@ author: prabhatb
 ms.date: 03/16/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata

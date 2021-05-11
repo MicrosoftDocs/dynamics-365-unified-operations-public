@@ -48,7 +48,8 @@ The **HtmlFromRepoGenerator** tool provides functionality that supports the crea
 
 - Compare a localized Microsoft repo to the en-US repo to identify differences and update links accordingly.
 
-In the first version of the Custom Help Toolkit, this tool was named ConsoleApp.
+> [!NOTE]
+> In the first version of the Custom Help Toolkit, this tool was named ConsoleApp. The tool was renamed and updated in 2020.
 
 ### Syntax
 

@@ -90,7 +90,7 @@ Notice that when an issue margin is applied, related supply and demand requireme
 
 ### Turn on safety margins in Feature management
 
-Before you can use this feature with Planning Optimization, it must be turned on in your system. Admins can use the [Feature management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+Before you can use this feature with Planning Optimization, it must be turned on in your system. Admins can use the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
 - **Module:** _Master planning_
 - **Feature name:** _Margins for Planning Optimization_

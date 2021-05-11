@@ -91,7 +91,7 @@ Here is an example for bi-monthly reporting.
 ## Configure the ER model and format for the report
 To review or change the reporting formats, you must use Electronic reporting (ER) functionality. You can find the VAT statement format for legal entities that have a primary address in Norway on the **Configurations** page (**Organization administration** > **Electronic reporting** > **Configurations**). In the tree of ER models, expand the **Vat declaration model** node, and then select **VAT declaration (NO)**.
 
-You can use the designer to review or change the configuration that you selected in the model tree. For more information, see [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md).
+You can use the designer to review or change the configuration that you selected in the model tree. For more information, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 > [!NOTE]
 > The same VAT declaration model is used for Austria, Czech Republic, Estonia, Finland, Latvia, Lithuania, and Norway. This model aggregates tax data that is required for VAT declaration.

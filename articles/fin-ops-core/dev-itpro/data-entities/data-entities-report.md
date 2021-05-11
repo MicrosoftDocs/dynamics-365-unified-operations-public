@@ -39,7 +39,7 @@ Configuration data packages on Microsoft Dynamics Lifecycle Services (LCS) conta
 
 ## Reports
 
-Microsoft provides the following reports for data entities, which can be downloaded from [Technical reference reports](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61):
+Microsoft provides the following reports for data entities, which can be downloaded from [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61):
 
 - Aggregate data entities: Lists the aggregate data entities, and the fields that each contains.
 - Aggregate measures: Lists the aggregate measures.

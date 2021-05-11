@@ -4,10 +4,9 @@
 title: Set up an environment for master data lookup
 description: This topic explains how to set up your environment to use the Tax Calculation master data lookup functionality.
 author: kai-cloud
-ms.date: 03/31/2021
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -30,20 +29,32 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 This topic explains how to set up your environment to use the Tax Calculation master data lookup functionality.
 
 1. Set up power platform integration in Lifecycle Services (LCS). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
 2. Set up Dynamics 365 Finance and Microsoft Dataverse. For more information, see [Getting the solution](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution) and [Authentication and authorization](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
-3. Import the *Prerequisite tax service virtual entity solution* from the [Tax service virtual entity](https://go.microsoft.com/fwlink/?linkid=2158160).
+3. Set up the following entities. For more information, see [Enabling virtual entities](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#enabling-virtual-entities).
+      - CompanyInfoEntity
+      - CurrencyEntity
+      - CustCustomerV3Entity
+      - DeliveryTermsEntity
+      - EcoResProductCategoryEntity
+      - EcoResReleasedProductV2Entity
+      - LogisticsAddressCityEntity
+      - LogisticsAddressCountryRegionTranslationEntity
+      - LogisticsAddressStateEntity
+      - PurchProcurementChargeCDSEntity
+      - SalesChargeCDSEntity
+      - TaxGroupEntity
+      - TaxItemGroupHeadingEntity
+      - VendVendorV2Entity
 4. Set up the Dynamics 365 Regulatory Configuration Service (RCS). 
 5. Create a service request for Microsoft to enable flighting of the following features:
 
       - ERCdsFeature
       - TaxServiceCDSFeature
 
-6. In Finance, go to the **Feature management** workspace, and enable the following features:
+6. Go to the **Feature management** workspace, and enable the following features:
 
       - (Preview) Electronic reporting Dataverse datasources support
       - (Preview) Tax Service Dataverse datasources support

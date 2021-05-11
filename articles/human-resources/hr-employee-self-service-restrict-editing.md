@@ -7,7 +7,6 @@ author: andreabichsel
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata

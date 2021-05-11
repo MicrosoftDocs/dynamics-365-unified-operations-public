@@ -3,11 +3,9 @@
 title: Provision Microsoft Teams from Dynamics 365 Commerce
 description: This topic describes how to provision Microsoft Teams by using organizational data from Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 # optional metadata
 # ms.search.form: 
@@ -28,7 +26,6 @@ ms.dyn365.ops.version: 10.0.18
 # Provision Microsoft Teams from Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to provision Microsoft Teams by using organizational data from Dynamics 365 Commerce.
 

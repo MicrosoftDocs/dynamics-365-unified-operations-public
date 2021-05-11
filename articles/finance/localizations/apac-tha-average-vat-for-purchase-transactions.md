@@ -4,7 +4,6 @@
 title: Average VAT for purchase transactions
 description: This topic provides information about average value-added tax (VAT) for Thailand. It also explains how to settle transactions that have average VAT, and what reports can be generated.
 author: anasyash
-manager: anasyash
 ms.date: 03/24/2021
 ms.topic: article
 ms.prod:
@@ -148,7 +147,7 @@ receive the tax invoice from the vendor, you can reverse the unrealized
 VAT and post the realized VAT by using the **Reversal journal** page.
 
 For more information, see [Reverse the posted unrealized purchase
-VAT](https://docs.microsoft.com/dynamics365/finance/localizations/apac-tha-unrealized-vat#reverse-the-unrealized-purchase-vat).
+VAT](./apac-tha-unrealized-vat.md#reverse-the-unrealized-purchase-vat).
 
 If the VAT ratio is updated for an advance payment transaction after you
 post the invoice, you can manage the average VAT adjustment for the
@@ -506,4 +505,3 @@ The difference between the old nondeductible VAT and the new
 nondeductible VAT amount is THB 10.50.
 
 ![Average VAT report](media/apac-tha-average-vat-report.png)
-

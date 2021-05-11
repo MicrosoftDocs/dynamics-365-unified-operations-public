@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.12
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Dataverse. The release information for Dataverse is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Dataverse. The release information for Dataverse is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 This topic is a collection of frequently asked questions about Finance and Operations virtual entities. 
 
@@ -112,7 +112,7 @@ In theory, no, you don't have to refresh the entity list. At most, you might hav
 
 ### Is there guidance on when to use a virtual entity and when to use dual-write?
 
-Guidance on when to use a virtual entity and when to use dual-write is covered in [Choose a data integration strategy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview).
+Guidance on when to use a virtual entity and when to use dual-write is covered in [Choose a data integration strategy](../data-entities/integration-overview.md).
 
 ### When adding records using virtual entities is there any way to use number sequences?
 Yes, if the Finance and Operations entity can auto generate number sequences, then it will work the same way from the virtual entity.
@@ -125,6 +125,6 @@ There could be several reasons why performance is slow when a virtual entity has
 
 When virtual entities have relationships to other entities, the virtual entity framework needs to query the related entities if the field select list includes the foreign key values for the related entities. By default, queries against the entities return all fields unless the caller requests a specific set of fields. The best practice is to specify a narrow select list. This can help to prevent slow performance.
 
-An example of this issue is explained in [Optimize Dataverse virtual table queries](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-optimize-virtual-table-queries).
+An example of this issue is explained in [Optimize Dataverse virtual table queries](../../../human-resources/hr-developer-optimize-virtual-table-queries.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -37,7 +37,7 @@ To create a workflow, you must first select the *type* of workflow that you want
 
 ## View the report
 
-The **Workflow types report**, included with the [Technical reference reports](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61), lists each type of workflow that is available. The report also describes what each type of workflow is used for and indicates whether the workflows of each type are associated with a specific company in the organization or with the whole organization. 
+The **Workflow types report**, included with the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61), lists each type of workflow that is available. The report also describes what each type of workflow is used for and indicates whether the workflows of each type are associated with a specific company in the organization or with the whole organization. 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -71,7 +71,7 @@ Before you start to configure and install the N-1 components, make sure that the
 > [!IMPORTANT]
 > To help maintain a high level of security across the company, we strongly recommend that you create a new client ID and secret for this installation. This step requires a new Web App.
 
-1. Generate an Azure Web App to create a client ID and secret for Connector for Microsoft Dynamics AX. For instructions, see the "Create an Azure Active Directory application" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal).
+1. Generate an Azure Web App to create a client ID and secret for Connector for Microsoft Dynamics AX. For instructions, see the "Create an Azure Active Directory application" section in [Create an Azure Active Directory Application](/azure/azure-resource-manager/resource-group-create-service-principal-portal).
 2. After you've finished creating the client ID and secret, the client ID must be accepted in Commerce. Go to **System administration \> Setup \> Azure Active Directory applications**. Enter the client ID in the **Client Id** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
 ## Configure N-1 components
@@ -266,7 +266,7 @@ When you're ready, follow these steps to download and install the component.
     4. Select **Install**.
 
     > [!NOTE]
-    > - For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal).
+    > - For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](/azure/azure-resource-manager/resource-group-create-service-principal-portal).
     > - When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
 
 5. After an application ID (client ID) and secret are created, the application ID must be accepted in Commerce. Go to **Retail and Commerce \> Headquarters setup \> Azure Active Directory applications**. Enter the application ID in the **Client Id** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
@@ -294,7 +294,7 @@ When you're ready, follow these steps to download and install the component.
 
     5. Enter the application ID (client ID) and secret that are associated with this Connector for Microsoft Dynamics AX installation. Then select **Install**.
 
-        This application ID and secret can be the same application ID and secret that you used in the Async Server Connector service installation. For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal). When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
+        This application ID and secret can be the same application ID and secret that you used in the Async Server Connector service installation. For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](/azure/azure-resource-manager/resource-group-create-service-principal-portal). When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
 
 ## Cutover steps to switch to N-1
 

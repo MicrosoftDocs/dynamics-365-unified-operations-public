@@ -1,13 +1,12 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Commerce 10.0.18 (May 2021)
+title: What's new and changed in Dynamics 365 Commerce 10.0.18 (May 2021)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.18. 
 author: josaw1
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -27,9 +26,8 @@ ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.18
 
 ---
-# Preview features in Dynamics 365 Commerce 10.0.18 (May 2021)
+# What's new and changed in Dynamics 365 Commerce 10.0.18 (May 2021)
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 

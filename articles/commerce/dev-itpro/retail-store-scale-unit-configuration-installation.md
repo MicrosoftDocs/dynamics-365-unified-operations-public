@@ -4,7 +4,7 @@
 title: Configure and install Commerce Scale Unit (self-hosted)
 description: This topic explains how to use self-service to configure and install Commerce Scale Unit (self-hosted) on computers in a brick-and-mortar store.
 author: jashanno
-ms.date: 04/06/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -182,8 +182,8 @@ The Commerce Scale Unit installer first extracts the associated files. It then b
 2. The installer validates that all prerequisites are met. If a valid version of Microsoft SQL Server isn't found, the installer will fail during the prerequisites check.  Install a supported version of SQL Server and try the installer again.
 
     > [!NOTE]
-    > - To meet the prerequisites, SQL Server must have full-text search, and it must support, at a minimum, Transport Layer Security (TLS) 1.2. Review the system requirements for the supported versions of SQL Server.
-    > - If a system restart is required, the installer will prompt the user.  This prompt is based upon a Windows system registry key that notifies all applications if a restart is required. While it is recommended to restart prior to continuing the installation, a restart is not required and the installer can continue without restarting the computer.
+    > - To meet the prerequisites, SQL Server must have full-text search, and it must support, at a minimum, Transport Layer Security (TLS) 1.2. Review the system requirements for the supported versions of SQL Server. It is highly recommended to review [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses).
+    > - If a system restart is required, the installer will prompt the user.  This prompt is based upon a Windows system registry key that notifies all applications when a restart is required. While it is recommended to restart prior to continuing the installation, a restart is not required and the installer can continue without restarting the computer.
 
 3. Verify the URL for Application Object Server (AOS), and then select **Next**. (The AOS URL is the URL that is used to access Headquarters.)
 
@@ -416,6 +416,8 @@ If the Retail Server stops functioning after a period of time, there are two sim
 
 - Verify if the password policy requires the service account that was generated to change the password (password expiration).
 - Re-run the same installer over the current installation (idempotent), which will update a service account's password or allow the user to update the selected account's password.
+
+We highly recommended that you also review [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses).
 
 ### Uninstall Commerce Scale Unit
 

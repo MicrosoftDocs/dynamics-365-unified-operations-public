@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers app settings in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 The \\src\\settings\\app.settings.json file holds app settings for global configurations, routes, and themes. The following example shows a JavaScript Object Notation (JSON) file that includes a section for each type of setting.
 
 ```json

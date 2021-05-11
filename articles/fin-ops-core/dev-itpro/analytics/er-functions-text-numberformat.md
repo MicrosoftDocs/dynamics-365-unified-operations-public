@@ -31,8 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `NUMBERFORMAT` function returns a *String* value that presents the specified number in the specified format and in an optionally specified [culture](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). For information about the supported formats, see [standard](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx) and
-[custom](https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx).
+The `NUMBERFORMAT` function returns a *String* value that presents the specified number in the specified format and in an optionally specified [culture](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). For information about the supported formats, see [standard](/dotnet/standard/base-types/standard-numeric-format-strings) and
+[custom](/dotnet/standard/base-types/custom-numeric-format-strings).
 
 ## Syntax 1
 

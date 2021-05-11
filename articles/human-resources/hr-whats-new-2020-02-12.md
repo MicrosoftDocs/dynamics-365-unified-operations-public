@@ -60,7 +60,7 @@ The following preview features are available on February 3, 2020:
 
 ### Platform update 32 
 
-Platform update 32 will be available soon. [Find out more information about Platform update 32 here](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
+Platform update 32 will be available soon. [Find out more information about Platform update 32 here](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
 
 ### Updated Dataverse Solution
 
@@ -80,7 +80,7 @@ A new Dataverse solution will be available soon with the following changes:
 ## See also
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
-[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
 

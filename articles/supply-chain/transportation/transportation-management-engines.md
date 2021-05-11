@@ -102,5 +102,11 @@ Metadata for transportation management engines is configured differently for the
 | 4        | Destination end postal code   | Assignment | String    | Postal Code    | Selected  |
 | 5        | Destination country           | Assignment | String    | Country/region |           |
 
+### Whitepaper
+
+For more information, download the following white paper (written to support AX2012, but still applies for Dynamics 365 Supply Chain Management)
+
+- [Transportation management engines](https://download.microsoft.com/download/e/0/9/e0957665-c12f-43c7-94c0-611cc49d7d61/TransportationManagementEnginesInAX.pdf)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

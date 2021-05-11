@@ -46,7 +46,7 @@ When using Dataverse virtual tables to develop integrations and other data conne
 
 All these interfaces have the potential to surface the performance issue.
 
-One cause of slow performance with Dataverse virtual tables for Human Resources is the foreign key columns of the virtual table related to the table's [navigation properties](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/web-api-types-operations#navigation-properties). When navigation properties are created for a virtual table, a foreign key column is automatically added to the table to represent the value of the key for the related virtual table's key column. For example, the **_mshr_fk_person_id_value** column is added to the **mshr_hcmworkerbaseentity** entity with the foreign key property from the **mshr_dirpersonentity** entity. Because of how the values for these foreign key columns are maintained in a table, fetching the values can have a negative impact on the performance of a query against the virtual table.
+One cause of slow performance with Dataverse virtual tables for Human Resources is the foreign key columns of the virtual table related to the table's [navigation properties](/powerapps/developer/data-platform/webapi/web-api-types-operations#navigation-properties). When navigation properties are created for a virtual table, a foreign key column is automatically added to the table to represent the value of the key for the related virtual table's key column. For example, the **_mshr_fk_person_id_value** column is added to the **mshr_hcmworkerbaseentity** entity with the foreign key property from the **mshr_dirpersonentity** entity. Because of how the values for these foreign key columns are maintained in a table, fetching the values can have a negative impact on the performance of a query against the virtual table.
 
 ### Potential symptoms
 
@@ -58,7 +58,7 @@ An example where you may see this impact is in queries against the Worker (**msh
 
   ![Error type 400 on HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType400.png)
 
-- **Throttling**: The query may overuse server resources, and become subject to throttling. In this case, the query returns the following error: "A token was obtained to call Finance and Operations, but Finance and Operations returned an error of type 429." For more information in throttling in Human Resources, see [Throttling FAQ](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-throttling-faq).
+- **Throttling**: The query may overuse server resources, and become subject to throttling. In this case, the query returns the following error: "A token was obtained to call Finance and Operations, but Finance and Operations returned an error of type 429." For more information in throttling in Human Resources, see [Throttling FAQ](./hr-admin-integration-throttling-faq.md).
 
   ![Error type 429 on HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType429.png)
 
@@ -90,9 +90,9 @@ OData-MaxVersion: 4.0
 OData-Version: 4.0
 ```
 
-When using this method of retrieving data with the **$select** query option in the **$expand** query option clause, you will typically see greater performance improvements when the navigation property between the entities is a many-to-one relationship. You may not see the same decrease in query execution time when expanding a one-to-many relationship. For more information on relationship definition for Dataverse virtual tables, see [Table relationships](https://docs.microsoft.com/powerapps/maker/data-platform/create-edit-entity-relationships).
+When using this method of retrieving data with the **$select** query option in the **$expand** query option clause, you will typically see greater performance improvements when the navigation property between the entities is a many-to-one relationship. You may not see the same decrease in query execution time when expanding a one-to-many relationship. For more information on relationship definition for Dataverse virtual tables, see [Table relationships](/powerapps/maker/data-platform/create-edit-entity-relationships).
 
-For more information on using the **$select** and **$expand** system query options in the Dataverse Web API, see [Retrieve related entity records with a query](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/retrieve-related-entities-query).
+For more information on using the **$select** and **$expand** system query options in the Dataverse Web API, see [Retrieve related entity records with a query](/powerapps/developer/data-platform/webapi/retrieve-related-entities-query).
 
 #### Selecting columns in Power BI
 
@@ -142,7 +142,7 @@ To work around this, you can validate that no data fields from related tables ha
 
 For example, if one of the data fields included on a page in the app references another table, such as **ThisItem.Worker.Name**, where **Worker** is the related table, there is a potential for reduced performance in fetching the data.
 
-You can use the [Power Apps Monitor](https://docs.microsoft.com/powerapps/maker/monitor-overview) to ensure that only the columns you need are being included in the query to get the data for the Power App. You can view the URL constructed for the getRows operation to ensure the columns you have selected for your app will be optimal for retrieving the data.
+You can use the [Power Apps Monitor](/powerapps/maker/monitor-overview) to ensure that only the columns you need are being included in the query to get the data for the Power App. You can view the URL constructed for the getRows operation to ensure the columns you have selected for your app will be optimal for retrieving the data.
 
 ![Use Power Apps Monitor to analyze the getData operation](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
 
@@ -150,18 +150,18 @@ You can use the [Power Apps Monitor](https://docs.microsoft.com/powerapps/maker/
 
 Another method for improving query execution performance is to limit the number of records returned in the query results. You can do this by filtering the results to ensure that you are only receiving the records you need.
 
-See [Filter results](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/query-data-web-api#filter-results) for more information on filtering query data.
+See [Filter results](/powerapps/developer/data-platform/webapi/query-data-web-api#filter-results) for more information on filtering query data.
 
 ### Limiting the page size of the query
 
 If you're working with large data sets, you can divide query results into multiple pages by adding the `odata.maxpagesize` preference header to data queries.
 
-For more information on paging, see [Specify the number of entities to return in a page](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/query-data-web-api#specify-the-number-of-entities-to-return-in-a-page).
+For more information on paging, see [Specify the number of entities to return in a page](/powerapps/developer/data-platform/webapi/query-data-web-api#specify-the-number-of-entities-to-return-in-a-page).
 
 ## See also
 
 - [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)
 - [Human Resources virtual tables FAQ](hr-admin-virtual-entity-faq.md)
-- [Throttling FAQ](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-throttling-faq)
+- [Throttling FAQ](./hr-admin-integration-throttling-faq.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

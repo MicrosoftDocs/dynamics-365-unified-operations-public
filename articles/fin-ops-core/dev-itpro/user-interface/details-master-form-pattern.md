@@ -248,7 +248,7 @@ None.
 ### AX 2012 content
 
 #### AX 2012 links
--   [AX 2012 MSDN Details Forms](https://msdn.microsoft.com/library/hh397318.aspx)
+-   [AX 2012 MSDN Details Forms](/dynamicsax-2012/developer/details-forms)
 
 #### AX 2012 example
 

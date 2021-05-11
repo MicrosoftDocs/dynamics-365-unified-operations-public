@@ -55,10 +55,14 @@ Human Resources connects people and operations data to help you optimize workfor
 [System requirements](hr-admin-system-requirements.md)</br>
 [Set up and manage instances](hr-admin-setup-provision.md)</br>
 [Set up data integration](hr-admin-integration-choose-technology.md)</br>
+[Configure data management](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json)</br>
 [Manage features](hr-admin-manage-features.md)</br>
 [Explore the user interface](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
+[Human Resources app in Teams](hr-admin-teams-leave-app.md)</br>
+[Prepare for go-live](hr-admin-go-live-prepare.md)</br>
+[Go-live FAQ](hr-admin-go-live-faq.md)</br>
 [Documentation resources](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
-[Troubleshoot Human Resources](hr-admin-troubleshooting-support.md)</br>
+[Troubleshoot Human Resources](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
 
 ## Developer Guide
 
@@ -66,8 +70,12 @@ Human Resources connects people and operations data to help you optimize workfor
 [Extend with Power Apps and Power Automate](hr-developer-power-apps.md)</br>
 [Human Resources entities in Dataverse](hr-developer-entities.md)</br>
 [Custom fields](hr-developer-custom-fields.md)</br>
+[Dataverse tables](hr-developer-entities.md)</br>
 [Set up data integration](hr-admin-integration-choose-technology.md)</br>
-[Entity API reference](hr-developer-api-authentication.md)
+[Troubleshoot development with Dataverse virtual tables](hr-developer-optimize-virtual-table-queries.md)</br>
+[Entity API reference](hr-developer-api-authentication.md)</br>
+[ATS integration API](hr-admin-integration-ats-api-introduction.md)</br>
+[Payroll integration API](hr-admin-integration-payroll-api-introduction.md)
 
 ## User Guide
 
@@ -79,8 +87,9 @@ Human Resources connects people and operations data to help you optimize workfor
 [Set up compensation plans](hr-compensation-overview.md)</br>
 [Manage benefits](hr-benefits-management-overview.md)</br>
 [Manage leave and absence](hr-leave-and-absence-overview.md)</br>
+[Manage leave requests in Teams](hr-teams-leave-app.md)</br>
 [Develop employees](hr-develop-performance-management-overview.md)</br>
-[Create courses](hr-learning-courses.md)
-
+[Create courses](hr-learning-courses.md)</br>
+[Set up Employee and Manager self service](hr-employee-manager-self-service-overview.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
