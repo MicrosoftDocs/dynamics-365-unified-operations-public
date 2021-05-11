@@ -4,11 +4,9 @@
 title: Charges for nonconformance operations
 description: This topic describes how to create quality charges that can be used with operations for a nonconformance.
 author: rachel-profitt
-manager: tfehr
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata

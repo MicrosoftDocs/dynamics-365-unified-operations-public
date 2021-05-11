@@ -7,7 +7,6 @@ author: bicyclingfool
 ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 
 # optional metadata
 

@@ -7,7 +7,6 @@ author: NickSelin
 ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
