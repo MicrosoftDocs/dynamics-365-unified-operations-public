@@ -4,7 +4,6 @@
 title: Set up withholding tax component groups for the TDS tax type
 description: This topic explains how to set up withholding tax component groups, such as Rent and Contractor, for the Tax Deducted at Source (TDS) tax type.
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
