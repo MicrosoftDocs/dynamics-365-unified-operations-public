@@ -4,7 +4,6 @@
 title: Run the periodic TDS settlement process
 description: This topic explains how to settle periodic Tax Deducted at Source (TDS).
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
