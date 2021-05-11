@@ -4,7 +4,6 @@
 title: Set up payment fees for TDS authority payments
 description: This topic explains how to set up payment fees that are charged for Tax Deducted at Source (TDS) authority payments.
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
