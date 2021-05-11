@@ -4,7 +4,6 @@
 title: Set up TDS ledger accounts
 description: This topic explains how to set up ledger accounts for the Tax Deducted at Source (TDS) feature.
 author: kailiang
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
