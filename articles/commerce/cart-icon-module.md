@@ -53,7 +53,7 @@ In Adventure works theme, the module includes two additional slots for the mini 
 
 -**Promotional content** - This slot can be used to showcase promotions such as "Free Shipping on orders over $100". Content block, Text block or Image list modules can be used for this.
 
-The following image shows an example of a cart icon module in Adventure works theme showcasing content in the above slots.
+The following image shows an example of a cart icon module in Adventure works theme showcasing promotional content on the mini-cart.
 
 ![Example of a cart icon module in Adventure works theme](./media/AW_minicart.PNG)
 
