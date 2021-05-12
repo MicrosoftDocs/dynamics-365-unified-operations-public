@@ -51,20 +51,23 @@ The theme is fully responsive and provides an optimized experience for Desktop, 
 >Adventure works theme and the new modules shown in the theme are available in Dynamics 365 Commerce 10.0.20 release.
 
 Below is an example of Home page on Adventure works theme
+
 ![Example of a Home page module](./media/aw_b2c.PNG)
 
 Below is an example of List page on Adventure works theme page
+
 ![Example of a List page module](./media/Aw_list.PNG)
 
 Below is an example of Product details page on Adventure works theme
+
 ![Example of a Product details page module](./media/aw_pdp.PNG)
 
 ## B2B
 Adventure works theme is also a reference theme for B2B. All B2B modules have a visual representation in Adventure Works theme. 
 
 Below is an example of B2B Home Page on Adventure works theme
-![Example of a Home page module](./media/aw_b2b.PNG)
 
+![Example of a Home page module](./media/aw_b2b.PNG)
 
 
 
