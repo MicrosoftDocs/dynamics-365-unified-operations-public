@@ -30,12 +30,16 @@ ms.dyn365.ops.version: Release 10.0.8
 
 This topic covers Subscribe module and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.The Subscribe module can be used on a page to capture customer information for a newsletter or a promotion. 
 
-Below is an example of Subscribe module on Adventure works theme used on Footer of the page.
-
 
 >[!IMPORTANT]
-> Active Image module is available in Dynamics 365 Commerce 10.0.20.
+> Active Image module is available in Dynamics 365 Commerce 10.0.20 in the Module Library.
 > Active Image module is showcased in Adventure works theme.
+
+
+Below is an example of Subscribe module on Adventure works theme used on Footer of the page.
+
+![Example of a Image List module](./media/Subscribe.PNG)
+
 > The module will require a data action extension to work with some marketing email provider to send an email or promotion after the information is captured.
 
 ## Subscribe  module properties
