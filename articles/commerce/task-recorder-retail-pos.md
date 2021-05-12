@@ -131,7 +131,7 @@ You can use the **Texts** and **Notes** fields to add text that should be associ
 
 #### Text
 
-Text that you enter in the **Text** field appears *above* the step text in the Task guide. This location is appropriate for text that you want the user to read before he or she completes the step.
+Text that you enter in the **Text** field appears *above* the step text in the Task guide. This location is appropriate for text that you want the user to read before the user completes the step.
 
 #### Notes
 

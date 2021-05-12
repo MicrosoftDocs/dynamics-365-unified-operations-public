@@ -132,7 +132,7 @@ The Modern POS installer first extracts the associated files and then starts the
 You can now start the program.
 
 > [!NOTE]
-> This installation occurs only for the administrator user who ran the installer. For all other users, a desktop icon to install Modern POS is created. Every time that a user signs in, he or she must double-click this icon. The program will then be installed or updated, as required. If a user doesn't use the desktop icon after an update, the POS client will request that the user run from the desktop icon instead to update correctly prior to running.
+> This installation occurs only for the administrator user who ran the installer. For all other users, a desktop icon to install Modern POS is created. Every time that a user signs in, the user must double-click this icon. The program will then be installed or updated, as required. If a user doesn't use the desktop icon after an update, the POS client will request that the user run from the desktop icon instead to update correctly prior to running.
 
 ### Run the installer on any other device (Windows Phone, Google Android device, or Apple iOS device)
 
@@ -172,7 +172,7 @@ For this topic, we have already created workers and assigned them to the Houston
 15. On the Action Pane, select **Save**.
 16. Go to **Retail and Commerce** &gt; **Periodic** &gt; **Distribution schedule**.
 17. Select the **1060 – Staff** job, and then, on the Action Pane, select **Run now** to sync the worker data to the channel database.
-18. After the new worker has been created and synced to stores, worker John Smith can sign in to any POS device that is used in the HOUSTON store that he is assigned to, and he can perform transactions on that device. However, the device must be activated first. The following section explains how to activate a device for a new worker.
+18. After the new worker has been created and synced to stores, the worker can sign in to any POS device that is used in the HOUSTON store that the worker is assigned to, and the worker can perform transactions on that device. However, the device must be activated first. The following section explains how to activate a device for a new worker.
 
 ### Map an Azure AD account to a worker who has POS permissions for device activation
 

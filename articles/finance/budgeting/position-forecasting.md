@@ -72,9 +72,9 @@ Jodi’s organization is providing a training allowance of 5 percent of an emplo
 
 Jodi doesn't want managers to change the amount of the benefit. Therefore, she selects **Do not allow cost changes** in the **Forecast position override** field. The organization wants this cost to be assigned evenly to each month. Therefore, Jodi selects **Quarterly** in the **Allocation method** field. 
 
-Next, Jodi adds a cost calculation line, sets the dates and a main account, and enters **5.00** as the percentage. Her organization has a cap of $5,000 per year for this benefit. Therefore, Jodi enters that amount as the annual limit. 
+Next, Jodi adds a cost calculation line, sets the dates and a main account, and enters **5.00** as the percentage. The organization has a cap of $5,000 per year for this benefit. Therefore, Jodi enters that amount as the annual limit. 
 
-Finally, Jodi adds all the earning cost elements that are used for base pay as calculation bases. Her budget cost element is now ready to be used.
+Finally, Jodi adds all the earning cost elements that are used for base pay as calculation bases. The budget cost element is now ready to be used.
 
 ### Compensation groups
 
@@ -142,7 +142,7 @@ The budget cost element lines must be recalculated when the FTE value is changed
 
 **Example** 
 
-The organization is considering two options for reducing the cost of an accountant position. One option is to end the position part of the way through the year. The other option is to change the position to half-time for the whole year. Brad has created a forecast position for the existing accountant position in a baseline scenario. He copies this baseline forecast position to scenario A, sets the retirement date to May 31, and recalculates. Brad then copies the baseline forecast position to scenario B, changes the FTE value to **0.50**, and recalculates. Brad now has three versions, each of which has cost totals that are aligned with his options.
+The organization is considering two options for reducing the cost of an accountant position. One option is to end the position part of the way through the year. The other option is to change the position to half-time for the whole year. Brad has created a forecast position for the existing accountant position in a baseline scenario. Brad copies this baseline forecast position to scenario A, sets the retirement date to May 31, and recalculates. Brad then copies the baseline forecast position to scenario B, changes the FTE value to **0.50**, and recalculates. Brad now has three versions, each of which has cost totals that are aligned with the options.
 
 #### Assigning a compensation group
 
