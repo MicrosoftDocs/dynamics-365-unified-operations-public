@@ -27,6 +27,6 @@ For government-regulated transactions, the system must be able to record negativ
 
 ## Resolution
 
-The **Allow negative inventory** setting from the location profile applies only to warehouse processes, such as picking. However, item model groups that are set to allow negative inventory affect all processes from the inventory and warehouse modules, and the location profile won't override the setting.
+The **Allow negative inventory** setting from the location profile applies only to warehouse processes, such as picking. However, item model groups that are set to allow negative inventory affect all processes from the Inventory management and Warehouse management modules, and the location profile won't override the setting.
 
 You can control whether a warehouse is allowed to carry negative inventory. Set your item model groups to disallow negative physical inventory, and set only the relevant warehouse to allow negative inventory.

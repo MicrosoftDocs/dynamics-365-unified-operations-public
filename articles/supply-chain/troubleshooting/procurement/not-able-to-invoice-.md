@@ -19,10 +19,10 @@ KB number: 4611793
 
 ## Symptoms
 
-You can no longer invoice the original sales order and the original direct delivery purchase order after you enable the **Post invoice automatically** option on the **Intercompany** settings page for a vendor.
+You can no longer invoice the original sales order and the original direct delivery purchase order after you enable the **Post invoice automatically** option on the **Intercompany** page for a vendor.
 
 ## Resolution
 
 The synchronization behavior for intercompany and direct delivery order invoices is controlled and forced by the parameters that are described in [Set up parameters to post an intercompany order](/dynamicsax-2012/appuser-itpro/set-up-parameters-to-post-an-intercompany-order).
 
-After you set those parameters, you must invoice the intercompany sales order first. The original sales orders and purchase orders will then be synced to invoiced.
+After you set those parameters, you must invoice the intercompany sales order first. The original sales orders and purchase orders will then be synchronized.
