@@ -33,6 +33,7 @@ ms.dyn365.ops.version:
 This topic covers Tile List modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 A Tile list module is a collection of Tiles in a carousel. Its used to market product categories or product brands through a combination of images and text. For example, a retailer can add a Tile List module to the home page of an e-Commerce site to promote all the top-selling categories. 
 Tile List module is driven by data from the content management system (CMS) and doesn't depend on any other modules or data from the backoffice. It can be added to put on any site page where a retailer wants to market or promote something (for example, products, categories, brands etc).
+
 Below is an example of Tile List and Tile modules on Adventure works home page
 
 > [!IMPORTANT]
