@@ -93,7 +93,7 @@ Below is an example of Refiner group management
 
 
 ## Image Management in Site Builder
-If image Urls are used for any dimension value, the respective image need to be uploaded to Site Builder. They should follow the same folder path and file name as defined in Commerce Headquarters.  Image management follows the same pattern we use for Products and Categories, refer [](). 
+If image Urls are used for any dimension value, the respective image need to be uploaded to Site Builder. They should follow the same folder path and file name as defined in Commerce Headquarters.  Image management follows the same pattern we use for Products and Categories, refer [Upload Image](../dam-upload-images.md). 
 
 Files must be uploaded to the respective dimensions. E.g Color images should be uploaded to **Color** entity in Site Builder
 
@@ -117,5 +117,9 @@ We don’t have an out-of-box implementation to display swatches on POS and othe
 [Search results module](../search-result-module.md)
 
 [Apply site settings for dimensions](../dimension_settings.md)
+
+[Product Dimensions](../supply-chain/pim/product-dimensions.md)
+
+[Upload Image](../dam-upload-images.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
