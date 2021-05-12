@@ -84,7 +84,7 @@
         href: dev-tools/version-models-build.md
     - name: Data integration
       items:
-      - name: Choose a data integration (import/export) strategy
+      - name: Integration between Finance and Operations apps and third-party services
         href: data-entities/integration-overview.md
       - name: Priority-based throttling
         hreF: data-entities/priority-based-throttling.md
