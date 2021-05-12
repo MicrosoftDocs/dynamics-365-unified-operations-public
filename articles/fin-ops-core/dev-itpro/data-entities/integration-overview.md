@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Choose a data integration strategy 
+title: Integration between Finance and Operations apps and third-party services 
 description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios.
 author: Sunil-Garg
 ms.date: 11/23/2020
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Choose a data integration strategy
+# Integration between Finance and Operations apps and third-party services
 
 [!include [banner](../includes/banner.md)]
 
