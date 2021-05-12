@@ -1152,6 +1152,8 @@
         items: 
         - name: Change the accounting or reporting currency
           href: general-ledger/add-change-acctg-rprtg-crrncy.md
+        - name: Reverse settings on journals and lines
+          href: general-ledger/rvrs-settgs-on-jrnls-lines.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
