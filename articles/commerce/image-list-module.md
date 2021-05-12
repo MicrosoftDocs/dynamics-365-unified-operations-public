@@ -32,13 +32,17 @@ ms.dyn365.ops.version: Release 10.0.8
 This topic covers Image List module and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 The Image List module can be used on a page to add an array of images, each with a paragraph, text, link etc. The Image List module has an easy authoring experience for adding a collection of images. Its best used when showcasing brand logos or showcasing a list with logos.
 
+> [!IMPORTANT]
+> Image List module is available in Dynamics 365 Commerce 10.0.20 release in the Module Library.
+> Image List module is showcased in Adventure works theme.
+
+
 Below is an example of Image List on Adventure works B2C showcasing list of text with logos.
+![Example of a Image List module](./media/Image_list.PNG)
 
 Below is an example of Image List on Adventure works B2B showcasing brand logos.
+![Example of a Image List module](./media/Image_list_B2B.PNG)
 
-> [!IMPORTANT]
-> Image List module is available in Dynamics 365 Commerce 10.0.20 release.
-> Image List module is showcased in Adventure works theme.
 
 
 ## Image List module properties
