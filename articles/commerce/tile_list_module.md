@@ -4,7 +4,7 @@
 title: Tile List module 
 description: This topic covers Tile List modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 09/15/2020
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,6 +37,7 @@ Below is an example of Tile List and Tile modules on Adventure works home page
 
 > [!IMPORTANT]
 > Tile list module is available in Dynamics 365 Commerce 10.0.20.
+> [!IMPORTANT]
 > Tile list module is showcased in Adventure works theme.
 
 ## Tile List and Tile modules and themes
