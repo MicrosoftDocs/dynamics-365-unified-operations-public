@@ -38,9 +38,11 @@ The Image List module can be used on a page to add an array of images, each with
 
 
 Below is an example of Image List on Adventure works B2C showcasing list of text with logos.
+
 ![Example of a Image List module](./media/Image_list.PNG)
 
 Below is an example of Image List on Adventure works B2B showcasing brand logos.
+
 ![Example of a Image List module](./media/Image_list_B2B.PNG)
 
 
