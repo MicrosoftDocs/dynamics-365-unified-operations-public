@@ -30,9 +30,24 @@ ms.dyn365.ops.version: Release 10.0.8
 This topic covers Adventure works theme and describes how to apply the theme to site pages in Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce has a theme for e-commerce called Adventure works which showcases Sports and Recreational products. The theme provides a more modern appearance, new layouts, animation effects etc to create an immersive, engaging experience for a shopper. The theme is optimized for a rich and enhanced storytelling experience. 
-New capabilities have been added to the Module library to provide better workflows and storytelling. E.g. Video player now supports Heading, Paragraph, Links for additional storytelling. In addition, new modules have been introduced to the Module Library which are now  showcased in Adventure works theme. This includes – Tile List, Interactive Feature, Subscribe, Active image and Image List modules. 
 
-The theme is fully responsive and provides an optimized experience for Desktop, Mobile and Tablet view ports. 
+Adventure works theme showcases  new storytelling modules and workflows.   on Video Player, Empty cart etc. The theme also showcases new modules such as. INew capabilities have been added to the Module library to provide better workflows and storytelling. E.g. Video player now supports Heading, Paragraph, Links for additional storytelling. In addition, ne
+
+The theme showcases the following modules which are included in the Module Library for storytelling
+1. Tile List
+1. Interactive Feature
+1. Subscribe
+1. Active imag
+1. Image List module
+
+The theme also showcases storytelling capabilites on Video Player, empty cart etc. The theme is fully responsive and provides an optimized experience for Desktop, Mobile and Tablet view ports. 
+
+
+Below is an example of Home page on Adventure works theme
+
+Below is an example of List page on Adventure works theme page
+
+Below is an example of Cart page on Adventure works theme
 
 
 ## Additional resources
