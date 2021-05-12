@@ -29,7 +29,10 @@ ms.dyn365.ops.version: Release 10.0.8
 This topic covers Active image module and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 An Active image module is a module that can be used to showcase an image where the image can be tagged with products. A user can hover over the tags and preview each product. In addition, the user can directly navigate to the product details page of the respective products from its tag. 
 The tags are defined using X,Y coordinates on the image. Each tagged point should be configured with the product id of the respective product that is shown on the image.
+
 Below is an example of an Active Image on Adventure works home page
+
+![Example of a Active image module](./media/Active_image.PNG)
 
 >[!IMPORTANT]
 > Active Image module is available in Dynamics 365 Commerce 10.0.20 release.
