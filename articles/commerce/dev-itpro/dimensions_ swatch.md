@@ -99,7 +99,7 @@ Files must be uploaded to the respective dimensions. E.g Color images should be 
 
 Below is an example of uploading images via Site builder for the Dimensions.
 
-![Example of Sitebuilder](../dev-itpro/media/swatch_site_settings.PNG)
+![Example of Sitebuilder](../dev-itpro/media/swatch_sitebuilder.PNG)
 
 
 ## Swatch display in e-commerce
