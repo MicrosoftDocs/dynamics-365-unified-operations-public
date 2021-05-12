@@ -45,7 +45,6 @@ The following table lists the integration patterns that are available.
 | Pattern                       | Documentation |
 |-------------------------------|---------------|
 | Power Platform integration    | [Microsoft Power Platform integration with Finance and Operations apps](../power-platform/overview.md) |
-| Classic data integration      | [Classic data integration overview](data-integration-cds.md) |
 | OData                         | [Open Data Protocol (OData)](odata.md) |
 | Batch data API                | [Recurring integrations](recurring-integrations.md)<br>[Data management package REST API](data-management-api.md) |
 | Custom service                | [Custom service development](custom-services.md) |
@@ -54,9 +53,6 @@ The following table lists the integration patterns that are available.
 
 > [!NOTE]
 > For on premise deployments, the only supported API is the [Data management package REST API](data-management-api.md). This is currently available on 7.2, platform update 12 build 7.0.4709.41184.
-
-
-
 
 ## Synchronous vs. asynchronous integration patterns
 
