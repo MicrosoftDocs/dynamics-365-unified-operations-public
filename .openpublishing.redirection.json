@@ -1,5 +1,16 @@
 {
-  "redirections": [    {
+  "redirections": [
+    {
+      "source_path": "articles/supply-chain/asset-management/setup-for-maintenance-requests/requests.md",
+      "redirect_url": "../manage-maintenance-requests/maintenance-request-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/inventory/set-up-consignment.md",
+      "redirect_url": "consignment",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/business-process-modeler-lcs.md",
       "redirect_url": "/dynamicsax-2012/appuser-itpro/business-process-modeler-lcs",
       "redirect_document_id": "false"
@@ -17548,6 +17559,11 @@
     {
       "source_path": "articles/retail/tasks/use-continuity-program.md",
       "redirect_url": "/dynamics365/commerce/tasks/use-continuity-program",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/product-variants-POS.md",
+      "redirect_url": "pos-inventory-lookup-operation",
       "redirect_document_id": "false"
     },
     {

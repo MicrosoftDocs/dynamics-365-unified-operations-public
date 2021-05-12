@@ -38,7 +38,7 @@ Microsoft Dynamics 365 Human Resources, which was deployed via Microsoft Dynamic
 
 **Issue**
 
-The customer wants to save new task recordings to his or her LCS project, and then replay the saved task guides.
+The customer wants to save new task recordings to the LCS project, and then replay the saved task guides.
 
 **Resolution**
 

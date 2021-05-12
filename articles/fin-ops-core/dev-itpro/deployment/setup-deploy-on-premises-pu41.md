@@ -7,7 +7,6 @@ author: faix
 ms.date: 04/21/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

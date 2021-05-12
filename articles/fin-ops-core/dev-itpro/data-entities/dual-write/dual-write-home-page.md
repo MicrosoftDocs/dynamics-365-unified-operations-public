@@ -67,6 +67,7 @@ These topics describe dual-write integration.
 + [Edit a legal table after dual-write setup](edit-legal-entity.md)
 + [Error management and alert notifications](errors-and-alerts.md)
 + [Application lifecycle management](app-lifecycle-management.md)
++ [Unlink and relink dual-write environments](relink-environments.md)
 
 ## Mapping concepts between apps
 

@@ -31,9 +31,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
- 
-
-In Asset Management, you can calculate costs to get an overview of actual costs compared to budget costs on assets, functional locations, and work orders. Actual costs are based on posted transactions. 
+In Asset Management, you can calculate costs to get an overview of actual costs compared to budget costs on assets, functional locations, and work orders. Actual costs are based on posted transactions.
 
 You can also make a date calculation if you want to compare scheduled start and end dates to actual start and end dates on work orders.
 
@@ -51,8 +49,8 @@ The calculations made for assets, functional locations, and work orders are almo
 
 5. You can use the **Level** field to indicate how detailed you want the cost control lines to be regarding functional locations. 
 
-    For example, if you insert the number "1" in the field, and you have a multi-level functional location hierarchy, all cost control lines for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. 
-    
+    For example, if you insert the number "1" in the field, and you have a multi-level functional location hierarchy, all cost control lines for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level.
+
     If you insert the number "0" in the **Level** field, you will see a detailed result showing all cost control lines on all the functional location level to which they are related.
 
 6. Select "Yes" on the **Show open committed cost** toggle button if you want to include that column in the calculation.
@@ -69,7 +67,7 @@ The calculations made for assets, functional locations, and work orders are almo
 
 10. On the **Asset cost control** page, click the **Group by** buttons to show the required detail level of the calculation. The selected **Group by** buttons are highlighted. Click on a button to activate or deactivate it.
 
-## Example
+## Example of calculation results in asset cost control
 
 The screenshot below shows an example of calculation results in **Asset cost control**.
 
@@ -81,7 +79,6 @@ The screenshot below shows an example of calculation results in **Asset cost con
 ![Example calculation results in Asset cost control](media/02-controlling-and-reporting.png)
 
 Another way of making a cost calculation is to multi-select assets in **All assets** or **Active assets**. Then, you click the **Cost control** button on the **General** tab. In the **Asset cost control** dialog, the selected assets are automatically inserted in the **Asset** field on the **Records to include** FastTab. Click **OK**, and a cost calculation for the selected assets is shown. The same procedure can be done for functional locations in **All functional locations** or **Active functional locations**, and for work orders in **All work orders** or **Active work orders**.
-
 
 ## Work order date control
 
@@ -99,7 +96,7 @@ Use this page to get an overview of expected start and end dates compared to act
 
 6. Click the **Group by** buttons to show the required detail level of the calculation. The selected **Group by** buttons are highlighted. Click on a button to activate or deactivate it.
 
-## Example
+## Example of calculation results in work order date control
 
 The screenshot below shows an example of calculation results in **Work order date control**.
 
