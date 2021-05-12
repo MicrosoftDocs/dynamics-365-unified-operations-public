@@ -36,6 +36,8 @@ Tile List module is driven by data from the content management system (CMS) and 
 
 Below is an example of Tile List and Tile modules on Adventure works home page
 
+![Example of a Tile list module](./media/Tile_list.PNG)
+
 > [!IMPORTANT]
 > Tile list module is available in Dynamics 365 Commerce 10.0.20.
 > [!IMPORTANT]
