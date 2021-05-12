@@ -4,7 +4,6 @@
 title: Financial dimension sets
 description: This topic describes financial dimension sets and provides some tips for optimizing their use.
 author: yukonpeegs
-manager: AnnBe
 ms.date: 03/23/2021
 ms.topic: article
 ems.prod: 

@@ -4,7 +4,6 @@
 title: India overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for India. 
 author: kfend
-manager: AnnBe
 ms.date: 04/06/2021
 ms.topic: article
 ms.prod: 
