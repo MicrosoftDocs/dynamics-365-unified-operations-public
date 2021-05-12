@@ -35,16 +35,32 @@ This topic covers the cart icon module and describes how to add it to site pages
 
 The cart icon module represents the cart in the header module of the page, and shows the number of items in the cart. The cart icon module also displays a cart summary (also known as a mini cart) when the cart icon is hovered over. The mini cart provides the user with a summary of the items in the cart without having to navigate to the cart page. In addition, it also allows the user to directly go to checkout page if they are happy with the summary. This reduces the number of page navigations and makes checkout faster. 
 
-> [!NOTE]
-> Support for the cart icon module is available in the Dynamics 365 Commerce 10.0.11 release.
-
 The following image shows an example of a cart icon module that displays a mini cart in the Fabrikam header.
 
 ![Example of a cart icon module](./media/ecommerce-Minicart.PNG)
 
+
 ## Module properties
 
 - **Show mini cart** – When true, this property enables a cart summary (mini cart) to be displayed when the cart icon is hovered over. This functionality is only supported for desktop view ports.
+
+
+## Module Slots
+
+The module provides two slots which are applicable for the mini cart.
+
+-**Empty cart promotions** - This slot takes Content block module. When the cart contents are empty, this content block module will be displayed. It can be used for any promotions, marketing content, links to category pages etc to help the user continue their shopping journey.
+
+-**Promotional content** - This slot can be used to showcase promotions such as "Free Shipping on orders over $100". Content block, Text block or Image list modules can be used for this.
+
+The following image shows an example of a cart icon module in Adventure works theme showcasing content in the above slots.
+
+![Example of a cart icon module in Adventure works theme](./media/.PNG)
+
+>[IMPORTANT]
+>These slots are introduced  in Dynamics 365 Commerce 10.0.20 release and showcased on Adventure works theme.
+
+
 
 ## Add a cart icon module to a page
 
