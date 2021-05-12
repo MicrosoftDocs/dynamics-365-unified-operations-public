@@ -45,7 +45,6 @@ The following table lists the integration patterns that are available.
 | Pattern                       | Documentation |
 |-------------------------------|---------------|
 | Power Platform integration    | [Microsoft Power Platform integration with Finance and Operations apps](../power-platform/overview.md) |
-| Dual-write                    | [Dual-write overview](dual-write/dual-write-home-page.md) |
 | Classic data integration      | [Classic data integration overview](data-integration-cds.md) |
 | OData                         | [Open Data Protocol (OData)](odata.md) |
 | Batch data API                | [Recurring integrations](recurring-integrations.md)<br>[Data management package REST API](data-management-api.md) |
