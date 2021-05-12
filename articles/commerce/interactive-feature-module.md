@@ -41,6 +41,8 @@ Interactive Feature module is a collection of Interactive feature item modules. 
 
 Below is an example of Interactive Feature on Adventure works home page
 
+![Example of a Interactive Feature module](./media/Feature.PNG)
+
 ## Interactive Feature and themes
 Interactive Feature module can support various layouts and styles based on a theme. For example, the Adventure works theme, the Interactive feature has a 2-column layout with an animation effect when user hovers on each item.  The module is optimized for an even number of images that are shown on a 2-column layout. 
 
