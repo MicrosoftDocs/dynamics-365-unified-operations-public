@@ -41,7 +41,7 @@ The following warehouse app work processes currently use the **Warehouse invento
 - Cycle counting
 - License plate loading
 
-Several inventory transactions are created as part of cloud and edge an inventory adjustment process because the hub and scale unit deployments share the inventory records.
+Several inventory transactions are created as part of each inventory adjustment process because the hub and scale unit deployments share the inventory records.
 
 ## Inventory adjustment example
 
