@@ -55,7 +55,7 @@ In Adventure works theme, the module includes two additional slots for the mini 
 
 The following image shows an example of a cart icon module in Adventure works theme showcasing content in the above slots.
 
-![Example of a cart icon module in Adventure works theme](./media/.PNG)
+![Example of a cart icon module in Adventure works theme](./media/AW_minicart.PNG)
 
 >[IMPORTANT]
 >These slots are introduced  in Dynamics 365 Commerce 10.0.20 release and showcased on Adventure works theme.
