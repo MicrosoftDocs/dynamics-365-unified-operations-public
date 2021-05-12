@@ -31,9 +31,9 @@ To modify the forecast for a selected item:
 1. Fill out the other fields as needed.
 1. Select **Save** on the Action Pane.
 
-## Modify the forecast for one or more items Microsoft Excel
+## Modify the forecast for one or more items with Microsoft Excel
 
-To modify the forecast for one or more items Microsoft Excel:
+To modify the forecast for one or more items with Microsoft Excel:
 
 1. Do one of the following:
     - Open the **Demand forecast** page for any item (it doesn't matter which one) as described in the previous section.
