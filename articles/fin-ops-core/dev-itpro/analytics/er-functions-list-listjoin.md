@@ -36,7 +36,7 @@ The `LISTJOIN` function returns a *Record list* value that represents a new join
 ## Syntax
 
 ```vb
-LIST (list 1 [, list 2, …, list N])
+LISTJOIN (list 1 [, list 2, …, list N])
 ```
 
 ## Arguments
