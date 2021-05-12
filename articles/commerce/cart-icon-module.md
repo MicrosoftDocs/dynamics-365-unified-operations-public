@@ -45,9 +45,9 @@ The following image shows an example of a cart icon module that displays a mini 
 - **Show mini cart** – When true, this property enables a cart summary (mini cart) to be displayed when the cart icon is hovered over. This functionality is only supported for desktop view ports.
 
 
-## Module Slots
+## Module properties in Adventure works theme
 
-The module provides two slots which are applicable for the mini cart.
+In Adventure works theme, the module includes two additional slots for the mini cart. These slots are included as a module definition extension.
 
 -**Empty cart promotions** - This slot takes Content block module. When the cart contents are empty, this content block module will be displayed. It can be used for any promotions, marketing content, links to category pages etc to help the user continue their shopping journey.
 
@@ -59,7 +59,6 @@ The following image shows an example of a cart icon module in Adventure works th
 
 >[IMPORTANT]
 >These slots are introduced  in Dynamics 365 Commerce 10.0.20 release and showcased on Adventure works theme.
-
 
 
 ## Add a cart icon module to a page
