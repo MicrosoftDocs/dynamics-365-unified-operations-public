@@ -1016,7 +1016,7 @@
       items:
       - name: Microsoft Power Platform integration with Finance and Operations
         href: power-platform/overview.md
-      - name: Dual-write integration
+      - name: Dual-write
         items: 
         - name: Dual-write home page
           href: data-entities/dual-write/dual-write-home-page.md
