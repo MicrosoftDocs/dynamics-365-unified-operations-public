@@ -72,7 +72,7 @@ The owner and contributors to the talent pool can add candidates to the talent p
 1. To add candidates to the talent pool, select **+ New** in the upper right to open the **Add candidate** dialog box, and then do one of the following.
 
     - To add an internal candidate, you can search for the person by email address. After a successful search, the candidate's email address, first name, and last name are filled in. If you have the candidate's resume or any related documents about the candidate, you can upload them at this point. Then select **Add** to add the candidate to the talent pool.
-    - To add an external candidate, manually enter his or her email address, first name, and last name. If you have the candidate's resume or any related documents, you can upload them at this point. Then select **Add** to add the candidate to the talent pool.
+    - To add an external candidate, manually enter the candidate's email address, first name, and last name. If you have the candidate's resume or any related documents, you can upload them at this point. Then select **Add** to add the candidate to the talent pool.
     - To add multiple candidates, select the **From Excel** tab. You can then download the appropriate Microsoft Excel template, enter the details for the candidates, save the Excel worksheet, and upload it to the application.
 
         If any errors are found in the worksheet, you will receive messages about them. You can then fix the errors and try to upload the worksheet again. When no more errors are found, select **Add** to upload the worksheet. The worksheet is processed in the background, and you'll be notified when all the candidates have been added to the talent pool.
@@ -115,7 +115,7 @@ All users have a common view of candidate profiles. The **Profile** tab shows an
 
 - You can view the candidate's whole application history. You can see all the jobs that the candidate has applied for in your organization and the status of those applications. If you're part of a job's hiring team, you can select **View** to look at the application in detail.
 
-- The **Documents** tab shows any documents that the candidate has added from his or her profile or during job applications. You can use this tab o manage the candidate's resumes, cover letters, portfolio work, and so on. You can also use this tab to add documents.
+- The **Documents** tab shows any documents that the candidate has added from their profile or during job applications. You can use this tab o manage the candidate's resumes, cover letters, portfolio work, and so on. You can also use this tab to add documents.
 
     To view a document, select the document name in the list of documents. You can view Microsoft Word documents in the application by using Microsoft 365. You can also download the documents to your local computer by using the **Download** option for each document.
 
@@ -128,7 +128,7 @@ All users have a common view of candidate profiles. The **Profile** tab shows an
 
 From the search results or a talent pool, you can push a candidate to any active job that you're hiring for. To push a candidate to a specific job, follow these steps.
 
-1. Find the candidate by using the search option, and then open his or her profile. Alternatively, open the talent pool from the **My talent pools** tab, search for the candidate in your talent pool, and then open his or her profile.
+1. Find the candidate by using the search option, and then open the candidate's profile. Alternatively, open the talent pool from the **My talent pools** tab, search for the candidate in your talent pool, and then open the profile.
 
 1. On the candidate's profile page, select **Add to job** in the upper right. 
      
@@ -146,7 +146,7 @@ Often, several good candidates for a job aren't selected, but you don't want to 
 
 1. Go to the job that you want to add a candidate from.
 
-1. Select the candidate, and open his or her application.
+1. Select the candidate, and open their application.
 
 1. On the application page, select **Add to talent pool**. A list of talent pools that you have access to is shown.
 

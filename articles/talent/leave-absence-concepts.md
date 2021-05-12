@@ -125,7 +125,7 @@ The grant amount is the initial number of hours or days that employees are grant
 
 ### Enrollment date
 
-The enrollment date determines when an employee can start to accrue time off. For example, if an employee is enrolled in a vacation plan on June 15, 2018, she can't accrue any time off before June 15, 2018.
+The enrollment date determines when an employee can start to accrue time off. For example, if an employee is enrolled in a vacation plan on June 15, 2018, the employee can't accrue any time off before June 15, 2018.
 
 ### Current balance
 
