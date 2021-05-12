@@ -54,6 +54,10 @@ The following image shows an example of a video player module on a home page.
 
 | Property name         | Value                               | Description |
 |-----------------------|-------------------------------------|-------------|
+| Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
+| Rich text      | Paragraph text | The module supports paragraph text in rich text format. Some basic rich text capabilities are supported, such as bold, underlined, and italic text, and hyperlinks. Some of these capabilities can be overridden by the page theme that is applied to the module. |
+| Link           | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** | Modules support one or more "call to action" links. If a link is added, link text, a URL, and an ARIA label are required. ARIA labels should be descriptive to meet accessibility requirements. Links can be configured so that they are opened on a new tab. |
+| Sub Text|  Heading, Text, Links| It’s a collection of additional context for the image E.g. Surfer/Author/Designer name, links to personal blog etc.|
 | Auto play             | **True** or **False**               | When the value is set to **True**, the video is automatically played. |
 | Mute                  | **True** or **False**               | When the value is set to **True**, the audio is muted. For this player, the default value is **False**. In the Chrome browser, autoplay videos are muted by default, and the audio is played only if the user manually plays the video. |
 | Loop                  | **True** or **False**               | When the value is set to **True**, the video is repeated in a loop. |
@@ -63,6 +67,9 @@ The following image shows an example of a video player module on a home page.
 | Video player controls | **True** or **False**               | When the value is set to **True**, all video player controls are shown. These controls include play and pause buttons, a progress indicator, and closed caption options. |
 | Hide poster image     | **True** or **False**               | A video can have a poster frame. When the value of this property is set to **True**, the poster frame is hidden. |
 | Mask level            | A number from **0** through **100** | The mask that is applied to the video for styling. |
+
+>[!IMPORTANT]
+>Heading, Rich text, Link, Sub Text fields are available beginning Dynamics 365 Commerce 10.0.20 release
 
 ## Add a video player module to a page
 
