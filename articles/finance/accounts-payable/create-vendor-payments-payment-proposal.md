@@ -67,7 +67,7 @@ The payment proposal query contains various tabs, each of which has different op
 | 3075   | 1003    | June 15      | 250.00         | June 29  |                    | 0.00                 |
 | 3100   | 1004    | June 17      | 100.00         | July 17  | July 1             | 1.00                 |
 
-On July 1, April pays vendors. She uses a payment proposal to help her complete this task more efficiently.
+On July 1, April pays vendors. She uses a payment proposal to complete this task more efficiently.
 
 ### Option 1: By cash discount
 
