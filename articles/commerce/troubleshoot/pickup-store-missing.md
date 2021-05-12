@@ -62,6 +62,6 @@ To configure fulfillment groups in Commerce headquarters, follow these steps.
 
 ## Additional resources 
 
-[Create an operating unit](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit)
+[Create an operating unit](../../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md)
 
 [Set up an online channel](../channel-setup-online.md)

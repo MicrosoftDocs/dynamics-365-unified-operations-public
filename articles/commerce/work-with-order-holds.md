@@ -58,7 +58,7 @@ After the hold information is entered and saved, the user can close the **Order 
 
 If the **Enable order completion** flag is turned on in the call center channel, payment doesn't have to applied to an order that is put on hold. By contrast, for a sales order that isn't put on hold, users can't leave the sales order entry page until payment is applied. Of course, payment will be required before the order hold is released.
 
-Additionally, call center users can put a manual fraud hold on orders that are suspicious for some reason. Orders can also be put on hold automatically when they match active fraud criteria and rules. For more information on about this type of order hold, see [Set up fraud alerts](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+Additionally, call center users can put a manual fraud hold on orders that are suspicious for some reason. Orders can also be put on hold automatically when they match active fraud criteria and rules. For more information on about this type of order hold, see [Set up fraud alerts](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## Viewing and managing orders that are on hold
 

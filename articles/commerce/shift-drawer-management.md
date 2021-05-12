@@ -160,7 +160,7 @@ Go to **Retail and Commerce \> Channels \> Stores \> All stores \> Statement/clo
 
 This setup helps guarantee that back-office statements include the same transactions as shifts in the POS, and that the data is summarized by that shift.
 
-For more information about statement and closing methods, see [Store configurations for Retail statement](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+For more information about statement and closing methods, see [Store configurations for Retail statement](/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
