@@ -81,6 +81,17 @@ The following image shows an example of an "added to cart" confirmation notifica
 
 ![Example of a notification module](./media/ecommerce-addtocart-notifications.PNG)
 
+## Buy box in Adventure works theme
+The Buy box in Adventure works theme has a module definition extension to allow [Product Specifications module]() to be supported on the buy box within an accordion. 
+**Product specification** - Add the **Product Specification** module this slot if you want to showcase the product specification (attributes) in the buy box.
+
+> [!IMPORTANT]
+> Adventure works theme is available in Dynamics 365 Commerce 10.0.20 release.
+
+The following image shows an example of Buy box in Adventure works theme.
+
+![Example of a Buybox module](./media/)
+
 ## Commerce Scale Unit interaction
 
 The buy box module retrieves product information by using Commerce Scale Unit application programming interfaces (APIs). The product ID from the product details page is used to retrieve all information.
