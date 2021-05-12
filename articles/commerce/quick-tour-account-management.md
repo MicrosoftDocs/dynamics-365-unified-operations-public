@@ -42,7 +42,7 @@ The following illustration shows an example of the account management landing pa
 
 ### My profile page
 
-The **My profile** page shows customer's account information, such as their name and phone number. The customer can update their profile information on this page. This page can be customized so that it includes additional customer account preferences, such as an option for opting in to marketing email.
+The **My profile** page shows customer's account information, such as name and phone number. The customer can update profile information on this page. This page can be customized so that it includes additional customer account preferences, such as an option for opting in to marketing email.
 
 The following illustration shows an example of a **My profile** page that was built by using the module library.
 
