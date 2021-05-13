@@ -63,6 +63,10 @@ The following image shows an example of a promo banner.
 | Show carousel flipper     | **True** or **False**              | A value that indicates whether the carousel flippers should be shown, so that customers can manually cycle through multiple banner items. |
 | Text alignment            | **Right**, **Left**, or **Center** | The text alignment in the promo banner module. |
 | Link                      | A URL                              | The URL for an optional link. |
+|Text Alignment| Right, Left, Center| This property is available as a theme extension in Adventure works theme. It allows a user to set the text alignment within the promo banner|
+
+>[!IMPORTANT]
+> Adventure works theme is available in Dynamics 365 Commerce 10.0.20 release.
 
 ## Add a promo banner module to a page 
 
