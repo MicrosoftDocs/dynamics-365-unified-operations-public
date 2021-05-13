@@ -33,29 +33,31 @@ ms.dyn365.ops.version: Retail 10.0.20 update
 
 This topic describes how to configure product dimension values to display as swatches in Microsoft Dynamics 365 Commerce.
 
-For more information on product dimensions, see [Product Dimensions](../supply-chain/pim/product-dimensions.md).
+For more information on product dimensions, see [Product Dimensions](../../supply-chain/pim/product-dimensions.md).
 
 Dynamics 365 Commerce supports size, style, and color dimensions for representing product variants. Product dimensions have friendly names that are displayed on product details pages (PDPs) for product variant selection, such as "Small," "Medium," and "Large" for sizes, and "Black" and "Brown" for colors. However, for products with many variations, browsing through product variants requires multiple selections to view each product variant image, which can make the browsing and selection process slow and tedious for customers.
 
-Displaying dimensions as swatches on PDPs provides a visual preview a product's variations, allowing customers to easily browse a large variety of colors, patterns, and textures and quickly view different product variation combinations. With this feature Commerce introduces the capability to display dimensions as a swatch using images and hexcodes. In addition to displaying dimensions as swatches, we are also providing the capability to group the dimensions in a refiner experience on the product list pages.  For example, if there are products sold in multiple shades of Blue, we want a refiner experience that when filtered on Blue show products with the different Blue shades ( Dimensions). It significantly improves the product refinement experience and allows a user  to find more products with a single refiner click. 
+Displaying dimensions as swatches on PDPs provides a visual preview a product's variations, allowing customers to easily browse a large variety of colors, patterns, and textures and quickly view different product variation combinations. With this feature Commerce introduces the capability to display dimensions as a swatch using images and hexadecimal (hex) codes. In addition to displaying dimensions as swatches, Commerce also provides the capability to group dimensions such as colors on the product list pages. For example, when a customer searches for products that are blue, when blue dimensions are grouped together the search results product list page displays products with the different shades of blue. Dimension grouping significantly improves the product refinement experience and allows customers to find more products with a single product search query. 
 
 > [!NOTE]
-> This feature is available as of the Dynamics 365 Commerce version 10.0.20 release.
+> The display dimensions as swatches feature is available as of the Dynamics 365 Commerce version 10.0.20 release.
 
-The following is an illustration of displaying Colors as a swatch on e-commerce. 
-![Example of displaying color as swatch on e-commerce product details page](../dev-itpro/media/swatch_pdp.png)
+The following example image shows colors displayed as swatches on a Commerce PDP. 
+![Example of displaying color as swatch on a product details page](../dev-itpro/media/swatch_pdp.png)
 
-The following is an illustration of displaying Colors as a swatch on search results page on e-Commerce.
-![Example of displaying color as swatch on e-commerce list page](../dev-itpro/media/swatch_searchresults.PNG)
+The following example image shows colors displayed as swatches on a Commerce search results list page.
+![Example of displaying color as swatch on a search results list page](../dev-itpro/media/swatch_searchresults.PNG)
 
-## Feature flag management
-To enable this feature, you must go to Commerce Headquarters, Feature Management and turn on  **Enable image support for product dimension values**.   When this feature flag is enabled, 3 new fields are added for each dimension in the respective tables– **Hexcode**, **Image Url** and **Refiner Group**. 
+## Enable the display dimensions as swatches feature in Commerce headquarters
 
-## Configure dimension values in Commerce Headquarters
-Dimension Size, Style and Color dimensions support swatch. Both Hexcode and Image Url configuration must be provided for the respective values in Headquarters. If a value is not provided it will be defaulted to Dimension friendly name for display.  This can be configured in any of the following forms. 
+To enable the display dimensions as swatches feature in Commerce headquarters, go to **Workspaces \> Feature management** and turn on the **Enable image support for product dimension values** feature. When this feature flag is enabled, three new fields are added for each dimension in the respective tables: **Hexcode**, **Image Url**, and **Refiner Group**. 
 
->[!NOTE]
->Managing Hexcode and Image url follows the same pattern that we use for managing dimension display order.
+## Configure dimension values in Commerce headquarters
+
+Dimension Size, Style and Color dimensions support swatch. Both hex code and image URL configurations must be provided for the respective values in headquarters. If a value is not provided, it will default to a dimension friendly name for display. This can be configured in any of the following forms. 
+
+> [!NOTE]
+> Managing hex code and image URL configurations follows the same pattern used for managing dimension display order.
 
 - Dimension: Search for each dimension **Color**, **Size** or **Style**. In each of the respective forms, the dimension values will be shown. Here in addition to managing display order, you can also manage Hexcode and Image Url. The following is an example of the configuration on Color form. 
 ![Example of dimension configuration on Color form](../dev-itpro/media/swatch_Color.PNG)
@@ -121,7 +123,7 @@ We don’t have an out-of-box implementation to display swatches on POS and othe
 
 [Apply site settings for dimensions](../dimension_settings.md)
 
-[Product Dimensions](../supply-chain/pim/product-dimensions.md)
+[Product Dimensions](../../supply-chain/pim/product-dimensions.md)
 
 [Upload Image](../dam-upload-images.md).
 
