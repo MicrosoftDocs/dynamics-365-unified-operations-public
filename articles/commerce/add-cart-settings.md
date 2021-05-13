@@ -58,7 +58,7 @@ The following image shows an example of an "added to cart" confirmation notifica
 
 The following image shows an example of an "added to cart" confirmation notification on the Adventure works site.
 
-![Example of a notification module](./media/AW-sitesettings.PNG)
+![Example of a notification module](./media/AW_sitesettings.PNG)
 
 ## Additional Resources
 
