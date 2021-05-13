@@ -1,0 +1,8 @@
+# What is Planned Maintenance?
+Planned maintenance is any maintenance activity that Microsoft needs to perform on your environments either according to a published schedule or provides at least 5 days notice.
+
+# What are the types of planned maintenance activities that are performed on an environment?
+Some of the common planned maintenance activities performed by Microsoft are
+. Operating System (OS) security updates
+. Security hotfixes
+. Microsoft package updates
