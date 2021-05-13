@@ -72,16 +72,11 @@ The following buy box module settings can be configured at **Site Settings \> Ex
 
 - **Cart line quantity limit** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
 - **Inventory** – For information about how to apply inventory settings, see [Apply inventory settings](inventory-settings.md).
-- **Add product to cart** - This property is used to specify the behavior after an item is added to the cart. The possible values are **Navigate to cart page**, **Do not navigate to cart page**, and **Show notification**. When the value is set to **Navigate to cart page**, users are sent to the cart page after they add an item. When the value is set to **Do not navigate to cart page**, users aren't sent to the cart page after they add an item. When the value is set to **Show notification**, users are shown a confirmation notification and can continue to browse on the product details page. 
+- **Add product to cart** -  For more information about how to apply Add product to cart settings, see [Add_product_cart](add-product-cart.md) 
 
-> [!IMPORTANT]
-> The **Add product to cart** site settings are available in the Dynamics 365 Commerce 10.0.11 release. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
-The following image shows an example of an "added to cart" confirmation notification on the Fabrikam site.
+## Buy box module definition extensions in Adventure works theme
 
-![Example of a notification module](./media/ecommerce-addtocart-notifications.PNG)
-
-## Buy box in Adventure works theme
 The Buy box in Adventure works theme has a module definition extension to allow [Product Specifications module]() to be supported on the buy box within an accordion. 
 **Product specification** - Add the **Product Specification** module this slot if you want to showcase the product specification (attributes) in the buy box.
 
