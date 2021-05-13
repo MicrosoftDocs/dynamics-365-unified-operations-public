@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Configure product dimension to be represented as swatch 
-description: This topic describes how to configure dimension values  in Commerce headquarters to be represented as a swatch
+title: Configure product dimension values to display as swatches 
+description: This topic describes how to configure product dimension values as swatches in Microsoft Dynamics 365 Commerce headquarters.
 author: anupamar-ms
-ms.date: 01/05/2020
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,18 +26,21 @@ ms.dyn365.ops.version: Retail 10.0.20 update
 
 ---
 
-# Configure product dimension to be represented as swatch 
+# Configure product dimension values to display as swatches 
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
-This topic describes how to cconfigure product dimensions to be presented as a swatch in the e-commerce experience. For more details on Product dimensions refer to [Product Dimensions](../supply-chain/pim/product-dimensions.md)
+This topic describes how to configure product dimension values to display as swatches in Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce supports dimensions Size, Style and Color for representing product variants. These dimensions have a friendly name which is displayed on e-commerce for product variant selection E.g Size = Small, Large, Medium or Color = Black, Brown. However, for a product that supports many variations, browsing through these variants requires multiple selections to view each product variant image. This makes the selection process slow and tedious for a shopper.
+For more information on product dimensions, see [Product Dimensions](../supply-chain/pim/product-dimensions.md).
 
-Displaying dimensions as swatches provides a preview of the product and allows you to browse a large variety of colors, patterns and textures easily. They also allow you to try different combinations of a product quickly. With this feature we are introducing the capability to display dimensions as a swatch using image and hexcode. In addition to displaying dimensions as swatches, we are also providing the capability to group the dimensions in a refiner experience on the product list pages.  For example, if there are products sold in multiple shades of Blue, we want a refiner experience that when filtered on Blue show products with the different Blue shades ( Dimensions). It significantly improves the product refinement experience and allows a user  to find more products with a single refiner click. 
+Dynamics 365 Commerce supports size, style, and color dimensions for representing product variants. Product dimensions have friendly names that are displayed on product details pages (PDPs) for product variant selection, such as "Small," "Medium," and "Large" for sizes, and "Black" and "Brown" for colors. However, for products with many variations, browsing through product variants requires multiple selections to view each product variant image, which can make the browsing and selection process slow and tedious for customers.
+
+Displaying dimensions as swatches on PDPs provides a visual preview a product's variations, allowing customers to easily browse a large variety of colors, patterns, and textures and quickly view different product variation combinations. With this feature Commerce introduces the capability to display dimensions as a swatch using images and hexcodes. In addition to displaying dimensions as swatches, we are also providing the capability to group the dimensions in a refiner experience on the product list pages.  For example, if there are products sold in multiple shades of Blue, we want a refiner experience that when filtered on Blue show products with the different Blue shades ( Dimensions). It significantly improves the product refinement experience and allows a user  to find more products with a single refiner click. 
 
 > [!NOTE]
-> This feature is now available in Dynamics 365 Commerce 10.0.20 release.
+> This feature is available as of the Dynamics 365 Commerce version 10.0.20 release.
 
 The following is an illustration of displaying Colors as a swatch on e-commerce. 
 ![Example of displaying color as swatch on e-commerce product details page](../dev-itpro/media/swatch_pdp.png)
