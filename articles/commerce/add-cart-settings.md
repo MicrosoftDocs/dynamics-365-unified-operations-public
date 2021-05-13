@@ -45,6 +45,10 @@ There are multiple workflows supported by this setting.
   
   **Show mini-cart** - With this settings, users are shown the mini-cart contents when an item is added to cart. This way a user can browse all the items in the cart and potentially proceed to checkout.
 
+The following image shows the Add to cart settings on Site Builder.
+
+![Example of a site settings](./media/AW_sitesettings.PNG)
+
 > [!IMPORTANT]
 > The **Add product to cart** site settings are available in the Dynamics 365 Commerce 10.0.11 release. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
@@ -58,7 +62,7 @@ The following image shows an example of an "added to cart" confirmation notifica
 
 The following image shows an example of an "added to cart" confirmation notification on the Adventure works site.
 
-![Example of a notification module](./media/AW_sitesettings.PNG)
+![Example of a notification module](./media/AW_minicart.PNG)
 
 ## Additional Resources
 
