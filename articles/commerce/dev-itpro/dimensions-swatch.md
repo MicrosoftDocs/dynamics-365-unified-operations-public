@@ -82,31 +82,36 @@ The following image shows an example configuration for a color dimension configu
 
 For some color dimensions, the color can best be represented using a published image rather than a hex code. For example, if a color dimension is described as "leopard," an image would best represent that color in a swatch. The image should be uploaded to site builder and published, and then the image URL should be entered in the appropriate dimension form(s) in headquarters. When Commerce renders an image, if a dimension is chosen to be displayed as a swatch and a hex code is not defined, an image lookup will be performed. If the image lookup fails, Commerce will default to rendering text of the dimension's friendly name. 
 
-Like product and category images, a media template can be used to define image URLs. Below is an example of Color using Media template url to define the file path of the images. The name of the file and file path are important as they need to be consistent when uploading the images to Site Builder.
+The following image shows an example **Colors** form configuration using image URLs.
 
-Below is an example of Color configured with Image Urls
 ![Example of dimension configuration using Image Url](../dev-itpro/media/swatch_color_urls.PNG)
 
+Like product and category images, a media template can be used to define image URLs. The name of the file and file path are important as they need to be consistent when uploading images to site builder.
+
 Below is an example of Media Template configuration for Color
+
+The following image shows an example media template configuration using image URLs.
+
 ![Example of Media template configuration](../dev-itpro/media/swatch_media_template.PNG)
 
-## Managing dimension values using both Hexcode and Image url
+## Configure dimension values using both hex codes and image URLs
 
-For a dimension say Color, some values can be hexcode while others can be Image url. With the e-commerce rendering fallback logic, it will automatically look for either hexcode or an image url to display the Color.  This simplifies the image management experience when dealing with large numbers of colors.
+The majority of color dimensions can be configured with both hex codes and image URLs. Commerce rendering fallback logic will automatically look for either a hex code or an image URL to display the color swatch. This method can simplify image management when dealing with large numbers of colors.
 
-Below is an example of Color configured with Hexcode and Image Urls
+The following image shows an example **Colors** form configuration with both hex codes and image URLs.
+
 ![Example of dimension configuration using Hexcode and Image Url](../dev-itpro/media/swatch_color_hexandimage.png)
 
+## Configure refiner groups in Commerce headquarters
 
-## Configure Refiner Group in Commerce Headquarters
 While defining Hexcode or Image Url for a dimension value, you can also state the Refiner Group value. The Refiner Group value will be name of the dimension that should be used in the refiner experience. For instance in the below example we have Color values Blue, Blue Plaid, Blue Wash, and Dark Blue, each mapped to a different  hexcode and will appear as different colors in the product details page and product cards of respective products. On the refiner experience, since these dimension values are mapped to Refiner Group = Blue, on a list page, refining on Blue will show products that have Color = Blue, Blue Plaid, Blue Wash, and Dark Blue on the page.
 
 Below is an example of Refiner group management
 
 ![Example of refiner group management](../dev-itpro/media/swatch_refiner_group.png)
 
+## Image management in Commerce site builder
 
-## Image Management in Site Builder
 If image Urls are used for any dimension value, the respective image need to be uploaded to Site Builder. They should follow the same folder path and file name as defined in Commerce Headquarters.  Image management follows the same pattern we use for Products and Categories, refer [Upload Image](../dam-upload-images.md). 
 
 Files must be uploaded to the respective dimensions. E.g Color images should be uploaded to **Color** entity in Site Builder
@@ -115,16 +120,15 @@ Below is an example of uploading images via Site builder for the Dimensions.
 
 ![Example of Sitebuilder](../dev-itpro/media/swatch_sitebuilder.png)
 
-
 ## Swatch display in e-commerce
+
 On e-commerce, swatches can displayed in experiences that require a dimension selection i.e. Product details page, Product cards on list pages, Quick view module, refiners on list pages. To enable the experience on e-commerce, you need to opt-into the Dimension site settings. Refer to [Apply site settings for dimensions](../dimension_settings.md)
 
 In addition, the Search Results module property **Include product attributes** should be enabled on the Search Results module. If there are any enriched category pages, each of these pages should also be updated respectively. For more details, refer [Search results module](../search-result-module.md)
 
-
 ## Swatch display in POS and other channels
-We don’t have an out-of-box implementation to display swatches on POS and other channels. If required it can be achieved as an extension. The channel APIs return the hexcode and image url information needed to render the images.
 
+We don’t have an out-of-box implementation to display swatches on POS and other channels. If required it can be achieved as an extension. The channel APIs return the hexcode and image url information needed to render the images.
 
 ## Additional resources
 
