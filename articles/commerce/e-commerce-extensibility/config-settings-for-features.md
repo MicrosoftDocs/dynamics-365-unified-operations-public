@@ -35,18 +35,19 @@ This topic describes how global configuration properties in Microsoft Dynamics 3
 Global configuration properties exposed in Commerce site builder at **Site settings \> Extensions \> Configuration** can be set to be visible, hidden, or disabled based on specific Dynamics 365 Commerce feature enablement. Global configuration properties are set in the app settings file (/settings/app.settings.json) using the **visibleWithFeatureFlags** and **disabledWithFeatureFlags** properties with a list of feature names. For more information on app settings, see [App settings](app-settings.md).
 
 ## Usage
+To set a particular configuration property to visible or disabled, the **visibleWithFeatureFlags** and **disabledWithFeatureFlags** properties can be supplied with a list of Dynamics 365 feature management names with a value set to "ON" or "OFF".  If more than one feature flag name is provided they will use the logical "OR" operator.  For example if "Feature1" and "Feature2" were added with "ON" values, the configuration property would be shown if either of the two features are enabled.
 
-```
-visibleWithFeatureFlags: {“<FeatureName>”: “ON/OFF”}
+```json
+visibleWithFeatureFlags: {"<FeatureName1>": "ON/OFF", "<FeatureName2>": "ON/OFF"}
 ```
 
-```
-hiddenWithFeatureFlags: {“<FeatureName>”: “ON/OFF”}
+```json
+disabledWithFeatureFlags: {"<FeatureName1>": "ON/OFF", "<FeatureName2>": "ON/OFF"}
 ```
 
 ## Make a configuration property visible in app.settings.json file when a specific feature is enabled
 
-The **disabledWithFeatureFlags** property can be used inside the config setting as shown in the below example.  The below example will show the "b2bQuantityMultiple" configuration in the site builder tool but it will be visible only if the "B2B_INVENTORY_MANAGEMENT" feature is enabled within Dynamics 365 Commerce.
+The **visibleWithFeatureFlags** property can be used inside the config setting as shown in the below example.  The below example will show the "b2bQuantityMultiple" configuration in the site builder tool but it will be visible only if the "B2B_INVENTORY_MANAGEMENT" feature is enabled within Dynamics 365 Commerce.
 
 ```json
 { 
