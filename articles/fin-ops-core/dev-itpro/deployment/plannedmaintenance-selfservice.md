@@ -87,4 +87,7 @@ Batch service can be unavailable for up to 25 minutes.
   - Long-term : This will be fixed in a future Microsoft update.
 - Recurring integration:  Messages that were in progress at the time of restart, will remain stuck in in-progress state.
   - Short-term : Review the integration message that were published during the planned maintenance window. If you find any that are hung with in-process status. This should be terminated and re-published.
+
+# Is it possible to reschedule a nZDT OS maintenance?
+No. In order to help with planning, the schedule of OS maintenance will be published in advance every 6 months. Please use the published schedule and plan important activities outside the OS update window.
 © 2021 GitHub, Inc.
