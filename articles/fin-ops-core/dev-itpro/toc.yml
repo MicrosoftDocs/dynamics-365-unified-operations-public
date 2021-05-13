@@ -498,6 +498,8 @@
             href: deployment/updateenvironment-newinfrastructure.md
           - name: Troubleshoot environments deployed through self-service deployment
             href: deployment/troubleshoot-newinfrastructure.md
+          - name: Planned maintenance in self-service environments FAQ
+            href: deployment/plannedmaintenance-selfservice.md
         - name: Complete Azure Resource Manager onboarding
           href: deployment/arm-onboarding.md
         - name: Azure ExpressRoute and Finance and Operations
