@@ -116,6 +116,9 @@ The store selector module can be used together with the map module to show the s
 | Search radius | Number | This property defines the search radius for stores, in miles. If no value is specified, the default search radius of 50 miles is used. |
 | Terms of service | URL |  This property specifies the terms of service URL that is required to use the Bing Maps service. |
 
+## Site settings
+The Store selector module respects the ([Add to cart site settings](add-cart-settings.md) and the user will see the appropriate action after an item is added to cart from this module.
+
 ## Add a store selector module to a page
 
 For **Pickup in store** mode, the module can be used only on PDPs and cart pages. You must set the mode to **Pickup in store** in the module's property pane.
