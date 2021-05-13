@@ -37,6 +37,8 @@ Global configuration properties exposed in Commerce site builder at **Site setti
 ## Usage
 To set a particular configuration property to visible or disabled, the **visibleWithFeatureFlags** and **disabledWithFeatureFlags** properties can be supplied with a list of Dynamics 365 feature management names with a value set to "ON" or "OFF".  If more than one feature flag name is provided they will use the logical "OR" operator.  For example if "Feature1" and "Feature2" were added with "ON" values, the configuration property would be shown if either of the two features are enabled.
 
+### Property schema
+
 ```json
 visibleWithFeatureFlags: {"<FeatureName1>": "ON/OFF", "<FeatureName2>": "ON/OFF"}
 ```
