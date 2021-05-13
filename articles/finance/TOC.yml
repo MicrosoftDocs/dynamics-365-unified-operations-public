@@ -1799,7 +1799,9 @@
         - name: User operation log by China working rule
           href: localizations/tasks/user-operation-log-china-working-rule.md
         - name: VAT customer invoices FAQ
-          href: localizations/apac-chn-tax-integration-vat-customer-invoices.md         
+          href: localizations/apac-chn-tax-integration-vat-customer-invoices.md   
+        - name: GB/T 24589-2010 export
+          href: localizations/apac-chn-gbt-24589-2010.md
       - name: The Czech Republic
         items:
         - name: The Czech Republic
