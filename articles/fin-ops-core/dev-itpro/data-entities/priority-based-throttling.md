@@ -4,7 +4,7 @@
 title: Priority-based throttling
 description: This topic provides information about priority-based throttling for OData and custom service-based integrations.
 author: hasaid
-ms.date: 09/25/2020
+ms.date: 05/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -36,11 +36,11 @@ ms.dyn365.ops.version: Platform update 37
 
 
 > [!IMPORTANT]
-> Please note that [KB 4615823](https://fix.lcs.dynamics.com/Issue/Details?kb=4615823&bugId=560394&dbType=3&qc=bdc60364311159f2509ed641a0d858a46b5c57effbae2ffe778cd41f2109f7e9) includes two (2) important fixes that directly impacts priority-based throttling experience. 
+> [KB 4615823](https://fix.lcs.dynamics.com/Issue/Details?kb=4615823&bugId=560394&dbType=3&qc=bdc60364311159f2509ed641a0d858a46b5c57effbae2ffe778cd41f2109f7e9) includes two important fixes that directly impact the priority-based throttling experience. 
 > 
-> This fix will ensure that 429 HTTP messages are sent when throttling event occurs in your environment and that the events are reflecting the right threshold calculations for your environment. 
+> The first fix ensures that 429 HTTP messages are sent when a throttling event occurs in your environment and that the events reflect the correct threshold calculations for your environment. 
 >
->This fix is available as part of the quality update for 10.0.17. We highly recommend you to install this to ensure your environmnet is ready for priority-based throttling.
+> The second fix is available as part of the quality update for 10.0.17. We recommend you install this version to ensure that your environment is ready for priority-based throttling.
 
 > [!Note]
 > Priority-based throttling is enabled by default starting in 10.0.19 (PU43). Please refer to the [FAQ document](throttling-faq.md) to learn about how you can ready your environment prior to updating to PU43. To test this capability, configure integration priorities on the **Throttling priority mapping** page.
