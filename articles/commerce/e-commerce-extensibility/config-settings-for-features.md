@@ -29,6 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 # Configure global configuration settings based on feature enablement
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how global configuration properties in Microsoft Dynamics 365 Commerce site builder can be set to be visible, hidden, or disabled based on the enabling of specific Commerce features.
 
@@ -90,3 +91,8 @@ The **disabledWithFeatureFlags** property can be used inside the config app sett
 ```
 
 For more information about Dynamics 365 Commerce feature enablement see the [Feature management overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview?toc=/dynamics365/commerce/toc.json) topic.
+
+## Additional resources
+
+
+
