@@ -72,7 +72,7 @@ The following buy box module settings can be configured at **Site Settings \> Ex
 
 - **Cart line quantity limit** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
 - **Inventory** – For information about how to apply inventory settings, see [Apply inventory settings](inventory-settings.md).
-- **Add product to cart** -  For more information about how to apply Add product to cart settings, see [Add_product_cart](add-product-cart.md) 
+- **Add product to cart** -  For more information about how to apply Add product to cart settings, see [Add_product_cart](add-cart-settings.md) 
 
 
 ## Buy box module definition extensions in Adventure works theme
@@ -138,6 +138,8 @@ To add a buy box module to a new page and set the required properties, follow th
 [Footer module](author-footer-module.md)
 
 [Social share module](social-share-module.md)
+
+[Add to cart settings](add-cart-settings.md)
 
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
 
