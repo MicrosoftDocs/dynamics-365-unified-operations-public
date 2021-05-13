@@ -69,7 +69,7 @@ Below is an example of Product details page on Adventure works theme
 
 
 ## B2B
-Adventure works theme is also a reference theme for B2B. All B2B modules have a visual representation in Adventure Works theme.  For more details on how to setup a B2B site, refer to [B2B site setup](./b2b/set-up-b2b-site.md)
+Adventure works theme is also a reference theme for B2B. All B2B modules and workflows are showcased in Adventure Works theme.  For more details on how to setup a B2B site, refer to [B2B site setup](./b2b/set-up-b2b-site.md)
 
 Below is an example of B2B Home Page on Adventure works theme
 
