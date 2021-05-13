@@ -43,7 +43,7 @@ On June 25, Arnie enters and posts an invoice for 1,000.00 for customer 4027. Ar
 | FTI-10020 | Invoice          | 6/25/2015 | 10020   | 1,000.00                             |                                       | 1,000.00 | USD      |
 
 ## Partial payment before the cash discount date
-On July 2, customer 4027 makes a partial payment of 297.00 for the invoice. The payment is eligible for a cash discount, because Fabrikam offers cash discounts on partial payments, and the partial payment is made before the cash discount date. Therefore, customer 4027 takes a 3.00 cash discount. Arnie records the payment for customer 4027 by using the Payment journal. Arnie then opens the **Settle transactions** page, so that he can mark the invoice for settlement.
+On July 2, customer 4027 makes a partial payment of 297.00 for the invoice. The payment is eligible for a cash discount, because Fabrikam offers cash discounts on partial payments, and the partial payment is made before the cash discount date. Therefore, customer 4027 takes a 3.00 cash discount. Arnie records the payment for customer 4027 by using the Payment journal. Arnie then opens the **Settle transactions** page, so that Arnie can mark the invoice for settlement.
 
 | Mark     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency debit | Currency | Amount to settle |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
@@ -100,7 +100,7 @@ Discount information appears at the bottom of the **Settle open transactions** p
 | Cash discount taken          | 3.00      |
 | Cash discount amount to take | 7.00      |
 
-Arnie changes the value in the **Use cash discount** field back to **Normal**, because he is not letting this customer take the remaining cash discount of 7.00. Arnie then posts the payment. When Arnie opens the **Customer transactions** page, he sees that the invoice has a balance of 0.00. He also sees that there are two payments. One payment is for 297.00 and has a 3.00 cash discount, and the other payment is for 700.00.
+Arnie changes the value in the **Use cash discount** field back to **Normal**, because Arnie is not letting this customer take the remaining cash discount of 7.00. Arnie then posts the payment. When Arnie opens the **Customer transactions** page, the invoice has a balance of 0.00. There are two payments. One payment is for 297.00 and has a 3.00 cash discount, and the other payment is for 700.00.
 
 | Voucher    | Transaction type | Date      | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Balance | Currency |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

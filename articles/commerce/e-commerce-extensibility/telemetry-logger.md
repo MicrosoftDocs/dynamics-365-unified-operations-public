@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers the telemetry logger in Dynamics 365 Commerce.
 
-## Overview
-
 The Dynamics 365 Commerce online software development kit (SDK) includes a custom telemetry logger that you can use to log to multiple resources at various levels but also maintain a unified context on both the server and the client.
 
 ## Access the telemetry logger

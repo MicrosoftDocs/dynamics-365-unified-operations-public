@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for 10.0.19 (July 2021)
+          href: get-started/whats-new-platform-updates-10-0-19.md
         - name: Platform updates for 10.0.18 (May 2021)
           href: get-started/whats-new-platform-updates-10-0-18.md
         - name: Platform updates for 10.0.17 (April 2021)
           href: get-started/whats-new-platform-updates-10-0-17.md
-        - name: Platform updates for 10.0.16 (February 2021)
-          href: get-started/whats-new-platform-updates-10-0-16.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -176,6 +176,8 @@
                   href: data-entities/dual-write/errors-and-alerts.md
                 - name: Application lifecycle management
                   href: data-entities/dual-write/app-lifecycle-management.md
+                - name: Unlink and relink dual-write environments
+                  href: data-entities/dual-write/relink-environments.md
             - name: Mapping concepts between apps
               items:
                 - name: Integrated customer master
@@ -496,6 +498,8 @@
             href: deployment/updateenvironment-newinfrastructure.md
           - name: Troubleshoot environments deployed through self-service deployment
             href: deployment/troubleshoot-newinfrastructure.md
+          - name: Planned maintenance in self-service environments FAQ
+            href: deployment/plannedmaintenance-selfservice.md
         - name: Complete Azure Resource Manager onboarding
           href: deployment/arm-onboarding.md
         - name: Azure ExpressRoute and Finance and Operations
@@ -1398,12 +1402,16 @@
         href: perf-test/rsat/rsat-install-configure.md
       - name: Use the Regression suite automation tool
         href: perf-test/rsat/rsat-run.md
+      - name: Maintain test cases within Regression suite automation tool
+        href: perf-test/rsat/rsat-maintain-test-cases.md
       - name: Validate expected values
         href: perf-test/rsat/rsat-validate-expected.md
       - name: Chain test cases
         href: perf-test/rsat/rsat-chain-test-cases.md
       - name: Derived test cases
         href: perf-test/rsat/rsat-derived-test-cases.md
+      - name: Upgrade the parameter files
+        href: perf-test/rsat/rsat-upgrade-parameter-files.md
       - name: Regression suite automation tool tutorial
         href: perf-test/rsat/rsat-tutorial.md
       - name: Configure non-administrator users

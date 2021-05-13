@@ -4,7 +4,6 @@
 title: Payroll worker address
 description: This topic provides details and an example query for the Payroll worker address entity in Dynamics 365 Human Resources.
 author: jcart
-manager: tfehr
 ms.date: 04/07/2021
 ms.topic: article
 ms.prod: 

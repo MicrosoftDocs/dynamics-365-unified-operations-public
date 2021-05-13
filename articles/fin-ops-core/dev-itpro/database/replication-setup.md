@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - SQL Transactional Replication 
 description: This topic shows how to upgrade a large Microsoft Dynamics AX 2012 database to Finance and Operations apps.
 author: sarvanisathish
-ms.date: 04/20/2021
+ms.date: 04/26/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -32,7 +32,7 @@ The **Online Database Migration Toolkit** can be downloaded from Lifecycle Servi
 ## Prerequisites
 The following prerequisites are needed for the **Online Database Migration Toolkit**.
 
--	The source SQL Server should have the replication feature installed ane enabled. To check whether replication is enabled, execute the following SQL script.
+- The source SQL Server should have the replication feature installed ane enabled. To check whether replication is enabled, execute the following SQL script.
 
      ```sql
      -- If @installed is 0, replication must be added to the SQL Server installation. 
@@ -42,6 +42,8 @@ The following prerequisites are needed for the **Online Database Migration Toolk
     EXEC @installed = sys.sp_MS_replication_installed;  
     SELECT @installed; 
      ```
+     
+	If the replication components are not installed, follow the steps in [Install SQL Server replication](/sql/database-engine/install-windows/install-sql-server-replication?view=sql-server-ver15). 
 
 -	SQL Agent should be running in the source database server.
 
@@ -70,7 +72,7 @@ The following prerequisites are needed for the **Online Database Migration Toolk
 	<Config>
    	  <!-- Edit the properties in this section for your source AX 2012 database -->
     	 <SourceDatabase>
-           	     <Server>SQLINSTANCE\SQLSERVERNAME</Server>
+           	     <Server>SQLSERVERNAME\SQLINSTANCE</Server>
            	     <Database>MicrosoftDynamicsAX</Database>
               	  <UserName>ReplicationUser</UserName>
               	  <Password>********************</Password>

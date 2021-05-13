@@ -21,8 +21,8 @@ You can use the following statements and methods to help improve performance by 
 - [delete_from](xpp-delete.md#delete-from-statement)
 - [update_recordset](xpp-update.md#update-recordset-statement)
 - [insert_recordset](xpp-insert.md#insert-recordset-statement)
-- [RecordSortedList.insertDatabase](../system-classes/recordsortedlist-class.md#method-insertdatabase)
-- [RecordInsertList.insertDatabase](../system-classes/recordinsertlist-class.md#method-insertdatabase)
+- [RecordSortedList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)
+- [RecordInsertList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)
 
 In some situations, these record set–based operations can be converted to slower record-by-record operations. The following table identifies these situations.
 

@@ -76,7 +76,7 @@ The following features are included in this release. The feature titles link to 
 
 - [Packing vs. storage dimensions](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
 
-- [Parallelized firming of planned orders](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - For more information, see [Parallelize firming](../master-planning/maintain-planned-orders.md#parallelize-firming) and the [MRP performance and usability improvements](https://www.microsoft.com/videoplayer/embed/RE4myrJ) video.
+- [Parallelized firming of planned orders](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - For more information, see [Firm planned orders](../master-planning/planning-optimization/planned-order-firming.md) and the [MRP performance and usability improvements](https://www.microsoft.com/videoplayer/embed/RE4myrJ) video.
 
 - [Planning optimization for distribution](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - For more information, see [Planning Optimization overview](../master-planning/planning-optimization/planning-optimization-overview.md).
 

@@ -4,10 +4,9 @@
 title: Configure receipt emails to use custom layouts and templates
 description: This topic describes how to configure receipt emails so that they use custom layouts and templates in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 03/04/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 
 # optional metadata
 
@@ -43,8 +42,10 @@ To enable additional email receipt formats, you must add them and map them to a 
 The following table shows the receipt formats that can be emailed as of the Commerce version 10.0.18 release.
 
 | Receipt format | Receipt type                                  |
-|----------------|-----------------------------------------------|
+| -------------- | --------------------------------------------- |
 | 1              | Sales receipt                                 |
+| 3              | Customer credit card receipt                |
+| 5              | Customer credit card receipt for returns    |
 | 8              | Customer account receipt                      |
 | 10             | Customer account return receipt               |
 | 14             | Product sale                                  |
@@ -127,6 +128,7 @@ On the **Receipt format** page (**Retail and Commerce \> Channel setup \> POS se
 - **Prompt user** – Prompt cashiers to ask customers whether they want to receive a receipt by email and, if they do, what email address the receipt should be sent to.
 
 > [!NOTE]
+> - The gift card inquiry receipt format is not configured using Commerce parameters or customer profiles. To enable the gift card inquiry receipt format, set the **Email behavior** field to **Prompt user** or **Always email**. To disable the gift card inquiry receipt format, set the **Email behavior** field to **Do not email**. 
 > - By default, if a receipt format can't be emailed, its **Email behavior** field is set to **Do not email**, and the value can't be changed.
 > - If a receipt format can be emailed, it can always be emailed from the journal, regardless of the settings on the **Commerce parameters**, **Customer profile**, and **Receipt format** pages.
 

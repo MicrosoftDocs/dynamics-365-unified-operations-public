@@ -35,7 +35,7 @@ This topic describes how to use the Microsoft Dynamics 365 Commerce pricing engi
 
 The Dynamics 365 Commerce pricing engine supports most business-to-consumer (B2C) pricing scenarios, such as store-level pricing, affiliation-based and loyalty-based pricing, mix-and-match discounts, quantity discounts, and threshold discounts. The pricing engine uses complex rules to determine the best price for a given quotation or order.
 
-When you use [dual-write](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview), you have three options for your pricing needs. You can use the static pricing that comes from the price list in Dynamics 365 Sales, the pricing engine in Dynamics 365 Supply Chain Management, or the pricing engine in Dynamics 365 Commerce. Among these options, the Commerce pricing engine is best suited to B2C scenarios.
+When you use [dual-write](./dual-write-overview.md), you have three options for your pricing needs. You can use the static pricing that comes from the price list in Dynamics 365 Sales, the pricing engine in Dynamics 365 Supply Chain Management, or the pricing engine in Dynamics 365 Commerce. Among these options, the Commerce pricing engine is best suited to B2C scenarios.
 
 ## Use the Commerce pricing engine in Sales
 
@@ -46,7 +46,7 @@ When users initiate a quotation in Sales, the dual-write framework copies the qu
 
 ## Prerequisites
 
-- Before you can use the Commerce pricing engine in Sales, you must follow the steps in [Prospect-to-cash in dual-write](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/).
+- Before you can use the Commerce pricing engine in Sales, you must follow the steps in [Prospect-to-cash in dual-write](./dual-write-prospect-to-cash.md).
 - You must turn off trade agreement evaluation for manual entry by following these steps:
 
     1. In your Commerce environment, go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
@@ -54,7 +54,7 @@ When users initiate a quotation in Sales, the dual-write framework copies the qu
 
 ## Additional resources
 
-[Prospect-to-cash in dual-write](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)
+[Prospect-to-cash in dual-write](./dual-write-prospect-to-cash.md)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

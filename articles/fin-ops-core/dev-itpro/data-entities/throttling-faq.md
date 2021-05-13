@@ -2,9 +2,9 @@
 # required metadata
 
 title: Priority-based throttling FAQ
-description: This topic provides answers to frequently asked questions (FAQ) about priority-based throttling for OData and custom service-based integrations.
+description: This topic provides answers to frequently asked questions about priority-based throttling for OData and custom service-based integrations.
 author: hasaid
-ms.date: 09/23/2020
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,37 +32,36 @@ ms.dyn365.ops.version: Platform update 37
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic provides answers to some frequently asked questions (FAQ) about [priority-based throttling](priority-based-throttling.md) for Open Data Protocol (OData) and custom service-based integrations.
+This topic provides answers to some frequently asked questions about [priority-based throttling](priority-based-throttling.md) for Open Data Protocol (OData) and custom service-based integrations.
 
 ## How do I access the Data management Yammer group?
-Follow this link: [Data management Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13408417).
+To access the Data management Yammer group, go to [Data management Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13408417).
 
-## In which product update/ version is throttling enabled by default?
-The throttling feature has been in preview since PU37 and will be enabled by default starting in PU43 (10.0.19). If you are operating in a previous version you can manually trigger throttling in your environment by setting the priority for your OData and Custom service requests. However, starting PU43 (10.0.19), throttling will be enable by default even if you have not set priorties.
+## When will throttling be enabled by default?
+The throttling feature has been in preview since Finance 10.0.13 and will be enabled by default starting in version 10.0.19. You can manually trigger throttling in your environment by setting the priority for your OData and Custom service requests. However, starting with the release of Finance 10.0.19, throttling will be automatically enabled even if you haven't set priorities.
 
-## What is the release date for PU43 (10.0.19)?
-PU43 (10.0.19) will be available in PEAP on April 23,2021 and for PROD on June 18,2021.
+Finance version 10.0.19 will be available for pre-release in late April 2021 and will be generally available in June 2021.
 
 ## Will a retry request receive preferential treatment over a new request?
 No.
 
 ## Will my environment be subjected to any API limits?
-No. As part of this release we are primarily focused on resources-based performance. We will be analyzing and introducing usage-based limits in the future that will be subjected to API call volumes.
+No. At this time, environments aren't subject to any API limits. 
 
 ## Is there a report that determines when throttling might occur?
-Yes. A report will is available and can be accessed through the **Raw logs** within environment monitoring page in Microsoft Dynamics Lifecycle Services (LCS). The requests that are listed in this view are likely to be throttled when this feature is turned on by default starting in PU43 (10.0.19)
+Yes. A report is available and can be accessed through the **Raw logs** on the **Environment monitoring** page in LCS. The requests that are listed in this view are likely to be throttled when this feature is turned on by default starting in Finance version 10.0.19.
 
 ## Will throttling affect the Data Import/Export Framework (DIXF) and batch?
 No. Throttling is only for OData and custom service integrations.
 
-## Is throttling available for on-prem?
-No. Throttling is not available for on-prem environments.
+## Is throttling available for on-premises environments?
+No. Throttling is not available for on-premises environments.
 
 ## In Preview, will my requests be throttled if priorities aren't configured?
 No, because only the telemetry is available. The actual throttling occurs if you configure priorities. We recommend that you use this approach in **non-production** environments during the Preview period.
 
-## Can throttling be enabled in dev boxes?
-No. You can only set priority adn trigger throttling in sandbox or production environments.
+## Can throttling be enabled on dev boxes?
+No. You can only set priority and trigger throttling in sandbox or production environments.
 
 ## What happens to requests if the user didn't retry a throttled request?
 Currently, if a request isn't retried when a 429 error is received, the request won't be processed.
@@ -71,7 +70,7 @@ Currently, if a request isn't retried when a 429 error is received, the request 
 Yes. For one month, you can export the information to Excel for more analysis and archiving.
 
 ## Is throttling functionality version-specific? If it is, which version is it available in?
-Priority-based throttling will be available in Preview starting with the **Platform updates for version 10.0.13 of Finance and Operations apps** release.
+Priority-based throttling will be available in Preview starting with the version 10.0.13 of Finance and Operations apps.
 
 ## Are there plans to provide an option for the Priority mapping grid entry?
 Microsoft will consider this request in a future release.
@@ -83,17 +82,17 @@ No. There will be no impact on the requests of interactive (online) users.
 Throttling helps maintain a healthy system when there is a resource constraint. It won't affect any page actions.
 
 ## How can I determine the wait time before I retry a throttled request?
-When a request is throttled, the response header includes a time that will be used in retry logic. You can use the **Retry-After** HTTP header to fetch the value that will be provided in seconds. For example: **Retry-After: 60**
+When a request is throttled, the response header includes a time that will be used in retry logic. You can use the **Retry-After** HTTP header to fetch the value that will be provided in seconds. For example, **Retry-After: 60**.
 
-## What is the message we will see as part of the 429 HTTP response?
-You will receive "*This request could not be processed at this time due to system experiencing high resource utilization. Please retry the request after {0} seconds*".
-Where {0} will have the dynamically calculated retry-after time interval.
+## What is the message that is shown as part of the 429 HTTP response?
+You will receive the message, "This request could not be processed at this time due to system experiencing high resource utilization. Retry the request after {0} seconds".
+Where **{0}** will have the dynamically calculated retry-after time interval.
 
 ## Does throttling apply to internal Microsoft services?
-Internal Microsoft services, such as, DRA, WHSMobile, RetailAPI are currently exempt from throttling. However, we are collecting telemetry on the performance and effect of these services on the overall system health. We will be working with each of these internal services team to establish usage-based limits in the near future.
+Internal Microsoft services, such as DRA, WHSMobile, and RetailAPI are currently exempt from throttling. However, telemetry is being collected on the performance of these services on the overall system health. Microsoft will work with each of these internal service teams to establish usage-based limits at some point.
 
-## Do you recommend that I use a dedicated integration account instead of just the generic admin user account?
-Yes, we strongly recommend this approach. As these service protection settings are setup for user specific values, using the same user account for most/ all of your integration will limit your ability to assign relative priorites across your integration needs. Further if the same user account is used all integration requests originating from that user account will be subjected to throttling.
+## Is it recommended to use a dedicated integration account instead of just the generic admin user account?
+Yes, we strongly recommend this approach. As these service protection settings are set up for user-specific values, using the same user account for most or all of your integration will limit your ability to assign relative priorities across your integration needs. Further, if the same user account is used, all integration requests that originate from that user account will be subjected to throttling.
 
 ## Does throttling depend on the tier that my environment is running on?
 In the initial release, no. Throttling will calculate its threshold based on the resources that are available for each environment.

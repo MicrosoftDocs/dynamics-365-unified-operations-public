@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to test modules by using page mocks.
 
-## Overview
-
 Some modules are built to interact with other modules. You can use page mocks to test those modules together in a local development environment.
 
 Page mock files are stored under the /src/pageMocks directory. They can be loaded by using the URL `https://localhost:4000/page?mock=PAGE_MOCK`, where **PAGE\_MOCK** is the file name of the mock file, but without the **.json** file name extension.

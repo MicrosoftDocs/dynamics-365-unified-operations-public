@@ -578,7 +578,7 @@ The number that is a multiple of the value specified by the *\_decimals* paramet
 
 ### Remarks
 
-To round a real number to a specified number of decimal places, use the [decround function](https://msdn.microsoft.com/library/03bd2ea2-414e-43e0-ba05-f5db1a943b91(AX.60).aspx).
+To round a real number to a specified number of decimal places, use the [decround function](/previous-versions/dynamics/ax-2012/reference/aa499511(v=ax.60)).
 
 ### Remarks
 

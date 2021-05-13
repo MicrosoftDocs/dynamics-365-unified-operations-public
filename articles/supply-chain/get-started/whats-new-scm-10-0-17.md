@@ -76,11 +76,13 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 - [Asset management capabilities in the production floor execution interface](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - For more information, see [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
 
+- [Manufacturing execution with scale units in the cloud](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - For more information, see [Manufacturing execution workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-manufacturing.md).
+
 - [Override the default reservation principle for materials in production](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - For more information, see [Override the default reservation principle for materials in production](../production-control/override-default-reservation-principle.md).
 
 - [Saved views for production control](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - For more information, see [Standard saved views for Supply Chain Management](saved-views-scm.md).
 
-- [Manufacturing execution with scale units in the cloud](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - For more information, see [Manufacturing execution workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-manufacturing.md).
+- Unified number sequence for job IDs<br> - For more information, see [Unified number sequence for job IDs](../production-control/unified-job-ids.md).
 
 ### Planning
 

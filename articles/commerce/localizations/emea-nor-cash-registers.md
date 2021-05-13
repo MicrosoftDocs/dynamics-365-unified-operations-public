@@ -111,7 +111,7 @@ The audit file can be exported for the following scenarios:
 
 You can also send a report from one legal entity on behalf of another legal entity. In this case, you must run the export from the operating legal entity and specify the reporting legal entity as the sender of the report.
 
-The SAF-T Cash Register format is implemented at Headquarters by using [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md). 
+The SAF-T Cash Register format is implemented at Headquarters by using [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md). 
 
 ## Setting up Commerce for Norway
 
@@ -133,7 +133,7 @@ Additionally, on the **Bank account information** FastTab, in the **Routing numb
 ### Set up value-added tax (VAT) per Norwegian requirements
 
 
-You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../finance/general-ledger/indirect-taxes-overview.md).
 
 You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in Norway.
 
@@ -202,7 +202,7 @@ For more information about how to work with receipt formats, see [Set up and des
 
 ### Configure the SAF-T Cash Register export format
 
-The SAF-T Cash Register configuration is available for download from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following configurations:
+The SAF-T Cash Register configuration is available for download from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following configurations:
 
 - **Retail channel data.version.1** – The data model configuration.
 - **DMM Retail channel data.version.1.12** – The data model mapping configuration.

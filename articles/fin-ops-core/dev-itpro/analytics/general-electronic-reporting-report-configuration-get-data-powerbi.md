@@ -4,7 +4,7 @@
 title: Configure Electronic reporting (ER) to pull data into Power BI
 description: This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance to Power BI services. 
 author: NickSelin
-ms.date: 06/20/2017
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -74,10 +74,10 @@ To complete the example in this topic, you must have the following access:
 ## Use an ER data model as the source of data
 You must have an ER data model as the source of business data that will be used on Power BI reports. This data model is uploaded from the ER configurations repository. For more information, see [Download Electronic reporting configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md), or play the **ER Import a configuration from Lifecycle Services** task guide. Select **Intrastat** as the data model that will be uploaded from the selected ER configurations repository. (In this example, version 1 of the model is used.) You can then access the **Intrastat** ER model configuration on the **Configurations** page.
 
-[![Configurations page](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+[![Intrastat ER model cofiguration on the Configurations page](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## Design an ER format configuration
-You must create a new ER format configuration that uses the **Intrastat** data model as the source of business data. This format configuration must generate output results as electronic documents in OpenXML (Excel file) format. For more information, play the **ER Create a configuration for reports in OPENXML format** task guide. Name the new configuration **Import / export activities**, as shown in the following illustration. Use the [ER data - import and export details](https://go.microsoft.com/fwlink/?linkid=845208) Excel file as a template when you design the ER format. (For information about how to import a format template, play the task guide.)
+You must create a new ER format configuration that uses the **Intrastat** data model as the source of business data. This format configuration must generate output results as electronic documents in OpenXML (Excel file) format. For more information, play the **ER Create a configuration for reports in OPENXML format** task guide. Name the new configuration **Import / export activities**, as shown in the following illustration. Use the [ER data - import and export details](https://download.microsoft.com/download/f/7/5/f755c0fd-025c-4aa9-920b-909abb8302ad/ER-data-import-and-export-details.xlsx) Excel file as a template when you design the ER format. (For information about how to import a format template, play the task guide.)
 
 [![Import / export activities configuration](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
 
@@ -132,7 +132,7 @@ Click the **Settings** button for the new destination record. Then, in the **Des
 1. On the **Configurations** page (**Organization administration** &gt; **Electronic reporting** &gt; **Configurations**), in the configurations tree, select the **Import / export activities** configuration that you created earlier.
 2. Change the status of version 1.1 from **Draft** to **Complete** to make this format available for use.
 
-    [![Configurations page](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
+    [![Import/export activities configuration on the Configurations page](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
 
 3. Select the completed version of the **Import / export activities** configuration, and then click **Run**. Note that the configured destination is applied to the output result that is generated in Excel format.
 4. Set the **Batch processing** option to **Yes** to run this report in unattended mode.
@@ -193,7 +193,7 @@ Set up the integration with Power BI. For more information, see [Configure Power
 2. Select the **Import and export details** Power BI report that you created, to show that report as an action item on the selected page.
 3. Click the action item to open the page that shows the report that you designed in Power BI.
 
-    [![Import and export details report](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+    [![Import and export details report designed in Power BI](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
 ## Additional resources
 

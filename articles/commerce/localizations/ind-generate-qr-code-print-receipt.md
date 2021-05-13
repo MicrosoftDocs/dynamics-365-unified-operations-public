@@ -7,7 +7,6 @@ author: prabhatb2011
 ms.date: 03/14/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
 ms.technology:
 
 # optional metadata

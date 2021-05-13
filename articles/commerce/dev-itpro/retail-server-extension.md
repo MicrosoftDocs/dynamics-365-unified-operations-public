@@ -40,6 +40,7 @@ The Retail software development kit (SDK) includes only a few samples of end-to-
 > [!NOTE]
 > The CommerceController extension model is deprecated in April 2021 (Application release - 10.0.18). You will need to migrate all Retail server extensions to IController. Having both CommerceController and IController is not supported. For more information about IController, see [Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-server-icontroller-extension).
 
+
 ## End-to-end sample repository in the Retail SDK
 
 | Sample extension<br>(RetailSDK\\SampleExtensions\\RetailServer) | CRT sample<br>(RetailSDK\\SampleExtensions\\CommerceRuntime) | POS sample<br>(RetailSDK\\POS\\Extensions) |

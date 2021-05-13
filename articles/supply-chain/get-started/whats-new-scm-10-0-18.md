@@ -7,7 +7,6 @@ author: kamaybac
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,6 +45,14 @@ The following features are included in this release. Follow the links to the [re
 - [Enterprise-scale inventory performance improvements and archiving](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - For more information, see [Archive inventory transactions](../inventory/archive-inventory-transactions.md)
 
 - [Rebate management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - For more information, see [Rebate management module overview](../rebate-management/rebate-management-overview.md)
+
+- [Sales data entity export setup policy](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-data-entity-export-setup-policy)
+
+- [Sales return order line registration with decimal precision with and without catch weight](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight)
+
+- [Single-click sales order confirmation](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation)
+
+- [Sales order to purchase order line deletion policy](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-purchase-order-line-deletion-policy)
 
 - Simplified interface for clock in and out only (enhancement for [Enhanced production floor execution interface for manufacturing](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - For more information, see [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
 
