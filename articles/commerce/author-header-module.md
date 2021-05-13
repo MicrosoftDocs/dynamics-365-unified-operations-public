@@ -67,6 +67,13 @@ The following modules can be used in a header module:
 > - Support for using the site selector module in header modules is available in the Dynamics 365 Commerce 10.0.14 release.
 > - Support for using the store selector module in header modules is available in the Dynamics 365 Commerce 10.0.15 release.
 
+## Header in Adventure works theme
+
+In Adventure works theme, Header module supports a new property **Mobile Logo** that allows a logo to be specified for mobile viewports. This property is available as a module definition extension in Adventure works theme.
+
+> [!IMPORTANT]
+> The Adventure works theme is available in Dynamics 365 Commerce 10.0.20 release.
+
 ## Create a header fragment for a page
 
 To create a header fragment, follow these steps.
