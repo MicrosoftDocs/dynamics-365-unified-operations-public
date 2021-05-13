@@ -49,6 +49,7 @@ Below is an example of an Active Image on Adventure works home page
 | Paragraph      | Paragraph text | The module supports paragraph text in rich text format. Some basic rich text capabilities are supported, such as bold, underlined, and italic text, and hyperlinks. Some of these capabilities can be overridden by the page theme that is applied to the module. |
 | Link           | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** | Modules support one or more "call to action" links. If a link is added, link text, a URL, and an ARIA label are required. ARIA labels should be descriptive to meet accessibility requirements. Links can be configured so that they are opened on a new tab. |
 | Sub Text|  Heading, Text, Links| It’s a collection of additional context for the image E.g. Surfer/Author/Designer name, links to personal blog etc.|
+|Text theme| Light or Dark| This property is available as a theme extension in Adventure works theme. It allows a user to set the text to Light or Dark based on the background image|
 
 ## Add Active image module to a new page
 To add Active image module to a new page and set the required properties, follow these steps.
