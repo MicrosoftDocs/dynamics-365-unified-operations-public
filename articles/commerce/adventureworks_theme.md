@@ -75,6 +75,13 @@ Below is an example of B2B Home Page on Adventure works theme
 
 <kbd><img src="./media/aw_b2b.PNG" /></kbd>
 
+## Theme Extensions
+
+Adventure works theme showcases several theme extensions including **View extensions** and **Module definition** extensions. The theme can be used as a refernce theme to build similar extensions. E.g. The list page on the Adventure works theme is acheived as a view extesion, it has a  horizontal refiner compared to the left pane refiner in Fabrikam theme.
+
+Similarly, there are many modules that showcase module defintion extensions - E.g. [Cart icon module](add-cart-icon.md) allows two new slots for Empty Cart and Promotional Content. These slots are acheived via module definition extension. Another example would be the Header module, where a new property is added **Mobile Logo** for supporting a logo on Mobile view port. This Mobile Logo is implemented as a Header module definition extension.
+
+For more details on extensions refer [Theme Extensions](theme-module-extensions.md)
 
 
 
@@ -90,6 +97,10 @@ Below is an example of B2B Home Page on Adventure works theme
 [Subscribe module](subscribe-module.md)
 
 [Image List module](image-list-module.md)
+
+[Theme Extensions](theme-module-extensions.md)
+
+[Cart icon module](add-cart-icon.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
