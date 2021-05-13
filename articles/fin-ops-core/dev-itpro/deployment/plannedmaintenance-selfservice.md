@@ -60,7 +60,7 @@ For example, the user may be working on a sales order creating lines or posting.
 ### Batch service
 Batch service can be unavailable for up to 25 minutes. The following activities will occur: 
 - Any executing batch jobs will be terminated.
-- Jobs that were teriminated will be automatically restarted when the batch service recovers. Set the maximum number of retries to zero for any jobs that should not be restarted automatically.
+- Jobs that were terminated will be automatically restarted when the batch service recovers. Set the maximum number of retries to zero for any jobs that should not be restarted automatically.
   - Check printing 
   - Statement posting
 
