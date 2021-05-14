@@ -1152,6 +1152,8 @@
         items: 
         - name: Change the accounting or reporting currency
           href: general-ledger/add-change-acctg-rprtg-crrncy.md
+        - name: Change or reassign a ledger calendar
+          href: general-ledger/change-mdfy-clndr-to-ledger.md
         - name: Reverse settings on journals and lines
           href: general-ledger/rvrs-settgs-on-jrnls-lines.md
         - name: Year-end close missing opening balances
