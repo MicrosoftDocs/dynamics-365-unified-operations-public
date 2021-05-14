@@ -4,7 +4,7 @@
 title: Virtual entities overview
 description: This topic provides general information about virtual entities for Finance and Operations apps.
 author: RamaKrishnamoorthy
-ms.date: 05/11/2021
+ms.date: 05/14/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -32,7 +32,7 @@ Core Human Resources entities can also be virtualized, just as Finance and Opera
 
 ## Architecture
 
-Virtual entities are a Dataverse concept that is useful beyond Finance and Operations apps. The following illustration shows how the Finance and Operations provider for virtual entities is implemented. The provider implements six primary methods. The first five methods are the standard CRUD operations: **Create**, **Update**, **Delete**, **Retrieve**, and **RetrieveMultiple**. The last method, **PerformAction**, is used to call OData actions, as described later in this topic. Calls to the Finance and Operations virtual entity data provider (shown as "virtual entites plug-in" in the illustration) will cause a Secure Sockets Layer (SSL)/Transport Layer Security (TLS) 1.2 secure web call to the CDSVirtualEntityService web API endpoint of Finance and Operations apps. This web service then converts the queries into calls to the associated physical entities in Finance and Operations apps, and invokes CRUD or OData operations on those entities. Because a Finance and Operations entity is directly invoked in all operations, any business logic on the entity or its backing tables is also invoked.
+Virtual entities are a Dataverse concept that is useful beyond Finance and Operations apps. The following illustration shows how the Finance and Operations provider for virtual entities is implemented. The provider implements six primary methods. The first five methods are the standard CRUD operations: **Create**, **Update**, **Delete**, **Retrieve**, and **RetrieveMultiple**. The last method, **PerformAction**, is used to call OData actions, as described later in this topic. Calls to the Finance and Operations virtual entity data provider (shown as "virtual entities plug-in" in the illustration) will cause a Secure Sockets Layer (SSL)/Transport Layer Security (TLS) 1.2 secure web call to the CDSVirtualEntityService web API endpoint of Finance and Operations apps. This web service then converts the queries into calls to the associated physical entities in Finance and Operations apps, and invokes CRUD or OData operations on those entities. Because a Finance and Operations entity is directly invoked in all operations, any business logic on the entity or its backing tables is also invoked.
 
 ![Architecture of virtual entities for Finance and Operations apps](media/image1.png)
 
