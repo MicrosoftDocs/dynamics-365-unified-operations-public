@@ -1,10 +1,10 @@
 ---
 title: Assign step icons and titles for the Warehouse Management mobile app
-description: This topic describes on how to assign step icons and titles for new or customized task flows for the Warehouse Management mobile app.
+description: This topic describes how to assign step icons and titles for new or customized task flows for the Warehouse Management mobile app.
 author: MarkusFogelberg
 ms.date: 05/06/2021
 ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,30 +17,30 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes on how to assign step icons and titles for new or customized task flows for the Warehouse Management mobile app.
+This topic describes how to assign step icons and step titles for new or customized task flows for the Warehouse Management mobile app.
 
-The following screenshot shows how step titles and icons appear in the Warehouse Management mobile app.
+The following illustrations shows how step icons and titles appear in the Warehouse Management mobile app.
 
-![Example step title and icon in the Warehouse Management mobile app](media/step-icon-example.png "Example step title and icon in the Warehouse Management mobile app")
+![Example of a step icon and a step title in the Warehouse Management mobile app](media/step-icon-example.png "Example of a step icon and a step title in the Warehouse Management mobile app")
 
 ## Turn on this feature in your system
 
 Before you can use this feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
-- **Module**: *Warehouse management*
-- **Feature name**: *User settings, icons, and step titles for the new warehouse app*
+- **Module:** *Warehouse management*
+- **Feature name:** *User settings, icons, and step titles for the new warehouse app*
 
 ## Standard step IDs, classes, and icons
 
-Each step in a task flow is identified by a step ID, and each step ID has its corresponding step class. The step icon and title are specified in each step class.
+Each step in a task flow is identified by a step ID, and each step ID has a corresponding step class. The step icon and title are specified in each step class.
 
 ### <a name="step-ids-classes"></a>Step IDs and step classes
 
-The following table provides a list of all the currently available step IDs and their corresponding step classes. The control name of the primary input field is used as the step ID.
+The following table lists every step ID that is currently available, and its corresponding step class. The control name of the primary input field is used as the step ID.
 
-For an example of how these are used, see the implementation for the method `WHSMobileAppStepInfoBuilder.stepId()` provided in [Example of assigning step titles and icons for a custom flow](#example), later in this topic.
+For an example that shows how these step IDs and classes are used, see the implementation of the `WHSMobileAppStepInfoBuilder.stepId()` method in the [Example: Assign step icons and titles for a custom flow](#example) section later in this topic.
 
-| Step ID                                        | Step Class                                    |
+| Step ID                                        | Step class                                    |
 |------------------------------------------------|-----------------------------------------------|
 | MobileDeviceQueueMessageCollectionIdentifierId | WHSMobileAppStepSelectOrder                   |
 | InventBatchId                                  | WHSMobileAppStepBatch                         |
@@ -171,56 +171,190 @@ For an example of how these are used, see the implementation for the method `WHS
 
 ### <a name="step-icons"></a>Available step icons
 
-The system includes a collection of standard step icons that you can also reuse for your custom steps. The system does not currently support uploading custom step icons, so you must always select one of the standard ones. The following table shows each standard step icon and its name.
+The system includes a collection of standard step icons that you can also use for your custom steps. You can't currently upload custom step icons. Therefore, you must always select one of the standard step icons.
 
-|  |  |  |  |
-|-------------------------|-------------------------|-------------------------|-------------------------|
-| ![About step icon](media/step-icons-about.png "About step icon")</br>About | ![Add license plate or item step icon](media/step-icons-add-lp.png "Add license plate or item step icon")</br>AddLpOrItem | ![Batch disposition step icon](media/step-icons-batch-disposition.png "Batch disposition step icon")</br>BatchDisposition | ![Carrier step icon](media/step-icons-carrier.png "Carrier step icon")</br>Carrier |
-| ![Catch weight tag step icon](media/step-icons-cw-tag.png "Catch weight tag step icon")</br>CatchWeightTag | ![Catch weight tag weight step icon](media/step-icons-cw-tag-weight.png "Catch weight tag weight step icon")</br>CatchWeightTagWeight | ![Check digit step icon](media/step-icons-check-digit.png "Check digit step icon")</br>CheckDigit | ![Check in or out ID step icon](media/step-icons-check-in-out.png "Check in or out ID step icon")</br>CheckInOutId |
-| ![Child license plate step icon](media/step-icons-child-lp.png "Child license plate step icon")</br>ChildLP | ![Cluster ID step icon](media/step-icons-cluster-id.png "Cluster ID step icon")</br>ClusterId | ![Cluster position step icon](media/step-icons-cluster-position.png "Cluster position step icon")</br>ClusterPosition | ![Config ID step icon](media/step-icons-config-id.png "Config ID step icon")</br>ConfigId |
-| ![Configured field step icon](media/step-icons-configured-field.png "Configured field step icon")</br>ConfiguredField | ![Con or LP step icon](media/step-icons-con-lp.png "Con or LP step icon")</br>ConOrLP | ![Consolidate from license plate ID step icon](media/step-icons-consolidate-from-LP.png "Consolidate from license plate ID step icon")</br>ConsolidateFromLicensePlateID | ![Consolidate to license plate ID step icon](media/step-icons-consolidate-to-LP.png "Consolidate to license plate ID step icon")</br>ConsolidateToLicensePlateID |
-| ![Container type step icon](media/step-icons-container-type.png "Container type step icon")</br>ContainerType | ![Counting step icon](media/step-icons-counting.png "Counting step icon")</br>Counting | ![Counting reason code step icon](media/step-icons-counting-reason.png "Counting reason code step icon")</br>CountingReasonCode | ![Country of origin code step icon](media/step-icons-country-origin.png "Country of origin code step icon")</br>CountryOfOrigin |
-| ![Disposition step icon](media/step-icons-disposition.png "Disposition step icon")</br>Disposition | ![Done step icon](media/step-icons-done.png "Done step icon")</br>Done | ![Driver check in confirmation step icon](media/step-icons-driver-check-in-confirmation.png "Driver check-in confirmation step icon")</br>DriverCheckInConfirmation | ![Driver check in ID step icon](media/step-icons-driver-check-in-id.png "Driver check-in ID step icon")</br>DriverCheckInId |
-| ![Driver check out ID step icon](media/step-icons-driver-check-out-id.png "Driver check-out ID step icon")</br>DriverCheckOutId | ![Expiration date step icon](media/step-icons-exp-date.png "Expiration date step icon")</br>ExpDate | ![Field step icon](media/step-icons-field.png "Field step icon")</br>Field | ![From batch disposition step icon](media/step-icons-from-batch.png "From batch disposition step icon")</br>FromBatchDisposition |
-| ![From inventory status step icon](media/step-icons-from-inventory-status.png "From inventory status step icon")</br>FromInventoryStatus | ![ID attribute step icon](media/step-icons-id-attribute.png "ID attribute step icon")</br>IdAttribute | ![Inventory batch ID step icon](media/step-icons-invent-batch-id.png "Inventory batch ID step icon")</br>InventBatchID | ![Inventory color ID step icon](media/step-icons-invent-color-id.png "Inventory color ID step icon")</br>InventColorID |
-| ![Inventory location step icon](media/step-icons-invent-location.png "Inventory location step icon")</br>InventLocation | ![Inventory serial ID step icon](media/step-icons-invent-serial-id.png "Inventory serial ID step icon")</br>InventSerialID | ![Inventory size ID step icon](media/step-icons-invent-size-id.png "Inventory size ID step icon")</br>InventSizeID | ![Inventory status ID step icon](media/step-icons-invent-status-id.png "Inventory status ID step icon")</br>InventStatusID |
-| ![Inventory style ID step icon](media/step-icons-invent-style-id.png "Inventory style ID step icon")</br>InventStyleID | ![Inventory version ID step icon](media/step-icons-invent-version-id.png "Inventory version ID step icon")</br>InventVersionID | ![Item ID step icon](media/step-icons-item-id.png "Item ID step icon")</br>ItemID | ![ITM container ID step icon](media/step-icons-itm-contianer-id.png "ITM container ID step icon")</br>ITMContainerID |
-| ![ITM shipment ID step icon](media/step-icons-itm-shipment-id.png "ITM shipment ID step icon")</br>ITMShipmentID | ![Kanban card ID step icon](media/step-icons-kanban-card-id.png "Kanban card ID step icon")</br>KanbanCardID | ![Kanban or card ID step icon](media/step-icons-kanban-or-card-id.png "Kanban or card ID step icon")</br>KanbanOrCardID | ![License plate ID step icon](media/step-icons-license-plate-id.png "License plate ID step icon")</br>LicensePlateID |
-| ![Load ID step icon](media/step-icons-load-id.png "Load ID step icon")</br>LoadId | ![Location license plate position step icon](media/step-icons-location-lp-pos.png "Location license plate position step step icon")</br>LocationLicensePlatePosition | ![Location or license plate step icon](media/step-icons-location-or-lp.png "Location or license plate step icon")</br>LocOrLP | ![Location or license plate checkl step icon](media/step-icons-location-or-lp-check.png "Location or license plate check step icon")</br>LocOrLPCheck |
-| ![Location or license plate from step icon](media/step-icons-location-or-lp-from.png "Location or license plate from step icon")</br>LocOrLPFrom | ![Location or license plate to step icon](media/step-icons-location-or-lp-to.png "Location or license plate to step icon")</br>LocOrLPTo | ![Long process completed step icon](media/step-icons-long-process-complete.png "Long process completed step icon")</br>LongProcessCompleted | ![LP break parent LP step icon](media/step-icons-lp-break-parent.png "LP break parent LP step step icon")</br>LPBreakParentLP |
-| ![Merge container ID step icon](media/step-icons-merge-container.png "Merge container ID step icon")</br>MergeContainerId | ![Mixed license plate line number step icon](media/step-icons-mixed-lp-line.png "Mixed license plate line number step icon")</br>MixedLPLineNum | ![Product confirmation step icon](media/step-icons-product-confirm.png "Product confirmation step icon")</br>ProductConfirmation | ![Put step icon](media/step-icons-put.png "Put step icon")</br>Put |
-| ![Outbound weight icon](media/step-icons-outbound-weight.png "Outbound weight icon")</br>OutboundWeight | ![Owner step icon](media/step-icons-owner.png "Owner step icon")</br>Owner | ![Parent license plate step icon](media/step-icons-parent-lp.png "Parent license plate step icon")</br>ParentLP | ![Please confirm step icon](media/step-icons-please-confirm.png "Please confirm step icon")</br>PleaseConfirm |
-| ![Purchase order line number step icon](media/step-icons-po-line-num.png "Purchase order line number step icon")</br>POLineNum | ![Purchase order number step icon](media/step-icons-po-num.png "Purchase order number step icon")</br>PONum | ![Position full step icon](media/step-icons-position-full.png "Position full step icon")</br>PositionFull | ![Potency step icon](media/step-icons-potency.png "Potency step icon")</br>Potency |
-| ![Printer name step icon](media/step-icons-printer-name.png "Printer name step icon")</br>PrinterName | ![Prod ID step icon](media/step-icons-prod-id.png "Prod ID step icon")</br>ProdId | ![Putaway cluster ID step icon](media/step-icons-putaway-cluster-id.png "Putaway cluster ID step icon")</br>PutawayClusterId | ![Quantity step icon](media/step-icons-qty.png "Quantity step icon")</br>Qty |
-| ![Quantity adjust in step icon](media/step-icons-qty-adjust-in.png "Quantity adjust in step icon")</br>QtyAdjustIn | ![Quantity short step icon](media/step-icons-qty-short.png "Quantity short step icon")</br>QtyShort | ![Quantity to consume step icon](media/step-icons-qty-to-consume.png "Quantity to consume step icon")</br>QtyToConsume | ![Quantity to put step icon](media/step-icons-qty-to-put.png "Quantity to put step icon")</br>QtyToPut |
-| ![Quantity to scrap step icon](media/step-icons-qty-to-scrap.png "Quantity to scrap step icon")</br>QtyToScrap | ![Quantity confirmation step icon](media/step-icons-qty-confirmation.png "Quantity confirmation step icon")</br>QuantityConfirmation | ![Report as finished end job step icon](media/step-icons-raf-end-job.png "Report as finished end job step icon")</br>RAFEndJob | ![Receive location ID step icon](media/step-icons-recv-loc-id.png "Receive location ID step icon")</br>RecvLocationID |
-| ![Remove container ID step icon](media/step-icons-remove-container-id.png "Remove container ID step icon")</br>RemoveContainerID | ![RMA number step icon](media/step-icons-rma-no.png "RMA number step icon")</br>RMANum | ![Select order step icon](media/step-icons-select-order.png "Select order step icon")</br>SelectOrder | ![Short pick reason step icon](media/step-icons-short-pick-reason.png "Short pick reason step icon")</br>ShortPickReason |
-| ![Sort position ID step icon](media/step-icons-sort-position-id.png "Sort position ID step icon")</br>SortPositionId | ![Target license plate ID step icon](media/step-icons-target-lp-id.png "Target license plate ID step icon")</br>TargetLicensePlateId | ![To line number step icon](media/step-icons-to-line-no.png "To line number step icon")</br>ToLineNum | ![To location step icon](media/step-icons-to-location.png "To location step icon")</br>ToLocation |
-| ![To number step icon](media/step-icons-to-number.png "To number step icon")</br>ToNum | ![To warehouse step icon](media/step-icons-to-warehouse.png "To warehouse step icon")</br>ToWarehouse | ![Transport load ID step icon](media/step-icons-tranport-load-id.png "Transport load ID step icon")</br>TransportLoadId | ![Vendor batch ID step icon](media/step-icons-vendor-batch-id.png "Vendor batch ID step icon")</br>VendBatchId |
-| ![Wave label ID step icon](media/step-icons-wave-label-id.png "Wave label ID step icon")</br>WaveLabelId | ![Wave label quantity step icon](media/step-icons-wave-label-qty.png "Wave label quantity step icon")</br>WaveLblQty | ![Weight step icon](media/step-icons-weight.png "Weight step icon")</br>Weight | ![Weight to consume step icon](media/step-icons-weight-to-consume.png "Weight to consume step icon")</br>WeightToConsume |
-| ![WHS adjustment type step icon](media/step-icons-whs-adjustment-type.png "WHS adjustment type step icon")</br>WHSAdjustmentType | ![WHS receiving exception step icon](media/step-icons-whs-receiving-exception.png "WHS receiving exception step icon")</br>WHSReceivingException | ![WMS location ID step icon](media/step-icons-wms-location-id.png "WMS location ID step icon")</br>WMSLocationID | ![Work ID step icon](media/step-icons-work-id.png "Work ID step icon")</br>WorkId |
-| ![Work ID to cancel step icon](media/step-icons-work-id-to-cancel.png "Work ID to cancel step icon")</br>WorkIdToCancel | ![Work license plate ID step icon](media/step-icons-work-lp-id.png "Work license plate ID step icon")</br>WorkLicensePlateId | ![Work license plate ID putaway cluster step icon](media/step-icons-work-lp-putaway-cluster.png "Work license plate ID putaway cluster step icon")</br>WorkLPIDPutawayCluster | ![Work pool ID step icon](media/step-icons-work-pool-id.png "Work pool ID step icon")</br>WorkPoolID |
-| ![Zone ID step icon](media/step-icons-zone-pool-id.png "Zone ID step icon")</br>ZoneID |  |  |  |
+The following table shows every standard step icon that is currently available, and its name.
 
-## <a name="example"></a>Example of assigning step titles and icons for a custom flow
+<table>
+<tbody>
+<tr>
+<td><img src="media/step-icons-about.png" alt="About step icon" title="About step icon"><br>About</td>
+<td><img src="media/step-icons-add-lp.png" alt="Add license plate or item step icon" title="Add license plate or item step icon"><br>AddLpOrItem</td>
+<td><img src="media/step-icons-batch-disposition.png" alt="Batch disposition step icon" title="Batch disposition step icon"><br>BatchDisposition</td>
+<td><img src="media/step-icons-carrier.png" alt="Carrier step icon" title="Carrier step icon"><br>Carrier</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-cw-tag.png" alt="Catch weight tag step icon" title="Catch weight tag step icon"><br>CatchWeightTag</td>
+<td><img src="media/step-icons-cw-tag-weight.png" alt="Catch weight tag weight step icon" title="Catch weight tag weight step icon"><br>CatchWeightTagWeight</td>
+<td><img src="media/step-icons-check-digit.png" alt="Check digit step icon" title="Check digit step icon"><br>CheckDigit</td>
+<td><img src="media/step-icons-check-in-out.png" alt="Check in or out ID step icon" title="Check in or out ID step icon"><br>CheckInOutId</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-child-lp.png" alt="Child license plate step icon" title="Child license plate step icon"><br>ChildLP</td>
+<td><img src="media/step-icons-cluster-id.png" alt="Cluster ID step icon" title="Cluster ID step icon"><br>ClusterId</td>
+<td><img src="media/step-icons-cluster-position.png" alt="Cluster position step icon" title="Cluster position step icon"><br>ClusterPosition</td>
+<td><img src="media/step-icons-config-id.png" alt="Config ID step icon" title="Config ID step icon"><br>ConfigId</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-configured-field.png" alt="Configured field step icon" title="Configured field step icon"><br>ConfiguredField</td>
+<td><img src="media/step-icons-con-lp.png" alt="Con or LP step icon" title="Con or LP step icon"><br>ConOrLP</td>
+<td><img src="media/step-icons-consolidate-from-LP.png" alt="Consolidate from license plate ID step icon" title="Consolidate from license plate ID step icon"><br>ConsolidateFromLicensePlateID</td>
+<td><img src="media/step-icons-consolidate-to-LP.png" alt="Consolidate to license plate ID step icon" title="Consolidate to license plate ID step icon"><br>ConsolidateToLicensePlateID</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-container-type.png" alt="Container type step icon" title="Container type step icon"><br>ContainerType</td>
+<td><img src="media/step-icons-counting.png" alt="Counting step icon" title="Counting step icon"><br>Counting</td>
+<td><img src="media/step-icons-counting-reason.png" alt="Counting reason code step icon" title="Counting reason code step icon"><br>CountingReasonCode</td>
+<td><img src="media/step-icons-country-origin.png" alt="Country of origin code step icon" title="Country of origin code step icon"><br>CountryOfOrigin</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-disposition.png" alt="Disposition step icon" title="Disposition step icon"><br>Disposition</td>
+<td><img src="media/step-icons-done.png" alt="Done step icon" title="Done step icon"><br>Done</td>
+<td><img src="media/step-icons-driver-check-in-confirmation.png" alt="Driver check in confirmation step icon" title="Driver check in confirmation step icon"><br>DriverCheckInConfirmation</td>
+<td><img src="media/step-icons-driver-check-in-id.png" alt="Driver check in ID step icon" title="Driver check in ID step icon"><br>DriverCheckInId</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-driver-check-out-id.png" alt="Driver check out ID step icon" title="Driver check out ID step icon"><br>DriverCheckOutId</td>
+<td><img src="media/step-icons-exp-date.png" alt="Expiration date step icon" title="Expiration date step icon"><br>ExpDate</td>
+<td><img src="media/step-icons-field.png" alt="Field step icon" title="Field step icon"><br>Field</td>
+<td><img src="media/step-icons-from-batch.png" alt="From batch disposition step icon" title="From batch disposition step icon"><br>FromBatchDisposition</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-from-inventory-status.png" alt="From inventory status step icon" title="From inventory status step icon"><br>FromInventoryStatus</td>
+<td><img src="media/step-icons-id-attribute.png" alt="ID attribute step icon" title="ID attribute step icon"><br>IdAttribute</td>
+<td><img src="media/step-icons-invent-batch-id.png" alt="Inventory batch ID step icon" title="Inventory batch ID step icon"><br>InventBatchID</td>
+<td><img src="media/step-icons-invent-color-id.png" alt="Inventory color ID step icon" title="Inventory color ID step icon"><br>InventColorID</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-invent-location.png" alt="Inventory location step icon" title="Inventory location step icon"><br>InventLocation</td>
+<td><img src="media/step-icons-invent-serial-id.png" alt="Inventory serial ID step icon" title="Inventory serial ID step icon"><br>InventSerialID</td>
+<td><img src="media/step-icons-invent-size-id.png" alt="Inventory size ID step icon" title="Inventory size ID step icon"><br>InventSizeID</td>
+<td><img src="media/step-icons-invent-status-id.png" alt="Inventory status ID step icon" title="Inventory status ID step icon"><br>InventStatusID</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-invent-style-id.png" alt="Inventory style ID step icon" title="Inventory style ID step icon"><br>InventStyleID</td>
+<td><img src="media/step-icons-invent-version-id.png" alt="Inventory version ID step icon" title="Inventory version ID step icon"><br>InventVersionID</td>
+<td><img src="media/step-icons-item-id.png" alt="Item ID step icon" title="Item ID step icon"><br>ItemID</td>
+<td><img src="media/step-icons-itm-contianer-id.png" alt="ITM container ID step icon" title="ITM container ID step icon"><br>ITMContainerID</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-itm-shipment-id.png" alt="ITM shipment ID step icon" title="ITM shipment ID step icon"><br>ITMShipmentID</td>
+<td><img src="media/step-icons-kanban-card-id.png" alt="Kanban card ID step icon" title="Kanban card ID step icon"><br>KanbanCardID</td>
+<td><img src="media/step-icons-kanban-or-card-id.png" alt="Kanban or card ID step icon" title="Kanban or card ID step icon"><br>KanbanOrCardID</td>
+<td><img src="media/step-icons-license-plate-id.png" alt="License plate ID step icon" title="License plate ID step icon"><br>LicensePlateID</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-load-id.png" alt="Load ID step icon" title="Load ID step icon"><br>LoadId</td>
+<td><img src="media/step-icons-location-lp-pos.png" alt="Location license plate position step icon" title="Location license plate position step icon"><br>LocationLicensePlatePosition</td>
+<td><img src="media/step-icons-location-or-lp.png" alt="Location or license plate step icon" title="Location or license plate step icon"><br>LocOrLP</td>
+<td><img src="media/step-icons-location-or-lp-check.png" alt="Location or license plate check step icon" title="Location or license plate check step icon"><br>LocOrLPCheck</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-location-or-lp-from.png" alt="Location or license plate from step icon" title="Location or license plate from step icon"><br>LocOrLPFrom</td>
+<td><img src="media/step-icons-location-or-lp-to.png" alt="Location or license plate to step icon" title="Location or license plate to step icon"><br>LocOrLPTo</td>
+<td><img src="media/step-icons-long-process-complete.png" alt="Long process completed step icon" title="Long process completed step icon"><br>LongProcessCompleted</td>
+<td><img src="media/step-icons-lp-break-parent.png" alt="LP break parent LP step icon" title="LP break parent LP step icon"><br>LPBreakParentLP</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-merge-container.png" alt="Merge container ID step icon" title="Merge container ID step icon"><br>MergeContainerId</td>
+<td><img src="media/step-icons-mixed-lp-line.png" alt="Mixed license plate line number step icon" title="Mixed license plate line number step icon"><br>MixedLPLineNum</td>
+<td><img src="media/step-icons-outbound-weight.png" alt="Outbound weight step icon" title="Outbound weight step icon"><br>OutboundWeight</td>
+<td><img src="media/step-icons-owner.png" alt="Owner step icon" title="Owner step icon"><br>Owner</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-parent-lp.png" alt="Parent license plate step icon" title="Parent license plate step icon"><br>ParentLP</td>
+<td><img src="media/step-icons-please-confirm.png" alt="Please confirm step icon" title="Please confirm step icon"><br>PleaseConfirm</td>
+<td><img src="media/step-icons-po-line-num.png" alt="Purchase order line number step icon" title="Purchase order line number step icon"><br>POLineNum</td>
+<td><img src="media/step-icons-po-num.png" alt="Purchase order number step icon" title="Purchase order number step icon"><br>PONum</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-position-full.png" alt="Position full step icon" title="Position full step icon"><br>PositionFull</td>
+<td><img src="media/step-icons-potency.png" alt="Potency step icon" title="Potency step icon"><br>Potency</td>
+<td><img src="media/step-icons-printer-name.png" alt="Printer name step icon" title="Printer name step icon"><br>PrinterName</td>
+<td><img src="media/step-icons-prod-id.png" alt="Prod ID step icon" title="Prod ID step icon"><br>ProdId</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-product-confirm.png" alt="Product confirmation step icon" title="Product confirmation step icon"><br>ProductConfirmation</td>
+<td><img src="media/step-icons-put.png" alt="Put step icon" title="Put step icon"><br>Put</td>
+<td><img src="media/step-icons-putaway-cluster-id.png" alt="Putaway cluster ID step icon" title="Putaway cluster ID step icon"><br>PutawayClusterId</td>
+<td><img src="media/step-icons-qty.png" alt="Quantity step icon" title="Quantity step icon"><br>Qty</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-qty-adjust-in.png" alt="Quantity adjust in step icon" title="Quantity adjust in step icon"><br>QtyAdjustIn</td>
+<td><img src="media/step-icons-qty-short.png" alt="Quantity short step icon" title="Quantity short step icon"><br>QtyShort</td>
+<td><img src="media/step-icons-qty-to-consume.png" alt="Quantity to consume step icon" title="Quantity to consume step icon"><br>QtyToConsume</td>
+<td><img src="media/step-icons-qty-to-put.png" alt="Quantity to put step icon" title="Quantity to put step icon"><br>QtyToPut</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-qty-to-scrap.png" alt="Quantity to scrap step icon" title="Quantity to scrap step icon"><br>QtyToScrap</td>
+<td><img src="media/step-icons-qty-confirmation.png" alt="Quantity confirmation step icon" title="Quantity confirmation step icon"><br>QuantityConfirmation</td>
+<td><img src="media/step-icons-raf-end-job.png" alt="Report as finished end job step icon" title="Report as finished end job step icon"><br>RAFEndJob</td>
+<td><img src="media/step-icons-recv-loc-id.png" alt="Receive location ID step icon" title="Receive location ID step icon"><br>RecvLocationID</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-remove-container-id.png" alt="Remove container ID step icon" title="Remove container ID step icon"><br>RemoveContainerID</td>
+<td><img src="media/step-icons-rma-no.png" alt="RMA number step icon" title="RMA number step icon"><br>RMANum</td>
+<td><img src="media/step-icons-select-order.png" alt="Select order step icon" title="Select order step icon"><br>SelectOrder</td>
+<td><img src="media/step-icons-short-pick-reason.png" alt="Short pick reason step icon" title="Short pick reason step icon"><br>ShortPickReason</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-sort-position-id.png" alt="Sort position ID step icon" title="Sort position ID step icon"><br>SortPositionId</td>
+<td><img src="media/step-icons-target-lp-id.png" alt="Target license plate ID step icon" title="Target license plate ID step icon"><br>TargetLicensePlateId</td>
+<td><img src="media/step-icons-to-line-no.png" alt="To line number step icon" title="To line number step icon"><br>ToLineNum</td>
+<td><img src="media/step-icons-to-location.png" alt="To location step icon" title="To location step icon"><br>ToLocation</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-to-number.png" alt="To number step icon" title="To number step icon"><br>ToNum</td>
+<td><img src="media/step-icons-to-warehouse.png" alt="To warehouse step icon" title="To warehouse step icon"><br>ToWarehouse</td>
+<td><img src="media/step-icons-tranport-load-id.png" alt="Transport load ID step icon" title="Transport load ID step icon"><br>TransportLoadId</td>
+<td><img src="media/step-icons-vendor-batch-id.png" alt="Vendor batch ID step icon" title="Vendor batch ID step icon"><br>VendBatchId</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-wave-label-id.png" alt="Wave label ID step icon" title="Wave label ID step icon"><br>WaveLabelId</td>
+<td><img src="media/step-icons-wave-label-qty.png" alt="Wave label quantity step icon" title="Wave label quantity step icon"><br>WaveLblQty</td>
+<td><img src="media/step-icons-weight.png" alt="Weight step icon" title="Weight step icon"><br>Weight</td>
+<td><img src="media/step-icons-weight-to-consume.png" alt="Weight to consume step icon" title="Weight to consume step icon"><br>WeightToConsume</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-whs-adjustment-type.png" alt="WHS adjustment type step icon" title="WHS adjustment type step icon"><br>WHSAdjustmentType</td>
+<td><img src="media/step-icons-whs-receiving-exception.png" alt="WHS receiving exception step icon" title="WHS receiving exception step icon"><br>WHSReceivingException</td>
+<td><img src="media/step-icons-wms-location-id.png" alt="WMS location ID step icon" title="WMS location ID step icon"><br>WMSLocationID</td>
+<td><img src="media/step-icons-work-id.png" alt="Work ID step icon" title="Work ID step icon"><br>WorkId</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-work-id-to-cancel.png" alt="Work ID to cancel step icon" title="Work ID to cancel step icon"><br>WorkIdToCancel</td>
+<td><img src="media/step-icons-work-lp-id.png" alt="Work license plate ID step icon" title="Work license plate ID step icon"><br>WorkLicensePlateId</td>
+<td><img src="media/step-icons-work-lp-putaway-cluster.png" alt="Work license plate ID putaway cluster step icon" title="Work license plate ID putaway cluster step icon"><br>WorkLPIDPutawayCluster</td>
+<td><img src="media/step-icons-work-pool-id.png" alt="Work pool ID step icon" title="Work pool ID step icon"><br>WorkPoolID</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-zone-pool-id.png" alt="Zone ID step icon" title="Zone ID step icon"><br>ZoneID</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
-This example illustrates how to set up step titles and icons for a custom task flow. The scenario is built on a custom task flow example that is also presented and further explored in the blog post [Customizing the Warehousing Mobile App](https://cloudblogs.microsoft.com/dynamics365/it/2017/07/06/customizing-the-warehousing-mobile-app). The task flow works as follows:
+## <a name="example"></a>Example: Assign step icons and titles for a custom flow
 
-1. The app shows a screen asking the worker to provide a container ID (for example, by scanning a barcode).
-1. If the container ID is valid, the app opens a new screen, asking for the weight. (If the container ID isn't valid, the worker is returned to the first screen.)
-1. When the worker enters a valid weight, the system stores the weight and returns to the initial screen.
+This example explains how to set up step icons and titles for a custom task flow. The scenario is built on an example of a custom task flow that is presented and explored in more detail in the following blog post: [Customizing the Warehousing Mobile App](https://cloudblogs.microsoft.com/dynamics365/it/2017/07/06/customizing-the-warehousing-mobile-app). The task flow works in the following way:
 
-The following figure illustrates this task flow.
+1. The app shows a page that prompts the worker to provide a container ID (for example, by scanning a bar code).
+1. If the container ID is valid, the app opens a new page that prompts the worker for the weight. (If the container ID isn't valid, the worker is returned to the first page.)
+1. When the worker enters a valid weight, the system stores the weight and returns the worker to the first page.
+
+The following illustration shows this task flow.
 
 ![Task flow diagram](media/step-icons-example-task-flow.png "Task flow diagram")
 
-### Create a step class for the container input screen
+### Create a step class for the container input page
 
-The container input screen enables the worker to scan or enter a container ID.
+The container input page lets the worker scan or enter a container ID.
 
-![Container input screen](media/step-icons-example-container-input.png "Container input screen")
+![Container input page](media/step-icons-example-container-input.png "Container input page")
 
-On the container input screen, the control name of the input field is `ContainerId`, which is not in the [step ID list](#step-ids-classes), so you won't find an existing step based on this control name. Therefore, you must create a step class to present the step. The following code provides an example:
+On the container input page, the control name of the input field is `ContainerId`. Because this control name isn't in the [list of step IDs](#step-ids-classes), you won't find an existing step that is based on it. Therefore, you must create a step class that presents the step. Here is an example.
 
 ```xpp
 [WHSMobileAppStepId('ContainerId')]
@@ -228,33 +362,31 @@ final internal class WHSMobileAppStepContainerId extends WHSMobileAppStep
 {
     private const WHSMobileAppStepIcon PopulationIcon = 'InventBatchID';
     private const WHSMobileAppStepTitle InputNotFilledTitle = "@WAX:WHSMobileAppStepContainerID_InputNotFilled"; //Scan a container
-
     protected void initValues()
     {
         defaultStepIcon = PopulationIcon;
         defaultStepTitle = InputNotFilledTitle;
     }
-
 }
 ```
 
-The step icon identifier is stored in class member `defaultStepIcon` and step title is stored in class member `defaultStepTitle`.
+The identifier of the step icon is stored in the `defaultStepIcon` class member, and the step title is stored in the `defaultStepTitle` class member.
 
-To assign a step icon, set `defaultStepIcon` to one of the icon IDs listed in [Available step icons](#step-icons).
+To assign a step icon, set `defaultStepIcon` to one of the icon IDs that are listed in the [Available step icons](#step-icons) section earlier in this topic.
 
-### Use a standard or custom step title and icon for the weight input
+### Use a standard or custom step icon and title for the weight input
 
-The weight input screen enables the worker to enter a weight.
+The weight input page lets the worker enter a weight.
 
-![Weight input screen](media/step-icons-example-weight-input.png "Weight input screen")
+![Weight input page](media/step-icons-example-weight-input.png "Weight input page")
 
-On the weight input screen, the control name of the input field is `Weight` which is in the step ID list. So, if you can accept the step title and icon defined in class `WHSMobileAppStepWeight`, then you don't need to change anything this step.
+On the weight input page, the control name of the input field is `Weight`, which is in the [list of step IDs](#step-ids-classes). Therefore, if the step icon and title that are defined in the `WHSMobileAppStepWeight` class are acceptable to you, you don't have to change anything for this step.
 
-However, if you prefer to use a different title or icon for this step, you can do so by overriding either the `stepId()` or `stepInfo()` method in the builder class. Each task flow has its own step info builder.
+However, if you prefer to use a different icon or title for this step, you can override either the `stepId()` method or the `stepInfo()` method in the builder class. Each task flow has its own step info builder.
 
 #### Override the stepId() method
 
-The following code example shows one way to modify a builder class by overriding the `stepId()` method.
+The following example shows one way that you can modify a builder class by overriding the `stepId()` method.
 
 ```xpp
 [WHSWorkExecuteMode(WHSWorkExecuteMode:: WeighContainer)]
@@ -263,23 +395,20 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
     protected WHSMobileAppStepId stepId()
     {
         WHSMobileAppStepId stepIdLocal = super();
-
         if (stepIdLocal == 'Weight')
         {
             return 'NewWeight';
         }
-
         return stepIdLocal;
     }
-
 }
 ```
 
-Then create a step class for the `NewWeight` step, which should be similar to the `ContainerId` example provided previously.
+You then create a step class for the `NewWeight` step. The code should resemble the code for the `ContainerId` example that was shown earlier in this topic.
 
-#### Override method stepInfo()
+#### Override the stepInfo() method
 
-The following code example shows one way to modify a builder class by overriding the `stepInfo()` method.
+The following example shows one way that you can modify a builder class by overriding the `stepInfo()` method.
 
 ```xpp
 [WHSWorkExecuteMode(WHSWorkExecuteMode:: WeighContainer)]
@@ -291,17 +420,15 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
         {
             return super();
         }
-
         WHSMobileAppStepInfo stepInfo = WHSMobileAppStepInfo::construct();
         stepInfo.parmStepIcon('NewIcon');
         stepInfo.parmStepTitle('NewTitle');
         return stepInfo;
     }
-
 }
 ```
 
-Then construct a `WHSMobileAppStepInfo` object and set the icon and/or title directly.
+You then construct a `WHSMobileAppStepInfo` object, and set the icon and/or title directly.
 
 ## Additional resources
 
