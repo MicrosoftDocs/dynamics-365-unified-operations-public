@@ -38,12 +38,9 @@ ms.dyn365.ops.version: Platform update 37
 > [!IMPORTANT]
 > [KB 4615823](https://fix.lcs.dynamics.com/Issue/Details?kb=4615823&bugId=560394&dbType=3&qc=bdc60364311159f2509ed641a0d858a46b5c57effbae2ffe778cd41f2109f7e9) includes two important fixes that directly impact the priority-based throttling experience. 
 > 
-> The first fix ensures that 429 HTTP messages are sent when a throttling event occurs in your environment and that the events reflect the correct threshold calculations for your environment. 
+> This fix ensures that 429 HTTP messages are sent when a throttling event occurs in your environment and that the events reflect the correct threshold calculations for your environment. 
 >
-> The second fix is available as part of the quality update for 10.0.17. We recommend you install this version to ensure that your environment is ready for priority-based throttling.
-
-> [!Note]
-> Priority-based throttling is enabled by default starting in 10.0.19 (PU43). Please refer to the [FAQ document](throttling-faq.md) to learn about how you can ready your environment prior to updating to PU43. To test this capability, configure integration priorities on the **Throttling priority mapping** page.
+> The fix is available as part of the quality update for 10.0.17. We recommend you install this version to ensure that your environment is ready for priority-based throttling.
 
 Priority-based throttling introduces service protection settings that prevent the over-utilization of resources to preserve the system's responsiveness and ensure consistent availability and performance for environments running Finance and Operations apps.
 
