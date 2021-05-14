@@ -152,13 +152,13 @@ Electronic reporting can show execution time of configuration in the Infolog. Th
 
 #### <a name="trace-parser"></a>Trace parser traces 
 
-Electronic reporting is implemented in X++, so one can use common X++ tools for analyze performance. [See documentation](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/trace-trace-tutorial) for details.
+Electronic reporting is implemented in X++, so one can use common X++ tools for analyze performance. [See documentation](../perf-test/trace-trace-tutorial.md) for details.
 
 Limitations: 
 - Since part of ER is implemented in C# not all details will be available, but one can see data access details at least.
 - Long report runs can exceed trace storage limitations.
 
-#### <a name="electronic-reporting-traces></a>Electronic reporting traces
+#### <a name="electronic-reporting-traces"></a>Electronic reporting traces
 
 Electronic reporting can collect its own traces and have tools for visualization and analysis of them see 
  [Trace the execution of ER formats to troubleshoot performance issues](trace-execution-er-troubleshoot-perf.md) for details.
