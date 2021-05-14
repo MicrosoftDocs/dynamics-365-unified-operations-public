@@ -37,7 +37,7 @@ I created a custom financial journal office excel template, and it doesn't show 
 
 ## Resolution
 
-The default **Open in Excel** functionality uses the root data source (table) of the current page to determine which Office templates or data entities will display as an option under the **Open in Excel** menu. This is not an ideal experience for Financial journals, which share the same tables (LedgerJournalTable/LedgerJournalTrans) as the root data source for many different types of journals.  
+The default **Open in Excel** functionality uses the root data source (table) of the current page to determine which Office templates or data entities will display as an option under the **Open in Excel** menu. This behavior is not an ideal experience for Financial journals. Financial journals share the same tables (LedgerJournalTable/LedgerJournalTrans) as the root data source for many different types of journals.  
 
 The **Open Lines in Excel** feature for Financial journals is intended to show templates, which are designed for the journal you are currently working with the context of the General journal, Payment journal, and so on.  For example, if you create a template that is designed for use with a vendor payment journal, the template would be designed to enforce your primary account as a vendor account.  
 
