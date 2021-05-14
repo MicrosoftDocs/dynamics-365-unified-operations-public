@@ -195,18 +195,18 @@ The Join data source allows several connected records to be fetched using one qu
 
 #### <a name="filter"></a>Use FILTER instead of WHERE
 
-The [FILTER](er-functions-list-filter.md) function executes conditions on SQL server, while WHERE functions fetches all data from list one-by-one and apply condition for each. If you select 1 record from 1000 using WHERE - all records will be fetched. If you select using FILTER - exactly this one will be fetched. Also, FILTER can use indexes on database side.
+The [FILTER](er-functions-list-filter.md) function executes conditions on SQL server, while the WHERE function fetches all data from the list one-by-one and applies the condition for each. If you select one record from 1000 using WHERE, all records will be fetched. If you select using FILTER, exactly one will be fetched. Also, FILTER can use indexes on the database side.
 
-#### <a name="collected-data"></a>Using collected data functions / accumulated data datasource
+#### <a name="collected-data"></a>Using collected data functions/accumulated data datasource
 
-If your configuration has a group by component that summarizes data already fetched by report, it will fetch all the data once again. Using collected data functions can let ER accumulate data during the first fetch. See also [documentation](tasks/er-format-counting-summing-2.md) for details and examples.
+If your configuration has a group by component that summarizes data already fetched by report, the component will fetch all the data again. Using collected data functions can let ER accumulate data during the first fetch. For more information, see [ER Configure format to do counting and summing](tasks/er-format-counting-summing-2.md).
 
-#### Rewrite portions of configuration in X++
+#### Rewrite portions of the configuration in X++
 
-ER supports calling methods of tables, classes including extensions. You can consider rewriting parts of model mapping in X++ to get better performance.
+ER supports calling methods of tables and classes, including extensions. Consider rewriting parts of the model mapping in X++ to get better performance.
 
 Electronic Reporting can consume data from:
-  - Classes ("object" and "class" data sources)
-  - Tables ("table" and "table records") datasource
+  - Classes (**object** and **class** data sources)
+  - Tables (**table** and **table records**) datasource
 
-[ER API](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) also provides a way to send a precalculated data from the calling code. Application suite contains numerous examples of this approach.
+[ER API](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) also provides a way to send precalculated data from the calling code. The application suite contains numerous examples of this approach.
