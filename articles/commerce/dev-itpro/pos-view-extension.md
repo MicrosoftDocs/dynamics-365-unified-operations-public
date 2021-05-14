@@ -92,9 +92,9 @@ The following table shows the POS views that currently support extensions. It al
 
 ## Custom filter extension
 
-Custom filter extensions are supported in **Show journal view**, **Search order view** and **FulfillmentLine view**. **Search order views** also supports setting default parameters for search in the user interface (UI) using extension. For example, if you want to add default store search parameter you can do that by using extension and showing that in the UI. 
+Custom filter extensions are supported in **Show journal view**, **Search order view**, and **FulfillmentLine view**. **Search order views** also supports setting default parameters for search in the user interface (UI) using extensions. For example, if you want to add a default store search parameter you can do that by using an extension and showing that in the UI. 
 
-Sample code for custom filter extension are available in Retail SDK (...\RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SearchOrders\SampleOrderSearchTextFilter.ts).
+Sample code for custom filter extensions are available in the Retail SDK (...\RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SearchOrders\SampleOrderSearchTextFilter.ts).
 
 ## Add a custom column and an app bar button
 
