@@ -484,6 +484,8 @@
         href: accounts-receivable/process-collection-letters-example.md
       - name: Set up and generate accounts receivable aging information
         href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+      - name: Customer aging snapshot
+        href: accounts-receivable/customer-aging-snapshot.md
       - name: Customer aging report
         href: accounts-receivable/customer-aging.md
       - name: Create a write-off journal for a customer
@@ -1152,6 +1154,8 @@
         items: 
         - name: Change the accounting or reporting currency
           href: general-ledger/add-change-acctg-rprtg-crrncy.md
+        - name: Change or reassign a ledger calendar
+          href: general-ledger/change-mdfy-clndr-to-ledger.md
         - name: Reverse settings on journals and lines
           href: general-ledger/rvrs-settgs-on-jrnls-lines.md
         - name: Year-end close missing opening balances
