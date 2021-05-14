@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/data-integration-cds.md",
+      "redirect_url": "dual-write/dual-write-home-page",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/supply-chain/asset-management/setup-for-maintenance-requests/requests.md",
       "redirect_url": "../manage-maintenance-requests/maintenance-request-overview",
       "redirect_document_id": "false"
