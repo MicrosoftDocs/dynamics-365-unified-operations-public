@@ -162,7 +162,20 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
     | Supported tender types | Other payment connectors may support multiple tender types. For PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
     | Supported payment method variants | Other payment connectors may return multiple payment method variants. For PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
     | Environment | This field is used to specify whether transactions should be sent to Sandbox or Live environments. | Yes | Yes | *Sandbox* or *Live* |
-    
+
+### Set up the PayPal payment method for the online store
+
+1. In the online store where the PayPal Payment Connector has been configured, select the **Setup** tab, then select **Payment methods**.
+2. Click **New** to add a new payment method.
+3. In **Payment method**, select the PayPal payment method created earlier. 
+4. In **Operation name** , select **Pay card**.
+5. In **Connector name**, select **Dynamics 365 Payment Connector for PayPal**.
+6. Use the **Posting** fasttab to specify posting details.
+7. Next, click **Electronic payment setup**, then click **New** and in the **ID** field select the card type previously created for PayPal. 
+8. Click **Save** and close the **Electronic payment types** and **Online stores** forms. 
+9. 
+
+
 > [!NOTE]
 > When testing payments in a Sandbox environment, the **Environment** field should never be set to live and live environment. **Merchant client ID** and **Merchant API key**s must never be used. Sandbox environments are for Sandbox testing only.
 
