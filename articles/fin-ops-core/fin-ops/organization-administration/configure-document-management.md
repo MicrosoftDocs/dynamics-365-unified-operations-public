@@ -233,6 +233,21 @@ The following example of the **ScanDocuments** class shows boilerplate code for 
     }
 ```
 
+## [Developer] Specifying valid content types when attaching documents programmatically
+
+The following APIs from the **DocumentManagement** class allow developers to specify the file content type (MIME type) of the file being attached. 
+-  attachFileToCommon()
+-  attachFile()
+-  attachFileToDocuRef()
+
+If this file content type is not specified correctly, the attached document may not behave as expected. For this reason, any usages of these APIs should consider one of the following courses of action:  
+
+1.  Pass **null** for the `_fileContentType` parameter in any of the aforementioned APIs. Doing so allows the correct content type to be inferred from the file name. 
+2.  Switch to using one of the following methods that doesn't include a `_fileContentType` parameter to avoid the possibility of passing incorrect file content types.
+    -  **attachFileForRecord()**, which replaces attachFileToCommon()
+    -  **attachFileForReference()**, which replaces attachFile()
+    -  **attachFileForDocuRefRecord()**, which replaces attachFileToDocuRef()
+
 ## Frequently asked questions
 
 ### What is the difference between document handling and document management?
