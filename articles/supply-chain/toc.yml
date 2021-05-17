@@ -3373,6 +3373,8 @@
         items:
         - name: Directly derived firmed orders are processed by an in-review workflow
           href: troubleshooting/planning/firmed-directly-deri.md
+        - name: You can't filter master planning items by their related coverage group values
+          href: troubleshooting/planning/master-planning-batc.md
         - name: Master planning generates planned orders for phantom products
           href: troubleshooting/planning/planned-orders-are-g.md
         - name: Planned purchase order created when a purchase exists within negative days
@@ -3381,6 +3383,8 @@
           href: troubleshooting/planning/unable-to-upload-the.md
         - name: Can't remove the warehouse demand forecast dimension from forecast lines
           href: troubleshooting/planning/warehouse-removal-fr.md
+        - name: You're prompted to save item coverage settings even though you made no changes
+          href: troubleshooting/planning/when-importing-to-th.md
       - name: Procurement
         items:
         - name: Can't invoice a customer-facing sales order in the VEL company
