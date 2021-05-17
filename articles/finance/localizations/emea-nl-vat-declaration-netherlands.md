@@ -442,7 +442,7 @@ steps:
 </tbody>
 </table>
 
-#### [Application-parameters](/media/App-parameters-VAT-XML-1.png)
+![Application-parameters](media/App-parameters-VAT-XML-1.png)
 
 
 
