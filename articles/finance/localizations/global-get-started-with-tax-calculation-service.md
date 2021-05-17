@@ -4,7 +4,7 @@
 title: Get started with Tax Calculation
 description: This topic explains how to set up Tax Calculation.
 author: wangchen
-ms.date: 04/12/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,7 +46,7 @@ The setup consists of four main steps:
 
 Before you can complete the procedures in this topic, the following prerequisites must be in place:
 
-- You have access to your LCS account, and you've deployed an LCS project with a Tier 2 (or above) environment that runs Dynamics 365 version 10.0.18 with KB4616360 or later.
+- You have access to your LCS account, and you've deployed an LCS project with a Tier 2 (or above) environment that runs Dynamics 365 version 10.0.18 with [KB4616360](https://fix.lcs.dynamics.com/Issue/Details?kb=4616360&bugId=568738&dbType=3&qc=1f1c04ff39adad74ef871f539e8d73e14c1893ef7cc4b6e3f7d5c5864ec2781a), or later.
 - You have access to your RCS account.
 - You've contacted Microsoft to enable the flighting in your deployed Finance or Supply Chain Management environment.
 
