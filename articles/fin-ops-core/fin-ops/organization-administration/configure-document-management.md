@@ -4,7 +4,7 @@
 title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-ms.date: 04/15/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -232,6 +232,21 @@ The following example of the **ScanDocuments** class shows boilerplate code for 
 
     }
 ```
+
+## [Developer] Specifying valid content types when attaching documents programmatically
+
+The following APIs from the `DocumentManagement` class allow developers to specify the file content type (MIME type) of the file being attached. 
+-  attachFileToCommon()
+-  attachFile()
+-  attachFileToDocuRef()
+
+If this file content type is not specified correctly, the attached document may not behave as expected. For this reason, if you use these APIs you should consider one of the following courses of action:  
+
+-  Pass **null** for the `_fileContentType` parameter in any of the preceeding APIs. Doing so allows the correct content type to be inferred from the file name. 
+-  Switch to using one of the following methods that doesn't include a `_fileContentType` parameter. This is to avoid the possibility of passing incorrect file content types.
+    -  **attachFileForRecord()**, which replaces attachFileToCommon()
+    -  **attachFileForReference()**, which replaces attachFile()
+    -  **attachFileForDocuRefRecord()**, which replaces attachFileToDocuRef()
 
 ## Frequently asked questions
 
