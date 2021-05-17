@@ -4,7 +4,7 @@
 title: Saved views
 description: This topic describes how to use the saved views features.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -143,7 +143,8 @@ To publish a view, follow these steps:
 
     > [!NOTE]
     > Be aware of the following expectations when you publish a view to a legal entity.
-    > - If you publish a view to a legal entity, but you don't publish it as the default view, users will initially see the view in the view selector only for the specified legal entities. However, after the view is loaded for the first time, it will always be in the user's view selector for that page, regardless of the legal entity.
+    > 
+    > If you publish a view to a legal entity, but you don't publish it as the default view, users will initially see the view in the view selector only for the specified legal entities. However, after the view is loaded for the first time, it will always be in the user's view selector for that page, regardless of the legal entity.
 
 11. Select **Publish**.
 
