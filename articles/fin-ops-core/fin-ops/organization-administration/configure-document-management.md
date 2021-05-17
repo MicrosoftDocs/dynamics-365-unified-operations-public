@@ -235,7 +235,7 @@ The following example of the **ScanDocuments** class shows boilerplate code for 
 
 ## [Developer] Specifying valid content types when attaching documents programmatically
 
-The following APIs from the **DocumentManagement** class allow developers to specify the file content type (MIME type) of the file being attached. 
+The following APIs from the `DocumentManagement` class allow developers to specify the file content type (MIME type) of the file being attached. 
 -  attachFileToCommon()
 -  attachFile()
 -  attachFileToDocuRef()
