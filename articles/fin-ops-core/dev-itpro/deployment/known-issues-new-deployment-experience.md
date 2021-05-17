@@ -4,7 +4,6 @@
 title: Known issues with self-service deployment
 description: This topic lists known issues that you might experience when using self-service deployment.
 author: rashmansur
-manager: AnnBe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: 

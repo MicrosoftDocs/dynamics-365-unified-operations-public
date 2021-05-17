@@ -3,11 +3,9 @@
 title: Dynamics 365 Commerce and Microsoft Teams integration FAQ
 description: This topic provides answers to frequently asked questions regarding Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 # optional metadata
 # ms.search.form:  

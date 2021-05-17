@@ -7,7 +7,6 @@ author: roschlom
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

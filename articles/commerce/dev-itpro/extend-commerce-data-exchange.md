@@ -68,7 +68,7 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
 
 11. In the code editor, add the following code. 
 
-    ```C#
+    ```X++
     [ExtensionOf(classStr(RetailTransactionServiceEx))]
     final class ContosoRetailTransactionServiceSample
     {
@@ -77,27 +77,27 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
 
 12. Inside the class, add a new method to do your custom logic. This is the method that you will call from CRT to do the custom logic.
 
-    ```C#
+    ```X++
     [ExtensionOf(classStr(RetailTransactionServiceEx))]
-    final class ContosoRetailTransactionServiceSample
+    final class ContosoRetailTransactionServiceSample_Extension
     {
         public static container SerialCheck(str _serialNum)
         {
             boolean success = false;
             str errorMessage;
             int fromLine;
-
-            ttsbegin;
-
+            
             try
             {
                 if (_serialNum)
                 {
-                    // check whether the serial number exists
+                     ttsbegin;
+                   // check whether the serial number exists
 
                     // Add your custom logic
 
                     errorMessage = "Serial number found";
+                    ttscommit;
                 }
                 else
                 {
@@ -108,10 +108,9 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
             }
             catch (Exception::Error)
             {
+                ttsAbort;
                 error = RetailTransactionServiceUtilities::getInfologMessages(fromLine);
             }
-
-            ttscommit;
 
             // Return sanitized error code.
             errorMessage = RetailTransactionServiceUtilities::getErrorCode(errorMessage);

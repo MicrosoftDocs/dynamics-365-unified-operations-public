@@ -7,7 +7,6 @@ author: marcelbf
 ms.date: 04/19/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-human-resources
 ms.technology:
 
 # optional metadata

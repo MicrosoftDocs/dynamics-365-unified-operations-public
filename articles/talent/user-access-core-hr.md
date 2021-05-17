@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Talent
 
 **Issue**
 
-User B can access Human Resources, but can't access the Talent: Attract or Talent: Onboard app. When the user tries to go to **Experience apps**, he or she is taken to a trial environment instead.
+User B can access Human Resources, but can't access the Talent: Attract or Talent: Onboard app. When the user tries to go to **Experience apps**, they are taken to a trial environment instead.
 
 **Solution**
 

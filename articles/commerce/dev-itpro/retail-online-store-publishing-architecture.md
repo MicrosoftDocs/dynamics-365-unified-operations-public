@@ -50,7 +50,7 @@ After you've completed these steps, you're ready to publish the product schema t
 5. The Commerce publishing job runs from the CRT application programming interface (API) and creates hierarchies for the site that you created in the online store.
 6. Commerce Data Exchange: Real-time Service receives the status of the publishing job actions from the CRT API and publishes that status. The status is either **Published** or **Error**.
 
-For the specific procedures to publish a channel, see [Set up an online store](https://msdn.microsoft.com/jj682095). After you've published the channel, you can publish a catalog.
+For the specific procedures to publish a channel, see [Set up an online store](/dynamicsax-2012/appuser-itpro/set-up-an-online-store). After you've published the channel, you can publish a catalog.
 
 ## Publish an online store catalog
 

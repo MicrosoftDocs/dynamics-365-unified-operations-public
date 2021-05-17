@@ -78,8 +78,6 @@
             href: get-started/whats-new-changed-10-0-18.md
           - name: Finance 10.0.17 (April 2021)
             href: get-started/whats-new-changed-10-0-17.md
-          - name: Finance 10.0.16 (February 2021)
-            href: get-started/whats-new-changed-10-0-16.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -486,6 +484,8 @@
         href: accounts-receivable/process-collection-letters-example.md
       - name: Set up and generate accounts receivable aging information
         href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+      - name: Customer aging snapshot
+        href: accounts-receivable/customer-aging-snapshot.md
       - name: Customer aging report
         href: accounts-receivable/customer-aging.md
       - name: Create a write-off journal for a customer
@@ -514,6 +514,8 @@
         href: budgeting/budget-planning-justification-docs.md
       - name: Create a budget from transaction accounts and total accounts
         href: budgeting/create-budget-transaction-accounts-total-accounts.md
+      - name: Budget plan narrative
+        href: budgeting/budget-narrative.md
       - name: Budget planning templates for Excel
         href: budgeting/budget-planning-excel-templates.md
       - name: Extend the budget planning layout
@@ -1148,6 +1150,16 @@
           href: general-ledger/audit-policy-violations-cases.md
         - name: Define audit policies for source documents
           href: general-ledger/tasks/define-audit-policies-source-documents.md 
+      - name: Troubleshooting
+        items: 
+        - name: Change the accounting or reporting currency
+          href: general-ledger/add-change-acctg-rprtg-crrncy.md
+        - name: Change or reassign a ledger calendar
+          href: general-ledger/change-mdfy-clndr-to-ledger.md
+        - name: Reverse settings on journals and lines
+          href: general-ledger/rvrs-settgs-on-jrnls-lines.md
+        - name: Year-end close missing opening balances
+          href: general-ledger/yec-mssng-open-blnces.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
@@ -1791,7 +1803,9 @@
         - name: User operation log by China working rule
           href: localizations/tasks/user-operation-log-china-working-rule.md
         - name: VAT customer invoices FAQ
-          href: localizations/apac-chn-tax-integration-vat-customer-invoices.md         
+          href: localizations/apac-chn-tax-integration-vat-customer-invoices.md   
+        - name: GB/T 24589-2010 export
+          href: localizations/apac-chn-gbt-24589-2010.md
       - name: The Czech Republic
         items:
         - name: The Czech Republic
@@ -2048,8 +2062,18 @@
           href: localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
         - name: Chronological invoices vouchers
           href: localizations/emea-fra-chronological-invoices-vouchers.md
-        - name: Create Standard Audit File for France (FEC)
-          href: localizations/emea-fra-fec-audit-file.md
+        - name: Audit file for France
+          items: 
+          - name: Audit file for France (FEC) overview
+            href: localizations/emea-fra-fec-audit-file.md
+          - name: Prerequisites for generating an FEC audit file in France
+            href: localizations/emea-fra-fec-audit-file-pre-requisites.md
+          - name: Structure of Finance data sources for the FEC
+            href: localizations/emea-fra-fec-audit-file-structure.md
+          - name: Prepare your environment to generate an FEC
+            href: localizations/emea-fra-fec-audit-file-setup.md
+          - name: Generate an FEC in Dynamics 365 Finance
+            href: localizations/emea-fra-fec-audit-file-generation.md
         - name: Customer and vendor account statements
           href: localizations/tasks/fr-00002-customer-vendor-account-statements.md
         - name: Daily interest calculation for late payment and lump sum in the invoice and collection letter
@@ -2402,6 +2426,84 @@
             href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
           - name: Transfer of capital items to the fixed asset
             href: localizations/tasks/apac-ind-transfer-capital-items.md
+        - name: India TDS
+          items: 
+          - name: Indian Tax Deducted at Source (TDS) overview
+            href: localizations/apac-ind-TDS-India-TDS-overview.md
+          - name: Basic setup for TDS
+            items:           
+            - name: Set the TDS parameters
+              href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+            - name: Set up TDS ledger accounts
+              href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+            - name: Set up TDS registration numbers for legal entities
+              href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+            - name: Set up withholding tax authorities for the TDS tax type
+              href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+            - name: Set up tax components for the TDS tax type
+              href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+            - name: Set up withholding tax codes for the TDS tax type
+              href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+            - name: Set up withholding tax settlement periods for the TDS tax type
+              href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+            - name: Set up withholding tax reporting codes for the TDS tax type
+              href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+            - name: Set up withholding tax codes for the TDS tax type
+              href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md  
+            - name: Attach TDS tax codes to TDS tax groups and define the formula for calculating TDS
+              href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+            - name: Record TDS concession certificate numbers
+              href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+            - name: Set TDS parameters in Accounts payable and Accounts receivable
+              href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+            - name: Set up payment schedules with TDS allocation
+              href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+            - name: Set up payment fees for TDS authority payments
+              href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+            - name: TDS group, PAN, and TAN information setup for vendors and customers
+              href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+          - name: Formula designer and threshold limit for TDS calculation
+            items:
+            - name: Formula designer for TDS calculations
+              href: localizations/apac-ind-TDS-Formula-designer.md
+            - name: Threshold limit and exception threshold limit
+              href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md 
+          - name: TDS calculation on invoices
+            items:
+            - name: TDS calculation on invoices
+              href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+            - name: Calculate TDS on invoices using journals
+              href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
+            - name: Calculate TDS invoices using purchase order form and sales order form
+              href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
+            - name: TDS calculation on invoices from the Free text invoice page
+              href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
+            - name: Split invoice functionality
+              href: localizations/apac-ind-TDS-Split-invoice-functionality.md
+          - name: TDS calculation on payments and promissory notes
+            href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+          - name: TDS calculation on intercompany transactions
+            href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+          - name: TDS settlement process  
+            items:
+            - name: TDS calculation on payments and promissory notes
+              href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+            - name: TDS calculation on intercompany transactions
+              href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+            - name: TDS settlement process
+              items: 
+              - name: Run the periodic TDS settlement process
+                href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
+              - name: Settle TDS payments to TDS authority vendors and generate TDS challan
+                href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
+              - name: View posted TDS payments and transactions for a TDS settlement period
+                href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
+            - name: Record and update TDS certificate numbers and dates
+              items:
+              - name: Record TDS recoverable certificate numbers
+                href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
+              - name: Update certificate numbers and dates for TDS transactions
+                href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
       - name: Italy
         items:
         - name: Italy overview

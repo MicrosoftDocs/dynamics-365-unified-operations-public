@@ -2,7 +2,7 @@
 # required metadata
 
 title: Client disconnects
-description: This article explains what to do if the customer is disconnected from his or her environment and doesn't know why.
+description: This article explains what to do if the customer is disconnected from the environment and doesn't know why.
 author: andreabichsel
 ms.date: 02/03/2020
 ms.topic: article
@@ -38,7 +38,7 @@ This issue can occur in all environments.
  
 **Symptom** 
 
-The customer is disconnected from his or her environment and doesn't know why. The customer receives one of the following error messages:
+The customer is disconnected from the environment and doesn't know why. The customer receives one of the following error messages:
 
 - We've lost your connection. Click Close to continue working.
 - It appears you lost network connectivity, click Retry to try again.
