@@ -46,7 +46,7 @@ The setup consists of four main steps:
 
 Before you can complete the procedures in this topic, the following prerequisites must be in place:
 
-- You have access to your LCS account, and you've deployed an LCS project with a Tier 2 (or above) environment that runs Dynamics 365 version 10.0.18 or later.
+- You have access to your LCS account, and you've deployed an LCS project with a Tier 2 (or above) environment that runs Dynamics 365 version 10.0.18 with KB4616360 or later.
 - You have access to your RCS account.
 - You've contacted Microsoft to enable the flighting in your deployed Finance or Supply Chain Management environment.
 
