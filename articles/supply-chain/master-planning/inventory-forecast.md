@@ -103,12 +103,12 @@ The page contains the following fields:
 | **Method** | The method of allocating the forecast transaction. Select one of the following options:    **None**  (no allocation takes place); **Period** (use this method to forecast the same quantity per period. When you select this option, you use it along with the  **Per**  field where you specify a quantity, and the  **Unit**  field, where you select the unit of time); **Key** (the forecast is allocated according to the period allocation key that you specify in the  **Period key**  field. You can use this method when you want to take seasonal variation into account).|
 | **Per** | Enter the number of time intervals that the forecast extends into the future. This field is enabled when you select  **Period**  in the  **Method**  field. For example, if you select **Period** in the **Method** field, enter 1 in the  **Per**  field, and select **Months** in the **Unit** field, while specifying an ending date in the  **End** field that extends one year into the future, the program will create one forecast line for each month of the coming year, based on the item and quantity stated in the header line. |
 | **Unit** | The unit of time interval. Select one of the following options: **Days**, **Months**, **Years** - allocation corresponds to the number of days/months/years respectively that you specify in the  **Per**  field.|
-| **Period key** | The period allocation key for allocating the forecast. See also [Budget planning data allocation](https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/budget-planning-data-allocation). |
+| **Period key** | The period allocation key for allocating the forecast. See also [Budget planning data allocation](articles\finance\budgeting\budget-planning-data-allocation.md). |
 | **End** | The ending date when you use the  **Per**  and  **Unit**  fields. |
 | **Report** | Select the check box to include the transaction in reporting. |
 | **Comments** | Enter any comments that pertain to the forecast transaction. |
 | **Active** | Select the check box to include the transaction in budget reporting. This field cannot be modified for reporting transactions. |
-| **Include in cash flow forecasts** | Select the check box to allocate the forecast transaction to the general ledger. This field cannot be modified for reporting transactions. See also [Cash flow forecasting](https://docs.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-flow-forecasting). |
+| **Include in cash flow forecasts** | Select the check box to allocate the forecast transaction to the general ledger. This field cannot be modified for reporting transactions. See also [Cash flow forecasting](articles\finance\cash-bank-management\cash-flow-forecasting.md). |
 | **Sales tax group** | The tax group that is used to specify tax for the forecast transaction. |
 | **Item sales tax group** | The item tax group that is used to specify tax for the forecast transaction. |
 | **Price unit** | The number of sales units for which the sales price applies. The number is retrieved automatically from the items table, but you can modify it. |
@@ -178,7 +178,7 @@ The following table lists additional paths that you can use to access the **Supp
 | Vendors | **Master planning > Forecasting > Manual forecast entry > Vendors**. Select a vendor, and then select  **Entry** to open the  **Supply forecast lines**  page. |
 | Vendor groups | **Master planning > Forecasting > Manual forecast entry > Vendor groups**. Select a vendor group, and then select  **Entry** to open the  **Supply forecast lines**  page. |
 
-Additional resources
+## Additional resources
 --------
 
 [Demand forecasting overview](introduction-demand-forecasting.md)
