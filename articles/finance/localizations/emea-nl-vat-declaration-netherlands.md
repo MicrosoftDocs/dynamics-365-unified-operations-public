@@ -8,7 +8,7 @@ Additionally, in the application-specific parameters of the VAT declaration
 electronic reporting format, you must associate sales tax codes with the lookup
 result of the lookup for the VAT declaration boxes. For more information about
 how to set up application-specific parameters, see  [Set up application
-parameters for declaration fields](#section) later in this topic.
+parameters for declaration fields](#Set-up-application-specific-parameters-for-VAT-declaration-fields) later in this topic.
 
 In the following table, the **Lookup result** column shows the lookup result
 that is preconfigured for a specific VAT declaration row in the VAT declaration
@@ -463,7 +463,7 @@ To set up XSD schema and namespaces, follow these steps:
 
 
 For information about how to get these values from official documentation, see
-the **How-to get XSD schema and namespaces for the Dutch taxonomy** (add link)
+the ![How-to get XSD schema and namespaces for the Dutch taxonomy](/localizations/emea-nl-eu-sales-list.md/#Get-XSD-schema-and-namespaces-for-the-Dutch-taxonomy)
 
 > **Note**! If you don’t set up transmission of VAT declaration to Digipoort, you
 > can configure any value in the lookup result.
