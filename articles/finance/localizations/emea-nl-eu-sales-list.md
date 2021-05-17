@@ -1,4 +1,4 @@
-﻿\# EU sales list for Netherlands
+# EU sales list for Netherlands
 
 ## Overview
 
@@ -66,7 +66,7 @@ To set up EU sales list reporting formats, follow these steps:
     countries/regions** FastTab, on the NLD country/region line, select the ER
     format **EU sales list (NL)** that you imported.
 
-![Foreign trade parameters](media/200d33507c66edbee0c7171dfaa05e9e.png)
+![Foreign trade parameters](media/Foreign-trade-parameters-pic1.png)
 
 ## Set up electronic transmission of tax declarations to Digipoort
 
@@ -101,10 +101,10 @@ To set up Azure Key Vault for certificate storage, follow these steps:
 -   **Key Vault secret key**: Enter a secret key that is associated with the
     Azure AD application that's used for authentication to Key Vault storage.
 
-1.  On the **Secrets** FastTab, select **Add**, and create lines for Key Vault
+6.  On the **Secrets** FastTab, select **Add**, and create lines for Key Vault
     secrets for the Digipoort server and client certificates.
 
-![Key vault parameters](media/c6c7d08af5c0b4a3a394f07c1630915e.png)
+![Key vault parameters](media/Key-vault-parameters-pic2.png)
 
 For more information about how to set up Key Vault parameters, see [Set up the
 Azure Key Vault
@@ -122,7 +122,7 @@ registrations](https://docs.microsoft.com/en-us/dynamics365/finance/localization
 go to **Tax** \&gt; **Setup** \&gt; **Foreign trade \&gt; Dutch electronic tax
 declaration parameters**.
 
-1.  On the **System** tab, set the following fields:
+2.  On the **System** tab, set the following fields:
 
 -   **Digipoort Delivery URL**: Enter the destination URL for the Digipoort
     service. For example,
@@ -141,7 +141,7 @@ declaration parameters**.
 -   **Client Certificate**: Select the line that you created for the Key Vault
     secret for the Digipoort client certificate.
 
-![Electronic tax declaration parameters](media/f944d823879dc55ea6af3d7d3c0a3f0f.png)
+![Electronic tax declaration parameters](media/Electronic-tax-declaration-parameters-pic3.png)
 
 ## Set up the Dutch EU sales list transmission to Digipoort
 
@@ -162,19 +162,19 @@ registrations](https://docs.microsoft.com/en-us/dynamics365/finance/localization
 go to **Tax** \&gt; **Setup** \&gt; **Foreign trade \&gt; Dutch electronic tax
 declaration parameters**.
 
-1.  On the **General** tab, in the **ICP contact type** field, select
+2.  On the **General** tab, in the **ICP contact type** field, select
     **Taxpayer** or **Agent**.
 
-2.  Select information in the **Contact ID, Name, Contact initials**, **Contact
+3.  Select information in the **Contact ID, Name, Contact initials**, **Contact
     prefix**, and **Telephone** fields.
 
-3.  Set the **Company part of fiscal group** option to **Yes** if this setting
+4.  Set the **Company part of fiscal group** option to **Yes** if this setting
     is appropriate, and then, in the **Fiscal group** field, select the tax
     exempt number of the fiscal group.
 
-![Electronic tax declaration parameters 2](media/ae4c5f6bc809e94afa4e80943e3a3d57.png)
+![Electronic tax declaration parameters 2](media/Electronic-tax-declaration-parameters-pic4.png)
 
-1.  On the **Number sequences** tab, in the **Number sequence code** field,
+5.  On the **Number sequences** tab, in the **Number sequence code** field,
     select a number sequence code for the **Electronic ICP declaration ID** and
     **Error ID** references.
 
@@ -190,7 +190,7 @@ To transfer transactions and preview files, follow these steps:
 
 2.  Mark any corrected lines as **Corrected**.
 
-![EU sales list](media/a69f95e5892850b5aead321c7d6afa1f.png)
+![EU sales list](media/EU-sales-list-pic5.png)
 
 For more information about how to work with the EU sales list journal, see [EU
 Sales list reporting - Finance \| Dynamics 365 \| Microsoft
