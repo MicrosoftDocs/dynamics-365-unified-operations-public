@@ -465,8 +465,8 @@ To set up XSD schema and namespaces, follow these steps:
 For information about how to get these values from official documentation, see
 the **How-to get XSD schema and namespaces for the Dutch taxonomy** (add link)
 
-**Note**! If you don’t set up transmission of VAT declaration to Digipoort, you
-can configure any value in the lookup result.
+> **Note**! If you don’t set up transmission of VAT declaration to Digipoort, you
+> can configure any value in the lookup result.
 
 3.  In the **State** field, select **Completed**.
 
