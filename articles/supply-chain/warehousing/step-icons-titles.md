@@ -2,14 +2,14 @@
 title: Assign step icons and titles for the Warehouse Management mobile app
 description: This topic describes how to assign step icons and titles for new or customized task flows for the Warehouse Management mobile app.
 author: MarkusFogelberg
-ms.date: 05/06/2021
+ms.date: 05/17/2021
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mafoge
-ms.search.validFrom: 2021-05-06
+ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
 ---
 
@@ -40,134 +40,134 @@ The following table lists every step ID that is currently available, and its cor
 
 For an example that shows how these step IDs and classes are used, see the implementation of the `WHSMobileAppStepInfoBuilder.stepId()` method in the [Example: Assign step icons and titles for a custom flow](#example) section later in this topic.
 
-| Step ID                                        | Step class                                    |
-|------------------------------------------------|-----------------------------------------------|
-| MobileDeviceQueueMessageCollectionIdentifierId | WHSMobileAppStepSelectOrder                   |
-| InventBatchId                                  | WHSMobileAppStepBatch                         |
-| BatchDisposition                               | WHSMobileAppStepBatchDisposition              |
-| Carrier                                        | WHSMobileAppStepCarrier                       |
-| CatchWeight                                    | WHSMobileAppStepCatchWeight                   |
-| NewCaptureWeight                               | WHSMobileAppStepCatchWeight                   |
-| OutboundWeight                                 | WHSMobileAppStepCatchWeight                   |
-| CatchWeightQtyOutboundWeight                   | WHSMobileAppStepCatchWeight                   |
-| CatchWeightTag                                 | WHSMobileAppStepCatchWeightTag                |
-| OutboundCatchWeightTag                         | WHSMobileAppStepCatchWeightTag                |
-| CatchWeightTagWeight                           | WHSMobileAppStepCatchWeightTagWeight          |
-| ChangeWarehouseSuccess                         | WHSMobileAppStepChangeWarehouseSuccess        |
-| CheckDigit                                     | WHSMobileAppStepCheckDigit                    |
-| ClusterId                                      | WHSMobileAppStepClusterId                     |
-| ClusterPosition                                | WHSMobileAppStepClusterPosition               |
-| ConfigId                                       | WHSMobileAppStepConfigId                      |
-| Confirmation                                   | WHSMobileAppStepConfirmation                  |
-| ConsolidateFromLicensePlateId                  | WHSMobileAppStepConsolidateFromLicensePlateId |
-| ConsolidateLPConfirmation                      | WHSMobileAppStepConsolidateLPConfirmation     |
-| ConsolidateToLicensePlateId                    | WHSMobileAppStepConsolidateToLicensePlateId   |
-| ContainerType                                  | WHSMobileAppStepContainerType                 |
-| CountingReasonCode                             | WHSMobileAppStepCountingReasonCode            |
-| CycleCountingAddLPOrFinish                     | WHSMobileAppStepCycleCountingAddLPOrFinish    |
-| CycleCountQty1                                 | WHSMobileAppStepCycleCountQty                 |
-| CycleCountQty2                                 | WHSMobileAppStepCycleCountQty                 |
-| CycleCountQty3                                 | WHSMobileAppStepCycleCountQty                 |
-| CycleCountQty4                                 | WHSMobileAppStepCycleCountQty                 |
-| Disposition                                    | WHSMobileAppStepDisposition                   |
-| DriverCheckInConfirmation                      | WHSMobileAppStepDriverCheckInConfirmation     |
-| DriverCheckOutConfirmation                     | WHSMobileAppStepDriverCheckOutConfirmation    |
-| ExpDate                                        | WHSMobileAppStepExpDate                       |
-| FromBatchDisposition                           | WHSMobileAppStepFromBatchDisposition          |
-| FullQty                                        | WHSMobileAppStepFullQty                       |
-| InventColorId                                  | WHSMobileAppStepInventColorId                 |
-| InventLocation                                 | WHSMobileAppStepInventLocation                |
-| FromInventoryStatus                            | WHSMobileAppStepInventoryStatusFrom           |
-| InventSerialId                                 | WHSMobileAppStepInventSerialId                |
-| InventSizeId                                   | WHSMobileAppStepInventSizeId                  |
-| InventStatusId                                 | WHSMobileAppStepInventStatus                  |
-| InventStyleId                                  | WHSMobileAppStepInventStyleId                 |
-| InventVersionId                                | WHSMobileAppStepInventVersionId               |
-| ItemId                                         | WHSMobileAppStepItem                          |
-| KanbanCardId                                   | WHSMobileAppStepKanbanCard                    |
-| KanbanOrCardId                                 | WHSMobileAppStepKanbanCard                    |
-| KanbanCardToEmpty                              | WHSMobileAppStepKanbanCardToEmpty             |
-| LicensePlateId                                 | WHSMobileAppStepLicensePlate                  |
-| LoadId                                         | WHSMobileAppStepLoadId                        |
-| WMSLocationId                                  | WHSMobileAppStepLocation                      |
-| LocationLicensePlatePosition                   | WHSMobileAppStepLocationLicensePlatePosition  |
-| LocOrLP                                        | WHSMobileAppStepLocOrLP                       |
-| LocOrLPCheck                                   | WHSMobileAppStepLocOrLPCheck                  |
-| LocOrLP\_From                                  | WHSMobileAppStepLocOrLPFrom                   |
-| LocOrLP\_To                                    | WHSMobileAppStepLocOrLPTo                     |
-| LPAdjustIn                                     | WHSMobileAppStepLPAdjustIn                    |
-| LPBreakChildLP                                 | WHSMobileAppStepLPBreakChildLP                |
-| LPBreakParentLP                                | WHSMobileAppStepLPBreakParentLP               |
-| LPBuildChildLP                                 | WHSMobileAppStepLPBuildChildLP                |
-| LPBuildParentLP                                | WHSMobileAppStepLPBuildParentLP               |
-| LPVerification                                 | WHSMobileAppStepLPVerification                |
-| MergeContainerId                               | WHSMobileAppStepMergeContainerId              |
-| MixedLPLineNum                                 | WHSMobileAppStepMixedLPLineNum                |
-| MovementConfirmCancel                          | WHSMobileAppStepMovementConfirmCancel         |
-| NewQty                                         | WHSMobileAppStepNewQty                        |
-| OverridePutNewLocation                         | WHSMobileAppStepOverridePutNewLocation        |
-| POLineNum                                      | WHSMobileAppStepPOLineNum                     |
-| PONum                                          | WHSMobileAppStepPONum                         |
-| PositionFull                                   | WHSMobileAppStepPositionFull                  |
-| PositionFullQty                                | WHSMobileAppStepPositionFullQty               |
-| Potency                                        | WHSMobileAppStepPotency                       |
-| PrinterName                                    | WHSMobileAppStepPrinterName                   |
-| ProdId                                         | WHSMobileAppStepProdId                        |
-| ProdLastPalletConfirmation                     | WHSMobileAppStepProdLastPalletConfirmation    |
-| ProductConfirmation                            | WHSMobileAppStepProductConfirmation           |
-| ProductionScrapConfirmation                    | WHSMobileAppStepProductionScrapConfirmation   |
-| PutawayClusterId                               | WHSMobileAppStepPutawayClusterId              |
-| Qty                                            | WHSMobileAppStepQty                           |
-| QtyAdjust                                      | WHSMobileAppStepQtyAdjust                     |
-| QtyWithScanningLimit                           | WHSMobileAppStepQtyAdjust                     |
-| QtyShort                                       | WHSMobileAppStepQtyShort                      |
-| QtyToConsume                                   | WHSMobileAppStepQtyToConsume                  |
-| QtyToPick                                      | WHSMobileAppStepQtyToPick                     |
-| QtyToPut                                       | WHSMobileAppStepQtyToPut                      |
-| QtyToScrap                                     | WHSMobileAppStepQtyToScrap                    |
-| QtyVerification                                | WHSMobileAppStepQtyVerification               |
-| PieceByPieceConfirmation                       | WHSMobileAppStepQtyVerification               |
-| ClusterPickQtyVerification                     | WHSMobileAppStepQtyVerification               |
-| ReasonString                                   | WHSMobileAppStepReasonString                  |
-| RecvLocationId                                 | WHSMobileAppStepRecvLocationId                |
-| RemoveContainerId                              | WHSMobileAppStepRemoveContainerId             |
-| ReprintLabelConfirmation                       | WHSMobileAppStepReprintLabelConfirmation      |
-| RMANum                                         | WHSMobileAppStepRMANum                        |
-| ShortPickReason                                | WHSMobileAppStepShortPickReason               |
-| SortConOrLP                                    | WHSMobileAppStepSortConOrLP                   |
-| SortLicensePlateId                             | WHSMobileAppStepSortLicensePlateId            |
-| SortPositionId                                 | WHSMobileAppStepSortPositionId                |
-| SortVerification                               | WHSMobileAppStepSortVerification              |
-| StartLocationId                                | WHSMobileAppStepStartLocationId               |
-| StartProdOrderConfirmation                     | WHSMobileAppStepStartProdOrderConfirmation    |
-| TargetLicensePlateId                           | WHSMobileAppStepTargetLicensePlateId          |
-| TOLineNum                                      | WHSMobileAppStepTOLineNum                     |
-| ToLocation                                     | WHSMobileAppStepToLocation                    |
-| TONum                                          | WHSMobileAppStepTONum                         |
-| TransportLoadId                                | WHSMobileAppStepTransportLoadId               |
-| InventLocationId                               | WHSMobileAppStepWarehouse                     |
-| ToWarehouse                                    | WHSMobileAppStepWarehouseTo                   |
-| WaveLabelId                                    | WHSMobileAppStepWaveLabelId                   |
-| WaveLblQty                                     | WHSMobileAppStepWaveLblQty                    |
-| Weight                                         | WHSMobileAppStepWeight                        |
-| WeightToConsume                                | WHSMobileAppStepWeightToConsume               |
-| WHSAdjustmentType                              | WHSMobileAppStepWHSAdjustmentType             |
-| WHSReceivingException                          | WHSMobileAppStepWHSReceivingException         |
-| WHSWorkException                               | WHSMobileAppStepWHSWorkException              |
-| WorkId                                         | WHSMobileAppStepWorkId                        |
-| WorkIdToCancel                                 | WHSMobileAppStepWorkIdToCancel                |
-| WHSWorkLicensePlateId                          | WHSMobileAppStepWorkLicensePlateId            |
-| WorkLPIdPutawayCluster                         | WHSMobileAppStepWorkLPIdPutawayCluster        |
-| WorkPoolId                                     | WHSMobileAppStepWorkPoolId                    |
-| ZoneId                                         | WHSMobileAppStepZoneId                        |
-| ITMContainerID                                 | ITMMobileAppStepContainerId                   |
-| ITMShipmentID                                  | ITMMobileAppStepShipmentId                    |
-| InboundPut                                     | WHSMobileAppStepInboundPut                    |
-| OutboundPut                                    | WHSMobileAppStepOutboundPut                   |
-| Put                                            | WHSMobileAppStepPut                           |
-| DriverCheckInId                                | WHSMobileAppStepDriverCheckInId               |
-| DriverCheckOutId                               | WHSMobileAppStepDriverCheckOutId              |
-| LocVerification                                | WHSMobileAppStepLocVerification               |
+| Step ID | Step Class |
+|-|-|
+| BatchDisposition | WHSMobileAppStepBatchDisposition |
+| Carrier | WHSMobileAppStepCarrier |
+| CatchWeight | WHSMobileAppStepCatchWeight |
+| CatchWeightQtyOutboundWeight | WHSMobileAppStepCatchWeight |
+| CatchWeightTag | WHSMobileAppStepCatchWeightTag |
+| CatchWeightTagWeight | WHSMobileAppStepCatchWeightTagWeight |
+| ChangeWarehouseSuccess | WHSMobileAppStepChangeWarehouseSuccess |
+| CheckDigit | WHSMobileAppStepCheckDigit |
+| ClusterId | WHSMobileAppStepClusterId |
+| ClusterPickQtyVerification | WHSMobileAppStepQtyVerification |
+| ClusterPosition | WHSMobileAppStepClusterPosition |
+| ConfigId | WHSMobileAppStepConfigId |
+| Confirmation | WHSMobileAppStepConfirmation |
+| ConsolidateFromLicensePlateId | WHSMobileAppStepConsolidateFromLicensePlateId |
+| ConsolidateLPConfirmation | WHSMobileAppStepConsolidateLPConfirmation |
+| ConsolidateToLicensePlateId | WHSMobileAppStepConsolidateToLicensePlateId |
+| ContainerType | WHSMobileAppStepContainerType |
+| CountingReasonCode | WHSMobileAppStepCountingReasonCode |
+| CycleCountingAddLPOrFinish | WHSMobileAppStepCycleCountingAddLPOrFinish |
+| CycleCountQty1 | WHSMobileAppStepCycleCountQty |
+| CycleCountQty2 | WHSMobileAppStepCycleCountQty |
+| CycleCountQty3 | WHSMobileAppStepCycleCountQty |
+| CycleCountQty4 | WHSMobileAppStepCycleCountQty |
+| Disposition | WHSMobileAppStepDisposition |
+| DriverCheckInConfirmation | WHSMobileAppStepDriverCheckInConfirmation |
+| DriverCheckInId | WHSMobileAppStepDriverCheckInId |
+| DriverCheckOutConfirmation | WHSMobileAppStepDriverCheckOutConfirmation |
+| DriverCheckOutId | WHSMobileAppStepDriverCheckOutId |
+| ExpDate | WHSMobileAppStepExpDate |
+| FromBatchDisposition | WHSMobileAppStepFromBatchDisposition |
+| FromInventoryStatus | WHSMobileAppStepInventoryStatusFrom |
+| FullQty | WHSMobileAppStepFullQty |
+| InboundPut | WHSMobileAppStepInboundPut |
+| InventBatchId | WHSMobileAppStepBatch |
+| InventColorId | WHSMobileAppStepInventColorId |
+| InventLocation | WHSMobileAppStepInventLocation |
+| InventLocationId | WHSMobileAppStepWarehouse |
+| InventSerialId | WHSMobileAppStepInventSerialId |
+| InventSizeId | WHSMobileAppStepInventSizeId |
+| InventStatusId | WHSMobileAppStepInventStatus |
+| InventStyleId | WHSMobileAppStepInventStyleId |
+| InventVersionId | WHSMobileAppStepInventVersionId |
+| ItemId | WHSMobileAppStepItem |
+| ITMContainerID | ITMMobileAppStepContainerId |
+| ITMShipmentID | ITMMobileAppStepShipmentId |
+| KanbanCardId | WHSMobileAppStepKanbanCard |
+| KanbanCardToEmpty | WHSMobileAppStepKanbanCardToEmpty |
+| KanbanOrCardId | WHSMobileAppStepKanbanCard |
+| LicensePlateId | WHSMobileAppStepLicensePlate |
+| LoadId | WHSMobileAppStepLoadId |
+| LocationLicensePlatePosition | WHSMobileAppStepLocationLicensePlatePosition |
+| LocOrLP | WHSMobileAppStepLocOrLP |
+| LocOrLP_From | WHSMobileAppStepLocOrLPFrom |
+| LocOrLP_To | WHSMobileAppStepLocOrLPTo |
+| LocOrLPCheck | WHSMobileAppStepLocOrLPCheck |
+| LocVerification | WHSMobileAppStepLocVerification |
+| LPAdjustIn | WHSMobileAppStepLPAdjustIn |
+| LPBreakChildLP | WHSMobileAppStepLPBreakChildLP |
+| LPBreakParentLP | WHSMobileAppStepLPBreakParentLP |
+| LPBuildChildLP | WHSMobileAppStepLPBuildChildLP |
+| LPBuildParentLP | WHSMobileAppStepLPBuildParentLP |
+| LPVerification | WHSMobileAppStepLPVerification |
+| MergeContainerId | WHSMobileAppStepMergeContainerId |
+| MixedLPLineNum | WHSMobileAppStepMixedLPLineNum |
+| MobileDeviceQueueMessageCollectionIdentifierId | WHSMobileAppStepSelectOrder |
+| MovementConfirmCancel | WHSMobileAppStepMovementConfirmCancel |
+| NewCaptureWeight | WHSMobileAppStepCatchWeight |
+| NewQty | WHSMobileAppStepNewQty |
+| OutboundCatchWeightTag | WHSMobileAppStepCatchWeightTag |
+| OutboundPut | WHSMobileAppStepOutboundPut |
+| OutboundWeight | WHSMobileAppStepCatchWeight |
+| OverridePutNewLocation | WHSMobileAppStepOverridePutNewLocation |
+| PieceByPieceConfirmation | WHSMobileAppStepQtyVerification |
+| POLineNum | WHSMobileAppStepPOLineNum |
+| PONum | WHSMobileAppStepPONum |
+| PositionFull | WHSMobileAppStepPositionFull |
+| PositionFullQty | WHSMobileAppStepPositionFullQty |
+| Potency | WHSMobileAppStepPotency |
+| PrinterName | WHSMobileAppStepPrinterName |
+| ProdId | WHSMobileAppStepProdId |
+| ProdLastPalletConfirmation | WHSMobileAppStepProdLastPalletConfirmation |
+| ProductConfirmation | WHSMobileAppStepProductConfirmation |
+| ProductionScrapConfirmation | WHSMobileAppStepProductionScrapConfirmation |
+| Put | WHSMobileAppStepPut |
+| PutawayClusterId | WHSMobileAppStepPutawayClusterId |
+| Qty | WHSMobileAppStepQty |
+| QtyAdjust | WHSMobileAppStepQtyAdjust |
+| QtyShort | WHSMobileAppStepQtyShort |
+| QtyToConsume | WHSMobileAppStepQtyToConsume |
+| QtyToPick | WHSMobileAppStepQtyToPick |
+| QtyToPut | WHSMobileAppStepQtyToPut |
+| QtyToScrap | WHSMobileAppStepQtyToScrap |
+| QtyVerification | WHSMobileAppStepQtyVerification |
+| QtyWithScanningLimit | WHSMobileAppStepQtyAdjust |
+| ReasonString | WHSMobileAppStepReasonString |
+| RecvLocationId | WHSMobileAppStepRecvLocationId |
+| RemoveContainerId | WHSMobileAppStepRemoveContainerId |
+| ReprintLabelConfirmation | WHSMobileAppStepReprintLabelConfirmation |
+| RMANum | WHSMobileAppStepRMANum |
+| ShortPickReason | WHSMobileAppStepShortPickReason |
+| SortConOrLP | WHSMobileAppStepSortConOrLP |
+| SortLicensePlateId | WHSMobileAppStepSortLicensePlateId |
+| SortPositionId | WHSMobileAppStepSortPositionId |
+| SortVerification | WHSMobileAppStepSortVerification |
+| StartLocationId | WHSMobileAppStepStartLocationId |
+| StartProdOrderConfirmation | WHSMobileAppStepStartProdOrderConfirmation |
+| TargetLicensePlateId | WHSMobileAppStepTargetLicensePlateId |
+| TOLineNum | WHSMobileAppStepTOLineNum |
+| ToLocation | WHSMobileAppStepToLocation |
+| TONum | WHSMobileAppStepTONum |
+| ToWarehouse | WHSMobileAppStepWarehouseTo |
+| TransportLoadId | WHSMobileAppStepTransportLoadId |
+| WaveLabelId | WHSMobileAppStepWaveLabelId |
+| WaveLblQty | WHSMobileAppStepWaveLblQty |
+| Weight | WHSMobileAppStepWeight |
+| WeightToConsume | WHSMobileAppStepWeightToConsume |
+| WHSAdjustmentType | WHSMobileAppStepWHSAdjustmentType |
+| WHSReceivingException | WHSMobileAppStepWHSReceivingException |
+| WHSWorkException | WHSMobileAppStepWHSWorkException |
+| WHSWorkLicensePlateId | WHSMobileAppStepWorkLicensePlateId |
+| WMSLocationId | WHSMobileAppStepLocation |
+| WorkId | WHSMobileAppStepWorkId |
+| WorkIdToCancel | WHSMobileAppStepWorkIdToCancel |
+| WorkLPIdPutawayCluster | WHSMobileAppStepWorkLPIdPutawayCluster |
+| WorkPoolId | WHSMobileAppStepWorkPoolId |
+| ZoneId | WHSMobileAppStepZoneId |
 
 ### <a name="step-icons"></a>Available step icons
 
@@ -354,7 +354,7 @@ The container input page lets the worker scan or enter a container ID.
 
 ![Container input page](media/step-icons-example-container-input.png "Container input page")
 
-On the container input page, the control name of the input field is `ContainerId`. Because this control name isn't in the [list of step IDs](#step-ids-classes), you won't find an existing step that is based on it. Therefore, you must create a step class that presents the step. Here is an example.
+On the container input page, the control name of the input field is `ContainerId`. Because this control name isn't in the [list of step IDs](#step-ids-classes), you won't find an existing step that is based on it. Therefore, you must create a step class that represents the step. Here is an example.
 
 ```xpp
 [WHSMobileAppStepId('ContainerId')]
