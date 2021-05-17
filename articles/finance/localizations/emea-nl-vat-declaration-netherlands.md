@@ -116,10 +116,9 @@ For each transaction classifier, a classifier for the credit note is also
 available. For example, one of these classifiers
 is **PurchaseCreditNote** (purchase credit note).
 
-#### [./media/image1.png](./media/image1.png)
+#### [./media/image1.png](./media/App-parameters-VAT-XML-1.png)
 
-\~ Graphical user interface, text, application Description automatically
-generated
+
 
 #### Set up XSD schema and namespaces
 
@@ -136,10 +135,9 @@ To set up XSD schema and namespaces, follow these steps:
 | XSDSchema          | http://www.nltaxonomie.nl/nt15/bd/20201209/entrypoints/bd-rpt-ob-aangifte-2021.xsd |
 | SchemaInstanceData | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data                      |
 
-Review example of setup:
 
 For information about how to get these values from official documentation, see
-the How-to get XSD schema and namespaces for the Dutch taxonomy
+the **How-to get XSD schema and namespaces for the Dutch taxonomy** (add link)
 
 **Note**! If you don’t set up transmission of VAT declaration to Digipoort, you
 can configure any value in the lookup result.
@@ -172,8 +170,7 @@ To set up VAT reporting format, follow these steps:
 
 To preview VAT declaration in Excel, follow these steps:
 
-1.  Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Report sales
-    tax for settlement period**.
+1.  Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Report sales tax for settlement period**.
 
 2.  Enter the following information.
 
@@ -193,7 +190,7 @@ To preview VAT declaration in Excel, follow these steps:
 -   **Total list**: Generate a report for all sales tax transactions for the
     period, including the original and all corrections.
 
-1.  Select **OK** and review the Excel file that is generated.
+3.  Select **OK** and review the Excel file that is generated.
 
 ### Settle and post sales tax
 
@@ -216,7 +213,7 @@ To settle and post sales tax, follow these steps:
 -   **Latest corrections**: Generate a correction sales tax payment after the
     original sales tax payment for the settlement period was created.
 
-1.  Select **OK**.
+3.  Select **OK**.
 
 ### Preview VAT declaration in Excel from a sales tax payment
 
@@ -254,20 +251,17 @@ To modify target mapping, follow these steps:
 
 3.  Make sure that the staging field **Action type** is mapped to the target.
 
-![Map staging to target](media/066ffec9eb4960697f3e468d02213722.png)
+![Map staging to target](media/map-staging.png)
 
-    Map staging to target
-
-1.  You can map to the target manually, or on the **Mapping details** tab,
+ 
+4.  You can map to the target manually, or on the **Mapping details** tab,
     select **Generate mapping \> Yes**.
 
 ### Upload the electronic messages data package
 
 To upload the electronic messages data package, follow these steps:
 
-1.  In the Lifecycle Services (LCS) shared asset library, on the **Data
-    packages** tab, download the latest version of data package, **NL VAT
-    declaration EM package**.
+1.  In the Lifecycle Services (LCS) shared asset library, on the **Data packages** tab, download the latest version of data package, **NL VAT declaration EM package**.
 
 2.  In Dynamics 365 Finance, in the **Data management** workspace,
     select **Import**.
@@ -283,8 +277,7 @@ To upload the electronic messages data package, follow these steps:
 
 5.  After the data entities are uploaded, select **Import**.
 
-6.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic
-    messages** and validate the electronic message processing that you imported.
+6.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages** and validate the electronic message processing that you imported.
 
 | **Processing**     | **Name**                | **Description**                    |
 |--------------------|-------------------------|------------------------------------|
@@ -293,15 +286,14 @@ To upload the electronic messages data package, follow these steps:
 7.  Go to **Tax \> Setup \> Electronic messages \> Executable class settings**.
     Verify the following :
 
--   The executable class **NLOBGetStatusFromDidgipoort** has the **Electronic
-    reporting import** action type.
+-   The executable class **NLOBGetStatusFromDidgipoort** has the **Electronic reporting import** action type.
 
 -   The executable class **NLOBSendToDigipoort** has the **Web service** action
     type.
 
-![Graphical user interface, text, application, chat or text message Description automatically generated](media/b1a264a77149df27fc759392cecfbe3d.png)
+![electronic-messages-NL](media/electronic-messages-NL.png)
 
-1.  For each line, select **Parameters**, and then select **NLOB Request ID** in
+8.  For each line, select **Parameters**, and then select **NLOB Request ID** in
     the **Request ID** field.
 
 ### Configure electronic messages
@@ -333,90 +325,132 @@ Digipoort.
 The following steps are applicable to the example electronic message processing
 that you imported.
 
-1.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic
-    messages**.
+1.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
 
 2.  In the left pane, select the report format to generate. For example,
     select **NL VAT declaration**.
 
-3.  On the **Messages** FastTab, select **New**, and then, in the **Run
-    processing** dialog box, select **OK**.
+3.  On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
 
 4.  Select the message line that is created, enter a description, and then
     specify the start and end dates for the declaration.
 
 >   Note: Steps 5-7 are optional.
 
-1.  On the **Messages** FastTab, select **Collect data**, and then
+5.  On the **Messages** FastTab, select **Collect data**, and then
     select **OK**. As a result, sales tax payments that were generated earlier
     are added to the message. For more information, see [Settle and post sales
     tax](#settle-and-post-sales-tax). If you skip this step, you can still
     generate a VAT declaration by using the **Tax declaration version** in the
     **Declaration** dialog box.
 
-2.  On the **Message items** FastTab, review the sales tax payments that are
+6.  On the **Message items** FastTab, review the sales tax payments that are
     transferred for processing. By default, all sales tax payments of the
     selected period that weren't included in any other message of the same
     processing are included.
 
-3.  Select **Original document** to review the sales tax payments, or
+7.  Select **Original document** to review the sales tax payments, or
     select **Delete** to exclude sales tax payments from processing. If you skip
     this step, you can still generate a VAT declaration by using the **Tax
     declaration version** field in the **Declaration** dialog box.
 
-4.  On the **Messages** FastTab, select **Update status**. In the **Update
+8.  On the **Messages** FastTab, select **Update status**. In the **Update
     status** dialog box, select the **Ready to generate** action, and then
     select **OK**. Validate that the message status is changed to **Ready to
     generate**.
 
-5.  Select **Generate report**. To preview the VAT declaration amounts, in
+9.  Select **Generate report**. To preview the VAT declaration amounts, in
     the **Run processing** dialog box, select **Preview report**, and then
     select **OK**.
 
-6.  In the **Electronic reporting parameters** dialog box, enter the parameters
+10.  In the **Electronic reporting parameters** dialog box, enter the parameters
     of the VAT declaration, and then select **OK**. For information about the
     parameters that are available, see the following table.
 
-7.  Select **Attachments** in the upper-right corner of the page, and then
+11.  Select **Attachments** in the upper-right corner of the page, and then
     select **Open** to open the file. Review the amounts that are in the Excel
     document.
 
-8.  On the **Messages** FastTab, select **Generate report**. In the **Run
+12.  On the **Messages** FastTab, select **Generate report**. In the **Run
     processing** dialog box, select **Generate report** to generate an XML file,
     and then select **OK**.
 
-9.  In the **Electronic reporting parameters** dialog box, enter the following
+13.  In the **Electronic reporting parameters** dialog box, enter the following
     information.
 
-| **Field**               | **Description**                                                                                                                                                                                                                                                                                         |
-|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Settlement period       | Select the settlement period. If you selected **Collect data** in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments.                                                                              |
-| Tax declaration version | Select one of the following values:                                                                                                                                                                                                                                                                     |
-| Tax jurisdiction        | Select **Default** to use information about the tax representative and the contact person from the fields below. Select **Netherlands** to use information about the tax representative and the contact person from the **Electronic tax declaration parameters** page.                                 |
-| Tax representative      | If declaration is provided by the tax representative, select **Tax consultant** from the list of parties. Registration ID, first name, middle name, last name, personal title, and contact information of type **Phone** must be specified for the selected party and will be exported to the XML file. |
-| Contact person          | Select the employee who created the report. The first name, last name, and telephone number of the employee must be specified and will be exported to the XML file.                                                                                                                                     |
-|                         |                                                                                                                                                                                                                                                                                                         |
-
--   **Original**: Generate a report for sales tax transactions of the original
-    sales tax payment or before the sales tax payment is generated.
-
--   **Corrections**: Generate a report for sales tax transactions of all the
-    subsequent sales tax payments for the period. The **Sales tax payment
-    version** field is set to **Latest corrections**.
-
--   **Total list**: Generate a report for all sales tax transactions for the
-    period, including the original and all corrections.
-
+<table>
+<thead>
+<tr>
+<td width="162">
+<p><strong>Field</strong></p>
+</td>
+<td width="463">
+<p><strong>Description</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="162">
+<p>Settlement period</p>
+</td>
+<td width="463">
+<p>Select the settlement period.</p>
+<p>If you selected&nbsp;<strong>Collect data</strong>&nbsp;in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments.</p>
+</td>
+</tr>
+<tr>
+<td width="162">
+<p>Tax declaration version</p>
+</td>
+<td width="463">
+<p>Select one of the following values:</p>
+<p>o&nbsp;&nbsp; <strong>Original</strong>: Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</p>
+<p>o&nbsp;&nbsp; <strong>Corrections</strong>: Generate a report for sales tax transactions of all the subsequent sales tax payments for the period. The&nbsp;<strong>Sales tax payment version</strong>&nbsp;field is set to&nbsp;<strong>Latest corrections</strong>.</p>
+<p>o&nbsp;&nbsp; <strong>Total list</strong>: Generate a report for all sales tax transactions for the period, including the original and all corrections.</p>
+<p>&nbsp;</p>
+<p>If you selected&nbsp;<strong>Collect data</strong>&nbsp;in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments.</p>
+</td>
+</tr>
+<tr>
+<td width="162">
+<p>Tax jurisdiction</p>
+</td>
+<td width="463">
+<p>Select&nbsp;<strong>Default to use information about the tax representative and the contact person from the fields below.</strong></p>
+<p><strong>Select Netherlands to use information about the tax representative and the contact person from the Electronic tax declaration parameters page.</strong></p>
+</td>
+</tr>
+<tr>
+<td width="162">
+<p>Tax representative</p>
+</td>
+<td width="463">
+<p>If declaration is provided by the tax representative, select <strong>Tax consultant</strong> from the list of parties.</p>
+<p>Registration ID, first name, middle name, last name, personal title, and contact information of type <strong>Phone</strong> must be specified for the selected party and will be exported to the XML file.</p>
+</td>
+</tr>
+<tr>
+<td width="162">
+<p>Contact person</p>
+</td>
+<td width="463">
+<p>Select the employee who created the report. The first name, last name, and telephone number of the employee must be specified and will be exported to the XML file.</p>
+</td>
+</tr>
+</tbody>
+</table>
+  
 If you selected **Collect data** in step 5, you can disregard this field. The
 report will be generated for the sales tax transactions that are included in the
 collected sales tax payments.
 
-1.  Select **OK**. When the declaration in XML format has been generated, the
+14.  Select **OK**. When the declaration in XML format has been generated, the
     status of the message is changed to **Report generated**. If an error occurs
     while the report is being generated, the status of the message is changed
     to **Report generation error**.
 
-2.  Select **Attachments**, and then select **Open** to open the file. Review
+15.  Select **Attachments**, and then select **Open** to open the file. Review
     the file, and if it is correct, select **Send report** to send the report to
     Digipoort. The report will be sent to Digipoort and status of the message
     will be changed to **Report sent**.
@@ -430,7 +464,7 @@ collected sales tax payments.
 -   **Report sending error (business)**: If an error occurred on the Digipoort
     side after reaching Digipoort.
 
-1.  Select **Import response** to get a response from the Digipoort on the sent
+16.  Select **Import response** to get a response from the Digipoort on the sent
     message. The response from Digipoort will be imported and status of the
     message will be changed to **Report acknowledged**.
 
