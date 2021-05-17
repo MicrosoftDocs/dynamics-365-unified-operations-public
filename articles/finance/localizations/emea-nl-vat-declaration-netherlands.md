@@ -14,7 +14,7 @@ In the following table, the **Lookup result** column shows the lookup result
 that is preconfigured for a specific VAT declaration row in the VAT declaration
 format. Use this information to correctly associate sales tax codes with the
 lookup result and then associate that with the row of the VAT declaration. The
-**Tax base (XML element)** and **Tax (XML element)** columns list the names of
+**Tax base (XML element) / Tax (XML element)** column list the names of
 the corresponding XML elements in VAT declaration XML (NL) format.
 
 > **Note!**
@@ -462,8 +462,7 @@ To set up XSD schema and namespaces, follow these steps:
 | SchemaInstanceData | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data                      |
 
 
-For information about how to get these values from official documentation, see
-the ![How-to get XSD schema and namespaces for the Dutch taxonomy](/localizations/emea-nl-eu-sales-list.md/#Get-XSD-schema-and-namespaces-for-the-Dutch-taxonomy)
+For information about how to get these values from official documentation, see ![How-to get XSD schema and namespaces for the Dutch taxonomy](/localizations/emea-nl-eu-sales-list.md/#Get-XSD-schema-and-namespaces-for-the-Dutch-taxonomy)
 
 > **Note**! If you don’t set up transmission of VAT declaration to Digipoort, you
 > can configure any value in the lookup result.
@@ -696,8 +695,8 @@ Digipoort is the service that is used to transmit declarations to the Dutch
 government. Digipoort works as an electronic post office: it receives a message,
 checks the message, and then confirms receipt of the message.
 
-For more information, see Set up electronic transmission of tax declarations to
-Digipoort.
+For more information, see ![Set up electronic transmission of tax declarations to
+Digipoort](localizations/emea-nl-eu-sales-list.md/Set-up-electronic-transmission-of-tax-declarations-to-Digipoort)
 
 ## Generate VAT declaration in XML for Netherlands and send to Digipoort
 
