@@ -101,7 +101,7 @@ To set up Azure Key Vault for certificate storage, follow these steps:
 -   **Key Vault secret key**: Enter a secret key that is associated with the
     Azure AD application that's used for authentication to Key Vault storage.
 
-6.  On the **Secrets** FastTab, select **Add**, and create lines for Key Vault
+7.  On the **Secrets** FastTab, select **Add**, and create lines for Key Vault
     secrets for the Digipoort server and client certificates.
 
 ![Key vault parameters](media/Key-vault-parameters-pic2.png)
@@ -198,7 +198,7 @@ registrations](https://docs.microsoft.com/en-us/dynamics365/finance/localization
 see [Reporting for Multiple VAT
 registrations](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers?toc=/dynamics365/finance/toc.json).
 
-1.  Select **Reporting** to preview the EU sales list files. In the **EU
+3.  Select **Reporting** to preview the EU sales list files. In the **EU
     reporting** dialog box, set the following parameters:
 
 -   In the **Reporting period** field, select **Monthly or Quarterly.**
@@ -224,28 +224,28 @@ To create ICP declaration and send to Digipoort, follow these steps:
 
 ![Create ICP declaration](media/b9ba11daf6264e32fe22ebb8bc60fb8d.png)
 
-1.  Select **OK**. The electronic message is created.
+4.  Select **OK**. The electronic message is created.
 
 ![Electronic ICP declaration](media/edab2697a0ce7503ff6cddcb13a57587.png)
 
-1.  Select **Deliveries** to review the lines of the EU sales list that are
+5.  Select **Deliveries** to review the lines of the EU sales list that are
     transferred to the message from the **EU sales list** page.
 
-2.  Select **Corrections** to review the correction lines of the EU sales list
+6.  Select **Corrections** to review the correction lines of the EU sales list
     that are transferred to the message from **EU sales list** page.
 
-3.  Select **Reporting** to generate an XML file of the EU sales list and set
+7.  Select **Reporting** to generate an XML file of the EU sales list and set
     report generation parameters in the **EU reporting** dialog box.
 
-4.  Set **Send electronically** to **Yes** to send the generated XML file to
+8.  Set **Send electronically** to **Yes** to send the generated XML file to
     **Digipoort.**
 
 ![EU reporting](media/1a41fae8750905dac7c2eda04b5facb0.png)
 
-1.  Select **OK** and refresh the page. The message status is changed to
+9.  Select **OK** and refresh the page. The message status is changed to
     **Sent**.
 
-2.  Select **Import XML** to import the response from Digipoort. The message
+10.  Select **Import XML** to import the response from Digipoort. The message
     status is changed to **Acknowledgement**.
 
 ## Get XSD schema and namespaces for the Dutch taxonomy
