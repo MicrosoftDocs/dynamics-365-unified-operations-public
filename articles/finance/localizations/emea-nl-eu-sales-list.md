@@ -23,13 +23,13 @@ Docs](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-eu
 
 To set up XML namespaces for the EU sales list in XML, follow these steps:
 
-1.  Go to **Workspaces** \&gt; **Electronic reporting**, and import version 1.10
+1.  Go to **Workspaces \> Electronic reporting**, and import version 1.10
     or higher of the format, **EU Sales list (NL).** For more information, see
     [Download ER configurations from the Global repository of Configuration
     service - Finance & Operations \| Dynamics 365 \| Microsoft
     Docs](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?toc=/dynamics365/finance/toc.json).
 
-2.  Select **Configurations \&gt; Application specific parameters setup**.
+2.  Select **Configurations \> Application specific parameters setup**.
 
 3.  On the **Lookups** FastTab, select **XMLNamespaces**.
 
@@ -51,7 +51,7 @@ taxonomy](#get-xsd-schema-and-namespaces-for-the-dutch-taxonomy)
 
 To set up EU sales list reporting formats, follow these steps:
 
-1.  Go to **Tax \&gt; Setup \&gt; Foreign trade \&gt; Foreign trade
+1.  Go to **Tax \Setup \> Foreign trade \> Foreign trade
     parameters**.
 
 2.  On the **EU sales list** tab, in the **File format mapping** field, select
@@ -78,14 +78,14 @@ checks the message, and then confirms receipt of the message.
 
 To set up Azure Key Vault for certificate storage, follow these steps:
 
-1.  Go to **System administration \&gt; Setup \&gt; System parameters**.
+1.  Go to **System administration \> Setup \> System parameters**.
 
 2.  On the **General** tab, set the **Use advanced certificate store** option
     to **Yes**.
 
 3.  Upload the certificate to KeyVault.
 
-4.  Go to **System administration \&gt; Setup \&gt; Key Vault parameters**.
+4.  Go to **System administration \> Setup \> Key Vault parameters**.
 
 5.  Select **New** and set the **Name** and **Description** fields as
     **Digipoort**.
@@ -114,12 +114,12 @@ client](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/setti
 
 To set up electronic tax declaration parameters, follow these steps:
 
-1.  Go to **Tax** \&gt; **Setup** \&gt; **Sales tax** \&gt; **Electronic tax
+1.  Go to **Tax** \> **Setup** \> **Sales tax** \> **Electronic tax
     declaration parameters**.
 
 For legal entities with [Multiple VAT
 registrations](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers?toc=/dynamics365/finance/toc.json),
-go to **Tax** \&gt; **Setup** \&gt; **Foreign trade \&gt; Dutch electronic tax
+go to **Tax** \> **Setup** \> **Foreign trade \> Dutch electronic tax
 declaration parameters**.
 
 2.  On the **System** tab, set the following fields:
@@ -154,19 +154,16 @@ declaration**.
 
 To set up Dutch electronic tax declaration parameters, follow these steps:
 
-1.  Go to **Tax** \&gt; **Setup** \&gt; **Sales tax** \&gt; **Electronic tax
-    declaration parameters**.
+1.  Go to **Tax \> Setup \> Sales tax \> Electronic tax declaration parameters**.
 
 For legal entities with [Multiple VAT
 registrations](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers?toc=/dynamics365/finance/toc.json),
-go to **Tax** \&gt; **Setup** \&gt; **Foreign trade \&gt; Dutch electronic tax
-declaration parameters**.
+go to **Tax \> Setup \> Foreign trade \> Dutch electronic tax declaration parameters**.
 
 2.  On the **General** tab, in the **ICP contact type** field, select
     **Taxpayer** or **Agent**.
 
-3.  Select information in the **Contact ID, Name, Contact initials**, **Contact
-    prefix**, and **Telephone** fields.
+3.  Select information in the **Contact ID, Name, Contact initials**, **Contact prefix**, and **Telephone** fields.
 
 4.  Set the **Company part of fiscal group** option to **Yes** if this setting
     is appropriate, and then, in the **Fiscal group** field, select the tax
@@ -184,7 +181,7 @@ declaration parameters**.
 
 To transfer transactions and preview files, follow these steps:
 
-1.  Go to **Tax \&gt; Declarations \&gt; Foreign trade \&gt; EU sales list**.
+1.  Go to **Tax \> Declarations \> Foreign trade \> EU sales list**.
     Transfer the EU sales list transactions for the Netherlands to the EU sales
     list.
 
@@ -216,7 +213,7 @@ registrations](https://docs.microsoft.com/en-us/dynamics365/finance/localization
 
 To create ICP declaration and send to Digipoort, follow these steps:
 
-1.  Go to **Tax \&gt; Declarations \&gt; Foreign trade \&gt; Dutch electronic
+1.  Go to **Tax \> Declarations \> Foreign trade \> Dutch electronic
     ICP declaration.**
 
 2.  Select **New**, and in the **Create electronic ICP declaration** dialog box,
