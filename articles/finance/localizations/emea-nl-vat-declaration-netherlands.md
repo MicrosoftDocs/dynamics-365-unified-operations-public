@@ -827,37 +827,34 @@ report will be generated for the sales tax transactions that are included in the
 collected sales tax payments.
 
 14.  Select **OK**. When the declaration in XML format has been generated, the
-    status of the message is changed to **Report generated**. If an error occurs
-    while the report is being generated, the status of the message is changed
+    status of the message is changed to **Report generated**. 
+    
+   If an error occurs while the report is being generated, the status of the message is changed
     to **Report generation error**.
 
 15.  Select **Attachments**, and then select **Open** to open the file. Review
     the file, and if it is correct, select **Send report** to send the report to
     Digipoort. The report will be sent to Digipoort and status of the message
     will be changed to **Report sent**.
-
-    If error occurred during sending of the report, the status of the message is
+    
+   If an error occurred during sending of the report, the status of the message is
     changed to:
-
 -   **Report sending error (technical)**: If an error occurs on the Finance side
     and the file didn’t reach Digipoort.
-
 -   **Report sending error (business)**: If an error occurred on the Digipoort
     side after reaching Digipoort.
 
 16.  Select **Import response** to get a response from the Digipoort on the sent
     message. The response from Digipoort will be imported and status of the
-    message will be changed to **Report acknowledged**.
-
-    If error occurred during receiving of the status, the status of the message
+    message will be changed to **Report acknowledged**. 
+    
+   If an error occurred during receiving of the status, the status of the message
     is changed to:
-
 -   **Report getting status error (business)**: If Digipoort didn’t acknowledge
     the report. In this case, the Infolog shows a list of errors received from
     Digipoort. To review list of errors later, on the **Action log** FastTab, select a line
     with **Get report status**, and select **Attachments**. Review the list of
     errors in the **Notes** field.
-
 -   **Report getting status error (technical)**: If a technical error occurred
     when importing the response from Digipoort.
 
