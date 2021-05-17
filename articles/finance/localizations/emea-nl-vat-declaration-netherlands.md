@@ -17,46 +17,349 @@ lookup result and then associate that with the row of the VAT declaration. The
 **Tax base (XML element)** and **Tax (XML element)** columns list the names of
 the corresponding XML elements in VAT declaration XML (NL) format.
 
-**Note**
+> **Note!**
 
-If you configure sales tax codes to post incoming reverse charge VAT by using
-use tax, associate your sales tax codes with the lookup result that contains
-**UseTax** in the name. For example, for **Row 2a Supplies/services for which
-the VAT has been reverse-charged to you**, configure
-the **SuppliesServicesByWhichVATTaxationIsTransferredUseTax** lookup result
-for **Use tax** sales tax codes, or configure
-the **SuppliesServicesByWhichVATTaxationIsTransferred** lookup result for sales
-tax codes that have a reverse charge. For more information about how to
-configure reverse charge VAT, see [Reverse
-charges](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-reverse-charge).
+> If you configure sales tax codes to post incoming reverse charge VAT by using
+> use tax, associate your sales tax codes with the lookup result that contains
+> **UseTax** in the name. For example, for **Row 2a Supplies/services for which
+> the VAT has been reverse-charged to you**, configure
+> the **SuppliesServicesByWhichVATTaxationIsTransferredUseTax** lookup result
+> for **Use tax** sales tax codes, or configure
+> the **SuppliesServicesByWhichVATTaxationIsTransferred** lookup result for sales
+> tax codes that have a reverse charge. For more information about how to
+> configure reverse charge VAT, see [Reverse
+> charges](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-reverse-charge).
 
 ### VAT declaration overview
 
 The VAT declaration format in Netherlands contains the following information.
 
-| **Box** | **Description**                                                          | **Tax base (XML element)**                              | **Tax (XML element)**                                        | **Lookup result**                                                                                                                                           |
-|---------|--------------------------------------------------------------------------|---------------------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **1**   | **Goods or services in the Netherlands**                                 |                                                         |                                                              |                                                                                                                                                             |
-| 1a      | Supplies/services taxed at the general rate                              | TaxedTurnoverSuppliesServicesGeneralTariff              | ValueAddedTaxSuppliesServicesGeneralTariff                   | SuppliesServicesGeneralTariff                                                                                                                               |
-| 1b      | Supplies/services taxed at the reduced rate                              | TaxedTurnoverSuppliesServicesReducedTariff              | ValueAddedTaxSuppliesServicesReducedTariff                   | SuppliesServicesReducedTariff                                                                                                                               |
-| 1c      | Supplies/services taxed at other rates, except 0%                        | TaxedTurnoverSuppliesServicesOtherRates                 | ValueAddedTaxSuppliesServicesOtherRates                      | SuppliesServicesOtherRates                                                                                                                                  |
-| 1d      | Private use                                                              | TaxedTurnoverPrivateUse                                 | ValueAddedTaxPrivateUse                                      | PrivateUse                                                                                                                                                  |
-| 1e      | Supplies/services taxed at 0% or not taxed at your level                 | SuppliesServicesNotTaxed                                | x                                                            | SuppliesServicesNotTaxed                                                                                                                                    |
-| **2**   | **Domestic reverse-charge mechanisms**                                   |                                                         |                                                              |                                                                                                                                                             |
-| 2a      | Supplies/services for which the VAT has been reverse-charged to you      | TurnoverSuppliesServicesByWhichVATTaxationIsTransferred | ValueAddedTaxSuppliesServicesByWhichVATTaxationIsTransferred | SuppliesServicesByWhichVATTaxationIsTransferred *SuppliesServicesByWhichVATTaxationIsTransferredUseTax*                                                     |
-| **3**   | **Goods and services to/in foreign countries**                           |                                                         |                                                              |                                                                                                                                                             |
-| 3a      | Supplies to non-EU countries (export)                                    | SuppliesToCountriesOutsideTheEC                         | x                                                            | SuppliesToCountriesOutsideTheEC                                                                                                                             |
-| 3b      | Supplies/services to EU countries                                        | SuppliesToCountriesWithinTheEC                          | x                                                            | SuppliesToCountriesWithinTheEC                                                                                                                              |
-| 3c      | Installation/distance sales within the EU                                | InstallationDistanceSalesWithinTheEC                    | x                                                            | InstallationDistanceSalesWithinTheEC                                                                                                                        |
-| **4**   | **Goods and services supplied to you from abroad**                       |                                                         |                                                              |                                                                                                                                                             |
-| 4a      | Supplies/services from non-EU countries                                  | TurnoverFromTaxedSuppliesFromCountriesOutsideTheEC      | ValueAddedTaxOnSuppliesFromCountriesOutsideTheEC             | SuppliesFromCountriesOutsideTheEC *SuppliesFromCountriesOutsideTheECUseTax*                                                                                 |
-| 4b      | Supplies/services from EU countries                                      | TurnoverFromTaxedSuppliesFromCountriesWithinTheEC       | ValueAddedTaxOnSuppliesFromCountriesWithinTheEC              | SuppliesFromCountriesWithinTheEC SuppliesFromCountriesWithinTheECUseTax                                                                                     |
-| **5**   | **Input tax and grand total**                                            |                                                         |                                                              |                                                                                                                                                             |
-| *5a*    | *Sales tax payable*                                                      | x                                                       | ValueAddedTaxOwed                                            | 1a + 1b + 1c +1d + 2a + 4a + 4b                                                                                                                             |
-| 5b      | Input tax                                                                | x                                                       | ValueAddedTaxOnInput                                         | ValueAddedTaxOnInput *SuppliesServicesByWhichVATTaxationIsTransferredUseTax SuppliesFromCountriesOutsideTheECUseTax SuppliesFromCountriesWithinTheECUseTax* |
-| *5c*    | *Subtotal*                                                               | x                                                       |                                                              |                                                                                                                                                             |
-| 5d      | Tax relief under the small businesses scheme                             | x                                                       | SmallEntrepreneurProvisionReduction                          | SmallEntrepreneurProvisionReduction                                                                                                                         |
-| **5g**  | **Net VAT amount that will be paid to the tax authorities or reclaimed** | x                                                       | ValueAddedTaxOwedToBePaidBack                                | 5a + 5b + 5d                                                                                                                                                |
+<table width="520">
+<tbody>
+<tr>
+<td width="47">
+<p><strong>Box</strong></p>
+</td>
+<td width="265">
+<p><strong>Description</strong></p>
+</td>
+<td width="104">
+<p><strong>Lookup result</strong></p>
+</td>
+<td width="104">
+<p><strong>Tax base (XML element) / Tax (XML element)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><strong>1</strong></p>
+</td>
+<td width="265">
+<p><strong>Goods or services in the Netherlands</strong></p>
+</td>
+<td width="104">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td width="104">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>1a</p>
+</td>
+<td width="265">
+<p>Supplies/services taxed at the general rate</p>
+</td>
+<td width="104">
+<p>SuppliesServicesGeneralTariff</p>
+</td>
+<td width="104">
+<p>TaxedTurnoverSuppliesServicesGeneralTariff / ValueAddedTaxSuppliesServicesGeneralTariff</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>1b</p>
+</td>
+<td width="265">
+<p>Supplies/services taxed at the reduced rate</p>
+</td>
+<td width="104">
+<p>SuppliesServicesReducedTariff</p>
+</td>
+<td width="104">
+<p>TaxedTurnoverSuppliesServicesReducedTariff / ValueAddedTaxSuppliesServicesReducedTariff</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>1c</p>
+</td>
+<td width="265">
+<p>Supplies/services taxed at other rates, except 0%</p>
+</td>
+<td width="104">
+<p>SuppliesServicesOtherRates</p>
+</td>
+<td width="104">
+<p>TaxedTurnoverSuppliesServicesOtherRates / ValueAddedTaxSuppliesServicesOtherRates</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>1d</p>
+</td>
+<td width="265">
+<p>Private use</p>
+</td>
+<td width="104">
+<p>PrivateUse</p>
+</td>
+<td width="104">
+<p>TaxedTurnoverPrivateUse / ValueAddedTaxPrivateUse</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>1e</p>
+</td>
+<td width="265">
+<p>Supplies/services taxed at 0% or not taxed at your level</p>
+</td>
+<td width="104">
+<p>SuppliesServicesNotTaxed</p>
+</td>
+<td width="104">
+<p>SuppliesServicesNotTaxed / x</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><strong>2</strong></p>
+</td>
+<td width="265">
+<p><strong>Domestic reverse-charge mechanisms</strong></p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>2a</p>
+</td>
+<td width="265">
+<p>Supplies/services for which the VAT has been reverse-charged to you</p>
+</td>
+<td width="104">
+<p>SuppliesServicesByWhichVATTaxationIsTransferred</p>
+<p>&nbsp;</p>
+<p><em>SuppliesServicesByWhichVATTaxationIsTransferredUseTax</em></p>
+</td>
+<td width="104">
+<p>TurnoverSuppliesServicesByWhichVATTaxationIsTransferred / ValueAddedTaxSuppliesServicesByWhichVATTaxationIsTransferred</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><strong>3</strong></p>
+</td>
+<td width="265">
+<p><strong>Goods and services to/in foreign countries</strong></p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>3a</p>
+</td>
+<td width="265">
+<p>Supplies to non-EU countries (export)</p>
+</td>
+<td width="104">
+<p>SuppliesToCountriesOutsideTheEC</p>
+</td>
+<td width="104">
+<p>SuppliesToCountriesOutsideTheEC / x</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>3b</p>
+</td>
+<td width="265">
+<p>Supplies/services to EU countries</p>
+</td>
+<td width="104">
+<p>SuppliesToCountriesWithinTheEC</p>
+</td>
+<td width="104">
+<p>SuppliesToCountriesWithinTheEC / x</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>3c</p>
+</td>
+<td width="265">
+<p>Installation/distance sales within the EU</p>
+</td>
+<td width="104">
+<p>InstallationDistanceSalesWithinTheEC</p>
+</td>
+<td width="104">
+<p>InstallationDistanceSalesWithinTheEC / x</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><strong>4</strong></p>
+</td>
+<td width="265">
+<p><strong>Goods and services supplied to you from abroad</strong></p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>4a</p>
+</td>
+<td width="265">
+<p>Supplies/services from non-EU countries</p>
+</td>
+<td width="104">
+<p>SuppliesFromCountriesOutsideTheEC</p>
+<p>&nbsp;</p>
+<p><em>SuppliesFromCountriesOutsideTheECUseTax</em></p>
+</td>
+<td width="104">
+<p>TurnoverFromTaxedSuppliesFromCountriesOutsideTheEC / ValueAddedTaxOnSuppliesFromCountriesOutsideTheEC</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>4b</p>
+</td>
+<td width="265">
+<p>Supplies/services from EU countries</p>
+</td>
+<td width="104">
+<p>SuppliesFromCountriesWithinTheEC</p>
+<p>&nbsp;</p>
+<p>SuppliesFromCountriesWithinTheECUseTax</p>
+</td>
+<td width="104">
+<p>TurnoverFromTaxedSuppliesFromCountriesWithinTheEC / ValueAddedTaxOnSuppliesFromCountriesWithinTheEC</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><strong>5</strong></p>
+</td>
+<td width="265">
+<p><strong>Input tax and grand total</strong></p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><em>5a</em></p>
+</td>
+<td width="265">
+<p><em>Sales tax payable</em></p>
+</td>
+<td width="104">
+<p>1a + 1b + 1c +1d + 2a + 4a + 4b</p>
+</td>
+<td width="104">
+<p>X / ValueAddedTaxOwed</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>5b</p>
+</td>
+<td width="265">
+<p>Input tax</p>
+</td>
+<td width="104">
+<p>ValueAddedTaxOnInput</p>
+<p>&nbsp;</p>
+<p><em>SuppliesServicesByWhichVATTaxationIsTransferredUseTax</em></p>
+<p><em>&nbsp;</em></p>
+<p><em>SuppliesFromCountriesOutsideTheECUseTax</em></p>
+<p><em>&nbsp;</em></p>
+<p><em>SuppliesFromCountriesWithinTheECUseTax</em></p>
+<p>&nbsp;</p>
+</td>
+<td width="104">
+<p>x / ValueAddedTaxOnInput</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><em>5c</em></p>
+</td>
+<td width="265">
+<p><em>Subtotal</em></p>
+</td>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+<td width="104">
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p>5d</p>
+</td>
+<td width="265">
+<p>Tax relief under the small businesses scheme</p>
+</td>
+<td width="104">
+<p>SmallEntrepreneurProvisionReduction</p>
+</td>
+<td width="104">
+<p>x / SmallEntrepreneurProvisionReduction</p>
+</td>
+</tr>
+<tr>
+<td width="47">
+<p><strong>5g</strong></p>
+</td>
+<td width="265">
+<p><strong>Net VAT amount that will be paid to the tax authorities or reclaimed</strong></p>
+</td>
+<td width="104">
+<p>5a + 5b + 5d</p>
+</td>
+<td width="104">
+<p>x / ValueAddedTaxOwedToBePaidBack</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ## Set up VAT declaration for Netherlands
 
@@ -91,32 +394,55 @@ steps:
 4.  On the **Conditions** FastTab, associate the sales tax codes and report
     fields.
 
-| **Column**             | **Description**                                                                                                                                                                                                                                                               |
-|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lookup result          | Select the report field for setup. For more information about the report fields and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this topic.                                                    |
-| Tax code               | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code are collected in the appropriate report field. Separate the sales tax codes so that one sales tax code generates amounts in only one report field. |
-| Transaction classifier | If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one report field, set up a transaction classifier. The following transaction classifiers are available:                                                                      |
+<table>
+<thead>
+<tr>
+<td width="150">
+<p><strong>Column</strong></p>
+</td>
+<td width="700">
+<p><strong>Description</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="150">
+<p>Lookup result</p>
+</td>
+<td width="700">
+<p>Select the report field for setup. For more information about the report fields and their assignment to VAT declaration rows, see the&nbsp;<a href="#_VAT_declaration_overview_1">VAT declaration overview</a>&nbsp;section earlier in this topic.</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p>Tax code</p>
+</td>
+<td width="700">
+<p>Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code are collected in the appropriate report field.</p>
+<p>Separate the sales tax codes so that one sales tax code generates amounts in only one report field.</p>
+</td>
+</tr>
+<tr>
+<td width="150">
+<p>Transaction classifier</p>
+</td>
+<td width="700">
+<p>If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one report field, set up a transaction classifier. The following transaction classifiers are available:</p>
+<p>o&nbsp;&nbsp; <strong>Purchase</strong></p>
+<p>o&nbsp;&nbsp; <strong>PurchaseExempt</strong>&nbsp;(tax-exempt purchase)</p>
+<p>o&nbsp;&nbsp; <strong>PurchaseReverseCharge</strong>&nbsp;(tax receivable from a purchase reverse charge)</p>
+<p>o&nbsp;&nbsp; <strong>Sales</strong></p>
+<p>o&nbsp;&nbsp; <strong>SalesExempt</strong>&nbsp;(tax-exempt sale)</p>
+<p>o&nbsp;&nbsp; <strong>SalesReverseCharge</strong>&nbsp;(tax payable from a purchase reverse charge or a sales reverse charge)</p>
+<p>o&nbsp;&nbsp; <strong>Use tax</strong></p>
+<p>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is&nbsp;<strong>PurchaseCreditNote</strong>&nbsp;(purchase credit note).</p>
+</td>
+</tr>
+</tbody>
+</table>
 
--   **Purchase**
-
--   **PurchaseExempt** (tax-exempt purchase)
-
--   **PurchaseReverseCharge** (tax receivable from a purchase reverse charge)
-
--   **Sales**
-
--   **SalesExempt** (tax-exempt sale)
-
--   **SalesReverseCharge** (tax payable from a purchase reverse charge or a
-    sales reverse charge)
-
--   **Use tax**
-
-For each transaction classifier, a classifier for the credit note is also
-available. For example, one of these classifiers
-is **PurchaseCreditNote** (purchase credit note).
-
-#### [./media/image1.png](./media/App-parameters-VAT-XML-1.png)
+#### [Application-parameters](/media/App-parameters-VAT-XML-1.png)
 
 
 
@@ -142,16 +468,16 @@ the **How-to get XSD schema and namespaces for the Dutch taxonomy** (add link)
 **Note**! If you don’t set up transmission of VAT declaration to Digipoort, you
 can configure any value in the lookup result.
 
-1.  In the **State** field, select **Completed**.
+3.  In the **State** field, select **Completed**.
 
-2.  On the Action Pane, select **Export** to export the parameters to an XML
+4.  On the Action Pane, select **Export** to export the parameters to an XML
     file.
 
-3.  Select the **VAT declaration Excel (NL**) configuration, and then, on the
+5.  Select the **VAT declaration Excel (NL**) configuration, and then, on the
     Action Pane, select **Import** to import the parameters that you configured
     for **VAT declaration XML (NL)**
 
-4.  In the **State** field, select **Completed**.
+6.  In the **State** field, select **Completed**.
 
 ### Set up VAT reporting format
 
@@ -174,21 +500,47 @@ To preview VAT declaration in Excel, follow these steps:
 
 2.  Enter the following information.
 
-| **Field**                 | **Description**                                |
-|---------------------------|------------------------------------------------|
-| Settlement period         | Select the settlement period.                  |
-| Sales tax payment version | Select one of the following values:            |
-| From date                 | Select the first date of the reporting period. |
-
--   **Original**: Generate a report for sales tax transactions of the original
-    sales tax payment or before the sales tax payment is generated.
-
--   **Corrections**: Generate a report for sales tax transactions of all the
-    subsequent sales tax payments for the period. The **Sales tax payment
-    version** field is set to **Latest corrections**.
-
--   **Total list**: Generate a report for all sales tax transactions for the
-    period, including the original and all corrections.
+<table>
+<thead>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Settlement period</p>
+</td>
+<td>
+<p>Select the settlement period.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sales tax payment version</p>
+</td>
+<td>
+<p>Select one of the following values:</p>
+<p>o <strong>Original</strong>: Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</p>
+<p>o <strong>Corrections</strong>: Generate a report for sales tax transactions of all the subsequent sales tax payments for the period. The&nbsp;<strong>Sales tax payment version</strong>&nbsp;field is set to&nbsp;<strong>Latest corrections</strong>.</p>
+<p>o <strong>Total list</strong>: Generate a report for all sales tax transactions for the period, including the original and all corrections.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>From date</p>
+</td>
+<td>
+<p>Select the first date of the reporting period.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 3.  Select **OK** and review the Excel file that is generated.
 
@@ -201,17 +553,46 @@ To settle and post sales tax, follow these steps:
 
 2.  Enter the following information.
 
-| **Field**                 | **Description**                                |
-|---------------------------|------------------------------------------------|
-| Settlement period         | Select the settlement period.                  |
-| Sales tax payment version | Select one of the following values:            |
-| From date                 | Select the first date of the reporting period. |
-
--   **Original**: Generate the original sales tax payment for the settlement
-    period.
-
--   **Latest corrections**: Generate a correction sales tax payment after the
-    original sales tax payment for the settlement period was created.
+<table>
+<thead>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Settlement period</p>
+</td>
+<td>
+<p>Select the settlement period.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sales tax payment version</p>
+</td>
+<td>
+<p>Select one of the following values:</p>
+<p>o <strong>Original</strong>: Generate the original sales tax payment for the settlement period.</p>
+<p>o <strong>Latest corrections</strong>: Generate a correction sales tax payment after the original sales tax payment for the settlement period was created.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>From date</p>
+</td>
+<td>
+<p>Select the first date of the reporting period.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 3.  Select **OK**.
 
@@ -381,29 +762,29 @@ that you imported.
 <table>
 <thead>
 <tr>
-<td width="162">
+<td width="250">
 <p><strong>Field</strong></p>
 </td>
-<td width="463">
+<td width="900">
 <p><strong>Description</strong></p>
 </td>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td width="162">
+<td width="250">
 <p>Settlement period</p>
 </td>
-<td width="463">
+<td width="900">
 <p>Select the settlement period.</p>
 <p>If you selected&nbsp;<strong>Collect data</strong>&nbsp;in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments.</p>
 </td>
 </tr>
 <tr>
-<td width="162">
+<td width="250">
 <p>Tax declaration version</p>
 </td>
-<td width="463">
+<td width="900">
 <p>Select one of the following values:</p>
 <p>o&nbsp;&nbsp; <strong>Original</strong>: Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</p>
 <p>o&nbsp;&nbsp; <strong>Corrections</strong>: Generate a report for sales tax transactions of all the subsequent sales tax payments for the period. The&nbsp;<strong>Sales tax payment version</strong>&nbsp;field is set to&nbsp;<strong>Latest corrections</strong>.</p>
@@ -413,28 +794,28 @@ that you imported.
 </td>
 </tr>
 <tr>
-<td width="162">
+<td width="250">
 <p>Tax jurisdiction</p>
 </td>
-<td width="463">
+<td width="900">
 <p>Select&nbsp;<strong>Default to use information about the tax representative and the contact person from the fields below.</strong></p>
 <p><strong>Select Netherlands to use information about the tax representative and the contact person from the Electronic tax declaration parameters page.</strong></p>
 </td>
 </tr>
 <tr>
-<td width="162">
+<td width="250">
 <p>Tax representative</p>
 </td>
-<td width="463">
+<td width="900">
 <p>If declaration is provided by the tax representative, select <strong>Tax consultant</strong> from the list of parties.</p>
 <p>Registration ID, first name, middle name, last name, personal title, and contact information of type <strong>Phone</strong> must be specified for the selected party and will be exported to the XML file.</p>
 </td>
 </tr>
 <tr>
-<td width="162">
+<td width="250">
 <p>Contact person</p>
 </td>
-<td width="463">
+<td width="900">
 <p>Select the employee who created the report. The first name, last name, and telephone number of the employee must be specified and will be exported to the XML file.</p>
 </td>
 </tr>
@@ -455,8 +836,8 @@ collected sales tax payments.
     Digipoort. The report will be sent to Digipoort and status of the message
     will be changed to **Report sent**.
 
->   If error occurred during sending of the report, the status of the message is
->   changed to:
+    If error occurred during sending of the report, the status of the message is
+    changed to:
 
 -   **Report sending error (technical)**: If an error occurs on the Finance side
     and the file didn’t reach Digipoort.
@@ -468,18 +849,16 @@ collected sales tax payments.
     message. The response from Digipoort will be imported and status of the
     message will be changed to **Report acknowledged**.
 
->   If error occurred during receiving of the status, the status of the message
->   is changed to:
+    If error occurred during receiving of the status, the status of the message
+    is changed to:
 
 -   **Report getting status error (business)**: If Digipoort didn’t acknowledge
     the report. In this case, the Infolog shows a list of errors received from
-    Digipoort.
+    Digipoort. To review list of errors later, on the **Action log** FastTab, select a line
+    with **Get report status**, and select **Attachments**. Review the list of
+    errors in the **Notes** field.
 
->   To review list of errors later, on the **Action log** FastTab, select a line
->   with **Get report status**, and select **Attachments**. Review the list of
->   errors in the **Notes** field.
-
--   **Report getting status error (business)**: If a technical error occurred
+-   **Report getting status error (technical)**: If a technical error occurred
     when importing the response from Digipoort.
 
 ### Run a VAT declaration for several legal entities
