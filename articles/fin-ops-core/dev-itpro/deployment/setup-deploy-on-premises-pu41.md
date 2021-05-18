@@ -45,7 +45,7 @@ The Finance + Operations application consists of three main components:
 
 These components depend on the following system software:
 
-- Microsoft Windows Server 2016 (Only English-language operating system installations are supported.)
+- Microsoft Windows Server 2019 or Microsoft Windows Server 2016 (Only English-language operating system installations are supported.)
 - Microsoft SQL Server 2016 SP2
 
     > [!IMPORTANT]
@@ -62,7 +62,7 @@ These components depend on the following system software:
 - SQL Server Management Studio
 - Standalone Microsoft Azure Service Fabric 7.2 or later
 - Microsoft Windows PowerShell 5.0 or later
-- Active Directory Federation Services (AD FS) on Windows Server 2016
+- Active Directory Federation Services (AD FS) on Windows Server 2019 or Windows Server 2016
 - Domain controller
 
     > [!IMPORTANT]
@@ -72,7 +72,7 @@ These components depend on the following system software:
     > - [Understanding Active Directory Domain Services (AD DS) Functional Levels](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10))
     > - [Full 2-way trust](../../fin-ops/get-started/system-requirements-on-prem.md#full-2-way-trust)
 
-- Optional but **highly** recommended: Active Directory Certificate Services (AD CS) on Windows Server 2016
+- Optional but **highly** recommended: Active Directory Certificate Services (AD CS) on Windows Server 2019 or Windows Server 2016
 
 ## LCS
 
@@ -107,7 +107,7 @@ If you're using VMware, you must implement the fixes that are documented on the 
 
 The hardware configuration includes the following components:
 
-- A standalone Service Fabric cluster that is based on Windows Server 2016 VMs
+- A standalone Service Fabric cluster that is based on Windows Server 2019 or Windows Server 2016 VMs
 - SQL Server (Both Clustered SQL and Always-On are supported.)
 - AD FS for authentication
 - Server Message Block (SMB) version 3 file share for storage
@@ -578,7 +578,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     5. Verify that all nodes appear as green.
 
     > [!IMPORTANT]
-    > - If your client machine is a server machine (for example, a machine that is running Windows Server 2016), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
+    > - If your client machine is a server machine (for example, a machine that is running Windows Server 2019), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
     > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
 
 ### <a name="configurelcs"></a>Step 11. Configure LCS connectivity for the tenant
@@ -591,7 +591,7 @@ Only user accounts that have the Global Administrator directory role can add cer
 
 > [!IMPORTANT]
 > - You must configure the certificate exactly **one** time per tenant. All on-premises environments under the same tenant must use the same certificate to connect with LCS.
-> - If you run the script below on a server machine (for example, a machine that is running Windows Server 2016), you must temporarily turn off the Internet Explorer Enhanced Security Configuration. Otherwise, the content on the Azure sign-in page will be blocked.
+> - If you run the script below on a server machine (for example, a machine that is running Windows Server 2019), you must temporarily turn off the Internet Explorer Enhanced Security Configuration. Otherwise, the content on the Azure sign-in page will be blocked.
 
 1. Sign in to the customer's [Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
 2. From the **infrastructure** folder, run the following commands to determine whether the certificate is already registered.
@@ -943,7 +943,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
 
 ### <a name="configureadfs"></a>Step 18. Configure AD FS
 
-Before you can complete this procedure, AD FS must be deployed on Windows Server 2016. For information about how to deploy AD FS, see [Deployment Guide Windows Server 2016 and 2012 R2 AD FS Deployment Guide](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
+Before you can complete this procedure, AD FS must be deployed on Windows Server 2019 or Windows Server 2016. For information about how to deploy AD FS, see [Deployment Guide Windows Server 2016 and 2012 R2 AD FS Deployment Guide](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
 
 Finance + Operations requires additional configuration of AD FS, beyond the default out-of-box configuration. The following Windows PowerShell commands must be run on the machine where the AD FS role service is installed. The user account must have enough permissions to administer AD FS. For example, the user must have a domain administrator account. For complex AD FS scenarios, consult your domain administrator.
 
