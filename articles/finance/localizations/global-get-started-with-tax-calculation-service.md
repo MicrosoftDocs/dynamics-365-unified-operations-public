@@ -132,7 +132,7 @@ After you complete the setup in RCS, as described in the previous section, you w
 
 The setup in this section is done by legal entity. You must configure it for each legal entity that you want to enable Tax Calculation for in Finance.
 
-1. In Finance, go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calcluation setup (Preview)**.
+1. In Finance, go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation setup (Preview)**.
 2. On the **General** tab, set the following fields:
 
     - **Enable Tax Calculation** – Select this check box to enable Tax Calculation add-in for the legal entity. If it isn't enabled for the current legal entity, the legal entity will continue to use the existing tax engine to determine and calculate tax.
@@ -152,7 +152,7 @@ The setup in this section is done by legal entity. You must configure it for eac
 
 ## Transaction processing
 
-After you've completed all the setup procedures, you can use Tax Calcuation to determine and calculate tax in Finance. The steps to process transactions remain the same. The following transactions are supported in Finance version 10.0.18:
+After you've completed all the setup procedures, you can use Tax Calculation to determine and calculate tax in Finance. The steps to process transactions remain the same. The following transactions are supported in Finance version 10.0.18:
 
 - Sales process
 
