@@ -41,13 +41,13 @@ In Commerce site builder, dimensions settings are defined at **Site Settings \> 
 
 There are two dimension settings available:
 
-- **Dimensions to display as swatch** - This setting defines which dimensions should appear as a swatch on e-commerce site pages such as product details pages (PDPs) and search result list pages. Any combination of color, size, and style dimensions can be displayed as a swatch. If a dimension is selected to be displayed as a swatch, Commerce module rendering will look for an available hex code swatch configuration. If there is no hex code configured, system logic will fallback and check for an image URL swatch configuration. If both the hex code and image URL are missing, text will be displayed. 
+- **Dimensions to display as image** - This setting defines which dimensions should appear as a swatch on e-commerce site pages such as product details pages (PDPs) and search result list pages. Any combination of color, size, and style dimensions can be displayed as a swatch. If a dimension is selected to be displayed as a swatch, Commerce module rendering will look for an available hex code swatch configuration. If there is no hex code configured, system logic will fallback and check for an image URL swatch configuration. If both the hex code and image URL are missing, text will be displayed. 
 
     The following example image shows an e-commerce site PDP displaying color and size swatches, where the color dimension has a hex code configured and displays swatches as colors, but the size dimension has neither a hex code nor image URL configured and so displays text. 
 
     ![Example of displaying color as swatch on e-commerce product details page](./dev-itpro/media/swatch_pdp.png)
 
-- **Dimensions to display in Product card** - This setting allows dimensions to be displayed on product cards that are shown on lists and list pages. If a dimension must be displayed on a product card, this setting must be enabled for that dimension and it should also be enabled as a swatch. For example, to display Color on the product cards, the following should be configured. In addition, the swatch selection behavior on product cards along with the refiner experience is most optimized for Color dimension. For other dimensions, a view extension may be needed to provide an optimal experience. 
+- **Dimensions to display in product card** - This setting allows dimensions to be displayed on product cards that are shown on lists and list pages. For a dimension to be displayed on a product card, this setting must be enabled for that dimension and the **Dimensions to display as image** should also be enabled. The swatch selection behavior on product cards is optimized for the color dimension. For other dimensions, a view extension may be needed to customize swatch selection behavior. 
 
     The following example image shows color swatches displayed on product cards on an e-commerce site list page. 
 
