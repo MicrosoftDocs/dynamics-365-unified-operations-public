@@ -1503,9 +1503,9 @@
             - name: Netherlands reporting
               items:
               - name: VAT declaration
-                href: localizations/emea-nld-VAT-declaration-tax-declaration-model.md
+                href: localizations/emea-nl-vat-declaration-netherlands.md
               - name: EU sales list
-                href: localizations/emea-nld-EU-sales-list.md
+                href: localizations/emea-nl-eu-sales-list.md
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
       - name: Australia
