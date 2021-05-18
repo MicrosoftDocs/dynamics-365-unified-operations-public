@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 04/21/2021
+ms.date: 05/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -208,8 +208,8 @@ The following table shows the prerequisite software that is installed on the VMs
 
 | Node type | Component | Details |
 |-----------|-----------|---------|
-| AOS       | SNAC – ODBC driver 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> |
-| AOS       | SNAC – ODBC driver 17.5.x | <p>This driver is required for upgrade to Platform update 15 or higher</p><p><https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752&preserve-view=true></p> |
+| AOS       | SNAC – ODBC driver 13 | </sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> |
+| AOS       | SNAC – ODBC driver 17.5.x | <p>This driver is required for upgrade to Platform update 15 or higher</p><p></sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752&preserve-view=true></p> |
 | AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
 | AOS       | The Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
@@ -485,9 +485,9 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
 
     | Component | Download link | Expected file name |
     |-----------|---------------|--------------------|
-    | SNAC – ODBC driver 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> | msodbcsql.msi |
-    | SNAC – ODBC driver 17.5.x | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752&preserve-view=true> | msodbcsql\_17.msi |
-    | SQL Server Management Studio 17.9.1 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> | SSMS-Setup-\*.exe |
+    | SNAC – ODBC driver 13 | </sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> | msodbcsql.msi |
+    | SNAC – ODBC driver 17.5.x | </sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752&preserve-view=true> | msodbcsql\_17.msi |
+    | SQL Server Management Studio 17.9.1 | </sql/ssms/download-sql-server-management-studio-ssms> | SSMS-Setup-\*.exe |
     | Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> | vcredist\_x64.exe |
     | Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | Go to <https://lcs.dynamics.com/V2/SharedAssetLibrary>, select **Model** as the asset type, and then select **VC++ 17 Redistributables**. | vc\_redist.x64\_14\_16\_27024.exe |
     | Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> | AccessDatabaseEngine\_x64.exe |
