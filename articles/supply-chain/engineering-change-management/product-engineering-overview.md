@@ -63,7 +63,11 @@ Next, turn on the configuration keys by following these steps.
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.
 1. Expand the **Trade** node.
-1. Enable the configuration key for the main feature by selecting the **Engineering Change Management** check box. Disable the subconfiguration key Engineering Change Management for Process Manufacturing. Disregard the error given that a feature must be enabled first.
+1. Enable the configuration key for the main feature by selecting the **Engineering Change Management** check box.
+1. Expand the **Engineering Change Management** node and make the following settings
+    - **Attribute search** – Select this check box to enable the [attribute search feature](engineering-attributes-and-search.md). We recommend enabling this feature, but you can clear this check box if you won't use it.
+    - **Change management for process manufacturing** – This feature is not yet available, so make sure this check box is *not* selected.
+1. If you see an error message claiming that a feature must be enabled before you can continue, just ignore it.
 1. If you also want to use the version dimension, then select the **Product dimension - Version** check box. (This check box is further down the list, not nested under the **Engineering Change Management** node.)
 1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
