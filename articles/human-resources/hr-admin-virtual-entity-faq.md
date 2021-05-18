@@ -14,7 +14,6 @@ ms.technology:
 # ms.search.form:
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
