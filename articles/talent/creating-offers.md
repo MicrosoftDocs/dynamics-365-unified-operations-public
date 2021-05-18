@@ -4,11 +4,9 @@
 title: Create, approve, and sign offers in Attract
 description: This topic details how to create, approve, and sign an offer for a candidate using Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

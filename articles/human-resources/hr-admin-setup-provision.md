@@ -4,11 +4,9 @@
 title: Provision Human Resources
 description: This article walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: SystemAdministrationWorkspaceForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -63,6 +60,9 @@ To use LCS to manage your Human Resources environments, you must first create an
 
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index) by using the account that you used to subscribe to Human Resources.
 
+   > [!NOTE]
+   > To ensure successful provisioning, the account you use to provision the Human Resources environment must be assigned to either the **System Administrator** or **System Customizer** role in the Power Apps environment associated with the Human Resources environment. See [Configure user security to resources](https://docs.microsoft.com/power-platform/admin/database-security) for more information on assigning security roles to users in the Power Platform.
+
 2. Select the plus sign (**+**) to create a project.
 
 3. Select **Microsoft Dynamics 365 Human Resources** as the product name and product version.
@@ -87,7 +87,7 @@ After you've created an LCS project, you can provision Human Resources into an e
     
 3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Human Resources Test Drive experience. Demo data is beneficial for long-term demo or training environments, and should never be used for production environments. You must choose this option upon initial deployment. You can't update an existing deployment later.
 
-4. Human Resources is always provisioned into a Microsoft Power Apps environment to enable Power Apps integration and extensibility. Read the “Selecting a Power Apps environment” section of this article before you continue. If you don't already have a Power Apps environment, select Manage environments in LCS or navigate to the Power Apps Admin center. Then follow the steps to [Create a Power Apps environment](https://docs.microsoft.com/powerapps/administrator/create-environment).
+4. Human Resources is always provisioned into a Microsoft Power Apps environment to enable Power Apps integration and extensibility. Read the “Selecting a Power Apps environment” section of this article before you continue. If you don't already have a Power Apps environment, select Manage environments in LCS or navigate to the Power Apps Admin center. Then follow the steps to [Create a Power Apps environment](/powerapps/administrator/create-environment).
 
 5. Select the environment to provision Human Resources into.
 
@@ -122,16 +122,33 @@ Use the following guidance when determining which Power Apps environment to depl
    
     - **Trial environments** - These environments are created with an expiration date. Upon expiration, your environment and any Human Resources instances contained within it will be removed automatically.
    
-    - **Unsupported regions** - Currently Human Resources is only supported in the following regions: United States, Europe, United Kingdom, Australia, Canada, and Asia.
-
-    > [!NOTE]
-    > The Human Resources environment is provisioned in the same region in which the Power Apps environment is provisioned. Migrating a Human Resources environment to another region is not supported.
+    - **Unsupported geographies** - The environment must be in a supported geography. For more information, see [Supported geographies](hr-admin-setup-provision.md#supported-geographies).
 
 6. After you've determined the correct environment to use, you can continue with the provisioning process. 
- 
+
+### Supported geographies
+
+Human Resources currently supports the following geographies:
+
+- United States
+- Europe
+- United Kingdom
+- Australia
+- Canada
+- Asia 
+
+When you create a Human Resources environment, you select a Power Apps environment to associate with the Human Resources environment. The Human Resources environment is then provisioned in the same Azure geography as the selected Power Apps environment. You can select where the Human Resources environment and database physically reside by selecting the geography when creating the Power Apps enviornment that will be associated with the Human Resources environment.
+
+You can select the Azure *geography* in which the environment is provisioned, but you can't select the specific Azure *region*. Automation determines the specific region within the geography in which the environment is created to optimize load balancing and performance. You can find information on Azure geographies and regions in the documentation on [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies).
+
+The data for the Human Resources environment will always be contained within the Azure geography in which it is created. However, it won't always be contained within the same Azure region. For disaster recovery purposes, the data will be replicated in both the primary Azure region and a secondary failover region within the geography.
+
+ > [!NOTE]
+ > Migrating a Human Resources environment from one Azure region to another isn't supported.
+
 ## Grant access to the environment
 
-By default, the global administrator who created the environment has access to it. You must explicitly grant access to additional application users. You must add users and assign the appropriate roles to them in the Human Resources environment. The global administrator that deployed Human Resources must also launch both Attract and Onboard to complete the initialization and enable access for other tenant users. Until this happens, other users will not be able to access Attract and Onboard and will get access violation errors. For more information, see [Create new users](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+By default, the global administrator who created the environment has access to it. You must explicitly grant access to additional application users. You must add users and assign the appropriate roles to them in the Human Resources environment. The global administrator that deployed Human Resources must also launch both Attract and Onboard to complete the initialization and enable access for other tenant users. Until this happens, other users will not be able to access Attract and Onboard and will get access violation errors. For more information, see [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

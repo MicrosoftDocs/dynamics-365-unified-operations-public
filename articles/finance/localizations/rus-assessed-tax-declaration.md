@@ -4,11 +4,9 @@
 title: Assessed tax declaration (Russia)
 description: This topic explains how to set up and use assessed tax declarations for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 01/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -411,7 +409,7 @@ To create corrective registers, follow these steps.
     - Property tax declaration model mapping
     - Property tax declaration format 5.06
 
-    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2. You can upload Data management package settings to work with the assessed tax declaration. Follow these steps:
 

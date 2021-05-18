@@ -4,11 +4,9 @@
 title: Establish common values for engineering change management
 description: This topic describes how to establish common values that are used for parameters in various parts of engineering change management.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

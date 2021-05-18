@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Talent (February 14, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for February 14, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/14/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

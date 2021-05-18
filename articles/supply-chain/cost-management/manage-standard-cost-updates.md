@@ -4,16 +4,14 @@
 title: Manage standard cost updates
 description: Updates to standard cost data can be managed by using two different approaches - the one-version approach or the two-version approach. 
 author: AndersGirke
-manager: tfehr
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: CostingVersion, InventItemPrice
+ms.search.form: CostingVersion, InventItemPrice, InventParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -48,6 +46,8 @@ The following example illustrates how the one-version and two-version approaches
 This example used one additional costing version for managing updates throughout the year 2020. More than one additional costing version can be used, such as a separate version for each batch of updates. When more than one additional costing is used, the fallback must be expressed as the active costs, because the active costs are spread over multiple costing versions.
 
 ## Financial dimensions for the standard cost revaluation
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Activating a new standard price will typically revaluate the on-hand inventory value by standard cost revaluation transactions. Usually, the financial dimensions of the item are then posted on the transactions. However, if you would like to control whether and how the financial dimensions are posted, use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the feature named *Options of defaulting financial dimensions for inventory standard cost revaluation*. After enabling this feature, go to **Cost management > Inventory accounting policies setup > Parameters** and set the new **Origin of financial dimension** drop-down list to one of the following values:
 

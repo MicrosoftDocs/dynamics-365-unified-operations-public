@@ -4,11 +4,9 @@
 title: Set up postdated checks
 description: This topic explains how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments. 
 author: kweekley
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -58,7 +56,11 @@ The role of this procedure is Treasurer. This procedure uses the USMF demo compa
     * Select the bank account that is used to deduct the invoice amount.  
 18. Click Save.
 19. Close the page.
-
-
+> [!NOTE]
+> To be able to post a postdated check to a bank account when the session date is greater than or equal to the maturity date, you must enable the feature **Maturity date validation of posting payment journal with postdated checks to bank account**. This feature allows you to post payment journals for vendors or customers with postdated checks, when the session date is greater than or equal to the maturity date.
+> 
+> When setting the **Method of payment** (**Accounts payable > Payment setup > Methods of payment**), do not fill in **Bridging account**. In this case, the offset account is filled in with the bank account, which is set up in the **Method of payment**.
+>  
+> When the feature is enabled and the session date is less than the maturity date, the following error message is displayed when posting a payment journal, "Maturity date must be less or equal to the session date if offset account type is Bank". If the feature is not enabled, you can post a payment journal with a postdated check when the session date is less than the maturity date.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

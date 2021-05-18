@@ -4,11 +4,9 @@
 title: System administration home page
 description: This topic lists resources that are available for system administrators.
 author: sericks007
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -51,7 +49,7 @@ Microsoft Dynamics Lifecycle Services (LCS) is a collaboration portal that provi
 
 The lifecycle of an implementation spans many phases from pre-sales through Analysis, Design and Development, Test, and Deployment to Operation, possibly in multiple iterative roll-outs. It can last a few months to multiple years, based on the scope and complexity of the project and the chosen deployment model, for example, in the managed cloud or on-premises. 
 
-The management of the implementation involves many different stakeholders from the customer and partner organizations and, especially in the cloud-hosted deployment model, from Microsoft. The implementation is supported through tools provided on LCS and through processes defined within the [Microsoft FastTrack](../../fin-ops/get-started/fasttrack-dynamics-365-overview.md) and through the partner's implementation approach. 
+The management of the implementation involves many different stakeholders from the customer and partner organizations and, especially in the cloud-hosted deployment model, from Microsoft. The implementation is supported through tools provided on LCS and through processes defined within the [Microsoft FastTrack](/dynamics365/fasttrack/) and through the partner's implementation approach. 
 
 - [Lifecycle Services resources](../lifecycle-services/lcs.md)
 - [Lifecycle Services (LCS) user guide](../lifecycle-services/lcs-user-guide.md)

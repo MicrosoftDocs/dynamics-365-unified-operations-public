@@ -4,11 +4,9 @@
 title: Plan case category security, case processes, and case categories
 description: This article describes the considerations and decisions that you must make during the planning process, before you begin to configure cases.
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

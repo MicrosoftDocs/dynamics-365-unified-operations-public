@@ -4,11 +4,9 @@
 title: Add custom buttons to the POS header bar
 description: This topic explains how to add a new custom button to the POS header bar. 
 author: mugunthanm
-manager: AnnBe
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

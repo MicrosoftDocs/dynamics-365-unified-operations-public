@@ -4,11 +4,9 @@
 title: Establish customer payment fees
 description: Create payment fees for customer payments. 
 author: ShivamPandey-msft
-manager: AnnBe 
 ms.date: 08/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

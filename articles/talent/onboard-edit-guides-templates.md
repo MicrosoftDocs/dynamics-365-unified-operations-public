@@ -4,11 +4,9 @@
 title: Edit onboarding guides and templates in Dynamics 365 Talent - Onboard
 description: This topic explains how to add activities and other information to onboarding guides and templates in Microsoft Dynamics 365 Talent - Onboard.
 author: andreabichsel
-manager:
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-talent
 ms.technology:
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: anbichse
 # ms.tgt_pltfrm:
 # ms.custom:
 # ms.assetid:
@@ -84,7 +81,7 @@ You can import activities from one or more templates into a guide or template.
 
 4. To preview the tasks in a new tab in your browser, select the **Open in new tab** button on any template.
 
-   [![Import activities](./media/onboard-edit-guide-preview-activities.png)](./media/onboard-edit-guide-preview-activities.png)
+   [![Preview activities](./media/onboard-edit-guide-preview-activities.png)](./media/onboard-edit-guide-preview-activities.png)
 
 5. Drag and drop the desired template to the place in your guide template where you want the activities to appear. Continue editing your guide or template.
 
@@ -192,7 +189,7 @@ To edit a contact, select the **Edit** button (the pencil symbol) to the right o
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
 - [What's new or changed in Dynamics 365 Talent](./whats-new.md)
-- [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Release plans](/business-applications-release-notes/index)
 - [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)
 
 

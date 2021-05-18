@@ -4,11 +4,9 @@
 title: Set up the components of a job
 description: This article describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManage
 audience: Application User
 # ms.devlang: 
 ms.author: anbichse
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 269054
@@ -93,7 +90,7 @@ You maintain job tasks by using the **Job tasks** page. On the **Job tasks** pag
 You use areas of responsibility to indicate the work roles, processes, and products that a worker who is in a position for a job is responsible for. For example, for a job that is named "Accountant," one area of responsibility might be "Financial reporting for product A." You maintain areas of responsibility by using the **Areas of responsibility** page, which you can find by using the Search function. On the **Areas of responsibility** page, enter a name and description for the responsibility. In the **Note** field, you can optionally enter additional information. The notes can be updated for a specific job without changing the notes that you entered here.
 
 ## Steps for creating a job
-Refer to the [Define new jobs](../fin-and-ops/hr/tasks/define-new-jobs.md) article for the step-by-step procedure for creating a new job. 
+Refer to the [Define new jobs](./hr-personnel-define-jobs.md) article for the step-by-step procedure for creating a new job. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Set up and install Regression suite automation tool tutorial
 description: This topic is a tutorial that shows how to set up and install Regression suite automation tool (RSAT).
 author: robinarh
-manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form:
 ROBOTS: NOINDEX, NOFOLLOW
@@ -61,7 +55,7 @@ This topic is a tutorial that helps you get setup and get started with RSAT and 
 
 ### User eligibility
 
-Make sure that the user is created in Azure DevOps and has a subscription level that provides access to Azure Test Plans. An Azure DevOps Test Plans license is required only if the user will create and manage test cases (that is, not all RSAT users require this license). For information about the license requirements, see [License requirements](https://docs.microsoft.com/azure/devops/test/manual-test-permissions#license-requirements).
+Make sure that the user is created in Azure DevOps and has a subscription level that provides access to Azure Test Plans. An Azure DevOps Test Plans license is required only if the user will create and manage test cases (that is, not all RSAT users require this license). For information about the license requirements, see [License requirements](/azure/devops/test/manual-test-permissions#license-requirements).
 
 ### Create a new Azure DevOps project
 

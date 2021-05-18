@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Insert data
 description: This topic describes how to insert data into tables by using X++.
 author: robinarh
-manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 150273
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
@@ -37,8 +23,8 @@ You can use SQL statements, either interactively or in source code, to insert on
 + **[insert method](#insert-method)** – Insert one row at a time.
 + **[doInsert method](#do-insert-method)** – Insert one row at a time.
 + **[insert\_recordset statement](#insert-recordset-statement)** – Copy multiple records directly from one or more tables into another table in one database trip.
-+ **[RecordInsertList.insertDatabase](../system-classes/recordinsertlist-class.md#method-insertdatabase)** – Insert multiple rows at the same time in one database trip. Use this construct when you don't have to sort the data.
-+ **[RecordSortedList.insertDatabase](../system-classes/recordsortedlist-class.md#method-insertdatabase)** – Insert multiple rows at the same time in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index.
++ **[RecordInsertList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)** – Insert multiple rows at the same time in one database trip. Use this construct when you don't have to sort the data.
++ **[RecordSortedList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)** – Insert multiple rows at the same time in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index.
 
 **RecordSortedList**, **RecordInsertList**, and **insert\_recordset** let you insert multiple records. By using these methods, you reduce communication between the application and the database. Therefore, you help increase performance. In some situations, record set–based operations can fall back to record-by-record operations. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
 

@@ -1,18 +1,12 @@
 ---
-# required metadata
-
 title: Write extensible code
 description: This topic provides information about how to write extensible code.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -55,8 +49,9 @@ SOLID is an acronym for five principles that you can use to make your code easie
 + **Single responsibility** – Classes and method should have a single responsibility and should not have side-effects. By following this principle, you help guarantee that extension points that are automatically created on public and protected methods will be great extension points.
 + **Open/closed**
 
-    - **Open for extension** – Open your solution for extensions by designing and considering the extension surface. After an extension point is made available, you're responsible for maintaining it. This responsibility adds significant restrictions to future development. It's often preferable to open a solution up for extension by demand. For example, use internal methods over public methods or private methods over protected methods.
-    - **Closed for modification** – Make your properties private, and make your methods either private or final-protected. In this way, no one can take advantage of a dependency on your logic, either through inheritance or extension.
+    - **Open for extension** – Open your solution for extensions by designing and considering the extension surface. After an extension point is made available, you're responsible for maintaining it. This responsibility adds significant restrictions to future development. It's often preferable to open a solution up for extension by demand. For example, use internal methods over public methods or private methods over protected methods. Limit your extension surface by making your properties private, and your methods either private or final-protected. In this way, no one can take advantage of a dependency on your logic, either through inheritance or extension.
+    - **Closed for modification** – Make your logic support extensions without requiring further modifications.
+
 
 + **Liskov substitution** – Derived classes must be able to be substituted for their base classes. For example, this substitution can be done by providing factories, by using SysExtension, and by using simple construct methods.
 + **Interface segregation** – Create concise interfaces. This principle lets extenders provide replacement implementations and is particularly valuable when it's used together with the next SOLID principle, dependency inversion.

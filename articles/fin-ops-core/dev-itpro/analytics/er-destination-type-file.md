@@ -4,11 +4,9 @@
 title: File ER destination type
 description: This topic provides information about configuring a file destination for an ER format.
 author: NickSelin
-manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

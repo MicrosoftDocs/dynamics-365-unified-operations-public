@@ -1,32 +1,16 @@
 ---
-# required metadata
-
 title: F classes
 description: System API classes that start with the letter F.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 47561
-ms.assetid: 03d9d906-d683-47b4-8488-795173db2125
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # F classes
@@ -35,261 +19,261 @@ ms.dyn365.ops.version: AX 7.0.0
 
 System API classes that start with the letter F.
 
-[FieldBinding class](system-classes/FieldBinding-class.md)
+[FieldBinding class](/dotnet/api/dynamics.ax.application)
 
-[FieldFilterValue class](system-classes/FieldFilterValue-class.md)
+[FieldFilterValue class](/dotnet/api/dynamics.ax.application)
 
-[FileIOPermission class](system-classes/FileIOPermission-class.md)
+[FileIOPermission class](/dotnet/api/dynamics.ax.application)
 
-[FilterValue class](system-classes/FilterValue-class.md)
+[FilterValue class](/dotnet/api/dynamics.ax.application)
 
-[Form class](system-classes/Form-class.md)
+[Form class](/dotnet/api/dynamics.ax.application)
 
-[FormActionPaneControl class](system-classes/FormActionPaneControl-class.md)
+[FormActionPaneControl class](/dotnet/api/dynamics.ax.application)
 
-[FormActionPaneTabControl class](system-classes/FormActionPaneTabControl-class.md)
+[FormActionPaneTabControl class](/dotnet/api/dynamics.ax.application)
 
-[FormActiveXControl class](system-classes/FormActiveXControl-class.md)
+[FormActiveXControl class](/dotnet/api/dynamics.ax.application)
 
-[FormAnimateControl class](system-classes/FormAnimateControl-class.md)
+[FormAnimateControl class](/dotnet/api/dynamics.ax.application)
 
-[FormAutoLookupFactory class](system-classes/FormAutoLookupFactory-class.md)
+[FormAutoLookupFactory class](/dotnet/api/dynamics.ax.application)
 
-[FormBinding class](system-classes/FormBinding-class.md)
+[FormBinding class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildActionPaneControl class](system-classes/FormBuildActionPaneControl-class.md)
+[FormBuildActionPaneControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildActionPaneTabControl class](system-classes/FormBuildActionPaneTabControl-class.md)
+[FormBuildActionPaneTabControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildActiveXControl class](system-classes/FormBuildActiveXControl-class.md)
+[FormBuildActiveXControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildAnimateControl class](system-classes/FormBuildAnimateControl-class.md)
+[FormBuildAnimateControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildButtonControl class](system-classes/FormBuildButtonControl-class.md)
+[FormBuildButtonControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildButtonGroupControl class](system-classes/FormBuildButtonGroupControl-class.md)
+[FormBuildButtonGroupControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildButtonSeparatorControl class](system-classes/FormBuildButtonSeparatorControl-class.md)
+[FormBuildButtonSeparatorControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildCheckBoxControl class](system-classes/FormBuildCheckBoxControl-class.md)
+[FormBuildCheckBoxControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildComboBoxControl class](system-classes/FormBuildComboBoxControl-class.md)
+[FormBuildComboBoxControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildCommandButtonControl class](system-classes/FormBuildCommandButtonControl-class.md)
+[FormBuildCommandButtonControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildContainerControl class](system-classes/FormBuildContainerControl-class.md)
+[FormBuildContainerControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildControl class](system-classes/FormBuildControl-class.md)
+[FormBuildControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildDataSource class](system-classes/FormBuildDataSource-class.md)
+[FormBuildDataSource class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildDateControl class](system-classes/FormBuildDateControl-class.md)
+[FormBuildDateControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildDateTimeControl class](system-classes/FormBuildDateTimeControl-class.md)
+[FormBuildDateTimeControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildDesign class](system-classes/FormBuildDesign-class.md)
+[FormBuildDesign class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildDropDialogButtonControl class](system-classes/FormBuildDropDialogButtonControl-class.md)
+[FormBuildDropDialogButtonControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildFastTabHeaderControl class](system-classes/FormBuildFastTabHeaderControl-class.md)
+[FormBuildFastTabHeaderControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildFastTabSummarySeparator class](system-classes/FormBuildFastTabSummarySeparator-class.md)
+[FormBuildFastTabSummarySeparator class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildFilterPaneControl class](system-classes/FormBuildFilterPaneControl-class.md)
+[FormBuildFilterPaneControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildFunctionButtonControl class](system-classes/FormBuildFunctionButtonControl-class.md)
+[FormBuildFunctionButtonControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildGridControl class](system-classes/FormBuildGridControl-class.md)
+[FormBuildGridControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildGroupControl class](system-classes/FormBuildGroupControl-class.md)
+[FormBuildGroupControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildGuidControl class](system-classes/FormBuildGuidControl-class.md)
+[FormBuildGuidControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildHTMLControl class](system-classes/FormBuildHTMLControl-class.md)
+[FormBuildHTMLControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildIntControl class](system-classes/FormBuildIntControl-class.md)
+[FormBuildIntControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildListBoxControl class](system-classes/FormBuildListBoxControl-class.md)
+[FormBuildListBoxControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildListControl class](system-classes/FormBuildListControl-class.md)
+[FormBuildListControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildManagedHostControl class](system-classes/FormBuildManagedHostControl-class.md)
+[FormBuildManagedHostControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildMenuButtonControl class](system-classes/FormBuildMenuButtonControl-class.md)
+[FormBuildMenuButtonControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildObjectSet class](system-classes/FormBuildObjectSet-class.md)
+[FormBuildObjectSet class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildProgressControl class](system-classes/FormBuildProgressControl-class.md)
+[FormBuildProgressControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildRadioControl class](system-classes/FormBuildRadioControl-class.md)
+[FormBuildRadioControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildRealControl class](system-classes/FormBuildRealControl-class.md)
+[FormBuildRealControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildReferenceControl class](system-classes/FormBuildReferenceControl-class.md)
+[FormBuildReferenceControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildReferenceGroupControl class](system-classes/FormBuildReferenceGroupControl-class.md)
+[FormBuildReferenceGroupControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildRichTextControl class](system-classes/FormBuildRichTextControl-class.md)
+[FormBuildRichTextControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildSegmentedEntryControl class](system-classes/FormBuildSegmentedEntryControl-class.md)
+[FormBuildSegmentedEntryControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildStaticTextControl class](system-classes/FormBuildStaticTextControl-class.md)
+[FormBuildStaticTextControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildStringControl class](system-classes/FormBuildStringControl-class.md)
+[FormBuildStringControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildTabControl class](system-classes/FormBuildTabControl-class.md)
+[FormBuildTabControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildTableControl class](system-classes/FormBuildTableControl-class.md)
+[FormBuildTableControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildTabPageControl class](system-classes/FormBuildTabPageControl-class.md)
+[FormBuildTabPageControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildTimeControl class](system-classes/FormBuildTimeControl-class.md)
+[FormBuildTimeControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildTreeControl class](system-classes/FormBuildTreeControl-class.md)
+[FormBuildTreeControl class](/dotnet/api/dynamics.ax.application)
 
-[FormBuildWindowControl class](system-classes/FormBuildWindowControl-class.md)
+[FormBuildWindowControl class](/dotnet/api/dynamics.ax.application)
 
-[FormButtonControl class](system-classes/FormButtonControl-class.md)
+[FormButtonControl class](/dotnet/api/dynamics.ax.application)
 
-[FormButtonGroupControl class](system-classes/FormButtonGroupControl-class.md)
+[FormButtonGroupControl class](/dotnet/api/dynamics.ax.application)
 
-[FormButtonSeparatorControl class](system-classes/FormButtonSeparatorControl-class.md)
+[FormButtonSeparatorControl class](/dotnet/api/dynamics.ax.application)
 
-[FormChangeTracker class](system-classes/FormChangeTracker-class.md)
+[FormChangeTracker class](/dotnet/api/dynamics.ax.application)
 
-[FormCheckBoxControl class](system-classes/FormCheckBoxControl-class.md)
+[FormCheckBoxControl class](/dotnet/api/dynamics.ax.application)
 
-[FormComboBoxControl class](system-classes/FormComboBoxControl-class.md)
+[FormComboBoxControl class](/dotnet/api/dynamics.ax.application)
 
-[FormCommandButtonControl class](system-classes/FormCommandButtonControl-class.md)
+[FormCommandButtonControl class](/dotnet/api/dynamics.ax.application)
 
-[FormContainer class](system-classes/FormContainer-class.md)
+[FormContainer class](/dotnet/api/dynamics.ax.application)
 
-[FormContainerControl class](system-classes/FormContainerControl-class.md)
+[FormContainerControl class](/dotnet/api/dynamics.ax.application)
 
-[FormControl class](system-classes/FormControl-class.md)
+[FormControl class](/dotnet/api/dynamics.ax.application)
 
-[FormControlCancelableSuperEventArgs class](system-classes/FormControlCancelableSuperEventArgs-class.md)
+[FormControlCancelableSuperEventArgs class](/dotnet/api/dynamics.ax.application)
 
-[FormControlCancelEventArgs class](system-classes/FormControlCancelEventArgs-class.md)
+[FormControlCancelEventArgs class](/dotnet/api/dynamics.ax.application)
 
-[FormControlEventArgs class](system-classes/FormControlEventArgs-class.md)
+[FormControlEventArgs class](/dotnet/api/dynamics.ax.application)
 
-[FormDataObject class](system-classes/FormDataObject-class.md)
+[FormDataObject class](/dotnet/api/dynamics.ax.application)
 
-[FormDataRow class](system-classes/FormDataRow-class.md)
+[FormDataRow class](/dotnet/api/dynamics.ax.application)
 
-[FormDataSource class](system-classes/FormDataSource-class.md)
+[FormDataSource class](/dotnet/api/dynamics.ax.application)
 
-[FormDateControl class](system-classes/FormDateControl-class.md)
+[FormDateControl class](/dotnet/api/dynamics.ax.application)
 
-[FormDateTimeControl class](system-classes/FormDateTimeControl-class.md)
+[FormDateTimeControl class](/dotnet/api/dynamics.ax.application)
 
-[FormDesign class](system-classes/FormDesign-class.md)
+[FormDesign class](/dotnet/api/dynamics.ax.application)
 
-[FormDesignView class](system-classes/FormDesignView-class.md)
+[FormDesignView class](/dotnet/api/dynamics.ax.application)
 
-[FormDropDialogButtonControl class](system-classes/FormDropDialogButtonControl-class.md)
+[FormDropDialogButtonControl class](/dotnet/api/dynamics.ax.application)
 
-[FormEventArgs class](system-classes/FormEventArgs-class.md)
+[FormEventArgs class](/dotnet/api/dynamics.ax.application)
 
-[FormFastTabHeaderControl class](system-classes/FormFastTabHeaderControl-class.md)
+[FormFastTabHeaderControl class](/dotnet/api/dynamics.ax.application)
 
-[FormFastTabSummarySeparator class](system-classes/FormFastTabSummarySeparator-class.md)
+[FormFastTabSummarySeparator class](/dotnet/api/dynamics.ax.application)
 
-[FormFilterPaneControl class](system-classes/FormFilterPaneControl-class.md)
+[FormFilterPaneControl class](/dotnet/api/dynamics.ax.application)
 
-[FormFunctionButtonControl class](system-classes/FormFunctionButtonControl-class.md)
+[FormFunctionButtonControl class](/dotnet/api/dynamics.ax.application)
 
-[FormGridControl class](system-classes/FormGridControl-class.md)
+[FormGridControl class](/dotnet/api/dynamics.ax.application)
 
-[FormGroupControl class](system-classes/FormGroupControl-class.md)
+[FormGroupControl class](/dotnet/api/dynamics.ax.application)
 
-[FormGuidControl class](system-classes/FormGuidControl-class.md)
+[FormGuidControl class](/dotnet/api/dynamics.ax.application)
 
-[FormHTMLControl class](system-classes/FormHTMLControl-class.md)
+[FormHTMLControl class](/dotnet/api/dynamics.ax.application)
 
-[FormIntControl class](system-classes/FormIntControl-class.md)
+[FormIntControl class](/dotnet/api/dynamics.ax.application)
 
-[FormListBoxControl class](system-classes/FormListBoxControl-class.md)
+[FormListBoxControl class](/dotnet/api/dynamics.ax.application)
 
-[FormListColumn class](system-classes/FormListColumn-class.md)
+[FormListColumn class](/dotnet/api/dynamics.ax.application)
 
-[FormListControl class](system-classes/FormListControl-class.md)
+[FormListControl class](/dotnet/api/dynamics.ax.application)
 
-[FormListItem class](system-classes/FormListItem-class.md)
+[FormListItem class](/dotnet/api/dynamics.ax.application)
 
-[FormManagedHostControl class](system-classes/FormManagedHostControl-class.md)
+[FormManagedHostControl class](/dotnet/api/dynamics.ax.application)
 
-[FormMenuButtonControl class](system-classes/FormMenuButtonControl-class.md)
+[FormMenuButtonControl class](/dotnet/api/dynamics.ax.application)
 
-[FormNotifyEventArgs class](system-classes/FormNotifyEventArgs-class.md)
+[FormNotifyEventArgs class](/dotnet/api/dynamics.ax.application)
 
-[FormObject class](system-classes/FormObject-class.md)
+[FormObject class](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSet class](system-classes/FormObjectSet-class.md)
+[FormObjectSet class](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetCacheChangedEventArgs class](system-classes/FormObjectSetCacheChangedEventArgs-class.md)
+[FormObjectSetCacheChangedEventArgs class](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetCurrentChangedEventArgs class](system-classes/FormObjectSetCurrentChangedEventArgs-class.md)
+[FormObjectSetCurrentChangedEventArgs class](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetLeaveEventArgs class](system-classes/FormObjectSetLeaveEventArgs-class.md)
+[FormObjectSetLeaveEventArgs class](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetMarkingChangedEventArgs class](system-classes/FormObjectSetMarkingChangedEventArgs-class.md)
+[FormObjectSetMarkingChangedEventArgs class](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetNotify class](system-classes/FormObjectSetNotify-class.md)
+[FormObjectSetNotify class](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetNotifyEvents class](system-classes/FormObjectSetNotifyEvents-class.md)
+[FormObjectSetNotifyEvents class](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetPagingParamsChangedEvtArgs class](system-classes/FormObjectSetPagingParamsChangedEvtArgs-class.md)
+[FormObjectSetPagingParamsChangedEvtArgs class](/dotnet/api/dynamics.ax.application)
 
-[FormObjectSetRequestCacheSizeEventArgs class](system-classes/FormObjectSetRequestCacheSizeEventArgs-class.md)
+[FormObjectSetRequestCacheSizeEventArgs class](/dotnet/api/dynamics.ax.application)
 
-[FormPart class](system-classes/FormPart-class.md)
+[FormPart class](/dotnet/api/dynamics.ax.application)
 
-[FormProgressControl class](system-classes/FormProgressControl-class.md)
+[FormProgressControl class](/dotnet/api/dynamics.ax.application)
 
-[FormQueryMiner class](system-classes/FormQueryMiner-class.md)
+[FormQueryMiner class](/dotnet/api/dynamics.ax.application)
 
-[FormRadioControl class](system-classes/FormRadioControl-class.md)
+[FormRadioControl class](/dotnet/api/dynamics.ax.application)
 
-[FormRealControl class](system-classes/FormRealControl-class.md)
+[FormRealControl class](/dotnet/api/dynamics.ax.application)
 
-[FormReferenceControl class](system-classes/FormReferenceControl-class.md)
+[FormReferenceControl class](/dotnet/api/dynamics.ax.application)
 
-[FormReferenceGroupControl class](system-classes/FormReferenceGroupControl-class.md)
+[FormReferenceGroupControl class](/dotnet/api/dynamics.ax.application)
 
-[FormReferenceObject class](system-classes/FormReferenceObject-class.md)
+[FormReferenceObject class](/dotnet/api/dynamics.ax.application)
 
-[FormRichTextControl class](system-classes/FormRichTextControl-class.md)
+[FormRichTextControl class](/dotnet/api/dynamics.ax.application)
 
-[FormRowDisplayOption class](system-classes/FormRowDisplayOption-class.md)
+[FormRowDisplayOption class](/dotnet/api/dynamics.ax.application)
 
-[FormSegment class](system-classes/FormSegment-class.md)
+[FormSegment class](/dotnet/api/dynamics.ax.application)
 
-[FormSegmentedEntryControl class](system-classes/FormSegmentedEntryControl-class.md)
+[FormSegmentedEntryControl class](/dotnet/api/dynamics.ax.application)
 
-[FormsPreloadingManager class](system-classes/FormsPreloadingManager-class.md)
+[FormsPreloadingManager class](/dotnet/api/dynamics.ax.application)
 
-[FormStaticTextControl class](system-classes/FormStaticTextControl-class.md)
+[FormStaticTextControl class](/dotnet/api/dynamics.ax.application)
 
-[FormStringControl class](system-classes/FormStringControl-class.md)
+[FormStringControl class](/dotnet/api/dynamics.ax.application)
 
-[FormTabControl class](system-classes/FormTabControl-class.md)
+[FormTabControl class](/dotnet/api/dynamics.ax.application)
 
-[FormTableCell class](system-classes/FormTableCell-class.md)
+[FormTableCell class](/dotnet/api/dynamics.ax.application)
 
-[FormTableControl class](system-classes/FormTableControl-class.md)
+[FormTableControl class](/dotnet/api/dynamics.ax.application)
 
-[FormTabPageControl class](system-classes/FormTabPageControl-class.md)
+[FormTabPageControl class](/dotnet/api/dynamics.ax.application)
 
-[FormTimeControl class](system-classes/FormTimeControl-class.md)
+[FormTimeControl class](/dotnet/api/dynamics.ax.application)
 
-[FormTreeControl class](system-classes/FormTreeControl-class.md)
+[FormTreeControl class](/dotnet/api/dynamics.ax.application)
 
-[FormTreeItem class](system-classes/FormTreeItem-class.md)
+[FormTreeItem class](/dotnet/api/dynamics.ax.application)
 
-[FormWindowControl class](system-classes/FormWindowControl-class.md)
+[FormWindowControl class](/dotnet/api/dynamics.ax.application)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

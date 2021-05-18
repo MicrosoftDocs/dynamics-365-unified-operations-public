@@ -4,11 +4,9 @@
 title: Copy configuration data between companies or legal entities overview
 description: This topic describes how to use a data project and data templates to move configuration data for a company or legal entity between app instances.
 author: mikefalkner
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -89,7 +87,7 @@ The following entities require special handling when they are used in configurat
 
 | Area | Entity | Action |
 |------|--------|--------|
-| System setup | Global address book | The entity no longer exports the records that are created automatically when a company is created. The import no longer accepts those records as well, starting in the platform 9 release. |
+| System setup | Global address book | The entity no longer exports the records that are created automatically when a company is created. The import no longer accepts those records. |
 | GL Shared | Account structures active group | This composite entity will export and import only the active account structures. If you use any other account structure entities, the status of the active account structures will be changed to **Draft**, and you must activate them before they can be used. |
 | | Advanced rule structures active group | This composite entity is used in combination with the account structures active group entity. It will export and import only the active advanced rule structures. If you use any other advanced rule structure entities, the status of the advanced rule structures will be changed to **Draft**, and you must activate them before they can be used. |
 | | Financial dimension values | All dimension values will be exported, even values that are based on system-defined entities such as projects or customers. Remove the system-defined values before you import them. If you leave the system-defined values in the package, they won't be imported. However, they will be filled as you import the data that backs the system-defined dimension. |

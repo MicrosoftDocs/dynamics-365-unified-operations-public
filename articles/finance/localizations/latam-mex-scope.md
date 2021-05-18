@@ -4,11 +4,9 @@
 title: Scope of Mexican localization
 description: This topic describes the strategy and scope for tax, finance, and accounting laws and regulations in Mexico. 
 author: sndray
-manager: AnnBe
 ms.date: 04/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -108,7 +106,7 @@ The localization scope for the version of Finance that is available in Mexico is
 - Quote to cash
 - Regulatory/statutory reporting
 
-For a list of the specific features that Microsoft delivers and supports, see the [Supported features](#supported-features) section later in this document. You can find details about each feature in Help within Finance, in online Help, and in white papers that are published on the [Microsoft Dynamics Localization Portal](https://docs.microsoft.com/dynamics/s-e/).
+For a list of the specific features that Microsoft delivers and supports, see the [Supported features](#supported-features) section later in this document. You can find details about each feature in Help within Finance, in online Help, and in white papers that are published on the [Microsoft Dynamics Localization Portal](/dynamics/s-e/).
 
 ## Market availability
 Microsoft aims to deliver regulatory features in a manner that provides enough time for installation or updates to existing customer solutions. If tax and regulatory updates contain changes required to implement tax, accounting, financial, or regulatory/statutory reporting requirements that commonly affect a majority of businesses in Mexico, our goal is to release the updates before the effective date or by any other mandated date as required at the federal or state level. For more information, see [Mexican localization strategy](#mexican-localization-strategy). 
@@ -605,7 +603,7 @@ The following features and functionality are out of scope for Mexican localizati
     - **Fiscal printer features**
 
 ## References
-The [Microsoft Dynamics Localization Portal](https://docs.microsoft.com/dynamics/s-e/) provides information about localization features and documents that have been released by Microsoft, and also those that are planned for release.
+The [Microsoft Dynamics Localization Portal](/dynamics/s-e/) provides information about localization features and documents that have been released by Microsoft, and also those that are planned for release.
 
 ## Notes
 **Regime especial (special regime)** refers to any differential treatment, except relief from taxation, that the tax authority authorizes with respect to general tax rule requirements (federal, state, or municipal) and ancillary obligations, to simplify tax compliance by the taxpayer in peculiar cases.

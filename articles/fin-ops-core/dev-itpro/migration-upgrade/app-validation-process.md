@@ -4,11 +4,9 @@
 title: Upgrade from AX 2012 - Post-upgrade tasks
 description: This topic describes the tasks that you might have to perform after you complete a code and data upgrade from Microsoft Dynamics AX 2012.
 author: LaneSwenka
-manager: AnnBe
 ms.date: 11/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -61,7 +59,7 @@ Additionally, you must run all jobs (9999) for the channel database. Click **Ret
 
 After you complete the upgrade from AX 2012, you must set up resource capacity roll-up and project ledger intercompany posting.
 
-To run the Resource capacity roll-up batch job, click **Project management and accounting** > **Inquiries and reports** > **Capacity synchronization**. You must run this batch job to set up the resource and resource calendar reservation data. This data will be required if you use project resource scheduling. For more information, see [Project resourcing](../../../finance/project-management/project-resourcing.md).
+To run the Resource capacity roll-up batch job, click **Project management and accounting** > **Inquiries and reports** > **Capacity synchronization**. You must run this batch job to set up the resource and resource calendar reservation data. This data will be required if you use project resource scheduling. For more information, see [Project resourcing](/dynamics365/project-operations/prod-pma/project-resourcing).
 
 To enable project ledger intercompany posting, click **Project management and accounting** > **Setup** > **Posting** > **Ledger posting setup**. On the **Cost accounts** tab, in the **Ledger account types** field, select **Intercompany cost**, and then enter the details of the lending legal entity. On the **Revenue accounts** tab, in the **Ledger account types** field, select **Intercompany revenue**, and then enter details of the borrowing legal entity.
 

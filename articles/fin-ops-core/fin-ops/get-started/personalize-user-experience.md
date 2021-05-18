@@ -4,11 +4,9 @@
 title: Personalize the user experience
 description: This topic explains how you can personalize the app.
 author: jasongre
-manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -105,7 +103,7 @@ You can use the property window to personalize an element in the following ways:
 
 The property window might include other personalization capabilities, depending on the element. For example, the property window for a tile might let you promote that tile to a dashboard, and property windows for elements on the default dashboard might let you create a new custom workspace.
 
-### The Personalization toolbar
+### Personalization toolbar
 
 If you want to make multiple changes to a page, or changes that aren't available through other mechanisms (for example, if you want to reorder elements), you can use the **Personalization** toolbar. To open the **Personalization** toolbar, follow one of these steps:
 
@@ -180,7 +178,90 @@ One unique personalization capability that is available on the dashboard is the 
 
 ## Sharing personalizations
 
-After you personalize a page, you can share your personalizations with other users by exporting the personalized page. You can then ask other users to import the personalization file. Alternatively, you can give your personalizations to a user who has admin privileges. That user can then apply your personalization file to many users at the same time by using the **Personalization** administration page.
+After you personalize a page, there are a few methods that you can use to share your personalizations with other users. In the following list, the methods are arranged in order from most recommended to least recommended.
+
+1. Publish views to users.
+2. Copy views or personalizations to users.
+3. Export and import views or personalizations.
+
+### Publish views to users
+
+If the [Saved views](saved-views.md) feature is turned on, and if the page supports views, the best way to share personalizations with other users is to publish the view to users who have one or more security roles. For more information, see [Publishing views](saved-views.md#publishing-views).
+
+### Copy views or personalizations to users
+
+If the [Saved views](saved-views.md) feature is turned off, or if the page doesn't support views, the recommended way to share personalizations is to copy them between users. This method is available only to privileged users (for example, system admins). However, admins can look up a specific user's personalization in the system (including the user's personal view if saved views are enabled) and copy the configuration to other users.
+
+If saved views are enabled, follow these steps to copy personalizations.
+
+1. Go **System administration \> Setup \> Personalization**.
+2. Follow these steps to copy personal views:
+
+    1. Select **Personal views**.
+    2. Select the desired views in the list.
+    3. Select **Copy to users**.
+    4. Select the users to distribute the views to.
+
+    Follow these steps to copy personalizations on pages that don't support views:
+
+    1. Select **User settings**.
+    2. Select the user who has the personalization that you want to distribute.
+    3. Select **Manage all personalizations**.
+    4. Select the desired personalizations in the list.
+    5. Select **Copy to users**.
+    6. Select the users to distribute the personalizations to.
+
+If saved views aren't enabled, follow these steps to copy a personalization.
+
+1. Go **System administration \> Setup \> Personalization**.
+2. Select **Apply**.
+3. Select the users to distribute the personalization to.
+4. Select **Select existing personalization**.
+5. Find and select the (single) personalization that you're interested in.
+6. Select **OK**.
+
+### Export and import views or personalizations
+
+Another way to share personalizations is via export and import. Individual users, or an admin who acts on their behalf, can use this method to export their personalizations or views, and then give the exported file to other users to import. Alternatively, users can give their exported personalizations to a user who has admin privileges, and that user can then use the **Personalization** administration page to apply the personalization file to many users at the same time.
+
+#### Export
+
+In general, you can export one of your own views or personalizations by opening the appropriate page, opening the **Personalization** toolbar, and then selecting **Export**. For more information about the toolbar, see the [Personalization toolbar](#personalization-toolbar) section earlier in this topic. Alternatively, if [saved views](saved-views.md) are enabled, you can go to **Settings \> User options \> Personalization** to view a list of all your personalizations in the system. From there, you can select the views or personalizations to export, and then select **Export**.
+
+Additionally, admins can export other users' personalizations by following these steps.
+
+1. Go to **System administration \> Setup \> Personalization**.
+2. On the **Users** tab, select the desired user.
+3. Find and select the view or personalization that you're interested in.
+4. Select **Export**.
+
+#### Import
+
+To import a view or personalization, you can just open the **Personalization** toolbar and select **Import**. Additionally, admins can import a file and immediately give it to one or more users.
+
+If saved views are enabled, follow these steps.
+
+1. Go to **System administration \> Setup \> Personalization**.
+2. On the Action Pane, select **Import views \> User views**.
+3. Select the import mode:
+
+    - **Select specific users** – Give the view or personalization to selected users.
+    - **Import as-is** – Import the view or personalization to the same user who exported it.
+
+4. Select **Browse**, and find and select the personalization to import.
+5. Select **Next**.
+6. If you selected **Select specific users** in step 3, select the users to import the personalization to.
+7. Select **Import**.
+8. Resolve conflicts as required.
+
+If saved views aren't enabled, follow these steps.
+
+1. Go to **System administration \> Setup \> Personalization**.
+2. Select **Apply**.
+3. Select the users to distribute the personalization to.
+4. Select **Import personalizations from a file**.
+5. Select **Browse**, and find and select the personalization to import.
+6. Select **OK**.
 
 ## Administration of personalizations
 
@@ -191,8 +272,11 @@ For customers who have turned on the **Saved views** feature, see the "Managing 
 For customers who haven't yet turned on the [Saved views](saved-views.md) feature, this page has four tabs:
 
 - **Apply** – You can import or select a personalization for one or more users. To apply a personalization to one or more users, first select a role and users who have that role. Then either select an existing personalization to apply to the selected users, or import a personalization file. The personalization is validated and will be applied to all the selected users the next time that they open the selected page.
+
 - **Clear** – You can clear all personalizations for a page or workspace for one or more users. First select a page or workspace to see a list of the users who have personalized it. Then select the users who should have personalizations for that page or workspace cleared, and select **Clear**. All personalizations that the selected users have applied to the selected page or workspace are deleted. This action can't be undone. However, if a personalization was saved for the page or workspace, that personalization can be reimported.
+
 - **Users** – Select a user to see a list of the pages that the user has personalized. You can then turn that user's ability to use personalizations for specific pages, or for the whole system, on or off. You can also import, export, or clear a personalization for the user. In addition, you can reset feature callouts for the user. In this case, if the user previously dismissed any pop-up windows that introduce new features, they will appear again the next time that the user encounters those features.
+
 - **System** – You can temporarily turn off personalization for all users in the system. In this case, all personalizations are deleted for all users, and all pages are reset to their default state. If you turn personalization back on later, all personalizations are reapplied. You can also permanently delete all personalizations for all users in the system. Personalizations that have been deleted can't be recovered. Therefore, before you perform this task, be sure to export any personalizations that you might want later.
 
 ## Personalizing inventory dimensions

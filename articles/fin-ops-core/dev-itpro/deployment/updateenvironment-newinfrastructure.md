@@ -4,11 +4,9 @@
 title: Update an environment
 description: This topic explains how to update an environment that was deployed by using the self-service deployment experience.
 author: laneswenka
-manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -82,7 +80,7 @@ After the package is in the project asset library, follow these steps to update 
 
 ### Production environment
 
-To improve the reliability of updates that are applied to a production environment, a specific update that is done in the sandbox environment is designated ("marked") as a **release candidate** and moved to the production environment. This update contains both the base product and the customization. Therefore, both will be moved over when the selected update is applied to the production environment. This behavior differs from the current servicing behavior. Currently, you can move only the customization, but the base product **will not** change. In the case of a self-service deployment environment, the base product version **might change**, depending on the update that is marked as a release candidate in the sandbox environment.
+To improve the reliability of updates that are applied to a production environment, a specific update that is done in the sandbox environment is designated ("marked") as a **release candidate** and moved to the production environment. This update contains both the base product and the customization. Therefore, both will be moved over when the selected update is applied to the production environment. This behavior differs from the current servicing behavior. Currently, you can move only the customization, but the base product **will not** change. In the case of a self-service deployment environment, the base product version **might change**, depending on the update that is marked as a release candidate in the sandbox environment. When a self-service release candidate is marked, all previously applied updates will also be included, regardless of whether they are individually marked as release candidates or not. 
 
 > [!IMPORTANT]
 > Package application causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied.

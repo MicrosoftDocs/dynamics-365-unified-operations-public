@@ -4,11 +4,9 @@
 title: Create a formula by copying from an existing formula
 description: This procedure shows how to quickly create a new formula by copying from an existing formula. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

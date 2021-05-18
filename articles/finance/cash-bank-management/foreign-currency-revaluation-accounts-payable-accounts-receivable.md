@@ -2,13 +2,11 @@
 # required metadata
 
 title: Currency revaluation for Accounts payable and Accounts receivable
-description: Fluctuations in exchange rates cause the theoretical value (book value) of open transactions in foreign currencies to vary over time. This article provides information about the foreign currency revaluation process that you run to update the value of open transactions in Accounts payable and Accounts receivable. 
+description: This topic provides information about the foreign currency revaluation process that you run to update the value of open transactions in Accounts payable and Accounts receivable. 
 author: kweekley
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -33,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Fluctuations in exchange rates cause the theoretical value (book value) of open transactions in foreign currencies to vary over time. This article provides information about the foreign currency revaluation process that you run to update the value of open transactions in Accounts payable and Accounts receivable. 
+Fluctuations in exchange rates cause the theoretical value (book value) of open transactions in foreign currencies to vary over time. This topic provides information about the foreign currency revaluation process that you run to update the value of open transactions in Accounts payable and Accounts receivable. 
 
 The theoretical value, or book value, of open transactions in foreign currencies varies over time because of fluctuations in exchange rates. To update the value of open transactions in Accounts payable and Accounts receivable, run the foreign currency revaluation process. Foreign currency revaluation can be run for both Accounts payable and Accounts receivable. The process uses a new exchange rate to revalue the open amounts, or not settled amounts, on a specified date. The differences between the original posted amounts and the revalued amounts will cause an unrealized gain or loss for each open transaction. The Accounts payable and Accounts receivable subledgers are then updated to reflect the unrealized gain or loss, and an accounting entry is posted to General ledger.
 
@@ -62,7 +60,7 @@ A record is kept every time that you run a foreign currency revaluation. From th
     -   **Posting** – The posting profile of the customer transaction is used.
     -   **Select** – Enter the posting profile in the **Posting profile** field.
 -   **Posting profile** – If **Select** is selected in the **Use posting profile from** field, the posting profile that you enter in this field determines the posting profile of the foreign currency revaluation transactions.
--   **Financial dimensions** – The financial dimensions that are posted on the accounting entries of the foreign currency revaluation transactions:
+-   **Financial dimensions** – The financial dimensions that are posted on the accounting entries of the foreign currency revaluation transactions. The financial dimensions are not validated against the rules for the account structure. The account structure that was in place at the time the invoices were posted might not be the same as the rules that were in place when the revaluation was completed. There is no option to select specific financial dimensions in the revaluation process, so the account structure validation is skipped.  
     -   **None** – No financial dimensions are posted. If you have a required financial dimension in your account structure, the revaluation process is still run and creates accounting entries that have no financial dimensions. You will receive a warning message first, so that you can cancel the revaluation.
     -   **Table** – The financial dimensions of the customer account or vendor account are posted on the foreign currency revaluation transactions.
     -   **Posting** – The financial dimensions of the transaction that is being revalued are posted on the foreign currency revaluation transactions. By default, the financial dimensions from the original transaction's AR/AP ledger account will be used for the revaluation transaction's AR/AP main account, and the financial dimensions from the original transaction's expense/asset/revenue ledger account will be used for the revaluation transaction's unrealized gain/loss main account.

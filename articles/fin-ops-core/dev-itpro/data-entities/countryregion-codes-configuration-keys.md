@@ -4,11 +4,9 @@
 title: Country/region codes and configuration keys
 description: This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Device management implementation guidance
 description: This topic is intended for people who implement functionality that is related to device management in a commerce environment. It gives implementation tips and guidance that you should consider as you plan your implementation.
 author: jashanno
-manager: AnnBe
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -84,7 +82,7 @@ As the number of devices increases into the hundreds or even thousands, manual c
 - **Channel deployment workspace** – This workspace lets you quickly view a large, filterable set of stores, registers, devices, and more. This workspace also provides options for mass deployment. (For more information, see [Customer orders in Modern POS (MPOS)](dev-itpro/retail-mass-deployment.md)). This workspace gives you quick access to important pages, can help decrease validation times when you do status checks are a deployment, and helps you efficiently manage device statuses.
 - **Mass deployment** – Dynamics 365 customers who use MPOS and other client-side components can silently perform various actions to help with installation, configuration, and servicing. By running basic commands at a command prompt, you might be able to deploy and service (that is, update) commerce components. This basic method of skipping the installer's manual user interface can reduce the time that is required for installation and servicing. The log files remain the same and can be viewed for installation details.
 - **Scripting** – Based on the mass deployment functionality, scripts can be generated and set up to run automatically to install or update commerce components such as MPOS. These basic scripts can be entered as a scheduled task on a device. The task then runs at a predetermined time and return the logs and results to a predetermined location, where they can be viewed as time permits.
-- **Systems management solution** – A systems management solution can help increase the amount of known data about the devices that are used. It can also decrease the time that is required in order to get that data. Examples of systems management solutions include Microsoft System Center and Microsoft InTune. By using a systems management solution together with mass deployment and scripting, you can configure and install components much more quickly. In addition, you can more efficiently validate status after deployment or servicing. Microsoft has published a document specifically about device management via System Center Configuration Manager, [Choose a device management solution for System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/choose-a-device-management-solution).
+- **Systems management solution** – A systems management solution can help increase the amount of known data about the devices that are used. It can also decrease the time that is required in order to get that data. Examples of systems management solutions include Microsoft System Center and Microsoft InTune. By using a systems management solution together with mass deployment and scripting, you can configure and install components much more quickly. In addition, you can more efficiently validate status after deployment or servicing. Microsoft has published a document specifically about device management via System Center Configuration Manager, [Choose a device management solution for System Center Configuration Manager](/sccm/core/plan-design/choose-a-device-management-solution).
 
 For more information that will help you better understand distributed deployment, see [Configure, install, and activate Modern POS (MPOS)](retail-modern-pos-device-activation.md) and [Customer orders in Modern POS (MPOS)](dev-itpro/retail-mass-deployment.md).
 

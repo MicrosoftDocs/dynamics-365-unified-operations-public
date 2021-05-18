@@ -3,12 +3,10 @@
 
 title: Maintenance requests
 description: This topic provides an overview about managing maintenance requests in Asset Management
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -32,8 +30,6 @@ ms.dyn365.ops.version: 10.0.5
 # Maintenance requests
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Maintenance requests are notes or declarations that are created to notify a manager or planner that an asset might require a maintenance or repair job, but without creating a work order. If the contents of a maintenance request are considered valid, a work order can then be created based on the maintenance request.
 

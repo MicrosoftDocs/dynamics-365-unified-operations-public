@@ -4,11 +4,9 @@
 title: Modern POS (MPOS) triggers and printing
 description: You can use triggers to capture events that occur before and after any Modern POS operations. 
 author: mugunthanm
-manager: AnnBe
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -53,7 +51,7 @@ The following table lists the available triggers and denotes whether they can be
 | PostLockTerminalTrigger   | Non-Cancelable | Executed after the POS register lock.   | 
 | PreUnlockTerminalTrigger         | Cancelable     | Executed before the POS register is unlocked.  |
 | PostDeviceActivationTrigger      | Non-Cancelable | Executed after the POS activation.   | 
-| PreElevateUserTrigger      | Cancelable | Executed before the manager override.   | 
+| PreElevateUserTrigger      | Cancelable | Executed before the manager override, this trigger will only work for non Microsoft Azure Active Directory (Azure AD) user authentication, if Azure AD is enabled this trigger will not work.   | 
 | PreRegisterAuditEventTrigger      | Cancelable | Executed before the audit event.   | 
 | PostRegisterAuditEventTrigger      | Non-Cancelable | Executed after the audit event.   | 
 | PreOpenUrlTrigger      | Cancelable | Executed before the open URL operation.   | 
@@ -71,22 +69,23 @@ The following table lists the available triggers and denotes whether they can be
 
 ## Customer triggers
 
-| Trigger                   | Type                    | Description                                                        |
-|---------------------------|-------------------------|--------------------------------------------------------------------|
-| PreCustomerAddTrigger     | Cancelable              | Executed before adding a customer to the transaction.             |
-| PostCustomerAddTrigger    | Non-cancelable          | Executed after adding a customer to the transaction.              |
-| PreCustomerClearTrigger   | Cancelable              | Executed before the customer cleared from the cart. |
-| PostCustomerClearTrigger  | Non-cancelable          | Executed after the customer cleared from the cart. |
-| PreCustomerSetTrigger     | Cancelable              | Executed before the customer is added to the cart.            |
-| PreCustomerSearchTrigger  | Cancelable              | Executed before customer search is performed.      |
-| PostCustomerSearchTrigger | Non-cancelable          | Executed after customer search is performed.       |
-| PostIssueLoyaltyCardTrigger  | Non-cancelable          | Executed after the loyalty card is issued.       |
-| PreCustomerSaveTrigger  | Cancelable          | Executed before the customer is created.       |
-| PostCustomerSaveTrigger  | Non-cancelable          | Executed after the customer is created.       |
-| PreSaveCustomerAddressTrigger      | Cancelable              | Executed before the customer address is saved.            |
-| PreGetLoyaltyCardBalanceTrigger  | Cancelable          | Executed before getting the loyalty card balance.       |
-| PostGetLoyaltyCardBalanceTrigger  | Non-cancelable          | Executed after getting the loyalty card balance.       |
-| PreDisplayLoyaltyCardBalanceTrigger  | Cancelable          | Executed before displaying the loyalty card balance.       |
+| Trigger                   | Type                    | Description                                                        |Release    |
+|---------------------------|-------------------------|--------------------------------------------------------------------|-----------|
+| PreCustomerAddTrigger     | Cancelable              | Executed before adding a customer to the transaction.             |	 |
+| PostCustomerAddTrigger    | Non-cancelable          | Executed after adding a customer to the transaction.              |	 |
+| PreCustomerClearTrigger   | Cancelable              | Executed before the customer cleared from the cart. |	 |
+| PostCustomerClearTrigger  | Non-cancelable          | Executed after the customer cleared from the cart. |	 |
+| PreCustomerSetTrigger     | Cancelable              | Executed before the customer is added to the cart.            |	 |
+| PreCustomerSearchTrigger  | Cancelable              | Executed before customer search is performed.      |	 |
+| PostCustomerSearchTrigger | Non-cancelable          | Executed after customer search is performed.       |	 |
+| PostIssueLoyaltyCardTrigger  | Non-cancelable          | Executed after the loyalty card is issued.       |	 |
+| PreCustomerSaveTrigger  | Cancelable          | Executed before the customer is created.       |	 |
+| PostCustomerSaveTrigger  | Non-cancelable          | Executed after the customer is created.       |	 |
+| PreSaveCustomerAddressTrigger      | Cancelable              | Executed before the customer address is saved.            |	 |
+| PreGetLoyaltyCardBalanceTrigger  | Cancelable          | Executed before getting the loyalty card balance.       |	 |
+| PostGetLoyaltyCardBalanceTrigger  | Non-cancelable          | Executed after getting the loyalty card balance.       |	 |
+| PreDisplayLoyaltyCardBalanceTrigger  | Cancelable          | Executed before displaying the loyalty card balance.       |	 |
+| PreCustomerEditTrigger  | Cancelable          | Executed before editing the Customer.       |	10.0.19 |
 
 
 

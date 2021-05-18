@@ -4,11 +4,9 @@
 title: Edit personal information
 description: This article describes how to edit personal information in Employee and manager self service.
 author: andreabichsel
-manager: tfehr
 ms.date: 03/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: HRMParameters, EssWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 51941
@@ -45,13 +42,16 @@ The personal information you can edit includes:
 - Payment method
 - Image used in Human Resources
 
+>[!NOTE]
+>You might not be able to edit certain types of personal information, such as business contact details. For more information, see [Restrict editing of personal information](hr-employee-self-service-restrict-editing.md).
+
 Parameters set in the global address book determine the roles that can see your personal information.
 
 1. In Human Resources, select **Employee self service**.
 
 2. Select **Edit personal details**.
 
-3. To change your address, select the **Addresses** tab. Changes you make appear in the **Personnel management** workspace to alert HR. 
+3. To change your address, select the **Addresses** tab. Changes you make appear in the **Personnel management** workspace to alert HR.
 
     - To add a new address, select **Add**.
     - To edit an existing address, select the address and then select **Edit**.
@@ -59,11 +59,13 @@ Parameters set in the global address book determine the roles that can see your 
     - To add or remove a contact, select **More options** and then select **Advanced**. Under **Contact information**, select **Add** or **Remove** and edit the fields as necessary.
     - To set your time zone and location, select **More options** and then select **Advanced**. Under **General**, edit the fields as necessary.
 
-4. To change your contact details, select the **Contact details** tab. You can provide different types of contact information, including phone, email, and social media links. You can set a contact detail as primary, but you can only set one of each type as primary. 
+4. To change your contact details, select the **Contact details** tab. You can provide different types of contact information, including phone, email, and social media links. You can set a contact detail as primary, but you can only set one of each type as primary.
 
     - To add new contact information, select **Add**. Edit the fields as necessary.
     - To edit existing contact information, select the item and then select **Edit**. Edit the fields as necessary.
     - To set a contact detail as private, select the item, select **Advanced**, and then set the **Private** toggle to **Yes**. Select **OK**.
+      >[!NOTE]
+      >The **Advanced** button isn't available if your admin has enabled the **(Preview) Restrict employees from adding or editing address and contact information for select purposes** feature in your environment. For more information, see [Restrict editing of personal information](hr-employee-self-service-restrict-editing.md).
   
 5. To change your personal contacts, select the **Personal contacts** tab. You can designate emergency contacts, beneficiaries, and dependents. A contact can be a person or organization. The **Benefits management** feature uses personal contact information. For more information, see [Configure personal contact eligibility options](hr-benefits-setup-contact-eligibility-options.md).
 

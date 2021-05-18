@@ -4,11 +4,9 @@
 title: Embed Power Apps apps in Dynamics 365 Human Resources
 description: This topic explains how to resolve the issue where the Microsoft Power Apps menu item has disappeared from the System administration module.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -43,7 +40,7 @@ The user interface (UI) design has been changed, and Microsoft Power Apps is now
 
 The way that Power Apps are embedded has been changed. Power Apps are now added through the personalization model. You can add Power Apps to almost all pages in Microsoft Dynamics 365 Talent.
 
-For information about how to embed Power Apps in Talent, see [Embed Power Apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
+For information about how to embed Power Apps in Talent, see [Embed Power Apps](/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
 
 Any Power Apps customer who embedded apps before the change should have been upgraded to the new model.
 

@@ -3,12 +3,10 @@
 
 title: Product receipt against purchase orders
 description: This topic describes the various options for registering products as received.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -25,7 +23,7 @@ ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -71,7 +69,7 @@ Additional resources
 
 [Approve and confirm purchase orders](purchase-order-approval-confirmation.md)
 
-[Overview of vendor invoices](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

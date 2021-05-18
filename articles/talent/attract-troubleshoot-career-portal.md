@@ -4,11 +4,9 @@
 title: Attract users can't apply for jobs from career portal
 description: This topic explains how to troubleshoot an issue where Attract users can't apply for jobs from the career portal.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -16,7 +14,6 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

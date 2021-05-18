@@ -4,11 +4,9 @@
 title: Settle a partial customer payment that has discounts on credit notes
 description: This article walks you through a scenario where a cash discount is taken on a credit note when the original invoice also had a cash discount. 
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,7 +44,7 @@ Customer 4035 has an invoice for 1,000.00 and a credit note for 100.00. Each doc
 | CCRN-10050 | Credit note      | 6/28/2015 | CR-10050 |                                      | 100.00                                | -100.00  | USD      |
 
 ## Settle a credit note with an invoice
-From the **Customer transactions** page, Arnie opens the **Settle transactions** page. He can use the **Settle transactions** page to settle the invoice and credit note. As part of the settlement process, he views the cash discount dates and amounts. He marks the two documents and then clicks **Post** to settle the transactions. There is a discount of -1.00 on the credit note, because Fabrikam allows for discounts on credit notes.
+From the **Customer transactions** page, Arnie opens the **Settle transactions** page. Arnie can use the **Settle transactions** page to settle the invoice and credit note. As part of the settlement process, Arnie views the cash discount dates and amounts. Arnie marks the two documents and then clicks **Post** to settle the transactions. There is a discount of -1.00 on the credit note, because Fabrikam allows for discounts on credit notes.
 
 | Mark     | Use cash discount | Voucher    | Account | Date      | Due date  | Invoice  | Amount in transaction currency | Currency | Amount to settle |
 |----------|-------------------|------------|---------|-----------|-----------|----------|--------------------------------|----------|------------------|

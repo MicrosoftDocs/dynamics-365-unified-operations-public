@@ -4,16 +4,14 @@
 title: Assign lease user roles
 description: This topic describes the security roles that are used in Asset leasing. It also explains how to assign users to those roles.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: SysOperationTemplateForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

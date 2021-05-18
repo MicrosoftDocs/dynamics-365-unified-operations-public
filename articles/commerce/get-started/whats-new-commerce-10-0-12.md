@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.12 (August 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.12. 
 author: josaw1
-manager: AnnBe
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -41,8 +39,8 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-- [Warranty setup and sell](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/warranty-set-up-sell)
-- [Inventory buffers and inventory levels for e-Commerce](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/define-utilize-inventory-buffers-drive-inventory-level-displays-e-commerce)
+- [Warranty setup and sell](/dynamics365-release-plan/2020wave1/dynamics365-commerce/warranty-set-up-sell)
+- [Inventory buffers and inventory levels for e-Commerce](/dynamics365-release-plan/2020wave1/dynamics365-commerce/define-utilize-inventory-buffers-drive-inventory-level-displays-e-commerce)
 - [Close lines for underdelivery in Outbound operation](../pos-outbound-inventory-operation.md)
 
 ## Additional resources
@@ -58,7 +56,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 

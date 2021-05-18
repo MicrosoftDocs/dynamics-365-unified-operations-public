@@ -4,11 +4,9 @@
 title: Uninstall a package
 description: This topic explains how to remove a deployable package from your environment.
 author: laneswenka
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

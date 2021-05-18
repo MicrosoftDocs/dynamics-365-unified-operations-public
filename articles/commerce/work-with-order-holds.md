@@ -4,11 +4,9 @@
 title: Configure and work with call center order holds
 description: This topic describes how to work with holds on orders by using Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -50,7 +48,7 @@ Orders that call center users create in the back-office Commerce program can be 
 
 During order entry, but before order submission and confirmation, call center users might want to manually put an order on hold to prevent it from being released to the warehouse for further processing. For example, the customer who is placing the order might not be ready to commit to it, or critical data that is required in order to process the order might be missing.
 
-On the order entry page, the call center user can put an order on hold by using the **Order holds** option on the **Sales order** tab of the order entry menu. Alternatively, the user can select the **Hold** menu item on the **Sales order summary** page that appears when he or she selects **Complete** on a call center sales order.
+On the order entry page, the call center user can put an order on hold by using the **Order holds** option on the **Sales order** tab of the order entry menu. Alternatively, the user can select the **Hold** menu item on the **Sales order summary** page that appears when the user selects **Complete** on a call center sales order.
 
 In both cases, the **Order holds** page appears. The user can then select **New** to create a hold for the order. In the **Hold code** field, the user should select the code that best describes the reason for the hold. In the **Reason code** field, the user can optionally select an additional code to provide a second level of description of the hold.
 
@@ -60,7 +58,7 @@ After the hold information is entered and saved, the user can close the **Order 
 
 If the **Enable order completion** flag is turned on in the call center channel, payment doesn't have to applied to an order that is put on hold. By contrast, for a sales order that isn't put on hold, users can't leave the sales order entry page until payment is applied. Of course, payment will be required before the order hold is released.
 
-Additionally, call center users can put a manual fraud hold on orders that are suspicious for some reason. Orders can also be put on hold automatically when they match active fraud criteria and rules. For more information on about this type of order hold, see [Set up fraud alerts](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+Additionally, call center users can put a manual fraud hold on orders that are suspicious for some reason. Orders can also be put on hold automatically when they match active fraud criteria and rules. For more information on about this type of order hold, see [Set up fraud alerts](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## Viewing and managing orders that are on hold
 

@@ -4,11 +4,9 @@
 title: Commission settlement on payments
 description: This topic provides information about commission settlement on payments.
 author: ilkond
-manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -38,7 +36,7 @@ In Italy, companies don't typically settle the commissions for their sales agent
 Before you can use the functionality for commission settlement on payments, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Italy.
-- The **Commission settlement on payments** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The **Commission settlement on payments** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="default-commission-settlement-period">Set up the default commission settlement method
 

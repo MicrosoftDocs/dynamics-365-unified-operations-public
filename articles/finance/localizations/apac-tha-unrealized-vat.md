@@ -4,11 +4,9 @@
 title: Thailand unrealized and realized VAT
 description: This topic provides information about unrealized and realized value-added tax (VAT) for Thailand. 
 author: anasyash
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -121,6 +119,7 @@ Currently, four types of VAT can be calculated. They are defined by two categori
 3. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**, and set up sales tax codes for unrealized VAT and realized VAT. For example, create two sales tax codes: **UVAT** for unrealized VAT and **VAT** for realized VAT.
 
     > [!NOTE]
+    > 
     > For both sales tax codes, the **Tax type** field should beset to **Normal**.
 
 4. For each sales tax code, in the **Ledger posting group** field, select the corresponding ledger posting group that you created in step 2.
@@ -136,6 +135,7 @@ Currently, four types of VAT can be calculated. They are defined by two categori
 8. Assign sales tax codes to sales tax groups and item sales tax groups.
 
 > [!IMPORTANT]
+> 
 > To prevent both unrealized VAT and realized VAT from being calculated for the same record, be sure to add the sales tax codes only to the sales tax group or item sales tax group that has the same tax type. For example, add the sales tax codes for unrealized VAT only to the sales tax group or item sales tax group for unrealized VAT.
 
 For more information about how to set up sales taxes, see [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
@@ -156,6 +156,7 @@ When you post the sales order before you receive the payment from the customer, 
 
 
 > [!NOTE]
+> 
 > If you already received the payment for the sale from the customer, select the sales tax group and item sales tax group for realized VAT in the **Sales tax group** and **Item sales tax group** fields.
 
 ### Settle a customer transaction to generate a tax invoice or receipt and reverse posted unrealized sales VAT
@@ -172,6 +173,7 @@ After you reverse the unrealized sales VAT, the following tax transactions are g
 
 
 > [!NOTE]
+> 
 > You can also settle the payment to the invoice from the **Settle open transactions** page.
 
 You must print a tax invoice before you make the payment and settle the customer transaction.
@@ -196,6 +198,7 @@ When you post the purchase order before you receive the tax invoice from the ven
 
 
 > [!NOTE]
+> 
 > If you already received the tax invoice for the purchase from the vendor, select the sales tax group and item sales tax group for realized VAT in the **Sales tax group** and **Item sales tax group** fields. When you post the vendor invoice, enter the number of the tax invoice that you received from the vendor in the **Tax invoice number** field, enter the date when the vendor generated the tax invoice in the **Tax invoice date** field, and enter the date when you received the tax invoice from the vendor in the **Tax invoice receipt date** field.
 
 ### Create and post a vendor invoice journal that has unrealized VAT

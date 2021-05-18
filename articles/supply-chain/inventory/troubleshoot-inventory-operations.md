@@ -4,11 +4,9 @@
 title: Troubleshoot inventory operations
 description: This topic describes how to fix issues that you might encounter while you work with inventory operations.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

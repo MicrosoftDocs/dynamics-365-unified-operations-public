@@ -4,11 +4,9 @@
 title: What's new and changed in Dynamics 365 Commerce 10.0.14 (November 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.14. 
 author: josaw1
-manager: AnnBe
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -41,15 +39,15 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
+The following features are included in this release. The feature titles link to additional information on the [Release plans](/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- [Abandoned cart capabilities for e-commerce](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/abandoned-cart-capabilities-e-commerce)
-- [Experimentation in Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/experimentation-dynamics-365-commerce)
-- [Support for adding items to purchase orders during receiving in POS](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-adding-items-purchase-orders-during-receiving-pos)<br> - For more information, see [Inbound inventory operation in POS](../pos-inbound-inventory-operation.md).
-- [Support serial number registration on outbound transfer order shipments from POS](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-serial-number-registration-outbound-transfer-order-shipments-pos)<br> - For more information, see [Work with serialized items in the POS](../pos-serialized-items.md).
+- [Abandoned cart capabilities for e-commerce](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/abandoned-cart-capabilities-e-commerce)
+- [Experimentation in Dynamics 365 Commerce](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/experimentation-dynamics-365-commerce)
+- [Support for adding items to purchase orders during receiving in POS](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-adding-items-purchase-orders-during-receiving-pos)<br> - For more information, see [Inbound inventory operation in POS](../pos-inbound-inventory-operation.md).
+- [Support serial number registration on outbound transfer order shipments from POS](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-serial-number-registration-outbound-transfer-order-shipments-pos)<br> - For more information, see [Work with serialized items in the POS](../pos-serialized-items.md).
 - Social share module<br> - For more information, see [Social share module](../social-share-module.md).
 - Process credit cards without a hardware station<br> - For more information, see [Process credit cards without a hardware station](../dev-itpro/cnp-pos.md).
-- [Gift card balance check module](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/gift-card-purchase-e-commerce)<br> - For more information, see [Gift card module](../add-giftcard.md).
+- [Gift card balance check module](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/gift-card-purchase-e-commerce)<br> - For more information, see [Gift card module](../add-giftcard.md).
 
 ## Additional resources
 
@@ -64,7 +62,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 2 plan](/dynamics365-release-plan/2020wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 

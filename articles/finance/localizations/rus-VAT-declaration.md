@@ -3,11 +3,9 @@
 title: VAT declaration (Russia)
 description: This topic provides information about the VAT declaration for Russia.
 author: anasyash
-manager: AnnBe
 ms.date: 02/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -42,7 +40,7 @@ To start to work with the VAT declaration, follow these steps.
     - **VAT declaration format 5.05** – This configuration is required in order to generate the VAT declaration for the year 2018 reporting period.
     - **VAT declaration format 5.06** – This configuration is required in order to generate the VAT declaration for the year 2019 reporting period.
 
-    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2. Download and import the Data management package settings.
 
@@ -262,9 +260,9 @@ To customize the declaration, follow one of these steps.
     1. Create a customized **Model mapping** ER configuration. Derive it from the configuration that is provided by the Microsoft configuration provider.
     2. Redefine the **$RRG.$Section3.$data.$dataStd** data source element of the model mapping.
 
-For more information about how to create a derived version of ER configurations to do customization, see [ER Upgrade your format by adopting a new, base version of that format](../../dev-itpro/analytics/tasks/er-upgrade-format.md).
+For more information about how to create a derived version of ER configurations to do customization, see [ER Upgrade your format by adopting a new, base version of that format](../../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md).
 
-For more information about how to define model mappings, see [Define ER model mappings and select data sources for them](../../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md).
+For more information about how to define model mappings, see [Define ER model mappings and select data sources for them](../../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md).
 
 ## Application 1 to section 3
 
@@ -448,7 +446,7 @@ Next, you must manually upload the files that are generated to the special third
 
 ## Additional resources
 
-- [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Electronic messaging](../general-ledger/electronic-messaging.md)
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
 

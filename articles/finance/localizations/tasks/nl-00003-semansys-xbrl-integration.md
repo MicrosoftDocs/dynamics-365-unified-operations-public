@@ -4,11 +4,9 @@
 title: Semansys XBRL integration
 description: This procedure walks you through using Dutch functionality to export financial data in the XML format. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 05/28/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -40,7 +38,7 @@ The following prerequisites are needed for this process:
 - Knowledge of the correct taxonomy for which you're reporting and the confirmation that you're delivering to a Dutch regulatory body.
 - Import **Dutch XBRL integration model** and **Semansys XBRL (NL)** electronic reporting configurations.
 
-For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 The following example shows the steps needed for a user to export the data for reporting a 2019 annual report. 
 

@@ -4,11 +4,9 @@
 title: Europe overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Europe. 
 author: ShylaThompson
-manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,6 +44,7 @@ This topic includes information and links to resources that can help you set up 
 - [EU Sales list reporting](emea-eu-sales-list.md)
 - [Exchange rate adjustments](emea-exchange-rate-adjustments.md)
 - [File formats for methods of payment](emea-select-file-formats-for-the-method-of-payments.md)
+- [Finance (Globalization) guidance about Brexit impact](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Fiscal service (ESR) integration](emea-fiscal-service-integration.md)
 - [Fixed assets disposal for Estonia and Lithuania](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Generate a transfer document for an internal inventory transfer](tasks/transfer-document-internal-inventory-transfer.md)
@@ -103,8 +102,8 @@ This topic includes information and links to resources that can help you set up 
 
 ## Additional resources
 
-- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

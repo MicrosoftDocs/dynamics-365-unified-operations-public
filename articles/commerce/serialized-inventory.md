@@ -4,11 +4,9 @@
 title: Point of sale (POS) improvements for serialized products
 description: This topic lists improvements that have been made to serialized products to help you save time and be more productive.
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -36,7 +34,7 @@ Based on the settings in Commerce Headquarters, products can be classified as ei
 
 ## POS improvements
 
-- **Serial numbers aren't required until checkout** – Previously, a cashier who added a serialized product to the transaction was required to provide a serial number. This requirement became an issue in clienteling scenarios, if cashiers and sales associates had an opportunity to up-sell products. Until the payment step, the products were often updated in the cart. Therefore, every time that a cashier added a new product, the system prompted him or her for the serial number. The serial number dialog box now includes an **Add later** button. Therefore, the sales associates can add the item to the transaction but can provide the serial number later. Sales associates can quickly add and replace serialized items in the cart, and then provide the serial number just before checkout. If the serial number isn't provided for any serialized product, a cashier who tries to complete the transaction receives an error message. This messages that states that the cashier must provide the missing serial numbers before he or she can continue.
+- **Serial numbers aren't required until checkout** – Previously, a cashier who added a serialized product to the transaction was required to provide a serial number. This requirement became an issue in clienteling scenarios, if cashiers and sales associates had an opportunity to up-sell products. Until the payment step, the products were often updated in the cart. Therefore, every time that a cashier added a new product, the system prompted the cashier for the serial number. The serial number dialog box now includes an **Add later** button. Therefore, the sales associates can add the item to the transaction but can provide the serial number later. Sales associates can quickly add and replace serialized items in the cart, and then provide the serial number just before checkout. If the serial number isn't provided for any serialized product, a cashier who tries to complete the transaction receives an error message. This messages that states that the cashier must provide the missing serial numbers before the cashier can continue.
 
     For each serialized item where the serial number was skipped, a comment appears under the transaction line. This comment states that the serial number hasn't been provided for the item. Therefore, the cashier can quickly find items that are missing a serial number.
 

@@ -4,11 +4,9 @@
 title: Modern POS (MPOS) architecture
 description: This topic describes the POS topology.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

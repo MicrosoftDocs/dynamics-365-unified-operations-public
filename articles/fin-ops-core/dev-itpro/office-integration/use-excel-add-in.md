@@ -4,11 +4,9 @@
 title: View and update entity data with Excel 
 description: This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. 
 author: jasongre
-manager: AnnBe
 ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -34,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. To open entity data, you can start from either Excel or Finance and Operations apps.
 
@@ -53,7 +51,7 @@ To learn more about how to use the Excel add-in, watch the short [Create an Exce
 2. Select an **Open in Excel** option, and open the workbook that is generated. This workbook has binding information for the entity, a pointer to your environment, and a pointer to the Excel add-in.
 3. In Excel, select **Enable editing** to enable the Excel add-in to run. The Excel add-in runs in a pane on the right side of the Excel window.
 4. If you're running the Excel add-in for the first time, select **Trust this Add-in**.
-5. If you're prompted to sign in, select **Sign in**, and then sign in by using the same credentials that you used to sign in to the Finance and Operations app. The Excel add-in will use a previous sign-in context from the browser and automatically sign you in, if it can. (For information about the browser that is used based on the operating system, see [Browsers used by Office add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) To ensure that sign-in was successful, verify the user name in the upper-right corner of the Excel add-in. 
+5. If you're prompted to sign in, select **Sign in**, and then sign in by using the same credentials that you used to sign in to the Finance and Operations app. The Excel add-in will use a previous sign-in context from the browser and automatically sign you in, if it can. (For information about the browser that is used based on the operating system, see [Browsers used by Office add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) To ensure that sign-in was successful, verify the user name in the upper-right corner of the Excel add-in. 
 
 The Excel add-in automatically reads the data for the entity that you selected. Note that there will be no data in the workbook until the Excel add-in reads it in.
 
@@ -68,7 +66,7 @@ The Excel add-in automatically reads the data for the entity that you selected. 
 
 6. Select **OK**, and then select **Yes** to confirm the change. The Excel add-in is restarted and loads metadata.
 
-    The **Design** button is now available. If the Excel add-in has a **Load applets** button, you probably aren't signed in as the correct user. For more information, see "The Load applets button is shown" in the [Troubleshooting](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) section of this topic.
+    The **Design** button is now available. If the Excel add-in has a **Load applets** button, you probably aren't signed in as the correct user. For more information, see "The Load applets button is shown" in the [Troubleshooting](../office-integration/use-excel-add-in.md#troubleshooting) section of this topic.
 
 7. Select **Design**. The Excel add-in retrieves entity metadata.
 8. Select **Add table**. A list of entities appears. The entities are listed in "Name - Label" format.
@@ -146,7 +144,7 @@ There are a few issues that can be resolved through some easy steps.
 
 - **The Load applets button is shown** – If the Excel add-in has a **Load applets** button after sign-in, you probably aren't signed in as the correct user. To resolve this issue, verify that the correct user name appears in the upper-right corner of the Excel add-in. If an incorrect user name appears, select it, sign out, and then sign back in.
 - **You receive a "Forbidden" message** – If you receive a "Forbidden" message while the Excel add-in is loading metadata, the account that is signed in to the Excel add-in doesn't have permission to use the targeted service, instance, or database. To resolve this issue, verify that the correct user name appears in the upper-right corner of the Excel add-in. If an incorrect user name appears, select it, sign out, and then sign back in.
-- **A blank webpage is shown over Excel** – If a blank webpage is opened during the sign-in process, the account requires AD FS, but the version of Excel that is running the Excel add-in isn't recent enough to load the sign-in dialog box. To resolve this issue, update the version of Excel that you're using. To update the version of Excel when you're in an enterprise that is on the deferred channel, use the [Office deployment tool](https://technet.microsoft.com/library/jj219422.aspx) to [move from the deferred channel to the current channel](https://technet.microsoft.com/library/mt455210.aspx).
+- **A blank webpage is shown over Excel** – If a blank webpage is opened during the sign-in process, the account requires AD FS, but the version of Excel that is running the Excel add-in isn't recent enough to load the sign-in dialog box. To resolve this issue, update the version of Excel that you're using. To update the version of Excel when you're in an enterprise that is on the deferred channel, use the [Office deployment tool](/deployoffice/overview-office-deployment-tool) to [move from the deferred channel to the current channel](/deployoffice/overview-update-channels).
 - **You receive a time-out while you publish data changes** – If you receive time-out messages while you're trying to publish data changes to an entity, consider reducing the publish batch size for the affected workbook. Entities that trigger larger amounts of logic on record changes might require updates to be sent in smaller batches to help prevent time-outs.
 
 

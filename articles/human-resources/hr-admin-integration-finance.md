@@ -4,11 +4,9 @@
 title: Configure integration with Finance
 description: This article describes the functionality available for integration from Dynamics 365 Human Resources and Dynamics 365 Finance.
 author: andreabichsel
-manager: tfehr
 ms.date: 03/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: SystemAdministrationWorkspaceForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -36,7 +33,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-To integrate Dynamics 365 Human Resources with Dynamics 365 Finance, you can use the Human Resources to Finance template in [Data Integrator](https://docs.microsoft.com/powerapps/administrator/data-integrator). The Human Resources to Finance template enables data flow for jobs, positions, and workers. The template allows data to flow from Human Resources into Finance, but doesn't allow data to flow from Finance into Human Resources.
+To integrate Dynamics 365 Human Resources with Dynamics 365 Finance, you can use the Human Resources to Finance template in [Data Integrator](/powerapps/administrator/data-integrator). The Human Resources to Finance template enables data flow for jobs, positions, and workers. The template allows data to flow from Human Resources into Finance, but doesn't allow data to flow from Finance into Human Resources.
 
 ![Human Resources to Finance Integration Flow](./media/hr-admin-integration-finance-flow.png)
 
@@ -255,7 +252,7 @@ The integration from Human Resources to Finance attempts to match records based 
 
 This issue can occur with **Worker**, which uses **Personnel number** to make the match, and **Positions**. Jobs don't use number sequences. As a result, if the same job ID exists in both Human Resources and Finance, the Human Resources information overwrites the Dynamics 365 Finance information. 
 
-To prevent issues with duplicate IDs, you can either add a prefix on the [number sequence](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json), or set a beginning number on the number sequence that is beyond the range of the other system. 
+To prevent issues with duplicate IDs, you can either add a prefix on the [number sequence](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json), or set a beginning number on the number sequence that is beyond the range of the other system. 
 
 The location ID used for worker address isn't part of a number sequence. When integrating a worker address from Human Resources to Finance, if the worker address already exists in Finance, a duplicate address record may be created. 
 

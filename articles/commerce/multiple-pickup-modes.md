@@ -4,11 +4,9 @@
 title: Enable multiple pickup delivery modes for customer orders
 description: This topic explains the functionality in Microsoft Dynamics 365 Commerce that lets you create customer orders for pickup at a store.
 author: hhainesms
-manager: annbe
 ms.date: 11/17/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -89,7 +87,7 @@ When multiple pickup delivery modes are available for a channel, an enhanced exp
 
 ## Considerations for distributed order management
 
-The [distributed order management (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) features in Commerce ignore any sales lines that are marked for store pickup. These features have been updated to ensure that sales lines that are linked to configured pickup delivery modes bypass the DOM logic and won't be reallocated to a new fulfillment warehouse.
+The [distributed order management (DOM)](./dom.md) features in Commerce ignore any sales lines that are marked for store pickup. These features have been updated to ensure that sales lines that are linked to configured pickup delivery modes bypass the DOM logic and won't be reallocated to a new fulfillment warehouse.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

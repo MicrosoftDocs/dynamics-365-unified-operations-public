@@ -4,11 +4,9 @@
 title: Goods and Services Tax (GST) integration for cash registers for India
 description: This topic provides an overview of the cash register functionality that is available for India. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-manager: annbe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
 ms.technology:
 
 # optional metadata
@@ -35,7 +33,7 @@ This topic provides a walkthrough of the features that are related to Goods and 
 
 ## Prerequisites
 
-- Set up GST for India. For more information, see [India Goods and Services Tax (GST)](../../financials/localizations/apac-ind-gst.md).
+- Set up GST for India. For more information, see [India Goods and Services Tax (GST)](../../finance/localizations/apac-ind-gst.md).
 - Configure Commerce channel components. To enable India-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
 
 ## India tax entities for Commerce
@@ -54,7 +52,7 @@ The following table shows the navigation paths for the India tax entities in Com
 | Tax setup                           | Retail and Commerce \> Channel setup \> Sales taxes \> Tax configuration \> Tax setup      |
 
 > [!NOTE]
-> The navigation paths for the India tax entities in Commerce differ from the navigations paths in Finance. For information about the navigation paths in Finance, see [India Goods and Services Tax (GST)](../../financials/localizations/apac-ind-gst.md).
+> The navigation paths for the India tax entities in Commerce differ from the navigations paths in Finance. For information about the navigation paths in Finance, see [India Goods and Services Tax (GST)](../../finance/localizations/apac-ind-gst.md).
 
 ## Validate tax information for the store
 

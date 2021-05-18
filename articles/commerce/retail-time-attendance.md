@@ -4,11 +4,9 @@
 title: Time and attendance management in Retail
 description: This topic describes the scenarios that are supported for time and attendance management in Dynamics 365 Commerce. 
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -45,9 +43,9 @@ This topic describes the scenarios that are supported for time and attendance ma
 
 ### Plan worker schedules
 
-- Apply profiles by using the work planner. For more information, see [Apply profiles using work planner](https://technet.microsoft.com/library/aa551234.aspx).
+- Apply profiles by using the work planner. For more information, see [Apply profiles using work planner](/dynamicsax-2012/appuser-itpro/apply-profiles-using-work-planner).
 
-For information about the configuration steps, see [Setting up time and attendance](https://technet.microsoft.com/library/aa496971.aspx).
+For information about the configuration steps, see [Setting up time and attendance](/dynamicsax-2012/appuser-itpro/setting-up-time-and-attendance).
 
 ### Commerce-specific configuration
 
@@ -142,7 +140,7 @@ A Commerce user follows the workflow to calculate, approve, and transfer time re
 - Bulk Clock-out
 - Register Absence
 
-For more information about how to process time and attendance registrations, see [Process time and attendance registrations](https://technet.microsoft.com/library/aa573180.aspx).
+For more information about how to process time and attendance registrations, see [Process time and attendance registrations](/dynamicsax-2012/appuser-itpro/process-time-and-attendance-registrations).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

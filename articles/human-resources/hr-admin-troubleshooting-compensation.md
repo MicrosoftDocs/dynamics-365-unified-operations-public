@@ -4,11 +4,9 @@
 title: Run the compensation process
 description: This article explains how to resolve an issue where the customer is trying to run the compensation process in Microsoft Dynamics 365 Human Resources but isn't having any success.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -48,13 +45,13 @@ Here is the documentation for compensation:
 
 - Setup:
 
-    - [Compensation plans](https://docs.microsoft.com/dynamics365/unified-operations/talent/compensation-plans)
-    - [Create fixed compensation plans](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-    - [Create variable compensation plans](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+    - [Compensation plans](/dynamics365/unified-operations/talent/compensation-plans)
+    - [Create fixed compensation plans](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+    - [Create variable compensation plans](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
 
 - Process:
 
-    - [Process compensation](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
+    - [Process compensation](/dynamics365/unified-operations/talent/process-compensation)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

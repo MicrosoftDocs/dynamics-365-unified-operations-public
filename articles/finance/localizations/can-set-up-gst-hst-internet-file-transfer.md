@@ -4,11 +4,9 @@
 title: Canada GST/HST Internet File Transfer
 description: This article explains how to configure and use Canada GST/HST internet file transfer feature.
 author: ericwang
-manager: Ann Beebe
 ms.date: 08/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

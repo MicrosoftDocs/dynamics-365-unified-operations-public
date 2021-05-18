@@ -1,31 +1,16 @@
 ---
-# required metadata
-
 title: Changes in X++ and the X++ compiler
 description: This topic reviews the changes made to the compiler for Finance and Operations applications.
 author: pvillads
-manager: AnnBe
 ms.date: 12/18/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 26781
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Changes in X++ and the X++ compiler

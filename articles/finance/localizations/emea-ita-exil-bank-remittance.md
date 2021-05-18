@@ -4,11 +4,9 @@
 title: Configurable posting profiles for banks and remittance types
 description: This topic provides information about how to configure posting profiles for banks and remittance types.
 author: ilkond
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -38,7 +36,7 @@ In addition to defining general functionality settings, you can set up different
 Before you can use different posting profiles for the remittance of a bill of exchange and the remittance of a promissory note in company bank accounts, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Italy.
-- The **Configurable posting profiles for banks and remittance types** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The **Configurable posting profiles for banks and remittance types** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up a posting profile for a remittance journal line offset account
 

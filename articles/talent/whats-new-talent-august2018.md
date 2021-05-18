@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Talent - Core HR (August 2018)
 description: This topic describes features that are new or changed in Microsoft Dynamics 365 Talent - Core HR for August 2018.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/27/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -92,7 +89,7 @@ you understand what’s being used during the accrual process.
 Document templates have been enabled throughout Core HR. This feature allows you to create letters and reports based on Word templates that you create.
 
 Additional information about this feature is available in the
-[Office integration tutorial](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/talent/toc.json).
+[Office integration tutorial](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json).
 
 
 ## Other fixes

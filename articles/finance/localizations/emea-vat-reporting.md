@@ -4,11 +4,9 @@
 title: VAT reporting for Europe
 description: This topic provides general information about setting up and generating the value-added tax (VAT) statement for some European countries.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -255,9 +253,9 @@ d<li>The transaction <strong>Tax base amount</strong> or <strong>Tax amount</str
 
 You can use Electronic Reporting (ER) to configure statements and report, and to export data different electronic formats without changing X++ code. For additional information:
 
--   [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
--   [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
--   [Localization requirements – Create a GER configuration](../../dev-itpro/analytics/electronic-reporting-configuration.md)
+-   [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+-   [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+-   [Localization requirements – Create a GER configuration](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
 
 ## Countryspecific resources for VAT statements
 The VAT statement for each country must meet the requirements of the country’s legislation. There are predefined general models and formats of VAT statements for the countries listed in the following table.

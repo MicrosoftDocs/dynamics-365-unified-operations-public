@@ -4,11 +4,9 @@
 title: Malaysia Goods and Services Tax
 description: This topic provides information about how to set up Goods and Services Tax (GST) for a Malaysian company.
 author: mrolecki
-manager: AnnBe
 ms.date: 05/17/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -92,7 +90,7 @@ When the Minister grants your customers relief from the payment of all or part o
 
 ### Self-billed invoices
 
-In some circumstances, the value of a supply is determined by the person who receives the goods. Therefore, for GST purposes, the recipient of the goods is allowed to issue an invoice to himself or herself. This invoice is considered a tax invoice for the supply of goods or services to that person by another registered person. You can issue self-billed invoices only if you receive approval from the Director General. The reference number of the approval must be stated on the self-billed invoice. You can print a self-billed invoice only if the invoice type is set to **GST invoice**. You must also enter the approval number on the purchase order header. On the invoice, you will see the following additional information:
+In some circumstances, the value of a supply is determined by the person who receives the goods. Therefore, for GST purposes, the recipient of the goods is allowed to issue an invoice to themself. This invoice is considered a tax invoice for the supply of goods or services to that person by another registered person. You can issue self-billed invoices only if you receive approval from the Director General. The reference number of the approval must be stated on the self-billed invoice. You can print a self-billed invoice only if the invoice type is set to **GST invoice**. You must also enter the approval number on the purchase order header. On the invoice, you will see the following additional information:
 
 -   The words “Self-billed invoice” in a prominent place
 -   The approval number

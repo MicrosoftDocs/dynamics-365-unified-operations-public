@@ -4,11 +4,9 @@
 title: Set up Configuration manager
 description: This topic provides information about how to set up the Configuration manager.
 author: RobinARH
-manager: AnnBe
 ms.date: 10/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -39,8 +37,8 @@ ms.dyn365.ops.version: 2012
 ## Before you begin
 Before you begin, your environment must include the following components:
 
-- A running version of AX 2012 R3 that has been configured for your business. For more information about how to install AX 2012 R3, see [Install Microsoft Dynamics AX 2012](https://technet.microsoft.com/library/fbe52b68-1294-4398-b233-f8ec37c6d531(AX.60).aspx).
-- A running instance of the Data Import/Export Framework. For more information about how to install the Data Import/Export Framework, see [Install the Data import/export framework (AX 2012 R#)](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/install-the-data-import-export-framework-ax-2012-r3). 
+- A running version of AX 2012 R3 that has been configured for your business. For more information about how to install AX 2012 R3, see [Install Microsoft Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/install-microsoft-dynamics-ax-2012).
+- A running instance of the Data Import/Export Framework. For more information about how to install the Data Import/Export Framework, see [Install the Data import/export framework (AX 2012 R#)](/dynamicsax-2012/appuser-itpro/install-the-data-import-export-framework-ax-2012-r3). 
 
     > [!IMPORTANT]
     > You must deploy the DMFEntityExecutionStatusService and DMFService service groups to enable to Configuration manager (beta) to connect to Data Import/Export Framework.

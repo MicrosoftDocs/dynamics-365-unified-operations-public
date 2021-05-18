@@ -4,11 +4,9 @@
 title: Initialize company data
 description: This topic explains how to initialize data with company information before you enable a dual-write connection.
 author: RamaKrishnamoorthy 
-manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -38,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 If have an existing Microsoft Dataverse instance or Finance and Operations app instance that has business data, you might want to enable a dual-write connection against it. In this case, you must initialize the Dataverse data or Finance and Operations app data with company information before you enable dual-write. This initialization process is sometimes referred to as *bootstrapping*.
 
-This topic includes sample scenarios that explain how to use [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction) to initialize data in Dataverse tables for dual-write. It doesn't cover all tables, error handling scenarios, or lookups. Use this topic and template as a reference to set up your own Azure Data Factory pipeline to import data into Dataverse or update data in Dataverse.
+This topic includes sample scenarios that explain how to use [Azure Data Factory](/azure/data-factory/introduction) to initialize data in Dataverse tables for dual-write. It doesn't cover all tables, error handling scenarios, or lookups. Use this topic and template as a reference to set up your own Azure Data Factory pipeline to import data into Dataverse or update data in Dataverse.
 
 ## High-level scenario
 
@@ -63,8 +61,8 @@ This scenario is based on the following assumptions:
 ## Prerequisites
 
 - **Azure subscription** – You have **contributor access** to an existing Azure subscription. If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/free/) before you begin.
-- **Azure storage account** – You have an Azure storage account. If you don't have a storage account, follow the steps in [Create an Azure storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) to create one.
-- **Azure data factory** – Create an Azure Data Factory resource by following the steps in [Create a data factory](https://docs.microsoft.com/azure/data-factory/tutorial-copy-data-portal#create-a-data-factory).
+- **Azure storage account** – You have an Azure storage account. If you don't have a storage account, follow the steps in [Create an Azure storage account](/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) to create one.
+- **Azure data factory** – Create an Azure Data Factory resource by following the steps in [Create a data factory](/azure/data-factory/tutorial-copy-data-portal#create-a-data-factory).
 - **Finance and Operations app** – Use the Data management framework to export the data in CSV format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, customers are exported by using the **CustCustomerV3Entity** table.
 - **Dynamics 365 Dataverse** – Use the credentials for the Dataverse admin user to initialize the data.
 - **Dual-write** – Dual-write solutions are installed, and reference data is copied by using initial write.
@@ -73,7 +71,7 @@ This scenario is based on the following assumptions:
 
 ### Set up an Azure storage account
 
-If you don't have an Azure storage account, follow these steps in [Create an Azure storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) to create one. In your storage account, create one container that is named **ce-data**. This container will store all data files. You can change the container in your datasets and pipelines as you require. Go to **Access keys**, and copy the **Connection string** value, as shown in the following illustration. This value is required when you import the Azure Data Factory template.
+If you don't have an Azure storage account, follow these steps in [Create an Azure storage account](/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) to create one. In your storage account, create one container that is named **ce-data**. This container will store all data files. You can change the container in your datasets and pipelines as you require. Go to **Access keys**, and copy the **Connection string** value, as shown in the following illustration. This value is required when you import the Azure Data Factory template.
 
 :::image type="content" source="media/boot-storage-account.png" alt-text="Setting up access keys":::
 

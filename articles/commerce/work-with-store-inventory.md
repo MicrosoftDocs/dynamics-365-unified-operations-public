@@ -4,11 +4,9 @@
 title: Store inventory management
 description: This topic describes the types of documents that you can use to manage inventory.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -46,11 +44,11 @@ The Commerce applications running on CSU do not support the following tracking d
 
 - The point of sale (POS) application can offer limited support for the following dimensions. POS may automatically enter some of the dimensions in inventory transactions, based on the configuration of the warehouse or store setup. POS won't fully support the dimensions in the way that they are supported if a sales transaction is manually entered in Commerce headquarters, however. 
 
-- **Warehouse Location** – When they use the new [Inbound operation](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) and [Outbound operation](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation) POS operations, users can select a warehouse inventory location to receive items into or ship outbound transfer order items out of. If they use the obsolete **Picking and receiving** operation, limited location management support is available for receiving and shipping outbound transfers. That support is available only if the **Use warehouse management process** option has been turned on for the item and the store warehouse. An inventory location can't currently be used with the **Stock count** operation or the **Inventory lookup** operation.
+- **Warehouse Location** – When they use the new [Inbound operation](./pos-inbound-inventory-operation.md) and [Outbound operation](./pos-outbound-inventory-operation.md) POS operations, users can select a warehouse inventory location to receive items into or ship outbound transfer order items out of. If they use the obsolete **Picking and receiving** operation, limited location management support is available for receiving and shipping outbound transfers. That support is available only if the **Use warehouse management process** option has been turned on for the item and the store warehouse. An inventory location can't currently be used with the **Stock count** operation or the **Inventory lookup** operation.
 
-- **License plate** – License plates are applicable only when the **Use warehouse management process** option has been turned on for the item and the store warehouse. In POS, if inventory is received into a store warehouse by using the **Inbound operation** operation or the **Picking and receiving** operation where the warehouse management process has been turned on, and if the location that has been selected to receive the item into is linked to a location profile that requires license plate control, the POS application systematically applies a license plate to the receiving line. POS users can't change or manage this license plate data. If full management of license plates is required, we recommend that the store use the [warehousing app](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/install-configure-warehousing-app) or the back-office client to manage the receipt of these items.
+- **License plate** – License plates are applicable only when the **Use warehouse management process** option has been turned on for the item and the store warehouse. In POS, if inventory is received into a store warehouse by using the **Inbound operation** operation or the **Picking and receiving** operation where the warehouse management process has been turned on, and if the location that has been selected to receive the item into is linked to a location profile that requires license plate control, the POS application systematically applies a license plate to the receiving line. POS users can't change or manage this license plate data. If full management of license plates is required, we recommend that the store use the [warehousing app](../supply-chain/warehousing/install-configure-warehousing-app.md) or the back-office client to manage the receipt of these items.
 
-- **Serial number** – The POS application provides limited support for registration of a single serial number on a sales transaction  line for orders that are created in POS and include serialized items. This serial number isn't validated against registered serial numbers that are already in inventory. If a sales order is created in the call center channel or fulfilled through enterprise resource planning (ERP), and multiple serial numbers are registered on a single sales line during the fulfillment process in ERP, those serial numbers can't be applied or validated if a return is processed for the order in POS. When inventory is received by using the **Inbound operation** operation, users can [register or confirm the serial numbers received](https://docs.microsoft.com/dynamics365/commerce/pos-serialized-items).
+- **Serial number** – The POS application provides limited support for registration of a single serial number on a sales transaction  line for orders that are created in POS and include serialized items. This serial number isn't validated against registered serial numbers that are already in inventory. If a sales order is created in the call center channel or fulfilled through enterprise resource planning (ERP), and multiple serial numbers are registered on a single sales line during the fulfillment process in ERP, those serial numbers can't be applied or validated if a return is processed for the order in POS. When inventory is received by using the **Inbound operation** operation, users can [register or confirm the serial numbers received](./pos-serialized-items.md).
 
 - **Batch ID** - The POS application provides limited support during statement posting if a batch-controlled item is sold, but POS users aren't able to define the batch ID that was sold or picked when using the POS application.
 
@@ -63,11 +61,11 @@ The Commerce applications running on CSU do not support the following tracking d
 
 ## Purchase orders
 
-Purchase orders are created in Commerce headquarters. If a store warehouse is included in the purchase order header or on purchase order lines, the lines can be received at the store by using the [Inbound operation](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) operation in POS. 
+Purchase orders are created in Commerce headquarters. If a store warehouse is included in the purchase order header or on purchase order lines, the lines can be received at the store by using the [Inbound operation](./pos-inbound-inventory-operation.md) operation in POS. 
 
 ## Transfer orders
 
-Transfer orders can be created in Commerce headquarters, or through either the [Inbound operation](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) or [Outbound operation](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation) operation in POS. Use the **Inbound operation** POS operation to create a transfer order request to have inventory sent to the store from another warehouse or store location. Use the **Outbound operation** POS operation to create a transfer order request to have inventory shipped from the store to another warehouse or store location. After a transfer order for a store is created, that store can manage the receipt of inventory for the transfer order through the **Inbound operation** operation in POS. If the store is shipping inventory to another location, the **Outbound operation** operation in POS is used to manage that store's outbound shipment process.
+Transfer orders can be created in Commerce headquarters, or through either the [Inbound operation](./pos-inbound-inventory-operation.md) or [Outbound operation](./pos-outbound-inventory-operation.md) operation in POS. Use the **Inbound operation** POS operation to create a transfer order request to have inventory sent to the store from another warehouse or store location. Use the **Outbound operation** POS operation to create a transfer order request to have inventory shipped from the store to another warehouse or store location. After a transfer order for a store is created, that store can manage the receipt of inventory for the transfer order through the **Inbound operation** operation in POS. If the store is shipping inventory to another location, the **Outbound operation** operation in POS is used to manage that store's outbound shipment process.
 
 ## Stock counts
 
@@ -75,7 +73,7 @@ Stock counts can be either scheduled or unscheduled. Scheduled stock counts are 
 
 ## Inventory lookup
 
-The product quantity that is currently on hand for multiple stores and warehouses can be viewed on the **Inventory lookup** page. In addition to the current on-hand quantity, the future available-to-promise (ATP) quantities can be viewed for each store. Select the store to view the ATP quantities for, and then select **Show store availability**. For information about the configuration options that are available, see [Calculate inventory availability for retail channels](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+The product quantity that is currently on hand for multiple stores and warehouses can be viewed on the **Inventory lookup** page. In addition to the current on-hand quantity, the future available-to-promise (ATP) quantities can be viewed for each store. Select the store to view the ATP quantities for, and then select **Show store availability**. For information about the configuration options that are available, see [Calculate inventory availability for retail channels](./calculated-inventory-retail-channels.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Compensation Power BI content
 description: This topic describes the Compensation Power BI content. It explains how to access reports and provides information about the data model used.
 author: jcart1106 
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: AX 2009 migration - Generate maps 
 description: This topic explains how to generate data maps to migrate data from Microsoft Dynamics AX 2009 to Finance and Operations.
 author: kfend
-manager: AnnBe
 ms.date: 06/30/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

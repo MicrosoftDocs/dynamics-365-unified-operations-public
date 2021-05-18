@@ -4,11 +4,9 @@
 title: Create a benefits plan
 description: Set up benefit plans in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
-ms.date: 04/06/2020
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: BenefitPlanListPage, BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -30,7 +27,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Create a benefits plan
+# Create a benefit plan
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -51,9 +48,8 @@ This article shows you how to set up benefit plans in Dynamics 365 Human Resourc
    | **Program** | Specifies a program to optionally assign the plan to. |
    | **Bundle** | Specifies a bundle to optionally assign the plan to. |
    | **Master** | Specifies whether the plan is the master plan within the bundle it is assigned to. |
-   | **Status** | Indicates the current status of the benefits plan. The default value is Active. If you change the status to Inactive, the plan won’t be available as a selection during enrollment. |
    | **Valid from date and time** | The date and time the plan starts. The default value is the current system date. |
-   | **Valid to date and time** | The date and time the plan ends (the status is set to Inactive). The default value is 12/31/2154, which signifies never. |
+   | **Valid to date and time** | The date and time the plan ends. The default value is 12/31/2154, which signifies never. |
 
 4. On the **Configuration** tab, specify values for the following fields, depending on the type of plan you're creating:
 
@@ -61,18 +57,18 @@ This article shows you how to set up benefit plans in Dynamics 365 Human Resourc
    | --- | --- | --- |
    | Medical (Medical, Dental, Vision, HMO) | COBRA | Specifies whether the plan is COBRA (Consolidated Omnibus Budget Reconciliation Act) eligible. |
    | Medical (Medical, Dental, Vision, HMO) | HIPAA | Specifies whether the plan is HIPAA (Health Insurance Portability and Accountability Act) eligible. |
-   | <ul><li>Medical (Medical, Dental, Vision, HMO)</li><li>Other (PTO, Fitness)</li><li>Other</li><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li><li>Savings (for example, 401(k))</li><li>FSA</li></ul> | Pretax eligible | Specifies whether contributions can be made to the plan before taxes are applied. |
-   | <ul><li>Medical (Medical, Dental, Vision, HMO)</li><li>Other (PTO, Fitness)</li><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li><li>Savings (for example, 401(k))</li><li>FSA</li></ul> | Post tax eligible | Specifies whether contributions can be made to the plan after taxes are applied. |
-   | <ul><li>Medical (Medical, Dental, Vision, HMO)</li><li>Other (PTO, Fitness)</li><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li><li>Savings (for example, 401(k))</li><li>FSA</li></ul> | Contributor | Specifies who contributes to the plan – the employee, the employer, or both. |
-   | <ul><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li></ul> | Minimum coverage | The minimum amount of insurance coverage required for the plan. |
-   | <ul><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li></ul> | Maximum coverage | The maximum amount of insurance coverage required for the plan. |
-   | <ul><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li></ul> | Use coverage increments | Specifies whether to validate that the coverage amount matches a valid incremental amount. |
-   | <ul><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li></ul> | Incremental amount | The incremental amount of insurance coverage for the plan. For example, if the incremental amount is 1,000, an employee can’t have $200,500 of insurance, they would need to round up to $201,000 or down to $200,000. |
-   | <ul><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li></ul> | Incremental direction | Specifies the direction to round – either up or down – when the coverage amount doesn’t satisfy the incremental amount value. |
+   | Medical (Medical, Dental, Vision, HMO)<br><br>Other (PTO, Fitness)<br><br>Other<br><br>Long term disability<br><br>ADD (Basic life, Voluntary life)<br><br>Savings (for example, 401(k))<br><br>FSA | Pretax eligible | Specifies whether contributions can be made to the plan before taxes are applied. |
+   | Medical (Medical, Dental, Vision, HMO)<br><br>Other (PTO, Fitness)<br><br>Long term disability<br><br>ADD (Basic life, Voluntary life)<br><br>Savings (for example, 401(k))<br><br>FSA | Post tax eligible | Specifies whether contributions can be made to the plan after taxes are applied. |
+   | Medical (Medical, Dental, Vision, HMO)<br><br>Other (PTO, Fitness)<br><br>Long term disability<br><br>ADD (Basic life, Voluntary life)<br><br>Savings (for example, 401(k))<br><br>FSA | Contributor | Specifies who contributes to the plan – the employee, the employer, or both. |
+   | Long term disability<br><br>ADD (Basic life, Voluntary life) | Minimum coverage | The minimum amount of insurance coverage required for the plan. |
+   | Long term disability<br><br>ADD (Basic life, Voluntary life) | Maximum coverage | The maximum amount of insurance coverage required for the plan. |
+   | Long term disability<br><br>ADD (Basic life, Voluntary life) | Use coverage increments | Specifies whether to validate that the coverage amount matches a valid incremental amount. |
+   | Long term disability<br><br>ADD (Basic life, Voluntary life) | Incremental amount | The incremental amount of insurance coverage for the plan. For example, if the incremental amount is 1,000, an employee can’t have $200,500 of insurance, they would need to round up to $201,000 or down to $200,000. |
+   | Long term disability<br><br>ADD (Basic life, Voluntary life) | Incremental direction | Specifies the direction to round – either up or down – when the coverage amount doesn’t satisfy the incremental amount value. |
    | ADD (Basic life, Voluntary life) | Evidence of insurability | Specifies whether an employee must provide evidence of insurability. |
    | ADD (Basic life, Voluntary life) | Amount | The amount in accounting currency. This field is only active if the Evidence of insurability check box is selected. |
-   | <ul><li>Savings (for example, 401(k))</li><li>FSA</li></ul> | Minimum annual contribution | The minimum contribution amount required for the plan. |
-   | <ul><li>Savings (for example, 401(k))</li><li>FSA</li></ul> | Maximum annual contribution | The maximum contribution amount required for the plan. |
+   | Savings (for example, 401(k))<br><br>FSA | Minimum annual contribution | The minimum contribution amount required for the plan. |
+   | Savings (for example, 401(k))<br><br>FSA | Maximum annual contribution | The maximum contribution amount required for the plan. |
    | Savings (for example, 401(k)) | Employer maximum annual amount | The maximum amount an employer is allowed to contribute toward an employee savings plan during a benefit period. You must select the Employer match check box to use this field. |
    | Savings (for example, 401(k)) | Employer match | Specifies whether the employer contributes to an employee savings plan. |
    | Savings (for example, 401(k)) | Employer match percent | The percentage of an employee contribution that the employer will match. |
@@ -127,7 +123,7 @@ You can view the workers who are enrolled in a selected benefit plan.
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
-2. Select **Enrolled workers**.
+2. On the **Benefits** tab in the navigation bar, select **Enrolled workers**.
 
 ## Attach coverage options
 
@@ -135,7 +131,7 @@ You can add coverage options to the selected benefits plan. Attaching coverage o
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
-2. Select **Attach coverage options**.
+2. On the **Benefits** tab in the navigation bar, select **Attach coverage options**.
 
 ## Override eligibility rules
 
@@ -143,7 +139,7 @@ You can add workers to a plan as exceptions to the eligibility rules. Each worke
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
-2. Select **Eligibility rule override**.
+2. On the **Benefits** tab in the navigation bar, select **Eligibility rule override**.
 
 ## View attached periods
 
@@ -151,21 +147,21 @@ You can see a list of the available benefits periods.
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
-2. Select **Periods**.
+2. Select the **Periods** tab in the navigation bar.
 
-## View plan information
+## View plan description
 
-You can provide a description of the plan to help employees with their benefits selections. The plan information you enter here displays in Employee self service when hovering on the plan in the coverage options list.
+You can provide a description of the plan to help employees with their benefits selections. The plan description you enter here displays in Employee self service when hovering on the plan in the coverage options list.
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
-2. Select **Plan information**.
+2. On the **Benefits** tab in the navigation bar, select **Plan description**.
 
 ## View flex credit programs
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
-2. Select **Flex credit programs**.
+2. On the **Benefits** tab in the navigation bar, select **Flex credit programs**.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

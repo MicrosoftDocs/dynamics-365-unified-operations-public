@@ -1,69 +1,35 @@
 ---
 # required metadata
 
-title: Generate the Standard Audit File for France (FEC)
-description: This topic walks you through generating the Standard Audit File for France (FEC) in Microsoft Dynamics 365 Finance.
-author: anasyash
-manager: AnnBe
-ms.date: 01/31/2020
+title: Audit file for France (Fichier des écritures comptables, FEC)
+description: This topic provides information about the Fichier des écritures comptables (FEC) audit file, and links to topics that explain how to set up and generate an FEC in Microsoft Dynamics 365 Finance.
+author: liza-golub
+ms.date: 05/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
 audience: Application User
-# ms.devlang: 
+# ms.devlang:
+ms.author: elgolu
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: France
 # ms.search.industry: 
-ms.author: roschlom
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Generate the Standard Audit File for France (FEC)
+# Audit file for France (Fichier des écritures comptables, FEC)
 
-[!include [banner](../includes/banner.md)]
+Companies in France are legally required to export their accounting transaction data for a fiscal year. They must then provide that data to auditors in Fichier des écritures comptables (FEC) format within a reasonable amount of time.
 
-This procedure walks you through generating the Standard Audit File (FEC) for France in the electronic file format. French tax authorities require audit files that are generated in the FEC format.
+For more information about how to prepare to generate FEC and generate it, see the following topics:
 
-Before you can generate a FEC audit file, you must:
-
-1. Set up number sequences for vouchers. Each voucher series must contain a portion of text which is considered as value for the **JournalCode** in the **FEC audit** report. For example, configure a voucher series for vendor invoice journals as **FRSIFACF-########** to get the value "FRSIFACF" in **JournalCode** in the FEC.txt file.
-2. Import the latest version of the Electronic reporting configuration **French FEC audit file**. 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-3. On the **Configurations** page, expand **Data export model**, select **French FEC model mapping**, and set **Default for model mapping** to **Yes**.
-
-## Generate the Standard audit file for France
-1. Go to **General Ledger** > **Periodic tasks** > **Data export** to open the **Data export** page.
-2. In the **Format mapping** field, select **French FEC audit file**.
-3. Select **OK**.
-4. On the **Electronic report parameters** page, enter start and end dates for the period in the **Period - date from** and **Period - date to** fields. Select **OK**.
-5. Review the generated file.
-
-## Review the Standard audit file
-When the Standard audit file is generated, an archive file with the following five reports is also generated.
-
-- FEC.txt
-- Vendor incoming.txt
-- Customer incoming.txt
-- Vendor balance.txt
-- Customer balance.txt
-
-Consider the following information for select fields in the reports:
-
-- **JournalCode**: Contains the text portion of the voucher. If the voucher series doesn't have a text portion, the value will be blank. Be sure to correctly set up the voucher series in order to have the correct value in this field.
-- **JournalLib**: 
-
-   - In the **Vendor balance.txt** and **Customer balance.txt** reports, this is the constant value **System**.
-   - In the **Vendor incoming.txt** and **Customer incoming.txt** reports, this is the value of the **Transaction type** field from the  vendor transaction or customer transaction which is reported. Possible values could be for example, **Purchase order** or **Payment**.
-   - In the **FEC.txt** report, this is the value of the **Transaction type** field from the voucher transaction that is reported. If the **Transaction type** equals **General journal**, this is the value from the **Description** field of the ledger journal, which is the source of the voucher transaction. Verify by checking the value on the **Journal names** page.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Prerequisites for generating an FEC audit file in France](emea-fra-fec-audit-file-pre-requisites.md)
+- [Structure of Dynamics 365 Finance data sources for the FEC](emea-fra-fec-audit-file-structure.md)
+- [Prepare your environment to generate an FEC](emea-fra-fec-audit-file-setup.md)
+- [Generate the FEC in Dynamics 365 Finance](emea-fra-fec-audit-file-generation.md)

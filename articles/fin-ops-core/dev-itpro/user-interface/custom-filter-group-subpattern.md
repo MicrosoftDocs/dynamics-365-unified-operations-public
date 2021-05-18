@@ -4,11 +4,9 @@
 title: Custom Filter Group subpattern
 description: This topic provides information about the Custom Filter Group subpattern.
 author: jasongre
-manager: AnnBe
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -53,11 +51,11 @@ Two patterns are described in this document. The only difference between these p
 ## Wireframes
 ### Custom Filters
 
-[![Custom Filters](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
+[![Custom filters group 1](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
 
 ### Custom and Quick Filters
 
-![Custom and Quick Filters](./media/customfiltergroup2.png)
+![Custom and quick filters group 2](./media/customfiltergroup2.png)
 
 ## Model
 ### Custom Filters – High-level structure
@@ -114,13 +112,13 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **LedgerJournalTable (TopFields)** 
 
-![Custom Filters](./media/customfiltergroup3.png)
+![Custom filters group 3](./media/customfiltergroup3.png)
 
 ### Custom and Quick Filters
 
 Form: **CustTable** **(CustomFilterGroup)** 
 
-[![Custom and Quick Filters](./media/customfiltergroup4.png)](./media/customfiltergroup4.png)
+[![Custom and quick filters group 4](./media/customfiltergroup4.png)](./media/customfiltergroup4.png)
 
 ## Resources
 ### Typically used by form patterns
@@ -153,8 +151,8 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [MSDN AX 2012 How to Add Controls to the Filter Pane](https://msdn.microsoft.com/library/cc577231.aspx)
--   [MSDN AX 2012 List Page Overview – section Filter Pane](https://msdn.microsoft.com/library/cc616937.aspx)
+-   [MSDN AX 2012 How to Add Controls to the Filter Pane](/dynamicsax-2012/developer/how-to-add-controls-to-the-filter-pane)
+-   [MSDN AX 2012 List Page Overview – section Filter Pane](/dynamicsax-2012/developer/list-page-overview)
 
 #### AX 2012 example
 

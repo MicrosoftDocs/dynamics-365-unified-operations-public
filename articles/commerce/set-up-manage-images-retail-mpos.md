@@ -4,11 +4,9 @@
 title: Set up and manage images for Modern POS (MPOS)
 description: This article explains the steps that are involved in setting up and managing images for the various entities that appear in Modern POS (MPOS).
 author: athinesh99
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

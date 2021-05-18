@@ -4,11 +4,9 @@
 title: What's new or changed in Finance and Operations version 10.0.4 (July 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.4. This version will be released in July.
 author: tonyafehr
-manager: AnnBe
 ms.date: 07/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -40,12 +38,12 @@ This topic describes features that are either new or changed in Microsoft Dynami
 ## Set up interest distribution for cash accounts (Public Sector)
 Your agency can allocate (distribute) the interest on a bank account to specific General ledger accounts, based on the average daily balance in cash accounts. You can use this process to generate an advanced ledger entry for the interest amounts. Alternatively, you can generate the interest amounts for review, without posting them.
 
-For more information, see [Set up interest distribution for cash accounts](https://go.microsoft.com/fwlink/?linkid=2088607).
+For more information, see [Set up interest distribution for cash accounts](../../../finance/public-sector/interest-distribution.md).
 
 ## Budget analysis report (Public Sector)
 Similar to the Budget analysis inquiry, you can now use the new **Budget analysis** report to generate a summarized report that compares budgeted amounts to actual expense and revenue activity during a period that you specify. For each account, the report lists budgeted amounts, actual expenses or revenue, encumbrance amounts from purchase orders, and pre-encumbrance amounts from purchase requisitions. Additionally, the report lists the remaining budget amount for each account and fund.
 
-For more information, see [Budget analysis report](https://go.microsoft.com/fwlink/?linkid=2087447).
+For more information, see [Budget analysis report](../../../finance/public-sector/budget-analysis-report.md).
 
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
@@ -61,7 +59,7 @@ Microsoft Dynamics 365 for Finance and Operations version 10.0.4 includes Platfo
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the April '19 release notes](/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.

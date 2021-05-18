@@ -5,11 +5,9 @@
 title: Configure and manage database logging
 description: You can track changes to tables and fields in Dynamics 365 Human Resources with database logging.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -74,7 +71,22 @@ To improve performance, limit log entries by selecting specific fields to log in
 You can use the **Logging database changes** wizard to set up database logging. The wizard provides a flexible way to set up logging for tables or fields.
 
 1. Go to **System administration > Links > Database > Database log setup**. Select **New** to start the **Logging database changes** wizard.
-2. Complete the wizard.
+2. Select **Next**. 
+3. On the **Tables and fields** page of the wizard, select the the tables and fields on which you want to enable database logging, and select **Next**.
+
+   > [!Note]
+   > Database logging is not available on all tables in the Human Resources database. Selecting **Show all tables** below the list expands the list of tables and fields to show all database tables for which database logging is available, but this will be a subset of the full list of database tables.
+
+4. On the **Types of change** page of the wizard, select the data operations for which you want to track changes for each of the tables and fields, and select **Next**. See the table below for a description of the data operations that are available for logging.
+5. On the **Finish** page, review the changes that will be made, and select **Finish**.
+
+| Operation | Description |
+| -- | -- |
+| Track new transactions | Create a log for new records that are created in the table. |
+| Update | Create a log for updates to table records, or updates to individually selected fields in the table. If you select to log updates for the table, then a log record is created each time an update is made to any field of any record on the table. If you select to log updates for specific fields, then a log record is created only when updates are made to those fields of table records. |
+| Delete | Create a log for records deleted from the table. |
+| Rename key | Create a log record when a table key is renamed. |
+
 
 ## Clean up database logs
 

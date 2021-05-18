@@ -4,11 +4,9 @@
 title: Online and offline point of sale (POS) operations
 description: This topic provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: jblucher
-manager: AnnBe
 ms.date: 02/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -71,7 +69,7 @@ The following columns specify where the operations can be invoked:
 | 642 | Carry Out All Products | Set the mode of delivery for all lines to **Carryout**. | Yes | Yes | No | Yes\* | No |
 | 641 | Carry Out Selected Products | Set the mode of delivery for the selected lines to **Carryout**. | Yes | Yes | No | Yes\* | No |
 | 647 | Change mode of delivery | Change mode of delivery for preconfigured shipping sales lines. | Yes | Yes | No | No| No |
-| 1215 | Change password | This operation lets the POS user change his or her password. | Yes | Yes | Yes | No | No |
+| 1215 | Change password | This operation lets the POS user change their password. | Yes | Yes | Yes | No | No |
 | 123 | Change unit of measure | Change the unit of measure for the selected line item. | Yes | Yes | No | Yes | No |
 | 639 | Clear default sales representative on transaction | Remove the commission sales group (sales rep) from the transaction. | Yes | Yes | No | Yes | No |
 | 106 | Clear quantity | Reset the quantity on the currently selected line to **1**. | Yes | Yes | No | Yes | No |

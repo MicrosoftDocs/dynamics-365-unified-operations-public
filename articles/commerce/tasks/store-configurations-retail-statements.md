@@ -4,11 +4,9 @@
 title: Store configurations for Retail statements
 description: This procedure walks through configurations for the store that affect how Commerce statements get created and posted. 
 author: jashanno
-manager: AnnBe 
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

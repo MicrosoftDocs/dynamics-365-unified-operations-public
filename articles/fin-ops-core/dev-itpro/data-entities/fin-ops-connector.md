@@ -4,11 +4,9 @@
 title: Application Connector
 description: This topic provides information about the Application Connector for Microsoft Power Automate and Logic Apps.
 author: Sunil-Garg
-manager: AnnBe
-ms.date: 01/09/2020
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -37,13 +35,13 @@ The application connector allows Microsoft Power Automate, Power Apps, Data Inte
 ## Prerequisites
 We recommend that you read the following topics as a prerequisite to familiarize yourself with connectors before proceeding further
 
-- [Connectors](https://docs.microsoft.com/connectors/) 
-- [Data management package REST API](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api?toc=/fin-and-ops/toc.json)
-- [Open Data Protocol (OData)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/fin-and-ops/toc.json) 
-- [Recurring integrations](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/fin-and-ops/toc.json) 
+- [Connectors](/connectors/) 
+- [Data management package REST API](data-management-api.md)
+- [Open Data Protocol (OData)](odata.md) 
+- [Recurring integrations](recurring-integrations.md) 
 
 ## Triggers
-Business events are exposed using the trigger *When a business event occurs*. For detailed information about business events, refer to [Business events in Microsoft Power Automate](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) and [Business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/home-page).
+Business events are exposed using the trigger *When a business event occurs*. For detailed information about business events, refer to [Business events in Microsoft Power Automate](../business-events/business-events-flow.md) and [Business events](../business-events/home-page.md).
 
 ## Actions
 
@@ -90,6 +88,11 @@ This action can be used to invoke methods on a data entity to perform a business
 This action can be used to get the list of entities for further use in the app that is being developed.
 
 *Instance* refers to the URL of the target instance to which the connector must connect. The syntax for this value is to enter the URL without the ‘https://’ prefix or choose one from the drop- menu. This lists of all the environments that are deployed in the Azure Active Directory tenant for the user account that was used to sign in to the specific client like Power Automate, Power Apps, or Logic App.
+
+**List items present in the table**
+
+This action can be used to get the list of records from an entity. This action supports cross-company reading of data.
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

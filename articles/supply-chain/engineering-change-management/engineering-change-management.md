@@ -4,11 +4,9 @@
 title: Manage changes to engineering products
 description: This topic provides information about engineering change management. Engineering change management provides structured processes for managing changes to engineering products, from proposing, requesting, and making changes, to reviewing and approving changes, assessing their impact on existing transactions, and following up on them.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -145,13 +143,14 @@ While you're reviewing a request for change, on the Action Pane, on the **Change
 
 As is described in [Engineering companies and data ownership rules](engineering-org-data-ownership-rules.md), the product data that you can edit varies, depending on the type of legal entity that you're working in (an engineering company versus an operational company). Data ownership rules are also applied to engineering change orders. Therefore, depending on the legal entity where you create an engineering change order, different types of changes can be made. Here are some examples:
 
-- For engineering change orders in an **engineering company**, you can make basic changes to the engineering data. For example, you can create new versions of a product, change a product's structure via the BOM, and change engineering attribute values. For each affected product, select one of the following values in the **Impact** field:
+- For engineering change orders in an *engineering company*, you can make basic changes to the engineering data. For example, you can create new versions of a product, change a product's structure via the BOM, and change engineering attribute values. For each affected product, select one of the following values in the **Impact** field:
 
     - **None** – Update the existing product version (in-version update).
     - **New version** – Create a new version that is based on the selected product version.
-    - **New product** – Create a completely new product or product variant that is based on the selected product version.
+    - **New product** – Create a completely new product that is based on the selected product version.
+    - **New variant** – Create a new variant based on the selected product version. Its BOM and route information will be copied.
 
-- For engineering change orders in an **operational company**, you can change the logistical data of the product. For example, you can enrich the existing BOM with settings for sourcing, add local routes or local BOMs, and even enrich a BOM by adding new BOM lines for local packaging materials, lubrication fluids, or instructions in the local language. Enrichments that users make in the operational company will be preserved when new updates are sent from the engineering company. For more information, see [Engineering companies and data ownership rules](engineering-org-data-ownership-rules.md).
+- For engineering change orders in an *operational company*, you can change the logistical data of the product. For example, you can enrich the existing BOM with settings for sourcing, add local routes or local BOMs, and even enrich a BOM by adding new BOM lines for local packaging materials, lubrication fluids, or instructions in the local language. Enrichments that users make in the operational company will be preserved when new updates are sent from the engineering company. For more information, see [Engineering companies and data ownership rules](engineering-org-data-ownership-rules.md).
 
     When engineering change orders are processed in the engineering company, the products are created and/or updated only in the engineering company. Therefore, if the product master data should also be updated, you must also release the products to operational companies.
 

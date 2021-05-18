@@ -4,11 +4,9 @@
 title: Set up a retail  channel
 description: This topic describes how to create a new retail channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
-ms.date: 01/27/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -40,7 +38,7 @@ Before a retail channel is created, ensure you follow the [channel prerequisites
 ## Create and configure a new retail channel
 
 1. In the navigation pane, go to **Modules \> Channels \> Stores \> All stores**.
-1. On the action pane, select **New**.
+1. On the Action Pane, select **New**.
 1. In the **Name** field, provide a name for the new channel.
 1. In the **Store number** field, provide a unique store number. The number can be alphanumeric with a maximum of 10 characters.
 1. In the **Legal entity** drop-down list, enter the appropriate legal entity.
@@ -52,7 +50,7 @@ Before a retail channel is created, ensure you follow the [channel prerequisites
 1. In the **Default customer** field, provide a valid default customer.
 1. In the **Functionality profile** field, select a functionality profile if applicable.
 1. In the **Email notification profile** field, provide a valid email notification profile.
-1. On the action pane, select **Save**.
+1. On the Action Pane, select **Save**.
 
 The following image shows the creation of a new retail channel.
 
@@ -74,7 +72,7 @@ The following image shows an example retail channel setup configuration.
 
 ## Additional channel set up
 
-There are additional items that need to be set up for a channel that can be found on the **Action pane** under the **Set up** section.
+There are additional items that need to be set up for a channel that can be found on the Action Pane under the **Set up** section.
 
 Additional tasks required for online channel setup include setting up payment methods, cash declaration, modes of delivery, income/expense account, sections, the fulfillment group assignment, and safes.
 
@@ -86,12 +84,12 @@ The following image shows various additional retail channel setup options on the
 
 To set up payment methods, for each payment type supported on this channel follow these steps.
 
-1. On the action pane, select the **Set Up** tab, then select **Payment methods**.
-1. On the action pane, select **New**.
+1. On the Action Pane, select the **Set Up** tab, then select **Payment methods**.
+1. On the Action Pane, select **New**.
 1. In the navigation pane, select a desired payment method.
 1. In the **General** section, provide an **Operation name** and configure any other desired settings.
 1. Configure any additional settings as required for the payment type.
-1. On the action pane, select **Save**.
+1. On the Action Pane, select **Save**.
 
 The following image shows an example of a cash payment method.
 
@@ -99,8 +97,8 @@ The following image shows an example of a cash payment method.
 
 ### Set up cash declaration
 
-1. On the action pane, select the **Set Up** tab, and then select **Cash declaration**.
-1. On the action pane, select **New**, and then create all **Coin** and **Note** denominations that are applicable.
+1. On the Action Pane, select the **Set Up** tab, and then select **Cash declaration**.
+1. On the Action Pane, select **New**, and then create all **Coin** and **Note** denominations that are applicable.
 
 The following image shows an example of a cash declaration.
 
@@ -108,12 +106,12 @@ The following image shows an example of a cash declaration.
 
 ### Set up modes of delivery
 
-You can see the configured modes of delivery by selecting **Modes of delivery** from the **Set up** tab on the **Action pane**.  
+You can see the configured modes of delivery by selecting **Modes of delivery** from the **Set up** tab on the Action Pane.  
 
 To change or add a mode of delivery, follow these steps.
 
 1. In the navigation pane, go to **Modules \> Inventory management \> Modes of delivery**.
-1. On the action pane, select **New** to create a new mode of delivery, or select an existing mode.
+1. On the Action Pane, select **New** to create a new mode of delivery, or select an existing mode.
 1. In the **Retail channels** section, select **Add line** to add the channel. Adding channels using organization nodes instead of adding each channel individually can streamline adding channels.
 
 The following image shows an example of a mode of delivery.
@@ -124,14 +122,14 @@ The following image shows an example of a mode of delivery.
 
 To set up income/expense account, follow these steps.
 
-1. On the action pane, select the **Set Up** tab, and then select **Income/Expense account**.
-1. On the action pane, select **New**.
+1. On the Action Pane, select the **Set Up** tab, and then select **Income/Expense account**.
+1. On the Action Pane, select **New**.
 1. Under **Name**, enter a name.
 1. Under **Search name**, enter a search name.
 1. Under **Account type**, enter the account type.
 1. Enter text for **Message line 1**, **Message line 2**, **Slip text 1**, and **Slip text 2** as needed.
 1. Under **Posting**, enter posting information.
-1. On the action pane, select **Save**.
+1. On the Action Pane, select **Save**.
 
 The following image shows an example of an income/expense account.
 
@@ -141,23 +139,23 @@ The following image shows an example of an income/expense account.
 
 To set up sections, follow these steps.
 
-1. On the action pane, select the **Set Up** tab and click **Sections**.
-1. On the action pane, select **New**.
+1. On the Action Pane, select the **Set Up** tab and click **Sections**.
+1. On the Action Pane, select **New**.
 1. Under **Section number**, enter a section number.
 1. Under **Description**, enter a description.
 1. Under **Section size**, enter a section size.
 1. Configure additional settings for **General** and **Sales statistics** as needed.
-1. On the action pane, select **Save**.
+1. On the Action Pane, select **Save**.
 
 ### Set up a fulfillment group assignment
 
 To set up a fulfillment group assignment, follow these steps.
 
-1. On the action pane, select the **Set up** tab, then select **Fulfillment group assignment**.
-1. On the action pane, select **New**.
+1. On the Action Pane, select the **Set up** tab, then select **Fulfillment group assignment**.
+1. On the Action Pane, select **New**.
 1. In the **Fulfillment group** drop-down list, select a fulfillment group.
 1. In the **Description** drop-down list, enter a description.
-1. On the action pane, select **Save**
+1. On the Action Pane, select **Save**
 
 The following image shows an example of a fulfillment group assignment setup.
 
@@ -167,10 +165,41 @@ The following image shows an example of a fulfillment group assignment setup.
 
 To set up safes, follow these steps.
 
-1. On the action pane, select the **Set Up** tab and click **Safes**.
-1. On the action pane, select **New**.
+1. On the Action Pane, select the **Set Up** tab and click **Safes**.
+1. On the Action Pane, select **New**.
 1. Enter a name for the safe.
-1. On the action pane, select **Save**.
+1. On the Action Pane, select **Save**.
+
+### Ensure unique transaction IDs
+
+As of the Commerce version 10.0.18 , transaction IDs generated for the point of sale (POS) are sequential and include the following parts:
+
+- A fixed part, which is a concatenation of store ID and terminal ID. 
+- A sequential part, which is a number sequence. 
+
+Specifically, the format is *{store}-{terminal}-{numbersequence}*. 
+
+Because transaction IDs can be generated in offline and online modes, there have been instances of duplicate transaction IDs being generated. Eliminating duplicate transaction IDs requires a lot of manual data fixing. 
+
+With Commerce version 10.0.19, the transaction ID format has been updated to remove the sequential part and instead uses a 13-digit number generated by calculating the time in milliseconds since 1970. With this change, the new transaction ID format is *{store}-{terminal}-{millisecondsSince1970}*. This update makes the transaction ID non-sequential and ensures that transaction IDs are always unique. 
+
+> [!NOTE]
+> Transaction IDs are meant for internal system use only, so they are not required to be sequential. However, many countries require receipt IDs to be sequential.
+
+The new transaction ID format feature can be enabled from the **Feature management** workspace. 
+
+To enable the use of new transaction IDs, follow these steps:
+
+1. In Commerce headquarters, go to **System administration \> Workspaces \> Feature management**.
+1. Filter for the "retail and commerce" module.
+1. Search for the **Enable new transaction id to avoid duplicate transaction ids** feature name.
+1. Select the feature, and then select **Enable Now** in the right pane.  
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
+1. Run the **1070 Channel configuration** and **1170 POS task recorder** jobs to synchronize the enabled feature to the stores.
+1. After the changes have been sent to the stores, POS terminals must be closed and reopened to use the new transaction ID format. 
+
+> [!NOTE]
+> After the new transaction ID format feature is enabled, you will not be able to disable this feature. If it must be disabled, please contact Commerce Support.
 
 ## Additional resources
 

@@ -3,11 +3,9 @@
 title: Turnover balance statement reports
 description: This topic provides information about turnover balance sheets for customers, vendors, and advanced holders.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 04/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Revenue recognition overview 
 description: This topic provides information about the Revenue recognition feature. This feature provides a flexible framework that lets you define company-specific rules for recognizing both the revenue price and the revenue schedule for multi-element orders.
 author: kweekley
-manager: aolson
 ms.date: 11/11/2019
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

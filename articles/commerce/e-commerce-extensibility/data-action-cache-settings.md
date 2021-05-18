@@ -4,11 +4,9 @@
 title: Data action cache settings
 description: This topic covers cache settings for data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
-ms.date: 02/11/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -39,33 +37,54 @@ For core data actions that are provided in the SDK, the cache key is implicitly 
 
 For all entities, the default TTR is 60 seconds, and the default TTL is 600 seconds.
 
-The following example shows a JavaScript Object Notation (JSON) file that includes a section for TTR and TTL settings. Each section contains name of the entity for the data action's cache key followed by the time in seconds.
+The following example shows a JavaScript Object Notation (JSON) file that includes a section for TTR and TTL settings. Each section contains name of the entity for the data action's cache key followed by the time in seconds. This example might differ from the file that is included in the SDK, because the SDK is regularly updated.
 
 ```json
 {
+    "checkPeriodInSeconds": 1800,
     "ttlInSeconds": {
-        "AttributeValue": 1800,
-        "Category": 1800,
-        "CategoryHierarchy": 1800,
-        "ChannelConfiguration": 1800,
-        "FullProduct": 1800,
-        "ProductRating": 1800,
-        "OrgUnit": 1800,
-        "ProductCatalog": 1800,
-        "SimpleProduct": 1800      
+        "AttributeValue": 43200,
+        "Category": 43200,
+        "CategoryHierarchy": 43200,
+        "CategoryPath": 43200,
+        "ChannelConfiguration": 43200,
+        "ChannelDeliveryConfiguration": 43200,
+        "FeatureState": 43200,
+        "FullProduct": 43200,
+        "FullProductSearchResult": 43200,
+        "MappedSearchInput": 43200,
+        "OrgUnit": 43200,
+        "OrgUnitLocation": 43200,
+        "Product": 43200,
+        "ProductCatalog": 43200,
+        "ProductDimensionValue": 43200,
+        "PRODUCTLIST-RECOMMENDATION":43200,
+        "PRODUCTLIST-RELATEDPRODUCTS":43200,
+        "ProductRating": 43200,
+        "ProductRefiner": 43200,
+        "SimpleProduct": 43200
     },
     "ttrInSeconds": {
         "AttributeValue": 900,
         "Category": 900,
-        "CategoryHierarchy": 1800, 
+        "CategoryHierarchy": 1800,
+        "CategoryPath": 900,
         "ChannelConfiguration": 1800,
+        "ChannelDeliveryConfiguration": 1800,
+        "FeatureState": 900,
         "FullProduct": 900,
+        "FullProductSearchResult": 900,
+        "MappedSearchInput": 900,
         "OrgUnit": 1800,
+        "OrgUnitLocation": 900,
         "Product": 900,
-        "ProductCatalog": 300,
-        "ProductDimensionValue": 900,
+        "ProductCatalog": 900,
+        "ProductDimensionValue": 1800,
+        "PRODUCTLIST-RECOMMENDATION":900,
+        "PRODUCTLIST-RELATEDPRODUCTS":900,
         "ProductRating": 900,
-        "SimpleProduct": 900        
+        "ProductRefiner": 900,
+        "SimpleProduct": 900
     }
 }
 ```
@@ -97,21 +116,30 @@ The following table provides cache setting descriptions for specific data action
 
 | Entity | Description |
 | ------ | ----------- |
-| AttributeValue | Contains the metadata of the product attributes information shown on a product details page. For better performance, and to reduce round trips to Retail Server, we recommended that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the product attributes shown. For information about the APIs returning this entity, see [Products controller](../dev-itpro/retail-server-customer-consumer-api.md#products-controller). |
-| Category | Contains the metadata of the category information shown in a navigation module. For better performance, and to reduce round trips to Retail Server, it is recommended to cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the category information shown. For information about the APIs returning this entity, see [Categories controller](../dev-itpro/retail-server-customer-consumer-api.md#categories-controller). |
-| CategoryHierarchy	| Contains the metadata of the hierarchy of available categories shown in a navigation module. For better performance, and to reduce round trips to Retail Server, we recommended that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the categories hierarchy information shown. For information about the APIs returning this entity, see [Categories controller](../dev-itpro/retail-server-customer-consumer-api.md#categories-controller). |
-| OrgUnit | Contains metadata of the organization unit used in "buy online, pick up in store" (BOPIS) scenarios and the store locator module. For better performance, and to reduce round trips to Retail Server, we recommended that you cache the entity with optimum TTR and TTL values. For information about the APIs returning this entity, see [Org units controller](../dev-itpro/retail-server-customer-consumer-api.md#org-units-controller).
-| ProductDimensionValue	| Contains the metadata of the product dimensions information shown on a product details page. For better performance, and to reduce round trips to Retail Server, we recommended that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the product dimensions shown. For information about the APIs returning this entity, see [Products controller](../dev-itpro/retail-server-customer-consumer-api.md#products-controller). |
-| ProductList-Recommendations | Contains the list of recommended products on a homepage or product details page. For better performance, and to reduce round trips to Retail Server, we recommended that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the product list recommendations. |
-| ProductList-RelatedProducts | Contains the list of related products, shown on product details page. For better performance, and to reduce round trips to Retail Server, we recommended that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the related products. | 
-| ProductRating	| Contains the metadata of the product rating information shown on a product details page. For better performance, and to reduce round trips to Retail Server, we recommended that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the product rating information shown. For information about the APIs returning this entity, see [Products controller](../dev-itpro/retail-server-customer-consumer-api.md#products-controller). |
-| ProductRefiner | Contains the metadata of the product refiners shown on a product list page. For better performance, and to reduce round trips to Retail Server, we recommended that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the product refiners shown. For information about the APIs returning this entity, see [Products controller](../dev-itpro/retail-server-customer-consumer-api.md#products-controller). |
-| ProductSearchResult | Contains the metadata of the product search results shown on a product list page. For better performance, and to reduce round trips to Retail Server, we recommended that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the product list in search results. For information about the APIs returning this entity, see [Products controller](../dev-itpro/retail-server-customer-consumer-api.md#products-controller).|
-| SimpleProduct	 | Contains the metadata of the product shown on a product details page. For better performance, and to reduce round trips to Retail Server, we recommended that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the product information shown. For information about the APIs returning this entity, see [Products controller](../dev-itpro/retail-server-customer-consumer-api.md#products-controller). |
+| AttributeValue | Contains the metadata of the product attributes information shown on a product details page. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the product attributes shown. For information about the APIs returning this entity, see [Products controller](../dev-itpro/retail-server-customer-consumer-api.md#products-controller). |
+| Category | Contains the metadata of the category information shown in a navigation module. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the category information shown. For information about the APIs returning this entity, see [Categories controller](../dev-itpro/retail-server-customer-consumer-api.md#categories-controller). |
+| CategoryHierarchy | Contains the metadata of the hierarchy of available categories shown in a navigation module. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the categories hierarchy information shown. For information about the APIs returning this entity, see [Categories controller](../dev-itpro/retail-server-customer-consumer-api.md#categories-controller). |
+| CategoryPath | Contains the metadata of the category path that is used in the breadcrumb module. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the category path information. |
+| ChannelConfiguration | Contains the metadata of the channel information that is used in purchase flows. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the channel configuration that is shown. For information about the APIs that return this entity, see [Org units controller](../dev-itpro/retail-server-customer-consumer-api.md#org-units-controller). |
+| ChannelDeliveryConfiguration | Contains the metadata of the channel delivery configuration that is used in checkout and order confirmation. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the channel delivery configuration. |
+| FeatureState | Contains the metadata of the feature state that is used in purchase flows and order templates. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the feature state information. |
+| FullProduct | Contains the metadata of the full product that is used in order templates and for search scenarios. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the full product that is shown. |
+| FullProductSearchResult | Contains the metadata of the full product search results that are used for search scenarios. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the full product search results that are shown. |
+| MappedSearchInput | Contains the metadata of the mapped search input that is used for search scenarios. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the mapped search input. |
+| OrgUnit | Contains the metadata of the organization unit that is used in "buy online, pick up in store" (BOPIS) scenarios and the store locator module. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. For information about the APIs that return this entity, see [Org units controller](../dev-itpro/retail-server-customer-consumer-api.md#org-units-controller). |
+| OrgUnitLocation | Contains the metadata of the organization unit location that is used in the store locator module and purchase flows. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the organization unit location. For information about the APIs that return this entity, see [Org units controller](../dev-itpro/retail-server-customer-consumer-api.md#org-units-controller). |
+| Product | Contains the metadata of the product information that is used for search scenarios. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the mapped search input. For information about the APIs that return this entity, see [Products controller](../dev-itpro/retail-server-customer-consumer-api.md#products-controller). |
+| ProductDimensionValue | Contains the metadata of the product dimensions information shown on a product details page. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the product dimensions shown. For information about the APIs returning this entity, see [Products controller](../dev-itpro/retail-server-customer-consumer-api.md#products-controller). |
+| PRODUCTLIST-RECOMMENDATION | Contains the list of recommended products that is shown on a homepage or a product details page. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the product list recommendations. |
+| PRODUCTLIST-RELATEDPRODUCTS | Contains the list of related products that is shown on a product details page. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the related products. | 
+| ProductRating | Contains the metadata of the product rating information shown on a product details page. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the product rating information shown. For information about the APIs returning this entity, see [Products controller](../dev-itpro/retail-server-customer-consumer-api.md#products-controller). |
+| ProductRefiner | Contains the metadata of the product refiners shown on a product list page. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the product refiners shown. For information about the APIs returning this entity, see [Products controller](../dev-itpro/retail-server-customer-consumer-api.md#products-controller). |
+| ProductSearchResult | Contains the metadata of the product search results shown on a product list page. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the product list in search results. For information about the APIs returning this entity, see [Products controller](../dev-itpro/retail-server-customer-consumer-api.md#products-controller).|
+| SimpleProduct | Contains the metadata of the product shown on a product details page. For better performance, and to reduce round trips to Retail Server, we recommend that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the product information shown. For information about the APIs returning this entity, see [Products controller](../dev-itpro/retail-server-customer-consumer-api.md#products-controller). |
 
 ## Inline cache options
 
-The Dynamics 365 Commerce online SDK's data action layer provides flexibility for controlling how a data action response should be cached and what its scope should be (application or request). For all custom data actions, the cache type can be defined as part of the [action input](data-actions.md#key-parts-of-a-data-action). A common scenario is for data actions to invoke a Retail Server proxy data action, or module business logic that will invoke a Retail Server proxy data action. An example of such a scenario would be when a user selects a "find store" button. For these scenarios, a module can set the "bypassCache" option on the action context when invoking the Retail Server proxy data  action. This setting tells the SDK to honor the module's given cache preferences. For more information about Retail Server proxy data actions, see [Call Retail Server APIs](call-retail-server-apis.md).
+The Dynamics 365 Commerce online SDK's data action layer provides flexibility for controlling how a data action response should be cached and what its scope should be (application or request). For all custom data actions, the cache type can be defined as part of the [action input](data-actions.md#key-parts-of-a-data-action). A common scenario is for data actions to invoke a Retail Server proxy data action, or module business logic that will invoke a Retail Server proxy data action. An example of such a scenario would be when a user selects a "find store" button. For these scenarios, a module can set the "bypassCache" option on the action context when invoking the Retail Server proxy data action. This setting tells the SDK to honor the module's given cache preferences. For more information about Retail Server proxy data actions, see [Call Retail Server APIs](call-retail-server-apis.md).
 
 Supported values for bypassCache are: 
  

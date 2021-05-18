@@ -4,11 +4,9 @@
 title: Application business events
 description: This topic lists application business events.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 09/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

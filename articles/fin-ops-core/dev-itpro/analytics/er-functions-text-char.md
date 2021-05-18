@@ -4,11 +4,9 @@
 title: CHAR ER function
 description: This topic provides information about how the CHAR Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -55,7 +53,7 @@ The resulting text value.
 
 ## Usage notes
 
-The string that this function returns depends on the encoding that is selected in the parent **FILE** format element. For a list of the supported encodings, see [Encoding class](https://msdn.microsoft.com/library/system.text.encoding(v=vs.110).aspx).
+The string that this function returns depends on the encoding that is selected in the parent **FILE** format element. For a list of the supported encodings, see [Encoding class](/dotnet/api/system.text.encoding).
 
 ## Example
 

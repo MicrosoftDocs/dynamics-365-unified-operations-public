@@ -4,11 +4,9 @@
 title: Select data model definitions when you create formats
 description: To complete the steps in this procedure, you must first complete the procedure, ER Create a configuration provider and mark it as active. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 06/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

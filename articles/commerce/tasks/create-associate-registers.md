@@ -4,11 +4,9 @@
 title: Create and associate registers
 description: This procedure demonstrates how to create a point of sale (POS) register. 
 author: rubencdelgado
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

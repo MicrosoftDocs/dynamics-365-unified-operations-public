@@ -4,11 +4,9 @@
 title: Inventory statuses
 description: This article describes how you can use inventory statuses to categorize and keep track of inventory.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -50,10 +48,14 @@ An inventory status is one of the dimensions in the storage dimension group. Inv
 
 You can use warehouse items that have either available or unavailable inventory statuses for inbound work. For example, you create an available status that is named *Ready*, an unavailable status that is named *Damaged*, and a blocked status that is named *Blocked*. When you create a purchase order for received or returned items, if any items are damaged or broken, you can change the inventory status of those items to *Damaged* on the purchase order line. After these items are received, the status is automatically set to *Blocked*. If you scan the damaged items by using a mobile device, Supply Chain Management can use location directives and work templates to show information about an appropriate location or range of locations where you can put away those items. For returned items, an issue type of *Reservation* is created on the **Inventory transactions** page.
 
+You can specify which inventory statuses are blocking statuses by using the **Inventory blocking** check boxes on the **Inventory statuses** page. You can't use inventory statuses as blocking statuses for sales orders, transfer orders  or project integrations.
+
+For outbound work, you can use different non-blocking inventory statuses to control which inventory to reserve against. If you have items that have a status of *Blocking*, and master planning is run on these items, the items are considered missing, and inventory is automatically replenished. Furthermore, for quality orders associated with outbound work, it isn't possible to update the **Inventory status** as part of the quality order validation.
+
 > [!NOTE]
 > You can't change the status of inventory at locations where open work exists. For example, if you did a purchase receive for an item, but didn't do the putaway step, then open work would exist for the receiving location and you would get an error if you tried to change the status of inventory at that location. Completing or cancelling the related work would allow you to change the status.
- 
-For outbound work, use items that have an available inventory status. If you have items that have a status of *Broken*, and master planning is run on these items, the items are considered missing, and inventory is automatically replenished.
+>
+> Usually, the status of on-hand inventory related to open warehouse work is only changed by workers using the Warehouse Management mobile app, for example while executing a movement process.
 
 After you set up inventory statuses, you can set the default inventory status for a site, item, and warehouse. You can also set a default status for sales, transfer, and purchase orders. The default status for sales orders and outbound transfer order can't have the **Inventory blocking** option set to *Yes*. The inventory status that is inherited from the default settings on a site, warehouse, item, purchase order, transfer order or sales order can be changed by using the mobile device, or on the purchase order, sales order, or transfer order line.
 

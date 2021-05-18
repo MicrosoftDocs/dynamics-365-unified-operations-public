@@ -4,11 +4,9 @@
 title: Formalize business processes
 description: This topic explains how you can use the Business process feature to create a business process template for processes that must be completed in your organization.
 author: andreabichsel
-manager: tfehr
 ms.date: 01/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: PersonnelBusinessProcessGenericWorkspace, BusinessProcessGeneric
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -60,7 +57,7 @@ Complex tasks might require multiple steps, or the people who perform the tasks 
 In a business process template, you can start a business process by selecting **Start process**. When a process is started, tasks are created for the selected workers or the positions that are defined in the tasks that are included in the template. A due date is also assigned to each task by adding or subtracting the number of offset days from the target date, as explained in the "Tasks" section. You can view active business processes in the **Business processes** workspace.
 
 ## Employee self-service
-After a task is assigned to an employee, the employee can view it, and all his or her other assigned tasks, on the **Employee self service** page. For each business process task that is assigned to him or her, the employee can see the name and description of the task, instructions for completing it, and the name of a contact person. From the **Employee self service** page, the employee can also open the associated page in Microsoft Dynamics 365 or the associated webpage, and can mark tasks as in progress, canceled, or completed.
+After a task is assigned to an employee, the employee can view it, and all their other assigned tasks, on the **Employee self service** page. For each business process task that is assigned to him or her, the employee can see the name and description of the task, instructions for completing it, and the name of a contact person. From the **Employee self service** page, the employee can also open the associated page in Microsoft Dynamics 365 or the associated webpage, and can mark tasks as in progress, canceled, or completed.
 
 ## Business process workspace
 HR professionals can view the active business processes in the **Business process** workspace. This workspace lists all active processes and the tasks that are associated with each. The comprehensive task list can be filtered by due date. The workspace also lists overdue tasks and tasks that are assigned specifically to the HR professional. The HR professional can also update the status of all tasks and, as required, can reassign tasks to help keep the overall business process moving forward.

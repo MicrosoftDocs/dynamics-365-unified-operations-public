@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics AX 7.0 (February 2016)
 description: This article describes features that are either new or changed in Microsoft Dynamics AX 7.0. This version contains both platform and application features and was released in February 2016.
 author: sericks007
-manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -739,7 +737,7 @@ Retail Server and data management lets consumers and enterprises create an omni-
 </tr>
 <tr>
 <td>Move data between the Microsoft Dynamics AX back office and channels by using Commerce Data Exchange.</td>
-<td>Commerce Data Exchange is a system that transfers data between Microsoft Dynamics AX and retail channels, such as online stores or brick-and-mortar stores. For more information, see <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
+<td>Commerce Data Exchange is a system that transfers data between Microsoft Dynamics AX and retail channels, such as online stores or brick-and-mortar stores. For more information, see <a href="/dynamicsax-2012/appuser-itpro/commerce-data-exchange">Commerce Data Exchange [AX 2012]</a>.</td>
 <td>There is functional parity with Microsoft Dynamics AX 2012 CU8. However, note the following details:
 <ul>
 <li>Commerce Data Exchange has been re-engineered for the cloud.</li>

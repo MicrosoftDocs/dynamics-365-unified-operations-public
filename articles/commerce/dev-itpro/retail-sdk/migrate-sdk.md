@@ -4,11 +4,9 @@
 title: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
 description: This topic explains how to migrate the Retail SDK to Visual Studio 2017 and update the reference to NuGet.
 author: mugunthanm 
-manager: AnnBe
 ms.date: 08/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -62,7 +60,7 @@ The Retail SDK reference libraries use PackageReference. All the SDK samples use
 
 There are two ways to migrate:
 
-- Deploy a new development and build environment from Microsoft Dynamics Lifecycle Service (LCS), and manually install the Visual Studio 2017. LCS developer VM with Visual Studio 2017 will be available in a future release.
+- Deploy a new development and build environment from Microsoft Dynamics Lifecycle Service (LCS), and manually install the Visual Studio 2017. Starting with version 10.0.13, the VHD templates that you use to provision developer and test environments will include Visual Studio 2017. For more information, see [Visual Studio 2017 requirements for X++](../../../fin-ops-core/dev-itpro/dev-tools/developer-tools-vs2017.md).
 - Update extensions to Visual Studio 2017 in an existing development environment:
 
     - Install Visual Studio 2017 Community, Professional, or Enterprise edition on the existing build and development virtual machine (VM) with the following workloads:
@@ -94,7 +92,7 @@ Follow these steps to build the Retail SDK.
 ## Update the reference in the CRT and Retail Server extension projects
 
 1. 1.	Use any of the sample CRT projects in the Retail SDK (..\RetailSDK\SampleExtensions\CommerceRuntime) as a template and migrate your CRT extension to this new format. The new samples uses the Visual Studio 2017 formats for project dependencies (NuGet references).
-2. In the NuGet Package Manager, add the local NuGet repository folder. For information about how to create a local NuGet repository, see [Install and manage packages in Visual Studio using the NuGet Package Manager](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio#package-sources).
+2. In the NuGet Package Manager, add the local NuGet repository folder. For information about how to create a local NuGet repository, see [Install and manage packages in Visual Studio using the NuGet Package Manager](/nuget/consume-packages/install-use-packages-visual-studio#package-sources).
 
     > [!NOTE]
     > All the SDK reference libraries are converted to NuGet packages, and libraries are removed from the RetailSDK\\Reference folder. The NuGet packages can be found in the **..\\RetailSDK\\Code\\pkgs** or **..\\RetailSDK\\pkgs** folder.
@@ -109,7 +107,7 @@ Follow these steps to build the Retail SDK.
     ```
 
 > [!NOTE]
-> PackageReference also supports floating versions, where the version is updated with the floating version number. For more information about floating versions, see [How NuGet resolves package dependencies](https://docs.microsoft.com/nuget/concepts/dependency-resolution#floating-versions). When the floating version is used, extensions no longer have to update the reference for every update, because NuGet will automatically resolve to the latest version. For example, the package reference might resemble **\<PackageReference Include="Microsoft.Dynamics.Commerce.Runtime" Version="9.21.x" /\>**.
+> PackageReference also supports floating versions, where the version is updated with the floating version number. For more information about floating versions, see [How NuGet resolves package dependencies](/nuget/concepts/dependency-resolution#floating-versions). When the floating version is used, extensions no longer have to update the reference for every update, because NuGet will automatically resolve to the latest version. For example, the package reference might resemble **\<PackageReference Include="Microsoft.Dynamics.Commerce.Runtime" Version="9.21.x" /\>**.
 
 In a similar way, update the references for all the Retail Server, proxy, and Hardware station extension projects. 
 
@@ -123,7 +121,7 @@ You don't have to change the extensions code that was written in previous versio
 
 If you have existing pipelines in Azure Pipelines not based on build machine agent that are set up for the Retail SDK build will continue to work. In the MSBuild task step, change the MSBuild version to 15.0, if this change is required.
 
-Follow the steps to set up a build pipeline in Azure DevOps without using build VM and build agent from the build machine. For more information, see [Set up Commerce SDK build pipeline](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-sdk/sdk-build-pipeline).
+Follow the steps to set up a build pipeline in Azure DevOps without using build VM and build agent from the build machine. For more information, see [Set up Commerce SDK build pipeline](./sdk-build-pipeline.md).
 
 ## Azure DevOps pipeline using build machine agent
 

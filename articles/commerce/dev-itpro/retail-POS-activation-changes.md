@@ -2,13 +2,11 @@
 # required metadata
 
 title: Device activation of a customized Modern POS
-description: This topic explains how to configure Microsoft Dynamics 365 Commerce Headquarters so that device activation works correctly when a customized Modern POS application is used. 
+description: This topic explains how to configure Microsoft Dynamics 365 Commerce Headquarters when a customized application is used.
 author: jashanno
-manager: AnnBe
 ms.date: 02/08/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -44,9 +42,11 @@ The reply address is dependent on the Modern POS package SID that is shown at th
 > We recommend that you try to use the customized Modern POS application one time before you configure Dynamics 365 headquarters. In this way, you can see what the error message looks like and more easily obtain the customized reply address.
 
 ## Setup
+
 The following steps are required so that device activation works correctly when the customized Modern POS application is used. You will create two Azure AD applications: one for Modern POS and one for Commerce Scale Unit. The Commerce Scale Unit Azure AD application is required because the POS uses resources through Commerce Scale Unit. Therefore, both Azure AD applications are used when the POS is used. In this scenario, Commerce Scale Unit serves as the endpoint for protected resources that the POS requests.
 
 ### Create the Commerce Scale Unit Azure AD application
+
 1. In a web browser, go to <https://portal.azure.com/>.
 2. Sign in by using Azure AD credentials that have enough permission to create Azure AD applications.
 3. Select **Azure Active Directory** from the list of Azure services, then select **App registrations** from the leftmost menu that appears.
@@ -77,6 +77,7 @@ The following steps are required so that device activation works correctly when 
 > Do not close the web browser window because you will use it again later in this topic.
 
 ### Update the Modern POS configuration
+
 1. In File Explorer, go to **C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker**. (This path assumes that the Microsoft Windows operating system on the computer is based on the x64 architecture.)
 2. In File Explorer, select **File** \> **Open Windows PowerShell** \> **Open Windows PowerShell as administrator**.
 3. In the Microsoft Windows PowerShell window that appears, enter **notepad DLLHost.exe.config**, and then press the Enter key. (The Windows PowerShell window will already be pointed to the current file directory.)
@@ -88,6 +89,7 @@ The following steps are required so that device activation works correctly when 
 > Another way to perform the above steps would be to use a script or a post-step installation customization.
 
 ### Create the customized Modern POS Azure AD application
+
 1. Return to the web browser window where <https://portal.azure.com/> is open, and create the Retail Modern POS Azure AD application by repeating steps 3-5 in the "Create the Commerce Scale Unit Azure AD application" section. However, enter the following values this time:
 
     - **Name:** Enter **Customized Retail Modern POS**. (You can enter any other unique value, but be sure to make a note of the name entered.)
@@ -111,36 +113,38 @@ The following steps are required so that device activation works correctly when 
 9. Select **Add permissions** at the bottom of the slider.
 10. Select **Grant admin consent for \<your AAD name\>**. Select **Yes**. This grants consent and can be verified with the **Granted** displaying in the **Status** column in the **AccessRetailServer** row.
 
-        > [!NOTE]
-        > Granting consent is not required, but simplifies the process by consenting in advance for all users in your tenant (and you as the Admin). If this step is not completed, then each user will be asked for consent the first time that they try to activate Modern POS.
+    > [!NOTE]
+    > Granting consent is not required, but simplifies the process by consenting in advance for all users in your tenant (and you as the Admin). If this step is not completed, then each user will be asked for consent the first time that they try to activate Modern POS.
 
 ### Configure Dynamics 365 Headquarters
+
 The previous steps were required so that the Modern POS application can be authenticated. You must now follow these steps to add the new Azure AD applications to the list of safe programs in Headquarters, so that the requests are authorized. (A list of safe programs is sometimes also referred to as a safe list.)
 
 1. In a web browser, go to the Headquarters URL, and sign in by using Azure AD credentials.
 2. Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
 3. On the **Identity Providers** tab, in the **Identity providers** section, select the provider that begins with `HTTPS://sts.windows.net/`. The values in the **Relying parties** section are updated, based on the provider that you selected.
-5. In the **Relying parties** section, select **+ Add**, and enter the following values:
+4. In the **Relying parties** section, select **+ Add**, and enter the following values:
 
     - **ClientId:** Enter the value that you copied in step 3 in the previous section and then pasted into the DLLHost.exe.config file in step 13.
     - **Type:** Select **Public**.
     - **UserType:** Select **Worker**.
     - **Name:** Enter a description to help users understand what this entry references.
 
-6. On the Action Pane, select **Save**. The relying party that you just created should remain selected.
-7. In the **Server resource IDs** section, select **+ Add**, and enter the following values:
+5. On the Action Pane, select **Save**. The relying party that you just created should remain selected.
+6. In the **Server resource IDs** section, select **+ Add**, and enter the following values:
 
     - **Server Resource Id:** Enter the URL that you copied in step 4 in the "Update the Modern POS configuration" section. (You originally created this value in step 4 in the "Create the Commerce Scale Unit Azure AD application" section.)
     - **Name:** Enter a description to help users understand what this entry references.
 
-8. On the Action Pane, select **Save**.
-9. Go to **Retail and Commerce** &gt; **Retail and CommerceIT** \> **Distribution schedule**.
-10. Select job **1110** (**Global configuration**), and then, on the Action Pane, select **Run now**. This job synchronizes the new data. However, there is a cache in Commerce Scale Unit that won't be updated for several minutes. Therefore, if you require an immediate update, the Commerce Scale Unit application pool must be recycled.
+7. On the Action Pane, select **Save**.
+8. Go to **Retail and Commerce** &gt; **Retail and CommerceIT** \> **Distribution schedule**.
+9. Select job **1110** (**Global configuration**), and then, on the Action Pane, select **Run now**. This job synchronizes the new data. However, there is a cache in Commerce Scale Unit that won't be updated for several minutes. Therefore, if you require an immediate update, the Commerce Scale Unit application pool must be recycled.
 
     > [!NOTE]
     > For best results, verify that Modern POS is closed, and that no instances of DLLHost.exe exist in Task Manager.
 
 ### Perform Modern POS device activation
+
 Try to activate the Modern POS device. If you still experience issues, open Event Viewer in Windows, and view the logs that correspond to Modern POS. Look for warnings and errors that might help you determine which steps you missed in the previous sections.
 
 

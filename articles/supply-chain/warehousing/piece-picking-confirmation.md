@@ -2,13 +2,11 @@
 # required metadata
 
 title: Piece picking confirmation
-description: This topic describes how you set up and apply piece picking confirmation from a mobile device.
+description: Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -31,11 +29,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device. For picks, you can confirm the quantity of work to be processed up to the quantity that is specified on work to be picked. For counting work, you can scan the inventory that you are counting and track the total amount.
+Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device. For picks, you can confirm the quantity of work to be processed up to the quantity that is specified on work to be picked. For counting work, you can scan the inventory you are counting and track the total amount.
 
-When you enable piece picking, product confirmation is automatically selected. For work-type picks, a maximum number of pieces is enabled. This allows you to set a maximum to the number of pieces that must be confirmed during the work process. The maximum quantity is based on the current work unit that is being processed. The counting work type does not allow a maximum.
+When you enable piece picking, product confirmation is automatically selected. For work-type picks, you can set a maximum number of pieces. This allows you to set a maximum to the number of pieces that must be confirmed during the work process. The maximum quantity is based on the current work unit that is being processed. The counting work type does not allow a maximum.
 
-You can also use the quantity and unit of measure (UOM) that is associated with a scanned bar code. This will work for receiving on inbound flows including mixed license plate receiving, purchase order item, transfer order item, and load item. It also works for piece picking where scanning the bar code will add the quantity to the total number of confirmed pieces converting between the UOM on the bar code and the work unit. If, when counting the UOM on the bar code, it is confirmed that the quantity is allowed for counting on the sequence group, the quantity will be added to the total count.
+You can also use the quantity and unit of measure (UOM) that is associated with a scanned bar code. This will work for receiving on inbound flows including mixed license plate receiving, purchase order item, transfer order item, and load item. It also works for piece picking where scanning the bar code will add the quantity to the total number of confirmed pieces converting between the UOM on the bar code and the work unit. When counting the UOM on the bar code, if it is confirmed that the quantity is allowed for counting on the sequence group, the quantity will be added to the total count.
 
 ## Where it applies
 

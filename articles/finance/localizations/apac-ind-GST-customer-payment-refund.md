@@ -4,11 +4,9 @@
 title: Customer payment refunds
 description: This topic provides information about customer payment refunds.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata

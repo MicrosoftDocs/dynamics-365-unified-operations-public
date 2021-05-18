@@ -4,11 +4,9 @@
 title: Complete the Azure Resource Manager (ARM) onboarding process
 description: This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors. 
 author: sarvanisathish
-manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

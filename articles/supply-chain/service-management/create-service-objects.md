@@ -4,11 +4,9 @@
 title: Create service objects 
 description: Service objects are a customer’s assets and products for which you can perform a service. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

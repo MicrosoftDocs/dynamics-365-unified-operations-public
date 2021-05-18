@@ -4,11 +4,9 @@
 title: Leave and absence concepts
 description: This topic describes leave and absence concepts, and how time-off balances are determined. 
 author: andreabichsel
-manager: tfehr
 ms.date: 01/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -16,7 +14,6 @@ ms.technology:
 # ms.search.form: LeaveAbsenceWorkspace
 audience: Application user
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -29,7 +26,7 @@ ms.dyn365.ops.version:
 # Leave and absence concepts
 
 The concepts and terms that are described in this topic can help you determine how an employee is awarded time off, and how that employee's time balances are calculated. For more information about leave and absence management, see 
-[Leave and absence management](https://docs.microsoft.com/dynamics365/unified-operations/talent/leave-absence-overview).
+[Leave and absence management](/dynamics365/unified-operations/talent/leave-absence-overview).
 
 ## Leave plan details
 
@@ -127,7 +124,7 @@ The grant amount is the initial number of hours or days that employees are grant
 
 ### Enrollment date
 
-The enrollment date determines when an employee can start to accrue time off. For example, if an employee is enrolled in a vacation plan on June 15, 2018, she can't accrue any time off before June 15, 2018.
+The enrollment date determines when an employee can start to accrue time off. For example, if an employee is enrolled in a vacation plan on June 15, 2018, the employee can't accrue any time off before June 15, 2018.
 
 ### Current balance
 

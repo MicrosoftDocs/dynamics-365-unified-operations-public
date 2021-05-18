@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Commerce 10.0.17 (April 2021)
+title: What's new or changed in Dynamics 365 Commerce 10.0.17 (April 2021)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.17. 
 author: josaw1
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -28,11 +26,9 @@ ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
 
 ---
-# Preview features in Dynamics 365 Commerce 10.0.17 (April 2021)
+# What's new or changed in Dynamics 365 Commerce 10.0.17 (April 2021)
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
-
 
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.17. This version has a build number of 10.0.761 and is available on the following schedule:
 
@@ -42,28 +38,28 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
+The following features are included in this release. The feature titles link to additional information on the [Release plans](/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- [B2B e-commerce](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/b2b-e-commerce)<br> - For more information, see [Set up a B2B e-commerce site](/b2b/set-up-b2b-site.md).
-- [Edit partially fulfilled customer orders in POS](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/edit-partially-fulfilled-customer-orders-pos)<br> - For more information, see [Customer orders in Point of Sale (POS)](../customer-orders-overview.md).
-- [Improved POS ordering and fulfillment experiences for serialized items](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/improved-pos-ordering-fulfillment-experiences-serialized-items)<br> - For more information, see [Work with serialized items in the POS](../pos-serialized-items.md).
-- [Shop similar descriptions](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/shop-similar-description)<br> - For more information, see [Enable "shop similar descriptions" recommendations](../shop-similar-description.md).
-- Configure module properties to be shown based on context<br> - For more information, see [Configure module properties to be shown based on context](/e-commerce-extensibility/configure-properties-context.md).
-- GeoLookup connector<br> - For more information, see [Configure and enable connectors](/e-commerce-extensibility/connectors.md).
+- [B2B e-commerce](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/b2b-e-commerce)<br> - For more information, see [Set up a B2B e-commerce site](../b2b/set-up-b2b-site.md).
+- [Edit partially fulfilled customer orders in POS](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/edit-partially-fulfilled-customer-orders-pos)<br> - For more information, see [Customer orders in Point of Sale (POS)](../customer-orders-overview.md).
+- [Improved POS ordering and fulfillment experiences for serialized items](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/improved-pos-ordering-fulfillment-experiences-serialized-items)<br> - For more information, see [Work with serialized items in the POS](../pos-serialized-items.md).
+- [Shop similar descriptions](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/shop-similar-description)<br> - For more information, see [Enable "shop similar descriptions" recommendations](../shop-similar-description.md).
+- Configure module properties to be shown based on context<br> - For more information, see [Configure module properties to be shown based on context](../e-commerce-extensibility/configure-properties-context.md).
+- GeoLookup connector<br> - For more information, see [Configure and enable connectors](../e-commerce-extensibility/connectors.md).
 - Dynamic e-commerce pages based on URL parameters<br> - For more information, see [Create dynamic e-commerce pages based on URL parameters](../create-dynamic-pages.md).
-- [Quick view module](https://docs.microsoft.com/dynamics365/commerce/quick-view-module)<br> - For more information, see [Quick view module](../quick-view-module.md).
+- [Quick view module](../quick-view-module.md)<br> - For more information, see [Quick view module](../quick-view-module.md).
 - Clienteling improvements<br> - For more information, see [Clienteling overview](../clienteling-overview.md).
-- [Omnichannel support for incremental payment capture](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/omni-channel-support-incremental-payment-capture)<br> - For more information, see [Incremental capture for back-office invoicing](/dev-itpro/incremental-capture.md).
-- [Refactored payment processing in storefront checkout](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/refactored-payment-processing-storefront-checkout)
-- [Email receipt improvements and new features](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/email-receipt-improvements-new-features)
-- [Exclusive threshold discounts compete with exclusive non-threshold periodic discounts](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/exclusive-threshold-discounts-compete-exclusive-non-threshold-periodic-discounts)
-- [Improved user experience for pickup order processing in point of sale](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/improved-user-experience-pick-up-order-processing-point-sale)<br> - For more information, see [Process customer order pickups in POS](../process-order-pickup-pos.md).
-- [Independent deployment and installation packages for MPOS, CPOS, HWS, and CSU extensions](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/independent-deployment-installation-packages-modern-pos-cloud-pos-hardware-station-cloud-scale-unit-extensions)
-- [Simplified Commerce SDK update and developer experience](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/simplified-commerce-sdk-update-developer-experience)
-- [Commerce localization for Brazil](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/commerce-localization-brazil)<br> - For more information, see [Commerce localization for Brazil](/localizations/latam-bra-commerce-localization.md).
-- [Digital signing of retail transactions for France based on the fiscal integration framework](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/digital-signing-retail-transactions-france-based-fiscal-integration-framework)
-- [Dynamics 365 Commerce and Microsoft Teams integration – add org structure, stores, workers](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/dynamics-365-commerce-teams-integration-add-org-structure-stores-workers)
-- [Synergize task management between Dynamics 365 Commerce and Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/synergize-task-management-between-dynamics-365-commerce-teams)
+- [Omnichannel support for incremental payment capture](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/omni-channel-support-incremental-payment-capture)<br> - For more information, see [Incremental capture for back-office invoicing](../dev-itpro/incremental-capture.md).
+- [Refactored payment processing in storefront checkout](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/refactored-payment-processing-storefront-checkout)
+- [Email receipt improvements and new features](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/email-receipt-improvements-new-features)
+- [Exclusive threshold discounts compete with exclusive non-threshold periodic discounts](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/exclusive-threshold-discounts-compete-exclusive-non-threshold-periodic-discounts)
+- [Improved user experience for pickup order processing in point of sale](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/improved-user-experience-pick-up-order-processing-point-sale)<br> - For more information, see [Process customer order pickups in POS](../process-order-pickup-POS.md).
+- [Independent deployment and installation packages for MPOS, CPOS, HWS, and CSU extensions](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/independent-deployment-installation-packages-modern-pos-cloud-pos-hardware-station-cloud-scale-unit-extensions)
+- [Simplified Commerce SDK update and developer experience](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/simplified-commerce-sdk-update-developer-experience)
+- [Commerce localization for Brazil](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/commerce-localization-brazil)<br> - For more information, see [Commerce localization for Brazil](../localizations/latam-bra-commerce-localization.md).
+- [Digital signing of retail transactions for France based on the fiscal integration framework](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/digital-signing-retail-transactions-france-based-fiscal-integration-framework)
+- [Dynamics 365 Commerce and Microsoft Teams integration – add org structure, stores, workers](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/dynamics-365-commerce-teams-integration-add-org-structure-stores-workers)
+- [Synergize task management between Dynamics 365 Commerce and Microsoft Teams](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/synergize-task-management-between-dynamics-365-commerce-teams)
 
 ## Additional resources
 
@@ -78,7 +74,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2021 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2021 release wave 1 plan](/dynamics365-release-plan/2021wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 

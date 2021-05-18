@@ -4,11 +4,9 @@
 title: FieldDesign type
 description: Design object interface for a field control.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

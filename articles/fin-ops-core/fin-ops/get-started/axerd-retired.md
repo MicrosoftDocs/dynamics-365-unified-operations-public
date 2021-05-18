@@ -4,11 +4,9 @@
 title: AxErd page has been retired
 description: We've had to retire the AxErd page. We've been able to post both the source code for the project, and the HTML files for the web page in a GitHub repo. 
 author: margoc
-manager: AnnBe
 ms.date: 03/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

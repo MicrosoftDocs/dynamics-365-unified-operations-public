@@ -4,11 +4,9 @@
 title: Fiscal service (ESR) integration
 description: This topic provides information about the fiscal service integration for Austria and the Czech Republic.
 author: Anasyash
-manager: AnnBe
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -86,7 +84,7 @@ Every cash register must be set up to communicate with the fiscal service. You c
 <td>For each cash register, select the ER formats to use to print receipts, send requests to the fiscal service, and receive responses from the fiscal service. The ER formats that you select must be appropriate for the legal entity&#39;s primary address.</td>
 <td>For example, for the receipt format, select <strong>Cash receipt format (AT)</strong> for Austria and <strong>Cash receipt format (CZ)</strong> for the Czech Republic.
 
-If you can't find a format in the list, you can download recent electronic formats from LCS. For more information, see <a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs">Download Electronic reporting configurations from Lifecycle Service</a>.</td>
+If you can't find a format in the list, you can download recent electronic formats from LCS. For more information, see <a href="/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs">Download Electronic reporting configurations from Lifecycle Service</a>.</td>
 </tr>
 <tr>
 <td>Cash register certificate settings</td>
@@ -196,7 +194,7 @@ This section walks you through the following business processes and uses the [EF
     2. On the **Cash register** FastTab, review the location, terminal, cash register, and operator codes. The terminal code is automatically filled from the **Default cash register terminal** field on the **Cash register operators** page. Change the terminal code only if the cash payment is received at a different cash register terminal that is available for the current operator.
     3. Select **OK**.
 
-7. Review the cash receipt that is generated for the posted invoice. By default, the generated cash receipt is available as a file. For information about how to set up other destinations that you can use for cash receipts, see [Electronic Reporting Destinations](../../dev-itpro/analytics/electronic-reporting-destinations.md).
+7. Review the cash receipt that is generated for the posted invoice. By default, the generated cash receipt is available as a file. For information about how to set up other destinations that you can use for cash receipts, see [Electronic Reporting Destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 
 ### Register an automatically posted COD payment for a sales order invoice and print a cash receipt

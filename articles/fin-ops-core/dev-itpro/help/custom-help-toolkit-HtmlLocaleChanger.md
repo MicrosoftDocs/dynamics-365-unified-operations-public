@@ -4,10 +4,8 @@
 title: Custom Help Toolkit - The HtmlLocaleChanger tool
 description: This topic describes the HtmlLocaleChanger tool that is included in the Custom Help Toolkit for Finance and Operations apps. 
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
-ms.service: dynamics-ax-platform
 
 # optional metadata
 

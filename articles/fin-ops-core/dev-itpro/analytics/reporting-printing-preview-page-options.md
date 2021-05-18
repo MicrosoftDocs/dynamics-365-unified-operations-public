@@ -3,12 +3,10 @@
 
 title: Document reporting preview options 
 description: This topic provides information about the options available in the embedded document reporting previewer.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -22,7 +20,7 @@ ms.reviewer: kfend
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2020-06-21 
 ms.dyn365.ops.version: Platform update 34
 ---
@@ -42,7 +40,7 @@ The efficient publication and distribution of documents is not only a key compon
 Almost half of all document interactions involve the screen preview. The toolbar options that are available are for all supported devices and offer a simple and intuitive solution for exporting and printing documents rendered by Finance and Operations apps.
 
 ## File export
-Additional user options replace functions previously supplied by the HTML-based **Report viewer** control. You can use these toolbar options to export files to the various  supported formats. This includes Microsoft Word, Excel, HTML, CSV, and more. To ensure a consistent layout with the printer output, the new modern experience displays documents using the PDF pagination rules. For more information, see [Pagination in reports](https://docs.microsoft.com/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs?view=sql-server-ver15).
+Additional user options replace functions previously supplied by the HTML-based **Report viewer** control. You can use these toolbar options to export files to the various  supported formats. This includes Microsoft Word, Excel, HTML, CSV, and more. To ensure a consistent layout with the printer output, the new modern experience displays documents using the PDF pagination rules. For more information, see [Pagination in reports](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs?view=sql-server-ver15).
 
 ## Network printing
 You can choose to print on locally connected devices using the **Print** button or send documents directly to network printers using the toolbar option. Using the network print option, you can initiate print instructions to network connected printers while working remotely from nearly any internet connected device, including mobile phones.

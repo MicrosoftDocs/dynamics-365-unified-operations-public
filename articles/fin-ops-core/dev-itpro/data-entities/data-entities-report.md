@@ -4,11 +4,9 @@
 title: Find information about standard data entities
 description: This topic describes how to get information about the standard data entities that are available and how to download the scripts to run the reports.
 author: robinarh
-manager: AnnBe
 ms.date: 09/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -41,7 +39,7 @@ Configuration data packages on Microsoft Dynamics Lifecycle Services (LCS) conta
 
 ## Reports
 
-Microsoft provides the following reports for data entities, which can be downloaded from [Technical reference reports](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61):
+Microsoft provides the following reports for data entities, which can be downloaded from [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61):
 
 - Aggregate data entities: Lists the aggregate data entities, and the fields that each contains.
 - Aggregate measures: Lists the aggregate measures.

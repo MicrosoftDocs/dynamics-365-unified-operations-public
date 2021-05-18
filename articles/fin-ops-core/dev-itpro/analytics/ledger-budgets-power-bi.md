@@ -4,11 +4,9 @@
 title: Actual vs budget Power BI content
 description: This topic describes the Actual vs budget Power BI content. It explains how to access the reports and provides information about the data model.
 author: panolte
-manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

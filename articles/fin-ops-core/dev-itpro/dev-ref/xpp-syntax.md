@@ -1,32 +1,16 @@
 ---
-# required metadata
-
 title: X++ syntax
 description: This topic contains the syntax reference for X++. 
 author: RobinARH
-manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 72211
-ms.assetid: bb238a46-3a43-4f3c-a9b6-86b26e988881
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ syntax

@@ -4,11 +4,9 @@
 title: Create a recurring data export app
 description: This article shows how to create a Microsoft Azure logic app that exports data from Microsoft Dynamics 365 Human Resources on a recurring schedule.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -50,12 +47,12 @@ This tutorial uses the following technologies:
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)** – The master data source for workers that will be exported.
 - **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – The technology that provides orchestration and scheduling of the recurring export.
 
-    - **[Connectors](https://docs.microsoft.com/azure/connectors/apis-list)** – The technology that is used to connect the logic app to the required endpoints.
+    - **[Connectors](/azure/connectors/apis-list)** – The technology that is used to connect the logic app to the required endpoints.
 
-        - [HTTP with Azure AD](https://docs.microsoft.com/connectors/webcontents/) connector
-        - [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) connector
+        - [HTTP with Azure AD](/connectors/webcontents/) connector
+        - [OneDrive for Business](/azure/connectors/connectors-create-api-onedriveforbusiness) connector
 
-- **[DMF package REST API](../dev-itpro/data-entities/data-management-api.md)** – The technology that is used to trigger the export and monitor its progress.
+- **[DMF package REST API](../fin-ops-core/dev-itpro/data-entities/data-management-api.md)** – The technology that is used to trigger the export and monitor its progress.
 - **[OneDrive for Business](https://onedrive.live.com/about/business/)** – The destination for the exported workers.
 
 ## Prerequisites
@@ -91,11 +88,11 @@ The bulk of the exercise involves creating the logic app.
     ![Logic app creation page](media/integration-logic-app-creation-1.png)
 
 2. In the Logic Apps Designer, start with a blank logic app.
-3. Add a [Recurrence Schedule trigger](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) to run the logic app every 24 hours (or according to a schedule of your choice).
+3. Add a [Recurrence Schedule trigger](/azure/connectors/connectors-native-recurrence) to run the logic app every 24 hours (or according to a schedule of your choice).
 
     ![Recurrence dialog box](media/integration-logic-app-recurrence-step.png)
 
-4. Call the [ExportToPackage](../dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API to schedule the export of your data package.
+4. Call the [ExportToPackage](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API to schedule the export of your data package.
 
     1. Use the **Invoke an HTTP request** action from the HTTP with Azure AD connector.
 
@@ -129,13 +126,13 @@ The bulk of the exercise involves creating the logic app.
     > [!TIP]
     > You might want to rename each step so that it's more meaningful than the default name, **Invoke an HTTP request**. For example, you can rename this step **ExportToPackage**.
 
-5. [Initialize a variable](https://docs.microsoft.com/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) to store the execution status of the **ExportToPackage** request.
+5. [Initialize a variable](/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) to store the execution status of the **ExportToPackage** request.
 
     ![Initialize variable action](media/integration-logic-app-initialize-variable-step.png)
 
 6. Wait until the execution status of the data export is **Succeeded**.
 
-    1. Add an [Until loop](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop) that repeats until the value of the **ExecutionStatus** variable is **Succeeded**.
+    1. Add an [Until loop](/azure/logic-apps/logic-apps-control-flow-loops#until-loop) that repeats until the value of the **ExecutionStatus** variable is **Succeeded**.
     2. Add a **Delay** action that waits five seconds before it polls for the current execution status of the export.
 
         ![Until loop container](media/integration-logic-app-until-loop-step.png)
@@ -143,9 +140,9 @@ The bulk of the exercise involves creating the logic app.
         > [!NOTE]
         > Set the limit count to **15** to wait a maximum of 75 seconds (15 iterations × 5 seconds) for the export to be completed. If your export takes more time, adjust the limit count as appropriate.        
 
-    3. Add an **Invoke HTTP request** action to call the [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API, and set the **ExecutionStatus** variable to the result of the **GetExecutionSummaryStatus** response.
+    3. Add an **Invoke HTTP request** action to call the [GetExecutionSummaryStatus](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API, and set the **ExecutionStatus** variable to the result of the **GetExecutionSummaryStatus** response.
 
-        > This sample doesn't do error checking. The **GetExecutionSummaryStatus** API can return non-successful terminal states (that is, states other than **Succeeded**). For more information, see the [API documentation](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus).
+        > This sample doesn't do error checking. The **GetExecutionSummaryStatus** API can return non-successful terminal states (that is, states other than **Succeeded**). For more information, see the [API documentation](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus).
 
         - **Method:** POST
         - **Url of the request:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
@@ -163,7 +160,7 @@ The bulk of the exercise involves creating the logic app.
 
 7. Get the download URL of the exported package.
 
-    - Add an **Invoke HTTP request** action to call the [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST API.
+    - Add an **Invoke HTTP request** action to call the [GetExportedPackageUrl](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST API.
 
         - **Method:** POST
         - **Url of the request:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
@@ -173,7 +170,7 @@ The bulk of the exercise involves creating the logic app.
 
 8. Download the exported package.
 
-    - Add an HTTP **GET** request (a built-in [HTTP connector action](https://docs.microsoft.com/azure/connectors/connectors-native-http)) to download the package from the URL that was returned in the previous step.
+    - Add an HTTP **GET** request (a built-in [HTTP connector action](/azure/connectors/connectors-native-http)) to download the package from the URL that was returned in the previous step.
 
         - **Method:** GET
         - **URI:** body('Invoke\_an\_HTTP\_request\_3').value
@@ -186,9 +183,9 @@ The bulk of the exercise involves creating the logic app.
         > [!NOTE]
         > This request doesn't require any additional authentication, because the URL that the **GetExportedPackageUrl** API returns includes a shared access signatures token that grants access to download the file.
 
-9. Save the downloaded package by using the [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) connector.
+9. Save the downloaded package by using the [OneDrive for Business](/azure/connectors/connectors-create-api-onedriveforbusiness) connector.
 
-    - Add a OneDrive for Business [Create File](https://docs.microsoft.com/connectors/onedriveforbusinessconnector/#create-file) action.
+    - Add a OneDrive for Business [Create File](/connectors/onedriveforbusinessconnector/#create-file) action.
     - Connect to your OneDrive for Business account, as required.
 
         - **Folder Path:** A folder of your choice

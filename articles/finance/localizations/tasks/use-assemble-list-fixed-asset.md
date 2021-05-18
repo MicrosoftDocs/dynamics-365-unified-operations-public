@@ -4,11 +4,9 @@
 title: Use assemble list of a fixed asset
 description: In Japan, you can transfer an inventory item to a fixed asset. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

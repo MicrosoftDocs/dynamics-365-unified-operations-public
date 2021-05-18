@@ -4,11 +4,9 @@
 title: Export ledger transactions
 description: This topic provides information about how to export ledger account balances to a plain text (ASCII) file in CED format for Belgium.
 author: anasyash
-manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

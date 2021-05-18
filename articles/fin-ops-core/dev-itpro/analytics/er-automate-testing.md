@@ -4,11 +4,9 @@
 title: Automate testing with Electronic reporting
 description: This topic explains how you can use the baseline feature of Electronic reporting (ER) framework to automate testing of functionality. 
 author: NickSelin
-manager: AnnBe
 ms.date: 07/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Returnable packaging for Poland
 description: The topic describes how to set up and use returnable packaging for Poland.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Create an end-to-end payment integration for a payment terminal
 description: This topic describes how to create an end-to-end payment integration for a payment terminal.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

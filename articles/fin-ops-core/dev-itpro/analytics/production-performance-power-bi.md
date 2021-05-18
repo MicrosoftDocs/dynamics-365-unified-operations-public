@@ -4,11 +4,9 @@
 title: Production performance Power BI content
 description: This topic describes what is included in the Production performance Power BI content.
 author: AndersGirke
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

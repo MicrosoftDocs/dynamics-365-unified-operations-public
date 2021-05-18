@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Table map extension
 description: To extend table maps, we have refactored table maps into a model, which allows you to extend a solution with additional fields and methods. 
 author: LarsBlaaberg
-manager: AnnBe
 ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

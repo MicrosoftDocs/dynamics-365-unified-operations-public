@@ -4,11 +4,9 @@
 title: Business events in Microsoft Power Automate
 description: This topic provides information about the business events that are available for consumption in Microsoft Power Automate via the application connector.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -56,11 +54,11 @@ Multiple flows can subscribe to the same business event in different legal entit
 > [!NOTE]
 > The Power Automate endpoint must not be configured manually. The endpoint will automatically get created from Power Automate as explained above.
 
-For how-to information about using business events in Microsoft Flow, see [Consume business events in Microsoft Flow](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow). 
+For how-to information about using business events in Microsoft Flow, see [Consume business events in Microsoft Flow](how-to/how-to-flow.md). 
 
 ## Other ways to consume business events in Power Automate
 
-The previous section explains how you can subscribe to business events directly from Power Automate by using the trigger in the connector. However, you can also consume business events in Microsoft Power Automate from Microsoft Azure Event Grid, by using the [Event Grid connector for Microsoft Power Automate](https://docs.microsoft.com/connectors/azureeventgrid/).
+The previous section explains how you can subscribe to business events directly from Power Automate by using the trigger in the connector. However, you can also consume business events in Microsoft Power Automate from Microsoft Azure Event Grid, by using the [Event Grid connector for Microsoft Power Automate](/connectors/azureeventgrid/).
 
 Event Grid might be a viable approach for consuming business events in Power Automate if it's already being used for other integrations in an implementation. If a business event in the same legal entity must trigger multiple flows, you should consider consuming the business event from Event Grid.
 

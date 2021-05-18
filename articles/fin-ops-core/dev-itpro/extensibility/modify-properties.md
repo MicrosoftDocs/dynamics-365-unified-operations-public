@@ -1,18 +1,12 @@
 ---
-# required metadata
-
 title: Modify table properties through extension
 description: This topic describes how to modify properties on a table by using an extension.
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

@@ -4,11 +4,9 @@
 title: Dynamics 365 payment data use
 description: This topic provides an overview of the data that is managed by the payment connectors for Microsoft Dynamics 365.
 author: rubendel
-manager: AnnBe
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -337,7 +335,7 @@ This section describes data that is sent to the payment connector for card-not-p
 
 ## Related topics
 
-- **[Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – This topic describes how to create a custom payment connector.
+- **[Create an end-to-end payment integration for a payment terminal](/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – This topic describes how to create a custom payment connector.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

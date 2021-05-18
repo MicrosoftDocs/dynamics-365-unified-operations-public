@@ -1,19 +1,13 @@
 ---
 
-# required metadata
-
 title: Add indexes to tables through extension
 description: This topic describes how to add an index to a table.
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

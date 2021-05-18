@@ -4,11 +4,9 @@
 title: Configuration data templates
 description: This topic describes configuration data templates and explains how to create them.
 author: mikefalkner
-manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

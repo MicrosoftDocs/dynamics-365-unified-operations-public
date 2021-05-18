@@ -4,11 +4,9 @@
 title: Customize the Open in Microsoft Office menu
 description: This topic provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
 author: jasongre
-manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -120,6 +118,10 @@ The following examples assume that the **\_menuOptions** variable contains the *
 ### Modifying the set of data entities that is considered for a page
 
 Many of the menu items on the **Open in Office** menu are added automatically, based on the data entities that are considered for the page. However, in some cases, the algorithm that is used to determine the set of data entities might not determine the correct set. To modify the set of data entities that is considered for the page, you can use the **OfficeMenuOptions** that is available from either the **OfficeIMenuCustomizer.customizeMenuOptions** method or the **OfficeFormRunHelper.OfficeMenuInitializing** delegate.
+
+> [!WARNING]
+> Do not use this code in form init() or run(). This can negatively impact form load speed, especially upon system reboot.
+
 
 ```xpp
 // Add an entity to the list

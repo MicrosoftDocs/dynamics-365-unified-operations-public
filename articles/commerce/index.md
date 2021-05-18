@@ -4,11 +4,9 @@
 title: Commerce home page
 description: Home page for Dynamics 365 Commerce.
 author: bebeale
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -50,7 +48,7 @@ This release enables the creation of digital experiences using built-in web auth
 
 Select a feature area to learn more about it.
 - [Configure a Commerce preview environment](provisioning-guide.md)
-- [Commerce architecture](retail-components.md)
+- [Commerce architecture](./commerce-architecture.md)
 - [Set up your channels](channels-overview.md)
 - [Merchandising your products and services](set-up-retail-products.md)
 - [Manage your orders](Order-fulfillment-overview.md)

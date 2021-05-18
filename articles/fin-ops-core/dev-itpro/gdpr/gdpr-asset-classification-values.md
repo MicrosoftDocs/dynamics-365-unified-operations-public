@@ -4,11 +4,9 @@
 title: Asset classifications
 description: Finance and Operations apps provide a default set of classifications for the kinds of data that are stored in each table. 
 author: ToddLefor
-manager: AnnBe
 ms.date: 12/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

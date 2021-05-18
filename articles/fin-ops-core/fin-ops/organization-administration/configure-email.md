@@ -4,11 +4,9 @@
 title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: jasongre
-manager: AnnBe
-ms.date: 11/17/2020
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -48,41 +46,64 @@ On the **Email parameters** page, note the following settings on the **Configura
 
 In Platform update 32, an **Email history** page was added to allow administrators to review all sent emails, including any errors that might have prevented an email from being sent. By default, the last 30 days of email history is retained. This can be configured by changing the **Number of days to retain email history** to a non-zero amount. Zero provides the default amount and behavior.
 
-In version 10.0.16/Platform 40, an **Email throttling** section is visible, if your environment has enabled the **Email throttling** feature in Feature management. This feature allows non-interactive email providers  (such as the batch email provider) to adhere to a per-minute sending limit. This can prevent errors from the system attempting to send more emails than the provider allows. The sending limits for Microsoft 365 email providers are set automatically according to [Exchange Online sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits?sending-limits#sending-limits). Manual configuration is required for all other email providers. The per-minute sending limit can be removed from a provider by resetting the **per-minute email sending limit** field to 0.
+In version 10.0.16/Platform 40, an **Email throttling** section is visible, if your environment has enabled the **Email throttling** feature in Feature management. This feature allows non-interactive email providers  (such as the batch email provider) to adhere to a per-minute sending limit. This can prevent errors from the system attempting to send more emails than the provider allows. The sending limits for Microsoft 365 email providers are set automatically according to [Exchange Online sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits). Manual configuration is required for all other email providers. The per-minute sending limit can be removed from a provider by resetting the **per-minute email sending limit** field to 0.
 
 ### SMTP settings tab
 On the **Email parameters** page, note the following settings on the **SMTP settings** tab.
 
+#### Server information
 <table>
-<thead>
+<thead>  
 <tr>
 <th>Field</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Outgoing mail server</td>
-<td>The host name of the desired SMTP server.
-<ul>
-<li>For <a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Microsoft 365 production</a> (including *.onmicrosoft.com accounts) use smtp.office365.com. (You can find this setting at outlook.office.com at <strong>Settings</strong> &gt; <strong>Mail</strong> &gt; <strong>POP and IMAP</strong>.)</li>
-<li>For Outlook/Hotmail use smtp-mail.outlook.com.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>SMTP port number</td>
-<td>Typically, the port number should be set to 587 for secure transport.</td>
-</tr>
-<tr>
-<td><strong>User name</strong> and <strong>Password</strong></td>
-<td>Specify, as needed, to send the email via the appropriate mail account. All users need to provide the SMTP account <strong>Send As</strong> and <strong>Send On Behalf Of</strong> permissions to enable the ability to send Simple Mail Transfer Protocol (SMTP) mail. You can configure Send As permissions in the Microsoft 365 admin center (portal.office.com/Admin), at <strong>Users</strong> &gt; <strong>Active users</strong> &gt; <strong>User</strong> &gt; <strong>Edit mailbox permissions</strong> &gt; <strong>Send email from this mailbox</strong>. For more information, see <a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Enable sending email from another user's mailbox in Microsoft 365</a>.</td>
-</tr>
-<tr>
-<td>Specify if SSL is required</td>
-<td>Determines whether secure transport is used. Typically, this is <strong>Yes</strong>, except for internal or troubleshooting scenarios.</td>
-</tr>
+  <tr>
+    <td>Outgoing mail server</td>
+    <td>The host name of the desired Simple Mail Transfer Protocol (SMTP) server.
+      <ul>
+        <li>For <a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Microsoft 365 production</a> (including *.onmicrosoft.com accounts), use smtp.office365.com. (You can find this setting at outlook.office.com at <strong>Settings</strong> &gt; <strong>Mail</strong> &gt; <strong>POP and IMAP</strong>.)</li>
+        <li>For Outlook/Hotmail, use smtp-mail.outlook.com.</li>
+      </ul>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>SMTP port number</td>
+    <td>Typically, the port number should be set to 587 for secure transport.</td>
+  </tr>
+
+  <tr>
+    <td>SSL required</td>
+    <td>Determines whether secure transport is used. Typically, this is <strong>Yes</strong>, except for internal or troubleshooting scenarios.</td>
+  </tr>
 </tbody>
+</table>  
+  
+#### Authentication
+<table>
+<thead>  
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Authentication required</td>
+    <td>Determines whether a user name and password are needed to send emails. </td>
+  </tr>
+
+  <tr>
+    <td><strong>User name</strong> and <strong>Password</strong></td>
+    <td>If authentication is required, specify the appropriate mail account to send email from. All users need to provide the SMTP account <strong>Send As</strong> and <strong>Send On Behalf Of</strong> permissions to enable the ability to send SMTP mail. You can configure Send As permissions in the Microsoft 365 admin center (portal.office.com/Admin) at <strong>Users</strong> &gt; <strong>Active users</strong> &gt; <strong>User</strong> &gt; <strong>Edit mailbox permissions</strong> &gt; <strong>Send email from this mailbox</strong>. For more information, see <a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Enable sending email from another user's mailbox in Microsoft 365</a>.
+    </td>
+  </tr>
+      
+</tbody>
+
 </table>
 
 ## [Administrator] Email distributor batch process
@@ -286,7 +307,7 @@ Users that are external to the primary tenant will not have exchange accounts on
 
 ## Other notes
 
-The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits) apply.
+The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) apply.
 
 ## Troubleshooting
 
@@ -300,7 +321,7 @@ The email templates will be sourced from either system email templates or organi
 
 [Office integration tutorial](../../dev-itpro/office-integration/office-integration-tutorial.md)
 
-[Configure email functionality in Microsoft Dynamics AX [AX 2012]](https://technet.microsoft.com/library/aa834374.aspx)
+[Configure email functionality in Microsoft Dynamics AX [AX 2012]](/dynamicsax-2012/appuser-itpro/configure-email-functionality-in-microsoft-dynamics-ax)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

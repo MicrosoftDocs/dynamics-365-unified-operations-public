@@ -4,11 +4,9 @@
 title: Set up interest rates for an interest code
 description: Interest codes contain settings that determine when interest is charged and how it is calculated on overdue accounts.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 02/17/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,7 +60,7 @@ For example, to set up an interest code that assesses 5 percent interest for eve
 >  
 > Interest note amount = Amount owed * Yearly interest % / 365 * Number of days late
 >  
-> This feature is available in version 10.0.19 or later.    
+> This feature is available in version 10.0.18 or later.    
  
 ## Interest rates based on amounts
 You can set up interest rates that calculate a specified amount per currency.

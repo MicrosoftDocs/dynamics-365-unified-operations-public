@@ -4,11 +4,9 @@
 title: Add-ins overview
 description: This topic provides information about add-ins, which can be used to extend the functionality of Finance and Operations apps.
 author: ankugo
-manager: AnnBe
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -32,10 +30,10 @@ ms.dyn365.ops.version: 10.0.15
 
 Add-ins provide a way to extend the functionality of Finance and Operations apps. The following topics provide some examples of add-ins:
 
-- [Planning Optimization overview](https://docs.microsoft.com/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-overview)
-- [Inventory Visibility Add-in](https://docs.microsoft.com/dynamics365/supply-chain/inventory/inventory-visibility)
-- [Configure export to Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)
-- [IoT Intelligence home page](https://docs.microsoft.com/dynamics365/supply-chain/iot/iot-intelligence-home-page)
+- [Planning Optimization overview](../../../supply-chain/master-planning/planning-optimization/planning-optimization-overview.md)
+- [Inventory Visibility Add-in](../../../supply-chain/inventory/inventory-visibility.md)
+- [Configure export to Azure Data Lake](../data-entities/configure-export-data-lake.md)
+- [IoT Intelligence home page](../../../supply-chain/iot/iot-intelligence-home-page.md)
 
 ## Prerequisites for setting up add-ins
 
@@ -58,7 +56,7 @@ Add-ins provide a way to extend the functionality of Finance and Operations apps
     - Dynamics 365 admins
     - Power Platform admins
     
-    For more information, see [Use service admin roles to manage your tenant](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant).
+    For more information, see [Use service admin roles to manage your tenant](/power-platform/admin/use-service-admin-role-manage-tenant).
 
 ## Set up add-ins
 

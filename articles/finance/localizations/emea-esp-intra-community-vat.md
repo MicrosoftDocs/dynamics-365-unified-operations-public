@@ -4,11 +4,9 @@
 title: Intra-community VAT for Spain
 description: This topic provides information about the functionality for intra-community value-added tax (VAT).
 author: Anasyash
-manager: AnnBe
 ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

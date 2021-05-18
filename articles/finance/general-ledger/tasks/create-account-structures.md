@@ -4,11 +4,9 @@
 title: Create account structures
 description: This task guide steps through creating an account structure. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

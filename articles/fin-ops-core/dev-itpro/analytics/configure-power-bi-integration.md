@@ -4,11 +4,9 @@
 title: Configure PowerBI.com integration
 description: This topic describes how to configure a new Finance and Operations environment to support integration with PowerBI.com.
 author: MilindaV2
-manager: AnnBe
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

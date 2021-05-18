@@ -4,11 +4,9 @@
 title: AX 4.0 content that has been retired
 description: The Dynamics AX 4.0 content on TechNet and MSDN has been retired.
 author: margoc
-manager: AnnBe
 ms.date: 09/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -36,7 +34,7 @@ ms.dyn365.ops.version: AX 2012
 The Microsoft Dynamics AX 4.0 content has been retired from TechNet and MSDN. For more information, see:
 
 - [Microsoft Lifecycle Policy](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Dynamics%20AX%204.0)
-- [Supported upgrade paths to Dynamics AX 2012](https://technet.microsoft.com/library/dd362093.aspx)
+- [Supported upgrade paths to Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/supported-upgrade-paths)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

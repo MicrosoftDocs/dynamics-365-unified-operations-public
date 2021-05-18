@@ -4,11 +4,9 @@
 title: Set up, create, and manage absorption costs 
 description: This topic provides information on how to set up, create, and manage absorption costs for Brazil. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/13/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

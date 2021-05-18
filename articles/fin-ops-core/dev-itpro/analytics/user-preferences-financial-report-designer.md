@@ -4,11 +4,9 @@
 title: User preferences in financial report designer
 description: This topic describes how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience.
 author: aprilolson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

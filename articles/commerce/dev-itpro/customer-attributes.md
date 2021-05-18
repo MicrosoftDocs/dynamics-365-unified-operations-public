@@ -4,11 +4,9 @@
 title: Customer attributes
 description: This topic provides information about customer attributes and explains how you can use configurations to add new fields to the customer master record.
 author: mugunthanm 
-manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -118,10 +116,15 @@ The first version of this functionality doesn't support **datetime** and **refer
 9. After the designer is started, drag the **Customer** card anywhere in the screen layout designer.
 10. Right-click the **Customer** card, and then select **Customize**.
 11. When the page for the **Customization - Customer** card appears, select the required attributes in the **Available columns** section, and then select the right arrow button (**>**) to move them to the **Selected columns** section. You can move the attributes up or down by selecting the **Up** or **Down** buttons.
-12. When you've finished, select **OK** to save your changes.
-13. Close the screen layout designer by selecting the **Close** button (**X**) in the upper-right corner. When you're prompted, select **Yes** to save your changes.
-14. Select **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
-15. Select the **Registers** job (1090), and then, on the Action Pane, select **Run now**. When you're prompted, select **Yes**.
+
+[!NOTE]
+>The Customer attributes are legal entity-specific, which means that the screen layout designer fetches the customer attribute that is specific to the legal entity (Company) configured for the user signed in to **System Administration > Users**. If you configured attributes for a different legal entity, the screen layout designer may not show those values.
+
+13. When you've finished, select **OK** to save your changes.
+14. Close the screen layout designer by selecting **Close** (**X**) in the upper-right corner. When you're prompted, select **Yes** to save your changes.
+15. Select **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
+16. Select the **Registers** job (1090), and then on the Action Pane, select **Run now**. Select **Yes**.
+.
 
 #### POS
 

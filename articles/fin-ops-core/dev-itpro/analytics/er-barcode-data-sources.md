@@ -4,11 +4,9 @@
 title: Use Barcode data sources to generate bar code images
 description: This topic explains how to use Barcode data sources to generate bar code images.
 author: NickSelin
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -44,7 +42,7 @@ ER now supports the **Barcode** data source type. Therefore, you can now generat
 
 The following placeholders can be used in report templates to enter bar code images:
 
-- [Picture](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) content control for Word
+- [Picture](/office/client-developer/word/content-controls-in-word) content control for Word
 - [Picture](https://support.office.com/article/insert-pictures-3c51edf4-22e1-460a-b372-9329a8724344) object in Excel
 
 By using a data source of the **Barcode** type, you can generate bar codes in the following formats:

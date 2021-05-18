@@ -4,11 +4,9 @@
 title: Design a new ER solution to print a custom report
 description: This topic explains how to design an Electronic reporting (ER) solution to print a custom report.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -126,7 +124,7 @@ The following steps explain how a user in the System Administrator, Electronic R
 
 - [Additional resources](#References)
 
-In this example, you will create a new ER solution for the [Questionnaire](https://docs.microsoft.com/dynamics365/human-resources/hr-learning-questionnaires) module. This new ER solution lets you design a report by using a Microsoft Excel worksheet as a template. You can then generate the **Questionnaire** report in Excel or PDF format, in addition to generating the existing SQL Server Reporting Services (SSRS) report. You can also modify the new report later, upon request. No coding is required.
+In this example, you will create a new ER solution for the [Questionnaire](../../../human-resources/hr-learning-questionnaires.md) module. This new ER solution lets you design a report by using a Microsoft Excel worksheet as a template. You can then generate the **Questionnaire** report in Excel or PDF format, in addition to generating the existing SQL Server Reporting Services (SSRS) report. You can also modify the new report later, upon request. No coding is required.
 
 1. To run the existing report, go to **Questionnaire** \> **Design** \> **Questionnaires report**.
 

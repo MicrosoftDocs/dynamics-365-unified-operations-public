@@ -4,11 +4,9 @@
 title: Create and manage Customer portal users
 description: This topic explains how to create Customer portal user accounts and set permissions for them.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -51,26 +49,26 @@ Before you start to invite new customers, make sure that you've enabled the **Co
 
 ## The invitation process
 
-To invite an existing contact to the Customer portal, follow the steps in [Invite contacts to your portals](https://docs.microsoft.com/powerapps/maker/portals/configure/invite-contacts) in the Power Apps portals documentation.
+To invite an existing contact to the Customer portal, follow the steps in [Invite contacts to your portals](/powerapps/maker/portals/configure/invite-contacts) in the Power Apps portals documentation.
 
-Before you invite a customer to join the Customer portal, make sure that the customer's [contact record](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) is available and set up in the following way:
+Before you invite a customer to join the Customer portal, make sure that the customer's [contact record](/powerapps/maker/portals/configure/configure-contacts) is available and set up in the following way:
 
 1. Set the **Company** field to the legal entity that you want the customer to belong to in Supply Chain Management.
 2. Set the **Account Number** field to the customer account number that you want the user to have in Supply Chain Management.
 
 After a contact is created, you should be able to see it in Supply Chain Management.
 
-For more information, see [Configure a contact for use on a portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) in the Power Apps portals documentation.
+For more information, see [Configure a contact for use on a portal](/powerapps/maker/portals/configure/configure-contacts) in the Power Apps portals documentation.
 
 ## Out-of-box web roles and table permissions
 
-User roles in Power Apps portals are defined by [web roles](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) and [table permissions](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). A few roles are defined for the Customer portal out of the box. You can create new roles, and you can modify or remove existing roles.
+User roles in Power Apps portals are defined by [web roles](/powerapps/maker/portals/configure/create-web-roles) and [table permissions](/powerapps/maker/portals/configure/assign-entity-permissions). A few roles are defined for the Customer portal out of the box. You can create new roles, and you can modify or remove existing roles.
 
 ### Out-of-box web roles
 
 This section describes the web roles that are delivered with the Customer portal.
 
-For more information about how to modify the out-of-box user roles, see [Create web roles for portals](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) and [Add record-based security by using table permissions for portals](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) in the Power Apps portals documentation.
+For more information about how to modify the out-of-box user roles, see [Create web roles for portals](/powerapps/maker/portals/configure/create-web-roles) and [Add record-based security by using table permissions for portals](/powerapps/maker/portals/configure/assign-entity-permissions) in the Power Apps portals documentation.
 
 #### Administrator
 

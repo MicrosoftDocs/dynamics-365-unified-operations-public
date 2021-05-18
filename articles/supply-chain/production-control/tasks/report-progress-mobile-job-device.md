@@ -4,11 +4,9 @@
 title: Report progress on a mobile job device
 description: This procedure shows you how to start and report progress on a production job in the job device registration form. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

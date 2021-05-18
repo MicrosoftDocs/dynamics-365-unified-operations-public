@@ -1,18 +1,12 @@
 ---
-# required metadata
-
 title: Extended data types
 description: This topic provides information about extended data types (EDTs).
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

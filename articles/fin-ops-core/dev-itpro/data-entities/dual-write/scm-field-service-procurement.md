@@ -4,11 +4,9 @@
 title: Integrate procurement between Supply Chain Management and Field Service
 description: This topic describes how dual-write integration supports purchase order creation and updates from both Supply Chain Management and Field Service.
 author: RichardLuan
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Application User
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.search.region: Global
-ms.author: riluan
+ms.author: rhaertle 
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
 ---
@@ -49,8 +47,8 @@ To integrate Supply Chain Management with Field Service, you must install the fo
 
 ### Prerequisites
 
-+ **Dual-write** – For more information, see the [Dual-write home page](dual-write-home-page.md#dual-write-setup).
-+ **Dynamics 365 Field Service** – For more information, see [How to install Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
+- **Dual-write** – For more information, see the [Dual-write home page](dual-write-home-page.md#dual-write-setup).
+- **Dynamics 365 Field Service** – For more information, see [How to install Dynamics 365 Field Service](/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
 
 When they are enabled in Microsoft Dataverse, dual-write and Field Service introduce several solution layers that extend the environment with new metadata, forms, views, and logic. These solutions can be enabled in any order, though you typically install in the order that is given here:
 
@@ -59,8 +57,8 @@ When they are enabled in Microsoft Dataverse, dual-write and Field Service intro
 3. **Supply Chain Management Extended** – Supply Chain Management Extended is automatically installed when dual-write is enabled in an environment. 
 4. **OneFSSCM solution** – OneFSSCM is automatically installed by whichever solution (Field Service or Supply Chain Management) is installed last.
 
-    + If Field Service is already installed in the environment, and you enable dual-write, which installs Supply Chain Management Extended, OneFSSCM is installed.
-    + If Supply Chain Management Extended is already installed in the environment, and you install Field Service, OneFSSCM is installed.
+    - If Field Service is already installed in the environment, and you enable dual-write, which installs Supply Chain Management Extended, OneFSSCM is installed.
+    - If Supply Chain Management Extended is already installed in the environment, and you install Field Service, OneFSSCM is installed.
 
 ## Initial synchronization
 
@@ -126,22 +124,22 @@ In addition, Dataverse includes logic that maps vendors with their related accou
 
 ## Supported scenarios
 
-+ Purchase orders can be created and updated by Dataverse users. However, the process and data are controlled by Supply Chain Management. The constraints on updates to purchase order columns in Supply Chain Management apply when updates come from Field Service. For example, you can't update a purchase order if it has been finalized. 
-+ If the purchase order is controlled by change management in Supply Chain Management, a Field Service user can update the purchase order only when the Supply Chain Management approval status is *Draft*.
-+ Several columns are managed only by Supply Chain Management and can't be updated in Field Service. To learn which columns can't be updated, review the mapping tables in the product. For the sake of simplicity, most of these columns are set to read-only on Dataverse pages. 
+- Purchase orders can be created and updated by Dataverse users. However, the process and data are controlled by Supply Chain Management. The constraints on updates to purchase order columns in Supply Chain Management apply when updates come from Field Service. For example, you can't update a purchase order if it has been finalized. 
+- If the purchase order is controlled by change management in Supply Chain Management, a Field Service user can update the purchase order only when the Supply Chain Management approval status is *Draft*.
+- Several columns are managed only by Supply Chain Management and can't be updated in Field Service. To learn which columns can't be updated, review the mapping tables in the product. For the sake of simplicity, most of these columns are set to read-only on Dataverse pages. 
 
     For example, the columns for price information are managed by Supply Chain Management. Supply Chain Management has trade agreements that Field Service can benefit from. columns such as **Unit price**, **Discount**, and **Net amount** come only from Supply Chain Management. To ensure that the price is synced to Field Service, you should use the **Sync** feature on the **Purchase Order** and **Purchase Order Product** pages in Dataverse when purchase order data has been entered. For more information, see [Sync with the Dynamics 365 Supply Chain Management procurement data on demand](#sync-procurement).
 
-+ The **Totals** column is available only in Field Service, because there are no up-to-date totals of the purchase order in Supply Chain Management. The totals in Supply Chain Management are calculated based on multiple parameters that aren't available in Field Service.
-+ Purchase order lines where only a procurement category is specified, or where the product that is specified is an item of the *Service* product type or Field Service product type, can be initiated only in Supply Chain Management. The lines are then synced to Dataverse and are visible in Field Service.
-+ If only Field Service is installed, not Supply Chain Management, the **Warehouse** column is mandatory on the purchase order. However, if Supply Chain Management is installed, this requirement is relaxed, because Supply Chain Management allows for purchase order lines where no warehouse is specified in certain situations.
-+ Product receipts (purchase order receipts in Dataverse) are managed by Supply Chain Management and can't be created from Dataverse if Supply Chain Management is installed. The product receipts from Supply Chain Management are synced from Supply Chain Management to Dataverse.
-+ Under-delivery is allowed in Supply Chain Management. The OneFSSCM solution adds logic so that, when the product receipt line (or purchase order receipt product in Dataverse) is created or updated, an inventory journal row is created in Dataverse to adjust the remaining quantity that is on order for under-delivery scenarios.
+- The **Totals** column is available only in Field Service, because there are no up-to-date totals of the purchase order in Supply Chain Management. The totals in Supply Chain Management are calculated based on multiple parameters that aren't available in Field Service.
+- Purchase order lines where only a procurement category is specified, or where the product that is specified is an item of the *Service* product type or Field Service product type, can be initiated only in Supply Chain Management. The lines are then synced to Dataverse and are visible in Field Service.
+- If only Field Service is installed, not Supply Chain Management, the **Warehouse** column is mandatory on the purchase order. However, if Supply Chain Management is installed, this requirement is relaxed, because Supply Chain Management allows for purchase order lines where no warehouse is specified in certain situations.
+- Product receipts (purchase order receipts in Dataverse) are managed by Supply Chain Management and can't be created from Dataverse if Supply Chain Management is installed. The product receipts from Supply Chain Management are synced from Supply Chain Management to Dataverse.
+- Under-delivery is allowed in Supply Chain Management. The OneFSSCM solution adds logic so that, when the product receipt line (or purchase order receipt product in Dataverse) is created or updated, an inventory journal row is created in Dataverse to adjust the remaining quantity that is on order for under-delivery scenarios.
 
 ## Unsupported scenarios
 
-+ Field Service prevents lines from being added to a canceled purchase order in Supply Chain Management. As a workaround, you can change the system status of the purchase order in Field Service, and then add the new line in either Field Service or Supply Chain Management.
-+ Although procurement rows affect inventory levels in both systems, this integration doesn't ensure inventory alignment across Supply Chain Management and Field Service. Both Field Service and Supply Chain Management have other processes that update inventory levels. Those processes are outside the scope of procurement.
+- Field Service prevents lines from being added to a canceled purchase order in Supply Chain Management. As a workaround, you can change the system status of the purchase order in Field Service, and then add the new line in either Field Service or Supply Chain Management.
+- Although procurement rows affect inventory levels in both systems, this integration doesn't ensure inventory alignment across Supply Chain Management and Field Service. Both Field Service and Supply Chain Management have other processes that update inventory levels. Those processes are outside the scope of procurement.
 
 ## Status management
 
@@ -163,13 +161,13 @@ Line approval statuses are active only when there is a line workflow.
 
 The following rules are applied to the status columns:
 
-+ The status in Supply Chain Management can't be updated from Field Service. However, in some cases, the status in Field Service will be updated when the purchase order status in Supply Chain Management is changed.
-+ If a purchase order in Supply Chain Management is under change management, and a change is being processed, the approval status is *Draft* or *In Review*. In this case, the Field Service approval status will be set to *Null*.
-+ If the purchase order approval status in Supply Chain Management is set to *Approved*, *In External review*, *Confirmed*, or *Finalized*, the Field Service purchase order approval status will be set to *Approved*.
-+ If the purchase order approval status in Supply Chain Management is set to *Rejected*, the Field Service purchase order approval status will be set to *Rejected*.
-+ If the document header status in Supply Chain Management is changed to *Open order (Back order)*, and the Field Service purchase order status is *Draft* or *Cancelled*, the Field Service purchase order status will be changed to *Submitted*.
-+ If the document header status in Supply Chain Management is changed to *Cancelled*, and no purchase order receipt products in Field Service are associated with the purchase order (via purchase order products), the Field Service system status is set to *Cancelled*.
-+ If purchase order line status in Supply Chain Management is *Cancelled*, the purchase order product status in Field Service is set to *Cancelled*. In addition, if the purchase order line status in Supply Chain Management is changed from *Cancelled* to *Back Order*, the purchase order product item status in Field Service is set to *Pending*.
+- The status in Supply Chain Management can't be updated from Field Service. However, in some cases, the status in Field Service will be updated when the purchase order status in Supply Chain Management is changed.
+- If a purchase order in Supply Chain Management is under change management, and a change is being processed, the approval status is *Draft* or *In Review*. In this case, the Field Service approval status will be set to *Null*.
+- If the purchase order approval status in Supply Chain Management is set to *Approved*, *In External review*, *Confirmed*, or *Finalized*, the Field Service purchase order approval status will be set to *Approved*.
+- If the purchase order approval status in Supply Chain Management is set to *Rejected*, the Field Service purchase order approval status will be set to *Rejected*.
+- If the document header status in Supply Chain Management is changed to *Open order (Back order)*, and the Field Service purchase order status is *Draft* or *Cancelled*, the Field Service purchase order status will be changed to *Submitted*.
+- If the document header status in Supply Chain Management is changed to *Cancelled*, and no purchase order receipt products in Field Service are associated with the purchase order (via purchase order products), the Field Service system status is set to *Cancelled*.
+- If purchase order line status in Supply Chain Management is *Cancelled*, the purchase order product status in Field Service is set to *Cancelled*. In addition, if the purchase order line status in Supply Chain Management is changed from *Cancelled* to *Back Order*, the purchase order product item status in Field Service is set to *Pending*.
 
 ## <a id="sync-procurement"></a>Sync with the Supply Chain Management procurement data on demand
 

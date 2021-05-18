@@ -4,11 +4,9 @@
 title: Media gallery module
 description: This topic covers media gallery modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,7 @@ ms.dyn365.ops.version: Release 10.0.13
 # Media gallery module
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic covers media gallery modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
@@ -56,11 +55,13 @@ In the example in the following illustration, a buy box on a PDP hosts product i
 |---------------|--------|-------------|
 | Image source | **Page context** or **Product ID** | The default value is **Page context**. If **Page context** is selected, the module expects the page to provide the product ID information. If **Product ID** is selected, the product ID for an image must be provided as the value of the **Product ID** property. This capability is available in Commerce version 10.0.12. |
 | Product ID | A product ID | This property is applicable only if the value of the **Image source** property is **Product ID**. |
-| Image zoom | **Inline** or **Container** | This property lets the user zoom images in the media gallery module. An image can be zoomed either inline or in a separate container next to the image. This capability is available in 10.0.12 |
-| Zoom scale | A decimal number | This property specifies the scale factor for zooming images. For example, if the value is set to **2.5**, images are magnified 2.5 times.|
-| Full screen | **True** or **False** | This property specifies whether images can be viewed in full-screen mode. In full-screen mode, images can be also be further magnified if the zoom capability is turned on. This capability is available in Commerce version 10.0.13. |
+| Image zoom | **Inline** or **Container** | This property lets the user zoom images in the media gallery module. An image can be zoomed either inline or in a separate container next to the image. This capability is available in 10.0.12. |
+| Zoom factor | A decimal number | This property specifies the scale factor for zooming images. For example, if the value is set to **2.5**, images are magnified 2.5 times. |
+| Full screen | **True** or **False** | This property specifies whether images can be viewed in full-screen mode. In full-screen mode, images can also be further magnified if the zoom capability is turned on. This capability is available in the Commerce version 10.0.13 release. |
+| Zoomed image quality | A number from 1 through 100 that represents a percentage and that is selected by using a trackbar control | This property defines the image quality for zoomed-in images. It can be set to 100 percent to ensure that a zoomed image always uses the highest possible resolution. This property isn't applicable to PNG files, because they use a lossless format. This capability is available as of the Commerce version 10.0.19 release. |
 | Images | Images that are selected from site builder Media Library | In addition to being rendered from a product, images can be curated for a media gallery module. These images will be appended to any product images that are available. This capability is available in Commerce version 10.0.12. |
 | Thumbnail orientation | **Vertical** or **Horizontal** | This property specifies whether thumbnail images should be shown in a vertical strip or a horizontal strip. |
+| Hide master product images for variant | **True** or **False** | If this property is set to **True**, when a variant is selected, images of the master product are hidden unless the variant has no images. This property doesn't affect products that have no variants. |
 
 The following illustration shows an example of a media gallery module where the full-screen and zoom options are available.
 

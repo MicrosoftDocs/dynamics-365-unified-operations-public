@@ -4,11 +4,9 @@
 title: Design configurations to generate reports in Office format that have embedded images
 description: This topic describes about how to design configurations that generate electronic documents in Excel and Word formats that contain embedded images. 
 author: NickSelin
-manager: AnnBe 
-ms.date: 01/23/2018
+ms.date: 04/23/2021
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -31,7 +29,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 To complete the steps in this procedure, first complete the procedure, "ER Create a configuration provider and mark it as active." 
 This procedure explains how to design Electronic reporting (ER) configurations to generate a Microsoft Excel or Word document that contains embedded images. In this procedure, you will create the required ER configurations for the sample company, Litware, Inc. These steps can be completed using the USMF dataset. 
-This procedure is created for users with the assigned role of system administrator or electronic reporting developer. Before you begin, download and save the files listed in the Help topic, [Embed images and shapes in documents that you generate by using ER](../electronic-reporting-embed-images-shapes.md). The files are: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png, and Cheque template Word.docx.
+This procedure is created for users with the assigned role of system administrator or electronic reporting developer. Before you begin, download and save the following files: 
+
+| Description                                          | File name                   |
+|------------------------------------------------------|-----------------------------|
+| ER data model configuration                          | [Model for cheques.xml](https://download.microsoft.com/download/6/e/a/6ea166fd-1382-4fdb-8dcb-0f13379f9c8e/Modelforcheques.xml)       |
+| ER format configuration                              | [Cheques printing format.xml](https://download.microsoft.com/download/1/7/c/17c301e3-c4ee-4886-ae75-440fcc002c8c/Chequesprintingformat.xml) |
+| Company logo image                                   | [Company logo.png](https://download.microsoft.com/download/8/2/e/82e6bd81-caac-4e9a-bfce-1392ce7c8616/Companylogo.png)            |
+| Signature image                                      | [Signature image.png](https://download.microsoft.com/download/5/0/9/509151b3-06fc-4870-9408-7c9a43b72771/Signatureimage.png)         |
+| Alternative signature image                          | [Signature image 2.png](https://download.microsoft.com/download/3/0/0/30045bf1-0ff6-4215-9162-b77c2f5dcc7c/Signatureimage2.png)       |
+| Microsoft Word template for printing payment checks  | [Cheque template Word.docx](https://download.microsoft.com/download/4/4/d/44d9d255-9ad1-42fe-87db-23f319fd8e89/ChequetemplateWord.docx)   |
 
 ## Verify prerequisites  
  1. Go to Organization administration > Workspaces > Electronic reporting.  

@@ -4,10 +4,8 @@
 title: Custom Help Toolkit - The HtmlFromRepoGenerator tool
 description: This topic describes the HtmlFromRepoGenerator tool that is included in the Custom Help Toolkit for Finance and Operations apps. 
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
-ms.service: dynamics-ax-platform
 
 # optional metadata
 
@@ -50,7 +48,8 @@ The **HtmlFromRepoGenerator** tool provides functionality that supports the crea
 
 - Compare a localized Microsoft repo to the en-US repo to identify differences and update links accordingly.
 
-In the first version of the Custom Help Toolkit, this tool was named ConsoleApp.
+> [!NOTE]
+> In the first version of the Custom Help Toolkit, this tool was named ConsoleApp. The tool was renamed and updated in 2020.
 
 ### Syntax
 

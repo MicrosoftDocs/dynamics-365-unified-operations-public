@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Talent (October 8, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for October 8, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 10/08/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -52,13 +49,13 @@ In conjunction with our announcement in the [Strategic investments in core HR dr
 
 ### Dataverse integration is now turned off by default on new provisions (343675)
  
-When new environments are provisioned, Dataverse integration is now turned off. For more information, see [Configure Dataverse integration](hr-common-data-service-integration.md).
+When new environments are provisioned, Dataverse integration is now turned off. For more information, see [Configure Dataverse integration](../human-resources/hr-admin-integration-common-data-service.md).
 
 ### Streamlined employee entry and navigation
 
 Functionality for employee entry and navigation is now available in all environments. To turn on this feature, go to **System administration \> Links \> Setup \> System parameters \> Preview features**, and select **Enhanced worker form and navigation**. The feature is then turned for all users. You can turn this option off at any time.
 
-For more information, see [Streamlined employee data entry](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/streamlined-employee-data-entry) in the Dynamics 365: 2019 release wave 2 plan.
+For more information, see [Streamlined employee data entry](/dynamics365-release-plan/2019wave2/dynamics365-talent/streamlined-employee-data-entry) in the Dynamics 365: 2019 release wave 2 plan.
 
 ### Attract and Onboard create inactive workers in Core HR (380517)
 
@@ -112,7 +109,7 @@ This release corrects an issue that occurs after one performance journal is dele
 
 ### Print performance reviews
 
-See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
+See [Print performance reviews](/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

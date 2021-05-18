@@ -4,11 +4,9 @@
 title: Create a security policy
 description: This topic explains how to create a simple security policy that secures access to customers and customer groups, based on a range for a customer group.
 author: Peakerbl
-manager: AnnBe
 ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

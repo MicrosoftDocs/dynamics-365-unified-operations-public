@@ -4,11 +4,9 @@
 title: Domains in Dynamics 365 Commerce
 description: This topic describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrShoo
-manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -44,7 +42,7 @@ When provisioning an e-commerce environment in [Microsoft Dynamics Lifecycle Ser
 
 The following illustration shows the LCS e-commerce provisioning screen with the **Supported host names** box highlighted. 
 
-![LCS e-commerce provisioning screen with the **Supported host names** box highlighted](./media/Domains_ProvisioningeCommerceScreen.png)
+![LCS e-commerce provisioning screen with the **Supported host names** box highlighted](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 You can create a service request to add additional domains to an environment if provisioning has already occurred. To create a service request in LCS, within your environment go to **Support \> Support issues** and select **Submit an incident**.
 
@@ -157,7 +155,7 @@ The Commerce-supplied Azure Front Door instance does not support apex domains (r
 
   [Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
 
-  [Set up an online store channel](online-stores.md)
+  [Set up an online store channel](./channel-setup-online.md)
 
   [Create an e-commerce site](create-ecommerce-site.md)
 

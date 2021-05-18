@@ -3,11 +3,9 @@
 title: Account activity reports
 description: This topic provides information about account activity reports including the Turnover sheet with correspondence.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

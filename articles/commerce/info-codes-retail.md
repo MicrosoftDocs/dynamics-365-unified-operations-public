@@ -4,11 +4,9 @@
 title: Info codes and info code groups
 description: This article provides an overview about info codes, info code groups, and how to use them.
 author: mugunthanm
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
