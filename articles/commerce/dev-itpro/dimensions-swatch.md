@@ -96,39 +96,41 @@ The following image shows an example media template configuration using image UR
 
 ## Configure dimension values using both hex codes and image URLs
 
-The majority of color dimensions can be configured with both hex codes and image URLs. Commerce rendering fallback logic will automatically look for either a hex code or an image URL to display the color swatch. This method can simplify image management when dealing with large numbers of colors.
+The majority of color dimensions can be configured with both hex codes and image URLs. Commerce rendering fallback logic will automatically look for either a hex code or an image URL to display the color swatch. Using both hex codes and image URLs to configure dimenion colors can simplify image management when dealing with large numbers of colors.
 
 The following image shows an example **Colors** form configuration with both hex codes and image URLs.
 
 ![Example of dimension configuration using Hexcode and Image Url](../dev-itpro/media/swatch_color_hexandimage.png)
 
-## Configure refiner groups in Commerce headquarters
+## Configure refiner groups
 
-While defining Hexcode or Image Url for a dimension value, you can also state the Refiner Group value. The Refiner Group value will be name of the dimension that should be used in the refiner experience. For instance in the below example we have Color values Blue, Blue Plaid, Blue Wash, and Dark Blue, each mapped to a different  hexcode and will appear as different colors in the product details page and product cards of respective products. On the refiner experience, since these dimension values are mapped to Refiner Group = Blue, on a list page, refining on Blue will show products that have Color = Blue, Blue Plaid, Blue Wash, and Dark Blue on the page.
+When defining a hex code or image URL for a dimension value, you can also specify the **RefinerGroup** value, which is the name of the dimension that should be used to group similar dimension values in the refiner experience. For example, if you have color dimension values blue, blue plaid, blue wash, and dark blue, each color value is mapped to a different hex code or image URL and will appear as different colors on PDPs and product cards of respective products. But if these dimension values are mapped to the **RefinerGroup** value **Blue**, refining on "blue" will show products that have dimension color values of blue, blue plaid, blue wash, and dark blue on the search list page.
 
-Below is an example of Refiner group management
+The following example image shows the relationship between **Color** and **RefinerGroup** properties in Commerce headquarters.
 
 ![Example of refiner group management](../dev-itpro/media/swatch_refiner_group.png)
 
 ## Image management in Commerce site builder
 
-If image Urls are used for any dimension value, the respective image need to be uploaded to Site Builder. They should follow the same folder path and file name as defined in Commerce Headquarters.  Image management follows the same pattern we use for Products and Categories, refer [Upload Image](../dam-upload-images.md). 
+If image URLs are used for any dimension value, the respective images must be uploaded to Commerce site builder. The image location should follow the same folder path and file name as that defined in Commerce headquarters. For more information on uploading images to site builder, see [Upload images](../dam-upload-images.md). 
 
-Files must be uploaded to the respective dimensions. E.g Color images should be uploaded to **Color** entity in Site Builder
+Image files must be uploaded to their respective categories in site builder, for example color images should be uploaded to the **Color** category.
 
 Below is an example of uploading images via Site builder for the Dimensions.
 
+The following example image highlights the **Size**, **Color**, and **Style** categories displayed in the **Upload files** dialog box when uploading images to the site builder media library.
+
 ![Example of Sitebuilder](../dev-itpro/media/swatch_sitebuilder.png)
 
-## Swatch display in e-commerce
+## Swatch display on e-commerce site pages
 
-On e-commerce, swatches can displayed in experiences that require a dimension selection i.e. Product details page, Product cards on list pages, Quick view module, refiners on list pages. To enable the experience on e-commerce, you need to opt-into the Dimension site settings. Refer to [Apply site settings for dimensions](../dimension_settings.md)
+On e-commerce, swatches can displayed in experiences that require a dimension selection i.e. Product details page, Product cards on list pages, Quick view module, refiners on list pages. To enable the experience on e-commerce, you need to opt-in to the Dimension site settings. Refer to [Apply site settings for dimensions](../dimension_settings.md)
 
 In addition, the Search Results module property **Include product attributes** should be enabled on the Search Results module. If there are any enriched category pages, each of these pages should also be updated respectively. For more details, refer [Search results module](../search-result-module.md)
 
 ## Swatch display in POS and other channels
 
-We don’t have an out-of-box implementation to display swatches on POS and other channels. If required it can be achieved as an extension. The channel APIs return the hexcode and image url information needed to render the images.
+We don't have an out-of-box implementation to display swatches on POS and other channels. If required it can be achieved as an extension. The channel APIs return the hexcode and image url information needed to render the images.
 
 ## Additional resources
 
