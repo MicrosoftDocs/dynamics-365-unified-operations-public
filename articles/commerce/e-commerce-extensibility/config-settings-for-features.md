@@ -91,12 +91,12 @@ The **disabledWithFeatureFlags** property can be used inside the app settings fi
 }
 ```
 
-For more information about Dynamics 365 Commerce feature enablement, see the [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview?toc=/dynamics365/commerce/toc.json).
+For more information about Dynamics 365 Commerce feature enablement, see the [Feature management overview](/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 ## Additional resources
 
 [App settings](app-settings.md)
 
-[Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview?toc=/dynamics365/commerce/toc.json)
+[Feature management overview](/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview)
 
 
