@@ -69,7 +69,7 @@ Follow the steps mentioned in the below docs to setup the release pipeline if yo
 **In the LCS Asset Upload task choose:**
 
 - **Type of asset** -  Retail Self-Service Package
-- **File to Upload** - $(System.DefaultWorkingDirectory)/_ScaleUnit-CI/drop/ScaleUnitPackage_$(Release.Artifacts._ScaleUnit-CI.BuildNumber).zip
-- **LCS Asset Name** - ScaleUnitPackage_$(Release.Artifacts._ScaleUnit-CI.BuildNumber). The Asset name can be changed according to your naming guidelines. 
+- **File to Upload** - $(System.DefaultWorkingDirectory)/_CommerceSDK-Signing-EXE/drop/Installer_$(Release.Artifacts._CommerceSDK-Signing-EXE.BuildNumber).exe
+- **LCS Asset Name** - Installer_$(Release.Artifacts._CommerceSDK-Signing-EXE.BuildNumber). 
 
 
