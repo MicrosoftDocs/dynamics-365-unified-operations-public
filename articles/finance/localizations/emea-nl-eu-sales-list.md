@@ -126,7 +126,7 @@ declaration parameters**.
 
 -   **Digipoort Delivery URL**: Enter the destination URL for the Digipoort
     service. For example,
-    enter *https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/aanleverservice/1.2*.
+    enter *https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/aanleverservice/1.2"*.
 
 -   **Digipoort Status URL**: Enter the URL for the message statuses. For
     example,
