@@ -14,7 +14,6 @@ ms.technology:
 # ms.search.form: LeaveAbsenceWorkspace
 audience: Application user
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
