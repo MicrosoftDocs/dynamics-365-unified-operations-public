@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.15
 
 You can use readiness checks to ensure that all the required master data has been specified for a product before it's used in transactions. When readiness checks are used, a user or team is made responsible for validating specific predefined product-related data. If there is an open readiness check for a product, the product can't be released or used in transactions.
 
-The **Active** check box for an engineering product, variant, or version is available only after all the required data has been entered and verified, and after all the readiness checks have been processed. At that point, the product, version, or variant can be released to other companies and used in transactions. You can create readiness checks for new products, new variants, and new engineering versions.
+The **Active** check box for an engineering product, variant, or version is available only after all the required data has been entered and verified, and after all the readiness checks have been processed. At that point, the product, version, or variant can be released to other companies and used in transactions. You can create readiness checks for new products, new variants, and new engineering versions. <!-- KFM: @Beatriz, what about standard products and variants? Do we do something similar? -->
 
 It's also possible to apply readiness checks to standard (non-engineering) products. For details, see [Readiness checks on standard products](#standard-products).
 
@@ -48,17 +48,17 @@ There are three types of readiness checks:
 
 Readiness check policies can be applied on the released product level, the released variant level, and the engineering version level.
 
-When you create a new *engineering product*, the system determines whether a readiness check policy has been set up for it. If a readiness check policy applies, the following events occur:
+When you create a new *engineering product*, the system determines whether a readiness check policy applies for it. If a readiness check policy applies, the following events occur:
 
 - Readiness checks are created for the product, according to the applicable policy.
 - The engineering version is set to inactive to block the product from being used. All the versions for the specific product that is involved are set to inactive.
 
-If a new *variant* is created for a product, the system checks whether a readiness check policy applies. (Readiness checks can be applied on released variant level and the engineering version level.) If a policy applies, the following events occur:
+If a new *variant* is created for a product, the system checks whether a readiness check policy applies for it. (Readiness checks can be applied on released variant level and the engineering version level.) If a policy applies, the following events occur:
 
 - Readiness checks are created for the product.
 - The engineering version is set to inactive to block the product from being used.
 
-If a new engineering *version* is created for a product, the system checks whether a readiness check policy applies. (Readiness checks can be applied on the engineering version level.) If a policy applies, the following events occur:
+If a new engineering *version* is created for a product, the system checks whether a readiness check policy applies for it. (Readiness checks can be applied on the engineering version level.) If a policy applies, the following events occur:
 
 - Readiness checks are created for the product.
 - The engineering version is set to inactive to block the product from being used.
@@ -106,9 +106,7 @@ When all the open readiness checks for a new product, variant, or version have b
 
 ## Create and manage product readiness policies
 
-Use product readiness policies to manage the readiness checks that apply to a product. Because a readiness policy is assigned to the engineering category, all the checks in the readiness policy apply to all the engineering products that are based on the engineering category. For more information, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
-
-Each readiness policy contains a set of readiness checks. When a readiness policy is assigned to an engineering product category, all the products that are created from that engineering product category will have the readiness checks that are indicated in the readiness policy.
+Use product readiness policies to manage the readiness checks that apply to a product. Each readiness policy contains a set of readiness checks. When a readiness policy is assigned to an engineering product category or shared product, all the products that are related to that category or shared product will have the readiness checks that are indicated in the readiness policy.
 
 To work with product readiness policies, go to **Engineering change management \> Setup \> Product readiness policies**. Then follow one of these steps.
 
@@ -132,7 +130,7 @@ Set the following fields on the **General** FastTab of a product readiness polic
 | Field | Description |
 |---|---|
 | Product type | Select whether the policy applies to products of the *Item* or *Service* type. You can't change this setting after you save the record. |
-| Active | Use this option to help maintain your readiness policies. Set it to *Yes* for all readiness policies that you use. Set it to *No* to mark a readiness policy as inactive when it isn't used. Note that you can't inactivate a readiness policy that is assigned to an engineering product category, and you can delete only inactive release policies. |
+| Active | Use this option to help maintain your readiness policies. Set it to *Yes* for all readiness policies that you use. Set it to *No* to mark a readiness policy as inactive when it isn't used. Note that you can't inactivate a readiness policy that is assigned to an engineering product category or shared product, and you can delete only inactive release policies. |
 
 ### Readiness control FastTab
 
@@ -159,6 +157,27 @@ For each row that you add, set the following fields.
 | Questionnaire | Select the questionnaire that should be used for the checklist. The checklist is a local checklist in the company where the readiness check is done. The system must be able to evaluate whether the checklist is correctly answered. Therefore, the checklist must be set up so that an evaluation is done based on correct answers. For more information about how to create questionnaires, see [Using questionnaires](/dynamicsax-2012/appuser-itpro/using-questionnaires) and its related topics. |
 | Automatic approval | Readiness check records include an **Approved** check box that indicates the approval status. Select the **Automatic approval** check box for checks that should be set to approved immediately after the assigned user completes them. Clear this check box to require explicit approval as an extra step. |
 | Mandatory | Select this check box for checks that must be completed by the assigned user. Mandatory checks can't be skipped. |
+
+<a name="assign-policy"></a>
+
+## Assign readiness policies to standard and engineering products
+
+When you create a new product based on an engineering category, you create both a *released product* and a related *shared product*. The way readiness policies are resolved for a released product depends on whether you have have enabled the *Product readiness checks* feature (see also [Readiness checks on standard products](#standard-products)).
+
+- When the *Product readiness checks* feature is *disabled* on your system, the readiness policy is only set and shown on [engineering category](engineering-versions-product-category.md) records. To find out which policy applies for a released product, the system checks the **Product readiness policy** field for the related engineering category. If necessary, you can change the readiness policy for an existing product by editing the related engineering category (not the shared product).
+- When the *Product readiness checks* feature is *enabled*, it adds a **Product readiness policy** field to the **Product** page (where shared products are set up), and to the **Released product** page (where the value is read-only and taken from the related shared product). The system finds the readiness policy for a released product by checking the related shared product. When you use an engineering category to create a new engineering product, the system creates both a shared product and a released product, and copies the **Product readiness policy** setting for the engineering category (if any) to the new shared product. Thereafter, you can change the readiness policy for an existing product by editing the related shared product (not the released engineering category).
+
+To assign a readiness policy to a shared product:
+
+1. Go to **Product information \> Products \> Products**.
+1. Open or create the product you want to assign a readiness policy for.
+1. On the **General** FastTab, set **Product readiness policy** to the name of the policy that should apply to this product.
+
+To assign a readiness policy to an engineering category:
+
+1. Go to **Engineering change management \> Setup \> Engineering product category details**.
+1. Open or create the engineering category you want to assign a readiness policy for.
+1. On the **Product readiness policy** FastTab, set **Product readiness policy** to the name of the policy that should apply to this engineering category.
 
 <a name="standard-products></a>
 
@@ -194,18 +213,9 @@ For engineering products, readiness checks are still created in the same way as 
 
 You create readiness policies for standard products just as you do for engineering products, as described previously in this topic.
 
-### Assign readiness policies to standard products and engineering products
+### Assign readiness policies for standard products
 
-When you create a new product based on an engineering category, you create both a *released product* and a related *shared product*. The way readiness policies are resolved for a released product depends on whether you have have enabled the *Product readiness checks* feature.
-
-- When the *Product readiness checks* feature is *disabled* on your system, the readiness policy is only set and shown on the [engineering category](engineering-versions-product-category.md). To find out which policy applies for a released product, the system checks the **Product readiness policy** field for the related engineering category. If necessary, you can change the readiness policy for an existing product by editing the *related engineering category*.
-- When the *Product readiness checks* feature is *enabled*, it adds a **Product readiness policy** field to the **Product** page (where shared products are set up), and to the **Released product** page (where the value is read-only and taken from the related shared product). The system finds the readiness policy for a released product by checking the related shared product. When you use an engineering category to create a new engineering product, the system creates both a shared product and a released product, and copies the **Product readiness policy** setting for the engineering category (if any) to the new shared product. Thereafter, you can change the readiness policy for an existing product by editing the *related shared product* (not the released engineering category).
-
-To assign a readiness policy to a standard product:
-
-1. Go to **Product information \> Products \> Products**.
-1. Open or create the product you want to assign a readiness policy for.
-1. On the **General** FastTab, set **Product readiness policy** to the name of the policy that should apply to this product.
+To assign a readiness policy for a standard product, open the related shared product and set **Product readiness policy** to the name of the policy that should apply. For more information, see [Assign readiness policies to standard and engineering products](#assign-policy)
 
 ### View and process readiness checks on standard products
 
