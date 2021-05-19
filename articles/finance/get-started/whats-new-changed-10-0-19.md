@@ -48,6 +48,11 @@ The following features are included in this release. Some of the listed features
 - [Tax service – supporting multiple VAT ID (preview)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service--supporting-multiple-vat-id-preview)
 - [Tax service – supporting tax in transfer order (preview)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service--supporting-tax-transfer-order-preview)
 - [Tax service (preview)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service-preview)
+- [Electronic Invoicing – configurable Austrian electronic invoice](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-austrian-electronic-invoice)
+- [Electronic Invoicing – configurable Belgian electronic invoice](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-belgian-electronic-invoice)
+- [Electronic Invoicing – configurable Danish electronic invoice](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-danish-electronic-invoice)
+- [Electronic Invoicing – configurable Estonian electronic invoice](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-estonian-electronic-invoice)
+- [Electronic Invoicing – configurable Finnish electronic invoice](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-finnish-electronic-invoice)
 
 ## Additional resources
 
