@@ -37,7 +37,7 @@ Within the Supply Chain Management user interface and documentation, change mana
 
 ## Work with formula change management features
 
-The following list summarizes how engineering change management features apply to formula management, and provides links for more information. Because formula change management leverages engineering change management features, you should learn how engineering change management works so that you can use it to manage your formulas and their ingredients.
+The following list summarizes how engineering change management features apply to formula management, and provides links for more information. Because formula change management leverages engineering change management features, you should learn how engineering change management works in general so that you can use it to manage your formulas and their ingredients.
 
 - **Centralized product data management**: Set up an organization that, through a managed release process, ensures that accurate and relevant product data is available to users across the enterprise. For more information, see [Engineering companies and data ownership rules](engineering-org-data-ownership-rules.md).
 - **Product versioning**: Track changes to products through product versions, and control the product throughout all stages of the supply chain. This way you're able to keep track of the changes in your formulations. For more information, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
@@ -46,9 +46,8 @@ The following list summarizes how engineering change management features apply t
 - **Readiness control**: Ensure all necessary product data is fully populated before the product is released by using system checks and user guidance (questionnaires and checklists). For more information, see [Product readiness](product-readiness.md)
 - **Enhanced product release functionality**: Release fully defined product versions and its formula from an organization (legal entity) to other legal entities and even decide whether the product information needs to be reviewed or edited before release. For more information, see [Release product structures](release-product-structure.md)
 
-Note that most of the topics linked to in the previous list provide examples based on bills of materials (BOM). However, formulas work similarly. Some of the concepts useful to know when managing formulas and BOMs with change management (or only formula change management) are the following:
+Note that most of the topics linked to in the previous list provide examples based on bills of materials (BOM). However, formulas work similarly. Some additional concepts useful to know when managing formulas and BOMs with change management (or only formula change management) include the following:
 
-- Production type is specified on the engineering category details. So you can choose if the item is BOM, formula, or planning item
-- Whether the product is a catch weight item is also specified in the engineering category details.
-- Co- and by-products are not engineering products, meaning they are not versioned. If you need to change them, just create a new product. This is to ease maintenance.
-- You can manage end items that are BOMs and that have child formula items. The functionality will work for both cases (only discrete engineering items and also formula items) as well as the combinations of both of them together. <!-- KFM: I'm not sure what we are trying to say for this point. -->
+- For each [product engineering category](engineering-versions-product-category.md), you can specify the production type (BOM, formula, or planning item) and whether catch weight support is needed for products that use that category.
+- Co- and by-products are not engineering products, which means that they are not versioned. If you need to change them, just create a new product. This is to ease maintenance.
+- You can manage end items that are BOMs and that have child formula items. The functionality will work for both cases (only discrete engineering items and also formula items) as well as the combinations of both of them together. <!-- KFM: I'm not sure what we are saying here. -->
