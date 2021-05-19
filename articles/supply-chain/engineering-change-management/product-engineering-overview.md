@@ -66,7 +66,7 @@ Next, turn on the configuration keys by following these steps.
 1. Enable the configuration key for the main feature by selecting the **Engineering Change Management** check box.
 1. Expand the **Engineering Change Management** node and select or clear the following checkboxes as needed (depending on which features you want to use):
     - **Attribute search** – Select this check box to enable the [attribute search feature](engineering-attributes-and-search.md). We recommend enabling this feature, but you can clear this check box if you won't use it.
-    - **Change management for process manufacturing** – Select this check box if you would like to use Engineering change management features to manage changes in formulas. If you don't need to manage formulas, then you can clear this check box. For more information, see [Manage changes in formulas and their ingredients](manage-formula-changes.md).
+    - **Change management for process manufacturing** – Select this check box if you would like to use Engineering change management features to manage changes in formulas for process manufacturing. If you don't need to manage formulas, then you can clear this check box. For more information, see [Manage changes in formulas and their ingredients](manage-formula-changes.md).
 1. If you also want to use the version dimension, then select the **Product dimension - Version** check box. (This check box is further down the list, not nested under the **Engineering Change Management** node.)
 1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
