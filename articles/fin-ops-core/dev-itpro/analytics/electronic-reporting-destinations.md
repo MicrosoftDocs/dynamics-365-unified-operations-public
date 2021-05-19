@@ -207,31 +207,31 @@ If you generate an ER configuration in Excel format and want to convert it to PD
 
 ## Output unfolding
 
-When you configure a destination for the **Folder** component of your ER format, you can specify how the output of this component is delivered to the configured destination.
+When you configure a destination for the **Folder** component of your ER format, you can specify how the output of that component is delivered to the configured destination.
 
 ### Make output unfolding available
 
-To make the output unfolding option available in the current Finance instance, open the **Feature management** workspace, and enable the **Allow configuring ER destinations to send folders content as separate files** feature.
+To make the output unfolding option available in the current Finance instance, open the **Feature management** workspace, and turn on the **Allow configuring ER destinations to send folders content as separate files** feature.
 
 ### Applicability
 
-The output unfolding option can be configured only for the format components of the **Folder** type. When you start configuring a **Folder** component, the **General** FastTab becomes visible on the **Electronic reporting destination** page. 
+The output unfolding option can be configured only for the format components of the **Folder** type. When you start to configure a **Folder** component, the **General** FastTab becomes available on the **Electronic reporting destination** page. 
 
 ### Use the output unfolding option
 
-On the **General** FastTab, in the **Send folder as** field, select an option.
+On the **General** FastTab, in the **Send folder as** field, select one of the following values:
 
-   - Select **ZIP archive** to output a generated file as a zipped one.
-   - Select **Separate files** to output every file of a generated zipped file as an individual file.
+- **ZIP archive** – Deliver a generated file as a zip file.
+- **Separate files** – Deliver every file of a generated zip file as an individual file.
 
-   [![Configuring a destination for a Folder format component](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+    > [!NOTE]
+    > When you select **Separate files**, the generated output is collected in memory in a zipped state. Therefore, the maximum [file size limit](er-compress-outbound-files.md) is applied for zipped output when the real file size might exceed this limit. We recommend that you select this value when you expect the size of the generated output too be quite large.
 
-   >[!NOTE]
-   > When you select **Separate files**, you collect a generated output in memory in a zipped state. So, the maximum [file size limit](er-compress-outbound-files.md) in this case is applied for a zipped output when the real file size might exceed this limit. This option is recommended when you expect that a generated output size is quite large.
+[![Configuring a destination for a Folder format component](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 
 ### Limitations
 
-When you set the **Send folder as** field to **Separate files** for a **Folder** component that contains other nested **Folder** components, this setting in't recursively applied for nested **Folder** components.
+If you set the **Send folder as** field to **Separate files** for a **Folder** component that contains other nested **Folder** components, the setting isn't recursively applied to the nested **Folder** components.
 
 ## Security considerations
 
