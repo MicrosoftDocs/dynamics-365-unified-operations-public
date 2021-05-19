@@ -46,7 +46,10 @@ Finance version 10.0.19 will be available for pre-release in late April 2021 and
 No.
 
 ## Will my environment be subjected to any API limits?
-No. At this time, environments aren't subject to any API limits. 
+No. At this time, environments are not subjected to any API limits. 
+
+Telemetry data is collected to assess the impact of the workloads across the F&O environments. This data will help  establish baseline API limits as we define a roadmap for introducing usage-based limits in the near future.
+
 
 ## Is there a report that determines when throttling might occur?
 Yes. A report is available and can be accessed through the **Raw logs** on the **Environment monitoring** page in LCS. The requests that are listed in this view are likely to be throttled when this feature is turned on by default starting in Finance version 10.0.19.
@@ -88,8 +91,16 @@ When a request is throttled, the response header includes a time that will be us
 You will receive the message, "This request could not be processed at this time due to system experiencing high resource utilization. Retry the request after {0} seconds".
 Where **{0}** will have the dynamically calculated retry-after time interval.
 
-## Does throttling apply to internal Microsoft services?
-Internal Microsoft services, such as DRA, WHSMobile, and RetailAPI are currently exempt from throttling. However, telemetry is being collected on the performance of these services on the overall system health. Microsoft will work with each of these internal service teams to establish usage-based limits at some point.
+## Does throttling apply to Microsoft services?
+The following Microsoft services will be **initially whitelisted**, and throttling will not apply to them: 
+
+Document Routing Agent (DRA), Warehouse Mobile (WHSMobile), RetailAPI, Office Integration, Data Import/ Export Framework (DIXF), Data Integrator, Dual-write, F&O - Power Platform Integration (Virtual Entities), and Dynamics F&O Connector. 
+
+Though these services are exempt, telemetry is being collected on the performance and impact of these services on the overall system health. 
+
+Each of these service owners are prioritizing for implementing  429 handlers by the end of the year - at which time they will no longer be on the whitelist and throttling will apply to these services. We will communicate ahead of these changes and documentation will be updated.
+
+Even with these services implementing their own handlers, it is still recommended to have client-side handling. So, please consider implementing the 429 handler with retry-after logic.
 
 ## Is it recommended to use a dedicated integration account instead of just the generic admin user account?
 Yes, we strongly recommend this approach. As these service protection settings are set up for user-specific values, using the same user account for most or all of your integration will limit your ability to assign relative priorities across your integration needs. Further, if the same user account is used, all integration requests that originate from that user account will be subjected to throttling.
