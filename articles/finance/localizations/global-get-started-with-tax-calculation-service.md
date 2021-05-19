@@ -4,7 +4,7 @@
 title: Get started with Tax Calculation
 description: This topic explains how to set up Tax Calculation.
 author: wangchen
-ms.date: 04/12/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,7 +46,7 @@ The setup consists of four main steps:
 
 Before you can complete the procedures in this topic, the following prerequisites must be in place:
 
-- You have access to your LCS account, and you've deployed an LCS project with a Tier 2 (or above) environment that runs Dynamics 365 version 10.0.18 or later.
+- You have access to your LCS account, and you've deployed an LCS project with a Tier 2 (or above) environment that runs Dynamics 365 version 10.0.18 with [KB4616360](https://fix.lcs.dynamics.com/Issue/Details?kb=4616360&bugId=568738&dbType=3&qc=1f1c04ff39adad74ef871f539e8d73e14c1893ef7cc4b6e3f7d5c5864ec2781a), or later.
 - You have access to your RCS account.
 - You've contacted Microsoft to enable the flighting in your deployed Finance or Supply Chain Management environment.
 
@@ -132,7 +132,7 @@ After you complete the setup in RCS, as described in the previous section, you w
 
 The setup in this section is done by legal entity. You must configure it for each legal entity that you want to enable Tax Calculation for in Finance.
 
-1. In Finance, go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calcluation setup (Preview)**.
+1. In Finance, go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation setup (Preview)**.
 2. On the **General** tab, set the following fields:
 
     - **Enable Tax Calculation** – Select this check box to enable Tax Calculation add-in for the legal entity. If it isn't enabled for the current legal entity, the legal entity will continue to use the existing tax engine to determine and calculate tax.
@@ -152,7 +152,7 @@ The setup in this section is done by legal entity. You must configure it for eac
 
 ## Transaction processing
 
-After you've completed all the setup procedures, you can use Tax Calcuation to determine and calculate tax in Finance. The steps to process transactions remain the same. The following transactions are supported in Finance version 10.0.18:
+After you've completed all the setup procedures, you can use Tax Calculation to determine and calculate tax in Finance. The steps to process transactions remain the same. The following transactions are supported in Finance version 10.0.18:
 
 - Sales process
 
