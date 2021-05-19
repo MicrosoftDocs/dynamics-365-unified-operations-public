@@ -1161,7 +1161,7 @@
         - name: Year-end close missing opening balances
           href: general-ledger/yec-mssng-open-blnces.md
         - name: Open financial journal templates in Office
-          href: general-ledger/open-fin-jrnls-in-office.md
+          href: general-ledger/open-fincl-jrnls-in-office.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
