@@ -141,6 +141,16 @@ The Excel Add-In, Data Management Framework, and Power BI reporting are all desi
 
 ## Troubleshooting issues
 
+### Issue: During sign-in to the Excel Add-in, users receive an error message saying they "cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant"
+
+**Issue:** During sign in to the Excel Add-in, a user receives an error similar to the following: 
+-  "AADSTS50020: User account 'XXX' from identity provider 'https://sts.windows.net/XXX ' does not exist in tenant 'XXX' and cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e'(Microsoft Business Office Add-in) in that tenant."
+-  "Selected user account does not exist in tenant 'XXX' and cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant"
+
+**Explanation:** This issue is caused by a change made to Azure Active Directory (AAD) in mid April 2021 regarding external users only. Since this change was outside of the Finance and Operations apps, it can affect customers on any version of the platform or application.   
+
+**Fix:** All external users need to be invited to the tenant through AAD. Please see the following documentation: [Invite users with Azure Active Directory B2B collaboration](https://docs.microsoft.com/en-us/power-platform/admin/invite-users-azure-active-directory-b2b-collaboration)
+
 ### \[Fixed\] Issue: During sign-in to the Excel Add-in, I receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ"
 
 **Issue:** During sign in to the Excel Add-in, you receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ."
