@@ -45,8 +45,8 @@ Finance version 10.0.19 will be available for pre-release in late April 2021 and
 ## Will a retry request receive preferential treatment over a new request?
 No.
 
-## Will my environment be subjected to any API limits?
-No. At this time, environments are not subjected to any API limits. 
+## Will my environment be subject to any API limits?
+No. At this time, environments are not subject to any API limits. 
 
 Telemetry data is collected to assess the impact of the workloads across environments. This data helps establish baseline API limits as we define a roadmap for introducing usage-based limits.
 
