@@ -4,7 +4,7 @@
 title: Set up and deploy the Dynamics 365 Commerce localization for Brazil
 description: This topic covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Brazil.
 author: v-ankvik
-ms.date: 05/11/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -266,7 +266,7 @@ A digital certificate for Application Object Server (AOS) must be stored in Azur
 
 Digital certificates for Retail Server must be installed locally or stored in Key Vault. Both location types for Retail Server can also be configured simultaneously and used according to their priorities.
 
-For more information about how to work with Key Vault storage, see [Get started with Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-get-started) and [Set up the Azure Key Vault client](../../finance/localizations/setting-up-azure-key-vault-client.md).
+For more information about how to work with Key Vault storage, see [Get started with Azure Key Vault](/azure/key-vault/key-vault-get-started) and [Set up the Azure Key Vault client](../../finance/localizations/setting-up-azure-key-vault-client.md).
 
 You can also use the [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature that supports failover to offline when Key Vault or Commerce headquarters isn't available. This feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
 
@@ -308,29 +308,29 @@ To configure CRT extension components, follow these steps.
 
     - **Commerce Scale Unit:** The file is named **Commerceruntime.ext.config**, and it's located in the **bin\\ext** folder under the Internet Information Services (IIS) Commerce Scale Unit site location.
 
-1. Register the CRT change in the extension configuration file.
+2. Register the CRT change in the extension configuration file.
 
-       ```xml
-       <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
-       <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalServiceBrazil" />
-       <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil" />
-       <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
-       <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
-       ```
+```xml
+<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
+<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalServiceBrazil" />
+<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil" />
+<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
+<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
+ ```
 
-1. Find the extension configuration file for Local CRT on Modern POS:
+3. Find the extension configuration file for Local CRT on Modern POS:
 
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's located in the local CRT client broker location.
 
-1. Register the local CRT on Modern POS change in the extension configuration file.
+4. Register the local CRT on Modern POS change in the extension configuration file.
 
-        ```xml
-        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
-        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil.Offline" />
-        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil" />
-        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
-        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
-        ```
+ ```xml
+ <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
+ <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil.Offline" />
+ <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil" />
+ <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
+ <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
+ ```
 
 > [!WARNING]
 > Don't edit the **Commerceruntime.config** and **CommerceRuntime.MPOSOffline.config** files. These files aren't intended for any customizations.
@@ -398,7 +398,7 @@ To enable the Cloud POS extension components to be loaded in the **extensions.js
 
 [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md)
 
-[Get started with Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-get-started)
+[Get started with Azure Key Vault](/azure/key-vault/key-vault-get-started)
 
 [Set up the Azure Key Vault client](../../finance/localizations/setting-up-azure-key-vault-client.md)
 
