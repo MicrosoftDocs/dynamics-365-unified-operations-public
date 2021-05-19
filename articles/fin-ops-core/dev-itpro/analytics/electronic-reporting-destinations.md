@@ -205,6 +205,34 @@ If you generate an ER configuration in Excel format and want to convert it to PD
 >
 > If an ER configuration in Word format is converted to PDF format, the page orientation of the PDF document is taken from the Word document.
 
+## Output unfolding
+
+When you configure a destination for the **Folder** component of your ER format, you can specify how the output of this component is delivered to the configured destination.
+
+### Make output unfolding available
+
+To make the output unfolding option available in the current Finance instance, open the **Feature management** workspace, and enable the **Allow configuring ER destinations to send folders content as separate files** feature.
+
+### Applicability
+
+The output unfolding option can be configured only for the format components of the **Folder** type. When you start configuring a **Folder** component, the **General** Fast tab becomes visible on the **Electronic reporting destination** page. 
+
+### Use the output unfolding option
+
+You can set the desire option in the **Send folder as** field on the **General** Fast tab:
+
+- Set this field to **ZIP archive** to output a generated file as a zipped one.
+- Set this field to **Separate files** to output every file of a generated zipped file as an individual file.
+
+[![Configuring a destination for a Folder format component](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+
+>[!NOTE]
+> Please, note that when you use the **Separate files** option, you collect a generated output in memory in a zipped state. So, the maximum [file size limit](er-compress-outbound-files.md) in this case is applied for a zipped output when the real file size might exceed this limit. So, this option is recommended when you expect that a generated output size is quite large.
+
+### Limitations
+
+Note, that when you set the **Send folder as** field to **Separate files** for a **Folder** component that contains other nested **Folder** components, this setting is not recursively applied for nested **Folder** components.
+
 ## Security considerations
 
 Two types of privileges and duties are used for ER destinations. One type controls a user's overall ability to maintain the destinations that are configured for a legal entity (that is, it controls access to the **Electronic reporting destinations** page). The other type controls an application user's ability to override, at runtime, the destination settings that an ER developer or ER functional consultant has configured.
