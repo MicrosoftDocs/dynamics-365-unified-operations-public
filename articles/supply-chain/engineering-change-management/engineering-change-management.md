@@ -96,9 +96,13 @@ This list is for informational purposes only. Therefore, you can add as many rel
 
 The **Source** FastTab lets you track the starting point of the change request. It's useful if, for example, you want to see whether the change request was created from a sales order, who created it, and which company it was created in.
 
-### Evaluate the business impact of a change request
+### Evaluate the business impact of a change request and send notifications
 
-When you review a request for change, you can search for dependencies. In this way, you can assess the impact of the requested change on open transactions, such as sales orders, production orders, and on-hand inventory.
+When you review a request for change, you can search for dependencies. In this way, you can assess the impact of the requested change on open transactions, such as sales orders, production orders, and on-hand inventory. As you review the change requests, you can send notifications to the people responsible for fulfilling the various types of related orders.
+
+#### Review affected transactions, block selected transactions, and send notifications
+
+To review affected transactions, block selected transactions, or send related notifications:
 
 1. Go to **Engineering change management \> Common \> Engineering change management \> Engineering change requests**.
 1. Either open an existing change request, or select **New** on the Action Pane to create a new change request.
@@ -109,11 +113,29 @@ When you review a request for change, you can search for dependencies. In this w
 
 1. The **Business impact to open transactions** dialog box provides a set of tabs, each of which shows a list of impacted transactions of a particular type (**Sales orders**, **Purchase orders**, **Production orders**, **Inventory**, and so on). Each tab also shows a number that indicates the number of impacted transactions of its type. Select a tab to see the relevant list.
 
-1. If necessary, you can block a selected open transactions or notify the responsible user (sales responsible or purchase responsible) by using the buttons on the toolbar in the **Business impact to open transactions** dialog box. If you choose to notify a user, then the system adds a new task to that user's assigned-task list. <!-- KFM: This list is on the home page, and opens a task list for the user. -->
+1. After opening a tab, you'll see a list of matching transactions. To work with a transaction, select it in the list and then choose one of the following commands on the toolbar:
 
-1. You can also **Notify production** <!-- KFM: Is that a button label? Where is it? --> when the product being changed is on a production order . Unlike sales or purchase orders, production orders don't have a "production order responsible" user assigned to take charge of the order from end to end. For production, various supervisors or planners usually take ownership for a site or a part of the production (such as specific resources or resource groups). You'll be able to view the production orders that have engineering notifications in two ways:
-    - To view all production orders where an engineering notification has been sent, open the **Engineering notifications** page from the **All production orders** page. <!-- KFM: How do I open this page from there? -->
-    - To view the engineering notifications that apply to a specific supervisor, open the **Production floor management** workspace, where there is a tile called **Engineering notifications**. This tile takes into account the engineering notifications that apply to the supervisor (who has configured his or her own workspace according to their area of responsibility). Any production order with an engineering notification that has a route that includes a site or resource matching the supervisor's ownership will be included in the tile count. <!-- KFM: Are we looking at a table of notifications per supervisor? Or a table that shows *my* notifications as a supervisor? -->
+    - **View transaction** – Opens the selected transaction record.
+    - **Block order** – This command is only available on the **Sales orders** tab. Select this command to block the selected sales order.
+    - **Block line** – This command is only available on the **Purchase orders** tab. Select this command to block the selected purchase order line.
+    - **Notify responsible** – This command is only available on the **Sales orders** tab. Select this command to send a change notification to the user who is set as responsible for the selected  sales order.
+    - **Notify orderer** – This command is only available on the **Purchase orders** tab. Select this command to send a change notification to the user who is set as the orderer for the selected  purchase order.
+    - **Notify production** – This command is only available on the **Production orders** tab. Unlike sales or purchase orders, production orders don't have a "production order responsible" user assigned to take charge of the order from end to end. Instead, various supervisors or planners usually take ownership for a site or a part of the production (such as specific resources or resource groups). Therefore, all users who are responsible for any resource related to the selected  production order will receive the notification.
+    - **Notify preparer** – This command is only available on the **Purchase requisition** tab. Select this command to send a change notification to the user who is set as the preparer for the selected  purchase requisition.
+    - **Notify sales responsible** – This command is only available on the **Quotations** tab. Select this command to send a change notification to the user who is set as responsible for the selected quotation.
+    - **Scrap** – This command is only available on the **Inventory** tab. Select this command to scrap the selected  inventory. <!-- KFM: A few more details could be nice here. For example, does this create work? -->
+    - **View history** – Opens a history of actions taken on the selected transaction while using the **Business impact to open transactions** dialog box (such as sending notifications or blocking).
+    - **View all transactions** – <!-- KFM: Description needed -->
+
+#### Review and process change notifications for transactions
+
+When you send change notifications, the relevant users can read and process them as follows:
+
+- For transactions other than production orders, the responsible users will receive all engineering change notifications in their assigned-task list, which they can see by going to the **Home** page or to **Common \> Common \> Work items \> Work items assigned to me**. <!--KFM: This does not seem to be true. I think we only get a message in the "Action center" (bell icon). Isn't that right? -->
+- To view all production orders for which an engineering notification has been sent, go to **Production orders \> Production orders \> All production orders**. On the Action Pane, open the **Production order** tab and then, from the **Engineering change request** group, select **Engineering notifications** to open the **Engineering notifications** page.
+- For production orders, you can also review only those change notifications that apply to the production resources you manage. To do so, go to the **Production floor management** workspace, where you can select **Configure my workspace** on the Action Pane to filter the page so it only shows information about the production units, groups, and/or resources that you manage. In the **Summary** section, there is a tile called **Production orders with changed products**, which shows a count of notifications that match your filter setting. Select this tile to open the **Engineering notifications** page, which shows the full list of transactions that meet your filter.
+
+As you are reviewing production order notifications on the **Engineering notifications** page, you can follow links to related change or production orders by selecting column values or using the related commands on the Action Pane. Once you have evaluated the change and canceled or modified production orders as needed, you can mark a notification as resolved by selecting it and then selecting **Resolve** on the Action Pane, which will remove that notification from all users' views.
 
 ### Create a change order from a change request
 
