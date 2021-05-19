@@ -200,6 +200,8 @@ The following lists show the ER format configurations that are available for the
 - Sales invoice (ES)
 - Project invoice (ES)
 
+In additon to the ER format configurations published out-of-box for usage in Electronic Invoicing service, you can also create your own ER format configurations. However, the format configurations created for usage in electronic invoicing features does not support direct reference to Finance or Supply Chain Management tables or any of its metadata. Only references to the ER model mapping are supported.
+
 ### Actions
 
 The following table lists the available actions, and whether they are currently generally available or still in preview.
