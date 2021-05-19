@@ -45,22 +45,22 @@ There are three types of readiness checks:
 <a name="checks-engineering></a>
 
 ## How readiness checks are created for a new engineering product, variant, or version
-
+<!-- KFM: @Beatriz, we should review these details. I suspect some copy/paste errors may exist here. -->
 Readiness check policies can be applied on the released product level, the released variant level, and the engineering version level.
 
-When you create a new *engineering product*, the system determines whether a readiness check policy applies for it. If a readiness check policy applies, the following events occur:
+When you create a new *engineering product*, the system determines whether a [readiness check policy applies](#assign-policy) for it. If a readiness check policy applies, the following events occur:
 
 - Readiness checks are created for the product, according to the applicable policy.
-- The engineering version is set to inactive to block the product from being used. All the versions for the specific product that is involved are set to inactive.
+- The engineering version is set to inactive to block the product from being used. All engineering versions for the product are set to inactive.
 
 If a new *variant* is created for a product, the system checks whether a readiness check policy applies for it. (Readiness checks can be applied on released variant level and the engineering version level.) If a policy applies, the following events occur:
 
-- Readiness checks are created for the product.
+- Readiness checks are created for the product, according to the applicable policy.
 - The engineering version is set to inactive to block the product from being used.
 
 If a new engineering *version* is created for a product, the system checks whether a readiness check policy applies for it. (Readiness checks can be applied on the engineering version level.) If a policy applies, the following events occur:
 
-- Readiness checks are created for the product.
+- Readiness checks are created for the product, according to the applicable policy.
 - The engineering version is set to inactive to block the product from being used.
 
 > [!NOTE]
@@ -204,7 +204,7 @@ When you create a new non-engineering *released product*, the system determines 
 
 If a new *variant* is created for a product, the system checks whether readiness checks have been set up on the related shared product. If a readiness check has been set up, the following events occur:
 
-- Readiness checks are created for the released product.
+- Readiness checks are created for the released product, according to the applicable policy.
 - The released product is set to inactive to block it from being used.
 
 For engineering products, readiness checks are still created in the same way as they are when the *Product readiness checks* feature is disabled, as descried in [How readiness checks are created for a new engineering product, variant, or version](#checks-engineering).
