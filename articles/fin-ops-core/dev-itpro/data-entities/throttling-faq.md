@@ -105,7 +105,7 @@ Though these services are exempt, telemetry is collected on the performance and 
 
 The owners of the exempt services are prioritizing the implementation of 429 handlers by the end of the 2021. At that time, the services will no longer be exempt and throttling will apply. Notification will be provided ahead of these changes, and the documentation will be updated.
 
-Even with these services implementing their own handlers, it is still recommended to have client-side handling. Consider implementing the 429 handler with *retry-after* logic.
+Even if these services implement their own handlers, we still recommended that you have client-side handling. Consider implementing the 429 handler with *retry-after* logic.
 
 ## Is it recommended to use a dedicated integration account instead of just the generic admin user account?
 Yes, we strongly recommend this approach. As these service protection settings are set up for user-specific values, using the same user account for most or all of your integration will limit your ability to assign relative priorities across your integration needs. Further, if the same user account is used, all integration requests that originate from that user account will be subjected to throttling.
