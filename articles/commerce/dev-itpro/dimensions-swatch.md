@@ -122,24 +122,24 @@ The following example image highlights the **Size**, **Color**, and **Style** ca
 
 ![Example of image file categories during upload to site builder media library](../dev-itpro/media/swatch_sitebuilder.png)
 
-## Swatch display on e-commerce site pages
+## Enable swatch display on e-commerce site pages
 
-On e-commerce, swatches can displayed in experiences that require a dimension selection i.e. Product details page, Product cards on list pages, Quick view module, refiners on list pages. To enable the experience on e-commerce, you need to opt-in to the Dimension site settings. Refer to [Apply site settings for dimensions](../dimension_settings.md)
+For swatches to be displayed on e-commerce site pages such as PDPs and list pages that require a dimension selection , you must first configure dimension site settings in Commerce headquarters. For more information, see [Apply site settings for dimensions](../dimension-settings.md).
 
-In addition, the Search Results module property **Include product attributes** should be enabled on the Search Results module. If there are any enriched category pages, each of these pages should also be updated respectively. For more details, refer [Search results module](../search-result-module.md)
+In addition, the search results module property **Include product attributes in search results** should be enabled. If your site uses any customized category pages, search results modules used on those pages should also be updated to enable the **Include product attributes in search results** property. For more information, see [Search results module](../search-result-module.md).
 
-## Swatch display in POS and other channels
+## Display swatches in POS and other channels
 
-We don't have an out-of-box implementation to display swatches on POS and other channels. If required it can be achieved as an extension. The channel APIs return the hexcode and image url information needed to render the images.
+Commerce doesn't currently have an out-of-box implementation to support the display of swatches on POS and other channels. If required, swatch display functionality can be implemented as an extension that makes channel APIs return the hex code and image URL information needed to render the swatches.
 
 ## Additional resources
 
 [Search results module](../search-result-module.md)
 
-[Apply site settings for dimensions](../dimension_settings.md)
+[Apply site settings for dimensions](../dimension-settings.md)
 
 [Product dimensions](../../supply-chain/pim/product-dimensions.md)
 
-[Upload image](../dam-upload-images.md).
+[Upload image](../dam-upload-images.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
