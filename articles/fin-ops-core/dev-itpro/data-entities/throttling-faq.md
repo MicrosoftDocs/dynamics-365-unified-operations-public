@@ -95,9 +95,11 @@ The following Microsoft services are initially exempt, and throttling doesn't ap
 
    - Document Routing Agent (DRA)
    - Warehouse Mobile (WHSMobile)
-   - RetailAPI, Office Integration
+   - RetailAPI
+   - Office Integration
    - Data Import/Export Framework (DIXF)
-   - Data Integrator, Dual-write
+   - Data Integrator
+   - Dual-write
    - Finance and Operations apps - Power Platform Integration (Virtual Entities)
    - Finance and Operations apps Connector 
 
