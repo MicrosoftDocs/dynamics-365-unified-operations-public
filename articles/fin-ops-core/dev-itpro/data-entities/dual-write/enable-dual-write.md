@@ -3,7 +3,7 @@
 title: Enable dual-write for existing Finance and Operations apps
 description: Learn how to enable dual-write for existing instances of Finance and Operations apps, and also for a new or existing Dataverse environment.
 author: sabinn-msft
-ms.date: 03/20/2020
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
+[!Important]
+>This process is no longer recommended.  Instead, please setup Dual-write via Lifecycle Services as documented [here](lcs-setup.md).
 
 This set of topics provides step-by step instructions that explain how to enable dual-write for existing instances of Finance and Operations apps (Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management), and also for a new or existing Dataverse environment.
 

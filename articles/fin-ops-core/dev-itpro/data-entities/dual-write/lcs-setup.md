@@ -4,7 +4,7 @@
 title: Dual-write setup from Lifecycle Services
 description: This topic explains how to set up a dual-write connection from Microsoft Dynamics Lifecycle Services (LCS).
 author: RamaKrishnamoorthy
-ms.date: 01/06/2020
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,60 +33,34 @@ ms.search.validFrom: 2020-01-06
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This topic explains how to set up a dual-write connection between a new Finance and Operations environment and a new Dataverse environment from Microsoft Dynamics Lifecycle Services (LCS).
+This topic describes the steps to enable the Dual-write application directly from Lifecycle Services (LCS).  
 
 ## Prerequisites
 
-You must be an admin to set up a dual-write connection.
+You must complete the Power Platform Integration setup as defined below:
+* [Power Platform Integration - Enable during environment deployment](../../power-platform/overview.md#Enable-during-enviornment-deployment)
+* [Power Platform integration - Set up after environment deployment](../../power-platform/overview.md#Set-up-after-environment-deployment)
 
-+ You must have access to the tenant.
-+ You must be an admin in both Finance and Operations environments and Dataverse environments.
+## Setup Dual-write application for new Dataverse environments
 
-## Set up a dual-write connection
+Follow these steps to perform the setup from LCS environment details page:
 
-Follow these steps to set up the dual-write connection.
+1. Expand the Power Platform Integration section and the **Setup Dual-write application** button should be available to you. 
+<img src="media/powerplat_integration_step2.png" width="500px" /><br/>
 
-1. In LCS, go to your project.
-2. Select **Configure** to deploy a new environment.
-3. Select the version. 
-4. Select the topology. If only one topology is available, it's automatically selected.
-5. Complete the first steps in the **Deployment settings** wizard.
-6. On the **Dataverse** tab, follow one of these steps:
+Click this button, and agree to the terms and conditions then click **Configure**.
+2. A message indicating that the setup has been triggered should be presented, click **Ok** to continue.
+3. You may monitor the progress by refreshing the environment details page periodicially.  Setup typically takes 30 minutes or less.  
+4. Once finished, you will see if the setup was successful or if there was a failure and a related error message displayed.  
+5. If successful, a new button will appear titled **Link to Power Platform environment**.  
+<img src="powerplat_integration_step3.png" width="500px" /><br/>
 
-    - If a Dataverse environment is already provisioned for your tenant, you can select it.
+Use this button to create the link between Dataverse and the current environment's databases.  This typically takes less than 5 minutes.  
+6. If successful, a hyperlink will be made available for you to login to the Dual-write administration area in the Finance & Operations environment.  From there you can setup entity mappings and more.
 
-        1. Set the **Configure Dataverse** option to **Yes**.
-        2. In the **Available environments** column, select the environment to integrate with your Finance and Operations data. The list includes all environments where you have admin privileges.
-        3. Select the **Agree** check box to indicate that you agree to the terms and conditions.
+## Setup Dual-write application for existing Dataverse environments
 
-        ![Dataverse tab when a Dataverse environment is already provisioned for your tenant](../dual-write/media/lcs_setup_1.png)
-
-    - If your tenant doesn't already have a Dataverse environment, a new environment will be provisioned.
-
-        1. Set the **Configure Dataverse** option to **Yes**.
-        2. Enter a name for the Dataverse environment.
-        3. Select the region to deploy the environment in.
-        4. Select the default language and currency for the environment.
-
-            > [!NOTE]
-            > You can't change the language and currency later.
-
-        5. Select the **Agree** check box to indicate that you agree to the terms and conditions.
-
-        ![Dataverse tab when your tenant doesn't already have a Dataverse environment](../dual-write/media/lcs_setup_2.png)
-
-7. Complete the remaining steps in the **Deployment settings** wizard.
-8. After the environment has a status of **Deployed**, open the environment details page. The **Power Platform Integration** section shows the names of the Finance and Operations environment and the Dataverse environment that are linked.
-
-    ![Power Platform Integration section](../dual-write/media/lcs_setup_3.png)
-
-9. An admin of the Finance and Operations environment must sign in to LCS and select **Link to CDS for Apps** to complete the link. The environment details page shows the admin's contact information.
-
-    After the link is completed, the status is updated to **Environment linking successfully completed**.
-
-10. To open the **Data integration** workspace in the Finance and Operations environment and control the templates that are available, select **Link to CDS for Apps**.
-
-    ![Link to CDS for Apps button in the Power Platform Integration section](../dual-write/media/lcs_setup_4.png)
+Currently, this is only available via opening a support ticket.  Please provide your Finance & Operations environment ID and environment name from Lifecycle Services, and the Dataverse organization ID or Power Platform Environment ID from Power Platform Admin Center in a support ticket and request that to become the instance used for Power Platform Integration.
 
 > [!NOTE]
 > You can't unlink environments by using LCS. To unlink an environment, open the **Data integration** workspace in the Finance and Operations environment, and then select **Unlink**.
