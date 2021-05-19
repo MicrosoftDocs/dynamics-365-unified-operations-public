@@ -103,7 +103,7 @@ The following Microsoft services are initially exempt, and throttling doesn't ap
 
 Though these services are exempt, telemetry is collected on the performance and impact of these services on the overall system health. 
 
-The owners of the exempt services are prioritizing the implementation of 429 handlers by the end of the 2021. At that time, the services will no longer be exempt and throttling will apply. Notification will be provided ahead of these changes, and the documentation will be updated.
+The owners of the exempt services are prioritizing the implementation of 429 handlers by the end of 2021. At that time, the services will no longer be exempt and throttling will apply. Notification will be provided ahead of these changes, and the documentation will be updated.
 
 Even if these services implement their own handlers, we still recommended that you have client-side handling. Consider implementing the 429 handler with *retry-after* logic.
 
