@@ -4,7 +4,7 @@
 title: Electronic reporting (ER) destinations
 description: This topic provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: nselin
-ms.date: 02/24/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -215,23 +215,23 @@ To make the output unfolding option available in the current Finance instance, o
 
 ### Applicability
 
-The output unfolding option can be configured only for the format components of the **Folder** type. When you start configuring a **Folder** component, the **General** Fast tab becomes visible on the **Electronic reporting destination** page. 
+The output unfolding option can be configured only for the format components of the **Folder** type. When you start configuring a **Folder** component, the **General** FastTab becomes visible on the **Electronic reporting destination** page. 
 
 ### Use the output unfolding option
 
-You can set the desire option in the **Send folder as** field on the **General** Fast tab:
+On the **General** FastTab, in the **Send folder as** field, select an option.
 
-- Set this field to **ZIP archive** to output a generated file as a zipped one.
-- Set this field to **Separate files** to output every file of a generated zipped file as an individual file.
+   - Select **ZIP archive** to output a generated file as a zipped one.
+   - Select **Separate files** to output every file of a generated zipped file as an individual file.
 
-[![Configuring a destination for a Folder format component](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+   [![Configuring a destination for a Folder format component](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 
->[!NOTE]
-> Please, note that when you use the **Separate files** option, you collect a generated output in memory in a zipped state. So, the maximum [file size limit](er-compress-outbound-files.md) in this case is applied for a zipped output when the real file size might exceed this limit. So, this option is recommended when you expect that a generated output size is quite large.
+   >[!NOTE]
+   > When you select **Separate files**, you collect a generated output in memory in a zipped state. So, the maximum [file size limit](er-compress-outbound-files.md) in this case is applied for a zipped output when the real file size might exceed this limit. This option is recommended when you expect that a generated output size is quite large.
 
 ### Limitations
 
-Note, that when you set the **Send folder as** field to **Separate files** for a **Folder** component that contains other nested **Folder** components, this setting is not recursively applied for nested **Folder** components.
+When you set the **Send folder as** field to **Separate files** for a **Folder** component that contains other nested **Folder** components, this setting in't recursively applied for nested **Folder** components.
 
 ## Security considerations
 
