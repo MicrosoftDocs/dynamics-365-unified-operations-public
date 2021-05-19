@@ -37,13 +37,13 @@ The dashboard includes the following indicators:
 
 - One cost indicator that you can use to monitor consumption for licensing compliance purposes:
 
-    - Usage per month (exporting direction)
+    - Usage per month (export)
 
 - Three operational indicators that you can use to track usage of the Electronic Invoicing service for management purposes:
 
     - Usage by feature
     - Usage by environment
-    - Usage per month (importing direction)
+    - Usage per month (import)
 
 ## Measurement scope
 
@@ -56,11 +56,11 @@ The dashboard includes the following indicators:
     Counting is summarized by the tenant ID of your organization, regardless of the number of instances of Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management, or the number of legal entities where the Electronic Invoicing service is enabled.
 
 
-## Indicator: Usage per month (exporting direction)
+## Indicator: Usage per month (export)
 
 This indicator provides details about the electronic invoices that your organization issues during a defined period.
 
-### Counting criteria
+### Scope
 - The number of business documents that are submitted from Finance and Supply Chain Management to the Electronic Invoicing service, regardless of number of lines that those business documents contain.
 - The number of submitted business documents that are successfully processed by the Electronic Invoicing service. A document is considered successfully processed when the flow of actions that are defined in the feature setup is completed.
 
@@ -72,21 +72,21 @@ This indicator provides details about the electronic invoices that your organiza
 
 ### Calculation
 
-The calculation of the balance volume is calculated as follows:
+The calculation of the Balance is calculated as follows:
 
-Balance volume = Free volume + Purchased volume – Used volume
+Balance = Free + Purchased – Used
 
 Where:
 
-- Free volume:
+- Free:
   
-    The free monthly invoicing service that the customer receives. It includes a package of 100 business documents that can be submitted to the Electronic Invoicing service. Free volume isn't cumulative, and any remaining balance isn't rolled over to the next period.
+    A free volume of business documents the customer can submit per month. It includes a package of 100 business documents that can be submitted to the Electronic Invoicing service. Free volume isn't cumulative, and any remaining balance isn't rolled over to the next period.
   
-- Purchased volume:
+- Purchased:
   
     A package of 1,000 business documents that can be submitted to the Electronic Invoicing service. This package must be acquired for your organization on a monthly basis. Purchased volume isn't cumulative, and any remaining balance isn't rolled over to the next period.
   
-- Used volume: 
+- Used: 
 
     The count of business document submissions to the Electronic Invoicing service according to defined criteria.
    
@@ -99,37 +99,53 @@ Where:
 
 This indicator shows the usage of electronic invoicing features for issuance of electronic invoices during a defined period.
 
-- Counting criteria:
-
-    Electronic invoices issued by electronic invoicing features.
-
 - Calculation:
   
-    Quantity = Total counting of times each electronic invoicing feature service was used
+    Used = The count of how many times each electronic invoicing feature was used during submissions of business documents to the Electronic Invoicing service.
 
 ## Indicator: Usage by environment
 
 This indicator shows the usage of electronic invoicing service environments during a defined period.
 
-- Counting criteria:
-
-    Electronic invoices issued by electronic invoicing service environments.
-
 - Calculation:
     
-    Quantity = Total counting of times each electronic service environment was used
+    Used = The count of how many times each electronic invoicing service environment was used during submissions of business documents to the Electronic Invoicing service.
 
-## Indicator: Usage per month (importing direction)
+## Indicator: Usage per month (import)
 
-This indicator shows the volume of importation of electronic invoicing features by Electronic Invoicing service into Finance and Supply Chain Management during a defined period.
+This indicator shows the volume of importation of electronic invoices by Electronic Invoicing service into Finance and Supply Chain Management during a defined period.
 
-- Counting criteria:
+- Scope:
 
     Electronic invoices that are imported into Finance and Supply Chain Management, regardless of the number of lines that those electronic invoices contain.
 
 - Calculation:
 
-    Received = Total counting of imported electronic invoices.
+    Received = The count of imported electronic invoices into Finance and Supply Chain Management.
+
+## Functions
+### Purchase
+
+In the tab **Usage per month (export)**, click in **Purchase** to manually register the amount of acquired submissions.
+
+For a given date, click **New** and type the number of **Packages** acquired for in that date.
+
+The **Quantity** is calculated as:
+
+Quantity = Packages * 1.000
+
+The calculated **Quantity** reflects in the **Purchased** from the indicator **Usage per month (export)**.
+
+### Update
+
+In the top horizontal menu, click in **Update** to refresh calculation and the data displayed in the form and in the chart.
+
+### Reset history data
+
+In the top horizontal menu, click in **Reset history data** to refresh the database from where the indicators are calculated.
+
+
+
 
 > [!NOTE]
 > The **Usage management** dashboard doesn't show monetary amounts. Instead, it shows only the volume of counted submissions and imported documents.
