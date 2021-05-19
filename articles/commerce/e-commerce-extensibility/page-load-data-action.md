@@ -4,7 +4,7 @@
 title: Page load data actions
 description: This topic covers page load data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 04/27/2021
+ms.date: 05/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -36,7 +36,7 @@ Every page that is rendered, whether it's a product details page, a department p
 
 ## The createInput method
 
-When a page is loaded, a data action can be called by using the **createInput** method. The following example shows the sample code that is created in the TypeScript file for a data action by using the **yarn d365 add-data-action DATA\_ACTION\_NAME** command-line interface (CLI) command.
+When a page is loaded, a data action can be called by using the **createInput** method. The following example shows the sample code that is created in the TypeScript file for a data action by using the **yarn msdyn365 add-data-action DATA\_ACTION\_NAME** command-line interface (CLI) command.
 
 ```typescript
 const createInput = (args: Msdyn365.ICreateActionContext): Msdyn365.IActionInput => {
@@ -80,7 +80,7 @@ const createInput = (inputData: ICreateActionContext<IGeneric<IAny>>): IActionIn
 
 Before a module can call a data action on page load, the data action must be registered in the module definition file.
 
-The following example shows a module that uses the data action earlier in this topic to get product information so that it can be shown inside the module.
+The following example shows a module that uses a data action named "get-product" to get product information so that it can be shown inside the module.
 
 ```json
 {
@@ -91,7 +91,7 @@ The following example shows a module that uses the data action earlier in this t
     "categories": ["Product"],
     "dataActions": {
         "product": {
-            "path": "../../actions/get-product",
+            "path": "../../actions/get-product.action",
             "runOn": "server"
         }
     },
@@ -126,7 +126,7 @@ Dynamics 365 Commerce renders pages server side and [hydrates](https://reactjs.o
     "categories": ["Product"],
     "dataActions": {
         "product": {
-            "path": "../../actions/get-product",
+            "path": "../../actions/get-product.action",
             "runOn": "client"
         }
     },
