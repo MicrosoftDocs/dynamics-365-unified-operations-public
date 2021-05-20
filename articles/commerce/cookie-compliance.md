@@ -57,6 +57,7 @@ The following table shows the current reference list of cookies placed by Dynami
 | x-ms-cpim-trans                             | Used for tracking transactions (the number of open tabs authenticating against a business-to-consumer (B2C) site), including the current transaction. |
 | \_msdyn365___muid_                            | Used if Experimentation is activated for the environment; utilized as a userId for experimentation purposes. |
 | \_msdyn365___exp_                             | Used if Experimentation is activated for the environment; used to measure performance load balancing.         |
+| d365mkt                                       | Used if Geo Detection is enabled in Commerce site builder with **Site Settings > General > Enable location based store detection**      |
 
 
 
