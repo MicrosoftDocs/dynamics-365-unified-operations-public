@@ -42,7 +42,7 @@ There are three types of readiness checks:
 - **Manual check** – A user verifies whether the record is valid. For example, a readiness check might require validation of the default order settings. In some cases, such as when the product is still being designed and therefore won't be placed in stock, no default order settings are required. However, default order settings might be required for another product of the same type, because the product can be held in stock. The user is responsible for knowing how to correctly decision whether a readiness check is required.
 - **Checklist** – The user answers a series of questions from a checklist, and the system determines whether the answers meet expectations. The checklist can have any subject. For example, it can be used to determine whether marketing materials or product documentation is completed.
 
-<a name="checks-engineering></a>
+<a name="checks-engineering"></a>
 
 ## How readiness checks are created for a new engineering product, variant, or version
 <!-- KFM: @Beatriz, we should review these details. I suspect some copy/paste errors may exist here. -->
@@ -179,7 +179,7 @@ To assign a readiness policy to an engineering category:
 1. Open or create the engineering category you want to assign a readiness policy for.
 1. On the **Product readiness policy** FastTab, set **Product readiness policy** to the name of the policy that should apply to this engineering category.
 
-<a name="standard-products></a>
+<a name="standard-products"></a>
 
 ## Readiness checks on standard products
 
