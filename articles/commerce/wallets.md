@@ -37,11 +37,11 @@ This topic provides an overview of wallet payment support for Microsoft Dynamics
 
 | Term | Description |
 |---|---|
-| Wallet | A payment type that does not include traditional payment characteristics, such as the Bank Identification Number (BIN) range and expiration date, which are used to differentiate among credit and debit card types. |
+| Wallet | A payment type that doesn't include traditional payment characteristics, such as the Bank Identification Number (BIN) range and expiration date, that are used to differentiate credit and debit card types. |
 | Processor payment method | A property payment card property in the payments SDK. When this property is added to supported payment methods within a connector, those payment methods can be mapped to cards or wallets configured in Commerce headquarters to avoid the traditional BIN range mapping. 
-| PSP reference | The payment service provider (PSP) reference is the key used by Adyen to identify payment transactions. This feature enables display of the PSP reference in the retail store transactions and Call Center authorization details forms.
+| Payment service provider (PSP) reference | The key that Adyen uses to identify payment transactions. This feature enables the PSP reference to be shown on the retail store transactions and call center authorization details pages.
 
-Unlike traditional credit and debit cards, wallet payment authorization responses do not include BIN ranges. Traditionally, BIN ranges have been used to match payment authorization responses to predefined card types with BIN ranges. The wallet payment support feature adds support for processor payment methods and mapping of those variants to card types set up in Commerce headquarters.
+Unlike traditional credit and debit cards, wallet payment authorization responses don't include BIN ranges. Traditionally, BIN ranges have been used to match payment authorization responses to predefined card types that have BIN ranges. The wallet payment support feature adds support for processor payment methods and mapping of those variants to card types that are set up in Commerce headquarters.
 
 **Processor payment method** is a property for the payments SDK that can be applied to payment methods supported for a particular payment connector. When an authorization response is received that includes the processor payment method, a lookup is performed to determine if that processor payment method has been mapped to a card or wallet type. If a mapping is found, that payment is mapped to the matching card or wallet type. If a match can't be found, a BIN lookup is performed following the traditional BIN range settings for Commerce. 
 
@@ -51,15 +51,15 @@ Processor payment method mappings are also useful for traditional debit and cred
 
 ## Enable wallet payment support
 
-To enable wallet payment support in Commerce headquarters, go to **Workspaces \> Feature management** and then search for the **Enhanced wallet support and payment improvements** feature. Select the feature, and then select **Enable**. After enabling the feature, run the **1110** distribution schedule to enable the new feature in all channels.
+To enable wallet payment support in Commerce headquarters, go to **Workspaces \> Feature management**, and then search for the **Enhanced wallet support and payment improvements** feature. Select the feature, and then select **Enable**. After you enable the feature, run the **1110** distribution schedule to make it available in all channels.
 
-## Other payment enhancements enabled by the wallet payment support feature
+## Other payment enhancements that are enabled by the wallet payment support feature
 
-In addition to enabling wallet payment support, the wallet payment support feature enhances payment details available in Commerce headquarters for payments created using the Dynamics 365 Payment Connector for Adyen. 
+In addition to enabling wallet payment support, the wallet payment support feature enhances the payment details that are available in Commerce headquarters for payments that are created by using the Dynamics 365 Payment Connector for Adyen. 
 
-In the call center, the wallet payment support feature adds two fields to the default view for payment authorization details. First, the existing **Processor reference** column is populated with the PSP reference value provided by Adyen, which is the key used by Adyen to look up payments. Second, the existing **Approval code** column is populated with the approval code value provided in the authorization from Adyen. 
+In the call center, the wallet payment support feature adds two fields to the default view for payment authorization details. First, the existing **Processor reference** column is filled with the PSP reference that is provided by Adyen. The PSP reference is the key that Adyen uses to look up payments. Second, the existing **Approval code** column is filled with the approval code value that is provided in the authorization from Adyen. 
 
-For retail store transactions, additional enhancements have been added to the payment transactions view for payments created using the Adyen connector. The approval code from the processor will be displayed in the **Approval code** field, the processor payment method will be displayed in the **Processor payment** field, and the PSP reference from Adyen will be displayed in the **Processor reference** field. These are not discrete fields in the database and will only be displayed in the user interface when viewing a specific payment. For the fields to be displayed, the point of sale (POS) client must be updated with Commerce version 10.0.20 or later and the **Enabled** feature status for **Enhanced wallet support and payment improvements** must have been synchronized to the channel. 
+For retail store transactions, additional enhancements have been added to the payment transactions view for payments that are created by using the Adyen connector. The **Approval code** field shows the approval code from the processor, the **Processor payment** field shows the processor payment method, and the **Processor reference** field shows the PSP reference from Adyen. These three fields aren't discrete fields in the database. They will be shown in the user interface only when a specific payment is viewed. Before the fields can be shown, the point of sale (POS) client must be updated with Commerce version 10.0.20 or later, and the **Enabled** status for the **Enhanced wallet support and payment improvements** feature must be synchronized to the channel. 
 
 ## Wallet payment method support and processor payment methods
 
@@ -84,7 +84,7 @@ To map a processor payment method to a card or wallet, select the card or wallet
 ![Mapped processor payment method](media/Payments/Mapped.png)
 
 > [!NOTE]
-> The **Processor payment method mapping** capability adds a new table that must be synchonized to the channel database. To add this data to the Commerce scheduler, you need to initialize the Commerce scheduler. For details, please refer to documentation related to [updating commerce scheduler configurations](./dev-itpro/cdx-best-practices.md#updating-configurations). 
+> The **Processor payment method mapping** capability adds a new table that must be synchronized to the channel database. To add this data to the Commerce scheduler, you need to initialize the Commerce scheduler. For details, please refer to documentation related to [updating commerce scheduler configurations](./dev-itpro/cdx-best-practices.md#updating-configurations). 
 
 ### When not to use processor payment method mapping
 
