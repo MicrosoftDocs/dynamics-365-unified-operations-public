@@ -4,7 +4,7 @@
 title: Customize tax configurations for master data lookup
 description: This topic explains how to customize tax configurations to extend master data lookup functionality.
 author: kai-cloud
-ms.date: 04/21/2021
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,9 +24,12 @@ ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ---
+
 # Customize tax configurations for master data lookup
 
-This topic explains how to customize tax configurations to extend master data lookup functionality.
+[!include [banner](../includes/banner.md)]
+
+Complete the steps in this topic to customize tax configurations to extend master data lookup functionality.
 
 **1 Set entity you want to use by following the Enabling virtual entities] step in**  https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/admin-reference
 
@@ -126,3 +129,5 @@ This topic explains how to customize tax configurations to extend master data lo
 [![pic13](./media/pic13.png)](./media/pic13.png)
 
 - Complete the configuration.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
