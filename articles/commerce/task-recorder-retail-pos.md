@@ -131,7 +131,7 @@ You can use the **Texts** and **Notes** fields to add text that should be associ
 
 #### Text
 
-Text that you enter in the **Text** field appears *above* the step text in the Task guide. This location is appropriate for text that you want the user to read before he or she completes the step.
+Text that you enter in the **Text** field appears *above* the step text in the Task guide. This location is appropriate for text that you want the user to read before the user completes the step.
 
 #### Notes
 
@@ -139,7 +139,7 @@ Text that you enter in the **Notes** field appears *below* the step text in the 
 
 ## Help in Retail Modern POS and Cloud POS
 
-To show your own custom task recordings in the Help pane of Retail Modern POS and Cloud POS so that they can be viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connecting the Help system](../fin-and-ops/get-started/help-connect.md). Retail Modern POS and Cloud POS Help searches LCS in real time. It searches across all the BPM libraries that are selected in the Commerce Help system parameters and shows the relevant results. To access the **Help** menu, click the **Help** button (question mark) at the top of the screen and then in the search box type your process name and hit the search button.
+To show your own custom task recordings in the Help pane of Retail Modern POS and Cloud POS so that they can be viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connecting the Help system](../fin-ops-core/fin-ops/get-started/help-connect.md). Retail Modern POS and Cloud POS Help searches LCS in real time. It searches across all the BPM libraries that are selected in the Commerce Help system parameters and shows the relevant results. To access the **Help** menu, click the **Help** button (question mark) at the top of the screen and then in the search box type your process name and hit the search button.
 
 [![Help button](./media/help.jpg)](./media/help.jpg)
 

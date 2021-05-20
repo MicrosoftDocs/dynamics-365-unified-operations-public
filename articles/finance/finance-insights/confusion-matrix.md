@@ -67,8 +67,8 @@ To begin to address this question, consider the accuracy of a naïve guess. For 
 
 Another aspect is worth noting. Consider a scenario where a medical test is used to detect a disease in a patient. This problem is a binary classification problem where a positive result indicates that the patient has the disease. In this scenario, you must think about the impact of the following errors:
 
-- False positives, where the test says that a patient has the disease, but she doesn't really have it
-- False negatives, where the test says that a patient doesn't have the disease, but he really does have it
+- False positives, where the test says that a patient has the disease, but the patient doesn't really have it.
+- False negatives, where the test says that a patient doesn't have the disease, but the patient really does have it.
 
 Obviously, both types of error are undesirable, but which is worse? Again, it depends. In the case of a life-threatening disease that requires fast treatment, minimization of false negatives (hopefully followed by additional tests) takes priority. In other, less critical situations, the model creators might minimize false positives instead. At any rate, a reasonable conclusion is that to effectively determine a model's quality, you must have more information than an accuracy metric provides.
 

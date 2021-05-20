@@ -4,11 +4,9 @@
 title: Message processor messages
 description: This topic provides information about the Message processor messages feature for scale unit workloads.
 author: perlynne
-manager: tfehr
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

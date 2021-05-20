@@ -7,7 +7,6 @@ author: marcelbf
 ms.date: 03/22/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-human-resources
 ms.technology:
 
 # optional metadata
@@ -16,7 +15,6 @@ ms.search.form:
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm:
 ms.custom:
