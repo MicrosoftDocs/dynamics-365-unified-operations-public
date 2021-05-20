@@ -55,6 +55,7 @@ The following features are generally available with this release.
 | ## Use SimpleListDetails for BenefitLifeEventOptions form - (580584) | | |
 | ## Life Event processing management of designees to work like enrollment processing - (574622) | | |
 | ## New Benefit Plan Life Event processing - investigate / fix as needed. - (574631) | | |
+| Platform update 10.0.18 (42) | -- | [Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18) |
 
 ### Bug fixes
 
@@ -70,9 +71,7 @@ The following bug fixes are included in this release.
 | ## Primary Benefeciary not marked as 100% if default designee is not selected. - (558383) | | |
 | ## [EHR] Benefits Workspace:  Re-order TOC tabs to match process - (580963) | | |
 | ## Department Headcount analytics not taking into consideration movement of employees between department  - (509404) | | |
-| ## Remove unused modules with no code (Personnel, PersonnelTests, PersonnelCoreTests) - (580852) | | |
-| ## Telemetry logs incorrect identifier. - (580928) | | |
-| ## Freezing columns in grids feature should not yet be available - (579420) | | |
+| 579420 | Freezing columns in grids feature should not yet be available | The **Freezing columns in grids** feature, which is not available in Human Resources, was listed as available in Feature Management. The feature has been removed from the list of features to enable. |
 | ## Worker action transfer, New Compensation fields have an opaque validation deadlock scenario - (511365) | | |
 | ## BenefitEssTileSetup does not respect the SortOrder field - (523506) | | |
 | ##  Mass enrollments are broken as a result of refactored method that tries to reinsert the same record - (583776) | | |
@@ -92,7 +91,6 @@ The following new features are in preview. For more information about turning fe
 
 | Feature | Details |
 | --- | --- |
-| Platform update 10.0.18 (42) | Platform update 10.0.18 is scheduled to begin rolling out with the service release on May 17, 2021. For more information, see [Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
 | Custom field support in Benefits management eligibility rules  | [Custom field support for eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
