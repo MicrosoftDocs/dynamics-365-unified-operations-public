@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-As of July 2019, Finance and Operations apps, Power Apps, and Power Automate are available in France’s datacenters. This new deployment option serves customers in regulated industry and commercial organizations that do business with entities in France that require local data residency. Power BI has been available since March 2019.
+As of July 2019, Finance and Operations apps, Power Apps, and Power Automate are available in France’s datacenters. This new deployment option serves customers in regulated industry and commercial organizations that do business with entities in France that require local data residency. 
 
 The deployment of the Dynamics 365 services in France are built upon the foundational principles of security, privacy, compliance, transparency, and reliability. This provides French organizations a complete cloud infrastructure and platform, as well as familiar productivity and business application tools. All of this means that customer data stays resident within France.
 
