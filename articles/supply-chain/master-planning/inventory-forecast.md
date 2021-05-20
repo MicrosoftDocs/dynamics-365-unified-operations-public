@@ -30,7 +30,7 @@ For each forecast line, you can select the forecast model to use and then specif
 
 Use this procedure to create new forecast lines for products. You can refer to the information in the table below on other ways to access these pages (instead of the first two steps).
 
-1. Depending on which type of entity you want to create a forecast for, and which type of forecast you want to create, open a supply or demand forecast lines page as described in the following table.
+1. Depending on which type of entity you want to create a forecast for, and which type of forecast you want to create, open a supply, demand, or inventory forecast page as described in the following table.
     | **Entity** | **Instructions** |
     | --- | --- |
     | Released products | <ol><li>Go to  **Product information management > Products > Released products**.</li><li>Select the product you want to create a forecast for.</li><li>On the Action Pane, open the **Plan** tab and, from the **Forecast** group, select **Demand forecast**,  **Supply forecast**, or **Inventory forecast** depending on which type of forecast you want to work with.</li></ol> |
