@@ -7,7 +7,6 @@ author: sericks007
 ms.date: 03/10/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -42,6 +41,4 @@ The following topics provide information about removed or deprecated features in
 ## Deprecations in the Microsoft Power Platform
 The following topic provides information about deprecations in the Microsoft Power Platform:
 
-- [Important changes (deprecations) coming in Power Apps, Power Automate, and customer engagement apps](https://docs.microsoft.com/power-platform/important-changes-coming)
-
-
+- [Important changes (deprecations) coming in Power Apps, Power Automate, and customer engagement apps](/power-platform/important-changes-coming)

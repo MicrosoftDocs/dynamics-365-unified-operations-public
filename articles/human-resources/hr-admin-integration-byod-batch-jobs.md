@@ -14,7 +14,6 @@ ms.technology:
 # ms.search.form: BatchJob, BatchJobEnhanced
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -93,6 +92,12 @@ The BYOD feature has the following limitations:
 **Issue:** When a full push occurs for an entity, you see a large set of records in BYOD when you use a **select** statement. However, when you do an incremental push, you see only a few records in BYOD. It seems as though the incremental push deleted all the records and added only the changed records in BYOD.
 
 **Solution:** The SQL change tracking tables might not be in the expected state. In cases of this type, we recommend that you turn off change tracking for the entity and then turn it back on. For more information, see [Enable change tracking for entities](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+
+### Staging tables aren't clearing
+
+**Issue:** When using staging for the project, the staging tables don't clear out correctly. The data in the tables then continues to grow, causing performance issues.
+
+**Solution:** Seven days of history is maintained in the staging tables. Historical data older than seven days is automatically cleared from the staging tables by the **Import export staging cleanup** batch job. If this job gets stuck, the tables won't clear out correctly. Restarting this batch job will continue the process to automatically clear out the staging tables.
 
 ## See also
 

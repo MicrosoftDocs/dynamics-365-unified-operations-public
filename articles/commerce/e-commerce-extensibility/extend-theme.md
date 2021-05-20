@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.11
 
 This topic describes how to extend a theme from a base theme for a Microsoft Dynamics 365 Commerce online site.
 
-## Overview
-
 By using the Dynamics 365 Commerce online store extensibility software development kit (SDK), you can create either themes that are standalone themes or themes that are extended from a base theme. For example, you can have a base theme that defines Cascading Style Sheets (CSS) styles for modules, module view extensions, and module definition extensions. You can then have a different theme, or even a set of themes, that adds changes on top of the base theme. This capability is helpful when a single Dynamics 365 environment has multiple online sites that use different theme branding.
 
 ## Specify a base theme

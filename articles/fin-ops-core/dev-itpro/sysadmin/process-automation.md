@@ -4,7 +4,7 @@
 title: Process automation
 description: This topic provides details about how process automation allows simple scheduling of processes that will be run by the batch server.
 author: RyanCCarlson2
-ms.date: 08/12/2020
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -34,7 +34,7 @@ Process automation allows simple scheduling of processes that will be run by the
 
 The central administration page for all process automations is found in the System Administration module under the **Setup** menu. This page will list all automated processes (series) that are set up in the system. It will also allow you to add new process automations directly from this page. After a series is set up, you can manage each series from this list. You can choose to edit the entire series, delete it, view all occurrences in a list view, or disable the series if you would like to pause the scheduled work for a while. 
 
-Any processes that are disabled in feature management won't show when the feature is disabled. Additionally, the process automation scheduling engine won't schedule any occurrences or background processes for a disabled feature. Re-enabling the feature will cause any scheduled occurrences or background processes in the past to run immediately.
+Any processes that are disabled in feature management won't show when the feature is disabled. Additionally, the process automation scheduling engine won't schedule any occurrences or background processes for a disabled feature. Re-enabling the feature will cause any scheduled occurrences or background processes in the past to run immediately. The process automation scheduling engine relies on the system batch job, **Process automation polling system job** to run. The job shouldn't be altered or tampered with at any time. 
 
 ## Calendar view
 

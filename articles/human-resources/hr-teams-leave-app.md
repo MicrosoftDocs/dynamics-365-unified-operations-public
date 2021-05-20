@@ -15,7 +15,6 @@ ms.search.form: LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -212,6 +211,14 @@ If you receive an error when you're trying to approve leave requests in the Team
 1. Verify that the account you're using to sign into Microsoft Teams is the same one you use for accessing Dynamics 365 Human Resources.
 
 2. Verify that you're a valid approver for the request by checking the workflow settings for leave approval. For more information about leave request workflows, see [Create a leave request workflow](hr-leave-and-absence-workflow.md).
+
+### Leave approvers don't receive Teams chat messages to approve leave requests
+
+1. Ensure notifications are enabled for the environment and the user. For more information, see [Enable notifications for the Human Resources app in Teams](hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams) and [Turn Teams notifications on or off for individual users](hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users).
+
+2. Ensure users are signed into the **Chats** tab with the same credentials they use for approving leave requests. Use the messages "sign out" and then "sign in" to sign in with the correct credentials.
+
+3. If the issue persists, check the status of the Business Events system batch job as a system administrator. If it's in a waiting or executing stage, check back in a few minutes. If the status remains unchanged, log a support ticket so our team can help resolve the issue.
 
 ## Known accessibility issues
 

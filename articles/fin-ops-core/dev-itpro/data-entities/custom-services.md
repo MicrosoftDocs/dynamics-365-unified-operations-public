@@ -57,8 +57,8 @@ Code examples for consuming custom services using SOAP are available in the [Mic
 
 For more information about custom services, see:
 
-- [Using Custom Services \[AX 2012\] (TechNet)](https://technet.microsoft.com/library/hh509052.aspx)
-- [Walkthrough: Exposing an X++ Class as a Data Contract (TechNet)](https://technet.microsoft.com/library/gg844225.aspx)
+- [Using Custom Services \[AX 2012\] (TechNet)](/dynamicsax-2012/appuser-itpro/using-custom-services)
+- [Walkthrough: Exposing an X++ Class as a Data Contract (TechNet)](/dynamicsax-2012/appuser-itpro/walkthrough-exposing-an-x-class-as-a-data-contract)
 
 ### JSON-based custom service
 

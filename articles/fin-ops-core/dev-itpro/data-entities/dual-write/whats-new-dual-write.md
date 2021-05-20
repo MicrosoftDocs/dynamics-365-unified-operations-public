@@ -34,11 +34,23 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and Finance and Operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
-Check out the latest information about dual-write features and changes in the [release plans](https://go.microsoft.com/fwlink/?linkid=2010158).
+Check out the latest information about dual-write features and changes in the [release plans](/dynamics365/release-plans/).
 
-+ [Data in Dataverse – Phase 1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
-+ [Data in Dataverse – phase 1 & 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
-+ [Finance and Operations data in Dataverse – Phase 3](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
++ [Data in Dataverse – Phase 1](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
++ [Data in Dataverse – phase 1 & 2](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
++ [Finance and Operations data in Dataverse – Phase 3](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
+
+## April 2021 release
+
+The April 2021 hotfix release of the [Dual-write application orchestration solution version  2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
+
+This release contains the features and bug fixes listed in the following table.
+
+| Feature | Description |Status |
+|------|---------|-------|
+| Bug fix| The **Notes** table now understands the **Null** value. | General availability |
+| Bug fix| Dual write orchestration package 2.2.2.50 does not replace the existing key (**msdyn_locationid** field) on the **Address** table with the new key which is a combination of the **msdyn_locationid** and **parentid** fields. Instead it shows both keys. This has been fixed with the new version 2.2.2.60. This new version is applicable only when you are using the [party and global address book](party-gab.md) solution.| General availability |
+
 
 ## March 2021 release
 
@@ -48,7 +60,7 @@ This release contains the features and bug fixes listed in the following table.
 
 | Feature | Description |Status |
 |------|---------|-------|
-| [Party and Global Address Book](party-gab.md) | Brings schema parity with Finance and Operations apps, and gives you the ability to solve complex business problems on Dataverse related to customers, vendors, and contact persons. To use this feature, install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).<br>Supported Finance and Operations versions are 10.0.605.30025 (platform udpate 14), 10.0.644.20031 (platform update15), 10.0.689.10027 (platform update 16), and 10.0.761.1 (platform update 17) | General availability |
+| [Party and Global Address Book](party-gab.md) | Brings schema parity with Finance and Operations apps, and gives you the ability to solve complex business problems on Dataverse related to customers, vendors, and contact persons. To use this feature, install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).<br>Supported Finance and Operations versions are 10.0.605.30025 (platform update 14), 10.0.644.20031 (platform update15), 10.0.689.10027 (platform update 16), and 10.0.761.1 (platform update 17) | General availability |
 | Bug fix | **Product category name** is part of the natural/integration key of the **Product Categories** table. Updating the name using a Finance and Operations app cause an insert in Dataverse instead of an update. Please use the new map for `msdyn_productcategories - Product categories` with version 1.0.0.1. The supported Finance and Operations version is 10.0.778.0 (platform update 42) | General availability |
 | Bug fix| Localization bug fixes and updates. | General availability |
 | Bug fix| A note without a description throws error. | General availability |

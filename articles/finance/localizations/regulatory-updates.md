@@ -53,6 +53,7 @@ For the latest regulatory update plans, refer to the following table.
 |      Brazil         |   October 2020      | 10.0.16      |   DRCST declaration SC - SEF 262/2020   |
 |      Brazil         |   October 2020      | 10.0.16      |   SPED Fiscal ICMS / IPI record C176   |
 |      Brazil         |   December 2020      | 10.0.17, 10.0.16HF, 10.0.15HF      |   NF-e NT2020.006  - Identification of the digital platform intermediary (Layout and validation rules updates)   |
+|      Brazil         |   March 2021         | 10.0.17, 10.0.18, 10.0.19         |    SPED REINF layout 1.5.1
 |      Europe        |   January 2021       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit - Northern Ireland Protocol impact to Intra-community trade reporting in EU countries  |
 |      Germany        |   January 2021       | 10.0.16HF      |   ELSTER UstVA VAT advance notification format was extended with two new boxes 37,50 for unrecoverable debts writing off  |
 |      Germany        |   January 2021       | 10.0.17      |   Changes in ELSTER VAT advance notification XML structure (UstVA)  |

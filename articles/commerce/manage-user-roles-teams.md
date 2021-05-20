@@ -3,11 +3,9 @@
 title: Manage user roles in Microsoft Teams
 description: This topic describes how to manage Microsoft Dynamics 365 Commerce user roles in Microsoft Teams.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 # optional metadata
 # ms.search.form: 
@@ -28,7 +26,6 @@ ms.dyn365.ops.version: 10.0.18
 # Manage user roles in Microsoft Teams
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to manage Microsoft Dynamics 365 Commerce user roles in Microsoft Teams.
 
@@ -38,7 +35,7 @@ The following illustration shows an example of a list of team members and their 
 
 ![Team members and user roles in the Microsoft Teams admin center](media/d365-commerce-teams-integration-user-roles.png)
 
-For more information, see [Assign team owners and members in Microsoft Teams](https://docs.microsoft.com/microsoftteams/assign-roles-permissions).
+For more information, see [Assign team owners and members in Microsoft Teams](/microsoftteams/assign-roles-permissions).
 
 ## Additional resources
 

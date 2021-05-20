@@ -67,6 +67,8 @@ If you're using the BYOD feature for integration with a business intelligence (B
 
 > [!NOTE]
 > Your BYOD database must be accessible to Finance and Operations apps. If you encounter issues where you are unable access to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately.
+> 
+> The use of a performance tier for the Azure SQL database is recommended. For more information about tiers, see [SQL Azure tiers](https://docs.microsoft.com/azure/azure-sql/database/service-tiers-dtu).
 
 ## Configuring the entity export option
 
@@ -159,7 +161,7 @@ You can use the **Export** page to export data into many target data formats, su
 
 You can create a data project that has multiple entities. You can schedule this data project to run by using the batch framework. You also schedule the data export job to run on a periodic basis by selecting the **Export in batch** option.
 
-The same job can also be used to export data from all companies. In prior to Platform update 27, this feature can be enabled by enabling the flight DMFEnableAllCompanyExport as explained in [Data management overview](../data-entities/data-entities-data-packages.md). Starting in Platform update 27, this feature can be enabled in data management framework parameters. After the feature is enabled, a new option will appear when adding an entity to a data project. This option can be enabled to export data from all companies for the specific entity. 
+The same job can also be used to export data from all companies. In prior to Platform update 27, this feature can be enabled by enabling the flight DMFEnableAllCompanyExport as explained in [Data management overview](../data-entities/data-entities-data-packages.md). Starting in Platform update 27, this feature can be enabled in data management framework parameters. After the feature is enabled, a new option will appear when adding an entity to a data project. This option can be enabled to export data from all companies for the specific entity. The job will export data from each of company in a sequential manner. This behavior was changed from allowing parallel export of data from different companies due to performance and other challenges, which made the solution less reliable.
 
 > [!NOTE]
 > Adding multiple entities to an export project for BYOD must be done carefully to ensure the overall reliability of the BYOD export is not compromised. Different parameters must be taken into consideration when deciding the number of entities that are added to the same project. Some of these parameters should be the degree of complexity of the entities, data volume per entity that is expected, and the overall time for export to complete at the job level. Adding hundreds of entities must be avoided, therefore creating multiple jobs with smaller number of entities is recommended.

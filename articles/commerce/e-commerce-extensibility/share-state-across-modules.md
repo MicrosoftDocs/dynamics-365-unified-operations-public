@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to share state across multiple modules by using data actions in Dynamics 365 Commerce.
 
-## Overview
-
 Data actions perform the important role of state management in situations where you must share state across multiple modules on the same page. In general, state is shared within the application state of the running Node application.
 
 ## Examples
