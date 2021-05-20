@@ -292,14 +292,14 @@ The following table shows which warehouse operations and exception handing featu
 | Change work pool on work                           | Yes | Yes                          |
 | Cancel work                                        | Yes | Yes                          |
 
-
 ### Production
 
-Warehouse management production scenarios aren't currently supported on scale unit workloads, as indicated in the following table.
+The following table summarizes which warehouse management production scenarios are (and aren't) currently supported on scale unit workloads.
 
 | Process | Hub | WES workload on a scale unit |
 |---------|-----|------------------------------|
-| <p>All warehouse management processes that are related to production. Here are some examples:</p><li>Release to warehouse</li><li>Production wave processing</li><li>Raw material picking</li><li>RAF and finished goods put away</li><li>Co-product and by-product put away</li><li>Kanban put away</li><li>Kanban picking</li><li>Start production order</li><li>Production scrap</li><li>Production last pallet</li><li>Register material consumption</li><li>Empty kanban</li></ul> | Yes | No |
+| Report as finished and finished goods put away | Yes | Yes |
+| <p>All other warehouse management processes that are related to production, including:</p><li>Release to warehouse</li><li>Production wave processing</li><li>Raw material picking</li><li>Co-product and by-product put away</li><li>Kanban put away</li><li>Kanban picking</li><li>Start production order</li><li>Production scrap</li><li>Production last pallet</li><li>Register material consumption</li><li>Empty kanban</li></ul> | Yes | No |
 
 ## Maintaining scale units for WES
 
