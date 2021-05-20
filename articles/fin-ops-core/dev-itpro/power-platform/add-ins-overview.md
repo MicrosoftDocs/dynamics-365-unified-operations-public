@@ -30,23 +30,22 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include[banner](../includes/banner.md)]
 
-Add-ins provide a way to extend the functionality of Finance and Operations apps. All add-ins are installed and managed via Lifecycle Services on the environment details page for Sandbox and Production type environments.  For more information about the architecture and how to unlock this feature visit the [Power Platform Integration - Overview](overview.md) article.
+Add-ins provide a way to extend the functionality of Finance and Operations apps. All add-ins are installed and managed via Lifecycle Services on the environment details page for sandbox and production environments.  For more information about the architecture and how to unlock this feature, visit the [Microsoft Power Platform integration with Finance and Operations apps](overview.md) article.
 
 ## What add-ins are available?
 New add-ins are made available on a regular basis.  Below find the current available add-ins list and further reading for each offering.
 
-
 ### Planning Optimization
-The Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management enables master planning calculation to occur outside Dynamics 365 Supply Chain Management and the related SQL database. The benefits that are associated with the Planning Optimization functionality include improved performance and minimal impact on SQL database during master planning runs. Quick planning runs can be done even during office hours, so that planners can immediately react to demand or parameter changes.  To learn more, visit [Planning Optimization overview](https://docs.microsoft.com/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-overview).
+The Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management enables master planning calculation to occur outside Dynamics 365 Supply Chain Management and the related SQL database. The benefits that are associated with the Planning Optimization functionality include improved performance and minimal impact on SQL database during master planning runs. Quick planning runs can be done even during office hours, so that planners can immediately react to demand or parameter changes.  To learn more, visit [Planning Optimization overview](../../../supply-chain/master-planning/planning-optimization/planning-optimization-overview.md).
 
 ### Inventory Visibility
-The Inventory Visibility Add-in is an independent and highly scalable microservice that enables real-time on-hand inventory tracking, thus providing a global view of inventory visibility. To learn more, visit [Inventory Visibility overview](https://docs.microsoft.com/dynamics365/supply-chain/inventory/inventory-visibility). 
+The Inventory Visibility Add-in is an independent and highly scalable microservice that enables real-time, on-hand inventory tracking, thus providing a global view of inventory visibility. To learn more, visit [Inventory Visibility Add-in](../../../supply-chain/inventory/inventory-visibility.md). 
 
 ### Export to Azure Data Lake
-The Export to Azure Data Lake feature is built using a microservice that exports Finance and Operations app data to Azure Data Lake and keeps the data fresh.  To learn more, visit [Configure Export to Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake).
+The Export to Azure Data Lake feature is built using a microservice that exports Finance and Operations app data to Azure Data Lake and keeps the data fresh.  To learn more, visit [Configure export to Azure Data Lake](../data-entities/configure-export-data-lake.md).
 
 ### IoT Intelligence 
-IoT Intelligence is an add-in for Microsoft Dynamics 365 Supply Chain Management. It integrates Internet of Things (IoT) signals with data in Supply Chain Management to produce actionable insights. To learn more, visit [IoT Intelligence home page](https://docs.microsoft.com/dynamics365/supply-chain/iot/iot-intelligence-home-page).
+IoT Intelligence is an add-in for Microsoft Dynamics 365 Supply Chain Management. It integrates Internet of Things (IoT) signals with data in Supply Chain Management to produce actionable insights. To learn more, visit [IoT Intelligence home page](../../../supply-chain/iot/iot-intelligence-home-page.md).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
