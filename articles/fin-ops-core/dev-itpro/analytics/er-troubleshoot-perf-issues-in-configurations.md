@@ -29,184 +29,198 @@ ms.dyn365.ops.version: 10.0.1
 
 # Troubleshooting performance issues in ER configurations
 
-This topic explains how to find and solve performance issues in [Electronic Reporting](general-electronic-reporting.md) (ER)[configurations](general-electronic-reporting.md#Configuration).
+This topic explains how to find and solve performance issues in [Electronic reporting](general-electronic-reporting.md) (ER) [configurations](general-electronic-reporting.md#Configuration).
 
-## Overview
+Typically, performance investigation consists of several steps.
 
-Usually, performance investigation consists of several steps:
+1. [Collect](#collecting-data) data.
+2. Analyze the collected data.
+3. Based on the results of the analysis, use ER configurations to [make changes](#making-changes), or decide to collect more data.
 
-1.  [Collect](#collecting-data) data.
-2.  Analyze the collected data.
-3.  Using ER configurations, make [modifications](#making-changes) based on the analysis, or decide to collect more data.
-
-## Troubleshooting 
+## Troubleshooting
 
 ### Analyze execution time
 
-Execution time can depend on random factors such as other tasks running in the same environment or caching using data when they are accessed the first time, so repeat the execution and measurement several times.
+Execution time can depend on unpredictable factors, such as other tasks that are running in the same environment and caching that uses data when it's accessed for the first time. Therefore, you should repeat the execution and measurement several times.
 
-Sometimes performance issues are caused by the X++ code used to launch an ER format configuration that is used for reporting, not the ER format configuration itself.
+Sometimes, performance issues aren't caused by an ER format configuration that is used for reporting. Instead, they are caused by the X++ code that is used to open that ER format configuration.
 
-1. Look at the execution time of report in the [Infolog](#infolog-time) or the [Event log](#event-log-time). 
+1. In either the [Action center](#infolog-time) or the [event log](#event-log-time), look at the execution time of the report.
 2. Compare the execution time of the report with the total execution time in the scenario.
-3. If the report time is much less then the total execution time, there are two possible situations:
+3. If the execution time of the report is much less than the total execution time, consider the amount of data that the report processes:
 
-  - If the reports work with a small amount of data, the issue could be with loading time of configuration.
-  - If the report processes a large amount of data, the issue could be with preprocessing X++. Use [TraceParser](#analyze-trace-parser-trace) to analyze this case.
-  - In other cases, please, see the next sections.
+    - If the report processes a small amount of data, the issue might involve the loading time of the configuration.
+    - If the report processes a large amount of data, the issue might involve preprocessing X++. Use [Trace parser](#analyze-trace-parser-trace) to analyze this case.
 
-4. Run multiple tests with different data amounts to determine how execution time depending on the amount of data.
+    For other cases, see the next sections.
 
-### <a name="analyze-trace-parser-trace"></a>Analyze trace parser trace
+4. Run multiple tests that involve different amounts of data to determine how the execution time depends on the amount of data.
 
-Prepare a small example or collect several traces in random parts of the report generation.
+### <a name="analyze-trace-parser-trace"></a>Analyze Trace parser traces
 
-Perform a standard bottom-to-up analysis in [Trace Parser](#trace-parser) and note:
-- What are the top methods for time consumption? What part of overall time do they use? 
-- Answer the same questions for queries.
+Prepare a small example, or collect several traces during random parts of the report generation.
 
-If you see that methods are prefixed with ER, continue to the next section. 
+Then, in [Trace parser](#trace-parser), do a standard bottom-to-up analysis, and answer the following questions:
 
-If you see that methods or queries originated in application suite, consider generic optimizations (creation of indexes, etc.)
+- What are the top methods in terms of time consumption?
+- What part of the overall time do those methods use?
 
-Analyze the number of calls. If the number is significantly higher than expected, consider caching the corresponding nodes of configuration. 
+Answer the same questions for queries.
+
+If you see that methods are prefixed with "ER," move on to the next section.
+
+If you see that methods or queries originated in the application suite, consider generic optimizations (for example, create indexes).
+
+Analyze the number of calls. If the number is significantly higher than expected, consider caching the corresponding nodes of the configuration.
 
 ### <a name="analyze-database-calls"></a>Analyze database calls
 
-Prepare an example with small amount of data to collect [ER trace](#electronic-reporting-traces). 
+Prepare an example that has a small amount of data, so that you can collect an [ER trace](#electronic-reporting-traces).
 
-Open trace in the ER model mapping designer and look at the bottom of the page:
+Then open the trace in the ER model mapping designer, and look at the bottom of the page. Answer the following questions:
 
-  - Is there any query duplication? If so, consider one of the following fixes:
-    - [Use caching](#use-caching): If you think there are several accesses inside one parent record.
-    - [Use cached parametrized calculated field](#cached-parametrized): If you think there are accesses inside different records but to the same record.
-    - [Use join](#use-join-datasource): If you have access to the substantial number of different records.
-  - Does the number of queries and fetched records correspond with the overall amount of data? For example, if you have 10 lines in a document do the stats show that the report extracts 10 lines or 1000 lines? If you have a substantial number of fetched records, consider one of the following:
-     - [Use the FILTER](#filter) function instead of WHERE to process data on the SQL side.
-     - Use caching to avoid fetching the same data.
-     - [Use collected data functions](#collected-data) to avoid fetching the same data for summarization.
+- Is there any query duplication? If there is, consider one of the following fixes:
 
-### Analyze PerfView trace
+    - [Use caching](#use-caching) if you think that there are several accesses inside one parent record.
+    - [Use a cached, parameterized calculated field](#cached-parameterized) if you think that there are accesses to the same record inside different records.
+    - [Use a **JOIN** data source](#use-join-datasource) if you have access to a substantial number of different records.
 
-[Perfview](#perfview) is a tool for experienced developers. For more detailed information of the following steps, see [Wall Clock Time Investigation Basics](https://channel9.msdn.com/Series/PerfView-Tutorial/Tutorial-12-Wall-Clock-Time-Investigation-Basics) .
+- Does the number of queries and fetched records correspond to the overall amount of data? For example, if a document has 10 lines, do the statistics show that the report extracts 10 lines or 1,000 lines? If you have a substantial number of fetched records, consider one of the following fixes:
 
-  1. Collect a trace with thread time.
-  2. Include only stacks with **runUnattended** to filter only thread that has configuration execution (add **runUnattended to IncPats** input box).
-  3. Fold all CPU, Network, and Blocked time.
-  4. Load [ER presets for perfview](ER_PerfViewPresets.xml).
-  5. Select **ER** > **Other preset**.
-  6. Look at the names:
-     - You probably see the platform code that consumes most time.
-     - You can double-click, and go up through **callees**:
-        - If you find some classes with the **ERExpression** prefix and they are functions related to formulas, you can guess the function name by class name and look at the ER repo to see the attributes.
+    - [Use the **FILTER** function instead of the **WHERE** function](#filter) to process data on the SQL Server side.
+    - Use caching to avoid fetching the same data.
+    - [Use collected data functions](#collected-data) to avoid fetching the same data for summarization.
+
+### Analyze PerfView traces
+
+[PerfView](#perfview) is a tool for experienced developers. For more detailed information about the following steps, see [Wall Clock Time Investigation Basics](https://channel9.msdn.com/Series/PerfView-Tutorial/Tutorial-12-Wall-Clock-Time-Investigation-Basics).
+
+1. Collect a trace by using thread time.
+2. Include only stacks that use **runUnattended**, to filter only the thread that has configuration execution. (Add **runUnattended** to the **IncPats** input box.)
+3. Fold all CPU, network, and blocked time.
+4. Load [ER presets for PerfView](ER_PerfViewPresets.xml).
+5. Select **ER** \> **Other preset**.
+6. Look at the names:
+
+    - You will probably see the platform code that consumes the most time.
+    - You can double-tap (or double-click) and go up through **callees**.
+
+        If you find classes that have the prefix "ERExpression," and if they are functions that are related to formulas, you can guess the function name based on the class name, and you can look at the ER repo to view the attributes.
 
 ### Fixes
 
-- If you see that most CPU are consumed by queries, try to reduce number of queries:
-  - [Look at GER trace](#analyze-database-calls) for duplicated queries.
-  - Look how many records are fetched and evaluate how much data should be fetched theoretically.
-- By used functions, try to find the place in the configuration that consumes the most resources.
-- If you see that most of the CPU is consumed by data collection functions, consider replacing them with *SQL group by* on the model mapping side.
+- If you see that most of the CPU time is consumed by queries, try to reduce the number of queries:
+
+    - [Review the ER trace](#analyze-database-calls) for duplicated queries.
+    - See how many records are fetched, and evaluate how much data should theoretically be fetched.
+
+- If you see that most of the CPU time is consumed by the functions that are used, try to find the place in the configuration that consumes the most resources.
+- If you see that most of the CPU time is consumed by data collection functions, consider replacing them with *SQL group by* on the model mapping side.
 
 ### <a name="collecting-data"></a>Collecting data
 
-Depending on your environment, there are several ways to collect available data.
-  - Get the total running time:
-    - From the Infolog
-    - From the Event log
-  - Profile the execution:
-    - Using ER tools
-    - Using TraceParser
-    - Using PerfView
+Depending on your environment, there are several ways to collect available data:
 
-#### Collecting data on production environment
+- Get the total running time:
 
-Sometimes issues can be reproduced only on a production environment. Data can be collected by:
-- Using [Trace parser](../perf-test/trace-trace-tutorial.md) traces.
-- Using [ER execution](trace-execution-er-troubleshoot-perf.md) traces.
-- Using the total execution time.
+    - From the Action center
+    - From the event log
 
-#### Collecting data on a development environment
+- Profile the execution:
 
-In addition to tools that can be used in the production environment, there are several tools you can use in a development environment:
-  - Event log (Microsoft-Dynamics-ElectronicReporting). This can give you the total execution time.
-  - Common .NET tools such as PerfView.
+    - By using ER tools
+    - By using Trace parser
+    - By using PerfView
 
-Also, on a development environment there is more flexibility to experiment. For example, you can turn off parts of reports to see how how the execution time is affected.
+#### Collecting data in a production environment
+
+Sometimes, issues can be reproduced only in a production environment. Data can be collected in the following ways:
+
+- By using [Trace parser](../perf-test/trace-trace-tutorial.md) traces
+- By using [ER execution](trace-execution-er-troubleshoot-perf.md) traces
+- By using the total execution time
+
+#### Collecting data in a development environment
+
+In addition to the tools that can be used in a production environment, there are several tools that you can use in a development environment:
+
+- Event log (Microsoft-Dynamics-ElectronicReporting). This log can give you the total execution time.
+- Common .NET tools, such as PerfView.
+
+Additionally, a development environment gives you more flexibility to experiment. For example, you can turn off parts of reports to see how the execution time is affected.
 
 ### <a name="tools"></a>Tools
 
-#### <a name="infolog-time"></a> Execution time in Infolog
+#### <a name="infolog-time"></a>Execution time in the Action center
 
-Electronic reporting can show the execution time of the configuration in the Infolog. This option works only for a specific user and specific company, and only for interactive sessions. To enable this feature, complete the following steps.
+ER can show the execution time of the configuration in the Action center. This option works only for a specific user and a specific company, and only for interactive sessions. To make this feature available, follow these steps.
 
-1.  Go to **Organization administration** > **Electronic reporting** > **Configurations** page.
-2.  On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
-3.  In the **User parameters** dialog box, set the **Show file generation time** parameter to **Yes**.
+1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
+2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
+3. In the **User parameters** dialog box, set the **Show file generation time** option to **Yes**.
 
-#### <a name="event-log-time"></a>Execution time in event log
+#### <a name="event-log-time"></a>Execution time in the event log
 
 1. Open Windows Event Viewer.
 2. Under **Applications and Services logs**, open **Microsoft-Dynamics-ElectronicReporting/Operational**.
-3. Look for **FormatMapingRun** events with **EventID=2** as they contain the elapsed time information.
+3. Look for **FormatMapingRun** events where **EventID=2**, because these events contain the information about elapsed time.
 
 #### <a name="trace-parser"></a>Trace parser traces 
 
-Because Electronic reporting is implemented in X++, you can use common X++ tools for analyze performance. For more information, see [Take traces by using Trace parser](../perf-test/trace-trace-tutorial.md).
+Because ER is implemented in X++, you can use common X++ tools to analyze performance. For more information, see [Take traces by using Trace parser](../perf-test/trace-trace-tutorial.md).
 
-There are a couple of limitations. Because part of ER is implemented in C#, not all of the details will be available. However, you can see the data access details. Additionally, the long report runs can exceed trace storage limitations.
+There are a few limitations to this approach. Because part of ER is implemented in C#, not all the details will be available. However, you can view the data access details. Additionally, long report runs can exceed trace storage limitations.
 
-#### <a name="electronic-reporting-traces"></a>Electronic reporting traces
+#### <a name="electronic-reporting-traces"></a>ER traces
 
-Electronic reporting can collect its own traces and have tools for visualization and analysis of them see 
- [Trace the execution of ER formats to troubleshoot performance issues](trace-execution-er-troubleshoot-perf.md) for details.
+ER can collect its own traces, and it has visualization and analysis tools for those traces. For more information, see [Trace the execution of ER formats to troubleshoot performance issues](trace-execution-er-troubleshoot-perf.md).
 
 #### <a name="perfview"></a>PerfView
 
-Since both X++ and ER are implemented on top of the .NET platform, you can use common .NET tools. For example, you can use [PerfView](https://github.com/Microsoft/perfview) which is a free tool.
+Because both X++ and ER are implemented on top of the .NET platform, you can use common .NET tools. For example, you can use the free [PerfView](https://github.com/Microsoft/perfview) tool.
 
-You can also collect data from command line. For example, this powershell script collects the execution time until any format execution is stopped on the machine.
+You can also collect data from the command line. For example, the following Windows PowerShell script collects the execution time until any format execution is stopped on the machine.
 
 ```powershell
 c:\programs\PerfView collect "e:\traces\$(date -format "ddMMyyyy_hhmm").etl" `
-     -CircularMB:20000 -ThreadTime `
-     -NoNGenRundown `
-     -StopOnEtwEvent:Microsoft-Dynamics-ElectronicReporting/FormatMappingRun/Stop
+    -CircularMB:20000 -ThreadTime `
+    -NoNGenRundown `
+    -StopOnEtwEvent:Microsoft-Dynamics-ElectronicReporting/FormatMappingRun/Stop
 ```
 
-There are a couple of limitations. You must have administrative access to machine and you must be an experienced developer as there is a steep learning curve.
-
+There are a few limitations to this approach. You must have administrative access to the machine. Additionally, you must be an experienced developer, because there is a steep learning curve.
 
 ### <a name="making-changes"></a>Making changes
 
 #### <a name="use-caching"></a>Use caching
 
-Caching reduces the time required to fetch data again, but is does cost memory. Use caching for cases when the amount of fetched data isn't very big. For more information, see this [example](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace) about using caching.
+Although caching reduces the amount of time that is required to fetch data again, it costs memory. Use caching in cases where the amount of fetched data isn't very large. For more information and an example that shows how to use caching, see [Improve the model mapping based on information from the execution trace](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace).
 
-#### <a name="cached-parametrized"></a>Use a cached parametrized calculated field
+#### <a name="cached-parameterized"></a>Use a cached, parameterized calculated field
 
-Sometimes there are several values, like account name or account number, that must be looked up repeatedly. You save time by creating a calculated field with parameters on the top level and then adding the field to the cache.
+Sometimes, values must be looked up repeatedly. Examples include account names and account numbers. To help save time, you can create a calculated field that has parameters on the top level, and then add the field to the cache.
 
-We recommend that you use this only when cached data size is small. For more information, see [Improve the performance of ER solutions by adding parameterized CALCULATED FIELD data sources](er-calculated-field-ds-performance.md).
+We recommend that you use this approach only when the size of the cached data is small. For more information, see [Improve the performance of ER solutions by adding parameterized CALCULATED FIELD data sources](er-calculated-field-ds-performance.md).
 
-#### <a name="use-join-datasource"></a>Use join datasource
+#### <a name="use-join-datasource"></a>Use a JOIN data source
 
-The Join data source allows several connected records to be fetched using one query instead of fetching each connected record with a separate query. For example, if you have 1000 lines and fetch item data for each line by relation, you will have 1000 + 1 query. The same data fetched using join will cost only 1 query. For more information, see [Use JOIN data sources in ER model mappings to get data from multiple application tables](er-join-data-sources.md). 
+A **JOIN** data source enables several connected records to be fetched by one query. A separate query doesn't have to be used to fetch each connected record. For example, if you have 1,000 lines, and you fetch item data for each line by relation, you will have 1,001 queries (= 1,000 + 1). If you use a **JOIN** data source, you will use only one query to fetch the same data. For more information, see [Use JOIN data sources in ER model mappings to get data from multiple application tables](er-join-data-sources.md).
 
-#### <a name="filter"></a>Use FILTER instead of WHERE
+#### <a name="filter"></a>Use the FILTER function instead of the WHERE function
 
-The [FILTER](er-functions-list-filter.md) function executes conditions on SQL server, while the WHERE function fetches all data from the list one-by-one and applies the condition for each. If you select one record from 1000 using WHERE, all records will be fetched. If you select using FILTER, exactly one will be fetched. Also, FILTER can use indexes on the database side.
+The **[FILTER](er-functions-list-filter.md)** function runs conditions on SQL Server, whereas the **WHERE** function fetches all data from the list, one record at a time, and applies the condition for each record. For example, you want to select one record out of 1,000 records. If you use **WHERE**, all 1,000 records will be fetched. However, if you use **FILTER**, exactly one record will be fetched. **FILTER** can also use indexes on the database side.
 
-#### <a name="collected-data"></a>Using collected data functions/accumulated data datasource
+#### <a name="collected-data"></a>Using collected data functions or an accumulated data data source
 
-If your configuration has a group by component that summarizes data already fetched by report, the component will fetch all the data again. Using collected data functions can let ER accumulate data during the first fetch. For more information, see [ER Configure format to do counting and summing](tasks/er-format-counting-summing-2.md).
+If your configuration has a *group by* component that summarizes previously fetched data by report, the component will fetch all the data again. By using collected data functions, you enable ER to accumulate data during the first fetch. For more information, see [ER Configure format to do counting and summing](tasks/er-format-counting-summing-2.md).
 
-#### Rewrite portions of the configuration in X++
+#### Rewrite parts of the configuration in X++
 
-ER supports calling methods of tables and classes, including extensions. Consider rewriting parts of the model mapping in X++ to get better performance.
+ER supports calling methods of tables and classes, including extensions. Consider rewriting parts of the model mapping in X++ to help improve performance.
 
-Electronic Reporting can consume data from:
-  - Classes (**object** and **class** data sources)
-  - Tables (**table** and **table records**) datasource
+ER can consume data from the following sources:
 
-[ER API](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) also provides a way to send precalculated data from the calling code. The application suite contains numerous examples of this approach.
+- Classes (**object** and **class** data sources)
+- Tables (**table** and **table records** data sources)
+
+The [ER API](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) also provides a way to send precalculated data from the calling code. The application suite contains numerous examples of this approach.
