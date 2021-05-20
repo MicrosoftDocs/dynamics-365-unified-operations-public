@@ -141,7 +141,7 @@ Power Platform integration can be enabled either during creation of a new Financ
 ### Enable during environment deployment
 As you set up a new Finance and Operations environment in LCS, there are several sections to the deployment wizard that can be filled out.  One of those sections is called **Power Platform Integration**.
 
-!(Power Platform integration setting)(media/powerplat_integration_step0.png)<img src="media/powerplat_integration_step0.png" width="500px" /><br/>
+!(Power Platform integration setting)(media/powerplat_integration_step0.png)
 
 1. Select the **Configure Power Platform environment** option.  This will then enable several additional settings.
 2. For the **Power Platform template** drop-down list, you may see several options:
