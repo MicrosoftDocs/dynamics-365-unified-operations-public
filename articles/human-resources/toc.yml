@@ -785,8 +785,14 @@
       items:
       - name: Performance management overview
         href: hr-develop-performance-management-overview.md
-      - name: Align workforce skills
-        href: hr-develop-skills.md
+      - name: Skills
+        items:
+        - name: Configure skills
+          href: hr-develop-skills.md
+        - name: Enter skills
+          href: hr-develop-enter-skills.md
+        - name: Map skills
+          href: hr-develop-map-skills.md
       - name: Add to your performance journal
         href: hr-develop-add-performance-journal.md
       - name: Create a goal
