@@ -155,7 +155,7 @@ Similar to above, custom fields can be used when creating eligibility rules and 
 
 Therefore, the custom eligibility rules would need to be setup as indicated below: 
 
-![Eligibility condtions within a cusom field criterion](media/EligibilityCondtionsWithinACustomFieldCriterion.png) 
+![Eligibility conditions within a cusom field criterion](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
 ## Configure bundles
 
