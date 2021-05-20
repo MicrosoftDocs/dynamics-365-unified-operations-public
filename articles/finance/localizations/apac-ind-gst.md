@@ -4,7 +4,7 @@
 title: India Goods and Services Tax (GST) overview
 description: This topic provides detailed information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 Finance.
 author: yijialuan
-ms.date: 04/05/2021
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -177,7 +177,7 @@ Follow the process in the topic, [Tax engine import configuration](../general-le
 | <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.267.xml</li> | <li> Support Applicable % of tax rate. The configuration can only be used in 10.0.9. </li> <li> If you are retail customers, you need to make sure the retail has a version of Microsoft.Dynamics365.Tax.dll equal to or above 10.0.4006 and the HQ has a version of Microsoft.Dynamics365.Tax.dll equal to 10.0.9007. </li> <li> The configuration is created on version 82.143.263, if you have configuration extension on 82.143.264, you have to re-extend based on 82.143.267. </li> |
 | <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.155.xml</li><li>Tax (India GST).version.82.155.300.xml</li> | <li> Support the IGST tax calculation when with IGST payment is Yes on SEZ/DE/Export order. The configuration can only be used in 10.0.14 or above. </li> |
 | <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.155.xml</li><li>Tax (India GST).version.82.155.301.xml</li> | <li> Support de-coupling of GST posting from inventory posting and adding Interim transit for stock transfer posting type. The configuration can only be used in 10.0.14 or above. </li> |
-| <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.156.xml</li><li>Tax (India GST).version.82.156.302.xml</li> | <li> Support calculation of GST-TDS in vendor and customer payment Journal. The configuration can only be used in 10.0.18 or above. </li> |
+| <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.156.xml</li><li>Tax (India GST).version.82.156.302.xml</li> | <li> Support calculation of GST-TDS in vendor and customer payment journal. The configuration can only be used in 10.0.18 or above. </li> |
 
 ### Report configurations
 
@@ -185,11 +185,11 @@ Follow the process in the topic, [Tax engine import configuration](../general-le
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **GST offline tool format**: <li>GSTReturnsGovt.version.4.xml</li><li>GST Returns govt. model mapping.xml</li><li>GSTR1GovtCSV.version.4.9.xml</li> **GSTR1/GSTR2**: <li>GSTReturns.version.12.xml</li> <li>GSTReturns.ModelMapping.version.12.3..xml</li><li>GSTR1CSV.version.12.25.xml</li><li>GSTR2CSV.version.12.29.xml</li> | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (7.3) GA configuration                                                                                                                                                                          |
 | <li>GSTReturns.version.14.xml GST</li><li>Returns model mapping.version.14.5.xml</li> <li>GSTR1CSV.version.14.28.xml</li><li>GSTR2CSV.version.14.32.xml</li>                                                                                                                                                                     | Total Item Discount Amount is not coming in GSTR. Item Unit Of Measurement should show both the unit and description. Service item should be **Nos**. No customer billing name for stock transfer in GSTR. Microsoft Dynamics 365 for Finance and Operations (10.0.1) |
-| **GST offline tool format**: <li>GSTReturnsGovt.version.19.xml</li><li>GST Returns govt. model mapping.19.12.xml</li><li>GST ANX-1 Govt. offline tool.version.19.22.xml</li><li>GSTR1GovtCSV.version.19.10.xml</li><li>Purchase Register.version.19.7.xml<li> **GSTR1/GSTR2**: <li>GSTReturns.version.16.xml</li> <li>GSTReturns.ModelMapping.version.16.7.xml</li><li>GSTR-1 for Old Return 16.32.xml</li><li>GSTR-1 for New Return 16.41.xml</li><li>GSTR-2 for Old Return 16.36.xml</li><li>GSTR-2 for New Return 16.40.xml</li> | GSTR for New Return, ANX-1 Govt. offline tool and Purchase register. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (10.0.14)                                                                                                                                                                 |
+| **GST offline tool format**: <li>GSTReturnsGovt.version.19.xml</li><li>GST Returns govt. model mapping.19.12.xml</li><li>GST ANX-1 Govt. offline tool.version.19.22.xml</li><li>GSTR1GovtCSV.version.19.10.xml</li><li>Purchase Register.version.19.7.xml<li> **GSTR1/GSTR2**: <li>GSTReturns.version.16.xml</li><li>GSTReturns.ModelMapping.version.16.7.xml</li><li>GSTR-1 for Old Return 16.32.xml</li><li>GSTR-1 for New Return 16.41.xml</li><li>GSTR-2 for Old Return 16.36.xml</li><li>GSTR-2 for New Return 16.40.xml</li> | GSTR for New Return, ANX-1 Govt. offline tool and Purchase register. Dynamics 365 Finance, version 10.0.14.                                                                                                                                                                |
 
 ### Map configurations to the Legal entity
 
-1. Go to **Tax** &gt; **Setup** &gt; **Tax configuration** &gt; **Tax setup**.
+1. Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup**.
 2. Select **New**.
 3. In the **Tax setup** field, enter a value.
 4. In the **Description** field, enter a value.
