@@ -4,7 +4,7 @@
 title: Configure eligibility rules and options
 description: Set eligibility rules and options in Benefits management in Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -90,6 +90,79 @@ During open enrollment, employees can select benefit plans. If they become ineli
    | **Description** | The description you selected under **Additional criteria**. |
 
 6. Select **Save**.
+
+## Using custom fields in Eligibility rules
+
+[Custom fields](hr-developer-custom-fields.md) can be created within Human resources to track additional information.  These fields can be added directly to the user interface, and a column is dynamically added to the underlying table.  
+
+Custom fields can be used in the eligibility process.  Eligibility rules can use one or more custom fields values to determine eligibility of an employee.  To add a custom field to an existing rule or to create a new rule, navigate to **Benefits management > Links > Setup > Eligibility rules > Custom field eligibility**. Within this page, you can create a rule that uses one or multiple custom fields, and you can define multiple values for each custom field to determine eligibility.
+
+The following tables support custom fields that can be used in eligibility processing:
+
+- Worker (HcmWorker)  
+- Job (HcmJob)  
+- Position (HcmPosition)  
+- Position Detail (HcmPositionDetail)  
+- Position Worker Assignment  
+- Employment (HcmEmployment)  
+- EmploymentDetails (HcmEmploymentDetails)  
+- Job Details (HcmJobDetails)  
+
+The following custom field types are supported in eligibility processing:
+
+- Text  
+- Picklist  
+- Number  
+- Decimal  
+- Checkbox  
+
+Custom field eligibility form field information:
+
+| Field  | Description |
+|--------|-------------|
+| Name | Name of the criteria that is being created. |
+| Table name | The table name that contains the custom field that is being used for the eligibility rule. |
+| Field name | The field that will be used for the eligibility rule. |
+| Operator type | Displays the operator used in the custom field eligibility configuration. |
+| Value | Displays the value used in the custom field eligibility configuration. |
+
+## Eligibility logic
+
+The following sections describe how benefits eligibility is processed.
+
+### Rules assigned to a plan 
+When multiple eligibility rules are assigned to a benefit plan, an employee must meet at least one rule to be eligible to enroll in the benefit plan.  In the example below, the employee must either meet the requirements of the Job Type rule OR the Active Employees rule.
+ 
+ 
+Criteria within an eligibility rule 
+Within a rule you define the criteria that makes up the rule.  In our example above, the criteria for the Job Type rule is where Job Type = Directors.  Therefore, the employee must have a job type = directors to be eligible.  This is a rule where there is only one criteria within the rule.
+
+However, you can define rules that have multiple criteria.  When you define multiple criteria within an eligibility rule, an employee must meet every criteria within the rule to be eligible for the benefit plan. 
+
+For example:  The Active Employees rule above is made up of the criteria below.  In order for the employee to be eligible based on the Active Employees rule, they must be employed in legal entity USMF  AND  have a position type of Full-time.  
+
+ 
+ 
+
+Multiple conditions within Criteria
+
+Rules can be further expended to use multiple conditions within a single criteria. The employee must meet at least one condition to be eligible.   To build on the example above, the Active employees Rule can be further expanded to include employees that are also part time.  Therefore, now employee must be an employee in USMF and either a Full-time OR a part-time employee.  
+
+ 
+
+ 
+ 
+
+Eligibility conditions within a custom field criterion 
+Similar to above, custom fields can be used when creating eligibility rules and work in the same manner. For example, I would like to offer internet reimbursement to the Fargo and Copenhagen based employees who are working from home, as the internet costs are higher in those locations.  I have created two custom fields:  Office location (picklist) and working from home (checkbox).  I have created a rule called ‘WFH Employees’.  The criterion for the rule is where Office Location = Fargo OR Copenhagen AND  where Working from home = Yes.
+
+Therefore, the custom eligibility rules would need to be setup as indicated below: 
+
+ 
+ 
+
+
+
 
 ## Configure bundles
 
