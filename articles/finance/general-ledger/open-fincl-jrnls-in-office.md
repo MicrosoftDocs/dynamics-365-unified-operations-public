@@ -33,13 +33,13 @@ This topic describes issues that might occur when you create custom financial jo
 
 ## Symptom
 
-You created a custom Excel template for financial journals, but it doesn't appear on the **Open lines in Excel** menu. Alternatively, it does appear on the menu, but when you select it, a different template is opened.
+You created a custom Excel template for financial journals, but it doesn't appear on the **Open lines in Excel** menu. Alternatively, it does appear on the menu, a different template is opened but when you select it.
 
 ## Resolution
 
 The default Open in Excel functionality uses the root data source (table) of the current page to determine which Office templates or data entities appear as options on the **Open in Excel** menu. This behavior isn't an ideal experience for financial journals, because financial journals use the same tables (LedgerJournalTable and LedgerJournalTrans) as the root data source of many other types of journals.
 
-For financial journals, the Open Lines in Excel functionality is intended to show templates that are designed for the journal that you're currently working in the context of, such as the general journal or a payment journal. For example, if you create a template that is designed to be used with a vendor payment journal, the template will be designed to enforce your primary account as a vendor account.
+For financial journals, the Open Lines in Excel functionality is intended to show templates that are designed for the journal that you're currently working in the context of, such as the general journal or a payment journal. For example, a template that is intended to be used with a vendor payment journal will be designed to enforce your primary account as a vendor account.
 
 If you want to promote a template so that it's available on the **Open lines in Excel** and **Open in Excel** menus, an easy developer experience is to implement the **LedgerIJournalExcelTemplate** interface and extend the **DocuTemplateRegistrationBase** class. Many examples of this approach are implemented in the system. One example that can be used for reference is the **LedgerDailyJournalExcelTemplate** interface that was created for the general journal (or daily journal).
 
