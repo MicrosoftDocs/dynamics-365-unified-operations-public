@@ -131,29 +131,29 @@ Custom field eligibility form field information:
 The following sections describe how benefits eligibility is processed.
 
 ### Rules assigned to a plan 
-When multiple eligibility rules are assigned to a benefit plan, an employee must meet at least one rule to be eligible to enroll in the benefit plan.  In the example below, the employee must either meet the requirements of the Job Type rule OR the Active Employees rule.
+When multiple eligibility rules are assigned to a benefit plan, an employee must meet at least one rule to be eligible to enroll in the benefit plan.  In the example below, the employee must either meet the requirements of the **Job type** rule or the **Active employees** rule.
 
-![The employee must either meet the requirements of the Job Type rule OR the Active Employees rule.](media/RulesAssignedToAPlan.png)
+![The employee must either meet the requirements of the Job type rule or the Active employees rule.](media/RulesAssignedToAPlan.png)
  
 ### Criteria within an eligibility rule 
-Within a rule you define the criteria that makes up the rule.  In our example above, the criteria for the Job Type rule is where Job Type = Directors.  Therefore, the employee must have a job type = directors to be eligible.  This is a rule where there is only one criteria within the rule.
+Within a rule you define the criteria that makes up the rule.  In our example above, the criteria for the **Job type** rule is where Job Type = Directors.  Therefore, the employee must be a director to be eligible.  This is a rule where there is only one criteria within the rule.
 
 However, you can define rules that have multiple criteria.  When you define multiple criteria within an eligibility rule, an employee must meet every criteria within the rule to be eligible for the benefit plan. 
 
-For example:  The Active Employees rule above is made up of the criteria below.  In order for the employee to be eligible based on the Active Employees rule, they must be employed in legal entity USMF  AND  have a position type of Full-time.  
+For example:  The **Active employees** rule above is made up of the criteria below.  In order for the employee to be eligible based on the **Active employees** rule, the employee must be employed in legal entity USMF *and* have a position type of Full-time.  
 
 ![Criteria within an eligibility rule](media/CriteriaWithinAnEligibilityRule.png) 
  
 ### Multiple conditions within criteria
 
-Rules can be further expended to use multiple conditions within a single criteria. The employee must meet at least one condition to be eligible.   To build on the example above, the Active employees Rule can be further expanded to include employees that are also part time.  Therefore, now employee must be an employee in USMF and either a Full-time OR a part-time employee.  
+Rules can be further expended to use multiple conditions within a single criteria. The employee must meet at least one condition to be eligible. To build on the example above, the **Active employees** rule can be further expanded to include employees that are also part-time employees.  Therefore, now employee must be an employee in USMF *and* either a full-time or a part-time employee.  
 
 ![Multiple conditons within criteria](media/MultipleConditionsWithinCriteria.png) 
  
 ### Eligibility conditions within a custom field criterion 
-Similar to above, custom fields can be used when creating eligibility rules and work in the same manner. For example, I would like to offer internet reimbursement to the Fargo and Copenhagen based employees who are working from home, as the internet costs are higher in those locations.  I have created two custom fields:  Office location (picklist) and working from home (checkbox).  I have created a rule called ‘WFH Employees’.  The criterion for the rule is where Office Location = Fargo OR Copenhagen AND  where Working from home = Yes.
+Similar to above, custom fields can be used when creating eligibility rules and work in the same manner. For example, I would like to offer internet reimbursement to the Fargo and Copenhagen employees who are working from home, as the internet costs are higher in those locations.  I have created two custom fields:  **Office location** (picklist) and **Working from home** (checkbox).  I have created a rule called **WFH Employees**.  The criterion for the rule is where **Office Location = Fargo** or **Copenhagen** *and*  where **Working from home = Yes**.
 
-Therefore, the custom eligibility rules would need to be setup as indicated below: 
+Therefore, the custom eligibility rules would need to be set up as indicated below: 
 
 ![Eligibility conditions within a cusom field criterion](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
