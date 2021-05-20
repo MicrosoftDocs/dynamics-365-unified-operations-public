@@ -112,6 +112,7 @@ This scenario is best implemented by using dual-write.
 The following list provides details about the prerequisites for setting up the Microsoft Power Platform integration:
 
 - Make sure that at least one gigabyte (GB) of Microsoft Power Platform database storage capacity space is available for your tenant. Otherwise, setup will fail. You can view your capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity). 
+
 - Identify your Finance and Operations environment administrator. You can find that information in the **Environment details** section.
 
     ![Environment details tab](media/EnvironmentDetails.png)
@@ -130,6 +131,7 @@ The following list provides details about the prerequisites for setting up the M
     - Dynamics 365 admins
     - Power Platform admins
 
+
     > [!Note]
     > In the future, a more limited role will be added to Azure Active Directory for this integration that does not require use of the roles above which may provide more permissions than is necessary for the Finance and Operations administrator account.  In the case where you wish to keep the administrator with least-privileges you may grant one of the above roles temporarily until the Power Platform integration setup is completed and then remove it.  
 
@@ -141,7 +143,7 @@ Power Platform integration can be enabled either during creation of a new Financ
 ### Enable during environment deployment
 As you set up a new Finance and Operations environment in LCS, there are several sections to the deployment wizard that can be filled out.  One of those sections is called **Power Platform Integration**.
 
-!(Power Platform integration option)(media/powerplat_integration_step0.png)
+![Power Platform integration option](media/powerplat_integration_step0.png)
 
 1. Select the **Configure Power Platform environment** option.  This will then enable several additional settings.
 2. For the **Power Platform template** drop-down list, you may see several options:
@@ -150,7 +152,7 @@ As you set up a new Finance and Operations environment in LCS, there are several
 3. You may optionally see **Environment Type** if you are deploying a DevTest or cloud-hosted environment.  You may choose the type of Dataverse environment that is created and linked.  Otherwise, this is defaulted as a sandbox type for Tier 2 - Tier 5 acceptance test environments and production type for production environments.
 4. Select the **Agree** check box to agree to the terms and conditions of the integration.
 
-[!Important]
+> [!Important]
 > The **language** and **currency** values of the Dataverse environment that is created and linked to your Finance and Operations environment is determined automatically based on the physical address of your Azure Active Directory tenant.  If the address is in Redmond, Washington, USA, for example then the language will default to English and the currency will default to USD.  If you need a different value that doesn't match the default, please contact Microsoft support and we can help link an existing Dataverse environment that you provision manually to the Finance and Operations environment.  Eventually, these fields will be added as setup options so that customers can choose them on their own or accept the default values.
 
 ### Set up after environment deployment
@@ -159,7 +161,7 @@ To set up after the Finance and Operations environment has been deployed, follow
 1. After the Finance and Operations environment has been deployed through LCS, open the **Environment details** page in LCS.
 2. In the **Power Platform integration** section, select **Setup**.
 
-!(Click Setup.)(media/powerplat_integration_step1.png) 
+![Click Setup.](media/powerplat_integration_step1.png) 
 
 3. In the **Power Platform environment setup** dialog box, agree to the terms and conditions, and then select **Setup** at the bottom of the dialog box.
 
@@ -181,7 +183,7 @@ To set up after the Finance and Operations environment has been deployed, follow
     <br/>
     ![Dual-write application button](media/powerplat_integration_dwApp_button.png)
 
-[!Important]
+> [!Important]
 > The **language** and **currency** values of the Dataverse environment that is created and linked to your Finance and Operations environment is determined automatically based on the physical address of your Azure Active Directory tenant.  If it the address is in Redmond, Washington, USA, for example then the language will default to English and the currency will default to USD.  If you need a different value that doesn't match the default, please contact Microsoft support and we can help link an existing Dataverse environment that you provision manually to the Finance and Operations environment.  Eventually, these fields will be added as setup options so that customers can choose them on their own or accept the default values.
 
 ### Troubleshooting the setup
