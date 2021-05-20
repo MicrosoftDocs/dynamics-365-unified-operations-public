@@ -62,7 +62,7 @@ When you refresh a production environment to a sandbox environment, or a sandbox
 * Simple Mail Transfer Protocol (SMTP) Relay server in the SysEmailParameters table.
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
-* Document attachments in the DocuValue table. These attachments include any Microsoft Office templates that were overwritten in the source environment.
+* All files stored in Azure blob storage. This notably includes document attachments (from the DocuValue and DocuDeletedValue tables) and custom Microsoft Office templates (from the DocuTemplate table).
 * All users except the admin will be set to **Disabled** status.
 * All batch jobs will be set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
@@ -85,7 +85,7 @@ Here is the list of requirements and conditions of operation for a database refr
 - A refresh performs a delete operation on the original target database.
 - The target environment will be available until the database copy has reached the target server. After that point, the environment will be offline until the refresh process is completed.
 - The refresh will affect only the application and Financial Reporting databases.
-- Documents in Azure Blob storage aren't copied from one environment to another. Therefore, attached document handling documents and templates won't be changed and will remain in their current state.
+- Documents in Azure Blob storage aren't copied from one environment to another. Therefore, document attachments and templates won't be changed and will remain in their current state.
 - All users except the Admin user and other internal service user accounts will be unavailable. Therefore, the Admin user can delete or obfuscate data before  other users are allowed back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 - All data management integration jobs that have recurring import and export enabled must be fully processed and stopped in the target system before the restore is started. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. In this way, you ensure that there are no orphaned files from either system in Azure storage. This step is important because orphaned files can't be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
