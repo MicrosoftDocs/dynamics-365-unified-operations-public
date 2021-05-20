@@ -40,7 +40,7 @@ This topic provides an overview of the Microsoft Dynamics 365 Payment Connector 
 | PayPal Wallet | Also known as the PayPal "button", PayPal Wallet describes the customer experience and integration supported by the PayPal Connector. |
 | Wallet | A payment type that does not include traditional payment characteristics, such as the BIN range and expiration date, which are used to differentiate among credit and debit card types. |
 
-Microsoft Dynamics 365 Commerce offers an out-of-box integration for PayPal Wallet. When the PayPal Connector is configured, the PayPal button is a selectable payment method as part of online order checkout. When users select **PayPal** they are directed to complete their payment directly with PayPal and then are returned to the online storefront for order completion.  
+Microsoft Dynamics 365 Commerce offers an out-of-box integration for PayPal Wallet. When the PayPal Connector is configured, the PayPal button is a selectable payment method as part of online order checkout. When users select **PayPal**, they are directed to complete their payment directly with PayPal and then are returned to the online storefront for order completion.  
 
 The PayPal Connector is implemented using the same payments SDK that is leveraged for credit card payments. To better support PayPal payments, support for non-credit card payments has also been enhanced with the addition of support for "wallet" payment types. Specifically, PayPal payments do not return a BIN range. To support PayPal and other wallet payments, a new mapping for payments has been introduced that does not include BIN range. This new mapping can also be used to augment existing BIN range mapping for credit card payment methods. For more details, see [Wallet payment support](wallets.md). 
 
@@ -50,7 +50,7 @@ The Microsoft Dynamics 365 Payment Connector for PayPal is not available in Chin
 
 ### PayPal Wallet in storefront 
 
-The connector supports the use of the PayPal Wallet, or PayPal button, for e-commerce payments. When the connector is configured for the online storefront, customers will be presented with the option to pay using the PayPal button at the time of payment. When the customer selects the PayPal button, they will be redirected to a PayPal Wallet mini-browser window where they will be authenticated by PayPal and can select their method of payment. Upon successful authentication and selection of a payment method, the customer will be redirected back to the storefront with the PayPal payment loaded into the checkout form. When the order is placed, the PayPal payment will be included as a payment line on the order and it will by synchronized to Commerce headquarters.
+The connector supports the use of the PayPal Wallet, or PayPal button, for e-commerce payments. When the connector is configured for the online storefront, customers will be presented with the option to pay using the PayPal button at the time of payment. When the customer selects the PayPal button, they will be redirected to a PayPal Wallet mini-browser window where they will be authenticated by PayPal and can select their method of payment. Upon successful authentication and selection of a payment method, the customer will be redirected back to the storefront with the PayPal payment loaded into the checkout form. When the order is placed, the PayPal payment will be included as a payment line on the order, and it will by synchronized to Commerce headquarters.
 
 For more information on PayPal Wallet, visit the [PayPal Checkout page](https://www.paypal.com/merchantapps/appcenter/acceptpayments/checkout) hosted by PayPal. 
 
@@ -83,7 +83,7 @@ To test the PayPal Payment Connector, you must first create PayPal developer cre
     > [!NOTE]
     > The terms agreed to for the creation of a PayPal developer account are between the organization or individual creating the account and PayPal. Microsoft is in no way liable and makes no warranty as to the terms specified the agreement. These instructions are for informational purposes only. 
 
-8. After you agree to the terms, specify your business type and select **Continue**.
+8. After you agree to the terms, specify your business type, and select **Continue**.
 9. Next, go to the [PayPal Developer page](https://developer.paypal.com/developer/applications) and select **Log in to Dashboard**.
 10. Sign in using the credentials used when creating your PayPal account.
 11. In the developer dashboard, select the **Default Application** in the list of RestAPI apps.
@@ -109,7 +109,7 @@ To test the PayPal Payment Connector, you must first create PayPal developer cre
 8. On the **Processor payment method mapping** page, select the previously created **PayPal** card type. In the middle column, select the **Dynamics 365 Payment Connector for PayPal** and select **Add**. 
 
 > [!NOTE]
-> The **Processor payment method mapping** capability adds a new table that must be synchonized to the channel database. To add this data to the Commerce scheduler, you need to initialize the Commerce scheduler. For details, please refer to documentation related to [updating commerce scheduler configurations](./dev-itpro/cdx-best-practices.md#updating-configurations). 
+> The **Processor payment method mapping** capability adds a new table that must be synchronized to the channel database. To add this data to the Commerce scheduler, you need to initialize the Commerce scheduler. For details, please refer to documentation related to [updating commerce scheduler configurations](./dev-itpro/cdx-best-practices.md#updating-configurations). 
 
 ### Set up the PayPal Payment Connector in payment services
 
@@ -163,16 +163,16 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
 
 ### Set up the PayPal payment method for the online store
 
-Set up the PayPal payment method for the online store, follow these steps.
+To set up the PayPal payment method for the online store, follow these steps.
 
-1. In the online store where the PayPal Payment Connector has been configured, select the **Setup** tab, then select **Payment methods**.
-1. Select **New** to add a new payment method.
-1. For the **Payment method**, select the PayPal payment method created earlier. 
-1. For the **Operation name**, select **Pay card**.
-1. For the **Connector name**, select **Dynamics 365 Payment Connector for PayPal**.
-1. Use the **Posting** FastTab to specify posting details.
-1. Select **Electronic payment setup**, select **New**, and then in the **ID** field select the card type previously created for PayPal. 
-1. Select **Save**, and then close the **Electronic payment types** and **Online stores** forms. 
+1. In the online store where the PayPal Payment Connector has been configured, on the **Setup** tab, select **Payment methods**.
+1. Select **New** to add a payment method.
+1. In the **Payment method** field, select the PayPal payment method that you created earlier. 
+1. In the **Operation name** field, select **Pay card**.
+1. In the **Connector name** field, select **Dynamics 365 Payment Connector for PayPal**.
+1. On the **Posting** FastTab, specify the posting details.
+1. Select **Electronic payment setup**, select **New**, and then, in the **ID** field, select the card type that you previously created for PayPal. 
+1. Select **Save**, and then close the **Electronic payment types** and **Online stores** pages. 
 
 > [!NOTE]
 > When testing payments in a Sandbox environment, the **Environment** field should never be set to live and live environment. **Merchant client ID** and **Merchant API key**s must never be used. Sandbox environments are for Sandbox testing only.
