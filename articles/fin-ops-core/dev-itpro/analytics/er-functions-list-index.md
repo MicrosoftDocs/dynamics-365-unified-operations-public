@@ -49,6 +49,9 @@ The valid path of a data source of the *Record list* data type.
 
 A numeric index that indicates the position of the desired record in the specified list.
 
+> [!NOTE]
+> As one-based numbering is used for this function, specify the value 1 to return the first record of the specified list.
+
 ## Return values
 
 *Container (record)*
