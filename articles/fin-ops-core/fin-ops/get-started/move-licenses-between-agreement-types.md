@@ -4,7 +4,6 @@
 title: Move licenses between agreement types
 description: This topic explains how to move licenses between agreement types.
 author: ClaudiaBetz-Haubold 
-manager: AnnBe
 ms.date: 01/27/2021
 ms.topic: article
 ms.prod: 

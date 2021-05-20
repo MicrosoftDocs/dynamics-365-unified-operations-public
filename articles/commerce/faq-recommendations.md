@@ -4,7 +4,6 @@
 title: Product recommendations FAQ
 description: This topic provides information about processes and tools that you can use to troubleshoot issues that are related to product recommendations or their results.
 author: bebeale
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
@@ -73,7 +72,7 @@ If you must block an item from being discovered in the store, you must change th
 
 ## How do I add a list to an e-Commerce page?
 
-For information about how to add product recommendation pages to your e-Commerce website, see [Add product recommendation lists to pages](add-reco-list-to-page.md).
+For information about how to add product recommendation pages to your e-Commerce website, see [Add product recommendation lists to pages](./product-recommendations.md).
 
 ## How do I enable recommendations on POS?
 

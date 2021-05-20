@@ -4,7 +4,6 @@
 title: Maintenance checklists
 description: This topic describes maintenance checklists in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 

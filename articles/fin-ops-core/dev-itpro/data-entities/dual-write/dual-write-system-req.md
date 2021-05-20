@@ -5,7 +5,6 @@
 title: System requirements for dual-write
 description: This topic describes the system requirements for the setup of a dual-write connection.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/14/2020
 ms.topic: article
 ms.prod: 
@@ -40,7 +39,7 @@ The setup of a dual-write connection has the following requirements:
 
 Dual-write has these limitations:
 
-+ You can't run dual-write and the [Prospect to cash solution](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) for Data integrator side by side. If you're running the Prospect to cash solution for Data integrator, you must uninstall it.
++ You can't run dual-write and the [Prospect to cash solution](../../../../supply-chain/sales-marketing/accounts-template-mapping-direct.md) for Data integrator side by side. If you're running the Prospect to cash solution for Data integrator, you must uninstall it.
 + Dual-write setup is not supported on trial instances of Finance and Operations apps.
 + Dual-write must be used to integrate a single Finance and Operations app instance and a single customer engagement app instance.
 + Dual-write currently has a limit of 40 legal entities.

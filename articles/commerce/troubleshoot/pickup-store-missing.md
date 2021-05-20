@@ -4,11 +4,9 @@
 title: Retail store doesn't appear in the list of stores to pick up from
 description: This topic provides troubleshooting guidance that can help when a retail store doesn't appear in the list of stores where items can be picked up.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -64,6 +62,6 @@ To configure fulfillment groups in Commerce headquarters, follow these steps.
 
 ## Additional resources 
 
-[Create an operating unit](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit)
+[Create an operating unit](../../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md)
 
 [Set up an online channel](../channel-setup-online.md)

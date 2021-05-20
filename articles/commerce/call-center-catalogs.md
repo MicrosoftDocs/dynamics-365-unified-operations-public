@@ -4,7 +4,6 @@
 title: Call center catalogs
 description: This topic describes the call center–specific functionality for catalogs in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
 ms.prod: 
@@ -45,7 +44,7 @@ Direct-to-consumer marketing companies are very focused on tracking the response
 
 Go to **Retail and Commerce** \> **Catalogs and assortments** \> **All catalogs** to configure your catalog.
 
-When you create a new catalog, you must first link the catalog to one or more channels. This is done in the **Commerce channels** FastTab on the **Catalog setup** form. Click **Add** and select one or more channels. Only items linked to your selected channel [assortments](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments) can be used when creating the catalog.
+When you create a new catalog, you must first link the catalog to one or more channels. This is done in the **Commerce channels** FastTab on the **Catalog setup** form. Click **Add** and select one or more channels. Only items linked to your selected channel [assortments](/dynamics365/unified-operations/retail/assortments) can be used when creating the catalog.
 
 To add products to a catalog, a navigation hierarchy must be chosen. The navigation hierarchy will support the category structure for the catalog. You must pick from one of the navigation hierarchies linked to the channels selected on the **Commerce channels** FastTab of the **Catalog** page. If a navigation channel was not linked to a channel previously, go to **Retail and Commerce** \> **Channel setup** \> **Channel categories and product attributes** to link a navigation hierarchy default to each of your channels.
 

@@ -4,7 +4,6 @@
 title: Petty cash management for Commerce for Eastern Europe
 description: This topic describes how to set up and use cash management features in Commerce for Eastern Europe.
 author: epopov
-manager: annbe
 ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
@@ -31,7 +30,7 @@ ms.dyn365.ops.version: 8.1
 
 This article contains information about Eastern European localization specific for the commerce industry.
 
-In accordance with the Eastern Europe accounting requirements, you can set up operations for cash accounts to automate the processes for receipts, cash documents and cash reports. For more information, go to [(EEUR) Set up parameters for cash management](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/eeur-set-up-parameters-for-cash-management).
+In accordance with the Eastern Europe accounting requirements, you can set up operations for cash accounts to automate the processes for receipts, cash documents and cash reports. For more information, go to [(EEUR) Set up parameters for cash management](/dynamicsax-2012/appuser-itpro/eeur-set-up-parameters-for-cash-management).
 
 Retailers can accept various types of payment in exchange for the products and services that they sell. Although cash is the most common form of payment, retailers can also receive payment in the form of checks, cards, or vouchers. In Retail point of sale (POS), cash, credit card receipts, and other payments are processed through a cash office.
 
@@ -41,7 +40,7 @@ You can do the following by using Cash management in Commerce:
 - Use cash journals to post cash transactions and customer payments that are received at a retail POS.
 - Aggregate transactions in a statement line when you post a statement. You can aggregate safe drops, bank drops, voucher transactions, remove tender transactions, float entry transactions, income transactions, expense transactions, customer payments, sales transactions, and return transactions.
 
-All transactions that take place in POS are posted using a ledger journal. You can use cash payment journals, customer payment journals, and general journals to create and post the statements. For more information, go to [Create, calculate, and post statements for a retail store](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
+All transactions that take place in POS are posted using a ledger journal. You can use cash payment journals, customer payment journals, and general journals to create and post the statements. For more information, go to [Create, calculate, and post statements for a retail store](/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
 
 On the **Posted statements** page, on the Action Pane, you can do the following:
 
@@ -52,7 +51,7 @@ On the **Posted statements** page, on the Action Pane, you can do the following:
 
 You must complete the following setup procedure before you use cash management:
 
-- Set up a payment method for each payment type that the retailer accepts on the **Payment methods** page. You can use different payment methods for posting transactions in POS. For more information about payment methods, see [Payment methods](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
+- Set up a payment method for each payment type that the retailer accepts on the **Payment methods** page. You can use different payment methods for posting transactions in POS. For more information about payment methods, see [Payment methods](/dynamics365/unified-operations/retail/payment-methods).
 - Set up parameters for cash operations.
 - Set up a payment method for cash payments in a store.
 

@@ -4,7 +4,6 @@
 title: Work with serialized items in the POS
 description: This topic explains how to manage serialized items in the point of sale (POS) application.
 author: boycezhu
-manager: annbe
 ms.date: 01/08/2021
 ms.topic: article
 ms.prod:
@@ -136,9 +135,9 @@ Validations for serial numbers will also occur when a user performs the pick up 
 
 ## Additional resources
 
-[Inbound inventory operation in POS](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
+[Inbound inventory operation in POS](./pos-inbound-inventory-operation.md)
 
-[Outbound inventory operation in POS](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+[Outbound inventory operation in POS](./pos-outbound-inventory-operation.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

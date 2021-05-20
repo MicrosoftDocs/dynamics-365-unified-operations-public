@@ -4,7 +4,6 @@
 title: Commerce component events for diagnostics and troubleshooting
 description: This topic explains where to find events from Commerce-specific components.
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 08/19/2020
 ms.topic: article
 ms.prod: 
@@ -36,7 +35,7 @@ This topic explains where to find events from Commerce-specific components. To e
 
 ## Viewing events in Event Viewer
 
-You can use Event Viewer to view events for components that are installed on computers that run Microsoft Windows, if you have physical access to the computer where the events are logged. For more information about Event Viewer, see [Event Viewer](https://technet.microsoft.com/library/4229f239-16a6-4ecd-b3cf-aec03dc08cd5) on TechNet. You can also use Event Viewer to view events remotely from computers that you have access to. For more information about how to use Event Viewer to view events remotely, see [Work with Event Logs on a Remote Computer](https://technet.microsoft.com/library/cc766438.aspx) on TechNet. Typically, Event Viewer is used for troubleshooting in the following use cases:
+You can use Event Viewer to view events for components that are installed on computers that run Microsoft Windows, if you have physical access to the computer where the events are logged. For more information about Event Viewer, see [Event Viewer](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766042(v=ws.11)) on TechNet. You can also use Event Viewer to view events remotely from computers that you have access to. For more information about how to use Event Viewer to view events remotely, see [Work with Event Logs on a Remote Computer](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766438(v=ws.11)) on TechNet. Typically, Event Viewer is used for troubleshooting in the following use cases:
 
 - Development on a developer topology or on a downloadable virtual hard disk (VHD) that provides access to Event Viewer.
 - Client components, when you're running a conference room pilot and have access to Event Viewer for that computer.
@@ -69,7 +68,7 @@ Currently, some of the events that are logged by various components are sent to 
 
 ## Viewing events by using the (F12) browser developer tools console
 
-Because Retail Cloud POS and E-Commerce modules are browser-based components, you can use the browser developer tools console to view events for it. For information about the Microsoft browser developer tools console, see [Using the Console to view errors and debug](https://docs.microsoft.com/microsoft-edge/devtools-guide/console). To use the browser developer tools for Retail Cloud POS or E-Commerce modules, you must use a supported browser version.
+Because Retail Cloud POS and E-Commerce modules are browser-based components, you can use the browser developer tools console to view events for it. For information about the Microsoft browser developer tools console, see [Using the Console to view errors and debug](/microsoft-edge/devtools-guide/console). To use the browser developer tools for Retail Cloud POS or E-Commerce modules, you must use a supported browser version.
 
 ### View events in the browser developer tools console
 

@@ -4,7 +4,6 @@
 title: Enter the GTIN code for a product
 description: GTIN codes are assigned by the GS1 organization. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -30,18 +29,17 @@ ms.dyn365.ops.version: Version 7.0.0
 
 GTIN codes are assigned by the GS1 organization. In this example, you will enter a code for product number M0001 in demo data company USMF.
 
-1. Click Released product maintenance.
-2. Click Released products.
-3. Expand the Product image FactBox.
-4. In the list, find and select the desired record.
-5. On the Action Pane, click Manage inventory.
-6. Click GTIN codes.
-7. Click New.
-8. In the list, mark the selected row.
-9. In the Unit field, enter or select a value.
-10. In the GTIN code field, select an option.
-11. In the GTIN field, type a value.
-12. Close the page.
+1. Go to **Product information management \> Products \> Released products**.
+1. Expand the **Product image** FactBox.
+1. In the list, find and select the desired record.
+1. On the Action Pane, select **Manage inventory**.
+1. Select **GTIN codes**.
+1. Select **New**.
+1. In the list, mark the selected row.
+1. In the **Unit** field, enter or select a value.
+1. In the **GTIN code** field, select an option.
+1. In the **GTIN field**, type a value.
+1. Close the page.
 
 
 

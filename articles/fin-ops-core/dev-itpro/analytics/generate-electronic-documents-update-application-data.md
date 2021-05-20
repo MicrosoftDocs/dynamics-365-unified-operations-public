@@ -4,8 +4,7 @@
 title: Generate electronic documents and update application data by using ER
 description: You can design Electronic reporting (ER) formats that can be used in the application to generate outgoing electronic documents.
 author: NickSelin
-manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,9 +39,9 @@ With this functionality, a single ER format can be used to generate outgoing ele
 
 To learn more about this feature, play the set of ER Generate documents with application data update Task guides (part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process), which walk you through the details of Intrastat reporting and archiving. The following files are required to complete certain steps in these Task guides. Download and save these files to your local machine.
 
-- [ER data model configuration: Intrastat (model)](https://go.microsoft.com/fwlink/?linkid=849038)
-- [ER model mapping configuration: Intrastat (mapping)](https://go.microsoft.com/fwlink/?linkid=849038)
-- [ER format configuration: Intrastat (format)](https://go.microsoft.com/fwlink/?linkid=849038)
+- [ER data model configuration: Intrastat (model)](https://download.microsoft.com/download/9/c/e/9ceeacbe-c13e-422e-96f2-594c4a6b45b7/Intrastatmodel.xml)
+- [ER model mapping configuration: Intrastat (mapping)](https://download.microsoft.com/download/2/1/d/21ddaaeb-64c5-4408-a35f-1ccb922d40a4/Intrastatmapping.xml)
+- [ER format configuration: Intrastat (format)](https://download.microsoft.com/download/8/b/b/8bbb8891-e88d-4739-b92a-2d1d2fffcb79/Intrastatformat.xml)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

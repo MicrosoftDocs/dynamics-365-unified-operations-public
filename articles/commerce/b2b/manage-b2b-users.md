@@ -4,7 +4,6 @@
 title: Manage business partner users on B2B e-commerce websites
 description: This topic describes how administrators can add, edit, and delete business partner users on business-to-business (B2B) e-commerce websites.
 author: josaw1
-manager: AnnBe
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: 
@@ -47,7 +46,7 @@ To turn on the B2B e-commerce capabilities feature in Commerce headquarters, fol
 
 ## Create a number sequence and add it to Commerce shared parameters
 
-Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. For more information about number sequences, see [Number sequences overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
+Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. For more information about number sequences, see [Number sequences overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
 
 To create a number sequence and add it to Commerce shared parameters in Commerce headquarters, follow these steps.
 
@@ -140,7 +139,7 @@ To onboard business partners and users in Commerce headquarters, follow these st
 
 [Set product quantity limits for B2B e-commerce sites](quantity-limits.md)
 
-[Number sequences overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+[Number sequences overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

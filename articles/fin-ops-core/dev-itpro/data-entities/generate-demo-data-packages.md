@@ -4,8 +4,7 @@
 title: Generate demo data by using data packages
 description: This topic explains how to use demo data packages to generate data for your system.
 author: panolte
-manager: AnnBe
-ms.date: 06/06/2018
+ms.date: 04/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -177,10 +176,6 @@ After you load the data packages, you must also manually follow these steps.
 3. Setup policy precedence prior to importing Expense packages. Select **Expense management** &gt; **Setup** &gt; **Policies** &gt; **Expense report**, and then select **Parameters**. then select **Companies**, and move it to the right column.
 4. After you load the Project management and accounting packages, you must run the **Resource capacity roll-up** batch job. You can run this job from the **Synchronize resource capacity roll-ups** page (**Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resource capacity roll-ups**). Specify an end date that lets you schedule resources a long time in the future. After the batch job is run, automatic generation of team functionality will be enabled in the project's work breakdown structure (WBS).
 5. Add Print management settings for each module.
-
-### Scenario scripts
-
-Scripts have been provided for many of the scenarios that the demo data supports. You can find these scripts in [Demo data scripts](https://go.microsoft.com/fwlink/?linkid=861599).
 
 ## Transactions and automatic posting
 

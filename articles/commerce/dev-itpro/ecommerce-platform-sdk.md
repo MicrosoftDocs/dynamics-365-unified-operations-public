@@ -4,7 +4,6 @@
 title: e-Commerce platform software development kit (SDK)
 description: This topic describes the e-Commerce Platform SDK.
 author: mugunthanm
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
@@ -46,7 +45,7 @@ This topic describes the e-Commerce Platform SDK. The e-Commerce Platform softwa
 
 The Retail SDK is available in development environments, and in hotfix packages in a Retail SDK folder.
 
-- If you get the SDK from a development instance, it is immediately ready for configuration and use. For more information, see [Access instances](../../dev-itpro/dev-tools/access-instances.md). 
+- If you get the SDK from a development instance, it is immediately ready for configuration and use. For more information, see [Access instances](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). 
 - If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder. Hotfixes are cumulative and include all other fixes. 
 
 We recommend that you put the SDK in a source control system such as Visual Studio Online.

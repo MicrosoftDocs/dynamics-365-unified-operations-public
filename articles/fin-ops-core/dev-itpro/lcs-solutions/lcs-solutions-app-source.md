@@ -4,7 +4,6 @@
 title: Requirements for publishing apps on AppSource
 description: This topic points to resources that will help you understand the requirements for creating solutions for Dynamics 365 Finance and Operations apps.
 author: kfend
-manager: AnnBe
 ms.date: 07/31/2018
 ms.topic: article
 ms.prod: 
@@ -39,7 +38,7 @@ This topic points to resources that will help you understand the requirements fo
 -   [Database backup](database-backup-lcs-solutions.md) and [Data packages](process-data-packages-lcs-solutions.md)
 -   [Business process models](business-process-modeler-libraries-lcs-solutions.md)
 -   [Methodologies](methodologies-lcs-solutions.md)
--   [Marketing](marketing-content-lcs-solutions.md)
+-   [Marketing](/azure/marketplace/partner-center-portal/create-new-operations-offer)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

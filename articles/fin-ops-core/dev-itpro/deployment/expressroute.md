@@ -4,7 +4,6 @@
 title: Azure ExpressRoute and Finance and Operations apps
 description: Customers can use Microsoft Azure ExpressRoute to connect to their on-premises infrastructure.
 author: PeterRFriis
-manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
@@ -44,8 +43,8 @@ This information is necessary to determine whether a standard or premium offerin
 ## Resources for getting started
 
 - [ExpressRoute service page](https://azure.microsoft.com/services/expressroute/)
-- [ExpressRoute technical overview](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)
-- [ExpressRoute partners and peering locations](https://azure.microsoft.com/documentation/articles/expressroute-locations/)
+- [ExpressRoute technical overview](/azure/expressroute/expressroute-introduction)
+- [ExpressRoute partners and peering locations](/azure/expressroute/expressroute-locations)
 - [ExpressRoute pricing](https://azure.microsoft.com/pricing/details/expressroute/)
 
 

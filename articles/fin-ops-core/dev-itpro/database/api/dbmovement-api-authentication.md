@@ -4,7 +4,6 @@
 title: Database movement API - Authentication
 description: This topic provides overview information about how to authenticate with the Database Movement application programming interface (API).
 author: laneswenka
-manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
@@ -76,7 +75,7 @@ GET https://lcsapi.lcs.dynamics.com/databasemovement/v1/databases
         - For web apps, provide the base URL of the app. For example, `http://localhost:31544` might be the URL for a web app that runs on your local machine. Users then use this URL to sign in to a web client app.
         - For public client apps, provide the URI that Azure AD uses to return token responses. Enter a value that is specific to your app, such as `myapp://auth`.
 
-        To see specific examples for web apps or native apps, see the [quick start guides from Azure AD](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
+        To see specific examples for web apps or native apps, see the [quick start guides from Azure AD](/azure/active-directory/develop/#quickstarts).
 
 5. Under **API permissions**, select **Add a permission**. Then, on the **APIs my organization uses** tab, search for **Dynamics Lifecycle services**, and add the **user\_impersonation** permission to your app.
 6. Select **Register**.

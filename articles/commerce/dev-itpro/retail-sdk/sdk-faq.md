@@ -4,7 +4,6 @@
 title: Retail SDK FAQ
 description: This topic summarizes answers to questions that are frequently asked by users of the Retail SDK.
 author: mugunthanm 
-manager: AnnBe
 ms.date: 08/10/2020
 ms.topic: article
 ms.prod: 

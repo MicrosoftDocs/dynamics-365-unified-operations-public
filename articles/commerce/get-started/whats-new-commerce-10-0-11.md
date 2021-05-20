@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.11 (July 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.11. 
 author: josaw1
-manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: article
 ms.prod: 
@@ -39,14 +38,14 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/) site.
+The following features are included in this release. The feature titles link to additional information on the [Release plans](/dynamics365-release-plan/2020wave1/) site.
 
-- [POS sign-in page improvements](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/pos-sign-in-page-improvements)
+- [POS sign-in page improvements](/dynamics365-release-plan/2020wave1/dynamics365-commerce/pos-sign-in-page-improvements)
 - [Auto charges by channel ](../auto-charges-by-channel.md)
-- [Improved support for serial number tracking dimension in store inventory processes](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-support-serial-number-tracking-dimension-store-inventory-processes)
-- [Notifications and mini-cart](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-mini-cart-e-commerce-site)
-- [Theme extensions](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-theme-extensions)
-- [New events and placeholders for transactional emails](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/new-events-placeholders-transactional-emails)
+- [Improved support for serial number tracking dimension in store inventory processes](/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-support-serial-number-tracking-dimension-store-inventory-processes)
+- [Notifications and mini-cart](/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-mini-cart-e-commerce-site)
+- [Theme extensions](/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-theme-extensions)
+- [New events and placeholders for transactional emails](/dynamics365-release-plan/2020wave1/dynamics365-commerce/new-events-placeholders-transactional-emails)
 - [Commerce SDK updated to Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk.md)
 
 ## Additional resources
@@ -62,7 +61,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 

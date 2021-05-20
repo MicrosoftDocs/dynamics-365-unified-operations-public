@@ -1,17 +1,12 @@
 ---
-# required metadata
-
 title: Modify existing fields in a table through extension
 description: This topic provides information about how to modify an existing field in a table.
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

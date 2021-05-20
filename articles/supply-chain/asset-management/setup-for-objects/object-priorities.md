@@ -4,7 +4,6 @@
 title: Asset service levels
 description: This topic explains asset service levels in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 

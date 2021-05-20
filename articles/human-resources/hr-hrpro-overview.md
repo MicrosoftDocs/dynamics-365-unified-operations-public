@@ -4,7 +4,6 @@
 title: Overview
 description: The Dynamics 365 Human Resources User Guide provides you with instructions on setting up Human Resources, setting up compensation and benefits for your employees, and managing your workforce.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.search.form: EssWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -39,7 +37,7 @@ The Dynamics 365 Human Resources User Guide provides you with instructions on se
 
 [Configure Human resources parameters](hr-setup-parameters.md)</br>
 [Configure Human resources shared parameters](hr-setup-shared-parameters.md)</br>
-[Set up Human resource workflows](hr-setup-workflows.md)</br>
+[Set up Human resource workflows](./hr-workflow-manage-employee-information.md)</br>
 [Understand Date and Time fields](hr-setup-date-time-fields.md)</br>
 
 ## Configure organization settings

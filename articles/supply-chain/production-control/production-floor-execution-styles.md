@@ -3,11 +3,9 @@
 
 title: User interface control styles for production floor execution
 description: The topic explains how to configure form controls so that the default production floor execution styles are applied to them.
-author: inkharki
-manager: tfehr
+author: johanhoffmann
 ms.date: 02/22/2021
 ms.topic: article
-ms.service: dynamics-365-supply-chain
 ms.prod:
 ms.technology:
 
@@ -16,7 +14,7 @@ ms.technology:
 audience: Developer
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: inkharki
+ms.author: johanho
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: Release 10.0.15
 ---
@@ -27,6 +25,28 @@ ms.dyn365.ops.version: Release 10.0.15
 
 The topic explains how to configure form controls so that the default production floor execution styles are applied to them.
 
+## Forms and dialogs
+
+Styles can be applied to a form or dialog only if the following requirements are met:
+
+- If the form should resemble the existing report progress form, then the name of your form or dialog must start with **JmgProductionFloorExecutionCustomInputDialog**.
+- The form or dialog can contain a detail form part. To apply styles to it, the name of the detail form part must start with **JmgProductionFloorExecutionCustomDetailsDialog**.
+- If the form or dialog should have a simple view, then the name of the simple view must start with **JmgProductionFloorExecutionCustomDialog**. Examples of forms that have a simple view include the start form and the indirect activity form.
+- All the controls in the dialog  must be configured as described in this topic.
+
+> [!IMPORTANT]
+> The features mentioned in the first two bullet points of this list require Supply Chain Management version 10.0.19 or later.
+
+Styles can be applied to the **OK** button in a dialog only if the following requirements are met:
+
+- The button is contained in a form group.
+- The group name starts with **OkButtonGroup**.
+
+Styles can be applied to the **Cancel** button in a dialog box only if the following requirements are met:
+
+- The button is contained in a form group.
+- The group name starts with **CancelButtonGroup**.
+
 ## Grid
 
 Styles are automatically applied. No specific configuration is required.
@@ -35,8 +55,8 @@ Styles are automatically applied. No specific configuration is required.
 
 Styles can be applied to card view controls only if the following requirements are met:
 
-+ Each card view is contained in a form group.
-+ The group name starts with **CardGroup** (for example, **CardGroupJobsView**).
+- Each card view is contained in a form group.
+- The group name starts with **CardGroup** (for example, **CardGroupJobsView**).
 
 The following illustration shows a card view that has no controls inside it.
 
@@ -52,8 +72,8 @@ The following illustrations show card views that have controls inside them.
 
 Styles can be applied to business card controls only if the following requirements are met:
 
-+ Each business card is contained in a form group.
-+ The group name starts with **BusinessCardGroup** (for example, **BusinessCardGroupJobsList**).
+- Each business card is contained in a form group.
+- The group name starts with **BusinessCardGroup** (for example, **BusinessCardGroupJobsList**).
 
 Set the following properties on the business card:
 
@@ -68,8 +88,8 @@ Set the following properties on the business card:
 
 Styles can be applied to radio buttons only if the following requirements are met:
 
-+ Each radio button is contained in a form group.
-+ The group name starts with **RadioTextBelow** or **RadioTextRight**, depending on where you want the text to appear.
+- Each radio button is contained in a form group.
+- The group name starts with **RadioTextBelow** or **RadioTextRight**, depending on where you want the text to appear.
 
 Set the following properties on the radio button:
 
@@ -94,8 +114,8 @@ Radio button styles aren't supported in Internet Explorer. The following illustr
 
 Styles can be applied to buttons only if the following requirements are met:
 
-+ Each group of buttons is contained in a form group. All the buttons in the group will have the same style.
-+ There are no requirements about the name of the group.
+- Each group of buttons is contained in a form group. All the buttons in the group will have the same style.
+- There are no requirements about the name of the group.
 
 Set the following properties on the buttons:
 
@@ -109,8 +129,8 @@ Set the following properties on the buttons:
 
 Styles can be applied to a primary button only if the following requirements are met:
 
-+ The button is contained in a form group.
-+ The group name starts with **DefaultButtonGroup** or **PrimaryButtonGroup** (for example, **DefaultButtonGroup10**).
+- The button is contained in a form group.
+- The group name starts with **DefaultButtonGroup** or **PrimaryButtonGroup** (for example, **DefaultButtonGroup10**).
 
 ![Primary button](media/pfe-styles-first.png)
 
@@ -118,8 +138,8 @@ Styles can be applied to a primary button only if the following requirements are
 
 Styles can be applied to a secondary button only if the following requirements are met:
 
-+ The button is contained in a form group.
-+ The group is named **Right panel**, or the group name starts with **SecondaryButtonGroup**.
+- The button is contained in a form group.
+- The group is named **Right panel**, or the group name starts with **SecondaryButtonGroup**.
 
 ![Secondary button](media/pfe-styles-second.png)
 
@@ -127,8 +147,8 @@ Styles can be applied to a secondary button only if the following requirements a
 
 Styles can be applied to a third-group button only if the following requirements are met:
 
-+ The button is contained in a form group.
-+ The group is named **Left panel**, or the group name starts with **ThirdButtonGroup**.
+- The button is contained in a form group.
+- The group is named **Left panel**, or the group name starts with **ThirdButtonGroup**.
 
 ![Third-group button](media/pfe-styles-third.png)
 
@@ -136,8 +156,8 @@ Styles can be applied to a third-group button only if the following requirements
 
 Styles can be applied to a fourth-group button only if the following requirements are met:
 
-+ The button is contained in a form group.
-+ The group name starts with **FourthButtonGroup**.
+- The button is contained in a form group.
+- The group name starts with **FourthButtonGroup**.
 
 Set the following properties on the button:
 
@@ -153,8 +173,8 @@ Set the following properties on the button:
 
 Styles can be applied to a flat button only if the following requirements are met:
 
-+ The button is contained in a form group.
-+ The group name starts with **FlatButtonGroup**.
+- The button is contained in a form group.
+- The group name starts with **FlatButtonGroup**.
 
 Set the following properties on the button:
 
@@ -172,10 +192,10 @@ A combo box is a combination of three controls: an input control, a button that 
 
 Styles can be applied to a combo box only if the following requirements are met:
 
-+ The combo box is contained in a form group.
-+ The group name starts with **Combobox**.
-+ Inside the group, the first control is an **AxFormStringControl** control. This control shows the current value, and it's where the user enters the required value.
-+ The second control is a **CommonButton** control, and its name starts with **ClearButton**. This button must contain code that uses the **enable** property to show or hide the button. For example, to show or hide the **Clear** button while the user is typing information in the input control, you can use the following code.
+- The combo box is contained in a form group.
+- The group name starts with **Combobox**.
+- Inside the group, the first control is an **AxFormStringControl** control. This control shows the current value, and it's where the user enters the required value.
+- The second control is a **CommonButton** control, and its name starts with **ClearButton**. This button must contain code that uses the **enable** property to show or hide the button. For example, to show or hide the **Clear** button while the user is typing information in the input control, you can use the following code.
 
     ```xpp
     public void textChange()
@@ -212,25 +232,25 @@ Styles can be applied to a combo box only if the following requirements are met:
 
     Set the value of the input control, **AxFormStringControl**, when the form is initialized by using the **init** method. If the value isn't blank, enable the **Clear** button. If the value is blank, disable the **Clear** button.
 
-+ The third control is a **CommonButton** control, and its name starts with **SearchButton**.
+- The third control is a **CommonButton** control, and its name starts with **SearchButton**.
 
 The following illustration shows two combo box controls. The combo box on the left has an empty text box, and the **Clear** button is disabled. The combo box on the right has text in the text box, and the **Clear** button is enabled.
 
 ![Combo boxes with and without a Clear button](media/pfe-styles-combo.png)
 
-## Dialog
+## Quick filter
 
-Styles can be applied to a dialog only if the following requirements are met:
+The quick filter control adds a search field to the page. You can apply styles to a quick filter provided the following requirements are met:
 
-+ The name of the dialog starts with **JmgProductionFloorExecutionDialog** (for example, **JmgProductionFloorExecutionDialogBatchNumberLookup**).
-+ All the controls in the dialog are configured as described in this topic.
+- The quick filter is contained in a form group.
+- The group name starts with **SearchInput**.
+- Inside the group, the first control is a **QuickFilter** control. (This is where the user enters the search string.)
+- The second control is a **FormStaticTextControl** with the name **NumberOfResults**. (This is optional and shows the number of found items if included.)
+- The third control is a **CommonButton** control with a name that starts with **ClearButton**.
 
-Styles can be applied to the **OK** button in a dialog only if the following requirements are met:
+The following illustration shows two quick filter controls. The quick filter on the left has an empty quick filter, and the number of results isn't visible. The quick filter on the right contains a search string and shows the number of results.
 
-+ The button is contained in a form group.
-+ The group name starts with **OkButtonGroup**.
+![Examples of a quick filter control with and without a search string](media/pfe-styles-quick-filter.png "Examples of a quick filter control with and without a search string")
 
-Styles can be applied to the **Cancel** button in a dialog only if the following requirements are met:
 
-+ The button is contained in a form group.
-+ The group name starts with **CancelButtonGroup**.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

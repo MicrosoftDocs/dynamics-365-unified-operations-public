@@ -4,7 +4,6 @@
 title: Set up an online channel
 description: This topic describes how to create a new online channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 
@@ -72,7 +71,7 @@ If your e-Commerce site will support multiple languages, expand the **Languages*
 
 ## Set up payment account
 
-From within the **Payment account** section, you can add a third-party payment provider. For information on setting up an Adyen payment connector, see [Dynamics 365 Payment Connector for Adyen](../retail/dev-itpro/adyen-connector.md).
+From within the **Payment account** section, you can add a third-party payment provider. For information on setting up an Adyen payment connector, see [Dynamics 365 Payment Connector for Adyen](./dev-itpro/adyen-connector.md).
 
 ## Additional channel setup
 
@@ -135,7 +134,7 @@ The following image shows an example of a fulfillment group assignment setup.
 
 [Set up a call center channel](channel-setup-callcenter.md)
 
-[Dynamics 365 Payment Connector for Adyen](../retail/dev-itpro/adyen-connector.md)
+[Dynamics 365 Payment Connector for Adyen](./dev-itpro/adyen-connector.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,7 +4,6 @@
 title: Open Data Protocol (OData)
 description: This topic provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.
 author: Sunil-Garg
-manager: AnnBe
 
 ms.date: 06/19/2020
 
@@ -254,7 +253,7 @@ OData enables an SQL-like language that lets you create rich queries against the
 | \[Your organization's root URL\]/data/Customers?$select=FirstName,LastName | List all the customers, but show only the first name and last name properties. |
 | \[Your organization's root URL\]/data/Customers?$format=json               | List all the customers in a JSON format that can be used to interact with JavaScript clients. |
 
-The OData protocol supports many similar filtering and querying options on entities. For the full set of query options, see [Windows Communication Foundation](https://msdn.microsoft.com/library/ff478141.aspx).
+The OData protocol supports many similar filtering and querying options on entities. For the full set of query options, see [Windows Communication Foundation](/dotnet/framework/wcf/).
 
 ## Using Enums
 Enums are under namespace **Microsoft.Dynamics.DataEntities**. Enums can be included in an OData query is by using the following syntax.
@@ -336,7 +335,7 @@ There are instances where enums and entities share the same name. This name dupl
 OData does not support array fields in entities. This must be taken into consideration when designing entities that will be used with OData.
 
 ### After restarting AOS, the first OData call may take a long time to process
-The first OData call processed by an AOS that was restarted may take a long time to process because the metadata is not being cached. This latency can be avoided by warming up OData on AOS startup. For more details, see  [Build OData metadata cache when the AOS starts](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/odata-warmup).
+The first OData call processed by an AOS that was restarted may take a long time to process because the metadata is not being cached. This latency can be avoided by warming up OData on AOS startup. For more details, see  [Build OData metadata cache when the AOS starts](../sysadmin/odata-warmup.md).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

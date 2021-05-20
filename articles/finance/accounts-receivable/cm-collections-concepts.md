@@ -4,7 +4,6 @@
 title: Collections management key concepts
 description: The topics defines key concepts for collections management.
 author: mikefalkner
-manager: AnnBe
 ms.date: 11/27/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.10 (May 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.10. 
 author: josaw1
-manager: AnnBe
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: 
@@ -40,14 +39,14 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/) site.
+The following features are included in this release. The feature titles link to additional information on the [Release plans](/dynamics365-release-plan/2020wave1/) site.
 
-- [Azure AD support for POS sign-in](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/aad-support-pos-logon)
-- [Channel-side calculations for available physical inventory for stores](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/channel-side-calculations-physical-inventory-stores)
-- [Change mode of delivery operation for POS](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/change-mode-delivery-operation-pos)
-- [Upsell and cross-sell using available discounts by enabling store associates to view promotions in POS](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/up-sell-cross-sell-using-discounts-enabling-store-associates-view-promotions-point-sale-pos.)
-- [Email a receipt from the journal](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/email-receipt-journal)
-- [Auto-charges improvements to support fees based on channel](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
+- [Azure AD support for POS sign-in](/dynamics365-release-plan/2020wave1/dynamics365-commerce/aad-support-pos-logon)
+- [Channel-side calculations for available physical inventory for stores](/dynamics365-release-plan/2020wave1/dynamics365-commerce/channel-side-calculations-physical-inventory-stores)
+- [Change mode of delivery operation for POS](/dynamics365-release-plan/2020wave1/dynamics365-commerce/change-mode-delivery-operation-pos)
+- [Upsell and cross-sell using available discounts by enabling store associates to view promotions in POS](/dynamics365-release-plan/2020wave1/dynamics365-commerce/up-sell-cross-sell-using-discounts-enabling-store-associates-view-promotions-point-sale-pos.)
+- [Email a receipt from the journal](/dynamics365-release-plan/2020wave1/dynamics365-commerce/email-receipt-journal)
+- [Auto-charges improvements to support fees based on channel](/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
 
 
 ## Additional resources
@@ -64,7 +63,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 

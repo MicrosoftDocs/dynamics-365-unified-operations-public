@@ -4,7 +4,6 @@
 title: View and evaluate the results of questionnaires
 description: This article explains how you can view and evaluate the results of questionnaires that respondents complete. 
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollect
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 17444

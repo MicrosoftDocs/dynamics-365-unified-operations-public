@@ -4,7 +4,6 @@
 title: Accruing subscriptions  
 description: With service subscriptions, you manually accrue revenue in the periods following the date when you invoiced a fee transaction.
 author: ShylaThompson
-manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: 
@@ -46,7 +45,7 @@ If you credit invoiced subscription amounts, you can use two methods to reverse 
 
   - You can have the accrued amounts reversed on the date where the credit note is posted or on the original posting date of the accrual.
 
-For more information, see [Subscription parameters (form)](https://technet.microsoft.com/library/aa619615.aspx).
+For more information, see [Subscription parameters (form)](/dynamicsax-2012//subscription-parameters-form).
 
 ## Setup requirements
 

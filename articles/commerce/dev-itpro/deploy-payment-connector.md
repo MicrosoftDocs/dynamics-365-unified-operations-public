@@ -4,7 +4,6 @@
 title: Deploy payment connectors
 description: This topic describes how to deploy a payment connector package to the appropriate components.
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod:
@@ -62,7 +61,7 @@ To package the payment connector files, copy the payment assemblies to the folde
         - Commerce scale unit (self-hosted)
 
 > [!NOTE]
-> In releases earlier than 10.0.10, the RetailDeployablePackage can be deployed to both AOS and CSU. For later releases, the RetailDeployablePackage can be deployed only to CSU. To deploy the payment connector to AOS application version 10.0.10 and later, follow the information in [Create payment packaging for Application Explorer for self-service deployment](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/payment-connector-package).
+> In releases earlier than 10.0.10, the RetailDeployablePackage can be deployed to both AOS and CSU. For later releases, the RetailDeployablePackage can be deployed only to CSU. To deploy the payment connector to AOS application version 10.0.10 and later, follow the information in [Create payment packaging for Application Explorer for self-service deployment](./payment-connector-package.md).
 
 ### Upload and deploy deployable packages
 
@@ -78,7 +77,7 @@ To package the payment connector files, copy the payment assemblies to the folde
 5. Click **Upload**.
 6. Select the zipped package, upload it, and then click **Confirm**.
 
-After you've uploaded your deployable packages to the LCS asset library, you can deploy them to your environments through the LCS portal. After you've validated your deployment in your sandbox environment, you can create a service request to deploy it to your production environment. For more information, see [Apply a deployable package](../../dev-itpro/deployment/apply-deployable-package-system.md).
+After you've uploaded your deployable packages to the LCS asset library, you can deploy them to your environments through the LCS portal. After you've validated your deployment in your sandbox environment, you can create a service request to deploy it to your production environment. For more information, see [Apply a deployable package](../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md).
 
 #### Download and run installers on client computers
 
@@ -94,7 +93,6 @@ Payment connectors are pluggable. In a development environment, you can put the 
 
 |  Connector | Contents of the IPaymentProcessor Assemblies folder | Contents of the Payment Web Files folder | Contents of the IPaymentDevice Assemblies folder |
 |-----------|-----------------------------|------------------------------|---|
-| Application Object Server (AOS)                                            | &lt;*Aos.PackageDirectory*&gt;/bin/Connectors/ &lt;*Aos.WebRoot*&gt;/bin/ | &lt;*Aos.WebRoot*&gt;/Connectors/        | Not applicable                                   |
 | Commerce Scale Unit                                                              | &lt;*RS.WebRoot*&gt;/bin/                                                 | Not applicable                           | Not applicable                                   |
 | Cloud POS                                                                  | Not applicable                                                            | &lt;*CPOS.WebRoot*&gt;/Connectors/       | Not applicable                                   |
 | Remote Hardware Station (Internet Information Services \[IIS\])            | &lt;*HWS.WebRoot*&gt;/bin/                                                | Not applicable                           | &lt;*HWS.WebRoot*&gt;/bin/                       |
@@ -103,8 +101,6 @@ Payment connectors are pluggable. In a development environment, you can put the 
 
 Here is a key to the preceding table:
 
-- &lt;*Aos.PackageDirectory*&gt; is the package directory of AOS. You can find the path from the web.config file for AOS (key = **Aos.PackageDirectory**).
-- &lt;*Aos.WebRoot*&gt; is the web application root of AOS.
 - &lt;*RS.WebRoot*&gt; is the web application root of Commerce Scale Unit.
 - &lt;*HWS.WebRoot*&gt; is the web application root of a remote Hardware Station.
 - &lt;*MPOS.AppRoot*&gt; is the app installation folder of Modern POS (for example, C:\\Program Files (x86)\\Microsoft Dynamics AX70\\Retail Modern POS).

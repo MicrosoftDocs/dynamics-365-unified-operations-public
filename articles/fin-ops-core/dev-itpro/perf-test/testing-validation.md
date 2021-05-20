@@ -1,16 +1,11 @@
 ---
-# required metadata
-
 title: Testing and validations
 description: This tutorial shows you how to create and run test cases.
 author: jorisdg
-manager: AnnBe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -149,7 +144,7 @@ Example:
 ## Test module creation to manage test code and FormAdaptors
 Creating a test specific module helps to keep test code together and manageable.
 
-1. Open **Visual Studio** and go to **Finance and Operations** > **Model Management** > **Create model**.
+1. Open **Visual Studio** and go to **Dynamics 365** > **Model Management** > **Create model**.
 
 2. Enter the model name, select the layer, and then enter any additional details. Note that it's a good idea to include the word **Test** in the name of the test module. The default build definition is configured to discover all test modules that contain the word **Test**. 
    
@@ -164,7 +159,7 @@ You can generate test code from Task Recorder recording to execute headless (non
 
 1. Record a scenario in by using Task Recorder.
 
-2. To import a Task Recording, in Visual Studio, click **Finance and Operations** > **Addins** > **Import Task Recording**. 
+2. To import a Task Recording, in Visual Studio, click **Dynamics 365** > **Addins** > **Import Task Recording**. 
 
 3. In the **Import Task Recording** dialog, select the Test Module (ISVTestModule) under which you want to import task recording, and browse to recording xml file. 
 

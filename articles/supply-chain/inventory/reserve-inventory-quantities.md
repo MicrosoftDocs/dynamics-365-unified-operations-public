@@ -4,7 +4,6 @@
 title: Reserve inventory quantities
 description: This topic describes the different options that are available for reserving inventory.
 author: perlynne
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:

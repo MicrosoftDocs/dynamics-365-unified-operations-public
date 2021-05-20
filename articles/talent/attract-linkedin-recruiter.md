@@ -4,7 +4,6 @@
 title: Source candidates with LinkedIn Recruiter in Attract
 description: Use the LinkedIn integration provided by Microsoft Dynamics 365 Talent - Attract to source job candidates through LinkedIn Recruiter.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -86,7 +84,7 @@ From here, you can perform the following actions:
 
 ## Export LinkedIn candidates to Attract with one click
 
-While you're reviewing candidates in LinkedIn Recruiter, you can export them to jobs that you currently have open in Attract. For this step, you need Recruiter or Hiring Manager permissions in Attract. For more information about roles in Attract, see [Security and role management in Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/security-attract).
+While you're reviewing candidates in LinkedIn Recruiter, you can export them to jobs that you currently have open in Attract. For this step, you need Recruiter or Hiring Manager permissions in Attract. For more information about roles in Attract, see [Security and role management in Attract](/dynamics365/unified-operations/talent/security-attract).
 
 You must also make sure that the job has a Prospect stage. For more information, see [Prospect activity](./activities-attract.md#prospect-activity).
 

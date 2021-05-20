@@ -4,7 +4,6 @@
 title: Settle a partial customer payment that has multiple discount periods
 description: This article shows how partial customer payments are settled when there are multiple discount periods.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
@@ -37,7 +36,7 @@ This article shows how partial customer payments are settled when there are mult
 Fabrikam offers customer 4031 two cash discount periods. The customer receives a 2-percent cash discount if the invoice is paid in five days and a 1-percent cash discount if the invoice is paid in 14 days. Fabrikam also offers cash discounts on partial payments. The settlement parameters are located on the **Accounts receivable parameters** page.
 
 ## Invoice
-On June 25, Arnie enters and posts an invoice for 1,000.00 for customer 4031. When he reviews the cash discounts for this invoice, Arnie sees that customer 4031 receives a 20.00 discount if the invoice is paid by June 30. If the invoice is paid by July 9, the customer receives a 10.00 discount.
+On June 25, Arnie enters and posts an invoice for 1,000.00 for customer 4031. When Arnie reviews the cash discounts for this invoice, Arnie sees that customer 4031 receives a 20.00 discount if the invoice is paid by June 30. If the invoice is paid by July 9, the customer receives a 10.00 discount.
 
 | Cash discount date | Cash discount amount | Amount in transaction currency |
 |--------------------|----------------------|--------------------------------|
@@ -60,7 +59,7 @@ On June 28, Customer 4031 makes a partial payment of 294.00. Because June 28 is 
 
 Discount information appears at the bottom of the **Settle open transactions** page. If you don't change the **Amount to settle** value to **294.00**, the **Cash discount amount** values that appear will differ. However, 6.00 will be taken as the cash discount when the payment is posted, because settlement automatically adjusts the **Amount to settle** value for you.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Cash discount date           | 6/30/2015 |
 | Cash discount amount         | 20.00     |
@@ -79,7 +78,7 @@ On July 8, the customer pays the rest of the invoice amount. A 7.00 discount (1 
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 30.00     |

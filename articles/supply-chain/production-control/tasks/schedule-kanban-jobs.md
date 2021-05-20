@@ -4,7 +4,6 @@
 title: Schedule kanban jobs
 description: This procedure focuses on scheduling process kanban jobs for a specific work cell. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

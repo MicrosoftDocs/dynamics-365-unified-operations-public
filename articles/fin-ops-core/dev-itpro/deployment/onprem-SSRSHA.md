@@ -2,13 +2,11 @@
 # required metadata
 
 title: Configure high availability for SQL Server Reporting Services (SSRS) nodes
-description: This topic explains how to configure multiple Microsoft SQL Server Reporting Services (SSRS) nodes for Dynamics 365 Finance + Operations (on-premises) deployments.
+description: This topic explains how to configure Microsoft SQL Server Reporting Services (SSRS) nodes for Dynamics 365 Finance + Operations (on-premises) deployments.
 author: faix
-manager: AnnBe
 ms.date: 03/22/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -36,7 +34,7 @@ This topic explains how to configure multiple Microsoft SQL Server Reporting Ser
 
 This scenario uses Windows failover clusters. Therefore, you will have one active node that receives all requests and one passive node that is idle. If the active node becomes unavailable, the cluster will detect this event, and the passive node will start to receive all network traffic.
 
-This topic doesn't cover the setup of Windows failover clusters. For information, see [Create a failover cluster](https://docs.microsoft.com/windows-server/failover-clustering/create-failover-cluster).
+This topic doesn't cover the setup of Windows failover clusters. For information, see [Create a failover cluster](/windows-server/failover-clustering/create-failover-cluster).
 
 After the cluster is set up, you can configure your installation. The examples below will be based on the information displayed in the following illustration.
 

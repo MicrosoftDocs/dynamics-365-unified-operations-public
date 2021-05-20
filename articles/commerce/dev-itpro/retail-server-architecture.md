@@ -4,7 +4,6 @@
 title: Commerce Scale Unit architecture
 description: Commerce Scale Unit provides stateless services and business logic for Modern Point of Sale (POS) and E-Commerce clients.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

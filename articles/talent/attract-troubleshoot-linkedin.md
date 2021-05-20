@@ -4,7 +4,6 @@
 title: Troubleshooting integration with LinkedIn and Microsoft Dynamics 365 Talent - Attract
 description: This topic explains how to troubleshoot issues when you try to post jobs to LinkedIn from Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
@@ -15,7 +14,6 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

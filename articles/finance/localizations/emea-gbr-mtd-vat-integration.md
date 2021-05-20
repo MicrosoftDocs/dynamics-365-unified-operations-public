@@ -4,7 +4,6 @@
 title: Prepare for integration with MTD for VAT (United Kingdom)
 description: This topic explains the process of setting up Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom.
 author: liza-golub
-manager: AnnBe
 ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
@@ -111,7 +110,7 @@ Import the latest versions of these configurations. The version description usua
 >
 > ![Default for model mapping option](media/emea-gbr-default-for-model-mapping-parameter.png)
 
-For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Set up application-specific parameters
 
@@ -163,19 +162,19 @@ After the UK MTD-VAT setup.zip file is downloaded, open Finance, select the comp
 
 Before you import setup data from the package of data entities, follow these steps to make sure that the data entities in your application are refreshed and synced.
 
-1. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh has been completed. For more information about how to refresh the entity list, see [Entity list refresh](../../dev-itpro/data-entities/data-entities.md#entity-list-refresh).
-2. Validate that the source data and target data are correctly mapped. For more information, see the section about validation in [Data import and export jobs](../../dev-itpro/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
+1. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh has been completed. For more information about how to refresh the entity list, see [Entity list refresh](../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
+2. Validate that the source data and target data are correctly mapped. For more information, see the section about validation in [Data import and export jobs](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
 3. Before the data entities are used for the first time to import the data from the package, sync the mapping of source data and target data. In the list for the package, select a data entity, and then, on the Action Pane, select **Modify target mapping**. Then, above the grid for the package, select **Generate mapping** to create a mapping from scratch. 
 4. Save the mapping.
 5. Repeat steps 3 through 4 for each data entity in the package before you start the import.
 
-For more information about data management, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md). 
+For more information about data management, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). 
 
 You must now import data from the UK MTD-VAT setup.zip file into the selected company. In the **Data management** workspace, select **Import**, and set the **Source data format** field to **Package**. Select **Upload and add**, select the **UK MTD-VAT setup.zip** file on your computer, and upload it.
 
 ![Upload and add button](media/emea-gbr-mtd-vat-add-file.png)
 
-For more information, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json).
+For more information, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2ffin-and-ops%2ftoc.json).
 
 > [!NOTE]
 > Some records in the data entities in the package include a link to ER configurations. It's important that you import ER configurations into Finance before you start to import the data entities package.
@@ -779,7 +778,7 @@ When a request to HMRC in a batch job is initiated, the fraud prevention headers
 
 If, for some reason, a company decides to send requests to HMRC without transmitting fraud prevention headers, the version of the format that includes the fraud prevention headers can be deleted or not imported at all. Alternatively, you can disable these headers in the **MTD VAT web request headers format (UK)** format in the **Electronic reporting** module by following these steps.
 
-1. In the ER configurations tree, select the **MTD VAT web request headers format (UK)** format, and derive a new child format. For more information, see [Building a format selecting another format as a base](../../dev-itpro/analytics/general-electronic-reporting.md#building-a-format-selecting-another-format-as-a-base-customization).
+1. In the ER configurations tree, select the **MTD VAT web request headers format (UK)** format, and derive a new child format. For more information, see [Building a format selecting another format as a base](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md#building-a-format-selecting-another-format-as-a-base-customization).
 2. On the Action Pane, select **Designer** to open the child format in the designer.
 3. Select the **Gov-Client-Connection-Method** node, and set the **Enabled** property to **false**.
 
@@ -822,7 +821,7 @@ System admin consent is available in the following versions of the ER configurat
 > - Tax declaration model mapping
 > - MTD VAT model mapping (UK)
 
-For more information about how to download ER configurations from LCS, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information about how to download ER configurations from LCS, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ### System admin consent
 
@@ -876,8 +875,8 @@ When a company that has a primary address outside the UK considers VAT managemen
 6. On the **Electronic messages** page, select **Message processing**, and then select **Preview VAT return**. 
 7. In the **Format mapping** field, select the child configuration of the **VAT Declaration Excel (UK)** format.
 
-For more information about how to derive ER configurations, see [Version control](../../dev-itpro/analytics/electronic-reporting-configuration.md) and 
-[Building a format selecting another format as a base](../../dev-itpro/analytics/general-electronic-reporting.md).
+For more information about how to derive ER configurations, see [Version control](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md) and 
+[Building a format selecting another format as a base](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 For more information about how to set up application-specific parameters for MTD for VAT, see the [Set up application-specific parameters](#set-up-application-specific-parameters) section earlier in this topic.
 

@@ -2,10 +2,9 @@
 # required metadata
 
 title: Priority-based throttling
-description: This topic provides information about priority-based throttling for Odata and custom service-based integrations.
+description: This topic provides information about priority-based throttling for OData and custom service-based integrations.
 author: hasaid
-manager: AnnBe
-ms.date: 09/25/2020
+ms.date: 05/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,20 +32,27 @@ ms.dyn365.ops.version: Platform update 37
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change. To test this capability, configure integration priorities on the **Throttling priority mapping** page.  
+> Priority-based throttling is enabled by default starting in Dynamics 365 Finance version 10.0.19. To learn about how you can prepare your environment prior to updating to  version 10.0.19, see [FAQ document](throttling-faq.md). To test this capability, configure the integration priorities on the **Throttling priority mapping** page.
 
 
-Priority-based throttling prevents the over-utilization of resources to preserve the system's responsiveness and ensure consistent availability and performance for environments running Dynamics 365 Finance and Operations apps.
+> [!IMPORTANT]
+> [KB 4615823](https://fix.lcs.dynamics.com/Issue/Details?kb=4615823&bugId=560394&dbType=3&qc=bdc60364311159f2509ed641a0d858a46b5c57effbae2ffe778cd41f2109f7e9) includes two important fixes that directly impact the priority-based throttling experience. 
+> 
+> This fix ensures that 429 HTTP messages are sent when a throttling event occurs in your environment and that the events reflect the correct threshold calculations for your environment. 
+>
+> The fix is available as part of the quality update for 10.0.17. We recommend you install this version to ensure that your environment is ready for priority-based throttling.
 
-- Integrations can be prioritized based on business-critical needs. Throttling honors these priorities. 
-- For OData and custom service requests, a 429 error "Too many requests", will occur. 
+Priority-based throttling introduces service protection settings that prevent the over-utilization of resources to preserve the system's responsiveness and ensure consistent availability and performance for environments running Finance and Operations apps.
+
+
+You have the ability to set relative priority for the OData and custom service-based integrations, depending on your business-critical need for these integrations. The throttling manager will then honor these priorities set for these requests.
+
+- For OData and custom service requests, an error which states "Too many requests" will be sent when system health and performance are affected. 
 - You can query throttling events on the **Lifecycle Services Monitoring** page.  
 
-Priority-based throttling provides the ability to set priorities for OData and custom service-based integrations, depending on the business-critical need of integrations.
+The **Throttling Priority Mapping** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. 
 
-The **Integration priority** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. 
-
-Setting appropriate priorities ensures that low-priority integrations will be throttled before high-priority integrations, based on the integration. For more information about how to set up integration, see [Enable connectivity with external services](https://docs.microsoft.com/learn/modules/integrate-azure-finance-operations/7-connect-external). 
+Setting appropriate priorities ensures that low-priority integrations will be throttled before high-priority integrations. For more information about how to set up integration, see [Enable connectivity with external services](/learn/modules/integrate-azure-finance-operations/7-connect-external). 
 
 There are two kinds of applications are supported in Microsoft Azure Active Directory (Azure AD):
 
@@ -96,7 +102,7 @@ When a request is throttled, the system provides a value indicating the duration
 
 ## Monitoring
 
-To have a successful onboarding experience with the throttling capability, you must also be able to monitor your Odata and custom service integration patterns. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center, contains a collection of monitoring and diagnostics tools that can help ensure that you have an accurate view of the environments you manage. For more details, see [Monitoring and diagnostics tools in Lifecycle Services (LCS)](../lifecycle-services/monitoring-diagnostics.md).
+To have a successful onboarding experience with the throttling capability, you must also be able to monitor your OData and custom service integration patterns. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center, contains a collection of monitoring and diagnostics tools that can help ensure that you have an accurate view of the environments you manage. For more information, see [Monitoring and diagnostics tools in Lifecycle Services (LCS)](../lifecycle-services/monitoring-diagnostics.md).
 
 You can use a set of predefined queries to get raw logs for an issue. You can then export the logs for a more advanced analysis. The following types of queries are available:
 
@@ -109,8 +115,8 @@ You can use a set of predefined queries to get raw logs for an issue. You can th
 2. In the **Environments** section, select the environment to view, and then select **Full details**.
 3. On the **Environment details** page, select **Environment monitoring** to open the Monitoring and diagnostics portal. 
 4. On the **Environment monitoring** page, select the **Activity** tab to view the **Raw logs** page. 
-5. Select the **Query name**, and then select **All throttling events** for all Odata and custom services activities.
-6. Select the **Query name**, and then select **Requests throttled** for all Odata and custom services requests that have been throttled.
+5. Select the **Query name**, and then select **All throttling events** for all OData and custom services activities.
+6. Select the **Query name**, and then select **Requests throttled** for all OData and custom services requests that have been throttled.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

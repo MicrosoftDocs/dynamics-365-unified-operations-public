@@ -4,8 +4,7 @@
 title: Reuse ER configurations with Excel templates to generate reports in Word format
 description: This topic describes how report formats that were designed to generate reports as Excel workbooks can be configured to generate reports as Word documents.
 author: NickSelin
-manager: AnnBe 
-ms.date: 01/11/2021
+ms.date: 04/23/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -40,8 +39,8 @@ To complete these procedures, you must first follow the steps in the [Design a c
 
 You must also download and locally save the following templates for the sample report:
 
-- [Template of Payment Report (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=862266)
-- [Bounded Template of Payment Report (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Template of Payment Report (SampleVendPaymDocReport.docx)](https://download.microsoft.com/download/0/d/e/0de5a87c-95fc-4dfa-958f-285cb28b5b2b/SampleVendPaymDocReport.docx)
+- [Bounded Template of Payment Report (SampleVendPaymDocReportBounded.docx)](https://download.microsoft.com/download/a/1/2/a126cb43-6281-4f7b-bde0-25e03ff9bc1e/SampleVendPaymDocReportBounded.docx)
 
 These procedures are for a feature that was added in Dynamics 365 for Operations version 1611 (November 2016).
 
@@ -94,7 +93,7 @@ Currently, the Excel document is used as a template to generate the output in OP
 
 You can now map the elements of the **Report** custom XML part to the content controls of the Word document.
 
-If you're familiar with the process of designing Word documents as forms that contain [content controls](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) that are mapped to elements of [custom XML parts](https://docs.microsoft.com/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019), complete all steps in the next procedure to create the document. For more information, see [Create forms that users complete or print in Words](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Otherwise, skip the next procedure.
+If you're familiar with the process of designing Word documents as forms that contain [content controls](/office/client-developer/word/content-controls-in-word) that are mapped to elements of [custom XML parts](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019), complete all steps in the next procedure to create the document. For more information, see [Create forms that users complete or print in Words](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Otherwise, skip the next procedure.
 
 ## <a id='get-word-doc'></a>Get a Word document that has a custom XML part and do data mapping
 

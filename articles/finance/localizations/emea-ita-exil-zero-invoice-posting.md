@@ -4,7 +4,6 @@
 title: Posting invoices with zero amount
 description: This topic explains how you can post financial transactions for invoices that have an amount of 0 (zero).
 author: ilkond
-manager: AnnBe
 ms.date: 11/21/2019
 ms.topic: article
 ms.prod: 
@@ -37,7 +36,7 @@ In Italy, financial transactions for invoices that have a total amount of 0 (zer
 Before you can post financial transactions for invoices that have a total amount of 0 (zero), the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Italy.
-- In the **Feature management** workspace, turn on the **Posting invoices with zero amount** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, turn on the **Posting invoices with zero amount** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Posting invoices that have an amount of 0 (zero)
 

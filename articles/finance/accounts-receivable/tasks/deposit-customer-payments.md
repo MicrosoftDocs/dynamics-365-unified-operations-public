@@ -4,7 +4,6 @@
 title: Deposit customer payments
 description: Deposit customer payments. 
 author: ShivamPandey-msft
-manager: AnnBe 
 ms.date: 07/18/2019
 ms.topic: business-process 
 ms.prod:  

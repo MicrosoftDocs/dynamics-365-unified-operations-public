@@ -3,7 +3,6 @@
 title: Accounting reporting in electronic format (Russia)
 description: This topic explains how to set up accounting reporting for Russia.
 author: Anasyash
-manager: AnnBe
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
@@ -38,7 +37,7 @@ ms.dyn365.ops.version: 10.0.1
     - Financial reports model mapping (RU)
     - Accounting reporting format 5.08 (RU)
 
-    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2. Upload the Data management package settings.
 

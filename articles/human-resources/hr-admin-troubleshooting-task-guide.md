@@ -4,7 +4,6 @@
 title: Save task guides to LCS and replay them
 description: This article explains how to save task guides to Microsoft Dynamics Lifecycle Services (LCS) and then replay them.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -39,7 +37,7 @@ Microsoft Dynamics 365 Human Resources, which was deployed via Microsoft Dynamic
 
 **Issue**
 
-The customer wants to save new task recordings to his or her LCS project, and then replay the saved task guides.
+The customer wants to save new task recordings to the LCS project, and then replay the saved task guides.
 
 **Resolution**
 

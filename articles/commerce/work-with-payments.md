@@ -4,7 +4,6 @@
 title: Payment methods in call centers
 description: This topic describes the various payment methods that you can use in a call center in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 03/28/2018
 ms.topic: article
 ms.prod: 
@@ -54,7 +53,7 @@ As methods of payment are defined, they should be linked to a ledger or bank acc
 
 For refund processing scenarios, Call center also uses some of the payment methods that are defined in Accounts receivable. To configure these payment methods, go to **Retail and Commerce** \> **Channel setup** \> **Call center setup** \> **Call center refund methods**. You must complete this configuration to process refund checks to customers. For example, if a customer originally paid for an order by using cash or a check, the user might want to send the customer a refund check through Accounts receivable. In this case, the cash and check payment types in the call center must be mapped to the correct payment method in Accounts receivable to help guarantee that the refund is correctly processed.
 
-Additionally, if a user is processing a return order as a call center user in Commerce, but he or she can't link the return to an original sale, the **Return** payment method must be defined in the Call center parameters. Go to **Retail and Commerce** \> **Channel setup** \> **Call center setup** \> **Call center parameters**, and then, on the **RMA/Return** tab, in the **Payment method** field, make sure that a payment method is defined. The payment method will be the payment method that is used for refunds. Typically, it will be defined as either a check method or a customer account method.
+Additionally, if a user is processing a return order as a call center user in Commerce, but the user can't link the return to an original sale, the **Return** payment method must be defined in the Call center parameters. Go to **Retail and Commerce** \> **Channel setup** \> **Call center setup** \> **Call center parameters**, and then, on the **RMA/Return** tab, in the **Payment method** field, make sure that a payment method is defined. The payment method will be the payment method that is used for refunds. Typically, it will be defined as either a check method or a customer account method.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

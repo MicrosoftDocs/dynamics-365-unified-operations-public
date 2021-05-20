@@ -4,7 +4,6 @@
 title: Cash register functionality for France
 description: This topic provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-manager: vastrup
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
@@ -195,7 +194,7 @@ A closed journal is digitally signed. You can view the journal signature, togeth
 
 An archive is an XML file that can be exported from a Period grand total journal that has been closed. It includes the totals for the closed period, and also includes detailed data about sales transactions and events. The exported file is digitally signed, and the signature is contained in a separate file.
 
-The archive format is implemented by using [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md).
+The archive format is implemented by using [Electronic reporting (ER)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## Setting up Commerce for France
 
@@ -219,7 +218,7 @@ You must make the following changes on the **Legal entities** page. These settin
 ### Set up VAT per French requirements
 
 
-You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../finance/general-ledger/indirect-taxes-overview.md).
 
 
 You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in France.
@@ -317,7 +316,7 @@ To digitally sign Period grand total journals and archives, you must set up digi
 - The certificate must be uploaded to the Key Vault storage.
 - The Application Object Server (AOS) application must be authorized to read secrets from the Key Vault storage.
 
-For more information about how to work with Key Vault, see [Get started with Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-get-started).
+For more information about how to work with Key Vault, see [Get started with Azure Key Vault](/azure/key-vault/key-vault-get-started).
 
 Then, on the **Key Vault parameters** page, you must specify the parameters for accessing the Key Vault storage:
 
@@ -335,7 +334,7 @@ Finally, on the **Commerce parameters** page, you must specify the parameters fo
 
 ### Configure the archive export format
 
-You can download the ER configuration for the archive from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following versions, or later versions, of the configurations:
+You can download the ER configuration for the archive from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following versions, or later versions, of the configurations:
 
 - **Retail channel data.version.2** data model
 - **Archiving DMM.version.2.3** data model mapping

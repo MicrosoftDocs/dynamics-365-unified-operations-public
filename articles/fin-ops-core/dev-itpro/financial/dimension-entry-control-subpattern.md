@@ -4,7 +4,6 @@
 title: Dimension Entry Control subpattern
 description: This article provides information about the Dimension Entry Control subpattern.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

@@ -4,8 +4,7 @@
 title: Commerce Data Exchange best practices
 description: This topic describes data synchronization with Commerce Data Exchange (CDX) in a Microsoft Dynamics 365 Commerce environment.
 author: jashanno
-manager: AnnBe
-ms.date: 03/10/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,17 +40,17 @@ Before you go through this topic, it's important that you understand the concept
 
 The main content of this topic is organized into tables, where the first column includes lists of tag-like "associated areas" to help you more quickly find best practices that are related to your areas of concern. For new implementations, you might find it useful to copy these tables to a location where you can check off the various best practices as they are completed. In this way, you can help ensure that the implementation is prepared as well as possible before you move forward to production.
 
-## Recommended configurations (with up to date maturity information to denote confidence of functionality)
+## Recommended configurations (with up-to-date maturity information to denote confidence of functionality)
 
-The following configurations have been released but cause changes to logic that may not be useful for all usage scenarios. These are features that have been tested but have not been thoroughly validated in all scenarios. In the following table, maturity has been listed to provide insight in regard to confidence of functionality.
+The following configurations have been released but cause changes to logic that may not be useful for all usage scenarios. These features have been tested but have not been thoroughly validated in all scenarios. In the following table, maturity has been listed to provide insight in regard to confidence of functionality.
 
 The features will change from month to month, so it is valuable to check back regarding the maturity of a particular feature and whether any new features have been added. To apply any of the following features, go to **Retail and Commerce > Headquarters setup > Parameters > Commerce parameters**.  On the leftmost menu, select **Configuration parameters**.  In the page that appears, enter the key (shown in the table below) into the **Name** field and the default value (listed in the **Description** column in the table below) into the **Value** field.
 
 | Feature | Key | Description |  Maturity |
 |------------------|---------------------|------------------------------|-----------------------------------|
-| Delayed download session creation | CDX_ENABLE_DELAYED_OFFLINE_DOWNLOAD_SESSION_CREATION | This key requires a Modern POS device to be activated prior to creating the associated download sessions. This feature prevents creating exceptionally large amounts of download sessions for POS registers that could sit unused for an unknown, extended length of time.<br><br>The default value is **0**.  To enable the feature, set the value to **1**.| High<br><br>(Feature was released in version 10.0.15.) |
-| Package order enforcement | CDX_ENABLE_DOWNLOAD_SESSION_DEPENDENCY_ENFORCEMENT | This key forces download session application to apply in order.<br><br>If session application fails (based on the **Try count times** value, which is by default a value of three), the session will be marked as **Suspended** and session applications will not proceed until the suspended session is retried or canceled.<br><br>Using this key and rerunning previously applied sessions (sessions that are not in **Available** or **Suspended** states) cannot be done.<br><br>The default value should be **0**. | Moderate<br><br>(Feature was released in version 10.0.18.) |
-| Roll back on failure | CDX_ENABLE_ROLLBACK_ON_FAILURE | When synchronizing uploaded data from offline databases (based on the P-job distribution schedule), the system attempts to merge transactions.<br><br>If duplicate transaction IDs are found this could cause an error. This feature prevents overwriting the duplicated transaction IDs.<br><br>The default value should be **1**. | High<br><br>(Feature was released in version 10.0.13.) |
+| Delayed download session creation | CDX_ENABLE_DELAYED_OFFLINE_DOWNLOAD_SESSION_CREATION | This parameter delays the download sessions from being created until after the Modern POS device is activated.  This delay prevents creating unnecessary download sessions that may not be used for an extended period of time. The default value is **0**, which means disabled. To enable the feature, set the value to **1**.| High<br><br>(Feature was released in version 10.0.15.) |
+| Package order enforcement | CDX_ENABLE_DOWNLOAD_SESSION_DEPENDENCY_ENFORCEMENT | This parameter enforces download session application to apply in order. If a download session application fails (which would occur after a number of attempts that are defined in the **Try count times** value that is by default a value of three), the session will be marked as **Suspended** and session applications will not proceed until the suspended session is retried or canceled. Using this key, you cannot rerun previously applied sessions (sessions that are not in the **Available** or **Suspended** state).<br><br>This feature will prevent download sessions failures due to unique key exceptions that could occur after applying download sessions out of order. The default value is **0**, which means disabled. | Moderate<br><br>(Feature was released in version 10.0.18.) |
+| Roll back on failure | CDX_ENABLE_ROLLBACK_ON_FAILURE | **Due to a known issue with this key, it is not recommended for use.**  When synchronizing transactions from an offline database to the channel database (based on the P-job distribution schedule), the system normally merges records. This means that records with duplicate transaction IDs will be overwritten. With this feature, the offline synchronization will instead insert records. This insert prevents the overwrite and throws an error so the issue can be investigated. At this time, the purge of offline transactions post synchronization could fail, triggering the insert error and stopping the offline sync. Due to this, it is currently recommended that this feature should be disabled. The default value is **1**, meaning that it's enabled by default.  It is highly recommended to change this value to **0**. | Low, due to known issue.<br><br>(Feature was released in version 10.0.13.) |
 
 ## Updating configurations
 
@@ -68,6 +67,37 @@ The following should be performed after every update to the Dynamics 365 environ
 | <ul><li>Parameters</li><li>Commerce scheduler</li><li>Retry</li></ul> | Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce scheduler parameters**, and set **Try count** to **3**. If the value of this field is too high, download sessions might fail during high-usage times.  Additionally, verify (or set) **Full dataset generation interval in days** to **0**. This means full dataset generation will not occur unless required by something other than time. Setting these values allows CDX to function in a more expected manner while reducing possible error or performance issues. |
 | <ul><li>Functionality profile</li><li>Data retention</li><li>Return policy</li> | Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profile**, and then, in the **Functions** section, set **Days transactions exist** to a value that is the same as, or close to the value that is defined for the return policy. For example, if the return policy states an item can be returned within 30 days, set this field to **30**, **31**, or **60** if special exceptions are allowed beyond the usual policy (this would be twice the usual policy, allowing for faster returns even beyond the usual policy limits). |
 | <ul><li>Channel database group</li><li>Distribution schedule</li><li>Offline profile</li><li>Pause</li><li>Data</li><li>Download</li></ul> | We highly recommend that you have either a "dummy" channel database group (that is, a group that isn't associated with any distribution schedule job) that you assign to the newly generated terminals, or a special offline profile where the **Pause offline synchronization** option is set to **Yes**. In this way, data generation can occur when it's required and when the system is most available to do it. (However, the system might pause multiple times as required.) |
+  
+### Enable table and index compression
+Before you read this topic, we recommended that you read about the different recommended versions of SQL Server used in on-premises database components (offline database and channel database as part of a CSU) in [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md#implementation-considerations). It's important to enable table/index compression on their on-premises databases, such as the offline databases for Modern POS and the channel databases for the CSU (self-hosted). This is supported only on SQL Server 2016 SP1 Express, SQL Server 2017 Express, SQL Server 2019 Express, and later. If you are still running SQL Server Express 2014, an upgrade to a newer, supported version will be required. Generate a report of the top tables using disk space (**SQL Server Management Studio > Reports > Standard Reports > Disk Usage by Top Tables**). After that, you can enable compression for each table and index at the top of the report. The basic commands are shown below.
+
+```Console
+ALTER TABLE [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX <index1_name> ON [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX <index2_name> ON [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+```
+
+As an example of a table that often benefits from compression, this example uses ax.INVENTDIM:
+
+```Console
+sp_helpindex 'ax.INVENTDIM'
+```
+
+The above query will show all the indexes for the selected table (the list of which is shown below in the next set of commands). Based on that query, can take the basic commands originally shown in this topic to compress the table and all related indices.
+
+```Console
+ALTER TABLE [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [I_-65082180_-588450352] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [I_-65082180_-997209838] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [IX_INVENTDIM_DATAAREAID_CONFIGID_INVENTSIZEID_INVENTCOLORID_INVENTSTYLEID_INVENTLOCATIONID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [IX_INVENTDIM_DATAAREAID_INVENTLOCATIONID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [IX_INVENTDIM_DATAAREAID_INVENTLOCATIONID_RECID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [IX_INVENTDIM_INVENTLOCATIONID_INVENTSITEID_LICENSEPLATEID_WMSLOCATIONID_WMSPALLETID_CONFIGID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+ALTER INDEX [IX_INVENTDIM_RECID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
+```
+
+We recommend that you repeat this section for the top tables in the report, until an appropriate database size is reached.
+
 
 ## Practices that affect performance
 

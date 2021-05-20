@@ -4,7 +4,6 @@
 title: Module view file
 description: This topic covers the module view file in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
-manager: annbe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
@@ -31,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 
 This topic covers the module view file in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 A module view file is a TypeScript (.ts) file that controls a module's view. It's called from the module's React component. Additional module views can be provided in various themes to render a module differently, depending on the requirements of the theme.
 

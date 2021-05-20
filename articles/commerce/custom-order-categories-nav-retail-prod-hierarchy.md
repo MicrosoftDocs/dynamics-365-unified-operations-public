@@ -4,7 +4,6 @@
 title: Change the sort order for merchandising entities
 description: This topic explains the concepts that are related to controlling the display order for various merchandising-related entities in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
@@ -89,7 +88,7 @@ The display order for the channel navigation hierarchy is reflected in HQ, catal
 ![POS with custom sorted categories](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> By default the custom sort order feature is turned off. To learn how to turn on this feature and other features, see [Feature management](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+> By default the custom sort order feature is turned off. To learn how to turn on this feature and other features, see [Feature management](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,17 +1,12 @@
 ---
-# required metadata
-
 title: Customize application startup by using delegates
 description: This topic explains how you can add new data sources to existing forms by using extensions.
 author: jorisdg
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

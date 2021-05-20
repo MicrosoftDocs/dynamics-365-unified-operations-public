@@ -4,7 +4,6 @@
 title: Dual-write FAQ
 description: This topic answers frequently asked questions about dual-write.
 author: robinarh
-manager: AnnBe
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod:
@@ -62,7 +61,7 @@ Legal table mapping can be done when the Dataverse environment is linked. You ca
 
 ### If dual-write solutions are installed in Dataverse, can I uninstall them?
 
-Dual-write solutions are managed solutions that can be uninstalled. However, when a managed solution is uninstalled, all components in the solution are deleted. Any data that is stored in the components is also deleted. For more information, see [Maintain managed solutions](https://docs.microsoft.com/powerapps/developer/common-data-service/maintain-managed-solutions).
+Dual-write solutions are managed solutions that can be uninstalled. However, when a managed solution is uninstalled, all components in the solution are deleted. Any data that is stored in the components is also deleted. For more information, see [Maintain managed solutions](/powerapps/developer/common-data-service/maintain-managed-solutions).
 
 ### I have data in both a customer engagement app and a Finance and Operations app, and I bootstrap my existing data in the customer engagement app. If my data isn't currently aligned, can I specify a master source for the initialization run, so that all differences are applied to the target?
 
@@ -74,7 +73,7 @@ After the bootstrapping is done, you can configure the initial synchronization t
 
 The integration key is the natural key that uniquely identifies rows. Integration keys are required only for Dataverse tables. You can manually create an integration key in dual-write. An integration key can also be automatically created from the table's alternate keys, if an alternate key is already provided for the table. Integration keys are used for the same purpose as alternate keys: they provide an efficient and accurate way to integrate data with external systems. Integration keys are essential in cases where an external system doesn't store the globally unique identifiers (GUIDs) that uniquely identify rows in Dataverse.
 
-Dual-write uses integration keys to uniquely identify rows, by using one or more table column values that represent a unique combination. For example, to identify an account row by using an integration key, you can use the account number column. Alternatively, you can use the account number column together with other columns that have values that should not change. For more information, see [Define alternate keys using Power Apps portal](https://docs.microsoft.com/powerapps/maker/common-data-service/define-alternate-keys-portal).
+Dual-write uses integration keys to uniquely identify rows, by using one or more table column values that represent a unique combination. For example, to identify an account row by using an integration key, you can use the account number column. Alternatively, you can use the account number column together with other columns that have values that should not change. For more information, see [Define alternate keys using Power Apps portal](/powerapps/maker/common-data-service/define-alternate-keys-portal).
 
 It's important that keys be matched between the Finance and Operations environment and the Dataverse environment. Otherwise, issues might occur during the initial synchronization phase.
 
@@ -86,9 +85,9 @@ You can export maps and then import them into a different environment. You can a
 
 For basic filtering examples, see [Filter your data](customizing-mappings.md#filter-your-data).
 
-For more advanced examples for Dataverse, see [Filter results](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#filter-results). Nested lookup isn't supported in dual-write source filters. Only [standard filter operators](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators) directly against table columns are supported.
+For more advanced examples for Dataverse, see [Filter results](/powerapps/developer/common-data-service/webapi/query-data-web-api#filter-results). Nested lookup isn't supported in dual-write source filters. Only [standard filter operators](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators) directly against table columns are supported.
 
-For more advanced Finance and Operations filters, see [Using Expressions in Query Ranges](https://docs.microsoft.com/dynamicsax-2012/developer/using-expressions-in-query-ranges) and [Advanced filtering and query syntax](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/advanced-filtering-query-options).
+For more advanced Finance and Operations filters, see [Using Expressions in Query Ranges](/dynamicsax-2012/developer/using-expressions-in-query-ranges) and [Advanced filtering and query syntax](../../../fin-ops/get-started/advanced-filtering-query-options.md).
 
 ### Dual-write live synchronization introduces tight coupling across applications. What happens if one side fails? Will the other side fail too?
 
@@ -121,7 +120,7 @@ Yes. You can use both [computed columns and virtual columns](https://docs.micros
 
 ### When I use the Dataverse offline app, what happens if I can't sync the data after reconnection? Does this situation cause an inconsistent state between the Dataverse environment and the Finance and Operations environment?
 
-You can interact with Dataverse data offline when using the [Dynamics 365 for phones app](https://docs.microsoft.com/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets) or the [Field Service Mobile app](https://docs.microsoft.com/dynamics365/field-service/field-service-mobile-overview) in offline mode. In both apps, data is stored offline and can be synced with the server at your discretion. If there are errors when the offline data is synced with the server, and updates can't be done because the other environment is failing, data sync will fail, and Dataverse will not be updated. When the integration is paused, you can re-run the sync and save your updates on the server. These changes will be staged and then synced with the Finance and Operations environment when the mapping is up and running again. For more information, see [Run model-driven apps and canvas apps on Power Apps mobile](https://docs.microsoft.com/powerapps/mobile/run-powerapps-on-mobile).
+You can interact with Dataverse data offline when using the [Dynamics 365 for phones app](/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets) or the [Field Service Mobile app](/dynamics365/field-service/field-service-mobile-overview) in offline mode. In both apps, data is stored offline and can be synced with the server at your discretion. If there are errors when the offline data is synced with the server, and updates can't be done because the other environment is failing, data sync will fail, and Dataverse will not be updated. When the integration is paused, you can re-run the sync and save your updates on the server. These changes will be staged and then synced with the Finance and Operations environment when the mapping is up and running again. For more information, see [Run model-driven apps and canvas apps on Power Apps mobile](/powerapps/mobile/run-powerapps-on-mobile).
 
 ## Mapping concepts between apps
 
@@ -132,7 +131,7 @@ Number sequences for Finance and Operations apps and customer engagement apps ar
 + In the Finance and Operations app, use **F0001, F0002, F0003**. In the customer engagement app, use **C0001, C0002, C0003**.
 + In the Finance and Operations app, use **US0001 to US4999**. In the customer engagement app, use **US5000 to US9999**.
 
-If a table is created in only one system, set up the number sequence in the source app only. For more information, see [Autonumber columns](https://docs.microsoft.com/powerapps/maker/common-data-service/autonumber-columns).
+If a table is created in only one system, set up the number sequence in the source app only. For more information, see [Autonumber columns](/powerapps/maker/common-data-service/autonumber-columns).
 
 ### Can I map a company-specific table in a customer engagement app with a global table in a Finance and Operations app, or a global table in a customer engagement app with a company-specific table in a Finance and Operations app?
 
@@ -146,7 +145,7 @@ To enable table maps for dual-write, you must define an alternate key in Dataver
 
 ### Is there a document about best practices for table usage? Should I use Customers V2, Customers V3, or Customer Details? What is the difference between these tables, and what is the use case for each?
 
-You should use the [out-of-box scenarios](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping) if you can, because they cover common scenarios such as customer/vendor integration.
+You should use the [out-of-box scenarios](./customer-mapping.md) if you can, because they cover common scenarios such as customer/vendor integration.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

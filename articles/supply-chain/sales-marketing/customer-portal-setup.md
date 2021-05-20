@@ -4,7 +4,6 @@
 title: Install, set up, and update the Customer portal
 description: This topic provides licensing details and setup instructions for the Customer portal.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: 
@@ -33,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 To implement the Customer portal, you must have the following licenses:
 
-- **Power Apps portals** – This license is required to host the Customer portal. Portals are licensed based on usage. For more information, see the [Power Apps portals licensing requirements](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals).
+- **Power Apps portals** – This license is required to host the Customer portal. Portals are licensed based on usage. For more information, see the [Power Apps portals licensing requirements](/power-platform/admin/powerapps-flow-licensing-faq#portals).
 - **Dual-write** – You must have the necessary licenses to enable dual-write for Supply Chain Management tables. For more information, see the [system requirements for dual-write](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## Dependencies on dual-write and Power Apps portals
@@ -46,7 +45,7 @@ Unlike other features from Supply Chain Management, the Customer portal template
 
 ## <a name="required-setup"></a>Required setup to enable the Customer portal
 
-After you've made sure that you have the required licenses, you can set up dual-write as described in the [dual-write initial synchronization instructions](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md).
+After you've made sure that you have the required licenses, you can set up dual-write as described in the [dual-write initial synchronization instructions](/dynamics365/supply-chain/sales-marketing/enable-entity-map).
 
 Be sure to enable the following table mappings in dual-write:
 
@@ -80,14 +79,14 @@ More functionality might be added to the Customer portal later. Any changes that
 
 To learn how you can set up and customize the Customer portal, you should start by reviewing the following documentation for the underlying technologies:
 
-- [Power Apps portals documentation](https://docs.microsoft.com/powerapps/maker/portals/overview)
+- [Power Apps portals documentation](/powerapps/maker/portals/overview)
 - [Dual-write documentation](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
 To effectively manage your portals, you must understand the Power Apps portals and Microsoft Dataverse lifecycle. For more information, see the following resources:
 
-- [About portal lifecycle](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
-- [Upgrade a portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
-- [Migrate portal configuration](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [About portal lifecycle](/powerapps/maker/portals/admin/portal-lifecycle)
+- [Upgrade a portal](/powerapps/maker/portals/admin/upgrade-portal)
+- [Migrate portal configuration](/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Solution Lifecycle Management: Dynamics 365 for Customer Engagement apps](https://www.microsoft.com/download/details.aspx?id=57777)
 
 

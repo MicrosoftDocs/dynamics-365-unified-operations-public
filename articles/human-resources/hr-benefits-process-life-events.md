@@ -4,7 +4,6 @@
 title: Process life events
 description: During the employee lifecycle in Microsoft Dynamics 365 Human Resources, each employee may encounter various life event changes.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521

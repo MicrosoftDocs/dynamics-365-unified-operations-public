@@ -4,7 +4,6 @@
 title: Create variable compensation plans
 description: Variable compensation makes up an employee's irregular pay, such as bonuses or stock awards. This article describes the components that must be set up before you can use variable compensation and enroll an employee in a variable compensation plan.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.search.form: HCMCompEligibility, HcmJobFunction, HcmWorker, HRMCompPerfPlan, 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 16011
@@ -44,7 +42,7 @@ The calculation of variable compensation amounts for your employees can be based
 
 ### Describe vesting rules
 
-Optionally, companies can set up **vesting rules**. Vesting rules describe how the variable award should be allocated over time. For example, a vesting rule might state that the employee will receive 25 percent of his or her total award every year for the next four years. Vesting rules are informational only.
+Optionally, companies can set up **vesting rules**. Vesting rules describe how the variable award should be allocated over time. For example, a vesting rule might state that the employee will receive 25 percent of the total award every year for the next four years. Vesting rules are informational only.
 
 ## Variable compensation plans
 The **variable compensation plan** contains the rules, calculation methods, and default values for the calculation of variable compensation for enrolled employees. When you create a variable compensation plan, you must set the variable compensation type. The variable compensation type determines whether the system calculates a currency amount or a number of units as the award. You must also set the calculation method:
@@ -55,7 +53,7 @@ The **variable compensation plan** contains the rules, calculation methods, and 
 The amount of the variable award can be based on either a percentage of the employee's regular base earnings or a set number of units.
 
 -   Select the **Percent of basis** option to enter a default percentage, and specify whether the basis should be the employee's fixed pay rate or the control point for the employee's compensation level. The compensation level is set on the employee's job. One of the reference points from the compensation structure can be set as the control point on the fixed compensation plan. The system will use the compensation level from the employee's job and cross-reference it with the control point that is listed on the employee's fixed compensation plan to find the control point amount for the employee's compensation level. The control point amount will then be used instead of the employee's fixed pay rate as the basis for the award.
--   Select the **Number of units** option to enter a default number of units, the value of each unit and the currency of the unit value if the compensation plan is for a non-cash award (for example, 200 units of stock that are valued at 40 USD), or just the number of units if the compensation plan is for a cash award. For a cash award, the employee will receive the specified number of units of the currency that is used for his or her fixed compensation plan (for example, 500 units of 1 USD). The one-to-one relationship control can be used to indicate whether there is a direct one-to-one mapping between the number of units and the unit value. When you create a variable compensation plan for a cash-based plan by using the number of units, this option is automatically locked to **Yes**, and the unit value is **1.0000**.
+-   Select the **Number of units** option to enter a default number of units, the value of each unit and the currency of the unit value if the compensation plan is for a non-cash award (for example, 200 units of stock that are valued at 40 USD), or just the number of units if the compensation plan is for a cash award. For a cash award, the employee will receive the specified number of units of the currency that is used for the fixed compensation plan (for example, 500 units of 1 USD). The one-to-one relationship control can be used to indicate whether there is a direct one-to-one mapping between the number of units and the unit value. When you create a variable compensation plan for a cash-based plan by using the number of units, this option is automatically locked to **Yes**, and the unit value is **1.0000**.
 
 The **Hire rule** setting lets you specify whether all employees should receive the same increase, regardless of the date they were hired (**Hire rule** = **None**), or whether employees should receive a percentage of the award that is based on the length of their employment during the cycle (**Hire rule** = **Percent**). 
 

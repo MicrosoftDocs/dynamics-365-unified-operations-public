@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Version control, metadata search, and navigation
 description: This tutorial will walk you through configuring Azure DevOps to enable source control on your models.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/24/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 23401
 ms.assetid: 46ed0115-6f8b-4757-b8d2-d4ccb76c733d
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Version control, metadata search, and navigation
@@ -140,12 +126,12 @@ This section describes the steps needed to add a solution to Azure DevOps source
 
 All Visual Studio projects belong to models. Models are source code distribution and deployment units that are typically larger in scope than a Visual Studio project. In the previous section, you added element files of the fleet management solution to source control. Because this was the first time that you added elements of the Fleet Management models to source control, you'll also need to check-in the model descriptor file.
 
-1. In Visual Studio, in **Team Explorer**, open **Source Control Explorer**, and then right-click on the metadata folder (for example, **\Trunk\Main\Metadata**).
-2. In the **Source Control Explorer** toolbar, click **Add Item to Folder**.
+1. In Visual Studio, in **Team Explorer**, open **Source Control Explorer**.
+2. Right-click the metadata folder (for example, **\Trunk\Main\Metadata**) and click **Add Items to Folder...**.
 3. Select your model descriptor file. The model descriptor file is the XML file manifest of your model. It's located in the **Descriptor** folder of the package that the model belongs to. The following image shows an example of where the model descriptor file of the Fleet Management model exists (c:\\packages\\FleetManagement\\Descriptor\\FleetManagement.xml).
 
     > [!NOTE]
-    > Your model store may be located under I:\AosService\PackagesLocalDirectory or c:\AosService\PackagesLocalDirectory or another drive, depending on your machine configuration.
+    > Your model store may be located under K:\AosService\PackagesLocalDirectory or c:\AosService\PackagesLocalDirectory or another drive, depending on your machine configuration.
 
     [![Adding FleetManagement.xml to source control](./media/addsourcecontrol_usingdevotools.png)](./media/addsourcecontrol_usingdevotools.png)
 

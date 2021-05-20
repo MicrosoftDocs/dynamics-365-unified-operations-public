@@ -4,7 +4,6 @@
 title: Planned maintenance window FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft planned maintenance windows.
 author: angelmarshall
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
@@ -74,7 +73,7 @@ The exact downtime for all updates will be included in the maintenance window no
 Operating system–level updates are applied monthly to your Microsoft-managed Tier 2 through Tier 5 sandbox environments and to the production environments. However, Microsoft-managed Tier 1 environments are updated weekly in the maintenance windows defined per region.
 
 ### Where can I learn more about what is applied?
-For more information about the updates that will be applied, see [Microsoft Security Bulletins](https://technet.microsoft.com/security/bulletins.aspx).
+For more information about the updates that will be applied, see [Microsoft Security Bulletins](/security-updates/).
 
 ### Where can I track progress of the update?
 During operating system–level updates, LCS doesn't currently indicate that any patching is in progress. However, Microsoft plans to add this functionality at some point.

@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Talent (May 13, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for May 13, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 05/13/2019
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -49,7 +47,7 @@ Changes described in this section apply to build number 8.1.2297. The numbers in
 
 ### Indicate instance type when provisioning Talent
 
-When provisioning a new instance of Talent, you can indicate whether the instance type is **Production** or **Sandbox**, which allows for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, please contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
+When provisioning a new instance of Talent, you can indicate whether the instance type is **Production** or **Sandbox**, which allows for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, please contact [Support](/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
 
 ### Dataverse table support for custom columns
 

@@ -4,7 +4,6 @@
 title: Sales to registered customers
 description: This topic provides information about sales to registered customers.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 

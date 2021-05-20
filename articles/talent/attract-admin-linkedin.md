@@ -4,7 +4,6 @@
 title: Set up LinkedIn integration with Attract
 description: This topic explains how to configure LinkedIn integration for Microsoft Dynamics 365 Talent - Attract so that you can easily post jobs to LinkedIn from Attract, and so that your recruiters can sync their recruiting information with a candidate's LinkedIn profile.
 author: andreabichsel
-manager: tfehr
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -44,7 +42,7 @@ Attract provides two ways to integrate with LinkedIn to help you source candidat
 You configure both options on the **LinkedIn Integration** tab in the Admin center. To open the Admin center, go to <https://attract.talent.dynamics.com/adminsettings>.
 
 > [!NOTE]
-> To use LinkedIn Recruiter integration with Attract, you need the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) and [LinkedIn Recruiter licenses](https://business.linkedin.com/talent-solutions/cx/17/08/recruiter-demo-fs2-k18). For more information, see [Which version of Microsoft Dynamics 365 Talent - Attract](./attract-comprehensive-hiring.md).
+> To use LinkedIn Recruiter integration with Attract, you need the [Comprehensive hiring add-on](/dynamics365/unified-operations/talent/attract-comprehensive-hiring) and [LinkedIn Recruiter licenses](https://business.linkedin.com/talent-solutions/cx/17/08/recruiter-demo-fs2-k18). For more information, see [Which version of Microsoft Dynamics 365 Talent - Attract](./attract-comprehensive-hiring.md).
 
 If you're having trouble posting jobs to LinkedIn, see [Troubleshooting integration with LinkedIn and Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md).
 
@@ -62,7 +60,7 @@ Jobs that are posted to LinkedIn appear on the live LinkedIn site. LinkedIn does
 2. Select the **LinkedIn Integration** tab.
 3. Under **Company name**, enter the name of your company, and under **Company ID**, enter your LinkedIn Company ID. Make sure that the company name matches the name that appears on your company's LinkedIn page. For more information about LinkedIn Company IDs, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://www.linkedin.com/help/linkedin/answer/98972).
 
-    If you need to change any information for your organization, see [Change your organization's address, technical contact, and more](https://docs.microsoft.com/office365/admin/manage/change-address-contact-and-more). If you still have issues, contact [LinkedIn support](https://www.linkedin.com/help/linkedin).
+    If you need to change any information for your organization, see [Change your organization's address, technical contact, and more](/office365/admin/manage/change-address-contact-and-more). If you still have issues, contact [LinkedIn support](https://www.linkedin.com/help/linkedin).
 
 4. Select **Save**.
 

@@ -4,7 +4,6 @@
 title: Replenishment over location capacity
 description: This topic provides information about the Replenishment over location capacity feature. This feature enables all replenishment work that will be required for the day to be created and manages availability of that replenishment work to ensure that the picking location neither runs out of inventory nor goes above capacity. 
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
@@ -244,7 +243,7 @@ Depending on your on-hand quantities, the work quantities that are created might
 
 #### On-hand inventory license plate ID
 
-Later in this scenario, you will use the warehouse app (or an emulator), where you must identify the license plate to complete the picking and replenishment scenarios.
+Later in this scenario, you will use the Warehouse Management mobile app (or an emulator), where you must identify the license plate to complete the picking and replenishment scenarios.
 
 To find the license plate IDs that you will need later, follow these steps.
 
@@ -269,7 +268,7 @@ You will perform the warehouse location replenishment for the first two work IDs
 
 #### Replenishment
 
-1. Sign in to the warehouse app as a user in warehouse *61*. (Enter *61* as the user ID and *1* as the password.)
+1. Sign in to the Warehouse Management mobile app as a user in warehouse *61*. (Enter *61* as the user ID and *1* as the password.)
 1. Go to **Inventory \> Replenishment**.
 
     You're prompted to complete the first replenishment work. The item number, quantity, and location to pick from are shown.
@@ -299,7 +298,7 @@ Until enough inventory is picked from the location to bring it below the work re
 
 Before the remaining replenishment work task can be completed, the picking location must be depleted of inventory to a level where the remaining replenishment work can be unblocked. In other words, the sum of the quantity of on-hand inventory in the location and the replenishment quantity can't exceed the **Overflow quantity** value. When this sum is less than the overflow quantity, the remaining replenishment work will be unblocked.
 
-1. Sign in to the warehouse app as a user in warehouse *61*. (Enter *61* as the user ID and *1* as the password.)
+1. Sign in to the Warehouse Management mobile app as a user in warehouse *61*. (Enter *61* as the user ID and *1* as the password.)
 1. Go to **Outbound \> Sales Picking**.
 1. Enter the first work ID for sales order 1.
 

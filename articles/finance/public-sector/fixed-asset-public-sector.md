@@ -4,7 +4,6 @@
 title: Fixed assets in the public sector
 description: This article describes the fixed assets functionality that is available for public sector. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

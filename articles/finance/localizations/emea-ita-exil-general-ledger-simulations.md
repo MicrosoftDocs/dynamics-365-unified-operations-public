@@ -4,7 +4,6 @@
 title: General ledger simulations (Italy)
 description: This topic provides information about posting ledger transactions as a simulation from the general journal and then review reports that include the simulated transactions.
 author: anasyash
-manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
@@ -44,7 +43,7 @@ You can review the posted simulation ledger transactions in the reports, **Trial
 Before you can use the General ledger simulations, the following prerequisites must be met:
 
 - The primary address of the legal entity is in Italy.
-- Enable the **General ledger simulations** feature in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- Enable the **General ledger simulations** feature in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Setup 
 

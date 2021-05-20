@@ -4,7 +4,6 @@
 title: Advance invoices for Commerce for Eastern Europe
 description: This topic explains how to set up advance notices for Commerce for Eastern Europe. 
 author: epopov
-manager: annbe
 ms.date: 10/23/2018
 ms.topic: article
 ms.prod: 
@@ -36,7 +35,7 @@ For Poland, Hungary, and Czech Republic, when a prepayment is received from a cu
 
 When the invoice for the sales order is finally posted, the final document should include the advance invoice, and any prepayments should be indicated.
 
-If you generate sales orders from Accounts receivable, you must manually generate advance invoices by using the procedure in [Advance invoices for Eastern Europe](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). If you generate sales orders via POS, the system generates and posts the advance invoices for you.
+If you generate sales orders from Accounts receivable, you must manually generate advance invoices by using the procedure in [Advance invoices for Eastern Europe](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). If you generate sales orders via POS, the system generates and posts the advance invoices for you.
 
 ## Supported scenarios
 

@@ -3,7 +3,6 @@
 title: Improve master planning performance
 description: This topic explains the various options that can help you improve the performance of master planning or troubleshoot issues.
 author: t-benebo
-manager: tfehr
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: 
@@ -82,14 +81,14 @@ You can set the **Use of cache** parameter in the **Performance** section on the
 
 ### Number of orders in firming bundle
 
-The **Number or orders in firming bundle** parameter specifies the total number of orders that will be processed at a time by each thread/batch. It causes parallelization of the autofirming process.
+The **Number or orders in firming bundle** parameter specifies the total number of orders that will be processed at a time by each thread/batch. It causes parallelization of the auto-firming process.
 
-You can set the **Number or orders in firming bundle** parameter in the **Performance** section on the **General** tab of the **Master planning parameters** page (**Master planning \> Setup \> Master planning parameters**). Parallelization of the autofirming process is based on the orders that must be processed together. For example, if this parameter is set to **50**, each thread or batch task will pick up 50 orders at a time and process them together. We recommend that you use a trial-and-error process to find the best value. However, you can use the following formula to calculate an initial value:
+You can set the **Number or orders in firming bundle** parameter in the **Performance** section on the **General** tab of the **Master planning parameters** page (**Master planning \> Setup \> Master planning parameters**). Parallelization of the auto-firming process is based on the orders that must be processed together. For example, if this parameter is set to **50**, each thread or batch task will pick up 50 orders at a time and process them together. We recommend that you use a trial-and-error process to find the best value. However, you can use the following formula to calculate an initial value:
 
 (Number of orders per bundle) = (Number of demand items ÷ Number of threads)
 
 > [!NOTE]
-> If you set the **Number of orders in firming bundle** parameter to **0** (zero), no parallelization of the autofirming process will occur. The whole process will run on a single batch task and have a cumulative running time. Therefore, the running time of your master planning will increase. For this reason, we recommend that you set this parameter to a value that is more than **0** (zero).
+> If you set the **Number of orders in firming bundle** parameter to **0** (zero), no parallelization of the auto-firming process will occur. The whole process will run on a single batch task and have a cumulative running time. Therefore, the running time of your master planning will increase. For this reason, we recommend that you set this parameter to a value that is more than **0** (zero).
 
 ### Time fences
 

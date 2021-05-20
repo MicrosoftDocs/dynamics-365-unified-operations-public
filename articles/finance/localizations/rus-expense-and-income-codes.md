@@ -3,7 +3,6 @@
 title: Expense and income codes
 description: This topic provides information about the expense and income codes available for Russia.
 author: anasyash
-manager: AnnBe
 ms.date: 08/05/2020
 ms.topic: article
 ms.prod: 

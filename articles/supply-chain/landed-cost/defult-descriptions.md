@@ -4,11 +4,9 @@
 title: Default descriptions for the general ledger
 description: Default descriptions can be used to update the Description field in voucher postings to the general ledger.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

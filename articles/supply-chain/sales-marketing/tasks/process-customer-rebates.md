@@ -4,7 +4,6 @@
 title: Generate and process customer rebates
 description: This procedure demonstrates how to process customer rebates from claim generation to the point of passing them as accruals to Accounts receivable. 
 author: omulvad
-manager: tfehr 
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  
@@ -66,7 +65,7 @@ This procedure demonstrates how to process customer rebates from claim generatio
 
 ## Process rebate claims
 1. Go to **Navigation pane > Modules > Sales and marketing > Customer rebates > Rebates**.
-    - The Rebates page acts a workbench in which you can review, approve, and process rebate claims. You'll now process the claims that were created as a result of invoicing a sales order for customer US-009, who is the subject of the rebate agreement USMF-000001.   
+    - The Rebates page acts as a workbench in which you can review, approve, and process rebate claims. You'll now process the claims that were created as a result of invoicing a sales order for customer US-009, who is the subject of the rebate agreement USMF-000001.   
     - The first line represents a rebate claim for 800 USD, which is based on the sales of 40 units of product T0020, calculated at 20 USD per unit. This matches the conditions of the first quantity break in the rebate agreement.  
     - The second claim is for 2,400 USD, which is based on the sales of 60 units of product T0020, calculated at 40 USD per unit, as per the second quantity break in the agreement.  
     - Both claims are in the "To be calculated" state. This means that they are associated with an agreement that tracks the customer's sales performance on periodic basis and that they have to be re-calculated to account for the total sales volume within the respective period.   

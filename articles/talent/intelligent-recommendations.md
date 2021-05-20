@@ -4,7 +4,6 @@
 title: Intelligent recommendations in Attract
 description: This article explains how machine learning can be used to provide recommendations for jobs and job candidates in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: tfehr
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -35,7 +33,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 Machine learning can help recruiters and hiring managers quickly identify top candidates for a position. It can also help prospects find the position that best suits their profile and interests. As these features are used, and feedback is provided, recommendations will improve.
 
 > [!NOTE] 
-> - The intelligent recommendation features are available only with the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - The intelligent recommendation features are available only with the [Comprehensive hiring add-on](/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
 > - Functionality noted in this topic is available as part of a preview review release. The content and the functionality are subject to change. To use this feature, ask an administrator to enable it using the **Admin center** in Attract. Set **Candidate recommendation**, **Job recommendation**, and **Prospect recommendation** to **On**. For more information, see [Access preview features in Microsoft Dynamics 365 Talent](./access-preview-feature.md). 
 
 
@@ -43,7 +41,7 @@ Machine learning can help recruiters and hiring managers quickly identify top ca
 
 Because job postings might attract hundreds of applicants, it can be difficult for recruiters and hiring managers to find the candidates whose skills and background best match the position. By analyzing the correlation between the job description and requirements, and data from the candidates' resumes and profiles, machine learning can be used to produce candidate recommendations. Candidate recommendations can help recruiters and hiring managers identify the top talent and move them to the interview stage faster. For any job, if there are more than ten candidates or prospects who have resumes or complete profiles, the candidates or prospects who most closely meet the job's requirements appear in the **Applicants to consider** section on the **Job** page.
 
-For any recommended candidate, you can select **View candidate** on the candidate card to review the candidate's profile and take action on his or her application. You can use the ellipsis button (**...**) to open the candidate's profile on a new tab. You can also use the ellipsis button to provide feedback about the recommendation. In this way, you help fine-tune the recommendation engine and improve future recommendations. Any recommendations that you don't like are removed from the **Applicants to consider** section when you refresh the **Job** page. You can use the feedback card to indicate why you didn't find the recommendation useful.
+For any recommended candidate, you can select **View candidate** on the candidate card to review the candidate's profile and take action on the application. You can use the ellipsis button (**...**) to open the candidate's profile on a new tab. You can also use the ellipsis button to provide feedback about the recommendation. In this way, you help fine-tune the recommendation engine and improve future recommendations. Any recommendations that you don't like are removed from the **Applicants to consider** section when you refresh the **Job** page. You can use the feedback card to indicate why you didn't find the recommendation useful.
 
 ## Job recommendations 
 

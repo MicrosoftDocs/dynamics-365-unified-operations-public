@@ -4,8 +4,7 @@
 title: Business events overview
 description: This topic provides information about business events, which allow external systems to receive notifications from Dynamics 365 Finance and Operations apps.
 author: Sunil-Garg
-manager: AnnBe
-ms.date: 11/03/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -101,31 +100,31 @@ The application doesn't provision the endpoints. It just sends events to the end
 
 To create a new endpoint, select **New**. Then, in the **Endpoint type** field, select the appropriate endpoint type. To create an endpoint to a Service Bus queue, select **Azure Service Bus Queue**.
 
-![Business events new endpoint](../media/businesseventsnewendpoint1.png)
+![To create an endpoint to a Service Bus queue, select **Azure Service Bus Queue**](../media/businesseventsnewendpoint1.png)
 
 Select **Next**, and specify the name of the endpoint and the Service Bus queue. In addition, you must set up Azure Key Vault to provide the secret to the Azure messaging resource. You must also set up the Azure Active Directory (Azure AD) application ID and application secret.
 
-![Business events new endpoint](../media/businesseventsnewendpoint2.png)
+![Specify the name of the endpoint and the Service Bus queue](../media/businesseventsnewendpoint2.png)
 
 In the **Queue Name** field, enter the **Azure Service Bus Queue** name that you created in the Azure Service Bus Queue configuration in Azure.  
 
-![Business events Queue Name](../media/BusinessEventsSBQueueName.PNG)
+![Enter the **Azure Service Bus Queue** name that you created in the Azure Service Bus Queue configuration in Azure](../media/BusinessEventsSBQueueName.PNG)
 
 In the **Azure Active Directory application ID** field, enter the application ID that is created in Azure AD in the Azure portal.
 
-![Business events configure Azure AD](../media/businesseventsaad1.png)
+![Enter the application ID that is created in Azure AD in the Azure portal](../media/businesseventsaad1.png)
 
 In the **Azure application secret** field, enter the secret value for the application.
 
-![Business events configure Azure AD](../media/businesseventsaad2.png)
+![Enter the secret value for the application](../media/businesseventsaad2.png)
 
 In the **Key vault DNS name** field, enter the name from your Key Vault setup.
 
-![Business events configure Azure Key Vault](../media/businesseventskeyvault1.png)
+![Enter the name from your Key Vault setup](../media/businesseventskeyvault1.png)
 
 In the **Key vault secret name** field, enter the secret name for the endpoint resource that must be created in Key Vault.
 
-![Business events configure Azure Key Vault](../media/businesseventskeyvault2.png)
+![Enter the secret name for the endpoint resource that must be created in Key Vault](../media/businesseventskeyvault2.png)
 
 The **Key Vault Secret** value, in Azure, will be the Azure Service Bus **Primary Connection String** value. This value is found in the Azure Service Bus that you configured in **Shared Access Policies > RootManagedSharedAccessKey**.
 
@@ -200,7 +199,7 @@ The integration requirements and integration solution design for implementations
 - Business events can be consumed using Power Automate, Service Bus, Event Grid, or other endpoint types.
 - Customers must bring their own subscriptions to use Power Automate, Service Bus, Event Grid, or other endpoint types.
 - A business event can be activated in all legal entities or in specific legal entities.
-- A business event can be sent to a unique endpoint or the same endpoints.
+- A business event can be sent to a unique endpoint or multiple endpoints.
 - Power Automate can directly subscribe to business events.
 
 ## Idempotency
@@ -208,7 +207,7 @@ Business events enable idempotent behavior on the consuming side by having a con
 
 ## Filtering in Azure Event Grid and Azure Service Bus
 Azure Service Bus and Azure Event Grid supports subscribing to topics by
-specifying criteria on the incoming message. For more information, see [Topic filters and actions](https://docs.microsoft.com/azure/service-bus-messaging/topic-filters) and [Understand event filtering for Event Grid subscriptions](https://docs.microsoft.com/azure/event-grid/event-filtering).
+specifying criteria on the incoming message. For more information, see [Topic filters and actions](/azure/service-bus-messaging/topic-filters) and [Understand event filtering for Event Grid subscriptions](/azure/event-grid/event-filtering).
 
 A business event that is sent to an Azure Service Bus or Azure Event Grid
 has the following fields made available for this purpose. Subscribers can use
@@ -236,7 +235,7 @@ this information to subscribe to more specific topics as required.
 include custom fields. This is a developer experience.
 
 ## Role-based security for business events
-Starting in Platform update 29, role-based security can be applied to business events to meet the following requirements using the appropriate security artifact.
+Role-based security can be applied to business events to meet the following requirements using the appropriate security artifact.
 
 | **Requirement**                                                                                                                                | **Privilege**                                 | **Duty**                          |
 |------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|-----------------------------------|
@@ -274,7 +273,7 @@ to business events in the organizations to which they have access to via their r
 
 ### Backward compatibility
 
-To ensure backward compatibility of business events with versions prior to Platform update 29, the following behavior must be understood.
+To ensure backward compatibility, the following behavior must be understood.
 
 -   Role-based security for business events will be disabled by default.
 

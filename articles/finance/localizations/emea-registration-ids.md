@@ -4,7 +4,6 @@
 title: Registration IDs
 description: This topic provides information about setting up and using registration IDs.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
@@ -60,7 +59,7 @@ Registration category is country/region registration identifier approved for usi
 
 ## Enter registration IDs for Global address book records
 
-The global address book (GAB) contains consolidated address information for customers, vendors, contacts, business relations, and legal entities. For more information see, [Global address book overview](../../fin-and-ops/organization-administration/overview-global-address-book.md). The party records that are stored in the global address book can contain one or more address records. These addresses are used for different purposes, such as billing or delivery. You can set up registration IDs for address information for customers, vendors, workers, and legal entities. Find the party (legal entity, vendor, customer, worker) record for which you want to enter the register ID, and then click **Registration IDs** on forms related to party, legal entity, vendor, customer, worker to open the **Manage addresses** page. On the **Tax registration** tab, click **Add**, and enter following information about the registration ID.
+The global address book (GAB) contains consolidated address information for customers, vendors, contacts, business relations, and legal entities. For more information see, [Global address book overview](../../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md). The party records that are stored in the global address book can contain one or more address records. These addresses are used for different purposes, such as billing or delivery. You can set up registration IDs for address information for customers, vendors, workers, and legal entities. Find the party (legal entity, vendor, customer, worker) record for which you want to enter the register ID, and then click **Registration IDs** on forms related to party, legal entity, vendor, customer, worker to open the **Manage addresses** page. On the **Tax registration** tab, click **Add**, and enter following information about the registration ID.
 
 
 |Field                |Description                                                |

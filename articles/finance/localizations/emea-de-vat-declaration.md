@@ -4,7 +4,6 @@
 title: VAT declaration for Germany
 description: This topic provides information about how to generate QR-bills and process incoming QR-bills.
 author: anasyash
-manager: AnnBe
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
@@ -742,7 +741,7 @@ Set up sales tax codes by following the instructions in [Sales tax codes for VAT
 
     - **Elster (DE)**
 
-    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2. Go to **Tax** \> **Setup** \> **Sales tax** \> **Electronic tax declaration setup**.
 3. In the **Format mapping** field, select the **Elster (DE)** format that you downloaded earlier.

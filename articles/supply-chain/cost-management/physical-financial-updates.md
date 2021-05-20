@@ -4,7 +4,6 @@
 title: Physical and financial updates
 description: This topic provides an overview of which types of transactions increase or decrease inventory quantities. 
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

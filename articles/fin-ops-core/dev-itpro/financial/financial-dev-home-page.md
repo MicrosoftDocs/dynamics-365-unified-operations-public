@@ -4,7 +4,6 @@
 title: Financials development home page
 description: This topic provides links to topics about financials development.
 author: robinarh
-manager: AnnBe
 ms.date: 09/12/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Tax plafond
 description: This topic explains how to set up and work with tax plafond, which is a tax exemption process.
 author: ilkond
-manager: AnnBe
 ms.date: 02/04/2021
 ms.topic: article
 ms.prod: 
@@ -41,7 +40,7 @@ This topic describes how to complete these tasks:
 ## Prerequisites
 
 - The primary address of the legal entity must be in Italy.
-- In the **Feature management** workspace, turn on the **Tax plafond** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, turn on the **Tax plafond** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - There is a sales tax settlement period (**Tax** > **Indirect taxes** > **Sales tax** > **Sales tax settlement periods**) for the period in which you plan to create tax plafond and intent letters, and post tax documents with reference to intent letters.
 
 ## Set up parameters

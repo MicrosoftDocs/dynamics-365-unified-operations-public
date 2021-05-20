@@ -4,7 +4,6 @@
 title: Supply Chain Management home page
 description: This page provides a list of the help topics and other resources for Supply Chain Management features.   
 author: kamaybac
-manager: tfehr
 ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: 
@@ -100,16 +99,16 @@ The following tech conference recordings discuss supply chain management functio
 
 ## Blogs
 
-There are many topics about manufacturing and supply chain management on the [Dynamics AX Manufacturing R&D Team Blog](https://blogs.msdn.microsoft.com/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm/). Most of these were written for the previous version, but the same concepts still apply, and the procedures are similar in the current version.
+There are many topics about manufacturing and supply chain management on the [Dynamics AX Manufacturing R&D Team Blog](/archive/blogs/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm/). Most of these were written for the previous version, but the same concepts still apply, and the procedures are similar in the current version.
 
 ## White papers
 
-- [Lean manufacturing: Capable to promise and kanban job scheduling](https://docs.microsoft.com/dynamics/s-e/)
+- [Lean manufacturing: Capable to promise and kanban job scheduling](/dynamics/s-e/)
 - [BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## eLearning courses
 
-For online courses and training, check out [Dynamics 365 Supply Chain Management on Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
+For online courses and training, check out [Dynamics 365 Supply Chain Management on Microsoft Learn](/learn/browse/?products=dynamics-scm&resource_type=learning+path).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,7 +4,6 @@
 title: Fixed assets accounting for tax purposes
 description: This topic provides information about the tax Depreciation functionality for Latvia. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

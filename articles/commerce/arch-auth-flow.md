@@ -4,7 +4,6 @@
 title: Dynamics 365 Commerce authentication flows
 description: This topic provides an overview of the various authentication flows in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: AnnBe
 ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
@@ -72,25 +71,25 @@ The following table describes the set of supported authentication methods for AP
 
 The following illustration shows POS employee authentication flows in Commerce.
 
-<a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-1.jpg" target="_blank">![Dynamics 365 POS employee authentication flows](./media/arch-auth-flow-1.jpg)</a>
+<a href="/dynamics365/commerce/media/arch-auth-flow-1.jpg" target="_blank">![Dynamics 365 POS employee authentication flows](./media/arch-auth-flow-1.jpg)</a>
 
 ## Dynamics 365 e-Commerce customer authentication flows
 
 The following illustration shows e-Commerce customer authentication flows in Commerce.
 
-<a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-2.jpg" target="_blank">![Dynamics 365 e-Commerce customer authentication flows](./media/arch-auth-flow-2.jpg)</a>
+<a href="/dynamics365/commerce/media/arch-auth-flow-2.jpg" target="_blank">![Dynamics 365 e-Commerce customer authentication flows](./media/arch-auth-flow-2.jpg)</a>
 
 ## Third-party e-Commerce customer authentication flows
 
 The following illustration shows third-party e-Commerce customer authentication flows in Commerce.
 
-<a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-3.jpg" target="_blank">![Third-party e-Commerce customer authentication flows](./media/arch-auth-flow-3.jpg)</a>
+<a href="/dynamics365/commerce/media/arch-auth-flow-3.jpg" target="_blank">![Third-party e-Commerce customer authentication flows](./media/arch-auth-flow-3.jpg)</a>
 
 ## Third-party application authentication flows
 
 The following illustration shows third-party application authentication flows in Commerce.
 
-<a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-4.jpg" target="_blank">![Third-party application authentication flows](./media/arch-auth-flow-4.jpg)</a>
+<a href="/dynamics365/commerce/media/arch-auth-flow-4.jpg" target="_blank">![Third-party application authentication flows](./media/arch-auth-flow-4.jpg)</a>
 
 ## Additional resources
 

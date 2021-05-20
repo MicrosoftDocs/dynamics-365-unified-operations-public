@@ -4,7 +4,6 @@
 title: Move scheduled kanban jobs
 description: This procedure focuses on moving planned process kanban jobs to a different period. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 11/07/2018
 ms.topic: business-process 
 ms.prod:  

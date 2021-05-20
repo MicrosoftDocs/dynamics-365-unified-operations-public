@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Talent (March 26, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for March 26, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 03/26/2019
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -77,7 +75,7 @@ In this release, fixed compensation plans now appear when restricting users by c
 With this release, you can now remove job records by using the **Open in Excel** option in Talent.
 
 ### Upgrade to Dataverse
-Deadlines to upgrade to Dataverse are quickly approaching. Sign in to the Power Apps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Dataverse](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Deadlines to upgrade to Dataverse are quickly approaching. Sign in to the Power Apps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Dataverse](/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## In preview
 

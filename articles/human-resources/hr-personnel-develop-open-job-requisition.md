@@ -4,7 +4,6 @@
 title: Create and open job requisition
 description: Recruitment projects help you manage your recruiting process. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 02/03/2021
 ms.topic: business-process 
 ms.prod:  
@@ -15,7 +14,6 @@ ms.technology:
 ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd, HcmPersonnelManagementWorkspace  
 audience: Application User
 # ms.devlang:  
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  

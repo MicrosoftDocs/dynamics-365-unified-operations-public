@@ -4,7 +4,6 @@
 title: Cash register functionality for Sweden
 description: This topic provides an overview of the cash register functionality that is available for Sweden. 
 author: EvgenyPopovMBS
-manager: annbe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
@@ -104,7 +103,7 @@ You must specify the following general settings for Sweden.
     - Item sales tax groups
     - Sales tax settings in items (item sales tax groups for sales)
 
-    For more information about how to set up and use sales tax, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+    For more information about how to set up and use sales tax, see [Sales tax overview](../../finance/general-ledger/indirect-taxes-overview.md).
 
 
 2. On the **All stores** page, update store details. Specifically, set the following parameters:

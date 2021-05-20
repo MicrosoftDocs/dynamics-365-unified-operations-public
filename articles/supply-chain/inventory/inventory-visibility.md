@@ -4,7 +4,6 @@
 title: Inventory Visibility Add-in
 description: This topic describes how to install and configure the Inventory Visibility Add-in for Dynamics 365 Supply Chain Management.
 author: sherry-zheng
-manager: tfehr
 ms.date: 10/26/2020
 ms.topic: article
 ms.prod: 
@@ -45,19 +44,25 @@ This topic describes how to install and configure the Inventory Visibility Add-i
 
 You need to install the Inventory Visibility Add-in using Microsoft Dynamics Lifecycle Services (LCS). LCS is a collaboration portal that provides an environment and a set of regularly updated services that help you manage the application lifecycle of your Dynamics 365 Finance and Operations apps.
 
-For more information, see [Lifecycle Services resources](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs).
+For more information, see [Lifecycle Services resources](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
-### Prerequisites
+### Inventory Visibility Add-in prerequisites
 
 Before you install the Inventory Visibility Add-in, you must do the following:
 
 - Obtain an LCS implementation project with at least one environment deployed.
 - Make sure that the prerequisites for setting up add-ins provided in the [Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) have been completed. Inventory Visibility doesn't require dual-write linking.
 - Contact the Inventory Visibility Team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to get the following three required files:
-
-    - `Inventory Visibility Dataverse Solution.zip`
-    - `Inventory Visibility Configuration Trigger.zip`
-    - `Inventory Visibility Integration.zip` (if the version of Supply Chain Management that you're running is earlier than version 10.0.18)
+  - `Inventory Visibility Dataverse Solution.zip`
+  - `Inventory Visibility Configuration Trigger.zip`
+  - `Inventory Visibility Integration.zip` (if the version of Supply Chain Management that you're running is earlier than version 10.0.18)
+- Alternatively, contact the Inventory Visibility Team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to get the package deployer packages. These packages can be used by an official package deployer tool.
+  - `InventoryServiceBase.PackageDeployer.zip`
+  - `InventoryServiceApplication.PackageDeployer.zip` (this package contains all of the changes in the `InventoryServiceBase` package, plus additional UI application components)
+- Follow the instructions given in [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) to register an application and add a client secret to AAD under your azure subscription.
+  - [Register an application](/azure/active-directory/develop/quickstart-register-app)
+  - [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
+  - The **Application(Client) Id**, **Client Secret**, and **Tenant ID** will be used in the following steps.
 
 > [!NOTE]
 > The currently supported countries and regions include Canada, the United States, and the European Union (EU).
@@ -66,18 +71,49 @@ If you have any questions about these prerequisites, please contact the Inventor
 
 ### <a name="setup-microsoft-dataverse"></a>Set up Dataverse
 
-Follow these steps to set up Dataverse.
+To set up Dataverse for use with Inventory Visibility, you must first prepare the prerequisites and then decide whether to set up Dataverse using either the package deployer tool or by manually importing the solutions (you don't have to do both). Then install the Inventory Visibility Add-in. The following subsections describe how to complete each of these tasks.
 
-1. Add a service principle to your tenant:
+#### Prepare Dataverse prerequisites
 
-    1. Install Azure AD PowerShell Module v2 as described in [Install Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
-    1. Run the following PowerShell command.
+Before you start to set up Dataverse, add a service principle to your tenant by doing the following:
 
-        ```powershell
-        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+1. Install Azure AD PowerShell Module v2 as described in [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
 
-        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
-        ```
+1. Run the following PowerShell command:
+
+    ```powershell
+    Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+    
+    New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+    ```
+
+#### Set up Dataverse using the package deployer tool
+
+After you have the prerequisites in place, use the following procedure if you prefer to set up Dataverse using the package deployer tool. See the next section for details about how to import the solutions manually instead (don't do both).
+
+1. Install developer tools as described in [Download tools from NuGet](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget).
+
+1. Based on your business requirements, choose the `InventoryServiceBase` or `InventoryServiceApplication` package.
+
+1. Import the solutions:
+    1. For the `InventoryServiceBase` package:
+        - Unzip `InventoryServiceBase.PackageDeployer.zip`
+        - Find folder `InventoryServiceBase`, file `[Content_Types].xml`, file `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll`, file `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`, and file `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`. 
+        - Copy each of these folders and files to the `.\Tools\PackageDeployment` directory, which was created when you installed the developer tools.
+    1. For the `InventoryServiceApplication` package:
+        - Unzip `InventoryServiceApplication.PackageDeployer.zip`
+        - Find folder `InventoryServiceApplication`, file `[Content_Types].xml`, file `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`, file `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`, and file `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`.
+        - Copy each of these folders and files to the `.\Tools\PackageDeployment` directory, which was created when you installed the developer tools.
+    1. Execute `.\Tools\PackageDeployment\PackageDeployer.exe`. Follow the instructions on your screen to import the solutions.
+
+1. Assign security roles to the application user.
+    1. Open the URL of your Dataverse environment.
+    1. Go to **Advanced Setting \> System \> Security \> Users**, and find user the named **# InventoryVisibility**.
+    1. Select **Assign Role**, and then select **System Administrator**. If there is a role that is named **Common Data Service User**, select it as well.
+
+#### Set up Dataverse manually by importing solutions
+
+After you have the prerequisites in place, use the following procedure if you prefer to set up Dataverse by manually importing solutions. See the previous section for details about how to use the package deployer tool instead (don't do both).
 
 1. Create an application user for Inventory Visibility in Dataverse:
 
@@ -86,7 +122,12 @@ Follow these steps to set up Dataverse.
     1. Select **New**. Set the application ID to *3022308a-b9bd-4a18-b8ac-2ddedb2075e1*. (The object ID will automatically be loaded when you save your changes.) You can customize the name. For example, you can change it to *Inventory Visibility*. When you've finished, select **Save**.
     1. Select **Assign Role**, and then select **System Administrator**. If there is a role that is named **Common Data Service User**, select it too.
 
-    For more information, see [Create an application user](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+    For more information, see [Create an application user](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+
+1. If the default language of your Dataverse is not **English**:
+
+    1. Go to **Advanced Setting \> Administration \> Languages**,
+    1. Select **English (LanguageCode=1033)** and select **Apply**.
 
 1. Import the `Inventory Visibility Dataverse Solution.zip` file, which includes Dataverse configuration related entities and Power Apps:
 
@@ -164,12 +205,12 @@ Make sure that the following features are turned on in your Supply Chain Managem
 
     Find your LCS environment's Azure region, and then enter the URL. The URL has the following form:
 
-    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com`
 
     For example, if you're in Europe, your environment will have one of the following URLs:
 
-    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
-    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com`
 
     The following regions are currently available.
 
@@ -218,13 +259,13 @@ Get a security service token by doing the following:
 
     ```json
     {
-    "token_type": "Bearer",
-    "expires_in": "3599",
-    "ext_expires_in": "3599",
-    "expires_on": "1610466645",
-    "not_before": "1610462745",
-    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
-    "access_token": "eyJ0eX...8WQ"
+        "token_type": "Bearer",
+        "expires_in": "3599",
+        "ext_expires_in": "3599",
+        "expires_on": "1610466645",
+        "not_before": "1610462745",
+        "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+        "access_token": "eyJ0eX...8WQ"
     }
     ```
 
@@ -261,6 +302,43 @@ Get a security service token by doing the following:
         "expires_in": 1200
     }
     ```
+
+### <a name="inventory-visibility-sample-request"></a>Sample Request
+
+For your reference, here is a sample http request, you can use any tools or coding language to send this request, such as  ``Postman``.
+
+```json
+# Url
+# replace {RegionShortName} and {EnvironmentId} with your value
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
+
+# Method
+Post
+
+# Header
+# replace {access_token} with the one get from security service
+Api-version: "1.0"
+Content-Type: "application/json"
+Authorization: "Bearer {access_token}"
+
+# Body
+{
+    "id": "id-bike-0001",
+    "organizationId": "usmf",
+    "productId": "Bike",
+    "quantities": {
+        "pos": {
+            "inbound": 5
+        }  
+    },
+    "dimensions": {
+        "SizeId": "Small",
+        "ColorId": "Red",
+        "SiteId": "1",
+        "LocationId": "11"
+    }
+}
+```
 
 ### <a name="inventory-visibility-configuration"></a>Configure the Inventory Visibility API
 
@@ -344,7 +422,7 @@ Here is a sample query on the product with color and size combination.
 {
     "filters": {
         "OrganizationId": ["usmf"],
-        "ProductId": ["MyProduct"],
+        "ProductId": ["MyProduct1", "MyProduct2"],
         "LocationId": ["21"],
         "SiteId": ["2"],
         "ColorId": ["Red"]
@@ -356,6 +434,8 @@ Here is a sample query on the product with color and size combination.
     "returnNegative": true
 }
 ```
+
+For the `filters` field, currently only `ProductId` supports multiple values. If the `ProductId` is an empty array, all products will be queried.
 
 #### Custom measurement
 

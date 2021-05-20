@@ -4,7 +4,6 @@
 title: Commerce for IT pros and developers
 description: This page lists the resources that are available for IT pros and developers who support Commerce.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
@@ -40,11 +39,11 @@ This page lists the resources that are available for IT pros and developers who 
 
 ## Components and architecture
 
-- [Commerce components](../retail-components.md)
+- [Commerce components](/dynamics365/commerce/dev-itpro/commerce-architecture)
 - [Modern POS (MPOS) architecture](retail-modern-pos-architecture.md)
 - [Commerce Scale Unit architecture](retail-server-architecture.md)
 - [Online store publishing architecture](retail-online-store-publishing-architecture.md)
-- [Retail channel performance PowerBI.com solution](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+- [Retail channel performance PowerBI.com solution](../../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Deployment
 
@@ -55,7 +54,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
 - [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
 - [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
-- [Access instances](../../dev-itpro/dev-tools/access-instances.md)
+- [Access instances](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md)
 
 ## Point of Sale (POS)
 
@@ -69,7 +68,7 @@ This page lists the resources that are available for IT pros and developers who 
 
 - [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md)
 - [Install the POS layout designer](../install-pos-layout-designer.md)
-- [Modern POS (MPOS) triggers and printing](modern-pos-trigger-extensibility.md)
+- [Modern POS (MPOS) triggers and printing](./pos-trigger-printing.md)
 - [Block transactions by using triggers](trigger-example-blocking-transaction.md)
 - [Add custom controls to POS views](pos-custom-control.md)
 - [Point of sale (POS) payment extension](pos-payment-extension.md)
@@ -85,6 +84,26 @@ This page lists the resources that are available for IT pros and developers who 
 - [Test recorder and Regression suite automation tool for Cloud POS](pos-rsat.md)
 - [POS Cart view events and handlers](cart-view-handlers.md)
 - [Add custom buttons to the POS header bar](pos-header-bar.md)
+
+## POS independent-packaging SDK
+
+- [POS extension overview](pos-extension/pos-extension-overview.md)
+- [Getting started with POS extensions](pos-extension/pos-extension-getting-started.md)
+- [Create a POS extension package project](pos-extension/create-pos-extension-package.md)
+- [Create an .appx file for a Modern POS extension package](pos-extension/create-pos-extension-appx.md)
+- [Debug POS extensions](pos-extension/debug-pos-extension.md)
+- Extension packaging and deployment
+    - [Create a Modern POS extension package](pos-extension/mpos-extension-packaging.md)
+    - [Code signing a Modern POS (MSIX) extension package](pos-extension/mpos-extension-signing.md)
+    - [Create a Cloud POS extension package](pos-extension/cpos-extension-package.md)
+- [Migrate a POS extension to the independent-packaging model](pos-extension/migrate-pos-extension.md)
+- POS extension development guide
+    - [POS extension basics](pos-extension/pos-extension-basics.md)
+    - [Create a custom view in POS](pos-extension/custom-pos-view.md)
+    - [Use POS controls in extensions](pos-extension/controls-pos-extension.md)
+    - Tasks
+        - [Use Knockout.js in POS extensions](pos-extension/knockout-pos-extension.md)
+        - [Consume custom headless Commerce engine APIs and entities in POS](pos-extension/consume-apis-pos.md)
 
 ## Integrating Commerce
 

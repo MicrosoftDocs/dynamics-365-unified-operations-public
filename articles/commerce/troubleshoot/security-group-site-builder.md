@@ -4,11 +4,9 @@
 title: Can't configure a security group for Commerce site builder during initial deployment
 description: This topic provides troubleshooting guidance that can help when the Microsoft Azure Active Directory (Azure AD) security group for Commerce site builder doesn't appear as an option when you create e-commerce components in Microsoft Dynamics Lifecycle Services (LCS) during initial deployment of a new e-commerce tenant.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -44,7 +42,7 @@ When you create the e-commerce components as part of the process of deploying a 
 ### Provision the e-commerce site with a user in the correct tenant
 
 1. Go to the [Azure portal](https://portal.azure.com/).
-1. Under the tenant that the LCS project for your e-commerce site was provisioned for, follow the instructions in [Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
+1. Under the tenant that the LCS project for your e-commerce site was provisioned for, follow the instructions in [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 1. Go to [LCS](https://lcs.dynamics.com/), and sign in by using an account that shares the same tenant as the Azure AD security group that you just created. The account must have access to view the Azure AD security group.
 1. Complete the setup steps to configure the e-commerce site. When you provision the e-commerce components, the security group should now appear as an option in the dialog box.
 
@@ -53,6 +51,6 @@ When you create the e-commerce components as part of the process of deploying a 
 
 ## Additional resources
 
-[Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+[Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
 [Deploy a new e-commerce tenant](../deploy-ecommerce-site.md)

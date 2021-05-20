@@ -3,7 +3,6 @@
 title: Set up bank accounts (Russia)
 description: This topic provides information about local settings and prerequisites for bank modules for Russia. 
 author: anasyash
-manager: AnnBe
 ms.date: 12/06/2018
 ms.topic: article
 ms.prod: 
@@ -49,7 +48,7 @@ Before working in the **Bank management** workspace, you should complete the fol
 ### Prerequisites
 
 1.	Import the ‘Bank BIC catalog (RU)’ Electronic reporting (ER) configuration file from Microsoft Dynamics Lifecycle Services (LCS).
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2. Go to **Cash and bank management > Setup > Cash and bank management parameters**. On the **General** FastTab, in the **Import list of banks** fields group, in the **Import format configuration** field, select the ER configuration ‘Bank BIC catalog (RU)’.
 

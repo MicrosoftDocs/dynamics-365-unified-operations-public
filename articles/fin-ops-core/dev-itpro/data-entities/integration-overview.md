@@ -1,10 +1,9 @@
 ---
 # required metadata
 
-title: Choose a data integration strategy 
+title: Integration between Finance and Operations apps and third-party services 
 description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 11/23/2020
 ms.topic: article
 ms.prod: 
@@ -28,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Choose a data integration strategy
+# Integration between Finance and Operations apps and third-party services
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,8 +45,6 @@ The following table lists the integration patterns that are available.
 | Pattern                       | Documentation |
 |-------------------------------|---------------|
 | Power Platform integration    | [Microsoft Power Platform integration with Finance and Operations apps](../power-platform/overview.md) |
-| Dual-write                    | [Dual-write overview](dual-write/dual-write-home-page.md) |
-| Classic data integration      | [Classic data integration overview](data-integration-cds.md) |
 | OData                         | [Open Data Protocol (OData)](odata.md) |
 | Batch data API                | [Recurring integrations](recurring-integrations.md)<br>[Data management package REST API](data-management-api.md) |
 | Custom service                | [Custom service development](custom-services.md) |
@@ -56,22 +53,6 @@ The following table lists the integration patterns that are available.
 
 > [!NOTE]
 > For on premise deployments, the only supported API is the [Data management package REST API](data-management-api.md). This is currently available on 7.2, platform update 12 build 7.0.4709.41184.
-
-## Power platform integration
-Finance and Operations is a virtual data source in Dataverse, and enables full create, read, update, delete (CRUD) operations from Dataverse and Microsoft Power Platform. By definition, the data for virtual entities doesn't reside in Dataverse. Instead, it continues to reside in Finance and Operations. To enable CRUD operations on Finance and Operations entities from Dataverse, entities must be made available as virtual entities in Dataverse. This allows CRUD operations to be performed, from Dataverse and Microsoft Power Platform, on data that resides in Finance and Operations apps. For detailed information, see [Microsoft Power Platform integration](../power-platform/overview.md).
-
-## Dual-write vs. classic data integration patterns vs. virtual entities
-
-Dual-write provides synchronous, bi-directional, near-real time experience between model-driven applications in Dynamics 365 and Finance and Operations applications. Data synchronization happens with little or no intervention and is triggered by create, update and delete actions on an entity. Dual-write is suitable for interactive business scenarios that span across Dynamics 365 applications.
-
-Classic data integration provides asynchronous and uni-directional data synchronization experience between customer engagement apps and Finance and Operations apps. It's an IT-administrator led experience and you must schedule the data sync jobs to run on a specific cadence. Classic data integration is suitable for business scenarios that involves bulk ingress/egress of data across Dynamics 365 applications.
-
-| Pattern                       | Timing                        | Batch | Technology | Finance and Operations app | Model-driven apps in Dynamics 365 |
-|-------------------------------|-------------------------------|-------|---|------|------------|
-| Dual-write             | Synchronous<br>Bi-directional   | No    | OData | Finance<br>Supply Chain<br>Commerce<br>Service Industry<br>CoreHR | Sales<br>Marketing<br>Customer Service<br>Field Service<br>Project Service Automation<br>Talent | 
-| Classic data integration | Asynchronous, uni-directional | Yes   | DIXF | Finance<br>Supply Chain<br>Commerce<br>Service Industry<br>CoreHR | Sales<br>Marketing<br>Customer Service<br>Field Service<br>Project Service Automation<br>Talent |
-
-Virtual entities provide a mechanism to use Microsoft Power Platform with Finance and Operations without having to physically copy data to Dataverse. This guidance must be used to determine if the requirements will need dual-write or data integrator or virtual entities. Virtual entities and dual-write/data integrator are complementary technologies such that, they can be used together if required.
 
 ## Synchronous vs. asynchronous integration patterns
 
@@ -95,7 +76,7 @@ The following examples illustrate this point. You can't assume that the caller w
 | OData          | DbResourceContextSaveChanges         | DbResourceContextSaveChangesAsync |
 | Custom service | httpRequestGetResponse               | httpRequestBeginGetResponse |
 | SOAP           | UserSessionServiceGetUserSessionInfo | UserSessionServiceGetUserSessionInfoAsync |
-| Batch data API | ImportFromPackage                   | [BeginInvoke](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
+| Batch data API | ImportFromPackage                   | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
 
 Both OData and custom services are synchronous integration patterns, because when these APIs are called, business logic is immediately run. Here are some examples:
 
@@ -118,52 +99,6 @@ When you use a synchronous pattern, success or failure responses are returned to
 
 When you use an asynchronous pattern, the caller receives an immediate response that indicates whether the scheduling call was successful. The caller is responsible for handling any errors in the response. After scheduling is done, the status of the data import or export isn't pushed to the caller. The caller must poll for the result of the corresponding import or export process, and must handle any errors accordingly.
 
-## Typical scenarios and patterns that use dual-write 
-
-Here are some typical scenarios that use dual-write.
-
-### Enable customer service representative to facilitate change of address for Finance and Operations customers
-
-A customer relocates and wishes to change their billing and shipping address information. This customer contacts the customer support representative and requests a change of address. The customer support representative takes the call and changes the billing and shipping address information of the customer.
-
-| Decision                    | Information              |
-|-----------------------------|--------------------------|
-| Is real-time data required? | Yes                      |
-| Peak data volume            |                          |
-| Frequency                   | Ad hoc                   |
-
-#### Recommended solution
-This scenario of near-real time data synchronization is best implemented by dual-write.
-
-- The customer's information is sourced in a Finance and Operations app.
-- A customer calls customer support and asks to change their billing and shipping address information.
-- A customer support representative retrieves the customer’s record in Dynamics 365 Customer Service.
-- The customer support representative updates the billing and shipping address and saves the data.
-- The new billing and shipping address syncs back to the Finance and Operations app in real-time.
-
-### Sales representatives can change customer credit limits without logging into a Finance and Operations app
-
-A customer has a credit limit of $2,000 and wants to increase it to $5,000. This customer calls the customer support and requests the increase. The ticket is assigned to the sales department. The head of sales reviews the request, checks the customer's payment history, and determines that the customer is eligible for an increased credit limit. The head of sales approves the request and responds to the ticket. The customer receives an email informing the approval of $5,000 credit limit.
-
-| Decision                    | Information              |
-|-----------------------------|--------------------------|
-| Is real-time data required? | Yes                      |
-| Peak data volume            |                          |
-| Frequency                   | Ad hoc                   |
-
-
-#### Recommended solution
-
-This scenario is best implemented by dual-write.
-
-- A customer calls customer support and wants to increase their credit limit from $2,000 to $5,000.
-- A customer support representative creates a ticket in Dynamics 365 Customer Service.
-- This ticket is assigned to the sales unit.
-- A sales representative from the sales unit reviews and approves the request.
-- This result is the increase of credit limit of the customer to $5,000 in Dynamics 365 Sales. 
-- The credit limit in the Finance and operations app is updated to $5,000.
-- The sales representative responds to the ticket and resolves it. 
-- The customer receives an email about the increased credit limit.
 
 ## Typical scenarios and patterns that use OData integrations
 
@@ -182,7 +117,7 @@ A manufacturer defines and configures its product by using a third-party applica
 | Peak data volume            | 1,000 records per hour\* |
 | Frequency                   | Ad hoc                   |
 
-\* Occasionally, many new or modified production configurations will occur in a short time.
+Occasionally, many new or modified production configurations will occur in a short time.
 
 #### Recommended solution
 

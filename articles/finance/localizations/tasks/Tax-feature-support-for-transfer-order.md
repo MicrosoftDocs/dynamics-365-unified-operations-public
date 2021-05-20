@@ -4,11 +4,9 @@
 title: Tax feature support for transfer orders
 description: This topic explains the new tax feature support for transfer orders by using the tax calculation service.
 author: kailiang
-manager: tfehr
-ms.date: 03/10/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -32,8 +30,6 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
-
 This topic provides information about tax calculation and posting integration in transfer orders. This functionality lets you set up tax calculation and posting in transfer orders for stock transfers. Under European Union (EU) value-added tax (VAT) regulations, stock transfers are considered intra-community supply and intra-community acquisitions.
 
 To configure and use this functionality, you must complete three main steps:
@@ -48,7 +44,7 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
 
 1. On the **Tax features** page, on the **Versions** tab, select the draft feature version, and then select **Edit**.
 
-    ![Selecting Edit](../media/image1.png)
+    ![Selecting Edit](../media/tax-feature-support-01.png)
 
 2. On the **Tax features setup** page, on the **Tax codes** tab, select **Add** to create new tax codes. For this example, three tax codes are created: **NL-Exempt**, **BE-RC-21**, and **BE-RC+21**.
 
@@ -61,7 +57,7 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         4. Select **Add** in the **Rate** table.
         5. Swtich **Is Exempt** to **Yes** in the **General** section.
 
-        ![NL-Exempt tax code](../media/image2.png)
+        ![NL-Exempt tax code](../media/tax-feature-support-02.png)
 
     - When a transfer order is received at a Belgium warehouse, the reverse charge mechanism is applied by using the **BE-RC-21** and **BE-RC+21** tax codes.
         
@@ -74,7 +70,7 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         6. Swtich **Is Reverse Charge** to **Yes** in the **General** section.
         7. Select **Save**.
 
-        ![BE-RC-21 tax code for reverse charges](../media/image3.png)
+        ![BE-RC-21 tax code for reverse charges](../media/tax-feature-support-03.png)
         
         Create the tax code **BE-RC+21**.
         1. Select **Add**, enter **BE-RC-21** in the **Tax code** field.
@@ -84,7 +80,7 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         5. Enter **21** in the **Tax Rate** field.
         6. Select **Save**.
 
-        ![BE-RC+21 tax code for reverse charges](../media/image4.png)
+        ![BE-RC+21 tax code for reverse charges](../media/tax-feature-support-04.png)
 
 3. Define the applicability of the tax codes.
 

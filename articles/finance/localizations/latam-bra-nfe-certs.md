@@ -4,7 +4,6 @@
 title: NF-e certificates
 description: This topic provides information about NF-e certificates for Microsoft Dynamics 365 Finance and the solution you should use for each state tax authority.
 author: sndray
-manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
@@ -61,7 +60,7 @@ The Brazilian government updated the root certification authority (CA) that is u
 
 Brazilian certificates must be installed via Azure Key Vault. Key Vault lets you store encrypt keys, certificates, and secrets (such as authentication keys, storage account keys, data encryption keys, .pxf files, and passwords) by using keys that are protected by hardware security modules (HSMs).
 
-For more information about how to use keys and secrets with Key Vault, see [About keys, secrets, and certificates](https://docs.microsoft.com/rest/api/keyvault/about-keys--secrets-and-certificates).
+For more information about how to use keys and secrets with Key Vault, see [About keys, secrets, and certificates](/rest/api/keyvault/about-keys--secrets-and-certificates).
 The following table lists each tax authority and the solution that you should use to install certificates for it.
 
 |Tax authority|	States|	Solution|

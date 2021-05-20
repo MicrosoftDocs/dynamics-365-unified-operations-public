@@ -4,8 +4,7 @@
 title: Saved views
 description: This topic describes how to use the saved views features.
 author: jasongre
-manager: AnnBe
-ms.date: 01/22/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -132,17 +131,26 @@ To publish a view, follow these steps:
 5. **Update 10.0.17 or later:** If the **(Preview) Translation support for organization views** feature is turned on, you can add translations for your view name in as many languages as your organization requires by selecting the **Translations** button next to the **Name** field. The view name will then be shown to users in their current language. You can also set the default language to specify the translation that will be shown to users who are running languages that no translation is defined for.
 5. Optional: Enter a description for the view, so that users who receive this view can better understand its purpose. 
 6. Determine whether the view should be published as the default view for the selected users. When a view is made the default view, users will see it the next time that they open the target page. The single, global default view of every targeted user will be changed. However, users can still change their default view after publishing has occurred.
-7. Add the security roles that correspond to the users who are being targeted by this view. 
-8. Determine whether you want to publish the view to the child roles of each security role that is selected. If you do, select the **Include child roles** check box in the row for the appropriate security roles. Note that this check box isn't available for roles that don't have child roles.
-9. Add the legal entities that this view should be available for. 
-10. Select **Publish**.
+
+    > [!NOTE]
+    > Be aware of the following when publishing a view as the default view: 
+    > -  If you publish a view as the default view to some or all legal entities, you change the single, **global** default view of every targeted user. 
+    > -  If a user has roles where multiple views are published as the default view, the last view that was published will be used as the user's default view. 
+
+8. Add the security roles that correspond to the users who are being targeted by this view. 
+9. Determine whether you want to publish the view to the child roles of each security role that is selected. If you do, select the **Include child roles** check box in the row for the appropriate security roles. Note that this check box isn't available for roles that don't have child roles.
+10. Add the legal entities that this view should be available for. 
+
+    > [!NOTE]
+    > Be aware of the following expectations when you publish a view to a legal entity.
+    > 
+    > If you publish a view to a legal entity, but you don't publish it as the default view, users will initially see the view in the view selector only for the specified legal entities. However, after the view is loaded for the first time, it will always be in the user's view selector for that page, regardless of the legal entity.
+
+11. Select **Publish**.
 
 Note that in some environments, it may take some time (up to an hour) before users see the published view.
 
-> [!NOTE]
-> Be aware of the following expectations when you publish a view to a legal entity, or when you publish a view as the default view.
-> - If you publish a view as the default view to all or some legal entities, you change the single, global default view of every targeted user. If a user has roles where multiple views are published as the default view, the last view that was published will be used as the user's default view. 
-> - If you publish a view to a legal entity, but you don't publish it as the default view, users will initially see the view in the view selector only for the specified legal entities. However, after the view is loaded for the first time, it will always be in the user's view selector for that page, regardless of the legal entity. 
+ 
 
 ## Modifying a published view
 

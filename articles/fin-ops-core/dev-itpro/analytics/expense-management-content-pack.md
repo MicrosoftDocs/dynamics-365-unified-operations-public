@@ -4,7 +4,6 @@
 title: Expense management Power BI content
 description: This topic describes what is included in the Expense management Power BI content pack.
 author: panolte
-manager: AnnBe
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
@@ -48,7 +47,7 @@ Two Power BI content packs are available for use with Expense management in vers
 All the amounts are shown in the company currency. Data for all companies are shown, but if needed you can add a company filter. 
 
 ## Accessing the Power BI content
-You can find the Expense Admin Dashboard.pbix and Expense Personal Dashboard.pbix Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+You can find the Expense Admin Dashboard.pbix and Expense Personal Dashboard.pbix Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 The content is available from the Expense Management workspace as embedded Power Bi content. Any expense owner can access personal expenses for themselves, while only Accounts Payable clerks and managers have access to the Admin content to view all user's expense data.
 
 ## Refreshing the Power BI content

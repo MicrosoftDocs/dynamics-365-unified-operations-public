@@ -5,7 +5,6 @@
 title: Set up new environments, Azure DevOps, and branches for projects
 description: This topic describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 Commerce projects.
 author: andreashofmann1
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
@@ -31,7 +30,7 @@ ms.dyn365.ops.version: Retail 7.3
 
 [!include [banner](../../includes/banner.md)]
 
-Most environments for Microsoft Dynamics 365 Commerce projects are hosted in the cloud. They are either Microsoft-hosted on a Microsoft subscription or cloud-hosted on a customer subscription. By default, environments are Microsoft-hosted. You can use cloud-hosted environments to provide more control over a development or build environment. For more information, see the [Lifecycle Services (LCS) user guide](../../dev-itpro/lifecycle-services/lcs-user-guide.md).
+Most environments for Microsoft Dynamics 365 Commerce projects are hosted in the cloud. They are either Microsoft-hosted on a Microsoft subscription or cloud-hosted on a customer subscription. By default, environments are Microsoft-hosted. You can use cloud-hosted environments to provide more control over a development or build environment. For more information, see the [Lifecycle Services (LCS) user guide](../../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md).
 
 ## Development Tier 1 environments
 
@@ -91,7 +90,7 @@ Tier 2 and higher machines are multi-box environments for multiple test and veri
 
 ## Branches, build definitions, and environments
 
-Branching is an important practice in software development. The [Branching and Merging Primer](https://msdn.microsoft.com/library/aa730834(v=vs.80).aspx) topic describes the advantages of branching:
+Branching is an important practice in software development. The [Branching and Merging Primer](/previous-versions/aa730834(v=vs.80)) topic describes the advantages of branching:
 
 > [!NOTE]
 > A branching and merging strategy involves a tradeoff between risk and productivity. You trade the safety of working in isolation for the increased productivity of working with other people. The productivity increases come with a cost—the additional effort required for merging software assets sometime in the future.
@@ -254,7 +253,7 @@ Regardless of whether there are customizations in the code branches, the followi
 5. Optional: Restore a recent copy of a production database that has good data.
 
     1. Rename the existing database **AxDB\_Orig**.
-    2. In Microsoft SQL Server Management Studio, restore the .bak file. (If a .bacpac file exists, follow the steps in [Copy a database from Azure SQL Database to a SQL Server environment](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/copy-database-from-azure-sql-to-sql-server).)
+    2. In Microsoft SQL Server Management Studio, restore the .bak file. (If a .bacpac file exists, follow the steps in [Copy a database from Azure SQL Database to a SQL Server environment](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-azure-sql-to-sql-server).)
     3. In Visual Studio, refresh the model store.
     4. In Visual Studio, do a full build if the source and destination environments of the database are on different versions.
     5. In Visual Studio, run a full database synchronization.
@@ -317,7 +316,7 @@ Next, on the **Customize virtual machine names** tab, enter a unique name, and t
 
 After you complete the steps earlier in this topic, you should have one build definition and two agent queues, and each agent queue should have one agent. To build different branches, you must configure the build definition differently. Therefore, you must clone the build definition.
 
-However, before you clone the build definition, you must add the Retail SDK into the build, so that you don't have to complete this step twice. To edit the existing build definition, which is named **Unified Operations platform - Build Main**, follow the steps in [Integrate the Retail SDK with the continuous build system (Azure DevOps)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build) to integrate the Retail SDK into the metadata build of the Main branch.
+However, before you clone the build definition, you must add the Retail SDK into the build, so that you don't have to complete this step twice. To edit the existing build definition, which is named **Unified Operations platform - Build Main**, follow the steps in [Integrate the Retail SDK with the continuous build system (Azure DevOps)](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build) to integrate the Retail SDK into the metadata build of the Main branch.
 
 If you had multiple build branches and environments, just clone the build definition, and name the new build definition so that it's clear which branch it's for. (The clone feature is available in the Azure DevOps portal). Select the new agent queue that you created, and change the following paths in any build steps or source mappings. (In the paths, change **Main** to **ProdRel1**.)
 

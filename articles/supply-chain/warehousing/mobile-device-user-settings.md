@@ -4,7 +4,6 @@
 title: Mobile device user settings
 description: This topic explains how to manage mobile device user settings for warehouse workers.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 02/09/2021
 ms.topic: article
 ms.prod: 
@@ -100,3 +99,8 @@ Follow these steps to create and manage your mobile device brands and models.
 
     - **Device model ID** – The device model ID, such as *Surface Book 2*.
     - **Description** – You can enter a description to help distinguish model IDs.
+
+## Additional resources
+
+- [Install and connect the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
+- [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md)

@@ -4,7 +4,6 @@
 title: Details Master form pattern
 description: This topic provides information about the Details Master form pattern. A details form is the primary method for entering data.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -249,7 +248,7 @@ None.
 ### AX 2012 content
 
 #### AX 2012 links
--   [AX 2012 MSDN Details Forms](https://msdn.microsoft.com/library/hh397318.aspx)
+-   [AX 2012 MSDN Details Forms](/dynamicsax-2012/developer/details-forms)
 
 #### AX 2012 example
 

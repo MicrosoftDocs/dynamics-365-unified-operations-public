@@ -4,7 +4,6 @@
 title: Create a new product hierarchy
 description: This topic describes how to create a new product hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 

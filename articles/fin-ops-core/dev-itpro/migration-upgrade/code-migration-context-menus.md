@@ -4,7 +4,6 @@
 title: Code migration - Context menu code
 description: This topic provides details about the programming model that is required for context menus (shortcut menus).
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

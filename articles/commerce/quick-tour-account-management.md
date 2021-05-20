@@ -4,7 +4,6 @@
 title: Account management pages overview
 description: This topic provides an overview of account management pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
@@ -43,7 +42,7 @@ The following illustration shows an example of the account management landing pa
 
 ### My profile page
 
-The **My profile** page shows customer's account information, such as his or her name and phone number. The customer can update his or her profile information on this page. This page can be customized so that it includes additional customer account preferences, such as an option for opting in to marketing email.
+The **My profile** page shows customer's account information, such as name and phone number. The customer can update profile information on this page. This page can be customized so that it includes additional customer account preferences, such as an option for opting in to marketing email.
 
 The following illustration shows an example of a **My profile** page that was built by using the module library.
 
@@ -51,7 +50,7 @@ The following illustration shows an example of a **My profile** page that was bu
 
 ### Addresses page
 
-The **Addresses** page lets the customer add addresses to his or her account. It also shows the list of addresses that the customer has previously added or saved to the account. These addresses are addresses that the customer entered either on this page or while placing an order.
+The **Addresses** page lets the customer add addresses to their account. It also shows the list of addresses that the customer has previously added or saved to the account. These addresses are addresses that the customer entered either on this page or while placing an order.
 
 The following illustration shows an example of the **Addresses** page.
 
@@ -59,7 +58,7 @@ The following illustration shows an example of the **Addresses** page.
 
 ### Order history and Order details pages
 
-The **Order history** page shows a summary of all orders that the customer has submitted by using his or her account. It gives a quick summary of the items that were ordered, the confirmation number, sales ID, tracking information, and other information. If the customer wants to view a more detailed breakdown of each order, there is an **Order details** page. This page includes information such as the shipping address, payment information, discounts, taxes, and shipping costs for the order.
+The **Order history** page shows a summary of all orders that the customer has submitted by using their account. It gives a quick summary of the items that were ordered, the confirmation number, sales ID, tracking information, and other information. If the customer wants to view a more detailed breakdown of each order, there is an **Order details** page. This page includes information such as the shipping address, payment information, discounts, taxes, and shipping costs for the order.
 
 The following illustration shows an example of the **Order history** page.
 
@@ -79,7 +78,7 @@ The following illustration shows an example of a **Loyalty program** page.
 
 ### Wishlist page
 
-The **Wishlist** page shows a list of the items that the customer has added to his or her wish list. Both products and product variants can be added to the wish list. From this page, the customer can remove an item from the wish list or add an item directly to the cart.
+The **Wishlist** page shows a list of the items that the customer has added to their wish list. Both products and product variants can be added to the wish list. From this page, the customer can remove an item from the wish list or add an item directly to the cart.
 
 The following illustration shows an example of a **Wishlist** page.
 

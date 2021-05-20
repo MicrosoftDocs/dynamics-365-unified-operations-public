@@ -4,11 +4,9 @@
 title: Products and categories are missing after environment copy
 description: This topic provides troubleshooting guidance that can help when products and categories are missing after a site is copied between environments or within the same environment.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

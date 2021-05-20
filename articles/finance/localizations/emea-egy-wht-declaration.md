@@ -4,11 +4,9 @@
 title: Withholding tax declaration for Egypt
 description: This topic explains how to configure and generate the withholding tax declarations for Egypt.
 author: sndray
-manager: AnnBe
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -16,7 +14,7 @@ ms.technology:
 # ms.search.form:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: kfend
 ms.search.scope:
 # ms.tgt_pltfrm: 
 # ms.custom: NotInTOC

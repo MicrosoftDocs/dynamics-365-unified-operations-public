@@ -4,8 +4,7 @@
 title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
-manager: AnnBe
-ms.date: 02/03/2021
+ms.date: 04/28/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -39,8 +38,8 @@ You can access Service Fabric Explorer in a web browser by using the default add
 
 To verify the address, note the value that was used in the "Create DNS zones and add A records" section of the appropriate setup and deployment topic for your environment:
 
-- [Platform update 12](setup-deploy-on-premises-pu12.md#createdns)
-- [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#createdns)
+- [Platform update 41 and later](setup-deploy-on-premises-pu41.md#createdns)
+- [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#createdns)
 
 You can access the site only if the client certificate is in cert:\\CurrentUser\\My on the machine that you're accessing the site on. (In Certificate Manger, go to **Certificates - Current User** \> **Personal** \> **Certificates**.) When you access the site, select the client certificate when you're prompted.
 
@@ -139,14 +138,15 @@ Note the current deployment status for the environment in Microsoft Dynamics Lif
 
 Run Test-D365FOConfiguration.ps1 as noted in the "Set up a standalone Service Fabric cluster" section of the appropriate setup and deployment topic for your environment. Note any errors.
 
-- [Platform update 12](setup-deploy-on-premises-pu12.md#setupsfcluster)
-- [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster)
+- [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupsfcluster)
+- [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupsfcluster)
+
 
 Be sure to complete these steps:
 
 - Verify that the Service Fabric Server client certificate exists in the LocalMachine store on all Service Fabric nodes.
 - Verify that the Service Fabric Server certificate has the access control list (ACL) for Network Service on all Service Fabric nodes.
-- Review the antivirus exclusions that are noted in [Environment setup](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
+- Review the antivirus exclusions that are noted in [Environment setup](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
 
 ## A time-out error occurs while you're waiting for Installer Service to be completed for machine x.x.x.x
 
@@ -234,8 +234,9 @@ To clean up an existing environment and redeploy, follow these steps.
 
     For information about how to correctly fill in the fields in the templates, see the appropriate setup and deployment topic for your environment:
 
-    - [Platform update 12](setup-deploy-on-premises-pu12.md)
-    - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md)
+    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md)
+    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md)
+  
 
 5. In LCS, open the project, and update the LCS on-premises connector as required.
 
@@ -247,8 +248,8 @@ To clean up an existing environment and redeploy, follow these steps.
 
 6. Deploy again by following the instructions in the appropriate setup and deployment topic for the environment:
 
-    - [Platform update 12](setup-deploy-on-premises-pu12.md)
-    - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md).
+    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md)
+    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md)
 
 ## Find the local agent values that are used
 
@@ -356,8 +357,8 @@ You can also manually add the following values in the **components** section of 
 
 3. Make sure that the same certificate that is specified in the local agent configuration in LCS was used to complete the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:
 
-    - [Platform update 12](setup-deploy-on-premises-pu12.md#configurelcs)
-    - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
+    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configurelcs)
+    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#configurelcs)
 
 4. Uninstall the local agent.
 5. Specify the correct certificate in the local agent configuration, and download the configuration file again.
@@ -396,8 +397,8 @@ To resolve the error, run the .\Set-CertificateAcls.ps1 script to reset the ACLs
 
 3. Make sure that the "Set up file storage" section of the appropriate setup and deployment topic for your environment is completed:
 
-    - [Platform update 12](setup-deploy-on-premises-pu12.md#setupfile)
-    - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#setupfile)
+    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupfile)
+    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupfile)
 
 4. Uninstall the local agent.
 5. Specify the correct file share in the local agent configuration, and download the configuration file again.
@@ -455,7 +456,7 @@ If you re-create a user in AD DS, remember that the SID will change. In this cas
 
 ### Issue
 
-When you performing the [Configure the databases](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configuredb) procedure, if the SQL Server instance is a named instance, use the **-DatabaseServer \[FQDN/Instancename\]** parameter.
+When you performing the [Configure the databases](setup-deploy-on-premises-pu12.md#configuredb) procedure, if the SQL Server instance is a named instance, use the **-DatabaseServer \[FQDN/Instancename\]** parameter.
 
 ### Issue
 
@@ -551,7 +552,7 @@ Follow these steps to upgrade Service Fabric in Windows PowerShell.
 3. Start the upgrade. For **-CodePackageVersion**, enter the latest version.
 
     > [!NOTE]
-    > **-UpgradeReplicaSetCheckTimeout** is used to skip PreUpgradeSafetyCheck for SSRS and Management Reporter. For more information, see [Service Fabric service upgrade not working](https://github.com/Azure/service-fabric-issues/issues/595). You might also want to use **-UpgradeDomainTimeoutSec 600 -UpgradeTimeoutSec 1800**. For more information, see [Application upgrade parameters](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-upgrade-parameters).
+    > **-UpgradeReplicaSetCheckTimeout** is used to skip PreUpgradeSafetyCheck for SSRS and Management Reporter. For more information, see [Service Fabric service upgrade not working](https://github.com/Azure/service-fabric-issues/issues/595). You might also want to use **-UpgradeDomainTimeoutSec 600 -UpgradeTimeoutSec 1800**. For more information, see [Application upgrade parameters](/azure/service-fabric/service-fabric-application-upgrade-parameters).
 
     ```powershell
     Start-ServiceFabricClusterUpgrade -Code -CodePackageVersion 6.1.472.9494 -Monitored -FailureAction Rollback -UpgradeReplicaSetCheckTimeout 30
@@ -563,7 +564,7 @@ Follow these steps to upgrade Service Fabric in Windows PowerShell.
     Get-ServiceFabricClusterUpgrade
     ```
 
-For more information, see [Troubleshoot application upgrades](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-upgrade-troubleshooting).
+For more information, see [Troubleshoot application upgrades](/azure/service-fabric/service-fabric-application-upgrade-troubleshooting).
 
 To learn when a new Service Fabric release comes out, see the [Azure Service Fabric team blog](https://blogs.msdn.microsoft.com/azureservicefabric/).
 
@@ -593,8 +594,8 @@ This error can also occur if the **''** parameter isn't defined in the Applicati
 
 - The encrypt credentials for the credentials.json file have the correct layout/structure. For more information, see the "Encrypt credentials" section of the appropriate setup and deployment topic for your environment:
 
-    - [Platform update 12](setup-deploy-on-premises-pu12.md#encryptcred)
-    - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#encryptcred)
+    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#encryptcred)
+    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#encryptcred)
 
 - A closing quotation mark appears at the end of the line or on the next line.
 
@@ -706,8 +707,8 @@ Additional logging can be done by registering providers. Download [ETWManifest.z
 > [!NOTE]
 > If results in Event Viewer don't appear correct (for example, if words are truncated), get the latest manifest and .dll files. To get the latest manifest and .dll files, go to the WP folder in the agent file share. This share was created in the "Set up file storage" section of the appropriate setup and deployment topic for your environment:
 > 
-> - [Platform update 12](setup-deploy-on-premises-pu12.md#setupfile)
-> - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#setupfile)
+> - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupfile)
+> - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupfile)
 > 
 > **Example:** \[*Agent Share*\]\\wp\\\[*Deployment name*\]\\StandaloneSetup-...\\Apps\\ETWManifests
 
@@ -912,7 +913,7 @@ On the AD FS machine, in Event Viewer, go to **Applications and Services Logs** 
 
 ### Fiddler
 
-Fiddler can be used for additional debugging. For in-depth information about Fiddler, see [AD FS 2.0: How to Use Fiddler Web Debugger to Analyze a WS-Federation Passive Sign-In](https://social.technet.microsoft.com/wiki/contents/articles/3286.ad-fs-2-0-how-to-use-fiddler-web-debugger-to-analyze-a-ws-federation-passive-sign-in.aspx) and [Cracking the AD FS Token from another AD FS Claims Provider](https://blogs.technet.microsoft.com/tangent_thoughts/2014/06/04/cracking-the-ad-fs-token-from-another-ad-fs-claims-provider/).
+Fiddler can be used for additional debugging. For in-depth information about Fiddler, see [AD FS 2.0: How to Use Fiddler Web Debugger to Analyze a WS-Federation Passive Sign-In](https://social.technet.microsoft.com/wiki/contents/articles/3286.ad-fs-2-0-how-to-use-fiddler-web-debugger-to-analyze-a-ws-federation-passive-sign-in.aspx) and [Cracking the AD FS Token from another AD FS Claims Provider](/archive/blogs/tangent_thoughts/cracking-the-ad-fs-token-from-another-ad-fs-claims-provider).
 
 The following sections provide focused debugging steps for claims that are returned to Microsoft Dynamics.
 
@@ -1005,8 +1006,8 @@ In this case, either the certificates haven't been installed, or they haven't gi
 
 If you find that the keyset doesn't exist, scripts weren't run on all machines. Review and complete the "Set up VMs" section of the appropriate setup and deployment topic for your environment:
 
-- [Platform update 12](setup-deploy-on-premises-pu12.md#setupvms)
-- [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#setupvms)
+- [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupvms)
+- [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupvms)
 
 Copy the scripts in each folder to the VMs that correspond to the folder name.
 
@@ -1058,8 +1059,8 @@ If you receive an "Unable to find certificate" error when you run Test-D365FOCon
 
 If the client and server can't communicate because they don't have a common algorithm, verify that the certificates that are created use the specified provider, as explained in the "Plan and acquire your certificates" section of the appropriate setup and deployment topic for your environment:
 
-- [Platform update 12](setup-deploy-on-premises-pu12.md#plancert)
-- [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#plancert)
+- [Platform udpate 41 and later](setup-deploy-on-premises-pu41.md#plancert)
+- [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#plancert)
 
 ## Find a list of group managed service accounts
 
@@ -1105,16 +1106,16 @@ This issue occurs because AOS users aren't in the local administrator group, and
 
 1. Add AOS users as local admins, as described in the "Join VMs to the domain" section of the appropriate setup and deployment topic for your environment:
 
-    - [Platform update 12](setup-deploy-on-premises-pu12.md#joindomain)
-    - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#joindomain)
-
+    - [Platform udpate 41 and later](setup-deploy-on-premises-pu41.md#joindomain)
+    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#joindomain)
+ 
 2. Run the **Config-PreReq** script on all the AOS machines.
 3. Make sure that the **Test-Configuration** script passes.
 4. If UAC was changed, you must restart the machine before the changes take effect.
 
 ## Files in use errors
 
-If these "Files in use" errors occur, set up the exclusion rules that Service Fabric advises. For information, see [Environment setup](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
+If these "Files in use" errors occur, set up the exclusion rules that Service Fabric advises. For information, see [Environment setup](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
 
 ## Apply deployable packages during deployment
 
@@ -1173,8 +1174,8 @@ Follow these steps to configure the local agent with the updated tenant.
 
 2. Follow the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:
 
-    - [Platform update 12](setup-deploy-on-premises-pu12.md#configurelcs)
-    - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
+    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configurelcs)
+    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#configurelcs)
 
 3. Create a new LCS connector in the new tenant.
 4. Download the **local-agent.config** file.
@@ -1192,25 +1193,25 @@ You will receive the following error when you deploy an additional environment:
 
 You can skip or modify the following sections in the deployment instructions.
 
-### Plan and acquire your certificates (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#plancert) or [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#plancert))
+### Plan and acquire your certificates (as documented for [Platform update 42 and later](setup-deploy-on-premises-pu41.md#plancert) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#plancert))
 
 - You must use the same on-premises local agent certificate.
 - You can use same star certificates (AOS SSL and Service Fabric).
 - The remaining certificates should probably differ from the certificates for the existing environment.
 
-### Download setup scripts from LCS (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#downloadscripts) or [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#downloadscripts))
+### Download setup scripts from LCS (as documented for [Platform update 42 and later](setup-deploy-on-premises-pu41.md#downloadscripts) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#downloadscripts))
 
 - The scripts that are downloaded should be copied into a new folder.
 
-### Set up a standalone Service Fabric cluster (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#setupsfcluster) or [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster))
+### Set up a standalone Service Fabric cluster (as documented for [Platform update 42 and later](setup-deploy-on-premises-pu41.md#setupsfcluster) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#setupsfcluster))
 
 - The scripts that are downloaded should be copied into a new folder.
 
-### Configure LCS connectivity for the tenant (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#configurelcs) or [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs))
+### Configure LCS connectivity for the tenant (as documented for [Platform update 42 and later](setup-deploy-on-premises-pu41.md#configurelcs) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#configurelcs))
 
 - You must complete this task only one time for the tenant.
 
-### Configure AD FS (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#configureadfs) or [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configureadfs))
+### Configure AD FS (as documented for [Platform update 42 and later](setup-deploy-on-premises-pu41.md#configureadfs) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#configureadfs))
 
 - Configure AD FS according to the [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md) guide.
 
@@ -1324,7 +1325,7 @@ If you have both an online project and an on-premises project, follow these step
 
 ## ODBC driver 17 is required for platform updates
 
-The latest platform binary update uses Open Database Connectivity (ODBC) driver 17. This upgrade resolves stability issues that are linked to older ODBC drivers. The [Setup perquisites](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 must be installed on each AOS server. If you don't install ODBC driver 17, you will receive DB Sync errors during servicing of the environment.
+The latest platform binary update uses Open Database Connectivity (ODBC) driver 17. This upgrade resolves stability issues that are linked to older ODBC drivers. The [Setup perquisites](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 must be installed on each AOS server. If you don't install ODBC driver 17, you will receive DB Sync errors during servicing of the environment.
 
 Here are some examples of errors:
 
@@ -1554,6 +1555,25 @@ Microsoft.Dynamics.AX.InitializationException: Database login failed. Please che
 use master
 GRANT ALTER ANY EVENT SESSION to axdbadmin;
 ```
+
+## ReportingService fails to start
+
+**Issue:** During deployment, the ReportingService fails to start. In the event logs you will see the following error:
+
+```stacktrace
+Could not load file or assembly 'Microsoft.SqlServer.BatchParser, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type) 
+    at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase) at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+    at Microsoft.SqlServer.Management.Common.ServerConnection.GetStatements(String query, ExecutionTypes executionType, Int32& statementsToReverse)
+    at Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteNonQuery(String sqlCommand, ExecutionTypes executionType)
+    at Microsoft.Dynamics.AX.Framework.Reports.Setup.ReportsIdentityUpdater.ExecuteSQlScript(String script)
+    at Microsoft.Dynamics.AX.Framework.Reports.Setup.ReportsIdentityUpdater.CreateReportServerDatabase(String userName, SrsWmi rsconfigSetting)
+    at Microsoft.Dynamics.AX.Framework.Reports.Setup.ReportsServerInstaller.SetInstanceIdentity(String instanceName, String username)
+    at Microsoft.Dynamics.AX.Framework.Reports.Setup.RunReportsSetup.Execute(String path, String encodedConfigurationValues)
+```
+**Reason:** This issue occurs because the correct version of SSMS is not installed. The version of SSMS that should be installed is 17.9.1.
+
+**Resolution:** Install SSMS version 17.9.1.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

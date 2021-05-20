@@ -4,7 +4,6 @@
 title: Set up and work with call center fraud alerts
 description: This topic explains how to set up rules to alert customer service representatives of potentially fraudulent information when orders are processed. You can define specific codes that are used to automatically or manually put suspicious orders on hold. 
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: 
@@ -40,13 +39,13 @@ This topic explains how to set up criteria and rules to put potentially fraudule
 
 ## Turning on the fraud check feature
 
-To use the fraud check feature, you must set the **Enable order completion** option on the channel to **Yes** when the call center channel is [defined](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-order-processing-options). When order completion is turned on, call center users must select **Complete** on the sales order page for all sales orders that are created. The Complete action causes the **Sales order summary** page to open. After users enter the required payment data on the **Sales order summary** page, they select **Submit** to finalize the order. When the order is submitted, the fraud check feature is triggered, and any rules that are active in the system are automatically validated.
+To use the fraud check feature, you must set the **Enable order completion** option on the channel to **Yes** when the call center channel is [defined](/dynamics365/unified-operations/retail/set-up-order-processing-options). When order completion is turned on, call center users must select **Complete** on the sales order page for all sales orders that are created. The Complete action causes the **Sales order summary** page to open. After users enter the required payment data on the **Sales order summary** page, they select **Submit** to finalize the order. When the order is submitted, the fraud check feature is triggered, and any rules that are active in the system are automatically validated.
 
-Call center users can also manually put sales orders on hold for fraud review before they select **Submit**. To manually put a sales order on hold, on the **Sales order summary** page, select **Hold** \> **Manual fraud hold**. You're then prompted to enter a comment to explain your reason for putting the order on hold. This comment will appear in the [order holds](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) workbench to provide context to the user who reviews orders that are on hold to determine whether the order should be released.
+Call center users can also manually put sales orders on hold for fraud review before they select **Submit**. To manually put a sales order on hold, on the **Sales order summary** page, select **Hold** \> **Manual fraud hold**. You're then prompted to enter a comment to explain your reason for putting the order on hold. This comment will appear in the [order holds](/dynamics365/unified-operations/retail/work-with-order-holds) workbench to provide context to the user who reviews orders that are on hold to determine whether the order should be released.
 
 In addition to configuring the **Enable order completion** option on the channel, you must configure the fraud check feature in the Call center parameters. Go to **Retail and Commerce** \> **Channel setup** \> **Call center setup** \> **Call center parameters**. On the **Call center parameters** page, on the **Holds** tab, set the **Fraud check** option to **Yes**.
 
-On the **Holds** tab, you should also define the [hold codes](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) that will be applied to an order that is either manually or automatically put on hold for fraud review. Set the hold codes in the **Manual fraud hold code** and **Fraud hold code** fields. You might find it helpful to create two unique hold codes, so that users who work in the holds workbench can easily filter and distinguish automatic holds from manual holds.
+On the **Holds** tab, you should also define the [hold codes](/dynamics365/unified-operations/retail/work-with-order-holds) that will be applied to an order that is either manually or automatically put on hold for fraud review. Set the hold codes in the **Manual fraud hold code** and **Fraud hold code** fields. You might find it helpful to create two unique hold codes, so that users who work in the holds workbench can easily filter and distinguish automatic holds from manual holds.
 
 For the fraud check feature to work effectively, you must also set the **Minimum score** field. Every fraud criterion and rule that is defined in the system has a score. When a sales order is checked for fraud matches, if one or more matches are found, the scores are added together to give the order a total fraud score. If the total fraud score for an order exceeds the value of the **Minimum score** field, the order is automatically put on hold. You can optionally use the other score-related fields on the **Holds** tab to define the email score, phone score, ZIP/postal code score, and extended ZIP/postal code score. If you don't specify a score for any of these static fraud criteria when you define them on the **Static fraud data** page, the system will score them by using the default scores that you specify on the **Holds** tab of the **Call center parameters** page.
 
@@ -71,7 +70,7 @@ The order is saved, but the **Do not process** flag is set on it. This flag help
 
 To view and manage the orders that are on hold for fraud review, go to **Retail and Commerce** \> **Customers** \> **Order holds**. On the **Order holds** page, select an entry in the list, and then click **Order hold** to see a more detailed view that includes information about the reason for the hold. On the **Fraud details** FastTab, you can view the systematic fraud criteria that were found to be a match for the order and the scores that were applied. If the order was put on manual hold, you can review any comments that were entered by the user who put the order on hold by looking at the **Fraud notes** section on the **Notes** FastTab.
 
-For more information about how to work with hold orders, see [Order holds](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
+For more information about how to work with hold orders, see [Order holds](/dynamics365/unified-operations/retail/work-with-order-holds).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

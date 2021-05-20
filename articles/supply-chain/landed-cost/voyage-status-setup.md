@@ -4,11 +4,9 @@
 title: Voyage status setup
 description: This topic describes how to establish the status values that users can assign to voyages.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

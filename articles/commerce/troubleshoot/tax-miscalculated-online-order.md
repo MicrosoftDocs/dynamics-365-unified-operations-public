@@ -4,11 +4,9 @@
 title: Taxes on online orders are incorrectly calculated
 description: This topic provides troubleshooting guidance that can help when taxes on online orders are incorrectly calculated, or when the tax group on the sales line isn't correctly set.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -50,7 +48,7 @@ To configure the sales tax for a retail store in Commerce headquarters, follow t
 1. On the **General** FastTab, in the **Sales tax** section, configure the sales tax information for the store.
 
 > [!NOTE]
-> For product pickup from a store, the tax group comes from the store that is selected for pickup. For more information, see [Set other tax options for stores](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
+> For product pickup from a store, the tax group comes from the store that is selected for pickup. For more information, see [Set other tax options for stores](/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
 
 ### Configure the sales tax for a customer's address in Commerce headquarters
 
@@ -74,7 +72,7 @@ To configure general sales tax groups in Commerce headquarters, follow these ste
 1. On the **Retail destination based tax** FastTab, configure the taxes for the sales tax group.
 
 > [!NOTE]
-> For shipping that doesn't involve sales tax on the customer's address, the delivery address of the line and the destination-based taxes that are configured for the tax group determine the tax group. For more information, see [Set up taxes for online stores based on destination](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
+> For shipping that doesn't involve sales tax on the customer's address, the delivery address of the line and the destination-based taxes that are configured for the tax group determine the tax group. For more information, see [Set up taxes for online stores based on destination](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ## Additional resources
 

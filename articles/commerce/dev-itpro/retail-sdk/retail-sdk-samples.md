@@ -4,7 +4,6 @@
 title: Extend Commerce Store receipts
 description: This topic describes how to extend Commerce store receipts.
 author: mugunthanm
-manager: AnnBe
 ms.date: 03/02/2021
 ms.topic: article
 ms.prod: 
@@ -92,7 +91,7 @@ At the headquarters (HQ), create two custom receipt fields: **EXPIRATIONDATE** f
 
 ## Sample code to implement Custom fields
 
-To add the custom fields to the sales receipts or any receipt format, implement **GetSalesTransactionCustomReceiptFieldServiceRequest** and the business logic for the custom fields in CRT, as shown in the following code. For more information, see [Commerce runtime (CRT) extensibility](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/commerce-runtime-extensibility).
+To add the custom fields to the sales receipts or any receipt format, implement **GetSalesTransactionCustomReceiptFieldServiceRequest** and the business logic for the custom fields in CRT, as shown in the following code. For more information, see [Commerce runtime (CRT) extensibility](../commerce-runtime-extensibility.md).
 
 ```C#
 public IEnumerable<Type> SupportedRequestTypes
@@ -180,7 +179,7 @@ protected override GetReceiptResponse Process(GetCustomReceiptsRequest request)
 The full sample code is available in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsSamplefolder folder.
 
 > [!NOTE]
-> You should call the printing of the custom receipt type from the client. For more information, see [Printing custom receipt from POS](https://docs.microsoft.com/dynamics365/retail/dev-itpro/pos-trigger-printing).
+> You should call the printing of the custom receipt type from the client. For more information, see [Printing custom receipt from POS](../pos-trigger-printing.md).
 
 ### Best practice
 

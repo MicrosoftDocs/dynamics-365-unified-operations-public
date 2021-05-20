@@ -4,7 +4,6 @@
 title: Create a leave and absence plan
 description: Create leave plans in Dynamics 365 Human Resources for different types of leave.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521

@@ -4,7 +4,6 @@
 title: Welcome to Dynamics 365 Talent
 description: Talent streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. These processes include employee retention, benefits administration, training, performance reviews, and change management.
 author: andreabichsel
-manager: tfehr
 ms.date: 10/03/2019
 ms.topic: index-page
 ms.prod: 
@@ -16,7 +15,6 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
@@ -38,7 +36,7 @@ Talent includes Attract, which can help you identify, interview, and hire candid
 - [Get started with Onboard](create-onboarding-experience.md)
 
 > [!IMPORTANT]
-> The functionality in Dynamics 365 Talent: Core HR is now part of Dynamics 365 Human Resources. You can view the documentation for Human Resources at [Welcome to Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365/human-resources/hr-welcome).
+> The functionality in Dynamics 365 Talent: Core HR is now part of Dynamics 365 Human Resources. You can view the documentation for Human Resources at [Welcome to Dynamics 365 Human Resources]().
 
 
 

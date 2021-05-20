@@ -4,11 +4,9 @@
 title: Set up an e-commerce development environment to debug against a Tier 1 Retail Server virtual machine
 description: This topic explains how to set up an e-commerce development environment to debug against a Tier 1 Retail Server virtual machine (VM).
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

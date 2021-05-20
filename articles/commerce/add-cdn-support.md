@@ -4,7 +4,6 @@
 title: Add support for a content delivery network (CDN)
 description: This topic describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
 author: brianshook
-manager: annbe
 ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
@@ -53,7 +52,7 @@ As was previously mentioned, the generated host name or endpoint supports an SSL
 
 Any CDN service can be used with a Commerce environment. Here are two examples:
 
-- **Microsoft Azure Front Door Service** – The Azure CDN solution. For more information about Azure Front Door Service, see [Azure Front Door Service Documentation](https://docs.microsoft.com/azure/frontdoor/).
+- **Microsoft Azure Front Door Service** – The Azure CDN solution. For more information about Azure Front Door Service, see [Azure Front Door Service Documentation](/azure/frontdoor/).
 - **Akamai Dynamic Site Accelerator** – For more information, see [Dynamic Site Accelerator](https://www.akamai.com/us/en/products/performance/dynamic-site-accelerator.jsp).
 
 ## CDN setup
@@ -68,7 +67,7 @@ The CDN setup process consists of these general steps:
 
 Any CDN service can be used, but for the example in this topic, Azure Front Door Service is used. 
 
-For information about how to set up Azure Front Door Service, see [Quickstart: Create a Front Door for a highly available global web application](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
+For information about how to set up Azure Front Door Service, see [Quickstart: Create a Front Door for a highly available global web application](/azure/frontdoor/quickstart-create-front-door).
 
 ### Configure a backend pool in Azure Front Door Service
 
@@ -121,7 +120,7 @@ The following illustration shows the **Custom Domain HTTPS** dialog box in Azure
 
 ![Custom Domain HTTPS dialog box](./media/Custom_Domain_HTTPS.png)
 
-For detailed instructions on adding a custom domain to your Azure Front Door, see [Add a custom domain to your Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
+For detailed instructions on adding a custom domain to your Azure Front Door, see [Add a custom domain to your Front Door](/azure/frontdoor/front-door-custom-domain).
 
 Your CDN should now be correctly configured so that it can be used with your Commerce site.
 

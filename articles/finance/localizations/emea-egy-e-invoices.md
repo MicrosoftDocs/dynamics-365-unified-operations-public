@@ -4,7 +4,6 @@
 title: Customer electronic invoices in Egypt
 description: This topic explains how to configure and submit customer electronic invoices in Egypt.
 author: ikondo
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 

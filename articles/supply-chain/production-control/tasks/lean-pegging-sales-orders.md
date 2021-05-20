@@ -4,7 +4,6 @@
 title: Lean pegging from sales orders
 description: This procedure focuses on validating the pegging tree from a sales line where the item is produced with kanbans. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

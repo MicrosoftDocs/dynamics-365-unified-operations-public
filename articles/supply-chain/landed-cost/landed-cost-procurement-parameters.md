@@ -4,11 +4,9 @@
 title: Procurement and sourcing parameters for Landed cost
 description: This topic describes how to set up the relevant Procurement and sourcing parameters when you use the Landed cost module.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

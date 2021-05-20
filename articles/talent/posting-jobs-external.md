@@ -4,7 +4,6 @@
 title: Post jobs to Broadbean from Attract
 description: This topic explains how to use Dynamics 365 Talent - Attract to post jobs to Broadbean
 author: pganapmsft
-manager: tfehr
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
@@ -15,7 +14,6 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

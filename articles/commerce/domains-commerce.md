@@ -4,7 +4,6 @@
 title: Domains in Dynamics 365 Commerce
 description: This topic describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrShoo
-manager: AnnBe
 ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
@@ -156,7 +155,7 @@ The Commerce-supplied Azure Front Door instance does not support apex domains (r
 
   [Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
 
-  [Set up an online store channel](online-stores.md)
+  [Set up an online store channel](./channel-setup-online.md)
 
   [Create an e-commerce site](create-ecommerce-site.md)
 

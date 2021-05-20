@@ -4,8 +4,7 @@
 title: Use JOIN data sources in ER model mappings to get data from multiple application tables
 description: This topic explains how you can use JOIN type data sources in Electronic reporting (ER).
 author: NickSelin
-manager: AnnBe
-ms.date: 05/04/2020
+ms.date: 04/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -70,13 +69,13 @@ To complete the examples in this topic, you must have access to one of the follo
 
 You also must first complete the steps in the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure.
 
-In advance, you must also download from [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=000000) and save locally the following sample ER configuration files:
+In advance, you must also download and save the following sample ER configuration files:
 
 | **Content description**  | **File name**   |
 |--------------------------|-----------------|
-| Sample **ER data model** configuration file, which is used as the data source for the examples.| [Model to learn JOIN data sources.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Sample **ER model mapping** configuration file, which implements the ER data model for the examples. | [Mapping to learn JOIN data sources.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Sample **ER format** configuration file. This file describes the data to populate the ER format component for the examples. | [Format to learn JOIN data sources.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Sample **ER data model** configuration file, which is used as the data source for the examples.| [Model to learn JOIN data sources.version.1.1.xml](https://download.microsoft.com/download/5/c/1/5c1d8a57-6ebd-425b-bc5d-c71dde92c6af/ModeltolearnJOINdatasources.version.1.xml) |
+| Sample **ER model mapping** configuration file, which implements the ER data model for the examples. | [Mapping to learn JOIN data sources.version.1.1.xml](https://user-images.githubusercontent.com/19827601/115923048-86b10400-a432-11eb-9e57-c37a02effcb4.png)|
+| Sample **ER format** configuration file. This file describes the data to populate the ER format component for the examples. | [Format to learn JOIN data sources.version.1.1.xml](https://download.microsoft.com/download/f/f/8/ff8f1b48-14d0-4c73-9145-bcdf8b5265bc/FormattolearnJOINdatasources.version.1.1.xml) |
 
 ### Activate a configurations provider
 
@@ -105,7 +104,7 @@ In advance, you must also download from [Microsoft Download Center](https://go.m
     3. Select **Browse** to find the **Format to learn JOIN data sources.version.1.1.xml** file.
     4. Select **OK**.
 5. In the configurations tree, expand the **Model to learn JOIN data sources** item as well as other model items (when available).
-6. Observe the list of ER configurations in the tree as well as version details on the **Versions** fast tab – they will be used as the source of data for your sample report.
+6. Observe the list of ER configurations in the tree as well as version details on the **Versions** FastTab – they will be used as the source of data for your sample report.
 
     ![Electronic reporting configurations page](./media/GER-JoinDS-ConfigurationsTree.PNG)
 
@@ -129,18 +128,18 @@ Review settings of the ER model-mapping component. The component is configured t
 4. Select **Show details**.
 5. In the configurations tree, expand the **Set1** and **Set1.Details** data model items:
 
-    1. Binding **Details: Record list = Versions** indicates that the **Set1.Details** item is bound to the **Versions** data source returning records of the **ERSolutionVersionTable** table. Each record of this table represents a single version of an ER configuration. The content of this table is presented in the **Versions** fast tab on the **Configurations** page.
+    1. Binding **Details: Record list = Versions** indicates that the **Set1.Details** item is bound to the **Versions** data source returning records of the **ERSolutionVersionTable** table. Each record of this table represents a single version of an ER configuration. The content of this table is presented in the **Versions** FastTab on the **Configurations** page.
     2. Binding **ConfigurationVersion: String = @.PublicVersionNumber** means that the value of the public version of each ER configuration’s version is taken from the **PublicVersionNumber** field of the **ERSolutionVersionTable** table and placed to the **ConfigurationVersion** item.
     3. Binding **ConfigurationTitle: String = @.'>Relations'.Solution.Name** indicates that the name of an ER configuration is taken from the **Name** field of the **ERSolutionTable** table assessing by using the many-to-one relation (**'>Relations'**) between the **ERSolutionVersionTable** and **ERSolutionTable** tables. Names of ER configurations of the current application instance are presented in the configurations tree on the **Configurations** page.
     4. Binding **@.'>Relations'.Solution.'>Relations'.SolutionVendor.Name** means that the name of the configuration provider that owns the current configuration is taken from the **Name** field of the **ERVendorTable** table assessing by using the many-to-one relation between **ERSolutionTable** and **ERVendorTable** tables. Names of ER configuration providers are presented in the configurations tree on the **Configurations** page on the page header for each configuration. The entire list of ER configuration providers can be found on the **Organization administration \> Electronic reporting \> Configuration provider** table page.
 
-    ![ER model mapping designer page](./media/GER-JoinDS-Set1Review.PNG)
+    ![ER model mapping designer page, list of bound data model items](./media/GER-JoinDS-Set1Review.PNG)
 
 6. In the configurations tree, expand the **Set1.Summary** data model item:
 
     1. Binding **VersionsNumber: Integer = VersionsSummary.aggregated.VersionsNumber** indicates that the **Set1.Summary.VersionsNumber** item is bound to the **VersionsNumber** aggregation field of the **VersionsSummary** data source of the **GroupBy** type that was configured to return the number of records of the **ERSolutionVersionTable** table via the **Versions** data source.
 
-    ![GROUPBY data source parameters page](./media/GER-JoinDS-Set1GroupByReview.PNG)
+    ![Edit 'Group By' parameters page](./media/GER-JoinDS-Set1GroupByReview.PNG)
 
 7. Close the page.
 
@@ -150,11 +149,11 @@ Review settings of the ER model-mapping component. The component is configured t
 
 1. In the configurations tree, expand the **Set2** and **Set2.Details** data model items. The binding **Details: Record list = Details** indicates that the **Set2.Details** item is bound to the **Details** data source configured as the data source of the **Join** type.
 
-    ![ER model mapping designer page](./media/GER-JoinDS-Set2Review.PNG)
+    ![ER model mapping designer page showing expanded Set2:Record data model items](./media/GER-JoinDS-Set2Review.PNG)
 
     The **Join** data source can be added by selecting the **Functions\Join** data source:
 
-    ![ER model mapping designer page](./media/GER-JoinDS-AddJoinDS.PNG)
+    ![ER model mapping designer page, Join data source type](./media/GER-JoinDS-AddJoinDS.PNG)
 
 2. Select **Detail**s data source.
 3. Select **Edit** in the **Data sources** pane.
@@ -202,21 +201,21 @@ Review settings of the ER model-mapping component. The component is configured t
 
     This format is designed to populate a generated text file with a new line for every version of an ER configuration (**Version** sequence). Each generated line will contain the name of a configuration provider owning the current configuration, the configuration name, and the configuration version separated by semicolon mark. The final line of generated file will contain the number of discovered versions of ER configurations (**Summary** sequence).
 
-    ![ER format designer page](./media/GER-JoinDS-FormatReview.PNG)
+    ![ER format designer page, Format tab](./media/GER-JoinDS-FormatReview.PNG)
 
     The **Data** and **Summary** data sources are used to populate configuration version details to the generated file:
 
     - Information from the **Set1** data model is used when you choose **No** for the **Selector** data source at runtime on the user dialog page when running ER format.
     - Information from the **Set2** data model is used when you choose **Yes** for the **Selector** data source at runtime on the user dialog page.
 
-    ![ER format designer page](./media/GER-JoinDS-FormatMappingReview.PNG)
+    ![ER format designer page, Mapping tab](./media/GER-JoinDS-FormatMappingReview.PNG)
 
 9. Select **Run**.
 10. On the dialog page, select **No** in the **Use JOIN data source** field.
 11. Select **OK**.
 12. Review generated file.
 
-    ![ER user dialog page](./media/GER-JoinDS-Set1Run.PNG)
+    ![Electronic report parameters generated file not using JOIN data source](./media/GER-JoinDS-Set1Run.PNG)
 
 #### Analyze ER format execution trace
 
@@ -230,7 +229,7 @@ Review settings of the ER model-mapping component. The component is configured t
     - **ERSolutionTable** has been called as many times as you have configuration version records in the **ERSolutionVersionTable** table, while the number of such calls could be reduced in times for performance improvement.
     - **ERVendorTable** has been called twice for every configuration version record that was discovered in the **ERSolutionVersionTable** table, while the number of such calls could be reduced as well.
 
-    ![ER model mapping designer page](./media/GER-JoinDS-Set1Run2.PNG)
+    ![Eexcution statistics on the ER Model mapping designer page](./media/GER-JoinDS-Set1Run2.PNG)
 
 5. Close the page.
 
@@ -242,7 +241,7 @@ Review settings of the ER model-mapping component. The component is configured t
 4. Select **OK**.
 5. Review generated file.
 
-    ![ER user dialog page](./media/GER-JoinDS-Set2Run.PNG)
+    ![Electronic report parameters generated file using JOIN data source](./media/GER-JoinDS-Set2Run.PNG)
 
 #### <a name="analyze"></a> Analyze ER format execution trace
 
@@ -255,11 +254,11 @@ Review settings of the ER model-mapping component. The component is configured t
 
     - Application database has been called once to get records from **ERVendorTable**, **ERSolutionTable**, and **ERSolutionVersionTable** tables to access required fields.
 
-    ![ER model mapping designer page](./media/GER-JoinDS-Set2Run2.PNG)
+    ![ER Model mapping designer page performance statistics details](./media/GER-JoinDS-Set2Run2.PNG)
 
     - Application database has been called once to calculate the number of configuration versions by using joins that were configured in the **Details** data source.
 
-    ![ER model mapping designer page](./media/GER-JoinDS-Set2Run3.PNG)
+    ![ER Model mapping designer page showing application database calls](./media/GER-JoinDS-Set2Run3.PNG)
 
 ## Limitations
 

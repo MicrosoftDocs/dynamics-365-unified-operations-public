@@ -4,7 +4,6 @@
 title: Master planning with purchase trade agreements
 description: This topic describes how Planning Optimization can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found in purchase trade agreements.
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: 
@@ -71,7 +70,7 @@ After your system is prepared as described in the previous section, you should f
 1. Repeat this procedure for each relevant product.
 
 > [!NOTE]
-> Currency on the purchase trade agreement line must match the currency of the selected vendor. Master planning will only include information from purchase trade agreement lines where the currency matches the currency on the vendor.
+> Planning Optimization supports multi-currency purchase trade agreements. When searching for a trade agreement using the **Lowest unit price** option, the system will consider purchase trade agreement lines with different currencies provided an exchange rate has been defined between the trade agreement line currency and the accounting currency of the legal entity. Otherwise, the trade agreement line will be ignored, and you will see an error during master planning. Therefore, master planning will include information from all relevant purchase trade agreement lines where prices can be converted to the accounting currency. It is important to note that rounding rules will not be taken into account during the trade agreement line price conversion.
 
 ## Examples of how Planning Optimization finds vendor and lead times
 

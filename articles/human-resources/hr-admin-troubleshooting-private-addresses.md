@@ -4,7 +4,6 @@
 title: Access to private addresses by security role
 description: This article explains how to resolve the issue where a customer can't access private addresses.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 

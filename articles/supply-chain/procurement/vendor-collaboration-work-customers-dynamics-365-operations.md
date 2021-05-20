@@ -4,7 +4,6 @@
 title: Vendor collaboration with customers
 description: This topic describes how you can use vendor collaboration to work with POs and monitor consignment inventory.
 author: TaylorVH
-manager: tfehr
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
@@ -37,7 +36,7 @@ This topic describes how you can use vendor collaboration to work with customers
 - **Purchase order confirmation** – Monitor and respond to purchase orders (POs).
 - **Vendor bidding** – View requests for quotation (RFQs), and respond to them by entering bids.
 - **Vendor information** – View and update vendor master data.
-- **Invoicing** – Work with invoices. This topic doesn't cover the **Invoicing** workspace. For more information about this workspace, see [Vendor collaboration invoicing workspace](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Invoicing** – Work with invoices. This topic doesn't cover the **Invoicing** workspace. For more information about this workspace, see [Vendor collaboration invoicing workspace](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Vendors can also monitor information about consignment inventory.
 

@@ -4,7 +4,6 @@
 title: Extensible control programming reference
 description: This topic provides reference content for extensible control programming.
 author: TLeforMicrosoft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -100,9 +99,9 @@ private void setText(str value)
 ## Runtime: FormPropertyAttribute
 The **FormPropertyAttribute** is applied to a method in your control class, which allows an X++ method to be called as a **FormProperty** getter/setter from the control's JavaScript class. A method with this attribute applied is called a **property.** Only use the **FormPropertyAttribute** on those X++ methods which need to be accessed directly from the control’s JavaScript class. The **FormPropertyAttribute** has no effect on the behavior of the X++ method when the method is used from within X++. Every property exposes an endpoint to the browser. As such, every property should be threat modeled and tested for exploits. The underlying X++ method should be declared private so that it is not accessible from other X++ code. If other X++ code needs to access the property, then declare a separate public X++ method without the **FormPropertyAttibute,** and move the shared property logic to this method. Then call this method from the private X++ method with the **FormPropertyAttribute. This practice allows the property to perform logic that is specific to calls coming from JavaScript (such as argument type deserialization, argument validation, security validation, etc.) before executing the core shared X++ logic.** The underlying X++ method must accept and return the desired type of the property. If the desired type if an EDT, the property must accept and return the base type of the EDT. The supported property types are:
 
--   [X++ primitive types](https://msdn.microsoft.com/library/aa602290.aspx)
--   [X++ data contracts](https://msdn.microsoft.com/library/system.runtime.serialization.datacontractattribute(v=vs.110).aspx) (whose members are also supported types)
--   [X++ List](https://msdn.microsoft.com/library/list.aspx) (whose items are also supported types)
+-   [X++ primitive types](/dynamicsax-2012/developer/primitive-data-types)
+-   [X++ data contracts](/dotnet/api/system.runtime.serialization.datacontractattribute) (whose members are also supported types)
+-   [X++ List](/previous-versions/dynamics/ax-2012/system-classes/gg921795(v=ax.60)) (whose items are also supported types)
 
 You supply the following arguments to the **FormPropertyAttribute** constructor:
 
@@ -130,7 +129,7 @@ private str parmText(str _value = textProperty.parmValue())
 ## Runtime: FormProperty
 ##### Behavior
 
-**FormProperty** is an X++ [derived type](https://msdn.microsoft.com/library/esd9wew8(v=vs.100).aspx) used by the control framework for the synchronization of property values between X++ and JavaScript. **FormProperty** objects are considered the backing fields used internally by properties. Each **FormProperty** is typically used in 4 places throughout a control’s X++ runtime class:
+**FormProperty** is an X++ [derived type](/previous-versions/visualstudio/visual-studio-2010/esd9wew8(v=vs.100)) used by the control framework for the synchronization of property values between X++ and JavaScript. **FormProperty** objects are considered the backing fields used internally by properties. Each **FormProperty** is typically used in 4 places throughout a control’s X++ runtime class:
 
 1.  The **FormProperty** is declared, usually right below the class declaration
 2.  The **FormProperty** is instantiated in the **new** method of the class
@@ -1008,7 +1007,7 @@ If the Observer returns a value, then that value will also be returned by the ca
 
 ##### Usage
 
-Calls the apply method on specified function. Is cannot be used during an interaction.
+Calls the apply method on specified function. It cannot be used during an interaction.
 
 ##### Arguments
 
@@ -1026,7 +1025,7 @@ The arguments to pass to the supplied function.
 
 ###### Callback (function, optional)
 
-The callback function to call when the supplied Function has returned. The callback will be passed any values that are returned by the function that is called. The following example calls the **apply** function on the **printName** function.
+The callback function to call when the supplied function has returned. The callback will be passed any values that are returned by the function that is called. The following example calls the **apply** function on the **printName** function.
 
 ```xpp
 self.Name = "Joanne M Gordon";

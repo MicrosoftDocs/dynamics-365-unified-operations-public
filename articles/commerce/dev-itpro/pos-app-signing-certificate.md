@@ -4,7 +4,6 @@
 title: Sign MPOS with a code signing certificate
 description: This topic explains how to sign MPOS with a code signing certificate.
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/03/2020
 ms.topic: article
 ms.prod: 
@@ -45,7 +44,7 @@ To sign the MPOS app with a certificate, use one of these options in the **Retai
 
 ## Use a Secure File task for Universal Windows Platform app signing
 
-Using a Secure File task is the recommended approach for Universal Windows Platform (UWP) app signing. For more information about package signing, see [Configure package signing](https://docs.microsoft.com/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing). This process is shown in the following image.
+Using a Secure File task is the recommended approach for Universal Windows Platform (UWP) app signing. For more information about package signing, see [Configure package signing](/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing). This process is shown in the following image.
 
 ![MPOS app signing flow](media/POSSigningFlow.png)
 
@@ -56,7 +55,7 @@ Using a Secure File task is the recommended approach for Universal Windows Platf
 
 ### Certificate in the file system/secure location
 
-Download the [DownloadFile task](https://docs.microsoft.com/visualstudio/msbuild/downloadfile-task) and add it as the first step in the build process. The advantage of using the Secure File task is that the file is encrypted and placed in the disk during build no matter if the build pipeline succeeds, fails, or is canceled. The file is deleted from the download location after the build process is completed.
+Download the [DownloadFile task](/visualstudio/msbuild/downloadfile-task) and add it as the first step in the build process. The advantage of using the Secure File task is that the file is encrypted and placed in the disk during build no matter if the build pipeline succeeds, fails, or is canceled. The file is deleted from the download location after the build process is completed.
 
 1. Download and add the Secure File task as the first step in the Azure build pipeline. You can download the Secure File task from [DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile).
 2. Upload the certificate to the Secure File task and set the Reference name under Output Variables, as shown in the following image.

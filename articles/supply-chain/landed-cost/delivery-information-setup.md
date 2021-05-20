@@ -4,11 +4,9 @@
 title: Delivery information setup
 description: This topic describes how to set up delivery information for the Landed cost module.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

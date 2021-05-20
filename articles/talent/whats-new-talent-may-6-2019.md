@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Talent (May 6, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for May 6, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 05/06/2019
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -49,7 +47,7 @@ Changes described in this section apply to build number 8.1.2282. The numbers in
 
 ### Platform update 26 for Finance and Operations
 
-For additional details about Platform update 26 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 26 (May 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
+For additional details about Platform update 26 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 26 (May 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
 ### Dataverse table support for custom columns
 

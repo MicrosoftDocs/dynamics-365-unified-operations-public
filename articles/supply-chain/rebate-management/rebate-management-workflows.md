@@ -4,11 +4,9 @@
 title: Rebate management deal workflows
 description: This topic explains how to set up a Rebate management deal workflow to approve and activate deals.
 author: sherry-zheng
-manager: tfehr
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -30,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.18
 # Rebate management deal workflows
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 To approve rebate deals, Rebate management uses the same workflow platform as other Finance and Operations apps. Two job processes are associated with every workflow:
 

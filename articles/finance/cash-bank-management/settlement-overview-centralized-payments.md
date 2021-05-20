@@ -4,7 +4,6 @@
 title: Settlement overview for centralized payments
 description: This topic describes settlement for centralized payments for Microsoft Dynamics 365 Finance. 
 author: abruer
-manager: AnnBe
 ms.date: 08/02/2018
 ms.topic: article
 ms.prod: 

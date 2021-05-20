@@ -4,7 +4,6 @@
 title: Uptake of Dimension Entry controls
 description: Describes the Dimension Entry control and associated Controller classes.
 author: robinarh
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:

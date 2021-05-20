@@ -4,7 +4,6 @@
 title: View workflow history
 description: This topic describes the steps to view the status of a document that was submitted to the workflow system for processing and approval.  
 author: jasongre
-manager: AnnBe 
 ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  

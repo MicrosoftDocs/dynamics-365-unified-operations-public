@@ -4,11 +4,9 @@
 title: Note integration
 description: This topic describes the integration of note data in dual-write.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 02/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,7 +4,6 @@
 title: Integrate procurement between Supply Chain Management and Field Service
 description: This topic describes how dual-write integration supports purchase order creation and updates from both Supply Chain Management and Field Service.
 author: RichardLuan
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 
@@ -17,7 +16,7 @@ audience: Application User
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.search.region: Global
-ms.author: riluan
+ms.author: rhaertle 
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
 ---
@@ -49,7 +48,7 @@ To integrate Supply Chain Management with Field Service, you must install the fo
 ### Prerequisites
 
 - **Dual-write** – For more information, see the [Dual-write home page](dual-write-home-page.md#dual-write-setup).
-- **Dynamics 365 Field Service** – For more information, see [How to install Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
+- **Dynamics 365 Field Service** – For more information, see [How to install Dynamics 365 Field Service](/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
 
 When they are enabled in Microsoft Dataverse, dual-write and Field Service introduce several solution layers that extend the environment with new metadata, forms, views, and logic. These solutions can be enabled in any order, though you typically install in the order that is given here:
 

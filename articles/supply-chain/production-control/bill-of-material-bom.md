@@ -4,7 +4,6 @@
 title: Bills of materials and formulas
 description: This topic provides information about bills of materials (BOMs) and formulas, which are a central part of the definition of products and product variants. 
 author: cvocph
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 

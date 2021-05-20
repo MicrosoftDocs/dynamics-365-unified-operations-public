@@ -4,11 +4,9 @@
 title: Restrict editing of accounting distributions on invoices
 description: This topic explains how to require that the financial dimensions on a purchase order (PO) match the dimensions on the corresponding vendor invoice.
 author: v-kiarnd
-manager: AnnBe
 ms.date: 10/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

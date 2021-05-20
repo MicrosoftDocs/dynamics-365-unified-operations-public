@@ -4,7 +4,6 @@
 title: Get started with e-commerce online extensibility development
 description: This topic provides an overview that will help you start to develop e-commerce customizations by using the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
@@ -61,7 +60,7 @@ Commerce development uses some free open-source tools, such as Node.js for the J
 
 ## Develop against a cloud-hosted Commerce environment
 
-The online SDK lets you develop and debug modules, data actions, and themes without having to use a deployed Commerce environment. There might be scenarios where you must debug your live e-commerce website or test configuration changes against a live [cloud environment](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/update-guide?toc=/dynamics365/commerce/toc.json#environments), such as a "Dev," "Test," "UAT," or "Prod" environment. This section explains how to configure your development environment against a cloud-hosted Commerce environment.
+The online SDK lets you develop and debug modules, data actions, and themes without having to use a deployed Commerce environment. There might be scenarios where you must debug your live e-commerce website or test configuration changes against a live [cloud environment](../../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=%2fdynamics365%2fcommerce%2ftoc.json#environments), such as a "Dev," "Test," "UAT," or "Prod" environment. This section explains how to configure your development environment against a cloud-hosted Commerce environment.
 
 ### Configure the SDK environment .env file
 

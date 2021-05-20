@@ -4,15 +4,14 @@
 title: Lease posting types
 description: This topic describes the posting types that are used for asset leasing transactions.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: AssetLeasePostingAccounts
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -94,15 +93,6 @@ The account is associated with the contra-asset account of the ROU asset. This a
 **Example journal entries:** Depreciation accrual<br>
 **Debit:** Depreciation expense XXX<br>
 **Credit:** Accumulated depreciation XXX
-
-## Retained earnings
-
-The account is associated with retained earnings. This account might be either debited or credited in a transition adjustment journal entry by using the full retrospective method or the cumulative catch-up option A method. The difference between the initial ROU asset and lease liability is booked to retained earnings. In rare cases, the retained earnings might also be affected during lease modification, if the classification of a lease is changed from finance to operating to write the ROU asset up or down so that it equals the lease liability.
-
-**Example journal entries:** Transition adjustment (full retrospective or cumulative catch-up option A method)<br>
-**Debit:** Lease liability XXX<br>
-**Credit:** Lease asset XXX<br>
-**Credit:** Retained earnings XXX
 
 ## Variable payment
 

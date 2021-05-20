@@ -4,7 +4,6 @@
 title: Distribute and schedule questionnaires
 description: This article explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
 author: andreabichsel
-manager: tfehr
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailPar
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 17424

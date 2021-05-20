@@ -4,7 +4,6 @@
 title: Issue fiscal documents for vendors (Brazil)
 description: You can create and post vendor invoices on behalf of nontaxpayer vendors. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  

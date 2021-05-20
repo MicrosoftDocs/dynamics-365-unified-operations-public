@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Talent (September 1, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent for September 1, 2020.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

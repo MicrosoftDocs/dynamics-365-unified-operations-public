@@ -4,7 +4,6 @@
 title: Cart and checkout pages overview
 description: This topic provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
@@ -87,7 +86,7 @@ The customer can complete the checkout process as a guest user or a signed-in us
 
 ### Order summary
 
-Checkout shows a summary of the line items in the cart, so that the customer can verify the order before he or she places it. The line items can't be edited during the checkout flow. However, a link to the cart is provided in case the user wants to go back and edit line items.
+Checkout shows a summary of the line items in the cart, so that the customer can verify the order before placing the order. The line items can't be edited during the checkout flow. However, a link to the cart is provided in case the user wants to go back and edit line items.
 
 After the customer provides shipping and billing information, the order summary reflects the amount that is due after loyalty points, gift cards, and other payments have been applied.
 

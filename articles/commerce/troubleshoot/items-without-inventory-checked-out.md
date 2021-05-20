@@ -4,11 +4,9 @@
 title: Items without inventory can be checked out
 description: This topic provides troubleshooting guidance that can help when customers can add out-of-stock items to their cart and proceed to checkout.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

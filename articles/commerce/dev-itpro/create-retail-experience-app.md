@@ -4,7 +4,6 @@
 title: Create and apply branding to the Retail Experience app
 description: This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
 author: josaw1
-manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: 
@@ -41,7 +40,7 @@ The Retail Experience app supports the Android and iOS phone platforms. The app 
 
 You can download Xamarin from [Visual Studio Tools for Xamarin](https://www.xamarin.com/download). 
 
-For a tutorial that shows how to install Xamarin on Windows, see [Installing Xamarin](https://docs.microsoft.com/xamarin/get-started/installation/index?pivots=windows).
+For a tutorial that shows how to install Xamarin on Windows, see [Installing Xamarin](/xamarin/get-started/installation/index?pivots=windows).
 
 ### Update Xamarin
 

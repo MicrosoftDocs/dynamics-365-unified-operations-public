@@ -4,7 +4,6 @@
 title: Schedule work order on specific date and time
 description: This topic explains how to schedule a work order on a specific date and time in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: 

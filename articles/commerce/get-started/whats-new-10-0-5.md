@@ -5,7 +5,6 @@
 title: What's new or changed in Dynamics 365 for Retail version 10.0.5
 description: This topic describes features that are in new or changed in Dynamics 365 for Retail. 
 author: josaw1
-manager: AnnBe
 ms.date: 09/16/2019
 ms.topic: article
 ms.prod: 
@@ -36,7 +35,7 @@ ms.dyn365.ops.version: Release 10.0.5
 This topic describes features that are new or changed in Dynamics 365 Retail in 10.0.5. 
 
 
-To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [What's new or changed in Finance and Operations version 10.0.5 (October 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-5).
+To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [What's new or changed in Finance and Operations version 10.0.5 (October 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-5).
 
 ## Test recorder and Regression suite automation tool for Retail Cloud POS
   
@@ -61,7 +60,7 @@ For more information on POS and RSAT, see [Test recorder and Regression suite au
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2019 release wave 2 plan](/dynamics365-release-plan/2019wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

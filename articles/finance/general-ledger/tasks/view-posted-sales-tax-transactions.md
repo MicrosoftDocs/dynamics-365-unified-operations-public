@@ -4,7 +4,6 @@
 title: View posted sales tax transactions
 description: This topic describes some ways to view posted sales tax transactions.
 author: twheeloc
-manager: AnnBe 
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  

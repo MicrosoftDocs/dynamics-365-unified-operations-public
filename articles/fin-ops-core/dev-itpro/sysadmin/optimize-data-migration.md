@@ -4,8 +4,7 @@
 title: Optimize data migration for Finance and Operations apps
 description: The topic provides an overview of steps and actions that you can use to optimize data migration for Finance and Operations apps.
 author: skaue-ms
-manager: AnnBe
-ms.date: 02/03/2021
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -90,7 +89,7 @@ Whenever you run an import job, make sure that it's run in batch mode. Otherwise
 
 ## Clean staging tables
 
-We recommend that you clean up the staging tables. In Platform update 29 and later, you can achieve this optimization by scheduling the [Job history cleanup job](../data-entities/data-import-export-job.md#job-history-clean-up-available-in-platform-update-29-and-later). To schedule this job, select the **Job history cleanup** tile in the **Data management** workspace.
+We recommend that you clean up the staging tables. You can achieve this optimization by scheduling the [Job history cleanup job](../data-entities/data-import-export-job.md#job-history-clean-up). To schedule this job, select the **Job history cleanup** tile in the **Data management** workspace.
 
 > [!NOTE]
 > You must first turn on the **Execution history cleanup** feature in the **Feature management** workspace.

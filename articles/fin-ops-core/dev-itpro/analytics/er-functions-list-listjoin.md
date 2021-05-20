@@ -4,7 +4,6 @@
 title: LISTJOIN ER function
 description: This topic provides information about how the LISTJOIN Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
@@ -37,7 +36,7 @@ The `LISTJOIN` function returns a *Record list* value that represents a new join
 ## Syntax
 
 ```vb
-LIST (list 1 [, list 2, …, list N])
+LISTJOIN (list 1 [, list 2, …, list N])
 ```
 
 ## Arguments

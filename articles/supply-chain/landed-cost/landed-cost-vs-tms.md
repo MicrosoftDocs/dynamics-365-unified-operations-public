@@ -4,11 +4,9 @@
 title: Landed cost vs. Transportation management
 description: Microsoft Dynamics 365 Supply Chain Management provides two different modules for working with transportation, Transportation management (TMS) and Landed cost. This topic summarizes the functionality that the two modules have in common and highlights the differences between them.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,8 +55,8 @@ TMS and Landed cost don't share reference data for entities such as cost setup, 
 
 The following reports don't work in conjunction with the goods in transit feature that Landed cost provides:
 
-- [Intercompany goods in transit totals report](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
-- [Intercompany goods in transit totals report](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Intercompany goods in transit totals report](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Intercompany goods in transit totals report](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
 
 These reports assume that goods are put in transit as soon as you issue a sales packing slip, and that they are taken into inventory from transit upon receipt. However, goods in transit aren't processed in this way. Therefore, if you use the goods in transit and intercompany features together, the results for both these reports will be incorrect.
 
@@ -162,15 +160,15 @@ Both TMS and Landed cost provide functionality for managing the receipt of goods
 
 ### TMS receiving by container features
 
-TMS supports inbound ASNs, all variants of receiving through the warehouse app, and all methods of receiving through the Supply Chain Management client.
+TMS supports inbound ASNs, all variants of receiving through the Warehouse Management mobile app, and all methods of receiving through the Supply Chain Management client.
 
 ### Landed cost receiving by container features
 
 To support receiving by container, Landed cost creates shipping container records and associates purchase orders with a specific shipping container by using its container ID. Overhead costs can then be applied to that shipping container and broken down so that they are associated with the relevant purchase orders.
 
-Containers in Landed cost can be received through a new type of receipt that is known as a *goods in transit receipt*, through arrival journals, or through mobile device receiving. When arrival journals are used, the quantities can be initialized from the goods in transit order or the original purchase order lines in the container. Landed cost provides two work types for receiving through the warehouse app.
+Containers in Landed cost can be received through a new type of receipt that is known as a *goods in transit receipt*, through arrival journals, or through mobile device receiving. When arrival journals are used, the quantities can be initialized from the goods in transit order or the original purchase order lines in the container. Landed cost provides two work types for receiving through the Warehouse Management mobile app.
 
-Landed cost doesn't provide an ASN for the electronic receipt of goods. Additionally, it doesn't support warehouse app flows that process load receiving, license plate receiving, or mixed license plate receiving.
+Landed cost doesn't provide an ASN for the electronic receipt of goods. Additionally, it doesn't support Warehouse Management mobile app flows that process load receiving, license plate receiving, or mixed license plate receiving.
 
 ## Rate shopping by vendor
 

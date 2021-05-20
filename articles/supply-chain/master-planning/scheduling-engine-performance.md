@@ -4,7 +4,6 @@
 title: Improve scheduling engine performance
 description: This topic provides information about the scheduling engine and how to improve performance. 
 author: ChristianRytt
-manager: tfehr
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 

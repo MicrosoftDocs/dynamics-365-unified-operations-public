@@ -4,7 +4,6 @@
 title: Working time calendars
 description: This topic describes working time calendars in Dynamics 365 Human Resources as well as how to set up calendars.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/12/2018
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

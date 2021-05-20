@@ -4,7 +4,6 @@
 title: Application Connector
 description: This topic provides information about the Application Connector for Microsoft Power Automate and Logic Apps.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: 
@@ -36,13 +35,13 @@ The application connector allows Microsoft Power Automate, Power Apps, Data Inte
 ## Prerequisites
 We recommend that you read the following topics as a prerequisite to familiarize yourself with connectors before proceeding further
 
-- [Connectors](https://docs.microsoft.com/connectors/) 
-- [Data management package REST API](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api?toc=/fin-and-ops/toc.json)
-- [Open Data Protocol (OData)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/fin-and-ops/toc.json) 
-- [Recurring integrations](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/fin-and-ops/toc.json) 
+- [Connectors](/connectors/) 
+- [Data management package REST API](data-management-api.md)
+- [Open Data Protocol (OData)](odata.md) 
+- [Recurring integrations](recurring-integrations.md) 
 
 ## Triggers
-Business events are exposed using the trigger *When a business event occurs*. For detailed information about business events, refer to [Business events in Microsoft Power Automate](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) and [Business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/home-page).
+Business events are exposed using the trigger *When a business event occurs*. For detailed information about business events, refer to [Business events in Microsoft Power Automate](../business-events/business-events-flow.md) and [Business events](../business-events/home-page.md).
 
 ## Actions
 

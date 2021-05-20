@@ -4,7 +4,6 @@
 title: Run the recognition test and calculate the impairment amount on individual assets
 description: This task walks you through running the recognition test and calculating the impairment amount on individual assets. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

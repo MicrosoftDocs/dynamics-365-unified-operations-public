@@ -4,11 +4,9 @@
 title: TCS on sales of goods 
 description: This topic provides information about the functionality for Tax Collection at Source (TCS) on sales of goods.
 author: prabhatb
-manager: tfehr
 ms.date: 03/16/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata

@@ -4,7 +4,6 @@
 title: Create vendor payments by using a payment proposal
 description: This topic provides an overview of the payment proposal options and includes some examples that show how payment proposals work. 
 author: abruer
-manager: AnnBe
 ms.date: 04/04/2018
 ms.topic: article
 ms.prod: 
@@ -68,7 +67,7 @@ The payment proposal query contains various tabs, each of which has different op
 | 3075   | 1003    | June 15      | 250.00         | June 29  |                    | 0.00                 |
 | 3100   | 1004    | June 17      | 100.00         | July 17  | July 1             | 1.00                 |
 
-On July 1, April pays vendors. She uses a payment proposal to help her complete this task more efficiently.
+On July 1, April pays vendors. She uses a payment proposal to complete this task more efficiently.
 
 ### Option 1: By cash discount
 

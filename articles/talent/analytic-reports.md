@@ -4,7 +4,6 @@
 title: Use analytic reports in Attract
 description: This topic describes the analytic reports for hiring process insights in Microsoft Dynamics 365 Talent - Attract
 author: fewatson
-manager: tfehr
 ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
@@ -16,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -85,11 +83,11 @@ Job Analytics reports display data for the selected job. Analytics Hub reports a
 
 ## Cross-filter
 
-One of the great features of Power BI is the way all visuals on a report page are interconnected. If you select a data point on one of the visuals, all the other visuals on the page that contain that data change, based on that selection. Find out more and see an example in [How visuals cross-filter each other in a Power BI report](https://docs.microsoft.com/power-bi/consumer/end-user-interactions).
+One of the great features of Power BI is the way all visuals on a report page are interconnected. If you select a data point on one of the visuals, all the other visuals on the page that contain that data change, based on that selection. Find out more and see an example in [How visuals cross-filter each other in a Power BI report](/power-bi/consumer/end-user-interactions).
 
 ## Export to Excel
 
-To view report data in Excel, you can click the options menu (three dots) on a visual and select **Export underlying data**. Exported data will export as filtered, respecting user permissions in Attract. For more information, see [Export data from visualizations](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).
+To view report data in Excel, you can click the options menu (three dots) on a visual and select **Export underlying data**. Exported data will export as filtered, respecting user permissions in Attract. For more information, see [Export data from visualizations](/power-bi/visuals/power-bi-visualization-export-data).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

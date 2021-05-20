@@ -4,11 +4,9 @@
 title: Process collection letters example
 description: This topic goes through an example that shows the process of creating, printing, and posting collection letters. 
 author: JodiChristiansen
-manager: AnnBe 
 ms.date: 02/03/2021
 ms.topic: business-process 
 ms.prod: 
-ms.service: dynamics-ax-applications 
 ms.technology: 
  
 # optional metadata 

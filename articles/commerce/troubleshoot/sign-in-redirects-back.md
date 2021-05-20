@@ -4,11 +4,9 @@
 title: Sign-in link redirects back to an e-commerce site
 description: This topic provides troubleshooting guidance that can help when a sign-in link redirects back to the e-commerce site instead of going to the sign-in page.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -57,6 +55,6 @@ To confirm that the reply URL is correctly configured in the Azure AD B2C applic
 
 ## Additional resources
 
-[Register a web application in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-register-applications?tabs=app-reg-ga#register-a-web-application)
+[Register a web application in Azure Active Directory B2C](/azure/active-directory-b2c/tutorial-register-applications?tabs=app-reg-ga#register-a-web-application)
 
 [Set up a B2C tenant in Commerce](../set-up-b2c-tenant.md)
