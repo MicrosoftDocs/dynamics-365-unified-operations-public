@@ -771,9 +771,9 @@
       - name: Returns and Refunds
         items:
         - name: Create returns in point of sale (POS)
-          href: dev-itpro/POS-returns.md
-        - name: Returning serial number controlled products in point of sale (POS)
-          href: dev-itpro/POS-serial-returns.md
+          href: POS-returns.md
+        - name: Return serial number controlled products in point of sale (POS)
+          href: POS-serial-returns.md
         - name: Linked refunds
           href: dev-itpro/linked-refunds.md
         - name: Sell and return products not included in a store's assortment
