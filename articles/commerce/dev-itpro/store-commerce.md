@@ -23,6 +23,12 @@ When Store Commerce has full functional parity with MPOS, it will replace MPOS. 
 
 ## Choosing between Store Commerce and MPOS:
 
+Store Commerce renders CPOS but has full parity with MPOS, both Store Commerce and MPOS are Windows UWP app and supports local hardware station. Currently Store Commerce don't support offline but Store Commerce will support Offline in the future. 
+
+Store Commerce uses the Chromium engine to render the UI so it provide better rendering performance when compared to MPOS and Store Commerce is deployed through Microsoft Store which greatly simplifies the ALM where as MPOS is self-serviced using LCS and HQ. In the future MPOS will be deprecated and replaced by Store Commerce. 
+
+So if you don't need offline in your Store then choose Store Commerce, Store Commerce will support offline in the future. 
+
 
 
 ## Setup and installation
