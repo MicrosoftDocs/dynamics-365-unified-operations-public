@@ -26,8 +26,9 @@ This topic applies to the Retail SDK version 10.0.19 and later, the steps docume
 4. Select Existing Azure Pipelines YAML file.
 5. Select/Get the YAML file from /Pipeline/YAML_Files/build-pipeline.yml files [The YAML file are published in the Commerce ScaleUnit GitHub Repos](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/blob/release/9.29/Pipeline/YAML_Files/build-pipeline.yml)
 
-The YAML files refers few other script from the Sample GitHub repo, please include those scripts in your repo, if you are cloning the samples repo then all the scripts are already included.
-All the reference scripts are availabe in the [Sample GitHub repo.](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.29/Pipeline/PowerShellScripts)
+The YAML files refers few other script from the [Dynamics365Commerce.ScaleUnit repo](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit), please include those scripts in your repo, if you are cloning the samples repo then all the scripts are already included.
+
+All the reference scripts are availabe in the [Dynamics365Commerce.ScaleUnit GitHub repo.](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.29/Pipeline/PowerShellScripts)
 
 7. Click Continue.
 8. The YAML file has script to build the entire solution and upload the output CloudScaleUnitExtensionPackage.zip package to build Published Artifacts drop location.
@@ -71,8 +72,29 @@ The below steps guide on how you can generate the Retail Modern POS, hardware St
 3. Select your source repo.
 4. Select Existing Azure Pipelines YAML file.
 5. Select the YAML file available in /Pipeline/YAML_Files/build-pipeline.yml files, the YAML file are published in the Commerce [Dynamics365Commerce.InStore GitHub Repos]( https://github.com/microsoft/Dynamics365Commerce.InStore/blob/release/9.29/Pipeline/YAML_Files/build-pipeline.yml)
-6. Click Continue.
-7. The YAML file has script to build the entire solution and upload the output HardwareStation.Installer.exe and ModernPos.Installer.exe package to build Published Artifacts drop location.
+
+The YAML files refers few other script from the [Dynamics365Commerce.InStore repo](https://github.com/microsoft/Dynamics365Commerce.InStore), please include those scripts in your repo, if you are cloning the samples repo then all the scripts are already included.
+
+All the reference scripts are availabe in the [Dynamics365Commerce.ScaleUnit GitHub repo.](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.29/Pipeline/PowerShellScripts)
+
+7. Click Continue.
+8. The YAML file has steps to sign the Modern POS and Hardware station installer using a certificate, the script will look for a certificate file in the Azure keyvalut and use that for signing. To read the certifcate from Azure keyvalut you need provide application id, secret, certname and Timestap server detilas to include the timestamp of signoing. 
+
+Refer [How to set and retrieve a certificate from Azure Key Vault using the Azure portal](https://docs.microsoft.com/en-us/azure/key-vault/certificates/quick-create-portal) for more information.
+
+To read the Azure keyvalut and timestamp server details in the pipleine, create the below variables in your build pipeline by clicking the Variables tab and provide values for the variables, you can choose the variables type to Secret if you want to secure it.
+  
+- ApplicationId
+- AzureKeyVaultURI
+- CertificateName
+- SecretValue
+- Timestamp
+ 
+ For the timestamp, you can choose any timestamp provider. Ex: http://timestamp.digicert.com etc
+ 
+If you are not storing your certificate in Azure, you can use oither options like Secure task or some Azure supported options to sign the installers. If dont want to sign the insatllers you can remove this sign step from YAML file, search for task: PowerShell@2 and remove it.
+
+9. The YAML file has script to build the entire solution and upload the output HardwareStation.Installer.exe and ModernPos.Installer.exe package to build Published Artifacts drop location.
 
 >
 > Note: The YAML file looks for a solution file in the repo and build the solution and look for output HardwareStation.Installer.exe and ModernPos.Installer.exe, so please make sure your extension and packaging projects are linked to a solution, you can refer the samples in [Dynamics365Commerce.InStore GitHub Repos]( https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.29) on how you can model your extension projects.
