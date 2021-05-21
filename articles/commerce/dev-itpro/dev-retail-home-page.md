@@ -63,6 +63,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Point of sale (POS) device activation](retail-device-activation.md)
 - [Security best practices for Cloud POS in shared environments](secure-retail-cloud-pos.md)
 - [Support for external gift cards](gift-card.md)
+- [Store Commerce app in Microsoft Dynamics 365 Commerce](store-commerce.md)
 
 ## Customize POS
 
