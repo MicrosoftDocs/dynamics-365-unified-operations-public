@@ -112,6 +112,18 @@ public static class MyForm_Extension
 }
 ```
 
+## Office menu best practices
+
+### Avoid APIs that may initialize the metadata cache during form load
+
+The following classes may result in initializing the metadata cache, which can be extremely time consuming. For this reason, these classes should never be used in methods that are executed during form load (e.g. `init()` and `run()`), as this can cause a form to take a very long time to load.  
+
+-  ExportToExcelMetadataCache
+-  ExportToExcelDataEntityContext
+-  OfficeDataEntityExportMenuItem
+-  ExportToExcelDataEntityHelper
+-  ExportToExcelFilterTreeBuilder
+
 ## Typical customization scenarios
 The following examples assume that the **\_menuOptions** variable contains the **OfficeMenuOptions** instance that you're customizing.
 
