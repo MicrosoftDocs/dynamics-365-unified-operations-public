@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 10.0.19
 
 This topic applies to Dynamics 365 Commerce version 10.0.20 and later.
 
-The Store Commerce app in Microsoft Dynamics 365 Commerce provides rich commerce functionalities for firstline workers, such as cashiers, sales associates, inventory associates, stock clerks, and store managers, to perform commerce operations like cash and carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
+The Store Commerce app in Microsoft Dynamics 365 Commerce provides rich commerce functionalities for Firstline Workers, such as cashiers, sales associates, inventory associates, stock clerks, and store managers, to perform commerce operations like cash and carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
 
 > [!NOTE]
 > Store Commerce is released as a preview app. Store Commerce uses the [Microsoft Edge WebView2](/microsoft-edge/webview2/) which is also in preview. Therefore, so not use Store Commerce in production. Store Commerce can be used in production once it is generally available (GA).
@@ -31,13 +31,13 @@ Store Commerce uses the Chromium engine to render the UI instead of the Universa
 
 ## Application lifecycle management (ALM)
 
-Store Commerce is an app that runs on a Windows device. The app will be available from [Windows Apps - Microsoft Store](https://www.microsoft.com/store/r/9PGK1J3KQ8JB) for easier discovery, download, and deployment, which simplifies the overall lifecycle of deployment and servicing. Store Commerce is both forward and backward compatible. The app can be updated independently of the Cloud Scale Unit and Extensions. The app can be easily updated by setting up the Windows policy or by using any Microsoft Store app-supported update and deployment tool like Intune. The Modern POS requires more manual management to get the app and package it with extensions, but Store Commerce greatly simplifies the ALM because its deployed from the Microsoft Store.  
+Store Commerce is an app that runs on a Windows device. The app will be available from [Windows Apps - Microsoft Store](https://www.microsoft.com/store/r/9PGK1J3KQ8JB) for easier discovery, download, and deployment, which simplifies the overall lifecycle of deployment and servicing. Store Commerce is both forward and backward compatible. The app can be updated independently of the Cloud Scale Unit and Extensions. The app can be easily updated by setting up the Windows policy or by using any Microsoft Store app-supported update and deployment tool like Intune. The Modern POS requires more manual management to get the app and package it with extensions, but Store Commerce greatly simplifies the ALM because it's deployed from the Microsoft Store.  
 
 Store Commerce is a shell that renders CPOS, so you should also update CPOS to get the updated CPOS functionality. CPOS can be updated from the Cloud Scale unit (CSU). For more information about updating CSU see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md)
 
 ![Store Commerce](media/StoreCommerce.PNG)
 
-## Store Commerce is the of future MPOS
+## Store Commerce is the future of MPOS
 
 When Store Commerce has full functional parity with MPOS, it will replace MPOS. Currently, Store Commerce doesn't support running offline (when there is no connectivity to Retail Server). For more information about the different POS apps and topology, see [Choose between Modern POS (MPOS) and Cloud POS](../mpos-or-cpos.md)
 
@@ -45,9 +45,9 @@ When Store Commerce has full functional parity with MPOS, it will replace MPOS. 
 
 Store Commerce renders CPOS but has full parity with MPOS. Both Store Commerce and MPOS are Universal Windows Platform (UWP) apps and they support local hardware station. Store Commerce doesn't currently support offline but it will in the future. 
 
-Store Commerce uses the Chromium engine to render the UI so it provides better rendering performance when compared to MPOS and Store Commerce is deployed through Microsoft Store which greatly simplifies the ALM where as MPOS is self-serviced using LCS and HQ. In the future MPOS will be deprecated and replaced by Store Commerce. 
+Store Commerce uses the Chromium engine to render the UI so it provides better rendering performance when compared to MPOS and Store Commerce is deployed through Microsoft Store, which greatly simplifies the ALM, whereas MPOS is self-serviced using LCS and HQ. In the future, MPOS will be deprecated and replaced by Store Commerce. 
 
-If you don't need offline support in your store then choose Store Commerce. 
+If you don't need offline support in your store, then choose Store Commerce. 
 
 Application Type | Store Commerce(Preview) | MPOS
 ---|---|---
