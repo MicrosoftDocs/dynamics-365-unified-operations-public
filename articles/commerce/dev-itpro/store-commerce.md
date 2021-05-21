@@ -21,7 +21,7 @@ This topic applies to Dynamics 365 Commerce version 10.0.20 and later.
 The Store Commerce app in Microsoft Dynamics 365 Commerce provides rich commerce functionalities for first line workers, such as cashiers, sales associates, inventory associates, stock clerks, and store managers, to perform commerce operations like cash and carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
 
 > [!NOTE]
-> The Store Commerce is released as a preview app, Store Commerce app uses the [Microsoft Edge WebView2](https://docs.microsoft.com/en-us/microsoft-edge/webview2/) which is in preview, so this app must not be used in production. The Store Commerce app can be used in production once its GA (Generally available).
+> The Store Commerce is released as a preview app, Store Commerce app uses the [Microsoft Edge WebView2](https://docs.microsoft.com/en-us/microsoft-edge/webview2/) which is in preview, so Store Commerce app must not be used in production. The Store Commerce app can be used in production once its GA (Generally available).
 
 Store Commerce is a shell app for Windows that uses [Microsoft Edge WebView2](https://docs.microsoft.com/en-us/microsoft-edge/webview2/) to render the Cloud Point of Sale (CPOS). CPOS can run only in a web browser, but Store commerce can run as a native Windows app like [Modern Point of Sale (MPOS)](retail-modern-pos-architecture.md). Store Commerce supports local hardware station and can be directly integrated to payment terminal, printer, and cash drawer. You don't need to set up a shared hardware station to use hardware devices. 
 
