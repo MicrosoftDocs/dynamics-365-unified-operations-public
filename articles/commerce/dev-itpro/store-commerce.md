@@ -1,3 +1,36 @@
+---
+# required metadata
+
+title: Store commerce
+description: This topic explains how to setup and configure Store commerce app.
+author: mugunthanm
+ms.date: 04/13/2021
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: rhaertle
+# ms.tgt_pltfrm: 
+ms.custom: 28021
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mumani
+ms.search.validFrom: 04-20-2020
+ms.dyn365.ops.version: AX 10.0.19
+
+---
+
+# Store commerce
+
+[!include [banner](../includes/banner.md)]
+
 This topic applies to Dynamics 365 Commerce version 10.0.20 and later.
 
 The Store Commerce app in Microsoft Dynamics 365 Commerce provides rich commerce functionalities for first line workers, such as cashiers, sales associates, inventory associates, stock clerks, and store managers, to perform commerce operations like cash and carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
