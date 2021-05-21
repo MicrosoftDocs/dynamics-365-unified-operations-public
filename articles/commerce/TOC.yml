@@ -768,7 +768,7 @@
           href: tasks/use-continuity-program.md
         - name: Enable customer check-in notifications in point of sale (POS)
           href: enable-customer-check-in.md
-      - name: Returns and Refunds
+      - name: Returns and refunds
         items:
         - name: Create returns in point of sale (POS)
           href: POS-returns.md
