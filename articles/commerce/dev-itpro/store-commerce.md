@@ -23,9 +23,9 @@ This topic applies to Dynamics 365 Commerce version 10.0.20 and later.
 The Store Commerce app in Microsoft Dynamics 365 Commerce provides rich commerce functionalities for firstline workers, such as cashiers, sales associates, inventory associates, stock clerks, and store managers, to perform commerce operations like cash and carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
 
 > [!NOTE]
-> Store Commerce is released as a preview app. Store Commerce uses the [Microsoft Edge WebView2](https://docs.microsoft.com/en-us/microsoft-edge/webview2/) which is also in preview. Therefore, so not use Store Commerce in production. Store Commerce can be used in production once it is generally available (GA).
+> Store Commerce is released as a preview app. Store Commerce uses the [Microsoft Edge WebView2](/microsoft-edge/webview2/) which is also in preview. Therefore, so not use Store Commerce in production. Store Commerce can be used in production once it is generally available (GA).
 
-Store Commerce is a shell app for Windows that uses [Microsoft Edge WebView2](https://docs.microsoft.com/en-us/microsoft-edge/webview2/) to render the Cloud Point of Sale (CPOS). CPOS can run only in a web browser, but Store Commerce can run as a native Windows app like [Modern Point of Sale (MPOS)](retail-modern-pos-architecture.md). Store Commerce supports local hardware station and can be directly integrated to payment terminal, printer, and cash drawer. You don't need to set up a shared hardware station to use hardware devices. 
+Store Commerce is a shell app for Windows that uses [Microsoft Edge WebView2](/microsoft-edge/webview2/) to render the Cloud Point of Sale (CPOS). CPOS can run only in a web browser, but Store Commerce can run as a native Windows app like [Modern Point of Sale (MPOS)](retail-modern-pos-architecture.md). Store Commerce supports local hardware station and can be directly integrated to payment terminal, printer, and cash drawer. You don't need to set up a shared hardware station to use hardware devices. 
 
 Store Commerce uses the Chromium engine to render the UI instead of the Universal Windows Platform (UWP) app rendering framework. The Chromium engine has better rendering performance than the native JavaScript UWP app in Windows. The key difference between MPOS and Store Commerce is that Store Commerce uses the Chromium engine to render the app.
 
@@ -68,7 +68,7 @@ UI rendering engine | Chromium engine to render the UI. | UWP app framework to r
 
 For Store Commerce, a new application type named **Store Commerce** is added to **Retail and Commerce > Channel Setup > Pos Setup > Devices**. When you create a device for Store Commerce, set **Application type** to **Store Commerce**.
 
-Create a [register](../tasks/create-associate-registers) and a [device](../tasks/create-associate-device) for Store Commerce. Then run the register job from the Distribution schedule in the HQ before activating the app, setting **Application type** to **Store Commerce** during the device creation.
+Create a [register](../tasks/create-associate-registers.md) and a [device](../tasks/create-associate-device.md) for Store Commerce. Then run the register job from the Distribution schedule in the HQ before activating the app, setting **Application type** to **Store Commerce** during the device creation.
 
 Store Commerce is available in the Microsoft Store to download and installation. To download the app, follow these steps:
 
