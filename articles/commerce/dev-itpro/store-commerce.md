@@ -47,20 +47,15 @@ Store Commerce renders CPOS but has full parity with MPOS. Both Store Commerce a
 
 Store Commerce uses the Chromium engine to render the UI so it provides better rendering performance when compared to MPOS and Store Commerce is deployed through Microsoft Store which greatly simplifies the ALM where as MPOS is self-serviced using LCS and HQ. In the future MPOS will be deprecated and replaced by Store Commerce. 
 
-So if you don't need offline in your store then choose Store Commerce. 
-
-| Application type  | Operating environment  | ALM                              | Extensions | Supports Offline | Supports Local Hardware Station | UI Rendering engine |
-|-------------------|------------------------|----------------------------------|-------------------|--------------|-------------|-------------------|
-| Store Commerce(Preview)    | Windows                |   Microsoft Store and CPOS deployed through CSU.   | Deployed to CPOS. | No (Supported in the future). | Yes | Chromium engine to render the UI.|
-| MPOS              | Windows                |  Self-serviced using LCS, HQ and packaged and installed using MPOS installer.  | Packaged with MPOS or Independent extension package.| Yes | Yes | UWP app framework to render the UI.|
+If you don't need offline support in your store then choose Store Commerce. 
 
 Application Type | Store Commerce(Preview) | MPOS
 ---|---|---
 Operating environment | Windows | Windows
 ALM | Microsoft Store and CPOS deployed through CSU. | Self-serviced using LCS, HQ and packaged and installed using MPOS installer.
 Extensions | Deployed to CPOS. | Packaged with MPOS or Independent extension package.
-Supports offline | No (Supported in the future). | Yes
-Supports Local Hardware Station | Yes | Yes
+Supports offline | No (Supported in the future.) | Yes
+Supports local hardware station | Yes | Yes
 UI rendering engine | Chromium engine to render the UI. | UWP app framework to render the UI.
 
 ## Setup and installation
