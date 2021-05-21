@@ -1,33 +1,18 @@
 ---
-# required metadata
-
-title: Store commerce
-description: This topic explains how to setup and configure Store commerce app.
+title: Store Commerce app in Microsoft Dynamics 365 Commerce (Preview)
+description: This topic explains how to set up and configure the Store Commerce app.
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 28021
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mumani
 ms.search.validFrom: 04-20-2020
 ms.dyn365.ops.version: AX 10.0.19
-
 ---
 
-# Store commerce
+# Store Commerce app in Microsoft Dynamics 365 Commerce (Preview)
 
 [!include [banner](../includes/banner.md)]
 
@@ -64,7 +49,7 @@ So if you don't need offline in your Store then choose Store Commerce, Store Com
 
 | Application type  | Operating environment  | ALM                              | Extensions | Supports Offline | Supports Local Hardware Station | UI Rendering engine |
 |-------------------|------------------------|----------------------------------|-------------------|--------------|-------------|-------------------|
-| Store Commerce    | Windows                |   Microsoft Store and CPOS deployed through CSU.   | Deployed to CPOS. | No (Supported in the future). | Yes | Chromium engine to render the UI.|
+| Store Commerce(Preview)    | Windows                |   Microsoft Store and CPOS deployed through CSU.   | Deployed to CPOS. | No (Supported in the future). | Yes | Chromium engine to render the UI.|
 | MPOS              | Windows                |  Self-serviced using LCS, HQ and packaged and installed using MPOS installer.  | Packaged with MPOS or Independent extension package.| Yes | Yes | UWP app framework to render the UI.|
 
 ## Setup and installation
