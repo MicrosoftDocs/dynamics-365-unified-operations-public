@@ -47,24 +47,33 @@ Store Commerce renders CPOS but has full parity with MPOS. Both Store Commerce a
 
 Store Commerce uses the Chromium engine to render the UI so it provides better rendering performance when compared to MPOS and Store Commerce is deployed through Microsoft Store which greatly simplifies the ALM where as MPOS is self-serviced using LCS and HQ. In the future MPOS will be deprecated and replaced by Store Commerce. 
 
-So if you don't need offline in your Store then choose Store Commerce, Store Commerce will support offline in the future. 
+So if you don't need offline in your store then choose Store Commerce. 
 
 | Application type  | Operating environment  | ALM                              | Extensions | Supports Offline | Supports Local Hardware Station | UI Rendering engine |
 |-------------------|------------------------|----------------------------------|-------------------|--------------|-------------|-------------------|
 | Store Commerce(Preview)    | Windows                |   Microsoft Store and CPOS deployed through CSU.   | Deployed to CPOS. | No (Supported in the future). | Yes | Chromium engine to render the UI.|
 | MPOS              | Windows                |  Self-serviced using LCS, HQ and packaged and installed using MPOS installer.  | Packaged with MPOS or Independent extension package.| Yes | Yes | UWP app framework to render the UI.|
 
+Application Type | Store Commerce(Preview) | MPOS
+---|---|---
+Operating environment | Windows | Windows
+ALM | Microsoft Store and CPOS deployed through CSU. | Self-serviced using LCS, HQ and packaged and installed using MPOS installer.
+Extensions | Deployed to CPOS. | Packaged with MPOS or Independent extension package.
+Supports offline | No (Supported in the future). | Yes
+Supports Local Hardware Station | Yes | Yes
+UI rendering engine | Chromium engine to render the UI. | UWP app framework to render the UI.
+
 ## Setup and installation
 
-### Prerequisite:
+### Prerequisite
 
 + Microsoft Edge, because the app uses the Microsoft Edge WebView2 control.
 
-### HQ Device Setup:
+### HQ Device Setup
 
-For the Store Commerce app new Application type called **Store Commerce** is added in the Retail and Commerce > Channel Setup > Pos Setup > Devices, when you create a device for the Store Commerce app, select the Application type as Store Commerce.
+For Store Commerce, a new application type named **Store Commerce** is added to **Retail and Commerce > Channel Setup > Pos Setup > Devices**. When you create a device for Store Commerce, set **Application type** to **Store Commerce**.
 
-Create a [Register](https://docs.microsoft.com/en-us/dynamics365/commerce/tasks/create-associate-registers) and [Device](https://docs.microsoft.com/en-us/dynamics365/commerce/tasks/create-associate-device) for the Store Commerce app and run the Register job from the Distribution schedule in the HQ before activating the app, please select the Application type as **Store Commerce** during the device creation.
+Create a [register](../tasks/create-associate-registers) and a [device](../tasks/create-associate-device) for Store Commerce. Then run the register job from the Distribution schedule in the HQ before activating the app, setting **Application type** to **Store Commerce** during the device creation.
 
 Store Commerce is available in the Microsoft Store to download and installation. To download the app, follow these steps:
 
