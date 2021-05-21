@@ -4,11 +4,9 @@
 title: Tax calculation performance affects transactions
 description: This topic provides troubleshooting information that is related to tax calculation performance and its effect on transactions.
 author: shtao
-manager: beya
 ms.date: 04/07/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

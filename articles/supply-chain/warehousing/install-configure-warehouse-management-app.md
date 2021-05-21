@@ -299,5 +299,9 @@ If a device is lost or compromised, you must remove access to Supply Chain Manag
 1. On the toolbar, select **Delete**.
 1. In the confirmation message that appears, select **Yes**.
 
+## Additional resources
+
+- [Mobile device user settings](mobile-device-user-settings.md)
+- [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

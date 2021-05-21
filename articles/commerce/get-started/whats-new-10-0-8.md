@@ -37,12 +37,12 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 - **General availability (self-update):** January 2020
 - **Auto-update:** February 2020 
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans site](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index).
+The following features are included in this release. The feature titles link to additional information on the [Release plans site](/dynamics365-release-plan/2019wave2/index).
 
-- [Invoke Dynamics 365 Fraud Protection during e-commerce checkout](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-retail/invoke-dynamics-365-fraud-protection-during-e-commerce-checkout)
-- [Recommendations](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-commerce/recommendations)
-- [Product recommendations in POS](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-retail/product-recommendations-pos)
-- [Azure Active Directory business to customer tenant per channel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-commerce/azure-active-directory-business-customer-tenant-per-channel)
+- [Invoke Dynamics 365 Fraud Protection during e-commerce checkout](/dynamics365-release-plan/2019wave2/dynamics365-retail/invoke-dynamics-365-fraud-protection-during-e-commerce-checkout)
+- [Recommendations](/dynamics365-release-plan/2019wave2/dynamics365-commerce/recommendations)
+- [Product recommendations in POS](/dynamics365-release-plan/2019wave2/dynamics365-retail/product-recommendations-pos)
+- [Azure Active Directory business to customer tenant per channel](/dynamics365-release-plan/2019wave2/dynamics365-commerce/azure-active-directory-business-customer-tenant-per-channel)
 
 
 ## Additional resources
@@ -60,7 +60,7 @@ For information about the bug fixes included in each of the updates that are par
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2019 release wave 2 plan](/dynamics365-release-plan/2019wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 

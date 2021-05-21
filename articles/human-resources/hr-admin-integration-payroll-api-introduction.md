@@ -4,7 +4,6 @@
 title: Payroll integration API introduction
 description: This topic describes the Dynamics 365 Human Resources Payroll integration API.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: 
@@ -15,7 +14,6 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

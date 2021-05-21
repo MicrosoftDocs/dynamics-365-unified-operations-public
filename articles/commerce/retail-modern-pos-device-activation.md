@@ -4,7 +4,7 @@
 title: Configure, install, and activate Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
-ms.date: 04/06/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
+This topic describes how to configure, download, and install Modern POS on various platforms. This topic is based on the legacy self-service installer. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md). It then describes how to activate Modern POS through device activation.
 
 > [!NOTE]
 > There are two Modern POS installers: Modern POS and Modern POS with offline (this installer also installs the offline database).
@@ -101,7 +101,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
 ### Before running the Modern POS installer
 
-- Make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
+- Make sure that all [system requirements](../fin-ops-core/fin-ops/get-started/system-requirements.md) are met. If planning to use an offline database, it is recommended to first review the [Commerce Data Exchange implementation guidance](dev-itpro/implementation-considerations-cdx.md#commerce-data-exchange-implementation-guidance) section and the related best practices content it will reference.
 - It is recommended to temporarily turn off antivirus applications.  It has been noted that on aggressive antivirus solutions, the installation may stall due to the antivirus solution checking active files while in use.
 - The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
     - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx     
@@ -132,7 +132,7 @@ The Modern POS installer first extracts the associated files and then starts the
 You can now start the program.
 
 > [!NOTE]
-> This installation occurs only for the administrator user who ran the installer. For all other users, a desktop icon to install Modern POS is created. Every time that a user signs in, he or she must double-click this icon. The program will then be installed or updated, as required. If a user doesn't use the desktop icon after an update, the POS client will request that the user run from the desktop icon instead to update correctly prior to running.
+> This installation occurs only for the administrator user who ran the installer. For all other users, a desktop icon to install Modern POS is created. Every time that a user signs in, the user must double-click this icon. The program will then be installed or updated, as required. If a user doesn't use the desktop icon after an update, the POS client will request that the user run from the desktop icon instead to update correctly prior to running.
 
 ### Run the installer on any other device (Windows Phone, Google Android device, or Apple iOS device)
 
@@ -172,7 +172,7 @@ For this topic, we have already created workers and assigned them to the Houston
 15. On the Action Pane, select **Save**.
 16. Go to **Retail and Commerce** &gt; **Periodic** &gt; **Distribution schedule**.
 17. Select the **1060 – Staff** job, and then, on the Action Pane, select **Run now** to sync the worker data to the channel database.
-18. After the new worker has been created and synced to stores, worker John Smith can sign in to any POS device that is used in the HOUSTON store that he is assigned to, and he can perform transactions on that device. However, the device must be activated first. The following section explains how to activate a device for a new worker.
+18. After the new worker has been created and synced to stores, the worker can sign in to any POS device that is used in the HOUSTON store that the worker is assigned to, and the worker can perform transactions on that device. However, the device must be activated first. The following section explains how to activate a device for a new worker.
 
 ### Map an Azure AD account to a worker who has POS permissions for device activation
 
@@ -204,7 +204,7 @@ This procedure should be completed before you activate Retail Cloud POS or Moder
 ## Activate a device
 
 > [!NOTE]
-> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](https://docs.microsoft.com/azure/active-directory/develop/apple-sso-plugin).
+> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](/azure/active-directory/develop/apple-sso-plugin).
 
 1. Start Modern POS on your computer. Read the instructions on the **Before you start** page, and make sure that they are completed. Then select **Next**.
 2. Select **Activate**. You're redirected to the Azure AD sign-in page.
@@ -217,7 +217,7 @@ The device should now be activated and ready to use.
 ## Update the Modern POS application
 
 > [!NOTE]
-> To learn more about deployable packages, see [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md).
+> To learn more about deployable packages, see [Apply a deployable package](../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md).
 
 1. After a Modern POS application is uploaded into the environment, the version of the package can be selected on the device. The package listings should include the new uploaded application.
 2. To update the Modern POS application, follow the steps in the [Download and install Modern POS](#download-and-install-modern-pos) section. To do an in-place update, just run the newer version of the self-service installer. Uninstallation isn't required or recommended. Device activation status will be maintained after the update.
@@ -347,7 +347,7 @@ The device should now be activated and ready to use.
 
 On a single-computer system, such as a developer topology or a demo environment, or when Commerce Scale Unit and Modern POS are installed on the same computer, Modern POS can't complete device activation.
 
-**Solution:** This issue occurs because Modern POS can't make network calls to the same computer (that is, calls to itself). To mitigate this issue, you must enable an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enabling this loopback for Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](https://msdn.microsoft.com/library/windows/apps/hh780593.aspx).
+**Solution:** This issue occurs because Modern POS can't make network calls to the same computer (that is, calls to itself). To mitigate this issue, you must enable an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enabling this loopback for Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)).
 
 ## Additional resources
 

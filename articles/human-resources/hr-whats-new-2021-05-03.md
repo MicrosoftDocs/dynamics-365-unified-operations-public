@@ -7,7 +7,6 @@ author: marcelbf
 ms.date: 05/03/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-human-resources
 ms.technology:
 
 # optional metadata
@@ -16,7 +15,6 @@ ms.search.form:
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm:
 ms.custom:
@@ -78,7 +76,6 @@ The following new features are in preview. For more information about turning fe
 
 | Feature | Details |
 | --- | --- |
-| Skills entered by a manager for their employees can be auto-approved by a workflow | Coming soon. |
 | Platform update 10.0.18 (42) | Platform update 10.0.18 is scheduled to begin rolling out with the service release on May 17, 2021. For more information, see [Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
 | Custom field support in Benefits management eligibility rules  | [Custom field support for eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
 
