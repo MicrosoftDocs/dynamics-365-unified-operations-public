@@ -4,7 +4,7 @@
 title: Customer management in stores
 description: This topic explains how retailers can enable customer management capabilities at the point of sale (POS) in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 03/05/2021
+ms.date: 05/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,7 +41,7 @@ Sales associates can also capture secondary email addresses and phone numbers. A
 Retailers can use the **All stores** page in Commerce headquarters (**Retail and Commerce \> Channels \> Stores**) to associate a default customer with each store. Commerce then copies the properties that are defined for the default customer to all new customer records that are created. For example, the **Create customer** dialog box shows properties that are inherited from the default customer that is associated with the store. Those properties include the **customer type**, **customer group**, **receipt option**, **receipt email**, **currency**, and **language**. Any **affiliations** (groupings of customers) are also inherited from the default customer. However, **financial dimensions** are inherited from the customer group that is associated with the default customer, not from the default customer itself.
 
 > [!NOTE]
-> The Receipt email value gets copied from the default customer only if the receipt email id is not provided for the newly created customers. This means that if the receipt email id is present on the default customer, then **all the customers created from ecommerce site will get the same receipt email id** as there is no UI to capture the receipt email id from the customer. Thus, we recommend to keep the Receipt email field empty for the default customer of the store and only use it if you have a business process that depends on receipt email address being present. 
+> The **receipt email** value gets copied from the default customer only if the receipt email ID is not provided for the newly created customers. This means that if the receipt email ID is present on the default customer, then all the customers created from the e-commerce site will get the same receipt email ID as there is no user interface to capture the receipt email ID from the customer. It is recommended to keep the **receipt email** field empty for the default customer of the store and only use it if you have a business process that depends on a receipt email address being present. 
 
 Sales associates can capture multiple addresses for a customer. The customer's name and phone number are inherited from the contact information that is associated with each address. The **Addresses** FastTab of a customer record includes a **Purpose** field that sales associates can edit. If the customer type is **Person**, the default value is **Home**. If the customer type is **Organization**, the default value is **Business**. Other values that this field supports include **Home**, **Office**, and **Post box**. The value of the **Country** field for an address is inherited from the primary address that is specified on the **Operating unit** page in Commerce headquarters at **Organization administration \> Organizations \> Operating units**.
 
