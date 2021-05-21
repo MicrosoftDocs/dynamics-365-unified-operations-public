@@ -62,7 +62,10 @@ Store Commerce uses the Chromium engine to render the UI so it provide better re
 
 So if you don't need offline in your Store then choose Store Commerce, Store Commerce will support offline in the future. 
 
-
+| Application type  | Operating environment  | ALM                              | Extensions | Supports Offline | Supports Local Hardware Station | UI Rendering engine |
+|-------------------|------------------------|----------------------------------|-------------------|--------------|-------------|-------------------|
+| Store Commerce    | Windows                |   Microsoft Store and CPOS deployed through CSU.   | Deployed to CPOS. | No (Supported in the future). | Yes | Chromium engine to render the UI.|
+| MPOS              | Windows                |  Self-serviced using LCS, HQ and packaged and installed using MPOS installer.  | Packaged with MPOS or Independent extension package.| Yes | Yes | UWP app framework to render the UI.|
 
 ## Setup and installation
 
