@@ -66,7 +66,7 @@ For each line that has a "returning now" quantity, users will need to select a r
 After setting the return quantity and reason code for each item to be returned, users can choose the **Return** operation from the POS Appbar to proceed with the processing.  
 Users will then be directed to the POS transaction form. The returnable items selected on the previous screen will be systematically added to the cart with their "returning now" quantities shown as negative quantity lines on the transaction, and the refund total will be calculated. 
 
-It is possible for users to add additional lines to a returns transaction if creating an exchange order. It is also possible for users to add more ad-hoc return items to a returns transaction using the **Return product** operation for a selected positive quantity sales line that has been added.   
+It is possible for users to add additional lines to a return transaction if creating an exchange order. It is also possible for users to add more ad-hoc return items to a return transaction using the **Return product** operation for a selected positive quantity sales line that has been added.   
 
 > [!NOTE]
 > Using the **Return product** operation in POS will not provide any validation against any original transaction and will allow any product to be returned, so it is recommended that this operation only be allowed for authorized users, or that a manager override is required if used.
