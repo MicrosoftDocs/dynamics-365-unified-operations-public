@@ -504,6 +504,24 @@ After the status is updated to **Complete**, the configuration is ready for depl
 5.  Select **Country/Region of Origin** as the lookup column, and then click the right arrow button.
 6.  Click **Save**.
 
+### Rebase extension configuration to latest Microsoft configuration
 
+1. Go to Extension configuration, and then click **rebase** 
+
+2. Change the target version to latest Microsoft version [![rebase step 1](./media/extend-tax-engine-configurations-rebase1.png)](./media/extend-tax-engine-configurations-rebase1.png)
+
+3. If there is any rebase conflict, you will see the warning message [![rebase step 2](./media/extend-tax-engine-configurations-rebase2.png)](./media/extend-tax-engine-configurations-rebase2.png)
+
+4. In order to resolve the rebase conflict, you need to click **Designer** to open the rebased extension configuration [![rebase step 3](./media/extend-tax-engine-configurations-rebase3.png)](./media/extend-tax-engine-configurations-rebase3.png)
+
+5. Check the conflict details, and resolve.
+
+6. You have 3 ways to resolve the conflict, and you need to select one of it to resolve the conflict
+
+7. 1. **Apply previous base value** will apply the original value from base configuration at the first time you create the configuration
+   2. **Apply base value** will apply the current value from the target base configuration
+   3. **Retain own value** will apply the value from extension configuration
+
+8. After you resolve the conflict, you will see the **Resolved** checkbox is checked  [![rebase step 4](./media/extend-tax-engine-configurations-rebase4.png)](./media/extend-tax-engine-configurations-rebase4.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
