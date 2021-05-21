@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.20
 # Returning serial number controlled products in point of sale (POS)
 
 > [!NOTE]
-In order to used serial number validation during return order processing in POS, the **Unified return processing experience in POS** feature must be enabled. It’s important to note that once this feature has been enabled, it cannot be disabled.  This feature also enables additional capabilities which you can learn about in the [create returns in point of sale](POS-returns.md)documentation.
+>In order to used serial number validation during return order processing in POS, the **Unified return processing experience in POS** feature must be enabled. It’s important to note that once this feature has been enabled, it cannot be disabled.  This feature also enables additional capabilities which you can learn about in the [create returns in point of sale](POS-returns.md) documentation.
 
 ## Options for validating serialized returns:
 When the **Unified return processing experience in POS** feature is enabled, organizations will now also have the option of performing a validation on serial number controlled item returns through the POS application.  This capability can warn users if the serial number being returned differs from the original serial number sold.   In the current release, users receive a warning only and can still process a return against a serial number that differs from the serial number originally sold.
@@ -37,4 +37,5 @@ After the **Unified return processing experience in POS** feature has been enabl
 ## Processing returns for seralized items in POS
 When returning a serial controlled item through the Point of Sale (POS) application, if the parameter to support serial number validation has been enabled, the users will be able to input the serial number for the return line through the details panel on the **returnable products** form.  If the data they enter does not match with the original serial number sold for the sales transaction, the user will see a warning.   This will not prevent the user from continuing to post the return and is a warning message only.  
 
-If the order being returned has a seralized product on the transaction that has a quantity greater than 1, this product will display in the returnable products list as multiple lines, one return line for each quantity on the original transaction.  This POS application can only support the registration of one serial number per sales line, therefore each quantity of seralized item being returned will have to be processed as a separate return line.
+> [!NOTE]
+>In the current version, the application can only support validation of serial numbers on return lines where the original ordered quantity is no greater than one.  If the original sales order line was created in a non-POS channel and the quantity ordered for the seralized item is greater than one on a given sales line, it cannot be properly returned through the POS application. 
