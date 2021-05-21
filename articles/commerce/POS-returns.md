@@ -61,7 +61,7 @@ Users can also manually select items to return on the screen and update the "ret
 
 If the maximum available "returning now" quantity is being specified for a transaction, a user can also use the **Select all** operation on the POS Appbar to set the maximum returnable quantity on all lines.
 
-For each line that has a "returning now" quantity, users will need to select a return reason code for each line using the details panel. When returning a cash and carry order, the return reason codes are configured on the store's functionality profile as **infocodes**. When returning a customer order, the return reason codes are configured in the **return reason codes** form in Dynamics 365 Commerce headquarters.
+For each line that has a "returning now" quantity, users will need to select a return reason code for each line using the details panel. When returning a cash and carry order, the return reason codes are configured on the store's functionality profile as *infocodes*. When returning a customer order, the return reason codes are configured in the **return reason codes** form in Dynamics 365 Commerce headquarters.
 
 After setting the return quantity and reason code for each item to be returned, users can choose the **Return** operation from the POS Appbar to proceed with the processing.  
 Users will then be directed to the POS transaction form. The returnable items selected on the previous screen will be systematically added to the cart with their "returning now" quantities shown as negative quantity lines on the transaction, and the refund total will be calculated. 
@@ -75,7 +75,7 @@ If there is a refund due at checkout, organizations can configure [refund paymen
 
 ## Other return options in POS
 
-When the **Unified return processing experience in POS** feature has been enabled, users will also be able to initiate a return for a cash and carry transaction or a customer order using the **Show journal** operation in POS. Users can select a transaction from the journal and select the **Return** operation from the POS Appbar. This operation will only be enabled if there are returnable lines on the order, and will initiate the same user experience as the **Return transaction** operation.
+When the **Unified return processing experience in POS** feature has been enabled, users will also be able to initiate a return for a cash and carry transaction or a customer order using the **Show journal** operation in POS. Users can select a transaction from the journal and select the **Return** operation from the POS Appbar. This operation will only be enabled if there are returnable lines on the order and will initiate the same user experience as the **Return transaction** operation.
 
 Users in POS can also use the **Recall order** operation to search for and recall customer orders (cash and carry transactions are not retrievable from this operation). If using the **Recall order** operation, once a customer order has been selected, the **Return** operation on the POS Appbar can also be used to initiate the return of the customer order. This operation will only be enabled if there are returnable lines on the order. Selecting the return operation from the **Recall orders** form will initiate the same user experience as the  **Return transaction** or **Show journal** operations.
 
@@ -94,11 +94,11 @@ To use the offline return process appropriately, organizations should schedule t
 When RTS is not available and channel-side data is being used by POS for returns validations, users will be shown a warning so that they are aware that they are creating an "offline" return and that there is a small chance that the "available to return" quantity shown in POS is stale and no longer accurate since it's only as accurate as the last time the **update return quantities** job was processed and synchronized to the channel. For example, if a customer had somehow recently processed a return for an order line in another channel and this data was not yet synchronized to the channel databases through the **Update return quantities** job, the customer could go to a different store and attempt to return that same item. If that happens, and the store cannot initiate the RTS call to headquarters to get real-time return data, the application would allow the return again, but would provide a warning to the user that potentially stale information is being used to validate the return. The message the user sees is only a warning and does not prohibit the user from continuing to process the return. If for some reason the channel-side information is not up-to-date and an offline return is processed for a quantity greater than the actual "available to return" quantity, an error may be generated when statement posting runs to create the transaction in headquarters that will need to be addressed.
 
 > [!NOTE]
-> When the **Unified returns processing experience in POS** feature is enabled, this will also enable new optional features to support the verification of serialized product returns. For more information, see [Return serial number controlled products](POS-serial-returns.md).
+> When the **Unified returns processing experience in POS** feature is enabled, this will also enable new optional features to support the verification of serialized product returns. For more information, see [Return serial number-controlled products](POS-serial-returns.md).
 
 ## Additional resources
 
-[Return serial number controlled products](POS-serial-returns.md)
+[Return serial number-controlled products](POS-serial-returns.md)
 
 [Linked refunds of previously approved and confirmed transactions](dev-itpro/linked-refunds.md)
 
