@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create returns in point of sale (POS)
-description: This topic describes how to initiate returns for cash and carry or customers orders in the Microsoft Dynamics 365 Commerce point of sale (POS) application.
+description: This topic describes how to initiate returns for cash and carry or customer orders in the Microsoft Dynamics 365 Commerce point of sale (POS) application.
 author: hhainesms
 ms.date: 05/28/2021
 ms.topic: article
@@ -31,12 +31,10 @@ ms.dyn365.ops.version: Release 10.0.20
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic describes how to initiate returns for cash and carry or customers orders in the Microsoft Dynamics 365 Commerce point of sale (POS) application.
+This topic describes how to initiate returns for cash and carry or customer orders in the Microsoft Dynamics 365 Commerce point of sale (POS) application.
 
 > [!NOTE]
 > Starting in the Commerce version 10.0.20 release, the **Unified return processing experience in POS** feature can be enabled. This feature provides a more consistent and unified returns process flow within POS, regardless of the transaction type (cash and carry or customer order) or the original channel the order was created in. It is recommended that all organizations enable this new capability to improve the overall processing reliability of returns through the POS application. Once this feature has been enabled, it cannot be disabled.
-
-This document provides functional documentation for processing returns through the Point of Sale (POS) application when feature **Unified return processing experience in POS** has been enabled.
 
 ## Process returns using the return transaction operation
 
@@ -51,7 +49,7 @@ From the return transaction operation, users can search for a cash and carry tra
 
 These criteria can be entered using a device keyboard, on-screen keypad, or barcode scanner.
 
-After users input their transaction or order reference information, if a match is found the **returnable items** form will appear. This form is where users can specify the items that are being returned, and enter return quantities and reason codes. 
+After users input their transaction or order reference information, if a match is found the **returnable items** form will appear. This form is where users can specify the items that are being returned and enter return quantities and reason codes. 
 
 For each order line in the returnable products list, the application will display information about the original purchase quantity and any previously processed return quantities. Users will only be able to return quantities that are equal to or less than the available to return quantity.
 
@@ -59,7 +57,7 @@ For each order line in the returnable products list, the application will displa
 
 When processing a return, if a user has the physical product and it has a barcode, the user can scan the barcode of the item to register the return. Scanning a barcode will increase the return quantity by one item per scan, but if you have a barcode label with an embedded quantity, that quantity will be used and applied to the **Returning now** field. 
 
-Users can also manually select items to return on the screen, and update the "returning now" quantity using the details panel on the right side of the screen.  
+Users can also manually select items to return on the screen and update the "returning now" quantity using the details panel on the right side of the screen.  
 
 If the maximum available "returning now" quantity is being specified for a transaction, a user can also use the **Select all** operation on the POS Appbar to set the maximum returnable quantity on all lines.
 
