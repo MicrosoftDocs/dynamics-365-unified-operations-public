@@ -4,7 +4,7 @@
 title: Cookie compliance
 description: This topic describes considerations for cookie compliance and the default policies that are included in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/16/2021
+ms.date: 05/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,9 +57,7 @@ The following table shows the current reference list of cookies placed by Dynami
 | x-ms-cpim-trans                             | Used for tracking transactions (the number of open tabs authenticating against a business-to-consumer (B2C) site), including the current transaction. |
 | \_msdyn365___muid_                            | Used if Experimentation is activated for the environment; utilized as a userId for experimentation purposes. |
 | \_msdyn365___exp_                             | Used if Experimentation is activated for the environment; used to measure performance load balancing.         |
-| d365mkt                                       | Used if Geo Detection is enabled in Commerce site builder with **Site Settings > General > Enable location based store detection**      |
-
-
+| d365mkt                                       | Used if location-based detection to track a user's IP address for store location suggestions is enabled in Commerce site builder at **Site Settings > General > Enable location based store detection**.      |
 
 If a site user selects any social media links within a site, the cookies in the following table will also be tracked on their browser.
 
