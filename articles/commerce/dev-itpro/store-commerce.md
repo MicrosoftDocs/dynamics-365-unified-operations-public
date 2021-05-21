@@ -15,6 +15,8 @@ Store Commerce is an app that runs on a Windows device. The app will be availabl
 
 Store Commerce is a shell that renders CPOS, so you should also update CPOS to get the updated CPOS functionality. CPOS can be updated from the Cloud Scale unit (CSU). For more information about updating CSU refer [Apply updates and extensions to Commerce Scale Unit (cloud)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/update-retail-channel)
 
+![Store Commerce](media/StoreCommerce.png)
+
 ## Store Commerce is the future MPOS:
 
 When Store Commerce has full functional parity with MPOS, it will replace MPOS. Currently, Store Commerce doesn't support running offline (when there is no connectivity to Retail Server). For more information about the different POS apps and topology, see [Choose between Modern POS (MPOS) and Cloud POS](../mpos-or-cpos.md)
