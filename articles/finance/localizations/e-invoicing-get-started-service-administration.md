@@ -50,17 +50,14 @@ Before you complete the procedures in this topic, the following prerequisites mu
 ## Install the add-in for microservices in Lifecycle Services
 
 1. Sign in to your LCS account.
-2. Select the **Preview feature management** tile.
-3. In the **Public Preview Features** section, select **Electronic Invoicing**.
-4. Make sure that the **Preview feature enabled** option is set to **Yes**.
-5. On your LCS project dashboard, select a LCS project.
-6. In the LCS project, on the LCS environment dashboard, select your LCS deployment project. The LCS deployment project must be running.
-7. On the **Power Platform Integration** tab, in the **Environment add-ins** field group, select **Install a new add-in**.
-8. Select **Electronic Invoicing**.
-9. In the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This is a fixed value.
-10. In the **AAD tenant ID** field, enter the tenant ID of your Azure subscription account.
-11. Review the terms and conditions, and then select the check box.
-12. Select **Install**.
+2. On your LCS project dashboard, select a LCS project.
+3. In the LCS project, on the LCS environment dashboard, select your LCS deployment project. The LCS deployment project must be running.
+4. On the **Power Platform Integration** tab, in the **Environment add-ins** field group, select **Install a new add-in**.
+5. Select **Electronic Invoicing**.
+6. In the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This is a fixed value.
+7. In the **AAD tenant ID** field, enter the tenant ID of your Azure subscription account.
+8. Review the terms and conditions, and then select the check box.
+9. Select **Install**.
 
 
 ## Set up the parameters for RCS integration with Electronic invoicing
