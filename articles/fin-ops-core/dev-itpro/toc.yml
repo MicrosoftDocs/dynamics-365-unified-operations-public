@@ -1170,6 +1170,8 @@
         items:
         - name: Add-ins overview
           href: power-platform/add-ins-overview.md
+      - name: Policies and communications
+        href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
     - name: Mobile platform
       items:
       - name: Mobile platform resources

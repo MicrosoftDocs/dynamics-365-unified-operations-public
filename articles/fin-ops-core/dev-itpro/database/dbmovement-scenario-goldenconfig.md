@@ -4,7 +4,7 @@
 title: Golden configuration promotion
 description: This topic explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
-ms.date: 12/02/2020
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -167,7 +167,7 @@ Upload the .bacpac file that was created in the previous step to the **Database 
 Now that the UAT environment is hydrated with the golden configuration, you can begin to migrate master data. You can do this data migration by [using data entities](../data-entities/develop-entity-for-data-migration.md). We recommend that you complete your data migration activities before you copy the UAT environment to production, because you will have access to the database in the UAT environment for troubleshooting.  
 
 > [!IMPORTANT]
-> Document attachments are not copied from UAT to Production in the next step.  If your go live requires attachments, you will want to import those in the Production environment directly.
+> Files stored in Azure blob storage are not copied from UAT to Production in the next step. This includes document attachments and custom Microsoft Office templates. If your go-live requires attachments or custom templates, you will want to import those in the Production environment directly.
 
 ## Copy the sandbox database to production
 
