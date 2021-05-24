@@ -24,7 +24,7 @@ This topic explains how to enable dual-write from Lifecycle Services (LCS).
 
 You must complete the Power Platform integration as described in these topics:
 
-+ [Power Platform Integration - Enable during environment deployment](../../power-platform/overview.md#enable-during-enviornment-deployment)
++ [Power Platform Integration - Enable during environment deployment](../../power-platform/overview.md#enable-during-environment-deployment)
 + [Power Platform integration - Set up after environment deployment](../../power-platform/overview.md#set-up-after-environment-deployment)
 
 ## Set up dual-write application for new Dataverse environments
