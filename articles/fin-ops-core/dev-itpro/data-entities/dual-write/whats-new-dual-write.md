@@ -39,9 +39,9 @@ This release contains the features and bug fixes listed in the following table.
 
 ## May 2021 release of party and global address book
 
-The May 2021 hotfix release of the [Dual-write party and global address book solution version 3.0.0.26](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The May 2021 hotfix release of the [Dual-write Party and Global Address Book Solutions 3.0.0.26](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
-This release contains bug fixes listed in the following table.
+This release contains the bug fixes listed in the following table.
 
 | Feature | Description |Status |
 |------|---------|-------|
