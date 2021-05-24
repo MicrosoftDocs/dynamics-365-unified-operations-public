@@ -118,7 +118,7 @@ To set up Dutch electronic tax declaration parameters, follow these steps:
 
 1. Go to **Tax** > **Setup** > **Sales tax** > **Electronic tax declaration parameters**.
 
-    For legal entities with [Multiple VAT registrations](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers?toc=/dynamics365/finance/toc.json), go to **Tax** \> **Setup** \> **Foreign trade** \> **Dutch electronic tax declaration parameters**.
+    For legal entities with [Multiple VAT registrations](emea-multiple-vat-registration-numbers.md), go to **Tax** \> **Setup** \> **Foreign trade** \> **Dutch electronic tax declaration parameters**.
 
 2. On the **General** tab, in the **ICP contact type** field, select **Taxpayer** or **Agent**.
 3. Select information in the **Contact ID, Name, Contact initials**, **Contact prefix**, and **Telephone** fields.
