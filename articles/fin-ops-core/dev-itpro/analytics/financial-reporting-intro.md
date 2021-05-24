@@ -100,5 +100,7 @@ The following components of financial reporting make it easy to create, view, an
 ## Additional resources
 [Generate financial reports](generate-financial-report.md)
 
+#### Community blogs
+[How to query financial data in Dynamics 365 Finance](https://financefunction.tech/2021/05/23/how-to-query-financial-reporting-data-in-dynamics-365-finance)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
