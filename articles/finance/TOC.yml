@@ -2400,6 +2400,20 @@
                 href: localizations/apac-ind-GST-tax-returns.md
               - name: Enable multi-batch processing for GSTR reports
                 href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+            - name: Troubleshooting GST
+              items:
+              - name: Incorrect tax amount after calculation
+                href: localizations/apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md
+              - name: Tax configuration errors
+                href: localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md
+              - name: Tax isn't calculated
+                href: localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md
+              - name: Activating the setoff rules takes longer than expected
+                href: localizations/apac-ind-GST-troubleshooting-setoff-rule-activate-take-long-time.md
+              - name: TaxTrans or voucher isn't generated
+                href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
+              - name: Tax transaction ID is incorrect
+                href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
         - name: Direct taxes
           items:
           - name: India withholding tax
