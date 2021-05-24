@@ -1496,10 +1496,8 @@
             href: localizations/emea-multiple-vat-registration-numbers.md
           - name: Reporting for multiple VAT registrations 
             items:
-            - name: Reporting for multiple VAT registrations overview
-              href: localizations/reporting-multiple-vat-registrations-overview.md
             - name: Reporting for multiple VAT registrations
-              href: localizations/reporting-multiple-vat-registrations.md
+              href: localizations/emea-reporting-for-multiple-vat-registrations.md
             - name: Netherlands reporting
               items:
               - name: VAT declaration
