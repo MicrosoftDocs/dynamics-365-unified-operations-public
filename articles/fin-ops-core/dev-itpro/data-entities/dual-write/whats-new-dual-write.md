@@ -1,29 +1,15 @@
 ---
-# required metadata
-
 title: What's new or changed in dual-write
 description: This topic provides links to the release plans, major announcements, and documentation for dual-write.
 author: robinarh
 ms.date: 01/04/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-
 ---
 
 # What's new or changed in dual-write
@@ -42,26 +28,59 @@ Check out the latest information about dual-write features and changes in the [r
 
 ## May 2021 release
 
-The May 2021 hotfix release of the [Dual-write application orchestration solution version  2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.26](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The May 2021 hotfix release of the [Dual-write application orchestration solution version 2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.26](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
 | Feature | Description |Status |
 |------|---------|-------|
-| Government Community Cloud support	| Dual-write runtime on the Government Community Cloud region is supported. | General availability |
+| Government Community Cloud support | Dual-write runtime on the Government Community Cloud region is supported. | General availability |
 | User-friendly error messages | Enables user-friendly error messages for some of the live sync failures. | General availability |
+
+## May 2021 release of party and global address book
+
+The May 2021 hotfix release of the [Dual-write party and global address book solution version 3.0.0.26](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
+
+This release contains bug fixes listed in the following table.
+
+| Feature | Description |Status |
+|------|---------|-------|
+| Bug fix| In customer engagement apps, when a lead contains postal address and is qualified, the postal address is associated with the account. It doesn't flow to Finance and Operations apps, however.| General availability |
+| Bug fix| In customer engagement apps, when you add an address to an existing account or contact, the address doesn't flow to Finance and Operations apps.| General availability |
+| Bug fix| More address fields are added to the Customer Address table. | General availability |
+| Bug fix| In Dataverse, we changed the display name of msdyn_contactforparties table to **Contact for Customer or Vendor** | General availability |
+| Bug fix| We fixed a language transformation in the Contacts V2 (msdyn_contactforparties) mapping. | General availability |
+| Bug fix| We fixed an issue in initial sync in the CDS Party postal address locations (msdyn_partypostaladdresses) mapping to avoid loss of some records in Customer Address table. | General availability |
+
+### Solution details
+
+|Solution name | Has new changes? | Previous version | New version |
+|--------------|--------------|--------------|--------------|
+|Party|Yes|3.0.0.1|3.0.0.26|
+|Dynamics365GABExtended|Yes|3.0.0.1|3.0.0.26|
+|Dynamics365GABDualWriteEntityMaps|Yes|3.0.0.1|3.0.0.26|
+|Dynamics365GABPartyAnchor|Yes|3.0.0.1|3.0.0.26|
+|Dynamics365GABPartyCommon|Yes|3.0.0.1|3.0.0.26|
+
+### Map instructions
+
+Follow these steps to apply the new maps:
+
+1. Apply the latest map version 1.0.0.2 for CDS Postal address history V2 (msdyn_postaladdresses) mapping.
+2. Apply the latest map version for Contacts V2 (msdyn_contactforparties) mapping.
+3. Run the initial sync of the CDS Party postal address locations (msdyn_partypostaladdresses) mapping twice to make sure that there is no loss of address records in Customer Address table due to concurrent address updates.
 
 ## April 2021 release
 
-The April 2021 hotfix release of the [Dual-write application orchestration solution version  2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.25](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The April 2021 hotfix release of the [Dual-write application orchestration solution version 2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.25](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
 | Feature | Description |Status |
 |------|---------|-------|
-| Record deletion	| Handle record deletion during transactions with multiple entities.	| General availability
-| Bug fix	| Handle conflict resolution during catch-up sync.	| General availability
-| Bug fix	| Issues related to solution import on environments.	| General availability
+| Record deletion | Handle record deletion during transactions with multiple entities. | General availability
+| Bug fix | Handle conflict resolution during catch-up sync. | General availability
+| Bug fix | Issues related to solution import on environments. | General availability
 | Bug fix | The **Notes** table now understands the **Null** value. | General availability |
 | Bug fix | Dual write orchestration package 2.2.2.50 does not replace the existing key (**msdyn_locationid** field) on the **Address** table with the new key which is a combination of the **msdyn_locationid** and **parentid** fields. Instead it shows both keys. This has been fixed with the new version 2.2.2.60. This new version is applicable only when you are using the [party and global address book](party-gab.md) solution.| General availability |
 
@@ -136,7 +155,6 @@ The October 2020 release of the Dual-write application orchestration solution an
 | Camel-cased column mappings | Adds support for column mappings with camel-cased navigation properties. | General availability
 | Bug fix | Fixes the bug where an unrecognized tag configuration would cause dual-write execution to be skipped | General availability
 
-
 ## September 2020 release
 
 The September 2020 release of the [Dual-write application orchestration solution version 2.0.777.493](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.21](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
@@ -171,7 +189,6 @@ The June 2020 release of the dual-write orchestration package contains the featu
 |------|---------|-------|
 | Edit legal entity after setup | The company or legal entity list isn't static and is constantly changing. You might need to add new companies, for example, during a phased rollout or acquisition. Previously, you couldn't add a company or legal entity without system downtime. During this downtime, you would have to unlink and relink your environment. That can be expensive, especially if you have pre-existing data. With this feature, you can add a company in a live environment without having to unlink and relink. | General availability |
 
-
 ## May 2020 release
 
 The May 2020 release of the dual-write orchestration package (version 2.0.777.353) contains the features and bug fixes listed in the following table.
@@ -188,8 +205,5 @@ The May 2020 release of the dual-write orchestration package (version 2.0.777.35
 | Quote and order creation | Enable quote and order creation for B2C customers. | General availability |
 | Removal of tenant admin-level consent requirement | Until now, before you could enable dual-write, a tenant admin needed to explicitly give consent to the applications. This wasn't always practical and required additional approval, which can be time consuming. With this feature, we removed this prerequisite and the need for explicitly giving consent to the applications. | General availability |
 | Force unlink dual-write environment | Previously, while testing dual-write, you had to disable all the table maps before unlinking a dual-write environment. This seemed cumbersome and sometimes not possible if one of the environments wasn't available. This new feature provides a quick way to unlink your test and trial environments. | General availability |
-
-
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
