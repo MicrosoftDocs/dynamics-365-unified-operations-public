@@ -29,14 +29,14 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-To automatically generate the VAT declaration, you must create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the VAT declaration electronic reporting format, you must associate sales tax codes with the lookup result of the lookup for the VAT declaration boxes. For more information about how to set up application-specific parameters, see  [Set up application parameters for declaration fields](#Set-up-application-specific-parameters-for-VAT-declaration-fields) later in this topic.
+To automatically generate the VAT declaration, you must create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the VAT declaration electronic reporting format, you must associate sales tax codes with the lookup result of the lookup for the VAT declaration boxes. For more information about how to set up application-specific parameters, see [Set up application parameters for declaration fields](#application-specific-parameters-VAT) later in this topic.
 
 In the following table, the **Lookup result** column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then associate that with the row of the VAT declaration. The **Tax base (XML element) / Tax (XML element)** column list the names of the corresponding XML elements in VAT declaration XML (NL) format.
 
 > [!NOTE]
 > If you configure sales tax codes to post incoming reverse charge VAT by using use tax, associate your sales tax codes with the lookup result that contains **UseTax** in the name. For example, for **Row 2a Supplies/services for which the VAT has been reverse-charged to you**, configure the **SuppliesServicesByWhichVATTaxationIsTransferredUseTax** lookup result for **Use tax** sales tax codes, or configure the **SuppliesServicesByWhichVATTaxationIsTransferred** lookup result for sales tax codes that have a reverse charge. For more information about how to configure reverse charge VAT, see [Reverse charges](emea-reverse-charge.md).
 
-### VAT declaration overview
+### <a name="vat-declaration-overview">VAT declaration overview</a>
 
 The VAT declaration format in Netherlands contains the following information.
 
@@ -378,7 +378,7 @@ To import Electronic reporting (ER) configurations, go to **Workspaces** \> **El
    - VAT Declaration XML (NL).version.85.14
    - VAT Declaration Excel (NL).version.85.14.17
 
-### Set up application specific parameters for VAT declaration fields
+### <a name="application-specific-parameters-VAT">Set up application specific parameters for VAT declaration fields</a>
 
 To automatically generate a VAT declaration, associate sales tax codes and report fields in the ER configuration. To set up report fields, follow these steps:
 
@@ -404,7 +404,7 @@ To automatically generate a VAT declaration, associate sales tax codes and repor
 <p>Lookup result</p>
 </td>
 <td width="700">
-<p>Select the report field for setup. For more information about the report fields and their assignment to VAT declaration rows, see the&nbsp;<a href="#_VAT_declaration_overview_1">VAT declaration overview</a>&nbsp;section earlier in this topic.</p>
+<p>Select the report field for setup. For more information about the report fields and their assignment to VAT declaration rows, see the section, [VAT declaration overview](#vat-declaration) in this topic.</p>
 </td>
 </tr>
 <tr>
@@ -451,7 +451,7 @@ To set up XSD schema and namespaces, follow these steps:
     | SchemaInstanceData | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data                      |
 
 
-    For information about how to get these values from official documentation, see [How-to get XSD schema and namespaces for the Dutch taxonomy](emea-nl-eu-sales-list.md/#Get-XSD-schema-and-namespaces-for-the-Dutch-taxonomy)
+    For information about how to get these values from official documentation, see [How-to get XSD schema and namespaces for the Dutch taxonomy](emea-nl-eu-sales-list.md#Get-XSD-schema-and-namespaces-for-the-Dutch-taxonomy)
 
     > [!NOTE]
     > If you don’t set up transmission of VAT declaration to Digipoort, you can configure any value in the lookup result.
@@ -623,7 +623,7 @@ To upload the electronic messages data package, follow these steps:
     - The executable class **NLOBGetStatusFromDidgipoort** has the **Electronic reporting import** action type.
     - The executable class **NLOBSendToDigipoort** has the **Web service** action type.
 
-    ![electronic-messages-NL](media/electronic-messages-NL.png)
+    ![Executable class settings page](media/electronic-messages-NL.png)
 
 8.  For each line, select **Parameters**, and then select **NLOB Request ID** in the **Request ID** field.
 
@@ -639,7 +639,7 @@ To configure electronic messages, follow these steps:
 
 Digipoort is the service that is used to transmit declarations to the Dutch government. Digipoort works as an electronic post office: it receives a message, checks the message, and then confirms receipt of the message.
 
-For more information, see [Set up electronic transmission of tax declarations to Digipoort](emea-nl-eu-sales-list.md#Set-up-electronic-transmission-of-tax-declarations-to-Digipoort)
+For more information, see [Set up electronic transmission of tax declarations to Digipoort](emea-nl-eu-sales-list.md#set-up-electronic-transmission-of-tax-declarations-to-digipoort).
 
 ## Generate VAT declaration in XML for Netherlands and send to Digipoort
 
