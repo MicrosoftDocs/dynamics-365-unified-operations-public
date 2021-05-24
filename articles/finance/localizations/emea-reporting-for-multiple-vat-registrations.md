@@ -49,7 +49,7 @@ Before you can do the reporting for multiple VAT registrations, the following pr
 
 ### Configure the Tax Calculation service
 
-For information about how to configure the Tax Calculation service, see [Tax Calculation](https://docs.microsoft.com/dynamics365/finance/localizations/global-tax-calcuation-service-overview?toc=/dynamics365/finance/toc.json).
+For information about how to configure the Tax Calculation service, see [Tax Calculation](global-tax-calcuation-service-overview.md).
 
 ### Enable features in the feature management
 
