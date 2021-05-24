@@ -66,7 +66,7 @@ The following steps describe the process for creating a custom field and placing
 11. **Optional:** Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region. See [Personalize the user experience](personalize-user-experience.md) for more information about how to use the various personalization capabilities to optimize a form for your personal usage.
 
 > [!WARNING]
-> The ability to enter values in a custom field added to a page is dependent on whether the table associated with the custom field is editable or read-only. Whenever the assocaited table is read-only, all fields on linked to that table, including any custom fields, will also be read-only.
+> The ability to enter values in a custom field added to a page is dependent on whether the table associated with the custom field is editable or read-only. Whenever the assocaited table is read-only, all fields linked to that table, including any custom fields, will also be read-only.
 
 
 ## Sharing custom fields with other users
