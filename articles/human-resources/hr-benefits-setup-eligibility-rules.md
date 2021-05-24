@@ -146,7 +146,7 @@ For example:  The **Active employees** rule above is made up of the criteria bel
  
 ### Multiple conditions within criteria
 
-Rules can be further expended to use multiple conditions within a single criteria. The employee must meet at least one condition to be eligible. To build on the example above, the **Active employees** rule can be further expanded to include employees that are also part-time employees.  Therefore, now employee must be an employee in USMF *and* either a full-time or a part-time employee.  
+Rules can be further expanded to use multiple conditions within a single criteria. The employee must meet at least one condition to be eligible. To build on the example above, the **Active employees** rule can be further expanded to include employees that are also part-time employees.  Therefore, now the employee must be an employee in USMF *and* either a full-time or a part-time employee.  
 
 ![Multiple conditons within criteria](media/MultipleConditionsWithinCriteria.png) 
  
