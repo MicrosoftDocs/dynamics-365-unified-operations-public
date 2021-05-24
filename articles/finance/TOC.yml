@@ -2753,7 +2753,7 @@
         - name: Audit file (XML Auditfile Financieel XAF)
           href: localizations/emea-nl-audit-file.md
         - name: VAT declaration (Netherlands)
-          href: localizations/emea-nl-VAT-declaration-tax-declaration-model.md
+          href: localizations/emea-nl-vat-declaration-netherlands.md
         - name: EU sales list
           href: localizations/emea-nl-EU-sales-list.md
       - name: Norway
