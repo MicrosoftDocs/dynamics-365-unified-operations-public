@@ -41,9 +41,9 @@ During open enrollment, employees can select benefit plans. If they become ineli
 
 1. In the **Benefits management** workspace, under **Setup**, select **Eligibility rules and options**.
 
-2. In the **Eligibility rules** tab, select **New** to create an eligibility rule. To see plans that are associated with an eligibility rule, select **Attached plans**.
+2. On the **Eligibility rules** tab, select **New** to create an eligibility rule. To see plans that are associated with an eligibility rule, select **Attached plans**.
 
-3. Specify values for the following fields:
+3. Specify values for the following fields.
 
    | Field | Description |
    | --- | --- |
@@ -61,7 +61,7 @@ During open enrollment, employees can select benefit plans. If they become ineli
    | **Enrollment period** | The time period when new hire enrollment is allowed. If you also set this in parameters, the parameters setting takes precedence over this one. |
    | **Use former employment status** | Specifies whether to use an employee’s previous employment status as part of the benefits eligibility rule. For example, you can specify an eligibility rule that waives a coverage waiting period for all employees that have transitioned from a **Laid off** status to an **Employed** status within 90 days of their previous employment. |
 
-4. Under **Additional criteria**, select the following options and add information as necessary:
+4. Under **Additional criteria**, select the following options and add information as necessary.
 
    | Option | Description |
    | --- | --- |
@@ -80,7 +80,7 @@ During open enrollment, employees can select benefit plans. If they become ineli
    | **Eligible union** | Specifies the labor union memberships that satisfy the eligibility rule. For example, Forklift Drivers of America. </br></br>When using a union-based eligibility rule, the worker’s union record must have the end date populated. You can’t leave it blank. |
    | **Eligible ZIP/postal code** | Specifies the ZIP/postal codes that satisfy the eligibility rule. For example, 58104. |
 
-5. Under **Additional detail**, you can view the following additional details:
+5. Under **Additional detail**, you can view the following additional details.
 
    | Field | Description |
    | --- | --- |
@@ -93,9 +93,9 @@ During open enrollment, employees can select benefit plans. If they become ineli
 
 ## Using custom fields in eligibility rules
 
-[Custom fields](hr-developer-custom-fields.md) can be created within Human resources to track additional information.  These fields can be added directly to the user interface, and a column is dynamically added to the underlying table.  
+[Custom fields](hr-developer-custom-fields.md) can be created within Human Resources to track additional information. These fields can be added directly to the user interface, and a column is dynamically added to the underlying table.  
 
-Custom fields can be used in the eligibility process.  Eligibility rules can use one or more custom fields values to determine eligibility of an employee.  To add a custom field to an existing rule or to create a new rule, navigate to **Benefits management > Links > Setup > Eligibility rules > Custom field eligibility**. Within this page, you can create a rule that uses one or multiple custom fields, and you can define multiple values for each custom field to determine eligibility.
+Custom fields can be used in the eligibility process. Eligibility rules can use one or more custom fields values to determine eligibility of an employee.  To add a custom field to an existing rule or to create a new rule, go to **Benefits management > Links > Setup > Eligibility rules > Custom field eligibility**. Within this page, you can create a rule that uses one or multiple custom fields, and you can define multiple values for each custom field to determine eligibility.
 
 The following tables support custom fields that can be used in eligibility processing:
 
@@ -116,7 +116,7 @@ The following custom field types are supported in eligibility processing:
 - Decimal  
 - Checkbox  
 
-Custom field eligibility form field information:
+The following table shows custom field eligibility form field information.
 
 | Field  | Description |
 |--------|-------------|
@@ -131,29 +131,30 @@ Custom field eligibility form field information:
 The following sections describe how benefits eligibility is processed.
 
 ### Rules assigned to a plan 
-When multiple eligibility rules are assigned to a benefit plan, an employee must meet at least one rule to be eligible to enroll in the benefit plan.  In the example below, the employee must either meet the requirements of the **Job type** rule or the **Active employees** rule.
+When multiple eligibility rules are assigned to a benefit plan, an employee must meet at least one rule to be eligible to enroll in the benefit plan.  In the following example , the employee must either meet the requirements of the **Job type** rule or the **Active employees** rule.
 
 ![The employee must either meet the requirements of the Job type rule or the Active employees rule.](media/RulesAssignedToAPlan.png)
  
 ### Criteria within an eligibility rule 
-Within a rule you define the criteria that makes up the rule.  In our example above, the criteria for the **Job type** rule is where Job Type = Directors.  Therefore, the employee must be a director to be eligible.  This is a rule where there is only one criteria within the rule.
+Within a rule you define the criteria that makes up the rule. In the example above, the criteria for the **Job type** rule is where Job Type = Directors. Therefore, the employee must be a director to be eligible. This is a rule where there is only one criterion within the rule.
 
-However, you can define rules that have multiple criteria.  When you define multiple criteria within an eligibility rule, an employee must meet every criteria within the rule to be eligible for the benefit plan. 
+You can define rules that have multiple criteria. When you define multiple criteria within an eligibility rule, an employee must meet every criterion within the rule to be eligible for the benefit plan. 
 
-For example:  The **Active employees** rule above is made up of the criteria below.  In order for the employee to be eligible based on the **Active employees** rule, the employee must be employed in legal entity USMF *and* have a position type of Full-time.  
+For examplem, the **Active employees** rule above is made up of the following criteria. In order for the employee to be eligible based on the **Active employees** rule, the employee must be employed in legal entity USMF *and* have a position type of full-time.  
 
 ![Criteria within an eligibility rule](media/CriteriaWithinAnEligibilityRule.png) 
  
 ### Multiple conditions within criteria
 
-Rules can be further expanded to use multiple conditions within a single criteria. The employee must meet at least one condition to be eligible. To build on the example above, the **Active employees** rule can be further expanded to include employees that are also part-time employees.  Therefore, now the employee must be an employee in USMF *and* either a full-time or a part-time employee.  
+Rules can be further expanded to use multiple conditions within a single criterion. The employee must meet at least one condition to be eligible. To build on the example above, the **Active employees** rule can be further expanded to include employees that are also part-time employees. As a result, now the employee must be an employee in USMF *and* either a full-time or a part-time employee.  
 
 ![Multiple conditons within criteria](media/MultipleConditionsWithinCriteria.png) 
  
 ### Eligibility conditions within a custom field criterion 
-Similar to above, custom fields can be used when creating eligibility rules and work in the same manner. For example, I would like to offer internet reimbursement to the Fargo and Copenhagen employees who are working from home, as the internet costs are higher in those locations.  I have created two custom fields:  **Office location** (picklist) and **Working from home** (checkbox).  I have created a rule called **WFH Employees**.  The criterion for the rule is where **Office Location = Fargo** or **Copenhagen** *and*  where **Working from home = Yes**.
+Similar to above, custom fields can be used when creating eligibility rules and work in the same manner. For example, you may want to offer internet reimbursement to the Fargo and Copenhagen employees who are working from home, as the internet costs are higher in those locations. To do this, create two custom fields: **Office location** (picklist) and **Working from home** (check box). Then create a rule called **WFH Employees**. The criterion for the rule is where **Office Location = Fargo** or **Copenhagen** *and*  where **Working from home = Yes**.
 
-Therefore, the custom eligibility rules would need to be set up as indicated below: 
+Th
+e custom eligibility rules would need to be set up as indicated in the following image. 
 
 ![Eligibility conditions within a cusom field criterion](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
@@ -169,7 +170,7 @@ Bundles are a set of related benefit plans. You can use benefits bundles to grou
 
 2. In the **Bundles** tab, select **New** to create a bundle. To see plans that are associated with a bundle, select **Attached plans**.
 
-3. Specify values for the following fields:
+3. Specify values for the following fields.
 
    | Field | Description |
    | --- | --- |
@@ -189,7 +190,7 @@ Periods define when benefits are in effect and when employees are allowed to enr
 
 2. In the **Periods** tab, select **New** to create a period. To run a process that attaches all valid active benefit plans to the benefit period, select **Attach plans**. To see plans that are associated with a bundle, select **Attached plans**. 
 
-3. Specify values for the following fields:
+3. Specify values for the following fields.
 
    | Field | Description |
    | --- | --- |
@@ -211,7 +212,7 @@ You can use flex credit programs to enroll employees in benefits according to a 
 
 2. In the **Periods** tab, select **Flex credit programs**.
 
-3. Select a flex credit program to apply. The fields contain the following information:
+3. Select a flex credit program to apply. The fields contain the following information.
 
    | Field | Description |
    | --- | --- |
@@ -233,7 +234,7 @@ Programs are a set of benefit plans that share a common set of eligibility rules
 
 2. In the **Programs** tab, select **New** to create a program. To make exceptions for employees who don't meet the eligibility rule requirements, select **Eligibility rule override**. To see plans that are associated with a program, select **Attached plans**.
 
-3. Specify values for the following fields:
+3. Specify values for the following fields.
 
    | Field | Description |
    | --- | --- |
