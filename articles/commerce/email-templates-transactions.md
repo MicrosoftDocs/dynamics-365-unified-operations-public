@@ -109,7 +109,7 @@ The following placeholders retrieve and show data that is defined at the sales o
 | pickupchannelid      | The channel ID of the store specified for a pick up mode of delivery.* |
 | packingslipid        | The ID of the packing slip generated when lines in an order are packed.* |
 
-* These placeholders only return data when used in the Order ready for pickup notifcation type. 
+\* These placeholders only return data when used in the Order ready for pickup notifcation type. 
 
 ### Order line placeholders (sales line level)
 
