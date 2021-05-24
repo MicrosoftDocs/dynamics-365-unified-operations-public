@@ -73,7 +73,7 @@ The following steps describe the process for creating a custom field and placing
 
 After you have created a custom field and exposed it on a page, you might want to provide this updated page view that includes the new field to other users in the system. This can be accomplished in two different ways using the personalization capabilities of the product:
 
-- The recommended route is to **publish a [saved view](saved-views.md)** with the custom field added to the page to the appropriate set of users. If the Saved views feature is not enabled, the system administrator can apply the personalization the desired users from the Personalization form. See [Personalize the user experience](personalize-user-experience.md) for more details.
+- The recommended route is to **publish a [saved view](saved-views.md)** with the custom field added to the page to the appropriate set of users. If the saved views feature is not enabled, the system administrator can apply the personalization to the desired users from the Personalization form. See [Personalize the user experience](personalize-user-experience.md) for more details.
 - Alternatively, you can export your changes (called *personalizations*), send them to one or more users, and have each of those users import your changes. The **Manage** option on the personalization toolbar enables you to export and import personalizations.
 
 ## Managing custom fields
