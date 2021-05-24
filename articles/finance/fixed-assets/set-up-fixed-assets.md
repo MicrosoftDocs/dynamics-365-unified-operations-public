@@ -3,8 +3,8 @@
 
 title: Set up fixed assets
 description: This topic provides an overview of the setup of the Fixed assets module.
-author: ShylaThompson
-ms.date: 01/12/2018
+author: moaamer
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -53,7 +53,13 @@ After you set up depreciation profiles, you must create the required books for y
 
 A primary depreciation profile is assigned to every book. Books also have an alternative or switchover depreciation profile, if this type of profile is applicable. To automatically include the fixed asset book in depreciation runs, you must enable the **Calculate depreciation** option. If this option isn't enabled for an asset, the depreciation proposal skips the asset.
 
-You can also set up derived books. The specified derived transactions are posted against the derived books as an exact copy of the primary transaction. Therefore, derived transactions are typically set up for acquisitions and disposals, not for depreciation transactions. For more information, see [Set up value models](tasks/set-up-value-models.md).
+You can also set up derived books. The specified derived transactions are posted against the derived books as an exact copy of the primary transaction. Therefore, derived transactions are typi cally set up for acquisitions and disposals, not for depreciation transactions. For more information, see [Set up value models](tasks/set-up-value-models.md).
+
+## Lock asset books in a depreciation journal
+
+When depreciation transactions are posted, the system will verify that the same asset book hasn’t been added to more than one depreciation journal. If it has, that asset book will be locked and posting will stop. If an asset book ID is in a locked journal, it will be unlocked automatically when posting is complete for the original journal. You can also unlock the journal manually. 
+
+An option on the Fixed assets parameters page lets you turn the locking functionality on or off, it’s been enabled it in the **Feature management workspace**.
 
 ## Fixed asset posting profiles
 
