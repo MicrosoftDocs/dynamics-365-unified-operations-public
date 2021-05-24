@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Link X++ modules from ISV packages by using ISV Studio
 
-Independent software vendors (ISVs) can link their X++ modules to their registered products and solutions by using [Microsoft Power Platform ISV Studio](https://docs.microsoft.com/powerapps/developer/data-platform/isv-app-management). Linking enables ISV's to monitor the success and usage of their applications in Finance and Operations apps.
+Independent software vendors (ISVs) can link their X++ modules to their registered products and solutions by using [Microsoft Power Platform ISV Studio](/powerapps/developer/data-platform/isv-app-management). Linking enables ISV's to monitor the success and usage of their applications in Finance and Operations apps.
 
 > [!NOTE]
 > For the link from X++ into ISV Studio to work correctly, customers need to have deployed ISV packages with the correct solution ID in all the ISV models. The customer's environment also has to be version 10.0.16 or higher.
@@ -26,7 +26,7 @@ Independent software vendors (ISVs) can link their X++ modules to their register
 Sign in to Partner Center and open the **Offer overview** page for your product. From the browser's URL bar, locate the product ID globally unique identifier (GUID), as shown in the following example.
 
 ```HTTP
-https://partner.microsoft.com/en-us/dashboard/commercial-marketplace/offers/<product-ID-GUID>/overview
+https://partner.microsoft.com/dashboard/commercial-marketplace/offers/<product-ID-GUID>/overview
 ```
 
 > [!NOTE]
