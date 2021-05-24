@@ -24,8 +24,8 @@ This topic explains how to enable dual-write from Lifecycle Services (LCS).
 
 You must complete the Power Platform integration as described in these topics:
 
-+ [Power Platform Integration - Enable during environment deployment](../../power-platform/overview.md#Enable-during-enviornment-deployment)
-+ [Power Platform integration - Set up after environment deployment](../../power-platform/overview.md#Set-up-after-environment-deployment)
++ [Power Platform Integration - Enable during environment deployment](../../power-platform/overview.md#enable-during-enviornment-deployment)
++ [Power Platform integration - Set up after environment deployment](../../power-platform/overview.md#set-up-after-environment-deployment)
 
 ## Set up dual-write application for new Dataverse environments
 
@@ -41,7 +41,7 @@ Follow these steps to set up dual-write from LCS **Environment Details** page:
 
 4. Select **Ok** to continue.
 
-5. You can monitor the progress by refreshing the environment details page periodicially.  Setup typically takes 30 minutes or less.  
+5. You can monitor the progress by refreshing the environment details page periodically. Setup typically takes 30 minutes or less.  
 
 6. When the setup is complete, a message will tell you if the set was successful or if there was a failure. If the setup failed, then a related error message is displayed. You must fix any errors before moving to the next step.
 
@@ -49,7 +49,7 @@ Follow these steps to set up dual-write from LCS **Environment Details** page:
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link to Power Platform environment":::
 
-8. When the linking is finished, a hyperlink is displayed. Use the link to sign on to the dual-write administration area in the Finance and Operations environment. From there you can setup entity mappings.
+8. When the linking is finished, a hyperlink is displayed. Use the link to sign on to the dual-write administration area in the Finance and Operations environment. From there, you can set up entity mappings.
 
 ## Set up dual-write for an existing Dataverse environment
 
