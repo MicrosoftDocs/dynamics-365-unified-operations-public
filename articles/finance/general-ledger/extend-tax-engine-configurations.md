@@ -4,7 +4,7 @@
 title: Extend tax engine configurations
 description: This topic provides information about extending tax engine configurations.
 author: yijialuan
-ms.date: 10/15/2018
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -504,24 +504,29 @@ After the status is updated to **Complete**, the configuration is ready for depl
 5.  Select **Country/Region of Origin** as the lookup column, and then click the right arrow button.
 6.  Click **Save**.
 
-### Rebase extension configuration to latest Microsoft configuration
+### Rebase the extension configuration to the latest Microsoft configuration
 
-1. Go to Extension configuration, and then click **rebase** 
+1. Go to **Extension configuration**, and then select **Rebase**. 
+2. In the **Rebase** dialog box, in the **Target version** field, change the target version to latest Microsoft version.
 
-2. Change the target version to latest Microsoft version [![rebase step 1](./media/extend-tax-engine-configurations-rebase1.png)](./media/extend-tax-engine-configurations-rebase1.png)
+	[![rebase step 1](./media/extend-tax-engine-configurations-rebase1.png)](./media/extend-tax-engine-configurations-rebase1.png)
 
-3. If there is any rebase conflict, you will see the warning message [![rebase step 2](./media/extend-tax-engine-configurations-rebase2.png)](./media/extend-tax-engine-configurations-rebase2.png)
+	If there is a conflict, you will receive a warning message.
+	
+	[![rebase step 2](./media/extend-tax-engine-configurations-rebase2.png)](./media/extend-tax-engine-configurations-rebase2.png)
 
-4. In order to resolve the rebase conflict, you need to click **Designer** to open the rebased extension configuration [![rebase step 3](./media/extend-tax-engine-configurations-rebase3.png)](./media/extend-tax-engine-configurations-rebase3.png)
+3. To resolve the conflict, select **Designer** to open the rebased extension configuration.
 
-5. Check the conflict details, and resolve.
+	[![rebase step 3](./media/extend-tax-engine-configurations-rebase3.png)](./media/extend-tax-engine-configurations-rebase3.png)
 
-6. You have 3 ways to resolve the conflict, and you need to select one of it to resolve the conflict
+4. Select one of the followign three ways to resolve the conflict:
 
-7. 1. **Apply previous base value** will apply the original value from base configuration at the first time you create the configuration
-   2. **Apply base value** will apply the current value from the target base configuration
-   3. **Retain own value** will apply the value from extension configuration
+	- **Apply previous base value**: Apply the original value from the base configuration the first time you create the configuration.
+	- **Apply base value**: Apply the current value from the target base configuration.
+	- **Retain own value**: Apply the value from extension configuration.
 
-8. After you resolve the conflict, you will see the **Resolved** checkbox is checked  [![rebase step 4](./media/extend-tax-engine-configurations-rebase4.png)](./media/extend-tax-engine-configurations-rebase4.png)
+5. After you resolve the conflict, the **Resolved** checkbox is marked.
+
+	[![rebase step 4](./media/extend-tax-engine-configurations-rebase4.png)](./media/extend-tax-engine-configurations-rebase4.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
