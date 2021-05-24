@@ -35,8 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In this tutorial, you will use and build Office integration experiences that involve Excel, Word, document management, and email. 
 
-Overview
---------
+## Overview
 
 In this tutorial, you will use and build Microsoft Office integration experiences that involve Microsoft Excel, Microsoft Word, the document management capabilities of Finance and Operations apps, and email. You will see how Excel and Word use data entities as an entry point into the system, how Excel can become a core part of the user experience, and how Excel and Word can be used for ad-hoc lightweight reporting. You will also see how files can be stored and shared by using the document management and email capabilities.
 
@@ -454,12 +453,10 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 
 
 
-Additional resources
---------
+## Additional resources
 
-[Office integration overview](office-integration.md)
-
-[Troubleshoot the Office integration](office-integration-troubleshooting.md)
+- [Office integration overview](office-integration.md)
+- [Troubleshoot the Office integration](office-integration-troubleshooting.md)
 
 
 
