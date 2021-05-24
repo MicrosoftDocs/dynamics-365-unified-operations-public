@@ -66,14 +66,14 @@ The following steps describe the process for creating a custom field and placing
 11. **Optional:** Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region. See [Personalize the user experience](personalize-user-experience.md) for more information about how to use the various personalization capabilities to optimize a form for your personal usage.
 
 > [!WARNING]
-> The ability to enter values in a custom field added to a page is dependent on whether the table associated with the custom field is editable or read-only. Whenever the assocaited table is read-only, all fields linked to that table, including any custom fields, will also be read-only.
+> The ability to enter values in a custom field added to a page is dependent on whether the table associated with the custom field is editable or read only. When the assocaited table is read only, all fields linked to that table, including any custom fields, will also be read only.
 
 
 ## Sharing custom fields with other users
 
 After you have created a custom field and exposed it on a page, you might want to provide this updated page view that includes the new field to other users in the system. This can be accomplished in two different ways using the personalization capabilities of the product:
 
-- The recommended route is to **publish a [saved view](saved-views.md)** with the custom field added to the page to the appropriate set of users. If the saved views feature is not enabled, the system administrator can apply the personalization to the desired users from the Personalization form. See [Personalize the user experience](personalize-user-experience.md) for more details.
+- The recommended route is to **publish a [saved view](saved-views.md)** with the custom field added to the page to the appropriate set of users. If the saved views feature is not enabled, the system administrator can apply the personalization to the desired users from the Personalization form. For more information, see [Personalize the user experience](personalize-user-experience.md).
 - Alternatively, you can export your changes (called *personalizations*), send them to one or more users, and have each of those users import your changes. The **Manage** option on the personalization toolbar enables you to export and import personalizations.
 
 ## Managing custom fields
@@ -146,7 +146,7 @@ In some rare cases, you may decide that a custom field is no longer needed. When
 
 ### Why can't I enter a value in my custom field? 
 
-If you can't type a value into the custom field when the page is in Edit mode, that typically is because the table the field was added to is currently read-only. All fields in a table become read-only if the backing table is currently configured as read-only on the page.   
+If you can't type a value into the custom field when the page is in Edit mode, this may be because the table that the field was added to is currently read only. All fields in a table become read only if the backing table is currently configured as read only on the page.   
 
 ### Who can create custom fields?
 
