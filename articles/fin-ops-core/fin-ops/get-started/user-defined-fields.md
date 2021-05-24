@@ -144,9 +144,9 @@ In some rare cases, you may decide that a custom field is no longer needed. When
 
 ## Appendix
 
-### Why can I not enter a value in my custom field? 
+### Why can't I enter a value in my custom field? 
 
-If you cannot type a value into the custom field when the page is in Edit mode, that typically is because the table the field was added to is currently read-only. All fields in a table become read-only if the backing table is currently configured as read-only on the page.   
+If you can't type a value into the custom field when the page is in Edit mode, that typically is because the table the field was added to is currently read-only. All fields in a table become read-only if the backing table is currently configured as read-only on the page.   
 
 ### Who can create custom fields?
 
