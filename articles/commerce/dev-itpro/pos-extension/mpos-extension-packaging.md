@@ -58,13 +58,13 @@ To create the extension installer for a Modern POS extension, follow these steps
 8. To manually install the extension, open PowerShell in administrator mode and navigate to the extension installer folder. Run the install command to install the extensions.
 
     ```powershell
-    PS C:\ModernPos.Installer\bin\Debug\net461> .\**ModernPos.Installer.exe install**
+    PS C:\ModernPos.Installer\bin\Debug\net461> .\ModernPos.Installer.exe install
     ```
 
     To uninstall the extension:
 
     ```powershell
-    PS C:\ModernPos.Installer\bin\Debug\net461> .\**ModernPos.Installer.exe** uninstall
+    PS C:\ModernPos.Installer\bin\Debug\net461> .\ModernPos.Installer.exe uninstall
     ```
 
     > [!NOTE]
