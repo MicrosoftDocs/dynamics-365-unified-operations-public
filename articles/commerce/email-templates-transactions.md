@@ -117,10 +117,10 @@ The following placeholders retrieve and show data for individual products (lines
 
 | Placeholder name               | Placeholder value |
 |--------------------------------|-------------------|
-| productid                      | The product ID for the line. Deprecated in favor of lineproductrecid. |
-| lineproductrecid               | The product ID for the line. |
-| lineitemid                     | The human-readable product ID. Can be used to look up a product image. |
-| lineproductvariantid           | The human-readable ID for the product variant. |
+| productid                      | The ID for the product, accounting for variant. Deprecated in favor of lineproductrecid. |
+| lineproductrecid               | The ID for the product, accounting for variant. The product rec ID uniquely identifies an item at the variant level. |
+| lineitemid                     | The product-level ID for the product (does not account for variant). |
+| lineproductvariantid           | The ID for the product variant. |
 | lineproductname                | The name of the product. |
 | lineproductdescription         | The description of the product. |
 | linequantity                   | The number of units that were ordered for the line, plus the unit of measure (for example, **ea**, or **pair**). |
