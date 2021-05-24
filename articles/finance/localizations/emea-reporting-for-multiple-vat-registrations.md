@@ -1,4 +1,33 @@
-﻿# Reporting for multiple VAT registrations (Preview)
+---
+# required metadata
+
+title: Reporting for multiple VAT registrations (Preview)
+description: This topic provides information about reporting for multiple value-added tax (VAT) registrations.
+author: anasyash
+ms.date: 05/24/2021
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.tgt_pltfrm: 
+ms.custom: 261354
+ms.search.region: 
+# ms.search.industry: 
+ms.author: anasyash
+ms.search.validFrom: 
+ms.dyn365.ops.version: 
+
+---
+
+# Reporting for multiple VAT registrations (Preview)
+
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to do reporting for multiple value-added tax (VAT) registrations.
 
@@ -6,21 +35,17 @@ This topic explains how to do reporting for multiple value-added tax (VAT) regis
 
 Before you can do the reporting for multiple VAT registrations, the following prerequisites must be completed:
 
-1.  Enable the Tax Calculation service.
-
-2.  Configure the Tax Calculation service.
-
-3.  Enable additional tax ID features.
-
-4.  Set up the **Multiple VAT registrations** feature.
+1. Enable the Tax Calculation service.
+2. Configure the Tax Calculation service.
+3. Enable additional tax ID features.
+4. Set up the **Multiple VAT registrations** feature.
 
 ### Enable the Tax Calculation service
 
-1.  Go to **Tax &gt; Setup &gt; Tax configuration &gt; Tax service setup (Preview)**.
+1. Go to **Tax** > **Setup** > Tax configuration** > **Tax service setup (Preview)**.
+2. On the **General** tab, set the **Enable tax service** option to **Yes**.
 
-2.  On the **General** tab, set the **Enable tax service** option to **Yes**.
-
-![tax service parameters](media/Multipleid-image1.png)
+    ![tax service parameters](media/Multipleid-image1.png)
 
 ### Configure the Tax Calculation service
 
@@ -28,43 +53,38 @@ For information about how to configure the Tax Calculation service, see [Tax Cal
 
 ### Enable features in the feature management
 
-1.  Go to **Workspaces &gt; Feature management**.
+1. Go to **Workspaces** > **Feature management**.
+2. In the feature list, select and enable the following features:
 
-2.  In the feature list, select and enable the following features:
+    - Support multiple VAT registration numbers
+    - EU sales list transfer based on tax transactions only
 
--   Support multiple VAT registration numbers
-
--   EU sales list transfer based on tax transactions only
-
-**Note:** If you transfer between warehouses in different countries that have a tax registration, you must also enable the **Tax in transfer order** feature and configure the Tax Calculation service for tax in transfer orders. For more information, see [Tax feature support for transfer orders](https://docs.microsoft.com/dynamics365/finance/localizations/tasks/tax-feature-support-for-transfer-order?toc=/dynamics365/finance/toc.json).
+> [!NOTE]
+> If you transfer between warehouses in different countries that have a tax registration, you must also enable the **Tax in transfer order** feature and configure the Tax Calculation service for tax in transfer orders. For more information, see [Tax feature support for transfer orders](tasks/tax-feature-support-for-transfer-order.md).
 
 ### Set up the Multiple VAT registrations feature
 
-For information about how to set up the **Multiple VAT registrations** feature, see [Multiple VAT registration numbers](https://docs.microsoft.com/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers?toc=/dynamics365/finance/toc.json).
+For information about how to set up the **Multiple VAT registrations** feature, see [Multiple VAT registration numbers (emea-multiple-vat-registration-numbers.md).
 
 ## Enable features
 
 In the **Feature management** workspace, enable the following features:
 
--   Intrastat reporting by Multiple Tax ID
-
--   EU Sales list reporting by Multiple Tax ID
-
--   Sales tax declaration by Multiple Tax ID
+   - Intrastat reporting by Multiple Tax ID
+   - EU Sales list reporting by Multiple Tax ID
+   - Sales tax declaration by Multiple Tax ID
 
 ## Set up intra-community reporting for multiple VAT registrations
 
 ### Set up country/region properties
 
-1.  Go to **Tax &gt; Set up &gt; Foreign trade &gt; Foreign trade parameters**.
+1. Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
+2. On the **Country/region properties** tab, set up the following country types: **EU**, **EFTA**, or **Third country/region**.
 
-2.  On the **Country/region properties** tab, set up the following country types: **EU**, **EFTA**, or **Third country/region**.
+    The following information applies to documents about movements of goods between European Union (EU) countries, except movements within the same country (for example from Belgium to Belgium):
 
-The following information applies to documents about movements of goods between European Union (EU) countries, except movements within the same country (for example from Belgium to Belgium):
-
--   By default, the list code is **EU trade**, and it's transferred to the EU sales list.
-
--   Documents are transferred to Intrastat.
+      - By default, the list code is **EU trade**, and it's transferred to the EU sales list.
+      - Documents are transferred to Intrastat.
 
 ### Set up Intrastat
 
@@ -72,51 +92,43 @@ The following information applies to documents about movements of goods between 
 
 All tax registrations have the same settings for Intrastat parameters.
 
-1.  Go to **Tax &gt; Set up &gt; Foreign trade &gt; Foreign trade parameters**.
-
+1.  Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
 2.  On the **Intrastat** tab, set up the parameters on the following FastTabs:
 
--   Default transaction codes
+    - Default transaction codes
+    - Minimum limit
+    - Transfer
+    - Check setup
+    - Rounding rules
+    - Commodity code hierarchy
 
--   Minimum limit
+    ![Foreign trade parameters1](media/Multipleid-image2.png)
 
--   Transfer
-
--   Check setup
-
--   Rounding rules
-
--   Commodity code hierarchy
-
-![Foreign trade parameters1](media/Multipleid-image2.png)
-
-For more information about how to configure Intrastat, see [Intrastat overview](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat).
+For more information about how to configure Intrastat, see [Intrastat overview](emea-intrastat.md).
 
 #### Set up Intrastat reporting formats
 
-1.  Go to **Tax &gt; Set up &gt; Foreign trade &gt; Foreign trade parameters**.
+1. Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
+2. On the **Intrastat** tab, on the **Electronic reporting for countries/regions** FastTab, select the Intrastat reporting format for each country of your tax registration.
+3. In the **File format mapping** field, select the Electronic reporting (ER) format for intrastat file export, for example, select **Intrastat (NL)** for Netherlands.
+4. In the **Report format mapping** field, select the ER format for printable report layout, for example, select **Intrastat report**.
 
-2.  On the **Intrastat** tab, on the **Electronic reporting for countries/regions** FastTab, select the Intrastat reporting format for each country of your tax registration.
+    ![foreign trade parameters2](media/Multipleid-image3.png)
 
-3.  In the **File format mapping** field, select the Electronic reporting (ER) format for intrastat file export, for example, select **Intrastat (NL)** for Netherlands.
+    > [!NOTE]
+    > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
 
-4.  In the **Report format mapping** field, select the ER format for printable report layout, for example, select **Intrastat report**.
+    The following table shows the earliest ER format versions that you can select the format for.
 
-![foreign trade parameters2](media/Multipleid-image3.png)
-
-**Note:** You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
-
-The following table shows the earliest ER format versions that you can select the format for.
-
-| **Release** | **Country** | **ER format** |
-|-------------------------|-------------------------|-------------------------|
-| 10.0.19 | All | Intrastat model.version.16 |
-| 10.0.19 | NL | Intrastat (NL).version.1.3 |
-| 10.0.20 | FR | Intrastat INTRACOM (FR).version.13.5</br>Intrastat SAISUNIC (FR).version.1.3 |
-| 10.0.20 | UK (NI) | Intrastat (UK).version.1.2 |
+    | **Release** | **Country** | **ER format** |
+    |-------------------------|-------------------------|-------------------------|
+    | 10.0.19 | All | Intrastat model.version.16 |
+    | 10.0.19 | NL | Intrastat (NL).version.1.3 |
+    | 10.0.20 | FR | Intrastat INTRACOM (FR).version.13.5</br>Intrastat SAISUNIC (FR).version.1.3 |
+    | 10.0.20 | UK (NI) | Intrastat (UK).version.1.2 |
 
 
-For more information, see [Download ER configurations from the Global repository of Configuration service](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?toc=/dynamics365/finance/toc.json).
+For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 #### Set up transaction codes
 
@@ -128,228 +140,200 @@ Some countries, such as Belgium, Italy, and Austria, use a one-digit transaction
 
 Before you configure settings and start to use the Intrastat feature, analyze country transaction codes, and decide how to set up the transaction codes for countries.
 
-1.  Go to **Tax &gt; Set up &gt; Foreign trade &gt; Transaction codes**.
+1. Go to **Tax** > **Set up** > **Foreign trade** > **Transaction codes**.
+2. Create the required transaction codes.
 
-2.  Create the required transaction codes.
-
-![transaction codes](media/Multipleid-image4.png)
+    ![transaction codes](media/Multipleid-image4.png)
 
 For each transaction code that you create, you must set up the rules that are used to calculate invoice amounts and statistical amounts for transfer orders, and for sales orders and purchase orders.
 
--   For transfer orders, set up one of the following rules:
+- For transfer orders, set up one of the following rules:
 
     - **Empty:** The amount will be 0 (zero).
-
     - **Financial cost amount:** The amount will equal the financial cost.
-
     - **Total cost:** The amount will equal the total cost of the transaction.
 
     - **Manual:** The amount will equal the amount that is specified in the **Invoiced amount** and **Statistical value** fields on the transfer order line. These values are taken from the **Amount** field on the transfer order line.
 
-![transfer order](media/Multipleid-image5.png)
+    ![transfer order](media/Multipleid-image5.png)
 
 -   For sales orders and purchase orders, set up one of the following rules:
 
     - **Empty:** The amount will be 0 (zero).
-
     - **Invoice amount:** The amount will equal the amount that is invoiced for the commodity.
-
     - **Base amount:** The amount will equal the invoice amount that would be invoiced before any discount is applied.
 
 #### Set up Intrastat compression rules
 
 All tax registrations have the same setup for compression rules.
 
-1.  Go to **Tax &gt; Setup &gt; Foreign trade &gt; Compression of Intrastat**.
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**.
+2. Select the values to use in the **Compression** function. Select all the values that are reported in any of the countries where you have tax registrations. For example, in 2021, the following values should be reported in some countries.
 
-2.  Select the values to use in the **Compression** function. Select all the values that are reported in any of the countries where you have tax registrations. For example, in 2021, the following values should be reported in some countries.
-
-| **Value** | **Belgium** | **Netherlands** | **Northern Ireland (United Kingdom)** | **France** |
-|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
-| **Mandatory elements** |  |  |  |  |
-| Direction (Flow) | Yes | Yes | Yes | Yes |
-| Commodity code | Yes | Yes | Yes | Yes |
-| Partner Member State | Yes | Yes | Yes | Yes |
-| Transaction code | Yes | Yes | Yes | Yes |
-| VAT number of partner (Tax exempt number)</br><em>Mandatory on dispatches from 2022 for all EU countries</em> | Yes | Yes | No | Yes |
-| **Optional elements** |  |  |  |  |
-| Country of origin</br><em>(On dispatch and/or on arrival)</em> <em>Mandatory on dispatches from 2022 for all EU countries</em> | Yes | Yes | No | Yes |
-| Delivery terms | Yes | No | Yes | No |
-| Mode of transport | Yes | No | No | Yes |
-| State of origin, County of origin (Region of origin) | Yes | No | No | Yes |
-| Statistics procedure | No | Yes | No | Yes |
-| **Additional elements for country purposes** |  |  |  |  |
-| Transport document (Invoice, Identification of packing slip or product receipt) | No | Yes | No | No |
+    | **Value** | **Belgium** | **Netherlands** | **Northern Ireland (United Kingdom)** | **France** |
+    |-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
+    | **Mandatory elements** |  |  |  |  |
+    | Direction (Flow) | Yes | Yes | Yes | Yes |
+    | Commodity code | Yes | Yes | Yes | Yes |
+    | Partner Member State | Yes | Yes | Yes | Yes |
+    | Transaction code | Yes | Yes | Yes | Yes |
+    | VAT number of partner (Tax exempt number)</br><em>Mandatory on dispatches from 2022 for all EU countries</em> | Yes | Yes | No | Yes |
+    | **Optional elements** |  |  |  |  |
+    | Country of origin</br><em>(On dispatch and/or on arrival)</em> <em>Mandatory on dispatches from 2022 for all EU countries</em> | Yes | Yes | No | Yes |
+    | Delivery terms | Yes | No | Yes | No |
+    | Mode of transport | Yes | No | No | Yes |
+    | State of origin, County of origin (Region of origin) | Yes | No | No | Yes |
+    | Statistics procedure | No | Yes | No | Yes |
+    | **Additional elements for country purposes** |  |  |  |  |
+    | Transport document (Invoice, Identification of packing slip or product receipt) | No | Yes | No | No |
 
 
-**Note:** Select all values that must be reported on the **Compression of Intrastat** page.
+> [!NOTE]
+> Select all values that must be reported on the **Compression of Intrastat** page.
 
 ### Set up the EU sales list
 
 #### Set up sales tax codes
 
-1.  Go to **Tax &gt; Sales tax &gt; Sales tax codes**.
+1. Go to **Tax** > **Sales tax** > **Sales tax codes**.
+2. Create unique sales tax codes for each of your tax registrations.
+3. On the **Report setup** FastTab, in the **EU sales list** section, set the **Excluded** option to **Yes** if tax transactions that have a selected sales tax code should **not** be transferred to the EU sales list.
+4. In the **Country/region type** section, in the **Country/region type** field, define the tax transaction type for VAT reporting: **EU**, **Domestic**, or **Third country**.
 
-2.  Create unique sales tax codes for each of your tax registrations.
+    This setting is mandatory in some countries, such as the United Kingdom.
 
-3.  On the **Report setup** FastTab, in the **EU sales list** section, set the **Excluded** option to **Yes** if tax transactions that have a selected sales tax code should **not** be transferred to the EU sales list.
-
-4.  In the **Country/region type** section, in the **Country/region type** field, define the tax transaction type for VAT reporting: **EU**, **Domestic**, or **Third country**.
-
-This setting is mandatory in some countries, such as the United Kingdom.
-
-![sales tax code](media/Multipleid-image6.png)
+    ![sales tax code](media/Multipleid-image6.png)
 
 #### Set up item sales tax groups
 
-1.  Go to **Tax &gt; Sales tax &gt; Item sales tax groups**.
-
-2.  In the **Reporting type** field, select the reporting type for EU sales list reporting: **Item**, **Service**, or **Investment** (for Belgium).
+1. Go to **Tax** > **Sales tax** > **Item sales tax groups**.
+2. In the **Reporting type** field, select the reporting type for EU sales list reporting: **Item**, **Service**, or **Investment** (for Belgium).
 
 #### Set up EU sales list parameters
 
 All tax registrations have the same settings for EU sales list parameters.
 
-1.  Go to **Tax &gt; Setup &gt; Foreign trade &gt; Foreign trade parameters**.
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
+2. On the **EU sales list** tab, set up the parameters on the **Transfer** and **Rounding rules** FastTabs.
 
-2.  On the **EU sales list** tab, set up the parameters on the **Transfer** and **Rounding rules** FastTabs.
-
-**Note:** If one of your tax registrations is in Poland or Hungary (countries that report purchases in addition to sales), set the **Transfer purchases** option to **Yes**.
+> [!NOTE]
+> If one of your tax registrations is in Poland or Hungary (countries that report purchases in addition to sales), set the **Transfer purchases** option to **Yes**.
 
 #### Set up EU sales list reporting formats
 
-1.  Go to **Tax &gt; Set up &gt; Foreign trade &gt; Foreign trade parameters**.
+1. Go to **Tax > **Set up** > **Foreign trade** > **Foreign trade parameters**.
+2. On the **EU sales list** tab, on the **Electronic reporting for countries/regions** FastTab, select EU sales list reporting formats for each country of your tax registration.
+3. In the **File format mapping** field, select the ER format for EU sales list report electronic format. For example, for Netherlands, select **EU Sales list (NL)**.
+4. In the **Report format mapping** field, select the ER format for printable report layout. For example, select either **EU sales list by rows report**, or **EU sales list by columns report**.
 
-2.  On the **EU sales list** tab, on the **Electronic reporting for countries/regions** FastTab, select EU sales list reporting formats for each country of your tax registration.
+    ![foreign trade parameters 3](media/Multipleid-image7.png)
 
-3.  In the **File format mapping** field, select the ER format for EU sales list report electronic format. For example, for Netherlands, select **EU Sales list (NL)**.
+    > [!NOTE]
+    > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
 
-4.  In the **Report format mapping** field, select the ER format for printable report layout. For example, select either **EU sales list by rows report**, or **EU sales list by columns report**.
+    The following table shows the earliest ER format versions that you can select the format for.
 
-![foreign trade parameters 3](media/Multipleid-image7.png)
-
-**Note**: You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
-
-The following table shows the earliest ER format versions that you can select the format for.
-
-| **Release** | **Country** | **ER format** |
-|-------------------------|-------------------------|-------------------------|
-| 10.0.19 | All | EU Sales list model.version.9 |
-| 10.0.19 | NL | EU Sales list (NL).version.1.10 |
-| 10.0.20 | FR | EU Sales list (FR).version.1.2 |
-| 10.0.20 | UK (NI) | EU Sales list XML (UK).version.9.6</br>EU Sales list TXT (UK).version.9.7 |
+    | **Release** | **Country** | **ER format** |
+    |-------------------------|-------------------------|-------------------------|
+    | 10.0.19 | All | EU Sales list model.version.9 |
+    | 10.0.19 | NL | EU Sales list (NL).version.1.10 |
+    | 10.0.20 | FR | EU Sales list (FR).version.1.2 |
+    | 10.0.20 | UK (NI) | EU Sales list XML (UK).version.9.6</br>EU Sales list TXT (UK).version.9.7 |
 
 
 ## Generate intra-community reporting for multiple VAT registrations
 
 ### Transfer and report Intrastat
 
-1.  Go to **Tax &gt; Declarations &gt; Foreign trade &gt; Intrastat**.
+1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
+2. Select **Transfer**.
+3. In the **Tax registration number** dialog box, select the tax registration number to transfer transactions for, and then select **OK**.
 
-2.  Select **Transfer**.
+    ![transfer intrastat](media/Multipleid-image8.png)
 
-3.  In the **Tax registration number** dialog box, select the tax registration number to transfer transactions for, and then select **OK**.
+4. In the **Intrastat (Transfer)** dialog box, select the documents to transfer: **Free text invoice**, **Customer invoice**, **Customer packing slips**, **Vendor invoice**, **Vendor product receipts**, **Project invoice**, or **Transfer order**. Then and select **OK**.
 
-![transfer intrastat](media/Multipleid-image8.png)
+    ![Intrastat  Transfer  dialog box](media/Multipleid-image9.png)
 
-4.  In the **Intrastat (Transfer)** dialog box, select the documents to transfer: **Free text invoice**, **Customer invoice**, **Customer packing slips**, **Vendor invoice**, **Vendor product receipts**, **Project invoice**, or **Transfer order**. Then and select **OK**.
+5. Transactions for the selected tax registration and documents are transferred. Review the transactions, and make any adjustments that are required.
 
-![Intrastat  Transfer  dialog box](media/Multipleid-image9.png)
+    > [!NOTE]
+    > In the 10.0.19, 10.0.20 release, when the feature **Intrastat transfer for Multiple Tax ID** is enabled, the **Transfer** function runs the generic (global) logic for Intrastat transfers. In 10.0.20 release. for France, generic logic runs that also has a French extension for the direct delivery scenario (triangulation between three EU countries, where France is party B in the middle of the process).
+    > 
+    > In the 10.0.19, 10.0.20 release, Intrastat **Transfer** function has country-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
 
-5.  Transactions for the selected tax registration and documents are transferred. Review the transactions, and make any adjustments that are required.
+6. Select **Output** > **Report**.
+7. In the **Tax registration number** dialog box, select the tax registration number to generate the Intrastat report for, and then select **OK**.
 
-**Note:** In the 10.0.19, 10.0.20 release, when the feature **Intrastat transfer for Multiple Tax ID** is enabled, the **Transfer** function runs the generic (global) logic for Intrastat transfers. In 10.0.20 release. for France, generic logic runs that also has a French extension for the direct delivery scenario (triangulation between three EU countries, where France is party B in the middle of the process).
+    ![Intrastat  Reporting  dialog box](media/Multipleid-image10.png)
 
-In the 10.0.19, 10.0.20 release, Intrastat **Transfer** function has country-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
-
-6.  Select **Output &gt; Report**.
-
-7.  In the **Tax registration number** dialog box, select the tax registration number to generate the Intrastat report for, and then select **OK**.
-
-![Intrastat  Reporting  dialog box](media/Multipleid-image10.png)
-
-8.  In the **Intrastat Report** dialog box, in the **From date** and **To date** fields, define the period to generate the Intrastat report for.
-
-9.  Set the **Generate file** option to **Yes** to generate an electronic reporting file. Then, in the **File name** field, enter the name of the output electronic file if applicable.
-
+8. In the **Intrastat Report** dialog box, in the **From date** and **To date** fields, define the period to generate the Intrastat report for.
+9. Set the **Generate file** option to **Yes** to generate an electronic reporting file. Then, in the **File name** field, enter the name of the output electronic file if applicable.
 10. Set the **Generate report** option to **Yes** to generate an Excel report. Then, in the **Report file name** field, enter the name of the output Excel file if applicable.
 
-![Intrastat report dialog box](media/Multipleid-image11.png)
+    ![Intrastat report dialog box](media/Multipleid-image11.png)
 
 11. The dialog box also contains country-specific fields that are required in the country-specific Intrastat report. Set these fields as required.
-
 12. Select **OK** to generate the report.
 
 ### Transfer and report the EU sales list
 
-1.  Go to **Tax &gt; Declarations &gt; Foreign trade &gt; EU sales list**.
+1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
+2. Select **Transfer**.
+3. In the **Tax registration number** dialog, select the tax registration number to transfer transactions for, and then select **OK**.
 
-2.  Select **Transfer**.
+    ![ESL transfer dialog box](media/Multipleid-image12.png)
 
-3.  In the **Tax registration number** dialog, select the tax registration number to transfer transactions for, and then select **OK**.
+4. In the **Transfer transactions for EU sales list** dialog box, select the documents and reporting types to transfer.
 
-![ESL transfer dialog box](media/Multipleid-image12.png)
+    ![ESL transfer dialog box2](media/Multipleid-image13.png)
 
-4.  In the **Transfer transactions for EU sales list** dialog box, select the documents and reporting types to transfer.
-
-![ESL transfer dialog box2](media/Multipleid-image13.png)
-
-5.  Select **Select** to adjust the default filter for transactions that should be transferred, and then select **Transfer**.
-
-6.  Transactions for the selected tax registration, documents, and reporting types are transferred. Review the transactions, and make any adjustments that are required.
-
-7.  Select **Reporting**.
-
-8.  In the **Tax registration number** dialog box, select the tax registration number to generate the EU sales list report for, and then select **OK**.
-
-9.  In the **EU reporting** dialog box, in the **From date** field, specify the first date to generate the EU sales list report for.
-
+5. Select **Select** to adjust the default filter for transactions that should be transferred, and then select **Transfer**.
+6. Transactions for the selected tax registration, documents, and reporting types are transferred. Review the transactions, and make any adjustments that are required.
+7. Select **Reporting**.
+8. In the **Tax registration number** dialog box, select the tax registration number to generate the EU sales list report for, and then select **OK**.
+9. In the **EU reporting** dialog box, in the **From date** field, specify the first date to generate the EU sales list report for.
 10. Set the **Generate file** option to **Yes** to generate an electronic reporting file. Then, in the **File name** field, enter the name of the output electronic file.
-
 11. Set the **Generate report** option to **Yes** to generate an Excel report. Then, in the **Report file name** field, enter the name of the output Excel file.
 
-![ESL report dialog box](media/Multipleid-image14.png)
+    ![ESL report dialog box](media/Multipleid-image14.png)
 
 12. The dialog box also contains country-specific fields that are required in the country-specific EU sales list report. Set these fields as required.
-
 13. Select **OK** to generate the report.
 
 ## Set up VAT reporting for multiple VAT registrations
 
-1.  Go to **Tax &gt; Set up &gt; Parameters &gt; General ledger parameters**.
+1. Go to **Tax &gt; Set up &gt; Parameters &gt; General ledger parameters**.
+2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, select the VAT reporting formats for each country of your tax registration.
 
-2.  On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, select the VAT reporting formats for each country of your tax registration.
+    ![GL parameters](media/Multipleid-image15.png)
 
-![GL parameters](media/Multipleid-image15.png)
+    > [!NOTE]
+    > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
 
-**Note:** You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
+    In the 10.0.19 release, a format for the Netherlands is available for preview. For more information, see [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md) topic.
 
-In the 10.0.19 release, a format for the Netherlands is available for preview. For more information, see [VAT declaration (Netherlands)](/localizations/emea-nl-vat-declaration-netherlands) topic.
+    The following table shows the earliest ER format versions, that you can select the format for.
 
-The following table shows the earliest ER format versions, that you can select the format for.
-
-| **Release** | **Country** | **ER format** |
-|-------------------------|-------------------------|-------------------------|
-| 10.0.19 | All | Tax declaration model.version.85</br>Tax declaration model mapping.version.85.138 |
-| 10.0.19 | NL | VAT Declaration XML (NL).version.85.14</br>VAT Declaration Excel (NL).version.85.14.17 |
+    | **Release** | **Country** | **ER format** |
+    |-------------------------|-------------------------|-------------------------|
+    | 10.0.19 | All | Tax declaration model.version.85</br>Tax declaration model mapping.version.85.138 |
+    | 10.0.19 | NL | VAT Declaration XML (NL).version.85.14</br>VAT Declaration Excel (NL).version.85.14.17 |
 
 
 ### Generate a VAT declaration for multiple VAT registrations
 
-1.  Go to **Tax &gt; Declarations &gt; Sales tax &gt; Report sales tax for settlement period**.
+1. Go to **Tax** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**.
+2. In the **Report sales tax for settlement period** dialog box, in the **Settlement period** field, select a settlement period.
+3. In the **From date** field, specify the first date to generate the VAT declaration for.
+4. In the **Sales tax payment version** field, select one of the following values:
 
-2.  In the **Report sales tax for settlement period** dialog box, in the **Settlement period** field, select a settlement period.
+    - **Original:** Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated.
+    - **Corrections:** Generate a report for sales tax transactions of all subsequent sales tax payments for the period.
+    - **Total list:** Generate a report for all sales tax transactions for the period, including the original and all corrections.
 
-3.  In the **From date** field, specify the first date to generate the VAT declaration for.
+    ![Report sales tax](media/Multipleid-image16.png)
 
-4.  In the **Sales tax payment version** field, select one of the following values:
+5. Select **OK** to generate the report.
 
-- **Original:** Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated.
-
-- **Corrections:** Generate a report for sales tax transactions of all subsequent sales tax payments for the period.
-
-- **Total list:** Generate a report for all sales tax transactions for the period, including the original and all corrections.
-
-![Report sales tax](media/Multipleid-image16.png)
-
-5.  Select **OK** to generate the report.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
