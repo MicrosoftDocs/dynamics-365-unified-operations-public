@@ -114,9 +114,9 @@ public static class MyForm_Extension
 
 ## Office menu best practices
 
-### Avoid APIs that may initialize the metadata cache during form load
+### Avoid APIs that could initialize the metadata cache during form load
 
-The following classes may result in initializing the metadata cache, which can be extremely time consuming. For this reason, these classes should never be used in methods that are executed during form load (e.g. `init()` and `run()`), as this can cause a form to take a very long time to load.  
+The following classes could initialize the metadata cache, which can be extremely time consuming. For this reason, these classes should never be used in methods that are executed during form load (such as `init()` and `run()`), as this can cause a form to take a long time to load.  
 
 -  ExportToExcelMetadataCache
 -  ExportToExcelDataEntityContext
