@@ -1,34 +1,40 @@
+---
+# required metadata
+
+title: VAT declaration (Netherlands)
+description: This topic provides information about VAT declaration for Netherlands.
+author: anasyash
+ms.date: 05/24/2021
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.tgt_pltfrm: 
+ms.custom: 261354
+ms.search.region:
+# ms.search.industry: 
+ms.author: anasyash
+ms.search.validFrom: 
+ms.dyn365.ops.version: 
+
+---
+
 # VAT declaration (Netherlands)
 
-## Overview
+[!include [banner](../includes/banner.md)]
 
-To automatically generate the VAT declaration, you must create enough sales tax
-codes to keep a separate VAT accounting for each box on the VAT declaration.
-Additionally, in the application-specific parameters of the VAT declaration
-electronic reporting format, you must associate sales tax codes with the lookup
-result of the lookup for the VAT declaration boxes. For more information about
-how to set up application-specific parameters, see  [Set up application
-parameters for declaration fields](#Set-up-application-specific-parameters-for-VAT-declaration-fields) later in this topic.
+To automatically generate the VAT declaration, you must create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the VAT declaration electronic reporting format, you must associate sales tax codes with the lookup result of the lookup for the VAT declaration boxes. For more information about how to set up application-specific parameters, see  [Set up application parameters for declaration fields](#Set-up-application-specific-parameters-for-VAT-declaration-fields) later in this topic.
 
-In the following table, the **Lookup result** column shows the lookup result
-that is preconfigured for a specific VAT declaration row in the VAT declaration
-format. Use this information to correctly associate sales tax codes with the
-lookup result and then associate that with the row of the VAT declaration. The
-**Tax base (XML element) / Tax (XML element)** column list the names of
-the corresponding XML elements in VAT declaration XML (NL) format.
+In the following table, the **Lookup result** column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then associate that with the row of the VAT declaration. The **Tax base (XML element) / Tax (XML element)** column list the names of the corresponding XML elements in VAT declaration XML (NL) format.
 
-> **Note!**
-
-> If you configure sales tax codes to post incoming reverse charge VAT by using
-> use tax, associate your sales tax codes with the lookup result that contains
-> **UseTax** in the name. For example, for **Row 2a Supplies/services for which
-> the VAT has been reverse-charged to you**, configure
-> the **SuppliesServicesByWhichVATTaxationIsTransferredUseTax** lookup result
-> for **Use tax** sales tax codes, or configure
-> the **SuppliesServicesByWhichVATTaxationIsTransferred** lookup result for sales
-> tax codes that have a reverse charge. For more information about how to
-> configure reverse charge VAT, see [Reverse
-> charges](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-reverse-charge).
+> [!NOTE]
+> If you configure sales tax codes to post incoming reverse charge VAT by using use tax, associate your sales tax codes with the lookup result that contains **UseTax** in the name. For example, for **Row 2a Supplies/services for which the VAT has been reverse-charged to you**, configure the **SuppliesServicesByWhichVATTaxationIsTransferredUseTax** lookup result for **Use tax** sales tax codes, or configure the **SuppliesServicesByWhichVATTaxationIsTransferred** lookup result for sales tax codes that have a reverse charge. For more information about how to configure reverse charge VAT, see [Reverse charges](emea-reverse-charge.md).
 
 ### VAT declaration overview
 
@@ -365,34 +371,21 @@ The VAT declaration format in Netherlands contains the following information.
 
 ### Import electronic reporting configurations
 
-To import Electronic reporting (ER) configurations, go to **Workspaces** \>
-**Electronic reporting**, and import the following or higher versions of
-electronic reporting formats:
+To import Electronic reporting (ER) configurations, go to **Workspaces** \> **Electronic reporting**, and import the following or higher versions of electronic reporting formats:
 
--   Tax declaration model.version.85
-
--   Tax declaration model mapping.version.85.138
-
--   VAT Declaration XML (NL).version.85.14
-
--   VAT Declaration Excel (NL).version.85.14.17
+   - Tax declaration model.version.85
+   - Tax declaration model mapping.version.85.138
+   - VAT Declaration XML (NL).version.85.14
+   - VAT Declaration Excel (NL).version.85.14.17
 
 ### Set up application specific parameters for VAT declaration fields
 
-To automatically generate a VAT declaration, associate sales tax codes and
-report fields in the ER configuration. To set up report fields, follow these
-steps:
+To automatically generate a VAT declaration, associate sales tax codes and report fields in the ER configuration. To set up report fields, follow these steps:
 
-1.  Go to **Workspaces \> Electronic reporting**, and then select **Reporting
-    configurations**.
-
-2.  Select the **VAT declaration XML (NL)** configuration, and then
-    select **Configurations \> Application specific parameters setup**.
-
-3.  On the **Lookups** FastTab, select **\$ReportFieldLookup** .
-
-4.  On the **Conditions** FastTab, associate the sales tax codes and report
-    fields.
+1. Go to **Workspaces** > **Electronic reporting**, and then select **Reporting configurations**.
+2. Select the **VAT declaration XML (NL)** configuration, and then select **Configurations** > **Application specific parameters setup**.
+3. On the **Lookups** FastTab, select **\$ReportFieldLookup** .
+4. On the **Conditions** FastTab, associate the sales tax codes and report fields.
 
 <table>
 <thead>
@@ -445,49 +438,35 @@ steps:
 ![Application-parameters](media/App-parameters-VAT-XML-1.png)
 
 
-
 #### Set up XSD schema and namespaces
 
 To set up XSD schema and namespaces, follow these steps:
 
-1.  On the **Lookups** FastTab, select **XMLNamespacesLookup**.
+1. On the **Lookups** FastTab, select **XMLNamespacesLookup**.
+2. On the **Conditions** FastTab, define the path to the XSD schema under XSDSchema name and the path to the schema instance data under SchemaInstanceData.
 
-2.  On the **Conditions** FastTab, define the path to the XSD schema under
-    XSDSchema name and the path to the schema instance data under
-    SchemaInstanceData.
-
-| **Name**           | **Lookup result**                                                                  |
-|--------------------|------------------------------------------------------------------------------------|
-| XSDSchema          | http://www.nltaxonomie.nl/nt15/bd/20201209/entrypoints/bd-rpt-ob-aangifte-2021.xsd |
-| SchemaInstanceData | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data                      |
+    | **Name**           | **Lookup result**                                                                  |
+    |--------------------|------------------------------------------------------------------------------------|
+    | XSDSchema          | http://www.nltaxonomie.nl/nt15/bd/20201209/entrypoints/bd-rpt-ob-aangifte-2021.xsd |
+    | SchemaInstanceData | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data                      |
 
 
-For information about how to get these values from official documentation, see ![How-to get XSD schema and namespaces for the Dutch taxonomy](/localizations/emea-nl-eu-sales-list.md/#Get-XSD-schema-and-namespaces-for-the-Dutch-taxonomy)
+    For information about how to get these values from official documentation, see [How-to get XSD schema and namespaces for the Dutch taxonomy](emea-nl-eu-sales-list.md/#Get-XSD-schema-and-namespaces-for-the-Dutch-taxonomy)
 
-> **Note**! If you don’t set up transmission of VAT declaration to Digipoort, you
-> can configure any value in the lookup result.
+    > [!NOTE]
+    > If you don’t set up transmission of VAT declaration to Digipoort, you can configure any value in the lookup result.
 
-3.  In the **State** field, select **Completed**.
-
-4.  On the Action Pane, select **Export** to export the parameters to an XML
-    file.
-
-5.  Select the **VAT declaration Excel (NL**) configuration, and then, on the
-    Action Pane, select **Import** to import the parameters that you configured
-    for **VAT declaration XML (NL)**
-
-6.  In the **State** field, select **Completed**.
+3. In the **State** field, select **Completed**.
+4. On the Action Pane, select **Export** to export the parameters to an XML file.
+5. Select the **VAT declaration Excel (NL**) configuration, and then, on the Action Pane, select **Import** to import the parameters that you configured for **VAT declaration XML (NL)**
+6. In the **State** field, select **Completed**.
 
 ### Set up VAT reporting format
 
 To set up VAT reporting format, follow these steps:
 
-1.  Go to **General ledger \> Setup \> General ledger parameters**.
-
-2.  If you configure VAT declaration for multiple VAT registrations, on the tab
-    **Sales tax**, on the **Electronic reporting for countries/regions**
-    FastTab, for the **NLD country/region** line, select the ER format, **VAT
-    Declaration Excel (NL)**.
+1. Go to **General ledger** > **Setup** > **General ledger parameters**.
+2. If you configure VAT declaration for multiple VAT registrations, on the tab **Sales tax**, on the **Electronic reporting for countries/regions** FastTab, for the **NLD country/region** line, select the ER format, **VAT Declaration Excel (NL)**.
 
 ## Preview VAT declaration in Excel
 
@@ -495,9 +474,8 @@ To set up VAT reporting format, follow these steps:
 
 To preview VAT declaration in Excel, follow these steps:
 
-1.  Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Report sales tax for settlement period**.
-
-2.  Enter the following information.
+1. Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**.
+2. Enter the following information.
 
 <table>
 <thead>
@@ -541,16 +519,14 @@ To preview VAT declaration in Excel, follow these steps:
 </tbody>
 </table>
 
-3.  Select **OK** and review the Excel file that is generated.
+3. Select **OK** and review the Excel file that is generated.
 
 ### Settle and post sales tax
 
 To settle and post sales tax, follow these steps:
 
-1.  Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Settle and
-    post sales tax**.
-
-2.  Enter the following information.
+1. Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Settle and post sales tax**.
+2. Enter the following information.
 
 <table>
 <thead>
@@ -593,170 +569,101 @@ To settle and post sales tax, follow these steps:
 </tbody>
 </table>
 
-3.  Select **OK**.
+3. Select **OK**.
 
 ### Preview VAT declaration in Excel from a sales tax payment
 
-To preview VAT declaration in Excel from a sales tax payment, follow these
-steps:
+To preview VAT declaration in Excel from a sales tax payment, follow these steps:
 
-1.  Go to **Tax \> Inquiries and reports \> Sales tax inquiries \> Sales tax
-    payments** and select a sales tax payment line.
+1. Go to **Tax** > **Inquiries and reports** > **Sales tax inquiries** > **Sales tax payments** and select a sales tax payment line.
+2. Select **Print report** and review the Excel file that’s generated for the selected sales tax payment line.
 
-2.  Select **Print report** and review the Excel file that’s generated for the
-    selected sales tax payment line.
-
->   **Note!** The report is generated only for the selected line of Sales tax
->   payment. If you need to generate a corrective declaration that contains all
->   corrections for the period, or a replacement declaration that contains the
->   original data and all corrections, use the periodic task, **Report sales tax
->   for settlement period**.
+    > [!NOTE]
+    > The report is generated only for the selected line of Sales tax payment. If you need to generate a corrective declaration that contains all corrections for the period, or a replacement declaration that contains the original data and all corrections, use the periodic task, **Report sales tax for settlement period**.
 
 ## Configure electronic messages for generating VAT declaration in XML
 
 ### Enable the feature
 
-To enable the **Configure electronic messages for generating VAT declaration in
-XML** feature, go to **Workspaces** \> **Feature management** and enable the
-feature, **[EM] Executable class action type.**
+To enable the **Configure electronic messages for generating VAT declaration in XML** feature, go to **Workspaces** \> **Feature management** and enable the feature, **[EM] Executable class action type.**
 
 ### Modify target mapping
 
 To modify target mapping, follow these steps:
 
-1.  Go to **Workspaces** \> **Data management,** and select **Target entities**.
+1. Go to **Workspaces** \> **Data management,** and select **Target entities**.
+2. Select the data entity **Action class settings** and then select **Modify target mapping**.
+3. Make sure that the staging field **Action type** is mapped to the target.
 
-2.  Select the data entity **Action class settings** and then select **Modify
-    target mapping**.
+    ![Map staging to target](media/map-staging.png)
 
-3.  Make sure that the staging field **Action type** is mapped to the target.
-
-![Map staging to target](media/map-staging.png)
-
- 
-4.  You can map to the target manually, or on the **Mapping details** tab,
-    select **Generate mapping \> Yes**.
+4. You can map to the target manually, or on the **Mapping details** tab, select **Generate mapping \> Yes**.
 
 ### Upload the electronic messages data package
 
 To upload the electronic messages data package, follow these steps:
 
-1.  In the Lifecycle Services (LCS) shared asset library, on the **Data packages** tab, download the latest version of data package, **NL VAT declaration EM package**.
+1. In the Lifecycle Services (LCS) shared asset library, on the **Data packages** tab, download the latest version of data package, **NL VAT declaration EM package**.
+2. In Dynamics 365 Finance, in the **Data management** workspace, select **Import**.
+3. In the **Job details** section, set the following values:
 
-2.  In Dynamics 365 Finance, in the **Data management** workspace,
-    select **Import**.
+    - **Name**: Enter a name for the job: *NL VAT declaration*.
+    - **Data source format**: Select select **Package**.
 
-3.  In the **Job details** section, set the following values:
+4. In the **Upload data file** field, select **Upload**, and then select the **NL VAT declaration EM package.zip** file.
+5. After the data entities are uploaded, select **Import**.
+6. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages** and validate the electronic message processing that you imported.
 
-    -   **Name**: Enter a name for the job: *NL VAT declaration*.
+    | **Processing**     | **Name**                | **Description**                    |
+    |--------------------|-------------------------|------------------------------------|
+    | NL VAT declaration | Omzetbelasting aangifte | VAT declaration in the Netherlands |
 
-    -   **Data source format**: Select select **Package**.
+7. Go to **Tax** > **Setup** > **Electronic messages** > **Executable class settings**. Verify the following :
 
-4.  In the **Upload data file** field, select **Upload**, and then select
-    the **NL VAT declaration EM package.zip** file.
+    - The executable class **NLOBGetStatusFromDidgipoort** has the **Electronic reporting import** action type.
+    - The executable class **NLOBSendToDigipoort** has the **Web service** action type.
 
-5.  After the data entities are uploaded, select **Import**.
+    ![electronic-messages-NL](media/electronic-messages-NL.png)
 
-6.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages** and validate the electronic message processing that you imported.
-
-| **Processing**     | **Name**                | **Description**                    |
-|--------------------|-------------------------|------------------------------------|
-| NL VAT declaration | Omzetbelasting aangifte | VAT declaration in the Netherlands |
-
-7.  Go to **Tax \> Setup \> Electronic messages \> Executable class settings**.
-    Verify the following :
-
--   The executable class **NLOBGetStatusFromDidgipoort** has the **Electronic reporting import** action type.
-
--   The executable class **NLOBSendToDigipoort** has the **Web service** action
-    type.
-
-![electronic-messages-NL](media/electronic-messages-NL.png)
-
-8.  For each line, select **Parameters**, and then select **NLOB Request ID** in
-    the **Request ID** field.
+8.  For each line, select **Parameters**, and then select **NLOB Request ID** in the **Request ID** field.
 
 ### Configure electronic messages
 
 To configure electronic messages, follow these steps:
 
-1.  Go to **Tax \> Setup \> Electronic messages \> Populate records actions**,
-    select the line, and then select **Edit query**.
-
-2.  Use the filter to specify the settlement periods to include in the report.
-
-3.  If you must report tax transactions from other settlement periods in a
-    different declaration, create a new **Populate records** action, and select
-    the appropriate settlement periods.
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**, select the line, and then select **Edit query**.
+2. Use the filter to specify the settlement periods to include in the report.
+3. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
 
 ## Set up electronic transmission of tax declarations to Digipoort
 
-Digipoort is the service that is used to transmit declarations to the Dutch
-government. Digipoort works as an electronic post office: it receives a message,
-checks the message, and then confirms receipt of the message.
+Digipoort is the service that is used to transmit declarations to the Dutch government. Digipoort works as an electronic post office: it receives a message, checks the message, and then confirms receipt of the message.
 
-For more information, see ![Set up electronic transmission of tax declarations to
-Digipoort](localizations/emea-nl-eu-sales-list.md/Set-up-electronic-transmission-of-tax-declarations-to-Digipoort)
+For more information, see [Set up electronic transmission of tax declarations to Digipoort](emea-nl-eu-sales-list.md#Set-up-electronic-transmission-of-tax-declarations-to-Digipoort)
 
 ## Generate VAT declaration in XML for Netherlands and send to Digipoort
 
 ### Generate a VAT declaration from electronic messages and send to Digipoort
 
-The following steps are applicable to the example electronic message processing
-that you imported.
+The following steps are applicable to the example electronic message processing that you imported.
 
-1.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
+1. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > Electronic messages**.
+2. In the left pane, select the report format to generate. For example, select **NL VAT declaration**.
+3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
+4. Select the message line that is created, enter a description, and then specify the start and end dates for the declaration.
 
-2.  In the left pane, select the report format to generate. For example,
-    select **NL VAT declaration**.
+    > [!NOTE]
+    > Steps 5-7 are optional.
 
-3.  On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
-
-4.  Select the message line that is created, enter a description, and then
-    specify the start and end dates for the declaration.
-
->   Note: Steps 5-7 are optional.
-
-5.  On the **Messages** FastTab, select **Collect data**, and then
-    select **OK**. As a result, sales tax payments that were generated earlier
-    are added to the message. For more information, see [Settle and post sales
-    tax](#settle-and-post-sales-tax). If you skip this step, you can still
-    generate a VAT declaration by using the **Tax declaration version** in the
-    **Declaration** dialog box.
-
-6.  On the **Message items** FastTab, review the sales tax payments that are
-    transferred for processing. By default, all sales tax payments of the
-    selected period that weren't included in any other message of the same
-    processing are included.
-
-7.  Select **Original document** to review the sales tax payments, or
-    select **Delete** to exclude sales tax payments from processing. If you skip
-    this step, you can still generate a VAT declaration by using the **Tax
-    declaration version** field in the **Declaration** dialog box.
-
-8.  On the **Messages** FastTab, select **Update status**. In the **Update
-    status** dialog box, select the **Ready to generate** action, and then
-    select **OK**. Validate that the message status is changed to **Ready to
-    generate**.
-
-9.  Select **Generate report**. To preview the VAT declaration amounts, in
-    the **Run processing** dialog box, select **Preview report**, and then
-    select **OK**.
-
-10.  In the **Electronic reporting parameters** dialog box, enter the parameters
-    of the VAT declaration, and then select **OK**. For information about the
-    parameters that are available, see the following table.
-
-11.  Select **Attachments** in the upper-right corner of the page, and then
-    select **Open** to open the file. Review the amounts that are in the Excel
-    document.
-
-12.  On the **Messages** FastTab, select **Generate report**. In the **Run
-    processing** dialog box, select **Generate report** to generate an XML file,
-    and then select **OK**.
-
-13.  In the **Electronic reporting parameters** dialog box, enter the following
-    information.
+5. On the **Messages** FastTab, select **Collect data**, and then select **OK**. As a result, sales tax payments that were generated earlier are added to the message. For more information, see [Settle and post sales tax](#settle-and-post-sales-tax). If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** in the **Declaration** dialog box.
+6. On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
+7. Select **Original document** to review the sales tax payments, or select **Delete** to exclude sales tax payments from processing. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
+8. On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select the **Ready to generate** action, and then select **OK**. Validate that the message status is changed to **Ready to generate**.
+9. Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **Preview report**, and then select **OK**.
+10. In the **Electronic reporting parameters** dialog box, enter the parameters of the VAT declaration, and then select **OK**. For information about the parameters that are available, see the following table.
+11. Select **Attachments** in the upper-right corner of the page, and then select **Open** to open the file. Review the amounts that are in the Excel document.
+12. On the **Messages** FastTab, select **Generate report**. In the **Run processing** dialog box, select **Generate report** to generate an XML file, and then select **OK**.
+13. In the **Electronic reporting parameters** dialog box, enter the following information.
 
 <table>
 <thead>
@@ -821,83 +728,53 @@ that you imported.
 </tbody>
 </table>
   
-If you selected **Collect data** in step 5, you can disregard this field. The
-report will be generated for the sales tax transactions that are included in the
-collected sales tax payments.
+   If you selected **Collect data** in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments.
 
-14.  Select **OK**. When the declaration in XML format has been generated, the
-    status of the message is changed to **Report generated**. 
+14. Select **OK**. When the declaration in XML format has been generated, the status of the message is changed to **Report generated**. 
     
-   If an error occurs while the report is being generated, the status of the message is changed
-    to **Report generation error**.
+   If an error occurs while the report is being generated, the status of the message is changed to **Report generation error**.
 
-15.  Select **Attachments**, and then select **Open** to open the file. Review
-    the file, and if it is correct, select **Send report** to send the report to
-    Digipoort. The report will be sent to Digipoort and status of the message
-    will be changed to **Report sent**.
+15. Select **Attachments**, and then select **Open** to open the file. Review the file, and if it is correct, select **Send report** to send the report to Digipoort. The report will be sent to Digipoort and status of the message will be changed to **Report sent**.
     
-   If an error occurred during sending of the report, the status of the message is
-    changed to:
--   **Report sending error (technical)**: If an error occurs on the Finance side
-    and the file didn’t reach Digipoort.
--   **Report sending error (business)**: If an error occurred on the Digipoort
-    side after reaching Digipoort.
+   If an error occurred during sending of the report, the status of the message is changed to:
 
-16.  Select **Import response** to get a response from the Digipoort on the sent
-    message. The response from Digipoort will be imported and status of the
-    message will be changed to **Report acknowledged**. 
+   - **Report sending error (technical)**: If an error occurs on the Finance side and the file didn’t reach Digipoort.
+   - **Report sending error (business)**: If an error occurred on the Digipoortside after reaching Digipoort.
+
+16. Select **Import response** to get a response from the Digipoort on the sent message. The response from Digipoort will be imported and status of the message will be changed to **Report acknowledged**. 
     
-   If an error occurred during receiving of the status, the status of the message
-    is changed to:
--   **Report getting status error (business)**: If Digipoort didn’t acknowledge
-    the report. In this case, the Infolog shows a list of errors received from
-    Digipoort. To review list of errors later, on the **Action log** FastTab, select a line
-    with **Get report status**, and select **Attachments**. Review the list of
-    errors in the **Notes** field.
--   **Report getting status error (technical)**: If a technical error occurred
-    when importing the response from Digipoort.
+   If an error occurred during receiving of the status, the status of the message is changed to:
+
+   - **Report getting status error (business)**: If Digipoort didn’t acknowledge the report. In this case, the Infolog shows a list of errors received from Digipoort. To review list of errors later, on the **Action log** FastTab, select a line with **Get report status**, and select **Attachments**. Review the list of errors in the **Notes** field.
+   - **Report getting status error (technical)**: If a technical error occurred when importing the response from Digipoort.
 
 ### Run a VAT declaration for several legal entities
 
-To use the formats to report the VAT declaration for a group of several legal
-entities, first set up the application-specific parameters of the ER formats for
-sales tax codes from all required legal entities.
+To use the formats to report the VAT declaration for a group of several legal entities, first set up the application-specific parameters of the ER formats for sales tax codes from all required legal entities.
 
 #### Set up electronic messages to collect data from several legal entities
 
-To set up electronic messages to collect data from several legal entities,
-follow these steps:
+To set up electronic messages to collect data from several legal entities, follow these steps:
 
-1.  Go to **Workspaces \> Feature management**, find **Cross-company queries for
-    the populate records actions** in the list, and then select **Enable
-    now** to turn on the feature.
+1. Go to **Workspaces** > **Feature management**, find **Cross-company queries for the populate records actions** in the list, and then select **Enable now** to turn on the feature.
+2. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**.
+3. On the **Populate records action** page, in the **Datasources setup** grid, a new **Company** field is available. For existing records, this field shows the identifier of the current legal entity.
+4. In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting, and enter the following information.
 
-2.  Go to **Tax \> Setup \> Electronic messages \> Populate records actions**.
+    | **Field**              | **Description**                                                                                                               |
+    |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+    | Name                   | Enter a value that will help you understand where this record comes from. For example, enter **VAT payment of Subsidiary 1**. |
+    | Message item type      | Select **VAT return**. This is the only value that is available for all the records.                                          |
+    | Account type           | Select **All**.                                                                                                               |
+    | Master table name      | Specify **TaxReportVoucher** for all the records.                                                                             |
+    | Document number field  | Specify **Voucher** for all the records.                                                                                      |
+    | Document date field    | Specify **TransDate** for all the records.                                                                                    |
+    | Document account field | Specify **TaxPeriod** for all the records.                                                                                    |
+    | Company                | Select the ID of the legal entity.                                                                                            |
+    | User query             | The check box is automatically selected when you define criteria by selecting **Edit query**.                                 |
 
-3.  On the **Populate records action** page, in the **Datasources setup** grid,
-    a new **Company** field is available. For existing records, this field shows
-    the identifier of the current legal entity.
+5. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that is specified in the **Company** field on the line.
 
-4.  In the **Datasources setup** grid, add a line for each additional legal
-    entity that must be included in reporting, and enter the following
-    information.
+When setup is complete, the **Collect data** function on the **Electronic messages** page will collect sales tax payments from all legal entities that you define here.
 
-| **Field**              | **Description**                                                                                                               |
-|------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Name                   | Enter a value that will help you understand where this record comes from. For example, enter **VAT payment of Subsidiary 1**. |
-| Message item type      | Select **VAT return**. This is the only value that is available for all the records.                                          |
-| Account type           | Select **All**.                                                                                                               |
-| Master table name      | Specify **TaxReportVoucher** for all the records.                                                                             |
-| Document number field  | Specify **Voucher** for all the records.                                                                                      |
-| Document date field    | Specify **TransDate** for all the records.                                                                                    |
-| Document account field | Specify **TaxPeriod** for all the records.                                                                                    |
-| Company                | Select the ID of the legal entity.                                                                                            |
-| User query             | The check box is automatically selected when you define criteria by selecting **Edit query**.                                 |
-
-5.  For each new line, select **Edit query**, and specify a related settlement
-    period for the legal entity that is specified in the **Company** field on
-    the line.
-
-When setup is complete, the **Collect data** function on the **Electronic
-messages** page will collect sales tax payments from all legal entities that you
-define here.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
