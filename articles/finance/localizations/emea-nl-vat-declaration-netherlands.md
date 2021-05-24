@@ -451,7 +451,7 @@ To set up XSD schema and namespaces, follow these steps:
     | SchemaInstanceData | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data                      |
 
 
-    For information about how to get these values from official documentation, see [How-to get XSD schema and namespaces for the Dutch taxonomy](emea-nl-eu-sales-list.md#Get-XSD-schema-and-namespaces-for-the-Dutch-taxonomy)
+    For information about how to get these values from official documentation, see [How-to get XSD schema and namespaces for the Dutch taxonomy](emea-nl-eu-sales-list.md#get-xsd-schema-and-namespaces-for-the-dutch-taxonomy).
 
     > [!NOTE]
     > If you don’t set up transmission of VAT declaration to Digipoort, you can configure any value in the lookup result.
