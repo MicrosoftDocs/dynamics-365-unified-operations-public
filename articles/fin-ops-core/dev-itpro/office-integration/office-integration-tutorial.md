@@ -44,7 +44,7 @@ In this tutorial, you will use and build Microsoft Office integration experience
 -   **Entities and OData** – You will use the Microsoft Dynamics Excel Data Connector App (Excel App) to create, read, update, and delete. The connector uses OData services that are created for any entity that is left in the default state of "public" (**DataEntity.Public**=**Yes**).
 -   **Apps for Office** – The Excel App is built by using the Apps for Office framework (which is also known as the Office Web API). The Excel App is web-based, and therefore shares technology with the client and will run inside both on-premises Excel instances and Microsoft Excel Online (Microsoft 365). The app runs inside Excel in a task pane.
 -   **Microsoft Office 2016** – The Excel and Word Apps use advances in the Apps for Office framework that were introduced in Office 2016. Therefore, Office 2016 is required in order to run the Excel and Word Apps.
--   **Authentication** – The Excel and Word apps run in a browser window inside Excel and Word. See [Browsers used by Office Add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins) for details on which browser will be used for your configuration. The specified browser is used even if the user is running the client in an InPrivate browsing session in Microsoft Edge, or in a different browser such as Google Chrome. Authentication is facilitated by OAuth, and the user can select accounts and sign in within the app. The browser will first try to automatically sign the user in, so if you aren't signed in as the correct user or if you have trouble signing in, you might need to force a sign-out from the app by using the sign-out link. After signing out, try to sign in again to the app.
+-   **Authentication** – The Excel and Word apps run in a browser window inside Excel and Word. For details about which browser will be used for your configuration, see [Browsers used by Office Add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). The specified browser is used even if the user is running the client in an InPrivate browsing session in Microsoft Edge, or in a different browser such as Google Chrome. Authentication is facilitated by OAuth, and the user can select accounts and sign in within the app. The browser will first try to automatically sign the user in, so if you aren't signed in as the correct user or if you have trouble signing in, you might need to force a sign-out from the app by using the sign-out link. After signing out, try to sign in again to the app.
 -   **Excel App** – In addition to facilitating refresh and publish data operations, the Excel App also provides source and field information, lookups, filtering, error messaging, and a design experience for adding or removing fields, table columns, or labels from entity data sources.
 
 ## Setup
@@ -52,7 +52,7 @@ In this tutorial, you will use and build Microsoft Office integration experience
 
 During this tutorial, we will mainly use forms, entities, and data in the Fleet Management model. Therefore, we must first load the Fleet data set.
 
-1.  Navigate to **Fleet Management** &gt; **Setup** &gt; **Fleet** **setup**.
+1.  Go to **Fleet Management** &gt; **Setup** &gt; **Fleet** **setup**.
 2.  Select **Create**.
 
 ## Static Export to Excel experiences
@@ -60,7 +60,7 @@ During this tutorial, we will mainly use forms, entities, and data in the Fleet 
 
 Static Export to Excel provides a quick mechanism for getting data into grids on a page. The standard mechanism for triggering Export to Excel is the **Open in** **Microsoft Office** menu. Static Export to Excel is also available via a shortcut menu on the grid.
 
-1.  Navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
+1.  Go to **Fleet Management** &gt; **Customers** &gt; **Customer**.
 2.  Select **Open in** **Microsoft Office** &gt; **Export to Excel** &gt; **Customers**.
 3.  Download and open the workbook that is generated. Note that the columns in the workbook match the columns in the grid.
 4.  Select ("mark") the first two rows by clicking in the left edge of the row, below the "Select all" check mark.
@@ -73,7 +73,7 @@ You can suppress the static Export to Excel mechanism for a grid or change the l
 
 1.  Start Visual Studio. Make sure that it's running as an administrator.
 2.  Select **View** &gt; **Application Explorer** (or press Ctrl+E, Ctrl+E).
-3.  Navigate to **AOT** &gt; **User Interface** &gt; **Forms** &gt; **FMCustomer**.
+3.  Go to **AOT** &gt; **User Interface** &gt; **Forms** &gt; **FMCustomer**.
 4.  Right-click **FMCustomer**, and then click **Add to new project**.
 5.  In Solution Explorer, double-click the **FMCustomer** form to open the designer view.
 6.  Select **FMCustomerDesignTab(Tab)TabPageGrid(TabPage)MainGrid(Grid)**.
@@ -81,7 +81,7 @@ You can suppress the static Export to Excel mechanism for a grid or change the l
 8.  Set the **Export Label** property to **Fleet Customers**.
 9.  Save the form. If you're asked whether you want to overwrite the existing form or save it as a new form, click **Overwrite**.
 10. Build the solution (press Ctrl+Shift+B).
-11. In the browser, navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
+11. In the browser, go to **Fleet Management** &gt; **Customers** &gt; **Customer**.
 12. Select **Open in Microsoft Office**. Note that the **Customers** option has changed to **Fleet Customers**.
 
 ## Generated Open in Excel experiences
@@ -89,7 +89,7 @@ You can suppress the static Export to Excel mechanism for a grid or change the l
 
 Generated Open in Excel options are automatically added to forms when the system finds data entities that have the same root data source as the form. The workbook that is generated will contain a single table data source where the data from that entity is loaded. The Open in Excel experiences are listed on the **Open in** **Microsoft Office** menu. (When an entity has the same root data source as a form, it's added as an option in the **Open in Excel** section of the **Open in Microsoft Office** menu. This option is referred to as a “generated” option.)
 
-1.  Navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
+1.  Go to **Fleet Management** &gt; **Customers** &gt; **Customer**.
 2.  Select **Open in** **Microsoft Office** &gt; **Open in Excel** &gt; **Fleet Management Customers (unfiltered)**.
 3.  Download and open the workbook that is generated. This workbook contains the Excel Data Connector App, a binding to the **Fleet Management Customer** entity, and a pointer to the server that the workbook was generated from.
 4.  Select **Enable editing** to enable the Excel Data Connector App to load. Customer data is read from the OData service on the server and added to the table.
@@ -107,7 +107,7 @@ Generated Open in Excel options are automatically added to forms when the system
 The Excel App has a design experience that lets users add and edit bindings to entity data sources and labels. To add and remove fields from an existing binding, you use the edit experience that is outlined in the following steps.
 
 1. Get a workbook that has an existing table data source:
-   1.  Navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
+   1.  Go to **Fleet Management** &gt; **Customers** &gt; **Customer**.
    2.  Select **Open in Microsoft Office** &gt; **Open in Excel** &gt; **Fleet Management Customers (unfiltered)**.
    3.  Download and open the workbook that is generated. This workbook contains the Excel Data Connector App, a binding to the Fleet Management Customer entity, and a pointer to the server that the workbook was generated from.
    4.  Select **Enable editing** to enable the Excel Data Connector App to load. Customer data is read from the OData service on the server and added to the table.
@@ -130,13 +130,13 @@ The automatically generated Open in Excel experiences that are created for entit
 
 1.  Start Visual Studio. Make sure that it's running as an administrator.
 2.  Select **View** &gt; **Application Explorer** (or press Ctrl+E, Ctrl+E).
-3.  Navigate to **AOT** &gt; **Data Model** &gt; **Data Entities** &gt; **FMCustomerEntity**.
+3.  Go to **AOT** &gt; **Data Model** &gt; **Data Entities** &gt; **FMCustomerEntity**.
 4.  Right-click **FMCustomerEntity**, and then click **Add to project**.
 5.  Expand **FMCustomerEntity** &gt; **Field Groups** &gt; **AutoReport**.
 6.  Reverse the order of the **First name** and **Last name** fields by clicking the **Last name** field and moving it up (press Alt+Up arrow key).
 7.  Save the entity. If you're asked whether you want to overwrite the existing entity or save it as a new entity, click **Overwrite**.
 8.  Build the solution (press Ctrl+Shift+B).
-9.  In the browser, navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
+9.  In the browser, go to **Fleet Management** &gt; **Customers** &gt; **Customer**.
 10. Select **Open in** **Microsoft Office** &gt; **Open in Excel** &gt; **Fleet Management Customers**.
 11. Open the workbook that is generated.
 12. Select **Enable editing** to enable the Excel Data Connector App to load. Note that the **Last name** column appears before the **First name** column.
@@ -145,7 +145,7 @@ The automatically generated Open in Excel experiences that are created for entit
 
 The Excel App is built by using a new Apps for Office framework. This framework provides a JavaScript-based web application programming interface (API) that enables apps to communicate with Office applications. The biggest advantage of this new framework is that apps can run in on-premises Excel instances (Win32), Excel Online (Microsoft 365), and Excel on the Apple iPad. They will also be able to run in other Excel apps in the future.
 
-1.  Navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
+1.  Go to **Fleet Management** &gt; **Customers** &gt; **Customer**.
 2.  Select **Open in** **Microsoft Office** &gt; **Open in Excel** &gt; **Fleet Management Customers**.
 3.  Select **SharePoint**.
 4.  Browse to the desired Microsoft SharePoint folder.
@@ -156,7 +156,7 @@ The Excel App is built by using a new Apps for Office framework. This framework 
 
 Template options resemble the generated Open in Excel options. They are automatically added to forms when the system finds templates that have the same first data source as the root data source in the form. A workbook template can have multiple data sources. It can also have unbound content. The Open in Excel experiences are listed on the **Open in** **Microsoft Office** menu. The **Excel workbook designer** page provides an easy way to get a generated Open in Excel experience for an entity. It also provides a mechanism getting a blank workbook that contains just the Excel App and a pointer to the server.
 
-1.  Navigate to **Common** &gt; **Common** &gt; **Office integration** &gt; **Excel workbook designer**.
+1.  Go to **Common** &gt; **Common** &gt; **Office integration** &gt; **Excel workbook designer**.
 2.  Select the **FleetCustomer** entity.
 3.  Add all fields in the list of available fields to the list of selected fields.
 4.  Select **Create workbook**.
@@ -173,13 +173,13 @@ Template options resemble the generated Open in Excel options. They are automati
 15. Select **Clear binding data** so that the workbook contains no bound data.
 16. Select **OK**.
 17. Save the workbook as **FleetCustomersBasic.xlsx**.
-18. In the browser, navigate to **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates**.
+18. In the browser, go to **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates**.
 19. Select **New**.
 20. Browse to the file that you just saved.
 21. Select **OK**. The template is added as a line in the templates table.
 22. In the **FleetCustomersBasic** row, clear the **Apply current record filter** check box, so that an unfiltered list of customers will be loaded after the template is opened.
 23. Change the **Template display name** value to **Fleet Customers Basic**.
-24. Navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
+24. Go to **Fleet Management** &gt; **Customers** &gt; **Customer**.
 25. Select **Open in** **Microsoft Office**. Note that **Fleet Customers Basic** is now an option in the **Open in Excel** section. Select that option.
 26. Open the workbook that is generated.
 27. Select **Enable editing** to enable the Excel Data Connector App to load. Customer data is read from the OData service on the server and added to the table binding that you created.
@@ -196,7 +196,7 @@ Templates that are registered as system-defined templates are loaded at deployme
 6.  Select **Add**.
 7.  Select the **FleetCustomersBasic.xlsx** file. Note that the resource is added to the project.
 8.  Select **View** &gt; **Application Explorer** (or press Ctrl+E, Ctrl+E).
-9.  Navigate to **AOT** &gt; **Classes** &gt; **Code** &gt; **FMTemplateRegistrations**.
+9.  Go to **AOT** &gt; **Classes** &gt; **Code** &gt; **FMTemplateRegistrations**.
 10. Right-click **FMTemplateRegistrations**, and then click **Add to project**.
 11. Open **FMTemplateRegistrations**. The FMTemplateRegistrations.xpp code file should be shown.
 12. Copy one of the existing lines, and change it by providing the template name, resource name, description, display name, and **Apply current record filter** and **List in Open in Office menu** values. The display name is the text that appears as an Open in Excel option. The description appears when the user holds the pointer over that item. The display name and description can be either labels or static strings. The code should resemble the following example.
@@ -212,14 +212,14 @@ Templates that are registered as system-defined templates are loaded at deployme
 
 13. Save the code. If you're asked whether you want to overwrite the existing code or save it as a new file, click **Overwrite**.
 14. Build the solution (press Ctrl+Shift+B).
-15. Verify that the change was successful. In the browser, navigate to **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates**.
+15. Verify that the change was successful. In the browser, go to **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates**.
 16. Select **Reload system templates**.
 17. Select **Yes** to confirm that you want to reload the system templates.
 18. Verify that the new system-defined template is loaded, and that the template name is **FleetCustomersBasicTemplate**.
 
 ### Journal Entry in Excel experience powered by a template
 
-1.  Navigate to **General ledger** &gt; **Journal entries** &gt; **General journals**.
+1.  Go to **General ledger** &gt; **Journal entries** &gt; **General journals**.
 2.  Make sure that you're in company **USMF**.
 3.  Create a new journal by clicking **New**.
 4.  Set the name to **GenJrn**.
@@ -234,7 +234,7 @@ Templates that are registered as system-defined templates are loaded at deployme
 
 To facilitate data entry, the Excel App provides lookups and data assistance. Date fields provide a date picker, enumeration (enum) fields provide an enum list, and relationships provide a relationship lookup.
 
-1.  Navigate to **Fleet Management** &gt; **Rentals** &gt; **Rental**.
+1.  Go to **Fleet Management** &gt; **Rentals** &gt; **Rental**.
 2.  Select **Open in** **Microsoft Office** &gt; **Open in Excel** &gt; **Fleet Management Rentals**.
 3.  Open the workbook that is generated.
 4.  Select **Enable editing** to enable the Excel Data Connector App to load and read in data.
@@ -253,7 +253,7 @@ When relationships exist between entities, a relationship lookup is shown.
 
 1.  Start Visual Studio by opening the previously created project where the model is set to **Fleet Management**, or create a new project.
 2.  Select **View** &gt; **Application Explorer** (or press Ctrl+E, Ctrl+E).
-3.  Navigate to **AOT** &gt; **Data Model** &gt; **Tables** &gt; **FMCustGroup**.
+3.  Go to **AOT** &gt; **Data Model** &gt; **Tables** &gt; **FMCustGroup**.
 4.  Right-click, and then click **Open designer**.
 5.  In the designer, right-click **FMCustGroup**, and then click **Add-ins** &gt; **Create data entity**. Artifacts are added to the project.
 6.  Open the designer view for **FMCustGroupEntity**.
@@ -264,7 +264,7 @@ When relationships exist between entities, a relationship lookup is shown.
 11. Right-click **Relations**, and then click **New** &gt; **Relation**.
 12. On the new relation, set **Name** to **CustomerGroup**, **Cardinality** to **ZeroMore**, **RelatedDataEntity** to **FMCustGroupEntity**, **RelatedDataEntityCardinality** to **ZeroOne**, **RelationshipType** to **Association**, **Role** to **CustomerGroupSource**, and **RelatedDataEntityRole** to **CustomerGroupTarget**.
 13. Build the solution (press Ctrl+Shift+B).
-14. Verify that the change was successful. In the browser, navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
+14. Verify that the change was successful. In the browser, go to **Fleet Management** &gt; **Customers** &gt; **Customer**.
 15. Select **Open in** **Microsoft Office** &gt; **Open in Excel** &gt; **Fleet Management Customers**.
 16. Open the workbook that is generated.
 17. Select a **Customer group** value.
@@ -304,7 +304,7 @@ You can create custom lookups to show data options when an enum or relationship 
 
 5.  Save the code. If you're asked whether you want to overwrite the existing code or save is as a new file, click **Overwrite**.
 6.  Build the solution (press Ctrl+Shift+B).
-7.  Verify that the change was successful. In the browser, navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
+7.  Verify that the change was successful. In the browser, go to **Fleet Management** &gt; **Customers** &gt; **Customer**.
 8.  Select **Open in** **Microsoft Office** &gt; **Open in Excel** &gt; **Fleet Management Customers**.
 9.  Open the workbook that is generated.
 10. Select a **Country** value.
@@ -317,7 +317,7 @@ You can create custom lookups to show data options when an enum or relationship 
 
 Export to Word experiences can be used for lightweight reporting. They are powered by pre-built templates. The Export to Word experiences are listed on the **Open in** **Microsoft Office** menu. Let's look at an example experience that has been created for Fleet Management Customers.
 
-1.  Navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
+1.  Go to **Fleet Management** &gt; **Customers** &gt; **Customer**.
 2.  Select **Open in** **Microsoft Office** &gt; **Export to Word** &gt; **Customer information Fleet Management Customers (unfiltered)**.
 3.  Download and open the document that is generated. The document contains data from the record that is currently selected.
 
@@ -326,7 +326,7 @@ Export to Word experiences can be used for lightweight reporting. They are power
 The Microsoft Dynamics App for Office can be run in Word to enable the creation of templates that can then be used for document generation.
 
 1.  Create a blank document
-    1.  Navigate to **Common** &gt; **Comment** &gt; **Excel workbook designer**. 
+    1.  Go to **Common** &gt; **Comment** &gt; **Excel workbook designer**. 
     2.  Select **Create blank document**.
     3.  Download and open the document that is generated.
 
@@ -365,7 +365,7 @@ The Microsoft Dynamics App for Office can be run in Word to enable the creation 
 After you've built a Word template, you can upload it to create an Export to Word experience.
 
 1.  Upload a template:
-    1.  Navigate to **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates**. Alternatively, search for the page.
+    1.  Go to **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates**. Alternatively, search for the page.
     2.  Select **New**.
     3.  Select **Browse**.
     4.  In the dialog box, select a previously created template, and then click **Open**. Note that the Root data entity is obtained from the template and appears near the bottom of the dialog box.
@@ -375,7 +375,7 @@ After you've built a Word template, you can upload it to create an Export to Wor
     8.  Optional: If the template should not be filtered to the user's current company, clear the **Apply company filter** check box.
 
 2.  Use the uploaded template for document generation:
-    1.  Navigate to a page that shares the same root data source as the template's root data entity. For **FleetCustomer** (**FMCustomerEntity**), that page is **Fleet Management** &gt; **Customers** &gt; **Customer**.
+    1.  Go to a page that shares the same root data source as the template's root data entity. For **FleetCustomer** (**FMCustomerEntity**), that page is **Fleet Management** &gt; **Customers** &gt; **Customer**.
     2.  Select **Open in Microsoft Office** &gt; **Export to Word**, and click the template.
     3.  Download and open the document that is generated.
 
@@ -384,12 +384,12 @@ After you've built a Word template, you can upload it to create an Export to Wor
 
 The Document Management subsystem can be used to attach files to records. Most non-executable file types are supported as attachments. A document preview is provided for Office document files and PDFs. Administrators create document types to indicate where attachments should be stored. When administrators use SharePoint as the storage location, they must provide a specific folder that the files should be put in. Security of that SharePoint folder is a separate administration responsibility.
 
-1.  Navigate to **Organization administration** &gt; **Document management** &gt; **Document management parameters**.
+1.  Go to **Organization administration** &gt; **Document management** &gt; **Document management parameters**.
 2.  Select **SharePoint**.
 3.  Make sure that the **Default SharePoint server** field is set to a default value for the tenant, such as **contosoax7.sharepoint.com**.
 4.  Select **Test SharePoint connection**. Note a successful connection.
 5.  Select **Save**.
-6.  Navigate to **Organization administration** &gt; **Document management** &gt; **Document types**.
+6.  Go to **Organization administration** &gt; **Document management** &gt; **Document types**.
 7.  Select **New**.
 8.  Set **Type** to **SharePointDoc**.
 9.  Set **Name** to **SharePointDoc**.
@@ -401,7 +401,7 @@ The Document Management subsystem can be used to attach files to records. Most n
 15. Select **Save**.
 16. Select the **Browse** (globe) button next to the **SharePoint Address** field. Note that a new browser tab that shows the selected folder appears.
 17. Use Windows Explorer to create a Word document in the Documents folder, and enter a few words in the document.
-18. In the browser, navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
+18. In the browser, go to **Fleet Management** &gt; **Customers** &gt; **Customer**.
 19. Put focus on the first customer, and then click the **Attach** (paperclip) button in the upper-right corner of the page.
 20. Select **New** &gt; **SharePointDoc**.
 21. Select **Browse**, and select the Word document that you created.
@@ -414,7 +414,7 @@ The Document Management subsystem can be used to attach files to records. Most n
 
 Email workflows that are enabled via the SysEmail framework can generate email messages (.eml files) that contain attachments. You can then send these messages via Microsoft Outlook or another email client.
 
-1.  Navigate to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
+1.  Go to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
 2.  Select **US-008 Sparrow Retail**.
 3.  Select **Collect** &gt; **Customer balances** &gt; **Collections** to open the **Collections** page.
 4.  Select **Communicate** &gt; **Email** &gt; **Statements to contact**.
@@ -427,7 +427,7 @@ Email workflows that are enabled via the SysEmail framework can generate email m
 
 Email workflows that are enabled via the SysEmail framework can also be created in a simple email dialog box and then sent via Simple Mail Transfer Protocol (SMTP).
 
-1.  Navigate to **System administration** &gt; **Setup** &gt; **Email** &gt; **Email parameters**.
+1.  Go to **System administration** &gt; **Setup** &gt; **Email** &gt; **Email parameters**.
 2.  Select **SMTP settings**.
 3.  Set the **Outgoing mail server** to the desired SMTP server:
     -   For [Microsoft 365 production](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (including \*.onmicrosoft.com accounts): smtp.office365.com (Find this setting via outlook.office.com, at **Settings** &gt; **Mail** &gt; **POP and IMAP**.)
@@ -436,7 +436,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 4.  Set the user name and password to an appropriate email account and password.
 5.  Leave **SSLRequired** turned on, and leave **SMTP port number** set to **587**.
 6.  Select **Save**.
-7.  In the browser, navigate to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
+7.  In the browser, go to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
 8.  Select **US-008 Sparrow Retail**.
 9.  Select **Collect** &gt; **Customer balances** &gt; **Collections** to open the **Collections** page.
 10. Select **Communicate** &gt; **Email** &gt; **Statements to contact**.
@@ -449,7 +449,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
     -   Before users can send email messages, "Send As" permissions for each user email account in the client must be given to the email account that is set on the **Email parameters** page. For more information, see [How to set up a multifunction device or application to send email using Microsoft 365](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365).
 
 16. Email that is sent directly from the server, without user interaction, is sent via a batch process and requires that the **Email distributor batch** process be started. Follow these steps to start the process:
-    1.  Navigate to **System administration** &gt; **Periodic tasks** &gt; **Email processing** &gt; **Batch**.
+    1.  Go to **System administration** &gt; **Periodic tasks** &gt; **Email processing** &gt; **Batch**.
     2.  Turn on **Batch processing**.
 
 
