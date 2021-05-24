@@ -37,7 +37,7 @@ The upgrade process can usually upgrade unedited parameter files. It can also up
 > [!IMPORTANT]
 > From now on, add new cells to the new **CustomParameters** sheet in the parameter file, just as they are added in the partial file.
 
-In RSAT release 2.2 and later, the parameter file has a sheet that is named **CustomParameters**. This sheet is included to help future-proof the upgrade of parameter files. If you add cells, add them to this sheet. Microsoft plans to bring forward this sheet directly in later releases of the upgrade feature.
+In RSAT release 2.2 and later, the parameter file has a sheet that is named **CustomParameters**. This sheet is included to help future-proof the upgrade of parameter files. If you add cells, add them to this sheet.
 
 If you added a cell to the old parameter file and assigned a name to that cell, the named cell is automatically moved to the **CustomParameters** sheet during the upgrade, provided that its value doesn't reference other cells.
 
