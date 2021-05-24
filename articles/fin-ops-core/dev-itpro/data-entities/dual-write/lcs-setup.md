@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Dual-write setup from Lifecycle Services
 description: This topic explains how to set up a dual-write connection from Microsoft Dynamics Lifecycle Services (LCS).
 author: RamaKrishnamoorthy
 ms.date: 05/11/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
 ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-01-06
-
 ---
 
 # Dual-write setup from Lifecycle Services
@@ -33,38 +18,48 @@ ms.search.validFrom: 2020-01-06
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This topic describes the steps to enable the Dual-write application directly from Lifecycle Services (LCS).  
+This topic explains how to enable dual-write from Lifecycle Services (LCS).
 
 ## Prerequisites
 
-You must complete the Power Platform Integration setup as defined below:
-* [Power Platform Integration - Enable during environment deployment](../../power-platform/overview.md#Enable-during-enviornment-deployment)
-* [Power Platform integration - Set up after environment deployment](../../power-platform/overview.md#Set-up-after-environment-deployment)
+You must complete the Power Platform integration as described in these topics:
 
-## Setup Dual-write application for new Dataverse environments
++ [Power Platform Integration - Enable during environment deployment](../../power-platform/overview.md#Enable-during-enviornment-deployment)
++ [Power Platform integration - Set up after environment deployment](../../power-platform/overview.md#Set-up-after-environment-deployment)
 
-Follow these steps to perform the setup from LCS environment details page:
+## Set up dual-write application for new Dataverse environments
 
-1. Expand the Power Platform Integration section and the **Setup Dual-write application** button should be available to you. 
-<img src="media/powerplat_integration_step2.png" width="500px" /><br/>
+Follow these steps to set up dual-write from LCS **Environment Details** page:
 
-Click this button, and agree to the terms and conditions then click **Configure**.
-2. A message indicating that the setup has been triggered should be presented, click **Ok** to continue.
-3. You may monitor the progress by refreshing the environment details page periodicially.  Setup typically takes 30 minutes or less.  
-4. Once finished, you will see if the setup was successful or if there was a failure and a related error message displayed.  
-5. If successful, a new button will appear titled **Link to Power Platform environment**.  
-<img src="powerplat_integration_step3.png" width="500px" /><br/>
+1. On the **Environment Details** page, expand the **Power Platform Integration** section.
 
-Use this button to create the link between Dataverse and the current environment's databases.  This typically takes less than 5 minutes.  
-6. If successful, a hyperlink will be made available for you to login to the Dual-write administration area in the Finance & Operations environment.  From there you can setup entity mappings and more.
+2. Select the **Dual-write application** button.
 
-## Setup Dual-write application for existing Dataverse environments
+    ![Power Platform Integration](media/powerplat_integration_step2.png)
 
-Currently, this is only available via opening a support ticket.  Please provide your Finance & Operations environment ID and environment name from Lifecycle Services, and the Dataverse organization ID or Power Platform Environment ID from Power Platform Admin Center in a support ticket and request that to become the instance used for Power Platform Integration.
+3. Review the terms and conditions, and then select **Configure**.
+
+4. Select **Ok** to continue.
+
+5. You can monitor the progress by refreshing the environment details page periodicially.  Setup typically takes 30 minutes or less.  
+
+6. When the setup is complete, a message will tell you if the set was successful or if there was a failure. If the setup failed, then a related error message is displayed. You must fix any errors before moving to the next step.
+
+7. Select the **Link to Power Platform environment** button to create the link between Dataverse and the current environment's databases. This typically takes less than 5 minutes.
+
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link to Power Platform environment":::
+
+8. When the linking is finished, a hyperlink is displayed. Use the link to sign on to the dual-write administration area in the Finance and Operations environment. From there you can setup entity mappings.
+
+## Set up dual-write for an existing Dataverse environment
+
+To set up dual-write for an existing Dataverse environment, you must open a support ticket. The ticket must include:
+
++ Your Finance and Operations environment ID.
++ Your environment name from Lifecycle Services.
++ The Dataverse organization ID or Power Platform Environment ID from Power Platform Admin Center. In your ticket, request that ID to be the instance used for Power Platform integration.
 
 > [!NOTE]
 > You can't unlink environments by using LCS. To unlink an environment, open the **Data integration** workspace in the Finance and Operations environment, and then select **Unlink**.
-
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

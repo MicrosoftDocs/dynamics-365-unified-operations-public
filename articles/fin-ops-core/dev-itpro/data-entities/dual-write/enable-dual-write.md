@@ -31,8 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!Important]
->This process is no longer recommended.  Instead, please setup Dual-write via Lifecycle Services as documented [here](lcs-setup.md).
+> [!IMPORTANT]
+> This process is no longer recommended. You should set up dual-write by using Lifecycle Services. For more information, see [Dual-write setup from Lifecycle Services](lcs-setup.md).
 
 This set of topics provides step-by step instructions that explain how to enable dual-write for existing instances of Finance and Operations apps (Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management), and also for a new or existing Dataverse environment.
 
