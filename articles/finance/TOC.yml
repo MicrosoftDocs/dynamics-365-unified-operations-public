@@ -1504,10 +1504,20 @@
             href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
           - name: Add data fields in the tax integration by using extensions
             href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-          - name: Multiple VAT registration numbers
-            href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
           - name: Set up an environment for master data lookup
             href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+          - name: Multiple VAT registration numbers
+            href: localizations/emea-multiple-vat-registration-numbers.md
+          - name: Reporting for multiple VAT registrations 
+            items:
+            - name: Reporting for multiple VAT registrations
+              href: localizations/emea-reporting-for-multiple-vat-registrations.md
+            - name: Netherlands reporting
+              items:
+              - name: VAT declaration
+                href: localizations/emea-nl-vat-declaration-netherlands.md
+              - name: EU sales list
+                href: localizations/emea-nl-eu-sales-list.md
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
       - name: Australia
@@ -2846,6 +2856,10 @@
           href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
         - name: Audit file (XML Auditfile Financieel XAF)
           href: localizations/emea-nl-audit-file.md
+        - name: VAT declaration (Netherlands)
+          href: localizations/emea-nl-vat-declaration-netherlands.md
+        - name: EU sales list
+          href: localizations/emea-nl-EU-sales-list.md
       - name: Norway
         items:
         - name: Norway overview
