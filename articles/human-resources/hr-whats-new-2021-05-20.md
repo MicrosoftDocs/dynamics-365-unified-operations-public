@@ -47,7 +47,6 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-|
 | Platform update 10.0.18 (42) | -- | [Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18) |
 
 ### Bug fixes
@@ -70,6 +69,7 @@ The following bug fixes are included in this release.
 The following new features are in preview. For more information about turning features on or off, see [Manage features](hr-admin-manage-features.md).
 
 | Feature | Release plan | Documentation |
+| --- | --- | --- |
 | Custom field support in Benefits management eligibility rules | [Custom field support for eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |[Configuring eligiblity rules] (https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-setup-eligibility-rules |
 | Benefits management workspace | [Benefits management workspace (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
 | Leave and absence workflow experience enhancements | [Leave and absence workflow experience enhancements](https://go.microsoft.com/fwlink/?linkid=2147528) | [Request time off](hr-employee-self-service-request-time-off.md)|
