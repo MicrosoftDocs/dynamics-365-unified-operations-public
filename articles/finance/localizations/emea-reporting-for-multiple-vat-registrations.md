@@ -24,7 +24,7 @@ Before you can do the reporting for multiple VAT registrations, the following pr
 
 ### Configure the Tax Calculation service
 
-For information about how to configure the Tax Calculation service, see [Tax Calculation - Finance \| Dynamics 365 \| Microsoft DocsTax Calculation](https://docs.microsoft.com/dynamics365/finance/localizations/global-tax-calcuation-service-overview?toc=/dynamics365/finance/toc.json).
+For information about how to configure the Tax Calculation service, see [Tax Calculation](https://docs.microsoft.com/dynamics365/finance/localizations/global-tax-calcuation-service-overview?toc=/dynamics365/finance/toc.json).
 
 ### Enable features in the feature management
 
@@ -40,7 +40,7 @@ For information about how to configure the Tax Calculation service, see [Tax Cal
 
 ### Set up the Multiple VAT registrations feature
 
-For information about how to set up the **Multiple VAT registrations** feature, see [Multiple VAT registration numbers (Preview)](https://docs.microsoft.com/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers?toc=/dynamics365/finance/toc.json).
+For information about how to set up the **Multiple VAT registrations** feature, see [Multiple VAT registration numbers](https://docs.microsoft.com/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers?toc=/dynamics365/finance/toc.json).
 
 ## Enable features
 
@@ -88,7 +88,7 @@ All tax registrations have the same settings for Intrastat parameters.
 
 -   Commodity code hierarchy
 
-![Foreign trade parameters1](media/Multipleid-image2.jpeg)
+![Foreign trade parameters1](media/Multipleid-image2.png)
 
 For more information about how to configure Intrastat, see [Intrastat overview](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat).
 
@@ -98,9 +98,9 @@ For more information about how to configure Intrastat, see [Intrastat overview](
 
 2.  On the **Intrastat** tab, on the **Electronic reporting for countries/regions** FastTab, select the Intrastat reporting format for each country of your tax registration.
 
-3.  In the **File format mapping** field, select the Electronic reporting (ER) format that has the **Intrastat report** electronic format.
+3.  In the **File format mapping** field, select the Electronic reporting (ER) format for intrastat file export, for example, select **Intrastat (NL)** for Netherlands.
 
-4.  In the **Report format mapping** field, select the ER format that has the **Intrastat report** Microsoft Excel format.
+4.  In the **Report format mapping** field, select the ER format for printable report layout, for example, select **Intrastat report**.
 
 ![foreign trade parameters2](media/Multipleid-image3.png)
 
@@ -124,7 +124,7 @@ A system of two-digit transaction codes is used to differentiate types of trade 
 
 Most countries use two-digit transaction codes. However, in some countries, such as the United Kingdom, the second digit in country-specific guidelines might differ from EU guidelines. In this case, configure country-specific transaction codes, and then manually select them in documents.
 
-Some countries, such as Belgium, Italy, and Austria, use a one-digit transaction code. In this case, you can configure two-digit transaction codes according to European guidelines. Then, if the country-specific Intrastat format should have only one digit, only the first digit will be exported to it.
+Some countries, such as Belgium, Italy, and Austria, use a one-digit transaction code. In this case, you can configure two-digit transaction codes according to European guidelines. Then, if the country-specific Intrastat format should have only one digit, only the first digit will be exported to it. Alternatively, you can configure one-digit transaction code and select it manually in the documents.
 
 Before you configure settings and start to use the Intrastat feature, analyze country transaction codes, and decide how to set up the transaction codes for countries.
 
@@ -171,9 +171,9 @@ All tax registrations have the same setup for compression rules.
 | Commodity code | Yes | Yes | Yes | Yes |
 | Partner Member State | Yes | Yes | Yes | Yes |
 | Transaction code | Yes | Yes | Yes | Yes |
-| VAT number of partner (Tax exempt number)</br><em>Mandatory from 2022 for all EU countries</em> | Yes | Yes | No | Yes |
+| VAT number of partner (Tax exempt number)</br><em>Mandatory on dispatches from 2022 for all EU countries</em> | Yes | Yes | No | Yes |
 | **Optional elements** |  |  |  |  |
-| Country of origin</br><em>(On dispatch and/or on arrival)</em> | Yes | Yes | No | Yes |
+| Country of origin</br><em>(On dispatch and/or on arrival)</em> <em>Mandatory on dispatches from 2022 for all EU countries</em> | Yes | Yes | No | Yes |
 | Delivery terms | Yes | No | Yes | No |
 | Mode of transport | Yes | No | No | Yes |
 | State of origin, County of origin (Region of origin) | Yes | No | No | Yes |
@@ -214,7 +214,7 @@ All tax registrations have the same settings for EU sales list parameters.
 
 2.  On the **EU sales list** tab, set up the parameters on the **Transfer** and **Rounding rules** FastTabs.
 
-**Note:** If one of your tax registrations is in Poland or Hungary (countries that also report also), set the **Transfer purchases** option to **Yes**.
+**Note:** If one of your tax registrations is in Poland or Hungary (countries that report purchases in addition to sales), set the **Transfer purchases** option to **Yes**.
 
 #### Set up EU sales list reporting formats
 
@@ -222,7 +222,7 @@ All tax registrations have the same settings for EU sales list parameters.
 
 2.  On the **EU sales list** tab, on the **Electronic reporting for countries/regions** FastTab, select EU sales list reporting formats for each country of your tax registration.
 
-3.  In the **File format mapping** field, select the ER format that has the **EU sales list report** electronic format.
+3.  In the **File format mapping** field, select the ER format for EU sales list report electronic format. For example, for Netherlands, select **EU Sales list (NL)**.
 
 4.  In the **Report format mapping** field, select the ER format for printable report layout. For example, select either **EU sales list by rows report**, or **EU sales list by columns report**.
 
@@ -258,9 +258,7 @@ The following table shows the earliest ER format versions that you can select th
 
 5.  Transactions for the selected tax registration and documents are transferred. Review the transactions, and make any adjustments that are required.
 
-**Note:** In the 10.0.19, 10.0.20 release, the **Transfer** function runs the generic (global) logic for Intrastat transfers. For France, generic logic runs that has a French extension for the direct delivery scenario (triangulation between three EU countries, where France is party B in the middle of the process).
-
-In future releases, the extension of generic logic will be added country by country, and the design will be updated on a case-by-case basis. Either country-specific logic will run (that is, a country-specific Intrastat transfer X++ class), or extended global logic will run (that is, a generic Intrastat transfer X++ class that is extended with logic that currently exists in country-specific Intrastat transfer classes).
+**Note:** In the 10.0.19, 10.0.20 release, when the feature **Intrastat transfer for Multiple Tax ID** is enabled, the **Transfer** function runs the generic (global) logic for Intrastat transfers. In 10.0.20 release. for France, generic logic runs that also has a French extension for the direct delivery scenario (triangulation between three EU countries, where France is party B in the middle of the process).
 
 In the 10.0.19, 10.0.20 release, Intrastat **Transfer** function has country-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
 
@@ -272,9 +270,9 @@ In the 10.0.19, 10.0.20 release, Intrastat **Transfer** function has country-spe
 
 8.  In the **Intrastat Report** dialog box, in the **From date** and **To date** fields, define the period to generate the Intrastat report for.
 
-9.  Set the **Generate file** option to **Yes** to generate an electronic reporting file. Then, in the **File name** field, enter the name of the output electronic file.
+9.  Set the **Generate file** option to **Yes** to generate an electronic reporting file. Then, in the **File name** field, enter the name of the output electronic file if applicable.
 
-10. Set the **Generate report** option to **Yes** to generate an Excel report. Then, in the **Report file name** field, enter the name of the output Excel file.
+10. Set the **Generate report** option to **Yes** to generate an Excel report. Then, in the **Report file name** field, enter the name of the output Excel file if applicable.
 
 ![Intrastat report dialog box](media/Multipleid-image11.png)
 
@@ -335,8 +333,6 @@ The following table shows the earliest ER format versions, that you can select t
 | 10.0.19 | All | Tax declaration model.version.85</br>Tax declaration model mapping.version.85.138 |
 | 10.0.19 | NL | VAT Declaration XML (NL).version.85.14</br>VAT Declaration Excel (NL).version.85.14.17 |
 
-
-## 
 
 ### Generate a VAT declaration for multiple VAT registrations
 
