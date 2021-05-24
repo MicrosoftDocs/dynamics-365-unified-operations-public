@@ -94,12 +94,12 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.19 (July 2021)
+            href: get-started/whats-new-commerce-10-0-19.md
           - name: Commerce 10.0.18 (May 2021)
             href: get-started/whats-new-commerce-10-0-18.md
           - name: Commerce 10.0.17 (April 2021)
             href: get-started/whats-new-commerce-10-0-17.md
-          - name: Commerce 10.0.16 (February 2021)
-            href: get-started/whats-new-commerce-10-0-16.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -184,6 +184,8 @@
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
         - name: Embed canvas apps from Power Apps 
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
+        - name: Embed third-party apps
+          href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/commerce/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
         - name: Change the date for a session
@@ -280,6 +282,8 @@
           href: dev-itpro/secure-retail-cloud-pos.md
         - name: Retail Hardware Station configuration and installation
           href: retail-hardware-station-configuration-installation.md
+        - name: Mass deployment of sealed Commerce self-service components
+          href: dev-itpro/Enhanced-Mass-Deployment.md
         - name: Mass deployment of legacy self-service components
           href: dev-itpro/retail-mass-deployment.md
         - name: Commerce component events for diagnostics and troubleshooting
@@ -368,7 +372,7 @@
             href: pos-operations.md
           - name: Device activation of a customized Modern POS
             href: dev-itpro/retail-POS-activation-changes.md
-          - name: Enable Azure Active Directory authentication for POS sign-in
+          - name: Configure Azure Active Directory authentication for POS sign-in
             href: aad-pos-logon.md
           - name: Product and customer search in the POS
             href: POS-search-improvements.md
@@ -376,8 +380,6 @@
             href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
           - name: Cash management improvements
             href: cash-mgmt.md
-          - name: Inventory lookup in the POS
-            href: product-variants-POS.md
           - name: Suspend and resume transactions in the POS
             href: pos-suspend-recall-transactions.md
           - name: Offline POS functionality
@@ -634,6 +636,8 @@
           href: tender_based_discounts.md
         - name: Shipping discount overview 
           href: retail-shipping-discount.md
+        - name: Configure gift with purchase promotions
+          href: gift-with-purchase.md
         - name: Set up coupons  
           href: retail-coupons.md
         - name: Show discounts in POS
@@ -708,6 +712,8 @@
             href: pos-outbound-inventory-operation.md
           - name: Calculate inventory availability for retail channels
             href: calculated-inventory-retail-channels.md
+          - name: Inventory lookup operation in POS
+            href: pos-inventory-lookup-operation.md
         - name: Purchase orders   
           items:
           - name: Purchase order overview
@@ -760,6 +766,8 @@
           href: notifications-pos.md
         - name: Sell continuity programs and process sales orders
           href: tasks/use-continuity-program.md
+        - name: Enable customer check-in notifications in point of sale (POS)
+          href: enable-customer-check-in.md
       - name: Returns  
         items:
         - name: Linked refunds
@@ -922,6 +930,8 @@
           href: manage-csp.md
         - name: Opt out of web activity event collection
           href: web-activity-opt-out.md
+        - name: Apply unit of measure settings
+          href: unit-of-measure.md
       - name: Manage your site content 
         items:
         - name: Ways to add content
@@ -1092,6 +1102,8 @@
             href: delivery-options-module.md
           - name: Pickup information module
             href: pickup-info-module.md
+          - name: Check-in for pickup module
+            href: check-in-pickup-module.md
           - name: Order details module
             href: order-confirmation-module.md 
           - name: Gift card module
@@ -1194,6 +1206,8 @@
         href: store-performance-information.md
       - name: Set up Recency, Frequency, and Monetary (RFM) analysis
         href: set-up-rfm-analysis.md
+      - name: Set up Microsoft Clarity in Dynamics 36 Commerce
+        href: set-up-clarity.md
     - name: Globalization
       items:
       - name: Fiscal integration overview for Commerce channel
@@ -1202,6 +1216,14 @@
         href: localizations/setting-up-fiscal-integration-for-retail-channel.md
       - name: User-defined certificate profiles for retail stores
         href: localizations/certificate-profiles-for-retail-stores.md
+      - name: Regulatory configuration service
+        items:
+        - name: Regulatory configuration service overview
+          href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+        - name: Regulatory configuration service - Globalization features
+          href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
+        - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
+          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
       - name: Austria
         items:
         - name: Fiscal registration service integration sample for Austria
@@ -2210,6 +2232,8 @@
             href: e-commerce-extensibility/module-test-file.md 
           - name: Module props.autogenerated.ts file
             href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
+          - name: Module configuration presets
+            href: e-commerce-extensibility/module-config-presets.md
         - name: Develop modules
           items:
           - name: Create a new module
@@ -2362,6 +2386,8 @@
         items:
         - name: POS screen layouts
           href: pos-screen-layouts.md
+        - name: Store Commerce app in Microsoft Dynamics 365 Commerce
+          href: dev-itpro/store-commerce.md
         - name: Open URL in POS
           href: Open-URL-in-POS.md
         - name: Install the POS Layout designer
@@ -2416,6 +2442,42 @@
           href: dev-itpro/cart-view-handlers.md
         - name: Add custom buttons to the POS header bar
           href: dev-itpro/pos-header-bar.md
+        - name: POS independent-packaging SDK 
+          items:
+            - name: POS extension overview
+              href: dev-itpro/pos-extension/pos-extension-overview.md
+            - name: Getting started with POS extensions
+              href: dev-itpro/pos-extension/pos-extension-getting-started.md
+            - name: Create a POS extension package project
+              href: dev-itpro/pos-extension/create-pos-extension-package.md
+            - name: Create an .appx file for a Modern POS extension package
+              href: dev-itpro/pos-extension/create-pos-extension-appx.md
+            - name: Debug POS extensions
+              href: dev-itpro/pos-extension/debug-pos-extension.md
+            - name: Extension packaging and deployment
+              items:
+                - name: Create a Modern POS extension package
+                  href: dev-itpro/pos-extension/mpos-extension-packaging.md
+                - name: Code signing a Modern POS (MSIX) extension package
+                  href: dev-itpro/pos-extension/mpos-extension-signing.md
+                - name: Create a Cloud POS extension package
+                  href: dev-itpro/pos-extension/cpos-extension-package.md
+            - name: Migrate a POS extension to the independent-packaging model
+              href: dev-itpro/pos-extension/migrate-pos-extension.md
+            - name: POS extension development guide
+              items:
+                - name: POS extension basics
+                  href: dev-itpro/pos-extension/pos-extension-basics.md
+                - name: Create a custom view in POS
+                  href: dev-itpro/pos-extension/custom-pos-view.md
+                - name: Use POS controls in extensions
+                  href: dev-itpro/pos-extension/controls-pos-extension.md
+                - name: Tasks
+                  items:
+                    - name: Use Knockout.js in POS extensions
+                      href: dev-itpro/pos-extension/knockout-pos-extension.md
+                    - name: Consume custom headless Commerce APIs
+                      href: dev-itpro/pos-extension/consume-apis-pos.md
       - name: Hardware Station extensibility
         items:
         - name: Hardware Station and extensibility

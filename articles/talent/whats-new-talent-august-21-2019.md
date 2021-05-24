@@ -15,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -70,7 +69,7 @@ A new option will let managers view the performance of both their direct reports
 
 #### Platform update 29 for Finance and Operations
 
-For more details about Platform update 29 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 29 (October 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+For more details about Platform update 29 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 29 (October 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

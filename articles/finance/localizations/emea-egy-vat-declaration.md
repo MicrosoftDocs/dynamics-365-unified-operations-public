@@ -7,7 +7,6 @@ author: sndray
 ms.date: 03/10/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -15,7 +14,7 @@ ms.technology:
 # ms.search.form:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: kfend
 ms.search.scope:
 # ms.tgt_pltfrm: 
 # ms.custom: NotInTOC

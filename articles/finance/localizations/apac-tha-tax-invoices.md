@@ -4,7 +4,6 @@
 title: Tax invoices
 description: This topic explains how to set up tax invoices and when they are generated.
 author: anasyash
-manager: tfehr
 ms.date: 04/07/2021
 ms.topic: article
 ms.prod:
@@ -45,7 +44,7 @@ Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**, 
    - Customer invoice
    - Customer invoice voucher
 
-For more information, see [Number sequences overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
+For more information, see [Number sequences overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
 
 ## Setup
 
@@ -127,4 +126,3 @@ At any time, you can go back to the sales order or free text invoice to print th
     The following illustration shows an example of a printed receipt/tax invoice.
 
     ![A picture containing graphical user interface Description automatically generated](media/apac-tha-tax-invoices-receipt-tax-invoice.png)
-

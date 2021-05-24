@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers the module definition file in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 A module definition file, MODULE\_NAME.definition.json, is used to register a module and provide metadata to the Dynamics 365 Commerce site builder tool. This metadata includes the module name, description, categories, and configurations.
 
 Here is an example of a module definition file.

@@ -15,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -42,7 +41,7 @@ Changes described in this section apply to build number 8.1.2409.
 
 ### Region support for Canada and Southeast Asia
 
-We are pleased to announce that Canada and Southeast Asia regions will be available for Talent on August 1, 2019. With this change, you can create environments in the Canadian and Asian regions, and all Talent data will be maintained solely within those locations. You can create an environment in these new regions by selecting the location in the New Environment dialog and use that environment to provision Talent in LCS as described in [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
+We are pleased to announce that Canada and Southeast Asia regions will be available for Talent on August 1, 2019. With this change, you can create environments in the Canadian and Asian regions, and all Talent data will be maintained solely within those locations. You can create an environment in these new regions by selecting the location in the New Environment dialog and use that environment to provision Talent in LCS as described in [Provision Talent](/dynamics365/unified-operations/talent/provisioning-talent).
 
 Data migration of existing projects from other regions to the Canadian and Asian regions is not supported. Only new projects can be provisioned to these new supported regions.
 
@@ -66,9 +65,9 @@ The **Final comments** label is now translated in the review form.
 
 ### Preview features are enabled only in sandbox instances
 
-When you provision a new instance of Talent, you can specify whether the instance type is **Production** or **Sandbox**. Instances of the **Sandbox** type allow for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
+When you provision a new instance of Talent, you can specify whether the instance type is **Production** or **Sandbox**. Instances of the **Sandbox** type allow for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
 
-For more information about how changes are published, see [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
+For more information about how changes are published, see [Provision Talent](/dynamics365/unified-operations/talent/provisioning-talent).
 
 ### View extended information for performance in manager self-service
 

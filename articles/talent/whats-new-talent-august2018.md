@@ -15,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -90,7 +89,7 @@ you understand what’s being used during the accrual process.
 Document templates have been enabled throughout Core HR. This feature allows you to create letters and reports based on Word templates that you create.
 
 Additional information about this feature is available in the
-[Office integration tutorial](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/talent/toc.json).
+[Office integration tutorial](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json).
 
 
 ## Other fixes

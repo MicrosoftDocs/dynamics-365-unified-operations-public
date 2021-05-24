@@ -36,11 +36,6 @@ https://partner.microsoft.com/en-us/dashboard/commercial-marketplace/offers/<pro
 
 For all models that make up your solution, locate the descriptor XML files. For every descriptor that belongs to a solution, update the `SolutionId` tag with the product ID from Partner Center.
 
-```xml
-<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-    <!-- XML content -->
-    <SolutionId>product-ID-GUID</SolutionId>
-</AxModelInfo>
-```
+:::code language="xml" source="code/descriptor.xml" highlight="19,20":::
 
 After you recompile, the X++ binaries will contain the product ID and will link to ISV Studio after they are deployed to a Tier 2+ sandbox or production environment.

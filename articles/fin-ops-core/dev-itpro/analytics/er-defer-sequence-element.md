@@ -4,7 +4,7 @@
 title: Defer the execution of sequence elements in ER formats
 description: This topic explains how to defer the execution of a sequence element in an Electronic reporting (ER) format.
 author: NickSelin
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,7 +47,7 @@ The **Deferred execution** option isn't applicable to sequences that have been c
 
 ## <a name="Example"></a>Example: Defer the execution of a sequence element in an ER format
 
-The following steps explain how a user in the System administrator or Electronic reporting functional consultant [role](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) can configure an ER format that contains a sequence element where order of execution differs from the order in the format hierarchy.
+The following steps explain how a user in the System administrator or Electronic reporting functional consultant [role](../sysadmin/tasks/assign-users-security-roles.md) can configure an ER format that contains a sequence element where order of execution differs from the order in the format hierarchy.
 
 These steps can be performed in the **USMF** company in Microsoft Dynamics 365 Finance.
 
@@ -62,14 +62,14 @@ If you haven't yet completed the example in the [Defer the execution of XML elem
 
 | Content description            | File name |
 |--------------------------------|-----------|
-| ER data model configuration    | [Model to learn deferred elements.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| ER model mapping configuration | [Mapping to learn deferred elements.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER data model configuration    | [Model to learn deferred elements.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| ER model mapping configuration | [Mapping to learn deferred elements.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 Before you begin, you must also download and save the following configuration of the sample ER solution.
 
 | Content description     |File name |
 |-------------------------|----------|
-| ER format configuration | [Format to learn deferred sequences.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER format configuration | [Format to learn deferred sequences.version.1.1.xml](https://download.microsoft.com/download/0/f/5/0f55c341-8285-4d92-a46d-475d9a010927/Formattolearndeferredsequences.version.1.1.xml) |
 
 ### Import the sample ER configurations
 
@@ -174,7 +174,7 @@ Review the settings of the ER model mapping component that is configured to acce
 1. On the **Format designer** page, select **Run**.
 2. Download the file that the web browser offers, and open it for review.
 
-    ![Downloaded file](./media/ER-DeferredSequence-Run.png)
+    ![Downloaded sample report file](./media/ER-DeferredSequence-Run.png)
 
 Notice that summary line 22 presents the sum of the tax values for the processed transactions. Because the format is configured to use the **model.Data.Summary.Total** binding to return this sum, the sum is calculated by calling the **TotalSum** aggregation of the **Grouped** data source of the *GroupBy* type that uses the model mapping. To calculate this aggregation, model mapping iterates over all transactions that have been selected in the **Filtered** data source. By comparing the execution times of lines 21 and 22, you can determine that calculation of the sum took 10 milliseconds (ms). By comparing the execution times of lines 2 and 21, you can determine that generation of all transactional lines took 7 ms. Therefore, a total of 17 ms was required.
 
@@ -207,7 +207,7 @@ If the volume of transactions is much larger than the volume in the current exam
 12. Select **Save**, and then select **Run**.
 13. Download and review the file that the web browser offers.
 
-    ![Downloaded file](./media/ER-DeferredSequence-Run1.png)
+    ![Downloaded file - Summed tax values](./media/ER-DeferredSequence-Run1.png)
 
     Line 21 contains the running total of tax values that is calculated for all processed transactions by using the generated output as a data source. This data source starts from the beginning of the report and continues through the last tax transaction. Line 22 contains the sum of the tax values for all processed transactions that are calculated in the model mapping by using the data source of the *GroupBy* type. Notice that these values are equal. Therefore, the output-based summing can be used instead of **GroupBy**. By comparing the execution times of lines 2 and 21, you can determine that generation of all the transactional lines and summing took 9 ms. Therefore, as far as the generation of detailed lines and the summing of tax values are concerned, the modified format is approximately two times faster than the original format.
 
@@ -216,7 +216,7 @@ If the volume of transactions is much larger than the volume in the current exam
 16. Select **Save**, and then select **Run**.
 17. Download and review the file that the web browser offers.
 
-    ![Downloaded file](./media/ER-DeferredSequence-Run2.png)
+    ![Downloaded file with edited formula](./media/ER-DeferredSequence-Run2.png)
 
     Notice that the running total of tax values on the last transaction details line now equals the sum on the summary line.
 
@@ -229,7 +229,7 @@ If, for example, you must present the sum of tax values in the header of your re
 3. Select **Save**, and then select **Run**.
 4. Download and review the file that the web browser offers.
 
-    ![Downloaded file](./media/ER-DeferredSequence-Run3.png)
+    ![Downloaded file for summing in report header](./media/ER-DeferredSequence-Run3.png)
 
     Notice that the sum of tax values on summary line 2 now equals 0 (zero), because this sum is now calculated based on the generated output. When line 2 is generated, the generated output doesn't yet contain lines that have transaction details. You can configure this format to defer the execution of the **Report\\Lines\\Summary** sequence element until the **Report\\Lines\\Record** sequence element has been run for all tax transactions.
 
@@ -243,7 +243,7 @@ If, for example, you must present the sum of tax values in the header of your re
 3. Select **Save**, and then select **Run**.
 4. Download and review the file that the web browser offers.
 
-    ![Downloaded file](./media/ER-DeferredSequence-Run4.png)
+    ![Downloaded file - deferred execution](./media/ER-DeferredSequence-Run4.png)
 
     The **Report\\Lines\\Summary** sequence element is now run only after all other items that are nested under its parent element, **Report\\Lines**, have been run. Therefore, it's run after the **Report\\Lines\\Record** sequence element has been run for all tax transactions of the **model.Data.List** data source. The execution times of lines 1, 2, and 3, and of the last line, 22, reveal this fact.
 

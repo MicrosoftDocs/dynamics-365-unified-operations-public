@@ -53,7 +53,7 @@ The existing functionality for financial journals (the general journal, fixed as
 
 ## Issues with One voucher
 
-The One voucher functionality causes issues during settlement, tax calculation, transaction reversal, reconciliation of a subledger to the general ledger, financial reporting, and more. (For more information about issues that can occur during settlement, see, for example, [Single voucher with multiple customer or vendor records](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records).) To work and report correctly, these processes and reports require transaction details. Although some scenarios might still work correctly, depending on your organization's setup, there are often issues when multiple transactions are entered in one voucher.
+The One voucher functionality causes issues during settlement, tax calculation, transaction reversal, reconciliation of a subledger to the general ledger, financial reporting, and more. (For more information about issues that can occur during settlement, see, for example, [Single voucher with multiple customer or vendor records](../accounts-payable/single-voucher-multiple-customer-vendor-records.md).) To work and report correctly, these processes and reports require transaction details. Although some scenarios might still work correctly, depending on your organization's setup, there are often issues when multiple transactions are entered in one voucher.
 
 For example, you post the following multiline voucher.
 

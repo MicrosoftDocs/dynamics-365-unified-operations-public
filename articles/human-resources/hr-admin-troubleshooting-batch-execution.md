@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reset stuck batch jobs
-description: This topic explains how to resolve resolve issues with batch jobs that are stuck.
+description: This topic explains how to resolve issues with batch jobs that are stuck.
 author: andreabichsel
 ms.date: 03/19/2021
 ms.topic: article
@@ -14,7 +14,6 @@ ms.technology:
 # ms.search.form: BatchJob, BatchJobEnhanced
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 

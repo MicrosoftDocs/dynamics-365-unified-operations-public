@@ -4,14 +4,14 @@
 title: Create monthly journal entries in a batch
 description: This topic explains how to create journal entries in a batch to help increase efficiency when monthly lease expenses are recorded.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: Dialog
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

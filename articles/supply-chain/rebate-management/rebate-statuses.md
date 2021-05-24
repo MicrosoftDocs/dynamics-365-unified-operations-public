@@ -7,7 +7,6 @@ author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -29,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.18
 # Rebate statuses
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Rebate statuses help you to track the status of each Rebate management deal. You can also use them for reporting and inquiry purposes. You can set up and name as many rebate status values as you require to support your business process. 
 

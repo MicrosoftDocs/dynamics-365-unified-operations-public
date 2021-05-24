@@ -49,7 +49,7 @@ The VAT return form in Dynamics 365 Finance includes the following reports:
 In the **Feature management** workspace, enable the following features:
 - (Bahrain) Category hierarchy for Sales and purchase tax report.
 
-For more information about how to enable features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+For more information about how to enable features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 In the **Electronic reporting** workspace, import the following Electronic Reporting formats from the repository:
 

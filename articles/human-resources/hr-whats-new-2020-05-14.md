@@ -15,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -38,7 +37,7 @@ This topic describes features that are either new or changed in Dynamics 365 Hum
 
 ## Platform changes
 
-Platform changes are included in this week's release. For more information, see [Platform updates for version 10.0.10 of Finance and Operations apps (May 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). This release includes bug fixes and changes to saved views.
+Platform changes are included in this week's release. For more information, see [Platform updates for version 10.0.10 of Finance and Operations apps (May 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). This release includes bug fixes and changes to saved views.
  
 ## Ensure Dataverse picklists are consistent with Leave enums (436343)
 
@@ -121,7 +120,7 @@ You can specify a carry forward leave type for carry forward balances where carr
 ## See also
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
-[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
 

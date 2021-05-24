@@ -4,7 +4,7 @@
 title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
 author: jasongre
-ms.date: 04/28/2020
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,15 +40,15 @@ This topic provides answers to questions, tips, and troubleshooting information 
 
 ### What platforms do the Office Add-ins support?
 
-The Microsoft Excel Add-in and Microsoft Word Add-in are built by using the Office Web/JavaScript Add-in framework. This framework was originally released for Microsoft Office 2013 but received significant updates in Microsoft Office 2016. For more information, see [Office Add-in host and platform availability](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability). The Excel Add-in requires ExcelAPI 1.2. Therefore, use the [Office Add-in host and platform availability](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability) matrix to determine which platforms support the Excel Add-in. For many users, the phrase "Excel 2016 with the latest updates" is sufficient.
+The Microsoft Excel Add-in and Microsoft Word Add-in are built by using the Office Web/JavaScript Add-in framework. This framework was originally released for Microsoft Office 2013 but received significant updates in Microsoft Office 2016. For more information, see [Office Add-in host and platform availability](/office/dev/add-ins/overview/office-add-in-availability). The Excel Add-in requires ExcelAPI 1.2. Therefore, use the [Office Add-in host and platform availability](/office/dev/add-ins/overview/office-add-in-availability) matrix to determine which platforms support the Excel Add-in. For many users, the phrase "Excel 2016 with the latest updates" is sufficient.
 
 ### Are the Office Add-ins safe?
 
-In an age of malware, full connectivity, and compliance risks, nothing is completely secure. However, the web add-ins, like other websites, are basically a web application that interacts with the Office client products via a limited application programming interface (API). For more details, see [Office Add-ins platform overview](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)
+In an age of malware, full connectivity, and compliance risks, nothing is completely secure. However, the web add-ins, like other websites, are basically a web application that interacts with the Office client products via a limited application programming interface (API). For more details, see [Office Add-ins platform overview](/office/dev/add-ins/overview/office-add-ins)
 
 ### Does the Excel Add-in support Office for Mac?
 
-No. Support for Apple Mac and iOS is currently under development. The Office JavaScript (JS) APIs work differently in Apple Safari and Internet Explorer, especially in respect to authentication. For details about platform support for the Office JS APIs, see [Office Add-in host and platform availability](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability).
+No. Support for Apple Mac and iOS is currently under development. The Office JavaScript (JS) APIs work differently in Apple Safari and Internet Explorer, especially in respect to authentication. For details about platform support for the Office JS APIs, see [Office Add-in host and platform availability](/office/dev/add-ins/overview/office-add-in-availability).
 
 ### What version of Office is required for the Excel Add-in to support AD FS?
 
@@ -56,11 +56,11 @@ For more information, see the "Troubleshooting issue" section later in this topi
 
 ### How can I force an update of Office?
 
-If your Office build isn't updated, you might be on the deferred track ([Overview of update channels for Microsoft 365 Apps](https://technet.microsoft.com/library/mt455210.aspx)). In this case, you can [use the Office Deployment Tool to move to the Current channel](https://technet.microsoft.com/library/jj219422.aspx?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/office-insider) to help guarantee that you have the latest updates. The easiest method is to use the Office Deployment Tool to switch to the Current channel. In this case, the latest updates will be installed immediately.
+If your Office build isn't updated, you might be on the deferred track ([Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels)). In this case, you can [use the Office Deployment Tool to move to the Current channel](/deployoffice/overview-office-deployment-tool?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/office-insider) to help guarantee that you have the latest updates. The easiest method is to use the Office Deployment Tool to switch to the Current channel. In this case, the latest updates will be installed immediately.
 
 ### Why can't you tell me what version of Office or Excel a particular issue is fixed in?
 
-Office has many releases. These releases receive updates at different times and have different version numbers that don't correspond. Some frequently used Office versions and update methods are Click to Run (C2R) Current channel, C2R Deferred, C2R First Update Deferred, Office Insider Fast, Office Insider Slow, and MSI/MSO (install from DVD). For more information about Office versions, see the [Release information for updates to Microsoft 365 Apps](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396) page.
+Office has many releases. These releases receive updates at different times and have different version numbers that don't correspond. Some frequently used Office versions and update methods are Click to Run (C2R) Current channel, C2R Deferred, C2R First Update Deferred, Office Insider Fast, Office Insider Slow, and MSI/MSO (install from DVD). For more information about Office versions, see the [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps?f=255&MSPPError=-2147217396) page.
 
 ### Why am I having trouble signing into the Excel Add-in?
 
@@ -106,7 +106,7 @@ For all environments, including on-premises, the Excel and Word Add-ins, and the
 
 ### Can the Excel Add-in and Word Add-in be made available to users using Centralized Deployment?
 
-Yes, Centralized Deployment is supported. For more information, see [Centralized Deployment](https://docs.microsoft.com/office/dev/add-ins/publish/centralized-deployment). 
+Yes, Centralized Deployment is supported. For more information, see [Centralized Deployment](/office/dev/add-ins/publish/centralized-deployment). 
 
 To use Centralized Deployment, on the **App parameters** tab on the **Office App Parameters** page change the **App ID**, **Store**, and **Store Type**:
 
@@ -140,6 +140,16 @@ If the entity is marked as “IsPublic=Yes” and has unique PublicEntityName an
 The Excel Add-In, Data Management Framework, and Power BI reporting are all designed to interact with data directly on the database level. Because there is no client to adjust Date and Time data to the time zone of the user, all Date and Time values are in UTC.
 
 ## Troubleshooting issues
+
+### Issue: During sign-in to the Excel Add-in, users receive an error message saying they "cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant"
+
+**Issue:** During sign in to the Excel Add-in, a user receives an error similar to the following: 
+-  "AADSTS50020: User account 'XXX' from identity provider 'https://sts.windows.net/XXX' does not exist in tenant 'XXX' and cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e'(Microsoft Business Office Add-in) in that tenant."
+-  "Selected user account does not exist in tenant 'XXX' and cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant."
+
+**Explanation:** This issue is caused by a change made to Azure Active Directory (Azure AD) in April 2021 in regard to external users. Because this change was not made to the Finance and Operations apps, it can affect customers on any version of the platform or application.  
+
+**Fix:** All external users need to be invited to the tenant through Azure AD. For more information, see [Invite users with Azure Active Directory B2B collaboration](/power-platform/admin/invite-users-azure-active-directory-b2b-collaboration).
 
 ### \[Fixed\] Issue: During sign-in to the Excel Add-in, I receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ"
 
@@ -194,9 +204,9 @@ The following illustration shows the setup of SMTP on the **Email parameters** p
 
 **Long-term fix:** The long-term fix for this issue was put in place on May 10, 2016. The Office Add-ins now use a new Dialog API that the Office team added. 
 
-**Taking advantage of the add-in updates that support AD FS:** All Office installations should be updated via **File** > **Account** > **Updates** (for click-to-run installations) or via Windows Update (for MSI installations). The AD FS Dialog API was included in the May update (16.0.6868.2060). For information about updates, see the [Microsoft 365 client update channel releases](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396) page. 
+**Taking advantage of the add-in updates that support AD FS:** All Office installations should be updated via **File** > **Account** > **Updates** (for click-to-run installations) or via Windows Update (for MSI installations). The AD FS Dialog API was included in the May update (16.0.6868.2060). For information about updates, see the [Microsoft 365 client update channel releases](/officeupdates/release-notes-microsoft365-apps?f=255&MSPPError=-2147217396) page. 
 
-If your Office build isn't updated, you might be on the deferred track ([Overview of update channels for Microsoft 365 Apps](https://technet.microsoft.com/library/mt455210.aspx)). In this case, you can [use the Office Deployment Tool to move to the Current channel](https://technet.microsoft.com/library/jj219422.aspx?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/office-insider) to help guarantee that you have the latest updates. Additionally, see [Install the latest version of Office](https://docs.microsoft.com/office/dev/add-ins/develop/install-latest-office-version) and [Office 2016 Deployment Guides for Admins](https://technet.microsoft.com/library/cc303401(v=office.16).aspx). 
+If your Office build isn't updated, you might be on the deferred track ([Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels)). In this case, you can [use the Office Deployment Tool to move to the Current channel](/deployoffice/overview-office-deployment-tool?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/office-insider) to help guarantee that you have the latest updates. Additionally, see [Install the latest version of Office](/office/dev/add-ins/develop/install-latest-office-version) and [Office 2016 Deployment Guides for Admins](/deployoffice/). 
 
 If Office updates can't be installed, the following workaround can unblock users.
 

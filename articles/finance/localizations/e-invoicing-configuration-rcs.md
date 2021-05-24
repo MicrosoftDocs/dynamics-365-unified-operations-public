@@ -4,7 +4,7 @@
 title: Configure Electronic invoicing in Regulatory Configuration Services (RCS)
 description: This topic explains how to configure Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS). 
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -55,6 +55,14 @@ Finally, the features support the exchange of messages with external web service
 
 Availability of the electronic invoicing features depends on the country or region. Although some features are generally available, others are in preview.
 
+#### Generally available features
+
+The following table shows the electronic invoicing features that are generally available.
+
+| Country/region | Feature name                         | Business document |
+|----------------|--------------------------------------|-------------------|
+| Egypt          | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
+
 #### Preview features
 
 The following table shows the electronic invoicing features that are currently in preview.
@@ -66,7 +74,6 @@ The following table shows the electronic invoicing features that are currently i
 | Brazil         | Brazilian NF-e (BR)                  | Fiscal document model 55, correction letters, cancellations, and discards |
 | Brazil         | Brazilian NFS-e ABRASF Curitiba (BR) | Service fiscal documents |
 | Denmark        | Danish electronic invoice (DK)       | Sales invoices and project invoices |
-| Egypt          | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
 | Estonia        | Estonian electronic invoice (EE)     | Sales invoices and project invoices |
 | Finland        | Finnish electronic invoice (FI)      | Sales invoices and project invoices |
 | France         | French electronic invoice (FR)       | Sales invoices and project invoices |
@@ -193,6 +200,8 @@ The following lists show the ER format configurations that are available for the
 - Sales invoice (ES)
 - Project invoice (ES)
 
+In addition to the ER format configurations that are available out of the box to use with the Electronic Invoicing service, you can also create your own ER format configurations. However, the format configurations that are created to use with Electronic Invoicing features don't support direct reference to Finance or Supply Chain Management tables or any of the corresponding metadata. Only references to the ER model mapping are supported.
+
 ### Actions
 
 The following table lists the available actions, and whether they are currently generally available or still in preview.
@@ -207,6 +216,91 @@ The following table lists the available actions, and whether they are currently 
 | Call Mexican PAC Service                      | Integrate with Mexican PAC service for CFDI submission.                      | In preview           |
 | Process response                              | Analyze the response received from the web service call.                     | Generally available  |
 | Use MS Power Automate                         | Integrate with flow built in Microsoft Power Automate.                       | In preview           |
+
+### Applicability rules
+
+Applicability rules are configurable clauses that are defined at the Electronic invoicing feature level. The rules are configured to provide a context for execution of electronic invoicing features through the Electronic Invoicing capability set.
+
+When a business document from Finance or Supply Chain Management is submitted to electronic invoicing, the business document doesn't carry an explicit reference that allows the Electronic Invoicing capability set to call a particular electronic invoicing feature to process the submission.
+
+Nevertheless, when properly configured, the business document contains the necessary elements that allow electronic invoicing to resolve which electronic invoicing feature must be selected and then generate the electronic invoice.
+
+Applicability rules allow the Electronic Invoicing capability set to find the exact electronic invoicing features that must be used to process the submission. This is done by matching the contents from the submitted business document with the clauses from the Applicability rules.
+
+For example, two electronic invoicing features with related Applicability rules are deployed into the Electronic Invoicing capability set.
+
+| Electronic invoicing feature | Applicability rules        |
+|------------------------------|--------------------------- |
+| A                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p>  |
+| B                            | <p>Country = MX</p><p>and</p><p>Legal entity = MXMF</p>  |
+
+If a business document from Finance or Supply Chain Management is submitted to the Electronic Invoicing capability set, the business document contains the following attributes filled as:
+
+- Country = BR
+- Legal entity = BRMF
+
+The Electronic Invoicing capability set will select the electronic invoicing feature **A** to process the submission and generate the electronic invoice.
+
+In the same way, if the business document contains:
+
+- Country = MX
+- Legal entity = MXMF
+
+Electronic invoicing feature **B** is selected to generate the electronic invoice.
+
+The configuration of Applicability rules can't be ambiguous. This means that two or more electronic invoicing features can't have the same clauses, otherwise it will lead to no selection. If there is a duplication of electronic invoicing features, to avoid ambiguity, use additional clauses to allow the Electronic Invoicing capability set to distinguish between the two electronic invoicing features.
+
+For example, consider electronic invoicing feature **C**. This feature is a copy of electronic invoicing feature **A**.
+
+| Electronic invoicing feature | Applicability rules        |
+|------------------------------|--------------------------- |
+| A                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p>  |
+| C                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p>  |
+
+In this example, feature **C** is in front of a business document submission that contains the following:
+
+- Country = BR
+- Legal entity = BRMF
+
+The Electronic Invoicing capability can't distinguish which electronic invoicing feature must be used to process the submission because the submissions contain the exact same clauses.
+
+To create a distinction between the two features through Applicability rules, a new clause must be added to one of the features to allow the Electronic Invoicing capability set to select the proper electronic invoicing feature.
+
+| Electronic invoicing feature | Applicability rules        |
+|------------------------------|--------------------------- |
+| A                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p>  |
+| C                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p><p>and</p><p>Model=55</p>  |
+
+To support creating more complex clauses, the following resources are available:
+
+Logic operators:
+- And
+- Or
+
+Operators types:
+- Equal
+- Not equal
+- Greater than
+- Less than
+- Greater than or equal to
+- Less than or equal to
+- Contains
+- Begins with
+
+Data types:
+- String
+- Number
+- Boolean
+- Date
+- UUID
+
+Capability to group and ungroup clauses.
+The example looks like this.
+
+| Electronic invoicing feature | Applicability rules        |
+|------------------------------|--------------------------- |
+| C                            | <p>Country = BR</p><p>and</p><p>( Legal entity = BRMF</p><p>or</p><p>Model=55)</p>  |
+
 
 ## Configuration providers
 

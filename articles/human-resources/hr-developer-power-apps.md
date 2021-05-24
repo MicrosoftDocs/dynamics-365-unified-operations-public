@@ -14,7 +14,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom:
@@ -63,6 +62,6 @@ To download the **Power Automate – SQL Connect and execute** template, go to [
 
 ## Additional resources
 
-[The Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
+[The Microsoft Power Platform](/power-platform/admin/admin-documentation)</br>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

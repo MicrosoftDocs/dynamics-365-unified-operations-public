@@ -1,10 +1,10 @@
 --- 
 # required metadata 
  
-title: Manage unit of measure
-description: This procedure shows how to define a unit of measure, provide translations for the unit and it's description, and define conversion rules for related units. 
+title: Manage units of measure
+description: This topic describes how to define a unit of measure, provide translations for the unit and its description, and define conversion rules for related units.
 author: sorenva
-ms.date: 07/08/2018
+ms.date: 04/09/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -23,46 +23,108 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Manage unit of measure
+# Manage units of measure
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to define a unit of measure, provide translations for the unit and it's description, and define conversion rules for related units. You can walk through this procedure using demo data, or using your own data.
+This topic describes how to define a unit of measure, provide translations for the unit and its description, and define conversion rules for related units.
 
-1. Go to **Navigation pane > Modules > Product information management > Released product maintenance**.
-2. Click **Units**.
+## Open the Units page
 
-## Create a unit of measure
-1. Click **New**.
-2. In the **Unit** field, type a value. Enter the ID or symbol to use when referring to the unit of measure.  
-3. In the **Description** field, type a value. Enter a descriptive name for the unit of measure in the system language.  
-4. In the **Unit class** field, select an option. The unit class defines what logical grouping, such as area, mass, or quantity, the unit of measure is part of.  
-5. In the **Decimal precision** field, enter a number. Specify the number of decimals that the converted unit of measure must be rounded to when a calculation is completed for the unit of measure.  
-6. Click **Save**.
+To create and work with the units of measure that are available in your system, go to **Organization administration \> Setup \> Units \> Units**.
+
+The remaining sections of this topic describe what you can do on the **Units** page.
+
+## Create standard units and conversions
+
+If your system doesn't already include the most commonly used units of measure for the metric system and/or the US customary system (USCS), the unit setup wizard can help you quickly get started with basic unit definitions and conversions. To complete the wizard, select **Unit creation wizard** on the Action Pane, and then follow the on-screen instructions.
+
+## Create or edit a unit of measure
+
+To create or edit a unit of measure, follow these steps.
+
+1. Follow one of these steps:
+
+    - To edit an existing unit, select it in the list pane.
+    - To create a new unit, select **New** on the Action Pane.
+
+1. On the header of the record, set the following fields:
+
+    - **Unit** – Enter the ID or symbol to use to refer to the unit in the system language. This ID or symbol is usually a common abbreviation for the unit, such as *ea* for each or *cm* for centimeter.
+    - **Description** – Enter a descriptive name for the unit in the system language. This name is usually the full name of the unit, such as *Each* or *Centimeter*.
+
+1. On the **General** FastTab, set the following fields:<!-- KFM: confirm this:    - **Fixed unit assignment** and **Fixed unit** – These fields have an effect only if you're using the Microsoft Retail Essentials product. If the current unit can be mapped to one of the fixed units that are used by Retail Essentials, set the **Fixed unit assignment** option to *Yes*. Then select the fixed unit in the **Fixed unit** field. -->
+
+    - **Unit class** – Select the property that the unit measures (such as length, area, mass, or quantity).
+    - **System of units** – Select the measurement system that the unit belongs to (*Metric units* or *United States customary units*).
+    - **Base unit** – Set this option to *Yes* to use the current unit as the base unit for its unit class. In this case, you only have to specify the conversion factor between the base unit and each additional unit in the unit class. The system can then convert between all units in that unit class. Therefore, it's easier to set up conversions.
+
+        For example, if gallon is the base unit for the *Volume* unit class, you only have to set up conversion factors from quart to gallon and from pint to gallon. The system can then also convert from quart to pint.
+
+        You can have only one base unit per unit class.
+
+    - **System unit** – Set this option to *Yes* to use the current unit as the assumed unit for all unspecified measurements in its unit class. For example, if a field that is used to enter a quantity doesn't allow a unit to be specified (of if the user doesn't select a unit), the system uses the unit that is set as the system unit for the *Quantity* unit class. You can have only one system unit per unit class.
+    - **Decimal precision** – Specify the number of decimal places that values that are specified for the current unit or converted to it should be rounded to.
+
+1. On the Action Pane, select **Save**.
 
 ## Define unit translations
-1. On the **Action Pane**, click **Unit texts**.
-2. Click **New**. Use unit text to create a translation of the ID or a symbol representing the unit of measure for use on external documents in customer- or vendor-specific languages.  
-3. In the **Language** field, enter or select a value.
-4. In the **Text** field, type a value.
-5. Click **Save**.
-6. Close the page.
-7. On the **Action Pane**, click **Translated unit descriptions**.
-8. Click **New**. Define language-specific descriptions for the unit of measure.  
-9. In the **Language** field, enter or select a value.
-10. In the **Description** field, type a value.
-11. Click **Save**.
-12. Close the page.
+
+To define translations for the ID or symbol and the description for a unit of measure, follow these steps.
+
+1. Create or select the unit to create translations for.
+1. On the Action Pane, select **Unit texts**.
+
+    The **Unit texts** page appears. You use this page to define translations for the ID or symbol for the selected unit. Those translations can then be used on external documents in customer-specific or vendor-specific languages.
+
+1. On the Action Pane, select **New**.
+1. In the **Language** field, select the language to translate the unit ID or symbol to.
+1. In the **Text** field, enter the translation of the unit ID or symbol in the selected language.
+1. On the Action Pane, select **Save**.
+1. Close the page.
+1. On the **Action Pane**, select **Translated unit descriptions**.
+
+    The **Translated unit descriptions** page appears. You use this page to define language-specific descriptions for the selected unit.
+
+1. On the Action Pane, select **New**.
+1. In the **Language** field, select the language to translate the unit description to.
+1. In the **Description** field, enter the translation of the unit description in the selected language.
+1. On the Action Pane, select **Save**.
+1. Close the page.
 
 ## Define unit conversion rules
-1. On the **Action Pane**, click **Unit conversions**. Define rules for converting the unit of measure to and from other units of measure in the selected unit class.  
-2. Click **New** to open the drop dialog.
-3. In the **Factor** field, enter a number. Conversion factor between the From unit and the To unit. For example, the conversion factor from centimeter to meter is 100 because there are 100 centimeters in one meter.  
-4. In the **To unit** field, enter or select a value.
-5. In the **Rounding** field, select an option. Define how the converted value should be rounded.  
-6. Click **OK**.
-7. Close the page.
 
+To define rules for conversions between units of measure, follow these steps.
 
+1. Create or select the unit to define conversion rules for.
+1. On the Action Pane, select **Unit conversions**.
+
+    The **Unit conversions** page appears. You use this page to define rules for converting the selected unit to and from other units in the unit class.
+
+1. Select one of the following tabs, depending on the type of conversion that you want to set up:
+
+    - **Standard conversions** – Set up standard conversion rules for all products.
+    - **Intra-class conversions** – Set up product-specific conversion rules for units in the same unit class.
+    - **Inter-class conversions** – Set up product-specific conversion rules for units across unit classes.
+
+1. Follow one of these steps:
+
+    - To create a new conversion, select **New** on the toolbar.
+    - To edit an existing conversion, select the conversion in the grid, and then select **Edit** on the toolbar.
+
+1. In the drop-down dialog box that appears, set the following fields:
+
+    - **Product** – Select the specific product that the conversion applies to. This field is available only for intra-class and inter-class conversions.
+    - **Formula layout** – Leave this field set to *Simple* to specify a simple conversion that has a single factor. Set it to *Advanced* to set up a more complex equation. The format for advanced equations varies, depending on the unit class.
+    - **From unit** – This field shows the selected unit. Usually, you should not change the value. (If you do change the value, you must open the **Unit conversions** page for the selected unit to view your new conversion after you save it.)
+    - **To unit** – Select the unit to convert to.
+    - **Rounding** – Select how fractions should be rounded, based on the **Decimal precision** value of the selected unit (*To nearest*, *Up*, or *Down*).
+    - **Conversion formula** – Use the remaining fields at the top of the drop-down dialog box to specify the formula for converting between the two units. The available fields vary, depending on the unit class and formula layout that you've selected.
+
+1. Select **OK**.
+1. Close the page.
+
+> [!TIP]
+> You can also set up unit conversions per product variant. For more information, see [Unit of measure conversion per product variant](../uom-conversion-per-product-variant.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

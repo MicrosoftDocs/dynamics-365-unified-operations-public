@@ -16,7 +16,6 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro 
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
@@ -41,7 +40,7 @@ With the standalone Onboard app, you don't select the exact location where it sh
 - If no Power Apps environments exist, the location of the organization's existing tenant.
 - The data centers that Talent currently supports.
 
-The Onboard app is provisioned only in supported countries or regions. The supported countries and regions are defined in the Microsoft Trust Center for Talent data transparency. For a list of supported countries and regions, see [International availability of Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability).
+The Onboard app is provisioned only in supported countries or regions. The supported countries and regions are defined in the Microsoft Trust Center for Talent data transparency. For a list of supported countries and regions, see [International availability of Microsoft Dynamics 365](/dynamics365/get-started/availability).
 
 The following illustration shows the logic used for provisioning the standalone Onboard app.
 

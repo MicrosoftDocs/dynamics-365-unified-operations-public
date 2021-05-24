@@ -15,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -48,9 +47,9 @@ This release includes minor bug fixes for Dynamics 365 Talent: Core HR.
 
 ### Preview features are enabled only in sandbox instances
 
-When you provision a new instance of Talent, you can specify whether the instance type is **Production** or **Sandbox**. Instances of the **Sandbox** type allow for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
+When you provision a new instance of Talent, you can specify whether the instance type is **Production** or **Sandbox**. Instances of the **Sandbox** type allow for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
 
-For more information about how changes are published, see [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
+For more information about how changes are published, see [Provision Talent](/dynamics365/unified-operations/talent/provisioning-talent).
 
 ### View extended information for performance in manager self-service
 
@@ -60,7 +59,7 @@ A new option will let managers view the performance of both their direct reports
 
 ### Platform update 29 for Finance and Operations
 
-For more details about Platform update 29 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 29 (October 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+For more details about Platform update 29 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 29 (October 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

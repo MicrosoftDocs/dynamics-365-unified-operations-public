@@ -53,7 +53,7 @@ Before you can use engineering change management, you must enable both the *Engi
 
 First, turn on the features by following these steps.
 
-1. Go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+1. Go to the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 1. Check for updates.
 1. Turn on the feature that is named **Engineering Change Management**.
 1. If you want to use it, then also turn on the feature that is named **Product dimension version**.
@@ -62,9 +62,16 @@ Next, turn on the configuration keys by following these steps.
 
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.
-1. Expand the **Trade** node
-1. Select the **Engineering Change Management** check box.
-1. If you want to use it, then also select the **Product dimension - Version** check box.
+1. Expand the **Trade** node.
+1. Enable the configuration key for the main feature by selecting the **Engineering Change Management** check box.
+1. Expand the **Engineering Change Management** node and make the following settings
+    - **Attribute search** – Select this check box to enable the [attribute search feature](engineering-attributes-and-search.md). We recommend enabling this feature, but you can clear this check box if you won't use it.
+    - **Change management for process manufacturing** – This feature is not yet available, so make sure this check box is *not* selected.
+1. If you see an error message claiming that a feature must be enabled before you can continue, just ignore it.
+1. If you also want to use the version dimension, then select the **Product dimension - Version** check box. (This check box is further down the list, not nested under the **Engineering Change Management** node.)
 1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
+> [!IMPORTANT]
+> Starting in April 2022, the license keys for both **Engineering Change Management** and **Product dimension - Version** will be enabled by default for all new installations, but you will still be able to disable them if needed.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

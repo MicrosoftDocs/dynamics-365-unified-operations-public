@@ -4,7 +4,7 @@
 title: Financial analysis
 description: Financial analysis uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.
 author: kweekley
-ms.date: 05/22/2019
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -70,10 +70,8 @@ The data for **Financial analysis** is pulled from the Entity store (**System ad
 
 You must update the following entities to see data in the **Financial analysis** workspace:
 
-- BudgetActivityMeasure
 - Financial reporting transaction data version 3 
-- CustCollectionsBIMeasurements
-- LedgerActivityMeasure
+- Credit and collections V2
 - LedgerCovLiquidityMeasurement
 - Purchase cube
 - Sales cube
@@ -246,9 +244,9 @@ Power BI doesn't provide an option to hide and show empty rows. If a row doesn't
 
 The information in the following resources isn't required in order to enable the embedded reports for the **Financial analysis** workspace in a production environment. Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports.
 
-- [Accessing Analytical Workspaces and Reports on 1-box environment](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
+- [Accessing Analytical Workspaces and Reports on 1-box environment](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment)
 
-- [Add analytics to workspaces by using Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+- [Add analytics to workspaces by using Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

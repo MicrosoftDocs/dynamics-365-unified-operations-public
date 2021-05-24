@@ -7,7 +7,6 @@ author: marcelbf
 ms.date: 04/05/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-human-resources
 ms.technology:
 
 # optional metadata
@@ -16,7 +15,6 @@ ms.search.form:
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm:
 ms.custom:
@@ -37,7 +35,7 @@ This topic describes features that are new, changed, or coming soon in Dynamics 
 
 For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
 
-For more information about new features and their expected general availability dates, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
+For more information about new features and their expected general availability dates, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
 ## In this release
 
@@ -49,7 +47,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Restrict employees from editing business contact details | [Restricting employees from editing business contact details](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Restrict editing of personal information](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-restrict-editing)|
+| Restrict employees from editing business contact details | [Restricting employees from editing business contact details](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Restrict editing of personal information](./hr-employee-self-service-restrict-editing.md)|
 
 ### Bug fixes
 
@@ -72,21 +70,21 @@ The following new features are in preview. For more information about turning fe
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Benefits management workspace | [Benefits management workspace (Preview)](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
+| Benefits management workspace | [Benefits management workspace (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
 
 ## Coming soon
 
 | Feature | Details |
 | --- | --- |
 | Skills entered by a manager for their employees can be auto-approved by a workflow | Coming soon. |
-| Platform update 10.0.17 (41) | Platform update 10.0.17 is scheduled to begin rolling out with the next release on April 19, 2021. For more information, see [Platform updates for version 10.0.17 of Finance and Operations apps (April 2021)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17). |
+| Platform update 10.0.17 (41) | Platform update 10.0.17 is scheduled to begin rolling out with the next release on April 19, 2021. For more information, see [Platform updates for version 10.0.17 of Finance and Operations apps (April 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md). |
 
-For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
+For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
 ## See also
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
-[Overview of Dynamics 365 Human Resources 2021 release wave 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
 

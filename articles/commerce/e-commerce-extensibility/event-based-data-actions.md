@@ -31,8 +31,6 @@ ms.dyn365.ops.version:
 
 This topic describes how to use event-based data actions.
 
-## Overview
-
 In some scenarios, you don't want a data action to run when a page is first loaded. Instead, you want it to run dynamically in response to some event on the client. For example, a product can be added to a customer's cart in response to a button click, search results can be shown in response to a change in the text input, or banner text can be updated in response to a time-based event.
 
 ## Example

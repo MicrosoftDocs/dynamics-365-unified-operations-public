@@ -15,7 +15,6 @@ ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: anbichse
 # ms.tgt_pltfrm:
 # ms.custom:
 # ms.assetid:
@@ -123,7 +122,7 @@ You can save an onboarding guide as a template. In this way, you can save time w
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
 - [What's new or changed in Dynamics 365 Talent](./whats-new.md)
-- [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Release plans](/business-applications-release-notes/index)
 - [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)
 
 

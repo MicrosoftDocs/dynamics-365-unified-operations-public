@@ -15,7 +15,6 @@ ms.search.form: SystemAdministrationWorkspaceForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -86,7 +85,7 @@ To restore the environment:
 
 1. Follow the instructions in [Recover the Power Apps environment](/power-platform/admin/recover-environment.md).
 
-2. Contact Support to restore the Human Resources environment. For more information, see [Get support](hr-admin-troubleshooting-support.md).
+2. Contact Support to restore the Human Resources environment. For more information, see [Get support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
 > [!Warning]
 > Power Apps environments are only saved for seven days after deletion. You must recover the environment within the seven day period.

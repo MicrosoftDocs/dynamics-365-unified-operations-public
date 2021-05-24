@@ -16,7 +16,6 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
@@ -39,24 +38,24 @@ In Microsoft Dynamics 365 Talent it's easy to modify the user interface and set 
 ## Personalizing Talent 
 The following topics show how to set up many features in Talent that make it easier for you to get your work done in a timely manner. 
 
--   [Personalize the user experience](../fin-and-ops/get-started/personalize-user-experience.md) - This topic explains the different ways in which you can personalize Talent and adapt parts of the product to more closely suite your preferences.
+-   [Personalize the user experience](../fin-ops-core/fin-ops/get-started/personalize-user-experience.md) - This topic explains the different ways in which you can personalize Talent and adapt parts of the product to more closely suite your preferences.
 
--   [Configure and filter workspaces](../fin-and-ops/get-started/configure-filter-workspaces.md) - This topic shows how you can change the appearance and behavior of workspaces.
+-   [Configure and filter workspaces](../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md) - This topic shows how you can change the appearance and behavior of workspaces.
 
--   [Display pages side-by-side using the Open in New Window icon](../fin-and-ops/get-started/display-pages-side-by-side.md) - In some cases, it's efficient to view multiple pages side-by-side, which can make it easier to complete tasks quickly. This topic explains how to display pages side-by-side. 
+-   [Display pages side-by-side using the Open in New Window icon](../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md) - In some cases, it's efficient to view multiple pages side-by-side, which can make it easier to complete tasks quickly. This topic explains how to display pages side-by-side. 
 
--   [Keyboard shortcuts](../fin-and-ops/get-started/shortcut-keys.md) - This topic lists keyboard shortcuts for the United States keyboard layout. 
+-   [Keyboard shortcuts](../fin-ops-core/fin-ops/get-started/shortcut-keys.md) - This topic lists keyboard shortcuts for the United States keyboard layout. 
 
 ## Accessing information
 The following topics explain how to use lookups, and the search and filtering features, to find information quickly. 
 
--   [Use lookups to find information](../fin-and-ops/get-started/use-lookups-to-find-information.md) - This topic shows how lookups can help you quickly find the correct or desired value. The topic describes how lookups work and includes tips to help you optimize your use of them.
+-   [Use lookups to find information](../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md) - This topic shows how lookups can help you quickly find the correct or desired value. The topic describes how lookups work and includes tips to help you optimize your use of them.
 
--   [Advanced filtering and query syntax](../fin-and-ops/get-started/advanced-filtering-query-options.md) - This topic describes the filtering and query options that are available when you use the "matches" operator in the Advanced filter/sort dialog box.
+-   [Advanced filtering and query syntax](../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md) - This topic describes the filtering and query options that are available when you use the "matches" operator in the Advanced filter/sort dialog box.
 
--   [Navigation search](../fin-and-ops/get-started/navigation-search.md) - This topic explains how to use the search functionality to navigate to pages. Talent includes a number of areas and pages to help you perform various tasks. Using the navigation search feature can help you quickly find the pages that you need to complete your tasks. 
+-   [Navigation search](../fin-ops-core/fin-ops/get-started/navigation-search.md) - This topic explains how to use the search functionality to navigate to pages. Talent includes a number of areas and pages to help you perform various tasks. Using the navigation search feature can help you quickly find the pages that you need to complete your tasks. 
 
--   [Action search](../fin-and-ops/get-started/action-search.md) - This topic describes the action search functionality. Action search will help you find and run actions on a page. The pages in the product primarily expose commands on Action Panes, both the standard Action Pane that appears at the top of a page and the toolbars that appear in various sections of a page.
+-   [Action search](../fin-ops-core/fin-ops/get-started/action-search.md) - This topic describes the action search functionality. Action search will help you find and run actions on a page. The pages in the product primarily expose commands on Action Panes, both the standard Action Pane that appears at the top of a page and the toolbars that appear in various sections of a page.
 
 ## Additional resources
 

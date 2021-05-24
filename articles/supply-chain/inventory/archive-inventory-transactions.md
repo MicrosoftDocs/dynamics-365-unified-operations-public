@@ -7,7 +7,6 @@ author: sherry-zheng
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -16,7 +15,6 @@ ms.search.form: InventTransArchiveProcessForm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -28,7 +26,6 @@ ms.dyn365.ops.version: Release 10.0.18
 # Archive inventory transactions
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Over time, the inventory transactions table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This topic describes how you can use the *Inventory transactions archive* feature to archive data about inventory transactions to help improve system performance.
 
@@ -41,7 +38,7 @@ If an `itemId` and `inventDimId` combination contains only one receipt or issue 
 
 ## Turn on the feature in your system
 
-If your system doesn't already include the features that is described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transactions archive* feature.
+If your system doesn't already include the features that is described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transactions archive* feature. Note that this feature cannot be disabled once it has been enabled.
 
 ## Things to consider before you archive inventory transactions
 

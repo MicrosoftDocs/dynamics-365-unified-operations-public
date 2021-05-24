@@ -15,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -135,7 +134,7 @@ After you save and close the new application user in the previous section, you'r
 ### Create the table in Dataverse
 
 > [!IMPORTANT]
-> The integration with LinkedIn Talent Hub depends on virtual tables in Dataverse for Human Resources. As a prerequisite for this step in the setup, you must configure virtual tables. For information about how to configure virtual tables, see [Configure Dataverse virtual tables](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+> The integration with LinkedIn Talent Hub depends on virtual tables in Dataverse for Human Resources. As a prerequisite for this step in the setup, you must configure virtual tables. For information about how to configure virtual tables, see [Configure Dataverse virtual tables](./hr-admin-integration-common-data-service-virtual-entities.md).
 
 1. In Human Resources, open the **Dataverse integration** page.
 
@@ -194,7 +193,7 @@ The following details are imported and included on the new employee record:
 ## See also
 
 [Configure Dataverse virtual tables](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+[What is Microsoft Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

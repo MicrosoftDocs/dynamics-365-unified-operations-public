@@ -240,7 +240,7 @@ SQL server will time outs if the deployment script runs for more than 30 minutes
 
 Channel Database extensions are provided by authoring one or more T-SQL script files and including them in a [deployable package](./retail-sdk/retail-sdk-packaging.md). This process is described in the [Retail SDK](./retail-sdk/retail-sdk-overview.md) documentation.
 
-Extension script files must be written using [T-SQL](https://docs.microsoft.com/sql/t-sql/language-reference) and compatible with [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-features).
+Extension script files must be written using [T-SQL](/sql/t-sql/language-reference) and compatible with [Azure SQL Database](/azure/sql-database/sql-database-features).
 The script files must end with the *.sql* file extension, any other files will be ignored or may induce a packaging or deployment failure. If you intend to deploy your Channel Database extensions as part of Commerce Scale Unit or Modern POS offline,
 the scripts must also be compatible with the version of SQL Express and/or SQL Server that will be used for those components.
 

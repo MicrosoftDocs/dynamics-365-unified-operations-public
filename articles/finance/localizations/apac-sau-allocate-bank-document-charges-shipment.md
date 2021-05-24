@@ -33,7 +33,7 @@ You can allocate bank document charges that are posted in the general journal to
 
 ## Prerequisites
 
-Before you start to allocate the bank document charges, [set up bank facilities and posting profiles for letters of credit](../cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md), and create a purchase order that has an [imported letter of credit](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/tasks/import-letter-credit).
+Before you start to allocate the bank document charges, [set up bank facilities and posting profiles for letters of credit](../cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md), and create a purchase order that has an [imported letter of credit](../cash-bank-management/tasks/import-letter-credit.md).
 
 ## Set up a charge code for bank document charges
 

@@ -4,7 +4,7 @@
 title: Get started with Electronic invoicing for Egypt
 description: This topic provides information that will help you get started with Electronic invoicing for Egypt in Finance and Supply Chain Management.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,8 +30,6 @@ ms.dyn365.ops.version: AX 10.0.12
 # Get started with Electronic invoicing for Egypt
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 This topic provides information that will help you get started with Electronic invoicing for Egypt. The topic guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS), and complement the steps described in [Get started with Electronic invoicing](e-invoicing-get-started.md).
 

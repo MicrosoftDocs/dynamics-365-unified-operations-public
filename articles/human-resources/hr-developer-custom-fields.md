@@ -15,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -34,16 +33,16 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-You can add custom fields to pages in Dynamics 365 Human Resources. For more information about creating custom fields, see [Create and work with custom fields](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
+You can add custom fields to pages in Dynamics 365 Human Resources. For more information about creating custom fields, see [Create and work with custom fields](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 
-Most Dataverse tables support custom fields. For a full list of Dataverse tables, see [Dataverse tables](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities). 
+Most Dataverse tables support custom fields. For a full list of Dataverse tables, see [Dataverse tables](./hr-developer-entities.md). 
 
-Be sure to enable any custom fields that you create so you can use them in Dataverse. For more information, see [Exposing custom fields on data entities](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
+Be sure to enable any custom fields that you create so you can use them in Dataverse. For more information, see [Exposing custom fields on data entities](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
 
 ## See also
 
-[Dataverse tables](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
-[Create and work with custom fields](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
-[Exposing custom fields on data entities](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
+[Dataverse tables](./hr-developer-entities.md)</br>
+[Create and work with custom fields](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
+[Exposing custom fields on data entities](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

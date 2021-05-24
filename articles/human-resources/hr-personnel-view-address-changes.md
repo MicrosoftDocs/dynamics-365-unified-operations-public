@@ -16,7 +16,6 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 269074
@@ -132,9 +131,9 @@ HR personnel can view and monitor address changes from the **Personnel managemen
 When you select the **Address changes** tile, a new page displays the details of any address changes. You can optionally select **Include future address changes** in the upper-right corner to display address changes with a future date.
 
 > [!NOTE]
-> If you want to receive an alert or email about these address changes, you can create a new alert rule on the **Options** tab in the Action Pane. For more information about alert rules, see [Create alert rules](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
+> If you want to receive an alert or email about these address changes, you can create a new alert rule on the **Options** tab in the Action Pane. For more information about alert rules, see [Create alert rules](../fin-ops-core/fin-ops/get-started/create-alerts.md).<br><br>
 
-> If you want to configure a workflow for the address changes, you can select the **Send externally** option on your alert rule, and then use Power Automate to trigger the business event and configure a workflow. For more information, see [Alerts as business events](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).
+> If you want to configure a workflow for the address changes, you can select the **Send externally** option on your alert rule, and then use Power Automate to trigger the business event and configure a workflow. For more information, see [Alerts as business events](../fin-ops-core/fin-ops/get-started/create-alerts.md#alerts-as-business-events).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

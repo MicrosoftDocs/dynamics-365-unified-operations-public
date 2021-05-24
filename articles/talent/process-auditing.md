@@ -14,7 +14,6 @@ ms.technology:
 # ms.search.form: 
 audience: Application user
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 # ms.custom: 7521
 ms.search.region: Global
@@ -31,7 +30,7 @@ ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
 
 You can track changes made to candidates, job openings, or job applications by using audit processing. This is useful for reporting or compliance reasons.
 
-You can view the tracked data in Power BI by using the OData connector. For more information, see [Connect to OData feeds in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-connect-odata).
+You can view the tracked data in Power BI by using the OData connector. For more information, see [Connect to OData feeds in Power BI Desktop](/power-bi/desktop-connect-odata).
 
 ## Track changes
 To set up track changes in recruiting data, follow these steps:

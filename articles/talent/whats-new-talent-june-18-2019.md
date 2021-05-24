@@ -15,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -62,9 +61,9 @@ This change lets users enter compensation data when they fill in the **Transfer 
 
 ### Preview features will be enabled only in sandbox environments
 
-For more information about how changes are published, see [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
+For more information about how changes are published, see [Provision Talent](/dynamics365/unified-operations/talent/provisioning-talent).
 
-When you provision a new instance of Talent, you can indicate whether the instance type is **Production** or **Sandbox**. The **Sandbox** instance type allows for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
+When you provision a new instance of Talent, you can indicate whether the instance type is **Production** or **Sandbox**. The **Sandbox** instance type allows for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
 
 ### Restrict the leave types in time-off requests
 

@@ -77,7 +77,7 @@ The batch jobs that you create will be used to process documents that fail or ti
 
 ## Prerequisite: Add Outbound operation to the POS screen layout
 
-Before your organization can use the outbound operation functionality, it must configure the **Outbound operation** POS operation on one or more of your [POS screen layouts](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Before you deploy the new operation in a production environment, make sure that you thoroughly test it and train your users to use it.
+Before your organization can use the outbound operation functionality, it must configure the **Outbound operation** POS operation on one or more of your [POS screen layouts](/dynamics365/unified-operations/retail/pos-screen-layouts). Before you deploy the new operation in a production environment, make sure that you thoroughly test it and train your users to use it.
 
 ## Overview
 

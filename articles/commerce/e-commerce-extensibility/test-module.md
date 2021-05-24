@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to test a module by previewing and debugging it in a web browser.
 
-## Overview
-
 During development of a module, you can preview and debug the module in your local web browser.
 
 ## Preview a module
