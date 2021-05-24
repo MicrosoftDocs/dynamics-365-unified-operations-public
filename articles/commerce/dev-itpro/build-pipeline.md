@@ -1,6 +1,6 @@
 ---
-title: Setup build pipeline for Commerce SDK to generate the Cloud scale unit and Self-service deployable packages (new independent extension model) .
-description: This topic explains how to set up build pipeline for the commerce SDK to generate the deployable package for the extension code.
+title: Set up a build pipeline for the Commerce SDK
+description: This topic explains how to set up a build pipeline for the Commerce software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code.
 author: mugunthanm
 ms.date: 05/17/2021
 ms.topic: article
@@ -12,125 +12,135 @@ ms.search.validFrom: 05-17-2020
 ms.dyn365.ops.version: AX 10.0.19
 ---
 
-# Setup build pipeline for Commerce SDK
+# Set up a build pipeline for the Commerce SDK
 
 [!include [banner](../../../includes/banner.md)]
 
-This topic applies to Retail SDK version 10.0.19 and later, the steps documented here will not work if you are using the previous version of Retail SDK from the LCS Dev VM, this applicable if you are using the new independent extension model (consuming the packages from the public feed) and using the independent packaging and extension model.
+This topic explains how to set up a build pipeline for the Commerce software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code (by using the new independent extension model).
 
-## Set up a build pipeline in Azure DevOps to generate Cloud Scale Unit extension package:
+This topic applies to version 10.0.19 and later of the Retail SDK. The steps that are described in this topic won't work if you're using the previous version of the Retail SDK from the Dev virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). The information in this topic is applicable if you're using the new independent extension model (that is, if you're consuming the packages from the public feed), and the independent packaging and extension model.
+
+## Set up a build pipeline in Azure DevOps to generate a Cloud Scale Unit extension package
+
+1. Sign in to your Microsoft Azure DevOps organization.
+2. Select **Pipeline**, and then select **New pipeline**.
+3. Select the source repository (repo) for your extension code.
+4. Select **Existing Azure Pipelines YAML file**.
+5. Select or get the [YAML file (build-pipeline.yml) from the Pipeline/YAML\_Files directory in the Dynamics365Commerce.ScaleUnit GitHub repo](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/blob/release/9.29/Pipeline/YAML_Files/build-pipeline.yml).
+
+    > [!NOTE]
+    > The YAML file refers to some scripts in the [Pipeline/PowerShellScripts directory in the Dynamics365Commerce.ScaleUnit GitHub repo](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.29/Pipeline/PowerShellScripts). Be sure to include all those scripts in your repo. If you clone the samples repo, all the scripts are already included.
+
+6. Select **Continue**.
+
+    Scripts in the YAML file build the whole solution and upload the output (the CloudScaleUnitExtensionPackage.zip package) to the **Published Artifacts** drop location for the build.
+
+    > [!NOTE]
+    > The YAML file looks for a solution file in the repo, builds the solution, and then looks for the CloudScaleUnitExtensionPackage.zip package. Therefore, make sure that your extension and packaging projects are linked to a solution. For information about how to model your extension projects, see the samples in the [Dynamics365Commerce.ScaleUnit GitHub repo](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.29).
+
+7. Save your changes, and add the build to the queue.
+8. When the build is completed, you can download the **CloudScaleUnitExtensionPackage.zip** package from **Published Artifacts**.
+
+## Set up a release pipeline for the Cloud Scale Unit extension package
+
+As a best practice, you should set up separate build and release pipelines. If you create a separate release pipeline, you can use the **Upload Asset** task in LCS to upload the CloudScaleUnitExtensionPackage.zip package to the Asset library. If you want to upload to LCS instead of to a separate release pipeline, you can add the task as part of your build pipeline.
+
+Follow these steps to set up the release pipeline to upload the CloudScaleUnitExtensionPackage.zip package to the Asset library in LCS.
+
+1. In Azure DevOps, select **Releases**, select **New pipeline**, and then select **Empty job in the template**.
+2. Enter a name for the new release pipeline. The default name is **App Pipelines \> New release pipeline**.
+3. In the pipeline, select **Add an artifact**.
+4. In the **Add artifact** dialog box, select your project, and then select the build pipeline that you created in the previous section.
+5. Optional: In the artifact that you just created, you can select the **Trigger** button (lightning bolt symbol), enable a continuous deployment trigger, and then select your branch, and so on.
+
+    > [!NOTE]
+    > The release pipeline also offers other options that let you specify how and when the release is triggered.
+
+6. Select **Save** to save your pipeline. If you're prompted for a folder name, enter any folder name.
+7. Select **Stages**, rename stage 1 **Upload Assets to LCS**, and then select **1 Job**.
+8. In **Tasks**, select **Agent job**.
+9. In **Add tasks**, search for **Dynamics Lifecycle Services (LCS) Asset Upload**, and select **Add**.
+10. Set up the upload task by following the steps in [Upload assets to LCS by using Azure pipelines](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/pipeline-asset-upload). In the task, set the following values:
+
+    - **Type of asset:** CloudScaleUnitExtensionPackage
+    - **File to Upload:** $(System.DefaultWorkingDirectory)/\_ScaleUnit-CI/drop/ScaleUnitPackage\_$(Release.Artifacts.\_ScaleUnit-CI.BuildNumber).zip
+    - **LCS Asset Name:** ScaleUnitPackage\_$(Release.Artifacts.\_ScaleUnit-CI.BuildNumber)
+
+        > [!NOTE]
+        > You can change the asset name according to your naming guidelines.
+
+11. After you've finished configuring tasks, select **Save** to save the release pipeline.
+12. On the **Pipelines** tab, select your pipeline, and then select **Create release**.
+13. In the **Create a new release** dialog box, select the Cloud Scale Unit artifact, and then select **Create** to manually trigger the release.
+
+To automate the release pipeline, configure continuous build. For more information, see the [Release pipelines](https://docs.microsoft.com/azure/devops/pipelines/release/?view=azure-devops) documentation.
+
+## Set up a build pipeline in Azure DevOps to generate Retail self-service packages
+
+Follow these steps to generate the Retail Modern POS, Hardware Station, and Cloud Scale Unit (self-hosted) installers.
 
 1. Sign in to your Azure DevOps organization.
-2. Select Pipeline and click New pipeline.
-3. Select your extension code source repo.
-4. Select Existing Azure Pipelines YAML file.
-5. Select/Get the YAML file from /Pipeline/YAML_Files/build-pipeline.yml files [The YAML file are published in the Dynamics365Commerce.ScaleUnit GitHub repo](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/blob/release/9.29/Pipeline/YAML_Files/build-pipeline.yml)
-
-The YAML files refers few other script from the [Dynamics365Commerce.ScaleUnit repo](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit), please include all those scripts in your repo, if you are cloning the samples repo then all the scripts are already included.
-
-All the reference scripts are available in the [Dynamics365Commerce.ScaleUnit GitHub repo.](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.29/Pipeline/PowerShellScripts)
-
-7. Click Continue.
-8. The YAML file has script to build the entire solution and upload the output CloudScaleUnitExtensionPackage.zip package to build Published Artifacts drop location.
-
->
-> Note: The YAML file looks for a solution file in the repo and build the solution and look for output CloudScaleUnitExtensionPackage.zip, so please make sure your extension and packaging projects are linked to a solution, you can refer the samples in [Dynamics365Commerce.ScaleUnit GitHub Repo](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.29) on how to model your extension projects.
-
-9. Save the changes and queue the build.
-10. When the build is complete, you can download the CloudScaleUnitExtensionPackage.zip package from the Published Artifacts.
-
-
-## Setup a Release pipeline:
-
-It’s a best practice to setup separate pipeline for build and release, you can create a separate release pipeline and use the LCS Upload Asset task to upload the CloudScaleUnitExtensionPackage.zip to LCS Asset library, you can also add the task part of our build pipeline to upload to LCS instead of separate release pipeline.
-
-**Follow the below steps to setup the release pipeline to upload the CloudScaleUnitExtensionPackage.zip package to Lifecycle service Assets folder:**
-
-1. Click Releases in the Azure DevOps and click New pipeline and Select Empty job in the template.
-2. Provide a name for your Release pipeline, by default it will be App Pipelines > New release pipeline.
-3. In the Pipeline, Click on the + Add an artifact, in the Add  artifact dialog, select your Project, then select the build pipeline you created in the Setup build pipeline section.
-4. You can click the Thunder bolt/Trigger icon in the Artifact you created in the previous step and enable continuous deployment trigger and choose your branch etc., this step is optional, the Release pipeline provides different options for how/when you want to trigger the release.
-5. Click Save to save your pipeline, it may ask for a folder name, provide any folder name.
-6. Click the Stages and rename the Stage 1 to Upload Assets to LCS and Click the 1 Job.
-7. In the Tasks, click the Agent job. In the Add tasks, search for Dynamics Lifecycle Services (LCS) Asset Upload and click Add.
-
-Follow the Steps mentioned in the [Upload assets to LCS by using Azure pipelines.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-tools/pipeline-asset-upload) doc to Setup the Upload task.
-
-**In the LCS Asset Upload task select:**
-
-- **Type of asset** -  CloudScaleUnitExtensionPackage.
-- **File to Upload** - $(System.DefaultWorkingDirectory)/_ScaleUnit-CI/drop/ScaleUnitPackage_$(Release.Artifacts._ScaleUnit-CI.BuildNumber).zip
-- **LCS Asset Name** - ScaleUnitPackage_$(Release.Artifacts._ScaleUnit-CI.BuildNumber). The Asset name can be changed according to your naming guidelines. 
-
-8. Once the Tasks configuration completed, click Save to save the release pipeline.
-9. Click the Pipelines tab, select your pipeline and click Create release and in the Create a new release dialog, select the Scale unit artifact and Click Create, this will manually trigger the Release.
-
-To automate the release pipeline, configure continuous build follow the [Release pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops) documentation for more information.
-
-## Set up a build pipeline in Azure DevOps to generate Retail self-service packages:
-
-The below steps guide on how you can generate the Retail Modern POS, hardware Station and Cloud Scale unit (self-hosted) installers:
-
-1. Sign in to your Azure DevOps organization.
-2. Select Pipeline and click New pipeline.
+2. Select **Pipeline**, and then select **New pipeline**.
 3. Select your source repo.
-4. Select Existing Azure Pipelines YAML file.
-5. Select the YAML file available in /Pipeline/YAML_Files/build-pipeline.yml files, the YAML file are published in the [Dynamics365Commerce.InStore GitHub repo]( https://github.com/microsoft/Dynamics365Commerce.InStore/blob/release/9.29/Pipeline/YAML_Files/build-pipeline.yml)
+4. Select **Existing Azure Pipelines YAML file**.
+5. Select the [YAML file (build-pipeline.yml) from the Pipeline/YAML\_Files directory in the Dynamics365Commerce.InStore GitHub repo](https://github.com/microsoft/Dynamics365Commerce.InStore/blob/release/9.29/Pipeline/YAML_Files/build-pipeline.yml).
 
-The YAML files refers few other script from the [Dynamics365Commerce.InStore repo](https://github.com/microsoft/Dynamics365Commerce.InStore), please include those scripts in your repo, if you are cloning the samples repo then all the scripts are already included.
+    > [!NOTE]
+    > The YAML file refers to some scripts in the [Pipeline/PowerShellScripts directory in the Dynamics365Commerce.InStore GitHub repo](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.29/Pipeline/PowerShellScripts). Be sure to include all those scripts in your repo. If you clone the samples repo, all the scripts are already included.
 
-All the reference scripts are available in the [Dynamics365Commerce.ScaleUnit GitHub repo.](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.29/Pipeline/PowerShellScripts)
+6. Select **Continue**.
 
-7. Click Continue.
-8. The YAML file has steps to sign the Modern POS and Hardware station installer using a certificate, the script will look for a certificate file in the Azure key Vault and use that for signing. To read the certificate from Azure key Vault you need to provide application id, secret, Certificate name and Timestamp server details (signing the certificate with timestamp). 
+    The YAML file has steps to sign the Modern POS and Hardware Station installers by using a certificate. The script will look for a certificate file in the Azure key vault and use that certificate file for signing. To read the certificate from Azure Key Vault, you must provide the application ID, secret, certificate name, and timestamp server details (for signing the certificate by using a timestamp). For more information, see [How to set and retrieve a certificate from Azure Key Vault using the Azure portal](https://docs.microsoft.com/azure/key-vault/certificates/quick-create-portal).
 
-Refer [How to set and retrieve a certificate from Azure Key Vault using the Azure portal](https://docs.microsoft.com/en-us/azure/key-vault/certificates/quick-create-portal) for more information.
+    To view the details of the key vault and the timestamp server in the pipeline, create the following variables on the **Variables** tab in your build pipeline, and provide values for them. To help secure the variables, you can select **Secret** as the variable type.
 
-To read the Azure key Vault and timestamp server details in the pipeline, create the below variables in your build pipeline by clicking the Variables tab and provide values for the variables, you can choose the variables type to Secret if you want to secure it.
-  
-- ApplicationId
-- AzureKeyVaultURI
-- CertificateName
-- SecretValue
-- Timestamp
- 
- For the timestamp, you can choose any timestamp provider. Ex: http://timestamp.digicert.com
- 
-If you are not storing your certificate in Azure, you can use other options like Secure task or some other Azure DevOps pipeline supported options to sign the installers. If you don’t want to sign the installers you can remove the sign step from the YAML file, search for task: PowerShell@2 in the YAMl file and remove it.
+    - ApplicationId
+    - AzureKeyVaultURI
+    - CertificateName
+    - SecretValue
+    - Timestamp
 
-9. The YAML file has script to build the entire solution and upload the output HardwareStation.Installer.exe and ModernPos.Installer.exe package to build Published Artifacts drop location.
+        You can specify any timestamp provider as the value of this variable, such as `http://timestamp.digicert.com`.
 
->
-> Note: The YAML file looks for a solution file in the repo and build the solution and look for output HardwareStation.Installer.exe and ModernPos.Installer.exe, so please make sure your extension and packaging projects are linked to a solution, you can refer the samples in [Dynamics365Commerce.InStore GitHub repo]( https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.29) on how to model your extension projects.
+    If you aren't storing your certificate in Azure, you can sign the installers by using the **Secure task** option or other options that Azure DevOps pipelines support.
+    
+    If you don't want to sign the installers, you can remove the signing step from the YAML file. In the YAML file, search for the **PowerShell\@2** task, and remove it.
 
-10. Save the changes and queue the build.
-11. When the build is complete, you can download the CloudScaleUnitExtensionPackage.zip package from the Published Artifacts.
+    Scripts in the YAML file build the whole solution and upload the output (the HardwareStation.Installer.exe and ModernPos.Installer.exe packages) to the **Published Artifacts** drop location for the build.
 
+    > [!NOTE]
+    > The YAML file looks for a solution file in the repo, builds the solution, and then looks for the HardwareStation.Installer.exe and ModernPos.Installer.exe packages. Therefore, make sure that your extension and packaging projects are linked to a solution. For information about how to model your extension projects, see the samples in the [Dynamics365Commerce.InStore GitHub repo](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.29).
 
-## Setup a Release pipeline:
+7. Save your changes, and add the build to the queue.
+8. When the build is completed, you can download the **HardwareStation.Installer.exe** and **ModernPos.Installer.exe** packages from **Published Artifacts**.
 
-Its best practice to setup separate pipeline for build and release, you can create a separate release pipeline and use the LCS Upload Asset task to upload the HardwareStation.Installer.exe and ModernPos.Installer.exe to LCS Asset library, you can also add the task part of our build pipeline to upload instead of separate release pipeline.
+## Set up a release pipeline for Retail self-service packages
 
-Follow the below steps to setup the release pipeline to upload the HardwareStation.Installer.exe and ModernPos.Installer.exe to Lifecycle service Assets folder:
+As a best practice, you should set up separate build and release pipeline. If you create a separate release pipeline, you can use the **Upload Asset** task in LCS to upload the HardwareStation.Installer.exe and ModernPos.Installer.exe packages to the Asset library. If you want to upload to LCS instead of to a separate release pipeline, you can add the task as part of your build pipeline.
 
-1. Click Releases in the Azure DevOps and click New pipeline and Select Empty job in the template.
-2. Provide a name for your Release pipeline, by default it will be App Pipelines > New release pipeline.
-3. In the Pipeline, Click on the + Add an artifact, in the Add  artifact dialog, select your repo Project, then select the build pipeline you created in the setup build pipeline section.
-4. You can click the Thunder bolt icon in the Artifact you created in the previous step and enable continuous deployment trigger and choose your branch etc., this step is optional, the Release pipeline provides different options for how/when you want to release the package.
-5. Click Save to Save your pipeline, it may ask for a folder name, provide any folder name.
-6. Click the Stages and rename the Stage 1 to Upload Assets to LCS and Click the 1 Job.
-7. In the Tasks, click the Agent job. In the Add tasks, search for Dynamics Lifecycle Services (LCS) Asset Upload and click Add.
+Follow these steps to set up the release pipeline to upload the HardwareStation.Installer.exe and ModernPos.Installer.exe packages to the Asset library in LCS.
 
-Follow the Steps mentioned in the [Upload assets to LCS by using Azure pipelines.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-tools/pipeline-asset-upload) doc to fully Setup the Upload task.
+1. In Azure DevOps, select **Releases**, select **New pipeline**, and then select **Empty job in the template**.
+2. Enter a name for the new release pipeline. The default name is **App Pipelines \> New release pipeline**.
+3. In the pipeline, select **Add an artifact**.
+4. In the **Add artifact** dialog box, select your repo project, and then select the build pipeline that you created in the previous section.
+5. Optional: In the artifact that you just created, you can select the **Trigger** button (lightning bolt symbol), enable a continuous deployment trigger, and then select your branch, and so on.
 
+    > [!NOTE]
+    > The release pipeline also offers other options that let you specify how and when the release is triggered.
 
-**In the LCS Asset Upload task select:**
+6. Select **Save** to save your pipeline. If you're prompted for a folder name, enter any folder name.
+7. Select **Stages**, rename stage 1 **Upload Assets to LCS**, and then select **1 Job**.
+8. In **Tasks**, select **Agent job**.
+9. In **Add tasks**, search for **Dynamics Lifecycle Services (LCS) Asset Upload**, and select **Add**.
+10. Fully set up the upload task by following the steps in [Upload assets to LCS by using Azure pipelines](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/pipeline-asset-upload). In the task, set the following values:
 
-- **Type of asset** -  Retail Self-Service Package
-- **File to Upload** - $(System.DefaultWorkingDirectory)/_CommerceSDK-Signing-EXE/drop/Installer_$(Release.Artifacts._CommerceSDK-Signing-EXE.BuildNumber).exe
-- **LCS Asset Name** - Installer_$(Release.Artifacts._CommerceSDK-Signing-EXE.BuildNumber).
+    - **Type of asset:** Retail Self-Service Package
+    - **File to Upload:** $(System.DefaultWorkingDirectory)/\_CommerceSDK-Signing-EXE/drop/Installer\_$(Release.Artifacts.\_CommerceSDK-Signing-EXE.BuildNumber).exe
+    - **LCS Asset Name:** Installer\_$(Release.Artifacts.\_CommerceSDK-Signing-EXE.BuildNumber)
 
-8. Once the Tasks configuration completed, click Save to save the release pipeline.
-9. Click the Pipelines tab, select your pipeline and click Create release and in the Create a new release dialog, select the artifact and Click Create, this will manually trigger the Release.
+11. After you've finished configuring tasks, select **Save** to save the release pipeline.
+12. On the **Pipelines** tab, select your pipeline, and then select **Create release**.
+13. In the **Create a new release** dialog box, select the artifact, and then select **Create** to manually trigger the release.
 
-To automate the release pipeline, configure continuous build follow the [Release pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops) documentation for more information.
+To automate the release pipeline, configure continuous build. For more information, see the [Release pipelines](https://docs.microsoft.com/azure/devops/pipelines/release/?view=azure-devops) documentation.
