@@ -4,7 +4,7 @@
 title: Database point-in-time restore (PITR)
 description: This topic explains how to perform a point-in-time restore of a database for Finance and Operations.
 author: LaneSwenka
-ms.date: 09/22/2020
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
