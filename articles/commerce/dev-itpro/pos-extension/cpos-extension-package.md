@@ -101,7 +101,7 @@ The deployment package for CSU can be created by consuming the **Microsoft.Dynam
     To uninstall the extension:
 
     ```powershell
-    PS C:\ModernPos.Installer\bin\Debug\net461> .\ ScaleUnit.Installer.exe 
+    PS C:\ModernPos.Installer\bin\Debug\net461> .\ScaleUnit.Installer.exe uninstall
     ```
 
     > [!NOTE]
