@@ -68,7 +68,7 @@ This is also referred to as [Golden configuration promotion](dbmovement-scenario
 #### These elements are removed for all database refresh operations
 
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
-* All files stored in Azure blob storage. This notably includes document attachments (from the DocuValue and DocuDeletedValue tables) and custom Microsoft Office templates (from the DocuTemplate table).
+* All files stored in Azure blob storage. This includes document attachments (from the DocuValue and DocuDeletedValue tables) and custom Microsoft Office templates (from the DocuTemplate table).
 * All batch jobs are set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
 * All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
@@ -89,7 +89,7 @@ Here is the list of requirements and conditions of operation for a database refr
 - A refresh performs a delete operation on the original target database.
 - The target environment will be available until the database copy has reached the target server. After that point, the environment will be offline until the refresh process is completed.
 - The refresh will affect only the application and Financial Reporting databases.
--  No **file stored in Azure blob storage is copied** from one environment to another. This notably includes **document attachments and custom Microsoft Office templates**. These documents won't be changed and will remain in their current state. 
+-  No **file stored in Azure blob storage is copied** from one environment to another. This includes **document attachments and custom Microsoft Office templates**. These documents won't be changed and will remain in their current state. 
 - All users except the Admin user and other internal service user accounts will be unavailable. This process allows the Admin user to delete or obfuscate data before allowing other users back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 - All data management framework with recurring import and export jobs must be fully processed and stopped in the target system prior to initiating the restore. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. This will ensure there are no orphaned files in Azure storage from either system. This is important because orphaned files cannot be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
