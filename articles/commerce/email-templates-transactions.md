@@ -83,26 +83,33 @@ The following placeholders retrieve and show data that is defined at the sales o
 | Placeholder name     | Placeholder value                                            |
 | -------------------- | ------------------------------------------------------------ |
 | customername         | The name of the customer who placed the order.               |
-| salesid              | The sales ID of the order.                                   |
-| deliveryaddress      | The delivery address for shipped orders.                     |
 | customeraddress      | The address of the customer.                                 |
 | customeremailaddress | The email address that the customer entered at checkout.     |
+| salesid              | The sales ID of the order.                                   |
+| orderconfirmationid  | The cross-channel ID generated at order creation.            |
+| channelid            | The id of the retail or online channel the order was placed through. |
+| deliveryname         | The name specified with the delivery addrress.               |
+| deliveryaddress      | The delivery address for shipped orders.                     |
 | deliverydate         | The delivery date.                                           |
 | shipdate             | The ship date.                                               |
 | modeofdelivery       | The delivery mode of the order.                              |
+| ordernetamount       | The total amount for the order, minus the total tax.         |
+| discount             | The total discount for the order.                            |
 | charges              | The total charges for the order.                             |
 | tax                  | The total tax for the order.                                 |
 | total                | The total amount for the order.                              |
-| ordernetamount       | The total amount for the order, minus the total tax.         |
-| discount             | The total discount for the order.                            |
 | storename            | The name of the store where the order was placed.            |
 | storeaddress         | The address of the store that placed the order.              |
 | storeopenfrom        | The opening time of the store that placed the order.         |
 | storeopento          | The closing time of the store that placed the order.         |
-| pickupstorename      | The name of the store where the order will be picked up.     |
-| pickupstoreaddress   | The address of the store where the order will be picked up.  |
-| pickupopenstorefrom  | The opening time of the store where the order will be picked up. |
-| pickupopenstoreto    | The closing time of the store where the order will be picked up. |
+| pickupstorename      | The name of the store where the order will be picked up.*     |
+| pickupstoreaddress   | The address of the store where the order will be picked up.*  |
+| pickupopenstorefrom  | The opening time of the store where the order will be picked up.* |
+| pickupopenstoreto    | The closing time of the store where the order will be picked up.* |
+| pickupchannelid      | The channel ID of the store specified for a pick up mode of delivery.* |
+| packingslipid        | The ID of the packing slip generated when lines in an order are packed.* |
+
+* These placeholders only return data when used in the Order ready for pickup notifcation type. 
 
 ### Order line placeholders (sales line level)
 
@@ -110,7 +117,10 @@ The following placeholders retrieve and show data for individual products (lines
 
 | Placeholder name               | Placeholder value |
 |--------------------------------|-------------------|
-| productid                      | The product ID for the line. |
+| productid                      | The product ID for the line. Deprecated in favor of lineproductrecid. |
+| lineproductrecid               | The product ID for the line. |
+| lineitemid                     | The human-readable product ID. Can be used to look up a product image. |
+| lineproductvariantid           | The human-readable ID for the product variant. |
 | lineproductname                | The name of the product. |
 | lineproductdescription         | The description of the product. |
 | linequantity                   | The number of units that were ordered for the line, plus the unit of measure (for example, **ea**, or **pair**). |
@@ -129,6 +139,8 @@ The following placeholders retrieve and show data for individual products (lines
 | linedeliverydate               | The delivery date for the line. |
 | linedeliverymode               | The delivery mode for the line. |
 | linedeliveryaddress            | The delivery address for the line. |
+| linepickupdate                 | The pickup date specified by the customer for orders that use a pick up mode of delivery. |
+| linepickuptimeslot             | The pickup time range specified by the customer for orders that use a pick up mode of delivery. |
 | giftcardnumber                 | The gift card number, for products of the gift card type. |
 | giftcardbalance                | The gift card balance, for products of the gift card type. |
 | giftcardmessage                | The gift card message, for products of the gift card type. |
