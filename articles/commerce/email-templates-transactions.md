@@ -4,7 +4,7 @@
 title: Create email templates for transactional events 
 description: This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.8
 [!include [banner](includes/banner.md)]
 
 This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Dynamics 365 Commerce provides an out-of-box solution for sending emails that alert customers about transactional events (for example, when an order is placed, an order is ready for pickup, or an order has been shipped). This topic describes the steps for creating, uploading, and configuring the email templates that are used to send transactional emails.
 
@@ -87,7 +85,7 @@ The following placeholders retrieve and show data that is defined at the sales o
 | customeremailaddress | The email address that the customer entered at checkout.     |
 | salesid              | The sales ID of the order.                                   |
 | orderconfirmationid  | The cross-channel ID generated at order creation.            |
-| channelid            | The id of the retail or online channel the order was placed through. |
+| channelid            | The ID of the retail or online channel the order was placed through. |
 | deliveryname         | The name specified with the delivery addrress.               |
 | deliveryaddress      | The delivery address for shipped orders.                     |
 | deliverydate         | The delivery date.                                           |
@@ -106,10 +104,10 @@ The following placeholders retrieve and show data that is defined at the sales o
 | pickupstoreaddress   | The address of the store where the order will be picked up.*  |
 | pickupopenstorefrom  | The opening time of the store where the order will be picked up.* |
 | pickupopenstoreto    | The closing time of the store where the order will be picked up.* |
-| pickupchannelid      | The channel ID of the store specified for a pick up mode of delivery.* |
+| pickupchannelid      | The channel ID of the store specified for a pickup mode of delivery.* |
 | packingslipid        | The ID of the packing slip generated when lines in an order are packed.* |
 
-\* These placeholders only return data when used in the Order ready for pickup notifcation type. 
+\* These placeholders only return data when used in the **Order ready for pickup** notification type. 
 
 ### Order line placeholders (sales line level)
 
