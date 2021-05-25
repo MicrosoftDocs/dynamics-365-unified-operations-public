@@ -70,7 +70,7 @@ You can ask the bot to:
 
 - The chat bot will populate a leave request for you. Select **Request time off** and edit the details for your request.
 
-   In case you want to submit leave requests for multiple leave types for the same date, select the **Split day with** option from the **More options** menu. 
+   If you want to submit leave requests for multiple leave types for the same date, select the **Split day with** option from the **More options** menu. 
 
    If you select a half day leave when the leave request unit is in days, you can specify whether you want to request time off the first half day or the second half day by selecting the **Half day definition** option from the **More options** menu.
    
@@ -102,11 +102,11 @@ The **Time off** tab allows you to view:
 
 3. If applicable, enter a reason code. Also enter any comments and add any attachments.
 
-4. Select the **Split day with** option from the **More options** menu in case you want to submit for multiple leave request entries for the same date for different leave types.
+4. Select the **Split day with** option from the **More options** menu if you want to submit multiple leave request entries for the same date for different leave types.
 
-5. Select the **Half day definition** option to specify if you want to request a first half day off or the second half day off. This option is available when the leave request unit is in days and the amount requested is 0.5 days.
+5. Select the **Half day definition** option to specify if you want to request the first half day off or the second half day off. This option is available when the leave request unit is in days and the amount requested is 0.5 days.
 
-6. When you're done entering information, type **Submit** to submit it for approval. You can also type **Save as draft** to come back to it later.
+6. When you're done entering information, enter **Submit** to submit it for approval. You can also enter **Save as draft** to come back to it later.
 
 ### Manage draft requests
 
