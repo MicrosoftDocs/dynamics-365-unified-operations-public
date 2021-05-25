@@ -112,21 +112,15 @@ The **Time off** tab allows you to view:
 
 1. Select the **Drafts** tab.
 
-   ![Human Resources Teams leave app Drafts tab](./media/hr-teams-leave-app-drafts-tab.png)
-
 2. Select the pencil to edit the request, or select the trash can to delete the request.
 
 3. Make any necessary changes. When you're done entering information, type **Submit** to submit it for approval. You can also select **Save as draft** to come back to it later.
-
-   ![Human Resources Teams leave app edit draft](./media/hr-teams-leave-app-drafts-edit.png)
    
 ### Respond to Teams notifications
 
 When you or a worker you're an approver for submits a leave request, you'll receive a notification in the Human Resources app in Teams. You can select the notification to view it. Notifications also appear in the **Chat** area.
 
 If you're an approver, you can select **Approve** or **Deny** in the notification. You can also provide an optional message.
-
-![Leave request notification in Human Resources Teams app](./media/hr-teams-leave-app-notification.png)
 
 ## Send upcoming time-off information to your coworkers
 
@@ -138,15 +132,9 @@ After you install the Human Resources app for Teams, you can easily send informa
 
 2. Select the leave request you want to share. If you want to share a draft leave request, select **Drafts** first.
 
-   ![Select an upcoming leave request to share](./media/hr-teams-leave-app-chat-search.png)
-
 Your leave request will display in the chat.
 
-![Human Resources leave request card](./media/hr-teams-leave-app-chat-card.png)
-
-If you shared a draft request, it will display as a draft:
-
-![Human Resources draft leave request card](./media/hr-teams-leave-app-chat-draft-card.png)
+If you shared a draft request, it will display as a draft.
 
 ## View your team's leave calendar
 
@@ -155,8 +143,6 @@ If you're a manager with direct reports, you can view your team's approved and p
 1. In the Human Resources app in Teams, select **Time off**.
 
 2. Select **Team calendar**. The calendar displays your direct reports' approved and pending time off.
-
-   ![View calendar in Human Resources Teams app](./media/hr-teams-leave-app-view-calendar.png)
 
    > [!NOTE]
    > If you can't see the team calendar, ask your admin to enable it. For more information, see [Install and setup](hr-admin-teams-leave-app.md#install-and-setup).
