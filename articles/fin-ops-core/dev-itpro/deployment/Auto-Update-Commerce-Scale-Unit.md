@@ -5,7 +5,7 @@ title: Auto-update Commerce Scale Unit (cloud)
 description: This topic describes auto-updates for Commerce Scale Unit (cloud).
 author: AamirAllaq
 manager: tonyafehr
-ms.date: 07/28/2020
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,7 +51,7 @@ Updates to Commerce HQ and Commerce Scale Unit (cloud) are applied sequentially.
 > [!NOTE]
 > Downtime duration will vary for each update and data volume. To estimate a realistic downtime duration, ensure that your Sandbox UAT environment has the same data as your Production environment. To do this, follow the steps in [Refresh database](../database/database-refresh.md). You also need to apply the same update in Sandbox UAT that you plan to estimate the downtime duration for.
 
-For retailers with a business need for redundancy, Modern POS offline capability allows core POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with Commerce Scale Unit will also continue to operate with support for core POS operations during cloud maintenance windows. For more information, see Online and offline point of sale (POS) operations.
+For retailers with a business need for redundancy, Modern POS offline capability allows core POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with Commerce Scale Unit will also continue to operate with support for core POS operations during cloud maintenance windows. For more information, see [Online and offline point of sale (POS) operations](../../../commerce/pos-operations.md).
 
 ## Version support and backward compatibility
 All in-instore components must be running released software that is less than 12 months old in order to maintain support. Customers are responsible for updating self-hosted components (such as components installed in stores or in privately managed datacenters) and ensuring that the installed versions of these components are actively supported.
