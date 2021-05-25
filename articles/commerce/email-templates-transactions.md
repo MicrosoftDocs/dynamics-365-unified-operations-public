@@ -115,8 +115,8 @@ The following placeholders retrieve and show data for individual products (lines
 
 | Placeholder name               | Placeholder value |
 |--------------------------------|-------------------|
-| productid                      | The ID for the product, accounting for variant. Deprecated in favor of lineproductrecid. |
-| lineproductrecid               | The ID for the product, accounting for variant. The product rec ID uniquely identifies an item at the variant level. |
+| productid                      | The ID for the product, accounting for variant. Deprecated in favor of **lineproductrecid**. |
+| lineproductrecid               | The ID for the product, accounting for variant. Uniquely identifies an item at the variant level. |
 | lineitemid                     | The product-level ID for the product (does not account for variant). |
 | lineproductvariantid           | The ID for the product variant. |
 | lineproductname                | The name of the product. |
@@ -137,8 +137,8 @@ The following placeholders retrieve and show data for individual products (lines
 | linedeliverydate               | The delivery date for the line. |
 | linedeliverymode               | The delivery mode for the line. |
 | linedeliveryaddress            | The delivery address for the line. |
-| linepickupdate                 | The pickup date specified by the customer for orders that use a pick up mode of delivery. |
-| linepickuptimeslot             | The pickup time range specified by the customer for orders that use a pick up mode of delivery. |
+| linepickupdate                 | The pickup date specified by the customer for orders that use a pickup mode of delivery. |
+| linepickuptimeslot             | The pickup time range specified by the customer for orders that use a pickup mode of delivery. |
 | giftcardnumber                 | The gift card number, for products of the gift card type. |
 | giftcardbalance                | The gift card balance, for products of the gift card type. |
 | giftcardmessage                | The gift card message, for products of the gift card type. |
