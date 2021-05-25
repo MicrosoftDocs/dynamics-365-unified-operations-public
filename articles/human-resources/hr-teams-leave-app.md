@@ -37,21 +37,13 @@ The Dynamics 365 Human Resources app in Microsoft Teams lets you quickly request
 
 You can find the Dynamics 365 Human Resources app in the Teams store.
 
-1. In Microsoft Teams, select the ellipses.
-
-   ![Human Resources Teams leave app ellipses](./media/hr-teams-leave-app-ellipses.png)
+1. In Microsoft Teams, navigate to the list of apps.
  
 2. Search for Dynamics 365 Human Resources, and then select the **Human Resources** tile.
 
-   ![Human Resources Teams leave app HR tile](./media/hr-teams-leave-app-human-resources-tile.png)
-
 3. Select the **Add** button to install the app.
 
-   ![Human Resources Teams leave app install](./media/hr-teams-leave-app-in-store.png)
-
 If the app doesn't automatically sign you in, select the **Settings** tab to sign in.
-
-![Human Resources Teams leave app Settings tab](./media/hr-teams-leave-app-settings-tab.png)
 
 > [!NOTE]
 > If you don’t see a sign-in dialog box, check your browser settings to allow pop-ups. 
@@ -65,20 +57,24 @@ If you have access to more than one instance of Human Resources, you can select 
 
 After the app installs, a welcome message appears, letting you know the types of actions the bot can take on your behalf.
 
-![Human Resources Teams leave app bot welcome message](./media/hr-teams-leave-app-bot.png)
- 
 > [!NOTE]
 > When first interacting with the bot, you might need to sign in. If you don’t see a sign-in dialog box, check your browser settings to allow pop-ups.
 
 You can ask the bot to:
 
-- Start a leave request for you.
+- View your current leave balances. For example, send a message that says, "View leave blances."
+
+- Start a leave request for you. For example, send a message that says, “Take time off” or “I want to take vacation time off next Thursday and Friday” to be more specific for requesting leave for the vacation leave type. 
 
   ![Start a leave request in Teams chat](./media/hr-teams-leave-app-initiate.png)
 
 - The chat bot will populate a leave request for you. Select **Request time off** and edit the details for your request.
 
-  ![Edit leave request details](./media/hr-teams-leave-app-details.png)
+   In case you want to submit leave requests for multiple leave types for the same date, select the **Split day with** option from the **More options** menu. 
+
+   If you select a half day leave when the leave request unit is in days, you can specify whether you want to request time off the first half day or the second half day by selecting the **Half day definition** option from the **More options** menu.
+   
+   ![Half day defintions](./media/HalfDayDefinitions.png)
 
 - When you're done editing your leave request details, select **Submit** to submit it for approval.
 
