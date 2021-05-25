@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Negative days and dynamic negative days
 description: This topic provides information about negative days and dynamic negative days, and how you can use them to help your business.
-author: t-benebo
-ms.date: 06/06/2019
+author: ChristianRytt
+ms.date: 05/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
+# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 72704
-ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.search.region: Global
+ms.author: crytt
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Negative days and dynamic negative days
@@ -116,7 +102,7 @@ You might get demand sometime during your item's lead time. Here is an example o
 
 The following illustration shows a graphical view of this scenario.
 
-![Graphical view of scenario 1](./media/negative-days-8.png)
+![Graphical view of scenario 2](./media/negative-days-8.png)
 
 ### Case A: Negative days are less than the item's lead time
 
@@ -233,7 +219,7 @@ The following illustration shows a graphical view of what occurs.
 
 MRP produces the following results.
 
-![Results](./media/negative-days-20.png)
+![Results example 1](./media/negative-days-20.png)
 
 In the preceding screenshot, the sales order requirement date is January 9 instead of January 10. Because that screenshot was taken in 2015, when January 10 was a Saturday, the requirement date of the order should be the previous working day, which was Friday, January 9.
 
@@ -243,7 +229,7 @@ The results aren't wrong, but the running time for MRP might be longer, because 
 
 If you reduce the negative days to a number that's closer to the item's lead time, and you use dynamic negative days, MRP produces the following results.
 
-![Results](./media/negative-days-21.png)
+![Results example 2](./media/negative-days-21.png)
 
 MRP creates a planned order that is attached to the first sales order. Then, as is expected, the second sales order is pegged against the existing purchase order, based on the negative days setting. This planning result is also correct, and the running time for MRP might be shorter. In this case, it isn't essential that you understand and know how to work with the action messages.
 
