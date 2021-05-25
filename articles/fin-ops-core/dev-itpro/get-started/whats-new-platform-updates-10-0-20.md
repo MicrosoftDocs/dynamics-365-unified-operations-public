@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.10 of Finance and Operations apps (August 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.10 of Finance and Operations apps.
 author: sericks007
-ms.date: 05/12/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,7 +45,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops/
 
 | Feature area   | Feature                                                  | More information                                                                    |
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
-| System requirements | [Internet Explorer end-of-support notifications](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=ba0cb511-6eaf-eb11-8236-00224822a250&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)  | [System requirements for cloud deployments](../../fin-ops/get-started/system-requirements.md)<br>[System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md |
+| System requirements | [Internet Explorer end-of-support notifications](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=ba0cb511-6eaf-eb11-8236-00224822a250&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)  | [System requirements for cloud deployments](../../fin-ops/get-started/system-requirements.md)<br>[System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md) |
 | <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
 | <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
 | <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
