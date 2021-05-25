@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.0
 > [!NOTE]
 > Auto-update Commerce Scale Unit (cloud) is currently in private preview. To enroll in this program, send a request to CSUAutoUpdate@microsoft.com. 
 
-This feature currently applies to cloud-hosted Commerce Scale Unit. Self-hosted Commerce Scale Unit is not included and must be self updated.
+This feature currently applies to cloud-hosted Commerce Scale Unit. Self-hosted Commerce Scale Unit is not included and must be self-updated.
 
 Auto-update for Commerce Scale Unit enables [One Version](../lifecycle-services/oneversion-overview.md) auto-update. All existing One Version processes, policies, and schedules apply to Auto-update Commerce Scale Unit.
 
@@ -56,7 +56,7 @@ For retailers with a business need for redundancy, Modern POS offline capability
 ## Version support and backward compatibility
 All in-instore components must be running released software that is less than 12 months old in order to maintain support. Customers are responsible for updating self-hosted components (such as components installed in stores or in privately managed datacenters) and ensuring that the installed versions of these components are actively supported.
 
-Updates to components hosted in the cloud will continue to preserve backward compatibility with component versions self-hosted by the retailer (such as components installed in stores or in privately managed datacenters - Modern Point of Sale, Commerce Scale Unit, and Hardware Station) for 12 months after the release date for that version. Self-hosted components do not need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence allowing time to roll-out updates to stores.
+Updates to components hosted in the cloud will continue to preserve backward compatibility with component versions self-hosted by the retailer (such as components installed in stores or in privately managed datacenters - Modern Point of Sale, Commerce Scale Unit, and Hardware Station) for 12 months after the release date for that version. Self-hosted components do not need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence allowing time to roll out updates to stores.
 
 ## Updating in-store components
 You can choose to update self-hosted components manually at each store or use mass update tools such as Microsoft System Center Configuration Manager or Microsoft Intune.
