@@ -40,7 +40,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ## Feature deprecation notice in May 2021
 
-### Globalization portal in LCS
+### Globalization portal in Lifecycle Services (LCS)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
