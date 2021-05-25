@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how global configuration properties in Microsoft Dynamics 365 Commerce site builder can be made visible, hidden, or disabled when specific Commerce features are turned on.
 
-Global configuration properties that are available at **Site settings \> Extensions \> Configuration** in site builder can be set so that they are visible, hidden, or disabled, based on the settings of the **visibleWithFeatureFlags** and **disabledWithFeatureFlags** properties in the app settings file (/settings/app.settings.json). For more information about app settings, see [App settings](app-settings.md).
+Global configuration properties that are available at **Site settings \> Extensions \> Configuration** in site builder can be set so that they are visible, hidden, or disabled (that is, read-only), based on the settings of the **visibleWithFeatureFlags** and **disabledWithFeatureFlags** properties in the app settings file (/settings/app.settings.json). For more information about app settings, see [App settings](app-settings.md).
 
 ## Usage
 
@@ -72,7 +72,7 @@ The following example shows how the **visibleWithFeatureFlags** property can be 
 
 ## Disable a configuration property in the app.settings.json file when a specific feature is turned on
 
-The following example shows how the **disabledWithFeatureFlags** property can be used inside the app settings file. In this example, the **maxQuantityForCartLineItem** configuration property will be disabled (read-only) in site builder only if the **B2B\_INVENTORY\_MANAGEMENT** feature is turned on in Commerce headquarters.
+The following example shows how the **disabledWithFeatureFlags** property can be used inside the app settings file. In this example, the **maxQuantityForCartLineItem** configuration property will be disabled in site builder only if the **B2B\_INVENTORY\_MANAGEMENT** feature is turned on in Commerce headquarters.
 
 ```json
 {
