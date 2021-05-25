@@ -38,17 +38,17 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
-## Feature removed effective May 2021
+## Feature deprecation notice in May 2021
 
 ### Globalization portal in LCS
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | We are deprecating the Globalization portal in LCS as this feature has been superseded by other LCS-based services. |
-| **Replaced by another feature?**   | Yes, this feature is replaced by LCS Issue Search and Regulatory Alert submission service. |
+| **Replaced by another feature?**   | Yes, this feature is replaced by LCS [Issue search](../lifecycle-services/issue-search-lcs.md) and [Dynamics regulatory alert submission service](../lcs-solutions/submit-localization-alerts.md). |
 | **Product areas affected**         | Globalization portal in LCS|
-| **Deployment option**              | Cloud deployment - affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
-| **Status**                         | Deprecated. |
+| **Deployment option**              | Cloud deployment |
+| **Status**                         | Deprecated: Planned removal date in May 2022. |
 
 
 ## Feature removed effective January 28, 2021
