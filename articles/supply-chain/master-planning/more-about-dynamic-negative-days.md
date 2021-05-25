@@ -161,7 +161,7 @@ You might get demand after the item's lead time. Here is an example of this scen
 - The DemoProduct item has a six-day purchase lead time.
 - On day zero (January 1), the inventory for the DemoProduct item is 0 (zero).
 - On day seven (January 8), which is outside the item's lead time, you get a sales order for a quantity of 10 of the DemoProduct item.
-- On day 10 (January 11), there is a purchase order for a quantity of 10 of the DemoProduct item.
+- On day ten (January 11), there is a purchase order for a quantity of 10 of the DemoProduct item.
 
 The following illustration shows a graphical view of this scenario.
 
@@ -224,7 +224,7 @@ You might want to set the negative days to a long time fence and then work with 
 - On day zero (January 1), the inventory for the DemoProduct item is 0 (zero).
 - On day zero (January 1), you get a sales order for a quantity of 10 of the DemoProduct item.
 - On day nine (January 10), you get a sales order for a quantity of 10 of the DemoProduct item.
-- On day 11 (January 12), there is a purchase order for a quantity of 10 of the DemoProduct item.
+- On day eleven (January 12), there is a purchase order for a quantity of 10 of the DemoProduct item.
 - Negative days are set to **20**, which is much more than the item's lead time.
 
 The following illustration shows a graphical view of what occurs.
