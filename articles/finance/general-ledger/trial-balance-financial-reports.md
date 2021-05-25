@@ -53,6 +53,14 @@ The trial balance financial reports use the following building blocks.
 | Summary Trial Balance – Default                | Trial Balance - Default | Summary Trial Balance - Default                |
 | Summary Trial Balance Year Over Year – Default | Trial Balance - Default | Summary Trial Balance Year Over Year - Default |
 
+[!NOTE] **Things to consider when running your Trial Balance Report**
+1.	In your settings tab be sure that these two boxes are checked:
+
+a.	Display rows with no amounts
+
+b.	Display reports with no active rows
+
+
 ### Row definition
 
 The row definition, Trial Balance – Default, contains a single row that pulls in all main accounts. Therefore, anyone can generate the report without having to make any modifications. When you view the report, you drill into the single row to see details about each account. You can modify the row definition so that it includes more detail. To modify the Trial Balance – Default row definition so that it includes rows for all accounts, follow these steps.
