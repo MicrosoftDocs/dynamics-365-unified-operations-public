@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure site builder global configuration settings based on enabled features
-description: This topic describes how global configuration properties in Microsoft Dynamics 365 Commerce site builder can be set to be visible, hidden, or disabled based on the enabling of specific Commerce features.
+description: This topic describes how global configuration properties in Microsoft Dynamics 365 Commerce site builder can be made visible, hidden, or disabled when specific Commerce features are turned on.
 author: samjarawan
 ms.date: 05/28/2021
 ms.topic: article
@@ -31,13 +31,13 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes how global configuration properties in Microsoft Dynamics 365 Commerce site builder can be set to be visible, hidden, or disabled based on the enabling of specific Commerce features.
+This topic describes how global configuration properties in Microsoft Dynamics 365 Commerce site builder can be made visible, hidden, or disabled when specific Commerce features are turned on.
 
-Global configuration properties exposed in site builder at **Site settings \> Extensions \> Configuration** can be set to be visible, hidden, or disabled based on the settings of the **visibleWithFeatureFlags** and **disabledWithFeatureFlags** properties in the app settings file (/settings/app.settings.json). For more information on app settings, see [App settings](app-settings.md). 
+Global configuration properties that are available at **Site settings \> Extensions \> Configuration** in site builder can be set so that they are visible, hidden, or disabled, based on the settings of the **visibleWithFeatureFlags** and **disabledWithFeatureFlags** properties in the app settings file (/settings/app.settings.json). For more information about app settings, see [App settings](app-settings.md).
 
 ## Usage
 
-To set a particular configuration property to be visible, hidden, or disabled, the **visibleWithFeatureFlags** and **disabledWithFeatureFlags** properties can be supplied with a list of Dynamics 365 feature flag names configured with a value set to "ON" or "OFF". If more than one feature flag name is provided, the logical "OR" operator will determine if a configuration property is visible or hidden. For example, if "FeatureName1" and "FeatureName2" are both added to the **visibleWithFeatureFlags** property with "ON" values, the related configuration property will be shown if either of the two features are enabled in Commerce headquarters.
+To set a specific configuration property so that it's visible, hidden, or disabled, add a list of names of Dynamics 365 feature flags in the **visibleWithFeatureFlags** and **disabledWithFeatureFlags** properties, and specify a value of **"ON"** or **"OFF"** for each. If you add more than one feature flag name, the logical "OR" operator determines whether a configuration property is visible or hidden. For example, you add both **"FeatureName1"** and **"FeatureName2"** in the **visibleWithFeatureFlags** property, and specify a value of **"ON"** for both. In this case, the related configuration property will be visible if either of the two features is turned on in Commerce headquarters.
 
 ### Property schema
 
@@ -49,9 +49,9 @@ visibleWithFeatureFlags: {"<FeatureName1>": "ON/OFF", "<FeatureName2>": "ON/OFF"
 disabledWithFeatureFlags: {"<FeatureName1>": "ON/OFF", "<FeatureName2>": "ON/OFF"}
 ```
 
-## Make a configuration property visible in app.settings.json file when a specific feature is enabled
+## Make a configuration property visible in the app.settings.json file when a specific feature is turned on
 
-The **visibleWithFeatureFlags** property can be used inside the app settings file as shown in the following example, where the "b2bQuantityMultiple" configuration property will be visible in site builder only if the "B2B_INVENTORY_MANAGEMENT" feature is enabled in Commerce headquarters.
+The following example shows how the **visibleWithFeatureFlags** property can be used inside the app settings file. In this example, the **b2bQuantityMultiple** configuration property will be visible in site builder only if the **B2B\_INVENTORY\_MANAGEMENT** feature is turned on in Commerce headquarters.
 
 ```json
 { 
@@ -70,9 +70,9 @@ The **visibleWithFeatureFlags** property can be used inside the app settings fil
 }
 ```
 
-## Disable a configuration property in app.settings.json file when a specific feature is enabled
+## Disable a configuration property in the app.settings.json file when a specific feature is turned on
 
-The **disabledWithFeatureFlags** property can be used inside the app settings file as shown in the following example, where the "maxQuantityForCartLineItem" configuration property will be in a disabled state (read-only) in site builder only if the "B2B_INVENTORY_MANAGEMENT" feature is enabled in Dynamics 365 Commerce headquarters.
+The following example shows how the **disabledWithFeatureFlags** property can be used inside the app settings file. In this example, the **maxQuantityForCartLineItem** configuration property will be disabled (read-only) in site builder only if the **B2B\_INVENTORY\_MANAGEMENT** feature is turned on in Commerce headquarters.
 
 ```json
 {
@@ -91,12 +91,10 @@ The **disabledWithFeatureFlags** property can be used inside the app settings fi
 }
 ```
 
-For more information about Dynamics 365 Commerce feature enablement, see the [Feature management overview](/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+For more information about how to turn on features in Commerce, see [Feature management overview](/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 ## Additional resources
 
 [App settings](app-settings.md)
 
 [Feature management overview](/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview)
-
-
