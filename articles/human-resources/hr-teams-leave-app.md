@@ -91,22 +91,22 @@ The **Time off** tab allows you to view:
 - Time-off requests
 
 - Draft leave requests
-
-![Human Resources Teams leave app Time off tab](./media/hr-teams-leave-app-timeoff-tab.png)
  
 ### Create a new request
 
 1. To create a new leave request, select **New request**.
 
-   ![Human Resources Teams leave app New request](./media/hr-teams-leave-app-timeoff-tab-new.png)
-
 2. Enter the day or days you want to take off, and then select **Add**.
 
-   ![Human Resources Teams leave app add time off](./media/hr-teams-leave-app-timeoff-tab-add.png)
+   ![Human Resources Teams leave app add time off](./media/TimeOffHours.png)
 
 3. If applicable, enter a reason code. Also enter any comments and add any attachments.
 
-4. When you're done entering information, type **Submit** to submit it for approval. You can also type **Save as draft** to come back to it later.
+4. Select the **Split day with** option from the **More options** menu in case you want to submit for multiple leave request entries for the same date for different leave types.
+
+5. Select the **Half day definition** option to specify if you want to request a first half day off or the second half day off. This option is available when the leave request unit is in days and the amount requested is 0.5 days.
+
+6. When you're done entering information, type **Submit** to submit it for approval. You can also type **Save as draft** to come back to it later.
 
 ### Manage draft requests
 
