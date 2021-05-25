@@ -18,13 +18,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-In Finance and Operations apps, global tables are not associated with a company or legal entity. For these tables, you can specify a team and not use a default team as owner when writing to Dataverse using dual-write. 
+In Finance and Operations apps, global tables are not associated with a company or legal entity. For these tables, you can specify a team and not use a default team as owner when writing to Microsoft Dataverse using dual-write. 
 
 By default, when you enable dual-write, the root business unit’s default team will become the default owner for all rows integrated through dual-write. This may not be what you want when you want to limit access to these records to just a subset of users. It’s not uncommon for an organization to have multiple departments defined by business units with corresponding teams under them. You don’t want all users of the default team to have access to all the records integrated via dual-write. In these situations, you can specify a different team for each global table as an owner for these records. 
 
 ## Change the owning team
 
-When you click on a global table map such as Global Products, under Table mappings, you can view the list of teams in the **Update owning team** section. By default, dual-write uses the default team, which is indicated by a blank value. After you create a new map with a new version, you change the default behavior by picking a new team from the owning team list and then save the new value. The **Owning team** field is shown in the following screenshot.
+When you select a global table map such as **Global Products**, under **Table mappings**, you can view the list of teams in the **Update owning team** section. By default, dual-write uses the default team, which is indicated by a blank value. After you create a new map with a new version, you change the default behavior by picking a new team from the owning team list and then save the new value. The **Owning team** field is shown in the following screenshot.
 
 :::image type="content" source="media/owning-team-1.png" alt-text="Update owning team":::
   
