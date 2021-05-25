@@ -62,7 +62,7 @@ After the app installs, a welcome message appears, letting you know the types of
 
 You can ask the bot to:
 
-- View your current leave balances. For example, send a message that says, "View leave blances."
+- View your current leave balances. For example, send a message that says, "View leave balances."
 
 - Start a leave request for you. For example, send a message that says, “Take time off” or “I want to take vacation time off next Thursday and Friday” to be more specific for requesting leave for the vacation leave type. 
 
