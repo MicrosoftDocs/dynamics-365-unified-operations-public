@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes the default reports for trial balances. It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements. 
 
-Default trial balance reports
------------------------------
+## Default trial balance reports
 
 Three trial balance reports are available in Financial reporting.
 
@@ -102,10 +101,7 @@ Each trial balance report uses a different column definition. These column defin
     -   **FD** – Financial data that contains only debits for the last year
     -   **FD** – Financial data that contains only credits for the last year
 
-
-
-Additional resources
---------
+## Additional resources
 
 [Financial reporting overview](financial-reporting-getting-started.md)
 
