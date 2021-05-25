@@ -457,7 +457,9 @@
         - name: Apply updates to cloud environments
           href: deployment/apply-deployable-package-system.md
         - name: Apply updates and extensions to Commerce Scale Unit (cloud)
-          href: deployment/Update-retail-channel.md  
+          href: deployment/Update-retail-channel.md 
+        - name: Auto-update Commerce Scale Unit (cloud)
+          href: deployment/Auto-Update-Commerce-Scale-Unit.md
         - name: Initialize Commerce Scale Unit (cloud)
           href: deployment/Initialize-Retail-Channels.md  
         - name: Retail data residency
