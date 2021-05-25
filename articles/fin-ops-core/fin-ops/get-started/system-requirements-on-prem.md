@@ -4,7 +4,7 @@
 title: System requirements for on-premises deployments
 description: This topic lists the system requirements for on-premises deployments.
 author: PeterRFriis
-ms.date: 01/22/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
