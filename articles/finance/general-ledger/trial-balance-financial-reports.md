@@ -3,8 +3,8 @@
 
 title: Trial balance financial reports
 description: This article describes the default reports for trial balances. It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements. 
-author: jcart1106
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -54,14 +54,7 @@ The trial balance financial reports use the following building blocks.
 | Summary Trial Balance Year Over Year – Default | Trial Balance - Default | Summary Trial Balance Year Over Year - Default |
 
 > [!NOTE] 
-> Things to consider when running your Trial Balance Report
-
-1.	In your settings tab be sure that these two boxes are checked:
-
-a.	Display rows with no amounts
-
-b.	Display reports with no active rows
-
+> When you run the Trial Balance Report, be sure that the checkboxes on two fields in the **Settings** tab are marked. The fields are **Display rows with no amounts** and **Display reports with no active rows**.  
 
 ### Row definition
 
