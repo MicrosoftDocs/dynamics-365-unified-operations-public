@@ -53,7 +53,7 @@ Follow these steps to set up dual-write from LCS **Environment Details** page:
 
 ## Set up dual-write for an existing Dataverse environment
 
-To set up dual-write for an existing Dataverse environment, you must create a Microsoft [support ticket](../lifecycle-services/lcs-support.md). The ticket must include:
+To set up dual-write for an existing Dataverse environment, you must create a Microsoft [support ticket](../../lifecycle-services/lcs-support.md). The ticket must include:
 
 + Your Finance and Operations environment ID.
 + Your environment name from Lifecycle Services.
