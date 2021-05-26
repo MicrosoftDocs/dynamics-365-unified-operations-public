@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.20 (July 2021)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.19 preview release.
 author: roschlom
-ms.date: 04/23/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -23,7 +23,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: roschlom
 ms.search.validFrom: 2021-04-23 
-ms.dyn365.ops.version: 10.0.19
+ms.dyn365.ops.version: 10.0.20
 
 ---
 # Preview features in Dynamics 365 Finance 10.0.20 (July 2021)
@@ -42,6 +42,24 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365/release-plans/) for official release dates for each feature.
 
 - [Vendor collaboration bank changes](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/vendor-collaboration-bank-changes)
+
+| Feature area | Feature | More information |
+|---|---|---|
+| Area| Release plan link | Description |
+| Area| Release plan link  | Description |
+
+## Feature enhancements included in this release
+
+The following table lists the feature enhancements included in this release. Each of these provides an incremental improvement to an existing feature. Because they are only enhancements, they are not listed on the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted). If you want to use any of these features, you must explicitly enable them in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+| Feature area | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
+|---|---|---|
+| Cost management | Enable user-defined batch number setup for inventory closing reverse|Inventory closing reverse create batch jobs for each impacted items which might throttle the batch server if there are too many items. This feature enable the process to use the 'Extra batch helpers' which is currently used by inventory closing process. Please can adjust the setting to optimize the performance considering your environment. |
+| General ledger | Enhanced filtering on the cash position inquiry | This feature enhances financial dimension filtering on the Cash position inquiry. When enabled, only records that match all entered segment criteria will be returned on the inquiry. Otherwise records that match any entered segment criteria will be returned.  |
+| Area | Name | Description |
+| Area | Name | Description |
+| Area | Name | Description |
+| Area | Name | Description |
 
 ## Globalization changes
 
