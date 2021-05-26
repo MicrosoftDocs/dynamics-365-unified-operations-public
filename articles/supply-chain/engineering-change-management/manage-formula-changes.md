@@ -50,4 +50,4 @@ Note that most of the topics linked to in the previous list provide examples bas
 
 - For each [product engineering category](engineering-versions-product-category.md), you can specify the production type (BOM, formula, or planning item) and whether catch weight support is needed for products that use that category.
 - Co- and by-products are not engineering products, which means that they are not versioned. If you need to change them, just create a new product. This is to ease maintenance.
-- You can manage end items that are BOMs and that have child formula items. The functionality will work for both cases (only discrete engineering items and also formula items) as well as the combinations of both of them together. <!-- KFM: I'm not sure what we are saying here. -->
+- You can manage end items that are BOMs and that have child formula items. The functionality will work for any combination of BOMs containing formulas and/or formulas containing BOMs.
