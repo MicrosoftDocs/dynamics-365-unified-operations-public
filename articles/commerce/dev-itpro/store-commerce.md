@@ -2,7 +2,7 @@
 title: Store Commerce app in Microsoft Dynamics 365 Commerce (Preview)
 description: This topic explains how to set up and configure the Store Commerce app.
 author: mugunthanm
-ms.date: 04/13/2021
+ms.date: 05/26/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
@@ -66,7 +66,7 @@ UI rendering engine | Chromium engine to render the UI. | UWP app framework to r
 
 ### HQ Device Setup
 
-For Store Commerce, a new application type named **Store Commerce** is added to **Retail and Commerce > Channel Setup > Pos Setup > Devices**. When you create a device for Store Commerce, set **Application type** to **Store Commerce**.
+For Store Commerce, a new application type named **Store Commerce** is added to **Retail and Commerce > Channel Setup > POS Setup > Devices**. When you create a device for Store Commerce, set **Application type** to **Store Commerce**.
 
 Create a [register](../tasks/create-associate-registers.md) and a [device](../tasks/create-associate-device.md) for Store Commerce. Then run the register job from the Distribution schedule in the HQ before activating the app, setting **Application type** to **Store Commerce** during the device creation.
 
