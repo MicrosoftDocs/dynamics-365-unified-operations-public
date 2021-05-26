@@ -4,7 +4,7 @@
 title: EU sales list for Netherlands
 description: This topic provides information about how to generate the EU sales list for Netherlands.
 author: anasyash
-ms.date: 05/24/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,6 +28,8 @@ ms.dyn365.ops.version:
 # EU sales list for Netherlands
 
 [!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 You can generate a European Union (EU) sales list for the Netherlands in XML format that follows [NL SBR taxonomies](https://www.sbr-nl.nl/werken-met-sbr/taxonomie/documentatie-nederlandse-taxonomie) description. Taxonomies are updated by the authority each year. For example, in 2021 the taxonomy NT15 is applicable.
 
@@ -186,7 +188,7 @@ Dutch taxonomies change once a year. Check for the availability of a new taxonom
 
 ### EU sales list
 
-To view the changes in EU sales list, follow these steps:
+To view the changes in EU sales list, complete the following steps.
 
 1. Open the file, Versioning_rpt-from_NT14_20191211_to_NT15_20201209-bd-rpt-icp-opgaaf-2021.html to view the changes in EU sales list.
 2. In the file, under *Schema referenties*, you can see xsd schema names for taxonomies NT14 and NT15. Take the value for entering to **XSDSchema** lookup result. Find more details about application specific parameters for EU sales list format in the section [Set up XML namespaces for the EU sales list in XML](#set-up-xml-namespaces-for-the-eu-sales-list-in-xml) above
