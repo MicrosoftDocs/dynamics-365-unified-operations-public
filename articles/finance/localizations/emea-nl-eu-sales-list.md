@@ -141,7 +141,7 @@ To transfer transactions and preview files, follow these steps:
 
     For more information about how to work with the EU sales list journal, see [EU Sales list reporting](emea-eu-sales-list.md).
 
-    For more information about legal entities with multiple VAT registrations, see [Reporting for Multiple VAT registrations](emea-multiple-vat-registration-numbers.md).
+    For more information about reporting of legal entities with multiple VAT registrations, see [Reporting for Multiple VAT registrations](emea-reporting-for-multiple-vat-registrations).
 
 3. Select **Reporting** to preview the EU sales list files. In the **EU reporting** dialog box, set the following parameters:
 
