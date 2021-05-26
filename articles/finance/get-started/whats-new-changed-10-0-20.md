@@ -56,9 +56,7 @@ The following table lists the feature enhancements included in this release. Eac
 |---|---|---|
 | Cost management | Enable user-defined batch number setup for inventory closing reverse|Inventory closing reverse create batch jobs for each impacted items which might throttle the batch server if there are too many items. This feature enable the process to use the 'Extra batch helpers' which is currently used by inventory closing process. Please can adjust the setting to optimize the performance considering your environment. |
 | General ledger | Enhanced filtering on the cash position inquiry | This feature enhances financial dimension filtering on the Cash position inquiry. When enabled, only records that match all entered segment criteria will be returned on the inquiry. Otherwise records that match any entered segment criteria will be returned.  |
-| Area | Name | Description |
-| Area | Name | Description |
-| Area | Name | Description |
+| Accounts receivable | @TaxGST:DynamicQRCodeFeature_INName | &nbsp; |
 | Area | Name | Description |
 
 ## Globalization changes
