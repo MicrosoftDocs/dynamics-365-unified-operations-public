@@ -49,7 +49,7 @@ The following topics will help you learn the basics about Power Apps portals and
 
 ## Customize the order creation process
 
-When a user submits an order by using the Customer portal, the order is automatically synced to the corresponding Dynamics 365 Supply Chain Management environment. Because the user is an external customer, some required information is intentionally hidden from him or her. This information will automatically be filled in when the form is submitted.
+When a user submits an order by using the Customer portal, the order is automatically synced to the corresponding Dynamics 365 Supply Chain Management environment. Because the user is an external customer, some required information is intentionally hidden from them. This information will automatically be filled in when the form is submitted.
 
 This section shows how you should set up contacts to avoid errors. It explains fields that are automatically set and how you can modify the value of those fields if you must.
 
@@ -66,7 +66,7 @@ Here are the standard steps for submitting an order from the Customer portal.
     - **Requisition number** – Enter the requisition number of the order. This field isn't required.
     - **Ship to country/region** – Enter the country or region that the items will be delivered to. This field is automatically set for non-admin users.
 
-    ![Order Information page](media/customer-portal-order-information.png "Order Information page")
+    ![Order information page](media/customer-portal-order-information.png "Order information page")
 
 1. Select **Next**.
 1. On the **Items** page, select **Add Item**.
@@ -87,7 +87,7 @@ Here are the standard steps for submitting an order from the Customer portal.
 1. When you've finished adding items, select **Next** on the **Items** page.
 1. The **Order Information** page provides a summary of the order. Review the order contents and delivery details. If everything looks correct, select **Submit** to submit the order.
 
-    ![Order Information page](media/customer-portal-order-submit.png "Order Information page")
+    ![Completed order information page](media/customer-portal-order-submit.png "Completed order information page")
 
 ### Standard data setup
 
