@@ -60,7 +60,7 @@ Follow these steps to set up the release pipeline to upload the CloudScaleUnitEx
 7. Select **Stages**, rename stage 1 **Upload Assets to LCS**, and then select **1 Job**.
 8. In **Tasks**, select **Agent job**.
 9. In **Add tasks**, search for **Dynamics Lifecycle Services (LCS) Asset Upload**, and select **Add**.
-10. Set up the upload task by following the steps in [Upload assets to LCS by using Azure pipelines](../../fin-ops-core/dev-itpro/dev-tools/pipeline-asset-upload.md). In the task, set the following values:
+10. Set up the upload task by following the steps in [Upload assets by using Azure Pipelines](../../fin-ops-core/dev-itpro/dev-tools/pipeline-asset-upload.md). In the task, set the following values:
 
     - **Type of asset:** CloudScaleUnitExtensionPackage
     - **File to Upload:** $(System.DefaultWorkingDirectory)/\_ScaleUnit-CI/drop/ScaleUnitPackage\_$(Release.Artifacts.\_ScaleUnit-CI.BuildNumber).zip
@@ -90,7 +90,7 @@ Follow these steps to generate the Retail Modern POS, Hardware Station, and Clou
 
 6. Select **Continue**.
 
-    The YAML file has steps to sign the Modern POS and Hardware Station installers by using a certificate. The script will look for a certificate file in the Azure key vault and use that certificate file for signing. To read the certificate from Azure Key Vault, you must provide the application ID, secret, certificate name, and timestamp server details (for signing the certificate by using a timestamp). For more information, see [How to set and retrieve a certificate from Azure Key Vault using the Azure portal](/azure/key-vault/certificates/quick-create-portal).
+    The YAML file has steps to sign the Modern POS and Hardware Station installers by using a certificate. The script will look for a certificate file in Azure Key Vault and use that certificate file for signing. To read the certificate from Azure Key Vault, you must provide the application ID, secret, certificate name, and timestamp server details (for signing the certificate by using a timestamp). For more information, see [Set and retrieve a certificate from Azure Key Vault using the Azure portal](/azure/key-vault/certificates/quick-create-portal).
 
     To view the details of the key vault and the timestamp server in the pipeline, create the following variables on the **Variables** tab in your build pipeline, and provide values for them. To help secure the variables, you can select **Secret** as the variable type.
 
@@ -102,8 +102,8 @@ Follow these steps to generate the Retail Modern POS, Hardware Station, and Clou
 
         You can specify any timestamp provider as the value of this variable, such as `http://timestamp.digicert.com`.
 
-    If you aren't storing your certificate in Azure, you can sign the installers by using the **Secure task** option or other options that Azure DevOps pipelines support.
-    
+    If you aren't storing your certificate in Azure, you can sign the installers by using the **Secure task** option or other options that Azure Pipelines supports.
+
     If you don't want to sign the installers, you can remove the signing step from the YAML file. In the YAML file, search for the **PowerShell\@2** task, and remove it.
 
     Scripts in the YAML file build the whole solution and upload the output (the HardwareStation.Installer.exe and ModernPos.Installer.exe packages) to the **Published Artifacts** drop location for the build.
@@ -133,7 +133,7 @@ Follow these steps to set up the release pipeline to upload the HardwareStation.
 7. Select **Stages**, rename stage 1 **Upload Assets to LCS**, and then select **1 Job**.
 8. In **Tasks**, select **Agent job**.
 9. In **Add tasks**, search for **Dynamics Lifecycle Services (LCS) Asset Upload**, and select **Add**.
-10. Fully set up the upload task by following the steps in [Upload assets to LCS by using Azure pipelines](../../fin-ops-core/dev-itpro/dev-tools/pipeline-asset-upload.md). In the task, set the following values:
+10. Fully set up the upload task by following the steps in [Upload assets by using Azure Pipelines](../../fin-ops-core/dev-itpro/dev-tools/pipeline-asset-upload.md). In the task, set the following values:
 
     - **Type of asset:** Retail Self-Service Package
     - **File to Upload:** $(System.DefaultWorkingDirectory)/\_CommerceSDK-Signing-EXE/drop/Installer\_$(Release.Artifacts.\_CommerceSDK-Signing-EXE.BuildNumber).exe
