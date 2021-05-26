@@ -125,4 +125,26 @@ The installation takes a few minutes. When it completes, the **Finance and Opera
 
 ![Install the Dynamics 365 HR Virtual Table app from the Power Platform admin center](media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 
+### Can I generate virtual tables for HR from my Power Apps environment?
+
+Yes. After completing the prerequisite setup steps for virtual tables outlined in the [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md) documentation, you can generate the virtual tables directly from the Power Apps environment rather than the process for generating the virtual tables from the Human Resources app outlined in the [Generate virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#generate-virtual-tables) section of the documentation.
+
+1. Open the Power Platform admin center.
+
+2. In the Environments list, select the Power Apps environment associated with your Human Resources instance.
+
+3. Select the Environment URL in the Details section of the page.
+
+4. In the Solution Health Hub, select the Advanced Find (funnel) icon in the icon group in the top right of the application page.
+
+5. In the Look for drop-down list, select Available HR Entities.
+
+6. Use the filter option to find the entity or entities you want to enable.
+
+7. Select an entity from the list.
+
+8. On the entity page, change the Has Been Generated property to Yes.
+
+9. Save and close the entity page.
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
