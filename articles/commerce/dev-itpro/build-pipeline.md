@@ -60,7 +60,7 @@ Follow these steps to set up the release pipeline to upload the CloudScaleUnitEx
 7. Select **Stages**, rename stage 1 **Upload Assets to LCS**, and then select **1 Job**.
 8. In **Tasks**, select **Agent job**.
 9. In **Add tasks**, search for **Dynamics Lifecycle Services (LCS) Asset Upload**, and select **Add**.
-10. Set up the upload task by following the steps in [Upload assets to LCS by using Azure pipelines](../../fin-ops-core/dev-itpro/dev-tools/pipeline-asset-upload). In the task, set the following values:
+10. Set up the upload task by following the steps in [Upload assets to LCS by using Azure pipelines](../../fin-ops-core/dev-itpro/dev-tools/pipeline-asset-upload.md). In the task, set the following values:
 
     - **Type of asset:** CloudScaleUnitExtensionPackage
     - **File to Upload:** $(System.DefaultWorkingDirectory)/\_ScaleUnit-CI/drop/ScaleUnitPackage\_$(Release.Artifacts.\_ScaleUnit-CI.BuildNumber).zip
@@ -133,7 +133,7 @@ Follow these steps to set up the release pipeline to upload the HardwareStation.
 7. Select **Stages**, rename stage 1 **Upload Assets to LCS**, and then select **1 Job**.
 8. In **Tasks**, select **Agent job**.
 9. In **Add tasks**, search for **Dynamics Lifecycle Services (LCS) Asset Upload**, and select **Add**.
-10. Fully set up the upload task by following the steps in [Upload assets to LCS by using Azure pipelines](../../fin-ops-core/dev-itpro/dev-tools/pipeline-asset-upload). In the task, set the following values:
+10. Fully set up the upload task by following the steps in [Upload assets to LCS by using Azure pipelines](../../fin-ops-core/dev-itpro/dev-tools/pipeline-asset-upload.md). In the task, set the following values:
 
     - **Type of asset:** Retail Self-Service Package
     - **File to Upload:** $(System.DefaultWorkingDirectory)/\_CommerceSDK-Signing-EXE/drop/Installer\_$(Release.Artifacts.\_CommerceSDK-Signing-EXE.BuildNumber).exe
