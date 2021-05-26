@@ -1,6 +1,6 @@
 ---
-title: Set up a build pipeline for the Commerce SDK
-description: This topic explains how to set up a build pipeline for the Commerce software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code.
+title: Set up a build pipeline for the Retail SDK
+description: This topic explains how to set up a build pipeline for the Retail software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code.
 author: mugunthanm
 ms.date: 05/17/2021
 ms.topic: article
@@ -12,13 +12,13 @@ ms.search.validFrom: 05-17-2020
 ms.dyn365.ops.version: AX 10.0.19
 ---
 
-# Set up a build pipeline for the Commerce SDK
+# Set up a build pipeline for the Retail SDK
 
-[!include [banner](../../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up a build pipeline for the Commerce software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code (by using the new independent extension model).
+This topic explains how to set up a build pipeline for the Retail software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code (by using the new independent extension model).
 
-This topic applies to version 10.0.19 and later of the Retail SDK. The steps that are described in this topic won't work if you're using the previous version of the Retail SDK from the Dev virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). The information in this topic is applicable if you're using the new independent extension model (that is, if you're consuming the packages from the public feed), and the independent packaging and extension model.
+This topic applies to version 10.0.19 and later of the Retail SDK. The steps that are described in this topic won't work if you're using the previous version of the Retail SDK from the developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). The information in this topic is applicable if you're using the new independent extension model (that is, if you're consuming the packages from the public feed), and the independent packaging and extension model.
 
 ## Set up a build pipeline in Azure DevOps to generate a Cloud Scale Unit extension package
 
@@ -26,7 +26,7 @@ This topic applies to version 10.0.19 and later of the Retail SDK. The steps tha
 2. Select **Pipeline**, and then select **New pipeline**.
 3. Select the source repository (repo) for your extension code.
 4. Select **Existing Azure Pipelines YAML file**.
-5. Select or get the [YAML file (build-pipeline.yml) from the Pipeline/YAML\_Files directory in the Dynamics365Commerce.ScaleUnit GitHub repo](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/blob/release/9.29/Pipeline/YAML_Files/build-pipeline.yml).
+5. Select or get the [build-pipeline.yml file](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/blob/release/9.29/Pipeline/YAML_Files/build-pipeline.yml) from the [Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.29) GitHub repo.
 
     > [!NOTE]
     > The YAML file refers to some scripts in the [Pipeline/PowerShellScripts directory in the Dynamics365Commerce.ScaleUnit GitHub repo](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.29/Pipeline/PowerShellScripts). Be sure to include all those scripts in your repo. If you clone the samples repo, all the scripts are already included.
