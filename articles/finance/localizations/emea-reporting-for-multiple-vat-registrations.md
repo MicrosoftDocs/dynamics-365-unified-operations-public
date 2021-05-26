@@ -258,7 +258,6 @@ All tax registrations have the same settings for EU sales list parameters.
 5. Transactions for the selected tax registration and documents are transferred. Review the transactions, and make any adjustments that are required.
 
     > [!NOTE]
-    > In the 10.0.19, 10.0.20 release, when the feature **Intrastat transfer for Multiple Tax ID** is enabled, the **Transfer** function runs the generic (global) logic for Intrastat transfers. In 10.0.20 release. for France, generic logic runs that also has a French extension for the direct delivery scenario (triangulation between three EU countries, where France is party B in the middle of the process).
     > 
     > In the 10.0.19, 10.0.20 release, Intrastat **Transfer** function has country-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
 
@@ -311,7 +310,7 @@ All tax registrations have the same settings for EU sales list parameters.
     > [!NOTE]
     > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
 
-    In the 10.0.19 release, a format for the Netherlands is available for preview. For more information, see [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md) topic.
+    In the 10.0.19 release, a format for the Netherlands is available for preview. For more information, see [VAT declaration for Netherlands](emea-nl-vat-declaration-netherlands.md) topic.
 
     The following table shows the earliest ER format versions, that you can select the format for.
 
