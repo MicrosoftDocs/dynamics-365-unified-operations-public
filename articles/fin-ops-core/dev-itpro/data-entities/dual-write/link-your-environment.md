@@ -3,7 +3,7 @@
 title: Use the dual-write wizard to link your environments
 description: This topic explains how to use the dual-write wizard to link a Finance and Operations app environment to your Dataverse environment.
 author: sabinn-msft
-ms.date: 05/19/2021
+ms.date: 05/08/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,9 +30,6 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
-> [!IMPORTANT]
-> This process is no longer recommended. You should set up dual-write by using Lifecycle Services. For more information, see [Dual-write setup from Lifecycle Services](lcs-setup.md).
 
 1. Sign in to the Finance and Operations app environment that you want to link to your Dataverse environment.
 2. Go to **Workspaces \> Data management**, and select the **Dual Write** tile.
