@@ -47,5 +47,4 @@ Each part is described in a separate topic.
 
 [System requirements and prerequisites](requirements-and-prerequisites.md)
 
-
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
