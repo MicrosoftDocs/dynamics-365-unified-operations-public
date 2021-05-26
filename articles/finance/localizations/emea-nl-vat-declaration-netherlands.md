@@ -378,7 +378,7 @@ To import Electronic reporting (ER) configurations, go to **Workspaces** \> **El
    - VAT Declaration XML (NL).version.85.14
    - VAT Declaration Excel (NL).version.85.14.17
 
-### <a name="application-specific-parameters-VAT">Set up application specific parameters for VAT declaration fields</a>
+### Set up application specific parameters for VAT declaration fields
 
 To automatically generate a VAT declaration, associate sales tax codes and report fields in the ER configuration. To set up report fields, follow these steps:
 
