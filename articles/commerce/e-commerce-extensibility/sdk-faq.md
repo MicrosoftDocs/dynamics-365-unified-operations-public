@@ -31,10 +31,10 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
-### Why are my custom Applications Insights API calls failing to build when I upgraded to the online SDK version 9.30 (Commerce version 10.0.20 release)?
-The Online SDK release 9.30 includes an update from the deprecated [Applications Insights version 1](https://www.npmjs.com/package/applicationinsights-js) to [Application Insights version 2](https://www.npmjs.com/package/@microsoft/applicationinsights-web).  
+### My custom Application Insights API calls are failing to build after upgrading to Online SDK 9.30?
+The Online SDK release 9.30 includes an update from the deprecated [Applications Insights SDK](https://www.npmjs.com/package/applicationinsights-js) to the newer [Microsoft Application Insights JavaScript SDK - Web](https://www.npmjs.com/package/@microsoft/applicationinsights-web).
 
-The Applications Insights version 2 contains some breaking API changes that may affect your customization code if you have leveraged these APIs to log telemetry into Application Insights.  Details of the breaking changes can be found here: [upgrading from the old Version of Application Insights](https://github.com/microsoft/ApplicationInsights-JS#upgrading-from-the-old-version-of-application-insights).  The new API signatures and interfaces can be found [here](https://github.com/microsoft/ApplicationInsights-JS#upgrading-from-the-old-version-of-application-insights).
+The Applications Insights update contains breaking API changes that may affect your customization code if you have leveraged these APIs to log telemetry into your own Application Insights.  Details of the breaking changes can be found here: [upgrading from the old Version of Application Insights](https://github.com/microsoft/ApplicationInsights-JS#upgrading-from-the-old-version-of-application-insights).
 
 ### What is replacing TSLint, which has been deprecated in SDK version 1.28 (the Commerce version 10.0.18 release)?
 
