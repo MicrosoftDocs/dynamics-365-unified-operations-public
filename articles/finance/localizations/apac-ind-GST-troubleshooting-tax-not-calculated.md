@@ -3,7 +3,7 @@
 
 title: Tax isn't calculated
 description: This topic provides troubleshooting information that can help when when tax isn't calculated on tax documents.
-author: qire
+author: peter-xu
 manager: beya
 ms.date: 04/29/2021
 ms.topic: article
@@ -37,7 +37,7 @@ For more information about the Tax engine (also referred to as GTE) or component
 
 ## Check the tax applicability in the tax configuration
 
-1. Open the designer for the current tax configuration. For more information, see [Open the designer for the current tax configuration](apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md).
+1. Open the designer for the current tax configuration. 
 2. If there are no tax document lines, select the **Header** node, and then, on the **Lookups** tab, verify that the condition is correct.
 
     [![Condition field on the Lookups tab for the Header node on the Tax document page](./media/tax-not-calculated-Picture1.png)](./media/tax-not-calculated-Picture1.png)

@@ -3,7 +3,7 @@
 
 title: Incorrect tax amount after calculation
 description: This topic provides troubleshooting information that can help when the calculated tax amount is incorrect.
-author: qire
+author: peter-xu
 ms.date: 04/28/2021
 ms.topic: article
 ms.prod: 
