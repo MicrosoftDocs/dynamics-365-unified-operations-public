@@ -31,6 +31,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
+### Why is SDK version 9.30 (Commerce version 10.0.20 release) upgrading to the new Application Insights library and how might that affect my customization code?
+The Online SDK release 9.30 includes an update from the deprecated [Applications Insights version 1](https://www.npmjs.com/package/applicationinsights-js) to [Application Insights version 2](https://www.npmjs.com/package/@microsoft/applicationinsights-web).  
+
+The Applications Insights version 2 contains some breaking changes to their APIs, that may affect customization code that leverage these APIs to log telemetry into Application Insights.  Details of the breaking changes can be found here: [upgrading from the old Version of Application Insights](https://github.com/microsoft/ApplicationInsights-JS#upgrading-from-the-old-version-of-application-insights).  The new API signatures and interfaces can be found [here](https://github.com/microsoft/ApplicationInsights-JS#upgrading-from-the-old-version-of-application-insights).
+
 ### What is replacing TSLint, which has been deprecated in SDK version 1.28 (the Commerce version 10.0.18 release)?
 
 Because the open-source TSLint static analysis tool has been deprecated, the Dynamics 365 Commerce online SDK is replacing it with the [ESLint](https://eslint.org/) static analysis tool. TSLint will continue to work until SDK version 1.30 (the Commerce version 10.0.20 release). Before SDK version 1.30, you can manually update to ESLint if you want. However, in SDK version 1.30, update to ESLint will be enforced.
