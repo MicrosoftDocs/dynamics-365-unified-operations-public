@@ -4,7 +4,7 @@
 title: Reporting for multiple VAT registrations (Preview)
 description: This topic provides information about reporting for multiple value-added tax (VAT) registrations.
 author: anasyash
-ms.date: 05/24/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,6 +28,8 @@ ms.dyn365.ops.version:
 # Reporting for multiple VAT registrations (Preview)
 
 [!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to do reporting for multiple value-added tax (VAT) registrations.
 
@@ -64,7 +66,7 @@ For information about how to configure the Tax Calculation service, see [Tax Cal
 
 ### Set up the Multiple VAT registrations feature
 
-For information about how to set up the **Multiple VAT registrations** feature, see [Multiple VAT registration numbers (emea-multiple-vat-registration-numbers.md).
+For information about how to set up the **Multiple VAT registrations** feature, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
 
 ## Enable features
 
@@ -258,7 +260,6 @@ All tax registrations have the same settings for EU sales list parameters.
 5. Transactions for the selected tax registration and documents are transferred. Review the transactions, and make any adjustments that are required.
 
     > [!NOTE]
-    > In the 10.0.19, 10.0.20 release, when the feature **Intrastat transfer for Multiple Tax ID** is enabled, the **Transfer** function runs the generic (global) logic for Intrastat transfers. In 10.0.20 release. for France, generic logic runs that also has a French extension for the direct delivery scenario (triangulation between three EU countries, where France is party B in the middle of the process).
     > 
     > In the 10.0.19, 10.0.20 release, Intrastat **Transfer** function has country-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
 
@@ -311,7 +312,7 @@ All tax registrations have the same settings for EU sales list parameters.
     > [!NOTE]
     > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
 
-    In the 10.0.19 release, a format for the Netherlands is available for preview. For more information, see [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md) topic.
+    In the 10.0.19 release, a format for the Netherlands is available for preview. For more information, see [VAT declaration for Netherlands](emea-nl-vat-declaration-netherlands.md) topic.
 
     The following table shows the earliest ER format versions, that you can select the format for.
 
@@ -321,7 +322,7 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.19 | NL | VAT Declaration XML (NL).version.85.14</br>VAT Declaration Excel (NL).version.85.14.17 |
 
 
-### Generate a VAT declaration for multiple VAT registrations
+## Generate a VAT declaration for multiple VAT registrations
 
 1. Go to **Tax** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**.
 2. In the **Report sales tax for settlement period** dialog box, in the **Settlement period** field, select a settlement period.

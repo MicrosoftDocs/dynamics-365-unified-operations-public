@@ -25,11 +25,13 @@ ms.dyn365.ops.version:
 
 ---
 
-# VAT declaration (Netherlands)
+# VAT declaration for Netherlands (Preview)
 
 [!include [banner](../includes/banner.md)]
 
-To automatically generate the VAT declaration, you must create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the VAT declaration electronic reporting format, you must associate sales tax codes with the lookup result of the lookup for the VAT declaration boxes. For more information about how to set up application-specific parameters, see [Set up application parameters for declaration fields](#application-specific-parameters-VAT) later in this topic.
+[!include [banner](../includes/preview-banner.md)]
+
+To automatically generate the VAT declaration, you must create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the VAT declaration electronic reporting format, you must associate sales tax codes with the lookup result of the lookup for the VAT declaration boxes. For more information about how to set up application-specific parameters, see *Set up application parameters for declaration fields* later in this topic.
 
 In the following table, the **Lookup result** column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then associate that with the row of the VAT declaration. The **Tax base (XML element) / Tax (XML element)** column list the names of the corresponding XML elements in VAT declaration XML (NL) format.
 
@@ -378,7 +380,7 @@ To import Electronic reporting (ER) configurations, go to **Workspaces** \> **El
    - VAT Declaration XML (NL).version.85.14
    - VAT Declaration Excel (NL).version.85.14.17
 
-### <a name="application-specific-parameters-VAT">Set up application specific parameters for VAT declaration fields</a>
+### Set up application specific parameters for VAT declaration fields
 
 To automatically generate a VAT declaration, associate sales tax codes and report fields in the ER configuration. To set up report fields, follow these steps:
 
