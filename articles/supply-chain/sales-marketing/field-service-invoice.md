@@ -72,7 +72,7 @@ The **Has Agreement Origin** column has been added to the **Invoice Line** table
 **Invoice date** is a mandatory field in Supply Chain Management. Therefore, the column must have a value in Field Service before synchronization occurs. To meet this requirement, the following logic is added:
 
 - If the **Invoice Date** column is blank on the **Invoice** table (that is, if it has no value), it's set to the current date when an invoice line that originates from an agreement is added.
-- The user can change the **Invoice Date** column. However, when the user tries to save an invoice that originates from an agreement, he or she receives a business process error if the **Invoice Date** column is blank on the invoice.
+- The user can change the **Invoice Date** column. However, when the user tries to save an invoice that originates from an agreement, they receive a business process error if the **Invoice Date** column is blank on the invoice.
 
 ## Prerequisites and mapping setup
 

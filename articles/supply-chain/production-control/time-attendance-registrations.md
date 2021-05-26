@@ -55,7 +55,7 @@ After setup, the workers can enter different types of registrations.
 
 | **Note**                                                                                                                                                                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| A worker can be automatically assigned the time registrations that are made on a particular machine on the shop floor, if the worker chooses to work as an assistant to the machine when he or she starts the production job. |
+| A worker can be automatically assigned the time registrations that are made on a particular machine on the shop floor, if the worker chooses to work as an assistant to the machine when they start the production job. |
 
 -   Time registrations on projects and project activities.
 -   Registering project fees and item consumption via the respective project fee journals and project item journals.
@@ -77,7 +77,7 @@ When a registration worker is assigned a calculation group that typically relate
 Because the registered time must match the worker’s time profile prior to calculating the registrations, you must override the work time profile for any worker who has an exception to his standard work time profile. In the case, where the worker profile is day shift, and the worker has agreed to work a night shift with no overtime pay, the team manager or supervisor must override the default worker profile in order to calculate the working time at the standard night rate and not as overtime. The calculation will also display an error if an absence registration is missing. It must be added before the calculation can be completed.
 
 ## Approving registrations
-Just as you assign a calculation group to a time registration worker, you must assign an approval group as well. Typically the group will be specific to a team, shift, or work group. You must approve the time registrations that were calculated correctly – this means doing a calculation without errors – before pay items can be generated that afterward can be transferred to a payroll system. The payroll administrator will typically do the approval of registrations, and prior to the approval he is able to:
+Just as you assign a calculation group to a time registration worker, you must assign an approval group as well. Typically the group will be specific to a team, shift, or work group. You must approve the time registrations that were calculated correctly – this means doing a calculation without errors – before pay items can be generated that afterward can be transferred to a payroll system. The payroll administrator will typically do the approval of registrations, and prior to the approval they are able to:
 -   Override pay agreements for individual workers.
 -   Add manual premiums.
 -   Enter additional information about absence registrations.

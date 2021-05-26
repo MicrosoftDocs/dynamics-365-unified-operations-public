@@ -49,7 +49,7 @@ The following topics will help you learn the basics about Power Apps portals and
 
 ## Customize the order creation process
 
-When a user submits an order by using the Customer portal, the order is automatically synced to the corresponding Dynamics 365 Supply Chain Management environment. Because the user is an external customer, some required information is intentionally hidden from him or her. This information will automatically be filled in when the form is submitted.
+When a user submits an order by using the Customer portal, the order is automatically synced to the corresponding Dynamics 365 Supply Chain Management environment. Because the user is an external customer, some required information is intentionally hidden from them. This information will automatically be filled in when the form is submitted.
 
 This section shows how you should set up contacts to avoid errors. It explains fields that are automatically set and how you can modify the value of those fields if you must.
 

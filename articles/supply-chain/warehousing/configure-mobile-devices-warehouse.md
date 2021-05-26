@@ -63,7 +63,7 @@ If the **Mode** field for a menu item is set to **Indirect**, you can create a m
 | License plate build | Create a parent license plate by combining multiple license plates in the same location. This option is useful if you move multiple license plates at the same time. After the parent license plate is moved, you must perform a license plate break before you can pick items from each license plate. <p></p>**Tip:** To move a parent license plate, you must use a mobile device that is configured to create work for movements. |
 | License plate break | Break up a license plate build so that you can pick items from the license plates that were in the build. |
 | Driver check in | If you’re using Transportation management, register the arrival of a driver by scanning the outbound load ID, appointment ID, or shipment ID. For this option, a load must be assigned to the appointment, and the status of the load must be **Loaded**. |
-| Driver check out | Register that a driver has completed his or her appointment. |
+| Driver check out | Register that a driver has completed their appointment. |
 | Flush number sequence cache | Delete number sequence numbers from the number sequence cache. This activity is typically performed by a system administrator to resolve caching issues when mobile devices are used. |
 | Change batch disposition | Allow a worker to specify a batch disposition code for an item and batch. This selection updates the disposition code that is specified for the batch. |
 | Display open work list | Show a list of available work to a particular user. The user can then select work to perform and will be directed to it. This list is intended to be viewed on tablet devices that have a screen size of 7 inches or more. When you select this option, the **Edit query** and **Field list** menu items become available. The **Edit query** page lets you set up criteria for the work that appears in the list. The **Field list** page lets you select what fields appear in the work list. For example, you can reduce the number of fields that appear, so that the user can more quickly select the most appropriate work item. On the **General** FastTab, in the **Records per page** field, you can also select how many work records are shown per page. If the **Allow users to filter work by transaction type** option is selected, the work list will include a **Filter work** control that the user can use to filter by transaction type. In the work list, users will see only work that they have permission to access. You must make sure that users have permission for one or more user-directed menu items that support the specific work class types that they should be able to access. Permissions are verified when a user tries to perform work from the list.|
@@ -237,7 +237,7 @@ In addition to setting up menu items to create warehouse work, you can set up me
 </tr>
 <tr class="even">
 <td>User grouping</td>
-<td>The worker manually groups work. This option is useful when, for example, a worker can pick multiple items at the same time in a location. After the worker has finished picking all the required items, he or she can put the items away.</td>
+<td>The worker manually groups work. This option is useful when, for example, a worker can pick multiple items at the same time in a location. After the worker has finished picking all the required items, they can put the items away.</td>
 </tr>
 <tr class="odd">
 <td>System grouping</td>
@@ -254,7 +254,7 @@ In addition to setting up menu items to create warehouse work, you can set up me
 <li><strong>Validated user directed field</strong> – Select the field that the worker scans to group the work.</li>
 <li><strong>Validated user directed label</strong> – Enter text that instructs the worker what to scan when picking work is grouped by the system.</li>
 </ul>
-This option is useful when, for example, multiple pallets are staged for a load. If you select <strong>LoadId</strong> in the <strong>Validated User Directed</strong> field, the worker can pick any pallet that is associated with the load. The worker receives an error message if he or she scans an item that isn&#39;t associated with the load.</td>
+This option is useful when, for example, multiple pallets are staged for a load. If you select <strong>LoadId</strong> in the <strong>Validated User Directed</strong> field, the worker can pick any pallet that is associated with the load. The worker receives an error message if they scan an item that isn&#39;t associated with the load.</td>
 </tr>
 <tr class="odd">
 <td>Cluster picking</td>
@@ -373,7 +373,7 @@ The following table describes these options.
 <td>Indicate whether the worker must pick the oldest batch in a location first. The following options are available:
 <ul>
 <li><strong>None</strong> – The worker can pick any batch in the location. The worker receives no message.</li>
-<li><strong>Warn</strong> – The worker can pick any batch in the location, but he or she receives a warning message if a batch isn&#39;t the oldest batch.</li>
+<li><strong>Warn</strong> – The worker can pick any batch in the location, but they receive a warning message if a batch isn&#39;t the oldest batch.</li>
 <li><strong>Force</strong> – The worker must pick the oldest batch in the location. The worker receives an error message if a batch isn&#39;t the oldest batch. <strong>Note:</strong> This option is relevant only if <strong>Batch number</strong> is lower than <strong>Location</strong> in the reservation hierarchy that is assigned to the item.</li>
 </ul></td>
 </tr>
@@ -391,7 +391,7 @@ The following table describes these options.
 </tr>
 <tr class="even">
 <td>Use default data</td>
-<td>Select this option to enable the <strong>Default data</strong> button on the Action Pane, where you can select fields to display data that a worker typically requires in his or her daily work. This option is useful if, for example, a worker often picks items from the same location. You can select the <strong>From location</strong> field to display the location by default.</td>
+<td>Select this option to enable the <strong>Default data</strong> button on the Action Pane, where you can select fields to display data that a worker typically requires in their daily work. This option is useful if, for example, a worker often picks items from the same location. You can select the <strong>From location</strong> field to display the location by default.</td>
 </tr>
 <tr class="odd">
 <td>Validated User Directed Field</td>
