@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
-### My custom Application Insights API calls are failing to build after upgrading to Online SDK 9.30?
+### Why are my custom Application Insights API calls failing to build after upgrading to the Commerce online SDK version 9.30 release?
 
 The Commerce online SDK version 9.30 release includes an update from the deprecated [Applications Insights SDK](https://www.npmjs.com/package/applicationinsights-js) to the newer [Microsoft Application Insights JavaScript SDK - Web](https://www.npmjs.com/package/@microsoft/applicationinsights-web).
 
