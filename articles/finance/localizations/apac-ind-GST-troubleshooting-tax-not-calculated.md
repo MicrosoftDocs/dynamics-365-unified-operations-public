@@ -3,7 +3,7 @@
 
 title: Tax isn't calculated
 description: This topic provides troubleshooting information that can help when when tax isn't calculated on tax documents.
-author: qire
+author: peter-xu
 manager: beya
 ms.date: 04/29/2021
 ms.topic: article
