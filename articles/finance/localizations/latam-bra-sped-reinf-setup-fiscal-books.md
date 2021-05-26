@@ -88,8 +88,12 @@ This setup is used to determine the agriculture acquisition type of incoming fis
 
 ## Set up Fiscal books parameters
 
-1. Go to **Fiscal books** \> **Setup** \> **Fiscal books parameters**.
-2. On the **Number sequences** tab, set up the number sequence for events R-2010 and R-2020.
+1. Go to **Fiscal books** \> **Tax statements parameters** \> **SPED Reinf** \> **SPED Reinf parameters**.
+2. On the **General** tab, select the **SPED Reinf version**. 
+3. Select the **Environment type** and the **Status of fiscal organization**.
+4. Go to **Fiscal books** \> **Setup** \> **Fiscal books parameters**.
+5. On the **Number sequences** tab, set up the number sequence for events R-2010, R-2020 and R-2055
+
 
 ![Number sequences tab on the Fiscal books parameters page](media/bra-sped-fiscal-books-parameters.png)
 
