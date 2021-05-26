@@ -66,7 +66,7 @@ Here are the standard steps for submitting an order from the Customer portal.
     - **Requisition number** – Enter the requisition number of the order. This field isn't required.
     - **Ship to country/region** – Enter the country or region that the items will be delivered to. This field is automatically set for non-admin users.
 
-    ![Order Information page](media/customer-portal-order-information.png "Order Information page")
+    ![Order information page](media/customer-portal-order-information.png "Order information page")
 
 1. Select **Next**.
 1. On the **Items** page, select **Add Item**.
@@ -87,7 +87,7 @@ Here are the standard steps for submitting an order from the Customer portal.
 1. When you've finished adding items, select **Next** on the **Items** page.
 1. The **Order Information** page provides a summary of the order. Review the order contents and delivery details. If everything looks correct, select **Submit** to submit the order.
 
-    ![Order Information page](media/customer-portal-order-submit.png "Order Information page")
+    ![Completed order information page](media/customer-portal-order-submit.png "Completed order information page")
 
 ### Standard data setup
 

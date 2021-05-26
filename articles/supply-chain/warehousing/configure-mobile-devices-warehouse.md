@@ -46,6 +46,7 @@ To create a menu item for an activity or inquiry, set the **Mode** field to **In
 > Additional fields might be available for menu items, depending on the mode that you select for the menu item, and whether the menu item is used to perform existing work. For information about the additional field selections, see the “Additional menu item options” section later in this topic.
 
 ## Configure menu items for activities and inquiries
+
 If the **Mode** field for a menu item is set to **Indirect**, you can create a menu item to perform a general activity or inquiry that doesn't create work. Examples include reprinting license plate labels and an inquiry about the items in a location. The following table lists the options that are available.
 
 | Option | Description |
@@ -69,10 +70,9 @@ If the **Mode** field for a menu item is set to **Indirect**, you can create a m
 | Display open work list | Show a list of available work to a particular user. The user can then select work to perform and will be directed to it. This list is intended to be viewed on tablet devices that have a screen size of 7 inches or more. When you select this option, the **Edit query** and **Field list** menu items become available. The **Edit query** page lets you set up criteria for the work that appears in the list. The **Field list** page lets you select what fields appear in the work list. For example, you can reduce the number of fields that appear, so that the user can more quickly select the most appropriate work item. On the **General** FastTab, in the **Records per page** field, you can also select how many work records are shown per page. If the **Allow users to filter work by transaction type** option is selected, the work list will include a **Filter work** control that the user can use to filter by transaction type. In the work list, users will see only work that they have permission to access. You must make sure that users have permission for one or more user-directed menu items that support the specific work class types that they should be able to access. Permissions are verified when a user tries to perform work from the list.|
 | Create transfer order from license plates | Allows warehouse workers create and process transfer orders directly from the Warehouse Management mobile app. The warehouse workers start by selecting the destination warehouse and can then scan one or more license plates using the app. When the warehouse worker selects **Complete order**, a batch job will create the required transfer order and order lines based on the on-hand inventory registered for those license plates. For more information, see [Create transfer orders from the warehouse app](create-transfer-order-from-warehouse-app.md)
 
-
 ## Configure menu items to create work for another worker or process
-You can set up a menu item that creates work for another worker after an initial action is performed on the mobile device. For example, when one worker uses a mobile device to receive an item, put-away work is created for another worker. To set up a menu item that creates work, on the **Mobile device menu items** page, in the **Mode** field, select **Work**. In the following table, the options in the **Work creation process** field are arranged by work order type.
 
+You can set up a menu item that creates work for another worker after an initial action is performed on the mobile device. For example, when one worker uses a mobile device to receive an item, put-away work is created for another worker. To set up a menu item that creates work, on the **Mobile device menu items** page, in the **Mode** field, select **Work**. In the following table, the options in the **Work creation process** field are arranged by work order type.
 
 <table>
 <tbody>
@@ -412,6 +412,7 @@ The following table describes these options.
 </table>
 
 ## Require workers to confirm the product, location, or quantity when they pick items
+
 You can set up work confirmations that require that a worker use a mobile device to register the location or quantity when they perform work in the warehouse. Work confirmations help ensure that the worker is at the correct location or is handling the correct quantity of items. You can also enable Supply Chain Management to automatically confirm the worker’s registration. If you enable automatic confirmation, you can't also require confirmations for location or quantity. Work confirmations also include products and product variants. Additionally, you can register confirmations by scanning a bar code. To confirm products and product variants, you must enter an ID for the product or product variant. This ID can be a product ID, product search ID, external ID, GTIN, or bar code. After you enter the ID or scan the bar code, the dimensions for the product variant are displayed on the mobile device. 
 
 The following table describes the various work types that you can use work confirmations with.
@@ -431,14 +432,11 @@ The following table describes the various work types that you can use work confi
 > [!NOTE]
 > You can require product confirmation only for pick and put work types.
 
-Additional resources
---------
+## Additional resources
 
-[Set up a mobile device menu item for completing work of type Purchase order](tasks/set-up-mobile-device-menu.md)
-
-[Set up a mobile device menu item to register received items](tasks/set-up-mobile-device-menu-item-register-received-items.md)
-
-[Inventory statuses](../inventory/inventory-statuses.md)
+- [Set up a mobile device menu item for completing work of type Purchase order](tasks/set-up-mobile-device-menu.md)
+- [Set up a mobile device menu item to register received items](tasks/set-up-mobile-device-menu-item-register-received-items.md)
+- [Inventory statuses](../inventory/inventory-statuses.md)
 
 
 

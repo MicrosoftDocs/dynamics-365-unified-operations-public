@@ -172,7 +172,7 @@ To configure the system to clearly distinguish standard time and overtime, you m
 
 On the **Calculation parameters** page, select **Overtime** as the profile specification type, and set the **Pay time** option to **No**, as shown here.
 
-| Reg. specification | Profile specification type | Calculation   |     | Paid         |     |
+| Reg. specification | Profile specification type | Calculation   | Setting | Paid         | Setting |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
 | Working time       | Overtime                   | Standard time | Yes | Pay time     | No  |
 |                    |                            | Pay time      | Yes | Pay overtime | Yes |
