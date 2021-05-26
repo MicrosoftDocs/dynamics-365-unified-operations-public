@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SalesTable
+ms.search.form: SalesTable_SalesCancelOrder, SalesTableListPage_SalesCancelOrder
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -31,13 +31,10 @@ ms.author: hja@microsoft.com
 
 Error code: SYS138831
 
-The system displays the followign error message:
-	SYS138831
-
-
-
 ## Symptoms
-The system shows the following error message: > The quantity cannot be reduced. The number of inventory transactions on order is too low because the quantity or part of it is referenced by an output order or a production order or is marked against other transactions.
+The system shows the following error message:
+
+> The quantity cannot be reduced. The number of inventory transactions on order is too low because the quantity or part of it is referenced by an output order or a production order or is marked against other transactions.
 
 ## Cause
 If work is associated with a sales order, you can't cancel the sales order until the work is cancelled and reversed. This requirement applies even if the work that is associated with the sales order is closed.
@@ -69,7 +66,7 @@ Reduce picked quantity
 When all work is canceled, follow these steps.
 1. On the sales order details page, on the toolbar, select the **Update line** drop down, and then select **Pick**.
 1. On the **Transactions** FastTab, select the line with **Issue status** set to *Picked*.
-1. On the Toolbar, select the **Add picking line **.
+1. On the Toolbar, select the **Add picking line**.
 1. On the **Picking lines** FastTab, on the Toolbar, select the **Confirm pick all**.
 1. Close the **Pick ** form.
 1. On the Action Pane, on the **Maintain** group, select **Cancel**.
