@@ -64,7 +64,7 @@ For information about how to configure the Tax Calculation service, see [Tax Cal
 
 ### Set up the Multiple VAT registrations feature
 
-For information about how to set up the **Multiple VAT registrations** feature, see [Multiple VAT registration numbers (emea-multiple-vat-registration-numbers.md).
+For information about how to set up the **Multiple VAT registrations** feature, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
 
 ## Enable features
 
@@ -321,7 +321,7 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.19 | NL | VAT Declaration XML (NL).version.85.14</br>VAT Declaration Excel (NL).version.85.14.17 |
 
 
-### Generate a VAT declaration for multiple VAT registrations
+## Generate a VAT declaration for multiple VAT registrations
 
 1. Go to **Tax** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**.
 2. In the **Report sales tax for settlement period** dialog box, in the **Settlement period** field, select a settlement period.
