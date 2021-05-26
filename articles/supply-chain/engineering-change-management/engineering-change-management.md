@@ -123,15 +123,15 @@ To review affected transactions, block selected transactions, or send related no
     - **Notify production** – This command is only available on the **Production orders** tab. Unlike sales or purchase orders, production orders don't have a "production order responsible" user assigned to take charge of the order from end to end. Instead, various supervisors or planners usually take ownership for a site or a part of the production (such as specific resources or resource groups). Therefore, all users who are responsible for any resource related to the selected  production order will receive the notification.
     - **Notify preparer** – This command is only available on the **Purchase requisition** tab. Select this command to send a change notification to the user who is set as the preparer for the selected  purchase requisition.
     - **Notify sales responsible** – This command is only available on the **Quotations** tab. Select this command to send a change notification to the user who is set as responsible for the selected quotation.
-    - **Scrap** – This command is only available on the **Inventory** tab. Select this command to scrap the selected  inventory. <!-- KFM: A few more details could be nice here. For example, does this create work? -->
+    - **Scrap** – This command is only available on the **Inventory** tab. Select this command to scrap the selected inventory.
     - **View history** – Opens a history of actions taken on the selected transaction while using the **Business impact to open transactions** dialog box (such as sending notifications or blocking).
-    - **View all transactions** – <!-- KFM: Description needed -->
+    - **View all transactions** – Opens the full list of all transactions (not only the open ones).
 
 #### Review and process change notifications for transactions
 
 You can read and process the change notifications you receive by doing the following:
 
-- Other than for production orders, you will receive change notifications for the transactions you are responsible for in your assigned-task list, which you can see by going to the **Home** page or to **Common \> Common \> Work items \> Work items assigned to me**. <!--KFM: This does not seem to be true. I think we only get a message in the "Action center" (bell icon). Isn't that right? -->
+- Other than for production orders, you will receive change notifications for the transactions you are responsible for in the **Action center**.
 - To view all production orders for which an engineering notification has been sent, go to **Production orders \> Production orders \> All production orders**. On the Action Pane, open the **Production order** tab and then, from the **Engineering change request** group, select **Engineering notifications** to open the **Engineering notifications** page.
 - For production orders, you can also review only those change notifications that apply to the production resources you manage. To do so, go to the **Production floor management** workspace, where you can select **Configure my workspace** on the Action Pane to filter the page so it only shows information about the production units, groups, and/or resources that you manage. In the **Summary** section, there is a tile called **Production orders with changed products**, which shows a count of notifications that match your filter setting. Select this tile to open the **Engineering notifications** page, which shows the full list of transactions that meet your filter.
 
