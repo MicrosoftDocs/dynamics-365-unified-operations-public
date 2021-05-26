@@ -131,7 +131,7 @@ To review affected transactions, block selected transactions, or send related no
 
 You can read and process the change notifications you receive by doing the following:
 
-- Other than for production orders, you will receive change notifications for the transactions you are responsible for in the **Action center**.
+- Other than for production orders, you will receive change notifications for the transactions you are responsible for in the **Action center**. The **Show messages** button (bell symbol) on the right side of the navigation bar indicates when an Action center message is available for you. Select the **Show messages** button to open the Action center and review the messages.
 - To view all production orders for which an engineering notification has been sent, go to **Production orders \> Production orders \> All production orders**. On the Action Pane, open the **Production order** tab and then, from the **Engineering change request** group, select **Engineering notifications** to open the **Engineering notifications** page.
 - For production orders, you can also review only those change notifications that apply to the production resources you manage. To do so, go to the **Production floor management** workspace, where you can select **Configure my workspace** on the Action Pane to filter the page so it only shows information about the production units, groups, and/or resources that you manage. In the **Summary** section, there is a tile called **Production orders with changed products**, which shows a count of notifications that match your filter setting. Select this tile to open the **Engineering notifications** page, which shows the full list of transactions that meet your filter.
 
