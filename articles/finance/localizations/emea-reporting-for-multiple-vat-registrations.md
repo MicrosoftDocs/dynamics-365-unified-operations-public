@@ -4,7 +4,7 @@
 title: Reporting for multiple VAT registrations (Preview)
 description: This topic provides information about reporting for multiple value-added tax (VAT) registrations.
 author: anasyash
-ms.date: 05/24/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,6 +28,8 @@ ms.dyn365.ops.version:
 # Reporting for multiple VAT registrations (Preview)
 
 [!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to do reporting for multiple value-added tax (VAT) registrations.
 
