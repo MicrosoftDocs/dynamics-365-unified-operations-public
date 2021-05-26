@@ -48,7 +48,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Yes, this feature is replaced by LCS [Issue search](../lifecycle-services/issue-search-lcs.md) and [Dynamics regulatory alert submission service](../lcs-solutions/submit-localization-alerts.md). |
 | **Product areas affected**         | Globalization portal in LCS|
 | **Deployment option**              | Cloud deployment |
-| **Status**                         | Deprecated - Planned removal date in May 2022. |
+| **Status**                         | Deprecated: Planned removal date in May 2022. |
 
 
 ## Feature removed effective January 28, 2021
@@ -75,7 +75,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Visual Studio 2017 will replace Visual Studio 2015 as the deployed and required version. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated. Upon updating, the previous X++ tools will be removed from Visual Studio 2015, and the updated tools will not install on Visual Studio 2015. There is no impact on hosted builds. For build virtual machines, the build pipeline (build definition) needs to be manually updated to change the dependency from MSBuild 14.0 (Visual Studio 2015) to MSBuild 15.0 (Visual Studio 2017) as described in [Update a legacy pipeline in Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
+| **Status**                         | Deprecated: Upon updating, the previous X++ tools will be removed from Visual Studio 2015, and the updated tools will not install on Visual Studio 2015. There is no impact on hosted builds. For build virtual machines, the build pipeline (build definition) needs to be manually updated to change the dependency from MSBuild 14.0 (Visual Studio 2015) to MSBuild 15.0 (Visual Studio 2017) as described in [Update a legacy pipeline in Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
 
 ### User avatar 
 
@@ -95,7 +95,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated. All EP code is scheduled to be removed in the October 2021 release. |
+| **Status**                         | Deprecated: All EP code is scheduled to be removed in the October 2021 release. |
 
 ## Platform updates for version 10.0.15 of Finance and Operations apps
 
@@ -107,7 +107,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | We recommend that customers transition to Microsoft Edge.|
 | **Product areas affected**         | All Dynamics 365 products |
 | **Deployment option**              | All|
-| **Status**                         | Deprecated. Internet Explorer 11 won’t be supported after August 2021.|
+| **Status**                         | Deprecated: Internet Explorer 11 won’t be supported after August 2021.|
 
 
 ### Visual Studio add-in to apply metadata hotfixes
@@ -200,7 +200,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | For more information, see [Configuring Azure Active Directory Conditional Access](/appcenter/general/configuring-aad-conditional-access).|
 | **Product areas affected**         | Security |
 | **Deployment option**              | Cloud |
-| **Status**                         | **Deprecated:** This feature is fully-deprecated for self-service deployments. |
+| **Status**                         | Deprecated: This feature is fully-deprecated for self-service deployments. |
 
 ### Visual Studio 2015
 
@@ -220,7 +220,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | This compiler error permanently replaces the compiler warning.  |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | **Deprecated:** The compiler warning is a compiler error in platform updates for version 10.0.11 of Finance and Operations apps. |
+| **Status**                         | Deprecated: The compiler warning is a compiler error in platform updates for version 10.0.11 of Finance and Operations apps. |
 
 ### ISV licenses created by using the SHA1 hashing algorithm
 
@@ -230,7 +230,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Yes. Use Windows PowerShell to create licenses. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | <strong>Deprecated:</strong> ISV licenses that were created by using the SHA1 hashing algorithm. This algorithm depended on certificates that were created by using the MakeCert utility, and this utility has been deprecated.<p><strong>Deprecated:</strong> The use of SHA1 for security or hashing purposes. SHA1 will cease to function in early 2021. Therefore, it should no longer be used.<p><strong>Removed:</strong> Support for Transport Layer Security (TLS) 1.0 and TLS 1.1 incoming or outgoing requests. |
+| **Status**                         | Deprecated: ISV licenses that were created by using the SHA1 hashing algorithm. This algorithm depended on certificates that were created by using the MakeCert utility, and this utility has been deprecated.<p><strong>Deprecated:</strong> The use of SHA1 for security or hashing purposes. SHA1 will cease to function in early 2021. Therefore, it should no longer be used.<p><strong>Removed:</strong> Support for Transport Layer Security (TLS) 1.0 and TLS 1.1 incoming or outgoing requests. |
 
 ## Platform update 32
 
