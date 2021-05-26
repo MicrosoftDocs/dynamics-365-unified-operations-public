@@ -34,7 +34,7 @@ This topic summarizes answers to questions frequently asked by users of the Dyna
 ### Why are my custom Applications Insights API calls failing to build when I upgraded to the online SDK version 9.30 (Commerce version 10.0.20 release)?
 The Online SDK release 9.30 includes an update from the deprecated [Applications Insights version 1](https://www.npmjs.com/package/applicationinsights-js) to [Application Insights version 2](https://www.npmjs.com/package/@microsoft/applicationinsights-web).  
 
-The Applications Insights version 2 contains some breaking changes to their APIs, that may affect customization code that leverage these APIs to log telemetry into Application Insights.  Details of the breaking changes can be found here: [upgrading from the old Version of Application Insights](https://github.com/microsoft/ApplicationInsights-JS#upgrading-from-the-old-version-of-application-insights).  The new API signatures and interfaces can be found [here](https://github.com/microsoft/ApplicationInsights-JS#upgrading-from-the-old-version-of-application-insights).
+The Applications Insights version 2 contains some breaking API changes that may affect your customization code if you have leveraged these APIs to log telemetry into Application Insights.  Details of the breaking changes can be found here: [upgrading from the old Version of Application Insights](https://github.com/microsoft/ApplicationInsights-JS#upgrading-from-the-old-version-of-application-insights).  The new API signatures and interfaces can be found [here](https://github.com/microsoft/ApplicationInsights-JS#upgrading-from-the-old-version-of-application-insights).
 
 ### What is replacing TSLint, which has been deprecated in SDK version 1.28 (the Commerce version 10.0.18 release)?
 
