@@ -58,7 +58,7 @@ We have recently added or significantly updated the following help topics. They 
 | User productivity| [Create and work with custom fields](../../fin-ops/get-started/user-defined-fields.md)<br>[Saved views](../../fin-ops/get-started/saved-views.md)<br>[Configure document management](../../fin-ops/organization-administration/configure-document-management.md) |
 | Self-service deployment   | [Planned maintenance in self-service environments FAQ](../deployment/plannedmaintenance-selfservice.md)  |
 | On-premises deployment| [Set up and deploy on-premises environments (Platform update 41 and later](../deployment/setup-deploy-on-premises-pu41.md) |
-| LCS | [Asset library in Lifecycle Services (LCS)](lifecycle-services/asset-library.md) |
+| LCS | [Asset library in Lifecycle Services (LCS)](../lifecycle-services/asset-library.md) |
 | Removed or deprecated features | [Removed or deprecated features in previous releases](../migration-upgrade/deprecated-features.md) |
 
 
