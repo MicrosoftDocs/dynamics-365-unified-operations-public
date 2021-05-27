@@ -4,7 +4,7 @@
 title: Add custom resources to your customization code
 description: This topic describes how to add custom static resources to your SDK customization code so that they can be accessed from within your theme.
 author: samjarawan
-ms.date: 09/29/2020
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,13 +33,13 @@ This topic describes how to add custom static resources such as font, image, and
 
 Some scenarios require adding custom static resources such as font, image, or CSS files that can be accessed from within a module or a theme. These static files can be added to a ```/public``` folder within your SDK customization code so that they will be included in the configuration package generated with the [CLI **yarn msdyn365 pack** command](cli-command-reference.md#pack). Relative paths can then be used to access the resources.
 
-During the build step, style SCSS files will be compiled to CSS files and stored inside of the same ```/public``` folder, which should be taken into account when referencing other static resources inside of the ```/public``` folder.
+During the build step, style Sassy CSS (SCSS) files will be compiled into CSS files and stored inside of the same ```/public``` folder, which should be taken into account when referencing other static resources inside of the ```/public``` folder.
 
 ## Example
 
 Resources can be added to the ```/public``` directory or any subdirectory under this directory. For example, adding a font called "NewFont-Regular" could include adding multiple font files such as "NewFont-Regular.eot", "NewFont-Regular.woff", "NewFont-Regular.ttv", and "NewFont-Regular.svg" to the ```/public``` directory.
 
-After adding files to the ```/public``` directory, relative paths in the Sassy CSS (SCSS) file can then be used to point to them. The following SCSS example is taken from a theme that is located in the ```/src/themes/spring``` folder. When the command-line interface (CLI) command **pack** is used, the SCSS code is compiled into a zip file created in the ```/build/public/static/css/spring``` directory. A relative path is then used to access the font within the public folder.
+After adding files to the ```/public``` directory, relative paths in the Sassy CSS (SCSS) file can then be used to point to them. The following SCSS example is taken from a theme that is located in the ```/src/themes/spring``` folder. When the command-line interface (CLI) command **pack** is used, the SCSS code is compiled into a zip file created in the ```/build/public/static/css/spring``` directory. A relative path is then used to access the font within the ```/public``` folder.
 
 ```SCSS
 @import "bootstrap/scss/bootstrap";
