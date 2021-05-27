@@ -3,8 +3,7 @@
 
 title: Parm methods for Segmented Entry controls
 description: Describes the parm methods that can be set in code on an instance of a Segmented Entry control.
-author: robinarh
-ms.date: 06/20/2017
+author: RyanCCarlson2ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,8 +20,7 @@ ms.custom: 25631
 ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ghenriks
-ms.search.validFrom: 2016-02-28
+ms.author: rcarlsonms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

@@ -3,8 +3,7 @@
 
 title: Dimension Expression Builder subpattern
 description: This article describes the Dimension Expression Builder subpattern, which is applied to container controls that use the Dimension Expression Builder control.  
-author: jasongre
-ms.date: 06/20/2017
+author: RyanCCarlson2ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,8 +20,7 @@ ms.custom: 29451
 ms.assetid: 6ab0f75d-3168-4dfe-b2ce-d17d3861216e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jasongre
-ms.search.validFrom: 2016-02-28
+ms.author: rcarlsonms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

@@ -3,8 +3,7 @@
 
 title: Migrate Segmented Entry controls
 description: This topic describes migration scenarios for the Segmented Entry control.
-author: robinarh
-ms.date: 11/10/2017
+author: RyanCCarlson2ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,8 +20,7 @@ ms.custom: 25611
 ms.assetid: 82e953d0-878e-4a3f-a91b-7375017a2810
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ghenriks
-ms.search.validFrom: 2016-02-28
+ms.author: rcarlsonms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

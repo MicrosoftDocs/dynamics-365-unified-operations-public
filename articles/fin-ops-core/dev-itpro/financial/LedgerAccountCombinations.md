@@ -3,8 +3,7 @@
 
 title: Ledger account combinations
 description: This topic provides information about combinations of ledger accounts in the dimension framework.
-author: jasonsto
-ms.date: 05/01/2019
+author: RyanCCarlson2ms.date: 05/01/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,8 +20,7 @@ ms.custom: 11314
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rbrow
-ms.search.validFrom: 2019-01-16
+ms.author: rcarlsonms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

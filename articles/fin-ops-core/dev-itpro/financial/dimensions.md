@@ -3,8 +3,7 @@
 
 title: Support for different dimension patterns
 description: To support different dimension patterns, a set of framework data entities can be used as data sources in other entities that involve dimensions.
-author: Sunil-Garg
-ms.date: 11/10/2017
+author: RyanCCarlson2ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,8 +20,7 @@ ms.custom: 13461
 ms.assetid: c2431895-0751-4a2a-96cb-f7df76c88f66
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
-ms.search.validFrom: 2016-02-28
+ms.author: rcarlsonms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

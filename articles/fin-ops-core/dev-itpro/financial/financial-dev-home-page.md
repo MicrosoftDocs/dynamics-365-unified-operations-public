@@ -3,8 +3,7 @@
 
 title: Financials development home page
 description: This topic provides links to topics about financials development.
-author: robinarh
-ms.date: 09/12/2020
+author: RyanCCarlson2ms.date: 09/12/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,8 +19,7 @@ ms.reviewer: rhaertle
 ms.custom: 21631
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
-ms.search.validFrom: 2016-02-28
+ms.author: rcarlsonms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
