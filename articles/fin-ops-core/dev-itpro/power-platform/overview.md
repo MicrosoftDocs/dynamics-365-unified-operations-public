@@ -38,9 +38,9 @@ To understand the architecture of Microsoft Power Platform, Dataverse, dual-writ
 
 - [Administer Power Platform](/power-platform/admin/admin-documentation)
 - [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
-- [Entity overview](/powerapps/maker/common-data-service/entity-overview)
+- [Tables in Dataverse](/powerapps/maker/common-data-service/entity-overview)
 - [Entity relationships overview](/powerapps/maker/common-data-service/relationships-overview)
-- [Create and edit virtual entities that contain data from an external data source](/powerapps/maker/common-data-service/create-edit-virtual-entities)
+- [Create and edit virtual tables that contain data from an external data source](/powerapps/maker/common-data-service/create-edit-virtual-entities)
 - [What is Power Apps portals?](/powerapps/maker/portals/overview)
 - [Overview of creating apps in Power Apps](/powerapps/maker/)
 
