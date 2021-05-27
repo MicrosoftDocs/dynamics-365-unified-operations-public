@@ -41,7 +41,7 @@ When a new financial dimension is added to the system, users are prompted with a
 
 Adding a financial dimension is typically a deliberate business process. If there is a multi-user environment, such as a user acceptance testing or training environment, only one person should attempt this process. A second option is available when you choose the Activate option, **Rebuild financial dimensions**. 
 
-[![ActWiki2](./media/actwiki2.png)](./media/actwiki2.png) 
+[![Activate financial dimensions](./media/actwiki2.png)](./media/actwiki2.png) 
 
 The **Rebuild financial dimensions** option is set to **No** by default, as it is a process that should only be run if unexpected results occur during the initial activation process. Rebuilding will drop and readd all financial dimensions and values to the tables.
 

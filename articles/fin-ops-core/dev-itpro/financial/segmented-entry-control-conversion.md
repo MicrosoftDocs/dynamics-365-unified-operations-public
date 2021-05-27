@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This tutorial walks you through two migration scenarios for the Segmented Entry control -  a simple scenario (for the SMAServiceOrderTable form) and a complex scenario (for the LedgerJournalTransDaily form).
 
-Simple migration scenario – SMAServiceOrderTable form
------------------------------------------------------
+## Simple migration scenario – SMAServiceOrderTable form
 
 1.  Search for the **SMAServiceOrderTable** form in Application Explorer.
 2.  Add the form to the current project.
@@ -1729,8 +1728,7 @@ public boolean validate()
 
 Because this method only calls the **validate()** method on the control and doesn't perform any additional processing, you can delete it.
 
-Additional resources
---------
+## Additional resources
 
 [Support for Segmented Entry controls on dialogs](segmented-entry-control-dialog-support.md)
 

@@ -53,10 +53,7 @@ The Segmented Entry control has multiple parm methods that influence how the con
 | parmPostingType                      | Correlates to the design-time property.  For more information, see the Segmented Entry control Metadata Specification.                                                                                                                                                                                                         |
 | parmValidateBlockedForManualEntry    | Correlates to the design-time property.  For more information, see the Segmented Entry control Metadata Specification.                                                                                                                                                                                                         |
 
-
-
-Additional resources
---------
+## Additional resources
 
 [Support for Segmented Entry controls on dialogs](segmented-entry-control-dialog-support.md)
 
@@ -65,9 +62,5 @@ Additional resources
 [Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
 
 [Migration guidance for Segmented Entry controls](segmented-entry-control-migration-guidance.md)
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -21,7 +21,8 @@ ms.custom: 273653
 ms.assetid: 119610df-3975-43ce-830b-84fe58266321
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rcarlsonms.dyn365.ops.version: Version 1611
+ms.author: rcarlson
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---
