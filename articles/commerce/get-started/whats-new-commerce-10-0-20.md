@@ -41,7 +41,7 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
-Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them. Some of the listed features are still in preview, while others may already be generally available.
+Most of these features must be enabled using [Feature management](../../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them. Some of the listed features are still in preview, while others may already be generally available.
 
 | Feature area   | Feature                                                  | More information                                                                    |
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
@@ -55,7 +55,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops/
 
 ### Platform updates for Finance and Operations apps
 
-Dynamics 365 Commerce 10.0.20 includes platform updates. To learn more, see [Platform updates for version 10.0.20 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
+Dynamics 365 Commerce 10.0.20 includes platform updates. To learn more, see [Platform updates for version 10.0.20 of Finance and Operations apps](../../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
 ### Bug fixes 
 For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=575415&dbType=3&qc=762ace311d670d27275cb0b6e11d811e4222643ffccdc5681a42a580780b8337).
