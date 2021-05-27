@@ -125,7 +125,7 @@ If Entity Store should be enabled in an environment, the following tasks must be
     - The database name is created in step 14 and is defined in the DatabaseTopologyDefinition.xml file. The default name is **AXDW**.
     - The SQL Server name is the fully qualified domain name (FQDN) of the Microsoft SQL Server or Always on listener. An example of this FQDN is **sqlinstance.onprem.contoso.com**. It's the server that the AXDW database is created on.
 
-Currently, you can enable Entity Store only during initial deployment. If it must be enabled in an existing environment, that environment must be deleted and then deployed again by using a platform update that supports Entity Store.
+To enable Entity Store in an environment that has already been deployed you can use the **Update Settings** action under the **Maintain** button in LCS. This will open a dialog that will allow you to specify the Entity Store configuration. 
 
 ## Authoring and distributing reports by using Entity Store on-premises
 
