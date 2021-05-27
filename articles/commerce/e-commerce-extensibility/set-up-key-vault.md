@@ -211,10 +211,10 @@ You must update the **secretsManagerOUN** property in the platform.settings.json
 Your e-commerce Node application is only able to communicate with Retail Server and request tokens need to securely communicate in a deployed App Service environment. This means that when developing locally, the `SecretManager` class will be unable to retrieve secrets from your Key Vault. Instead you can create a secrets directory in your Node application and add a secrets.json file, where you can configure secretKeys and secretValues that will only be used when developing locally.
 
 > [!NOTE]
-> -   Everything under the "secrets/" directory should be added to your .gitignore file to help prevent secrets from being leaked online.  
-> -   Ensure that the "secrets/secrets.json" file is created and placed in the root level directory and not in the "src" directory of your local development environment.
+> -   Everything under the ```secrets/``` directory should be added to your .gitignore file to help prevent secrets from being leaked online.  
+> -   Ensure that the ```secrets/secrets.json``` file is created and placed in the root level directory and not in the ```src``` directory of your local development environment.
 
-The following example shows the contents of a "secrets/secrets.json" file.
+The following example shows the contents of a ```secrets/secrets.json``` file.
 
 ```json
 {
