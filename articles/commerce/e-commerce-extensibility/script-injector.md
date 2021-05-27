@@ -131,14 +131,14 @@ export default (props: IMyScriptInjectorViewProps) => {
             <script data-load-point='headStart'>
                {scriptContents}
             </script>
-            <script data-load-point='headStart' async src={props.config.scriptSource} />
+            <script data-load-point='headStart' async dangerouslySetInnerHTML={{ __html: props.config.scriptSource}} />
         </HtmlHeadInclude>
     );
 };
 ```
 
 > [!NOTE]
-> Inline script content should be saved as a string and then inserted into the script, and the **data-load-point** attribute must be specified on script tags. This attribute controls where the script tag should be placed. Possible values include **headStart**, **headEnd**, **bodyStart**, and **bodyEnd**.
+> Inline script content should be saved as a string and then inserted into the script using dangerouslySetInnerHTML (to avoid escaping special characters), and the **data-load-point** attribute must be specified on script tags. This attribute controls where the script tag should be placed. Possible values include **headStart**, **headEnd**, **bodyStart**, and **bodyEnd**.
 
 The **HtmlHeadInclude** component can also be used to insert **\<title\>**, **\<meta\>**, **\<link\>**, and **\<style\>** tags into the head of an HTML document. Unlike scripts, these elements do not need a **data-load-point** attribute as they will always be placed in the head.
 
