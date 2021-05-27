@@ -201,7 +201,7 @@ The preceding code is straightforward. The method is marked as handler for the r
 
     [![Stepping through code](./media/stepcodeblock_builddebugproj.png)](./media/stepcodeblock_builddebugproj.png)
     
-13. To see the code map for the call stacks, right-click in the code editor, and then click **Show Call Stack on Code Map**. You may want to add a comment to the call stack, step through the code, and watch as the code map changes accordingly.
+13. (Available in Visual Studio Enterprise.) To see the code map for the call stacks, right-click in the code editor, and then click **Show Call Stack on Code Map**. You may want to add a comment to the call stack, step through the code, and watch as the code map changes accordingly. For more information, see [Map dependencies with code maps](/visualstudio/modeling/map-dependencies-across-your-solutions).
 14. Press F5 to continue. You'll see that the customer has been disallowed.
 15. In the same rental, change the customer name to Phil Spencer, and then click **Update**. This time, the transaction is allowed.
 16. Close Internet Explorer.
