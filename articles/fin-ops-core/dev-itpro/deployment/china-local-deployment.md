@@ -77,7 +77,7 @@ Due to certain technical dependencies, the following features listed will not be
 
     -   [Embedded Power Apps](../../fin-ops/get-started/embed-power-apps.md) and connectivity to Microsoft Power Apps and Microsoft Power Automate will be unavailable.
 
-    -   [Data integration using Dataverse overview](../data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json) will be unavailable.
+    -   [Integrate data into Microsoft Dataverse](/power-platform/admin/data-integrator) will be unavailable.
     
   > [!NOTE]
   > The Lifecycle Services URL for implementations operated by 21Vianet in China is lcs.dynamics.cn.

@@ -4,7 +4,7 @@
 title: INDEX ER function
 description: This topic provides information about how the INDEX Electronic reporting (ER) function is used.
 author: NickSelin
-ms.date: 12/12/2019
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -48,6 +48,9 @@ The valid path of a data source of the *Record list* data type.
 `index`: *Integer*
 
 A numeric index that indicates the position of the desired record in the specified list.
+
+> [!NOTE]
+> Because one-based numbering is used for this function, specify the value **1** to return the first record of the specified list.
 
 ## Return values
 

@@ -110,6 +110,39 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the **Domestic tax report – Feature reference IT-00003**. |
 
+## October 2019 deprecation announcement
+
+### Flowchart diagrams in Business process modeler
+
+<table>
+<tbody>
+<tr>
+<td><strong>Reason for deprecation/removal</strong></td>
+<td>We are deprecating the flowchart diagrams component in Business process modeler (BPM), because the legacy design caused low usage.</td>
+</tr>
+<tr>
+<td><strong>Replaced by another feature?</strong></td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Areas affected</strong></td>
+<td>Business process modeler</td>
+</tr>
+<tr>
+<td><strong>Status</strong></td>
+<td>Deprecated: The flowchart diagrams component in BPM is expected to be removed in 2020. The following functionality will be unavailable:
+<ul>
+<li>All flowcharts will be read-only and unavailable for editing. The shape properties that are associated with flowchart activities will also be unavailable. These flowcharts include both the default flowcharts that are automatically generated and customized flowcharts that are modified based on those default flowcharts.</li>
+<li>The process steps will be read-only and unavailable for editing.</li>     
+<li>The legacy fit/gap analysis feature will be unavailable. Therefore, no gap list will be automatically created or available for export.
+<p><strong>Note:</strong> This feature had previously been deprecated and replaced by Microsoft Azure DevOps integrations.</p>
+</li>
+<li>The version history of the flowchart will be unavailable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Finance and Operations 10.0.5 with Platform update 29
 

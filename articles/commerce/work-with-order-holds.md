@@ -48,7 +48,7 @@ Orders that call center users create in the back-office Commerce program can be 
 
 During order entry, but before order submission and confirmation, call center users might want to manually put an order on hold to prevent it from being released to the warehouse for further processing. For example, the customer who is placing the order might not be ready to commit to it, or critical data that is required in order to process the order might be missing.
 
-On the order entry page, the call center user can put an order on hold by using the **Order holds** option on the **Sales order** tab of the order entry menu. Alternatively, the user can select the **Hold** menu item on the **Sales order summary** page that appears when he or she selects **Complete** on a call center sales order.
+On the order entry page, the call center user can put an order on hold by using the **Order holds** option on the **Sales order** tab of the order entry menu. Alternatively, the user can select the **Hold** menu item on the **Sales order summary** page that appears when the user selects **Complete** on a call center sales order.
 
 In both cases, the **Order holds** page appears. The user can then select **New** to create a hold for the order. In the **Hold code** field, the user should select the code that best describes the reason for the hold. In the **Reason code** field, the user can optionally select an additional code to provide a second level of description of the hold.
 

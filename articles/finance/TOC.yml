@@ -484,6 +484,8 @@
         href: accounts-receivable/process-collection-letters-example.md
       - name: Set up and generate accounts receivable aging information
         href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+      - name: Customer aging snapshot
+        href: accounts-receivable/customer-aging-snapshot.md
       - name: Customer aging report
         href: accounts-receivable/customer-aging.md
       - name: Create a write-off journal for a customer
@@ -1152,6 +1154,14 @@
         items: 
         - name: Change the accounting or reporting currency
           href: general-ledger/add-change-acctg-rprtg-crrncy.md
+        - name: Change or reassign a ledger calendar
+          href: general-ledger/change-mdfy-clndr-to-ledger.md
+        - name: Reverse settings on journals and lines
+          href: general-ledger/rvrs-settgs-on-jrnls-lines.md
+        - name: Year-end close missing opening balances
+          href: general-ledger/yec-mssng-open-blnces.md
+        - name: Open financial journal templates in Office
+          href: general-ledger/open-fincl-jrnls-in-office.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
@@ -1494,10 +1504,20 @@
             href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
           - name: Add data fields in the tax integration by using extensions
             href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-          - name: Multiple VAT registration numbers
-            href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
           - name: Set up an environment for master data lookup
             href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+          - name: Multiple VAT registration numbers
+            href: localizations/emea-multiple-vat-registration-numbers.md
+          - name: Reporting for multiple VAT registrations 
+            items:
+            - name: Reporting for multiple VAT registrations
+              href: localizations/emea-reporting-for-multiple-vat-registrations.md
+            - name: Netherlands reporting
+              items:
+              - name: VAT declaration
+                href: localizations/emea-nl-vat-declaration-netherlands.md
+              - name: EU sales list
+                href: localizations/emea-nl-eu-sales-list.md
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
       - name: Australia
@@ -1795,7 +1815,9 @@
         - name: User operation log by China working rule
           href: localizations/tasks/user-operation-log-china-working-rule.md
         - name: VAT customer invoices FAQ
-          href: localizations/apac-chn-tax-integration-vat-customer-invoices.md         
+          href: localizations/apac-chn-tax-integration-vat-customer-invoices.md   
+        - name: GB/T 24589-2010 export
+          href: localizations/apac-chn-gbt-24589-2010.md
       - name: The Czech Republic
         items:
         - name: The Czech Republic
@@ -2378,6 +2400,20 @@
                 href: localizations/apac-ind-GST-tax-returns.md
               - name: Enable multi-batch processing for GSTR reports
                 href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+            - name: Troubleshooting GST
+              items:
+              - name: Incorrect tax amount after calculation
+                href: localizations/apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md
+              - name: Tax configuration errors
+                href: localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md
+              - name: Tax isn't calculated
+                href: localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md
+              - name: Activating the setoff rules takes longer than expected
+                href: localizations/apac-ind-GST-troubleshooting-setoff-rule-activate-take-long-time.md
+              - name: TaxTrans or voucher isn't generated
+                href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
+              - name: Tax transaction ID is incorrect
+                href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
         - name: Direct taxes
           items:
           - name: India withholding tax
@@ -2834,6 +2870,10 @@
           href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
         - name: Audit file (XML Auditfile Financieel XAF)
           href: localizations/emea-nl-audit-file.md
+        - name: VAT declaration (Netherlands)
+          href: localizations/emea-nl-vat-declaration-netherlands.md
+        - name: EU sales list
+          href: localizations/emea-nl-EU-sales-list.md
       - name: Norway
         items:
         - name: Norway overview

@@ -226,7 +226,7 @@ Some cards can't be used for omni-channel payments, because they don't support i
 
 ### Using a different card
 
-A customer who comes to the store for order pickup has the option to use a different card. When the cashier receives the **Use available payment method** prompt at the time of order pickup, he or she can ask whether the customer wants to use the same card. If the customer has lost the card that was used to create the order and wants to pay for the order by using a different card, the cashier can select **Use a different payment method**. If the customer comes back later to pick up more items for the same order, if the original card authorization is still valid, the cashier can again ask whether the customer wants to use that card.
+A customer who comes to the store for order pickup has the option to use a different card. When the cashier receives the **Use available payment method** prompt at the time of order pickup, the cashier can ask whether the customer wants to use the same card. If the customer has lost the card that was used to create the order and wants to pay for the order by using a different card, the cashier can select **Use a different payment method**. If the customer comes back later to pick up more items for the same order, if the original card authorization is still valid, the cashier can again ask whether the customer wants to use that card.
 
 ### Invalid authorizations
 

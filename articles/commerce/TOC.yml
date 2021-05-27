@@ -2386,6 +2386,8 @@
         items:
         - name: POS screen layouts
           href: pos-screen-layouts.md
+        - name: Store Commerce app in Microsoft Dynamics 365 Commerce
+          href: dev-itpro/store-commerce.md
         - name: Open URL in POS
           href: Open-URL-in-POS.md
         - name: Install the POS Layout designer

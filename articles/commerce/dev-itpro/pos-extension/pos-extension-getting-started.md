@@ -77,7 +77,7 @@ To develop your first extension, use the existing samples from GitHub. Alternati
 
 ## GitHub sample
 
-To use the sample, clone the **release** branch samples from the GitHub repo, and follow the steps in the GitHub readme file. To compile, build, and debug, follow the steps in the Debug POS extension section.
+To use the sample, clone the **release** branch samples from the GitHub repo, and follow the steps in the GitHub readme file.
 
 ## Custom extensions
 

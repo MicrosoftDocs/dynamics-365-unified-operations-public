@@ -14,7 +14,6 @@ ms.technology:
 ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, HcmMassBenefitEnrollment, HcmBenefitLookup, HcmMassBenefitEnrollmentResults, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  

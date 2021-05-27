@@ -4,7 +4,7 @@
 title: Configure Electronic invoicing in Regulatory Configuration Services (RCS)
 description: This topic explains how to configure Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS). 
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -199,6 +199,8 @@ The following lists show the ER format configurations that are available for the
 
 - Sales invoice (ES)
 - Project invoice (ES)
+
+In addition to the ER format configurations that are available out of the box to use with the Electronic Invoicing service, you can also create your own ER format configurations. However, the format configurations that are created to use with Electronic Invoicing features don't support direct reference to Finance or Supply Chain Management tables or any of the corresponding metadata. Only references to the ER model mapping are supported.
 
 ### Actions
 

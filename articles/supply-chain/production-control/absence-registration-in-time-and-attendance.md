@@ -35,7 +35,7 @@ This topic describes the concepts for absence and explains how to handle absence
 
 Workers are considered absent for any hours that they don't work during their regular work hours. Regular work hours are defined in a worker's standard time profile.
 
-For example, a worker is working on a day profile that has clock-in at 7:00 AM and clock-out at 3:00 PM. If the worker clocks in at 9:00 AM, he is considered absent from 7:00 AM to 9:00 AM on that day.
+For example, a worker is working on a day profile that has clock-in at 7:00 AM and clock-out at 3:00 PM. If the worker clocks in at 9:00 AM, they are considered absent from 7:00 AM to 9:00 AM on that day.
 
 In this case, workers are prompted to enter a reason for their absence. They can specify a reason by selecting an absence code.
 
@@ -105,7 +105,7 @@ Worker time registrations must be calculated and approved before they can be tra
 
 An approver can change a worker's time registrations. The approver can even change any absence that the worker has registered. If the approver manually enters a time period that has an absence code, the absence code for that period isn't overridden by the default absence code from the Time and attendance parameters.
 
-For example, a worker clocks in at 10 AM and selects an absence code that indicates that she is late. Later, the worker informs her supervisor that she had a doctor's appointment from 8 AM to 10 AM. A doctor's appointment should not cause a deduction in the worker's pay. Therefore, in this case, the supervisor can adjust the two hours of absence from 8 AM to 10 AM by manually entering an absence code that indicates illness for those two hours.
+For example, a worker clocks in at 10 AM and selects an absence code that indicates that they are late. Later, the worker informs their supervisor that they had a doctor's appointment from 8 AM to 10 AM. A doctor's appointment should not cause a deduction in the worker's pay. Therefore, in this case, the supervisor can adjust the two hours of absence from 8 AM to 10 AM by manually entering an absence code that indicates illness for those two hours.
 
 ### Calculate and approve absence
 
