@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Platform updates for version 10.0.10 of Finance and Operations apps (August 2021)
-description: This topic lists the features that are included in the platform updates for version 10.0.10 of Finance and Operations apps.
+title: Platform updates for version 10.0.20 of Finance and Operations apps (August 2021)
+description: This topic lists the features that are included in the platform updates for version 10.0.20 of Finance and Operations apps.
 author: sericks007
 ms.date: 05/27/2021
 ms.topic: article
@@ -41,11 +41,11 @@ This topic lists the features that are included in the platform updates for vers
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
-Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.Some of the listed features are still in preview, while others may already be generally available.
+Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them. Some of the listed features are still in preview, while others may already be generally available.
 
 | Feature area   | Feature                                                  | More information                                                                    |
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
-| System administration | **Internet Explorer end-of-support notifications**<br><br>Users accessing Finance and Operations apps via Internal Explorer (IE) will start seeing notifications about the end of support for that browser. IE users will first see an informational message that IE support is ending on August 17, 2021 (the publicly announced, end-of-support date for IE), followed by a warning that support has officially ended. Organizations are encouraged to keep these notifications live unless IE is mandated for their users, in which case you can choose to suppress these notifications and rely on internal processes for migrating your user base to Microsoft Edge or another modern browser.<br><br>The current target for blocking IE usage with Finance and Operations app is with the April 2022 release.Starting in January 2022, users will start seeing a non-dismissible error message that indicates that IE support will soon be blocked. This error message is not controlled by this feature, and customers will need to contact support should this message need to be suppressed for their organization. | <ul><li>[System requirements for cloud deployments](../../fin-ops/get-started/system-requirements.md)</br></li></br><li>[System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md) |
+| System administration | **Internet Explorer end-of-support notifications**<br><br>Users accessing Finance and Operations apps via Internal Explorer (IE) will start seeing notifications about the end of support for that browser. IE users will first see an informational message that IE support is ending on August 17, 2021 (the publicly announced, end-of-support date for IE), followed by a warning that support has officially ended. Organizations are encouraged to keep these notifications live unless IE is mandated for their users, in which case you can choose to suppress these notifications and rely on internal processes for migrating your user base to Microsoft Edge or another modern browser.<br><br>The current target for blocking IE usage with Finance and Operations app is with the April 2022 release. Starting in January 2022, users will start seeing a non-dismissible error message that indicates that IE support will soon be blocked. This error message is not controlled by this feature, and customers will need to contact Microsoft Support if this message needs to be suppressed for their organization. | <ul><li>[System requirements for cloud deployments](../../fin-ops/get-started/system-requirements.md)</br></li></br><li>[System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md) |
 
 ## Additional resources
 
