@@ -380,8 +380,6 @@
             href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
           - name: Cash management improvements
             href: cash-mgmt.md
-          - name: Inventory lookup in the POS
-            href: product-variants-POS.md
           - name: Suspend and resume transactions in the POS
             href: pos-suspend-recall-transactions.md
           - name: Offline POS functionality
@@ -714,6 +712,8 @@
             href: pos-outbound-inventory-operation.md
           - name: Calculate inventory availability for retail channels
             href: calculated-inventory-retail-channels.md
+          - name: Inventory lookup operation in POS
+            href: pos-inventory-lookup-operation.md
         - name: Purchase orders   
           items:
           - name: Purchase order overview
@@ -2386,6 +2386,8 @@
         items:
         - name: POS screen layouts
           href: pos-screen-layouts.md
+        - name: Store Commerce app in Microsoft Dynamics 365 Commerce
+          href: dev-itpro/store-commerce.md
         - name: Open URL in POS
           href: Open-URL-in-POS.md
         - name: Install the POS Layout designer
@@ -2448,10 +2450,34 @@
               href: dev-itpro/pos-extension/pos-extension-getting-started.md
             - name: Create a POS extension package project
               href: dev-itpro/pos-extension/create-pos-extension-package.md
-            - name: Create a Modern POS extension appx file
+            - name: Create an .appx file for a Modern POS extension package
               href: dev-itpro/pos-extension/create-pos-extension-appx.md
-            - name: Debug a POS extension
+            - name: Debug POS extensions
               href: dev-itpro/pos-extension/debug-pos-extension.md
+            - name: Extension packaging and deployment
+              items:
+                - name: Create a Modern POS extension package
+                  href: dev-itpro/pos-extension/mpos-extension-packaging.md
+                - name: Code signing a Modern POS (MSIX) extension package
+                  href: dev-itpro/pos-extension/mpos-extension-signing.md
+                - name: Create a Cloud POS extension package
+                  href: dev-itpro/pos-extension/cpos-extension-package.md
+            - name: Migrate a POS extension to the independent-packaging model
+              href: dev-itpro/pos-extension/migrate-pos-extension.md
+            - name: POS extension development guide
+              items:
+                - name: POS extension basics
+                  href: dev-itpro/pos-extension/pos-extension-basics.md
+                - name: Create a custom view in POS
+                  href: dev-itpro/pos-extension/custom-pos-view.md
+                - name: Use POS controls in extensions
+                  href: dev-itpro/pos-extension/controls-pos-extension.md
+                - name: Tasks
+                  items:
+                    - name: Use Knockout.js in POS extensions
+                      href: dev-itpro/pos-extension/knockout-pos-extension.md
+                    - name: Consume custom headless Commerce APIs
+                      href: dev-itpro/pos-extension/consume-apis-pos.md
       - name: Hardware Station extensibility
         items:
         - name: Hardware Station and extensibility

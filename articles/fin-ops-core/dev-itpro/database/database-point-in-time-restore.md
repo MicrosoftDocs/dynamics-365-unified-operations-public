@@ -4,7 +4,7 @@
 title: Database point-in-time restore (PITR)
 description: This topic explains how to perform a point-in-time restore of a database for Finance and Operations.
 author: LaneSwenka
-ms.date: 09/22/2020
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,6 +41,9 @@ To determine the root cause of the failure, download the runbook logs using the 
 
 ### Data elements that need attention after restore
 When you restore a database from a previous point in time, keep in mind that the database is provided "as was." For example, batch jobs and other data elements in the system can be in an in-progress state. These elements will require manual review.
+
+> [!NOTE]
+> Restore does affect the tables that store references to files stored in Azure blob storage (like document attachments and custom Microsoft Office templates). However, as Azure blob storage itself is not affected by this process, any files added after the restore point will continue to exist in Azure blob storage but will not be reflected in the database. 
 
 ### Environment administrator
 The system administrator account in the target environment (that is, the account that has a **UserId** value of **Admin**) is reset to the value that is found in the web.config file in the target environment. This value should match the value of the administrator account in LCS. To preview which account will be used, go to the **Environment Details** page for your target sandbox environment in LCS. The value that was selected in the **Environment Administrator** field when the environment was first deployed is updated to the system administrator in the transactional database. The tenant of the environment will be the tenant of the environment administrator.

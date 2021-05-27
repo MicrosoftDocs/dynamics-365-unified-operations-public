@@ -2,7 +2,6 @@
 title: Firm planned orders
 description: This topic explains how to firm planned orders. When planned orders are firmed, they become actual purchase orders, transfer orders, or production orders.
 author: ChristianRytt
-manager: tfehr
 ms.date: 04/22/2021
 ms.search.form: ReqTransPo, ReqTransFirmLog
 audience: Application User
@@ -73,6 +72,7 @@ To manually firm planned orders, you find and select the planned orders that you
 
     - **Group by vendor** – Set this option to *Yes* to group planned purchase orders and create one purchase order per vendor during firming. Alternatively, you can create one purchase order that has one line for each planned order.
     - **Group by buyer group** – Set this option to *Yes* to group planned purchase orders and create one purchase order that combines the vendor and buyer group. To use this option, you must also set the **Group by vendor** option to *Yes*.
+    - **Group by purchase agreement** – Set this option to *Yes* to group planned purchase orders that have the same vendor as existing purchase agreements and create one purchase order per purchase agreement. This option is automatically enabled when **Group by vendor** is enabled. To use **Group by purchase agreement**, **Find purchase agreement** must be set to *Yes* on the **Master planning parameters** page.
     - **Group by period** (in the **Purchase orders** section) – Select the period to group planned purchase orders by. To use this option, you must also select the **Group by vendor** option.
     - **Group by period** (in the **Transfers** section) – Select the period to group planned transfer orders by. The orders will be grouped based on **From warehouse** and **To warehouse** values.
 

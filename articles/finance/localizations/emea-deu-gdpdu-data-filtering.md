@@ -6,7 +6,6 @@ description: This topic explains how to add a data filter in the German audit fi
 author: liza-golub
 ms.date: 02/09/2021
 ms.topic: article
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

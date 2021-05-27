@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce online SDK FAQ
 description: This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 04/20/2021
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,12 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
+
+### Why are my custom Application Insights API calls failing to build after I upgrade to the Commerce online SDK version 9.30 release?
+
+The Commerce online SDK version 9.30 release includes an update from the deprecated [Applications Insights SDK](https://www.npmjs.com/package/applicationinsights-js) to the newer [Microsoft Application Insights JavaScript SDK - Web](https://www.npmjs.com/package/@microsoft/applicationinsights-web).
+
+The Applications Insights update contains breaking API changes that might affect your customization code if you've used these APIs to log telemetry into your Application Insights instance. For details about the changes, see [Upgrading from the old version of Application Insights](https://github.com/microsoft/ApplicationInsights-JS#upgrading-from-the-old-version-of-application-insights).
 
 ### What is replacing TSLint, which has been deprecated in SDK version 1.28 (the Commerce version 10.0.18 release)?
 

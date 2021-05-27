@@ -3,7 +3,7 @@
 
 title: Reprint and void wave labels
 description: This topic explains how to void and reprint existing wave labels.
-author: GarmMSFT
+author: perlynne
 ms.date: 07/09/2020
 ms.topic: article
 # ms.prod:
@@ -15,7 +15,7 @@ ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWa
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: PJacobse
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global

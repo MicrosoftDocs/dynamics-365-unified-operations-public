@@ -4,7 +4,7 @@
 title: Priority-based throttling FAQ
 description: This topic provides answers to frequently asked questions about priority-based throttling for OData and custom service-based integrations.
 author: hasaid
-ms.date: 04/20/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,8 +45,10 @@ Finance version 10.0.19 will be available for pre-release in late April 2021 and
 ## Will a retry request receive preferential treatment over a new request?
 No.
 
-## Will my environment be subjected to any API limits?
-No. At this time, environments aren't subject to any API limits. 
+## Will my environment be subject to any API limits?
+No. At this time, environments are not subject to any API limits. 
+
+Telemetry data is collected to assess the impact of the workloads across environments. This data helps establish baseline API limits as we define a roadmap for introducing usage-based limits.
 
 ## Is there a report that determines when throttling might occur?
 Yes. A report is available and can be accessed through the **Raw logs** on the **Environment monitoring** page in LCS. The requests that are listed in this view are likely to be throttled when this feature is turned on by default starting in Finance version 10.0.19.
@@ -88,8 +90,24 @@ When a request is throttled, the response header includes a time that will be us
 You will receive the message, "This request could not be processed at this time due to system experiencing high resource utilization. Retry the request after {0} seconds".
 Where **{0}** will have the dynamically calculated retry-after time interval.
 
-## Does throttling apply to internal Microsoft services?
-Internal Microsoft services, such as DRA, WHSMobile, and RetailAPI are currently exempt from throttling. However, telemetry is being collected on the performance of these services on the overall system health. Microsoft will work with each of these internal service teams to establish usage-based limits at some point.
+## Does throttling apply to Microsoft services?
+The following Microsoft services are initially exempt, and throttling doesn't apply to them: 
+
+   - Document Routing Agent (DRA)
+   - Warehouse Mobile (WHSMobile)
+   - RetailAPI
+   - Office Integration
+   - Data Import/Export Framework (DIXF)
+   - Data Integrator
+   - Dual-write
+   - Finance and Operations apps - Power Platform Integration (Virtual Entities)
+   - Finance and Operations apps Connector 
+
+Though these services are exempt, telemetry is collected on the performance and impact of these services on the overall system health. 
+
+The owners of the exempt services are prioritizing the implementation of 429 handlers by the end of 2021. At that time, the services will no longer be exempt and throttling will apply. Notification will be provided ahead of these changes, and the documentation will be updated.
+
+Even if these services implement their own handlers, we still recommended that you have client-side handling. Consider implementing the 429 handler with *retry-after* logic.
 
 ## Is it recommended to use a dedicated integration account instead of just the generic admin user account?
 Yes, we strongly recommend this approach. As these service protection settings are set up for user-specific values, using the same user account for most or all of your integration will limit your ability to assign relative priorities across your integration needs. Further, if the same user account is used, all integration requests that originate from that user account will be subjected to throttling.

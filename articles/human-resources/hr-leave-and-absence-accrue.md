@@ -4,7 +4,7 @@
 title: Accrue leave and absence plans
 description: You can accrue leave and absence in Dynamics 365 Human Resources for multiple employees or for an individual.
 author: andreabichsel
-ms.date: 05/04/2021
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,13 +46,10 @@ You can accrue leave and absence in Dynamics 365 Human Resources for multiple em
 
 5. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
 
-   1. Enter information for the accrual process.
-
-   2. To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.
-
-   3. To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.
-
-   4. Select **OK**. The accrual process will run with the parameters you set.
+    1. Enter information for the accrual process.
+    2. To set up a recurring job, select **Recurrence**, enter the recurrence information, and then select **OK**.
+    3. To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.
+    4. Select **OK**. The accrual process will run with the parameters you set. 
 
 ## Accrue leave and absence for an employee
 
@@ -139,5 +136,7 @@ To view the transaction details for a specific accrual amount, select an accrual
 
 [Leave and absence overview](hr-leave-and-absence-overview.md)</br>
 [Create a leave and absence plan](hr-leave-and-absence-plans.md)
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

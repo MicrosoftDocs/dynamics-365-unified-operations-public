@@ -246,7 +246,7 @@ For Public sector, the extended functionality enables an RFQ case to be sent to 
 - Published requests for quotations line
 - Published requests for quotations header attachments
 
-These entities let people who aren't provisioned users in Supply Chain Management, but who have anonymous access to the external site, view the available and closed work. Additionally, extended functionality in **Send and publish** lets the user who sets up parameters for the RFQ process define an email template. Then, when the procurement professional creates the RFQ case, he or she must select the email template to send the required information to the vendors on the RFQ case. 
+These entities let people who aren't provisioned users in Supply Chain Management, but who have anonymous access to the external site, view the available and closed work. Additionally, extended functionality in **Send and publish** lets the user who sets up parameters for the RFQ process define an email template. Then, when the procurement professional creates the RFQ case, they must select the email template to send the required information to the vendors on the RFQ case. 
 
 The user who sets up parameters for the RFQ process can create multiple email templates. These email templates can contain both static text and the following replacement tokens. The tokens will be replaced with contextual values when an email is created.
 
