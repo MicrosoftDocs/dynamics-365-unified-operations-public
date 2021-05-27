@@ -128,10 +128,8 @@ export default (props: IMyScriptInjectorViewProps) => {
     const scriptContents = `window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create', 'UA-XXXXX-Y', 'auto');ga('send', 'pageview')`;
     return (
         <HtmlHeadInclude>
-            <script data-load-point='headStart'>
-               {scriptContents}
-            </script>
-            <script data-load-point='headStart' async dangerouslySetInnerHTML={{ __html: props.config.scriptSource}} />
+            <script data-load-point='headStart' dangerouslySetInnerHTML={{ __html: scriptContents}} />
+            <script data-load-point='headStart' async src={props.config.scriptSource} />
         </HtmlHeadInclude>
     );
 };
