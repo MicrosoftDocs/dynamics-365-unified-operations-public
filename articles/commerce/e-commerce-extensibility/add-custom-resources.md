@@ -33,7 +33,7 @@ This topic describes how to add custom static resources such as font, image, and
 
 Some scenarios require adding custom static resources such as font, image, or CSS files that can be accessed from within a module or a theme. These static files can be added to a ```/public``` folder within your SDK customization code so that they will be included in the configuration package generated with the [CLI **yarn msdyn365 pack** command](cli-command-reference.md#pack). Relative paths can then be used to access the resources.
 
-During the build step, style Sassy CSS (SCSS) files will be compiled into CSS files and stored inside of the same ```/public``` folder, which should be taken into account when referencing other static resources inside of the ```/public``` folder.
+During the build step, style Sassy CSS (SCSS) files are compiled into CSS files and stored inside of the same ```/public``` folder, which should be taken into account when referencing other static resources inside of the ```/public``` folder.
 
 ## Example
 
