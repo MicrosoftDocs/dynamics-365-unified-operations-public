@@ -213,7 +213,7 @@ Your e-commerce Node application is only able to communicate with Retail Server 
 > [!NOTE]
 > Everything under the secrets/ directory should be added to your .gitignore file to help prevent secrets from being leaked online.  
 > Make sure the ```secrets/secrets.json``` is created and placed in the root level directory and not in ```src``` folder of your Local development environment.
-> Everything under the *secrets* directory should be added to your .gitignore file to help prevent secrets from being leaked online.
+> Everything under the ```secrets/``` directory should be added to your .gitignore file to help prevent secrets from being leaked online.
 
 
 The following example shows the contents of a "secrets/secrets.json" file.
