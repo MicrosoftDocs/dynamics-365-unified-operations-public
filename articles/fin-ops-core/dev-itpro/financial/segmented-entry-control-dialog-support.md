@@ -73,7 +73,7 @@ This scenario is a simple dialog scenario around Segmented Entry. More advanced 
 
 [Design-time metadata for Segmented Entry controls](segmented-entry-control-metadata-specification.md)
 
-[Parm methods for Segmented Entry controls](segmented-entry-control-parm-method-specification.md)
+[`Parm` methods for Segmented Entry controls](segmented-entry-control-parm-method-specification.md)
 
 [Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
 
