@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: What's new and changed in Dynamics 365 Commerce 10.0.19 (July 2021)
+title: What's new and changed in Dynamics 365 Commerce 10.0.19 (June 2021)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.19. 
 author: josaw1
-ms.date: 04/22/2021
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
 
 ---
-# What's new and changed in Dynamics 365 Commerce 10.0.19 (July 2021)
+# What's new and changed in Dynamics 365 Commerce 10.0.19 (June 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -35,7 +35,7 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 - **Preview of release:** April 2021
 - **General availability of release (self-update):** June 2021
-- **General availability of release (auto-update):** July 2021
+- **General availability of release (auto-update):** June 2021
 
 ## Features included in this release
 
