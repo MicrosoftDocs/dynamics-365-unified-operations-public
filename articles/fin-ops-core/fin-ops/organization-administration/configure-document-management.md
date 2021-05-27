@@ -104,7 +104,7 @@ To specify file types, follow these steps.
 The attachments preview uses the Web app Open Platform Interface (WOPI) that is provided by Microsoft Office Online Server. On the **Document management parameters** page, on the **General** tab, in the **Office Web Apps Server** field, specify the Office Online Server instance to use for attachment previews. The default value is `https://onenote.officeapps.live.com`, which points to the cloud-based WOPI server. 
 
 > [!NOTE]
-> For the following situations, please adjust the Office Web Apps Server field as specified. 
+> For the following situations, you will need to adjust the **Office Web Apps Server** field as specified. 
 > -  For environments in China, use https://onenote.partner.officewebapps.cn. 
 > -  For environments in the Government Commmunity Cloud (GCC), use https://gb4-onenote.officeapps.live.com.
 
