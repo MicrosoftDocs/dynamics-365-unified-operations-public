@@ -35,8 +35,8 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 | Inventory and logistics | [Sales order details performance enhancement](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-details-performance-enhancement) | This feature improves performance when opening sales order details. When this feature is enabled, It aligns the sales side to use the one-form pattern used on the purchase side by skipping the SalesTableListPage and open the SalesTable form in list view mode when a user accesses the menu All sales orders and similar list pages for sales. When this feature is disabled, then the SalesTableListPage is called. |
 | Manufacturing | [Invoke process automation flows to create quality orders](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/invoke-process-automation-flows-create-quality-orders) | *Coming soon* <!-- KFM: Add link to new doc --> |
 | Manufacturing | [Enhanced production floor execution interface for manufacturing](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing) | [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md) |
-| Product information management | [Manage changes in formulas and their ingredients](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/engineering-change-management-support-process-manufacturing) | <!-- KFM: Add link to new doc --> |
-| Product information management | [Product readiness checks](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/product-readiness-checks) | <!-- KFM: Add link to new doc -->  |
+| Product information management | [Manage changes in formulas and their ingredients](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/engineering-change-management-support-process-manufacturing) | [Manage changes in formulas and their ingredients](../engineering-change-management/manage-formula-changes.md) |
+| Product information management | [Product readiness checks](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/product-readiness-checks) | [Product readiness](../engineering-change-management/product-readiness.md) |
 
 ## Feature enhancements included in this release
 
@@ -48,12 +48,12 @@ The following table lists the feature enhancements included in this release. Eac
 | Master planning | Parallel authorizing of adjusted demand forecast | This feature allows parallel authorizing of adjusted demand forecast from the **Adjusted demand forecast** page. The intent of this feature is to increase performance when a high number of forecasts are being authorized. When authorizing, the user can specify the **Number of threads** in the authorizing dialog. |
 | Master planning | (Preview) Batchable firming and consolidation for planned bulk and pack batch orders | This feature lets you use batch jobs to firm and consolidate planned bulk and pack orders. |
 | Master planning | (Preview) Priority driven MRP support for Planning Optimization | This Planning Optimization preview feature enables master planning driven by planning priority with reorder point. Highlighted changes:<ul><li>**Planning priority** field on sales order line, purchase order line, demand forecast, and planned orders.</li><li>A new Coverage code option</li><li>**Item coverage** field for reorder point.</li><li>Master planning setup forms to control the planning priority setup.</li><li>Planning Optimization calculation logic to set and respect planning priority</li></ul> |
-| Production control | Update related resource requirements when a route operation is changed | This feature enables the system to update the related resource requirements after a user changes the operation of an existing route step. |
 | Production control | Copy generic routes | This feature enhances the copy route function to allow users to copy routes that aren't item specific. It enables the system to update all relevant information (such as site, route group, resource requirements, and various times) after the copy route function has been used to overwrite a route that is not yet assigned to an item. |
-
-
-
-
+| Production control | Update related resource requirements when a route operation is changed | This feature enables the system to update the related resource requirements after a user changes the operation of an existing route step. |
+| Product information management | Bill of materials report pre-processing to prevent timeout |  |
+| Procurement and sourcing | Enable resetting procurement related workflows |  |
+| Transportation management | Enable creation of a vendor invoice journal when discarding a freight bill |  |
+| Warehouse management | Validate templates selected for replenishment jobs |  |
 
 ## New and updated documentation resources
 
@@ -61,10 +61,11 @@ We have recently added or significantly updated the following help topics. They 
 
 | Feature area | New or updated topics |
 |---|---|
+| Engineering change management | [Product lifecycle states and transactions](../engineering-change-management/product-lifecycle-state-transactions.md) |
+| Inventory management | [Inventory Visibility Add-in](../inventory/inventory-visibility.md)<br><br>[Quality and nonconformance management overview](../inventory/quality-management-processes.md) (plus all related quality-management topics) |
 | Procurement and sourcing | [Maintain vendor certification](../../finance/public-sector/manage-vendor-certification.md) |
-| Inventory management | [Quality and nonconformance management overview](../inventory/quality-management-processes.md) (plus all related quality-management topics) |
-| Warehouse management | [Deferred processing of manual inventory movement](../warehousing/deferred-processing-manual-inventory-movement.md) |
-|  | [User interface control styles for production floor execution](../production-control/production-floor-execution-styles.md) |
+| Production control | [Style the production floor execution interface](../production-control/production-floor-execution-styles.md) |
+| Warehouse management | [Assign step icons and titles for the Warehouse Management mobile app](../warehousing/step-icons-titles.md)<br><br>[Deferred processing of manual inventory movement](../warehousing/deferred-processing-manual-inventory-movement.md) |
 
 ## Additional resources
 
