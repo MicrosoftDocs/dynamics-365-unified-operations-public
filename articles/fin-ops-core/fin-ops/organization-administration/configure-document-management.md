@@ -4,7 +4,7 @@
 title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-ms.date: 05/17/2021
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -101,7 +101,12 @@ To specify file types, follow these steps.
 
 ## Configure document preview
 
-The attachments preview uses the Web app Open Platform Interface (WOPI) that is provided by Microsoft Office Online Server. On the **Document management parameters** page, on the **General** tab, in the **Office Web Apps Server** field, specify the Office Online Server instance to use for attachment previews. The default value is `https://onenote.officeapps.live.com`. This value points to the cloud-based WOPI server.
+The attachments preview uses the Web app Open Platform Interface (WOPI) that is provided by Microsoft Office Online Server. On the **Document management parameters** page, on the **General** tab, in the **Office Web Apps Server** field, specify the Office Online Server instance to use for attachment previews. The default value is `https://onenote.officeapps.live.com`, which points to the cloud-based WOPI server. 
+
+> [!NOTE]
+> For the following situations, you will need to adjust the **Office Web Apps Server** field as specified. 
+> -  For environments in China, use https://onenote.partner.officewebapps.cn. 
+> -  For environments in the Government Commmunity Cloud (GCC), use https://gb4-onenote.officeapps.live.com.
 
 ### For a Microsoft Dynamics 365 Finance + Operations (on-premises) environment
 
