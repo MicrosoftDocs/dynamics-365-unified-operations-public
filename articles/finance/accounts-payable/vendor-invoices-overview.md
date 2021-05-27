@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Vendor invoices overview
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 This topic provides general information about vendor invoices. Vendor invoices are requests for received payment for products and services. Vendor invoices might represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.
 
@@ -76,7 +78,9 @@ Following are several ways you can prevent an invoice from being submitted to a 
 
 - **Invoice contains unallocated charges.** The person who submitted the invoice will receive an alert that the invoice has unallocated charges so they can correct the invoice before resubmitting it to workflow. This feature is available if the **Prohibit submission to workflow when there are unallocated charges on a vendor invoice** parameter on the **Feature management** page is turned on.
 
-- **Invoice contains the same invoice number as another posted invoice.** The person who submitted the invoice will receive an alert that an invoice with a duplicate number was found, and they can correct it before resubmitting to workflow. This alert will be displayed when the **Check the invoice number used** parameter in Accounts payable is set to **Reject duplicate**. This feature is available if the **Prohibit submission to workflow when the invoice number already exists on a posted invoice, and your system is not set up to accept duplicate invoice numbers** parameter on the **Feature management** page is turned on.  
+- **Invoice contains the same invoice number as another posted invoice.** The person who submitted the invoice will receive a message indicating that an invoice with a duplicate number was found. The duplicate number can be corrected before resubmitting the invoice to workflow. This alert will be displayed when the **Check the invoice number used** parameter in Accounts payable is set to **Reject duplicate**. This feature is available if the **Prohibit submission to workflow when the invoice number already exists on a posted invoice, and your system is not set up to accept duplicate invoice numbers** parameter on the **Feature management** page is turned on.
+
+- **Invoice contains a line where the invoice quantity is less than the matched product receipt quantity.** The person who submits the invoice or attempts to post will receive a message that the quantities aren’t equal. This message provides an opportunity to correct the values before resubmitting the invoice to workflow. This feature is available if the **Block posting and submission of vendor invoices to workflow** parameter on the **Feature management** page is turned on and the **Block posting and submission to workflow** parameter on the **Accounts payable parameters** page is turned on.  
 
 ## Matching vendor invoices to product receipts
 

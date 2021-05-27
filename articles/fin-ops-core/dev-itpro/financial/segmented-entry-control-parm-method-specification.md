@@ -3,7 +3,7 @@
 
 title: Parm methods for Segmented Entry controls
 description: Describes the parm methods that can be set in code on an instance of a Segmented Entry control.
-author: robinarh
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 25631
 ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ghenriks
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -53,10 +53,7 @@ The Segmented Entry control has multiple parm methods that influence how the con
 | parmPostingType                      | Correlates to the design-time property.  For more information, see the Segmented Entry control Metadata Specification.                                                                                                                                                                                                         |
 | parmValidateBlockedForManualEntry    | Correlates to the design-time property.  For more information, see the Segmented Entry control Metadata Specification.                                                                                                                                                                                                         |
 
-
-
-Additional resources
---------
+## Additional resources
 
 [Support for Segmented Entry controls on dialogs](segmented-entry-control-dialog-support.md)
 
@@ -65,9 +62,5 @@ Additional resources
 [Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
 
 [Migration guidance for Segmented Entry controls](segmented-entry-control-migration-guidance.md)
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
