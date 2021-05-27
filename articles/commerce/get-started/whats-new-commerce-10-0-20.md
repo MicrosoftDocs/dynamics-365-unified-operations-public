@@ -45,8 +45,11 @@ Most of these features must be enabled using [Feature management](../../fin-ops/
 
 | Feature area   | Feature                                                  | More information                                                                    |
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
-
-
+| Site builder  | Global configuration properties in Commerce site builder can be made visible, hidden, or disabled when specific Commerce features are turned on.  | [Configure site builder global configuration settings based on enabled features](../e-commerce-extensibility/config-settings-for-features.md) |
+| Product dimensions |  Configure product dimension values as swatches in Commerce headquarters.  |  [Configure product dimension values to display as swatches](../dev-itpro/dimensions-swatch.md) |
+| Product dimensions |  Configure display settings in Commerce headquarters. |  [Apply display settings for product dimensions](../dimension-settings.md) |
+| Point of sale (POS) | Validate serialized items as part of the return process. | [Return serial number-controlled products in point of sale (POS)](../pos-serial-returns.md) |
+| Point of sale (POS) | Initiate returns for cash and carry or customer orders in the POS application. | [Create returns in point of sale (POS)](../pos-returns.md)  |
 
 ## Additional resources
 
