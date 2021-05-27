@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure product dimension values to display as swatches 
+title: Configure product dimension values to appear as swatches
 description: This topic describes how to configure product dimension values as swatches in Microsoft Dynamics 365 Commerce headquarters.
 author: anupamar-ms
 ms.date: 05/28/2021
@@ -26,103 +26,114 @@ ms.dyn365.ops.version: Retail 10.0.20 update
 
 ---
 
-# Configure product dimension values to display as swatches 
+# Configure product dimension values to appear as swatches
 
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-This topic describes how to configure product dimension values to display as swatches in Microsoft Dynamics 365 Commerce. For information on product dimensions, see [Product dimensions](../../supply-chain/pim/product-dimensions.md).
+This topic describes how to configure product dimension values as swatches in Microsoft Dynamics 365 Commerce headquarters. For information about product dimensions, see [Product dimensions](../../supply-chain/pim/product-dimensions.md).
 
-Dynamics 365 Commerce supports size, style, and color dimensions for representing product variants. Product dimensions have friendly names that are displayed on product details pages (PDPs) for product variant selection, such as "Small," "Medium," and "Large" for sizes, and "Black" and "Brown" for colors. However, for products with many variations, browsing through product variants requires multiple selections to view each product variant image, which can make the browsing and selection process slow and tedious for customers.
+Dynamics 365 Commerce supports the use of size, style, and color dimensions to represent product variants. Product dimensions have friendly names that are shown on product details pages (PDPs) so that product variants can be selected. Examples of these friendly names include "Small," "Medium," and "Large" for sizes, and "Black" and "Brown" for colors. However, if a product supports many variations, multiple selections are required to view the image for each product variant. Therefore, it can be slow and tedious for customers to browse and select product variants.
 
-Displaying dimensions as swatches on PDPs provides a visual preview of a product's variations, allowing customers to easily browse a large variety of colors, patterns, and textures and quickly view different product variation combinations. With this feature, Commerce introduces the capability to display dimensions as a swatch using images and hexadecimal (hex) codes. In addition to displaying dimensions as swatches, Commerce also provides the capability to group similar dimensions such as colors on product list pages. For example, when a customer searches for products that are blue, when various blue dimension values are grouped together the search results product list page displays products with the different shades of blue. Dimension grouping significantly improves the product refinement experience and allows customers to find more products with a single product search query. 
+When dimensions are shown as swatches on PDPs, customers get a visual preview of a product's variations. They can easily browse a large variety of colors, patterns, and textures, and can quickly view different combinations of product variations.
+
+The display dimensions as swatches feature enables Commerce to use hexadecimal (hex) codes and images to show dimensions as swatches. In addition, similar dimensions, such as colors, can be grouped on product list pages. For example, a customer is searching for products that are blue. If the various blue dimension values are grouped together, the search results list page shows products that have the different shades of blue. Dimension grouping significantly improves the product refinement experience and helps customers find more products through a single product search query.
 
 > [!NOTE]
 > The display dimensions as swatches feature is available as of the Dynamics 365 Commerce version 10.0.20 release.
 
-The following example image shows colors displayed as swatches on a Commerce PDP. 
-![Example of displaying color as swatch on a product details page](../dev-itpro/media/swatch_pdp.png)
+The following illustration shows an example where colors appear as swatches on a Commerce PDP.
 
-The following example image shows colors displayed as swatches on a Commerce search results list page.
-![Example of displaying color as swatch on a search results list page](../dev-itpro/media/swatch_searchresults.PNG)
+![Example of colors shown as swatches on a product details page](../dev-itpro/media/swatch_pdp.png)
+
+The following illustration shows an example where colors appear as swatches on a Commerce search results list page.
+
+![Example of colors shown as swatches on a search results list page](../dev-itpro/media/swatch_searchresults.PNG)
 
 ## Enable the display dimensions as swatches feature in Commerce headquarters
 
-To enable the display dimensions as swatches feature in Commerce headquarters, go to **Workspaces \> Feature management** and turn on the **Enable image support for product dimension values** feature. When this feature flag is enabled, three new fields are added for each dimension in the respective tables in Commerce headquarters: **Hexcode**, image **URL**, and **RefinerGroup**. 
+To enable the display dimensions as swatches feature in Commerce headquarters, go to **Workspaces \> Feature management**, and turn on the **Enable image support for product dimension values** feature. When this feature flag is enabled, three new fields are added for each dimension in the appropriate tables in Commerce headquarters: **Hexcode**, **URL** (for images), and **RefinerGroup**.
 
 ## Configure dimension values in Commerce headquarters
 
-The display dimensions as swatches feature is supported for size, style, and color dimensions. Hex code and image URL values can be specified in headquarters for the respective dimensions. If hex code and image URL values are not provided for a dimension, the system will default to a friendly text name for display. This can be configured in any of the following forms. 
+The display dimensions as swatches feature is supported for size, style, and color dimensions. Hex code and image URL values for the appropriate dimensions can be specified in Commerce headquarters. By default, if hex code and image URL values aren't provided for a dimension, the system will show the text of the dimension's friendly name.
 
-- **Dimension** - Search for each dimension form in headquarters by **Color**, **Size**, or **Style**. In each respective form, the dimension values will be listed in a table where you can manage display order, hex code, and image URL values. The following image shows an example configuration on the **Colors** form. 
+The configuration can be done at any of the following levels:
 
-    ![Example of dimension configuration on Colors form](../dev-itpro/media/swatch_Color.PNG)
+- **Dimension** – In Commerce headquarters, open the page for a dimension by searching for **Color**, **Size**, or **Style**. On each page, a grid lists the dimension values. You can manage the display order, hex code, and image URL values. The following illustration shows an example configuration on the **Colors** page.
 
-- **Dimension groups** - Dynamics 365 Commerce allows the capability to create dimension groups using the **RefinerGroup** property. If you have dimension groups defined, search for **Color group**, **Size group**, or **Style group**. In each respective form, you can manage hex code, image URL, and refiner group values. The following image shows an example configuration on the **Color groups** form.  
-    
-    ![Example of dimension configuration on Color groups form](../dev-itpro/media/swatch_colorGroup.PNG)
+    ![Example of dimension configuration on the Colors page](../dev-itpro/media/swatch_Color.PNG)
 
-- **Product dimension when creating a product** - When creating a new product, the **Product dimensions** form can be used to enter the dimension values. For existing products, the **Hexcode**, **URL**, and **RefinerGroup** values may be prepopulated, but if needed these values can be changed on the form. In each form, three new fields are included: **Hexcode**, image **URL**, and **RefinerGroup**. The following example image shows the configuration on the **Product dimensions** form. 
+- **Dimension group** – In Dynamics 365 Commerce, you can use the **RefinerGroup** property to create dimension groups. If dimension groups are defined, open the appropriate page by searching for **Color group**, **Size group**, or **Style group**. On each page, you can manage hex code, image URL, and refiner group values. The following illustration shows an example configuration on the **Color groups** page.
 
-    ![Example of dimension configuration on product dimensions form](../dev-itpro/media/swatch_product_dimensions.PNG)
+    ![Example of dimension configuration on the Color groups page](../dev-itpro/media/swatch_colorGroup.PNG)
+
+- **Product dimension (during product creation)** – When you create a new product, you can use the **Product dimensions** page to enter the dimension values. For existing products, the **Hexcode**, **URL** (for images), and **RefinerGroup** fields might already be set. However, you can change the values as you require. The following illustration shows an example configuration on the **Product dimensions** page.
+
+    ![Example of dimension configuration on the Product dimensions page](../dev-itpro/media/swatch_product_dimensions.PNG)
 
 > [!NOTE]
-> Managing hex code and image URL configurations follows the same pattern used for managing dimension display order.
+> The process of managing hex code and image URL configurations follows the same pattern that is used to manage the display order of dimensions.
 
-## Configure dimension values using hex codes
+## Configure dimension values by using hex codes
 
-For most color dimensions, a hex code color value should be provided on the dimension form(s) in headquarters. For example, the color black should have a hex code value of **#00000**. When Commerce renders the site page, the hex code is represented as a colored swatch. 
+For most color dimensions, a hex code color value should be provided on dimension pages in Commerce headquarters. For example, the color black should have a hex code value of **#00000**. When Commerce renders a site page, the hex code is represented by a colored swatch.
 
-The following image shows an example configuration for color dimensions configured with hex code values. 
- ![Example of dimension configuration using hex code](../dev-itpro/media/swatch_color_hexcode.png)
+The following illustration shows an example where color dimensions are configured by using hex code values.
 
-## Configure dimension values using image URLs
+![Example of dimension configuration that uses hex codes](../dev-itpro/media/swatch_color_hexcode.png)
 
-For some color dimensions that represent patterns instead of solid colors, the colors can best be represented using published images rather than hex codes. For example, if a color dimension is described as "leopard," an image would best represent that color pattern in a swatch. The image should be uploaded to Commerce site builder and published, and then the image URL for the published image should be entered in the appropriate dimension form(s) in headquarters. When Commerce renders an image, if a dimension is chosen to be displayed as a swatch and a hex code is not defined, an image lookup will be performed. If the image lookup fails, Commerce will default to rendering text of the dimension's friendly name. 
+## Configure dimension values by using image URLs
 
-The following image shows an example **Colors** form configuration using image URLs.
+Some color dimensions represent patterns, not solid colors. For example, a color dimension might be described as 'leopard.' In these cases, you can more effectively represent the color dimensions by using published images instead of hex codes for swatches.
 
-![Example of dimension configuration using image URL](../dev-itpro/media/swatch_color_urls.PNG)
+You must upload each image to Commerce site builder and publish it. Then enter the image URL for the published image on the appropriate dimension pages in Commerce headquarters. If a dimension has been selected for display as a swatch, but a hex code isn't defined, Commerce will do an image lookup when it renders the page. If the image lookup fails, Commerce will show the text of the dimension's friendly name.
 
-Like product and category images, a media template can be used to define image URLs. File name conventions and file paths must be consistent when uploading images to site builder.
+The following illustration shows an example where image URLs are used for the configuration on the **Colors** page.
 
-The following image shows an example media template configuration using image URLs.
+![Example of dimension configuration that uses image URLs](../dev-itpro/media/swatch_color_urls.PNG)
+
+You can use a media template to define image URLs, just as you can for product and category images. When you upload images to site builder, file name conventions and file paths must be consistent.
+
+The following illustration shows an example where image URLs are used for the configuration of a media template.
 
 ![Example of media template configuration](../dev-itpro/media/swatch_media_template.PNG)
 
-## Configure dimension values using both hex codes and image URLs
+## Configure dimension values by using both hex codes and image URLs
 
-The majority of color dimensions can be configured with both hex codes and image URLs. Commerce rendering fallback logic will automatically look for either a hex code or an image URL to display a color swatch. Using both hex codes and image URLs to configure dimension colors can simplify image management when dealing with large numbers of colors.
+For most color dimensions, you can configure both hex codes and image URLs. Commerce rendering fallback logic will automatically look for either a hex code or an image URL to show a color swatch. By using both hex codes and image URLs to configure color dimensions, you help simplify image management when the number of colors is large.
 
-The following image shows an example **Colors** form configured with both hex codes and image URLs.
+The following illustration shows an example where both hex codes and image URLs are used for the configuration on the **Colors** page.
 
-![Example of dimension configuration using hex codes and image URLs](../dev-itpro/media/swatch_color_hexandimage.png)
+![Example of dimension configuration that uses both hex codes and image URLs](../dev-itpro/media/swatch_color_hexandimage.png)
 
 ## Configure refiner groups
 
-When defining a hex code or image URL for a dimension value, you can also specify the **RefinerGroup** value, which is the name of the dimension that should be used to group similar dimension values in the refiner experience. For example, if you have color dimension values blue, blue plaid, blue wash, and dark blue, each color value is mapped to a different hex code or image URL and will appear as different colors on PDPs and product cards of respective products. But if these dimension values are mapped to the **RefinerGroup** value **Blue**, searching for "blue" products will generate list page search results for products that have dimension color values of blue, blue plaid, blue wash, and dark blue.
+When you define a hex code or image URL for a dimension value, you can also specify a value for the **RefinerGroup** field. This field defines the dimension that should be used to group similar dimension values in the refiner experience.
 
-The following example image shows the relationship between **Color** and **RefinerGroup** properties in Commerce headquarters.
+For example, if your color dimension values are "blue," "blue plaid," "blue wash," and "dark blue," each value is mapped to a different hex code or image URL. Therefore, each value will appear as a different color on PDPs and product cards for the appropriate products. However, if you map all those color dimension values to a **RefinerGroup** value of **Blue**, a search for "blue" products will generate list page search results for products that have dimension color values of "blue," "blue plaid," "blue wash," and "dark blue".
+
+The example in the following illustration shows the relationship between the **Color** and **RefinerGroup** properties in Commerce headquarters.
 
 ![Example of refiner group management](../dev-itpro/media/swatch_refiner_group.png)
 
 ## Manage images in Commerce site builder
 
-If image URLs are used for any dimension value, the respective images must be uploaded to Commerce site builder. The image location should match the file name and folder path defined for the image in Commerce headquarters. Image files must be uploaded to their respective category locations in site builder, for example color images should be uploaded to the **Color** category folder. For more information on uploading images to site builder, see [Upload images](../dam-upload-images.md). 
+If image URLs are used for any dimension values, the corresponding images must be uploaded to Commerce site builder. The location of each image should match the file name and folder path that are defined for the image in Commerce headquarters. Image files must be uploaded to the appropriate category locations in site builder. For example, color images must be uploaded to the **Color** category folder. For more information about how to upload images to site builder, see [Upload images](../dam-upload-images.md).
 
-The following example image highlights the **Size**, **Color**, and **Style** categories displayed in the **Upload files** dialog box when uploading images to the site builder media library.
+The following illustration shows an example where the **Upload files** dialog box is being used to upload images to the site builder media library. It highlights the **Size**, **Color**, and **Style** categories that are available for selection.
 
-![Example of image file categories during upload to site builder media library](../dev-itpro/media/swatch_sitebuilder.png)
+![Example of image file categories during upload to the site builder media library](../dev-itpro/media/swatch_sitebuilder.png)
 
 ## Enable swatch display on e-commerce site pages
 
-For swatches to be displayed on e-commerce site pages that require a dimension selection such as PDPs and list pages, you must first configure dimension site settings in Commerce headquarters. For more information, see [Apply site settings for dimensions](../dimension-settings.md).
+Before swatches can appear on e-commerce site pages that require dimension selection, such as PDPs and list pages, you must configure dimension site settings in Commerce headquarters. For more information, see [Apply site settings for dimensions](../dimension-settings.md).
 
-In addition, the search results module property **Include product attributes in search results** should be enabled. If your site uses customized category pages, search results modules used on those pages should also be updated to enable the **Include product attributes in search results** property. For more information, see [Search results module](../search-result-module.md).
+In addition, you should enable the **Include product attributes in search results** property for search results modules. If your site uses customized category pages, you should update the search results modules that are used on those pages, so that the **Include product attributes in search results** property is enabled. For more information, see [Search results module](../search-result-module.md).
 
 ## Display swatches in POS and other channels
 
-Commerce doesn't currently have an out-of-box implementation to support the display of swatches on POS and other channels. If required, swatch display functionality can be implemented as an extension that makes channel APIs return the hex code and image URL information needed to render the swatches.
+Commerce doesn't currently have an out-of-box implementation that supports the display of swatches in Point of Sale (POS) and other channels. However, you can implement swatch display functionality as an extension that makes channel APIs return the hex codes and image URLs that are required to render swatches.
 
 ## Additional resources
 
