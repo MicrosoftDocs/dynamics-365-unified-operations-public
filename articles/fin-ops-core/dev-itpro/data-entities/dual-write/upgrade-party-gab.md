@@ -102,7 +102,7 @@ The following activities are needed to prepare for the upgrade:
 
 ## Run the template
 
-1. Stop the following **Account**, **Contact**, and **Vendor** dual-write using the Finance and Operations app.
+1. Stop the following **Account**, **Contact**, and **Vendor** dual-write maps using the Finance and Operations app.
 
     + Customers V3(accounts)
     + Customers V3(contacts)
