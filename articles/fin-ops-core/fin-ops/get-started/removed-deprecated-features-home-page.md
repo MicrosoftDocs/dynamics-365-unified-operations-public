@@ -4,7 +4,7 @@
 title: Removed or deprecated features home page
 description: This topic provides a list of help topics about removed or deprecated features in Finance and Operations apps.
 author: sericks007
-ms.date: 03/10/2021
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -35,7 +35,6 @@ The following topics provide information about removed or deprecated features in
 - [Removed or deprecated features in Dynamics 365 Finance](../../../finance/get-started/removed-deprecated-features-finance.md)
 - [Removed or deprecated features in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md)
 - [Removed or deprecated platform features](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md)
-- [Removed or deprecated features in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/removed-deprecated-features.md)
 - [Removed or deprecated features in previous releases](../../dev-itpro/migration-upgrade/deprecated-features.md)
 
 ## Deprecations in the Microsoft Power Platform
