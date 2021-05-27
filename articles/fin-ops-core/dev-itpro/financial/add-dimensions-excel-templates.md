@@ -3,7 +3,8 @@
 
 title: Add lookup values for financial dimensions to Excel templates
 description: This topic provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
-author: RyanCCarlson2ms.date: 06/20/2017
+author: RyanCCarlson2
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,7 +21,8 @@ ms.custom: 261064
 ms.assetid: f3ab87ab-ee8b-462c-bb6f-4d98e0030513
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rcarlsonms.search.validFrom: 2016-11-30
+ms.author: rcarlson
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

@@ -3,7 +3,8 @@
 
 title: Create exchange rate providers
 description: This topic describes how to set up an exchange rate provider. 
-author: RyanCCarlson2ms.date: 05/15/2020
+author: RyanCCarlson2
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,7 +21,8 @@ ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rcarlsonms.search.validFrom: 2016-02-28
+ms.author: rcarlson
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

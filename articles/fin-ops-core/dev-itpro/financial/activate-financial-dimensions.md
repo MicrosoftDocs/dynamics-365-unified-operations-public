@@ -3,7 +3,8 @@
 
 title: Financial dimension activation
 description: This topic contains information about the activating financial dimension process.
-author: RyanCCarlson2ms.date: 10/02/2019
+author: RyanCCarlson2
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,7 +21,8 @@ ms.custom: 191363
 ms.assetid: dd1dd40e-6bff-47b5-bf2e-55b9a4dcde1d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rcarlsonms.search.validFrom: 2016-02-28
+ms.author: rcarlson
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

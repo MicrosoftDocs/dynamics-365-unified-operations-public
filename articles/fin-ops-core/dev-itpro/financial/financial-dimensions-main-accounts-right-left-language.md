@@ -3,7 +3,8 @@
 
 title: Financial dimensions and main accounts in right-to-left languages
 description: This topic describes decisions that you need to make when you use a right-to-left language, and you must set up financial dimensions and main accounts.
-author: RyanCCarlson2ms.date: 06/20/2017
+author: RyanCCarlson2
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,7 +21,8 @@ ms.custom: 222564
 ms.assetid: 875dcebb-1bbb-4841-a8c6-9e134da07e96
 ms.search.region: global
 # ms.search.industry: 
-ms.author: rcarlsonms.search.validFrom: 2016-11-30
+ms.author: rcarlson
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

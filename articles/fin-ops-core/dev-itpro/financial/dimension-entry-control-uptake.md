@@ -3,7 +3,8 @@
 
 title: Uptake of Dimension Entry controls
 description: Describes the Dimension Entry control and associated Controller classes.
-author: RyanCCarlson2ms.date: 06/20/2017
+author: RyanCCarlson2
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -20,7 +21,8 @@ ms.custom: 25551
 ms.assetid: dbc5c0af-ae97-463e-b5ff-9bfd242529ff
 ms.search.region: Global
 # ms.search.industry:
-ms.author: rcarlsonms.search.validFrom: 2016-02-28
+ms.author: rcarlson
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
