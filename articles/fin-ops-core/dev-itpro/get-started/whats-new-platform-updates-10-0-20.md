@@ -54,14 +54,15 @@ We have recently added or significantly updated the following help topics. They 
 |--------------|-----------------------|
 | Power Platform integration | [Microsoft Power Platform integration with Finance and Operations apps](../power-platform/overview.md)<br>[Virtual entities overview](../power-platform/virtual-entities-overview.md)<br>[Dual-write setup from Lifecycle Services](../data-entities/dual-write/lcs-setup.md)<br>[Add-ins overview](../power-platform/add-ins-overview.md) |
 | Office integration | [Customize the Open in Microsoft Office menu](../office-integration/customize-open-office-menu.md) |
-| Removed or deprecated features | [Removed or deprecated features in previous releases](../migration-upgrade/deprecated-features.md) |
-| Database/Adjust data migration docs around mentions of files stored in Azure | [Point-in-time restore of the production database to a sandbox environment](../database/database-pitr-prod-sandbox.md)<br>[Database point-in-time restore (PITR)](../database/database-point-in-time-restore.md)<br>[Refresh database](../database/database-refresh.md)<br>[Golden configuration promotion](../database/dbmovement-scenario-goldenconfig.md) |
-|   ?  Update user-defined-fields.md | [Create and work with custom fields](../../fin-ops/get-started/user-defined-fields.md)  |
-| on-premises| [Set up and deploy on-premises environments (Platform update 41 and later](../eployment/setup-deploy-on-premises-pu41.md) |
-| ?   | [Configure document management](../../fin-ops/organization-administration/configure-document-management.md) |
-|  ? | [Saved views](../../fin-ops/get-started/saved-views.md) |
-|  ?   | [Planned maintenance in self-service environments FAQ](../deployment/plannedmaintenance-selfservice.md)  |
+| Database| [Point-in-time restore of the production database to a sandbox environment](../database/database-pitr-prod-sandbox.md)<br>[Database point-in-time restore (PITR)](../database/database-point-in-time-restore.md)<br>[Refresh database](../database/database-refresh.md)<br>[Golden configuration promotion](../database/dbmovement-scenario-goldenconfig.md) |
+|  Custom fields | [Create and work with custom fields](../../fin-ops/get-started/user-defined-fields.md)  |
+| On-premises deployment| [Set up and deploy on-premises environments (Platform update 41 and later](../eployment/setup-deploy-on-premises-pu41.md) |
+| Document management  | [Configure document management](../../fin-ops/organization-administration/configure-document-management.md) |
+| User interface | [Saved views](../../fin-ops/get-started/saved-views.md) |
+| Self-service deployment   | [Planned maintenance in self-service environments FAQ](../deployment/plannedmaintenance-selfservice.md)  |
 | LCS | [Asset library in Lifecycle Services (LCS)](lifecycle-services/asset-library.md) |
+
+| Removed or deprecated features | [Removed or deprecated features in previous releases](../migration-upgrade/deprecated-features.md) |
 
 
 ## Additional resources
