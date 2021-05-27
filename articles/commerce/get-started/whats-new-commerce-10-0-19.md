@@ -44,7 +44,7 @@ The following features are included in this release. The feature titles link to 
 - Set up Microsoft Clarity in Dynamics 365 Commerce<br> - For more information, see [Set up Microsoft Clarity in Dynamics 365 Commerce](../set-up-clarity.md).
 - Apply unit of measure settings<br> - For more information, see [Apply unit of measure settings](../unit-of-measure.md).
 - Check-in for pickup module<br> - For more information, see [Check-in for pickup module](../check-in-pickup-module.md).
-- [Customer check-in for curbside order fulfillment](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/customer-check-in-touchless-commerce)<br> - For more information, see [Enable customer check-in notifications in point of sale (POS)](../enable-customer-check-in.md).
+- [Customer check-in for curbside order fulfillment](dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/customer-check-in-touchless-commerce)<br> - For more information, see [Enable customer check-in notifications in point of sale (POS)](../enable-customer-check-in.md).
 - Configure gift with purchase promotions<br> - For more information, see [Configure gift with purchase promotions](../gift-with-purchase.md).
 - - Module configuration presets<br> - For more information, see [Module configuration presets](../e-commerce-extensibility/module-config-presets.md).
 
@@ -61,7 +61,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2021 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2021 release wave 1 plan](dynamics365-release-plan/2021wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 
