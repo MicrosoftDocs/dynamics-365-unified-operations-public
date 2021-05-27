@@ -4,7 +4,7 @@
 title: Online invoicing system
 description: This topic describes how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
 author: anasyash
-ms.date: 03/19/2021
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -317,7 +317,7 @@ After the data entities are imported into the database, follow these steps to ma
 
     ![Message processing actions page, Generate EM tab](media/8_actions.png)
 
-15. Set up security roles for **Online invoicing** processing. Different groups of users might require access to **Online invoicing** processing. You can limit access to the processing, based on security groups that are defined in the system. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, select **Online invoicing** processing, and add the security groups that must work with this processing. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
+15. Set up security roles for online invoicing processing. Different groups of users might require access to online invoicing processing. You can limit access to the processing, based on security groups that are defined in the system. Go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing**, select **Online invoicing**, and add the security groups that must work with this processing. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
 
 ## Set up financial reasons for RTIR
 
@@ -383,9 +383,9 @@ To postpone reporting of an invoice in RTIR, follow these steps.
 
 You can always reverse the status of **Excluded** or **Postponed** message items by selecting **Update to initial status**.
 
-### Run in batch Online invoicing processing
+### Run online invoicing processing in batch
 
-Online invoicing processing can be run in batch. Use **Run in the background** fast tab of the **Run processing** dialog to define parameters of the batch regime. For more information about batch processing, see [Batch processing overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview).
+Online invoicing processing can be run in batch. You can define the parameters of the batch regime on the **Run in the background** FastTab of the **Run processing** dialog page. For more information about batch processing, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ## Appendix 1: Electronic message setup for RTIR
 
