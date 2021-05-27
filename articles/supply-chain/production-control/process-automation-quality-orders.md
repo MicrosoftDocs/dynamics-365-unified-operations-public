@@ -35,3 +35,9 @@ The automation can be started in response to many events and signals, including 
 Solution parameters are included to configure the automation for a specific use case in a production facility.
 
 ![Create quality order](media/rpa-create-quality-roder.png "Create quality order")
+
+<!-- KFM: When the topic linked here is published, add the following:
+
+For a complete step-by-step guide about how to download, install and use the sample solution for automating quality order creation, see [Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate Desktop](/power-automate/desktop-flows/dynamics365-scm-rpa?branch=dynamics-templates-build)
+
+-->
