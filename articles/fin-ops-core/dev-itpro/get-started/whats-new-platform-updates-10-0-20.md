@@ -47,6 +47,23 @@ Most of these features must be enabled using [Feature management](../../fin-ops/
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
 | System administration | **Internet Explorer end-of-support notifications**<br><br>Users accessing Finance and Operations apps via Internal Explorer (IE) will start seeing notifications about the end of support for that browser. IE users will first see an informational message that IE support is ending on August 17, 2021 (the publicly announced, end-of-support date for IE), followed by a warning that support has officially ended. Organizations are encouraged to keep these notifications live unless IE is mandated for their users, in which case you can choose to suppress these notifications and rely on internal processes for migrating your user base to Microsoft Edge or another modern browser.<br><br>The current target for blocking IE usage with Finance and Operations app is with the April 2022 release. Starting in January 2022, users will start seeing a non-dismissible error message that indicates that IE support will soon be blocked. This error message is not controlled by this feature, and customers will need to contact Microsoft Support if this message needs to be suppressed for their organization. | <ul><li>[System requirements for cloud deployments](../../fin-ops/get-started/system-requirements.md)</br></li></br><li>[System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md) |
 
+## New and updated documentation resources
+We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
+
+| Feature area | New or updated topics |
+|--------------|-----------------------|
+| Power Platform integration | [Microsoft Power Platform integration with Finance and Operations apps](../power-platform/overview.md)<br>[Virtual entities overview](../power-platform/virtual-entities-overview.md)<br>[Dual-write setup from Lifecycle Services](../data-entities/dual-write/lcs-setup.md)<br>[Add-ins overview](../power-platform/add-ins-overview.md) |
+| Office integration | [Customize the Open in Microsoft Office menu](../office-integration/customize-open-office-menu.md) |
+| Removed or deprecated features | [Removed or deprecated features in previous releases](../migration-upgrade/deprecated-features.md) |
+| Database/Adjust data migration docs around mentions of files stored in Azure | [Point-in-time restore of the production database to a sandbox environment](../database/database-pitr-prod-sandbox.md)<br>[Database point-in-time restore (PITR)](../database/database-point-in-time-restore.md)<br>[Refresh database](../database/database-refresh.md)<br>[Golden configuration promotion](../database/dbmovement-scenario-goldenconfig.md) |
+|   ?  Update user-defined-fields.md | [Create and work with custom fields](../../fin-ops/get-started/user-defined-fields.md)  |
+| on-premises| [Set up and deploy on-premises environments (Platform update 41 and later](../eployment/setup-deploy-on-premises-pu41.md) |
+| ?   | [Configure document management](../../fin-ops/organization-administration/configure-document-management.md) |
+|  ? | [Saved views](../../fin-ops/get-started/saved-views.md) |
+|  ?   | [Planned maintenance in self-service environments FAQ](../deployment/plannedmaintenance-selfservice.md)  |
+| LCS | [Asset library in Lifecycle Services (LCS)](lifecycle-services/asset-library.md) |
+
+
 ## Additional resources
 
 ### Bug fixes
