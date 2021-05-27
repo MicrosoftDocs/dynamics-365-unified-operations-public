@@ -317,7 +317,7 @@ After the data entities are imported into the database, follow these steps to ma
 
     ![Message processing actions page, Generate EM tab](media/8_actions.png)
 
-15. Set up security roles for online invoicing processing. Different groups of users might require access to online invoicing processing. You can limit access to the processing, based on security groups that are defined in the system. Go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing**, select **Online invoicing**, and add the security groups that must work with this processing. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
+15. Set up security roles for online invoicing processing. Different groups of users might require access to online invoicing processing. You can limit access to the processing, based on security groups that are defined in the system. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, select **Online invoicing**, and add the security groups that must work with this processing. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
 
 ## Set up financial reasons for RTIR
 
@@ -351,7 +351,7 @@ All message items have additional fields that are required for processing. The s
 | Operation                  | Values include **Create**, **Modify**, and **Storno**. Finance sets the value of this additional field during execution of the **Evaluate EM items** action. The value of the **Operation** additional field can be defined automatically or through a financial reason on the invoice. For more information, see the [Set up financial reasons for RTIR](#set-up-financial-reasons-for-rtir) section earlier in this topic. |
 | Original message item      | If the **Operation** additional field is set to **Modify** or **Storno**, the **Original message item** additional field must be set. If the system can't set this field, it sets the status of the related message item to **Manual editing**, and you must manually set this field. |
 | Index                      | This additional field specifies the invoice position in the request (package of invoices). The value is reported in the **\<index\>** element in the **ManageInvoiceRequest.xml** file. This additional field is automatically filled in when the **Generate invoice request** action is run. |
-| Modification index         | This additional field specifies the unique sequence number referring to the original invoice (the modifying document sequntial number). This value is reported in the **\<modificationIndex\>** element for message items of the **Modify** or **Storno** operation type. This additional field is automatically filled in when the **Evaluate EM items** action is run. |
+| Modification index         | This additional field specifies the unique sequence number referring to the original invoice (the modifying document sequential number). This value is reported in the **\<modificationIndex\>** element for message items of the **Modify** or **Storno** operation type. This additional field is automatically filled in when the **Evaluate EM items** action is run. |
 | Last line reference number | For message items of the **Create** operation type, this additional field contains the last number (invoice line number) in the invoice. For message items of the **Modify** or **Storno** operation type, this additional field contains the last line number within the whole chain of documents, starting from the original invoice, considering all its modifications. This value is used to calculate value to be reported in the **\<lineNumberReference\>** element for message items of the **Modify** or **Storno** operation type. This additional field is automatically filled in when the **Evaluate EM items** action is run. |
 
 ### Run Online invoicing processing
@@ -383,9 +383,9 @@ To postpone reporting of an invoice in RTIR, follow these steps.
 
 You can always reverse the status of **Excluded** or **Postponed** message items by selecting **Update to initial status**.
 
-### Run online invoicing processing in batch
+### Run online invoicing processing in batch mode
 
-Online invoicing processing can be run in batch. You can define the parameters of the batch regime on the **Run in the background** FastTab of the **Run processing** dialog page. For more information about batch processing, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
+Online invoicing processing can be run in batch mode. You can define the parameters of the batch processing on the **Run in the background** FastTab of the **Run processing** dialog box. For more information about batch processing, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ## Appendix 1: Electronic message setup for RTIR
 
@@ -506,7 +506,7 @@ As of **XSD version 3.0**, the Online invoicing system requires reporting of the
 | Value           | Description |
 |-----------------|-------------|
 | DOMESTIC        | The customer is a domestic customer who is subject to VAT. |
-| PRIVATE\_PERSON | The customer is a domestic or foreign natual person who isn't subject to VAT. |
+| PRIVATE\_PERSON | The customer is a domestic or foreign natural person who isn't subject to VAT. |
 | OTHER           | The customer has some other status. For example, the customer is a domestic non-natural person who isn't subject to VAT, a foreign non-natural person who is subject to VAT, or a foreign non-natural person who isn't subject to VAT. |
 
 As of **version 94.50**, which was released to support XSD version 3.0 of the Online invoicing system, the **RTIR Invoice Data (HU)** format supports the following algorithm to define the **customerVatStatus** value.
@@ -544,7 +544,7 @@ In Dynamics 365 Finance's solution for Hungarian Online invoicing system support
     > [!NOTE]
     > To ensure correct reporting in the Online invoicing system, avoid linking multiple invoices to multiple advance invoices on the same sales order.
 
-    The posted final invoice is reported to the Online invoicing system. It includes reference information in the **\<advancePaymentData\>** node and amounts in summary reducedby the posted sales tax from prepayments that are linked to the same advance invoice. The exchange rate of the advance invoice is reported for the referenced advance invoice information. However, if the currency of the advance invoice differs from the currency of the final document, all lines of the advance invoice will be reported as negative amounts to the final invoice, and they will be recalculated in the currency of the final document.
+    The posted final invoice is reported to the Online invoicing system. It includes reference information in the **\<advancePaymentData\>** node and amounts in summary reduced by the posted sales tax from prepayments that are linked to the same advance invoice. The exchange rate of the advance invoice is reported for the referenced advance invoice information. However, if the currency of the advance invoice differs from the currency of the final document, all lines of the advance invoice will be reported as negative amounts to the final invoice, and they will be recalculated in the currency of the final document.
 
 #### Scenario 2: A prepayment that has no sales tax transactions is posted (Accounts receivable module)
 
@@ -562,7 +562,7 @@ In Dynamics 365 Finance's solution for Hungarian Online invoicing system support
     > [!NOTE]
     > To ensure correct reporting in the Online invoicing system, avoid linking multiple invoices to multiple advance invoices on the same sales order.
 
-    The posted final invoice is reported to the Online invoicing system. It includes reference information in the **\<advancePaymentData\>** node and amounts in summary reducedby the posted sales tax from prepayments that are linked to the same advance invoice. The exchange rate of the advance invoice is reported for the referenced advance invoice information. However, if the currency of the advance invoice differs from the currency of the final document, all lines of the advance invoice will be reported as negative amounts to the final invoice, and they will be recalculated in the currency of the final document.
+    The posted final invoice is reported to the Online invoicing system. It includes reference information in the **\<advancePaymentData\>** node and amounts in summary reduced by the posted sales tax from prepayments that are linked to the same advance invoice. The exchange rate of the advance invoice is reported for the referenced advance invoice information. However, if the currency of the advance invoice differs from the currency of the final document, all lines of the advance invoice will be reported as negative amounts to the final invoice, and they will be recalculated in the currency of the final document.
 
 #### Scenario 3: An advance invoice is posted by using the customer advance on a project (Project management and accounting module)
 
