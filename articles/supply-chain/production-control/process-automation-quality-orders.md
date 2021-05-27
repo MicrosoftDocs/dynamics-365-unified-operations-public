@@ -1,5 +1,5 @@
 ---
-title: Automate business processes with Power Automate
+title: Invoke process automation flows to create quality orders
 description: This topic provides resources for using Power Automate to automate business processes, using the example of quality orders
 author: cabeln
 ms.date: 05/28/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
 ---
 
-# Automate business processes with Power Automate
+# Invoke process automation flows to create quality orders
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -23,7 +23,6 @@ Organizations have an increasing demand to automate standard business processes,
 For an overview of this feature and its capabilities, see the following video: [Utilize RPA to create quality orders in Dynamics 365 Supply Chain Management](https://www.youtube.com/watch?v=LFbzJ6-H89w)
 
 Our automation solution template for Supply Chain Management showcases how Power Automate can be used to automate business processes using quality orders as an example.
-
 
 ![Automation options with RPA](media/rpa-automation-options.png "Automation options with RPA")
 
