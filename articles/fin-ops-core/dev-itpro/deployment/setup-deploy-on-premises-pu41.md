@@ -485,9 +485,9 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
 
     | Component | Download link | Expected file name |
     |-----------|---------------|--------------------|
-    | SNAC – ODBC driver 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> | msodbcsql.msi |
-    | SNAC – ODBC driver 17.5.x | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752&preserve-view=true> | msodbcsql\_17.msi |
-    | SQL Server Management Studio 17.9.1 | <https://docs.microsoft.com/sql/ssms/release-notes-ssms?view=sql-server-ver15#1791&preserve-view=true> | SSMS-Setup-\*.exe |
+    | SNAC – ODBC driver 13 | </sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> | msodbcsql.msi |
+    | SNAC – ODBC driver 17.5.x | </sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752&preserve-view=true> | msodbcsql\_17.msi |
+    | SQL Server Management Studio 17.9.1 | </sql/ssms/release-notes-ssms?view=sql-server-ver15#1791&preserve-view=true> | SSMS-Setup-\*.exe |
     | Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> | vcredist\_x64.exe |
     | Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | Go to <https://lcs.dynamics.com/V2/SharedAssetLibrary>, select **Model** as the asset type, and then select **VC++ 17 Redistributables**. | vc\_redist.x64\_14\_16\_27024.exe |
     | Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> | AccessDatabaseEngine\_x64.exe |
