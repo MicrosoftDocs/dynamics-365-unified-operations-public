@@ -38,6 +38,19 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 - **General availability (self-update):** June 2021
 - **General availability (auto-update):** July 2021
 
+## Features included in this release
+
+The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365/release-plans/) for official release dates for each feature. Our goal is to get you this information as soon as possible. We may update this topic to include features that made it into the build after this topic was initially published.
+
+| Feature area | Feature | More information |
+|----|----|----|
+| Finance insights | Customer payment predictions | [Customer payment predictions](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/customer-payment-predictions.md) |
+| Finance insights | External data for cash flow forecasting | [External data for cash flow forecasting](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/external-data-cash-forecasting.md) |
+| Finance insights | Forecast bank balance | [Forecast bank balance](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/forecast-bank-balance) |
+| Finance insights | Intelligent budget proposal | [Intelligent budget proposal](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/intelligent-budget-proposal) |
+| Finance insights | Treasurer workspace | [Treasurer workspace](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/treasurer-workspace) |
+
+
 ## Feature enhancements included in this release
 
 The following table lists the feature enhancements included in this release. Each of these provides an incremental improvement to an existing feature. Because they are only enhancements, they are not listed in the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted). If you want to use any of these features, you must explicitly enable them in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
