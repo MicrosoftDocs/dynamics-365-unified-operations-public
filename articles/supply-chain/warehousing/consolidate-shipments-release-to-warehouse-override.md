@@ -25,7 +25,7 @@ ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
 ---
 
-# Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page
+# Consolidate shipments when the shipment consolidation policy is overridden
 
 [!include [banner](../includes/banner.md)]
 
