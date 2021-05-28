@@ -1373,7 +1373,7 @@
           items: 
           - name: Trace generated report results and compare them with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Improvements in tracing results of generated ER reports and comparisons with baseline values
+          - name: Improve tracing the results of generated ER reports to compare with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
           - name: Automate testing with ER
             href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
