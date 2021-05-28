@@ -72,7 +72,9 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
-          - name: Supply Chain Management 10.0.19 (July 2021)
+          - name: Supply Chain Management 10.0.20 (July 2021)
+            href: get-started/whats-new-scm-10-0-20.md
+          - name: Supply Chain Management 10.0.19 (June 2021)
             href: get-started/whats-new-scm-10-0-19.md
           - name: Supply Chain Management 10.0.18 (May 2021)
             href: get-started/whats-new-scm-10-0-18.md
@@ -2225,6 +2227,8 @@
         href: engineering-change-management/engineering-attributes-and-search.md
       - name: Engineering versions and engineering product categories
         href: engineering-change-management/engineering-versions-product-category.md
+      - name: Manage changes in formulas and their ingredients
+        href: engineering-change-management/manage-formula-changes.md
       - name: Enable change management on existing products
         href: engineering-change-management/change-management-existing-products.md
       - name: Product lifecycle state and transactions
@@ -2247,6 +2251,8 @@
         href: production-control/manage-subcontract-work-production.md  
       - name: Unified number sequence for job IDs
         href: production-control/unified-job-ids.md
+      - name: Invoke process automation flows to create quality orders
+        href: production-control/process-automation-quality-orders.md
       - name: Discrete manufacturing
         items:
         - name: Maintain production master data
@@ -2337,7 +2343,7 @@
               href: production-control/production-floor-execution-setup.md
             - name: How workers use the production floor execution interface
               href: production-control/production-floor-execution-use.md
-            - name: User interface control styles for production floor execution
+            - name: Style the production floor execution interface
               href: production-control/production-floor-execution-styles.md
           - name: Configure job card for devices
             href: production-control/config-job-card-device.md

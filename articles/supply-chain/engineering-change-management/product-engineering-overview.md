@@ -55,20 +55,21 @@ First, turn on the features by following these steps.
 
 1. Go to the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 1. Check for updates.
-1. Turn on the feature that is named **Engineering Change Management**.
-1. If you want to use it, then also turn on the feature that is named **Product dimension version**.
+1. Turn on the feature that is named *Engineering Change Management*.
+1. If you want to use it, also turn on the feature that is named *Product dimension version*.
 
 Next, turn on the configuration keys by following these steps.
 
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.
 1. Expand the **Trade** node.
-1. Enable the configuration key for the main feature by selecting the **Engineering Change Management** check box.
-1. Expand the **Engineering Change Management** node and make the following settings
-    - **Attribute search** – Select this check box to enable the [attribute search feature](engineering-attributes-and-search.md). We recommend enabling this feature, but you can clear this check box if you won't use it.
-    - **Change management for process manufacturing** – This feature is not yet available, so make sure this check box is *not* selected.
-1. If you see an error message claiming that a feature must be enabled before you can continue, just ignore it.
-1. If you also want to use the version dimension, then select the **Product dimension - Version** check box. (This check box is further down the list, not nested under the **Engineering Change Management** node.)
+1. Enable the configuration key for the main feature by selecting the **Engineering Change Management** checkbox.
+1. Expand the **Engineering Change Management** node, and select or clear the following checkboxes as required (depending on the features that you want to use):
+
+    - **Attribute search** – Select this checkbox to enable the [attribute search feature](engineering-attributes-and-search.md). We recommend enabling this feature, but you can clear this checkbox if you won't use it.
+    - **Change management for process manufacturing** – Select this checkbox if you want to use Engineering change management features to manage changes in formulas for process manufacturing. If you don't have to manage formulas, you can clear this checkbox. For more information, see [Manage changes in formulas and their ingredients](manage-formula-changes.md).
+
+1. If you also want to use the version dimension, then select the **Product dimension - Version** checkbox. (This checkbox is further down the list, not nested under the **Engineering Change Management** node.)
 1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
 > [!IMPORTANT]
