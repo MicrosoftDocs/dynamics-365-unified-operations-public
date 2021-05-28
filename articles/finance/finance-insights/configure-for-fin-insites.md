@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configuration for Finance Insights (preview)
-description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
+title: Configuration for Finance insights - vesrions upto 10.0.19
+description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights for versions upto 10.0.19.
 author: ShivamPandey-msft
 ms.date: 11/25/2020
 ms.topic: article
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 10.0.13
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Following Finance insights setup is valid for Dynamics 365 Finance versions 10.0.20 and beyond. To setup Finance insights on versions up to 10.0.19, see [Configuration for Finance Insights (preview) - versions 10.0.20 and beyond](configure-for-fin-insites-PublicPreview.md).
+> Following Finance insights setup is valid for Dynamics 365 Finance versions 10.0.20 and beyond. To setup Finance insights on versions upto 10.0.19, see [Configuration for Finance Insights (preview) - versions 10.0.20 and beyond](configure-for-fin-insites-PublicPreview.md).
 
 Finance insights combines functionality from Microsoft Dynamics 365 Finance with Microsoft Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 
