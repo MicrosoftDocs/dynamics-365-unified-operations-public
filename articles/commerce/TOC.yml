@@ -94,6 +94,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.20 (July 2021)
+            href: get-started/whats-new-commerce-10-0-20.md
           - name: Commerce 10.0.19 (June 2021)
             href: get-started/whats-new-commerce-10-0-19.md
           - name: Commerce 10.0.18 (May 2021)
@@ -556,6 +558,8 @@
           href: dev-itpro/manage-bing-maps.md
         - name: Create and update time slots for customer pickup
           href: dev-itpro/pickup-timeslots.md
+        - name: Configure product dimension values to appear as swatches
+          href: dev-itpro/dimensions-swatch.md
     - name: Merchandising your products and services  
       items:
       - name: Categories, products, and assortments 
@@ -932,6 +936,8 @@
           href: web-activity-opt-out.md
         - name: Apply unit of measure settings
           href: unit-of-measure.md
+        - name: Apply display settings for product dimensions
+          href: dimension-settings.md
       - name: Manage your site content 
         items:
         - name: Ways to add content
@@ -1946,7 +1952,7 @@
           items: 
           - name: Trace generated report results and compare them with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commercetoc.json
-          - name: Improvements in tracing results of generated ER reports and comparisons with baseline values
+          - name: Improve tracing the results of generated ER reports to compare with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
           - name: Automate testing with ER
             href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
@@ -2262,6 +2268,8 @@
             href: e-commerce-extensibility/request-properties-object.md
           - name: App settings
             href: e-commerce-extensibility/app-settings.md
+          - name: Configure site builder global configuration settings based on enabled features
+            href: e-commerce-extensibility/config-settings-for-features.md
           - name: Platform settings file
             href: e-commerce-extensibility/platform-settings.md
           - name: Extend a module definition

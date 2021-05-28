@@ -4,7 +4,7 @@
 title: Search results module
 description: This topic covers search results modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,6 +28,7 @@ ms.dyn365.ops.version: Release 10.0.8
 # Search results module
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic covers search results modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
@@ -55,9 +56,12 @@ The following table lists the properties of search result modules, together with
 | Hide category hierarchy display | **True** or **False** | If this property is set to **True**, the category hierarchy display on the page will be hidden. This property should be set to **True** if you're using the [breadcrumb module](add-breadcrumb.md) to show the category hierarchy.|
 | Include product attributes in search results | **True** or **False** | If this property is set to **True**, attributes will be returned for the products in the search results. Although these attributes can be shown on a Commerce site, an extension is required.|
 | Show affiliation prices | **True** or **False** | If this property is set to **True**, affiliation prices for products will be shown in the search results when a signed-in user browses the page. |
+| Update refiner panel | **True** or **False** | If this property is set to **True**, the refiner panel will be updated when refiners are selected. In this mode, some multiple-selection refiners will behave like single-selection refiners when the refiner panel is updated. |
 
 > [!IMPORTANT]
-> In the Dynamics 365 Commerce 10.0.16 release and later, the **Show affiliation prices** configuration can be used to show affiliation prices on the page.
+> In the Commerce version 10.0.16 release and later, the **Show affiliation prices** configuration can be used to show affiliation prices on the page.
+>
+> In the Commerce version 10.0.20 release and later, the **Update refiner panel** configuration can be used to update the refiner panel during refiner selection.
 
 ## Supported modules
 
