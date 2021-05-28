@@ -52,8 +52,4 @@ The lower section of the **Cash position** tab shows details for the position, c
 
 To save and edit the cash position, create a snapshot. For more information about how to work with snapshots, see [Snapshots overview](payment-snapshots.md).
 
-#### Privacy notice
-Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
-
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
