@@ -40,7 +40,7 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365/release-plans/) for official release dates for each feature. Our goal is to get you this information as soon as possible. We may update this topic to include features that made it into the build after this topic was initially published.
+The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365/release-plans/) for official release dates for each feature. We may update this topic to include features that made it into the build after this topic was initially published.
 
 | Feature area | Feature | More information |
 |----|----|----|
@@ -57,7 +57,7 @@ The following table lists the feature enhancements included in this release. Eac
 
 | Feature area | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
 |---|---|---|
-| Cost management | Enable user-defined batch number setup for inventory closing reverse|Inventory closing reverse creates batch jobs for each impacted items which might throttle the batch server if there are too many items. This feature enables the process to use the 'Extra batch helpers', which is currently used by inventory closing process. You can adjust the setting to optimize the performance considering your environment. |
+| Cost management | Enable user-defined batch number setup for inventory closing reverse|Inventory closing reverse creates batch jobs for each impacted item, which might throttle the batch server if there are too many items. This feature enables the process to use the 'Extra batch helpers', which is currently used by the inventory closing process. You can adjust the setting to optimize the performance considering your environment. |
 | General ledger | Enhanced filtering on the cash position inquiry | This feature enhances financial dimension filtering on the cash position inquiry. When enabled, only records that match all entered segment criteria will be returned on the inquiry. Otherwise records that match any entered segment criteria will be returned.  |
 
 ## Additional resources
