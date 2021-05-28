@@ -143,7 +143,10 @@ For each row that you add to the grid, set the following fields.
 
 ### Readiness policy FastTab
 
-Use the **Product readiness policy** field to select the readiness policy that applies to products that belong to this category. For more information, see [Product readiness](product-readiness.md).
+Use the **Product readiness policy** field to select the readiness policy that should be applied to products that are created based on this engineering category. For more information, see [Product readiness](product-readiness.md).
+
+> [!NOTE]
+> The **Product readiness policy** field works slightly differently if you've turned on the *Product readiness checks* feature in your system. (That feature lets you apply readiness policies to standard \[non-engineering\] products). For more information, see [Assign readiness policies to standard and engineering products](product-readiness.md#assign-policy).
 
 ### Release policy FastTab
 
