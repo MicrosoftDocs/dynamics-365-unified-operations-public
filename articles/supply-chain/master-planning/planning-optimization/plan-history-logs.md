@@ -34,7 +34,9 @@ This topic explains how to view the history of planning jobs that are triggered 
 
 To view the history for a plan, open the plan by going to **Master planning** \> **Setup** \> **Plans** \> **Master plans** and selecting **History**. The history lists all the jobs for the selected plan. The list includes completed and active jobs.
 
-In addition to seeing the start time and status of jobs, you can view the log for a specific job. The log includes additional information and warnings. Not all jobs have a log. To view the log for a job, select **Log**.
+The history of jobs for Planning Optimization master planning runs keeps only up to 60 records per master plan. Whenever you run a new master planning calculation, that plan's earliest history record is deleted.
+
+In addition to seeing the start time and status of jobs, you can view the log for a specific job. The log includes additional information and warnings. Not all jobs have a log. To view the log for a job, select **Log**. The log storage is limited to 30 days since the date the job finished. Any log older than that is deleted automatically.
 
 ## Related resources
 
