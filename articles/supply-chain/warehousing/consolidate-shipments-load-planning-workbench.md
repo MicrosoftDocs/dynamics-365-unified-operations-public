@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.3
 
 ---
 
-# Consolidate shipments by using Release to warehouse from the load planning workbench
+# Consolidate shipments by releasing to warehouse from the load planning workbench
 
 [!include [banner](../includes/banner.md)]
 
