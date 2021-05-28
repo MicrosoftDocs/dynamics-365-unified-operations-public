@@ -556,6 +556,8 @@
           href: dev-itpro/manage-bing-maps.md
         - name: Create and update time slots for customer pickup
           href: dev-itpro/pickup-timeslots.md
+        - name: Configure product dimension values to appear as swatches
+          href: dev-itpro/dimensions-swatch.md
     - name: Merchandising your products and services  
       items:
       - name: Categories, products, and assortments 
@@ -932,6 +934,8 @@
           href: web-activity-opt-out.md
         - name: Apply unit of measure settings
           href: unit-of-measure.md
+        - name: Apply display settings for product dimensions
+          href: dimension-settings.md
       - name: Manage your site content 
         items:
         - name: Ways to add content
@@ -2262,6 +2266,8 @@
             href: e-commerce-extensibility/request-properties-object.md
           - name: App settings
             href: e-commerce-extensibility/app-settings.md
+          - name: Configure site builder global configuration settings based on enabled features
+            href: e-commerce-extensibility/config-settings-for-features.md
           - name: Platform settings file
             href: e-commerce-extensibility/platform-settings.md
           - name: Extend a module definition
