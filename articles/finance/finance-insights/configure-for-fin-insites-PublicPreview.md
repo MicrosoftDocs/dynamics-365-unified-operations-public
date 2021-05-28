@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configuration for Finance Insights (preview) - Version 10.0.20+
-description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights in version 10.0,20+.
+title: Configuration for Finance Insights (preview) - versions 10.0.20 and beyond
+description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights in versions 10.0.20 and beyond.
 author: ShivamPandey-msft
 ms.date: 05/28/2021
 ms.topic: article
