@@ -48,8 +48,4 @@ To compare multiple snapshots, select **Compare snapshots**. You can compare two
 
 To compare actual financial results with a forecast that was saved as a snapshot, select **Compare with actuals**. The **Compare snapshot** page will show a comparison of the actual amounts and the forecast. The chart in the upper section of the page shows a comparison of the cash inflows, cash outflows, and bank balances in the overlapping periods between the two snapshots. The grid in the lower section shows a detailed comparison of actual balances per period and the forecasted balance for each liquidity amount. The **Variance** column in the grid shows the difference between the actual balance in a period to the forecasted balance.
 
-#### Privacy notice
-Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
-
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
