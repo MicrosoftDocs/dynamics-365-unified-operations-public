@@ -44,11 +44,11 @@ The following features are included in this release. Some of the listed features
 
 | Feature area | Feature | More information |
 |----|----|----|
-| Finance insights | [Customer payment predictions](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/customer-payment-predictions) | [Customer payment predictions](../finance-insights/payment-insights-overview.md) |
-| Finance insights | [External data for cash flow forecasting](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/external-data-cash-forecasting) | [Use external data in cash flow forecasts](../finance-insights/external-data-in-cash-flow.md) |
-| Finance insights | [Forecast bank balance](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/forecast-bank-balance) | [Cash flow forecast](../finance-insights/cash-flow-forecast-intro.md) |
-| Finance insights | [Intelligent budget proposal](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/intelligent-budget-proposal) | [Budget proposals](../finance-insights/budget-proposals.md) |
-| Finance insights | [Treasurer workspace](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/treasurer-workspace) | [Cash position](../finance-insights/cash-position.md) |
+| Finance insights | [Customer payment predictions](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/customer-payment-predictions) | [Customer payment predictions](../finance-insights/payment-insights-overview.md) |
+| Finance insights | [External data for cash flow forecasting](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/external-data-cash-forecasting) | [Use external data in cash flow forecasts](../finance-insights/external-data-in-cash-flow.md) |
+| Finance insights | [Forecast bank balance](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/forecast-bank-balance) | [Cash flow forecast](../finance-insights/cash-flow-forecast-intro.md) |
+| Finance insights | [Intelligent budget proposal](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/intelligent-budget-proposal) | [Budget proposals](../finance-insights/budget-proposals.md) |
+| Finance insights | [Treasurer workspace](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/treasurer-workspace) | [Cash position](../finance-insights/cash-position.md) |
 
 
 ## Feature enhancements included in this release
