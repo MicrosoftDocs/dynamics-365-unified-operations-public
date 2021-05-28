@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.19 (July 2021) 
+title: Preview of Dynamics 365 Supply Chain Management 10.0.19 (June 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.19. 
 author: kamaybac
 ms.date: 04/23/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.19 (July 2021)
+# Preview of Dynamics 365 Supply Chain Management 10.0.19 (June 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -22,7 +22,7 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 
 - **Preview of release:** April 2021
 - **General availability of release (self-update):** June 2021
-- **General availability of release (auto-update):** July 2021
+- **General availability of release (auto-update):** June 2021
 
 ## Features included in this release
 
@@ -47,7 +47,7 @@ The following table lists the feature enhancements included in this release. Eac
 
 | Feature area | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
 |---|---|---|
-| Sales and marketing | Sales history cleanup performance improvements | Sales history cleanup can take a long time if run infrequently on environments with a high volume of sales updates. To reduce duration and improve reliability, this feature decomposes clean-up into batches that run for a limited duration. Where possible, database capabilities will be leveraged to minimize locking and avoid joining transactional tables during cleanup. |
+| Sales and marketing | Sales history cleanup performance improvements | Sales history cleanup can take a long time if run infrequently on environments with a high volume of sales updates. To reduce duration and improve reliability, this feature splits clean-up into batches that run for a limited duration. Where possible, database capabilities will be leveraged to minimize locking and avoid joining transactional tables during cleanup. |
 | Sales and marketing | Update Requested receipt date with Confirmed date for intercompany orders | This feature lets you control what will happen to sales and purchase date field values when using intercompany direct delivery. You can choose whether the system will update requested dates or skip updating them. If you skip the update, the requested dates will represent what the customer has requested. If you enable updating, the requested dates (when using delivery date control) only initially represent what the customer requested. Delivery date control, when different from *None*, will overrule what has initially been requested. You can set this option using the new **Update Requested receipt date with Confirmed date** setting on the intercompany vendor or customer settings.<br><br>If the feature is disabled, the system will overwrite the requested receipt date on original sales orders based on the delivery date control rule, but the requested shipping date will remain as is. |
 | Warehouse management | Round quantities down to nearest sales unit on release to warehouse | This feature adds an option that can restrict order quantities on release to warehouse. When enabled, order quantities will be rounded down to the nearest whole sales unit, and orders that include quantities for less than one sales unit will be rejected for release. |
 | Warehouse management | Organization-wide "Schedule work creation" wave method | On enabling this feature, the *Schedule work creation* wave method will be configured to run in parallel across all legal entities. Several additional settings will also be affected. For complete details, see [Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md). |
@@ -70,7 +70,7 @@ We have recently added or significantly updated the following help topics. They 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.19 includes platform updates. To learn more, see [Platform updates for version 10.0.19 of Finance and Operations apps (July 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.19 includes platform updates. To learn more, see [Platform updates for version 10.0.19 of Finance and Operations apps (June 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md).
 
 ### Bug fixes
 
