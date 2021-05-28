@@ -38,14 +38,6 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 - **General availability (self-update):** June 2021
 - **General availability (auto-update):** July 2021
 
-## Features included in this release
-
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365/release-plans/) for official release dates for each feature.
-
-| Feature area | Feature | More information |
-|---|---|---|
-| Accounts payable| [Vendor collaboration bank changes](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/vendor-collaboration-bank-changes) | [Maintain vendor bank account information](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-payable/maintain-vendor-bank-info) |
-
 ## Feature enhancements included in this release
 
 The following table lists the feature enhancements included in this release. Each of these provides an incremental improvement to an existing feature. Because they are only enhancements, they are not listed on the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted). If you want to use any of these features, you must explicitly enable them in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
@@ -54,8 +46,6 @@ The following table lists the feature enhancements included in this release. Eac
 |---|---|---|
 | Cost management | Enable user-defined batch number setup for inventory closing reverse|Inventory closing reverse create batch jobs for each impacted items which might throttle the batch server if there are too many items. This feature enable the process to use the 'Extra batch helpers' which is currently used by inventory closing process. Please can adjust the setting to optimize the performance considering your environment. |
 | General ledger | Enhanced filtering on the cash position inquiry | This feature enhances financial dimension filtering on the Cash position inquiry. When enabled, only records that match all entered segment criteria will be returned on the inquiry. Otherwise records that match any entered segment criteria will be returned.  |
-| Accounts receivable | @TaxGST:DynamicQRCodeFeature_INName | &nbsp; |
-| Area | Name | Description |
 
 ## Additional resources
 
@@ -63,7 +53,7 @@ The following table lists the feature enhancements included in this release. Eac
 Dynamics 365 Finance 10.0.20 includes platform updates. To learn more, see [Platform updates for version 10.0.20 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md). 
 
 ### Bug fixes 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=575415&dbType=3&qc=762ace311d670d27275cb0b6e11d811e4222643ffccdc5681a42a580780b8337).
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=586707&dbType=3&qc=8ceac0f0497f2976cd2a5c96d089ccb226a8f42284a2556ab1b6f221ccb0452f).
 
 ### Regulatory updates
 For information about regulatory updates for Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
