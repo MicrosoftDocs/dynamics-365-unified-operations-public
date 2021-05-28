@@ -34,6 +34,8 @@ This topic provides information about customer aging snapshots. An aging snapsho
 
 Information from aging snapshots is shown on the **Aged balances** list page and the **Collections** page. You must create an aging snapshot before you can use the **Aged balances** list page. The list page lists only customers that an aging snapshot has been created for.
 
+The **Customer credit and collections** workspace also shows the customer aging. For more information, see [Credit and collections management Power BI content](credit-collections-power-bi.md).
+
 > [!NOTE]
 > To help reduce the time that is required to create an aging snapshot, turn on the **Customer aging performance enhancement** feature in the **Feature management** workspace. However, don't use customer pools when this feature is turned on. If a customer pool is selected, the feature won't work, but you can still create an aging snapshot.
 
@@ -67,4 +69,3 @@ We recommend that you schedule this process to run in a batch.
 > [!NOTE]
 > To help improve batch performance when aging snapshots are created, enter a number in the **Maximum number of batch tasks** field on the **Collections defaults** FastTab on the **Collections** tab of the **Accounts receivable parameters** page. In the **Age customer balances** field, we recommend that you start with the default value of **100** and then adjust the value to optimize processing for your situation.
 
-The **Customer credit and collections** workspace also shows the customer aging. For more information, see [Credit and collections management Power BI content](credit-collections-power-bi.md).
