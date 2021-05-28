@@ -141,8 +141,4 @@ For more detail about how this calculation works, here is the sklearn.metrics cl
 
 As these results show, the two models have nearly identical F1 macro accuracy scores. In this and many other cases, F1 accuracy provides a better indicator of a model's capability. As for accuracy, interpretation of the results requires that you understand what is most important to consider in the model.
 
-#### Privacy notice
-Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
-
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
