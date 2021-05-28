@@ -73,7 +73,7 @@ Familiarity with the process of creating and managing resources in Azure, Micros
 ## Configure Finance insights
 
 You must complete some configuration steps before you can use Finance insights. For more information about how to configure Finance insights, see:
-  - For versions up to 10.0.19: [Configuration for Finance insights](configure-for-fin-insites.md).
+  - [Configuration for Finance insights - upto 10.0.19](configure-for-fin-insites.md).
   - For versions 10.0.20 and beyond: [Configuration for Finance Insights (preview) - Version 10.0.20 and beyond](configure-for-fin-insites-PublicPreview.md).
 
 ## Create a data integrator project
