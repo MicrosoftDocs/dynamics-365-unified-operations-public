@@ -59,20 +59,7 @@ Use the following steps to configure Dataverse for Finance insights.
 > [!NOTE]
 > After completing the environment set up, **DO NOT** select the **Link to CDS for Apps** button. This is not needed for Finance Insights and will disable the ability to complete the required Environment Add-ins in LCS.
 
-2. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and follow these steps to create a new Dataverse environment in the same Active Directory tenant:
-
-    1. Open the **Environments** page.
-
-        [![Environments page](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
-
-    2. Select the Dataverse environment created above and then select **Settings**.
-    3. Select **Resources \> All Legacy Settings**.
-    4. On the top navigation bar, select **Settings**, and then select **Customizations**.
-    5. Select **Developer Resources**.
-    6. Copy the **Dataverse organization ID** value.
-    7. In the browser's address bar, make a note of the URL for the Dataverse organization. For example, the URL might be `https://org42b2b3d3.crm.dynamics.com`.
-
-3. If you plan to use the Cash flow forecasts or Budget forecasts feature, follow these steps to update the annotation limit for your organization to at least 50 megabytes (MB):
+2. If you plan to use the Cash flow forecasts or Budget forecasts feature, follow these steps to update the annotation limit for your organization to at least 50 megabytes (MB):
 
     1. Open the [Power Apps portal](https://make.powerapps.com).
     2. Select the environment that you just created, and then select **Advanced settings**.
@@ -763,7 +750,7 @@ finally {
 
 
 
-## Configure the data lake
+## Configure the data lake add-in
 
 Follow these steps to use LCS to add the Azure Data Lake add-in to the environment.
 
@@ -784,33 +771,16 @@ Follow these steps to use LCS to add the Azure Data Lake add-in to the environme
 
 The add-in will be installed within a few minutes.
 
-## Configure AI Builder
+## Configure the Finance insights add-in
+> [!NOTE]
+> If you had previously installed **Get insights** add-in, please uninstall the **Get insights** add-in before proceeding with the next steps.
 
-1. Sign in to LCS, and open the **Environment details** page.
-2. Scroll to the **Environment add-ins** section. You should see the add-ins that are already installed in this environment. If the **Export to Data Lake** add-in isn't among them, configure this add-in.
-3. Select the **Get insights** add-in.
-4. On the **Get insights** add-in details page, enter the following values.
+Follow these steps to install Finance insights add-in.
 
-    | Value                                                    | Description |
-    |----------------------------------------------------------|-------------|
-    | CDS Organization URL                                     | The Dataverse organization URL copied from above. |
-    | CDS Org ID                                               | The Dataverse organization ID copied from above. |
-5. Enable **Is this the default environment for you Tenant**.
-    
-## Configure the entity store
-
-Follow these steps to set up the entity store in your Finance environment.
-
-1. Go to **System administration \> Setup \> System parameters \> Data connections**.
-2. Set the following key vault fields:
-
-    - **Application (client) ID** – Enter the application client ID that you created earlier.
-    - **Application Secret** – Enter the secret that you saved for the application that you created earlier.
-    - **DNS name** – You can find the Domain Name System (DNS) name on the application details page for the application that you created earlier.
-    - **Secret name** – Enter **storage-account-connection-string**.
-3. Enable **Enable Data Lake integration**.
-4. Select **Test Azure Key Vault** and verify there are no errors.
-5. Select **Test Azure storage** and verify there are no errors.
+1. Sign in to LCS, and then, under the environment name on the right side of the page, select **Full Details**.
+2. In the **Environment add-ins** section, select **Install a new add-in**.
+3. Select the **Finance insights** add-in.
+4. Follow the instructions to install the **Finance insights** add-in
 
 ## Feedback and support
 
