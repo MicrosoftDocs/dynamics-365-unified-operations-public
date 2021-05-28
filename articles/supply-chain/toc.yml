@@ -2249,6 +2249,8 @@
         href: production-control/manage-subcontract-work-production.md  
       - name: Unified number sequence for job IDs
         href: production-control/unified-job-ids.md
+      - name: Invoke process automation flows to create quality orders
+        href: production-control/process-automation-quality-orders.md
       - name: Discrete manufacturing
         items:
         - name: Maintain production master data
