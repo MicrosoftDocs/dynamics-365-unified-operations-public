@@ -20,13 +20,13 @@ ms.dyn365.ops.version: 10.0.20
 
 Organizations have an increasing demand to automate standard business processes, provide more convenient interactions to the staff, and utilize various data signals and systems to drive business processes automatically. With robotic process automation (RPA) and Microsoft Power Automate, businesses can use a no-code experience to automate repetitive processes, thus gaining efficiency and accuracy.
 
-For an overview of this feature and its capabilities, see the following video: [Utilize RPA to create quality orders in Dynamics 365 Supply Chain Management](https://www.youtube.com/watch?v=LFbzJ6-H89w)
-
-The automation solution template for Supply Chain Management showcases how Power Automate can be used to automate business processes using quality orders as an example.
-
-![Automation options with RPA](media/rpa-automation-options.png "Automation options with RPA")
+The downloadable automation solution template for Supply Chain Management showcases how Power Automate can be used to automate business processes using quality orders as an example.
 
 You can download the automation solution template [here](https://aka.ms/D365SCMQualityOrderRPASolution).
+
+For an overview of this feature and its capabilities, see the following video: [Utilize RPA to create quality orders in Dynamics 365 Supply Chain Management](https://www.youtube.com/watch?v=LFbzJ6-H89w)
+
+![Automation options with RPA](media/rpa-automation-options.png "Automation options with RPA")
 
 The Power Automate solution template includes a cloud automation flow and a desktop automation flow that automate the creation of quality orders in Supply Chain Management.
 
@@ -36,8 +36,4 @@ Solution parameters are included to configure the automation for a specific use 
 
 ![Create quality order](media/rpa-create-quality-roder.png "Create quality order")
 
-<!-- KFM: When the topic linked here is published, add the following:
-
-For a complete step-by-step guide about how to download, install, and use the sample solution for automating quality order creation, see [Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate Desktop](/power-automate/desktop-flows/dynamics365-scm-rpa?branch=dynamics-templates-build).
-
--->
+For a complete step-by-step guide about how to download, install, and use the sample solution for automating quality order creation, see [Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate Desktop](/power-automate/desktop-flows/dynamics365-scm-rpa).
