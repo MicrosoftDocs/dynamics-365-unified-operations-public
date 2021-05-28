@@ -45,10 +45,10 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 | Feature area   | Feature                                                  | More information                                                                    |
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Product dimensions |  Configure product dimension values as swatches in Commerce headquarters.  |  <ul><li>[Configure product dimension values to display as swatches](../dev-itpro/dimensions-swatch.md)</br></li></br><li>[Configure product dimension values to appear as swatches](../dev-itpro/dimensions-swatch.md)  |
+| Product dimensions |  Configure product dimension values as swatches in Commerce headquarters.  |  [Configure product dimension values to appear as swatches](../dev-itpro/dimensions-swatch.md)  |
 | Product dimensions |  Configure display settings in Commerce headquarters. |  [Apply display settings for product dimensions](../dimension-settings.md) |
-| Point of sale (POS) | Validate serialized items as part of the return process. | [Return serial number-controlled products in point of sale (POS)](../pos-serial-returns.md) |
-| Point of sale (POS) | Initiate returns for cash and carry or customer orders in the POS application. | [Create returns in point of sale (POS)](../pos-returns.md)  |
+| Point of sale (POS) | Validate serialized items as part of the return process. | <!--[Return serial number-controlled products in point of sale (POS)](../pos-serial-returns.md) -->|
+| Point of sale (POS) | Initiate returns for cash and carry or customer orders in the POS application. | <!--[Create returns in point of sale (POS)](../pos-returns.md)-->  |
 | Point of sale (POS) | Store Commerce app released for preview. | <ul><li>[Store commerce app with Chromium rendering engine and integrated hardware support](/dynamics365/commerce/dev-itpro/store-commerce.md)</br></li></br><li>[Store Commerce app in Microsoft Dynamics 365 Commerce (Preview)](../dev-itpro/store-commerce.md)  |
 | Point of sale (POS) |  Use POS to adjust inventory in or out. | [Support inventory adjustments from POS](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/support-inventory-adjustments-pos.md)  |
 | Payments  | This feature enables out-of-the-box support for wallet payment methods through the Dynamics 365 Payment Connector for Adyen or payments SDK.  |  <ul><li>[Out-of-the-box support for wallet-style payment methods](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/out-of-box-support-wallet-style-payment-methods.md)</br></li></br><li>[Wallet payment support](wallets.md) |
