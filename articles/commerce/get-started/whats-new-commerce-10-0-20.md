@@ -59,7 +59,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 |  E-commerce   |  Use this new theme to build modern, immersive experiences on your e-commerce site. | [Immersive theme to showcase modern e-commerce site](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/immersive-theme-showcase-modern-e-commerce-site.md)   |
 | Globalization |  Use the Dynamics 365 Payment Connector for Adyen to support payment operations in stores that are located in Brazil. | [Adyen payment connector for Brazil](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/adyen-payment-connector-brazil.md)    |
 |  Globalization |   This feature enables fiscal registration of retail sales in a SAT device connected to a hardware station. | [SAT integration for Brazil](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/sat-integration-brazil.md)  |
-| Globalization | Global configuration properties in Commerce site builder can be made visible, hidden, or disabled when specific Commerce features are turned on.  | [Configure site builder global configuration settings based on enabled features](../e-commerce-extensibility/config-settings-for-features.md) |
+| Globalization | Global configuration properties in Commerce site builder can be made visible, hidden, or disabled when specific Commerce features are turned on.  | <ul><li>[Configure site builder global configuration settings based on enabled features](../e-commerce-extensibility/config-settings-for-features.md)/br></li></br><li>[Configure site builder global configuration settings based on enabled features](../e-commerce-extensibility/config-settings-for-features.md) |
 
 ## Additional resources
 
