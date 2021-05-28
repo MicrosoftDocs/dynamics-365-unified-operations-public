@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Consolidate shipments when they are released to the warehouse by using Automatic release of sales orders
+title: Consolidate shipments released to the warehouse using automatic release of sales orders
 description: This topic presents a scenario where multiple orders are released to the warehouse in the same automated release-to-warehouse periodic procedure.
 author: GarmMSFT
 ms.date: 05/12/2020
