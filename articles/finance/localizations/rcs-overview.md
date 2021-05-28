@@ -78,3 +78,16 @@ For more information about related components, see the following documentation:
 - **Globalization feature:**
 
     - [Regulatory Configuration Service (RCS) - Globalization feature](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
+
+
+## Troubleshooting RCS sign up:
+
+When you sign up for RCS from the service page, you might encounter an issue related to Azure Active Directory (AAD) and receive the following error message:
+
+![RCS sign-up error](media/01_RCSSignUpError.jpg)
+
+The cause of the issue is that the user is blocked from signing up for ad-hoc subscriptions & need to enable this property [AllowAdHocSubscriptions] in their tenant. 
+- If your IT department manages your organization Azure tenants, you should contact them to report the issue. 
+- If you are responsible for managing your Azure tenants you can fix the issues by following the steps in the following guidance, see [What is self-service sign-up for Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-self-service-signup#how-do-i-control-self-service-settings)
+
+
