@@ -52,13 +52,14 @@ We have recently added or significantly updated the following help topics. They 
 
 | Feature area | New or updated topics |
 |--------------|-----------------------|
-| Power Platform integration | [Microsoft Power Platform integration with Finance and Operations apps](../power-platform/overview.md)<br>[Virtual entities overview](../power-platform/virtual-entities-overview.md)<br>[Dual-write setup from Lifecycle Services](../data-entities/dual-write/lcs-setup.md)<br>[Add-ins overview](../power-platform/add-ins-overview.md) |
+| Power Platform integration | [Microsoft Power Platform integration with Finance and Operations apps](../power-platform/overview.md)<br>[Virtual entities overview](../power-platform/virtual-entities-overview.md)<br>[Dual-write setup from Lifecycle Services](../data-entities/dual-write/lcs-setup.md)<br>[Add-ins overview](../power-platform/add-ins-overview.md)<br>[User-specified team owner](../data-entities/dual-write/user-specified-team-owner.md)<br>[What's new or changed in dual-write](../data-entities/dual-write/whats-new-dual-write.md)<br>[Enable dual-write for existing Finance and Operations apps](../data-entities/dual-write/enable-dual-write.md)<br>[Use the dual-write wizard to link your environments](../data-entities/dual-write/link-your-environment.md) |
 | Office integration | [Customize the Open in Microsoft Office menu](../office-integration/customize-open-office-menu.md) |
 | Database| [Point-in-time restore of the production database to a sandbox environment](../database/database-pitr-prod-sandbox.md)<br>[Database point-in-time restore (PITR)](../database/database-point-in-time-restore.md)<br>[Refresh database](../database/database-refresh.md)<br>[Golden configuration promotion](../database/dbmovement-scenario-goldenconfig.md) |
 | User productivity| [Create and work with custom fields](../../fin-ops/get-started/user-defined-fields.md)<br>[Saved views](../../fin-ops/get-started/saved-views.md)<br>[Configure document management](../../fin-ops/organization-administration/configure-document-management.md) |
 | Self-service deployment   | [Planned maintenance in self-service environments FAQ](../deployment/plannedmaintenance-selfservice.md)  |
 | On-premises deployment| [Set up and deploy on-premises environments (Platform update 41 and later](../deployment/setup-deploy-on-premises-pu41.md) |
 | Lifecycle Services (LCS) | [Asset library in Lifecycle Services (LCS)](../lifecycle-services/asset-library.md) |
+| Development| [Link X++ modules from ISV packages by using ISV Studio](../dev-tools/isv-studio-solutions.md) |
 | Removed or deprecated features | [Removed or deprecated features in previous releases](../migration-upgrade/deprecated-features.md) |
 
 
