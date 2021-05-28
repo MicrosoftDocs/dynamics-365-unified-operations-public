@@ -2374,6 +2374,8 @@
           href: dev-itpro/UpcomingSDKChanges.md
         - name: Development and ALM changes from version 10.0.10 to 10.0.13
           href: dev-itpro/dev-changes-10-13.md
+        - name: Set up a build pipeline for the independent-packaging SDK
+          href: dev-itpro/build-pipeline.md
         - name: Merge the build systems for Commerce and Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
