@@ -50,6 +50,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 | Product dimensions |  Configure display settings in Commerce headquarters. |  [Apply display settings for product dimensions](../dimension-settings.md) |
 | Point of sale (POS) | Validate serialized items as part of the return process. | [Return serial number-controlled products in point of sale (POS)](../pos-serial-returns.md) |
 | Point of sale (POS) | Initiate returns for cash and carry or customer orders in the POS application. | [Create returns in point of sale (POS)](../pos-returns.md)  |
+| Point of sale (POS) | Store Commerce app released for preview. | <ul><li>[Store commerce app with Chromium rendering engine and integrated hardware support](/dynamics365/commerce/dev-itpro/store-commerce.md)</br></li></br><li>[Store Commerce app in Microsoft Dynamics 365 Commerce (Preview)](../dev-itpro/store-commerce.md)  |
 
 ## Additional resources
 
