@@ -74,7 +74,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.20 includes platform updates
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.20, sign in to Lifecycle Services (LCS) and view the [KB article](#). <!-- KFM: Get new link -->
+For information about the bug fixes included in each of the updates that are part of 10.0.20, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=586707&dbType=3&qc=d0dad8eee2af234e8c288e2a7df14c579004518673d014be511f900cfed008f8). 
 
 ### Dynamics 365: 2021 release wave 1 plan
 
