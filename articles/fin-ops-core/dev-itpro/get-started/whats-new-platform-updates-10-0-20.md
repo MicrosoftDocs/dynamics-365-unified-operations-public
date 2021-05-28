@@ -67,7 +67,7 @@ We have recently added or significantly updated the following help topics. They 
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=586707).
+For information about the bug fixes that are included in this update, s)ign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=586707&dbType=3&qc=d0dad8eee2af234e8c288e2a7df14c579004518673d014be511f900cfed008f8).
 
 ### Dynamics 365: 2021 release wave 1 plan
 
