@@ -43,38 +43,9 @@ This topic explains how to log events to [Customer Application Insights](/azure/
 
 ## Set up and configure Application Insights in Azure
 
-1. Open the [Azure portal](https://portal.azure.com), and sign in by using your Azure subscription credentials.
-2. Select **Create a resource**.
+Follow the steps mentioned in [Create an Application Insights resource](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-new-resource) to generate the instrumentation key or the connection string.
 
-    > [!div class="mx-imgBorder"]
-    > ![Create a resource button](media/NewResource.png)
-
-3. Search for **Application Insights**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Search field](media/Search.png)
-
-4. Click **Create** in the Application Insights page.
-
-5. On the **Basic** tab, set the **Subscription**, **Resource group**, **Name**, and **Region** fields.
-
-    > [!div class="mx-imgBorder"]
-    > ![Basic tab](media/CreateNew.png)
-
-6. On the **Review + create** tab, select **Create**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Create button](media/CreateConf.png)
-
-7. Wait for the deployment to be completed.
-
-    > [!div class="mx-imgBorder"]
-    > ![Resource created](media/Completed.png)
-
-8. Go to the resource, and copy the **Instrumentation Key** value. You will use this value in the CRT code or CRT extension configuration file.
-
-    > [!div class="mx-imgBorder"]
-    > ![Instrumentation Key field](media/Resource.png)
+Copy the instrumentation key, we will use this in the CRT. For recent updates and new recommended options to log events, follow the [Azure Application Insights documentation.](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
 
 ## Extend the CRT extension project to log events to Application Insights
 
@@ -83,7 +54,7 @@ This topic explains how to log events to [Customer Application Insights](/azure/
     > [!div class="mx-imgBorder"]
     > ![New Contoso.Diagnostic project](media/VSProject.png)
 
-2. Add references to the following libraries:
+2. Add the NuGet packages references to the following libraries:
 
     + Microsoft.ApplicationInsights
     + Netstandard
