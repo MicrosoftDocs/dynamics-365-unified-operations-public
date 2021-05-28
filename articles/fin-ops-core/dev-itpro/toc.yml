@@ -14,7 +14,7 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
-        - name: Platform updates for 10.0.19 (July 2021)
+        - name: Platform updates for 10.0.19 (June 2021)
           href: get-started/whats-new-platform-updates-10-0-19.md
         - name: Platform updates for 10.0.18 (May 2021)
           href: get-started/whats-new-platform-updates-10-0-18.md
@@ -940,8 +940,6 @@
           href: lifecycle-services/getting-started-lcs.md
         - name: What's new or changed in Lifecycle Services
           href: lifecycle-services/whats-new-lcs.md
-        - name: Removed or deprecated features in Lifecycle Services (LCS)
-          href: lifecycle-services/removed-deprecated-features.md
       - name: Lifecycle Services user guide
         href: lifecycle-services/lcs-user-guide.md
       - name: Project onboarding

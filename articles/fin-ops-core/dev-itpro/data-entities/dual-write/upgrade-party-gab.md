@@ -17,28 +17,29 @@ ms.search.validFrom: 2021-03-31
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-The [Azure Data Factory template](https://aka.ms/dual-write-gab-adf) helps you upgrade existing **Account**, **Contact**, and **Vendor** table data in dual-write to the party and global address book model. The template reconciles the data from both Finance and Operations apps and customer engagement applications. At the end of the process, **Party** and **Contact** fields for **Party** records will be created and associated with **Account**, **Contact**, and **Vendor** records in customer engagement applications. A .csv file (`FONewParty.csv`) is generated to create new **Party** records inside the Finance and Operations app. This topic provides the instructions to use the Data Factory template and upgrade your data.
+The [Microsoft Azure Data Factory template](https://aka.ms/dual-write-gab-adf) helps you upgrade existing **Account**, **Contact**, and **Vendor** table data in dual-write to the party and global address book model. The template reconciles the data from both finance and operations apps and customer engagement applications. At the end of the process, **Party** and **Contact** fields for **Party** records will be created and associated with **Account**, **Contact**, and **Vendor** records in customer engagement applications. A .csv file (`FONewParty.csv`) is generated to create new **Party** records inside the finance and operations app. This topic provides instructions about how to use the Data Factory template and upgrade your data.
 
-If you don’t have any customizations, you can use the template as-is. If you have customizations for **Account**, **Contact**, and **Vendor** then you must modify the template using the following instructions.
+If you don’t have any customizations, you can use the template as is. If you have customizations for **Account**, **Contact**, and **Vendor** then you must modify the template using the following instructions.
 
-> [!Note]
-> The template helps to upgrade only the **Party** data. In a future release, postal and electronic addresses will be included.
+> [!NOTE]
+> The template only upgrades the **Party** data. In a future release, postal and electronic addresses will be included.
 
 ## Prerequisites
 
-These prerequisites are required:
+The following prerequisites are required to upgrade to the party and global address book model:
 
 + [Azure subscription](https://portal.azure.com/)
 + [Access to the template](https://aka.ms/dual-write-gab-adf)
-+ You are an existing dual-write customer.
++ You must be an existing dual-write customer.
 
 ## Prepare for the upgrade
+The following activities are needed to prepare for the upgrade:
 
-+ **Fully synched**: Both environments are fully synched state for **Account (Customer)**, **Contact**, and **Vendor**.
++ **Fully synced**: Both environments are in a fully synced state for **Account (Customer)**, **Contact**, and **Vendor**.
 + **Integration keys**: **Account (Customer)**, **Contact**, and **Vendor** tables in customer engagement apps are using the integration keys that shipped out-of-the-box. If you customized the integration keys, you must customize the template.
 + **Party number**: All **Account (Customer)**, **Contact**, and **Vendor** records that will be upgraded have a **Party** number. Records without a **Party** number will be ignored. If you want to upgrade those records, add a **Party** number to them before you start the upgrade process.
-+ **System outage**: During the upgrade process, you will have to take both the Finance and Operations and customer engagement environments offline.
-+ **Snapshot**: Take snapshots of both the Finance and Operations and customer engagement apps. Use the snapshots to restore the previous state if you need to.
++ **System outage**: During the upgrade process, you will have to take both the finance and operations and customer engagement environments offline.
++ **Snapshot**: Take snapshots of both the finance and operations apps and customer engagement apps. Use the snapshots to restore the previous state if you need to.
 
 ## Deployment
 
@@ -73,15 +74,19 @@ These prerequisites are required:
     FO Linked Service_properties_type Properties_tenant | Specify the tenant information (domain name or tenant ID) under which your application resides.
     FO Linked Service_properties_type Properties_aad Resource Id | `https://sampledynamics.sandboxoperationsdynamics.com`
     FO Linked Service_properties_type Properties_service Principal Id | Specify the application's client ID.
-    Dynamics Crm Linked Service_properties_type Properties_username | The username to connect to Dynamics.
+    Dynamics Crm Linked Service_properties_type Properties_username | The username to connect to Dynamics 365.
 
-    For more information, see [Manually promote a Resource Manager template for each environment](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Linked service properties](/azure/data-factory/connector-dynamics-ax#linked-service-properties), and [Copy data using Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    For additional information, refer to the following topics: 
+    
+    - [Manually promote a Resource Manager template for each environment](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment)
+    - [Linked service properties](/azure/data-factory/connector-dynamics-ax#linked-service-properties)
+    - [Copy data using Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. After deployment, validate the datasets, data flow, and linked service of the data factory.
 
    ![Datasets, data flow, and linked service](media/data-factory-validate.png)
 
-11. Navigate to **Manage**. Under **Connections**, select **Linked Service**. Select **DynamicsCrmLinkedService**. In the **Edit linked service (Dynamics CRM)** form, enter the following values:
+11. Navigate to **Manage**. Under **Connections**, select **Linked Service**. Select **DynamicsCrmLinkedService**. In the **Edit linked service (Dynamics CRM)** form, enter the following values.
 
     Field | Value
     ---|---
@@ -97,7 +102,7 @@ These prerequisites are required:
 
 ## Run the template
 
-1. Stop the following **Account**, **Contact**, and **Vendor** dual-write using the Finance and Operations app.
+1. Stop the following **Account**, **Contact**, and **Vendor** dual-write maps using the Finance and Operations app.
 
     + Customers V3(accounts)
     + Customers V3(contacts)
@@ -109,7 +114,7 @@ These prerequisites are required:
 
 3. Install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab) from AppSource.
 
-4. In the Finance and Operations app, if the following tables contain data, then run **Initial Sync** for them.
+4. In the finance and operations app, if the following tables contain data, then run **Initial Sync** for them.
 
     + Salutations
     + Personal character types
@@ -118,7 +123,7 @@ These prerequisites are required:
     + Decision making roles
     + Loyalty levels
 
-5. In the customer engagement app, disable the following plugin steps.
+5. In the customer engagement app, disable the following plug-in steps.
 
     + Account Update
          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Update of account
@@ -147,16 +152,16 @@ These prerequisites are required:
     ![Trigger run](media/data-factory-trigger.png)
 
     > [!NOTE]
-    > If you have customizations for **Account**, **Contact**, and **Vendor** then you must modify the template.
+    > If you have customizations for **Account**, **Contact**, and **Vendor**, then you need to modify the template.
 
 8. Import the new **Party** records in the Finance and Operations app.
 
     + Download the `FONewParty.csv` file from Azure blob storage. The path is `partybootstrapping/output/FONewParty.csv`.
-    + Convert the `FONewParty.csv` file into an Excel file and import the Excel file into the Finance and Operations app.  If the csv import works for you, you can import csv file directly. The import could take a few hours to run, depending on the data volume. For more information, see [Data import and export jobs overview](../data-import-export-job.md).
+    + Convert the `FONewParty.csv` file into an Excel file and import the Excel file into the finance and operations app. If the csv import works for you, you can import the csv file directly. The import could take a few hours to run, depending on the data volume. For more information, see [Data import and export jobs overview](../data-import-export-job.md).
 
     ![Import the Datavers party records](media/data-factory-import-party.png)
 
-9. In the customer engagement apps, enable the following plugin steps:
+9. In the customer engagement apps, enable the following plug-in steps:
 
     + Account Update
          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Update of account
@@ -184,7 +189,7 @@ These prerequisites are required:
 
 ## Troubleshooting
 
-1. In the process fails, rerun the data factory starting from the failed activity.
+1. If the process fails, rerun the data factory starting from the failed activity.
 2. Some files are generated by the data factory that you can use for data validation purpose.
 3. The data factory runs based on csv files that are comma-delimited. If there is a field value that has a comma, it may interfere with the results. You need to remove the commas.
 4. The **Monitoring** tab provides information about all steps and data processed. Select a specific step to debug it.
@@ -193,4 +198,4 @@ These prerequisites are required:
 
 ## Learn more about the template
 
-You can find comments for the template the [readme.md](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md) file.
+You can find additional information about the template in [Comments for Azure Data Factory template readme](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).
