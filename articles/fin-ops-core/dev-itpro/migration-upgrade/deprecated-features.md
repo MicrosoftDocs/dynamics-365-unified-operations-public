@@ -371,6 +371,16 @@ Feature for creating templates for new profit tax registers. This feature create
 | **Deployment option**              | All |
 | **Status**                         | Removed as of Finance and Operations 8.1 with Platform update 20. |
 
+### Payroll and Human Resources for Russia
+Russian country specific module for managing staff administration information, timesheet details for employees, payroll accounting, and creating pay statements. 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Payroll is not included in the global strategic focus of the Dynamics 365 portfolio. Partners and ISVs are best positioned to provide payroll functionality that is compliant with local regulations and tax updates.|
+| **Replaced by another feature?**   | No|
+| **Product areas affected**         | Russian Payroll and Human Resources Management |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is one of future updates of the 10.0 version. |
 
 ## Finance and Operations 8.0 with Platform update 15
 No features have been removed or deprecated with this release. Platform update 15 is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15.
