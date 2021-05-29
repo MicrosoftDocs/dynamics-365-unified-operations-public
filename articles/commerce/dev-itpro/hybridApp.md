@@ -97,6 +97,15 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
        ![POS iOS app setting for RS URL](./media/iOSRSURL.png)
       
   3.  Launch the MPOS app. You should be able to sign in and activate the device.
+
+
+## Hybrid app distribution
+
+To distribute the Android and iOS app, please follow the distribution options suggested by Android and iOS app team.
+
+[Android app distribution](https://developer.android.com/distribute/marketing-tools/alternative-distribution)
+[iOS app distribution](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution)
+
   
 ## Dedicated hardware station support for the hybrid Android app
   
