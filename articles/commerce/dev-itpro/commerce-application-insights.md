@@ -174,10 +174,13 @@ For detailed information about how to build deployable packages, see [Create dep
 4. Run this command to install the **npm** package for the JavaScript Application Insights package.
 
     ```console run the
-    npm i --save @microsoft/applicationinsights-web
+    npm i --save @microsoft/applicationinsights-web@2.5.8
     ```
+ 
+ > [!NOTE]
+ > The sample documented here is based on applicationinsights-web npm package version 2.5.8, the sample may not work as-is in the updated applicationinsights-web package.
 
-    After the package is installed, the **POS/Extensions/Libraries** folder should contain the **node_modules** folder. The **node_modules** folder contains the Application Insights library files.
+After the package is installed, the **POS/Extensions/Libraries** folder should contain the **node_modules** folder. The **node_modules** folder contains the Application Insights library files.
 
 5. Check that the file **POS/Extensions/Libraries/node_modules/@microsoft/applicationinsights-web/dist/applicationinsights-web.js** exists in the library.
 
