@@ -30,30 +30,6 @@ ms.dyn365.ops.version: Release 10.0.14
 
 This topic describes how to fix issues that you might encounter while you work with purchase orders.
 
-## An action can be completed only after the line number is fully distributed.
-
-This issue can occur because of inconsistency in purchase order distributions.
-
-To unblock this issue and reset the purchase order to a *Draft* state, go to **Procurement and sourcing \> Periodic tasks \> Clean up \> Purchase order distribution reset**. For more information, see the following blog post: [Resolve PO distribution errors in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
-
-## When purchase orders are imported through data management, purchase order line numbers don't follow the increment that defined in system parameters.
-
-### Issue description
-
-By default, automatically generated line numbers for purchase order lines that are imported through the *Purchase order lines V2* data entity don't use the system line number increment that is specified in system parameters. If you manually create a purchase order and add lines through the user interface (UI), the line numbers are incremented correctly. However, if you use the Data management framework (DMF), they aren't incremented correctly.
-
-This issue occurs because, when you import lines via DMF, if line numbers aren't already assigned in the imported entity, the system uses DMF's method for assigning them. That method always increments line numbers by one.
-
-### Issue workaround
-
-Make sure that the desired line numbers are already given in the data entity line number fields when you import the purchase order lines. In this case, DMF won't overwrite the line numbers.
-
-## A default tax group and a default cash discount aren't filled in from the invoice account.
-
-If you're using an invoice account that differs from the customer account, a default tax group and a default cash discount aren't filled in from the invoice account when a purchase order is created.
-
-This behavior is by design. The default values for the tax group, cash discounts, and other price information are based on the customer account, not the invoice account.
-
 ## I receive an "Object reference not set" error during purchase order confirmation, or an "Exception has been thrown by the target of an invocation" exception occurs during vendor invoice posting.
 
 This issue can occur because of inconsistency in purchase order distributions.
@@ -71,28 +47,6 @@ You receive the following error: "One or more accounting distributions is either
 This issue can occur because of inconsistency in purchase order distributions.
 
 To unblock this issue and reset the purchase order to a *Draft* state, go to **Procurement and sourcing \> Periodic tasks \> Clean up \> Purchase order distribution reset**. For more information, see the following blog post: [Resolve PO distribution errors in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
-
-## Can I show only purchase orders that I created?
-
-This functionality isn't currently available.
-
-## Can I reserve inventory and create transactions against registered inventory on a purchase order?
-
-### Issue description
-
-Even when items are in a *Registered* state on a purchase order, you can still reserve the inventory. In other words, you can create transactions against the registered inventory.
-
-### Reproduce the issue
-
-The following procedure shows one way to reproduce the issue.
-
-1. Create a purchase order.
-2. Register the purchase order line.
-3. Notice that you can generate reservations or transactions against the registered inventory.
-
-### Issue resolution
-
-This behavior is by design. The expectation is that the registered items have physically arrived in the warehouse or inventory, and that they are therefore available for reservation.
 
 ## Purchase orders don't reflect the language settings of the legal entity.
 
@@ -141,10 +95,5 @@ The address on the header of a purchase order is updated to an address that isn'
 ### Issue resolution
 
 This behavior is by design. The selected address must be classified as a delivery address. Otherwise, the delivery name isn't updated based on the selected address.
-
-## Can I find the user who canceled a purchase order?
-
-This information is tracked only if the purchase order is subject to change management. If you use change management, you can see who submitted the change (the cancellation), and who approved it.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
