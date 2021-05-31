@@ -35,7 +35,7 @@ This article describes the integrated reporting solution that are available. Thi
 
 ## Document Reporting Services
 
-Document Reporting Services are based on Microsoft SQL Server Reporting Services (SSRS). In the current version of the application, these services are hosted in the Microsoft Azure compute service. If you're developing in a one-box environment, the services also run locally in the Azure compute emulator.
+Document Reporting Services are based on Microsoft SQL Server Reporting Services (SSRS). In the current version of the application, these services are hosted in the Microsoft Azure Compute service. If you're developing in a one-box environment, the services also run locally in the Azure compute emulator.
 
 ### Service deployment – Local vs. cloud
 
