@@ -4,7 +4,7 @@ description: This topic describes the supply and demand forecast functionality t
 author: crytt
 ms.date: 05/12/2021
 ms.topic: article
-ms.search.form: EcoResProductDetailsExtended, ForecastSales, ForecastPurch
+ms.search.form: EcoResProductDetailsExtended, ForecastSales, ForecastPurch, ForecastInvent
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -21,14 +21,23 @@ This topic describes how to view and create inventory forecasts. You can create 
 
 For each forecast line, you can select the forecast model to use and then specify the item or item group plus the quantity or the transaction amount. You can also set up a time schedule for allocating the forecast quantity.
 
-<!-- KFM: Let's add a mention here about the inventory forecast. -->
+The supply and demand forecast lines result in inventory forecast for the same item/model combination. It represents a balance between supply and demand entered for the same item. It cannot be edited. The inventory forecast helps the inventory management team to review what changes are expected to the on-hand inventory of an item over the upcoming period of time forecasted.
 
-<a name="manual-entry"></a>
+When you have entered your demand and/or supply, you can run forecast planning to calculate gross requirements for materials and capacity and to generate planned orders.
+
+<a name="manual-entry"></a> 
 
 ## View and enter forecast lines manually
-<!-- KFM: How else can a forecast be created, besides "manually"? Is there also an automatic way? If so, mention it here or add a new section that briefly describes how it works. -->
 
-Use this procedure to create new forecast lines for products. You can refer to the information in the table below on other ways to access these pages (instead of the first two steps).
+Use this procedure to create new forecast lines for products manually. 
+
+There are also other ways to create new forecast lines:
+1. [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md).
+1. [Import historical data for demand forecasts](import-historical-data.md).
+1. [Generate the forecast using a Azure Machine Learning web service](demand-forecasting-setup.md).
+1. [Import demand or supply forecast lines by data management framework (ForecastDemandForecastEntryStaging and ForecastSupplyForecastEntryStaging data entities)](../../dev-itpro/data-entities/data-entities-data-packages.md).
+
+You can refer to the information in the table below on other ways to access these pages (instead of the first two steps).
 
 1. Depending on which type of entity you want to create a forecast for, and which type of forecast you want to create, open a supply, demand, or inventory forecast page as described in the following table.
     | **Entity** | **Instructions** |
@@ -40,7 +49,8 @@ Use this procedure to create new forecast lines for products. You can refer to t
     | Customers | <ol><li>Go to **Master planning > Forecasting > Manual forecast entry > Customers**.</li><li>Select the customer you want to create a forecast for.</li><li>On the Action Pane, select **Define demand forecast**.</li></ol> |
     | Customer groups | <ol><li>Go to **Master planning > Forecasting > Manual forecast entry > Customer groups**.</li><li>Select the customer group you want to create a forecast for.</li><li>On the Action Pane, select **Define demand forecast**.</li></ol> |
     | Vendors | <ol><li>Go to **Master planning > Forecasting > Manual forecast entry > Vendors**.</li><li>Select the vendor you want to create a forecast for.</li><li>On the Action Pane, select **Entry** to open the **Supply forecast**  page.</li></ol> |
-    | Vendor groups | <ol><li>Go to **Master planning > Forecasting > Manual forecast entry > Vendor groups**.</li><li>Select the vendor group you want to create a forecast for.</li><li>On the Action Pane, select **Entry** to open the **Supply forecast**  page.</li></ol> | <!-- KFM: We can also open **Master planning \> Forecasting \> Demand forecast lines** and **Master planning \> Forecasting \> Demand forecast lines** directly. I suppose they show forecast lines for all entities and records. Shouldn't we also describe those in this table? -->
+    | Vendor groups | <ol><li>Go to **Master planning > Forecasting > Manual forecast entry > Vendor groups**.</li><li>Select the vendor group you want to create a forecast for.</li><li>On the Action Pane, select **Entry** to open the **Supply forecast**  page.</li></ol> | 
+    | All lines | <ol><li>Go to  **Master planning \> Forecasting \> Demand forecast lines** or **Master planning \> Forecasting \> Demand forecast lines**, depending on which type of forecast you want to work with.</li></ol> |
 1. Depending on your selection, the **Supply forecast** or **Demand forecast** page opens, showing any existing forecast lines for the record you selected before opening the page.
 1. Select **New** from the Action pane to add a new forecast line to the top grid.
 1. For the new line, select the forecast **Model** to use, and then enter other details as needed, such as the item, item group, customer/vendor account or group, item quantity, or total transaction amount. See the later sections in this topic for complete details about each of the settings available on these pages.
@@ -65,8 +75,8 @@ The following table describes each of the commands available in the Action Pane 
 | **Edit** | Allow settings on this page to be edited. |
 | **New** | Add a new forecast line to the top grid. |
 | **Delete** | Remove the selected forecast line from the top grid. |
-| **Forecast balances** | <!-- KFM: description needed --> |
-| **Cash flow forecasts** | <!-- KFM: description needed --> |
+| **Forecast balances** | View forecast balances calculated for the selected line's model ID for the current fiscal year split by periods (months). |
+| **Cash flow forecasts** | View forecast transactions allocated to the general ledger. See also [Cash flow forecasting](articles\finance\cash-bank-management\cash-flow-forecasting.md). |
 | **Inventory \> Display dimensions** | Choose which inventory dimensions to include in the **Overview** grid. |
 
 ### The Overview tab toolbar for the Supply forecast page
@@ -75,10 +85,10 @@ The following table describes each of the commands available in the toolbar of t
 
 | Command | Description |
 |---|---|
-| **Allocate forecast** | <!-- KFM: description needed --> |
-| **Bulk update** | <!-- KFM: description needed --> |
-| **Inventory forecast** | <!-- KFM: description needed --> |
-| **Create item requirement** | <!-- KFM: description needed --> |
+| **Allocate forecast** | If you are using an allocation method, select this to generate the individual schedule lines for the forecast transaction. The line's quantity is then distributed according to date (per time intervals selected), quantity, and amount for the entire time horizon. |
+| **Bulk update** | Select to open the **Edit forecast transactions** page (see (#bulk-update)). |
+| **Inventory forecast** | Select to open **Inventory forecast** page filtered for the select item/model combination (see (#inventory-forecast)). |
+| **Create item requirement** | Select to open a dialog to create item requirements, sales order or item journal lines for project-related forecast transactions. While this link is available both for supply and demand forecast lines, it's not usable for the **Supply forecast** page. |
 
 ### The Overview tab of the Supply forecast page
 
@@ -127,8 +137,6 @@ The grid at the top of the **Item** tab repeats item information also shown on t
 
 The fields below the grid provide more item details. Some of this information is repeated from the **Overview** tab. The following table describes the fields that are unique to the **Item** tab.
 
-<!-- KFM: I adopted the following table from the similar section in the Demand forecast section. Please review carefully to make sure these descriptions don't need to be updated for the Supply page. -->
-
 | Field | Description |
 | --- | --- |
 | **Price unit** | The number of units for which the purchase price applies. The number is retrieved automatically from the items table, but you can modify it. |
@@ -137,8 +145,8 @@ The fields below the grid provide more item details. Some of this information is
 | **Discount amount** | The discount expressed in amount per sales unit. |
 | **Gross amount** | The amount without discounts applied. |
 | **Quantity** | The transaction quantity expressed in the inventory unit of the item. |
-| **Sub-BOM** | <!-- KFM: Description needed --> |
-| **Subroute** | <!-- KFM: Description needed --> |
+| **Sub-BOM** | The BOM number of a specific sub-BOM. |
+| **Subroute** | The route number of a specific sub-route. |
 
 ### The Financial dimensions tab of the Supply forecast page
 
@@ -168,12 +176,13 @@ The following table describes each of the commands available in the Action Pane 
 |---|---|
 | **Save** | Save your current settings. |
 | **Edit** | Allow settings on this page to be edited. |
+| **New** | Add a new forecast line to the top grid. |
 | **Delete** | Remove the selected forecast line from the top grid. |
-| **Forecast balances** | <!-- KFM: description needed --> |
-| **Cash flow forecast** | <!-- KFM: description needed --> |
+| **Forecast balances** | View forecast balances calculated for the selected line's model ID for the current fiscal year split by periods (months). |
+| **Cash flow forecast** | View forecast transactions to be allocated to the general ledger. See also [Cash flow forecasting](articles\finance\cash-bank-management\cash-flow-forecasting.md). |
 | **Display dimensions** | Choose which product, storage, and tracking dimensions to show in the **Overview** grid. |
-| **General ledger preview** | <!-- KFM: description needed --> |
-| **Transfer quotation lines** | <!-- KFM: description needed --> |
+| **General ledger preview** | View the general ledger entries for the selected transaction. |
+| **Transfer quotation lines** | Transfer quotation lines to the selected project. |
 
 ### The Overview tab toolbar on the Demand forecast page
 
@@ -181,10 +190,10 @@ The following table describes each of the commands available in the toolbar of t
 
 | Command | Description |
 |---|---|
-| **Allocate forecast** | <!-- KFM: description needed --> |
-| **Bulk update** | <!-- KFM: description needed --> |
-| **Inventory forecast** | <!-- KFM: description needed --> |
-| **Create item requirement** | <!-- KFM: description needed --> |
+| **Allocate forecast** | If you are using an allocation method, select this to generate the individual schedule lines for the forecast transaction. The line's quantity is then distributed according to date (per time intervals selected), quantity, and amount for the entire time horizon. |
+| **Bulk update** | Select to open the **Edit forecast transactions** page (see (#bulk-update)). |
+| **Inventory forecast** | Select to open **Inventory forecast** page filtered for the select item/model combination (see (#inventory-forecast)). |
+| **Create item requirement** | Select to open a dialog to create item requirements, sales order or item journal lines for project-related forecast transactions. |
 
 ### The Overview tab of the Demand forecast page
 
@@ -215,7 +224,7 @@ The **General** tab shows more information about the line currently selected on 
 
 | Field | Description |
 | --- | --- |
-| **Demand forecast sequence number** | <!-- KFM: Description needed --> |
+| **Demand forecast sequence number** | Unique number for demand forecast line generated from Demand forecast number sequence selected in the **Master planning parameters** page. |
 | **Item group** | The item group that the transaction is associated with. |
 | **Report** | Set this to *Yes* to include the transaction in reporting. |
 | **Comments** | Enter any comments that pertain to the forecast transaction. |
@@ -278,21 +287,23 @@ The **Inventory dimensions** tab shows the complete inventory dimension values f
 
 If you are using an item allocation key, or if you have entered an item forecast for one or more future periods, you can allocate the forecast by selecting **Allocate forecast** from the **Overview** tab toolbar. The quantity is then distributed as indicated by the lines in this grid.
 
+<a name="inventory-forecast"></a>
+
 ## Inventory forecast
 
-The supply and demand forecast lines pages have a link to the **Inventory forecast** page filtered for the same item/model combination. It represents a balance between supply and demand entered for the same item. It cannot be edited. The inventory forecast helps the inventory management team to review what changes are expected to the on-hand inventory of an item over the upcoming period of time forecasted.
+The supply and demand forecast lines pages have a link to the **Inventory forecast** page (**Inventory forecast** action) filtered for the same item/model combination. It represents a balance between supply and demand entered for the same item. It cannot be edited. The inventory forecast helps the inventory management team to review what changes are expected to the on-hand inventory of an item over the upcoming period of time forecasted.
 
 ### Action Pane commands on the Inventory forecast page
 
-The following table describes each of the commands available in the Action Pane of the **Demand forecast** page.
+The following table describes each of the commands available in the Action Pane of the **Inventory forecast** page.
 
 | Action | Description |
 |---|---|
-| **Supply forecast** | <!-- KFM: description needed --> |
-| **Demand forecast** | <!-- KFM: description needed --> |
+| **Supply forecast** | Open **Supply forecast** page filtered for the same item/model/date combination. |
+| **Demand forecast** | Open **Demand forecast** page filtered for the same item/model/date combination. |
 | **Inventory \> Display dimensions** | Choose which product, storage, and tracking dimensions to show in the **Overview** grid. |
 
-### Information on the Inventory forecast page 
+### Information on the Inventory forecast page
 
 The **Inventory forecast** page provides a grid with the following columns of information:
 
@@ -304,10 +315,47 @@ The **Inventory forecast** page provides a grid with the following columns of in
 | **Forecast type** | The source of the transaction (Demand forecast or Supply forecast). |
 | **CW quantity** | The forecast quantity in the catch-weight unit. |
 | **Quantity** | The forecast quantity in the inventory unit. |
-| **CW Accumulated** | <!-- KFM: Description needed --> |
+| **CW Accumulated** | The accumulated forecast quantity in the catch-weight units when multiple forecast lines have been accumulated for the same item.  |
 | **Sub-BOM** | The BOM number of a specific sub-BOM. |
 | **Subroute** | The route number of a specific sub-route. |
 | *(Other dimensions)* | Additional columns may be shown if you have chosen to include them. Select **Inventory \> Display dimensions** from the Action Pane to choose which additional dimensions are shown. |
+
+<a name="bulk-update"></a>
+
+## Bulk update forecast transactions
+
+Use this procedure to process existing forecast transaction lines. You can copy, edit, and delete forecast transaction lines.
+
+1. While on the supply or demand forecast lines page, select **Bulk update** to open this dialog.
+1. Select the **Filter** button.
+1. On the **Range** tab, select the criteria that identify the source forecast data that you want to copy, edit, or delete. This could include the forecast model, item number, and customer account. 
+1. Confirm by **OK**. 
+1. When this data is selected, you can define how to copy, edit, or delete it by using the **Edit forecast transactions** dialog.
+    > [!NOTE]
+    > This step is a prerequisite to using the **Bulk edit** functionality. Without this filtering step, the program selects all forecast lines and updates them. This could result in the unintended duplication or removal of transactions.
+1. In the **Management** field group, select whether to copy, update, or delete the selected forecast transactions.
+1. Use the **Modifications in field** field group to change the parameters of the forecast. Select the check box of the respective parameter, and then select from the available options. For example, select the **Model** check box and then select a forecast model number. Existing forecast lines are copied to the selected forecast model.
+1. Use the **Change of period** field group to move the forecast start and end dates forward or backward. Select the check box and use the quantity and period fields to define the time period for moving the forecast dates. You can also enter a negative quantity to move the starting date forward. For example, select the check box, enter 6, and select *Months* to delay the forecast transaction starting date by 6 months.
+1. Use the **Correct field** field group to update the actual forecast data. In the **Field** field, select the criterion that you want to change. In the **Factor** field, enter a multiplication factor to apply to the criterion that you select, or enter an addition or subtraction constant. For example, select *Quantity*, and enter a factor of 1.5 to multiply the item quantity by 1.5. Enter a constant of -25 to decrease the item quantity by 25 units.
+1. Use the **Financial dimensions** field group to update the financial dimensions of forecast lines. Select the financial dimension(s) that you want to change, enter a value to apply to the dimension(s) that you select.
+1. Select **OK** to apply the changes.
+
+## Run forecast planning
+
+When you have entered your demand and/or supply forecast, you can run forecast planning to calculate gross requirements for materials and capacity and to generate planned orders. 
+
+1. Go to **Master planning \> Forecasting \> Forecast planning**.
+1. Select a **Forecast plan**.
+1. Enable **Track processing time** to record the processing time for each planning task.
+1. Enter a value into **Number of threads** (see [Improve master planning performance](master-planning-performance.md) for more details).
+1. Enter text into **Comment** to capture any additional information needed.
+1. On the **Records to include** FastTab, use **Filter** to limit selection of **Items**.
+1. On the **Run in the background** FastTab, specify the parameters of the batch.
+1. Select **OK**.
+
+To view the requirements that are calculated, open the **Gross requirement** page. You can use the **Released products** page. On the **Plan** tab, in the **Requirements** group, select **Gross requirement**.
+
+To view the planned orders that are generated, use the Planned orders form. Click Master planning > Common > Planned orders. Select the appropriate forecast plan.
 
 ## Additional resources
 
