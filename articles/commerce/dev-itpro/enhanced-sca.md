@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enhanced SCA support in Storefront
+title: Enhanced payments in Storefront Checkout
 description: This topic provides an overview of enhanced Strong Customer Authentication support for Storefront checkout
 author: rubendel
 manager: annbe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Enhanced Strong Customer Authentication in Storefront Checkout
+# Enhanced payments in Storefront Checkout
 
 [!include [banner](../includes/banner.md)]
 
@@ -73,7 +73,15 @@ The out of box payment connectors for Adyen and PayPal support the enhanced paym
 > [!NOTE]
 > **V001** of the Adyen connector should no longer be used due to SCA requirements that went into enforcement in the EU on January 1, 2021. For information about configuring the Adyen connector to use **V002** visit the [Adyen connector docs page](adyen-connector?tabs=8-1-3#set-up-a-processor-for-new-credit-cards).
 
-## Enabling enhanced SCA
+## Enabling enhanced payments in Storefront checkout
+
+To enable this feature, open the Storefront Starter Kit, select the site you want to edit, expand **Site settings** and then click **Extensions**. Scroll down to **Cart and checkout**, then check the box next to **Enable single payment authorization checkout**. 
+
+![Enabling](../media/rfac.png)
+
+Once the change has been made, click **Save and publish**. 
+
+
 
 ## Additional resources
 
