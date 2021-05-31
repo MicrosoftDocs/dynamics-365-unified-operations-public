@@ -77,7 +77,7 @@ The out of box payment connectors for Adyen and PayPal support the enhanced paym
 
 To enable this feature, open the Storefront Starter Kit, select the site you want to edit, expand **Site settings** and then click **Extensions**. Scroll down to **Cart and checkout**, then check the box next to **Enable single payment authorization checkout**. 
 
-![Enabling](../media/rfac.png)
+![Enabling](../devitpro/media/rfac.png)
 
 Once the change has been made, click **Save and publish**. 
 
