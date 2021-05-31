@@ -337,7 +337,6 @@ The transfer orders are created without using the **Delivery date control** capa
 
 #### Can I use a license plate having physical negative inventory on hand?
 
-The feature only supports positive physical on-hand quantities. Make sure that you have positive physical on-hand quantities at the warehouse and inventory status level before assigning license plates to a transfer order.
-
+The feature only supports positive physical on-hand quantities on the license plate level, but it is supported to have physical negative on-hand quantities at the higher warehouse and inventory status levels when assigning license plates to transfer orders.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
