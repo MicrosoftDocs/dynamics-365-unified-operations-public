@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Return serial number-controlled products in point of sale (POS)
-description: This topic describes capabilities available in the Microsoft Dynamics 365 Commerce point of sale (POS) application for validating serialized items as part of the returns process.
+title: Return serial number-controlled products in Point of Sale (POS)
+description: This topic describes the capabilities for validating serialized items as part of the return process in the Microsoft Dynamics 365 Commerce Point of Sale (POS) application.
 author: hhainesms
 ms.date: 05/28/2021
 ms.topic: article
@@ -24,30 +24,31 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 10.0.20
 ---
 
-# Return serial number-controlled products in point of sale (POS)
+# Return serial number–controlled products in Point of Sale (POS)
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic explains describes capabilities available in the Microsoft Dynamics 365 Commerce point of sale (POS) application for validating serialized items as part of the returns process.
+This topic describes the capabilities for validating serialized items as part of the return process in the Microsoft Dynamics 365 Commerce Point of Sale (POS) application.
 
 > [!NOTE]
-> Starting in the Commerce version 10.0.20 release, the **Unified return processing experience in POS** feature can be enabled. In order to use serial number validation during return order processing in POS, this feature must be enabled. Once this feature has been enabled, it cannot be disabled. For information on additional capabilities of this feature once enabled, see [Create returns in point of sale](POS-returns.md).
+> In the Commerce version 10.0.20 release and later, a new feature that is named **Unified return processing experience in POS** is available. To use serial number validation during return order processing in POS, you must turn on this feature. For information about others capabilities that this feature provides when it's turned on, see [Create returns in Point of Sale (POS)](POS-returns.md).
+>
+> After the feature is turned on, it can't be turned off.
 
 ## Options for validating serialized returns
 
-When the **Unified return processing experience in POS** feature is enabled, organizations have the option of performing a validation on serial number-controlled item returns through the POS application. This capability can warn users if the serial number being returned differs from the original serial number sold. As of the Commerce version 10.0.20 release, users only receive a warning and can still process a return against a serial number that differs from the serial number originally sold.
+When the **Unified return processing experience in POS** feature is turned on, organizations can perform a validation on returns of serial number–controlled items through POS. This capability can warn users if the serial number that is being returned differs from the original serial number that was sold. In the Commerce version 10.0.20 release and later, the message that users receive is only a warning message. Users can continue to process a return against a serial number that differs from the serial number that was originally sold.
 
-After the **Unified return processing experience in POS** feature has been enabled, organizations can configure serial number validation by going to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters** in Commerce headquarters. On the **Inventory** tab, the **Enable validation of serial numbers on POS returns** parameter found under the **Store inventory operations** FastTab should be set to **Yes**.
+To configure serial number validation for an organization after the **Unified return processing experience in POS** feature is turned on, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters** in Commerce headquarters. On the **Inventory** tab, on the **Store inventory operations** FastTab, set the **Enable validation of serial numbers on POS returns** option to **Yes**.
 
 ## Process returns for serialized items in POS
 
-When returning a serial number-controlled item through the POS application, if the parameter to support serial number validation has been enabled, users will be able to input the serial number for the return line through the details panel on the **returnable products** form. If the data entered does not match the original serial number sold for the sales transaction, the user will see a warning. This warning will not prevent the user from continuing to post the return.  
+If the **Enable validation of serial numbers on POS returns** option has been set to **Yes**, when a serial number–controlled item is returned through POS, the user can enter the serial number for the return line in the details pane on the **Returnable products** page. If the serial number that is entered doesn't match the original serial number that was sold for the sales transaction, the user receives a warning message. However, the application doesn't prevent the user from continuing to post the return.
 
 > [!NOTE]
-> Currently the POS application can only support validation of serial numbers on return lines where the original ordered quantity is no greater than one. If the original sales order line was created in a non-POS channel and the quantity ordered for the serialized item is greater than one on a given sales line, it cannot be properly returned through the POS application. 
+> Currently, POS supports validation of serial numbers only on return lines where the original ordered quantity is no more than one. If the original sales order line was created in a non-POS channel, and if the quantity that was ordered for the serialized item on a given sales line is more than one, the item can't be correctly returned through POS.
 
 ## Additional resources
 
-[Create returns in point of sale (POS)](POS-returns.md)
-
+[Create returns in Point of Sale (POS)](POS-returns.md)
