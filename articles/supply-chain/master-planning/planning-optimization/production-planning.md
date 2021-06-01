@@ -69,7 +69,7 @@ You can use the **Explosion** page to analyze the demand that is required for a 
 
 ## <a name="filters"></a>Filters
 
-For planning scenarios that include production, we recommend that you avoid filtered master planning runs. To ensure that Planning Optimization has the information that it needs to calculate the correct result, you must include all products that have any relation to products in the whole BOM structure of the planned order.
+To ensure that Planning Optimization has the information that it needs to calculate the correct result, you must include all products that have any relation to products in the whole BOM structure of the planned order. For planning scenarios that include production, we therefore recommend that you avoid filtered master planning runs.
 
 Although dependent child items are automatically detected and included in master planning runs when the built-in master planning engine is used, Planning Optimization doesn't currently perform this action.
 
@@ -79,9 +79,9 @@ For example, if a single bolt from the BOM structure of product A is also used t
 
 When you run filtered master planning for a product, Planning Optimization (unlike the built-in master planning engine) doesn't detect all the subproducts and raw materials in the BOM structure of that product, and therefore doesn't include them in the master planning run. Even though Planning Optimization identifies the first level in the BOM structure of the product, it doesn't load any product settings (such as the default order type or item coverage) from the database.
 
-In Planning Optimization, data for the run is loaded beforehand and considers the filters. This means that if a subproduct or raw material included in a specific product isn't part of the filter, information about it won't be captured for the run. Additionally, if the subproduct or raw material is also included in another product, then a filtered run that includes only the original product and its components would remove existing planned demand that was created for another product.
+In Planning Optimization, data for the run is loaded beforehand and applies the filters. This means that if a subproduct or raw material included in a specific product isn't part of the filter, information about it won't be captured for the run. Additionally, if the subproduct or raw material is also included in another product, then a filtered run that includes only the original product and its components would remove existing planned demand that was created for that other product.
 
-This logic may cause filtered master planning runs to produce unexpected results. The following sections provide examples that illustrate the unexpected results that you could get.
+This logic may cause filtered master planning runs to produce unexpected results. The following sections provide examples that illustrate the unexpected results that could occur.
 
 ### Example 1
 
