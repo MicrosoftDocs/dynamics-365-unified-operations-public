@@ -4,7 +4,7 @@
 title: Create returns in Point of Sale (POS)
 description: This topic describes how to initiate returns for cash-and-carry transactions or customer orders in the Microsoft Dynamics 365 Commerce Point of Sale (POS) application.
 author: hhainesms
-ms.date: 05/28/2021
+ms.date: 06/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -80,7 +80,7 @@ Users can also use the **Recall order** operation in POS to search for and recal
 
 ## Return orders are posted to Commerce headquarters as sales orders 
 
-When the **Unified return processing experience in POS** feature is turned on, all returns that are created in POS are written to Commerce headquarters as sales orders that have negative lines. When the feature is turned off in releases before the Commerce version 10.0.20 release, users can select whether return orders should be posted as sales orders that have negative lines, or whether they should be return orders that are created through the return merchandise authorization (RMA) process. 
+When the **Unified return processing experience in POS** feature is turned on, all returns that are created in POS are written to Commerce headquarters as sales orders that have negative lines. In releases before the Commerce version 10.0.20 release, users can select whether return orders should be posted as sales orders that have negative lines, or whether they should be return orders that are created through the return merchandise authorization (RMA) process. 
 
 In the **Unified return processing experience in POS** feature, the option to use the RMA process to create returns in POS has been deprecated. After this feature is turned on, all returns will be created as sales orders that have negative lines.
 
