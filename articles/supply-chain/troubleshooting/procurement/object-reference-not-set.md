@@ -1,6 +1,6 @@
 ---
-title: "Object reference not set" error occurs during purchase order confirmation
-description: "Object reference not set" error occurs during purchase order confirmation
+title: Error "Object reference not set" occurs during purchase order confirmation
+description: Error "Object reference not set" occurs during purchase order confirmation
 author: kamaybac
 ms.date: 05/31/2021
 ms.topic: article
