@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.20
 This topic describes the capabilities for validating serialized items as part of the return process in the Microsoft Dynamics 365 Commerce point of sale (POS) application.
 
 > [!NOTE]
-> In the Commerce version 10.0.20 release and later, a new feature that is named **Unified return processing experience in POS** is available. To use serial number validation during return order processing in POS, you must turn on this feature. For information about others capabilities that this feature provides when it's turned on, see [Create returns in Point of Sale (POS)](POS-returns.md).
+> In the Commerce version 10.0.20 release and later, a new feature that is named **Unified return processing experience in POS** is available. To use serial number validation during return order processing in POS, you must turn on this feature. For information about others capabilities that this feature provides when it's turned on, see [Create returns in POS)](POS-returns.md).
 >
 > After the feature is turned on, it can't be turned off.
 
@@ -51,4 +51,4 @@ If the **Enable validation of serial numbers on POS returns** option has been se
 
 ## Additional resources
 
-[Create returns in Point of Sale (POS)](POS-returns.md)
+[Create returns in POS](POS-returns.md)
