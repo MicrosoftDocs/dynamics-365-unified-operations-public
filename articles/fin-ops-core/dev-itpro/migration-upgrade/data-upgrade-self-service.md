@@ -83,160 +83,138 @@ ms.search.validFrom: 2021-06-30
 
 ## Configuring replication
 
-Before starting the replication process, note that the status of the LCS environment will be in *Deployed* state when it is created.
+Before starting the replication process, note that the status of the LCS environment will be in **Deployed** state when it is created.
 
 Run the **AX2012DataUpgradeToolKit.exe** application. It will open the console window and redirect to the Microsoft login page for authentication. Provide the credentials that are used to login to LCS. Once the authentication is successful, the following message is displayed in the broswer: *Authentication complete. You can return to the application. Feel free to close this broswer tab.* You can then close the tab.
 
-After the authentication is completed, the command window waits for the Project-Id input. Provide the Project-Id and press enter. Then, provide the Environment-Id. 
+After the authentication is completed, the command window waits for the Project-Id input. Provide the Project-Id and press enter. Then, provide the Environment-Id and press Enter.
 
 It connects to the LCS environment and validates the connection to the target database.
 
 > [!NOTE]
 > The Project-Id and Environment-Id can be found in LCS on the **Manage enviornment** page. The Environment-Id can also be found in the **Environment details** page.
 
-
 After the Project-Id and Environment-Id validation is successful, it presents a set of options which should be performed step-by-step to complete the data replication and upgrade.
 
-**1) Data upgrade preparation: Environment setup activity \[Adding Source-Database details, Database Firewall IP whitelist & Distribution database path.\]**
+1. **Data upgrade preparation: Environment setup activity** 
 
-This step will ask for a set of inputs:
+    This step will ask for a set of inputs:
 
-1.  Source Database Details:
+    - Source database details:
+        - Source server (servername\serverinstance)
+        - Source database name
+        - Username
+        - Password
+    - Source database server IP address for whitelisting
+    - Distribution database path (eg. D:\SQLServer\Data)
+    - Replication snapshot path (eg. D:\SQLServer\Snapshot)
 
--Source Server(servername\\\\serverinstance)
+    > [!Warning]
+    > The paths specified should have enough space. The recommended is minimum to have the size of the source database.
 
--Source Database name
+    This option does the following.
 
--Username
+    - Validates source database connection.
+    - Validates AX 2012 database version.
+    - Authorizes the Source IP.
+    - Validates the target databases.
 
--password
+2. **Data upgrade preparation: Prepare the target environment for the data upgrade**
 
-1.  Source database server IP address for whitelisting
+    This step will change the LCS environment state from **Deployed** to **Ready for replication**.
 
-2.  Distributor database path (eg. D:\\SQLServer\\Data)
+3. **Replication: Clean-up target database**
 
-3.  Replication snapshot path (eg. D:\\SQLServer\\Snapshot)
+    This step does the following actions:
 
-> [!WARNING]
-> The paths specified should have enough space. The
-> recommended is minimum to have the size of the source database.
+    1. Changes the LCS environment state from **Ready for replication** to **Replication in progress**.
 
+    2. Deletes the dbo objects of tables, views, stored procedures, and user-defined functions at the target database.
 
-This option does the following.
+4. **Replication: Set up distributor**
 
--   Validates Source Database Connection
+    This step will create a distribution database under System Databases at the source server which is used for replication.
 
--   Validates AX2012 Database version
+5. **Replication: Set up publication for primary key tables**
 
--   Authorizes the Source IP
+    This step will create publications for primary key tables under the **Replication** folder at the source server, and replicate them at the target database. If there are any ignore-tables specified, then these tables are exempted from replication and at the same.
 
--   Validates the target databases.
+    Created Publishers -&gt; AXDB\_PUB\_TABLE\_Obj\_\[\*\].
 
-**2) Data upgrade preparation: Prepare the target environment for the data upgrade**
+    > [!WARNING]
+    > After this process (replication configuration) is completed, actual data replication will happen as a SQL job and will be running in the background. It will take some time to complete. You can check the status of the replication by giving the option **'rs**'.
 
-This step will change the LCS environment state from **"Deployed"** to **"Ready for replication"**.
+6. **Replication: Set up publication for other objects (functions)**
 
-**3) Replication: Cleanup Target Database**
+    Similar to the previous step, this step will create a publication for other objects (functions) and replicate them at the target database. If you don't want any of the functions to be replicated, you can specify them in IgnoreFunctions.xml file.
 
-This step does the following actions.
+    Creates Publisher -&gt; AX\_PUB\_OtherObjects
 
-1.  Changes the LCS environment state from **"Ready for replication"** to **"Replication in progress" **
+    > [!WARNING]
+    > It will take some time to complete the replication. Check the replication status by giving the option **'rs'**. Don't proceed to next step, until the "DataReplicationStatus" for this step is marked as completed.
 
-2.  Deletes the dbo objects of Tables, Views, Stored Procedures and User defined functions at the target database.
+    > [!Note]
+    > If there are no functions to be replicated then publication will not be created.
 
-**4) Replication: Setup Distributor**
+7. **Cutover: Set up publication for non-primary key tables**
 
-This step will create a distribution database under System Databases at the source server which is used for replication.
+    This step creates two publications to replicate 1.) non-primary key tables, 2.) ;ocked tables with publication names -&gt; AX\_PUB\_NoPKTable, AX\_PUB\_TABLE\_LockedTable
 
-**5) Replication: Setup Publication for Primary Key (PK) Tables**
+    If AX Service acquire a schema lock during the primary key publication creation time, those tables will be ignored from the publication and will be added into a temporary table and will be marked for replicating during cutover publication creation.
 
-This step will create publications for Primary Key tables under Replication folder at the source server and replicate them at the target database. If there are any ignore-tables specified, then these tables are exempted from replication and at the same.
+    > [!WARNING]
+    > Don't proceed to next step, until the "DataReplicationStatus" for this step is shown as completed.
 
-Created Publishers -&gt; AXDB\_PUB\_TABLE\_Obj\_\[\*\].
+8. **Cutover: Remove non-primary key publication and temporary tables**
 
-> [!WARNING]
-> After this process (replication configuration) is completed,
-> actual data replication will happen as a SQL Job and will be running in
-> the background. It will take some time to complete. You can check the
-> status of the replication by giving the option **'rs**' as shown
-> below.
+    This step does the following actions:
 
+    1. Cleans up the temp tables created for non-primary key tables at the source database.
 
-Please refer to the below which shows that the replication is completed.
+    2. Deletes publication --&gt; AX\_PUB\_NoPKTable.
 
-**6) Replication: Setup Publication for Other Objects (functions)**
+9. **Cutover: Create constraint for non-primary key tables**
 
-Similar to the previous step, this step will create a publication for Other Objects (functions) and replicate them at the target database. If you don't want any of the functions to be replicated, you can specify them in IgnoreFunctions.xml file.
+    This step extracts constraints for the non-primary key tables from the source database and create them at the target database.
 
-Creates Publisher -&gt; AX\_PUB\_OtherObjects
+10. **Cutover: Remove replication setup**
 
-> [!WARNING]
-> It will take some time to complete the replication. Check the
-> replication status by giving the option 'rs'. Don't proceed to next
-> step, until the "DataReplicationStatus" for this step is marked as
-> completed as shown in below figure.
+    This step will delete all the publications created at the source database, the distribution database, and replication snapshot.
 
+    > [!Note]
+    > If you want to remove the **Snapshot** folder without exception, execute the below script in the source database, or after execution you will get an exception. This exception can be ignored.
 
-**Note:** If there are no functions to be replicated then publication will not be created.
+    ```sql
+    **EXEC** master.dbo.sp\_configure 'show advanced options', 1
 
-**7) Cutover: Setup Publication for Non PK Tables **
+    RECONFIGURE **WITH** OVERRIDE
 
-This step creates two publications to replicate 1) Non-Primary Key tables, 2) Locked tables with publication names -&gt; AX\_PUB\_NoPKTable, AX\_PUB\_TABLE\_LockedTable
+    **EXEC** master.dbo.sp\_configure 'xp\_cmdshell', 1
 
-- **Locked Tables**: If AX Service acquire a schema lock during the PK Publication creation time, those tables will be ignored from the publication and will be added into a temporary table and will be marked for replicating during cutover publication creation.
+    RECONFIGURE **WITH** OVERRIDE
+    ```
+    
+11. **Post-replication: Update environment state to Replicated**
 
-> [!WARNING]
-> Don't proceed to next step, until the "DataReplicationStatus"
-> for this step is shown as completed as shown in below figure.
+    This step will change the LCS environment state from **Replication in progress** to **Replication completed**.
 
+12. **Data Upgrade: Trigger upgrade**
 
-**8) Cutover: Remove Non PK Publication and Temporary Tables**
+    This step does the following actions:
 
-This step does the following actions:
+    1. During this data upgrade process, it changes the LCS environment state from **Replication completed** to **Data upgrade in progress**.
 
-1.  Cleans up the temp tables created for no Primary Key tables at the source database.
+    2. After completion of data upgrade, it changes the LCS environment state from **Data upgrade in progress** to **Deployed**. This completes the data upgrade process.
 
-2.  Deletes Publication --&gt; AX\_PUB\_NoPKTable.
+The status for all the steps in the data upgrade process should be marked as completed.
 
-**9) Cutover: Create constraint for Non PK tables**
+If data upgrade fails, you can see that as **Failed** in LCS, and as "Resume" in menu option status of console app.
 
-This step extracts constraints for the non PK tables from the source database and create them at the target database.
+Resume the failed step. It changes the LCS environment state to **Servicing**.
 
-**10) Cutover: Remove Replication Setup**
+## Reporting section of the application
 
-This step will delete all the publications created at the source database, the distribution database and replication snapshot.
-
-**Note**: If you want to remove the Snapshot folder without exception, execute the below script in the source database (or) After execution you will get an exception. This exception can be ignored.
-
-**EXEC** master.dbo.sp\_configure 'show advanced options', 1
-
-RECONFIGURE **WITH** OVERRIDE
-
-**EXEC** master.dbo.sp\_configure 'xp\_cmdshell', 1
-
-RECONFIGURE **WITH** OVERRIDE
-
-**11) Post Replication: Update environment state to replicated. **
-
-This step will change the LCS environment state from **"Replication in progress"** to **"Replication completed"**.
-
-**12) Data Upgrade: Trigger Upgrade **
-
-This step does the following actions:
-
-1.  During this data upgrade process, it changes the LCS environment state from **"Replication completed"** to **"Data upgrade in progress"**.
-
-2.  After completion of data upgrade, it changes the LCS environment state from **"Data upgrade in progress"** to **"Deployed"**. This completes the Data upgrade process.
-
-The status for all the steps in the Data Upgrade process should be marked as Completed as shown in below figure.
-
-If Data Upgrade fails, you can see that as "**Failed**" in LCS portal and as "Resume" in menu option status of console app.
-
-Resume the failed step. It changes the LCS environment state to "**Servicing**"
-
-# **Reporting Section of the Application**
-
-Below are the options available to check the reports of Replication Status, Data Upgrade Status and Replication Validation.
+Below are the options available to check the reports of Replication Status, Data Upgrade Status, and Replication Validation.
 
 -   dv) Report: Validate the replication (Compares the number of records in the source database Vs target database)
 
