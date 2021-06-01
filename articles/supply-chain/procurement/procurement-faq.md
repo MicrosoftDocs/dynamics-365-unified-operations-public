@@ -42,3 +42,15 @@ This behavior is by design. The expectation is that the registered items have ph
 ## Can I find the user who canceled a purchase order?
 
 This information is tracked only if the purchase order is subject to change management. If you use change management, you can see who submitted the change (the cancellation), and who approved it.
+
+## Why can't I link a purchase agreement to an existing purchase order?
+
+A purchase agreement must be associated with a purchase order when the purchase order is created. Otherwise, purchase order lines can't be associated with purchase agreement lines.
+
+## What check triggers the "Update prices and discounts entered manually or external document" message?
+
+When you change the shipping date, you might receive a message that states, "Update prices and discounts entered manually or external document." You receive this message because, if the shipping date is changed, a different trade or sales agreement might be triggered and cause a price change. A change to the shipping date can also affect warehouse schedules and other related information.
+
+The message is triggered whenever any of the dates or some other parameters are changed. The purpose of the message is to make sure that you're aware of price changes that can occur because of those changes.
+
+The message is the trade agreement evaluation (TAE) prompt. For a full description, see [Trade agreement evaluation policies](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper).
