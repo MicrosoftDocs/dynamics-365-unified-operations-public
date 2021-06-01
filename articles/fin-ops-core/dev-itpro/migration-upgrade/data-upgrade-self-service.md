@@ -18,7 +18,7 @@ ms.search.validFrom: 2021-06-30
 
 [!include[banner](../includes/banner.md)]
 
-**Prerequisites**
+## Prerequisites
 
 1.  The [.NET core SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-3.1.409-windows-x64-installer) is not installed, download and install it.
 
@@ -42,42 +42,52 @@ ms.search.validFrom: 2021-06-30
 
     If the replication components are not installed, follow the steps in [Install SQL Server replication](/sql/database-engine/install-windows/install-sql-server-replication?view=sql-server-ver15).
 
-1.  Enable and start the SQL Server Agent at source database server.
+4.  Enable and start the SQL Server Agent at source database server.
 
-2. **SA Authentication:** A user should have DB\_Owner privilege in the source database and the user should have access to masterDb and sourceDb.
+    > [!Note]
+    > A user should have DB\_Owner privilege in the source database and the user should have access to the master database and source database.
 
-3. **Migration tool kit setup:** If you want any of the source database tables not to be replicated at the target database, you can specify those in IgnoreTables.xml file. Similarly, you can also specify any functions that you don't want to be replicated in IgnoreFunctions.xml file.
+5. **Migration tool kit setup:** If you want any of the source database tables not to be replicated at the target database, you can specify those in IgnoreTables.xml file. Similarly, you can also specify any functions that you don't want to be replicated in IgnoreFunctions.xml file.
 
-**\*** IgnoreTables.xml file path: **Data\\IgnoreTables.xml**
+    - **IgnoreTables.xml file path**: Data\\IgnoreTables.xml
 
-**\*** IgnoreFunctions.xml file path: [**Data\\IgnoreFunctions.xml**](file:///\\Data\IgnoreFunctions.xml)
+    - **IgnoreFunctions.xml file path**: Data\\IgnoreFunctions.xml
 
-Below is an example of how to specify tables and functions in the xml files.
+    Below is an example of how to specify tables and functions in the xml files.
+    
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <IgnoreTables>
+        <Name>
+            <Table>USERADDHISTORYLIST</Table>
+            <Table>TAXRECONCILIATIONREPORTTMP</Table>
+            <Table>CASELOG</Table>
+            <Table>SHAREDCATEGORYROLETYPE</Table>
+            <Table>VATCSREPORTXMLATTRIBUTE_CZ</Table>
+        </Name>
+    </IgnoreTables>
 
-![A screenshot of a computer Description automatically generated with low confidence](media/image1.png)
-
-![Graphical user interface  text Description automatically generated](media/image2.png)
-
-> [!WARNING]
-> The table and the functions present in these files will not
-> be replicated at the target database and the same format should be
-> followed.
-
+    <?xml version="1.0" encoding="utf-8"?>
+    <IgnoreFunctions>
+        <Name>
+            <Function>if_WHSInventReserveUnionDelta</Function>
+        </Name>
+    </IgnoreFunctions>  
+    ```
+    
+> [!Warning]
+> The table and the functions present in these files will not be replicated at the target database and the same format should be followed.
 
 > [!NOTE]
-> At any point of time, if any of the steps fail, please check
-> the [Exceptions](#exceptions) section.
+> At any point of time, if any of the steps fail, please check the [Exceptions](#exceptions) section.
 
+## Configuring replication
 
-# **Configuring Replication**
+Before starting the replication process, note that the status of the LCS environment will be in *Deployed* state when it is created.
 
-Before starting the replication process, please note that the status of the LCS environment will be in "Deployed" state when it is created, as shown in below figure.
+Now, run the **AX2012DataUpgradeToolKit.exe** application. It will open the console window and redirect to the Microsoft login page for authentication. Provide the credentials that are used to login to LCS. Once the authentication is successful, the following message is displayed in the broswer: *Authentication complete. You can return to the application. Feel free to close this broswer tab.* You can then close the tab.
 
-Now, run the "AX2012DataUpgradeToolKit.exe" application. It will open the console window and re-direct us to the Microsoft login page for authentication as shown below.
-
-Provide the credentials that are used to login to the lcs portal. Once the authentication is successful, it shows the below message in the browser. You can close the tab.
-
-After the authentication is completed, you can see that the command window waits for the Project-Id input. Give the Project-Id and press enter. Now, it asks for Environment-Id. Provide it and press enter.
+After the authentication is completed, you can see that the command window waits for the Project-Id input. Give the Project-Id and press enter. Then, it asks for Environment-Id. Provide it and press enter.
 
 It connects to the LCS environment and validate the connection to the target database.
 
