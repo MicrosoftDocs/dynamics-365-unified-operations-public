@@ -770,13 +770,13 @@
           href: notifications-pos.md
         - name: Sell continuity programs and process sales orders
           href: tasks/use-continuity-program.md
-        - name: Enable customer check-in notifications in point of sale (POS)
+        - name: Enable customer check-in notifications in POS
           href: enable-customer-check-in.md
       - name: Returns and refunds
         items:
-        - name: Create returns in Point of Sale (POS)
+        - name: Create returns in POS
           href: POS-returns.md
-        - name: Return serial number-controlled products in Point of Sale (POS)
+        - name: Return serial number-controlled products in POS
           href: POS-serial-returns.md
         - name: Linked refunds
           href: dev-itpro/linked-refunds.md
@@ -2396,7 +2396,7 @@
           href: dev-itpro/retail-sdk/sdk-github.md
         - name: Retail SDK FAQ
           href: dev-itpro/retail-sdk/sdk-faq.md
-      - name: Point of sale extensibility
+      - name: Point of sale (POS) extensibility
         items:
         - name: POS screen layouts
           href: pos-screen-layouts.md
