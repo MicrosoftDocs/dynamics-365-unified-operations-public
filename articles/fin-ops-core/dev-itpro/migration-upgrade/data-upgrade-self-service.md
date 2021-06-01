@@ -85,19 +85,17 @@ ms.search.validFrom: 2021-06-30
 
 Before starting the replication process, note that the status of the LCS environment will be in *Deployed* state when it is created.
 
-Now, run the **AX2012DataUpgradeToolKit.exe** application. It will open the console window and redirect to the Microsoft login page for authentication. Provide the credentials that are used to login to LCS. Once the authentication is successful, the following message is displayed in the broswer: *Authentication complete. You can return to the application. Feel free to close this broswer tab.* You can then close the tab.
+Run the **AX2012DataUpgradeToolKit.exe** application. It will open the console window and redirect to the Microsoft login page for authentication. Provide the credentials that are used to login to LCS. Once the authentication is successful, the following message is displayed in the broswer: *Authentication complete. You can return to the application. Feel free to close this broswer tab.* You can then close the tab.
 
-After the authentication is completed, you can see that the command window waits for the Project-Id input. Give the Project-Id and press enter. Then, it asks for Environment-Id. Provide it and press enter.
+After the authentication is completed, the command window waits for the Project-Id input. Provide the Project-Id and press enter. Then, provide the Environment-Id. 
 
-It connects to the LCS environment and validate the connection to the target database.
+It connects to the LCS environment and validates the connection to the target database.
 
 > [!NOTE]
-> The Project-Id and Environment-Id can be found from the LCS URL
-> of the environment as shown in below figure. Environment Id can also be
-> found in the Environment Details
+> The Project-Id and Environment-Id can be found in LCS on the **Manage enviornment** page. The Environment-Id can also be found in the **Environment details** page.
 
 
-Once, the Project-id and Environment-Id validation is successful, it presents us with a set of options which should be performed step by step to complete the data replication and upgrade.
+After the Project-Id and Environment-Id validation is successful, it presents a set of options which should be performed step-by-step to complete the data replication and upgrade.
 
 **1) Data upgrade preparation: Environment setup activity \[Adding Source-Database details, Database Firewall IP whitelist & Distribution database path.\]**
 
