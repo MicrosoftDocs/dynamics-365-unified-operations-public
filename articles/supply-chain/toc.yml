@@ -72,7 +72,9 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
-          - name: Supply Chain Management 10.0.19 (July 2021)
+          - name: Supply Chain Management 10.0.20 (July 2021)
+            href: get-started/whats-new-scm-10-0-20.md
+          - name: Supply Chain Management 10.0.19 (June 2021)
             href: get-started/whats-new-scm-10-0-19.md
           - name: Supply Chain Management 10.0.18 (May 2021)
             href: get-started/whats-new-scm-10-0-18.md
@@ -387,7 +389,7 @@
           href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
       - name: Setup for work orders
         items:
-        - name: Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists
+        - name: Maintenance job types, categories, variants, trades, and checklists
           href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
         - name: Work order lifecycle states
           href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
@@ -1371,7 +1373,7 @@
           items: 
           - name: Trace generated report results and compare them with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Improvements in tracing results of generated ER reports and comparisons with baseline values
+          - name: Improve tracing the results of generated ER reports to compare with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
           - name: Automate testing with ER
             href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
@@ -2225,6 +2227,8 @@
         href: engineering-change-management/engineering-attributes-and-search.md
       - name: Engineering versions and engineering product categories
         href: engineering-change-management/engineering-versions-product-category.md
+      - name: Manage changes in formulas and their ingredients
+        href: engineering-change-management/manage-formula-changes.md
       - name: Enable change management on existing products
         href: engineering-change-management/change-management-existing-products.md
       - name: Product lifecycle state and transactions
@@ -2247,6 +2251,8 @@
         href: production-control/manage-subcontract-work-production.md  
       - name: Unified number sequence for job IDs
         href: production-control/unified-job-ids.md
+      - name: Invoke process automation flows to create quality orders
+        href: production-control/process-automation-quality-orders.md
       - name: Discrete manufacturing
         items:
         - name: Maintain production master data
@@ -2337,7 +2343,7 @@
               href: production-control/production-floor-execution-setup.md
             - name: How workers use the production floor execution interface
               href: production-control/production-floor-execution-use.md
-            - name: User interface control styles for production floor execution
+            - name: Style the production floor execution interface
               href: production-control/production-floor-execution-styles.md
           - name: Configure job card for devices
             href: production-control/config-job-card-device.md
@@ -3139,11 +3145,11 @@
             href: warehousing/about-shipment-consolidation-policies.md
           - name: Configure shipment consolidation policies
             href: warehousing/configure-shipment-consolidation-policies.md
-          - name: Scenario 1 - Consolidate shipments when they are released to the warehouse by using Automatic release of sales orders
+          - name: Scenario 1 - Consolidate shipments released to the warehouse using automatic release of sales orders
             href: warehousing/consolidate-shipments-automatic.md
-          - name: Scenario 2 - Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page
+          - name: Scenario 2 - Consolidate shipments when the shipment consolidation policy is overridden
             href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-          - name: Scenario 3 - Consolidate shipments by using Release to warehouse from the load planning workbench
+          - name: Scenario 3 - Consolidate shipments by releasing to warehouse from the load planning workbench
             href: warehousing/consolidate-shipments-load-planning-workbench.md
           - name: Scenario 4 - Consolidate shipments by using the shipment consolidation workbench
             href: warehousing/consolidate-shipments-manual-workbench.md

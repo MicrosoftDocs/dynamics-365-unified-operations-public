@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page
+title: Consolidate shipments when the shipment consolidation policy is overridden
 description: This topic presents a scenario where one or more sales lines must be manually released to the warehouse from the Release to warehouse page, and the system-defined shipment consolidation policy must be overridden before the release.
 author: GarmMSFT
 ms.date: 05/12/2020
@@ -25,7 +25,7 @@ ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
 ---
 
-# Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page
+# Consolidate shipments when the shipment consolidation policy is overridden
 
 [!include [banner](../includes/banner.md)]
 
