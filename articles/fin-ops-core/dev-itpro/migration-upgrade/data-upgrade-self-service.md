@@ -3,7 +3,7 @@
 
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
-author: tonyafehr
+author: sarvanisathish
 ms.date: 06/01/2021
 ms.topic: article
 audience: IT Pro
@@ -20,29 +20,27 @@ ms.search.validFrom: 2021-06-30
 
 **Prerequisites**
 
-1.  The DotNet core SDK should have been installed. [Click here](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-3.1.409-windows-x64-installer) and download the SDK and link to the dotnet core SDK page where you can find all flavors - [Download .NET Core 3.1 (Linux, macOS, and Windows) (microsoft.com)](https://dotnet.microsoft.com/download/dotnet/3.1)
+1.  The [.NET core SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-3.1.409-windows-x64-installer) is not installed, download and install it.
 
-2.  Create a self-service environment in LCS portal and the environment should be in deployed state.
+2.  Create a self-service environment in Lifecycle Services (LCS). The environment should be in deployed state.
 
 3.  The source SQL Server should have the replication feature installed and enabled. To check whether replication is enabled, execute the following SQL script.
 
-    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+    ```sql
+    -- If @installed is 0, replication must be added to the SQL Server installation.
 
--- If @installed is 0, replication must be added to the SQL Server installation.
+    USE master;
 
-USE master;
+    GO
 
-GO
+    DECLARE @installed int;
 
-DECLARE @installed int;
+    EXEC @installed = sys.sp\_MS\_replication\_installed;
 
-EXEC @installed = sys.sp\_MS\_replication\_installed;
+    SELECT @installed;
+    ```
 
-SELECT @installed;
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-If the replication components are not installed, follow the steps in [Install SQL Server replication](https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-replication?view=sql-server-ver15).
+    If the replication components are not installed, follow the steps in [Install SQL Server replication](/sql/database-engine/install-windows/install-sql-server-replication?view=sql-server-ver15).
 
 1.  Enable and start the SQL Server Agent at source database server.
 
