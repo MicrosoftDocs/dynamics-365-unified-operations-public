@@ -23,7 +23,7 @@ When updating the requirement quantity and/or delivery date on a planned order, 
 
 This is a known issue with the built-in master planning engine. It is caused by the underlying auto explosion through the BOM structure during edits. This issue is addressed in Planning Optimization, where a planner can update and approve the relevant orders and, when desired, trigger a planning run to update planned orders for the underlying BOM structure.
 
-One way to improve performance with the built-in master planning engine is to do the following:
+One way to improve performance with the built-in master planning engine is to do the following steps:
 
 1. Go to **Master planning \> Setup \> Plans \> Master plans**.
 1. Select a plan.
