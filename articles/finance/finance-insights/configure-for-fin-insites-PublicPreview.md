@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configuration for Finance Insights (preview) - versions 10.0.20 and beyond
-description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights in versions 10.0.20 and beyond.
+title: Configuration for Finance Insights (preview) - versions 10.0.20 and later
+description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights for public preview in versions 10.0.20 and beyond.
 author: ShivamPandey-msft
 ms.date: 05/28/2021
 ms.topic: article
@@ -34,10 +34,10 @@ ms.dyn365.ops.version: AX 10.0.20
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-> [!NOTE]
-> Following Finance insights setup is valid for Dynamics 365 Finance versions 10.0.20 and beyond. To setup Finance insights on versions upto 10.0.19, see [Configuration for Finance insights - versions upto 10.0.19](configure-for-fin-insites.md).
+Finance insights combines functionality from Microsoft Dynamics 365 Finance with Microsoft Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains the configuration steps for Microsoft Dynamics 365 Finance version 10.0.20 public preview that will enable your system to use the capabilities that are available in Finance insights.
 
-Finance insights combines functionality from Microsoft Dynamics 365 Finance with Microsoft Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
+> [!NOTE]
+> The Finance insights configuration steps described in this topic are valid for Dynamics 365 Finance versions 10.0.20 and beyond. To set up Finance insights on versions up to 10.0.18, see [Configuration for Finance insights - versions up to 10.0.18](configure-for-fin-insites.md).
 
 ## Deploy Dynamics 365 Finance
 
@@ -51,11 +51,12 @@ Deploy the environments by following these steps.
 
 Use the following steps to configure Dataverse for Finance insights.
 
-1. Open the environment page in LCS and verify that the **Power Platform Integration** section is already setup.
+1. Open the environment page in LCS and verify that the **Power Platform Integration** section is already set up.
     1. If it is already set up, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed. Copy the Dataverse environment name.
     2. If it is not set up, follow these steps:
         1. Select the **Setup** button in the Power Platform Integration section. It may take up to an hour for the environment to be set up.
         2. If the Dataverse environment is successfully set up, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed. Copy the Dataverse environment name.
+
 > [!NOTE]
 > After completing the environment set up, **DO NOT** select the **Link to CDS for Apps** button. This is not needed for Finance Insights and will disable the ability to complete the required Environment Add-ins in LCS.
 
@@ -67,7 +68,7 @@ Use the following steps to configure Dataverse for Finance insights.
     4. Change the value of the **Maximum file size** field to **51,200**. (The value is expressed in kilobytes \[KB\].)
     5. Select **OK** to save your changes.
 
-## Configure the Azure setup
+## Configure Microsoft Azure
 
 ### Enter the Dataverse directory ID and the user's Azure AD object ID
 
@@ -146,9 +147,9 @@ If you can't find any of the preceding applications, try the following steps.
     1. In the [Azure portal](https://portal.azure.com), create a storage account.
     2. In the **Create storage account** dialog box, set the following fields:
 
-        - **Location** – Select the data center where your environment is located.
-        - **Performance** – We recommend that you select **Standard**.
-        - **Account kind** – You must select **StorageV2**.
+    - **Location** – Select the data center where your environment is located.
+    - **Performance** – We recommend that you select **Standard**.
+    - **Account kind** – You must select **StorageV2**.
 
     3. In the **Advanced options** dialog box, for the **Data Lake storage Gen2** option, select **Enable** under the **Hierarchical namespaces** feature. If you disable this feature, you can't consume data that Finance and Operations apps write by using services such as Power BI data flows.
     4. Select **Review and create**. When the deployment is completed, the new resource will be shown in the Azure portal.
