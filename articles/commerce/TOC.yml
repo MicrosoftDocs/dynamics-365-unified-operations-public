@@ -770,9 +770,9 @@
           href: enable-customer-check-in.md
       - name: Returns and refunds
         items:
-        - name: Create returns in point of sale (POS)
+        - name: Create returns in Point of Sale (POS)
           href: POS-returns.md
-        - name: Return serial number controlled products in point of sale (POS)
+        - name: Return serial number-controlled products in Point of Sale (POS)
           href: POS-serial-returns.md
         - name: Linked refunds
           href: dev-itpro/linked-refunds.md
