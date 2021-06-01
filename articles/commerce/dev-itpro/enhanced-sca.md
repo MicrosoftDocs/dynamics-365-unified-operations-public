@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Enhanced payments in Storefront Checkout
-description: This topic provides an overview of enhanced Strong Customer Authentication support for Storefront checkout
+title: Enhanced payments in storefront checkout
+description: This topic provides an overview of enhanced strong customer authentication (SCA) support for storefront checkout.
 author: rubendel
 manager: annbe
-ms.date: 4/29/2021
+ms.date: 6/02/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Enhanced payments in Storefront Checkout
+# Enhanced payments in storefront checkout
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of enhanced Strong Customer Authentication support in Storefront Checkout
+This topic provides an overview of enhanced strong customer authentication (SCA) support for storefront checkout.
 
 ## Key terms
 
@@ -43,9 +43,7 @@ This topic provides an overview of enhanced Strong Customer Authentication suppo
 | Redirect | A web page used to verify that the person making the purchase is the cardholder associated with the card being used to make the purchase.
 | Card token | An alias that is used to refer to a real card number. Card tokens allow a reference to an actual card to be saved while avoiding the security issues associated with saving real card numbers. | 
 
-## Overview
-
-Traditionally, the Storefront checkout process made two distinct calls to the payment processor. The first call was used to tokenize the card number entered in the payment processor's iFrame embedded in the checkout. During this first call, SCA was also enabled so, if needed, the cardholder could be authenticated with the card's issuing bank. The second call used the card token obtained from the first call to request the actual authorization response. 
+Traditionally, the storefront checkout process made two distinct calls to the payment processor. The first call was used to tokenize the card number entered in the payment processor's HTML iframe element embedded in the checkout. During this first call, SCA was also enabled so, if needed, the cardholder could be authenticated with the card's issuing bank. The second call used the card token obtained from the first call to request the actual authorization response. 
 
 This two-step method of acquiring payment authorizations was not ideal in all cases. First, not all payment processors support a zero amount authorization request, which was used in the first call to request the payment token. Second, because SCA was performed during the first call, the liability shift granted by SCA was only evident in the tokenization request- not on the actual authorization request. 
 
@@ -73,7 +71,7 @@ The out of box payment connectors for Adyen and PayPal support the enhanced paym
 > [!NOTE]
 > **V001** of the Adyen connector should no longer be used due to SCA requirements that went into enforcement in the EU on January 1, 2021. For information about configuring the Adyen connector to use **V002** visit the [Adyen connector docs page](adyen-connector?tabs=8-1-3#set-up-a-processor-for-new-credit-cards).
 
-## Enabling enhanced payments in Storefront checkout
+## Enabling enhanced payments in storefront checkout
 
 To enable this feature, open the Storefront Starter Kit, select the site you want to edit, expand **Site settings** and then click **Extensions**. Scroll down to **Cart and checkout**, then check the box next to **Enable single payment authorization checkout**. 
 
@@ -81,14 +79,15 @@ To enable this feature, open the Storefront Starter Kit, select the site you wan
 
 Once the change has been made, click **Save and publish**. 
 
-
-
 ## Additional resources
 
-- [Payments FAQ](dev-itpro/payments-retail.md)
-- [Dynamics 365 Payment Connector for PayPal](paypal.md)
-- [Dynamics 365 Payment Connector for Adyen](adyen-connector.md)
-- [Adyen redirect](adyen_redirect.md)
+[Payments FAQ](dev-itpro/payments-retail.md)
+
+[Dynamics 365 Payment Connector for PayPal](paypal.md)
+
+[Dynamics 365 Payment Connector for Adyen](adyen-connector.md)
+
+[Adyen redirect](adyen_redirect.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
