@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 10.0.20
 Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains how to configure Dynamics 365 Finance version 10.0.20 public preview so that your system can use the capabilities that are available in Finance insights.
 
 > [!NOTE]
-> The configuration steps that are described in this topic apply only to Finance version 10.0.20 and later. To set up Finance insights on versions up to version 10.0.19, see [Configuration for Finance insights - versions up to 10.0.18](configure-for-fin-insites.md).
+> The configuration steps that are described in this topic apply only to Finance version 10.0.20 and later. 'To set up Finance insights on version 10.0.19 and earlier, see [Configuration for Finance insights - versions up to 10.0.18](configure-for-fin-insites.md).
 
 ## Deploy Finance
 
@@ -45,7 +45,7 @@ Follow these steps to deploy the environments.
 
 1. In Microsoft Dynamics Lifecycle Services (LCS), create or update a Finance environment. The environment requires app version 10.0.18 or later of Finance and Operations apps.
 2. The environment must be a high-availability (HA) environment in Sandbox. (This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. If you're using Contoso demo data, and you plan to use the Customer payment predictions, Cash flow forecasts, and Budget forecasts features, additional sample data is required.
+3. If you're using Contoso demo data, and you plan to use the Customer payment predictions, Cash flow forecasts, and Budget forecasts features, additional sample data is required. 
 
 ## Configure Dataverse
 
