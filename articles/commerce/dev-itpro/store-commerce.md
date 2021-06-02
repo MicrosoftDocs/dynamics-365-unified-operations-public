@@ -115,8 +115,6 @@ Because the Store Commerce renders the CPOS, you follow the CPOS packaging and d
 
 The app can also be extended to integrate with hardware devices, [sample extension code added in GitHub to generate Store Commerce HWS extension package](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.28/src/PosSample). For more information, see [Integrate the POS with a new hardware device](hardware-device-extension.md).
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)] 
-
 ## Known issues with the Microsoft Edge WebView2 control
 
 + During activation, when prompted for entering the AAD password with multiple options, choose password. The other options might not work.
