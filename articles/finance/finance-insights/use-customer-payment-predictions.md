@@ -4,7 +4,7 @@
 title: Use Customer payment predictions (preview)
 description: This topic walks through the prerequisites and the broad steps that are required to use a trial version of Finance insights.
 author: ShivamPandey-msft
-ms.date: 11/16/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
