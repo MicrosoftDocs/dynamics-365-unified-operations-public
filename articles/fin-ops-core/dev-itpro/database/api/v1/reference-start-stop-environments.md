@@ -96,7 +96,23 @@ POST /environment/v1/stop/project/{projectId}/environment/{environmentId}
     "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
+## Rate limit
 
+To better load balance the request, there's rate limit on the Start and Stop API: 
+
+For **Start** API, we will enforce:
+
+ * 1 call per environment per 5 minutes
+ * 30 calls per user per 30 minutes
+                
+For **Stop** API, we will enforce:
+
+ * 1 call per environment per 5 minutes
+ * 30 calls per user per 30 minutes
+
+> [!NOTE]
+> 
+> Requests that exceed the limits will be rejected with a “HTTP 429 Too Many Requests” response. The **retry-after** header will indicate the number of seconds when the request can be retried.
 
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]
