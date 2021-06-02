@@ -75,7 +75,7 @@ Currently, only files in Microsoft Word (.docx) format are accepted for translat
 ### Upload XLIFF or TMX translation memory files (Optional)
 If you have a TM in Translation Memory eXchange (TMX) format from a previous DTS request, and/or if you have a XLIFF TM from UI file translation, you can attach those TMs so that they can be recycled in the new document that you're submitting. Create a zip file that includes all the TM files. You can upload only one zip file. If you created the translation request for multiple target languages, you must select which target language the TM file is for. 
 
-![TM upload](./media/dts-tm-upload.png "TM upload")
+![TM upload](./media/dts-tm-upload-ua.png "TM upload")
 
 With the translation memory file you are providing, you have an option to decide whether you want to create a custom MT system trained with it. This option may take longer time to complete the request. You must choose Yes or No to be able to continue with the TM file upload.  
 
