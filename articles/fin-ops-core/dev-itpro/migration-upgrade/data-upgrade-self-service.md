@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
 author: sarvanisathish
-ms.date: 06/01/2021
+ms.date: 06/02/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -230,54 +230,56 @@ Below are the options available to check the reports of Replication Status, Data
 
 -This option will display the report of the data upgrade process. This should be used only after starting step 12.
 
-# **Tooling Section of the Application**
+## Tooling section of the application
 
--   reset) This will reset the replication setup (removes all the replication configuration)
+- **Reset**: This will reset the replication setup (removes all the replication configuration).
 
--This will remove all the replication configurations (publications and distribution database will be deleted.) The menu options status will be reset from completed to reset mode which helps you to perform the replication from beginning.
+    This will remove all the replication configurations (publications and distribution database will be deleted). The menu options status will be reset from completed to reset mode which helps you to perform the replication from beginning.
 
--   reset-all) This will reset all the menu options
+- **Reset-all**: This will reset all the menu options
 
--reset option + clear option + All the options will be changed to "Not Started"
+    **Reset** option + **Clear** option + All the options will be changed to "Not Started".
 
--   clear) Clears the environment setup activity (clearing the cache)
+- **Clear**: Clears the environment setup activity (clearing the cache).
 
--This will clear all the cache like project-Id, Environment-Id, source database details. The option 1 status will be changed to "Not Started"
+    This will clear all the cache like project-Id, Environment-Id, source database details. The option 1 status will be changed to "Not Started".
 
--   help) Display the data upgrade migration
+- **Help**: Display the data upgrade migration.
 
--This will display the menu option status with the updated status.
+    This will display the menu option status with the updated status.
 
--   Exit) Exit
+- **Exit**: Exit
 
-# **To Know Replication Configuration & Status (via) SSMS - SQL Server Management Studio** 
+## To know replication configuration and status via SQL Server Management Studio(SSMS)
 
--   To know replication feature is available/installed in the server, the Object Explorer should have the replication folder as in the below screen shot.
+- To know replication feature is available/installed in the server, the Object Explorer should have the Replication folder.
 
--   After the completion of step 3, we should be able to see the publisher configured under replication folder.
+- After the completion of step 3, we should be able to see the publisher configured under Replication folder.
 
--   To know the replication status right click on the replication folder, and select the Launch Replication Monitor
+- To know the replication status, right-click the Replication folder and select **Launch Replication Monitor**.
 
--   In the monitor screen we can see all the publishers that we have created for replication.
+- In the monitor screen we can see all the publishers that we have created for replication.
 
--   Selecting the snapshot tab, we can see the status of the snapshot.
+- Selecting the **Snapshot** tab, we can see the status of the snapshot.
 
--   To view the detail log/transaction double click on the grid item.
+- To view the detail log/transaction, double-click on the grid item.
 
--   To view the data replication to the target, select the All Subscription tab and double click subscription from the grid item. Like in the above screen shot can view the detail logs.
+- To view the data replication to the target, select the **All Subscription** tab and double-click subscription from the grid item.
 
-# **Exceptions**
+## Exceptions
 
 1.  Delete the distribution database if it already exists at the source database server by following the below steps.
 
-    1.  Expand the Replications folder in the source database server. Right click on the "Local Publications" folder and click on Generate Scripts as shown in below figure. This opens a tab "Generate SQL Script".
+    1.  Expand the **Replication** folder in the source database server. Right-click the **Local Publications** folder and select **Generate Scripts**. 
+    
+        This opens a tab called **Generate SQL Script**.
 
-    2.  Select the radio button "To drop or disable the components" and select "Open in New Query Window" in the dropdown of Generate Script as shown in below figure.
+    2.  Select the **To drop or disable the components** option and select **Open in New Query Window** from the **Generate Script** drop-down list.
 
     3.  The above step will open the script in a new query window. Execute this script at the source database.
 
 2. **Exception**: After Creating the Publication if the Snapshot creation is failing with the below error message:
 
-**Error Message**: Prefetch objects failed for Database 'MicrosoftDynamicsAX'.
+    **Error Message**: Prefetch objects failed for Database 'MicrosoftDynamicsAX'.
 
-**Solution**: Go to Replication launch Monitor, right click on the failed publication and select on "Generate Snapshot". Wait until it is completed. You can check the replication status with the option 'rs'. Please refer below screenshot for reference.
+    **Solution**: Go to Replication launch Monitor, right-click on the failed publication and select on "Generate Snapshot". Wait until it is completed. You can check the replication status with the option 'rs'.
