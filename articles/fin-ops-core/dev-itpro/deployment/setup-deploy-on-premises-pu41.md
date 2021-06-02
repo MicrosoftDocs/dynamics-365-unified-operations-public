@@ -919,6 +919,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     > [!IMPORTANT]
     > - You must install the Database Engine when you install SSRS.
     > - Do **not** configure the SSRS instance. The reporting service will automatically configure everything.
+    > - Environments that were deployed with a base topology older than platform update 41 do not need to go through the steps below. In those environments, SSRS should still be configured manually according to [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md).
 
 1. For each BI node, follow these steps:
 
@@ -940,6 +941,10 @@ You can configure more than one SSRS node. For more information, see [Configurin
         The Configure-Database.ps1 script performs the following action:
 
         - Grant the **CREATE ANY DATABASE** permission to **\[contoso\\svc-ReportSvc$\]**.
+    
+    > [!NOTE]
+    > These scripts will **not** configure SSRS, it will get configured during deployment by the Service Fabric service (ReportingService) deployed to that node.
+    > The scripts will instead grant the necessary permissions for the Service Fabric service (ReportingService) to carry out the necessary configuration.
 
 ### <a name="configureadfs"></a>Step 18. Configure AD FS
 
