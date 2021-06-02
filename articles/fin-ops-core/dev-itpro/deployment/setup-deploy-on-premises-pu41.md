@@ -943,8 +943,9 @@ You can configure more than one SSRS node. For more information, see [Configurin
         - Grant the **CREATE ANY DATABASE** permission to **\[contoso\\svc-ReportSvc$\]**.
     
     > [!NOTE]
-    > These scripts will **not** configure SSRS, it will get configured during deployment by the Service Fabric service (ReportingService) deployed to that node.
-    > The scripts will instead grant the necessary permissions for the Service Fabric service (ReportingService) to carry out the necessary configuration.
+    > These scripts will **not** configure SSRS. SSRS will get configured during deployment by the Service Fabric service (ReportingService) deployed to that node.
+    > 
+    > These scripts will, instead, grant the necessary permissions for the Service Fabric service (ReportingService) to carry out the necessary configuration.
 
 ### <a name="configureadfs"></a>Step 18. Configure AD FS
 
