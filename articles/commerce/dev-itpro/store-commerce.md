@@ -51,7 +51,7 @@ Your extension code developed or ISV solution implemented for MPOS can be used i
 
 ## Choosing between Store Commerce and MPOS
 
-Store Commerce renders CPOS but has full parity with MPOS. Both Store Commerce and MPOS are Universal Windows Platform (UWP) apps and they support local hardware station. Store Commerce doesn't currently support offline but it will in the future. 
+Store Commerce renders CPOS but has full parity with MPOS. Both Store Commerce and MPOS are Universal Windows Platform (UWP) apps and they support local hardware station. Store Commerce doesn't currently support offline, but it will in the future. 
 
 Store Commerce uses the Chromium engine to render the UI so it provides better rendering performance when compared to MPOS and Store Commerce is deployed through Microsoft Store, which greatly simplifies the ALM, whereas MPOS is self-serviced using LCS and HQ. In the future, MPOS will be deprecated and replaced by Store Commerce. 
 
@@ -119,6 +119,6 @@ The app can also be extended to integrate with hardware devices, [sample extensi
 
 + During activation, when prompted for entering the AAD password with multiple options, choose password. The other options might not work.
 + Tabbing inside the app by pressing the Tab key may not work. Instead, click or select items.
-+ Using the mouse for drop down selection might not work. Instead, use the keyboard to make a selection.
++ Using the mouse for drop-down selection might not work. Instead, use the keyboard to make a selection.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
