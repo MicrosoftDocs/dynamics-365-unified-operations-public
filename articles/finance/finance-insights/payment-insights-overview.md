@@ -4,7 +4,7 @@
 title: Customer payment predictions (preview)
 description: This topic describes the payment predictions capability that can help you better understand a customer's typical payment practices. This feature can also help identify circumstances that should cause you to start collection processes earlier than you might otherwise start them.
 author: ShivamPandey-msft
-ms.date: 05/26/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
