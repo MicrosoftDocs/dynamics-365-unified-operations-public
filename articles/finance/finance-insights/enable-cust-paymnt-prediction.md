@@ -4,7 +4,7 @@
 title: Enable customer payment predictions (preview)
 description: This topic explains how to turn on and configure the Customer payment predictions feature in Finance insights.
 author: ShivamPandey-msft
-ms.date: 05/27/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
