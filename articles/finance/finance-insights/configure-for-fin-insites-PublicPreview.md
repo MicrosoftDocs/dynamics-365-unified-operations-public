@@ -37,15 +37,15 @@ ms.dyn365.ops.version: AX 10.0.20
 Finance insights combines functionality from Microsoft Dynamics 365 Finance with Microsoft Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains the configuration steps for Microsoft Dynamics 365 Finance version 10.0.20 public preview that will enable your system to use the capabilities that are available in Finance insights.
 
 > [!NOTE]
-> The Finance insights configuration steps described in this topic are valid for Dynamics 365 Finance versions 10.0.20 and beyond. To set up Finance insights on versions up to 10.0.18, see [Configuration for Finance insights - versions up to 10.0.18](configure-for-fin-insites.md).
+> The Finance insights configuration steps described in this topic apply to Dynamics 365 Finance versions 10.0.20 and later. To set up Finance insights on versions up to 10.0.19, see [Configuration for Finance insights - versions up to 10.0.18](configure-for-fin-insites.md).
 
 ## Deploy Dynamics 365 Finance
 
 Deploy the environments by following these steps.
 
-1. In Microsoft Dynamics Lifecycle Services (LCS), create or update a Dynamics 365 Finance environment. The environment requires app version 10.0.11/Platform update 35 or later.
+1. In Microsoft Dynamics Lifecycle Services (LCS), create or update a Dynamics 365 Finance environment. The environment requires app version 10.0.18 of Finance and Operations apps or later.
 2. The environment must be a high-availability (HA) environment in Sandbox. (This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. If you're using Contoso demo data, you will require additional sample data to use the Customer payment predictions, Cash flow forecasts, and Budget forecasts features. 
+3. If you're using Contoso demo data, you will need additional sample data to use the Customer payment predictions, Cash flow forecasts, and Budget forecasts features. 
 
 ## Configure Dataverse
 
@@ -53,7 +53,7 @@ Use the following steps to configure Dataverse for Finance insights.
 
 1. Open the environment page in LCS and verify that the **Power Platform Integration** section is already set up.
     1. If it is already set up, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed. Copy the Dataverse environment name.
-    2. If it is not set up, follow these steps:
+    2. If it is not set up, complete the following steps steps:
         1. Select the **Setup** button in the Power Platform Integration section. It may take up to an hour for the environment to be set up.
         2. If the Dataverse environment is successfully set up, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed. Copy the Dataverse environment name.
 
@@ -100,7 +100,7 @@ Follow these steps to configure Azure by using the Windows PowerShell script. Yo
 2. Select **PowerShell**.
 3. Create storage if you're prompted to do so.
 4. Go to the **Azure CLI** tab and select **Copy**.  
-5. Open Notepad and paste the PowerShell script. Save the file as ConfigureDataLake.ps1.
+5. Open a Notepad file and paste the PowerShell script. Save the file as ConfigureDataLake.ps1.
 6. Upload the Windows PowerShell script to the session using the menu option for upload in Cloud Shell.
 7. Run the script .\ConfigureDataLake.ps1.
 8. Follow the prompts to run the script.
@@ -175,34 +175,34 @@ If you can't find any of the preceding applications, try the following steps.
     1. In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and then select **App registrations**.
     2. Select **New application registration**, and set the following fields:
 
-        - **Name** – Enter the name of the app.
-        - **Application type** – Select **Web API**.
-        - **Redirect URI setup** – Enter the URL for your Dynamics 365 instance, such as, `https://yourdynamicsinstance.dynamics.com/auth`.
+     - **Name** – Enter the name of the app.
+     - **Application type** – Select **Web API**.
+     - **Redirect URI setup** – Enter the URL for your Dynamics 365 instance, such as, `https://yourdynamicsinstance.dynamics.com/auth`.
 
     3. Go to the app that you just created, and copy and save its **Application (client) ID** value. You will have to provide this value later, when you set up the key vault.
     4. Go to **API permissions**, and follow these steps:
 
-        1. Select **Add a permission**.
-        2. Select **Azure Key vault**.
-        3. After you select delegated permissions, select **user\_impersonation**.
-        4. Select **Add permissions**.
+      1. Select **Add a permission**.
+      2. Select **Azure Key vault**.
+      3. After you select delegated permissions, select **user\_impersonation**.
+      4. Select **Add permissions**.
 
     5. On the menu for the app, select **Certificates \& secrets**, and then follow these steps to create Key Vault secrets:
 
-        1. Select **New client secret**.
-        2. In the **Key Description** field, enter a name.
-        3. Select a duration, and then select **Add**. A secret is generated in the **Value** field.
-        4. Copy and save the secret value.
+      1. Select **New client secret**.
+      2. In the **Key Description** field, enter a name.
+      3. Select a duration, and then select **Add**. A secret is generated in the **Value** field.
+      4. Copy and save the secret value.
 
 4. Create Key Vault secrets:
 
     1. Go to the key vault that you created earlier, and select **Secrets**.
     2. For each secret name in the following table, follow these steps:
 
-        1. Select **Generate/Import**.
-        2. In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.
-        3. Create the secret name and value from the following table.
-        4. Select **Enabled**, and then select **Create**. The secret is created and added to Key Vault.
+      1. Select **Generate/Import**.
+      2. In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.
+      3. Create the secret name and value from the following table.
+      4. Select **Enabled**, and then select **Create**. The secret is created and added to Key Vault.
 
         | Secret name                       | Secret value                                                                                |
         |-----------------------------------|---------------------------------------------------------------------------------------------|
@@ -217,12 +217,12 @@ If you can't find any of the preceding applications, try the following steps.
     2. Select the access policies.
     3. For each application in the following table, follow these steps:
 
-        1. Select **Add Access Policy** to create an access policy.
-        2. In the **Secret permissions** field, select the permissions from the following table.
-        3. In the **Select principal** field, search for the application display name from the following table.
-        4. Select **Select**.
-        5. Select **Add**.
-        6. Select **Save**.
+      1. Select **Add Access Policy** to create an access policy.
+      2. In the **Secret permissions** field, select the permissions from the following table.
+      3. In the **Select principal** field, search for the application display name from the following table.
+      4. Select **Select**.
+      5. Select **Add**.
+      6. Select **Save**.
 
         | Application                                              | Permissions |
         |----------------------------------------------------------|-------------|
@@ -236,10 +236,10 @@ If you can't find any of the preceding applications, try the following steps.
     3. Select **Add, Add Role Assignment**.
     4. For each application in the following table, follow these steps:
 
-        1. Select the role from the following table.
-        2. Leave the **Assign access to** field set to **Azure AD user, group, or service principal**.
-        3. In the **Select** field, enter the application from the following table.
-        4. Select **Save**.
+      1. Select the role from the following table.
+      2. Leave the **Assign access to** field set to **Azure AD user, group, or service principal**.
+      3. In the **Select** field, enter the application from the following table.
+      4. Select **Save**.
 
         | Application                                              | Role                        |
         |----------------------------------------------------------|-----------------------------|
