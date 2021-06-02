@@ -15,6 +15,7 @@ ms.search.form: ReqGroup, ReqItemTable, InventItemOrderSetup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
+ms.author: crytt
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -22,7 +23,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Replenishment methods and quantity modification
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic provides information about replenishment methods in Planning Optimization and include details on how product multiple order quantity affects the result.
 
@@ -113,4 +114,4 @@ There is inventory on-hand of 10 pieces for the product exist and no other deman
 When master planning runs, the planned order for 15 pieces is created (as 10 pieces of replenishment + 10 pieces of on-hand would be below minimum).
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
