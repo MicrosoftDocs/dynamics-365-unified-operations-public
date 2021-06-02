@@ -4,7 +4,7 @@
 title: Usage management dashboard
 description: This topic explains how to use the Usage management dashboard to monitor usage of the Electronic Invoicing service and remain compliant.
 author: gionoder
-ms.date: 05/07/2021
+ms.date: 06/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -72,7 +72,7 @@ This indicator provides details about the electronic invoices that your organiza
 
 ### Calculation
 
-The calculation of the Balance is calculated as follows:
+The calculation of the balance is calculated as follows:
 
 Balance = Free + Purchased – Used
 
@@ -101,7 +101,7 @@ This indicator shows the usage of electronic invoicing features for issuance of 
 
 - Calculation:
   
-    Used = The count of how many times each electronic invoicing feature was used during submissions of business documents to the Electronic Invoicing service.
+    Used = The count of how many times each electronic invoicing feature was used during the submission of business documents to the Electronic Invoicing service.
 
 ## Indicator: Usage by environment
 
@@ -109,7 +109,7 @@ This indicator shows the usage of electronic invoicing service environments duri
 
 - Calculation:
     
-    Used = The count of how many times each electronic invoicing service environment was used during submissions of business documents to the Electronic Invoicing service.
+    Used = The count of how many times each electronic invoicing service environment was used during the submission of business documents to the Electronic Invoicing service.
 
 ## Indicator: Usage per month (import)
 
@@ -126,9 +126,9 @@ This indicator shows the volume of importation of electronic invoices by Electro
 ## Functions
 ### Purchase
 
-In the tab **Usage per month (export)**, click in **Purchase** to manually register the amount of acquired submissions.
+On the **Usage per month (export)** tab, select **Purchase** to manually register the amount of acquired submissions.
 
-For a given date, click **New** and type the number of **Packages** acquired for in that date.
+For a given date, select **New** and enter the number of **Packages** acquired for on that date.
 
 The **Quantity** is calculated as:
 
@@ -138,11 +138,11 @@ The calculated **Quantity** reflects in the **Purchased** from the indicator **U
 
 ### Update
 
-In the top horizontal menu, click in **Update** to refresh calculation and the data displayed in the form and in the chart.
+On the Action Pane, select **Update** to refresh the calculation and update the data shown on the page and in the chart.
 
 ### Reset history data
 
-In the top horizontal menu, click in **Reset history data** to refresh the database from where the indicators are calculated.
+On the Action Pane, select **Reset history data** to refresh the database from where the indicators are calculated.
 
 
 
