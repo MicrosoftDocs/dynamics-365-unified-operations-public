@@ -4,7 +4,7 @@
 title: Hardware sizing requirements for on-premises environments
 description: This topic lists the hardware sizing requirements for an on-premises environment.
 author: sericks007
-ms.date: 11/27/2019
+ms.date: 06/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -138,7 +138,7 @@ In most cases, unless used extensively, the recommended minimum requirements usi
 
 For the general availability release, only one SSRS node can be deployed. Monitor your SSRS node while testing and increase the number of cores available for SSRS on a need basis. Make sure that you have a preconfigured secondary node available on a virtual host that is different than the SSRS VM. This is important if there is an issue with the virtual machine that hosts SSRS or the virtual host. If this the case, they would need to be replaced.
 
-Starting with the 10.0.17 release it is possible to configure additional SSRS nodes to achieve High Availability. For more information on how to set this up see: [Configure high availability for SQL Server Reporting Services (SSRS) nodes](../../dev-itpro/deployment/onprem-ssrsha.md)
+Starting with version 10.0.17, it is possible to configure additional SSRS nodes to achieve high availability. For more information, see [Configure high availability for SQL Server Reporting Services (SSRS) nodes](../../dev-itpro/deployment/onprem-ssrsha.md).
 
 ## Environment Orchestrator
 
