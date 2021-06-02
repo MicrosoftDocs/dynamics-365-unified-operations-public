@@ -29,9 +29,10 @@ When you have entered your demand and/or supply, you can run forecast planning t
 
 ## View and enter forecast lines manually
 
-Use this procedure to create new forecast lines for products manually. 
+Use this procedure to create new forecast lines for products manually.
 
 There are also other ways to create new forecast lines:
+
 1. [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md).
 1. [Import historical data for demand forecasts](import-historical-data.md).
 1. [Generate the forecast using a Azure Machine Learning web service](demand-forecasting-setup.md).
@@ -76,7 +77,7 @@ The following table describes each of the commands available in the Action Pane 
 | **New** | Add a new forecast line to the top grid. |
 | **Delete** | Remove the selected forecast line from the top grid. |
 | **Forecast balances** | View forecast balances calculated for the selected line's model ID for the current fiscal year split by periods (months). |
-| **Cash flow forecasts** | View forecast transactions allocated to the general ledger. See also [Cash flow forecasting](..\finance\cash-bank-management\cash-flow-forecasting.md). |
+| **Cash flow forecasts** | View forecast transactions allocated to the general ledger. See also [Cash flow forecasting](../../finance/cash-bank-management/cash-flow-forecasting.md) |
 | **Inventory \> Display dimensions** | Choose which inventory dimensions to include in the **Overview** grid. |
 
 ### The Overview tab toolbar for the Supply forecast page
@@ -131,7 +132,7 @@ The **General** tab shows more information about the line currently selected on 
 
 ### The Item tab of the Supply forecast page
 
-The **Item** tab shows more item information for the line currently selected on the **Overview** tab. 
+The **Item** tab shows more item information for the line currently selected on the **Overview** tab.
 
 The grid at the top of the **Item** tab repeats item information also shown on the  **Overview** tab. In addition, it shows the **Unit price**, which is the purchase price per number of units specified in the **Unit** field. The unit prices is retrieved automatically from the item, but you can modify it.
 
@@ -179,7 +180,7 @@ The following table describes each of the commands available in the Action Pane 
 | **New** | Add a new forecast line to the top grid. |
 | **Delete** | Remove the selected forecast line from the top grid. |
 | **Forecast balances** | View forecast balances calculated for the selected line's model ID for the current fiscal year split by periods (months). |
-| **Cash flow forecast** | View forecast transactions to be allocated to the general ledger. See also [Cash flow forecasting](..\finance\cash-bank-management\cash-flow-forecasting.md). |
+| **Cash flow forecast** | View forecast transactions to be allocated to the general ledger. See also [Cash flow forecasting](../../finance/cash-bank-management/cash-flow-forecasting.md). |
 | **Display dimensions** | Choose which product, storage, and tracking dimensions to show in the **Overview** grid. |
 | **General ledger preview** | View the general ledger entries for the selected transaction. |
 | **Transfer quotation lines** | Transfer quotation lines to the selected project. |
@@ -229,13 +230,13 @@ The **General** tab shows more information about the line currently selected on 
 | **Report** | Set this to *Yes* to include the transaction in reporting. |
 | **Comments** | Enter any comments that pertain to the forecast transaction. |
 | **Active** | Select the check box to include the transaction in budget reporting. This field cannot be modified for reporting transactions. |
-| **Include in cash flow forecasts** | Select the check box to allocate the forecast transaction to the general ledger. This field cannot be modified for reporting transactions. See also [Cash flow forecasting](..\finance\cash-bank-management\cash-flow-forecasting.md). |
+| **Include in cash flow forecasts** | Select the check box to allocate the forecast transaction to the general ledger. This field cannot be modified for reporting transactions. See also [Cash flow forecasting](../../finance/cash-bank-management/cash-flow-forecasting.md). |
 | **Sales tax group** | The tax group that is used to specify tax for the forecast transaction. |
 | **Item sales tax group** | The item tax group that is used to specify tax for the forecast transaction. |
 | **Method** | The method of allocating the forecast transaction. Select one of the following options:<ul><li>**None** – No allocation takes place.</li><li>**Period** – Use this method to forecast the same quantity per period. When you select this option, you use it along with the **Per** field where you specify a quantity, and the  **Unit**  field, where you select the unit of time.</li><li>**Key** – The forecast is allocated according to the period allocation key that you specify in the  **Period key**  field. You can use this method when you want to take seasonal variation into account.</li><ul>|
 | **Per** | Enter the number of time intervals that the forecast extends into the future. This field is enabled when you select  **Period**  in the  **Method**  field. For example, if you select **Period** in the **Method** field, enter 1 in the  **Per**  field, and select **Months** in the **Unit** field, while specifying an ending date in the  **End** field that extends one year into the future, the program will create one forecast line for each month of the coming year, based on the item and quantity stated in the header line. |
 | **Unit** | The unit of time interval. Select one of the following options: **Days**, **Months**, **Years** - allocation corresponds to the number of days/months/years respectively that you specify in the  **Per**  field.|
-| **Period key** | The period allocation key for allocating the forecast. See also [Budget planning data allocation](..\finance\budgeting\budget-planning-data-allocation.md). |
+| **Period key** | The period allocation key for allocating the forecast. See also [Budget planning data allocation](../../finance/budgeting/budget-planning-data-allocation.md). |
 | **End** | The ending date when you use the  **Per**  and  **Unit**  fields. |
 
 ### The Item tab of the Demand forecast page
@@ -277,11 +278,11 @@ The **Project** tab shows more project information for the line currently select
 
 ### The Financial dimensions tab of the Demand forecast page
 
-The **Financial dimensions** tab shows the complete financial dimension values for the line currently selected on the **Overview** tab. 
+The **Financial dimensions** tab shows the complete financial dimension values for the line currently selected on the **Overview** tab.
 
 ### The Inventory dimensions tab of the Demand forecast page
 
-The **Inventory dimensions** tab shows the complete inventory dimension values for the line currently selected on the **Overview** tab. 
+The **Inventory dimensions** tab shows the complete inventory dimension values for the line currently selected on the **Overview** tab.
 
 ### The Allocation grid of the Demand forecast page
 
@@ -328,21 +329,21 @@ Use this procedure to process existing forecast transaction lines. You can copy,
 
 1. While on the supply or demand forecast lines page, select **Bulk update** to open this dialog.
 1. Select the **Filter** button.
-1. On the **Range** tab, select the criteria that identify the source forecast data that you want to copy, edit, or delete. This could include the forecast model, item number, and customer account. 
-1. Confirm by **OK**. 
+1. On the **Range** tab, select the criteria that identify the source forecast data that you want to copy, edit, or delete. This could include the forecast model, item number, and customer account.
+1. Select **OK** to confirm.
 1. When this data is selected, you can define how to copy, edit, or delete it by using the **Edit forecast transactions** dialog.
     > [!NOTE]
     > This step is a prerequisite to using the **Bulk edit** functionality. Without this filtering step, the program selects all forecast lines and updates them. This could result in the unintended duplication or removal of transactions.
 1. In the **Management** field group, select whether to copy, update, or delete the selected forecast transactions.
 1. Use the **Modifications in field** field group to change the parameters of the forecast. Select the check box of the respective parameter, and then select from the available options. For example, select the **Model** check box and then select a forecast model number. Existing forecast lines are copied to the selected forecast model.
-1. Use the **Change of period** field group to move the forecast start and end dates forward or backward. Select the check box and use the quantity and period fields to define the time period for moving the forecast dates. You can also enter a negative quantity to move the starting date forward. For example, select the check box, enter 6, and select *Months* to delay the forecast transaction starting date by 6 months.
-1. Use the **Correct field** field group to update the actual forecast data. In the **Field** field, select the criterion that you want to change. In the **Factor** field, enter a multiplication factor to apply to the criterion that you select, or enter an addition or subtraction constant. For example, select *Quantity*, and enter a factor of 1.5 to multiply the item quantity by 1.5. Enter a constant of -25 to decrease the item quantity by 25 units.
+1. Use the **Change of period** field group to move the forecast start and end dates forward or backward. Select the check box and use the quantity and period fields to define the time period for moving the forecast dates. You can also enter a negative quantity to move the starting date forward. For example, select the check box, enter *6*, and select *Months* to delay the forecast transaction starting date by 6 months.
+1. Use the **Correct field** field group to update the actual forecast data. In the **Field** field, select the criterion that you want to change. In the **Factor** field, enter a multiplication factor to apply to the criterion that you select, or enter an addition or subtraction constant. For example, select *Quantity*, and enter a factor of *1.5* to multiply the item quantity by 1.5. Enter a constant of *-25* to decrease the item quantity by 25 units.
 1. Use the **Financial dimensions** field group to update the financial dimensions of forecast lines. Select the financial dimension(s) that you want to change, enter a value to apply to the dimension(s) that you select.
 1. Select **OK** to apply the changes.
 
 ## Run forecast planning
 
-When you have entered your demand and/or supply forecast, you can run forecast planning to calculate gross requirements for materials and capacity and to generate planned orders. 
+When you have entered your demand and/or supply forecast, you can run forecast planning to calculate gross requirements for materials and capacity and to generate planned orders.
 
 1. Go to **Master planning \> Forecasting \> Forecast planning**.
 1. Select a **Forecast plan**.
@@ -355,7 +356,7 @@ When you have entered your demand and/or supply forecast, you can run forecast p
 
 To view the requirements that are calculated, open the **Gross requirement** page. You can use the **Released products** page. On the **Plan** tab, in the **Requirements** group, select **Gross requirement**.
 
-To view the planned orders that are generated, use the Planned orders form. Click Master planning > Common > Planned orders. Select the appropriate forecast plan.
+To view the planned orders that are generated, go to **Master planning > Common > Planned orders** and select the appropriate forecast plan.
 
 ## Additional resources
 
