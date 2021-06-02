@@ -222,6 +222,8 @@
             href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
           - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
             href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Regulatory Configuration Service – Lifecycle Services storage deprecation
+            href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
         - name: Electronic Invoicing
           items: 
           - name: Electronic Invoicing overview
