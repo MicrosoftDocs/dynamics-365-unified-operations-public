@@ -72,7 +72,7 @@ The out-of-the-box payment connectors for Adyen and PayPal support the enhanced 
 
 > [!IMPORTANT]
 > - Only Adyen connector version **V002** will truly support enhanced SCA. Version **V001** will still work when the checkout is configured for enhanced SCA, but behind the scenes that version of the connector will still make two calls. 
-> - Version **V001** of the Adyen connector should no longer be used due to SCA requirements that went into effect in the EU on January 1, 2021. For information about configuring the Adyen connector to use version **V002**, see the [Set up a processor for new credit cards](adyen-connector?tabs=8-1-3#set-up-a-processor-for-new-credit-cards).
+> - Version **V001** of the Adyen connector should no longer be used due to SCA requirements that went into effect in the EU on January 1, 2021. For information about configuring the Adyen connector to use version **V002**, see the [Set up a processor for new credit cards](adyen-connector.md?tabs=8-1-3#set-up-a-processor-for-new-credit-cards).
 
 ## Enable enhanced payments in storefront checkout in Commerce site builder
 
@@ -87,13 +87,13 @@ To enable the enhanced payments feature in Commerce site builder, follow these s
 
 ## Additional resources
 
-[Payments FAQ](dev-itpro/payments-retail.md)
+[Payments FAQ](payments-retail.md)
 
-[Dynamics 365 Payment Connector for PayPal](paypal.md)
+[Dynamics 365 Payment Connector for PayPal](../paypal.md)
 
 [Dynamics 365 Payment Connector for Adyen](adyen-connector.md)
 
-[Adyen redirect](adyen_redirect.md)
+[Adyen redirect](../adyen_redirect.md)
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
