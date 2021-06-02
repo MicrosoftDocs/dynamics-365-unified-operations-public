@@ -38,9 +38,8 @@ This topic provides an overview of enhanced strong customer authentication (SCA)
 
 | Term | Description |
 |---|---|
-| SCA | Strong Customer Authentication refers to a capability that allows a purchaser's identity to be verified by their bank when an online purchase is attempted. This is typically perfomred via a redirect from the checkout to a page hosted by the cardholder's bank where their identity is verified. Once validated, the purchaser is directed back to the storefront where the order proceeds through checkout. |
-| Redirect | A web page used to verify that the person making the purchase is the cardholder associated with the card being used to make the purchase.
-| Card token | An alias that is used to refer to a real card number. Card tokens allow a reference to an actual card to be saved while avoiding the security issues associated with saving real card numbers. | 
+| SCA | Strong customer authentication allows a cardholder's identity to be verified by their bank when an online purchase is attempted. This is typically performed via a redirect from the storefront checkout flow to a page hosted by the cardholder's bank, where the cardholder's identity is verified. Once validated, the cardholder is directed back to the storefront checkout flow where the order proceeds through checkout. |
+| Card token | An alias that is used to refer to a real payment card number. Card tokens allow a reference to an actual payment card to be saved while avoiding the security issues associated with saving real payment card numbers. | 
 
 Traditionally, the storefront checkout process made two distinct calls to the payment processor. The first call was used to tokenize the card number entered in the payment processor's embedded HTML iframe element during checkout. During this first call, SCA was also enabled so that the cardholder could be authenticated with the card's issuing bank if needed. The second call used the card token obtained from the first call to request the actual authorization response. 
 
@@ -64,7 +63,7 @@ Once the payments flow is initiated, there is no step to review and submit the o
 
 The flow described above is also applicable to payment methods that redirect by default, such as PayPal. Once payment details have been provided to PayPal, the redirect back to the checkout page will initiate placement of the order. 
 
-With the traditional flow, after the payment details had been entered in the embedded iframe element there was a "Save and continue" button available that would add the tokenized payment to the checkout. In demonstration environments there may have also been a step to collect the customer's email, or have the customer agree to terms of use. With the new flow, the validation that was previously perfomed by the final "Save and continue" button is now performed by the "Place order" button, saving a click for the customer and eliminating a page load from the checkout flow. 
+With the traditional flow, after the payment details had been entered in the embedded iframe element there was a "Save and continue" button available that would add the tokenized payment to the checkout. In demonstration environments there may have also been a step to collect the customer's email, or have the customer agree to terms of use. With the new flow, the validation that was previously performed by the final "Save and continue" button is now performed by the "Place order" button, saving a click for the customer and eliminating a page load from the checkout flow. 
 
 ## Payment connector support
 
@@ -83,7 +82,7 @@ To enable the enhanced payments feature in Commerce site builder, follow these s
 3. Scroll down to **Cart and checkout**, select the **Enable single payment authorization checkout** check box.
 4. Select **Save and publish**. 
 
-![Enabling](media/rfac.png)
+!["Enable single payment authorization checkout" check box in Commerce site builder](media/rfac.png)
 
 ## Additional resources
 
