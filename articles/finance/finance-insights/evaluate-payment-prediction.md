@@ -4,7 +4,7 @@
 title: Evaluate the initial customer payment prediction model (preview)
 description: This topic describes the steps that you can take to understand the customer payment prediction model and evaluate its effectiveness. 
 author: ShivamPandey-msft
-ms.date: 05/28/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
