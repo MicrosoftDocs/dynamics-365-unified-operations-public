@@ -117,10 +117,10 @@ The app can also be extended to integrate with hardware devices, [sample extensi
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)] 
 
-## Known issues with the Microsoft Edge WebView2 Control:
+## Known issues with the Microsoft Edge WebView2 control
 
-+ During activation, when prompted for entering the AAD password with multiple options, please choose password the other options may not work.
-+ Tabbing inside the app by pressing the Tab key may not work, manually click it using Mouse.
-+ Using Mouse for drop down selection may not work, instead use keyboard to do the drop down selection.
++ During activation, when prompted for entering the AAD password with multiple options, choose password. The other options might not work.
++ Tabbing inside the app by pressing the Tab key may not work. Instead, click or select items.
++ Using the mouse for drop down selection might not work. Instead, use the keyboard to make a selection.
 
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
