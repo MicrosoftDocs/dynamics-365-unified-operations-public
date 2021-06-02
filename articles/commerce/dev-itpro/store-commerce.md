@@ -37,9 +37,17 @@ Store Commerce is a shell that renders CPOS, so you should also update CPOS to g
 
 ![Store Commerce](media/StoreCommerce.PNG)
 
-## Store Commerce is the future of MPOS
+## Store Commerce and MPOS parity
 
-When Store Commerce has full functional parity with MPOS, it will replace MPOS. Currently, Store Commerce doesn't support running offline (when there is no connectivity to Retail Server). For more information about the different POS apps and topology, see [Choose between Modern POS (MPOS) and Cloud POS](../mpos-or-cpos.md)
+The Store Commerce will have full functional parity with MPOS in the future, currently, Store Commerce doesn't support running offline (when there is no connectivity to Retail Server). For more information about the different POS apps and topology, see [Choose between Modern POS (MPOS) and Cloud POS](../mpos-or-cpos.md)
+
+The  extension code developed or ISV solution implemented for MPOS can be used in Store Commerce and major benefits of Store Commerce are:
+
++ Simplified ALM using Microsoft Store.
++ Better performance.
++ Easier POS and Extension upgrade.
++ Support for dedicated HWS.
++ Support for Offline (in the future roadmap).
 
 ## Choosing between Store Commerce and MPOS
 
@@ -62,7 +70,9 @@ UI rendering engine | Chromium engine to render the UI. | UWP app framework to r
 
 ### Prerequisite
 
++ Windows 10 or Windows Server 2019.
 + Microsoft Edge, because the app uses the Microsoft Edge WebView2 control.
++ D365 Commerce (Back office and CPOS).
 
 ### HQ Device Setup
 
@@ -106,3 +116,11 @@ Because the Store Commerce renders the CPOS, you follow the CPOS packaging and d
 The app can also be extended to integrate with hardware devices, [sample extension code added in GitHub to generate Store Commerce HWS extension package](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.28/src/PosSample). For more information, see [Integrate the POS with a new hardware device](hardware-device-extension.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)] 
+
+## Known issues with the Microsoft Edge WebView2 Control:
+
++ During activation, when prompted for entering the AAD password with multiple options, please choose password the other options may not work.
++ Tabbing inside the app by pressing the Tab key may not work, manually click it using Mouse.
++ Using Mouse for drop down selection may not work, instead use keyboard to do the drop down selection.
+
+
