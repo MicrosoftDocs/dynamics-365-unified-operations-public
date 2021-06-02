@@ -39,15 +39,15 @@ Store Commerce is a shell that renders CPOS, so you should also update CPOS to g
 
 ## Store Commerce and MPOS parity
 
-The Store Commerce will have full functional parity with MPOS in the future, currently, Store Commerce doesn't support running offline (when there is no connectivity to Retail Server). For more information about the different POS apps and topology, see [Choose between Modern POS (MPOS) and Cloud POS](../mpos-or-cpos.md)
+Store Commerce will have full functional parity with MPOS in the future. Currently, Store Commerce doesn't support running offline (when there is no connectivity to Retail Server). For more information about the different POS apps and topology, see [Choose between Modern POS (MPOS) and Cloud POS](../mpos-or-cpos.md)
 
-The  extension code developed or ISV solution implemented for MPOS can be used in Store Commerce and major benefits of Store Commerce are:
+Your extension code developed or ISV solution implemented for MPOS can be used in Store Commerce. Other benefits of Store Commerce are:
 
 + Simplified ALM using Microsoft Store.
 + Better performance.
-+ Easier POS and Extension upgrade.
-+ Support for dedicated HWS.
-+ Support for Offline (in the future roadmap).
++ Easier POS and extension upgrades.
++ Support for dedicated hardware station (HWS).
++ Support for offline, in the future.
 
 ## Choosing between Store Commerce and MPOS
 
@@ -72,7 +72,7 @@ UI rendering engine | Chromium engine to render the UI. | UWP app framework to r
 
 + Windows 10 or Windows Server 2019.
 + Microsoft Edge, because the app uses the Microsoft Edge WebView2 control.
-+ D365 Commerce (Back office and CPOS).
++ Dynamics 365 Commerce (Back office and CPOS).
 
 ### HQ Device Setup
 
