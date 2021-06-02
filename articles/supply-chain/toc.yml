@@ -232,6 +232,8 @@
             href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
           - name: Create an Azure storage account and a Key Vault
             href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Usage management dashboard
+            href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
           - name: Get started 
             items:
             - name: Get started with Electronic Invoicing service administration
