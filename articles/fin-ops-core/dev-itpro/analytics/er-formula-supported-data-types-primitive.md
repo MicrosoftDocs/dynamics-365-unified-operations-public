@@ -232,6 +232,6 @@ The default value for a *string* is a blank text string having no characters, an
 
 [Electronic Reporting overview](general-electronic-reporting.md)
 
-[Electronic reporting formula language](er-formula-languager.md)
+[Electronic reporting formula language](er-formula-language.md)
 
 [Supported composite data types](er-formula-supported-data-types-composite.md)
