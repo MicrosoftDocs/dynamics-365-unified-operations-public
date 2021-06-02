@@ -95,7 +95,7 @@ If an expression includes multiple consecutive operators that have the same prec
 
 ## <a name="References">References</a>
 
-All data sources of the current ER component that are available during the design of an expression can be used as named references. The current ER component can be either a model mapping or a format. For example, the current ER model mapping contains the **ReportingDate** data source, which returns a value of the *DateTime* data type. To correctly format that value in the generating document, you can reference the data source in the expression as `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
+All data sources of the current ER component that are available during the design of an expression can be used as named references. The current ER component can be either a model mapping or a format. For example, the current ER model mapping contains the **ReportingDate** data source, which returns a value of the [*DateTime*](er-formula-supported-data-types-primitive.md#datetime) data type. To correctly format that value in the generating document, you can reference the data source in the expression as `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
 
 All characters in the name of a referencing data source that don't represent a letter of the alphabet must be preceded by a single quotation mark ('). If the name of a referencing data source contains at least one symbol that doesn't represent a letter of the alphabet, the name must be enclosed in single quotation marks. For example, these non-alphabetic symbols can be punctuation marks or other written symbols. Here are some examples:
 
@@ -104,7 +104,8 @@ All characters in the name of a referencing data source that don't represent a l
 
 If the methods of application data sources have parameters, the following syntax is used to call those methods:
 
-- If the **isLanguageRTL** method of the **System** data source has an **EN-US** parameter of the *String* data type, this method must be referred to in an ER expression as `System.isLanguageRTL("EN-US")`.
+- If the **isLanguageRTL** method of the **System** data source has an **EN-US** parameter of the [*String*](er-formula-supported-data-types-primitive.md#string
+) data type, this method must be referred to in an ER expression as `System.isLanguageRTL("EN-US")`.
 - Quotation marks aren't required when a method name contains only alphanumeric symbols. However, they are required for a method of a table if the name includes brackets.
 
 When the **System** data source is added to an ER mapping that refers to the **Global** application class, the expression `System.isLanguageRTL("EN-US ")` returns the *Boolean* value **FALSE**. The modified expression `System.isLanguageRTL("AR")` returns the *Boolean* value **TRUE**.
@@ -112,7 +113,7 @@ When the **System** data source is added to an ER mapping that refers to the **G
 You can limit the way that values are passed to the parameters of this type of method:
 
 - Only constants can be passed to methods of this type. The values of the constants are defined at design time.
-- Only primitive (basic) data types are supported for parameters of this type. The primitive data types include *Integer*, *Real*, *Boolean*, and *String*.
+- Only [primitive](er-formula-supported-data-types-primitive.md) (basic) data types are supported for parameters of this type. The primitive data types include *Integer*, *Real*, *Boolean*, and *String*.
 
 ## <a name="Paths">Paths</a>
 
@@ -177,6 +178,10 @@ IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 
 [Extend the list of Electronic reporting functions](general-electronic-reporting-formulas-list-extension.md)
+
+[Supported primitive data types](er-formula-supported-data-types-primitive.md)
+
+[Supported composite data types](er-formula-supported-data-types-composite.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
