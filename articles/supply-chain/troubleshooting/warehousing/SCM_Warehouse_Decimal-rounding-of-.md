@@ -31,7 +31,7 @@ ms.author: v-gfedorova@microsoft.com
 
 Error code: SYS19589
 
-The system displays the followign error message:
+The system displays the following error message:
 	SYS19589
 
 As part of the packing slip generation, the outbound load contain quantity that doesn't match to the decimal precision defined in the unit.
