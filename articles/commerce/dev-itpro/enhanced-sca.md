@@ -83,7 +83,7 @@ To enable the enhanced payments feature in Commerce site builder, follow these s
 3. Scroll down to **Cart and checkout**, select the **Enable single payment authorization checkout** check box.
 4. Select **Save and publish**. 
 
-![Enabling](../devitpro/media/rfac.png)
+![Enabling](media/rfac.png)
 
 ## Additional resources
 
