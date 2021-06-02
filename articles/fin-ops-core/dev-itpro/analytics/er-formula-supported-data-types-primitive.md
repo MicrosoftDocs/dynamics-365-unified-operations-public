@@ -2,9 +2,9 @@
 # required metadata
 
 title: Supported primitive data types for Electronic reporting formulas
-description: This topic provides information about primitive data types that asre supported in Electronic reporting (ER) formulas.
+description: This topic provides information about primitive data types that are supported in Electronic reporting (ER) formulas.
 author: NickSelin
-ms.date: 05/26/2021
+ms.date: 06/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,23 +30,31 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes primitive data types that are supported in [Electronic reporting (ER)](general-electronic-reporting.md) expressions. The primitive data types are [boolean](#boolean), [date](#date), [datetime](#datetime), [enum](#enumeration), [guid](#guid), [integer](#integer), [int64](#int64), [real](#real), [string](#string).
+This topic describes the primitive data types that are supported in [Electronic reporting (ER)](general-electronic-reporting.md) expressions. The primitive data types are:
+
+   - [boolean](#boolean)
+   - [date](#date)
+   - [datetime](#datetime)
+   - [enum](#enumeration)
+   - [guid](#guid), [integer](#integer)
+   - [int64](#int64), [real](#real)
+   - [string](#string).
 
 ## <a name="boolean"></a>Boolean
 
-The *boolean* primitive data type contains a value that is evaluated as either *true* or *false*. You can use the reserved literal keywords **True** and **False** wherever a *boolean* expression is expected. The default value is **false**.
+The *boolean* primitive data type contains a value that is evaluated as *true* or *false*. You can use the reserved literal keywords **True** and **False** wherever a *boolean* expression is expected. The default value is **false**.
 
-The internal representation of a *boolean* is an *integer*. The integer value 0 (zero) is evaluated as *false*, and all other *integer* values are evaluated as *true*. So, when you [validate](general-electronic-reporting-formula-designer.md#TestFormula) in the ER [formula designer](er-advanced-formula-editor.md) a configured expression that returns a *boolean*, the test result panel presents 0 (zero) when an expression returns *false* and 1 (one) otherwise.
+The internal representation of a *boolean* is an *integer*. The integer value 0 (zero) is evaluated as *false*, and all other *integer* values are evaluated as *true*. When you [validate](general-electronic-reporting-formula-designer.md#TestFormula) a configured expression that returns a *boolean* in the ER [formula designer](er-advanced-formula-editor.md), the test result panel presents 0 (zero) when an expression returns *false*. Otherwise, the expression returns 1 (one).
 
-A *boolean* has no implicit conversions, however, you can use the [TEXT](er-functions-text-text.md) function to explicitly converts a *boolean* to a *string*:
+A *boolean* has no implicit conversions. However, you can use the [TEXT](er-functions-text-text.md) function to explicitly converts a *boolean* to a *string*:
 
-- the *false* value is converted to the text string **False**
-- the *true* value is converted to the text string **True**
+- The *false* value is converted to the text string **False**.
+- The *true* value is converted to the text string **True**.
 
 >[!NOTE]
-> This conversion does not depend on the provided language and culture [context](er-design-multilingual-reports.md).
+> This conversion doesn't depend on the provided language and culture [context](er-design-multilingual-reports.md).
 
-Comparison [operators](er-formula-language.md#operators) are the only type of operators that can be used with the *boolean* data type. The following operators can be used to compare two *boolean* values: <> and  =.
+Comparison [operators](er-formula-language.md#operators) are the only operator type that can be used with the *boolean* data type. The following operators can be used to compare two *boolean* values: <> and  =.
 
 ## <a name="date"></a>Date
 
@@ -59,13 +67,13 @@ The *date* primitive data type contains the day, month, and year. Dates can be i
 
 The *date* data type can hold dates between January 1, 1900, and December 31, 2154. The default value is **null**, and the internal representation is the January 1, 1900 date.
 
-A *date* has no implicit conversions, however, you can use the following explicit conversion functions:
+A *date* has no implicit conversions. However, you can use the following explicit conversion functions:
 
 - [DATEFORMAT](er-functions-datetime-dateformat.md)
 - [DATETODATETIME](er-functions-datetime-datetodatetime.md)
 - [TEXT](er-functions-text-text.md)
 
-Using the [ADDDAYS](er-functions-datetime-adddays.md) function, you can add and subtract days from dates, which moves the date some days into the future and past respectively. The [DAYS](er-functions-datetime-days.md) function allows you to subtract dates from each other and calculate the difference in days. For more about transformation of *date* values, see [List of ER functions in the Date and time category](er-functions-category-datetime.md).
+Using the [ADDDAYS](er-functions-datetime-adddays.md) function, you can add and subtract days from dates, which moves the date some days into the future and past respectively. The [DAYS](er-functions-datetime-days.md) function allows you to subtract dates from each other and calculate the difference in days. For more information about transformation of *date* values, see [List of ER functions in the Date and time category](er-functions-category-datetime.md).
 
 Comparison [operators](er-formula-language.md#operators) are the only type of operators that can be used with the *date* data type. The following operators can be used to compare two *date* values: <>, <, <=, =, >, and >=.
 
@@ -73,12 +81,12 @@ Comparison [operators](er-formula-language.md#operators) are the only type of op
 
 The *datetime* primitive data type combines the *date* type and a value that represents the time in hours, minutes, seconds, and fractions of second that have passed since midnight. A *datetime* value also holds information about the time zone.
 
-The *datetime* data type can hold dates between January 1, 1900 (1900-01-01T00:00:00.0000000+00:00 in the round-trip [format](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)) and December 31, 2154 (2154/12/31T11:59:59.9999999+00:00 in the round-trip format). The smallest unit of time in *datetime* is one of ten millionths of a second.
+The *datetime* data type can hold dates between January 1, 1900 (1900-01-01T00:00:00.0000000+00:00 in the round-trip [format](/dotnet/standard/base-types/standard-date-and-time-format-strings))and December 31, 2154 (2154/12/31T11:59:59.9999999+00:00 in the round-trip format). The smallest unit of time in *datetime* is one of ten millionths of a second.
 
 > [!NOTE]
-> Time values above 12:59:59:9999999 cannot be interpreted as a valid time when the **hh** [specifier](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings) is used for hours.
+> Time values above 12:59:59:9999999 can't be interpreted as a valid time when the **hh** [specifier](/dotnet/standard/base-types/standard-date-and-time-format-strings) is used for hours.
 >
-> Time values above 23:59:59:9999999 cannot be interpreted as a valid time when the **HH** specifier is used for hours.
+> Time values above 23:59:59:9999999 can't be interpreted as a valid time when the **HH** specifier is used for hours.
 
 The default value is **null**, and the internal representation is the January 1, 1900 (1900-01-01T00:00:00.0000000+00:00 in the round-trip format).
 
@@ -89,18 +97,18 @@ Datetimes can be initiated by using the following functions:
 -   [SESSIONNOW](er-functions-datetime-sessionnow.md)
 -   [NOW](er-functions-datetime-now.md)
 
-A *datetime* has no implicit conversions, however, you can use the following explicit conversion functions:
+A *datetime* has no implicit conversions. However, you can use the following explicit conversion functions:
 
 -   [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md)
 -   [TEXT](er-functions-text-text.md)
 
-For more about transformation of *datetime* values, see [List of ER functions in the Date and time category](er-functions-category-datetime.md).
+For more information about the transformation of *datetime* values, see [List of ER functions in the Date and time category](er-functions-category-datetime.md).
 
 Comparison [operators](er-formula-language.md#operators) are the only type of operators that can be used with the *datetime* data type. The following operators can be used to compare two *datetime* values: <>, <, <=, =, >, and >=.
 
 ## <a name="enumeration"></a>Enumeration
 
-The *enumeration* primitive data type is a list of literals. You can use enumerations that are defined in application [source code](../dev-ref/xpp-data-primitive.md#enum). You can introduce your own enumerations in ER [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) and ER [format](general-electronic-reporting.md#FormatComponentOutbound) components.
+The *enumeration* primitive data type is a list of literals. You can use enumerations that are defined in the application [source code](../dev-ref/xpp-data-primitive.md#enum). You can introduce your own enumerations in the ER [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) and ER [format](general-electronic-reporting.md#FormatComponentOutbound) components.
 
 An application *enumeration* can be used in expressions of any ER model mapping and ER format. 
 
@@ -110,42 +118,42 @@ A model *enumeration* can be used in expressions of any ER model mapping and ER 
 
 [![Configuring a format enumeration in ER format designer](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
 
-A format *enumeration* can be used in expressions of the only ER format in which this *enumeration* was introduced.
+A format *enumeration* can be used only in expressions of the ER format in which this *enumeration* was introduced.
 
-You must use the appropriate type of ER data sources to bring a desire enumeration to a configured ER component either as a constant or as a value that is defined at runtime on dialog box by user running an ER solution.
+You must use the appropriate type of ER data sources to bring a specific enumeration to a configured ER component as a constant or as a value that is defined at runtime on dialog box by the user running an ER solution.
 
--   Application enumeration
+   - Application enumeration
 
-    [![Adding application enumeration data sources in ER format designer](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
+   [![Adding application enumeration data sources in ER format designer](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
 
--   Data model enumeration
+   - Data model enumeration
 
-    [![Adding model enumeration data sources in ER format designer](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
+   [![Adding model enumeration data sources in ER format designer](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
 
--   Format enumeration
+   - Format enumeration
 
-    [![Adding format enumeration data sources in ER format designer](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
+   [![Adding format enumeration data sources in ER format designer](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
 
-An *enumeration* has no implicit conversions, however, you can use the [TEXT](er-functions-text-text.md) conversion function to convert *enumeration* to the text string. This conversion is no language dependent. See also examples of using [LISTOFFIELDS](er-functions-list-listoffields.md) and [GETENUMVALUEBYNAME](er-functions-text-getenumvaluebyname.md) functions to learn how you can associate an *enumeration* value with the appropriate language specific labels.
+An *enumeration* has no implicit conversions. However, you can use the [TEXT](er-functions-text-text.md) conversion function to convert *enumeration* to the text string. This conversion isn't language dependent. To learn more about how you can associate an *enumeration* value with the appropriate language specific labels, see examples of using [LISTOFFIELDS](er-functions-list-listoffields.md) and [GETENUMVALUEBYNAME](er-functions-text-getenumvaluebyname.md) functions.
 
-Comparison [operators](er-formula-language.md#operators) are the only type of operators that can be used with the *enumeration* data type. The following operators can be used to compare two *enumeration* values: <> and  =.
+Comparison [operators](er-formula-language.md#operators) are the only type of operators that can be used with the *enumeration* data type. The following operators can be used to compare two *enumeration* values: <> and =.
 
 ## <a name="guid"></a>Guid
 
-The *guid* primitive data type holds a globally unique identifier (GUID) value. A GUID is a value that can be used across all computers and networks, wherever a unique identifier is required. It is unlikely that the number will be duplicated. A valid GUID meets all the following specifications:
+The *guid* primitive data type holds a globally unique identifier (GUID) value. A GUID is a value that can be used across all computers and networks, wherever a unique identifier is required. It's unlikely that the number will be duplicated. A valid GUID meets all the following specifications:
 
--   It must have 32 hexadecimal digits.
--   It must have four dash characters that are embedded at the following locations: 8-4-4-4-12.
--   Braces {} at the beginning and end of a string are optional. For example, both **{2CDB0FE7-D7B3-4938-A0F0-FE28FB8FE212}**  and **2CDB0FE7-D7B3-4938-A0F0-FE28FB8FE212** are valid GUID strings.
--   It must have a total of either 36 or 38 characters, depending on whether braces are added.
--   The hexadecimal digits a–f (or A–F) can be uppercase, lowercase, or mixed.
+   - There must be 32 hexadecimal digits.
+   - There must be four dash characters that are embedded at the following locations: 8-4-4-4-12.
+   - Braces {} at the beginning and end of a string are optional. For example, both **{2CDB0FE7-D7B3-4938-A0F0-FE28FB8FE212}**  and **2CDB0FE7-D7B3-4938-A0F0-FE28FB8FE212** are valid GUID strings.
+   - There must be a total of 36 or 38 characters, depending on whether braces are added.
+   - The hexadecimal digits a–f (or A–F) can be uppercase, lowercase, or mixed.
 
 The following explicit conversion functions can be used: 
 
 -   [GUIDVALUE](er-functions-text-guidvalue.md) 
 -   [TEXT](er-functions-text-text.md)
 
-Comparison [operators](er-formula-language.md#operators) are the only type of operators that can be used with the *guid* data type. The following operators can be used to compare two *guid* values: <> and  =.
+Comparison [operators](er-formula-language.md#operators) are the only type of operators that can be used with the *guid* data type. The following operators can be used to compare two *guid* values: <> and =.
 
 ## <a name="integer"></a>Integer
 
@@ -165,9 +173,9 @@ All comparison and mathematical [operators](er-formula-language.md#operators) ca
 
 ## <a name="int64"></a>Int64
 
-The *int64* primitive data type represents a number that have no decimal places. Int64 values are used as control variables in repetitive statements or as record identifiers.
+The *int64* primitive data type represents a number that has no decimal places. Int64 values are used as control variables in repetitive statements or as record identifiers.
 
-An *int64* is 64-bits wide. The default value is **0**, and the internal representation is a long number. An *int64* is automatically converted to *real*.
+An *int64* is 64-bits wide, the default value is **0**, and the internal representation is a long number. An *int64* is automatically converted to *real*.
 
 Additionally, the following explicit conversion functions can be used:
 
@@ -181,14 +189,14 @@ All comparison and mathematical [operators](er-formula-language.md#operators) ca
 
 ## <a name="real"></a>Real
 
-The *real* primitive data type can hold decimal values in addition to integers. You can use decimal literals anywhere that a *real* is expected. A decimal literal is the decimal as it is entered directly in the code, such as **2.19**. 
+The *real* primitive data type can hold decimal values in addition to integers. You can use decimal literals anywhere that a *real* is expected. A decimal literal is the decimal as it's entered directly in the code, such as **2.19**. 
 
 > [!NOTE]
-> The dot character is always used in ER expression to separate decimals.
+> The dot character is always used in ER expressions to separate decimals.
 
 Reals can be used in all expressions, and they can be used with both comparison and arithmetic operators. A real has a precision of 16 significant digits. The default value for a *real* is **0.0**, and the internal representation is a binary-coded digital (BCD) number. The BCD encoding enables exact representations of values that are multiples of 0.1. The range of a *real* variable is -(10)¹²⁷ through (10)¹²⁷. All reals in this range can be used as literals in ER expressions.
 
-A *real* has no implicit conversions, however, you can use the following functions to explicitly converts a *real* to other data types and other data types to *real*:
+A *real* has no implicit conversions. However, you can use the following functions to explicitly converts a *real* to other data types and other data types to *real*:
 
 -   [INTVALUE](er-functions-conversion-intvalue.md)
 -   [INT64VALUE](er-functions-conversion-int64value.md)
@@ -200,14 +208,14 @@ All comparison and mathematical [operators](er-formula-language.md#operators) ca
 
 ## <a name="string"></a>String
 
-The *string* primitive data type represents a sequence of characters that are used as texts, account numbers, addresses, telephone numbers, and so on.
+The *string* primitive data type represents a sequence of characters that are used as texts, account numbers, addresses, and telephone numbers.
 
 *String* literals are characters that are enclosed in quotation marks (""). *String* literals can be used wherever *string* values are expected in ER expressions. You can use strings in logical expressions, such as comparisons. You can also *concatenate* string values by using the **\&** operator or the [CONCATENATE](er-functions-text-concatenate.md) function.
 
 > [!NOTE]
 > If you concatenate two *string* values and want the resulting *string* to span more than one line, use the line break separator between them. For the TEXT output it can be a character that is generated by using the [CHAR](er-functions-text-char.md)(10) or CHAR(13) expression. For the HTML it can be the **\<br\>** tag.
 
-The default value for a *string* is a blank text string having no characters, and the internal representation is a list of characters. There are no automatic conversions for strings, however, the following explicit conversion functions can be used:
+The default value for a *string* is a blank text string with no characters, and the internal representation is a list of characters. There are no automatic conversions for strings. However, the following explicit conversion functions can be used:
 
 -   [CHAR](er-functions-text-char.md)
 -   [FORMAT](er-functions-text-format.md)
@@ -222,7 +230,7 @@ The default value for a *string* is a blank text string having no characters, an
 -   [TRIM](er-functions-text-trim.md)
 -   [UPPER](er-functions-text-upper.md)
 
- For more about transformation of *string* values, see [List of ER functions of the text category](er-functions-category-text.md).
+ For more about the transformation of *string* values, see [List of ER functions of the text category](er-functions-category-text.md).
 
  A *string* can hold an indefinite number of characters.
 
@@ -230,8 +238,6 @@ The default value for a *string* is a blank text string having no characters, an
 
 ## Additional resources
 
-[Electronic Reporting overview](general-electronic-reporting.md)
-
-[Electronic reporting formula language](er-formula-language.md)
-
-[Supported composite data types](er-formula-supported-data-types-composite.md)
+- [Electronic Reporting overview](general-electronic-reporting.md)
+- [Electronic reporting formula language](er-formula-language.md)
+- [Supported composite data types](er-formula-supported-data-types-composite.md)
