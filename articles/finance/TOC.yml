@@ -72,6 +72,8 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.20 (July 2021)
+            href: get-started/whats-new-changed-10-0-20.md
           - name: Finance 10.0.19 (July 2021)
             href: get-started/whats-new-changed-10-0-19.md
           - name: Finance 10.0.18 (May 2021)
@@ -1474,6 +1476,8 @@
             href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/finance/toc.json
           - name: Create an Azure storage account and a Key Vault
             href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
+          - name: Usage management dashboard
+            href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
           - name: Get started 
             items:
             - name: Get started with Electronic Invoicing service administration
@@ -4153,7 +4157,7 @@
           items: 
           - name: Trace generated report results and compare them with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
-          - name: Improvements in tracing results of generated ER reports and comparisons with baseline values
+          - name: Improve tracing the results of generated ER reports to compare with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
           - name: Automate testing with ER
             href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json

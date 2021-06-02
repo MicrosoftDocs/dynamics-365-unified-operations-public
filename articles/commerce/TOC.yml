@@ -94,7 +94,9 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
-          - name: Commerce 10.0.19 (July 2021)
+          - name: Commerce 10.0.20 (July 2021)
+            href: get-started/whats-new-commerce-10-0-20.md
+          - name: Commerce 10.0.19 (June 2021)
             href: get-started/whats-new-commerce-10-0-19.md
           - name: Commerce 10.0.18 (May 2021)
             href: get-started/whats-new-commerce-10-0-18.md
@@ -556,6 +558,8 @@
           href: dev-itpro/manage-bing-maps.md
         - name: Create and update time slots for customer pickup
           href: dev-itpro/pickup-timeslots.md
+        - name: Configure product dimension values to appear as swatches
+          href: dev-itpro/dimensions-swatch.md
     - name: Merchandising your products and services  
       items:
       - name: Categories, products, and assortments 
@@ -766,10 +770,14 @@
           href: notifications-pos.md
         - name: Sell continuity programs and process sales orders
           href: tasks/use-continuity-program.md
-        - name: Enable customer check-in notifications in point of sale (POS)
+        - name: Enable customer check-in notifications in POS
           href: enable-customer-check-in.md
-      - name: Returns  
+      - name: Returns and refunds
         items:
+        - name: Create returns in POS
+          href: POS-returns.md
+        - name: Return serial number-controlled products in POS
+          href: POS-serial-returns.md
         - name: Linked refunds
           href: dev-itpro/linked-refunds.md
         - name: Sell and return products not included in a store's assortment
@@ -932,6 +940,8 @@
           href: web-activity-opt-out.md
         - name: Apply unit of measure settings
           href: unit-of-measure.md
+        - name: Apply display settings for product dimensions
+          href: dimension-settings.md
       - name: Manage your site content 
         items:
         - name: Ways to add content
@@ -1946,7 +1956,7 @@
           items: 
           - name: Trace generated report results and compare them with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commercetoc.json
-          - name: Improvements in tracing results of generated ER reports and comparisons with baseline values
+          - name: Improve tracing the results of generated ER reports to compare with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
           - name: Automate testing with ER
             href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
@@ -2262,6 +2272,8 @@
             href: e-commerce-extensibility/request-properties-object.md
           - name: App settings
             href: e-commerce-extensibility/app-settings.md
+          - name: Configure site builder global configuration settings based on enabled features
+            href: e-commerce-extensibility/config-settings-for-features.md
           - name: Platform settings file
             href: e-commerce-extensibility/platform-settings.md
           - name: Extend a module definition
@@ -2366,6 +2378,8 @@
           href: dev-itpro/UpcomingSDKChanges.md
         - name: Development and ALM changes from version 10.0.10 to 10.0.13
           href: dev-itpro/dev-changes-10-13.md
+        - name: Set up a build pipeline for the independent-packaging SDK
+          href: dev-itpro/build-pipeline.md
         - name: Merge the build systems for Commerce and Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
@@ -2382,7 +2396,7 @@
           href: dev-itpro/retail-sdk/sdk-github.md
         - name: Retail SDK FAQ
           href: dev-itpro/retail-sdk/sdk-faq.md
-      - name: Point of sale extensibility
+      - name: Point of sale (POS) extensibility
         items:
         - name: POS screen layouts
           href: pos-screen-layouts.md

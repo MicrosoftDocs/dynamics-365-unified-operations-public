@@ -972,7 +972,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <li>Block D (only for incoming fiscal documents): D001-D010-D100-D101-D105-D111-D500-D501-D505-D509</li>
 <li>Block F: F010-F100-F111-F120-F129-F130-F600-F700-F800-F990</li>
 <li>Block M: M001-M100-M105-M110-M115-M200-M205-M210-M220-M225-M400-M410-M500-M505-M510-M515-M600-M606-M610-M620-M625-M800-M810-M990</li>
-<li>Block 1: 1100-1010-1011-1300-1500-1700</li>
+<li>Block 1: 1100-1300-1500-1700</li>
 </ul>
 </td>
 <td>Yes</td>
@@ -1039,6 +1039,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <li>Block I: I001-I010-I030-I050-I051-I052-I100-I150-I155-I200-I250-I350-I355-I990</li>
 <li>Block J: J001-J005-J100-J150-J800-J801-J900-J930-J932-J935-J999</li>
 <li>Block 9: 9001-9900-9990-9999</li>
+<li>All available posting layers are included in the generation of SPED ECD file.</li>
 </ul>
 </td>
 <td>Yes</td>

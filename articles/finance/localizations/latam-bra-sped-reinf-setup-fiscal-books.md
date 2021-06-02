@@ -4,7 +4,7 @@
 title: Set up fiscal books
 description: This topic explains how to set up SPED-Reinf events by using Fiscal books in Microsoft Dynamics 365 Finance for Brazil.
 author: sndray
-ms.date: 04/27/2021
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -88,8 +88,11 @@ This setup is used to determine the agriculture acquisition type of incoming fis
 
 ## Set up Fiscal books parameters
 
-1. Go to **Fiscal books** \> **Setup** \> **Fiscal books parameters**.
-2. On the **Number sequences** tab, set up the number sequence for events R-2010 and R-2020.
+1. Go to **Fiscal books** > **Tax statements parameters** > **SPED Reinf** > **SPED Reinf parameters**.
+2. On the **General** tab, select **SPED Reinf version**.
+3. Select the environment type and the status of the fiscal organization.
+4. Go to **Fiscal books** > **Setup** > **Fiscal books parameters**.
+5. On the **Number sequences** tab, set up the number sequence for events R-2010, R-2020, and R-2055.
 
 ![Number sequences tab on the Fiscal books parameters page](media/bra-sped-fiscal-books-parameters.png)
 

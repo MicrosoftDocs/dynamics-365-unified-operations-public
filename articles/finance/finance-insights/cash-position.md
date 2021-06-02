@@ -36,8 +36,7 @@ Cash position is the projection of cash flow that is forecast for the near term.
 
 When the system predicts customer payments, it uses the payment predictions from the customer payment prediction feature. Without payment predictions, the average time that is required to convert a customer invoice to a payment for each customer is used to calculate a payment date. For open customer orders, the system calculates the invoice date by using the average number of days for order lines per customer to be invoiced. It then uses the invoice date as an input for the payment prediction functionality. The customer payment prediction functionality calculates a payment date for each order line. 
 
-<*Need text from Jarek or Dave on how payment predictions are converted to a date*> 
-The payment date for outstanding invoices is approximated [*estimated*] from the payment predictions by picking a date that corresponds to fiftieth percentile of the cumulative distribution function that's obtained from the predicted bucket's probabilities.
+The payment date for outstanding invoices is estimated from the payment predictions by picking a date that corresponds to fiftieth percentile of the cumulative distribution function that's obtained from the predicted bucket's probabilities.
 
 A similar approach is used to predict payments to vendors. For each vendor, the system calculates the average time that is required to convert a vendor invoice to a payment. That number of days is then used to calculate the payment date. For open vendor orders, the system calculates the invoice date by considering the average number of days that is required to convert order lines to an invoice for each vendor. The system then calculates the payment date by using the average time to convert a vendor invoice to a payment for each vendor.
 
@@ -51,5 +50,8 @@ The lower section of the **Cash position** tab shows details for the position, c
 - The **Bank account** grid shows the impact of expected cash inflows and outflows on the bank balance.
 
 To save and edit the cash position, create a snapshot. For more information about how to work with snapshots, see [Snapshots overview](payment-snapshots.md).
+
+#### Privacy notice
+Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
