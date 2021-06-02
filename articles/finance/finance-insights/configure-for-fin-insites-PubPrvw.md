@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Configuration for Finance Insights (preview) - versions 10.0.20 and later
-description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights for public preview in versions 10.0.20 and beyond.
+title: Configuration for Finance insights for public preview (preview) - versions 10.0.20 and later
+description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights for public preview in versions 10.0.20 and later.
 author: ShivamPandey-msft
-ms.date: 05/28/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,11 +22,11 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shpandey
-ms.search.validFrom: 2021-05-28
+ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
 
 ---
-# Configuration for Finance insights (preview)
+# Configuration for Finance insights for public preview (preview)
 
 [!include [banner](../includes/banner.md)]
 
@@ -204,12 +204,12 @@ If you can't find any of the preceding applications, try the following steps.
       3. Create the secret name and value from the following table.
       4. Select **Enabled**, and then select **Create**. The secret is created and added to Key Vault.
 
-        | Secret name                       | Secret value                                                                                |
-        |-----------------------------------|---------------------------------------------------------------------------------------------|
-        | app-id                            | The app ID of the application that you created earlier                                      |
-        | app-secret                        | The client secret that you saved earlier                                                    |
-        | storage-account-name              | The name of the storage account that you created earlier, such as **storageaccount1**       |
-        | storage-account-connection-string | The connection string that you copied from the **Access keys** page for the storage account |
+      | Secret name                       | Secret value                                                                                |
+      |-----------------------------------|---------------------------------------------------------------------------------------------|
+      | app-id                            | The app ID of the application that you created earlier                                      |
+      | app-secret                        | The client secret that you saved earlier                                                    |
+      | storage-account-name              | The name of the storage account that you created earlier, such as **storageaccount1**       |
+      | storage-account-connection-string | The connection string that you copied from the **Access keys** page for the storage account |
 
 5. Authorize the application to access the key vault:
 
@@ -224,10 +224,10 @@ If you can't find any of the preceding applications, try the following steps.
       5. Select **Add**.
       6. Select **Save**.
 
-        | Application                                              | Permissions |
-        |----------------------------------------------------------|-------------|
-        | The display name of the new application that you created | Get, List   |
-        | **Microsoft Dynamics ERP Microservices**                 | Get, List   |
+      | Application                                              | Permissions |
+      |----------------------------------------------------------|-------------|
+      | The display name of the new application that you created | Get, List   |
+      | **Microsoft Dynamics ERP Microservices**                 | Get, List   |
 
 6. Assign roles to access the storage account:
 
@@ -241,13 +241,13 @@ If you can't find any of the preceding applications, try the following steps.
       3. In the **Select** field, enter the application from the following table.
       4. Select **Save**.
 
-        | Application                                              | Role                        |
-        |----------------------------------------------------------|-----------------------------|
-        | The display name of the new application that you created | Owner                       |
-        | The display name of the new application that you created | Contributor                 |
-        | The display name of the new application that you created | Storage Account Contributor |
-        | The display name of the new application that you created | Storage Blob Data Owner     |
-        | **AI Builder Authorization Service**                     | Storage Blob Data Reader    |
+      | Application                                              | Role                        |
+      |----------------------------------------------------------|-----------------------------|
+      | The display name of the new application that you created | Owner                       |
+      | The display name of the new application that you created | Contributor                 |
+      | The display name of the new application that you created | Storage Account Contributor |
+      | The display name of the new application that you created | Storage Blob Data Owner     |
+      | **AI Builder Authorization Service**                     | Storage Blob Data Reader    |
 
 # [Azure CLI](#tab/azure-azure-cli)
 
