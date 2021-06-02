@@ -1,56 +1,47 @@
 ---
-# required metadata
 
 title: Decimal rounding of the physical updating quantity is incorrect.
 description: Decimal rounding of the physical updating quantity is incorrect.
-author: v-gfedorova@microsoft.com
-manager: tfehr
-ms.date: 5/31/2021 12:00:00 AM
+author: Henrikan
+ms.date: 5/31/2021
 ms.topic: troubleshooting
-ms.prod: 
 ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSLoadPlanningListPage,_WHSLoadTable
-# ROBOTS: 
+ms.search.form: WHSLoadPlanningListPage_WHSSalesPackingSlipPost, WHSLoadTable_WHSSalesPackingSlipPost
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: v-gfedorova@microsoft.com
-ms.assetid: 
+ms.custom: Henrikan 
 ms.search.region: Global
-ms.author: v-gfedorova@microsoft.com
+ms.author: Henrikan
 
 ---
 
-# Decimal rounding of the physical updating quantity is incorrect.
+# Decimal rounding of the physical updating quantity is incorrect
 
 Error code: SYS19589
 
-The system displays the following error message:
-	SYS19589
-
-As part of the packing slip generation, the outbound load contain quantity that doesn't match to the decimal precision defined in the unit.
+As part of the packing slip generation, the outbound load contains quantity that doesn't match to the decimal precision defined in the unit.
 
 ## Symptoms
+
 When you try to generate a packing slip, the system shows the following error message:
 
-Decimal rounding of the physical updating quantity in the unit %1 is incorrect.
+> Decimal rounding of the physical updating quantity in the unit %1 is incorrect.
 
 Therefore, you can't generate the packing slip for the load.
 
 ## Cause
-The system evaluates whether the decimal rounding of the shipping quantity corresponds to the decimal precision defined per shipping unit. If the system finds that the rounded shipping quantity to the specified number of decimal places defined in the unit doesn't match to the shipping unit, you can't generate the packing slip. For example, this issue might occur if sales quantity is 1,75kg, but decimal precision is set to 1.
+
+The system evaluates whether the decimal rounding of the shipping quantity corresponds to the decimal precision defined per shipping unit. If the system finds that the rounded shipping quantity to the specified number of decimal places defined in the unit that doesn't match to the shipping unit, you can't generate the packing slip. For example, this issue might occur if sales quantity is 1.75 kg, but decimal precision is set to 1.
 
 ## Resolution
+
 Load or shipment is currently in a state where packing slip generation fails. 
+
 To fix this issue, complete one of the following tasks:
-- Check your load lines to make adjustments that quantity can be cleanly converted without decimal numbers and any other rounding issues
-- Check your load lines to make sure that the unit and quantity are aligned with the decimal precision of the unit
+
+- Check your load lines to make adjustments that quantity can be cleanly converted without decimal numbers and any other rounding issues.
+- Check your load lines to make sure that the unit and quantity are aligned with the decimal precision of the unit.
 
 ### Check your load lines to make adjustments that quantity can be cleanly converted without decimal numbers and any other rounding issues
    
@@ -59,8 +50,8 @@ To fix this issue, complete one of the following tasks:
 1. On the Action Pane, open the **Ship and receive** tab and, from the **Reverse** group, select **Reverse shipment confirmation**. 
 1. Open the **Load lines** tab and select the load line for the item that exceeds the over delivery. 
 1. Select **Reduce picked quantity** button to adjust the picked quantity. 
-1. Open the **Line details** tab and, select **Order**  
-1. In the **Quantity** field set the value to the picked quantity (**Work created quantity**), allowing Packing slip generation to proceed.  
+1. Open the **Line details** tab and, select **Order**. 
+1. In the **Quantity** field, set the value to the picked quantity (**Work created quantity**), allowing Packing slip generation to proceed.  
 
 ### Check your load lines to make sure that the unit and quantity are aligned with the decimal precision of the unit
  
@@ -70,6 +61,3 @@ To fix this issue, complete one of the following tasks:
 1. Go to **Organization administration \> Units \> Units**.
 1. Select the unit that the packing slip can't be generated for.
 1. Adjust the value of the **Decimal precision** as required.
-
-
-

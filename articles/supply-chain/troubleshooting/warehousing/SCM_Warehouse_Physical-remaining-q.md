@@ -1,58 +1,50 @@
 ---
-# required metadata
 
 title: Physical remaining quantity in the unit must be other than zero.
 description: Physical remaining quantity in the unit must be other than zero.
-author: v-gfedorova@microsoft.com
-manager: tfehr
-ms.date: 5/31/2021 12:00:00 AM
+author: Henrikan
+ms.date: 5/31/2021
 ms.topic: troubleshooting
-ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSLoadTable,_WHSLoadPlanningListPage,__WHSLoadPlanningWorkbench
-# ROBOTS: 
+ms.search.form: WHSLoadPlanningListPage_WHSSalesPackingSlipPost, WHSLoadTable_WHSSalesPackingSlipPost
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: v-gfedorova@microsoft.com
-ms.assetid: 
+ms.custom: Henrikan
 ms.search.region: Global
-ms.author: v-gfedorova@microsoft.com
+ms.author: Henrikan
 
 ---
 
-# Physical remaining quantity in the unit must be other than zero.
+# Physical remaining quantity in the unit must be other than zero
 
 Error code: SYS19591
-
-The system displays the followign error message:
-	SYS19591
 
 As part of the packing slip generation, the data supplied to it has a non-zero inventory qty but zero sales qty.
 
 ## Symptoms
+
 When you try to generate a packing slip, the system shows the following error message:
 
-Physical remaining quantity in the unit %1 must be other than zero.
+> Physical remaining quantity in the unit %1 must be other than zero.
 
 Therefore, you can't generate the packing slip for the load.
 
 ## Cause
-The system evaluates the physical remaining quantity in the inventory unit and physical remaining quantity in the shipping unit. If the system finds that physical remaining quantity in the shipping unit is 0, but physical remaining quantity in the inventory unit is not 0, you can't generate the packing slip. For example, this issue might occur if sales unit and inventory unit for the item are different and conversion between units is not accurate.
+
+The system evaluates the physical remaining quantity in the inventory unit and physical remaining quantity in the shipping unit. If the system finds that physical remaining quantity in the shipping unit is 0, but physical remaining quantity in the inventory unit isn't 0, you can't generate the packing slip. For example, this issue might occur if sales unit and inventory unit for the item are different and conversion between units isn't accurate.
 
 ## Resolution
-Load or shipment is currently in a state where packing slip generation fails. 
+
+Load or shipment is currently in a state where packing slip generation fails.
+ 
 To fix this issue, complete one of the following tasks:
-- Check your load lines to make sure that all the related work has been completed at the final shipping location, and that the quantities match
-- Check your load lines to make adjustments that quantity can be cleanly converted without rounding issues
-- Check your load lines to make sure that the unit and quantity are aligned with the decimal precision of the unit
-- Check inventory UOM against sales UOM
+
+- Check your load lines to make sure that all the related work has been completed at the final shipping location, and that the quantities match.
+- Check your load lines to make adjustments that quantity can be cleanly converted without rounding issues.
+- Check your load lines to make sure that the unit and quantity are aligned with the decimal precision of the unit.
+- Check inventory UOM against sales UOM.
 
 ### Check your load lines to make sure that all the related work has been completed at the final shipping location, and that the quantities match
 
@@ -71,8 +63,8 @@ To fix this issue, complete one of the following tasks:
 1. On the Action Pane, open the **Ship and receive** tab and, from the **Reverse** group, select **Reverse shipment confirmation**.
 1. Open the **Load lines** tab and select the load line for the item that exceeds the over delivery.
 1. Select **Reduce picked quantity** button to adjust the picked quantity.
-1. Open the **Line details** tab and, select **Order** 
-1. In the **Quantity** field set the value to the picked quantity (**Work created quantity**), allowing Packing slip generation to proceed. 
+1. Open the **Line details** tab and, select **Order**.
+1. In the **Quantity** field, set the value to the picked quantity (**Work created quantity**), allowing Packing slip generation to proceed. 
  
 ### Check your load lines to make sure that the unit and quantity are aligned with the decimal precision of the unit
  
