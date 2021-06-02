@@ -39,6 +39,7 @@ This topic provides an overview of enhanced strong customer authentication (SCA)
 | Term | Description |
 |---|---|
 | SCA | Strong customer authentication allows a cardholder's identity to be verified by their bank when an online purchase is attempted. This is typically performed via a redirect from the storefront checkout flow to a page hosted by the cardholder's bank, where the cardholder's identity is verified. Once validated, the cardholder is directed back to the storefront checkout flow where the order proceeds through checkout. |
+| Redirect | The action of moving an online shopper's browsing session out of the context of the merchant's storefront. |
 | Card token | An alias that is used to refer to a real payment card number. Card tokens allow a reference to an actual payment card to be saved while avoiding the security issues associated with saving real payment card numbers. | 
 
 Traditionally, the storefront checkout process made two distinct calls to the payment processor. The first call was used to tokenize the card number entered in the payment processor's embedded HTML iframe element during checkout. During this first call, SCA was also enabled so that the cardholder could be authenticated with the card's issuing bank if needed. The second call used the card token obtained from the first call to request the actual authorization response. 
