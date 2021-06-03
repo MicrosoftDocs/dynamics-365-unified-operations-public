@@ -65,7 +65,9 @@ For a complete list of regions, see [Dynamics 365 and Power Platform: Availabili
 
 ## RCS default company
 
-For more i
+Design time functionality used in RCS is shared across all companies and therefore they do not contain company-specific functionality, for this reason we recommend using single company 'DAT' with your RCS environment.
+
+However, there are some scenarios where the user may want to make Electronic Reporting (ER) formats use parameters that are related to a specific legal entity, the default company switcher should be utilized in these instances only. For example, see [Configure ER format to use parameters that are specified per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format)
 
 ## Related RCS documentation
 
@@ -95,8 +97,8 @@ When you sign up for RCS from the service page, you might encounter an issue rel
 
 ![RCS sign-up error](media/01_RCSSignUpError.jpg)
 
-The cause of the issue is that the user is blocked from signing up for ad-hoc subscriptions & need to enable this property [AllowAdHocSubscriptions] in their tenant. 
+The cause of the issue is that the user is blocked from signing up for ad-hoc subscriptions & need to enable this property [`AllowAdHocSubscriptions`] in their tenant. 
 - If your IT department manages your organization Azure tenants, you should contact them to report the issue. 
-- If you are responsible for managing your Azure tenants you can fix the issues by following the steps in the following guidance, see [What is self-service sign-up for Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-self-service-signup#how-do-i-control-self-service-settings)
+- If you are responsible for managing your Azure tenants you can fix the issues by following the steps in this guidance, see [What is self-service sign-up for Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-self-service-signup#how-do-i-control-self-service-settings)
 
 
