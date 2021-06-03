@@ -38,8 +38,7 @@ Below find the various scenarios that are supported and a link to a quick start 
 
 | Source Environment | Target Environment | Quick Start Guide | Available via API | Tutorials 
 |---|---|---|---|---|
-|Production|	Sandbox|	[Refresh database](database-refresh.md) | [Create refresh](api/v1/reference-create-refresh.md) | [Refresh for training purposes](dbmovement-scenario-general-refresh.md)
-[Debug a copy of the production database](dbmovement-scenario-debugdiag.md) |
+|Production|	Sandbox|	[Refresh database](database-refresh.md) | [Create refresh](api/v1/reference-create-refresh.md) | [Refresh for training purposes](dbmovement-scenario-general-refresh.md)<br/>[Debug a copy of the production database](dbmovement-scenario-debugdiag.md) |
 |Sandbox|	Production| [Refresh database](database-refresh.md) | Not supported | [Golden configuration promotion](dbmovement-scenario-goldenconfig.md) |
 |Sandbox|	Sandbox|	[Refresh database](database-refresh.md) | [Create refresh](api/v1/reference-create-refresh.md) | [Refresh for training purposes](dbmovement-scenario-general-refresh.md)|
 |Sandbox|	DevTest|	[Export a database](export-database.md) | [Create export](api/v1/reference-create-export.md) | [Export a copy of the standard user acceptance testing (UAT) database](dbmovement-scenario-exportuat.md) |
