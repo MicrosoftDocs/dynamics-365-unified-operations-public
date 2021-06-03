@@ -136,6 +136,9 @@ The guaranteed uptime for Finance and Operations apps is 99.9%. Planned downtime
 To ensure service availability, all production environments are protected by using default Azure high availability (HA) features. HA functionality provides ways to avoid downtime caused by the failure of a single node within a datacenter, and DR features protect against outages broadly impacting an entire datacenter. Azure availability sets are used to prevent single-point-of-failure events. For more information about Azure availability sets, see [Use availability zones to protect from datacenter level failures](/azure/virtual-machines/windows/manage-availability#use-availability-zones-to-protect-from-datacenter-level-failures).
 High availability for databases is supported through Azure SQL. For more information, see [Overview of business continuity with Azure SQL Database](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview).
 
+#### Database backup retention
+Databases for Microsoft Managed or Self-service Tiers 2-5 environments have automated backups taken by Azure SQL every few minutes.  These backups can be restored to using Lifecycle Services Point-in-time Restore capability up to 14 days in the past.  For Production type environments, backups can be restored up to 28 days in the past.  For Tier 1 or Customer Managed environments, database backups are not automatic and need to be taken manually as often as required.
+
 ### Disaster recovery features
 Production environments are configured with Azure disaster recovery support that includes the following:
 - Azure SQL active-geo replication is configured for the Finance and Operations database of the production environment. For more information about SQL replication, see [Compare geo-replication with failover groups](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview#compare-geo-replication-with-failover-groups). 
