@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Online store publishing architecture
-description: This topic contains conceptual information to help you understand how channels and catalogs are published from the commerce module to an online store.
+title: Publish an online store channel
+description: This topic contains conceptual information to understand how catalogs are published from the commerce module to an online store.
 author: robinarh
 ms.date: 06/20/2017
 ms.topic: article
@@ -22,8 +22,8 @@ ms.assetid: c9ab2a6c-ea19-4c21-a2d9-35a8d516b48b
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: meeram
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.search.validFrom: 2020-02-28
+ms.dyn365.ops.version: AX 10.0.10
 
 ---
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic contains conceptual information to help developers and system administrators understand how channels and catalogs are published from the commerce module to an online store in Microsoft SharePoint 2013 Products. Understanding the publishing process can help you develop, manage, and troubleshoot your online store.
+This topic contains conceptual information to understand how catalogs are published from the commerce module to an online store.
 
 Publish an online store channel
 
