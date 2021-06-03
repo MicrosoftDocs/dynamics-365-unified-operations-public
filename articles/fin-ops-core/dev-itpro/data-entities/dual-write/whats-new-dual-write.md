@@ -34,7 +34,7 @@ This release contains the features and bug fixes listed in the following table.
 
 | Feature | Description |Status |
 |------|---------|-------|
-| Bug fix |	Implements rollback of transactions that exceed a 2-minute time limit. | General availability |
+| Bug fix | Implements rollback of transactions that exceed a 2-minute time limit. | General availability |
 | Bug fix | Fixes processing of datetime fields during a catch-up sync. | General availability |
 | Tracing | Limits nonessential plugin trace logs for medium-size transactions (5 or more records). | General availability |
 
