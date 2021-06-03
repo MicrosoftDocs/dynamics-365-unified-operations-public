@@ -127,4 +127,8 @@ Note integration includes a collection of table maps that work together during d
 | [Sales order header document attachments](mapping-reference.md#229) | Annotations | Businesses that use plain text and URLs to capture sales order–specific information. |
 | [Purchase order header document attachments](mapping-reference.md#232) | Annotations | Businesses that use plain text and URLs to capture purchase order–specific information. |
 
+## Limitations
+
+Once you install the notes solution, you cannot un-install it. 
+
 For more information, see [Dual-write mapping reference](mapping-reference.md).
