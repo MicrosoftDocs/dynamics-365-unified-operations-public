@@ -126,9 +126,9 @@ For POS customizations, you must also follow these steps on the guest VM.
 
 ### Provisioning the administrator user
 
-For developer access, you must be an administrator on the instance. To provision your own credentials as an administrator, run the admin user provisioning tool that is provided on the desktop, and provide your email address (Azure AD credentials) in the tool.
+For developer access, you must be an administrator on the instance. For environments provisioned through LCS we encourage you to deploy with the correct user. To provision your own credentials as an administrator on a local virtual machine or after provisioning from LCS, run the admin user provisioning tool. On the local virtual machine there is a link provided on the desktop, on cloud environments you can find the tool in K:\AOSService\PackagesLocalDirectory\bin.
 
-1.  From the desktop, run the admin user provisioning tool as an administrator (right-click the icon, and then click **Run as administrator**).
+1.  Run the admin user provisioning tool as an administrator (right-click the icon, and then click **Run as administrator**).
 2.  Enter your email address, and then select **Submit**.
 
 ### Commerce configuration
