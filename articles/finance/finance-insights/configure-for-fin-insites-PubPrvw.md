@@ -45,7 +45,7 @@ Follow these steps to deploy the environments.
 
 1. In Microsoft Dynamics Lifecycle Services (LCS), create or update a Finance environment. The environment requires app version 10.0.18 or later of Finance and Operations apps.
 2. The environment must be a high-availability (HA) environment in Sandbox. (This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. If you're using Contoso demo data, and you plan to use the Customer payment predictions, Cash flow forecasts, and Budget forecasts features, additional sample data is required. 
+3. If you are configuring Finance insights in a Sandbox environment, you might need to copy production data to that environment for predictions to work. The prediction model uses multiple years of data to build predictions. The Contoso demo data doesn’t contain enough historical data to train the prediction model adequately. 
 
 ## Configure Dataverse
 
