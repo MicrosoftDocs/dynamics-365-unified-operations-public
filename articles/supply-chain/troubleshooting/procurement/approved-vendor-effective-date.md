@@ -3,7 +3,7 @@ title: Can't change the effective date for an approved vendor
 description: The Approved vendor list by product entity doesn't allow the effective date to be changed
 author: kamaybac
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

@@ -3,7 +3,7 @@ title: The purchase agreement maximum limit isn't effective on a purchase requis
 description: The purchase agreement maximum limit isn't effective on a purchase requisition
 author: kamaybac
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

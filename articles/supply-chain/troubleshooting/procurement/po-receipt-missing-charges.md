@@ -3,7 +3,7 @@ title: A purchase order receipt doesn't include all charges
 description: A purchase order receipt doesn't include all charges
 author: kamaybac
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

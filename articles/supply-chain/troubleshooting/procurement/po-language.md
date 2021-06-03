@@ -3,7 +3,7 @@ title: Purchase orders don't reflect the language settings of the legal entity
 description: The product name on a purchase order is shown in the system language instead of the language set for the legal entity where the purchase order was created
 author: kamaybac
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

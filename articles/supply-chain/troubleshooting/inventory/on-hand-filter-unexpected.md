@@ -3,7 +3,7 @@ title: The filter pane on the On-hand list page doesn't work as expected
 description: The filters in the filter pane on the "On-hand list" page don't filter results as you expect.
 author: sherry-zheng
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

@@ -3,7 +3,7 @@ title: You can only complete a purchase order action for fully distributed line 
 description: You can only complete an action on a purchase after the line number is fully distributed
 author: kamaybac
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

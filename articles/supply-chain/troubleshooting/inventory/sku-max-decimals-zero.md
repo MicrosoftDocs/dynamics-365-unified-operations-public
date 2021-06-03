@@ -3,7 +3,7 @@ title: Maximum number of decimals for the stock keeping unit is 0
 description: When you try to post an inventory transaction or an inventory reservation, you receive error "Maximum number of decimals for the stock keeping unit is 0".
 author: sherry-zheng
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

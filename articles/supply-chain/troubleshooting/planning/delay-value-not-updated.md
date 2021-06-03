@@ -3,7 +3,7 @@ title: The delay value isn't updated when you reschedule a planned order
 description: The delay value isn't updated when you reschedule a planned order
 author: ChristianRytt
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

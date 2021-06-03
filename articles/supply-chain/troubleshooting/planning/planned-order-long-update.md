@@ -3,7 +3,7 @@ title: Planned orders take a long time to update
 description: When updating the requirement quantity and/or delivery date on a planned order, it typically takes at least 30 seconds per order to save the update
 author: ChristianRytt
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

@@ -3,7 +3,7 @@ title: Functional gaps between inventory value/aging reports and their storage v
 description: Functional gaps between inventory value/aging reports and their storage versions
 author: AndersGirke
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
 audience: Application User
 ms.reviewer: kamaybac

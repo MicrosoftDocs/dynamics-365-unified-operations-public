@@ -3,7 +3,7 @@ title: Default tax group and cash discount aren't filled in from the invoice acc
 description: A default tax group and a default cash discount aren't filled in from the invoice account
 author: kamaybac
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

@@ -3,7 +3,7 @@ title: You can't add the Price unit field to the Purchase agreement page
 description: When you open the "Purchase agreement" page in a line view mode, you can't personalize the page by adding the "Price unit" field in the overview of the line
 author: kamaybac
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

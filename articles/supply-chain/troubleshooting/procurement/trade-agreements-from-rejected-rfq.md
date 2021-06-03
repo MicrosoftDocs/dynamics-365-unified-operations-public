@@ -3,7 +3,7 @@ title: Trade agreements can be created from rejected RFQs
 description: Trade agreements can be created from rejected RFQs. The system doesn't prevent trade agreement journals from being created if the RFQ line hasn't been accepted
 author: kamaybac
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

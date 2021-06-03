@@ -3,7 +3,7 @@ title: Inventory aging report discrepancies
 description: Inventory aging report discrepancies
 author: AndersGirke
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

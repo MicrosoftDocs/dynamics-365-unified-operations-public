@@ -3,7 +3,7 @@ title: Canceled purchase orders appear in the draft list in the workspace
 description: Canceled purchase orders appear in the draft list in the Purchase order preparation workspace
 author: kamaybac
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

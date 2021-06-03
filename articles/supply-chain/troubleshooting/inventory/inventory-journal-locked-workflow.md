@@ -3,7 +3,7 @@ title: Your inventory journal is locked and the workflow batch job doesn't work
 description: One of your inventory journals is locked by some operation and isn't being released
 author: sherry-zheng
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

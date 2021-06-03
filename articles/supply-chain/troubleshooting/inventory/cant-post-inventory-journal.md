@@ -3,7 +3,7 @@ title: Inventory journal workflow never completes and the journal can't be proce
 description: After you submit a journal approval workflow, workflow processing stops responding, and you can't edit or process your journals.
 author: sherry-zheng
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

@@ -3,7 +3,7 @@ title: Update conflict when inventory valuation method is standard cost or movin
 description: An update conflict occurs when the inventory valuation method is either standard cost or moving average
 author: AndersGirke
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac

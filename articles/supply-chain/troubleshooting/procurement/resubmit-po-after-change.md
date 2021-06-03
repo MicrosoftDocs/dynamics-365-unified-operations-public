@@ -3,7 +3,7 @@ title: Error on resubmitting a purchase order to a workflow after a change
 description: Error on resubmitting a purchase order to a workflow after a change
 author: kamaybac
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

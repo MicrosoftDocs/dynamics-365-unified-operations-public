@@ -3,7 +3,7 @@ title: Inventory journal workflow conditions apply at the journal level, not lin
 description: Inventory journal workflow conditions apply only at the journal level, not at the line level.
 author: sherry-zheng
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

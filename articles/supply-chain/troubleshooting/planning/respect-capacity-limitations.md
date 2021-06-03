@@ -3,7 +3,7 @@ title: Master planning is scheduling more than the available capacity
 description: Master planning doesn't seem to respect capacity limitations and is scheduling more than the available capacity
 author: ChristianRytt
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

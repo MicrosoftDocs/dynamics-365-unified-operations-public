@@ -3,7 +3,7 @@ title: The unit and unit quantity aren't working correctly in the inventory jour
 description: The unit and unit quantity aren't working correctly in the inventory journal
 author: sherry-zheng
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

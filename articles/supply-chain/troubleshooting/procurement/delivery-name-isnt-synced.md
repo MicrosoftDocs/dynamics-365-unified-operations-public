@@ -3,7 +3,7 @@ title: The delivery name isn't synced after changing a purchase order delivery 
 description: After you change the delivery address on a purchase order header, the delivery name isn't synced
 author: kamaybac
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

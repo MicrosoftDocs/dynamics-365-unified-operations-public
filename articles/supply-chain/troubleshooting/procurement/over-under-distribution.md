@@ -3,7 +3,7 @@ title: Accounting distributions are either over- or under-distributed
 description: One or more accounting distributions are either over-distributed or under-distributed.
 author: kamaybac
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac

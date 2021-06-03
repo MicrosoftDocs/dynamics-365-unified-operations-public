@@ -3,7 +3,7 @@ title: Unit prices on purchase orders aren't calculated based on the unit conver
 description: Unit prices on purchase orders aren't calculated based on the unit conversion
 author: kamaybac
 ms.date: 05/31/2021
-ms.topic: article
+ms.topic: troubleshooting
 ms.search.form: 
 audience: Application User
 ms.reviewer: kamaybac
