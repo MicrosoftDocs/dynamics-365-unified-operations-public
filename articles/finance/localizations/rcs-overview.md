@@ -63,10 +63,18 @@ RCS is generally available in the following regions:
 
 For a complete list of regions, see [Dynamics 365 and Power Platform: Availability, data location, language, and localization](https://aka.ms/dynamics_365_international_availability_deck).
 
+## RCS default company
+
+For more i
+
 ## Related RCS documentation
 
 For more information about related components, see the following documentation:
 
+- **RCS:**
+
+    - [Create ER configuration & upload to Global repo](rcs-global-repo-upload.md)
+   
 - **Global repository:**
 
     - [Create ER configuration & upload to Global repo](rcs-global-repo-upload.md)
@@ -74,6 +82,7 @@ For more information about related components, see the following documentation:
     - [Enhanced filtering in Global repo](enhanced-filtering-global-repo.md)
     - [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md)
     - [Discontinuing configurations in Global repo](discontinuing-configurations-rcs-global-repo.md)
+    - [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) storage deprecation](rcs-lcs-repo-dep-faq.md)
 
 - **Globalization feature:**
 
