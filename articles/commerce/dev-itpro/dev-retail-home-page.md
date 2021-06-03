@@ -41,7 +41,7 @@ This page lists the resources that are available for IT pros and developers who 
 
 - [Commerce components](/dynamics365/commerce/dev-itpro/commerce-architecture)
 - [Modern POS (MPOS) architecture](retail-modern-pos-architecture.md)
-- [Commerce Scale Unit architecture](retail-server-architecture.md)
+- [Headless commerce engine architecture](retail-server-architecture.md)
 - [Online store publishing architecture](retail-online-store-publishing-architecture.md)
 - [Retail channel performance PowerBI.com solution](../../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
