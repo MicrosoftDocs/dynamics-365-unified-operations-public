@@ -1,37 +1,22 @@
 ---
-# required metadata
-
 title: Publish an online store channel
-description: This topic contains conceptual information to understand how catalogs are published from the commerce module to an online store.
-author: robinarh
+description: This topic contains conceptual information to understand how catalogs are published from the Commerce module to an online store.
+author: mugunthanm
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 72124
-ms.assetid: c9ab2a6c-ea19-4c21-a2d9-35a8d516b48b
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: meeram
+ms.author: mumani
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.10
-
 ---
 
 # Online store publishing architecture
 
 [!include [banner](../includes/banner.md)]
 
-This topic contains conceptual information to understand how catalogs are published from the commerce module to an online store.
+This topic contains conceptual information to understand how catalogs are published from the Commerce module to an online store.
 
 ## Publish an online store channel
 
