@@ -38,7 +38,7 @@ Pre-configured system accounts are included on deployed environments so that Mic
 
 | Account detail | Purpose/use case of the account|
 |---|---|
-| `Axrunner` | This account is used to monitor the health of the environment and provide alerts when necessary. |
+| `Axrunner` | This account is used to monitor the health of the environment and provide alerts when necessary. **Note this account is deprecated with Self-service environments and is no longer used** |
 | `FRServiceUser` | This account is the Financial Reporting service user account, which is used by the Management Reporter application for integrations with Finance and Operations. |
 | `RetailServiceAccount` | This account is used for Retail services to connect to the Finance and Operations environment. |
 | `SysHealthServiceUser` or `Axping` (depending on the deployed product version) | This account is used to monitor the availability and health of the environment and provide alerts when necessary. |
