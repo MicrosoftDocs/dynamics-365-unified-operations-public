@@ -22,7 +22,7 @@ This topic describes the architecture of the headless commerce engine (also know
 
 ## Omnichannel solution with headless commerce engine
 
-The headless commerce engine commerce APIs which are consumed by Dynamics 365 Commerce (back-office, in-store, call center, and e-commerce), provide a complete omnichannel solution. The APIs can be consumed by third-party applications and Power Platform connectors.
+The headless commerce engine commerce APIs, which are consumed by Dynamics 365 Commerce (back-office, in-store, call center, and e-commerce), provide a complete omnichannel solution. The APIs can be consumed by third-party applications and Power Platform connectors.
 
 ![Commerce Scale Unit plateform integration diagram](./media/CSUConsumer.PNG)
 
@@ -32,11 +32,11 @@ The engine contains these components:
 
 + Consumer APIs
 + Commerce Runtime (CRT)
-+ Channel databse
++ Channel database
 
 ### Consumer APIs
 
-The engine exposes OData APIs for Dynamics 365 Commerce and third-party applications to consume. The engine's API layer is built using ASP.NET Core and provides different authentication options for the clients to consume the APIs. The APIs are a wrapper which exposes the business logic. For more information on the APIs and extension, see:
+The engine exposes OData APIs for Dynamics 365 Commerce and third-party applications to consume. The engine's API layer is built using ASP.NET Core and provides different authentication options for the clients to consume the APIs. The APIs are a wrapper that exposes the business logic. For more information, see:
 
 + [Commerce Scale Unit customer and consumer APIs](retail-server-customer-consumer-api.md)
 + [Consume APIs](consume-retail-server-api.md)
