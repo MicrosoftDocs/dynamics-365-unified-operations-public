@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Configuration for Finance Insights (preview)
-description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
+title: Configuration for Finance insights - vesrions upto 10.0.19
+description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights for versions upto 10.0.19.
 author: ShivamPandey-msft
-ms.date: 11/25/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,6 +34,9 @@ ms.dyn365.ops.version: AX 10.0.13
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
+> [!NOTE]
+> The following procedures for setting up Finance insights are valid for Microsoft Dynamics 365 Finance versions up to 10.0.19. To set up Finance insights on version 10.0.20 and later, see [Configuration for Finance Insights (preview) - versions 10.0.20 and beyond](configure-for-fin-insites-PubPrvw.md).
+
 Finance insights combines functionality from Microsoft Dynamics 365 Finance with Microsoft Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 
 ## Deploy Dynamics 365 Finance
@@ -42,7 +45,7 @@ Deploy the environments by following these steps.
 
 1. In Microsoft Dynamics Lifecycle Services (LCS), create or update a Dynamics 365 Finance environment. The environment requires app version 10.0.11/Platform update 35 or later.
 2. The environment must be a high-availability (HA) environment in Sandbox. (This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. If you're using Contoso demo data, you will require additional sample data to use the Customer payment predictions, Cash flow forecasts, and Budget forecasts features. 
+3. If you are configuring Finance insights in a Sandbox environment, you might need to copy production data to that environment for predictions to work. The prediction model uses multiple years of data to build predictions. The Contoso demo data doesn’t contain enough historical data to train the prediction model adequately. 
 
 ## Configure Dataverse
 
