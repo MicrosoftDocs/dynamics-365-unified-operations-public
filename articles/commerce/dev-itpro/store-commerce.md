@@ -37,13 +37,21 @@ Store Commerce is a shell that renders CPOS, so you should also update CPOS to g
 
 ![Store Commerce](media/StoreCommerce.PNG)
 
-## Store Commerce is the future of MPOS
+## Store Commerce and MPOS parity
 
-When Store Commerce has full functional parity with MPOS, it will replace MPOS. Currently, Store Commerce doesn't support running offline (when there is no connectivity to Retail Server). For more information about the different POS apps and topology, see [Choose between Modern POS (MPOS) and Cloud POS](../mpos-or-cpos.md)
+Store Commerce will have full functional parity with MPOS in the future. Currently, Store Commerce doesn't support running offline (when there is no connectivity to Retail Server). For more information about the different POS apps and topology, see [Choose between Modern POS (MPOS) and Cloud POS](../mpos-or-cpos.md)
+
+Your extension code developed or ISV solution implemented for MPOS can be used in Store Commerce. Other benefits of Store Commerce are:
+
++ Simplified ALM using Microsoft Store.
++ Better performance.
++ Easier POS and extension upgrades.
++ Support for dedicated hardware station (HWS).
++ Support for offline, in the future.
 
 ## Choosing between Store Commerce and MPOS
 
-Store Commerce renders CPOS but has full parity with MPOS. Both Store Commerce and MPOS are Universal Windows Platform (UWP) apps and they support local hardware station. Store Commerce doesn't currently support offline but it will in the future. 
+Store Commerce renders CPOS but has full parity with MPOS. Both Store Commerce and MPOS are Universal Windows Platform (UWP) apps and they support local hardware station. Store Commerce doesn't currently support offline, but it will in the future. 
 
 Store Commerce uses the Chromium engine to render the UI so it provides better rendering performance when compared to MPOS and Store Commerce is deployed through Microsoft Store, which greatly simplifies the ALM, whereas MPOS is self-serviced using LCS and HQ. In the future, MPOS will be deprecated and replaced by Store Commerce. 
 
@@ -62,7 +70,9 @@ UI rendering engine | Chromium engine to render the UI. | UWP app framework to r
 
 ### Prerequisite
 
++ Windows 10 or Windows Server 2019.
 + Microsoft Edge, because the app uses the Microsoft Edge WebView2 control.
++ Dynamics 365 Commerce (Back office and CPOS).
 
 ### HQ Device Setup
 
@@ -105,4 +115,10 @@ Because the Store Commerce renders the CPOS, you follow the CPOS packaging and d
 
 The app can also be extended to integrate with hardware devices, [sample extension code added in GitHub to generate Store Commerce HWS extension package](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.28/src/PosSample). For more information, see [Integrate the POS with a new hardware device](hardware-device-extension.md).
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)] 
+## Known issues with the Microsoft Edge WebView2 control
+
++ During activation, when prompted for entering the AAD password with multiple options, choose password. The other options might not work.
++ Tabbing inside the app by pressing the Tab key may not work. Instead, click or select items.
++ Using the mouse for drop-down selection might not work. Instead, use the keyboard to make a selection.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
