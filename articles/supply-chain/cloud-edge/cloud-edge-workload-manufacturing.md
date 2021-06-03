@@ -122,7 +122,7 @@ This section describes how to enable the abilities to report as finished and the
 
 ### Enable and use report as finished and putaway on a scale unit -->
 
-In the current release, report as finished and putaway operations are supported by the [warehouse execution workload](cloud-edge-workload-warehousing.md) (not the manufacturing execution workload). Therefore, to use this functionality when connected to a scale unit, you must do the following:
+In the current release, report as finished and putaway operations (for finished products, co-products, and by-products) are supported by the [warehouse execution workload](cloud-edge-workload-warehousing.md) (not the manufacturing execution workload). Therefore, to use this functionality when connected to a scale unit, you must do the following:
 
 - Install both the warehouse execution workload and the manufacturing execution workload on your scale unit.
 - Use the Warehouse Management mobile app to report as finished and process the putaway work. The production floor execution interface does not currently support these processes.
