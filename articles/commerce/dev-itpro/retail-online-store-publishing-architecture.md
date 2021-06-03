@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.10
 
 This topic contains conceptual information to understand how catalogs are published from the commerce module to an online store.
 
-Publish an online store channel
+## Publish an online store channel
 
 When you publish a Commerce online store channel, you replicate the basic structure of your online store between Microsoft Dynamics 365 Commerce and Microsoft SharePoint. You create the basic structure of your online store channel in the **Commerce** module. Before you can publish an online store channel, you must complete the following setup tasks:
 
