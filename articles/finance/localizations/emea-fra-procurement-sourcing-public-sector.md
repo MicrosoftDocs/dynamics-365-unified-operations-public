@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article explains how the standard features that are related to procurement and sourcing are augmented for French entities in the public sector. These features are used to help meet the requirements of the Code des Marchés Publics. 
 
-Set spending thresholds by procurement category
------------------------------------------------
+## Set spending thresholds by procurement category
 
 To set spending thresholds for purchases in the procurement categories that are defined by the Clé de Contrôle Marché, you can use the **Spending thresholds by category** purchasing policy rule . By implementing this purchasing policy rule to control spending thresholds by category, you can use the effective date attributes, predicted expenditure amounts, and threshold amounts to support your procurement practices, and to help guarantee the efficient and effective use of public funds.
 

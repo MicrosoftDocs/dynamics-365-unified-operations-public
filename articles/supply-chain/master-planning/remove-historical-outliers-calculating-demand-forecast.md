@@ -43,8 +43,7 @@ You can exclude outliers to improve forecast accuracy. This is an optional task.
 
 **Note:** You can also create a query that is based on an existing query. Select the query to copy, and then click **Duplicate**. The **Query date** field identifies the version. You can use the query as it is, or you can click **Edit query** to modify the criteria. You can optionally modify the name and description of the new query.
 
-Additional resources
---------
+## Additional resources
 
 [Demand forecasting overview](introduction-demand-forecasting.md)
 

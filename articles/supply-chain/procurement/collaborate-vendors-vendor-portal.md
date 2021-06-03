@@ -97,8 +97,7 @@ The following table shows an example of the changes in status and version that a
 |                           You send the new version of the PO to the Vendor portal.                            |                                                                                                                                                                    The new version is registered in the Vendor portal, and the status is changed to <strong>In External Review</strong>.                                                                                                                                                                     |
 |                                The vendor approves the new version of the PO.                                 |                                                                                                                                                     The status is changed to <strong>Confirmed</strong>, either automatically, or when you receive the response from the vendor and then confirm the PO.                                                                                                                                                     |
 
-Additional resources
---------
+## Additional resources
 
 [Vendor portal user security](configure-security-vendor-portal-users.md)
 

@@ -19,8 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic contains the syntax reference for X++. 
 
-X++ Keywords
-------------
+## X++ Keywords
 
 The X++ keywords shown in the following table are reserved. These keywords cannot be used for any other purpose.
 
@@ -1469,8 +1468,7 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 
 
 
-Additional resources
---------
+## Additional resources
 
 [X++ Language Reference](xpp-language-reference.md)
 

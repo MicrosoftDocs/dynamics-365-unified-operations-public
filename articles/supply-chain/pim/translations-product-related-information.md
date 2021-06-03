@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to manage translations for products, product dimension values, and product attributes. 
 
-What product-related data can be translated?
---------------------------------------------
+## What product-related data can be translated?
 
 You can create translations for the following product-related information:
 -   Names and descriptions of products.

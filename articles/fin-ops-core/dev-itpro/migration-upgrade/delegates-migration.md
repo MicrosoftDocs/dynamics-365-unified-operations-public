@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
 
-Overview
---------
+## Overview
 
 Finance and Operations is split into several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite. With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. For example, in this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. To learn about models and packages, see [Models and packages](../dev-tools/models.md).
 

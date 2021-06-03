@@ -86,8 +86,7 @@ POs can be configured to require that budget funds be allocated to the order bef
 
 You might have to delay the completion of a PO. For example, you might require additional information about products or services, or you might have to get authorization for the spend. There are several ways to hold back an order. For example, you can wait to confirm the order. Alternatively, if a change management workflow is being used, don’t submit the order for approval. If you must block all orders for a particular vendor, you can also mark the vendor as **On hold** for processing on the vendor master. There are also circumstances that might prevent the order from being processed. For example, processing might be prevented if credit limits have been exceeded, or if required budget funds aren’t available.
 
-Additional resources
---------
+## Additional resources
 
 [Purchase order overview](purchase-order-overview.md)
 

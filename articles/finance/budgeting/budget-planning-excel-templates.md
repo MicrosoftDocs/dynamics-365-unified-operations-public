@@ -72,8 +72,7 @@ Point the cursor to the desired location in the Excel file. Click **Add label** 
 
 ## [![Select Add Value](./media/bpt7.png)](./media/bpt7.png)
 
-Add a calculated column to budget plan document template table
---------------------------------------------------------------
+## Add a calculated column to budget plan document template table
 
 Next, calculated columns will be added to generated budget plan document template. A **Total request** column, which summarizes Request Q1: Request Q4 columns, and an **Adjustment** column, which recalculates the **Total Request** column by a predefined factor.
 

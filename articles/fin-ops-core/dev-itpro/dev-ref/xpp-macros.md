@@ -469,11 +469,9 @@ static void NestMacroJobA4(Args _args)
 /************  Actual Infolog output
 Message (02:39:41 pm)
 11:  # E1 == 5
-12:  # E2 == 5
--------
+## 12:  # E2 == 5
 23: After Inc.E1,  # E1 == 6
-24: After Inc.E1,  # E2 == 6
--------
+## 24: After Inc.E1,  # E2 == 6
 35: After Inc.E2,  # E1 == 6
 36: After Inc.E2,  # E2 == 1
 ************/

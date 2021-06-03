@@ -47,8 +47,7 @@ You can also set up the starting dynamic plan so that it is updated with the new
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Coverage settings](coverage-settings.md)
 
