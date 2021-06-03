@@ -12,7 +12,7 @@ ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.10
 ---
 
-# Online store publishing architecture
+# Publish an online store channel
 
 [!include [banner](../includes/banner.md)]
 
