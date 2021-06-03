@@ -66,6 +66,9 @@ Here's how the lifecycle maps to the available environments.  If you already hav
 *Tiers 2-5 can be purchased to increase performance of the environment.  The higher the tier, the more compute and database capacity is reserved for your use.*
 *For more information about Self-service environment types, check out the [Self-service deployment overview](infrastructure-stack.md).*
 
+> [!Important]
+> Tier 1 Sandbox environments are no longer Microsoft Managed starting in November 2020.  For demo, build, and develop purposes the tier 1 environments can be deployed on a customer's Azure subscrition directly from Lifecycle Services.
+
 ### Environment lifecycle operations
 Users with the Environment Administrator or Project Owner roles in Lifecycle Services can perform various lifecycle operations on their environments.  These operations often involve downtime on the environment until the task is finished.  Each of these operations are located under or next to the **Maintain** button on each environment details page.
 
