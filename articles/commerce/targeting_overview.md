@@ -27,37 +27,47 @@ ms.dyn365.ops.version: AX 10.0.21
 ---
 
 # Customer segmentation and targeting in Dynamics 365 Commerce
-Dynamics 365 Commerce enables to validate hypotheses about the effectiveness of your e-Commerce pages and make decisions with data-driven confidence. Commerce supports A/B testing on pages, modules, and fragments and enables you to measure the impact of proposed changes to your website.
+Dynamics 365 Commerce enables you to target specific groups of customer with different page content based on their device information, geolocation, and other dynamically derived attributes from their browser request. This will help personalize content in near real-time for these target groups known as **audiences** and drive increased user engagement and satisfaction.
 
-You can create, edit, and manage page and content treatments known as **variations** in Commerce site builder. Commerce integrates with third-party services that you can use to create experiments and treatment assignments. Real-time event streams captured in Commerce enable the analytics that define the experiment results in the third-party service. You can then leverage these analytics to help support or refute your hypothesis.
+## Audiences
+Audience – group of users whose membership is determined by a set of dynamic rules
 
-## Set up prerequisites
-1. **Get the correct version of Commerce** - Upgrade your module library, online channel extensibility software development kit (SDK), and Commerce Scale Unit to Commerce version 10.0.13 or later.
-1. **Set up an experimentation connector** - An experimentation connector allows Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to a user. You can purchase a third-party connector from [AppSource](https://appsource.microsoft.com). Follow the setup instructions provided by the publisher. You can alternatively use the sample test connector from Commerce to test the experimentation workflow without needing to configure an external service. For more information, see [Configure and enable connectors](e-commerce-extensibility/connectors.md). 
-1. **Turn on the experimentation feature flags in Commerce** - You can enable experimentation at the tenant level by going to **Tenant Settings > Features** or at the site level at **Site Settings > Features**.
-    - Enable the **Experimentation** flag to create experiment variations of modules within a page without affecting or copying other content that isn't part of the experiment. This ensures that ongoing content updates outside the experiment stay in sync during the experiment lifecycle. Disabling this flag stops all experiments from being shown to users and removes all editing functions within site builder.
-    - Enable the **Experiment on pages or fragments** flag to run experiments on a page or fragment. This creates a full instance copy of the entire page or fragment for all modules within the page or fragment. Use this mode when you want to test comprehensive content changes, or where synchronizing ongoing content changes across instances isn't a concern. Disabling this flag prevents creation and editing of new experiments on pages and fragments.
-    > [!NOTE]
-    > The **Experimentation** flag must also be enabled for the **Experiment on pages or fragments** functionality to work.
-    
-## Experimentation lifecycle
-Setting up an experiment, creating variations, and running an experiment is an iterative process. The diagram below illustrates the experimentation lifecycle in Commerce and the third-party service. 
 
-[ ![Experimentation lifecycle](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+## Targets
+Target – the user experience that will be shown to members of the chosen audience
 
-To learn more about each step in the experimentation process, refer to the following topics.
-- [Identify a hypothesis and determine metrics for an experiment](experimentation-identify.md)
-- [Set up an experiment](experimentation-setup.md)
-- [Connect and edit an experiment](experimentation-connect-edit.md)
-- [Preview and publish an experiment](experimentation-preview-publish.md)
-- [Run and monitor an experiment](experimentation-run-monitor.md)
-- [Promote a variation and complete an experiment](experimentation-review-complete.md)
 
-> [!NOTE]
-> To learn where an experiment is in the lifecycle, select **Experiments** in the left navigation pane of site builder. A list of experiments is displayed with the status of each experiment in both Commerce and the third-party service. For more information, see [Review the status of an experiment](experimentation-status.md).
+Audience creation and management
+Rules can be created based on:
+Geolocation - country, state, city, zip code
+Customer email address
+Customer name
+Signed-in or not
+Device info – desktop/mobile/tablet, OS, browser
+Source – referrer, previous page
+Query string parameters
 
-## Next step
-[Identify a hypothesis and determine success metrics for an experiment](experimentation-identify.md) 
+Target creation and management
+Including and excluding audiences
+Creating targeted content
+
+Target prioritization / ranking
+
+Target scheduling
+
+•	Targeted modules can’t be shared as fragments
+o	Parent level won’t work
+o	Module with child targets can be shred
+•	Targets carried forward with publish groups
+•	Experiments and targets can’t co-exist; experiments will trump
+•	During localization, all activities + any scheduling automatically go with locale variants, whether users want it or not. 
+o	If they don’t want it, they will have to manually delete it.
+o	If they need different schedules per locale, they need to create different activities per locale.
+•	How/when to create everyone/no one audiences
+•	Since segment values will be stored in a cookie, we need to limit the size of the value for 3rd-parties. What is the limit?
+50 chars for values. Provider id maximum size: 20, Segment id maximum size: 20 and only allow letters, number and “-“ in provider and segment id.
+•	Basic vs advanced preview
+•	C1 needs explicit cookie consent from C2 – need to include info on that module
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
