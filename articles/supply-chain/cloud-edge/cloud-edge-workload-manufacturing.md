@@ -75,6 +75,7 @@ The following manufacturing execution tasks can currently be run on workloads wh
 - Report scrap
 - Indirect activity
 - Break
+- Report as finished and putaway (requires that you also run the warehouse execution workload on your scale unit, see also [Report as finished and putaway on a scale unit](#RAF))
 
 ## Working with manufacturing execution workloads on the hub
 
@@ -111,6 +112,26 @@ To review the history of manufacturing jobs that have been processed on a scale 
 ### Manufacturing hub to scale unit message processor job
 
 The _Manufacturing hub to scale unit message processor_ job processes data from the hub to the scale unit. This job is automatically started when the manufacturing execution workload is deployed. However, you can run it manually at any time by going to **Production control \> Periodic tasks \> Backoffice workload management \> Manufacturing hub to scale unit message processor**.
+
+<a name="RAF"></a>
+
+## Report as finished and putaway on a scale unit
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+In the current release, report as finished and putaway operations are supported by the [warehouse execution workload](cloud-edge-workload-warehousing.md) (not the manufacturing execution workload). Therefore, to use this functionality when connected to a scale unit, you must do the following:
+
+- Install both the warehouse execution workload and the manufacturing execution workload on your scale unit.
+- Use the Warehouse Management mobile app to report as finished and process the putaway work. The production floor execution interface does not currently support these processes.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
