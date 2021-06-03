@@ -1595,6 +1595,8 @@
           href: master-planning/planning-optimization/Intercompany-planning.md
         - name: Exclude products with certain product lifecycle states
           href: master-planning/planning-optimization/product-lifecycle-state.md
+        - name: Replenishment methods and quantity modification
+          href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
         - name: Coverage time fences
           href: master-planning/planning-optimization/coverage-time-fence.md
         - name: Approve planned orders
