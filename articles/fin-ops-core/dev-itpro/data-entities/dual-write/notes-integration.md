@@ -129,6 +129,6 @@ Note integration includes a collection of table maps that work together during d
 
 ## Limitations
 
-Once you install the notes solution, you cannot un-install it. 
+Once you install the notes solution, you cannot uninstall it. 
 
 For more information, see [Dual-write mapping reference](mapping-reference.md).
