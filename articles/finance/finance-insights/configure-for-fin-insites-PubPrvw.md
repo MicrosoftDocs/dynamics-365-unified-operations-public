@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configuration for Finance insights - vesrions upto 10.0.19
-description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights for versions upto 10.0.19.
+title: Configuration for Finance insights for public preview (preview) - version 10.0.20 and later
+description: This topic explains how to configure your system to use the capabilities that are available in Finance insights for public preview in version 10.0.20 and later.
 author: ShivamPandey-msft
 ms.date: 06/03/2021
 ms.topic: article
@@ -22,11 +22,11 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shpandey
-ms.search.validFrom: 2020-07-20
-ms.dyn365.ops.version: AX 10.0.13
+ms.search.validFrom: 2021-06-03
+ms.dyn365.ops.version: AX 10.0.20
 
 ---
-# Configuration for Finance insights (preview)
+# Configuration for Finance insights for public preview (preview) - version 10.0.20 and later
 
 [!include [banner](../includes/banner.md)]
 
@@ -34,45 +34,35 @@ ms.dyn365.ops.version: AX 10.0.13
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
+Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains how to configure Dynamics 365 Finance version 10.0.20 public preview so that your system can use the capabilities that are available in Finance insights.
+
 > [!NOTE]
-> The following procedures for setting up Finance insights are valid for Microsoft Dynamics 365 Finance versions up to 10.0.19. To set up Finance insights on version 10.0.20 and later, see [Configuration for Finance Insights (preview) - versions 10.0.20 and beyond](configure-for-fin-insites-PubPrvw.md).
+> The configuration steps that are described in this topic apply only to Finance version 10.0.20 and later. 'To set up Finance insights on version 10.0.19 and earlier, see [Configuration for Finance insights - versions up to 10.0.18](configure-for-fin-insites.md).
 
-Finance insights combines functionality from Microsoft Dynamics 365 Finance with Microsoft Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
+## Deploy Finance
 
-## Deploy Dynamics 365 Finance
+Follow these steps to deploy the environments.
 
-Deploy the environments by following these steps.
-
-1. In Microsoft Dynamics Lifecycle Services (LCS), create or update a Dynamics 365 Finance environment. The environment requires app version 10.0.11/Platform update 35 or later.
+1. In Microsoft Dynamics Lifecycle Services (LCS), create or update a Finance environment. The environment requires app version 10.0.18 or later of Finance and Operations apps.
 2. The environment must be a high-availability (HA) environment in Sandbox. (This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 3. If you are configuring Finance insights in a Sandbox environment, you might need to copy production data to that environment for predictions to work. The prediction model uses multiple years of data to build predictions. The Contoso demo data doesn’t contain enough historical data to train the prediction model adequately. 
 
 ## Configure Dataverse
 
-Use the following steps to configure Dataverse for Finance insights.
+Follow these steps to configure Dataverse for Finance insights.
 
-1. Open the environment page in LCS and verify that the **Power Platform Integration** section is already setup.
-    1. If it is already set up, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed. Copy the Dataverse environment name.
-    2. If it is not set up, follow these steps:
-        1. Select the **Setup** button in the Power Platform Integration section. It may take up to an hour for the environment to be set up.
-        2. If the Dataverse environment is successfully set up, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed. Copy the Dataverse environment name.
-> [!NOTE]
-> After completing the environment set up, **DO NOT** select the **Link to CDS for Apps** button. This is not needed for Finance Insights and will disable the ability to complete the required Environment Add-ins in LCS.
+1. In LCS, open the environment page, and verify that the **Power Platform Integration** section is already set up.
 
-2. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and follow these steps to create a new Dataverse environment in the same Active Directory tenant:
+    - If it's already set up, the Dataverse environment name that is linked to the Finance environment should be listed. Copy the Dataverse environment name.
+    - If it isn't yet set up, follow these steps:
 
-    1. Open the **Environments** page.
+        1. In the **Power Platform Integration** section, select **Setup**. Setup of the environment might take up to an hour.
+        2. If the Dataverse environment is successfully set up, the Dataverse environment name that is linked to the Finance environment should be listed. Copy the Dataverse environment name.
 
-        [![Environments page](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
+        > [!NOTE]
+        > After you complete the environment setup, do **not** select **Link to CDS for Apps**. This button isn't required for Finance insights. If you select it, you won't be able to configure the required environment add-ins in LCS.
 
-    2. Select the Dataverse environment created above and then select **Settings**.
-    3. Select **Resources \> All Legacy Settings**.
-    4. On the top navigation bar, select **Settings**, and then select **Customizations**.
-    5. Select **Developer Resources**.
-    6. Copy the **Dataverse organization ID** value.
-    7. In the browser's address bar, make a note of the URL for the Dataverse organization. For example, the URL might be `https://org42b2b3d3.crm.dynamics.com`.
-
-3. If you plan to use the Cash flow forecasts or Budget forecasts feature, follow these steps to update the annotation limit for your organization to at least 50 megabytes (MB):
+2. If you plan to use the Cash flow forecasts or Budget forecasts feature, follow these steps to update the annotation limit for your organization to at least 50 megabytes (MB):
 
     1. Open the [Power Apps portal](https://make.powerapps.com).
     2. Select the environment that you just created, and then select **Advanced settings**.
@@ -80,7 +70,7 @@ Use the following steps to configure Dataverse for Finance insights.
     4. Change the value of the **Maximum file size** field to **51,200**. (The value is expressed in kilobytes \[KB\].)
     5. Select **OK** to save your changes.
 
-## Configure the Azure setup
+## Configure Azure
 
 ### Enter the Dataverse directory ID and the user's Azure AD object ID
 
@@ -101,23 +91,25 @@ Use the following steps to configure Dataverse for Finance insights.
 
 # [Use a Windows PowerShell script](#tab/use-a-powershell-script)
 
-A Windows PowerShell script has been provided, so that you can easily set up the Azure resources that are described in [Configure export to Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md). If you prefer to do manual setup, skip this procedure, and continue with the procedure in the [Manual setup](#manual-setup) section.
+A Windows PowerShell script has been provided so that you can easily set up the Azure resources that are described in [Configure export to Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md). If you prefer to do the setup manually, skip this procedure, and complete the procedure in the [Manual setup](#manual-setup) section instead.
 
 > [!NOTE]
-> Follow the steps below to run the PowerShell script. The Azure CLI "Try it" option, or running the script on your PC may not work.
+> Use the following procedure to run the Windows PowerShell script. The setup might not work if you use the **Try it** option in Azure CLI or if you run the script on your computer.
 
-Follow these steps to configure Azure by using the Windows PowerShell script. You must have rights to create an Azure resource group, Azure resources, and an Azure AD application. For information about the required permissions, see [Check Azure AD permissions](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
+Follow these steps to use the Windows PowerShell script to configure Azure. You must have rights to create an Azure resource group, Azure resources, and an Azure AD application. For information about the required permissions, see [Check Azure AD permissions](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
 
-1. In the [Azure portal](https://portal.azure.com), go to your target Azure subscription. Select the **Cloud Shell** button to the right of the **Search** field.
-2. Select **PowerShell**.
-3. Create storage if you're prompted to do so.
-4. Go to the **Azure CLI** tab and select **Copy**.  
-5. Open Notepad and paste the PowerShell script. Save the file as ConfigureDataLake.ps1.
-6. Upload the Windows PowerShell script to the session using the menu option for upload in Cloud Shell.
-7. Run the script .\ConfigureDataLake.ps1.
-8. Follow the prompts to run the script.
-9. Use the information from the script output to install the **Export to Data Lake** add-in in LCS.
-10. Use the information from the script output to enable the entity store on the **Data connections** page in Finance (**System administration \> System parameters \> Data connections**).
+1. In the [Azure portal](https://portal.azure.com), go to your target Azure subscription.
+2. Select **Cloud Shell** to the right of the **Search** field.
+3. Select **PowerShell**.
+4. Create storage if you're prompted to create it.
+5. On the **Azure CLI** tab, select **Copy**.
+6. In Notepad, open a new file, and paste in the Windows PowerShell script.
+7. Save the file as **ConfigureDataLake.ps1**.
+8. Upload the Windows PowerShell script to the session by using the menu option for upload in Cloud Shell.
+9. Run the **.\ConfigureDataLake.ps1** script.
+10. Follow the prompts to run the script.
+11. Use the information from the script output to install the Export to Data Lake add-in in LCS.
+12. Use the information from the script output to enable the entity store on the **Data connections** page in Finance (**System administration \> System parameters \> Data connections**).
 
 ### Manual setup
 
@@ -135,14 +127,14 @@ Follow these steps to configure Azure by using the Windows PowerShell script. Yo
 
 If you can't find any of the preceding applications, try the following steps.
 
-1. On your local machine, select the **Start** menu, and search for **powershell**.
+1. On your local computer, on the **Start** menu, search for **powershell**.
 2. Select and hold (or right-click) **Windows PowerShell**, and then select **Run as administrator**.
 3. Run the following command to install the **AzureAD** module.
 
     `Install-Module -Name AzureAD`
 
 4. If a NuGet provider is required to continue, select **Y** to install it.
-5. If an "Untrusted repository" message appears, select **Y** to continue.
+5. If you receive an "Untrusted repository" message, select **Y** to continue.
 6. For each application that must be added, run the following commands to add the application to Azure AD. When you're prompted, sign in as the Azure AD administrator.
 
     `Connect-AzureAD`
@@ -152,9 +144,9 @@ If you can't find any of the preceding applications, try the following steps.
 #### Create Azure resources
 
 > [!NOTE]
-> Make sure that you create the following resources in the same Azure AD instance as the Dataverse environment. You can't use resources from a different Azure AD instance.
+> Make sure that you create the following resources in the same Azure AD instance that the Dataverse environment is in. You can't use resources from a different Azure AD instance.
 
-1. Create a new storage account:
+1. Create a storage account:
 
     1. In the [Azure portal](https://portal.azure.com), create a storage account.
     2. In the **Create storage account** dialog box, set the following fields:
@@ -163,14 +155,14 @@ If you can't find any of the preceding applications, try the following steps.
         - **Performance** – We recommend that you select **Standard**.
         - **Account kind** – You must select **StorageV2**.
 
-    3. In the **Advanced options** dialog box, for the **Data Lake storage Gen2** option, select **Enable** under the **Hierarchical namespaces** feature. If you disable this feature, you can't consume data that Finance and Operations apps write by using services such as Power BI data flows.
-    4. Select **Review and create**. When the deployment is completed, the new resource will be shown in the Azure portal.
+    3. In the **Advanced options** dialog box, for the **Data Lake storage Gen2** option, select **Enable** under the **Hierarchical namespaces** feature. If you don't enable this feature, you can't consume data that Finance and Operations apps write by using services such as Power BI data flows.
+    4. Select **Review and create**. When the deployment is completed, the new resource is shown in the Azure portal.
     5. Go to the storage account that you created.
     6. On the left menu, select **Access keys**.
     7. Copy and save the connection string for either **Key1** or **Key2**.
     8. Copy and save the storage account name.
 
-2. Create a new key vault:
+2. Create a key vault:
 
     1. In the [Azure portal](https://portal.azure.com), create a key vault.
     2. In the **Create key vault** dialog box, in the **Location** field, select the data center where your environment is located.
@@ -180,7 +172,7 @@ If you can't find any of the preceding applications, try the following steps.
     6. Enter a name for the secret. Make a note of the name, because you will have to provide it later.
     7. In the **Value** field, enter the connection string that you obtained from the storage account in the previous procedure.
     8. Select **Enabled**, and then select **Create**. The secret is created and added to Key Vault.
-    9. Go to the **Key Vault Overview**, and make a note of the DNS name.
+    9. Go to **Key Vault Overview**, and make a note of the DNS name.
 
 3. Create and register an Azure AD application:
 
@@ -189,7 +181,7 @@ If you can't find any of the preceding applications, try the following steps.
 
         - **Name** – Enter the name of the app.
         - **Application type** – Select **Web API**.
-        - **Redirect URI setup** – Enter the URL for your Dynamics 365 instance, such as, `https://yourdynamicsinstance.dynamics.com/auth`.
+        - **Redirect URI setup** – Enter the URL for your Dynamics 365 instance, such as `https://yourdynamicsinstance.dynamics.com/auth`.
 
     3. Go to the app that you just created, and copy and save its **Application (client) ID** value. You will have to provide this value later, when you set up the key vault.
     4. Go to **API permissions**, and follow these steps:
@@ -213,15 +205,15 @@ If you can't find any of the preceding applications, try the following steps.
 
         1. Select **Generate/Import**.
         2. In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.
-        3. Create the secret name and value from the following table.
+        3. Create the secret name and value from the table.
         4. Select **Enabled**, and then select **Create**. The secret is created and added to Key Vault.
 
-        | Secret name                       | Secret value                                                                                |
-        |-----------------------------------|---------------------------------------------------------------------------------------------|
-        | app-id                            | The app ID of the application that you created earlier                                      |
-        | app-secret                        | The client secret that you saved earlier                                                    |
-        | storage-account-name              | The name of the storage account that you created earlier, such as **storageaccount1**       |
-        | storage-account-connection-string | The connection string that you copied from the **Access keys** page for the storage account |
+        | Secret name                       | Secret value                                                                                 |
+        |-----------------------------------|----------------------------------------------------------------------------------------------|
+        | app-id                            | The app ID of the application that you created earlier.                                      |
+        | app-secret                        | The client secret that you saved earlier.                                                    |
+        | storage-account-name              | The name of the storage account that you created earlier, such as **storageaccount1**.       |
+        | storage-account-connection-string | The connection string that you copied from the **Access keys** page for the storage account. |
 
 5. Authorize the application to access the key vault:
 
@@ -230,8 +222,8 @@ If you can't find any of the preceding applications, try the following steps.
     3. For each application in the following table, follow these steps:
 
         1. Select **Add Access Policy** to create an access policy.
-        2. In the **Secret permissions** field, select the permissions from the following table.
-        3. In the **Select principal** field, search for the application display name from the following table.
+        2. In the **Secret permissions** field, select the permissions from the table.
+        3. In the **Select principal** field, search for the application display name from the table.
         4. Select **Select**.
         5. Select **Add**.
         6. Select **Save**.
@@ -248,9 +240,9 @@ If you can't find any of the preceding applications, try the following steps.
     3. Select **Add, Add Role Assignment**.
     4. For each application in the following table, follow these steps:
 
-        1. Select the role from the following table.
+        1. Select the role from the table.
         2. Leave the **Assign access to** field set to **Azure AD user, group, or service principal**.
-        3. In the **Select** field, enter the application from the following table.
+        3. In the **Select** field, enter the application from the table.
         4. Select **Save**.
 
         | Application                                              | Role                        |
@@ -757,15 +749,12 @@ catch {
 finally {
   Stop-Transcript
 }
-
 ```
 ---
 
+## Configure the Export to Data Lake add-in
 
-
-## Configure the data lake
-
-Follow these steps to use LCS to add the Azure Data Lake add-in to the environment.
+Follow these steps to use LCS to add the Export to Data Lake add-in to the environment.
 
 1. Sign in to LCS, and then, under the environment name on the right side of the page, select **Full Details**.
 2. In the **Environment add-ins** section, select **Install a new add-in**.
@@ -774,51 +763,30 @@ Follow these steps to use LCS to add the Azure Data Lake add-in to the environme
 
     | Value                                                              | Description |
     |--------------------------------------------------------------------|-------------|
-    | Tenant ID of the Azure Subscription where the Key Vault is located | The tenant ID where the storage account, apps, and key vaults are located. To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value. |
+    | Tenant ID of the Azure Subscription where the Key Vault is located | The tenant ID where the storage account, apps, and key vaults are located. To obtain this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value. |
     | Provide the DNS name of your Key Vault                             | The DNS name of the key vault, such as `https://customkeyvault.vault.azure.net/`. (This value matches the DNS name that is used in the entity store.) |
     | Provide the secret that contains the name of the storage account   | **storage-account-name** |
     | Secret Name for App ID to be used for accessing Data Lake          | **app-id** |
     | Secret name to be used with App ID                                 | **app-secret** |
 
-5. Agree to the terms, and select **Install**.
+5. Agree to the terms, and then select **Install**.
 
 The add-in will be installed within a few minutes.
 
-## Configure AI Builder
+## Configure the Finance insights add-in
 
-1. Sign in to LCS, and open the **Environment details** page.
-2. Scroll to the **Environment add-ins** section. You should see the add-ins that are already installed in this environment. If the **Export to Data Lake** add-in isn't among them, configure this add-in.
-3. Select the **Get insights** add-in.
-4. On the **Get insights** add-in details page, enter the following values.
+> [!NOTE]
+> If you previously installed the Get insights add-in, uninstall it before you complete the following procedure.
 
-    | Value                                                    | Description |
-    |----------------------------------------------------------|-------------|
-    | CDS Organization URL                                     | The Dataverse organization URL copied from above. |
-    | CDS Org ID                                               | The Dataverse organization ID copied from above. |
-5. Enable **Is this the default environment for you Tenant**.
-    
-## Configure the entity store
+Follow these steps to install the Finance insights add-in.
 
-Follow these steps to set up the entity store in your Finance environment.
-
-1. Go to **System administration \> Setup \> System parameters \> Data connections**.
-2. Set the following key vault fields:
-
-    - **Application (client) ID** – Enter the application client ID that you created earlier.
-    - **Application Secret** – Enter the secret that you saved for the application that you created earlier.
-    - **DNS name** – You can find the Domain Name System (DNS) name on the application details page for the application that you created earlier.
-    - **Secret name** – Enter **storage-account-connection-string**.
-3. Enable **Enable Data Lake integration**.
-4. Select **Test Azure Key Vault** and verify there are no errors.
-5. Select **Test Azure storage** and verify there are no errors.
+1. Sign in to LCS, and then, under the environment name on the right side of the page, select **Full Details**.
+2. In the **Environment add-ins** section, select **Install a new add-in**.
+3. Select the **Finance insights** add-in.
+4. Follow the instructions to install the **Finance insights** add-in.
 
 ## Feedback and support
 
-Please send an email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) if you are interested in providing feedback or need support.
-
-## Privacy notice
-
-Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
-
+If you're interested in providing feedback, or if you require support, send an email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

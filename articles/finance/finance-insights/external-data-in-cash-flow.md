@@ -4,7 +4,7 @@
 title: Use external data in cash flow forecasts (preview)
 description: This topic describes the setup steps that you must complete so that external data can be entered or imported into cash flow forecasts.
 author: rcarlson
-ms.date: 05/01/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -61,9 +61,5 @@ Additionally, if you must move setup data from one environment to another, the f
 
 - Cash flow forecast external source setup
 - Cash flow forecast external source legal entity setup
-
-#### Privacy notice
-Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
