@@ -59,7 +59,8 @@ For example, **Multiple** = *5* means that order can be for quantity 5, 10, 15, 
 - **Min. order quantity** - planned orders will not be less than the value defined.  
 For example, **Min. order quantity** = *10* will result in a planned order for 10, even if only 4 is required to fulfill the demand.
 
-- **Max. order quantity** - planned orders will not excite the value entered. For demand higher than Max. order quantity multiple, planned orders will be created to cover the demand.
+- **Max. order quantity** - planned orders will not excite the value entered. For demand higher than Max. order quantity multiple, planned orders will be created to cover the demand.  
+For example, **Max. order quantity** = *100* and demand for 450 will result in four planned orders of 100 and one for 50.
 
 
 ## Examples of replenishment that uses Min./Max. coverage code
