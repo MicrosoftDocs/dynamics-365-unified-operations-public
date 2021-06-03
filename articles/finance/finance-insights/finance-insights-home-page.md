@@ -4,7 +4,7 @@
 title: Finance insights home page (preview)
 description: Finance insights provides configurable and extensible models to help you accurately and intelligently predict your company's cash flow, predict when you will receive payment for outstanding receivables, and generate a budget proposal that can speed up your budgeting process. All these features are based on intelligent machine learning models.
 author: ShivamPandey-msft
-ms.date: 07/20/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -72,7 +72,9 @@ Familiarity with the process of creating and managing resources in Azure, Micros
 
 ## Configure Finance insights
 
-You must complete some configuration steps before you can use Finance insights. For more information about how to configure Finance insights, see [Configuration for Finance insights](configure-for-fin-insites.md).
+You must complete some configuration steps before you can use Finance insights. For more information about how to configure Finance insights, see:
+  - For versions up to 10.0.19: [Configuration for Finance insights - vesrions upto 10.0.19](configure-for-fin-insites.md).
+  - For versions 10.0.20 and beyond: [Configuration for Finance Insights (preview) - versions 10.0.20 and beyond](configure-for-fin-insites-PubPrvw.md).
 
 ## Create a data integrator project
 
