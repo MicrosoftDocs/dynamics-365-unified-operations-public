@@ -52,8 +52,8 @@ To illustrate a best practice for setting up an account structure, let's assume 
 **Profit and loss account structure**
 
 |Main account          | Business unit    |Department          | Cost center    |
-|----------------------|-----------|----------------------|-----------|
-|400000..999999 | *;” “|*;” “|*;” “|*;” “|
+|----------------------|------------------|--------------------|-----------|
+|400000..999999 | \*;” “| \*;” “| \*;” “| \*;” “|
 
 **Advanced rule for adding a Customer**
 

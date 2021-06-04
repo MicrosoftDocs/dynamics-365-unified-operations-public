@@ -31,8 +31,8 @@ This topic lists application business events.
 
 ## Procure to pay
 
-| Business event                  | Description                                                                                                                                | Module           |
-|---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|------------------|
+| Business event | Description | Module |
+|----|----|----|
 | Vendor invoice matched          | This event is triggered when invoice matching validation is completed for a vendor invoice as part of the Procure to pay process. | Accounts payable |
 | Vendor invoice posted           | This event business event is triggered when a user posts a vendor invoice as part of the Procure to Pay process. | Accounts payable |
 | Vendor payment posted           | This event is triggered when a user posts a vendor payment as part of the Procure to pay process.                                 | Accounts payable |
