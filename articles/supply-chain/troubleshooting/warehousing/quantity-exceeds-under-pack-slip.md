@@ -1,28 +1,25 @@
 ---
-
-title: Quantity exceeds under delivery percentage throughout Packing slip generation
-description: Quantity exceeds under delivery percentage throughout Packing slip generation
+title: Quantity exceeds under-delivery percentage throughout Packing slip generation
+description: When you are generating a packing slip, the outbound load contains a quantity that exceeds the under-delivery percentage.
 author: Henrikan
 ms.date: 5/31/2021
 ms.topic: troubleshooting
-ms.service: dynamics-ax-applications
 ms.search.form: WHSLoadTable_WHSSalesPackingSlipPost,WHSLoadPlanningListPage_WHSSalesPackingSlipPost,WHSLoadPlanningWorkbench_WHSSalesPackingSlipPost
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: Henrikan
 ms.search.region: Global
 ms.author: Henrikan
-
+ms.search.validFrom: 2021-05-31
+ms.dyn365.ops.version: 10.0.18
 ---
-
-# Quantity exceeds under delivery percentage throughout Packing slip generation
+<!-- KFM: What do you mean by "throughout"? -->
+# Quantity exceeds under-delivery percentage throughout packing slip generation
 
 Error code: SYS24921
 
-As part of the packing slip generation, the outbound load contains the quantity that is under the ordered Qty and is not within the range of under delivery percentage.
-
 ## Symptoms
+
+When you are generating a packing slip, the outbound load contains a quantity that exceeds the under-delivery percentage.
 
 When you try to generate a packing slip, the system shows the following error message:
 
@@ -32,25 +29,27 @@ Therefore, you can't generate the packing slip for the load.
 
 ## Cause
 
-The picked quantity of the load or shipment is less than ordered quantity and is not within the range of under delivery percentage.
+The picked quantity of the load or shipment is less than ordered quantity and is not within the range of under-delivery percentage.
 
 ## Resolution
 
-Load or shipment is currently in a state where packing slip generation fails. 
+The load or shipment is currently in a state where packing slip generation fails.
 
 To fix this issue, complete one of the following tasks:
 
 - Adjust under delivery percentage.
 - Reverse and make adjustments.
- 
+
 ### Adjust under delivery percentage
 
-1. Go to **Accounts receivable \> Orders \> All orders**. 
-1. Select the sales order that packing slip for the load cannot be posted for.   
-1. Open the **Sales order lines** tab and select the sales order line for the item that exceeds the under delivery.
-1. Open the **Line details** tab and, select **Delivery** .
-1. In the **Underdelivery** field, set the percentage to a large value, accommodating the quantity picked against the load quantity, allowing packing slip generation to proceed. 
+Use the following procedure to adjust the under-delivery percentage:
+
+1. Go to **Accounts receivable \> Orders \> All orders**.
+1. Select the sales order for which you can't post a packing slip for the load.
+1. Open the **Sales order lines** tab and select the sales order line for the item that exceeds the under-delivery percentage.
+1. Open the **Line details** tab and, select **Delivery**.
+1. In the **Underdelivery** field, set the percentage to a larger value that can accommodate the quantity picked against the load quantity, which will allow packing slip generation to proceed.
 
 ### Reverse and make adjustments
 
-Reverse everything that has been posted for the load, makes sales order adjustments, repeat all steps all over again.
+Reverse everything that has been posted for the load, make sales order adjustments, and repeat the steps. <!-- KFM: How do we reverse everything? Repeat which steps? -->
