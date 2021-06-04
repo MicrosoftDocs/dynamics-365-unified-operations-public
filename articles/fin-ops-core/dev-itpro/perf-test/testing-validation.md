@@ -29,8 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This tutorial shows you how to create and run test cases.
 
-Prerequisites
--------------
+## Prerequisites
 
 You will need to deploy Developer Topology with Developer and Build VM.
 

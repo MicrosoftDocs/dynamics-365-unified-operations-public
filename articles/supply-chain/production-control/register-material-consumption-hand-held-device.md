@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes a workflow that enables registration of raw material consumption in production by using a handheld device.
 
-Introduction
-------------
+## Introduction
 
 This workflow is relevant if there is a strict requirement for material traceability. In those cases, to maintain traceability of the materials, the exact time and quantity must be reported for the consumption. This process can be seen as opposed to pre- or back-flushing operations, where there is an offset between the time of registration and the time when the actual consumption takes place. This explains why a strategy of automatic consumption cannot be used for some materials with traceability requirements. Let’s look at a simple scenario that explains how to set up a workflow to enable registration of raw material consumption in production by using a handheld device. [![set up a workflow to enable registration of raw material consumption by using a handheld device](./media/scenario3.png)](./media/scenario3.png)
 

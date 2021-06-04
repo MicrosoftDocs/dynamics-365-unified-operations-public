@@ -54,8 +54,7 @@ Here are the primary changes that have been implemented in Finance and Operation
 -   Workflow development wizards have been ported into Microsoft Visual Studio.
 
 
-Additional resources
---------
+## Additional resources
 
 [Technical Concepts Guide for Developers](../dev-tools/developer-home-page.md)
 

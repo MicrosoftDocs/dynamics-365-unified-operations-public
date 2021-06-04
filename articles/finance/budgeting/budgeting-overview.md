@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities. 
 
-Components of budgeting functionality
--------------------------------------
+## Components of budgeting functionality
 
 The resource planning cycle for a company typically consists of planning, budgeting, and forecasting activities.
 

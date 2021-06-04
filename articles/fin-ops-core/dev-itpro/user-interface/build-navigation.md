@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In this tutorial, you will add navigational elements to a workspace and the navigation pane.
 
-Prerequisites
--------------
+## Prerequisites
 
 For this tutorial, you need to access the environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Instances](../dev-tools/access-instances.md).
 

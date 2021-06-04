@@ -58,8 +58,7 @@ The following table lists the tools that are provided in LCS and describes the p
 | [Downloadable tools](ax-2012/lcs-downloadable-tools-formerly-informationsource.md)                       | The **Downloadable tools** page provides a set of tools that were previously hosted on Microsoft Dynamics InformationSource.                                      |
 | [License sizing estimator](/dynamicsax-2012/appuser-itpro/license-sizing-estimator-lcs)                 | License sizing estimator helps you estimate the number of licenses that are required. It provides a shared workspace that lets you model default and customized roles, and then automatically calculate the required client access licenses (CALs).
 
-Additional resources
---------
+## Additional resources
 
 The LCS team is also blogging on the [Lifecycle Services Engineering blog](https://cloudblogs.microsoft.com/dynamics365/?s=lcs). Subscribe to our RSS feed to keep up with our posts and announcements.
 

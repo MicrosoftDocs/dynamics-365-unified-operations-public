@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to create new application controls that have a property sheet in Visual Studio and have server-side business logic.
 
-Prerequisites
--------------
+## Prerequisites
 
 For this tutorial, you must access the environment by using Remote Desktop, and you must be provisioned as an administrator on the instance. For more information, see [Deploy and access development environments](../dev-tools/access-instances.md).
 

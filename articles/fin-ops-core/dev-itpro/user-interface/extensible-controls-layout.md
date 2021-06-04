@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides guidelines that you should follow when you specify the layout and sizing of extensible controls.
 
-Dos and don'ts for achieving the desired layout
------------------------------------------------
+## Dos and don'ts for achieving the desired layout
 
 -   Don't use the layout classes on your control directly. (For example, **layout-container** and **layout-horizontal** are classes that you might see on controls in the DOM.) Instead, use the layout binding handlers to apply these classes. Internet Explorer uses a different layout framework, and to add some inline styles to elements, this framework requires the extra binding information that the handlers provide. Therefore, make sure that the classes are **not** hard-coded into the controls.
 -   Don't use absolute positioning (**position: absolute** and **top**/**bottom**/**left**/**right** positions) for elements that are children of a container that uses the layout binding handler. Absolute positioning of these elements prevents the CSS classes that are applied from laying things out correctly.
