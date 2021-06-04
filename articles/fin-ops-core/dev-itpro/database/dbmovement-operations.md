@@ -4,7 +4,7 @@
 title: Database movement operations home page
 description: This topic provides links to quick start guides and tutorials available for Database Movement features in Lifecycle Services. 
 author: laneswenka
-ms.date: 02/20/2020
+ms.date: 06/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,8 +47,8 @@ Production|	DevTest|	Not directly supported | Not supported | Recommend [Export 
 |Sandbox Point-in-time | Sandbox |[Point-in-time restore (PITR)](database-point-in-time-restore.md) | Not supported | [Destructive testing](dbmovement-scenario-destructivetests.md) |
 |Production Point-in-time| Sandbox| [Point-in-time restore of the production database to a sandbox environment](database-pitr-prod-sandbox.md) | Not supported | [Destructive testing](dbmovement-scenario-destructivetests.md)
 
->[!Important]
->Database movement operations are very lengthy operations.  The amount of time they take varies by data volume, schema complexity, and whether or not the target of the operation is a flat file like a .bacpac in the case of Export operation.  In general, these can take up to 24 hours to complete, and during the operation there is no means to cancel.  In addition, if the target of the operation is an environment like in the Production to Sandbox scenario, the Sandbox will go offline at an undetermined time, when the datatabase copy operation has completed but before the Database Synchronization steps begin.  This will happen at no warning to end-users in the environment, and as such it is best to schedule these types of operations during off hours.
+> [!Important]
+> Database movement operations are very lengthy operations.  The amount of time they take varies by data volume, schema complexity, and whether or not the target of the operation is a flat file, like a .bacpac file in the case of the export operation.  In general, these operations can take up to 24 hours to complete, and during the operation there is no means to cancel.  In addition, if the target of the operation is an environment like in the production to sandbox scenario, the sandbox environment will go offline at an undetermined time, when the datatabase copy operation has completed, but before the database synchronization steps begin.  This will happen with no warning to end users in the environment, and as such, it is best to schedule these types of operations during off hours.
 
 ## Database Movement API
 The Database Movement application programming interface (API) lets you integrate several of the previously mentioned database movement operations into your overall ALM process. In addition, by using the API together with your preferred scheduling engine, you can build recurrence into the process, so that it runs daily or on demand.
