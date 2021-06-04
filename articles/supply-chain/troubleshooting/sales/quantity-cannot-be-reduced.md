@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: The quantity cannot be reduced when canceling sales order
 description: The quantity cannot be reduced when canceling sales order
 author: hja@microsoft.com
-manager: tfehr
-ms.date: 5/17/2021 12:00:00 AM
+ms.date: 5/17/2021
 ms.topic: troubleshooting
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: SalesTable_SalesCancelOrder, SalesTableListPage_SalesCancelOrder
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: hja@microsoft.com
-ms.assetid: 
 ms.search.region: Global
 ms.author: hja@microsoft.com
-
+ms.search.validFrom: 2021-05-17
+ms.dyn365.ops.version: 10.0.18
 ---
 
 # The quantity cannot be reduced when canceling sales order
@@ -47,11 +33,11 @@ To fix this issue, complete the following tasks:
 
 - Cancel open work
 - Delete the load
-- Reduce picked quantity 
+- Reduce picked quantity
 
 ### Cancel open work
 
-To cancel work, follow these steps.
+To cancel work, follow these steps:
 
 1. Go to **Warehouse management \> Periodic tasks \> Clean up \> Cancel work**.
 1. In the **Work ID** field, specify the ID of the work that you want to cancel, and that currently has a **Work status** value of *Open*, *In progress*, *Canceled*, *Combined*, or *Closed*.
@@ -60,23 +46,29 @@ To cancel work, follow these steps.
 
 ### Delete the load
 
-1. On the sales order details page, on the toolbar, select the **Warehouse** drop down, and then select **Work details**.
-1. On the Action Pane, on the **Work** tab, in the **Work** group, select **Cancel work**.
-1. Inspect the **Work status** is set to *Canceled*.
-1. Close the **Work** form.
-1. On the sales order details page, on the toolbar, select the **Warehouse** drop down, and then select **Load details**.
+Do the following steps:
+
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+1. Open the relevant sales order.
+1. On the **Sales order lines** FatTab toolbar, select**Warehouse \> Work details**.
+1. The **Work** page opens. On the Action Pane, open the **Work** tab and, from the **Work** group, select **Cancel work**.
+1. Confirm that the **Work status** is set to *Canceled*.
+1. Close the **Work** page.
+1. You return to the sales order details page. On the **Sales order lines** FatTab toolbar, select **Warehouse \> Load details**.
 1. On the Action Pane, select **Delete**.
 1. Select **Yes** to confirm that you want to delete the load.
 1. Close the **Load** form.
 
 ### Reduce picked quantity
 
-When all work is canceled, follow these steps.
+When all work is canceled, follow these steps:
 
-1. On the sales order details page, on the toolbar, select the **Update line** drop down, and then select **Pick**.
-1. On the **Transactions** FastTab, select the line with **Issue status** set to *Picked*.
-1. On the Toolbar, select the **Add picking line**.
-1. On the **Picking lines** FastTab, on the Toolbar, select the **Confirm pick all**.
-1. Close the **Pick** form.
-1. On the Action Pane, on the **Maintain** group, select **Cancel**.
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+1. Open the relevant sales order.
+1. On the **Sales order lines** FatTab toolbar, select**Update line \> Pick**.
+1. The **Pick** page opens. In the **Transactions** section, select the line with **Issue status** set to *Picked*.
+1. On the **Transactions** toolbar, select the **Add picking line**.
+1. On the **Picking lines** toolbar, select the **Confirm pick all**.
+1. Close the **Pick** page.
+1. You return to the sales order details page. On the Action Pane, open the **Sales order** tab and, from the **Maintain** group, select **Cancel**.
 1. Select **Yes** to confirm that you want to cancel the sales order.

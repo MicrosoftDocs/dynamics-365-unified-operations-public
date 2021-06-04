@@ -3419,6 +3419,8 @@
           href: troubleshooting/rebates/cumulating-customer-.md
       - name: Sales and marketing
         items:
+        - name: The quantity cannot be reduced when canceling sales order
+          href: troubleshooting/sales/quantity-cannot-be-reduced.md
         - name: System administrators can't clear order holds because they aren't authorized
           href: troubleshooting/sales/system-administrator.md
       - name: Transportation management
