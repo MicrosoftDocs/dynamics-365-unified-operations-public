@@ -40,7 +40,7 @@ The following configurations need to be set up on the development machine that i
 > [NOTE]
 > For all Microsoft-managed or self-service type sandboxes, Microsoft will generate the certificate for your environment and have it pre-configured.
 
-1. Create an environmental variable named **TestRoot**, and and point it to the **PerfSDK** folder by running the following cmdlet in Microsoft Windows PowerShell.
+1. Create an environmental variable named **TestRoot**, and point it to the **PerfSDK** folder by running the following cmdlet in Microsoft Windows PowerShell.
 
     ```powershell
     [ENVIRONMENT]::SETENVIRONMENTVARIABLE("TESTROOT", "K:\PERFSDK\PERFSDKLOCALDIRECTORY", "USER")
@@ -86,7 +86,7 @@ Perform the following steps to prepare the sample solution for performance testi
     Get-ChildItem | Where-Object { $_.Subject -like "CN=127.0.0.1" }
     ```
 
-    The following illustration shows a sample result. Please make sure the thumbprint you saved earlier is in the list.
+    The following illustration shows a sample result. Make sure the thumbprint you saved earlier is in the list.
 
     ![Thumbprint in the Command Prompt window](media/perfsdk-multi-user-testing-01.png)
 
