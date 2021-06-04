@@ -237,7 +237,7 @@ In the current topology, [create a new ER format](tasks/er-format-configuration-
     ```
 
     > [!NOTE]
-    > In the preceding code, the `ERFormatDestinationSaveInFolderSettings` class is introduced as the `static` class. The implementation object should have a `static create(container)` method that creates an object and unpacks the container that the object requires for a correct pack-unpack process. For more information, see [Pack-Unpack Design Pattern](https://docs.microsoft.com/dynamicsax-2012/developer/pack-unpack-design-pattern#aa879675collapse_allen-usax60gifpublic-static-yourclass-createcontainer-_packedobject).
+    > In the preceding code, the `ERFormatDestinationSaveInFolderSettings` class is introduced as the `static` class. The implementation object should have a `static create(container)` method that creates an object and unpacks the container that the object requires for a correct pack-unpack process. For more information, see [Pack-Unpack Design Pattern](/dynamicsax-2012/developer/pack-unpack-design-pattern#aa879675collapse_allen-usax60gifpublic-static-yourclass-createcontainer-_packedobject).
 
 3. In your Visual Studio project, add a new extension for the `ERFormatDestinationSettings` form, and write code that implements a custom UI for your custom destination. The following illustration shows what this UI looks like in the Visual Studio designer.
 
@@ -308,7 +308,7 @@ In the current topology, [create a new ER format](tasks/er-format-configuration-
     ![Configuring the Save in folder destination in the Destination settings dialog box](media/er-custom-file-destination-destination-setting-custom.png)
 
     > [!NOTE] 
-    > Make sure that the specified custom destination folder (**c:\\0** in this example) is present in the local file system of the server that runs the AOS service. Otherwise, a [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) exception will be thrown at runtime.
+    > Make sure that the specified custom destination folder (**c:\\0** in this example) is present in the local file system of the server that runs the AOS service. Otherwise, a [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) exception will be thrown at runtime.
 
 ## Run the ER format that you created or imported
 
