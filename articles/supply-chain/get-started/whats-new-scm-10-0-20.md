@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.20 (July 2021) 
+title: Preview of Dynamics 365 Supply Chain Management 10.0.20 (August 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.20. 
 author: kamaybac
 ms.date: 05/28/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.20 (July 2021)
+# Preview of Dynamics 365 Supply Chain Management 10.0.20 (August 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -22,7 +22,7 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 
 - **Preview of release:** May 2021
 - **General availability of release (self-update):** June 2021
-- **General availability of release (auto-update):** July 2021
+- **General availability of release (auto-update):** August 2021
 
 ## Features included in this release
 
