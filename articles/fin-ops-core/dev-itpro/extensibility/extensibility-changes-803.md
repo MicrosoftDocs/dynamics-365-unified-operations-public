@@ -169,7 +169,7 @@ These methods have been refactored to support extensibility through chain of com
 |ProjIntercompanyTransQuery.buildExpenseQuery|
 |ProjIntercompanyTransQuery.buildHoursQuery|
 |ProjIntercompanyTransQuery.buildVendorInvoiceLinesQuery|
-|ProjInventJournalTransMapForm.checkActivity||
+|ProjInventJournalTransMapForm.checkActivity|
 |projInvoiceChooose.setProposalJour|
 |ProjInvoiceChoose.doRevenue|
 |ProjInvoiceChoose.updateInvoiceTotal|
