@@ -39,3 +39,29 @@ Given that all batch jobs may not be idempotent (for e.g a batch runs credit car
 
 ## Retries
 The retries are enabled for jobs that have implemented the Retryable interface and have set Retryable = true. Currently the retries happen on any interruption to SQL connection. Microsoft will continue adding retries on other exceptions.
+
+## Frequently asked questions
+
+### How do retries work for my custom batch jobs?
+There is no change to the custom batch jobs. In order to take advantage of the automated retries, implement the retryable interface explicitly on every custom batch job.
+
+### How do I implement the retryable interface?
+Add the following code to your Batch class
+```
+  class TestBatchJob extends RunBaseBatch implements BatchRetryable
+  {
+    [Wrappable(true), Replaceable(true)] // Change to meet your customizability requirements
+    public boolean isRetryable() // Use final if you want to prevent overriding
+    {
+        return false; // You can also use true if you want to enforce retryable behavior
+    }
+ ```
+ 
+ ### I am extending a Microsoft batch that is retryable, but my batch job is not. Will the retry trigger?
+ As long as the extended job has the Retryable set to false, the job will not be retried.
+ 
+ ### I marked my custom job as Retryable by mistake. Is there a way I can override without taking another code change?
+ Yes, you can go to the system administration -> batch -> override form and override the retryable value to false. This will prevent further executions from being retried.
+ 
+ ### I have 100s of batch jobs? How do I discover all my batch jobs to implement the interface?
+ Plug in Peter's github repo here.
