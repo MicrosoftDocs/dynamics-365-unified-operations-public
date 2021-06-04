@@ -42,7 +42,7 @@ For more information about Xamarin, see the [Xamarin documentation](/xamarin/).
 
 ## Set up and install Xamarin on Windows
 
-To set up and install Xamarin on Windows, go to <https://docs.microsoft.com/xamarin/android/get-started/installation/windows>.
+To set up and install Xamarin on Windows, go to [Windows Installation](/xamarin/android/get-started/installation/windows).
 
 ### Update Xamarin
 

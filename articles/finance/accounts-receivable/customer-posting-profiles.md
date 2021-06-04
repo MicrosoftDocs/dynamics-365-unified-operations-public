@@ -124,7 +124,6 @@ If you want all customer transactions to have the same posting profile, set up o
 </tbody>
 </table>
 
-### 
 
 ### **Table restrictions**
 

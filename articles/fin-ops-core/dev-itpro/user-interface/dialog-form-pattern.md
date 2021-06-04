@@ -259,8 +259,6 @@ This section will have answers to frequently asked questions that are related to
 | Custom controls     | Yes                                                                                                                    | Yes                                     | Yes                                       | Yes                                                                  |                                                                                                                                                                                                          |
 | Grid                | Yes, but no horizontal scrolling                                                                                       | Yes, but no horizontal scrolling        | Yes, but no horizontal scrolling          | Yes                                                                  | The maximum number of columns depends on the width of the fields in the column. Therefore, the width is defined by *x* × 100% field size.                                                                |
 
-### 
-
 ### AX 2012 content
 
 [![Previous version content](./media/dialogform10.png)](./media/dialogform10.png)
