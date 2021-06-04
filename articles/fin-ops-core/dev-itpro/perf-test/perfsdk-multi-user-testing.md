@@ -1,13 +1,13 @@
 ---
 title: Multi-user testing using the Performance SDK
 description: This topic explains how to run multi-user testing by using Microsoft Visual Studio, the Performance SDK, and the Task recorder test scripts.
-author: kesaelen
+author: kennysaelen
 ms.date: 04/13/2020
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kennysaelen
+ms.author: kesaelen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
 ---
