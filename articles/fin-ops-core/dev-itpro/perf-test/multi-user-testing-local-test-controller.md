@@ -70,7 +70,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 
     Here is an explanation of the elements in preceding commands:
 
-    - **-n "CN=127.0.0.1"** gives a human-readable name to the certificate. It's very important that the name of this certificate be **127.0.0.1**. Otherwise, the single-user tests won't be able to run.
+    - **-n "CN=127.0.0.1"** gives a human-readable name to the certificate. It's important that the name of this certificate be **127.0.0.1**. Otherwise, the single-user tests won't be able to run.
     - **-eku 1.3.6.1.5.5.7.3.1** gives the purpose of the certificate. It indicates that the certificate can be used as a Secure Sockets Layer (SSL) server certificate.
 
     The commands generate the following certificates and save them in C:\\Temp:
@@ -248,7 +248,7 @@ Use the **Download** button to retrieve the certificate bundle as a .zip file.
 6. Double-click the certificate file to open it. Browse to the **Details** tab, and scroll down until you see the **Thumbprint** section. Select **Thumbprint**, and copy the ID in the text box. Use this thumbprint for RSAT and to update your PerfSDK **CloudEnvironment.config** thumbprint.
 ![Thumbprint settings](rsat/media/rsat-lcs4.png)
 
-You can now run your tests against the environment using this certificate. The certificate will be auto-rotated by Microsoft before it expires, at which time you will need to download a new version of this certificate starting from step 1 above. For self-service environments this will be rotated every 90 days during a downtime window that is closest to the expiry. These downtime windows include customer initiated package deployment, and database movement operations that target the environment.
+You can now run your tests against the environment using this certificate. The certificate will be autorotated by Microsoft before it expires, at which time you will need to download a new version of this certificate starting from step 1 above. For self-service environments this will be rotated every 90 days during a downtime window that is closest to the expiry. These downtime windows include customer initiated package deployment, and database movement operations that target the environment.
 
 ## Create test users
 
