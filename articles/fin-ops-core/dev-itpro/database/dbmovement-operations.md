@@ -36,7 +36,7 @@ In this topic, you will learn how to use database movement operations to perform
 ## Database movement scenarios and quick start guides
 Below find the various scenarios that are supported and a link to a quick start guide for each:
 
-| Source Environment | Target Environment | Quick Start Guide | Available via API | Tutorials 
+| Source environment | Target environment | Quick Start guide | Available via API | Tutorials 
 |---|---|---|---|---|
 |Production|	Sandbox|	[Refresh database](database-refresh.md) | [Create refresh](api/v1/reference-create-refresh.md) | [Refresh for training purposes](dbmovement-scenario-general-refresh.md)<br/>[Debug a copy of the production database](dbmovement-scenario-debugdiag.md) |
 |Sandbox|	Production| [Refresh database](database-refresh.md) | Not supported | [Golden configuration promotion](dbmovement-scenario-goldenconfig.md) |
