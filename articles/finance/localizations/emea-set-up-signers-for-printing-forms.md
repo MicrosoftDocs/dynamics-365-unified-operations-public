@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 For legal entities in Czech Republic, Estonia, Hungary, Lithuania, Latvia, Poland, and Russia, you can set up signers and titles for customers and vendors that print documents such as invoices and cash orders.
 
-Set up default values
----------------------
+## Set up default values
 
 To set up signers for the documents that a company prints, use the **Officials** page. You can set up signers and their titles both for the company and for customers or vendors, depending on the document type. The following table describes the tabs on the **Officials** page.
 

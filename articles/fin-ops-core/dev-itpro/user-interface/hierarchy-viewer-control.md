@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about the HierarchyViewer control, which lets you represent hierarchical relationships for people, products, or organizations.
 
-Overview
---------
+## Overview
 
 The HierarchyViewer control lets you represent hierarchical relationships for people, products, or organizations. It's used primarily as a graphical means to help you understand hierarchical relationships in a traditional top-down manner, and as way to navigate to the entity that is represented by the focused node. The HierarchyViewer control lets you walk through deeply nested, multilevel content in a compact space. The control expands and collapses nodes to control the parts of the tree structure that are shown. Because it's an unbound control, the HierarchyViewer data is managed by an abstraction class and is used primarily as a way to visualize data in a simple tree relationship. For hierarchy data in a traditional tree, there is a standard tree control. 
 

@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about the Toolbar and List form subpattern. This subpattern is used to show child collections for the parent entity as either a tabular grid or a tree. 
 
-Usage
------
+## Usage
 
 This subpattern is used to show child collections for the parent entity as either a tabular grid or a tree. The toolbar contains fewer than 10 actions. If a grid is used, it contains fewer than 10 fields. This article describes two patterns:
 

@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In Dynamics 365 Finance, you can manually select transactions to settle, or you can use the automatic settlement functionality. Public-sector organizations have additional options for prioritizing settlements by using billing classifications. These options can be used with automatic or manual settlement.
 
-How to set the general ledger parameters and accounts receivable parameters for settlement priority
----------------------------------------------------------------------------------------------------
+## How to set the general ledger parameters and accounts receivable parameters for settlement priority
 
 To use billing classifications to control settlement priorities, you must set both a sales tax parameter in the General ledger app and settlement parameters in the Accounts receivable app. 
 

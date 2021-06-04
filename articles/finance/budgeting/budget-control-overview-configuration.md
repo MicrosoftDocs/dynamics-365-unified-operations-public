@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article introduces budget control and provides information to help you configure budget control so that you can manage financial resources.
 
-Overview
---------
+## Overview
 
 Budget control supports management of an organization’s financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. 
 

@@ -193,8 +193,7 @@ After the metadata backup has been restored, delete (or rename) the metadata bac
 
 After you've prepared your build environment for this update, apply the platform update package by using the same method that you use on other environments.
 
-Additional resources
---------
+## Additional resources
 
 [Process for moving to the latest update of Finance and Operations](upgrade-latest-update.md)
 

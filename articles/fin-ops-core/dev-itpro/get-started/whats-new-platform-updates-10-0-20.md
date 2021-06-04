@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Platform updates for version 10.0.20 of Finance and Operations apps (July 2021)
+title: Platform updates for version 10.0.20 of Finance and Operations apps (August 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.20 of Finance and Operations apps.
 author: sericks007
 ms.date: 05/27/2021
@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.20
 
 ---
-# Platform updates for version 10.0.20 of Finance and Operations apps (July 2021)
+# Platform updates for version 10.0.20 of Finance and Operations apps (August 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -34,8 +34,9 @@ ms.dyn365.ops.version: 10.0.20
 This topic lists the features that are included in the platform updates for version 10.0.20 of Finance and Operations apps. This version has a build number of 7.0.6060 and is available on the following schedule:
 
 - **Preview of release:** May 2021
-- **General availability of release (self-update):** June 2021
+- **General availability of release (self-update):** July 2021
 - **General availability of release (auto-update):** July 2021
+
 
 ## Features included in this release
 

@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about the Tabular Fields subpattern. This subpattern is used to show information efficiently in a tabular format. 
 
-Usage
------
+## Usage
 
 This subpattern is used to show information efficiently in a tabular format. The fields are arranged in a table that contains rows and columns, and that optionally contains column headers, row labels, a caption, and a footer. The Tabular Fields subpattern can be applied on the following controls:
 

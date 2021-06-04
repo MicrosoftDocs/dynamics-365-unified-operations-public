@@ -38,8 +38,7 @@ The objective of this lab is to provide a guided view of Microsoft Dynamics 365 
 - Using allocations to adjust budget plan document data
 - Editing budget plan document data in Excel 
 
-Prerequisites 
-------------------
+## Prerequisites 
 
 For this tutorial, you’ll need to access the Microsoft Dynamics 365 Finance environment with Contoso demo data, and be provisioned as an administrator on the instance. Do not use In Private browser mode for this lab - sign out from any other account in the browser if needed and sign in with administrator credentials. When signing in, you **MUST** check the “Keep me signed in” checkbox. This creates a persistent cookie that the Excel App currently needs. If you sign in to the application using a browser other than IE, then you’ll be prompted to sign in within the Excel App. When you click “Sign in” in the Excel App, an IE popup window will open and when signing in you **MUST** check the “Keep me signed in” check box. If clicking “Sign in” in the Excel App doesn’t appear to do anything then you should clear the IE cookie cache.
 

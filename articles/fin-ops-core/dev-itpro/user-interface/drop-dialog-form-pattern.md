@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about the Drop Dialog form pattern. This pattern is used to initiate actions when the number of fields is seven or fewer. 
 
-Usage
------
+## Usage
 
 The Drop Dialog pattern is used to initiate actions when the number of fields is seven or fewer. Drop dialogs are quick and easy for users to use, and are more lightweight than a full dialog that is presented as a slider. Drop dialogs should feel as lightweight to use as a menu. Two patterns are described in this document:
 

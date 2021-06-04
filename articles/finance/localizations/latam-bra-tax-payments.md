@@ -33,8 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic provides information about tax payments in Brazil. In Brazil, users can register and post tax payments together with related fiscal information that must be reported to the tax authorities.
 
-Overview
---------
+## Overview
 
 Every type of tax in Brazil has its own process, due date, and additional tax statement information that is required by the tax authorities. The **Fiscal books** module generates the Sistema Publico de Escrituração Digital (SPED) statements that are required for taxes. The tax payment process is separated by tax types: ICMS, ICMS-ST, ICMS-DIF, IPI, ISS, and PIS-COFINS.
 

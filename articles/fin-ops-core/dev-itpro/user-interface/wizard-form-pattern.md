@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about the Wizard form pattern. A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages.
 
-Usage
------
+## Usage
 
 A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages. Wizards are especially useful for complex or infrequent tasks that the user might have difficulty learning or doing, or for tedious, frequently performed tasks.
 

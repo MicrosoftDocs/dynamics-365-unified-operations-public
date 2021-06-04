@@ -33,8 +33,7 @@ ms.search.validFrom: 2017-02-28
 
 This topic describes the **Finance and Operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.
 
-Overview
---------
+## Overview
 
 The mobile app enables your organization to make its business processes available on mobile devices. After your IT admin enables the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices. The mobile app includes the following features that can help increase productivity:
 
