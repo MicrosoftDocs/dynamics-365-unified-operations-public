@@ -37,7 +37,8 @@ Use the information in this topic to perform multi-user testing by using Visual 
 
 Before you complete the steps in this topic, verify that the following prerequisites are met:
 
-- You have Microsoft Visual Studio Enterprise edition in a development environment. Enterprise edition is required to author load tests.
+- You have **Microsoft Visual Studio Enterprise edition** in a development environment. Enterprise edition is required to author load tests. If you are deploying your development box as a Cloud Hosted Environment through LCS, please make sure to select the appropriate Microsoft Visual Studio version to deploy.
+- Verify that the Visual Studio Web performance and load testing tools are installed as described in the [quickstart documentation](https://docs.microsoft.com/en-us/visualstudio/test/quickstart-create-a-load-test-project?view=vs-2019#install-the-load-testing-component).
 - You have a tier-2 or above sandbox environment that has the same release (application version and platform update) as your development environment.
 - You've configured your development environment by following the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md).
 - C\# performance testing classes have been generated for your end-to-end (E2E) scenarios, and you can run a single-user test by following the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md).
@@ -59,7 +60,7 @@ The following configurations need to be done on the development machine we are u
     ```
     [ENVIRONMENT]::GETENVIRONMENTVARIABLE("TESTROOT", "USER") | Write-Host
     ```
-2. Open the **environment details page on Lifecycle Services**.
+2. Open the **environment details page** of your **target sandbox environment** on **Lifecycle Services**.
 
 3. Under the **Maintain** menu option you'll see two new options.
     - Download RSAT certificate
@@ -101,7 +102,7 @@ Perform the following steps to prepare the sample solution for performance testi
 2. Update the configuration file **CloudEnvironment.config** in the Performance SDK folder describing the environment we are targeting. As part of this update, follow these steps:
 
     - Verify that the settings for **HostName** and **SOAPHostName** match your tier-2 or above sandbox environment.    
-    - Add the thumbprint saved earlier as the value for **SelfSigningCertificateThumbprint**.
+    - Add the thumbprint saved earlier as the value for **SelfSigningCertificateThumbprint**. If the entry is missing from you configuration file, you can add it as illustrated below.
     - Update **UserCount** to reflect the number of test users in your case.
     - Update **UserFormat** to reflect your naming convention for test users.
     - In each **AuthenticatorConfiguration element** under the **AuthenticatorConfigurationCollection element**, replace **MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAadAuthenticator** with **MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAuthenticator**.
@@ -115,7 +116,7 @@ Perform the following steps to prepare the sample solution for performance testi
     [![Updated CloudEnvironment.config file](./media/perfsdk-multi-user-testing-02.png)](./media/perfsdk-multi-user-testing-02.png)
 
 3. Rename the **vsonline.testsettings** file to **local.testsettings**. 
-4. Open and modify the **local.testsettings** file by following these steps. 
+4. Open and modify the **local.testsettings** file in **Microsoft Visual Studio** by following these steps. 
     - In the **Test Settings** dialog box, on the **General** tab, in the **Test run Location** field group, select the **Run tests using local computer or a test controller** option.
 
     - On the **Deployment** tab, select the **Enable deployment** check box, and then use the **Add Directory** button to add the bin\debug folder to the **Additional files and directories to deploy** field.
@@ -124,6 +125,7 @@ Perform the following steps to prepare the sample solution for performance testi
 
     - On the **Hosts** tab, in the **Run tests in 32 bits or 64 bits process** field, select **Run test in 64 bits process on 64 bits machine**.
     - Select **Apply**, and then close the **Test Settings** dialog box.
+    - Open and modify your project configuration and set the **Target Framework** to **.NET Framework 4.6.2**.
 
     > [!NOTE]
     > Whenever you use the Microsoft Dynamics 365 Add-in to generate a C# performance test from a task recording, it will reload the project in Visual Studio instead of reopening the entire solution. Make sure to reload the solution before running any load tests to ensure the test settings file is visible.  
@@ -177,7 +179,7 @@ Perform these steps for each of the generated performance tests in your solution
 
 Perform the following steps to add a performance test to the test mix.
 
-1. Open the **SampleLoadTest.loadtest** file and navigate to the **Test Mix** node.
+1. Open the **SampleLoadTest.loadtest** file in your project and navigate to the **Test Mix** node.
 2. Right click the **Test Mix** node and select **Edit Test Mix**.
 
     [![Editing the test mix](./media/perfsdk-multi-user-testing-05.png)](./media/perfsdk-multi-user-testing-05.png)
