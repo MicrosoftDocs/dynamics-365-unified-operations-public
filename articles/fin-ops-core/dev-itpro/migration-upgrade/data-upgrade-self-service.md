@@ -18,6 +18,9 @@ ms.search.validFrom: 2021-06-30
 
 [!include[banner](../includes/banner.md)]
 
+> [!IMPORTANT]
+> Some or all of the functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change.
+
 ## Prerequisites
 
 1. Download and install the [.NET core software development kit (SDK)](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-3.1.409-windows-x64-installer) if it isn't already installed.
