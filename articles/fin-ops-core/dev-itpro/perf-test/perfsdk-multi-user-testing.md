@@ -92,7 +92,7 @@ Perform the following steps to prepare the sample solution for performance testi
 2. Update the configuration file **CloudEnvironment.config** in the Performance SDK folder describing the targeted environment. As part of this update, follow these steps:
 
     - Verify that the settings for **HostName** and **SOAPHostName** match your tier-2 or above sandbox environment.    
-    - Add the thumbprint saved earlier as the value for **SelfSigningCertificateThumbprint**. If the entry is missing from you configuration file, you can add it as illustrated below.
+    - Add the thumbprint saved earlier as the value for **SelfSigningCertificateThumbprint**. If the entry is missing from your configuration file, you can add it as illustrated below.
     - Update **UserCount** to reflect the number of test users in your case.
     - Update **UserFormat** to reflect your naming convention for test users.
     - In each **AuthenticatorConfiguration element** under the **AuthenticatorConfigurationCollection element**, replace **MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAadAuthenticator** with **MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAuthenticator**.
