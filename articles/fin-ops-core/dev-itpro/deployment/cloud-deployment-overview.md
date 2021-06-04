@@ -57,10 +57,10 @@ Here's how the lifecycle maps to the available environments.  If you already hav
 
 | Lifecycle phase      | Environment tier         | Subscription            | Environment types                 | Environment sub-type 
 |-------------------------------|---------------------------------|--------------------------------------|---------------------------------------------|---------------------------------------------|
-| Evaluation and analysis       | Tier 1 Sandbox | Cloud hosted | Customer-managed | Demo
-| Customize                     | Tier 1 Sandbox | Cloud hosted or VHD | Customer-managed | Develop
-| Golden configuration          | Tier 1 Sandbox | Cloud hosted | Customer-managed | Develop
-| User acceptance testing (UAT) | Tiers 2-5 Sandbox | Microsoft                 | Microsoft-managed or self-service | Not applicable
+| Evaluation and analysis       | Tier 1 sandbox | Cloud hosted | Customer-managed | Demo
+| Customize                     | Tier 1 sandbox | Cloud hosted or VHD | Customer-managed | Develop
+| Golden configuration          | Tier 1 sandbox | Cloud hosted | Customer-managed | Develop
+| User acceptance testing (UAT) | Tiers 2-5 sandbox | Microsoft                 | Microsoft-managed or self-service | Not applicable
 | Go live                       | Production | Microsoft                    | Microsoft-managed or self-service | Not applicable     
 
 *Tiers 2-5 can be purchased to increase performance of the environment.  The higher the tier, the more compute and database capacity is reserved for your use.*
@@ -177,8 +177,8 @@ To provide the best experience and performance, Microsoft performs maintenance o
 
 While your environment is in this state and until the status returns to 'Deployed', you will not be able to perform any lifecycle operations, such as package applications. There will be no impact to Finance and Operations apps. Users can continue with normal operations without any service interruption. You will receive an email notification before any maintenance operation puts your environment in this state.
 
-### How do I connect to the SQL database on my Sandbox environment?
-To connect to the SQL database in your Sandbox environment, follow the steps in [Enable just-in-time access](../database/database-just-in-time-JIT-access.md).
+### How do I connect to the SQL database on my sandbox environment?
+To connect to the SQL database in your sandbox environment, follow the steps in [Enable just-in-time access](../database/database-just-in-time-JIT-access.md).
 
 ### How do I access a development instance?
 For information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators, see [Deploy and access development environments](../dev-tools/access-instances.md).
@@ -195,7 +195,7 @@ You can bring your own domain name if it is running Azure Active Directory (AAD)
 ### Can I add guest AAD accounts as users?
 You can add guest AAD accounts if you have correctly configured them within Azure Active Directory, and enabled the Finance and Operations apps within your AAD. 
 
-### Why am I no longer able to see the Private AOS machines in one or more of my Tier 2 through Tier 5 Sandbox environments?
+### Why am I no longer able to see the Private AOS machines in one or more of my Tier 2 through Tier 5 sandbox environments?
 The Private AOS VMs were part of your environment configuration as they were needed to secure communication between the AOS and BI machines in the past. With recent updates, all communication between AOS and BI machines are secure directly and no longer need the intermediary Private AOS machines. Therefore, we are in the process of rolling out removing the Private AOS machines. As we are removing the machines in batches, you may notice that only some of your environments have the Private AOS machines removed. This change will not impact functionality or security in any way and will be transparent to you.
 
 ### Why am I no longer able to Remote Desktop into one or more of my Tier 1 through Tier 5 Microsoft-managed sandbox environments?
