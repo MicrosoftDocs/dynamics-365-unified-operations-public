@@ -7,7 +7,7 @@ ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: kesaelen
+ms.author: kennysaelen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
 ---
@@ -28,7 +28,7 @@ This topic explains how to run multi-user testing by using Microsoft Visual Stud
 Before you complete the steps in this topic, verify that the following prerequisites are met:
 
 - You have **Microsoft Visual Studio Enterprise edition** in a development environment. Enterprise edition is required to author load tests. If you are deploying your development box as a Cloud Hosted Environment through LCS, please make sure to select the appropriate Microsoft Visual Studio version to deploy.
-- Verify that the Visual Studio Web performance and load testing tools are installed as described in the [quickstart documentation](https://docs.microsoft.com/en-us/visualstudio/test/quickstart-create-a-load-test-project?view=vs-2019#install-the-load-testing-component).
+- Verify that the Visual Studio Web performance and load testing tools are installed as described in the [quickstart documentation](https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project?view=vs-2019#install-the-load-testing-component).
 - You have a tier-2 or above sandbox environment that has the same release (application version and platform update) as your development environment.
 - You've configured your development environment by following the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md).
 - C\# performance testing classes have been generated for your end-to-end (E2E) scenarios, and you can run a single-user test by following the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md).
