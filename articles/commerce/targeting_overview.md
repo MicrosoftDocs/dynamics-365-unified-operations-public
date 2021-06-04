@@ -29,6 +29,12 @@ ms.dyn365.ops.version: AX 10.0.21
 # Customer segmentation and targeting in Dynamics 365 Commerce
 Dynamics 365 Commerce enables you to target specific groups of customer with different page content based on their device information, geolocation, and other dynamically derived attributes from their browser request. This will help personalize content in near real-time for these target groups known as **audiences** and drive increased user engagement and satisfaction.
 
+Dynamics 365 Commerce will give retailers the ability to target specific customer groups with different page content variations based on the shoppers’ device (tablet vs. phone, iOS vs. Android), geolocation, and other dynamically derived attributes from their browser request. This will help personalize content in near real-time for these target groups/audiences and drive increased user engagement and satisfaction. 
+
+This feature will enable segmentation of customer data such as geolocation, device information, sign-in status, referrer, or query string parameters, gathered from the customer's web browser. These segments can then be used to generate audience groupings in site builder and render targeted content across the digital commerce channel.
+Segmented targeting will support content-based scenarios within site builder. Module and fragment variants can be authored in site builder and associated with targeting rules to ensure easy authoring with powerful results.
+
+
 ## Audiences
 Audience – group of users whose membership is determined by a set of dynamic rules
 
