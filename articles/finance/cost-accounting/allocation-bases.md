@@ -216,7 +216,7 @@ After the statistical measure source data is processed, the following entries wi
 
 **Statistical entries**
 
-| Cost object |    | Accounting date | Statistical dimension member |    Description          | Magnitude |
+| Cost object | Name   | Accounting date | Statistical dimension member |    Description          | Magnitude |
 |-------------|----|-----------------|------------------------------|-------------------------|-----------|
 | CC001       | HR | 31-01-2017      | Electricity                  | Electricity consumption | 2,450.00  |
 | CC002       | FI | 31-01-2017      | Electricity                  | Electricity consumption | 4,100.00  |
@@ -408,7 +408,7 @@ A Preview function lets you validate the formula allocation base that is created
 
 **Allocation base details**
 
-| Cost object |    | Formula                                                                                                                             | Magnitude |
+| Cost object |  Name  | Formula                                                                                                                             | Magnitude |
 |-------------|----|-------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | CC001       | HR | ((2,450.00 \> 10.000.00) × ((10,000.00 × 0.75) + (2,450.00 – 10,000.00) × 1.15)) + ((2,450.00 \<= 10,000.00) × 2,450.00 × 0.75)     | 1,837.50  |
 | CC002       | FI | ((4,100.00 \> 10.000.00) × ((10,000.00 × 0.75) + (4,100.00 – 10,000.00) × 1.15)) + ((4,100.00 \<= 10,000.00) × 4,100.00 × 0.75)     | 3,075.00  |
