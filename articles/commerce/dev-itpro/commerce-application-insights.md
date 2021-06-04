@@ -43,9 +43,9 @@ This topic explains how to log events to [Customer Application Insights](/azure/
 
 ## Set up and configure Application Insights in Azure
 
-Follow the steps mentioned in [Create an Application Insights resource](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-new-resource) to generate the instrumentation key or the connection string.
+Follow the steps in [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource) to generate the instrumentation key or the connection string.
 
-Copy the instrumentation key, we will use this in the CRT. For recent updates and new recommended options to log events, follow the [Azure Application Insights documentation.](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
+Copy the instrumentation key, which you will use in the CRT. For recent updates and new recommended options to log events, see [Azure Application Insights documentation.](/azure/azure-monitor/app/app-insights-overview)
 
 ## Extend the CRT extension project to log events to Application Insights
 
@@ -54,7 +54,7 @@ Copy the instrumentation key, we will use this in the CRT. For recent updates an
     > [!div class="mx-imgBorder"]
     > ![New Contoso.Diagnostic project](media/VSProject.png)
 
-2. Add the NuGet packages references to the following libraries:
+2. Add the NuGet package references to the following libraries:
 
     + Microsoft.ApplicationInsights
     + Netstandard
@@ -178,7 +178,7 @@ For detailed information about how to build deployable packages, see [Create dep
     ```
  
  > [!NOTE]
- > The sample documented here is based on applicationinsights-web npm package version 2.5.8, the sample may not work as-is in the updated applicationinsights-web package.
+ > The sample documented here is based on applicationinsights-web npm package version 2.5.8. The sample may not work as-is in the updated applicationinsights-web package.
 
 After the package is installed, the **POS/Extensions/Libraries** folder should contain the **node_modules** folder. The **node_modules** folder contains the Application Insights library files.
 
