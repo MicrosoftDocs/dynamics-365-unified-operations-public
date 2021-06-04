@@ -145,7 +145,7 @@ After the validation is successful, the application presents a set of menu optio
 
 5. **Replication: Set up publication for primary key tables**
 
-    This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If  any **ignore-table** entries are specified, the specified tables are exempted from replication and at the same.
+    This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If  any **ignore-table** entries are specified, the specified tables are exempted from replication.
 
     **Created publishers:** AXDB\_PUB\_TABLE\_Obj\_\[\*\]
 
@@ -196,13 +196,13 @@ After the validation is successful, the application presents a set of menu optio
     > To remove the **Snapshot** folder without causing an exception, run the following script in the source database. Even if you don't run this script, you can ignore the exception message that you receive.
     >
     > ```sql
-    > **EXEC** master.dbo.sp\_configure 'show advanced options', 1
+    > EXEC master.dbo.sp\_configure 'show advanced options', 1
     >
-    > RECONFIGURE **WITH** OVERRIDE
+    > RECONFIGURE WITH OVERRIDE
     > 
-    > **EXEC** master.dbo.sp\_configure 'xp\_cmdshell', 1
+    > EXEC master.dbo.sp\_configure 'xp\_cmdshell', 1
     > 
-    > RECONFIGURE **WITH** OVERRIDE
+    > RECONFIGURE WITH OVERRIDE
     > ```
 
 11. **Post-replication: Update environment state to Replicated**
@@ -240,15 +240,15 @@ You can use the following options to review the reports of the replication valid
 
 ## Tooling section of the application
 
-- **Reset:** Reset the replication setup by removing all the replication configurations. Publications and the distribution database are deleted. The status of all menu options is reset from completed to reset mode to help you redo the replication from the beginning.
+- **Reset:** Reset the replication setup by removing all the replication configurations. Publications and the distribution database are deleted. The status of all menu options is reset from **Completed** to **Reset** mode to help you redo the replication from the beginning.
 
 - **Reset-all:** Reset all the menu options.
 
-    **Reset** option + **Clear** option + All the options will be changed to **Not Started**.
+    **Reset** option and **Clear** option will be performed. All the options will be changed to **Not Started**.
 
 - **Clear:** Clear the environment setup activity. All information is cleared from the cache, such as the **project-Id** value, **Environment-Id** value, and source database details. The status of step 1 is changed to **Not Started**.
 - **Help:** Show the data upgrade migration. The menu option status is shown together with the updated status.
-- **Exit:** Exit.
+- **Exit:** Close the application.
 
 ## Learn about the replication configuration and status via SQL Server Management Studio
 
