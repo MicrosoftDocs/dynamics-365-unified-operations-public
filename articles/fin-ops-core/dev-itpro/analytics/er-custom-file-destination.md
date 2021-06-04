@@ -308,7 +308,7 @@ In the current topology, [create a new ER format](tasks/er-format-configuration-
     ![Configuring the Save in folder destination in the Destination settings dialog box](media/er-custom-file-destination-destination-setting-custom.png)
 
     > [!NOTE] 
-    > Make sure that the specified custom destination folder (**c:\\0** in this example) is present in the local file system of the server that runs the AOS service. Otherwise, a [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) exception will be thrown at runtime.
+    > Make sure that the specified custom destination folder (**c:\\0** in this example) is present in the local file system of the server that runs the AOS service. Otherwise, a [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) exception will be thrown at runtime.
 
 ## Run the ER format that you created or imported
 

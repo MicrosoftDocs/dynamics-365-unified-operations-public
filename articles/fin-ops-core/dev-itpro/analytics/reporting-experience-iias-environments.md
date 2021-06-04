@@ -53,7 +53,7 @@ The following table compares the fundamentals of the two reporting experiences.
 |--------------------------|---------|------------------|
 | **Display format**       | PDF and Office documents | HTML |
 | **Data volume**          | One to hundreds of rows | Tens of thousands of rows or more |
-| **Interactive features** | Printing, text search, and sharing | [Drill-through, drill-down, and nested regions](/sql/reporting-services/report-design/drillthrough-drilldown-subreports-and-nested-data-regions?view=sql-server-ver15) |
+| **Interactive features** | Printing, text search, and sharing | [Drill-through, drill-down, and nested regions](/sql/reporting-services/report-design/drillthrough-drilldown-subreports-and-nested-data-regions) |
 | **Data source**          | Transactional database | Data warehouse |
 | **Report author**        | Developer | Power user |
 | **Layout**               | Structured, predefined layout | Adaptive, flexible layout |
