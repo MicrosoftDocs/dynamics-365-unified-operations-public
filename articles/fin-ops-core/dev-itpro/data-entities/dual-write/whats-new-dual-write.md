@@ -122,7 +122,7 @@ This release contains the features and bug fixes listed in the following table.
 | [Notes integration](notes-integration.md) | Notes are integrated between customer engagement apps and Finance and Operations applications for customers, vendors, sales orders, and purchase orders.  | General availability |
 
 > [!IMPORTANT]
-> If you don't need notes integration, do not install or upgrade to Dual-write application orchestration solution version 2.2.2.23 or above. If you install the update, you won't be able to uninstall the notes feature. 
+> If you don't need notes integration, do not install or upgrade to Dual-write application orchestration solution version 2.2.2.23 or later. If you install the update, you won't be able to uninstall the notes feature. 
 
 ## January 2021 release
 
