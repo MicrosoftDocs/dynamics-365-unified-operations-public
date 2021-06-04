@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how the withdrawal kanban is used for material replenishment for manufacturing activities.
 
-## ## Workflow for material replenishment that uses the withdrawal kanban
+## Workflow for material replenishment that uses the withdrawal kanban
 
 The withdrawal kanban can be used to move a kanban of a single item between warehouses and production locations where the material is consumed. The withdrawal kanban supports a pull-based solution for material replenishment, where a pull signal is required in order to trigger supply for a specific demand. 
 
