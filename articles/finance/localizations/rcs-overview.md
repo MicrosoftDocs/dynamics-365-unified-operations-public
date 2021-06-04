@@ -4,7 +4,7 @@
 title: Regulatory Configuration Service
 description: This topic provides an overview of the capabilities of Regulatory Configuration Service (RCS) and explains how to access the service.
 author: JaneA07
-ms.date: 04/07/2021
+ms.date: 06/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -65,13 +65,13 @@ For a complete list of regions, see [Dynamics 365 and Power Platform: Availabili
 
 ## RCS default company
 
-Design time functionality used in RCS is shared across all companies and therefore they do not contain company-specific functionality, for this reason we recommend using single company 'DAT' with your RCS environment.
+Design time functionality used in RCS is shared across all companies, so there is no company-specific functionality. Because of this, we recommend using the single company, 'DAT' with your RCS environment.
 
-However, there are some scenarios where the user may want to make Electronic Reporting (ER) formats use parameters that are related to a specific legal entity, the default company switcher should be utilized in these instances only. For example, see [Configure ER format to use parameters that are specified per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format).
+However there are some scenarios where you may want to make Electronic Reporting (ER) formats use parameters that are related to a specific legal entity. In these instances only, the default company switcher should be used. For example, see [Configure ER format to use parameters that are specified per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format).
 
 ## Related RCS documentation
 
-For more information about related components, see the following documentation:
+For more information about related components, see the following topics:
 
 - **RCS:**
 
@@ -91,14 +91,15 @@ For more information about related components, see the following documentation:
     - [Regulatory Configuration Service (RCS) - Globalization feature](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
 
 
-## Troubleshooting RCS sign up:
+## Troubleshooting RCS sign up
 
-When you sign up for RCS from the service page, you might encounter an issue related to Azure Active Directory (AAD) and receive the following error message:
+When you sign up for RCS from the service page, you might encounter an issue related to Azure Active Directory (AAD) and receive an error message.
 
 ![RCS sign-up error](media/01_RCSSignUpError.jpg)
 
-The cause of the issue is that the user is blocked from signing up for ad-hoc subscriptions & need to enable this property [`AllowAdHocSubscriptions`] in their tenant. 
-- If your IT department manages your organization Azure tenants, you should contact them to report the issue. 
-- If you are responsible for managing your Azure tenants you can fix the issues by following the steps in this guidance, see [What is self-service sign-up for Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-self-service-signup#how-do-i-control-self-service-settings)
+The cause of the issue is that you are blocked from signing up for ad-hoc subscriptions and the property `AllowAdHocSubscriptions` needs to be enabled in your tenant. 
+
+   - If your IT department manages your organization Azure tenants, contact them to report the issue. 
+   - If you are responsible for managing your Azure tenants, you can fix the issues by following the steps in the topic, [What is self-service sign-up for Azure Active Directory](/azure/active-directory/enterprise-users/directory-self-service-signup#how-do-i-control-self-service-settings).
 
 
