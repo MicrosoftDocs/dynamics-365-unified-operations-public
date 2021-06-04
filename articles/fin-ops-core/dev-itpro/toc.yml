@@ -850,12 +850,10 @@
         items:
         - name: Take traces using Trace parser
           href: perf-test/trace-trace-tutorial.md
-        - name: Single-user testing with Task recorder and the Performance SDK 
+        - name: Single-user testing using Performance SDK and Task recorder
           href: perf-test/single-user-test-perf-sdk.md 
-        - name: Multi-user Performance SDK testing with a local test controller
-          href: perf-test/multi-user-testing-local-test-controller.md 
-        - name: Multi-user testing with the Performance SDK and Azure DevOps 
-          href: perf-test/multi-user-testing-perfsdk-azuredevops.md 
+        - name: Multi-user testing using Performance SDK
+          href: perf-test/perfsdk-multi-user-testing.md
         - name: Troubleshooting guide for testing with the Performance SDK 
           href: perf-test/troubleshoot-perf-sdk-user-testing.md
         - name: Performance SDK and multiuser testing in on-premises environments
