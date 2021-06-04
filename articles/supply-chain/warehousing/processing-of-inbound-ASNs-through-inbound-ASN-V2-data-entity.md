@@ -33,8 +33,8 @@ You import inbound ASNs using the *Inbound ASN V2* composite data entity. *Inbou
 - Inbound load header
 - Inbound shipment header
 - Inbound load packing structures
-- Inbound load packing structure case lines
 - Inbound load packing structure cases
+- Inbound load packing structure case lines
 - Inbound load packing structure lines
 
 The *Inbound ASN V2* composite data entity is intended to work in asynchronous integration scenarios with the help of XML-file based imports.  
@@ -126,15 +126,13 @@ The following example shows an XML file for importing vendor shipments for sever
 
 ## Inspect the result of importing ASN
 
-Follow these steps to create and manage user settings for your mobile devices: <!-- KFM: Is this really the correct intro for this procedure? I suspect it should be something like "Follow these steps to inspect the results of importing an ASN file:" -->
-
-<!-- KFM: I was a little unsure about what the user should do and notice in the following procedure. Please confirm my version. -->
+Follow these steps to inspect the results of importing an ASN file:
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. Find and open a load that was created as part of an ASN import.
 1. On the **Load** FastTab, you should see values based on the XML file.
 1. On the **Load lines** FastTab, you should see the purchase order numbers and item details based on the XML file.
-1. On the Action Pane, open the **Ship and receive** tab and, in the **Receive** group, select **Packing structure**.
+1. On the Action Pane, open the **Ship and receive** tab and, in the **Receive** group, select **Packing structure** to review the packing structure of the load.
 1. On the **Pallets** FastTab, you should see license plates based on the XML file.
 1. On the **Cases** FastTab, you should see cases based on the XML file.
 1. On the **Items** FastTab, you should see items and quantities based on the XML file.
