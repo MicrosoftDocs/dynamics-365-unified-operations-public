@@ -4,7 +4,7 @@
 title: Cloud deployment overview
 description: This topic describes the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
 author: LaneSwenka
-ms.date: 03/29/2021
+ms.date: 06/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,17 +57,17 @@ Here's how the lifecycle maps to the available environments.  If you already hav
 
 | Lifecycle phase      | Environment tier         | Subscription            | Environment types                 | Environment sub-type 
 |-------------------------------|---------------------------------|--------------------------------------|---------------------------------------------|---------------------------------------------|
-| Evaluation and analysis       | Tier 1 Sandbox | Cloud hosted | Customer Managed | Demo
-| Customize                     | Tier 1 Sandbox | Cloud hosted or VHD | Customer Managed | Develop
-| Golden configuration          | Tier 1 Sandbox | Cloud hosted | Customer Managed | Develop
-| User acceptance testing (UAT) | Tiers 2-5 Sandbox | Microsoft                 | Microsoft Managed or Self-service | Not applicable
-| Go live                       | Production | Microsoft                    | Microsoft Managed or Self-service | Not applicable     
+| Evaluation and analysis       | Tier 1 Sandbox | Cloud hosted | Customer-managed | Demo
+| Customize                     | Tier 1 Sandbox | Cloud hosted or VHD | Customer-managed | Develop
+| Golden configuration          | Tier 1 Sandbox | Cloud hosted | Customer-managed | Develop
+| User acceptance testing (UAT) | Tiers 2-5 Sandbox | Microsoft                 | Microsoft-managed or self-service | Not applicable
+| Go live                       | Production | Microsoft                    | Microsoft-managed or self-service | Not applicable     
 
 *Tiers 2-5 can be purchased to increase performance of the environment.  The higher the tier, the more compute and database capacity is reserved for your use.*
 *For more information about Self-service environment types, check out the [Self-service deployment overview](infrastructure-stack.md).*
 
 > [!Important]
-> Tier 1 Sandbox environments are no longer Microsoft Managed starting in November 2020.  For demo, build, and develop purposes the tier 1 environments can be deployed on a customer's Azure subscrition directly from Lifecycle Services.
+> Tier 1 sandbox environments are no longer Microsoft-managed starting in November 2020.  For demo, build, and develop purposes the Tier 1 environments can be deployed on a customer's Azure subscrition directly from Lifecycle Services.
 
 ### Environment lifecycle operations
 Users with the Environment Administrator or Project Owner roles in Lifecycle Services can perform various lifecycle operations on their environments.  These operations often involve downtime on the environment until the task is finished.  Each of these operations are located under or next to the **Maintain** button on each environment details page.
@@ -94,7 +94,7 @@ All Finance and Operations front-end virtual machines in Microsoft Azure are con
 > Customers who have administrator access to Microsoft-managed sandboxes, including any add-on sandboxes purchased, must follow these guidelines:
 > - By default, automatic Windows update is enabled for all Tier 1 - 5 sandboxes and should NOT be disabled. This ensures that any time that Microsoft pushes security or critical infrastructure updates to your environment, your environment receives the latest set of updates and is updated each month with the operating system fixes that Microsoft releases.  
 > -	Admin passwords on these environments should NOT be changed. Environments that have admin passwords changed will be flagged by Microsoft. Microsoft reserves the right to, and will reset the admin password.  
-> - Adding new user accounts to any Microsoft managed VM is NOT permitted. Microsoft reserves the right to, and will remove the newly added user accounts without providing notice.
+> - Adding new user accounts to any Microsoft-managed VM is NOT permitted. Microsoft reserves the right to, and will remove the newly added user accounts without providing notice.
 
 > Finance and Operations is not covered by a FedRAMP ATO at this time. If Finance and Operations is provisioned in the United States, all customer data at rest is stored in data centers located in the United States, as described in [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations). Finance and Operations does not support any other Dynamics 365 US Government or Microsoft 365 GCC compliance attributes (for example, access by US screened personnel, and support for CJIS and IRS 1075). 
 
@@ -117,11 +117,11 @@ Customers are required to complete additional setup to connect to virtual machin
 > - Public IP addresses, such as a coffee shop location, must NOT be added.     
 > - IP safe list rules should be removed when not in use. Periodic review of environment IP safe list rules is recommended.
 
-> Microsoft will run periodic tests on the Microsoft Managed environments validating that the environments are sufficiently restricted.
+> Microsoft will run periodic tests on the Microsoft-managed environments validating that the environments are sufficiently restricted.
 > Microsoft reserves the right to and will remove any IP Address safe list rules that violate the above guidelines, immediately without providing notice.
  
-### Partner/Customer managed environments 
-By default, Remote Desktop is enabled for all non-Microsoft managed environments. We recommend that customers restrict access to any environments that belong to their subscriptions. This can be done by configuring Network Security Group rules on the environments directly in Azure Portal.
+### Partner/Customer-managed environments 
+By default, Remote Desktop is enabled for all environments that are not managed by Microsoft. We recommend that customers restrict access to any environments that belong to their subscriptions. This can be done by configuring Network Security Group rules on the environments directly in Azure Portal.
 
 ## Windows Remoting (WinRM)
 Windows Remoting (WinRM) is disabled on all environments. Although you can enable WinRM on environments that belong to your subscriptions through Azure Portal, we strongly recommend that you do not do this.
@@ -137,7 +137,7 @@ To ensure service availability, all production environments are protected by usi
 High availability for databases is supported through Azure SQL. For more information, see [Overview of business continuity with Azure SQL Database](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview).
 
 #### Database backup retention
-Databases for Microsoft Managed or Self-service Tiers 2-5 environments have automated backups taken by Azure SQL every few minutes.  These backups can be restored to using Lifecycle Services Point-in-time Restore capability up to 14 days in the past.  For Production type environments, backups can be restored up to 28 days in the past.  For Tier 1 or Customer Managed environments, database backups are not automatic and need to be taken manually as often as required.
+Databases for Microsoft-managed or Self-service Tiers 2-5 environments have automated backups taken by Azure SQL every few minutes.  These backups can be restored to using Lifecycle Services point-in-time restore capability up to 14 days in the past.  For production type environments, backups can be restored up to 28 days in the past.  For Tier 1 or customer-managed environments, database backups are not automatic and need to be taken manually as often as required.
 
 ### Disaster recovery features
 Production environments are configured with Azure disaster recovery support that includes the following:
@@ -198,8 +198,8 @@ You can add guest AAD accounts if you have correctly configured them within Azur
 ### Why am I no longer able to see the Private AOS machines in one or more of my Tier 2 through Tier 5 Sandbox environments?
 The Private AOS VMs were part of your environment configuration as they were needed to secure communication between the AOS and BI machines in the past. With recent updates, all communication between AOS and BI machines are secure directly and no longer need the intermediary Private AOS machines. Therefore, we are in the process of rolling out removing the Private AOS machines. As we are removing the machines in batches, you may notice that only some of your environments have the Private AOS machines removed. This change will not impact functionality or security in any way and will be transparent to you.
 
-### Why am I no longer able to Remote Desktop into one or more of my Tier 1 through Tier 5 Microsoft managed Sandbox environments?
-Microsoft managed Tier 1 through Tier 5 sandbox environments require Remote Desktop management endpoints to be restricted to specific IP Address sets (safe list). Microsoft regularly validates that the environments are sufficiently restricted. Microsoft reserves the right to immediately remove any IP Address safe list rules that violate the above guidelines without notice. You may not be able to Remote Desktop into your environment for one of these reasons: 
+### Why am I no longer able to Remote Desktop into one or more of my Tier 1 through Tier 5 Microsoft-managed sandbox environments?
+Microsoft-managed Tier 1 through Tier 5 sandbox environments require Remote Desktop management endpoints to be restricted to specific IP Address sets (safe list). Microsoft regularly validates that the environments are sufficiently restricted. Microsoft reserves the right to immediately remove any IP Address safe list rules that violate the above guidelines without notice. You may not be able to Remote Desktop into your environment for one of these reasons: 
 
 - Your current IP address is not in the safe list.
 - Your IP has changed from the IP address listed in the safe list. 
