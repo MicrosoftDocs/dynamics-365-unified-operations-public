@@ -19,8 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the conversion run-time functions.
 
-any2Date
---------
+## any2Date
 
 Converts an **anytype** value to a **date** value.
 

@@ -19,8 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the string run-time functions.
 
-match
------
+## match
 
 Searches for a string or expression in another string.
 

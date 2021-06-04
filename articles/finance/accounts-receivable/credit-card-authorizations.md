@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides an overview of credit card authorization in Microsoft Dynamics 365 Finance. It includes information about how to set up a payment service, add a credit card to a sales order, and void an authorization.
 
-Setting up the credit card payment service
-------------------------------------------
+## Setting up the credit card payment service
 
 To use credit cards, you must set up and activate a payment service on the Payment services page. A payment service acts as a bridge between your legal entity and the bank that processes a customer's credit card charges. You must work with a credit card provider that is listed in the Payment connector field and set up an account with that provider. You must then set up the other options on the Payment services page, set up credit card types for American Express, Discover, MasterCard, and Discover on the Credit card types page, and activate the provider as the default provider. You must also follow these steps to complete your setup:
 -   On the Accounts receivable parameters page, specify parameters for using credit card authorizations.
@@ -44,13 +43,11 @@ To use credit cards, you must set up and activate a payment service on the Payme
 ## Adding a new credit card
 You can create new credit card records on the Customers page by using Customer, Set up, Credit card. You can also create credit card records when you enter sales orders on the Sales order page, by using Manage, Customer, Credit card, Register.
 
-Adding a credit card to a sales order
--------------------------------------
+## Adding a credit card to a sales order
 
 You can add a credit card to a sales order by selecting a credit card in the credit card lookup on the Price and discounts FastTab on the Sales order page. To start the authorization process, on the Action Pane, on the Manage tab, select Credit card and Authorize.
 
-Authorizing a credit card
--------------------------
+## Authorizing a credit card
 
 When a credit card is authorized, the card number and cardholder's name are verified, and the available credit balance is confirmed. Optionally, the card verification value and the cardholder’s address are verified. The customer's available credit balance is then reduced by the amount of the invoice. The payment service sends information that the credit card has been approved or declined. When the sales order is invoiced, the credit card is charged (captured) for the invoice amount.
 

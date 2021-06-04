@@ -46,14 +46,12 @@ Employees can view the records of the items that have been loaned to them using 
 
 Managers can view loaned items for their direct reports. They can also be granted permission to add new loan items on behalf of their employees.
 
- Account for lost or misplaced loan items
------------------------------------------
+##  Account for lost or misplaced loan items
 
 If an item becomes damaged or misplaced, enter a fictitious return record. Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.
 
 
-Additional resources
---------
+## Additional resources
 
 [Human resources](index.md)
 

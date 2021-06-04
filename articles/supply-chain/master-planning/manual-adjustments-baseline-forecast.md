@@ -77,8 +77,7 @@ The **Demand forecast details** page shows the following information in graphica
 
 You can also make manual adjustments to the forecast on the **Demand forecast details** page, by modifying the values in the **Forecast** row in the **Forecast** section.
 
-Additional resources
---------
+## Additional resources
 
 [Monitor forecast accuracy](monitor-forecast-accuracy.md)
 

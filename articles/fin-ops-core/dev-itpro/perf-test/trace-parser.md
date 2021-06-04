@@ -64,8 +64,7 @@ The **Timeline** tab has the following major components:
 
 Similarly, you can display the **X++** tab to view a list of all the X++ methods. They will be sorted by fields such as Inclusive/Exclusive durations, RPC, or Database calls. Note that these are similar to the corresponding tabs in Trace Parser and have the same behavior.
 
-Additional resources
---------
+## Additional resources
 
 [Develop and customize home page](../dev-tools/developer-home-page.md)
 

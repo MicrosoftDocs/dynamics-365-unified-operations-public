@@ -33,8 +33,7 @@ ms.search.validFrom: 2016-11-30
 
 This topic describes the typical processes for calculating and allocating overhead costs.
 
-Term definition
----------------
+## Term definition
 
 Overhead costs are the costs that are incurred in order to run a business, but that can't be directly attributed to any specific business activity, product, or service. Overhead costs provide critical support for the generation of profit-making activities. Here are some examples of overhead costs:
 

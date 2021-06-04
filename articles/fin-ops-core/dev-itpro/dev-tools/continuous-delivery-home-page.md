@@ -20,8 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 These topics describe tools and guidelines related to continuous delivery of your solution.
 
-FAQ and guidelines
-------------------
+## FAQ and guidelines
 
 - [Development and continuous delivery FAQ](continuous-delivery-faq.md)
 
