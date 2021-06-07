@@ -20,8 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes recommended configurations of your one-box developer environment.
 
-Setup
------
+## Setup
 
 1. Start Visual Studio, and on the toolbar, click <strong>Dynamics 365 **&gt; **Options</strong>.
 2. Expand the **Microsoft Dynamics** node, and then click **Projects**.

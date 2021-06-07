@@ -98,8 +98,8 @@ control over the conflicting terms in the Agreement.
 + **Supplemental Preview Software License terms**  
 Microsoft will provide you with access to certain software for use in connection with this Preview. 
 Notwithstanding any provision to the contrary in the Microsoft Preview Software License Terms for 
-the Dynamics 365 Commerce [Software Development Kit](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/SDK-terms-conditions "Software Development Kit") ("SDK License Terms") or the Dynamics 365 
-Commerce [Store Starter Kit](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/RSSK-terms-conditions "Store Kit License Terms") ("Store Kit License Terms") (collectively, the "SLTs"), Microsoft hereby 
+the Dynamics 365 Commerce [Software Development Kit](./sdk-terms-conditions.md "Software Development Kit") ("SDK License Terms") or the Dynamics 365 
+Commerce [Store Starter Kit](./rssk-terms-conditions.md "Store Kit License Terms") ("Store Kit License Terms") (collectively, the "SLTs"), Microsoft hereby 
 grants you permission to use the Software Development Kit and the Store Starter Kit (collectively, 
 the "software") in a 'live operating or production environment for Dynamics 365 Commerce.  If you 
 comply with the terms and conditions in the SLTs, you may also (A) use the software to develop and 

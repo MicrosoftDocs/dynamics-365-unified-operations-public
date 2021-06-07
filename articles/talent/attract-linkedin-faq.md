@@ -15,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -96,7 +95,7 @@ LinkedIn processes job posts in a batch through Attract once per day. Therefore,
 
 The following table describes the different options for posting jobs to LinkedIn. It includes the advantages of each option and additional information.
 
-|  | Attract | Job Wrapping through LinkedIn Recruiter | Recruiter System Connect API |
+| Option | Attract | Job Wrapping through LinkedIn Recruiter | Recruiter System Connect API |
 |---|---|---|---|
 | **Description** | Attract posts jobs to LinkedIn as an XML feed. | The company contracts with LinkedIn and provides an XML feed for posting jobs. | The customer uses the API to sync information between Attract and LinkedIn Recruiter. |
 | **What type of job can I post?** | Limited Listing | Premium Job Slot or Limited Listing | Limited Listing |

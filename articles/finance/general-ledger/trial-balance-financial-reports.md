@@ -3,8 +3,8 @@
 
 title: Trial balance financial reports
 description: This article describes the default reports for trial balances. It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements. 
-author: jcart1106
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes the default reports for trial balances. It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements. 
 
-Default trial balance reports
------------------------------
+## Default trial balance reports
 
 Three trial balance reports are available in Financial reporting.
 
@@ -52,6 +51,9 @@ The trial balance financial reports use the following building blocks.
 | Detailed Trial Balance - Default               | Trial Balance - Default | Detailed Trial Balance - Default               |
 | Summary Trial Balance – Default                | Trial Balance - Default | Summary Trial Balance - Default                |
 | Summary Trial Balance Year Over Year – Default | Trial Balance - Default | Summary Trial Balance Year Over Year - Default |
+
+> [!NOTE] 
+> When running the **Trial Balance** report in Financial reporting, be sure to select the check boxes for **Display rows with no amounts** and **Display reports with no active rows** on the **Settings** tab.
 
 ### Row definition
 
@@ -99,10 +101,7 @@ Each trial balance report uses a different column definition. These column defin
     -   **FD** – Financial data that contains only debits for the last year
     -   **FD** – Financial data that contains only credits for the last year
 
-
-
-Additional resources
---------
+## Additional resources
 
 [Financial reporting overview](financial-reporting-getting-started.md)
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.10
 
 This topic describes the warehouse handling process for inbound loads for purchase orders.
 
-For each inbound load, your system should already include a related sales order, and it might also contain a related load specification and/or transportation plan. For more information about how to create and manage inbound loads, see [Business process: Planning transportation for inbound loads](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
+For each inbound load, your system should already include a related sales order, and it might also contain a related load specification and/or transportation plan. For more information about how to create and manage inbound loads, see [Business process: Planning transportation for inbound loads](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
 ## Overview: How inbound loads are created, registered, and received
 
@@ -42,11 +42,11 @@ The following illustration shows the typical flow for handling inbound loads tha
 
 1. **An inbound load record is created to plan the arrival and its contents.**
 
-    The inbound load record represents a vendor shipment of one or more purchase orders. The load is expected to arrive at the warehouse as one physical transportation unit (such as a truckload). The inbound load record is used for planning purposes and lets the logistics coordinator track the load's progress from the vendor. It's also used to register order line quantities and manage progress through warehouse operations, such as arrival and put-away work. Loads can be created either automatically or manually, and they can be based on either a purchase order or an advanced shipment notice (ASN) from the vendor. For more information, see [Create or modify an inbound load](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
+    The inbound load record represents a vendor shipment of one or more purchase orders. The load is expected to arrive at the warehouse as one physical transportation unit (such as a truckload). The inbound load record is used for planning purposes and lets the logistics coordinator track the load's progress from the vendor. It's also used to register order line quantities and manage progress through warehouse operations, such as arrival and put-away work. Loads can be created either automatically or manually, and they can be based on either a purchase order or an advanced shipment notice (ASN) from the vendor. For more information, see [Create or modify an inbound load](/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
 
 1. **The vendor confirms load dispatch.**
 
-    When the vendor dispatches the load, the logistics coordinator at the receiving warehouse confirms the load shipment. If the receiving company is using the **Transportation management** module, inbound shipment confirmation will trigger other load management processes that are associated with the inbound loads. For more information, see [Confirm a load for shipping](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
+    When the vendor dispatches the load, the logistics coordinator at the receiving warehouse confirms the load shipment. If the receiving company is using the **Transportation management** module, inbound shipment confirmation will trigger other load management processes that are associated with the inbound loads. For more information, see [Confirm a load for shipping](/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
 
 1. **The load arrives at the warehouse, and workers register quantities.**
 
@@ -131,7 +131,7 @@ The following table explains the options that are available for the **Load over 
 | Value | Description |
 |---|---|
 | Allow | Workers can register the receipt of quantities that exceed the remaining unregistered quantity for a selected load, but only if the total registered quantity doesn't exceed the quantity of the purchase order line that is associated with the load (after adjustment for the overdelivery percentage). |
-| Block | <p>Workers can't register the receipt of quantities that exceed the remaining unregistered quantity for a selected load (after adjustment for the overdelivery percentage). A worker who tries to do register the receipts will receive an error and won't be able to continue until he or she registers a quantity that is equal to or less than the remaining unregistered load quantity.</p><p>By default, the value of the overdelivery percentage on a load line is copied from the associated purchase order line. When the <b>Load over receipt</b> field is set to <i>Block</i>, the system uses the overdelivery percentage value to calculate the total quantity that can be registered for a load line. However, that value can be overwritten for individual loads as required. This behavior becomes relevant during receiving flows where some or all of the excess quantity that represents the order line overdelivery percentage is distributed disproportionally across multiple loads. Here is an example scenario:</p><ul><li>There are multiple loads for one purchase order line.</li><li>The purchase order line has an overdelivery percentage that is more than 0 (zero).</li><li>Quantities have already been registered against one or more loads without taking the overdelivery percentage into account.</li><li>The overdelivery quantity arrives on the last load.</li></ul><p>In this scenario, a mobile device can be used to register the excess quantity for the last load only if the warehouse supervisor increases the overdelivery percentage for the relevant load line from the default value to a value that is large enough so that the full overdelivery can be registered with the final load.</p> |
+| Block | <p>Workers can't register the receipt of quantities that exceed the remaining unregistered quantity for a selected load (after adjustment for the overdelivery percentage). A worker who tries to do register the receipts will receive an error and won't be able to continue until they register a quantity that is equal to or less than the remaining unregistered load quantity.</p><p>By default, the value of the overdelivery percentage on a load line is copied from the associated purchase order line. When the <b>Load over receipt</b> field is set to <i>Block</i>, the system uses the overdelivery percentage value to calculate the total quantity that can be registered for a load line. However, that value can be overwritten for individual loads as required. This behavior becomes relevant during receiving flows where some or all of the excess quantity that represents the order line overdelivery percentage is distributed disproportionally across multiple loads. Here is an example scenario:</p><ul><li>There are multiple loads for one purchase order line.</li><li>The purchase order line has an overdelivery percentage that is more than 0 (zero).</li><li>Quantities have already been registered against one or more loads without taking the overdelivery percentage into account.</li><li>The overdelivery quantity arrives on the last load.</li></ul><p>In this scenario, a mobile device can be used to register the excess quantity for the last load only if the warehouse supervisor increases the overdelivery percentage for the relevant load line from the default value to a value that is large enough so that the full overdelivery can be registered with the final load.</p> |
 | Block for closed loads only | Workers can over-receive load line quantities for open loads, but not for loads that have a status of _Received_. |
 
 > [!NOTE]
@@ -220,7 +220,7 @@ To product receipt–post additional registered load quantities against a load t
 
 ### Post registered quantities from the Purchase order page
 
-To product receipt–post registered quantities from the **Purchase order** page, the user completes the following tasks before he or she selects the **Product receipt** action:
+To product receipt–post registered quantities from the **Purchase order** page, the user completes the following tasks before they select the **Product receipt** action:
 
 - Set the **Quantity** field in the **Parameters** section on the **Settings** tab to _Registered quantity_.
 - In the **Product receipt** field, enter the numbers of the purchase orders that are included in the posting.
@@ -351,7 +351,7 @@ When the load arrives at the warehouse receiving dock, a receiving clerk registe
 
 1. Continue to go through the workflow, leaving all other fields blank or set to their default values, until your device informs you that the work is completed.
 
-The load receiving task is now completed, and the receiving clerk can move on to his or her next task. However, warehouse receiving personnel will eventually review the load record and will be able to see that the received quantity was less than the expected quantity. They will then complete the following procedure by using the web client.
+The load receiving task is now completed, and the receiving clerk can move on to their next task. However, warehouse receiving personnel will eventually review the load record and will be able to see that the received quantity was less than the expected quantity. They will then complete the following procedure by using the web client.
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. In the list, find the load that you just received. (You might have to select the **Show closed** check box to include the inbound loads that have a load status of _Shipped_.) Then select the link in the **Load ID** column to open the load.

@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how the Lifecycle Services code upgrade service and Visual Studio tools help you migrate your code and metadata from Dynamics AX 2012 R3 to Finance and Operations. Most of these steps also apply to code migration between two major versions of Finance and Operations. 
 
-Prerequisites
--------------
+## Prerequisites
 
 You will need access to a Finance and Operations development environment using Remote Desktop, and be provisioned as an administrator on the instance. We recommend you become familiar with some of the Finance and  Operations development, customization, and user interface concepts before you upgrade your code. Here are some references.
 

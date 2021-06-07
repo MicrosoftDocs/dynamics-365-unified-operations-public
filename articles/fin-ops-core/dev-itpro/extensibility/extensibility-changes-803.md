@@ -34,8 +34,8 @@ This is a list of extensibility features that were implemented in Dynamics 365 f
 
 These methods have been refactored to support extensibility through chain of command, delegates, or by providing access to members.
 
-| Method|
-| --------------- |
+| Method |
+|---------------|
 |AccountingSourceExplorerProcessor.filterEntries|
 |AgreementClassification.init|
 |AgreementConfirm.createLineVolumeCommittmentHistory|
@@ -169,7 +169,7 @@ These methods have been refactored to support extensibility through chain of com
 |ProjIntercompanyTransQuery.buildExpenseQuery|
 |ProjIntercompanyTransQuery.buildHoursQuery|
 |ProjIntercompanyTransQuery.buildVendorInvoiceLinesQuery|
-|ProjInventJournalTransMapForm.checkActivity||
+|ProjInventJournalTransMapForm.checkActivity|
 |projInvoiceChooose.setProposalJour|
 |ProjInvoiceChoose.doRevenue|
 |ProjInvoiceChoose.updateInvoiceTotal|

@@ -3,7 +3,7 @@
 
 title: Create read-only entities that expose financial dimensions
 description: In this topic, we describe how to build an entity for registered transactions. 
-author: robinarh
+author: RyanCCarlson2
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 273653
 ms.assetid: 119610df-3975-43ce-830b-84fe58266321
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: rcarlson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
@@ -170,7 +170,7 @@ The entity work is now complete, and we can build it.
 
 ## Additional resources
 
-[Export Dynamics AX 7 Entities to your own Azure SQL Database](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/27/export-dynamics-ax7-entities-to-your-own-azure-sql-database/)
+[Export Dynamics AX 7 Entities to your own Azure SQL Database](/archive/blogs/dynamicsaxbi/export-dynamics-ax7-entities-to-your-own-azure-sql-database)
 
 
 

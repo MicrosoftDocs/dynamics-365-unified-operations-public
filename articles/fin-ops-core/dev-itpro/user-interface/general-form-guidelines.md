@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
 
-Verification checklist
-----------------------
+## Verification checklist
 
 The verification checklist shows the steps for manually verifying that the form complies with the UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
@@ -145,7 +144,7 @@ Mandatory fields are fields that the user must supply values for to guarantee da
 -   If the FastTab contains a grid, it should follow the [Toolbar and List](toolbar-list-subpattern.md) subpattern guidelines.
 
 ## Radio button guidelines
--   Follow all [standard Microsoft guidelines for radio buttons.](https://docs.microsoft.com/windows/desktop/uxguide/ctrl-radio-buttons) Specifically, observe these guidelines:
+-   Follow all [standard Microsoft guidelines for radio buttons.](/windows/desktop/uxguide/ctrl-radio-buttons) Specifically, observe these guidelines:
     -   The radio button control is used to select one option from a set of mutually exclusive choices.
     -   There are between two and seven choices. If there are more than seven choices, use a combo box instead.
     -   If none of the options is a valid choice, there is another option to reflect this situation, such as **None** or **Does not apply**.
@@ -167,7 +166,7 @@ Toggle buttons are typically used instead of traditional check boxes.
 
 [![Image of a check box and a toggle](./media/checkboxtoggle.jpg)](./media/checkboxtoggle.jpg)  
 
--   Follow all [standard Microsoft guidelines for check boxes.](https://docs.microsoft.com/windows/desktop/uxguide/ctrl-check-boxes ) Specifically, observe these guidelines:
+-   Follow all [standard Microsoft guidelines for check boxes.](/windows/desktop/uxguide/ctrl-check-boxes) Specifically, observe these guidelines:
     -   By default, use toggle buttons instead of check boxes in forms. The label must follow the Microsoft guidelines for check box labels.
         -   **Exceptions:**
             -   Use a check box when a large number of related options must be set in a group.

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) provides regularly updated services. The goal of LCS is to deliver the right information, at the right time, to the right people, and to help ensure repeatable, predictable success with each roll-out of an implementation, update, or upgrade. LCS is available to customers and partners as part of their support plans. If you're a Microsoft Dynamics AX 2012 customer, you can sign in by using your CustomerSource or PartnerSource credentials. If you're a customer of the newest version of the Dynamics 365 Finance and Operations apps, you can sign in by using your Microsoft Azure Active Directory (Azure AD) credentials. [Go to LCS](https://lcs.dynamics.com/Logon/Index).
+Microsoft Dynamics Lifecycle Services (LCS) provides regularly updated services. The goal of LCS is to deliver the right information, at the right time, to the right people, and to help ensure repeatable, predictable success with each roll-out of an implementation, update, or upgrade. LCS is available to customers and partners as part of their support plans. If you're a customer of the newest version of the Dynamics 365 Finance and Operations apps, you can sign in by using your Microsoft Azure Active Directory (Azure AD) credentials. [Go to LCS](https://lcs.dynamics.com/Logon/Index).
 
 ## Tools that are provided in LCS
 The following table lists the tools that are provided in LCS and describes the phases that each tool applies to.
@@ -56,10 +56,9 @@ The following table lists the tools that are provided in LCS and describes the p
 | [Upgrade analysis](ax-2012/upgrade-analysis-lcs.md)                         | Upgrade analysis helps you plan your upgrade to the latest version by analyzing code artifacts from Microsoft Dynamics AX 4.0, Microsoft Dynamics AX 2009, or AX 2012.                                                                                                                                                                                                                                                                                                    |
 | [Usage profiler](ax-2012/usage-profiler-lcs.md)                           | Usage profiler is a data-gathering tool that helps you describe your projected or current usage of an. The usage profile that is generated can be used for various purposes, such as hardware sizing and support.                                                                                                                                                                                                                                                                                                 |
 | [Downloadable tools](ax-2012/lcs-downloadable-tools-formerly-informationsource.md)                       | The **Downloadable tools** page provides a set of tools that were previously hosted on Microsoft Dynamics InformationSource.                                      |
-| [License sizing estimator](ax-2012/license-sizing-estimator-lcs.md)                 | License sizing estimator helps you estimate the number of licenses that are required. It provides a shared workspace that lets you model default and customized roles, and then automatically calculate the required client access licenses (CALs).
+| [License sizing estimator](/dynamicsax-2012/appuser-itpro/license-sizing-estimator-lcs)                 | License sizing estimator helps you estimate the number of licenses that are required. It provides a shared workspace that lets you model default and customized roles, and then automatically calculate the required client access licenses (CALs).
 
-Additional resources
---------
+## Additional resources
 
 The LCS team is also blogging on the [Lifecycle Services Engineering blog](https://cloudblogs.microsoft.com/dynamics365/?s=lcs). Subscribe to our RSS feed to keep up with our posts and announcements.
 

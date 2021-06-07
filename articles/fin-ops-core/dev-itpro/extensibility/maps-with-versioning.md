@@ -2,7 +2,7 @@
 
 title: Extend table maps that are used for versioning
 description: This topic describes how to extend table maps that can be used for versioning.
-author: LarsBlaaberg
+author: MichaelFruergaardPontoppidan
 ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,7 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: lolsen
+ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
 ---

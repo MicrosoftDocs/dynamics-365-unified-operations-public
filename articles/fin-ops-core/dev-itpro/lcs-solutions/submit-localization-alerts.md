@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the  Dynamics regulatory alert submission service. This topic also explains how to track planned and released regulatory features through LCS Issue search. 
 
-Accessing the regulatory alert submission service
--------------------------------------------------
+## Accessing the regulatory alert submission service
 
 In Dynamics Lifecycle Services (LCS), in your project, scroll to the right side of the page, and then, under **More tools**, click the **Alert service** tile. 
 

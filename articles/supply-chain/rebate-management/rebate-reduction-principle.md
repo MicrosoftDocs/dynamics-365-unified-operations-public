@@ -7,7 +7,6 @@ author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -29,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.18
 # Rebate reduction principles
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 You can group Rebate management deals into *reduction principles* to reduce other provisions that are associated with an item, and/or to reduce the resulting values of rebate calculations. After the rebate reduction principles are set up, you can optionally assign them, as required, to the lines of your Rebate management deals.
 

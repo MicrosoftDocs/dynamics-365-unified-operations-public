@@ -38,7 +38,7 @@ For more information about what external vendors can do in the vendor collaborat
 > [!NOTE]
 > The information about vendor collaboration in this topic applies only to the current version of Supply Chain Management. In Microsoft Dynamics AX 7.0 (February 2016) and Microsoft Dynamics AX application version 7.0.1 (May 2016), you collaborate with vendors by using the **Vendor portal** module. For information about the **Vendor portal** module, see [Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md).
 
-For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
+For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
 
 ## Defining the information that is shown to vendors when they respond to POs
 
@@ -246,7 +246,7 @@ For Public sector, the extended functionality enables an RFQ case to be sent to 
 - Published requests for quotations line
 - Published requests for quotations header attachments
 
-These entities let people who aren't provisioned users in Supply Chain Management, but who have anonymous access to the external site, view the available and closed work. Additionally, extended functionality in **Send and publish** lets the user who sets up parameters for the RFQ process define an email template. Then, when the procurement professional creates the RFQ case, he or she must select the email template to send the required information to the vendors on the RFQ case. 
+These entities let people who aren't provisioned users in Supply Chain Management, but who have anonymous access to the external site, view the available and closed work. Additionally, extended functionality in **Send and publish** lets the user who sets up parameters for the RFQ process define an email template. Then, when the procurement professional creates the RFQ case, they must select the email template to send the required information to the vendors on the RFQ case. 
 
 The user who sets up parameters for the RFQ process can create multiple email templates. These email templates can contain both static text and the following replacement tokens. The tokens will be replaced with contextual values when an email is created.
 

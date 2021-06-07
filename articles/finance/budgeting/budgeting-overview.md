@@ -3,8 +3,8 @@
 
 title: Budgeting home page
 description: This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 Finance.
-author: ShylaThompson
-ms.date: 08/09/2017
+author: panolte
+ms.date: 04/29/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 106043
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities. 
 
-Components of budgeting functionality
--------------------------------------
+## Components of budgeting functionality
 
 The resource planning cycle for a company typically consists of planning, budgeting, and forecasting activities.
 

@@ -2,7 +2,7 @@
 title: Multi-user testing using the Performance SDK
 description: This topic explains how to run multi-user testing by using Microsoft Visual Studio, the Performance SDK, and the Task recorder test scripts.
 author: kennysaelen
-ms.date: 04/13/2020
+ms.date: 06/04/2020
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
@@ -27,8 +27,8 @@ This topic explains how to run multi-user testing by using Microsoft Visual Stud
 
 Before you complete the steps in this topic, verify that the following prerequisites are met:
 
-- You have **Microsoft Visual Studio Enterprise edition** in a development environment. Enterprise edition is required to author load tests. If you are deploying your development box as a Cloud Hosted Environment through LCS, please make sure to select the appropriate Microsoft Visual Studio version to deploy.
-- Verify that the Visual Studio Web performance and load testing tools are installed as described in the [quickstart documentation](https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project?view=vs-2019#install-the-load-testing-component).
+- You have **Microsoft Visual Studio Enterprise edition** in a development environment. The Enterprise edition is required to author load tests. If you are deploying your development box as a cloud-hosted environment through LCS, make sure to select the appropriate Microsoft Visual Studio version to deploy.
+- Verify that the Visual Studio Web performance and load testing tools are installed as described in [Install the load testing component](/visualstudio/test/quickstart-create-a-load-test-project#install-the-load-testing-component).
 - You have a tier-2 or above sandbox environment that has the same release (application version and platform update) as your development environment.
 - You've configured your development environment by following the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md).
 - C\# performance testing classes have been generated for your end-to-end (E2E) scenarios, and you can run a single-user test by following the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md).
@@ -40,7 +40,7 @@ The following configurations need to be set up on the development machine that i
 > [NOTE]
 > For all Microsoft-managed or self-service type sandboxes, Microsoft will generate the certificate for your environment and have it pre-configured.
 
-1. Create an environmental variable named **TestRoot**, and and point it to the **PerfSDK** folder by running the following cmdlet in Microsoft Windows PowerShell.
+1. Create an environmental variable named **TestRoot**, and point it to the **PerfSDK** folder by running the following cmdlet in Microsoft Windows PowerShell.
 
     ```powershell
     [ENVIRONMENT]::SETENVIRONMENTVARIABLE("TESTROOT", "K:\PERFSDK\PERFSDKLOCALDIRECTORY", "USER")
@@ -51,9 +51,10 @@ The following configurations need to be set up on the development machine that i
     ```powershell
     [ENVIRONMENT]::GETENVIRONMENTVARIABLE("TESTROOT", "USER") | Write-Host
     ```
-2. Open the **environment details page** of your **target sandbox environment** on **Lifecycle Services**.
 
-3. Under the **Maintain** menu option you'll see two new options.
+2. Open the **Environment details** page of your target sandbox environment in Lifecycle Services.
+
+3. Under the **Maintain** menu option, there are two new options.
     - **Download RSAT certificate**
     - **Regenerate RSAT certificate**
 
@@ -85,18 +86,18 @@ Perform the following steps to prepare the sample solution for performance testi
     Get-ChildItem | Where-Object { $_.Subject -like "CN=127.0.0.1" }
     ```
 
-    The following illustration shows a sample result. Please make sure the thumbprint you saved earlier is in the list.
+    The following illustration shows a sample result. Make sure the thumbprint you saved earlier is in the list.
 
     ![Thumbprint in the Command Prompt window](media/perfsdk-multi-user-testing-01.png)
 
 2. Update the configuration file **CloudEnvironment.config** in the Performance SDK folder describing the targeted environment. As part of this update, follow these steps:
 
-    - Verify that the settings for **HostName** and **SOAPHostName** match your tier-2 or above sandbox environment.    
-    - Add the thumbprint saved earlier as the value for **SelfSigningCertificateThumbprint**. If the entry is missing from your configuration file, you can add it as illustrated below.
-    - Update **UserCount** to reflect the number of test users in your case.
-    - Update **UserFormat** to reflect your naming convention for test users.
-    - In each **AuthenticatorConfiguration element** under the **AuthenticatorConfigurationCollection element**, replace **MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAadAuthenticator** with **MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAuthenticator**.
-    - Comment out the **AzureActiveDirectoryConfiguration** and **KeyVaultConfigurations elements**.
+    1. Verify that the settings for **HostName** and **SOAPHostName** match your tier-2 or above sandbox environment.    
+    2. Add the thumbprint saved earlier as the value for **SelfSigningCertificateThumbprint**. If the entry is missing from your configuration file, you can add it as shown below.
+    3. Update **UserCount** to match the number of test users in your case.
+    4. Update **UserFormat** to match your naming convention for test users.
+    5. In each **AuthenticatorConfiguration** element under the **AuthenticatorConfigurationCollection** element, replace **MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAadAuthenticator** with **MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAuthenticator**.
+    6. Comment out the **AzureActiveDirectoryConfiguration** and **KeyVaultConfigurations elements**.
 
     > [!NOTE]
     > If your Finance and Operations apps were deployed in 21Vianet, make sure to specify **NetworkDomain="https://sts.chinacloudapi.cn/"** in **SelfMintingSysUser** and **SelfMintingAdminUser**.
@@ -105,18 +106,17 @@ Perform the following steps to prepare the sample solution for performance testi
 
     ![Updated CloudEnvironment.config file](./media/perfsdk-multi-user-testing-02.png)
 
-3. Rename the **vsonline.testsettings** file to **local.testsettings**. 
+3. Rename the **vsonline.testsettings** file to **local.testsettings**.
 4. Open and modify the **local.testsettings** file in **Microsoft Visual Studio** by following these steps. 
-    - In the **Test Settings** dialog box, on the **General** tab, in the **Test run Location** field group, select the **Run tests using local computer or a test controller** option.
 
-    - On the **Deployment** tab, select the **Enable deployment** check box, and then use the **Add Directory** button to add the bin\debug folder to the **Additional files and directories to deploy** field.
+    1. In the **Test Settings** dialog box, on the **General** tab, in the **Test run Location** field group, select the **Run tests using local computer or a test controller** option.
+    2. On the **Deployment** tab, select the **Enable deployment** check box, and then use the **Add Directory** button to add the `bin\debug` folder to the **Additional files and directories to deploy** field.
 
-        [![Deployment tab of the Test Settings dialog box](./media/perfsdk-multi-user-testing-04.png)](./media/perfsdk-multi-user-testing-04.png)
+        ![Deployment tab of the Test Settings dialog box](./media/perfsdk-multi-user-testing-04.png)
 
-    - On the **Hosts** tab, in the **Run tests in 32 bits or 64 bits process** field, select **Run test in 64 bits process on 64 bits machine**.
-
-    - Select **Apply**, and then close the **Test Settings** dialog box.
-    - Open and modify your project configuration and set the **Target Framework** to **.NET Framework 4.6.2**.
+    3. On the **Hosts** tab, in the **Run tests in 32 bits or 64 bits process** field, select **Run test in 64 bits process on 64 bits machine**.
+    4. Select **Apply**, and then close the **Test Settings** dialog box.
+    5. Open and modify your project configuration and set the **Target Framework** to **.NET Framework 4.6.2**.
 
     > [!NOTE]
     > Whenever you use the Microsoft Dynamics 365 Add-in to generate a C# performance test from a task recording, it will reload the project in Visual Studio instead of reopening the entire solution. Make sure to reload the solution before running any load tests to ensure the test settings file is visible.  
@@ -125,7 +125,7 @@ Perform the following steps to prepare the sample solution for performance testi
 
 Perform these steps for each of the generated performance tests in your solution.
 
-1. Add the following statement on top in the **using directives section**.
+1. Add the following statement on top in the **using** directives section.
 
     ```csharp
     using MS.Dynamics.TestTools.UIHelpers.Core;
@@ -137,7 +137,7 @@ Perform these steps for each of the generated performance tests in your solution
     private DispatchedClient Client;
     private UserContext _userContext;
     private TimerProvider timerProvider;
-    [TestInitialize​]
+    [TestInitialize]
     public void TestSetup()
     {
         if (this.TestContext != null)
@@ -191,9 +191,9 @@ Perform the following steps to add a performance test to the test mix.
 
 ## Creating test users
 
-Test users need to be added to the target environment with a matching naming pattern as the one specified in the **CloudEnvironment.config** configuration file. This can be done by either manually creating users in Microsoft Dynamics 365 environment or by using the **MS.Dynamics.Performance.CreateUsers.exe** console application which can be found in the Performnce SDK folder.
+Test users need to be added to the target environment with a naming pattern matching the one specified in the **CloudEnvironment.config** configuration file. This can be done by either manually creating users in Microsoft Dynamics 365 environment or by using the **MS.Dynamics.Performance.CreateUsers.exe** console application which can be found in the Performance SDK folder.
 
-If you choose to create the users manually, please ensure the **System Administrator** security role is assigned to each user.
+If you choose to create the users manually, ensure the **System Administrator** security role is assigned to each user.
 
 You should create the users through the console application, because it reads the configuration files and calls the appropriate service endpoints.  
 

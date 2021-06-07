@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 You can use Sales and marketing to obtain, store, and use various types of data in the sales flow. This data includes the original sales initiative, future follow-up action, and additional sales.
 
-Marketing
----------
+## Marketing
 
 You use marketing campaigns and activities to find and build relationships with potential customers, so that initial interactions can develop into sales relationships. The following process flow shows the business process for marketing. [![Business process for marketing](./media/marketing01.jpg)](./media/marketing01.jpg)
 

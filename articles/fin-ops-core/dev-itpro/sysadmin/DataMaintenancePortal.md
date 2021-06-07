@@ -7,7 +7,6 @@ author: RyanCCarlson2
 ms.date: 03/02/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -28,7 +27,6 @@ ms.dyn365.ops.version: AX 10.0.18
 # Data maintenance
 
 [!include[banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Data maintenance enables simple scheduling processes that you can run to find or correct data inconsistencies in your environment.
 

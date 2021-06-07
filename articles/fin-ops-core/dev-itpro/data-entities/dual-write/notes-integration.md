@@ -7,7 +7,6 @@ author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -127,5 +126,9 @@ Note integration includes a collection of table maps that work together during d
 | [Vendor document attachments](mapping-reference.md#231) | Annotations | Businesses that use plain text and URLs to capture vendor-specific information (for both organizations and persons). |
 | [Sales order header document attachments](mapping-reference.md#229) | Annotations | Businesses that use plain text and URLs to capture sales order–specific information. |
 | [Purchase order header document attachments](mapping-reference.md#232) | Annotations | Businesses that use plain text and URLs to capture purchase order–specific information. |
+
+## Limitations
+
+Once you install the notes solution, you cannot uninstall it. 
 
 For more information, see [Dual-write mapping reference](mapping-reference.md).

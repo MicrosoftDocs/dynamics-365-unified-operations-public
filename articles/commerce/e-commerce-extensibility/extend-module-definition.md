@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to extend a module definition file. For example, you can create an extended module of another module to add new configuration fields.
 
-## Overview
-
 When you extend a property that is an object, you must extend the whole object. For example, to add a configuration property to your extended module, you first copy the existing configuration properties from the parent module to the child module. You then add the desired property.
 
 ## Examples

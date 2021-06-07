@@ -183,7 +183,7 @@ For this example, demo data must be installed, and you must use the **USMF** dem
 
     - After work is created, the item's inventory transaction where the **Reference** field is set to **Order-committed reservation** is removed. The inventory transaction where the **Reference** field is set to **Work** now holds the physical reservation on all the quantity's inventory dimensions.
 
-        Warehouse operations can proceed to handle execution of the work in the usual manner. However, the instructions on the mobile device will instruct the worker to pick a specific batch number. In warehouse environments where locations are license plate–controlled, after a worker reaches a location that stores the same batch on multiple license plates, he or she can pick from any license plate that isn't already reserved (for example, by another order-committed reservation or work that originates from a reservation of that type.)
+        Warehouse operations can proceed to handle execution of the work in the usual manner. However, the instructions on the mobile device will instruct the worker to pick a specific batch number. In warehouse environments where locations are license plate–controlled, after a worker reaches a location that stores the same batch on multiple license plates, they can pick from any license plate that isn't already reserved (for example, by another order-committed reservation or work that originates from a reservation of that type.)
 
         If it turns out to be impractical to pick from the location that is specified on the work line, the warehouse operators can use one of the following actions to redirect picking of the specific batch from a more convenient location:
 
@@ -861,7 +861,7 @@ The following tables provide an overview that shows how the system handles order
 
 ## See also
 
-- [Batch numbers in Warehouse management](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
+- [Batch numbers in Warehouse management](/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
 - [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Pick oldest batch on a mobile device](pick-oldest-batch.md)
 - [Batch and license plate confirmation](batch-and-license-plate-confirmation.md)

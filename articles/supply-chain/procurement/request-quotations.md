@@ -66,7 +66,7 @@ This topic covers the process for handling RFQs when vendor collaboration isn't
 used. If your system is set up for vendor collaboration, vendors can enter bids
 directly in Supply Chain Management. For more
 information, see [Vendor collaboration with
-customers](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) and [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
+customers](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) and [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
 
 If you must amend an RFQ after you send it, you can resend the RFQ to vendors
 when you've finished by using the two amendment actions: Create and Finalize.
@@ -144,7 +144,7 @@ tokens:
 - %Date%
 
 The %Reason for bid return% and %Reason for amendment% tokens are replaced by
-text that the procurement professional can enter when he or she completes the
+text that the procurement professional can enter when they complete the
 amendment in the **Amendment** wizard. The values for the %Amendment prepared
 by% and %Company% tokens are automatically taken from the RFQ. The %Date% token
 is replaced by the current date.
@@ -295,7 +295,7 @@ use the amendment process to notify vendors about changes to the RFQ case. This
 process helps prevent the situation where vendors bid on an outdated RFQ case
 while their bid is in progress. For more information about vendor collaboration,
 see [Vendor collaboration with external
-vendors](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+vendors](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 If you want to invite additional vendors to bid, and no changes have been made
 to the RFQ case, you can use the **Send** button. The vendors that you added

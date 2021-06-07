@@ -56,7 +56,7 @@ Task recorder can record user actions in the client with exact fidelity, because
 Task recorder is included with every Finance and Operations app, and lets users begin to record business processes immediately after they open the client for the first time.
 
 > [!IMPORTANT]
-> The **Task guides** tab is currently not available in Commerce or Human Resources. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([https://docs.microsoft.com/dynamics365/](../../fin-ops/index.md)) for both Commerce and Human Resources.
+> The **Task guides** tab is currently not available in Commerce or Human Resources. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. Procedural help is also available at [Finance and Operations application documentation](../../fin-ops/index.md) for both Commerce and Human Resources.
 
 ## Start a new recording
 The following steps show how to use Task recorder to start a new recording.

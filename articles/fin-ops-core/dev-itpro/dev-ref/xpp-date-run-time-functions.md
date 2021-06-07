@@ -19,8 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the date run-time functions.
 
-dayName
--------
+## dayName
 
 Retrieves the name of the day of the week that is specified by a number.
 

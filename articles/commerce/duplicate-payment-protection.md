@@ -44,14 +44,14 @@ The duplicate payment protection feature ensures that Modern POS can seamlessly 
 
 This topic covers the following aspects of the duplicate payment protection feature:
 
-- [Prerequisites](#prerequisites) – Set of prerequisites to leverage this feature in Modern POS.
+- [Prerequisites](#prerequisites) – Set of prerequisites to use this feature in Modern POS.
 - [Scenario details](#scenario-details) – Detailed description of the scenarios covered by the duplicate payment protection feature.
 - [Troubleshooting](#troubleshooting) – Steps to take when encountering issues with the duplicate payment protection feature.
 - [Additional resources](#additional-resources) – List of related articles you might find useful when using the duplicate payment protection feature.
 
 ## Prerequisites
 
-- The payment connector and corresponding payment gateway or processor must support this feature. The *payment connector* is an extension which facilitates communication between Commerce (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
+- The payment connector and corresponding payment gateway or processor must support this feature. The *payment connector* is an extension that facilitates communication between Commerce (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
 - If a connector implements the corresponding duplicate payment protection interfaces, the feature is automatically enabled in Modern POS. Otherwise, it is automatically turned off.
 
 <!---
@@ -141,11 +141,11 @@ Even if the duplicate payment protection feature is enabled, it is generally rec
 
 ### Payment recovery fails
 
-An error may occur while a previous payment is being recovered on Modern POS. This can happen if there is an issue in the payment connector or payment gateway/processor that does not allow the previous payment to be recovered. To resolve this issue, because the previous payment cannot be recovered, the cashier must skip the recovery as described in the [How to skip Payment Recovery](#how-to-skip-payment-recovery) section.
+An error may occur while a previous payment is being recovered on Modern POS. This error can happen if there is an issue in the payment connector or payment gateway/processor that does not allow the previous payment to be recovered. To resolve this issue, because the previous payment cannot be recovered, the cashier must skip the recovery as described in the [How to skip Payment Recovery](#how-to-skip-payment-recovery) section.
 
 ## Additional resources
 
-- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

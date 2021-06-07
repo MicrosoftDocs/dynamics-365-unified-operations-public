@@ -1,39 +1,24 @@
 ---
-# required metadata
-
-title: Online store publishing architecture
-description: This topic contains conceptual information to help you understand how channels and catalogs are published from the commerce module to an online store.
-author: robinarh
+title: Publish an online store channel
+description: This topic contains conceptual information to understand how catalogs are published from the Commerce module to an online store.
+author: mugunthanm
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 72124
-ms.assetid: c9ab2a6c-ea19-4c21-a2d9-35a8d516b48b
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: meeram
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.author: mumani
+ms.search.validFrom: 2020-02-28
+ms.dyn365.ops.version: AX 10.0.10
 ---
 
-# Online store publishing architecture
+# Publish an online store channel
 
 [!include [banner](../includes/banner.md)]
 
-This topic contains conceptual information to help developers and system administrators understand how channels and catalogs are published from the commerce module to an online store in Microsoft SharePoint 2013 Products. Understanding the publishing process can help you develop, manage, and troubleshoot your online store.
+This topic contains conceptual information to understand how catalogs are published from the Commerce module to an online store.
 
-Publish an online store channel
+## Publish an online store channel
 
 When you publish a Commerce online store channel, you replicate the basic structure of your online store between Microsoft Dynamics 365 Commerce and Microsoft SharePoint. You create the basic structure of your online store channel in the **Commerce** module. Before you can publish an online store channel, you must complete the following setup tasks:
 
@@ -50,7 +35,7 @@ After you've completed these steps, you're ready to publish the product schema t
 5. The Commerce publishing job runs from the CRT application programming interface (API) and creates hierarchies for the site that you created in the online store.
 6. Commerce Data Exchange: Real-time Service receives the status of the publishing job actions from the CRT API and publishes that status. The status is either **Published** or **Error**.
 
-For the specific procedures to publish a channel, see [Set up an online store](https://msdn.microsoft.com/jj682095). After you've published the channel, you can publish a catalog.
+For the specific procedures to publish a channel, see [Set up an online store](/dynamicsax-2012/appuser-itpro/set-up-an-online-store). After you've published the channel, you can publish a catalog.
 
 ## Publish an online store catalog
 
@@ -64,7 +49,7 @@ After you've completed these steps, you're ready to publish the online store cat
 1. Finances and Operations reads the product tables in the Commerce database.
 2. Async Server synchronizes all products in the channel database.
 3. The CRT/Publishing Connector creates a *listing*. A listing is an instance of a product for a channel at a given point in time. For example, you have a product that is named “jeans”, and this product has a variant that is named “red”. In this case, the system creates a listing for “red jeans”.
-4. The system determines whether any new attributes were added for the listing. If new attribute were added (for example, if the “red jeans” listing includes a new attribute that is named **texture**, and this attribute is marked as **Included** at the channel level), the system creates a custom site column for that attribute. The system also creates a new rule for the list item and completes the process in SharePoint by creating a new row for the “red jeans” listing.
+4. The system determines whether any new attributes were added for the listing. If a new attribute were added (for example, if the “red jeans” listing includes a new attribute that is named **texture**, and this attribute is marked as **Included** at the channel level), the system creates a custom site column for that attribute. The system also creates a new rule for the list item and completes the process in SharePoint by creating a new row for the “red jeans” listing.
 5. The CRT records the publishing status for the listing.
 6. Async Server synchronizes the publishing status of the listing with all other publishing statuses. The status is either **Published** or **Error**.
 

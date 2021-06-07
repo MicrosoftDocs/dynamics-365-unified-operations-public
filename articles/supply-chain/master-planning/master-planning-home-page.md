@@ -75,7 +75,7 @@ Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see
 ### Blogs
 
 You can find opinions, news, and other information about Master planning and other solutions on the
-[Dynamics AX Manufacturing R&D Team blog](https://blogs.msdn.microsoft.com/axmfg) and [Supply Chain Management in Dynamics AX R&D Team blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+[Dynamics AX Manufacturing R&D Team blog](/archive/blogs/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### Task guides
 

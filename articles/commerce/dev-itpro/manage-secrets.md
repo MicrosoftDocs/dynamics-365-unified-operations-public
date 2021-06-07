@@ -44,8 +44,8 @@ This topic explains how to manage secrets when you're using an extension with ch
 
 2. The IT pro or implementation partner follows these deployment and configuration steps:
 
-    1. Apply the extension to the customer environment. For details, see [Apply updates to cloud environments](../../dev-itpro/deployment/apply-deployable-package-system.md).
-    2. Upload the desired secrets to Key Vault (or enter them). For details, see [What is Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/key-vault-overview)
+    1. Apply the extension to the customer environment. For details, see [Apply updates to cloud environments](../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md).
+    2. Upload the desired secrets to Key Vault (or enter them). For details, see [What is Azure Key Vault?](/azure/key-vault/key-vault-overview)
     3. On the **Key Vault Parameters** page (**Head Office \> Key Vault Parameters**), configure the head-office client to connect to Key Vault.
     4. On the **Key Vault Parameters** page, specify the extension secret name for the Key Vault secret in the head-office client.
 

@@ -138,7 +138,7 @@ For every hotfix and new application release, a new version of the package will 
 
 ## Best practices and branching strategies
 
-For detailed information about the Git branching strategy, see [Git branching strategy](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance).
+For detailed information about the Git branching strategy, see [Git branching strategy](/azure/devops/repos/git/git-branching-guidance).
 
 Keep your branch strategy simple, and follow these best practices:
 
@@ -146,11 +146,11 @@ Keep your branch strategy simple, and follow these best practices:
 + Merge feature branches into the main branch by using pull requests.
 + Keep a high-quality, up-to-date main branch.
 
-The following branching strategies are based on the way that Microsoft uses Git. For more information, see [How we use Git at Microsoft](https://docs.microsoft.com/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
+The following branching strategies are based on the way that Microsoft uses Git. For more information, see [How we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
 
 ### Create a new feature branch for development and software updates
 
-Create a new feature branch that is based on the Dynamics 365 Commerce release/x.x.x branch. Clone the release/x.x.x branch, and then create a new branch. Be sure to use the correct naming convention for the new branch. For more information, see [Git branching doc for sample naming convention](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance#name-your-feature-branches-by-convention).
+Create a new feature branch that is based on the Dynamics 365 Commerce release/x.x.x branch. Clone the release/x.x.x branch, and then create a new branch. Be sure to use the correct naming convention for the new branch. For more information, see [Git branching doc for sample naming convention](/azure/devops/repos/git/git-branching-guidance#name-your-feature-branches-by-convention).
 
 #### Clone the release/x.x.x branch and create a new branch
 
@@ -183,10 +183,10 @@ Create a new feature branch that is based on the Dynamics 365 Commerce release/x
     git checkout -b release/x.x.x
     ```
 
-2. If any changes are made in the release branch, merge them from the release branch back to main branch.
+2. If any changes are made in the release branch, merge them from the release branch back to the main branch.
 
     ```DOS
-    git checkout master git merge release/x.x.x
+    git checkout main git merge release/x.x.x
     ```
 
 ### Create an extension hotfix branch
@@ -198,7 +198,7 @@ As you did for the release branch, create a hotfix branch for extension from the
 After a new version of the SDK samples is released, you must merge it with your new branch. Because the SDK contains only samples, you don't have to get the updated changes from the new SDK release branch.
 
 ```DOS
-git checkout master git merge release/x.x.x
+git checkout main git merge release/x.x.x
 ```
 
 

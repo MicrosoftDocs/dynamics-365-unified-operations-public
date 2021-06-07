@@ -71,7 +71,7 @@ Sometimes, you might want to divide the quantity that you’ve ordered, so that 
 Charges can be automatically added to PO lines, if automatic charges have been set up for the vendor or vendor charge group, and for the item or item charge group. However, more typically, charges are added manually at the order line level. To add a charge, open the **Maintain charges** page by using the **Maintain charges** action on the **Financials** menu in the **Lines** view. The advantage of adding charges directly at the order line level is that the charge can be allocated as an inventory cost. To set up charge codes to account product cost, use the **Item** debit option. These types of charges must be allocated from the PO header to the lines before the order can be confirmed. For example, you might want to allocate charges based on the quantity on each line. The charge category also affects how charges are accounted. For example, fixed charges specify a fixed amount, and percent charges are calculated as a percentage of the net amount for the order line. POs can be assigned to a load, and the load might include an estimate of the expected expense for the transportation cost. You can allocate this expense from the load back to the PO lines.
 
 ## Purchase order actions
-After you’ve added the header and lines to the PO, you must often complete additional steps before the order is ready to be confirmed. Because so many options are available, you might find it helpful to use [Action search](../../fin-and-ops/get-started/action-search.md) to find the relevant menu item.  
+After you’ve added the header and lines to the PO, you must often complete additional steps before the order is ready to be confirmed. Because so many options are available, you might find it helpful to use [Action search](../../fin-ops-core/fin-ops/get-started/action-search.md) to find the relevant menu item.  
 
 You can configure products on the order so that they have supplementary items. Supplementary items are products that must or can be bought together with other products. Supplementary products might be added free of charge as accompanying products, or you may be able to decide whether to add them to the order or not. You can review the supplementary items after each order line that is added. However, you will probably find it more convenient to review and add relevant supplementary items for all the order lines by using the **Supplementary items** page, which you can open from the Action Pane.  
 
@@ -86,8 +86,7 @@ POs can be configured to require that budget funds be allocated to the order bef
 
 You might have to delay the completion of a PO. For example, you might require additional information about products or services, or you might have to get authorization for the spend. There are several ways to hold back an order. For example, you can wait to confirm the order. Alternatively, if a change management workflow is being used, don’t submit the order for approval. If you must block all orders for a particular vendor, you can also mark the vendor as **On hold** for processing on the vendor master. There are also circumstances that might prevent the order from being processed. For example, processing might be prevented if credit limits have been exceeded, or if required budget funds aren’t available.
 
-Additional resources
---------
+## Additional resources
 
 [Purchase order overview](purchase-order-overview.md)
 

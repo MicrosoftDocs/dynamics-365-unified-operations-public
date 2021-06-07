@@ -137,14 +137,13 @@ The following table shows the calculation result for an inventory object. You ca
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Cost objects](cost-object.md)
 
 [Cost entries](cost-entries.md)
 
-[What's new and changed](../../fin-and-ops/get-started/whats-new-changed.md)
+[What's new and changed](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 
 
 

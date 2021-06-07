@@ -5,6 +5,12 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: May 20, 2021
+      href: hr-whats-new-2021-05-20.md
+    - name: May 3, 2021
+      href: hr-whats-new-2021-05-03.md
+    - name: April 19, 2021
+      href: hr-whats-new-2021-04-19.md
     - name: April 5, 2021
       href: hr-whats-new-2021-04-05.md
     - name: March 22, 2021
@@ -613,6 +619,8 @@
         href: hr-personnel-modify-reporting-relationships-position.md
       - name: Enter worker information
         href: hr-personnel-enter-worker-information.md
+      - name: Workers without employment
+        href: hr-personnel-workers-without-employment.md
       - name: Loan items to workers
         href: hr-personnel-loan-item-worker.md
       - name: Create loan items
@@ -779,8 +787,14 @@
       items:
       - name: Performance management overview
         href: hr-develop-performance-management-overview.md
-      - name: Align workforce skills
-        href: hr-develop-skills.md
+      - name: Skills
+        items:
+        - name: Configure skills
+          href: hr-develop-skills.md
+        - name: Enter skills
+          href: hr-develop-enter-skills.md
+        - name: Map skills
+          href: hr-develop-map-skills.md
       - name: Add to your performance journal
         href: hr-develop-add-performance-journal.md
       - name: Create a goal

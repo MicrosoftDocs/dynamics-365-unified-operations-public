@@ -61,10 +61,10 @@ You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose 
 - [Reuse the same AD FS instance for multiple environments](onprem-reuseadfs.md)
 
 ## Commerce
-- [Commerce capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md)
+- [Commerce capabilities that are available in on-premises deployments](../../../commerce/retail-onprem.md)
 - [Installation steps for Retail channel components in an on-premises environment](deploy-retail-onprem.md)
-- [Configure, install, and activate Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md)
-- [Configure and install Commerce Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Configure, install, and activate Modern POS (MPOS)](../../../commerce/retail-modern-pos-device-activation.md)
+- [Configure and install Commerce Scale Unit](../../../commerce/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
 ## Upgrade
 - [In-place upgrade process for on-premises environments](../migration-upgrade/on-prem-upgrade.md)

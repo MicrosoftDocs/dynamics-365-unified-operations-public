@@ -31,8 +31,7 @@ Finance and Operations provides a set of rich security reports to help you under
 
 Each of the security reports can be found under **System administration \> Inquiries \> Security.** A description of each report is provided below.
 
-User role assignments
-----------------------------
+## User role assignments
 
 The **User role assignments** report generates a view of the current user role assignments in your system. By default, the report includes all users with roles assigned. You can optionally limit the report to a specific set of users by entering a list of users when generating the report. On the **User role assignments** parameters pane, go to **Records to include** > **Filter.** From here you can add or remove filters to the list of users the report will be generated for.
 
@@ -40,15 +39,13 @@ The **User role assignments** report generates a view of the current user role a
 
 For each user in the report a list of roles is provided, along with any restrictions at the legal entity or organization level.
 
-Role to user assignments 
--------------------------
+## Role to user assignments 
 
 The **Role to user assignment** report provides an aggregation of role assignments. Expanding a role in the report shows the list of users assigned to the role, and expanding the user name shows any restrictions the role has applied. The same method for filtering the set of users can be applied to this report as described for the **User role assignments** report.
 
 ![Role to user assignment](media/role-to-user-assignments.png)
 
-Security role access
---------------------
+## Security role access
 
 The **Security role access** report provides a view of the effective permissions for each security role. This report provides a flattened list of permissions grouped by type across all sub-roles, duties, and privileges contained in the role.
 
@@ -58,8 +55,7 @@ The data set backing the **Security role access** report can be very large, caus
 
 Expanding a role shows the category of objects the role has access to. Expanding one of the object types will show a detailed list of each object of that type included in the role.
 
-Security duty assignments
--------------------------
+## Security duty assignments
 
 The **Security duty assignments** report provides a view of all the duties contained within a role. This report can be configured to run on any collection of roles to ensure that segregation of duties is maintained between roles. By default, the report will include all roles. To limit the roles included, leverage the filtering provided in the **Records to include** section.
 

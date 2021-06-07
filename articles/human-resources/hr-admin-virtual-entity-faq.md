@@ -4,7 +4,7 @@
 title: Human Resources virtual tables FAQ
 description: This topic is a list of frequently asked questions about Human Resources virtual entities.
 author: jaredha
-ms.date: 12/15/2020
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -14,7 +14,6 @@ ms.technology:
 # ms.search.form:
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
@@ -29,7 +28,7 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic is a collection of frequently asked questions about virtual tables in Dynamics 365 Human Resources. 
+This topic is a collection of frequently asked questions about virtual tables in Dynamics 365 Human Resources.
 
 > [!NOTE]
 > For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
@@ -90,7 +89,9 @@ If there are no columns added in the quick find view for the table, then the sea
 
 ### Are custom fields supported on virtual tables?
 
-Yes, custom fields are supported on virtual tables. You must first add the custom field to the data entity related to the virtual table. You can then generate or refresh the virtual table to include the custom field in its schema. For more information on adding custom fields to data entities, see [Exposing custom fields on data entities](../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json#exposing-custom-fields-on-data-entities).
+Yes, custom fields are supported on virtual tables. You must first add the custom field to the data entity related to the virtual table. You can add custom fields to a data entity by following the steps outlined in [Exposing custom fields on data entities](../fin-ops-core/fin-ops/get-started/user-defined-fields.md#exposing-custom-fields-on-data-entities). After the custom field has been added to the data entity, you can then add it to the associated virtual table by generating or refreshing the virtual table. For more information about how to generate and refresh virtual tables, see [Generate virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#generate-virtual-tables).
+
+You can't add or remove custom fields from a virtual table if you've created dependencies on the virtual table. For example, if you've created a Power App that uses the virtual table, you are then prevented from deleting, modifying, or refreshing the virtual table while the dependency exists. To refresh a virtual table that's part of the Dynamics 365 HR Virtual Entities managed solution, you must first remove any dependent components that aren't part of the managed solution. For more information about how to review and remove dependent components, see [Removing dependencies](/power-platform/alm/removing-dependencies).
 
 ### What do I do if I get an error that the Dynamics 365 for Talent user wasn't found?
 
@@ -98,6 +99,55 @@ When setting up virtual tables in the **Microsoft Dataverse integration** page, 
 
 `User Dynamics365 for Talent was not found in Finance and Operations. Please ensure this user exists.`
 
-This message indicates that permissions haven't been granted in Human Resources application to the app set up for virtual tables. You can resolve this by completing the steps to [Grant app permissions in Human Resources](./hr-admin-integration-common-data-service-virtual-entities.md#grant-app-permissions-in-human-resources).
+This message indicates that permissions haven't been granted in Human Resources application to the app set up for virtual tables. You can resolve this by completing the steps to [Grant app permissions in Human Resources](hr-admin-integration-common-data-service-virtual-entities.md#grant-app-permissions-in-human-resources).
+
+### What do I do if the Finance and Operations Virtual Data Source Configurations option isn't available in my Microsoft Dataverse environment?
+
+During the setup of the virtual tables, you need to install the Dynamics 365 HR Virtual Table app, which adds the option for **Finance and Operations Virtual Data Source Configurations**. For more information about installing the app in the **Microsoft Dataverse integration** page, see [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#install-the-dynamics-365-hr-virtual-table-app).
+
+If the **Install virtual table app** action on the **Microsoft Dataverse integration** page doesn't complete successfully, you can perform the action in the Power Platform admin center.
+
+1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+2. In the **Environments** list, select the Power Apps environment associated with your Human Resources instance.
+
+3. In the **Resources** section of the page, select **Dynamics 365 apps**.
+
+4. Select the **Install app** action.
+
+5. Select **Dynamics 365 HR Virtual Table**, and then select **Next**.
+
+6. Review and mark to agree to the terms of service.
+
+7. Select **Install**.
+
+The installation takes a few minutes. When it completes, the **Finance and Operations Virtual Data Source Configurations** entity is generated in the environment.
+
+![Install the Dynamics 365 HR Virtual Table app from the Power Platform admin center](media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
+
+### Can I generate virtual tables for HR from my Power Apps environment?
+
+Yes. After completing the prerequisite setup steps for virtual tables outlined in  [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), you can generate the virtual tables directly from the Power Apps environment. You can follow this process rather than the process for generating the virtual tables from the Human Resources app outlined in the [Generate virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#generate-virtual-tables) section of the documentation.
+
+1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+2. In the **Environments** list, select the Power Apps environment associated with your Human Resources instance.
+
+3. Select the **Environment URL** in the **Details** section of the page.
+
+4. In the Solution Health Hub, select the **Advanced Find** (funnel) icon in the icon group in the upper-right of the page.
+
+5. In the **Look for** list, select **Available HR Entities**.
+
+6. Use the filter option to find the entity or entities that you want to enable.
+
+7. Select an entity from the list.
+
+8. On the entity page, change the **Has Been Generated** property to **Yes**.
+
+9. Save and close the entity page.
+
+> [!NOTE]  
+> You can generate multiple virtual tables at once by using the **Change Multiple Records** page. Select multiple records on the page and select the **Edit** action on the ribbon. You can then change the **Has Been Generated** property for all selected records.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

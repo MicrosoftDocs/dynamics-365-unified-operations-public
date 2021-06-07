@@ -43,7 +43,7 @@ The Retail SDK includes the code, code samples, templates, and tools that are re
 
 ## Download the Retail SDK
 
-The Retail SDK is available in development environments that are provisioned via Microsoft Dynamics Lifecycle Services (LCS), in the virtual hard disks (VHDs) that are downloaded from LCS, and in hotfix packages that are deployed to the LCS environment. For more information, see [Deploy and access development environments](../../../dev-itpro/dev-tools/access-instances.md) and [Apply updates to cloud environments](../../../dev-itpro/deployment/apply-deployable-package-system.md).
+The Retail SDK is available in development environments that are provisioned via Microsoft Dynamics Lifecycle Services (LCS), in the virtual hard disks (VHDs) that are downloaded from LCS, and in hotfix packages that are deployed to the LCS environment. For more information, see [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md) and [Apply updates to cloud environments](../../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md).
 
 To access the Retail SDK, sign in to the development virtual machine (VM), and go to the K:\\RetailSDK folder. You can obtain new versions of the Retail SDK by applying any Commerce binary hotfix from LCS to the development environment. After hotfix deployment is completed, you can find the new version of the SDK inside the K:\\RetailSDK\\Update folder.
 
@@ -85,7 +85,10 @@ Before you start development via the Retail SDK, you must restore all the packag
 2. In the Command Prompt window, go to the Retail SDK folder.
 3. Run the **msbuild /t:rebuild** command from the root of the SDK folder. The dirs.proj file in the root of the SDK folder (RetailSDK\\dirs.proj or RetailSDK\\Code\\dirs.proj) contains all the details that are required to build the full SDK.
 
-    ![Running MSBuild from a Command Prompt window](media/retail-sdk-command-prompt.png)
+> [!NOTE]
+> Starting in Retail SDK version 10.0.18 or later, by default the retail SDK MSBuild will check whether the SDK prerequisites are installed, if not it will show the error message and scripts to run to install the prerequisites. You can skip the prerequisites check by passing the parameter MSBuild /p:CheckVSDependencies=false.
+
+ ![Running MSBuild from a Command Prompt window](media/retail-sdk-command-prompt.png)
 
 ## Retail SDK components
 
@@ -367,7 +370,7 @@ You should build all the extensions and required out-of-box projects. ([Use MSBu
 
 ## Regular configuration/code signing
 
-For Modern POS, create an app package signing certificate to build correctly, or use Cloud POS. For information about how to create a PFX file, see [Create a certificate for package signing](https://docs.microsoft.com/windows/msix/package/create-certificate-package-signing). Then copy the PFX file to the BuildTools folder, and update the BuildTools\\Customization.settings file with the correct name by using the **ModernPOSPackageCertificateKeyFile** element.
+For Modern POS, create an app package signing certificate to build correctly, or use Cloud POS. For information about how to create a PFX file, see [Create a certificate for package signing](/windows/msix/package/create-certificate-package-signing). Then copy the PFX file to the BuildTools folder, and update the BuildTools\\Customization.settings file with the correct name by using the **ModernPOSPackageCertificateKeyFile** element.
 
 The BuildTools\\Customization.settings file holds most of the configuration values for the Retail SDK. 
 
@@ -408,9 +411,9 @@ The following values are the global values. These values control how the build m
 + **ModernPOSPackageCertificateKeyFile**
 + **RetailServerLibraryPathForProxyGeneration**
 
-It's a good practice to sign your assemblies by using a strong name, even though a strong name isn't required. For information about how to create your own key file if you don't already have one, see [How to: Create a public-private key pair](https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx).
+It's a good practice to sign your assemblies by using a strong name, even though a strong name isn't required. For information about how to create your own key file if you don't already have one, see [How to: Create a public-private key pair](/dotnet/standard/assembly/create-public-private-key-pair).
 
-The installer files that are generated for self-service components such as Modern POS, Hardware station, and Store scale unit can be signed by using [SignTool.exe](https://docs.microsoft.com/windows/win32/seccrypto/signtool).
+The installer files that are generated for self-service components such as Modern POS, Hardware station, and Store scale unit can be signed by using [SignTool.exe](/windows/win32/seccrypto/signtool).
 
 Both the key file for the strong name and the app package signing certificate can be stored inside the BuildTools folder or in Azure Key Vault. For a password-protected or secured certificate, use Azure Key Vault.
 
@@ -448,7 +451,7 @@ A good Application Lifecycle Management (ALM) solution provides version control,
 
 ### Branching and versioning
 
-To work efficiently in a team, or even just to be able to go back and look at some changes that were made earlier, you must have a good branching strategy and versioning discipline. The following illustration shows a simple branching strategy that might work well for most teams. The version numbers are fictitious. For more information, see, [Adopt a Git branching strategy](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance).
+To work efficiently in a team, or even just to be able to go back and look at some changes that were made earlier, you must have a good branching strategy and versioning discipline. The following illustration shows a simple branching strategy that might work well for most teams. The version numbers are fictitious. For more information, see, [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance).
 
 ![Branching and merging](media/retailsdk12.png)
 

@@ -92,8 +92,7 @@ On the **Allocation keys** tab you can set the **Forecast algorithm parameters**
 - **Seasonality hint**: For seasonal data, provide a hint to the forecasting model to improve forecast accuracy. Format: integer number, representing the number of buckets a demand pattern repeats itself. For example, enter "6" for data that repeats itself every 6 months.
 - **Test set size percentage**: Percentage of historical data to be used as a test set for forecast accuracy calculation. 
 
-Additional resources
---------
+## Additional resources
 
 [Demand forecasting overview](introduction-demand-forecasting.md)
 

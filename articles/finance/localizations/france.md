@@ -44,7 +44,7 @@ This topic includes information and links to resources that can help you set up 
 - [Daily interest calculation for late payment and lump sum in the invoice and collection letter](tasks/fr-00018-daily-interest.md)
 - [Derogatory depreciation](emea-fra-derogatory-depreciation.md)
 - [French bills of exchange and promissory notes](tasks/fr-00004-french-bills-exchange-promissory-notes.md)
-- [Generate the Standard Audit File for France (FEC)](emea-fra-fec-audit-file.md)
+- [Audit File for France (FEC) overview](emea-fra-fec-audit-file.md)
 - [NAF codes and siret numbers](emea-fra-naf-codes-siret-numbers.md)
 - [Set up NAF codes and Siret numbers](tasks/fr-00003-naf-codes-siret-numbers.md)
 - [Penalties for past due customer payments](emea-fra-apply-penalty-customer-payment-past-due.md)

@@ -72,12 +72,14 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.20 (August 2021)
+            href: get-started/whats-new-changed-10-0-20.md
+          - name: Finance 10.0.19 (June 2021)
+            href: get-started/whats-new-changed-10-0-19.md
           - name: Finance 10.0.18 (May 2021)
             href: get-started/whats-new-changed-10-0-18.md
           - name: Finance 10.0.17 (April 2021)
             href: get-started/whats-new-changed-10-0-17.md
-          - name: Finance 10.0.16 (February 2021)
-            href: get-started/whats-new-changed-10-0-16.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -162,6 +164,8 @@
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
         - name: Embed canvas apps from Power Apps
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
+        - name: Embed third-party apps
+          href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/finance/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
         - name: Change the date for a session
@@ -424,6 +428,8 @@
           href: accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md
         - name: Settle a partial customer payment that has multiple discount periods
           href: accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
+        - name: Customer prepayments
+          href: accounts-receivable/customer-prepayments.md
         - name: Reimburse customers
           href: accounts-receivable/reimburse-customers.md
         - name: Customer payments for a partial amount
@@ -480,6 +486,8 @@
         href: accounts-receivable/process-collection-letters-example.md
       - name: Set up and generate accounts receivable aging information
         href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+      - name: Customer aging snapshot
+        href: accounts-receivable/customer-aging-snapshot.md
       - name: Customer aging report
         href: accounts-receivable/customer-aging.md
       - name: Create a write-off journal for a customer
@@ -508,6 +516,8 @@
         href: budgeting/budget-planning-justification-docs.md
       - name: Create a budget from transaction accounts and total accounts
         href: budgeting/create-budget-transaction-accounts-total-accounts.md
+      - name: Budget plan narrative
+        href: budgeting/budget-narrative.md
       - name: Budget planning templates for Excel
         href: budgeting/budget-planning-excel-templates.md
       - name: Extend the budget planning layout
@@ -1104,6 +1114,20 @@
           href: general-ledger/tasks/view-posted-sales-tax-transactions.md   
         - name: Print the Sales tax payment by code report
           href: general-ledger/print-sales-tax-payment-by-code-report.md
+        - name: Sales tax troubleshooting
+          items:
+          - name: Tax isn't calculated or the tax amount is zero
+            href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
+          - name: Tax calculation performance affects transactions
+            href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
+          - name: Incorrect field value in TaxTrans
+            href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
+          - name: TaxTrans record isn't generated
+            href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
+          - name: Tax is posted to the wrong ledger account in the voucher
+            href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
+          - name: Voucher isn't generated
+            href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
       - name: Withholding tax
         items:
         - name: Set up withholding tax
@@ -1128,6 +1152,18 @@
           href: general-ledger/audit-policy-violations-cases.md
         - name: Define audit policies for source documents
           href: general-ledger/tasks/define-audit-policies-source-documents.md 
+      - name: Troubleshooting
+        items: 
+        - name: Change the accounting or reporting currency
+          href: general-ledger/add-change-acctg-rprtg-crrncy.md
+        - name: Change or reassign a ledger calendar
+          href: general-ledger/change-mdfy-clndr-to-ledger.md
+        - name: Reverse settings on journals and lines
+          href: general-ledger/rvrs-settgs-on-jrnls-lines.md
+        - name: Year-end close missing opening balances
+          href: general-ledger/yec-mssng-open-blnces.md
+        - name: Open financial journal templates in Office
+          href: general-ledger/open-fincl-jrnls-in-office.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
@@ -1180,6 +1216,8 @@
         href: finance-insights/finance-insights-home-page.md
       - name: Configuration and administration
         items:
+        - name: Configure Finance insights for public preview
+          href: finance-insights/configure-for-fin-insites-PubPrvw.md
         - name: Configure Finance insights
           href: finance-insights/configure-for-fin-insites.md
         - name: Enable Customer payment predictions
@@ -1428,6 +1466,8 @@
             href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
           - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
             href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+          - name: Regulatory Configuration Service – Lifecycle Services storage deprecation
+            href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
         - name: Electronic Invoicing
           items: 
           - name: Electronic Invoicing overview
@@ -1440,6 +1480,8 @@
             href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/finance/toc.json
           - name: Create an Azure storage account and a Key Vault
             href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
+          - name: Usage management dashboard
+            href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
           - name: Get started 
             items:
             - name: Get started with Electronic Invoicing service administration
@@ -1470,10 +1512,20 @@
             href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
           - name: Add data fields in the tax integration by using extensions
             href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-          - name: Multiple VAT registration numbers
-            href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
           - name: Set up an environment for master data lookup
             href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+          - name: Multiple VAT registration numbers
+            href: localizations/emea-multiple-vat-registration-numbers.md
+          - name: Reporting for multiple VAT registrations 
+            items:
+            - name: Reporting for multiple VAT registrations
+              href: localizations/emea-reporting-for-multiple-vat-registrations.md
+            - name: Netherlands reporting
+              items:
+              - name: VAT declaration
+                href: localizations/emea-nl-vat-declaration-netherlands.md
+              - name: EU sales list
+                href: localizations/emea-nl-eu-sales-list.md
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
       - name: Australia
@@ -1630,8 +1682,16 @@
             href: localizations/bra-use-tax-exemption-nf-e.md
         - name: SPED ECD
           href: localizations/latam-bra-sped-ecd.md
-        - name: SPED-Reinf tax statement
-          href: localizations/latam-bra-sped-reinf.md
+        - name: SPED-Reinf
+          items:
+          - name: SPED-Reinf Overview
+            href: localizations/latam-bra-sped-reinf-overview.md
+          - name: Set up electronic message
+            href: localizations/latam-bra-sped-reinf-electronic-messages.md
+          - name: Set up fiscal books
+            href: localizations/latam-bra-sped-reinf-setup-fiscal-books.md
+          - name: Events
+            href: localizations/latam-bra-sped-reinf.md
         - name: SPED fiscal resolution 13/2019 RJ
           href: localizations/latam-bra-resolution-13-2019-RJ.md
         - name: SPED fiscal 2020 - Complementary information of the ICMS-ST for SPED fiscal layout 014
@@ -1763,7 +1823,9 @@
         - name: User operation log by China working rule
           href: localizations/tasks/user-operation-log-china-working-rule.md
         - name: VAT customer invoices FAQ
-          href: localizations/apac-chn-tax-integration-vat-customer-invoices.md         
+          href: localizations/apac-chn-tax-integration-vat-customer-invoices.md   
+        - name: GB/T 24589-2010 export
+          href: localizations/apac-chn-gbt-24589-2010.md
       - name: The Czech Republic
         items:
         - name: The Czech Republic
@@ -2020,8 +2082,18 @@
           href: localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
         - name: Chronological invoices vouchers
           href: localizations/emea-fra-chronological-invoices-vouchers.md
-        - name: Create Standard Audit File for France (FEC)
-          href: localizations/emea-fra-fec-audit-file.md
+        - name: Audit file for France
+          items: 
+          - name: Audit file for France (FEC) overview
+            href: localizations/emea-fra-fec-audit-file.md
+          - name: Prerequisites for generating an FEC audit file in France
+            href: localizations/emea-fra-fec-audit-file-pre-requisites.md
+          - name: Structure of Finance data sources for the FEC
+            href: localizations/emea-fra-fec-audit-file-structure.md
+          - name: Prepare your environment to generate an FEC
+            href: localizations/emea-fra-fec-audit-file-setup.md
+          - name: Generate an FEC in Dynamics 365 Finance
+            href: localizations/emea-fra-fec-audit-file-generation.md
         - name: Customer and vendor account statements
           href: localizations/tasks/fr-00002-customer-vendor-account-statements.md
         - name: Daily interest calculation for late payment and lump sum in the invoice and collection letter
@@ -2336,6 +2408,20 @@
                 href: localizations/apac-ind-GST-tax-returns.md
               - name: Enable multi-batch processing for GSTR reports
                 href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+            - name: Troubleshooting GST
+              items:
+              - name: Incorrect tax amount after calculation
+                href: localizations/apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md
+              - name: Tax configuration errors
+                href: localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md
+              - name: Tax isn't calculated
+                href: localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md
+              - name: Activating the setoff rules takes longer than expected
+                href: localizations/apac-ind-GST-troubleshooting-setoff-rule-activate-take-long-time.md
+              - name: TaxTrans or voucher isn't generated
+                href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
+              - name: Tax transaction ID is incorrect
+                href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
         - name: Direct taxes
           items:
           - name: India withholding tax
@@ -2374,6 +2460,84 @@
             href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
           - name: Transfer of capital items to the fixed asset
             href: localizations/tasks/apac-ind-transfer-capital-items.md
+        - name: India TDS
+          items: 
+          - name: Indian Tax Deducted at Source (TDS) overview
+            href: localizations/apac-ind-TDS-India-TDS-overview.md
+          - name: Basic setup for TDS
+            items:           
+            - name: Set the TDS parameters
+              href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+            - name: Set up TDS ledger accounts
+              href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+            - name: Set up TDS registration numbers for legal entities
+              href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+            - name: Set up withholding tax authorities for the TDS tax type
+              href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+            - name: Set up tax components for the TDS tax type
+              href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+            - name: Set up withholding tax codes for the TDS tax type
+              href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+            - name: Set up withholding tax settlement periods for the TDS tax type
+              href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+            - name: Set up withholding tax reporting codes for the TDS tax type
+              href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+            - name: Set up withholding tax codes for the TDS tax type
+              href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md  
+            - name: Attach TDS tax codes to TDS tax groups and define the formula for calculating TDS
+              href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+            - name: Record TDS concession certificate numbers
+              href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+            - name: Set TDS parameters in Accounts payable and Accounts receivable
+              href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+            - name: Set up payment schedules with TDS allocation
+              href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+            - name: Set up payment fees for TDS authority payments
+              href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+            - name: TDS group, PAN, and TAN information setup for vendors and customers
+              href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+          - name: Formula designer and threshold limit for TDS calculation
+            items:
+            - name: Formula designer for TDS calculations
+              href: localizations/apac-ind-TDS-Formula-designer.md
+            - name: Threshold limit and exception threshold limit
+              href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md 
+          - name: TDS calculation on invoices
+            items:
+            - name: TDS calculation on invoices
+              href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+            - name: Calculate TDS on invoices using journals
+              href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
+            - name: Calculate TDS invoices using purchase order form and sales order form
+              href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
+            - name: TDS calculation on invoices from the Free text invoice page
+              href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
+            - name: Split invoice functionality
+              href: localizations/apac-ind-TDS-Split-invoice-functionality.md
+          - name: TDS calculation on payments and promissory notes
+            href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+          - name: TDS calculation on intercompany transactions
+            href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+          - name: TDS settlement process  
+            items:
+            - name: TDS calculation on payments and promissory notes
+              href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+            - name: TDS calculation on intercompany transactions
+              href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+            - name: TDS settlement process
+              items: 
+              - name: Run the periodic TDS settlement process
+                href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
+              - name: Settle TDS payments to TDS authority vendors and generate TDS challan
+                href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
+              - name: View posted TDS payments and transactions for a TDS settlement period
+                href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
+            - name: Record and update TDS certificate numbers and dates
+              items:
+              - name: Record TDS recoverable certificate numbers
+                href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
+              - name: Update certificate numbers and dates for TDS transactions
+                href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
       - name: Italy
         items:
         - name: Italy overview
@@ -2714,6 +2878,10 @@
           href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
         - name: Audit file (XML Auditfile Financieel XAF)
           href: localizations/emea-nl-audit-file.md
+        - name: VAT declaration (Netherlands)
+          href: localizations/emea-nl-vat-declaration-netherlands.md
+        - name: EU sales list
+          href: localizations/emea-nl-EU-sales-list.md
       - name: Norway
         items:
         - name: Norway overview
@@ -3993,7 +4161,7 @@
           items: 
           - name: Trace generated report results and compare them with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
-          - name: Improvements in tracing results of generated ER reports and comparisons with baseline values
+          - name: Improve tracing the results of generated ER reports to compare with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
           - name: Automate testing with ER
             href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json

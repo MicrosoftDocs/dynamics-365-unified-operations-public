@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to configure the .env file that is used for the development environment in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 The .env file that is provided as part of the Dynamics 365 Commerce online software development kit (SDK) is a simple configuration text file. It defines a set of variables that is used by a Node app that runs in the development environment.
 
 ## Default .env file

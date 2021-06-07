@@ -3,11 +3,9 @@
 title: Enable Dynamics 365 Commerce and Microsoft Teams integration
 description: This topic describes how to enable Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 # optional metadata
 # ms.search.form: 
@@ -28,7 +26,6 @@ ms.dyn365.ops.version: 10.0.18
 # Enable Dynamics 365 Commerce and Microsoft Teams integration
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to enable Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 
@@ -43,9 +40,9 @@ Before you can enable Microsoft Teams integration with Commerce, you must regist
 
 To register the Teams application with your tenant in the Azure portal, follow these steps.
 
-1. Follow the steps in [Quickstart: Register an app in the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) to register the Teams application with your tenant in the Azure portal.
+1. Follow the steps in [Quickstart: Register an app in the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) to register the Teams application with your tenant in the Azure portal.
 1. Copy the **Application (client) ID** value from the **Overview** page for the registered app. You will use this value to enable Teams integration in Commerce headquarters.
-1. Copy the certificate value that was entered when you [added a certificate](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-certificate) in step 1. The certificate is also known as the public key or application key. You will use this value to enable Teams integration in Commerce headquarters.
+1. Copy the certificate value that was entered when you [added a certificate](/azure/active-directory/develop/quickstart-register-app#add-a-certificate) in step 1. The certificate is also known as the public key or application key. You will use this value to enable Teams integration in Commerce headquarters.
 
 To enable Teams integration in Commerce headquarters, follow these steps.
 

@@ -49,8 +49,7 @@ The following graphic illustrates how master planning proceeds. The parameters t
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Master planning and multisite functionality overview](master-plan-multisite-functionality.md)
 

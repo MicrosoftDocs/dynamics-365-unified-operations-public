@@ -15,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -44,8 +43,8 @@ Attract provides five basic user roles:
 The Administrator role is the only role that has permission to add other users and change their permissions.
 
 - **Add** – In the Admin center, on the **User permissions** tab, select **Assign roles**, search for the user to add, and then assign permissions to that user.
-- **Edit** – Search for the user, or find the user in the list, and then select **Edit** to changes his or her permissions.
-- **Delete** – If you delete a user's permissions, you don't remove the user from the system. However, you do limit the user's access and privleges in Attract. For example, Hilda has been assigned to the Hiring Manager role, and she is added to a job as a hiring manager. If Hilda is later removed from the Hiring Manager role, she remains a hiring manager on the job and still has access to that job. However, she can't create other jobs.
+- **Edit** – Search for the user, or find the user in the list, and then select **Edit** to change their permissions.
+- **Delete** – If you delete a user's permissions, you don't remove the user from the system. However, you do limit the user's access and privleges in Attract. For example, an employee has been assigned to the Hiring Manager role, and that employee is added to a job as a hiring manager. If the employee is later removed from the Hiring Manager role, the employee remains a hiring manager on the job and still has access to that job. However, the employee can't create other jobs.
 
 The following sections provide a high-level description of each role. The tables later in the topic provide more detailed information.
 
@@ -86,7 +85,7 @@ Users who are assigned to the Read-only role have read-only access to all data i
 
 For each job that they are on the hiring team for, recruiters and hiring managers can designate one or more delegates for themselves. However, they can't designate delegates for other people on the hiring team.
 
-Delegates have the same privileges as the person who designated them. For example, if a hiring manager designates a delegate for herself for a job, the delegate will have the same privileges as that hiring manager for that job. Delegates can't remove other delegates from the hiring team. They also can't remove the people who designated them as delegates.
+Delegates have the same privileges as the person who designated them. For example, if a hiring manager designates a delegate for a job, the delegate will have the same privileges as that hiring manager for that job. Delegates can't remove other delegates from the hiring team. They also can't remove the people who designated them as delegates.
 
 ## Job details and actions
 

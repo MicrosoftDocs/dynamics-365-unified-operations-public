@@ -43,7 +43,7 @@ This topic explains, in detail, how pay is calculated based on worker registrati
 
 ## The use of flex time
 
-Periods of flex time are set up in the time profiles that are used in Time and attendance. There are two flex profile types: **Flex+** and **Flex-**. When a worker registers time in a Flex+ period, the worker's flex balance is increased by the hours that were worked. The worker doesn't receive any compensation for the hours that were worked during the Flex+ period. However, the worker can take time off during the Flex- periods and be compensated with the hours from his or her flex balance. Therefore, time off during the flex periods is considered an absence by the system.
+Periods of flex time are set up in the time profiles that are used in Time and attendance. There are two flex profile types: **Flex+** and **Flex-**. When a worker registers time in a Flex+ period, the worker's flex balance is increased by the hours that were worked. The worker doesn't receive any compensation for the hours that were worked during the Flex+ period. However, the worker can take time off during the Flex- periods and be compensated with the hours from their flex balance. Therefore, time off during the flex periods is considered an absence by the system.
 
 ## Scenarios based on flex periods
 
@@ -81,7 +81,7 @@ To understand this scenario, see the following fields.
 
 #### Calculation of Flex+
 
-According to the flex profile, the time between 06:00 AM and 07:00 AM is a Flex+ period. Therefore, if the worker clocks in at 06:30 AM, he earns 0.5 hours. This amount of time is added to the worker's flex account.
+According to the flex profile, the time between 06:00 AM and 07:00 AM is a Flex+ period. Therefore, if the worker clocks in at 06:30 AM, they earn 0.5 hours. This amount of time is added to the worker's flex account.
 
 #### Calculation of Flex-
 
@@ -93,7 +93,7 @@ Time is calculated as the time between clock-in and clock-out, that is, 06:30 AM
 
 #### Calculation of Pay time
 
-Pay time is the time that a worker is granted pay during. In this scenario, the worker is at work for 8.25 hours (**Time**). However, **Pay time** is calculated as 8.50 hours because the worker is granted pay during the Flex- period after he clocked out. The pay time equals the planned work hours because Flex+ time is added to the worker's flex account, not to the pay time. The absence time during the Flex- period is compensated for by the pay time and deducted from the worker's flex account.
+Pay time is the time that a worker is granted pay during. In this scenario, the worker is at work for 8.25 hours (**Time**). However, **Pay time** is calculated as 8.50 hours because the worker is granted pay during the Flex- period after they clocked out. The pay time equals the planned work hours because Flex+ time is added to the worker's flex account, not to the pay time. The absence time during the Flex- period is compensated for by the pay time and deducted from the worker's flex account.
 
 | Time              | Registration type | Pay time (hours)      |
 |-------------------|-------------------|-----------------------|
@@ -120,11 +120,11 @@ After you've calculated the journal registrations on the **Approve** page, you c
 
 #### Calculation of Flex+
 
-According to the flex profile, the time between 06:00 AM and 07:00 AM is a Flex+ period. Therefore, if the worker clocks in at 06:30 AM, she earns 0.5 hours of Flex+ time on her flex balance.
+According to the flex profile, the time between 06:00 AM and 07:00 AM is a Flex+ period. Therefore, if the worker clocks in at 06:30 AM, they earn 0.5 hours of Flex+ time on their flex balance.
 
 #### Calculation of Flex-
 
-Because the worker is working during the Flex- period, Flex- isn't calculated. Flex- is calculated only if the worker is absent during the Flex- period. From a payment perspective, if the worker works during the Flex- period, she is granted the pay rate that is defined for standard time. If the worker if is absent during the Flex- period, the 45 minutes are deducted from her flex account.
+Because the worker is working during the Flex- period, Flex- isn't calculated. Flex- is calculated only if the worker is absent during the Flex- period. From a payment perspective, if the worker works during the Flex- period, they are granted the pay rate that is defined for standard time. If the worker if is absent during the Flex- period, the 45 minutes are deducted from their flex account.
 
 #### Calculation of Time
 
@@ -172,7 +172,7 @@ To configure the system to clearly distinguish standard time and overtime, you m
 
 On the **Calculation parameters** page, select **Overtime** as the profile specification type, and set the **Pay time** option to **No**, as shown here.
 
-| Reg. specification | Profile specification type | Calculation   |     | Paid         |     |
+| Reg. specification | Profile specification type | Calculation   | Setting | Paid         | Setting |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
 | Working time       | Overtime                   | Standard time | Yes | Pay time     | No  |
 |                    |                            | Pay time      | Yes | Pay overtime | Yes |
@@ -470,11 +470,11 @@ The following scenarios show the pay items and entries for approval that are gen
 
 ### Scenario 1: The worker clocks in later than planned
 
-The worker clocks in at 08:30 AM. Because his planned clock-in time is 07:00 AM, he is 1.50 hour late for work. Because the 1.50 hour is considered absence time, the worker is prompted to select an absence code. The worker leaves work at 03:30 PM, which is the planned clock-out time. When the worker's registrations are calculated and approved, the absence registration, together with the absence code that the worker selected at clock-in, appears for the time between 07:00 AM and 08:30 AM.
+The worker clocks in at 08:30 AM. Because his planned clock-in time is 07:00 AM, they are 1.50 hours late for work. Because the 1.50 hour is considered absence time, the worker is prompted to select an absence code. The worker leaves work at 03:30 PM, which is the planned clock-out time. When the worker's registrations are calculated and approved, the absence registration, together with the absence code that the worker selected at clock-in, appears for the time between 07:00 AM and 08:30 AM.
 
-In the time profile, you can configure the **Clock-in** registration type so that there is a tolerance when workers are late for work. For example, if you set up a tolerance of 5, the worker is prompted for an absence code only if he clocks in later than 07:05 AM.
+In the time profile, you can configure the **Clock-in** registration type so that there is a tolerance when workers are late for work. For example, if you set up a tolerance of 5, the worker is prompted for an absence code only if they clock in later than 07:05 AM.
 
-In this case, because the worker doesn't have a good reason for being late for work, he selects an absence code that is defined for illegal absence. An absence code is considered applicable to illegal absence if the setting for overtime deduction is enabled for the absence group that the absence code belongs to. To set the setting, select **Time and attendance** &gt; **Setup** &gt; **Groups** &gt; **Absence groups**, and then select the **Deduct overtime** check box.
+In this case, because the worker doesn't have a good reason for being late for work, they select an absence code that is defined for illegal absence. An absence code is considered applicable to illegal absence if the setting for overtime deduction is enabled for the absence group that the absence code belongs to. To set the setting, select **Time and attendance** &gt; **Setup** &gt; **Groups** &gt; **Absence groups**, and then select the **Deduct overtime** check box.
 
 Here is how the worker's registrations for the day appear on the **Approve** page after calculation.
 
@@ -530,7 +530,7 @@ Here is the resulting pay item after the registrations are transferred.
 
 ### Scenario 4: The worker clocks in late and clocks out after the planned clock-out time during an overtime period
 
-The worker clocks in late at 09:30 AM and then, to compensate for his late attendance, he works overtime and clocks out at 05:00 PM. Because the worker came in late and compensated by working longer, the company doesn't want to grant the worker overtime pay for the hours that he worked between the planned clock-out at 03:30 PM and his actual clock-out at 05:00 PM, even though this period is defined as overtime in the time profile.
+The worker clocks in late at 09:30 AM and then, to compensate for their late attendance, they work overtime and clocks out at 05:00 PM. Because the worker came in late and compensated by working longer, the company doesn't want to grant the worker overtime pay for the hours that they worked between the planned clock-out at 03:30 PM and his actual clock-out at 05:00 PM, even though this period is defined as overtime in the time profile.
 
 To handle this scenario, the absence code can be set up to reduce overtime hours by any hours of illegal absence that the worker has on the same day. Select **Time and attendance** &gt; **Setup** &gt; **Groups** &gt; **Absence groups**, and select the **Deduct overtime** check box to deduct overtime from hours of illegal absence.
 
@@ -552,7 +552,7 @@ If the **Deduct overtime** check box is selected for the selected absence code, 
 
 Here, the 1.5 hours of illegal absence, from 07:00 AM to 09:30 AM, deduct the 2.0 hours of overtime, from 03:30 PM to 05:30 PM. The result of the registration is 1.5 hours of standard time and 0.5 hours of overtime.
 
-By contrast, if the **Deduct overtime** check box is cleared for the selected absence code, the overtime payment is granted to the worker, even though he was late and had an illegal absence. In this case, the following pay items are generated after the registrations are transferred.
+By contrast, if the **Deduct overtime** check box is cleared for the selected absence code, the overtime payment is granted to the worker, even though they were late and had an illegal absence. In this case, the following pay items are generated after the registrations are transferred.
 
 | Wage type     | Pay type | Pay units | Rate |
 |---------------|----------|-----------|------|
@@ -563,7 +563,7 @@ By contrast, if the **Deduct overtime** check box is cleared for the selected ab
 
 The following example shows how a worker's flex account can be reduced by converting the absence period to a Flex- period.
 
-The worker clocks in at 07:00 AM and clocks out at 01:00 PM. She has reached an agreement with her supervisor that she can go home for the weekend if she deducts these hours from her flex account. When the worker clocks out at 01:00 PM, she is prompted to select an absence code, because the period of absence for the remaining part of the workday that is affected isn't in a planned Flex- period. To convert the remaining part of the workday to a Flex- period, the worker can select an absence code that is set up to reduce her flex account.
+The worker clocks in at 07:00 AM and clocks out at 01:00 PM. The worker has an agreement that they can go home for the weekend if they deduct these hours from their flex account. When the worker clocks out at 01:00 PM, they are prompted to select an absence code, because the period of absence for the remaining part of the workday that is affected isn't in a planned Flex- period. To convert the remaining part of the workday to a Flex- period, the worker can select an absence code that is set up to reduce their flex account.
 
 To reduce the balance of flexible hours for workers who register absence on a workday, select **Time and attendance** &gt; **Setup** &gt; **Groups** &gt; **Absence groups**, and select the **Reduce flex** check box.
 
@@ -581,7 +581,7 @@ If the worker selects an absence code for illegal absence, here is how the resul
 |---------------|----------|-----------|------|
 | Standard time | 1201     | 6.00      | 10   |
 
-If the worker selects an absence code for legal absence, and the absence code is set up to reduce her flex account, here is how the resulting pay items will look after the registrations are transferred.
+If the worker selects an absence code for legal absence, and the absence code is set up to reduce their flex account, here is how the resulting pay items will look after the registrations are transferred.
 
 | Wage type     | Pay type | Pay units | Rate |
 |---------------|----------|-----------|------|
