@@ -32,25 +32,12 @@ Dynamics 365 Commerce enables you to target specific groups of customers with di
 You can create and manage audiences in site builder based on customer data such as location, device information, sign-in status, referrer, or query string parameters, gathered from the customer's web request. These audiences can then be targeted with module or fragment variations also authored and managed in site builder.
 
 ## Audiences
-Audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information available in the customer's request. 
+Audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information available in the customer's request. Commerce natively supports device info (desktop/mobile/tablet, OS, browser), sign-in status, referrer and query string parameters. Additionally, a geolocation connector allows Commerce to connect with third-party geolocation service providers to generate geolocation information for e-commerce site users. For more information on setting up a connector, see [GeoLookup connector](e-commerce-extensibility/connectors.md#geolookup-connector)
 
-A geolocation connector allows Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to a user. You can purchase a third-party connector from [AppSource](https://appsource.microsoft.com). Follow the setup instructions provided by the publisher. You can alternatively use the sample test connector from Commerce to test the experimentation workflow without needing to configure an external service. For more information, see [Configure and enable connectors](e-commerce-extensibility/connectors.md#geolookup-connector)
-
-You can also connect to any 3P geolocation provider following isntructions provided 
+Audiences can be created, edited and deleted in the **Audiences** tab in the left navigation pane.
 
 ## Targets
 Target is the user experience that will be shown to members of the chosen audience.
-
-
-Audience creation and management
-Rules can be created based on:
-Geolocation - country, state, city, zip code
-Customer email address
-Customer name
-Signed-in or not
-Device info – desktop/mobile/tablet, OS, browser
-Source – referrer, previous page
-Query string parameters
 
 Target creation and management
 Including and excluding audiences
