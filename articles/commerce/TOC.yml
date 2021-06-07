@@ -1246,7 +1246,7 @@
           href: localizations/latam-bra-commerce-localization.md
         - name: Set up and deploy Commerce localization for Brazil
           href: localizations/latam-bra-deployment.md
-        - name: NFC-e - Electronic Fiscal Document for Consumers in Brazil
+        - name: Electronic Fiscal Document for Consumers in Brazil (NFC-e)
           href: localizations/latam-bra-nfce.md 
         - name: Customer information management for Brazil
           href: localizations/latam-bra-customer-information.md     
