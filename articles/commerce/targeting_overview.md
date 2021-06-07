@@ -27,20 +27,19 @@ ms.dyn365.ops.version: AX 10.0.21
 ---
 
 # Customer segmentation and targeting in Dynamics 365 Commerce
-Dynamics 365 Commerce enables you to target specific groups of customer with different page content based on their device information, geolocation, and other dynamically derived attributes from their browser request. This will help personalize content in near real-time for these target groups known as **audiences** and drive increased user engagement and satisfaction.
+Dynamics 365 Commerce enables you to target specific groups of customers with different page content based on their device information, geolocation, and other dynamically derived attributes from their browser request. This will help personalize content in near real-time for these target groups known as **audiences** and drive increased user engagement and satisfaction.
 
-Dynamics 365 Commerce will give retailers the ability to target specific customer groups with different page content variations based on the shoppers’ device (tablet vs. phone, iOS vs. Android), geolocation, and other dynamically derived attributes from their browser request. This will help personalize content in near real-time for these target groups/audiences and drive increased user engagement and satisfaction. 
-
-This feature will enable segmentation of customer data such as geolocation, device information, sign-in status, referrer, or query string parameters, gathered from the customer's web browser. These segments can then be used to generate audience groupings in site builder and render targeted content across the digital commerce channel.
-Segmented targeting will support content-based scenarios within site builder. Module and fragment variants can be authored in site builder and associated with targeting rules to ensure easy authoring with powerful results.
-
+You can create and manage audiences in site builder based on customer data such as location, device information, sign-in status, referrer, or query string parameters, gathered from the customer's web request. These audiences can then be targeted with module or fragment variations also authored and managed in site builder.
 
 ## Audiences
-Audience – group of users whose membership is determined by a set of dynamic rules
+Audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information available in the customer's request. 
 
+A geolocation connector allows Commerce to connect with third-party services to retrieve the list of experiments and determine when to show an experiment to a user. You can purchase a third-party connector from [AppSource](https://appsource.microsoft.com). Follow the setup instructions provided by the publisher. You can alternatively use the sample test connector from Commerce to test the experimentation workflow without needing to configure an external service. For more information, see [Configure and enable connectors](e-commerce-extensibility/connectors.md#geolookup-connector)
+
+You can also connect to any 3P geolocation provider following isntructions provided 
 
 ## Targets
-Target – the user experience that will be shown to members of the chosen audience
+Target is the user experience that will be shown to members of the chosen audience.
 
 
 Audience creation and management
