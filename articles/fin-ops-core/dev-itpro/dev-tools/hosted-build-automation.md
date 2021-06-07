@@ -42,11 +42,11 @@ The following packages can be downloaded from the Shared asset library:
 
 - **Microsoft.Dynamics.AX.Platform.CompilerPackage** – This package contains the X++ compiler and related tools that are required to do a build.
 - **Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp** – This package contains the compiled X++ code for the Application Platform and related modules. This code is optimized for building.
-- **Microsoft.Dynamics.AX.Application.DevALM.BuildXpp** – This package contains the compiled X++ code for the Application and related modules. This code optimized for building.
+- **Microsoft.Dynamics.AX.Application.DevALM.BuildXpp** – This package contains the compiled X++ code for the Application and related modules. This code is optimized for building.
 
-Starting from version 10.0.18, the Application Suite package has been split into two packages and there will be an additional package to download from the Shared asset library.
+Starting from version 10.0.18, the Application Suite package has been split into two packages and there is an additional package to download from the Shared asset library.
 
-- **Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp** - This package contains the compiled X++ code for the Application Suite module. This code optimized for building.
+- **Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp** - This package contains the compiled X++ code for the Application Suite module. This code is optimized for building.
 
 Download these packages from LCS, and add them to an Azure Artifacts feed in the Azure DevOps organization where the builds will run. For more information about how to create an Azure Artifacts feed and add NuGet packages, see these topics:
 
