@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: NFC-e - Electronic Fiscal Document for Consumers in Brazil
+title: Electronic Fiscal Document for Consumers in Brazil (NFC-e)
 description: This topic gives an overview of the functionality for NFC-e for Brazil.
 author: v-ankvik
 manager: epopov
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.18
 
 ---
 
-# NFC-e - Electronic Fiscal Document for Consumers in Brazil 
+# Electronic Fiscal Document for Consumers in Brazil (NFC-e) 
 
 [!include[banner](../includes/banner.md)]
 
