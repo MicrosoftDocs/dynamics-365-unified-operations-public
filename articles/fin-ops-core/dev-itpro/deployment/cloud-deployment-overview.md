@@ -64,10 +64,10 @@ Here's how the lifecycle maps to the available environments.  If you already hav
 | Go live                       | Production | Microsoft                    | Microsoft-managed or self-service | Not applicable     
 
 *Tiers 2-5 can be purchased to increase performance of the environment.  The higher the tier, the more compute and database capacity is reserved for your use.*
-*For more information about Self-service environment types, check out the [Self-service deployment overview](infrastructure-stack.md).*
+*For more information about Self-service environment types, see [Self-service deployment overview](infrastructure-stack.md).*
 
-> [!Important]
-> Tier 1 sandbox environments are no longer Microsoft-managed starting in November 2020.  For demo, build, and develop purposes the Tier 1 environments can be deployed on a customer's Azure subscrition directly from Lifecycle Services.
+> [!IMPORTANT]
+> Tier 1 sandbox environments are no longer Microsoft-managed starting in November 2020. For demo, build, and develop purposes the Tier 1 environments can be deployed on a customer's Azure subscription directly from Lifecycle Services (LCS).
 
 ### Environment lifecycle operations
 Users with the Environment Administrator or Project Owner roles in Lifecycle Services can perform various lifecycle operations on their environments.  These operations often involve downtime on the environment until the task is finished.  Each of these operations are located under or next to the **Maintain** button on each environment details page.
@@ -94,7 +94,7 @@ All Finance and Operations front-end virtual machines in Microsoft Azure are con
 > Customers who have administrator access to Microsoft-managed sandboxes, including any add-on sandboxes purchased, must follow these guidelines:
 > - By default, automatic Windows update is enabled for all Tier 1 - 5 sandboxes and should NOT be disabled. This ensures that any time that Microsoft pushes security or critical infrastructure updates to your environment, your environment receives the latest set of updates and is updated each month with the operating system fixes that Microsoft releases.  
 > -	Admin passwords on these environments should NOT be changed. Environments that have admin passwords changed will be flagged by Microsoft. Microsoft reserves the right to, and will reset the admin password.  
-> - Adding new user accounts to any Microsoft-managed VM is NOT permitted. Microsoft reserves the right to, and will remove the newly added user accounts without providing notice.
+> - Adding new user accounts to any Microsoft-managed VM is NOT permitted. Microsoft reserves the right to do this, and will remove the newly added user accounts without providing notice.
 
 > Finance and Operations is not covered by a FedRAMP ATO at this time. If Finance and Operations is provisioned in the United States, all customer data at rest is stored in data centers located in the United States, as described in [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations). Finance and Operations does not support any other Dynamics 365 US Government or Microsoft 365 GCC compliance attributes (for example, access by US screened personnel, and support for CJIS and IRS 1075). 
 
@@ -137,7 +137,7 @@ To ensure service availability, all production environments are protected by usi
 High availability for databases is supported through Azure SQL. For more information, see [Overview of business continuity with Azure SQL Database](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview).
 
 #### Database backup retention
-Databases for Microsoft-managed or Self-service Tiers 2-5 environments have automated backups taken by Azure SQL every few minutes.  These backups can be restored to using Lifecycle Services point-in-time restore capability up to 14 days in the past.  For production type environments, backups can be restored up to 28 days in the past.  For Tier 1 or customer-managed environments, database backups are not automatic and need to be taken manually as often as required.
+Databases for Microsoft-managed or Self-service Tiers 2-5 environments have automated backups taken by Azure SQL every few minutes. These backups can be restored by using Lifecycle Services point-in-time restore capability up to 14 days in the past. For production type environments, backups can be restored up to 28 days in the past. For Tier 1 or customer-managed environments, database backups are not automatic and need to be taken manually as often as required.
 
 ### Disaster recovery features
 Production environments are configured with Azure disaster recovery support that includes the following:
