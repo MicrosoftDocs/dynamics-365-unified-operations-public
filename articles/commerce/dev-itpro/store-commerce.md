@@ -22,7 +22,7 @@ This topic applies to Dynamics 365 Commerce version 10.0.20 and later.
 
 The Store Commerce app in Microsoft Dynamics 365 Commerce provides rich commerce functionality for first-line workers such as cashiers, sales associates, inventory associates, stock clerks, and store managers. It lets these workers perform commerce operations such cash-and-carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
 
-Store Commerce provides the benefits of both MPOS and CPOS.
+Store Commerce provides the benefits of both Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS).
 
 > [!NOTE]
 > Store Commerce is released as a preview app. It uses the [Microsoft Edge WebView2](/microsoft-edge/webview2/) control, which is also in preview. Therefore, do **not** use Store Commerce in production until it's generally available (GA).
