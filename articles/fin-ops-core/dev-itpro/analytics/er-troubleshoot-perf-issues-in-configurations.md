@@ -41,7 +41,7 @@ Typically, performance investigation consists of several steps.
 
 ### Analyze execution time
 
-Execution time can depend on unpredictable factors, such as other tasks that are running in the same environment and caching that uses data when it's accessed for the first time. Therefore, you should repeat the execution and measurement several times.
+Execution time can depend on unpredictable factors, such as other tasks that are running in the same environment and caching that uses data when it's called for the first time. Therefore, you should repeat the execution and measurement several times.
 
 Sometimes, performance issues aren't caused by an ER format configuration that is used for reporting. Instead, they are caused by the X++ code that is used to open that ER format configuration.
 
@@ -81,9 +81,9 @@ Then open the trace in the ER model mapping designer, and look at the bottom of 
 
 - Is there any query duplication? If there is, consider one of the following fixes:
 
-    - [Use caching](#use-caching) if you think that there are several accesses inside one parent record.
-    - [Use a cached, parameterized calculated field](#cached-parameterized) if you think that there are accesses to the same record inside different records.
-    - [Use a **JOIN** data source](#use-join-datasource) if you have access to a substantial number of different records.
+    - [Use caching](#use-caching) if you think that there are several calls inside one parent record.
+    - [Use a cached, parameterized calculated field](#cached-parameterized) if you think that there are calls to the same record inside different records.
+    - [Use a **JOIN** data source](#use-join-datasource) if you have to read to a substantial number of different records from a database.
 
 - Does the number of queries and fetched records correspond to the overall amount of data? For example, if a document has 10 lines, do the statistics show that the report extracts 10 lines or 1,000 lines? If you have a substantial number of fetched records, consider one of the following fixes:
 
@@ -169,7 +169,7 @@ ER can show the execution time of the configuration in the Action center. This o
 
 Because ER is implemented in X++, you can use common X++ tools to analyze performance. For more information, see [Take traces by using Trace parser](../perf-test/trace-trace-tutorial.md).
 
-There are a few limitations to this approach. Because part of ER is implemented in C#, not all the details will be available. However, you can view the data access details. Additionally, long report runs can exceed trace storage limitations.
+There are a few limitations to this approach. Because part of ER is implemented in C#, not all the details will be available. However, you can view the data usage details. Additionally, long report runs can exceed trace storage limitations.
 
 #### <a name="electronic-reporting-traces"></a>ER traces
 
