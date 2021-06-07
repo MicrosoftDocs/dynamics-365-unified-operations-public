@@ -41,8 +41,8 @@ This page lists the resources that are available for IT pros and developers who 
 
 - [Commerce components](/dynamics365/commerce/dev-itpro/commerce-architecture)
 - [Modern POS (MPOS) architecture](retail-modern-pos-architecture.md)
-- [Commerce Scale Unit architecture](retail-server-architecture.md)
-- [Online store publishing architecture](retail-online-store-publishing-architecture.md)
+- [Headless commerce engine architecture](retail-server-architecture.md)
+- [Publish an online store channel](retail-online-store-publishing-architecture.md)
 - [Retail channel performance PowerBI.com solution](../../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Deployment
@@ -63,6 +63,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Point of sale (POS) device activation](retail-device-activation.md)
 - [Security best practices for Cloud POS in shared environments](secure-retail-cloud-pos.md)
 - [Support for external gift cards](gift-card.md)
+- [Store Commerce app in Microsoft Dynamics 365 Commerce](store-commerce.md)
 
 ## Customize POS
 
@@ -136,6 +137,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
 - [Upcoming changes in the Retail SDK](UpcomingSDKChanges.md)
 - [Development and ALM changes from version 10.0.10 to 10.0.13](dev-changes-10-13.md)
+- [Set up a build pipeline for the independent-packaging SDK](build-pipeline.md)
 - [Create deployable packages](retail-sdk/retail-sdk-packaging.md)
 - [Merge the build systems for Commerce and Finance](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](retail-sdk/migrate-sdk.md)

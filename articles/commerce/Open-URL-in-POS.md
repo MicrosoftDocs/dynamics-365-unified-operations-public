@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how you can configure a button in Retail point of sale (POS) to open a URL. This feature does not require a code customization, and can be configured by someone in a non-developer role. 
+This topic describes how you can configure a button in Dynamics 365 Commerce point of sale (POS) to open a URL. This feature does not require a code customization, and can be configured by someone in a non-developer role. 
 
 This feature allows configuration of a button in POS, using the button grid designer to open a URL. Currently, this is supported in the following configurations:
 

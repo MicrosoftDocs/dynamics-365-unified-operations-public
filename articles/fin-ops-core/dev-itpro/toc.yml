@@ -14,7 +14,9 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
-        - name: Platform updates for 10.0.19 (July 2021)
+        - name: Platform updates for version 10.0.20 (August 2021)
+          href: get-started/whats-new-platform-updates-10-0-20.md
+        - name: Platform updates for 10.0.19 (June 2021)
           href: get-started/whats-new-platform-updates-10-0-19.md
         - name: Platform updates for 10.0.18 (May 2021)
           href: get-started/whats-new-platform-updates-10-0-18.md
@@ -848,12 +850,10 @@
         items:
         - name: Take traces using Trace parser
           href: perf-test/trace-trace-tutorial.md
-        - name: Single-user testing with Task recorder and the Performance SDK 
+        - name: Single-user testing using Performance SDK and Task recorder
           href: perf-test/single-user-test-perf-sdk.md 
-        - name: Multi-user Performance SDK testing with a local test controller
-          href: perf-test/multi-user-testing-local-test-controller.md 
-        - name: Multi-user testing with the Performance SDK and Azure DevOps 
-          href: perf-test/multi-user-testing-perfsdk-azuredevops.md 
+        - name: Multi-user testing using Performance SDK
+          href: perf-test/perfsdk-multi-user-testing.md
         - name: Troubleshooting guide for testing with the Performance SDK 
           href: perf-test/troubleshoot-perf-sdk-user-testing.md
         - name: Performance SDK and multiuser testing in on-premises environments
@@ -940,8 +940,6 @@
           href: lifecycle-services/getting-started-lcs.md
         - name: What's new or changed in Lifecycle Services
           href: lifecycle-services/whats-new-lcs.md
-        - name: Removed or deprecated features in Lifecycle Services (LCS)
-          href: lifecycle-services/removed-deprecated-features.md
       - name: Lifecycle Services user guide
         href: lifecycle-services/lcs-user-guide.md
       - name: Project onboarding
@@ -1064,6 +1062,10 @@
               href: data-entities/dual-write/errors-and-alerts.md
             - name: Application lifecycle management
               href: data-entities/dual-write/app-lifecycle-management.md
+            - name: User-specified team owner
+              href: data-entities/dual-write/user-specified-team-owner.md
+            - name: Unlink and relink dual-write environments
+              href: data-entities/dual-write/relink-environments.md
         - name: Mapping concepts between apps
           items:
             - name: Integrated customer master
@@ -1166,6 +1168,8 @@
         items:
         - name: Add-ins overview
           href: power-platform/add-ins-overview.md
+      - name: Policies and communications
+        href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
     - name: Mobile platform
       items:
       - name: Mobile platform resources
@@ -1588,6 +1592,8 @@
           href: database/replication-setup.md
         - name: AX 2012 upgrade - Data upgrade in sandbox environments
           href: migration-upgrade/upgrade-data-sandbox.md
+        - name: Upgrade from AX 2012 - Data upgrade in self-service environments
+          href: migration-upgrade/data-upgrade-self-service.md
         - name: AX 2012 upgrade - On-premises environments
           href: migration-upgrade/on-prem-upgrade-2012.md
         - name: AX 2012 upgrade - Cutover testing

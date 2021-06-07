@@ -4,7 +4,7 @@
 title: Microsoft Power Platform integration with Finance and Operations apps
 description: This topic provides an overview for Microsoft Power Platform integration via Microsoft Dynamics Lifecycle Services for Finance and Operations apps and Microsoft Dataverse.
 author: Sunil-Garg
-ms.date: 05/10/2021
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -38,9 +38,9 @@ To understand the architecture of Microsoft Power Platform, Dataverse, dual-writ
 
 - [Administer Power Platform](/power-platform/admin/admin-documentation)
 - [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
-- [Entity overview](/powerapps/maker/common-data-service/entity-overview)
+- [Tables in Dataverse](/powerapps/maker/common-data-service/entity-overview)
 - [Entity relationships overview](/powerapps/maker/common-data-service/relationships-overview)
-- [Create and edit virtual entities that contain data from an external data source](/powerapps/maker/common-data-service/create-edit-virtual-entities)
+- [Create and edit virtual tables that contain data from an external data source](/powerapps/maker/common-data-service/create-edit-virtual-entities)
 - [What is Power Apps portals?](/powerapps/maker/portals/overview)
 - [Overview of creating apps in Power Apps](/powerapps/maker/)
 
@@ -112,6 +112,7 @@ This scenario is best implemented by using dual-write.
 The following list provides details about the prerequisites for setting up the Microsoft Power Platform integration:
 
 - Make sure that at least one gigabyte (GB) of Microsoft Power Platform database storage capacity space is available for your tenant. Otherwise, setup will fail. You can view your capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity). 
+
 - Identify your Finance and Operations environment administrator. You can find that information in the **Environment details** section.
 
     ![Environment details tab](media/EnvironmentDetails.png)
@@ -119,30 +120,55 @@ The following list provides details about the prerequisites for setting up the M
 - Validate your Microsoft Power Platform environment governance policy. To validate, you must be a **Global administrator** or **Power Platform administrator**.
 
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-    2. Select the gear icon in the upper-right corner of the Microsoft Power Platform site.
+    2. Select the **Settings** button (gear symbol) in the upper-right corner of the page to open the **Power Platform settings** pane.
 
-        ![Microsoft Power Platform settings](media/PowerPlatformSettings.png)
+        ![Power Platform settings pane](media/PowerPlatformSettings.png)
 
-- For organizations that do not allow **Everyone** to create Microsoft Power Platform production environments, the Finance and Operations environment administrator account for your environment must be added to one of the following Microsoft Power Platform admin roles.
-
-    The Finance and Operations environment administrator must be added to one of the following roles. You will need a Global Administrator to perform this action.
+- For organizations that **do not allow everyone** to create Microsoft Power Platform production environments, the Finance and Operations environment administrator account for your environment must be added to one of the following Microsoft Power Platform admin roles. To make this change, you must be a **Global Administrator**.
 
     - Global admins
     - Dynamics 365 admins
     - Power Platform admins
 
-    For more information, see [Use service admin roles to manage your tenant](/power-platform/admin/use-service-admin-role-manage-tenant).
+    > [!NOTE]
+    > The preceding roles might provide more permissions than the Finance and Operations administrator account requires. Therefore, a more limited role for this integration will eventually be added to Azure Active Directory (Azure AD). The new role won't require any of the preceding roles. If you want to keep the administrator that has the least privileges, you can temporarily grant one of the preceding roles. Then, after the Microsoft Power Platform integration is set up, remove that role.
 
-- All users who create Microsoft Power Platform environments must be licensed. The Finance and Operations environment administrator account should have the **Dynamics 365 Unified Operations Plan** license applied using the Microsoft 365 admin center.
+- All users who create Microsoft Power Platform environments must be licensed. The Microsoft 365 admin center should be used to apply the **Dynamics 365 Unified Operations Plan** or **AX Enterprise** license, or an application-specific license such as **Dynamics 365 Finance**, to the Finance and Operations environment administrator account.
 
 ## Enabling the Microsoft Power Platform integration
-Currently, the Microsoft Power Platform integration can only be set up after the Finance and Operations environment is deployed. In the future, this will also be possible during deployment of the Finance and Operations environment itself, as well for new sandbox and production environments.
+
+The Microsoft Power Platform integration can be enabled when you create a new Finance and Operations environment in LCS. Alternatively, it can be enabled in an existing Finance and Operations environment.
+
+### Enable during environment deployment
+
+When you set up a new Finance and Operations environment in LCS, the deployment wizard includes several sections where you can set values. One of those sections is named **Power Platform Integration**.
+
+![Power Platform Integration section in the deployment wizard](media/powerplat_integration_step0.png)
+
+Follow these steps to configure the **Power Platform Integration** section.
+
+1. Set the **Configure Power Platform Environment** option to **Yes**. Several additional settings become available.
+2. In the **Power Platform template** field, select one of the following values:
+
+    - **Dynamics 365 Standard** – This basic template is applicable to all Finance and Operations environments. Select this value if you don't require a more specific template.
+    - **Project Operations** – This template is specific to the Project Operations scenario. This value is available only if your tenant has licenses and entitlement for Dynamics 365 Project Operations.
+
+3. If you're deploying a DevTest or cloud-hosted environment, the **Environment Type** field is available. In it, you can select the type of Dataverse environment that is created and linked. Otherwise, by default, the environment type is set to **Sandbox** for Tier 2 through Tier 5 acceptance test environments and **Production** for production environments.
+4. Select the **Agree** check box to agree to the terms and conditions of the integration.
+
+> [!IMPORTANT]
+> The **language** and **currency** values of the Dataverse environment that is created and linked to your Finance and Operations environment are automatically determined, based on the physical address of your Azure AD tenant. For example, if that address is in Redmond, Washington, USA, the language will be English by default, and the currency will be US dollars (USD).
+>
+> If you require values that differ from the default values, contact Microsoft support. We can help link an existing Dataverse environment that you manually provision to the Finance and Operations environment. Eventually, fields for the language and currency will be added as setup options, so that customers can manually set them or accept the default values.
 
 ### Set up after environment deployment
 To set up after the Finance and Operations environment has been deployed, follow these steps:
 
 1. After the Finance and Operations environment has been deployed through LCS, open the **Environment details** page in LCS.
 2. In the **Power Platform integration** section, select **Setup**.
+
+    ![Setup button in the Power Platform Integration section](media/powerplat_integration_step1.png) 
+
 3. In the **Power Platform environment setup** dialog box, agree to the terms and conditions, and then select **Setup** at the bottom of the dialog box.
 
     > [!NOTE]
@@ -160,8 +186,14 @@ To set up after the Finance and Operations environment has been deployed, follow
     After the Dataverse environment is provisioned, the **Install a new add-in** and the **Dual-write application** buttons become available in the **Power Platform integration** section.
 
     ![Install a new add-in button](media/InstallANewAddIn.png)
-    <br/>
+
     ![Dual-write application button](media/powerplat_integration_dwApp_button.png)
+
+> [!IMPORTANT]
+> The **language** and **currency** values of the Dataverse environment that is created and linked to your Finance and Operations environment are automatically determined, based on the physical address of your Azure AD tenant. For example, if that address is in Redmond, Washington, USA, the language will be English by default, and the currency will be US dollars (USD).
+>
+> If you require values that differ from the default values, contact Microsoft support. We can help link an existing Dataverse environment that you manually provision to the Finance and Operations environment. Eventually, fields for the language and currency will be added as setup options, so that customers can manually set them or accept the default values.
+
 
 ### Troubleshooting the setup
 

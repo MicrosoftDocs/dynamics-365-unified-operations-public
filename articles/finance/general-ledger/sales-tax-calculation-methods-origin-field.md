@@ -58,8 +58,7 @@ If the net amount is 10.00, then DUTY 1 is 1.00 (10.00 x 10%) and DUTY 2 = 2.00 
 | Only one tax code with Origin = Percentage of gross amount can be used for a transaction. If more than one such tax code is determined for a transaction an error will be displayed that sales tax cannot be calculated. |
 
 
-Percentage of sales tax
------------------------
+## Percentage of sales tax
 
 When you select Percentage of sales tax in the Origin field, sales tax is calculated as a percentage of the sales tax that is selected in the Sales tax on sales tax field. The sales tax that is selected in the Sales tax on sales tax field is calculated first. The second sales tax is then calculated based on the first sales tax amount.
 ### Example
@@ -125,8 +124,7 @@ Document / journal is set to Amounts include sales tax = No Transaction line amo
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Sales tax rates based on the Marginal base and Calculation methods](marginal-base-field.md)
 

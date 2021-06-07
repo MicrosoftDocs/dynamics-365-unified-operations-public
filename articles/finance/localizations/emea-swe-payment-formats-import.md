@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic provides information about the BankGirot MAX, BankGirot OCR import, and BankGirot return formats for Sweden.
 
-BankGirot MAX, BankGirot OCR
-----------------------------
+## BankGirot MAX, BankGirot OCR
 
 BankGirot MAX and BankGirot OCR file import lets you import customer payments in BankGirot file formats. BG MAX is a file layout that collects all payments in one file. OCR is a specific kind of reference in the BG MAX file format with a payment reference. To import payments, complete the following steps.
 

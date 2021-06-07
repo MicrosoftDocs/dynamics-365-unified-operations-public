@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 It's important that the bank statement file from the bank matches the layout that Microsoft Dynamics 365 Finance supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
 
-What is the error?
-------------------
+## What is the error?
 
 After you try to import a bank statement file, go to the Data management job history and its execution details to find the error. The error can help by pointing to the statement, balance, or statement line. However, it's unlikely to provide enough information to help you identify the field or element that is causing the issue.
 

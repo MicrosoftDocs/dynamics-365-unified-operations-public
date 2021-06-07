@@ -4,7 +4,7 @@
 title: Human Resources virtual tables FAQ
 description: This topic is a list of frequently asked questions about Human Resources virtual entities.
 author: jaredha
-ms.date: 05/11/2021
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -14,7 +14,6 @@ ms.technology:
 # ms.search.form:
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
@@ -125,5 +124,30 @@ If the **Install virtual table app** action on the **Microsoft Dataverse integra
 The installation takes a few minutes. When it completes, the **Finance and Operations Virtual Data Source Configurations** entity is generated in the environment.
 
 ![Install the Dynamics 365 HR Virtual Table app from the Power Platform admin center](media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
+
+### Can I generate virtual tables for HR from my Power Apps environment?
+
+Yes. After completing the prerequisite setup steps for virtual tables outlined in  [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), you can generate the virtual tables directly from the Power Apps environment. You can follow this process rather than the process for generating the virtual tables from the Human Resources app outlined in the [Generate virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#generate-virtual-tables) section of the documentation.
+
+1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+2. In the **Environments** list, select the Power Apps environment associated with your Human Resources instance.
+
+3. Select the **Environment URL** in the **Details** section of the page.
+
+4. In the Solution Health Hub, select the **Advanced Find** (funnel) icon in the icon group in the upper-right of the page.
+
+5. In the **Look for** list, select **Available HR Entities**.
+
+6. Use the filter option to find the entity or entities that you want to enable.
+
+7. Select an entity from the list.
+
+8. On the entity page, change the **Has Been Generated** property to **Yes**.
+
+9. Save and close the entity page.
+
+> [!NOTE]  
+> You can generate multiple virtual tables at once by using the **Change Multiple Records** page. Select multiple records on the page and select the **Edit** action on the ribbon. You can then change the **Has Been Generated** property for all selected records.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

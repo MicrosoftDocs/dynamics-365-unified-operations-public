@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Actions are an essential component of any enterprise resource planning (ERP) system, and are triggered by mouse click, keyboard, or touch.
 
-Introduction
-------------
+## Introduction
 
 Actions are an essential component of any enterprise resource planning (ERP) system. Actions can be accessed through various mechanisms:
 

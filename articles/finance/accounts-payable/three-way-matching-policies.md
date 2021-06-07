@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides examples of three-way matching.
 
-Example: Three-way matching for items
--------------------------------------
+## Example: Three-way matching for items
 
 **Summary:** Ken is the controller at the corporate headquarters of a legal entity named Fabrikam. Ken decides that all vendor invoices that are based on purchase orders should be matched with purchase order lines (two-way matching). For purchases of items that will be used as fixed assets, invoices should be matched with both the purchase order lines and the product receipt lines (three-way matching).
 

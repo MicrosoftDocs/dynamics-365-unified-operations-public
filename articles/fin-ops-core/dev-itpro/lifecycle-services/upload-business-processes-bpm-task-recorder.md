@@ -49,8 +49,7 @@ You can upload business process artifacts (\*.axbpm files) to the business proce
 4.  After the business process file has been uploaded, you can view the business process framework from the **Business process library** page.
 
 
-Additional resources
---------
+## Additional resources
 
 [Business process modeler (BPM) in Lifecycle Services (LCS)](./ax-2012/business-process-modeler-lcs.md)
 

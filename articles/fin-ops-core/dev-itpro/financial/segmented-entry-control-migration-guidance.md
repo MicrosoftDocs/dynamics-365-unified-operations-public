@@ -3,7 +3,7 @@
 
 title: Migration guidance for Segmented Entry controls
 description: This topic guides you through the process of migrating a Segmented Entry control.
-author: robinarh
+author: RyanCCarlson2
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 25651
 ms.assetid: eea675a0-d9d8-453d-9f5a-70c833a7a0d6
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -997,8 +997,8 @@ The uptake pattern for the new **Segmented Entry** control on a dialog has chang
     -   You must specify the account structure that should be used with the **Budget planning** controller. The **Dialog** class must implement a way for the user to select the account structure (outside of the SEC) and set the selected account structure on the SEC.
 
 
-Additional resources
---------
+## Additional resources
+
 
 [Support for Segmented Entry controls on dialogs](segmented-entry-control-dialog-support.md)
 

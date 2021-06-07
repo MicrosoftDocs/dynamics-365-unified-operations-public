@@ -35,8 +35,7 @@ Budget plans can be generated from several, different resources. The basic eleme
 
 
 
-Periodic processes for generating budget plans
-----------------------------------------------
+## Periodic processes for generating budget plans
 
 Budget plans can be generated from the following resources:
 

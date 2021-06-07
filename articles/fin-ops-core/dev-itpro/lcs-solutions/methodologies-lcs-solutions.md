@@ -32,8 +32,7 @@ ms.author: omarc
 
 This topic explains how to create and modify methodologies in Microsoft Dynamics Lifecycle Services (LCS). It also provides information about the requirements for methodologies.
 
-Methodology requirements
-------------------------
+## Methodology requirements
 
 The first two phases of your methodology are the Learn and Consume phases from the LCS Solutions Consumption methodology. 
 
@@ -74,8 +73,7 @@ Follow these steps to edit a methodology in a specific project only.
 4.  Select **Confirm**.
 
 
-Additional resources
---------
+## Additional resources
 
 [Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)
 

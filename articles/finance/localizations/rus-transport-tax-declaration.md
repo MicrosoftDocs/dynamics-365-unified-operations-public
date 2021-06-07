@@ -69,8 +69,7 @@ This topic explains how to perform the following tasks:
 5.  [Create and post transport tax ledger
     transactions](#create-and-post-transport-tax-ledger-transactions)
 
-Set up transport tax
---------------------
+## Set up transport tax
 
 Here is an overview of the steps for setting up transport tax:
 
@@ -397,8 +396,7 @@ tax registers, you should set up posting groups.
 2.  Make sure that the **Sales tax payable** field is set to the ledger account
     code that you entered for the ledger posting group in step 3.
 
-Create a vehicle and set up parameters for transport tax calculation
---------------------------------------------------------------------
+## Create a vehicle and set up parameters for transport tax calculation
 
 Here is an overview of the steps for creating a vehicle and setting up
 parameters for transport tax calculation:
@@ -491,8 +489,7 @@ vehicle.
     exemption from tax applies. In the **Exemption from tax** field, select the
     code for the tax allowance as an exemption from tax.
 
-Calculate transport tax registers
----------------------------------
+## Calculate transport tax registers
 
 After you've finished the setup, registered the acquisition of the vehicle, and
 set up all vehicle parameters for transport tax calculation, you must calculate
@@ -634,8 +631,7 @@ To create corrective registers, follow these steps.
 8.  Create tax register lines, and calculate and approve the tax registers as
     described in the previous procedure.
 
-Generate a transport tax declaration
-------------------------------------
+## Generate a transport tax declaration
 
 ### Set up the system to generate a transport tax declaration
 
@@ -791,8 +787,7 @@ You must also manually upload the generated file to the special third-party
 software for data preview, data updates, and transfer of the transport tax
 declaration files to the tax authorities through the communication channels.
 
-Create and post transport tax ledger transactions
--------------------------------------------------
+## Create and post transport tax ledger transactions
 
 After you've calculated and approved tax registers, and generated a transport
 tax declaration, you can create transactions for transport tax accruals.

@@ -138,7 +138,7 @@ The same build machine used for MSBuild  with the Azure DevOps pipeline can be u
 4. Restart the Azure DevOps build agent on the build machine.
 5. In Azure DevOps pipeline, change the MSBuild version to 15.0 or later.
 
-If the build from Azure DevOps pipeline fails with a NuGet error, the Azure pipeline may not be not using MSBuild version 15.0 for NuGet restore or the extension projects are not upgraded to use the package reference model.
+If the build from Azure DevOps pipeline fails with a NuGet error, the Azure Pipeline may not be not using MSBuild version 15.0 for NuGet restore or the extension projects are not upgraded to use the package reference model.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

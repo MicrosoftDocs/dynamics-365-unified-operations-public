@@ -72,7 +72,9 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
-          - name: Supply Chain Management 10.0.19 (July 2021)
+          - name: Supply Chain Management 10.0.20 (August 2021)
+            href: get-started/whats-new-scm-10-0-20.md
+          - name: Supply Chain Management 10.0.19 (June 2021)
             href: get-started/whats-new-scm-10-0-19.md
           - name: Supply Chain Management 10.0.18 (May 2021)
             href: get-started/whats-new-scm-10-0-18.md
@@ -220,6 +222,8 @@
             href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
           - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
             href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Regulatory Configuration Service – Lifecycle Services storage deprecation
+            href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
         - name: Electronic Invoicing
           items: 
           - name: Electronic Invoicing overview
@@ -232,6 +236,8 @@
             href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
           - name: Create an Azure storage account and a Key Vault
             href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Usage management dashboard
+            href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
           - name: Get started 
             items:
             - name: Get started with Electronic Invoicing service administration
@@ -387,7 +393,7 @@
           href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
       - name: Setup for work orders
         items:
-        - name: Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists
+        - name: Maintenance job types, categories, variants, trades, and checklists
           href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
         - name: Work order lifecycle states
           href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
@@ -1371,7 +1377,7 @@
           items: 
           - name: Trace generated report results and compare them with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Improvements in tracing results of generated ER reports and comparisons with baseline values
+          - name: Improve tracing the results of generated ER reports to compare with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
           - name: Automate testing with ER
             href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
@@ -2225,6 +2231,8 @@
         href: engineering-change-management/engineering-attributes-and-search.md
       - name: Engineering versions and engineering product categories
         href: engineering-change-management/engineering-versions-product-category.md
+      - name: Manage changes in formulas and their ingredients
+        href: engineering-change-management/manage-formula-changes.md
       - name: Enable change management on existing products
         href: engineering-change-management/change-management-existing-products.md
       - name: Product lifecycle state and transactions
@@ -2247,6 +2255,8 @@
         href: production-control/manage-subcontract-work-production.md  
       - name: Unified number sequence for job IDs
         href: production-control/unified-job-ids.md
+      - name: Invoke process automation flows to create quality orders
+        href: production-control/process-automation-quality-orders.md
       - name: Discrete manufacturing
         items:
         - name: Maintain production master data
@@ -2337,7 +2347,7 @@
               href: production-control/production-floor-execution-setup.md
             - name: How workers use the production floor execution interface
               href: production-control/production-floor-execution-use.md
-            - name: User interface control styles for production floor execution
+            - name: Style the production floor execution interface
               href: production-control/production-floor-execution-styles.md
           - name: Configure job card for devices
             href: production-control/config-job-card-device.md
@@ -3139,11 +3149,11 @@
             href: warehousing/about-shipment-consolidation-policies.md
           - name: Configure shipment consolidation policies
             href: warehousing/configure-shipment-consolidation-policies.md
-          - name: Scenario 1 - Consolidate shipments when they are released to the warehouse by using Automatic release of sales orders
+          - name: Scenario 1 - Consolidate shipments released to the warehouse using automatic release of sales orders
             href: warehousing/consolidate-shipments-automatic.md
-          - name: Scenario 2 - Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page
+          - name: Scenario 2 - Consolidate shipments when the shipment consolidation policy is overridden
             href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-          - name: Scenario 3 - Consolidate shipments by using Release to warehouse from the load planning workbench
+          - name: Scenario 3 - Consolidate shipments by releasing to warehouse from the load planning workbench
             href: warehousing/consolidate-shipments-load-planning-workbench.md
           - name: Scenario 4 - Consolidate shipments by using the shipment consolidation workbench
             href: warehousing/consolidate-shipments-manual-workbench.md
@@ -3347,7 +3357,7 @@
         items:
         - name: Missing field settings on copying item model groups to another legal entity
           href: troubleshooting/costing/copying-item-model-groups.md
-        - name: The "Indirect costs in process" report includes deleted production orders
+        - name: The Indirect costs in process report includes deleted production orders
           href: troubleshooting/costing/indirect-costs-in-pr.md
         - name: Purchase accrual posted with amount zero for zero-value product receipt
           href: troubleshooting/costing/posting-to-purchase.md
@@ -3361,13 +3371,13 @@
           href: troubleshooting/inventory/multiple-inventory-t.md
         - name: Reversing a report as finished creates an unexpected open transaction
           href: troubleshooting/inventory/reverse-report-as-fi.md
-        - name: Unable to show new notes attached to a journal in the picking list report
+        - name: Picking list report doesn't show new notes that are attached to a journal
           href: troubleshooting/inventory/unable-to-print-the.md
         - name: Quantity on a started quarantine order doesn't update when the order is split
           href: troubleshooting/inventory/quantity-on-a-start.md
-        - name: The "Last tested date" field isn't updated when creating multiple quality orders
+        - name: The Last tested date field isn't updated when multiple quality orders are created
           href: troubleshooting/inventory/the-field-last-test.md
-        - name: On splitting a catch-weight quantity, minimum instead of nominal quantity is used
+        - name: When a catch-weight quantity is split, minimum quantity is used instead of nominal quantity
           href: troubleshooting/inventory/while-splitting-the.md
       - name: Master planning
         items:
@@ -3379,7 +3389,7 @@
           href: troubleshooting/planning/planned-orders-are-g.md
         - name: Planned purchase order created when a purchase exists within negative days
           href: troubleshooting/planning/planning-optimisatio.md
-        - name: Unable to upload the cost price in demand forecast entries
+        - name: Can't update the forecasted unit cost when you import demand forecast records
           href: troubleshooting/planning/unable-to-upload-the.md
         - name: Can't remove the warehouse demand forecast dimension from forecast lines
           href: troubleshooting/planning/warehouse-removal-fr.md
@@ -3387,15 +3397,15 @@
           href: troubleshooting/planning/when-importing-to-th.md
       - name: Procurement
         items:
-        - name: Can't invoice a customer-facing sales order in the VEL company
+        - name: You can't invoice a customer-facing sales order
           href: troubleshooting/procurement/not-able-to-invoice-.md
         - name: Can't add a line to a purchase requisition after requesting a change
           href: troubleshooting/procurement/purchase-requisition.md
       - name: Product information management
         items:
-        - name: Can't apply a template to create a released product
+        - name: You can't apply a template to create a released product
           href: troubleshooting/products/apply-template-in-re.md
-        - name: Can't import an item using the Released products V2 entity
+        - name: You can't import an item by using the Released products V2 entity
           href: troubleshooting/products/cannot-import-with-r.md
         - name: Purchase orders don't show translated product text
           href: troubleshooting/products/when-the-customer-ad.md
@@ -3409,7 +3419,7 @@
           href: troubleshooting/production/late-selection-is-no.md
         - name: Users can unpick material lines for products that have been reported as finished
           href: troubleshooting/production/raw-material-lines-a.md
-        - name: Error on posting report as finished journal
+        - name: Error when the Report as finished journal is posted
           href: troubleshooting/production/posting-report-as-.md
         - name: The warehouse in the picking list journal is not updated on a BOM line
           href: troubleshooting/production/the-warehouse-in-pic.md
@@ -3429,11 +3439,11 @@
         items:
         - name: An error occurs when choosing the location during picking list registration
           href: troubleshooting/warehousing/error-cannot-update.md
-        - name: Packing station doesn't display product notes
+        - name: Packing station doesn't show product notes
           href: troubleshooting/warehousing/packing-station-not-.md
         - name: Location profile disallows negative inventory, but negative on-hand is permitted
           href: troubleshooting/warehousing/location-profile-set.md
-        - name: Only one label prints for multiple work headers on a single receipt
+        - name: Only one label is printed for multiple work headers on a single receipt
           href: troubleshooting/warehousing/when-receipting-prod.md
         - name: You can't confirm a shipment because of an issue with the calendar
           href: troubleshooting/warehousing/load-has-active-appo.md
@@ -3449,9 +3459,9 @@
           href: troubleshooting/warehousing/quantity-exceeds-und.md
         - name: The last closed work line must be a put
           href: troubleshooting/warehousing/the-last-closed-work.md
-        - name: The weight fields on load lines do not match the weight fields on load
+        - name: The weight fields on load lines don't match the weight fields on the load
           href: troubleshooting/warehousing/the-weight-fields-on.md
-        - name: Wave is not eligible for cleanup
+        - name: Wave isn't eligible for cleanup
           href: troubleshooting/warehousing/wave-is-not-eligible.md
         - name: Weight must be positive
           href: troubleshooting/warehousing/weight-must-be-posit.md
@@ -3459,7 +3469,7 @@
           href: troubleshooting/warehousing/work-cannot-be-canceled-blocked.md
         - name: Work can't be canceled because of status
           href: troubleshooting/warehousing/work-cannot-be-canceled-status.md
-        - name: Work is not blocked
+        - name: Work isn't blocked
           href: troubleshooting/warehousing/work-is-not-blocked.md
         - name: Work remains blocked
           href: troubleshooting/warehousing/work-remains-blocked.md

@@ -110,6 +110,39 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the **Domestic tax report – Feature reference IT-00003**. |
 
+## October 2019 deprecation announcement
+
+### Flowchart diagrams in Business process modeler
+
+<table>
+<tbody>
+<tr>
+<td><strong>Reason for deprecation/removal</strong></td>
+<td>We are deprecating the flowchart diagrams component in Business process modeler (BPM), because the legacy design caused low usage.</td>
+</tr>
+<tr>
+<td><strong>Replaced by another feature?</strong></td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Areas affected</strong></td>
+<td>Business process modeler</td>
+</tr>
+<tr>
+<td><strong>Status</strong></td>
+<td>Deprecated: The flowchart diagrams component in BPM is expected to be removed in 2020. The following functionality will be unavailable:
+<ul>
+<li>All flowcharts will be read-only and unavailable for editing. The shape properties that are associated with flowchart activities will also be unavailable. These flowcharts include both the default flowcharts that are automatically generated and customized flowcharts that are modified based on those default flowcharts.</li>
+<li>The process steps will be read-only and unavailable for editing.</li>     
+<li>The legacy fit/gap analysis feature will be unavailable. Therefore, no gap list will be automatically created or available for export.
+<p><strong>Note:</strong> This feature had previously been deprecated and replaced by Microsoft Azure DevOps integrations.</p>
+</li>
+<li>The version history of the flowchart will be unavailable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Finance and Operations 10.0.5 with Platform update 29
 
@@ -338,6 +371,16 @@ Feature for creating templates for new profit tax registers. This feature create
 | **Deployment option**              | All |
 | **Status**                         | Removed as of Finance and Operations 8.1 with Platform update 20. |
 
+### Payroll and Human Resources for Russia
+Russian country specific module for managing staff administration information, timesheet details for employees, payroll accounting, and creating pay statements. 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Payroll is not included in the global strategic focus of the Dynamics 365 portfolio. Partners and ISVs are best positioned to provide payroll functionality that is compliant with local regulations and tax updates.|
+| **Replaced by another feature?**   | No|
+| **Product areas affected**         | Russian Payroll and Human Resources Management |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is one of future updates of the 10.0 version. |
 
 ## Finance and Operations 8.0 with Platform update 15
 No features have been removed or deprecated with this release. Platform update 15 is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15.

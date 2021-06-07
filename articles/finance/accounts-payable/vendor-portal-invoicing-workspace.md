@@ -36,8 +36,7 @@ This topic explains how you can view vendor invoices and submit invoices from th
 The **Vendor collaboration invoicing** workspace can be used to view vendor invoice information and to submit invoices to the system using workflow capabilities.
 
 
-Vendor collaboration invoicing workspace
-----------------------------------------
+## Vendor collaboration invoicing workspace
 
 ### Summary tiles
 

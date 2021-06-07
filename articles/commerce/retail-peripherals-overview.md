@@ -837,8 +837,7 @@ The following peripherals were tested by using a shared IIS hardware station tog
     6.  After the DLL hosts have been closed, restart Modern POS.
 
 
-Additional resources
---------
+## Additional resources
 
 [Peripheral simulator for Commerce](dev-itpro/retail-peripheral-simulator.md)
 

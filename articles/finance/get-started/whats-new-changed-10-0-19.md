@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance 10.0.19 (July 2021)
+title: What's new or changed in Dynamics 365 Finance 10.0.19 (June 2021)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.19 preview release.
 author: roschlom
-ms.date: 04/23/2021
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
 
 ---
-# Preview features in Dynamics 365 Finance 10.0.19 (July 2021)
+# Preview features in Dynamics 365 Finance 10.0.19 (June 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -35,7 +35,7 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 
 - **Preview release:** April 2021
 - **General availability (self-update):** June 2021
-- **General availability (auto-update):** July 2021
+- **General availability (auto-update):** June 2021
 
 ## Features included in this release
 
@@ -48,6 +48,15 @@ The following features are included in this release. Some of the listed features
 - [Tax service – supporting multiple VAT ID (preview)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service--supporting-multiple-vat-id-preview)
 - [Tax service – supporting tax in transfer order (preview)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service--supporting-tax-transfer-order-preview)
 - [Tax service (preview)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service-preview)
+- [Electronic Invoicing – configurable Austrian electronic invoice](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-austrian-electronic-invoice)
+- [Electronic Invoicing – configurable Belgian electronic invoice](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-belgian-electronic-invoice)
+- [Electronic Invoicing – configurable Danish electronic invoice](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-danish-electronic-invoice)
+- [Electronic Invoicing – configurable Dutch electronic invoice](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-dutch-electronic-invoice)
+- [Electronic Invoicing – configurable Estonian electronic invoice](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-estonian-electronic-invoice)
+- [Electronic Invoicing – configurable French electronic invoice](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-french-electronic-invoice)
+- [Electronic Invoicing – configurable German electronic invoice](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-german-electronic-invoice)
+- [Electronic Invoicing – configurable Norwegian electronic invoice](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-norwegian-electronic-invoice)
+- [Electronic Invoicing – configurable Spanish electronic invoice](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-spanish-electronic-invoice)
 
 ## Additional resources
 

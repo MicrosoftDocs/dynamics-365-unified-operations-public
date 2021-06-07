@@ -72,7 +72,9 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
-          - name: Finance 10.0.19 (July 2021)
+          - name: Finance 10.0.20 (August 2021)
+            href: get-started/whats-new-changed-10-0-20.md
+          - name: Finance 10.0.19 (June 2021)
             href: get-started/whats-new-changed-10-0-19.md
           - name: Finance 10.0.18 (May 2021)
             href: get-started/whats-new-changed-10-0-18.md
@@ -1160,6 +1162,8 @@
           href: general-ledger/rvrs-settgs-on-jrnls-lines.md
         - name: Year-end close missing opening balances
           href: general-ledger/yec-mssng-open-blnces.md
+        - name: Open financial journal templates in Office
+          href: general-ledger/open-fincl-jrnls-in-office.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
@@ -1212,6 +1216,8 @@
         href: finance-insights/finance-insights-home-page.md
       - name: Configuration and administration
         items:
+        - name: Configure Finance insights for public preview
+          href: finance-insights/configure-for-fin-insites-PubPrvw.md
         - name: Configure Finance insights
           href: finance-insights/configure-for-fin-insites.md
         - name: Enable Customer payment predictions
@@ -1460,6 +1466,8 @@
             href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
           - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
             href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+          - name: Regulatory Configuration Service – Lifecycle Services storage deprecation
+            href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
         - name: Electronic Invoicing
           items: 
           - name: Electronic Invoicing overview
@@ -1472,6 +1480,8 @@
             href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/finance/toc.json
           - name: Create an Azure storage account and a Key Vault
             href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
+          - name: Usage management dashboard
+            href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
           - name: Get started 
             items:
             - name: Get started with Electronic Invoicing service administration
@@ -1502,10 +1512,20 @@
             href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
           - name: Add data fields in the tax integration by using extensions
             href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-          - name: Multiple VAT registration numbers
-            href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
           - name: Set up an environment for master data lookup
             href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+          - name: Multiple VAT registration numbers
+            href: localizations/emea-multiple-vat-registration-numbers.md
+          - name: Reporting for multiple VAT registrations 
+            items:
+            - name: Reporting for multiple VAT registrations
+              href: localizations/emea-reporting-for-multiple-vat-registrations.md
+            - name: Netherlands reporting
+              items:
+              - name: VAT declaration
+                href: localizations/emea-nl-vat-declaration-netherlands.md
+              - name: EU sales list
+                href: localizations/emea-nl-eu-sales-list.md
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
       - name: Australia
@@ -2388,6 +2408,20 @@
                 href: localizations/apac-ind-GST-tax-returns.md
               - name: Enable multi-batch processing for GSTR reports
                 href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+            - name: Troubleshooting GST
+              items:
+              - name: Incorrect tax amount after calculation
+                href: localizations/apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md
+              - name: Tax configuration errors
+                href: localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md
+              - name: Tax isn't calculated
+                href: localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md
+              - name: Activating the setoff rules takes longer than expected
+                href: localizations/apac-ind-GST-troubleshooting-setoff-rule-activate-take-long-time.md
+              - name: TaxTrans or voucher isn't generated
+                href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
+              - name: Tax transaction ID is incorrect
+                href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
         - name: Direct taxes
           items:
           - name: India withholding tax
@@ -2844,6 +2878,10 @@
           href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
         - name: Audit file (XML Auditfile Financieel XAF)
           href: localizations/emea-nl-audit-file.md
+        - name: VAT declaration (Netherlands)
+          href: localizations/emea-nl-vat-declaration-netherlands.md
+        - name: EU sales list
+          href: localizations/emea-nl-EU-sales-list.md
       - name: Norway
         items:
         - name: Norway overview
@@ -4123,7 +4161,7 @@
           items: 
           - name: Trace generated report results and compare them with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
-          - name: Improvements in tracing results of generated ER reports and comparisons with baseline values
+          - name: Improve tracing the results of generated ER reports to compare with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
           - name: Automate testing with ER
             href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json

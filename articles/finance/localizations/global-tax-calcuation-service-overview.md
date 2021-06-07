@@ -4,7 +4,7 @@
 title: Tax Calculation (Preview)
 description: This topic explains the overall scope and features of the Tax Calculation capability.
 author: wangchen
-ms.date: 04/12/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,6 +35,9 @@ ms.dyn365.ops.version: 10.0.18
 Tax Calculation is a hyper-scalable multitenant service that enables the global tax engine to automate and simplify the tax determination and calculation process. The tax engine is fully configurable. The elements that can be configured include, but aren't limited to, the taxable data model, tax code, tax applicability matrix, and tax calculation formula. The tax engine runs on the Microsoft Azure core services platform, and offers modern technology and exponential scalability.
 
 Tax Calculation integrates with Dynamics 365 Finance and Dynamics 365 Supply Chain Management. Eventually, it will also integrate with Dynamics 365 Project Operations, Dynamics 365 Commerce, and other first-party and third-party applications.
+
+> [!IMPORTANT]
+> When you enable the Tax Calculation service, some operations on related data might be performed in a data center other than the data center that maintains your service data. Review the [Terms and Conditions](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) before you enable the Tax Calculation service. Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 Tax Calculation is a microservice-based tax engine that offers exponential scalability. It can help you perform the following tasks:
 

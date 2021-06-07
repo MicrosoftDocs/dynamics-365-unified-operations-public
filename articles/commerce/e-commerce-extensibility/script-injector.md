@@ -4,7 +4,7 @@
 title: Script injectors
 description: This topic covers script injectors that can be used to add scripts to online pages in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 09/15/2020
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -128,9 +128,7 @@ export default (props: IMyScriptInjectorViewProps) => {
     const scriptContents = `window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create', 'UA-XXXXX-Y', 'auto');ga('send', 'pageview')`;
     return (
         <HtmlHeadInclude>
-            <script data-load-point='headStart'>
-               {scriptContents}
-            </script>
+            <script data-load-point='headStart' dangerouslySetInnerHTML={{ __html: scriptContents}} />
             <script data-load-point='headStart' async src={props.config.scriptSource} />
         </HtmlHeadInclude>
     );
@@ -138,7 +136,7 @@ export default (props: IMyScriptInjectorViewProps) => {
 ```
 
 > [!NOTE]
-> Inline script content should be saved as a string and then inserted into the script, and the **data-load-point** attribute must be specified on script tags. This attribute controls where the script tag should be placed. Possible values include **headStart**, **headEnd**, **bodyStart**, and **bodyEnd**.
+> Inline script content should be saved as a string and then inserted into the script using the React **dangerouslySetInnerHTML** attribute (to avoid escaping special characters), and the **data-load-point** attribute must be specified on script tags. This attribute controls where the script tag should be placed. Possible values include **headStart**, **headEnd**, **bodyStart**, and **bodyEnd**.
 
 The **HtmlHeadInclude** component can also be used to insert **\<title\>**, **\<meta\>**, **\<link\>**, and **\<style\>** tags into the head of an HTML document. Unlike scripts, these elements do not need a **data-load-point** attribute as they will always be placed in the head.
 

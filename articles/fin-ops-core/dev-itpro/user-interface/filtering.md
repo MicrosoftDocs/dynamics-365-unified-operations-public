@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic explains the filtering options that are available.
 
-Introduction
-------------
+## Introduction
 
 Microsoft Dynamics AX 2012 offers the following filtering options.
 

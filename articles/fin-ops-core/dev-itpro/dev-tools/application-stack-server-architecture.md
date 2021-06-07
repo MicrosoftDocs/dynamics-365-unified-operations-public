@@ -20,8 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The application stack is divided into platform models and application-specific models. The platform models are Application Platform, Application Foundation, and Test Essentials. There are many application-specific models. Some examples are Application Suite, Ledger, Retail, and Case Management.
 
-Overview
---------
+## Overview
 
 The application stack and server architecture align with three key pillars:
 

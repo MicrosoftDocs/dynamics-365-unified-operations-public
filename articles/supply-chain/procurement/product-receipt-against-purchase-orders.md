@@ -60,8 +60,7 @@ After the product receipt has been processed on the PO, the PO status is set to 
 
 You can access this page from the **Receipt** action group on the **Purchase order** page. The information in the journals includes details about the quantities, dates, and dimensions.
 
-Additional resources
---------
+## Additional resources
 
 [Purchase order overview](purchase-order-overview.md)
 

@@ -33,8 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic explains how to set up fiscal information for addresses, legal entities, customers, and vendors, and for products that are released to a Brazilian legal entity. This information is required for tax calculation, and for fiscal documents and other required statements that you submit from Fiscal books.
 
-Tax address attributes
-----------------------
+## Tax address attributes
 
 For any legal entity that has an address in Brazil, the Instituto Brasileiro de Geografia e Estatística (IBGE) code must be set up on the state and/or city. The IBGE code is used to identify the region where the address is located, so that correct taxes are considered. The IBGE code information comes from the IBGE, which is an official organization that maps the Brazilian geography.
 

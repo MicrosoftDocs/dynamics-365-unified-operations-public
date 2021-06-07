@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 According to Article 16 of the Law on Accounting of the Republic of Lithuania, companies in Lithuania are legally required to provide a report in Standard Audit File for Tax (SAF-T) format. This topic describes how Microsoft Dynamics 365 Finance supports the SAF-T requirements and explains how to prepare Finance to work with the SAF-T report for Lithuania.
 
-For more information, see [SAF-T - VMI](https://www.vmi.lt/cms/web/guest/saf-t).
+For more information, see [SAF-T - VMI](https://www.vmi.lt/evmi/en/home).
 
 ## Setup
 

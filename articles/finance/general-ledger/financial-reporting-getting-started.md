@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes where to access financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
 
-Accessing financial reporting
------------------------------
+## Accessing financial reporting
 
 You can find the **Financial reporting** menu in the following locations:
 
