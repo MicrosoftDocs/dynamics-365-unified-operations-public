@@ -101,10 +101,10 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
 
 ## Hybrid app distribution
 
-To distribute the Android and iOS app, please follow the distribution options suggested by Android and iOS app team.
+To distribute the Android and iOS app, refer to the following distribution options suggested by the Android and iOS app teams.
 
-[Android app distribution](https://developer.android.com/distribute/marketing-tools/alternative-distribution)
-[iOS app distribution](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution)
+- [Android app distribution](https://developer.android.com/distribute/marketing-tools/alternative-distribution)
+- [iOS app distribution](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution)
 
   
 ## Dedicated hardware station support for the hybrid Android app
