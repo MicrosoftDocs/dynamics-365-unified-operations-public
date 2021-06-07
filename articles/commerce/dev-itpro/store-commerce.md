@@ -33,7 +33,7 @@ Store Commerce supports local hardware station, and can be directly integrated w
 
 To render the user interface (UI), Store Commerce uses the Chromium engine instead of the Universal Windows Platform (UWP) app rendering framework. The Chromium engine has better rendering performance than the native JavaScript UWP app in Windows. The main difference between MPOS and Store Commerce is that Store Commerce uses the Chromium engine to render the app.
 
-## Benefits of Store Commerce app:
+## Benefits of Store Commerce app
 
 + Simplified Application lifecycle management (ALM) using Microsoft Store.
 + Extension or ISV code developed for MPOS or CPOS can be reused in Store Commerce.
