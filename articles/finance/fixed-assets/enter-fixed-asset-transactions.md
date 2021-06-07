@@ -71,5 +71,20 @@ The Depreciation periods remaining value of the fixed asset is not updated when 
 
 For more information, see [Fixed assets integration](fixed-asset-integration.md).
 
+## Transactions that require different voucher numbers
+
+The following Fixed assets transactions will use different voucher numbers:
+
+- An additional acquisition is made on an asset, and "catch-up" depreciation is calculated.
+- An asset is split.
+- A parameter to calculate depreciation on disposal is turned on, and then the asset is disposed of.
+- An asset's service date is before the acquisition date. Therefore, a depreciation adjustment is posted.
+Note: Need to enable Prevent automatic one voucher usage in Fixed assets under feature management.
+
+
+> [!NOTE]
+> When you enter transactions, be sure that all the transactions apply to the same fixed asset. The voucher won't be posted if it includes more than one fixed asset, even if the **New Voucher** field is set to **One voucher number only** on the **Journal names** page in General ledger. If you include more than one fixed asset in the voucher, the message you'll recieve the message, "There can only be one fixed asset transaction per voucher," and you won't be able to post the voucher.
+
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
