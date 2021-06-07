@@ -1,19 +1,19 @@
 ---
 title: Picked quantity is not sufficient to update throughout Packing slip generation
 description: When you are generating a packing slip, the outbound load contains a picked quantity that doesn't match the created work quantity on the load line
-author: Henrikan
+author: GalynaFedorova
 ms.date: 5/31/2021
 ms.topic: troubleshooting
 ms.search.form: WHSLoadTable_WHSSalesPackingSlipPost,WHSLoadPlanningListPage_WHSSalesPackingSlipPost,WHSLoadPlanningWorkbench_WHSSalesPackingSlipPost
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: Henrikan
+ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
 ---
-<!-- KFM: This title should be improved. It doesn't match the topic very well. Also, update what? -->
-# Picked quantity is not sufficient to update throughout packing slip generation
+
+# Picked quantity is not sufficient during packing slip generation
 
 Error code: SYS54073
 
@@ -48,7 +48,7 @@ The load or shipment is currently in a state where packing slip generation fails
 Use the following procedure to check your load lines and make sure that all the related work has been completed at the final shipping location, and that the quantities match:
 
 1. Go to **Warehouse management \> Loads \> All loads**.
-1. Select the load that the shipment can't be confirmed for. <!-- KFM: Are we trying to confirm a shipment or generate a packing slip? -->
+1. Select the load that the packing slip can't be generated for.
 1. On the **Load lines** FastTab, select the load line.
 1. Make a note of the value of the **Work created quantity** field.
 1. On the Action Pane, open the **Loads** tab and, from the **Related information** group, select **Work**.
@@ -62,11 +62,18 @@ Use the following procedure to adjust the load line quantity:
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. Select the load that the packing slip can't be generated for.
 1. On the Action Pane, open the **Ship and receive** tab and, from the **Reverse** group, select **Reverse shipment confirmation**.
-1. Open the **Load lines** tab and select the load line for the item that exceeds the over delivery. <!-- KFM: Is this really about over delivery? -->
+1. Open the **Load lines** tab and select the load line for the item that causes an issue. 
 1. Select **Reduce picked quantity** to adjust the picked quantity.
 1. Set the **Reduce load line** field to reflect adjustments on the load line.
 
 ### Reserve all pick registrations and redo picking
 
-It might be the case that someone has used pick registration to close a load line without work, which can cause this issue.
-<!-- KFM: Is something missing here? The content doesn't seem to match the heading. -->
+It might be the case that someone has used pick registration to close a load line without work, which can cause this issue. 
+For this scenario, manual pick registration needs to be reversed and picking to be completed via warehousing app. 
+
+Use the following procedure to undo the pick registration:
+
+1. Go to **Accounts receivable \> Orders \> All orders**.
+1. Select the sales order for which you can't post a packing slip for the load.
+1. Open the **Sales order lines** tab and select the sales order line for which pick registration was done.
+1. Select **Update line \> Pick** to unpick the items.

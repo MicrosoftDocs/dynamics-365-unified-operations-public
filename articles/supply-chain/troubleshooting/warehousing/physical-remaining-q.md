@@ -1,14 +1,14 @@
 ---
 title: Physical remaining quantity in the unit must be other than zero
 description: When you are generating a packing slip, the data supplied to it has a non-zero inventory quantity but zero sales quantity.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 5/31/2021
 ms.topic: troubleshooting
 ms.search.form: WHSLoadPlanningListPage_WHSSalesPackingSlipPost, WHSLoadTable_WHSSalesPackingSlipPost
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: Henrikan
+ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
 ---

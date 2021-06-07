@@ -1,14 +1,14 @@
 ---
 title: Decimal rounding of the physical updating quantity is incorrect
 description: As part of the packing slip generation, the outbound load contains quantity that doesn't match to the decimal precision defined in the unit
-author: Henrikan
+author: GalynaFedorova
 ms.date: 5/31/2021
 ms.topic: troubleshooting
 ms.search.form: WHSLoadPlanningListPage_WHSSalesPackingSlipPost, WHSLoadTable_WHSSalesPackingSlipPost
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: Henrikan
+ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
 ---
@@ -29,9 +29,7 @@ Therefore, you can't generate the packing slip for the load.
 
 ## Cause
 
-The system evaluates whether the decimal rounding of the shipping quantity corresponds to the decimal precision defined per shipping unit. If the system finds that rounding the shipping quantity to the specified number of decimal places defined in the unit that doesn't match to the shipping unit, you can't generate the packing slip. For example, this issue might occur if the sales quantity is 1.75 kg, but decimal precision is set to 1.
-
-<!-- KFM: Something is wrong with the sentence "If the system finds that rounding the shipping quantity to the specified number of decimal places defined in the unit that doesn't match to the shipping unit, you can't generate the packing slip.". Please revise. -->
+The system evaluates whether the decimal rounding of the shipping quantity corresponds to the decimal precision defined per shipping unit. If the system finds that rounded shipping quantity to the specified number of decimal places doesn't match to the shipping quantity, you can't generate the packing slip. For example, this issue might occur if the sales quantity is 1.75 kg, but decimal precision is set to 1.
 
 ## Resolution
 
@@ -49,7 +47,7 @@ Use the following procedure to check your load lines and make adjustments to ens
 1. Go to **Warehouse management \> Loads \> All loads**.  
 1. Select the load that the packing slip can't be generated for.
 1. On the Action Pane, open the **Ship and receive** tab and, from the **Reverse** group, select **Reverse shipment confirmation**.
-1. Open the **Load lines** tab and select the load line for the item that exceeds the over delivery. <!-- KFM: Is this really about over delivery? -->
+1. Open the **Load lines** tab and select the load line for the item that causes an issue. 
 1. Select **Reduce picked quantity** to adjust the picked quantity.
 1. Open the **Line details** tab and and select **Order**.
 1. In the **Quantity** field, set the value to the picked quantity (**Work created quantity**) to allow packing slip generation to proceed.  

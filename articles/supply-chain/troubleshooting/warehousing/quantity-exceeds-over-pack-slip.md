@@ -1,19 +1,18 @@
 ---
 title: Quantity exceeds over-delivery percentage throughout packing slip generation
 description: When you are generating a packing slip, the outbound load contains a quantity that exceeds the over-delivery percentage
-author: Henrikan
+author: GalynaFedorova
 ms.date: 5/31/2021
 ms.topic: troubleshooting
 ms.search.form: WHSLoadTable_WHSSalesPackingSlipPost,WHSLoadPlanningListPage_WHSSalesPackingSlipPost,WHSLoadPlanningWorkbench_WHSSalesPackingSlipPost
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: Henrikan
+ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
 ---
-<!-- KFM: What do you mean by "throughout"? -->
-# Quantity exceeds over-delivery percentage throughout packing slip generation
+# Quantity exceeds over-delivery percentage during packing slip generation
 
 Error code: SYS24920
 
@@ -49,7 +48,7 @@ Use the following procedure to adjust the load line quantity:
 1. Open the **Load lines** tab and select the load line for the item that exceeds the over-delivery percentage.
 1. Select **Reduce picked quantity** to adjust the picked quantity.
 1. Open the **Line details** tab and, select **Order**.
-1. In the **Quantity** field, set the value to the picked quantity (**Work created quantity**), which will allow packing slip generation to proceed. <!-- KFM: The meaning of the bold text in parenthesis isn't clear. Is that a field name? -->
+1. In the **Quantity** field, set the value to the picked quantity (**Work created quantity** field), which will allow packing slip generation to proceed. 
 
 ### Adjust the over-delivery percentage
 
@@ -63,4 +62,19 @@ Use the following procedure to adjust the over-delivery percentage:
 
 ### Reverse and make adjustments
 
-Reverse everything that has been posted for the load, make sales order adjustments, and repeat the steps. <!-- KFM: How do we reverse everything? Repeat which steps? -->
+Reverse everything that has been posted (including but not limited to packing slip, shipment confirmation, work) for the load, make sales order adjustments, rerelease the order to the warehouse and complete the shipment procedure. 
+
+Use the following procedure to cancel a packing slip:
+
+1. Go to **Warehouse management \> Loads \> All loads**.
+1. On the Action Pane, open the **Ship and receive** tab and, from the **Reverse** group, select **Cancel packing slips**.
+
+Use the following procedure to reverse a shipment confirmation:
+
+1. Go to **Warehouse management \> Loads \> All loads**.
+1. On the Action Pane, open the **Ship and receive** tab and, from the **Reverse** group, select **Reverse shipment confirmation**.
+
+Use the following procedure to reverse a work:
+
+1. Go to **Warehouse management \> Loads \> All loads**.
+1. On the Action Pane, open the **Loads** tab and, from the **Work** group, select **Reverse work**.
