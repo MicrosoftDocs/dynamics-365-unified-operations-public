@@ -43,7 +43,7 @@ The retries are enabled for jobs that have implemented the BatchRetryable interf
 ## Frequently asked questions
 
 ### How do retries work for my custom batch jobs?
-There is no change to the custom batch jobs. In order to take advantage of the automated retries, implement the retryable interface explicitly on every custom batch job.
+There is no change to the custom batch jobs. In order to take advantage of the automated retries, implement the retryable interface explicitly and return true on custom batch jobs. Please note that the batch jobs may need to be modified to make sure the job is retry safe.
 
 ### How do I implement the retryable interface?
 Add the following code to your Batch class
