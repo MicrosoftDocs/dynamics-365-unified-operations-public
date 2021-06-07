@@ -32,13 +32,13 @@ ms.dyn365.ops.version: Platform update 42
 [!include [banner](../includes/banner.md)]
 
 ## Overview
-This article describes how to enable automatic retries on batch jobs on transient failures. Currently, if F&O experiences a brief connection loss to SQL, the executing batch jobs fail. This is very disruptive to business processes. Given that connection loss is inevitable in a cloud service, Microsoft is enabling automated retries on failures of this type. This article describes how retries are enabled in Finance & Operations apps batch jobs.
+This article describes how to enable automatic retries on batch jobs on transient failures. Currently, if Finance & Operations apps experience a brief connection loss to SQL, the executing batch jobs fail. This is very disruptive to business processes. Given that connection loss is inevitable in a cloud service, Microsoft is enabling automated retries on failures of this type. This article describes how retries are implemented in Finance & Operations apps batch jobs.
 
 ## Metadata
-Given that all batch jobs may not be idempotent (for e.g a batch runs credit card transaction), the retries cannot be enabled across all batch jobs equally. In order to safely enable retries, we are have added metadata to the batch jobs to indicate if it is automatically retryable. Between 10.0.18 and 10.0.19, more than 90% of the Microsoft batch jobs have implemented the Retryable interface explicitly. For any jobs the retryable interface is not implemented, the default value is false.
+Given that all batch jobs may not be idempotent (for e.g a batch runs credit card transaction), the retries cannot be enabled across all batch jobs equally. In order to safely enable retries, we have added metadata to the batch jobs to indicate if they automatically retryable. Between 10.0.18 and 10.0.19, more than 90% of the Microsoft batch jobs have implemented the Retryable interface explicitly. For any jobs the retryable interface is not implemented, the default value is false.
 
 ## Retries
-The retries are enabled for jobs that have implemented the Retryable interface and have set Retryable = true. Currently the retries happen on any interruption to SQL connection. Microsoft will continue adding retries on other exceptions.
+The retries are enabled for jobs that have implemented the BatchRetryable interface and have set isRetryable = true. Currently the retries happen on any interruption to SQL connection. Microsoft will continue adding retries on other exceptions.
 
 ## Frequently asked questions
 
@@ -58,7 +58,7 @@ Add the following code to your Batch class
  ```
  
  ### I am extending a Microsoft batch that is retryable, but my batch job is not. Will the retry trigger?
- As long as the extended job has the Retryable set to false, the job will not be retried.
+ As long as the extended job has the isRetryable set to false, the job will not be retried.
  
  ### I marked my custom job as Retryable by mistake. Is there a way I can override without taking another code change?
  Yes, you can go to the system administration -> batch -> override form and override the retryable value to false. This will prevent further executions from being retried.
