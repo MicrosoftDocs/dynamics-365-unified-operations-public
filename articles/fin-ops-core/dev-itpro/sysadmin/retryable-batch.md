@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 42
 [!include [banner](../includes/banner.md)]
 
 ## Overview
-This article describes how to enable automatic retries on batch jobs on transient failures. Currently, if Finance & Operations apps experience a brief connection loss to SQL, the executing batch jobs fail. This is very disruptive to business processes. Given that connection loss is inevitable in a cloud service, Microsoft is enabling automated retries on failures of this type. This article describes how retries are implemented in Finance & Operations apps batch jobs.
+This article describes how to enable automatic retries on batch jobs on transient failures. Currently, if Finance & Operations apps experience a brief connection loss to SQL, all executing batch jobs fail. This is very disruptive to business processes. Given that connection loss is inevitable in a cloud service, Microsoft is enabling automated retries on failures of this type. This article describes how retries are implemented in Finance & Operations apps batch jobs.
 
 ## Metadata
 Given that all batch jobs may not be idempotent (for e.g a batch runs credit card transaction), the retries cannot be enabled across all batch jobs equally. In order to safely enable retries, we have added metadata to the batch jobs to indicate if they automatically retryable. Between 10.0.18 and 10.0.19, more than 90% of the Microsoft batch jobs have implemented the Retryable interface explicitly. For any jobs the retryable interface is not implemented, the default value is false.
