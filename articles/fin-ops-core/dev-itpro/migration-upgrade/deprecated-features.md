@@ -98,7 +98,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Italian localization |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the **Blacklist report (IT) – Feature reference IT-00001**. |
+| **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support this report. |
 
 ### Domestic tax report – Feature reference IT-00003
 

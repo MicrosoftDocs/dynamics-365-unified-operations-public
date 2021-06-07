@@ -40,7 +40,7 @@ Integrating Clarity into your Dynamics 365 Commerce site is easy, just follow th
 
 ## Sign up for Clarity
 
-To sign up for Clarity, go to the [Clarity](https://clarity.microsoft.com/) website and select **Get started**. During the setup process, use the live production domain URL associated with your Commerce site. For additional details about Clarity setup, see [Getting started](https://docs.microsoft.com/clarity/getting-started).
+To sign up for Clarity, go to the [Clarity](https://clarity.microsoft.com/) website and select **Get started**. During the setup process, use the live production domain URL associated with your Commerce site. For additional details about Clarity setup, see [Getting started](/clarity/getting-started).
 
 ## Integrate Clarity with your Commerce site
 
@@ -99,7 +99,7 @@ To embed the Clarity tracking code into site pages in Commerce site builder, fol
 1. Select **Save**, and then select **Publish**. All site pages that use the updated template will now have the embedded Clarity script code.
 1. Repeat the previous steps as needed for any additional templates to which you want to add the Clarity script code.
 
-For information about how to test if the Clarity script is embedded in site pages, see [Clarity Set-Up: Verification](https://docs.microsoft.com/clarity/clarity-setup#verification).
+For information about how to test if the Clarity script is embedded in site pages, see [Clarity Set-Up: Verification](/clarity/clarity-setup#verification).
 
 ### Embed Clarity tracking script code into a specific site page
 

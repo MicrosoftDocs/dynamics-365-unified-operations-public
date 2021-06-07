@@ -42,7 +42,7 @@ This topic explains how to set up the Data migration tool (DMT) so that you can 
 - SQL Server authentication must support both SQL authentication and Microsoft Windows authentication.
 - Microsoft Access database engines that follows the version guidance in the following table.
 
-    |                                   | SQL Server 2008                 | SQL Server 2012 and later |
+    | Office version                    | SQL Server 2008                 | SQL Server 2012 and later |
     |-----------------------------------|---------------------------------|---------------------------|
     | **No Microsoft Office on the VM** | Access engine 32-bit            | Access engine 64-bit      |
     | **Microsoft Office 32-bit**       | Access engine 32-bit            | Access engine 64-bit      |

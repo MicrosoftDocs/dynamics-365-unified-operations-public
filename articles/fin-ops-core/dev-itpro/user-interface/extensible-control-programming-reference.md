@@ -41,8 +41,7 @@ This document contains small code snippets that show how to use each API that is
 ## Control block diagram
 This high-level diagram illustrates the key components of an extensible control and how they interact with each other. Your extensible control solution will contain two X++ classes that implement your control. The runtime class implements the runtime data, presentation, and behavior of your control. The build class defines how your control is displayed in Form Designer, Property Window, and Application Explorer. [![Extensibility architecture](./media/extensibilityarchitecture.png)](./media/extensibilityarchitecture.png)
 
-X++
----
+## X++
 
 The X++ API of your control is the Form-developer-facing API. Be sure to consider the APIs and behaviors you want to provide to the Form developer when designing the X++ APIs for your control.
 

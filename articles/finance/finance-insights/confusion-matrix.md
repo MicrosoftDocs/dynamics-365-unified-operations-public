@@ -133,7 +133,7 @@ To simplify the calculations, sample arrays were built to match the actual and p
 
 For more detail about how this calculation works, here is the sklearn.metrics classification report for model 1. The three states, "On time," "Late," and "Very late," are represented by the rows that are labeled 1, 2, and 3, respectively. The macro average is just the average of the "f1-score" column.
 
-|           | precision | recall   | f1-score |
+| &nbsp;    | precision | recall   | f1-score |
 |-----------|-----------|----------|----------|
 | **1**     | 0.83      | 0.80     | 0.82     |
 | **2**     | 0.68      | 0.71     | 0.69     |

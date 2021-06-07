@@ -98,7 +98,7 @@ The following symbols are used in the syntax:
 + **\+** – A plus sign indicates an element that can be included one or more times.
 + **|** – A bar indicates options. 
 
-| Symbol                |   | Expression |
+| Symbol                | &nbsp;  | Expression |
 |-----------------------|---|------------|
 | *SelectStatement*     | = | **select** *Parameters* |
 | *Parameters*          | = | { *FindOption* } \[ *FieldList* **from** \] *TableBufferVariable* \[ *IndexClause* \] \[ *Options* \] \[ *WhereClause* \] \[ *JoinClause* \] |
