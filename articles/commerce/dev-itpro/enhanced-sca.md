@@ -38,52 +38,52 @@ This topic provides an overview of enhanced strong customer authentication (SCA)
 
 | Term | Description |
 |---|---|
-| SCA | Strong customer authentication allows a cardholder's identity to be verified by their bank when an online purchase is attempted. This is typically performed via a redirect from the storefront checkout flow to a page hosted by the cardholder's bank, where the cardholder's identity is verified. Once validated, the cardholder is directed back to the storefront checkout flow where the order proceeds through checkout. |
+| SCA | Strong customer authentication enables a cardholder's identity to be verified by the bank that issued the card when an online purchase is attempted. This process is typically completed via a redirect from the storefront checkout flow to a page that is hosted by the card's issuing bank. There, the cardholder's identity is verified. The cardholder is then directed back to the storefront checkout flow, where the order proceeds through checkout. |
 | Redirect | The action of moving an online shopper's browsing session out of the context of the merchant's storefront. |
-| Card token | An alias that is used to refer to a real payment card number. Card tokens allow a reference to an actual payment card to be saved while avoiding the security issues associated with saving real payment card numbers. | 
+| Card token | An alias that is used to refer to a real payment card number. Card tokens enable a reference to an actual payment card to be saved. At the same time, they help prevent the security issues that can occur when real payment card numbers are saved. |
 
-Traditionally, the storefront checkout process made two distinct calls to the payment processor. The first call was used to tokenize the card number entered in the payment processor's embedded HTML iframe element during checkout. During this first call, SCA was also enabled so that the cardholder could be authenticated with the card's issuing bank if needed. The second call used the card token obtained from the first call to request the actual authorization response. 
+Traditionally, the storefront checkout process made two distinct calls to the payment processor. The first call was used to tokenize the card number that was entered in the payment processor's embedded HTML iframe element during checkout. During this call, SCA was also enabled, so that the cardholder could be authenticated with the card's issuing bank as required. The second call used the card token that was obtained from the first call to request the actual authorization response.
 
-This two-step method of acquiring payment authorizations was not ideal for all cases, for the following reasons: 
+This two-call method for acquiring payment authorizations wasn't ideal for all cases, for the following reasons:
 
-- Not all payment processors support a zero amount authorization request, which was used in the first call to request the payment token. 
-- Since SCA was performed during the first call, the liability shift granted by SCA was only evident in the tokenization request, not on the actual authorization request. 
+- The first call used a zero-amount authorization request to request the payment token. However, not all payment processors support zero-amount authorization requests.
+- Because SCA was done during the first call, the liability shift that SCA granted was evident only in the tokenization request, not in the actual authorization request.
 
-Aside from technical issues, the traditional storefront checkout process also caused confusion for merchants when they were reviewing payment processing activity and seeing many zero amount requests. 
+Aside from technical issues, the traditional storefront checkout process also caused confusion for merchants, because they saw many zero-amount requests when they reviewed payment processing activity.
 
-To address the issues noted above, payments in Commerce storefront checkout have been refactored to only require a single request. This single request performs all necessary functions related to payment processing, including:
+To address these issues, payments in Commerce storefront checkout have been refactored so that they require only a single request. This single request performs all the necessary functions that are related to payment processing:
 
-- Obtaining a card token where supported in case the authorization expires and a new authorization is required for fulfillment. 
-- Providing support for SCA during the actual authorization request so that the liability shift is evident on the authorization for the amount due.
+- It obtains a card token, if card tokens are supported, in case the authorization expires and a new authorization is required for fulfillment.
+- It supports SCA during the actual authorization request. Therefore, the liability shift is evident in the authorization for the amount due.
 
 ## Key changes from the traditional storefront checkout flow
 
-### No "Review order" step
+### No order review step
 
-Once the payments flow is initiated, there is no step to review and submit the order. When payment details are entered, customers will only have the option to "Place order." If the payment method provided requires SCA, customers will be redirected to the bank's authentication page. Once authentication is completed, customers will be redirected back to the checkout page and the order will be processed. 
+After the payments flow is initiated, there is no step to review and submit the order. After payment details are entered, customers have only the **Place order** option. If the payment method that was provided requires SCA, customers are redirected to the bank's authentication page. After authentication is completed, customers are directed back to the checkout page, and the order is processed.
 
-The flow described above is also applicable to payment methods that redirect by default, such as PayPal. Once payment details have been provided to PayPal, the redirect back to the checkout page will initiate placement of the order. 
+The flow that was just described also applies to payment methods that redirect by default, such as PayPal. After payment details are provided to PayPal, the redirect back to the checkout page initiates order placement.
 
-With the traditional flow, after the payment details had been entered in the embedded iframe element there was a "Save and continue" button available that would add the tokenized payment to the checkout. In demonstration environments there may have also been a step to collect the customer's email, or have the customer agree to terms of use. With the new flow, the validation that was previously performed by the final "Save and continue" button is now performed by the "Place order" button, saving a click for the customer and eliminating a page load from the checkout flow. 
+In the traditional flow, after the payment details were entered in the embedded iframe element, a **Save and continue** button became available. When the customer selected this button, the tokenized payment was added to the checkout. In demonstration environments, there could also be a step that either collected the customer's email address or had the customer agree to terms of use. In the new flow, the validation that was previously done when the customer selected the final **Save and continue** button is now done when the customer selects the **Place order** button. Therefore, one fewer click is required on the customer's part, and a page load is eliminated from the checkout flow.
 
 ## Payment connector support
 
-The out-of-the-box payment connectors for Adyen and PayPal support the enhanced payment flows in checkout by default. 
+By default, the out-of-box payment connectors for Adyen and PayPal support the enhanced payment flows during checkout.
 
 > [!IMPORTANT]
-> - Only Adyen connector version **V002** will truly support enhanced SCA. Version **V001** will still work when the checkout is configured for enhanced SCA, but behind the scenes that version of the connector will still make two calls. 
-> - Version **V001** of the Adyen connector should no longer be used due to SCA requirements that went into effect in the EU on January 1, 2021. For information about configuring the Adyen connector to use version **V002**, see the [Set up a processor for new credit cards](adyen-connector.md?tabs=8-1-3#set-up-a-processor-for-new-credit-cards).
+> - Only Adyen connector version **V002** truly supports enhanced SCA. Version **V001** still works when the checkout is configured for enhanced SCA. However, behind the scenes, that version still makes two calls.
+> - Because of SCA requirements that went into effect in the European Union (EU) on January 1, 2021, version **V001** of the Adyen connector should no longer be used. For information about how to configure the Adyen connector to use version **V002**, see [Set up a processor for new credit cards](adyen-connector.md?tabs=8-1-3#set-up-a-processor-for-new-credit-cards).
 
 ## Enable enhanced payments in storefront checkout in Commerce site builder
 
 To enable the enhanced payments feature in Commerce site builder, follow these steps.
 
-1. In the site you want to edit, expand **Site settings**.
-2. Select **Extensions**. 
-3. Scroll down to **Cart and checkout**, select the **Enable single payment authorization checkout** check box.
-4. Select **Save and publish**. 
+1. In the site that you want to edit, expand **Site settings**.
+2. Select **Extensions**.
+3. Scroll down to **Cart and checkout**, and select the **Enable single payment authorization checkout** checkbox.
+4. Select **Save and publish**.
 
-!["Enable single payment authorization checkout" check box in Commerce site builder](media/rfac.png)
+![Enabling enhanced payments in storefront checkout in Commerce site builder](media/rfac.png)
 
 ## Additional resources
 
@@ -94,6 +94,5 @@ To enable the enhanced payments feature in Commerce site builder, follow these s
 [Dynamics 365 Payment Connector for Adyen](adyen-connector.md)
 
 [Adyen redirect](../adyen_redirect.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
