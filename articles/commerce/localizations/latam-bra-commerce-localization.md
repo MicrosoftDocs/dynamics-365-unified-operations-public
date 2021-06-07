@@ -123,10 +123,10 @@ To learn about POS features that are available to customers in all countries or 
 
 The following Brazil-specific POS features are enabled after the Commerce localization for Brazil has been set up and deployed:
 
-- Electronic Fiscal Document for Consumers in Brazil (NFC-e)
-- Customer information management for Brazil
-- Cancellation and return of NFC-e
-- Postponed registration of NFC-e issued in contingency mode
-- Posting and control of electronic fiscal documents
+- [Electronic Fiscal Document for Consumers in Brazil (NFC-e)](latam-bra-nfce.md).
+- [Customer information management for Brazil](latam-bra-customer-information.md).
+- [Cancellation and return of NFC-e](latam-bra-nfce-cancel-return.md).
+- [Postponed registration of NFC-e issued in contingency mode](latam-bra-nfce-contingency-sumbission.md).
+- [Posting and control of electronic fiscal documents](latam-bra-retail-statements.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
