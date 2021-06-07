@@ -22,6 +22,8 @@ This topic applies to Dynamics 365 Commerce version 10.0.20 and later.
 
 The Store Commerce app in Microsoft Dynamics 365 Commerce provides rich commerce functionality for first-line workers such as cashiers, sales associates, inventory associates, stock clerks, and store managers. It lets these workers perform commerce operations such cash-and-carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
 
+Store Commerce provides the benefits of both MPOS and CPOS.
+
 > [!NOTE]
 > Store Commerce is released as a preview app. It uses the [Microsoft Edge WebView2](/microsoft-edge/webview2/) control, which is also in preview. Therefore, do **not** use Store Commerce in production until it's generally available (GA).
 
@@ -31,9 +33,19 @@ Store Commerce supports local hardware station, and can be directly integrated w
 
 To render the user interface (UI), Store Commerce uses the Chromium engine instead of the Universal Windows Platform (UWP) app rendering framework. The Chromium engine has better rendering performance than the native JavaScript UWP app in Windows. The main difference between MPOS and Store Commerce is that Store Commerce uses the Chromium engine to render the app.
 
+## Benefits of Store Commerce app:
+
++ Simplified Application lifecycle management (ALM) using Microsoft Store.
++ Extension or ISV code developed for MPOS or CPOS can be reused in Store Commerce.
++ Store Commerce provides the benefits of both MPOS and CPOS.
++ Better performance.
++ Easier POS and extension upgrades.
++ Support for dedicated hardware station (HWS).
++ Support for offline, in the future.
+
 ## Application lifecycle management
 
-Store Commerce is an app that runs on Windows devices. It will be available from [Windows Apps - Microsoft Store](https://www.microsoft.com/store/r/9PGK1J3KQ8JB) so that it's easier to find, download, and deploy. Therefore, the overall lifecycle of deployment and servicing will be simplified.
+Store Commerce is an app that runs on Windows devices. It will be available from [Windows Apps - Microsoft Store](https://aka.ms/StoreCommerceApp) so that it's easier to find, download, and deploy. Therefore, the overall lifecycle of deployment and servicing will be simplified.
 
 Store Commerce is both forward compatible and backward compatible. It can easily be updated, either by setting up the Windows policy or by using any update and deployment tool that Microsoft Store apps support, such as Intune. It can be updated independently of the Cloud Scale Unit (CSU) and extensions.
 
@@ -43,17 +55,14 @@ Store Commerce is a shell that renders CPOS. Therefore, to get the updated CPOS 
 
 ![Store Commerce](media/StoreCommerce.PNG)
 
+
 ## Store Commerce and MPOS parity
 
-Store Commerce will have full functional parity with MPOS in the future. Currently, Store Commerce doesn't support running offline (when there is no connectivity to Retail Server). For more information about the different POS apps and topology, see [Choose between Modern POS (MPOS) and Cloud POS](../mpos-or-cpos.md)
+Store Commerce will have full functional parity with MPOS in the future. Currently, Store Commerce doesn't support running offline (when there is no connectivity to Headless Commerce). For more information about the different POS apps and topology, see [Choose between Modern POS (MPOS) and Cloud POS](../mpos-or-cpos.md)
 
-Your extension code developed or ISV solution implemented for MPOS can be used in Store Commerce. Other benefits of Store Commerce are:
+## Store Commerce and CPOS parity
 
-+ Simplified ALM using Microsoft Store.
-+ Better performance.
-+ Easier POS and extension upgrades.
-+ Support for dedicated hardware station (HWS).
-+ Support for offline, in the future.
+Store Commerce renders CPOS and have full functional parity with CPOS, Store Commerce  in addition supports dedicated hardware station and supports offline in the future.
 
 ## Choosing between Store Commerce and MPOS
 
@@ -111,7 +120,7 @@ If you don't require offline support in your store, you should choose Store Comm
 
 ### Prerequisite
 
-+ Windows 10 or Windows Server 2019.
++ Windows 10 version 17763.0 or higher or Windows Server 2019.
 + Microsoft Edge, because the app uses the Microsoft Edge WebView2 control.
 + Dynamics 365 Commerce (Back office and CPOS).
 
@@ -119,11 +128,13 @@ If you don't require offline support in your store, you should choose Store Comm
 
 For Store Commerce, a new application type that is named **Store Commerce** has been added on the **Devices** page (**Retail and Commerce \> Channel setup \> POS setup \> Devices**). Select this application type when you create a device for Store Commerce.
 
+If you are not able to see the Store Commerce application type in the drop down menu, try running the **Initialize** from the Retail and Commerce > Headquarters setup > Parameters> Commerce parameters > General  > **Initializer** and refresh the page.
+
 You must create a [register](../tasks/create-associate-registers.md) and a [device](../tasks/create-associate-device.md) for Store Commerce. Then, before you activate the app, run the register job from the distribution schedule in Commerce headquarters. During device creation, set the **Application type** field to **Store Commerce**.
 
 Store Commerce is available in Microsoft Store. To download and install the app, follow these steps.
 
-1. Open [Windows Apps - Microsoft Store](https://www.microsoft.com/store/r/9PGK1J3KQ8JB), and search for **Store Commerce**.
+1. Open [Windows Apps - Microsoft Store](https://aka.ms/StoreCommerceApp), and search for **Store Commerce**.
 2. Select **Get** to install the app.
 3. On the Windows **Start** menu, search for **Store Commerce**, and open the app.
 
