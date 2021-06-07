@@ -53,6 +53,8 @@ Production|	DevTest|	Not directly supported | Not supported | Recommend [Export 
 ## Database Movement API
 The Database Movement application programming interface (API) lets you integrate several of the previously mentioned database movement operations into your overall ALM process. In addition, by using the API together with your preferred scheduling engine, you can build recurrence into the process, so that it runs daily or on demand.
 
+For more information about about the Database Movement API, see the following topics:
+
 * [Overview](./api/dbmovement-api-overview.md)
 * [Versioning and support](./api/dbmovement-api-versioning-support.md)
 * [Authentication](./api/dbmovement-api-authentication.md)
