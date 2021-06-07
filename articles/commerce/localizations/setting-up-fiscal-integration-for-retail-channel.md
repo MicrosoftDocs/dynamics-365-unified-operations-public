@@ -89,7 +89,7 @@ Before you use the fiscal integration functionality, you should configure the fo
 
         **Examples**
 
-        |   | Format | Example |
+        | Parameter  | Format | Example |
         |---|--------|---------|
         | **VAT rates settings** | value : VATrate | 1 : 2000, 2 : 1800 |
         | **VAT codes mapping** | VATcode : value | vat20 : 1, vat18 : 2 |

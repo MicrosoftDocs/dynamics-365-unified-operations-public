@@ -1,7 +1,7 @@
 ---
 title: Extending decimal point precision for selected data types
 description: This topic describes how to extend decimal point precision for selected data types.
-author: LarsBlaaberg
+author: MichaelFruergaardPontoppidan
 ms.date: 09/24/2019
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.custom: 89563
 ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: lolsen
+ms.author: mfp
 ms.search.validFrom: 2018-10-10
 ms.dyn365.ops.version: Platform update 21
 ---

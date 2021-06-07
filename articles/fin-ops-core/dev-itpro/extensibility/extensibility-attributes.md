@@ -31,7 +31,7 @@ This topic describes the various attributes that can be used to control extensib
 
 The following table provides an overview of the default support for extensibility and accessibility on methods. The table also provides guidance on the method signature changes.
 
-|   | Hookable | Wrappable | Replaceable | Accessibility | Signature | 
+| Attribute  | Hookable | Wrappable | Replaceable | Accessibility | Signature | 
 |---|----------|-----------|-------------|---------------|-----------|
 | **private** | No | N/A | N/A | Accessible from within class it is defined in. | Signature can be changed |
 | **protected internal** | No | Yes, from Platform update 25 onward | No | Accessible from with the class it is defined, from derived classes, and from classes in the same model. | Signature must remain compatible |

@@ -121,7 +121,7 @@ You can define order settings rules for any active product dimension or combinat
 
 Consider the following example product.
 
-|                                                     |                                         |
+| Item                                                | Value                                   |
 |-----------------------------------------------------|-----------------------------------------|
 | **Product name**                                    | Photoelectric sensor                    |
 | **Item number**                                     | XW56                                    |

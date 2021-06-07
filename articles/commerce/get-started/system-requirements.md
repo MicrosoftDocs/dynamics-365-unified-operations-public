@@ -209,7 +209,7 @@ It would be in an organization's best interest to also take the following items 
 
 ## Requirements for development on local VMs
 
-For information about the requirements for development on local virtual machines (VMs), see [VM that is running on-premises](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md#vm-that-is-running-on-premises).
+For information about the requirements for development on local virtual machines (VMs), see [VM that is running on-premises](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md#vm-that-is-running-locally).
 
 ## Database collation
 
