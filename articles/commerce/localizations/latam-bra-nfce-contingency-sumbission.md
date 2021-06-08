@@ -32,6 +32,8 @@ ms.dyn365.ops.version: 10.0.18
 
 ## Introduction
 
+The NFC-e offline contingency mode must be used when the store internet connection is not available or if the SEFAZ authorization service is down. In this case POS generates NFC-e documents locally, and then these documents are transmitted to SEFAZ in some time.
+
 All the NFC-es issued through the POS terminals can be viewed in Commerce headquarters through the **View XML message form** after running P-jobs and posting the retail statement. The NFC-es that was issued on POS in offline contingency mode can then be submitted for authorization through Commerce Headquarters. 
 
 ## View fiscal document details
