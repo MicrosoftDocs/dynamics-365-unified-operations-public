@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-Finance and Operations running Platform update 8 and the July 2017 Application release, and later provides an upgrade path that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations. Currently upgrade from Dynamics AX 2012 R3 and AX 2012 R2 are supported. The upgrade process is built on the following elements:
+Finance and Operations provides an upgrade path that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations. Currently upgrade from Dynamics AX 2012 R3 and AX 2012 R2 are supported. The upgrade process is built on the following elements:
 
 - Tools to help you bring forward existing custom application code from AX 2012.
 - A data upgrade process that you can use to bring your database forward. Therefore, you can upgrade your full transactional history.
@@ -60,9 +60,7 @@ The activities in the Analyze phase help you estimate the effort that is require
 To sign up for a preview subscription, see [Sign up for preview subscriptions](../dev-tools/sign-up-preview-subscription.md).
 
 ### Select the upgrade methodology
-In your new LCS project, set the project methodology to **Upgrade AX 2012 to Dynamics 365 for Finance and Operations**. This methodology is made specially for AX 2012 customers who are upgrading. It describes the three phases in detail and provides links to all the supporting documentation about the process.
-
-![Upgrade methodology](./media/methodology.png)
+In your new LCS project, append the project methodology with **Upgrade AX 2012 to Dynamics 365 for Finance and Operations**. This methodology is made specially for AX 2012 customers who are upgrading. It describes the three phases in detail and provides links to all the supporting documentation about the process.
  
 ### Run the upgrade analyzer
 The upgrade analyzer tool runs against your AX 2012 environment and identifies tasks that you should do to prepare the AX 2012 environment, to help make the upgrade experience smoother and less expensive:
@@ -149,7 +147,7 @@ The following illustration shows the process for running data upgrade in a sandb
 
 ![Data upgrade in a sandbox environment](./media/data-upgrade-sandbox.png)
 
-For details, see [Upgrade from AX 2012 - Data upgrade in sandbox environments](upgrade-data-sandbox.md).
+For details, see [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md).
  
 ## Validate
 When you enter the Validate phase, you will have available environments that include your upgraded custom code and your upgraded data. This phase describes the process of validating and testing that the upgraded environment works as desired. It also describes the process of preparing for go-live.
@@ -193,10 +191,8 @@ For details, see [Upgrade from AX 2012 - Cutover process (Go live)](2012-upgrade
 
 
 ## Supported upgrade paths
-Upgrade to the cloud version of Finance and Operations is supported from AX 2012 R2 and AX 2012 R3, in private preview.  
+Upgrade to the cloud version of Finance and Operations is supported from AX 2012 R2 and AX 2012 R3. 
 
 Upgrade from Dynamics AX 2012 RTM isn't currently supported. Upgrade to the on-premises version isn't currently supported, but support will be added in the future. 
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

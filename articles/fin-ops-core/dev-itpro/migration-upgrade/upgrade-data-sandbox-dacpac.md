@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments
+title: Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments [Deprecated]
 description: This topic is for customers who don't have Remote Desktop protocol (RDP) access to their sandbox environments when they upgrade.
 author: laneswenka
 ms.date: 12/02/2020
@@ -24,11 +24,14 @@ ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 20
 ---
 
-# Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments
+# Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments [Deprecated]
 
 [!include [banner](../includes/banner.md)]
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
+
+> [!IMPORTANT]
+> This topic is deprecated in favor of a new process that makes use of SQL Replication. For information about the new process, see [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md).
 
 This topic is a process guide that will help customers who no longer have Remote Desktop Protocol (RDP) access to their Tier-2 through Tier-5 sandbox environments when they upgrade from Microsoft Dynamics AX 2012 to Finance and Operations apps. By using a new file format this is based on data-tier application packages (DACPACs), and the [Database movement toolkit](../database/database-movement-toolkit.md), customers can bring their AX 2012 schema and data into an existing empty database in a sandbox environment.
 
