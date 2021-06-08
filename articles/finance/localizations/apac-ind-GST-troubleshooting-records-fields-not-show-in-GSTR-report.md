@@ -4,7 +4,7 @@
 title: Records and fields don't appear on the GSTR report
 description: This topic provides troubleshooting information that can help when records and fields don't appear on the GSTR report.
 author: yungu
-ms.date: 05/06/2021
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -96,8 +96,8 @@ This procedure uses the example of free text invoice lines that are missing reco
     ```sql
     select * from TaxDocumentRowTransaction
     inner join TableIdTable on TaxDocumentRowTransaction.TransactionLineTableId = TableIdTable.ID 
-    and TableIdTable.Name = '**CustInvoiceLine**'
-    and TaxDocumentRowTransaction.InvoiceId = '**INMF-000004**'
+    and TableIdTable.Name = 'CustInvoiceLine'
+    and TaxDocumentRowTransaction.InvoiceId = 'INMF-000004'
     ```
 
 ## Debug code to analyze the logic of the missing record
