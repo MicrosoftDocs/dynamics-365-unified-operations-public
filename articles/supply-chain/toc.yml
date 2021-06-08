@@ -3203,6 +3203,8 @@
             href: warehousing/partial-location-cycle-counting.md
           - name: Define partial location cycle counting process
             href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+          - name: Cycle counting example scenarios
+            href: warehousing/cycle-counting-scenarios.md
           - name: Warehouse management on-hand entries cleanup job
             href: warehousing/onhand-cleanup.md
           - name: Inventory journals
