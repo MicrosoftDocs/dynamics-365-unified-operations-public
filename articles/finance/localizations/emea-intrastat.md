@@ -78,7 +78,7 @@ The following table lists the prerequisites for Intrastat reporting.
 </tr>
 <tr class="odd">
 <td>Product category hierarchy (sales hierarchy, procurement hierarchy)</td>
-<td>Assign the Intrastat commodity codes to the category nodes on the <strong>Commodity codes</strong> tab of the <strong>Category hierarchy</strong> page. When you assign a commodity code to a parent category node, that code is applicable to all child category nodes. The selected commodity codes will be available in the <strong>Selected</strong> view when you select a commodity code in the ![image](https://user-images.githubusercontent.com/27720878/121184095-6962b880-c86d-11eb-8419-73d512cfb589.png) product details, and on sales order, purchase order, and transfer order lines.</td>
+<td>Assign the Intrastat commodity codes to the category nodes on the <strong>Commodity codes</strong> tab of the <strong>Category hierarchy</strong> page. When you assign a commodity code to a parent category node, that code is applicable to all child category nodes. The selected commodity codes will be available in the <strong>Selected</strong> view when you select a commodity code in the product details, and on sales order, purchase order, and transfer order lines.</td>
 </tr>
 <tr class="even">
 <td>Released product details</td>
