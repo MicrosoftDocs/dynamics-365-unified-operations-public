@@ -72,4 +72,13 @@ If you have a report that doesn't have matching balances, here are some steps yo
 
 You should now be able to copy the data from the Financial Reporter Excel report to the Trial Balance report, so you can compare the **Closing Balance** columns.
 
+## When designing a report in Report designer, or when generating a financial report, I received the message, “The operation could not be completed due to a problem in the data provider framework.”  How should I respond? 
+
+This message indicates that a problem occurred when the system tried to retrieve financial metadata from the data mart while you were using Financial reporting. There are two ways to respond to this issue. 
+
+Check the integration status of the data by going to Tools > Integration status within Report Designer.  If the integration is incomplete, wait for it to be complete and then retry what you were doing when the message appeared. 
+
+You can also contact Support to identify and work through the issue. It’s possible that there’s inconsistent data in the system. Support engineers can help you identify the that issue on the server and find the specific data that might require an update. 
+
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
