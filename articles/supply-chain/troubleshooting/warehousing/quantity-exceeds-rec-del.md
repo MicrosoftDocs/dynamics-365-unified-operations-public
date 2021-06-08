@@ -64,8 +64,7 @@ Use the following procedure to adjust the load line quantity:
 
 ### Reserve all pick registrations and redo picking
 
-It might be the case that someone has used pick registration to close a load line without work, which can cause discrepancy between load line quantity and picked quantity.
-For this scenario, manual pick registration needs to be reversed and picking to be completed via warehousing app. 
+It might be the case that someone has used pick registration to close a load line without work, which can cause discrepancy between load line quantity and picked quantity. For this scenario, manual pick registration must be reversed and picking to be completed using the Warehouse Management mobile app.
 
 Use the following procedure to undo the pick registration:
 

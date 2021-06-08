@@ -1,5 +1,5 @@
 ---
-title: Picked quantity is not sufficient to update throughout Packing slip generation
+title: Picked quantity is not sufficient during packing slip generation
 description: When you are generating a packing slip, the outbound load contains a picked quantity that doesn't match the created work quantity on the load line
 author: GalynaFedorova
 ms.date: 5/31/2021
@@ -68,8 +68,7 @@ Use the following procedure to adjust the load line quantity:
 
 ### Reserve all pick registrations and redo picking
 
-It might be the case that someone has used pick registration to close a load line without work, which can cause this issue. 
-For this scenario, manual pick registration needs to be reversed and picking to be completed via warehousing app. 
+It might be the case that someone has used pick registration to close a load line without work, which can cause this issue. For this scenario, manual pick registration needs to be reversed and picking to be completed the Warehouse Management mobile app.
 
 Use the following procedure to undo the pick registration:
 

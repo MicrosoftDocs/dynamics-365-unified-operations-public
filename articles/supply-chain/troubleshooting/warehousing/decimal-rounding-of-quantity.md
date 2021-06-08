@@ -29,7 +29,7 @@ Therefore, you can't generate the packing slip for the load.
 
 ## Cause
 
-The system evaluates whether the decimal rounding of the shipping quantity corresponds to the decimal precision defined per shipping unit. If the system finds that rounded shipping quantity to the specified number of decimal places doesn't match to the shipping quantity, you can't generate the packing slip. For example, this issue might occur if the sales quantity is 1.75 kg, but decimal precision is set to 1.
+The system evaluates whether the decimal rounding of the shipping quantity corresponds to the decimal precision defined per shipping unit. If the system finds that rounding the shipping quantity to the specified number of decimal places doesn't match to the actual shipping quantity, you can't generate the packing slip. For example, this issue might occur if the sales quantity is 1.75 kg, but decimal precision is set to 1.
 
 ## Resolution
 

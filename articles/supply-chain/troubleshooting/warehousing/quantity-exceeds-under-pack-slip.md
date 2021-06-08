@@ -1,5 +1,5 @@
 ---
-title: Quantity exceeds under-delivery percentage throughout Packing slip generation
+title: Quantity exceeds under-delivery percentage during packing slip generation
 description: When you are generating a packing slip, the outbound load contains a quantity that exceeds the under-delivery percentage.
 author: GalynaFedorova
 ms.date: 5/31/2021
@@ -52,7 +52,7 @@ Use the following procedure to adjust the under-delivery percentage:
 
 ### Reverse and make adjustments
 
-Reverse everything that has been posted (including but not limited to packing slip, shipment confirmation, work) for the load, make sales order adjustments, rerelease the order to the warehouse and complete the shipment procedure. 
+Reverse everything that has been posted (including but not limited to packing slip, shipment confirmation, work) for the load, make sales order adjustments, rerelease the order to the warehouse and complete the shipment procedure.
 
 Use the following procedure to cancel a packing slip:
 
@@ -64,7 +64,7 @@ Use the following procedure to reverse a shipment confirmation:
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. On the Action Pane, open the **Ship and receive** tab and, from the **Reverse** group, select **Reverse shipment confirmation**.
 
-Use the following procedure to reverse a work:
+Use the following procedure to reverse work:
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. On the Action Pane, open the **Loads** tab and, from the **Work** group, select **Reverse work**.

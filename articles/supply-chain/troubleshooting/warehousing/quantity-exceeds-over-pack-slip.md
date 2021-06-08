@@ -1,5 +1,5 @@
 ---
-title: Quantity exceeds over-delivery percentage throughout packing slip generation
+title: Quantity exceeds over-delivery percentage during packing slip generation
 description: When you are generating a packing slip, the outbound load contains a quantity that exceeds the over-delivery percentage
 author: GalynaFedorova
 ms.date: 5/31/2021
@@ -48,7 +48,7 @@ Use the following procedure to adjust the load line quantity:
 1. Open the **Load lines** tab and select the load line for the item that exceeds the over-delivery percentage.
 1. Select **Reduce picked quantity** to adjust the picked quantity.
 1. Open the **Line details** tab and, select **Order**.
-1. In the **Quantity** field, set the value to the picked quantity (**Work created quantity** field), which will allow packing slip generation to proceed. 
+1. In the **Quantity** field, set the value to the picked quantity (from the **Work created quantity** field), which will allow packing slip generation to proceed.
 
 ### Adjust the over-delivery percentage
 
@@ -62,7 +62,7 @@ Use the following procedure to adjust the over-delivery percentage:
 
 ### Reverse and make adjustments
 
-Reverse everything that has been posted (including but not limited to packing slip, shipment confirmation, work) for the load, make sales order adjustments, rerelease the order to the warehouse and complete the shipment procedure. 
+Reverse everything that has been posted for the load (including but not limited to packing slip, shipment confirmation, and work), make sales order adjustments, rerelease the order to the warehouse, and complete the shipment procedure.
 
 Use the following procedure to cancel a packing slip:
 
@@ -74,7 +74,7 @@ Use the following procedure to reverse a shipment confirmation:
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. On the Action Pane, open the **Ship and receive** tab and, from the **Reverse** group, select **Reverse shipment confirmation**.
 
-Use the following procedure to reverse a work:
+Use the following procedure to reverse work:
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. On the Action Pane, open the **Loads** tab and, from the **Work** group, select **Reverse work**.
