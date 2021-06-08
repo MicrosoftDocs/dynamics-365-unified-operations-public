@@ -50,7 +50,7 @@ As the table in step 1 show, there are different ways to access the pages that a
     | Customer groups | <ol><li>Go to **Master planning \> Forecasting \> Manual forecast entry \> Customer groups**.</li><li>Select the customer group to create a forecast for.</li><li>On the Action Pane, select **Define demand forecast**.</li></ol> |
     | Vendors | <ol><li>Go to **Master planning \> Forecasting \> Manual forecast entry \> Vendors**.</li><li>Select the vendor to create a forecast for.</li><li>On the Action Pane, select **Entry** to open the **Supply forecast** page.</li></ol> |
     | Vendor groups | <ol><li>Go to **Master planning \> Forecasting \> Manual forecast entry \> Vendor groups**.</li><li>Select the vendor group to create a forecast for.</li><li>On the Action Pane, select **Entry** to open the **Supply forecast** page.</li></ol> | 
-    | All lines | <ul><li>Go to **Master planning \> Forecasting \> Demand forecast lines** or **Master planning \> Forecasting \> Demand forecast lines**, depending on the type of forecast that you want to work with.</li></ul> |
+    | All lines | <ul><li>Go to **Master planning \> Forecasting \> Demand forecast lines** or **Master planning \> Forecasting \> Supply forecast lines**, depending on the type of forecast that you want to work with.</li></ul> |
 
     Depending on your selection, the **Supply forecast** or **Demand forecast** page appears. It shows any existing forecast lines for the record that you selected before you opened the page.
 
