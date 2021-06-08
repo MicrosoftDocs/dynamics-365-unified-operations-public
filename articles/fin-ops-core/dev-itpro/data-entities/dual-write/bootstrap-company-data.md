@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-If have an existing Microsoft Dataverse instance or Finance and Operations app instance that has business data, you might want to enable a dual-write connection against it. In this case, you must initialize the Dataverse data or Finance and Operations app data with company information before you enable dual-write. This initialization process is sometimes referred to as *bootstrapping*.
+If you have an existing Microsoft Dataverse instance or Finance and Operations app instance that has business data, you might want to enable a dual-write connection against it. In this case, you must initialize the Dataverse data or Finance and Operations app data with company information before you enable dual-write. This initialization process is sometimes referred to as *bootstrapping*.
 
 This topic includes sample scenarios that explain how to use [Azure Data Factory](/azure/data-factory/introduction) to initialize data in Dataverse tables for dual-write. It doesn't cover all tables, error handling scenarios, or lookups. Use this topic and template as a reference to set up your own Azure Data Factory pipeline to import data into Dataverse or update data in Dataverse.
 
