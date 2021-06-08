@@ -5,7 +5,7 @@ title: Setoff rule error when a tax settlement is run
 description: This topic provides troubleshooting information that can help fix the setoff rule error that might occur during tax settlement.
 author: yungu
 manager: beya
-ms.date: 05/06/2021
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,7 +52,7 @@ When you run a tax settlement, you might receive an error message. Follow the st
 
     [![Setoff rules for sales tax hierarchies button on the Sales tax hierarchies designer page](./media/setoff-rule-error-Picture2.png)](./media/setoff-rule-error-Picture2.png)
 
-4. Determine whether the **Recoverable** and **Payable** nodes are well set, according to the setoff. If the nodes are well set, there might be a posting issue. In this case, you should contact Microsoft. If the nodes aren't well set, edit the setoff rule.
+4. Determine whether the **Recoverable** and **Payable** nodes are selected or no, according to the setoff. If the nodes are not marked as defined, there might be a posting issue. In this case, you should contact Microsoft. 
 
     [![Recoverable and Payable nodes on the Setoff rules for sales tax hierarchies page](./media/setoff-rule-error-Picture3.png)](./media/setoff-rule-error-Picture3.png)
 
