@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Upgrade from AX 2012 - Data upgrade in sandbox environments [Deprecated]
+title: Upgrade from AX 2012 - Data upgrade in sandbox environments
 description: This topic explains how to perform a data upgrade from Microsoft Dynamics AX 2012 to Finance and Operations in a sandbox environment. 
 author: laneswenka
 ms.date: 06/04/2021
@@ -24,14 +24,12 @@ ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Upgrade from AX 2012 - Data upgrade in sandbox environments [Deprecated]
+# Upgrade from AX 2012 - Data upgrade in sandbox environments
 
 [!include [banner](../includes/banner.md)]
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-> [!IMPORTANT]
-> This topic is deprecated in favor of a new process that makes use of SQL Replication. For information about the new process, see [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md).
 
 The output of this task is an upgraded database that you can use in a sandbox environment. In this topic, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database. On this environment business users and functional team members can validate application functionality. This functionality includes customizations and the data that was brought forward from Microsoft Dynamics AX 2012.
 
