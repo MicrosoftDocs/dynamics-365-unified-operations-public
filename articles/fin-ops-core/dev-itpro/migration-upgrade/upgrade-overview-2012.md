@@ -59,7 +59,7 @@ The activities in the Analyze phase help you estimate the effort that is require
 
 To sign up for a preview subscription, see [Sign up for preview subscriptions](../dev-tools/sign-up-preview-subscription.md).
 
-### Select the upgrade methodology
+### Append the upgrade methodology
 In your new LCS project, append the project methodology with **Upgrade AX 2012 to Dynamics 365 for Finance and Operations**. This methodology is made specially for AX 2012 customers who are upgrading. It describes the three phases in detail and provides links to all the supporting documentation about the process.
  
 ### Run the upgrade analyzer
