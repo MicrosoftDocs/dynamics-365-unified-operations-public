@@ -142,7 +142,7 @@ In the pipeline samples, variables for NuGet package names and paths are used to
 
 ### Creating a full pipeline that includes packaging
 
-To be useful, the pipeline should include a versioning step and a packaging step. Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For information about how to install an extension for an organization, see the [Azure DevOps documentation](/azure/devops/marketplace/install-extension).
+To be useful, the pipeline should include a versioning step and a packaging step. Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps organization. For information about how to install an extension for an organization, see the [Azure DevOps documentation](/azure/devops/marketplace/install-extension).
 
 A full pipeline should consist of at least the following steps:
 
