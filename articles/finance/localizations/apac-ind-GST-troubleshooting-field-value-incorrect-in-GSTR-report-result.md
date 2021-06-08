@@ -4,7 +4,7 @@
 title: Incorrect field values on the GSTR report
 description: This topic provides troubleshooting information that can help when field values on the generated GSTR report are incorrect.
 author: yungu
-ms.date: 04/27/2021
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,7 +36,7 @@ This topic uses the **State of supply** value of the **Invoice and bill of suppl
 
 ## Determine whether the issue is related to Excel
 
-To determine whether the issue is related to Microsoft Excel, see [Details for issue 459982 (dynamics.com)](https://fix.lcs.dynamics.com/Issue/Details?bugId=459982&dbType=3&qc=38e839da1be8c7ec9b71b65e4c8607efe79c434c1c3dbcd2e1d86b9ba08b78a0). If the issue is related to Excel, use the information in Microsoft Dynamics Lifecycle Services (LCS) to fix it, or remove the quotation marks ("). If the issue isn't related to Excel, move on to the next section.
+To determine whether the issue is related to Microsoft Excel, see [Details for issue 459982 (dynamics.com)](https://fix.lcs.dynamics.com/Issue/Details?bugId=459982&dbType=3&qc=38e839da1be8c7ec9b71b65e4c8607efe79c434c1c3dbcd2e1d86b9ba08b78a0). If the issue is related to Excel, use the information in Microsoft Dynamics Lifecycle Services (LCS) to fix it, or remove the quotation marks (") in the data. If the issue isn't related to Excel, move on to the next section.
 
 ## Review the report controller setup
 
