@@ -67,7 +67,7 @@ For a complete list of regions, see [Dynamics 365 and Power Platform: Availabili
 
 Design time functionality that is used in RCS is shared across all companies. There is no company-specific functionality. Therefore, we recommend that you use one company, **DAT**, with your RCS environment.
 
-However, in some scenarios, you might want to make ER formats use parameters that are related to a specific legal entity. In these scenarios only, you should use the default company switcher. For an example, see [Configure ER format to use parameters that are specified per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format).
+However, in some scenarios, you might want to make ER formats use parameters that are related to a specific legal entity. In these scenarios only, you should use the default company switcher. For an example, see [Configure ER format to use parameters that are specified per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md).
 
 ## Related RCS documentation
 
