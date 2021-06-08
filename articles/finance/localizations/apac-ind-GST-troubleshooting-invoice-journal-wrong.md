@@ -4,7 +4,7 @@
 title: Incorrect field value in an invoice journal or voucher
 description: This topic provides troubleshooting information that can help when a field value in an invoice journal or voucher is incorrect.
 author: yungu
-ms.date: 05/06/2021
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,8 +33,8 @@ ms.dyn365.ops.version: 10.0.1
 When you work with an invoice journal or a voucher, you might find an incorrect field value in the following places:
 
 - Posted sales tax (**TaxTrans** table)
-- **TaxDocumentRowTransaction**
-- **TaxDocumentComponentTransaction**
+- **TaxDocumentRowTransaction** table
+- **TaxDocumentComponentTransaction** table
 - Voucher (**GeneralJournalAccountEntry** table)
 
 If this issue occurs, follow the steps in the sections of this topic to try to fix it.
