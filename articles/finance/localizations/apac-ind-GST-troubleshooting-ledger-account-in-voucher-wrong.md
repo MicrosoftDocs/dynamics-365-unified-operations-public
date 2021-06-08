@@ -4,7 +4,7 @@
 title: Incorrect ledger account in the voucher
 description: This topic provides troubleshooting information that can help when the ledger account in the voucher is incorrect.
 author: yungu
-ms.date: 05/06/2021
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -65,7 +65,7 @@ Review the voucher, and verify that the posted amount is correct. If it's correc
     [![Setup button on the Tax setup page](./media/ledger-account-voucher-wrong-Picture5.png)](./media/ledger-account-voucher-wrong-Picture5.png)
 
 3. Go to **Tax document** \> **Header** \> **Lines** \> **GST** or **Tax document** \> **Header** \> **Lines** \> **GST** \> **IGST**, and review the tax values. If both values are empty, modify the tax configuration in the extension.
-5. Verify that the account is correct. If it's correct, move on to the next section. If it's incorrect, modify it, and then move on to the next section.
+5. Verify that the account is correct. If it's correct, move on to the next section. If it's incorrect, modify it.
 
     In the following illustration, notice that the posting type values are consistent with the debit and credit accounts that you made a note of earlier.
 
