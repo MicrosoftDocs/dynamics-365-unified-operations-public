@@ -57,10 +57,10 @@ To back up your AX 2012 database, use the standard Microsoft SQL Server process 
 
 If your developer environment is hosted as a VM locally or in Azure you will need to transfer the 2012 database backup to it. With a local VM you may be able to transfer the file directly across the network (if you have configured the virtual network to allow that) but for an Azure hosted VM we recommend that you upload your backup to Azure Storage (using your own secure file transfer service or SFTP is also a valid option). You would need to provide your own Azure storage account for this. There are free tools to help you to move files between Azure storage, from a command line you can use [Azcopy](/azure/storage/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](https://storageexplorer.com/). Use one of these tools to first upload the backup from your on-premises environment to Azure storage and then on your download it on your development environment.
 
-### Download and restore the backup to the development environment
+### Download and restore the backup to the Customer managed development environment
 
 > [!NOTE]
-> Developer environments that are hosted by Microsoft have limited drive space. We recommend that most AX 2012 customers host their own developer environment by using [cloud-hosted environments](../dev-tools/access-instances.md). By using cloud-hosted environments, you can increase the drive space so that it meets your own specifications.  
+> Developer environments are now only supported as Customer managed [cloud-hosted environments](../dev-tools/access-instances.md). By using cloud-hosted environments, you can increase the drive space so that it meets your own specifications.  
 
 When you restore the backup to the new development environment, don’t overwrite the existing AXDB database. Instead, restore the AX 2012 database next to the original databases. You might also consider using drive D for the data and log files, to help improve performance. However, there is a potential downside to using drive D. If the underlying virtual machine (VM) is deallocated in Azure and then reallocated, drive D will be wiped. In practice, this scenario rarely occurs. Therefore, you might find that the risk is acceptable. To learn more about how to use drive D, see [Understanding the temporary drive on Windows Azure Virtual Machines](/archive/blogs/mast/understanding-the-temporary-drive-on-windows-azure-virtual-machines).
 

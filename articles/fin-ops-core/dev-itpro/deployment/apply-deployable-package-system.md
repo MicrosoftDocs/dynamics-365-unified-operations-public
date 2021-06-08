@@ -36,7 +36,7 @@ This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS)
 > Updates are applied using deployable packages. Applying updates causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
 
 ## Supported environments
-All environments deployed through Lifecycle Services are supported. 
+All Customer Managed and Microsoft Managed environments deployed through Lifecycle Services are supported. For self-service environments, please visit [Update an environment](updateenvironment-newinfrastructure.md).
 
 > [!NOTE]
 > If you have a build environment, you can only use LCS to apply Binary updates and Data upgrade packages. You can't use LCS to apply an Application Deployable package.
@@ -80,6 +80,9 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 
 ## Apply a package to a non-production environment by using LCS
 
+>[!Note]
+>For self-service type environments, please visit [Update an environment](updateenvironment-newinfrastructure.md).
+
 Before you begin, verify that the deployable package has been uploaded to the Asset library in LCS.
 
 1. For a binary update, upload the package directly to the Asset library. For information about how to download an update from LCS, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md). For an application (AOT) deployable package that results from an X++ hotfix, or from application customizations and extensions, create the deployable package in your development or build environment, and then upload it to the Asset library.
@@ -90,6 +93,9 @@ Before you begin, verify that the deployable package has been uploaded to the As
 6. Continue to refresh the page to see the status updates for the package application request. When the package has been applied, the environment status changes to **Deployed**, and the servicing status changes to **Completed**.     
 
 ## Apply a package to a production environment by using LCS
+
+>[!Note]
+>For self-service type environments, please visit [Update an environment](updateenvironment-newinfrastructure.md).
 
 In a production environment, customers can schedule a downtime for when they want the update to be applied.  
 
