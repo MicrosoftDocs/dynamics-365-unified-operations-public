@@ -38,10 +38,10 @@ Before you set up the system, we recommend that you define a strategy for workin
 
 - Should reason codes be mandatory on warehouses?
 - Should reason codes be mandatory or optional on some items?
-- How many reason codes do you require?
+- How many reason codes do you require. Do you need a pre-select limited list of reason codes for the adjustments?
 - How should users of barcode scanners use reason codes? Should the reason codes be preselected, mandatory, or not editable?
 - Do warehouse workers require different reason code behavior on mobile scanners? If the answer is yes, you can create more menu items and assign them to different people.
-- Should the selection of the reason codes drive the financial offset account postings?
+- Should the reason codes drive the financial offset account posting?
 
 ## Where reason codes apply
 
@@ -94,11 +94,11 @@ If the **Mandatory** parameter is set in the configuration of reason codes for w
 1. Select **Inventory Management** \> **Setup** \> **Inventory** \> **Counting reason codes**
 1. Select **New** and assign a *Counting reason code* and *Description*
 1. To assign a *Offset account* select the menu **Assign offset account** and select a value in the list
-1. To assign the *Counting reason code group* key-in or look-up a value in the **Counting reason code group** field
+1. To assign the *Counting reason code group*, key-in or look-up a value in the **Counting reason code group** field
 
 > [!Note]
-> **Counting reason codes** having a assigned **Offset account** will via a counting journal posting result in using the assigned offset account rather than the posting profile defined. 
-> In the section [Set up the mobile device menu item for Adjustment in and Adjustment out](#Setup-Adjustment-In-Out) section later in this topic you can read more about the use of the **Counting reason code groups**.
+> **Counting reason codes** with a assigned **Offset account** will via a counting journal posting result in using the assigned offset account rather than the defined posting profile. 
+> In the [Set up the mobile device menu item for Adjustment in and Adjustment out](#Setup-Adjustment-In-Out) section later in this topic you can read more about the use of the **Counting reason code groups**.
 
 
 ### Use reason codes in counting journals
