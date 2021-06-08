@@ -4,7 +4,7 @@
 title: Troubleshooting performance issues in ER configurations
 description: This topic explains how to find and fix performance issues in Electronic reporting (ER) configurations.
 author: NickSelin
-ms.date: 05/14/2021
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
