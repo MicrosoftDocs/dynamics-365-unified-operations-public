@@ -4,7 +4,7 @@ description: This document provides a collection of scenarios for exploring the 
 author: GalynaFedorova
 ms.date: 06/08/2021
 ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
