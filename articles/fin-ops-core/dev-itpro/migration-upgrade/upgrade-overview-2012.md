@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 to Finance and Operations 
 description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations.
 author: LaneSwenka
-ms.date: 03/22/2021
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-Finance and Operations provides an upgrade path that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations. Currently upgrade from Dynamics AX 2012 R3 and AX 2012 R2 are supported. The upgrade process is built on the following elements:
+Finance and Operations apps provide an upgrade path that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations apps. Currently, upgrades from Dynamics AX 2012 R3 and AX 2012 R2 are supported. The upgrade process is built on the following elements:
 
 - Tools to help you bring forward existing custom application code from AX 2012.
 - A data upgrade process that you can use to bring your database forward. Therefore, you can upgrade your full transactional history.
