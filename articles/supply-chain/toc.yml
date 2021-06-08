@@ -2245,6 +2245,8 @@
         href: engineering-change-management/product-readiness.md
       - name: Release product structure
         href: engineering-change-management/release-product-structure.md
+      - name: Generate variants for engineering products
+        href: engineering-change-management/engineering-variants.md
       - name: Engineering change management FAQs
         href: engineering-change-management/change-management-faq.md
     - name: Production control
