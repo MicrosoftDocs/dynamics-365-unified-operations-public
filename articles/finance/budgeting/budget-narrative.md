@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: BudgetPlan
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
@@ -33,13 +33,14 @@ When you're planning to publish budget books or documents, it's sometimes necess
 
 You can use the control to write new content or you can paste content that is written and formatted in another text editor, such as Microsoft Word. The narrative area also lets you changes fonts and text formatting. Additional features, including a spell checker, can be turned on.
  
-The content that's added to these two sections can be printed separately in a budget plan narrative report.
+The content that is added to these two sections can be printed separately in a budget plan narrative report.
  
 ## Setting up the budget plan narrative
 Complete the following steps to turn on the budget plan narrative area and use the most current HTML editor that's available in the product.
 1.	Enable the **Budget plan narrative** under feature management. You can also enable the **New HTML editor control** in the **Feature management** workspace to use a more current editor.
-2.	In the **Budget planning module**, select a budget plan and enter the necessary information for the budget plan header.
-3.	Expand the **Budget plan narrative** section and add descriptions or revenue information that should be included in the budget plan.
+2.	In the **Budget planning module**, select a budget plan. 
+3.	Click Header to expand the **Header View** and enable access to the **Budget plan narrative** which is not normallly visible from the **Line View**.
+4.	Expand the **Budget plan narrative** section and add descriptions or revenue information that should be included in the budget plan.
  
-The permission for modifying the budget plan narrative is the same as that for modifying budget lines. This permission is set using the **Budget plan process** page (**Budget > Setup > Budget Planning > Budget plan process**). 
+No additional permissions are required for modifying the budget plan narrative. 
 
