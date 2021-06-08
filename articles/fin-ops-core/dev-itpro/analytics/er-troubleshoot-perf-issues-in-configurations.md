@@ -98,7 +98,7 @@ Then open the trace in the ER model mapping designer, and look at the bottom of 
 1. Collect a trace by using thread time.
 2. Include only stacks that use **runUnattended**, to filter only the thread that has configuration execution. (Add **runUnattended** to the **IncPats** input box.)
 3. Fold all CPU, network, and blocked time.
-4. Load [ER presets for PerfView](ER_PerfViewPresets.xml).
+4. Load [ER presets for PerfView](https://download.microsoft.com/download/2/d/0/2d037b0f-ffd1-4d65-b64f-fcdf51f2c81f/ER_PerfViewPresets.xml).
 5. Select **ER** \> **Other preset**.
 6. Look at the names:
 
