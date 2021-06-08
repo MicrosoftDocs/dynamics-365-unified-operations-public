@@ -3433,6 +3433,18 @@
           href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:
+        - name: Decimal rounding of the physical updating quantity is incorrect
+          href: troubleshooting/warehousing/decimal-rounding-of-quantity.md
+        - name: Physical remaining quantity in the unit must be other than zero
+          href: troubleshooting/warehousing/physical-remaining-q.md
+        - name: Picked quantity is not sufficient during packing slip generation
+          href: troubleshooting/warehousing/picked-quantity-is-n.md
+        - name: Quantity exceeds over-delivery percentage during packing slip generation
+          href: troubleshooting/warehousing/quantity-exceeds-over-pack-slip.md
+        - name: Quantity that you are trying to update exceeds the quantity received/delivered
+          href: troubleshooting/warehousing/quantity-exceeds-rec-del.md
+        - name: Quantity exceeds under-delivery percentage during packing slip generation
+          href: troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md
         - name: An error occurs when choosing the location during picking list registration
           href: troubleshooting/warehousing/error-cannot-update.md
         - name: Packing station doesn't show product notes
