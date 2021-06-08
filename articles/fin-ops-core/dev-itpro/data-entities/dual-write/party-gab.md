@@ -146,7 +146,7 @@ Electronic addresses are available only in this grid. In future releases, all po
 
 4. Go to Finance and Operations apps. Go to Data Management module and click Dual-write tab. Dual-write administration page opens.
 
-5. Apply the both the solutions using [Apply Solution](link-your-environment.md) function.
+5. Apply both the solutions installed in steps 2 and 3 using [Apply Solution](link-your-environment.md) function.
 
 5. Stop the following maps, because they aren't required anymore. Instead, run the `Contacts V2 (msdyn_contactforparties)` map.
 
