@@ -56,8 +56,8 @@ When a cloud environment is provisioned through LCS:
 
 The system can be accessed by end users. The administrator can add users to this system by using the **Users** page in the instance. Note that these additional users don't have to be users in LCS. You obtain the base URL for the cloud environment from your LCS project site.
 
-1. Go to your LCS project page.
-2. In the **Environments** section, click the deployed environment.
+1. Go to your LCS project navigation menu, and select **Cloud-hosted environments**.
+2. In the environment list section, click the deployed environment.
 3. When the environment page opens, you can access the application by clicking **Login** &gt; **Log on to Finance and Operations** in the upper-right corner.
 4. Use valid end user credentials to sign in to the application. If the current LCS user is the user who originally deployed the environment, that user is probably a valid end user and the administrator of the application.
 5. In your browser, make a note of the base URL after you sign in. For example, the base URL might be `https://dynamicsAx7aosContoso.cloud.dynamics.com`.
