@@ -1,6 +1,6 @@
 ---
-title: The quantity cannot be reduced when canceling sales order
-description: The quantity cannot be reduced when canceling sales order
+title: The quantity can't be reduced when a sales order is canceled
+description: The quantity can't be reduced when a sales order is canceled.
 author: hja@microsoft.com
 ms.date: 5/17/2021
 ms.topic: troubleshooting
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# The quantity cannot be reduced when canceling sales order
+# The quantity can't be reduced when a sales order is canceled
 
 Error code: SYS138831
 
@@ -25,19 +25,19 @@ The system shows the following error message:
 
 ## Cause
 
-If work is associated with a sales order, you can't cancel the sales order until the work is cancelled and reversed. This requirement applies even if the work that is associated with the sales order is closed.
+If work is associated with a sales order, you can't cancel the sales order until the work is canceled and reversed. This requirement applies even if the work that is associated with the sales order is closed.
 
 ## Resolution
 
 To fix this issue, complete the following tasks:
 
-- Cancel open work
-- Delete the load
-- Reduce picked quantity
+- Cancel open work.
+- Delete the load.
+- Reduce the picked quantity.
 
 ### Cancel open work
 
-To cancel work, follow these steps:
+To cancel open work, follow these steps.
 
 1. Go to **Warehouse management \> Periodic tasks \> Clean up \> Cancel work**.
 1. In the **Work ID** field, specify the ID of the work that you want to cancel, and that currently has a **Work status** value of *Open*, *In progress*, *Canceled*, *Combined*, or *Closed*.
@@ -46,29 +46,29 @@ To cancel work, follow these steps:
 
 ### Delete the load
 
-Do the following steps:
+To delete a load, follow these steps.
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. Open the relevant sales order.
-1. On the **Sales order lines** FatTab toolbar, select**Warehouse \> Work details**.
-1. The **Work** page opens. On the Action Pane, open the **Work** tab and, from the **Work** group, select **Cancel work**.
-1. Confirm that the **Work status** is set to *Canceled*.
+1. On the **Sales order lines** FastTab, select **Warehouse \> Work details**.
+1. On the **Work** page, on the Action Pane, on the **Work** tab, in the **Work** group, select **Cancel work**.
+1. Confirm that the **Work status** field is set to *Canceled*.
 1. Close the **Work** page.
-1. You return to the sales order details page. On the **Sales order lines** FatTab toolbar, select **Warehouse \> Load details**.
+1. On the sales order details page, on the **Sales order lines** FastTab, select **Warehouse \> Load details**.
 1. On the Action Pane, select **Delete**.
 1. Select **Yes** to confirm that you want to delete the load.
-1. Close the **Load** form.
+1. Close the **Load** page.
 
-### Reduce picked quantity
+### Reduce the picked quantity
 
-When all work is canceled, follow these steps:
+After all work has been canceled, follow these steps to reduce the picked quantity.
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. Open the relevant sales order.
-1. On the **Sales order lines** FatTab toolbar, select**Update line \> Pick**.
-1. The **Pick** page opens. In the **Transactions** section, select the line with **Issue status** set to *Picked*.
-1. On the **Transactions** toolbar, select the **Add picking line**.
-1. On the **Picking lines** toolbar, select the **Confirm pick all**.
+1. On the **Sales order lines** FastTab, select **Update line \> Pick**.
+1. On the **Pick** page, in the **Transactions** section, select the line where the **Issue status** field is set to *Picked*.
+1. Select **Add picking line**.
+1. In the **Picking lines** section, select **Confirm pick all**.
 1. Close the **Pick** page.
-1. You return to the sales order details page. On the Action Pane, open the **Sales order** tab and, from the **Maintain** group, select **Cancel**.
+1. On the sales order details page, on the Action Pane, on the **Sales order** tab, in the **Maintain** group, select **Cancel**.
 1. Select **Yes** to confirm that you want to cancel the sales order.
