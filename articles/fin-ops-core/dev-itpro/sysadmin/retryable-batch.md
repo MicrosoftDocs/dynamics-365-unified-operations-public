@@ -43,7 +43,7 @@ The retries are enabled only for jobs that have implemented the BatchRetryable i
 ## Frequently asked questions
 
 ### How do retries work for my custom batch jobs?
-There is no change to the custom batch jobs. In order to take advantage of the automated retries, implement the BatchRetryable interface explicitly and set isRetryable to true on custom batch jobs. Please note that the batch jobs may need to be modified to make sure the job is retry safe.
+There is no change to the custom batch jobs. In order to take advantage of the automated retries, implement the BatchRetryable interface explicitly and set isRetryable to true on custom batch jobs. Please note that the batch jobs may need to be modified to make sure the job is safe to retry.
 
 ### How do I implement the retryable interface?
 Add the following code to your Batch class
@@ -63,5 +63,5 @@ Add the following code to your Batch class
  ### I marked my custom job as Retryable by mistake. Is there a way I can override without taking another code change?
  Yes, you can go to the system administration -> batch -> override form and override the retryable value to false. This will prevent further executions from being retried.
  
- ### I have 100s of batch jobs? How do I discover all my batch jobs to implement the interface?
+ ### I have many batch jobs? How do I discover all my batch jobs to implement the interface?
  Plug in Peter's github repo here.
