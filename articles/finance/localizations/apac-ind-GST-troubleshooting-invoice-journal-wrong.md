@@ -59,7 +59,7 @@ Follow these steps to determine whether the tax amount in the tax document is co
 
 ## Review the voucher
 
-In the tax document, select **Voucher** to determine whether the amount is posted to another account. If the amount is posted to another account, see [Incorrect ledger account in the voucher](apac-ind-GST-troubleshooting-ledger-account-in-voucher-wrong.md). If it isn't posted to another account, move on to the next section.
+In the tax document, select **Voucher** to determine whether the amount is posted to another account. If the amount is posted to another account, see [Incorrect ledger account in the voucher](apac-ind-GST-troubleshooting-ledger-account-voucher-wrong.md). If it isn't posted to another account, move on to the next section.
 
 [![Voucher transactions page](./media/field-value-invoice-journal-voucher-Picture3.png)](./media/field-value-invoice-journal-voucher-Picture3.png)
 
