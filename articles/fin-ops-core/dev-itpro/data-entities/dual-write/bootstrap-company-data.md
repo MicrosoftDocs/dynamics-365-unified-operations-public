@@ -54,7 +54,7 @@ The following illustration shows the workflow.
 This scenario is based on the following assumptions:
 
 - The source data is in the Finance and Operations app.
-- If an account exists in Dataverse, but it doesn't exist in the Finance and Operations app, it won't be initialized as part of this flow. Please use DIXF or [initial sync](initial-sync-guidance.md) functionality based on the amount of data present in Dataverse.
+- If an account exists in Dataverse, but it doesn't exist in the Finance and Operations app, it won't be initialized as part of this flow. Use DIXF or [initial sync](initial-sync-guidance.md) functionality based on the amount of data stored in Dataverse.
 - All account records in the customer engagement apps have a natural key (account number) that matches the Finance and Operations natural key (**CustomerAccount**). 
 - Rows have a one-to-one (1:1) mapping across the apps.
 
