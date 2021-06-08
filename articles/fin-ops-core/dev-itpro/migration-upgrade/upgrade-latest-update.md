@@ -43,7 +43,7 @@ For information about One Version service updates, see the [One Version service 
 ## Definitions
 
 - **Upgrade** – The process of moving from one official release of Finance and Operations to the next release, for source environments prior to version 8.0. Some examples are the move from 7.1 to 7.3, or from 7.3 to 10.0.1. The process involves setup of a free sandbox environment, code upgrade, and data upgrade.
-- **Update** – The process of applying a binary package to an environment to move it from one official release of Finance and Operations to the next release, for source environments starting with version 8.0. This process has lower downtime requirements and doesn't involve data upgrade, see the **Rebuild and update** section below.
+- **Update** – The process of applying a binary package to an environment to move it from one official release of Finance and Operations to the next release, for source environments starting with version 8.0. This process has lower downtime requirements and doesn't involve data upgrade, see the [Rebuild and update](upgrade-latest-update.md#rebuild-and-update) section below.
 
 ## Paths to One Version
 <img src="../migration-upgrade/media/OneVersion_Paths.png" width="600px" alt="Paths to One Version" />
