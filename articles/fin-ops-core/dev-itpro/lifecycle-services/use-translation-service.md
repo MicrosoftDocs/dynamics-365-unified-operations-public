@@ -86,7 +86,7 @@ However, if neither the source language nor the target language is a Microsoft G
 
 After you've finished uploading files, select **Submit** to start the translation process. 
 
-After you submit the request, a new request ID is created on the DTS dashboard. If you submitted the request with multiple target languages, you will see each target language status displayed n a separate line with the same request ID. Selecting a line on the dashboard will extend the dashboard window to the right to show the request summary information.  
+After you submit the request, a new request ID is created on the DTS dashboard. If you submitted the request with multiple target languages, you will see each target language status displayed in a separate line with the same request ID. Selecting a line on the dashboard will extend the dashboard window to the right to show the request summary information.  
 
 To see the request status, click a request ID link on the dashboard. The **Request status** tab shows the source files list you uploaded with the summary of the request information.
 
@@ -101,7 +101,7 @@ Note that the processing time depends on the number of requests that are in the 
     + If you're using a generic MT system, requests can be completed in a few minutes, depending on the file size.
 
 ## After translation is completed
-When processing of your translation request is completed, you receive an email notification from DTS. You can then view the result on the **Request output** tab of the request details page.
+When your translation request has been processed, you'll receive an email notification from DTS. You can then view the result on the **Request output** tab of the request details page.
 
 ![Request output tab](./media/dts-output.png "Request output tab")
 

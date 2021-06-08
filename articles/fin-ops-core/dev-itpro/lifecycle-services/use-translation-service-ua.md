@@ -83,7 +83,7 @@ After you've finished uploading file, select **Submit** to start the translation
 
 After you submit the request, a new request ID is created on the DTS dashboard. If you submitted the request with multiple target languages, you will see each target language status is displayed in a separate line with the same request ID. Selecting a line on the dashboard will extend the dashboard window to the right to show the request summary information.
 
-To see the request status, click a request ID link on the dashboard. The **Request status** tab shows the source files list you uploaded with the summary of the request information..
+To see the request status, click a request ID link on the dashboard. The **Request status** tab shows the source files list you uploaded with the summary of the request information.
 
 ![Request status tab](./media/dts-request-status-ua.png "Request status tab")
 
@@ -97,7 +97,7 @@ When processing of your translation request is completed, you receive an email n
 For documentation translation requests, three types of output file are available after the translation process is completed:
 
 + **For translation review** – Download this file to review and edit the translated document strings in a table view. The file shows the source and target languages segments side by side.
-+ **Translated native format** – Download this file if you don't intend to review or edit the translations but to pick up the translated file ready to use. This file has the dame formatting style (title, headings, tables, etc.) as the source .docx file that you submitted, and it's ready to be used.
++ **Translated native format** – Download this file if you don't intend to review or edit the translations but to pick up the translated file ready to use. This file has the same formatting style (title, headings, tables, etc.) as the source .docx file that you submitted, and it's ready to be used.
 + **Translation memory** – Download this file to recycle these translations the next time that you submit a translation request that uses a newer version of the source document.
 
 ### Review and edit the translations
