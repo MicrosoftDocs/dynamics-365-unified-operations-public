@@ -1681,6 +1681,8 @@
           href: master-planning/introduction-demand-forecasting.md
         - name: Demand forecasting setup
           href: master-planning/demand-forecasting-setup.md
+        - name: Inventory forecasts
+          href: master-planning/inventory-forecast.md
         - name: Import historical data for demand forecasts
           href: master-planning/import-historical-data.md
         - name: Generate a statistical baseline forecast
