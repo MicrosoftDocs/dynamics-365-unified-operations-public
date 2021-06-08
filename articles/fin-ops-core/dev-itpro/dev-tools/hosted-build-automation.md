@@ -166,3 +166,4 @@ For the deployable package to be created, NuGet must be readily available on the
 In the [Dynamics365-Xpp-Samples-Tools](https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples) GitHub repository, you can find a sample pipeline that can be imported into an existing Azure DevOps project.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
