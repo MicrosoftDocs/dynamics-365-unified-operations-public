@@ -73,7 +73,7 @@ Familiarity with the process of creating and managing resources in Azure, Micros
 ## Configure Finance insights
 
 You must complete some configuration steps before you can use Finance insights. For more information about how to configure Finance insights, see:
-  - For versions up to 10.0.19: [Configuration for Finance insights - vesrions upto 10.0.19](configure-for-fin-insites.md).
+  - For versions up to 10.0.19: [Configuration for Finance insights - versions up to 10.0.19](configure-for-fin-insites.md).
   - For versions 10.0.20 and beyond: [Configuration for Finance Insights (preview) - versions 10.0.20 and beyond](configure-for-fin-insites-PubPrvw.md).
 
 ## Create a data integrator project
@@ -90,10 +90,7 @@ If you are using demo data to test customer payment predictions, you may have to
 To enable Customer payment predictions, you must complete a set of steps to build a machine learning model that uses your organization's data your organization's data to generate predictions about when customers are likely to pay outstanding invoices, and when specific invoices are likely to be paid. For more information and the specific steps to complete, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md). 
 
 ### Enable Cash flow forecasting
-To enable Cash flow forecasting, you must complete a set of steps to build a machine learning model that uses your organization's data your organization's data to to generate cash flow forecasts. For more information and the specific steps to complete, see [Enable cash flow forecasting](enable-cash-flow-forecasting.md) 
-
-### Set up and use cash flow forecasting
-For information about how to set up and use cash flow forecasting, see [Enable cash flow forecasting](enable-cash-flow-forecasting.md). For more information about how to use this capability, see [Cash flow forecasting](cash-flow-forecast-intro.md).
+To enable Cash flow forecasting, you must complete a set of steps to build a machine learning model that uses your organization's data your organization's data to to generate cash flow forecasts. For more information and the specific steps to complete, see [Enable cash flow forecasting](enable-cash-flow-forecasting.md).
 
 ### Enable budget proposals
 
@@ -117,14 +114,12 @@ The Cash flow forecast capability can help you more accurately estimate your cas
 
 - To learn about the new capabilities in Cash flow forecasts see [Cash flow forecast](cash-flow-forecast-intro.md).
 - For information about importing external data to include in your cashflow forecast here, see [Use external data in cash flow forecasts](external-data-in-cash-flow.md). 
-- For information about how to use an AI model to project long term cash flow, see [Cash flow forecasts overview](cash-position.md).
+- For information about how to use an AI model to project near term cash flow, see [Cash position](cash-position.md).
 - For information about saving cash flow positions and cash flow forecasts as snapshots, and to compare a snapshot to actuals, see [Snapshots overview](payment-snapshots.md).
 
 ### Using Budget proposal
 
 For information about accelerating the creation of a budget, see [Budget proposals](budget-proposals.md). 
-
-Demo data for budget proposal:
 
 ## Feedback and support
 
