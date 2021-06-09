@@ -546,6 +546,8 @@
             href: paypal.md
           - name: Wallet payment support
             href: wallets.md
+          - name: Enhanced payments in storefront checkout
+            href: dev-itpro/enhanced-sca.md
           - name: Payments FAQ 
             href: dev-itpro/payments-retail.md
         - name: Email and notifications
