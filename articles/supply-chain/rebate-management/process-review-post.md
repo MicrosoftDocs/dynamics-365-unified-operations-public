@@ -59,9 +59,10 @@ When you process a deal, the system calculates all relevant rebates and royaltie
 1. Select the row for each deal that you want to process (or open the deal that you want to process).
 1. On the Action Pane, on the **Rebate management deals** tab, in the **Generate** group, select one of the following commands:
 
-    - **Process \> Provision** – Provision a set of accruals for each relevant rebate deal, but don't post them.
+    - **Process \> Provision** – Provision a set of accruals for each relevant rebate deal, but don't post them. This menu item is disabled for deals where the **Rebate output** is *Item*.
     - **Process \> Rebate management** – Process a series of transactions that provide the value of the rebate for each deal.
-    - **Process \> Write off** – Reverse previously posted transactions to write them off so that new rebate deal transactions can be calculated.
+    - **Process \> Write off** – Process the variance between provision and rebate management posted for each source transaction for the rebate deal and specified period. This menu item is disabled for deals where the **Rebate output** is *Item*. <!--KFM: review first sentence with Monica. -->
+
 
 1. In the dialog box that appears, set the **From date** and **To date** fields to define the date range for the calculation.
 1. Select **OK** to run the calculation.
@@ -74,9 +75,9 @@ When you process a deal, the system calculates all relevant rebates and royaltie
 1. On **Rebate management** FastTab, select the row for each deal line that you want to process.
 1. On the toolbar of the **Rebate management** FastTab, select one of the following commands. (These commands are available only for deals where the **Reconcile by** field is set to *Line*.)
 
-    - **Process \> Provision** – Provision a set of accruals for each relevant deal line, but don't post them.
+    - **Process \> Provision** – Provision a set of accruals for each relevant deal line, but don't post them. This menu item is disabled for deals where the **Rebate output** is *Item*.
     - **Process \> Rebate management** – Process a series of transactions that provide the value of the rebate for each deal line.
-    - **Process \> Write off** – Reverse previously posted transactions to write them off so that new rebate deal transactions can be calculated.
+    - **Process \> Write off** – Process the variance between provision and rebate management posted for each source transaction for the rebate deal and specified period. This menu item is disabled for deals where the **Rebate output** is *Item*. <!--KFM: review first sentence with Monica. -->
 
 1. In the dialog box that appears, set the **From date** and **To date** fields to define the date range for the calculation.
 1. Select **OK** to run the calculation.
@@ -119,26 +120,26 @@ When you process one or more deals, the system creates transactions that you can
         - **Set unclaimed \> All** – Mark all transactions as unclaimed.
         - **Set unclaimed \> Selected** – Mark the selected transactions as unclaimed.
 
-    - To post the claim for one or more lines, select the relevant lines, and then, on the Action Pane, select **Post**. (The **Post** button is available only for rebate transactions. It's unavailable for provision and write-off transactions.) In the **Post** dialog box, the **From date** and **To date** fields are automatically set. Set the **Posting date** field, and then select **OK**.
+    - To post the claim for all the claimed, if you are using claims process, else all the source transactions for the selected rebate transaction, on the Action Pane, select **Post**. <!-- KFM: Review previous sentence with Monica --> (The **Post** button is available only for rebate transactions. It's unavailable for provision and write-off transactions.) In the **Post** dialog box, the **From date** and **To date** fields are automatically set. Set the **Posting date** field, and then select **OK**.
     - To adjust the amount that is shown for any open or unposted transaction, select the transaction, and then follow one of these steps:
 
         - Edit the value in the **Corrected amount** field.
         - On the Action Pane, select **Set correction**. Then, in the drop-down dialog box that appears, in the **Corrected amount** field, enter a value.
 
 > [!NOTE]
-> When you process the next period, the transaction list will include any unclaimed transactions from the previous posting, plus any new transactions for the selected period.
+> When you are using the claims process, when you process the next period, the transaction list will include any unclaimed transactions from the previous posting, plus any new transactions for the selected period. <!-- KFM: Confirm this formulation with Monica -->
 
 ## Post rebates transactions
 
-To post the value of the rebates and deductions, you must run the posting process, unless you've set up your system to post them automatically.
+To post the value of a processed provision, rebate management <!-- KFM: rebate management what? -->, and write off, you must run the posting process. The posting process marks the provision, rebate management, or write off transactions as posted and creates the target transaction. If you don't need to review the target transaction, these can be set up to post automatically.
 
-### Set up the system to post all transactions automatically
+### Set up the system to post all target transactions automatically
 
-To set up your system to post all transactions as soon as they are generated, turn on the **Automatically post journals** and/or **Automatically post free text invoices** option on the **Rebate management parameters** page. For more information, see [Rebate management parameters](rebate-management-parameters.md).
+To set up your system to post all target transactions as soon as they are generated by a posting provision, rebate management <!-- KFM: rebate management what? --> and write off, turn on the  **Automatically post journals** and/or **Automatically post free text invoices** option on the **Rebate management parameters** page. For more information, see [Rebate management parameters](rebate-management-parameters.md).
 
 ### Post transactions for all lines for one or more deals
 
-If you aren't using automatic posting, after you've processed the relevant deals, follow these steps to review and post the generated transactions for all lines for one or more deals.
+After you've processed the relevant deals, follow these steps to review and post the generated transactions for all lines for one or more deals.
 
 1. Open the appropriate [rebate deals list page](rebate-management-deals.md) for the type of deal that you want to work with.
 1. Select the row for each deal that you want to post (or open the deal that you want to post).
@@ -153,7 +154,7 @@ If you aren't using automatic posting, after you've processed the relevant deals
 
 ### Post transactions for one or more specific deal lines for a selected deal
 
-If you aren't using automatic posting, after you've processed the relevant deals, follow these steps to review and post the generated transactions for one or more specific deal lines for a selected deal.
+After you've processed the relevant deals, follow these steps to review and post the generated transactions for one or more specific deal lines for a selected deal. This is only applicable for deals where **Reconcile by** is set to *Line*.
 
 1. Open the appropriate [rebate deals list page](rebate-management-deals.md) for the type of deal that you want to work with.
 1. Open the deal that has a line that you want to post transactions for.
@@ -186,17 +187,17 @@ Instead of posting transactions for specific deals or deal lines, you can run a 
 
 ## Review Rebate management journals
 
-After your transactions have been posted, you can review the resulting journals, documents, or items. Target transactions for rebates and royalties are based on the payment type that is set in the posting profile and the rebate's output type. For example, if the rebate output is set to *Item*, a sales order will be created and can be viewed via the target transactions. Alternatively, if the payment is set up to use Accounts payable, a vendor invoice for the vendor that is set up on the customer will be created for customer rebates.
+After your transactions have been posted, you can review the resulting journals, documents, or items. Target transactions for rebates and royalties are based on the payment type that is set in the posting profile and the rebate's output type. For example, if the rebate output is set to *Item*, a sales order will be created for a customer rebate and a purchase order for a vendor rebate, and these can be viewed via the target transactions. Alternatively, if the payment is set up to use Accounts payable, a vendor invoice for the vendor that is set up on the customer will be created for customer rebates.
 
 To review the journal entries that are associated with a Rebate management deal, follow these steps.
 
 1. Open the appropriate [rebate deals list page](rebate-management-deals.md) for the type of deal that you want to work with.
 1. Select the deal to inspect journal entries for.
-1. On the Action Pane, on the **Rebate management deals** tab, in the **Transactions** group, select either **Transactions** or **Rebate transactions**, depending on the type of transactions that you want to look at.
+1. On the Action Pane, on the **Rebate management deals** tab, in the **Transactions** group, select either **Transactions** or **Guarantee transactions**, depending on the type of transactions that you want to look at.
 1. Make sure that the **Show** field is set to *All* or *Posted*.
 1. Find and select the transaction collection that you want to inspect, and then, on the Action Pane, select one of the following buttons. (These buttons are available only when relevant postings exist for the selected transaction collection.)
 
     - **Target transactions** – Review relevant journals and other types of documents that were generated by the selected deal.
-    - **Items** – Review relevant items that were generated by the selected deal.
+    - **Items** – Review relevant sales or purchase orders that were generated by the selected deal.
 
 1. A list of relevant journals, documents, or items appears. To view more information about any journal, document, or item, select its row, and then, on the Action Pane, select **View details**.
