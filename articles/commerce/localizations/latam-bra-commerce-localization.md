@@ -104,7 +104,7 @@ Commerce supports fiscal registration via the [Fiscal integration framework](../
 | E-commerce capabilities for Brazil                                       |                           | X       |             |
 | Merging CNPJ/CPF in customer master records in the call center           |                           | X       |             |
 | Retail fiscal documents in fiscal book statements\*                      |                           |         | X           |
-| Integration of the POS with fiscal printers                              |                           |         | X           |
+| Integration of the POS with fiscal printers (PAF-ECF)                    |                           |         | X           |
 
 \* *Fiscal book statements* are SPED (Sistema Público de Escrituração Digital) Fiscal, SPED Contributions, and ICMS-ST (Imposto sobre Circulação de Mercadorias e Serviços - Substituição Tributária) compensation and restitution statements for the supported states.
 
