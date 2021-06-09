@@ -101,7 +101,7 @@ Note that the processing time depends on the number of requests that are in the 
     + If you're using a generic MT system, requests can be completed in a few minutes, depending on the file size.
 
 ## After translation is completed
-When your translation request has been processed, you'll receive an email notification from DTS. You can then view the result on the **Request output** tab of the request details page.
+When your translation request has been processed, you'll receive an email notification from DTS. You can then view the result on the **Request output** tab of the **Request details** page.
 
 ![Request output tab](./media/dts-output.png "Request output tab")
 
