@@ -28,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.18
 # Module configuration presets
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic covers module configuration presets and how to configure them in Microsoft Dynamics 365 Commerce.
 
