@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This topic explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
 author: sarvanisathish
-ms.date: 06/02/2021
+ms.date: 06/09/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
