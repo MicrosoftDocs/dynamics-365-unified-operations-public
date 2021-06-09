@@ -36,7 +36,7 @@ This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS)
 > Updates are applied using deployable packages. Applying updates causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
 
 ## Supported environments
-All customer-managed and Microsoft-managed environments deployed through Lifecycle Services are supported. For self-service environments, please visit [Update an environment](updateenvironment-newinfrastructure.md).
+All customer-managed and Microsoft-managed environments deployed through Lifecycle Services are supported. For more information about self-service environments, see [Update an environment](updateenvironment-newinfrastructure.md).
 
 > [!NOTE]
 > If you have a build environment, you can only use LCS to apply Binary updates and Data upgrade packages. You can't use LCS to apply an Application Deployable package.
@@ -76,12 +76,12 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 
 - **Make sure that the package is applied in a sandbox environment before it's applied in the production environment.** To help ensure that the production environment is always in a good state, we want to make sure that the package is tested in a sandbox environment before it's applied in the production environment. Therefore, before you request that the package be applied in your production environment, make sure that it has been applied in your sandbox environment by using the automated flows.
 - **If you want to apply multiple packages, create a merged package that can be applied first in a sandbox environment and then in the production environment.** Application of a single package in an average environment requires about 5 hours of downtime. To avoid additional hours of downtime when you must apply multiple packages, you can create a single combined package that contains one package of each type. If you select a binary package and an application deployable package in the Asset library, a **Merge** button becomes available on the toolbar. By clicking this button, you can merge the two packages into a single package and therefore reduce the total downtime by half.
-- **Make sure that the application binary update package is applied to your dev/build environment AFTER it is applied to your sandbox and production environment** - If the application binary package is applied on your dev/build enviornment and this raises the platform build version to be higher than your target sandbox or production environment, you will be blocked from applying any AOT packages which are produced from this dev/build environment.  To apply AOT packages produced from a dev/build environment, your dev/build instance must be equal to or lower than your target environment(s).
+- **Make sure that the application binary update package is applied to your dev/build environment AFTER it is applied to your sandbox and production environment** - If the application binary package is applied on your dev/build environment and this raises the platform build version to be higher than your target sandbox or production environment, you will be blocked from applying any AOT packages that are produced from this dev/build environment. To apply AOT packages produced from a dev/build environment, your dev/build instance must be equal to or lower than your target environments.
 
 ## Apply a package to a non-production environment by using LCS
 
-> [!Note]
-> For self-service type environments, please visit [Update an environment](updateenvironment-newinfrastructure.md).
+> [!NOTE]
+> For self-service type environments, see [Update an environment](updateenvironment-newinfrastructure.md).
 
 Before you begin, verify that the deployable package has been uploaded to the Asset library in LCS.
 
@@ -94,10 +94,7 @@ Before you begin, verify that the deployable package has been uploaded to the As
 
 ## Apply a package to a production environment by using LCS
 
-> [!Note]
-> For self-service type environments, please visit [Update an environment](updateenvironment-newinfrastructure.md).
-
-In a production environment, customers can schedule a downtime for when they want the update to be applied.  
+In a production environment, customers can schedule a downtime for when they want the update to be applied. For self-service type environments, see [Update an environment](updateenvironment-newinfrastructure.md).  
 
 > [!IMPORTANT]
 > An important prerequisite for applying a package to a production environment is that the package must be successfully applied to at least one sandbox environment in the same project. 
@@ -118,7 +115,7 @@ In a production environment, customers can schedule a downtime for when they wan
 
 ## Troubleshoot package deployment failures
 
-If package deployment fails, see the [Troubleshoot package application issues](deployable-package-troubleshooting.md) topic.
+If package deployment fails, see [Troubleshoot package application issues](deployable-package-troubleshooting.md).
 
 ## Applying updates and extensions
 
