@@ -35,16 +35,14 @@ You can create and manage audiences in site builder based on customer data such 
 Audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information available in the customer's request. Commerce natively supports device info (desktop/mobile/tablet, OS, browser), sign-in status, referrer and query string parameters. Additionally, a geolocation connector allows Commerce to connect with third-party geolocation service providers to generate geolocation information for e-commerce site users. For more information on setting up a connector, see [GeoLookup connector](e-commerce-extensibility/connectors.md#geolookup-connector)
 
 Audiences can be created, edited and deleted in the **Audiences** tab in the left navigation pane.
+Suggestion - create everyone and no one to help with inclusions and exclusions.
 
 ## Targets
-Target is the user experience that will be shown to members of the chosen audience.
+Target is the user experience that will be shown to members of the chosen audience. You can target modules in the **Pages** tab or fragments in the **Fragments** tab.
 
 Target creation and management
 Including and excluding audiences
-Creating targeted content
-
-Target prioritization / ranking
-
+Target prioritization / ranking - experiments will trump all
 Target scheduling
 
 •	Targeted modules can’t be shared as fragments
