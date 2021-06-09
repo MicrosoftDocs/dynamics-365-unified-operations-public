@@ -21,7 +21,7 @@ This topic lists new features, fixes, improvements, and known issues for each re
 
 ## Version 2.0.6.0
 
-### New features, fixes, and improvements in version in version 2.0.6.0
+### New features, fixes, and improvements in version 2.0.6.0
 
 This version introduces the following new features, fixes, and improvements:
 
@@ -63,15 +63,15 @@ This version introduces the following new features, fixes, and improvements:
 - Fixed various UI bugs including background color, positioning, and more
 - Improved Russian language UI
 - Fixed various crashes
-- Fixed a problem related to re-opening the calculator
+- Fixed a problem related to reopening the calculator
 - \[Android\]: Fixed Android 4.4 crash on start-up
 - \[Android\]: Reduced minimum scaling to 50%
 
 ## Version 2.0.4.0
 
-Version 2.0.4.0 was the first generally available release.
+Version 2.0.4.0 was the first generally available release of the Warehouse Management mobile app.
 
-### New features, fixes, and improvements in version in version 2.0.4.0
+### New features, fixes, and improvements in version 2.0.4.0
 
 This version introduces the following new features, fixes, and improvements compared to the preview version:
 
