@@ -3243,7 +3243,7 @@
             href: warehousing/scan-bar-codes-using-a-camera.md
           - name: Troubleshoot Warehouse Management mobile app connection issues
             href: warehousing/troubleshoot-warehouse-app-connection.md
-        - name: Set up fields, menus, and flows for mobile devices
+        - name: Set up fields and menus for mobile devices
           items:
           - name: Configure fields for the Warehouse Management mobile app
             href: warehousing/configure-app-field-names-priorities-warehouse.md
@@ -3269,7 +3269,7 @@
           href: warehousing/mobile-device-user-settings.md
         - name: Warehouse app event processing
           href: warehousing/warehouse-app-events.md
-        - name: Customize the warehouse app
+        - name: Customize the Warehouse Management mobile app and warehouse app
           items:
           - name: Process guide framework
             href: warehousing/process-guide-framework.md
