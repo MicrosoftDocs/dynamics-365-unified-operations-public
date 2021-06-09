@@ -33,15 +33,14 @@ ms.dyn365.ops.version: Platform Update 34
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> **Export to Data Lake** feature is in public preview in United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia and Japan regions. If your Finance and Operations environment is in above regions, you can enable this feature in your environment using Lifecycle Services (LCS).
+> The **Export to Data Lake** feature is in public preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia and Japan regions. If your Finance and Operations environment is in those regions, you can enable this feature in your environment using Lifecycle Services (LCS).
 >
-> In the coming months we will enable this feature in additional regions based on the demand. If your environment is not in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join a preview Yammer group by [visiting the link here](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
->
+> In the coming months, we will enable this feature in additional regions based on the demand. If your environment is not in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join a [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
 
-**Export to Data Lake** feature lets you copy data from your Finance and Operations apps into your own Azure Data Lake (Gen 2). The system let's you choose the tables and entities to include. After you select the data that you want, the system will make an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. There may be a delay of a few minutes between data changes in your Finance and Operations apps instances and the time when the data is available in your data lake. 
+The **Export to Data Lake** feature lets you copy data from your Finance and Operations apps into your own Azure Data Lake (Gen 2). The system lets you choose the tables and entities to include. After you select the data that you want, the system will make an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. There may be a delay of a few minutes between data changes in your Finance and Operations app instances and the time when the data is available in your data lake. 
 
-## Turn on the Export Data to Azure Data Lake feature
-Before you can use this feature, you must configure the **Export to Data Lake**. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
+## Turn on the Export to Data Lake feature
+Before you can use this feature, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
 
 ## Select data
 
@@ -51,22 +50,24 @@ Before you can use this feature, you must configure the **Export to Data Lake**.
 You can select the tables and entities that should be staged in Data Lake.
 
 1. In your environment, go to **System Administration** \> **Setup** \> **Export to Data Lake**.
-2. You can also navigate to **Export to Data Lake** page using the search bar. Enter "Configure" in the search bar. You should see the link in search results
-3. On the **Export to Data Lake** page, on the **Choose Tables** tab, select the data tables that should be staged in Data Lake. You can search for tables by display name or system name. You can also see whether a table is being synced. 
-4. When you've finished, select **Add Tables** to add the selected tables to Data Lake.
+
+    You can also navigate to the **Export to Data Lake** page using the search bar. Enter **Configure** in the search bar. You should see the link in search results.
+    
+2. On the **Export to Data Lake** page, on the **Choose Tables** tab, select the data tables that should be staged in Data Lake. You can search for tables by display name or system name. You can also see whether a table is being synced. 
+3. When you've finished, select **Add Tables** to add the selected tables to Data Lake.
 
     ![Selecting tables](./media/Export-Table-to-Data-lake-Tables-Running-state.png)
 
-5. Select **Activate data feed**, and then select **OK**. The system may show the status of this table as **Initializing** when you add the table. This means, the system is making an initial copy of data. When the initial copy is complete, the system changes the status to **Running**
+4. Select **Activate data feed**, and then select **OK**. The system may show the status of this table as **Initializing** when you add the table. This means, the system is making an initial copy of data. When the initial copy is complete, the system changes the status to **Running**
 
-In case of an error, the system shows the status **Deactivated**. You can consume data in the lake when you see the **Running** state. If you consume data in the lake while **Initializing** or **Deactivated** status, you may not see all the data. 
+    In case of an error, the system shows the status **Deactivated**. You can consume data in the lake when you see the **Running** state. If you consume data in the lake while **Initializing** or **Deactivated** status, you may not see all the data. 
 
-If you aren't familiar with the specific tables that you require, you can select tables by using entities. Entities are a higher-level abstraction of data and might include multiple tables. By selecting entities, you're also selecting the tables that include them.
+    If you aren't familiar with the specific tables that you require, you can select tables by using entities. Entities are a higher-level abstraction of data and might include multiple tables. By selecting entities, you're also selecting the tables that include them.
 
-> [!NOTE]
-> When opening the "choose using Entities" page for the first time, you may notice that the list of entities in the page is empty. System may take some time to populate the list of entities. You can force refresh the list by choosing **Manage > Rebuild data feed catalog** option using the toolbar at the top of the page. 
+    > [!NOTE]
+    > When opening the **Choose using Entities** page for the first time, you may notice that the list of entities in the page is empty. The system may take some time to populate the list of entities. You can force refresh the list by choosing the **Manage > Rebuild data feed catalog** option using the toolbar at the top of the page. 
     
-7. On the **Choose using Entities** tab, select the entities, and then select **Add Tables using Entities**.
+5. On the **Choose using Entities** tab, select the entities, and then select **Add Tables using Entities**.
 
     ![Selecting tables by using entities](./media/Export-Table-to-Data-lake-Entities-Running-state.png)
     
