@@ -4,7 +4,7 @@
 title: Configure export to Azure Data Lake
 description: This topic provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
-ms.date: 04/13/2021
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,15 +33,16 @@ ms.dyn365.ops.version: Platform Update 33
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The **Export to Azure Data Lake** feature is in limited preview and may not be available in all regions and environments supported by Finance and Operations apps. If you are unable to find the **Export to Azure Data Lake** functionality in Lifecycle Services (LCS) or your Finance and Operations apps, this feature is not currently available in your environment. 
+> The **Export to Data Lake** feature is in public preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS).
 >
-> Currently, previews are closed. In the coming months we will enable additional environments in several regions. We are accepting requests from customers who would like to join the preview. If you would like to join a future preview, [complete the survey](https://aka.ms/FnODataLakePreviewSurvey). We will contact you when we are ready to include you. You can also join a Yammer group by [completing the survey](https://aka.ms/FnODataLakePreviewSurvey). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature.  
+> In the coming months, Microsoft will enable this feature in additional regions, based on the demand. If your environment isn't in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join a [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
 >
-> Until the feature is enabled in your environment, you have the option to prototype/plan the feature implementation using [GitHub tools](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md). The tools will enable you to export data from your sandbox environment into a storage account in the same format as exported by the feature. 
->
-> At this time, **Export to Azure Data Lake** feature is not available in Tier-1 (developer) environments. You need a cloud-based Tier-2 or higher environment to enable this feature.
->
-> To make aggregate measurements available in a data lake, continue to use the feature in the manner that is described in [Make entity store available as a Data Lake](entity-store-data-lake.md).
+> The **Export to Data Lake** feature isn't available in Tier-1 (developer) environments. You must have a cloud-based Tier-2 or higher sandbox environment to enable this feature. 
+> 
+> In your Tier-1 (developer) environment, you can prototype or plan the feature implementation by using [GitHub tools](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md). The tools let you export data from your Tier-1 or sandbox environment into a storage account in the same format that is exported by the feature. 
+> 
+> **Use of this feature in production environments isn't supported while it's in preview.** You can't enable this feature in production environments. You can preview it only in your sandbox (Tier-2 or above) environments.
+
 
 ## <a name="createServicePrinciple"></a> Create Service Principle for Microsoft Dynamics ERP Microservices
 
@@ -100,7 +101,7 @@ The steps, which take place in the Azure portal, are as follows:
     -  **Name:** Enter a name for the app.
     -   **Supported Account types**: Choose the appropriate option.
 
-3. After the application is created, select it and then copy and save the <a name="appid"></a>Application (client) ID at the top of the page. You will need this later.
+3. After the application is created, select it, and then copy and save the <a name="appid"></a>Application (client) ID at the top of the page. You will need this later.
 4. On the left navigation pane, select **API permissions**.
 5. Select **Add a permission**, and in the **Request API permissions** dialog box, select **Azure Key vault**.
 6. Select **Delegated permissions**, select **user_impersonation**, and then select **Add permissions**.
@@ -204,6 +205,7 @@ If this is the first time you are installing add-ins in this environment, you ma
 
 To set up Power Platform integration from LCS, see [Add-ins overview](../power-platform/add-ins-overview.md).
 
+
 ### Option 2: Set up Power Platform integration using the Dual-write wizard
 
 Another way to set up **Power Platform integration** is to create a Power Platform environment with a database and then use the Dual-write setup. Complete the following steps to create the Power Platform environment and complete the integration. 
@@ -212,6 +214,9 @@ Another way to set up **Power Platform integration** is to create a Power Platfo
 2. [Complete the requirement and prerequisite](dual-write/requirements-and-prerequisites.md).  
 3. Use the [dual-write wizard to link your environment](dual-write/link-your-environment.md).
 4. Validate that the Power Platform integration is set up and added in the LCS environment page.  
+
+> [!NOTE]
+> If you use this approach, you must select a Power Platform environment that is in the same region as your Finance and Operations environment. If you select a Power Platform environment that is in a different region, installation of the add-in might fail.
 
 ## <a name="installaddin"></a>Install the Export to Data Lake add-in in LCS 
 
