@@ -100,15 +100,15 @@ POST /environment/v1/stop/project/{projectId}/environment/{environmentId}
 
 To better load balance the request, there are rate limits on the Start and Stop API: 
 
-For **Start** API, we will enforce:
+For **Start** API, the following limits will be enforced:
 
- * 1 call per environment per 5 minutes
- * 30 calls per user per 30 minutes
+ * 1 call for each environment for 5 minutes
+ * 30 calls for each user for 30 minutes
                 
-For **Stop** API, we will enforce:
+For **Stop** API, the following limits will be enforced:
 
- * 1 call per environment per 5 minutes
- * 30 calls per user per 30 minutes
+ * 1 call for each environment for 5 minutes
+ * 30 calls for each user for 30 minutes
 
 > [!NOTE]
 > Requests that exceed the limits will be rejected with a “HTTP 429 Too Many Requests” response. The **retry-after** header will indicate the number of seconds when the request can be retried.
