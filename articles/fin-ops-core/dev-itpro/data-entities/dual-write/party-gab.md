@@ -138,16 +138,22 @@ Electronic addresses are available only in this grid. In future releases, all po
 
 ## Setup
 
-1. Install the latest version (2.2.2.60 or later) of [Dual-write application orchestration solution](https://aka.ms/dual-write-app).
+1. Open your customer engagement app environment.
 
-2. Install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).
+2. Install the latest version (2.2.2.60 or later) of [Dual-write application orchestration solution](https://aka.ms/dual-write-app).
 
-3. Stop the following maps, because they aren't required anymore. Instead, run the `Contacts V2 (msdyn_contactforparties)` map.
+3. Install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).
+
+4. Open the finance and operations app. Navigate to the Data Management module and select the Dual-write tab. The dual-write administration page opens.
+
+5. Apply both the solutions installed in steps 2 and 3 using the [Apply Solution](link-your-environment.md) function.
+
+6. Stop the following maps, because they aren't required anymore. Instead, run the `Contacts V2 (msdyn_contactforparties)` map.
 
     + CDS Contacts V2 and Contacts (refers to customer contacts)
     + CDS Contacts V2 and Contacts (refers to vendor contacts)
 
-4. The following entity mappings are updated for party functionality, so the latest version must be applied to these mappings.
+7. The following entity mappings are updated for party functionality, so the latest version must be applied to these mappings.
 
     Map | Update to this version | Changes
     ---|---|---
@@ -171,7 +177,7 @@ Electronic addresses are available only in this grid. In future releases, all po
     `Salutations (msdyn_salutations)` | 1.0.0.0 | This is a new map added as part of this release.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | This is a new map added as part of this release.
 
-5. Before running the above maps, you must update the integration keys manually as described in the following steps. Then select **Save**.
+8. Before running the above maps, you must update the integration keys manually as described in the following steps. Then select **Save**.
 
     | Map | Keys |
     |-----|------|
@@ -180,7 +186,7 @@ Electronic addresses are available only in this grid. In future releases, all po
     | Contact For Customer/Vendor | msdyn_contactforpartynumber [Contact For Party Number]<br>msdyn_associatedcompanyid.cdm_companycode [Associated Company (Company Code)] |
     | Vendor | msdyn_vendoraccountnumber [Vendor Account Number]<br>msdyn_company.cdm_companycode [Company (Company Code)]|
 
-6. In Dataverse, the duplicate detection rules character limits have increased from 450 to 700 characters. This limit lets you add one or more keys to the duplicate detection rules. Expand the duplicate detection rule for the **Accounts** table by setting the following fields.
+9. In Dataverse, the duplicate detection rules character limits have increased from 450 to 700 characters. This limit lets you add one or more keys to the duplicate detection rules. Expand the duplicate detection rule for the **Accounts** table by setting the following fields.
 
     | Field | Value |
     |-------|-------|
@@ -196,7 +202,7 @@ Electronic addresses are available only in this grid. In future releases, all po
 
     ![Duplicate rule for Accounts](media/duplicate-rule-1.PNG)
 
-7. Expand the duplicate detection rule for the **Contacts** table by setting the following fields.
+10. Expand the duplicate detection rule for the **Contacts** table by setting the following fields.
 
     | Field | Value |
     |-------|-------|
@@ -212,9 +218,9 @@ Electronic addresses are available only in this grid. In future releases, all po
 
     ![Duplicate rule for Contacts](media/duplicate-rule-2.PNG)
 
-8. If you are an existing dual-write user, follow the instructions in [Upgrade to the party and global address book model](upgrade-party-gab.md) and upgrade your data.
+11. If you are an existing dual-write user, follow the instructions in [Upgrade to the party and global address book model](upgrade-party-gab.md) and upgrade your data.
 
-9. Run the maps in the following order. If you get an error that states "Project validation failed. Missing destination field...", then open the map and select **Refresh Tables**. Then run the map.
+12. Run the maps in the following order. If you get an error that states "Project validation failed. Missing destination field...", then open the map and select **Refresh Tables**. Then run the map.
 
     Finance and Operations app | Customer engagement app  
     ----------------------------|------------------------
