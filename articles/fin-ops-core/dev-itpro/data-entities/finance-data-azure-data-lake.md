@@ -33,11 +33,11 @@ ms.dyn365.ops.version: Platform Update 34
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The **Export to Data Lake** feature is in public preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia and Japan regions. If your Finance and Operations environment is in those regions, you can enable this feature in your environment using Lifecycle Services (LCS).
+> The **Export to Data Lake** feature is in public preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS).
 >
-> In the coming months, we will enable this feature in additional regions based on the demand. If your environment is not in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join a [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
+> In the coming months, Microsoft will enable this feature in additional regions, based on the demand. If your environment isn't in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join a [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
 
-The **Export to Data Lake** feature lets you copy data from your Finance and Operations apps into your own Azure Data Lake (Gen 2). The system lets you choose the tables and entities to include. After you select the data that you want, the system will make an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. There may be a delay of a few minutes between data changes in your Finance and Operations app instances and the time when the data is available in your data lake. 
+The **Export to Data Lake** feature lets you copy data from your Finance and Operations apps into your own data lake (Azure Data Lake Storage Gen2). The system lets you select the tables and entities that are included. After you select the data that you want, the system makes an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. After data changes in your Finance and Operations app instances, there might be a delay of a few minutes before the data is available in your data lake.
 
 ## Turn on the Export to Data Lake feature
 Before you can use this feature, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
@@ -51,31 +51,33 @@ You can select the tables and entities that should be staged in Data Lake.
 
 1. In your environment, go to **System Administration** \> **Setup** \> **Export to Data Lake**.
 
-    You can also navigate to the **Export to Data Lake** page using the search bar. Enter **Configure** in the search bar. You should see the link in search results.
-    
-2. On the **Export to Data Lake** page, on the **Choose Tables** tab, select the data tables that should be staged in Data Lake. You can search for tables by display name or system name. You can also see whether a table is being synced. 
+    You can also open the **Export to Data Lake** page by using the search field on the navigation bar. Enter **Configure** in the search field. The search results should include a link to the page.
+
+2. On the **Export to Data Lake** page, on the **Choose Tables** tab, select the data tables that should be staged in Data Lake. You can search for tables by either display name or system name. You can also see whether a table is being synced. 
 3. When you've finished, select **Add Tables** to add the selected tables to Data Lake.
 
     ![Selecting tables](./media/Export-Table-to-Data-lake-Tables-Running-state.png)
 
-4. Select **Activate data feed**, and then select **OK**. The system may show the status of this table as **Initializing** when you add the table. This means, the system is making an initial copy of data. When the initial copy is complete, the system changes the status to **Running**
+4. Select **Activate data feed**, and then select **OK**. When you add a table, the system might show its status as **Initializing**. This status indicates that the system is making an initial copy of data. When the initial copy is completed, the system changes the status to **Running**.
 
-    In case of an error, the system shows the status **Deactivated**. You can consume data in the lake when you see the **Running** state. If you consume data in the lake while **Initializing** or **Deactivated** status, you may not see all the data. 
+    In the event of an error, the system shows the status as **Deactivated**.
 
-    If you aren't familiar with the specific tables that you require, you can select tables by using entities. Entities are a higher-level abstraction of data and might include multiple tables. By selecting entities, you're also selecting the tables that include them.
+    You can consume data in the data lake when the status is **Running**. If you consume data in the data lake while the status is **Initializing** or **Deactivated** status, you might not see all the data. 
+
+    If you aren't familiar with the specific tables that you require, you can select tables by using entities. Entities are a higher-level abstraction of data and might include multiple tables. By selecting entities, you also select the tables that include them.
 
     > [!NOTE]
-    > When opening the **Choose using Entities** page for the first time, you may notice that the list of entities in the page is empty. The system may take some time to populate the list of entities. You can force refresh the list by choosing the **Manage > Rebuild data feed catalog** option using the toolbar at the top of the page. 
-    
+    > When you open the **Choose using Entities** tab for the first time, you might notice that the list of entities on the page is empty. The system might require some time to fill in the list of entities. You can force a refresh of the list by selecting **Manage \> Rebuild data feed catalog** on the Action Pane. 
+
 5. On the **Choose using Entities** tab, select the entities, and then select **Add Tables using Entities**.
 
     ![Selecting tables by using entities](./media/Export-Table-to-Data-lake-Entities-Running-state.png)
-    
+
     Regardless of the method that you use to select tables, the tables will be staged in Data Lake.
 
 ## Monitor the tables in Data Lake
 
-You don't have to monitor or schedule data exports because the system keeps the data updated in Data Lake. However, you can view the status of ongoing data exports on the **Status** column on the **Export to Data lake** page.
+You don't have to monitor or schedule data exports, because the system keeps the data updated in Data Lake. However, you can view the status of ongoing data exports in the **Status** column on the **Export to Data Lake** page.
 
 ## Troubleshooting common issues and errors
 
@@ -108,16 +110,16 @@ When an error occurs in a table that you added to Export to Data Lake, you may s
 | 402        | The RecID field isn't indexed.                                            | The system has detected that the RecID field contained in the table isn't part of an index. This may lead to poor performance in updating the data lake and updates may take longer to reflect in the data lake. If this issue is from a table in a Finance and Operations app, contact Microsoft support. If this table was developed by your partner or ISV, contact the developer. |
 
 **Error status codes 5xx indicate a system error encountered while exporting data**
-Due to the error, the system has paused data export – data that exists in the lake won’t be updated until the error is resolved. Try to deactivate and activate the table to see if this resolves the issue. Note that deactivating and activating the table may cause the system to re-initialize the data in the lake by taking a full copy. If the issue persists, contact Microsoft support with the table name and the error code.
+Due to the error, the system has paused data export – data that exists in the lake won't be updated until the error is resolved. Try to deactivate and activate the table to see if this resolves the issue. Note that deactivating and activating the table may cause the system to re-initialize the data in the lake by taking a full copy. If the issue persists, contact Microsoft support with the table name and the error code.
 
 **Error status codes 8xx and 9xx indicate a change to the table or database structure since it was added**
 
 | Error code | Issue                                                                                 | Next steps                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |------------|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 800        | There is a change in the data table schema.                                            | The system found a change in the table structure when adding changed data to the lake. This change is typically the result of a software update or a database modification. For example, when a new field is added to a table, or a field is modified or removed, the data updated in the lake may not be in the same format as the existing data. Because of the error, the system has paused data export. The data that exists in the lake won’t be updated until the error is resolved. Deactivate and activate the table to see if the issue is resolved. |
-| 801        | There is an issue with the Change data capture feature. | The Export to Data Lake feature uses the Change data capture feature. Change data can’t be exported because the Change data capture feature is disabled in the Finance and Operations apps database. This may be the result of a database maintenance operation. Deactivate and activate the table to see if the issue is resolved. If the issue persists, contact Microsoft support.                                                                                                                                                                                          |
-| 802        | There is an issue with the Change data capture feature for the table.                      | The Export to Data lake feature uses the Change data capture feature. Change data can’t be exported because the Change data capture feature isn't enabled for this table in your Finance and Operations apps database. This may be the result of a database maintenance operation. Deactivate and activate the table to see if the issue is resolved.                                                                                                                                                                         |
-| 900        | There is an issue with the Change data capture feature in this environment.               | The Export to Data lake feature uses the Change data capture feature. Change data can’t be exported because the Change data capture feature isn't enabled for this table in the Finance and Operations apps database. This may be the result of a database maintenance operation. Deactivate and activate the table to see if the issue is resolved. If the issue persists, contact Microsoft support.                                                                                                                                                                        |
+| 800        | There is a change in the data table schema.                                            | The system found a change in the table structure when adding changed data to the lake. This change is typically the result of a software update or a database modification. For example, when a new field is added to a table, or a field is modified or removed, the data updated in the lake may not be in the same format as the existing data. Because of the error, the system has paused data export. The data that exists in the lake won't be updated until the error is resolved. Deactivate and activate the table to see if the issue is resolved. |
+| 801        | There is an issue with the Change data capture feature. | The Export to Data Lake feature uses the Change data capture feature. Change data can't be exported because the Change data capture feature is disabled in the Finance and Operations apps database. This may be the result of a database maintenance operation. Deactivate and activate the table to see if the issue is resolved. If the issue persists, contact Microsoft support.                                                                                                                                                                                          |
+| 802        | There is an issue with the Change data capture feature for the table.                      | The Export to Data Lake feature uses the Change data capture feature. Change data can't be exported because the Change data capture feature isn't enabled for this table in your Finance and Operations apps database. This may be the result of a database maintenance operation. Deactivate and activate the table to see if the issue is resolved.                                                                                                                                                                         |
+| 900        | There is an issue with the Change data capture feature in this environment.               | The Export to Data Lake feature uses the Change data capture feature. Change data can't be exported because the Change data capture feature isn't enabled for this table in the Finance and Operations apps database. This may be the result of a database maintenance operation. Deactivate and activate the table to see if the issue is resolved. If the issue persists, contact Microsoft support.                                                                                                                                                                        |
 
 
 > [!NOTE]
