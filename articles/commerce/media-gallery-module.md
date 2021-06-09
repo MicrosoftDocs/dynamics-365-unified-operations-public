@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.13
 # Media gallery module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers media gallery modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
