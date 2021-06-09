@@ -939,5 +939,6 @@ For most of these pages, you can find the relevant function by selecting **Wave 
 ## Additional resources
 
 - [Reprint and void wave labels](reprint-and-void-wave-labels.md)
+- [Configure task based wave label printing](configure-task-based-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
