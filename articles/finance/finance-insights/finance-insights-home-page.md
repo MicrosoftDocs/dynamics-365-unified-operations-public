@@ -90,7 +90,7 @@ If you are using demo data to test customer payment predictions, you may have to
 To enable Customer payment predictions, you must complete a set of steps to build a machine learning model that uses your organization's data your organization's data to generate predictions about when customers are likely to pay outstanding invoices, and when specific invoices are likely to be paid. For more information and the specific steps to complete, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md). 
 
 ### Enable Cash flow forecasting
-To enable Cash flow forecasting, you must complete a set of steps to build a machine learning model that uses your organization's data your organization's data to to generate cash flow forecasts. For more information and the specific steps to complete, see [Enable cash flow forecasting](enable-cash-flow-forecasting.md).
+To enable Cash flow forecasting, you must complete a set of steps to build a machine learning model that uses your organization's data to generate cash flow forecasts. For more information and the specific steps to complete, see [Enable cash flow forecasting](enable-cash-flow-forecasting.md).
 
 ### Enable budget proposals
 
