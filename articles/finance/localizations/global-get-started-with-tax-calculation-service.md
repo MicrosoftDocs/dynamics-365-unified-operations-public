@@ -63,7 +63,7 @@ Before you can complete the procedures in this topic, the following prerequisite
 The steps in this section aren't related to a specific legal entity. You must complete this procedure only one time, and you can complete it in any legal entity in RCS.
 
 1. Sign in to [RCS](https://marketing.configure.global.dynamics.com/).
-2. In Finance, in the **Electronic reporting** workspace, add a new configuration provider. Use your company name as the name of the provider. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. In the **Electronic reporting** workspace, add a new configuration provider. Use your company name as the name of the provider. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Select the configuration provider that you just created, and then select **Set active**.
 4. Select the **Microsoft** configuration provider, and then select **Repositories**.
 5. In the **Type** field, select **Global**.

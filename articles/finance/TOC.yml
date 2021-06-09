@@ -2422,6 +2422,18 @@
                 href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
               - name: Tax transaction ID is incorrect
                 href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
+              - name: Incorrect field values on the GSTR report
+                href: localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md
+              - name: Incorrect field value in an invoice journal or voucher
+                href: localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md
+              - name: Incorrect ledger account in the voucher
+                href: localizations/apac-ind-GST-troubleshooting-ledger-account-voucher-wrong.md
+              - name: Open the designer for the current tax configuration
+                href: localizations/apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md
+              - name: Records and fields don't appear on the GSTR report
+                href: localizations/apac-ind-GST-troubleshooting-records-fields-not-showing-GSTR-report.md
+              - name: Setoff rule error when a tax settlement is run
+                href: localizations/apac-ind-GST-troubleshooting-setoff-rule-error-transactions-on-voucher-not%20balance.md
         - name: Direct taxes
           items:
           - name: India withholding tax
@@ -4165,14 +4177,18 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
           - name: Automate testing with ER
             href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
-        - name: Automate business processes by using Electronic reporting configurations
+        - name: Automate business processes by using ER configurations
           items: 
           - name: Configure ER to pull data into Power BI
             href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
           - name: Generate printable free text invoice (FTI) forms
             href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
-        - name: Trace execution of ER formats to troubleshoot performance issues
-          href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+        - name: Design efficient ER solutions
+          items: 
+          - name: Trace execution of ER formats to troubleshoot performance issues
+            href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+          - name: Troubleshoot performance issues in ER configurations
+            href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
         - name: Business document management (BDM)
           items:
           - name: BDM overview
