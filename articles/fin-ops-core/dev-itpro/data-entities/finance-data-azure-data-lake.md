@@ -62,6 +62,9 @@ You can select the tables and entities that should be staged in Data Lake.
 In case of an error, the system shows the status **Deactivated**. You can consume data in the lake when you see the **Running** state. If you consume data in the lake while **Initializing** or **Deactivated** status, you may not see all the data. 
 
 If you aren't familiar with the specific tables that you require, you can select tables by using entities. Entities are a higher-level abstraction of data and might include multiple tables. By selecting entities, you're also selecting the tables that include them.
+
+> [!NOTE]
+> When opening the "choose using Entities" page for the first time, you may notice that the list of entities in the page is empty. System may take some time to populate the list of entities. You can force refresh the list by choosing **Manage > Rebuild data feed catalog** option using the toolbar at the top of the page. 
     
 7. On the **Choose using Entities** tab, select the entities, and then select **Add Tables using Entities**.
 
