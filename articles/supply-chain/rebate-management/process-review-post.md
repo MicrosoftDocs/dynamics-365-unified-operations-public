@@ -63,7 +63,6 @@ When you process a deal, the system calculates all relevant rebates and royaltie
     - **Process \> Rebate management** – Process a series of transactions that provide the value of the rebate for each deal.
     - **Process \> Write off** – Process the variance between provision and rebate management posted for each source transaction for the rebate deal and specified period. This menu item is disabled for deals where the **Rebate output** is *Item*. <!--KFM: review first sentence with Monica. -->
 
-
 1. In the dialog box that appears, set the **From date** and **To date** fields to define the date range for the calculation.
 1. Select **OK** to run the calculation.
 
@@ -179,7 +178,7 @@ Instead of posting transactions for specific deals or deal lines, you can run a 
     - Go to **Rebate management \> Periodic tasks \> Post \> Rebate management** to post available rebate transactions that you've created.
     - Go to **Rebate management \> Periodic tasks \> Post \> Write off** to post available write-off transactions that you've created.
 
-1. In the dialog box that appears, on the **Parameters** FastTab, in the **Period** section, set the **Posting date** field. Then set the **From date** and **To date** fields to define the date range for the transactions that must be posted. 
+1. In the dialog box that appears, on the **Parameters** FastTab, in the **Period** section, set the **Posting date** field. Then set the **From date** and **To date** fields to define the date range for the transactions that must be posted.
 1. In the **Guarantee Period** section, set the **From date** and **To date** fields to define the date range for the guarantees that must be posted.
 1. On the **Records to include** FastTab, you can set up filters to limit the set of deals that the batch job will process. These settings work in the same way that they work for other types of batch jobs.
 1. On the **Run in the background** FastTab, you can set up batch processing and scheduling options as required. These settings work in the same way that they work for other types of batch jobs.
