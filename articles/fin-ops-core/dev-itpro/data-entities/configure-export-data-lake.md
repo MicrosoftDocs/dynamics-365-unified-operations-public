@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform Update 33
 >
 > In the coming months we will enable this feature in additional regions based on the demand. If your environment is not in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join a preview Yammer group by [visiting the link here](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
 >
-> **Export to Data Lake** feature is not available in Tier-1 (developer) environments. You need a cloud-based Tier-2 or higher environment to enable this feature. 
+> **Export to Data Lake** feature is not available in Tier-1 (developer) environments. You need a cloud-based Tier-2 or higher sandbox environment to enable this feature. **You can't enable this feature in production environments while in preview**.    
 > 
 > With your Tier-1 (developer) environment, you can prototype or plan the feature implementation using [GitHub tools](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md). The tools will enable you to export data from your Tier-1 or Sandbox environment into a storage account in the same format as exported by the feature. 
 >
