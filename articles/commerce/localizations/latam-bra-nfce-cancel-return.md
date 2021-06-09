@@ -32,11 +32,11 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic gives an overview of cancellation and return functionality for NFC-e (Nota Fiscal do Consumidor eletrônica) documents in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil, including the cancellation of sales within the allowed timeframe, the issuance of NF-e (Nota Fiscal eletrônica) documents, and the printing of simplified DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) model 55 fiscal receipts when completing retail sales returns in Commerce POS.
 
-Commerce functionality for Brazil supports cancellation and return of sales issued with NFC-e documents. NFC-e document formats are based on the national technical standards of the electronic fiscal documents, including cancellation events and NF-e (model 55) for returns. 
+Commerce functionality for Brazil supports cancellation and return of sales issued with NFC-e documents. NFC-e document formats are based on the national technical standards of the electronic fiscal documents, including cancellation events and NF-e model 55 for returns. 
 
-An NF-e is an electronic fiscal document that is generated and printed to register the return of goods sold to a customer. It enables tax and fiscal control from tax authorities and allows customers to verify the validity and authenticity of the received fiscal documents. For more information about NF-e, see [Brazil NF-e process overview](../../finance/localizations/latam-bra-nf-e-process.md).
+An NF-e is an electronic fiscal document that is generated and printed to register the return of goods sold to a customer. It enables tax and fiscal control from tax authorities and allows customers to verify the validity and authenticity of the received fiscal documents. For more information about the NF-e process, see [Brazil NF-e process overview](../../finance/localizations/latam-bra-nf-e-process.md).
 
-It is only possible to cancel an NFC-e if it is already authorized by the tax authority and if the goods and the customer are still in the establishment. The maximum deadline for cancelling an NFC-e is up to 30 minutes after the granting of authorization for use. Once the NFC-e cancellation time runs out, a return NF-e must be issued to cancel a sale.
+It is only possible to cancel a NFC-e document if it is already authorized by the tax authority and if the goods and the customer are still in the establishment. The maximum deadline for cancelling an NFC-e document is up to 30 minutes after the granting of authorization for use. Once the NFC-e document cancellation time runs out, a return NF-e document must be issued to cancel a sale.
 
 ## Limitations
 
