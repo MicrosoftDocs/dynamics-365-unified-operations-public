@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.20
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains how to configure Dynamics 365 Finance version 10.0.20 so that your system can use the capabilities that are available in Finance insights public preview .
+Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains how to configure Dynamics 365 Finance version 10.0.20 so that your system can use the capabilities that are available in Finance insights public preview.
 
 > [!NOTE]
 > The configuration steps that are described in this topic apply only to Finance version 10.0.20 and later. 'To set up Finance insights on version 10.0.19 and earlier, see [Configuration for Finance insights - versions up to 10.0.18](configure-for-fin-insites.md).
@@ -135,7 +135,7 @@ If you can't find any of the preceding applications, try the following steps.
     4. Select **Review and create**. When the deployment is completed, the new resource is shown in the Azure portal.
     5. Go to the storage account that you created.
     6. On the left menu, select **Access keys**.
-    7. Copy and save the storage account name. You will have to provide this value later, when you set up key vault secrets.
+    7. Copy and save the name of the storage account. You will have to provide this value later, when you set up key vault secrets.
 
 2. Create a key vault:
 
