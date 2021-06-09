@@ -5,7 +5,7 @@ title: Manage customer information in POS for Brazil
 description: This topic describes how to manage customer information in Commerce point of sale (POS) for Brazil.
 author: v-ankvik
 manager: annbe
-ms.date: 06/07/2021
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -36,7 +36,7 @@ For more information how to set up this functionality, see [Customer information
 
 ## Example scenarios
 
-The following example scenarios show how to work with customer information in Commerce POS for Brazil.
+The following example scenarios show how to manage customer information in Commerce POS for Brazil.
 
 ### Scenario 1: Make a sale to an anonymous customer
 
