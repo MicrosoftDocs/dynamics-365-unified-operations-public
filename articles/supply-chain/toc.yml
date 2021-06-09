@@ -3229,6 +3229,52 @@
             href: warehousing/mhax.md
           - name: Troubleshoot warehouse work
             href: warehousing/troubleshoot-warehouse-work.md
+      - name: The Warehouse Management mobile app
+        items:
+        - name: Install, set up, and use mobile devices
+          items:
+          - name: What's new or changed in Warehouse Management mobile app
+            href: warehousing/whats-new-wma.md
+          - name: Install and connect the Warehouse Management mobile app
+            href: warehousing/install-configure-warehouse-management-app.md
+          - name: Install and connect the warehouse app
+            href: warehousing/install-configure-warehousing-app.md
+          - name: Scan bar codes using a camera in the Warehouse Management mobile app
+            href: warehousing/scan-bar-codes-using-a-camera.md
+          - name: Troubleshoot Warehouse Management mobile app connection issues
+            href: warehousing/troubleshoot-warehouse-app-connection.md
+        - name: Set up fields, menus, and flows for mobile devices
+          items:
+          - name: Configure fields for the Warehouse Management mobile app
+            href: warehousing/configure-app-field-names-priorities-warehouse.md
+          - name: Set up mobile devices for warehouse work
+            href: warehousing/configure-mobile-devices-warehouse.md
+          - name: License plate receiving via the Warehouse Management mobile app
+            href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+          - name: Set up a mobile device menu item for completing work in a purchase order
+            href: warehousing/tasks/set-up-mobile-device-menu.md
+          - name: Set up a mobile device menu item to register received items
+            href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+          - name: Set up a mobile device menu item to provide a pick line overview
+            href: warehousing/pick-line-overview.md
+          - name: Create a mobile device menu item for license plate consolidation
+            href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+          - name: Mixed license plate receiving on a mobile device
+            href: warehousing/mixed-license-plate-receiving.md
+          - name: Configure Display older batches within warehouse on a mobile device
+            href: warehousing/display-older-batches-within-warehouses.md
+          - name: Pick oldest batch on a mobile device
+            href: warehousing/pick-oldest-batch.md
+        - name: Mobile device user settings
+          href: warehousing/mobile-device-user-settings.md
+        - name: Warehouse app event processing
+          href: warehousing/warehouse-app-events.md
+        - name: Customize the warehouse app
+          items:
+          - name: Process guide framework
+            href: warehousing/process-guide-framework.md
+          - name: Assign step icons and titles
+            href: warehousing/step-icons-titles.md
       - name: Warehouse setup
         items:
         - name: Warehouse configuration
@@ -3297,44 +3343,6 @@
             href: warehousing/transfer-orders-warehouse.md
           - name: Troubleshooting warehouse configuration
             href: warehousing/troubleshoot-warehouse-configuration.md
-        - name: Install and configure the Warehouse Management mobile app
-          items:
-          - name: Install and connect the Warehouse Management mobile app
-            href: warehousing/install-configure-warehouse-management-app.md
-          - name: Mobile device user settings
-            href: warehousing/mobile-device-user-settings.md
-          - name: Install and connect the warehouse app
-            href: warehousing/install-configure-warehousing-app.md
-          - name: Scan bar codes using a camera in the Warehouse Management mobile app
-            href: warehousing/scan-bar-codes-using-a-camera.md
-          - name: Configure fields for the Warehouse Management mobile app
-            href: warehousing/configure-app-field-names-priorities-warehouse.md
-          - name: Set up mobile devices for warehouse work
-            href: warehousing/configure-mobile-devices-warehouse.md
-          - name: Assign step icons and titles
-            href: warehousing/step-icons-titles.md
-          - name: Warehouse app event processing
-            href: warehousing/warehouse-app-events.md
-          - name: License plate receiving via the Warehouse Management mobile app
-            href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-          - name: Set up a mobile device menu item for completing work in a purchase order
-            href: warehousing/tasks/set-up-mobile-device-menu.md
-          - name: Set up a mobile device menu item to register received items
-            href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-          - name: Set up a mobile device menu item to provide a pick line overview
-            href: warehousing/pick-line-overview.md
-          - name: Create a mobile device menu item for license plate consolidation
-            href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-          - name: Mixed license plate receiving on a mobile device
-            href: warehousing/mixed-license-plate-receiving.md
-          - name: Configure Display older batches within warehouse on a mobile device
-            href: warehousing/display-older-batches-within-warehouses.md
-          - name: Pick oldest batch on a mobile device
-            href: warehousing/pick-oldest-batch.md
-          - name: Process guide framework
-            href: warehousing/process-guide-framework.md
-          - name: Troubleshoot Warehouse Management mobile app connection issues
-            href: warehousing/troubleshoot-warehouse-app-connection.md
         - name: Upgrade and migration
           items:
           - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations
