@@ -4177,14 +4177,18 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
           - name: Automate testing with ER
             href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
-        - name: Automate business processes by using Electronic reporting configurations
+        - name: Automate business processes by using ER configurations
           items: 
           - name: Configure ER to pull data into Power BI
             href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
           - name: Generate printable free text invoice (FTI) forms
             href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
-        - name: Trace execution of ER formats to troubleshoot performance issues
-          href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+        - name: Design efficient ER solutions
+          items: 
+          - name: Trace execution of ER formats to troubleshoot performance issues
+            href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+          - name: Troubleshoot performance issues in ER configurations
+            href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
         - name: Business document management (BDM)
           items:
           - name: BDM overview
