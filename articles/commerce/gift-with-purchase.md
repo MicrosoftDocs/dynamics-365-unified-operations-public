@@ -30,7 +30,6 @@ ms.dyn365.ops.version: AX 7.0.1
 # Configure gift with purchase promotions
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how to configure "gift with purchase" promotions in Microsoft Dynamics 365 Commerce.
 
