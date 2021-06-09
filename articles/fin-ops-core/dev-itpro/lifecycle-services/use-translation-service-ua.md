@@ -97,7 +97,7 @@ When processing of your translation request is completed, you receive an email n
 For documentation translation requests, three types of output file are available after the translation process is completed:
 
 + **For translation review** – Download this file to review and edit the translated document strings in a table view. The file shows the source and target languages segments side by side.
-+ **Translated native format** – Download this file if you don't intend to review or edit the translations but to pick up the translated file ready to use. This file has the same formatting style (title, headings, tables, etc.) as the source .docx file that you submitted, and it's ready to be used.
++ **Translated native format** – Download this file if you don't intend to review or edit the translations, but to pick up the translated file ready to use. This file has the same formatting style (title, headings, tables, etc.) as the source .docx file that you submitted, and it's ready to be used.
 + **Translation memory** – Download this file to recycle these translations the next time that you submit a translation request that uses a newer version of the source document.
 
 ### Review and edit the translations
