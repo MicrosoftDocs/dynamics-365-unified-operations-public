@@ -75,7 +75,7 @@ Rebates can be configured based on many different parameters. For example, they 
 
 Rebate calculation results can also be reduced by other rebates, depending on whether the rebate is set up to calculate based on the net amount.
 
-On the vendor side, rebates can calculate the price based on a first in, first out (FIFO) rule, the latest purchase price, the average purchase price, or the sales price.
+On the vendor side, rebates based on sales orders can calculate the price based on a first in, first out (FIFO) rule, the latest purchase price, the average purchase price, or the sales price.
 
 ## Rebate target transactions
 
@@ -89,11 +89,12 @@ Item outputs create a free item sales order for customer rebates and a purchase 
 
 The combination of the associated deals, the frequency of the calculations, the calculation basis, and the calculation method that is selected determines the accuracy and precision of rebate calculations. Rebate provisions can be used to accrue posted and claimed values.
 
-Provisions can be managed daily or monthly. However, the functionality can allocate or pay the rebate, or receive payment of it, at any defined frequency. Users can easily adjust a plan or payment amounts at any time during the payout.
+Provisions can be managed daily, weekly, monthly, or according to a custom period. However, the functionality can allocate or pay the rebate, or receive payment of it, at any defined frequency that is the same length or longer than the provision frequency. Write off uses the same frequency as the rebate. Users can easily adjust a plan or payment amounts at any time during the payout.
 
-Users no longer have to handle deals or provisions in two steps. Provisions and write-offs are posted directly to the ledger. Additionally, credit notes can be created automatically. Therefore, there is full integration with accounts payable and accounts receivable. During processing, the calculations consider settlement discounts, paid invoices, trade discounts, and existing credit notes to ensure that amounts and values are accurately calculated.
+Users no longer have to handle deals or provisions in two steps. Provisions and write-offs are posted directly to the ledger. Additionally, credit notes can be created automatically. Therefore, there is full integration with accounts payable and accounts receivable. During processing, the calculations can consider settlement discounts, paid invoices, trade discounts, and existing credit notes to ensure that amounts and values are accurately calculated.
 
-When rebates are calculated, the process creates transactions that can be reviewed before posting occurs. A journal, credit note, or debit transaction can then be created. A separate process posts rebate and deduction transactions. Reporting statements and transaction listings can be obtained to ensure compliance, effectiveness, and transparency.
+When rebates are calculated, the process creates transactions that can be reviewed before posting occurs. A separate process posts rebate management transactions.  A journal, credit note, or debit transaction can then be created when posting to proposed transaction. Reporting statements and transaction listings can be obtained to ensure compliance, effectiveness, and transparency.
+
 
 ## Guaranteed royalty payments
 
