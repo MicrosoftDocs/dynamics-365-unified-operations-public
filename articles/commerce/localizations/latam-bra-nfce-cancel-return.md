@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include[banner](../includes/banner.md)]
 
-This topic gives an overview of cancellation and return functionality for NFC-e (Nota Fiscal do Consumidor eletrônica) documents in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil, including the cancellation of sales within the allowed timeframe, the issuance of NF-e (Nota Fiscal eletrônica) documents, and the printing of simplified DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) model 55 fiscal receipts when completing retail sales returns in Commerce POS.
+This topic gives an overview of cancellation and return functionality for NFC-e (Nota Fiscal do Consumidor eletrônica) documents in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
 
-Commerce functionality for Brazil supports cancellation and return of sales issued with NFC-e documents. NFC-e document formats are based on the national technical standards of the electronic fiscal documents, including cancellation events and NF-e model 55 for returns. 
+Commerce functionality for Brazil supports cancellation and return of sales issued with NFC-e documents. NFC-e document formats are based on the national technical standards of the electronic fiscal documents, including cancellation events and NF-e (Nota Fiscal eletrônica) model 55 for returns. 
 
 An NF-e is an electronic fiscal document that is generated and printed to register the return of goods sold to a customer. It enables tax and fiscal control from tax authorities and allows customers to verify the validity and authenticity of the received fiscal documents. For more information about the NF-e process, see [Brazil NF-e process overview](../../finance/localizations/latam-bra-nf-e-process.md).
 
@@ -45,7 +45,7 @@ The following limitations apply to cancellation and return functionality for NFC
 - Cancellations and returns are only allowed for sales made within the same state. Interstate operations are prohibited.
 - The cancellation of NFC-e documents authorized by POS terminals from other stores is not supported. Only authorized NFC-e documents issued by POS terminals within the same store can be cancelled. 
 - Cancellation and returns issued by POS terminals without internet access or issued when the tax authority authorization service is down (offline contingency mode) are not supported.
-- The simplified DANFE for model 55 format is the only layout supported for returns.
+- The simplified DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) for model 55 format is the only layout supported for returns.
 - Sales and returns of services are not supported.
 
 ## Supported scenarios
