@@ -50,7 +50,7 @@ Add the following code to your Batch class.
  As long as the extended job has the isRetryable set to false, the job will not be retried.
  
  ### I marked my custom job as Retryable by mistake. Is there a way I can override without taking another code change?
- Yes, you can go to the **System administration > Batch > Batch class configuration overrides** page and override the retryable value to false. This will prevent further executions from being retried.
+ Yes, you can go to the **System administration > Setup > Batch class configuration overrides** page and override the retryable value to false. This will prevent further executions from being retried.
  
  ### I have many batch jobs? How do I discover all my batch jobs to implement the interface?
  Plug in Peter's github repo here.
