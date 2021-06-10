@@ -45,11 +45,11 @@ In ER [mapping](general-electronic-reporting.md#data-model-and-model-mapping-com
 
 The default value of a *class* is **null**.
 
-The following illustration shows how the **System information(xInfo)** data source of the **Class** type is added to make the instance of the **xInfo** application class and call its **productName()** method to receive the name of the current application.
+The following illustration shows how the **System information(xInfo)** data source of the **Class** type is added to make the instance of the **xInfo** application class and call its **productName()** method to receive the name of the current application. The name of the current application is fetched at runtime by execution of the `xInfo.productName` binding that was configured for the **Software name(SoftwareName)** field of the ER data model. This binding calls the `productName()` method of the **xInfo** application class that is represented in the current model mapping as the **System information(xInfo)** data source.
 
 [![Configuring a Class data source in the ER model mapping designer](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
 
-The following illustration shows how the ER format is configured to put the provided application name in generated documents.
+The following illustration shows how the ER format is configured to put the provided application name in generated documents. The **Software name(SoftwareName)** field of the used data model was bound to the **String** component that is nested under the **softwareUsed** XML element of the ER format. So, the name of the current application is placed at runtime to the **softwareUsed** XML element of a generated document in XML format.
 
 [![Configuring the structure of an electronic outbound document in the ER format designer](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
 
@@ -111,7 +111,7 @@ An *object* refers to a stateful instance of a *class*. Usually, an *object* is 
 
 The default value of an *object* is **null**.
 
-The following illustration shows how the **ReportDataContract** data source of the *Object* type is added to pass information about a generated invoice from source code to the **Project invoice** model mapping. The invoice instance text is passed as part of the execution context.
+The following illustration shows how the **ReportDataContract** data source of the *Object* type is added to pass information about a generated invoice from source code to the **Project invoice** model mapping. For example, the invoice instance text is passed as part of the execution context. This text is taken from source code at runtime by execution of the `ReportDataContract.parmInvoiceInstanceText` binding that was configured for the **Note** field of the ER data model. This binding calls the `parmInvoiceInstanceText()` method of the **PSAProjInvoiceContract** application class that is represented in the current model mapping as the **ReportDataContract** data source.
 
 [![Configuring an Object data source in the ER model mapping designer](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
 
