@@ -4,7 +4,7 @@
 title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: jasongre
-ms.date: 06/02/2021
+ms.date: 06/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
