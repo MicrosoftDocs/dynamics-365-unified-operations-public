@@ -39,6 +39,7 @@ Add the following code to your Batch class.
 For more information, see [Final methods and the Wrappable attribute](../extensibility/method-wrapping-coc.md).
 
 ```
+  //RunBaseBatch
   class TestBatchJob extends RunBaseBatch implements BatchRetryable
   {
     [Wrappable(true), Replaceable(true)] // Change to meet your customizability requirements
@@ -46,22 +47,36 @@ For more information, see [Final methods and the Wrappable attribute](../extensi
     {
         return false; // You can also use true if you want to enforce retryable behavior
     }
+    ...
+   } 
+   
+   //SysOperationServiceController 
+   class TestBatchJob extends SysOperationServiceController implements BatchRetryable
+   {
+    [Wrappable(true), Replaceable(true)] // Change to meet your customizability requirements
+    public boolean isRetryable() // Use final if you want to prevent overriding
+    {
+        return false; // You can also use true if you want to enforce retryable behavior
+    }
+    ...
+   }
  ```
  
 ### I am extending a Microsoft batch that is retryable, but my batch job is not. Will the retry trigger?
 As long as the extended job has the isRetryable set to false, the job will not be retried.
 
 ### I marked my custom job as Retryable by mistake. Is there a way I can override without taking another code change?
-Yes, you can go to the **System administration > Setup > Batch class configuration overrides** page and override the retryable value to false. This will prevent further executions from being retried.
- 
-### I have many batch jobs? How do I discover all my batch jobs to implement the interface?
-Plug in Peter's github repo here.
+Yes, you can go to the **System administration > Setup > Batch class configuration overrides** page to unregister your class from being retried on SQL connection failures, without going through a code change. You need to create a new record in this page and add the batch class that you want to unregister. This feature can be used to react quickly to changes needed. Best practice recommendation is to make sure the code is updated.
+
+### I have my batch jobs designed to run multithreaded. How do I implement retryable. 
+If your custom batch process designed to run in multi-threading i.e., you are creating multiple tasks and adding runtime tasks, you must implement BatchRetryable interface in both the main controller and the task controller.
 
 ### What is the best practice for the execution time for a batch job?
 A batch job that has a shorter execution time will have a greater chance of completing successfully which will avoid the need for a retry.
  
 ### What is the best practice for the transaction size for a batch job?
 A batch job that has a smaller transaction size will reduce the amount of work that could be lost due to a transient failure and that will ensure the need for a retry will not drastically increase the total execution time.
+
 
 ### What does idempotent mean for a batch job?
 It means that a retry will not change or affect the overall result. For example, it means that something should only be done once won't be done more than once, such as once in the original run and again in the retry.
