@@ -58,4 +58,4 @@ You can change the following settings for a deal after it has been activated:
 - Currency
 - From date
 - To date
-- Rebate lines can be removed <!-- KFM: Confirm this with Monica. Her comment was strange: "Not sure if we need this detail. All the fields **not listed** can be edited after deal has been activated." -->
+- Rebate lines can be removed

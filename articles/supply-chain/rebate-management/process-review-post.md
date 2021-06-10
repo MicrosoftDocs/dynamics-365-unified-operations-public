@@ -61,7 +61,7 @@ When you process a deal, the system calculates all relevant rebates and royaltie
 
     - **Process \> Provision** – Provision a set of accruals for each relevant rebate deal, but don't post them. This menu item is disabled for deals where the **Rebate output** is *Item*.
     - **Process \> Rebate management** – Process a series of transactions that provide the value of the rebate for each deal.
-    - **Process \> Write off** – Process the variance between provision and rebate management posted for each source transaction for the rebate deal and specified period. This menu item is disabled for deals where the **Rebate output** is *Item*. <!--KFM: review first sentence with Monica. -->
+    - **Process \> Write off** – Process the variance between the amounts posted for provision and for rebate management for each source transaction for the rebate deal and specified period. This menu item is disabled for deals where the **Rebate output** is *Item*.
 
 1. In the dialog box that appears, set the **From date** and **To date** fields to define the date range for the calculation.
 1. Select **OK** to run the calculation.
@@ -76,7 +76,7 @@ When you process a deal, the system calculates all relevant rebates and royaltie
 
     - **Process \> Provision** – Provision a set of accruals for each relevant deal line, but don't post them. This menu item is disabled for deals where the **Rebate output** is *Item*.
     - **Process \> Rebate management** – Process a series of transactions that provide the value of the rebate for each deal line.
-    - **Process \> Write off** – Process the variance between provision and rebate management posted for each source transaction for the rebate deal and specified period. This menu item is disabled for deals where the **Rebate output** is *Item*. <!--KFM: review first sentence with Monica. -->
+    - **Process \> Write off** – Process the variance between the amounts posted for provision and for rebate management for each source transaction for the rebate deal and specified period. This menu item is disabled for deals where the **Rebate output** is *Item*. 
 
 1. In the dialog box that appears, set the **From date** and **To date** fields to define the date range for the calculation.
 1. Select **OK** to run the calculation.
@@ -119,22 +119,22 @@ When you process one or more deals, the system creates transactions that you can
         - **Set unclaimed \> All** – Mark all transactions as unclaimed.
         - **Set unclaimed \> Selected** – Mark the selected transactions as unclaimed.
 
-    - To post the claim for all the claimed, if you are using claims process, else all the source transactions for the selected rebate transaction, on the Action Pane, select **Post**. <!-- KFM: Review previous sentence with Monica --> (The **Post** button is available only for rebate transactions. It's unavailable for provision and write-off transactions.) In the **Post** dialog box, the **From date** and **To date** fields are automatically set. Set the **Posting date** field, and then select **OK**.
+    - Select **Post** on the Action Pane to post the claim for all the relevant lines. If you are using a claims process (when **Use claim process** is enabled on the **Rebate management parameters** page), then only the lines marked as **Claimed** are posted; otherwise, all the source transactions for the selected rebate transaction are posted. The **Post** button is available only for rebate transactions. It's unavailable for provision and write-off transactions. In the **Post** dialog box, the **From date** and **To date** fields are automatically set. Set the **Posting date** field, and then select **OK**.
     - To adjust the amount that is shown for any open or unposted transaction, select the transaction, and then follow one of these steps:
 
         - Edit the value in the **Corrected amount** field.
         - On the Action Pane, select **Set correction**. Then, in the drop-down dialog box that appears, in the **Corrected amount** field, enter a value.
 
 > [!NOTE]
-> When you are using the claims process, when you process the next period, the transaction list will include any unclaimed transactions from the previous posting, plus any new transactions for the selected period. <!-- KFM: Confirm this formulation with Monica -->
+> When you are using the claims process, when you process the next period, the transaction list will include any unclaimed transactions from the previous posting, plus any new transactions for the selected period.
 
 ## Post rebates transactions
 
-To post the value of a processed provision, rebate management <!-- KFM: rebate management what? -->, and write off, you must run the posting process. The posting process marks the provision, rebate management, or write off transactions as posted and creates the target transaction. If you don't need to review the target transaction, these can be set up to post automatically.
+To post the value of a processed provision, rebate management amount, and write off, you must run the posting process. The posting process marks the provision, rebate management, or write off transactions as posted and creates the target transaction. If you don't need to review the target transaction, these can be set up to post automatically.
 
 ### Set up the system to post all target transactions automatically
 
-To set up your system to post all target transactions as soon as they are generated by a posting provision, rebate management <!-- KFM: rebate management what? --> and write off, turn on the  **Automatically post journals** and/or **Automatically post free text invoices** option on the **Rebate management parameters** page. For more information, see [Rebate management parameters](rebate-management-parameters.md).
+To set up your system to post all target transactions as soon as they are generated by a posting provision, rebate management amount, and write off, turn on the  **Automatically post journals** and/or **Automatically post free text invoices** option on the **Rebate management parameters** page. For more information, see [Rebate management parameters](rebate-management-parameters.md).
 
 ### Post transactions for all lines for one or more deals
 
