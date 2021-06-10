@@ -70,10 +70,9 @@ CDM metadata files describe the structure of change feed data contained in folde
 
 ![You can examine the metadata by choosing a metadata file and opening the file in a Text editor.](media/Change-feed-folders-table-level-with-metadata.png)
 
-As you can notice from the metadata definitions, change feed folder contains the CDC change log details along with additional fields. Following diagram and the subsequent table provides details of the format of changes within Change folders.
+As you can notice from the metadata definitions, change feed folder contains the CDC change log details along with additional fields. The following diagram and the subsequent table provides details of the format of changes within Change folders.
 
 ![change feed folder contains the CDC change log details along with additional fields.](media/Change-feed-folders-change-data-format.png)
-
 
 | Field name                   | Contents                                                                                                                                                                                                                                                                                                     |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -88,22 +87,21 @@ As you can notice from the metadata definitions, change feed folder contains the
 
 ## Best practices in using change feeds
 
-Change feeds is a powerful feature enabled by the export to Data lake feature in Finance and Operations.
+Change feeds are a powerful feature enabled by the Export to Data lake feature in Finance and Operations apps.
 
 ### Updating near real-time data marts
 
 If you have a requirement to update your data warehouse or data marts on near-real time basis, you should use change feeds. By near-real-time, we mean data marts or data warehouses that need to be updated within minutes of behind operations.
 
-However, there are several important concepts that must be understood
+However, there are several important concepts that must be understood:
 
-1.  Change feeds are constantly updated in the lake. Updates may happen in small batches that update the data every minute – or even sub-minute in case of tables that update frequently. You should not observe the change feed folder to trigger downstream jobs – instead, you should assume that change feeds do happen all the time.
+1. Change feeds are constantly updated in the lake. Updates may happen in small batches that update the data every minute – or even sub-minute in case of tables that update frequently. You should not observe the change feed folder to trigger downstream jobs – instead, you should assume that change feeds do happen all the time.
 
-2.  Your downstream jobs should be orchestrated on a periodic basis, and can be triggered as micro-batches
+2. Your downstream jobs should be orchestrated on a periodic basis, and can be triggered as micro-batches.
 
-3.  You should rely on the LSN number as a marker – as opposed to replying on Change Date time stamps. Replying on LSN number will ensure that you consume the changes in the same sequence that was committed in Finance and Operations database
+3. You should rely on the LSN number as a marker – as opposed to replying on Change Date time stamps. Replying on the LSN number will ensure that you consume the changes in the same sequence that was committed in Finance and Operations database.
 
-See a sample Synapse template that can be used to incrementally ingest data into a SQL based data warehouse:
-[Dynamics-365-FastTrack-Implementation-Assets/Analytics/SynapseToSQL_ADF at master · microsoft/Dynamics-365-FastTrack-Implementation-Assets (github.com) (https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/SynapseToSQL_ADF)
+See a [sample Synapse template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/SynapseToSQL_ADF) that can be used to incrementally ingest data into a SQL based data warehouse.
 
 ### Simplify BYOD based ETL pipelines 
 
