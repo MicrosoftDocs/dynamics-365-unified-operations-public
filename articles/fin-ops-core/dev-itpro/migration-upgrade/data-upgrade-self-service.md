@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This topic explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
 author: sarvanisathish
-ms.date: 06/02/2021
+ms.date: 06/09/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -36,7 +36,7 @@ ms.search.validFrom: 2021-06-30
 
     DECLARE @installed int;
 
-    EXEC @installed = sys.sp\_MS\_replication\_installed;
+    EXEC @installed = sys.sp_MS_replication_installed;
 
     SELECT @installed;
     ```
@@ -199,11 +199,11 @@ After the validation is successful, the application presents a set of menu optio
     > To remove the **Snapshot** folder without causing an exception, run the following script in the source database. Even if you don't run this script, you can ignore the exception message that you receive.
     >
     > ```sql
-    > EXEC master.dbo.sp\_configure 'show advanced options', 1
+    > EXEC master.dbo.sp_configure 'show advanced options', 1
     >
     > RECONFIGURE WITH OVERRIDE
     > 
-    > EXEC master.dbo.sp\_configure 'xp\_cmdshell', 1
+    > EXEC master.dbo.sp_configure 'xp_cmdshell', 1
     > 
     > RECONFIGURE WITH OVERRIDE
     > ```

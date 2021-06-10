@@ -45,7 +45,7 @@ This topic explains how to translate a documentation file for Microsoft Dynamics
     | Field | Description |
     |-------|-------------|
     | Request name | Enter a name for the request. |
-    | File type | Select **Documentation**. This option is only available if you've turned on the **Dynamics 365 Translation Service - Documentation Translation Support** preview feature in LCS. For more information, see [Accessing LCS preview features](./translation-service-overview.md#accessing-lcs-preview-features). |
+    | File type | Select **Documentation**. |
     | Product name | Select a product name. If you accessed DTS from within an LCS project, this field is automatically filled in and is read-only. |
     | Product version | Select a product version. If you accessed DTS from within a LCS project, this field shows the default product version information from the project. However, you can select a different version. |
     | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business needs multiple target languages translated for the same source language, you can select all target languages in one request. Make sure you actually select the target languages using the checkbox next to the language name. This saves your time to submit multiple translation requests individually and you can also track all the target languages translation status in one request. Language names that are shown in **bold** type are General Availability (GA) languages for Microsoft Dynamics products. Therefore, Microsoft-trained machine translation (MT) systems are available in those languages. In other words, the MT system is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT system uses the general domain training. |
@@ -75,7 +75,7 @@ Currently, only files in Microsoft Word (.docx) format are accepted for translat
 ### Upload XLIFF or TMX translation memory files (Optional)
 If you have a TM in Translation Memory eXchange (TMX) format from a previous DTS request, and/or if you have a XLIFF TM from UI file translation, you can attach those TMs so that they can be recycled in the new document that you're submitting. Create a zip file that includes all the TM files. You can upload only one zip file. If you created the translation request for multiple target languages, you must select which target language the TM file is for. 
 
-![TM upload](./media/dts-tm-upload.png "TM upload")
+![TM upload](./media/dts-tm-upload-ua.png "TM upload")
 
 With the translation memory file you are providing, you have an option to decide whether you want to create a custom MT system trained with it. This option may take longer time to complete the request. You must choose Yes or No to be able to continue with the TM file upload.  
 
@@ -83,7 +83,7 @@ After you've finished uploading file, select **Submit** to start the translation
 
 After you submit the request, a new request ID is created on the DTS dashboard. If you submitted the request with multiple target languages, you will see each target language status is displayed in a separate line with the same request ID. Selecting a line on the dashboard will extend the dashboard window to the right to show the request summary information.
 
-To see the request status, click a request ID link on the dashboard. The **Request status** tab shows the source files list you uploaded with the summary of the request information..
+To view the request status, select a request ID link on the dashboard. The **Request status** tab shows the list of source files that you uploaded, together with a summary of the request information.
 
 ![Request status tab](./media/dts-request-status-ua.png "Request status tab")
 
@@ -97,7 +97,7 @@ When processing of your translation request is completed, you receive an email n
 For documentation translation requests, three types of output file are available after the translation process is completed:
 
 + **For translation review** – Download this file to review and edit the translated document strings in a table view. The file shows the source and target languages segments side by side.
-+ **Translated native format** – Download this file if you don't intend to review or edit the translations but to pick up the translated file ready to use. This file has the dame formatting style (title, headings, tables, etc.) as the source .docx file that you submitted, and it's ready to be used.
++ **Translated native format** – Download this file if you don't intend to review or edit the translations, but intend to use the translated file as it is. This file has the same formatting style (title, headings, tables, and so on) as the source .docx file that you submitted, and it's ready to be used.
 + **Translation memory** – Download this file to recycle these translations the next time that you submit a translation request that uses a newer version of the source document.
 
 ### Review and edit the translations
