@@ -103,3 +103,59 @@ respective tables folders are consistent. This means, both the change feed
 folder and the corresponding table are updated in the data lake at the exact
 same time by a single microservice.
 
+## Exploring change feeds folder in your data lake
+
+Change feeds are automatically enabled when you add tables to the data lake.
+
+When you add a table to the lake (or activate a table that’s deactivated), the
+system makes an initial copy of the data into the lake. You can see the table
+status in the UI as **Initializing**. When the initial copy is complete, the
+system changes the status to Running. When the table is in Running status,
+changes in Finance and Operations database are reflected in the data lake.
+Change feeds are added when the table is in Running status.
+
+No navigate to change folders, launch **Azure portal** and locate the storage
+account that is associated with your finance and Operations environment.
+
+**Change feed** folder is visible in the data lake folder structure as shown
+below.
+
+![](media/Change-feed-folders-examine-metadata.png)
+
+Navigate into the Change feed folder. You will see folders corresponding to each
+of the tables you have added to the lake. You will also see CDM metadata files
+that describe the change folder data as shown below.
+
+![](media/Change-feed-folders-rootfolder-top-level.png)
+
+CDM metadata files describe the structure of change feed data contained in
+folders. You can use the CDM metadata file to read/ consume change feed data
+using ETL tools without having to read raw CSV files. You can examine the
+metadata by choosing a metadata file and opening the file in a Text editor.
+
+![](media/Change-feed-folders-table-level-with-metadata.png)
+
+As you can notice from the metadata definitions, change feed folder contains the
+CDC change log details along with additional fields. Following diagram and the
+subsequent table provides details of the format of changes within Change
+folders.
+
+![](media/Change-feed-folders-change-data-format.png)
+
+
+| Field name                   | Contents                                                                                                                                                                                                                                                                                                     |
+|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Start_LSN                    | Identifies the Logical Sequence Number (LSN) of the transaction that changed source data in Finance and Operations database Please note that Start_LSN value is NOT enclosed in double quotes in CSV files and is a hexadecimal value as represented in the SQL server database. Ex. 0X00011E9F00000FB00001  |
+| End_LSN                      | This field is not used                                                                                                                                                                                                                                                                                       |
+| DML_Action                   | Identifies the change made to the record 1: DELETE 2: INSERT 3: BEFORE_UPDATE 4: AFTER_UPDATE                                                                                                                                                                                                                |
+| Seq_Val                      | Identifies the sequence number within the LSN that changed data in the source. Since a transaction may update more than one table in Finance and Operations database, the Seq_Val indicates the sequence number assigned by CDC to the table.                                                                |
+| Update_Mask                  | A bitmap that identifies the fields that changed similar to update mask in Change tracking. But observing the bitmap, you can identify the fields that changed                                                                                                                                               |
+| List of fields and values    | Remaining columns provide a list of fields as present in the table along with values. You should use the update mask to identify fields that changed as part of the transaction                                                                                                                              |
+| LastProcessedChange_DateTime | Provides the CDC Change Date time field from the Finance and Operations database Date Time is expressed in UTC time as per ISO 8601 Sample value: "2020-08-24T05:26:03.8622647Z" (including enclosed double quotes, with the default 7 digits of precision following the second value and Z signifying UTC). |
+| DataLakeModified_DateTime    | Provides Date and time of writing to Data lake expressed in UTC time as per ISO 8601 Sample value: "2020-08-24T05:26:03.8622647Z" (including enclosed double quotes, with the default 7 digits of precision following the second value and Z signifying UTC).                                                |
+
+## Best practices in using change feeds
+
+Change feeds is a powerful feature enabled by the export to Data lake feature in
+Finance and Operations.
+
