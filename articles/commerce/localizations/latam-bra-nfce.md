@@ -29,11 +29,11 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include[banner](../includes/banner.md)]
 
-This topic gives an overview of NFC-e (Nota Fiscal do Consumidor eletrônica) fiscal document functionality in Microsoft Dynamics 365 Commerce POS for Brazil, and explains how to issue NFC-es documents and print DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) fiscal receipts when completing retail sales of goods in Commerce POS for Brazil.
+This topic gives an overview of NFC-e (Nota Fiscal do Consumidor eletrônica) fiscal document functionality in Microsoft Dynamics 365 Commerce POS for Brazil and explains how to issue NFC-es documents and print DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) fiscal receipts when completing retail sales of goods in Commerce POS for Brazil.
 
-A NFC-e is an electronic fiscal document that is generated to register the sale of goods to a customer. It enables tax and fiscal control from tax authorities, and allows customers to verify the validity and authenticity of received fiscal documents. Sales of services are not supported.
+An NFC-e is an electronic fiscal document that is generated to register the sale of goods to a customer. It enables tax and fiscal control from tax authorities and allows customers to verify the validity and authenticity of received fiscal documents. Sales of services are not supported.
 
-Commerce functionality for Brazil supports the NFC-e electronic fiscal document model 65 format for Brazilian retailers. The NFC-e model 65 format is a national standard for electronic fiscal documents designed for retailing, and is based on the same technical standards as the NF-e (Nota Fiscal eletrônica) model 55 format. For more information about the NF-e format and process, see [Brazil NF-e process overview](../../finance/localizations/latam-bra-nf-e-process.md). 
+Commerce functionality for Brazil supports the NFC-e electronic fiscal document model 65 format for Brazilian retailers. The NFC-e model 65 format is a national standard for electronic fiscal documents designed for retailing and is based on the same technical standards as the NF-e (Nota Fiscal eletrônica) model 55 format. For more information about the NF-e format and process, see [Brazil NF-e process overview](../../finance/localizations/latam-bra-nf-e-process.md). 
 
 ## Supported scenarios
 
@@ -51,14 +51,14 @@ The following example scenarios show common Commerce actions associated with NFC
 
 1. Sign in to POS.
 1. Add product(s) to the cart.
-1. Add a named customer, or specify customer information manually. For more information, see [Manage customer information in POS for Brazil](latam-bra-customer-information.md).
+1. Add a named customer or specify customer information manually. For more information, see [Manage customer information in POS for Brazil](latam-bra-customer-information.md).
 1. Register payments for the transaction.
 1. Select the DANFE format (**Simplified** or **Detailed**), and then finalize the transaction.
 1. Verify that the information (including the QR code) on the printed DANFE receipt corresponds to the sale.
 
 ### Scenario 3: Make a cash-and-carry sale of goods in offline contingency mode
 
-The NFC-e offline contingency mode must be used when the a store internet connection is not available or if the SEFAZ (Secretaria de Estado de Fazenda) authorization service is down. When in offline contingency mode, the POS generates NFC-e documents locally and these documents are then transmitted to SEFAZ at a later time.
+The NFC-e offline contingency mode must be used when a store internet connection is not available or if the SEFAZ (Secretaria de Estado de Fazenda) authorization service is down. When in offline contingency mode, the POS generates NFC-e documents locally and these documents are then transmitted to SEFAZ at a later time.
 
 1. Sign in to POS.
 1. Add product(s) to the cart.
