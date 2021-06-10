@@ -1536,6 +1536,8 @@
           href: sysadmin/batch-server-overview.md
         - name: Create batch jobs
           href: sysadmin/tasks/create-batch-job.md
+        - name: Enabling automatic retries on batch jobs
+          href: sysadmin/retryable-batch.md
         - name: Copy a batch job
           href: sysadmin/copy-batch-job.md
         - name: Active batch periods
