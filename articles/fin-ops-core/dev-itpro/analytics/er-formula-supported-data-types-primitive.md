@@ -46,7 +46,7 @@ This topic provides information about the primitive data types that are supporte
 
 The *boolean* primitive data type contains a value that is evaluated as either *true* or *false*. You can use the reserved literal keywords **True** and **False** wherever a *boolean* expression is expected. The default value is *false*.
 
-The internal representation of a *boolean* is an *integer*. The *integer* value 0 (zero) is evaluated as *false*, and all other *integer* values are evaluated as *true*. When you [validate](general-electronic-reporting-formula-designer.md#TestFormula) a configured expression that returns a *boolean* in the [ER formula designer](er-advanced-formula-editor.md), the test result pane presents *0* (zero) when an expression returns *false*. Otherwise, the expression returns *1*.
+The internal representation of a *boolean* is an *integer*. The *integer* value 0 (zero) is evaluated as *false*, and all other *integer* values are evaluated as *true*. When you [validate](general-electronic-reporting-formula-designer.md#TestFormula) a configured expression that returns a *boolean* in the [ER formula designer](er-advanced-formula-editor.md), the test result pane presents *0* (zero) when an expression returns *false*. Otherwise, the test result pane presents *1*.
 
 A *boolean* has no implicit conversions. However, you can use the [TEXT](er-functions-text-text.md) function to explicitly converts a *boolean* to a *string*:
 
@@ -114,9 +114,13 @@ The *enumeration* primitive data type is a list of literals. You can use enumera
 
 An application *enumeration* can be used in expressions of any ER model mapping and ER format.
 
+The following illustration shows how you can add the **CustVendCorrectiveReasonCode** model enumeration to the editable ER data model.
+
 [![Configuring a model enumeration in the ER data model designer](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
 
 A model *enumeration* can be used in expressions of any ER model mapping and ER format that were created under a data model where the *enumeration* was introduced.
+
+The following illustration shows how you can add the **List of Natura reverse charge subcategories** format enumeration to the editable ER format.
 
 [![Configuring a format enumeration in the ER format designer](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
 
@@ -124,15 +128,15 @@ A format *enumeration* can be used only in expressions of the ER format where th
 
 You must use the appropriate type of ER data sources to bring a specific enumeration to a configured ER component as a constant or as a value that the user who is running an ER solution defined in the dialog box at runtime.
 
-- Application enumeration
+- Application enumerations can be accessed by using the **Dynamics 365 for Operations \ Enumeration** and **General \ User input parameters** data sources. The following illustration shows how you can add to the editable ER format the **appenumNoYes** and **uipNoYes** data sources that refer to the **NoYes** application enumeration.
 
     [![Adding application enumeration data sources in the ER format designer](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
 
-- Data model enumeration
+- Data model enumerations can be accessed by using the **Data model \ Enumeration** and **Data model \ Enumeration user input parameters** data sources. The following illustration shows how you can add to the editable ER format the **CustVendCorrectiveReasonCode** data source that refers to the **CustVendCorrectiveReasonCode** data model enumeration.
 
     [![Adding model enumeration data sources in the ER format designer](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
 
-- Format enumeration
+- Format enumerations can be accessed by using the **Format \ Enumeration** and **Format \ Enumeration user input parameters** data sources. The following illustration shows how you can add to the editable ER format the **NaturaReverseCharge** data source that refers to the **Natura reverse charge subcategories** format enumeration.
 
     [![Adding format enumeration data sources in the ER format designer](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
 
