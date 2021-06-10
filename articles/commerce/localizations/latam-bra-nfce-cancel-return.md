@@ -83,3 +83,14 @@ In addition to the [common list of custom fields for DANFE](latam-bra-nfce.md#da
 
 ## Additional resources
 
+[Set up and deploy Commerce localization for Brazil](latam-bra-deployment.md) 
+
+[Commerce localization for Brazil](latam-bra-commerce-localization.md) 
+
+[NFC-e fiscal document functionality in Commerce POS for Brazil](latam-bra-nfce.md)
+
+[Manage customer information in POS for Brazil](latam-bra-customer-information.md)
+
+[Postponed registration of NFC-e documents issued in offline contingency mode](latam-bra-nfce-contingency-mode.md)
+
+[Post Brazilian fiscal documents via retail statements in Commerce headquarters](latam-bra-retail-statements.md)
