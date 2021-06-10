@@ -30,6 +30,8 @@ This topic describes how to extend decimal point precision for selected data typ
 
 Extended data types are hierarchical and inherit behavior from the data type they extend. When changing the number of decimals for one extended data type, the number of decimals on all derived extended data types will follow. In other words, if you find an extended data type where **NoOfDecimalsIsExtensible** is false, then check the parent extended data type, as the number of decimals might be extensible in this wider scope.
 
+Important: the maximum number o decimals that you can extend any of the data type below is 6 due to database constraints
+
 ## Weight
 Weight data can be maintained with a maximum of two decimals by default. 
 If you require the ability to enter, maintain, and view weight data with a maximum precision of six decimals, you must extend the decimal point precision for the **WeightBase** extended data type.
