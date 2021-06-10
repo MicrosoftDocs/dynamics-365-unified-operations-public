@@ -43,20 +43,20 @@ Before you set up the system, we recommend that you define a strategy for workin
 - Do warehouse workers require different reason code behavior on mobile scanners? If the answer is yes, you can create more menu items and assign them to different people.
 - Should the reason codes drive the financial offset account posting?
 
-## Where reason codes apply
-
-You can create multiple reason code policies, and each reason code policy can have two counting reason code types (Optional and Mandatory). The counting reason code policies can be used at the warehouse level or the item level.
-
 > [!NOTE]
 > Some of the following descriptions requires additional feature management enablement before you can use all the functionality. Please enable the *Post on-hand adjustments using configurable reason codes connected to offset accounts* feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
 >
 >- **Module:** *Warehouse management*
 >- **Feature name:** *Post on-hand adjustments using configurable reason codes connected to offset accounts*
 
-## Set up reason code policies
+## How to set up reason codes
+
+### Set up reason code policies
+
+You can create multiple reason code policies which will drive when and how counting reason codes gets applied. Each reason code policy can have two counting reason code types (Optional and Mandatory). The counting reason code policies can be used at the warehouse level or the item level.
 
 1. Select **Inventory management** \> **Setup** \> **Inventory** \> **Counting reason code policies**, and create a new reason code policy.
-2. In the **Counting reason code type** field, select either **Mandatory** or **Optional** to specify whether selection of a reason code should be an optional or mandatory action in one of the following counting journals:
+2. In the **Counting reason code type** field, select either **Mandatory** or **Optional** to specify whether selection of a reason code should be an optional or mandatory action in one of the following inventory adjustment processes:
 
     - Cycle Count (mobile device)
     - Spot Count (mobile device)
@@ -64,12 +64,12 @@ You can create multiple reason code policies, and each reason code policy can ha
     - Adjustment In (mobile device)
     - Adjustment Out (mobile device)
     - Counting Journal (rich client)
+    - Quantity adjustment/Online counting (rich client) 
 
 You can also set up reason codes for individual warehouses and for products. The reason code setup for products can disregard the setup for warehouses.
 
-## Mandatory reason codes
-
-If the **Mandatory** parameter is set in the configuration of reason codes for warehouses or items, the counting journal can't be completed and closed until a reason code is provided.
+>[!Note]
+>If the **Mandatory** parameter is set in the configuration of reason codes for warehouses or items, the counting journal can't be completed and closed until a reason code is provided.
 
 ### Set up Counting reason code policies for warehouses
 
@@ -100,10 +100,9 @@ If the **Mandatory** parameter is set in the configuration of reason codes for w
 > **Counting reason codes** with a assigned **Offset account** will via a counting journal posting result in using the assigned offset account rather than the defined posting profile. 
 > In the [Set up the mobile device menu item for Adjustment in and Adjustment out](#Setup-Adjustment-In-Out) section later in this topic you can read more about the use of the **Counting reason code groups**.
 
+### Set up reason codes for mobile device menu items
 
-### Use reason codes in counting journals
-
-In a counting journal, you can add reason codes for counts of the following types:
+You can configure the use of reason codes for the following on/hand adjustment types:
 
 - Cycle Count
 - Spot Count
@@ -111,29 +110,12 @@ In a counting journal, you can add reason codes for counts of the following type
 - Adjustment In
 - Adjustment Out
 
-Reason codes are added to the journal lines in counting journals of the **Counting journal** type.
-
-1. Select **Inventory management** \> **Journal entries** \> **Item counting** \> **Counting**.
-2. In the line details of the counting journal, in the **Counting reason code** field, select an option.
-
-### View the counting history as it's recorded by reason codes
-
-- Select **Inventory management** \> **Inquiries and reports** \> **Counting history**, and then, in the **Counting reason code** field, view the counting history that has been recorded through a reason code.
-
-### Use a reason code for a quantity adjustment
-
-1. On the **On-hand inventory** page, select **Adjust quantity**. You can open the **On-hand inventory** page in several ways. For example, select **Inventory management** \> **Inquiries and reports** \> **On-hand inventory**.
-2. Select **Adjust quantity**, and then, in the **Counting reason code** field, select a reason code.
-
-### Configure reason codes for mobile device menu items
-
-You can configure reason codes for any type of count on a mobile device menu item. The configuration of the mobile device menu item includes the following information:
-
+In general the configuration of the mobile device menu item includes the following information:
 - Whether the reason code is shown to the mobile device worker during counting.
 - The default reason code that is shown on a mobile device menu item.
 - Whether the user can edit the reason code.
 
-### Set up reason codes on a mobile device
+#### Set up the mobile device menu item for a counting process
 
 1. Select **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
 2. On the **Cycle count** tab, select **Cycle counting**.
@@ -144,16 +126,7 @@ You can configure reason codes for any type of count on a mobile device menu ite
 > [!NOTE]
 > The **Cycle counting** button can be enabled on any mobile device menu item where counting can be done. Example include the menu items for spot counts, user-directed work, and system-directed work.
 
-### Cycle count approvals
-
-Before a count is approved, the user can change the reason code that is associated with the count. When the count is approved, the reason code is entered on the counting journal lines.
-
-### Modify cycle count approvals
-
-1. Select **Warehouse management** \> **Cycle counting** \> **Cycle count work pending review**.
-2. Select **Cycle counting**, and then, in the **Reason code** field, select a new reason code.
-
-## <a name="Setup-Adjustment-In-Out"></a> Set up the mobile device menu item for Adjustment in and Adjustment out
+#### <a name="Setup-Adjustment-In-Out"></a> Set up the mobile device menu item for Adjustment in and Adjustment out
 
 1. Select **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**, and then select **Adjustment in** or **Adjustment out**.
 2. Set the **Use existing work** option to **No**.
@@ -167,5 +140,33 @@ The following fields will be added to the mobile device menu item when **Adjustm
 - Counting reason code group
 
 From **Inventory management** \> **Setup** \> **Inventory** \> **Counting reason code groups** you can define a group which can get assigned to the mobile device menu item **Counting reason code** field. Assigning a **Counting reason code group** value for a **Adjustment in** and **Adjustment out** mobile device menu item limits the selection of the counting reason codes within the group as part of the Warehouse management mobile app processing.
+
+
+
+## Processing with the use of counting reason code
+When using the Warehouse management mobile app the reason codes gets recorded and used right away as part of the following counting journal posting unless a counting approval process has been defined.  
+
+### Cycle count approvals
+
+Before a count is approved, the user can change the reason code that is associated with the count. When the count is approved, the reason code is entered on the counting journal lines.
+
+#### Modify cycle count approvals
+
+1. Select **Warehouse management** \> **Cycle counting** \> **Cycle count work pending review**.
+2. Select **Cycle counting**, and then, in the **Reason code** field, select a new reason code.
+
+Reason codes are added to the journal lines in counting journals of the **Counting journal** type.
+
+1. Select **Inventory management** \> **Journal entries** \> **Item counting** \> **Counting**.
+2. In the line details of the counting journal, in the **Counting reason code** field, select an option.
+
+### View the counting history as it's recorded by reason codes
+
+- Select **Inventory management** \> **Inquiries and reports** \> **Counting history**, and then, in the **Counting reason code** field, view the counting history that has been recorded through a reason code.
+
+### Use a reason code for a quantity adjustment/Online counting
+
+1. On the **On-hand list** page, select **Quantity adjustment**. You can open the **On-hand inventory** page in several ways. For example, select **Inventory management** \> **Inquiries and reports** \> **On-hand list**.
+2. Select **Quantity adjustment**, and then, in the **Counting reason code** field, select a reason code.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
