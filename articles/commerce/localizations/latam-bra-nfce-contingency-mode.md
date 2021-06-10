@@ -53,4 +53,14 @@ To authorize an NFC-e document issued in offline contingency mode, follow these 
 
 ## Additional resources
 
+[Set up and deploy Commerce localization for Brazil](latam-bra-deployment.md) 
 
+[Commerce localization for Brazil](latam-bra-commerce-localization.md) 
+
+[NFC-e fiscal document functionality in Commerce POS for Brazil](latam-bra-nfce.md)
+
+[Manage customer information in POS for Brazil](latam-bra-customer-information.md)
+
+[Cancellation and return of NFC-e documents in Commerce POS for Brazil](latam-bra-nfce-cancel-return.md)
+
+[Post Brazilian fiscal documents via retail statements in Commerce headquarters](latam-bra-retail-statements.md)
