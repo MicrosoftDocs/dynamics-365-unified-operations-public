@@ -103,34 +103,34 @@ However, there are several important concepts that must be understood:
 
 See a [sample Synapse template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/SynapseToSQL_ADF) that can be used to incrementally ingest data into a SQL based data warehouse.
 
-### Simplify BYOD based ETL pipelines 
+### Simplify BYOD-based ETL pipelines 
 
-If you are using BYOD feature today, you may rely on exporting entities based on DMF system tables or Batch tables. You may be using export job execution data contained within DMF system tables to identify time periods of export jobs. Your downstream jobs may be triggered using job execution status and details that are obtained from DMF tables.
+If you are using the [Bring your own database (BYOD)](../analytics/export-entities-to-your-own-database.md) feature today, you may rely on exporting entities based on DMF system tables or Batch tables. You may be using export job execution data contained within DMF system tables to identify time periods of export jobs. Your downstream jobs may be triggered using job execution status and details that are obtained from DMF tables.
 
 You can simplify the orchestration pipeline by consuming change feeds.
 
-### Use time stamps in Tables folder if your Data marts only need to be updated daily/ intra-day
+### Use time stamps in Tables folder if your data marts only need to be updated daily/intra-day
 
 While change feeds are a powerful feature, constructing and maintaining a near real-time data mart refresh process is complex. While modern ETL tools such as Azure Data Factory simplify the process of building and maintaining them, you may still need to invest in building and running your pipeline.
 
-If your users expect to see Data marts updated daily or several times a day, triggering a full refresh may be an economical alternative. This may be the case especially if the volume of data is low or moderate.
+If your users expect to see data marts updated daily or several times a day, triggering a full refresh may be an economical alternative. This may be the case especially if the volume of data is low or moderate.
 
-### Using change feeds to perform Table level consistency checks 
+### Using change feeds to perform table-level consistency checks 
 
 You can use the change feeds folder and the change fields in respective tables folders to perform consistency checks. These consistency checks will enable you
 
-### Change feeds to Audit/verify master data updates
+### Change feeds to audit/verify master data updates
 
-Change feed folder is an exact replica of the CDC change logs maintained by Finance and Operations database. Changes made to master data in Finance and Operations are reflected in CDC, and by extension, within change feed folders in your data lake.
+Change feed folder is an exact replica of the CDC change logs maintained by the Finance and Operations database. Changes made to master data in Finance and Operations apps are reflected in CDC, and by extension, within change feed folders in your data lake.
 
 You can use reports built over change feed folder to audit and verify master data changes in the system.
 
 ### Purging Change feed folder periodically
 
-Change feed folder is not deleted by the Export to Data Lake process unless you are re-initializing the data to recover from an error.
+The Change feed folder is not deleted by the Export to Data Lake process, unless you are re-initializing the data to recover from an error.
 
-Since tables continue to add changes while they are in running mode. Change feed folders will continue to grow in size in the data lake. (It should be noted that the cost of retaining data in the lake is a fraction of the cost compared to that of a SQL database – so the cost of growing data may not be a major concern)
+Since tables continue to add changes while they are in running mode, Change feed folders will continue to grow in size in the data lake. (It should be noted that the cost of retaining data in the lake is a fraction of the cost compared to that of a SQL database – so the cost of growing data may not be a major concern.)
 
-If you do want to reduce the amount of data stored in the lake, you can delete change log from your data lake on a periodic basis, for an example, on a monthly basis. You can run a job that deletes change log files that have not been modified for say, 90 or 180 days.
+If you do want to reduce the amount of data stored in the lake, you can delete change log from your data lake on a periodic basis, for example, on a monthly basis. You can run a job that deletes change log files that have not been modified for say, 90 or 180 days.
 
-Periodically deleting change log has no impact on data in the tables folder. However, if you do run consistency checks (see above), you may want to keep thechange log longer in order to facilitate consistency checks.
+Periodically deleting change log has no impact on data in the tables folder. However, if you do run consistency checks (see above), you may want to keep the change log longer in order to facilitate consistency checks.
