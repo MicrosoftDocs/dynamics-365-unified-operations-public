@@ -1711,7 +1711,7 @@
             href: master-planning/monitor-forecast-accuracy.md
           - name: "Guide: Create a baseline forecast"
             href: master-planning/tasks/create-baseline-forecast.md
-        - name: -	Master planning with forecast
+        - name: Master planning with forecast
           items:
           - name: Forecast reduction keys
             href: master-planning/reduction-keys.md
