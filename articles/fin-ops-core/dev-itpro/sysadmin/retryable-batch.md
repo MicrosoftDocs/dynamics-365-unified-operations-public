@@ -36,6 +36,8 @@ There is no change to the custom batch jobs. In order to take advantage of the a
 ### How do I implement the retryable interface?
 Add the following code to your Batch class.
 
+For more information, see [Final methods and the Wrappable attribute](../extensibility/method-wrapping-coc.md).
+
 ```
   class TestBatchJob extends RunBaseBatch implements BatchRetryable
   {
@@ -46,11 +48,20 @@ Add the following code to your Batch class.
     }
  ```
  
- ### I am extending a Microsoft batch that is retryable, but my batch job is not. Will the retry trigger?
- As long as the extended job has the isRetryable set to false, the job will not be retried.
+### I am extending a Microsoft batch that is retryable, but my batch job is not. Will the retry trigger?
+As long as the extended job has the isRetryable set to false, the job will not be retried.
+
+### I marked my custom job as Retryable by mistake. Is there a way I can override without taking another code change?
+Yes, you can go to the **System administration > Setup > Batch class configuration overrides** page and override the retryable value to false. This will prevent further executions from being retried.
  
- ### I marked my custom job as Retryable by mistake. Is there a way I can override without taking another code change?
- Yes, you can go to the **System administration > Setup > Batch class configuration overrides** page and override the retryable value to false. This will prevent further executions from being retried.
- 
- ### I have many batch jobs? How do I discover all my batch jobs to implement the interface?
- Plug in Peter's github repo here.
+### I have many batch jobs? How do I discover all my batch jobs to implement the interface?
+Plug in Peter's github repo here.
+
+### What is the best practice for the execution time for a batch job?
+A batch job that has a shorter execution time will have a greater chance of completing successfully which will avoid the need for a retry.
+ 
+### What is the best practice for the transaction size for a batch job?
+A batch job that has a smaller transaction size will reduce the amount of work that could be lost due to a transient failure and that will ensure the need for a retry will not drastically increase the total execution time.
+
+### What does idempotent mean for a batch job?
+It means that a retry will not change or affect the overall result. For example, it means that something should only be done once won't be done more than once, such as once in the original run and again in the retry.
