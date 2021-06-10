@@ -56,7 +56,7 @@ A *boolean* has no implicit conversions. However, you can use the [TEXT](er-func
 > [!NOTE]
 > This conversion doesn't depend on the provided language and culture [context](er-design-multilingual-reports.md).
 
-Comparison [operators](er-formula-language.md#operators) are the only type of operator that can be used with the *boolean* data type. The following operators can be used to compare two *boolean* values: \<\> and =.
+Comparison [operators](er-formula-language.md#Operators) are the only type of operator that can be used with the *boolean* data type. The following operators can be used to compare two *boolean* values: \<\> and =.
 
 ## <a name="date"></a>Date
 
@@ -77,7 +77,7 @@ A *date* has no implicit conversions. However, you can use the following explici
 
 The [ADDDAYS](er-functions-datetime-adddays.md) function lets you add and subtract days from dates. In this way, you can move the date a specific number of days into the future and the past. The [DAYS](er-functions-datetime-days.md) function lets you subtract dates from each other and calculate the difference in days. For more information about the transformation of *date* values, see [List of ER functions in the Date and time category](er-functions-category-datetime.md).
 
-Comparison [operators](er-formula-language.md#operators) are the only type of operator that can be used with the *date* data type. The following operators can be used to compare two *date* values: \<\>, \<, \<=, =, \>, and \>=.
+Comparison [operators](er-formula-language.md#Operators) are the only type of operator that can be used with the *date* data type. The following operators can be used to compare two *date* values: \<\>, \<, \<=, =, \>, and \>=.
 
 ## <a name="datetime"></a>Datetime
 
@@ -106,7 +106,7 @@ A *datetime* has no implicit conversions. However, you can use the following exp
 
 For more information about the transformation of *datetime* values, see [List of ER functions in the Date and time category](er-functions-category-datetime.md).
 
-Comparison [operators](er-formula-language.md#operators) are the only type of operator that can be used with the *datetime* data type. The following operators can be used to compare two *datetime* values: \<\>, \<, \<=, =, \>, and \>=.
+Comparison [operators](er-formula-language.md#Operators) are the only type of operator that can be used with the *datetime* data type. The following operators can be used to compare two *datetime* values: \<\>, \<, \<=, =, \>, and \>=.
 
 ## <a name="enumeration"></a>Enumeration
 
@@ -142,7 +142,7 @@ You must use the appropriate type of ER data sources to bring a specific enumera
 
 An *enumeration* has no implicit conversions. However, you can use the [TEXT](er-functions-text-text.md) conversion function to convert an *enumeration* to a text string. This conversion isn't language dependent. To learn how you can associate an *enumeration* value with the appropriate language-specific labels, see the usage examples for the [LISTOFFIELDS](er-functions-list-listoffields.md) and [GETENUMVALUEBYNAME](er-functions-text-getenumvaluebyname.md) functions.
 
-Comparison [operators](er-formula-language.md#operators) are the only type of operator that can be used with the *enumeration* data type. The following operators can be used to compare two *enumeration* values: \<\> and =.
+Comparison [operators](er-formula-language.md#Operators) are the only type of operator that can be used with the *enumeration* data type. The following operators can be used to compare two *enumeration* values: \<\> and =.
 
 ## <a name="guid"></a>Guid
 
@@ -159,7 +159,7 @@ The following explicit conversion functions can be used:
 - [GUIDVALUE](er-functions-text-guidvalue.md)
 - [TEXT](er-functions-text-text.md)
 
-Comparison [operators](er-formula-language.md#operators) are the only type of operator that can be used with the *guid* data type. The following operators can be used to compare two *guid* values: \<\> and =.
+Comparison [operators](er-formula-language.md#Operators) are the only type of operator that can be used with the *guid* data type. The following operators can be used to compare two *guid* values: \<\> and =.
 
 ## <a name="integer"></a>Integer
 
@@ -175,7 +175,7 @@ Additionally, the following explicit conversion functions can be used:
 
 The range of an *integer* is \[-2,147,483,647 : 2,147,483,647\]. All integers of this range can be used as literals.
 
-All comparison and mathematical [operators](er-formula-language.md#operators) can be used with the *integer* data type.
+All comparison and mathematical [operators](er-formula-language.md#Operators) can be used with the *integer* data type.
 
 ## <a name="int64"></a>Int64
 
@@ -191,7 +191,7 @@ Additionally, the following explicit conversion functions can be used:
 
 The range of an *int64* is \[-9,223,372,036,854,775,807 : 9,223,372,036,854,775,807\].
 
-All comparison and mathematical [operators](er-formula-language.md#operators) can be used with the *int64* data type.
+All comparison and mathematical [operators](er-formula-language.md#Operators) can be used with the *int64* data type.
 
 ## <a name="real"></a>Real
 
@@ -210,7 +210,7 @@ A *real* has no implicit conversions. However, you can use the following functio
 - [TEXT](er-functions-text-text.md)
 - [VALUE](er-functions-conversion-value.md)
 
-All comparison and mathematical [operators](er-formula-language.md#operators) can be used with the *real* data type.
+All comparison and mathematical [operators](er-formula-language.md#Operators) can be used with the *real* data type.
 
 ## <a name="string"></a>String
 
@@ -242,7 +242,7 @@ For more about the transformation of *string* values, see [List of ER functions 
 
 A *string* can hold an indefinite number of characters.
 
-All comparison [operators](er-formula-language.md#operators) can be used with the *string* data type.
+All comparison [operators](er-formula-language.md#Operators) can be used with the *string* data type.
 
 ## Additional resources
 
