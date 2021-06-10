@@ -38,7 +38,7 @@ After running P-jobs and posting the retail statement, NFC-e (Nota Fiscal do Con
 
 NFC-e documents issued on POS are posted into Commerce headquarters through the posting of open retail statements in the **Retail and Commerce** module. Retail statements can contain both NFC-e and NF-e (Nota Fiscal eletrônica) transactions for returns. 
 
-In order to post a NFC-e document issued on POS, follow these steps. 
+In order to post an NFC-e document issued on POS, follow these steps. 
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 1. Run the **P-job** for the channel database.
@@ -57,7 +57,7 @@ For more information, see [Retail statements](../retail-statements.md).
 
 To view fiscal document details in Commerce headquarters, follow these steps. 
  
-1. To view a NFC-e document in Commerce headquarters, go to **Retail and Commerce \> Inquires and reports \> All fiscal documents**. The **All fiscal documents** form displays the same format seen when viewing a NF-e fiscal document model 55, showing the header, lines, and all attributes. For more information, see [Fiscal documents and fiscal document framework for Brazil](../../finance/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md). 
+1. To view an NFC-e document in Commerce headquarters, go to **Retail and Commerce \> Inquires and reports \> All fiscal documents**. The **All fiscal documents** form displays the same format seen when viewing a NF-e fiscal document model 55, showing the header, lines, and all attributes. For more information, see [Fiscal documents and fiscal document framework for Brazil](../../finance/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md). 
 
     > [!NOTE]
     > When viewed in Commerce headquarters, by default the **All fiscal documents** form only lists NFC-e model 65 fiscal documents. To view returns having NFC-e model 55 fiscal documents, the filter criteria must be changed. However, when viewed from the **General ledger** module, the **All fiscal documents** form lists all incoming and outgoing fiscal document models, including model 55 and model 65.
