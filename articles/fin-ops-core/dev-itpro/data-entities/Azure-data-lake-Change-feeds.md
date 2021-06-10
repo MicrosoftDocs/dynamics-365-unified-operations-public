@@ -68,7 +68,8 @@ changed in source tables.
 Change feeds folder provides a history of table data changes in the lake such
 that ETL processes can be designed for incremental update.
 
-##Change feeds explained
+## Change feeds explained
+
 Change feed feature relies on SQL Server Change Data Capture (CDC) feature –
 which is the native approach for capturing change data within the database
 layer. Change feed feature enables you to access the CDC change log in your Data
@@ -76,7 +77,7 @@ lake.
 
 Following diagram explains how change feeds operate in Finance and Operations.
 
-![](media/fbc7d73976f810db3f5936841dd9f83a.png)
+![](media/Change-feed-overview-picture.png)
 
 1.  Whenever a data change happens in the Finance and Operations, underlying
     database (AXDB) gets updated. The update is reflected in the database using
