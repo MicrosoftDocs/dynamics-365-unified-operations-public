@@ -1,5 +1,5 @@
 ---
-title: Guide: Modify a demand forecast manually
+title: "Guide: Modify a demand forecast manually"
 description: This topic describes how to modify the forecast for an item
 author: ChristianRytt
 ms.date: 08/12/2019

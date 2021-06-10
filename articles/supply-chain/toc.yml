@@ -1689,7 +1689,7 @@
           items:
           - name: Inventory forecasts
             href: master-planning/inventory-forecast.md
-          - name: Guide: Modify a demand forecast manually
+          - name: "Guide: Modify a demand forecast manually"
             href: master-planning/tasks/modify-demand-forecast-manually.md
         - name: Demand forecasting
           items:
@@ -1709,7 +1709,7 @@
             href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
           - name: Monitor forecast accuracy
             href: master-planning/monitor-forecast-accuracy.md
-          - name: Guide: Create a baseline forecast
+          - name: "Guide: Create a baseline forecast"
             href: master-planning/tasks/create-baseline-forecast.md
         - name: -	Master planning with forecast
           items:
