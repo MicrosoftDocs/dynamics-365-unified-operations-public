@@ -3,8 +3,8 @@
 
 title: Commerce localization for Brazil
 description: This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Brazil.
-author: josaw
-ms.date: 05/05/2021
+author: v-ankvik
+ms.date: 06/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 #ms.search.scope: Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -125,10 +125,24 @@ To learn about POS features that are available to customers in all countries or 
 
 The following Brazil-specific POS features are enabled after the Commerce localization for Brazil has been set up and deployed:
 
-- [Electronic Fiscal Document for Consumers in Brazil (NFC-e)](latam-bra-nfce.md).
-- [Customer information management for Brazil](latam-bra-customer-information.md).
-- [Cancellation and return of NFC-e](latam-bra-nfce-cancel-return.md).
-- [Postponed registration of NFC-e issued in contingency mode](latam-bra-nfce-contingency-sumbission.md).
-- [Posting and control of electronic fiscal documents](latam-bra-retail-statements.md).
+- NFC-e fiscal document functionality
+- Customer information management
+- Cancellation and return of NFC-e documents
+- Postponed registration of NFC-e issued in contingency mode
+- Posting and control of electronic fiscal documents
+
+## Additional resources
+
+[Set up and deploy Commerce localization for Brazil](latam-bra-deployment.md) 
+
+[NFC-e fiscal document functionality in Commerce POS for Brazil](latam-bra-nfce.md)
+
+[Manage customer information in POS for Brazil](latam-bra-customer-information.md)
+
+[Cancellation and return of NFC-e documents in Commerce POS for Brazil](latam-bra-nfce-cancel-return.md)
+
+[Postponed registration of NFC-e documents issued in offline contingency mode](latam-bra-nfce-contingency-mode.md)
+
+[Post Brazilian fiscal documents via retail statements in Commerce headquarters](latam-bra-retail-statements.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
