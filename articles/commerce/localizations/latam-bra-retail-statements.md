@@ -69,4 +69,14 @@ To view fiscal document details in Commerce headquarters, follow these steps.
 
 ## Additional resources
 
+[Set up and deploy Commerce localization for Brazil](latam-bra-deployment.md) 
 
+[Commerce localization for Brazil](latam-bra-commerce-localization.md) 
+
+[NFC-e fiscal document functionality in Commerce POS for Brazil](latam-bra-nfce.md)
+
+[Manage customer information in POS for Brazil](latam-bra-customer-information.md)
+
+[Cancellation and return of NFC-e documents in Commerce POS for Brazil](latam-bra-nfce-cancel-return.md)
+
+[Postponed registration of NFC-e documents issued in offline contingency mode](latam-bra-nfce-contingency-mode.md)
