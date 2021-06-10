@@ -4,7 +4,7 @@ title: Postponed registration of NFC-e documents issued in offline contingency m
 description: This topic gives an overview of the functionality for postponed registration of NFC-e documents issued in contingency mode in Microsoft Dynamics 365 Commerce POS.
 author: v-ankvik
 manager: annbe
-ms.date: 06/09/2021
+ms.date: 06/10/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
