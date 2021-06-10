@@ -85,4 +85,16 @@ On the license plate confirmation page, the system will show the quantity that i
 
 Alternatively, if too many license plates are being generated on inbound order registration, the value of the **License plate grouping policy** field can be changed to *License plate grouping*, a new unit sequence group can be assigned to the item, or the **License plate grouping** option for the unit sequence group can be inactivated.
 
+## When I run the Cancel product receipts from the inbound load, inventory transactions are not updated to the Registered status.
+
+### Issue description
+
+After you run the Cancel product receipts from the inbound load, the system automatically updates inventory transactions of status Received to Ordered.
+
+### Issue resolution
+
+Unlike packing slip cancellation from the outbound loads where inventory transactions retain in the status Picked, cancelling the product receipt from the inbound load doesn't restore the inventory transactions to the status of Registered. Therefore, after product receipt cancellation from the inbound load, the warehouse worker needs to register items quantities for loads again.
+
+For more information, see [Register item quantities arriving](inbound-load-handling.md#register-item-quantities-arriving).
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
