@@ -36,7 +36,7 @@ Commerce functionality for Brazil supports cancellation and return of sales issu
 
 An NF-e is an electronic fiscal document that is generated and printed to register the return of goods sold to a customer. It enables tax and fiscal control from tax authorities and allows customers to verify the validity and authenticity of the received fiscal documents. For more information about the NF-e process, see [Brazil NF-e process overview](../../finance/localizations/latam-bra-nf-e-process.md).
 
-It is only possible to cancel a NFC-e document if it is already authorized by the tax authority and if the goods and the customer are still in the establishment. The maximum deadline for cancelling an NFC-e document is up to 30 minutes after the granting of authorization for use. Once the NFC-e document cancellation time runs out, a return NF-e document must be issued to cancel a sale.
+It is only possible to cancel an NFC-e document if it is already authorized by the tax authority and if the goods and the customer are still in the establishment. The maximum deadline for cancelling an NFC-e document is up to 30 minutes after the granting of authorization for use. Once the NFC-e document cancellation time runs out, a return NF-e document must be issued to cancel a sale.
 
 ## Limitations
 
