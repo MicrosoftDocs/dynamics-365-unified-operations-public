@@ -95,11 +95,11 @@ If you have a requirement to update your data warehouse or data marts on near-re
 
 However, there are several important concepts that must be understood:
 
-1. Change feeds are constantly updated in the lake. Updates may happen in small batches that update the data every minute – or even sub-minute in case of tables that update frequently. You should not observe the change feed folder to trigger downstream jobs – instead, you should assume that change feeds do happen all the time.
+- Change feeds are constantly updated in the lake. Updates may happen in small batches that update the data every minute – or even sub-minute in case of tables that update frequently. You should not observe the change feed folder to trigger downstream jobs – instead, you should assume that change feeds do happen all the time.
 
-2. Your downstream jobs should be orchestrated on a periodic basis, and can be triggered as micro-batches.
+- Your downstream jobs should be orchestrated on a periodic basis, and can be triggered as micro-batches.
 
-3. You should rely on the LSN number as a marker – as opposed to replying on Change Date time stamps. Replying on the LSN number will ensure that you consume the changes in the same sequence that was committed in Finance and Operations database.
+- You should rely on the LSN number as a marker – as opposed to replying on Change Date time stamps. Replying on the LSN number will ensure that you consume the changes in the same sequence that was committed in Finance and Operations database.
 
 See a [sample Synapse template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/SynapseToSQL_ADF) that can be used to incrementally ingest data into a SQL based data warehouse.
 
