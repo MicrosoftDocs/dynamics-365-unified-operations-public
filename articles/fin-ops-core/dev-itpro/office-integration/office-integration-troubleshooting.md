@@ -139,6 +139,10 @@ If the entity is marked as “IsPublic=Yes” and has unique PublicEntityName an
 
 The Excel Add-In, Data Management Framework, and Power BI reporting are all designed to interact with data directly on the database level. Because there is no client to adjust Date and Time data to the time zone of the user, all Date and Time values are in UTC.
 
+### When is Skype integration supported?
+
+Skype integration is available for environments in the public cloud. For environments outside of the public cloud, including on-premises environments, Skype integration is not currently supported. 
+
 ## Troubleshooting issues
 
 ### Issue: During sign-in to the Excel Add-in, users receive an error message saying they "cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant"
