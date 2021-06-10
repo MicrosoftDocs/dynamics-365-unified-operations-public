@@ -132,7 +132,7 @@ When an email is going to be sent, the user will see the **How would you like to
 | Field                                                                  | Description |
 |------------------------------------------------------------------------|-------------|
 | Use an email app, such as Outlook                                      | Provides the user with a generated email (.eml) file. |
-| Use Exchange email server                                              | Uses the Exchange Online server associated with the tenant. On-premises Exchange servers are currently not supported for the **Exchange** mail provider. |
+| Use Exchange email server                                              | Uses the Exchange Online server associated with the tenant. The **Exchange** mail provider is currently not supported outside the public cloud, including on-premises environments. |
 | Use the system email client | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP. |
 | Do not ask again                                                       | If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open. |
 
