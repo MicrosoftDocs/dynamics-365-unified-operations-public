@@ -1,49 +1,32 @@
 ---
-# required metadata
-
-title: Parameters for master plan do not exist.
-description: Parameters for master plan do not exist.
-author: ankubik@microsoft.com
-manager: tfehr
-ms.date: 5/18/2021 12:00:00 AM
+title: Parameters for master plan do not exist
+description: Parameters for master plan do not exist
+author: ankubik
+ms.date: 06/10/2021
 ms.topic: troubleshooting
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: ReqTransPo
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: ankubik@microsoft.com
-ms.assetid: 
 ms.search.region: Global
-ms.author: ankubik@microsoft.com
-
+ms.author: ankubik
+ms.search.validFrom: 2021-06-10
+ms.dyn365.ops.version: 10.0.20
 ---
 
-# Parameters for master plan do not exist.
+# Parameters for master plan do not exist
 
 Error code: SYS25368
 
-The system displays the followign error message:
-	SYS25368
-
-
-
 ## Symptoms
-During firming planned order the system shows the following error message: > Parameters for master plan %1 do not exist.
+
+When you are trying to firm a planned order, you see the following error message:
+
+> Parameters for master plan %1 do not exist.
 
 ## Cause
-Because of the configuration issues the parameters for specified plan cannot be found.
+
+Due to configuration issues, the system can't find the settings for the specified plan.
 
 ## Resolution
-Go to Master Plans and check that the plan with specified id exists.
 
-
-
+Go to **Master planning \> Setup \> Plans \> Master plans** and make sure that a plan with specified name exists.

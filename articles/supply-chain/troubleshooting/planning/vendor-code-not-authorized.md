@@ -1,53 +1,52 @@
 ---
-# required metadata
-
-title: How to resolve - Vendor code %1 is not authorized for %2 on %3.
-description: How to resolve - Vendor code %1 is not authorized for %2 on %3.
-author: SmithaNataraj
-manager: tfehr
-ms.date: 3/24/2021 12:00:00 AM
+title: Vendor code isn't authorized for a specific product and date
+description: When you try to firm a planned order or add a line to a purchase order, you get the error:
+"Vendor code %1 is not authorized for %2 on %3."
+author: ankubik
+ms.date: 06/10/2021
 ms.topic: troubleshooting
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: ReqTransPO_ReqTransPoMarkFirm
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-submittedBy: niwang@microsoft.com
-
+ms.author: ankubik
+ms.search.validFrom: 2021-06-10
+ms.dyn365.ops.version: 10.0.20
 ---
 
-# How to resolve - Vendor code %1 is not authorized for %2 on %3.
+# Vendor code isn't authorized for a specific product and date
 
 Error code: SYP4881415
 
-When an item line is added to a purchase order, there display a warning or error message "Vendor code %1 is not authorized for %2 on %3."
-
 ## Symptoms
-When an item line is added to a purchase order, there display a warning or error message "Vendor code %1 is not authorized for %2 on %3."
+
+When you try to firm a planned order or add a line to a purchase order, you see the following error message:
+
+> Vendor code %1 is not authorized for %2 on %3.
 
 ## Cause
-This is because "Approved vendor check method" is either set as "Warning only" or "Not allowed" for the item.
+
+This error occurs because **Approved vendor check method** is set to *Warning only* or *Not allowed* for the specified product, and the vendor is not currently authorized to supply that product.
 
 ## Resolution
-1. Go to Product information management > Products > Released products, find the item
-2. Go to Released product details > Purchase tab
-3. Find field "Approved vendor check method" under field group "APPROVED VENDOR" field group, and set expected value
 
-Or
-1. Go to Product information management > Products > Released products, find the item
-2. Go to upper button groups  > Purchase, click "Setup" under "Approved vendor" button groups
-3. Create a new record to add vendor that is approved for the item
+To resolve this issue, either approve the vendor or disable the vendor check for the relevant product.
 
+To disable the vendor check for a product:
 
+1. Go to **Product information management > Products > Released products**
+1. Open the relevant product.
+1. Expand the **Purchase** FastTab.
+1. Set **Approved vendor check method** to a value other than *Warning only* or *Not allowed*.
 
+To approve a vendor for a product:
+
+1. Go to **Product information management > Products > Released products**
+1. Open the relevant item.
+1. On the Action Pane, open the **Purchase** tab and, from the **Approved vendor** group, select **Setup**.
+1. The **Approved vendor list page** opens. Add a new row to the grid and make the following settings for it:
+    - **Vendor** – Select the vendor that you want to approve for the current product.
+    - **Effective date** – Select the first date for which the vendor is approved.
+    - **Expiration date** – Select the last date on which the vendor will be approved.
+
+For more information, see [Approve vendors for specific products](dynamics365/supply-chain/procurement/tasks/approve-vendors-specific-products.md).

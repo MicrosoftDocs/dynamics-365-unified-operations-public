@@ -1,50 +1,37 @@
 ---
-# required metadata
-
-title: Posting results for journal with specific batch number. Not able to release lock in due time.
-description: Posting results for journal with specific batch number. Not able to release lock in due time.
-author: ankubik@microsoft.com
-manager: tfehr
-ms.date: 4/25/2021 12:00:00 AM
+title: Not able to release lock in due time
+description: When you are calculating GTE tax, you get the error: "Posting results for journal batch number %1 Not able to release lock in due time.".
+author: ankubik
+ms.date: 06/10/2021
 ms.topic: troubleshooting
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: Dialog_ReqCalcScheduleItemTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: ankubik@microsoft.com
-ms.assetid: 
 ms.search.region: Global
-ms.author: ankubik@microsoft.com
-
+ms.author: ankubik
+ms.search.validFrom: 2021-06-10
+ms.dyn365.ops.version: 10.0.20
 ---
 
-# Posting results for journal with specific batch number. Not able to release lock in due time.
+# Not able to release lock in due time
 
 Error code: SCM:AppLockLockNotReleasedBeforeTimeout
 
-The system displays the followign error message:
-	SCM:AppLockLockNotReleasedBeforeTimeout
-
-
-
 ## Symptoms
-When GTE tax calculating, there are error message: Posting results for journal batch number XXX Not able to release lock in due time.
 
+<!-- KFM: Spell out "GTE". Please confirm the error text (looks wrong) -->
 
+When you are calculating GTE tax, the system displays the followign error message:
 
+> Posting results for journal batch number %1 Not able to release lock in due time.
 
 ## Resolution
-The "ReaderWriterUserConnection" flight should be enabled. For Mooncake and on an IaaS (not Service Fabric) sandbox environments you can use following sql query:
 
+<!-- We do not normally document flighted features. Are we sure we want to mention this issue at all? What is "Mooncake"--is that a customer-facing term? Spell out "IaaS". What do I use the SQL query for? Is that to enable the flight? What do I do if I am not on "mooncake" or if I am on Service Fabric? -->
+
+You need to enable the flight called `ReaderWriterUserConnection`. To enable the flight on Mooncake and on an IaaS (not Service Fabric), use following SQL query:
+
+```sql
 BEGIN TRANSACTION;  
 
 -- Insert or update an enabled flight:
@@ -57,6 +44,4 @@ UPDATE SysFlighting SET enabled = 1, flightServiceId = 12719367 WHERE flightName
 
 
 COMMIT TRANSACTION;
-
-
-
+```
