@@ -34,7 +34,7 @@ This topic describes how to post Brazilian fiscal documents via retail statement
 
 After running P-jobs and posting the retail statement, NFC-e (Nota Fiscal do Consumidor eletrônica) fiscal documents issued through Commerce POS terminals can be viewed in Commerce headquarters on the **View XML message** form. 
 
-## Post retail statement
+## Post retail statements
 
 NFC-e documents issued on POS are posted into Commerce headquarters through the posting of open retail statements in the **Retail and Commerce** module. Retail statements can contain both NFC-e and NF-e (Nota Fiscal eletrônica) transactions for returns. 
 
