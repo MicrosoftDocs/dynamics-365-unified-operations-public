@@ -28,31 +28,32 @@ ms.dyn365.ops.version: Platform update 21
 
 This topic describes how to extend decimal point precision for selected data types. You can create extensions of specific extended data types of the type Real, to change the decimal point precision for certain scenarios. To change the decimal point precision, change the **NoOfDecimals** property as needed.
 
-Extended data types are hierarchical and inherit behavior from the data type they extend. When changing the number of decimals for one extended data type, the number of decimals on all derived extended data types will follow. In other words, if you find an extended data type where **NoOfDecimalsIsExtensible** is false, then check the parent extended data type, as the number of decimals might be extensible in this wider scope.
+Extended data types are hierarchical and inherit behavior from the data type they extend. When changing the number of decimal places for one extended data type, the number of decimal places on all derived extended data types will follow. In other words, if you find an extended data type where **NoOfDecimalsIsExtensible** is false, then check the parent extended data type, as the number of decimal places might be extensible in this wider scope.
 
 > [!IMPORTANT]
 > Due to database constraints, each of the data types described in this topic can have a maximum precision of six decimal places.
 
 ## Weight
 
-Weight data can be maintained with a maximum of two decimals by default.
+Weight data can be maintained with a maximum of two decimal places by default.
 
-If you require the ability to enter, maintain, and view weight data with a maximum precision of six decimals, you must extend the decimal point precision for the **WeightBase** extended data type.
+If you require the ability to enter, maintain, and view weight data with a maximum precision of six decimal places, you must extend the decimal point precision for the **WeightBase** extended data type.
 
 ## Product width, height and depth
 
-These physical dimensions can be maintained with a maximum of two decimals by default.
+These physical dimensions can be maintained with a maximum of two decimal places by default.
 
-If you require the ability to enter, maintain, and view this data with a maximum precision of six decimals, you must extend the decimal point precision for the **InventWidth**, **InventHeight**, and **InventDepth** extended data types respectively.
+If you require the ability to enter, maintain, and view this data with a maximum precision of six decimal places, you must extend the decimal point precision for the **InventWidth**, **InventHeight**, and **InventDepth** extended data types respectively.
 
 ## Product quantity
 
-Quantity data that is related to the procuring, consuming, producing, storing, and selling of products can be maintained with a maximum of two decimals by default.
+Quantity data that is related to the procuring, consuming, producing, storing, and selling of products can be maintained with a maximum of two decimal places by default.
 
-If you require the ability to enter, maintain, and view product quantities with a maximum precision of six decimals points, you must extend the decimal point precision of the **ProductQuantity**, **CostQuantity**, and **CAMMagnitude** extended data types.
+If you require the ability to enter, maintain, and view product quantities with a maximum precision of six decimal places, you must extend the decimal point precision of the **ProductQuantity**, **CostQuantity**, and **CAMMagnitude** extended data types.
 
-Bill of materials, formulas, and production orders allow maintaining quantities with four decimals by default. 
-If you require more than four decimals, extend the decimal point precision for the **BOMProductQuantity** extended data type.
+Bill of materials, formulas, and production orders allow maintaining quantities with four decimal places by default.
+
+If you require more than four decimal places, extend the decimal point precision for the **BOMProductQuantity** extended data type.
 
 ### Related data types
 
@@ -66,7 +67,7 @@ You can extend the **PriceQty** extended data type to change the decimal point p
 
 There are two extended data types that are used for storing both quantity data and other types of data. These data types must be extended separately.
 
-The **AmountQty** extended data type is used for storing and presenting both amounts and quantities. The **AmountQty** extended data type should be extended to the maximum amount of required decimals for both amounts and quantities.
+The **AmountQty** extended data type is used for storing and presenting both amounts and quantities. The **AmountQty** extended data type should be extended to the maximum amount of required decimal places for both amounts and quantities.
 
 For example, if amounts need to be maintained with three decimal places, but quantities still need to be maintained with two decimal places, then the data type should be extended to three decimal places.
 
@@ -76,7 +77,7 @@ For example, if quantities need to be maintained with four decimal places, but h
 
 ## Unit amounts
 
-By default, unit amounts including prices, line discount amounts, and line charge amounts can be maintained with a maximum of two decimals.
+By default, unit amounts including prices, line discount amounts, and line charge amounts can be maintained with a maximum of two decimal places.
 
 If you require the ability enter, maintain, and view unit amounts with a maximum precision of six decimal places, you must extend the decimal point precision of the **UnitAmountCur**, **UnitAmountMST**, and **CostPriceNonMonetary** extended data types.
 
@@ -86,7 +87,7 @@ If you require a decimal point precision of more than four, you should also exte
 
 There are five extended data types that are used for storing both unit amount data and other types of data.
 
-The **PriceDiscAmount** extended data type is used for storing and presenting amounts and unit amounts. The **PriceDiscAmount** extended data type should be extended to the maximum amount of required decimals points for both amounts and unit amounts.
+The **PriceDiscAmount** extended data type is used for storing and presenting amounts and unit amounts. The **PriceDiscAmount** extended data type should be extended to the maximum amount of required decimal places for both amounts and unit amounts.
 
 For example, if amounts need to be maintained with three decimal places, but unit amounts need to be maintained with four decimal places, the data type should be extended to four decimal places.
 
@@ -96,7 +97,7 @@ The extended data types should be extended to the maximum amount of required dec
 
 ## Amounts
 
-Amounts, including unit amounts, can be maintained with a maximum of two decimals by default.
+Amounts, including unit amounts, can be maintained with a maximum of two decimal places by default.
 
 If you require the ability to enter, maintain, and view amounts including unit amounts with a precision of maximum six decimal places, you must extend the decimal point precision of the **Amount**, **AmountMST**, and **CostAmountNonMonetary** extended data types.
 
@@ -106,17 +107,17 @@ If you require a different precision for unit amounts other than for amount, fol
 
 There are three extended data types that are used for storing amount data and other types of data. This means that they must be extended separately.
 
-The **AmountQty** extended data type is used for storing and presenting amounts and quantities. The **AmountQty** extended data type should be extended to the maximum amount of required decimals for both amounts and quantities.
+The **AmountQty** extended data type is used for storing and presenting amounts and quantities. The **AmountQty** extended data type should be extended to the maximum amount of required decimal places for both amounts and quantities.
 
 For example, if amounts need to be maintained with three decimal places, but quantities still need to be maintained with two, then the data type should be extended to three decimal places.
 
-The **PriceDiscAmount** extended data type is used for storing and presenting amounts and unit amounts. The **PriceDiscAmount** extended data type should be extended to the maximum amount of required decimals points for amounts and unit amounts.
+The **PriceDiscAmount** extended data type is used for storing and presenting amounts and unit amounts. The **PriceDiscAmount** extended data type should be extended to the maximum amount of required decimal places for amounts and unit amounts.
 
 For example, if amounts need to be maintained with three decimal places, but unit amounts need to be maintained with four decimal places, then the data type should be extended to four decimal places.
 
 The **MarkupValue** extended data type is used for storing and presenting amounts, unit amounts, and percentages.
 
-The extended data types should be extended to the maximum amount of required decimals points for amounts, unit amounts, and percentages.
+The extended data types should be extended to the maximum amount of required decimal places for amounts, unit amounts, and percentages.
 
 For example, if amounts need to be maintained with three decimal places, unit amounts need to be maintained with four decimal places, and percentages should remain with two decimal places, then the data type should be extended to four decimal places.
 
