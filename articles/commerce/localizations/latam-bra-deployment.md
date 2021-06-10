@@ -4,7 +4,7 @@
 title: Set up and deploy the Dynamics 365 Commerce localization for Brazil
 description: This topic covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Brazil.
 author: v-ankvik
-ms.date: 06/03/2021
+ms.date: 06/10/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -90,7 +90,7 @@ To set up a fiscal establishment and NF-e (Nota Fiscal Eletrônica) federal para
 1. Select the appropriate digital certificate for authentication with the tax authority service and digital signing of fiscal documents.
 
     > [!NOTE]
-    > The certificate that is configured on the **Fiscal establishment** page is used for NFC-e (Nota Fiscal de Consumidor Eletrônica) documents that are issued in POS in offline contingency mode and then submitted for authorization through Commerce headquarters. To enable fiscal documents to be signed in offline contingency mode, you must install a certificate in the offline certificate storage of the POS.
+    > The certificate that is configured on the **Fiscal establishment** page is used for NFC-e (Nota Fiscal de Consumidor Eletrônica) documents that are issued in POS in offline contingency mode and then submitted for authorization through Commerce headquarters. To enable fiscal documents to be signed in offline contingency mode, you must install a certificate in the offline certificate storage of the POS. For more information, see [Make a cash-and-carry sale of goods in offline contingency mode](latam-bra-nfce.md#scenario-3-make-a-cash-and-carry-sale-of-goods-in-offline-contingency-mode) and [Postponed registration of NFC-e issued in contingency mode](latam-bra-nfce-contingency-mode.md).
 
 1. Under **NF-E WEB SERVICE**, in the **Environment** field, select **Testing** or **Production.**
 1. Under **NFC-E WEB SERVICE**, in the **Environment** field, select **Testing** or **Production.**
@@ -209,13 +209,13 @@ To set up the fiscal registration process in Commerce headquarters, follow these
     - ContingencyProvider.xml
 
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**.
-1. For each document provider that you just loaded the configuration for, create three connector functional profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update data mapping settings as required.
+1. For each document provider that you just loaded the configuration for, create connector functional profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update data mapping settings as required.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
 1. Create three connector technical profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update connection settings as required.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector group**.
 1. Create three fiscal connector groups, one for each connector functional profile that you created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Registration process**.
-1. Create a registration process. As registration steps, select the three fiscal connector groups that you just created.
+1. Create a registration process. As registration steps, select the fiscal connector groups that you just created.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
 1. Select the functionality profile that is linked to the store where the registration process should be activated, and then, on the **Fiscal registration process** FastTab, select the registration process that you just created. To enable registration of non-fiscal events in POS, on the **Functions** FastTab, set the **Audit** option to **No**.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
@@ -271,7 +271,7 @@ For more information about how to work with Key Vault storage, see [Get started 
 You can also use the [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature that supports failover to offline when Key Vault or Commerce headquarters isn't available. This feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
 
 > [!NOTE]
-> To enable NFC-e documents to be signed in offline contingency mode, you must install a certificate in the offline certificate storage of the POS.
+> To enable NFC-e documents to be signed in offline contingency mode, you must install a certificate in the offline certificate storage of the POS. For more information, see [Make a cash-and-carry sale of goods in offline contingency mode](latam-bra-nfce.md#scenario-3-make-a-cash-and-carry-sale-of-goods-in-offline-contingency-mode) and [Postponed registration of NFC-e issued in contingency mode](latam-bra-nfce-contingency-mode.md).
 
 #### Configure certificates so that they can be used in Retail Server
 
@@ -384,24 +384,14 @@ To enable the Cloud POS extension components to be loaded in the **extensions.js
 
 ## Additional resources
 
-[Brazilian localization scope](../../finance/localizations/latam-bra-scope.md)
+[Commerce localization for Brazil](latam-bra-commerce-localization.md) 
 
-[Commerce localization for Brazil](latam-bra-commerce-localization.md)
+[NFC-e fiscal document functionality in Commerce POS for Brazil](latam-bra-nfce.md)
 
-[Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md)
+[Manage customer information in POS for Brazil](latam-bra-customer-information.md)
 
-[Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md)
+[Cancellation and return of NFC-e documents in Commerce POS for Brazil](latam-bra-nfce-cancel-return.md)
 
-[Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md)
+[Postponed registration of NFC-e documents issued in offline contingency mode](latam-bra-nfce-contingency-mode.md)
 
-[Receipt templates and printing](../receipt-templates-printing.md)
-
-[Screen layouts for the point of sale (POS)](../pos-screen-layouts.md)
-
-[Get started with Azure Key Vault](/azure/key-vault/key-vault-get-started)
-
-[Set up the Azure Key Vault client](../../finance/localizations/setting-up-azure-key-vault-client.md)
-
-[User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md)
-
-[Manage secrets for retail channels](../dev-itpro/manage-secrets.md)
+[Post Brazilian fiscal documents via retail statements in Commerce headquarters](latam-bra-retail-statements.md)
