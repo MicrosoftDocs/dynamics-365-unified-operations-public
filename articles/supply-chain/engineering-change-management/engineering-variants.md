@@ -25,11 +25,15 @@ You can create one or more new variants of a product without copying any informa
 
 The following procure provides and example of how to create several variants that include the color dimension.
 
-1. Create the engineering product. Choose the category and the value of the first dimension (for example, blue) by selecting  **New \> Engineering product** on the **Products** tab on the **Released products** page in the engineering company.
-1. The product and the blue V-1 variant are created.
-1. Add a BOM and route to the variant if desired.
-1. On the **Released products** page, select **Product dimensions**.
-1. Create the required values for the color dimension (for example, white, yellow and green).
+1. Open the **Released products** page (for example, by going to **Engineering change management \> Common \> Released products**).
+1. On the Action Pane, open the **Product** tab and, from the **New** group, select **Engineering product**.
+1. The **New product** dialog opens. Select the appropriate **Engineering category**.
+1. If your selected engineering category includes variant dimensions, then you can set values for them now. (For this example, suppose the category has a **Color** dimension, which you now set to *Blue*.)
+1. Make other settings as needed, and select **OK** to create the product.
+1. The product and the blue V-1 variant are created, and the new product now opens.
+1. Add a BOM and route to the variant as needed.
+1. On the Action Pane, open the **Product** tab and, from the **Product master** group, select **Product dimensions**.
+1. The **Product dimensions** page opens. This page includes a tab for each available dimension. On each tab, add a row for each value you will support for each relevant dimension. (For this example, you might add rows on the **Color** tab for *White*, *Yellow*, and *Green*).
 1. Close the page and select **Released product variants**. Note that the first created variant (white V-1) appears.
 1. Select **Variants suggestions**.
 1. The system suggests variants with the created color values (for example, white V-1, yellow V-1, and green V-1).
