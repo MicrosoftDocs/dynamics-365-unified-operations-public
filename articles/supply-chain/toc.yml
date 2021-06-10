@@ -1683,32 +1683,38 @@
           href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
         - name: Collaborate with internal supply chain customers
           href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
-      - name: Demand forecasting
+      - name: Forecasting
         items:
-        - name: Demand forecasting overview
-          href: master-planning/introduction-demand-forecasting.md
-        - name: Demand forecasting setup
-          href: master-planning/demand-forecasting-setup.md
-        - name: Inventory forecasts
-          href: master-planning/inventory-forecast.md
-        - name: Import historical data for demand forecasts
-          href: master-planning/import-historical-data.md
-        - name: Generate a statistical baseline forecast
-          href: master-planning/generate-statistical-baseline-forecast.md
-        - name: Make manual adjustment to the baseline forecast
-          href: master-planning/manual-adjustments-baseline-forecast.md
-        - name: Authorize an adjusted forecast
-          href: master-planning/authorize-adjusted-forecast.md
-        - name: Monitor forecast accuracy
-          href: master-planning/monitor-forecast-accuracy.md
-        - name: Remove outliers from historical transaction data when calculating a demand forecast
-          href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
-        - name: Reduction keys
-          href: master-planning/reduction-keys.md
-        - name: Create a baseline forecast
-          href: master-planning/tasks/create-baseline-forecast.md
-        - name: Modify a demand forecast manually
-          href: master-planning/tasks/modify-demand-forecast-manually.md
+        - name: Demand and supply forecasting
+          items:
+          - name: Inventory forecasts
+            href: master-planning/inventory-forecast.md
+          - name: Guide: Modify a demand forecast manually
+            href: master-planning/tasks/modify-demand-forecast-manually.md
+        - name: Demand forecasting
+          items:
+          - name: Demand forecasting overview
+            href: master-planning/introduction-demand-forecasting.md
+          - name: Demand forecasting setup
+            href: master-planning/demand-forecasting-setup.md
+          - name: Generate a statistical baseline forecast
+            href: master-planning/generate-statistical-baseline-forecast.md
+          - name: Make manual adjustment to the baseline forecast
+            href: master-planning/manual-adjustments-baseline-forecast.md
+          - name: Authorize an adjusted forecast
+            href: master-planning/authorize-adjusted-forecast.md
+          - name: Import historical data for demand forecasts
+            href: master-planning/import-historical-data.md
+          - name: Remove outliers from historical transaction data when calculating a demand forecast
+            href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
+          - name: Monitor forecast accuracy
+            href: master-planning/monitor-forecast-accuracy.md
+          - name: Guide: Create a baseline forecast
+            href: master-planning/tasks/create-baseline-forecast.md
+        - name: -	Master planning with forecast
+          items:
+          - name: Forecast reduction keys
+            href: master-planning/reduction-keys.md
       - name: Troubleshoot master planning
         href: master-planning/troubleshoot-masterplanning.md
     - name: Mobile app
