@@ -1,10 +1,10 @@
 ---
 # required metadata
-title: Cancellation and return of NFC-e in POS for Brazil
+title: Cancellation and return of NFC-e documents in Commerce POS for Brazil
 description: This topic gives an overview of cancellation and return functionality for NFC-e (Nota Fiscal do Consumidor eletrônica) documents in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
 author: v-ankvik
 manager: annbe
-ms.date: 06/09/2021
+ms.date: 06/10/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.18
 
 ---
 
-# Cancellation and return of NFC-e in POS for Brazil
+# Cancellation and return of NFC-e documents in Commerce POS for Brazil
 
 [!include[banner](../includes/banner.md)]
 
