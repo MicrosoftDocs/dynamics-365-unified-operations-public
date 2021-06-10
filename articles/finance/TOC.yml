@@ -2438,14 +2438,86 @@
           items:
           - name: India withholding tax
             items: 
-            - name: Include GST when calculating tax deductions
-              href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
             - name: Include GST when calculating tax collections
               href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
             - name: Tax thresholds FAQ
               href: localizations/apac-ind-tax-thresholds.md  
-            - name: TCS on sale of goods
-              href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+            - name: India TCS
+              items:
+              - name: TCS on sale of goods
+                href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+            - name: India TDS
+              items: 
+              - name: Indian Tax Deducted at Source (TDS) overview
+                href: localizations/apac-ind-TDS-India-TDS-overview.md
+              - name: Include GST when calculating tax deductions
+                href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+              - name: Basic setup for TDS
+                items:           
+                - name: Set the TDS parameters
+                  href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+                - name: Set up TDS ledger accounts
+                  href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+                - name: Set up TDS registration numbers for legal entities
+                  href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                - name: Set up withholding tax authorities for the TDS tax type
+                  href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                - name: Set up tax components for the TDS tax type
+                  href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+                - name: Set up withholding tax codes for the TDS tax type
+                  href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                - name: Set up withholding tax settlement periods for the TDS tax type
+                  href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+                - name: Set up withholding tax reporting codes for the TDS tax type
+                  href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+                - name: Set up withholding tax codes for the TDS tax type
+                  href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md  
+                - name: Attach TDS tax codes to TDS tax groups and define the formula for calculating TDS
+                  href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+                - name: Record TDS concession certificate numbers
+                  href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+                - name: Set TDS parameters in Accounts payable and Accounts receivable
+                  href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+                - name: Set up payment schedules with TDS allocation
+                  href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+                - name: Set up payment fees for TDS authority payments
+                  href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+                - name: TDS group, PAN, and TAN information setup for vendors and customers
+                  href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+                - name: Formula designer and threshold limit for TDS calculation
+                  items:
+                - name: Formula designer for TDS calculations
+                  href: localizations/apac-ind-TDS-Formula-designer.md
+                - name: Threshold limit and exception threshold limit
+                  href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md 
+              - name: TDS calculation on invoices
+                items:
+                - name: TDS calculation on invoices
+                  href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+                - name: Calculate TDS on invoices using journals
+                  href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
+                - name: Calculate TDS invoices using purchase order form and sales order form
+                  href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
+                - name: TDS calculation on invoices from the Free text invoice page
+                  href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
+                - name: Split invoice functionality
+                  href: localizations/apac-ind-TDS-Split-invoice-functionality.md
+              - name: TDS calculation on payments and promissory notes
+                href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+              - name: TDS calculation on intercompany transactions
+                href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+              - name: TDS settlement process  
+                items:
+                - name: TDS calculation on payments and promissory notes
+                  href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                - name: TDS calculation on intercompany transactions
+                  href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                - name: Run the periodic TDS settlement process
+                  href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
+                - name: Settle TDS payments to TDS authority vendors and generate TDS challan
+                  href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
+                - name: View posted TDS payments and transactions for a TDS settlement period
+                  href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
         - name: Fixed assets
           items:
           - name: India fixed assets overview
@@ -2472,78 +2544,6 @@
             href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
           - name: Transfer of capital items to the fixed asset
             href: localizations/tasks/apac-ind-transfer-capital-items.md
-        - name: India TDS
-          items: 
-          - name: Indian Tax Deducted at Source (TDS) overview
-            href: localizations/apac-ind-TDS-India-TDS-overview.md
-          - name: Basic setup for TDS
-            items:           
-            - name: Set the TDS parameters
-              href: localizations/apac-ind-TDS-TDS-parameter-activation.md
-            - name: Set up TDS ledger accounts
-              href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
-            - name: Set up TDS registration numbers for legal entities
-              href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
-            - name: Set up withholding tax authorities for the TDS tax type
-              href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
-            - name: Set up tax components for the TDS tax type
-              href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
-            - name: Set up withholding tax codes for the TDS tax type
-              href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
-            - name: Set up withholding tax settlement periods for the TDS tax type
-              href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
-            - name: Set up withholding tax reporting codes for the TDS tax type
-              href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
-            - name: Set up withholding tax codes for the TDS tax type
-              href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md  
-            - name: Attach TDS tax codes to TDS tax groups and define the formula for calculating TDS
-              href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
-            - name: Record TDS concession certificate numbers
-              href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
-            - name: Set TDS parameters in Accounts payable and Accounts receivable
-              href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
-            - name: Set up payment schedules with TDS allocation
-              href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
-            - name: Set up payment fees for TDS authority payments
-              href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
-            - name: TDS group, PAN, and TAN information setup for vendors and customers
-              href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
-          - name: Formula designer and threshold limit for TDS calculation
-            items:
-            - name: Formula designer for TDS calculations
-              href: localizations/apac-ind-TDS-Formula-designer.md
-            - name: Threshold limit and exception threshold limit
-              href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md 
-          - name: TDS calculation on invoices
-            items:
-            - name: TDS calculation on invoices
-              href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
-            - name: Calculate TDS on invoices using journals
-              href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
-            - name: Calculate TDS invoices using purchase order form and sales order form
-              href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
-            - name: TDS calculation on invoices from the Free text invoice page
-              href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
-            - name: Split invoice functionality
-              href: localizations/apac-ind-TDS-Split-invoice-functionality.md
-          - name: TDS calculation on payments and promissory notes
-            href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
-          - name: TDS calculation on intercompany transactions
-            href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
-          - name: TDS settlement process  
-            items:
-            - name: TDS calculation on payments and promissory notes
-              href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
-            - name: TDS calculation on intercompany transactions
-              href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
-            - name: TDS settlement process
-              items: 
-              - name: Run the periodic TDS settlement process
-                href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
-              - name: Settle TDS payments to TDS authority vendors and generate TDS challan
-                href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
-              - name: View posted TDS payments and transactions for a TDS settlement period
-                href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
             - name: Record and update TDS certificate numbers and dates
               items:
               - name: Record TDS recoverable certificate numbers
