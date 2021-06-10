@@ -78,7 +78,7 @@ To initiate a return of sold goods, follow these steps.
 
 ## Simplified DANFE for model 55 fiscal receipt
 
-In addition to the [common list of custom fields for DANFE](latam-bra-nfce.md#danfe-fiscal-receipts), a simplified DANFE for model 55 fiscal receipt can include the following custom field:
+In addition to the [common list of custom fields for DANFE](latam-bra-nfce.md#danfe-fiscal-receipt-custom-fields), a simplified DANFE for model 55 fiscal receipt can include the following custom field:
 - **Barcode (Código de barras)** – You can add a barcode field for simplified DANFE for model 55 for returns.
 
 ## Additional resources
