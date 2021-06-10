@@ -4,7 +4,7 @@ title: NFC-e fiscal document functionality in Commerce POS for Brazil
 description: This topic gives an overview of NFC-e fiscal document functionality in Microsoft Dynamics 365 Commerce POS for Brazil.
 author: v-ankvik
 manager: annbe
-ms.date: 06/09/2021
+ms.date: 06/10/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -78,14 +78,14 @@ The operations for issuing Gift cards or Add to gift card are not subject to tax
 1. Register payments for the transaction.
 1. Select the DANFE format (**Simplified** or **Detailed**), and then finalize the transaction.
 1. Verify that the printed DANFE receipt does not include the gift card(s) along with the other goods sold.
-1. Verify that separate receipts fore each sold gift card is printed.
+1. Verify that separate receipts for each sold gift card are printed.
 
-## DANFE Fiscal Receipts
+## DANFE fiscal receipt custom fields
 
-**Fiscal receipts for Brazil** called "Documento Auxiliar da Nota Fiscal Eletrônica" (**DANFE**) can include additional information that was implemented by using custom fields:
+DANFE fiscal receipts can include additional information by implementing and using the following custom fields.
 
-- **Access key (Chave de acesso)** – Access key consisting of eleven blocks of four digits each.
-- **Authorization protocol (Protocolo de Autorização)** – The number that is obtained from SEFAZ while issuing NFC-e/NF-e.
+- **Access key (Chave de acesso)** – Access key consisting of 11 blocks of four digits each.
+- **Authorization protocol (Protocolo de Autorização)** – The number that is obtained from SEFAZ when issuing NFC-e or NF-e fiscal documents.
 - **Fiscal data of the issuer (Emitente)**:
   - Name - Corporate name of the fiscal establishment.
   - CNPJ - CNPJ number of the fiscal establishment.
@@ -96,7 +96,6 @@ The operations for issuing Gift cards or Add to gift card are not subject to tax
 - **Series(Série)** - Series of the electronic fiscal document.
 - **Type of operation (Saída / Entrada )** - Input or output type of the operation.
 - **Fiscal data of the customer (Destinatário)**:
-  - Not identified customer message (),
   - Name - Name of the recipient or corporation.
   - CPF/CNPJ/Foreigner ID - CPF/CNPJ number or foreigner ID of the recipient. 
   - Address - Address of the recipient.
