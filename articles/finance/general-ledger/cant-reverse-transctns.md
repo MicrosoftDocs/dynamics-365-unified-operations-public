@@ -2,7 +2,7 @@
 # required metadata
 
 title: Why can’t I reverse this transaction? 
-description: This topics discribes multiple reasons why transactions can't be reversed as well as listing solutions. 
+description: This topics describes multiple reasons why transactions can't be reversed as well as listing solutions. 
 author: kweekley
 ms.date: 06/12/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topics discribes multiple reasons why transactions can't be reversed as well as listing solutions. 
+This topics describes multiple reasons why transactions can't be reversed as well as listing solutions. 
 
 ## Symptom
 
@@ -201,7 +201,7 @@ Vouchers can’t be reversed for the following reasons.
 - The transaction’s accounting date is in a closed fiscal period.
   - If the transaction supports entry of a reversing date, the transaction can still be reversed by changing the reversal date to an open period. 
 - The transaction’s accounting date is in a fiscal year that has been closed. 
-  - The year-end close can be reversed and then the transaction can be reversed, but it might be faster to simply enter a reversing transaction manually in an open period. If a new transaction is posted into an open period withing the closed, you’ll need to close the year again. 
+  - The year-end close can be reversed and then the transaction can be reversed, but it might be faster to simply enter a reversing transaction manually in an open period. If a new transaction is posted into an open period within the closed year, you’ll need to close the year again. 
 - Acquisitions
   - If the acquisition occurred on a Purchase order vendor invoice.
   - The reversal must be done by entering a vendor credit note.
