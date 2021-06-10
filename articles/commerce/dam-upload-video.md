@@ -40,7 +40,7 @@ The Commerce site builder Media Library allows you to upload videos. You should 
 When uploading a video, the following information can be specified.
 
 - **Title, Description, Keywords**: Metadata of the video.
-- **Automatically generate closed captions**: Specifies whether closed captions should be automatically generated for the video.
+- **Automatically generate closed captions**: Specifies whether closed captions should be automatically generated for the video. (Supports only English language)
 - **Closed Caption**: Specifies the closed captions to be used.
 - **Regular Audio**: Specifies the regular audio track to be used.
 - **Thumbnail**: Specifies the thumbnail for the video. If not specified, it will be generated automatically.
