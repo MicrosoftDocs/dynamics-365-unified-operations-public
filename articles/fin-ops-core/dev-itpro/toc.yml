@@ -278,6 +278,8 @@
         href: data-entities/finance-data-azure-data-lake.md 
       - name: Make entity store available as a Data Lake 
         href: data-entities/entity-store-data-lake.md
+      - name: Change data in Azure Data Lake
+        href: data-entities/Azure-data-lake-Change-feeds.md
     - name: Database movement operations
       items:
       - name: Overview
