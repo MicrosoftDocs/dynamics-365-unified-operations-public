@@ -2544,12 +2544,12 @@
             href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
           - name: Transfer of capital items to the fixed asset
             href: localizations/tasks/apac-ind-transfer-capital-items.md
-            - name: Record and update TDS certificate numbers and dates
-              items:
-              - name: Record TDS recoverable certificate numbers
-                href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
-              - name: Update certificate numbers and dates for TDS transactions
-                href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+          - name: Record and update TDS certificate numbers and dates
+            items:
+            - name: Record TDS recoverable certificate numbers
+              href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
+            - name: Update certificate numbers and dates for TDS transactions
+              href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
       - name: Italy
         items:
         - name: Italy overview
