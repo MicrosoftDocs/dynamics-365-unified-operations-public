@@ -34,7 +34,7 @@ This topic gives an overview of the functionality for postponed registration of 
 
 The NFC-e offline contingency mode must be used when a store internet connection is not available or if the SEFAZ (Secretaria de Estado de Fazenda) authorization service is down. When in offline contingency mode, the POS generates NFC-e documents locally and these documents are then transmitted to SEFAZ at a later time.
 
-All NFC-e documents issued through POS terminals can be viewed in Commerce headquarters on the View XML message form after running P-jobs and posting the retail statement. The NFC-es that was issued on POS in offline contingency mode can then be submitted for authorization through Commerce Headquarters. 
+All NFC-e documents issued through POS terminals can be viewed in Commerce headquarters on the View XML message form after running P-jobs and posting the retail statement. The NFC-es that was issued on POS in offline contingency mode can then be submitted for authorization through Commerce headquarters. 
 
 ## View fiscal document details
  
