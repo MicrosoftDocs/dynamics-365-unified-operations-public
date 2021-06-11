@@ -70,7 +70,7 @@ CDM metadata files describe the structure of change feed data contained in folde
 
 As you can notice from the metadata definitions, change feed folder contains the CDC change log details along with additional fields. The following diagram and the subsequent table provides details of the format of changes within Change folders.
 
-![change feed folder contains the CDC change log details along with additional fields.](media/Change-feed-folders-change-data-format.png)
+![change feed folder contains the CDC change log details along with additional fields.](media/Change-feed-folders-change-data-format2.png)
 
 | Field name                   | Contents                                                                                                                                                                                                                                                                                                     |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
