@@ -43,8 +43,10 @@ To create an audience in Commerce site builder, follow these steps.
     > You can have up to 100 values in a list with up to 50 characters in each item.
 6. Once you are satisfied with your audience, select **Finish editing**. You can also select **Publish** if you want to make the audience available for use in a live target or publish it along with the target.
 
-Audiences can be created, edited and deleted in the **Audiences** tab in the left navigation pane.
-Suggestion - create everyone and no one to help with inclusions and exclusions.
+You can edit an audience by clicking on it's blue link in the **Audiences** tab. You can also select an audience here and select **View Assignments** to view the list of targets that are referencing it or select **Delete** to delete it.
+
+> [!NOTE]
+> Optionally you can create "everyone" and "no one" audiences to help with including and excluding audiences for targets.
 
 ## Targets
 Target is the user experience that will be shown to members of the chosen audience. You can target modules in the **Pages** tab or fragments in the **Fragments** tab.
@@ -65,8 +67,6 @@ Target scheduling
 *	How/when to create everyone/no one audiences
 *	Basic vs advanced preview
 *	C1 needs explicit cookie consent from C2 – need to include info on that module
-* Publish groups
-* localization
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
