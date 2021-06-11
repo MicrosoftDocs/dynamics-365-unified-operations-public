@@ -1,6 +1,6 @@
 ---
-title: Container packing strategy overview
-description: This topic presents a difference between container packing strategies. 
+title: Container packing strategies
+description: This topic describes the differences between container packing strategies and provides examples
 author: GalynaFedorova
 ms.date: 06/11/2021
 ms.topic: article
@@ -13,13 +13,13 @@ ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Container packing strategy overview
+# Container packing strategies
 
 A *container packing strategy* is a strategy that you can use to define item allocations across the containers. This topic explains the difference between the *Pack into all open containers* and *Pack into current container only* strategies.  
 
-The *Pack into all open containers* strategy indicates that the system must check all open containers that have already been created during the containerization cycle to make sure that the items will fit in any of them. During packing, the system checks each item to see whether it will fit into any of the already created containers. If the item won't fit into an existing container, the system creates a new container and continues until it completes packing the entire order. For example, suppose there are *n* ordered items that require containerization. In the worst case, each time the system processes an item that doesn't fit into any existing container, the system will perform (((n-1) × (n+1)) / 2) checks in total to evaluate whether it fits into the existing containers.
+- The *Pack into all open containers* strategy indicates that the system must check all open containers that have already been created during the containerization cycle to make sure that the items will fit in any of them. During packing, the system checks each item to see whether it will fit into any of the already created containers. If the item won't fit into an existing container, the system creates a new container and continues until it completes packing the entire order. For example, suppose there are *n* ordered items that require containerization. In the worst case, each time the system processes an item that doesn't fit into any existing container, the system will perform (((n-1) × (n+1)) / 2) checks in total to evaluate whether it fits into the existing containers.
 
-The *Pack into current container only* strategy indicates that the system must check the most recently created container to make sure that the item will fit into that container. During packing, the system checks each item to see whether it will fit in the most recently created container. If the item won't fit into that container, the system creates a new container and continues until it completes packing the entire order. For example, suppose there are *n* ordered items that require containerization. In the worst case, the system will perform (n-1) checks in total to evaluate whether it fits into the containers.
+- The *Pack into current container only* strategy indicates that the system must check the most recently created container to make sure that the item will fit into that container. During packing, the system checks each item to see whether it will fit in the most recently created container. If the item won't fit into that container, the system creates a new container and continues until it completes packing the entire order. For example, suppose there are *n* ordered items that require containerization. In the worst case, the system will perform (n-1) checks in total to evaluate whether it fits into the containers.
 
 ## Example of the container packing strategy flow
 
@@ -295,3 +295,7 @@ The following procedure lets you verify the shipments that have been created. Us
 1. Go to **Warehouse management \> Shipments \> All shipments**.
 1. Find and select the shipment that was created for the load you just released.
 1. On the Action Pane, open the **Transportation** tab and select **View containers**. Confirm that the items from sales orders were containerized into the two different containers.
+
+## Additional resources
+
+- [Containerization](wave-containerization.md)

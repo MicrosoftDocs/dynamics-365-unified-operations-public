@@ -113,6 +113,8 @@ To set up a container build template, follow these steps.
       - **Pack into all open containers** – The system evaluates whether the allocation line will fit in any container that was created during the containerization cycle.
       - **Pack into current container only** – The system only evaluates whether the allocation line will fit in the most recently created container.
 
+    For more information and examples about how to work with container packing strategies, see [Container packing strategies](container-packing-strategy-overview.md).
+
 1. To set up rules for packing allocation lines in containers, select **Mixing Logic Breaks**. For example, you can create a rule that will allow workers to pack allocation lines for two different items in the same container. To define a mixing rule, follow these steps:
 
     1. In the **Mixing Logic Breaks** page, select **New**.
