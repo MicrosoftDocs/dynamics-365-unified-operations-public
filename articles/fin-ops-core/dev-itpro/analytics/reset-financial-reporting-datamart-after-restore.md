@@ -559,7 +559,7 @@ Before getting started, be sure that all users close Report designer and exit th
 -- Attempt to delete integrated users
 	DECLARE @userId nvarchar(max)
 	DECLARE removeUserCursor CURSOR LOCAL FAST_FORWARD FOR
-	select UserID from Reporting.SecurityUser su join Reporting.SecurityUserIntegration sui on su.UserID = sui.ID
+	select UserID from Reporting.SecurityUser where UserID <> '00000000-0000-0000-0000-000000000002'
 	OPEN removeUserCursor
 	FETCH NEXT FROM removeUserCursor INTO @userId
 	WHILE @@FETCH_STATUS = 0
