@@ -3267,10 +3267,10 @@
               href: warehousing/wave-execution-notifications.md
             - name: Wave label printing
               href: warehousing/configure-wave-label-printing.md
-            - name: Container packing strategies
-              href: warehousing/container-packing-strategy-overview.md
             - name: Containerization
               href: warehousing/wave-containerization.md
+            - name: Container packing strategies
+              href: warehousing/container-packing-strategy-overview.md
           - name: Auto-update shipments
             href: warehousing/auto-update-shipment.md
           - name: Create a location profile
