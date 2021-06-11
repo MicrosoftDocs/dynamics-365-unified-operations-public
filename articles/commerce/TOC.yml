@@ -1248,6 +1248,16 @@
           href: localizations/latam-bra-commerce-localization.md
         - name: Set up and deploy Commerce localization for Brazil
           href: localizations/latam-bra-deployment.md
+        - name: NFC-e fiscal document functionality in Commerce POS for Brazil
+          href: localizations/latam-bra-nfce.md 
+        - name: Manage customer information in POS for Brazil
+          href: localizations/latam-bra-customer-information.md     
+        - name: Cancellation and return of NFC-e documents in Commerce POS for Brazil
+          href: localizations/latam-bra-nfce-cancel-return.md 
+        - name: Postponed registration of NFC-e documents issued in offline contingency mode
+          href: localizations/latam-bra-nfce-contingency-mode.md          
+        - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters 
+          href: localizations/latam-bra-retail-statements.md
       - name: Eastern Europe
         items: 
         - name: Common
