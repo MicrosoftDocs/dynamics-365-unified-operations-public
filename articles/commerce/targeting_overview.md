@@ -39,10 +39,8 @@ To create an audience in Commerce site builder, follow these steps.
 2. Give your audience a name and optionally add tags and a description. 
 3. Click on **Create** and **Add new rule block** on the the following page.
 4. Select a source, followed by the required segment and it's value(s). You can create rules with either AND conditions within a rule block or OR conditions between rule blocks. You can also move rule blocks up or down and delete both rules and rule blocks as needed.
-
-> [!NOTE]
-> You can have up to 100 values in a list with up to 50 characters in each item.
-
+    > [!NOTE]
+    > You can have up to 100 values in a list with up to 50 characters in each item.
 6. Once you are satisfied with your audience, select **Finish editing**. You can also select **Publish** if you want to make the audience available for use in a live target or publish it along with the target.
 
 Audiences can be created, edited and deleted in the **Audiences** tab in the left navigation pane.
