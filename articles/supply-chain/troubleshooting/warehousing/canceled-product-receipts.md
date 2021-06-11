@@ -1,16 +1,16 @@
 ---
 title: Canceled product receipts don't update transactions status to registered
 description: After you cancel product receipts on an inbound load, the system automatically updates the inventory transaction status from Received to Ordered
-author: perlynne
-ms.date: 4/11/2021
+author: GalynaFedorova
+ms.date: 06/11/2021
 ms.topic: troubleshooting
 ms.search.form: WMSPickingRegistration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: perlynne
-ms.search.validFrom: 2021-04-11
-ms.dyn365.ops.version: 10.0.19
+ms.author: v-gfedorova
+ms.search.validFrom: 2021-06-11
+ms.dyn365.ops.version: 10.0.20
 ---
 
 # Canceled product receipts don't update transactions status to registered
