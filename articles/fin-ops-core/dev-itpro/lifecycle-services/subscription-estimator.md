@@ -3,8 +3,8 @@
 
 title: Subscription estimator in Lifecycle Services (LCS)
 description: This topic explains how to use the Subscription estimator tool that is available in Lifecycle Services (LCS).
-author: angelmarshall
-ms.date: 03/25/2021
+author: ryan-mcculloch
+ms.date: 06/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tsmarsha
+ms.author: ryanmc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 12
 
@@ -47,14 +47,24 @@ Follow these steps to use the Subscription estimator tool.
 
 When there is a valid active estimate, the **Configure** button becomes available. You can use this button to request a production environment deployment.
 
+## Editing the estimate for multiple implementation projects
+
+1. Visit the Subscription Estimator tool for each implementation project and edit the active subscription estimate therein to apply the desired license allocation for that project.
+2. A subscription estimate can be edited from the Subscription estimator tool by selecting an estimate and clicking on the “Edit estimate” button
+    [![Subscription estimator edit button](./media/SubscriptionEstimatorWithEdit.jpg)](./media/SubscriptionEstimatorWithEdit.jpg)
+3. Enter the desired license count for each type of FnO license in the dialog box. By default, every subscription estimate will be created with the full count of all purchased licenses assigned to it. Customers cannot allocate more than the total number of licenses to a single estimate and cannot reduce the allocated amount to less than the minimum required by the Dynamics 365 Licensing policy.
+    [![Subscription estimator edit dialog](./media/SubscriptionEstimatorEditDialog.jpg)](./media/SubscriptionEstimatorWithEditDialog.jpg)
+4. Upon Save, a warning appears so make sure you read and agree.
+    [![Subscription estimator active edit warning](./media/SubscriptionEstimatorEditDialogWarning.jpg)](./media/SubscriptionEstimatorWithEditDialogWarning.jpg)
+
 > [!NOTE]
-> Although you can have multiple estimates, one estimate must be marked as **Active**. After the production environment has been deployed, or deployment of the environment has received sign-off, the active estimate is locked. To mark a different estimate as the active estimate, create a support request by using the Support portal in LCS.
+> Although you can have multiple estimates, one estimate must be marked as **Active**. After the production environment has been deployed, or deployment of the environment has received sign-off, the active estimate is locked. Any further changes to the active estimate or marking a new estimate as active may cause the production environment to be resized.
 
 ## Frequently asked questions
 
 ### Why isn't the **Configure** button for deploying a production environment available, even though there is an active estimate? And why does a warning message appear in the Action Center on the project dashboard?
 
-If you have multiple implementation projects, the **Configure** button might not be enabled and a warning message will appear in the Action Center regarding an insufficient number of licenses. Log a support request, and the Support team can help resolve this issue.
+If you have multiple implementation projects, the **Configure** button might not be enabled and a warning message will appear in the Action Center regarding an insufficient number of licenses. With the Edit estimate function, you can  edit an active subscription estimate within the Subscription Estimator tool to apply the desired license allocation for that project.
 
 ### Why does an error occur when I mark an estimate as **Active**?
 
@@ -66,21 +76,19 @@ This error occurs if transaction lines that are entered aren't within the limits
 
 ### How can I update my subscription if my production environment is deployed?
 
-The [Subscription estimator](subscription-estimator.md) is a required step before requesting production. Although you can have multiple estimates, one must be marked as  **Active**. The active subscription estimate is used to size the production environment. After the production environment has been deployed, or deployment of the environment has received sign-off, the active estimate is locked. To mark a different estimate as the active estimate, create a support request by using the Support portal in LCS. If you have an  increase in the licensing volume  of your project, you will need to create a new subscription estimator and log a support request to have it marked as Active. Resizing may be applicable based on the new subscription estimate.
+The [Subscription estimator](subscription-estimator.md) is a required step before requesting production. Although you can have multiple estimates, one must be marked as  **Active**. The active subscription estimate is used to size the production environment. After the production environment has been deployed, or deployment of the environment has received sign-off, the active estimate is locked. To edit active subscription estimate, click on the Edit estimate function within the Subscription Estimator tool to update your license allocation.
 
 ### What should I do to activate my subscription estimate if I have multiple projects in the same tenant?
 
-When you are implementing several projects in the same tenant, a warning indicating "*subscription estimate is not complete*" may appear in the Action Center of LCS. This error will indicate that the total number of estimated users for all implementation projects should not exceed the number of purchased licenses. This may happen if the sum of users on the active subscription estimates is superior to the tenant license count of the same type. To have this corrected, you should submit a support request to Microsoft as soon as possible, asking for the subscription estimations to be corrected, including the information about license allocation. With the help of the Support team, the process for the estimation edition will be enabled.
+When you are implementing several projects in the same tenant, a warning indicating "*subscription estimate is not complete*" may appear in the Action Center of LCS. This error will indicate that the total number of estimated users for all implementation projects should not exceed the number of purchased licenses. This may happen if the sum of users on the active subscription estimates is superior to the tenant license count of the same type. To edit active subscription estimate, click on the Edit estimate function within the Subscription Estimator tool to update your license allocation.
 
-Make sure that you have all the required licenses active before submitting the request and be aware that in cases were resizing of the production environment is needed, it may require downtime.
-
-> [!NOTE] 
-> FastTrack Solutions architects have no involvement in uploading or updating the Subscription Estimator. If you identify any warnings regarding the Subscription Estimator in LCS, follow the instructions above. If you continue to have issues, contact Microsoft Support. 
+> [!NOTE]
+> FastTrack Solutions architects have no involvement in uploading or updating the Subscription Estimator. If you identify any warnings regarding the Subscription Estimator in LCS, follow the instructions above. If you continue to have issues, contact Microsoft Support.
 
 If you receive any other error message or encounter any other issue, create a support request, and attach your active estimate so that the Support team can address the issue.
- 
- ## Additional resources
- [Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](../../fin-ops/get-started/subscription-overview.md)
 
+## Additional resources
+
+ [Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](../../fin-ops/get-started/subscription-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
