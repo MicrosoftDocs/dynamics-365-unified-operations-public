@@ -39,6 +39,8 @@ To create an audience in Commerce site builder, follow these steps.
 2. Give your audience a name and optionally add tags and a description. 
 3. Click on **Create** and **Add new rule block** on the the following page.
 4. Select a source, followed by the required segment and it's value(s). You can create rules with either AND conditions within a rule block or OR conditions between rule blocks. You can also move rule blocks up or down and delete both rules and rule blocks as needed.
+> [!NOTE]
+> You can have up to 100 values in a list with up to 50 characters in each item.
 5. Once you are satisfied with your audience, select **Finish editing**. You can also select **Publish** if you want to make the audience available for use in a live target or publish it along with the target.
 
 Audiences can be created, edited and deleted in the **Audiences** tab in the left navigation pane.
@@ -61,8 +63,6 @@ Target scheduling
 **	If they don’t want it, they will have to manually delete it.
 **	If they need different schedules per locale, they need to create different activities per locale.
 *	How/when to create everyone/no one audiences
-*	Since segment values will be stored in a cookie, we need to limit the size of the value for 3rd-parties. What is the limit?
-50 chars for values. Provider id maximum size: 20, Segment id maximum size: 20 and only allow letters, number and “-“ in provider and segment id.
 *	Basic vs advanced preview
 *	C1 needs explicit cookie consent from C2 – need to include info on that module
 * Publish groups
