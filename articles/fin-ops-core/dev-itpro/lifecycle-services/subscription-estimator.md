@@ -53,9 +53,9 @@ When there is a valid active estimate, the **Configure** button becomes availabl
 2. A subscription estimate can be edited from the Subscription estimator tool by selecting an estimate and clicking on the “Edit estimate” button
     [![Subscription estimator edit button](./media/SubscriptionEstimatorWithEdit.jpg)](./media/SubscriptionEstimatorWithEdit.jpg)
 3. Enter the desired license count for each type of FnO license in the dialog box. By default, every subscription estimate will be created with the full count of all purchased licenses assigned to it. Customers cannot allocate more than the total number of licenses to a single estimate and cannot reduce the allocated amount to less than the minimum required by the Dynamics 365 Licensing policy.
-    [![Subscription estimator edit dialog](./media/SubscriptionEstimatorEditDialog.jpg)](./media/SubscriptionEstimatorWithEditDialog.jpg)
+    [![Subscription estimator edit dialog](./media/SubscriptionEstimatorEditDialog.jpg)](./media/SubscriptionEstimatorEditDialog.jpg)
 4. Upon Save, a warning appears so make sure you read and agree.
-    [![Subscription estimator active edit warning](./media/SubscriptionEstimatorEditDialogWarning.jpg)](./media/SubscriptionEstimatorWithEditDialogWarning.jpg)
+    [![Subscription estimator active edit warning](./media/SubscriptionEstimatorEditDialogWarning.jpg)](./media/SubscriptionEstimatorEditDialogWarning.jpg)
 
 > [!NOTE]
 > Although you can have multiple estimates, one estimate must be marked as **Active**. After the production environment has been deployed, or deployment of the environment has received sign-off, the active estimate is locked. Any further changes to the active estimate or marking a new estimate as active may cause the production environment to be resized.
