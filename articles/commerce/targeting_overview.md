@@ -52,19 +52,19 @@ Including and excluding audiences
 Target prioritization / ranking - experiments will trump all
 Target scheduling
 
-•	Targeted modules can’t be shared as fragments
-o	Parent level won’t work
-o	Module with child targets can be shred
-•	Targets carried forward with publish groups
-•	Experiments and targets can’t co-exist; experiments will trump
-•	During localization, all activities + any scheduling automatically go with locale variants, whether users want it or not. 
-o	If they don’t want it, they will have to manually delete it.
-o	If they need different schedules per locale, they need to create different activities per locale.
-•	How/when to create everyone/no one audiences
-•	Since segment values will be stored in a cookie, we need to limit the size of the value for 3rd-parties. What is the limit?
+* Targeted modules can’t be shared as fragments
+** Parent level won’t work
+** Module with child targets can be shred
+* Targets carried forward with publish groups
+* Experiments and targets can’t co-exist; experiments will trump
+* During localization, all activities + any scheduling automatically go with locale variants, whether users want it or not. 
+**	If they don’t want it, they will have to manually delete it.
+**	If they need different schedules per locale, they need to create different activities per locale.
+*	How/when to create everyone/no one audiences
+*	Since segment values will be stored in a cookie, we need to limit the size of the value for 3rd-parties. What is the limit?
 50 chars for values. Provider id maximum size: 20, Segment id maximum size: 20 and only allow letters, number and “-“ in provider and segment id.
-•	Basic vs advanced preview
-•	C1 needs explicit cookie consent from C2 – need to include info on that module
+*	Basic vs advanced preview
+*	C1 needs explicit cookie consent from C2 – need to include info on that module
 * Publish groups
 * localization
 
