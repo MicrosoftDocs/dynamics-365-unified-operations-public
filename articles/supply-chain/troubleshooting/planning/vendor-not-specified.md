@@ -1,49 +1,31 @@
 ---
-# required metadata
-
-title: Vendor is not specified.
-description: Vendor is not specified.
-author: ankubik@microsoft.com
-manager: tfehr
-ms.date: 4/25/2021 12:00:00 AM
+title: Vendor is not specified when firming planned orders.
+description: "When you try to firm planned orders, you get the error: 'Vendor is not specified'"
+author: ankubik
+ms.date: 06/10/2021
 ms.topic: troubleshooting
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: ReqTrans
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: ankubik@microsoft.com
-ms.assetid: 
 ms.search.region: Global
-ms.author: ankubik@microsoft.com
-
+ms.author: ankubik
+ms.search.validFrom: 2021-06-10
+ms.dyn365.ops.version: 10.0.20
 ---
 
-# Vendor is not specified.
+# Vendor is not specified when firming planned orders
 
 Error code: SYS23532
 
-The system displays the followign error message:
-	SYS23532
-
-
-
 ## Symptoms
-Unable to firm planned orders as I get error "Vendor is not specified."
 
-
-
+When you try to firm planned orders, you get the following error:
+> Vendor is not specified
 
 ## Resolution
-To specify vendor go to planned order that is missing vendor and in Planned supply fast tab choose vendor.
 
+To specify vendor:
 
-
+1. Open the planned order that is missing vendor.
+1. Expand the **Planned supply** FastTab.
+1. In the **Vendor** field, choose vendor.

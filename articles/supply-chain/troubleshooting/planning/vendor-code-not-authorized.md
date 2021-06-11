@@ -1,7 +1,7 @@
 ---
 title: Vendor code isn't authorized for a specific product and date
-description: When you try to firm a planned order or add a line to a purchase order, you get the error:
-"Vendor code %1 is not authorized for %2 on %3."
+description: "When you try to firm a planned order or add a line to a purchase order, you get the error:
+'Vendor code %1 is not authorized for %2 on %3'"
 author: ankubik
 ms.date: 06/10/2021
 ms.topic: troubleshooting

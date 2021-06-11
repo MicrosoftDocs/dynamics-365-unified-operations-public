@@ -1,6 +1,6 @@
 ---
 title: The planned production order must be scheduled before it can be firmed.
-description: When you are trying to firm a planned order, you get the error: "The planned production order must be scheduled before it can be firmed"
+description: "When you are trying to firm a planned order, you get the error: 'The planned production order must be scheduled before it can be firmed'"
 author: ankubik
 ms.date: 06/10/2021
 ms.topic: troubleshooting

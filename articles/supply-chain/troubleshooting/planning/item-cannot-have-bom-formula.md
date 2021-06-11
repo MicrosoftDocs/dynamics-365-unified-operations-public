@@ -1,6 +1,6 @@
 ---
 title: Item can't have a BOM or formula
-description: When you are trying to firm an order, you get the following error during item validation: "Item cannot have a BOM or formula"
+description: "When you are trying to firm an order, you get the following error during item validation: 'Item cannot have a BOM or formula'"
 author: ankubik
 ms.date: 06/10/2021
 ms.topic: troubleshooting

@@ -1,6 +1,6 @@
 ---
 title: Not able to release lock in due time
-description: When you are calculating GTE tax, you get the error: "Posting results for journal batch number %1 Not able to release lock in due time.".
+description: "When you are calculating GTE tax, you get the error: 'Posting results for journal batch number %1 Not able to release lock in due time.'"
 author: ankubik
 ms.date: 06/10/2021
 ms.topic: troubleshooting

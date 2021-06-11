@@ -1,49 +1,36 @@
 ---
-# required metadata
-
 title: The selected formula number is not approved for a batch order.
-description: The selected formula number is not approved for a batch order.
-author: ankubik@microsoft.com
-manager: tfehr
-ms.date: 4/25/2021 12:00:00 AM
+description: "When you try to firm a planned order, you get the following error message: 'The selected formula number is not approved for a batch order'"
+author: ankubik
+ms.date: 06/10/2021
 ms.topic: troubleshooting
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ReqTransPO
-# ROBOTS: 
+ms.search.form: ReqTransPo
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: ankubik@microsoft.com
-ms.assetid: 
 ms.search.region: Global
-ms.author: ankubik@microsoft.com
-
+ms.author: ankubik
+ms.search.validFrom: 2021-06-10
+ms.dyn365.ops.version: 10.0.20
 ---
 
 # The selected formula number is not approved for a batch order.
 
 Error code: PRO2614
 
-The system displays the followign error message:
-	PRO2614
-
-
-
 ## Symptoms
-Unable to firm planned orders as I get error "The selected formula number is not approved for a batch order."
+
+When you try to firm a planned order, you get the following error message:
+> The selected formula number is not approved for a batch order.
 
 ## Cause
-Validation is performed to ensure an approved formula can be found for the active item.
+
+The system validates the firming operation to make sure an approved formula is available for the active item. You probably need to approve the formula.
 
 ## Resolution
-To approve formula go to Product information management > Bills of materials and formulas > Formulas, pick the appropriate formula and click "Approve formula" from the Maintain section of top bar menu.
 
+To approve a formula:
 
-
+1. Go to **Product information management \> Bills of materials and formulas \> Formulas**.
+1. Select the relevant formula.
+1. On the Action Pane, open the **Formula** tab and, in the **Maintain** group, and select **Approve formula**.
+1. The **Approve BOM or formula** dialog opens. Select an approver and then select **OK**.
