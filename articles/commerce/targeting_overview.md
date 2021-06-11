@@ -32,7 +32,14 @@ Dynamics 365 Commerce enables you to target specific groups of customers with di
 You can create and manage audiences in site builder based on customer data such as location, device information, sign-in status, referrer, or query string parameters, gathered from the customer's web request. These audiences can then be targeted with module or fragment variations also authored and managed in site builder.
 
 ## Audiences
-Audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information available in the customer's request. Commerce natively supports device info (desktop/mobile/tablet, OS, browser), sign-in status, referrer and query string parameters. Additionally, a geolocation connector allows Commerce to connect with third-party geolocation service providers to generate geolocation information for e-commerce site users. For more information on setting up a connector, see [GeoLookup connector](e-commerce-extensibility/connectors.md#geolookup-connector)
+Audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information or segments available in the customer's request. Commerce natively supports device info (desktop/mobile/tablet, OS, browser), sign-in status, referrer and query string parameters. Additionally, a geolocation connector allows Commerce to connect with third-party geolocation service providers to generate geolocation information for e-commerce site users. For more information on setting up a geolocation connector, see [GeoLookup connector](e-commerce-extensibility/connectors.md#geolookup-connector). You can also connect to third-party segmentation providers and surface those segments within site builder. <<For more information, go here>>
+
+To create an audience in Commerce site builder, follow these steps.
+1. Select **Audiences** in the left navigation pane, and then select **New**.
+2. Give your audience a name and optionally add tags and a description. 
+3. Click on **Create** and **Add new rule block** on the the following page.
+4. Select a source, followed by the required segment and it's value(s). You can create rules with either AND conditions within a rule block or OR conditions between rule blocks. You can also move rule blocks up or down and delete both rules and rule blocks as needed.
+5. Once you are satisfied with your audience, select **Finish editing**. You can also select **Publish** if you want to make the audience available for use in a live target or publish it along with the target.
 
 Audiences can be created, edited and deleted in the **Audiences** tab in the left navigation pane.
 Suggestion - create everyone and no one to help with inclusions and exclusions.
