@@ -1,6 +1,6 @@
 ---
 title: Import inbound ASNs through the V2 data entity
-description: This topic explains how to manage import of the inbound advanced shipping notices (ASNs) through the Inbound ASN V2 data entity.
+description: This topic explains how to manage the import of inbound advanced shipping notices (ASNs) through the Inbound ASN V2 data entity.
 author: GalynaFedorova
 ms.date: 05/31/2021
 ms.topic: article
@@ -17,18 +17,18 @@ ms.dyn365.ops.version: 10.0.19
 
 [!include [banner](../../includes/banner.md)]
 
-Advanced shipping notices (ASNs) notify you about vendor deliveries. With the help of the ASN, the sender is able to describe the content of the shipment as well as the additional information of the shipment including, but not limited to, the items, packaging and so on.
+Advanced shipping notices (ASNs) notify you about vendor deliveries. They help the sender describe the contents of a shipment and additional information about it, such as the items and packaging.
 
-This feature can help warehouse workers know what is arriving when, which lets them prepare in advance. In addition, ASNs allow warehouse workers match the details of a shipments against the related purchase order created beforehand.
+ASNs can help warehouse workers learn what is arriving when. Therefore, they can prepare. In addition, warehouse workers can use ASNs to match the details of a shipment to the related purchase order that was previously created.
 
 This topic presents a collection of scenarios that show, through examples, how to work with ASN files.
 
 > [!IMPORTANT]
-> The *Inbound ASN* import applies only to the items that are enabled for advanced warehouse management (WMS). A purchase order must be registered in the system against the vendor who is sending the ASN before you receive the ASN.
+> *Inbound ASN* import applies only to items that are enabled for advanced warehouse management (WMS). Before you receive an ASN, a purchase order must be registered in the system against the vendor who is sending that ASN.
 
-## Overview
+## Inbound ASN V2 entity
 
-You import inbound ASNs using the *Inbound ASN V2* composite data entity. *Inbound ASN V2* leverages the following entities:
+You import inbound ASNs by using the *Inbound ASN V2* composite data entity. *Inbound ASN V2* takes advantage of the following entities:
 
 - Inbound load header
 - Inbound shipment header
@@ -37,11 +37,11 @@ You import inbound ASNs using the *Inbound ASN V2* composite data entity. *Inbou
 - Inbound load packing structure case lines
 - Inbound load packing structure lines
 
-The *Inbound ASN V2* composite data entity is intended to work in asynchronous integration scenarios with the help of XML-file based imports.  
+The *Inbound ASN V2* composite data entity is intended for asynchronous integration scenarios where XML file–based imports are used.
 
-## The XML format for importing ASNs
+## XML format for importing ASNs
 
-Supply Chain management supports the following XML format for importing ASNs, where each node in the XML file represents an attribute from an individual entity:
+Microsoft Dynamics 365 Supply Chain Management supports the following XML format for importing ASNs. Each node in the XML file represents an attribute from an individual entity.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -61,9 +61,13 @@ Supply Chain management supports the following XML format for importing ASNs, wh
 </Document>
 ```
 
-## ASN XML import file example 1
+## Examples
 
-The following example shows an XML file for importing vendor shipments for one purchase order without case details.
+The following subsections provide examples of ASN XML import files for vendor shipments.
+
+### Example 1
+
+The following example shows an XML file for importing vendor shipments for one purchase order when no case details are included.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -78,9 +82,9 @@ The following example shows an XML file for importing vendor shipments for one p
 </Document>
 ```
 
-## ASN XML import file example 2
+### Example 2
 
-The following example shows an XML file for importing vendor shipments for one purchase order with case details.
+The following example shows an XML file for importing vendor shipments for one purchase order when case details are included.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -96,9 +100,9 @@ The following example shows an XML file for importing vendor shipments for one p
 </Document>
 ```
 
-## ASN XML import file example 3
+### Example 3
 
-The following example shows an XML file for importing vendor shipments for several purchase orders with case details.
+The following example shows an XML file for importing vendor shipments for multiple purchase orders when case details are included.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -124,17 +128,17 @@ The following example shows an XML file for importing vendor shipments for sever
 </Document>
 ```
 
-## Inspect the result of importing ASN
+## Inspect the results of importing an ASN file
 
-Follow these steps to inspect the results of importing an ASN file:
+Follow these steps to inspect the results of importing an ASN file.
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. Find and open a load that was created as part of an ASN import.
-1. On the **Load** FastTab, you should see values based on the XML file.
-1. On the **Load lines** FastTab, you should see the purchase order numbers and item details based on the XML file.
-1. On the Action Pane, open the **Ship and receive** tab and, in the **Receive** group, select **Packing structure** to review the packing structure of the load.
-1. On the **Pallets** FastTab, you should see license plates based on the XML file.
-1. On the **Cases** FastTab, you should see cases based on the XML file.
-1. On the **Items** FastTab, you should see items and quantities based on the XML file.
+1. On the **Load** FastTab, you should see values that are based on the XML file.
+1. On the **Load lines** FastTab, you should see purchase order numbers and item details that are based on the XML file.
+1. On the Action Pane, on the **Ship and receive** tab, in the **Receive** group, select **Packing structure** to review the packing structure of the load.
+1. On the **Pallets** FastTab, you should see license plates that are based on the XML file.
+1. On the **Cases** FastTab, you should see cases that are based on the XML file.
+1. On the **Items** FastTab, you should see items and quantities that are based on the XML file.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
