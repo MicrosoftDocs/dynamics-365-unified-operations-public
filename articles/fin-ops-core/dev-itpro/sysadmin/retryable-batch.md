@@ -20,6 +20,9 @@ ms.search.validFrom: 2021-05-31
 
 This topic describes how retries are implemented on batch jobs in Finance and Operations apps, and how you can enable automatic retries on batch jobs when transient failures occur. Currently, if Finance and Operations apps experience a brief loss of connection to Microsoft SQL Server, all batch jobs that are running fail. This behavior disrupts business processes. Because connection loss is inevitable in a cloud service, Microsoft is enabling automated retries when failures of this type occur.
 
+> [!IMPORTANT]
+> This feature is available as part of version 10.0.18.
+
 ## Metadata
 
 Because not all batch jobs might be idempotent (for example, when a batch runs credit card transactions), retries can't be enabled equally across all batch jobs. To help ensure that retries can safely be enabled, Microsoft has added metadata to the batch jobs to indicate whether they can automatically be retried. Between versions 10.0.18 and 10.0.19, more than 90 percent of the Microsoft batch jobs have explicitly implemented the **BatchRetryable** interface, and the **isRetryable** value has been set appropriately. For any jobs where the **BatchRetryable** interface isn't implemented, the default value of **isRetryable** is **false**.
