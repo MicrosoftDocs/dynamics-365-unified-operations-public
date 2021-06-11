@@ -38,7 +38,7 @@ The load or shipment is currently in a state where packing slip generation fails
 - Review your load lines, and make sure that all the related work has been completed at the final shipping location, and that the quantities match.
 - Review your load lines, and make adjustments to ensure that the quantity can be cleanly converted without rounding issues.
 - Review your load lines, and make adjustments to ensure that the unit and quantity are aligned with the decimal precision of the unit.
-- Make sure that the inventory unit of measure is smaller than the sales unit of measure
+- Make sure that the inventory unit of measure is smaller than the sales unit of measure.
 
 ### Review your load lines, and make sure that all the related work has been completed at the final shipping location, and that the quantities match
 
