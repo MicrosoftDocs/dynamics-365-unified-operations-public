@@ -491,7 +491,7 @@ After an electronic message has a status of **Ready to generate VAT return**, yo
 
 ## Generate a VAT return in Excel format for preview
 
-To generate a VAT return in **VAT 100** report format in Excel, complete the following steos. 
+To generate a VAT return in **VAT 100** report format in Excel, complete the following steps. 
 
 1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select either the **UK MTD VAT TEST** processing (for testing purposes) or the **UK MTD VAT returns** processing (for real-life interoperation with the production HMRC web application). 
 2. On the **Messages** FastTab, select the electronic message record that is related to the period that you want to generate a file for, and then select **Generate report**. The **Generate report** button is available only for electronic messages that have the following statuses:
@@ -847,16 +847,16 @@ If the ER configurations from previous table were successfully imported, but the
 
 A company that is registered for VAT in the territory of the UK might have a primary address that is outside the UK. To simplify adoption of the MTD for VAT feature in legal entities that have a primary address outside the UK, the following ER configurations are delivered without any **ISO country/region code** parameter:
 
-- MTD VAT importing model mapping (UK) starting from version 31.36
-- MTD VAT return response importing JSON (UK)starting from version 19.10 
-- MTD VAT import token format (UK)starting from version 19.8 
-- Tax declaration model mapping starting from version 95.158
-- MTD VAT web request headers format (UK) starting from version 22.22 
-- MTD VAT authorization format (UK) starting from version 19.7 
-- MTD VAT interoperation (UK) starting from version 31.8 
-- MTD VAT obligations importing JSON (UK) starting from version 31.9 
-- VAT Declaration JSON (UK) starting from version 32.31
-- VAT Declaration Excel (UK) starting from version 32.30.16 
+- MTD VAT importing model mapping (UK) version 31.36 and later
+- MTD VAT return response importing JSON (UK) version 19.10 and later
+- MTD VAT import token format (UK) version 19.8 and later 
+- Tax declaration model mapping version 95.158 and later
+- MTD VAT web request headers format (UK) version 22.22 and later
+- MTD VAT authorization format (UK) version 19.7 and later
+- MTD VAT interoperation (UK) version 31.8 and later
+- MTD VAT obligations importing JSON (UK) version 31.9 and later
+- VAT Declaration JSON (UK) version 32.31 and later
+- VAT Declaration Excel (UK) version 32.30.16 and later
 
 When these and later versions of the ER configurations are used, the MTD for the VAT feature can be set up and used in legal entities that have a primary address in any country or region.
 
@@ -864,8 +864,8 @@ When a company that has a primary address outside the UK uses MTD for VAT, it's 
 
 When a company that has a primary address outside the UK considers VAT management in the legal entity, it must follow these steps to set up the MTD for VAT feature.
 
-1. Download and import a package of data entities that include a predefined electronic message setup of version 4 or later (starting from **“UK MTD VAT setup_v4_KB4617940.zip”**). See the section, [Import a package of data entities that includes a predefined electronic message setup](#import-a-package-of-data-entities-that-includes-a-predefined-electronic-message-setup) earlier in this topic for more information about this process. This version of the package introduces a new **Tax registration number** field to the **UK MTD VAT returns** and **UK MTD VAT TEST** electronic messaging process. Use this new field to define the VAT registration number (VRN) from the name of which VAT return will be sent to HMRC.
-2. Go to **Tax** > **Setup** > **Electronic messages** > **Electronic messages processing** > **Additional fields** FastTab, to define the VRN from the name of the VAT return that will be  sent to HMRC for the production MTD processing (**UK MTD VAT returns**) as a value of **Tax registration number** field. This field isn't available during the processing of electronic messages. Instead, the field is automatically filled in and processed by the system. If the **Tax registration number** field is blank for the EM processing, the value is collected using the previously supported algorithm, described in the section [Obtain an authorization code for the production environment](#obtain-an-authorization-code-for-the-production-environment) earlier in this topic.
+1. Download and import a package of data entities that include a predefined electronic message setup of version 4 or later (starting from **UK MTD VAT setup\_v4\_KB4617940.zip**). For more information about this process, see the [Import a package of data entities that includes a predefined electronic message setup](#import-a-package-of-data-entities-that-includes-a-predefined-electronic-message-setup) section earlier in this topic. This version of the package adds a new **Tax registration number** field to the **UK MTD VAT returns** and **UK MTD VAT TEST** electronic messaging process. Use this new field to define the VAT registration number (VRN) from the name of the VAT return that will be sent to HMRC.
+2. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**. On the **Additional fields** FastTab, in the **Tax registration number** field, define the VRN from the name of the VAT return that will be sent to HMRC for the production MTD processing (**UK MTD VAT returns**). This field isn't available during the processing of electronic messages. Instead, it's automatically filled in and processed by the system. If the **Tax registration number** field is blank for the electronic message processing, the previously supported algorithm is used to collect the value. For more information about that algorithm, see the [Obtain an authorization code for the production environment](#obtain-an-authorization-code-for-the-production-environment) section earlier in this topic.
 
 ## Appendix 1: Electronic messages setup for MTD for VAT
 
