@@ -382,7 +382,6 @@ To enable the Cloud POS extension components to be loaded in the **extensions.js
 }
 ```
 
-## Additional resources
 
 ## Additional resources
 
