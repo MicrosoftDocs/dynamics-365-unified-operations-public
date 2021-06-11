@@ -19,9 +19,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about replenishment methods in Planning Optimization. It also explains how the multiple order quantity for a product affects the result.
 
+Replenishment methods are also known as coverage methods and lot-sizing methods. 
+
 ## Coverage codes
 
-Planning Optimization can be configured to use different replenishment methods. The replenishment methods or lot-sizing methods are the techniques that the system uses to calculate requirements for a product. Replenishment methods are defined by coverage codes that you can set up on either the coverage group or the product.
+Planning Optimization can be configured to use different replenishment methods. The replenishment methods are the techniques that the system uses to calculate requirements for a product. Replenishment methods are defined by coverage codes that you can set up on either the coverage group or the product.
 
 The following coverage codes can be used in Planning Optimization:
 
@@ -33,7 +35,7 @@ The following coverage codes can be used in Planning Optimization:
 
     ![Example of Requirement coverage code use](./media/coverage-code-requirement.png "Example of Requirement coverage code use")
 
-- **Min./Max.** – The coverage method is based on the inventory level. It contains the replenishment of inventory up to a specific level when the predicted on-hand level is below a specific threshold. The replenishment quantity will be the difference between the maximum level and the predicted on-hand level. The *Min./Max.* coverage code is often used for predictable inventory draw, high runners, or less expensive products. The following illustration shows an example.
+- **Min./Max.** – The coverage method is based on the inventory level. It defines the replenishment of inventory up to a specific level when the predicted on-hand level is below a specific threshold. The replenishment quantity will be the difference between the maximum level and the predicted on-hand level. The *Min./Max.* coverage code is often used for predictable inventory draw, high runners, or less expensive products. The following illustration shows an example.
 
     ![Example of Min./Max. coverage code use](./media/coverage-code-min-max.png "Example of Min./Max. coverage code use")
 
@@ -41,7 +43,7 @@ The following coverage codes can be used in Planning Optimization:
 
 ## Impact of the order quantity from default order settings
 
-On the **Default order setting** page for a released product, you can specify each of following quantity settings on the **Purchase order**, **Inventory**, and **Sales order** FastTabs. (The **Inventory** FastTab is used for both transfer and production.)
+On the **Default order setting** page for a released product, you can specify each of following quantity settings on the **Purchase order**, **Inventory**, and **Sales order** FastTabs. (The **Inventory** FastTab is used for both transfer orders and production orders.)
 
 - **Multiple** – Planned orders will be a multiple of this quantity.
 
