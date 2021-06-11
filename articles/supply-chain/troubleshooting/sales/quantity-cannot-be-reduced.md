@@ -31,9 +31,9 @@ If work is associated with a sales order, you can't cancel the sales order until
 
 To fix this issue, complete the following tasks:
 
-- Cancel open work.
-- Delete the load.
-- Reduce the picked quantity.
+1. Cancel open work.
+1. Delete the load.
+1. Reduce the picked quantity.
 
 ### Cancel open work
 
@@ -65,10 +65,10 @@ After all work has been canceled, follow these steps to reduce the picked quanti
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. Open the relevant sales order.
-1. On the **Sales order lines** FastTab, select **Update line \> Pick**.
+1. On the **Sales order lines** FastTab, select **Update line \> Pick** from the toolbar.
 1. On the **Pick** page, in the **Transactions** section, select the line where the **Issue status** field is set to *Picked*.
-1. Select **Add picking line**.
-1. In the **Picking lines** section, select **Confirm pick all**.
+1. In the **Transactions** section, select **Add picking line** from the toolbar.
+1. In the **Picking lines** section, select **Confirm pick all** from the toolbar.
 1. Close the **Pick** page.
 1. On the sales order details page, on the Action Pane, on the **Sales order** tab, in the **Maintain** group, select **Cancel**.
 1. Select **Yes** to confirm that you want to cancel the sales order.
