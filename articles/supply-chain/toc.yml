@@ -3443,6 +3443,8 @@
           href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:
+        - name: Canceled product receipts don't update transactions status to registered
+          href: troubleshooting/warehousing/canceled-product-receipts.md
         - name: An error occurs when choosing the location during picking list registration
           href: troubleshooting/warehousing/error-cannot-update.md
         - name: Packing station doesn't show product notes
