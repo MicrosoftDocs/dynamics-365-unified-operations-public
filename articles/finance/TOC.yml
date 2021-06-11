@@ -2438,14 +2438,14 @@
           items:
           - name: India withholding tax
             items: 
-            - name: Include GST when calculating tax collections
-              href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
             - name: Tax thresholds FAQ
               href: localizations/apac-ind-tax-thresholds.md  
             - name: India TCS
               items:
               - name: TCS on sale of goods
                 href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+              - name: Include GST when calculating tax collections
+                href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md  
             - name: India TDS
               items: 
               - name: Indian Tax Deducted at Source (TDS) overview
