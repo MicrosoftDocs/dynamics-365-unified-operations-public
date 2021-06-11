@@ -56,7 +56,7 @@ Change feeds are automatically enabled when you add tables to the data lake.
 
 When you add a table to the lake (or activate a table that’s deactivated), the system makes an initial copy of the data into the lake. You can see the table status as **Initializing**. When the initial copy is complete, the system changes the status to **Running**. When the table is in Running status, changes in Finance and Operations database are reflected in the data lake. Change feeds are added when the table is in Running status.
 
-No navigate to change folders, launch **Azure portal** and locate the storage account that is associated with your finance and Operations environment. The **Change feed** folder is visible in the data lake folder structure as shown below.
+To navigate to change folders, launch **Azure portal** and locate the storage account that is associated with your finance and Operations environment. The **Change feed** folder is visible in the data lake folder structure as shown below.
 
 ![You will see CDM metadata files that describe the change folder data.](media/Change-feed-folders-rootfolder-top-level.png)
 
