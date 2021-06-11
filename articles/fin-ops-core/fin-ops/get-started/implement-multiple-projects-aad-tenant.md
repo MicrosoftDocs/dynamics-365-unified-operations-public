@@ -60,7 +60,7 @@ Users who access multiple environments in parallel must be licensed separately f
 
 Determine how you wish to assign licenses across the implementation projects in your organization in order to ensure that the number of licenses assigned across all projects does not exceed the total license count purchased by the customer.
 
-Once the allocation has been determined, visit the [Subscription Estimator]("..\..\dev-itpro\lifecycle-services\subscription-estimator.md") tool in each implementation project and edit the active subscription estimate therein to apply the desired license allocation for that project.  
+Once the allocation has been determined, visit the [Subscription Estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) tool in each implementation project and edit the active subscription estimate therein to apply the desired license allocation for that project.  
 
 ## Disadvantages of multiple LCS projects
 
