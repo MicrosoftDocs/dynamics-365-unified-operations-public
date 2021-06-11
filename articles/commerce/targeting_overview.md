@@ -58,6 +58,8 @@ o	If they need different schedules per locale, they need to create different act
 50 chars for values. Provider id maximum size: 20, Segment id maximum size: 20 and only allow letters, number and “-“ in provider and segment id.
 •	Basic vs advanced preview
 •	C1 needs explicit cookie consent from C2 – need to include info on that module
+* Publish groups
+* localization
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
