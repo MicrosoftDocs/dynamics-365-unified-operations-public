@@ -4,7 +4,7 @@
 title: Update an environment
 description: This topic explains how to update an environment that was deployed by using the self-service deployment experience.
 author: laneswenka
-ms.date: 06/04/2021
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -98,7 +98,7 @@ After you've marked an update as a release candidate, follow these steps to upda
 2. Select **Maintain \> Update environment** to apply an update.
 3. In the **Available sandboxes** list, select the source sandbox environment where the update was applied, validated, and marked as a release candidate.
 4. In the grid, select the update to apply to the production environment. This grid shows only updates that have been marked as release candidates.
-5. In the **Downtime start** field, select a date and time. The environment will be taken down for servicing at the specified time on the specified date. The **Downtime end** field is set to through hours from the start of the downtime.
+5. In the **Downtime start** field, select a date and time. The environment will be taken down for servicing at the specified time on the specified date. The **Downtime end** is calculated automatically based on the expected duration.
 
     No lead time is required for this update.
 
