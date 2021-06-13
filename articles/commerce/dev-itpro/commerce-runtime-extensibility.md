@@ -409,7 +409,9 @@ In some cases, the request and response types are sufficient, but you must chang
 
 Additionally, registration in the **commerceRuntime.ext.Config** file must precede registration of the service that should be overridden. This registration order is important because of the way that the Managed Extensibility Framework (MEF) loads the extension dynamic-link libraries (DLLs). The types that are higher in the file take precedence.
 
-To override any CRT request, follow the pattern in the following example that overrides the out-of-box **CreateOrUpdateCustomerDataRequest** request.
+To override the handler implement the **SingleAsyncRequestHandler<TRequest>** or **INamedRequestHandlerAsync** if the handler is executed based on the handler name.
+
+### Sample code on how to Override CreateOrUpdateCustomerDataRequest using the SingleAsyncRequestHandler: 
 
 ```csharp
 namespace Contoso
@@ -444,6 +446,49 @@ namespace Contoso
     }
 }
 ```
+
+### Sample code on how to Override the handlers which are implemented based on handler name, implement the INamedRequestHandlerAsync: 
+
+```C#
+    public class SampleGetProductSearchResultshandler : INamedRequestHandlerAsync
+    {
+        /// <summary>
+        /// Gets the supported requests types.
+        /// </summary>
+        public IEnumerable<Type> SupportedRequestTypes
+        {
+            get
+            {
+                return new[] { typeof(GetProductSearchResultsServiceRequest), };
+            }
+        }
+
+        public string HandlerName
+        {
+            get
+            {
+                return "CommerceProductSearch";
+            }
+        }
+
+        public async Task<Response> Execute(Request request)
+        {
+            ThrowIf.Null(request, nameof(request));
+            Type requestType = request.GetType();
+            Response response = null;
+
+            if (requestType == typeof(GetProductSearchResultsServiceRequest))
+            {
+                //Implement the logic here
+            }
+
+            return response;
+        }
+    }
+
+```
+
+
 
 ## Run the base handler in the extension
 
