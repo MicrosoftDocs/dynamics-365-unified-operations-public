@@ -37,7 +37,7 @@ The order fulfillment operation in the point of sale provides a single work area
 
 ## Access unified order fulfillment in the point of sale
 
-Order fulfillment, [Operation ID 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations), can be used to access the store order fulfillment work area in the point of sale.
+Order fulfillment, [Operation ID 928](pos-operations.md), can be used to access the store order fulfillment work area in the point of sale.
 
 The order fulfillment operation does not have its own permission out-of-the-box, but in the future, users will be able to use the **Allow retrieve order** permission to invoke the operation from the point of sale.
 
@@ -98,7 +98,7 @@ After an order has been accepted, lines can be selected and marked as **Picking*
 Picking lists can be printed at the point of sale to assist workers performing the picking process. A printed picking list can be carried with the worker performing picking and as products are picked, the worker would manually mark them as picked on the picking list.
 
 The picking list format is configured in Commerce and added to the receipt profile. For more information about setting up receipt
-profiles, see [Receipt templates and printing](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+profiles, see [Receipt templates and printing](receipt-templates-printing.md).
 
 If lines are selected and a picking list is printed for those lines, they are automatically updated with the **Picking** status.
 
@@ -124,7 +124,7 @@ Order lines can be packed at any point after the order line has been accepted.
 - **Resulting status:** Packed or partially packed
 - **Resulting back office status:** Delivered or partially delivered
 
-This action marks lines as packed or partially packed and prints a packing slip. A packing slip can be printed to validate the products that have been packed together. The packing slip format is configured in Commerce and added to the receipt profile. For more information about setting up receipt profiles, see [Receipt templates and printing](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+This action marks lines as packed or partially packed and prints a packing slip. A packing slip can be printed to validate the products that have been packed together. The packing slip format is configured in Commerce and added to the receipt profile. For more information about setting up receipt profiles, see [Receipt templates and printing](receipt-templates-printing.md).
 
 **Action: Mark as packed**
 

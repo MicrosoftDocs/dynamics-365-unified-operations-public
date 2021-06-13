@@ -42,7 +42,11 @@ The following packages can be downloaded from the Shared asset library:
 
 - **Microsoft.Dynamics.AX.Platform.CompilerPackage** – This package contains the X++ compiler and related tools that are required to do a build.
 - **Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp** – This package contains the compiled X++ code for the Application Platform and related modules. This code is optimized for building.
-- **Microsoft.Dynamics.AX.Application.DevALM.BuildXpp** – This package contains the compiled X++ code for the Application Suite and related modules. This code optimized for building.
+- **Microsoft.Dynamics.AX.Application.DevALM.BuildXpp** – This package contains the compiled X++ code for the Application and related modules. This code is optimized for building.
+
+Starting from version 10.0.18, the Application Suite package has been split into two packages and there is an additional package to download from the Shared asset library.
+
+- **Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp** - This package contains the compiled X++ code for the Application Suite module. This code is optimized for building.
 
 Download these packages from LCS, and add them to an Azure Artifacts feed in the Azure DevOps organization where the builds will run. For more information about how to create an Azure Artifacts feed and add NuGet packages, see these topics:
 
@@ -138,7 +142,7 @@ In the pipeline samples, variables for NuGet package names and paths are used to
 
 ### Creating a full pipeline that includes packaging
 
-To be useful, the pipeline should include a versioning step and a packaging step. Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For information about how to install an extension for an organization, see the [Azure DevOps documentation](/azure/devops/marketplace/install-extension).
+To be useful, the pipeline should include a versioning step and a packaging step. Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps organization. For information about how to install an extension for an organization, see the [Azure DevOps documentation](/azure/devops/marketplace/install-extension).
 
 A full pipeline should consist of at least the following steps:
 
@@ -161,5 +165,5 @@ For the deployable package to be created, NuGet must be readily available on the
 
 In the [Dynamics365-Xpp-Samples-Tools](https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples) GitHub repository, you can find a sample pipeline that can be imported into an existing Azure DevOps project.
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

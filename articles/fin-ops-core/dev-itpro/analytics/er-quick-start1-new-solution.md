@@ -290,7 +290,7 @@ To continue, skip the next procedure, [Create a new data model configuration](#D
 
 The status of version 1 of this configuration is changed from **Draft** to **Completed**. Version 1 can no longer be changed. This version contains the configured data model and can be used as the basis for other ER configurations. Version 2 of this configuration is created and has a status of **Draft**. You can edit this version to adjust the **Questionnaire** data model.
 
-![Versions of the editable ER configuration on the Configurations page](./media/er-quick-start1-model-configuration.png)
+![Versions of the editable configuration on the Configurations page](./media/er-quick-start1-model-configuration.png)
 
 For more information about versioning for ER configurations, see [Electronic reporting (ER) overview](general-electronic-reporting.md#component-versioning).
 
@@ -804,7 +804,7 @@ The following illustration shows a generated report in Excel format where the qu
 
 The status of version 1.1 of this configuration is changed from **Draft** to **Completed**. Version 1.1 can no longer be changed. This version contains the configured format and can be used to print your custom report. Version 1.2 of this configuration is created and has a status of **Draft**. You can edit this version to adjust the format of your **Questionnaire** report.
 
-![Versions of the editable ER configuration on the Configurations page](./media/er-quick-start1-format-configuration.png)
+![Editable ER configuration on the Configurations page](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > The configured format is your design of the **Questionnaire** report and contains no relations to the Finance-specific artefacts.

@@ -97,7 +97,7 @@ Automatic firming lets you firm planned orders as part of the master planning pr
 
 Both Planning Optimization and the built-in planning engine can be used to auto-firm planned orders. However, there are some important differences. For example, Planning Optimization uses the order date (that is, the start date) to determine which planned orders to firm, whereas the built-in planning engine uses the requirement date (that is, the end date). The following table summarizes the differences.
 
-| | Planning Optimization | Built-in planning engine |
+| Feature | Planning Optimization | Built-in planning engine |
 |---|---|---|
 | **Date basis** | Auto-firming is based on the order date (start date). | Auto-firming is based on the requirement date (end date). |
 | **Lead time** | Because the order date (start date) triggers the firming, you don't have to consider the lead time as part of the firming time fence. | To help guarantee that orders are firmed in a timely manner, the firming time fence must be longer than the lead time. |

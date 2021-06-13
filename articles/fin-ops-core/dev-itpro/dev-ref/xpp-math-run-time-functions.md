@@ -21,8 +21,7 @@ This topic describes the math run-time functions.
 
 These functions perform mathematical calculations.
 
-abs
----
+## abs
 
 Retrieves the absolute value of a real number. Examples:
 
@@ -214,8 +213,8 @@ real corrFlagSet(real real, int arg)
 
 **0** if the flag is now off; a non-zero value if the flag is now on.
 
-cos
----
+## cos
+
 
 Retrieves the cosine of a real number.
 
@@ -323,8 +322,7 @@ The value of the *decimals* parameter can be positive, 0 (zero), or negative.
 -   **decRound(12345.6789,1)** returns the value **12345.70**.
 -   **decRound(12345.6789,-1)** returns the value **12350.00**.
 
-exp
----
+## exp
 
 Retrieves the natural antilogarithm of the specified real number.
 
@@ -468,8 +466,7 @@ The natural logarithm of the specified number.
 
 **logN(45)** returns the value **3.81**.
 
-max
----
+## max
 
 Retrieves the larger of two specified values.
 
@@ -493,8 +490,7 @@ The larger of the two values that are specified by the *object1* and *object2* p
 -   **max(12.0,12.1)** returns the value **12.1**.
 -   **max(2,33)** returns the value **33**.
 
-min
----
+## min
 
 Retrieves the smaller of two specified values.
 
@@ -587,8 +583,7 @@ To round a real number to a specified number of decimal places, use the [decroun
 -   **round(23.9,5.0)** returns the value **25.00**.
 -   **round(26.1,5.0)** returns the value **25.00**.
 
-sin
----
+## sin
 
 Retrieves the sine of a real number.
 
@@ -677,8 +672,7 @@ static void sinhExample(Args _arg)
 }
 ```
 
-tan
----
+## tan
 
 Retrieves the tangent of a real number.
 

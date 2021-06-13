@@ -61,7 +61,7 @@ Although MPOS and CPOS are largely the same, there are some important difference
 MPOS on a Windows, iOS, or Android device is an application that is packaged, installed, and serviced on that device.
 
 - **Windows** – The MPOS for Windows application contains all the application code and the embedded commerce runtime (CRT). 
-- **iOS/Android** – On these platforms, the application acts as a host for the CPOS application code. In other words, the application code comes from the CPOS server on Microsoft Azure or the Commerce Scale Unit. For more information, see [Commerce Scale Unit overview](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
+- **iOS/Android** – On these platforms, the application acts as a host for the CPOS application code. In other words, the application code comes from the CPOS server on Microsoft Azure or the Commerce Scale Unit. For more information, see [Commerce Scale Unit overview](dev-itpro/retail-store-system-begin.md).
 
 #### CPOS
 
@@ -83,11 +83,11 @@ The Commerce Scale Unit is a component that hosts the CRT. The CRT contains all 
 
 #### Offline mode
 
-MPOS for Windows supports offline mode. In offline mode, the POS can continue to process sales even if it's disconnected from the Commerce Scale Unit. It can then be synchronized with the channel database when connectivity is restored. MPOS uses its own embedded instance of the CRT and temporarily uses its own local data source (offline SQL Server database). For more information about offline functionality, see [POS offline functionality](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-offline-functionality).
+MPOS for Windows supports offline mode. In offline mode, the POS can continue to process sales even if it's disconnected from the Commerce Scale Unit. It can then be synchronized with the channel database when connectivity is restored. MPOS uses its own embedded instance of the CRT and temporarily uses its own local data source (offline SQL Server database). For more information about offline functionality, see [POS offline functionality](pos-offline-functionality.md).
 
 ### POS peripheral/hardware considerations
 
-Retailers must also consider how the POS will access devices and peripherals such as printers, cash drawers, and payment terminals. Only MPOS for Windows supports direct communication with these devices. MPOS for Windows Phone, iOS, or Android, and Cloud POS require a hardware station in order to access these devices. Hardware stations can be dedicated to a POS register or shared among the registers in a store. For more information about hardware stations, see [Configure and install Retail hardware station](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation).
+Retailers must also consider how the POS will access devices and peripherals such as printers, cash drawers, and payment terminals. Only MPOS for Windows supports direct communication with these devices. MPOS for Windows Phone, iOS, or Android, and Cloud POS require a hardware station in order to access these devices. Hardware stations can be dedicated to a POS register or shared among the registers in a store. For more information about hardware stations, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md).
 
 ## Implementation considerations
 
@@ -104,7 +104,7 @@ Consider the following information as you plan your POS implementation in your s
     These two options aren't mutually exclusive. For the most reliable topology, retailers can deploy a local RSSU to reduce the dependency on internet connectivity or Azure availability, and they can also deploy POS registers where offline mode is enabled if there is an issue with the local server or network.
 
 - **Hardware devices/peripherals** – One important aspect of a Retail POS system is its ability to use POS peripherals such as printers, cash drawers, and payment terminals. Although all the available POS options can use peripheral devices, only MPOS for Windows supports them directly. For all other applications, one or more hardware stations are required. Although this approach adds flexibility, additional components must be deployed, configured, and serviced.
-- **System requirements** – The system requirements for the POS application vary. Be sure to check the latest information before you make your choice. For example, because CPOS runs in a browser, it supports a wider range of operating systems. For more information about system requirements, see [System requirements for cloud deployments](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
+- **System requirements** – The system requirements for the POS application vary. Be sure to check the latest information before you make your choice. For example, because CPOS runs in a browser, it supports a wider range of operating systems. For more information about system requirements, see [System requirements for cloud deployments](../fin-ops-core/fin-ops/get-started/system-requirements.md).
 - **Deployment and servicing** – The complexity of the deployment and servicing requirements can vary, depending on the application and deployment choices. For example, for a cloud-hosted CPOS deployment, you don't have to install and update on every device. Therefore, this approach greatly reduces complexity and cost. However, if you deploy MPOS on every register and enable offline mode, and you also deploy shared hardware stations, you greatly increase the number of endpoints that must be managed.
 
 

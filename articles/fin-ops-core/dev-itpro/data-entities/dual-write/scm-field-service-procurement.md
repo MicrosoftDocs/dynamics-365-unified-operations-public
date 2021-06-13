@@ -198,23 +198,10 @@ The following templates are available for the integration of procurement-related
 
 | Supply Chain Management | Field Service | Description |
 |---|---|---|
-| Purchase order header V2 | msdyn\_Purchaseorders | This table contains the columns that represent the purchase order header. |
-| Purchase order line entity | msdyn\_PurchaseOrderProducts | This table contains the rows that represent lines on a purchase order. The product number is used for synchronization. This identifies the product as a stock keeping unit (SKU), including product dimensions. For more information about product integration with Dataverse, see [Unified product experience](product-mapping.md). |
-| Product receipt header | msdyn\_purchaseorderreceipts | This table contains the product receipt headers that are created when a product receipt is posted in Supply Chain Management. |
-| Product receipt line | msdyn\_purchaseorderreceiptproducts | This table contains the product receipt lines that are created when a product receipt is posted in Supply Chain Management. |
-| Purchase order line soft deleted entity | msdyn\_purchaseorderproducts | This table contains information about purchase order lines that are soft-deleted. A purchase order line in Supply Chain Management can be soft-deleted only when the purchase order has been confirmed or approved, if change management is turned on. The row exists in the Supply Chain Management database and is marked as **IsDeleted**. Because Dataverse doesn't have a concept of soft-deletion, it's important that this information be synced to Dataverse. In this way, lines that are soft-deleted in Supply Chain Management can automatically be deleted from Dataverse. In this case, the logic for deleting a line in Dataverse is located in Supply Chain Management Extended. |
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/productreceiptheader-msdyn-purchaseorderreceipts.md)]
-
-[!include [Currency](includes/productreceiptline-msdyn-purchaseorderreceiptproducts.md)]
-
-[!include [Currency](includes/purchaseorderheadersv2-msdyn-purchaseorders.md)]
-
-[!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
-
-[!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
-
+| [Purchase order header V2](mapping-reference.md#183) | msdyn\_Purchaseorders | This table contains the columns that represent the purchase order header. |
+| [Purchase order line entity](mapping-reference.md#181) | msdyn\_PurchaseOrderProducts | This table contains the rows that represent lines on a purchase order. The product number is used for synchronization. This identifies the product as a stock keeping unit (SKU), including product dimensions. For more information about product integration with Dataverse, see [Unified product experience](product-mapping.md). |
+| [Product receipt header](mapping-reference.md#185) | msdyn\_purchaseorderreceipts | This table contains the product receipt headers that are created when a product receipt is posted in Supply Chain Management. |
+| [Product receipt line](mapping-reference.md#184) | msdyn\_purchaseorderreceiptproducts | This table contains the product receipt lines that are created when a product receipt is posted in Supply Chain Management. |
+| [Purchase order line soft deleted entity](mapping-reference.md#182) | msdyn\_purchaseorderproducts | This table contains information about purchase order lines that are soft-deleted. A purchase order line in Supply Chain Management can be soft-deleted only when the purchase order has been confirmed or approved, if change management is turned on. The row exists in the Supply Chain Management database and is marked as **IsDeleted**. Because Dataverse doesn't have a concept of soft-deletion, it's important that this information be synced to Dataverse. In this way, lines that are soft-deleted in Supply Chain Management can automatically be deleted from Dataverse. In this case, the logic for deleting a line in Dataverse is located in Supply Chain Management Extended. |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

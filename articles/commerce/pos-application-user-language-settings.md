@@ -62,7 +62,7 @@ The POS user's language setting determines the translations used in the applicat
 
 The POS user's language setting is set from **All workers** on the **Worker** page under **Retail and Commerce &gt; Language**. It is not set on the main Profile tab. This setting is not used by POS. If the user's language is not set or it is set to a language where translations are not available, the POS will revert to the store's language.
 
-|             | UI language                | Data language (products, receipt formats, line display, etc.) |
+| &nbsp;      | UI language                | Data language (products, receipt formats, line display, etc.) |
 |-------------|----------------------------|---------------------------------------------------------------|
 | **Company** | Default                    | Default                                                       |
 | **Store**   | Overrides company          | Overrides company                                             |

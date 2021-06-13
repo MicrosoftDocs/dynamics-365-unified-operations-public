@@ -4,7 +4,7 @@
 title: Enable multiple pickup delivery modes for customer orders
 description: This topic explains the functionality in Microsoft Dynamics 365 Commerce that lets you create customer orders for pickup at a store.
 author: hhainesms
-ms.date: 11/17/2020
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -43,7 +43,7 @@ After you turn on the **Support for multiple pickup delivery modes** feature, yo
 
 The **Carry Out mode of delivery** and **Electronic mode of delivery** fields, and the **Show only carrier mode options for ship orders** option, have been relocated to this FastTab.
 
-Before you configure additional pickup delivery modes, you must define the modes of delivery. On the **Modes of delivery** page in Commerce headquarters, add the modes of delivery that should be considered pickup delivery modes. Make sure that all configuration is completed. For example, make sure that the mode of delivery is linked to appropriate channels and items. When you've finished, run the **Process delivery modes** job to create the relationships among the mode of delivery, channels, and items. When the job has finished running, open the **Distribution schedule** page in Commerce headquarters, and run the **1120** distribution job to ensure that the relevant Commerce channel databases are updated with your new delivery mode configuration.
+Before you configure additional pickup delivery modes, you must define the modes of delivery. On the **Modes of delivery** page in Commerce headquarters, add the modes of delivery that should be considered pickup delivery modes. Make sure that all configuration is completed. For example, if you are offering curbside pickup as a delivery option for your online shoppers for certain stores, you need to create a new delivery mode for this purpose. You can create this delivery mode using "curbside pickup" as the description. You'll then want to ensure that the "curbside pickup" mode of delivery is mapped to all of the Commerce channels that can offer it, including online stores that may offer this option and the individual store channels that will offer this method of fulfillment. Modes of delivery must also be linked to the products. In this example, if there are certain products that can't be fulfilled using "curbside pickup", you need to ensure that those items are excluded. When you've finished adding any new modes of delivery, run the **Process delivery modes** job to create the relationships between the mode of delivery, channels, and items. When the job is completed, open the **Distribution schedule** page in Commerce headquarters, and run the **1120** distribution job to ensure that the relevant Commerce channel databases are updated with your new delivery mode configuration.
 
 ![Example of a mode of delivery configuration for curbside pickup](media/pickupmodes.png)
 
