@@ -92,6 +92,12 @@ In this case, if you run forecast scheduling on January 1, the demand forecast r
 
 If you select **Transactions - reduction key**, the forecast requirements are reduced by the transactions that occur during the periods that are defined by the reduction key.
 
+Forecast is reduced based on qualified demand registered in the reduction key period. The qualified demand is defined by the **Reduce forecast by** field on the **Coverage group** page. If you select **Orders**, then only sales order transactions are considered as qualified demand, otherwise, if you select **All transactions**, then any non-intercompany issue inventory transactions are considered as qualified demand. You can also set **Include intercompany orders** to **Yes** to also consider intercompany sales orders as qualified demand.
+
+Forecast reduction starts with the first (earliest) demand forecast record in the reduction key period. If the quantity of qualified inventory transactions is greater than the quantity of demand forecast lines in the same reduction key period, then the balance of inventory transactions quantity will be used to reduce the demand forecast quantity in the previous period (if there is unconsumed forecast).
+
+If there is no unconsumed forecast left in the previous reduction key period, the balance of inventory transactions quantity will be used to reduce the forecast quantity in the next month (if there is unconsumed forecast).
+
 #### Example: Transactions – reduction key
 
 This example shows how actual orders that occur during the periods that are defined by the reduction key reduce demand forecast requirements.
