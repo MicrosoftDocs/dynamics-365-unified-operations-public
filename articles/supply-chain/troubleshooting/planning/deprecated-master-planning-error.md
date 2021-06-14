@@ -29,4 +29,4 @@ If you are running planning and aren't using production control features, you sh
 
 ## Resolution
 
-To learn more about migrating to Planning Optimization, and how to apply for an exception to continue using the deprecated built-in planning engine instead, see [Migration to Planning Optimization for master planning](dynamics365/supply-chain/master-planning/new-master-planning-engine).
+To learn more about migrating to Planning Optimization, and how to apply for an exception to continue using the deprecated built-in planning engine instead, see [Migration to Planning Optimization for master planning](/dynamics365/supply-chain/master-planning/new-master-planning-engine).
