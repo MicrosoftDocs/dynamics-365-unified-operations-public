@@ -1603,6 +1603,8 @@
           href: master-planning/planning-optimization/Intercompany-planning.md
         - name: Exclude products with certain product lifecycle states
           href: master-planning/planning-optimization/product-lifecycle-state.md
+        - name: Replenishment methods and quantity modification
+          href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
         - name: Coverage time fences
           href: master-planning/planning-optimization/coverage-time-fence.md
         - name: Approve planned orders
@@ -3047,6 +3049,8 @@
           href: warehousing/tasks/register-items-advanced-warehousing.md
         - name: Register items for a basic warehousing enabled item using an item arrival journal
           href: warehousing/tasks/register-items-basic-warehousing.md
+        - name: Import inbound ASNs through the V2 data entity
+          href: warehousing/import-asn-v2-data-entity.md
         - name: Cross-dock products from receiving warehouse to stores
           href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
         - name: Set up a location directive for purchase order put-away
@@ -3451,6 +3455,18 @@
           href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:
+        - name: Decimal rounding of the physical updating quantity is incorrect
+          href: troubleshooting/warehousing/decimal-rounding-of-quantity.md
+        - name: Physical remaining quantity in the unit must be other than zero
+          href: troubleshooting/warehousing/physical-remaining-q.md
+        - name: Picked quantity is not sufficient during packing slip generation
+          href: troubleshooting/warehousing/picked-quantity-is-n.md
+        - name: Quantity exceeds over-delivery percentage during packing slip generation
+          href: troubleshooting/warehousing/quantity-exceeds-over-pack-slip.md
+        - name: Quantity that you are trying to update exceeds the quantity received/delivered
+          href: troubleshooting/warehousing/quantity-exceeds-rec-del.md
+        - name: Quantity exceeds under-delivery percentage during packing slip generation
+          href: troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md
         - name: An error occurs when choosing the location during picking list registration
           href: troubleshooting/warehousing/error-cannot-update.md
         - name: Packing station doesn't show product notes
