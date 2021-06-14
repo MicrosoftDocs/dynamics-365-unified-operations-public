@@ -2,9 +2,9 @@
 # required metadata
 
 title: Provision Human Resources
-description: This article walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
+description: This topic walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 04/23/2020
+ms.date: 06/14/2024
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,13 +33,13 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This article walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. This article assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.
+This topic walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. This topic assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.
 
 To begin, the global administrator should sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and create a new Human Resources project. Unless a licensing issue prevents you from provisioning Human Resource, assistance from Support or Dynamics Service Engineering (DSE) representatives isn't required.
 
 ## Provision a Human Resources trial environment
 
-Prior to provisioning your first sandbox or production, you may want to provision a [Human Resources trial environment](https://go.microsoft.com/fwlink/p/?LinkId=2115962) to validate Human Resources functionality. Trial environments contain fictitious data that can be used to explore the program in a safe manner. Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources. 
+Prior to provisioning your first sandbox or production environment, you may want to provision a [Human Resources trial environment](https://go.microsoft.com/fwlink/p/?LinkId=2115962) to validate Human Resources functionality. Trial environments contain fictitious data that can be used to explore the program in a safe manner. Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources. 
 
 Trial environments aren't intended to be used as production environments. They are limited to a 60-day trial period. When the trial period expires, the environment and all the data that's in it is deleted and can't be recovered. The environment cannot be converted to a sandbox or production environment. You can sign up for a new trial environment after the existing environment expires.
 
