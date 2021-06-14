@@ -4,7 +4,7 @@
 title: Provision Human Resources
 description: This topic walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 06/14/2024
+ms.date: 06/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
