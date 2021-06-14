@@ -141,7 +141,7 @@ Human Resources currently supports the following geographies:
 - Canada
 - Asia 
 
-When you create a Human Resources environment, you select a Power Apps environment to associate with the Human Resources environment. The Human Resources environment is then provisioned in the same Azure geography as the selected Power Apps environment. You can select where the Human Resources environment and database physically reside by selecting the geography when creating the Power Apps enviornment that will be associated with the Human Resources environment.
+When you create a Human Resources environment, you select a Power Apps environment to associate with the Human Resources environment. The Human Resources environment is then provisioned in the same Azure geography as the selected Power Apps environment. You can select where the Human Resources environment and database physically reside by selecting the geography when creating the Power Apps environment that will be associated with the Human Resources environment.
 
 You can select the Azure *geography* in which the environment is provisioned, but you can't select the specific Azure *region*. Automation determines the specific region within the geography in which the environment is created to optimize load balancing and performance. You can find information on Azure geographies and regions in the documentation on [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies).
 
