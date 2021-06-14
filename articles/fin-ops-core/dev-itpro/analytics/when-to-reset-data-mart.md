@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: When to reset a data mart
-description: This topic lists the circumstances that might be improved by resetting a data mart and circumstances in which resetting your data mart is unlikely to help.
+title: Data mart resets FAQ
+description: This topic provides answers to some frequently asked questions about data mart resets.
 author: jinniew
 ms.date: 06/09/2021
 ms.topic: article
@@ -27,33 +27,40 @@ ms.dyn365.ops.version: 10.0.15
 
 ---
 
-# When to reset a data mart
+# Data mart resets FAQ
 
-Resetting a data mart can be time consuming. Depending on the circumstances, this action may not be the solution that's needed. This topic lists the circumstances that might be improved by resetting a data mart, as well as circumstances in which resetting your data mart is unlikely to help.  
+This topic provides answers to some frequently asked questions about data mart resets. A reset of the data mart can be a time-consuming process and, depending on the circumstances, might not be the solution that is required. Therefore, this topic includes information about circumstances where a data mart reset might help and also circumstances where it's unlikely to help.
 
-## When do I need to do a data mart reset?
-Consider the following statements before resetting a data mart. If one or more of the statements apply to your situation, your organization can benefit by resetting the data mart.
+## What is a data mart reset?
+
+A data mart reset will disable the integration tasks, delete all the data mart data, and then re-enable integration.
+
+To ensure that old data isn't inserted, a data mart reset can be started only after existing tasks are completed. If you try to reset the data mart before all tasks are completed, you might receive a message such as, "The data mart reset was unable to be processed because of an active task. Please try again later."
+
+## When do I have to do a data mart reset?
+
+If one or more of the following statements apply to your situation, your organization can benefit from a data mart reset:
 
 - The application database was restored.
-- You've opened a support incident that and a support engineer has instructed you to reset the data mart as part of a troubleshooting step.
+- You opened a support ticket, and a Support engineer instructed you to reset the data mart as part of a troubleshooting step.
  
-## When is it not appropriate to reset a data mart?
-There are some circumstances when we don't recommend resetting a data mart. These include the following. 
+## When is a data mart reset inappropriate?
 
-- You're experiencing performance issues that are associated with a data sync. 
-- If you have a recurring reset pattern due to any of the following reasons: 
-  - **Missing data** - If you notice that data is missing, open a support ticket with Microsoft to review your report format and possible data sync issues. 
-  - **Stuck integration state** 
-  - **Stale records** - Stale records by themselves don't necessarily justify resetting the data mart. If you have a large data set, the reset process will take some time to run, but is unlikely to result in improvement.
- 
-## What is a data mart reset?
-- A reset will only start when existing tasks are complete. This ensures that old data is not inserted. At this point you may see a message such as, “The data mart reset was unable to be processed because of an active task. Please try again later.”
-- The reset will disable the integration tasks and delete all the data mart data. The integration is re-enabled.
+Here are some of the circumstances where we don't recommend that you reset the data mart:
 
-## If I reset the data mart, will I lose reports that I've already designed? 
-No, your reports are stored in SQL tables that are not impacted by a reset of the data mart. If you are concerned about losing any reports you've designed, you can back up the designs that you don't want to lose. To back them up, open Report Designer and go to **Company > Companies > Building Blocks > Export**.
+- You're experiencing performance issues that are associated with data synchronization.
+- You have a recurring reset pattern for any of the following reasons:
+
+    - **Missing data** – If you notice that data is missing, open a support ticket with Microsoft to review your report format and possible data synchronization issues.
+    - **Stuck integration state**
+    - **Stale records** – Stale records by themselves don't necessarily justify a data mart reset. If you have a large data set, the reset process will take some time to run but is unlikely to lead to any improvement.
+
+## If I reset the data mart, will I lose reports that I've already designed?
+
+No. Your reports are stored in SQL tables that aren't affected by a data mart reset. If you're concerned about losing reports that you've designed, you can back up the designs that you don't want to lose. To back up designs, open Report Designer, and go to **Company \> Companies \> Building Blocks \> Export**.
  
-## Is it necessary for all users to exit the system to reset the data mart?
-No, users can continue working in the system during the data mart reset. However, they won’t be able to access any reports that were created with Financial Reporter until the reset is finished. 
+## Do all users have to exit the system before I can reset the data mart?
+
+No. Users can continue to work in the system during a data mart reset. However, until the reset is completed, users won't be able to access any reports that were created by using Financial Reporter.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
