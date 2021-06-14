@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Regulatory Configuration Service - Delete RCS Environment
-description: This topic explains how the RCS System Administrator can delete their RCS environment and related data.
+title: Regulatory Configuration Service - Delete an RCS Environment
+description: This topic explains how an RCS System administrator can delete the RCS environment and related data.
 author: JaneA07
-ms.date: 06/09/2021
+ms.date: 06/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,41 +26,38 @@ ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.15
 
 ---
-# Regulatory Configuration Service (RCS) - Delete environment & related data
+# Regulatory Configuration Service (RCS) - Delete an RCS environment 
 
 [!include [banner](../includes/banner.md)]
 
-The following procedure explains how the RCS System Administrator can delete their RCS environment and related data. 
-Before you can complete those procedures, you must complete the following prerequisites:
--	To be able to delete the RCS environment the user needs to be the **System Admin** for that RCS environment.
--	**System Admin** needs to have the **‘RCSDeleteEnvironmentDuty’** role assigned.
+This topic explains how a RCS System administrator can delete the RCS environment and any related data. 
 
-# Delete RCS environment
--	Go to **RCS homepage**
--	Click on **Electronic reporting** workspace tile.
--	Under **Related links** click on **Delete RCS environment** link: 
+Before you can complete those procedures, the following prerequisites must be met:
+
+   - You must be the **System Admin** for the RCS environment.
+   - The **System Admin** role must have the **‘RCSDeleteEnvironmentDuty’** role assigned.
+
+## Delete an RCS environment
+
+1. Go to RCS and select the **Electronic reporting** workspace tile.
+2. Under **Related links**, select **Delete RCS environment**.
 
   ![Delete RCS environment in related links](media/01_RCS-Delete-Environ-Related-Link.PNG)  
   
--	Opens right hand panel **Delete RCS environment**
--	Review the associated deletion messages regarding scope of deletion:
+3. In the panel that opens, review the messages regarding scope of deleting the environment.
   
   ![Delete RCS environment message](media/01_RCS-Delete-Environ-Msg_noGUID.PNG)
   
-> [!NOTE]
-> Deleting your RCS Environment is irreversible.
-> This will delete the selected RCS environment, and related data including features and configurations stored in Global repository. Features and configuration shared with other organizations will be unshared and deleted if they have no dependencies. Feature and configurations with dependencies will be marked are discontinued.
+> [!IMPORTANT]
+> Deleting your RCS Environment can't be reversed. 
+> This will delete the selected RCS environment, and any related data including features and configurations stored in the Global repository. Features and configuration shared with other organizations will be unshared and deleted if they have no dependencies. Features and configurations with dependencies will be marked as discontinued.
 
--	To confirm delete type the RCS environment `GUID` for your environment in the field provided. (Note - The environment `GUID` is included in the body of the deletion message.)
--	After you enter the `GUID` the **Delete environment** button becomes active:
-
-![Delete options](media/01_RCS-Delete-Environ-Msg-Options.PNG)
-
--	Click **Delete environment**.
+4. Type the RCS environment GUID in the field provided to confirm that you want to delete your environment. The environment GUID is included in the deletion message. 
+5. Select **Delete environment**.
 	
-Your RCS Environment & related data is now deleted.
+Your RCS environment and any related data is now deleted.
 
-> [!NOTE]
-> After RCS environment deletion there is no ability to recover data. A new RCS environment can be created in any available RCS region.
+> [!IMPORTANT]
+> After you delete the RCS environment, there is no way to recover the data. A new RCS environment can be created in any available RCS region.
 
 
