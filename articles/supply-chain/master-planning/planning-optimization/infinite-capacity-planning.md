@@ -1,6 +1,6 @@
 ---
-title: Infinite capacity scheduling for Planning Optimization
-description: This topic provides information about infinite capacity scheduling for Planning Optimization. It also describes current limitations of the feature.
+title: Scheduling with infinite capacity
+description: This topic provides information about infinite capacity scheduling for Planning Optimization. It also describes current feature limitations.
 author: crytt
 ms.date: 6/9/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Infinite capacity scheduling for Planning Optimization feature introduces scheduling based on route information. The feature allows users to do job scheduling based on wide range of the route setup. Scheduling for Planning Optimization covers frequently used route settings like route operations sequence or route operation resource requirements. More details about implemented functionality provided later in this topic.
+Infinite capacity scheduling for Planning Optimization introduces scheduling based on route information. The feature allows users to do job scheduling based on wide range of the route setup. Scheduling for Planning Optimization covers frequently used route settings like route operations sequence or route operation resource requirements. More details about implemented functionality provided later in this topic.
 
 ## Enable infinite capacity scheduling feature
 
@@ -25,7 +25,7 @@ To make scheduling functionality available in your system, [Feature management](
  
 ## Introduced functionality
 
-Infinite capacity scheduling for Planning Optimization enables job scheduling based on route information. It is now possible to schedule production process using route setup. Even though the implemented feature has some limitations compared to what is supported by the built-in master planning, it supports the most common functionality required for manufacturing scenarios.
+Infinite capacity scheduling for Planning Optimization enables job scheduling based on route information. Making it possible to schedule production process using route setup. Even though the implemented feature has some limitations compared to what is supported by the built-in master planning, it supports the most common functionality required for manufacturing scenarios.
  
 Infinite capacity scheduling for Planning Optimization considers both *simple routes* and *route networks*. The user can set up complex routes with multiple starting points and operations that run in parallel using **Next** field on the route operation. The system would consider such complex route structures during the scheduling.
  
@@ -49,10 +49,10 @@ To sum up, scheduling for Planning Optimization supports the most frequently use
 
 There are following limitations that you need to consider while using scheduling for Planning Optimization:
 
-- The feature supports job scheduling only. Operation scheduling related setup is not taken into account during scheduling
-- The feature support infinite capacity only
-- The feature does not support resource load functionality
-- The feature does not consider route scrap
-- The feature support *Duration* only as primary resource selection
+- The feature supports job scheduling only. Operation scheduling related setup is not taken into account during scheduling, regardless of the scheduling method on master plans.
+- The feature support infinite capacity only.
+- The feature does not support resource load functionality.
+- The feature does not consider route scrap.
+- The feature support *Duration* only as primary resource selection.
  
 It is important to note that scheduling for Planning Optimization feature is being constantly improved and the consideration for more of the scheduling settings will be introduced with future releases.
