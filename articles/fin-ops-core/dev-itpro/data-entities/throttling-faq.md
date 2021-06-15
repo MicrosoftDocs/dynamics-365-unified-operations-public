@@ -91,7 +91,7 @@ You will receive the message, "This request could not be processed at this time 
 Where **{0}** will have the dynamically calculated retry-after time interval.
 
 ## Does throttling apply to Microsoft services?
-The following Microsoft services are initially exempt, and throttling doesn't apply to them: 
+Starting in version PU43 (10.0.19), the following Microsoft services are initially exempt, and throttling doesn't apply to them: 
 
    - Document Routing Agent (DRA)
    - Warehouse Mobile (WHSMobile)
@@ -103,7 +103,7 @@ The following Microsoft services are initially exempt, and throttling doesn't ap
    - Finance and Operations apps - Power Platform Integration (Virtual Entities)
    - Finance and Operations apps Connector 
 
-Though these services are exempt, telemetry is collected on the performance and impact of these services on the overall system health. 
+Though these services are exempt, telemetry is being collected on the performance and impact of these services on the overall system health. 
 
 The owners of the exempt services are prioritizing the implementation of 429 handlers by the end of 2021. At that time, the services will no longer be exempt and throttling will apply. Notification will be provided ahead of these changes, and the documentation will be updated.
 
