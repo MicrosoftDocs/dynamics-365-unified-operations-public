@@ -4,7 +4,7 @@
 title: Priority-based throttling FAQ
 description: This topic provides answers to frequently asked questions about priority-based throttling for OData and custom service-based integrations.
 author: hasaid
-ms.date: 05/19/2021
+ms.date: 06/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -91,7 +91,7 @@ You will receive the message, "This request could not be processed at this time 
 Where **{0}** will have the dynamically calculated retry-after time interval.
 
 ## Does throttling apply to Microsoft services?
-Starting in version PU43 (10.0.19), the following Microsoft services are initially exempt, and throttling doesn't apply to them: 
+Starting in Finance version 10.0.19, the following Microsoft services are initially exempt, and throttling doesn't apply to them: 
 
    - Document Routing Agent (DRA)
    - Warehouse Mobile (WHSMobile)
