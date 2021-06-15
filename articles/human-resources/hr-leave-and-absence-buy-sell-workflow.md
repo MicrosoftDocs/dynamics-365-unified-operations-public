@@ -84,6 +84,7 @@ These examples show how you can create different types of workflow conditions by
 
 [Leave and absence overview](hr-leave-and-absence-overview.md)<br>
 [Manage buy and sell leave policies](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+[Buy and sell leave](hr-employee-self-service-buy-sell-leave.md)
 
 
 
