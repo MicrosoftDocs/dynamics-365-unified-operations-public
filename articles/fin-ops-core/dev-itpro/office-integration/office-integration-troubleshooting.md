@@ -181,23 +181,6 @@ Skype integration is available for environments in the public cloud. For environ
 
 **Long-term fix:** We are working with the Office team to understand this issue so that it can be fixed in Excel.
 
-### Issue: When I send email by using SMTP, the server response is "5.7.60 SMTP; Client does not have permissions to send as this sender"
-
-**Issue:** When you send email by using Simple Mail Transfer Protocol (SMTP), you might receive an error message that states that the server response was "5.7.60 SMTP; Client does not have permissions to send as this sender." Alternatively, the error message might state, "Something went wrong while generating the report."
-
-**Explanation:** This issue is usually caused by incorrect setup of the Send As permissions for the email account. 
-
-**Fix:** You can configure Send As permissions in the Microsoft 365 admin center (portal.office.com/Admin). Click **Users** > **Active users** > **User** > **Edit mailbox permissions** > **Send email from this mailbox**. For more information, see [Give mailbox permissions to another user in Microsoft 365 - Admin Help](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E). 
-
-The following illustration shows the setup of SMTP on the **Email parameters** page. Here, you must provide the outgoing mail server, port, user name, password, and Secure Sockets Layer (SSL) requirements. 
-
-[![SMTP settings tab on the Email parameters page](./media/smtp.png)](./media/smtp.png)
-
-> [!IMPORTANT]
-> All users must give the SMTP account Send As permissions on their email setup in Microsoft 365. This configuration is done in the mailbox permissions in Microsoft Exchange or in the Microsoft 365 Admin portal. The following illustration shows the setup for the Test User account, where the STMP service account is added in the **Send As** section. 
-
-[![SMTP account that is granted Send As permissions in Microsoft 365](./media/o365.png)](./media/o365.png)
-
 ### \[Fixed\] Issue: The Office Add-ins don't yet support AD FS
 
 **Affected versions:** CTP8 and the February 2016 releases 
