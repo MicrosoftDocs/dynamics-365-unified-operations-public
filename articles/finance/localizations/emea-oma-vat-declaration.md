@@ -189,11 +189,10 @@ Complete the following steps to generate the tax declaration report.
 4. Select the sales tax payment version.
 5. Select **OK** to confirm the above steps. 
 6. Enter the amount of credit from the previous period, if applicable, or leave the amount as zero.
-7. In the **Generate details** field, select one of the following available options. The VAT return form is always generated in this process.
-   - **All** - Generate sales and purchase tax transactions details reports.
-   - **None** - Generate only the VAT declaration return form.
+7. In the **Generate details** field, select one or more of the following available options. The VAT return form is always generated in this process.
    - **Purchase transactions**
    - **Sales transactions**
+8. Select **OK** to confirm the generation of reports.
   
 
 
