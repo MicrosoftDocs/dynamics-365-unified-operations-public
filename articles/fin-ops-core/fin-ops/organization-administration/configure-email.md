@@ -304,8 +304,8 @@ There are a few standard steps that can help you troubleshoot the configuration 
     -  This page allows administrators to review all sent emails, including any errors that might have prevented an email from being sent. The **Email history** page will show interactive as well as non-interactive/batch emails. 
 2.  For any emails with an **Email status** of **Failed**, review the error message on the **Failure details** tab and determine if corrective actions should be taken. Some specific errors are covered elsewhere in this article.  
 
-#### Verify all email accounts have appropriate permissions
-In the Microsoft 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account. For more information, see [Enable sending email from another user's mailbox in Microsoft 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
+#### Verify all email accounts have appropriate Send as permissions
+In the Microsoft 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account. For more information, see [Give mailbox permissions to another user in Microsoft 365](https://docs.microsoft.com/en-us/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide).
 
 #### Verify user mailboxes
 Consider signing in to the affected (or all) user mailboxes to verify that they are valid and can be accessed using sign in.
@@ -343,11 +343,11 @@ If you continue to experience issues when email is sent via SMTP, you may be run
 
 ### SMTP emails fail to send with "Client does not have permissions to send as this sender"
 
-**Issue:** Emails sent via SMTP fail to send and trigger the following exception: "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occured with exception"
+**Issue:** When sending email using SMTP, some emails may fail to send with the following error: "Client does not have permissions to send as this sender."  
 
-**Explanation:** The SMTP password is encrypted using a key specific to a single environment.  This error typically surfaces when the password can no longer be decrypted after a database migration between environments.
+**Explanation:** This issue is usually caused by incorrect setup of the **Send As** permissions for the email account. 
 
-**Fix:** Clear and reenter the SMTP password on the [SMTP settings tab](#smpt-settings-tab) on the **Email parameters** page. 
+**Fix:** Ensure appropriate **Send As** permissions for the email account. For details, see [Verify all email accounts have appropriate Send as permissions](#verify-all-email-accounts-have-appropriate-send-as-permissions).
 
 ## Frequently asked questions
 
