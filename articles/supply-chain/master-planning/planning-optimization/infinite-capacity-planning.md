@@ -41,7 +41,7 @@ During the scheduling process, the system also considers the *resource requireme
 > [!NOTE]
 > Requirements related to human resources, such as skill or certificate requirements, are not yet supported.
 
-The operational properties **Setup time** and **Run time** are also supported by the the *Infinite capacity scheduling for Planning Optimization* feature. When you make these setting on a route operation, the scheduling process will create respective setup and process jobs.
+The operational properties **Setup time** and **Run time** are also supported by the *Infinite capacity scheduling for Planning Optimization* feature. When you make these setting on a route operation, the scheduling process will create respective setup and process jobs.
 
 In summary, scheduling for Planning Optimization supports the most frequently used scenarios. You can create the route, add primary and secondary operations, define next operations, add resource requirements, add setup time and run time, and the system will consider this information during scheduling.
 
