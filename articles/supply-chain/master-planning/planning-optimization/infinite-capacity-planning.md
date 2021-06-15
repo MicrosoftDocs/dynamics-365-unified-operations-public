@@ -21,7 +21,7 @@ The *Infinite capacity scheduling for Planning Optimization* feature introduces 
 
 ## Enable infinite capacity scheduling feature
 
-If your system doesn't already include the features described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Infinite capacity scheduling for Planning Optimization* feature.
+If your system doesn't already include the features described in this topic, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Infinite capacity scheduling for Planning Optimization* feature.
 
 ## Added functionality
 
