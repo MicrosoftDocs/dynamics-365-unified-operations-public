@@ -53,6 +53,11 @@ Your balances will either automatically update or go through an approval process
 
 Your balances will either automatically update or go through an approval process before updating. This depends on how the buy policy has been configured.
 
+
+## Troubleshooting 
+
+In case a buy or sell leave request workflow errors out or fails, administrators or users with **EssLeaveBuySellRequestApprover** privilege can review the message log for all leave buy and sell requests via this form: Leave and absence -> Link -> Buy and sell leave requests -> Message log (on the top left). The **Message log** should inform the users for how the transactions were processed and be able to view the associated workflow history. 
+
 ## See also
 
 [Leave and absence overview](hr-leave-and-absence-overview.md)</br>
