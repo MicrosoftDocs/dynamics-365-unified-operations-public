@@ -118,59 +118,37 @@ By adding this last record (NA), you define the following rule: When the tax cod
 
 The following table represent an example of how the user needs to configure these parameters to establish the configuration between the different boxes in the declaration form and sales tax code configuration implemented in Finance.
 
-|     Lookup result     |     Label                                                                                 |     Tax code (Code)     |     Name                               |
-|-----------------------|-------------------------------------------------------------------------------------------|-------------------------|----------------------------------------|
-|     Box1              |     Standard rated   sales                                                                |     VAT_ST              |     Sales                              |
-|     Box1Adj           |     Standard rated   sales adjustment                                                     |     VAT_STA             |     Sales                              |
-|     Box1              |     Standard rated   sales                                                                |     VAT_ST              |     SalesCreditNote                    |
-|     Box1Adj           |     Standard rated   sales adjustment                                                     |     VAT_STA             |     SalesCreditNote                    |
-|     Box3              |     Sales   subject to domestic reverse charge mechanism                                  |     VAT_RV              |     SalesReverseCharge                 |
-|     Box3Adj           |     Sales   subject to domestic reverse charge mechanism adjustment                       |     VAT_RVA             |     SalesReverseCharge                 |
-|     Box3              |     Sales   subject to domestic reverse charge mechanism                                  |     VAT_RV              |     SalesReverseChargeCreditNote       |
-|     Box3Adj           |     Sales   subject to domestic reverse charge mechanism adjustment                       |     VAT_RVA             |     SalesReverseChargeCreditNote       |
-|     Box4              |     Zero-rated   domestic sales                                                           |     VAT_0%              |     Sales                              |
-|     Box4Adj           |     Zero-rated   domestic sales adjustment                                                |     VAT_0%A             |     Sales                              |
-|     Box4              |     Zero-rated   domestic sales                                                           |     VAT_0%              |     SalesCreditNote                    |
-|     Box4Adj           |     Zero-rated   domestic sales adjustment                                                |     VAT_0%A             |     SalesCreditNote                    |
-|     Box5              |     Export                                                                                |     VAT_EXP             |     Sales                              |
-|     Box5Adj           |     Export   adjustment                                                                   |     VAT_EXPA            |     Sales                              |
-|     Box5              |     Export                                                                                |     VAT_EXP             |     SalesCreditNote                    |
-|     Box5Adj           |     Export   adjustment                                                                   |     VAT_EXPA            |     SalesCreditNote                    |
-|     Box6              |     Exempt   Sales                                                                        |     VAT_EXE             |     SaleExempt                         |
-|     Box6Adj           |     Exempt   Sales Adjustment                                                             |     VAT_EXE             |     SaleExempt                         |
-|     Box6              |     Exempt   Sales                                                                        |     VAT_EXE             |     SaleExemptCreditNote               |
-|     Box6Adj           |     Exempt   Sales Adjustment                                                             |     VAT_EXE             |     SalesExemptCreditNote              |
-|     Box8              |     Standard rated   domestic purchases                                                   |     VAT_ST              |     Purchase                           |
-|     Box8adj           |     Standard rated   domestic purchases adjustment                                        |     VAT_ST              |     Purchase                           |
-|     Box8              |     Standard rated   domestic purchases                                                   |     VAT_ST              |     PurchaseCreditNote                 |
-|     Box8adj           |     Standard rated   domestic purchases adjustment                                        |     VAT_ST              |     PurchaseCreditNote                 |
-|     Box9              |     Imports subject to   VAT either paid at customs or deferred                           |     VAT_IMP             |     Purchase                           |
-|     Box9Adj           |     Imports subject to   VAT either paid at customs or deferred adjustment                |     VAT_IMPA            |     Purchase                           |
-|     Box9              |     Imports subject to   VAT either paid at customs or deferred                           |     VAT_IMP             |     PurchaseCreditNote                 |
-|     Box9Adj           |     Imports subject to   VAT either paid at customs or deferred adjustment                |     VAT_IMPA            |     PurchaseCreditNote                 |
-|     Box10             |     Imports subject to   VAT accounted for through reverse charge mechanism               |     VAT_IRV             |     PurchaseReverseCharge              |
-|     Box10Adj          |     Imports subject to   VAT accounted for through reverse charge mechanism adjustment    |     VAT_IRVA            |     PurchaseReverseCharge              |
-|     Box10             |     Imports subject to   VAT accounted for through reverse charge mechanism               |     VAT_IRV             |     PurchaseReverseChargeCreditNote    |
-|     Box10Adj          |     Imports subject to   VAT accounted for through reverse charge mechanism adjustment    |     VAT_IRVA            |     PurchaseReverseChargeCreditNote    |
-|     Box11             |     Purchases subject   to domestic reverse charge mechanism                              |     VAT_PRV             |     PurchaseReverseCharge              |
-|     Box11Adj          |     Purchases subject   to domestic reverse charge mechanism adjustment                   |     VAT_PRVA            |     PurchaseReverseCharge              |
-|     Box11             |     Purchases subject   to domestic reverse charge mechanism                              |     VAT_PRV             |     PurchaseReverseChargeCreditNote    |
-|     Box11Adj          |     Purchases subject   to domestic reverse charge mechanism adjustment                   |     VAT_PRVA            |     PurchaseReverseChargeCreditNote    |
-|     Box12             |     Purchases from   non-registered suppliers, zero-rated/exempt purchases                |     VAT_0%              |     Purchase                           |
-|     Box12Adj          |     Purchases from   non-registered suppliers, zero-rated/exempt purchases adjustment     |     VAT_0%A             |     Purchase                           |
-|     Box12             |     Purchases from   non-registered suppliers, zero-rated/exempt purchases                |     VAT_0%              |     PurchaseCreditNote                 |
-|     Box12Adj          |     Purchases from   non-registered suppliers, zero-rated/exempt purchases adjustment     |     VAT_0%A             |     PurchaseCreditNote                 |
-|     Box12             |     Purchases from   non-registered suppliers, zero-rated/exempt purchases                |     VAT_EXE             |     PurchaseExempt                     |
-|     Box12Adj          |     Purchases from   non-registered suppliers, zero-rated/exempt purchases adjustment     |     VAT_EXEA            |     PurchaseExempt                     |
-|     Box12             |     Purchases from   non-registered suppliers, zero-rated/exempt purchases                |     VAT_EXE             |     PurchaseExemptCreditNote           |
-|     Box12Adj          |     Purchases from   non-registered suppliers, zero-rated/exempt purchases adjustment     |     VAT_EXEA            |     PurchaseExemptCreditNote           |
-|     Box15             |     Corrections from   previous period (between BHD (+/-) 5,000                           |     VAT_COR             |     Sales                              |
-|     Box15             |     Corrections from   previous period (between BHD (+/-) 5,000                           |     VAT_COR             |     SalesCreditNote                    |
-|     Box15             |     Corrections from   previous period (between BHD (+/-) 5,000                           |     VAT_COR             |     Purchase                           |
-|     Box15             |     Corrections from   previous period (between BHD (+/-) 5,000                           |     VAT_COR             |     PurchaseCreditNote                 |
-|     NA                |     Not applicable                                                                        |     *Not blank*         |     *Not blank*                        |
+| Lookup result | Label | Tax code (Code) | Name |
+|-|-|-|-|
+| Box1 | Standard rated   sales | VAT_ST | Sales |
+| Box1 | Standard rated   sales | VAT_ST | SalesCreditNote |
+| Box3 | Sales   subject to domestic reverse charge mechanism | VAT_RV | SalesReverseCharge |
+| Box3 | Sales   subject to domestic reverse charge mechanism | VAT_RV | SalesReverseChargeCreditNote |
+| Box4 | Zero-rated   domestic sales | VAT_0% | Sales |
+| Box4 | Zero-rated   domestic sales | VAT_0% | SalesCreditNote |
+| Box5 | Export | VAT_EXP | Sales |
+| Box5 | Export | VAT_EXP | SalesCreditNote |
+| Box6 | Exempt   Sales | VAT_EXE | SaleExempt |
+| Box6 | Exempt   Sales | VAT_EXE | SaleExemptCreditNote |
+| Box8 | Standard rated   domestic purchases | VAT_ST | Purchase |
+| Box8 | Standard rated   domestic purchases | VAT_ST | PurchaseCreditNote |
+| Box9 | Imports subject to   VAT either paid at customs or deferred | VAT_IMP | Purchase |
+| Box9 | Imports subject to   VAT either paid at customs or deferred | VAT_IMP | PurchaseCreditNote |
+| Box10 | Imports subject to   VAT accounted for through reverse charge mechanism | VAT_IRV | PurchaseReverseCharge |
+| Box10 | Imports subject to   VAT accounted for through reverse charge mechanism | VAT_IRV | PurchaseReverseChargeCreditNote |
+| Box11 | Purchases subject   to domestic reverse charge mechanism | VAT_PRV | PurchaseReverseCharge |
+| Box11 | Purchases subject   to domestic reverse charge mechanism | VAT_PRV | PurchaseReverseChargeCreditNote |
+| Box12 | Purchases from   non-registered suppliers, zero-rated/exempt purchases | VAT_0% | Purchase |
+| Box12 | Purchases from   non-registered suppliers, zero-rated/exempt purchases | VAT_0% | PurchaseCreditNote |
+| Box12 | Purchases from   non-registered suppliers, zero-rated/exempt purchases | VAT_EXE | PurchaseExempt |
+| Box12 | Purchases from   non-registered suppliers, zero-rated/exempt purchases | VAT_EXE | PurchaseExemptCreditNote |
+| Box15 | Corrections from   previous period (between BHD (+/-) 5,000 | VAT_COR | Sales |
+| Box15 | Corrections from   previous period (between BHD (+/-) 5,000 | VAT_COR | SalesCreditNote |
+| Box15 | Corrections from   previous period (between BHD (+/-) 5,000 | VAT_COR | Purchase |
+| Box15 | Corrections from   previous period (between BHD (+/-) 5,000 | VAT_COR | PurchaseCreditNote |
+| NA | Not applicable | *Not blank* | *Not blank* |
 
-Box2 and Box2Ajd represent the total amount of sales to GCC states and all adjustments to sales to registered customers in GCC states will be treated as exports (Box5 and Box5Adj) until integrated GCC customs system goes live. After the tax authority enables this option, then the configuration should be changed to achieve the original requirement. 
+Box2 represents the total amount of sales to GCC states to registered customers in GCC states will be treated as exports (Box5) until integrated GCC customs system goes live. After the tax authority enables this option, then the configuration should be changed to achieve the original requirement. 
 
 To avoid issues when the report is generated, create all mappings where the sales tax codes are posted. For example, if the line has SalesCreditNote as the name of the operation is omitted in this configuration, and tax transactions are posted by using sales tax code VAT_ST, you will encounter issues when the report is generated. We recommend that you use the **Tax > Inquire > Posted sales tax** menu to review all posted sales tax codes and those that are not included in this mapping of the configuration.
 
@@ -195,12 +173,10 @@ The following table provides the available values in the **Name** column. This i
 
 
 ## Set up General ledger parameters
-
 To generate the VAT return form report in Microsoft Excel format, you must define an ER format on the **General ledger parameters** page.
 
 1. Go to **Tax** > **Setup** > **General ledger parameters**.
-2. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (BH)**. If you leave the field blank, the standard sales tax report will be generated in SSRS format.
-3. Select the **Category hierarchy**. This category enables the C\commodity code in Foreign trade tab transactions to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports.
+2. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (OM)**. If you leave the field blank, the standard sales tax report will be generated in SSRS format.
 
 ## Generate a VAT return report
 The process of preparing and submitting a VAT return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
