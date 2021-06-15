@@ -57,7 +57,7 @@ On the **Default order setting** page for a released product, you can specify ea
 
     For example, if the **Max. order quantity** field is set to *100*, and the demand is 450, four planned orders for a quantity of 100 and one planned order for a quantity of 50 will be created.
 
-## Examples of replenishment that uses the Min./Max. coverage code
+## Examples of replenishment that use the Min./Max. coverage code
 
 If you don't specify a value in the **Multiple** field for a product on the **Default order setting** page, and if you're using the *Min./Max.* replenishment method, Planning Optimization will replenish the inventory up to a specific level when the predicted on-hand level is below a specific threshold.
 
