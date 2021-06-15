@@ -125,4 +125,7 @@ For information about accelerating the creation of a budget, see [Budget proposa
 
 Please send an email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) if you are interested in providing feedback or need support.
 
+## Privacy
+This feature is being offered as preview. As a preview feature, you should not use the resulting machine learning models to drive or influence your business decisions or budgeting proposals. Your use of this feature is governed by [Supplemental Terms of Use](https://go.microsoft.com/fwlink/?linkid=2105274).
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
