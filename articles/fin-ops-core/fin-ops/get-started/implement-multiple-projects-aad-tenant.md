@@ -33,18 +33,18 @@ For any new cloud project, one Microsoft Dynamics Lifecycle Services (LCS) Imple
 - A global implementation's requirements for data residency, latency, or data volume can't be met by one instance.
 - Different business units in an organization are implementing the product separately as independent applications.
 
-## Creating multiple LCS projects
+## Create multiple LCS projects
 
-Create a new additional implementation project in your existing organization with the below flow:
+Create a new additional implementation project in your existing organization using the following steps:
 
-1. Click on the ‘+’ button on the LCS homepage
+1. Select the **+** button on the LCS home page.
     [![Create implementation project](./media/CreateNewImplementationProject.jpg)](./media/CreateNewImplementationProject.jpg)
-2. Select Implementation as the Project Type from the slide-in dialog that appears
+2. Select **Implementation** as the project type.
     [![Create implementation project type selection](./media/CreateNewImplementationProjectDialog1.jpg)](./media/CreateNewImplementationProjectDialog1.jpg)
-3. Provide details of the new implementation project
+3. Enter information about the the new implementation project.
     [![Create implementation project details dialog](./media/CreateNewImplementationProjectDialog2.jpg)](./media/CreateNewImplementationProjectDialog2.jpg)
-4. Click on “Create” button to finish creating your project. You may be presented with a confirmation box to ensure you wish to create an additional implementation project if you already have an existing implementation project in your organization. If you receive an error message, it might be because your organization does not have the required total license count to support an additional implementation project.
-5. Once the project is created, you will land in the newly created implementation project and you will be the sole owner of the project.
+4. Select **Create** to finish creating your project. A confirmation box might display to ensure that you want create an additional implementation project if you already have an existing implementation project in your organization. If you receive an error message, it might be because your organization does not have the required total license count to support an additional implementation project.
+5. After the project is created, the newly created implementation project will display and you will be the owner of the project.
 
 Manual intervention by the Microsoft Dynamics Service Engineering (DSE) team is required in order to create additional LCS projects on a shared Azure AD tenant. This approach should be used only if a single-instance strategy truly isn't feasible. Before additional LCS projects can be created, customers must provide the business justification and confirm that they understand all the implications of the approach. This process should be started as early in the implementation lifecycle as possible. Customers who decide to proceed should open a support ticket through their existing LCS project.
 
@@ -56,15 +56,15 @@ Because the licenses are associated with the Azure AD tenant, the **Subscription
 
 Users who access multiple environments in parallel must be licensed separately for each environment. A user can only be assigned one license for each product for each Azure AD tenant. This allocation of licensing requirements for LCS projects for specific users must be documented outside the system. For additional information about licensing, download the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
-## Editing the Licenses allocated to projects
+## Edit the licenses allocated to projects
 
-Determine how you wish to assign licenses across the implementation projects in your organization in order to ensure that the number of licenses assigned across all projects does not exceed the total license count purchased by the customer.
+Determine how you want to assign licenses across the implementation projects in your organization in order to ensure that the number of licenses assigned across all projects does not exceed the total license count purchased by the customer.
 
-Once the allocation has been determined, visit the [Subscription Estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) tool in each implementation project and edit the active subscription estimate therein to apply the desired license allocation for that project.  
+After the allocation has been determined, visit the [Subscription Estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) tool for each implementation project and edit the active subscription estimate to apply the desired license allocation for that project.  
 
 ## Disadvantages of multiple LCS projects
 
-There are some disadvantages to having multiple LCS projects. Here are some of them:
+The following are some disadvantages to having multiple LCS projects:
 
 - Master data isn't shared.
 - Intercompany transactions aren't supported.
@@ -83,8 +83,8 @@ There are also advantages to having multiple LCS projects. Here are some of them
 
 ## Online deployments in China sovereign cloud
 
-If your implementation includes China deployment/rollout, be informed that Dynamics 365 Finance online deployment became available in Mainland China starting in April 2019. For more information, see [Finance and Operations apps - operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md). This deployment is designed to comply with regulatory requirements in China and the services  include a physically separated instance of a cloud service with a different tenant (Azure Active Directory) that is operated and transacted by 21Vianet.
+If your implementation includes China deployment/rollout, Dynamics 365 Finance online deployment will be available in mainland China starting in April 2019. For more information, see [Finance and Operations apps - operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md). This deployment is designed to comply with regulatory requirements in China. The services include a physically separated instance of a cloud service with a different tenant (Azure Active Directory) that is operated and transacted by 21Vianet.
 
-This is a single organization in multiple clouds with different tenant (Azure Active Directory). The advantages and disadvantages of multi-Lifecycle Services projects or production environments described above are still applicable, but the licensing requirement and requesting procedure are different. Work with your Microsoft Account Executive or your implementation partners for any process assistance.
+This is a single organization in multiple clouds with different tenant (Azure Active Directory). The advantages and disadvantages of multiple Lifecycle Services projects or production environments described above are still applicable, but the licensing requirements and requesting procedures are different. Work with your Microsoft Account Executive or your implementation partners for any process assistance.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
