@@ -1,10 +1,10 @@
 ---
 title: Business documents supported by Global Inventory Accounting
-description: This topics provides a list of business documents supported by Global Inventory Accounting and examines the example of purchase order documents in detail.
+description: This topic lists the business documents that are supported by Global Inventory Accounting. It also provides a detailed example for purchase order documents.
 author: AndersGirke
 ms.date: 06/18/2021
 ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,20 +17,20 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include [banner](../includes/banner.md)]
 
-When the Global Inventory Accounting Add-in is fully set up, it's ready to process inventory-related documents entered in Supply Chain Management.
+After the Global Inventory Accounting Add-in is fully set up, it's ready to process inventory-related documents that are entered in Microsoft Dynamics 365 Supply Chain Management.
 
 ## Supported business documents
 
 There are two types of business documents:
 
-- **Documents with journal** – these include product receipt, purchase invoice, packing slip, sales invoice, and so on.
-- **Documents without journal** – these include counting, movement, inventory adjustment, and so on.
+- **Documents that have a journal** – These documents include product receipt, purchase invoice, packing slip, and sales invoice documents.
+- **Documents that don't have a journal** – These documents include counting, movement, and inventory adjustment documents.
 
-Later in this topic, we will use purchase order as example to illustrate the process.
+Later in this topic, purchase orders will be used as an example to illustrate the process.
 
-The following table lists the documents supported by the current release.
+The following table lists the documents that the current release supports.
 
-| **Document type**  | **Document**    |
+| Document type      | Document        |
 |--------------------|-----------------|
 | Purchase Order     | Product Receipt |
 | Purchase Order     | Invoice         |
@@ -44,42 +44,44 @@ The following table lists the documents supported by the current release.
 | Transfer Order     | Receive         |
 
 > [!IMPORTANT]
-> Global Inventory Accounting processes the documents entered in Supply Chain Management asynchronously. No error messages will be shown for problematic documents.
+> Global Inventory Accounting asynchronously processes the documents that are entered in Supply Chain Management. No error messages will be shown for problematic documents.
 
 ## Example: Purchase order
 
 ### Product receipt
 
-Post product receipts as usual. On the **All purchase orders page**, select a purchase order and, on the Action Pane, open the **Receive** tab and select **Product receipt** to open the **Product receipt journal** page. The operation event and cost accounting event are generated per line, so open the **Lines** tab and select **Inventory \> Events and measurements** from the toolbar to open the **Events and measurements** page.
+Post product receipts in the usual way. On the **All purchase orders** page, select a purchase order, and then, on the Action Pane, on the **Receive** tab, select **Product receipt** to open the **Product receipt journal** page. An operation event and a cost accounting event are generated for each line. Therefore, select the **Lines** tab, and then select **Inventory \> Events and measurements** to open the **Events and measurements** page.
 
-Global Inventory Accounting is an event and measurement-based accounting system. In the measurement line grid, you can find a list of measurements, and each measurement has a list of dimensions.
+Global Inventory Accounting is an accounting system that is based on events and measurements. The measurement line grid on the **Events and measurements** page shows a list of measurements. Each measurement has a list of dimensions.
 
-For each operation event, there are following two types of measurement:
+For each operation event, there are two types of measurement:
 
-- **Operations measurements** – Describe the business documents with cost information. There is product quantity with the unit of measure in the document, and measurements that impact the inventory value, including extended price, discount, discount percent and line charge.
-- **Resource accounting measurements** – Measurements from the inventory register perspective, which describe the document impacts to the inventory in inventory unit of measure. There are multiple lines of resource accounting measurement in case there are multiple inventory registrations.
+- **Operations measurements** – These measurements describe the business documents with cost information. One measurement is the product quantity with the unit of measure that is used in the document. There are also measurements that affect the inventory value, such as extended price, discount, discount percent, and line charge.
+- **Resource accounting measurements** – These measurements are from the inventory register perspective. They describe the document's impact on the inventory in the inventory unit of measure. If there are multiple inventory registrations, there are multiple lines of resource accounting measurements.
 
-The dimensions are organized as follows:
+The dimensions are organized in the following way:
 
-- **Duality** – Describes the agents participating in the economic events. For external business documents, the primal dimensions describe the information of the legal entity where the document is entered, while the dual dimensions describe the information of the vendor, customer, and so on. For internal documents (for example, transfer order) the dual dimensions describe the counterpart warehouse.
-- **Dimension type** – Categorizes the dimensions.
+- **Duality** – Duality describes the agents who participate in the economic events. For external business documents, the primal dimensions describe the legal entity where the document is entered, whereas the dual dimensions describe the vendor, customer, and so on. For internal business documents (for example, transfer orders), the dual dimensions describe the counterpart warehouse.
+- **Dimension type** – Dimension types categorize the dimensions.
 - **Dimension** – The name of the dimension.
 - **Dimension value** – The value of the dimension.
 
 ### Cost accounting event
 
-The cost accounting service takes the operational events and measurements as the input and does the proper accounting for each related ledger following the attached currency and convention. Selecting **Cost accounting events and measurements** to view the cost accounting event. It follows the same methodology of the operation events, but uses different measurements. There are three major measurement types: product cost quantity, product cost, and variance. There are subledger accounts to further classify the measurements. There might be multiple ledgers, which are linked to the legal entity where the document is entered. You can view the events and measurements for each ledger by changing the value of the **Ledger** field.
+The cost accounting service takes the operational events and measurements as input. It then does the appropriate accounting for each related ledger, based on the attached currency and convention. You can select **Cost accounting events and measurements** to view the cost accounting event. The cost accounting event follows the same methodology as operation events, but it uses different measurements. There are three major measurement types: product cost quantity, product cost, and variance.
+
+Subledger accounts are used to further classify the measurements. There might be multiple ledgers. These ledgers are linked to the legal entity where the document is entered. You can view the events and measurements for each ledger by changing the value of the **Ledger** field.
 
 ### Cost element
 
-Following the cost element policy attached to the ledger, the system assigns a cost element to each accounted operation event measurement that impacts the inventory cost, including: extended price, discount, discount percent and line charge.
+Based on the cost element policy that is attached to the ledger, the system assigns a cost element to each accounted operation event measurement that affects the inventory cost. These measurements include extended price, discount, discount percent, and line charge.
 
 ### Measurement line details
 
-The **Overview** tab shows the details of the attached policies. The cost object dimensions show the cost object based on the cost object policy, and specific identification dimensions show the batch number in case the cost flow assumption is *Specific – Batch*.
+The **Overview** tab shows the details of the attached policies. The cost object dimensions show the cost object, based on the cost object policy. Specific identification dimensions show the batch number if the cost flow assumption is *Specific – Batch*.
 
 ### Purchase invoice
 
-Post the invoice as usual and open the invoice journal (on the Action Pane, open the **Invoice** tab and, from the **Journals** group, select **Invoice**). The operation event and cost accounting event are generated per line, so open the **Lines** tab and select **Inventory \> Events and measurements** from the toolbar to open the **Events and measurements** form. It shows the same measure type, but different measure role and measure modifier, which indicate a different impact to the agent (legal entity).
+Post the invoice in the usual way. Then, on the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice** to open the invoice journal. An operation event and a cost accounting event are generated for each line. Therefore, select the **Lines** tab, and then select **Inventory \> Events and measurements** to open the **Events and measurements** page. The **Events and measurements** page shows the same measure type. However, because the page shows a different measure role and measure modifier, the impact on the agent (legal entity) differs.
 
-Select **Cost accounting events and measurements** to view the cost accounting event. The system now outflows the inventory quantity and cost from *Goods received not invoiced inventory* into *Cost of goods purchased*.
+Select **Cost accounting events and measurements** to view the cost accounting event. The inventory quantity and cost now flow out from *Goods received not invoiced inventory* to *Cost of goods purchased*.
