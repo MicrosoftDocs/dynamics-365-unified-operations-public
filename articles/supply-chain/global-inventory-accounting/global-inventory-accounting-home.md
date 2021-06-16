@@ -1,6 +1,6 @@
 ---
 title: Global Inventory Accounting home page
-description: This topic is the home page for the Global Inventory Accounting Add-in for Microsoft Dynamics 365 Supply Chain Management
+description: This topic is the home page for the Global Inventory Accounting Add-in for Microsoft Dynamics 365 Supply Chain Management.
 author: AndersGirke
 ms.date: 06/18/2021
 ms.topic: article
@@ -17,13 +17,11 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include [banner](../includes/banner.md)]
 
-## Overview
+International organizations are under increasing pressure from authorities to comply with local and global accounting standards. The valuation of inventory plays a significant role in ensuring compliance. The Global Inventory Accounting Add-in for Microsoft Dynamics 365 Supply Chain Management provides a comprehensive solution that enables organizations (especially international organizations) to use multiple costing ledgers to do inventory accounting. Therefore, those organizations can comply with multiple accounting standards and internal management accounting at the same time.
 
-The Global Inventory Accounting Add-in for Microsoft Dynamics 365 Supply Chain Management provides a comprehensive solution that enables organizations (especially international organizations) to perform inventory accounting using multiple costing ledgers. This enables organizations to comply with multiple accounting standards and internal management accounting at the same time.
+Global Inventory Accounting lets you account inventory in multiple representations by applying the appropriate valuation method (standard cost, average, or specific identification) and the selected accounting currency per instance. Global Inventory Accounting enables organizations to report inventory statements and subledger accounting values (also known as the inventory balance and the cost of goods sold) in what is often referred to as dual valuation and/or dual currency.
 
-International organizations are under increasing pressure from authorities to comply with local and global accounting standards, and the valuation of inventory plays a significant role in securing compliance. Global Inventory Accounting lets you account inventory in multiple representations by applying the appropriate valuation method (standard cost, average, or specific identification) and the selected accounting currency per instance. Global Inventory Accounting enables organizations to report inventory statements and subledger accounting values (also known as the inventory balance and the cost of goods sold) in what is often referred to as dual valuation and/or dual currency.
-
-Inventory accounting is performed in individual ledgers. Several cost accounting ledgers can be created for each legal entity in an organization as needed, thereby ensuring that multiple inventory representations can be obtained. All documents (such as purchase orders, sales orders, transfer orders, and so on) posted in a legal entity will be accounted in all the costing ledgers associated with that legal entity.
+Inventory accounting is done in individual ledgers. Several cost accounting ledgers can be created for each legal entity in an organization, as required. Therefore, multiple inventory representations can be obtained. All documents that are posted in a legal entity (such as purchase orders, sales orders, and transfer orders) will be accounted in all the costing ledgers that are associated with that legal entity.
 
 A cost accounting ledger is defined by a combination of the following elements:
 
@@ -32,11 +30,11 @@ A cost accounting ledger is defined by a combination of the following elements:
 - Exchange rate table
 - Convention
 
-A convention is a collection of inventory accounting policies that can be associated to one or more ledgers. They enable you to share a common convention within your organization.
+A convention is a collection of inventory accounting policies that can be associated with one or more ledgers. Conventions let you share a common set of policies within your organization.
 
 ## Availability
 
-Global Inventory Accounting is currently available in the following Azure geographies:
+Global Inventory Accounting is currently available in the following Azure geographic regions:
 
 - United States
 - Europe
@@ -44,8 +42,8 @@ Global Inventory Accounting is currently available in the following Azure geogra
 - Australia
 - Canada
 
-If you try to install the add-in from another geographic region, Microsoft Dynamics Lifecycle Services (LCS) will show a message that your geography is not supported. Global Inventory Accounting does not support on-premises deployments of Supply Chain Management.
+If you try to install the add-in from another geographic region, Microsoft Dynamics Lifecycle Services (LCS) will show a message that your geographic region isn't supported. Global Inventory Accounting doesn't support on-premises deployments of Supply Chain Management.
 
 ## Licensing
 
-Global Inventory Accounting is licensed together with the standard cost management features available for Supply Chain Management. You do not have to purchase an additional license to use Global Inventory Accounting.
+Global Inventory Accounting is licensed together with the standard cost management features available for Supply Chain Management. You don't have to purchase an additional license to use Global Inventory Accounting.
