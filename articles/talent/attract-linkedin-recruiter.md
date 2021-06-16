@@ -118,6 +118,9 @@ If candidates agree to share their LinkedIn profiles with any user in your organ
 1. In Attract, select **Talent pools** on the left.
 2. Select the LinkedIn talent pool. You will see a list of candidates and their stub profiles from LinkedIn. Stub profiles contain the candidate's first and last names and email address, if the candidate chose to share it.
 
+> [!NOTE]
+> Starting June 7, 2021, there is a change to how InMail Stub profiles are created for candidates. Currently, InMail Stub profiles are created for contacts who have opted out of sharing contact information and are getting created as incomplete or duplicate candidate records. Moving forward, a stub profile for the candidate will be created only if the candidate opts-in to share contact information with the recruiter. There will also be a toggle in LinkedIn Recruiter settings that will allow a customer to disable InMail Stub Profiles from being created if they do not want any profiles created upon InMail, even if the candidate decides to share contact information. This will only impact InMail Stub Profiles going forward, customers will not lose any existing InMail Stub Profiles that have already been created prior to ramp.
+
 ## See also
 
 [Attract integration with LinkedIn FAQ](./attract-linkedin-faq.md)
