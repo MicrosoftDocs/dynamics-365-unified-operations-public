@@ -56,7 +56,8 @@ Your balances will either automatically update or go through an approval process
 
 ## Troubleshooting 
 
-In case a buy or sell leave request workflow errors out or fails, administrators or users with **EssLeaveBuySellRequestApprover** privilege can review the message log for all leave buy and sell requests via this form: Leave and absence -> Link -> Buy and sell leave requests -> Message log (on the top left). The **Message log** should inform the users for how the transactions were processed and be able to view the associated workflow history. 
+If a buy or sell leave request workflow fails, users with the **EssLeaveBuySellRequestApprover** privilege can review the message log for all leave buy and sell requests. To do this, go to **Leave and absence > Link > Buy and sell leave requests > Message log** (on the upper left). The **Message log** shows users how the transactions were processed and the associated workflow history.
+
 
 ## See also
 
