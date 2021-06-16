@@ -4,7 +4,7 @@
 title: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
 description: This topic describes how to set up and use Microsoft Dynamics 365 Finance to interoperate with the SII system of Spain.
 author: liza-golub
-ms.date: 07/23/2020
+ms.date: 06/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,14 +35,14 @@ For more information about the SII system of Spain, see the [Immediate Supply of
 
 ## Overview
 
-Microsoft Dynamics 365 Finance supports full cycle of processing including the formats generation and submission of the following reports to SII system of Spain:
+Microsoft Dynamics 365 Finance supports the full cycle of processing, including the format generation and submission of the following reports to the SII system of Spain:
 
--   'Libro de registro de facturas Expedidas' - Record book of issued invoices 
--   'Libro de registro de facturas Recibidas' - Record book of received invoices
--   'Libro de registro de determinadas operaciones intracomunitarias' - Record book of certain intra-community operations
--   'Cobros sobre facturas registradas en el Libro de registro de Facturas Expedidas' - Payments for invoices registered in the Record Book of invoices issued 
--   'Pagos para facturas registradas en el Libro de registro de Facturas Recibidas' - Payments for invoices registered in the Record Book of invoices received
--   'Cobros en Metálico' - Payments in cash
+   - 'Libro de registro de facturas Expedidas': Record book of issued invoices 
+   - 'Libro de registro de facturas Recibidas': Record book of received invoices
+   - 'Libro de registro de determinadas operaciones intracomunitarias': Record book of certain intra-community operations
+   - 'Cobros sobre facturas registradas en el Libro de registro de Facturas Expedidas': Payments for invoices registered in the record book of issued invoices
+   - 'Pagos para facturas registradas en el Libro de registro de Facturas Recibidas': Payments for invoices registered in the record book of received invoices
+   - 'Cobros en Metálico': Payments in cash
 
 This topic describes how to set up and use Microsoft Dynamics 365 Finance to interoperate with the SII system of Spain. It includes information about how to complete the following tasks:
 
@@ -434,12 +434,12 @@ To enable the system to define the invoice type based on the setup of additional
 
 ### Algorithm to define the TipoRectificativa tag for a credit note
 
-Both formats 'Libro de registro de facturas Recibidas' (invoices received) and 'Libro de registro de facturas Expedidas' (invoices issued) must include a 'TipoRectificativa' tag for reporting of credit notes. This tag reports the type of the credit note and can have one of the following values:
+Both formats **Libro de registro de facturas Recibidas** (invoices received) and **Libro de registro de facturas Expedidas** (invoices issued) must include a **TipoRectificativa** tag to report credit notes. This tag reports the type of credit note and can have one of the following values:
 
--   'I' (INCREMENTAL) - incremental
--   'S' (SUSTITUTIVA) - substitute
+   - **I** (INCREMENTAL): Incremental
+   - **S** (SUSTITUTIVA): Substitute
 
-To report a credit note with 'I' value in 'TipoRectificativa' tag, you must select **Correction for differences only** in the **Correction method** field of **Credit invoicing** dialog when you specify the original invoice for the credit note by using **Credit invoicing** function before the credit note posting.
+To report a credit note with an **I** value in the **TipoRectificativa** tag, before you post the credit note, when you specify the original invoice by using the **Credit invoicing** function, select **Correction for differences only** in the **Correction method** field of **Credit invoicing** dialog box.
 
 ### Algorithm to define the TipoOperacion (Intra-community operation type) additional field
 
@@ -654,11 +654,11 @@ To report invoices to the SII system, follow these steps.
 
 ### Run SII processing in batch mode for automated processing of interoperation with the SII system
 
-1.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
+1.  Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic message items**.
 2.  On the Action Pane, select **Run processing**.
 3.  In the dialog box, in the **Processing** field, select **SII**.
 4.  If you want to run all the possible actions for **SII** processing, clear the **Choose action** check box. If you want to run only a specific action, select the **Choose action** check box, and then, in the **Action** field, select the action to run.
-5.  Define the parameters of the batch processing on the **Run in the background** FastTab of the **Run processing** dialog box. For more information about batch processing, see [Batch processing overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview).
+5.  Define the parameters of the batch processing on the **Run in the background** FastTab of the **Run processing** dialog box. For more information about batch processing, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ### Exclude an invoice from reporting to the SII system
 
