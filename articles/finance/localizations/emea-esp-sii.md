@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-According to R.D. 596/2016 in Spain, a new value-added tax (VAT) management system that is based on the Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA [SII]) allows for a two-way, automated relationship between the Spanish Tax Agency (La Agencia Estatal de Administración Tributaria [AEAT]) and the taxpayer. In the rest of this topic, this system will be referred to as the SII system. Starting July 1, 2017, taxpayers who are subject to SII, and others who voluntarily adopt it, must send details of their billing records within four days through online filing on the AEAT website.
+According to R.D. 596/2016 in Spain, a new value-added tax (VAT) management system that is based on the Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA [SII]) allows for a two-way, automated relationship between the Spanish Tax Agency (La Agencia Estatal de Administración Tributaria [AEAT]) and the taxpayer. In this topic, this system will be referred to as the SII system. Starting July 1, 2017, taxpayers who are subject to SII, and others who voluntarily adopt it, must send details of their billing records within four days through online filing on the AEAT website.
 
 For more information about the SII system of Spain, see the [Immediate Supply of Information on VAT (SII) official website](https://www.agenciatributaria.es/AEAT.internet/en_gb/Inicio/La_Agencia_Tributaria/Campanas/Suministro_Inmediato_de_Informacion_en_el_IVA__SII_/Suministro_Inmediato_de_Informacion_en_el_IVA__SII_.shtml).
 
@@ -434,12 +434,12 @@ To enable the system to define the invoice type based on the setup of additional
 
 ### Algorithm to define the TipoRectificativa tag for a credit note
 
-Both formats **Libro de registro de facturas Recibidas** (invoices received) and **Libro de registro de facturas Expedidas** (invoices issued) must include a **TipoRectificativa** tag to report credit notes. This tag reports the type of credit note and can have one of the following values:
+Both formats, **Libro de registro de facturas Recibidas** (invoices received) and **Libro de registro de facturas Expedidas** (invoices issued), must include a **TipoRectificativa** tag to report credit notes. This tag reports the type of credit note and can have one of the following values:
 
    - **I** (INCREMENTAL): Incremental
    - **S** (SUSTITUTIVA): Substitute
 
-To report a credit note with an **I** value in the **TipoRectificativa** tag, before you post the credit note, when you specify the original invoice by using the **Credit invoicing** function, select **Correction for differences only** in the **Correction method** field of **Credit invoicing** dialog box.
+To report a credit note with an **I** value in the **TipoRectificativa** tag, before you post the credit note, when you specify the original invoice by using the **Credit invoicing** function, select **Correction for differences only** in the **Correction method** field in the **Credit invoicing** dialog box.
 
 ### Algorithm to define the TipoOperacion (Intra-community operation type) additional field
 
@@ -653,12 +653,13 @@ To report invoices to the SII system, follow these steps.
 4.  If you want to run all the possible actions for **SII** processing, clear the **Choose action** check box. If you want to run only a specific action, select the **Choose action** check box, and then, in the **Action** field, select the action to run.
 
 ### Run SII processing in batch mode for automated processing of interoperation with the SII system
+To run SII processing in batch mode for automated processing of interoperation with the SII system, follow these steps:
 
 1.  Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic message items**.
 2.  On the Action Pane, select **Run processing**.
 3.  In the dialog box, in the **Processing** field, select **SII**.
 4.  If you want to run all the possible actions for **SII** processing, clear the **Choose action** check box. If you want to run only a specific action, select the **Choose action** check box, and then, in the **Action** field, select the action to run.
-5.  Define the parameters of the batch processing on the **Run in the background** FastTab of the **Run processing** dialog box. For more information about batch processing, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
+5.  Define the parameters of the batch processing on the **Run in the background** FastTab in the the **Run processing** dialog box. For more information about batch processing, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ### Exclude an invoice from reporting to the SII system
 
