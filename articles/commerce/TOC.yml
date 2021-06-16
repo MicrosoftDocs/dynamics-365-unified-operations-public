@@ -1456,6 +1456,12 @@
         items:
         - name: Formula language
           href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json  
+        - name: Supported data types for ER formulas
+          items:
+          - name: Primitive data types 
+            href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/commerce/toc.json
+          - name: Composite data types
+            href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/commerce/toc.json
         - name: Functions
           items:
           - name: Container 
