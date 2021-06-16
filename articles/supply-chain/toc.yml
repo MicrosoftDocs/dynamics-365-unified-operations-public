@@ -603,6 +603,20 @@
         href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
       - name: Use cost control workspace for Finance and Operations mobile application
         href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+    - name: Global Inventory Accounting
+      items:
+      - name: Global Inventory Accounting home page
+        href: global-inventory-accounting/global-inventory-accounting-home.md
+      - name: Get started with the Global Inventory Accounting
+        href: global-inventory-accounting/get-started-with-gia.md
+      - name: Business documents supported by Global Inventory Accounting
+        href: global-inventory-accounting/business-documents-supported.md
+      - name: Enable Power BI for Global Inventory Accounting
+        href: global-inventory-accounting/enable-power-bi-for-gia.md
+      - name: Conventions
+        href: global-inventory-accounting/conventions.md
+      - name: Global Inventory Accounting ledger
+        href: global-inventory-accounting/global-inventory-accounting-ledger.md
     - name: Cost management
       items:
       - name: Cost management home page
