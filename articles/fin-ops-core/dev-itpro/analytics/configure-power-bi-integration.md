@@ -67,7 +67,7 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
 
 > [!NOTE]
 > Depending on your version, you may need to add /oauth as a suffix to the URL, or use http instead of https as the protocol, such as: `https://contosoax7.cloud.dynamics.com/oauth` or `http://contosoax7.cloud.dynamics.com/oauth`.
-			 
+The application registration can be automated from the Power BI App registration tool https://dev.powerbi.com/apps . The manual steps are the following:			 
 4. Click **Create**.
 5. Copy the **Application ID**. This will be used to connect to the PowerBI.com service.
 6. Click **Settings** > **Required permissions** > **Add** > **Select an API** > **Power BI Service (Power BI)**.
