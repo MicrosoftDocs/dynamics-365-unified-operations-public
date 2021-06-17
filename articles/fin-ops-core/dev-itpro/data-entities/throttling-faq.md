@@ -4,7 +4,7 @@
 title: Priority-based throttling FAQ
 description: This topic provides answers to frequently asked questions about priority-based throttling for OData and custom service-based integrations.
 author: hasaid
-ms.date: 06/14/2021
+ms.date: 06/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 37
 # Priority-based throttling FAQ
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic provides answers to some frequently asked questions about [priority-based throttling](priority-based-throttling.md) for Open Data Protocol (OData) and custom service-based integrations.
 
