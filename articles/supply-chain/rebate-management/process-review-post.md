@@ -97,6 +97,21 @@ Instead of processing specific deals or deal lines, you can run a batch job to p
 1. On the **Run in the background** FastTab, you can set up batch processing and scheduling options as required. These settings work in the same way that they work for other types of batch jobs.
 1. Select **OK** to run and/or schedule the calculation.
 
+### Process deals using the rebate workbench
+
+Instead of processing specific deals or deal lines, you can use the rebate workbench to process several deals at the same time. You can optionally apply record filters and/or set up a recurring schedule. Use the following procedure to process deals by using the rebate workbench. You don't need to select any rows.
+
+1. Go to **Rebate management > Rebate management deals > Rebate workbench**.
+1. On the Action Pane, open the **Rebate workbench** tab and then select one of the following commands in teh **Processing** group:
+    - **Process > Provision** – Provision a set of accruals for each relevant deal line, but don't post them.
+    - **Process > Rebate management** – Process a series of transactions that provide the value of the rebate for each deal line.
+    - **Process > Write off** – Process the variance between provision and rebate management posted for each source transaction per rebate deal and specified period.
+1. The **Rebate management** dialog opens. In the **Period** field group, set the **From date** and **To date** fields to define the date range for the calculation.
+1. In the **Guarantee period** field group, set the **From date** and **To date** fields to define the date range for guarantees for the calculation.
+1. On the **Records to include** FastTab, you can set up filters to limit the set of deals that the batch job will process. These settings work in the same way that they work for other types of batch jobs.
+1. On the **Run in the background** FastTab, you can set up batch processing and scheduling options as required. These settings work in the same way that they work for other types of batch jobs.
+1. Select **OK** to run and/or schedule the calculation.
+
 ## View and edit Rebate management transactions
 
 When you process one or more deals, the system creates transactions that you can view and, perhaps, edit before you post them.
