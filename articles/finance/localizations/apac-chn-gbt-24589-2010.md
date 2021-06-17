@@ -4,7 +4,7 @@
 title: GB/T 24589-2010 export
 description: This topic explains how to export accounting data to several XML files for a specific period.
 author: anasyash
-ms.date: 04/05/2021
+ms.date: 06/17/2021
 ms.topic: conceptual
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 You can use the GB/T 24589-2010 export feature to export accounting data, including master data and transaction data, to several XML files for a specific period. Authorities or auditors can then import the XML files into their system to audit or verify a company's financial results.
 
