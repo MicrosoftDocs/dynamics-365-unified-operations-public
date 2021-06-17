@@ -56,12 +56,13 @@ To target a module in Commerce site builder, follow these steps.
 2. Click on **Edit** to check out the page.
 3. Click on the **Default** drop-down and **New target** to create a new target shell.
 4. Give your target a name and description and click on **Next**.
-5. Click on **Add** to include or exclude audiences who will see this targeted experience and click on **Next**. This is an optional step for target creation and can be 
+5. Click on **Add** to include or exclude audiences who will see this targeted experience and click on **Next**. 
+    > [!NOTE]
+    > Assigning audiences is an optional step for target creation but you will need to assign audiences before publishing the target to ensure the right groups of users see it.
+6. 
 
-
-
+Advanced preview
 Target prioritization / ranking - experiments will trump all
-Target scheduling
 
 * Targeted modules can’t be shared as fragments
 ** Parent level won’t work
