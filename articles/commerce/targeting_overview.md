@@ -32,13 +32,13 @@ Dynamics 365 Commerce enables you to target specific groups of customers with di
 You can create and manage audiences in site builder based on customer data such as location, device information, sign-in status, referrer, or query string parameters, gathered from the customer's web request. These audiences can then be targeted with module or fragment variations also authored and managed in site builder.
 
 ## Audiences
-Audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information or segments available in the customer's request. Commerce natively supports segments such as device info (desktop/mobile/tablet, OS, browser), sign-in status, referrer and query string parameters. Additionally, Commerce also supports connecting to third-party geolocation and segmentation providers. For more information on setting up a geolocation connector, see [GeoLookup connector](e-commerce-extensibility/connectors.md#geolookup-connector).
+An audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information or segments available in the customer's request. Commerce natively supports segments such as device info (desktop/mobile/tablet, OS, browser), sign-in status, referrer and query string parameters. Additionally, Commerce also supports connecting to third-party geolocation and segmentation providers. For more information on setting up a geolocation connector, see [GeoLookup connector](e-commerce-extensibility/connectors.md#geolookup-connector).
 
 To create an audience in Commerce site builder, follow these steps.
 1. Select **Audiences** in the left navigation pane, and then select **New**.
 2. Give your audience a name and optionally add tags and a description. 
-3. Click on **Create** and **Add new rule block** on the the following page. A rule block is a collection of rules joined together by AND conditions. You can also have multiple rule blocks with OR conditions between them.
-4. Select a data source for your segments, followed by the segment name, operator and value(s). You can create rules with either AND conditions within a rule block or OR conditions between rule blocks. You can also move rule blocks up or down and delete both rules and rule blocks as needed.
+3. Click on **Create** and **Add new rule block** on the the following page. A rule block is a collection of rules joined together by AND conditions. You can also create multiple rule blocks with OR conditions between them.
+4. Select a data source for your segments, followed by the segment name, operator and value(s). You can create and delete more rules within a rule block or create and delete entire rule blocks. You can also move rule blocks up or down as needed.
     > [!NOTE]
     > You can have up to 100 values in a list with up to 50 characters in each item.
 6. Once you are satisfied with your audience, select **Finish editing**. You can also select **Publish** if you want to make the audience available for use in a live target or publish it along with the target.
@@ -49,7 +49,7 @@ You can edit an audience by clicking on it's blue link in the **Audiences** tab.
 > Optionally you can create "everyone" and "no one" audiences to help with including and excluding audiences for targets.
 
 ## Targets
-Target is the user experience that will be shown to members of the chosen audience. You can target modules in the **Pages** tab or fragments in the **Fragments** tab.
+A target is the user experience that will be shown to members of the chosen audience. You can target modules in the **Pages** tab or fragments in the **Fragments** tab.
 
 Target creation and management
 Including and excluding audiences
