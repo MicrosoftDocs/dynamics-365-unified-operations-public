@@ -64,8 +64,7 @@ To target a module in Commerce site builder, follow these steps.
 8. Select the module to be targeted, select the ellipsis (...), and then select **Add to current target**. The targeted module will be highlighted with a green color.
 9. Make the necessary updates to the targeted module and add more modules if required. Click **Save** to save all your changes.
 
-To preview the target as a member of an audience, click on **Preview** in the command bar and select **Advanced preview**.
-Once everything looks good, click on **Publish** to publish the target immediately or include withing a publish group to schedule publish.
+To preview the target as a member of an audience and on a particular day, click on **Preview** in the command bar, select **Advanced preview** and click **Next**. You can either choose from the list of relevent audiences shown here or remove the filter to choose from all audiences. Once everything looks good, click on **Publish** to publish your target immediately or include within a publish group to schedule when it goes live.
 
 To manage your targets
 1. Edit
