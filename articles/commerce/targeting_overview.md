@@ -65,20 +65,17 @@ To target a module in Commerce site builder, follow these steps.
 9. Make the necessary updates to the targeted module and add more modules if required. Click **Save** to save all your changes.
 
 To preview the target as a member of an audience, click on **Preview** in the command bar and select **Advanced preview**.
+Once everything looks good, click on **Publish** to publish the target immediately or include withing a publish group to schedule publish.
 
-Advanced preview
-Target prioritization / ranking - experiments will trump all
+To manage your targets
+1. Edit
+2. Delete
+3. Prioritize
 
-* Targeted modules can’t be shared as fragments
-** Parent level won’t work
-** Module with child targets can be shred
-* Targets carried forward with publish groups
-* Experiments and targets can’t co-exist; experiments will trump
+Targets can be localized.
 * During localization, all activities + any scheduling automatically go with locale variants, whether users want it or not. 
 **	If they don’t want it, they will have to manually delete it.
 **	If they need different schedules per locale, they need to create different activities per locale.
-*	How/when to create everyone/no one audiences
-*	Basic vs advanced preview
 *	C1 needs explicit cookie consent from C2 – need to include info on that module
 
 
