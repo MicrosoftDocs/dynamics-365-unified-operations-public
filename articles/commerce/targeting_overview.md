@@ -61,7 +61,10 @@ To target a module in Commerce site builder, follow these steps.
     > Assigning audiences is an optional step for target creation but you will need to assign audiences before publishing the target to ensure the right groups of users see it.
 6. Select time zone, start and end dates/times to display your target. You can also set the target to show at all times during this window or choose specific days and times and click **Next**.
 7. Review the details and once everything looks good, click **Create target experience** and **Go to target**. This creates the target shell to which you can now add modules. 
-8. Select the module to be targeted, select the ellipsis (...), and then select **Add to current target**.
+8. Select the module to be targeted, select the ellipsis (...), and then select **Add to current target**. The targeted module will be highlighted with a green color.
+9. Make the necessary updates to the targeted module and add more modules if required. Click **Save** to save all your changes.
+
+To preview the target as a member of an audience, click on **Preview** in the command bar and select **Advanced preview**.
 
 Advanced preview
 Target prioritization / ranking - experiments will trump all
