@@ -333,9 +333,9 @@ If you continue to experience issues when email is sent via SMTP, you may be run
 
 **Fix:** Verify that the SMTP user credentials are correct.  
 
-### SMTP emails fail to send with "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occured with exception"
+### SMTP emails fail to send with "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception"
 
-**Issue:** Emails sent via SMTP fail to send and trigger the following exception: "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occured with exception"
+**Issue:** Emails sent via SMTP fail to send and trigger the following exception: "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception"
 
 **Explanation:** The SMTP password is encrypted using a key specific to a single environment.  This error typically surfaces when the password can no longer be decrypted after a database migration between environments.
 
