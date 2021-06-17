@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.19
 # Warehouse orders for cloud and edge scale units
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
 > Not all business functionality is fully supported in the public preview when scale unit workloads are used. If you're using scale units, be sure to use only those processes that this topic explicitly describes as supported.
