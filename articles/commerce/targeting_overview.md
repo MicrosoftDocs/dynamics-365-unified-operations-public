@@ -53,13 +53,15 @@ A target is the user experience that will be shown to members of the chosen audi
 
 To target a module in Commerce site builder, follow these steps.
 1. Select **Pages** in the left navigation pane, and then select the blue link for the page that has the module(s) you want to target.
-2. Click on **Edit** to check out the page.
-3. Click on the **Default** drop-down and **New target** to create a new target shell.
-4. Give your target a name and description and click on **Next**.
-5. Click on **Add** to include or exclude audiences who will see this targeted experience and click on **Next**. 
+2. Click **Edit** to check out the page for editing.
+3. Click the **Default** drop-down and then **New target** to create a new target shell.
+4. Give your target a name and description and click **Next**.
+5. Click **Add** to include or exclude audiences that will see this targeted experience and click **Next**. 
     > [!NOTE]
     > Assigning audiences is an optional step for target creation but you will need to assign audiences before publishing the target to ensure the right groups of users see it.
-6. 
+6. Select time zone, start and end dates/times to display your target. You can also set the target to show at all times during this window or choose specific days and times and click **Next**.
+7. Review the details and once everything looks good, click **Create target experience** and **Go to target**. This creates the target shell to which you can now add modules. 
+8. Select the module to be targeted, select the ellipsis (...), and then select **Add to current target**.
 
 Advanced preview
 Target prioritization / ranking - experiments will trump all
