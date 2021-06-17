@@ -43,7 +43,7 @@ To create an audience in Commerce site builder, follow these steps.
     > You can have up to 100 values in a list with up to 50 characters in each item.
 6. Once you are satisfied with your audience, select **Finish editing**. You can also select **Publish** if you want to make the audience available for use in a live target or publish it along with the target.
 
-You can edit an audience by clicking on it's blue link in the **Audiences** tab. You can also select an audience here and select **View Assignments** to view the list of targets that are referencing it or select **Delete** to delete it.
+You can edit an audience by clicking on it's blue link in the **Audiences** tab and the **Edit** button in the audience editor that opens up. You can also select an audience in the list view and select **View Assignments** to view the list of targets, experiments and pages that are referencing it. To delete an audience in the audience list view or in the audience editor, select **Delete** in the top command bar.
 
 > [!NOTE]
 > Optionally you can create "everyone" and "no one" audiences to help with including and excluding audiences for targets.
