@@ -21,9 +21,9 @@ International organizations are under increasing pressure from authorities to co
 
 Global Inventory Accounting lets you account inventory in multiple representations by applying the appropriate valuation method (standard cost, average, or specific identification) and the selected accounting currency per instance. Global Inventory Accounting enables organizations to report inventory statements and subledger accounting values (also known as the inventory balance and the cost of goods sold) in what is often referred to as dual valuation and/or dual currency.
 
-Inventory accounting is done in individual ledgers. Several cost accounting ledgers can be created for each legal entity in an organization, as required. Therefore, multiple inventory representations can be obtained. All documents that are posted in a legal entity (such as purchase orders, sales orders, and transfer orders) will be accounted in all the costing ledgers that are associated with that legal entity.
+Inventory accounting is done in individual ledgers. Several Global Inventory Accounting ledgers can be created for each legal entity in an organization, as required. Therefore, multiple inventory representations can be obtained. All documents that are posted in a legal entity (such as purchase orders, sales orders, and transfer orders) will be accounted in all the costing ledgers that are associated with that legal entity.
 
-A cost accounting ledger is defined by a combination of the following elements:
+A Global Inventory Accounting ledger is defined by a combination of the following elements:
 
 - Calendar
 - Currency

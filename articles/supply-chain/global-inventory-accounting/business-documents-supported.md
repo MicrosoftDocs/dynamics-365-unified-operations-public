@@ -50,13 +50,13 @@ The following table lists the documents that the current release supports.
 
 ### Product receipt
 
-Post product receipts in the usual way. On the **All purchase orders** page, select a purchase order, and then, on the Action Pane, on the **Receive** tab, select **Product receipt** to open the **Product receipt journal** page. An operation event and a cost accounting event are generated for each line. Therefore, select the **Lines** tab, and then select **Inventory \> Events and measurements** to open the **Events and measurements** page.
+Post product receipts in the usual way. On the **All purchase orders** page, select a purchase order, and then, on the Action Pane, on the **Receive** tab, select **Product receipt** to open the **Product receipt journal** page. An operation event and a Global Invntroy Accounting event are generated for each line. Therefore, select the **Lines** tab, and then select **Inventory \> Events and measurements** to open the **Events and measurements** page.
 
 Global Inventory Accounting is an accounting system that is based on events and measurements. The measurement line grid on the **Events and measurements** page shows a list of measurements. Each measurement has a list of dimensions.
 
 For each operation event, there are two types of measurement:
 
-- **Operations measurements** – These measurements describe the business documents with cost information. One measurement is the product quantity with the unit of measure that is used in the document. There are also measurements that affect the inventory value, such as extended price, discount, discount percent, and line charge.
+- **Operations measurements** – These measurements describe business documents in generic terms. One measurement is the product quantity using the unit of measure that is used in the document. There are also measurements that affect the inventory value, such as extended price, discount, discount percent, and line charge.
 - **Resource accounting measurements** – These measurements are from the inventory register perspective. They describe the document's impact on the inventory in the inventory unit of measure. If there are multiple inventory registrations, there are multiple lines of resource accounting measurements.
 
 The dimensions are organized in the following way:
@@ -66,9 +66,9 @@ The dimensions are organized in the following way:
 - **Dimension** – The name of the dimension.
 - **Dimension value** – The value of the dimension.
 
-### Cost accounting event
+### Global Inventory Accounting event
 
-The cost accounting service takes the operational events and measurements as input. It then does the appropriate accounting for each related ledger, based on the attached currency and convention. You can select **Cost accounting events and measurements** to view the cost accounting event. The cost accounting event follows the same methodology as operation events, but it uses different measurements. There are three major measurement types: product cost quantity, product cost, and variance.
+Global Inventory Accounting takes the operational events and measurements as input. It then does the appropriate accounting for each related ledger, based on the attached currency and convention. You can select **Global inventory accounting events and measurements** to view the Global Inventory Accounting event. The Global Inventory Accounting event follows the same methodology as operation events, but it uses different measurements. There are three major measurement types: product cost quantity, product cost, and variance.
 
 Subledger accounts are used to further classify the measurements. There might be multiple ledgers. These ledgers are linked to the legal entity where the document is entered. You can view the events and measurements for each ledger by changing the value of the **Ledger** field.
 
@@ -82,6 +82,6 @@ The **Overview** tab shows the details of the attached policies. The cost object
 
 ### Purchase invoice
 
-Post the invoice in the usual way. Then, on the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice** to open the invoice journal. An operation event and a cost accounting event are generated for each line. Therefore, select the **Lines** tab, and then select **Inventory \> Events and measurements** to open the **Events and measurements** page. The **Events and measurements** page shows the same measure type. However, because the page shows a different measure role and measure modifier, the impact on the agent (legal entity) differs.
+Post the invoice in the usual way. Then, on the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice** to open the invoice journal. An operation event and a Global Inventory Accounting event are generated for each line. Therefore, select the **Lines** tab, and then select **Inventory \> Events and measurements** to open the **Events and measurements** page. The **Events and measurements** page shows the same measure type. However, because the page shows a different measure role and measure modifier, the impact on the agent (legal entity) differs.
 
-Select **Cost accounting events and measurements** to view the cost accounting event. The inventory quantity and cost now flow out from *Goods received not invoiced inventory* to *Cost of goods purchased*.
+Select **Global inventory accounting events and measurements** to view the Global Inventory Accounting event. The inventory quantity and cost now flow out from the *Goods received not invoiced inventory* subledger account and into the *Cost of goods purchased* subledger account.

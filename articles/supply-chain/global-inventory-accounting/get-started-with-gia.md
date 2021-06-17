@@ -50,7 +50,7 @@ Follow these steps to install the add-in so that you can use Global Inventory Ac
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index).
 1. Go to **Preview feature management**.
 1. Select the plus sign (**+**).
-1. In the **Code** field, enter your add-in beta key for the cost accounting service. (You should have received your beta key by email when you signed up.)
+1. In the **Code** field, enter your add-in beta key for Global Inventory Accounting. (You should have received your beta key by email when you signed up.)
 1. Select **Unblock**.
 1. Open the LCS environment where you want to add the service.
 1. Go to **Full details**.

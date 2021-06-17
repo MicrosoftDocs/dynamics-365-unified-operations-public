@@ -17,11 +17,11 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include [banner](../includes/banner.md)]
 
-As for financial ledgers, there is a separate ledger for Global Inventory Accounting. The system processes each inventory-related transaction that is entered in the linked legal entity.
+Global Inventory Accounting has its own set of ledgers. Each time an inventory-related transaction is processed for a relevant legal entity, the system can account for that transaction in any number of Global Inventory Accounting ledgers, as required.
 
 A ledger is a register of debit and credit measures. These measures are classified by using cost elements and subledger accounts. A Global Inventory Accounting ledger is defined by its combination of a currency, a calendar, a convention, and an association with a legal entity.
 
-To set up your Global Inventory Accounting ledgers, go to **Cost management \> Cost accounting service> Setup \> Cost accounting ledgers**. For each ledger, set the following fields:
+To set up your Global Inventory Accounting ledgers, go to **Global inventory accounting \> Setup \> Global inventory accounting ledgers**. For each ledger, set the following fields:
 
 - **Name** – Enter the name of the ledger.
 - **Description** – Enter a description of the ledger.

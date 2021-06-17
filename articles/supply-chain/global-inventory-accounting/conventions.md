@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.20
 
 A convention is a container for a set of policies that affect system behavior. Based on your business requirements, you must define conventions by using a combination of the various policies that establish how costs should be accounted in Global Inventory Accounting. You can associate each convention with one or more ledgers to ensure consistency in accounting policies that are applied across ledgers.
 
-To set up your conventions, go to **Cost management \> Cost accounting service \> Setup \> Conventions**. For each convention, set the following fields:
+To set up your conventions, go to **Global inventory accounting \> Setup \> Conventions**. For each convention, set the following fields:
 
 - **Name** – Enter the name of the convention.
 - **Description** – Enter a description of the convention.
@@ -35,7 +35,7 @@ To set up your conventions, go to **Cost management \> Cost accounting service \
 
     - **Normal historical** – All the cost components flow into the inventory account.
     - **Standard** – Standard cost flows into the inventory accounts, and the difference between the applied cost and the actual costs is charged to variance accounts. If you want to create a *Standard* input measurement basis policy, you must first create a price list where the policy can look up the item's standard cost.
-    - **Price lists** – Global Inventory Accounting supports fetching item prices through multiple legal entities. You can define a price list that the input measurement basis policy will use. In this way, the system will know where to look up the item price. Follow these steps to set up price lists:
+    - **Price lists** – Global Inventory Accounting supports fetching item prices from multiple legal entities. You can define a price list that the input measurement basis policy will use. In this way, the system will know where to look up the item price. Follow these steps to set up price lists:
 
         1. In the **Name** field, enter a name.
         1. In the **Description** field, enter a description.
