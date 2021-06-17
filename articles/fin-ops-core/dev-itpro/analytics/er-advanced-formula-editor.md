@@ -4,7 +4,7 @@
 title: Electronic reporting advanced formula editor
 description: This topic describes how the advanced formula editor can be used to configure expressions in Electronic reporting (ER) model mapping and format components.
 author: NickSelin
-ms.date: 04/10/2020
+ms.date: 06/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -55,18 +55,18 @@ Complete the following steps to start using the advanced formula editor in your 
 > [!NOTE]
 > Be aware that this parameter is user specific and company specific.
 
-Starting from Microsoft Dynamics 365 Finance version 10.0.19, you can control what ER formula editor will be offered for a user by default. Complete the following steps to enable the advanced formula editor for all users and companies of the current Finance instance.
+Starting from Microsoft Dynamics 365 Finance version 10.0.19, you can control what ER formula editor is offered by default. Complete the following steps to enable the advanced formula editor for all users and companies of the current Finance instance.
 
 1.  Open the **Feature management** workspace.
-2.  Enable the **Set the ER advanced formula editor as the default one for all users** feature.
-3.  Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
+2.  Find and select the feature **Set the ER advanced formula editor as the default one for all users** in the list, and then select **Enable now**.
+3.  Go to **Organization administration** > **Electronic reporting** > **Configurations**.
 4.  On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
-5.  In the **User parameters** dialog box, find the **Disable advanced formula editor** parameter - make sure that this parameter is set to **No**.
+5.  In the **User parameters** dialog box, find the **Disable advanced formula editor** parameter and verify that it is set to **No**.
 
 [![ER configurations page](./media/ER-AdvEditor-Activate2.png)](./media/ER-AdvEditor-Activate2.png)
 
 > [!NOTE]
-> The values of both **Enable advanced formula editor** and **Disable advanced formula editor** parameters will be kept separately for every user and offered on the **User parameters** dialog box depending on the status of the **Set the ER advanced formula editor as the default one for all users** feature.
+> The values of the parameters **Enable advanced formula editor** and **Disable advanced formula editor** are kept separate for each user and offered on the **User parameters** dialog box depending on the status of the **Set the ER advanced formula editor as the default one for all users** feature.
 
 ## <a name="Autoformatting">Code autoformatting</a>
 
