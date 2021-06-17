@@ -37,7 +37,7 @@ Audience is a group of users whose membership is determined by a set of dynamic 
 To create an audience in Commerce site builder, follow these steps.
 1. Select **Audiences** in the left navigation pane, and then select **New**.
 2. Give your audience a name and optionally add tags and a description. 
-3. Click on **Create** and **Add new rule block** on the the following page.
+3. Click on **Create** and **Add new rule block** on the the following page. A rule block is a collection of rules joined together by AND conditions. You can also have multiple rule blocks with OR conditions between them.
 4. Select a source, followed by the required segment and it's value(s). You can create rules with either AND conditions within a rule block or OR conditions between rule blocks. You can also move rule blocks up or down and delete both rules and rule blocks as needed.
     > [!NOTE]
     > You can have up to 100 values in a list with up to 50 characters in each item.
