@@ -339,7 +339,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
 
 **Explanation:** The SMTP password is encrypted using a key specific to a single environment.  This error typically surfaces when the password can no longer be decrypted after a database migration between environments.
 
-**Fix:** Clear and reenter the SMTP password on the [SMTP settings tab](#smpt-settings-tab) on the **Email parameters** page. 
+**Fix:** Clear and reenter the SMTP password on the [SMTP settings tab](#smtp-settings-tab) on the **Email parameters** page. 
 
 ### SMTP emails fail to send with "Client does not have permissions to send as this sender"
 
