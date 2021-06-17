@@ -119,8 +119,6 @@ If you set all the previously mentioned time fences to *0* (zero), auto-firming 
 
 ## Firm planned orders by using a query
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 Query-based firming lets you plan firming based on criteria that are defined in advance. Unlike auto-firming, query-based firming allows for automated firming of different subsets of orders at different points in time. Additionally, you can use either manual or automated operations to firm different types of planned orders. You can also preview which firmed orders are selected based on your settings. Therefore, you can confirm that the selection fits your expectations.
 
 You can combine auto-firming with query-based firming. For example, a query-based firming job has a forward time fence that is longer than the time fence for a matching auto-firming coverage configuration. Therefore, the query-based firming job will process its planned orders before the auto-firming is triggered. You can take advantage of this behavior to schedule orders for specific vendors differently than orders for similar products from other vendors.
