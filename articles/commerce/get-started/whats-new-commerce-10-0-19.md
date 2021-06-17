@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.19
 # What's new and changed in Dynamics 365 Commerce 10.0.19 (June 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.19. This version has a build number of 10.0.837 and is available on the following schedule:
 
