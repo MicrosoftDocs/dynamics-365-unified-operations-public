@@ -48,7 +48,7 @@ In an age of malware, full connectivity, and compliance risks, nothing is comple
 
 ### Does the Excel Add-in support Office for Mac?
 
-No. Support for Apple Mac and iOS is currently under development. The Office JavaScript (JS) APIs work differently in Apple Safari and Microsoft Edge / Internet Explorer, especially in respect to authentication. For details about platform support for the Office JS APIs, see [Office Add-in host and platform availability](/office/dev/add-ins/overview/office-add-in-availability).
+No. Support for Apple Mac and iOS is currently under development. The Office JavaScript (JS) APIs work differently in Apple Safari and Microsoft Edge/Internet Explorer, especially in respect to authentication. For details about platform support for the Office JS APIs, see [Office Add-in host and platform availability](/office/dev/add-ins/overview/office-add-in-availability).
 
 ### What version of Office is required for the Excel Add-in to support AD FS?
 
@@ -64,7 +64,7 @@ Office has many releases. These releases receive updates at different times and 
 
 ### Why am I having trouble signing into the Excel Add-in?
 
-The browser used to authenticate the Excel Add-in (or any Office add-in) is dependent on the Office and operation system versions. See [Browsers used by Office Add-ins](https://docs.microsoft.com/en-us/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins) for more details on the specific browser used to sign in for your configuration. By default, the Excel Add-in picks up stored credentials from the browser, and the browser provides the current Microsoft Windows credentials if there are no stored credentials. Make sure that you're using the correct credentials to sign in. In the Excel Add-in, explicitly sign out, and then sign in to help guarantee that the correct credentials are used.
+The browser used to authenticate the Excel Add-in (or any Office add-in) is dependent on the Office and operation system versions. For more information about the specific browser used to sign in for your configuration, see [Browsers used by Office Add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). By default, the Excel Add-in picks up stored credentials from the browser, and the browser provides the current Microsoft Windows credentials if there are no stored credentials. Make sure that you're using the correct credentials to sign in. In the Excel Add-in, explicitly sign out, and then sign in to ensure that the correct credentials are used.
 
 ### The Excel Add-in seems to be slow when it publishes records. How can I learn more about what is occurring?
 
@@ -85,15 +85,15 @@ To check processing time in the Excel Add-in versus the server/service, follow t
 
 ### Is Export to Excel the best way to get data out of the system?
 
-The ideal way for end users to get data out of the system is to use the Excel Add-in, as it relies on the OData service to retrieve data and takes advantage of the security that data entities provide. The import and export capabilities in the Data management framework (DMF) and Data import/export framework (DIXF) can also be used; however, DMF and DIXF are often limited to administrators. 
+The best way for end users to get data out of the system is to use the Excel Add-in. The add-in relies on the OData service to retrieve data and takes advantage of the security that data entities provide. The import and export capabilities in the Data management framework (DMF) and Data import/export framework (DIXF) can also be used; however, DMF and DIXF are often limited to administrators.
 
-The Export to Excel functionality can be used in situations where the above options are not currently possible, in particular to retrieve data from calculated columns (display methods), columns with formatted values, and data from temporary tables. This is possible as the export process uses the data from the active form to retrieve this data. Export to Excel will also return exactly the data shown in the grid, which is useful for filtered datasets; however, this will inherently be take longer to export than using the options that go through the OData service. 
+The Export to Excel functionality can be used in situations where the above options are not possible, in particular to retrieve data from calculated columns (display methods), columns with formatted values, and data from temporary tables. This is because the export process uses the data from the active form to retrieve this data. Export to Excel will also return the data exactly as it is shown in the grid, which is useful for filtered datasets. However, this will take longer to export than using the options that go through the OData service.
 
 Because an export from Excel can take some time, it is recommended that the export is done with the Chrome or Edge browsers, with the automatic download option enabled. The automatic download option will ensure that the browser downloads the file as soon as the export is complete to ensure that the download link is used within the 15-minute time limit.
 
 ### Why is the Publish button in the Excel Add-in unavailable? 
 
-All key and mandatory fields must be present to publish data back to the entity. Try to edit the design to add more fields to the binding. 
+All key and required fields must be present to publish data back to the entity. Try to edit the design to add more fields to the binding. 
 
 ### Why are the Excel Add-in, the Word Add-in, and the Open in Excel options only available when the Internet is available?
 
@@ -172,7 +172,7 @@ Skype integration is available for environments in the public cloud. For environ
 
 **Explanation:** You receive this error message if the client is open in Internet Explorer, and the user clicks **Open** immediately after selecting the **Open in Excel** option. The way that Internet Explorer handles temporary Internet files causes an issue in Excel. This issue, in turn, causes API calls to fail. 
 
-**Workaround:** The recommendation is to use Microsoft Edge or another modern browser. These browsers tend to save files to a Downloads folder by default, which mitigates the issue. If you are still using Internet Explorer, which is now deprecated, when you open a workbook, click **Save** first, and then click **Open**. The file will then be opened from your Downloads folder.  
+**Workaround:** The recommendation is to use Microsoft Edge or another modern browser. These browsers tend to save files to a Downloads folder by default, which mitigates the issue. If you are using Internet Explorer, which is now deprecated, when you open a workbook, select **Save** first, and then select **Open**. The file will then be opened from your Downloads folder.  
 
 **Long-term fix:** We are working with the Office team to understand this issue so that it can be fixed in Excel.
 
