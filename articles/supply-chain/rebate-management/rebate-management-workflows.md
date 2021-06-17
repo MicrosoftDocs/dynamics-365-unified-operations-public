@@ -58,4 +58,5 @@ You can change the following settings for a deal after it has been activated:
 - Currency
 - From date
 - To date
-- Rebate lines can be removed
+
+In addition, rebate lines can be removed.

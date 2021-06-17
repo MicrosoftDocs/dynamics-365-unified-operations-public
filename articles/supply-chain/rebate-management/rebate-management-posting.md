@@ -97,6 +97,5 @@ Use the buttons on the toolbar to add companies to the grid and remove them. Eac
 Select the row for each company, and then enter the following information by using the fields below the grid:
 
 - **Debit type** – Select whether to debit a ledger account or a vendor. For customer rebates and royalties, this field is set to *Ledger account*.
-- **Debit type** – Select whether to debit a ledger account, or a customer or vendor.
 - **Debit account** – Enter the account that the debit amount is posted to when rebate provisions are made.
 - **Main account** – Select the main account for write-offs.
