@@ -55,7 +55,7 @@ Complete the following steps to start using the advanced formula editor in your 
 > [!NOTE]
 > Be aware that this parameter is user specific and company specific.
 
-Starting from Microsoft Dynamics 365 Finance version 10.0.19, you can control what ER formula editor is offered by default. Complete the following steps to enable the advanced formula editor for all users and companies of the current Finance instance.
+Starting in Microsoft Dynamics 365 Finance version 10.0.19, you can control what ER formula editor is offered by default. Complete the following steps to enable the advanced formula editor for all users and companies of the current Finance instance.
 
 1.  Open the **Feature management** workspace.
 2.  Find and select the feature **Set the ER advanced formula editor as the default one for all users** in the list, and then select **Enable now**.
