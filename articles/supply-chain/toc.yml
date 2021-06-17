@@ -607,7 +607,7 @@
       items:
       - name: Global Inventory Accounting home page
         href: global-inventory-accounting/global-inventory-accounting-home.md
-      - name: Get started with the Global Inventory Accounting
+      - name: Get started with Global Inventory Accounting
         href: global-inventory-accounting/get-started-with-gia.md
       - name: Business documents supported by Global Inventory Accounting
         href: global-inventory-accounting/business-documents-supported.md

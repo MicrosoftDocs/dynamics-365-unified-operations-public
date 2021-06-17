@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
 ---
 
-# Get started with the Global Inventory Accounting
+# Get started with Global Inventory Accounting
 
 [!include [banner](../includes/banner.md)]
 
