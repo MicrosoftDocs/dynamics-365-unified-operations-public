@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 10.0.15
 # Manufacturing execution workloads for cloud and edge scale units
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
 > The manufacturing execution workload is available in preview at this point in time.
