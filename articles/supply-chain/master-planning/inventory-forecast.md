@@ -350,7 +350,7 @@ Use this procedure to process existing forecast transaction lines. You can copy,
 
 ## Use forecast with master planning
 
-After you enter your demand forecast and/or supply forecast, you can use forecast together to account for expected demand and/or supply in your master planning. Including forecast in master planning will calculate gross requirements for materials and capacity and generate planned orders.
+After you enter your demand forecast and/or supply forecast, you can include forecast during master planning to account for expected demand and/or supply in your master planning run. Including forecast in master planning will calculate gross requirements for materials and capacity and generate planned orders.
 
 ### Set up a master plan to include inventory forecast
 
