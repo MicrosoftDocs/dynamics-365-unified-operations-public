@@ -190,7 +190,7 @@ By completing the steps in the [Import a new data model configuration](#ImportDa
 
 ### <a name="ImportDataModel"></a>Import a new data model configuration
 
-1. Download the [Questionnaires model.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) file, and save it to your local computer.
+1. Download the [Questionnaires model.version.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml) file, and save it to your local computer.
 2. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 3. In the **Electronic reporting** workspace, select **Reporting configurations**.
 4. On the Action Pane, select **Exchange** \> **Load from XML file**.
@@ -305,7 +305,7 @@ By completing the steps in the [Import a new model mapping configuration](#Impor
 
 ### <a name="ImportModelMapping"></a>Import a new model mapping configuration
 
-1. Download the [Questionnaires mapping.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) file, and save it to your local computer.
+1. Download the [Questionnaires mapping.version.1.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml) file, and save it to your local computer.
 2. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 3. In the **Electronic reporting** workspace, select **Reporting configurations**.
 4. On the Action Pane, select **Exchange** \> **Load from XML file**.
