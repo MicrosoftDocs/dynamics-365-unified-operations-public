@@ -61,8 +61,8 @@ For more information, see [Set up after environment deployment](../../fin-ops-co
 
 Before setting up Dataverse, add our service principles to your tenant by doing the following:
 
-1. Install Azure AD PowerShell Module v2 as described in Install Azure Active Directory PowerShell for Graph.
-1. Run the following PowerShell command:\
+1. Install Azure AD PowerShell Module v2 as described in [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+1. Run the following PowerShell command:
 
     ```powershell
     Connect-AzureAD # (open a sign in window and sign in as a tenant user)  
@@ -72,7 +72,7 @@ Before setting up Dataverse, add our service principles to your tenant by doing 
     New-AzureADServicePrincipal -AppId "5f58fc56-0202-49a8-ac9e-0946b049718b" -DisplayName "d365-scm-operationdataservice"
     ```
 
-Create application users for Global Inventory Accounting in Dataverse: 
+Create application users for Global Inventory Accounting in Dataverse:
 
 1. Open the URL of your Dataverse environment.
 1. Go to **Advanced Setting > System > Security > Users** and create an application user. Use the view menu to change the page view to Application Users.
@@ -82,7 +82,7 @@ Create application users for Global Inventory Accounting in Dataverse:
 
 For more information, see [Create an application user](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user)
 
-If the default language of your Dataverse is not English:
+If the default language of your Dataverse installation is not English:
 
 1. Go to **Advanced Setting > Administration > Languages**.
 1. Select *English* (LanguageCode=1033) and select **Apply**.
