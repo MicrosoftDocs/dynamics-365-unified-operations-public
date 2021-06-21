@@ -1,6 +1,6 @@
 ---
 title: Product is on hold for transactions
-description: "After firming planning orders, you get the following error: 'Item %1 is on hold for transactions in %2'"
+description: After you firm planning orders, you receive an error message that states that an item is on hold for transactions.
 author: ankubik
 ms.date: 06/10/2021
 ms.topic: troubleshooting
@@ -19,7 +19,7 @@ Error code: SYS13295
 
 ## Symptoms
 
-After firming planning orders, the system shows the following error message:
+After you firm planning orders, you receive the following error message:
 
 > Item %1 is on hold for transactions in %2.
 
@@ -27,15 +27,17 @@ After firming planning orders, the system shows the following error message:
 
 The item is set as stopped in its default order settings.
 
-When an item is blocked and you enter a purchase or sales line, a warning message appears. When the item is blocked, inventory transactions that are related to the purchase or sales order line can't be modified (for example, when you post a packing slip or an invoice). You can block a purchased item, and at the same time, sell the item. In this case, this field is selected on a purchase order, but it isn't blocked in inventory or on a sales order. An item number can be blocked from being sold, for example, due to one of the following conditions:
+If an item is blocked, and you enter a purchase order or sales order line, you receive a warning message. When an item is blocked, inventory transactions that are related to the purchase order or sales order line can't be modified (for example, when you post a packing slip or an invoice). You can block a purchased item, and, at the same time, sell the item. In this case, this field is selected on a purchase order, but the item isn't blocked in inventory or on a sales order.
 
-- The item is still under development or manufacture, so you don't want it to be sold or reserved.
-- You have received many defective items, so the defects must be corrected before the item can be sold.
+Here are some of the conditions that can cause an item number to be blocked from being sold:
 
-In cases such as these, you can block the item until the issue is resolved.
+- The item is still under development or manufacture. Therefore, you don't want it to be sold or reserved.
+- You've received many defective items, and the defects must be corrected before the item can be sold.
 
-When an item is blocked and you create a return order line, a message is displayed. You can't block a series or a lot of an item. If parts of an item are to be blocked, you can block them by moving inventory or by blocking the full stock of the item for that period.
+In cases of this type, you can block the item until the issue is resolved.
+
+If an item is blocked, and you create a return order line, you receive a message. You can't block a series or a lot of an item. If parts of an item must be blocked, you can block them by moving inventory or by blocking the full stock of the item for that period.
 
 ## Resolution
 
-Open the **Default order settings** for the item and clear the **Stopped** check box.
+- Open the **Default order settings** page for the item, and clear the **Stopped** checkbox.
