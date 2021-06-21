@@ -605,6 +605,8 @@
         href: hr-personnel-add-department-hierarchy.md
       - name: Define jobs
         href: hr-personnel-define-jobs.md
+      - name: Define positions
+        href: hr-personnel-positions.md
       - name: Create a working times calendar
         href: hr-personnel-create-working-time-calendar.md
       - name: Recruit job candidates
