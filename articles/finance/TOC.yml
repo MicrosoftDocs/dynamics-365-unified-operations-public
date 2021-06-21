@@ -1524,6 +1524,10 @@
                 href: localizations/emea-nl-vat-declaration-netherlands.md
               - name: EU sales list
                 href: localizations/emea-nl-eu-sales-list.md
+            - name: United Kingdom reporting
+              items:
+              - name: Prepare for integration with MTD for VAT
+                href: localizations/emea-gbr-mtd-vat-integration.md
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
       - name: Australia
@@ -3292,8 +3296,6 @@
             href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
           - name: Set up sales tax groups for reverse charge VAT
             href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md      
-        - name: Making Tax Digital for VAT
-          href: localizations/emea-gbr-mtd-vat-integration.md
         - name: Statistics on payment practices report
           href: localizations/emea-gbr-statistics-on-payment-practices-report.md
       - name: United States
