@@ -54,9 +54,9 @@ There are also advantages to having multiple LCS projects. Here are some of them
 
 ## Licensing requirements
 
-Every LCS Implementation project that runs on the same Azure AD tenant must satisfy the minimum licensing requirements. For example, if there are three LCS Implementation projects on the same Azure AD tenant, a customer must purchase no less than three times the minimum number of subscription licenses. Currently, the minimum license requirement is 20 full user licenses. Therefore, to run three LCS Implementation projects on the same Azure AD tenant, the customer must purchase at least 60 licenses.
+Every LCS implementation project that runs on the same Azure AD tenant must satisfy the minimum licensing requirements. For example, if there are three LCS implementation projects on the same Azure AD tenant, a customer must purchase no less than three times the minimum number of subscription licenses. Currently, the minimum license requirement is 20 full user licenses. Therefore, to run three LCS implementation projects on the same Azure AD tenant, the customer must purchase at least 60 licenses.
 
-Because the licenses are associated with the Azure AD tenant, the **Subscriptions available** page for every LCS project will show the total number of licenses, even though a given LCS project can use only the portion of licenses that has been allocated to it. This allocation of license to LCS projects must be documented outside the system.
+Because the licenses are associated with the Azure AD tenant, the **Subscriptions available** page for every LCS project will show the total number of licenses, even though a given LCS project can use only the portion of licenses that has been allocated to it. This allocation of licenses to LCS projects must be documented outside the system.
 
 Users who access multiple environments in parallel must be licensed separately for each environment. A user can only be assigned one license for each product for each Azure AD tenant. This allocation of licensing requirements for LCS projects for specific users must be documented outside the system. For additional information about licensing, download the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
@@ -68,16 +68,16 @@ Create a new additional implementation project in your existing organization usi
     [![Create implementation project](./media/CreateNewImplementationProject.jpg)](./media/CreateNewImplementationProject.jpg)
 2. Select **Implementation** as the project type.
     [![Create implementation project type selection](./media/CreateNewImplementationProjectDialog1.jpg)](./media/CreateNewImplementationProjectDialog1.jpg)
-3. Enter information about the the new implementation project.
+3. Enter information about the new implementation project.
     [![Create implementation project details dialog](./media/CreateNewImplementationProjectDialog2.jpg)](./media/CreateNewImplementationProjectDialog2.jpg)
-4. Select **Create** to finish creating your project. A confirmation box might display to ensure that you want create an additional implementation project if you already have an existing implementation project in your organization. If you receive an error message, it might be because your organization does not have the required total license count to support an additional implementation project.
+4. Select **Create** to finish creating your project. A confirmation box might display to ensure that you want to create an additional implementation project if you already have an existing implementation project in your organization. If you receive an error message, it might be because your organization does not have the required total license count to support an additional implementation project.
 5. After the project is created, the newly created implementation project will display and you will be the owner of the project.
 
 ## Edit the licenses allocated to projects
 
 Determine how you want to assign licenses across the implementation projects in your organization in order to ensure that the number of licenses assigned across all projects does not exceed the total license count purchased by the customer.
 
-After the allocation has been determined, visit the [Subscription Estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) tool for each implementation project and edit the active subscription estimate to apply the desired license allocation for that project.  
+After the allocation has been determined, use the [Subscription Estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) tool for each implementation project and edit the active subscription estimate to apply the desired license allocation for that project.  
 
 ## Online deployments in China sovereign cloud
 
