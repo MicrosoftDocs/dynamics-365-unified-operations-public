@@ -749,11 +749,11 @@ The following steps are applicable to the example electronic message processing 
    - **Report getting status error (business)**: If Digipoort didn’t acknowledge the report. In this case, the Infolog shows a list of errors received from Digipoort. To review list of errors later, on the **Action log** FastTab, select a line with **Get report status**, and select **Attachments**. Review the list of errors in the **Notes** field.
    - **Report getting status error (technical)**: If a technical error occurred when importing the response from Digipoort.
 
-### Run a VAT declaration for several legal entities
+## Run a VAT declaration for several legal entities
 
 To use the formats to report the VAT declaration for a group of several legal entities, first set up the application-specific parameters of the ER formats for sales tax codes from all required legal entities.
 
-#### Set up electronic messages to collect data from several legal entities
+### Set up electronic messages to collect data from several legal entities
 
 To set up electronic messages to collect data from several legal entities, follow these steps:
 
