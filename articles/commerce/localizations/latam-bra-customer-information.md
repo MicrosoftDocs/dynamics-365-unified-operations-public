@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to manage customer information, such as CNPJ (Cadastro Nacional da Pessoa Jurídica)/CPF (Cadastro de Pessoas Físicas) numbers, in Commerce point of sale (POS) for Brazil. You can specify customer tax registration number, name, and address information when you add a named customer to the cart in POS. You can also specify information for a sales transaction manually. Customer information can then be printed on DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) fiscal receipts and can be used for invoicing purposes.
+This topic describes how to manage customer information in Commerce point of sale (POS) for Brazil. This information includes CNPJ (Cadastro Nacional da Pessoa Jurídica)/CPF (Cadastro de Pessoas Físicas) numbers. You can specify customer tax registration number, name, and address information when you add a named customer to the cart in POS. You can also manually enter information for a sales transaction. Customer information can then be printed on DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) fiscal receipts and used for invoicing purposes.
 
-For more information how to set up this functionality, see [Customer information management](latam-bra-deployment.md#customer-information-management).
+For more information about how to set up this functionality, see [Customer information management](latam-bra-deployment.md#customer-information-management).
 
 ## Example scenarios
 
@@ -49,7 +49,7 @@ To make a sale to an anonymous customer, follow these steps.
 1. Register payments for the transaction, and then finalize the transaction.
 1. Verify that the printed DANFE receipt contains the customer's CNPJ/CPF number, or the customer's foreigner ID, name, and address.
 
-### Scenario 2: Make a sale to a named customer
+### Scenario 2: Make a sale to an existing named customer
 
 To make a sale to a named customer, follow these steps.
 
@@ -69,14 +69,15 @@ To make a sale to a new named customer, follow these steps.
 1. Select **Add customer**, and then select **Create customer**.
 1. Specify the new customer's attributes.
 1. In the **CNPJ/CPF** field, enter the customer's CNPJ/CPF number.
-1. In the **Foreigner ID** field, enter the customer's foreigner ID, if needed.
+1. In the **Foreigner ID** field, enter the customer's foreigner ID, if it's required.
 1. Select **Add address**, and then enter the new customer's contact information and address.
 1. Save the customer record and the customer address record, and then add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
 1. Verify that the printed receipt contains the customer's CNPJ/CPF number, or the customer's foreigner ID, name, and address.
 
 > [!NOTE]
-> If you need to specify a different customer for the transaction, you must first clear the customer information and then choose another customer.
+> If you have to specify a different customer for the transaction, you must first clear the customer information. Then select another customer.
+
 ### Scenario 4: Change the customer information for a sale to a named customer
 
 To change the customer information for a sale to a named customer, follow these steps.
@@ -92,9 +93,9 @@ To change the customer information for a sale to a named customer, follow these 
 
 ## Additional resources
 
-[Set up and deploy Commerce localization for Brazil](latam-bra-deployment.md) 
+[Set up and deploy Commerce localization for Brazil](latam-bra-deployment.md)
 
-[Commerce localization for Brazil](latam-bra-commerce-localization.md) 
+[Commerce localization for Brazil](latam-bra-commerce-localization.md)
 
 [NFC-e fiscal document functionality in Commerce POS for Brazil](latam-bra-nfce.md)
 
