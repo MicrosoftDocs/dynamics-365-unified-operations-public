@@ -21,7 +21,7 @@ ms.search.validFrom: 2021-05-31
 This topic describes how retries are implemented on batch jobs in Finance and Operations apps, and how you can enable automatic retries on batch jobs when transient failures occur. Currently, if Finance and Operations apps experience a brief loss of connection to Microsoft SQL Server, all batch jobs that are running fail. This behavior disrupts business processes. Because connection loss is inevitable in a cloud service, Microsoft is enabling automated retries when failures of this type occur.
 
 > [!IMPORTANT]
-> This feature is available as part of version 10.0.18.
+> This feature is available with version 10.0.18 and later.
 
 ## Metadata
 
