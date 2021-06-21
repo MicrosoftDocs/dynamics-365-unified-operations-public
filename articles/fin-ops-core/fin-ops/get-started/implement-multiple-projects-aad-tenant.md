@@ -33,35 +33,6 @@ For any new cloud project, one Microsoft Dynamics Lifecycle Services (LCS) Imple
 - A global implementation's requirements for data residency, latency, or data volume can't be met by one instance.
 - Different business units in an organization are implementing the product separately as independent applications.
 
-## Create multiple LCS projects
-
-Create a new additional implementation project in your existing organization using the following steps:
-
-1. Select the **+** button on the LCS home page.
-    [![Create implementation project](./media/CreateNewImplementationProject.jpg)](./media/CreateNewImplementationProject.jpg)
-2. Select **Implementation** as the project type.
-    [![Create implementation project type selection](./media/CreateNewImplementationProjectDialog1.jpg)](./media/CreateNewImplementationProjectDialog1.jpg)
-3. Enter information about the the new implementation project.
-    [![Create implementation project details dialog](./media/CreateNewImplementationProjectDialog2.jpg)](./media/CreateNewImplementationProjectDialog2.jpg)
-4. Select **Create** to finish creating your project. A confirmation box might display to ensure that you want create an additional implementation project if you already have an existing implementation project in your organization. If you receive an error message, it might be because your organization does not have the required total license count to support an additional implementation project.
-5. After the project is created, the newly created implementation project will display and you will be the owner of the project.
-
-Manual intervention by the Microsoft Dynamics Service Engineering (DSE) team is required in order to create additional LCS projects on a shared Azure AD tenant. This approach should be used only if a single-instance strategy truly isn't feasible. Before additional LCS projects can be created, customers must provide the business justification and confirm that they understand all the implications of the approach. This process should be started as early in the implementation lifecycle as possible. Customers who decide to proceed should open a support ticket through their existing LCS project.
-
-## Licensing requirements
-
-Every LCS Implementation project that runs on the same Azure AD tenant must satisfy the minimum licensing requirements. For example, if there are three LCS Implementation projects on the same Azure AD tenant, a customer must purchase no less than three times the minimum number of subscription licenses. Currently, the minimum license requirement is 20 full user licenses. Therefore, to run three LCS Implementation projects on the same Azure AD tenant, the customer must purchase at least 60 licenses.
-
-Because the licenses are associated with the Azure AD tenant, the **Subscriptions available** page for every LCS project will show the total number of licenses, even though a given LCS project can use only the portion of licenses that has been allocated to it. This allocation of license to LCS projects must be documented outside the system.
-
-Users who access multiple environments in parallel must be licensed separately for each environment. A user can only be assigned one license for each product for each Azure AD tenant. This allocation of licensing requirements for LCS projects for specific users must be documented outside the system. For additional information about licensing, download the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
-
-## Edit the licenses allocated to projects
-
-Determine how you want to assign licenses across the implementation projects in your organization in order to ensure that the number of licenses assigned across all projects does not exceed the total license count purchased by the customer.
-
-After the allocation has been determined, visit the [Subscription Estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) tool for each implementation project and edit the active subscription estimate to apply the desired license allocation for that project.  
-
 ## Disadvantages of multiple LCS projects
 
 The following are some disadvantages to having multiple LCS projects:
@@ -80,6 +51,33 @@ There are also advantages to having multiple LCS projects. Here are some of them
 - Data centers can be selected per LCS project to provide the best latency experience.
 - Data centers can be selected per LCS project to satisfy statutory requirements for data residency.
 - There is more flexibility to schedule servicing operations, such as code deployments and upgrades.
+
+## Licensing requirements
+
+Every LCS Implementation project that runs on the same Azure AD tenant must satisfy the minimum licensing requirements. For example, if there are three LCS Implementation projects on the same Azure AD tenant, a customer must purchase no less than three times the minimum number of subscription licenses. Currently, the minimum license requirement is 20 full user licenses. Therefore, to run three LCS Implementation projects on the same Azure AD tenant, the customer must purchase at least 60 licenses.
+
+Because the licenses are associated with the Azure AD tenant, the **Subscriptions available** page for every LCS project will show the total number of licenses, even though a given LCS project can use only the portion of licenses that has been allocated to it. This allocation of license to LCS projects must be documented outside the system.
+
+Users who access multiple environments in parallel must be licensed separately for each environment. A user can only be assigned one license for each product for each Azure AD tenant. This allocation of licensing requirements for LCS projects for specific users must be documented outside the system. For additional information about licensing, download the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
+
+## Create multiple LCS projects
+
+Create a new additional implementation project in your existing organization using the following steps:
+
+1. Select the **+** button on the LCS home page.
+    [![Create implementation project](./media/CreateNewImplementationProject.jpg)](./media/CreateNewImplementationProject.jpg)
+2. Select **Implementation** as the project type.
+    [![Create implementation project type selection](./media/CreateNewImplementationProjectDialog1.jpg)](./media/CreateNewImplementationProjectDialog1.jpg)
+3. Enter information about the the new implementation project.
+    [![Create implementation project details dialog](./media/CreateNewImplementationProjectDialog2.jpg)](./media/CreateNewImplementationProjectDialog2.jpg)
+4. Select **Create** to finish creating your project. A confirmation box might display to ensure that you want create an additional implementation project if you already have an existing implementation project in your organization. If you receive an error message, it might be because your organization does not have the required total license count to support an additional implementation project.
+5. After the project is created, the newly created implementation project will display and you will be the owner of the project.
+
+## Edit the licenses allocated to projects
+
+Determine how you want to assign licenses across the implementation projects in your organization in order to ensure that the number of licenses assigned across all projects does not exceed the total license count purchased by the customer.
+
+After the allocation has been determined, visit the [Subscription Estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) tool for each implementation project and edit the active subscription estimate to apply the desired license allocation for that project.  
 
 ## Online deployments in China sovereign cloud
 
