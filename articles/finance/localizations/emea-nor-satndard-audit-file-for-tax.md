@@ -31,8 +31,6 @@ ms.dyn365.ops.version:
 
 This topic includes country-specific information about how to set up the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway.
 
-## Introduction
-
 Beginning January 2020, all companies in Norway are required by the Norwegian Tax Administration to provide SAF-T Financial data. This requirement is in accordance with version 1.4 of the documentation, which was published on July 8, 2019, and version 1.3 of the technical documentation, which was published on March 23, 2018, in the form of an XML report. The publication of these pieces of documentation coincided with version 1.1 of the "Norwegian SAF-T Financial data" XML Schema Definition (XSD) schema that was developed by the SAF-T Working group, Skatteetaten, and based on "OECD Standard Audit File - Taxation 2.00," which was modified on February 2, 2018.
 
 ## Setup
@@ -193,10 +191,10 @@ After the report is generated, if more than one XML file is generated, the user 
 
 ### \<AnalysisType\> and \<AnalysisTypeDescription\> nodes
 
-The SAF-T report for Norway must include information about **AnalysisTypeTable** under the **MasterFiles** node of the report. **AnalysisTypeTable** must represent a table with the analysis code identifiers which are used for further specification of transaction data. In Finance, **Financial dimentions** is the data source for the **AnalysisTypeTable** node. When you set up **Financial dimentions** in your legal entity, use the **ReportColumnName** field of the **Financial dimension** data source for the value that will be reported in \<AnalysisType\> node. Use the **Dimension name** field of the **Financial dimension** data source for the value that will be reported in the \<AnalysisTypeDescription\> node.
+The SAF-T report for Norway must include information about the **AnalysisTypeTable** under the **MasterFiles** node of the report. **AnalysisTypeTable** must represent a table with the analysis code identifiers that are used for further specification of transaction data. In Finance, **Financial dimensions** is the data source for the **AnalysisTypeTable** node. When you set up **Financial dimensions** in your legal entity, use the **ReportColumnName** field of the **Financial dimension** data source for the value that will be reported in the \<AnalysisType\> node. Use the **Dimension name** field of the **Financial dimension** data source for the value that will be reported in the \<AnalysisTypeDescription\> node.
 
 ### SAF-T report and One voucher
 
-The [One voucher](../general-ledger/one-voucher.md) article explains the details of this functionality. Using this functionality introduces a limitation of further SAF-T reporting for data where one voucher was applied. We recommend that you set the parameter, **Allow multiple transactions within one voucher** on the **General ledger parameters** page to **No** in your legal entity where you post transactions that are subject for SAF-T report.
+Using the One voucher functionality introduces a limitation of further SAF-T reporting for data if one voucher was applied. We recommend that you set the **Allow multiple transactions within one voucher** parameter on the **General ledger parameters** page to **No** in your legal entity if you post transactions that are part of the SAF-T report. For information about One voucher functionality, see [One voucher](../general-ledger/one-voucher.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
