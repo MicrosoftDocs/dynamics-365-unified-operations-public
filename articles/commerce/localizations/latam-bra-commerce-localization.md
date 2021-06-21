@@ -104,11 +104,11 @@ Commerce supports fiscal registration via the [Fiscal integration framework](../
 | E-commerce capabilities for Brazil                                       |                           | X       |             |
 | Merging CNPJ/CPF in customer master records in the call center           |                           | X       |             |
 | Retail fiscal documents in fiscal book statements\*                      |                           |         | X           |
-| Integration of the POS with fiscal printers (PAF-ECF)\**                                      |                           |         | X           |
+| Integration of the POS with fiscal printers (PAF-ECF)\*\*                |                           |         | X           |
 
 \* *Fiscal book statements* are SPED (Sistema Público de Escrituração Digital) Fiscal, SPED Contributions, and ICMS-ST (Imposto sobre Circulação de Mercadorias e Serviços - Substituição Tributária) compensation and restitution statements for the supported states.
 
-\** *PAF-ECF* stands for Programa Aplicativo Fiscal – Emissor de Cupom Fiscal ou simplesmente.
+\*\* *PAF-ECF* stands for Programa Aplicativo Fiscal – Emissor de Cupom Fiscal ou simplesmente.
 
 ## Commerce functionality for Brazil
 
@@ -144,6 +144,5 @@ The following Brazil-specific POS features are enabled after the Commerce locali
 [Postponed registration of NFC-e documents issued in offline contingency mode](latam-bra-nfce-contingency-mode.md)
 
 [Post Brazilian fiscal documents via retail statements in Commerce headquarters](latam-bra-retail-statements.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
