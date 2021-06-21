@@ -62,6 +62,7 @@ The settings on the **General** tab define the appearance of information about a
 - Select the absence code that is used to control this integration.
 - Indicate how long to keep injury and illness case incidents.
 - Specify the default identification number shown when a new worker is hired.
+- Specify which date to use when calculating 'Years of Service' 
 
 ![General tab](./media/hr-setup-parameters-general.png)
 
