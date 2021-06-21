@@ -371,7 +371,7 @@ You must configure data sources to access the application tables that contain qu
     2. Select **Add**.
     3. In the dialog box, in the **Name** field, enter **\$ResultGroup**.
     4. Select **Edit formula**.
-    5. In the [ER formula editor](general-electronic-reporting-formula-designer.md), in the **Formula** field, enter **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** to use the [path](er-formula-language.md#paths) of the one-to-many relation between the KMCollection and KMQuestionResultGroup tables.
+    5. In the [ER formula editor](general-electronic-reporting-formula-designer.md), in the **Formula** field, enter **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** to use the [path](er-formula-language.md#Paths) of the one-to-many relation between the KMCollection and KMQuestionResultGroup tables.
     6. Select **Save**, and close the formula editor.
     7. Select **OK** to add the new calculated field.
 
