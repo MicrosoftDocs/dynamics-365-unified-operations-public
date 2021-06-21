@@ -43,6 +43,50 @@ To sign up for the Global Inventory Accounting public preview, send your LCS env
 
 Global Inventory Accounting is licensed together with the standard features of inventory accounting that are available for Supply Chain Management. You don't have to purchase an additional license to use Global Inventory Accounting.
 
+## Prerequisites <!-- KFM: Review this section -->
+
+### Set up Power Platform integration
+
+Power Platform integration is required to enable Add-in functionality.
+
+1. Open the LCS environment where you want to add the service.
+1. Go to Full details.
+1. Go to **Power Platform Integration** and select **Setup**.
+1. In the Power platform environment setup dialog box, select the check box, and then select Setup at the bottom of the dialog box. Typically, the setup takes between 60 and 90 minutes.
+1. After the Power Platform Environment setup is completed, you can find an environment name is provided and a statement "Power Platform environment setup is complete". in the **Power Platform Integration** section. Global Inventory Accounting doesn’t require Dual-write application.
+
+For more information, see [Set up after environment deployment](../../fin-ops-core/dev-itpro/power-platform/overview.md#set-up-after-environment-deployment)
+
+### Set up Dataverse
+
+Before setting up Dataverse, add our service principles to your tenant by doing the following:
+
+1. Install Azure AD PowerShell Module v2 as described in Install Azure Active Directory PowerShell for Graph.
+1. Run the following PowerShell command:\
+
+    ```powershell
+    Connect-AzureAD # (open a sign in window and sign in as a tenant user)  
+    
+    New-AzureADServicePrincipal -AppId "7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9" -DisplayName "d365-scm-costaccountingservice"  
+    
+    New-AzureADServicePrincipal -AppId "5f58fc56-0202-49a8-ac9e-0946b049718b" -DisplayName "d365-scm-operationdataservice"
+    ```
+
+Create application users for Global Inventory Accounting in Dataverse: 
+
+1. Open the URL of your Dataverse environment.
+1. Go to **Advanced Setting > System > Security > Users** and create an application user. Use the view menu to change the page view to Application Users.
+1. Select **New**. Set the application ID to 7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9.
+1. Select **Assign Role** and then select *System Administrator*. If there is a role that is named *Common Data Service User*, select it too.
+1. Repeat the steps above but set the application ID to 5f58fc56-0202-49a8-ac9e-0946b049718b.
+
+For more information, see [Create an application user](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user)
+
+If the default language of your Dataverse is not English:
+
+1. Go to **Advanced Setting > Administration > Languages**.
+1. Select *English* (LanguageCode=1033) and select **Apply**.
+
 ## <a name="install"></a>Install the add-in
 
 Follow these steps to install the add-in so that you can use Global Inventory Accounting.
