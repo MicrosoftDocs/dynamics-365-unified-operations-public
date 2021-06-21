@@ -72,7 +72,8 @@ Entities:
 
 - [Payroll employee](hr-admin-integration-payroll-api-payroll-employee.md)
 - [Payroll worker address](hr-admin-integration-payroll-api-payroll-worker-address.md)
-- [Payroll fixed compensation plan](hr-admin-integration-ats-api-recruiting-request-education.md)
+- [Payroll fixed compensation plan](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md)
+- [Payroll variable compensation plan](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md)
 - [Payroll position job](hr-admin-integration-payroll-api-payroll-position-job.md)
 - [Payroll position](hr-admin-integration-payroll-api-payroll-position.md)
 
