@@ -21,9 +21,9 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic describes how to access development instances, configure local development virtual machines (VMs), and find important configurations settings for developers and administrators.
 
 > [!NOTE]
-> Please note that Microsoft Support may provide limited troubleshooting on the Tier 1 Development Environments.
-> In certain circumstances, a fresh deploy of a Tier 1 environment may be by requested by Microsoft Support to resolve issues.
-> Development environment should not contain business critical data and are considered as disposable.
+> - Please note that Microsoft Support may provide limited troubleshooting on the Tier 1 development environments.
+> - In certain circumstances, a fresh deploy of a Tier 1 environment may be by requested by Microsoft Support to resolve issues.
+> - Development environments should not contain business critical data and are considered as disposable.
  
 
 ## Definitions
