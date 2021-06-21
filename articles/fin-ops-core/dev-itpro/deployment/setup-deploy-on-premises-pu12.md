@@ -151,7 +151,7 @@ The following prerequisite software is installed on the VMs by the infrastructur
 
 | Node type | Component | Details |
 |-----------|-----------|---------|
-| AOS       | SNAC – ODBC driver 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> |
+| AOS       | SNAC – ODBC driver 13 | [ODBC driver 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) |
 | AOS       | SNAC – ODBC driver 17 | This driver is needed for upgrading to PU15 or higher: <https://aka.ms/downloadmsodbcsql> |
 | AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
@@ -457,9 +457,9 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
     | Component | Download link | Expected file name |
     |-----------|---------------|--------------------|
-    | SNAC – ODBC driver 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> | msodbcsql.msi |
+    | SNAC – ODBC driver 13 | [ODBC driver 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) | msodbcsql.msi |
     | SNAC – ODBC driver 17 | <https://aka.ms/downloadmsodbcsql> | msodbcsql\_17.msi |
-    | Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> | SSMS-Setup-\*.exe |
+    | Microsoft SQL Server Management Studio 17.5 | [SSMS 17.5](/sql/ssms/download-sql-server-management-studio-ssms) | SSMS-Setup-\*.exe |
     | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> | vcredist\_x64.exe |
     | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | Go to <https://lcs.dynamics.com/V2/SharedAssetLibrary>, select **Model** as the asset type, and then select **VC++ 17 Redistributables**. | vc\_redist.x64\_14\_16\_27024.exe |
     | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> | AccessDatabaseEngine\_x64.exe |
