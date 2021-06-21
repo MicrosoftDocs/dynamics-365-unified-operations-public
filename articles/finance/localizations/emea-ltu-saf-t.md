@@ -5,7 +5,7 @@ title: Standard Audit File for Tax (SAF-T) for Lithuania
 description: This topic explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Lithuania. 
 author: liza-golub
 ms.author: elgolu
-ms.date: 03/08/2021
+ms.date: 06/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,9 +37,15 @@ For more information, see [SAF-T - VMI](https://www.vmi.lt/evmi/en/home).
 
 ## Setup
 
-To start to work with the **Lithuania SAF-T** report, follow these steps.
+To start to work with the **Lithuania SAF-T** report, complete the following steps:
 
-### 1. Import Electronic reporting (ER) configurations
+1. [Import Electronic reporting (ER) configurations.](#import)
+2. [Set up application-specific parameters for the **SAF-T Format (LT)** configuration.](#application)
+3. [Select SAT-T format in General ledger parameters.](#satt)
+4. [Enable features in Feature management.](#features)
+5. [Set up contact person for your company.](#contact)
+
+### <a name="import"></a>Import Electronic reporting (ER) configurations
 
 In Finance, import the following versions or later of these Electronic reporting (ER) configurations from the Global repository.
 
@@ -55,8 +61,8 @@ For more information about how to download ER configurations, see [Download ER 
 
 The **SAF-T General model mapping** configuration provides general data source mapping for the following master data:
 
-- **GeneralLedgerAccounts** – General ledger.
-- **Customers** – Purchasers (customers) and other debtors (available in the file).
+- **GeneralLedgerAccounts**: General ledger.
+- **Customers**: Purchasers (customers) and other debtors (available in the file).
 - **Suppliers** – Suppliers and other creditors (available in the file).
 - **TaxTable** – Data of tax type tables. All tax type tables that are used in the legal entity's accounting system are specified. Examples include value-added tax (VAT), corporate income tax, and excise taxes.
 - **UOMTable** – Type table for units of measurement.
@@ -81,7 +87,7 @@ Be sure to import the most recent versions of the configurations. The version de
 >
 > ![Default for model mapping option set to Yes for the SAF-T General model mapping configuration](media/lt-saf-t-default-model-mapping.png)
 
-### 2. Set up application-specific parameters for the **SAF-T Format (LT)** configuration
+### <a name="application"></a>Set up application-specific parameters for the **SAF-T Format (LT)** configuration
     
 1. In Electronic reporting, open the **Configurations** page. In the configuration tree, under **Standard Audit File (SAF-T)**, select **SAF-T Format (LT)**.
 2. Make sure that company you are working is the company for which you want to set up the Application specific parameters.
@@ -96,12 +102,12 @@ Be sure to import the most recent versions of the configurations. The version de
 
 6. When you've finished setting up the lookup fields, in the **State** field, select **Completed**. Then save the configuration.
 
-### 3. Select SAT-T format in General ledger parameters
+### <a name="satt"></a>Select SAT-T format in General ledger parameters
 
 1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
 2. On the **Standard Audit File for Tax** FastTab, in the **Standard Audit File for Tax (SAF-T)** field, set up the SAF-T format.
 
-### 4. Enable features in Feature management
+### <a name="features"></a>Enable features in Feature management
 
 1. Go to **Feature management** \> **All**.
 2. In the feature list, find and select the following features:
@@ -111,7 +117,7 @@ Be sure to import the most recent versions of the configurations. The version de
 
 3. Select **Enable now**.
 
-### 5. Set up contact person for your company
+### <a name="contact"></a>Set up contact person for your company
 
 **Company** node under **Header** node of SAF-T report must include mandatory information of a **Contact person**. To set up information about a contact person that will be reported to SAF-T, follow these steps.
 
