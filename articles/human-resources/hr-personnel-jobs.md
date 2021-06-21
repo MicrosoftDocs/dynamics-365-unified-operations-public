@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace
+ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -49,6 +49,11 @@ You use job types to group similar jobs into categories. Job types aren't requir
 -   **Non-exempt** – Jobs aren't exempt from overtime under the FLSA.
 -   **Does not apply** – FLSA coverage isn't applicable.
 
+## Job family
+A Job family is a group of jobs that involve similar work and require similar training, skills, knowledge, and expertise. A Job family can be linked to a job in the in th **Jobs** page on the **Job classification** FastTab and on the **All positions** page in the **General** FastTab. Job famliies can be broad or specific based on your business and reporting needs. For example, broad job families may be Skill labor, Unskilled labor. While specific job families may be Accounting, Manufacturing, and Sales.
+
+Maintain job families by using the **Job family** page, which you can open by using the Search function. On the **Job family** page, enter the a unique name for the **Family** and enter a detailed **Description** that you plan to use for your jobs.
+
 ## Job functions
 Job junctions describe high-level functional categories and relate high-level duties. Job functions aren't required. You can use job functions, together with job types, to filter compensation plans to specific jobs. You associate job functions and job types with compensation plans by setting up eligibility rules on the **Eligibility rules** page. You can then attach a set of levels to a compensation plan that apply to the specific combination of a job type and job function that you've defined through an eligibility rule. (These features apply to both fixed compensation plans and variable compensation plans.) However, if you plan to use job functions when you set up eligibility rules for compensation management, you should set up job functions before you set up jobs. The following table shows some examples of job functions.
 
@@ -58,6 +63,14 @@ Job junctions describe high-level functional categories and relate high-level du
 | Accountant    | Professionals        |
 
 You maintain job functions by using the **Job functions** page. On the **Job functions** page, enter an identification code and a brief description for the job function.
+
+## Compensation
+Compensation levels must be set on a job in order to assign a fixed compensation plan to an employee who has a position within the job. The compensation level is used when setting Minimum, Midpoint, and Maxium amounts within a Compensation structure (Compensation grid). When a fixed compensation plan is created, the compensation structure is selected, which also includes the compensation level. When selecting a fixed compensation plan for an employee, the compensation levels available for selection, will be based on the job that the employee's position is associated to. You can learn more about setting up compensation here: [https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-compensation-overview ].
+
+## Job skills
+Job skills describe the skills needed to perform the job. The job skill must have a level associated to it. The skill levels are user-defined, and indicate the level of knowledge or proficiency that is needed for the skill. For example, companies may setup there levels numerically 1-5, with 1 being a beginner and 5 being an expert or they may set them up to be labeled "beginner", intermediate or expert. Once the level is set, the importance of the skill can be set as well. For example, it might be required for an accountant to have a strong knowledge of Excel. A skill 'Excel knowledge' skill can be created. The Level would be set to  'Intermediate' and importance set to 'Most'.  
+
+The skills that are on the job can be used in Skill Mapping. Skill mapping can compare the skills set needed for a job, and the skills associated to a worker, and determine a percent match based on overlapping skills. You can learn more about Skill mapping here: [https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-develop-skills]. 
 
 ## Job tasks
 Job tasks describe the basic tasks that a worker who is in a position for a job must complete. The same job task can be added to multiple jobs, and to positions for the jobs that use those job tasks. The following table shows some examples of job tasks.
