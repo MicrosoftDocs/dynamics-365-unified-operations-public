@@ -4,7 +4,7 @@
 title: Enable automatic retries on batch jobs
 description: This topic describes how to enable automatic retries on batch jobs when transient failures occur.
 author: sarvanisathish
-ms.date: 06/10/2021
+ms.date: 06/21/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
