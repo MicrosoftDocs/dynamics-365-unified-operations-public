@@ -31,16 +31,11 @@ Candidates to hire:
 The candidates to hire section of the Personnel Management workspace is
 populated via multiple sources.
 
-1.  XXX Entity from CDS.
+1.  Odata entity
 
-    1.  In order for applicants to display here, the following entity must be
-        populated via CDS
+2.  LinkedIn integration
 
-2.  Odata entity
-
-3.  LinkedIn integration
-
-4.  Manually entered in the product
+3.  Manually entered in the product
 
 When candidates are in the Candidates to hire section, the following actions can
 be taken by selecting the ellipses on the candidate card:
@@ -74,17 +69,17 @@ assigned to the checklist owner instead.
 When a worker is in the starting soon section, the following actions will be
 available to them:
 
-Assign position
+-  Assign position
 
-Verify employment
+-  Verify employment
 
-Assign fixed compensation
+-  Assign fixed compensation
 
-Assign variable compensation
+-  Assign variable compensation
 
-View in Hierarchy
+-  View in Hierarchy
 
-Apply checklist\*\*
+-  Apply checklist\*\*
 
 \*\*Indicates the default action that displays as a button on the card.
 
@@ -113,17 +108,17 @@ been assigned for that worker.
 When a worker is in the starting soon section, the following actions will be
 available to them:
 
-Assign position
+-  Assign position
 
-Verify employment
+-  Verify employment
 
-Assign fixed compensation
+-   fixed compensation
 
-Assign variable compensation
+-  Assign variable compensation
 
-View in Hierarchy
+-  View in Hierarchy
 
-Apply checklist\*\*
+-  Apply checklist\*\*
 
 \*\*Indicates the default action that displays as a button on the card.
 
@@ -142,11 +137,11 @@ days. You would set Period = 14 and Unit = Days.
 When a worker is in the Exiting section, the following actions will be available
 to them:
 
-Apply checklist\*\*
+-  Apply checklist\*\*
 
-Verify employment
+-  Verify employment
 
-View in Hierarchy
+-  View in Hierarchy
 
 \*\*Indicates the default action that displays as a button on the card.
 
@@ -165,11 +160,11 @@ days. You would set Period = 14 and Unit = Days.
 When a worker is in the Exited section, the following actions will be available
 to them:
 
-Apply checklist\*\*
+-  Apply checklist\*\*
 
-Verify employment
+-  Verify employment
 
-View in Hierarchy
+-  View in Hierarchy
 
 \*\*Indicates the default action that displays as a button on the card.
 
@@ -210,15 +205,15 @@ The Expiring records tab provides a list of items that will be expiring or have
 expired for the workers in the company that the user is logged into. The
 following is a list of items that will show in this tab:
 
-Certificates
+-  Certificates
 
-Identification
+-  Identification
 
-Probations
+-  Probations
 
-Screenings
+-  Screenings
 
-Tests
+-  Tests
 
 To change whether expired or expiring records display in this list, navigate to
 Human Resources parameters – General tab – Expiring records range or Expired
