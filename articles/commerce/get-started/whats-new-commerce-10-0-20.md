@@ -70,6 +70,8 @@ Dynamics 365 Commerce 10.0.20 includes platform updates. To learn more, see [Pla
 ### Bug fixes 
 For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=586707&dbType=3&qc=d0dad8eee2af234e8c288e2a7df14c579004518673d014be511f900cfed008f8).
 
+For Commerce-specific breaking changes, view the [Dynamics 365 Commerce online SDK FAQ](../e-commerce-extensibility/sdk-faq.md).
+
 ### Dynamics 365: 2021 release wave 1 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
