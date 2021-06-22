@@ -4,7 +4,7 @@
 title: Set up the components of a job
 description: This article describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
 author: andreabichsel
-ms.date: 06/20/2017
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,9 +50,9 @@ You use job types to group similar jobs into categories. Job types aren't requir
 -   **Does not apply** – FLSA coverage isn't applicable.
 
 ## Job family
-A Job family is a group of jobs that involve similar work and require similar training, skills, knowledge, and expertise. A Job family can be linked to a job in the in th **Jobs** page on the **Job classification** FastTab and on the **All positions** page in the **General** FastTab. Job famliies can be broad or specific based on your business and reporting needs. For example, broad job families may be Skill labor, Unskilled labor. While specific job families may be Accounting, Manufacturing, and Sales.
+A job family is a group of jobs that involve similar work and require similar training, skills, knowledge, and expertise. A job family can be linked to a job on the **Jobs** page on the **Job classification** FastTab, and on the **All positions** page on the **General** FastTab. Job famliies can be broad or specific based on your business and reporting needs. For example, broad job families may be *Skill labor* and *Unskilled labor*. While specific job families may be *Accounting*, *Manufacturing*, and *Sales*.
 
-Maintain job families by using the **Job family** page, which you can open by using the Search function. On the **Job family** page, enter the a unique name for the **Family** and enter a detailed **Description** that you plan to use for your jobs.
+Maintain job families by using the **Job family** page, which you can open by using the search function. On the **Job family** page, enter a unique name for the family and enter a detailed description that you plan to use for your jobs.
 
 ## Job functions
 Job junctions describe high-level functional categories and relate high-level duties. Job functions aren't required. You can use job functions, together with job types, to filter compensation plans to specific jobs. You associate job functions and job types with compensation plans by setting up eligibility rules on the **Eligibility rules** page. You can then attach a set of levels to a compensation plan that apply to the specific combination of a job type and job function that you've defined through an eligibility rule. (These features apply to both fixed compensation plans and variable compensation plans.) However, if you plan to use job functions when you set up eligibility rules for compensation management, you should set up job functions before you set up jobs. The following table shows some examples of job functions.
