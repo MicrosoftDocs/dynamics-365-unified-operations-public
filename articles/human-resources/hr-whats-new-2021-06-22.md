@@ -47,8 +47,8 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| ## Inform users of Workers without employments feature - When advanced access is on, and the 'View all workers without employment' feature is disabled in feature management, a banner will display in the workers without employments form.  The banner will direct the user to turn the  'View all workers without employment' feature on. | Not Applicable| https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-personnel-workers-without-employment|
-|## Custom field support in Benefits management eligibility rules | [Custom field support for eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |[Configuring eligibility rules](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules) |
+| Inform users of Workers without employments feature - When advanced access is on, and the 'View all workers without employment' feature is disabled in feature management, a banner will display in the workers without employments form.  The banner will direct the user to turn the  'View all workers without employment' feature on. | Not Applicable| https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-personnel-workers-without-employment|
+| Custom field support in Benefits management eligibility rules | [Custom field support for eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |[Configuring eligibility rules](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules) |
 
 ### Bug fixes
 
@@ -73,7 +73,7 @@ The following bug fixes are included in this release.
 | ## Accrue leave and absence is greyed out in pending workers - (575692) | | |
 | 578895 |In the personnel management workspace, starting soon displays employees based on the creation date, not employment start date | The sort order of the tiles has been updated to display by employment start date. |
 | ## Adding a company to the payroll integration resets the integration to use all of the entities even if the option is set to not refresh the project - (580110) | | |
-| 584518 |Enroll Benefits Processing not working and hung the process | This bug addressed performance issues in the legacy benefits enrollment process. |
+| 584518 |Enroll Benefits Processing performance issue | This bug addressed performance issues in the legacy benefits enrollment process. |
 | ## Skill workflow not displaying existing skills as lookup in the designer as a conditional decision  - (575987) | | |
 
 ## In preview
@@ -93,6 +93,7 @@ The following new features are in preview. For more information about turning fe
 | --- | --- |
 |  Enable an absence manager to manage leave | [Enable an absence manager to manage leave](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-absence-manager-manage-leave) |
 | Platform update 10.0.19 (43) | Platform update 10.0.19 is scheduled to begin rolling out with the service release on June 28, 2021. For more information, see [Platform updates for version 10.0.19 of Finance and Operations apps (June 2021)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19) |
+|  Years of service display toggle | This feature provides the option to user different dates to calculate the Years of service display in the Streamlined employee entry form and in the People form.  The options can be found in Human Resources Parameters. |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
