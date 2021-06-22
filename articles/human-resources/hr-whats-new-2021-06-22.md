@@ -47,6 +47,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
+| ## Inform users of Workers without employments feature - (586345) | | |
 
 ### Bug fixes
 
@@ -57,6 +58,24 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
+| ## Localizability: New labels needed for "Degrees" on HcmEmployeeDevelopmentWorkspace - (589243) | | |
+| ## Updating employment start date via HcmEmployee or HCMEmployment entity deletes record - (565817) | | |
+| ## Users receiving feedback is able to edit the feedback received after clicking Add External Link  - (583052) | | |
+| ## Clicking on number of employees on compensation structure tiles in Compensation Management leads to incorrect results - (522281) | | |
+| ## Users assigned with Employee and Manager roles unable to attach Notes or update a Performance journal - Security policy permission denied. - (580683) | | |
+| ## the birth date in the leave and absence company calendar do not match with the real birth date of the user - (583077) | | |
+| ## Cross company leave view feature causes balances display to be empty when access restricted to single company - (586996) | | |
+| ## Enabling Cross Company L&A View causes error when viewing future balances - (581014) | | |
+| ## Department Headcount analytics not taking into consideration movement of employees between department  - (509404) | | |
+| ## Benefit credit proration rule "None" never provides credit - (584851) The flex credit proration rule "None" results in employees receiving zero credits for the benefit period, regardless of when they have been hired. Elevate's documentation specifies that "The employee receives no flex credits if they 
+are hired after the flex credit program period begins." The expectation is that the employee should receive full flex credits if they are hired before the period begins, and none if hired after the period begins. | | |
+| ## Customer is trying to duplicate a duty but is getting an error - (584897) | | |
+| ## Accrue leave and absence is greyed out in pending workers - (575692) | | |
+| ## Benefit credit proration rules key on different fields - (458495) | | |    
+| ## Starting soon displays employees based on the creation date, not employment start date  - (578895) | | |
+| ## Adding a company to the payroll integration resets the integration to use all of the entities even if the option is set to not refresh the project - (580110) | | |
+| ## Enroll Benefits Processing not working and hung the process. - (584518) | | |
+| ## Skill workflow not displaying existing skills as lookup in the designer as a conditional decision  - (575987) | | |
 
 ## In preview
 
