@@ -26,7 +26,9 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
----**Personnel Management Workspace**
+---
+
+**Personnel Management Workspace**
 
 The personnel management workspace contains a vast amount of content! It
 contains personnel movements, tracks employee changes, open positions, address
