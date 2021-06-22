@@ -4,7 +4,7 @@
 title: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
 description: This topic describes how to set up and use Microsoft Dynamics 365 Finance to interoperate with the SII system of Spain.
 author: liza-golub
-ms.date: 07/23/2020
+ms.date: 06/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,11 +29,20 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-According to R.D. 596/2016 in Spain, a new value-added tax (VAT) management system that is based on the Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA [SII]) allows for a two-way, automated relationship between the Spanish Tax Agency (AEAT) and the taxpayer. In the rest of this topic, this system will be referred to as the SII system. Starting July 1, 2017, taxpayers who are subject to SII, and others who voluntarily adopt it, must send details of their billing records within four days through online filing on the AEAT website.
+According to R.D. 596/2016 in Spain, a new value-added tax (VAT) management system that is based on the Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA [SII]) allows for a two-way, automated relationship between the Spanish Tax Agency (La Agencia Estatal de Administración Tributaria [AEAT]) and the taxpayer. In this topic, this system will be referred to as the SII system. Starting July 1, 2017, taxpayers who are subject to SII, and others who voluntarily adopt it, must send details of their billing records within four days through online filing on the AEAT website.
 
 For more information about the SII system of Spain, see the [Immediate Supply of Information on VAT (SII) official website](https://www.agenciatributaria.es/AEAT.internet/en_gb/Inicio/La_Agencia_Tributaria/Campanas/Suministro_Inmediato_de_Informacion_en_el_IVA__SII_/Suministro_Inmediato_de_Informacion_en_el_IVA__SII_.shtml).
 
 ## Overview
+
+Microsoft Dynamics 365 Finance supports the full cycle of processing, including the format generation and submission of the following reports to the SII system of Spain:
+
+   - 'Libro de registro de facturas Expedidas': Record book of issued invoices 
+   - 'Libro de registro de facturas Recibidas': Record book of received invoices
+   - 'Libro de registro de determinadas operaciones intracomunitarias': Record book of certain intra-community operations
+   - 'Cobros sobre facturas registradas en el Libro de registro de Facturas Expedidas': Payments for invoices registered in the record book of issued invoices
+   - 'Pagos para facturas registradas en el Libro de registro de Facturas Recibidas': Payments for invoices registered in the record book of received invoices
+   - 'Cobros en Metálico': Payments in cash
 
 This topic describes how to set up and use Microsoft Dynamics 365 Finance to interoperate with the SII system of Spain. It includes information about how to complete the following tasks:
 
@@ -158,8 +167,7 @@ After the data entities are imported into the database, complete the following t
 1.  Set up executable class parameters.
 2.  Set up additional fields and automactically defined rules.
 3.  Set up number sequences for electronic messages.
-4.  Set up batch settings for automated processing of interoperation with the SII system.
-5.  Set up security roles for electronic message processing.
+4.  Set up security roles for electronic message processing.
 
 ## Set up executable class parameters
 
@@ -401,7 +409,7 @@ Financial reasons can be specified for invoices that are posted from the followi
 -   Accounts Payable (AP) journal
 -   General ledger (GL) general journal
 
-When you can create an invoice from the types of documents that invoices can be created from, you can set up a specific reason for the invoice. The **GenerateMessageItem** action will analyze this reason, and the reason SII code will be set for the electronic message item.
+When you create an invoice from the types of documents that invoices can be created from, you can set up a specific reason for the invoice. The **GenerateMessageItem** action will analyze this reason, and the reason SII code will be set for the electronic message item.
 
 To set up financial reasons, follow these steps.
 
@@ -423,6 +431,15 @@ To enable the system to define the invoice type based on the setup of additional
     -   **Item sales tax group**
 
      You can also specify effective and expiration dates for your rule.
+
+### Algorithm to define the TipoRectificativa tag for a credit note
+
+Both formats, **Libro de registro de facturas Recibidas** (invoices received) and **Libro de registro de facturas Expedidas** (invoices issued), must include a **TipoRectificativa** tag to report credit notes. This tag reports the type of credit note and can have one of the following values:
+
+   - **I** (INCREMENTAL): Incremental
+   - **S** (SUSTITUTIVA): Substitute
+
+To report a credit note with an **I** value in the **TipoRectificativa** tag, before you post the credit note, when you specify the original invoice by using the **Credit invoicing** function, select **Correction for differences only** in the **Correction method** field in the **Credit invoicing** dialog box.
 
 ### Algorithm to define the TipoOperacion (Intra-community operation type) additional field
 
@@ -526,12 +543,6 @@ To work with the Electronic messages functionality, you must define related numb
 
 -   Message
 -   Message item
-
-## Set up batch settings for automated processing of interoperation with the SII system
-
-1.  Go to **Tax \> Setup \> Electronic messages \> Electronic message processing**.
-2.  Select either **SII** or **CollectionInCash** processing.
-3.  On the **Batch** FastTab, select **Create batch**, and then define the required parameters.
 
 ## Set up security roles for electronic message processing
 
@@ -640,6 +651,15 @@ To report invoices to the SII system, follow these steps.
 2.  On the Action Pane, select **Run processing**.
 3.  In the dialog box, in the **Processing** field, select **SII**.
 4.  If you want to run all the possible actions for **SII** processing, clear the **Choose action** check box. If you want to run only a specific action, select the **Choose action** check box, and then, in the **Action** field, select the action to run.
+
+### Run SII processing in batch mode for automated processing of interoperation with the SII system
+To run SII processing in batch mode for automated processing of interoperation with the SII system, follow these steps:
+
+1.  Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic message items**.
+2.  On the Action Pane, select **Run processing**.
+3.  In the dialog box, in the **Processing** field, select **SII**.
+4.  If you want to run all the possible actions for **SII** processing, clear the **Choose action** check box. If you want to run only a specific action, select the **Choose action** check box, and then, in the **Action** field, select the action to run.
+5.  Define the parameters of the batch processing on the **Run in the background** FastTab in the the **Run processing** dialog box. For more information about batch processing, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ### Exclude an invoice from reporting to the SII system
 

@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.19
 > [!IMPORTANT]
 > The scale unit capability for Microsoft Dynamics 365 Supply Chain Management is made available to you under the terms that govern the use of the service. For more information, see [Microsoft Dynamics Legal Information](https://go.microsoft.com/fwlink/?LinkID=290927).
 >
-> By enabling cloud and edge scale units, you affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. To learn more about data processing for cloud and edge scale units, see the [Data processing during management of scale units](#data-processing-management) section later in this topic.
+> When you enable cloud and edge scale units, you will be asked to affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. To learn more about data processing for cloud and edge scale units, see the [Data processing during management of scale units](#data-processing-management) section later in this topic.
 
 ## Core value proposition for scale units
 

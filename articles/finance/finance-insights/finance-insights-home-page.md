@@ -37,6 +37,9 @@ Finance insights preview is available for trial deployments in the United States
 
 Preview features can and should be turned on only in Tier-2 sandbox environments. Setup and artificial intelligence (AI) models that are created in a sandbox environment can't be migrated to a production environment. For more information, see [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
 
+> [!NOTE]
+> This functionality is being offered as a set of preview features. As a preview feature, you should not use the resulting machine learning models to drive or influence your business decisions or budgeting proposals. Your use of this feature is governed by [Supplemental Terms of Use](https://go.microsoft.com/fwlink/?linkid=2105274).
+
 ## Prerequisites
 
 This section lists the requirements for using Finance insights. Wherever possible, links to sources of additional information are provided.

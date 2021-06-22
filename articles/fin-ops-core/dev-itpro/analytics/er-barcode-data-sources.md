@@ -121,14 +121,14 @@ If you haven't yet completed the example in the [Embed images and shapes in docu
 
 | Content description         | File name                   |
 |-----------------------------|-----------------------------|
-| ER data model configuration | Model for cheques.xml       |
-| ER format configuration     | Cheques printing format.xml |
+| ER data model configuration | [Model for cheques.xml](https://download.microsoft.com/download/6/e/a/6ea166fd-1382-4fdb-8dcb-0f13379f9c8e/Modelforcheques.xml)      |
+| ER format configuration     | [Cheques printing format.xml](https://download.microsoft.com/download/1/7/c/17c301e3-c4ee-4886-ae75-440fcc002c8c/Chequesprintingformat.xml) |
 
 Additionally, download the following Excel file that contains the modified template for the provided ER solution.
 
 | Content description | File name                 |
 |---------------------|---------------------------|
-| Report template     | Check template Excel.xlsx |
+| Report template     | [Check template Excel.xlsx](https://download.microsoft.com/download/1/f/6/1f671963-73aa-48d5-ae69-45f21fe7dfb4/Cheque%20template.xlsx) |
 
 ### <a name="ExampleProvider"></a>Activate a configuration provider
 
