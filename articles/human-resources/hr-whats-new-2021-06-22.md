@@ -60,7 +60,6 @@ The following bug fixes are included in this release.
 | Issue number | Issue |  Description |
 | --- | --- | --- |
 | ## Localizability: New labels needed for "Degrees" on HcmEmployeeDevelopmentWorkspace - (589243) | | |
-| ## Updating employment start date via HcmEmployee or HCMEmployment entity deletes record - (565817) | | |
 | 583052 | Users receiving feedback is able to edit the feedback received | When an employee receiving feedback on a performance journal selects the 'Add external link' action, the form becomes editable, allowing the employee to edit the performance feedback they have received. |
 | 522281 | Clicking on number of employees on compensation structure tiles in Compensation Management leads to incorrect results| When drilling down into the compensation plans from the compensation workspace, the correct number of employees now displays |
 | 580683 | Users assigned with Employee and Manager roles unable to attach Notes or update a Performance journal | Users assigned with Employee and Manager roles unable to attach Notes or update a Performance journal. The user receives an error - Cannot create a record in Performance journal entry (HcmPerfJournal). Security policy permission denied. |
@@ -71,7 +70,6 @@ The following bug fixes are included in this release.
 | 584851 | Benefit credit proration rule "None" never provides credit.|The flex credit proration rule "None" resulted in employees receiving zero credits for the benefit period, regardless of when they have been hired. This has been fixed so that an employee should receive full flex credits if they are hired before the benefit period begins, and none if hired after the period begins. |
 | 584897 | Duplicating the 'Use basic external functionality' duty results in an error | When attempting to duplicate the 'Use basic external functionality' duty, the user is presented with the error: 'Could not find object with identifier UserDefinedAppHostDialogView.' |
 | ## Accrue leave and absence is greyed out in pending workers - (575692) | | |
-| 578895 |In the personnel management workspace, starting soon displays employees based on the creation date, not employment start date | The sort order of the tiles has been updated to display by employment start date. |
 | ## Adding a company to the payroll integration resets the integration to use all of the entities even if the option is set to not refresh the project - (580110) | | |
 | 584518 |Enroll Benefits Processing performance issue | This bug addressed performance issues in the legacy benefits enrollment process. |
 | ## Skill workflow not displaying existing skills as lookup in the designer as a conditional decision  - (575987) | | |
