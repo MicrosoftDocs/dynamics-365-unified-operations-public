@@ -43,7 +43,7 @@ To start to work with the **Lithuania SAF-T** report, complete the following ste
 2. [Set up application-specific parameters for the **SAF-T Format (LT)** configuration.](#application)
 3. [Select SAT-T format in General ledger parameters.](#satt)
 4. [Enable features in Feature management.](#features)
-5. [Set up contact person for your company.](#contact)
+5. [Create a contact person for your company.](#contact)
 
 ### <a name="import"></a>Import Electronic reporting (ER) configurations
 
@@ -62,25 +62,25 @@ For more information about how to download ER configurations, see [Download ER 
 The **SAF-T General model mapping** configuration provides general data source mapping for the following master data:
 
 - **GeneralLedgerAccounts**: General ledger.
-- **Customers**: Purchasers (customers) and other debtors (available in the file).
-- **Suppliers** – Suppliers and other creditors (available in the file).
-- **TaxTable** – Data of tax type tables. All tax type tables that are used in the legal entity's accounting system are specified. Examples include value-added tax (VAT), corporate income tax, and excise taxes.
-- **UOMTable** – Type table for units of measurement.
-- **AnalysisTypeTable** – Data of type tables for analytical accounting. This data is used to provide details of transaction data. Examples include unit costs, additional costs, a cost center, or a project.
-- **MovementTypeTable** – Stock movement types.
-- **Products** – Products and services.
-- **PhysicalStock** – Stock (data about the stock that is contained in the file).
+- **Customers**: Purchasers and other debtors.
+- **Suppliers**: Suppliers and other creditors.
+- **TaxTable**: Tax type tables that are used in the legal entity's accounting system are specified. Examples include value-added tax (VAT), corporate income tax, and excise taxes.
+- **UOMTable**: Table for units of measurement.
+- **AnalysisTypeTable**: Data tables for analytical accounting. This data is used to provide details of transaction data. Examples include unit costs, additional costs, a cost center, or a project.
+- **MovementTypeTable**: Stock movement types.
+- **Products**: Products and services.
+- **PhysicalStock**: Data about the stock contained in the file.
 
 The **SAF-T General model mapping** configuration also provides general data source mapping for the following transactional data:
 
-- **GeneralLedgerEntries** – General ledger entries.
-- **Sales invoices** – Initial sales documents.
-- **PurchaseInvoices** – Accounting documents for purchases and acquisitions.
-- **Payments** – Payments.
-- **MovementOfGoods** – Information about the movement of goods. Example of movements include recording of goods, write-off of goods after they are sold or used in production, and recording of finished products, determined loss, and defective goods.
-- **AssetTransactions** – Economic transactions or events for economic assets (tangible, intangible, and financial assets).
+- **GeneralLedgerEntries**: General ledger entries.
+- **Sales invoices**: Initial sales documents.
+- **PurchaseInvoices**: Accounting documents for purchases and acquisitions.
+- **Payments**: Payments.
+- **MovementOfGoods**: Information about the movement of goods. Movement examples include recording goods, writing off goods after they are sold or used in production, and recording finished products, determined loss, and defective goods.
+- **AssetTransactions**: Economic transactions or events for economic assets either tangible or intangible, and financial assets.
 
-Be sure to import the most recent versions of the configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
+Import the most recent versions of the configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
 
 > [!IMPORTANT]
 > After all the ER configurations from the previous table are imported, set the **Default for model mapping** option to **Yes** for the **SAF-T General model mapping** configuration.
@@ -89,27 +89,28 @@ Be sure to import the most recent versions of the configurations. The version de
 
 ### <a name="application"></a>Set up application-specific parameters for the **SAF-T Format (LT)** configuration
     
-1. In Electronic reporting, open the **Configurations** page. In the configuration tree, under **Standard Audit File (SAF-T)**, select **SAF-T Format (LT)**.
-2. Make sure that company you are working is the company for which you want to set up the Application specific parameters.
-3. Select **Configurations** \> **Application-specific parameters**, and then, on the Action Pane, select **Setup**.
-4. Select the last version of the configuration in the list on the left.
-5. Provide the mapping for all the lookup fields:
+1. In Electronic reporting, open the **Configurations** page. 
+2. In the configuration tree, under **Standard Audit File (SAF-T)**, select **SAF-T Format (LT)**.
+3. Make sure the company you are working in is the company for which you want to set up the application specific parameters.
+4. Select **Configurations** > **Application-specific parameters**, and then, on the Action Pane, select **Setup**.
+5. Select the last version of the configuration in the list on the left.
+6. Provide the mapping for all the lookup fields:
 
-    - **StandardAnalysisType_LOOKUP** – Define the mapping between the dimensions that are used by the company and the standard analysis types of Lithuania. Select the value,  **APA-100** as the last condition in the list. It must be set to **\*Not blank\*** in **Analysis ID** column. Verify the value in the Line column that **APA-100** is the last condition in the table. At least one line with **\*Not blank\*** values must be set up.
-    - **ReportTaxCodes_LOOKUP** – Define the mapping between the sales tax codes that are used by the company and the standard tax codes of Lithuania. Select the value,  **PVM100** as the last condition in the list. It must be set to **\*Not blank\*** in **Tax Code** column. Verify the value in the Line column that **PVM100** is the last condition in the table. At least one line with **\*Not blank\*** values must be set up.
-    - **AddressType_LOOKUP** – Define the mapping between the address types that are used by the company and the address types that are used in the SAF-T report for Lithuania. It must be set to **\*Not blank\*** in **Purpose Name** column. Verify the value in the Line column that **KT** is the last condition in the table. Select the value,  **KT** as the last condition in the list. At least one line with **\*Not blank\*** values must be set up.
-    - **StandardMainAccount_Lookup** – Define the mapping between the main accounts that are used by the company and the standard main accounts of Lithuania. Select the value,  **7** as the last condition in the list. It must be set to **\*Not blank\*** in **Analysis ID** column. Verify the value in the Line column that **7** is the last condition in the table. At least one line with **\*Not blank\*** values must be set up.
+    - **StandardAnalysisType_LOOKUP**: Define the mapping between the dimensions that are used by the company, and the standard analysis types of Lithuania. Select the value, **APA-100** as the last condition in the list. The **Analysis ID** column must be set to **\*Not blank\***. Verify in the **Line** column that **APA-100** is the last condition in the table. At least one line with **\*Not blank\*** values must be set up.
+    - **ReportTaxCodes_LOOKUP**: Define the mapping between the sales tax codes that are used by the company and the standard tax codes of Lithuania. Select the value, **PVM100** as the last condition in the list. The value in the **Tax Code** column must be set to **\*Not blank\***. Verify in the **Line** column that **PVM100** is the last condition in the table. At least one line with **\*Not blank\*** values must be set up.
+    - **AddressType_LOOKUP**: Define the mapping between the address types that are used by the company and the address types that are used in the SAF-T report for Lithuania. The **Purpose Name** column must be set to **\*Not blank\***. Verify in the Line column that **KT** is the last condition in the table. Select the value, **KT** as the last condition in the list. At least one line with **\*Not blank\*** values must be set up.
+    - **StandardMainAccount_Lookup**: Define the mapping between the main accounts that are used by the company and the standard main accounts of Lithuania. Select the value, **7** as the last condition in the list. The **Analysis ID** column must be set to **\*Not blank\***. Verify in the Line column that **7** is the last condition in the table. At least one line with **\*Not blank\*** values must be set up.
 
-6. When you've finished setting up the lookup fields, in the **State** field, select **Completed**. Then save the configuration.
+6. When you finish setting up the lookup fields, in the **State** field, select **Completed** and then save the configuration.
 
 ### <a name="satt"></a>Select SAT-T format in General ledger parameters
 
-1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
+1. Go to **General ledger** > **Setup** > **General ledger parameters**.
 2. On the **Standard Audit File for Tax** FastTab, in the **Standard Audit File for Tax (SAF-T)** field, set up the SAF-T format.
 
 ### <a name="features"></a>Enable features in Feature management
 
-1. Go to **Feature management** \> **All**.
+1. Go to **Feature management** > **All**.
 2. In the feature list, find and select the following features:
 
     - Optimization of query data source creation time during execution of ER reports
@@ -117,12 +118,13 @@ Be sure to import the most recent versions of the configurations. The version de
 
 3. Select **Enable now**.
 
-### <a name="contact"></a>Set up contact person for your company
+### <a name="contact"></a>Create a contact person for your company
 
-**Company** node under **Header** node of SAF-T report must include mandatory information of a **Contact person**. To set up information about a contact person that will be reported to SAF-T, follow these steps.
+The **Company** node, which is located under the **Header** node of the SAF-T report, must include information for a contact. To set up contact information that will be reported to SAF-T, follow these steps.
 
 1. Go to **Sales and marketing** > **Relationships** > **Contacts** > **All contacts**.
-2. Create a new **Contact** for your legal entity. Make sure to select the party of **Legal entity** type in the **Contact for** field. Check by **Party ID** that you select the Legal entity from which SAF-T will be reported.
+2. Select **New** and create a new contact for your legal entity. Make sure to select **Legal entity** in the **Contact for** field. 
+3. Check by **Party ID** that you select the Legal entity from which SAF-T will be reported.
 
 ![ER configurations for the SAF-T report for Lithuania](media/lt-saf-t-contact-person.png)
 
