@@ -50,6 +50,8 @@ On the **Positions** tab, indicate whether new positions are available for assig
 On the **Advanced access** tab, you can restrict access to certain information or links.
 
 -   **Restrict access to worker information** – Turning on this option will restrict users' ability to view employee information for only those legal entities they have access to and employees with employments in those legal entities.
+-      Once this feature is turned on you will need to set the appropriate permissions for each user that needs to have their view restricted. To do this, navigate to the Users form.  Select a user and select a role for the user.  The 'Assign organizations' option will become enabled.  Select 'Assign organizations'.  Within the new form, select 'Grant access to specific organizations individually'.  Select the organizations that the user should have access to.  You will need to do this for every role that the user has, including the system user role.  Note:  The companies that the user has access to must match across all of their roles.
+-      
 -   **Enable cross company compensation view** –  Compensation for employees is assigned per legal entity of employment.  Sometimes an employee can be employed in multiple legal entities at the same time.  When this feature is on, compensation for each legal entity will display in ESS/MSS without having to change legal entities. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
