@@ -4,7 +4,7 @@
 title: Personnel actions FAQ
 description: This article contains answers to questions that you might have if your organization uses personnel actions. Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.
 author: andreabichsel
-ms.date: 06/16/2017
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -59,7 +59,7 @@ Personnel actions can have the following statuses:
 - **Denied** – The action request was denied by the approver.
 
 ## Can I delete a personnel action?
-Yes, you can delete personnel actions that have a status of **Draft**, **Error**, **Failed**, or **Canceled**.  You can delete **Completed** personnel actions if you have set 'Allow deleting completed worker actions' to yes in Human resources shared parameters.
+Yes, you can delete personnel actions that have a status of **Draft**, **Error**, **Failed**, or **Canceled**.  You can delete **Completed** personnel actions if you have set **Allow deleting completed worker actions** to **Yes** in Human resources shared parameters.
 
 ## What is the fastest way to check the status of a personnel action request?
 Open any of the personnel action list pages and select a personnel action.
