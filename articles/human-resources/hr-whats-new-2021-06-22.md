@@ -47,7 +47,8 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| ## Inform users of Workers without employments feature - (586345) | | |
+| ## Inform users of Workers without employments feature - When advanced access is on, and the 'View all workers without employment' feature is disabled in feature management, a banner will display in the workers without employments form.  The banner will direct the user to turn the  'View all workers without employment' feature on. | Not Applicable| https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-personnel-workers-without-employment|
+|## Custom field support in Benefits management eligibility rules | [Custom field support for eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |[Configuring eligibility rules](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules) |
 
 ### Bug fixes
 
@@ -61,20 +62,18 @@ The following bug fixes are included in this release.
 | ## Localizability: New labels needed for "Degrees" on HcmEmployeeDevelopmentWorkspace - (589243) | | |
 | ## Updating employment start date via HcmEmployee or HCMEmployment entity deletes record - (565817) | | |
 | 583052 | Users receiving feedback is able to edit the feedback received | When an employee receiving feedback on a performance journal selects the 'Add external link' action, the form becomes editable, allowing the employee to edit the performance feedback they have received. |
-| ## Clicking on number of employees on compensation structure tiles in Compensation Management leads to incorrect results - (522281) | | |
+| 522281 | Clicking on number of employees on compensation structure tiles in Compensation Management leads to incorrect results| When drilling down into the compensation plans from the compensation workspace, the correct number of employees now displays |
 | 580683 | Users assigned with Employee and Manager roles unable to attach Notes or update a Performance journal | Users assigned with Employee and Manager roles unable to attach Notes or update a Performance journal. The user receives an error - Cannot create a record in Performance journal entry (HcmPerfJournal). Security policy permission denied. |
 | ## the birth date in the leave and absence company calendar do not match with the real birth date of the user - (583077) | | |
 | ## Cross company leave view feature causes balances display to be empty when access restricted to single company - (586996) | | |
 | ## Enabling Cross Company L&A View causes error when viewing future balances - (581014) | | |
-| ## Department Headcount analytics not taking into consideration movement of employees between department  - (509404) | | |
-| ## Benefit credit proration rule "None" never provides credit - (584851) The flex credit proration rule "None" results in employees receiving zero credits for the benefit period, regardless of when they have been hired. Elevate's documentation specifies that "The employee receives no flex credits if they 
-are hired after the flex credit program period begins." The expectation is that the employee should receive full flex credits if they are hired before the period begins, and none if hired after the period begins. | | |
+| 509404 | Department Headcount analytics not taking into consideration movement of employees between department |  |
+| 584851 | Benefit credit proration rule "None" never provides credit.|The flex credit proration rule "None" resulted in employees receiving zero credits for the benefit period, regardless of when they have been hired. This has been fixed so that an employee should receive full flex credits if they are hired before the benefit period begins, and none if hired after the period begins. |
 | 584897 | Duplicating the 'Use basic external functionality' duty results in an error | When attempting to duplicate the 'Use basic external functionality' duty, the user is presented with the error: 'Could not find object with identifier UserDefinedAppHostDialogView.' |
 | ## Accrue leave and absence is greyed out in pending workers - (575692) | | |
-| ## Benefit credit proration rules key on different fields - (458495) | | |    
-| ## Starting soon displays employees based on the creation date, not employment start date  - (578895) | | |
+| 578895 |In the personnel management workspace, starting soon displays employees based on the creation date, not employment start date | The sort order of the tiles has been updated to display by employment start date. |
 | ## Adding a company to the payroll integration resets the integration to use all of the entities even if the option is set to not refresh the project - (580110) | | |
-| ## Enroll Benefits Processing not working and hung the process. - (584518) | | |
+| 584518 |Enroll Benefits Processing not working and hung the process | This bug addressed performance issues in the legacy benefits enrollment process. |
 | ## Skill workflow not displaying existing skills as lookup in the designer as a conditional decision  - (575987) | | |
 
 ## In preview
@@ -83,7 +82,6 @@ The following new features are in preview. For more information about turning fe
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Custom field support in Benefits management eligibility rules | [Custom field support for eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |[Configuring eligibility rules](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules) |
 | Benefits management workspace | [Benefits management workspace (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
 | Leave and absence workflow experience enhancements | [Leave and absence workflow experience enhancements](https://go.microsoft.com/fwlink/?linkid=2147528) | [Request time off](hr-employee-self-service-request-time-off.md)|
 | Enable simplified payroll integration (Payroll integration APIs) | [Enable simplified integration with payroll providers](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Payroll integration API](hr-admin-integration-payroll-api-introduction.md)|
