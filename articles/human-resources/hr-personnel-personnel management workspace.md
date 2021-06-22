@@ -1,4 +1,33 @@
-**Personnel Management Workspace**
+---
+# required metadata
+
+title: Setting up positions
+description: This article describes the conceptual elements of the personnel management workspace. 
+author: andreabichsel
+manager: tfehr
+ms.date: 03/29/2021
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.author: anbichse
+ms.reviewer: anbichse
+ms.search.scope: Human Resources
+# ms.tgt_pltfrm: 
+ms.custom: 269054
+ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
+ms.search.region: Global
+# ms.search.industry: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+
+---**Personnel Management Workspace**
 
 The personnel management workspace contains a vast amount of content! It
 contains personnel movements, tracks employee changes, open positions, address
