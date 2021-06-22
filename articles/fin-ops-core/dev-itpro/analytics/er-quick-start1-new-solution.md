@@ -552,7 +552,7 @@ The status of version 1.1 of this configuration is changed from **Draft** to **C
 
 The ER framework uses predefined templates to generate reports in Microsoft Office formats (Excel workbooks or Word documents). While the required report is being generated, a template is filled in with required data according to the configured dataflow. Therefore, you must first design a template for your custom report. This template must be designed as an Excel workbook, the structure of which represents the layout of a custom report. You must name every Excel item that you plan to fill in with required data.
 
-1. Download the [Questionnaires report template.xslx](https://go.microsoft.com/fwlink/?linkid=851448) file, and save it to your local computer.
+1. Download the [Questionnaires report template.xlsx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx) file, and save it to your local computer.
 2. Open the file in Excel, and review the structure of the workbook.
 
 As the following illustration shows, the downloaded template has been designed to print specified questionnaires that present a questionnaire's questions together with appropriate answers.
@@ -577,7 +577,7 @@ By completing the steps in the [Import a designed format configuration](#FormatI
 
 ### <a name="FormatImport"></a>Import a designed format configuration
 
-1. Download the [Questionnaires format.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) file, and save it to your local computer.
+1. Download the [Questionnaires format.version.1.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml) file, and save it to your local computer.
 2. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 3. In the **Electronic reporting** workspace, select **Reporting configurations**.
 4. On the Action pane, Select **Exchange** \> **Load from XML file**.
