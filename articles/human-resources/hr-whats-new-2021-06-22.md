@@ -65,12 +65,12 @@ The following bug fixes are included in this release.
 | 522281 | Clicking on number of employees on compensation structure tiles in Compensation Management leads to incorrect results| When drilling down into the compensation plans from the compensation workspace, the correct number of employees now displays |
 | 580683 | Users assigned with Employee and Manager roles unable to attach Notes or update a Performance journal | Users assigned with Employee and Manager roles unable to attach Notes or update a Performance journal. The user receives an error - Cannot create a record in Performance journal entry (HcmPerfJournal). Security policy permission denied. |
 | 583077 | The birth date of an employee in the leave and absence company calendar shows incorrect date | Users will be able to view the correct birth date of the employees in the leave and absence company calendar |
-| ## Cross company leave view feature causes balances display to be empty when access restricted to single company - (586996) | | |
-| ## Enabling Cross Company L&A View causes error when viewing future balances - (581014) | | |
+| 586996 | Cross company leave view feature causes balances display to be empty when access restricted to single company | Users can view employee's future leave balances correctly when cross company view is enabled |
+| 581014 | Enabling Cross Company leave and absence view causes error when viewing future balances | The errors have been fixed when users were viewing the future leave balances with cross company leave view enabled |
 | 509404 | Department Headcount analytics not taking into consideration movement of employees between department |  |
 | 584851 | Benefit credit proration rule "None" never provides credit.|The flex credit proration rule "None" resulted in employees receiving zero credits for the benefit period, regardless of when they have been hired. This has been fixed so that an employee should receive full flex credits if they are hired before the benefit period begins, and none if hired after the period begins. |
 | 584897 | Duplicating the 'Use basic external functionality' duty results in an error | When attempting to duplicate the 'Use basic external functionality' duty, the user is presented with the error: 'Could not find object with identifier UserDefinedAppHostDialogView.' |
-| ## Accrue leave and absence is greyed out in pending workers - (575692) | | |
+| 575692 | Accrue leave and absence is greyed out in pending workers | Leave and absence accrual can be run on future hires when “Streamlined employee entry" is enabled |
 | ## Adding a company to the payroll integration resets the integration to use all of the entities even if the option is set to not refresh the project - (580110) | | |
 | 584518 |Enroll Benefits Processing performance issue | This bug addressed performance issues in the legacy benefits enrollment process. |
 | ## Skill workflow not displaying existing skills as lookup in the designer as a conditional decision  - (575987) | | |
