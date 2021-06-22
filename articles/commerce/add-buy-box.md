@@ -4,7 +4,7 @@
 title: Buy box module
 description: This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 06/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-The term *buy box* typically refers to the area of a product details page that is "above the fold," and that hosts all the most important information that is required to make a product purchase. (An area that is "above the fold" is visible when the page is first loaded, so that users don't have to scroll down to see it.)
+The term *buy box* typically refers to the area of a product details page (PDP) that is "above the fold," and that hosts all the most important information that is required to make a product purchase. (An area that is "above the fold" is visible when the page is first loaded, so that users don't have to scroll down to see it.)
 
 A buy box module is special container that is used to host all the modules that are shown in the buy box area of a product details page.
 
@@ -72,20 +72,17 @@ The following buy box module settings can be configured at **Site Settings \> Ex
 
 - **Cart line quantity limit** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
 - **Inventory** – For information about how to apply inventory settings, see [Apply inventory settings](inventory-settings.md).
-- **Add product to cart** -  For more information about how to apply Add product to cart settings, see [Add_product_cart](add-cart-settings.md) 
+- **Add product to cart** - For information about how to apply **Add product to cart settings**, see [Add_product_to cart settings](add-cart-settings.md) 
 
+## Buy box module definition extensions in the Adventure Works theme
 
-## Buy box module definition extensions in Adventure works theme
-
-The Buy box in Adventure works theme has a module definition extension to allow [Product Specifications module]() to be supported on the buy box within an accordion. 
-**Product specification** - Add the **Product Specification** module this slot if you want to showcase the product specification (attributes) in the buy box.
+The buy box module provided in the Adventure Works theme has a module definition extension that supports implementation of a product specifications module within an accordion module in a PDP buy box. To showcase product specification attributes in a PDP buy box, add a product specification module to the accordion module slot within the buy box slot.
 
 > [!IMPORTANT]
-> Adventure works theme is available in Dynamics 365 Commerce 10.0.20 release.
+> The Adventure Works theme is available as of the Dynamics 365 Commerce version 10.0.20 release.
 
-The following image shows an example of Buy box in Adventure works theme.
-
-![Example of a Buybox module](./media/)
+<!--The following image shows an example of buy box in Adventure works theme.-->
+<!--![Example of a buy box module](./media/)-->
 
 ## Commerce Scale Unit interaction
 
