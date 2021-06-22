@@ -60,16 +60,16 @@ The following bug fixes are included in this release.
 | --- | --- | --- |
 | ## Localizability: New labels needed for "Degrees" on HcmEmployeeDevelopmentWorkspace - (589243) | | |
 | ## Updating employment start date via HcmEmployee or HCMEmployment entity deletes record - (565817) | | |
-| ## Users receiving feedback is able to edit the feedback received after clicking Add External Link  - (583052) | | |
+| 583052 | Users receiving feedback is able to edit the feedback received | When an employee receiving feedback on a performance journal selects the 'Add external link' action, the form becomes editable, allowing the employee to edit the performance feedback they have received. |
 | ## Clicking on number of employees on compensation structure tiles in Compensation Management leads to incorrect results - (522281) | | |
-| ## Users assigned with Employee and Manager roles unable to attach Notes or update a Performance journal - Security policy permission denied. - (580683) | | |
+| 580683 | Users assigned with Employee and Manager roles unable to attach Notes or update a Performance journal | Users assigned with Employee and Manager roles unable to attach Notes or update a Performance journal. The user receives an error - Cannot create a record in Performance journal entry (HcmPerfJournal). Security policy permission denied. |
 | ## the birth date in the leave and absence company calendar do not match with the real birth date of the user - (583077) | | |
 | ## Cross company leave view feature causes balances display to be empty when access restricted to single company - (586996) | | |
 | ## Enabling Cross Company L&A View causes error when viewing future balances - (581014) | | |
 | ## Department Headcount analytics not taking into consideration movement of employees between department  - (509404) | | |
 | ## Benefit credit proration rule "None" never provides credit - (584851) The flex credit proration rule "None" results in employees receiving zero credits for the benefit period, regardless of when they have been hired. Elevate's documentation specifies that "The employee receives no flex credits if they 
 are hired after the flex credit program period begins." The expectation is that the employee should receive full flex credits if they are hired before the period begins, and none if hired after the period begins. | | |
-| ## Customer is trying to duplicate a duty but is getting an error - (584897) | | |
+| 584897 | Duplicating the 'Use basic external functionality' duty results in an error | When attempting to duplicate the 'Use basic external functionality' duty, the user is presented with the error: 'Could not find object with identifier UserDefinedAppHostDialogView.' |
 | ## Accrue leave and absence is greyed out in pending workers - (575692) | | |
 | ## Benefit credit proration rules key on different fields - (458495) | | |    
 | ## Starting soon displays employees based on the creation date, not employment start date  - (578895) | | |
@@ -94,6 +94,7 @@ The following new features are in preview. For more information about turning fe
 | Feature | Details |
 | --- | --- |
 |  Enable an absence manager to manage leave | [Enable an absence manager to manage leave](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-absence-manager-manage-leave) |
+| Platform update 10.0.19 (43) | Platform update 10.0.19 is scheduled to begin rolling out with the service release on June 28, 2021. For more information, see [Platform updates for version 10.0.19 of Finance and Operations apps (June 2021)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19) |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
