@@ -115,7 +115,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 ### <a name="sfcertrotationnotexpired"></a>Service Fabric with certificates that aren't expired
 
-1. Locate the **Clusterconfig.json** file for editing. If you cannot find this, the follow steps 2-3, otherwise continue from step 4.
+1. Locate the **Clusterconfig.json** file for editing. If you cannot find this, follow steps 2 and 3, otherwise continue from step 4.
 2. Run the following command to connect to the Service Fabric cluster.
 
     ```powershell
@@ -128,7 +128,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     ```powershell
     Get-ServiceFabricClusterConfiguration >C:\Temp\ClusterConfig.json
     ```	
-4. Open the **Clusterconfig.json** file for editing, and find the following section. If a secondary thumbprint is defined, go to [Clean up old Service Fabric certificates](#cleanupoldsfcerts) before you go any further.
+4. Open the **Clusterconfig.json** file for editing and find the following section. If a secondary thumbprint is defined, go to [Clean up old Service Fabric certificates](#cleanupoldsfcerts) before you go any further.
 
     ```json
     "security": {
@@ -155,7 +155,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
                 },
     ```
 
-5. Replace that section in the file with following section.
+5. Replace that section in the file with the following code.
 
     ```json
     "security":  {
