@@ -50,6 +50,7 @@ The following features are generally available with this release.
 | Inform users of Workers without employments feature - When advanced access is on, and the 'View all workers without employment' feature is disabled in feature management, a banner will display in the workers without employments form.  The banner will direct the user to turn the  'View all workers without employment' feature on. | Not Applicable| https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-personnel-workers-without-employment|
 | Custom field support in Benefits management eligibility rules | [Custom field support for eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |[Configuring eligibility rules](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules) |
 | Leave accrual transaction auditing | - | [Leave accrual transaction auditing](hr-leave-and-absence-accrue.md#preview-leave-accrual-transaction-auditing)|
+| Leave and absence workflow experience enhancements | [Leave and absence workflow experience enhancements](https://go.microsoft.com/fwlink/?linkid=2147528) | [Request time off](hr-employee-self-service-request-time-off.md)|
 
 ### Bug fixes
 
@@ -82,7 +83,6 @@ The following new features are in preview. For more information about turning fe
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
 | Benefits management workspace | [Benefits management workspace (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
-| Leave and absence workflow experience enhancements | [Leave and absence workflow experience enhancements](https://go.microsoft.com/fwlink/?linkid=2147528) | [Request time off](hr-employee-self-service-request-time-off.md)|
 | Enable simplified payroll integration (Payroll integration APIs) | [Enable simplified integration with payroll providers](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Payroll integration API](hr-admin-integration-payroll-api-introduction.md)|
 
 
