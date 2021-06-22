@@ -93,7 +93,7 @@ The following new features are in preview. For more information about turning fe
 | --- | --- |
 |  Enable an absence manager to manage leave | [Enable an absence manager to manage leave](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-absence-manager-manage-leave) |
 | Platform update 10.0.19 (43) | Platform update 10.0.19 is scheduled to begin rolling out with the service release on June 28, 2021. For more information, see [Platform updates for version 10.0.19 of Finance and Operations apps (June 2021)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19) |
-|  Years of service display toggle | This feature provides the option to user different dates to calculate the Years of service display in the Streamlined employee entry form and in the People form.  The options can be found in Human Resources Parameters. |
+|  Years of service display toggle | This feature provides the option to user different dates to calculate the Years of service display in the Streamlined employee entry form and in the People form.  The will be available in Human Resources Parameters. |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
