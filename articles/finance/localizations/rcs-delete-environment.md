@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Regulatory Configuration Service - Delete an RCS Environment
-description: This topic explains how an RCS System administrator can delete the RCS environment and related data.
+title: Regulatory Configuration Service (RCS) - Delete an RCS environment
+description: This topic explains how a Regulatory Configuration Service (RCS) system administrator can delete an RCS environment and related data.
 author: JaneA07
 ms.date: 06/14/2021
 ms.topic: article
@@ -26,38 +26,37 @@ ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.15
 
 ---
-# Regulatory Configuration Service (RCS) - Delete an RCS environment 
+# Regulatory Configuration Service (RCS) - Delete an RCS environment
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how a RCS System administrator can delete the RCS environment and any related data. 
+This topic explains how a Regulatory Configuration Service (RCS) system administrator can delete an RCS environment and related data.
 
-Before you can complete those procedures, the following prerequisites must be met:
+Before you can complete the procedure in this topic, the following prerequisites must be met:
 
-   - You must be the **System Admin** for the RCS environment.
-   - The **System Admin** role must have the **‘RCSDeleteEnvironmentDuty’** role assigned.
+- You must have the **System Admin** role assigned to you for the RCS environment.
+- The **System Admin** role must have the **RCSDeleteEnvironmentDuty** role assigned to it.
 
 ## Delete an RCS environment
 
-1. Go to RCS and select the **Electronic reporting** workspace tile.
-2. Under **Related links**, select **Delete RCS environment**.
+1. Open RCS, and select the **Electronic reporting** workspace tile.
+2. In the **Related links** section, select **Delete RCS environment**.
 
-  ![Delete RCS environment in related links](media/01_RCS-Delete-Environ-Related-Link.PNG)  
-  
-3. In the panel that opens, review the messages regarding scope of deleting the environment.
-  
-  ![Delete RCS environment message](media/01_RCS-Delete-Environ-Msg_noGUID.PNG)
-  
-> [!IMPORTANT]
-> Deleting your RCS Environment can't be reversed. 
-> This will delete the selected RCS environment, and any related data including features and configurations stored in the Global repository. Features and configuration shared with other organizations will be unshared and deleted if they have no dependencies. Features and configurations with dependencies will be marked as discontinued.
+    ![Delete RCS environment link in the Related links section](media/01_RCS-Delete-Environ-Related-Link.PNG)
 
-4. Type the RCS environment GUID in the field provided to confirm that you want to delete your environment. The environment GUID is included in the deletion message. 
+3. In the dialog box that appears, review the messages about the scope of environment deletion.
+
+    ![Messages in the Delete RCS environment dialog box](media/01_RCS-Delete-Environ-Msg_noGUID.PNG)
+
+    > [!IMPORTANT]
+    > Deletion of an RCS environment can't be reversed.
+    >
+    > The operation deletes the selected RCS environment and any related data, including features and configurations that are stored in the Global repository. Features and configurations that are shared with other organizations will be unshared and deleted if they have no dependencies. Features and configurations that have dependencies will be marked as discontinued.
+
+4. In the field that is provided, enter the globally unique identifier (GUID) of the RCS environment to confirm that you want to delete it. The environment's GUID is included in the deletion message.
 5. Select **Delete environment**.
 	
-Your RCS environment and any related data is now deleted.
+Your RCS environment and any related data are now deleted.
 
 > [!IMPORTANT]
-> After you delete the RCS environment, there is no way to recover the data. A new RCS environment can be created in any available RCS region.
-
-
+> After you delete an RCS environment, there is no way to recover the data. A new RCS environment can be created in any available RCS region.
