@@ -65,8 +65,6 @@ When updating an existing time off request, you can add an attachment. You can a
 
 ## Cancel time-off requests
 
-[!include [Preview feature](includes/preview-feature.md)]
-
 1. In the **Employee self service** workspace, select **View time off** in the **Time Off Balances** tile.
 
 2. On the **Time off** form, select one or more time-off requests to cancel.
