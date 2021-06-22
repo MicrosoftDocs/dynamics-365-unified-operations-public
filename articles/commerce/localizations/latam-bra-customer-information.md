@@ -47,7 +47,7 @@ To make a sale to an anonymous customer, follow these steps.
 1. Select **Add customer information**, and then select **Enter manually**.
 1. Enter the customer's CNPJ/CPF number or foreigner ID, name, and address, and then select **OK**.
 1. Register payments for the transaction, and then finalize the transaction.
-1. Verify that the printed DANFE receipt contains the customer's CNPJ/CPF number, or the customer's foreigner ID, name, and address.
+1. Verify that the printed receipt contains the customer's CNPJ/CPF number or foreigner ID, name, and address.
 
 ### Scenario 2: Make a sale to an existing named customer
 
@@ -58,7 +58,7 @@ To make a sale to a named customer, follow these steps.
 1. Select **Add customer**, and then find and select the desired customer.
 1. Add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
-1. Verify that the printed receipt contains the customer's CNPJ/CPF number, or the customer's foreigner ID, name, and address.
+1. Verify that the printed receipt contains the customer's CNPJ/CPF number or foreigner ID, name, and address.
 
 ### Scenario 3: Make a sale to a new named customer
 
@@ -73,7 +73,7 @@ To make a sale to a new named customer, follow these steps.
 1. Select **Add address**, and then enter the new customer's contact information and address.
 1. Save the customer record and the customer address record, and then add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
-1. Verify that the printed receipt contains the customer's CNPJ/CPF number, or the customer's foreigner ID, name, and address.
+1. Verify that the printed receipt contains the customer's CNPJ/CPF number or foreigner ID, name, and address.
 
 > [!NOTE]
 > If you have to specify a different customer for the transaction, you must first clear the customer information. Then select another customer.
@@ -89,7 +89,7 @@ To change the customer information for a sale to a named customer, follow these 
 1. Select **Enter manually**.
 1. Enter the customer's CNPJ/CPF number or foreigner ID, name, and address, and then select **OK**.
 1. Register payments for the transaction, and then finalize the transaction.
-1. Verify that the printed receipt contains the customer's CNPJ/CPF number, or the customer's foreigner ID, name, and address.
+1. Verify that the printed receipt contains the customer's CNPJ/CPF number or foreigner ID, name, and address.
 
 ## Additional resources
 
