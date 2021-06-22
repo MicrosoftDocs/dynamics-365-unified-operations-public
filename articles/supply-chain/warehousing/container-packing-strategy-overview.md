@@ -203,7 +203,7 @@ To set up a work template, follow these steps.
 
 1. Go to **Warehouse management \> Setup \> Work \> Work templates**.
 1. Set the **Work order type** field to *Sales orders*.
-1. In the **Overview** grid, find and select the work template that should be used with this function. For this scenario, select the **63 Pick to container** template.
+1. In the **Overview** grid, find and select the work template that should be used for packing single orders per container. For this scenario, select the **63 Pick to container** template.
 1. On the Action Pane, select **Edit query**.
 1. A standard query editor dialog box appears. On the **Sorting** tab, add the following lines:
 
