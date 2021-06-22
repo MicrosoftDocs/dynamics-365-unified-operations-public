@@ -3431,6 +3431,22 @@
           href: troubleshooting/inventory/while-splitting-the.md
       - name: Master planning
         items:
+        - name: You receive an error when running the built-in master planning engine
+          href: troubleshooting/planning/deprecated-master-planning-error.md
+        - name: Item can't have a BOM or formula
+          href: troubleshooting/planning/item-cannot-have-bom-formula.md
+        - name: Parameters for master plan do not exist
+          href: troubleshooting/planning/no-parameters-for-master-plan.md
+        - name: The planned production order must be scheduled before it can be firmed
+          href: troubleshooting/planning/planned-order-must-be-scheduled.md
+        - name: Product is on hold for transactions
+          href: troubleshooting/planning/product-is-on-hold.md
+        - name: The selected formula number is not approved for a batch order.
+          href: troubleshooting/planning/selected-formula-not-approved.md
+        - name: Vendor code isn't authorized for a specific product and date
+          href: troubleshooting/planning/vendor-code-not-authorized.md
+        - name: Vendor is not specified when firming planned orders
+          href: troubleshooting/planning/vendor-not-specified.md
         - name: Directly derived firmed orders are processed by an in-review workflow
           href: troubleshooting/planning/firmed-directly-deri.md
         - name: You can't filter master planning items by their related coverage group values
