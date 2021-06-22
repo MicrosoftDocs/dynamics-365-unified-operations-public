@@ -32,9 +32,9 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic gives an overview of the cancellation and return functionality for NFC-e (Nota Fiscal do Consumidor eletrônica) documents in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
 
-Commerce functionality for Brazil supports the cancellation and return of sales that were issued by using NFC-e documents. NFC-e document formats are based on the national technical standards for electronic fiscal documents, including cancellation events and NF-e (Nota Fiscal eletrônica) model 55 for returns.
+Commerce functionality for Brazil supports the cancellation and return of sales that were issued by using NFC-e documents. NFC-e document formats are based on the national technical standards for electronic fiscal documents. These standards also include a format for cancellation events and NF-e (Nota Fiscal eletrônica) model 55 for returns.
 
-An NF-e is an electronic fiscal document that is generated and printed to register the return of goods that were sold to a customer. It enables tax and fiscal control from tax authorities. It also lets customers verify the validity and authenticity of the fiscal documents that they receive. For more information about the NF-e process, see [Brazil NF-e process overview](../../finance/localizations/latam-bra-nf-e-process.md).
+An NF-e is an electronic fiscal document that is generated and printed to register the return of goods that were sold to a customer. It enables tax and fiscal control by tax authorities. It also lets customers verify the validity and authenticity of the fiscal documents that they receive. For more information about the NF-e process, see [Brazil NF-e process overview](../../finance/localizations/latam-bra-nf-e-process.md).
 
 An NFC-e document can be canceled only if it has already been authorized by the tax authority, and if the goods and the customer are still in the establishment. The deadline for canceling an NFC-e document is 30 minutes after the authorization for use was granted. After this cancellation deadline expires, a return NF-e document must be issued to cancel a sale.
 
