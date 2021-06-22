@@ -138,7 +138,7 @@ For more information about ER configuration providers, see [Create configuration
 
 ## <a id="ImportERSolution1"></a>Import the standard ER format configurations
 
-### <a id="ImportERFormat1"></a>Import the standard ER configurations
+### <a id="ImportERFormat"></a>Import the standard ER configurations
 
 To add the standard ER configurations to your current instance of Microsoft Dynamics 365 Finance, you must import them from the ER [repository](general-electronic-reporting.md#Repository) that was configured for that instance.
 
