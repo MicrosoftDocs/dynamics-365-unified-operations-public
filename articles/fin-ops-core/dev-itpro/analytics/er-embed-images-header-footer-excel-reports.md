@@ -257,7 +257,7 @@ You must configure your custom format so that it meets your new requirement - to
 
 ### <a id="MarkFormatRunnable"></a>Mark a custom format as runnable
 
-Now that the first version of your custom format has been created and has a status of **Draft**, you can run it for testing purposes. To run the report, you must process a vendor payment by using the payment method that refers to your custom ER format. By default, when you call an ER format from the application, only versions that have a status of **Completed** or **Shared** are [considered](general-electronic-reporting.md#component-versioning). This behavior helps prevent ER formats that have unfinished designs from being used. However, for your test runs, you can force the application to use the version of your ER format that has a status of **Draft**. In this way, you can adjust the current format version if any modifications are required. For more information, see [Applicability](electronic-reporting-destinations.md#applicability).
+Now that the first version of your custom format has been created and has a status of **Draft**, you can run it for testing purposes. To run the report, process a vendor payment by using the payment method that refers to your custom ER format. By default, when you call an ER format from the application, only versions that have a status of **Completed** or **Shared** are [considered](general-electronic-reporting.md#component-versioning). This behavior helps prevent ER formats that have unfinished designs from being used. However, for your test runs, you can force the application to use the version of your ER format that has a status of **Draft**. In this way, you can adjust the current format version if any modifications are required. For more information, see [Applicability](electronic-reporting-destinations.md#applicability).
 
 To use the draft version of an ER format, you must explicitly mark the ER format.
 
@@ -272,21 +272,21 @@ To use the draft version of an ER format, you must explicitly mark the ER format
 
 ## <a id="PrintInvoice2"></a>Print a free text invoice by using the custom ER format
 
-### <a id="ConfigurePrintManagement2"></a>Set up the print management
+### <a id="ConfigurePrintManagement2"></a>Set up print management
 
-1.  Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
+1.  Go to **Accounts receivable** > **Invoices** > **All free text invoices**.
 2.  On the **Free text invoice** page, select the **FTI-00000002** invoice.
 3.  On the **Free text invoice** page, on the Action Pane, on the **Invoice** tab, in the **Print management** group, select **Print management**.
-4.  On the **Print management setup** page, expand the tree nodes to select the **Module - accounts receivable \> Documents \> Free text invoice \> Original \<Default\>** item.
+4.  On the **Print management setup** page, expand the tree nodes to select the **Module - accounts receivable** > **Documents** \> **Free text invoice** > **Original** **\<Default\>** item.
 5.  In the **Report format** field, select **Free text invoice (Excel) custom**.
-6.  Press **Escape** to leave the **Print management setup** page.
+6.  Press the Escape key to leave the **Print management setup** page.
 
 ### <a id="ProcessInvoice2"></a>Print a free text invoice
 
-1.  On the **Free text invoice** page, for the selected **FTI-00000002** invoice, on the Action Pane, on the **Invoice** tab, in the **Document** group, select **Print \> Selected**.
-2.  Download the generated invoice in Excel format and open it for preview.
+1.  On the **Free text invoice** page, for the selected **FTI-00000002** invoice, on the Action Pane, on the **Invoice** tab, in the **Document** group, select **Print** > **Selected**.
+2.  Download the generated invoice in Excel and open it for preview.
     
-    Notice that, in accordance with the structure of the custom ER format, in addition to information about report's paging the page footer of the generated invoice contains a company logo image.
+    Notice that, in accordance with the structure of the custom ER format and in addition to information about the report's paging, the page footer of the generated invoice contains a company logo image.
 
     ![Free text invoice page](./media/er-embed-images-header-footer-excel-reports-print-invoice2.gif)
 
