@@ -64,7 +64,7 @@ The following bug fixes are included in this release.
 | 583052 | Users receiving feedback is able to edit the feedback received | When an employee receiving feedback on a performance journal selects the 'Add external link' action, the form becomes editable, allowing the employee to edit the performance feedback they have received. |
 | 522281 | Clicking on number of employees on compensation structure tiles in Compensation Management leads to incorrect results| When drilling down into the compensation plans from the compensation workspace, the correct number of employees now displays |
 | 580683 | Users assigned with Employee and Manager roles unable to attach Notes or update a Performance journal | Users assigned with Employee and Manager roles unable to attach Notes or update a Performance journal. The user receives an error - Cannot create a record in Performance journal entry (HcmPerfJournal). Security policy permission denied. |
-| ## the birth date in the leave and absence company calendar do not match with the real birth date of the user - (583077) | | |
+| 583077 | The birth date of an employee in the leave and absence company calendar shows incorrect date | Users will be able to view the correct birth date of the employees in the leave and absence company calendar |
 | ## Cross company leave view feature causes balances display to be empty when access restricted to single company - (586996) | | |
 | ## Enabling Cross Company L&A View causes error when viewing future balances - (581014) | | |
 | 509404 | Department Headcount analytics not taking into consideration movement of employees between department |  |
