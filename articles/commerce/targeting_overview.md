@@ -51,7 +51,7 @@ You can edit an audience by clicking on it's blue link in the **Audiences** tab 
 ## Targets
 A target is the user experience that will be shown to members of the chosen audience. You can target modules in the **Pages** tab or fragments in the **Fragments** tab.
 
-To target a module in Commerce site builder, follow these steps.
+To target page modules in Commerce site builder, follow these steps.
 1. Select **Pages** in the left navigation pane, and then select the blue link for the page that has the module(s) you want to target.
 2. Click **Edit** to check out the page for editing.
 3. Click the **Default** drop-down and then **New target** to create a new target shell.
@@ -66,7 +66,9 @@ To target a module in Commerce site builder, follow these steps.
 
 To preview the target as a member of an audience and on a particular day, click on **Preview** in the command bar, select **Advanced preview** and click **Next**. You can either choose from the list of relevent audiences shown here or remove the filter to choose from all audiences. Once everything looks good, click on **Publish** to publish your target immediately or include within a publish group to schedule when it goes live.
 
-To manage your targets
+You can also target fragments in a similar way from the **Fragments** tab in the left navigation pane.
+
+To manage your module or fragment targets, go to the default page or fragment and follow these steps:
 1. Edit
 2. Delete
 3. Prioritize
