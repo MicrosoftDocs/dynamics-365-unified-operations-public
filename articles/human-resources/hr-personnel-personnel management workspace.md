@@ -1,10 +1,9 @@
 ---
 # required metadata
 
-title: Setting up positions
+title: Personnel management workspace
 description: This article describes the conceptual elements of the personnel management workspace. 
 author: andreabichsel
-manager: tfehr
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 
