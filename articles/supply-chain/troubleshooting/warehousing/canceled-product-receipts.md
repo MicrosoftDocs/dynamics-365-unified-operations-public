@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.20
 
 ## Symptoms
 
-After you run **Cancel product receipts** on an inbound load, the system automatically updates the status of inventory transactions from *Received* to *Ordered*.
+After you run the **Cancel product receipts** action on an inbound load, the system automatically updates the status of inventory transactions from *Received* to *Ordered*.
 
 ## Resolution
 
