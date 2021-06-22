@@ -36,7 +36,6 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 > 
 > Old certificates must remain in place until the certificate rotation process is complete, removing them in advance will cause the rotation process to fail.
 
-> [!CAUTION]
 > The certificate rotation process should not be carried out on Service Fabric clusters running 7.0.x and 7.1.x. 
 >
 > Upgrade your Service Fabric cluster to 7.2.x or later before attempting certificate rotation.
@@ -115,8 +114,8 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 ### <a name="sfcertrotationnotexpired"></a>Service Fabric with certificates that aren't expired
 
-1. Locate the **Clusterconfig.json** file for editing. If you cannot find this, follow steps 2 and 3, otherwise continue from step 4.
-2. Run the following command to connect to the Service Fabric cluster.
+1. Locate the **Clusterconfig.json** file for editing. If you cannot find this file, follow steps 2 and 3, otherwise continue to step 4.
+2. Run the following command to connect to the Service Fabric Cluster.
 
     ```powershell
     #Connect to the Service Fabric Cluster from a node within the cluster
@@ -128,7 +127,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     ```powershell
     Get-ServiceFabricClusterConfiguration >C:\Temp\ClusterConfig.json
     ```	
-4. Open the **Clusterconfig.json** file for editing and find the following section. If a secondary thumbprint is defined, go to [Clean up old Service Fabric certificates](#cleanupoldsfcerts) before you go any further.
+4. Open the **Clusterconfig.json** file for editing and find the following section. If a secondary thumbprint is defined, go to [Clean up old Service Fabric certificates](#cleanupoldsfcerts) before you continue.
 
     ```json
     "security": {
@@ -204,7 +203,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 9. Run the following PowerShell command.
 
     ```powershell
-    # Connect to the Service Fabric cluster
+    # Connect to the Service Fabric Cluster
     Connect-ServiceFabricCluster
 
     # Get path of ClusterConfig.json for following command
