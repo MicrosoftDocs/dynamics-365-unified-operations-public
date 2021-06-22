@@ -2,7 +2,7 @@
 # required metadata
 
 title: Budget control overview
-description: This article introduces budget control and provides information to help you configure budget control in Microsoft Dynamics 365 Finance so that you can manage financial resources.
+description: This topic introduces the budget control feature and provides information to help you configure budget control to optimize management of your organization's financial resources.
 author: panolte
 ms.date: 04/29/2021
 ms.topic: article
@@ -31,13 +31,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article introduces budget control and provides information to help you configure budget control so that you can manage financial resources.
+This topic introduces the budget control feature and provides information to help you configure budget control to optimize management of your organization's financial resources.
 
 ## Overview
 
 Budget control supports management of an organization’s financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. 
 
-After budgets have been approved in Microsoft Dynamics 365 Finance, you can use budget plans to generate budget register entries to record the expenditure budget for an organization. Alternatively, you can create or import budget register entries from a third-party program instead of using budget planning functionality. 
+After budgets have been approved in in the system, you can use budget plans to generate budget register entries to record the expenditure budget for an organization. Alternatively, you can create or import budget register entries from a third-party program instead of using budget planning functionality. 
 
 Expenditures can be recorded by using main accounts and financial dimensions. You can configure control of the overall expenditure to meet the organization’s policies and requirements by grouping combinations of financial dimensions and main accounts. 
 
