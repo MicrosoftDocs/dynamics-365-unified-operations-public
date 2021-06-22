@@ -4,7 +4,7 @@
 title: Trace the execution of ER formats to troubleshoot performance issues
 description: This topic provides information about how to use the performance trace feature in Electronic reporting (ER) to troubleshoot performance issues.
 author: NickSelin
-ms.date: 04/23/2021
+ms.date: 06/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -125,27 +125,27 @@ The corresponding versions of the data model and model mapping configurations ar
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
 3. In the **User parameters** dialog box, in the **Execution tracing** section, follow these steps:
 
-    1. In the **Execution trace format** field, select an option depending on the nature of an ER format the performance of which you plan to trace.
+    1. In the **Execution trace format** field, select an option based on the ER format's performance you want to trace.
 
-        1. When you plan to interactively execute an ER format the execution time of which is short, in the **Execution trace format** field, select **Debug trace format** to start to collect the details of ER format execution. When this value is selected, the performance trace will collect information about the time that is spent on the following actions:
+        1. When you plan to interactively execute an ER format with a short execution time, in the **Execution trace format** field, select **Debug trace format**. This starts the collection of the ER format execution details. When this value is selected, the performance trace collects information about the time that's spent on the following actions:
 
-            - Running each data source in the model mapping that is called to get data
+            - Running each data source in the model mapping that's called to get data
+            - Processing each format item to enter data in the output that's generated
+
+            Use the **Execution trace format** field to specify the format of the generated performance trace that the execution details are stored in for ER format and mapping elements. When you select **Debug trace format**, you will be able to analyze the content of the trace in the ER Operation designer, and see the ER format or mapping elements that are mentioned in the trace.
+
+        2. When you plan to execute a long running ER format in batch mode, in the **Execution trace format** field, select **Aggregated trace format**. This starts the collection of the aggregated details of ER format execution. When this value is selected, the performance trace collects information about the time that's spent on the following actions:
+
+            - Running each data source in the model mapping that's called to get data
+            - Running each data source in the format mapping that's called to get data
             - Processing each format item to enter data in the output that is generated
 
-            You use the **Execution trace format** field to specify the format of the generated performance trace that the execution details are stored in for ER format and mapping elements. By selecting **Debug trace format** as the value, you will be able to analyze the content of the trace in ER Operation designer, and see the ER format or mapping elements that are mentioned in the trace.
+           The **Aggregated trace format** option is available starting in Microsoft Dynamics 365 Finance version 10.0.20.
 
-        2. When you plan to execute in batch mode a long running ER format, in the **Execution trace format** field, select **Aggregated trace format** to start to collect the aggregated details of ER format execution. When this value is selected, the performance trace will collect information about the time that is spent on the following actions:
-
-            - Running each data source in the model mapping that is called to get data
-            - Running each data source in the format mapping that is called to get data
-            - Processing each format item to enter data in the output that is generated
-
-            Notice that the **Aggregated trace format** option is available starting from Microsoft Dynamics 365 Finance version 10.0.20.
-
-            Notice that in the ER format designer and ER model mapping designer you will see for a single component the total time of execution while the trace also contains details of such execution – number of executions, minimum and maximum time of a single execution.
+            In the ER format designer and ER model mapping designer, you will see the total time of execution for a single component while the trace also contains details of the execution including the number of executions and the minimum and maximum time of a single execution.
 
             > [!NOTE]
-            > Notice that this trace is collected based on traced components path. So, the statistics might be incorrect when a single parent component contains several unnamed child components or several child components having the same name.
+            > This trace is collected based on the traced components path which means that the statistics might be incorrect when a single parent component contains several unnamed child components or several child components have the same name.
             
     2. Set the following options to **Yes** to collect specific details of the execution of the ER model mapping and ER format components:
 
