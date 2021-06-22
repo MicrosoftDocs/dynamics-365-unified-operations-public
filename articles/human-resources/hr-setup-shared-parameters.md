@@ -37,11 +37,8 @@ Some types of records, such as Position records, are shared across companies. Fo
 
 On the **Human resources shared parameters** page, parameters are grouped into areas, based on their functionality. 
 
-### Previously released functionality
+### Settings
 On the **Identification** tab, you must select the identification types that represent the identification numbers that are listed on the page. You must set up identification types before you can enter identification information for workers. Information about the Social Security number, national ID number, alien ID number, and personal ID code is maintained on the **Identification type** page. To define a new identification type or review the list of existing types, click **Personnel management** &gt; **Links tab** &gt; **Setup** &gt; **Identification types**. You can enter a simple code and description. 
-
-### If you're using Dynamics 365 Human Resources
-On the **Identification** tab, you must select the identification types that represent the identification numbers that are listed on the page. You must set up identification types before you can enter identification information for workers. Information about the Social Security number, national ID number, alien ID number, and personal ID code is maintained on the **Identification type** page. To define a new identification type or review the list of existing types, click **Human resources** &gt; **Setup** &gt; **Identification types**. You can enter a simple code and description. 
 
 On the **Number sequences** tab, you can select the number sequences that are used for the following records: Personnel number, Position, User request ID, I-9 document, Applicant, Discussion, Benefit ID, and Personnel action (if this record type is enabled). To maintain number sequence references and codes, use the **Number sequences** list page. To find this page, use the page search feature. 
 
@@ -50,5 +47,9 @@ On the **Positions** tab, indicate whether new positions are available for assig
 -   **Always** – You can assign workers to new positions when positions are created. When positions are created, the **Available for assignment** date and time on the **General** tab of the **Position** page are automatically set to the creation date and time.
 -   **Never** – You can't assign workers to new positions when positions are created. If you select this option, you must open the **Position** page for each new position as it becomes available, and then, on the **General** tab, enter the **Available for assignment** date to enable worker assignment.
 
+On the **Advanced access** tab, you can restrict access to certain information or links.
+
+-   **Restrict access to worker information** – Turning on this option will restrict users' ability to view employee information for only those legal entities they have access to and employees with employments in those legal entities.
+-   **Enable cross company compensation view** –  Compensation for employees is assigned per legal entity of employment.  Sometimes an employee can be employed in multiple legal entities at the same time.  When this feature is on, compensation for each legal entity will display in ESS/MSS without having to change legal entities. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
