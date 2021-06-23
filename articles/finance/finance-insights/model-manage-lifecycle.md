@@ -34,3 +34,11 @@ ms.dyn365.ops.version: AX 10.0.8
 
 This topic describes ways to maintain your organizations machine learning models to optimize the predictions that they generate.
 
+It is recommended that the AI model is trained in a sandbox environment and then deployed to a production environment using managed solutions.  This will help ensure proper controls are in place for managing the model lifecycle.
+
+Since the AI model is based on the available invoice and customer data, it is important that the sandbox environment has a recent copy of the production data.  Training can be initiated as described in <link to training steps documentation> [Use Customer payment predictions](use-customer-payment-predictions.md).  Once the model has been re-trained, evaluate the results as described in [Evaluate the initial customer payment prediction model](evaluate-payment-prediction.md) and use <link to improve model documentation> [Improve the prediction model](improve-model.md) to experiment with feature and filter combinations that can improve the model.  
+
+Once you are satisfied with the training results, follow [Distribute your AI model](https://docs.microsoft.com/en-us/ai-builder/distribute-model) to transition the model to the production environment.
+ 
+
+
