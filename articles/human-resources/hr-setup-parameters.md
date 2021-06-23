@@ -4,7 +4,7 @@
 title: Configure Human resources parameters
 description: This topic explains how to set up company-specific parameters in Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -56,13 +56,13 @@ Each tab contains information that pertains to a single company.
 
 The settings on the **General** tab define the appearance of information about absence, injury and illness, and new hires. The settings on this tab also define some default entries that appear as you work. Specifically, this tab lets you:
 
-- Select a color to apply to open absence transactions
-- Specify the style sheet to use for reports
-- Enable the integration between training courses and absence registration
+- Select a color to apply to open absence transactions.
+- Specify the style sheet to use for reports.
+- Enable the integration between training courses and absence registration.
 - Select the absence code that is used to control this integration.
 - Indicate how long to keep injury and illness case incidents.
 - Specify the default identification number shown when a new worker is hired.
-- Specify which date to use when calculating 'Years of Service' 
+- Specify which date to use when calculating years of service. 
 
 ![General tab](./media/hr-setup-parameters-general.png)
 
