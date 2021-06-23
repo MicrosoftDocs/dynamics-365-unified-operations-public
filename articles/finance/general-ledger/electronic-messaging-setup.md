@@ -26,14 +26,15 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Set up electronic messaging
+# Set up Electronic messages (EM) functionality
 
-Electronic messaging can help you maintain different electronic reporting processes for different document types. In some complex scenarios, electronic messaging is set up so that it has a combination of many message statuses, message items statuses, actions, additional fields, and executable classes. For these scenarios, packages of data entities are available for import. If you use these data entity packages, you should import them to a legal entity by using the Data management tool. For more information about how to use the Data management tool, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
+**Electronic messages** (EM) functionality can help you maintain different electronic reporting processes for different document types. In some complex scenarios supporting (country-specific reporting features)[https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/liza-em-june/articles/finance/general-ledger/electronic-messaging.md#country-specific-regulatory-features-supported-with-em-functionality], EM is set up so that it has a combination of many message statuses, message items statuses, actions, additional fields, and executable classes. For these scenarios, packages of data entities are available for import. If you use these data entity packages, you should import them to a legal entity by using the Data management tool. For more information about how to use the Data management tool, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
-If you don't import a data entity package, you can manually set up the Electronic messages functionality. In this case, you must set up the following elements:
+If you don't import a data entity package, you can manually set up the **Electronic messages** functionality. In this case, you must set up the following elements:
 
 - [Number sequences](#number-sequences)
-- [Message item types and statuses](#message-item-types-and-statuses)
+- [Message item types and statuses](#message-item-types)
+- [Message item statuses](#message-item-statuses)
 - [Message statuses](#message-statuses)
 - [Additional fields](#additional-fields)
 - [Executable class settings](#executable-class-settings)
@@ -49,9 +50,11 @@ The following sections provide more information about each of these elements.
 
 Set up number sequences for both messages and message items. The number sequences are used to automatically number the messages and the message items. The numbers that are assigned will be used as unique identifiers for the messages and message items in the system. You can set up number sequences for electronic messaging on the **General ledger parameters** page (**General ledger** \> **Ledger setup** \> **General ledger parameters**).
 
-## Message item types and statuses
+## Message item types
 
 Message item types identify the types of records that will be used in electronic messages. You can set up message item types on the **Message item types** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message item types**).
+
+## Message item statuses
 
 Message item statuses identify the statuses that will apply to message items in the processing that you're setting up. You can set up message item types on the **Message item statuses** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message item statuses**).
 
@@ -73,19 +76,19 @@ The following table describes the fields on the **Message statuses** page.
 
 ## Additional fields
 
-The Electronic messages functionality lets you fill in records from a transactional table. In this way, you can prepare the records for reporting and then report them. However, transactional tables sometimes don't have enough information to fill in records in a manner that meets the reporting requirements. To fill in all the information that must be reported for a record, you can set up additional fields. Additional fields can be associated with both messages and message items. You can set up additional fields on the **Additional fields** page (**Tax** \> **Setup** \> **Electronic messages** \> **Additional fields**).
+The EM functionality lets you collect records from transactional tables in Finance as message items. In this way, you can prepare the records for reporting and then report them. However, transactional tables sometimes don't have enough information to fill in records in a manner that meets the reporting requirements. To fill in all the information that must be reported for a record, you can set up additional fields. Additional fields can be associated with both messages and message items. You can set up additional fields on the **Additional fields** page (**Tax** \> **Setup** \> **Electronic messages** \> **Additional fields**).
 
 The following table describes the general fields on the **Additional fields** page.
 
 | Field       | Description |
 |-------------|-------------|
-| Field name  | Enter the name of an additional attribute of message items that are related to the process. This name is shown in the user interface (UI) while you work with the process. It can also be used in ER configurations that are related to the process. |
+| Field name  | Enter the name of an additional field of electronic message or message items that are related to the process. This name is shown in the user interface (UI) while you work with the process. It can also be used in ER configurations that are related to the process. |
 | Description | Enter a description of the additional field. |
 | User edit   | Set this option to **Yes** if users should be able to change the value of the additional field from the UI. |
 | Counter     | Set this option to **Yes** if the additional field should contain a number sequence in an electronic message. Value of the additional field will be filled in automatically when an action of the **Electronic reporting export** is run. |
-| Hidden      | Set this option to **Yes** if the additional field should be hidden in the UI. |
+| Hidden      | Set this option to **Yes** if the additional field should be hidden in the UI on the **Electronic messages** page or the **Electronic message items** page. |
 
-Each additional field can have different values for the processing. You define these values on **Values** FastTab. The following table describes the fields.
+You can predefine values that an addition field can have on **Values** FastTab. These values will be available to a user to select instead of manual filling in during processing. The following table describes the fields.
 
 | Field                | Description |
 |----------------------|-------------|
@@ -103,7 +106,7 @@ By default, combinations of criteria that are defined by the **Account/Group num
 
 An executable class is an X++ method or class that the electronic message processing can call in relation to an action if some evaluation is required for the process.
 
-You can manually set up an executable class on the **Executable class settings** page (**Tax** \> **Setup** \> **Electronic messages** \> **Executable class settings**). Create a line, and set the following fields.
+You can manually set up an executable class on the **Executable class settings** page (**Tax** \> **Setup** \> **Electronic messages** \> **Executable class settings**) that must be called during processing. Create a line, and set the following fields.
 
 | Field                 | Description |
 |-----------------------|-------------|
@@ -112,8 +115,9 @@ You can manually set up an executable class on the **Executable class settings**
 | Executable class name | Select an X++ executable class. |
 | Execution level       | This field is set automatically, because the value should be predefined for the selected executable class. This field limits the level that related evaluation is run on. |
 | Class description     | This field is set automatically, because the value should be predefined for the selected executable class. |
+| Action type  | This field is available when **[EM] Executable class action type** feature is enabled in the **Feature management** workspace. Use field to specify the action type for the executable class. This will result in more precise control of the next actions available for the electronic message on the “Electronic messages” page. |
 
-Some executable classes might have mandatory parameters that must be defined before the executable class is run for the first time. To define these parameters, select **Parameters** on the Action Pane, set the fields in the dialog box that appears, and then select **OK**. It's important that you select **OK**. Otherwise, the parameters won't be saved to the database, and the executable class won't be called correctly.
+Some executable classes might have mandatory parameters that must be defined before the executable class is run for the first time. To define these parameters, select **Parameters** on the Action Pane, define values in the fields of the dialog box that appears, and then select **OK**. It's important that you select **OK**. Otherwise, the parameters won't be saved to the database, and the executable class won't be called correctly.
 
 ## Populate records actions
 
