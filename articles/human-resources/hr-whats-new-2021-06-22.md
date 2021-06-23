@@ -61,7 +61,6 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| ## Localizability: New labels needed for "Degrees" on HcmEmployeeDevelopmentWorkspace - (589243) | | |
 | 583052 | Users receiving feedback is able to edit the feedback received | When an employee receiving feedback on a performance journal selects the 'Add external link' action, the form becomes editable, allowing the employee to edit the performance feedback they have received. |
 | 522281 | Clicking on number of employees on compensation structure tiles in Compensation Management leads to incorrect results| When drilling down into the compensation plans from the compensation workspace, the correct number of employees now displays |
 | 580683 | Users assigned with Employee and Manager roles unable to attach Notes or update a Performance journal | Users assigned with Employee and Manager roles unable to attach Notes or update a Performance journal. The user receives an error - Cannot create a record in Performance journal entry (HcmPerfJournal). Security policy permission denied. |
@@ -72,9 +71,8 @@ The following bug fixes are included in this release.
 | 584851 | Benefit credit proration rule "None" never provides credit.|The flex credit proration rule "None" resulted in employees receiving zero credits for the benefit period, regardless of when they have been hired. This has been fixed so that an employee should receive full flex credits if they are hired before the benefit period begins, and none if hired after the period begins. |
 | 584897 | Duplicating the 'Use basic external functionality' duty results in an error | When attempting to duplicate the 'Use basic external functionality' duty, the user is presented with the error: 'Could not find object with identifier UserDefinedAppHostDialogView.' |
 | 575692 | Accrue leave and absence is greyed out in pending workers | Leave and absence accrual can be run on future hires when “Streamlined employee entry" is enabled |
-| ## Adding a company to the payroll integration resets the integration to use all of the entities even if the option is set to not refresh the project - (580110) | | |
+| 580110 | Adding a company to the payroll integration resets the integration to use all of the entities even if the option is set to not refresh the project. | If a customer has removed entities or change the dmf project for payroll integration and has the option set to prevent an automatic refresh of the project, adding a new company to the integration ignores the setting and refreshes the project.  |
 | 584518 |Enroll Benefits Processing performance issue | This bug addressed performance issues in the legacy benefits enrollment process. |
-| ## Skill workflow not displaying existing skills as lookup in the designer as a conditional decision  - (575987) | | |
 
 ## In preview
 
@@ -95,6 +93,7 @@ The following new features are in preview. For more information about turning fe
 |  Enable an absence manager to manage leave | [Enable an absence manager to manage leave](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-absence-manager-manage-leave) |
 |  Mandate attachments for specific leave types | This feature enables admins to mandate attachments to be added when submitting leave requests for specific leave types. |
 |  Configure leave units per leave type | This feature enables administrators to configure leave units (hours or days) for each leave type.  |
+| Enable employees to be marked as ready to be paid | [Enable employees to be marked as ready to be paid](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-employees-be-marked-as-ready-pay) |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
