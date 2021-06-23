@@ -362,7 +362,7 @@ To set up a master plan to include inventory forecast, do the following steps.
     - **Forecast model** – Select the forecast model to apply. This model will be considered when a supply suggestion is generated for the current master plan.
     - **Include supply forecast** – Set this option to *Yes* to include the supply forecast in the current master plan. If you set it to *No*, supply forecast transactions won't be included in the master plan.
     - **Include demand forecast** – Set this option to *Yes* to include the demand forecast in the current master plan. If you set it to *No*, demand forecast transactions won't be included in the master plan.
-    - **Method used to reduce forecast requirements** – Select the method that should be used to reduce forecast requirements. For more information, see [Forecast reduction keys](inventory-forecast.md#reduction-keys).
+    - **Method used to reduce forecast requirements** – Select the method that should be used to reduce forecast requirements. For more information, see [Forecast reduction keys](planning-optimization/demand-forecast.md#reduction-keys).
 1. On the **Time fences in days** FastTab, you can set the following fields to specify the period during which the forecast is included:
     - **Forecast plan** – Set this option to *Yes* to override the forecast plan time fence that originates from the individual coverage groups. Set it to *No* to use the values from the individual coverage groups for the current master plan.
     - **Forecast time period** – If you set the **Forecast plan** option to *Yes*, specify the number of days (from today's date) that the demand forecast should be applied.
