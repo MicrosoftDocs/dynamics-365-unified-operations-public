@@ -40,7 +40,7 @@ Self-service deployment is available for cloud environments. Self-service deploy
 
 Customers using the self-service capabilities will see the following changes in their Lifecycle Services (LCS) experience. 
 
-- Deployment is self-service and can be completed within an average time of 30 minutes. There are no longer lead times and wait times for deployment. You can control when you deploy, and verify that the environment is deployed. This experience is the same as the current experience. For more information, see [Self-service deployment FAQ](deploymentFAQ.md).
+- Deployment is self-service and can be completed within an average time of 1-2 hours depending on the type of environment (sandbox or production). There are no longer lead times and wait times for deployment. You can control when you deploy, and verify that the environment is deployed. This experience is the same as the current experience. For more information, see [Self-service deployment FAQ](deploymentFAQ.md).
 
    ![Deployment settings](media/deployment-settings.png)
 
