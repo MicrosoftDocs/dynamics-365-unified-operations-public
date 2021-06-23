@@ -5,7 +5,7 @@
 title: Cart icon module
 description: This topic covers the cart icon module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/20/2020
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 # Cart icon module
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic covers the cart icon module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
@@ -39,27 +40,24 @@ The following image shows an example of a cart icon module that displays a mini 
 
 ![Example of a cart icon module](./media/ecommerce-Minicart.PNG)
 
-
 ## Module properties
 
 - **Show mini cart** – When true, this property enables a cart summary (mini cart) to be displayed when the cart icon is hovered over. This functionality is only supported for desktop view ports.
 
+## Module properties in Adventure Works theme
 
-## Module properties in Adventure works theme
+In the Adventure Works theme, the cart icon module includes two additional slots for the mini cart. These slots are included as a module definition extension.
 
-In Adventure works theme, the module includes two additional slots for the mini cart. These slots are included as a module definition extension.
+-**Empty cart promotions** - This slot takes a content block module. When the cart contents are empty, the specified content block module will be displayed. The content block module can be used for promotions, marketing content, links to category pages, and more to help customers continue their shopping journey.
 
--**Empty cart promotions** - This slot takes Content block module. When the cart contents are empty, this content block module will be displayed. It can be used for any promotions, marketing content, links to category pages etc to help the user continue their shopping journey.
+-**Promotional content** - This slot can be used to showcase promotions, for example "Free Shipping on orders over $100." Content block, text block, and image list modules can be used in the promotional content slot.
 
--**Promotional content** - This slot can be used to showcase promotions such as "Free Shipping on orders over $100". Content block, Text block or Image list modules can be used for this.
+The following example image shows a cart icon module in the Adventure Works theme that displays promotional content on the mini cart.
 
-The following image shows an example of a cart icon module in Adventure works theme showcasing promotional content on the mini-cart.
+![Example of a cart icon module in Adventure Works theme](./media/AW_minicart.PNG)
 
-![Example of a cart icon module in Adventure works theme](./media/AW_minicart.PNG)
-
->[IMPORTANT]
->These slots are introduced  in Dynamics 365 Commerce 10.0.20 release and showcased on Adventure works theme.
-
+> [!IMPORTANT]
+> The Adventure Works theme slots are available as of the Dynamics 365 Commerce version 10.0.20 release.
 
 ## Add a cart icon module to a page
 
