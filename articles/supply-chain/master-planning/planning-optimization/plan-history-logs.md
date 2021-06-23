@@ -38,16 +38,18 @@ The history of jobs for Planning Optimization master planning runs keeps only up
 
 In addition to seeing the start time and status of jobs, you can view the log for a specific job. The log includes additional information and warnings. Not all jobs have a log. To view the log for a job, select **Log**. Log entries are only stored for 30 days after the date the job finished, after that they are automatically deleted.
 
-You can find additional information on warnings and errors generated during the master planning run in the infolog for a batch job, provided the master planning was processed with the **Run in the background \> Batch processing** option enabled. For example, auto-firming errors are only captured in the infolog and are not displayed in logs on the **History** page.
+If the **Batch processing** option on the **Run in the background** FastTab was enabled when master planning processing was set up, the infolog for the batch job shows more information about any warnings and errors that were generated during the master planning run. For example, auto-firming errors are captured only in the infolog. They aren't shown in logs on the **History** page.
 
-To view auto-firming errors and other warnings or errors that occurred during a master planning run:
+To view auto-firming errors and other warnings or errors that occurred during a master planning run, follow these steps.
 
 1. Go to **System administration \> Inquiries \> Batch jobs**.
-1. Find and select the record representing the master planning run you are looking for (for example, the **Job description** may start with *Master planning*).
-1. Do one of the following steps:
-    - If you have the *Enhanced form* enabled for the **Batch jobs** page, select **Batch job history** on the Action Pane. The **Batch job history** page opens. Select **Log** on the Action Pane.
-    - If you have the *Legacy form* enabled for the **Batch jobs** page, on the Action Pane, open the **Batch job** tab on the Action Pane and select **Log**.
-1. Select **Message details** to view the infolog and see all warnings and errors captured during processing.
+1. Find and select the record that represents the master planning run that you're interested in. (For example, the value of the **Job description** field might start with *Master planning*.)
+1. Follow one of these steps, depending on whether you're using the *enhanced form* or the *legacy (unenhanced) form* for the **Batch jobs** page:
+
+    - If you're using the enhanced form: On the Action Pane, select **Batch job history**. Then, on the **Batch job history** page, on the Action Pane, select **Log**.
+    - If you're using the legacy form: On the Action Pane, on the **Batch job** tab, select **Log**.
+
+1. Select **Message details** to open the infolog, where you can view all warnings and errors that were captured during processing.
 
 ## Related resources
 
