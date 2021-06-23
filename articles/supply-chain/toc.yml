@@ -3351,6 +3351,8 @@
               href: warehousing/wave-execution-notifications.md
             - name: Wave label printing
               href: warehousing/configure-wave-label-printing.md
+            - name: Schedule wave label printing during wave
+              href: warehousing/configure-task-based-wave-label-printing.md
             - name: Containerization
               href: warehousing/wave-containerization.md
             - name: Container packing strategies
