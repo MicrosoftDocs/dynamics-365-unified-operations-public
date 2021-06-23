@@ -2,7 +2,7 @@
 # required metadata
 
 title: Model management lifecycle (preview)
-description: This topic describes ways to maintain your organizations machine learning models to optimize the predictions that they generate.
+description: This topic describes ways to maintain your organization's machine learning models to optimize the predictions that they generate.
 author: ShivamPandey-msft
 ms.date: 06/03/2021
 ms.topic: article
@@ -32,13 +32,11 @@ ms.dyn365.ops.version: AX 10.0.8
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes ways to maintain your organizations machine learning models to optimize the predictions that they generate.
+This topic describes ways to maintain your organization's machine learning models to optimize the predictions that they generate.
 
-It is recommended that the AI model is trained in a sandbox environment and then deployed to a production environment using managed solutions.  This will help ensure proper controls are in place for managing the model lifecycle.
+We recommend training the AI model in a sandbox environment, and then deploying it to a production environment using managed solutions. This will help ensure proper controls are in place for managing the model lifecycle.
 
-Since the AI model is based on the available invoice and customer data, it is important that the sandbox environment has a recent copy of the production data.  Training can be initiated as described in <link to training steps documentation> [Use Customer payment predictions](use-customer-payment-predictions.md).  Once the model has been re-trained, evaluate the results as described in [Evaluate the initial customer payment prediction model](evaluate-payment-prediction.md) and use <link to improve model documentation> [Improve the prediction model](improve-model.md) to experiment with feature and filter combinations that can improve the model.  
+Since the AI model is based on the available invoice and customer data, it is important that the sandbox environment has a recent copy of the production data. You can begin training your model by following the steps in the [Use Customer payment predictions](use-customer-payment-predictions.md) topic. Once the model has been re-trained, evaluate the results as described in the [Evaluate the initial customer payment prediction model](evaluate-payment-prediction.md) topic, and use [Improve the prediction model](improve-model.md) topic to experiment with feature and filter combinations that can improve the model.  
 
-Once you are satisfied with the training results, follow [Distribute your AI model](https://docs.microsoft.com/ai-builder/distribute-model) to transition the model to the production environment.
+When you're satisfied with the training results, follow the steps in the [Distribute your AI model](https://docs.microsoft.com/ai-builder/distribute-model) topic to transition the model to your production environment.
  
-
-
