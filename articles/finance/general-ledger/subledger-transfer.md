@@ -46,6 +46,6 @@ In version 10.0.8, improvements were made to enhance the performance of the Asyn
 This functionality improves the transfer of data from the subledger to the general ledger. It allows the process to be more efficient, and it groups together sets of smaller transactions to transfer. This allows for a more efficient use of the batch server. 
 This functionality requires that the batch server be set up, online, and functioning in order for the Asynchronous transfer option to work. 
 The efficiency change at the batch level is the use of just one recurring batch job for all legal entites in the system.  A new batch job is then created at runtime to process the required records not yet transferred. Additional settings can be controlled in process automation page in system administration. There you can edit the background process and change the frequency as well as define a sleep period.  
-
+For more information on process automation setup please see [Process Automations](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md). 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
