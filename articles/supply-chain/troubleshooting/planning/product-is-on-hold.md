@@ -19,15 +19,15 @@ Error code: SYS13295
 
 ## Symptoms
 
-After you firm planning orders, you receive the following error message:
+After you firm planned orders, you receive the following error message:
 
 > Item %1 is on hold for transactions in %2.
 
 ## Cause
 
-The item is set as stopped in its default order settings.
+When describing blocked items, system uses the terms *blocked*, *stopped*, and *on hold* interchangeably. This error means that the item is set as **Stopped** in its default order settings.
 
-If an item is blocked, and you enter a purchase order or sales order line, you receive a warning message. When an item is blocked, inventory transactions that are related to the purchase order or sales order line can't be modified (for example, when you post a packing slip or an invoice). You can block a purchased item, and, at the same time, sell the item. In this case, this field is selected on a purchase order, but the item isn't blocked in inventory or on a sales order.
+If an item is blocked, and you add it to a purchase order or sales order line, you receive a warning message. When an item is blocked, inventory transactions that are related to the purchase order or sales order line can't be modified (for example, when you post a packing slip or an invoice). You can block a purchased item, and, at the same time, sell the item. In this case, the **Stopped** check box is selected on a purchase order, but the item isn't blocked in inventory or on a sales order.
 
 Here are some of the conditions that can cause an item number to be blocked from being sold:
 
