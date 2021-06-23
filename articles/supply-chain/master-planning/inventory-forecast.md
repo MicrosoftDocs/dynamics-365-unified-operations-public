@@ -354,33 +354,37 @@ After you enter your demand forecast and/or supply forecast, you can include for
 
 ### Set up a master plan to include inventory forecast
 
+To set up a master plan to include inventory forecast, do the following steps.
+
 1. Go to **Master planning \> Setup \> Plans \> Master plans**.
 1. Select an existing plan, or create a new plan.
-1. On the General FastTab, set the following fields:
+1. On the **General** FastTab, set the following fields:
     - **Forecast model** – Select the forecast model to apply. This model will be considered when a supply suggestion is generated for the current master plan.
     - **Include supply forecast** – Set this option to *Yes* to include the supply forecast in the current master plan. If you set it to *No*, supply forecast transactions won't be included in the master plan.
     - **Include demand forecast** – Set this option to *Yes* to include the demand forecast in the current master plan. If you set it to *No*, demand forecast transactions won't be included in the master plan.
     - **Method used to reduce forecast requirements** – Select the method that should be used to reduce forecast requirements. For more information, see the [Forecast reduction keys](../../planning-optimization/demand-forecast.md#reduction-keys).
-1. On the **Time fence in days** FastTab, you can set the following fields to specify the period that the forecast is included during:
+1. On the **Time fences in days** FastTab, you can set the following fields to specify the period during which the forecast is included:
     - **Forecast plan** – Set this option to *Yes* to override the forecast plan time fence that originates from the individual coverage groups. Set it to *No* to use the values from the individual coverage groups for the current master plan.
     - **Forecast time period** – If you set the **Forecast plan** option to *Yes*, specify the number of days (from today's date) that the demand forecast should be applied.
 
     > [!IMPORTANT]
     > The **Forecast plan** setting isn't yet supported with Planning Optimization.
 
-### Run master planning including inventory forecast
+### Run a master plan that includes an inventory forecast
 
-1. On the default dashboard, select **Master planning**.
-1. In the **Plan** field, enter or select the master plan set up above.
-1. Select **Run**.
-1. Set the **Track processing time** option to *Yes*.
+To run a master plan that includes an inventory forecast, do the following steps:
+
+1. Go to **Master planning \> Workspaces \> Master planning**.
+1. In the **Master plan** field, enter or select the master plan you set up during the previous procedure.
+1. On the **Master planning** tile, select **Run**.
+1. The **Master planning** dialog opens. Set **Track processing time** to *Yes*.
 1. In the **Number of threads** field, enter a number.
 1. On the **Records to include** FastTab, select **Filter**.
-1. In the grid, select the row where the **Field** field is set to **Item number**.
-1. In the **Criteria** field, enter a value.
+1. A standard query editor dialog opens. On the **Range** tab, select the row where the **Field** field is set to **Item number**.
+1. In the **Criteria** field, select the item number you want to include in the plan.
 1. Select **OK**.
 
-To view the requirements that are calculated, open the **Gross requirement** page. For example, on the **Released products** page, on the **Plan** tab, in the **Requirements** section, select **Gross requirement**.
+To view the requirements that are calculated, open the **Gross requirement** page. For example, on the **Released products** page, on the **Plan** Action Pane tab, in the **Requirements** section, select **Gross requirement**.
 
 To view the planned orders that are generated, go to **Master planning \> Common \> Planned orders**, and select the appropriate forecast plan.
 
