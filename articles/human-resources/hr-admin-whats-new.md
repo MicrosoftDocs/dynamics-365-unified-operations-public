@@ -53,6 +53,7 @@ For more information about upcoming features or the update process for Human Res
 
 To find out what's new or changed in each biweekly release of Human Resources, see the following topics:
 
+[Jun 22, 2021](hr-whats-new-2021-06-22.md)</br>
 [May 20, 2021](hr-whats-new-2021-05-20.md)</br>
 [May 3, 2021](hr-whats-new-2021-05-03.md)</br>
 [April 19, 2021](hr-whats-new-2021-04-19.md)</br>
