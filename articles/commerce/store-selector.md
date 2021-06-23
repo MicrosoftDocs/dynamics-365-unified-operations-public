@@ -5,7 +5,7 @@ title: Store selector module
 description: This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 04/02/2021
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -117,7 +117,8 @@ The store selector module can be used together with the map module to show the s
 | Terms of service | URL |  This property specifies the terms of service URL that is required to use the Bing Maps service. |
 
 ## Site settings
-The Store selector module respects the ([Add to cart site settings](add-cart-settings.md) and the user will see the appropriate action after an item is added to cart from this module.
+
+The store selector module respects the [Add to cart site settings](add-cart-settings.md) and site users will see the appropriate configured workflows after an item is added to cart from the store selector module.
 
 ## Add a store selector module to a page
 
