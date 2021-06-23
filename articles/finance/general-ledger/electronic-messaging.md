@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides overview information for **Electronic messages** (EM) functionality.
+This topic provides overview and setup information for **Electronic messages** (EM) functionality.
 
 Recently, the governments and legislative authorities of various countries and regions around the world have implemented reporting requirements for companies that are registered in those countries or regions. The purpose of the requirements is to enable data to be obtained from those companies in electronic format, directly from the systems where it was accounted, stored, and processed.
 
