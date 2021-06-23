@@ -38,21 +38,21 @@ The EM functionality in Finance supports various processes for electronic intero
 
 The EM functionality is integrated with the **Electronic Reporting** (ER) module. Therefore, you can set up ER formats for electronic messages. For more information, see [Electronic reporting (ER)](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
 
-## Basic concept for EM
+## Basic concept for EM functionality
 
-Electronic messaging is based on the following entities:
+EM functionality is based on the following entities:
 
 - **Electronic message** – A report or declaration that should be reported and/or transmitted internally. An example is a report that is sent to a tax office.
 - **Electronic message items** – Records that should be included in the message that is reported.
 - **Electronic message processing** – A chain of actions that should be run to collect the required data, generate reports, store data in Microsoft Azure Blob storage, transmit reports outside the system, receive responses from outside the system, and, based on the information that is received, update the database. The actions in the chain can be either linked or unlinked
 
-The following illustration shows the flow of data for electronic messaging.
+The following illustration shows the flow of data for EM.
 
 ![Electronic messaging data flow](media/electronic-messaging-data-flow.png)
 
-## Scenarios supported by EM
+## Scenarios supported by EM functionality
 
-The Electronic messages functionality supports the following scenarios:
+The EM functionality supports the following scenarios:
 
 - Manually create messages, and generate reports that are based on associated exporting ER formats of various types: Microsoft Excel, XML, JavaScript Object Notation (JSON), PDF, text, and Microsoft Word.
 - Automatically create and process messages that are based on information that was requested and received from an authority via an associated importing ER format.
