@@ -81,7 +81,7 @@ Next, on the **Over budget permissions** tab, you can specify user groups. You c
 Next, on the **Budget funds available** tab, you can define the formula that is used to calculate available budget funds. Depending on how conservatively an organization manages its financial resources, or depending on regulations or industry requirements, the calculation can include draft or unposted documents. 
 
 > [!NOTE] 
-> If the calculation is modified during a budget cycle, the changes won't affect any documents that previously passed the budget control checks, and that were posted or completed. In 10.0.17 application release, a new change is now available for limited customers to change what data is tracked in the BudgetSourceTracking* tables.  With this change enabled, only amounts marked to be used in the budget funds available calculation will be stored. Please contact support to request this change to be enabled called "BudgetControlTrackBFAOnlyFeature". 
+> If the calculation is modified during a budget cycle, the changes won't affect any documents that previously passed the budget control checks, and that were posted or completed. In 10.0.17 application release, a new change is now available for limited customers to change what data is tracked in the BudgetSourceTracking* tables.  With this change enabled, only amounts marked to be used in the budget funds available calculation will be stored. Please contact support to request the feature "Only track amounts in the budget funds available calculation" to be enabled. 
 
 ### Documents and journals
 
