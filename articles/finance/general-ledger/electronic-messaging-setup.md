@@ -115,7 +115,7 @@ You can manually set up an executable class on the **Executable class settings**
 | Executable class name | Select an X++ executable class. |
 | Execution level       | This field is set automatically, because the value should be predefined for the selected executable class. This field limits the level that related evaluation is run on. |
 | Class description     | This field is set automatically, because the value should be predefined for the selected executable class. |
-| Action type  | This field is available when **[EM] Executable class action type** feature is enabled in the **Feature management** workspace. Use field to specify the action type for the executable class. This will result in more precise control of the next actions available for the electronic message on the “Electronic messages” page. |
+| Action type  | This field is available when **[EM] Executable class action type** feature is enabled in the **Feature management** workspace. Use this field to specify the action type for the executable class. This will result in more precise control of the next actions available for the electronic message on the **Electronic messages** page. |
 
 Some executable classes might have mandatory parameters that must be defined before the executable class is run for the first time. To define these parameters, select **Parameters** on the Action Pane, define values in the fields of the dialog box that appears, and then select **OK**. It's important that you select **OK**. Otherwise, the parameters won't be saved to the database, and the executable class won't be called correctly.
 
@@ -136,10 +136,11 @@ On the **Datasources setup** FastTab, add a line for every data source that is u
 | Message item type      | Select the type of message item that should be used when records are created for the data source. |
 | Account type           | Select the type of account that should be associated with records from the data source. |
 | Master table name      | Select the table that should be a data source. |
-| Document number field  | Select the field that the document number should be taken from in the selected table. |
-| Document date field    | Select the field that the document date should be taken from in the selected table. |
-| Document account field | Select the field that the document account should be taken from in the selected table. |
-| User query             | If this check box is selected, you can set up a query by selecting **Edit query** above the grid. Otherwise, all the records will be filled in from the selected data source. |
+| Document number field  | Select the field that the document number should be taken from in the selected master table. Value of this field will be populated as a value for **Document number** field of the message item. |
+| Document date field    | Select the field that the document date should be taken from in the selected master table. Value of this field will be populated as a value for **Message item date** field of the message item. |
+| Document account field | Select the field that the document account should be taken from in the selected master table. Value of this field will be populated as a value for **Account number** field of the message item. |
+| Company  | This field is available when **Cross-company queries for the populate records actions** feature is enabled in the **Feature management** workspace. Use this feature to set up cross-company datasources for the populate records actions. Data can be fetched from multiple companies. |
+| User query             | If you set up a query by selecting **Edit query** above the grid and specify creteria that must be applied to the selected master table to populate data from, this check box is selected automatically. Otherwise, all the records will be filled in from the selected master table source. In case **Cross-company queries for the populate records actions** feature is enabled in the **Feature management** workspace and records must be collected from several companies, you must add a line for each additional legal entity that must be included in reporting. For each new line, select **Edit query**, and specify a related criteria specific for the legal entity that is specified in the **Company** field on the line. When you've finished, the **Datasources setup** grid will contain lines for all the legal entities that must be included in reporting. |
 
 ## Web applications
 
@@ -161,17 +162,21 @@ The following table describes the fields on the **Web applications** page.
 | Authorization format mapping | Select the ER format that is used to generate the request for authorization. |
 | Import token model mapping   | Select the ER importing model mapping that is used to store the access token. |
 | Granted scope                | The scope that is granted for requests to the application. This field is automatically updated. |
-| Access token will expire in  | The remaining time before the access token expires. | 
+| Access token will expire in  | The remaining time before the access token expires. This field is automatically updated. | 
 | Accept                       | Specify the **Accept** property of the web request. For example, enter **application/vnd.hmrc.1.0+json**. |
 | Content type                 | Specify the content type. For example, enter **application/json**. |
 
 In addition, the following buttons are available on the Action Pane of the **Web applications** page to support the authorization process:
 
-- **Get authorization code** – Initialize authorization of the web application.
+- **Get authorization code** – Initialize authorization of the web application. This function uses the ER format specified in the **Authorization format mapping** field to generate an authorization request.
 - **Obtain access token** – Initialize the process of getting an access token.
-- **Refresh access token** – Refresh an access token.
+- **Refresh access token** – Refresh an access token. This function uses the ER format specified in the **Import token model mapping** field to import information about the received access token.
 
 When an access token to a web application is stored in the system's database in encrypted format, it can be used for requests to a web service. For security purposes, access to the access token must be limited to security roles that must be allowed to address those requests. If users outside the security group try to address a request, they receive an error that states that they aren't allowed to interoperate via the selected web application. To set up the security roles that must have access to the access token, use the **Security roles** FastTab on the **Web applications** page. If security roles aren't defined for a web application, only a system admin can interoperate via this web application.
+
+The **Action log** FastTab saves information about the user, and the date and time of each action with the selected web application.
+
+Some web services may require different headers to be included into the requests. System administrator can set up additional headers and their values on the **Supplementary headers** FastTab and then use them during the requests generation.
 
 ## Web service settings
 
@@ -183,14 +188,14 @@ The following table describes the fields on the **Web service settings** page.
 |--------------------------------|-------------|
 | Web service                    | Enter a name for the web service. |
 | Description                    | Enter a description of the web service. |
-| Internet address               | Enter the internet address of the web service. If a web application is specified for the web service, and if the internet address of the web service should be the same as the internet address that is defined for that web application, select **Copy base URL** to copy the base URL of the web application to this field. |
+| Internet address               | Enter the internet address of the web service. If a web application is specified for the web service, and if the internet address of the web service should be the same as the internet address that is defined for that web application, select **Copy base URL** to copy the base URL of the web application to this field. WARNING: Third party services or other services that you configure here do not require certification and they might not meet Microsoft privacy standards. You should review each service’s privacy documentation and work with each service provider to learn more about each service’s provided level of compliance. You are responsible for ensuring that these services meet your security, privacy and legal standards. You bear the risk of using it. Microsoft gives no express warranties, guarantees or conditions. It is strongly recommended that you use only services that provide secure and authorized connections (https://). |
 | Certificate                    | Select a Key Vault certificate that has previously been set up. |
-| Web application                | Select a Key Vault certificate that has previously been set up. |
+| Web application                | Select a web application that has previously been set up. |
 | The response type – XML        | Set this option to **Yes** if the response type is XML. |
 | Request method                 | Specify the method of the request. HTTP defines a set of request methods that indicate the action that should be performed for a given resource. The request method can be **GET**, **POST**, or another HTTP method. |
 | Request headers                | Specify request headers. A request header is an HTTP header that can be used in an HTTP request, and that isn't related to the content of the message. |
-| Accept                         | Specify the **Accept** property of the web request. |
-| Accept encoding                | Specify the **Accept-Encoding** value. The Accept-Encoding request HTTP header advertises the content encoding that the client can understand. This content encoding is usually a compression algorithm. |
+| Accept                         | Specify the accept property of the web request. |
+| Accept encoding                | Specify the accept-encoding value. The Accept-Encoding request HTTP header advertises the content encoding that the client can understand. This content encoding is usually a compression algorithm. |
 | Content type                   | Specify the content type. The Content-Type entity HTTP header indicates the media type of the resource. |
 | Successful response code       | Specify the HTTP status code that indicates that the request was successful. |
 | Request headers format mapping | Select the ER format that is used to generate web request headers. |
@@ -213,6 +218,10 @@ The following tables describe the fields on the **Message processing actions** p
 | Populate records action     | Select a populate records action that was previously set up. This field is available only for actions of the **Populate records** type. |
 | Web service                 | Select a web service that was previously set up. This field is available only for actions of the **Web service** type. |
 | File name                   | Specify the name of the file that will be the result of the action. This file can be the response from the web server or the report that is generated. This field is available only for actions of the **Web service** and **Electronic reporting export message** types. |
+| Attach files to source documents | Select this check box to attach generated files to records in referenced master table for EM items. This field is available only for actions of the **Electronic reporting export** and **Web service** types. |
+| Attach files from output archive to items | Select this check box to extract separate XML files from the output archive file and attach them to the corresponding electronic message items. This field is available only for actions of the **Electronic reporting export** type. |
+| Number of message items per export | Specify the limit of how many message item must be included into one file (message). This field is available only for actions of the **Electronic reporting export** type. |
+| Use ER source               | Select this check box to import using Electronic reporting source parameters. Otherwise, attachment from electronic message would be used. This field is available only for actions of the **Electronic reporting import** type. | 
 | Show dialog                 | Set this option to **Yes** if a dialog box must be shown to users before report generation. This field is available only for actions of the **Electronic reporting export message** type. |
 
 #### Message processing action types
@@ -268,16 +277,18 @@ The following table shows the result statuses that must be set up for different 
 
 ## Electronic message processing
 
-Electronic message processing is a basic concept of the Electronic messages functionality. It aggregates actions that should be evaluated for the electronic message. The actions can be linked via an initial status and a result status. Alternatively, actions of the **User processing** type can be started independently. On the **Electronic message processing** page (**Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**), you can also select additional fields that should be supported for the processing on either the message level or the message items level.
+Electronic message processing is a basic concept of the EM functionality. It aggregates actions that should be evaluated for the electronic message. The actions can be linked via an initial status and a result status. Alternatively, actions of the **User processing** type can be started independently. You can use the **Electronic message processing** page (**Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**) to set up processing of electronic messages.
 
 The **Action** FastTab lets you add predefined actions to the processing. You can specify whether an action must be run separately, or whether it can be started by the processing. To specify that an action in the processing can be initialized only by a user, set the **Run separately** field to **Yes** for that action. If an action should be started by the processing for messages or message items that are in the status that is defined as the initial status for the action, set the **Run separately** field to **No**. Actions of the **User action** type must always be run separately.
 
-Sometimes, several actions must be aggregated into a sequence, even though the first action is set up so that it runs separately. For example, a user must initialize report generation, but immediately after the report is generated, it must be sent to a web service, and the response from the web service must be reflected in the system. In this situation, you can create an inseparable sequence for the actions that must always run together. On the **Action** FastTab, select **Inseparable sequences** above the grid, and create a sequence. Then, for all the actions that must run together, select the sequence in the **Inseparable sequence** field. In this case, the **Run separately** field can be set to **Yes** for the first action in the sequence but **No** for all the other action.
+Sometimes, several actions must be aggregated into a sequence, even though the first action is set up so that it runs separately. For example, a user must initialize report generation, but immediately after the report is generated, it must be sent to a web service, and the response from the web service must be reflected in the system. In this situation, you can create an inseparable sequence for the actions that must always run together. On the **Action** FastTab, select **Inseparable sequences** above the grid, and create a sequence. Then, for all the actions that must run together in one sequence, select the sequence in the **Inseparable sequence** field. In this case, the **Run separately** field can be set to **Yes** for the first action in the sequence but **No** for all the other action.
 
-The **Message item additional fields** FastTab lets you add predefined additional fields that are related to message items. You must add additional fields for each type of message item that the fields are related to.
+In case you electronic message processing includes an action of **Electronic reporting export** or **Electronic reporting export message** type which runs an ER that has input parameters, you must specify values for these parameters preliminary to the report generation to let system generate the report in batch regime. You can use **Parameters** above the grid to set up parameters for selected actions of **Electronic reporting export** or **Electronic reporting export message** type. Select **Use parameters** check box for the action which must be run with the specified parameters in batch regime.
 
-The **Message additional fields** FastTab lets you add predefined additional fields that are related to messages.
+The **Message item additional fields** FastTab lets you add predefined additional fields that are related to message items. You must add additional fields for each type of message item that the fields are related to. You can specify a default value that will be assigned to the additional field during processing.
+
+The **Message additional fields** FastTab lets you add predefined additional fields that are related to messages. You can specify a default value that will be assigned to the additional field during processing.
 
 The **Security roles** FastTab lets you set up the security roles that are predefined in the system for specific processing. Users who have a specific role will see only processing that is defined for that role.
 
-The **Batch** FastTab lets you set up processing to work in a batch regime.
+The **Batch** FastTab lets you set up processing to work in a batch regime. We recommend to set up batch regime for your processing directly on **Electronic messages** or **Electronic message items** page when you initiate processing by **Run processing** on the Action pane.
