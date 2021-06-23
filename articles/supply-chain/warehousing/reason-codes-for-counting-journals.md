@@ -3,7 +3,7 @@
 
 title: Reason codes for inventory counting
 description: This topic describes how to set up and apply reason codes for counting tasks.
-author: Mirzaab
+author: Mirzaab; perlynne
 ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
@@ -93,13 +93,21 @@ You can also set up reason codes for individual warehouses and for products. The
 
 1. Select **Inventory Management** \> **Setup** \> **Inventory** \> **Counting reason codes**
 1. Select **New** and assign a *Counting reason code* and *Description*
-1. To assign a *Offset account*, key-in or select a value in the **Offset acount** field
-1. To assign the *Counting reason code group*, key-in or select a value in the **Counting reason code group** field
+1. To assign a *Offset account*, key-in or select a value in the **Offset account** field
 
 > [!Note]
 > **Counting reason codes** with an assigned **Offset account** will via a counting journal posting result in using the assigned offset account rather than the defined posting profile.
-> 
-> In the [Set up the mobile device menu item for Adjustment in and Adjustment out](#Setup-Adjustment-In-Out) section later in this topic you can read more about the use of the **Counting reason code groups**.
+
+
+### Set up the Counting reason code groups
+
+The **Counting reason code groups** can be used as part of the Warehouse management mobile app *Adjustment in* and *Adjustment out* menu items to limit the list of counting reason codes.
+In the [Set up the mobile device menu item for Adjustment in and Adjustment out](#Setup-Adjustment-In-Out) section later in this topic you can read more about the use of the **Counting reason code groups**.
+
+1. Select **Inventory Management** \> **Setup** \> **Inventory** \> **Counting reason code groups**
+1. Select **New** and enter *Counting reason group* and *Group description*
+1. In the *Details* section select **New** to assign a *Counting reason code* to the group.
+
 
 ### Set up reason codes for mobile device menu items
 
@@ -140,7 +148,7 @@ The following fields will be added to the mobile device menu item when **Adjustm
 - Edit counting reason code
 - Counting reason code group
 
-When assigning a **Counting reason code group** value for the **Adjustment in** and **Adjustment out** mobile device menu item, the selection of the counting reason codes will get limited to within the group as part of the Warehouse management mobile app processing.
+When assigning a **Counting reason code group** value for the **Adjustment in** and **Adjustment out** mobile device menu items, the selection of the counting reason codes will get limited to within the group as part of the Warehouse management mobile app processing.
 
 ## Processing with the use of counting reason code
 When using the Warehouse management mobile app the reason codes gets recorded and used right away as part of the following counting journal posting unless a counting approval process has been defined.  
