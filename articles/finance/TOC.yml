@@ -1236,6 +1236,8 @@
           href: finance-insights/cash-flow-forecast-intro.md
         - name: Use external data in cash flow forecasts
           href: finance-insights/external-data-in-cash-flow.md
+        - name: Model management lifecycle
+          href: finance-insights/model-manage-lifecycle.md
         - name: Customer payment predictions
           href: finance-insights/payment-insights-overview.md
         - name: Use Customer payment predictions
