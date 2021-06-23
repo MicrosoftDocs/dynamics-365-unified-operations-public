@@ -68,7 +68,7 @@ For information on generating the virtual tables for the API, see [Configure Dat
 
 The following diagram illustrates relationships within the API. Several types have foreign keys to other, pre-existing entities in Human Resources that aren't illustrated here. This document provides information on entities that are specific to payroll integration scenarios. However, there are many other entities in the Dataverse Web API for Human Resources that may also be relevant to your integration. Some of these entities are referenced in foreign key relationships or navigation properties.
 
-![Payroll Integration API data model](media/hr-admin-payroll-api-data-model.png)
+[![Payroll Integration API data model]](media/hr-admin-payroll-api-data-model.png)(media/hr-admin-payroll-api-data-model.png#lightbox)
 
 ## Payroll employee and related entities
 
