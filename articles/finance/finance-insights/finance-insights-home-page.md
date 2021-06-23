@@ -33,9 +33,8 @@ ms.dyn365.ops.version: AX 10.0.13
 
 Finance insights provides configurable and extensible models to help you accurately and intelligently predict your company's cash flow, predict when you will receive payment for outstanding receivables, and generate a budget proposal that can speed up your budgeting process. All these features are based on intelligent machine learning models. When these new capabilities are combined with automation in vendor payments and collections, they provide a rich and intelligent financial system that drives decision making and helps you take action to respond effectively to current and anticipated business challenges.
 
-Finance insights preview is available for trial deployments in the United States of America, Europe, and the United Kingdom. Microsoft is incrementally adding support for more regions.
-
-Preview features can and should be turned on only in Tier-2 sandbox environments. Setup and artificial intelligence (AI) models that are created in a sandbox environment can't be migrated to a production environment. For more information, see [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+> [!NOTE]
+> Finance insights preview is available for deployment in the United States of America, Canada, United Kingdom, Europe, Asia Pacific, Australia and New Zeeland. Microsoft is incrementally adding support for more regions. To enable Finance insights on production environments, [Export to Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake) capabilities should be enabled on the production environment first.
 
 > [!NOTE]
 > This functionality is being offered as a set of preview features. As a preview feature, you should not use the resulting machine learning models to drive or influence your business decisions or budgeting proposals. Your use of this feature is governed by [Supplemental Terms of Use](https://go.microsoft.com/fwlink/?linkid=2105274).
@@ -50,7 +49,7 @@ To apply for the preview program, fill out the [Finance insights Preview for Dyn
 
 ### System requirements
 
-A Tier-2 sandbox environment (multi-box) is required to preview Finance insights. For background information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+A Tier-2 environment (multi-box) is required to preview Finance insights. For background information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### Version requirements
 
@@ -59,8 +58,6 @@ This document applies to version 10.0.11 of Finance and Operations apps (Platfor
 ### Historical data requirements
 
 At least one year's worth of customer invoices is required to correctly train the machine learning model that is used for the Customer payment predictions feature.
-
-Sample data is available for demo systems that have the Contoso demo data set.
 
 ### Role and permission requirements
 
