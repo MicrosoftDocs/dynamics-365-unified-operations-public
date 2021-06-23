@@ -355,110 +355,110 @@
         href: hr-admin-integration-ats-api-introduction.md
       - name: Recruiting request and related entities
         items:
-          - name: Recruiting request
-            href: hr-admin-integration-ats-api-recruiting-request.md
-          - name: Recruiting request education
-            href: hr-admin-integration-ats-api-recruiting-request-education.md
-          - name: Recruiting request location
-            href: hr-admin-integration-ats-api-recruiting-request-location.md
-          - name: Recruiting request position
-            href: hr-admin-integration-ats-api-recruiting-request-position.md
-          - name: Recruiting request skill
-            href: hr-admin-integration-ats-api-recruiting-request-skill.md
-          - name: Example query for Recruiting request
-            href: hr-admin-integration-ats-api-recruiting-request-example-query.md
+        - name: Recruiting request
+          href: hr-admin-integration-ats-api-recruiting-request.md
+        - name: Recruiting request education
+          href: hr-admin-integration-ats-api-recruiting-request-education.md
+        - name: Recruiting request location
+          href: hr-admin-integration-ats-api-recruiting-request-location.md
+        - name: Recruiting request position
+          href: hr-admin-integration-ats-api-recruiting-request-position.md
+        - name: Recruiting request skill
+          href: hr-admin-integration-ats-api-recruiting-request-skill.md
+        - name: Example query for Recruiting request
+          href: hr-admin-integration-ats-api-recruiting-request-example-query.md
       - name: Recruiting request option sets
         items: 
-          - name: Job exempt status
-            href: hr-admin-integration-ats-api-job-exempt-status.md
-          - name: Recruiting request position status
-            href: hr-admin-integration-ats-api-recruiting-request-position-status.md
-          - name: Recruiting request status
-            href: hr-admin-integration-ats-api-recruiting-request-status.md
-          - name: Regulatory job category
-            href: hr-admin-integration-ats-api-regulatory-job-category.md
+        - name: Job exempt status
+          href: hr-admin-integration-ats-api-job-exempt-status.md
+        - name: Recruiting request position status
+          href: hr-admin-integration-ats-api-recruiting-request-position-status.md
+        - name: Recruiting request status
+          href: hr-admin-integration-ats-api-recruiting-request-status.md
+        - name: Regulatory job category
+          href: hr-admin-integration-ats-api-regulatory-job-category.md
       - name: Candidate to hire and related entities
         items:
-          - name: Candidate to hire
-            href: hr-admin-integration-ats-api-candidate-to-hire.md
-          - name: Certificate type
-            href: hr-admin-integration-ats-api-certificate-type.md
-          - name: Party contact
-            href: hr-admin-integration-ats-api-party-contact.md
-          - name: Person
-            href: hr-admin-integration-ats-api-person.md
-          - name: Person address
-            href: hr-admin-integration-ats-api-person-address.md
-          - name: Person certificate
-            href: hr-admin-integration-ats-api-person-certificate.md
-          - name: Person education
-            href: hr-admin-integration-ats-api-person-education.md
-          - name: Person identification number
-            href: hr-admin-integration-ats-api-person-identification-number.md
-          - name: Person professional experience
-            href: hr-admin-integration-ats-api-person-professional-experience.md
-          - name: Person screening
-            href: hr-admin-integration-ats-api-person-screening.md
-          - name: Person skill
-            href: hr-admin-integration-ats-api-person-skill.md
-          - name: Rating level
-            href: hr-admin-integration-ats-api-rating-level.md
-          - name: Screening types
-            href: hr-admin-integration-ats-api-screening-types.md
-          - name: Example query for Candidate to hire
-            href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
+        - name: Candidate to hire
+          href: hr-admin-integration-ats-api-candidate-to-hire.md
+        - name: Certificate type
+          href: hr-admin-integration-ats-api-certificate-type.md
+        - name: Party contact
+          href: hr-admin-integration-ats-api-party-contact.md
+        - name: Person
+          href: hr-admin-integration-ats-api-person.md
+        - name: Person address
+          href: hr-admin-integration-ats-api-person-address.md
+        - name: Person certificate
+          href: hr-admin-integration-ats-api-person-certificate.md
+        - name: Person education
+          href: hr-admin-integration-ats-api-person-education.md
+        - name: Person identification number
+          href: hr-admin-integration-ats-api-person-identification-number.md
+        - name: Person professional experience
+          href: hr-admin-integration-ats-api-person-professional-experience.md
+        - name: Person screening
+          href: hr-admin-integration-ats-api-person-screening.md
+        - name: Person skill
+          href: hr-admin-integration-ats-api-person-skill.md
+        - name: Rating level
+          href: hr-admin-integration-ats-api-rating-level.md
+        - name: Screening types
+          href: hr-admin-integration-ats-api-screening-types.md
+        - name: Example query for Candidate to hire
+          href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
       - name: Candidate option sets
         items:
-          - name: Applicant integration result
-            href: hr-admin-integration-ats-api-applicant-integration-result.md
-          - name: Blank Yes No
-            href: hr-admin-integration-ats-api-blank-yes-no.md
-          - name: Completion status
-            href: hr-admin-integration-ats-api-completion-status.md
-          - name: Contact type
-            href: hr-admin-integration-ats-api-contact-type.md
-          - name: Education credit basis
-            href: hr-admin-integration-ats-api-education-credit-basis.md
-          - name: Gender
-            href: hr-admin-integration-ats-api-gender.md
-          - name: Marital status
-            href: hr-admin-integration-ats-api-marital-status.md
-          - name: Months of year
-            href: hr-admin-integration-ats-api-months-of-year.md
-          - name: No Yes
-            href: hr-admin-integration-ats-api-no-yes.md
-          - name: Period unit
-            href: hr-admin-integration-ats-api-period-unit.md
-          - name: Screening frequency
-            href: hr-admin-integration-ats-api-screening-frequency.md
-          - name: Screening frequency generate from
-            href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
-          - name: Skill level type
-            href: hr-admin-integration-ats-api-skill-level-type.md
+        - name: Applicant integration result
+          href: hr-admin-integration-ats-api-applicant-integration-result.md
+        - name: Blank Yes No
+          href: hr-admin-integration-ats-api-blank-yes-no.md
+        - name: Completion status
+          href: hr-admin-integration-ats-api-completion-status.md
+        - name: Contact type
+          href: hr-admin-integration-ats-api-contact-type.md
+        - name: Education credit basis
+          href: hr-admin-integration-ats-api-education-credit-basis.md
+        - name: Gender
+          href: hr-admin-integration-ats-api-gender.md
+        - name: Marital status
+          href: hr-admin-integration-ats-api-marital-status.md
+        - name: Months of year
+          href: hr-admin-integration-ats-api-months-of-year.md
+        - name: No Yes
+          href: hr-admin-integration-ats-api-no-yes.md
+        - name: Period unit
+          href: hr-admin-integration-ats-api-period-unit.md
+        - name: Screening frequency
+          href: hr-admin-integration-ats-api-screening-frequency.md
+        - name: Screening frequency generate from
+          href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
+        - name: Skill level type
+          href: hr-admin-integration-ats-api-skill-level-type.md
     - name: Payroll integration API
       items:
       - name: Introduction
         href: hr-admin-integration-payroll-api-introduction.md
+      - name: Generate and review payroll entities
+        href: hr-admin-integration-payroll-api-generate-review-entities.md
       - name: Payroll and related entities
         items:
-          - name: Generate and review payroll entities
-            href: hr-admin-integration-payroll-api-generate-review-entities.md
-          - name: Payroll employee
-            href: hr-admin-integration-payroll-api-payroll-employee.md
-          - name: Payroll worker address
-            href: hr-admin-integration-payroll-api-payroll-worker-address.md
-          - name: Payroll fixed compensation plan
-            href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
-          - name: Payroll variable compensation plan
-            href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md        
-          - name: Payroll position job
-            href: hr-admin-integration-payroll-api-payroll-position-job.md
-          - name: Payroll position
-            href: hr-admin-integration-payroll-api-payroll-position.md
-          - name: Option sets
-          items:
-          - name: Gender
-            href: hr-admin-integration-payroll-api-gender.md                    
+        - name: Payroll employee
+          href: hr-admin-integration-payroll-api-payroll-employee.md
+        - name: Payroll worker address
+          href: hr-admin-integration-payroll-api-payroll-worker-address.md
+        - name: Payroll fixed compensation plan
+          href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+        - name: Payroll variable compensation plan
+          href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md        
+        - name: Payroll position job
+          href: hr-admin-integration-payroll-api-payroll-position-job.md
+        - name: Payroll position
+          href: hr-admin-integration-payroll-api-payroll-position.md
+        - name: Option sets
+        items:
+        - name: Gender
+          href: hr-admin-integration-payroll-api-gender.md
   - name: User Guide
     items:
     - name: Overview
