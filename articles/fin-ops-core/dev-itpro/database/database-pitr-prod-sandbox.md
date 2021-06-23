@@ -4,7 +4,7 @@
 title: Point-in-time restore of the production database to a sandbox environment
 description: This topic describes how to use Microsoft Dynamics Lifecycle Services to do a point-in-time restore of the production database.
 author: LaneSwenka
-ms.date: 05/24/2021
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod:
 ms.technology:
