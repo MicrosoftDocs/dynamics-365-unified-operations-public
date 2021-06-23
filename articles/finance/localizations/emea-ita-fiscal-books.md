@@ -230,13 +230,31 @@ Use the **Change first page number** dialog box to change the number of the firs
 | Changed to        | Enter the new first page number to use on the final sales tax report. |
 
 ## Using sales tax books
-When the setup is completed, the sales tax book sections appear on the **Number sequences** tab of the following pages:
+When the setup is completed, the **Sales tax book section** corresponding to the respective **Number sequence code** appears in the **Sales tax book section** column on the **Number sequences** tab of the following pages:
 
 -   Accounts receivable parameters
 -   Accounts payable parameters
 -   Project management and accounting parameters
 
-Voucher numbers that are assigned during posting must be sequentially ordered by posting date, and the sales tax transactions that use the same number sequence code must be posted in order. If the voucher numbers aren't sequentially ordered, the user receives an error message. In addition, posting is interrupted if a sales tax transaction isn't assigned to any sales tax book section when the user updates an invoice. Whenever a voucher is posted through a sales tax book section, the identifiers of the related sales tax book and sales tax book section are saved in the tax transactions. (Click **Tax** &gt; **Sales tax inquiries** &gt; **Posted sales tax**, and then click the **Posting** tab.) This data can then be used during further sales tax reporting. Italian sales tax books are used for filtering, grouping, and sorting on the report that is accessed at **Tax** &gt; **Declarations** &gt; **Sales tax** &gt; **Sales Tax (Italy)**.
+Voucher numbers that are assigned during posting must be sequentially ordered by posting date, and the sales tax transactions that use the same number sequence code must be posted in order. If the voucher numbers aren't sequentially ordered, the user receives an error message. In addition, posting is interrupted if a sales tax transaction isn't assigned to any sales tax book section when the user updates an invoice. Whenever a voucher is posted through a sales tax book section, the identifiers of the related sales tax book and sales tax book section are saved in the tax transactions. (Click **Tax** &gt; **Sales tax inquiries** &gt; **Posted sales tax**, and then click the **Posting** tab.) This data can then be used during further sales tax reporting. Italian sales tax books are used for filtering, grouping, and sorting on the **Sales Tax (Italy)** report.
+
+## Sales Tax (Italy) report
+
+To report Sales tax for Italy, follow these steps.
+
+1. Go to **Tax** &gt; **Declarations** &gt; **Sales tax** &gt; **Sales Tax (Italy)**.
+2. Select **Sales tax settlement period** for which you want to generate the report in **Settlement period** lookup field.
+3. In the **From date** field, specify a date in the **Period interval** of the settlement period for which you you want to generate the report.
+4. In the **Sales tax book type** select a a type of the sales tax book, for which you want generate the report. If **Sales tax book type** parameter is empty, the report will be generated for all types.
+5. In the **From sales tax book** and **To sales tax book** fields specify the sales tax books for which you want generate the report. if **From sales tax book** and **To sales tax book** parameters are empty, the report will be generated for all sales tax books.
+6. Mark **Sales tax books** check box under the **PRINTOUT** group if you want to generate a report including detailes of the taxable documents in the sales tax books.
+7. Mark **Sales tax summary** check box under the **PRINTOUT** group if you want to generate a report including summary section of the sales tax books.
+8. Mark **Sales tax payment** check box under the **PRINTOUT** group if you want to generate a report including **Sales tax payment** page of the report.
+9. Mark **Include zero lines** check box under the **PRINTOUT** group if you enable **Sales tax books** check box and want to generate a report including detailes and zero-line details of the taxable documents in the sales tax books.
+10. Mark **Include reverse transaction** check box under the **PRINTOUT** group if you enable **Sales tax books** check box and want to generate a report including detailes and reverse transaction details of the taxable documents in the sales tax books.
+11. Set up a destination where the report must be generated, on the **Destination** fast tab.
+12. Set up batch parameters on the **Run in the background** fast tab if you want to generate the report in batch mode.
+13. Click **OK** to generate the report.
 
 ## Additional information
 Due to the fiscal requirements of sequential document numbering and how this information is used in the sales tax books, users in Italy should not have access to the following functions:
