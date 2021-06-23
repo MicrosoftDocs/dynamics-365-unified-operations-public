@@ -66,6 +66,9 @@ The following diagram illustrates relationships within the API. Several types ha
 
 ![Payroll Integration API data model](media/hr-admin-payroll-api-data-model.png)
 
+##Option sets
+The data model for the ATS integration API described in this document includes option sets that provide enumerated values associated with entity properties. For detail on working with option sets in the Dataverse Web API, see [Create and update option sets using the Web API](/powerapps/developer/data-platform/webapi/create-update-optionsets). Option sets are defined for each Dataverse environment.
+
 ## Payroll employee and related entities
 
 Entities:
