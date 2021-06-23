@@ -113,6 +113,8 @@ The setting of the **Use Planning Optimization** option determines which plannin
 - **Yes** – Planning Optimization is used for master planning.
 - **No** – The built-in Supply Chain Management planning engine is used for master planning.
 
+This setting applies to all legal entities (companies). It is not possible to use Planning Optimization in some legal entities and the built-in master planning in other legal entities.
+
 > [!NOTE]
 > If existing planning batch jobs that were created for the built-in Supply Chain Management planning engine are triggered while the **Use Planning Optimization** option is set to **Yes**, those jobs will fail.
 
