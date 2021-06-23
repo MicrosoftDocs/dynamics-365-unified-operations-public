@@ -73,9 +73,9 @@ Find more information about some country-specific regulatory features supported 
 |-------------|--------------|----------------|
 | Spain       | [Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-esp-sii) |  |
 | Hungary     | [Online invoicing system](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-hun-online-invoicing) |  |
-| United Kingdom | [Making Tax Digital (MTD) – VAT statement submission](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration) |  |
+| United Kingdom | [Making Tax Digital (MTD) – VAT statement submission](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration) | [Finance and Operations: UK Digital Tax - VAT Declaration In Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) |
 | Lithuania   | [i.SAF reporting](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-ltu-isaf) |  |
-| Poland      | [VAT declaration with registers (JPK_V7M, VDEK)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-pol-vdek) |  |
+| Poland      | [VAT declaration with registers (JPK_V7M, VDEK)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-pol-vdek) | [Dynamics 365 Finance: SAF/JPK VAT Audit Registers](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-saf-jpk-vat-audit-registers-june-4-2020) |
 | Netherlands | [VAT declaration for Netherlands](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-nl-vat-declaration-netherlands) |  |
 | Czech Republic | [VAT declaration](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-cze-vat-declaration-tax-declaration-model) |  |
 | Brazil      | [SPED-Reinf](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/latam-bra-sped-reinf-overview) |  |
