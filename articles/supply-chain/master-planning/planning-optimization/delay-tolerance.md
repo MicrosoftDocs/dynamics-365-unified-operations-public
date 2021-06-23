@@ -17,28 +17,30 @@ ms.dyn365.ops.version: 10.0.21
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
-The delay tolerance feature enables Planning Optimization to consider the **Negative days** setting defined on coverage groups. The functionality is used to extend the delay tolerance period applied during master planning. This can be used to avoid creating new supply orders when existing supply can cover the demand with a small delay. The purpose is to determine whether it makes sense to create a new supply order for a given demand.
+The delay tolerance functionality enables Planning Optimization to consider the **Negative days** value that is set for coverage groups. It's used to extend the delay tolerance period that is applied during master planning. In this way, you can avoid creating new supply orders if existing supply will be able to cover the demand after a short delay. The purpose of the functionality is to determine whether it makes sense to create a new supply order for a given demand.
 
-## Enable the delay tolerance feature on your system
+## Turn on the feature in your system
 
-To make delay tolerance functionality available on your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Negative days for Planning Optimization* feature.
+To make the delay tolerance functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Negative days for Planning Optimization* feature.
 
 ## Delay tolerance in Planning Optimization
 
-Delay tolerance represents the number of days that you are willing to wait, beyond the lead time, before you order new replenishment when you have existing supply planned. Delay tolerance is defined using calendar days, not business days.
+Delay tolerance represents the number of days beyond the lead time that you're willing to wait before you order new replenishment when existing supply is already planned. Delay tolerance is defined by using calendar days, not business days.
 
-At the time of master planning, when the system calculates the delay tolerance, it takes into account the **Negative days** setting. You can specify the **Negative days** value on the **Coverage groups** page or on the **Item coverage** page.
+At the time of master planning, when the system calculates the delay tolerance, it considers the **Negative days** setting. You can set the **Negative days** value on either the **Coverage groups** page or the **Item coverage** page.
 
-The system ties the delay tolerance calculation to the *earliest replenishment date*, which is *today's date* plus the *lead time*. The delay tolerance is calculated by using following formula: *max(Earliest Replenishment Date, Demand Due Date) – Demand Due Date + Negative Days*, where *max()* finds the larger of two values.
+The system links the delay tolerance calculation to the *earliest replenishment date*, which equals today's date plus the lead time. The delay tolerance is calculated by using following formula, where *max()* finds the larger of two values:
 
-This formula ensures that master planning does not create new supply orders when sufficient supply exists within the product lead time.
+*max(Earliest replenishment date, Demand due date)* – *Demand due date* + *Negative days*
+
+This formula ensures that master planning doesn't create new supply orders when enough supply exists during the product lead time.
 
 > [!NOTE]
-> The delay tolerance calculation in Planning Optimization uses the dynamic negative days calculation from built-in master planning.  This is done regardless of the **Use dynamic negative days** setting on the **Master planning parameters** page.
+> The delay tolerance calculation in Planning Optimization always uses the dynamic negative days calculation from built-in master planning. The **Use dynamic negative days** setting on the **Master planning parameters** page has no effect on this behavior.
 
-If the existing supply implies a demand delay that is less than or equal to the calculated delay tolerance, Planning Optimization will peg existing supply with the demand. In some cases, it is better to delay the demand than end up with oversupply.
+If the existing supply implies a demand delay that is less than or equal to the calculated delay tolerance, Planning Optimization pegs existing supply with the demand. In some cases, it's better to delay the demand than to end up with oversupply.
 
-The following subsections provide examples of how delay tolerance affects the creation of planned orders in Planning Optimization.
+The following subsections provide examples that show how delay tolerance affects the creation of planned orders in Planning Optimization.
 
 ### Example 1
 
@@ -52,7 +54,7 @@ The following supply and demand exist for the product:
 - **Demand for today:** A sales order for a quantity of 10
 - **Supply in 12 days:** A purchase order for a quantity of 10
 
-When master planning runs, no planned orders will be created because existing supply can cover the demand within 12 days, which is equal to the delay tolerance.
+Existing supply can cover the demand within 12 days, and that period equals the delay tolerance. Therefore, when master planning runs, no planned orders are created.
 
 ### Example 2
 
@@ -66,7 +68,7 @@ The following supply and demand exist for the product:
 - **Demand for today:** A sales order for a quantity of 10
 - **Supply in 12 days:** A purchase order for a quantity of 10
 
-When master planning runs, a planned order for a quantity of 10 will be created because existing supply can only cover the demand after 12 days, while the delay tolerance is 10 days.
+Existing supply can cover the demand only after 12 days. However, the delay tolerance is 10 days. Therefore, when master planning runs, a planned order for a quantity of 10 is created.
 
 ### Example 3
 
@@ -80,4 +82,4 @@ The following supply and demand exist for the product:
 - **Demand in 11 days:** A sales order for a quantity of 10
 - **Supply in 14 days:** A purchase order for a quantity of 10
 
-When master planning runs, a planned order for a quantity of 10 will be created because existing supply can only cover the demand after three days, while the delay tolerance is two days. In this case, the demand date is after the product lead time and therefore isn't included in the delay tolerance. Hence, the delay tolerance only includes the negative days of two days.
+Existing supply can cover the demand only after three days. However, the delay tolerance is two days. (In this case, the delay tolerance includes only the two negative days. The demand date isn't included because it's after the product lead time.) Therefore, when master planning runs, a planned order for a quantity of 10 is created.
