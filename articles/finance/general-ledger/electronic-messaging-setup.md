@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Set up Electronic messages (EM) functionality
+# Set up Electronic messages functionality
 
 **Electronic messages** (EM) functionality can help you maintain different electronic reporting processes for different document types. In some complex scenarios supporting (country-specific reporting features)[https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/liza-em-june/articles/finance/general-ledger/electronic-messaging.md#country-specific-regulatory-features-supported-with-em-functionality], EM is set up so that it has a combination of many message statuses, message items statuses, actions, additional fields, and executable classes. For these scenarios, packages of data entities are available for import. If you use these data entity packages, you should import them to a legal entity by using the Data management tool. For more information about how to use the Data management tool, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
