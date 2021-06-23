@@ -44,7 +44,7 @@ The Retail SDK includes the code, code samples, templates, and tools that are re
 ## Download the Retail SDK
 
 > [!NOTE]
-> If you are using Dynamics 365 Commerce application version 10.0.18 or later,  please use the SDK reference packages from the [public feed](https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json) and sample templates from the below GitHub repository, it’s not required to use the SDK from the LCS Development machine. 
+> If you are using Dynamics 365 Commerce application version 10.0.18 or later, use the SDK reference packages from the [public feed](https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json). Also use the sample templates from the following GitHub repository (this is not required to use the SDK from the LCS Development machine). 
 > 
 > [Commerce Scale unit Sample repo](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
 > 
@@ -85,11 +85,11 @@ To develop or build extensions by using the Retail SDK, you must have the follow
     + [runtime-2.1.17-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.1.17-windows-x64-installer)
     + TypeScript version 2.2.2
 
-If the SDK compilation fails with .NET SDK error - the current .NET SDK does not support targeting .NET Standard 2.0, try installing the x86 version of the .NET 2.1 SDK and runtime:
+If the SDK compilation fails with the following error message, "The current .NET SDK does not support targeting .NET Standard 2.0", try installing the x86 version of the .NET 2.1 SDK and runtime.
 + [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-2.1.524-windows-x86-installer)
 + [.NET Core 2.1 Runtime](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-2.1.28-windows-x86-installer)
 
-Visual Studio 2017 has TypeScript 3.1 as the default version. You must install version 2.2.2, because the POS app is based on that version. In Visual Studio, select **Tools \> Get Tools and Features**. On the **Individual components** tab, select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section, and install it.
+Visual Studio 2017 has TypeScript 3.1 as the default version. You must install version 2.2.2 because the POS app is based on that version. In Visual Studio, select **Tools \> Get Tools and Features**. On the **Individual components** tab, select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section, and install it.
 
 ## Build the Retail SDK
 
