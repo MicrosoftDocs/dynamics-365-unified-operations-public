@@ -4,7 +4,7 @@
 title: Configure shared parameters
 description: You must set up shared parameters for records that are shared across companies, such as Position records. This article explains how to set up Human resources parameters across legal entities.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,15 +44,18 @@ On the **Number sequences** tab, you can select the number sequences that are us
 
 On the **Positions** tab, indicate whether new positions are available for assignment by default:
 
--   **Always** – You can assign workers to new positions when positions are created. When positions are created, the **Available for assignment** date and time on the **General** tab of the **Position** page are automatically set to the creation date and time.
--   **Never** – You can't assign workers to new positions when positions are created. If you select this option, you must open the **Position** page for each new position as it becomes available, and then, on the **General** tab, enter the **Available for assignment** date to enable worker assignment.
+- **Always** – You can assign workers to new positions when positions are created. When positions are created, the **Available for assignment** date and time on the **General** tab of the **Position** page are automatically set to the creation date and time.
+- **Never** – You can't assign workers to new positions when positions are created. If you select this option, you must open the **Position** page for each new position as it becomes available, and then, on the **General** tab, enter the **Available for assignment** date to enable worker assignment.
 
 On the **Advanced access** tab, you can restrict access to certain information or links.
 
--   **Restrict access to worker information** – Turning on this option will restrict users' ability to view employee information for only those legal entities they have access to and employees with employments in those legal entities.
+- **Restrict access to worker information** – Turning on this option will restrict users' ability to view employee information for only those legal entities they have access to and employees with employments in those legal entities.
   
-Once this feature is turned on you will need to set the appropriate permissions for each user that needs to have their view restricted. To do this, navigate to the Users form.  Select a user and select a role for the user.  The 'Assign organizations' option will become enabled.  Select 'Assign organizations'.  Within the new form, select 'Grant access to specific organizations individually'.  Select the organizations that the user should have access to.  You will need to do this for every role that the user has, including the system user role.  Note:  The companies that the user has access to must match across all of their roles.
+  Once this feature is turned on you will need to set the appropriate permissions for each user that needs to have their view restricted. To do this, navigate to the **Users** page.  Select a user and select a role for the user.  The **Assign organizations** option will become enabled.  Select **Assign organizations**.  Within the new page, select **Grant access to specific organizations individually**.  Select the organizations that the user should have access to.  You will need to do this for every role that the user has, including the system user role.  
+  
+  > [!Note]
+  > The companies that the user has access to must match across all of their roles.
      
--   **Enable cross company compensation view** –  Compensation for employees is assigned per legal entity of employment.  Sometimes an employee can be employed in multiple legal entities at the same time.  When this feature is on, compensation for each legal entity will display in ESS/MSS without having to change legal entities. 
+- **Enable cross-company compensation view** –  Compensation for employees is assigned per legal entity of employment.  Sometimes an employee can be employed in multiple legal entities at the same time.  When this feature is on, compensation for each legal entity will display in ESS/MSS without having to change legal entities. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
