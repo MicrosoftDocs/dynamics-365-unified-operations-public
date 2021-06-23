@@ -79,7 +79,12 @@ Find more information about some country-specific regulatory features supported 
 | Netherlands | [VAT declaration for Netherlands](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-nl-vat-declaration-netherlands) |  |
 | Czech Republic | [VAT declaration](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-cze-vat-declaration-tax-declaration-model) |  |
 | Brazil      | [SPED-Reinf](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/latam-bra-sped-reinf-overview) |  |
-
+| Russia      | [VAT declaration](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/rus-vat-declaration) |  |
+| Russia      | [Accounting reporting in electronic format](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/rus-accounting-reporting) |  |
+| Russia      | [Profit tax declaration](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/rus-profit-tax-declaration) |  |
+| Russia      | [Assessed tax declaration](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/rus-assessed-tax-declaration) |  |
+| Russia      | [Transport tax declaration](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/rus-transport-tax-declaration) |  |
+| Russia      | [Land tax declaration](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/rus-land-tax-declaration) |  |
 
 ## Work with the Electronic messages functionality
 
