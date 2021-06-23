@@ -36,10 +36,13 @@ The load or shipment can't be confirmed in its current state because one of the 
 ## Resolution
 
 The load or shipment is currently in a state where shipment confirmation fails. To fix this issue, complete one of the following tasks:
-- Review your load lines, and make sure that all the related work has been completed at the final shipping location, and that the quantities match.
-- Cancel the works that have been created with the packing location as the final shipping location, reconfigure the location directive, and re-release the load.
 
-### Review your load lines, and make sure that all the related work has been completed at the final shipping location, and that the quantities match.
+- Review your load lines and make sure that all the related work has been completed at the final shipping location, and that the quantities match.
+- Cancel the work IDs that have been created with the packing location as the final shipping location, reconfigure the location directive, and rerelease the load.
+
+### Review your load lines and make sure that all the related work has been completed at the final shipping location, and that the quantities match
+
+Use the following procedure to review your load lines and make sure that all the related work has been completed at the final shipping location, and that the quantities match.
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. Select the load that the shipment can't be confirmed for.
@@ -49,29 +52,29 @@ The load or shipment is currently in a state where shipment confirmation fails. 
 1. Verify that the work has been completed at the final shipping location, and that the picked work quantity matches the created work quantity on the load line.
 1. Repeat this procedure for all load lines to make sure that all criteria are met.
 
-### Cancel the works that have been created with the packing location as the final shipping location, reconfigure the location directive, and re-release the load.
+### Cancel the work IDs that have been created with the packing location as the final shipping location, reconfigure the location directive, and rerelease the load
 
-Use the following procedure to cancel the already created works with the packing final put location with the automated containerization in place.
+Use the following procedure to cancel the work IDs that have the packing location as the final put location with automated containerization in place.
 
 1. Go to **Warehouse management \> Periodic tasks \> Clean up \> Cancel work**.
-1. In the **Work ID** field, specify the ID of the work that you want to cancel, and that currently has a **Work status** value of *Open*, *In progress*, *Canceled*, *Combined*, or *Closed*.
+1. The **Cancel work** dialog opens. In the **Work ID** field, specify the ID of the work that you want to cancel. The selected work ID must have a **Work status** value of *Open*, *In progress*, *Canceled*, *Combined*, or *Closed*.
 1. Select **OK**.
 1. Select **Yes** to confirm that you want to cancel the work.
-1. Repeat this procedure for the other works, if necessary.
+1. Repeat this procedure for the other work IDs as needed.
 
 For more information, see [Cancel warehouse work for exception handling](../../warehousing/cancel-warehouse-work.md).
 
-Use the following procedure to reconfigure the location directive to not use packing location as the final shipping location if there is an automated containerization defined through the Wave template.
+Use the following procedure to reconfigure the location directive so it won't use the packing location as the final shipping location when automated containerization is set up for the wave template.
 
 1. Go to **Warehouse management \> Setup \> Location directives**.
 1. In the **Work order type** field, select *Sales orders*.
-1. Select the location directive that is used for the automated containerization.
-1. On the **Location Directive Actions** FastTab, select the **Edit query**.
-1. In the query editor dialog box, on the **Range** tab, find the row where the **Field** field is set to *Location profile*, and verify that the **Criteria** field for that row is not set to location profile with packing location type. Adjust the **Criteria** field to correct final put location.
+1. Select the location directive you are using for automated containerization.
+1. On the **Location Directive Actions** FastTab toolbar, select **Edit query**.
+1. In the query editor dialog, on the **Range** tab, find the row where **Field** is set to *Location profile*, and verify that the **Criteria** field for that row is not set to a location profile that has a **Location type** of *Packing*. Adjust the **Criteria** field to correct the final put location.
 
-Use the following procedure to re-release the load and create the works with the correct final shipping location.
+Use the following procedure to rerelease the load and create work IDs with the correct final shipping location.
 
 1. Go to **Warehouse management \> Loads \> Load planning workbench**.
 1. In the **Loads** section, find the load that needs to be released.
-1. Select **Release \> Release to warehouse** to release the selected load to the warehouse. 
-1. Repeat this procedure for the other loads, if necessary.
+1. On the **Loads** section toolbar, select **Release \> Release to warehouse** to release the selected load to the warehouse.
+1. Repeat this procedure for the other loads as needed.
