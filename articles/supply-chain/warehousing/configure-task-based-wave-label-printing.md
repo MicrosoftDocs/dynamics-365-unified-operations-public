@@ -50,7 +50,7 @@ You can now update an existing wave template so that it uses the *Wave label pri
 1. On the Action Pane, select **Edit**.
 1. In the list pane, select the wave template to update. (If you're using demo data for testing purposes, you can select *24 Shipping default*.)
 1. On the **Methods** FastTab, in the **Remaining methods** column, select the row where the **Name** field is set to *waveLabelPrinting*.
-1. Select the arrow button that points toward the **Selected methods** column to move the selected row to that column.
+1. Select **add** (right arrow button) to move the selected row to the **Selected methods** column.
 1. In the **Wave step code** field, enter a wave step code that will be used to connect the wave template with a wave label template.
 
 ## Set wave task processing threshold data
