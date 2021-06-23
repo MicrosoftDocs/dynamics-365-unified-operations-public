@@ -43,6 +43,16 @@ The Retail SDK includes the code, code samples, templates, and tools that are re
 
 ## Download the Retail SDK
 
+> [!NOTE]
+> If you are using Dynamics 365 Commerce application version 10.0.18 or later,  please use the SDK reference packages from the [public feed](https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json) and sample templates from the below GitHub repository, it’s not required to use the SDK from the LCS Development machine. 
+> 
+> [Commerce Scale unit Sample repo](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
+> 
+> [Commerce Instore components Sample repro](https://github.com/microsoft/Dynamics365Commerce.InStore)
+> 
+> [Public feed for reference package](https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json)
+
+
 The Retail SDK is available in development environments that are provisioned via Microsoft Dynamics Lifecycle Services (LCS), in the virtual hard disks (VHDs) that are downloaded from LCS, and in hotfix packages that are deployed to the LCS environment. For more information, see [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md) and [Apply updates to cloud environments](../../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md).
 
 To access the Retail SDK, sign in to the development virtual machine (VM), and go to the K:\\RetailSDK folder. You can obtain new versions of the Retail SDK by applying any Commerce binary hotfix from LCS to the development environment. After hotfix deployment is completed, you can find the new version of the SDK inside the K:\\RetailSDK\\Update folder.
@@ -75,7 +85,11 @@ To develop or build extensions by using the Retail SDK, you must have the follow
     + [runtime-2.1.17-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.1.17-windows-x64-installer)
     + TypeScript version 2.2.2
 
-        Visual Studio 2017 has TypeScript 3.1 as the default version. You must install version 2.2.2, because the POS app is based on that version. In Visual Studio, select **Tools \> Get Tools and Features**. On the **Individual components** tab, select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section, and install it.
+If the SDK compilation fails with .NET SDK error - the current .NET SDK does not support targeting .NET Standard 2.0, try installing the x86 version of the .NET 2.1 SDK and runtime:
++ [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-2.1.524-windows-x86-installer)
++ [.NET Core 2.1 Runtime](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-2.1.28-windows-x86-installer)
+
+Visual Studio 2017 has TypeScript 3.1 as the default version. You must install version 2.2.2, because the POS app is based on that version. In Visual Studio, select **Tools \> Get Tools and Features**. On the **Individual components** tab, select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section, and install it.
 
 ## Build the Retail SDK
 
@@ -175,8 +189,8 @@ The following table shows the folders that the Retail SDK contains to help with 
 <li><strong>HardwareStation</strong> – Sample Hardware station extension projects.</li>
 <li><strong>HybridApp</strong> – Android and iOS shell apps for the POS. Extension can build these apps and deploy them to the Android and iOS platforms.</li>
 <li><strong>OnlineStore</strong> – The sample online storefront app.</li>
-<li><strong>RetailProxy</strong> – The sample C# proxy project for POS offline mode. As of version 10.0.11, the C# proxy is obsolete (deprecated). The Retail server extension libraries can be used directly in offline mode. You don't have to have separate proxy libraries.</li>
-<li><strong>RetailServer</strong> – Sample Retail server extension projects.</li>
+<li><strong>RetailProxy</strong> – The sample C# proxy project for POS offline mode. As of version 10.0.11, the C# proxy is obsolete (deprecated). The Headless Commerce  extension libraries can be used directly in offline mode. You don't have to have separate proxy libraries.</li>
+<li><strong>RetailServer</strong> – Sample Headless Commerce extension projects.</li>
 <li><strong>SampleExtensionsTest</strong> – The sample project for creating an extension test project.</li>
 <li><strong>ShoppingApp</strong> – The sample mobile app (Retailer shopping app) for users in Android and iOS.</li>
 <li><strong>TypeScriptProxy</strong> – Sample proxy projects that show how to generate TypeScript for the POS.</li>
@@ -248,13 +262,13 @@ The following tables provide information about the components in the Retail SDK 
 </tbody>
 </table>
 
-### Retail server
+### Headless Commerce APIs
 
 <table>
 <tbody>
 <tr>
 <th>Scenario</th>
-<td>Create a Retail server extension to expose new Commerce APIs to the client.</td>
+<td>Create a Headless Commerce API extension to expose new Commerce APIs to the client.</td>
 </tr>
 <tr>
 <th>Commerce SDK reference</th>
@@ -281,7 +295,7 @@ The following tables provide information about the components in the Retail SDK 
 <tbody>
 <tr>
 <th>Scenario</th>
-<td>A TypeScript proxy is required if new Retail server extensions must be consumed in the POS or E-Commerce clients.</td>
+<td>A TypeScript proxy is required if new Headless Commerce API extensions must be consumed in the POS or E-Commerce clients.</td>
 </tr>
 <tr>
 <th>Commerce SDK reference</th>
