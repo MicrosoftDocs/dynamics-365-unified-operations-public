@@ -117,23 +117,23 @@ Debts can be calculated for profit tax accounting purposes and business accounti
 
 6.  If you chose **Accounting object** in the **Accounting policy** section (for example, for **RAP**), on the **Customer posting** and **Vendor posting** FastTab, set up the ledger accounts and expense/income codes for the bad debts reserves posting:
 
-    1.  Select **Add**.
+    1).  Select **Add**.
 
-    2.  In the **Account code** field, select **Table**, **Group**, or **All**.
+    2).  In the **Account code** field, select **Table**, **Group**, or **All**.
 
-    3.  In the **Account/Group number** field, select the customer or vendor account number if you selected **Table** in the **Account code** field. If you selected **Group** in the **Account code** field, select the customer or vendor group number.
+    3).  In the **Account/Group number** field, select the customer or vendor account number if you selected **Table** in the **Account code** field. If you selected **Group** in the **Account code** field, select the customer or vendor group number.
 
-    4.  In the **Unrealized losses account** field, select the ledger account to use to post losses in transactions on bad debts. For example, select account **91 non-operating income and expenses** for the **RAP** model and account **Н91 non-operating income and expenses in TAX** for the **TAX** model.
+    4).  In the **Unrealized losses account** field, select the ledger account to use to post losses in transactions on bad debts. For example, select account **91 non-operating income and expenses** for the **RAP** model and account **Н91 non-operating income and expenses in TAX** for the **TAX** model.
 
-    5.  In the **Unrealized income account** field, select the ledger account to use to post income in transactions on bad debts. For example, select account **91 non-operating income and expenses** for the **RAP** model and account **Н91 off-balance sheet account for income** for the **TAX** model.
+    5).  In the **Unrealized income account** field, select the ledger account to use to post income in transactions on bad debts. For example, select account **91 non-operating income and expenses** for the **RAP** model and account **Н91 off-balance sheet account for income** for the **TAX** model.
 
-    6.  In the **Bad debts reservation account** field, select the ledger account to use to form the bad debts reserve. For example, select account **63 reserves for bad debts** for the **RAP** model and account **Н63 reserves for bad debts for TAX** for the **TAX** model.
+    6).  In the **Bad debts reservation account** field, select the ledger account to use to form the bad debts reserve. For example, select account **63 reserves for bad debts** for the **RAP** model and account **Н63 reserves for bad debts for TAX** for the **TAX** model.
 
-    7.  In the **Expense code** field, select the expense code to link to the transaction for creating the bad debts reserve and writing off hopeless debts.
+    7).  In the **Expense code** field, select the expense code to link to the transaction for creating the bad debts reserve and writing off hopeless debts.
 
-    8.  In the **Income code** field, select the income code to link to the transaction for including the bad debts reserve in non-operation income.
+    8).  In the **Income code** field, select the income code to link to the transaction for including the bad debts reserve in non-operation income.
 
-    9.  For the **TAX** model only: In the **Summary account** field, select the ledger account to use to offset the account that you selected in the **Bad debts reservation account** field to write off bad debt transactions. For example, select account **Н62 off-balance sheet account for account receivable**.
+    9).  For the **TAX** model only: In the **Summary account** field, select the ledger account to use to offset the account that you selected in the **Bad debts reservation account** field to write off bad debt transactions. For example, select account **Н62 off-balance sheet account for account receivable**.
 
 Note: For the **RAP** model, the ledger account from the customer posting profile is used for this purpose.
 
@@ -174,20 +174,20 @@ Depending on the settings of your debts calculation models, create and calculate
 
 | **Register type** | **Comment** |
 |-------------------------|-------------------------|
-| **Tax registers for the inventory of accounts receivable** |
+| **Tax registers for the inventory of accounts receivable** ||
 | Accounts receivable inventory act | For the **TAX** model |
 | Accounts receivable inventory act (business accounting) | For the **RAP** model |
-| **Tax registers for calculating the bad debts reserve in accounts receivable** |
+| **Tax registers for calculating the bad debts reserve in accounts receivable** ||
 | Accounts receivable - bad debts reserve | For the **TAX** model when the **Accounting policy** field is set to **Total** |
 | Accounts receivable - reserve (business accounting) | For the **RAP** model when the **Accounting policy** field is set to **Total** |
-| Accounts receivable - reserve details | For the **TAX ** model when the **Accounting policy** field is set to **Accounting object** |
+| Accounts receivable - reserve details | For the **TAX** model when the **Accounting policy** field is set to **Accounting object** |
 | Accounts receivable - reserve details (business accounting) | For the **RAP** model when the **Accounting policy** field is set to **Accounting object** |
-| **Tax registers for collecting information about the movement of the bad debts reserve in accounts receivable** |
+| **Tax registers for collecting information about the movement of the bad debts reserve in accounts receivable** ||
 | Accounts receivable - bad debt reserve movement | For the **TAX** model when the **Accounting policy** field is set to **Total** |
 | Accounts receivable - reserve movement (business accounting) | For the **RAP** model when the **Accounting policy** field is set to **Total** |
-| Accounts receivable - reserve movement details | For the **TAX ** model when the **Accounting policy** field is set to **Accounting object** |
+| Accounts receivable - reserve movement details | For the **TAX** model when the **Accounting policy** field is set to **Accounting object** |
 | Accounts receivable - reserve movement details (business accounting) | For the **RAP** model when the **Accounting policy** field is set to **Accounting object** |
-| **Tax registers for collecting information about the movement of accounts receivable** |
+| **Tax registers for collecting information about the movement of accounts receivable** ||
 | Accounts receivable movement | For the **TAX** model |
 | Accounts receivable movement (business accounting) | For the **RAP** model |
 
@@ -224,7 +224,7 @@ Depending on the settings of your debts calculation models, create and calculate
 
 14.  On the **Lines** FastTab, create settings for calculating the revenue and reserve limit.
 
-   ![Creating a counter on the Counter setup page](media/rus-bad-debts-5.png
+   ![Creating a counter on the Counter setup page](media/rus-bad-debts-5.png)
 
 For more information about how to set up sequences of calculation, see [Sequence of calculations](https://docs.microsoft.com/dynamics365/finance/localizations/rus-set-up-deferrals#sequence-of-calculation).
 
@@ -303,7 +303,7 @@ The **Reminder** column shows the reserve balance for the previous period. The v
 
 The following illustration shows an example of the **Accounts receivable- reserve details** page.
 
-![Example of the Accounts receivable   reserve details page](media/rus-bad-debts-7.png)
+ ![Example of the Accounts receivable reserve details page](media/rus-bad-debts-7.png)
 
 On each register line, you can review the information in the following columns:
 
@@ -384,7 +384,8 @@ There are four registers in this group.
 
 These registers summarize information about the movement and use of the bad debts reserve. They are calculated based on the results of the formation of the bad debts reserve and the use of the bad debt to write off hopeless debts.
 
-Note: The write-off of hopeless debts is processed by using the bad debts reserve that is created at the end of the previous period.
+> [!NOTE]
+> The write-off of hopeless debts is processed by using the bad debts reserve that is created at the end of the previous period.
 
 The following illustration shows an example of the **Accounts receivable - reserve movement details** page.
 
@@ -515,8 +516,6 @@ The page shows written-off debts as of the selected reporting date:
 -   The **Vendors** tab shows the list of written-off prepayments to suppliers.
 
 -   The **Reserve** field shows the amount of the formed bad debts reserve at the beginning of the current period that can be used to write off hopeless debt.
-
-<!-- -->
 
 -   The **Written off** field shows the amount of the written-off bad debts from the reserve for accounts receivable or to the revenues/expenses account.
 
