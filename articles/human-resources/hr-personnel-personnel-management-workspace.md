@@ -138,50 +138,49 @@ Learn more about Personnel Actions here (Link to Personnel Actions page).
 
 ## Open positions tab
 
-The Open positions tab provides a list of all open positions. Positions in the list must have an activation of today or older, and must not have a current worker assignment.
+The **Open positions** tab provides a list of all open positions. Positions in the list must have an activation of today or older, and must not have a current worker assignment.
 
-Tip: The list looks at the worker assignment as of today, therefore, if a position has a future dated worker assignment, the position will continue to show in the list. Once the worker assignment effective date is met, the position will be removed from the list.
+> [!Note] 
+> The list looks at the worker assignment as of today, therefore, if a position has a future-dated worker assignment, the position will continue to show in the list. Once the worker assignment effective date is met, the position will be removed from the list.
 
 ## Expiring records tab
 
-The Expiring records tab provides a list of items that will be expiring or have expired for the workers in the company that the user is logged into. The following is a list of items that will show in this tab:
+The **Expiring records** tab provides a list of items that will be expiring or have expired for the workers in the company that the user is logged into. The following is a list of items that will show in this tab:
 
 -  Certificates
-
 -  Identification
-
 -  Probations
-
 -  Screenings
-
 -  Tests
 
-To change whether expired or expiring records display in this list, navigate to Human Resources parameters – General tab – Expiring records range or Expired records range. The period of time for viewing data in this section can be set to days. For example: You may want to see records expiring in the next 14 days. You would set Number of days = 14.
+To change whether expired or expiring records display in this list, navigate to **Human Resources parameters** > **General** tab > **Expiring records** range or **Expired records** range. The period of time for viewing data in this section can be set to days. For example, you may want to see records expiring in the next 14 days. In this case, you would set **Number of days = 14**.
 
-Tip: If you set Expired records range or Expiring records range = 0 in Parameters, then those records will not be displayed in the list.
+> [!Note] 
+> If you set **Expired records** range or **Expiring records** range = **0** in Parameters, then those records will not be displayed in the list.
 
-## Employees Tile
+## Employees tile
 
-The Employees tile shows the number of employees that are employed in the company that the user is currently logged into. When you select the Employees tile, a new page displays the details of the employees.
+The **Employees** tile shows the number of employees that are employed in the company that the user is currently logged into. When you select the **Employees** tile, a new page displays the details of the employees.
 
-## Contractors Tile
+## Contractors tile
 
-The Contractors tile shows the number of contractors that are employed in the company that the user is currently logged into. When you select the Contractors tile, a new page displays the details of the contractors.
+The **Contractors** tile shows the number of contractors that are employed in the company that the user is currently logged into. When you select the **Contractors** tile, a new page displays the details of the contractors.
 
-## Open positions Tile
+## Open positions tile
 
-The Open positions tile provides a count of all open positions. When you select the **Open postions** tile, a new page displays the details of any open positions. Positions must have an activation of today or older, and must not have a current worker assignment to be counted in the tile.
+The **Open positions** tile provides a count of all open positions. When you select the **Open postions** tile, a new page displays the details of any open positions. Positions must have an activation date of today or older, and must not have a current worker assignment to be counted in the tile.
 
-Tip: The tile looks at the position as of today. Therefore, if a position has a future dated worker assignment, the position will continue to show in the list. Once the worker assignment effective date is met, the position will be removed from the list.
+> [!Note]  
+> The tile looks at the position as of today. Therefore, if a position has a future-dated worker assignment, the position will continue to show in the list. Once the worker assignment effective date is met, the position will be removed from the list.
 
-## Approvals Tile
+## Approvals tile
 
-The Open positions tile provides a count of all workflow items that are pending the current users approval. When you select the Approvals tile, a new page displays the details of any workflow items needing approval.
+The **Approvals** tile provides a count of all workflow items that are pending the current user's approval. When you select the **Approvals** tile, a new page displays the details of any workflow items needing approval.
 
-## Address changes Tile
+## Address changes tile
 
-The address changes tile provides a count of how many address changes occurred in the number of days specified in the **Human resources parameters** page.
+The **Address changes** tile provides a count of how many address changes occurred in the number of days specified in the **Human resources parameters** page.
 
 When you select the **Address changes** tile, a new page displays the details of any address changes. You can optionally select **Include future address changes** in the upper-right corner to display address changes with a future date.
 
-Learn more about viewing and managing address changes here: <https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-personnel-view-address-changes>
+Learn more about viewing and managing address changes in [View and manage address changes](hr-personnel-view-address-changes.md).
