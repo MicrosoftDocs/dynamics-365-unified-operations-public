@@ -37,11 +37,11 @@ This release contains the features and bug fixes listed in the following table.
 | Bug fix | Implements rollback of transactions that exceed a 2-minute time limit. | General availability |
 | Bug fix | Fixes processing of datetime fields during a catch-up sync. | General availability |
 | Tracing | Limits nonessential plugin trace logs for medium-size transactions (5 or more records). | General availability |
-| Bug fix | Added storage and tracking dimension group lookup fields to the **Shared Product Details** entity. Also added these 2 fields to the **Released products V2" -> msdyn_sharedproductdetails** dual-write map. | General availability |
-| Bug fix | In a sales order, upon selecting an existing product, the **Sales product category** is defaulted to a value coming from **Product Category Assignments** entity. But when the defaulted value is not part of sales hierarchy, the line-item addition throws error message. In order to overcome the error and allow appropriate assignment inside Finance and Operations apps, the **sales product category** field can be left blank.  | General availability |
-| Bug fix | In a sales order, upon selecting an existing product, the **Sales Product Category** should become read-only. It is editable when the product is set to write-in. | General availability |
-| Bug fix | **Total Tax** field on sales quotation and sales order are made read-only. When **Price per unit** is changed in the sales quotation line or sales order line in Finance and Operations apps, it must sync back to respective sales quotation or sales order line in Customer Engagement apps.  | General availability |
-| Bug fix | Updating the warehouse name field in Finance and Operations apps is causing the name field in Dataverse to be blanked out. | General availability |
+| Bug fix | Added storage and tracking dimension group lookup fields to the **Shared Product Details** table. Added these lookup fields to the **Released products V2" -> msdyn_sharedproductdetails** dual-write map. | General availability |
+| Bug fix | In a sales order, when you select an existing product, the **Sales product category** value defaults to a value that comes from the **Product Category Assignments** table. But when the defaulted value is not part of sales hierarchy, the line-item addition throws error message. To prevent the error and allow assignment inside finance and operations apps, the **sales product category** field can be left blank.  | General availability |
+| Bug fix | In a sales order, when you select an existing product, the **Sales Product Category** should become read-only. It is editable when the product is set to write-in. | General availability |
+| Bug fix | The **Total Tax** field in a sales quotation and sales order are read-only. When the **Price per unit** field is changed in the sales quotation line or sales order line in finance and operations apps, it must sync back to the respective sales quotation or sales order line in customer engagement apps.  | General availability |
+| Bug fix | Updating the warehouse name field in finance and operations apps caused the name field in Dataverse to be blanked out. | General availability |
 | Bug fix | Localization fixes for Ukraine. | General availability |
 
 ## May 2021 release
