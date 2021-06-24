@@ -4,7 +4,7 @@
 title: Configure shared parameters
 description: You must set up shared parameters for records that are shared across companies, such as Position records. This article explains how to set up Human resources parameters across legal entities.
 author: andreabichsel
-ms.date: 06/23/2021
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
