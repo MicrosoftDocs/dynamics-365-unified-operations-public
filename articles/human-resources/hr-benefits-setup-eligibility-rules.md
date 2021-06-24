@@ -27,11 +27,16 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Configure eligibility rules and options
+# Configure eligibility rules and options overview
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-After you've configured the necessary parameters for Benefits management in Microsoft Dynamics 365 Human Resources, you can create eligibility rules, bundles, periods, and programs that you will associate with your benefit plans.
+After you've configured the necessary parameters for Benefits management, you can create eligibility rules, bundles, periods, and programs that you will associate with your benefit plans.
+
+Eligibility rules are the rules that will be used to determine if an employee is eligible for a plan.  The employee needs to meet at least one rule to be eligible for the benefit.  For example:  You might have 2 rules on a plan.  The first rule (line 1) states the employee type must be ‘Employee’.  The next rule (line 2) states that the employee must be Full time.  The employee met rule 1 and therefore, they will be eligible, even if they are part time.  However, you can setup a single rule that requires the individual to be an Employee AND Full-time.  The employee would need to meet both CONDITIONS of the rule, for them to be eligible.    For example, you can setup a single rule called ‘Employee Full-time’ for full time individuals with an employment type = Employee.  The employee must meet ALL conditions within the rule to be considered eligible.
+
+> [!IMPORTANT]
+>A benefit plan MUST have at least one eligibility rule associated to it.   You can associate multiple rules to a benefit.
 
 ## Create an eligibility rule
 
