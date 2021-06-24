@@ -4,7 +4,7 @@
 title: Set up the components of a job
 description: This article describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
 author: andreabichsel
-ms.date: 06/23/2021
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
