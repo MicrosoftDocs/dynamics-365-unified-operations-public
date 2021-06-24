@@ -4,39 +4,23 @@
 
 title: Configure expenditure reviewers
 description: This topic describes how to use expenditure reviewers to dynamically select the user to assign a workflow task or approval element to.
-author: Rachel Profitt
-ms.date: 06/22/2021
+author: rachel-profitt
+ms.date: 06/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-
-# optional metadata
-
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: 
+ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 56381
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: cgarty
-ms.search.validFrom: 
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.author: raprofit
+ms.search.validFrom: 2021-06-24
 
 ---
 
-
 # Configure expenditure reviewers
 
-You can set up dynamic expenditure reviewers to route expenditures for review based on the user who is assigned to a project role or a financial dimension where the expenditure is being charged. The workflow process uses the specified project role or financial dimension owner to determine whom to route the expenditure to.
+You can set up dynamic expenditure reviewers to route expenditures for review based on the user who is assigned to a project role or the financial dimension where the expenditure is being charged. The workflow process uses the specified project role or financial dimension owner to determine whom to route the expenditure to.
 
-You can define one or more expenditure reviewer configurations, and then select a configuration when you create a workflow. You can configure the expenditure reviewer values for each legal entity in your organization. After you define the expenditure reviewer configurations, you assign the configuration to your workflow task on the assignment tab of the properties. 
+You can define one or more expenditure reviewer configurations, and then select a configuration when you create a workflow. You can configure the expenditure reviewer values for each legal entity in your organization. After you define the expenditure reviewer configurations, you assign the configuration to your workflow task on the **Assignment** tab of the properties. 
 
 > [!NOTE]
 > <P>Expenditure reviewers are not mandatory but can be used to simplify the configuration of your workflow. For example, instead of creating one conditional decision to check for each Cost center dimension, and then creating another element to assign the approval or task to a specific user or groups of users, you can configure the Owner of the Cost center to dimension and use an expenditure reviewer to dynamically select the correct user. In this way when ownership or assignment of cost centers change, you only need to update the Owner field on the financial dimension. </P>
