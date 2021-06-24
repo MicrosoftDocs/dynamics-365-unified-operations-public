@@ -88,9 +88,9 @@ The following example image shows a B2B home page using the Adventure Works.
 
 The Adventure Works theme includes several theme extensions, including the **View extensions** and **Module definition** extensions. The Adventure Works theme can be used as a reference theme to build similar extensions. For example, the list page on the Adventure Works theme is implemented as a view extension that has a horizontal refiner compared to the left pane refiner used in the Fabrikam theme.
 
-Similarly, there are other modules that include module definition extensions. For example, the [Cart icon module](add-cart-icon.md) allows two new slots for **Empty Cart** and **Promotional Content** that are implementedodule definition extension. Another example would be the Header module, where a new property is added **Mobile Logo** for supporting a logo on Mobile view port. This Mobile Logo is implemented as a Header module definition extension.
+Similarly, there are other modules that include module definition extensions. For example, the [Cart icon module](add-cart-icon.md) includes two additional slots for **Empty Cart** and **Promotional Content** that are implemented using module definition extensions. Another example is the header module, where a new **Mobile Logo** property has been added that supports a logo on mobile view ports. The **Mobile Logo** property is implemented as a header module definition extension.
 
-For more details on extensions refer [Theme extensions](theme-module-extensions.md)
+For more information on theme extensions, see [Theme extensions](theme-module-extensions.md).
 
 ## Additional resources
 
@@ -104,12 +104,15 @@ For more details on extensions refer [Theme extensions](theme-module-extensions.
 
 [Subscribe module](subscribe-module.md)
 
-[Image List module](image-list-module.md)
+[Image list module](image-list-module.md)
 
-[Theme Extensions](theme-module-extensions.md)
+[Theme extensions](theme-module-extensions.md)
 
 [Cart icon module](add-cart-icon.md)
 
+[B2B site setup](./b2b/set-up-b2b-site.md)
+
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
-[B2B site setup](./b2b/set-up-b2b-site.md)
+
