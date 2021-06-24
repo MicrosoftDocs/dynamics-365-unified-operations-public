@@ -34,10 +34,12 @@ These are the types of coverage options that will be available for a plan, speci
 
 Once defined, you can reuse benefit coverage options. You can associate an option with one or more plans.
 
-**Important**
+**Important!**
 1.  After you define coverage options, attach the coverage options to a benefit plan type. 
 2.  The plan type is then associated with a benefit plan or program. Coverage options that are associated with a plan type are available to all plans that are created with that plan type. 
 
+
+## Create coverage options
 1. In the **Benefits management** workspace, under **Setup**, select **Coverage options**.
 
 2. Select **New**.
