@@ -45,8 +45,7 @@ The following tax registers provide information about accounts receivable and ca
 
     -   Accounts receivable inventory act (business accounting)
 
--   Tax registers for calculating the bad debts reserve in accounts
-    receivable:
+-   Tax registers for calculating the bad debts reserve in accounts receivable:
 
     -   Accounts receivable - bad debts reserve
 
@@ -143,7 +142,7 @@ Note: For the **RAP** model, the ledger account from the customer posting profil
 Alternatively, if you selected **Total** in the **Accounting policy** field, you complete the setup on the **General** FastTab instead of the **Customer posting** and **Vendor posting** FastTabs. Set the **Unrealized losses account**, **Unrealized income account**, **Bad debts reservation account**, **Expense code**, **Income code**, and
 **Summary account** fields as described in the preceding substeps.
 
-1.  On the **Debt interval** FastTab, set up the percentage that is used to calculate the bad debts reserve, depending on the number of overdue days:
+7.  On the **Debt interval** FastTab, set up the percentage that is used to calculate the bad debts reserve, depending on the number of overdue days:
 
     -   In the **Period debt type** field, specify **Hopeless**, and then select **Add** to create a bad debts interval.
 
@@ -157,7 +156,7 @@ The following illustration shows an example of the setup for a debt interval. Fo
 
 ![Debt interval setup for a model on the Debts calculation models page](media/rus-bad-debts-2.png)
 
-1.  Repeat steps 2 through 7 to create the second model.
+8.  Repeat steps 2 through 7 to create the second model.
 
 ### Set up the models for tax and business accounting
 
@@ -173,24 +172,24 @@ The following illustration shows an example of the setup for a debt interval. Fo
 
 Depending on the settings of your debts calculation models, create and calculate the registers in each group of registers, as described in Profit tax registers journal.
 
-| **Register type** |
-|-------------------------|
+| **Register type** | **Comment** |
+|-------------------------|-------------------------|
 | **Tax registers for the inventory of accounts receivable** |
-| Accounts receivable inventory act |
-| Accounts receivable inventory act (business accounting) |
+| Accounts receivable inventory act | For the **TAX** model |
+| Accounts receivable inventory act (business accounting) | For the **RAP** model |
 | **Tax registers for calculating the bad debts reserve in accounts receivable** |
-| Accounts receivable - bad debts reserve |
-| Accounts receivable - reserve (business accounting) |
-| Accounts receivable - reserve details |
-| Accounts receivable - reserve details (business accounting) |
+| Accounts receivable - bad debts reserve | For the **TAX** model when the **Accounting policy** field is set to **Total** |
+| Accounts receivable - reserve (business accounting) | For the **RAP** model when the **Accounting policy** field is set to **Total** |
+| Accounts receivable - reserve details | For the **TAX ** model when the **Accounting policy** field is set to **Accounting object** |
+| Accounts receivable - reserve details (business accounting) | For the **RAP** model when the **Accounting policy** field is set to **Accounting object** |
 | **Tax registers for collecting information about the movement of the bad debts reserve in accounts receivable** |
-| Accounts receivable - bad debt reserve movement |
-| Accounts receivable - reserve movement (business accounting) |
-| Accounts receivable - reserve movement details |
-| Accounts receivable - reserve movement details (business accounting) |
+| Accounts receivable - bad debt reserve movement | For the **TAX** model when the **Accounting policy** field is set to **Total** |
+| Accounts receivable - reserve movement (business accounting) | For the **RAP** model when the **Accounting policy** field is set to **Total** |
+| Accounts receivable - reserve movement details | For the **TAX ** model when the **Accounting policy** field is set to **Accounting object** |
+| Accounts receivable - reserve movement details (business accounting) | For the **RAP** model when the **Accounting policy** field is set to **Accounting object** |
 | **Tax registers for collecting information about the movement of accounts receivable** |
-| Accounts receivable movement |
-| Accounts receivable movement (business accounting) |
+| Accounts receivable movement | For the **TAX** model |
+| Accounts receivable movement (business accounting) | For the **RAP** model |
 
 
 ### Set up a limit for the bad debts reserve in tax accounting
@@ -209,27 +208,27 @@ Depending on the settings of your debts calculation models, create and calculate
 
 ![Creating a rate on the Rates page](media/rus-bad-debts-4.png)
 
-1.  Go to **Tax &gt; Setup &gt; Profit tax &gt; Debts calculation models**.
+7.  Go to **Tax &gt; Setup &gt; Profit tax &gt; Debts calculation models**.
 
-2.  On the Action Pane, select **Sequence of calculation** to create a reserve limit sequence for revenue.
+8.  On the Action Pane, select **Sequence of calculation** to create a reserve limit sequence for revenue.
 
-3.  In the **Channel reference** field, specify the register code for the tax model.
+9.  In the **Channel reference** field, specify the register code for the tax model.
 
-4.  On the Action Pane, select **Counters**.
+10.  On the Action Pane, select **Counters**.
 
-5.  Select **New** to create a counter.
+11.  Select **New** to create a counter.
 
-6.  In the **Description** field, enter a description of the counter.
+12.  In the **Description** field, enter a description of the counter.
 
-7.  In the **Expense code** field, select the expense code of the revenue.
+13.  In the **Expense code** field, select the expense code of the revenue.
 
-8.  On the **Lines** FastTab, create settings for calculating the revenue and reserve limit.
+14.  On the **Lines** FastTab, create settings for calculating the revenue and reserve limit.
 
-    ![Creating a counter on the Counter setup page](media/rus-bad-debts-5.png)
+   ![Creating a counter on the Counter setup page](media/rus-bad-debts-5.png
 
 For more information about how to set up sequences of calculation, see [Sequence of calculations](https://docs.microsoft.com/dynamics365/finance/localizations/rus-set-up-deferrals#sequence-of-calculation).
 
-1.  Go to the debts calculation models that you created earlier, and in the **Reserve limit** section, in the **Reserve limit sequence** field, enter the sequence for each model.
+15.  Go to the debts calculation models that you created earlier, and in the **Reserve limit** section, in the **Reserve limit sequence** field, enter the sequence for each model.
 
 ### Set up a number sequence for the write-off of hopeless debts
 
@@ -347,11 +346,11 @@ On each register line, you can review the information in the following columns:
 
 The journal is created. Its lines show the vouchers for calculating amounts of the reserves for the current period. The amounts of the reserves are calculated in the group of **Accounts receivable - reserves** registers.
 
-1.  On the Action Pane, select **Lines** to view the vouchers and other details.
+5.  On the Action Pane, select **Lines** to view the vouchers and other details.
 
 ![Journal voucher page](media/rus-bad-debts-8.png)
 
-1.  On the Action Pane, select **Post &gt; Post** to post the journal.
+6.  On the Action Pane, select **Post &gt; Post** to post the journal.
 
 #### Create a reversing entry ledger journal for accounts receivable bad debts reserves
 
@@ -365,9 +364,9 @@ The journal is created. Its lines show the vouchers for calculating amounts of t
 
 The journal is created. Its lines show the vouchers for calculating amounts of the reserves for the current period. The amounts of the reserves are calculated in the group of **Accounts receivable - reserves** registers.
 
-1.  On the Action Pane, select **Lines** to view the vouchers and other details.
+5.  On the Action Pane, select **Lines** to view the vouchers and other details.
 
-2.  On the Action Pane, select **Post &gt; Post** to post the journal.
+6.  On the Action Pane, select **Post &gt; Post** to post the journal.
 
 ![Creating a reverse journal on the Accounts receivable   bad debts reserve page](media/rus-bad-debts-9.png)
 
@@ -483,15 +482,15 @@ The page shows hopeless debts as of the selected reporting date:
 
 -   The **Reserve** field shows the amount of the formed bad debts reserve at the beginning of the current period that can be used to write off hopeless debt.
 
-1.  To review the original transactions for customers or vendors, select **Transactions**.
+5.  To review the original transactions for customers or vendors, select **Transactions**.
 
-2.  To add other customer or vendor transactions to the list, on the Action Pane, select **Select customer debts** or **Select vendor debts**.
+6.  To add other customer or vendor transactions to the list, on the Action Pane, select **Select customer debts** or **Select vendor debts**.
 
-3.  Mark the debts that must be written off. The **Total** field in the **Marked** section at the bottom of the page shows the total amount of the marked lines.
+7.  Mark the debts that must be written off. The **Total** field in the **Marked** section at the bottom of the page shows the total amount of the marked lines.
 
     ![Marking transactions for write off](media/rus-bad-debts-12.png)
 
-4.  On the Action Pane, select **Update**. The marked transactions disappear. Additionally, in the **Written off** section at the bottom of the page, the amounts increase to the value that the **Total** field in the **Marked** section had before you selected **Update**. Transactions for customers and vendors, and transactions in the general ledger to write off each debt, are created. The date of the write-off operations corresponds to the date that you selected in the **Calculation date** field.
+8.  On the Action Pane, select **Update**. The marked transactions disappear. Additionally, in the **Written off** section at the bottom of the page, the amounts increase to the value that the **Total** field in the **Marked** section had before you selected **Update**. Transactions for customers and vendors, and transactions in the general ledger to write off each debt, are created. The date of the write-off operations corresponds to the date that you selected in the **Calculation date** field.
 
 ![Result of the update after transactions are marked for write off](media/rus-bad-debts-13.png)
 
@@ -521,10 +520,10 @@ The page shows written-off debts as of the selected reporting date:
 
 -   The **Written off** field shows the amount of the written-off bad debts from the reserve for accounts receivable or to the revenues/expenses account.
 
-1.  To review the original transactions for customers or vendors, select **Transactions**.
+4.  To review the original transactions for customers or vendors, select **Transactions**.
 
-2.  Mark the written-off debts that must be canceled. The **Total** field in the **Marked** section at the bottom of the page shows the total amount of the marked lines.
+5.  Mark the written-off debts that must be canceled. The **Total** field in the **Marked** section at the bottom of the page shows the total amount of the marked lines.
 
 ![Canceling the write off of debts](media/rus-bad-debts-14.png)
 
-1.  On the Action Pane, select **Update**. The marked transactions disappear. In the **Written off** section at the bottom of the page, the amounts decrease to the value that the **Total** field in the **Marked** section had before you selected **Update**. Transactions that cancel the write-off of accounts receivable are then generated.
+6.  On the Action Pane, select **Update**. The marked transactions disappear. In the **Written off** section at the bottom of the page, the amounts decrease to the value that the **Total** field in the **Marked** section had before you selected **Update**. Transactions that cancel the write-off of accounts receivable are then generated.
