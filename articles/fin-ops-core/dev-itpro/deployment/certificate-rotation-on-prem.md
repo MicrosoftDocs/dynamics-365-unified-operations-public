@@ -4,7 +4,7 @@
 title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
-ms.date: 03/11/2021
+ms.date: 06/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -36,7 +36,6 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 > 
 > Old certificates must remain in place until the certificate rotation process is complete, removing them in advance will cause the rotation process to fail.
 
-> [!CAUTION]
 > The certificate rotation process should not be carried out on Service Fabric clusters running 7.0.x and 7.1.x. 
 >
 > Upgrade your Service Fabric cluster to 7.2.x or later before attempting certificate rotation.
@@ -115,7 +114,20 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 ### <a name="sfcertrotationnotexpired"></a>Service Fabric with certificates that aren't expired
 
-1. Open the **Clusterconfig.json** file for editing, and find the following section. If a secondary thumbprint is defined, go to [Clean up old Service Fabric certificates](#cleanupoldsfcerts) before you go any further.
+1. Locate the **Clusterconfig.json** file for editing. If you cannot find this file, follow steps 2 and 3, otherwise continue to step 4.
+2. Run the following command to connect to the Service Fabric Cluster.
+
+    ```powershell
+    #Connect to the Service Fabric Cluster from a node within the cluster
+    Connect-ServiceFabricCluster 
+    ```
+
+3. Run the following command to save the configuration file to C:\\Temp\\ClusterConfig.json. (Make sure that the C:\\Temp path exists.)
+
+    ```powershell
+    Get-ServiceFabricClusterConfiguration >C:\Temp\ClusterConfig.json
+    ```	
+4. Open the **Clusterconfig.json** file for editing and find the following section. If a secondary thumbprint is defined, go to [Clean up old Service Fabric certificates](#cleanupoldsfcerts) before you continue.
 
     ```json
     "security": {
@@ -142,7 +154,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
                 },
     ```
 
-2. Replace that section in the file with following section.
+5. Replace that section in the file with the following code.
 
     ```json
     "security":  {
@@ -175,9 +187,9 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
                 },
     ```
 
-3. Edit the new and old thumbprint values. 
+6. Edit the new and old thumbprint values. 
 
-4. Change clusterConfigurationVersion to the new version, for example 2.0.0.
+7. Change clusterConfigurationVersion to the new version, for example 2.0.0.
 
     ```json
     {
@@ -186,12 +198,12 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     "apiVersion": "10-2017",
     ```
     
-5. Save the new ClusterConfig.json file.
+8. Save the new ClusterConfig.json file.
 
-6. Run the following PowerShell command.
+9. Run the following PowerShell command.
 
     ```powershell
-    # Connect to the Service Fabric cluster
+    # Connect to the Service Fabric Cluster
     Connect-ServiceFabricCluster
 
     # Get path of ClusterConfig.json for following command
