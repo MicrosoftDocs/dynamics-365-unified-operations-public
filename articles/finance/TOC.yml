@@ -1216,7 +1216,7 @@
         items:
         - name: Configure Finance insights for public preview
           href: finance-insights/configure-for-fin-insites-PubPrvw.md
-        - name: Configure Finance insights
+        - name: Configure Finance insights for private preview
           href: finance-insights/configure-for-fin-insites.md
         - name: Enable Customer payment predictions
           href: finance-insights/enable-cust-paymnt-prediction.md

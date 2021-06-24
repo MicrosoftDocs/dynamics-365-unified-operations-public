@@ -26,7 +26,7 @@ ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Configuration for Finance insights (preview)
+# Configuration for Finance insights for private preview (preview) - upto version 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
@@ -796,6 +796,8 @@ The add-in will be installed within a few minutes.
     | CDS Organization URL                                     | The Dataverse organization URL copied from above. |
     | CDS Org ID                                               | The Dataverse organization ID copied from above. |
 5. Enable **Is this the default environment for you Tenant**.
+
+The add-in might take serveral minutes to install.
     
 ## Configure the entity store
 
