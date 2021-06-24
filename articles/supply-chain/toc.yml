@@ -1615,6 +1615,8 @@
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Safety margins
           href: master-planning/planning-optimization/safety-margins.md
+        - name: Delay tolerance (negative days)
+          href: master-planning/planning-optimization/delay-tolerance.md
         - name: Purchase requisitions
           href: master-planning/planning-optimization/purchase-requisitions.md
         - name: Production planning
