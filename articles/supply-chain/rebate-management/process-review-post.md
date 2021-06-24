@@ -322,22 +322,20 @@ To review journals using the rebate workbench, follow these steps.
 1. Find and select the line that you want to inspect. Then, on the Action Pane, open the **Rebate workbench** tab, and in the **View** group, select **Target transactions** (this button is only available when relevant postings exist for the selected line).
 1. A list of relevant journals, documents, or items appears. To view more information about any journal, document, or item, select its row, and then, on the Action Pane, select **View details**.
 
-## Deduction workbench <!--KFM: Need a more descriptive heading --> 
+## Rebate management transactions on the deduction workbench
 
-When you post a Rebate management step <!--KFM: step? --> with one of the following **Payment type** settings, the system creates a customer deduction journal or a free text invoice for the relevant customer account.
+When you post a Rebate management transaction with one of the following **Payment type** settings, the system creates a customer deduction journal or a free text invoice for the relevant customer account:
 
 - *Customer deductions*
 - *Tax invoice customer deductions*
 - *Trade spending*
 - *Reporting*
 
-Once the created target transaction has been posted, it is available as an **Open transaction** on the **Deduction workbench** page (**Sales and marketing > Trade allowances > Deductions > Deduction workbench**).
+Once a created target transaction has been posted, it will be available as an **Open transaction** on the **Deduction workbench** page (**Sales and marketing > Trade allowances > Deductions > Deduction workbench**). Open transactions will have a **Claim type** of *Rebate management* and the **Rebate transaction number** will be available for traceability. The date will be populated with the posting date of the rebate management target transaction. You can use the deduction workbench to settle open transactions to existing deductions for the same customer account by selecting **Maintain > Match** from the Action Pane.
 
-The open transaction will have a **Claim type** of *Rebate management* and the **Rebate transaction number** will be available for traceability. The date will be populated with the posting date of the rebate management target transaction. You can use the **Deduction workbench** to settle the open transaction to an existing deduction for the same customer account by selecting **Maintain > Match** from the Action Pane. <!--KFM: The last sentence isn't clear -->
+<!--KFM: Add a link to the deduction workbench topics -->
 
-<!--KFM: Add a link to the deduction workbench (not sure what that should be...) -->
-
-## Purge
+## Purge unposted transactions
 
 After you've processed provision, rebate, or write off transactions, follow these steps to purge selected unposted transactions.
 
@@ -346,9 +344,9 @@ After you've processed provision, rebate, or write off transactions, follow thes
 3. Find and select the transactions to be deleted. Then, on the Action Pane, open the **Rebate workbench** tab and, in the **Processing** group, select **Purge**.
 4. Select **OK** to delete the unposted transactions.
 
-## Cancel provision
+## Cancel a posted provision
 
-After you've processed and posted a provision, follow these steps to cancel the selected posted provision transactions.
+After you've processed and posted a provision, follow these steps to cancel the selected posted provision transactions:
 
 1. Go to **Rebate management \> Rebate management deals \> Rebate workbench**
 2. Set the **Show** field to *Posted*.
