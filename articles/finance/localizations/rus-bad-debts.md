@@ -135,7 +135,8 @@ Debts can be calculated for profit tax accounting purposes and business accounti
 
     9).  For the **TAX** model only: In the **Summary account** field, select the ledger account to use to offset the account that you selected in the **Bad debts reservation account** field to write off bad debt transactions. For example, select account **Н62 off-balance sheet account for account receivable**.
 
-Note: For the **RAP** model, the ledger account from the customer posting profile is used for this purpose.
+    > [!NOTE]
+    > For the **RAP** model, the ledger account from the customer posting profile is used for this purpose.
 
 ![Creating models on the Debts calculation models page](media/rus-bad-debts-1.png)
 
@@ -494,8 +495,8 @@ The page shows hopeless debts as of the selected reporting date:
 8.  On the Action Pane, select **Update**. The marked transactions disappear. Additionally, in the **Written off** section at the bottom of the page, the amounts increase to the value that the **Total** field in the **Marked** section had before you selected **Update**. Transactions for customers and vendors, and transactions in the general ledger to write off each debt, are created. The date of the write-off operations corresponds to the date that you selected in the **Calculation date** field.
 
 ![Result of the update after transactions are marked for write off](media/rus-bad-debts-13.png)
-
-Note: The total amount of write-off transactions from the bad debts reserve is the lesser of the amount of the bad debt lines that you marked and the amount of the bad debts reserve that was created at the end of the previous period.
+> [!NOTE]
+> The total amount of write-off transactions from the bad debts reserve is the lesser of the amount of the bad debt lines that you marked and the amount of the bad debts reserve that was created at the end of the previous period.
 
 If the amount of hopeless debt that must be written off exceeds the amount of the bad debts reserve, additional transactions are generated for the remaining amount, to write the debt off to ledger account **91 non-operating expenses**.
 
