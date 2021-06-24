@@ -5,7 +5,7 @@
 title: Configure expenditure reviewers
 description: This topic describes how to use expenditure reviewers to dynamically select the user to assign a workflow task, approval, or manual decision to.
 author: rachel-profitt
-ms.date: 06/24/2021
+ms.date: 06/25/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: sericks
