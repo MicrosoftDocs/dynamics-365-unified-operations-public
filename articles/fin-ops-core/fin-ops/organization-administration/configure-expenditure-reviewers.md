@@ -3,7 +3,7 @@
 
 
 title: Configure expenditure reviewers
-description: This topic describes how to use expenditure reviewers to dynamically select the user to assign a workflow task or approval element to.
+description: This topic describes how to use expenditure reviewers to dynamically select the user to assign a workflow task, approval, or manual decision to.
 author: rachel-profitt
 ms.date: 06/24/2021
 ms.topic: article
@@ -20,26 +20,27 @@ ms.search.validFrom: 2021-06-24
 
 You can set up dynamic expenditure reviewers to route expenditures for review based on the user who is assigned to a project role or the financial dimension where the expenditure is being charged. The workflow process uses the specified project role or financial dimension owner to determine whom to route the expenditure to.
 
-You can define one or more expenditure reviewer configurations, and then select a configuration when you create a workflow. You can configure the expenditure reviewer values for each legal entity in your organization. After you define the expenditure reviewer configurations, you assign the configuration to your workflow task on the **Assignment** tab of the properties. 
+You can define one or more expenditure reviewer configurations, and then select a configuration when you create a workflow. You can configure the expenditure reviewer values for each legal entity in your organization. After you define the expenditure reviewer configurations, you assign the configuration. Expenditure reviewers can be assigend to workflow tasks, approvals, and manual decisions. 
 
 > [!NOTE]
-> <P>Expenditure reviewers are not mandatory but can be used to simplify the configuration of your workflow. For example, instead of creating one conditional decision to check for each Cost center dimension, and then creating another element to assign the approval or task to a specific user or groups of users, you can configure the Owner of the Cost center to dimension and use an expenditure reviewer to dynamically select the correct user. In this way when ownership or assignment of cost centers change, you only need to update the Owner field on the financial dimension. </P>
+> Expenditure reviewers are not mandatory, but can be used to simplify the configuration of your workflow. For example, instead of creating one conditional decision to check for each cost center dimension, and then creating another element to assign the approval or task to a specific user or groups of users, you can configure the owner of the cost center dimension and use an expenditure reviewer to dynamically select the correct user. In this way, when ownership or assignment of cost centers change, you only need to update the **Owner** field on the financial dimension.
 
 ## Types of expenditure reviewers
-Not all workflows support the concept of an expenditure reviewer. Out of the box, you can configure an expenditure reviewer for purchase requisitions, purchase orders, vendor invoices, and expense reports. Each of these types requires that you configure the expenditure reviewer in a separate page specific to that feature and module. Expenditure reviewers can be used with header or line-level workflows for each of the supported documents. The following table shows the menu path for each expenditure reviewer.
+Not all workflows support the concept of an expenditure reviewer. By default, you can configure an expenditure reviewer for purchase requisitions, purchase orders, vendor invoices, and expense reports. Each of these workflow types requires that you configure the expenditure reviewer in a separate page specific to that feature and module. Expenditure reviewers can be used with header or line-level workflows for each of the supported documents. The following table shows the menu path for each expenditure reviewer.
 
 | Document | Menu path for the expenditure reviewer configuration |
+|----------|------------------------------------------------------|
 | Expense reports | **Expense management > Setup > Policies > Expenditure reviewers** |
 | Purchase orders | **Procurement and sourcing > Setup > Policies > Purchase order expenditure reviewers** |
 | Purchase requisitions | **Procurement and sourcing > Setup > Policies > Purchase requisition expenditure reviewers** |
 | Vendor invoices | **Accounts payable > Policy setup > Vendor invoice expenditure reviewers** |
 
 ## Expenditure reviewer assignments
-There are two types of assignments available with each expenditure reviewer, Project distributions and Organization distributions. For a project distribution, you can select between Project authorities and financial dimensions. For Organization distributions, you can select financial dimensions. 
+There are two types of assignments available with each expenditure reviewer, **project distributions** and **organization distributions**. For a project distribution, you can select between project authorities and financial dimensions. For organization distributions, you can select financial dimensions. 
 
-Project authorities include the Project manager, Project controller, and Project sales manager. These are defined by selecting a worker in the respective fields directly on your project. 
+Project authorities include the project manager, project controller, and project sales manager. These are defined by selecting a worker in the respective fields directly on your project. 
 
-Financial dimensions are controlled by the Account structures in each legal entity. For each legal entity you can select which financial dimensions will be used with the expenditure reviewer. The dimensions can come from either the project by select the dimensions on the **Project distributions** tab or the document by selecting the dimensions on the **Organization distributions** tab. you can select the worker for each financial dimension directly on the **Financial dimensions values** page in the **Owner** field.
+Financial dimensions are controlled by the account structures in each legal entity. For each legal entity, you can select which financial dimensions will be used with the expenditure reviewer. The dimensions can come from either the project by selecting the dimensions on the **Project distributions** tab, or the document by selecting the dimensions on the **Organization distributions** tab. You can select the worker for each financial dimension in the **Owner** field on the **Financial dimensions values** page.
 
 ## Example of an organization distributions expenditure reviewers
 You work for Contoso Appliances and your organization has six departments and 10 cost centers. When a new purchase requisition is submitted, approval must come first from the department manager and then from the cost center manager. In this example, you would configure two *Purchase requisition expenditure reviewers**. 
