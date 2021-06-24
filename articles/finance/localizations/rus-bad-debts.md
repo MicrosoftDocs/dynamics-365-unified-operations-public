@@ -196,7 +196,7 @@ Depending on the settings of your debts calculation models, create and calculate
 
    ![Creating a counter on the Counter setup page](media/rus-bad-debts-5.png)
 
-   For more information about how to set up sequences of calculation, see [Sequence of calculations](rus-set-up-deferrals#sequence-of-calculation.md).
+   For more information about how to set up sequences of calculation, see [Sequence of calculations](rus-set-up-deferrals.md#sequence-of-calculation).
 
 15. Go to the debts calculation models that you created earlier, and in the **Reserve limit** section, in the **Reserve limit sequence** field, enter the sequence for each model.
 
