@@ -4,7 +4,7 @@
 title: Budget control overview
 description: This topic introduces the budget control feature and provides information to help you configure budget control to optimize management of your organization's financial resources.
 author: panolte
-ms.date: 04/29/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,7 +47,7 @@ The following chart shows the place of budget control in the stages of a typical
 
 You can configure budget control according to several factors:
 
--   **Financial dimensions** – What financial dimensions must be used to report budget and actuals, and what financial dimensions are required in order to control budget? Are there specific dimension combinations or main accounts that require particular attention? For example, is there a requirement to track budget to actuals by cost center and program? Do travel expenses require special attention?
+-   **Financial dimensions** – What financial dimensions must be used to report budget and actuals, and what financial dimensions are required in order to control budgets? Are there specific dimension combinations or main accounts that require particular attention? For example, is there a requirement to track budget to actuals by cost center and program? Do travel expenses require special attention?
 -   **Time** – What time frame (fiscal period, fiscal period to date, and so on) will be used to evaluate available budget funds?
 -   **Source documents** – What source documents must be evaluated for budget control? Should the documents be evaluated per line or per document?
 -   **Funds available calculation** – Should documents such as purchase requisitions (pre-encumbrances) and purchase orders (encumbrances) be considered in the calculation of available funds? Should documents that are in a draft state be considered in the calculation?
@@ -56,19 +56,20 @@ You can configure budget control according to several factors:
 Budget control is fully integrated with the application. Therefore, you can evaluate the available budget for both planned purchases and actual purchases. Budget inquiries and reports are available. Therefore, users can evaluate the budget throughout the budget cycle, and can make any adjustments that are required, in the form of budget revisions or transfers. A budget manager can also export the budget and actuals into Microsoft Excel to better analyze and forecast as required.
 
 ## Configuring budget control
+
 ### Budget cycle time span
 
 After basic budgeting is configured, you can define the time, or the starting and ending periods, for budgeting and budget control on the **Budget cycle time span** page. Budget cycles often correspond to fiscal calendars but can span fiscal years.
 
-The next steps in the configuration are completed on the various tabs on the **Budget control configuration** page.
+The next steps in the configuration are completed on tabs that are opened from the **Budget control configuration** page.
 
 ### Define parameters
 
 Based on the financial dimensions that are enabled for the budget, you can use all the financial dimensions for budget control or a subset of them. 
 
-Additionally, you can specify the default time interval (for example, **Fiscal year**, **Fiscal year to date**, **Fiscal period**, or **Quarterly**) that budget control will be performed for in the related budget cycle time span. You can also specify a default budget manager and the threshold that is used to notify users when the threshold has been reached. The values in these fields will be used as default values in any new budget control rule or budget group that is created. However, the default values can be changed for individual groups or rules. 
+Additionally, you can specify the default time interval (for example, **Fiscal year**, **Fiscal year to date**, **Fiscal period**, or **Quarterly**) that budget control will be performed during the span of the related budget. You can also specify a default budget manager and the threshold that's used to notify users when the threshold has been reached. The values in these fields will be used as default values in any new budget control rule or budget group that is created. However, the default values can be changed for individual groups or rules. 
 
-The ways that budgets are created and recorded in the budget register help determine the time span that is selected when available budget funds are evaluated. If an annualized amount for a dimension value combination is developed and used, a fiscal-year or fiscal-year-to-date approach might make sense. However, if an organization that creates budgets by fiscal period or allocates to fiscal periods wants more detailed control, it might want to consider fiscal-period-to-date or quarterly time spans. 
+The ways that budgets are created and recorded in the budget register helps determine the time span that is selected when available budget funds are evaluated. If an annualized amount for a dimension value combination is developed and used, a fiscal-year or fiscal-year-to-date approach might make sense. However, if an organization that creates budgets by fiscal period or allocates to fiscal periods wants more detailed control, it might want to consider fiscal-period-to-date or quarterly time spans. 
 
 In addition, an organization’s culture, as it's related to budgeting and budgetary control, also helps define the configuration.
 
