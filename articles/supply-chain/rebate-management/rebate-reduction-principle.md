@@ -49,7 +49,7 @@ To work with rebate reduction principles, go to **Rebate management \> Setup \> 
 
 The following table shows some typical examples of rebate reduction principle setups. For each of these rebate reduction principles, the value of the **Description** field describes the purpose of the rebate reduction principle.
 
-| rebate reduction principle | Description | Apply reduction | Reduction basis | Exclude from reduction |
+| Rebate reduction principle | Description | Apply reduction | Reduction basis | Exclude from reduction |
 |---|---|---|---|---|
 | Deferred | Reduce rebate | Yes | Both | No |
 | Exclreb | Exclude rebate | Yes | Rebate | Yes |

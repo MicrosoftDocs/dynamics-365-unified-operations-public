@@ -16,6 +16,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
+ms.search.scope: 
 # ms.tgt_pltfrm: 
 ms.custom: 260624
 ms.assetid: 
@@ -31,7 +32,6 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-
 Dynamics 365 Commerce—built on the proven Dynamics 365 Retail capabilities—delivers a comprehensive omnichannel solution that unifies back-office, in-store, call center, and digital experiences. Dynamics 365 Commerce enables you to build brand loyalty through personalized customer engagements, increase revenue with improved employee productivity, optimize operations to reduce costs and drive supply chain efficiencies, ultimately delivering better business outcomes.
 
 This release enables the creation of digital experiences using built-in web authoring and development tools to produce engaging and intelligent digital storefronts. A connected marketing and headless commerce platform further enable the seamless management of content, assets, promotions, inventory, and pricing across all channels.
@@ -42,15 +42,16 @@ This release enables the creation of digital experiences using built-in web auth
 
 - **Flexible and intelligent omnichannel experience:** Unify physical and digital commerce by providing consistent experiences to customers across cloud search and discovery, product reviews, wish lists, inventory, gift cards, and loyalty. Allow customers to purchase when, how, and where they want, on any device—while providing choice around modern payment methods and product collection or delivery.
 
-- **Streamline operations using AI in the cloud:** Drive omnichannel commerce experiences and integrated, optimized back-office operations through ingrained, pervasive, and context-aware cloud intelligence. Use advanced merchandising, inventory management, distributed order management, and pricing and promotion to innovate and stay ahead of competition. Derive insights by visualizing and analyzing comprehensive and consistent data across all aspects of your business. Use AI-driven technologies to provide accessible websites, protect your business against payment fraud, and efficiently moderate user-generated content like ratings and reviews. 
+- **Streamline operations using AI in the cloud:** Drive omnichannel commerce experiences and integrated, optimized back-office operations through ingrained, pervasive, and context-aware cloud intelligence. Use advanced merchandising, inventory management, distributed order management, and pricing and promotion to innovate and stay ahead of competition. Derive insights by visualizing and analyzing comprehensive and consistent data across all aspects of your business. Use AI-driven technologies to provide accessible websites, protect your business against payment fraud, and efficiently moderate user-generated content like ratings and reviews.
 
 ## Core concepts and tasks
 
 Select a feature area to learn more about it.
+
 - [Configure a Commerce preview environment](provisioning-guide.md)
 - [Commerce architecture](./commerce-architecture.md)
 - [Set up your channels](channels-overview.md)
-- [Merchandising your products and services](set-up-retail-products.md)
+- [Merchandizing your products and services](set-up-retail-products.md)
 - [Manage your orders](Order-fulfillment-overview.md)
 - [Manage your customers](set-up-customer-loyalty-program.md)
 - [Manage your financials](retail-statements.md)
@@ -58,5 +59,6 @@ Select a feature area to learn more about it.
 - [Fraud protection](dev-itpro/DFP.md)
 - [Commerce development and extensibility](dev-itpro/dev-retail-home-page.md)
 
+## eLearning courses
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+For online courses and training, check out [Dynamics 365 Commerce on Microsoft Learn](https://docs.microsoft.com/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path).

@@ -43,7 +43,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Full dataset generation interval is deprecated
 
-|   |  |
+|  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Beginning in this release, in the **Commerce scheduler parameters** form in Dynamics 365 headquarters, the **Full dataset generation interval in days** field will be deprecated. Also starting in this release, the field will be visually removed so that the value cannot be edited. This will stay as the value **0**. |
 | **Replaced by another feature?**   | No |
@@ -55,7 +55,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Internet Explorer 11 support for Dynamics 365 is deprecated
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won’t be supported after August 2021.<br><br>This will impact customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
 | **Replaced by another feature?**   | We recommend that customers transition to Microsoft Edge.|
@@ -65,7 +65,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Commerce 10.0.11 release
 ### Data action hooks
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The data action hooks feature has been deprecated due to performance issues. |
 | **Replaced by another feature?**   | We recommend using [data action overrides](../e-commerce-extensibility/data-action-overrides.md) to modify business logic in the data action layer.|
@@ -74,7 +74,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Status**                         | Deprecated: As of release 10.0.11 |
 
 ### Retail SDK support for Visual Studio 2015, msbuild 14.0, and Retail SDK\Reference libraries and tools
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Retail SDK support for Visual Studio 2015 has been deprecated and updated to support VS 2017, msbuild 15.0 and all the reference libraries and commerce proxy generator tools in the RetailSDK\References folder moved to NuGet packages to simplify the extension model and SDK upgrade process.|
 | **Replaced by another feature?**   | We recommend that you follow the information in [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk.md) to update your system. |
@@ -83,7 +83,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Status**                         | Deprecated: As of release 10.0.11 |
 
 ### Retail Server Extension using IEdmModelExtender and CommerceController
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Retail server extension using IEdmModelExtender and CommerceController has been deprecated to provide simplified extension model. The new implementation will have only the controller class without any additional IEdmModelExtender class implementation. This also avoids the dependency with a particular OData version (if the OData version is updated it may break extensions.) |
 | **Replaced by another feature?**   |  We recommend that you use the IController class extension model by importing the NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) package. |
@@ -92,7 +92,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Status**                         | Deprecated: As of release 10.0.11 |
 
 ### Hardware station Extension using IHardwareStationController
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Hardware station extension using IHardwareStationController has been deprecated to provide simplified extension model. The new implementation will have only the IController class without any additional class implementation and to avoid the dependency with core hardware station libraries, previously extension need to refer multiple libraries.) |
 | **Replaced by another feature?**   | It is recommended to use the IController class extension model by importing the NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) package. |
@@ -102,7 +102,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Commerce 10.0.10 release
 ### POS operation 803 - Picking and receiving
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Picking and receiving operations is being deprecated due to new operation redesign. |
 | **Replaced by another feature?**   | Yes. It is replaced by two new POS operations: inbound operation (804) and outbound operation (805).|
@@ -113,7 +113,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Commerce 10.0.7 release
 ### Commerce GetProductAvailabilities and GetAvailableInventoryNearby API's
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | New optimized APIs have been created to replace the GetProductAvailabilities and GetAvailableInventoryNearby APIs. |
 | **Replaced by another feature?**   | Yes: It is replaced by GetEstimatedAvailabilty and GetEstimatedProductWarehouseAvailability APIs. |

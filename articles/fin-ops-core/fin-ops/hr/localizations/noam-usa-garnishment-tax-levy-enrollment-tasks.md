@@ -247,7 +247,7 @@ Any garnishment that has a different value in one of these fields isn't included
 
 A worker has the following three child support orders. Because the calculation priority, garnishment type, and multiple garnishment method of all three child support orders match, the three garnishments are processed together.
 
-|                                 | ChldSup01     | ChldSup02     | ChldSup03     |
+|  &nbsp;                         | ChldSup01     | ChldSup02     | ChldSup03     |
 |---------------------------------|---------------|---------------|---------------|
 | **Calculation priority**        | 20            | 20            | 20            |
 | **Basis**                       | Fixed amount  | Fixed amount  | Fixed amount  |

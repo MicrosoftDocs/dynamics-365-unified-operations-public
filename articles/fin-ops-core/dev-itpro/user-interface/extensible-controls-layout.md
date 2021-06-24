@@ -95,8 +95,7 @@ Used to apply **ArrangeMethod** and **Columns** attributes to containers Options
 <div data-dyn-role="Group" data-dyn-bind="ArrangeMethod: $dyn.layout.ArrangeMethod.vertical, Columns: $dyn.layout.Columns.fill, Height: $dyn.layout.Size.available"></div>
 ```
 
-FAQ
----
+## FAQ
 
 #### Is my control being laid out as expected?
 

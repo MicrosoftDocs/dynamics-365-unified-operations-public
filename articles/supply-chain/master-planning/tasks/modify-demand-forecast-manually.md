@@ -1,5 +1,5 @@
 ---
-title: Modify a demand forecast manually
+title: "Guide: Modify a demand forecast manually"
 description: This topic describes how to modify the forecast for an item
 author: ChristianRytt
 ms.date: 08/12/2019
@@ -13,11 +13,11 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-# Modify a demand forecast manually
+# Guide: Modify a demand forecast manually
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to modify the forecast for an item. The demo data company used to create this procedure is USMF. This procedure is intended for the production planner.
+This procedure shows how to modify the forecast for an item. This procedure is intended for the production planner.
 
 ## Modify the forecast for a selected item
 
@@ -31,9 +31,9 @@ To modify the forecast for a selected item:
 1. Fill out the other fields as needed.
 1. Select **Save** on the Action Pane.
 
-## Modify the forecast for one or more items Microsoft Excel
+## Modify the forecast for one or more items with Microsoft Excel
 
-To modify the forecast for one or more items Microsoft Excel:
+To modify the forecast for one or more items with Microsoft Excel:
 
 1. Do one of the following:
     - Open the **Demand forecast** page for any item (it doesn't matter which one) as described in the previous section.

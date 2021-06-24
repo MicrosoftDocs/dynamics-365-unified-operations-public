@@ -140,7 +140,7 @@ For information about how to create new Retail Server APIs, see [Create a new Re
 
 You can add a `try...catch` statement to your extension code to handle an exception and log it to Application Insights or propagate it to the client application. Don’t return an aggregated exception from CRT or Retail Server if you want to propagate the error message to the client. Instead, catch the exception at the individual task level and rethrow it. For more information, see these topics:
 
-+ [Exception handling (Task Parallel Library)](https://docs.microsoft.com/dotnet/standard/parallel-programming/exception-handling-task-parallel-library).
++ [Exception handling (Task Parallel Library)](/dotnet/standard/parallel-programming/exception-handling-task-parallel-library).
 + [Log extension events to Application Insights](commerce-application-insights.md)
 + [Localize Commerce extension resources and label files](extension-resource-localization.md), for logging and showing CRT exception in the client application.
 
@@ -409,7 +409,9 @@ In some cases, the request and response types are sufficient, but you must chang
 
 Additionally, registration in the **commerceRuntime.ext.Config** file must precede registration of the service that should be overridden. This registration order is important because of the way that the Managed Extensibility Framework (MEF) loads the extension dynamic-link libraries (DLLs). The types that are higher in the file take precedence.
 
-To override any CRT request, follow the pattern in the following example that overrides the out-of-box **CreateOrUpdateCustomerDataRequest** request.
+To override the handler, implement the **SingleAsyncRequestHandler<TRequest>** or **INamedRequestHandlerAsync** if the handler is executed based on the handler name.
+
+### Sample code that shows how to override CreateOrUpdateCustomerDataRequest using the SingleAsyncRequestHandler 
 
 ```csharp
 namespace Contoso
@@ -444,6 +446,49 @@ namespace Contoso
     }
 }
 ```
+
+### Sample code on how to Override the handlers which are implemented based on handler name, implement the INamedRequestHandlerAsync: 
+
+```C#
+    public class SampleGetProductSearchResultshandler : INamedRequestHandlerAsync
+    {
+        /// <summary>
+        /// Gets the supported requests types.
+        /// </summary>
+        public IEnumerable<Type> SupportedRequestTypes
+        {
+            get
+            {
+                return new[] { typeof(GetProductSearchResultsServiceRequest), };
+            }
+        }
+
+        public string HandlerName
+        {
+            get
+            {
+                return "CommerceProductSearch";
+            }
+        }
+
+        public async Task<Response> Execute(Request request)
+        {
+            ThrowIf.Null(request, nameof(request));
+            Type requestType = request.GetType();
+            Response response = null;
+
+            if (requestType == typeof(GetProductSearchResultsServiceRequest))
+            {
+                //Implement the logic here
+            }
+
+            return response;
+        }
+    }
+
+```
+
+
 
 ## Run the base handler in the extension
 

@@ -31,16 +31,16 @@ This topic lists application business events.
 
 ## Procure to pay
 
-| Business event                  | Description                                                                                                                                | Module           |
-|---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|------------------|
+| Business event | Description | Module |
+|----|----|----|
 | Vendor invoice matched          | This event is triggered when invoice matching validation is completed for a vendor invoice as part of the Procure to pay process. | Accounts payable |
 | Vendor invoice posted           | This event business event is triggered when a user posts a vendor invoice as part of the Procure to Pay process. | Accounts payable |
 | Vendor payment posted           | This event is triggered when a user posts a vendor payment as part of the Procure to pay process.                                 | Accounts payable |
 | Invoice register journal posted | This event is triggered when a user posts an invoice register journal as part of the Procure to pay process.                      | Accounts payable |
 | Invoice journal posted          | This event is triggered when a user posts an invoice journal as part of the Procure to pay process.                               | Accounts payable |
-| Invoice approval journal posted | This event is triggered when a user posts an invoice approval journal as part of the Procure to pay process.                      | Accounts payable | 
+| Invoice approval journal posted | This event is triggered when a user posts an invoice approval journal as part of the Procure to pay process.                      | Accounts payable |
 |Purchase order confirmed |This event is triggered when a purchase order is confirmed by a vendor. One of the following actions triggers the event: the user manually confirms a purchase order in the user interface for purchase orders, when the purchase order confirmation is executed in a batch, or when the confirmation is executed programmatically in intercompany scenarios. In scenarios where vendor collaboration is used, and the vendor collaboration policy is set to autoconfirm a purchase order, the trigger occurs when the **Accept** button is clicked on the **Purchase order confirmation**  page in the **Vendor collaboration** portal.|Procurement and sourcing|
-|Purchase order received |This event is triggered when goods or services are registered as received against one or more purchase orders. One of the following actions triggers the event: a product receipt is generated for one or more purchase orders manually in the user interface for purchase orders and product receipts, when product receipts are generated in a batch, or when product receipts are generated programmatically in intercompany scenarios.|Procurement and sourcing||
+|Purchase order received |This event is triggered when goods or services are registered as received against one or more purchase orders. One of the following actions triggers the event: a product receipt is generated for one or more purchase orders manually in the user interface for purchase orders and product receipts, when product receipts are generated in a batch, or when product receipts are generated programmatically in intercompany scenarios.|Procurement and sourcing|
 
 ## Quote to cash
 

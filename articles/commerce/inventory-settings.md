@@ -29,7 +29,6 @@ ms.dyn365.ops.version:
 # Apply inventory settings
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 

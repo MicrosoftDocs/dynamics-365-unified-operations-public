@@ -183,10 +183,10 @@ Create a new feature branch that is based on the Dynamics 365 Commerce release/x
     git checkout -b release/x.x.x
     ```
 
-2. If any changes are made in the release branch, merge them from the release branch back to main branch.
+2. If any changes are made in the release branch, merge them from the release branch back to the main branch.
 
     ```DOS
-    git checkout master git merge release/x.x.x
+    git checkout main git merge release/x.x.x
     ```
 
 ### Create an extension hotfix branch
@@ -198,7 +198,7 @@ As you did for the release branch, create a hotfix branch for extension from the
 After a new version of the SDK samples is released, you must merge it with your new branch. Because the SDK contains only samples, you don't have to get the updated changes from the new SDK release branch.
 
 ```DOS
-git checkout master git merge release/x.x.x
+git checkout main git merge release/x.x.x
 ```
 
 

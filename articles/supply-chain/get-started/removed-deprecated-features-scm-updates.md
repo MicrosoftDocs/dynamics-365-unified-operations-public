@@ -44,7 +44,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Job card device
 
-|   |   |
+| &nbsp;  | &nbsp;  |
 |---|---|
 | **Reason for deprecation/removal** | The [job card device](../production-control/config-job-card-device.md) is being replaced by the new [production floor execution interface](../production-control/production-floor-execution-configure.md). |
 | **Replaced by another feature?**   | Yes, the [job card device](../production-control/config-job-card-device.md) is to be replaced by the new [production floor execution interface](../production-control/production-floor-execution-configure.md). |
@@ -56,7 +56,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Dynamics 365 for Finance and Operations - Warehousing (the warehouse app)
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Effective April 2021, *Dynamics  365 for Finance and Operations - Warehousing* (the warehouse app) is deprecated and won't be supported after April 2022. It is now replaced by the *Warehouse Management mobile app*, which was released with version 10.0.17 of Supply Chain Management. The new app is a complete replacement but uses same underlying framework, which makes migration easy. If needed, the two apps can be used side-by-side to help users gradually adjust as they learn to use the new app.<br><br>For more information about the new Warehouse Management mobile app, see [Warehouse Management mobile application](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) and [Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md). |
 | **Replaced by another feature?**   | Yes, replaced by the new Warehouse Management mobile app. |
@@ -68,7 +68,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Internet Explorer 11 support for Dynamics 365 is deprecated
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won’t be supported after August 2021.<br><br>This will impact customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
 | **Replaced by another feature?**   | We recommend that customers transition to Microsoft Edge.|
@@ -78,7 +78,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Use of built-in Supply Chain Management master planning engine for manufacturing scenarios
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | To enhance performance and minimize the SQL database load during master planning runs, the built-in Supply Chain Management master planning engine is being replaced by Planning Optimization. Planning Optimization allows for fast planning runs that can be performed even during office hours. This enables planners to react immediately to changes in demand or planning parameters. |
 | **Replaced by another feature?**   | Yes, Planning Optimization will replace the existing built-in Supply Chain Management master planning engine. |
@@ -90,7 +90,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Use of built-in Supply Chain Management master planning engine for distribution scenarios
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | To enhance performance and minimize the SQL database load during master planning runs, the built-in Supply Chain Management master planning engine is being replaced by Planning Optimization. Planning Optimization allows for fast planning runs that can be performed even during office hours. This enables planners to react immediately to changes in demand or planning parameters. |
 | **Replaced by another feature?**   | Yes, Planning Optimization will replace the existing built-in Supply Chain Management master planning engine. |

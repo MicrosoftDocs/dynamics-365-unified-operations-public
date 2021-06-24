@@ -131,7 +131,8 @@ This procedure uses the USMF demo company.
 12. Close the page.
 13. Close the page.
 
-## Verify Import letter of credit status
+## Verify Import letter of credit status and printing
+
 1. Go to Cash and bank management > Letters of credit > Import letter of credit and import collection.
 2. In the list, find and select the desired record.
 3. In the list, click the link in the selected row.

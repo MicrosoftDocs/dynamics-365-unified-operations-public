@@ -37,7 +37,7 @@ Use a delivery schedule when the total quantity on an order or quotation line mu
 
 **Example of a delivery schedule**
 
-|                                   |                                          |
+| Item                              | Value                                    |
 |-----------------------------------|------------------------------------------|
 | Total order (original order line) | 600 chairs                               |
 | Requested delivery schedule       | 100 chairs per month                     |
