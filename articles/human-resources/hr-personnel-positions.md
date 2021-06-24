@@ -4,7 +4,6 @@
 title: Setting up positions
 description: This article describes the conceptual elements that a position can include and provides examples of how you can use those elements in your organization. 
 author: andreabichsel
-manager: tfehr
 ms.date: 06/24/2021
 ms.topic: article
 ms.prod: 
