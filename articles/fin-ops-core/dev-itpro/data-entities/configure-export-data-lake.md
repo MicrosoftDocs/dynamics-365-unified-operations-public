@@ -4,7 +4,7 @@
 title: Configure export to Azure Data Lake
 description: This topic provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
-ms.date: 06/09/2021
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,14 +44,14 @@ ms.dyn365.ops.version: Platform Update 33
 > **Use of this feature in production environments isn't supported while it's in preview.** You can't enable this feature in production environments. You can preview it only in your sandbox (Tier-2 or above) environments.
 
 
-## <a name="createServicePrinciple"></a> Create Service Principle for Microsoft Dynamics ERP Microservices
+## <a name="createServicePrincipal"></a> Create Service Principal for Microsoft Dynamics ERP Microservices
 
-The **Export to Azure Data Lake** feature is built using a microservice that exports Finance and Operations app data to Azure Data Lake and keeps the data fresh. Microservice uses the Azure service principle, **Microsoft Dynamics ERP Microservices**, to securely connect to your Azure resources. Before you configure the Export to Data Lake feature, add the  **Microsoft Dynamics ERP Microservices** service principle to your Azure Active Directory (Azure AD). This step enables Azure AD to authenticate the microservice. 
+The **Export to Azure Data Lake** feature is built using a microservice that exports Finance and Operations app data to Azure Data Lake and keeps the data fresh. Microservice uses the Azure service principal, **Microsoft Dynamics ERP Microservices**, to securely connect to your Azure resources. Before you configure the Export to Data Lake feature, add the  **Microsoft Dynamics ERP Microservices** service principal to your Azure Active Directory (Azure AD). This step enables Azure AD to authenticate the microservice. 
 
 > [!NOTE]
 > You will need **Azure Active Directory tenant administrator** rights to perform these steps.
 
-To add the service principle, complete the following steps.
+To add the service principal, complete the following steps.
 1. Launch the Azure portal and go to the Azure Active Directory.
 2. On the left menu, select **Manage** > **Enterprise Applications**, and search for the following applications.
 
@@ -185,7 +185,7 @@ You will notice the secret created in the list of secrets.
 4. In the **Add access policy** dialog box, in the **Select principal** field, locate and select the application, **Microsoft Dynamics ERP Microservices**, and then click **Select**. 
 
 > [!NOTE]
-> If you can't find **Microsoft Dynamics ERP Microservices**, see the [Create Service Principle](#createServicePrinciple) section in this document.
+> If you can't find **Microsoft Dynamics ERP Microservices**, see the [Create Service Principal](#createServicePrincipal) section in this document.
 
 5. In the **Secret permissions** fields, select **Get** and **List**.  
 6. In the **Access policy** dialog, select **Add**.
