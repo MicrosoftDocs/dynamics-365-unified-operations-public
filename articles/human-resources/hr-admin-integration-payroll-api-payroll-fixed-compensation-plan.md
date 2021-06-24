@@ -30,6 +30,10 @@ ms.dyn365.ops.version: Human Resources
 
 This topic provides details and an example query for the Payroll fixed compensation plan entity in Dynamics 365 Human Resources.
 
+### Description
+
+This entity provides the fixed compensation plan assigned for a given position of an employee.
+
 ## Properties
 
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
@@ -45,7 +49,7 @@ This topic provides details and an example query for the Payroll fixed compensat
 | **Currency**<br>mshr_currency<br>*String* | Read-only <br>Required |The currency defined for the fixed compensation plan   |
 | **Personnel number**<br>mshr_personnelnumber<br>*String* | Read-only<br>Required |The employee's unique personnel number.  |
 
-**Query**
+## Example query
 
 **Request**
 

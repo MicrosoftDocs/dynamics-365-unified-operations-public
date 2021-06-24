@@ -42,7 +42,7 @@ This entity provides the payroll residency location and payroll work location fo
 | **Personnel number**</br>mshr_personnelnumber</br>*String* | Read-only</br>Required | The employee's unique personnel number.  |
 | **Country region**</br>mshr_countryregionid</br>*String* | Read-only</br>Required | The country region defined for the address  |
 | **Valid from**</br>mshr_postaladdressvalidfrom</br>*Date Time Offset* | Read-only </br>Required | The date the address is valid from. |
-| **Worked in address** </br> mshr_isworkedinaddressbr </br>*[ms_NoYes option set](hr-admin-integration-payroll-api-no-yes.md)* | Read-only</br>Required | Denotes if the address is where the employee works. |
+| **Worked in address** </br> mshr_isworkedinaddressbr </br>*[mshr_NoYes option set](hr-admin-integration-payroll-api-no-yes.md)* | Read-only</br>Required | Denotes if the address is where the employee works. |
 | **County**</br>mshr_county</br>*String* | Read-only</br>Required | The county defined for the address.  |
 | **Payroll worker address ID**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Required</br>System generated | A system-generated GUID value to uniquely identify the address.  |
 | **Primary field**</br>mshr_primaryfield</br>*String* | Read-only</br>Required |  |
@@ -50,7 +50,7 @@ This entity provides the payroll residency location and payroll work location fo
 | **Valid to**</br>mshr_postaladdressvalidto</br>*Date Time Offset* | Read-only </br>Required | The date the address is valid to.  |
 | **Location ID**</br>mshr_locationidbr>*String* | Read-only <br>Required | The ID for the address.  |
 | **Postal code**</br>mshr_zipcode<br>*String* | Read-only <br>Required |The identification number defined for the employee.  |
-| **Lived in address**</br>mshr_islivedinaddressbr </br> *[ms_NoYes option set](hr-admin-integration-payroll-api-no-yes.md)* | Read-only</br>Required | Denotes if the address is where the employee lives. |
+| **Lived in address**</br>mshr_islivedinaddressbr </br> *[mshr_NoYes option set](hr-admin-integration-payroll-api-no-yes.md)* | Read-only</br>Required | Denotes if the address is where the employee lives. |
 | **State**</br>mshr_state</br>*String* | Read-only</br>Required | The state defined for the address.  |
 
 ## Example query
