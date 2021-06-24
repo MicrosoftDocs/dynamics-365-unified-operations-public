@@ -3,7 +3,7 @@
 
 title: Bad debt reserves in Accounts receivable
 description: This topic provides information about the tax registers for receivables, hopeless debts, and their write-off.
-author: akroshkina
+author: anasyash
 ms.date: 06/24/2021
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: 
 # ms.search.industry: 
-ms.author: akroshkina
+ms.author: anasyash
 ms.dyn365.ops.version: 
 ms.search.validFrom: 
 ---
@@ -196,7 +196,7 @@ Depending on the settings of your debts calculation models, create and calculate
 
    ![Creating a counter on the Counter setup page](media/rus-bad-debts-5.png)
 
-   For more information about how to set up sequences of calculation, see [Sequence of calculations](https://docs.microsoft.com/dynamics365/finance/localizations/rus-set-up-deferrals#sequence-of-calculation).
+   For more information about how to set up sequences of calculation, see [Sequence of calculations](rus-set-up-deferrals#sequence-of-calculation.md).
 
 15. Go to the debts calculation models that you created earlier, and in the **Reserve limit** section, in the **Reserve limit sequence** field, enter the sequence for each model.
 
@@ -207,7 +207,7 @@ Depending on the settings of your debts calculation models, create and calculate
 
 ### Exclude agreements from reserve calculation
 
-For more information about how to create and set up agreements, see [Set up and create agreements](https://docs.microsoft.com/dynamics365/finance/localizations/rus-set-up-and-create-agreements).
+For more information about how to create and set up agreements, see [Set up and create agreements](rus-set-up-and-create-agreements.md).
 
 By default, sales agreements are included in the calculation of the bad debts reserve. To exclude an agreement from the calculation, follow these steps.
 
