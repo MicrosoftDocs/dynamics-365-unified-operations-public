@@ -67,5 +67,4 @@ Before you can perform an upgrade in the production environment the following pr
 - [Submit service requests to the Dynamics Service Engineering team](../lifecycle-services/submit-request-dynamics-service-engineering-team.md).
 - [Upgrade from AX 2012 - Cutover testing (Mock cutover)](./upgrade-cutover-testing.md)
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
