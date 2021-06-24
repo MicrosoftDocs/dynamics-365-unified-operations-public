@@ -458,7 +458,9 @@
       - name: Option sets
         items:
           - name: Gender
-            href: hr-admin-integration-payroll-api-gender.md                      
+            href: hr-admin-integration-payroll-api-gender.md    
+          - name: No Yes
+            href: hr-admin-integration-payroll-api-no-yes.md                  
   - name: User Guide
     items:
     - name: Overview
