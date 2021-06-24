@@ -71,6 +71,9 @@ You can use tier rates in your rate setup if the rate varies depending on variou
 
 You can also use double tiers. If you select **Double tier** for the **Use tiers** value on the **Rate setup** form, you can define rates based on two dimensions. For example, you could configure a double tire system to say that if you are male and your age is up to 34.99, then the non-smoker amount is 2. If you are male and your age is up to 39.99, then the non-smoker amount is 3. If you are female and your age is up to 34.99, then the non-smoker amount is 1.8. If you are female and your age is up to 39.99, then the non-smoker amount is 2.8.
 
+> [!IMPORTANT]
+>There is an option on the worker record, under personal information, to indicate if the employee is a smoker or not.  If the employee is recorded as a smoker, then the smoker rate will be used.  (The smoker indication is never shown to the employee)
+   
 1. In the **Benefits management** workspace, under **Setup**, select **Rates**.
 
 2. Select one or more rates from the list, select **Actions**, and then select **Tier rates**.
@@ -98,7 +101,6 @@ You can also use double tiers. If you select **Double tier** for the **Use tiers
 
 5. Select **Save**. 
 
-> [!IMPORTANT]
->There is an option on the worker record, under personal information, to indicate if the employee is a smoker or not.  If the employee is recorded as a smoker, then the smoker rate will be used.  (The smoker indication is never shown to the employee)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
