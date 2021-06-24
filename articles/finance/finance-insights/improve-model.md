@@ -79,7 +79,7 @@ The following field should not be selected for training:
 
 ## Filters
 
-You can filter the invoices used for training by setting filter criteria for either fields on the invoice or the customer tables. For example, you could only use invoices with an Amount greater than a threshold. Or you could filter out invoices associated with customers in a specific Customer group.
+You can filter the invoices used for training by setting filter criteria for fields on either the invoice or the customer tables. For example, you could set a threshold that uses only invoices whose total is equaly to, or greater than, a specific amount. Another approach might be to exclude invoices that are associated with customers in a specific Customer group.
 
 For more information on filtering your data, see [Create a prediction model](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
 
