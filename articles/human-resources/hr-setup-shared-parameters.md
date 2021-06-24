@@ -45,17 +45,23 @@ On the **Number sequences** tab, you can select the number sequences that are us
 On the **Positions** tab, indicate whether new positions are available for assignment by default:
 
 - **Always** – You can assign workers to new positions when positions are created. When positions are created, the **Available for assignment** date and time on the **General** tab of the **Position** page are automatically set to the creation date and time.
-- **Never** – You can't assign workers to new positions when positions are created. If you select this option, you must open the **Position** page for each new position as it becomes available, and then, on the **General** tab, enter the **Available for assignment** date to enable worker assignment.
+- **Never** – You can't assign workers to new positions when positions are created. If you select this option, you must open the **Position** page for each new position as it becomes available. Then, on the **General** tab, enter the **Available for assignment** date to enable worker assignment.
 
-On the **Advanced access** tab, you can restrict access to certain information or links.
+On the **Advanced access** tab, you can restrict access to some information or links:
 
-- **Restrict access to worker information** – Turning on this option will restrict users' ability to view employee information for only those legal entities they have access to and employees with employment in those legal entities.
-  
-  Once this feature is turned on you will need to set the appropriate permissions for each user that needs to have their view restricted. To do this, navigate to the **Users** page.  Select a user and select a role for the user.  The **Assign organizations** option will become enabled.  Select **Assign organizations**.  Within the new page, select **Grant access to specific organizations individually**.  Select the organizations that the user should have access to.  You will need to do this for every role that the user has, including the system user role.  
-  
-  > [!Note]
-  > The companies that the user has access to must match across all of their roles.
-     
-- **Enable cross-company compensation view** –  Compensation for employees is assigned per legal entity of employment.  Sometimes an employee can be employed in multiple legal entities at the same time.  When this feature is on, compensation for each legal entity will display in ESS/MSS without having to change legal entities. 
+- **Restrict access to worker information** – Turn on this feature if users should be able to view employee information only for those legal entities that they have access to, and for employees who have employment in those legal entities.
+
+    After this feature is turned on, you must follow these steps to set the appropriate permissions for each user whose view must be restricted:
+
+    1. On the **Users** page, select a user.
+    1. Select a role for the user. The **Assign organizations** option becomes available.
+    1. Select **Assign organizations**.
+    1. On the new page, select **Grant access to specific organizations individually**, and then select the organizations that the user should have access to.
+    1. Repeat steps 2 through 4 for every other role that the user has, including the system user role.
+
+    > [!NOTE]
+    > The companies that a user has access to must match across all the user's roles.
+
+- **Enable cross-company compensation view** – Compensation for employees is assigned per legal entity of employment. Sometimes, an employee can be employed in multiple legal entities at the same time. When this feature is turned on, compensation for each legal entity will appear in Employee Self-Service and Manager Self-Service without requiring that you change legal entities. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
