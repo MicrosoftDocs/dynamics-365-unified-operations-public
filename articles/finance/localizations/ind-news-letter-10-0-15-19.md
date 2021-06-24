@@ -4,7 +4,7 @@
 title: What's new or changed for the Indian GST localization in 10.0.15 - 10.0.19
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance versions 10.0.15 - 10.0.19.
 author: prabhatb
-ms.date: 06/23/2021
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -72,7 +72,7 @@ During tax invoice generation, the Dynamic QR code would be printed on the invoi
 This feature is released in versions 10.0.15 - 10.0.19.   
 
 ### Dynamics QR code on point of sale
-For mor einformation about this feature, see [Generate QR codes and print them on receipts](../../commerce/localizations/ind-generate-qr-code-print-receipt.md).
+For more information about this feature, see [Generate QR codes and print them on receipts](../../commerce/localizations/ind-generate-qr-code-print-receipt.md).
 
 ### GST e-invoices: Export orders, deemed export, and SEZ
 This fix supports the changes required to register invoices related to the export orders, demmed export, or delivery to SEZ.
@@ -129,28 +129,25 @@ The existing existing TDS and TCS functionality addresses the new requirements t
 
 For more information, see [TDS/TCS on non-filer at a higher rate of tax](https://support.microsoft.com/en-us/topic/tds-tcs-on-non-filer-at-a-higher-rate-of-tax-8b0efbde-93d2-4840-9709-ae03e9220c3d).
 
-## Critical fixes
+## Released critical fixes
 
 ### 10.0.15
 
-- In case the User changed the adjusted withholding tax amount on the Withholding Tax form in the invoice journal, but after close the Withholding Tax form and open it again, the adjusted withholding tax amount does not update. This change will fix this issue.   
-- GST amount not showing correctly in the Purchase requisition " Total form " when Purchase requisition created in foreign currency's amount showing in foreign currency whereas Subtotal and Total amount showing in Indian currency. This update will resolve this issue.               
-- After posting a payment to the GST authority vendor and updating challan details the system is throwing a warning “the bank reference number constraint must be between 17 and 20 digits” and not allowing to update the details. After this update system will update the CIN number with Challan Number: 14 numeric plus four-digit 4 Alpha bank code.   
+- If you change the adjusted withholding tax amount on the **Withholding tax** page in the invoice journal, after you close and reopen the page, the adjusted withholding tax amount isn't updated. This update resolves this issue.   
+- GST amount not showing correctly on the purchase requisition **Total** page when the purchase requisition is created in a foreign currency and the subtotal and total amounts are in the Indian currency. This update resolves this issue.               
+- After you post a payment to the GST authority vendor and update challan details, the warning “The bank reference number constraint must be between 17 and 20 digits” occurs and you can't update the details. After this update, the system will update the CIN number with Challan Number: 14 numeric plus four-digit 4 Alpha bank code.   
 
 ### 10.0.17  
 
-- InventTransId for Shipment and Receive is the same for Transfer Order in TaxTrans_IN for posted stock transfer. Users are unable to get the Line wise Tax for Reports from TaxTrans_IN as the InventTransId is the same for shipment and Receipt in TaxTrans_IN. Due to this user unable to get the correct information from Invent table and Tax Trans table and unable to do any report customization. After this update, InventTransId for Shipment and Receive would be different and would be the same as in InvetTransferJourLine for shipment and receipt.   
+- **InventTransId** for shipment and receive is the same for a transfer order in **TaxTrans_IN** for a posted stock transfer and you can't get the line tax for reports from **TaxTrans_IN**. Because of this, you can't get the correct information from the **Invent** table and **TaxTrans** table and or do any report customization. After this release, **InventTransId** for shipment and receive is different and will be same as in **InvetTransferJourLine** for shipment and receipt.   
 
 ### 10.0.19  
 
-- When the user goes to the purchase order header and updates the delivery location in the tax information. The TAN number is not getting updated automatically in the PO tax information. This new change will enable TAN details to update automatically in PO tax information.  
-- Assessable value is not updating, and it is showing value zero on copying or reversal of Project fee Journal. After this change, the Assessable value will update automatically on copying or reversal of the project fee journal.   
-- Vendor payment settles with vendor invoice where withholding tax is applied on Invoice transaction and exchange rate on payment, causing imbalance error. This new change will allow doing invoice settlement with Withholding tax where exchange rate also exists.   
-- Users cannot mark or unmark the ‘Shared’ button in the company. This new enhancement will allow the user to mark and unmark the shared button. when user Import data through data entity in the requisite company were for certain customer /Vendor shared checkbox is not marked.  
-
-    - Workaround for old data: Import data through an entity in the requisite company again, then the system will identify this as newly imported data and allow the customer to mark or unmark the ‘Shared’ button in the company  
-
-- Tax rate type from Procurement category is not populating in Tax information in Purchase requisition form. When the user creates a Purchase Requisition using the procurement category Tax rate is not being populated in the tax information. However, when a user creates a Purchase order directly using the procurement category the Tax rate is populated from the Procurement category. After this enhancement tax rate type option will enable in the purchase requisition form for the procurement category.   
+- When you update the **Delivery location** on the **Purchase order** page header, the TAN number isn't updated automatically in the purchase order tax information. This release enables the TAN details to automatically update for purchase order tax information.  
+- The assessable value isn't updating and is showing zero value when a project fee journal is copied or reversed. After this release, the assessable value will update automatically on when the project fee journal is copied or reversed.   
+- A vendor payment settlement with a vendor invoice that has withholding tax applied on the invoice transaction and exchange rate on payment is causing an imbalance error. The update in this release enables you to complete an invoice settlement that has withholding tax where exchange rate also exists.   
+- You can't mark or unmark the **Shared** check box in the company. This updates in this release allow you to mark and unmark the **Shared** check box. When you import data through the data entity in the requisite company for a customer or vendor, the **Shared** check box isn't marked.  To work around this issue with older data, import the data through an entity in the requisite company again. The system will identify this as newly imported data and then you can mark or unmark the **Shared** check box for the company. 
+- When you create a purchase requisition using the procurement category, the **Tax rate** field isn't populated with the tax rate type from the procurement category. However, when you create a purchase order using the procurement category, the **Tax rate** field is populated from the procurement category. After this release, the tax rate type option enables in the **Purchase requisition** page for the procurement category.   
 
 ## Upcoming critical fixes in 10.0.20
 
@@ -162,7 +159,7 @@ The upcoming release will resolve the issue of the system selecting the base val
 
 ### Vendor invoice line issue   
 
-When creating vendor invoice lines by selecting **+**, a vendor invoice might be posted without GST applied. The upcoming release will resolve this issue.   
+When you select **+** to create vendor invoice lines, a vendor invoice might be posted without GST applied. The upcoming release will resolve this issue.   
 
 ### Sales return order with TCS issue 
 
