@@ -79,11 +79,7 @@ The following field should not be selected for training:
 
 ## Filters
 
-The filters don't currently support the Customer payment predictor scenario. Therefore, select **Skip this step**, and continue to the summary page.
-
-[![Focus model with filters](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
-
-You can filter the invoices used for training by setting filter criteria for either fields on the invoice or the customer tables. For example, you could only use invoices with an Amount greater than a threshold.  Or you could filter out invoices associated with customers in a specific Customer group.
+You can filter the invoices used for training by setting filter criteria for either fields on the invoice or the customer tables. For example, you could only use invoices with an Amount greater than a threshold. Or you could filter out invoices associated with customers in a specific Customer group.
 
 For more information on filtering your data, see [Create a prediction model](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
 
