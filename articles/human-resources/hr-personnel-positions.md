@@ -71,7 +71,7 @@ For the previous example, you would complete the following tasks to set up the w
 ## Labor union
 You can record whether a union agreement is needed for the position, which labor union is used, and associate the agreement to a legal entity.
 
-## Financial Dimensions
+## Financial dimensions
 When creating the financial dimension for the position, you must specify a legal entity.  You can select the default dimensions for each dimension individually or select a distribution template.  The distribution template will default the dimensions in, and also provide the option to allocate amounts across multiple dimension values.  
 
 
