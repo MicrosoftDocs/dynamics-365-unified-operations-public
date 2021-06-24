@@ -30,10 +30,13 @@ ms.dyn365.ops.version: Human Resources
 # Create coverage options
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+These are the types of coverage options that will be available for a plan, specifically, who should be covered or how much coverage is available.  For example, for a medical plan you would have an **employee only** option, an **employee + 1** option, and a **family** option.  For insurance you may offer life insurance coverage **1 x salary** or **2 x salary**.
 
-Coverage options in Microsoft Dynamics 365 Human Resources are levels of coverage for a participant's election in a benefit plan or program. For example, coverage options could include **Employee Only** for a medical plan, or **2x Salary** for a life insurance plan. Once defined, you can reuse benefit coverage options. You can associate an option with one or more plans.
+Once defined, you can reuse benefit coverage options. You can associate an option with one or more plans.
 
-After you define coverage options, attach the coverage options to a benefit plan type. The plan type is then associated with a benefit plan or program. Coverage options that are associated with a plan type are available to all plans that are created with that plan type. 
+**Important**
+1.  After you define coverage options, attach the coverage options to a benefit plan type. 
+2.  The plan type is then associated with a benefit plan or program. Coverage options that are associated with a plan type are available to all plans that are created with that plan type. 
 
 1. In the **Benefits management** workspace, under **Setup**, select **Coverage options**.
 
