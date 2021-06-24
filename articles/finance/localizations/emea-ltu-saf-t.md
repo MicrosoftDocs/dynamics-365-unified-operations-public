@@ -5,7 +5,7 @@ title: Standard Audit File for Tax (SAF-T) for Lithuania
 description: This topic explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Lithuania. 
 author: liza-golub
 ms.author: elgolu
-ms.date: 06/18/2021
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,7 +57,7 @@ For more information about how to download ER configurations, see [Download ER 
 | SAF-T General model mapping | Model mapping | 128.251 | The model mapping that provides general data source mapping. |
 | SAF-T Format (LT)           | Format        | 128.198 | The XML format that represents the SAF-T report in accordance with the requirements for Lithuania. |
 
-![ER configurations for the SAF-T report for Lithuania](media/lt-saf-t-ger-configurations.png)
+![SAF-T general model mapping configuration for Lithuania](media/lt-saf-t-ger-configurations.png)
 
 The **SAF-T General model mapping** configuration provides general data source mapping for the following master data:
 
