@@ -63,18 +63,19 @@ When the purchase order is created, the **Project** field will need to be specif
 
 ## Set up expenditure reviewers
 
-This example shows how to configure a purchase requisition expenditure reviewer. Similar steps are used for other types of reviewers. Use the menu path specified above in place of the menu path in step 1 below for other types of expenditure reviewers. 
+This example shows how to configure a purchase requisition expenditure reviewer. Similar steps are used for other types of reviewers. Use the menu path specified in [Types of expenditure reviewers](configure-expenditure-reviewers.md#types-of-expenditure-reviewers) in place of the menu path in step 1 below for other types of expenditure reviewers. 
 
-1.  Open **Procurement and sourcing > Setup > Policies > Purchase requisition expenditure reviewers**.
-2.  In the **Purchase requisition expenditure reviewers** form, click **New**.
-3.  Enter a **Name** for the expenditure reviewer configuration such as Cost center.
-4.  In the **Expenditure reviewers by legal entity** FastTab, select the **Legal entity** you want to configure.
-5.  For a Project distribution, select the check boxes for each **Project authority** and select Yes for each **Financial dimension** you want to enable. 
-6.  For an Organization distribution, click the **Organization distributions** tab, and then select Yes for each **Financial dimension** you want to enable.
+1.  Go to **Procurement and sourcing > Setup > Policies > Purchase requisition expenditure reviewers**.
+2.  In the **Purchase requisition expenditure reviewers** page, click **New**.
+3.  Enter a **Name** for the expenditure reviewer configuration, such as cost center.
+4.  In the **Expenditure reviewers by legal entity** FastTab, select the legal entity you want to configure.
+5.  For a project distribution, select the check boxes for each project authority and select **Yes** for each financial dimension you want to enable. 
+6.  For an organization distribution, click the **Organization distributions** tab, and then select **Yes** for each financial dimension you want to enable.
 7.  Repeat steps 4-6 for each additional legal entity.
 
 ## Assign owners to financial dimensions
 To assign an owner to a financial dimension, follow these steps.
+
 1. Open **General ledger > Chart of accounts > Dimensions > Financial dimensions**.
 2. Select the financial dimension from the list that you want to assign owners to.
 3. Click **Dimension values**.
@@ -84,11 +85,12 @@ To assign an owner to a financial dimension, follow these steps.
 
 ## Configure project distributions
 To assign project authorities to a project, follow these steps.
+
 1. Open **Project management and accounting > Projects > All projects.
 2. Select the project that you want to assign authorities to.
-3. Click Edit to make changes to the project.
-4. On the General FastTab, in the **Responsible** group, select the worker for the **Sales manager**, **Project manager**, and **Project controller** fields as required.
-5. Click the Financial dimensions FastTab.
+3. Click **Edit** to make changes to the project.
+4. On the **General** FastTab, in the **Responsible** group, select the worker for the **Sales manager**, **Project manager**, and **Project controller** fields as required.
+5. Click the **Financial dimensions** FastTab.
 6. Select the financial dimensions as required for your project. 
 
 ## Assign expenditure reviewers to a workflow task
@@ -99,7 +101,7 @@ To assign purchase requisition expenditure reviewers to a workflow task follow t
 
 1.  Click **Procurement and sourcing > Setup > Procurement and sourcing workflows**.
 2.  On the **Procurement and sourcing workflows** list page, double-click a workflow or create a new workflow.
-3.  In the workflow editor, in the **Workflow** pane, select the task that you want to assign the expenditure reviewer configuration to, and then on the **Action Pane**, in the **Show** group, click **Properties**.
+3.  In the workflow editor, in the **Workflow** pane, select the task that you want to assign the expenditure reviewer configuration to. Then, on the **Action Pane**, in the **Show** group, click **Properties**.
 4.  In the left pane of the **Properties** form, click **Assignment**.
 5.  On the **Assignment type** tab, select **Participant**.
 6.  On the **Role based** tab, in the **Type of participant** field, select **Expenditure participants**. In the **Participant** field, select the expenditure reviewer configuration that you want to use for the workflow task.
