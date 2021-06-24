@@ -30,6 +30,10 @@ ms.dyn365.ops.version: Human Resources
 
 This topic provides details and an example query for the Payroll employee entity in Dynamics 365 Human Resources.
 
+### Description
+
+This entity provides information about the employee.
+
 ## Properties
 
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
@@ -85,3 +89,8 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_pe
             "_mshr_dataareaid_id_value": null
 }
 ```
+## See also
+
+[Payroll integration API introduction](hr-admin-integration-payroll-api-introduction.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
