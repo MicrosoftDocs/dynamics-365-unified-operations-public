@@ -44,7 +44,7 @@ Physical name: mshr_essleaverequestentity.
 | **Leave type id**</br>mshr_leavetypeid</br>*String* | Read-only | The leave type id. |
 | **Date**</br>mshr_leavedate</br>*Date Time Offset* | Read-only | The date of the leave request. |
 | **Amount**</br>mshr_amount</br>*Decimal* | Read-only | The leave request amount. |
-| **Is half day**</br>mshr_halfdaydefinition</br>*mshr_LeaveHalfDayDefinition option set* | TBD|
+| **Half day type**</br>mshr_halfdaydefinition</br>*mshr_LeaveHalfDayDefinition option set* | Read-only | The type of half day leave. |
 | **Comment**</br>mshr_comment</br>*String* | Read-only | Comment for the request. |
 | **Status**</br>mshr_status</br>*mshr_status option set* | Read-only | The status of the request. |
 | **Date**</br>mshr_requestdate</br>*Date Time Offset* | Read-only | The date of the request. |
