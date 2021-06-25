@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Image List module
-description: This topic covers Image List modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+title: Image list module
+description: This topic covers image list modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 06/24/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,7 +24,6 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-
 
 # Image list module
 
