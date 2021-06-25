@@ -838,7 +838,7 @@
       - name: Restrict editing of personal information
         href: hr-employee-self-service-restrict-editing.md
     - name: Use the Workflow system
-        items:
+      items:
         - name: Workflow system overview
           href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
         - name: Workflow system architecture
