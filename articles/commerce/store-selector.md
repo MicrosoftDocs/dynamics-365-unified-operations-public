@@ -5,7 +5,7 @@ title: Store selector module
 description: This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 06/23/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -30,6 +30,7 @@ ms.dyn365.ops.version:
 # Store selector module
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
