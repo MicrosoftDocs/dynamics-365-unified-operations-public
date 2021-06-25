@@ -459,6 +459,8 @@
         items:
           - name: Leave balance
             href: hr-admin-integration-payroll-api-leave-balance.md
+          - name: Leave type
+            href: hr-admin-integration-payroll-api-leave-type.md
       - name: Option sets
         items:
           - name: Gender
