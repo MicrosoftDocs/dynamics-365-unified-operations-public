@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Leave balance
-description: This topic provides details and an example query for the leave balance entity in Dynamics 365 Human Resources.
+title: Leave type
+description: This topic provides details and an example query for the leave type entity in Dynamics 365 Human Resources.
 author: marcelbf
 ms.date: 06/25/2021
 ms.topic: article
@@ -24,7 +24,7 @@ ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Payroll variable compensation plan
+# Leave balance
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
