@@ -4,7 +4,7 @@
 title: Add product to cart settings
 description: This topic covers "add product to cart" settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 06/23/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,10 +26,10 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
+# Add product to cart settings
+
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
-
-# Add product to cart settings
 
 This topic covers "add product to cart" settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 
@@ -53,11 +53,11 @@ The following example image shows the **Add product to cart** setting options in
 
 The following example image shows an "added to cart" confirmation notification on the Fabrikam site.
 
-![Example of a notification module](./media/ecommerce-addtocart-notifications.PNG)
+![Example of an "added to cart" confirmation notification on the Fabrikam sitee](./media/ecommerce-addtocart-notifications.PNG)
 
 The following example image shows an "added to cart" confirmation notification on the Adventure Works site.
 
-![Example of a notification module](./media/AW_minicart.PNG)
+![Example of an "added to cart" confirmation notification on the Adventure Works site](./media/AW_minicart.PNG)
 
 ## Additional Resources
 
