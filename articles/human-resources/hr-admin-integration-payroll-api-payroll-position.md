@@ -30,6 +30,10 @@ ms.dyn365.ops.version: Human Resources
 
 This topic provides details and an example query for the Payroll details for the Positions entity in Dynamics 365 Human Resources.
 
+### Description
+
+This entity provides position related information for a given employee.
+
 ## Properties
 
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
@@ -45,7 +49,7 @@ This topic provides details and an example query for the Payroll details for the
 | **Valid to**<br>validto<br>*Date Time Offset* | Read-only<br>Required |The date the position details are valid from.  |
 | **Valid from**<br>validfrom<br>*Date Time Offset* | Read-only<br>Required |The date the position details are valid to.  |
 
-**Query**
+## Example query
 
 **Request**
 

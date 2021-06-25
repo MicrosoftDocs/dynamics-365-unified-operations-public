@@ -451,10 +451,10 @@
           href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
         - name: Payroll variable compensation plan
           href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md        
-        - name: Payroll position job
-          href: hr-admin-integration-payroll-api-payroll-position-job.md
         - name: Payroll position
           href: hr-admin-integration-payroll-api-payroll-position.md
+        - name: Payroll position job
+          href: hr-admin-integration-payroll-api-payroll-position-job.md
       - name: Option sets
         items:
           - name: Gender
