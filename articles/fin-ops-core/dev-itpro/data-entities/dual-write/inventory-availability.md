@@ -3,7 +3,7 @@
 
 title: Inventory availability in dual-write
 description: This topic provides information about how to check inventory availability in dual-write.
-author: yijialuan
+author: RamaKrishnamoorthy
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: riluan
+ms.author: ramasri
 ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-05-26
 

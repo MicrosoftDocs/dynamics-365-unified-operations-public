@@ -4,7 +4,6 @@
 title: India overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for India. 
 author: kfend
-manager: AnnBe
 ms.date: 04/06/2021
 ms.topic: article
 ms.prod: 
@@ -45,7 +44,7 @@ This topic provides links to documentation resources for India.
 - [What's new or changed for India GST in 10.0.4 (July 2019)](apac-ind-news-letter-10-0-04.md)
 - [What's new or changed for India GST in 10.0.5 (October 2019)](apac-ind-news-letter-10-0-05.md)
 - [What's new or changed for India GST in 10.0.6 (November 2019)](apac-ind-news-letter-10-0-06.md)
-- [What's new or changed for India GST in 10.0.7 (January 2020)](apac-ind-news-letter-10-0-07.md
+- [What's new or changed for India GST in 10.0.7 (January 2020)](apac-ind-news-letter-10-0-07.md)
 - [What's new or changed for India GST in 10.0.8 (February 2020)](apac-ind-news-letter-10-0-08.md)
 - [What's new or changed for India GST in 10.0.9 (April 2020)](apac-ind-news-letter-10-0-09.md)
 - [What's new or changed for India GST in 10.0.10 (May 2020)](apac-ind-news-letter-10-0-10.md)
@@ -53,6 +52,7 @@ This topic provides links to documentation resources for India.
 - [What's new or changed for India GST in 10.0.12 (July 2020)](apac-ind-news-letter-10-0-12.md)
 - [What's new or changed for India GST in 10.0.13 (September 2020)](ind-news-letter-10-0-13.md)
 - [What's new or changed for India GST in 10.0.14 (October 2020)](apac-ind-news-letter-10-0-14.md)
+- What's new or changed for India GST in 10.0.15 - 10.0.18: There were no major updates in these releases.
   
 ## Indirect taxes
 

@@ -117,7 +117,7 @@ export default class ExampleView extends Views.CustomViewControllerBase {
 
 The **config** object contains a **commandBar** that is used to add commands the POS AppBar when the custom view is visible. The command bar configuration contains a collection of command definitions that are displayed when the view is visible. These command definitions are displayed in order with the first command being the furthest right on the page.
 
-Each command definition must implement the **ICommandDefinition** interface that is exported from the **PosApi/Create/Views** module. Below is a list of the fields and methods on the command definition.
+Each command definition must implement the **ICommandDefinition** interface that is exported from the **PosApi/Create/Views** module. Below is a list of the properties and methods on the command definition.
 
 ```TypeScript
 export interface ICommandDefinition extends Commerce.Extensibility.ICommandDefinition {
@@ -130,7 +130,7 @@ export interface ICommandDefinition extends Commerce.Extensibility.ICommandDefin
 }
 ```
 
-Field|Description
+Property|Description
 ---|---
 execute | Runs when the command is invoked.
 icon | Defines the icon to be used for the command.

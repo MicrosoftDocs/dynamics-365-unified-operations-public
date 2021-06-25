@@ -4,7 +4,7 @@
 title: Extend tax engine configurations
 description: This topic provides information about extending tax engine configurations.
 author: yijialuan
-ms.date: 10/15/2018
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -504,6 +504,29 @@ After the status is updated to **Complete**, the configuration is ready for depl
 5.  Select **Country/Region of Origin** as the lookup column, and then click the right arrow button.
 6.  Click **Save**.
 
+### Rebase the extension configuration to the latest Microsoft configuration
 
+1. Go to **Extension configuration**, and then select **Rebase**. 
+2. In the **Rebase** dialog box, in the **Target version** field, change the target version to latest Microsoft version.
+
+	[![Rebase step 1](./media/extend-tax-engine-configurations-rebase1.png)](./media/extend-tax-engine-configurations-rebase1.png)
+
+	If there is a conflict, you will receive a warning message.
+	
+	[![Rebase step 2](./media/extend-tax-engine-configurations-rebase2.png)](./media/extend-tax-engine-configurations-rebase2.png)
+
+3. To resolve the conflict, select **Designer** to open the rebased extension configuration.
+
+	[![Rebase step 3](./media/extend-tax-engine-configurations-rebase3.png)](./media/extend-tax-engine-configurations-rebase3.png)
+
+4. Select one of the following three ways to resolve the conflict:
+
+	- **Apply previous base value**: Apply the original value from the base configuration the first time you create the configuration.
+	- **Apply base value**: Apply the current value from the target base configuration.
+	- **Retain own value**: Apply the value from extension configuration.
+
+5. After you resolve the conflict, the **Resolved** check box is marked.
+
+	[![rebase step 4](./media/extend-tax-engine-configurations-rebase4.png)](./media/extend-tax-engine-configurations-rebase4.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

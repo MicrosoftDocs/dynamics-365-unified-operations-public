@@ -175,7 +175,7 @@ To approve a merchandising event of the **Lump sum** type, select the event on t
 
 ## Settle the deduction that is due and the customer short-pay by using the Deduction workbench
 
-Often, in anticipation of bill-backs, customers choose to short-pay selected invoices. To prevent payment reconciliation issues in the future, the A/R clerk registers those short-pays as deductions when he or she records the actual customer payments. Then, on the Deduction workbench, those customer deductions can easily be settled against the claim amounts that are due from the company.
+Often, in anticipation of bill-backs, customers choose to short-pay selected invoices. To prevent payment reconciliation issues in the future, the A/R clerk registers those short-pays as deductions when they record the actual customer payments. Then, on the Deduction workbench, those customer deductions can easily be settled against the claim amounts that are due from the company.
 
 To register a customer's short-pay in the Payment journal, select **Accounts receivable** \> **Payments** \> **Payment journal**, and create a new payment journal. Then, on the Action Pane, select **Deductions**. On the **Deduction** page, you can create and track the amount that was short-paid.
 

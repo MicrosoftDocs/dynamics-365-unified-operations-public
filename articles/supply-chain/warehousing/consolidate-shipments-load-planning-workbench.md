@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Consolidate shipments by using Release to warehouse from the load planning workbench
+title: Consolidate shipments by releasing to warehouse from the load planning workbench
 description: This topic presents a scenario where multiple orders are released to the warehouse in the same load and are then automatically consolidated into shipments.
 author: GarmMSFT
 ms.date: 05/12/2020
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.3
 
 ---
 
-# Consolidate shipments by using Release to warehouse from the load planning workbench
+# Consolidate shipments by releasing to warehouse from the load planning workbench
 
 [!include [banner](../includes/banner.md)]
 

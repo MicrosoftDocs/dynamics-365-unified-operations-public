@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic explains how to submit repair information for a fixed asset and generate a fixed asset repair report. Repair information must be stored for all fixed assets. 
 
-Enter details for a fixed asset repair statement
-------------------------------------------------
+## Enter details for a fixed asset repair statement
 
 You can enter repair information for the fixed asset on the **Repair fixed assets** page. Provide the following information about the repair.
 

@@ -57,8 +57,11 @@ The following illustration shows how the **Add module** dialog box presents rati
 
 The write review module includes a **Write a review** button that lets users sign in, assign a rating, and write a review of a product. This module also lets users edit a rating or review that they previously submitted. This module typically appears above the ratings histogram and product reviews list modules on a PDP.
 The following illustration shows the **Write a review** dialog box that appears when a customer selects **Write a review**. The customer can use this dialog box to submit a rating and a review.
+
 ![Write a review dialog box](media/rnr-eCommerce-write-review-module.png)
+
 The following table shows the write review module property that needs to be configured in the authoring tool.
+
 | Property name | Value        | Property description                 |
 |---------------|--------------|--------------------------------------|
 | Name          | Write review | The name of the write review module. |

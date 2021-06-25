@@ -35,8 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
 
-Overview
---------
+## Overview
 
 The sales tax framework supports many types of indirect taxes, such as sales tax, value-added tax (VAT), goods and services tax (GST), unit-based fees, and withholding tax. These taxes are calculated and documented during purchase and sales transactions. Periodically, they must be reported and paid to tax authorities. 
 

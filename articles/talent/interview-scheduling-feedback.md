@@ -15,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.region: Global
 # ms.search.industry: HR, Human Resources
 ms.author: shielas

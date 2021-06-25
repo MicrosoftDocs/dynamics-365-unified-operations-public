@@ -51,7 +51,7 @@ Traditionally, this scenario has been used most often. It's still extensively us
 
 In a "floating till" shift, the shift and cash drawer can be moved from one register to another. Although a register can have only one active shift per cash drawer, shifts can be suspended and then resumed later or on a different register.
 
-For example, a store has two registers. Each register is opened at the start of the day when the cashier opens a new shift and provides the starting amount. When one cashier is ready to take a break, that cashier suspends his or her shift and removes the till from the cash drawer. That register then becomes available to other cashiers. Another cashier can sign in to and open his or her own shift on the register. After the first cashier's break has ended, that cashier can resume his or her shift when one of the other registers becomes available. "Floating till" shifts don't require any special configuration or permission.
+For example, a store has two registers. Each register is opened at the start of the day when the cashier opens a new shift and provides the starting amount. When one cashier is ready to take a break, that cashier suspends their shift and removes the till from the cash drawer. That register then becomes available to other cashiers. Another cashier can sign in to and open their own shift on the register. After the first cashier's break has ended, that cashier can resume their shift when one of the other registers becomes available. "Floating till" shifts don't require any special configuration or permission.
 
 ### Single user
 
@@ -90,7 +90,7 @@ This operation is often the first operation that is performed for a newly opened
 
 ### Tender removal
 
-*Tender removals* are non-sales transactions that are performed in an active shift to reduce the amount of cash in the cash drawer. This operation is most often used in conjunction with a Float entry operation on a different shift. For example, because register 1 is running low on change, the user on register 2 does a tender removal to reduce the amount in his or her cash drawer. The user on register 1 then does a float entry to increase the amount in his or her cash drawer.
+*Tender removals* are non-sales transactions that are performed in an active shift to reduce the amount of cash in the cash drawer. This operation is most often used in conjunction with a Float entry operation on a different shift. For example, because register 1 is running low on change, the user on register 2 does a tender removal to reduce the amount in their cash drawer. The user on register 1 then does a float entry to increase the amount in their cash drawer.
 
 ### Suspend shift
 
@@ -160,7 +160,7 @@ Go to **Retail and Commerce \> Channels \> Stores \> All stores \> Statement/clo
 
 This setup helps guarantee that back-office statements include the same transactions as shifts in the POS, and that the data is summarized by that shift.
 
-For more information about statement and closing methods, see [Store configurations for Retail statement](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+For more information about statement and closing methods, see [Store configurations for Retail statement](/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -61,6 +61,7 @@ You can set up the **TDS exchange rate** as **TDS** and the **Accounting currenc
 ![Ledger page, Currency FastTab](media/GST-tds-exchange-rate-2-10-0-10.png )
 
 **Accounting entries**
+
 | Description                | Dr. (US$)     | Dr. (INR)          | Cr. (US$)                | Cr. (INR)                                        |
 |----------------------------|--------------|-------------------|-------------------------|-------------------------------------------------|
 |     Service/lease exp.    |     100      |     GAP rate      |                         |                                                 |

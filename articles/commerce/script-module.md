@@ -4,11 +4,9 @@
 title: External and inline script modules
 description: This topic covers external and inline script modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

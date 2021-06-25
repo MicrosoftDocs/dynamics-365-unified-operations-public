@@ -50,8 +50,7 @@ To debug X++ code, follow these steps.
 7. After you've finished debugging the application, exit the application. Visual Studio will exit debugging mode.
 
 
-Additional resources
---------
+## Additional resources
 
 [Develop and customize home page](developer-home-page.md)
 

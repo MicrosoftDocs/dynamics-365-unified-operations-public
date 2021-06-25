@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In this lab you’ll create a Master Details form and apply the appropriate form pattern and subpatterns. A Master Details form shows primary data that has many fields. For example, the form that you create will show customer information.
 
-Prerequisites
--------------
+## Prerequisites
 
 For this tutorial, you will need to access the environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Instances](../dev-tools/access-instances.md).
 

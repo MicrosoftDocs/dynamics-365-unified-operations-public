@@ -20,8 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes design principles for data entities. It also includes guidelines for the names of data entities, fields, relation roles, roles, and OData EntityTypes and EntitySets.
 
-Entity design principles
-------------------------
+## Entity design principles
 
 A data entity should provide a holistic object that encapsulates the relevant business logic in a single consumable contract. The contract is then exposed through application interfaces (APIs), such as OData, import and export, integration, and the programming model. Each data entity should be designed to meet the following goals.
 

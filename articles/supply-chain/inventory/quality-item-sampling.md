@@ -4,11 +4,9 @@
 title: Quality management item sampling
 description: This topic describes how to set up item sampling.
 author: rachel-profitt
-manager: tfehr 
 ms.date: 03/23/2021
 ms.topic: business-process 
 ms.prod: 
-ms.service: dynamics-ax-applications 
 ms.technology: 
  
 # optional metadata 

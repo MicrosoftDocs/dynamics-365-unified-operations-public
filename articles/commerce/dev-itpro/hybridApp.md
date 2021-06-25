@@ -42,7 +42,7 @@ For more information about Xamarin, see the [Xamarin documentation](/xamarin/).
 
 ## Set up and install Xamarin on Windows
 
-To set up and install Xamarin on Windows, go to <https://docs.microsoft.com/xamarin/android/get-started/installation/windows>.
+To set up and install Xamarin on Windows, go to [Windows Installation](/xamarin/android/get-started/installation/windows).
 
 ### Update Xamarin
 
@@ -97,6 +97,15 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
        ![POS iOS app setting for RS URL](./media/iOSRSURL.png)
       
   3.  Launch the MPOS app. You should be able to sign in and activate the device.
+
+
+## Hybrid app distribution
+
+To distribute the Android and iOS app, refer to the following distribution options suggested by the Android and iOS app teams.
+
+- [Android app distribution](https://developer.android.com/distribute/marketing-tools/alternative-distribution)
+- [iOS app distribution](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution)
+
   
 ## Dedicated hardware station support for the hybrid Android app
   

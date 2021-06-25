@@ -70,8 +70,7 @@ Use the **Costing version setup** page to create one or more costing versions fo
 Customers who want to change their existing items to a standard cost inventory model must use the **Standard cost conversions** page.
 
 
-Related topics
---------
+## Related topics
 
 [Standard cost conversion overview](standard-cost-conversion-overview.md)
 

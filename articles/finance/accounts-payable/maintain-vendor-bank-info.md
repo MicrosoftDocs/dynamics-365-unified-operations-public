@@ -4,11 +4,9 @@
 title: Maintain vendor bank account information
 description: Vendors can use the Vendor collaboration functionality to maintain their bank account information. This topic explains how to add and maintain bank information for vendors that you do business with.
 author: v-kiarnd
-manager: AnnBe
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -33,7 +31,6 @@ ms.dyn365.ops.version: AX 10.0.17
 # Maintain vendor bank account information
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Vendors can use the Vendor collaboration functionality to maintain their bank account information. This topic explains how to add and maintain bank information for vendors that you do business with.
 

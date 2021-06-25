@@ -15,7 +15,6 @@ ms.search.form: ESSLeaveBuyRequestEntry, EssWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -53,6 +52,12 @@ Your balances will either automatically update or go through an approval process
 3. Select **Submit** when you're ready to submit your request.
 
 Your balances will either automatically update or go through an approval process before updating. This depends on how the buy policy has been configured.
+
+
+## Troubleshooting 
+
+If a buy or sell leave request workflow fails, users with the **EssLeaveBuySellRequestApprover** privilege can review the message log for all leave buy and sell requests. To do this, go to **Leave and absence > Link > Buy and sell leave requests > Message log** (on the upper left). The **Message log** shows users how the transactions were processed and the associated workflow history.
+
 
 ## See also
 

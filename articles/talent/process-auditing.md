@@ -14,7 +14,6 @@ ms.technology:
 # ms.search.form: 
 audience: Application user
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 # ms.custom: 7521
 ms.search.region: Global

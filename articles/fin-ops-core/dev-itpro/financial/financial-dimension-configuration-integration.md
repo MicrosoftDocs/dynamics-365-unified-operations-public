@@ -3,7 +3,7 @@
 
 title: Financial dimension configuration
 description: This topic describes the Financial dimension configuration for integrating applications page.
-author: aprilolson
+author: RyanCCarlson2
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 91363
 ms.assetid: 6be04fc8-5e2b-4ea6-b9bc-940fb5b811e5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: aolson
+ms.author: rcarlson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 

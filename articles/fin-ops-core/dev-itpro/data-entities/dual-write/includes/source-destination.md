@@ -1,6 +1,5 @@
 ---
 author: robinarh
-ms.service: dynamics-365-crossapp
 ms.topic: include
 ms.date: 3/4/2021
 ms.author: rhaertle

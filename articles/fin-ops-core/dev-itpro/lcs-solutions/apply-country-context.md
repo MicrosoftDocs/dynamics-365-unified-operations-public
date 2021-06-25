@@ -85,8 +85,7 @@ You can use another party, such as a customer, bank, or vendor, as a controlling
 
 In this example, the customer becomes the controlling entity. The customer's address is compared with the value of the **CountryRegionCodes** field to determine whether the **GermanSpecifcSetting** field is displayed.
 
-Additional resources
---------
+## Additional resources
 
 [ISO codes](https://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm)
 

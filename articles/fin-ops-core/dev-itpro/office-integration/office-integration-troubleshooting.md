@@ -4,7 +4,7 @@
 title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
 author: jasongre
-ms.date: 04/28/2020
+ms.date: 06/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -48,7 +48,7 @@ In an age of malware, full connectivity, and compliance risks, nothing is comple
 
 ### Does the Excel Add-in support Office for Mac?
 
-No. Support for Apple Mac and iOS is currently under development. The Office JavaScript (JS) APIs work differently in Apple Safari and Internet Explorer, especially in respect to authentication. For details about platform support for the Office JS APIs, see [Office Add-in host and platform availability](/office/dev/add-ins/overview/office-add-in-availability).
+No. Support for Apple Mac and iOS is currently under development. The Office JavaScript (JS) APIs work differently in Apple Safari and Microsoft Edge/Internet Explorer, especially in respect to authentication. For details about platform support for the Office JS APIs, see [Office Add-in host and platform availability](/office/dev/add-ins/overview/office-add-in-availability).
 
 ### What version of Office is required for the Excel Add-in to support AD FS?
 
@@ -64,7 +64,7 @@ Office has many releases. These releases receive updates at different times and 
 
 ### Why am I having trouble signing into the Excel Add-in?
 
-The Excel Add-in runs inside an Internet Explorer window. By default, the Excel Add-in picks up stored credentials from Internet Explorer, and Internet Explorer provides the current Microsoft Windows credentials if there are no stored credentials. Make sure that you're using the correct credentials to sign in. In the Excel Add-in, explicitly sign out, and then sign in to help guarantee that the correct credentials are used.
+The browser used to authenticate the Excel Add-in (or any Office add-in) is dependent on the Office and operation system versions. For more information about the specific browser used to sign in for your configuration, see [Browsers used by Office Add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). By default, the Excel Add-in picks up stored credentials from the browser, and the browser provides the current Microsoft Windows credentials if there are no stored credentials. Make sure that you're using the correct credentials to sign in. In the Excel Add-in, explicitly sign out, and then sign in to ensure that the correct credentials are used.
 
 ### The Excel Add-in seems to be slow when it publishes records. How can I learn more about what is occurring?
 
@@ -83,22 +83,17 @@ To check processing time in the Excel Add-in versus the server/service, follow t
     - If the time from a request to its response is large, the bottleneck is the server/service.
     - If the time from a response to the next request is large, the bottleneck is the Excel Add-in (that is, the client).
 
-### Why is the Export to Excel functionality limited to 10,000 records (prior to Platform update 22)?
+### Is Export to Excel the best way to get data out of the system?
 
-Prior to Platform update 22, the Export to Excel functionality is limited to 10,000 records. This limitation is in place because the export process uses the form from which data is being exported to provide the following records with fields and data that can't be obtained otherwise: formatted values, calculated values, and temporary table data. Because the form is used during the export, it occurs inside the client process that is shared by all the users on a given computer. During the export, those other users are blocked from interacting with the client.
+The best way for end users to get data out of the system is to use the Excel Add-in. The add-in relies on the OData service to retrieve data and takes advantage of the security that data entities provide. The import and export capabilities in the Data management framework (DMF) and Data import/export framework (DIXF) can also be used; however, DMF and DIXF are often limited to administrators.
 
-With Platform update 22 and later, Export to Excel has a progress dialog box and is no longer a blocking process for other users, so larger datasets can be exported. Exporting data via Export to Excel will be slower than using the Excel Add-in or the Data Management framework, but it will return exactly the data shown in the grid. This is useful for filtered datasets. The user is presented with a dialog box that allows them to stop at any point. Because the export can take some time, it is recommended that the export is done with the Chrome or Edge browsers, with the automatic download option enabled. The automatic download option will ensure that the browser downloads the file as soon as the export is complete to ensure that the download link is used within the 15-minute time limit.
+The Export to Excel functionality can be used in situations where the above options are not possible, in particular to retrieve data from calculated columns (display methods), columns with formatted values, and data from temporary tables. This is because the export process uses the data from the active form to retrieve this data. Export to Excel will also return the data exactly as it is shown in the grid, which is useful for filtered datasets. However, this will take longer to export than using the options that go through the OData service.
 
-The ideal alternative to Export to Excel is to use Open in Excel and the Excel Add-in. The Excel Add-in retrieves data by using the OData service, and takes advantage of the security that the entities provide. The import and export capabilities in the Data management framework (DMF) and Data import/export framework (DIXF) can also be used. However, DMF/DIXF is often limited to administrators.
-
-If you have concerns about giving users access to the data via the Excel Add-in, because they should not be able to update records, consider the following points:
-
-- The entities should have all the validation and logic that the forms have. If they don't, it's a bug. 
-- The way that entities are secured resembles the way that forms are secured. Therefore, if a user should not have permission to update or write data by using a form that exposes that data, the user should not have permission to update or write data by using an entity that exposes that data. 
+Because an export from Excel can take some time, it is recommended that the export is done with the Chrome or Edge browsers, with the automatic download option enabled. The automatic download option will ensure that the browser downloads the file as soon as the export is complete to ensure that the download link is used within the 15-minute time limit.
 
 ### Why is the Publish button in the Excel Add-in unavailable? 
 
-All key and mandatory fields must be present to publish data back to the entity. Try to edit the design to add more fields to the binding. 
+All key and required fields must be present to publish data back to the entity. Try to edit the design to add more fields to the binding. 
 
 ### Why are the Excel Add-in, the Word Add-in, and the Open in Excel options only available when the Internet is available?
 
@@ -139,7 +134,21 @@ If the entity is marked as “IsPublic=Yes” and has unique PublicEntityName an
 
 The Excel Add-In, Data Management Framework, and Power BI reporting are all designed to interact with data directly on the database level. Because there is no client to adjust Date and Time data to the time zone of the user, all Date and Time values are in UTC.
 
+### When is Skype integration supported?
+
+Skype integration is available for environments in the public cloud. For environments outside of the public cloud, including on-premises environments, Skype integration is not currently supported. 
+
 ## Troubleshooting issues
+
+### Issue: During sign-in to the Excel Add-in, users receive an error message saying they "cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant"
+
+**Issue:** During sign in to the Excel Add-in, a user receives an error similar to the following: 
+-  "AADSTS50020: User account 'XXX' from identity provider 'https://sts.windows.net/XXX' does not exist in tenant 'XXX' and cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e'(Microsoft Business Office Add-in) in that tenant."
+-  "Selected user account does not exist in tenant 'XXX' and cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant."
+
+**Explanation:** This issue is caused by a change made to Azure Active Directory (Azure AD) in April 2021 in regard to external users. Because this change was not made to the Finance and Operations apps, it can affect customers on any version of the platform or application.  
+
+**Fix:** All external users need to be invited to the tenant through Azure AD. For more information, see [Invite users with Azure Active Directory B2B collaboration](/power-platform/admin/invite-users-azure-active-directory-b2b-collaboration).
 
 ### \[Fixed\] Issue: During sign-in to the Excel Add-in, I receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ"
 
@@ -163,54 +172,9 @@ The Excel Add-In, Data Management Framework, and Power BI reporting are all desi
 
 **Explanation:** You receive this error message if the client is open in Internet Explorer, and the user clicks **Open** immediately after selecting the **Open in Excel** option. The way that Internet Explorer handles temporary Internet files causes an issue in Excel. This issue, in turn, causes API calls to fail. 
 
-**Workaround:** In Internet Explorer, when you open a workbook, click **Save** first, and then click **Open**. The file will then be opened from your Downloads folder. Alternately, use the Edge or Google Chrome browser. By default, both these browsers save files to a Downloads folder. Therefore, the issue doesn't occur. 
+**Workaround:** The recommendation is to use Microsoft Edge or another modern browser. These browsers tend to save files to a Downloads folder by default, which mitigates the issue. If you are using Internet Explorer, which is now deprecated, when you open a workbook, select **Save** first, and then select **Open**. The file will then be opened from your Downloads folder.  
 
 **Long-term fix:** We are working with the Office team to understand this issue so that it can be fixed in Excel.
-
-### Issue: When I send email by using SMTP, the server response is "5.7.60 SMTP; Client does not have permissions to send as this sender"
-
-**Issue:** When you send email by using Simple Mail Transfer Protocol (SMTP), you might receive an error message that states that the server response was "5.7.60 SMTP; Client does not have permissions to send as this sender." Alternatively, the error message might state, "Something went wrong while generating the report."
-
-**Explanation:** This issue is usually caused by incorrect setup of the Send As permissions for the email account. 
-
-**Fix:** You can configure Send As permissions in the Microsoft 365 admin center (portal.office.com/Admin). Click **Users** > **Active users** > **User** > **Edit mailbox permissions** > **Send email from this mailbox**. For more information, see [Give mailbox permissions to another user in Microsoft 365 - Admin Help](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E). 
-
-The following illustration shows the setup of SMTP on the **Email parameters** page. Here, you must provide the outgoing mail server, port, user name, password, and Secure Sockets Layer (SSL) requirements. 
-
-[![SMTP settings tab on the Email parameters page](./media/smtp.png)](./media/smtp.png)
-
-> [!IMPORTANT]
-> All users must give the SMTP account Send As permissions on their email setup in Microsoft 365. This configuration is done in the mailbox permissions in Microsoft Exchange or in the Microsoft 365 Admin portal. The following illustration shows the setup for the Test User account, where the STMP service account is added in the **Send As** section. 
-
-[![SMTP account that is granted Send As permissions in Microsoft 365](./media/o365.png)](./media/o365.png)
-
-### \[Fixed\] Issue: The Office Add-ins don't yet support AD FS
-
-**Affected versions:** CTP8 and the February 2016 releases 
-
-**Issue:** When users from an Azure AD tenant that uses Active Directory Federation Services (AD FS) try to sign in to the Office Add-ins (in other words, when the users enter their account, and then press Tab or click in the field to enter their password), a separate browser window opens. This browser window usually has a URL that starts with `https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.2.1.0/App/DynamicsApp.html\#id\_token=`. The user can't sign in. 
-
-**Explanation:** During sign-in to the Office add-ins (both the Excel Add-in and the Word Add-in), a redirect to the AD FS site for the tenant occurs. However, that site is an unknown and therefore disallowed application domain (AppDomain). 
-
-**Long-term fix:** The long-term fix for this issue was put in place on May 10, 2016. The Office Add-ins now use a new Dialog API that the Office team added. 
-
-**Taking advantage of the add-in updates that support AD FS:** All Office installations should be updated via **File** > **Account** > **Updates** (for click-to-run installations) or via Windows Update (for MSI installations). The AD FS Dialog API was included in the May update (16.0.6868.2060). For information about updates, see the [Microsoft 365 client update channel releases](/officeupdates/release-notes-microsoft365-apps?f=255&MSPPError=-2147217396) page. 
-
-If your Office build isn't updated, you might be on the deferred track ([Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels)). In this case, you can [use the Office Deployment Tool to move to the Current channel](/deployoffice/overview-office-deployment-tool?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/office-insider) to help guarantee that you have the latest updates. Additionally, see [Install the latest version of Office](/office/dev/add-ins/develop/install-latest-office-version) and [Office 2016 Deployment Guides for Admins](/deployoffice/). 
-
-If Office updates can't be installed, the following workaround can unblock users.
-
-#### Workaround: Use Internet Explorer to sign in to the client before you use the Office Add-ins
-
-This workaround requires user knowledge and extra steps. After users have been educated about this workaround, it should be straightforward for them. 
-
-**User steps:** Before users open Excel (or Word), they should sign in to the client by using Internet Explorer. 
-
-**Explanation:** The Excel or Word Add-in will use the sign-in context, and no redirect will be required. The earlier sign-in must occur in Internet Explorer, because the Office Add-ins run inside an Internet Explorer window in Excel and Word. The sign-in context lasts 6 to 24 hours, depending on policies. Therefore, a new sign-in through Internet Explorer is required only occasionally.
-
-1.  Exit Internet Explorer and Excel.
-2.  Start Internet Explorer, and sign in to the client.
-3.  Test the Excel Add-in by using an Open in Excel experience. (For example, click **Fleet Management** &gt; **Customers** &gt; **Customer** &gt; **Open in Microsoft Office** &gt; **Open in Excel** &gt; **Fleet Management Customers**.)
 
 ### \[Fixed\] Issue: The Excel Add-in doesn't correctly run or enable sign-in
 

@@ -93,7 +93,7 @@ Although **Financial analysis** contains financial statements, it isn't a replac
 The following comparison chart will help differentiate the two options:
 
 
-|                                                          | Financial Reporting                                               | Financial analysis |
+| Feature                                                   | Financial Reporting                                               | Financial analysis |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
 | **Edit default reports**                                 | Yes                                                               | No |
 | **Create new reports**                                   | Yes                                                               | No |

@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes the architecture of the workflow system.
 
-The workflow infrastructure consists of two components that are hosted on Application Object Server (AOS): the X++ workflow runtime and the managed workflow runtime.
+The workflow infrastructure consists of two components that are hosted on the Application Object Server (AOS): the X++ workflow runtime and the managed workflow runtime.
 
 The X++ workflow runtime consists of the following components:
 

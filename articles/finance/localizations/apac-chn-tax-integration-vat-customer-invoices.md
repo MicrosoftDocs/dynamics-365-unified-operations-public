@@ -83,8 +83,7 @@ To customize VAT customer invoices to include other details, follow these steps:
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Configure tax integration for China](apac-chn-tax-integration.md)
 

@@ -4,11 +4,9 @@
 title: TaxTrans record isn't generated
 description: This topic provides troubleshooting information that can help when a TaxTrans record isn't generated.
 author: qire
-manager: beya
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

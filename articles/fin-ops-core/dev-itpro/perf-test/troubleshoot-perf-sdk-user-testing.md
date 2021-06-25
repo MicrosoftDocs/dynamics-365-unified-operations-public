@@ -37,7 +37,7 @@ This issue affects only single-user tests. When the test is running, a web clien
 
 ### Solution
 
-See [Multi-user testing with the Performance SDK and a local test controller](multi-user-testing-local-test-controller.md). That topic explains how to create a correct certificate for this type of test. It also explains how to add the thumbprint of the certificate to the wif.config file.
+See [Multi-user testing using the Performance SDK](perfsdk-multi-user-testing.md). That topic explains how to create a correct certificate for this type of test. It also explains how to add the thumbprint of the certificate to the wif.config file.
 
 ## Zoom factor
 

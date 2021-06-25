@@ -19,8 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the session run-time functions.
 
-curExt
-------
+## curExt
 
 Retrieves the extension that is used for the current company.
 

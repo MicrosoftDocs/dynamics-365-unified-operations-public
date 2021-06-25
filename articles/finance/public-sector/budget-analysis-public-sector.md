@@ -69,9 +69,8 @@ The **Budget control statistics** page is the tool to use when you want to analy
 
 The following table explains the differences between these pages.
 
-|                                                                                                                         |                                                                                             |
-|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| **Budget control statistics page**                                                                                      | **Budget analysis page**                                                                    |
+| Budget control statistics page | Budget analysis                        |
+|---|---|
 | Shows the budget balances for a budget cycle and a budget model for a single financial dimension value or budget group. | Shows the combined budget amounts for multiple financial dimension values at the same time. |
 | Includes data from both confirmed and unconfirmed encumbrances.                                                         | Includes data from confirmed encumbrances only.                                             |
 | Includes data from expense accounts only.                                                                               | Includes data from both revenue and expense accounts.                                       |

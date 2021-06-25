@@ -107,8 +107,7 @@ If you create an intercompany PO that uses the intercompany purchase agreement i
 ## Financial dimensions on purchase agreements
 You can copy financial dimensions to document headers or to individual lines of a purchase agreement. If you change the dimensions in the agreement header or on the agreement line, the change doesn't affect any released orders, but it will be reflected on any new orders.
 
-Additional resources
---------
+## Additional resources
 
 [Create a purchase agreement](tasks/create-purchase-agreement.md)
 

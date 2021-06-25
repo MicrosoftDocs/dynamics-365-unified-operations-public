@@ -4,7 +4,7 @@
 title: Create and work with custom fields
 description: This topic shows you how to create custom fields through the user interface to tailor the application to fit your business.
 author: jasongre
-ms.date: 03/09/2020
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 13
 
 While there is an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. While programmers can be used to add those fields as extensions in the developer tools, the custom fields feature allows fields to be added directly from the user interface, thereby allowing you to tailor the application to fit your business using your web browser.
 
-The ability to add custom fields is available in platform update 13 and later. Only users with special permissions have access to this feature.
+*Only users with special permissions have access to this feature.*
 
 This video shows how easy it is to add a custom field to a page: [Adding custom fields](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
@@ -50,8 +50,9 @@ The following steps describe the process for creating a custom field and placing
     If you do not see the **Create new field** button, you do not have the necessary permissions to use this feature.
 
 7. In the **Create new field** dialog box, enter the following information.
-
+   
     1. Select the database table where this field should be added. Note that only tables that support custom fields will appear in the drop-down list. See the section below for technical details on supported tables.
+
     2. Select the data type for the new field. The available data types are checkbox, date, date time, decimal, number, picklist, and text.
 
         - If you choose the text data type, you can also specify the maximum length of the text that can be entered in this field.
@@ -64,11 +65,15 @@ The following steps describe the process for creating a custom field and placing
 10. Click **Insert** to insert the marked fields into the selected region of the form.
 11. **Optional:** Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region. See [Personalize the user experience](personalize-user-experience.md) for more information about how to use the various personalization capabilities to optimize a form for your personal usage.
 
+> [!WARNING]
+> The ability to enter values in a custom field added to a page is dependent on whether the table associated with the custom field is editable or read only. When the associated table is read only, all fields linked to that table, including any custom fields, will also be read only.
+
+
 ## Sharing custom fields with other users
 
-After you have created a custom field and exposed it on a form, you might want to provide this updated page view that includes the new field to other users in the system. This can be accomplished in two different ways using the personalization capabilities of the product:
+After you have created a custom field and exposed it on a page, you might want to provide this updated page view that includes the new field to other users in the system. This can be accomplished in two different ways using the personalization capabilities of the product:
 
-- The recommended route is through the system administrator, who can push a personalization to all users or a subset of users. See [Personalize the user experience](personalize-user-experience.md) for more details.
+- The recommended route is to **publish a [saved view](saved-views.md)** with the custom field added to the page to the appropriate set of users. If the saved views feature is not enabled, the system administrator can apply the personalization to the desired users from the Personalization form. For more information, see [Personalize the user experience](personalize-user-experience.md).
 - Alternatively, you can export your changes (called *personalizations*), send them to one or more users, and have each of those users import your changes. The **Manage** option on the personalization toolbar enables you to export and import personalizations.
 
 ## Managing custom fields
@@ -138,6 +143,10 @@ In some rare cases, you may decide that a custom field is no longer needed. When
 > This action cannot be undone, and will result in the data associated with the field being permanently deleted from the database.
 
 ## Appendix
+
+### Why can't I enter a value in my custom field? 
+
+If you can't type a value into the custom field when the page is in Edit mode, this may be because the table that the field was added to is currently read only. All fields in a table become read only if the backing table is currently configured as read only on the page.   
 
 ### Who can create custom fields?
 

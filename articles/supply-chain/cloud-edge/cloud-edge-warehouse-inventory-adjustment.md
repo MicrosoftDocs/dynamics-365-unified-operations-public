@@ -4,11 +4,9 @@
 title: Warehouse inventory adjustment
 description: This topic provides information about the Warehouse inventory adjustment journal and processing when you are using scale units.
 author: perlynne
-manager: tfehr
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -31,7 +29,6 @@ ms.dyn365.ops.version: 10.0.19
 # Warehouse inventory adjustment
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The Warehouse inventory adjustment feature is used when running cloud and edge scale units for [manufacturing workloads](cloud-edge-workload-manufacturing.md) and [warehouse management workloads](cloud-edge-workload-warehousing.md).
 
@@ -43,7 +40,7 @@ The following warehouse app work processes currently use the **Warehouse invento
 - Cycle counting
 - License plate loading
 
-Several inventory transactions are created as part of cloud and edge an inventory adjustment process because the hub and scale unit deployments share the inventory records.
+Several inventory transactions are created as part of each inventory adjustment process because the hub and scale unit deployments share the inventory records.
 
 ## Inventory adjustment example
 

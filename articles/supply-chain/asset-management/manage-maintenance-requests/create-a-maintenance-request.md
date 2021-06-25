@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.5
 
 Maintenance requests can be used if maintenance workers or production workers discover that equipment requires repair, but the repair job can't be done right away.
 
-**Example:** While a maintenance worker is making a repair, she discovers that another asset at the same location must be serviced. However, the maintenance worker doesn't have the time or the required spare parts to do the repair job. Therefore, she creates a maintenance request on the asset and enters a short description of the issue.
+**Example:** While a maintenance worker is making a repair, they discover that another asset at the same location must be serviced. However, the maintenance worker doesn't have the time or the required spare parts to do the repair job. Therefore, they create a maintenance request on the asset and enters a short description of the issue.
 
 The **Active maintenance requests** section of the **Related information** pane on the right side of the **All assets** or **Active assets** page (**Asset management** \> **Common** \> **Assets** \> **All assets** or **Active assets**) shows the active maintenance requests that are attached to the selected asset.
 

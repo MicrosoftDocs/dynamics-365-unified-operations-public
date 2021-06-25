@@ -7,7 +7,6 @@ author: mirzaab
 ms.date: 04/03/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -22,7 +21,7 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2022-04-01
+ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.0
 
 ---
@@ -30,7 +29,6 @@ ms.dyn365.ops.version: 10.0.0
 # Wave execution notifications
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The *Wave execution notifications* feature uses business events and the Action center to deliver notifications that are related to wave execution. It lets you specify the types of events that generate notifications, the warehouses that generate them, and the users who receive them.
 

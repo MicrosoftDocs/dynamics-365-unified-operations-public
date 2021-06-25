@@ -20,8 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic reviews Application Explorer, and the various views and filtering methods in it. The topic also describes how to work with elements in Application Explorer.
 
-Application Explorer
---------------------
+## Application Explorer
 
 Application Explorer is the tool that you use to find the elements that you want to add to a project so that you can work with them. To access Application Explorer, on the **View** menu, click **Application Explorer**. An important difference between Application Explorer and the Application Object Tree (AOT) in the MorphX environment of Microsoft Dynamics AX 2012 is that you don't use Application Explorer to add or edit model elements. Instead, you use it to view elements, view code, find references to a selected element, and add elements to a project. To create, design, edit, and build model elements, you must use a Finance and Operations project.
 

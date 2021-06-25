@@ -3,7 +3,7 @@
 
 title: Support for Segmented Entry controls on dialogs
 description: Describes the code pattern to add Segmented Entry controls to dialogs.
-author: robinarh
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 25571
 ms.assetid: cd09af5e-2e6e-41fd-8e74-6612afb016f5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ghenriks
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -73,7 +73,7 @@ This scenario is a simple dialog scenario around Segmented Entry. More advanced 
 
 [Design-time metadata for Segmented Entry controls](segmented-entry-control-metadata-specification.md)
 
-[Parm methods for Segmented Entry controls](segmented-entry-control-parm-method-specification.md)
+[`Parm` methods for Segmented Entry controls](segmented-entry-control-parm-method-specification.md)
 
 [Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
 

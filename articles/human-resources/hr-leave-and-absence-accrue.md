@@ -4,7 +4,7 @@
 title: Accrue leave and absence plans
 description: You can accrue leave and absence in Dynamics 365 Human Resources for multiple employees or for an individual.
 author: andreabichsel
-ms.date: 05/04/2021
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,13 +46,10 @@ You can accrue leave and absence in Dynamics 365 Human Resources for multiple em
 
 5. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
 
-   1. Enter information for the accrual process.
-
-   2. To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.
-
-   3. To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.
-
-   4. Select **OK**. The accrual process will run with the parameters you set.
+    1. Enter information for the accrual process.
+    2. To set up a recurring job, select **Recurrence**, enter the recurrence information, and then select **OK**.
+    3. To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.
+    4. Select **OK**. The accrual process will run with the parameters you set. 
 
 ## Accrue leave and absence for an employee
 
@@ -112,11 +109,9 @@ Delete accrual records for a specific plan and date range. Accrual dates must be
 
 2. Under **Manage leave**, select **Delete leave accrual audit**.
 
-## (Preview) Leave accrual transaction auditing
+## Leave accrual transaction auditing
 
-[!include [Preview feature](includes/preview-feature.md)]
-
-This preview feature helps leave and absence managers understand the leave and absence accrual transactions related to an employee’s time off balances for a specific leave type.
+This feature helps leave and absence managers understand the leave and absence accrual transactions related to an employee’s time off balances for a specific leave type.
 
 To view transaction details:
 
@@ -139,5 +134,7 @@ To view the transaction details for a specific accrual amount, select an accrual
 
 [Leave and absence overview](hr-leave-and-absence-overview.md)</br>
 [Create a leave and absence plan](hr-leave-and-absence-plans.md)
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

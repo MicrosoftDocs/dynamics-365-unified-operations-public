@@ -101,11 +101,11 @@ The deployment package for CSU can be created by consuming the **Microsoft.Dynam
     To uninstall the extension:
 
     ```powershell
-    PS C:\ModernPos.Installer\bin\Debug\net461> .\ ScaleUnit.Installer.exe 
+    PS C:\ModernPos.Installer\bin\Debug\net461> .\ScaleUnit.Installer.exe uninstall
     ```
 
     > [!NOTE]
-    > Before installing the extension installer, install the sealed ScaleUnit. If you have Commerce Runtime, Retail Server, or a Database extension, then you must include all these extension projects as references to the **ScaleUnit.Installer** project. Adding the projects generates a combined deployment package that contains all your extensions.
+    > Before installing the extension installer, install the sealed **ScaleUnit** package. If you have Commerce Runtime, Retail Server, or a Database extension, then you must include all these extension projects as references to the **ScaleUnit.Installer** project. Adding the projects generates a combined deployment package that contains all your extensions.
     > You can also create multiple Scale unit installers by extensions and manage them separately. You don’t have to combine all the extensions in one package.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

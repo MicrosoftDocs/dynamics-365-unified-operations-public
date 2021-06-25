@@ -3,7 +3,7 @@
 
 title: Default financial dimensions
 description: This topic describes where the financial dimensions originate, the APIs that are used to merge them, and how they are used to create ledger dimensions.
-author: jasonsto
+author: RyanCCarlson2
 ms.date: 01/09/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.reviewer: rhaertle
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rbrow
+ms.author: rcarlson
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -246,7 +246,7 @@ When the item is specified for a purchase order line, the purchase order logic m
 
 - Default dimensions on the order header are merged with default dimensions on the order line to yield "merged result 1" default dimensions.
 
-    |                  | Order line | Order header | Merged result 1 | Description |
+    | Item             | Order line | Order header | Merged result 1 | Description |
     |------------------|------------|--------------|-----------------|-------------|
     | **BusinessUnit** |            |              |                 | The value is blank in both sources. |
     | **CostCenter**   |            |              |                 | The value is blank in both sources. |
@@ -257,7 +257,7 @@ When the item is specified for a purchase order line, the purchase order logic m
 
 - Default dimensions on the item are merged with the "merged result 1" default dimensions to yield default dimensions on the final order line ("merged result 2" default dimensions). The following table shows the logical steps of the merge that occurs. However, these steps are combined during execution by using the APIs that the dimension framework provides.
 
-    |                  | Merged result 1 | Item     | Merged result 2 | Description |
+    | Item             | Merged result 1 | Item     | Merged result 2 | Description |
     |------------------|-----------------|----------|-----------------|-------------|
     | **BusinessUnit** |                 |          |                 | The value is blank in both sources. |
     | **CostCenter**   |                 | 008      | 008             | The value is blank in the header line merged result. Therefore, the value is copied from the item. |

@@ -7,7 +7,6 @@ author: Mirzaab
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -15,7 +15,6 @@ ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFi
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -127,8 +126,7 @@ The following table lists components of the compensation process that can be int
 ## Process events
 A process event calculates compensation information for a specific period for all employees who are enrolled in one or more fixed or variable compensation plans. You can run a process event repeatedly to test or update calculated compensation results.
 
-Compensation events
--------------------
+## Compensation events
 
 Each time a process event is run, a compensation event is created.  Compensation events contain the results of the compensation process for each employee included in that process event.  When the calculations are correct, you can load the compensation event to update the compensation records for the employees who are affected by the process event.
 

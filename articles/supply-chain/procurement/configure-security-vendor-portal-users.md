@@ -45,8 +45,7 @@ Before you create a user account for someone who will use the Vendor portal, you
 
 If the same person requires access to the Vendor portal for multiple vendor accounts (for different legal entities, perhaps), each of that person's user accounts must be associated with the same registered contact person. The **Vendor (external)** role includes all the basic capabilities that are required in order to use the functionality that is available in the Vendor portal. This setup helps guarantee that the user interface that the external user sees is focused on the intended scenario only.
 
-Additional resources
---------
+## Additional resources
 
 [Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md)
 

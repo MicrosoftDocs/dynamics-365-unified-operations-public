@@ -78,5 +78,24 @@ The following fields are available for each process that is listed on the **Enab
 
 If you're adding more lifecycle state rules as a customization, you can view those rules in the user interface (UI) by selecting **Refresh processes** in the upper pane. The **Refresh processes** button is available only to administrators.
 
+## Lifecycle states for released products and product variants
+
+For a product that has variants (master and variants), the product (master) will have a lifecycle state and each of the variants can also have a different lifecycle state.
+
+For specific processes, if either the variant or the product is blocked, then the process will also be blocked. Specifically, to determine whether a process is blocked, the system will make the following checks:
+
+- For engineering-controlled products:
+  - If the current engineering version is blocked, then block the process.
+  - If the current variant is blocked, then block the process.
+  - If the released product is blocked, then block the process.
+- For standard products:
+  - If the current variant is blocked, then block the process.
+  - If the released product is blocked, then block the process.
+
+For example, suppose you only want to sell one variant (red) of a given product (t-shirt) and block sales of all other variants for now. You could implement this using the following setup:
+
+- Assign the product a lifecycle state that allows the process. For example, assign the t-shirt product a lifecycle state of *Sellable*, which allows the *Sales order* business process.
+- Assign the sellable variant a lifecycle state that allows the process. For example, also assign the red variant a lifecycle state of *Sellable*.
+- All other variants be assigned another lifecycle state where the process is blocked. For example, assign the white variant (and all other variants) a lifecycle state of *Not sellable*, which blocks the *Sales order* business process.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

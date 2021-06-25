@@ -52,7 +52,7 @@ Every request to Commerce Scale Unit (via commerce proxy) operates under these m
 The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenarios. The Anonymous role is used for requests that represent an eCommerce customer who hasn't signed in. The Customer role is used for requests that represent an eCommerce customer who has been authenticated and has signed in. A role filter is applied to every API that is exposed in Commerce Scale Unit. For eCommerce scenarios, you can use only APIs that have either CommerceRole.Anonymous or CommerceRole.Customer associated with them.
 
 > [!NOTE]
-> By default, Anonymous access is not enabled. To enable Anonymous access for your environment, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support).
+> By default, Anonymous access is not enabled. To enable Anonymous access for your environment, contact [Support](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support).
 
 ## Customer controller
 

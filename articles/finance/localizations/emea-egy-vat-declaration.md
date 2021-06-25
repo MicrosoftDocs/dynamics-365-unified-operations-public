@@ -4,10 +4,9 @@
 title: VAT declaration for Egypt
 description: This topic explains how to configure and generate the VAT return form for Egypt.
 author: sndray
-ms.date: 03/10/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -91,6 +90,7 @@ These following lookup configurations are used to classify the transactions in p
 - **VATRateTypeLookup** > Column B: Tax Type
 - **VATRateTypeLookup** > Column C: Table item type
 - **PurchaseOperationTypeLookup** > Column A: Document type
+- **CustomerTypeLookup** > Column A: Document type
 - **SalesOperationTypeLookup** > Column N: Operation type
 - **SalesItemTypeLookup** > Column O: Item type
 
@@ -104,6 +104,8 @@ Complete the following steps to set up the different lookups used to generate VA
 6. Repeat steps 3-5 for all available lookups.
 7. Select **Add** to include the final record line, and in the **Lookup result** column, select **Not applicable**. 
 8. In the remainder columns, select **Not blank**. 
+9. In the **State** field, select **Completed**.
+10. Select **Save**, and then close the **Application specific parameters** page.
 
 > [!NOTE]
 > When you add the last record, **Not applicable**, you define the following rule: When the sales tax group, item sales tax group, tax code, and name that's passed as an argument doesn't satisfy any of the previous rules, the transactions aren't included in the sales VAT book. Although this rule isn't used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration.
@@ -144,7 +146,7 @@ The following tables represent an example of suggested configuration for the des
 | Services       | 7    | VAT_SERV                | *Not blank* | SaleExempt            |
 | Services       | 8    | VAT_SERV                | *Not blank* | SalesExemptCreditNote |
 | Adjustments    | 9    | *Blank*                 | VAT_ADJ     | Sales                 |
-| Adjustments    | 10   | *Blank*                 | VAT_ADJ     | Purchase              |
+| Adjustments    | 10   | *Blank*                 | VAT_ADJ     | SalesCreditNote       |
 | Not applicable | 11   | *Not blank*             | *Not blank* | *Not blank*           |
 
 **PurchaseItemTypeLookup**
@@ -154,16 +156,14 @@ The following tables represent an example of suggested configuration for the des
 | Goods                  | 1    | VAT_GOODS               | *Not blank* | Purchase                 |
 | Goods                  | 2    | VAT_GOODS               | *Not blank* | PurchaseCreditNote       |
 | Services               | 3    | VAT_SERV                | *Not blank* | Purchase                 |
-| Services               | 4    | VAT_SERV                | *Not blank*  | PurchaseCreditNote       |
+| Services               | 4    | VAT_SERV                | *Not blank* | PurchaseCreditNote       |
 | Machine and equipment  | 5    | VAT_M&E                 | *Not blank* | Purchase                 |
 | Machine and equipment  | 6    | VAT_M&E                 | *Not blank* | PurchaseCreditNote       |
 | Parts machines         | 7    | VAT_PARTS               | *Not blank* | Purchase                 |
 | Parts machines         | 8    | VAT_PARTS               | *Not blank* | PurchaseCreditNote       |
 | Exemptions             | 9    | VAT_EXE                 | *Not bank*  | PurchaseExempt           |
 | Exemptions             | 10   | VAT_EXE                 | *Not blank* | PurchaseExemptCreditNote |
-| Not applicable         | 11   | *Blank*                 | VAT_ADJ     | *Not blank*              |
-| Not applicable         | 12   | *Not blank*             | *Not blank* | *Not blank*              |
-| Not applicable         | 13   | *Blank*                 | *Not blank* | *Not blank*              |
+| Not applicable         | 11   | *Not blank*             | *Not blank* | *Not blank*              |
 
 **PurchaseOperationTypeLookup**
 
@@ -180,6 +180,17 @@ The following tables represent an example of suggested configuration for the des
 | Adjustments    | 9    | *Blank*          | VAT_ADJ     | PurchaseCreditNote       |
 | Adjustments    | 10   | *Blank*          | VAT_ADJ     | Purchase                 |
 | Not applicable | 11   | *Not blank*      | *Not blank* | *Not blank*              |
+
+**CustomerTypeLookup**
+
+|    Lookup result    | Line | Sales tax group |
+|---------------------|------|-----------------|
+| Organization        |  1   | VAT_LOCAL       |
+| Organization        |  2   | VAT_EXPORT      |
+| Organization        |  3   | VAT_EXE         |
+| Final consumer      |  4   | VAT_FINALC      |
+| Public Organization |  5   | VAT_PUBLIO      |
+| Not Applicable      |  6   | *Not blank*     |
 
 **VATRateTypeLookup**
 

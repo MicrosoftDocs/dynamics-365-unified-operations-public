@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the General ledger functionality that is available for the public sector.
 
-How do General ledger parameters need to be set for public sector organizations?
---------------------------------------------------------------------------------
+## How do General ledger parameters need to be set for public sector organizations?
 
 Most General ledger parameters are set the same way for public sector and private sector organizations. In addition, there are public sector parameters that are used for the year-end process for funds. Set these parameters on the **General ledger parameters** page, in the **Ledger** section, on the **Fiscal year close** FastTab:
 
@@ -59,8 +58,7 @@ You can use posting definitions to create subledger journal lines for originatin
 ## How do I collect and analyze data to meet the Common Governmentwide Accounting Classification (CGAC) requirements?
 You can use derived financial hierarchies to collect and analyze posted transaction data for specific main account numbers, full account numbers, and financial dimension values. To learn more, see [Derived financial hierarchies in the public sector](derived-financial-hierarchies-public-sector.md).
 
-Additional resources
---------
+## Additional resources
 
 [General ledger and Financial reporting overview](../general-ledger/general-ledger.md)
 

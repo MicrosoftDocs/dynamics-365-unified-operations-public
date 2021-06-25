@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The article explains how audit cases are generated from violations of audit policy rules. It also includes information about the various ways that audit policies use the document selection date range.
 
-How audit cases are generated
------------------------------
+## How audit cases are generated
 
 Audit policies are used to identify expense reports, purchase orders, and vendor invoices that don't comply with business rules that you define and configure as audit policy rules. 
 

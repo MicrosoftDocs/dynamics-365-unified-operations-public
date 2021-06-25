@@ -53,7 +53,7 @@ To add tasks to a task list, follow these steps.
 1. In the **Create a new task** dialog box, in the **Name** field, enter a name for the task.
 1. In the **Due data offset from target date** field, enter a positive or negative integer value. For example, enter **-2** if the task should be completed two days before the task list's due date.
 1. In the **Notes** field, enter detailed instructions.
-1. In the **Contact person** field, enter the name of a subject matter expert that the task owner can contact if he or she needs help.
+1. In the **Contact person** field, enter the name of a subject matter expert that the task owner can contact if the task owner needs help.
 1. In the **Task link** field, enter a link, based on the nature of the task.
 
 > [!TIP]

@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Fixed assets can be integrated with General ledger, Inventory management, Accounts receivable, and Accounts payable. You can also set up Fixed assets so that it is integrated with purchase orders.
 
-General ledger
---------------
+## General ledger
 
 In General ledger, the value of all fixed assets is typically summarized in multiple main accounts that are required for financial reporting. However, on the **Fixed assets** page, you can create many fixed asset records. These records can include information such as the acquisition price, depreciation, and valuation. Each time that you post a transaction for a fixed asset, the appropriate main accounts are updated. The main accounts for fixed assets always show the updated value of the fixed assets.
 

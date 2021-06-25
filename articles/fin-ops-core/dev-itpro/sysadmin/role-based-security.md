@@ -39,8 +39,7 @@ In Finance and Operations apps, role-based security is aligned with the structur
 
 Because rules can be set up for automatic role assignment, the administrator does not have to be involved every time that a user's responsibilities change. After security roles and rules have been set up, business managers can control day-to-day user access based on business data.
 
-Overview of role-based security
--------------------------------
+## Overview of role-based security
 
 This section provides an overview of the elements of role-based security. The security model is hierarchical, and each element in the hierarchy represents a different level of detail. Permissions represent access to individual securable objects, such as menu items and tables. Privileges are composed of permissions and represent access to tasks, such as canceling payments and processing deposits. Duties are composed of privileges and represent parts of a business process, such as maintaining bank transactions. Both duties and privileges can be assigned to roles to grant access to Finance and Operations. 
 
@@ -48,8 +47,7 @@ The following illustration shows the elements of role-based security and their r
 
 [![Example of role-based security framework](./media/rbs.png)](./media/rbs.png)
 
-Security roles
---------------
+## Security roles
 
 All users must be assigned to at least one security role in order to have access to Finance and Operations. The security roles that are assigned to a user determine the duties that the user can perform and the parts of the user interface that the user can view. 
 

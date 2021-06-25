@@ -97,8 +97,7 @@ The **Purchasing agent - Public Sector** security role supports the public secto
 ## What do I do next?
 After the users are created, you assign them to roles on the **Assign users to roles** page.
 
-Additional resources
---------
+## Additional resources
 
 [Role-based security](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md)
 

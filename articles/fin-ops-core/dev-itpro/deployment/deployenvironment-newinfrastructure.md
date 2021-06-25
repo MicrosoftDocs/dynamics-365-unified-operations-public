@@ -4,7 +4,7 @@
 title: Deploy a new environment
 description: This topic explains how to deploy a new environment using the self-service deployment experience.
 author: rashmansur
-ms.date: 12/03/2019
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,7 +45,7 @@ This topic walks through the process of deploying sandbox (Tier 2 and above) and
 10. After you validate the configurations, click **Submit** to trigger the deployment.
 11. If you plan to use channels, you must also [Initialize Retail Cloud Scale Unit](initialize-retail-channels.md).
 
-The environment deployment starts immediately and could take anywhere between **1-2 hours** to complete. 
+The environment deployment starts immediately and could take anywhere between **30 minutes to 1 hour** to complete for a sandbox environment and **1-2 hours** for a production environment. 
 
 To closely monitor the deployment progress, you can view the **Environment details** page. The environment state should change to either **Deploying** or **Deployed/Failed**.
 

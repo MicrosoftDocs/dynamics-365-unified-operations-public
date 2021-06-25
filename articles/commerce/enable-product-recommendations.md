@@ -43,7 +43,7 @@ The following configurations must be enabled in the back office before enabling 
 2. Ensure that the entity store refresh has been automated. For more information, see [Ensure that the Entity store refresh has been automated](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 3. Confirm that Azure AD Identity configuration contains an entry for Recommendations. More information on how to do this action is below.
 
-Additionally, ensure that RetailSale measurements have been enabled. To learn more about this set up process, see [Work with measures](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
+Additionally, ensure that RetailSale measurements have been enabled. To learn more about this set up process, see [Work with measures](/dynamics365/ai/customer-insights/pm-measures).
 
 ## Azure AD Identity configuration
 

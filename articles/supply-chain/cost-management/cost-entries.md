@@ -66,8 +66,7 @@ The **Cost entries** page enables filtering by document ID and document date.
 > [!NOTE]
 > Cost entries are available only for [cost objects](cost-object.md) or released products.
 
-Additional resources
---------
+## Additional resources
 
 [Cost objects](cost-object.md)
 

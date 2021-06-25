@@ -144,7 +144,7 @@ tokens:
 - %Date%
 
 The %Reason for bid return% and %Reason for amendment% tokens are replaced by
-text that the procurement professional can enter when he or she completes the
+text that the procurement professional can enter when they complete the
 amendment in the **Amendment** wizard. The values for the %Amendment prepared
 by% and %Company% tokens are automatically taken from the RFQ. The %Date% token
 is replaced by the current date.

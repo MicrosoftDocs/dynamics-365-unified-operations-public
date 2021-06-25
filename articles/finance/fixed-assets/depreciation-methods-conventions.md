@@ -66,8 +66,7 @@ You can select from the following depreciation methods.
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Fixed asset depreciation](fixed-asset-depreciation.md)
 

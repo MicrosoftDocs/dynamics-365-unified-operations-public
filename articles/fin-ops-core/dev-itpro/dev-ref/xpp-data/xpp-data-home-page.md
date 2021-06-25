@@ -52,5 +52,6 @@ You can also use the [SysDa classes](../sysda.md) to retrieve and modify data. T
 
 The **executeQueryWithParameters** API can help [mitigate a SQL injection attack](../query-with-parameters.md).
 
+For information about using joins, see [Common misconception about Exists and Notexists joins](https://community.dynamics.com/365/financeandoperations/b/peter-s-x-developer-blog/posts/common-misconception-about-exists-and-notexists-joins).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

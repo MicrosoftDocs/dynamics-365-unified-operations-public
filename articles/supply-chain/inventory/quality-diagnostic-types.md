@@ -4,11 +4,9 @@
 title: Diagnostic types for nonconformances
 description: This topic describes how to use and create diagnostic types that can be used with nonconformances.
 author: rachel-profitt
-manager: tfehr
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata

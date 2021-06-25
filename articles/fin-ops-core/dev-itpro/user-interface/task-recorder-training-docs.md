@@ -36,8 +36,7 @@ This topic explains what Task recorder and task guides are, how to create task r
 > [!IMPORTANT]
 > You can record your own task guides for Dynamics 365 Human Resources, but you won't be able to save them to a Business Process Modeler (BPM) library or open them from the Help pane at this time. You can save them locally or to a network location, and then open and replay them using Task recorder. 
 
-Learn about Task recorder
--------------------------
+## Learn about Task recorder
 
 Task recorder is a tool that you can use to record actions that you take in the product user interface (UI). When you use Task recorder, all of the events that you perform in the UI that are executed against the server—including adding values, changing settings, removing data—are captured. The steps that you record are collectively called a *task recording*. Task recordings can be used in many ways:
 
@@ -116,8 +115,7 @@ You can download and edit Microsoft's task recordings to use them for your own H
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Help system](../../fin-ops/get-started/help-overview.md)
 

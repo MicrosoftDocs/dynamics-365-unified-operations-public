@@ -4,11 +4,9 @@
 title: Configure Azure Active Directory authentication for POS sign-in
 description: This topic explains how to configure Azure Active Directory as the authentication method in Microsoft Dynamics 365 Commerce point of sale.
 author: boycezhu
-manager: annbe
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-commerce
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -28,7 +26,6 @@ ms.dyn365.ops.version: 10.0.11
 # Configure Azure Active Directory authentication for POS sign-in
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic explains how to configure Azure Active Directory (Azure AD) as the authentication method in Microsoft Dynamics 365 Commerce point of sale (POS).
 

@@ -39,13 +39,13 @@ Recency, frequency, and monetary (RFM) analysis is a marketing tool that your or
 
 - The first digit is the customer's recency rating, which is how recently the customer made a purchase from your organization.
 - The second digit is the customer's frequency rating, which is how often the customer makes purchases from your organization.
-- The third digit is the customer's monetary rating, which is how much the customer spends when he makes purchases from your organization.
+- The third digit is the customer's monetary rating, which is how much the customer spends when the customer makes purchases from your organization.
 
 For example, your organization has set the ratings on a scale of 1 through 5, where 5 is the highest rating. In this case, a customer rating of 535 tells you the following information about the customer:
 
 - **Recency rating of 5** – The customer recently made a purchase.
 - **Frequency rating of 3** – The customer purchases products from your organization moderately often.
-- **Monetary rating of 5** – When the customer makes a purchase, he spends a significant amount of money.
+- **Monetary rating of 5** – When the customer makes a purchase, the customer spends a significant amount of money.
 
 If your organization uses an aggregate number for the score, the individual ratings are added together. For the same example, the customer has a rating of 13 (5 + 3 + 5).
 

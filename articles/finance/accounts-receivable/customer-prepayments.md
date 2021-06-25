@@ -4,11 +4,9 @@
 title: Customer prepayments
 description: This topic explains how to set up and process customer prepayments (also known as customer deposits).
 author: roschlom
-manager: AnnBe
 ms.date: 04/30/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -107,7 +107,7 @@ The worker is associated with a flex group that has the following configuration:
 - **Minimum pay type:** 1302
 - **Pay type factor:** -1.0
 
-As the difference between the worker's flex account and her allowed flex maximum indicates, the worker has exceeded her allowed flex maximum by 4.0 hours.
+As the difference between the worker's flex account and their allowed flex maximum indicates, the worker has exceeded their allowed flex maximum by 4.0 hours.
 
 When the payroll administrator transfers the worker's pay data by running the **Transfer to pay** or **Flex adjustment** job, the following adjustments are made:
 

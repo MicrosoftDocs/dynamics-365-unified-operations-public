@@ -2,7 +2,7 @@
 title: Deploy and access development environments
 description: This topic describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
-ms.date: 09/22/2020
+ms.date: 06/21/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
@@ -19,6 +19,12 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to access development instances, configure local development virtual machines (VMs), and find important configurations settings for developers and administrators.
+
+> [!NOTE]
+> - Microsoft Support may provide limited troubleshooting on Tier 1 development environments.
+> - In certain circumstances, a fresh deploy of a Tier 1 environment may be requested by Microsoft Support to resolve an issue.
+> - Development environments should not contain business critical data and are considered disposable.
+ 
 
 ## Definitions
 
@@ -56,8 +62,8 @@ When a cloud environment is provisioned through LCS:
 
 The system can be accessed by end users. The administrator can add users to this system by using the **Users** page in the instance. Note that these additional users don't have to be users in LCS. You obtain the base URL for the cloud environment from your LCS project site.
 
-1. Go to your LCS project page.
-2. In the **Environments** section, click the deployed environment.
+1. Go to your LCS project navigation menu, and select **Cloud-hosted environments**.
+2. In the environment list section, select the deployed environment.
 3. When the environment page opens, you can access the application by clicking **Login** &gt; **Log on to Finance and Operations** in the upper-right corner.
 4. Use valid end user credentials to sign in to the application. If the current LCS user is the user who originally deployed the environment, that user is probably a valid end user and the administrator of the application.
 5. In your browser, make a note of the base URL after you sign in. For example, the base URL might be `https://dynamicsAx7aosContoso.cloud.dynamics.com`.
@@ -126,9 +132,9 @@ For POS customizations, you must also follow these steps on the guest VM.
 
 ### Provisioning the administrator user
 
-For developer access, you must be an administrator on the instance. To provision your own credentials as an administrator, run the admin user provisioning tool that is provided on the desktop, and provide your email address (Azure AD credentials) in the tool.
+For developer access, you must be an administrator on the instance. For environments provisioned through LCS we encourage you to deploy with the correct user. To provision your own credentials as an administrator on a local virtual machine or after provisioning from LCS, run the admin user provisioning tool. On the local virtual machine there is a link provided on the desktop. On cloud environments you can find the tool in **K:\AOSService\PackagesLocalDirectory\bin**.
 
-1.  From the desktop, run the admin user provisioning tool as an administrator (right-click the icon, and then click **Run as administrator**).
+1.  Run the admin user provisioning tool as an administrator (right-click the icon, and then click **Run as administrator**).
 2.  Enter your email address, and then select **Submit**.
 
 ### Commerce configuration

@@ -4,11 +4,9 @@
 title: Quarantine zones for nonconformances
 description: This topic describes how to create and use quarantine zones for nonconformances.
 author: rachel-profitt
-manager: tfehr
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata

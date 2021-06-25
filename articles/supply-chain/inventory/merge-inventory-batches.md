@@ -3,7 +3,7 @@
 
 title: Merge inventory batches
 description: This article provides information about how to consolidate two or more inventory batches into a merged batch.
-author: pjacobse
+author: sherry-zheng
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
@@ -21,7 +21,7 @@ ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
 # ms.search.industry:
-ms.author: pjacobse
+ms.author: chuzheng
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -135,7 +135,7 @@ Here is how product dimensions, tracking dimensions, and storage dimensions are 
 ## How does posting work?
 Posting works in two ways, depending on whether you use an approval process for journals. You can use the **Transfer to journal** and **Post the batch merge** actions to transfer the batch merge to a journal where it can be verified and posted, or you can post the batch merge directly. The main difference between the two actions is that a transfer to a journal doesn't post the batch merge. Both actions create a new batch if an existing batch isn't selected, update all batch details and attribute values, and create an inventory journal.
 
--   **Transfer to journal** – Transfer the batch merge details to a new inventory journal. If you've set up automatic reservations, the quantities in the source batches are reserved. The details of the batch merge can't be changed. To modify the batch merge, you must delete the journal. The journal can be used as a task that another employee must perform later. The reservation of the batch quantity to the journal line is secured. This allocation lets a quality planner or a warehouse manager create tasks for his or her employees.
+-   **Transfer to journal** – Transfer the batch merge details to a new inventory journal. If you've set up automatic reservations, the quantities in the source batches are reserved. The details of the batch merge can't be changed. To modify the batch merge, you must delete the journal. The journal can be used as a task that another employee must perform later. The reservation of the batch quantity to the journal line is secured. This allocation lets a quality planner or a warehouse manager create tasks for their employees.
 -   **Post the batch merge** – Post the batch merge directly. This action can be performed after the physical merge has occurred.
 
 You can approve the inventory journal for the batch merge from the **All batch merges** list page. Click **Journal** &gt; **Post**. After a journal is posted, you can't change the details in the merged batch. After you transfer a batch merge to an inventory journal, you can change the details only if the journal is deleted.

@@ -34,8 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about the file upload control. This control lets users upload files.
 
-Overview
---------
+## Overview
 
 The file upload control lets users upload a file. It also lets developers control the upload process and manage the file that is uploaded, based on their requirements. 
 

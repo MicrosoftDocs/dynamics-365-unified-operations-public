@@ -155,8 +155,7 @@ Cost allocation rules can be set up as follows.
 | CC001                                | Total         | **HR services**        |
 | CC002                                | Total         | **Financial services** |
 
-<br>How cost flows between cost centers 
----------------------------------------------------
+## <br>How cost flows between cost centers 
 
 If you want to learn how cost flows between the cost centers in the organization, you can create cost elements of the type **Secondary** for each cost center. These cost elements will then be used to transfer balances between the cost centers during the overhead calculation.
 

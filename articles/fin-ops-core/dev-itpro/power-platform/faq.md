@@ -112,7 +112,7 @@ In theory, no, you don't have to refresh the entity list. At most, you might hav
 
 ### Is there guidance on when to use a virtual entity and when to use dual-write?
 
-Guidance on when to use a virtual entity and when to use dual-write is covered in [Choose a data integration strategy](../data-entities/integration-overview.md).
+Guidance on when to use a virtual entity and when to use dual-write is covered in [Integration between Finance and Operations apps and third-party services](../data-entities/integration-overview.md).
 
 ### When adding records using virtual entities is there any way to use number sequences?
 Yes, if the Finance and Operations entity can auto generate number sequences, then it will work the same way from the virtual entity.

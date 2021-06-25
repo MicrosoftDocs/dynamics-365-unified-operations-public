@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Accounting distributions are used to define how an amount will be accounted for, such as how the revenue, tax, or charges will be accounted for on a free text invoice. Every amount that must be accounted for when the free text invoice is journalized will have one or more accounting distributions.
 
-Accounting distributions
-------------------------
+## Accounting distributions
 
 You can use the following buttons in the Free text invoice page to view, and possibly change, the accounting distributions for each amount on the free text invoice.
 

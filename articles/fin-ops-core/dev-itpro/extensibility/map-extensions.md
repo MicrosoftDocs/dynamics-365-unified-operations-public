@@ -1,7 +1,7 @@
 ---
 title: Table map extension
 description: To extend table maps, we have refactored table maps into a model, which allows you to extend a solution with additional fields and methods. 
-author: LarsBlaaberg
+author: MichaelFruergaardPontoppidan
 ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: lolsen
+ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
 ---

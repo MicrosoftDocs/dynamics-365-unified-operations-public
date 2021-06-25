@@ -7,7 +7,6 @@ author: gionoder
 ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

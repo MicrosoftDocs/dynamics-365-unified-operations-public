@@ -4,7 +4,7 @@
 title: Database movement API - Reference - v1 - Start and stop environments 
 description: This topic provides a reference for version 1 of the Database Movement API.
 author: laneswenka
-ms.date: 02/11/2021
+ms.date: 03/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -96,7 +96,22 @@ POST /environment/v1/stop/project/{projectId}/environment/{environmentId}
     "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
+## Rate limits
 
+To better load balance the request, there are rate limits on the Start and Stop API: 
+
+For **Start** API, the following limits will be enforced:
+
+ * 1 call for each environment for 5 minutes
+ * 30 calls for each user for 30 minutes
+                
+For **Stop** API, the following limits will be enforced:
+
+ * 1 call for each environment for 5 minutes
+ * 30 calls for each user for 30 minutes
+
+> [!NOTE]
+> Requests that exceed the limits will be rejected with a “HTTP 429 Too Many Requests” response. The **retry-after** header will indicate the number of seconds when the request can be retried.
 
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the Accounts receivable functionality that is available for the public sector.
 
-How do I set Accounts receivable parameters for the public sector?
-------------------------------------------------------------------
+## How do I set Accounts receivable parameters for the public sector?
 
 Most Accounts receivable parameters are set the same way whether you’re in the public sector or the private sector. However, the parameters that are required for billing classifications and billing codes are used only by the public sector. For more information, see [Billing classifications and billing codes in the public sector](billing-classifications-billing-codes-public-sector.md).
 
@@ -60,8 +59,7 @@ You can keep the default financial dimensions for the customer group. Just go to
 ## What can I use Accounts receivable posting definitions for?
 You can use posting definitions to create subledger journal lines for originating transactions that meet selected criteria - for example, to generate multiple, balanced, ledger entries based on attributes such as transaction types and accounts. To learn more about posting definitions, see [Posting definitions in the public sector](posting-definitions-public-sector.md).
 
-Additional resources
---------
+## Additional resources
 
 [Accounts receivable](../accounts-receivable/accounts-receivable.md)
 

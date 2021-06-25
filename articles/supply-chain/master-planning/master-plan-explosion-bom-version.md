@@ -40,8 +40,7 @@ A demand explosion of a bill of materials (BOM) version creates a demand for eac
 
 The following illustration shows how the process for master planning demand explosion. ![Demand explosion using BOM version](./media/multisitedemandexplosionscenariousingbomversion.gif)
 
-Additional resources
---------
+## Additional resources
 
 [Determine the BOM version](master-plan-bom-version-determined.md)
 

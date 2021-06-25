@@ -4,7 +4,7 @@
 title: Configure leave and absence types
 description: Set up types of leave that employees can take in Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,6 @@ ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -77,7 +76,7 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
    
  3. Set **Carry-forward leave type** for the leave type. When you select this option, any carry-forward balances will be transferred to the specified leave type. The carry-forward leave type also needs to be included in the leave and absence plan. 
  
- 4. Define **Expiration rules** for the leave type. When you configure this option, you can choose the unit of days or months and set the duration for the expiry. You can also set the effective date of the expiration rule. The effective date is used to determine when to start running the batch job that processes the leave expiration, or the date when the rule takes effect. The expiration itself will always happen on the leave plan start date once the batch job is set to process. For example, the plan start date may be 1/1/2020, but the rule wasn't created until 6/1/2020. By setting the effective date to 6/1/2020, the rule will be processed on the next year boundary, so 1/1/2021. Any leave balances that exist at the time of expiry will be subtracted from the leave type and will be reflected in the leave balance. 
+4. Define **Expiration rules** for the leave type. When you configure this option, you can choose the unit of days or months and set the duration for the expiration. The effective date of the expiration rule is used to determine when to start running the batch job that processes the leave expiration, or the date when the rule takes effect. The expiration itself will always occur on the accrual period start date. For example, if the accrual period start date is August 3, 2021, and the expiration rule was set at 6 months, the rule will be processed based on the expiration offset from the accrual period start date, so it would be executed on February 3, 2022. Any leave balances that exist at the time of expiry will be subtracted from the leave type and will be reflected in the leave balance.
  
 ## See also
 
@@ -85,6 +84,7 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 - [Create a leave and absence plan](hr-leave-and-absence-plans.md)
 - [Create a working time calendar](hr-leave-and-absence-working-time-calendar.md)
 - [Suspend leave](hr-leave-and-absence-suspend-leave.md)
+- [Create a buy and sell leave request workflow](hr-leave-and-absence-buy-sell-workflow.md)
 
 
 

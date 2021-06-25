@@ -7,7 +7,6 @@ author: sherry-zheng
 ms.date: 12/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

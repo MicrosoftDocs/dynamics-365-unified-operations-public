@@ -185,8 +185,7 @@ Some of the most frequently used templates are the journal templates. Some of th
 5.  In the client, go to **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates** &gt; **Reload system templates**. You will see the new template in the list, and if you open the journal page that you added the template to, you will also see that template on the **Open lines in Excel** menu.
 
 
-Additional resources
---------
+## Additional resources
 
 [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
 

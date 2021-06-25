@@ -7,7 +7,6 @@ author: BrianShook
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata
@@ -38,7 +37,7 @@ This topic covers identity management pages and modules in Microsoft Dynamics 36
 Identity management modules show elements on identity management pages that e-commerce site users use to interact with the identity management system that is associated with your Dynamics 365 Commerce environment. Specifically, identity management modules are used on sign-in, sign-up, password reset, and account profile edit pages. By default, Commerce modules are configured to use Azure Active Directory B2C (Azure AD B2C) as the identity provider.
 
 > [!WARNING]
-> Azure AD B2C will retire old (legacy) user flows by August 1, 2021. Therefore, you should plan to migrate your user flows to the new recommended version. The new version provides feature parity and new features. For more information, see [User flows in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview).
+> Azure AD B2C will retire old (legacy) user flows by August 1, 2021. Therefore, you should plan to migrate your user flows to the new recommended version. The new version provides feature parity and new features. For more information, see [User flows in Azure Active Directory B2C](/azure/active-directory-b2c/user-flow-overview).
 
 ## Identity management pages
 

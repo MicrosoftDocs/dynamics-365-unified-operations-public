@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Vendor posting profiles control the posting of vendor transactions to the general ledger.
 
-Vendor posting profiles
------------------------
+## Vendor posting profiles
 
 Vendor posting profiles enable you to assign general ledger accounts and document settings to all vendors, a group of vendors, or a single vendor. These settings will be used when you create purchase orders, vendor invoices, and cash payments. For some transactions, you can select a posting profile that differs from and takes precedence over the posting profiles that are set up for transactions on this page. The default posting profile is defined on the **Ledger and Sales Tax** FastTab on the **Accounts payable parameters** page. The default posting profile is then included automatically on the header of new documents where you can change it to a different posting profile, if needed.
 

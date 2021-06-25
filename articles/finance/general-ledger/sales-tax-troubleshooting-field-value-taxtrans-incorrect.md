@@ -4,11 +4,9 @@
 title: Incorrect field value in TaxTrans
 description: This topic provides information about troubleshooting incorrect field values in TaxTrans.
 author: bijian
-manager: beya
 ms.date: 04/27/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

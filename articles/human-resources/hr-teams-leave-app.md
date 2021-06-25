@@ -4,7 +4,7 @@
 title: Manage leave requests in Teams
 description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
-ms.date: 02/23/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,6 @@ ms.search.form: LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -38,21 +37,13 @@ The Dynamics 365 Human Resources app in Microsoft Teams lets you quickly request
 
 You can find the Dynamics 365 Human Resources app in the Teams store.
 
-1. In Microsoft Teams, select the ellipses.
-
-   ![Human Resources Teams leave app ellipses](./media/hr-teams-leave-app-ellipses.png)
+1. In Microsoft Teams, navigate to the list of apps.
  
 2. Search for Dynamics 365 Human Resources, and then select the **Human Resources** tile.
 
-   ![Human Resources Teams leave app HR tile](./media/hr-teams-leave-app-human-resources-tile.png)
-
 3. Select the **Add** button to install the app.
 
-   ![Human Resources Teams leave app install](./media/hr-teams-leave-app-in-store.png)
-
 If the app doesn't automatically sign you in, select the **Settings** tab to sign in.
-
-![Human Resources Teams leave app Settings tab](./media/hr-teams-leave-app-settings-tab.png)
 
 > [!NOTE]
 > If you don’t see a sign-in dialog box, check your browser settings to allow pop-ups. 
@@ -66,20 +57,24 @@ If you have access to more than one instance of Human Resources, you can select 
 
 After the app installs, a welcome message appears, letting you know the types of actions the bot can take on your behalf.
 
-![Human Resources Teams leave app bot welcome message](./media/hr-teams-leave-app-bot.png)
- 
 > [!NOTE]
 > When first interacting with the bot, you might need to sign in. If you don’t see a sign-in dialog box, check your browser settings to allow pop-ups.
 
 You can ask the bot to:
 
-- Start a leave request for you.
+- View your current leave balances. For example, send a message that says, "View leave balances."
+
+- Start a leave request for you. For example, send a message that says, “Take time off” or “I want to take vacation time off next Thursday and Friday” to be more specific for requesting leave for the vacation leave type. 
 
   ![Start a leave request in Teams chat](./media/hr-teams-leave-app-initiate.png)
 
 - The chat bot will populate a leave request for you. Select **Request time off** and edit the details for your request.
 
-  ![Edit leave request details](./media/hr-teams-leave-app-details.png)
+   If you want to submit leave requests for multiple leave types for the same date, select the **Split day with** option from the **More options** menu. 
+
+   If you select a half day leave when the leave request unit is in days, you can specify whether you want to request time off the first half day or the second half day by selecting the **Half day definition** option from the **More options** menu.
+   
+   ![Half day defintions](./media/HalfDayDefinitions.png)
 
 - When you're done editing your leave request details, select **Submit** to submit it for approval.
 
@@ -96,42 +91,36 @@ The **Time off** tab allows you to view:
 - Time-off requests
 
 - Draft leave requests
-
-![Human Resources Teams leave app Time off tab](./media/hr-teams-leave-app-timeoff-tab.png)
  
 ### Create a new request
 
 1. To create a new leave request, select **New request**.
 
-   ![Human Resources Teams leave app New request](./media/hr-teams-leave-app-timeoff-tab-new.png)
-
 2. Enter the day or days you want to take off, and then select **Add**.
 
-   ![Human Resources Teams leave app add time off](./media/hr-teams-leave-app-timeoff-tab-add.png)
+   ![Human Resources Teams leave app add time off](./media/TimeOffHours.png)
 
 3. If applicable, enter a reason code. Also enter any comments and add any attachments.
 
-4. When you're done entering information, type **Submit** to submit it for approval. You can also type **Save as draft** to come back to it later.
+4. Select the **Split day with** option from the **More options** menu if you want to submit multiple leave request entries for the same date for different leave types.
+
+5. Select the **Half day definition** option to specify if you want to request the first half day off or the second half day off. This option is available when the leave request unit is in days and the amount requested is 0.5 days.
+
+6. When you're done entering information, enter **Submit** to submit it for approval. You can also enter **Save as draft** to come back to it later.
 
 ### Manage draft requests
 
 1. Select the **Drafts** tab.
 
-   ![Human Resources Teams leave app Drafts tab](./media/hr-teams-leave-app-drafts-tab.png)
-
 2. Select the pencil to edit the request, or select the trash can to delete the request.
 
 3. Make any necessary changes. When you're done entering information, type **Submit** to submit it for approval. You can also select **Save as draft** to come back to it later.
-
-   ![Human Resources Teams leave app edit draft](./media/hr-teams-leave-app-drafts-edit.png)
    
 ### Respond to Teams notifications
 
 When you or a worker you're an approver for submits a leave request, you'll receive a notification in the Human Resources app in Teams. You can select the notification to view it. Notifications also appear in the **Chat** area.
 
 If you're an approver, you can select **Approve** or **Deny** in the notification. You can also provide an optional message.
-
-![Leave request notification in Human Resources Teams app](./media/hr-teams-leave-app-notification.png)
 
 ## Send upcoming time-off information to your coworkers
 
@@ -143,15 +132,9 @@ After you install the Human Resources app for Teams, you can easily send informa
 
 2. Select the leave request you want to share. If you want to share a draft leave request, select **Drafts** first.
 
-   ![Select an upcoming leave request to share](./media/hr-teams-leave-app-chat-search.png)
-
 Your leave request will display in the chat.
 
-![Human Resources leave request card](./media/hr-teams-leave-app-chat-card.png)
-
-If you shared a draft request, it will display as a draft:
-
-![Human Resources draft leave request card](./media/hr-teams-leave-app-chat-draft-card.png)
+If you shared a draft request, it will display as a draft.
 
 ## View your team's leave calendar
 
@@ -160,8 +143,6 @@ If you're a manager with direct reports, you can view your team's approved and p
 1. In the Human Resources app in Teams, select **Time off**.
 
 2. Select **Team calendar**. The calendar displays your direct reports' approved and pending time off.
-
-   ![View calendar in Human Resources Teams app](./media/hr-teams-leave-app-view-calendar.png)
 
    > [!NOTE]
    > If you can't see the team calendar, ask your admin to enable it. For more information, see [Install and setup](hr-admin-teams-leave-app.md#install-and-setup).

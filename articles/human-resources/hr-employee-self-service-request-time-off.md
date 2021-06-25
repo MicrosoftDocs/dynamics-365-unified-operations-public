@@ -15,7 +15,6 @@ ms.search.form: EssWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -65,8 +64,6 @@ When updating an existing time off request, you can add an attachment. You can a
 2. To view your approved time-off requests, select **Approved time off**. To view your pending time-off requests, select **Time off requests**.
 
 ## Cancel time-off requests
-
-[!include [Preview feature](includes/preview-feature.md)]
 
 1. In the **Employee self service** workspace, select **View time off** in the **Time Off Balances** tile.
 

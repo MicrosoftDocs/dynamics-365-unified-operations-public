@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Almost every company that uses Financials functionality in Microsoft Dynamics 365 Finance will have to be able to create reports of budget vs. actuals. This article explains the minimum configuration that is required in order to create budgets in Finance and Operations or load them from a third-party program.
 
-Overview
---------
+## Overview
 
 The approved budget for a legal entity is maintained in a document that is known as a *budget register entry*. The lines in a budget register entry document are known as *budget account* entries, and contain financial dimension information, dates, and the amounts of the approved budget. The budget register entry document is integrated with basic financial reports and inquiry pages where ledger actual amounts are compared to budget amounts. 
 

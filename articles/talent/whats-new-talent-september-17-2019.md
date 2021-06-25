@@ -15,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

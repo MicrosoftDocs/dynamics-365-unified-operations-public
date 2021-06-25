@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides examples of three-way matching.
 
-Example: Three-way matching for items
--------------------------------------
+## Example: Three-way matching for items
 
 **Summary:** Ken is the controller at the corporate headquarters of a legal entity named Fabrikam. Ken decides that all vendor invoices that are based on purchase orders should be matched with purchase order lines (two-way matching). For purchases of items that will be used as fixed assets, invoices should be matched with both the purchase order lines and the product receipt lines (three-way matching).
 
@@ -42,9 +41,9 @@ Fabrikam operates with multiple legal entities and employees in all parts of the
 
 The invoice matching policies in this example help people in the following roles meet these goals:
 
--   Ken is the controller for the Fabrikam enterprise. He can help the people in his organization to identify and correct problems with ordering, receiving, and paying for items (goods and services) from vendors.
+-   Ken is the controller for the Fabrikam enterprise. Ken can help the people in the organization to identify and correct problems with ordering, receiving, and paying for items (goods and services) from vendors.
 -   Phyllis and April are accounting managers in the accounts payable department for the United States division of Fabrikam. They can enforce corporate policy and make sure that invoices are paid only after the invoices are matched with the purchase order and receipts of goods and services, where applicable.
--   Tony is the production manager for the United States division of Fabrikam. He and other production personnel can make sure that items are received as they were ordered from vendors, and are accounted for so that the personnel have what they must have in order to perform their jobs.
+-   Tony is the production manager for the United States division of Fabrikam. Tony and other production personnel can make sure that items are received as they were ordered from vendors, and are accounted for so that the personnel have what they must have in order to perform their jobs.
 
 ### Prerequisites
 
@@ -62,7 +61,7 @@ The invoice matching policies in this example help people in the following roles
 
 ### Scenario
 
-1.  Sammy, a worker in the receiving department at Fabrikam, receives the total quantity of machines that are shipped from Contoso. He enters a quantity of 5 on a product receipt. Because the purchase order has been fully received, the status of the purchase order changes to Received.
+1.  Sammy, a worker in the receiving department at Fabrikam, receives the total quantity of machines that are shipped from Contoso. Sammy enters a quantity of 5 on a product receipt. Because the purchase order has been fully received, the status of the purchase order changes to Received.
 2.  April, the accounts payable coordinator at Fabrikam, enters and verifies the invoice that is submitted by Contoso. She verifies the following information:
     -   For items that require three-way matching, the quantity on the invoice line matches the quantity that was received. The received quantity is indicated on the product receipt that is matched to the invoice.
     -   For items that require two-way or three-way matching, the prices on the invoice line are within the tolerances that are defined in Microsoft Dynamics 365 Finance. This includes the following types of price matching:
@@ -92,7 +91,7 @@ Summary: Ken is the controller at the corporate headquarters of a legal entity n
 The volume and amounts are small, and there have been problems with delivery from some vendors in Malaysia. For these reasons, Cassie sets the level of control for certain item and vendor combinations that are procured in Malaysia to three-way matching. 
 
 The invoice matching policies in this example help people in the following roles meet these goals:
--   Ken is the controller for the Fabrikam enterprise. He can help the people in his organization to identify and correct problems with ordering, receiving, and paying for items (goods and services) from vendors.
+-   Ken is the controller for the Fabrikam enterprise. Ken can help the people in the organization to identify and correct problems with ordering, receiving, and paying for items (goods and services) from vendors.
 -   Cassie is the bookkeeper for the Malaysia division of Fabrikam. She can enforce corporate policy and make sure that invoices are paid only after they are matched with purchase order lines and product receipts that represent the receipt of goods and services. She can also increase the level of control to three-way matching for specific items to control operational costs.
 
 ### Prerequisites

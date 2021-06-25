@@ -161,8 +161,8 @@ The policy is that all new features will be opt-in for a 12-month period and wil
 ### Why isn't there a specific 'mandatory-enabled date'? 
 Update release timing is variable, environment update timing is variable, and customers can opt to skip some updates. As a result, specific dates are difficult to determine. 
 
-### Where's the documentation for features that are being made mandatory? 
-This documentation comes from the application teams. Often, these will be mentioned in [Removed or deprecated features](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
+### Where's the documentation for features that are mandatory? 
+This documentation comes from each Dynamics 365 application team. Often, these features will be mentioned in [Updates to client feature states](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) or [Removed or deprecated features](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### Is there an in-product notification or signal that a feature is going to be mandatory-enabled? 
 A notification mechanism related to making a feature mandatory does not exist today.

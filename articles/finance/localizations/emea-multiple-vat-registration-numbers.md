@@ -4,11 +4,9 @@
 title: Multiple VAT registration numbers (Preview)
 description: This topic provides information about the functionality for multiple value-added tax (VAT) registration numbers.
 author: epodkolz
-manager: AnnBe
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

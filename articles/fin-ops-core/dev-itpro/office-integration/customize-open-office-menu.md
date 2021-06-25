@@ -4,7 +4,7 @@
 title: Customize the Open in Microsoft Office menu
 description: This topic provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
 author: jasongre
-ms.date: 04/20/2021
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,8 +35,7 @@ ms.dyn365.ops.version: Platform update 4
 
 Most pages include an Open in Microsoft Office menu. This topics provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
 
-Overview
---------
+## Overview
 
 The **Open in Microsoft Office** menu button (**Open in Office** menu) is a system-defined button that appears on pages. The **Open in Office** menu contains menu items that let you export data to various Office products, such as Microsoft Excel and Microsoft Word. The following table describes the menu items on the **Open in Office** menu.
 
@@ -111,6 +110,18 @@ public static class MyForm_Extension
     }
 }
 ```
+
+## Office menu best practices
+
+### Avoid APIs that could initialize the metadata cache during form load
+
+The following classes could initialize the metadata cache, which can be extremely time consuming. For this reason, these classes should never be used in methods that are executed during form load (such as `init()` and `run()`), as this can cause a form to take a long time to load.  
+
+-  ExportToExcelMetadataCache
+-  ExportToExcelDataEntityContext
+-  OfficeDataEntityExportMenuItem
+-  ExportToExcelDataEntityHelper
+-  ExportToExcelFilterTreeBuilder
 
 ## Typical customization scenarios
 The following examples assume that the **\_menuOptions** variable contains the **OfficeMenuOptions** instance that you're customizing.

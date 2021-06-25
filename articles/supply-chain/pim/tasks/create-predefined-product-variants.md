@@ -4,7 +4,6 @@
 title: Create predefined product variants
 description: This procedure walks through creating product variants for a product master using the combinations of product dimensions. 
 author: t-benebo 
-manager: tfehr 
 ms.date: 04/22/2021
 
 ms.topic: business-process 
@@ -81,8 +80,6 @@ To generate product variants:
 1. Select **Save**.
 
 ## Improved variant suggestions
-
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 The *Variant suggestions page improvements* feature improves the **Variant suggestions** page to address performance and usability issues for companies that have a high number of product dimension combinations. The enhanced process for selecting the product dimension values for which to generate variant suggestions makes it faster and easier to identify and release the relevant set of product variants.
 

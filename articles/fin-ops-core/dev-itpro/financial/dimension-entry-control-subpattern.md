@@ -3,7 +3,7 @@
 
 title: Dimension Entry Control subpattern
 description: This article provides information about the Dimension Entry Control subpattern.
-author: jasongre
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 15951
 ms.assetid: 6baee22e-2a86-428c-b9e2-178581c57830
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jasongre
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

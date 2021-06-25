@@ -173,6 +173,10 @@
         "supply-chain/**/**.md": "dynamics-365-supply-chain",
         "talent/**/**.md": "dynamics-365-talent"
       },
+      "ms.reviewer": {
+        "human-resources/**/**.md": "tfehr",
+        "talent/**/**.md": "tfehr"
+      },
       "ms.search.scope": {
         "commerce/**/**.md": "Core, Operations, Retail, Commerce, ShowInHelp",
         "commerce/dev-itpro/**/**.md": "Operations, Retail, Commerce, Developer",

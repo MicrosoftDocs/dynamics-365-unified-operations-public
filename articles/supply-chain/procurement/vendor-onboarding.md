@@ -37,7 +37,7 @@ The process consists of the following steps, where various roles perform actions
 1. **Data management OData** – Entity import - The initial request is the prospective vendor registration request. Typically, this request comes from a source such as a customer-hosted website that allows anonymous access. Vendors can sign up by providing basic information, such as the vendor name, justification, organization number, and name and email address of the contact person. The requests are imported via the Data management interface.
 2. **Prospective vendor registration request list page** - Based on the information that is provided in the prospective vendor registration request, a procurement professional decides whether the vendor should be onboarded. The procurement professional views the incoming request on the **Prospective vendor registration requests** list page.
 3. **User provisioning workflow** - When a procurement professional has verified the information in the incoming request and has decided to continue with the onboarding process, the user request workflow provisions the new user and sends an invitation email to accept the contact person as an authenticated user of Microsoft Dynamics 365.
-4. **Vendor registration wizard** - The vendor's contact person signs in by using the new user account. He or she completes a vendor registration wizard to provide information such as addresses, business information, procurement categories, and questionnaire responses.
+4. **Vendor registration wizard** - The vendor's contact person signs in by using the new user account. They complete a vendor registration wizard to provide information such as addresses, business information, procurement categories, and questionnaire responses.
 5. **Approval workflow** - A vendor request that includes the registration information is created. This vendor request is submitted to a workflow, and is routed for review and approval.
 6. **Creation of a vendor master and user role modification** - When the vendor request is approved, a vendor record is created. The user account of the vendor's contact person is either granted permission to vendor collaboration or inactivated.
 
@@ -76,7 +76,7 @@ After the prospective vendor registration request is imported, it appears on the
 
 ## Submitting a prospective vendor user request
 
-The purpose of a prospective vendor user request is to provision the person who submitted the initial request, so that he or she can sign in to Supply Chain Management by using the email account that is provided in the prospective vendor registration request.
+The purpose of a prospective vendor user request is to provision the person who submitted the initial request, so that they can sign in to Supply Chain Management by using the email account that is provided in the prospective vendor registration request.
 
 The prospective vendor user request is processed by the user request workflow. This workflow communicates through Azure AD B2B collaboration. It creates a user in Supply Chain Management that has the appropriate security settings.
 
@@ -91,7 +91,7 @@ For information about the configuration of the email and the workflow in general
 
 ## Vendor registration
 
-A prospective vendor user who signs in to Supply Chain Management will see the first page of a vendor registration wizard, where he or she can enter vendor information.
+A prospective vendor user who signs in to Supply Chain Management will see the first page of a vendor registration wizard, where they can enter vendor information.
 
 The wizard reflects the configuration of the vendor request. The country or region where the vendor does business determines what information is requested in the wizard and what information is mandatory.
 
@@ -131,7 +131,7 @@ The following table shows the statuses that vendor requests can have.
 |----------------------------|-------------|
 | Draft                      | The vendor request hasn't yet been submitted. |
 | Request submitted          | The vendor request has been submitted, and the first step in the workflow is being processed. |
-| Pending review             | If there are multiple reviewers in a workflow task, a reviewer can accept the task of reviewing the vendor request and then complete the review. If there is only one reviewer, that participant can complete the review by selecting **Completed** in the workflow action. He or she doesn't have to accept the work item first. |
+| Pending review             | If there are multiple reviewers in a workflow task, a reviewer can accept the task of reviewing the vendor request and then complete the review. If there is only one reviewer, that participant can complete the review by selecting **Completed** in the workflow action. They don't have to accept the work item first. |
 | Request pending approval   | The vendor request has been routed to the participants for approval, and there is an option to request additional information. A request for additional information cause the work item to be routed back to the submitter. The vendor request can also be approved or rejected while it's in this status. |
 | Application change request | Additional information has been requested by the approver, and the vendor request has been routed to the person who submitted the vendor request. The submitter can add required information and then resubmit the vendor request. If a vendor request is resubmitted, the status is changed back to **Request pending approval** status. |
 | Request approved           | This status is a final state. |

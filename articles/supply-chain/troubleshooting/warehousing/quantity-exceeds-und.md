@@ -4,7 +4,7 @@ description: You can't confirm a shipment because the quantity exceeds the under
 author: perlynne
 ms.date: 04/21/2021
 ms.topic: troubleshooting
-ms.search.form: WHSLoadTable_WHSShipConfirm,WHSLoadPlanningListPage_WHSShipConfirm,WHSLoadPlanningWorkbench_WHSShipConfirm,WHSTransportLoad_WHSShipConfirm,WHSShipPlanningListPage_WHSShipConfirm,WHSShipmentDetails_WHSShipConfirm,WHSWorkTable_WHSShipConfirm,WHSWorkTableListPage_WHSShipConfirm,Dialog_WHSOutboundShipConfirmController_WHSOutboundShipConfirm
+ms.search.form: WHSLoadTable_WHSShipConfirm,WHSLoadPlanningListPage_WHSShipConfirm,WHSLoadPlanningWorkbench_WHSShipConfirm,WHSTransportLoad_WHSShipConfirm,WHSShipPlanningListPage_WHSShipConfirm,WHSShipmentDetails_WHSShipConfirm,WHSWorkTable_WHSShipConfirm,WHSWorkTableListPage_WHSShipConfirm,Dialog_WHSOutboundShipConfirmController_WHSOutboundShipConfirm,WHSContainerCloseDiag_WHSShipConfirm
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.18
 
 # You can't confirm a shipment because the quantity exceeds the underdelivery percentage
 
-Error code: WAX1687
+Error code: WAX1686
 
 ## Symptoms
 

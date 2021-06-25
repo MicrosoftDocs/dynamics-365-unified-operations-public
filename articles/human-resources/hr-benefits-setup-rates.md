@@ -4,7 +4,7 @@
 title: Configure rates
 description: Rates in Microsoft Dynamics 365 Human Resources define how much employers and employees contribute for a benefit.
 author: andreabichsel
-ms.date: 06/22/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,6 @@ ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -52,7 +51,7 @@ Use rates to determine how much employees and employers pay for each benefit, ba
    | **Expiration** | The end date of the rate. 12/31/2154 (which represents never) is the default value. |
    | **Use tiers** | The tier to use for the benefit rate calculation. Single tier for a one tier benefit rate or Double tier for a two tier benefit rate. An example of a double tier is a tier based on gender and age. |
    | **Payment frequency** | The payment frequency that determines how often the benefit premium rate is paid to the benefit provider. For example, if the payment frequency is monthly, then benefit rate represents the monthly payment amount. |
-   | **Pay frequency rate rounding** | The method for rounding the rate: Standard or Truncated. |
+   | **Pay frequency rate rounding** | The methods for rounding the rate are: Standard, Truncated, Normal, Downward, and Rounding up. </br></br><ul><li>**Standard** - Always round up. For example, 10.611 will round to 10.62. -10.231 will round to -10.23. </li><li>**Truncated** - Always round down. For example, 10.619 will round to 10.61. -10.231 will round to -10.24. </li><li>**Normal** - Decimal values ending in or greater than 5 will round away from zero. Decimal values ending in or less than 4 will round toward zero. For example, 10.615 will round to 10.62. -10.235 will round to -10.24. 10.614 will round to 10.61. -10.234 will round to -10.23. </li><li>**Downward** - Round toward zero. For example, 10.619 will round to 10.61. -10.231 will round to -10.23. </li><li>**Rounding up** - Round away from zero. For example, 10.619 will round to 10.62. -10.231 will round to -10.24. |
    | **Non-smoker employee amount** | The amount the benefit provider charges for a nonsmoking employee. This is the amount the employer pays to the benefit provider and should be based on the payment frequency for the rate setup. |
    | **Non-smoker employer amount** | The amount the benefit provider charges for a nonsmoking employee. This is the amount the employer pays to the benefit provider and it should be based on the payment frequency for the rate setup. |
    | **Smoker employee amount** | The amount the benefit provider charges for an employee who smokes. This is the amount the employer pays to the benefit provider and should be based on the payment frequency for the rate setup. |

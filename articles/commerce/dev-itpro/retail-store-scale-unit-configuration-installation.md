@@ -4,7 +4,7 @@
 title: Configure and install Commerce Scale Unit (self-hosted)
 description: This topic explains how to use self-service to configure and install Commerce Scale Unit (self-hosted) on computers in a brick-and-mortar store.
 author: jashanno
-ms.date: 04/06/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -45,7 +45,7 @@ This topic explains how you can use self-service to configure a Commerce Scale U
 1. Generate a Microsoft Azure Active Directory (Azure AD) app registration to create an application ID (client ID) and key (secret). For instructions, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). This topic reviews Azure user permissions and requirements, and explains how to generate an app registration.
 
     > [!IMPORTANT]
-    > If you are installing Commerce Scale Unit for use with an on-premises environment using Active Directory Federation Services, instead of Azure, follow the instructions in the Commerce installation document for on-premises environments. For more information, see [Installation steps for Commerce channel components in an on-premises environment](../../dev-itpro/deployment/deploy-retail-onprem.md).
+    > If you are installing Commerce Scale Unit for use with an on-premises environment using Active Directory Federation Services, instead of Azure, follow the instructions in the Commerce installation document for on-premises environments. For more information, see [Installation steps for Commerce channel components in an on-premises environment](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md).
 
 2. After an application ID (client ID) and key are created for Commerce Scale Unit, the client ID must be accepted in Commerce. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
@@ -159,7 +159,7 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
 > Before running the Commerce Scale Unit (self-hosted) installer, verify that the configuration file is named the same as the installer executable. This would look like **ExecutableInstallerName.xml** and put both files in the same folder. Alternatively, there is a command line delimiter to specify the configuration file manually.
 > If you plan to install and use Retail Cloud POS, you must initialize the configuration the first time that you run the installer, as described in the following procedure.
 
-Before you run the Commerce Scale Unit installer, make sure that all [system requirements](../../fin-and-ops/get-started/system-requirements.md) are met.
+Before you run the Commerce Scale Unit installer, make sure that all [system requirements](../../fin-ops-core/fin-ops/get-started/system-requirements.md) are met.
 
 > [!IMPORTANT]
 > If you are installing Commerce Scale Unit for use with an on-premises environment, you must start it from a command line using administrator privileges as follows:
@@ -182,8 +182,8 @@ The Commerce Scale Unit installer first extracts the associated files. It then b
 2. The installer validates that all prerequisites are met. If a valid version of Microsoft SQL Server isn't found, the installer will fail during the prerequisites check.  Install a supported version of SQL Server and try the installer again.
 
     > [!NOTE]
-    > - To meet the prerequisites, SQL Server must have full-text search, and it must support, at a minimum, Transport Layer Security (TLS) 1.2. Review the system requirements for the supported versions of SQL Server.
-    > - If a system restart is required, the installer will prompt the user.  This prompt is based upon a Windows system registry key that notifies all applications if a restart is required. While it is recommended to restart prior to continuing the installation, a restart is not required and the installer can continue without restarting the computer.
+    > - To meet the prerequisites, SQL Server must have full-text search, and it must support, at a minimum, Transport Layer Security (TLS) 1.2. Review the system requirements for the supported versions of SQL Server. It is highly recommended to review [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses).
+    > - If a system restart is required, the installer will prompt the user.  This prompt is based upon a Windows system registry key that notifies all applications when a restart is required. While it is recommended to restart prior to continuing the installation, a restart is not required and the installer can continue without restarting the computer.
 
 3. Verify the URL for Application Object Server (AOS), and then select **Next**. (The AOS URL is the URL that is used to access Headquarters.)
 
@@ -211,7 +211,7 @@ The Commerce Scale Unit installer first extracts the associated files. It then b
 
     > [!IMPORTANT]
     > - When installing Commerce Scale Unit for use with an on-premises environment, Cloud POS does not require an Azure or AD FS application to be configured, so it is important to unmark **Configure Retail Cloud POS**.
-    > - When installing Commerce Scale Unit for use with an on-premises environment, the Client ID (Application ID) and Secret (Key) used will be the values generated by the PowerShell script performed in the configuration steps performed in steps 6-8 in the [Installation steps for Commerce channel components in an on-premises environment](../../dev-itpro/deployment/deploy-retail-onprem.md) topic. (Step 6 creates the Client ID and step 8 resets the Secret to be copied.)
+    > - When installing Commerce Scale Unit for use with an on-premises environment, the Client ID (Application ID) and Secret (Key) used will be the values generated by the PowerShell script performed in the configuration steps performed in steps 6-8 in the [Installation steps for Commerce channel components in an on-premises environment](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md) topic. (Step 6 creates the Client ID and step 8 resets the Secret to be copied.)
 
     When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and key (secret) that are created are important.
 
@@ -313,7 +313,7 @@ On the first computer, run the Commerce Scale Unit self-service installer as des
 15. Start Microsoft Windows Firewall with Advanced Security.
 16. In Windows Firewall, create an inbound rule to open TCP port 1433.
 
-For detailed information about SQL Server and Windows Firewall, see [Configure a Windows Firewall for Database Engine Access](https://msdn.microsoft.com/library/ms175043.aspx).
+For detailed information about SQL Server and Windows Firewall, see [Configure a Windows Firewall for Database Engine Access](/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access).
 
 #### Installation on the second computer
 
@@ -332,7 +332,7 @@ On the second computer, run the Commerce Scale Unit Self-service installer as de
 
 4. Select **Configure Cloud POS**, and then enter Azure AD credentials that have the correct permissions to create Azure Web Apps.
 
-    For more information about Azure Web Apps, how to create them, and how to generate a new key (secret), see [Use portal to create an Azure Active Directory application and service principal that can access resources](https://azure.microsoft.com/documentation/articles/resource-group-create-service-principal-portal/). Note that the sign-in URL and the App ID URI are not important.
+    For more information about Azure Web Apps, how to create them, and how to generate a new key (secret), see [Use portal to create an Azure Active Directory application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal). Note that the sign-in URL and the App ID URI are not important.
 
 5. When setup is successful, don't exit the installer.
 
@@ -416,6 +416,8 @@ If the Retail Server stops functioning after a period of time, there are two sim
 
 - Verify if the password policy requires the service account that was generated to change the password (password expiration).
 - Re-run the same installer over the current installation (idempotent), which will update a service account's password or allow the user to update the selected account's password.
+
+We highly recommended that you also review [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses).
 
 ### Uninstall Commerce Scale Unit
 

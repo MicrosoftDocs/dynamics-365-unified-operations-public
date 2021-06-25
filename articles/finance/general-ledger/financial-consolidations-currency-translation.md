@@ -171,7 +171,8 @@ Customers who use Financial reporting for financial consolidations and currency 
 - **Streamlined currency translation** – After minimal setup in Finance, you can translate any Financial reporting report into any reporting currency that has been set up. In addition, you can set up an unlimited number of reporting currencies.
 - **Post eliminations at the source** – You can create and print an elimination report to verify elimination transactions. You can then post any new eliminations as standard intercompany transactions. You can also use an elimination legal entity for any transaction that you don't want in your legal entities.
 
-## Supported consolidation scenarios
+## Supported consolidation scenarios for Financial reporting
+
 Here are some of the consolidation scenarios that Financial reporting supports:
 
 - Single-level and multilevel consolidations across legal entities
