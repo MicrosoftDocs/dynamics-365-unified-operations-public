@@ -4,7 +4,7 @@
 title: Video player module
 description: This topic covers video player modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 06/22/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,6 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 # Video player module
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic covers video player modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
