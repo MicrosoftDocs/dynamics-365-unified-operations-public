@@ -4,7 +4,7 @@
 title: Configure eligibility rules and options
 description: Set eligibility rules and options in Benefits management in Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 05/20/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,16 +27,16 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Configure eligibility rules and options overview
+# Configure eligibility rules and options 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 After you've configured the necessary parameters for Benefits management, you can create eligibility rules, bundles, periods, and programs that you will associate with your benefit plans.
 
-Eligibility rules are the rules that will be used to determine if an employee is eligible for a plan.  The employee needs to meet at least one rule to be eligible for the benefit.  For example:  You might have 2 rules on a plan.  The first rule (line 1) states the employee type must be ‘Employee’.  The next rule (line 2) states that the employee must be Full time.  The employee met rule 1 and therefore, they will be eligible, even if they are part time.  However, you can setup a single rule that requires the individual to be an Employee AND Full-time.  The employee would need to meet both CONDITIONS of the rule, for them to be eligible.    For example, you can setup a single rule called ‘Employee Full-time’ for full time individuals with an employment type = Employee.  The employee must meet ALL conditions within the rule to be considered eligible.
+Eligibility rules are the rules that will be used to determine if an employee is eligible for a plan. The employee needs to meet at least one rule to be eligible for the benefit. For example, you might have 2 rules on a plan. The first rule (line 1), states that the employee type must be *Employee*. The next rule (line 2), states that the employee must be full time. The employee met rule 1 and therefore, they will be eligible, even if they are employed part-time. However, you can set up a single rule that requires the individual to be an *Employee* **and** *Full-time*.  The employee would need to meet both conditions of the rule for them to be eligible. For example, you can set up a single rule called *Employee Full-time* for full time individuals with an employment type equal to *Employee*.  The employee must meet all conditions within the rule to be considered eligible.
 
 > [!IMPORTANT]
->A benefit plan MUST have at least one eligibility rule associated to it.   You can associate multiple rules to a benefit.
+> A benefit plan must have at least one eligibility rule associated to it. You can associate multiple rules to a benefit.
 
 ## Create an eligibility rule
 
