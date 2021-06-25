@@ -24,7 +24,7 @@ ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Payroll variable compensation plan
+# Leave balance
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
