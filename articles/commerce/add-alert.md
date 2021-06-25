@@ -4,7 +4,7 @@
 title: Promo banner module
 description: This topic covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 06/22/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,6 +29,7 @@ ms.dyn365.ops.version:
 # Promo banner module
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
