@@ -4,7 +4,7 @@
 title: Adventure Works theme
 description: This topic covers the Adventure Works theme and describes how to apply the theme to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 06/24/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -56,21 +56,13 @@ The Adventure Works theme is fully responsive and provides an optimized experien
 
 The following example image shows a home page using the Adventure Works theme.
 
-<kbd><img src="./media/aw_b2c.PNG" /></kbd>
 ![Example of a home page using the Adventure Works theme](./media/aw_b2c.PNG)
-
-
 
 The following example image shows a list page using the Adventure works theme.
 
-<kbd><img src="./media/Aw_list.PNG" /></kbd>
 ![Example of a list page using the Adventure Works theme](./media/Aw_list.PNG)
 
-
-
 The following example image shows a product details page (PDP) using the Adventure Works theme.
-
-<kbd><img src="./media/aw_pdp.PNG" /></kbd>
 
 ![Example of a product details page (PDP) using the Adventure Works theme](./media/aw_pdp.PNG)
 
@@ -79,8 +71,6 @@ The following example image shows a product details page (PDP) using the Adventu
 The Adventure Works theme is also a reference theme for business-to-business (B2B) sites. All B2B modules and workflows are showcased in Adventure Works theme. For information on how to setup a B2B site, see [B2B site setup](./b2b/set-up-b2b-site.md).
 
 The following example image shows a B2B home page using the Adventure Works.
-
-<kbd><img src="./media/aw_b2b.PNG" /></kbd>
 
 ![Example of a B2B home page using the Adventure Works theme](./media/aw_b2b.PNG)
 
