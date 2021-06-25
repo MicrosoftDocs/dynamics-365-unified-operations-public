@@ -4,7 +4,7 @@
 title: Active image module
 description: This topic covers active image modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 06/22/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,6 +27,7 @@ ms.dyn365.ops.version: Release 10.0.8
 # Active image module
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic covers active image modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
