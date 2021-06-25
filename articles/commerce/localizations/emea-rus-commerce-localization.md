@@ -37,14 +37,13 @@ However, Commerce doesn't address all laws, regulations, or commercial requireme
 
 ### Scope that is available in Russia
 
-The following features in Commerce headquarters and the point of sale (POS) are available to Commerce customers in Brazil:
+The following features in Commerce headquarters and the point of sale (POS) are available to Commerce customers in Russia:
 
-- Fiscal integration
 - Cash management
 - Prepayments
 - Simplified address format
 - Gift cards
-
+- Fiscal printer integration
 
 ### Supported scenarios
 
@@ -61,12 +60,9 @@ The following scenarios are supported by Commerce localization for Russia:
 
 ### Fiscal registration for Russia
 
-Fiscal registration is the immediate registration of retail sales per local fiscal laws that are aimed at preventing tax fraud in the retail industry. The following main fiscal registration methods are available in Russia:
+Fiscal registration is the immediate registration of retail sales per local fiscal laws that are aimed at preventing tax fraud in the retail industry. The main fiscal registration method that is available in Russia is a registration of a retail sale in a special fiscal device named fiscal printer or online cash register that is connected to POS.
 
-- Generation of an electronic fiscal document for a retail sale, and submission of the document to tax authorities via a dedicated web service that is maintained by Russian goverment.
-- Registration of a retail sale, in a fiscal device / printer that is connected to the POS, by using an electronic fiscal document.
-
-Commerce supports fiscal registration via the [Fiscal integration framework](../localizations/fiscal-integration-for-retail-channel.md) and its extensions for specific countries or regions. The [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) functionality is used to configure formats of electronic fiscal documents that meet the legal requirements in Russia.
+Commerce supports fiscal registration via the [Fiscal integration framework](../localizations/fiscal-integration-for-retail-channel.md) and its extensions for specific countries or regions.
 
 ## Availability of Commerce localization features for Russia
 
