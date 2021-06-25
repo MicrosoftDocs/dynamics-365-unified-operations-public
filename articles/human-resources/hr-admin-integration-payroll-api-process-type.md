@@ -24,7 +24,7 @@ ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Award type
+# Process type
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
