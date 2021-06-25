@@ -30,25 +30,29 @@ ms.dyn365.ops.version: Human Resources
 
 This topic provides details and an example query for the Payroll variable compensation plan entity in Dynamics 365 Human Resources.
 
+### Description
+
+This entity provides the variable compensation plan assigned for a given position of an employee.
+
 ## Properties
 
-| Property<br>**Physical name**<br>***Type*** | Use | Description |
+| Property</br>**Physical name**</br>***Type*** | Use | Description |
 | --- | --- | --- |
-| **Personnel number**<br>mshr_personnelnumber<br>*String* | Read-only<br>Required |The employee's unique personnel number.  |
-| **Award date**<br>mshr_awarddate<br>*Date Time Offset* | Read-only<br>Required | Date of the award |
-| **Award type**<br>mshr_awardtype<br>*mshr_awardtype option set* | Read-only<br>Required | The type of the award defined for the variable compensation plan |
-| **Currency**<br>mshr_unitcurrencycode<br>*String* | Read-only <br>Required |The currency defined for the variable compensation plan   |
-| **Fixed compensation plan ID**<br>mshr_fixedplanid<br>*String* | Read-only | The fixed compensation plan that is used as a basis for the calculation of the award |
-| **Unit value**<br>mshr_awardamount<br>*Decimal* | Read-only | The value of the unit |
-| **Process type**<br>mshr_processtype<br>*mshr_processtype option set* | Read-only | The process type |
-| **Variable compensation plan type**<br>String<br>*mshr_typeid* | Read-only | The type of the variable compensation plan |
-| **Variable compensation plan ID**<br>String<br>*mshr_planid* | Read-only | The id of the variable compensation plan |
-| **Primary field**<br>mshr_primaryfield<br>*GUID* | Read-only<br>System generated | |
-| **Employee ID**<br>mshr_fk_employee_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key:mshr_Employee_id of mshr_payrollemployeeentity entity  | Employee ID |
-| **Payroll Variable Compensation Plan entity**<br>mshr_payrollvariablecompensationawardentityid<br>*GUID* | Required<br>Sytem generated | A system-generated GUID value to uniquely identify the compensation plan. |
+| **Personnel number**</br>mshr_personnelnumber</br>*String* | Read-only</br>Required |The employee's unique personnel number.  |
+| **Award date**</br>mshr_awarddate</br>*Date Time Offset* | Read-only</br>Required | Date of the award |
+| **Award type**</br>mshr_awardtype</br>*[mshr_HrmCompVarAwardEmplType option set](hr-admin-integration-payroll-api-award-type.md)* | Read-only</br>Required | The type of the award defined for the variable compensation plan |
+| **Currency**</br>mshr_unitcurrencycode</br>*String* | Read-only </br>Required |The currency defined for the variable compensation plan   |
+| **Fixed compensation plan ID**</br>mshr_fixedplanid</br>*String* | Read-only | The fixed compensation plan that is used as a basis for the calculation of the award |
+| **Unit value**</br>mshr_awardamount</br>*Decimal* | Read-only | The value of the unit |
+| **Process type**</br>mshr_processtype</br>*[mshr_hrmCompProcessType option set](hr-admin-integration-payroll-api-process-type.md)* | Read-only | The process type |
+| **Variable compensation plan type**</br>String</br>*mshr_typeid* | Read-only | The type of the variable compensation plan |
+| **Variable compensation plan ID**</br>String</br>*mshr_planid* | Read-only | The id of the variable compensation plan |
+| **Primary field**</br>mshr_primaryfield</br>*GUID* | Read-only</br>System generated | |
+| **Employee ID**</br>mshr_fk_employee_id_value</br>*GUID* | Read-only</br>Required</br>Foreign key:mshr_Employee_id of mshr_payrollemployeeentity entity  | Employee ID |
+| **Payroll Variable Compensation Plan entity**</br>mshr_payrollvariablecompensationawardentityid</br>*GUID* | Required</br>Sytem generated | A system-generated GUID value to uniquely identify the compensation plan. |
 
 
-**Query**
+## Example query
 
 **Request**
 
