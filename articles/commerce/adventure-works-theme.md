@@ -86,7 +86,7 @@ For more information on theme extensions, see [Theme extensions](e-commerce-exte
 
 [Module library overview](starter-kit-overview.md)
 
-[Tile List module](tile-list.md)
+[Tile and tile list modules](tile-list-module.md)
 
 [Interactive feature module](interactive-feature-module.md)
 
