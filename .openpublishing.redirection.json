@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/perf-test/multi-user-testing-local-test-controller.md",
+      "redirect_url": "perfsdk-multi-user-testing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/perf-test/multi-user-testing-perfsdk-azuredevops.md",
+      "redirect_url": "perfsdk-multi-user-testing",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/migration-upgrade/upgrade-data-sandbox-dacpac.md",
       "redirect_url": "data-upgrade-self-service",
       "redirect_document_id": "false"
