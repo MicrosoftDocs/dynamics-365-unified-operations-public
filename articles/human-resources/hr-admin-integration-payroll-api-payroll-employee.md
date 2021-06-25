@@ -45,7 +45,7 @@ This entity provides information about the employee. You must set the [payroll i
 | **Last name**<br>mshr_lastname<br>*String* | Read only<br>Required | Employee last name. |
 | **Legal entity ID**<br>mshr_legalentityID<br>*String* | Read-only<br>Required | Specifies the legal entity (company). |
 | **Valid from**<br>mshr_namevalidfrom<br>*Date Time Offset* | Read-only <br>Required | Date the employee information is valid from.  |
-| **Gender**<br>mshr_gender<br>[mshr_hcmpersongender option set](hr-admin-integration-payroll-api-gender) | Read-only<br>Required | The employee's gender. |
+| **Gender**<br>mshr_gender<br>[mshr_hcmpersongender option set](hr-admin-integration-payroll-api-gender.md) | Read-only<br>Required | The employee's gender. |
 | **Payroll employee entity ID**<br>mshr_payrollemployeeentityid<br>*GUID* | Required<br>System generated | A system-generated GUID value to uniquely identify the employee. |
 | **Employment start date**<br>mshr_employmentstartdate<br>*Date time offset* | Read-only<br>Required | The start date of the employee's employment. |
 | **Identification type ID**<br>mshr_identificationtypeid<br>*String* |Read-only<br>Required | The identification type defined for the employee. |

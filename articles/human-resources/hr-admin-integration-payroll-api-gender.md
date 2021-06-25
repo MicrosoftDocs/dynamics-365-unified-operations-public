@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Gender
-description: This topic describes the Gender option set for Dynamics 365 Human Resources.
+title: Payroll API Gender
+description: This topic describes the Gender option set in the payroll API for Dynamics 365 Human Resources.
 author: marcelbf
 ms.date: 06/23/2021
 ms.topic: article
@@ -24,7 +24,7 @@ ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Gender
+# Payroll - Gender option set
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

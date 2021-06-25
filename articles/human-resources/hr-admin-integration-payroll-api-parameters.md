@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payroll integration parameters
-description: This topic describes the Dynamics 365 Human Resources Payroll integration API.
+description: This topic describes the Dynamics 365 Human Resources Payroll integration parameters.
 author: marcelbf
 ms.date: 06/17/2021
 ms.topic: article
