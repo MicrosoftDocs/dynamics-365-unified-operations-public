@@ -62,7 +62,7 @@ The following scenarios are supported by Commerce localization for Russia:
 
 Fiscal registration is the immediate registration of retail sales per local fiscal laws that are aimed at preventing tax fraud in the retail industry. The main fiscal registration method that is available in Russia is a registration of a retail sale in a special fiscal device named fiscal printer or online cash register that is connected to POS.
 
-Commerce supports fiscal registration via the [Fiscal integration framework](../localizations/fiscal-integration-for-retail-channel.md) and its extensions for specific countries or regions.
+The Commerce functionality for Russia includes a sample integration of the point of sale (POS) with a fiscal printer. The sample extends the [fiscal integration functionality](../localizations/fiscal-integration-for-retail-channel.md) and supports the API of fiscal printers from [ATOL](http://integration.atol.ru/). The sample enables communication with a fiscal printer that is connected via a COM port by using a native software driver. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
 ## Availability of Commerce localization features for Russia
 
