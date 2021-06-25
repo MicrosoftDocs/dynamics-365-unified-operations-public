@@ -441,6 +441,8 @@
         href: hr-admin-integration-payroll-api-introduction.md
       - name: Generate and review payroll entities
         href: hr-admin-integration-payroll-api-generate-review-entities.md
+      - name: Payroll integration parameters
+        href: hr-admin-integration-payroll-api-parameters.md
       - name: Payroll entities
         items:
         - name: Payroll employee
