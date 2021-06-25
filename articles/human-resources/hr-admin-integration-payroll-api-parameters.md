@@ -28,15 +28,15 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Before using the payroll integration, you must setup the following parameters:
+Before using the payroll integration, you must set up the following parameters:
 
 ## Enable payroll address
 
-To be able to use the payroll address purposes you must enable it from [shared parameters form](hr-setup-shared-parameters.md) in the payroll integration tab.
+To be able to use the payroll address purposes, you must enable it from [shared parameters form](hr-setup-shared-parameters.md) in the payroll integration tab.
 
 ## Define the identification type
 
-To expose the identification type id in the [payroll employee entity](hr-admin-integration-payroll-api-payroll-employee.md) you must [configure human resources parameters](hr-setup-shared-parameters.md) for each company.
+To expose the identification type id in the [payroll employee entity](hr-admin-integration-payroll-api-payroll-employee.md), you must [configure human resources parameters](hr-setup-shared-parameters.md) for each company.
 
 1. In the Compensation management workspace, under links, select Human Resources Parameters. 
 2. In the payroll integration tab, specify the value of the following fields:
