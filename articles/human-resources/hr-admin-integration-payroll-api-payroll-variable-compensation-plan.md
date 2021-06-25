@@ -28,11 +28,13 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic provides details and an example query for the Payroll variable compensation plan entity in Dynamics 365 Human Resources.
+This topic describes the Payroll variable compensation plan entity for Dynamics 365 Human Resources.
 
 ### Description
 
 This entity provides the variable compensation plan assigned for a given position of an employee.
+
+Physical name: mshr_payrollvariablecompensationawardentity.
 
 ## Properties
 
@@ -64,18 +66,24 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollvariablecompensationawardentitie
 
 ```json
 {
-            "mshr_personnelnumber": "000001",
-            "mshr_awarddate": "2015-01-15T00:00:00Z",
-            "mshr_awardtype": 200000000,
-            "mshr_unitcurrencycode": "USD",
-            "mshr_fixedplanid": "",
-            "mshr_awardamount": 1,
-            "mshr_processtype": 200000003,
-            "mshr_typeid": "Bonus",
-            "mshr_planid": "MgBonus",
-            "mshr_primaryfield": "000001 | MgBonus | Bonus | 1/15/2015",
-            "_mshr_fk_employee_id_value": "00000655-0000-0000-adff-004105000000",
-            "mshr_payrollvariablecompensationawardentityid": "000001a1-0000-0000-adff-004105000000",
-            "_mshr_fk_fixedcomp_id_value": null
+    "mshr_personnelnumber": "000001",
+    "mshr_awarddate": "2015-01-15T00:00:00Z",
+    "mshr_awardtype": 200000000,
+    "mshr_unitcurrencycode": "USD",
+    "mshr_fixedplanid": "",
+    "mshr_awardamount": 1,
+    "mshr_processtype": 200000003,
+    "mshr_typeid": "Bonus",
+    "mshr_planid": "MgBonus",
+    "mshr_primaryfield": "000001 | MgBonus | Bonus | 1/15/2015",
+    "_mshr_fk_employee_id_value": "00000655-0000-0000-adff-004105000000",
+    "mshr_payrollvariablecompensationawardentityid": "000001a1-0000-0000-adff-004105000000",
+    "_mshr_fk_fixedcomp_id_value": null
 }
 ```
+
+## See also
+
+[Payroll integration API introduction](hr-admin-integration-payroll-api-introduction.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

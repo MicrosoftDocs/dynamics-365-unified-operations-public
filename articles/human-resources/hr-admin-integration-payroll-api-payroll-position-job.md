@@ -28,11 +28,13 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic provides details and an example query for the Payroll position job relationship entity in Dynamics 365 Human Resources.
+This topic describes the Payroll position job entity for Dynamics 365 Human Resources.
 
 ### Description
 
 This entity provides the relation between position and a job for a given fixed compensation plan.
+
+Physical name: mshr_payrollpositionjobentity.
 
 ## Properties
 
@@ -70,3 +72,9 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollpositionjobentities?$filter=mshr
     "mshr_payrollpositionjobentityid": "00000906-0000-0000-df00-014105000000"
 }
 ```
+
+## See also
+
+[Payroll integration API introduction](hr-admin-integration-payroll-api-introduction.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

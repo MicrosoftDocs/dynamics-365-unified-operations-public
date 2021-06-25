@@ -28,7 +28,9 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic provides details and an example query for the Payroll worker address entity in Dynamics 365 Human Resources.
+This topic describes the Payroll worker address entity for Dynamics 365 Human Resources.
+
+Physical name: mshr_payrollworkeraddressentity.
 
 ### Description
 
@@ -65,21 +67,27 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollworkeraddressentities?$filter=ms
 
 ```json
 {
-            "mshr_personnelnumber": "000041",
-            "mshr_locationid": "000000538",
-            "mshr_islivedinaddress": 200000001,
-            "mshr_isworkedinaddress": 200000000,
-            "mshr_countryregionid": "USA",
-            "mshr_zipcode": "99025",
-            "mshr_street": "6543 Cypress Ave",
-            "mshr_city": "Tacoma",
-            "mshr_state": "WA",
-            "mshr_county": "KING",
-            "mshr_postaladdressvalidfrom": "2012-09-20T20:14:27Z",
-            "mshr_postaladdressvalidto": "2154-12-31T23:59:59Z",
-            "mshr_primaryfield": "000041 | 000000538 | 9/20/2012 08:14:27 pm",
-            "_mshr_fk_worker_id_value": "00000d3c-0000-0000-d5ff-004105000000",
-            "mshr_payrollworkeraddressentityid": "000006f0-0000-0000-f90f-014105000000"
+    "mshr_personnelnumber": "000041",
+    "mshr_locationid": "000000538",
+    "mshr_islivedinaddress": 200000001,
+    "mshr_isworkedinaddress": 200000000,
+    "mshr_countryregionid": "USA",
+    "mshr_zipcode": "99025",
+    "mshr_street": "6543 Cypress Ave",
+    "mshr_city": "Tacoma",
+    "mshr_state": "WA",
+    "mshr_county": "KING",
+    "mshr_postaladdressvalidfrom": "2012-09-20T20:14:27Z",
+    "mshr_postaladdressvalidto": "2154-12-31T23:59:59Z",
+    "mshr_primaryfield": "000041 | 000000538 | 9/20/2012 08:14:27 pm",
+    "_mshr_fk_worker_id_value": "00000d3c-0000-0000-d5ff-004105000000",
+    "mshr_payrollworkeraddressentityid": "000006f0-0000-0000-f90f-014105000000"
 
 }
 ```
+
+## See also
+
+[Payroll integration API introduction](hr-admin-integration-payroll-api-introduction.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
