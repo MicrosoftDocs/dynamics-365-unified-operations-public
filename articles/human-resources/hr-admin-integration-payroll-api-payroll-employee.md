@@ -34,7 +34,7 @@ Physical name: mshr_payrollemployeeentity.
 
 ### Description
 
-This entity provides information about the employee.
+This entity provides information about the employee. You must set the [payroll integration parameters](hr-admin-integration-payroll-api-parameters.md) before using this entity.
 
 ## Properties
 
