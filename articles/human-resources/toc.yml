@@ -455,6 +455,10 @@
           href: hr-admin-integration-payroll-api-payroll-position.md
         - name: Payroll position job
           href: hr-admin-integration-payroll-api-payroll-position-job.md
+      - name: Leave and Absence related entities
+        items:
+          - name: Leave balance
+            href: hr-admin-integration-payroll-api-leave-balance.md
       - name: Option sets
         items:
           - name: Gender
