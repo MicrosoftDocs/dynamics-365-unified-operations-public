@@ -4,7 +4,7 @@
 title: Configure rates
 description: Rates in Microsoft Dynamics 365 Human Resources define how much employers and employees contribute for a benefit.
 author: andreabichsel
-ms.date: 06/15/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,10 +47,10 @@ Use rates to determine how much employees and employers pay for each benefit, ba
    | --- | --- |
    | **Rate** | A unique name that identifies the benefit rate. |
    | **Description** | A description of the benefit rate. |
-   | **Effective** | The date the rate is effective. The current system date is the default value.  This date should be on or before your benefit period.  A good rule is to set this to the date of the **Benefit plan**.
+   | **Effective** | The date the rate is effective. The current system date is the default value. This date should be on or before your benefit period. A good rule is to set this to the date of the **Benefit plan**.
    | **Expiration** | The end date of the rate. 12/31/2154 (which represents never) is the default value. |
-   | **Use tiers** |  You would use this if you have logic that is needed for determining a rate.  For example: If you need to have a rate that increases based on age, you would select this.  If you have a flat rate that doesn’t change you would leave this blank. Select **Single tier** for a one tier benefit rate or **Double tier** for a two tier benefit rate. An example of a double tier is a tier based on gender and age.	Once you select use tiers, select **Actions** at the top and select **Tier rateS**.  |
-   | **Payment frequency** | The payment frequency that determines how often the benefit premium rate is paid to the benefit provider. The rates that you enter in the form below, will be based on the payment frequency set here. Example: If you enter **Monthly** and an employee rate of 100, it is assumed this will cost the employee 100/month.  However, if the employee is paid twice a month (based on the benefit pay frequency set on the employee record), when the employee logs into ESS the amount they pay will be $50 as ESS shows their rate based on their payment frequency.|
+   | **Use tiers** |  You would use this if you have logic that is needed for determining a rate.  For example, if you need to have a rate that increases based on age, you would select this. If you have a flat rate that doesn’t change, you would leave this blank. Select **Single tier** for a one tier benefit rate or **Double tier** for a two tier benefit rate. An example of a double tier is a tier based on gender and age.	Once you select use tiers, select **Actions** at the top and select **Tier rateS**.  |
+   | **Payment frequency** | The payment frequency that determines how often the benefit premium rate is paid to the benefit provider. The rates that you enter in the page below will be based on the payment frequency set here. For example, if you enter **Monthly** and an employee rate of **$100**, it is assumed that this will cost the employee $100 per month.  However, if the employee is paid twice a month (based on the benefit pay frequency set on the employee record), when the employee logs into ESS the amount they pay will be $50, as ESS shows their rate based on their payment frequency.|
    | **Pay frequency rate rounding** | The methods for rounding the rate are: Standard, Truncated, Normal, Downward, and Rounding up. </br></br><ul><li>**Standard** - Always round up. For example, 10.611 will round to 10.62. -10.231 will round to -10.23. </li><li>**Truncated** - Always round down. For example, 10.619 will round to 10.61. -10.231 will round to -10.24. </li><li>**Normal** - Decimal values ending in or greater than 5 will round away from zero. Decimal values ending in or less than 4 will round toward zero. For example, 10.615 will round to 10.62. -10.235 will round to -10.24. 10.614 will round to 10.61. -10.234 will round to -10.23. </li><li>**Downward** - Round toward zero. For example, 10.619 will round to 10.61. -10.231 will round to -10.23. </li><li>**Rounding up** - Round away from zero. For example, 10.619 will round to 10.62. -10.231 will round to -10.24. |
    | **Non-smoker employee amount** | The amount the benefit provider charges for a nonsmoking employee. This is the amount the employer pays to the benefit provider and should be based on the payment frequency for the rate setup. |
    | **Non-smoker employer amount** | The amount the benefit provider charges for a nonsmoking employee. This is the amount the employer pays to the benefit provider and it should be based on the payment frequency for the rate setup. |
@@ -72,7 +72,7 @@ You can use tier rates in your rate setup if the rate varies depending on variou
 You can also use double tiers. If you select **Double tier** for the **Use tiers** value on the **Rate setup** form, you can define rates based on two dimensions. For example, you could configure a double tire system to say that if you are male and your age is up to 34.99, then the non-smoker amount is 2. If you are male and your age is up to 39.99, then the non-smoker amount is 3. If you are female and your age is up to 34.99, then the non-smoker amount is 1.8. If you are female and your age is up to 39.99, then the non-smoker amount is 2.8.
 
 > [!IMPORTANT]
->There is an option on the worker record, under personal information, to indicate if the employee is a smoker or not.  If the employee is recorded as a smoker, then the smoker rate will be used.  (The smoker indication is never shown to the employee)
+> There is an option on the worker record, under **Personal information**, to indicate if the employee is a smoker.  If the employee is recorded as a smoker, then the smoker rate will be used. (The smoker indication is never shown to the employee.)
    
 1. In the **Benefits management** workspace, under **Setup**, select **Rates**.
 
