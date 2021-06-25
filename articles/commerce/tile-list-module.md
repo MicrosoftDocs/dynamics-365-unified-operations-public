@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Tile List module 
-description: This topic covers Tile List modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+title: Tile and tile list modules 
+description: This topic covers tile and tile list modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 05/11/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,32 +26,37 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Tile List
+# Tile and tile list modules 
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-This topic covers Tile List modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
-A Tile list module is a collection of Tiles in a carousel. Its used to market product categories or product brands through a combination of images and text. For example, a retailer can add a Tile List module to the home page of an e-Commerce site to promote all the top-selling categories. 
-Tile List module is driven by data from the content management system (CMS) and doesn't depend on any other modules or data from the backoffice. It can be added to put on any site page where a retailer wants to market or promote something (for example, products, categories, brands etc).
+This topic covers tile and tile list modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-Below is an example of Tile List and Tile modules on Adventure works home page
+A tile list module is a collection of tiles in a carousel, and is used to market product categories or product brands with images and text. For example, a retailer can add a tile list module to the home page of an e-commerce site to promote all of the top-selling categories. 
 
-![Example of a Tile list module](./media/Tile_list.PNG)
+The tile list module is driven by data from the content management system (CMS) and doesn't depend on any other modules or data from Commerce headquarters. The tile list module can be added to any site page where a retailer wants to market or promote something (for example products, categories, or brands).
+
+The following example image shows a tile list and tile modules on the Adventure Works home page.
+
+![Example of tile list and tile modules on the Adventure Works home page](./media/Tile_list.PNG)
 
 > [!IMPORTANT]
-> Tile list module is available in Dynamics 365 Commerce 10.0.20.
-> [!IMPORTANT]
-> Tile list module is showcased in Adventure works theme.
+> The tile list module is available as of the Dynamics 365 Commerce version 10.0.20 release.
+> The tile list module is showcased in the Adventure Works theme.
 
-## Tile List and Tile modules and themes
+## Tile and tile list modules and themes
+
 Tile list module can support various layouts and styles based on a theme. For example, the Adventure works theme, the Tiles have an animation effect when user hovers on it. In addition, each theme can expose additional properties for Tile List and Tile modules. A theme developer can also build more layouts on for the module
 
-## Tile List module properties
+## Tile list module properties
+
 | Property name  | Values | Description |
 |----------------|--------|-------------|
 |Heading| Heading text, Heading tag| This property is used to set a heading for the Tile List|
 
 ## Tile module properties
+
 | Property name  | Values | Description |
 |----------------|--------|-------------|
 | Image          | Image file | An image can be used to showcase a product or a category. An image can be uploaded to the image gallery, or an existing image can be used. |
@@ -61,7 +66,8 @@ Tile list module can support various layouts and styles based on a theme. For ex
 |Tile Link | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab**| In addition, to providing Links, the Tile can have a re-directional link that takes it to a different page|
 |Icon| image | In addition to a background image, an icon can also be added. Icon will appear above the image|
 
-## Add a Tile List module to a new page
+## Add a tile list module to a new page
+
 To add a Tile List module to a new page and set the required properties, follow these steps.
 1. Go to **Templates**, and open **Marketing template** which is used for the home page (or create a new one)
 1. In the **Main** slot of the default page, add a tile list module.
@@ -78,6 +84,9 @@ To add a Tile List module to a new page and set the required properties, follow 
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
 
 ## Additional resources
+
 [Module library overview](starter-kit-overview.md)
-[Adventure works theme()
+
+[Adventure Works theme](adventure-works-theme.md)
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
