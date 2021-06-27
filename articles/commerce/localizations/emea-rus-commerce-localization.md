@@ -3,7 +3,7 @@
 
 title: Commerce localization for Russia
 description: This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Russia.
-author: akviklis
+author: v-ankvik
 ms.date: 06/23/2021
 ms.topic: article
 ms.prod: 
@@ -51,10 +51,10 @@ The following scenarios are supported by Commerce localization for Russia:
 
 - Cash-and-carry sales of goods
 - Returns of cash-and-carry sales of goods
-- Cash-and-carry sales of goods in offline mode?
 - Issuing gift cards and payments by gift cards
 - Registering and processing customer orders in the POS
 - Posting fiscal documents in retail statements in Commerce headquarters
+- Processing of prepayments and posting of VAT for prepayments in Commerce headquarters
 - Sales via e-Commerce storefronts
 - Call center sales
 
@@ -65,28 +65,29 @@ Fiscal registration is the immediate registration of retail sales per local fisc
 The Commerce functionality for Russia includes a sample integration of the point of sale (POS) with a fiscal printer. The sample extends the [fiscal integration functionality](../localizations/fiscal-integration-for-retail-channel.md) and supports the API of fiscal printers from [ATOL](http://integration.atol.ru/). The sample enables communication with a fiscal printer that is connected via a COM port by using a native software driver. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
 ## Availability of Commerce localization features for Russia
-
-| Feature                                                                  | General availability (GA) | Post-GA | Not planned |
-|--------------------------------------------------------------------------|---------------------------|---------|-------------|
-| Cash payments: Process cash payment transactions in retail sales         | X                         |         |             |
-| Cash payments: Changes in aggregation                                    | X                         |         |             |
-| Prepayments: Customer account deposit and Customer order deposit         | X                         |         |             |
-| Prepayments: Cancellation charges and testing of settlement              | X                         |         |             |
-| Retail statements in Commerce headquarters                               | X                         |         |             |
-| Simplified address format                                                | X                         |         |             |
-| Gift cards: Issue gift card, add to gift card                            | X                         |         |             |
-| Gift cards: Payment with gift card: settlement, different customers      | X                         |         |             |
-| Loyalty program                                                          | X                         |         |             |
-| Return controls                                                          | X                         |         |             |
-| E-commerce capabilities for Russia?                                      |                           | X       |             |
-| N-1 support for upgrade from AX 2012 R3                                  |                           |         | X           |
+| Feature | General availability (GA) | Post-GA | Not planned |
+|-|-|-|-|
+| Processing of cash payments using petty cash journals in Commerce headquarters | X |  |  |
+| Processing of prepayments and posting of VAT for prepayments in Commerce headquarters | X |  |  |
+| Handling of customer returns according to local requirements | X |  |  |
+| A sample of the integration of the POS with a fiscal printer | X |  |  |
+| Support of customer orders in fiscal printer integration |  | X |  |
+| Return policies (payment method control, etc.) |  | X |  |
+| Processing of issued gift cards as prepayments and a fiscal printer functionality to support this |  | X |  |
+| Processing of a loyalty point redemption as a price discount in a retail transaction and a fiscal printer functionality to support this |  | X |  |
+| Payment integration |  | X |  |
+| E-commerce capabilities for Russia |  | X |  |
+| Gift card policies |  |  | X |
+| Pricing enhancements |  |  | X |
+| Labeling enhancements |  |  | X |
+| N-1 support for upgrade from AX 2012 R3 |  |  | X |
 
 ## Commerce functionality for Russia
 
 Commerce functionality for Russia consists of the following parts:
 
 - Common POS features that are available to customers in all countries or regions.
-- Russian-specific features, such as Customer account deposit and Customer order deposit prepayments.
+- Russian-specific features, such as cash payments using petty cash journals, prepayments and posting of VAT for prepayments, sample of the integration of the POS with a fiscal printer, etc.
 
 ### Common POS features
 
@@ -96,10 +97,16 @@ To learn about POS features that are available to customers in all countries or 
 
 The following Russian-specific POS features are enabled after the Commerce localization for Russia has been set up and deployed:
 
-- Electronic Fiscal Document for Consumers in Russia
+- A sample of the integration of the POS with a fiscal printer
 - Customer account deposit and Customer order deposit prepayments
+- Support of customer orders in fiscal printer integration
+- Cash payments using petty cash journals in Commerce headquarters
+- Prepayments and posting of VAT for prepayments in Commerce headquarters
 - Prepaymant cancellation charges
+- Payment integration
 - Simplified address format
-- Posting and control of electronic fiscal documents
+- Processing of issued gift cards as prepayments and a fiscal printer functionality to support this
+- Processing of a loyalty point redemption as a price discount in a retail transaction and a fiscal printer functionality to support this
+- Posting and control of electronic fiscal documents in Commerce headquarters
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
