@@ -267,7 +267,9 @@ The **Email parameters** page allows an administrator to select **Exchange** as 
 If troubleshooting is needed, ensure that it’s possible to sign in to the current user's account and that emails can be sent from that account to the intended recipients.
 
 > [!IMPORTANT]
-> The Exchange mail provider is not supported for external users, as those users will not have Exchange accounts on that tenant
+> The Exchange mail provider is 
+> -  Not supported for external users, as those users will not have Exchange accounts on the system tenant
+> -  Only available in Microsoft-hosted environments
 
 ## Troubleshooting
 
