@@ -42,7 +42,7 @@ This entity provides the payroll residency location and payroll work location fo
 | --- | --- | --- |
 | **City**</br>mshr_city</br>*String* | Read-only</br>Required | The city defined for the address.   |
 | **Personnel number**</br>mshr_personnelnumber</br>*String* | Read-only</br>Required | The employee's unique personnel number.  |
-| **Country region**</br>mshr_countryregionid</br>*String* | Read-only</br>Required | The country region defined for the address  |
+| **Country region**</br>mshr_countryregionid</br>*String* | Read-only</br>Required | The country region defined for the address.  |
 | **Valid from**</br>mshr_postaladdressvalidfrom</br>*Date Time Offset* | Read-only </br>Required | The date the address is valid from. |
 | **Worked in address** </br> mshr_isworkedinaddressbr </br>*[mshr_NoYes option set](hr-admin-integration-payroll-api-no-yes.md)* | Read-only</br>Required | Denotes if the address is where the employee works. |
 | **County**</br>mshr_county</br>*String* | Read-only</br>Required | The county defined for the address.  |
