@@ -117,7 +117,7 @@ Prospect-to-cash includes a collection of core table maps that work together dur
 [CDS sales quotation header](mapping-reference.md#215) | quotes | |
 [CDS sales quotation lines](mapping-reference.md#214) | quotedetails | |
 [Released products V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
-[Sales invoice headers V2](mapping-reference.md#118) | invoices | The Sales invoice headers V2 table in the Finance and Operations app contains invoices for sales orders and free text invoices. A filter is applied in Dataverse for dual-write that will filter out any free text invoice documents. | |
+[Sales invoice headers V2](mapping-reference.md#118) | invoices | The Sales invoice headers V2 table in the Finance and Operations app contains invoices for sales orders and free text invoices. A filter is applied in Dataverse for dual-write that will filter out any free text invoice documents. |
 [Sales invoice lines V2](mapping-reference.md#117) | invoicedetails | |
 [Sales order origin codes](mapping-reference.md#186) | msdyn_salesorderorigins | |
 
