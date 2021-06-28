@@ -50,7 +50,7 @@ Physical name: mshr_essleavebalanceentities.
 | **Data area ID**</br>mshr_dataareaid_id</br>*String* | Read-only | Specifies the legal entity (company). |
 | **Primary field**</br>mshr_primaryfield</br>*GUID* | Read-only</br>System generated | |
 | **Leave type Id**</br>_mshr_fk_leavetype_id_value</br>*GUID* | Read-only</br>Foreign key:mshr_essleavetypeentityid of mshr_essleavetypeentity entity  | Leave type ID |
-| **Leave balance entity**</br>mshr_essleavebalanceentityid</br>*GUID* | Sytem generated | A system-generated GUID value to uniquely identify the balance. |
+| **Leave balance entity**</br>mshr_essleavebalanceentityid</br>*GUID* | System generated | A system-generated GUID value to uniquely identify the balance. |
 
 ## Example query
 
