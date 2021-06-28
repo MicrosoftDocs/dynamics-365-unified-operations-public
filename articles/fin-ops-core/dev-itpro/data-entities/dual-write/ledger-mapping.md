@@ -22,7 +22,7 @@ In a business application, ledger data defines the core set up for how a company
 
 Ledger data includes a collection of core financial table maps that work together during data interaction, as shown in the following table.
 
-Finance and Operations apps      | Model-driven app in Dynamics 365 | Description
+Finance and operations apps | Customer engagement apps     | Description
 ---------------------------------|----------------------------------|------------
 [CDS Exchange Rates](mapping-reference.md#123) | msdyn_currencyexchangerates |
 [Chart of accounts](mapping-reference.md#121) | msdyn_chartofaccountses |

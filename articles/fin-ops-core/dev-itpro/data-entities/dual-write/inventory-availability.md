@@ -55,7 +55,7 @@ When you select the **On-hand Inventory** button on the **Quotes**, **Orders**, 
 
 The following templates are available for the exposing the onhand inventory data.
 
-Finance and Operations apps | Customer engagement app | Description
+Finance and operations apps | Customer engagement apps     | Description
 ---|---|---
 [CDS inventory on-hand entries](mapping-reference.md#145) | msdyn_inventoryonhandentries |
 [CDS inventory on-hand requests](mapping-reference.md#147) | msdyn_inventoryonhandrequests |

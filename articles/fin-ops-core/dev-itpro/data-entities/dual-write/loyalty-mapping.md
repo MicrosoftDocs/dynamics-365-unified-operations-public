@@ -21,10 +21,10 @@ Businesses classify customers and provide sophisticated services, based on custo
 
 ## Templates
 
-| Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
+Finance and operations apps | Customer engagement apps     | Description
 |-----------------------------|-----------------------------------|-------------|
-[Loyalty card](#149) | msdyn_loyaltycards | This template syncs information about customer loyalty cards. |
-[Loyalty levels](#226) | msdyn_loyaltylevels | This template syncs information about customer reward points. |
-[Loyalty reward points](#150) | msdyn_loyaltyrewardpoints | |
+[Loyalty card](mapping-reference.md#149) | msdyn_loyaltycards | This template syncs information about customer loyalty cards. |
+[Loyalty levels](mapping-reference.md#226) | msdyn_loyaltylevels | This template syncs information about customer reward points. |
+[Loyalty reward points](mapping-reference.md#150) | msdyn_loyaltyrewardpoints | |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
