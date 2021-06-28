@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: Access to finance and tax reference data
 description: This topic provides information about access to finance and tax reference data.
 author: RamaKrishnamoorthy
 ms.date: 01/27/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-01-27
-
 ---
 
 # Access to finance and tax reference data
@@ -39,6 +23,5 @@ Finance and tax data is integrated by using the following mappings:
 
 + [Integrated ledger](ledger-mapping.md)
 + [Integrated tax master](tax-mapping.md)
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
