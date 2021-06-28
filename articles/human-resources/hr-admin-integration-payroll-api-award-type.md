@@ -34,7 +34,7 @@ This topic describes the Award option set for Dynamics 365 Human Resources.
 
 Physical name: mshr_HrmCompVarAwardEmplType
 
-This enumeration provides option set for variable compensation award type in Human Resources virtual entities.
+This enumeration provides the option set for variable compensation award type in Human Resources virtual entities.
 
 | Value | Label | Description |
 | --- | --- | --- |
