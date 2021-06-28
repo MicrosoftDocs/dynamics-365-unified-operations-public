@@ -71,7 +71,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `NAME` | = | `msdyn_name` |
 `NOTES` | = | `msdyn_notes` |
 `PURCHASEORDERID` | = | `msdyn_purchaseorderid` |
-`REPLACEMENTDATE` | ><<br>`1/1/1900` : `` | `msdyn_replacementdate` |
+`REPLACEMENTDATE` | ><<br>`1/1/1900` : blank | `msdyn_replacementdate` |
 `REPLACEMENTVALUE` | = | `msdyn_replacementvalue` |
 `SERIALID` | = | `msdyn_serialid` |
 `VENDACCOUNT` | = | `msdyn_vendaccount` |
@@ -1437,7 +1437,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `POSITIONTYPEID` | = | `cdm_name` |
 `DESCRIPTION` | = | `cdm_description` |
-`CLASSIFICATION` | ><<br>`fulltime` : `754400000`<br>`parttime` : `754400001`<br>`` : `754400002` | `cdm_classification` |
+`CLASSIFICATION` | ><<br>`fulltime` : `754400000`<br>`parttime` : `754400001`<br>blank : `754400002` | `cdm_classification` |
 
 ###  <a name="111"></a>Position worker assignments (cdm_positionworkerassignmentmaps)
 
