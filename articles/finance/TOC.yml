@@ -2226,6 +2226,8 @@
             href: localizations/ind-news-letter-10-0-13.md
           - name: What's new or changed in 10.0.14
             href: localizations/apac-ind-news-letter-10-0-14.md 
+          - name: What's new or changed in 10.0.15 - 10.0.19
+            href: localizations/ind-news-letter-10-0-15-19.md
         - name: Indirect taxes
           items: 
           - name: India GST
