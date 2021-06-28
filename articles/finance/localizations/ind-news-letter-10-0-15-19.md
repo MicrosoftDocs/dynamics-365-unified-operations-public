@@ -4,7 +4,7 @@
 title: What's new or changed for the Indian GST localization in 10.0.15-10.0.19
 description: This topic describes new or changed functionality for Indian Goods and Services Tax (GST) features in Microsoft Dynamics 365 Finance versions 10.0.15 through 10.0.19.
 author: prabhatb
-ms.date: 06/24/2021
+ms.date: 06/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -171,7 +171,7 @@ To provide a better performance experience, TDS and TCS inquiries will be includ
 
 ### Assessable value update issue for item-type BOMs
 
-The upcoming release will fix an issue where the system selects the base value of a sale price at the item level but doesn't select the net amount value to the assessable value for an item-type bill of materials (BOM).
+The upcoming release will fix an issue where the system selects the base value of a sale price at the item level but doesn't select the net amount value of the assessable value for an item-type bill of materials (BOM).
 
 ### Vendor invoice line issue
 
