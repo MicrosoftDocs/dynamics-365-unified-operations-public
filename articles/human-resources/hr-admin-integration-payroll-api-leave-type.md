@@ -40,14 +40,14 @@ Physical name: mshr_essleavetypeentity.
 
 | Property</br>**Physical name**</br>***Type*** | Use | Description |
 | --- | --- | --- |
-| **Leave type id**</br>mshr_leavetypeid</br>*String* | Read-only | The leave type id. |
+| **Leave type id**</br>mshr_leavetypeid</br>*String* | Read-only | The leave type ID. |
 | **Description**</br>mshr_description</br>*String* | Read-only | A description of the leave type. |
 | **Category**</br>mshr_category</br>*mshr_LeaveTypeCategory option set* | Read-only | The leave type category. |
 | **Reason code required**</br>mshr_isreasoncoderequired</br>*mshr_NoYes option set* | Read-only | Defines if a reason code is required for the leave type. |
 | **Leave unity**</br>mshr_leaveamountunit</br>*mshr_LeaveAmountUnit option set* | Read-only | The unity of this leave type. |
 | **Enable half day**</br>mshr_enablehalfdaydefinition</br>*mshr_NoYes option set* | Defines if half day is enabled for the leave type. |
 | **Data area ID**</br>mshr_dataareaid_id</br>*String* | Read-only | Specifies the legal entity (company). |
-| **Leave type entity**</br>mshr_essleavetypeentityid</br>*GUID* | Sytem generated | A system-generated GUID value to uniquely identify the leave type. |
+| **Leave type entity**</br>mshr_essleavetypeentityid</br>*GUID* | System generated | A system-generated GUID value to uniquely identify the leave type. |
 
 ## Example query
 
