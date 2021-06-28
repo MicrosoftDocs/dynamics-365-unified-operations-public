@@ -57,7 +57,7 @@ To create a new document type, follow these steps.
 
 Microsoft SharePoint Online is one of the storage locations that are supported natively. Currently, only SharePoint Online is supported. Support for on-premises SharePoint (a local SharePoint server) may be added in the future. 
 
-> [!NOTE]
+> [!IMPORTANT]
 > SharePoint storage is only available in Microsoft-hosted environments.
 
 To use SharePoint storage, set the **Location** field for a document type to **SharePoint**. Then, in the **SharePoint Address** field, enter a valid SharePoint address.
