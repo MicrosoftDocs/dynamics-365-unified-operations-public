@@ -48,7 +48,7 @@ Physical name:
 | **Position job ID value**<br>_mshr_fk_positionjob_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key:mshr_PayrollPositionJobEntity of the mshr_payrollpositionjobentity |The ID of the job associated with the position.|
 | **Fixed compensation plan ID value**<br>_mshr_fk_fixedcompplan_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_FixedCompPlan_id of mshr_payrollfixedcompensationplanentity  | The ID of the fixed compensation plan associated with the position. |
 | **Pay cycle ID**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | The pay cycle defined on the position. |
-| **Paid by legal entity**<br>paidbylegalentity<br>*String* | Read-only<br>Required | The legal entity defined on the positoin responsible for issuing payment. |
+| **Paid by legal entity**<br>paidbylegalentity<br>*String* | Read-only<br>Required | The legal entity defined on the position responsible for issuing payment. |
 | **Position ID**<br>mshr_positionid<br>*String* | Read-only<br>Required | The ID of the position. |
 | **Valid to**<br>validto<br>*Date Time Offset* | Read-only<br>Required |The date the position details are valid from.  |
 | **Valid from**<br>validfrom<br>*Date Time Offset* | Read-only<br>Required |The date the position details are valid to.  |
