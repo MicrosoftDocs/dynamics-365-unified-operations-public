@@ -37,7 +37,7 @@ When a non-sellable contact participates in a quotation or order process, **Sell
 
 Customer data includes all information about the customer, such as the customer group, addresses, contact information, payment profile, invoice profile, and loyalty status. A collection of table maps works together during customer data interaction, as shown in the following table.
 
-Finance and Operations apps | Other Dynamics 365 apps         | Description
+Finance and operations apps | Customer engagement apps         | Description
 ----------------------------|---------------------------------|------------
 [CDS Contacts V2](mapping-reference.md#115) | contacts | This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors.
 [Customer groups](mapping-reference.md#126) | msdyn_customergroups | This template synchronizes customer group information.
