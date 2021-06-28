@@ -269,7 +269,7 @@ If troubleshooting is needed, ensure that it’s possible to sign in to the curr
 > [!IMPORTANT]
 > The Exchange mail provider is: 
 > -  Not supported for external users, as those users will not have Exchange accounts on the system tenant.
-> -  Only available in Microsoft-hosted environments.
+> -  Only available in Microsoft-managed environments.
 
 ## Troubleshooting
 
