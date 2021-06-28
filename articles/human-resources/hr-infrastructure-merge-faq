@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Dynamics 365 Human Resources infrastrucutre merge FAQ 
+# Dynamics 365 Human Resources infrastructure merge FAQ 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -73,7 +73,7 @@ If your organization uses Dynamics 365 Human Resources but doesn’t use any oth
 
 Tooling will be in place to allow you to test the migration process and validate your data and experience prior to migrating your production environment. 
 
-If your organization uses both Dynamics 365 Human Resources and otherFinance and Operations apps, then you will need to plan more time for validation to ensure that your data migrates correctly to the new environment. The migration to the new infrastructure will merge the data from your Human Resources environment with your Finance and Operations environment. Tooling will be in place to automate as much as the data merge process as possible. But there will be instances of conflicting data that will need user input to define how to resolve the conflict. Users and administrators will need to manage these data mappings where there are conflicts and test the migration in sandbox environments prior to migrating your production environment.
+If your organization uses both Dynamics 365 Human Resources and other Finance and Operations apps, then you will need to plan more time for validation to ensure that your data migrates correctly to the new environment. The migration to the new infrastructure will merge the data from your Human Resources environment with your Finance and Operations environment. Tooling will be in place to automate as much as the data merge process as possible. But there will be instances of conflicting data that will need user input to define how to resolve the conflict. Users and administrators will need to manage these data mappings where there are conflicts and test the migration in sandbox environments prior to migrating your production environment.
 
 ### Our organization uses the HR module within Dynamics 365 Finance, Supply Chain Management, Commerce, or Project Operations.  What do we need to plan for to migrate to the new experience?
 
