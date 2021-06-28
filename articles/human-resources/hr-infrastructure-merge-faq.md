@@ -55,7 +55,7 @@ The capabilities and investments that have been made in Dynamics 365 Human Resou
 
 ### Will I lose any features or capabilities that I use today?
 
-There will be functional parity with both Dynamics 365 Human Resources and the Finance and Operations apps HR Module. Dynamics 365 Human Resources will take precedence for like features. For more information, see [Feature management overview](fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). 
+There will be functional parity with both Dynamics 365 Human Resources and the Finance and Operations apps HR Module. Dynamics 365 Human Resources will take precedence for like features. For more information, see [Feature management overview](/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). 
 
 ### Will the experience change for my users?
 
