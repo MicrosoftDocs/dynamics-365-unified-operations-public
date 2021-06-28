@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: Customer loyalty cards and reward points
 description: This topic describes the integration of data about customer loyalty cards and reward points in dual-write.
 author: RamaKrishnamoorthy
 ms.date: 03/10/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-03-10
-
 ---
 
 # Customer loyalty cards and reward points
@@ -39,14 +23,8 @@ Businesses classify customers and provide sophisticated services, based on custo
 
 | Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
 |-----------------------------|-----------------------------------|-------------|
-| Loyalty card                | msdyn\_loyaltycards               | This template syncs information about customer loyalty cards. |
-| Loyalty reward points       | msdyn\_loyaltyrewardpoints        | This template syncs information about customer reward points. |
-
-[!include [banner](includes/dual-write-symbols.md)]
-
-[!include [mapping loyalty card](includes/LoyaltyCard-msdyn-loyaltycards.md)]
-
-[!include [mapping reward points](includes/LoyaltyRewardPoints-msdyn-loyaltyrewardpoints.md)]
-
+[Loyalty card](#149) | msdyn_loyaltycards | This template syncs information about customer loyalty cards. |
+[Loyalty levels](#226) | msdyn_loyaltylevels | This template syncs information about customer reward points. |
+[Loyalty reward points](#150) | msdyn_loyaltyrewardpoints | |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -24,18 +24,18 @@ Ledger data includes a collection of core financial table maps that work togethe
 
 Finance and Operations apps      | Model-driven app in Dynamics 365 | Description
 ---------------------------------|----------------------------------|------------
-[CDS Exchange Rates](#123) | msdyn_currencyexchangerates |
-[Chart of accounts](#121) | msdyn_chartofaccountses |
-[Currencies](#218) | transactioncurrencies |
-[Exchange rate currency pair](#122) | msdyn_currencyexchangeratepairs |
-[Exchange rate type](#129) | msdyn_exchangeratetypes |
-[Financial dimension format](#130) | msdyn_financialdimensionformats |
-[Financial dimensions](#128) | msdyn_dimensionattributes |
-[Fiscal calendar integration entity](#132) | msdyn_fiscalcalendars |
-[Fiscal calendar period](#131) | msdyn_fiscalcalendarperiods |
-[Fiscal calendar year integration entity](#133) | msdyn_fiscalcalendaryears |
-[Ledger](#148) | msdyn_ledgers |
-[Main account](#152) | msdyn_mainaccounts |
-[Main account categories](#151) | msdyn_mainaccountcategories |
+[CDS Exchange Rates](mapping-reference.md#123) | msdyn_currencyexchangerates |
+[Chart of accounts](mapping-reference.md#121) | msdyn_chartofaccountses |
+[Currencies](mapping-reference.md#218) | transactioncurrencies |
+[Exchange rate currency pair](mapping-reference.md#122) | msdyn_currencyexchangeratepairs |
+[Exchange rate type](mapping-reference.md#129) | msdyn_exchangeratetypes |
+[Financial dimension format](mapping-reference.md#130) | msdyn_financialdimensionformats |
+[Financial dimensions](mapping-reference.md#128) | msdyn_dimensionattributes |
+[Fiscal calendar integration entity](mapping-reference.md#132) | msdyn_fiscalcalendars |
+[Fiscal calendar period](mapping-reference.md#131) | msdyn_fiscalcalendarperiods |
+[Fiscal calendar year integration entity](mapping-reference.md#133) | msdyn_fiscalcalendaryears |
+[Ledger](mapping-reference.md#148) | msdyn_ledgers |
+[Main account](mapping-reference.md#152) | msdyn_mainaccounts |
+[Main account categories](mapping-reference.md#151) | msdyn_mainaccountcategories |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
