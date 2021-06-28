@@ -33,8 +33,6 @@ ms.search.validFrom: 2020-03-16
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
 This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse. Specifically, it provides information that can help you fix issues with live synchronization.
 
 > [!IMPORTANT]
@@ -135,6 +133,5 @@ To fix the issue, follow these steps.
 
 3. Make sure that the **externalenvironmentURL** column has the correct Dataverse or app URL. Delete any duplicate rows that point to the wrong Dataverse URL. Delete the corresponding rows in the DUALWRITEPROJECTFIELDCONFIGURATION and DUALWRITEPROJECTCONFIGURATION tables.
 4. Stop the table mapping, and then restart it
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
