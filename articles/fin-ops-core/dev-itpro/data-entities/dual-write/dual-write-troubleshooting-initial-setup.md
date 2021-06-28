@@ -75,7 +75,7 @@ To provide app consent, follow these steps.
 
 To ensure that dual-write works correctly, the companies that you select during configuration are created in the Dataverse environment. By default, these companies are read-only, and the **IsDualWriteEnable** property is set to **True**. In addition, the default owning business unit owner and team are created and include the company name. Before you enable the maps, verify that the default team owner is specified. To find the **Companies (CDM\_Company)** table, follow these steps.
 
-1. In the model-driven app in Dynamics 365, select the filter in the upper-right corner.
+1. In the customer engagement app, select the filter in the upper-right corner.
 2. In the drop-down list, select **Company**.
 3. Select **Run** to see the results.
 4. Select the company that was linked when you configured dual-write.

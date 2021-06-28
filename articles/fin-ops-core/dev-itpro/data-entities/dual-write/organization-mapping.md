@@ -35,12 +35,12 @@ Product information contains all the information related to the product and its 
 
 Finance and operations apps | Customer engagement apps     | Description
 -----------------------|--------------------------------|---
-[Legal entities](#102) | cdm_companies | Provides bidirectional synchronization of legal entity (company) information.
-[Legal entities](#142) | msdyn_internalorganizations |
-[Operating unit](#143) | msdyn_internalorganizations |
-[Organization hierarchy - published](#139) | msdyn_internalorganizationhierarchies | This template provides one-way synchronization of the Organization Hierarchy Published table.
-[Organization hierarchy purposes](#140) | msdyn_internalorganizationhierarchypurposes | This template provides one-way synchronization of the Organization Hierarchy Purpose table.
-[Organization hierarchy type](#141) | msdyn_internalorganizationhierarchytypes | This template provides one-way synchronization of the Organization Hierarchy Type table.
+[Legal entities](mapping-reference.md#102) | cdm_companies | Provides bidirectional synchronization of legal entity (company) information.
+[Legal entities](mapping-reference.md#142) | msdyn_internalorganizations |
+[Operating unit](mapping-reference.md#143) | msdyn_internalorganizations |
+[Organization hierarchy - published](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | This template provides one-way synchronization of the Organization Hierarchy Published table.
+[Organization hierarchy purposes](mapping-reference.md#140) | msdyn_internalorganizationhierarchypurposes | This template provides one-way synchronization of the Organization Hierarchy Purpose table.
+[Organization hierarchy type](mapping-reference.md#141) | msdyn_internalorganizationhierarchytypes | This template provides one-way synchronization of the Organization Hierarchy Type table.
 
 ## Internal Organization
 

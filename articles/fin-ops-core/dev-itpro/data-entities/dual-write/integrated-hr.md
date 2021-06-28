@@ -22,7 +22,7 @@ While mastered in only one app, worker data can be synchronized across multiple 
 
 ## Human resources
 
-The integration of HR data involves just mapping the HR data between Finance and Operations apps and model-driven apps in Dynamics 365.
+The integration of HR data involves just mapping the HR data between finance and operations apps and customer engagement apps.
 
 ## Templates
 

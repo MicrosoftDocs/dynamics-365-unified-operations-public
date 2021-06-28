@@ -87,7 +87,7 @@ To fix the issue, you must assign the correct security role to the team of the m
 
     ![Organization mapping](media/mapped_business_unit.png)
 
-2. Sign in to the environment in the model-driven app in Dynamics 365, navigate to **Setting \> Security**, and find the team of the mapped business unit.
+2. Sign in to the environment in the customer engagement app, navigate to **Setting \> Security**, and find the team of the mapped business unit.
 
     ![Team of the mapped business unit](media/setting_security_page.png)
 
@@ -109,7 +109,7 @@ CustCustomerV3Entity**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseErr
 creation failed with error Invalid URI: The URI is
 empty."}\],"isErrorCountUpdated":true}*
 
-Here is what the error looks like in the model-driven app in Dynamics 365:
+Here is what the error looks like in the customer engagement app:
 
 *An unexpected error occurred from ISV code. (ErrorType = ClientError) Unexpected exception from plug-in (Execute): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: failed to process entity account - (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond*
 
