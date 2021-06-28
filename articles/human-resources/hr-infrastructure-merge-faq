@@ -3,7 +3,7 @@
 # required metadata
 
 title: Dynamics 365 Human Resources infrastructure merge
-description: This topic lists frequently asked questions about the infrastructure merge for Dynamics 365 Human Resources with the Finance and Operations app platform. 
+description: This topic lists frequently asked questions about the infastructure merge for Dynamics 365 Human Resources with the Finance and Operations app platform. 
 author: rachel-profitt
 ms.date: 10/13/2020
 ms.topic: article
@@ -42,12 +42,12 @@ Dynamics 365 Human Resources is a stand-alone application that uses a different 
 
 ## Value and benefit of the infrastructure merge
 
-### Our organization uses Dynamics 365 Human Resources to manage my HR operations. What benefits will we see from these changes? 
+### Our organization uses Dynamics 365 Human Resources to manage our HR operations. What benefits will we see from these changes? 
 
--	Elimination of multiple sets of HR capabilities within Dynamics 365
--	Provide both Power Platform extensibility and means to extend business logic and feature options
+-	Elimination of multiple sets of HR capabilities within Dynamics 365.
+-	Provide both Power Platform extensibility and means to extend business logic and feature options.
 -	Bring consistency between Dynamics 365 Human Resources and other Operations apps in terms of Application Life Cycle Management, Lifecycle Services, Geographic availability, extensibility, and more
--	Take advantage of shared services, tooling, and reduce costs
+-	Take advantage of shared services, tooling, and reduce costs.
 
 ### Our organization uses the HR module within Dynamics 365 Finance, Supply Chain Management, Commerce, or Project Operations.  What benefits will we see from these changes?
 
