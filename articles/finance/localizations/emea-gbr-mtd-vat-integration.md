@@ -576,8 +576,8 @@ To prepare ER configurations to generate the common VAT return for a VAT group, 
 |-----------------------------------|-------------|
 | Tax declaration model.version.**32** | Generic model for different tax declarations. |
 | Tax declaration model mapping.version.**32.35** | Generic model mapping for VAT declarations. |
-| MTD VAT returns exporting JSON (UK).version.**32.27** | VAT return in JSON format for submission to MTD HMRC. |
-| MTD VAT returns exporting EXCEL (UK).version.**32.27.7** | **VAT 100** report (declaration in Excel format). |
+| VAT Declaration JSON (UK).version.**32.28** | VAT return in JSON format for submission to MTD HMRC. |
+| VAT Declaration Excel (UK).version.**32.28.8** | **VAT 100** report (declaration in Excel format). |
 
 In these versions and later, the tax declaration model, model mapping, and both formats for the UK VAT return support cross-company tax transaction data sources, and they can be used to aggregate data from several legal entities. These configurations can still be used to report the VAT return for just one legal entity.
 
@@ -586,11 +586,11 @@ In these versions and later, the tax declaration model, model mapping, and both 
 
 To use the formats to report the VAT return for a group of several legal entities, you must set up application-specific parameters **for each legal entity that is included into the group**.
 
-1. In the **Electronic reporting** workspace, select **Tax declaration model**, and then, in the configuration tree, select the **MTD VAT returns exporting JSON (UK)** format. 
+1. In the **Electronic reporting** workspace, select **Tax declaration model**, and then, in the configuration tree, select the **VAT Declaration JSON (UK)** format. 
 2. In the upper-right corner, select the legal entity that tax transactions must be included for in the VAT return for the VAT group.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**. In the left pane of the **Application specific parameters** page, select the latest version of the format. Then, on the **Conditions** FastTab, define conditions. For more information about how to define conditions, see the [Set up application-specific parameters](#set-up-application-specific-parameters) section earlier in this topic. Finally, change the status to **Completed**, save your changes, and close the **Application specific parameters** page.
 4. Repeat steps 2 through 3 for the other legal entities in your system that are included in the VAT group.
-5. Repeat steps 1 through 4 above for the **MTD VAT returns exporting EXCEL (UK)** format.
+5. Repeat steps 1 through 4 above for the **VAT Declaration Excel (UK)** format.
 
 ### Set up additional Electronic messages functionality to collect data from several legal entities for VAT return reporting for a VAT group
 
@@ -1252,8 +1252,8 @@ The following versions of the ER configurations must be imported and used for th
 |----------------------------------------------------------|-------------|
 | Tax declaration model.version.**32**                     | Generic model for different tax declarations. |
 | Tax declaration model mapping.version.**32.35**          | Generic model mapping for VAT declarations. |
-| MTD VAT returns exporting JSON (UK).version.**32.27**    | VAT return in JSON format for submission to MTD HMRC. |
-| MTD VAT returns exporting EXCEL (UK).version.**32.27.7** | **VAT 100** report (declaration in Excel format). |
+| VAT Declaration JSON (UK).version.**32.28**    | VAT return in JSON format for submission to MTD HMRC. |
+| VAT Declaration Excel (UK).version.**32.28.8** | **VAT 100** report (declaration in Excel format). |
 
 For Finance and Operations 7.3, KB 4513052 must be installed. In addition, the latest version of the ER update and the following versions of Electronic reporting configurations must be used.
 
@@ -1261,8 +1261,8 @@ For Finance and Operations 7.3, KB 4513052 must be installed. In addition, the l
 |----------------------------------------------------------|-------------|
 | Tax declaration model.version.**32**                     | Generic model for different tax declarations. |
 | Tax declaration model mapping.version.**32.38**          | Generic model mapping for VAT declarations. |
-| MTD VAT returns exporting JSON (UK).version.**32.28**    | VAT return in JSON format for submission to MTD HMRC. |
-| MTD VAT returns exporting EXCEL (UK).version.**32.28.8** | **VAT 100** report (declaration in Excel format). |
+| VAT Declaration JSON (UK).version.**32.28**    | VAT return in JSON format for submission to MTD HMRC. |
+| VAT Declaration Excel (UK).version.**32.28.8** | **VAT 100** report (declaration in Excel format). |
 
 These versions of the ER configurations are also compatible with Finance version 10.0.7 and later. 
 
