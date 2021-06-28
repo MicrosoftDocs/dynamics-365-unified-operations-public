@@ -41,8 +41,8 @@ Physical name: mshr_essleavebalanceentities.
 | Property</br>**Physical name**</br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Personnel number**</br>mshr_personnelnumber</br>*String* | Read-only | The employee's unique personnel number. |
-| **Current balance**</br>mshr_balanceavailable</br>*Decimal* | Read-only | The employee's current balance |
-| **Type**</br>mshr_balanceavailable</br>*String* | Read-only | The leave type id. |
+| **Current balance**</br>mshr_balanceavailable</br>*Decimal* | Read-only | The employee's current balance. |
+| **Type**</br>mshr_balanceavailable</br>*String* | Read-only | The leave type ID. |
 | **Accrual rate**</br>mshr_accrualratedescription</br> | Read-only | The accrual rate. |
 | **Last carry-forward amount**</br>mshr_lastcarryforwardamount</br>*Decimal* | Read-only | The last carry-forward amount. |
 | **Taken this year**</br>mshr_takenthisyear</br>*Decimal* | Read-only | The amount of leave taken this year. |
