@@ -1,7 +1,8 @@
 ---
 author: robinarh
+ms.service: dynamics-ax-applications
 ms.topic: include
-ms.date: 3/4/2021
+ms.date: 6/28/2021
 ms.author: rhaertle
 ---
 
@@ -35,10 +36,10 @@ This template synchronizes data between Finance and Operations apps and Datavers
 
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
-`DELETEOPENCALENDARLINES` | >< | `msdyn_deleteopencalendarlines` |
+`DELETEOPENCALENDARLINES` | ><<br>yes : True<br>no : False | `msdyn_deleteopencalendarlines` |
 `LIFECYCLESTATEID` | = | `msdyn_assetlifecyclestate_id` |
 `LINE` | = | `msdyn_line` |
-`MAINTENANCEASSETACTIVE` | >< | `msdyn_maintenanceassetactive` |
+`MAINTENANCEASSETACTIVE` | ><<br>yes : True<br>no : False | `msdyn_maintenanceassetactive` |
 `NAME` | = | `msdyn_name` |
 
 ###  <a name="124"></a>Asset management asset types (msdyn_customerassetcategories)
@@ -50,7 +51,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `LIFECYCLEMODELID` | = | `msdyn_lifecyclemodel.msdyn_assetlifecyclemodel_id` |
 `MAINTENANCEASSETTYPEID` | = | `msdyn_maintenanceassettypeid` |
 `NAME` | = | `msdyn_name` |
-`CALCULATEKPITOTAL` | >< | `msdyn_calculatekpitotal` |
+`CALCULATEKPITOTAL` | ><<br>no : False<br>yes : True | `msdyn_calculatekpitotal` |
 
 ###  <a name="125"></a>Asset management assets (msdyn_customerassets)
 
@@ -70,7 +71,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `NAME` | = | `msdyn_name` |
 `NOTES` | = | `msdyn_notes` |
 `PURCHASEORDERID` | = | `msdyn_purchaseorderid` |
-`REPLACEMENTDATE` | >< | `msdyn_replacementdate` |
+`REPLACEMENTDATE` | ><<br>1/1/1900 :  | `msdyn_replacementdate` |
 `REPLACEMENTVALUE` | = | `msdyn_replacementvalue` |
 `SERIALID` | = | `msdyn_serialid` |
 `VENDACCOUNT` | = | `msdyn_vendaccount` |
@@ -98,14 +99,14 @@ This template synchronizes data between Finance and Operations apps and Datavers
 
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
-`ALLOWDELETELOCATION` | >< | `msdyn_allowdeletelocation` |
-`ALLOWNEWSUBLOCATIONS` | >< | `msdyn_allownewsublocations` |
-`ALLOWRENAMELOCATION` | >< | `msdyn_allowrenamelocation` |
-`FUNCTIONALLOCATIONACTIVE` | >< | `msdyn_functionallocationactive` |
+`ALLOWDELETELOCATION` | ><<br>yes : True<br>no : False | `msdyn_allowdeletelocation` |
+`ALLOWNEWSUBLOCATIONS` | ><<br>yes : True<br>no : False | `msdyn_allownewsublocations` |
+`ALLOWRENAMELOCATION` | ><<br>yes : True<br>no : False | `msdyn_allowrenamelocation` |
+`FUNCTIONALLOCATIONACTIVE` | ><<br>yes : True<br>no : False | `msdyn_functionallocationactive` |
 `LIFECYCLESTATEID` | = | `msdyn_functionallocationlifecyclestate_id` |
 `NAME` | = | `msdyn_name` |
-`ALLOWINSTALLMAINTENANCEASSETS` | >< | `msdyn_allowinstallmaintenanceassets` |
-`CREATELOCATIONMAINTENANCEASSET` | >< | `msdyn_createlocationmaintenanceasset` |
+`ALLOWINSTALLMAINTENANCEASSETS` | ><<br>yes : True<br>no : False | `msdyn_allowinstallmaintenanceassets` |
+`CREATELOCATIONMAINTENANCEASSET` | ><<br>yes : True<br>no : False | `msdyn_createlocationmaintenanceasset` |
 `MAINTENANCEASSETLIFECYCLESTATEID` | = | `msdyn_assetlifecyclestate.msdyn_assetlifecyclestate_id` |
 
 ###  <a name="137"></a>Asset management functional location types (msdyn_functionallocationtypes)
@@ -114,10 +115,10 @@ This template synchronizes data between Finance and Operations apps and Datavers
 
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
-`ALLOWMULTIPLEINSTALLEDASSETS` | >< | `msdyn_allowmultipleinstalledassets` |
+`ALLOWMULTIPLEINSTALLEDASSETS` | ><<br>yes : True<br>no : False | `msdyn_allowmultipleinstalledassets` |
 `FUNCTIONALLOCATIONTYPEID` | = | `msdyn_functionallocationtype_id` |
 `NAME` | = | `msdyn_name` |
-`UPDATEASSETDIMENSION` | >< | `msdyn_updateassetdimension` |
+`UPDATEASSETDIMENSION` | ><<br>yes : True<br>no : False | `msdyn_updateassetdimension` |
 `LIFECYCLEMODELID` | = | `msdyn_lifecyclemodelid.msdyn_functionallocationlifecyclemodel_id` |
 `MAINTENANCEASSETTYPEID` | = | `msdyn_maintenanceassettype.msdyn_maintenanceassettypeid` |
 
@@ -181,7 +182,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `EMPLOYMENTDEPARTMENT` | = | `department` |
 `NOTES` | = | `description` |
 `GOVERNMENTIDENTIFICATIONNUMBER` | = | `governmentid` |
-`ISRECEIVINGDIRECTMAIL` | >< | `donotemail` |
+`ISRECEIVINGDIRECTMAIL` | ><<br>no : False<br>yes : True | `donotemail` |
 `SPOUSENAME` | = | `spousesname` |
 `none` | >> | `msdyn_contactforvendor` | True
 `CONTACTPERSONID` | = | `msdyn_contactpersonid` |
@@ -206,12 +207,12 @@ This template synchronizes data between Finance and Operations apps and Datavers
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 `PARTYNUMBER` | = | `msdyn_partynumber` |
-`PARTYTYPE` | >< | `msdyn_partytype` |
+`PARTYTYPE` | ><<br>person : 192350001<br>organization : 192350002<br>legalEntity : 192350003<br>team : 192350004<br>operatingUnit : 192350005<br>none : 192350000 | `msdyn_partytype` |
 `NAMEALIAS` | = | `msdyn_namealias` |
 `KNOWNAS` | = | `msdyn_nickname` |
-`LANGUAGEID` | >< | `msdyn_language` |
+`LANGUAGEID` | ><<br>ar : 192350000<br>ar-ae : 192350001<br>en-us : 192350015<br>en-gb : 192350009<br>cs : 192350002<br>da : 192350003<br>de : 192350004<br>de-at : 192350005<br>de-ch : 192350006<br>en-au : 192350007<br>en-ca : 192350008<br>en-ie : 192350010<br>en-in : 192350011<br>en-my : 192350012<br>en-nz : 192350013<br>en-sg : 192350014<br>en-za : 192350016<br>es : 192350017<br>es-mx : 192350018<br>et : 192350019<br>fi : 192350020<br>fr : 192350021<br>fr-be : 192350022<br>fr-ca : 192350023<br>fr-ch : 192350024<br>hu : 192350025<br>is : 192350026<br>it : 192350027<br>it-ch : 192350028<br>ja : 192350029<br>lt : 192350030<br>lv : 192350031<br>nb-no : 192350032<br>nl : 192350033<br>nl-be : 192350034<br>pl : 192350035<br>pt-br : 192350036<br>ru : 192350037<br>sv : 192350038<br>th : 192350039<br>tr : 192350040<br>zh-hans : 192350041 | `msdyn_language` |
 `ORGANIZATIONNAME` | = | `msdyn_organizationname` |
-`ORGANIZATIONABCCODE` | >< | `msdyn_organizationabccode` |
+`ORGANIZATIONABCCODE` | ><<br>a : 192350000<br>b : 192350001<br>c : 192350002<br>none : 192350003 | `msdyn_organizationabccode` |
 `ORGANIZATIONNUMOFEMPLOYEES` | = | `msdyn_numberofemployees` |
 `ORGANIZATIONNUMBER` | = | `msdyn_organizationnumber` |
 `ORGANIZATIONPHONETICNAME` | = | `msdyn_organizationphoneticname` |
@@ -225,16 +226,16 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `PERSONPHONETICFIRSTNAME` | = | `msdyn_phoneticfirstname` |
 `PERSONPHONETICLASTNAME` | = | `msdyn_phoneticlastname` |
 `PERSONPHONETICMIDDLENAME` | = | `msdyn_phoneticmiddlename` |
-`PERSONGENDER` | >< | `msdyn_gender` |
-`PERSONMARITALSTATUS` | >< | `msdyn_maritalstatus` |
+`PERSONGENDER` | ><<br>male : 1<br>female : 2<br>non-Specific : 192350000<br>unknown : 192350001 | `msdyn_gender` |
+`PERSONMARITALSTATUS` | ><<br>single : 1<br>married : 2<br>divorced : 3<br>widowhood : 4<br>none : 192350000 | `msdyn_maritalstatus` |
 `PERSONHOBBIES` | = | `msdyn_hobbies` |
 `PERSONCHILDRENNAMES` | = | `msdyn_childrennames` |
 `PERSONANNIVERSARYDAY` | = | `msdyn_anniversaryday` |
 `PERSONANNIVERSARYYEAR` | = | `msdyn_anniversaryyear` |
 `PERSONBIRTHDAY` | = | `msdyn_birthday` |
 `PERSONBIRTHYEAR` | = | `msdyn_birthyear` |
-`PERSONANNIVERSARYMONTH` | >< | `msdyn_anniversarymonth` |
-`PERSONBIRTHMONTH` | >< | `msdyn_birthmonth` |
+`PERSONANNIVERSARYMONTH` | ><<br>january : 1<br>february : 2<br>march : 3<br>none : 0<br>april : 4<br>may : 5<br>june : 6<br>july : 7<br>august : 8<br>september : 9<br>october : 10<br>november : 11<br>december : 12 | `msdyn_anniversarymonth` |
+`PERSONBIRTHMONTH` | ><<br>none : 0<br>january : 1<br>february : 2<br>march : 3<br>april : 4<br>may : 5<br>june : 6<br>july : 7<br>august : 8<br>september : 9<br>october : 10<br>november : 11<br>december : 12 | `msdyn_birthmonth` |
 
 ###  <a name="233"></a>CDS Party postal address locations (msdyn_partypostaladdresses)
 
@@ -242,11 +243,11 @@ This template synchronizes data between Finance and Operations apps and Datavers
 
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
-`ISPRIMARY` | >< | `msdyn_isprimary` |
+`ISPRIMARY` | ><<br>no : False<br>yes : True | `msdyn_isprimary` |
 `LOCATIONID` | = | `msdyn_postaladdresscollectionid.msdyn_location` |
 `PARTYNUMBER` | = | `msdyn_partyid.msdyn_partynumber` |
 `PURPOSE` | = | `msdyn_postaladdresspurposenames` |
-`ISLOCATIONOWNER` | >> | `msdyn_islocationowner` |
+`ISLOCATIONOWNER` | >><br>no : False<br>yes : True | `msdyn_islocationowner` |
 
 ###  <a name="145"></a>CDS inventory on-hand entries (msdyn_inventoryonhandentries)
 
@@ -281,7 +282,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `REQUESTID` | = | `msdyn_requestid` |
 `PRODUCTNUMBER` | < | `msdyn_product.msdyn_productnumber` |
-`ISATPCALCULATION` | << | `msdyn_isatpcalculation` |
+`ISATPCALCULATION` | <<<br>no : False<br>yes : True | `msdyn_isatpcalculation` |
 `ORDERQUANTITY` | < | `msdyn_orderquantity` |
 `INVENTORYSITEID` | < | `msdyn_inventorysite.msdyn_siteid` |
 `INVENTORYWAREHOUSEID` | < | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
@@ -338,11 +339,11 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `CUSTOMERREFERENCE` | = | `msdyn_customerreference` |
 `CUSTOMERREQUISITIONNUMBER` | = | `msdyn_customerrequisitionnumber` |
 `EXTERNALITEMNUMBER` | = | `msdyn_externalitemnumber` |
-`ISPARTIALDELIVERYPREVENTED` | >< | `msdyn_ispartialdeliveryprevented` |
+`ISPARTIALDELIVERYPREVENTED` | ><<br>yes : true<br>no : false | `msdyn_ispartialdeliveryprevented` |
 `LINEDISCOUNTAMOUNT` | > | `msdyn_linediscountamount` |
 `LINEDISCOUNTPERCENTAGE` | > | `msdyn_linediscountpercentage` |
 `ORDEREDCATCHWEIGHTQUANTITY` | = | `msdyn_orderedcatchweightquantity` |
-`PURCHASEORDERLINESTATUS` | >> | `msdyn_purchaseorderlinestatus` |
+`PURCHASEORDERLINESTATUS` | >><br>none : 192350000<br>backorder : 192350001<br>received : 192350002<br>invoiced : 192350003<br>canceled : 192350004 | `msdyn_purchaseorderlinestatus` |
 `PURCHASEPRICEQUANTITY` | = | `msdyn_purchasepricequantity` |
 `RECEIVINGSITEID` | = | `msdyn_receivingsiteid.msdyn_siteid` |
 `REQUESTEDSHIPPINGDATE` | = | `msdyn_requestedshippingdate` |
@@ -371,7 +372,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `LINENUMBER` | > | `msdyn_lineorder` |
 `PURCHASEORDERNUMBER` | > | `msdyn_purchaseorder.msdyn_name` |
-`ISDELETED` | >> | `msdyn_issoftdeletedinscm` |
+`ISDELETED` | >><br>yes : true<br>no : false | `msdyn_issoftdeletedinscm` |
 
 ###  <a name="213"></a>CDS released distinct products (products)
 
@@ -387,15 +388,15 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `SALESUNITSYMBOL` | > | `defaultuomid.msdyn_symbol` |
 `SALESPRICE` | > | `price` |
 `UNITCOST` | > | `currentcost` |
-`PRODUCTTYPE` | >> | `producttypecode` |
+`PRODUCTTYPE` | >><br>item : 1<br>service : 3 | `producttypecode` |
 `SALESUNITDECIMALPRECISION` | >> | `quantitydecimal` | 0
-`ISCATCHWEIGHTPRODUCT` | >> | `msdyn_iscatchweight` |
-`ISSTOCKEDPRODUCT` | >> | `msdyn_isstockedproduct` |
+`ISCATCHWEIGHTPRODUCT` | >><br>no : false<br>yes : true | `msdyn_iscatchweight` |
+`ISSTOCKEDPRODUCT` | >><br>no : False<br>yes : True | `msdyn_isstockedproduct` |
 `PRODUCTCOLORID` | > | `msdyn_productcolor.msdyn_productcolorname` |
 `PRODUCTCONFIGURATIONID` | > | `msdyn_productconfiguration.msdyn_productconfiguration` |
 `PRODUCTSIZEID` | > | `msdyn_productsize.msdyn_productsize` |
 `PRODUCTSTYLEID` | > | `msdyn_productstyle.msdyn_productstyle` |
-`FIELDSERVICEPRODUCTTYPE` | >> | `msdyn_fieldserviceproducttype` |
+`FIELDSERVICEPRODUCTTYPE` | >><br>Inventory : 690970000<br>NonInventory : 690970001<br>Service : 690970002 | `msdyn_fieldserviceproducttype` |
 
 ###  <a name="217"></a>CDS sales order headers (salesorders)
 
@@ -409,7 +410,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `ORDERINGCUSTOMERACCOUNTNUMBER` | = | `customerid.Account(accountnumber).Contact(msdyn_contactpersonid)` |
 `CURRENCYCODE` | = | `transactioncurrencyid.isocurrencycode` |
 `DELIVERYADDRESSCITY` | = | `shipto_city` |
-`DELIVERYADDRESSCOUNTRYREGIONISOCODE` | >< | `shipto_country` |
+`DELIVERYADDRESSCOUNTRYREGIONISOCODE` | ><<br>us : united states<br>de : germany<br>fr : france<br>gb : united kingdom<br>jp : japan<br>in : india<br>es : spain<br>nz : new zealand<br>au : australia<br>co : columbia<br>za : south africa<br>be : belgium<br>ca : canada<br>at : austria<br>tr : turkey<br>cn : china<br>dk : denmark<br>se : sweden<br>no : norway<br>fi : finland<br>eg : egypt | `shipto_country` |
 `DELIVERYADDRESSSTREETNUMBER` | = | `shipto_line2` |
 `DELIVERYADDRESSZIPCODE` | = | `shipto_postalcode` |
 `DELIVERYADDRESSSTREET` | = | `shipto_line1` |
@@ -425,7 +426,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `TOTALDISCOUNTAMOUNT` | > | `discountamount` |
 `ORDERTOTALTAXAMOUNT` | > | `totaltax` |
 `ORDERTOTALCHARGESAMOUNT` | > | `freightamount` |
-`AREPRICESINCLUDINGSALESTAX` | >< | `msdyn_arepricesincludingsalestax` |
+`AREPRICESINCLUDINGSALESTAX` | ><<br>no : False<br>yes : True | `msdyn_arepricesincludingsalestax` |
 `CONFIRMEDRECEIPTDATE` | = | `msdyn_confirmedreceiptdate` |
 `CONFIRMEDSHIPPINGDATE` | = | `msdyn_confirmedshippingdate` |
 `CONTACTPERSONID` | = | `msdyn_associatedcontact.msdyn_contactforpartynumber` |
@@ -452,21 +453,21 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `INVOICEADDRESSPOSTBOX` | > | `msdyn_invoiceaddresspostbox` |
 `INVOICEBUILDINGCOMPLIMENT` | > | `msdyn_invoicebuildingcompliment` |
 `INVOICECUSTOMERACCOUNTNUMBER` | = | `msdyn_invoicecustomerid.Account(accountnumber).Contact(msdyn_contactpersonid)` |
-`ISDELIVERYADDRESSORDERSPECIFIC` | >< | `msdyn_isdeliveryaddressorderspecific` |
-`ISDELIVERYADDRESSPRIVATE` | >< | `msdyn_isdeliveryaddressprivate` |
-`ISINVOICEADDRESSPRIVATE` | >> | `msdyn_isinvoiceaddressprivate` |
-`ISONETIMECUSTOMER` | >< | `msdyn_isonetimecustomer` |
-`ISSALESPROCESSINGSTOPPED` | >< | `msdyn_issalesprocessingstopped` |
+`ISDELIVERYADDRESSORDERSPECIFIC` | ><<br>no : False<br>yes : True | `msdyn_isdeliveryaddressorderspecific` |
+`ISDELIVERYADDRESSPRIVATE` | ><<br>no : False<br>yes : True | `msdyn_isdeliveryaddressprivate` |
+`ISINVOICEADDRESSPRIVATE` | >><br>no : False<br>yes : True | `msdyn_isinvoiceaddressprivate` |
+`ISONETIMECUSTOMER` | ><<br>no : False<br>yes : True | `msdyn_isonetimecustomer` |
+`ISSALESPROCESSINGSTOPPED` | ><<br>no : False<br>yes : True | `msdyn_issalesprocessingstopped` |
 `PAYMENTTERMSBASEDATE` | = | `msdyn_paymenttermsbasedate` |
 `PAYMENTTERMSNAME` | = | `msdyn_paymentterms.msdyn_name` |
 `PRICECUSTOMERGROUPCODE` | = | `msdyn_pricecustomergroup.msdyn_groupcode` |
 `QUOTATIONNUMBER` | = | `msdyn_quotationnumber` |
 `REQUESTEDRECEIPTDATE` | = | `msdyn_requestedreceiptdate` |
 `REQUESTEDSHIPPINGDATE` | = | `requestdeliveryby` |
-`SALESORDERPROMISINGMETHOD` | >< | `msdyn_salesorderpromisingmethod` |
+`SALESORDERPROMISINGMETHOD` | ><<br>none : 192350000<br>salesLeadTime : 192350001<br>atp : 192350002<br>atpPlusIssueMargin : 192350003<br>ctp : 192350004 | `msdyn_salesorderpromisingmethod` |
 `URL` | = | `msdyn_url` |
-`SALESORDERPROCESSINGSTATUS` | >< | `msdyn_processingstatus` |
-`LANGUAGEID` | >< | `msdyn_language` |
+`SALESORDERPROCESSINGSTATUS` | ><<br>active : 192350000<br>confirmed : 192350001<br>picked : 192350002<br>partiallyDelivered : 192350003<br>delivered : 192350004<br>invoiced : 192350005<br>partiallyInvoiced : 192350006<br>canceled : 192350007 | `msdyn_processingstatus` |
+`LANGUAGEID` | ><<br>ar : 192350000<br>ar-ae : 192350001<br>cs : 192350002<br>da : 192350003<br>de : 192350004<br>de-at : 192350005<br>de-ch : 192350006<br>en-au : 192350007<br>en-gb : 192350009<br>en-ie : 192350010<br>en-in : 192350011<br>en-ca : 192350008<br>en-my : 192350012<br>en-nz : 192350013<br>en-sg : 192350014<br>en-us : 192350015<br>en-za : 192350016<br>es : 192350017<br>es-mx : 192350018<br>et : 192350019<br>fi : 192350020<br>fr : 192350021<br>fr-be : 192350022<br>fr-ca : 192350023<br>fr-ch : 192350024<br>hu : 192350025<br>is : 192350026<br>it : 192350027<br>it-ch : 192350028<br>ja : 192350029<br>lt : 192350030<br>lv : 192350031<br>nb-no : 192350032<br>nl : 192350033<br>nl-be : 192350034<br>pl : 192350035<br>pt-br : 192350036<br>ru : 192350037<br>sv : 192350038<br>th : 192350039<br>tr : 192350040<br>zh-hans : 192350041 | `msdyn_language` |
 `CUSTOMERSORDERREFERENCE` | = | `msdyn_customersorderreference` |
 `DELIVERYMODECODE` | = | `msdyn_deliverymode.msdyn_name` |
 `DELIVERYTERMSCODE` | = | `msdyn_deliveryterms.msdyn_termscode` |
@@ -482,7 +483,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `CURRENCYCODE` | > | `transactioncurrencyid.isocurrencycode` |
 `DELIVERYADDRESSCITY` | = | `shipto_city` |
-`DELIVERYADDRESSCOUNTRYREGIONISOCODE` | >< | `shipto_country` |
+`DELIVERYADDRESSCOUNTRYREGIONISOCODE` | ><<br>us : united states<br>de : germany<br>fr : france<br>gb : united kingdom<br>jp : japan<br>in : india<br>es : spain<br>nz : new zealand<br>au : australia<br>co : columbia<br>za : south africa<br>be : belgium<br>ca : canada<br>at : austria<br>tr : turkey<br>cn : china<br>dk : denmark<br>se : sweden<br>no : norway<br>fi : finland<br>eg : egypt | `shipto_country` |
 `DELIVERYADDRESSZIPCODE` | = | `shipto_postalcode` |
 `DELIVERYADDRESSSTATEID` | = | `shipto_stateorprovince` |
 `DELIVERYADDRESSSTREET` | = | `shipto_line1` |
@@ -500,9 +501,9 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `LINEAMOUNT` | > | `baseamount` |
 `SALESPRODUCTCATEGORYNAME` | = | `msdyn_salesproductcategory.msdyn_name` |
 `SALESPRODUCTCATEGORYHIERARCHYNAME` | > | `msdyn_salesproductcategory.msdyn_hierarchy.msdyn_name` |
-`ISDELIVERYADDRESSORDERSPECIFIC` | >< | `msdyn_isdeliveryaddressspecific` |
-`ISDELIVERYADDRESSPRIVATE` | >< | `msdyn_isdeliveryaddressprivate` |
-`ISLINESTOPPED` | >< | `msdyn_islinestopped` |
+`ISDELIVERYADDRESSORDERSPECIFIC` | ><<br>no : False<br>yes : True | `msdyn_isdeliveryaddressspecific` |
+`ISDELIVERYADDRESSPRIVATE` | ><<br>no : False<br>yes : True | `msdyn_isdeliveryaddressprivate` |
+`ISLINESTOPPED` | ><<br>no : False<br>yes : True | `msdyn_islinestopped` |
 `ALLOWEDOVERDELIVERYPERCENTAGE` | = | `msdyn_allowedoverdeliverypercentage` |
 `ALLOWEDUNDERDELIVERYPERCENTAGE` | = | `msdyn_allowedunderdeliverypercentage` |
 `CONFIRMEDSHIPPINGDATE` | = | `msdyn_confirmedshippingdate` |
@@ -527,8 +528,8 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `MULTILINEDISCOUNTPERCENTAGE` | = | `msdyn_multilinediscountpercentage` |
 `REQUESTEDRECEIPTDATE` | = | `msdyn_requestedreceiptdate` |
 `REQUESTEDSHIPPINGDATE` | = | `requestdeliveryby` |
-`SALESORDERLINESTATUS` | >> | `msdyn_linestatus` |
-`SALESORDERPROMISINGMETHOD` | >< | `msdyn_salesorderpromisingmethod` |
+`SALESORDERLINESTATUS` | >><br>none : 192350000<br>backorder : 192350001<br>delivered : 192350002<br>invoiced : 192350003<br>canceled : 192350004 | `msdyn_linestatus` |
+`SALESORDERPROMISINGMETHOD` | ><<br>none : 192350000<br>salesLeadTime : 192350001<br>atp : 192350002<br>atpPlusIssueMargin : 192350003<br>ctp : 192350004 | `msdyn_salesorderpromisingmethod` |
 `SALESPRICEQUANTITY` | = | `msdyn_salespricequantity` |
 `SHIPPINGSITEID` | = | `msdyn_shippingsite.msdyn_siteid` |
 `SHIPPINGWAREHOUSEID` | = | `msdyn_shippingwarehouse.msdyn_warehouseidentifier` |
@@ -550,7 +551,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `CURRENCYCODE` | = | `transactioncurrencyid.isocurrencycode` |
 `CUSTOMERSREFERENCE` | = | `msdyn_customersreference` |
 `DELIVERYADDRESSCITY` | = | `shipto_city` |
-`DELIVERYADDRESSCOUNTRYREGIONISOCODE` | >< | `shipto_country` |
+`DELIVERYADDRESSCOUNTRYREGIONISOCODE` | ><<br>us : united states<br>de : germany<br>fr : france<br>gb : united kingdom<br>jp : japan<br>in : india<br>es : spain<br>nz : new zealand<br>au : australia<br>co : columbia<br>za : south africa<br>be : belgium<br>ca : canada<br>at : austria<br>tr : turkey<br>cn : china<br>dk : denmark<br>se : sweden<br>no : norway<br>fi : finland<br>eg : egypt | `shipto_country` |
 `DELIVERYADDRESSSTREETNUMBER` | = | `shipto_line2` |
 `DELIVERYADDRESSZIPCODE` | = | `shipto_postalcode` |
 `DELIVERYADDRESSSTREET` | = | `shipto_line1` |
@@ -566,7 +567,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `TOTALDISCOUNTAMOUNT` | > | `discountamount` |
 `QUOTATIONTOTALTAXAMOUNT` | > | `totaltax` |
 `QUOTATIONTOTALCHARGESAMOUNT` | > | `freightamount` |
-`AREPRICESINCLUDINGSALESTAX` | >< | `msdyn_arepricesincludingsalestax` |
+`AREPRICESINCLUDINGSALESTAX` | ><<br>no : False<br>yes : True | `msdyn_arepricesincludingsalestax` |
 `CONTACTPERSONID` | = | `msdyn_associatedcontact.msdyn_contactforpartynumber` |
 `CUSTOMERREQUISITIONNUMBER` | = | `msdyn_customerrequisitionnumber` |
 `DEFAULTSHIPPINGSITEID` | = | `msdyn_defaultshippingsite.msdyn_siteid` |
@@ -592,19 +593,19 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `INVOICEADDRESSPOSTBOX` | > | `msdyn_invoiceaddresspostbox` |
 `INVOICEBUILDINGCOMPLIMENT` | > | `msdyn_invoicebuildingcompliment` |
 `INVOICECUSTOMERACCOUNTNUMBER` | = | `msdyn_invoicecustomerid.Account(accountnumber).Contact(msdyn_contactpersonid)` |
-`ISDELIVERYADDRESSORDERSPECIFIC` | >< | `msdyn_isdeliveryaddressorderspecific` |
-`ISDELIVERYADDRESSPRIVATE` | >< | `msdyn_isdeliveryaddressprivate` |
-`ISINVOICEADDRESSPRIVATE` | >> | `msdyn_isinvoiceaddressprivate` |
-`LANGUAGEID` | >< | `msdyn_language` |
+`ISDELIVERYADDRESSORDERSPECIFIC` | ><<br>no : False<br>yes : True | `msdyn_isdeliveryaddressorderspecific` |
+`ISDELIVERYADDRESSPRIVATE` | ><<br>no : False<br>yes : True | `msdyn_isdeliveryaddressprivate` |
+`ISINVOICEADDRESSPRIVATE` | >><br>no : False<br>yes : True | `msdyn_isinvoiceaddressprivate` |
+`LANGUAGEID` | ><<br>ar : 192350000<br>ar-ae : 192350001<br>cs : 192350002<br>da : 192350003<br>de : 192350004<br>de-at : 192350005<br>de-ch : 192350006<br>en-au : 192350007<br>en-gb : 192350009<br>en-ie : 192350010<br>en-in : 192350011<br>en-ca : 192350008<br>en-my : 192350012<br>en-nz : 192350013<br>en-sg : 192350014<br>en-us : 192350015<br>en-za : 192350016<br>es : 192350017<br>es-mx : 192350018<br>et : 192350019<br>fi : 192350020<br>fr : 192350021<br>fr-be : 192350022<br>fr-ca : 192350023<br>fr-ch : 192350024<br>hu : 192350025<br>is : 192350026<br>it : 192350027<br>it-ch : 192350028<br>ja : 192350029<br>lt : 192350030<br>lv : 192350031<br>nb-no : 192350032<br>nl : 192350033<br>nl-be : 192350034<br>pl : 192350035<br>pt-br : 192350036<br>ru : 192350037<br>sv : 192350038<br>th : 192350039<br>tr : 192350040<br>zh-hans : 192350041 | `msdyn_language` |
 `PAYMENTTERMSNAME` | = | `msdyn_paymentterms.msdyn_name` |
 `PRICECUSTOMERGROUPCODE` | = | `msdyn_pricecustomergroup.msdyn_groupcode` |
 `RECEIPTDATEREQUESTED` | = | `msdyn_requestedreceiptdate` |
 `REQUESTEDSHIPPINGDATE` | = | `requestdeliveryby` |
-`SALESORDERPROMISINGMETHOD` | >< | `msdyn_salesorderpromisingmethod` |
+`SALESORDERPROMISINGMETHOD` | ><<br>none : 192350000<br>salesLeadTime : 192350001<br>atp : 192350002<br>atpPlusIssueMargin : 192350003<br>ctp : 192350004 | `msdyn_salesorderpromisingmethod` |
 `SALESQUOTATIONCONFIRMATIONDATE` | = | `msdyn_salesquotationconfirmationdate` |
 `SALESQUOTATIONEXPIRYDATE` | = | `msdyn_salesquotationexpirydate` |
 `SALESQUOTATIONFOLLOWUPDATE` | = | `msdyn_salesquotationfollowupdate` |
-`SALESQUOTATIONSTATUS` | >< | `msdyn_salesquotationstatus` |
+`SALESQUOTATIONSTATUS` | ><<br>created : 192350000<br>sent : 192350001<br>confirmed : 192350002<br>lost : 192350003<br>cancelled : 192350004<br>reset : 192350005<br>modified : 192350006<br>submitted : 192350007<br>approved : 192350008<br>revised : 192350009 | `msdyn_salesquotationstatus` |
 `TOTALDISCOUNTPERCENTAGE` | = | `msdyn_totaldiscountpercentage` |
 `URL` | = | `msdyn_url` |
 `EMAIL` | = | `emailaddress` |
@@ -624,7 +625,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `LINECREATIONSEQUENCENUMBER` | = | `sequencenumber` |
 `CURRENCYCODE` | > | `transactioncurrencyid.isocurrencycode` |
 `DELIVERYADDRESSCITY` | = | `shipto_city` |
-`DELIVERYADDRESSCOUNTRYREGIONISOCODE` | >< | `shipto_country` |
+`DELIVERYADDRESSCOUNTRYREGIONISOCODE` | ><<br>us : united states<br>de : germany<br>fr : france<br>gb : united kingdom<br>jp : japan<br>in : india<br>es : spain<br>nz : new zealand<br>au : australia<br>co : columbia<br>za : south africa<br>be : belgium<br>ca : canada<br>at : austria<br>tr : turkey<br>cn : china<br>dk : denmark<br>se : sweden<br>no : norway<br>fi : finland<br>eg : egypt | `shipto_country` |
 `DELIVERYADDRESSCOUNTYID` | = | `msdyn_deliveryaddresscountyid` |
 `DELIVERYADDRESSDESCRIPTION` | = | `msdyn_deliveryaddressdescription` |
 `DELIVERYADDRESSDISTRICTNAME` | = | `msdyn_deliveryaddressdistrictname` |
@@ -642,8 +643,8 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `EXTERNALITEMNUMBER` | = | `msdyn_externalitemnumber` |
 `FIXEDPRICECHARGES` | = | `msdyn_fixedpricecharges` |
 `FORMATTEDDELIVERYADDRESS` | = | `msdyn_formatteddeliveryaddress` |
-`ISDELIVERYADDRESSPRIVATE` | >< | `msdyn_isdeliveryaddressprivate` |
-`ISDELIVERYADDRESSORDERSPECIFIC` | >< | `msdyn_isdeliveryaddressspecific` |
+`ISDELIVERYADDRESSPRIVATE` | ><<br>no : False<br>yes : True | `msdyn_isdeliveryaddressprivate` |
+`ISDELIVERYADDRESSORDERSPECIFIC` | ><<br>no : False<br>yes : True | `msdyn_isdeliveryaddressspecific` |
 `LINEAMOUNT` | > | `baseamount` |
 `LINEAMOUNT` | > | `extendedamount` |
 `LINEDESCRIPTION` | = | `msdyn_linedescription2` |
@@ -658,8 +659,8 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `REQUESTEDSHIPPINGDATE` | = | `requestdeliveryby` |
 `SALESPRICE` | = | `priceperunit` |
 `SALESPRICEQUANTITY` | = | `msdyn_salespricequantity` |
-`SALESQUOTATIONPROMISINGMETHOD` | >< | `msdyn_salesquotationpromisingmethod` |
-`SALESQUOTATIONSTATUS` | >< | `msdyn_salesquotationstatus` |
+`SALESQUOTATIONPROMISINGMETHOD` | ><<br>none : 192350000<br>salesLeadTime : 192350001<br>atp : 192350002<br>atpPlusIssueMargin : 192350003<br>ctp : 192350004 | `msdyn_salesquotationpromisingmethod` |
+`SALESQUOTATIONSTATUS` | ><<br>created : 192350000<br>sent : 192350001<br>confirmed : 192350002<br>lost : 192350003<br>cancelled : 192350004<br>reset : 192350005<br>modified : 192350006<br>submitted : 192350007<br>approved : 192350008<br>revised : 192350009 | `msdyn_salesquotationstatus` |
 `SALESUNITSYMBOL` | = | `uomid.msdyn_symbol` |
 `SHIPPINGSITEID` | = | `msdyn_shippingsite.msdyn_siteid` |
 `SHIPPINGWAREHOUSEID` | = | `msdyn_shippingwarehouse.msdyn_warehouseidentifier` |
@@ -705,7 +706,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `JOBTYPEID` | = | `cdm_name` |
 `DESCRIPTION` | = | `cdm_description` |
-`EXEMPTSTATUS` | >< | `cdm_exemptstatus` |
+`EXEMPTSTATUS` | ><<br>exempt : 754400000<br>nonexempt : 754400001<br>doesnotapply : 754400002 | `cdm_exemptstatus` |
 
 ###  <a name="222"></a>Complimentary closings (msdyn_complimentaryclosings)
 
@@ -748,7 +749,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `ASSISTANTPHONENUMBER` | = | `msdyn_assistantphonenumber` |
 `AVAILABLEFROMTIME` | = | `msdyn_availablefromtime` |
 `AVAILABLETOTIME` | = | `msdyn_availabletotime` |
-`CONTACTACTIVITYSENSITIVITYLEVEL` | >< | `msdyn_contactactivitysensitivitylevel` |
+`CONTACTACTIVITYSENSITIVITYLEVEL` | ><<br>normal : 192350000<br>personal : 192350001<br>private : 192350002<br>confidential : 192350003 | `msdyn_contactactivitysensitivitylevel` |
 `CONTACTPERSONRESPONSIBLEPERSONNELNUMBER` | = | `msdyn_employeeresponsible.cdm_workernumber` |
 `DECISIONMAKINGROLECODE` | = | `msdyn_decisionmakingrole.msdyn_rolename` |
 `EMPLOYMENTCOMPUTERNETWORKNAME` | = | `msdyn_employmentcomputernetworkname` |
@@ -756,10 +757,10 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `EMPLOYMENTJOBTITLE` | = | `msdyn_jobtitle.msdyn_jobtitlealias` |
 `EMPLOYMENTOFFICELOCATION` | = | `msdyn_employmentofficelocation` |
 `GOVERNMENTIDENTIFICATIONNUMBER` | = | `msdyn_governmentidentificationnumber` |
-`HASREQUESTEDINTERNETACCESS` | >< | `msdyn_hasrequestedinternetaccess` |
+`HASREQUESTEDINTERNETACCESS` | ><<br>no : False<br>yes : True | `msdyn_hasrequestedinternetaccess` |
 `IDENTITYCARDNUMBER` | = | `msdyn_identitycardnumber` |
-`ISRECEIVINGDIRECTMAIL` | >< | `msdyn_isreceivingdirectmail` |
-`ISVIP` | >< | `msdyn_isvip` |
+`ISRECEIVINGDIRECTMAIL` | ><<br>no : False<br>yes : True | `msdyn_isreceivingdirectmail` |
+`ISVIP` | ><<br>no : False<br>yes : True | `msdyn_isvip` |
 `LOYALTYLEVELPHRASE` | = | `msdyn_loyaltylevelphrase.msdyn_levelphrase` |
 `MANAGERCONTACTPERSONID` | = | `msdyn_parentcontactforpartyid.msdyn_contactforpartynumber` |
 `MICROSOFTOUTLOOKCATEGORIES` | = | `msdyn_microsoftoutlookcategories` |
@@ -768,7 +769,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `ORGANIZATIONIDENTIFICATIONNUMBER` | = | `msdyn_organizationidentificationnumber` |
 `PERSONALCHARACTERTYPECODE` | = | `msdyn_personalcharactertypecode.msdyn_typename` |
 `PRIMARYCOMPLIMENTARYCLOSINGPHRASE` | = | `msdyn_primarycomplimentaryclosingphrase.msdyn_closingphrase` |
-`CONTACTINFORMATIONLANGUAGEID` | >< | `msdyn_nativelanguage` |
+`CONTACTINFORMATIONLANGUAGEID` | ><<br>ar : 192350000<br>ar-ae : 192350001<br>cs : 192350002<br>da : 192350003<br>de : 192350004<br>de-at : 192350005<br>de-ch : 192350006<br>en-au : 192350007<br>en-gb : 192350009<br>en-ie : 192350010<br>en-in : 192350011<br>en-ca : 192350008<br>en-my : 192350012<br>en-nz : 192350013<br>en-sg : 192350014<br>en-us : 192350015<br>en-za : 192350016<br>es : 192350017<br>es-mx : 192350018<br>et : 192350019<br>fi : 192350020<br>fr : 192350021<br>fr-be : 192350022<br>fr-ca : 192350023<br>fr-ch : 192350024<br>hu : 192350025<br>is : 192350026<br>it : 192350027<br>it-ch : 192350028<br>ja : 192350029<br>lt : 192350030<br>lv : 192350031<br>nb-no : 192350032<br>nl : 192350033<br>nl-be : 192350034<br>pl : 192350035<br>pt-br : 192350036<br>ru : 192350037<br>sv : 192350038<br>th : 192350039<br>tr : 192350040<br>zh-hans : 192350041 | `msdyn_nativelanguage` |
 `SPOUSENAME` | = | `msdyn_spousename` |
 
 ###  <a name="218"></a>Currencies (transactioncurrencies)
@@ -800,7 +801,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `CUSTOMERACCOUNTNUMBER` | = | `msdyn_relatedentityid` |
 `TYPEID` | << | `none` | Note
 `NOTES` | = | `notetext` |
-`RESTRICTION` | >< | `msdyn_restriction` |
+`RESTRICTION` | ><<br>internal : 0<br>external : 1 | `msdyn_restriction` |
 
 ###  <a name="126"></a>Customer groups (msdyn_customergroups)
 
@@ -810,7 +811,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `CUSTOMERGROUPID` | = | `msdyn_groupid` |
 `DESCRIPTION` | = | `msdyn_description` |
-`ISSALESTAXINCLUDEDINPRICE` | >< | `msdyn_issalestaxincludedinprice` |
+`ISSALESTAXINCLUDEDINPRICE` | ><<br>no : False<br>yes : True | `msdyn_issalestaxincludedinprice` |
 `PAYMENTTERMID` | = | `msdyn_paymenttermid.msdyn_name` |
 `CLEARINGPERIODPAYMENTTERMNAME` | = | `msdyn_clearingperiodpaymenttermname.msdyn_name` |
 
@@ -823,7 +824,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `CUSTOMERHIERARCHYID` | = | `msdyn_customerhierarchynumber` |
 `NAME` | = | `msdyn_name` |
 `ORGANIZATIONPARTYNUMBER` | = | `msdyn_organizationpartynumber.msdyn_partynumber` |
-`PURPOSE` | >< | `msdyn_purpose` |
+`PURPOSE` | ><<br>B2BOrganization : 192350000 | `msdyn_purpose` |
 
 ###  <a name="163"></a>Customer hierarchy nodes (msdyn_customerhierarchynodes)
 
@@ -833,8 +834,8 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `CUSTOMERHIERARCHYID` | = | `msdyn_customerhierarchynumber.msdyn_customerhierarchynumber` |
 `NODEPARTYNUMBER` | = | `msdyn_nodepartynumber.msdyn_partynumber` |
-`NODETYPE` | >< | `msdyn_nodetype` |
-`ROLE` | >< | `msdyn_role` |
+`NODETYPE` | ><<br>Customer : 192350000 | `msdyn_nodetype` |
+`ROLE` | ><<br>Admin : 192350000<br>User : 192350001 | `msdyn_role` |
 
 ###  <a name="127"></a>Customer payment method (msdyn_customerpaymentmethods)
 
@@ -843,20 +844,20 @@ This template synchronizes data between Finance and Operations apps and Datavers
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 `NAME` | = | `msdyn_name` |
-`ACCOUNTTYPE` | >< | `msdyn_accounttype` |
+`ACCOUNTTYPE` | ><<br>ledger : 806380000<br>cust : 806380001<br>vend : 806380002<br>project : 806380003<br>fixedassets : 806380004<br>bank : 806380005 | `msdyn_accounttype` |
 `DISCOUNTGRACEPERIODDAYS` | = | `msdyn_discountgraceperioddays` |
-`BRIDGINGPOSTINGENABLED` | >< | `msdyn_bridgingpostingenabled` |
-`ISSEPA` | >< | `msdyn_issepa` |
+`BRIDGINGPOSTINGENABLED` | ><<br>no : False<br>yes : True | `msdyn_bridgingpostingenabled` |
+`ISSEPA` | ><<br>no : False<br>yes : True | `msdyn_issepa` |
 `LASTFILENUMBER` | = | `msdyn_lastfilenumber` |
 `LASTFILENUMBERTODAY` | = | `msdyn_lastfilenumbertoday` |
 `DESCRIPTION` | = | `msdyn_description` |
-`PAYMENTTYPE` | >< | `msdyn_paymenttype` |
-`CREATEANDDRAWBILLOFEXCHANGEDURINGINVOICEPOSTING` | >< | `msdyn_invoiceupdate` |
-`PAYMENTSTATUS` | >< | `msdyn_paymentstatus` |
-`SUMBYPERIOD` | >< | `msdyn_sumbyperiod` |
-`ENABLEPOSTDATEDCHECKCLEARINGPOSTING` | >< | `msdyn_enablepostdatescheckclearingposting` |
-`BILLOFEXCHANGEDRAFTTYPE` | >< | `msdyn_billofexchangedrafttype` |
-`DIRECTDEBIT` | >< | `msdyn_directdebit` |
+`PAYMENTTYPE` | ><<br>other : 806380000<br>electronicPayment : 806380001<br>check : 806380002<br>billOfExchange : 806380003<br>creditCard : 806380004 | `msdyn_paymenttype` |
+`CREATEANDDRAWBILLOFEXCHANGEDURINGINVOICEPOSTING` | ><<br>no : False<br>yes : True | `msdyn_invoiceupdate` |
+`PAYMENTSTATUS` | ><<br>none : 806380000<br>sent : 806380001<br>recieved : 806380002<br>confirmed : 806380003<br>rejected : 806380004 | `msdyn_paymentstatus` |
+`SUMBYPERIOD` | ><<br>invoice : 806380000<br>week : 806380002<br>total : 806380003<br>transDate : 806380001 | `msdyn_sumbyperiod` |
+`ENABLEPOSTDATEDCHECKCLEARINGPOSTING` | ><<br>no : False<br>yes : True | `msdyn_enablepostdatescheckclearingposting` |
+`BILLOFEXCHANGEDRAFTTYPE` | ><<br>acceptance : 806380002<br>promissory : 806380003<br>bankAcceptance : 806380004<br>nodraft : 806380000<br>noacceptance : 806380001 | `msdyn_billofexchangedrafttype` |
+`DIRECTDEBIT` | ><<br>no : False<br>yes : True | `msdyn_directdebit` |
 
 ###  <a name="101"></a>Customers V3 (accounts)
 
@@ -872,13 +873,13 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `CREDITLIMIT` | = | `creditlimit` |
 `SALESCURRENCYCODE` | = | `transactioncurrencyid.isocurrencycode` |
 `SALESMEMO` | = | `description` |
-`CREDITLIMITISMANDATORY` | >< | `msdyn_creditlimitismandatory` |
+`CREDITLIMITISMANDATORY` | ><<br>no : False<br>yes : True | `msdyn_creditlimitismandatory` |
 `CREDITRATING` | = | `msdyn_creditrating` |
 `CUSTOMERGROUPID` | = | `msdyn_customergroupid.msdyn_groupid` |
 `IDENTIFICATIONNUMBER` | = | `msdyn_identificationnumber` |
 `INVOICEACCOUNT` | = | `msdyn_billingaccount.accountnumber` |
-`ISONETIMECUSTOMER` | >< | `msdyn_onetimecustomer` |
-`ONHOLDSTATUS` | >< | `msdyn_onholdstatus` |
+`ISONETIMECUSTOMER` | ><<br>no : False<br>yes : True | `msdyn_onetimecustomer` |
+`ONHOLDSTATUS` | ><<br>no : 806380000<br>invoice : 806380001<br>all : 806380002<br>payment : 806380003<br>requisition : 806380004<br>never : 806380005 | `msdyn_onholdstatus` |
 `PARTYCOUNTRY` | = | `msdyn_partycountry` |
 `PARTYSTATE` | = | `msdyn_partystateprovince` |
 `PAYMENTDAY` | = | `msdyn_paymentday.msdyn_name` |
@@ -968,24 +969,24 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `SALESLEADTIMEDAYS` | = | `msdyn_salesleadtimedays` |
 `PROCUREMENTWAREHOUSEID` | = | `msdyn_procurementwarehouse.msdyn_warehouseidentifier` |
 `SALESWAREHOUSEID` | = | `msdyn_saleswarehouse.msdyn_warehouseidentifier` |
-`AREINVENTORYORDERPROMISINGDEFAULTSOVERRIDDEN` | >< | `msdyn_areinventoryorderdefaultsoverridden` |
-`INVENTORYORDERPROMISINGMETHOD` | >< | `msdyn_inventoryorderpromisingmethod` |
-`ISINVENTORYATPINCLUDINGPLANNEDORDERS` | >< | `msdyn_isinventoryatpincludingplannedorders` |
-`ISINVENTORYUSINGWORKINGDAYS` | >< | `msdyn_isinventoryusingworkingdays` |
-`ISINVENTORYSITEMANDATORY` | >< | `msdyn_isinventorysitemandatory` |
-`ISINVENTORYPROCESSINGSTOPPED` | >< | `msdyn_isinventoryprocessingstopped` |
-`ISPROCUREMENTUSINGWORKINGDAYS` | >< | `msdyn_isprocurementusingworkingdays` |
-`ISPROCUREMENTSITEMANDATORY` | >< | `msdyn_isprocurementsitemandatory` |
-`ISPROCUREMENTPROCESSINGSTOPPED` | >< | `msdyn_isprocurementprocessingstopped` |
-`ARESALESORDERPROMISINGDEFAULTSOVERRIDDEN` | >< | `msdyn_aresalesorderdefaultsoverridden` |
-`SALESORDERPROMISINGMETHOD` | >< | `msdyn_salesorderpromisingmethod` |
-`ISSALESATPINCLUDINGPLANNEDORDERS` | >< | `msdyn_issalesatpincludingplannedorders` |
-`ISSALESSITEMANDATORY` | >< | `msdyn_issalessitemandatory` |
-`ISSALESLEADTIMEOVERRIDDEN` | >< | `msdyn_issalesleadtimeoverridden` |
-`ISSALESPROCESSINGSTOPPED` | >< | `msdyn_issalesprocessingstopped` |
-`ISINVENTORYWAREHOUSEMANDATORY` | >< | `msdyn_isinventorywarehousemandatory` |
-`ISPROCUREMENTWAREHOUSEMANDATORY` | >< | `msdyn_isprocurementwarehousemandatory` |
-`ISSALESWAREHOUSEMANDATORY` | >< | `msdyn_issaleswarehousemandatory` |
+`AREINVENTORYORDERPROMISINGDEFAULTSOVERRIDDEN` | ><<br>no : False<br>yes : True | `msdyn_areinventoryorderdefaultsoverridden` |
+`INVENTORYORDERPROMISINGMETHOD` | ><<br>none : 192350000<br>salesLeadTime : 192350001<br>atp : 192350002<br>atpPlusIssueMargin : 192350003<br>ctp : 192350004 | `msdyn_inventoryorderpromisingmethod` |
+`ISINVENTORYATPINCLUDINGPLANNEDORDERS` | ><<br>false : False<br>true : True | `msdyn_isinventoryatpincludingplannedorders` |
+`ISINVENTORYUSINGWORKINGDAYS` | ><<br>no : False<br>yes : True | `msdyn_isinventoryusingworkingdays` |
+`ISINVENTORYSITEMANDATORY` | ><<br>no : False<br>yes : True | `msdyn_isinventorysitemandatory` |
+`ISINVENTORYPROCESSINGSTOPPED` | ><<br>no : False<br>yes : True | `msdyn_isinventoryprocessingstopped` |
+`ISPROCUREMENTUSINGWORKINGDAYS` | ><<br>no : False<br>yes : True | `msdyn_isprocurementusingworkingdays` |
+`ISPROCUREMENTSITEMANDATORY` | ><<br>no : False<br>yes : True | `msdyn_isprocurementsitemandatory` |
+`ISPROCUREMENTPROCESSINGSTOPPED` | ><<br>no : False<br>yes : True | `msdyn_isprocurementprocessingstopped` |
+`ARESALESORDERPROMISINGDEFAULTSOVERRIDDEN` | ><<br>no : False<br>yes : True | `msdyn_aresalesorderdefaultsoverridden` |
+`SALESORDERPROMISINGMETHOD` | ><<br>none : 192350000<br>salesLeadTime : 192350001<br>atp : 192350002<br>atpPlusIssueMargin : 192350003<br>ctp : 192350004 | `msdyn_salesorderpromisingmethod` |
+`ISSALESATPINCLUDINGPLANNEDORDERS` | ><<br>false : False<br>true : True | `msdyn_issalesatpincludingplannedorders` |
+`ISSALESSITEMANDATORY` | ><<br>no : False<br>yes : True | `msdyn_issalessitemandatory` |
+`ISSALESLEADTIMEOVERRIDDEN` | ><<br>no : False<br>yes : True | `msdyn_issalesleadtimeoverridden` |
+`ISSALESPROCESSINGSTOPPED` | ><<br>no : False<br>yes : True | `msdyn_issalesprocessingstopped` |
+`ISINVENTORYWAREHOUSEMANDATORY` | ><<br>no : False<br>yes : True | `msdyn_isinventorywarehousemandatory` |
+`ISPROCUREMENTWAREHOUSEMANDATORY` | ><<br>no : False<br>yes : True | `msdyn_isprocurementwarehousemandatory` |
+`ISSALESWAREHOUSEMANDATORY` | ><<br>no : False<br>yes : True | `msdyn_issaleswarehousemandatory` |
 
 ###  <a name="225"></a>Employment job functions (msdyn_employmentjobfunctions)
 
@@ -1005,7 +1006,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `EMPLOYMENTENDDATE` | = | `cdm_employmentenddate` |
 `PERSONNELNUMBER` | = | `cdm_workerid.cdm_workernumber` |
 `EMPLOYMENTSTARTDATE` | = | `cdm_employmentstartdate` |
-`WORKERTYPE` | >> | `cdm_workertype` |
+`WORKERTYPE` | >><br>employee : 754400000<br>contractor : 754400001<br>both : 754400000 | `cdm_workertype` |
 
 ###  <a name="103"></a>Ethnic origins (cdm_ethnicorigins)
 
@@ -1022,7 +1023,7 @@ This template synchronizes data between Finance and Operations apps and Datavers
 
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
-`EXCHANGERATEDISPLAYFACTOR` | >< | `msdyn_displayfactor` |
+`EXCHANGERATEDISPLAYFACTOR` | ><<br>one : 192350000<br>ten : 192350001<br>hundred : 192350002<br>thousand : 192350003<br>tenThousand : 192350004 | `msdyn_displayfactor` |
 `EXCHANGERATETYPENAME` | = | `msdyn_currencyexchangeratetypeid.msdyn_name` |
 `FROMCURRENCYCODE` | = | `msdyn_fromtransactioncurrencyid.isocurrencycode` |
 `TOCURRENCYCODE` | = | `msdyn_totransactioncurrencyid.isocurrencycode` |
@@ -1043,9 +1044,9 @@ This template synchronizes data between Finance and Operations apps and Datavers
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 `DIMENSIONFORMATNAME` | = | `msdyn_dimensionformatname` |
-`DIMENSIONFORMATTYPE` | >< | `msdyn_dimensionformattype` |
+`DIMENSIONFORMATTYPE` | ><<br>dataEntityDefaultDimensionFormat : 192350000<br>dataEntityLedgerDimensionFormat : 192350001<br>dataEntityBudgetDimensionFormat : 192350002<br>dataEntityBudgetPlanningDimensionFormat : 192350003 | `msdyn_dimensionformattype` |
 `FINANCIALDIMENSIONFORMAT` | = | `msdyn_financialdimensionformat` |
-`ISACTIVE` | >< | `msdyn_isactive` |
+`ISACTIVE` | ><<br>no : False<br>yes : True | `msdyn_isactive` |
 
 ###  <a name="128"></a>Financial dimensions (msdyn_dimensionattributes)
 
@@ -1054,9 +1055,9 @@ This template synchronizes data between Finance and Operations apps and Datavers
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 `DIMENSIONNAME` | = | `msdyn_dimensionname` |
-`COPYVALUESONCREATE` | >< | `msdyn_copyvaluesoncreate` |
+`COPYVALUESONCREATE` | ><<br>no : False<br>yes : True | `msdyn_copyvaluesoncreate` |
 `REPORTCOLUMNNAME` | = | `msdyn_reportcolumnname` |
-`GIVEDERIVEDDIMENSIONSPRECEDENCE` | >< | `msdyn_givederiveddimensionsprecedence` |
+`GIVEDERIVEDDIMENSIONSPRECEDENCE` | ><<br>no : False<br>yes : True | `msdyn_givederiveddimensionsprecedence` |
 `UseValuesFrom` | = | `msdyn_usevaluesfrom` |
 `DimensionValueMask` | = | `msdyn_dimensionvaluemask` |
 
@@ -1077,12 +1078,12 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `COMMENTS` | = | `msdyn_comments` |
 `ENDDATE` | = | `msdyn_enddate` |
-`MONTH` | >< | `msdyn_month` |
+`MONTH` | ><<br>month1 : 192350000<br>month2 : 192350001<br>month3 : 192350002<br>month4 : 192350003<br>month5 : 192350004<br>month6 : 192350005<br>month7 : 192350006<br>month8 : 192350007<br>month9 : 192350008<br>month10 : 192350009<br>month11 : 192350010<br>month12 : 192350011 | `msdyn_month` |
 `CALENDAR` | = | `msdyn_fiscalcalendar.msdyn_calendar` |
-`QUARTER` | >< | `msdyn_quarter` |
+`QUARTER` | ><<br>q1 : 192350000<br>q2 : 192350001<br>q3 : 192350002<br>q4 : 192350003 | `msdyn_quarter` |
 `SHORTNAME` | = | `msdyn_shortname` |
 `STARTDATE` | = | `msdyn_startdate` |
-`TYPE` | >< | `msdyn_fiscalperiodtype` |
+`TYPE` | ><<br>opening : 192350000<br>operating : 192350001<br>closing : 192350002 | `msdyn_fiscalperiodtype` |
 `PERIODNAME` | = | `msdyn_periodname` |
 `FISCALYEAR` | = | `msdyn_fiscalcalendaryear.msdyn_name` |
 `CALENDAR` | = | `msdyn_fiscalcalendaryear.msdyn_fiscalcalendarname` |
@@ -1110,7 +1111,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `WAREHOUSEID` | = | `msdyn_warehouse.msdyn_warehouseidentifier` |
 `AISLENAME` | = | `msdyn_aislename` |
 `MANUALSTARTINGSORTORDERCODE` | = | `msdyn_manualstartingsortordercode` |
-`ISSORTORDERCODEASSIGNEDDESCENDING` | >< | `msdyn_issortordercodeassigneddescending` |
+`ISSORTORDERCODEASSIGNEDDESCENDING` | ><<br>yes : True<br>no : False | `msdyn_issortordercodeassigneddescending` |
 
 ###  <a name="196"></a>Item sales tax group (msdyn_taxitemgroups)
 
@@ -1129,7 +1130,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `JOBID` | = | `cdm_name` |
 `MAXIMUMNUMBEROFPOSITIONS` | = | `cdm_maximumnumberofpositions` |
-`ALLOWUNLIMITEDPOSITIONS` | >< | `cdm_allowunlimitedpositions` |
+`ALLOWUNLIMITEDPOSITIONS` | ><<br>yes : true<br>no : false | `cdm_allowunlimitedpositions` |
 `DESCRIPTION` | = | `cdm_description` |
 `JOBDESCRIPTION` | = | `cdm_jobdescription` |
 `JOBTYPEID` | = | `cdm_jobtypeid.cdm_name` |
@@ -1156,7 +1157,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `LEGALENTITYID` | > | `msdyn_company.cdm_companycode` |
 `DESCRIPTION` | > | `msdyn_description` |
 `ACCOUNTINGCURRENCY` | > | `msdyn_accountingcurrency.isocurrencycode` |
-`ISBUDGETCONTROLENABLED` | >> | `msdyn_isbudgetcontrolenabled` |
+`ISBUDGETCONTROLENABLED` | >><br>no : False<br>yes : True | `msdyn_isbudgetcontrolenabled` |
 `NAME` | > | `msdyn_name` |
 `REPORTINGCURRENCY` | > | `msdyn_reportingcurrency.isocurrencycode` |
 `BUDGETEXCHANGERATETYPE` | > | `msdyn_budgetexchangeratetype.msdyn_name` |
@@ -1194,7 +1195,7 @@ This template synchronizes data between Finance and Operations apps and Datavers
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 `CARDNUMBER` | = | `msdyn_cardnumber` |
-`CARDTENDERTYPE` | >< | `msdyn_cardtendertype` |
+`CARDTENDERTYPE` | ><<br>asCardTender : 806380000<br>asContactTender : 806380001<br>noTender : 806380002<br>blocked : 806380003 | `msdyn_cardtendertype` |
 `PARTYNUMBER` | = | `msdyn_partynumber` |
 `REPLACEMENTCARDNUMBER` | > | `msdyn_replacementcardnumber` |
 `OMOPERATINGUNITNUMBER` | = | `msdyn_operatingunitnumber` |
@@ -1216,15 +1217,15 @@ This template synchronizes data between Finance and Operations apps and Datavers
 
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
-`EXPIRATIONTIMEUNIT` | >< | `msdyn_expirationtimeunit` |
+`EXPIRATIONTIMEUNIT` | ><<br>day : 806380000<br>month : 806380001<br>year : 806380002 | `msdyn_expirationtimeunit` |
 `EXPIRATIONTIMEVALUE` | = | `msdyn_expirationtimevalue` |
-`REDEEMABLE` | >< | `msdyn_redeemable` |
+`REDEEMABLE` | ><<br>yes : True<br>no : False | `msdyn_redeemable` |
 `REDEEMRANKING` | = | `msdyn_redeemranking` |
 `REWARDPOINTCURRENCY` | = | `msdyn_rewardpointcurrency.isocurrencycode` |
 `REWARDPOINTID` | = | `msdyn_rewardpointid` |
-`REWARDPOINTTYPE` | >< | `msdyn_rewardpointtype` |
+`REWARDPOINTTYPE` | ><<br>quantity : 192350000<br>amount : 192350001 | `msdyn_rewardpointtype` |
 `MAXIMUMLOYALTYREWARDPOINTS` | = | `msdyn_maximumloyaltyrewardpoints` |
-`VESTINGTIMEUNIT` | >< | `msdyn_vestingtimeunit` |
+`VESTINGTIMEUNIT` | ><<br>day : 806380000<br>month : 806380001<br>year : 806380002 | `msdyn_vestingtimeunit` |
 `VESTINGTIMEVALUE` | = | `msdyn_vestingtimevalue` |
 
 ###  <a name="152"></a>Main account (msdyn_mainaccounts)
@@ -1236,27 +1237,27 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `MAINACCOUNTID` | = | `msdyn_accountnumber` |
 `CHARTOFACCOUNTS` | = | `msdyn_chartofaccounts.msdyn_name` |
 `NAME` | = | `msdyn_name` |
-`BALANCECONTROL` | >< | `msdyn_balancecontrol` |
+`BALANCECONTROL` | ><<br>none : 192350000<br>debit : 192350001<br>credit : 192350002 | `msdyn_balancecontrol` |
 `EXCHANGEADJUSTMENTRATETYPE` | = | `msdyn_exchangeadjustmentratetype.msdyn_name` |
-`CLOSING` | >< | `msdyn_closing` |
+`CLOSING` | ><<br>none : 192350000<br>result : 192350001<br>balanceSheet : 192350002<br>capital : 192350003 | `msdyn_closing` |
 `REPORTINGEXCHANGEADJUSTMENTRATETYPE` | = | `msdyn_reportingexchangeadjustmentratetype.msdyn_name` |
-`DEBITCREDITREQUIREMENT` | >< | `msdyn_debitcreditrequirement` |
+`DEBITCREDITREQUIREMENT` | ><<br>none : 192350000<br>debit : 192350001<br>credit : 192350002 | `msdyn_debitcreditrequirement` |
 `FINANCIALREPORTINGEXCHANGERATETYPE` | = | `msdyn_financialreportingexchangeratetype.msdyn_name` |
-`FOREIGNCURRENCYREVALUATION` | >< | `msdyn_foreigncurrencyrevaluation` |
+`FOREIGNCURRENCYREVALUATION` | ><<br>yes : True<br>no : False | `msdyn_foreigncurrencyrevaluation` |
 `MAINACCOUNTCATEGORY` | = | `msdyn_mainaccountcategoryname` |
-`MANDATORYPAYMENTREFERENCE` | >< | `msdyn_mandatorypaymentreference` |
-`MONETARY` | >< | `msdyn_monetary` |
+`MANDATORYPAYMENTREFERENCE` | ><<br>yes : True<br>no : False | `msdyn_mandatorypaymentreference` |
+`MONETARY` | ><<br>yes : True<br>no : False | `msdyn_monetary` |
 `OFFSETACCOUNTDISPLAYVALUE` | = | `msdyn_offsetaccount` |
-`POSTINGTYPE` | >< | `msdyn_postingtype` |
+`POSTINGTYPE` | ><<br>none : 192350000<br>exchRateGain : 192350001<br>exchRateLoss : 192350002<br>interCompany : 192350003<br>tax : 192350004<br>vATRoundOff : 192350005<br>allocation : 192350006<br>investmentDuty : 192350007<br>liquidity : 192350008<br>mSTDiffSecond : 192350009<br>errorAccount : 192350010<br>mSTDiff : 192350011<br>yearResult : 192350012<br>closing : 192350013<br>ledgerJournal : 192350014<br>cashDiscount : 192350015<br>consolidateDiffBalance : 192350016<br>taxReport : 192350017<br>transferOpeningClosing : 192350018<br>bank : 192350019<br>conversionProfit : 192350020<br>conversionLoss : 192350021<br>taxwithhold : 192350022<br>consolidateDiffProfitLoss : 192350023<br>indirectEstimatedAbsorptionOffset : 192350024<br>indirectAbsorption : 192350025<br>indirectAbsorptionOffset : 192350026<br>freeTextInvoice : 192350027<br>conversionReportingLoss : 192350029<br>conversionReportingProfit : 192350030<br>custBalance : 192350031<br>custRevenue : 192350032<br>custInterest : 192350033<br>custCashDisc : 192350034<br>custCollectionLetterFee : 192350035<br>custInterestFee : 192350036<br>custInvoiceDisc : 192350028<br>custPayment : 192350037<br>custReimbursement : 192350038<br>custSettlement : 192350039<br>vendBalance : 192350040<br>vendPurchLedger : 192350041<br>vendOffsetAccount : 192350042<br>vendInterest : 192350043<br>vendCashDisc : 192350044<br>vendPayment : 192350045<br>vendInvoiceDisc : 192350046<br>vendSettlement : 192350047<br>crossCompanySettlement : 192350048<br>inventIssueFixedAsset : 192350049<br>salesRevenue : 192350050<br>salesConsump : 192350051<br>salesDisc : 192350052<br>salesCash : 192350053<br>salesFreight : 192350054<br>salesFee : 192350055<br>salesPostage : 192350056<br>salesRoundOff : 192350057<br>salesPackingSlip : 192350058<br>salesOffsetAccountPackingSlip : 192350059<br>salesIssue : 192350060<br>salesCommission : 192350061<br>salesOffsetAccountCommission : 192350062<br>salesPckSlipRevenue : 192350063<br>salesPckSlipRevenueOffsetAccount : 192350064<br>rebate : 192350065<br>pdsCWLoss : 192350066<br>pdsCWProfit : 192350067<br>purchConsump : 192350068<br>purchDisc : 192350069<br>purchCash : 192350070<br>purchFreight : 192350071<br>purchFee : 192350072<br>purchPostage : 192350073<br>purchOffsetAccount : 192350074<br>purchaseInvoiceRoundOff : 192350075<br>purchMarkupFreight : 192350076<br>purchMarkupCustoms : 192350077<br>purchMarkupInsurance : 192350078<br>purchPckSlp : 192350079<br>purchOffsetAccountPckSlp : 192350080<br>purchReceipt : 192350081<br>purchStdProfit : 192350082<br>purchStdLoss : 192350083<br>purchStdOffsetAccount : 192350084<br>inventReceipt : 192350085<br>inventIssue : 192350086<br>inventProfit : 192350087<br>inventLoss : 192350088<br>inventStdProfit : 192350089<br>inventStdLoss : 192350090<br>opening_ES : 192350091<br>purchReq : 192350092<br>aPInvoice : 192350093<br>budget : 192350094<br>purchOrderYearEnd : 192350095<br>inflationAdjustment_MX : 192350096<br>prodReportFinished : 192350097<br>prodReportFinishedOffsetAccount : 192350098<br>prodIssue : 192350099<br>prodIssueOffsetAccount : 192350100<br>prodReceipt : 192350101<br>prodReceiptOffsetAccount : 192350102<br>prodPicklistOffsetAccount : 192350103<br>prodPicklist : 192350104<br>prodWIPValuation : 192350105<br>prodWIPIssue : 192350106<br>prodWrkCtrIssue : 192350107<br>prodScrap : 192350108<br>prodScrapOffsetAccount : 192350109<br>prodLeanWIPServiceReceipt : 192350110<br>prodLeanWIPServiceClearing : 192350111<br>projCost : 192350112<br>projPayrollAllocation : 192350113<br>projWIPCostvalue : 192350114<br>projOffsetAccountItem : 192350115<br>projStatusAccountItem : 192350116<br>projTurnover : 192350117<br>projOnAccount : 192350118<br>projSalesvalue : 192350119<br>projSalesvalueOffset : 192350120<br>projAccruedTurnoverProd : 192350121<br>projWIPProduction : 192350122<br>proJAccruedTurnoverProfit : 192350123<br>projWIPProfit : 192350125<br>projNeverLedger : 192350126<br>projAccruedCost : 192350127<br>projWIPCost : 192350128<br>projAccruedRevenueOnAccount : 192350129<br>projWIPInvoicedOnAccount : 192350130<br>projNoLedger : 192350131<br>payrollDebitAccount : 192350132<br>payrollCreditAccount : 192350133<br>emplPayment_RU : 192350134<br>rTSLTranslationDifference : 192350135<br>rCash : 192350136<br>inventRoundingLoss_RU : 192350137<br>inventRoundingProfit_RU : 192350138<br>advanceAdjustmentGain_RU : 192350139<br>advanceAdjustmentLoss_RU : 192350140<br>fixedAssetsDebit : 192350141<br>fixedAssetsCredit : 192350142<br>cACLedgerJournalNoOff : 192350143<br>amountDiffGain_RU : 192350144<br>amountDiffLoss_RU : 192350145<br>misc_IN : 192350146<br>transferGoodsTransit_IN : 192350147<br>transferScrap_IN : 192350148<br>purchCharge : 192350149<br>purchStockVariation : 192350150<br>purchPckSlpPurchaseOffsetAccount : 192350151<br>purchPckSlpTax : 192350152<br>purchPckSlpPurchase : 192350153<br>salesPackingslipTax : 192350154<br>projAccruedRevenueSubscription : 192350155<br>projWIPSubscription : 192350156<br>taxOffsetWithhold_TH : 192350157<br>inventStdCostChangeVariance : 192350158<br>inventSystemRounding : 192350159<br>purchAdvance : 192350160<br>purchStdCostPurchasePriceVariance : 192350161<br>purchAdvanceApplication : 192350162<br>prodStdCostProductionVariance : 192350163<br>salesGoodsInRoute_RU : 192350164<br>salesGoodsInRouteOffset_RU : 192350165<br>inventInterUnitPayable : 192350166<br>inventInterUnitReceivable : 192350167<br>indirectEstimatedAbsorption : 192350168<br>prodStdCostLotSizeVariance : 192350169<br>prodStdCostQuantityVariance : 192350170<br>prodStdCostSubstitutionVariance : 192350171<br>inventStdCostRoundingVariance : 192350172<br>purchReceiptFixedAsset : 192350173<br>pSATransportation : 192350174<br>pSACompanyCCClearing : 192350175<br>pSAEmployeeClearing : 192350176<br>pSAEmployeeAdvance : 192350177<br>pSAWriteOffCap : 192350178<br>pSAProjRetain : 192350179<br>pSAProjPurchRetain : 192350180<br>inventStdCostRevaluation : 192350181<br>purchExpense : 192350182<br>vAT_IN : 192350183<br>inventMovingAveragePriceDifference : 192350184<br>salesTax_IN : 192350185<br>inventMovingAverageCostRevaluation : 192350186<br>excise_IN : 192350187<br>intercompanyCost : 192350188<br>serviceTax_IN : 192350189<br>intercompanyRevenue : 192350190<br>customs_IN : 192350191<br>tDS_IN : 192350192<br>tCS_IN : 192350193<br>transferIssue_IN : 192350194<br>transferReceipt_IN : 192350195<br>transferProfit_IN : 192350196<br>transferLoss_IN : 192350197<br>taxAdjustmentSettlement_IN : 192350198<br>taxExpense_BR : 192350199<br>bankStatement : 192350200<br>emplBalance_RU : 192350201<br>debitNote_BR : 192350202<br>custFine_BR : 192350203<br>vendFine_BR : 192350204<br>payroll : 192350205<br>interunitDebit : 192350206<br>interunitCredit : 192350207<br>fixedAssetsDebit_RU : 192350208<br>fixedAssetsCredit_RU : 192350209<br>transferInterim_In : 192350210<br>deferralsDebit_RU : 192350211<br>deferralsCredit_RU : 192350212<br>mCRReturns : 192350213<br>mCRReturnsConsump : 192350214<br>mCRUnderpayWriteOff : 192350215<br>mCRBrokerFee : 192350216<br>rPayTaxRefundOffset : 192350217<br>budgetReservation_PSN : 192350218<br>budgetReservationYearEnd_PSN : 192350219<br>billSchUnbilledAccountsReceivable : 192350220<br>billSchAccruedRevenue : 192350221<br>gST_IN : 192350222<br>reportingCurrencyAdjustment : 192350223<br>revRecDeferredRevenue : 192350224<br>revRecDeferredCostOfGoodsSold : 192350225<br>revRecPartialRevenue : 192350226<br>revRecDeferredCost : 192350227 | `msdyn_postingtype` |
 `SRUCODE` | = | `msdyn_srucode` |
-`VALIDATECURRENCY` | >< | `msdyn_validatecurrencycode` |
-`VALIDATEUSER` | >< | `msdyn_validateuser` |
-`DEBITCREDITDEFAULT` | >< | `msdyn_debitcreditdefault` |
+`VALIDATECURRENCY` | ><<br>optional : 192350000<br>fillIn : 192350001<br>table : 192350002<br>list : 192350003 | `msdyn_validatecurrencycode` |
+`VALIDATEUSER` | ><<br>optional : 192350000<br>fillIn : 192350001<br>table : 192350002<br>list : 192350003 | `msdyn_validateuser` |
+`DEBITCREDITDEFAULT` | ><<br>none : 192350000<br>debit : 192350001<br>credit : 192350002 | `msdyn_debitcreditdefault` |
 `DEFAULTCURRENCY` | = | `msdyn_defaultcurrency.isocurrencycode` |
-`MAINACCOUNTTYPE` | >< | `msdyn_mainaccounttype` |
-`FINANCIALREPORTINGCURRENCYTRANSLATIONTYPE` | >< | `msdyn_financialreportingcurrencytrantype` |
+`MAINACCOUNTTYPE` | ><<br>blank : 192350000<br>profitAndLoss : 192350001<br>revenue : 192350002<br>expense : 192350003<br>balanceSheet : 192350004<br>asset : 192350005<br>liability : 192350006<br>equity : 192350007<br>total : 192350008<br>reporting : 192350009<br>common_CN : 192350010 | `msdyn_mainaccounttype` |
+`FINANCIALREPORTINGCURRENCYTRANSLATIONTYPE` | ><<br>weightedAverage : 192350000<br>standardAverage : 192350001<br>current : 192350002<br>transactionDate : 192350003 | `msdyn_financialreportingcurrencytrantype` |
 `USER` | = | `msdyn_user` |
-`VALIDATEPOSTINGTYPE` | >< | `msdyn_validateposting` |
+`VALIDATEPOSTINGTYPE` | ><<br>optional : 192350000<br>fillIn : 192350001<br>table : 192350002<br>list : 192350003 | `msdyn_validateposting` |
 
 ###  <a name="151"></a>Main account categories (msdyn_mainaccountcategories)
 
@@ -1268,8 +1269,8 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `REFERENCEID` | = | `msdyn_referenceid` |
 `DESCRIPTION` | = | `msdyn_description` |
 `DISPLAYORDER` | = | `msdyn_displayorder` |
-`CLOSED` | >< | `msdyn_closed` |
-`MAINACCOUNTTYPE` | >< | `msdyn_mainaccounttypevalue` |
+`CLOSED` | ><<br>no : False<br>yes : True | `msdyn_closed` |
+`MAINACCOUNTTYPE` | ><<br>blank : 192350000<br>profitAndLoss : 192350001<br>revenue : 192350002<br>expense : 192350003<br>balanceSheet : 192350004<br>asset : 192350005<br>liability : 192350006<br>equity : 192350007 | `msdyn_mainaccounttypevalue` |
 
 ###  <a name="212"></a>Mixed reality guides entity (msmrw_guides)
 
@@ -1300,7 +1301,7 @@ This template synchronizes data between Finance and Operations apps and Datavers
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 `AFFIX` | = | `msdyn_affix` |
-`TYPE` | >< | `msdyn_affixtype` |
+`TYPE` | ><<br>personalSuffix : 806380001<br>personalPrefix : 806380000 | `msdyn_affixtype` |
 `DESCRIPTION` | = | `msdyn_description` |
 
 ###  <a name="143"></a>Operating unit (msdyn_internalorganizations)
@@ -1313,7 +1314,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `NAMEALIAS` | > | `msdyn_namealias` |
 `NAME` | > | `msdyn_name` |
 `PARTYNUMBER` | > | `msdyn_partynumber` |
-`OPERATINGUNITTYPE` | >> | `msdyn_type` |
+`OPERATINGUNITTYPE` | >><br>omDepartment : 806380001<br>none : 806380002<br>omCostCenter : 806380003<br>omValueStream : 806380004<br>omBusinessUnit : 806380005<br>omAnyOU : 806380006<br>retailChannel : 192350000 | `msdyn_type` |
 
 ###  <a name="139"></a>Organization hierarchy - published (msdyn_internalorganizationhierarchies)
 
@@ -1338,9 +1339,9 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `HIERARCHYTYPE` | > | `msdyn_hierarchypurposetypename` |
 `HIERARCHYTYPE` | > | `msdyn_hierarchytype.msdyn_name` |
-`HIERARCHYPURPOSE` | >> | `msdyn_hierarchypurpose` |
-`IMMUTABLE` | >> | `msdyn_immutable` |
-`SETASDEFAULT` | >> | `msdyn_setasdefault` |
+`HIERARCHYPURPOSE` | >><br>notSet : 806380000<br>purchaseControl : 806380001<br>expenseControl : 806380002<br>organizationChart : 806380003<br>signingLimitControl : 806380004<br>invoiceControl : 806380005<br>auditInternalControl : 806380006<br>centralizedPayments : 806380007<br>security : 806380008<br>retailAssortment : 806380009<br>retailReplenishment : 806380010<br>retailReporting : 806380011<br>benefitEligibilityControl : 806380012<br>budgetPlanning : 806380013<br>retailPOSPosting : 806380014<br>project : 806380015<br>premiumEarningGeneration : 806380016<br>distributedOrderManagement : 806380017 | `msdyn_hierarchypurpose` |
+`IMMUTABLE` | >><br>no : False<br>yes : True | `msdyn_immutable` |
+`SETASDEFAULT` | >><br>no : False<br>yes : True | `msdyn_setasdefault` |
 
 ###  <a name="141"></a>Organization hierarchy type (msdyn_internalorganizationhierarchytypes)
 
@@ -1362,12 +1363,12 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `PARTYNUMBER` | = | `msdyn_partyid.msdyn_partynumber` |
 `LOCATOR` | = | `msdyn_locator` |
 `LOCATOREXTENSION` | = | `msdyn_locatorextension` |
-`ISINSTANTMESSAGE` | >< | `msdyn_isinstantmessage` |
-`ISMOBILEPHONE` | >< | `msdyn_ismobile` |
-`ISPRIMARY` | >< | `msdyn_isprimary` |
-`ISPRIVATE` | >< | `msdyn_isprivate` |
+`ISINSTANTMESSAGE` | ><<br>no : False<br>yes : True | `msdyn_isinstantmessage` |
+`ISMOBILEPHONE` | ><<br>no : False<br>yes : True | `msdyn_ismobile` |
+`ISPRIMARY` | ><<br>no : False<br>yes : True | `msdyn_isprimary` |
+`ISPRIVATE` | ><<br>no : False<br>yes : True | `msdyn_isprivate` |
 `PURPOSE` | = | `msdyn_purpose` |
-`TYPE` | >< | `msdyn_type` |
+`TYPE` | ><<br>phone : 192350001<br>email : 192350002<br>url : 192350003<br>telex : 192350004<br>fax : 192350005<br>facebook : 192350006<br>twitter : 192350007<br>linkedin : 192350008 | `msdyn_type` |
 
 ###  <a name="157"></a>Payment day lines CDS V2 (msdyn_paymentdaylines)
 
@@ -1377,8 +1378,8 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `NAME` | = | `msdyn_paymentday.msdyn_name` |
 `LINENUMBER` | = | `msdyn_linenumber` |
-`FREQUENCY` | >< | `msdyn_frequency` |
-`DAYOFWEEK` | >< | `msdyn_dayofweek` |
+`FREQUENCY` | ><<br>week : 806380000<br>month : 806380001 | `msdyn_frequency` |
+`DAYOFWEEK` | ><<br>none : 806380000<br>monday : 806380001<br>tuesday : 806380002<br>wednesday : 806380003<br>thursday : 806380004<br>friday : 806380005<br>saturday : 806380006<br>sunday : 806380007 | `msdyn_dayofweek` |
 `DAYOFMONTH` | = | `msdyn_dayofmonth` |
 
 ###  <a name="158"></a>Payment days CDS (msdyn_paymentdays)
@@ -1398,13 +1399,13 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `NAME` | = | `msdyn_name` |
 `DESCRIPTION` | = | `msdyn_description` |
-`ALLOCATIONMETHOD` | >< | `msdyn_allocationmethod` |
-`PAYMENTFREQUENCYUNITS` | >< | `msdyn_paymentfrequencyunit` |
+`ALLOCATIONMETHOD` | ><<br>total : 806380000<br>amountByPayment : 806380001<br>numOfPayment : 806380002<br>specified : 806380003 | `msdyn_allocationmethod` |
+`PAYMENTFREQUENCYUNITS` | ><<br>day : 806380000<br>month : 806380001<br>year : 806380002 | `msdyn_paymentfrequencyunit` |
 `PAYMENTFREQUENCY` | = | `msdyn_paymentfrequency` |
 `NUMBEROFPAYMENTS` | = | `msdyn_numberofpayments` |
 `FIXEDPAYMENTAMOUNT` | = | `msdyn_fixedpaymentamount` |
 `MINIMUMPAYMENTAMOUNT` | = | `msdyn_minimumpaymentamount` |
-`SALESTAXALLOCATIONMETHOD` | >< | `msdyn_salestaxallocationmethod` |
+`SALESTAXALLOCATIONMETHOD` | ><<br>proportional : 806380000<br>firstRate : 806380001<br>lastRate : 806380002 | `msdyn_salestaxallocationmethod` |
 `NOTES` | = | `msdyn_note` |
 
 ###  <a name="159"></a>Payment schedule lines (msdyn_paymentschedulelines)
@@ -1416,7 +1417,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `PAYMENTSCHEDULENAME` | = | `msdyn_paymentschedule.msdyn_name` |
 `LINENUMBER` | = | `msdyn_linenumber` |
 `PERIODSAFTERDUEDATE` | = | `msdyn_periodsafterduedate` |
-`PERCENTORAMOUNT` | >< | `msdyn_percentoramount` |
+`PERCENTORAMOUNT` | ><<br>percent : 806380000<br>amount : 806380001 | `msdyn_percentoramount` |
 `PERCENTORAMOUNTVALUE` | = | `msdyn_percentoramountvalue` |
 
 ###  <a name="227"></a>Personal character types (msdyn_personalcharactertypes)
@@ -1436,7 +1437,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `POSITIONTYPEID` | = | `cdm_name` |
 `DESCRIPTION` | = | `cdm_description` |
-`CLASSIFICATION` | >< | `cdm_classification` |
+`CLASSIFICATION` | ><<br>fulltime : 754400000<br>parttime : 754400001<br> : 754400002 | `cdm_classification` |
 
 ###  <a name="111"></a>Position worker assignments (cdm_positionworkerassignmentmaps)
 
@@ -1488,9 +1489,9 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `PRODUCTDESCRIPTION` | > | `msdyn_productdescription` |
 `BARCODESETUPID` | > | `msdyn_barcodesetupid` |
 `PRODUCTQUANTITYUNITSYMBOL` | > | `msdyn_unitofmeasureid.msdyn_symbol` |
-`ISDEFAULTSCANNEDBARCODE` | >> | `msdyn_isdefaultscannedbarcode` |
-`ISDEFAULTPRINTEDBARCODE` | >> | `msdyn_isdefaultprintedbarcode` |
-`ISDEFAULTDISPLAYEDBARCODE` | >> | `msdyn_isdefaultdisplayedbarcode` |
+`ISDEFAULTSCANNEDBARCODE` | >><br>no : False<br>yes : True | `msdyn_isdefaultscannedbarcode` |
+`ISDEFAULTPRINTEDBARCODE` | >><br>no : False<br>yes : True | `msdyn_isdefaultprintedbarcode` |
+`ISDEFAULTDISPLAYEDBARCODE` | >><br>no : False<br>yes : True | `msdyn_isdefaultdisplayedbarcode` |
 
 ###  <a name="166"></a>Product categories (msdyn_productcategories)
 
@@ -1499,10 +1500,10 @@ This template synchronizes data between Finance and Operations apps and Datavers
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 `PRODUCTCATEGORYHIERARCHYNAME` | = | `msdyn_hierarchy.msdyn_name` |
-`ISCATEGORYINHERITINGPARENTPRODUCTATTRIBUTES` | >< | `msdyn_isinheritingparentproductattributes` |
+`ISCATEGORYINHERITINGPARENTPRODUCTATTRIBUTES` | ><<br>no : False<br>yes : True | `msdyn_isinheritingparentproductattributes` |
 `PROJECTCATEGORYNAME` | = | `msdyn_projectcategoryname` |
-`ISTANGIBLEPRODUCT` | >< | `msdyn_istangibleproduct` |
-`ISCATEGORYINHERITINGPARENTCATEGORYATTRIBUTES` | >< | `msdyn_isinheritingparentcategoryattributes` |
+`ISTANGIBLEPRODUCT` | ><<br>no : False<br>yes : True | `msdyn_istangibleproduct` |
+`ISCATEGORYINHERITINGPARENTCATEGORYATTRIBUTES` | ><<br>no : False<br>yes : True | `msdyn_isinheritingparentcategoryattributes` |
 `CATEGORYCODE` | = | `msdyn_code` |
 `CATEGORYDESCRIPTION` | = | `msdyn_description` |
 `CATEGORYKEYWORDS` | = | `msdyn_keywords` |
@@ -1540,7 +1541,7 @@ This template synchronizes data between Finance and Operations apps and Datavers
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 `PRODUCTCATEGORYHIERARCHYNAME` | = | `msdyn_hierarchy.msdyn_name` |
-`HIERARCHYROLE` | >< | `msdyn_hierarchyrole` |
+`HIERARCHYROLE` | ><<br>procurement : 192350000<br>sales : 192350001<br>retail : 192350002<br>commodity : 192350003<br>financials : 192350004<br>retailSpecialGroup : 192350005<br>retailVendorProductHierarchy : 192350006<br>retailChannelNavigation : 192350007<br>packingMaterials_W : 192350008<br>commonDataService : 192350009<br>costManagement : 192350010<br>engineeringProduct : 192350011 | `msdyn_hierarchyrole` |
 
 ###  <a name="175"></a>Product default order settings V2 (msdyn_productspecificdefaultordersettings)
 
@@ -1580,24 +1581,24 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `SALESLEADTIMEDAYS` | = | `msdyn_salesleadtimedays` |
 `PROCUREMENTWAREHOUSEID` | = | `msdyn_procurementwarehouse.msdyn_warehouseidentifier` |
 `SALESWAREHOUSEID` | = | `msdyn_saleswarehouse.msdyn_warehouseidentifier` |
-`AREINVENTORYDEFAULTORDERSETTINGSOVERRIDDEN` | >< | `msdyn_areinventoryorderdefaultsoverridden` |
-`INVENTORYORDERPROMISINGMETHOD` | >< | `msdyn_inventoryorderpromisingmethod` |
-`ISINVENTORYATPINCLUDINGPLANNEDORDERS` | >< | `msdyn_isinventoryatpincludingplannedorders` |
-`ISINVENTORYUSINGWORKINGDAYS` | >< | `msdyn_isinventoryusingworkingdays` |
-`ISINVENTORYSITEMANDATORY` | >< | `msdyn_isinventorysitemandatory` |
-`ISINVENTORYPROCESSINGSTOPPED` | >< | `msdyn_isinventoryprocessingstopped` |
-`ISPROCUREMENTUSINGWORKINGDAYS` | >< | `msdyn_isprocurementusingworkingdays` |
-`ISPROCUREMENTSITEMANDATORY` | >< | `msdyn_isprocurementsitemandatory` |
-`ISPROCUREMENTPROCESSINGSTOPPED` | >< | `msdyn_isprocurementprocessingstopped` |
-`ARESALESDEFAULTORDERSETTINGSOVERRIDDEN` | >< | `msdyn_aresalesorderdefaultsoverridden` |
-`SALESORDERPROMISINGMETHOD` | >< | `msdyn_salesorderpromisingmethod` |
-`ISSALESATPINCLUDINGPLANNEDORDERS` | >< | `msdyn_issalesatpincludingplannedorders` |
-`ISSALESSITEMANDATORY` | >< | `msdyn_issalessitemandatory` |
-`ISSALESLEADTIMEOVERRIDDEN` | >< | `msdyn_issalesleadtimeoverridden` |
-`ISSALESPROCESSINGSTOPPED` | >< | `msdyn_issalesprocessingstopped` |
-`ISINVENTORYWAREHOUSEMANDATORY` | >< | `msdyn_isinventorywarehousemandatory` |
-`ISPROCUREMENTWAREHOUSEMANDATORY` | >< | `msdyn_isprocurementwarehousemandatory` |
-`ISSALESWAREHOUSEMANDATORY` | >< | `msdyn_issaleswarehousemandatory` |
+`AREINVENTORYDEFAULTORDERSETTINGSOVERRIDDEN` | ><<br>no : False<br>yes : True | `msdyn_areinventoryorderdefaultsoverridden` |
+`INVENTORYORDERPROMISINGMETHOD` | ><<br>none : 192350000<br>salesLeadTime : 192350001<br>atp : 192350002<br>atpPlusIssueMargin : 192350003<br>ctp : 192350004 | `msdyn_inventoryorderpromisingmethod` |
+`ISINVENTORYATPINCLUDINGPLANNEDORDERS` | ><<br>false : False<br>true : True | `msdyn_isinventoryatpincludingplannedorders` |
+`ISINVENTORYUSINGWORKINGDAYS` | ><<br>no : False<br>yes : True | `msdyn_isinventoryusingworkingdays` |
+`ISINVENTORYSITEMANDATORY` | ><<br>no : False<br>yes : True | `msdyn_isinventorysitemandatory` |
+`ISINVENTORYPROCESSINGSTOPPED` | ><<br>no : False<br>yes : True | `msdyn_isinventoryprocessingstopped` |
+`ISPROCUREMENTUSINGWORKINGDAYS` | ><<br>no : False<br>yes : True | `msdyn_isprocurementusingworkingdays` |
+`ISPROCUREMENTSITEMANDATORY` | ><<br>no : False<br>yes : True | `msdyn_isprocurementsitemandatory` |
+`ISPROCUREMENTPROCESSINGSTOPPED` | ><<br>no : False<br>yes : True | `msdyn_isprocurementprocessingstopped` |
+`ARESALESDEFAULTORDERSETTINGSOVERRIDDEN` | ><<br>no : False<br>yes : True | `msdyn_aresalesorderdefaultsoverridden` |
+`SALESORDERPROMISINGMETHOD` | ><<br>none : 192350000<br>salesLeadTime : 192350001<br>atp : 192350002<br>atpPlusIssueMargin : 192350003<br>ctp : 192350004 | `msdyn_salesorderpromisingmethod` |
+`ISSALESATPINCLUDINGPLANNEDORDERS` | ><<br>false : False<br>true : True | `msdyn_issalesatpincludingplannedorders` |
+`ISSALESSITEMANDATORY` | ><<br>no : False<br>yes : True | `msdyn_issalessitemandatory` |
+`ISSALESLEADTIMEOVERRIDDEN` | ><<br>no : False<br>yes : True | `msdyn_issalesleadtimeoverridden` |
+`ISSALESPROCESSINGSTOPPED` | ><<br>no : False<br>yes : True | `msdyn_issalesprocessingstopped` |
+`ISINVENTORYWAREHOUSEMANDATORY` | ><<br>no : False<br>yes : True | `msdyn_isinventorywarehousemandatory` |
+`ISPROCUREMENTWAREHOUSEMANDATORY` | ><<br>no : False<br>yes : True | `msdyn_isprocurementwarehousemandatory` |
+`ISSALESWAREHOUSEMANDATORY` | ><<br>no : False<br>yes : True | `msdyn_issaleswarehousemandatory` |
 `OPERATIONALSITEID` | = | `msdyn_operationalsite.msdyn_siteid` |
 `PRODUCTCOLORID` | = | `msdyn_productcolor.msdyn_productcolorname` |
 `PRODUCTCONFIGURATIONID` | = | `msdyn_productconfiguration.msdyn_productconfiguration` |
@@ -1610,21 +1611,21 @@ This template synchronizes data between Finance and Operations apps and Datavers
 
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
-`WILLSALESPRICESEARCHUSEPRODUCTSTYLE` | >< | `msdyn_willsalespricesearchuseproductstyle` |
-`WILLPURCHASEPRICESEARCHUSEPRODUCTSIZE` | >< | `msdyn_willpurchasepricesearchuseproductsize` |
-`WILLSALESPRICESEARCHUSEPRODUCTCONFIGURATION` | >< | `msdyn_willsalespricesearchuseprodconfig` |
-`WILLSALESPRICESEARCHUSEPRODUCTCOLOR` | >< | `msdyn_willsalespricesearchuseproductcolor` |
-`WILLPURCHASEPRICESEARCHUSEPRODUCTSTYLE` | >< | `msdyn_willpurchasepricesearchuseproductstyle` |
-`WILLPURCHASEPRICESEARCHUSEPRODUCTCONFIGURATION` | >< | `msdyn_willpurchpricesearchuseprodconfig` |
-`WILLPURCHASEPRICESEARCHUSEPRODUCTCOLOR` | >< | `msdyn_willpurchpricesearchuseproductcolor` |
-`ISPRODUCTSTYLEACTIVE` | >< | `msdyn_isproductstyleactive` |
-`ISPRODUCTSIZEACTIVE` | >< | `msdyn_isproductsizeactive` |
-`ISPRODUCTCONFIGURATIONACTIVE` | >< | `msdyn_isproductconfigurationactive` |
-`ISPRODUCTCOLORACTIVE` | >< | `msdyn_isproductcoloractive` |
+`WILLSALESPRICESEARCHUSEPRODUCTSTYLE` | ><<br>no : false<br>yes : true | `msdyn_willsalespricesearchuseproductstyle` |
+`WILLPURCHASEPRICESEARCHUSEPRODUCTSIZE` | ><<br>no : false<br>yes : true | `msdyn_willpurchasepricesearchuseproductsize` |
+`WILLSALESPRICESEARCHUSEPRODUCTCONFIGURATION` | ><<br>no : false<br>yes : true | `msdyn_willsalespricesearchuseprodconfig` |
+`WILLSALESPRICESEARCHUSEPRODUCTCOLOR` | ><<br>no : false<br>yes : true | `msdyn_willsalespricesearchuseproductcolor` |
+`WILLPURCHASEPRICESEARCHUSEPRODUCTSTYLE` | ><<br>no : false<br>yes : true | `msdyn_willpurchasepricesearchuseproductstyle` |
+`WILLPURCHASEPRICESEARCHUSEPRODUCTCONFIGURATION` | ><<br>no : false<br>yes : true | `msdyn_willpurchpricesearchuseprodconfig` |
+`WILLPURCHASEPRICESEARCHUSEPRODUCTCOLOR` | ><<br>no : false<br>yes : true | `msdyn_willpurchpricesearchuseproductcolor` |
+`ISPRODUCTSTYLEACTIVE` | ><<br>no : false<br>yes : true | `msdyn_isproductstyleactive` |
+`ISPRODUCTSIZEACTIVE` | ><<br>no : false<br>yes : true | `msdyn_isproductsizeactive` |
+`ISPRODUCTCONFIGURATIONACTIVE` | ><<br>no : false<br>yes : true | `msdyn_isproductconfigurationactive` |
+`ISPRODUCTCOLORACTIVE` | ><<br>no : false<br>yes : true | `msdyn_isproductcoloractive` |
 `GROUPNAME` | = | `msdyn_groupname` |
 `GROUPDESCRIPTION` | = | `msdyn_groupdescription` |
 `PRODUCTVARIANTNOMENCLATURENAME` | = | `msdyn_productvariantnomenclaturename` |
-`WILLSALESPRICESEARCHUSEPRODUCTSIZE` | >< | `msdyn_willsalespricesearchuseproductsize` |
+`WILLSALESPRICESEARCHUSEPRODUCTSIZE` | ><<br>yes : true<br>no : false | `msdyn_willsalespricesearchuseproductsize` |
 
 ###  <a name="187"></a>Product master colors (msdyn_sharedproductcolors)
 
@@ -1686,7 +1687,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `DELIVERYTERMSID` | > | `msdyn_deliveryterm.msdyn_termscode` |
 `ORDERVENDORACCOUNTNUMBER` | > | `msdyn_ordervendor.msdyn_vendoraccountnumber` |
 `REQUESTERPERSONNELNUMBER` | > | `msdyn_requesterpersonnel.cdm_workernumber` |
-`ISDELIVERYADDRESSPRIVATE` | >> | `msdyn_isdeliveryaddressprivate` |
+`ISDELIVERYADDRESSPRIVATE` | >><br>Yes : true<br>No : false | `msdyn_isdeliveryaddressprivate` |
 `DELIVERYADDRESSCOUNTRYREGIONID` | > | `msdyn_deliveryaddresscountryregionid` |
 `DELIVERYADDRESSCOUNTYID` | > | `msdyn_deliveryaddresscountyid` |
 `DELIVERYADDRESSSTATEID` | > | `msdyn_deliveryaddressstateid` |
@@ -1758,7 +1759,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `PRODUCTNUMBER` | = | `msdyn_globalproduct.msdyn_productnumber` |
 `INNEROFFSET` | = | `msdyn_inneroffset` |
 `OUTEROFFSET` | = | `msdyn_outeroffset` |
-`ROUNDING` | >< | `msdyn_rounding` |
+`ROUNDING` | ><<br>nearest : 192350000<br>up : 192350001<br>down : 192350002 | `msdyn_rounding` |
 
 ###  <a name="180"></a>Prospects (leads)
 
@@ -1800,8 +1801,8 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `PRIMARYFAXNUMBERDESCRIPTION` | = | `msdyn_faxdescription` |
 `PRIMARYFAXNUMBEREXTENSION` | = | `msdyn_faxextension` |
 `RETAILCHANNELOPERATINGUNITPARTYNUMBER` | = | `msdyn_retailchannel.msdyn_partynumber` |
-`ISB2BPROSPECT` | >< | `msdyn_b2bcommerceprospect` |
-`B2BPROSPECTSTATUS` | >< | `msdyn_b2bprospectstatus` |
+`ISB2BPROSPECT` | ><<br>no : False<br>yes : True | `msdyn_b2bcommerceprospect` |
+`B2BPROSPECTSTATUS` | ><<br>Pending : 192350000<br>Approved : 192350001<br>Rejected : 192350002 | `msdyn_b2bprospectstatus` |
 
 ###  <a name="232"></a>Purchase order header document attachments (annotations)
 
@@ -1819,7 +1820,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `PURCHASEORDERNUMBER` | = | `msdyn_relatedentityid` |
 `DOCUMENTATTACHMENTTYPECODE` | << | `none` | Note
 `none` | >> | `objecttypecode` | msdyn_purchaseorder
-`ACCESSRESTRICTION` | >< | `msdyn_restriction` |
+`ACCESSRESTRICTION` | ><<br>internal : 0<br>external : 1 | `msdyn_restriction` |
 
 ###  <a name="183"></a>Purchase order headers V2 (msdyn_purchaseorders)
 
@@ -1833,7 +1834,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `PAYMENTTERMSNAME` | = | `msdyn_paymentterm.msdyn_name` |
 `DEFAULTRECEIVINGWAREHOUSEID` | = | `msdyn_receivetowarehouse.msdyn_warehouseidentifier` |
 `ACCOUNTINGDATE` | = | `msdyn_accountingdate` |
-`AREPRICESINCLUDINGSALESTAX` | >< | `msdyn_arepriceincludingsalestax` |
+`AREPRICESINCLUDINGSALESTAX` | ><<br>yes : True<br>no : False | `msdyn_arepriceincludingsalestax` |
 `ATTENTIONINFORMATION` | > | `msdyn_attentioninformation` |
 `CASHDISCOUNTCODE` | = | `msdyn_cashdiscountcode` |
 `CASHDISCOUNTPERCENTAGE` | = | `msdyn_cashdiscountpercentage` |
@@ -1842,9 +1843,9 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `DEFAULTRECEIVINGSITEID` | = | `msdyn_defaultreceivingsiteid.msdyn_siteid` |
 `DELIVERYTERMSID` | = | `msdyn_deliveryterm.msdyn_termscode` |
 `EMAIL` | = | `msdyn_email` |
-`ISCHANGEMANAGEMENTACTIVE` | >> | `msdyn_ischangemanagementactive` |
-`ISDELIVEREDDIRECTLY` | >> | `msdyn_isdeliverydirectly` |
-`LANGUAGEID` | >< | `msdyn_language` |
+`ISCHANGEMANAGEMENTACTIVE` | >><br>yes : True<br>no : False | `msdyn_ischangemanagementactive` |
+`ISDELIVEREDDIRECTLY` | >><br>yes : True<br>no : False | `msdyn_isdeliverydirectly` |
+`LANGUAGEID` | ><<br>ar : 192350000<br>ar-ae : 192350001<br>cs : 192350002<br>da : 192350003<br>de : 192350004<br>de-at : 192350005<br>de-ch : 192350006<br>en-au : 192350007<br>en-gb : 192350009<br>en-ie : 192350010<br>en-in : 192350011<br>en-ca : 192350008<br>en-my : 192350012<br>en-nz : 192350013<br>en-sg : 192350014<br>en-us : 192350015<br>en-za : 192350016<br>es : 192350017<br>es-mx : 192350018<br>et : 192350019<br>fi : 192350020<br>fr : 192350021<br>fr-be : 192350022<br>fr-ca : 192350023<br>fr-ch : 192350024<br>hu : 192350025<br>is : 192350026<br>it : 192350027<br>it-ch : 192350028<br>ja : 192350029<br>lt : 192350030<br>lv : 192350031<br>nb-no : 192350032<br>nl : 192350033<br>nl-be : 192350034<br>pl : 192350035<br>pt-br : 192350036<br>ru : 192350037<br>sv : 192350038<br>th : 192350039<br>tr : 192350040<br>zh-hans : 192350041 | `msdyn_language` |
 `ORDERERPERSONNELNUMBER` | = | `msdyn_ordererpersonnelnumber.cdm_workernumber` |
 `REASONCODE` | = | `msdyn_reasoncode` |
 `REASONCOMMENT` | = | `msdyn_reasoncomment` |
@@ -1856,8 +1857,8 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `ORDERVENDORACCOUNTNUMBER` | = | `msdyn_vendor.accountnumber` |
 `DELIVERYMODEID` | = | `msdyn_shipvia.msdyn_name` |
 `INVOICEVENDORACCOUNTNUMBER` | = | `msdyn_invoicevendoraccount.accountnumber` |
-`DOCUMENTAPPROVALSTATUS` | >> | `msdyn_documentapprovalstatus` |
-`PURCHASEORDERSTATUS` | >> | `msdyn_purchaseorderstatus` |
+`DOCUMENTAPPROVALSTATUS` | >><br>draft : 192350000<br>inReview : 192350001<br>rejected : 192350002<br>approved : 192350003<br>inExternalReview : 192350004<br>finalized : 192350005<br>confirmed : 192350006 | `msdyn_documentapprovalstatus` |
+`PURCHASEORDERSTATUS` | >><br>none : 192350000<br>backorder : 192350001<br>received : 192350002<br>invoiced : 192350003<br>canceled : 192350004 | `msdyn_purchaseorderstatus` |
 `DELIVERYADDRESSCITY` | > | `msdyn_city` |
 `DELIVERYADDRESSCOUNTRYREGIONISOCODE` | > | `msdyn_country` |
 `DELIVERYADDRESSSTATEID` | > | `msdyn_stateorprovince` |
@@ -1897,7 +1898,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `ITEMNUMBER` | > | `msdyn_itemnumber` |
 `APPROXIMATESALESTAXPERCENTAGE` | > | `msdyn_approximatesalestaxpercentage` |
 `BESTBEFOREPERIODDAYS` | > | `msdyn_bestbeforeperioddays` |
-`CARRYINGCOSTABCCODE` | >> | `msdyn_carryingcostabccode` |
+`CARRYINGCOSTABCCODE` | >><br>none : 806380000<br>a : 806380001<br>b : 806380002<br>c : 806380003 | `msdyn_carryingcostabccode` |
 `CONSTANTSCRAPQUANTITY` | > | `msdyn_constantscrapquantity` |
 `COSTCHARGESQUANTITY` | > | `msdyn_costchargesquantity` |
 `DEFAULTRECEIVINGQUANTITY` | > | `msdyn_defaultreceivingquantity` |
@@ -1907,31 +1908,31 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `GROSSPRODUCTHEIGHT` | > | `msdyn_grossproductheight` |
 `GROSSPRODUCTWIDTH` | > | `msdyn_grossproductwidth` |
 `INVENTORYUNITSYMBOL` | > | `msdyn_inventoryunitsymbol.msdyn_symbol` |
-`ISDISCOUNTPOSREGISTRATIONPROHIBITED` | >> | `msdyn_isdiscountposregistrationprohibited` |
-`ISEXEMPTFROMAUTOMATICNOTIFICATIONANDCANCELLATION` | >> | `msdyn_exemptautomaticnotificationcancel` |
-`ISINSTALLMENTELIGIBLE` | >> | `msdyn_isinstallmenteligible` |
-`ISINTERCOMPANYPURCHASEUSAGEBLOCKED` | >> | `msdyn_isintercompanypurchaseusageblocked` |
-`ISINTERCOMPANYSALESUSAGEBLOCKED` | >> | `msdyn_isintercompanysalesusageblocked` |
-`ISMANUALDISCOUNTPOSREGISTRATIONPROHIBITED` | >> | `msdyn_ismanualdiscposregistrationprohibited` |
-`ISPHANTOM` | >> | `msdyn_isphantom` |
-`ISPOSREGISTRATIONBLOCKED` | >> | `msdyn_isposregistrationblocked` |
-`ISPOSREGISTRATIONQUANTITYNEGATIVE` | >> | `msdyn_isposregistrationquantitynegative` |
-`ISPURCHASEPRICEAUTOMATICALLYUPDATED` | >> | `msdyn_ispurchasepriceautomaticallyupdated` |
-`ISPURCHASEPRICEINCLUDINGCHARGES` | >> | `msdyn_ispurchasepriceincludingcharges` |
-`ISSALESWITHHOLDINGTAXCALCULATED` | >> | `msdyn_issaleswithholdingtaxcalculated` |
-`ISRESTRICTEDFORCOUPONS` | >> | `msdyn_isrestrictedforcoupons` |
-`ISSALESPRICEADJUSTMENTALLOWED` | >> | `msdyn_issalespriceadjustmentallowed` |
-`ISSALESPRICEINCLUDINGCHARGES` | >> | `msdyn_issalespriceincludingcharges` |
-`ISSCALEPRODUCT` | >> | `msdyn_isscaleproduct` |
-`ISSHIPALONEENABLED` | >> | `msdyn_isshipaloneenabled` |
-`ISUNITCOSTPRODUCTVARIANTSPECIFIC` | >> | `msdyn_isunitcostproductvariantspecific` |
-`ISVARIANTSHELFLABELSPRINTINGENABLED` | >> | `msdyn_isvariantshelflabelsprintingenabled` |
-`ISZEROPRICEPOSREGISTRATIONALLOWED` | >> | `msdyn_iszeropriceposregistrationallowed` |
-`KEYINPRICEREQUIREMENTSATPOSREGISTER` | >> | `msdyn_keyinpricerequirementsatposregister` |
-`KEYINQUANTITYREQUIREMENTSATPOSREGISTER` | >> | `msdyn_keyinquantityrequirementsatposregister` |
-`MARGINABCCODE` | >> | `msdyn_marginabccode` |
+`ISDISCOUNTPOSREGISTRATIONPROHIBITED` | >><br>no : False<br>yes : True | `msdyn_isdiscountposregistrationprohibited` |
+`ISEXEMPTFROMAUTOMATICNOTIFICATIONANDCANCELLATION` | >><br>no : False<br>yes : True | `msdyn_exemptautomaticnotificationcancel` |
+`ISINSTALLMENTELIGIBLE` | >><br>no : False<br>yes : True | `msdyn_isinstallmenteligible` |
+`ISINTERCOMPANYPURCHASEUSAGEBLOCKED` | >><br>no : False<br>yes : True | `msdyn_isintercompanypurchaseusageblocked` |
+`ISINTERCOMPANYSALESUSAGEBLOCKED` | >><br>no : False<br>yes : True | `msdyn_isintercompanysalesusageblocked` |
+`ISMANUALDISCOUNTPOSREGISTRATIONPROHIBITED` | >><br>no : False<br>yes : True | `msdyn_ismanualdiscposregistrationprohibited` |
+`ISPHANTOM` | >><br>no : False<br>yes : True | `msdyn_isphantom` |
+`ISPOSREGISTRATIONBLOCKED` | >><br>no : False<br>yes : True | `msdyn_isposregistrationblocked` |
+`ISPOSREGISTRATIONQUANTITYNEGATIVE` | >><br>no : False<br>yes : True | `msdyn_isposregistrationquantitynegative` |
+`ISPURCHASEPRICEAUTOMATICALLYUPDATED` | >><br>no : False<br>yes : True | `msdyn_ispurchasepriceautomaticallyupdated` |
+`ISPURCHASEPRICEINCLUDINGCHARGES` | >><br>no : False<br>yes : True | `msdyn_ispurchasepriceincludingcharges` |
+`ISSALESWITHHOLDINGTAXCALCULATED` | >><br>no : False<br>yes : True | `msdyn_issaleswithholdingtaxcalculated` |
+`ISRESTRICTEDFORCOUPONS` | >><br>no : False<br>yes : True | `msdyn_isrestrictedforcoupons` |
+`ISSALESPRICEADJUSTMENTALLOWED` | >><br>no : False<br>yes : True | `msdyn_issalespriceadjustmentallowed` |
+`ISSALESPRICEINCLUDINGCHARGES` | >><br>no : False<br>yes : True | `msdyn_issalespriceincludingcharges` |
+`ISSCALEPRODUCT` | >><br>no : False<br>yes : True | `msdyn_isscaleproduct` |
+`ISSHIPALONEENABLED` | >><br>no : False<br>yes : True | `msdyn_isshipaloneenabled` |
+`ISUNITCOSTPRODUCTVARIANTSPECIFIC` | >><br>no : False<br>yes : True | `msdyn_isunitcostproductvariantspecific` |
+`ISVARIANTSHELFLABELSPRINTINGENABLED` | >><br>no : False<br>yes : True | `msdyn_isvariantshelflabelsprintingenabled` |
+`ISZEROPRICEPOSREGISTRATIONALLOWED` | >><br>no : False<br>yes : True | `msdyn_iszeropriceposregistrationallowed` |
+`KEYINPRICEREQUIREMENTSATPOSREGISTER` | >><br>notMandatory : 806380000<br>newPrice : 806380001<br>higherEqual : 806380002<br>lowerEqual : 806380003<br>noPrice : 806380004 | `msdyn_keyinpricerequirementsatposregister` |
+`KEYINQUANTITYREQUIREMENTSATPOSREGISTER` | >><br>notMandatory : 806380000<br>keyIn : 806380001<br>notKeyIn : 806380002 | `msdyn_keyinquantityrequirementsatposregister` |
+`MARGINABCCODE` | >><br>none : 806380000<br>a : 806380001<br>b : 806380002<br>c : 806380003 | `msdyn_marginabccode` |
 `MAXIMUMPICKQUANTITY` | > | `msdyn_maximumpickquantity` |
-`MUSTKEYINCOMMENTATPOSREGISTER` | >> | `msdyn_mustkeyincommentatposregister` |
+`MUSTKEYINCOMMENTATPOSREGISTER` | >><br>no : False<br>yes : True | `msdyn_mustkeyincommentatposregister` |
 `NECESSARYPRODUCTIONWORKINGTIMESCHEDULINGPROPERTYID` | > | `msdyn_necessaryproductionworkingtimeschedulingp` |
 `NETPRODUCTWEIGHT` | > | `msdyn_netproductweight` |
 `PACKINGDUTYQUANTITY` | > | `msdyn_packingdutyquantity` |
@@ -1939,8 +1940,8 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `POSREGISTRATIONBLOCKEDDATE` | > | `msdyn_posregistrationblockeddate` |
 `POSREGISTRATIONPLANNEDBLOCKEDDATE` | > | `msdyn_posregistrationplannedblockeddate` |
 `POTENCYBASEATTIBUTETARGETVALUE` | > | `msdyn_potencybaseattibutetargetvalue` |
-`POTENCYBASEATTRIBUTEVALUEENTRYEVENT` | >> | `msdyn_potencybaseattributevalueentryevent` |
-`PRODUCTTYPE` | >> | `msdyn_producttype` |
+`POTENCYBASEATTRIBUTEVALUEENTRYEVENT` | >><br>purchProdReceipt : 806380000<br>quality : 806380001 | `msdyn_potencybaseattributevalueentryevent` |
+`PRODUCTTYPE` | >><br>item : 806380001<br>service : 806380002 | `msdyn_producttype` |
 `PRODUCTIONCONSUMPTIONDENSITYCONVERSIONFACTOR` | > | `msdyn_productionconsumptiondensityconversion` |
 `PRODUCTIONCONSUMPTIONDEPTHCONVERSIONFACTOR` | > | `msdyn_productionconsumptiondepthconversion` |
 `PRODUCTIONCONSUMPTIONHEIGHTCONVERSIONFACTOR` | > | `msdyn_productionconsumptionheightconversion` |
@@ -1952,18 +1953,18 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `PURCHASEPRICEDATE` | > | `msdyn_purchasepricedate` |
 `PURCHASEPRICINGPRECISION` | > | `msdyn_purchasepricingprecision` |
 `PURCHASEUNDERDELIVERYPERCENTAGE` | > | `msdyn_purchaseunderdeliverypercentage` |
-`RAWMATERIALPICKINGPRINCIPLE` | >> | `msdyn_rawmaterialpickingprinciple` |
+`RAWMATERIALPICKINGPRINCIPLE` | >><br>staging : 806380000<br>orderPicking : 806380001 | `msdyn_rawmaterialpickingprinciple` |
 `SALESCHARGESQUANTITY` | > | `msdyn_saleschargesquantity` |
 `SALESOVERDELIVERYPERCENTAGE` | > | `msdyn_salesoverdeliverypercentage` |
 `SALESPRICE` | > | `msdyn_salesprice` |
 `SALESPRICECALCULATIONCHARGESPERCENTAGE` | > | `msdyn_salespricecalculationchargespercentage` |
 `SALESPRICECALCULATIONCONTRIBUTIONRATIO` | > | `msdyn_salespricecalculationcontributionratio` |
-`SALESPRICECALCULATIONMODEL` | >> | `msdyn_salespricecalculationmodel` |
+`SALESPRICECALCULATIONMODEL` | >><br>none : 806380000<br>contributionratio : 806380001<br>percentMarkup : 806380002 | `msdyn_salespricecalculationmodel` |
 `SALESPRICEDATE` | > | `msdyn_salespricedate` |
 `SALESPRICINGPRECISION` | > | `msdyn_salespricingprecision` |
 `SALESUNDERDELIVERYPERCENTAGE` | > | `msdyn_salesunderdeliverypercentage` |
 `SALESUNITSYMBOL` | > | `msdyn_salesunitsymbol.msdyn_symbol` |
-`SCALEINDICATOR` | >> | `msdyn_scaleindicator` |
+`SCALEINDICATOR` | >><br>relevant : 806380000<br>notRelevant : 806380001 | `msdyn_scaleindicator` |
 `SELLSTARTDATE` | > | `msdyn_sellstartdate` |
 `SHELFADVICEPERIODDAYS` | > | `msdyn_shelfadviceperioddays` |
 `SHELFLIFEPERIODDAYS` | > | `msdyn_shelflifeperioddays` |
@@ -1977,17 +1978,17 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `VARIABLESCRAPPERCENTAGE` | > | `msdyn_variablescrappercentage` |
 `WAREHOUSEMOBILEDEVICEDESCRIPTIONLINE1` | > | `msdyn_warehousemobiledevicedescriptionline1` |
 `WAREHOUSEMOBILEDEVICEDESCRIPTIONLINE2` | > | `msdyn_warehousemobiledevicedescriptionline2` |
-`WILLINVENTORYISSUEAUTOMATICALLYREPORTASFINISHED` | >> | `msdyn_willinventoryissueautoreportasfinished` |
-`WILLINVENTORYRECEIPTIGNOREFLUSHINGPRINCIPLE` | >> | `msdyn_willinventoryreceiptignoreflushing` |
-`WILLPICKINGWORKBENCHAPPLYBOXINGLOGIC` | >> | `msdyn_willpickingworkbenchapplyboxinglogic` |
-`WILLTOTALPURCHASEDISCOUNTCALCULATIONINCLUDEPRODUCT` | >> | `msdyn_willtotalpurchdiscountcalcincludeproduct` |
-`WILLTOTALSALESDISCOUNTCALCULATIONINCLUDEPRODUCT` | >> | `msdyn_willtotalsalesdiscountcalcincludeproduct` |
-`WILLWORKCENTERPICKINGALLOWNEGATIVEINVENTORY` | >> | `msdyn_willworkcenterpickingallownegativeinvent` |
+`WILLINVENTORYISSUEAUTOMATICALLYREPORTASFINISHED` | >><br>no : False<br>yes : True | `msdyn_willinventoryissueautoreportasfinished` |
+`WILLINVENTORYRECEIPTIGNOREFLUSHINGPRINCIPLE` | >><br>no : False<br>yes : True | `msdyn_willinventoryreceiptignoreflushing` |
+`WILLPICKINGWORKBENCHAPPLYBOXINGLOGIC` | >><br>no : False<br>yes : True | `msdyn_willpickingworkbenchapplyboxinglogic` |
+`WILLTOTALPURCHASEDISCOUNTCALCULATIONINCLUDEPRODUCT` | >><br>no : False<br>yes : True | `msdyn_willtotalpurchdiscountcalcincludeproduct` |
+`WILLTOTALSALESDISCOUNTCALCULATIONINCLUDEPRODUCT` | >><br>no : False<br>yes : True | `msdyn_willtotalsalesdiscountcalcincludeproduct` |
+`WILLWORKCENTERPICKINGALLOWNEGATIVEINVENTORY` | >><br>no : False<br>yes : True | `msdyn_willworkcenterpickingallownegativeinvent` |
 `YIELDPERCENTAGE` | > | `msdyn_yieldpercentage` |
-`ISUNITCOSTAUTOMATICALLYUPDATED` | >> | `msdyn_isunitcostautomaticallyupdated` |
+`ISUNITCOSTAUTOMATICALLYUPDATED` | >><br>no : False<br>yes : True | `msdyn_isunitcostautomaticallyupdated` |
 `PURCHASEUNITSYMBOL` | > | `msdyn_purchaseunitsymbol.msdyn_symbol` |
 `PURCHASEPRICEQUANTITY` | > | `msdyn_purchasepricequantity` |
-`ISUNITCOSTINCLUDINGCHARGES` | >> | `msdyn_isunitcostincludingcharges` |
+`ISUNITCOSTINCLUDINGCHARGES` | >><br>no : False<br>yes : True | `msdyn_isunitcostincludingcharges` |
 `FIXEDCOSTCHARGES` | > | `msdyn_fixedcostcharges` |
 `MINIMUMCATCHWEIGHTQUANTITY` | > | `msdyn_minimumcatchweightquantity` |
 `MAXIMUMCATCHWEIGHTQUANTITY` | > | `msdyn_maximumcatchweightquantity` |
@@ -1996,8 +1997,10 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `CATCHWEIGHTUNITSYMBOL` | > | `msdyn_catchweightunitsymbol.msdyn_symbol` |
 `COMPARISONPRICEBASEUNITSYMBOL` | > | `msdyn_comparisonpricebaseunitsymbol.msdyn_symbol` |
 `PRIMARYVENDORACCOUNTNUMBER` | > | `msdyn_vendorid.msdyn_vendoraccountnumber` |
-`ISCATCHWEIGHTPRODUCT` | >> | `msdyn_iscatchweight` |
+`ISCATCHWEIGHTPRODUCT` | >><br>no : False<br>yes : True | `msdyn_iscatchweight` |
 `PRODUCTDIMENSIONGROUPNAME` | > | `msdyn_productdimensiongroupid.msdyn_groupname` |
+`STORAGEDIMENSIONGROUPNAME` | > | `msdyn_storagedimensiongroup.msdyn_groupname` |
+`TRACKINGDIMENSIONGROUPNAME` | > | `msdyn_trackingdimensiongroup.msdyn_groupname` |
 
 ###  <a name="118"></a>Sales invoice headers V2 (invoices)
 
@@ -2078,7 +2081,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `SALESORDERNUMBER` | = | `msdyn_relatedentityid` |
 `DOCUMENTATTACHMENTTYPECODE` | << | `none` | Note
 `none` | >> | `objecttypecode` | salesorder
-`ACCESSRESTRICTION` | >< | `msdyn_restriction` |
+`ACCESSRESTRICTION` | ><<br>internal : 0<br>external : 1 | `msdyn_restriction` |
 
 ###  <a name="186"></a>Sales order origin codes (msdyn_salesorderorigins)
 
@@ -2098,8 +2101,8 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `TAXAUTHORITYCODE` | = | `msdyn_taxauthoritycode` |
 `TAXAUTHORITYIDENTIFICATION` | = | `msdyn_taxauthorityidentificator` |
 `DESCRIPTION` | = | `msdyn_description` |
-`REPORTLAYOUT` | >< | `msdyn_taxreportlayout` |
-`ROUNDOFFTYPE` | >< | `msdyn_roundofftype` |
+`REPORTLAYOUT` | ><<br>default : 192350000<br>norway : 192350001<br>unitedKingdom : 192350002<br>sweden : 192350003<br>germany : 192350004<br>austria : 192350005<br>netherlands : 192350006<br>usa : 192350007<br>italy : 192350008<br>belgium : 192350009<br>singapore : 192350010<br>japan : 192350011<br>finland : 192350012<br>estonia : 192350013<br>uae : 192350014 | `msdyn_taxreportlayout` |
+`ROUNDOFFTYPE` | ><<br>ordinary : 192350000<br>roundDown : 192350001<br>roundUp : 192350002<br>advantage : 192350003 | `msdyn_roundofftype` |
 `ROUNDOFF` | = | `msdyn_roundoff` |
 `EMAIL` | = | `msdyn_email` |
 `PHONE` | = | `msdyn_phone` |
@@ -2148,12 +2151,12 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `DEFAULTFINANCIALDIMENSIONVALUE` | = | `msdyn_defaultfinancialdimensionvalue` |
 `DEFAULTINVENTORYSTATUSID` | = | `msdyn_defaultinventorystatusid` |
-`ISRECEIVINGWAREHOUSEOVERRIDEALLOWED` | >< | `msdyn_isreceivingwarehouseoverrideallowed` |
+`ISRECEIVINGWAREHOUSEOVERRIDEALLOWED` | ><<br>no : False<br>yes : True | `msdyn_isreceivingwarehouseoverrideallowed` |
 `SITEID` | = | `msdyn_siteid` |
 `SITENAME` | = | `msdyn_sitename` |
 `TAXBRANCHCODE` | = | `msdyn_taxbranchcode` |
 `FISCALESTABLISHMENTID` | = | `msdyn_fiscalestablishmentid` |
-`ISPRIMARYADDRESSASSIGNED` | >< | `msdyn_isprimaryaddressassigned` |
+`ISPRIMARYADDRESSASSIGNED` | ><<br>no : False<br>yes : True | `msdyn_isprimaryaddressassigned` |
 `PRIMARYADDRESSCITY` | = | `msdyn_primaryaddresscity` |
 `PRIMARYADDRESSCOUNTRYREGIONID` | = | `msdyn_primaryaddresscountryregionid` |
 `PRIMARYADDRESSCOUNTYID` | = | `msdyn_primaryaddresscountyid` |
@@ -2170,7 +2173,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `PRIMARYADDRESSSTREETINKANA` | = | `msdyn_primaryaddressstreetinkana` |
 `PRIMARYADDRESSDESCRIPTION` | = | `msdyn_primaryaddressdescription` |
 `FORMATTEDPRIMARYADDRESS` | = | `msdyn_formattedprimaryaddress` |
-`WILLMASTERPLANNEDINTRASITEMOVEMENTSUSETRANSFERJOURNALS` | >< | `msdyn_masterplannedusestransferjournal` |
+`WILLMASTERPLANNEDINTRASITEMOVEMENTSUSETRANSFERJOURNALS` | ><<br>no : False<br>yes : True | `msdyn_masterplannedusestransferjournal` |
 `PRIMARYADDRESSPOSTBOX` | = | `msdyn_primaryaddresspostbox` |
 `PRIMARYADDRESSSTREETNUMBER` | = | `msdyn_primaryaddressstreetnumber` |
 
@@ -2188,26 +2191,26 @@ This template synchronizes data between Finance and Operations apps and Datavers
 
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
-`WILLSALESPRICESEARCHUSEWAREHOUSE` | >< | `msdyn_willsalespricesearchusewarehouse` |
-`WILLSALESPRICESEARCHUSESITE` | >< | `msdyn_willsalespricesearchusesite` |
-`WILLSALESPRICESEARCHUSEINVENTORYSTATUS` | >< | `msdyn_willsalespricesearchuseinventorystatus` |
-`WILLPURCHASEPRICESEARCHUSEWAREHOUSE` | >< | `msdyn_willpurchasepricesearchusewarehouse` |
-`WILLPURCHASEPRICESEARCHUSESITE` | >< | `msdyn_willpurchasepricesearchusesite` |
-`WILLPURCHASEPRICESEARCHUSEINVENTORYSTATUS` | >< | `msdyn_willpurchpricesearchuseinventstatus` |
-`WILLCOVERAGEPLANNINGUSEWAREHOUSE` | >< | `msdyn_willcoverageplanusewarehouse` |
-`WILLCOVERAGEPLANNINGUSELOCATION` | >< | `msdyn_iscoverageplanenabledforlocation` |
-`WILLCOVERAGEPLANNINGUSEINVENTORYSTATUS` | >< | `msdyn_willcoverageplanuseinventorystatus` |
-`AREADVANCEDWAREHOUSEMANAGEMENTPROCESSESENABLED` | >< | `msdyn_areadvancedwmprocessesenabled` |
-`ISWAREHOUSEPRIMARYSTORAGEDIMENSION` | >< | `msdyn_iswarehouseprimarystoragedimension` |
-`ISWAREHOUSEMANDATORY` | >< | `msdyn_iswarehousemandatory` |
-`ISPHYSICALINVENTORYENABLEDFORWAREHOUSE` | >< | `msdyn_isphysicalinventoryenabledforwarehouse` |
-`ISPHYSICALINVENTORYENABLEDFORLOCATION` | >< | `msdyn_isphysicalinventoryenabledforlocation` |
-`ISLOCATIONACTIVE` | >< | `msdyn_islocationactive` |
-`ISFINANCIALINVENTORYENABLEDFORWAREHOUSE` | >< | `msdyn_isfinancialinventoryenabledforwarehouse` |
+`WILLSALESPRICESEARCHUSEWAREHOUSE` | ><<br>no : false<br>yes : true | `msdyn_willsalespricesearchusewarehouse` |
+`WILLSALESPRICESEARCHUSESITE` | ><<br>no : false<br>yes : true | `msdyn_willsalespricesearchusesite` |
+`WILLSALESPRICESEARCHUSEINVENTORYSTATUS` | ><<br>no : false<br>yes : true | `msdyn_willsalespricesearchuseinventorystatus` |
+`WILLPURCHASEPRICESEARCHUSEWAREHOUSE` | ><<br>no : false<br>yes : true | `msdyn_willpurchasepricesearchusewarehouse` |
+`WILLPURCHASEPRICESEARCHUSESITE` | ><<br>no : false<br>yes : true | `msdyn_willpurchasepricesearchusesite` |
+`WILLPURCHASEPRICESEARCHUSEINVENTORYSTATUS` | ><<br>no : false<br>yes : true | `msdyn_willpurchpricesearchuseinventstatus` |
+`WILLCOVERAGEPLANNINGUSEWAREHOUSE` | ><<br>no : false<br>yes : true | `msdyn_willcoverageplanusewarehouse` |
+`WILLCOVERAGEPLANNINGUSELOCATION` | ><<br>no : false<br>yes : true | `msdyn_iscoverageplanenabledforlocation` |
+`WILLCOVERAGEPLANNINGUSEINVENTORYSTATUS` | ><<br>no : false<br>yes : true | `msdyn_willcoverageplanuseinventorystatus` |
+`AREADVANCEDWAREHOUSEMANAGEMENTPROCESSESENABLED` | ><<br>no : false<br>yes : true | `msdyn_areadvancedwmprocessesenabled` |
+`ISWAREHOUSEPRIMARYSTORAGEDIMENSION` | ><<br>no : false<br>yes : true | `msdyn_iswarehouseprimarystoragedimension` |
+`ISWAREHOUSEMANDATORY` | ><<br>no : false<br>yes : true | `msdyn_iswarehousemandatory` |
+`ISPHYSICALINVENTORYENABLEDFORWAREHOUSE` | ><<br>no : false<br>yes : true | `msdyn_isphysicalinventoryenabledforwarehouse` |
+`ISPHYSICALINVENTORYENABLEDFORLOCATION` | ><<br>no : false<br>yes : true | `msdyn_isphysicalinventoryenabledforlocation` |
+`ISLOCATIONACTIVE` | ><<br>no : false<br>yes : true | `msdyn_islocationactive` |
+`ISFINANCIALINVENTORYENABLEDFORWAREHOUSE` | ><<br>no : false<br>yes : true | `msdyn_isfinancialinventoryenabledforwarehouse` |
 `GROUPNAME` | = | `msdyn_groupname` |
 `GROUPDESCRIPTION` | = | `msdyn_groupdescription` |
-`ISBLANKRECEIPTALLOWEDFORLOCATION` | >< | `msdyn_isblankreceiptallowedforlocation` |
-`ISBLANKISSUEALLOWEDFORLOCATION` | >< | `msdyn_isblankissueallowedforlocation` |
+`ISBLANKRECEIPTALLOWEDFORLOCATION` | ><<br>no : false<br>yes : true | `msdyn_isblankreceiptallowedforlocation` |
+`ISBLANKISSUEALLOWEDFORLOCATION` | ><<br>no : false<br>yes : true | `msdyn_isblankissueallowedforlocation` |
 
 ###  <a name="178"></a>Styles (msdyn_productstyles)
 
@@ -2225,12 +2228,12 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `TERMSCODE` | = | `msdyn_termscode` |
 `INTRASTATCODE` | = | `msdyn_intrastatcode` |
-`SALESTAXLOCATIONROLE` | >< | `msdyn_salestaxlocationrole` |
+`SALESTAXLOCATIONROLE` | ><<br>none : 192350000<br>invoice : 192350001<br>delivery : 192350002<br>swift : 192350003<br>payment : 192350004<br>service : 192350005<br>home : 192350006<br>other : 192350007<br>business : 192350008<br>remitTo : 192350009<br>statement : 192350010<br>fixedAsset : 192350011<br>oneTime : 192350012<br>recruit : 192350013<br>sms : 192350014<br>lading_W : 192350015<br>unlading_W : 192350016<br>headCompany_IT : 192350017<br>stableOrganization_IT : 192350018 | `msdyn_salestaxlocationrole` |
 `TERMSDESCRIPTION` | = | `msdyn_termsdescription` |
-`FREIGHTCHARGETERMS` | >< | `msdyn_freightchargeterms` |
-`DORETAILSALESORDERSGETTRANSPORTATIONCHARGESADDED` | >< | `msdyn_doretailsogettransportationchargesadded` |
-`ISCASHONDELIVERY` | >< | `msdyn_iscashondelivery` |
-`WILLSHIPMENTCONFIRMATIONTRANSFERCHARGES` | >< | `msdyn_willshipmentconfirmationtransfercharges` |
+`FREIGHTCHARGETERMS` | ><<br>prepaid : 192350000<br>collect : 192350001<br>thirdParty : 192350002<br>nofreight : 192350003 | `msdyn_freightchargeterms` |
+`DORETAILSALESORDERSGETTRANSPORTATIONCHARGESADDED` | ><<br>no : False<br>yes : True | `msdyn_doretailsogettransportationchargesadded` |
+`ISCASHONDELIVERY` | ><<br>no : False<br>yes : True | `msdyn_iscashondelivery` |
+`WILLSHIPMENTCONFIRMATIONTRANSFERCHARGES` | ><<br>no : False<br>yes : True | `msdyn_willshipmentconfirmationtransfercharges` |
 
 ###  <a name="161"></a>Terms of payment (msdyn_paymentterms)
 
@@ -2242,14 +2245,14 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `NAME` | = | `msdyn_name` |
 `NUMBEROFMONTHS` | = | `msdyn_numberofmonth` |
 `CUTOFFDAYOFMONTH` | = | `msdyn_cutoffdayofmonth` |
-`ISCASHPAYMENT` | >< | `msdyn_iscashpayment` |
+`ISCASHPAYMENT` | ><<br>no : False<br>yes : True | `msdyn_iscashpayment` |
 `NUMBEROFDAYS` | = | `msdyn_days` |
-`ISCERTIFIEDCOMPANYCHECK` | >< | `msdyn_iscertifiedcompanycheck` |
-`ISDEFAULTPAYMENTTERM` | >< | `msdyn_isdefaultpaymentterm` |
-`CREDITCARDPAYMENTTYPE` | >< | `msdyn_creditcardpaymenttype` |
-`CREDITCARDCREDITCHECKTYPE` | >< | `msdyn_creditcardcreditchecktype` |
+`ISCERTIFIEDCOMPANYCHECK` | ><<br>yes : True<br>no : False | `msdyn_iscertifiedcompanycheck` |
+`ISDEFAULTPAYMENTTERM` | ><<br>no : False<br>yes : True | `msdyn_isdefaultpaymentterm` |
+`CREDITCARDPAYMENTTYPE` | ><<br>na : 806380998<br>creditCard : 806380999 | `msdyn_creditcardpaymenttype` |
+`CREDITCARDCREDITCHECKTYPE` | ><<br>normal : 806380000<br>byPass : 806380001 | `msdyn_creditcardcreditchecktype` |
 `PAYMENTDAYNAME` | = | `msdyn_paymentdayname.msdyn_name` |
-`PAYMENTMETHODTYPE` | >< | `msdyn_paymentmethodtype` |
+`PAYMENTMETHODTYPE` | ><<br>net : 806380991<br>currentMth : 806380992<br>currentQuart : 806380993<br>currentYear : 806380994<br>currentWeek : 806380995<br>cod : 806380996<br>cutOffDate : 806380997 | `msdyn_paymentmethodtype` |
 `PAYMENTSCHEDULENAME` | = | `msdyn_paymentschedulename.msdyn_name` |
 
 ###  <a name="179"></a>Tracking dimension groups (msdyn_producttrackingdimensiongroups)
@@ -2258,31 +2261,31 @@ This template synchronizes data between Finance and Operations apps and Datavers
 
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
-`SERIALNUMBERCAPTURINGOPERATION` | >< | `msdyn_serialnumbercapturingoperation` |
+`SERIALNUMBERCAPTURINGOPERATION` | ><<br>none : 806380000<br>picking : 806380001<br>packing : 806380002 | `msdyn_serialnumbercapturingoperation` |
 `GROUPNAME` | = | `msdyn_groupname` |
 `GROUPDESCRIPTION` | = | `msdyn_groupdescription` |
-`ISSERIALNUMBERENABLEDFORPRODUCTIONCONSUMPTIONPROCESS` | >< | `msdyn_issnenabledforpcprocess` |
-`ISSERIALNUMBERCONTROLENABLED` | >< | `msdyn_isserialnumbercontrolenabled` |
-`ISSERIALNUMBERENABLEDFORSALESPROCESS` | >< | `msdyn_isserialnumberenabledforsalesprocess` |
-`ISSERIALNUMBERACTIVE` | >< | `msdyn_isserialnumberactive` |
-`ISSALESPRICEBYSERIALNUMBER` | >< | `msdyn_issalespricebyserialnumber` |
-`ISSALESPRICEBYBATCHNUMBER` | >< | `msdyn_issalespricebybatchnumber` |
-`ISPURCHASEPRICEBYSERIALNUMBER` | >< | `msdyn_ispurchasepricebyserialnumber` |
-`ISPURCHASEPRICEBYBATCHNUMBER` | >< | `msdyn_ispurchasepricebybatchnumber` |
-`ISPRIMARYSTOCKINGENABLEDFORSERIALNUMBER` | >< | `msdyn_isprimarystockingenabledforsn` |
-`ISPRIMARYSTOCKINGENABLEDFORBATCHNUMBER` | >< | `msdyn_isprimarystockingenabledforbn` |
-`ISPHYSICALINVENTORYENABLEDFORSERIALNUMBER` | >< | `msdyn_isphysicalinventoryenabledforsn` |
-`ISPHYSICALINVENTORYENABLEDFORBATCHNUMBER` | >< | `msdyn_isphysicalinventoryenabledforbn` |
-`ISFINANCIALINVENTORYENABLEDFORSERIALNUMBER` | >< | `msdyn_isfinancialinventoryenabledforsn` |
-`ISFINANCIALINVENTORYENABLEDFORBATCHNUMBER` | >< | `msdyn_isfinancialinventoryenabledforbn` |
-`ISCOVERAGEPLANENABLEDFORSERIALNUMBER` | >< | `msdyn_iscoverageplanenabledforserialnumber` |
-`ISCOVERAGEPLANENABLEDFORBATCHNUMBER` | >< | `msdyn_iscoverageplanenabledforbatchnumber` |
-`ISBLANKRECEIPTALLOWEDFORSERIALNUMBER` | >< | `msdyn_isblankreceiptallowedforserialnumber` |
-`ISBLANKRECEIPTALLOWEDFORBATCHNUMBER` | >< | `msdyn_isblankreceiptallowedforbatchnumber` |
-`ISBLANKISSUEALLOWEDFORSERIALNUMBER` | >< | `msdyn_isblankissueallowedforserialnumber` |
-`ISBLANKISSUEALLOWEDFORBATCHNUMBER` | >< | `msdyn_isblankissueallowedforbatchnumber` |
-`ISBATCHNUMBERACTIVE` | >< | `msdyn_isbatchnumberactive` |
-`ISINVENTORYOWNERACTIVE` | >< | `msdyn_isinventoryowneractive` |
+`ISSERIALNUMBERENABLEDFORPRODUCTIONCONSUMPTIONPROCESS` | ><<br>no : false<br>yes : true | `msdyn_issnenabledforpcprocess` |
+`ISSERIALNUMBERCONTROLENABLED` | ><<br>no : false<br>yes : true | `msdyn_isserialnumbercontrolenabled` |
+`ISSERIALNUMBERENABLEDFORSALESPROCESS` | ><<br>no : false<br>yes : true | `msdyn_isserialnumberenabledforsalesprocess` |
+`ISSERIALNUMBERACTIVE` | ><<br>no : false<br>yes : true | `msdyn_isserialnumberactive` |
+`ISSALESPRICEBYSERIALNUMBER` | ><<br>no : false<br>yes : true | `msdyn_issalespricebyserialnumber` |
+`ISSALESPRICEBYBATCHNUMBER` | ><<br>no : false<br>yes : true | `msdyn_issalespricebybatchnumber` |
+`ISPURCHASEPRICEBYSERIALNUMBER` | ><<br>no : false<br>yes : true | `msdyn_ispurchasepricebyserialnumber` |
+`ISPURCHASEPRICEBYBATCHNUMBER` | ><<br>no : false<br>yes : true | `msdyn_ispurchasepricebybatchnumber` |
+`ISPRIMARYSTOCKINGENABLEDFORSERIALNUMBER` | ><<br>no : false<br>yes : true | `msdyn_isprimarystockingenabledforsn` |
+`ISPRIMARYSTOCKINGENABLEDFORBATCHNUMBER` | ><<br>no : false<br>yes : true | `msdyn_isprimarystockingenabledforbn` |
+`ISPHYSICALINVENTORYENABLEDFORSERIALNUMBER` | ><<br>no : false<br>yes : true | `msdyn_isphysicalinventoryenabledforsn` |
+`ISPHYSICALINVENTORYENABLEDFORBATCHNUMBER` | ><<br>no : false<br>yes : true | `msdyn_isphysicalinventoryenabledforbn` |
+`ISFINANCIALINVENTORYENABLEDFORSERIALNUMBER` | ><<br>no : false<br>yes : true | `msdyn_isfinancialinventoryenabledforsn` |
+`ISFINANCIALINVENTORYENABLEDFORBATCHNUMBER` | ><<br>no : false<br>yes : true | `msdyn_isfinancialinventoryenabledforbn` |
+`ISCOVERAGEPLANENABLEDFORSERIALNUMBER` | ><<br>no : false<br>yes : true | `msdyn_iscoverageplanenabledforserialnumber` |
+`ISCOVERAGEPLANENABLEDFORBATCHNUMBER` | ><<br>no : false<br>yes : true | `msdyn_iscoverageplanenabledforbatchnumber` |
+`ISBLANKRECEIPTALLOWEDFORSERIALNUMBER` | ><<br>no : false<br>yes : true | `msdyn_isblankreceiptallowedforserialnumber` |
+`ISBLANKRECEIPTALLOWEDFORBATCHNUMBER` | ><<br>no : false<br>yes : true | `msdyn_isblankreceiptallowedforbatchnumber` |
+`ISBLANKISSUEALLOWEDFORSERIALNUMBER` | ><<br>no : false<br>yes : true | `msdyn_isblankissueallowedforserialnumber` |
+`ISBLANKISSUEALLOWEDFORBATCHNUMBER` | ><<br>no : false<br>yes : true | `msdyn_isblankissueallowedforbatchnumber` |
+`ISBATCHNUMBERACTIVE` | ><<br>no : false<br>yes : true | `msdyn_isbatchnumberactive` |
+`ISINVENTORYOWNERACTIVE` | ><<br>no : false<br>yes : true | `msdyn_isinventoryowneractive` |
 
 ###  <a name="199"></a>Unit conversions (msdyn_unitofmeasureconversions)
 
@@ -2295,7 +2298,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `FACTOR` | = | `msdyn_factor` |
 `INNEROFFSET` | = | `msdyn_inneroffset` |
 `OUTEROFFSET` | = | `msdyn_outeroffset` |
-`ROUNDING` | >< | `msdyn_rounding` |
+`ROUNDING` | ><<br>nearest : 192350000<br>up : 192350001<br>down : 192350002 | `msdyn_rounding` |
 `TOUNITSYMBOL` | = | `msdyn_tounit.msdyn_symbol` |
 `FROMUNITSYMBOL` | = | `msdyn_fromunit.msdyn_symbol` |
 
@@ -2308,9 +2311,9 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `UNITSYMBOL` | > | `msdyn_symbol` |
 `UNITCLASS` | > | `msdyn_externalunitclassname` |
 `DECIMALPRECISION` | > | `msdyn_decimalprecision` |
-`ISBASEUNIT` | >> | `msdyn_isbaseunit` |
-`ISSYSTEMUNIT` | >> | `msdyn_issystemunit` |
-`SYSTEMOFUNITS` | >> | `msdyn_systemofunits` |
+`ISBASEUNIT` | >><br>no : false<br>yes : true | `msdyn_isbaseunit` |
+`ISSYSTEMUNIT` | >><br>no : false<br>yes : true | `msdyn_issystemunit` |
+`SYSTEMOFUNITS` | >><br>none : 192350000<br>metric : 192350001<br>us : 192350002 | `msdyn_systemofunits` |
 `UNITSYMBOL` | > | `name` |
 `UNITDESCRIPTION` | > | `msdyn_description` |
 
@@ -2330,7 +2333,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `VENDORACCOUNTNUMBER` | = | `msdyn_relatedentityid2` |
 `DOCUMENTATTACHMENTTYPECODE` | << | `none` | Note
 `none` | >> | `objecttypecode` | msdyn_vendor
-`ACCESSRESTRICTION` | >< | `msdyn_restriction` |
+`ACCESSRESTRICTION` | ><<br>internal : 0<br>external : 1 | `msdyn_restriction` |
 
 ###  <a name="200"></a>Vendor groups (msdyn_vendorgroups)
 
@@ -2351,18 +2354,18 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `NAME` | = | `msdyn_name` |
 `DESCRIPTION` | = | `msdyn_description` |
-`SUMBYPERIOD` | >< | `msdyn_sumbyperiod` |
+`SUMBYPERIOD` | ><<br>transDate : 806380001<br>invoice : 806380000<br>week : 806380002<br>total : 806380003 | `msdyn_sumbyperiod` |
 `DISCOUNTGRACEPERIODDAYS` | = | `msdyn_discountgraceperioddays` |
-`PAYMENTSTATUS` | >< | `msdyn_paymentstatus` |
-`ALLOWPAYMENTCOPIES` | >< | `msdyn_allowpaymentcopies` |
-`PAYMENTTYPE` | >< | `msdyn_paymenttype` |
+`PAYMENTSTATUS` | ><<br>none : 806380000<br>sent : 806380001<br>recieved : 806380002<br>approved : 806380003<br>rejected : 806380004 | `msdyn_paymentstatus` |
+`ALLOWPAYMENTCOPIES` | ><<br>no : False<br>yes : True | `msdyn_allowpaymentcopies` |
+`PAYMENTTYPE` | ><<br>blank : 806380000<br>check : 806380001<br>electronicPayment : 806380002<br>promissoryNote : 806380003 | `msdyn_paymenttype` |
 `LASTFILENUMBER` | = | `msdyn_lastfilenumber` |
 `LASTFILENUMBERTODAY` | = | `msdyn_lastfilenumbertoday` |
-`ACCOUNTTYPE` | >< | `msdyn_accounttype` |
-`BRIDGINGPOSTINGENABLED` | >< | `msdyn_bridgingposting` |
-`ENABLEPOSTDATEDCHECKCLEARINGPOSTING` | >< | `msdyn_postdatedcheckclearingposting` |
-`PROMISSORYNOTEDRAFTTYPE` | >< | `msdyn_promissorynotedrafttype` |
-`DIRECTDEBIT` | >< | `msdyn_directdebit` |
+`ACCOUNTTYPE` | ><<br>ledger : 806380000<br>bank : 806380005<br>cust : 806380001<br>fixedAssets : 806380004<br>vend : 806380002<br>project : 806380003 | `msdyn_accounttype` |
+`BRIDGINGPOSTINGENABLED` | ><<br>no : False<br>yes : True | `msdyn_bridgingposting` |
+`ENABLEPOSTDATEDCHECKCLEARINGPOSTING` | ><<br>no : False<br>yes : True | `msdyn_postdatedcheckclearingposting` |
+`PROMISSORYNOTEDRAFTTYPE` | ><<br>noDraft : 806380000<br>noAcceptance : 806380001<br>acceptance : 806380002<br>promissory : 806380003<br>bankAcceptance : 806380004 | `msdyn_promissorynotedrafttype` |
+`DIRECTDEBIT` | ><<br>no : False<br>yes : True | `msdyn_directdebit` |
 
 ###  <a name="202"></a>Vendors V2 (msdyn_vendors)
 
@@ -2374,10 +2377,10 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `VENDORACCOUNTNUMBER` | = | `msdyn_vendoraccountnumber` |
 `VENDORGROUPID` | = | `msdyn_vendorgroupid.msdyn_vendorgroup` |
-`VENDORPARTYTYPE` | >< | `msdyn_isperson` |
+`VENDORPARTYTYPE` | ><<br>person : True<br>organization : False | `msdyn_isperson` |
 `CREDITLIMIT` | = | `msdyn_vendorcreditlimit` |
-`ISFOREIGNENTITY` | >< | `msdyn_isforeignentity` |
-`ISONETIMEVENDOR` | >< | `msdyn_isonetimevendor` |
+`ISFOREIGNENTITY` | ><<br>no : False<br>yes : True | `msdyn_isforeignentity` |
+`ISONETIMEVENDOR` | ><<br>no : False<br>yes : True | `msdyn_isonetimevendor` |
 `CREDITRATING` | = | `msdyn_creditrating` |
 `DUNSNUMBER` | = | `msdyn_dunsnumber` |
 `ETHNICORIGINID` | = | `msdyn_ethnicorigin` |
@@ -2387,21 +2390,21 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `DEFAULTPAYMENTDAYNAME` | = | `msdyn_defaultpaymentdayname.msdyn_name` |
 `DEFAULTPAYMENTSCHEDULENAME` | = | `msdyn_paymentschedule.msdyn_name` |
 `DEFAULTPAYMENTTERMSNAME` | = | `msdyn_paymentterms.msdyn_name` |
-`HASONLYTAKENBIDS` | >< | `msdyn_hasonlytakenbids` |
-`ISMINORITYOWNED` | >< | `msdyn_isminorityowned` |
-`ISVENDORLOCALLYOWNED` | >< | `msdyn_isvendorlocallyowned` |
-`ISSERVICEVETERANOWNED` | >< | `msdyn_isserviceveteranowned` |
-`ISOWNERDISABLED` | >< | `msdyn_ownerisdisabled` |
-`ISWOMANOWNER` | >< | `msdyn_womanowner` |
+`HASONLYTAKENBIDS` | ><<br>no : False<br>yes : True | `msdyn_hasonlytakenbids` |
+`ISMINORITYOWNED` | ><<br>no : False<br>yes : True | `msdyn_isminorityowned` |
+`ISVENDORLOCALLYOWNED` | ><<br>yes : True<br>no : False | `msdyn_isvendorlocallyowned` |
+`ISSERVICEVETERANOWNED` | ><<br>yes : True<br>no : False | `msdyn_isserviceveteranowned` |
+`ISOWNERDISABLED` | ><<br>no : False<br>yes : True | `msdyn_ownerisdisabled` |
+`ISWOMANOWNER` | ><<br>no : False<br>yes : True | `msdyn_womanowner` |
 `ORGANIZATIONEMPLOYEEAMOUNT` | = | `msdyn_numberofemployees` |
 `VENDORHOLDRELEASEDATE` | = | `msdyn_vendoronholdreleasedate` |
 `VENDORPARTYNUMBER` | = | `msdyn_partyid.msdyn_partynumber` |
-`ONHOLDSTATUS` | >< | `msdyn_onholdstatus` |
+`ONHOLDSTATUS` | ><<br>no : 806380000<br>invoice : 806380001<br>all : 806380002<br>payment : 806380003<br>requisition : 806380004<br>never : 806380005 | `msdyn_onholdstatus` |
 `CURRENCYCODE` | = | `msdyn_currencycode.isocurrencycode` |
-`ISVENDORLOCATEDINHUBZONE` | >< | `msdyn_isvendorlocatedinhubzone` |
+`ISVENDORLOCATEDINHUBZONE` | ><<br>no : False<br>yes : True | `msdyn_isvendorlocatedinhubzone` |
 `DEFAULTVENDORPAYMENTMETHODNAME` | = | `msdyn_vendorpaymentmethod.msdyn_name` |
 `INVOICEVENDORACCOUNTNUMBER` | = | `msdyn_invoicevendoraccountnumber.msdyn_vendoraccountnumber` |
-`AREPRICESINCLUDINGSALESTAX` | >< | `msdyn_priceincludessalestax` |
+`AREPRICESINCLUDINGSALESTAX` | ><<br>no : False<br>yes : True | `msdyn_priceincludessalestax` |
 `SALESTAXGROUPCODE` | = | `msdyn_taxgroup.msdyn_name` |
 `PRIMARYCONTACTPERSONID` | = | `msdyn_primarycontact.msdyn_contactforpartynumber` |
 
@@ -2413,7 +2416,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `VETERANSTATUSID` | = | `cdm_name` |
 `DESCRIPTION` | = | `cdm_description` |
-`ISPROTECTEDVETERAN` | >< | `cdm_isprotectedveteran` |
+`ISPROTECTEDVETERAN` | ><<br>no : false<br>yes : true | `cdm_isprotectedveteran` |
 
 ###  <a name="144"></a>Warehouse locations (msdyn_inventorylocations)
 
@@ -2423,9 +2426,9 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `BINID` | = | `msdyn_binid` |
 `CHECKDIGITS` | = | `msdyn_checkdigits` |
-`GENERATECHECKDIGITS` | >< | `msdyn_generatecheckdigits` |
-`ISSORTORDERCODEMANUAL` | >< | `msdyn_issortordercodemanual` |
-`ISWAREHOUSELOCATIONIDMANUAL` | >< | `msdyn_iswarehouselocationidmanual` |
+`GENERATECHECKDIGITS` | ><<br>yes : True<br>no : False | `msdyn_generatecheckdigits` |
+`ISSORTORDERCODEMANUAL` | ><<br>yes : True<br>no : False | `msdyn_issortordercodemanual` |
+`ISWAREHOUSELOCATIONIDMANUAL` | ><<br>yes : True<br>no : False | `msdyn_iswarehouselocationidmanual` |
 `LASTCOUNTEDUTCDATETIME` | = | `msdyn_lastcountedutcdatetime` |
 `PHYSICALDEPTH` | = | `msdyn_physicaldepth` |
 `PHYSICALHEIGHT` | = | `msdyn_physicalheight` |
@@ -2438,25 +2441,25 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `WAREHOUSEID` | = | `msdyn_warehouse.msdyn_warehouseidentifier` |
 `WAREHOUSELOCATIONID` | = | `msdyn_warehouselocationid` |
 `WAREHOUSELOCATIONPROFILEID` | = | `msdyn_warehouselocationprofileid` |
-`WAREHOUSELOCATIONTYPE` | >< | `msdyn_warehouselocationtype` |
+`WAREHOUSELOCATIONTYPE` | ><<br>buffer : 192350000<br>pick : 192350001<br>inputPort : 192350002<br>outputPort : 192350003<br>inspectionLocation : 192350004<br>kanbanSupermarket : 192350005 | `msdyn_warehouselocationtype` |
 `INPUTWAREHOUSELOCATIONBLOCKINGCAUSEID` | = | `msdyn_inputwarehouselocationblockingcauseid` |
 `OUTPUTWAREHOUSELOCATIONBLOCKINGCAUSEID` | = | `msdyn_outputwarehouselocationblockingcauseid` |
-`ISDEFAULTCREDITONLYRETURNWAREHOUSELOCATION` | >< | `msdyn_isdefaultcreditonlyreturnwarehouseloc` |
-`ISDEFAULTISSUEWAREHOUSELOCATION` | >< | `msdyn_isdefaultissuewarehouselocation` |
-`ISDEFAULTKANBANFINISHEDGOODSWAREHOUSELOCATION` | >< | `msdyn_isdefaultkanbanfinishedgoodswarehouseloc` |
-`ISDEFAULTPRODUCTIONFINISHEDGOODSWAREHOUSELOCATION` | >< | `msdyn_isdefaultproductionfinishedgoodswhsloc` |
-`ISDEFAULTPRODUCTIONINPUTWAREHOUSELOCATION` | >< | `msdyn_isdefaultproductioninputwarehouseloc` |
-`ISDEFAULTRECEIPTWAREHOUSELOCATION` | >< | `msdyn_isdefaultreceiptwarehouselocation` |
-`ISDEFAULTRETAILSTORERETURNWAREHOUSELOCATION` | >< | `msdyn_isdefaultretailstorereturnwarehouseloc` |
-`ISDEFAULTRETAILSTOREWAREHOUSELOCATION` | >< | `msdyn_isdefaultretailstorewarehouselocation` |
-`ISDEFAULTSHIPMENTMAINTENANCEWAREHOUSELOCATION` | >< | `msdyn_isdefaultshipmentmaintenancewarehouseloc` |
+`ISDEFAULTCREDITONLYRETURNWAREHOUSELOCATION` | ><<br>yes : True<br>no : False | `msdyn_isdefaultcreditonlyreturnwarehouseloc` |
+`ISDEFAULTISSUEWAREHOUSELOCATION` | ><<br>yes : True<br>no : False | `msdyn_isdefaultissuewarehouselocation` |
+`ISDEFAULTKANBANFINISHEDGOODSWAREHOUSELOCATION` | ><<br>yes : True<br>no : False | `msdyn_isdefaultkanbanfinishedgoodswarehouseloc` |
+`ISDEFAULTPRODUCTIONFINISHEDGOODSWAREHOUSELOCATION` | ><<br>yes : True<br>no : False | `msdyn_isdefaultproductionfinishedgoodswhsloc` |
+`ISDEFAULTPRODUCTIONINPUTWAREHOUSELOCATION` | ><<br>yes : True<br>no : False | `msdyn_isdefaultproductioninputwarehouseloc` |
+`ISDEFAULTRECEIPTWAREHOUSELOCATION` | ><<br>yes : True<br>no : False | `msdyn_isdefaultreceiptwarehouselocation` |
+`ISDEFAULTRETAILSTORERETURNWAREHOUSELOCATION` | ><<br>yes : True<br>no : False | `msdyn_isdefaultretailstorereturnwarehouseloc` |
+`ISDEFAULTRETAILSTOREWAREHOUSELOCATION` | ><<br>yes : True<br>no : False | `msdyn_isdefaultretailstorewarehouselocation` |
+`ISDEFAULTSHIPMENTMAINTENANCEWAREHOUSELOCATION` | ><<br>yes : True<br>no : False | `msdyn_isdefaultshipmentmaintenancewarehouseloc` |
 `AGINGDATE` | > | `msdyn_agingdate` |
 `LASTACTIVITYDATETIME` | > | `msdyn_lastactivitydatetime` |
-`LOCATIONSTATUS` | >> | `msdyn_locationstatus` |
-`ISITEMINLOCATIONMAINTAINED` | >< | `msdyn_isiteminlocationmaintained` |
-`ISLOCATIONACTIVITYDATETIMEMAINTAINED` | >< | `msdyn_islocationactivitydatetimemaintained` |
-`ISLOCATIONSTATUSMAINTAINED` | >< | `msdyn_islocationstatusmaintained` |
-`ISDEFAULTQUALITYMAINTENANCEWAREHOUSELOCATION` | >< | `msdyn_isdefaultqualitymaintenancewarehouseloc` |
+`LOCATIONSTATUS` | >><br>undetermined : 192350000<br>empty : 192350001<br>picking : 192350002<br>storage : 192350003 | `msdyn_locationstatus` |
+`ISITEMINLOCATIONMAINTAINED` | ><<br>yes : True<br>no : False | `msdyn_isiteminlocationmaintained` |
+`ISLOCATIONACTIVITYDATETIMEMAINTAINED` | ><<br>yes : True<br>no : False | `msdyn_islocationactivitydatetimemaintained` |
+`ISLOCATIONSTATUSMAINTAINED` | ><<br>yes : True<br>no : False | `msdyn_islocationstatusmaintained` |
+`ISDEFAULTQUALITYMAINTENANCEWAREHOUSELOCATION` | ><<br>yes : True<br>no : False | `msdyn_isdefaultqualitymaintenancewarehouseloc` |
 `WAREHOUSEAISLEID` | = | `msdyn_warehouseaisle.msdyn_aisleid` |
 `WAREHOUSEID` | > | `msdyn_warehouseaisle.msdyn_warehouse.msdyn_warehouseidentifier` |
 `WAREHOUSEZONEID` | = | `msdyn_warehousezone.msdyn_zoneid` |
@@ -2473,17 +2476,17 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 `ACTUALPROCESSINGTIMESECONDS` | > | `msdyn_actualprocessingtimeseconds` |
 `ESTIMATEDPROCESSINGTIMESECONDS` | > | `msdyn_estimatedprocessingtimeseconds` |
-`ISWAREHOUSEWORKBLOCKED` | >> | `msdyn_iswarehouseworkblocked` |
+`ISWAREHOUSEWORKBLOCKED` | >><br>yes : True<br>no : False | `msdyn_iswarehouseworkblocked` |
 `WAREHOUSEID` | > | `msdyn_warehouse.msdyn_warehouseidentifier` |
 `INVENTORYSITEID` | > | `msdyn_inventorysite.msdyn_siteid` |
-`ISWAREHOUSEWORKERMANUALLYASSIGNED` | >> | `msdyn_iswarehouseworkermanuallyassigned` |
+`ISWAREHOUSEWORKERMANUALLYASSIGNED` | >><br>yes : True<br>no : False | `msdyn_iswarehouseworkermanuallyassigned` |
 `WAREHOUSEWORKCANCELLEDDATETIME` | > | `msdyn_warehouseworkcancelleddatetime` |
 `WAREHOUSEWORKCLOSEDDATETIME` | > | `msdyn_warehouseworkcloseddatetime` |
 `WAREHOUSEWORKID` | > | `msdyn_warehouseworkid` |
 `WAREHOUSEWORKPROCESSINGSTARTDATETIME` | > | `msdyn_warehouseworkprocessingstartdatetime` |
 `WAREHOUSEWORKPRIORITY` | > | `msdyn_warehouseworkpriority` |
-`WAREHOUSEWORKSTATUS` | >> | `msdyn_warehouseworkstatus` |
-`WAREHOUSEWORKORDERTYPE` | >> | `msdyn_warehouseworkordertype` |
+`WAREHOUSEWORKSTATUS` | >><br>open : 192350000<br>inprocess : 192350001<br>skipped : 192350002<br>closed : 192350003<br>cancelled : 192350004<br>combined : 192350005 | `msdyn_warehouseworkstatus` |
+`WAREHOUSEWORKORDERTYPE` | >><br>qualityOrder : 192350021<br>none : 192350000<br>purch : 192350001<br>sales : 192350002<br>prodPick : 192350003<br>prodPut : 192350004<br>prodProcessPut : 192350005<br>transferIssue : 192350006<br>transferReceipt : 192350007<br>invent : 192350008<br>workCancel : 192350009<br>cycleCount : 192350010<br>replenishment : 192350011<br>returnOrder : 192350012<br>kanbanPut : 192350013<br>kanbanPick : 192350014<br>cycleCountAccepted : 192350015<br>packedContainerPicking : 192350016<br>sortedInventoryPicking : 192350017<br>crossDocking : 192350018<br>qualityInQualityCheck : 192350019<br>qualityItemSampling : 192350020 | `msdyn_warehouseworkordertype` |
 `CONTAINERID` | > | `msdyn_containerid` |
 `WAREHOUSEWORKLOCKINGWAREHOUSEMOBILEDEVICEUSERID` | > | `msdyn_warehouseworklockingmobiledeviceuserid` |
 `TARGETLICENSEPLATENUMBER` | > | `msdyn_targetlicenseplatenumber` |
@@ -2504,18 +2507,18 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `REMAININGHANDLINGQUANTITY` | > | `msdyn_remaininghandlingquantity` |
 `HANDLINGQUANTITY` | > | `msdyn_handlingquantity` |
 `WORKLINENUMBER` | > | `msdyn_worklinenumber` |
-`ISWORKLINEMANDATORY` | >> | `msdyn_isworklinemandatory` |
+`ISWORKLINEMANDATORY` | >><br>yes : True<br>no : False | `msdyn_isworklinemandatory` |
 `REMAININGWORKQUANTITY` | > | `msdyn_remainingworkquantity` |
 `WORKQUANTITY` | > | `msdyn_workquantity` |
-`ISREPLENISHMENTNEEDED` | >> | `msdyn_isreplenishmentneeded` |
+`ISREPLENISHMENTNEEDED` | >><br>yes : True<br>no : False | `msdyn_isreplenishmentneeded` |
 `SORTORDERCODE` | > | `msdyn_sortordercode` |
 `WORKQUANTITYUNITSYMBOL` | > | `msdyn_workquantityunit.msdyn_symbol` |
 `WAREHOUSEWORKCLOSEDDATETIME` | > | `msdyn_warehouseworkcloseddatetime` |
 `WAREHOUSEWORKID` | > | `msdyn_warehousework.msdyn_warehouseworkid` |
 `WAREHOUSEWORKPROCESSINGSTARTDATETIME` | > | `msdyn_warehouseworkprocessingstartdatetime` |
-`WAREHOUSEWORKSTATUS` | >> | `msdyn_warehouseworkstatus` |
-`ISWORKEXECUTIONSTOPPED` | >> | `msdyn_isworkexecutionstopped` |
-`WAREHOUSEWORKTYPE` | >> | `msdyn_warehouseworktype` |
+`WAREHOUSEWORKSTATUS` | >><br>open : 192350000<br>inProcess : 192350001<br>pendingReview : 192350002<br>skipped : 192350003<br>closed : 192350004<br>cancelled : 192350005<br>combined : 192350006 | `msdyn_warehouseworkstatus` |
+`ISWORKEXECUTIONSTOPPED` | >><br>yes : True<br>no : False | `msdyn_isworkexecutionstopped` |
+`WAREHOUSEWORKTYPE` | >><br>none : 192350000<br>pick : 192350001<br>put : 192350002<br>count : 192350003<br>adjustment : 192350004<br>custom : 192350005<br>quarantine : 192350006<br>licensePlateBuild : 192350007<br>print : 192350008<br>statusChange : 192350009<br>packToNestedLicensePlate : 192350010<br>qualityCheck : 192350011 | `msdyn_warehouseworktype` |
 `EXTRAHANDLINGQUANTITY` | > | `msdyn_extrahandlingquantity` |
 `CAPTUREDWEIGHT` | > | `msdyn_capturedweight` |
 `WAREHOUSEID` | > | `msdyn_warehouse.msdyn_warehouseidentifier` |
@@ -2562,24 +2565,24 @@ This template synchronizes data between Finance and Operations apps and Datavers
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 `DEFAULTCONTAINERTYPEID` | = | `msdyn_defaultcontainertypeid` |
-`AREITEMSCOVERAGEPLANNEDMANUALLY` | >< | `msdyn_areitemscoverageplannedmanually` |
-`ARELABORSTANDARDSALLOWED` | >< | `msdyn_arelaborstandardsallowed` |
+`AREITEMSCOVERAGEPLANNEDMANUALLY` | ><<br>no : false<br>yes : true | `msdyn_areitemscoverageplannedmanually` |
+`ARELABORSTANDARDSALLOWED` | ><<br>no : false<br>yes : true | `msdyn_arelaborstandardsallowed` |
 `PRIMARYADDRESSBUILDINGCOMPLIMENT` | = | `msdyn_primaryaddressbuildingcompliment` |
 `PRIMARYADDRESSPOSTBOX` | = | `msdyn_primaryaddresspostbox` |
 `PRIMARYADDRESSSTREETNUMBER` | = | `msdyn_primaryaddressstreetnumber` |
-`AREWAREHOUSELOCATIONCHECKDIGITSUNIQUE` | >< | `msdyn_arewarehouselocationcheckdigitsunique` |
+`AREWAREHOUSELOCATIONCHECKDIGITSUNIQUE` | ><<br>yes : true<br>no : false | `msdyn_arewarehouselocationcheckdigitsunique` |
 `INVENTORYCOUNTINGREASONCODEPOLICYNAME` | = | `msdyn_inventorycountingreasoncodepolicyname` |
-`AUTOUPDATESHIPMENTRULE` | >< | `msdyn_autoupdateshipmentrule` |
-`WAREHOUSERELEASERESERVATIONREQUIREMENTRULE` | >< | `msdyn_warehousereleasereservationrequirement` |
+`AUTOUPDATESHIPMENTRULE` | ><<br>always : false<br>onQuantityDecrease : true | `msdyn_autoupdateshipmentrule` |
+`WAREHOUSERELEASERESERVATIONREQUIREMENTRULE` | ><<br>notapplicable : 192350000<br>allowpartialreservation : 192350001<br>requirefullreservation : 192350002 | `msdyn_warehousereleasereservationrequirement` |
 `EXTERNALLYLOCATEDWAREHOUSEVENDORACCOUNTNUMBER` | = | `msdyn_externallylocatedwarehousevendoraccountnu` |
-`INVENTORYSTATUSCHANGERESERVATIONREMOVALLEVEL` | >< | `msdyn_inventorystatuschangereservationremoval` |
+`INVENTORYSTATUSCHANGERESERVATIONREMOVALLEVEL` | ><<br>none : 192350000<br>reservation : 192350001<br>markingreservation : 192350002 | `msdyn_inventorystatuschangereservationremoval` |
 `WAREHOUSEWORKPROCESSINGPOLICYNAME` | = | `msdyn_warehouseworkprocessingpolicyname` |
-`ISFALLBACKWAREHOUSE` | >< | `msdyn_isfallbackwarehouse` |
-`ISFINANCIALNEGATIVERETAILSTOREINVENTORYALLOWED` | >< | `msdyn_financialnegativestoreinventoryallowed` |
-`ISPALLETMOVEMENTDURINGCYCLECOUNTINGALLOWED` | >< | `msdyn_palletmovementduringcyclecountingallowed` |
-`ISPHYSICALNEGATIVERETAILSTOREINVENTORYALLOWED` | >< | `msdyn_physicalnegativestoreinventoryallowed` |
-`ISREFILLEDFROMMAINWAREHOUSE` | >< | `msdyn_isrefilledfrommainwarehouse` |
-`ISRETAILSTOREWAREHOUSE` | >< | `msdyn_isretailstorewarehouse` |
+`ISFALLBACKWAREHOUSE` | ><<br>yes : true<br>no : false | `msdyn_isfallbackwarehouse` |
+`ISFINANCIALNEGATIVERETAILSTOREINVENTORYALLOWED` | ><<br>yes : true<br>no : false | `msdyn_financialnegativestoreinventoryallowed` |
+`ISPALLETMOVEMENTDURINGCYCLECOUNTINGALLOWED` | ><<br>yes : true<br>no : false | `msdyn_palletmovementduringcyclecountingallowed` |
+`ISPHYSICALNEGATIVERETAILSTOREINVENTORYALLOWED` | ><<br>yes : true<br>no : false | `msdyn_physicalnegativestoreinventoryallowed` |
+`ISREFILLEDFROMMAINWAREHOUSE` | ><<br>yes : true<br>no : false | `msdyn_isrefilledfrommainwarehouse` |
+`ISRETAILSTOREWAREHOUSE` | ><<br>yes : true<br>no : false | `msdyn_isretailstorewarehouse` |
 `MAINREFILLINGWAREHOUSEID` | = | `msdyn_mainrefillingwarehouse.msdyn_warehouseidentifier` |
 `MASTERPLANNINGWORKCALENDARDID` | = | `msdyn_masterplanningworkcalendarid` |
 `MAXIMUMBATCHPICKINGLISTQUANTITY` | = | `msdyn_maximumbatchpickinglistquantity` |
@@ -2587,7 +2590,7 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `OPERATIONALSITEID` | = | `msdyn_operationalsite.msdyn_siteid` |
 `QUARANTINEWAREHOUSEID` | = | `msdyn_quarantinewarehouse.msdyn_warehouseidentifier` |
 `RETAILSTOREQUANTITYALLOCATIONREPLENISMENTRULEWEIGHT` | = | `msdyn_storeqtyallocationreplenishmentweight` |
-`SHOULDWAREHOUSELOCATIONIDINCLUDEAISLEID` | >< | `msdyn_shouldwarehouselocationincludeaisleid` |
+`SHOULDWAREHOUSELOCATIONIDINCLUDEAISLEID` | ><<br>no : false<br>yes : true | `msdyn_shouldwarehouselocationincludeaisleid` |
 `TRANSITWAREHOUSEID` | = | `msdyn_transitwarehouse.msdyn_warehouseidentifier` |
 `WAREHOUSEID` | = | `msdyn_warehouseidentifier` |
 `WAREHOUSEID` | > | `msdyn_name` |
@@ -2596,8 +2599,8 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `WAREHOUSELOCATIONIDSHELFIDFORMAT` | = | `msdyn_warehouselocationidshelfidformat` |
 `WAREHOUSENAME` | = | `msdyn_description` |
 `WAREHOUSESPECIFICDEFAULTINVENTORYSTATUSID` | = | `msdyn_warehousespecificdefaultinventorystatusid` |
-`WAREHOUSETYPE` | >< | `msdyn_warehousetype` |
-`ISPRIMARYADDRESSASSIGNED` | >< | `msdyn_isprimaryaddressassigned` |
+`WAREHOUSETYPE` | ><<br>goodsinroute_ru : 192350000<br>transit : 192350001<br>quarantine : 192350002<br>standard : 192350003<br>itmgit : 192350004<br>itmunder : 192350005 | `msdyn_warehousetype` |
+`ISPRIMARYADDRESSASSIGNED` | ><<br>yes : true<br>no : false | `msdyn_isprimaryaddressassigned` |
 `PRIMARYADDRESSCITY` | = | `msdyn_primaryaddresscity` |
 `PRIMARYADDRESSCOUNTRYREGIONID` | = | `msdyn_primaryaddresscountryregionid` |
 `PRIMARYADDRESSCOUNTYID` | = | `msdyn_primaryaddresscountyid` |
@@ -2613,21 +2616,21 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `PRIMARYADDRESSCITYINKANA` | = | `msdyn_primaryaddresscityinkana` |
 `PRIMARYADDRESSSTREETINKANA` | = | `msdyn_primaryaddressstreetinkana` |
 `PRIMARYADDRESSDESCRIPTION` | = | `msdyn_primaryaddressdescription` |
-`AREADVANCEDWAREHOUSEMANAGEMENTPROCESSESENABLED` | >< | `msdyn_useadvancedwarehousemanagementprocesses` |
-`AREPICKINGLISTSDELIVERYMODESPECIFIC` | >< | `msdyn_arepickinglistsdeliverymodespecific` |
-`AREPICKINGLISTSSHIPMENTSPECIFICONLY` | >< | `msdyn_arepickinglistshipmentspecificonly` |
+`AREADVANCEDWAREHOUSEMANAGEMENTPROCESSESENABLED` | ><<br>yes : true<br>no : false | `msdyn_useadvancedwarehousemanagementprocesses` |
+`AREPICKINGLISTSDELIVERYMODESPECIFIC` | ><<br>yes : true<br>no : false | `msdyn_arepickinglistsdeliverymodespecific` |
+`AREPICKINGLISTSSHIPMENTSPECIFICONLY` | ><<br>yes : true<br>no : false | `msdyn_arepickinglistshipmentspecificonly` |
 `FORMATTEDPRIMARYADDRESS` | = | `msdyn_formattedprimaryaddress` |
-`ISBILLOFLADINGPRINTINGBEFORESHIPMENTCONFIRMATIONENABLED` | >< | `msdyn_printbillofladingbeforeshipconfirmation` |
-`RAWMATERIALPICKINGINVENTORYISSUESTATUS` | >< | `msdyn_rawmaterialpickinginventoryissuestatus` |
-`WILLAUTOMATICLOADRELEASERESERVEINVENTORY` | >< | `msdyn_willautomaticloadreleaseinventory` |
-`WILLINVENTORYSTATUSCHANGEREMOVEBLOCKING` | >< | `msdyn_willinventorystatuschangeremoveblocking` |
-`WILLMANUALLOADRELEASERESERVEINVENTORY` | >< | `msdyn_willmanualloadreleasereserveinventory` |
-`WILLORDERRELEASINGCONSOLIDATESHIPMENTS` | >< | `msdyn_willorderreleasingconsolidateshipments` |
-`WILLPRODUCTIONBOMSRESERVEWAREHOUSELEVELONLY` | >< | `msdyn_productionbomsreservewarehouselevel` |
-`WILLSHIPPINGCANCELLATIONDECREMENTLOADQUANITY` | >< | `msdyn_shippingcanceldecrementloadquantity` |
-`WILLWAREHOUSELOCATIONIDINCLUDEBINIDBYDEFAULT` | >< | `msdyn_warehouselocationidincludeblindid` |
-`WILLWAREHOUSELOCATIONIDINCLUDERACKIDBYDEFAULT` | >< | `msdyn_warehouselocationincluderackidbydefault` |
-`WILLWAREHOUSELOCATIONIDINCLUDESHELFIDBYDEFAULT` | >< | `msdyn_warehouselocationidincludeshelfid` |
+`ISBILLOFLADINGPRINTINGBEFORESHIPMENTCONFIRMATIONENABLED` | ><<br>yes : true<br>no : false | `msdyn_printbillofladingbeforeshipconfirmation` |
+`RAWMATERIALPICKINGINVENTORYISSUESTATUS` | ><<br>pick : false<br>reserve : true | `msdyn_rawmaterialpickinginventoryissuestatus` |
+`WILLAUTOMATICLOADRELEASERESERVEINVENTORY` | ><<br>yes : true<br>no : false | `msdyn_willautomaticloadreleaseinventory` |
+`WILLINVENTORYSTATUSCHANGEREMOVEBLOCKING` | ><<br>yes : true<br>no : false | `msdyn_willinventorystatuschangeremoveblocking` |
+`WILLMANUALLOADRELEASERESERVEINVENTORY` | ><<br>yes : true<br>no : false | `msdyn_willmanualloadreleasereserveinventory` |
+`WILLORDERRELEASINGCONSOLIDATESHIPMENTS` | ><<br>yes : true<br>no : false | `msdyn_willorderreleasingconsolidateshipments` |
+`WILLPRODUCTIONBOMSRESERVEWAREHOUSELEVELONLY` | ><<br>yes : true<br>no : false | `msdyn_productionbomsreservewarehouselevel` |
+`WILLSHIPPINGCANCELLATIONDECREMENTLOADQUANITY` | ><<br>yes : true<br>no : false | `msdyn_shippingcanceldecrementloadquantity` |
+`WILLWAREHOUSELOCATIONIDINCLUDEBINIDBYDEFAULT` | ><<br>yes : true<br>no : false | `msdyn_warehouselocationidincludeblindid` |
+`WILLWAREHOUSELOCATIONIDINCLUDERACKIDBYDEFAULT` | ><<br>yes : true<br>no : false | `msdyn_warehouselocationincluderackidbydefault` |
+`WILLWAREHOUSELOCATIONIDINCLUDESHELFIDBYDEFAULT` | ><<br>yes : true<br>no : false | `msdyn_warehouselocationidincludeshelfid` |
 
 ###  <a name="210"></a>Withholding tax codes (msdyn_withholdingtaxcodes)
 
@@ -2638,9 +2641,9 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `WITHHOLDINGCODE` | = | `msdyn_name` |
 `WITHHOLDINGTAXNAME` | = | `msdyn_description` |
 `WITHHOLDINGTAXROUNDOFF` | = | `msdyn_roundoff` |
-`WITHHOLDINGTAXROUNDOFFTYPE` | >< | `msdyn_roundofftype` |
+`WITHHOLDINGTAXROUNDOFFTYPE` | ><<br>ordinary : 192350000<br>roundDown : 192350001<br>roundUp : 192350002 | `msdyn_roundofftype` |
 `CURRENCYCODEID` | = | `msdyn_currency.isocurrencycode` |
-`WITHHOLDINGTAXBASE` | >< | `msdyn_taxableamountorigin` |
+`WITHHOLDINGTAXBASE` | ><<br>pctPerNet : 192350000<br>pctPerGross : 192350001 | `msdyn_taxableamountorigin` |
 
 ###  <a name="211"></a>Withholding tax groups (msdyn_withholdingtaxgroups)
 
@@ -2661,15 +2664,15 @@ Finance and Operations field | Map type | Customer engagement column | Default v
 `FIRSTNAME` | = | `cdm_firstname` |
 `MIDDLENAME` | = | `cdm_middlename` |
 `LASTNAME` | = | `cdm_lastname` |
-`WORKERTYPE` | >> | `cdm_type` |
-`WORKERSTATUS` | >> | `cdm_status` |
+`WORKERTYPE` | >><br>employee : 754400000<br>contractor : 754400001<br>both : 754400000 | `cdm_type` |
+`WORKERSTATUS` | >><br>employed : 754400000<br>pending : 754400001<br>terminated : 754400001 | `cdm_status` |
 `PRIMARYCONTACTEMAIL` | = | `cdm_primaryemailaddress` |
 `PRIMARYCONTACTPHONE` | = | `cdm_primarytelephone` |
 `PRIMARYCONTACTFACEBOOK` | = | `cdm_facebookidentity` |
 `PRIMARYCONTACTTWITTER` | = | `cdm_twitteridentity` |
 `PRIMARYCONTACTLINKEDIN` | = | `cdm_linkedinidentity` |
 `PRIMARYCONTACTURL` | = | `cdm_websiteurl` |
-`GENDER` | >< | `cdm_gender` |
+`GENDER` | ><<br>male : 754400000<br>female : 754400001<br>nonSpecific : 754400003<br>none : 754400002 | `cdm_gender` |
 `BIRTHDATE` | = | `cdm_birthdate` |
 `NAME` | > | `cdm_fullname` |
 
