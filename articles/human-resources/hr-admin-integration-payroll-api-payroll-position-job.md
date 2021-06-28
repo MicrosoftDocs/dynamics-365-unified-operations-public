@@ -32,7 +32,7 @@ This topic describes the Payroll position job entity for Dynamics 365 Human Reso
 
 ### Description
 
-This entity provides the relation between position and a job for a given fixed compensation plan.
+This entity provides the relationship between position and a job for a given fixed compensation plan.
 
 Physical name: mshr_payrollpositionjobentity.
 
