@@ -753,7 +753,7 @@ Follow these steps to install the Finance insights add-in.
 3. Select the **Finance insights** add-in.
 4. Agree to the terms, and then select **Install**.
 
-The add-in might take serveral minutes to install.
+The add-in might take several minutes to install.
 
 ## Feedback and support
 
