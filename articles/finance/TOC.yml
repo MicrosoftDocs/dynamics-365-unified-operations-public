@@ -1212,7 +1212,7 @@
       items:
       - name: Finance insights home page
         href: finance-insights/finance-insights-home-page.md
-      - name: Configuration and administration
+      - name: Setup and administration
         items:
         - name: Configure Finance insights for public preview
           href: finance-insights/configure-for-fin-insites-PubPrvw.md
@@ -1226,6 +1226,16 @@
           href: finance-insights/enable-budget-proposal.md
         - name: Create data integrator project
           href: finance-insights/create-data-integrate-project.md
+        - name: Refine and improve your predictions
+          items: 
+          - name: Results of machine learning models
+            href: finance-insights/confusion-matrix.md
+          - name: Evaluate the initial customer payment prediction model
+            href: finance-insights/evaluate-payment-prediction.md
+          - name: Improve the prediction model
+            href: finance-insights/improve-model.md
+          - name: Model management lifecycle
+            href: finance-insights/model-manage-lifecycle.md
       - name: Use Finance insights
         items: 
         - name: Budget proposals
@@ -1242,12 +1252,6 @@
           href: finance-insights/use-customer-payment-predictions.md
         - name: Snapshots overview
           href: finance-insights/payment-snapshots.md
-        - name: Results of machine learning models
-          href: finance-insights/confusion-matrix.md
-        - name: Evaluate the initial customer payment prediction model
-          href: finance-insights/evaluate-payment-prediction.md
-        - name: Improve the prediction model
-          href: finance-insights/improve-model.md
     - name: Project management and accounting
       items:
       - name: Project management and accounting overview
