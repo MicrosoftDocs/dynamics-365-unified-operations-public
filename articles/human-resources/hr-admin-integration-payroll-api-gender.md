@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources
 
 This topic describes the Gender option set for Dynamics 365 Human Resources.
 
-Physical name: mshr_hcmpersongender
+## Option set: Gender option
 
 This enumeration provides the option set of genders for the employee. This is available in the mshr_hcmpersongender option set.
 
