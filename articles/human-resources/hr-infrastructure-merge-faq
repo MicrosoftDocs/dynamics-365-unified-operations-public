@@ -51,11 +51,11 @@ Dynamics 365 Human Resources is a stand-alone application that uses a different 
 
 ### Our organization uses the HR module within Dynamics 365 Finance, Supply Chain Management, Commerce, or Project Operations.  What benefits will we see from these changes?
 
-The capabilities and investments that have been made in Dynamics 365 Human Resources will now be available to those customers that are using the HR module within Dynamics 365 Finance. Some of these capabilities include Leave and absence management, Benefits management, Task management and more.  
+The capabilities and investments that have been made in Dynamics 365 Human Resources will now be available to those customers that are using the HR module within Dynamics 365 Finance. Some of these capabilities include Leave and absence management, Benefits management, Task management, and more.  
 
-### Will I lose any features or capabilities that I enjoy today?
+### Will I lose any features or capabilities that I use today?
 
-There will be functional parity with both Dynamics 365 Human Resources and the Finance and Operations apps HR Module. Dynamics 365 Human Resources will take precedence for like features. For more information refer to [Feature management overview](fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). 
+There will be functional parity with both Dynamics 365 Human Resources and the Finance and Operations apps HR Module. Dynamics 365 Human Resources will take precedence for like features. For more information, see [Feature management overview](fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). 
 
 ### Will the experience change for my users?
 
@@ -63,42 +63,42 @@ The new HR capabilities will be managed through Feature Management. Customers ar
 
 ### How does this change impact me if I am an existing customer using the HR module on the Operations infrastructure and the Dynamics 365 Human Resources application, through custom integrations?
 
-The custom integration between Dynamics 365 Human Resources and the Finance HR module will no longer be needed. All human resources data will reside in the same database as the other Operations apps. 
+The custom integration between Dynamics 365 Human Resources and the Finance HR module will no longer be needed. All human resources data will reside in the same database as the other Finance and Operations apps. 
 
 ## Migration from Dynamics 365 Human Resources to Finance and Operations apps
 
 ### Our organization uses Dynamics 365 Human Resources to manage my HR operations. What do we need to plan for to migrate to the new experience?
 
-If your organization uses Dynamics 365 Human Resources but doesn’t not use any other Dynamics 365 Finance and Operations apps, then your Human Resources environment will be migrated to the new infrastructure, with much of the process being automated. Processes will be in place to migrate your database and synchronize it to the new infrastructure. 
+If your organization uses Dynamics 365 Human Resources but doesn’t use any other Finance and Operations apps, then your Human Resources environment will be migrated to the new infrastructure, with much of the process being automated. Processes will be in place to migrate your database and synchronize it to the new infrastructure. 
 
 Tooling will be in place to allow you to test the migration process and validate your data and experience prior to migrating your production environment. 
 
-If your organization uses both Dynamics 365 Human Resources and other Dynamics 365 Finance and Operations apps, then you will need to plan more time for validation to ensure that your data migrates correctly to the new environment. The migration to the new infrastructure will merge the data from your Human Resources environment with your Finance and Operations environment. Tooling will be in place to automate as much as the data merge process as possible. But there will be instances of conflicting data that will need user input to define how to resolve the conflict. Users and administrators will need to manage these data mappings where there are conflicts and test the migration in sandbox environments prior to migrating your production environment.
+If your organization uses both Dynamics 365 Human Resources and otherFinance and Operations apps, then you will need to plan more time for validation to ensure that your data migrates correctly to the new environment. The migration to the new infrastructure will merge the data from your Human Resources environment with your Finance and Operations environment. Tooling will be in place to automate as much as the data merge process as possible. But there will be instances of conflicting data that will need user input to define how to resolve the conflict. Users and administrators will need to manage these data mappings where there are conflicts and test the migration in sandbox environments prior to migrating your production environment.
 
 ### Our organization uses the HR module within Dynamics 365 Finance, Supply Chain Management, Commerce, or Project Operations.  What do we need to plan for to migrate to the new experience?
 
-For organizations using the Human Resources module in the Dynamics 365 Finance and Operations apps, the new feature functionality from Dynamics 365 Human Resources will be applied to your environment through the standard One Version update process. You can expect to see the new functionality in your environment as it becomes available in each update. You can use Feature Management to enable these features. You should plan to do validations on these new features following the processes you have in place for validating other updates to your environment. For more information about how updates are applied to Finance and Operaitons apps refer to [One Version overview](/fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)
+For organizations using the Human Resources module in Finance and Operations apps, the new feature functionality from Dynamics 365 Human Resources will be applied to your environment through the standard One Version update process. You can expect to see the new functionality in your environment as it becomes available in each update. You can use Feature Management to enable these features. You should plan to do validations on these new features following the processes you have in place for validating other updates to your environment. For more information about how updates are applied to Finance and Operations apps, see [One Version overview](/fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
 
 ### When will my organization be migrated? 
 
 The migration for each organization will depend on their current configuration and readiness to migrate to the new infrastructure. These dates are subject to change.
--	Organizations currently using the Human Resources module in the Finance and Operations apps will receive the HR functionality for Dynamics 365 Human Resources as part of the regular One Version update process. New features are planned to be generally available beginning in October 2021.
--	Organizations currently using only Dynamics 365 Human Resources will have access to migration tooling to begin testing and starting the migration beginning mid-2022. The date by which the migration to the new infrastructure has not yet been determined but will be at least one year following the date when migration tooling becomes available.
--	Organizations currently using both Dynamics 365 Human Resources and other Finance and Operations apps will have access to migration tooling to begin testing and starting the migration beginning late 2022. The date by which the migration to the new infrastructure has not yet been determined by will be at least one year following the date when migration tooling becomes available.
+-	Organizations currently using the Human Resources module in Finance and Operations apps will receive the HR functionality for Dynamics 365 Human Resources as part of the regular One Version update process. New features are planned to be generally available beginning in October 2021.
+-	Organizations currently using only Dynamics 365 Human Resources will have access to migration tooling to begin testing and start the migration beginning mid-2022. The date by which the migration to the new infrastructure has not yet been determined but will be at least one year following the date when migration tooling becomes available.
+-	Organizations currently using both Dynamics 365 Human Resources and other Finance and Operations apps will have access to migration tooling to begin testing and start the migration beginning late 2022. The date by which the migration to the new infrastructure has not yet been determined by will be at least one year following the date when migration tooling becomes available.
 
-For more details about the new features for Dynamics 365 Human Resources, refer to [What's new or changed in Human Resources](/hr-admin-whats-new.md).
+For more information about the new features for Dynamics 365 Human Resources, see [What's new or changed in Human Resources](/hr-admin-whats-new.md).
 
-### I am using new capabilities that are only available in Dynamics 365 Human Resources (e.g., leave management and benefits management). Will these now be available in the HR module on the Operations infrastructure as well? 
+### I am using new capabilities that are only available in Dynamics 365 Human Resources (such as leave management and benefits management). Will these now be available in the HR module on the Operations infrastructure as well? 
 
-Yes. These modules would work as-is in Operations with 100% feature parity. Customer data for customers using these capabilities in HR today would be migrated to continue working on the Operations system as a part of the overall migration strategy. 
+Yes. These modules would work as-is in Finance and Operations apps with 100% feature parity. Customer data for customers using these capabilities in HR today would be migrated to continue working on the Operations system as a part of the overall migration strategy. 
 
 ### I use the new Dynamics 365 Human Resources benefits management and have built custom integrations with the HR module on the Finance and Operations app infrastructure to leverage the payroll capabilities using benefits data. Will this be required going forward? 
 
-As part of the infrastructure merge includes bringing human resources data into the same database as the other Operations applications. Integration between modules in the Operations apps will no longer be required. 
+As part of the infrastructure merge includes bringing human resources data into the same database as the other Finance and Operations applications. Integration between modules in Finance and Operations apps will no longer be required. 
 
 ### Our organization uses one or more ISV solutions with Dynamics 365 Human Resources. Will my ISV solutions be migrated automatically?
 
-The migration experience for each ISV solution will vary based on the integration method of the solution. We will work closely with ISVs to enable as smooth a transition as possible to the new infrastructure.
+The migration experience for each ISV solution will vary based on the integration method of the solution. We will work closely with ISVs to enable a smooth transition to the new infrastructure.
 
 ### Our organization uses LinkedIn Talent Hub integrated with Dynamics 365 Human Resources. Will this integration continue to work once the infrastructure change is completed?
 
