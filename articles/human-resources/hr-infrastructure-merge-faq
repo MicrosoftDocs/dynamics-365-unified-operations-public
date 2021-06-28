@@ -118,7 +118,7 @@ Human resources data that is currently mastered in the Dynamics 365 Human Resour
 
 The current Dataverse native data tables for Human Resources will continue to synchronize the data from the environment on the new infrastructure. The entities will be converted to support dual Write. Any other data integrations configured with Data Integrator against these tables for other Dynamics 365 apps will continue to work as currently configured.
 
-### We are using Dual-write to move HR data between Microsoft Dataverse and other Finance and Operations apps within Dynamics 365. How will the data that is currently being integrated be affected by the migration to the new infrastructure?
+### We are using dual-write to move HR data between Microsoft Dataverse and other Finance and Operations apps within Dynamics 365. How will the data that is currently being integrated be affected by the migration to the new infrastructure?
 
 HR data will be native to the Finance and Operations apps in the environment on the new infrastructure. Dual-write will then be used to move HR data between the new environment and the Dataverse environment.
 
