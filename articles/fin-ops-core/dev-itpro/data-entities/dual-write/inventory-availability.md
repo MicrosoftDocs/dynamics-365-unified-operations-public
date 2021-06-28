@@ -75,7 +75,7 @@ Finance and Operations apps | Customer engagement app | Description
 [CDS inventory on-hand entries](#145) | msdyn_inventoryonhandentries |
 [CDS inventory on-hand requests](#147) | msdyn_inventoryonhandrequests |
 
-[!include [banner](../../includes/dual-write-symbols.md)]
+[!include [banner](includes/dual-write-symbols.md)]
 
 ###  <a name="145"></a>CDS inventory on-hand entries (msdyn_inventoryonhandentries)
 

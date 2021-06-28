@@ -52,7 +52,7 @@ Withholding tax codes | msdyn_withholdingtaxcodes |
 Withholding tax groups | msdyn_withholdingtaxgroups | 
 
 
-[!include [banner](../../includes/dual-write-symbols.md)]
+[!include [banner](includes/dual-write-symbols.md)]
 
 [!include [Tax item groups](includes/TaxItemGroupHeadings-msdyn-taxitemgroups.md)]
 

@@ -60,7 +60,7 @@ HR data includes information about employees and contractors, positions, and job
 | Position worker assignments | cdm\_positionworkerassignmentmaps | |
 | Worker | cdm\_workers | In Dynamics 365 Finance and Supply Chain Management data, workers are classified as either employees or contractors. Dataverse can also classify workers as volunteers. Volunteers will become contractors when the data is transformed back into Finance and Supply Chain Management. |
 
-[!include [symbols](../../includes/dual-write-symbols.md)]
+[!include [symbols](includes/dual-write-symbols.md)]
 
 [!include [job function](includes/JobFunction-cdm-jobfunctions.md)]
 

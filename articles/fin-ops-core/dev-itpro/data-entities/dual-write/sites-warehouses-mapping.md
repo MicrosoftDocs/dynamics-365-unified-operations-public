@@ -46,7 +46,7 @@ Finance and Operations apps | Other Dynamics 365 apps | Description
 Sites | msdyn_operationalsites | 
 Warehouses | msdyn_warehouses | 
 
-[!include [symbols](../../includes/dual-write-symbols.md)]
+[!include [symbols](includes/dual-write-symbols.md)]
 
 [!include [operational sites](includes/InventOperationalSiteEntity-msdyn-operationalsite.md)]
 

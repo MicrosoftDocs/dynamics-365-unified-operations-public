@@ -59,7 +59,7 @@ DimensionIntegrationFormatEntity | msdyn\_financialdimensionformats        |
 LedgerChartOfAccounts            | msdyn\_chartofaccounts        |
 
 
-[!include [banner](../../includes/dual-write-symbols.md)]
+[!include [banner](includes/dual-write-symbols.md)]
 
 [!include [Currency](includes/Currencies-transactioncurrencies.md)]
 

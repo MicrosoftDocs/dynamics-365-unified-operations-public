@@ -42,7 +42,7 @@ Businesses classify customers and provide sophisticated services, based on custo
 | Loyalty card                | msdyn\_loyaltycards               | This template syncs information about customer loyalty cards. |
 | Loyalty reward points       | msdyn\_loyaltyrewardpoints        | This template syncs information about customer reward points. |
 
-[!include [banner](../../includes/dual-write-symbols.md)]
+[!include [banner](includes/dual-write-symbols.md)]
 
 [!include [mapping loyalty card](includes/LoyaltyCard-msdyn-loyaltycards.md)]
 
