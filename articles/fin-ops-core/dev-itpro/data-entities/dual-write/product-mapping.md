@@ -39,30 +39,30 @@ Product information contains all the information related to the product and its 
 
 Finance and Operations apps | Other Dynamics 365 apps | Description
 -----------------------|--------------------------------|---
-[All products](includes/mapping-reference.md#138) | msdyn_globalproducts | The all products table contains all the products available in Finance and Operations apps, both the released products and the non-released products.
-[CDS released distinct products](includes/mapping-reference.md#213) | Product | The **Product** table contains the columns that define the product. It includes individual products (products with subtype product) and the product variants. The following table shows the mappings.
-[Colors](includes/mapping-reference.md#170) | msdyn\_productcolors
-[Configurations](includes/mapping-reference.md#171) | msdyn\_productconfigurations
-[Default order settings](includes/mapping-reference.md#172) | msdyn_productdefaultordersettings |
-[Product categories](includes/mapping-reference.md#166) | msdyn_productcategories | Each of the product categories and information about its structure and characteristics are contained in the product category table.
-[Product category assignments](includes/mapping-reference.md#167) | msdyn_productcategoryassignments | To assign a product to a category the product category assignments table can be used.
-[Product category hierarchies](includes/mapping-reference.md#168) | msdyn_productcategoryhierarchies | You use product hierarchies to categorize or group products. The category hierarchies are available in Dataverse using the Product category hierarchy table.
-[Product category hierarchy roles](includes/mapping-reference.md#169) | msdyn_productcategoryhierarchyroles | Product hierarchies can be used for different roles in D365 Finance and Operations. They specify which category is used in each role the product category role table is used.
-[Product default order settings V2](includes/mapping-reference.md#175) | msdyn_productspecificdefaultordersettings |
-[Product dimension groups](includes/mapping-reference.md#173) | msdyn\_productdimensiongroups | The product dimension group defined which product dimensions define the product.
-[Product master colors](includes/mapping-reference.md#187) | msdyn_sharedproductcolors | The **Shared product color** table indicates the colors that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.
-[Product master configurations](includes/mapping-reference.md#188) | msdyn_sharedproductconfigurations | The **Shared product configuration** table indicates the configurations that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.
-[Product master sizes](includes/mapping-reference.md#190) | msdyn_sharedproductsizes | The **Shared product size** table indicates the sizes that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.
-[Product master styles](includes/mapping-reference.md#191) | msdyn_sharedproductstyles | The **Shared product style** table indicates the styles that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.
-[Product Number Identified Barcode](includes/mapping-reference.md#164) | msdyn\_productbarcodes | Product bar codes are used to uniquely identify products.
-[Product specific unit conversions](includes/mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
-[Released products V2](includes/mapping-reference.md#189) | msdyn\_sharedproductdetails | The **msdyn\_sharedproductdetails** table contains the columns from Finance and Operations apps that define the product, and that contain the product's financial and management information.
-[Sizes](includes/mapping-reference.md#174) | msdyn\_productsizes
-[Storage dimension groups](includes/mapping-reference.md#177) | msdyn_productstoragedimensiongroups | The product storage dimension group represents the method used to define the placement the product in the warehouse.
-[Styles](includes/mapping-reference.md#178) | msdyn\_productsytles
-[Tracking dimension groups](includes/mapping-reference.md#179) | msdyn_producttrackingdimensiongroups | The product tracking dimension group represents the method used to track the product in inventory.
-[Units](includes/mapping-reference.md#219) | uoms
-[Unit conversions](includes/mapping-reference.md#199) | msdyn_ unitofmeasureconversions
+[All products](mapping-reference.md#138) | msdyn_globalproducts | The all products table contains all the products available in Finance and Operations apps, both the released products and the non-released products.
+[CDS released distinct products](mapping-reference.md#213) | Product | The **Product** table contains the columns that define the product. It includes individual products (products with subtype product) and the product variants. The following table shows the mappings.
+[Colors](mapping-reference.md#170) | msdyn\_productcolors
+[Configurations](mapping-reference.md#171) | msdyn\_productconfigurations
+[Default order settings](mapping-reference.md#172) | msdyn_productdefaultordersettings |
+[Product categories](mapping-reference.md#166) | msdyn_productcategories | Each of the product categories and information about its structure and characteristics are contained in the product category table.
+[Product category assignments](mapping-reference.md#167) | msdyn_productcategoryassignments | To assign a product to a category the product category assignments table can be used.
+[Product category hierarchies](mapping-reference.md#168) | msdyn_productcategoryhierarchies | You use product hierarchies to categorize or group products. The category hierarchies are available in Dataverse using the Product category hierarchy table.
+[Product category hierarchy roles](mapping-reference.md#169) | msdyn_productcategoryhierarchyroles | Product hierarchies can be used for different roles in D365 Finance and Operations. They specify which category is used in each role the product category role table is used.
+[Product default order settings V2](mapping-reference.md#175) | msdyn_productspecificdefaultordersettings |
+[Product dimension groups](mapping-reference.md#173) | msdyn\_productdimensiongroups | The product dimension group defined which product dimensions define the product.
+[Product master colors](mapping-reference.md#187) | msdyn_sharedproductcolors | The **Shared product color** table indicates the colors that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.
+[Product master configurations](mapping-reference.md#188) | msdyn_sharedproductconfigurations | The **Shared product configuration** table indicates the configurations that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.
+[Product master sizes](mapping-reference.md#190) | msdyn_sharedproductsizes | The **Shared product size** table indicates the sizes that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.
+[Product master styles](mapping-reference.md#191) | msdyn_sharedproductstyles | The **Shared product style** table indicates the styles that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.
+[Product Number Identified Barcode](mapping-reference.md#164) | msdyn\_productbarcodes | Product bar codes are used to uniquely identify products.
+[Product specific unit conversions](mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
+[Released products V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | The **msdyn\_sharedproductdetails** table contains the columns from Finance and Operations apps that define the product, and that contain the product's financial and management information.
+[Sizes](mapping-reference.md#174) | msdyn\_productsizes
+[Storage dimension groups](mapping-reference.md#177) | msdyn_productstoragedimensiongroups | The product storage dimension group represents the method used to define the placement the product in the warehouse.
+[Styles](mapping-reference.md#178) | msdyn\_productsytles
+[Tracking dimension groups](mapping-reference.md#179) | msdyn_producttrackingdimensiongroups | The product tracking dimension group represents the method used to track the product in inventory.
+[Units](mapping-reference.md#219) | uoms
+[Unit conversions](mapping-reference.md#199) | msdyn_ unitofmeasureconversions
 
 ## Integration of products
 
@@ -90,9 +90,9 @@ The synchronization of products happens from the Finance and Operations app to D
 
 Finance and operations apps | Customer engagement apps |
 ---|---
-[CDS released distinct products](includes/mapping-reference.md#213) | Product |
-[Released products V2](includes/mapping-reference.md#189) | msdyn_sharedproductdetails |
-[All products](includes/mapping-reference.md#138) | msdyn_globalproducts |
+[CDS released distinct products](mapping-reference.md#213) | Product |
+[Released products V2](mapping-reference.md#189) | msdyn_sharedproductdetails |
+[All products](mapping-reference.md#138) | msdyn_globalproducts |
 
 ## Product dimensions
 
@@ -102,10 +102,10 @@ Product dimensions are characteristics that identify a product variant. The four
 
 Finance and operations apps | Customer engagement apps |
 ---|---
-[Colors](includes/mapping-reference.md#170) | msdyn\_productcolors
-[Sizes](includes/mapping-reference.md#174) | msdyn\_productsizes
-[Styles](includes/mapping-reference.md#178) | msdyn\_productsytles
-[Configurations](includes/mapping-reference.md#171) | msdyn\_productconfigurations
+[Colors](mapping-reference.md#170) | msdyn\_productcolors
+[Sizes](mapping-reference.md#174) | msdyn\_productsizes
+[Styles](mapping-reference.md#178) | msdyn\_productsytles
+[Configurations](mapping-reference.md#171) | msdyn\_productconfigurations
 
 When a product has different product dimensions (for example, a product master has Size and Color as product dimensions), each distinct product (that is, each product variant) is defined as a combination of those product dimensions. For example, product number B0001 is an extra-small black T-shirt, and product number B0002 is a small black T-shirt. In this case, the existing combinations of product dimensions are defined. For example, the T-shirt from the preceding example can be extra-small and black, small and black, medium and black, or large and black, but it can't be extra-large and black. In other words, the product dimensions that a product master can take are specified, and variants can be released based on these values.
 
@@ -113,11 +113,11 @@ To keep track of the product dimensions that a product master can take, the foll
 
 Finance and operations apps | Customer engagement apps |
 ---|---
-[Product master colors](includes/mapping-reference.md#187) | msdyn_sharedproductcolors |
-[Product master configurations](includes/mapping-reference.md#188) | msdyn_sharedproductconfigurations |
-[Product master sizes](includes/mapping-reference.md#190) | msdyn_sharedproductsizes |
-[Product master styles](includes/mapping-reference.md#191) | msdyn_sharedproductstyles |
-[Product Number Identified Barcode](includes/mapping-reference.md#164) | msdyn\_productbarcodes |
+[Product master colors](mapping-reference.md#187) | msdyn_sharedproductcolors |
+[Product master configurations](mapping-reference.md#188) | msdyn_sharedproductconfigurations |
+[Product master sizes](mapping-reference.md#190) | msdyn_sharedproductsizes |
+[Product master styles](mapping-reference.md#191) | msdyn_sharedproductstyles |
+[Product Number Identified Barcode](mapping-reference.md#164) | msdyn\_productbarcodes |
 
 ## Default order settings and product-specific default order settings
 
@@ -125,8 +125,8 @@ Default order settings define the site and warehouse where items will be sourced
 
 Finance and operations apps | Customer engagement apps |
 ---|---
-[Default order settings](includes/mapping-reference.md#172) | msdyn_productdefaultordersettings |
-[Product default order settings V2](includes/mapping-reference.md#175) | msdyn_productspecificdefaultordersettings |
+[Default order settings](mapping-reference.md#172) | msdyn_productdefaultordersettings |
+[Product default order settings V2](mapping-reference.md#175) | msdyn_productspecificdefaultordersettings |
 
 ## Unit of measure and unit of measure conversions
 
@@ -138,9 +138,9 @@ The unit of measure concept is integrated between Finance and Operations apps an
 
 Finance and operations apps | Customer engagement apps |
 ---|---
-[Product specific unit conversions](includes/mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
-[Units](includes/mapping-reference.md#219) | uoms
-[Unit conversions](includes/mapping-reference.md#199) | msdyn_ unitofmeasureconversions
+[Product specific unit conversions](mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
+[Units](mapping-reference.md#219) | uoms
+[Unit conversions](mapping-reference.md#199) | msdyn_ unitofmeasureconversions
 
 ## Initial synchronization of units data matching between Finance and Operations and Dataverse
 
@@ -171,17 +171,17 @@ The product policies are sets of policies used for defining products and its cha
 
 Finance and operations apps | Customer engagement apps |
 ---|---
-[Product dimension groups](includes/mapping-reference.md#173) | msdyn\_productdimensiongroups |
-[Storage dimension groups](includes/mapping-reference.md#177) | msdyn_productstoragedimensiongroups |
-[Tracking dimension groups](includes/mapping-reference.md#179) | msdyn_producttrackingdimensiongroups |
+[Product dimension groups](mapping-reference.md#173) | msdyn\_productdimensiongroups |
+[Storage dimension groups](mapping-reference.md#177) | msdyn_productstoragedimensiongroups |
+[Tracking dimension groups](mapping-reference.md#179) | msdyn_producttrackingdimensiongroups |
 
 ## Product hierarchies
 
 Finance and operations apps | Customer engagement apps |
 ---|---
-[Product category assignments](includes/mapping-reference.md#167) | msdyn_productcategoryassignments |
-[Product category hierarchies](includes/mapping-reference.md#168) | msdyn_productcategoryhierarchies |
-[Product category hierarchy roles](includes/mapping-reference.md#169) | msdyn_productcategoryhierarchyroles |
+[Product category assignments](mapping-reference.md#167) | msdyn_productcategoryassignments |
+[Product category hierarchies](mapping-reference.md#168) | msdyn_productcategoryhierarchies |
+[Product category hierarchy roles](mapping-reference.md#169) | msdyn_productcategoryhierarchyroles |
 
 ## Integration key for products
 
