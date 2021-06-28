@@ -34,7 +34,7 @@ Physical name: mshr_payrollpositionentity.
 
 ### Description
 
-This entity provides position related information for a given employee.
+This entity provides position-related information for a given employee.
 
 Physical name: 
 
