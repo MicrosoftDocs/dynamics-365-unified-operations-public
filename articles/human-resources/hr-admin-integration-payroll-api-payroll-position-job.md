@@ -40,8 +40,8 @@ Physical name: mshr_payrollpositionjobentity.
 
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
-| **Job ID**<br>mshr_jobid<br>*String* | Readp-only<br>Required |The ID of the job. |
-| **Valid from**<br>mshr_validto<br>*Date Time Offset* | Read-only <br>Required | Date the postion and job relationship is valid from. |
+| **Job ID**<br>mshr_jobid<br>*String* | Read-only<br>Required |The ID of the job. |
+| **Valid from**<br>mshr_validto<br>*Date Time Offset* | Read-only <br>Required | Date the position and job relationship is valid from. |
 | **Valid to**<br>mshr_validto<br>*Date Time Offset* | Read-only <br>Required | Date the position and job relationship is valid to.  |
 | **Position ID**<br>mshr_positionid<br>*String* | Read-only<br>Required | The ID of the position. |
 | **Primary field**<br>mshr_primaryfield<br>*String* | Required<br>System generated |  |
