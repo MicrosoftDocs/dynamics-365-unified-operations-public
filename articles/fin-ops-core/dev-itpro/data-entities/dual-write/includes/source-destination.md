@@ -1,6 +1,5 @@
 ---
 author: robinarh
-ms.service: dynamics-ax-applications
 ms.topic: include
 ms.date: 6/28/2021
 ms.author: rhaertle

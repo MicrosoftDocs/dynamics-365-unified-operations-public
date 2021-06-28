@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!include [banner](../../includes/dual-write-symbols.md)]
+[!include [banner](includes/dual-write-symbols.md)]
 
 ## Templates
 
