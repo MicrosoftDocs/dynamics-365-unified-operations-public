@@ -47,8 +47,8 @@ Finance and operations apps | Customer engagement apps     | Description
 [Payment schedule lines](mapping-reference.md#159) | msdyn_paymentschedulelines | Syncs payment schedule lines reference data, for both customers and vendors.
 [Payment schedule](mapping-reference.md#160) | msdyn_paymentschedules | This template synchronizes payment schedule reference data, for both customers and vendors.
 [Terms of payment](mapping-reference.md#161) | msdyn_paymentterms | This template synchronizes payment terms (terms of payment) reference data, for both customers and vendors.
-[Vendors V2](#202) | msdyn_vendors | Businesses that use a custom solution for vendors can take advantage of the out-of-box vendor concept that is being introduced in Dataverse because of Finance and Operations apps integration.
-[Vendor groups](#200) | msdyn_vendorgroups | This template synchronizes vendor group information.
-[Vendor payment method](#201) | msdyn_vendorpaymentmethods | This template synchronizes vendor payment method information.
+[Vendors V2](mapping-reference.md#202) | msdyn_vendors | Businesses that use a custom solution for vendors can take advantage of the out-of-box vendor concept that is being introduced in Dataverse because of Finance and Operations apps integration.
+[Vendor groups](mapping-reference.md#200) | msdyn_vendorgroups | This template synchronizes vendor group information.
+[Vendor payment method](mapping-reference.md#201) | msdyn_vendorpaymentmethods | This template synchronizes vendor payment method information.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
