@@ -44,10 +44,10 @@ Physical name: mshr_payrollfixedcompensationplanentity.
 | **Pay rate**<br>mshr_payrate<br>*Decimal* | Read-only<br>Required | Pay rate defined in fixed compensation plan. |
 | **Plan ID**<br>mshr_planid<br>*String* | Read-only<br>Required |Specifies the compensation plan.  |
 | **Valid from**<br>mshr_validfrom<br>*Date Time Offset* |  Read-only<br>Required |Date the employee fixed compensation is valid from.  |
-| **Payroll Fixed Compensation Plan entity**<br>mshr_payrollfixedcompensationplanentityid<br>*GUID* | Required<br>Sytem generated | A system-generated GUID value to uniquely identify the compensation plan. |
+| **Payroll Fixed Compensation Plan entity**<br>mshr_payrollfixedcompensationplanentityid<br>*GUID* | Required<br>System generated | A system-generated GUID value to uniquely identify the compensation plan. |
 | **Pay frequency**<br>mshr_payfrequency<br>*String* | Read-only<br>Required |The frequency the employee will be paid.  |
 | **Valid to**<br>mshr_validto<br>*Date Time Offset* | Read-only <br>Required | Date the employee fixed compensation is valid to. |
-| **Position ID**<br>mshr_positionid<br>*String* | Read-only <br>Required | Postion ID associated with the employee and fixed compensation plan enrollment. |
+| **Position ID**<br>mshr_positionid<br>*String* | Read-only <br>Required | Position ID associated with the employee and fixed compensation plan enrollment. |
 | **Currency**<br>mshr_currency<br>*String* | Read-only <br>Required |The currency defined for the fixed compensation plan   |
 | **Personnel number**<br>mshr_personnelnumber<br>*String* | Read-only<br>Required |The employee's unique personnel number.  |
 
