@@ -40,8 +40,8 @@ Physical name: mshr_essleaverequestentity.
 
 | Property</br>**Physical name**</br>***Type*** | Use | Description |
 | --- | --- | --- |
-| **Request id**</br>mshr_requestid</br>*String* | Read-only | The request id. |
-| **Leave type id**</br>mshr_leavetypeid</br>*String* | Read-only | The leave type id. |
+| **Request id**</br>mshr_requestid</br>*String* | Read-only | The request ID. |
+| **Leave type id**</br>mshr_leavetypeid</br>*String* | Read-only | The leave type ID. |
 | **Date**</br>mshr_leavedate</br>*Date Time Offset* | Read-only | The date of the leave request. |
 | **Amount**</br>mshr_amount</br>*Decimal* | Read-only | The leave request amount. |
 | **Half day type**</br>mshr_halfdaydefinition</br>*mshr_LeaveHalfDayDefinition option set* | Read-only | The type of half day leave. |
@@ -49,10 +49,10 @@ Physical name: mshr_essleaverequestentity.
 | **Status**</br>mshr_status</br>*mshr_status option set* | Read-only | The status of the request. |
 | **Date**</br>mshr_requestdate</br>*Date Time Offset* | Read-only | The date of the request. |
 | **Personnel number**</br>mshr_personnelnumber</br>*String* | Read-only | The employee's unique personnel number. |
-| **Reason code id**</br>mshr_reasoncodeid</br>*String* | Read-only | The reason code id. |
+| **Reason code id**</br>mshr_reasoncodeid</br>*String* | Read-only | The reason code ID. |
 | **Data area ID**</br>mshr_dataareaid</br>*String* | Read-only | Specifies the legal entity (company). |
 | **Primary field**</br>mshr_primaryfield</br>*GUID* | Read-only</br>System generated | |
-| **Leave type entity**</br>mshr_essleaverequestentityid</br>*GUID* | Sytem generated | A system-generated GUID value to uniquely identify the leave request. |
+| **Leave type entity**</br>mshr_essleaverequestentityid</br>*GUID* | System generated | A system-generated GUID value to uniquely identify the leave request. |
 
 ## Example query
 
