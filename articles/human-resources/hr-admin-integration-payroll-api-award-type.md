@@ -28,13 +28,13 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the Award option set for Dynamics 365 Human Resources.
+This topic describes the Award type option set for Dynamics 365 Human Resources.
 
 ## Option set: Award type
 
 Physical name: mshr_HrmCompVarAwardEmplType
 
-This enumeration provides the option set for variable compensation award type in Human Resources virtual entities.
+This enumeration provides the option set for the variable compensation award type in Human Resources virtual entities.
 
 | Value | Label | Description |
 | --- | --- | --- |
