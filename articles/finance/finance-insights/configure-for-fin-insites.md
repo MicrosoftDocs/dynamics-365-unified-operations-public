@@ -797,7 +797,7 @@ The add-in will be installed within a few minutes.
     | CDS Org ID                                               | The Dataverse organization ID copied from above. |
 5. Enable **Is this the default environment for you Tenant**.
 
-The add-in might take serveral minutes to install.
+The add-in might take several minutes to install.
     
 ## Configure the entity store
 
