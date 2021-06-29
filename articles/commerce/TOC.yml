@@ -1307,7 +1307,7 @@
       - name: Russia
         items:
         - name: Commerce localization for Russia
-          href: localizations/emea-rus-commerce-localization.md   
+          href: localizations/rus-commerce-localization.md   
       - name: Sweden
         items:
         - name: Cash register functionality
