@@ -17,6 +17,7 @@ ms.search.validFrom: 2021-06-24
 ---
 
 # Configure expenditure reviewers
+[!include[banner](../includes/banner.md)]
 
 You can set up dynamic expenditure reviewers to route expenditures for review, based on either the user who is assigned to a project role or the financial dimension where the expenditure is being charged. The workflow process uses the specified project role or financial dimension owner to determine who the expenditure should be routed to.
 
