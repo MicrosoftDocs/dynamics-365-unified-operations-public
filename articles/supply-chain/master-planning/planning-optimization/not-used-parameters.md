@@ -1,5 +1,5 @@
 ---
-title: Parameters that are not used by Planning Optimization
+title: Parameters not used by Planning Optimization
 description: This topic lists parameters that are currently not considered by Planning Optimization during its operation.
 author: crytt
 ms.date: 6/29/2021
@@ -10,10 +10,10 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-29
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: 10.0.20
 ---
 
-# Parameters that are not used by Planning Optimization
+# Parameters not used by Planning Optimization
 
 [!include [banner](../../includes/banner.md)]
 
