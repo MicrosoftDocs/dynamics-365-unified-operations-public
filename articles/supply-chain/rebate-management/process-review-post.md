@@ -353,4 +353,4 @@ After you've processed and posted a provision, follow these steps to cancel the 
 3. Find and select the provision transactions to be cancelled. Then, on the Action Pane, open the **Rebate workbench** tab and, in the **Processing** group, select **Cancel provision**.
 4. Select **OK** to reverse the transactions.
 
-These provision reversals will also be visible in the relevant [Rebate management journals](#review-journals). <!-- KFM: Original was not clear. Please confirm this phrasing.-->
+These provision reversals will also be visible in the relevant [Rebate management journals](#review-journals).
