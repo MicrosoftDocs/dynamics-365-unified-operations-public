@@ -150,7 +150,7 @@ Before you begin the replication process, note that the LCS environment will be 
     **Created publishers:** AXDB\_PUB\_TABLE\_Obj\_\[\*\]
 
     > [!NOTE]
-    > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to be completed. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](migration-upgrade/data-upgrade-self-service.md#reporting-section-of-the-application).
+    > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to be completed. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application).
 
 9. **Replication: Set up publication for other objects (functions)**
 
@@ -193,7 +193,7 @@ Before you begin the replication process, note that the LCS environment will be 
     This step deletes all the publications that were created in the source database, the distribution database, and the replication snapshot.
 
     > [!NOTE]
-    > You can validate the replicated data using "dv" option. To learn more about this option, see the [Reporting section of the application](migration-upgrade/data-upgrade-self-service.md#reporting-section-of-the-application).
+    > You can validate the replicated data using "dv" option. To learn more about this option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application).
     >
     > To remove the **Snapshot** folder without causing an exception, run the following script in the source database. Even if you don't run this script, you can ignore the exception message that you receive.
     >
