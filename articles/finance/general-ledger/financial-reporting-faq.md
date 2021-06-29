@@ -83,4 +83,23 @@ The message indicates that an issue occurred when the system tried to retrieve f
 - Review the integration status of the data by going to **Tools \> Integration status** in Report Designer. If the integration is incomplete, wait for it to be completed. Then retry what you were doing when you received the message.
 - Contact Support to identify and work through the issue. There might be inconsistent data in the system. Support engineers can help you identify that issue on the server and find the specific data that might require an update.
 
+## How does selecting Historical rate translation affect report performance?
+
+The historical rate is typically used with Retained Earnings, Property, Plant & Equipment, and Equity accounts. Typically, this may be required based on FASB or GAAP guidelines
+Please refer to [Currency capabilities in financial reporting](financial-reporting-currency-capability.md)
+
+**How many types of currency rates are there?**
+Current rate – typically used with Balance Sheet accounts. Usually known as the spot exchange rate can be the rate at the last day of the month or another predetermined date. 
+Average rate – typically used with Income Statement (Profit/Loss) accounts. You can set up the average rate to either do a simple average or a weighted average.  
+Historical rate – typically used with Retained Earnings, Property, Plant & Equipment and Equity accounts that may be required based on FASB or GAAP guidelines.
+
+**How does historical currency translation work?**
+Rates are specific to the transaction date, so each transaction is individually translated based on the closest exchange rate.  Compared to current rate translation, the pre-calculated period balances can be used instead of individual transaction details.
+
+**How does this impact performance?**
+Data freshness in the reports can be delayed due to the need to recalculate amounts by checking transaction details.  This is triggered each time the rates are updated or more transactions are posted.  For example, having thousands of accounts set to historical translation may cause a couple times a day 1 hour delay in data update vs. having a handful of specific accounts  keeps the processing times down to minutes or less.
+Similarly, generating reports using currency translation for historical type accounts will lead to extra per-transaction calculations.  This can more than double the report generation time depending on the number of accounts.
+
+
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
