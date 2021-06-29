@@ -23,10 +23,10 @@ ms.search.validFrom: 2021-06-30
 
 This AX 2012 data upgrade process is for self-service environments. Complete the following sections in the order shown:
 
-- Prerequisites
-- Data upgrade process - Run the AX2012DataUpgradeToolKit.exe application to complete the upgrade process.
-- Reporting section of the application - Review the reports of the replication validation, replication status, and data upgrade status.
-- Tooling section of the application - This section will help in resetting the process parameters and restart any of the process.  
+- [Prerequisites](data-upgrade-self-service.md#prerequisites)
+- [Data upgrade process](data-upgrade-self-service.md#data-upgrade-process) - Run the AX2012DataUpgradeToolKit.exe application to complete the upgrade process.
+- [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) - Review the reports of the replication validation, replication status, and data upgrade status.
+- [Tooling section of the application](data-upgrade-self-service.md#tooling-section-of-the-application) - This section will help in resetting the process parameters and restart any of the process.  
 
 ## Prerequisites
 
