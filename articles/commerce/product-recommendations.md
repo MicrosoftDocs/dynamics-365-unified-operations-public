@@ -54,7 +54,7 @@ Product recommendations are available for the following scenarios:
 - **On any store page for browsing or landing page in e-Commerce:** If customers or store associates visit a store page, the recommendation engine can suggest products in the **New**, **Best Selling**, and **Trending** lists.
 - **On the Product details page:** If customers or store associates visit a **Product details** page, the recommendation engine suggests additional items that are also likely to be purchased. These items appear in the **People also like** list.
 - **On the Transaction page or the checkout page:** The recommendation engine suggests items, based on the whole list of items in the basket. These items appear in the **Frequently bought together** list.
-- **Personalized recommendations:** Merchandizers can provide signed-in customers a personalized **picks for you** list, in addition to new functionality that allows for existing list scenarios to be personalized based on that customer. To learn more, see [Enable personalized recommendations.](personalized-recommendations.md).
+- **Personalized recommendations:** Merchandisers can provide signed-in customers a personalized **picks for you** list, in addition to new functionality that allows for existing list scenarios to be personalized based on that customer. To learn more, see [Enable personalized recommendations.](personalized-recommendations.md).
 
 ### Types of product recommendations
 
