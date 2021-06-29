@@ -4,7 +4,7 @@
 title: Budget plan narrative
 description: This topic explains how to include a description and a revenue summary in a budget plan. 
 author: v-kiarnd
-ms.date: 05/07/2021
+ms.date: 06/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -43,4 +43,21 @@ Complete the following steps to turn on the budget plan narrative area and use t
 4.	Expand the **Budget plan narrative** section and add descriptions or revenue information that should be included in the budget plan.
  
 No additional permissions are required to modify the budget plan narrative. 
+
+## Include budget plan narrative when copying budget plans
+Complete the following steps to allow copying of the budget plan narrative description and revenue summary to new budget plans.
+1. As a prerequisite, you need to have the Budget plan narrative feature enabled.
+2. Enable Include budget plan narrative when copying budget plans under feature management. This adds an Include budget description and Include revenue summary flag to budget plan copying.
+3. The new flags can be selected from the following pages.
+a. Budget plans
+i. Go to Budgeting > Budget plans.
+ii. Select the Budget plan to be copied.
+iii. On the Action pane, on the Budget plan tab, in the New group, click Copy of.
+iv. The Copy a budget plan slider will open, which includes the Budget plan narrative flags.
+b. Generate budget plan from a budget plan
+i. Go to Budgeting > Periodic > Generate budget plan from an budget plan.
+ii. The Budget plan narrative flags are included on this page. The will only be available when Action is set to a value of Create a new budget plan.
+4. From both of the above pages, select the narrative field(s) you want to copy to the new plan (if any).
+Once the budget plan is copied, selected budget plan narrative fields will be copied to the new plan.
+
 
