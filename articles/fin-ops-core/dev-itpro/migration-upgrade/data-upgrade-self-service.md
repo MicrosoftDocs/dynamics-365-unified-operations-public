@@ -86,9 +86,6 @@ This AX 2012 data upgrade process is for self-service environments. Complete the
     > [!WARNING]
     > The tables and functions that are specified in these XML files won't be replicated in the target database, and the same format should be followed.
 
-> [!NOTE]
-> If any of the preceding steps fail at any point, see the [Exceptions](#exceptions) section later in this topic.
-
 ## Data upgrade process
 
 Before you begin the replication process, note that the LCS environment will be in a **Deployed** state when it's created.
