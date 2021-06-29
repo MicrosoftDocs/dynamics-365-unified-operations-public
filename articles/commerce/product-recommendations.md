@@ -37,6 +37,8 @@ Product recommendations allow customers to easily and quickly find products that
 
 In e-Commerce, product recommendations are powered by Microsoft Recommendations machine learning technologies on a large scale.
 
+This service is an add-on to Dynamics 365 Commerce. For more information, download the latest [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+
 ## Recommendation service
 
 The product recommendations service utilizes artificial intelligence and machine learning (AI-ML) technologies in the following way:
