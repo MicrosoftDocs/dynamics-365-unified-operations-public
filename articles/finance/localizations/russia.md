@@ -164,6 +164,7 @@ This topic provides information about functionality that supports Russian regula
 - [Cash flow tax registers](rus-cash-flow-tax-registers.md)
 - [Rated expenses registers](rus-rated-expenses-registers.md)
 - [Accounts payable debt tax registers and debt write-offs](rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md)
+- [Bad debt reserves in Accounts receivable](rus-bad-debts.md)
 
 ## Additional resources
 
