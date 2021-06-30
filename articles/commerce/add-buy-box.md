@@ -4,7 +4,7 @@
 title: Buy box module
 description: This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 06/25/2021
+ms.date: 06/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -81,9 +81,6 @@ The buy box module provided in the Adventure Works theme has a module definition
 
 > [!IMPORTANT]
 > The Adventure Works theme is available as of the Dynamics 365 Commerce version 10.0.20 release.
-
-<!--The following image shows an example of buy box in Adventure works theme.-->
-<!--![Example of a buy box module](./media/)-->
 
 ## Commerce Scale Unit interaction
 
