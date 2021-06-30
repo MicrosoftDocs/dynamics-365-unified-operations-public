@@ -317,12 +317,24 @@ To configure CRT extension components, follow these steps.
 <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
 <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
  ```
+ 
+3. Find the Web.config file for CRT.
 
-3. Find the extension configuration file for Local CRT on Modern POS:
+    - **Commerce Scale Unit:** The file is named **Web.config**, and it's located in the **\RetailServer\webroot** folder.
+
+4. Update this Web.config file by adding the new extension library name in the extensionComposition section.
+ 
+```xml
+<extensionComposition>
+ <add source="assembly" value="Microsoft.Dynamics.Retail.RetailServer.ElectronicFiscalDocumentBrazil" />
+</extensionComposition>
+```
+
+5. Find the extension configuration file for Local CRT on Modern POS:
 
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's located in the local CRT client broker location.
 
-4. Register the local CRT on Modern POS change in the extension configuration file.
+6. Register the local CRT on Modern POS change in the extension configuration file.
 
  ```xml
  <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
@@ -334,7 +346,7 @@ To configure CRT extension components, follow these steps.
 
 > [!WARNING]
 > Don't edit the **Commerceruntime.config** and **CommerceRuntime.MPOSOffline.config** files. These files aren't intended for any customizations.
-
+ 
 ### Enable Modern POS extension components
 
 To enable Modern POS extension components, follow these steps.
