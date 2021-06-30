@@ -45,12 +45,10 @@ To create an audience in Commerce site builder, follow these steps.
 
 You can edit an audience by clicking on it's blue link in the **Audiences** tab and the **Edit** button in the audience editor that opens up. You can also select an audience in the list view and select **View Assignments** to view the list of targets, experiments and pages that are referencing it. To delete an audience in the audience list view or in the audience editor, select **Delete** in the top command bar.
 
-> [!NOTE]
-> Optionally you can create "everyone" and "no one" audiences to help with including and excluding audiences for targets.
-
 ## Targets
 A target is the user experience that will be shown to members of the chosen audience. You can target modules in the **Pages** tab or fragments in the **Fragments** tab.
 
+### Create a target
 To target page modules in Commerce site builder, follow these steps.
 1. Select **Pages** in the left navigation pane, and then select the blue link for the page that has the module(s) you want to target.
 2. Click **Edit** to check out the page for editing.
@@ -71,14 +69,15 @@ You can also target fragments in a similar way from the **Fragments** tab in the
 > [!NOTE]
 > You can currently either have an experiment or target on a page but not both.
 
+### Manage targets
 To manage your targets, go to the default page or fragment and follow these steps.
 1. Open the targets dropdown and click on **Manage targets**.
 2. Click on a target to edit, duplicate or delete it.
 3. If you have more than one target on the same module, click on **Prioritize targets** to specify the order in which they should be shown.
 
-Targets in pages and fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, you will need to delete the targets before the localization progress. If you need to create different schedules per locale, you will need to create different targets per each locale.
+### Localize targets
+Targets in pages and fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, delete the targets before the localization progress. If you need to create different schedules per locale, you will need to create different targets per each locale.
 
-*	C1 needs explicit cookie consent from C2 – need to include info on that module
-
+<<Open - C1 needs explicit cookie consent from C2; need to include info on that module>>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
