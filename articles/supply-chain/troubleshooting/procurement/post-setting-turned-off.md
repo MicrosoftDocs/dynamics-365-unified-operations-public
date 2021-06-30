@@ -13,13 +13,13 @@ ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.13
 ---
 
-## The Post to charge account in ledger setting isn't turned on
+# The Post to charge account in ledger setting isn't turned on
 
-### Issue description
+## Symptoms
 
 This issue occurs when a purchase order is invoiced, if the **Post to charge account in ledger** option is set to *Yes* on the **Invoice** tab of the **Accounts payable parameters** page.
 
-### Reproduce the issue
+## Reproduce the issue
 
 The following procedure shows one way to reproduce the issue.
 
@@ -44,6 +44,6 @@ The following procedure shows one way to reproduce the issue.
 1. Update the match status, and post.
 1. Notice that you now receive the following error when you generate an invoice from a purchase order: "Account number for transaction type Purchase expenditure for product does not exist."
 
-### Issue resolution
+## Resolution
 
 This depends on the parameter settings for invoices and invoice groups. For more information, see the following blog post: [Accounting for Purchase charge and Stock variation](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
