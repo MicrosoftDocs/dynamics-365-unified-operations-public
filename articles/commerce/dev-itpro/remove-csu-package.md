@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic explains how to remove extensions from the Cloud Scale Unit (CSU) and applies to SDK version 10.0.16 or later.
 
-All extensions (Commerce Runtime, Headless Commerce APIs, Channel database scripts and Cloud POS) applied to CSU can be removed by applying  the Microsoft.Dynamics.Commerce.Deployment.CSUExtensionCleanUpPackage to CSU, this packages when applied to CSU removes all the extensions and keeps only the base CSU components and the Microsoft hotfixes.
+All extensions (Commerce Runtime, Headless Commerce APIs, Channel database scripts and Cloud POS) applied to CSU can be removed by applying  the Remove CSU Extension ( Microsoft.Dynamics.Commerce.Deployment.CSUExtensionCleanUpPackage) package to CSU, this packages when applied to CSU removes all the extensions and keeps only the base CSU components and the Microsoft hotfixes. The package will not remove extensions applied to channel components like Modern POS, Hardware station, Cloud Scale Unit - Self hosted or Commerce back office.
 
 To remove the extensions follow the below steps:
 
@@ -45,6 +45,6 @@ To remove the extensions follow the below steps:
 6. Select the Commerce Cloud Scale Unit Extension asset type, and then select the + button to upload the *Remove CSU Extension** package. Provide a package name and description and then add the package file by selecting Add file.
 7. After the upload is complete, select Confirm to complete the upload process.
 8. The package will be validated by LCS in a few minutes. After validation is complete, mark the package as Release candidate.
-9. After upload, the package needs to be deployed to the environment. For more information, follow the steps outlined in [Apply updates and extensions to Commerce Scale Unit (cloud)](../../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md).
+9. After upload, the package needs to be deployed to the environment. To deploy the package, follow the steps outlined in the [Apply updates and extensions to Commerce Scale Unit (cloud)](../../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md).
 
 For information about how to deploy the packages either manually or by using the automated flow in LCS, see [Apply a deployable package](../../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md) and [Install a deployable package](../../../fin-ops-core/dev-itpro/deployment/install-deployable-package.md).
