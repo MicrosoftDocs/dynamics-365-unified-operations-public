@@ -4,7 +4,7 @@
 title: Interactive feature module 
 description: This topic covers interactive feature modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 06/24/2021
+ms.date: 06/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,13 +33,13 @@ ms.dyn365.ops.version:
 
 This topic covers interactive feature modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-Interactive feature modules are mosaic-like modules that can be used to market multiple product categories or product brands using a combination of images and text. For example, a retailer can add an interactive feature module to the home page of an e-Commerce site to promote all the top-selling categories. Its similar to Tile List module but has different layout and interaction model.
+Interactive feature modules are mosaic-like modules that can be used to market multiple product categories or product brands using a combination of images and text. For example, a retailer can add an interactive feature module to the home page of an e-commerce site to promote top selling categories. The interactive feature module is similar to tile list module but has a different layout and interaction functionality.
 
-Interactive feature module is a collection of interactive feature item modules. Each feature item module is driven by data from the content management system (CMS) and doesn't depend on any other modules or data from the backoffice. It can be added to put on any site page where a retailer wants to market or promote something (for example, products, categories, brands etc).
+Each interactive feature module is a collection of interactive feature item modules. Each feature item module is driven by data from the content management system (CMS) and doesn't depend on any other modules or data from Commerce headquarters. The interactive feature module can be added to any site page where a retailer wants to market or promote something (for example, products, categories, or brands).
 
 >[!IMPORTANT]
 > - The interactive feature module is available as of the Dynamics 365 Commerce version 10.0.20 release.
-> - The interactive feature module is included in the Adventure Works theme.
+> - The interactive feature module is showcased in the Adventure Works theme.
 
 The following example image shows an interactive feature module on the Adventure Works home page.
 
@@ -47,19 +47,19 @@ The following example image shows an interactive feature module on the Adventure
 
 ## Interactive feature module and themes
 
-Interactive Feature module can support various layouts and styles based on a theme. For example, the Adventure works theme, the Interactive feature has a 2-column layout with an animation effect when user hovers on each item.  The module is optimized for an even number of images that are shown on a 2-column layout. 
+The interactive feature module can support various layouts and styles based on a theme. For example, in the Adventure Works theme the interactive feature module has a two column layout that displays animation effects when a site user hovers over each item. The interactive feature module is optimized for an even number of images that are displayed in a  two column layout. 
 
 ## Interactive feature module properties
 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-|Heading| Heading text, Heading tag| This property is used to set a heading for the Interactive Feature |
+|Heading| Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**)| A text heading for the interactive feature module. |
 
 ## Interactive feature item module properties
 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-| Image          | Image file | An image can be used to showcase a product or a category. The image can be uploaded to the image gallery, or an existing image can be used. |
+| Image          | Image file | An image that represents a product or a category. The image can be uploaded to the Commerce site builder Media Library, or an existing image can be used. |
 | Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | By default, the **H2** heading tag is used for the heading, but the tag can be changed to meet accessibility requirements. |
 | Paragraph      | Paragraph text | The module supports paragraph text in rich text format. Some basic rich text capabilities such as hyperlinks and bolded, underlined, and italicized text are supported. Some of these capabilities can be overridden by the page theme that is applied to the module. |
 | Link           | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** selector. | Supports one or more "call to action" links. If a link is added, link text, a URL, and an ARIA label are required. ARIA labels should be descriptive to meet accessibility requirements. Links can be configured to open in a new tab. |
@@ -68,16 +68,18 @@ Interactive Feature module can support various layouts and styles based on a the
 
 To add a interactive feature module to a new page and set the required properties in Commerce site builder, follow these steps.
 
-1. Go to **Templates**, and open **Marketing template** which is used for the home page (or create a new one)
-1. In the **Main** slot of the default page, add Interactive Feature module.
+1. Go to **Templates** and open your site's home page marketing template (or create a new one).
+1. In the **Main** slot of the default page, select the ellipsis (...), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Interactive feature** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
-1. Open the site Home page (or create a new one)
+1. Go to **Pages** and open the site home page (or create a new one using the marketing template).
 1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, under **Select Modules**, select the Interactive Feature, and then select **OK**.
-1. In the module property panel of Interactive Feature module, set a Heading
-1. To the Interactive Feature module, add Interactive Feature Item module from the module outline
-1. In the property panel for Interactive Feature Item module, add an Image, Heading, Paragraph and Link.
-1. Repeat the above steps and continue adding more Interactive Feature Item modules to Interactive Feature
+1. In the **Add Module** dialog box, under **Select Modules**, select the **Interactive feature** module, and then select **OK**.
+1. In the property pane of interactive feature module, add a heading.
+1. In the **Interactive feature** slot, select the ellipsis button (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Interactive feature item** module, and then select **OK**.
+1. In the property pane of interactive feature item module, add an image, heading text, paragraph text, and an URL.
+1. Add and configure additional interactive feature item modules as needed.
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
 
