@@ -44,7 +44,7 @@ Complete the following steps to turn on the budget plan narrative area and use t
  
 No additional permissions are required to modify the budget plan narrative. 
 
-## Include the budget plan narrative when copying budget plans
+## Include the budget plan narrative fields when copying budget plans
 Complete the following steps to allow copying of the budget plan narrative description and revenue summary to new budget plans.
 1. As a prerequisite, you need to have the **Budget plan narrative feature** enabled.
 2. Enable **Include budget plan narrative when copying budget plans** under feature management. This adds a **Budget plan narrative section** with **Include budget description** and **Include revenue summary** flags to budget plan copying.
@@ -56,8 +56,8 @@ Complete the following steps to allow copying of the budget plan narrative descr
   iv. The **Copy a budget plan** slider will open, which includes the **Budget plan narrative** flags.
  b. Generate budget plan from a budget plan
   i. Go to **Budgeting > Periodic > Generate budget plan from an budget plan**.
-  ii. The **Budget plan narrative** flags are included on this page. The will only be available when **Action** is set to a value of **Create a new budget plan**.
-4. From both of the above pages, select the narrative field(s) you want to copy to the new plan (if any).
+  ii. The **Budget plan narrative** flags are included on this page. This will only be available when **Action** is set to a value of **Create a new budget plan**.
+4. From both above pages, select the narrative field(s) you want to copy to the new plan (if any).
 5. Once the budget plan is copied, the selected budget plan narrative fields will be copied to the new plan.
 
 
