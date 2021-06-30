@@ -4,7 +4,7 @@
 title: Promo banner module
 description: This topic covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 06/25/2021
+ms.date: 06/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -87,7 +87,6 @@ To add a promo banner module to a page and set the required properties, follow t
 
 > [!NOTE]
 > A promo banner is typically used in the page header slot or a subheader slot.
-
 
 ## Additional resources
 
