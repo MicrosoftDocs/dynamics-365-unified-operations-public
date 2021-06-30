@@ -4,13 +4,13 @@
 title: Upgrade from AX 2012 - Data upgrade FAQ
 description: This topics answers some common questions about data upgrade when upgrading from AX 2012.
 author: ttreen
-ms.date: 06/30/2021
+ms.date: 07/01/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: ttreen
-ms.search.validFrom: 2021-06-30
+ms.search.validFrom: 2021-07-01
 
 ---
 
