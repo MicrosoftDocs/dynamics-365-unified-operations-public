@@ -50,7 +50,7 @@ The following example image shows an image list module displaying brand logos on
 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-| Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | A text heading for the image list. |
+| Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | A text heading for the image list module. |
 | Image list      |  Images, text, URLs | Each item in the array is an image accompanied by paragraph text and a URL. |
 
 ## Add an image list module to a new page
