@@ -155,7 +155,7 @@ However, if the environment on the new infrastructure is connected to a differen
 
 ### Is there an impact on the Azure region when my environment is migrated?
 
-it is expected that your Human Resources environment will typically remain in the same Azure region during the migration. The only exception occurs if the Human Resources environment will be merged with a Finance and Operations environment that is in a different region. In this case, the Human Resources environment will be migrated to the Azure region of the Finance and Operations environment.
+It is expected that your Human Resources environment will typically remain in the same Azure region during the migration. The only exception occurs if the Human Resources environment will be merged with a Finance and Operations environment that is in a different region. In this case, the Human Resources environment will be migrated to the Azure region of the Finance and Operations environment.
 
 ### My organization depends on workflows in Dynamics 365 Human Resources for one or more business processes. Will the workflows be migrated automatically?
 
