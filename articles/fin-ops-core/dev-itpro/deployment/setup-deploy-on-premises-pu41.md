@@ -45,8 +45,8 @@ The Finance + Operations application consists of three main components:
 
 These components depend on the following system software:
 
-- Microsoft Windows Server 2019 or Microsoft Windows Server 2016 (Only English-language operating system installations are supported.)
-- Microsoft SQL Server 2016 SP2
+- Microsoft Windows Server (Only English-language operating system installations are supported.)
+- Microsoft SQL Server
 
     > [!IMPORTANT]
     > Full-Text Search must be enabled.
@@ -60,9 +60,9 @@ These components depend on the following system software:
     SSIS is deployed on AOS VMs.
 
 - SQL Server Management Studio
-- Standalone Microsoft Azure Service Fabric 7.2 or later
+- Standalone Microsoft Azure Service Fabric
 - Microsoft Windows PowerShell 5.0 or later
-- Active Directory Federation Services (AD FS) on Windows Server 2019 or Windows Server 2016
+- Active Directory Federation Services (AD FS) on Windows Server
 - Domain controller
 
     > [!IMPORTANT]
@@ -72,7 +72,10 @@ These components depend on the following system software:
     > - [Understanding Active Directory Domain Services (AD DS) Functional Levels](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10))
     > - [Full 2-way trust](../../fin-ops/get-started/system-requirements-on-prem.md#full-2-way-trust)
 
-- Optional but **highly** recommended: Active Directory Certificate Services (AD CS) on Windows Server 2019 or Windows Server 2016
+- Optional but **highly** recommended: Active Directory Certificate Services (AD CS) on Windows Server
+
+[!IMPORTANT]
+> For supported versions check the [software compatibility page](./onprem-compatibility.md)
 
 ## LCS
 
@@ -107,13 +110,16 @@ If you're using VMware, you must implement the fixes that are documented on the 
 
 The hardware configuration includes the following components:
 
-- A standalone Service Fabric cluster that is based on Windows Server 2019 or Windows Server 2016 VMs
+- A standalone Service Fabric cluster that is based on Windows Server VMs
 - SQL Server (Both Clustered SQL and Always-On are supported.)
 - AD FS for authentication
 - Server Message Block (SMB) version 3 file share for storage
-- Optional: Microsoft Office Server 2017
+- Optional: Microsoft Office Server
 
 For more information, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md).
+
+[!IMPORTANT]
+> For supported versions check the [software compatibility page](./onprem-compatibility.md)
 
 ### Hardware layout
 
@@ -200,8 +206,8 @@ Before you start the setup, the following prerequisites must be in place. The se
 
 - Active Directory Domain Services (AD DS) must be installed and configured in your network.
 - AD FS must be deployed.
-- SQL Server 2016 SP2 must be installed on the SSRS machines.
-- SQL Server Reporting Services 2016 must be installed (but not configured) in **Native** mode on the SSRS machines.
+- SQL Server must be installed on the SSRS machines.
+- SQL Server Reporting Services must be installed (but not configured) in **Native** mode on the SSRS machines.
 - Optional: AD CS is installed and configured in your network.
 
 The following table shows the prerequisite software that is installed on the VMs by the infrastructure setup scripts that are downloaded from LCS.
@@ -693,7 +699,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
 ### <a name="setupsql"></a>Step 13. Set up SQL Server
 
-1. Install SQL Server 2016 SP2 with high availability, unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. (Nevertheless, you might want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
+1. Install SQL Server with high availability, unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. (Nevertheless, you might want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
 
     > [!IMPORTANT]
     > You must enable the [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode).
@@ -764,16 +770,17 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 ### <a name="configuredb"></a>Step 14. Configure the databases
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
-2. On the dashboard, select the **Shared asset library** tile.
-3. Select **Model** as the asset type. Then, in the grid, select the data type for the release that you want, and download the zip file.
+1. On the dashboard, select the **Shared asset library** tile.
+1. Select **Model** as the asset type. Then, in the grid, select the data type for the release that you want, and download the zip file.
 
     | Release | Database |
     |---------|----------|
     | On-premises Platform update 41 | Dynamics 365 for Operations on-premises, Version 10.0.17 Demo Data |
     | On-premises Platform update 41 | Dynamics 365 for Operations on-premises, Version 10.0.17 Empty Data |
 
-4. The zip file contains a single backup (.bak) file. Select the file to download, based on your requirements.
-5. Make sure that the database section in the **infrastructure\\ConfigTempate.xml** file is configured correctly with the following information:
+1. The zip file contains a single backup (.bak) file. Select the file to download, based on your requirements.
+1. After the zip file is downloaded, verify that it's unblocked. Select and hold (or right-click) the file, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** check box.
+1. Make sure that the database section in the **infrastructure\\ConfigTempate.xml** file is configured correctly with the following information:
 
     - The database name.
     - The database file and log settings. The database settings should not be lower than the default values that are specified.
@@ -783,7 +790,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     > - The user who is running the SQL service and the user who is running the scripts should have **Read** access on the folder or share where the backup file is located.
     > - If an existing database already has the same name, it won't be overwritten.
 
-6. Copy the **infrastructure** folder to the SQL Server machine. Then open Windows PowerShell in elevated mode, and go to the folder.
+1. Copy the **infrastructure** folder to the SQL Server machine. Then open Windows PowerShell in elevated mode, and go to the folder.
 
 #### Configure the OrchestratorData database
 
@@ -949,7 +956,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
 
 ### <a name="configureadfs"></a>Step 18. Configure AD FS
 
-Before you can complete this procedure, AD FS must be deployed on Windows Server 2019 or Windows Server 2016. For information about how to deploy AD FS, see [Deployment Guide Windows Server 2016 and 2012 R2 AD FS Deployment Guide](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
+Before you can complete this procedure, AD FS must be deployed on Windows Server. For information about how to deploy AD FS, see [Deployment Guide Windows Server 2016 and 2012 R2 AD FS Deployment Guide](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
 
 Finance + Operations requires additional configuration of AD FS, beyond the default out-of-box configuration. The following Windows PowerShell commands must be run on the machine where the AD FS role service is installed. The user account must have enough permissions to administer AD FS. For example, the user must have a domain administrator account. For complex AD FS scenarios, consult your domain administrator.
 

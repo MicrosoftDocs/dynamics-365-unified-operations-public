@@ -343,6 +343,11 @@ foreach ($component in $configJson.components)
         $component.parameters.infrastructure.principalUserAccountName.value = $gmsaAccount
     }
 
+    if($component.name -eq "ReportingServices")
+    {
+        $component.parameters.accountListToAccessReports.value = $gmsaAccount
+    }
+
     $updatedComponents += $component
 }
 
