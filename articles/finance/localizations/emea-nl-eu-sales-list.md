@@ -4,7 +4,7 @@
 title: EU sales list for Netherlands
 description: This topic provides information about how to generate the EU sales list for Netherlands.
 author: anasyash
-ms.date: 05/25/2021
+ms.date: 06/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,6 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 You can generate a European Union (EU) sales list for the Netherlands in XML format that follows [NL SBR taxonomies](https://www.sbr-nl.nl/werken-met-sbr/taxonomie/documentatie-nederlandse-taxonomie) description. Taxonomies are updated by the authority each year. For example, in 2021 the taxonomy NT15 is applicable.
 
@@ -58,12 +57,14 @@ For more information about how to get the values from official documentation, se
 
 ### Set up EU sales list reporting formats
 
+To set up and generate the Dutch EU sales list for [Multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md), go to the **Feature management** workspace and enable the feature, **Dutch ICP declaration**. 
+
 To set up EU sales list reporting formats, follow these steps:
 
 1. Go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
 2. On the **EU sales list** tab, in the **File format mapping** field, select the ER format **EU sales list (NL)** that you imported.
 3. In the **Report format mapping** field, select either **EU Sales list by rows report** or **EU sales list by columns report**.
-4. For legal entities with [Multiple VAT registrations](emea-multiple-vat-registration-numbers.md), on the **EU sales list** tab, on the **Electronic reporting for countries/regions** FastTab, on the NLD country/region line, select the ER format **EU sales list (NL)** that you imported.
+4. For legal entities with [Multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md), on the **EU sales list** tab, on the **Electronic reporting for countries/regions** FastTab, on the NLD country/region line, select the ER format **EU sales list (NL)** that you imported.
 
     ![Foreign trade parameters](media/Foreign-trade-parameters-pic1.png)
 
@@ -98,7 +99,7 @@ To set up electronic tax declaration parameters, follow these steps:
 
 1. Go to **Tax** > **Setup** > **Sales tax** > **Electronic tax declaration parameters**.
 
-    For legal entities with [Multiple VAT registrations](emea-multiple-vat-registration-numbers.md), go to **Tax** > **Setup** > **Foreign trade > Dutch electronic tax declaration parameters**.
+    For legal entities with [Multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md), go to **Tax** > **Setup** > **Foreign trade > Dutch electronic tax declaration parameters**.
 
 2. On the **System** tab, set the following fields:
 
@@ -112,15 +113,13 @@ To set up electronic tax declaration parameters, follow these steps:
 
 ## Set up the Dutch EU sales list transmission to Digipoort
 
-To generate the Dutch EU sales list for [Multiple VAT registrations](emea-multiple-vat-registration-numbers.md), go to the **Feature management** workspace and enable the feature, **Dutch ICP declaration**.
-
 ### Set up Dutch electronic tax declaration parameters
 
 To set up Dutch electronic tax declaration parameters, follow these steps:
 
 1. Go to **Tax** > **Setup** > **Sales tax** > **Electronic tax declaration parameters**.
 
-    For legal entities with [Multiple VAT registrations](emea-multiple-vat-registration-numbers.md), go to **Tax** \> **Setup** \> **Foreign trade** \> **Dutch electronic tax declaration parameters**.
+    For legal entities with [Multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md), go to **Tax** \> **Setup** \> **Foreign trade** \> **Dutch electronic tax declaration parameters**.
 
 2. On the **General** tab, in the **ICP contact type** field, select **Taxpayer** or **Agent**.
 3. Select information in the **Contact ID, Name, Contact initials**, **Contact prefix**, and **Telephone** fields.

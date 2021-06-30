@@ -45,8 +45,7 @@ This article explains how to set up the collections functionality. You must comp
 
 These points are discussed in more detail throughout the rest of this topic. 
 
-Set up aging period definitions
--------------------------------
+## Set up aging period definitions
 
 Set up an aging period definition. An aging period definition defines the columns that appear on the **Aged balances**, **Collections activities**, and **Collections cases** list pages. It also defines the periods that appear on the **Collections** page. If a customer pool is set up, the aging period definition for the pool is used. If no pools are set up, the default aging period definition that is specified on the **Accounts receivable parameters** page is used. If no default aging period definition is specified, the first aging period definition on the **Aging period definitions** page is used.
 

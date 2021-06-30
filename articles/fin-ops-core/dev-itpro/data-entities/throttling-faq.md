@@ -4,7 +4,7 @@
 title: Priority-based throttling FAQ
 description: This topic provides answers to frequently asked questions about priority-based throttling for OData and custom service-based integrations.
 author: hasaid
-ms.date: 05/19/2021
+ms.date: 06/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 37
 # Priority-based throttling FAQ
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic provides answers to some frequently asked questions about [priority-based throttling](priority-based-throttling.md) for Open Data Protocol (OData) and custom service-based integrations.
 
@@ -91,7 +91,7 @@ You will receive the message, "This request could not be processed at this time 
 Where **{0}** will have the dynamically calculated retry-after time interval.
 
 ## Does throttling apply to Microsoft services?
-The following Microsoft services are initially exempt, and throttling doesn't apply to them: 
+Starting in Finance version 10.0.19, the following Microsoft services are initially exempt, and throttling doesn't apply to them: 
 
    - Document Routing Agent (DRA)
    - Warehouse Mobile (WHSMobile)
@@ -103,7 +103,7 @@ The following Microsoft services are initially exempt, and throttling doesn't ap
    - Finance and Operations apps - Power Platform Integration (Virtual Entities)
    - Finance and Operations apps Connector 
 
-Though these services are exempt, telemetry is collected on the performance and impact of these services on the overall system health. 
+Though these services are exempt, telemetry is being collected on the performance and impact of these services on the overall system health. 
 
 The owners of the exempt services are prioritizing the implementation of 429 handlers by the end of 2021. At that time, the services will no longer be exempt and throttling will apply. Notification will be provided ahead of these changes, and the documentation will be updated.
 

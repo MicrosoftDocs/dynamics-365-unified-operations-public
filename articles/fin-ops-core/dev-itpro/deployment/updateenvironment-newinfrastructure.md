@@ -4,7 +4,7 @@
 title: Update an environment
 description: This topic explains how to update an environment that was deployed by using the self-service deployment experience.
 author: laneswenka
-ms.date: 04/29/2021
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -79,8 +79,7 @@ After the package is in the project asset library, follow these steps to update 
 8. After the validations are completed, you can sign-off on the update from the environment history page by selecting either **Sign off** or **Sign off with issues**.
 
 ### Production environment
-
-To improve the reliability of updates that are applied to a production environment, a specific update that is done in the sandbox environment is designated ("marked") as a **release candidate** and moved to the production environment. This update contains both the base product and the customization. Therefore, both will be moved over when the selected update is applied to the production environment. This behavior differs from the current servicing behavior. Currently, you can move only the customization, but the base product **will not** change. In the case of a self-service deployment environment, the base product version **might change**, depending on the update that is marked as a release candidate in the sandbox environment. When a self-service release candidate is marked, all previously applied updates will also be included, regardless of whether they are individually marked as release candidates or not. 
+To improve the reliability of updates that are applied to a production environment, a specific update that is done in the sandbox environment is designated ("marked") as a **release candidate** and moved to the production environment. This update contains both the base product (such as release 10.0.19) and the customizations. Therefore, both will be moved over when the selected update is applied to the production environment. This behavior differs from Microsoft-managed environment behavior. In the case of a self-service deployment environment, the base product version **might change**, depending on the update that is marked as a release candidate in the sandbox environment. The **release candidate** in a self-service environment is a snapshot of all of the code that constitutes the sandbox environment as of that point in time, and is then moved to production environment.
 
 > [!IMPORTANT]
 > Package application causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
@@ -99,7 +98,7 @@ After you've marked an update as a release candidate, follow these steps to upda
 2. Select **Maintain \> Update environment** to apply an update.
 3. In the **Available sandboxes** list, select the source sandbox environment where the update was applied, validated, and marked as a release candidate.
 4. In the grid, select the update to apply to the production environment. This grid shows only updates that have been marked as release candidates.
-5. In the **Downtime start** field, select a date and time. The environment will be taken down for servicing at the specified time on the specified date. The **Downtime end** field is set to through hours from the start of the downtime.
+5. In the **Downtime start** field, select a date and time. The environment will be taken down for servicing at the specified time on the specified date. The **Downtime end** is calculated automatically based on the expected duration.
 
     No lead time is required for this update.
 
@@ -118,7 +117,6 @@ After you've marked an update as a release candidate, follow these steps to upda
 > [!NOTE]
 > If there is an on-going operation in the environment, or if the environment is already running on the same version or a later version, the scheduled update is canceled. When a scheduled update is canceled, an email notification is sent to all project stakeholders. Customers can also cancel an update by selecting **Cancel** on the environment details page. If customers want to reschedule or change an update, they can cancel the current operation and schedule a new one.
 
-> [!IMPORTANT]
 > For environments that are deployed in the modern infrastructure stack, if servicing is unsuccessful, the environment is automatically rolled back. To learn why the operation was unsuccessful, you can download the logs from the environment history page.
 
 

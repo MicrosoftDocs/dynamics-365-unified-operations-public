@@ -72,14 +72,12 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
-          - name: Supply Chain Management 10.0.20 (July 2021)
+          - name: Supply Chain Management 10.0.20 (August 2021)
             href: get-started/whats-new-scm-10-0-20.md
           - name: Supply Chain Management 10.0.19 (June 2021)
             href: get-started/whats-new-scm-10-0-19.md
           - name: Supply Chain Management 10.0.18 (May 2021)
             href: get-started/whats-new-scm-10-0-18.md
-          - name: Supply Chain Management 10.0.17 (April 2021)
-            href: get-started/whats-new-scm-10-0-17.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -222,6 +220,8 @@
             href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
           - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
             href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Regulatory Configuration Service – Lifecycle Services storage deprecation
+            href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
         - name: Electronic Invoicing
           items: 
           - name: Electronic Invoicing overview
@@ -234,6 +234,8 @@
             href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
           - name: Create an Azure storage account and a Key Vault
             href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Usage management dashboard
+            href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
           - name: Get started 
             items:
             - name: Get started with Electronic Invoicing service administration
@@ -599,6 +601,20 @@
         href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
       - name: Use cost control workspace for Finance and Operations mobile application
         href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+    - name: Global Inventory Accounting
+      items:
+      - name: Global Inventory Accounting home page
+        href: global-inventory-accounting/global-inventory-accounting-home.md
+      - name: Get started with Global Inventory Accounting
+        href: global-inventory-accounting/get-started-with-gia.md
+      - name: Business documents supported by Global Inventory Accounting
+        href: global-inventory-accounting/business-documents-supported.md
+      - name: Enable Power BI for Global Inventory Accounting
+        href: global-inventory-accounting/enable-power-bi-for-gia.md
+      - name: Conventions
+        href: global-inventory-accounting/conventions.md
+      - name: Global Inventory Accounting ledger
+        href: global-inventory-accounting/global-inventory-accounting-ledger.md
     - name: Cost management
       items:
       - name: Cost management home page
@@ -867,6 +883,12 @@
         items:
         - name: Formula language
           href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/supply-chain/toc.json  
+        - name: Supported data types for ER formulas
+          items:
+          - name: Primitive data types 
+            href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Composite data types
+            href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/supply-chain/toc.json
         - name: Functions
           items:
           - name: Container 
@@ -1381,8 +1403,12 @@
             href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
           - name: Generate printable free text invoice (FTI) forms
             href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Trace execution of ER formats to troubleshoot performance issues
-          href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Design efficient ER solutions
+          items: 
+          - name: Trace execution of ER formats to troubleshoot performance issues
+            href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Troubleshoot performance issues in ER configurations
+            href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/supply-chain/toc.json
         - name: Business document management (BDM)
           items:
           - name: BDM overview
@@ -1407,12 +1433,16 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
           - name: Application update 10.0.17
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Application update 10.0.19
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
         - name: Specify a custom storage location for generated documents 
           items:
           - name: Subscribe to an event to request a response from subscribing handler
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
           - name: Delegate the creation of an ER destination to a custom destination factory
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Implement a custom destination for generated documents
+          href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/supply-chain/toc.json
         - name: Initiate data source values of the USER INPUT PARAMETER type from source code
           href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/supply-chain/toc.json
     - name: Inventory management
@@ -1581,6 +1611,8 @@
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Safety margins
           href: master-planning/planning-optimization/safety-margins.md
+        - name: Delay tolerance (negative days)
+          href: master-planning/planning-optimization/delay-tolerance.md
         - name: Purchase requisitions
           href: master-planning/planning-optimization/purchase-requisitions.md
         - name: Production planning
@@ -1591,6 +1623,8 @@
           href: master-planning/planning-optimization/Intercompany-planning.md
         - name: Exclude products with certain product lifecycle states
           href: master-planning/planning-optimization/product-lifecycle-state.md
+        - name: Replenishment methods and quantity modification
+          href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
         - name: Coverage time fences
           href: master-planning/planning-optimization/coverage-time-fence.md
         - name: Approve planned orders
@@ -1671,30 +1705,38 @@
           href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
         - name: Collaborate with internal supply chain customers
           href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
-      - name: Demand forecasting
+      - name: Forecasting
         items:
-        - name: Demand forecasting overview
-          href: master-planning/introduction-demand-forecasting.md
-        - name: Demand forecasting setup
-          href: master-planning/demand-forecasting-setup.md
-        - name: Import historical data for demand forecasts
-          href: master-planning/import-historical-data.md
-        - name: Generate a statistical baseline forecast
-          href: master-planning/generate-statistical-baseline-forecast.md
-        - name: Make manual adjustment to the baseline forecast
-          href: master-planning/manual-adjustments-baseline-forecast.md
-        - name: Authorize an adjusted forecast
-          href: master-planning/authorize-adjusted-forecast.md
-        - name: Monitor forecast accuracy
-          href: master-planning/monitor-forecast-accuracy.md
-        - name: Remove outliers from historical transaction data when calculating a demand forecast
-          href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
-        - name: Reduction keys
-          href: master-planning/reduction-keys.md
-        - name: Create a baseline forecast
-          href: master-planning/tasks/create-baseline-forecast.md
-        - name: Modify a demand forecast manually
-          href: master-planning/tasks/modify-demand-forecast-manually.md
+        - name: Demand and supply forecasting
+          items:
+          - name: Inventory forecasts
+            href: master-planning/inventory-forecast.md
+          - name: "Guide: Modify a demand forecast manually"
+            href: master-planning/tasks/modify-demand-forecast-manually.md
+        - name: Demand forecasting
+          items:
+          - name: Demand forecasting overview
+            href: master-planning/introduction-demand-forecasting.md
+          - name: Demand forecasting setup
+            href: master-planning/demand-forecasting-setup.md
+          - name: Generate a statistical baseline forecast
+            href: master-planning/generate-statistical-baseline-forecast.md
+          - name: Make manual adjustment to the baseline forecast
+            href: master-planning/manual-adjustments-baseline-forecast.md
+          - name: Authorize an adjusted forecast
+            href: master-planning/authorize-adjusted-forecast.md
+          - name: Import historical data for demand forecasts
+            href: master-planning/import-historical-data.md
+          - name: Remove outliers from historical transaction data when calculating a demand forecast
+            href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
+          - name: Monitor forecast accuracy
+            href: master-planning/monitor-forecast-accuracy.md
+          - name: "Guide: Create a baseline forecast"
+            href: master-planning/tasks/create-baseline-forecast.md
+        - name: Master planning with forecast
+          items:
+          - name: Forecast reduction keys
+            href: master-planning/reduction-keys.md
     - name: Mobile app
       items:
       - name: Mobile app home page
@@ -1813,6 +1855,8 @@
             href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/supply-chain/toc.json
           - name: Configure approval steps
             href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Configure expenditure reviewers
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/supply-chain/toc.json
           - name: Configure manual decisions
             href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
           - name: Configure conditional decisions
@@ -3007,6 +3051,8 @@
           href: warehousing/tasks/register-items-advanced-warehousing.md
         - name: Register items for a basic warehousing enabled item using an item arrival journal
           href: warehousing/tasks/register-items-basic-warehousing.md
+        - name: Import inbound ASNs through the V2 data entity
+          href: warehousing/import-asn-v2-data-entity.md
         - name: Cross-dock products from receiving warehouse to stores
           href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
         - name: Set up a location directive for purchase order put-away
@@ -3159,6 +3205,8 @@
             href: warehousing/partial-location-cycle-counting.md
           - name: Define partial location cycle counting process
             href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+          - name: Cycle counting example scenarios
+            href: warehousing/cycle-counting-scenarios.md
           - name: Warehouse management on-hand entries cleanup job
             href: warehousing/onhand-cleanup.md
           - name: Inventory journals
@@ -3183,6 +3231,50 @@
             href: warehousing/work-split.md
           - name: Material handling equipment interface (MHAX)
             href: warehousing/mhax.md
+      - name: The warehouse app
+        items:
+        - name: Install, set up, and use mobile devices
+          items:
+          - name: What's new or changed in Warehouse Management mobile app
+            href: warehousing/whats-new-wma.md
+          - name: Install and connect the Warehouse Management mobile app
+            href: warehousing/install-configure-warehouse-management-app.md
+          - name: Install and connect the warehouse app
+            href: warehousing/install-configure-warehousing-app.md
+          - name: Scan bar codes using a camera in the Warehouse Management mobile app
+            href: warehousing/scan-bar-codes-using-a-camera.md
+        - name: Set up fields and menus for mobile devices
+          items:
+          - name: Configure fields for the Warehouse Management mobile app
+            href: warehousing/configure-app-field-names-priorities-warehouse.md
+          - name: Set up mobile devices for warehouse work
+            href: warehousing/configure-mobile-devices-warehouse.md
+          - name: License plate receiving via the Warehouse Management mobile app
+            href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+          - name: Set up a mobile device menu item for completing work in a purchase order
+            href: warehousing/tasks/set-up-mobile-device-menu.md
+          - name: Set up a mobile device menu item to register received items
+            href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+          - name: Set up a mobile device menu item to provide a pick line overview
+            href: warehousing/pick-line-overview.md
+          - name: Create a mobile device menu item for license plate consolidation
+            href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+          - name: Mixed license plate receiving on a mobile device
+            href: warehousing/mixed-license-plate-receiving.md
+          - name: Configure Display older batches within warehouse on a mobile device
+            href: warehousing/display-older-batches-within-warehouses.md
+          - name: Pick oldest batch on a mobile device
+            href: warehousing/pick-oldest-batch.md
+        - name: Mobile device user settings
+          href: warehousing/mobile-device-user-settings.md
+        - name: Warehouse app event processing
+          href: warehousing/warehouse-app-events.md
+        - name: Customize the warehouse app
+          items:
+          - name: Process guide framework
+            href: warehousing/process-guide-framework.md
+          - name: Assign step icons and titles
+            href: warehousing/step-icons-titles.md
       - name: Warehouse setup
         items:
         - name: Warehouse configuration
@@ -3219,8 +3311,12 @@
               href: warehousing/wave-execution-notifications.md
             - name: Wave label printing
               href: warehousing/configure-wave-label-printing.md
+            - name: Schedule wave label printing during wave
+              href: warehousing/configure-task-based-wave-label-printing.md
             - name: Containerization
               href: warehousing/wave-containerization.md
+            - name: Container packing strategies
+              href: warehousing/container-packing-strategy-overview.md
           - name: Auto-update shipments
             href: warehousing/auto-update-shipment.md
           - name: Create a location profile
@@ -3249,42 +3345,6 @@
             href: warehousing/mobile-barcode-support.md
           - name: Set up warehouse for transfer orders
             href: warehousing/transfer-orders-warehouse.md
-        - name: Install and configure the Warehouse Management mobile app
-          items:
-          - name: Install and connect the Warehouse Management mobile app
-            href: warehousing/install-configure-warehouse-management-app.md
-          - name: Mobile device user settings
-            href: warehousing/mobile-device-user-settings.md
-          - name: Install and connect the warehouse app
-            href: warehousing/install-configure-warehousing-app.md
-          - name: Scan bar codes using a camera in the Warehouse Management mobile app
-            href: warehousing/scan-bar-codes-using-a-camera.md
-          - name: Configure fields for the Warehouse Management mobile app
-            href: warehousing/configure-app-field-names-priorities-warehouse.md
-          - name: Set up mobile devices for warehouse work
-            href: warehousing/configure-mobile-devices-warehouse.md
-          - name: Assign step icons and titles
-            href: warehousing/step-icons-titles.md
-          - name: Warehouse app event processing
-            href: warehousing/warehouse-app-events.md
-          - name: License plate receiving via the Warehouse Management mobile app
-            href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-          - name: Set up a mobile device menu item for completing work in a purchase order
-            href: warehousing/tasks/set-up-mobile-device-menu.md
-          - name: Set up a mobile device menu item to register received items
-            href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-          - name: Set up a mobile device menu item to provide a pick line overview
-            href: warehousing/pick-line-overview.md
-          - name: Create a mobile device menu item for license plate consolidation
-            href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-          - name: Mixed license plate receiving on a mobile device
-            href: warehousing/mixed-license-plate-receiving.md
-          - name: Configure Display older batches within warehouse on a mobile device
-            href: warehousing/display-older-batches-within-warehouses.md
-          - name: Pick oldest batch on a mobile device
-            href: warehousing/pick-oldest-batch.md
-          - name: Process guide framework
-            href: warehousing/process-guide-framework.md
         - name: Upgrade and migration
           items:
           - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations
@@ -3327,6 +3387,22 @@
           href: troubleshooting/inventory/while-splitting-the.md
       - name: Master planning
         items:
+        - name: You receive an error when running the built-in master planning engine
+          href: troubleshooting/planning/deprecated-master-planning-error.md
+        - name: Item can't have a BOM or formula
+          href: troubleshooting/planning/item-cannot-have-bom-formula.md
+        - name: Parameters for master plan do not exist
+          href: troubleshooting/planning/no-parameters-for-master-plan.md
+        - name: The planned production order must be scheduled before it can be firmed
+          href: troubleshooting/planning/planned-order-must-be-scheduled.md
+        - name: Product is on hold for transactions
+          href: troubleshooting/planning/product-is-on-hold.md
+        - name: The selected formula number is not approved for a batch order.
+          href: troubleshooting/planning/selected-formula-not-approved.md
+        - name: Vendor code isn't authorized for a specific product and date
+          href: troubleshooting/planning/vendor-code-not-authorized.md
+        - name: Vendor is not specified when firming planned orders
+          href: troubleshooting/planning/vendor-not-specified.md
         - name: Directly derived firmed orders are processed by an in-review workflow
           href: troubleshooting/planning/firmed-directly-deri.md
         - name: You can't filter master planning items by their related coverage group values
@@ -3375,6 +3451,8 @@
           href: troubleshooting/rebates/cumulating-customer-.md
       - name: Sales and marketing
         items:
+        - name: The quantity can't be reduced when canceling sales order
+          href: troubleshooting/sales/quantity-cannot-be-reduced.md
         - name: System administrators can't clear order holds because they aren't authorized
           href: troubleshooting/sales/system-administrator.md
       - name: Transportation management
@@ -3383,6 +3461,20 @@
           href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:
+        - name: Canceled product receipts don't update transactions status to registered
+          href: troubleshooting/warehousing/canceled-product-receipts.md
+        - name: Decimal rounding of the physical updating quantity is incorrect
+          href: troubleshooting/warehousing/decimal-rounding-of-quantity.md
+        - name: Physical remaining quantity in the unit must be other than zero
+          href: troubleshooting/warehousing/physical-remaining-q.md
+        - name: Picked quantity is not sufficient during packing slip generation
+          href: troubleshooting/warehousing/picked-quantity-is-n.md
+        - name: Quantity exceeds over-delivery percentage during packing slip generation
+          href: troubleshooting/warehousing/quantity-exceeds-over-pack-slip.md
+        - name: Quantity that you are trying to update exceeds the quantity received/delivered
+          href: troubleshooting/warehousing/quantity-exceeds-rec-del.md
+        - name: Quantity exceeds under-delivery percentage during packing slip generation
+          href: troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md
         - name: An error occurs when choosing the location during picking list registration
           href: troubleshooting/warehousing/error-cannot-update.md
         - name: Packing station doesn't show product notes

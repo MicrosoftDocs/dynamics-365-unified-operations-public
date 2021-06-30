@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes the default report for income statements. It also describes the building blocks that are associated with this report. 
 
-Default income statement report
--------------------------------
+## Default income statement report
 
 | Default report             | What it does                                                                                              |
 |----------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -62,8 +61,7 @@ The column definitions contain different types of columns to provide different l
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Financial reporting overview](financial-reporting-getting-started.md)
 

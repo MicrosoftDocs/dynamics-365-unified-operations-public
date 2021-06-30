@@ -71,7 +71,7 @@ When **Fiscal** is selected as the depreciation year, the following options are 
 
 ## Example of 200% reducing balance depreciation
 
-|                                |        |
+| &nbsp;                         | &nbsp; |
 |--------------------------------|--------|
 | Acquisition cost               | 11,000 |
 | Salvage value                  | 1, 000 |

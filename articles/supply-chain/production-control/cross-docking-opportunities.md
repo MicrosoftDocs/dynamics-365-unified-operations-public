@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
 
-Introduction
-------------
+## Introduction
 
 Cross-docking from production to an outbound location is relevant for manufacturers who produce high volume and ideally want to ship the finished products as soon as they are reported as finished from the production lines. The purpose is to ship the products to distribution centers that are physically located close to the customer demand, rather than build up inventory at the manufacturing site.
 

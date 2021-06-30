@@ -48,8 +48,7 @@ The following example is used to illustrate the concepts described in this artic
 |**Human resources**|HR manager (Central)|HR manager|
 
 
- Departments
-------------
+##  Departments
 
 A department is an operating unit that represents a category or functional area of an organization that is responsible for a specific area of the organization, such as sales or accounting. A department is used to report on functional areas and may have profit and loss responsibility. Also, a department might include a group of cost centers. Sales, accounting, and human resources are some examples of departments in an organization.
 
@@ -102,8 +101,7 @@ Use job types to classify similar jobs into categories. Job types, just like job
 
 Use areas of responsibility to indicate the work roles, processes, and products that a worker in a position for that job would be responsible for. An example of an area of responsibility for a job titled “Accountant” might be “Financial reporting for Product A”.
 
-Positions
-----------
+## Positions
 
 Positions are an important element of the lower level of an organization hierarchy. A position is an individual instance of a job. For example, the position, “Sales manager (East),” is just one of the positions that is associated with the job, “Sales manager.” Positions exist in a department and are assigned to workers.
 ### Position creation and maintenance

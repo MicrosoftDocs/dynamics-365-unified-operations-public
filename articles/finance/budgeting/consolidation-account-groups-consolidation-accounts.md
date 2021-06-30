@@ -33,8 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic provides information about consolidation account groups and additional consolidation accounts, and explains how they are used in Microsoft Dynamics 365 Finance.
 
-Consolidation account groups
-----------------------------
+## Consolidation account groups
 
 Consolidation account groups let you create groups of the accounts that you want to use to consolidate data. Most often, a consolidation account group represents a government-mandated chart of accounts or maps accounts to a group that is defined by the company's headquarters. You can find consolidation account groups in the **Setup** area of the **Consolidations** module. When you add a new group, you enter a unique identifier for the account group and a name.
 

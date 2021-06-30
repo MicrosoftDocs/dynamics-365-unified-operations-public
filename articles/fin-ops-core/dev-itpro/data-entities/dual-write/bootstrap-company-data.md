@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-If have an existing Microsoft Dataverse instance or Finance and Operations app instance that has business data, you might want to enable a dual-write connection against it. In this case, you must initialize the Dataverse data or Finance and Operations app data with company information before you enable dual-write. This initialization process is sometimes referred to as *bootstrapping*.
+If you have an existing Microsoft Dataverse instance or Finance and Operations app instance that has business data, you might want to enable a dual-write connection against it. In this case, you must initialize the Dataverse data or Finance and Operations app data with company information before you enable dual-write. This initialization process is sometimes referred to as *bootstrapping*.
 
 This topic includes sample scenarios that explain how to use [Azure Data Factory](/azure/data-factory/introduction) to initialize data in Dataverse tables for dual-write. It doesn't cover all tables, error handling scenarios, or lookups. Use this topic and template as a reference to set up your own Azure Data Factory pipeline to import data into Dataverse or update data in Dataverse.
 
@@ -54,9 +54,12 @@ The following illustration shows the workflow.
 This scenario is based on the following assumptions:
 
 - The source data is in the Finance and Operations app.
-- If an account exists in Dataverse, but it doesn't exist in the Finance and Operations app, it won't be initialized as part of this flow.
-- All account records in the customer engagement apps have a natural key (account number) that matches the Finance and Operations natural key (**CustomerAccount**).
+- If an account exists in Dataverse, but it doesn't exist in the Finance and Operations app, it won't be initialized as part of this flow. Use DIXF or [initial sync](initial-sync-guidance.md) functionality based on the amount of data stored in Dataverse.
+- All account records in the customer engagement apps have a natural key (account number) that matches the Finance and Operations natural key (**CustomerAccount**). 
 - Rows have a one-to-one (1:1) mapping across the apps.
+
+> [!NOTE]
+> In both Finance and Operations apps and Dataverse, When a customer record is created, Party record gets created implicitly. 
 
 ## Prerequisites
 

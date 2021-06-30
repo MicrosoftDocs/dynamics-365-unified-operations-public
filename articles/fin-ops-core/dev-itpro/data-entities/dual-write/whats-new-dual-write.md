@@ -26,6 +26,24 @@ Check out the latest information about dual-write features and changes in the [r
 + [Data in Dataverse – phase 1 & 2](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
 + [Finance and Operations data in Dataverse – Phase 3](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
 
+## June 2021 release
+
+The June 2021 hotfix release of [Dual-write application orchestration solution version 2.2.2.98](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.27](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
+
+This release contains the features and bug fixes listed in the following table.
+
+| Feature | Description |Status |
+|------|---------|-------|
+| Bug fix | Implements rollback of transactions that exceed a 2-minute time limit. | General availability |
+| Bug fix | Fixes processing of datetime fields during a catch-up sync. | General availability |
+| Tracing | Limits nonessential plugin trace logs for medium-size transactions (5 or more records). | General availability |
+| Bug fix | Added storage and tracking dimension group lookup fields to the **Shared Product Details** table. Added these lookup fields to the **Released products V2" -> msdyn_sharedproductdetails** dual-write map. | General availability |
+| Bug fix | In a sales order, when you select an existing product, the **Sales product category** value defaults to a value that comes from the **Product Category Assignments** table. But when the defaulted value is not part of sales hierarchy, the line-item addition throws an error message. To prevent the error and allow assignment inside finance and operations apps, the **sales product category** field can be left blank.  | General availability |
+| Bug fix | In a sales order, when you select an existing product, the **Sales Product Category** is read-only. It is editable when the product is set to write-in. | General availability |
+| Bug fix | The **Total Tax** field in a sales quotation and sales order are read-only. When the **Price per unit** field is changed in the sales quotation line or sales order line in finance and operations apps, it must sync back to the respective sales quotation or sales order line in customer engagement apps.  | General availability |
+| Bug fix | Updating the **Warehouse name** field in finance and operations apps caused the **Name** field in Dataverse to be blanked out. | General availability |
+| Bug fix | Localization fixes for Ukraine. | General availability |
+
 ## May 2021 release
 
 The May 2021 hotfix release of [Dual-write application orchestration solution version 2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.26](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
@@ -108,6 +126,9 @@ This release contains the features and bug fixes listed in the following table.
 |------|---------|-------|
 | [Commerce price engine for sales quotations](commerce-pricing.md) | Get pricing for sales quotations using commerce price engine. | General availability |
 | [Notes integration](notes-integration.md) | Notes are integrated between customer engagement apps and Finance and Operations applications for customers, vendors, sales orders, and purchase orders.  | General availability |
+
+> [!IMPORTANT]
+> If you don't need notes integration, do not install or upgrade to Dual-write application orchestration solution version 2.2.2.23 or later. If you install the update, you won't be able to uninstall the notes feature. 
 
 ## January 2021 release
 

@@ -78,8 +78,7 @@ The following steps in the production life cycle can occur for all order types o
 12. **Period closure** – Some cost accounting principles, such as periodic average, back-flush costing, FIFO, or LIFO, require periodic activities to close the inventory or financial period. Typically, the system tries to report all material and resource consumption, and also corrections of inventory and scrap, before the periods are closed. This reporting is typically done by using inventory movement journals or adjustment journals. The goal is to assess the economic performance of operating units per period. In some cases, when long-running production orders are used that span the financial reporting periods, production journals are used to report the production progress and resource consumption by the end of the period.
 
 
-Additional resources
---------
+## Additional resources
 
 [Production feedback](production-feedback.md)
 

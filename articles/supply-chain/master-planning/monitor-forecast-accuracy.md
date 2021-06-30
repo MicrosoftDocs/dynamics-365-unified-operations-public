@@ -41,8 +41,7 @@ Supply Chain Management calculates the following types of forecast accuracy:
 > If you use the Demand forecasting Microsoft Azure Machine Learning, the calculation of internal model accuracy is based on the test data set. To specify the size of the test data set, set the **TEST\_SET\_SIZE\_PERCENT** parameter on the **Demand forecasting parameters** page. For example, if you set the value to **20**, the last 20 percent of the historical data will be used to calculate the internal model accuracy.
 
 
-Additional resources
---------
+## Additional resources
 
 [Authorize an adjusted forecast](authorize-adjusted-forecast.md)
 

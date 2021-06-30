@@ -42,7 +42,7 @@ This option is much easier to manage, because if you want to change from one ver
 
 Most organizations choose this option because it provides version and change management, but it doesn't add the extra overhead of tracking the version in each transaction, in inventory, and during master planning.
 
-## Which fields are copied to the released item template?
+## Which fields are copied from the released item template?
 
 When an engineering company creates an engineering product, that product is created as a released product in the engineering company. The released product that is created is based on the selected *released item template*. (The released item template is itself an existing released product.) The released item template is also used when the product is released to an operational company. In each case, the released item template defines most of the field values for the released product, and those values come from the associated **Released product details** page.
 

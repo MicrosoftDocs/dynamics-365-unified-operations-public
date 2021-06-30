@@ -38,8 +38,7 @@ Companies in the Czech Republic must issue credit notes for cash discounts that 
 -   Value-added tax (VAT) base and amount from the original document
 -   Reason for a correction
 
-Prerequisites
--------------
+## Prerequisites
 
 ### Set up number sequences
 

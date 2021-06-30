@@ -36,8 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic explains how to extend Hardware Station to add support for new devices and new device types for existing devices.
 
-Hardware Station overview
---------------------------------
+## Hardware Station overview
 
 Hardware Station is used by Modern POS and Cloud POS to connect to hardware peripherals, such as printers, cash drawers, scanners, and payment terminals. 
 

@@ -62,8 +62,7 @@ If you are planning to firm many orders at the same time, parallelizing the run 
 > [!NOTE]
 > The option for **Parallelize firming** is only shown when you have more than one planned order selected for firming.
 
-Additional resources
---------
+## Additional resources
 
 [Master plans overview](master-plans.md)
 

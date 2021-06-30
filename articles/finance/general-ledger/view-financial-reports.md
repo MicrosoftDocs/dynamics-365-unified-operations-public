@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to view and explore financial reports. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
 
-Financial reporting overview
-----------------------------
+## Financial reporting overview
 
 ## Open a financial report
 To open a report, select the report name. The first time that a report is opened, it’s automatically generated for the previous month. For example, if you open a report for the first time in August 2015, the report is generated for July 31, 2015. After a report is opened, you can start exploring it by drilling down on specific pieces of data and changing report options.
@@ -80,8 +79,7 @@ After you've finished setting the print options, click **Print** to continue and
 ## Export a financial report
 To export a financial report, on the Action Pane, click **Export**. The report is exported to Microsoft Excel, and your browser prompts you to open or save the exported file. The export settings that are defined in the report design are applied to the exported report.    
 
-Additional resources
---------
+## Additional resources
 
 [Financial reporting](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md)
 

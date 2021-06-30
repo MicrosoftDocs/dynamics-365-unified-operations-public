@@ -104,8 +104,7 @@ The following table shows how the order entry deadlines for sites A and B are co
 
 **Note:** If adjustment for daylight saving time is in effect, the order entry deadlines are adjusted accordingly.
 
-Additional resources
---------
+## Additional resources
 
 [Delivery schedules](delivery-schedules.md)
 

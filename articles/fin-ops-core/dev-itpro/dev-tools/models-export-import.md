@@ -21,8 +21,7 @@ ms.dyn365.ops.version: AX 7.0.0
 Model files let you distribute models to customers and partners, and can be installed in development environments. They are key components of a Lifecycle Services (LCS) solution. Model files contain a model descriptor file, metadata, source code, and referenced .NET assemblies (when applicable). This article describes how to export a model into a model file, install a model file, and delete a model in a development environment.
 
 
-Export a model into a model file for distribution
--------------------------------------------------
+## Export a model into a model file for distribution
 
 To export an existing model into a model file, use the ModelUtil.exe tool and the **-export** directive. This tool is located in the packages bin folder (typically, c:\\packages\\bin or i:\\AosService\\PackagesLocalDirectory\\bin).
 

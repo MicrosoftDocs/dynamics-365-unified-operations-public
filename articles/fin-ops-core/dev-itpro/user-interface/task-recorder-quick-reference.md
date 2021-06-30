@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides a quick reference sheet that explains what each button in the Task recorder menus does.
 
-Main menu
----------
+## Main menu
 
 <table>
 <colgroup>

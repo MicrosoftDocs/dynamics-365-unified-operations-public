@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 A fund is a self-balancing set of financial books that is used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements. Public-sector organizations use funds to demonstrate their fiscal accountability.
 
-What General ledger parameters should be set for funds?
--------------------------------------------------------
+## What General ledger parameters should be set for funds?
 
 To learn about the General ledger parameters required for funds, see [General ledger in the public sector](general-ledger-public-sector.md).
 

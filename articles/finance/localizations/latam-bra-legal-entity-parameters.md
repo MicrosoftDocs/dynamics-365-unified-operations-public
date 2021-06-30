@@ -33,8 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 To collect and submit tax statements that report on performance, a Brazilian legal entity requires specific fiscal information. This topic explains how to set the parameters to specify this information.
 
-Brazilian legal entity overview
--------------------------------
+## Brazilian legal entity overview
 
 A Brazilian legal entity is organized by fiscal establishments that function in the same way and are in the same operations of a branch. There is a primary fiscal establishment that is considered the Matriz, and related fiscal establishments that are located in other states or outside Brazil. The following illustration shows the structure of a Brazilian legal entity and related fiscal establishments. 
 

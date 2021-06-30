@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides answers to questions that you might have when you configure position budgeting. It addresses frequently asked questions about how to create budget cost elements, compensation groups, and compensation grids. 
 
-Why can’t I find the forecast position page in Human resources?
----------------------------------------------------------------
+## Why can’t I find the forecast position page in Human resources?
 
 Forecast positions have been moved to Budgeting.
 

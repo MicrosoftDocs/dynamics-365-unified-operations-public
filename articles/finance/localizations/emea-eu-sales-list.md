@@ -31,8 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about European Union (EU) Sales list reporting.
 
-EU Sales list reporting
------------------------
+## EU Sales list reporting
 
 A supplier that is performing intra-community supplies of goods or services to businesses that are established within the European Union (EU) must submit a Declaration of Intra-Community Supplies (EU Sales list, or ESL). In general, the ESL must be submitted to tax authorities no later than the last day of the month after the calendar period that the ESL covers. The supplier must state its value-added tax (VAT) identification number on the ESL and must also state, by customer, the following information:
 

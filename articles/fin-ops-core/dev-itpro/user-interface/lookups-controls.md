@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article discusses how to enable lookup behavior on controls. It also discusses how to create multi-select lookups and outlines lookup scenarios that are no longer supported.
 
-Enabling lookup behavior in controls
-------------------------------------
+## Enabling lookup behavior in controls
 
 ### Controls bound to an Extended Data Type
 

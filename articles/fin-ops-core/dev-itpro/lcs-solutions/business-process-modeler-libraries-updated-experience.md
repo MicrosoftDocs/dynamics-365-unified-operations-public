@@ -31,8 +31,7 @@ ms.author: omarc
 
 This topic explains how to create and work with Business process modeler (BPM) libraries.
 
-Create a business process library
----------------------------------
+## Create a business process library
 
 There are two ways to create a BPM library. You can create a new library that has no lines or task recordings, or you can copy an existing library.
 
@@ -138,8 +137,7 @@ Task recordings can be played as task guides. Task guides are used to guide user
 6.  When you've finished, select **Stop Task guide**.
 
 
-Additional resources
---------
+## Additional resources
 
 [Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)
 

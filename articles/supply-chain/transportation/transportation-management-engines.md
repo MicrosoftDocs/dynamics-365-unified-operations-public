@@ -48,8 +48,7 @@ The following table shows the transportation management engines that are availab
 | **Freight bill type**            | Standardizes the freight invoice and the freight bill lines and is used for automatic freight bill matching.                                                                                                                                                                                                                |
 
 
-What engines must be configured to rate a shipment?
----------------------------------------------------
+## What engines must be configured to rate a shipment?
 
 To rate a shipment using a specific carrier, you must configure multiple transportation management engines. The **Rate engine** is required, but other transportation management engines may be required to support the **Rate engine**. For example, the **Rate engine** can be used to retrieve data from the **Mileage engine** to calculate the rate based on mileage between the source and the destination.
 
@@ -67,8 +66,7 @@ In most cases, you can click the **Parameters** button in the transportation man
 |  <em>MileageEngineCode</em>  |                       Mileage engine code that identifies the mileage engine record in the database.                        |
 | <em>ApportionmentEngine</em> |                        Generic engine code that identifies the apportionment engine in the database.                        |
 
-How is metadata used in transportation management engines?
-----------------------------------------------------------
+## How is metadata used in transportation management engines?
 
 Transportation management engines that rely on data that is defined in Supply Chain Management can use different data schemas. The transportation management system enables different transportation management engines to use the same generic physical database tables. To make sure that run-time interpretation of engine data is correct, you can define metadata for the database tables. This reduces the cost of building new transportation management engines because additional table and form structures are not required in Operations.
 

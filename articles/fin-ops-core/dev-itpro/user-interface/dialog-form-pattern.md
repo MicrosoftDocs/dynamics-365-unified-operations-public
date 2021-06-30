@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about the Dialog form pattern. A dialog box represents an action or activity that users can explicitly commit or cancel. It's used when a user initiates a specific task or process, and the system requires user input about how or whether to proceed.
 
-Usage
------
+## Usage
 
 A dialog box represents an action or activity that users can explicitly commit or cancel. It's used when a user initiates a specific task or process, and the system requires user input about how or whether to proceed. Dialogs are modal and require that users interact with the controls in the dialog before they can return to the parent page. Dialogs also can have multiple sizes. Selection of a dialog size is subjective, and will vary, depending on the form elements that you've modeled on the dialog. The sizes are as follows:
 
@@ -258,8 +257,6 @@ This section will have answers to frequently asked questions that are related to
 | Nested field groups | No nested field groups that have a mixed layout direction (matrix or tabular layout)                                   | Multiple-column layout                  | Multiple-column layout                    | Yes                                                                  |                                                                                                                                                                                                          |
 | Custom controls     | Yes                                                                                                                    | Yes                                     | Yes                                       | Yes                                                                  |                                                                                                                                                                                                          |
 | Grid                | Yes, but no horizontal scrolling                                                                                       | Yes, but no horizontal scrolling        | Yes, but no horizontal scrolling          | Yes                                                                  | The maximum number of columns depends on the width of the fields in the column. Therefore, the width is defined by *x* × 100% field size.                                                                |
-
-### 
 
 ### AX 2012 content
 

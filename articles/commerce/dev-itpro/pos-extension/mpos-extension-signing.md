@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 This topic explains how to code sign a Modern POS (MSIX) extension package. This topic applies to the Retail SDK version 10.0.18 and later.
 
-All MPOS extension .appx files must be signed by a code signing certificate. We recommend that you use a certificate from a trusted authority for production. For information on signing a Universal Windows Platform (UWP) app, see [Create a certificate for package signing](https://docs.microsoft.com/windows/uwp/packaging/create-certificate-package-signing).
+All MPOS extension .appx files must be signed by a code signing certificate. We recommend that you use a certificate from a trusted authority for production. For information on signing a Universal Windows Platform (UWP) app, see [Create a certificate for package signing](/windows/uwp/packaging/create-certificate-package-signing).
 
 To include your certificate for signing in the ModernPos JavaScript project file, edit the .proj file and include the node for certificate signing:
 
@@ -32,8 +32,8 @@ You can also download and include a cert from secured location/secure task durin
 
 For information about code signing Universal Windows App packages, see these links:
 
-+ [Configure the Build solution build task](https://docs.microsoft.com/windows/uwp/packaging/auto-build-package-uwp-apps#configure-the-build-solution-build-task)
-+ [Create a certificate for package signing](https://docs.microsoft.com/windows/msix/package/create-certificate-package-signing)
++ [Configure the Build solution build task](/windows/uwp/packaging/auto-build-package-uwp-apps#configure-the-build-solution-build-task)
++ [Create a certificate for package signing](/windows/msix/package/create-certificate-package-signing)
 
 The sample in GitHub generates a self-signed test certificate during build for development purposes only. This certificate is only available to unblock development scenarios.
 

@@ -40,8 +40,6 @@ Complete the steps in this topic if after posting tax there are records missing 
 
 ## Check tax configuration
 
-To check the tax configuration, see [Open the designer for the current tax configuration](apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md).  
-
 1. Check the posting profile of the expected measure. Select the posting type in the **Debit/Credit** column, and then select **Edit**. 
 2. Check the value of tax accounting provider.
 

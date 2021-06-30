@@ -90,8 +90,7 @@ You can open the Kanban schedule board by using the menu item on the following p
 -   **Production flow visualization** page
 
 
-Additional resources
---------
+## Additional resources
 
 [Kanban job scheduling for lean manufacturing](lean-manufacturing-kanban-job-scheduling.md)
 

@@ -19,8 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the reflection run-time functions.
 
-classIdGet
-----------
+## classIdGet
 
 Retrieves the numeric identifier (the class ID) of the class that the object that is initialized belongs to.
 

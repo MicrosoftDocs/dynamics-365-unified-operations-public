@@ -43,38 +43,9 @@ This topic explains how to log events to [Customer Application Insights](/azure/
 
 ## Set up and configure Application Insights in Azure
 
-1. Open the [Azure portal](https://portal.azure.com), and sign in by using your Azure subscription credentials.
-2. Select **Create a resource**.
+Follow the steps in [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource) to generate the instrumentation key or the connection string.
 
-    > [!div class="mx-imgBorder"]
-    > ![Create a resource button](media/NewResource.png)
-
-3. Search for **Application Insights**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Search field](media/Search.png)
-
-4. Click **Create** in the Application Insights page.
-
-5. On the **Basic** tab, set the **Subscription**, **Resource group**, **Name**, and **Region** fields.
-
-    > [!div class="mx-imgBorder"]
-    > ![Basic tab](media/CreateNew.png)
-
-6. On the **Review + create** tab, select **Create**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Create button](media/CreateConf.png)
-
-7. Wait for the deployment to be completed.
-
-    > [!div class="mx-imgBorder"]
-    > ![Resource created](media/Completed.png)
-
-8. Go to the resource, and copy the **Instrumentation Key** value. You will use this value in the CRT code or CRT extension configuration file.
-
-    > [!div class="mx-imgBorder"]
-    > ![Instrumentation Key field](media/Resource.png)
+Copy the instrumentation key, which you will use in the CRT. For recent updates and new recommended options to log events, see [Azure Application Insights documentation.](/azure/azure-monitor/app/app-insights-overview)
 
 ## Extend the CRT extension project to log events to Application Insights
 
@@ -83,7 +54,7 @@ This topic explains how to log events to [Customer Application Insights](/azure/
     > [!div class="mx-imgBorder"]
     > ![New Contoso.Diagnostic project](media/VSProject.png)
 
-2. Add references to the following libraries:
+2. Add the NuGet package references to the following libraries:
 
     + Microsoft.ApplicationInsights
     + Netstandard
@@ -203,10 +174,13 @@ For detailed information about how to build deployable packages, see [Create dep
 4. Run this command to install the **npm** package for the JavaScript Application Insights package.
 
     ```console run the
-    npm i --save @microsoft/applicationinsights-web
+    npm i --save @microsoft/applicationinsights-web@2.5.8
     ```
+ 
+ > [!NOTE]
+ > The sample documented here is based on applicationinsights-web npm package version 2.5.8. The sample may not work as-is in the updated applicationinsights-web package.
 
-    After the package is installed, the **POS/Extensions/Libraries** folder should contain the **node_modules** folder. The **node_modules** folder contains the Application Insights library files.
+After the package is installed, the **POS/Extensions/Libraries** folder should contain the **node_modules** folder. The **node_modules** folder contains the Application Insights library files.
 
 5. Check that the file **POS/Extensions/Libraries/node_modules/@microsoft/applicationinsights-web/dist/applicationinsights-web.js** exists in the library.
 

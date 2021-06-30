@@ -35,8 +35,7 @@ ms.dyn365.ops.version: Platform update 4
 
 Most pages include an Open in Microsoft Office menu. This topics provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
 
-Overview
---------
+## Overview
 
 The **Open in Microsoft Office** menu button (**Open in Office** menu) is a system-defined button that appears on pages. The **Open in Office** menu contains menu items that let you export data to various Office products, such as Microsoft Excel and Microsoft Word. The following table describes the menu items on the **Open in Office** menu.
 

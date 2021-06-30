@@ -44,37 +44,52 @@ Regulatory updates that are released as part of the monthly updated are indicate
 For the latest regulatory update plans, refer to the following table.   
 
 |Country|Release date|Release version|Regulatory update|
-|--------------------|---------------|-------|-------|
-|      Austria         |   September 2020      | 10.0.15      |   VAT declaration format U30 has been updated for 2020 reporting   |
-|      Belgium         |   December 2020      | 10.0.16      |   Belgium: “Export ledger transactions” report performance improvement in Dynamics 365 Finance   |   
-|      Brazil         |   November 2020      | 10.0.15HF      |   SPED Fiscal ICMS/IPI - Record C176 - RS state   |
-|      Brazil         |   October 2020      | 10.0.16, 10.0.15HF      |   NF-e NT2019.001 v1.51  - Adoption of the validation rules upon Benefit code by Distrito Federal   |
-|      Brazil         |   October 2020, November 2020      | 10.0.16, 10.0.15HF      |   SPED Fiscal - Layout 015   |
-|      Brazil         |   October 2020      | 10.0.16      |   DRCST declaration SC - SEF 262/2020   |
-|      Brazil         |   October 2020      | 10.0.16      |   SPED Fiscal ICMS / IPI record C176   |
-|      Brazil         |   December 2020      | 10.0.17, 10.0.16HF, 10.0.15HF      |   NF-e NT2020.006  - Identification of the digital platform intermediary (Layout and validation rules updates)   |
-|      Brazil         |   March 2021         | 10.0.17, 10.0.18, 10.0.19         |    SPED REINF layout 1.5.1
-|      Europe        |   January 2021       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit - Northern Ireland Protocol impact to Intra-community trade reporting in EU countries  |
-|      Germany        |   January 2021       | 10.0.16HF      |   ELSTER UstVA VAT advance notification format was extended with two new boxes 37,50 for unrecoverable debts writing off  |
+|--------------------|---------------|-------|-------| 
+|      Brazil         |   May 2021, December 2020      | 10.0.20, 10.0.19, 10.0.17      |   NF-e NT2020.006  - Identification of the digital platform intermediary (Layout and validation rules updates)   |
+|      Brazil         |   March 2021         | 10.0.19         |    SPED REINF layout 1.5.1  |
+|      Brazil         |   February 2021         | 10.0.18         |    SPED Fiscal 015 - RS rules |
+|      Brazil         |   March 2021         | 10.0.17 HF       |    NFS-e Brazilian service (city) electronic invoice  |
+|      Brazil         |   April 2021         | 10.0.20        |    SPED ECD Layout 9  |
+|      Brazil         |   May 2021         | 10.0.20         |    SPED Contributions - Version Guide 1.34  |
+|      Egypt         |   February 2021         | 10.0.17         |    VAT return form and reports  |
+|      Egypt        |   February 2021         | 10.0.17         |    Invoice layout configuration  |
+|      Egypt         |   February 2021         | 10.0.17         |    Withholding declaration form 41  |
+|      Egypt         |   February 2021         | 10.0.17         |    Withholding declaration form 11  |
+|      Egypt         |   February 2021         | 10.0.17         |    References to original invoices in creditnotes  |
+|      Europe        |   January 2021       | 10.0.17      |   Brexit - Northern Ireland Protocol impact to Intra-community trade reporting in EU countries  |
+|      France        |   March 2021       | 10.0.18      |   Retail - Certified POS system update - Dynamics 365 Commerce  |
+|      France        |   April 2021       | 10.0.20      |   French data archiving export (FEC) enhancement  |
 |      Germany        |   January 2021       | 10.0.17      |   Changes in ELSTER VAT advance notification XML structure (UstVA)  |
-|      Global        |   January 2021       | 10.0.16      |   Enable reverse charge mechanism for VAT/GST scheme  |
-|      India         |   December 2020      | 10.0.16, HF, 10.0.15HF      |   TCS on Sales of Goods Section 206 9(1H) change based on CBDT press release  |
+|      Germany        |   March 2021       | 10.0.19      |   GDPDU extensions for Fixed Assets table and transactions  |
+|      Germany        |   April 2021       | 10.0.20HF      |   Changes in E-invoicing format (xRechnung) in Germany since 2021  |
+|      Global        |   January 2021       | 10.0.17      |   Withholding tax on line level  |
+|      Global        |   January 2021       | 10.0.17      |   Withholding tax payment  |
+|      Global        |   January 2021       | 10.0.17      |   Withholding tax in sales orders  |
+|      Global        |   January 2021       | 10.0.17      |   Withholding tax threshold on invoice amount  |
+|      Global        |   January 2021       | 10.0.17      |   Validation of invoice date issue after packing slip posted made available for all countries  |
+|      Hungary        |   February 2021       | 10.0.17HF, 10.0.18      |   Online invoicing system v.3.0  |
+|      India         |   February 2021      | 10.0.17HF, 10.0.18      |   GST e-invoices: eWay Bill information  |
+|      India         |   March 2021      | 10.0.17HF, 10.0.18HF, 10.0.19      |   GST e-invoices: Export orders, Deemed export, SEZ  |
+|      India         |   March 2021      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Dynamics QR Code on B2C invoice  |
+|      Italy         |   March 2021      | 10.0.19      |   Invoices communication (Esterometro) format changes v.2.1.1  |
+|      Italy        |   May 2021      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Retail - Fiscal printer integration sample update to support XML RT 2.0  |
+|      Italy         |   March 2021      | 10.0.19      |   Retail - Enable retail-specific invoices violiting chronological posting  |
+|      Italy         |   February 2021      | 10.0.19      |   Unique certification - 2021  |
 |      Latvia         |   December 2020      | 10.0.17      |   Intrastat format is updated starting from 2021  |
-|      Mexico         |   December 2020      | 10.0.17, 10.0.16, 10.0.15      |   Attribute "Monto" Update |
-|      Netherlands         |   October 2020      | 10.0.16     |   Intrastat format is updated starting from 2021 |
-|      Netherlands         |   December 2020      | 10.0.167     |   New version of Dutch taxonomy NT15 |
-|      Poland          |   September 2020     | 10.0.15     |   Voluntarily split payment enhancements |
-|      Poland          |   November 2020     | 10.0.16, 10.0.15     |   JPK-V7M (VDEK) - Sales document type FP and RO for Retail transactions |
-|      Poland          |   September 2020     | 10.0.15     |   Poland: JPK-V7M (VDEK) - unlock possibility to run the report generation by parts |
-|      Poland          |   October 2020     | 10.0.16     |   JPK-V7M (VDEK) report - 'Voluntarily split payment' parameter uptake |
-|      Poland          |   November 2020     | 10.0.16, 10.0.15HF     |   Retail - Issue invoice for retail customer per request |
-|      Poland          |   January 2021     | 10.0.17, 10.0.16HF , 10.0.15HF     |   Poland: JPK_KR (SAF Accounting books) clarifications, effective from January 2021 |
-|      Russia          |   November 2020     | 10.0.16    |   VAT declaration format is updated to version 5.07 starting from the reporting for Q4 2020|
-|      Russia          |   October 2020     | 10.0.16    |   Changes in PBU18 for accounting reporting for 2020|
+|      Lithuania         |   March 2021      | 10.0.18      |   SAF-T report version 2.01  |
+|      Mexico         |   December 2020      | 10.0.17      |   Attribute "Monto" Update |
+|      Netherlands         |   December 2020      | 10.0.17     |   New version of Dutch taxonomy NT15 |
+|      Poland          |   January 2021     | 10.0.17     |   Poland: JPK_KR (SAF Accounting books) clarifications, effective from January 2021 |
 |      Russia          |   January 2021     | 10.0.17    |   A new format of the property tax declaration (technical version 5.07 instead of 5.06) for the 2020 reporting|
+|      Russia          |   March 2021     | 10.0.19    |   The 2020 property tax declaration will have to indicate the average annual value of movable fixed assets|
+|      Russia          |   March 2021     | 10.0.19HF    |   Profit tax declaration version 5.09 for 2020 reporting|
+|      Russia          |   March 2021     | 10.0.19    |   Government decree N 2200 21.12.2020 application 4 new forma for transport invoice is required|
 |      Spain          |   November 2020     | 10.0.17    |   SII update validation and errors v.2.1(bis) from January 1, 2021|
-|      United Kingdom         |   December 2020     | 10.0.17, 10.0.16, 10.0.15    |   Company tax registration in customer invoices (Brexit - Northern Ireland Protocol)|
-|      United Kingdom          |   December 2020     | 10.0.17, 10.0.16HF. 10.0.15HF    |   Brexit - Northern Ireland Protocol impact on companies trading goods in both GB and NI locations|
+|      Thailand          |   February 2021     | 10.0.17HF    |   Withholding form Por Ngor Dor 53, 3 and 2 |
+|      United Arab Emirates   |   May 2021     | 10.0.20    |   Posting payment journal with postdated checks to bank account |
+|      United Kingdom         |   December 2020     | 10.0.17    |   Company tax registration in customer invoices (Brexit - Northern Ireland Protocol)|
+|      United Kingdom          |   December 2020     | 10.0.17    |   Brexit - Northern Ireland Protocol impact on companies trading goods in both GB and NI locations|
+|      United Kingdom          |   March 2021     | 10.0.18    |   MTD VAT> wording changes in preview printing layout (boxes 2,8,9) 2021|
 
 
 

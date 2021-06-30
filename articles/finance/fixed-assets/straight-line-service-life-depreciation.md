@@ -70,7 +70,7 @@ If you select Fiscal, the following options are available in the Period frequenc
 ## Example: Straight line depreciation of an unchanged fixed asset
 Suppose that a fixed asset has the following characteristics.
 
-|                     |        |
+| Characteristic      | Value  |
 |---------------------|--------|
 | Acquisition cost    | 11,000 |
 | Salvage value       | 1,000  |

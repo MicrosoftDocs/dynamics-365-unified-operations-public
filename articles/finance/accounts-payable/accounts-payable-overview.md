@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes the pages that you use to set up basic and optional functionality for Accounts payable. It also describes setup steps that you must complete before you start to set up Accounts payable.
 
-Prerequisites for Accounts payable setup
-----------------------------------------
+## Prerequisites for Accounts payable setup
 
 Before you can set up Accounts payable, you must complete the following setup:
 

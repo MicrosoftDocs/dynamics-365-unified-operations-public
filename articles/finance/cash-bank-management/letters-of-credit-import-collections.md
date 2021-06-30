@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides general information about letters of credit and import collections. Both types of bank document are often used for the purchase and sale of goods across international borders.
 
-Letters of credit
------------------
+## Letters of credit
 
 Letters of credit are used for international transactions and help guarantee that payments will be made. A letter of credit is an agreement that is issued by a bank, in which the bank agrees to guarantee payment on behalf of a buyer, provided that the terms of the agreement between the buyer and seller are met. A letter of credit is also referred to as a documentary credit (DC).
 

@@ -214,8 +214,6 @@ On the related voucher for cash discount, the financial dimensions will be used 
 | ARP-00001   | 403300-002-023- | Customer cash discount | 2.00      |            |
 | ARP-00001   | 130100-002-     | Customer balance       |           | 2.00       |
 
-### 
-
 ## One voucher with a netting for multiple customers and vendors
 Netting can be useful when an organization purchases and sells to the same company. Rather than paying the vendor invoices and waiting to receive payment for the customer invoices, the vendor and customer invoices are netted. The netting transaction is settled against the outstanding balances. 
 

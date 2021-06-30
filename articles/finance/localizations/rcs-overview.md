@@ -4,7 +4,7 @@
 title: Regulatory Configuration Service
 description: This topic provides an overview of the capabilities of Regulatory Configuration Service (RCS) and explains how to access the service.
 author: JaneA07
-ms.date: 04/07/2021
+ms.date: 06/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -63,9 +63,19 @@ RCS is generally available in the following regions:
 
 For a complete list of regions, see [Dynamics 365 and Power Platform: Availability, data location, language, and localization](https://aka.ms/dynamics_365_international_availability_deck).
 
+## RCS default company
+
+Design time functionality that is used in RCS is shared across all companies. There is no company-specific functionality. Therefore, we recommend that you use one company, **DAT**, with your RCS environment.
+
+However, in some scenarios, you might want to make ER formats use parameters that are related to a specific legal entity. In these scenarios only, you should use the default company switcher. For an example, see [Configure ER format to use parameters that are specified per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md).
+
 ## Related RCS documentation
 
-For more information about related components, see the following documentation:
+For more information about related components, see the following topics:
+
+- **RCS:**
+
+    - [Create ER configurations in RCS and upload them to the Global repository](rcs-global-repo-upload.md)
 
 - **Global repository:**
 
@@ -74,7 +84,20 @@ For more information about related components, see the following documentation:
     - [Enhanced filtering in Global repo](enhanced-filtering-global-repo.md)
     - [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md)
     - [Discontinuing configurations in Global repo](discontinuing-configurations-rcs-global-repo.md)
+    - [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) storage deprecation](rcs-lcs-repo-dep-faq.md)
 
 - **Globalization feature:**
 
     - [Regulatory Configuration Service (RCS) - Globalization feature](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
+
+
+## Troubleshooting RCS sign-up
+
+When you sign up for RCS from the service page, you might encounter an issue that is related to Azure Active Directory (Azure AD). The error message that you receive indicates that sign-up for RCS is currently turned off and must be turned on before you can complete the sign-up process.
+
+![RCS sign-up error message](media/01_RCSSignUpError.jpg)
+
+The issue occurs because you're blocked from signing up for ad-hoc subscriptions, and the `AllowAdHocSubscriptions` property must be enabled in your tenant. 
+
+- If your IT department manages your organization's Azure tenants, contact that department to report the issue.
+- If you're responsible for managing your Azure tenants, you can fix the issues by following the steps in [What is self-service sign-up for Azure Active Directory](/azure/active-directory/enterprise-users/directory-self-service-signup#how-do-i-control-self-service-settings).

@@ -128,8 +128,7 @@ You can save the current values as default values. There are two options:
 -   Set as default for everyone
 
 
-Additional resources
---------
+## Additional resources
 
 [Operations scheduling](operations-scheduling.md)
 

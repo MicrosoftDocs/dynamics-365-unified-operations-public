@@ -33,8 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes sales complementary invoice for the Brazilian localization.
 
-Overview
---------
+## Overview
 
 According to the fiscal regulations in Brazil, a specific fiscal document that is known as a complementary invoice (Nota fiscal complementar) is issued or received for correction purposes. For example, if the prices of goods or services from the original invoice were incorrectly registered, a complementary invoice is required in order to fix the error. Complementary invoices apply only if the difference is positive. In other words, they apply only if the current prices or taxes amounts are more than original prices or taxes amounts. Because fiscal invoices of this type are considered complements of the original invoices, the original invoices don’t have to be canceled. Companies are obligated to issue or receive complementary invoice for the following reasons:
 

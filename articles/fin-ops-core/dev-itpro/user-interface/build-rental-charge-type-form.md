@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In this lab you’ll create a Simple List form. A Simple List form can show reference or secondary data that has six or fewer fields. For example, the form that you create will list and describe the types of rental charges. 
 
-Prerequisites
--------------
+## Prerequisites
 
 For this tutorial, you’ll need to access the environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Instances](../dev-tools/access-instances.md).
 

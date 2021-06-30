@@ -4,7 +4,7 @@
 title: Improve the prediction model (preview)
 description: This topic describes features that you can use to improve the performance of prediction models.
 author: ShivamPandey-msft
-ms.date: 05/28/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -79,12 +79,8 @@ The following field should not be selected for training:
 
 ## Filters
 
-The filters don't currently support the Customer payment predictor scenario. Therefore, select **Skip this step**, and continue to the summary page.
+You can filter the invoices that are used for training by setting filter criteria for fields on the invoice or in the customer tables. For example, you can set a threshold to include only invoices where the total equals or exceeds a specific amount. Alternatively, you can exclude invoices that are associated with customers in a specific customer group.
 
-[![Focus model with filters](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
-
-#### Privacy notice
-Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
-
+For more information on filtering your data, see [Create a prediction model](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

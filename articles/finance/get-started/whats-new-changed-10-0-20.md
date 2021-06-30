@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance 10.0.20 (July 2021)
+title: What's new or changed in Dynamics 365 Finance 10.0.20 (August 2021)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.20 preview release.
 author: roschlom
 ms.date: 05/28/2021
@@ -27,16 +27,17 @@ ms.dyn365.ops.version: 10.0.20
 
 ---
 
-# Preview features in Dynamics 365 Finance 10.0.20 (July 2021)
+# Preview features in Dynamics 365 Finance 10.0.20 (August 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.20. This version has a build number of 10.0.886 and is available as follows:
 
-- **Preview release:** May 2021
-- **General availability (self-update):** June 2021
-- **General availability (auto-update):** July 2021
+- **Preview of release:** May 2021
+- **General availability of release (self-update):** July 2021
+- **General availability of release (auto-update):** July 2021
+
 
 ## Features included in this release
 

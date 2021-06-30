@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes the fixed assets functionality that is available for public sector. 
 
-What do I need to know about disposing of fixed assets?
--------------------------------------------------------
+## What do I need to know about disposing of fixed assets?
 
 Public sector organizations can use scrap and sales proposals to dispose of more than one fixed asset at a time.
 

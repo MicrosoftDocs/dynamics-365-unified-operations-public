@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.19 of Finance and Operations apps (June 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.19 of Finance and Operations apps.
 author: sericks007
-ms.date: 04/22/2021
+ms.date: 06/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 10.0.19
 # Platform updates for version 10.0.19 of Finance and Operations apps (June 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic lists the features that are included in the platform updates for version 10.0.19 of Finance and Operations apps. This version has a build number of 7.0.6009 and is available on the following schedule:
 
@@ -41,9 +40,9 @@ This topic lists the features that are included in the platform updates for vers
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
--  Pass legal entity context to embedded canvas apps<br> - This feature improves the integration of Finance and Operations apps with Power Apps by automatically passing the user's current legal entity, in addition to the previously selected context field, to any embedded canvas app. For more information, see [Embed canvas apps from Power Apps](../../fin-ops/get-started/embed-power-apps.md).
+-  [Pass legal entity context to embedded canvas apps](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/pass-legal-entity-context-embedded-canvas-apps)<br>For more information, see [Embed canvas apps from Power Apps](../../fin-ops/get-started/embed-power-apps.md).
 
--  Visual update for wizards<br> - This feature modernizes the visual appearance of wizards in Finance and Operations apps and more closely aligns the wizard user experience to other Dynamics 365 products.
+-  [Visual update for wizards](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/visual-update-wizards)
 
 Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 

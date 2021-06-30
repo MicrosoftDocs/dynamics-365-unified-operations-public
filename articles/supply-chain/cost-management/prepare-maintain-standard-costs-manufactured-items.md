@@ -68,8 +68,7 @@ Policies that are assigned to manufactured items can affect the cost calculation
 
 If you want to use routing information for costing purposes, additional preparation steps are required. For example, the cost categories that are assigned to routing operations must be correct and completed.
 
-Related topics
---------
+## Related topics
 
 [Amortize constant costs for a manufactured item](amortize-constant-costs-manufactured-item.md)
 

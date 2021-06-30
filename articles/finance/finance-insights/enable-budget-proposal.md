@@ -4,7 +4,7 @@
 title: Enable budget proposals (preview)
 description: This topic explains how to turn on the Budget proposal feature in Finance Insights.
 author: ShivamPandey-msft
-ms.date: 07/24/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,7 +38,7 @@ This topic explains how to turn on the Budget proposal feature in Finance Insigh
     `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BudgetIntelligentBudgetRegisterProposalFeature', 1)`
 
     > [!NOTE]
-    > If your deployment of Microsoft Dynamics 365 Finance is a Service Fabric deployment, you can skip this step. The Finance Insights team should already have turned on the flight for you. If you don't see the feature in the **Feature management** workspace, or if you experience issues when you try to turn it on, send email to the [Finance Insights App Preview team](mailto:fiap@microsoft.com).
+    > Skip this step if you're using version 10.0.20 or later, or if you're using a Service Fabric deployment. The Finance insights team should already have turned on the flight for you. If you don't see the feature in the **Feature management** workspace, or if you experience issues when you try to turn it on, contact <fiap@microsoft.com>.
 
 2. Open the **Feature management** workspace, and follow these steps:
 
@@ -46,9 +46,5 @@ This topic explains how to turn on the Budget proposal feature in Finance Insigh
     2. Search for **Budget proposal**, and turn on that feature.
 
 3. Go to **Budgeting \> Setup \> basic Budgeting \> Budget proposal (preview)**, and select **Enable feature**.
-
-#### Privacy notice
-Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

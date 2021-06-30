@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The Kanban transfer board supports scanner input from a widget barcode scanner to Select, Start, Complete, and Empty a kanban job.
 
-Registration modes
-------------------
+## Registration modes
 
 On the **Scanner registration** FastTab you can select the registration mode, which controls the action when you scan a kanban card number or manually type the number in the Kanban card number field.
 
@@ -46,8 +45,7 @@ On the **Scanner registration** FastTab you can select the registration mode, wh
 | Select                | Registers a Kanban card number and automatically selects the referenced job in the Kanban list. |
 
  
-Registration mode Select
-------------------------
+## Registration mode Select
 
 When you use a bar code reader to select a job, the display mode of the kanban board changes. In this mode, the following conditions apply:
 

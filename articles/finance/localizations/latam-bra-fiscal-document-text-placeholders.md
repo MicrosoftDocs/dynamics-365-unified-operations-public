@@ -36,8 +36,7 @@ You can also include placeholders in the **Note** field on the **Fiscal document
 
 The following tables contain the predefined tags that support fiscal document text and its value.
 
-Tags that support fiscal document text for referenced processes
----------------------------------------------------------------
+## Tags that support fiscal document text for referenced processes
 
 | Predefined tag                  | Value                                 |
 |---------------------------------|---------------------------------------|

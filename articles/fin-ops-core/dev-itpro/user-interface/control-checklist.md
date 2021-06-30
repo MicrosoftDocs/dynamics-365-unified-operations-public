@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article categorizes and describes all the release criteria for controls.
 
-Introduction
-------------
+## Introduction
 
 Typically, when you author a new control, the primary focus is on scenario functionality and technical implementation. However, before a control can be considered ready for shipment, it should conform to a set of best practice, quality, and development release criteria, as outlined in this article.
 

@@ -4,7 +4,7 @@
 title: Budget proposals (preview)
 description: This topic describes the process for using a machine learning model with your organization's historical data to generate a budget proposal.
 author: panolte
-ms.date: 07/10/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -101,9 +101,5 @@ A yearly view that includes the actual amount, budget amount, variance amount, a
 You can use the **Actual vs Budget - Default financial** report to see summary and detailed views of actuals versus the budget proposal. The default report design includes a single yearly view for original budget, revised budget, actuals, variance amount, variance percent, and percent of budget. The report can be easily updated to include 12 monthly columns with corresponding values, rather than a single amount with variances. You can set the budget proposal budget model by selecting **Report Options** and then selecting the budget model from the **Scenarios** drop-down menu. This will refresh the report to the correct budget model. 
 
 When a 12-month financial report is exported to Excel, you can easily insert a line chart or sparkline to provide a graphical view of the input or output data that helps reveal trends in the data.
-
-#### Privacy notice
-Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

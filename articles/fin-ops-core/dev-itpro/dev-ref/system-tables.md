@@ -19,8 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the system tables.
 
-Common
-----------
+## Common
 
 The Common table is the base class for all tables. It does not contain any data. It is primarily used in X++ code to refer to any table in a polymorphic way.
 
