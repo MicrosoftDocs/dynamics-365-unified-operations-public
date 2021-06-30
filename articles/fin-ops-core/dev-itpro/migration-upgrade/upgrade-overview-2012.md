@@ -140,6 +140,9 @@ The underlying framework that is used to convert the data in the database during
 
 For details, see [Upgrade from AX 2012 - Data upgrade in development environments](data-upgrade-2012.md).
 
+> [!NOTE]
+> If using Commerce functionality and in-store components as part of the 2012 R3 upgrade, it is recommended to review the Dynamics 365 Commerce [../../../articles/commerce/dev-itpro/n-1-installation-configuration.md](../../../commerce/dev-itpro/n-1-installation-configuration.md) article. Specific to development environments, the user will need to Initialize retail parameters, reinitialize CDX schedule, and after applying the data upgrade package the latest quality updates and channel extensions would need to be applied to the environment. 
+
 ### Data upgrade (sandbox environments)
 When data upgrade in a development environment is completed, the same process can be run in a sandbox environment. The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
 
@@ -148,6 +151,9 @@ The following illustration shows the process for running data upgrade in a sandb
 ![Data upgrade in a sandbox environment](./media/data-upgrade-sandbox.png)
 
 For details, see [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md).
+
+> [!NOTE]
+> If using Commerce functionality and in-store components as part of the 2012 R3 upgrade, it is recommended to review the Dynamics 365 Commerce [../../../articles/commerce/dev-itpro/n-1-installation-configuration.md](../../../commerce/dev-itpro/n-1-installation-configuration.md) article. Specific to sandbox and above environments, the user will need to Initialize retail parameters, reinitialize CDX schedule, and then reinitialize the CSU after data upgrade. More information can be read about reinitializing the CSU in the [Initialize Commerce Scale Unit (cloud)](../deployment/Initialize-Retail-Channels.md) article.
  
 ## Validate
 When you enter the Validate phase, you will have available environments that include your upgraded custom code and your upgraded data. This phase describes the process of validating and testing that the upgraded environment works as desired. It also describes the process of preparing for go-live.
