@@ -865,7 +865,5 @@ The following tables provide an overview that shows how the system handles order
 - [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Pick oldest batch on a mobile device](pick-oldest-batch.md)
 - [Batch and license plate confirmation](batch-and-license-plate-confirmation.md)
-- [Troubleshoot reservations in warehouse management](troubleshoot-warehouse-reservations.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

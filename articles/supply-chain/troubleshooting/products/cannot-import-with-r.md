@@ -12,7 +12,7 @@ ms.author: myvakalo
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-
+<!-- KFM: Add error code? -->
 # You can't import an item by using the Released products V2 entity
 
 KB number: 4611825

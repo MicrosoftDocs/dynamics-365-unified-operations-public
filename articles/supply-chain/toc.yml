@@ -719,8 +719,6 @@
           href: cost-management/amortize-constant-costs-manufactured-item.md
       - name: Cost management Power BI content pack
         href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
-      - name: Troubleshoot cost management
-        href: cost-management/troubleshoot-costmanagement.md
     - name: Reporting and Power BI integrations
       items:
       - name: Reporting and analytics with Power BI
@@ -1523,8 +1521,6 @@
           href: sales-marketing/register-serial-numbers-sales-process.md
         - name: Inventory on-hand mobile workspace
           href: inventory/inventory-on-hand-mobile-workspace.md
-        - name: Troubleshoot inventory operations
-          href: inventory/troubleshoot-inventory-operations.md
       - name: Outbound process
         items:
         - name: Outbound process overview
@@ -1699,8 +1695,6 @@
           href: master-planning/tasks/create-baseline-forecast.md
         - name: Modify a demand forecast manually
           href: master-planning/tasks/modify-demand-forecast-manually.md
-      - name: Troubleshoot master planning
-        href: master-planning/troubleshoot-masterplanning.md
     - name: Mobile app
       items:
       - name: Mobile app home page
@@ -1901,8 +1895,6 @@
         href: procurement/procurement-sourcing-overview.md
       - name: Procurement and sourcing workflow
         href: procurement/procurement-sourcing-workflows.md
-      - name: Troubleshoot procurement and sourcing workflows
-        href: procurement/troubleshoot-procurementworkflows.md
       - name: Procurement catalogs
         items:
         - name: Procurement catalogs overview
@@ -1943,8 +1935,6 @@
           href: procurement/purchase-order-mobile-workspace.md
         - name: Record the receipt of goods on the purchase order
           href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
-        - name: Troubleshoot purchase orders
-          href: procurement/troubleshoot-purchaseorders.md
       - name: Purchase order creation
         items:
         - name: Create purchase orders manually
@@ -1977,8 +1967,6 @@
           href: procurement/automatic-charges-allocation.md
         - name: Vendor rebates
           href: procurement/vendor-rebates.md
-        - name: Troubleshoot prices, discounts, agreements, and rebates
-          href: procurement/troubleshooting-pricediscountagreements.md
       - name: Purchasing policies
         items:
         - name: Purchasing policies overview
@@ -1993,8 +1981,6 @@
           href: procurement/product-receipt-against-purchase-orders.md
         - name: Overview of vendor invoices
           href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Troubleshoot product receipts and invoicing
-          href: procurement/troubleshooting-productreceiptinvoicing.md
       - name: Vendor management and collaboration
         items:
         - name: Set up and maintain vendor collaboration
@@ -2143,8 +2129,6 @@
           href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
         - name: BOM calculations
           href: cost-management/bom-calculations.md
-        - name: Troubleshoot product information
-          href: pim/troubleshooting-productinformation.md
       - name: Product configuration
         items:
         - name: Product configuration overview
@@ -2207,8 +2191,6 @@
             href: pim/tasks/approve-product-configuration-model.md
           - name: Transfer data for product models
             href: pim/tasks/transfer-data-product-models.md
-        - name: Troubleshoot the product configurator
-          href: pim/troubleshooting-productconfigurator.md
     - name: Engineering change management
       items:
       - name: Engineering change management overview
@@ -2399,8 +2381,6 @@
             href: production-control/absence-registration-in-time-and-attendance.md
           - name: Flex groups
             href: production-control/time-attendance-flex-groups.md
-        - name: Troubleshoot discrete manufacturing
-          href: production-control/troubleshoot-discretemanufacturing.md
       - name: Lean manufacturing
         items:
         - name: Lean manufacturing overview
@@ -2553,8 +2533,6 @@
             href: production-control/consumption.md
           - name: Production posting
             href: cost-management/production-posting.md
-        - name: Troubleshoot process manufacturing
-          href: production-control/troubleshoot-processmanufacturing.md
     - name: Rebate management
       items:
       - name: Rebate management module overview
@@ -2615,8 +2593,8 @@
           href: sales-marketing/tasks/manage-order-holds.md
         - name: Confirm sales orders
           href: sales-marketing/tasks/confirm-sales-orders.md
-        - name: Troubleshoot sales orders
-          href: sales-marketing/troubleshooting-sales.md
+        - name: Sales order FAQs
+          href: sales-marketing/sales-orders-faq.md
       - name: Sales agreements
         items:
         - name: Sales agreements overview
@@ -2639,8 +2617,6 @@
           href: sales-marketing/tasks/mass-sales-quotations.md
         - name: Create and edit sales quotations
           href: sales-marketing/tasks/create-edit-sales-quotations.md
-        - name: Troubleshoot sales quotations
-          href: sales-marketing/troubleshooting-salesquotation.md
       - name: Returns
         items:
         - name: Sales returns
@@ -3045,26 +3021,18 @@
           href: inventory/quality-management-for-warehouses-processes.md
         - name: Quality check
           href: warehousing/quality-check.md
-        - name: Troubleshoot inbound warehouse operations
-          href: warehousing/troubleshoot-warehouse-inbound.md
       - name: Outbound warehouse operations
         items:
         - name: Reservations in warehouse management
           items:
           - name: Flexible warehouse-level dimension reservation policy
             href: warehousing/flexible-warehouse-level-dimension-reservation.md
-          - name: Troubleshoot reservations in warehouse management
-            href: warehousing/troubleshoot-warehouse-reservations.md
-          - name: Troubleshoot warehouse batch and serial reservation hierarchies
-            href: warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md
         - name: Partial release and partial shipment
           items:
           - name: Partial shipment of a transport load
             href: warehousing/partial-shipping-of-transport-loads.md
           - name: Batch release of partially reserved transfer orders
             href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
-          - name: Troubleshoot partial releases and partial shipments
-            href: warehousing/troubleshoot-warehouse-partial-release-shipment.md
         - name: Picking and packing
           items:
           - name: Set up cluster picking
@@ -3105,8 +3073,6 @@
             href: warehousing/put-to-wall-put-to-store.md
           - name: Outbound workload visualization
             href: warehousing/outbound-workload-visualization.md
-          - name: Troubleshoot picking and packing
-            href: warehousing/troubleshoot-warehouse-picking-packing.md
         - name: Replenishment
           items:
           - name: Replenishment overview
@@ -3123,8 +3089,6 @@
             href: warehousing/replenishment-strategies.md
           - name: Replenishment over location capacity
             href: warehousing/replenishment-over-location-capacity.md
-          - name: Troubleshoot warehouse replenishment
-            href: warehousing/troubleshoot-warehouse-replenishment.md
         - name: Load building and shipments
           items:
           - name: Confirm and transfer
@@ -3137,8 +3101,6 @@
             href: warehousing/release-to-warehouse-rule.md
           - name: Small parcel shipping
             href: warehousing/small-parcel-shipping.md
-          - name: Troubleshoot load building and shipments
-            href: warehousing/troubleshoot-warehouse-loads-shipments.md
         - name: Shipment consolidation policies
           items:
           - name: Shipment consolidation policies
@@ -3159,8 +3121,6 @@
           href: warehousing/wave-processing.md
         - name: Reprint and void wave labels
           href: warehousing/reprint-and-void-wave-labels.md
-        - name: Troubleshoot outbound warehouse operations
-          href: warehousing/troubleshoot-warehouse-outbound.md
       - name: Across the warehouse operations
         items:
         - name: Warehouse work policies
@@ -3223,8 +3183,6 @@
             href: warehousing/work-split.md
           - name: Material handling equipment interface (MHAX)
             href: warehousing/mhax.md
-          - name: Troubleshoot warehouse work
-            href: warehousing/troubleshoot-warehouse-work.md
       - name: Warehouse setup
         items:
         - name: Warehouse configuration
@@ -3291,8 +3249,6 @@
             href: warehousing/mobile-barcode-support.md
           - name: Set up warehouse for transfer orders
             href: warehousing/transfer-orders-warehouse.md
-          - name: Troubleshooting warehouse configuration
-            href: warehousing/troubleshoot-warehouse-configuration.md
         - name: Install and configure the Warehouse Management mobile app
           items:
           - name: Install and connect the Warehouse Management mobile app
@@ -3329,16 +3285,10 @@
             href: warehousing/pick-oldest-batch.md
           - name: Process guide framework
             href: warehousing/process-guide-framework.md
-          - name: Troubleshoot Warehouse Management mobile app connection issues
-            href: warehousing/troubleshoot-warehouse-app-connection.md
         - name: Upgrade and migration
           items:
           - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations
             href: warehousing/upgrade-migration-warehouse-management-processes.md
-          - name: Troubleshoot upgrade and migration to advanced warehouse management
-            href: warehousing/troubleshoot-warehouse-upgrade-migration.md
-        - name: Troubleshoot warehouse setup
-          href: warehousing/troubleshoot-warehouse-setup.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
