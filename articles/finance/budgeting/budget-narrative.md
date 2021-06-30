@@ -39,7 +39,7 @@ The content that is added to these two sections can be printed separately in a b
 Complete the following steps to turn on the budget plan narrative area and use the most current HTML editor that's available in the product.
 1.	Enable the **Budget plan narrative** under feature management. You can also enable the **New HTML editor control** in the **Feature management** workspace to use a more current editor.
 2.	In the **Budget planning module**, select a budget plan. 
-3.	Select **Header** to expand the **Header View** and enable access to the **Budget plan narrative**. This is typically not visible from the **Line View**.
+3.	Select **Header** to expand the **Header View** and enable access to the **Budget plan narrative**. These fields are typically not visible from the **Line View**.
 4.	Expand the **Budget plan narrative** section and add descriptions or revenue information that should be included in the budget plan.
  
 No extra permissions are required to modify the budget plan narrative. 
