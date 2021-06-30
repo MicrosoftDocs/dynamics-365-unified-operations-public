@@ -173,6 +173,47 @@ Issue 3: You can proceed past the ClickOnce Report Designer sign-in page, but ar
 * The time set on your local computer when you enter your login credentials must be within five minutes of the time on the Financial Reporting server. If there is a difference of more than five minutes, the system will not allow sign in. 
 * In this case, we recommend enabling the Windows option to set your PC's time automatically. 
 
+## Using event viewer to troubleshoot report designer issues.
+What happens when you have connections issues with Financial Reporting? Here are some steps you can take to make your conversation with support more effective and bring you to a quicker resolution. 
+ 
+In the following steps, we are going to walk you through how to enable event viewer messages for Financial Reporting. These logs will allow support to quickly identify the source of the connection issue for you. 
+ 
+Submit copies of these logs together with your ticket when contacting support. 
+   1.	Copy the RegisterETW.zip to the client workstation (preferably the Desktop) and extract [RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster)
+   2.	Make sure Windows Event Viewer is closed.
+   3.	Open an Administrator PowerShell command prompt and path (cd) to the directory where RegisterETW.ps1 is located.
+   4.	Run this command: .\RegisterETW.ps1
+    A successful output in PowerShell will end with **Competed RegisterETW script.**
+    Re-open Event Viewer and you will now see these logs under Microsoft>Dynamics:
+     * MR-Client
+     * MR-DVT
+     * MR-Integration
+     * MR-Logger
+     * MR-Reporting
+     * MR_SchedulerTasks
+     * MR-Sql
+     * MR-TraceManager
+   5. Reproduce the issue in the report designer.
+   6. Export the MR-Logger events using the event viewer.
+
+  
+
+
+## Troubleshooting connection issues to Financial Reporting
+
+Issue 1: You get this error message “Unable to Connect to the Financial Reporting Server”
+* See if the issue occurs in Chrome and Edge.
+* If browser specific it could be ClickOnce issue. 
+* When you get the connection error message click "Test" connection to see what message displays. 
+* Issue could be that the user has not been given access to FR and then they would see a message stating you do not have permissions.
+* If both browser, make sure the time clock on your workstation is set to Auto
+* Have a user that has Security Admin rights in D365 and domain network admin rights log onto your workstation to see if they are able to connect, if they can the issue is more than likely a network permissions issues.
+* On the workstation, temporarily disable the firewall. If you are then able to connect to Report Designer the issue is with your firewall and you will want to work with your internal IT department.
+
+
+
+
+
 ## Additional resources
 - [View financial reports](view-financial-reports.md)
 - [Reporting tree definitions in financial reports](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
