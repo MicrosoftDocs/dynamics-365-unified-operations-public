@@ -4,7 +4,7 @@
 title: Default field value in tax information isn't as expected
 description: This topic provides troubleshooting information to resolve the issue when the default values for tax information are't expected.
 author: yungu
-ms.date: 05/11/2021
+ms.date: 06/29/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -113,43 +113,35 @@ When the HSN/SAC/Exempt/NonGST is a procurement category, set a breakpoint there
 
 ### Scenario: Project transactions
 
+**Field: HSN/SAC/Exempt/NonGST
+
 For project transactions, the HSN/Exempt/NonGST is assigned differently.
 
-  - Project tax information HSN/Exempt/NonGST
+   - When the HSN/SAC/Exempt/NonGST is a project transaction, set the breakpoint there and start debugging.
 
-     Debug point
+     [![Breakpoint for the project transaction](./media/default-value-not-excepted-Picture7.png)](./media/default-value-not-excepted-Picture7.png)
 
-     [![Direct taxes (tab)](./media/default-value-not-excepted-Picture7.png)](./media/default-value-not-excepted-Picture7.png)
+   - When the HSN/SAC/Exempt/NonGST in a project inventory item, such as an item journal or project sales order, set a breakpoint there and start debugging.
 
-  - Inventory item HSN/Exempt/NonGST (Item journal, project sales order)
+     [!Breakpoint for the project inventory item](./media/default-value-not-excepted-Picture8.png)](./media/default-value-not-excepted-Picture8.png)
 
-     Debug point
+**Field: SAC**
 
-     [![Direct taxes (tab)](./media/default-value-not-excepted-Picture8.png)](./media/default-value-not-excepted-Picture8.png)
+When the SAC is a project transaction, set the breakpoint there and start debugging.
 
-- - **Field: SAC**
+   [![Direct taxes (tab)](./media/default-value-not-excepted-Picture9.png)](./media/default-value-not-excepted-Picture9.png)
 
-    1. Project tax information SAC
+When the SAC in a project inventory Item, such as an item journal or a project sales order, set a brakpoint there and start debugging.
 
-       Debug point
+   [![Direct taxes (tab)](./media/default-value-not-excepted-Picture10.png)](./media/default-value-not-excepted-Picture10.png)
 
-       [![Direct taxes (tab)](./media/default-value-not-excepted-Picture9.png)](./media/default-value-not-excepted-Picture9.png)
+When the SAC is a project category, set a breakpoint there and start debugging.
 
-    2. Inventory Item SAC (Item journal, project sales order)
-
-       Debug point
-
-       [![Direct taxes (tab)](./media/default-value-not-excepted-Picture10.png)](./media/default-value-not-excepted-Picture10.png)
-
-    3. Project category SAC
-
-       Debug point
-
-       [![Direct taxes (tab)](./media/default-value-not-excepted-Picture11.png)](./media/default-value-not-excepted-Picture11.png)
+   [![Direct taxes (tab)](./media/default-value-not-excepted-Picture11.png)](./media/default-value-not-excepted-Picture11.png)
 
 ## Price inclusive
 
-The **Price inclusive** field is set in the tax information for the transaction line if a specific condition is met.
+The **Price inclusive** field is set for the transaction line if a specific condition is met.
 
 ### Scenario: Non-project related transactions
 
@@ -165,21 +157,16 @@ For other project related transactions, the transaction header is marked as pric
 
 ## Other fields
 
-To check the default value for a certain field in tax information, set breakpoints and start debugging as explained in the following scenarios.
+To check the default value for a certain field in tax information. Debug in the below methods.
 
 ### Scenario: Non-project related transactions
+For non-project related transactions, set the following breakpoints and then start debugging:
 
-  - - **Debug point**
-
-      [![Direct taxes (tab)](./media/default-value-not-excepted-Picture14.png)](./media/default-value-not-excepted-Picture14.png)
-
-      [![Direct taxes (tab)](./media/default-value-not-excepted-Picture15.png)](./media/default-value-not-excepted-Picture15.png)
+  - `TransTaxInformationHelper.initFromNonProjTable()`
+  - `TransTaxInformationHelper_IN_Extension.initFromNonProjTable()`
 
 ### Scenario: Project related transactions
-
-  - - **Debug point**
-
-      [![Direct taxes (tab)](./media/default-value-not-excepted-Picture16.png)](./media/default-value-not-excepted-Picture16.png)
+For project related transactions, set the breakpoint at `TransTaxInformationHelper:: initFromProjTableOrCategory()` and then start debugging.
 
 
 ## Appendix: Find the fields related to default values in tax information
@@ -245,7 +232,7 @@ To check the default value for a certain field in tax information, set breakpoin
 
      ![Location field for project](./media/default-value-not-excepted-Picture29.png)
 
-### HSN/SAC/Exempt/NonGST derived from fields
+### Fields from which HSN/SAC/Exempt/NonGST is derived from 
 
 - **Inventory item**
 
@@ -271,21 +258,17 @@ To check the default value for a certain field in tax information, set breakpoin
 
       [![Service accounting code field](./media/default-value-not-excepted-Picture33.png)](./media/default-value-not-excepted-Picture33.png)
 
-## Price inclusive derived from fields
+### Fields from which Price inclusive is derived from 
 
 - **Customer**
 
-    - Navigation path: **Accounts receivable** > **Customers** > **All customers**
-
-      Open the customer record, and on the **Invoice and delivery** FastTab, note the selection in the **Prices include sales tax** field.
+    - Navigation path: **Accounts receivable** > **Customers** > **All customers**. Open the customer record, and on the **Invoice and delivery** FastTab, note the selection in the **Prices include sales tax** field.
 
       [![Customers page, Invoice and delivery FastTab.](./media/default-value-not-excepted-Picture34.png)](./media/default-value-not-excepted-Picture34.png)
 
 - **Vendor**
 
-    - Navigation path: **Accounts payable** > **Vendors** > **All vendors**.
-
-      Open the vendor record, and on the **Invoice and delivery** FastTab, note the selection in the **Prices include sales tax** field.
+    - Navigation path: **Accounts payable** > **Vendors** > **All vendors**. Open the vendor record, and on the **Invoice and delivery** FastTab, note the selection in the **Prices include sales tax** field.
 
       [![Vendors page, Invoice and delivery FastTab](./media/default-value-not-excepted-Picture35.png)](./media/default-value-not-excepted-Picture35.png)
 
