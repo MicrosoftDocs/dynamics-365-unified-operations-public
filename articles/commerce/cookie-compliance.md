@@ -41,9 +41,9 @@ The following table shows the current reference list of cookies placed by Dynami
 | Cookie name                               | Usage                                                        | Lifetime |
 | ------------------------------------------- | ------------------------------------------------------------ |  ------- |
 | .AspNet.Cookies                             | Store Microsoft Azure Active Directory (Azure AD) authentication cookies for single sign-on (SSO). Stores encrypted user principal information (name, surname, email). | Session |
-| &#95;msdyn365___cart&#95;                           | Store cart ID used to obtain list of products added to cart instance. | Session |
-| &#95;msdyn365___checkout&#95;cart&#95;                           | Store checkout cart ID used to obtain list of products added to checkout cart instance. | Session |
-| &#95;msdyn365___ucc&#95;                            | Cookie compliance consent tracking.                          | 1 year |
+| \_msdyn365___cart_                           | Store cart ID used to obtain list of products added to cart instance. | Session |
+| \_msdyn365___checkout_cart_                           | Store checkout cart ID used to obtain list of products added to checkout cart instance. | Session |
+| \_msdyn365___ucc_                            | Cookie compliance consent tracking.                          | 1 year |
 | ai_session                                  | Detects how many sessions of user activity have included certain pages and features of the app. | 30 minutes |
 | ai_user                                     | Detects how many people used the app and its features. Users are counted using anonymous IDs. | 1 year |
 | b2cru                                       | Stores redirect URL dynamically.                              | Session |
@@ -56,9 +56,9 @@ The following table shows the current reference list of cookies placed by Dynami
 | x-ms-cpim-slice                             | Used to route requests to the appropriate production authentication server instance. | Session |
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Used for maintaining the SSO session.                        | Session |
 | x-ms-cpim-trans                             | Used for tracking transactions (the number of open tabs authenticating against a business-to-consumer (B2C) site), including the current transaction. | Session |
-| \_msdyn365___muid_                            | Used if Experimentation is activated for the environment; utilized as a userId for experimentation purposes. | 1 year |
-| \_msdyn365___exp_                             | Used if Experimentation is activated for the environment; used to measure performance load balancing.         | 1 hour |
-| d365mkt                                       | Used if location-based detection to track a user's IP address for store location suggestions is enabled in Commerce site builder at **Site Settings > General > Enable location based store detection**.      | 1 hour |
+| \_msdyn365___muid_                            | Used if experimentation is activated for the environment; used as a user ID for experimentation purposes. | 1 year |
+| \_msdyn365___exp_                             | Used if experimentation is activated for the environment; used to measure performance load balancing.         | 1 hour |
+| d365mkt                                       | Used if location-based detection to track a user's IP address for store location suggestions is enabled in Commerce site builder at **Site Settings \> General \> Enable location based store detection**.      | 1 hour |
 
 If a site user selects any social media links within a site, the cookies in the following table will also be tracked on their browser.
 
