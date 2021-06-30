@@ -32,16 +32,16 @@ This topic describes how to set up server-to-server authentication for applicati
 
 ## Enable access to Dataverse virtual tables in Power Platform
 
-The first step enable access to the Dataverse virtual tables in Power Platform is to set up your application in Power Platform for authentication against Dataverse virtual table endpoints. Steps for doing this are outlined in the [Microsoft Dataverse developer guide](https://docs.microsoft.com/powerapps/developer/data-platform).
+The first step enable access to the Dataverse virtual tables in Power Platform is to set up your application in Power Platform for authentication against Dataverse virtual table endpoints. Steps for doing this are outlined in the [Microsoft Dataverse developer guide](/powerapps/developer/data-platform).
 
-  - For single-tenant app registrations: [Use Single-Tenant server-to-server authentication](https://docs.microsoft.com/powerapps/developer/data-platform/use-single-tenant-server-server-authentication)
-  - For multi-tenant app registrations: [Use multi-tenant server-to-server authentication](https://docs.microsoft.com/powerapps/developer/data-platform/use-multi-tenant-server-server-authentication)
+  - For single-tenant app registrations: [Use Single-Tenant server-to-server authentication](/powerapps/developer/data-platform/use-single-tenant-server-server-authentication)
+  - For multi-tenant app registrations: [Use multi-tenant server-to-server authentication](/powerapps/developer/data-platform/use-multi-tenant-server-server-authentication)
 
 ### Creating a security role for ATS integrations
 
-One of the steps after creating the application user is to assign the user to a security role that defines the access the application will have to the endpoints. This is step 7 in [Application user creation](https://docs.microsoft.com/powerapps/developer/data-platform/use-single-tenant-server-server-authentication#application-user-creation) for single-tenant app registrations, and [Create a security role for the application user](https://docs.microsoft.com/powerapps/developer/data-platform/use-multi-tenant-server-server-authentication#create-a-security-role-for-the-application-user) for multi-tenant registrations. 
+One of the steps after creating the application user is to assign the user to a security role that defines the access the application will have to the endpoints. This is step 7 in [Application user creation]/powerapps/developer/data-platform/use-single-tenant-server-server-authentication#application-user-creation) for single-tenant app registrations, and [Create a security role for the application user](/powerapps/developer/data-platform/use-multi-tenant-server-server-authentication#create-a-security-role-for-the-application-user) for multi-tenant registrations. 
 
-The role to which you assign the application user should have access to the data entities used for your ATS integration. This doesn't exist out of the box, so a new security role will need to be created. The new role can be created following the steps outlined in [Create a security role](https://docs.microsoft.com/power-platform/admin/create-edit-security-role#create-a-security-role).
+The role to which you assign the application user should have access to the data entities used for your ATS integration. This doesn't exist out of the box, so a new security role will need to be created. The new role can be created following the steps outlined in [Create a security role](/power-platform/admin/create-edit-security-role#create-a-security-role).
 
 For the new role, appropriate access must be assigned to, at a minimum, the following entities on the **Custom Entities** tab of the new role. Note that there may be additional entities you may need to add if the integration uses more extensive application data. After the new role is created it can be assigned to the application user.
 
