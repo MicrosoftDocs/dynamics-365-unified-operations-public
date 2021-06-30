@@ -4,7 +4,7 @@
 title: Add product to cart settings
 description: This topic covers "add product to cart" settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 06/25/2021
+ms.date: 06/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,15 +33,15 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers "add product to cart" settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 
-When a product is added to cart on a Dynamics 365 Commerce site, there are different workflows that are supported. A site user may be navigated to cart page, or a notification may be shown confirming the add to cart action while keeping the user on the current page. To support these different workflows, there is an **Add product to cart** setting in Commerce site builder under **Settings /> Extensions**. 
+When a product is added to the cart on a Dynamics 365 Commerce e-commerce site, there are different workflows that are supported. A site user may be navigated to cart page, or a notification may be shown confirming the add to cart action while keeping the user on the current page. To support these different workflows, there is an **Add product to cart** setting in Commerce site builder under **Settings /> Extensions**. 
 
 The following workflows can be implemented using the **Add product to cart** setting:
 
- - **Navigate to cart page** - When this setting is selected, after adding an item to the cart users will be navigated to the cart page.
- - **Show notification** - When this setting is selected, users are shown a confirmation notification and can continue to browse on the product details page (PDP).
- - **Show mini cart** - When this setting is selected, users are shown the mini cart contents when an item is added to cart. This way a user can browse all the items in the cart and potentially proceed to checkout.
- - **Show notification using Notifications module** - When this setting is selected, users are shown a confirmation notification using the notifications module. The notifications module must be added to the page header for this setting to work.
- - **Do not navigate to cart page** - When this setting is selected, after adding an item to the cart users will remain on the current page.
+ - **Navigate to cart page** - When this setting is selected, users will be navigated to the cart page after adding an item to the cart.
+ - **Show notification** - When this setting is selected, users are shown a confirmation notification after adding an item to the cart, and can continue to browse on the product details page (PDP).
+ - **Show mini cart** - When this setting is selected, users are shown the mini cart contents when an item is added to the cart. Users can then review all of the items in the cart and potentially proceed to checkout.
+ - **Show notification using Notifications module** - When this setting is selected, users are shown a confirmation notification using the notifications module after adding an item to the cart. The notifications module must be added to the page header for this setting to function.
+ - **Do not navigate to cart page** - When this setting is selected, users will remain on the current page after adding an item to the cart.
  
 The following example image shows the **Add product to cart** setting options in site builder.
 
