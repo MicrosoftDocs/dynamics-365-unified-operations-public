@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 10.0.21
 # Customer segmentation and targeting in Dynamics 365 Commerce
 Dynamics 365 Commerce enables you to target specific groups of customers with different page content based on their device information, geolocation, and other dynamically derived attributes from their browser request. This will help personalize content in near real-time for these target groups known as **audiences** and drive increased user engagement and satisfaction.
 
-You can create and manage audiences in site builder based on customer data such as location, device information, sign-in status, referrer, or query string parameters, gathered from the customer's web request. These audiences can then be targeted with module or fragment variations also authored and managed in site builder.
+You can create and manage audiences in site builder based on customer data such as location, device information, sign-in status, referrer, or query string parameters, gathered from the customer's web request. These audiences can then be targeted with module or fragment variations called **targets**, also authored and managed in site builder.
 
 ## Audiences
 An audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information or segments available in the customer's request. Commerce natively supports segments such as device info (desktop/mobile/tablet, OS, browser), sign-in status, referrer and query string parameters. Additionally, Commerce also supports connecting to third-party geolocation and segmentation providers. For more information on setting up a geolocation connector, see [GeoLookup connector](e-commerce-extensibility/connectors.md#geolookup-connector).
@@ -68,10 +68,13 @@ To preview the target as a member of an audience and on a particular day, click 
 
 You can also target fragments in a similar way from the **Fragments** tab in the left navigation pane.
 
+> [!NOTE]
+> You can currently either have an experiment or target on a page but not both.
+
 To manage your targets, go to the default page or fragment and follow these steps.
-1. Edit
-2. Delete
-3. Prioritize
+1. Open the targets dropdown and click on **Manage targets**.
+2. Click on a target to edit, duplicate or delete it.
+3. If you have more than one target on the same module, click on **Prioritize targets** to specify the order in which they should be shown.
 
 Targets in pages and fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, you will need to delete the targets before the localization progress. If you need to create different schedules per locale, you will need to create different targets per each locale.
 
