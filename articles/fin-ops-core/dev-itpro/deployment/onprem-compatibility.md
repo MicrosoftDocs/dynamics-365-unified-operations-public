@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Finance and Operations (onpremises) supported software
-description: This topic explains which software component versions are compatible with Microsoft Dynamics 365 for Finance and Operations (onpremises).
+title: Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
+description: This topic explains which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
 ms.date: 06/30/2021
 ms.topic: article
@@ -25,15 +25,15 @@ ms.dyn365.ops.version: Platform update 44
 
 ---
 
-# Microsoft Dynamics 365 for Finance and Operations (onpremises) supported software
+# Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains which versions of dependent software are compatible with different versions of Microsoft Dynamics 365 for Finance and Operations (onpremises).
+This topic explains which versions of dependent software are compatible with different versions of Microsoft Dynamics 365 Finance + Operations (on-premises).
 
 ## Microsoft Windows Server
 
-Both Microsoft Windows Server Standard and Datacenter versions are supported.
+Both Microsoft Windows Server Standard and Microsoft Windows Server Datacenter are supported.
 
 | Version                       | Supported since    | End of life        |
 |-------------------------------|--------------------|--------------------|
