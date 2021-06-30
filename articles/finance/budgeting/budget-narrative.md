@@ -49,8 +49,6 @@ Complete the following steps to allow copying of the budget plan narrative descr
 1. As a prerequisite, you need to have the **Budget plan narrative feature** enabled.
 2. Enable **Include budget plan narrative when copying budget plans** under feature management. This adds a **Budget plan narrative section** with **Include budget description** and **Include revenue summary** flags to budget plan copying.
 3. The new flags can be selected from the following pages.
-
-
 - Budget plans
     - Go to **Budgeting > Budget plans**.
     - Select the budget plan to be copied.
