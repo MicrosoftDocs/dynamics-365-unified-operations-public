@@ -78,7 +78,7 @@ The following example image shows a B2B home page using the Adventure Works them
 
 The Adventure Works theme includes several theme extensions, including the **View extensions** and **Module definition** extensions. The Adventure Works theme can be used as a reference theme to build similar extensions. For example, the list page on the Adventure Works theme is implemented as a view extension that has a horizontal refiner compared to the left pane refiner used in the Fabrikam theme.
 
-Similarly, there are other modules that include module definition extensions. For example, the [Cart icon module](cart-icon-module.md) includes two additional slots for **Empty Cart** and **Promotional Content** properties that are implemented using module definition extensions. Another example is the header module, where a new **Mobile Logo** property has been added that supports a logo on mobile view ports. The **Mobile Logo** property is implemented as a header module definition extension.
+Similarly, there are other modules that include module definition extensions. For example, the [Cart icon module](cart-icon-module.md) includes two additional **Empty Cart** and **Promotional Content** slots that are implemented using module definition extensions. Another example is the header module, where a new **Mobile Logo** property has been added that supports a logo on mobile view ports. The **Mobile Logo** property is implemented as a header module definition extension.
 
 For more information on theme extensions, see [Theme extensions](e-commerce-extensibility/theme-module-extensions.md).
 
