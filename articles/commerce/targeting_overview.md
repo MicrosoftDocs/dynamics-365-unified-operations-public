@@ -32,7 +32,7 @@ Dynamics 365 Commerce enables you to target specific groups of customers with di
 You can create and manage audiences in site builder based on customer data such as location, device information, sign-in status, referrer, or query string parameters, gathered from the customer's web request. These audiences can then be targeted with module or fragment variations called **targets**, also authored and managed in site builder.
 
 ## Audiences
-An audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information or segments available in the customer's request. Commerce natively supports segments such as device info (desktop/mobile/tablet, OS, browser), sign-in status, referrer and query string parameters. Additionally, Commerce also supports connecting to third-party geolocation and segmentation providers. For more information on setting up a geolocation connector, see [GeoLookup connector](e-commerce-extensibility/connectors.md#geolookup-connector).
+An audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information or segments available in the customer's request. Commerce natively supports segments such as device info (desktop/mobile/tablet, OS, browser), sign-in status, referrer and query string parameters. Additionally, Commerce also supports connecting to third-party geolocation and segmentation providers. For more information on setting up connectors, see [GeoLookup connector](e-commerce-extensibility/connectors.md).
 
 To create an audience in Commerce site builder, follow these steps.
 1. Select **Audiences** in the left navigation pane, and then select **New**.
