@@ -5,7 +5,7 @@ title: Store selector module
 description: This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 06/25/2021
+ms.date: 06/30/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -76,7 +76,6 @@ For the Autosuggest REST API, you must ensure that the following URLs are allowe
 - To the **script-src** directive, **add &#42;.bing.com, &#42;.virtualearth.net**.
 - To the **script style-src** directive, add **&#42;.bing.com**.
 
- 
 ## Pickup in store mode
 
 The store selector module supports a **Pick up in store** mode that shows a list of stores where a product is available for pickup. It also shows store hours and product inventory for each store in the list. The store selector module requires the context of a product to render product availability and to let the user add the product to the cart, if the product's delivery mode is set to **pickup** at the selected store. For more information, see [Inventory settings](inventory-settings.md). 
