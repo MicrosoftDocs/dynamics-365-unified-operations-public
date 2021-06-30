@@ -4,7 +4,7 @@
 title: Video player module
 description: This topic covers video player modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 06/25/2021
+ms.date: 06/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -58,7 +58,7 @@ The following image shows an example of a video player module on a home page.
 | Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | By default, the **H2** heading tag is used for the heading, but the tag can be changed to meet accessibility requirements. |
 | Rich text      | Paragraph text | The module supports paragraph text in rich text format. Some basic rich text capabilities such as hyperlinks and bolded, underlined, and italicized text are supported. Some of these capabilities can be overridden by the page theme that is applied to the module. |
 | Link           | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** selector. | Supports one or more "call to action" links. If a link is added, link text, a URL, and an ARIA label are required. ARIA labels should be descriptive to meet accessibility requirements. Links can be configured to open in a new tab. |
-| Sub text|  Heading, text, links| It’s a collection of additional context for the image E.g. Surfer/Author/Designer name, links to personal blog etc.|
+| Sub text|  Heading, text, links| Additional context for the video player module can be added, for example an author or designer name, or links to personal blogs.|
 | Auto play             | **True** or **False**               | When the value is set to **True**, the video is automatically played. |
 | Mute                  | **True** or **False**               | When the value is set to **True**, the audio is muted. For this player, the default value is **False**. In the Chrome browser, autoplay videos are muted by default, and the audio is played only if the user manually plays the video. |
 | Loop                  | **True** or **False**               | When the value is set to **True**, the video is repeated in a loop. |
