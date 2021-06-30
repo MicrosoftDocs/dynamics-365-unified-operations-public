@@ -4,7 +4,7 @@
 title: Commerce localization for Russia
 description: This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Russia.
 author: v-ankvik
-ms.date: 06/23/2021
+ms.date: 06/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the scope of the Microsoft Dynamics 365 Commerce functionality that is specific to Russia. It includes information about features and functionality that are designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that typically affect retail businesses in Russia (within the scope of the [Russian localization](../../finance/localizations/russia.md)).
+This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Russia, and describes the scope of the Commerce functionality that is specific to Russia. It includes information about features and functionality that are designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that typically affect retail businesses in Russia (within the scope of [Russian localization](../../finance/localizations/russia.md)).
 
-However, Commerce doesn't address all laws, regulations, or commercial requirements in Russia, because laws and regulations vary in the way that they affect organizations. For more information, see the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck).
+Because laws and regulations vary in the way that they affect organizations, Commerce doesn't address all laws, regulations, or commercial requirements in Russia. For more information, see the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
 ## Capabilities of the Commerce localization for Russia
 
@@ -54,17 +54,18 @@ The following scenarios are supported by Commerce localization for Russia:
 - Issuing gift cards and payments by gift cards
 - Registering and processing customer orders in the POS
 - Posting fiscal documents in retail statements in Commerce headquarters
-- Processing of prepayments and posting of VAT for prepayments in Commerce headquarters
-- Sales via e-Commerce storefronts
+- Processing of prepayments and posting of value-added tax (VAT) for prepayments in Commerce headquarters
+- Sales via e-commerce storefronts
 - Call center sales
 
 ### Fiscal registration for Russia
 
-Fiscal registration is the immediate registration of retail sales per local fiscal laws that are aimed at preventing tax fraud in the retail industry. The main fiscal registration method that is available in Russia is a registration of a retail sale in a special fiscal device named fiscal printer or online cash register that is connected to POS.
+Fiscal registration is the immediate registration of retail sales per local fiscal laws that are aimed at preventing tax fraud in the retail industry. The main fiscal registration method available in Russia entails using a specialized device connected to POS called a fiscal printer or online cash register.
 
-The Commerce functionality for Russia includes a sample integration of the point of sale (POS) with a fiscal printer. The sample extends the [fiscal integration functionality](../localizations/fiscal-integration-for-retail-channel.md) and supports the API of fiscal printers from [ATOL](http://integration.atol.ru/). The sample enables communication with a fiscal printer that is connected via a COM port by using a native software driver. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
+Commerce functionality for Russia includes a sample integration of the point of sale (POS) with a fiscal printer. The sample extends the [fiscal integration functionality](../localizations/fiscal-integration-for-retail-channel.md) and supports the application programming interface (API) of fiscal printers from [ATOL](http://integration.atol.ru/). The sample enables communication with a fiscal printer that is connected via a communication (COM) port by using a native software driver. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
 ## Availability of Commerce localization features for Russia
+
 | Feature | General availability (GA) | Post-GA | Not planned |
 |-|-|-|-|
 | Processing of cash payments using petty cash journals in Commerce headquarters | X |  |  |
@@ -73,8 +74,8 @@ The Commerce functionality for Russia includes a sample integration of the point
 | A sample of the integration of the POS with a fiscal printer | X |  |  |
 | Support of customer orders in fiscal printer integration |  | X |  |
 | Return policies (payment method control, etc.) |  | X |  |
-| Processing of issued gift cards as prepayments and a fiscal printer functionality to support this |  | X |  |
-| Processing of a loyalty point redemption as a price discount in a retail transaction and a fiscal printer functionality to support this |  | X |  |
+| Processing of issued gift cards as prepayments, along with related fiscal printer functionality |  | X |  |
+| Processing of loyalty point redemptions as a price discounts in retail transactions, along with related fiscal printer functionality |  | X |  |
 | Payment integration |  | X |  |
 | E-commerce capabilities for Russia |  | X |  |
 | Gift card policies |  |  | X |
@@ -84,10 +85,10 @@ The Commerce functionality for Russia includes a sample integration of the point
 
 ## Commerce functionality for Russia
 
-Commerce functionality for Russia consists of the following parts:
+Commerce functionality for Russia consists of the following:
 
 - Common POS features that are available to customers in all countries or regions.
-- Russian-specific features, such as cash payments using petty cash journals, prepayments and posting of VAT for prepayments, sample of the integration of the POS with a fiscal printer, etc.
+- Russian-specific features such as cash payments using petty cash journals, prepayments and posting of VAT for prepayments, and a sample integration of the POS with a fiscal printer.
 
 ### Common POS features
 
@@ -97,16 +98,26 @@ To learn about POS features that are available to customers in all countries or 
 
 The following Russian-specific POS features are enabled after the Commerce localization for Russia has been set up and deployed:
 
-- A sample of the integration of the POS with a fiscal printer
-- Customer account deposit and Customer order deposit prepayments
-- Support of customer orders in fiscal printer integration
-- Cash payments using petty cash journals in Commerce headquarters
-- Prepayments and posting of VAT for prepayments in Commerce headquarters
-- Prepaymant cancellation charges
-- Payment integration
-- Simplified address format
-- Processing of issued gift cards as prepayments and a fiscal printer functionality to support this
-- Processing of a loyalty point redemption as a price discount in a retail transaction and a fiscal printer functionality to support this
-- Posting and control of electronic fiscal documents in Commerce headquarters
+- A sample integration of the POS with a fiscal printer.
+- Customer account deposit and customer order deposit prepayments.
+- Support of customer orders in fiscal printer integration.
+- Cash payments using petty cash journals in Commerce headquarters.
+- Prepayments and posting of VAT for prepayments in Commerce headquarters.
+- Prepaymant cancellation charges.
+- Payment integration.
+- Simplified address format.
+- Processing of issued gift cards as prepayments,, along with related fiscal printer functionality.
+- Processing of loyalty point redemptions as price discounts in retail transactions, along with with related fiscal printer functionality.
+- Posting and control of electronic fiscal documents in Commerce headquarters.
+
+## Additional resources
+
+[Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md)
+
+[Russian globalization overview](../../finance/localizations/russia.md)
+
+[Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck)
+
+[ATOL documentation](http://integration.atol.ru/)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
