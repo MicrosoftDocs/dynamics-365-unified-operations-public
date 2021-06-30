@@ -124,7 +124,7 @@ Additionally, to exempt more than one column for a given entity, use a comma as 
 
 After adding the config run job 1110 to push this change.
 
-## - Deployment failed with error - Could not load file or assembly Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts
+## Deployment failed with error - Could not load file or assembly Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts
 
 **Deployment of the new retail deployable package fails with the message:**
 
@@ -134,6 +134,20 @@ Could not load file or assembly "Microsoft.Dynamics.Commerce.RetailServer.Extens
 This error may occur if the extension project upgraded from Retail SDK version 10.0.10 or 10.0.11 to Retail SDK version 10.0.12 or later, and there are extension projects referencing Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts.
 
 To fix this issue, remove the reference to Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts in the extension project and regenerate the package and deploy again. Removing this reference library will not impact extension code/functionality because it’s not needed for extension solutions. Starting in version 10.0.11, extensions can refer to Microsoft.Dynamics.Commerce.Hosting.Contracts for Retail server APIs.
+
+## MSBuild in SDK version 10.0.19 and 10.0.20 fails while checking VS2017 dependencies
+
+Retail SDK version 10.0.19 and 10.0.20 msbuild command fails while checking for the VS 2017 dependencies, during msbuild the script check if all the prerequisites are installed, if not installed the script will try to install the prerequisites but the script fails while checking for the prerequisites with errors like below:
+
+- Error RetailSDK\dirs.proj(14,9): Error MSB3073: The command "powershell -NoProfile -NonInteractive .\BuildTools\checkVS2017Dependencies.ps1" exited with code -1.
+- Error MSB3073: The command "powershell -NoProfile -NonInteractive .\BuildTools\checkVS2017Dependencies.ps1" exited with code -1.
+- EXEC : An error occurred: Microsoft.VisualStudio.Product.Professional (15.9.28307.1440) vsconfig export fail! [K:\10.0.
+19\RetailSDK\Code\dirs.proj]
+
+To mitigate the above issue, run msbuild with the parameter **msbuild /p:CheckVSDependencies=False**. If prerequisites are missing, install it manually by following the [SDK prerequisite doc](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-overview#prerequisites)
+
+In the Azure DevOps pipeline pass the parameter -p:CheckVSDependencies=False in the MSBuild arguments.
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
