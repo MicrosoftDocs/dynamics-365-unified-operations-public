@@ -64,9 +64,9 @@ To add an image list module to a new page and set the required properties in Com
 1. Go to **Pages** and open the site home page (or create a new one using the marketing template).
 1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Image list**, and then select **OK**.
-1. In the property panel for image list module, add a heading (for example, "Our brands").
-1. In the property panel for image list module, add an image list item and specify an image, some paragraph text, and a redirection URL.
-1. Add and configure additional image list items as needed.
+1. In the property pane for image list module, add a heading (for example, "Our brands").
+1. In the property pane for image list module, add an image list item and specify an image, some paragraph text, and a redirection URL.
+1. Add and configure additional image list item modules as needed.
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
 
