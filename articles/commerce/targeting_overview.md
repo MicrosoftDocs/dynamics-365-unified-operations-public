@@ -34,6 +34,8 @@ You can create and manage audiences in site builder based on customer data such 
 ## Audiences
 An audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information or segments available in the customer's request. Commerce natively supports segments such as device info (desktop/mobile/tablet, OS, browser), sign-in status, referrer and query string parameters. Additionally, Commerce also supports connecting to third-party geolocation and segmentation providers. For more information on setting up connectors, see [Configure and enable connectors](e-commerce-extensibility/connectors.md).
 
+<<TODO: Add legal disclaimer>>
+
 To create an audience in Commerce site builder, follow these steps.
 1. Select **Audiences** in the left navigation pane, and then select **New**.
 2. Give your audience a name and optionally add tags and a description. 
@@ -78,6 +80,6 @@ To manage your targets, go to the default page or fragment and follow these step
 ### Localize targets
 Targets in pages and fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, delete the targets before the localization progress. If you need to create different schedules per locale, you will need to create different targets per each locale.
 
-<<Open - C1 needs explicit cookie consent from C2; need to include info on that module>>
+<<TODO - C1 needs to get explicit cookie consent from C2 for targeting; need to include info on that module>>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
