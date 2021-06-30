@@ -68,15 +68,13 @@ To preview the target as a member of an audience and on a particular day, click 
 
 You can also target fragments in a similar way from the **Fragments** tab in the left navigation pane.
 
-To manage your module or fragment targets, go to the default page or fragment and follow these steps:
+To manage your targets, go to the default page or fragment and follow these steps.
 1. Edit
 2. Delete
 3. Prioritize
 
-Targets can be localized.
-* During localization, all activities + any scheduling automatically go with locale variants, whether users want it or not. 
-**	If they don’t want it, they will have to manually delete it.
-**	If they need different schedules per locale, they need to create different activities per locale.
+Targets in pages and fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, you will need to delete the targets before the localization progress. If you need to create different schedules per locale, you will need to create different targets per each locale.
+
 *	C1 needs explicit cookie consent from C2 – need to include info on that module
 
 
