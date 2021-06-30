@@ -103,6 +103,13 @@ If the channel-side information isn't up to date for some reason, and an offline
 > [!NOTE]
 > When the **Unified returns processing experience in POS** feature is turned on, new optional features that support the validation of serialized product returns become available. For more information, see [Return serial number–controlled products in Point of Sale (POS)](POS-serial-returns.md).
 
+## Enable proper tax calculation for returns with partial quantity
+
+This feature ensures that when an order is returned using multiple invoices, the taxes will ultimately be equal to the tax amount originally charged.
+1.	Go to the **Feature management** workspace and search for **Enable proper tax calculation for returns with partial quantity**.
+2.	Select **Enable proper tax calculation for returns with partial quantity** and then click **Enable**.
+
+
 ## Additional resources
 
 [Return serial number–controlled products in Point of Sale (POS)](POS-serial-returns.md)
