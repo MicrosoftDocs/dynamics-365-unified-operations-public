@@ -56,6 +56,6 @@ Complete the following steps to allow copying of the budget plan narrative descr
     - The **Copy a budget plan** slider will open, which includes the **Budget plan narrative** flags.
 - Generate budget plan from a budget plan
     - Go to **Budgeting > Periodic > Generate budget plan from an budget plan**.
-    - The **Budget plan narrative** flags are included on this page. These flages will only be available when **Action** is set to a value of **Create a new budget plan**.
+    - The **Budget plan narrative** flags are included on this page. These flags will only be available when **Action** is set to a value of **Create a new budget plan**.
 4. From both above pages, select the narrative field(s) you want to copy to the new plan (if any).
 5. Once the budget plan is copied, the selected budget plan narrative fields will be copied to the new plan.
