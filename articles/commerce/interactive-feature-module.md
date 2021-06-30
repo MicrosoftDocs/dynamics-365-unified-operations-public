@@ -26,7 +26,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Interactive Feature
+# Interactive feature module
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
