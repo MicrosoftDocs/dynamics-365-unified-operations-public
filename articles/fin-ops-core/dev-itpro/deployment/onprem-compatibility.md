@@ -33,7 +33,9 @@ This topic explains which versions of dependent software are compatible with dif
 
 ## Microsoft Windows Server
 
-| Version                       | Supported since    | End of support     |
+Both Microsoft Windows Server Standard and Datacenter versions are supported.
+
+| Version                       | Supported since    | End of life        |
 |-------------------------------|--------------------|--------------------|
 | Microsoft Windows Server 2019 | platform update 41 | N/A                |
 | Microsoft Windows Server 2016 | original release   | platform update 50 |
@@ -45,7 +47,7 @@ This covers the following components:
  - SQL Server Reporting Services
  - SQL Server Integration Services
 
-| Version                       | Supported since    | End of support     |
+| Version                       | Supported since    | End of life        |
 |-------------------------------|--------------------|--------------------|
 | Microsoft SQL Server 2016 SP2 | platform update 33 | N/A                |
 | Microsoft SQL Server 2016 SP1 | original release   | platform update 38 |
@@ -63,7 +65,7 @@ Your Service Fabric cluster should always be on a supported version according to
 
 This is an optional component. For more information see [Configure document preview](../../fin-ops/organization-administration/configure-document-management#for-a-microsoft-dynamics-365-finance--operations-on-premises-environment)
 
-| Version                      | Supported since    | End of support |
+| Version                      | Supported since    | End of life    |
 |------------------------------|--------------------|----------------|
 | Microsoft Office Server 2017 | platform update 12 | N/A            |
 
