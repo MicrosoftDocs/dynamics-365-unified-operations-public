@@ -113,7 +113,7 @@ Yes, the Human Resources app for Teams will continue to work after the migration
 
 Yes, custom security configurations will be included in the data migration to the new infrastructure.
 
-### We are using Data integrator to move data between Dynamics 365 Human Resources and Finance and Opearations apps. How will the data that is currently being integrated be affected?
+### We are using Data integrator to move data between Dynamics 365 Human Resources and Finance and Operations apps. How will the data that is currently being integrated be affected?
 
 HR data that is currently mastered in Dynamics 365 Human Resources is synchronized with Dataverse. Data Integrator can then be used for one-way synchronization with Finance and Operations apps. After the migration to the new infrastructure, HR data will be native to Finance and Operations apps. Data integrator will no longer be required to synchronize the data between Finance and Operations apps and Human Resources.
 
