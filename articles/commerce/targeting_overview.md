@@ -61,8 +61,8 @@ To target page modules in Commerce site builder, follow these steps.
 7. Review the details and once everything looks good, click **Create target experience** and **Go to target**. This creates the target shell to which you can now add modules. 
 8. Select the module to be targeted, select the ellipsis (...), and then select **Add to current target**. The targeted module will be highlighted with a green color.
 9. Make the necessary updates to the targeted module and add more modules if required. Click **Save** to save all your changes.
-
-To preview the target as a member of an audience and on a particular day, click on **Preview** in the command bar, select **Advanced preview** and click **Next**. You can either choose from the list of relevent audiences shown here or remove the filter to choose from all audiences. Once everything looks good, click on **Publish** to publish your target immediately or include within a publish group to schedule when it goes live.
+10. To preview the target as a member of an audience and on a particular day, click on **Preview** in the command bar, select **Advanced preview** and click **Next**. You can either choose from the list of relevent audiences shown here or remove the filter to choose from all audiences. 
+11. Once everything looks good, click on **Publish** to publish your target immediately or include within a publish group to schedule when it goes live.
 
 You can also target fragments in a similar way from the **Fragments** tab in the left navigation pane.
 
