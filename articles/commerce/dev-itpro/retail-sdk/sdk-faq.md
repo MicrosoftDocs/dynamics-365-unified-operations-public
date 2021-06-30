@@ -4,7 +4,7 @@
 title: Retail SDK FAQ
 description: This topic summarizes answers to questions that are frequently asked by users of the Retail SDK.
 author: mugunthanm 
-ms.date: 08/10/2020
+ms.date: 06/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -135,19 +135,18 @@ This error may occur if the extension project upgraded from Retail SDK version 1
 
 To fix this issue, remove the reference to Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts in the extension project and regenerate the package and deploy again. Removing this reference library will not impact extension code/functionality because it’s not needed for extension solutions. Starting in version 10.0.11, extensions can refer to Microsoft.Dynamics.Commerce.Hosting.Contracts for Retail server APIs.
 
-## MSBuild in SDK version 10.0.19 and 10.0.20 fails while checking VS2017 dependencies
+## MSBuild in SDK version 10.0.19 and 10.0.20 fails while checking Visual Studio 2017 dependencies
 
-Retail SDK version 10.0.19 and 10.0.20 msbuild command fails while checking for the VS 2017 dependencies, during msbuild the script check if all the prerequisites are installed, if not installed the script will try to install the prerequisites but the script fails while checking for the prerequisites with errors like below:
+In Retail SDK version 10.0.19 and 10.0.20, the MSBuild command fails while checking for Visual Studio 2017 dependencies. During MSBuild, the script checks if all the prerequisites are installed, if not, the script will try to install the prerequisites but will fail and display one of the following errors:
 
 - Error RetailSDK\dirs.proj(14,9): Error MSB3073: The command "powershell -NoProfile -NonInteractive .\BuildTools\checkVS2017Dependencies.ps1" exited with code -1.
 - Error MSB3073: The command "powershell -NoProfile -NonInteractive .\BuildTools\checkVS2017Dependencies.ps1" exited with code -1.
 - EXEC : An error occurred: Microsoft.VisualStudio.Product.Professional (15.9.28307.1440) vsconfig export fail! [K:\10.0.
 19\RetailSDK\Code\dirs.proj]
 
-To mitigate the above issue, run msbuild with the parameter **msbuild /p:CheckVSDependencies=False**. If prerequisites are missing, install it manually by following the [SDK prerequisite doc](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-overview#prerequisites)
+To this resolve issue, run msbuild with the parameter **msbuild /p:CheckVSDependencies=False**. If prerequisites are missing, install everything by manuall by following the [Retail software development kit (SDK) prerequisites](/commerce/dev-itpro/retail-sdk/retail-sdk-overview#prerequisites).
 
-In the Azure DevOps pipeline pass the parameter -p:CheckVSDependencies=False in the MSBuild arguments.
-
+In the Azure DevOps pipeline, pass the parameter -p:CheckVSDependencies=False in the MSBuild argument.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
