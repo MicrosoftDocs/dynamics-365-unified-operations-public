@@ -49,7 +49,7 @@ The following features are generally available with this release.
 | --- | --- | --- |
 | Inform users of workers without employment feature - When advanced access is on, and the **View all workers without employment** feature is disabled in feature management, a banner will display in the workers without employments form. The banner will direct the user to turn on the **View all workers without employment** feature. | Not applicable| [Workers without employment](/dynamics365/human-resources/hr-personnel-workers-without-employment)|
 | Custom field support for Benefits management eligibility rules | [Custom field support for eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |[Configuring eligibility rules](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules) |
-| Leave accrual transaction auditing | Not applicable | [Leave accrual transaction auditing](hr-leave-and-absence-accrue.md#preview-leave-accrual-transaction-auditing)|
+| Leave accrual transaction auditing | Not applicable | [Leave accrual transaction auditing](hr-leave-and-absence-accrue.md)|
 | Leave and absence workflow experience enhancements | [Leave and absence workflow experience enhancements](https://go.microsoft.com/fwlink/?linkid=2147528) | [Request time off](hr-employee-self-service-request-time-off.md)|
 
 ### Bug fixes
