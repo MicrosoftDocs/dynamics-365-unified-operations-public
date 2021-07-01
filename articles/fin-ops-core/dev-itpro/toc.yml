@@ -392,6 +392,8 @@
             href: deployment/on-premises-overview.md
           - name: Plan and prepare for on-premises deployments
             href: deployment/plan-onprem-deployment.md
+          - name: Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
+            href: deployment/onprem-compatibility.md
           - name: Hardware sizing requirements
             href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
           - name: Authentication in Dynamics 365 Finance + Operations (on-premises)
