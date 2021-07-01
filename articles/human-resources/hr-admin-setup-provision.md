@@ -2,9 +2,9 @@
 # required metadata
 
 title: Provision Human Resources
-description: This article walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
+description: This topic walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 04/23/2020
+ms.date: 06/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,9 +33,15 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This article walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. This article assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.
+This topic walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. This topic assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.
 
 To begin, the global administrator should sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and create a new Human Resources project. Unless a licensing issue prevents you from provisioning Human Resource, assistance from Support or Dynamics Service Engineering (DSE) representatives isn't required.
+
+## Provision a Human Resources trial environment
+
+Prior to provisioning your first sandbox or production environment, you may want to provision a [Human Resources trial environment](https://go.microsoft.com/fwlink/p/?LinkId=2115962) to validate Human Resources functionality. Trial environments contain fictitious data that can be used to explore the program in a safe manner. Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources. 
+
+Trial environments aren't intended to be used as production environments. They are limited to a 60-day trial period. When the trial period expires, the environment and all the data that's in it is deleted and can't be recovered. The environment cannot be converted to a sandbox or production environment. You can sign up for a new trial environment after the existing environment expires.
 
 ## Plan Human Resources environments
 
@@ -100,8 +106,6 @@ After you've created an LCS project, you can provision Human Resources into an e
     > [!NOTE]
     > If you haven't yet signed off on the final requirements, you can deploy a test instance of Human Resources in the project. You can then use this instance to test your solution until you sign off. If you use your new environment for testing, you must repeat this procedure to create a production environment.
 
-    > You might consider leveraging a free 60-day [Human Resources trial environment](https://go.microsoft.com/fwlink/p/?LinkId=2115962). Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources. Trial environments contain fictitious data that can be used to explore the program in a safe manner. They aren't intended to be used as production environments. Note that when a trial environment expires after 60 days, all the data that's in it is deleted and can't be recovered. You can sign up for a new trial environment after the existing environment expires.
-
 ## Select a Power Apps environment
 
 You can integrate and extend the use of Human Resources data using Power Apps tools. For information about Power Apps environments, including environment scope, environment access, and creating and choosing an environment, see [Announcing Power Apps environments](https://powerapps.microsoft.com/blog/powerapps-environments/). 
@@ -137,7 +141,7 @@ Human Resources currently supports the following geographies:
 - Canada
 - Asia 
 
-When you create a Human Resources environment, you select a Power Apps environment to associate with the Human Resources environment. The Human Resources environment is then provisioned in the same Azure geography as the selected Power Apps environment. You can select where the Human Resources environment and database physically reside by selecting the geography when creating the Power Apps enviornment that will be associated with the Human Resources environment.
+When you create a Human Resources environment, you select a Power Apps environment to associate with the Human Resources environment. The Human Resources environment is then provisioned in the same Azure geography as the selected Power Apps environment. You can select where the Human Resources environment and database physically reside by selecting the geography when creating the Power Apps environment that will be associated with the Human Resources environment.
 
 You can select the Azure *geography* in which the environment is provisioned, but you can't select the specific Azure *region*. Automation determines the specific region within the geography in which the environment is created to optimize load balancing and performance. You can find information on Azure geographies and regions in the documentation on [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies).
 

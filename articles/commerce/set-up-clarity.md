@@ -30,7 +30,6 @@ ms.dyn365.ops.version:
 # Set up Microsoft Clarity in Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers how to set up Microsoft Clarity in your Dynamics 365 Commerce environment. 
 

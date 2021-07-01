@@ -491,7 +491,7 @@ After an electronic message has a status of **Ready to generate VAT return**, yo
 
 ## Generate a VAT return in Excel format for preview
 
-To generate a VAT return in **VAT 100** report format in Excel, complete the following steos. 
+To generate a VAT return in **VAT 100** report format in Excel, complete the following steps. 
 
 1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select either the **UK MTD VAT TEST** processing (for testing purposes) or the **UK MTD VAT returns** processing (for real-life interoperation with the production HMRC web application). 
 2. On the **Messages** FastTab, select the electronic message record that is related to the period that you want to generate a file for, and then select **Generate report**. The **Generate report** button is available only for electronic messages that have the following statuses:
@@ -576,8 +576,8 @@ To prepare ER configurations to generate the common VAT return for a VAT group, 
 |-----------------------------------|-------------|
 | Tax declaration model.version.**32** | Generic model for different tax declarations. |
 | Tax declaration model mapping.version.**32.35** | Generic model mapping for VAT declarations. |
-| MTD VAT returns exporting JSON (UK).version.**32.27** | VAT return in JSON format for submission to MTD HMRC. |
-| MTD VAT returns exporting EXCEL (UK).version.**32.27.7** | **VAT 100** report (declaration in Excel format). |
+| VAT Declaration JSON (UK).version.**32.28** | VAT return in JSON format for submission to MTD HMRC. |
+| VAT Declaration Excel (UK).version.**32.28.8** | **VAT 100** report (declaration in Excel format). |
 
 In these versions and later, the tax declaration model, model mapping, and both formats for the UK VAT return support cross-company tax transaction data sources, and they can be used to aggregate data from several legal entities. These configurations can still be used to report the VAT return for just one legal entity.
 
@@ -586,11 +586,11 @@ In these versions and later, the tax declaration model, model mapping, and both 
 
 To use the formats to report the VAT return for a group of several legal entities, you must set up application-specific parameters **for each legal entity that is included into the group**.
 
-1. In the **Electronic reporting** workspace, select **Tax declaration model**, and then, in the configuration tree, select the **MTD VAT returns exporting JSON (UK)** format. 
+1. In the **Electronic reporting** workspace, select **Tax declaration model**, and then, in the configuration tree, select the **VAT Declaration JSON (UK)** format. 
 2. In the upper-right corner, select the legal entity that tax transactions must be included for in the VAT return for the VAT group.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**. In the left pane of the **Application specific parameters** page, select the latest version of the format. Then, on the **Conditions** FastTab, define conditions. For more information about how to define conditions, see the [Set up application-specific parameters](#set-up-application-specific-parameters) section earlier in this topic. Finally, change the status to **Completed**, save your changes, and close the **Application specific parameters** page.
 4. Repeat steps 2 through 3 for the other legal entities in your system that are included in the VAT group.
-5. Repeat steps 1 through 4 above for the **MTD VAT returns exporting EXCEL (UK)** format.
+5. Repeat steps 1 through 4 above for the **VAT Declaration Excel (UK)** format.
 
 ### Set up additional Electronic messages functionality to collect data from several legal entities for VAT return reporting for a VAT group
 
@@ -845,40 +845,27 @@ If the ER configurations from previous table were successfully imported, but the
 
 ## Using the MTD feature outside the UK
 
-A company that is registered for VAT in the territory of the UK might have a primary address that is outside the UK. To simplify adoption of the MTD for VAT feature in legal entities that have a primary address outside the UK, the following ER formats are delivered without any **ISO country/region code** parameter:
+A company that is registered for VAT in the territory of the UK might have a primary address that is outside the UK. To simplify adoption of the MTD for VAT feature in legal entities that have a primary address outside the UK, the following ER configurations are delivered without any **ISO country/region code** parameter:
 
-- MTD VAT return response importing JSON (UK).version.19.10 
-- MTD VAT import token format (UK).version.19.8 
-- MTD VAT web request headers format (UK).version.22.22 
-- MTD VAT authorization format (UK).version.19.7 
-- MTD VAT interoperation (UK).version.31.8 
-- MTD VAT obligations importing JSON (UK).version.31.9 
+- MTD VAT importing model mapping (UK) version 31.36 and later
+- MTD VAT return response importing JSON (UK) version 19.10 and later
+- MTD VAT import token format (UK) version 19.8 and later 
+- Tax declaration model mapping version 95.158 and later
+- MTD VAT web request headers format (UK) version 22.22 and later
+- MTD VAT authorization format (UK) version 19.7 and later
+- MTD VAT interoperation (UK) version 31.8 and later
+- MTD VAT obligations importing JSON (UK) version 31.9 and later
+- VAT Declaration JSON (UK) version 32.31 and later
+- VAT Declaration Excel (UK) version 32.30.16 and later
 
-When these ER formats and later versions of them are used, the MTD for VAT feature can be set up and used in legal entities that have a primary address in any country or region.
-
-The following ER formats are used to generate a VAT declaration (**VAT 100** report in Excel format and VAT return in JSON format):
-
-- VAT Declaration JSON (UK) 
-- VAT Declaration Excel (UK) 
-
-For these formats, the **ISO country/region code** parameter is still set to **GB**.
+When these and later versions of the ER configurations are used, the MTD for the VAT feature can be set up and used in legal entities that have a primary address in any country or region.
 
 When a company that has a primary address outside the UK uses MTD for VAT, it's important that the VAT setup in the related legal entity be completed according to UK rules. VAT management must be done in an appropriate manner, so that a VAT declaration is correctly generated according to HMRC requirements. 
 
 When a company that has a primary address outside the UK considers VAT management in the legal entity, it must follow these steps to set up the MTD for VAT feature.
 
-1. Derive the **VAT Declaration JSON (UK)** ER format, and then, for the child configuration, define the International Organization for Standardization (ISO) country/region code that is related to the ISO code in the primary address of this legal entity. You can complete this step on the **ISO country/region code** FastTab for the selected format.
-2. Derive the **VAT Declaration Excel (UK)** ER format, and then, for the child configuration, define the ISO country/region code that is related to the ISO code in the primary address of this legal entity. You can complete this step on the **ISO country/region code** FastTab for the selected format.
-3. Import or set up application-specific parameters for the child configurations of the **VAT Declaration JSON (UK)** and **VAT Declaration Excel (UK)** formats.
-4. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message processing**, and select **Generate file for submission**.
-5. In the **Format mapping** field, select the child configuration of the **VAT Declaration JSON (UK)** format.
-6. On the **Electronic messages** page, select **Message processing**, and then select **Preview VAT return**. 
-7. In the **Format mapping** field, select the child configuration of the **VAT Declaration Excel (UK)** format.
-
-For more information about how to derive ER configurations, see [Version control](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md) and 
-[Building a format selecting another format as a base](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
-
-For more information about how to set up application-specific parameters for MTD for VAT, see the [Set up application-specific parameters](#set-up-application-specific-parameters) section earlier in this topic.
+1. Download and import a package of data entities that include a predefined electronic message setup of version 4 or later (starting from **UK MTD VAT setup\_v4\_KB4617940.zip**). For more information about this process, see the [Import a package of data entities that includes a predefined electronic message setup](#import-a-package-of-data-entities-that-includes-a-predefined-electronic-message-setup) section earlier in this topic. This version of the package adds a new **Tax registration number** field to the **UK MTD VAT returns** and **UK MTD VAT TEST** electronic messaging process. Use this new field to define the VAT registration number (VRN) from the name of the VAT return that will be sent to HMRC.
+2. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**. On the **Additional fields** FastTab, in the **Tax registration number** field, define the VRN from the name of the VAT return that will be sent to HMRC for the production MTD processing (**UK MTD VAT returns**). This field isn't available during the processing of electronic messages. Instead, it's automatically filled in and processed by the system. If the **Tax registration number** field is blank for the electronic message processing, the previously supported algorithm is used to collect the value. For more information about that algorithm, see the [Obtain an authorization code for the production environment](#obtain-an-authorization-code-for-the-production-environment) section earlier in this topic.
 
 ## Appendix 1: Electronic messages setup for MTD for VAT
 
@@ -1265,8 +1252,8 @@ The following versions of the ER configurations must be imported and used for th
 |----------------------------------------------------------|-------------|
 | Tax declaration model.version.**32**                     | Generic model for different tax declarations. |
 | Tax declaration model mapping.version.**32.35**          | Generic model mapping for VAT declarations. |
-| MTD VAT returns exporting JSON (UK).version.**32.27**    | VAT return in JSON format for submission to MTD HMRC. |
-| MTD VAT returns exporting EXCEL (UK).version.**32.27.7** | **VAT 100** report (declaration in Excel format). |
+| VAT Declaration JSON (UK).version.**32.28**    | VAT return in JSON format for submission to MTD HMRC. |
+| VAT Declaration Excel (UK).version.**32.28.8** | **VAT 100** report (declaration in Excel format). |
 
 For Finance and Operations 7.3, KB 4513052 must be installed. In addition, the latest version of the ER update and the following versions of Electronic reporting configurations must be used.
 
@@ -1274,8 +1261,8 @@ For Finance and Operations 7.3, KB 4513052 must be installed. In addition, the l
 |----------------------------------------------------------|-------------|
 | Tax declaration model.version.**32**                     | Generic model for different tax declarations. |
 | Tax declaration model mapping.version.**32.38**          | Generic model mapping for VAT declarations. |
-| MTD VAT returns exporting JSON (UK).version.**32.28**    | VAT return in JSON format for submission to MTD HMRC. |
-| MTD VAT returns exporting EXCEL (UK).version.**32.28.8** | **VAT 100** report (declaration in Excel format). |
+| VAT Declaration JSON (UK).version.**32.28**    | VAT return in JSON format for submission to MTD HMRC. |
+| VAT Declaration Excel (UK).version.**32.28.8** | **VAT 100** report (declaration in Excel format). |
 
 These versions of the ER configurations are also compatible with Finance version 10.0.7 and later. 
 

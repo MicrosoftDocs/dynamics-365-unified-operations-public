@@ -22,7 +22,7 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 
 - **Preview of release:** May 2021
 - **General availability of release (self-update):** July 2021
-- **General availability of release (auto-update):** July 2021
+- **General availability of release (auto-update):** August 2021
 
 
 ## Features included in this release

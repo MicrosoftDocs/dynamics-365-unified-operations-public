@@ -100,8 +100,6 @@
             href: get-started/whats-new-commerce-10-0-19.md
           - name: Commerce 10.0.18 (May 2021)
             href: get-started/whats-new-commerce-10-0-18.md
-          - name: Commerce 10.0.17 (April 2021)
-            href: get-started/whats-new-commerce-10-0-17.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -244,7 +242,7 @@
           href: arch-auth-flow.md
         - name: Dynamics 365 Commerce component versioning requirements
           href: arch-component-versioning.md
-        - name: Headless commerce engine architecture
+        - name: Headless commerce architecture
           href: dev-itpro/retail-server-architecture.md
         - name: Select an in-store topology
           href: dev-itpro/retail-in-store-topology.md
@@ -1248,6 +1246,16 @@
           href: localizations/latam-bra-commerce-localization.md
         - name: Set up and deploy Commerce localization for Brazil
           href: localizations/latam-bra-deployment.md
+        - name: NFC-e fiscal document functionality in Commerce POS for Brazil
+          href: localizations/latam-bra-nfce.md 
+        - name: Manage customer information in POS for Brazil
+          href: localizations/latam-bra-customer-information.md     
+        - name: Cancellation and return of NFC-e documents in Commerce POS for Brazil
+          href: localizations/latam-bra-nfce-cancel-return.md 
+        - name: Postponed registration of NFC-e documents issued in offline contingency mode
+          href: localizations/latam-bra-nfce-contingency-mode.md          
+        - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters 
+          href: localizations/latam-bra-retail-statements.md
       - name: Eastern Europe
         items: 
         - name: Common
@@ -1458,6 +1466,12 @@
         items:
         - name: Formula language
           href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json  
+        - name: Supported data types for ER formulas
+          items:
+          - name: Primitive data types 
+            href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/commerce/toc.json
+          - name: Composite data types
+            href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/commerce/toc.json
         - name: Functions
           items:
           - name: Container 
@@ -2002,12 +2016,16 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/commerce/toc.json
           - name: Application update 10.0.17
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/commerce/toc.json
+          - name: Application update 10.0.19
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
         - name: Specify a custom storage location for generated documents 
           items:
           - name: Subscribe to an event to request a response from subscribing handler
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
           - name: Delegate the creation of an ER destination to a custom destination factory
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/commerce/toc.json
+        - name: Implement a custom destination for generated documents
+          href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
         - name: Initiate data source values of the USER INPUT PARAMETER type from source code
           href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
     - name: Finance and Operations (Dynamics 365) mobile app
@@ -2128,6 +2146,8 @@
             href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/commerce/toc.json
           - name: Configure approval steps
             href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/commerce/toc.json
+          - name: Configure expenditure reviewers
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/commerce/toc.json
           - name: Configure manual decisions
             href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/commerce/toc.json
           - name: Configure conditional decisions

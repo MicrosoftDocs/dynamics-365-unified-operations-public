@@ -4,7 +4,7 @@
 title: VAT declaration (Netherlands)
 description: This topic provides information about VAT declaration for Netherlands.
 author: anasyash
-ms.date: 05/24/2021
+ms.date: 06/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,6 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 To automatically generate the VAT declaration, you must create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the VAT declaration electronic reporting format, you must associate sales tax codes with the lookup result of the lookup for the VAT declaration boxes. For more information about how to set up application-specific parameters, see *Set up application parameters for declaration fields* later in this topic.
 
@@ -750,11 +749,11 @@ The following steps are applicable to the example electronic message processing 
    - **Report getting status error (business)**: If Digipoort didn’t acknowledge the report. In this case, the Infolog shows a list of errors received from Digipoort. To review list of errors later, on the **Action log** FastTab, select a line with **Get report status**, and select **Attachments**. Review the list of errors in the **Notes** field.
    - **Report getting status error (technical)**: If a technical error occurred when importing the response from Digipoort.
 
-### Run a VAT declaration for several legal entities
+## Run a VAT declaration for several legal entities
 
 To use the formats to report the VAT declaration for a group of several legal entities, first set up the application-specific parameters of the ER formats for sales tax codes from all required legal entities.
 
-#### Set up electronic messages to collect data from several legal entities
+### Set up electronic messages to collect data from several legal entities
 
 To set up electronic messages to collect data from several legal entities, follow these steps:
 

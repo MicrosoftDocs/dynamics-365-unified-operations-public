@@ -29,7 +29,6 @@ ms.dyn365.ops.version:
 # Apply unit of measure settings
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers unit of measure settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 

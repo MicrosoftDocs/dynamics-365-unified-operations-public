@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 06/02/2021
+ms.date: 06/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -964,7 +964,7 @@ Finance + Operations requires additional configuration of AD FS, beyond the defa
 
 2. You should disable Windows Integrated Authentication (WIA) for intranet authentication connections, unless you've configured AD FS for mixed environments. For more information about how to configure WIA so that it can be used with AD FS, see [Configure browsers to use Windows Integrated Authentication (WIA) with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia).
 
-    This command is related to using forms authentication upon sign-in the Finance + Operations client. Other options, such as single sign-on, might be available but require additional setup.
+    This command is related to using forms authentication upon sign-in to the Finance + Operations client. Other options, such as single sign-on, are not supported.
 
     ```powershell
     Set-AdfsGlobalAuthenticationPolicy -PrimaryIntranetAuthenticationProvider FormsAuthentication, MicrosoftPassportAuthentication

@@ -28,7 +28,13 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic provides details and an example query for the Payroll employee entity in Dynamics 365 Human Resources.
+This topic describes the Payroll employee entity for Dynamics 365 Human Resources.
+
+Physical name: mshr_payrollemployeeentity.
+
+### Description
+
+This entity provides information about the employee. You must set the [payroll integration parameters](hr-admin-integration-payroll-api-parameters.md) before using this entity.
 
 ## Properties
 
@@ -39,7 +45,7 @@ This topic provides details and an example query for the Payroll employee entity
 | **Last name**<br>mshr_lastname<br>*String* | Read only<br>Required | Employee last name. |
 | **Legal entity ID**<br>mshr_legalentityID<br>*String* | Read-only<br>Required | Specifies the legal entity (company). |
 | **Valid from**<br>mshr_namevalidfrom<br>*Date Time Offset* | Read-only <br>Required | Date the employee information is valid from.  |
-| **Gender**<br>mshr_gender<br>*Int32* | Read-only<br>Required | The employee's gender. |
+| **Gender**<br>mshr_gender<br>[mshr_hcmpersongender option set](hr-admin-integration-payroll-api-gender.md) | Read-only<br>Required | The employee's gender. |
 | **Payroll employee entity ID**<br>mshr_payrollemployeeentityid<br>*GUID* | Required<br>System generated | A system-generated GUID value to uniquely identify the employee. |
 | **Employment start date**<br>mshr_employmentstartdate<br>*Date time offset* | Read-only<br>Required | The start date of the employee's employment. |
 | **Identification type ID**<br>mshr_identificationtypeid<br>*String* |Read-only<br>Required | The identification type defined for the employee. |
@@ -63,25 +69,30 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_pe
 
 ```json
 {
-	     "mshr_legalentityid": "USMF",
-            "mshr_personnelnumber": "000041",
-            "mshr_employmentstartdate": "2011-04-05T07:00:00Z",
-            "mshr_employmentenddate": "2154-12-31T23:59:59Z",
-            "mshr_firstname": "Cassie",
-            "mshr_middlename": "Lassie",
-            "mshr_lastname": "Hicks",
-            "mshr_namevalidfrom": "2021-03-12T20:34:25Z",
-            "mshr_namevalidto": "2154-12-31T23:59:59Z",
-            "mshr_birthdate": "1987-09-12T00:00:00Z",
-            "mshr_gender": 200000002,
-            "mshr_identificationtypeid": "SSN",
-            "mshr_identificationnumber": "888-99-9342",
-            "mshr_dataareaid": "USMF",
-            "mshr_primaryfield": "000041 | USMF | 4/5/2011 07:00:00 am",
-            "_mshr_fk_worker_id_value": "000000ad-0000-0000-d5ff-004105000000",
-            "_mshr_fk_employment_id_value": "00000d0d-0000-0000-0600-014105000000",
-            "_mshr_fk_fixedcompplan_id_value": "0000029f-0000-0000-d5ff-004105000000",
-            "mshr_payrollemployeeentityid": "00000d3c-0000-0000-d5ff-004105000000",
-            "_mshr_dataareaid_id_value": null
+    "mshr_legalentityid": "USMF",
+    "mshr_personnelnumber": "000041",
+    "mshr_employmentstartdate": "2011-04-05T07:00:00Z",
+    "mshr_employmentenddate": "2154-12-31T23:59:59Z",
+    "mshr_firstname": "Cassie",
+    "mshr_middlename": "Lassie",
+    "mshr_lastname": "Hicks",
+    "mshr_namevalidfrom": "2021-03-12T20:34:25Z",
+    "mshr_namevalidto": "2154-12-31T23:59:59Z",
+    "mshr_birthdate": "1987-09-12T00:00:00Z",
+    "mshr_gender": 200000002,
+    "mshr_identificationtypeid": "SSN",
+    "mshr_identificationnumber": "888-99-9342",
+    "mshr_dataareaid": "USMF",
+    "mshr_primaryfield": "000041 | USMF | 4/5/2011 07:00:00 am",
+    "_mshr_fk_worker_id_value": "000000ad-0000-0000-d5ff-004105000000",
+    "_mshr_fk_employment_id_value": "00000d0d-0000-0000-0600-014105000000",
+    "_mshr_fk_fixedcompplan_id_value": "0000029f-0000-0000-d5ff-004105000000",
+    "mshr_payrollemployeeentityid": "00000d3c-0000-0000-d5ff-004105000000",
+    "_mshr_dataareaid_id_value": null
 }
 ```
+## See also
+
+[Payroll integration API introduction](hr-admin-integration-payroll-api-introduction.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
