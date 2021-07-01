@@ -63,7 +63,7 @@ Your Service Fabric cluster should always be on a supported version according to
 
 ## Microsoft Office Server
 
-This is an optional component. For more information see [Configure document preview](../../fin-ops/organization-administration/configure-document-management#for-a-microsoft-dynamics-365-finance--operations-on-premises-environment)
+This is an optional component. For more information see [Configure document preview](../../fin-ops/organization-administration/configure-document-management#for-a-microsoft-dynamics-365-finance-operations-on-premises-environment)
 
 | Version                      | Supported since    | End of life    |
 |------------------------------|--------------------|----------------|
