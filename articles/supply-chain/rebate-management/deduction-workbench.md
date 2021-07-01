@@ -84,7 +84,7 @@ To allow multiple customer lines in one voucher:
 1. Go to **General ledger \> Ledger setup \> General ledger parameters**.
 1. Open the **Ledger** tab
 1. On the **General** FastTab, set **Allow multiple transactions within one voucher** to *Yes*.
-1. A warning appears. Select **Yes** to accept the change.
+1. If a warning appears, just select **Close** to accept the change.
 
 <a name="deduction-reasons"></a>
 
@@ -261,18 +261,14 @@ To create a credit note, follow these steps.
 
 In the deduction workbench, you can match deductions to open credit transactions, split deductions, deny deductions, and write off deductions.
 
-To process a deduction in the deduction workbench, follow these steps.
-
-1. Go to **Trade allowance management \> Common \> Deduction workbench**.
-1. Select the **Mark** check box for the deduction you want to process.
-1. Depending on how you want to process the deduction, complete one or more of the procedures provided in the following subsections.
-
-You can combine the procedures described in this section. For example, you can split a deduction into two parts, and then match one part to a credit but leave the remaining part in the workbench to be matched to another credit later. You can also can match a deduction to a credit that is smaller than the deduction amount, and then deny or write off the remaining balance of the deduction.
+Depending on how you want to process a deduction, complete one or more of the procedures provided in the following subsections. You can combine the procedures as needed. For example, you can split a deduction into two parts, and then match one part to a credit but leave the remaining part in the workbench to be matched to another credit later. You can also can match a deduction to a credit that is smaller than the deduction amount, and then deny or write off the remaining balance of the deduction.
 
 ### Match a deduction to a credit
 
 To match a deduction to a credit:
 
+1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Select the **Mark** check box for the deduction you want to process.
 1. In the **Open transactions** section, select the **Mark** check box for the credit to match to the deduction. If multiple credits are listed, you can select more than one credit to match to the deduction. Or, if you want the system to automatically select credits that match the amount of the deduction, open the **Select deduction amount** menu in the toolbar and select an appropriate option.
 1. On the Action Pane, select **Maintain \> Match**. The system matches the deduction to the credit. If a balance remains in the deduction, this balance appears in the **Remaining amount** field on the **Deductions** tab.
 
@@ -283,6 +279,8 @@ To match a deduction to a credit:
 
 To split a deduction:
 
+1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Select the **Mark** check box for the deduction you want to process.
 1. On the Action Pane, select **Maintain \> Split**.
 1. The **Split** dialog opens. In the **Split amount** field, enter the amount to split from the main deduction.
 1. Select **OK**.
@@ -295,6 +293,8 @@ For deductions created using the **New deduction** command from the deduction wo
 
 To attach an invoice to a deduction:
 
+1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Select the **Mark** check box for the deduction you want to process.
 1. On the Action Pane, select **Maintain \> Attach invoice**.
 1. The **Attach invoice** dialog opens. Select an invoice.
 1. Select **OK**.
@@ -310,144 +310,179 @@ To attach an invoice to a deduction:
 
 For deductions created using the **New deduction** command from the deduction workbench, customer settle, or customer page, you can detach an invoice to any deduction that currently has one attached (these are deductions where the **Invoice** column shows an invoice number) and where **Claim status** is set to *Open*. You might do this because an incorrect invoice has been attached. This removes the invoice from the deduction and updates the remaining balance of the previously attached invoice if it was reduced by attaching the invoice.
 
-To detach an invoice, select a deduction and, on the Action Pane, select **Maintain \> Detach invoice**.
+To detach an invoice:
+
+1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Select the **Mark** check box for the deduction you want to process.
+1. On the Action Pane, select **Maintain \> Detach invoice**.
 
 ### Approve a deduction
 
-You can approve deductions created using **New deduction** command from the deduction workbench, customer settle, or customer page. You can only approve deductions where **Claim status** is set to *Open*.
+You can approve deductions created using the **New deduction** command from the deduction workbench, customer settle, or customer page. You can only approve deductions where **Claim status** is set to *Open*.
 
 To approve a deduction:
 
+1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Select the **Mark** check box for the deduction you want to process.
 1. On the Action Pane, select **Maintain \> Approve deduction**.
 1. The **Approve deduction** dialog opens. Edit or add to the **Note** field as needed.
 1. If an invoice has not been attached to a price-based deduction, select an **Item sales tax group**. Normally, the tax item group is on the invoice, and therefor the tax item code must be specified when not attached to an invoice.
-1. Select **OK**. No further changes will be allowed to the deduction. If the **Create claim journal** was set to *No* when the deduction was created, the claim journal will be created and posted when the deduction is approved. After the deduction has been approved, the credit will be automatically created and opened. The type will depend on the deduction's **Claim basis** as follows:<!--KFM: Continue here -->
-    - For deductions with a **Claims basis** of *Price based* – If the deduction is price based a draft, a free text invoice will be created for the customer account. You can add a **Description** and **Post** the credit. The following fields will be populated by the deduction when the draft is created:
-      - **Deduction ID** on the Header for traceability back to the deduction.
-      - **Main account** is determined by **Claim posting account** on the **Deduction reason** assigned to the deduction.
-      - **Item sales tax group** will be determined by the attached invoice else as selected by user when approving the deduction.
-      - **Unit price** is the credit of the deduction's **Claim amount**
-      - **Invoice text** will default from deduction's **Notes**
+1. Select **OK**. No further changes will be allowed to the deduction. If the **Create claim journal** was set to *No* when the deduction was created, the claim journal is be created and posted when the deduction is approved. After the deduction has been approved, the credit is automatically created and opened. The type will depend on the deduction's **Claim basis** as follows:
+    - For deductions with a **Claims basis** of *Price based*:<br>If the deduction is price based a draft, a free text invoice is created for the customer account. You can add a **Description** and **Post** the credit. The following fields are populated by the deduction when the draft is created:
+      - **Deduction ID** – Added to the **Header** for traceability back to the deduction.
+      - **Main account** – Determined by **Claim posting account** on the **Deduction reason** assigned to the deduction.
+      - **Item sales tax group** – Determined by the attached invoice or the value you selected when approving the deduction.
+      - **Unit price** – The credit of the deduction's **Claim amount**
+      - **Invoice text** – Defaults from deduction's **Notes**
 
-    - For deductions with a **Claims basis** of *Quantity based* – If the deduction is quantity based, an open sales order or return order will be created. The **Create return order** setting on **[Accounts receivable parameters](#_Configure_Accounts_receivable)** will determine if a sales order or return order is created when the deduction is approved. The **Copy orders** page will be opened, filtered to **Invoice account** set to the deduction's Customer account.
+    - For deductions with a **Claims basis** of *Quantity based*:<br>If the deduction is quantity based, an open sales order or return order is created. The **Create return order** setting on the **[Accounts receivable parameters](#accounts-receivable-deductions)** page determines whether a sales order or return order is created when the deduction is approved. The **Copy orders** page opens, filtered to show rows where the **Invoice account** is set to the deduction's customer account. <!-- KFM: I didn't see this because of an error. Check again, and copy similar text from next section. -->
       1. Select the applicable **Sales order** and **Lines** and **Quantity** to be copied.
-      1. Press **OK**.
+      1. Select **OK**.
 
-        The following fields will be populated by the deduction when the draft is created:
-        - **Deduction ID** on the Header for traceability back to the deduction.
-        - **Return reason code**, if Return order is created, will default to the **Deduction reason**'s **Return reason code** assigned to the deduction.
+        The following fields are populated by the deduction when the draft is created:
+        - **Deduction ID** – Added to the **Header** for traceability back to the deduction.
+        - **Return reason code** – Defaults to the **Return reason code** set for the **Deduction reason** assigned to the deduction.
 
-1. Once the credit has been invoiced, it will be available on the Deduction workbench's **Open transactions** as **Claim type** set to *Other credits* against the applicable Deduction ID. The credit will be available until settled with the deduction by either:
+1. Once the credit has been invoiced, it will be shown on the deduction workbench's **Open transactions** section with its **Claim type** set to *Other credits* against the applicable **Deduction ID**. The credit will be available until settled with the deduction in one of the following ways:
 
-    - Manually settled using **Maintain \> Match** or
-    - Periodic job **Sales and marketing \> Periodic tasks \> Settle approved claims**.
+    - Manually settled by selecting **Maintain \> Match** on the Action Pane.
+    - Automatically settled by the periodic job **Sales and marketing \> Periodic tasks \> Settle approved claims**.
+    - Automatically settled because the **Automatic settlement** parameter in **Accounts receivable parameters \> Settlement** is set to *Yes*.
 
-    > [!NOTE]
-    > If the **Automatic settlement** parameter in **Accounts receivable parameters \> Settlement** is set to *Yes*, the settle approved claims will not work as the credit will have already been automatically settled.
-
-    The credit that is created when the deduction is approved, open or invoice, can also be viewed using the **Open credit** button available on the **Deduction workbench\> Open transaction** section.
+    The credit that is created when the deduction is approved can also be viewed using the **Open credit** button available on the **Open transactions** section of the deduction workbench.
 
 ### Create a return order
 
-For deductions created using **New deduction** command from the deduction workbench, customer settle, or customer page is only enabled where:
+For deductions created using the **New deduction** command from the deduction workbench, customer settle, or customer page, you can create a return order when all of the following are true:
 
-- **Claim basis** is set to *Quantity based*
-- **Claim status** is set to *Open*
-- **Create return order** setting on **Deductions** tab in **[Accounts receivable parameters](#_Configure_Accounts_receivable)** is set to *Yes,* and
-- **Allow unapproved** setting on **Deductions** tab in **[Accounts receivable parameters](#_Configure_Accounts_receivable)**is set to *Yes*.
+- **Claim basis** is set to *Quantity based*.
+- **Claim status** is set to *Open*.
+- **Create return order** setting on the **Deductions** tab of the **[Accounts receivable parameters](#accounts-receivable-deductions)** page is set to *Yes*.
+- **Create return order prior to deduction approval** setting on the **Deductions** tab of the **[Accounts receivable parameters](#accounts-receivable-deductions)** page is set to *Yes*.
 
-1. On the Action Pane, in the **Maintain** group, select **Create a return order**.
-1. The **Approve** claim is automatically opened and user has the option to edit or add to the existing **Notes** for the deduction.
-1. Press **OK**.
-1. The **Copy orders** page will be opened, filtered to **Invoice account** set to the deduction's Customer account.
-1. Select the applicable **Sales order** and **Lines** and **Quantity** to be copied.
-1. Press **OK**. The following fields on the Return order, will be populated by the deduction when the draft is created:
-    - **Deduction ID** on the Header for traceability back to the deduction.
-    - **Return reason code** will default to the **Deduction reason**'s **Return reason code** assigned to the deduction.
+To create a return order:
+
+1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Select the **Mark** check box for the deduction you want to process.
+1. On the Action Pane, select **Maintain \> Create return order**.
+1. The **Approve deduction** dialog opens. Edit or add to the existing **Notes** as needed and then select **OK**.
+1. The **Copy orders** dialog opens. Expand the **Invoices** FastTab.
+1. The **Headers** section of the **Invoices** FastTab shows sales invoices where the **Invoice account** matches the deduction's customer account. Select an applicable sales invoice.
+1. The **Lines** section shows lines from the selected sales invoice. Mark the **Select** check box for each line you want to copy (or select the **Select all** check box for the sales order in the **Headers** section to select all of its lines).
+1. If necessary, adjust the **Quantity** for one or more lines as needed.
+1. The lines you selected so far are listed on the **Selected lines or header to be copied** FastTab. Repeat the previous two steps as needed until all the required lines are listed here.
+1. Select **OK**. The new return order opens, with the following fields populated automatically:
+    - **Deduction ID** – Added to the **Header** for traceability back to the deduction.
+    - **Return reason code** – Defaults to the **Return reason code** set for the **Deduction reason** assigned to the deduction.
 
 ### Deny a deduction
-
+<!-- KFM: I didn't see this because of an error. Check again, and copy similar text from next section. Bug ID: 596036 -->
 To deny a deduction:
 
-1. On the Action Pane, in the **Maintain** group, select **Deny**.
-1. Select the reason code for the denial. Select **OK** at the top of the **Deny** page and then close the page.
-1. In the **Show** field below the Action Pane, select **Closed**. The denied deduction is displayed on the **Deductions** tab, and the remaining amount for the deduction is set to **0.00**.
-1. For deductions created using **New deduction** command from the deduction workbench, customer settle, or customer page: The **Denial** fields under References will be updated and if the user selected to create the claim journal when the deduction was created and an invoice has been attached to the deduction which reduced the invoice's balance: The invoice will be detached and the previously attached invoice's remaining balance will be increased again by the rejected claim's amount. The deduction's **Status** has now been set to *Closed* and **Claim status** set to *Rejected*.
-1. To reverse the denial, select the deduction record, and then, on the Action Pane, in the **Reverse** group, select **Reverse denial**.
+1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Select the **Mark** check box for the deduction you want to process.
+1. On the Action Pane, select **Maintain \> Deny**.
+1. The **Deny** dialog opens. Select the **Reason code** for the denial and select **OK**. <!-- KFM: I get an error (vague message). -->
+1. In the **Show** field below the Action Pane, select *Closed*. The denied deduction is displayed on the **Deductions** tab, and the **Remaining amount** for the deduction is set to *0.00*. <!-- KFM: This is not what I see. Instead, Claim status is Rejected. Deduction is neither closed nor zero. -->
+1. For deductions created using the **New deduction** command from the deduction workbench, customer settle, or customer page, the following occur:
+    - On the **References** tab, fields in the **Denial** field group are updated.
+    - If you selected to create the claim journal when the deduction was created and if an invoice has been attached to the deduction that reduced the invoice's balance, the invoice will be detached and the previously attached invoice's remaining balance will be increased by the rejected claim's amount.
+    - The deduction's **Status** has now been set to *Closed* and **Claim status** set to *Rejected*. <!-- KFM: My status still says "open". -->
 
-For deductions created using **New deduction** command from the deduction workbench, customer settle, or customer page: The **Denial** fields under References will be updated and the deduction's **Status** has now been set to *Open* and **Claim status** set to *Open*.
+To reverse a denial:
+
+1. Select a denied deduction on the **Deductions** tab.
+1. On the Action Pane, select **Reverse denial**. <!-- KFM: Not active for me. -->
+1. For deductions created using the **New deduction** command from the deduction workbench, customer settle, or customer page, the following occur:
+    - On the **References** tab, fields in the **Denial** field group are updated.
+    - The deduction's **Status** is set to *Open*.
+    - The deduction's **Claim status** is set to *Open*.
 
 ### Write off a deduction
 
 To write off a deduction:
 
-1. On the Action Pane, in the **Maintain** group, select **Write-off**.
-1. Select the reason code for the write-off. Select **OK** at the top of the **Write-off** page and then close the page.
-1. In the **Show** field, select **Closed**. The written-off deduction is displayed on the **Deductions** tab, and the remaining amount for the deduction is set to **0.00**.
-1. For deductions created using **New deduction** command from the deduction workbench, customer settle, or customer page and only enabled where **Claim status** is set to *Open*: The **Write-off** fields under References will be updated and if the user selected to create the claim journal when the deduction was created, a claim journal will be posted to the Deduction's Write-off reason code. It can be viewed under **Deduction events** with **Update type** set to *Write-off*. The deduction's **Status** will also be set to *Closed* and **Claim status** set to *Write-off*.
-1. To reverse the write-off, select the deduction record, and then, on the Action Pane, in the **Reverse** group, select **Reverse write-off**.
+1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Select the **Mark** check box for the deduction you want to process.
+1. On the Action Pane, select **Maintain \> Write-off**.
+1. The **Write-off** dialog opens. Select the **Reason code** for the write-off and then select **OK**.
+1. In the **Show** field, select *Closed*. The written-off deduction is displayed on the **Deductions** tab, and the remaining amount for the deduction is set to *0.00*.
+1. For deductions created using the **New deduction** command from the deduction workbench, customer settle, or customer page, the following occur:
+    - On the **References** tab, fields in the **Write-off** field group are updated.
+    - If you created the claim journal when the deduction was created, a claim journal will be posted to the deduction's write-off reason code. You can see this entry on the **Deduction events** tab, where it is shown with an **Update type** of *Write-off*.
+    - The deduction's **Status** is set to *Closed*
+    - The deduction's  **Claim status** is set to *Write-off*.
 
-For deductions created using **New deduction** command from the deduction workbench, customer settle, or customer page and only enabled where **Claim status** is set to *Write-off*: The **Write-off** fields under References will be updated and if the user selected to create the claim journal when the deduction was created, a claim journal will be posted to the Deduction's Write-off reason code. It can be viewed under **Deduction events** with **Update type** set to *Reverse write-off*. The deduction's **Status** will also be set to *Open* and **Claim status** set to *Open*.
+To reverse a write off:
+
+1. Select a denied deduction on the **Deductions** tab.
+1. On the Action Pane, select **Reverse write-off**.
+1. For deductions created using the **New deduction** command from the deduction workbench, customer settle, or customer page, the following occur:
+    - On the **References** tab, fields in the **Write-off** field group are updated.
+    - If you created the claim journal when the deduction was created, a claim journal will be posted to the deduction's Write-off reason code. You can see this entry on the **Deduction events** tab, where it is shown with an **Update type** of *Reverse write-off*.
+    - The deduction's **Status** is set to *Open*.
+    - The deduction's **Claim status** is set to *Open*.
 
 <a name="credits-outside-approval"></a>
 
 ## Credits created outside the Approve deduction process
 
-For deductions created using **New deduction** command from the deduction workbench, customer settle, or customer page.
+This section only applies to deductions created using the **New deduction** command from the deduction workbench, customer settle, or customer page.
 
-Different users could have already created a free text, return order, or negative sales order for the customer's claim outside of the **Approve deduction** process. When the existing deduction is approved in the Deduction workbench, the system will automatically create another free text, return order or negative sales order. The following process will describe how you can attach existing credits to a deduction before the deduction is approved to prevent duplicate credits.
+Different users could have already created a free text, return order, or negative sales order for a customer's claim outside of the **Approve deduction** process. When the existing deduction is approved in the deduction workbench, the system automatically creates another free text, return order, or negative sales order. The following process describes how to attach existing credits to a deduction before the deduction is approved, which will prevent duplicate credits.
 
-### Attach credit to deduction
+### Attach a credit to deduction
 
 The following subsections describe how you can attach a credit to a deduction, while on the credit.
 
-Once the credit has been attached to the deduction, it will be available to view using the **Open credit** button on the **Deduction workbench**'s **Open transactions**
+Once a credit has been attached to the deduction, it will be available to view using the **Open credit** button on the deduction work bench **Open transactions** section toolbar.
 
-In addition, after the credit have been invoiced and the deduction approved, it will be displayed under **Open transactions** as **Claim type** set to *Other credits* against the applicable **Deduction ID**.
+After a credit has been invoiced and the deduction approved, it will be displayed in the deduction work bench **Open transactions** section against the applicable **Deduction ID** with its **Claim type** set to *Other credits* .
 
-### Attach a free text to a deduction
+#### Attach a free text to a deduction
 
 To attach a **free text** to a deduction:
 
 1. Go to **Accounts receivable \> Invoices \> All free text invoices**.
-1. Select the applicable posted or draft **Invoice**.
+1. Select the applicable invoice.
 1. On the Action Pane, on the **Invoice** tab, select **Attach credit to deduction**. This is only enabled if the Free text's **Deduction ID** is blank and therefor not already attached to a deduction.
-1. The **Attach deduction** page will open, and you can select *one* deduction. Only open *price-based* deductions will be available for selection.
-1. Select **OK**. This will populate the **Deduction ID** on the credit's header.
+1. The **Attach credit to deduction** page opens, where you can select *one* deduction. Only open *price-based* deductions can be selected.
+1. Select **OK**. The **Deduction ID** is populated on the free text's header.
 
-### Attach a return order to a deduction
+#### Attach a return order to a deduction
 
 To attach a return order to a deduction:
 
 1. Go to **Accounts receivable \> Orders \> All return orders**.
 1. Select the applicable received or open **RMA number**.
-1. On the Action Pane, on the **Return order** tab, select **Attach credit to deduction**. This is only enabled if the Return order's **Deduction ID** is blank and therefor not already attached to a deduction.
-1. The **Attach deduction** page will open, and you can select *one* deduction. Only open *quantity-based* deductions will be available for selection.
-1. Select **OK**. This will populate the **Deduction ID** on the credit's header.
+1. On the Action Pane, on the **Return order** tab, select **Attach credit to deduction**. This is only enabled if the return order's **Deduction ID** is blank and therefor not already attached to a deduction.
+1. The **Attach credit to deduction** page opens, where you can select *one* deduction. Only open *quantity-based* deductions can be selected.
+1. Select **OK**. The **Deduction ID** is populated on the return orders's header.
 
-### Attach a sales order to a deduction
+#### Attach a sales order to a deduction
 
 To attach a sales order to a deduction:
 
 1. Go to **Accounts receivable \> Orders \> All sales orders**.
-1. Select the applicable open, delivered or invoices **Sales order**.
+1. Select the applicable open, delivered, or invoiced **Sales order**.
 1. On the Action Pane, on the **Invoice** tab, select **Attach credit to deduction**. This is only enabled if the **Deduction ID** is blank and therefor not already attached to a deduction.
-1. The **Attach deduction** page will open, and you can select *one* deduction. Only open *quantity-based* deductions will be available for selection.
-1. Select **OK**. This will populate the **Deduction ID** on the credit's header.
+1. The **Attach deduction** page opens, where you can select *one* deduction. Only open *quantity-based* deductions will be available for selection.
+1. Select **OK**. The **Deduction ID** is populated on the sales order's header.
 
-### Detach a deduction from a credit
+#### Detach a deduction from a credit
 
-If the incorrect deduction has been attached, select this option to detach the deduction from the credit. Only enabled for:
+If the incorrect deduction has been attached, you can detach the deduction from the credit provided the following are true:
 
-- Deduction has a credit attached, and
+- The deduction has a credit attached.
 - **Claim status** is set to *Open*.
 
-The **Detach credit from deduction** option is available from:
-    - Free text: On the Action Pane, on the **Invoice** tab, select **Detach credit from deduction**
-    - Return order: On the Action Pane, on the **Return order** tab, select **Detach credit from deduction**
-    - Sales order: On the Action Pane, on the **Invoice** tab, select **Detach credit from deduction**
+To detach a deduction from a credit, do one of the following, depending on the credit type:
+    - **Free text invoices**: Open the **All free text invoices** page and select an invoice. On the Action Pane, on the **Invoice** tab, select **Detach credit from deduction**
+    - **Return orders**: Open the **All return orders** page and select an order. On the Action Pane, on the **Return order** tab, select **Detach credit from deduction**
+    - **Sales orders**: Open the **All sales orders** page and select an order. On the Action Pane, on the **Invoice** tab, select **Detach credit from deduction**
 
-### Attach deduction to credit
+### Attach a deduction to a credit
+<!-- KFM: Review this section -->
 
 This section describes how you can attach a deduction to a credit, while on the deduction.
 
@@ -457,10 +492,10 @@ To attach a deduction to a free text, return order, or sales order credit:
 
 1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
 1. Select the applicable open **Deduction ID**.
-1. On the Action Pane, in the **Maintain** group, select **Attach deduction to credit**. This is only enabled where **Claim status** set to *Open*.
+1. On the Action Pane, select **Maintain \> Attach deduction to credit**. This is only enabled where **Claim status** set to *Open*.
 1. The **Attach credit** page will open, and you can select *one* credit. The type of credits displayed will depend on the deduction's **Claim basis**:
     - **Price based** – Free text invoices for the customer account with blank **Deduction ID**. Customer requisition will also be displayed since the free text might be unposted and therefor have no number to reference.
-    - **Quantity based**, where **Create return order** setting on **[Accounts receivable parameters](#_Configure_Accounts_receivable)** is set to:
+    - **Quantity based**, where **Create return order** setting on **[Accounts receivable parameters](#accounts-receivable-deductions)** is set to:
         - **Yes** – Return orders for the customer account with blank **Deduction ID**.
         - **No** – Sales order for the customer account with blank **Deduction ID**.
 1. Select **OK**. This will populate the **Deduction ID** on the credit's header.
@@ -469,7 +504,7 @@ Once the credit has been attached to the deduction, it will be available to view
 
 And after the credit have been invoiced and the deduction approved, it will be displayed under **Open transactions** as **Claim type** set to *Other credits* against the applicable **Deduction ID**.
 
-#### To detach a credit from the deduction
+#### Detach a credit from the deduction
 
 If the incorrect credit has been attached, select this option to detach the credit from the deduction. Only enabled for:
     - Deduction that has a credit attached, and
@@ -478,6 +513,8 @@ If the incorrect credit has been attached, select this option to detach the cred
 On the Action Pane, in the Maintain group, select **Detach deduction from credit**. This removes the **Deduction ID** from the credit.
 
 ## Create an end-of-period promotion
+
+<!-- KFM: This section is copied from AX2012. Needs to be verified -->
 
 Sometimes, you might not have an approved rebate that you can match to a deduction. In this case, you can use the **End of period promotion** feature to match the deduction to a trade allowance that is associated with the customer. The **End of period promotion** feature creates a new trade allowance agreement and a lump sum merchandising event. The feature then matches the lump sum to the deduction and makes the postings that are required to close the deduction.
 
@@ -497,7 +534,7 @@ Next, you can create an end-of-period promotion in the deduction workbench. To c
 
 1. Select **Trade allowance management \> Common \> Deduction workbench**.
 1. Select the **Mark** check box next to the deduction to process.
-1. On the Action Pane, in the **Maintain** group, select **End of period promotion**.
+1. On the Action Pane, select **Maintain \> End of period promotion**.
 1. If you want to associate the deduction with one or more funds, follow these steps:
     1. Select **New**, and then, in the **Fund ID** field, select a fund ID. Repeat this step to add as many funds as you require.
     1. In the **Percent** field next to each fund ID, enter the percentage of the deduction to allocate to the fund. The amounts that you enter in the **Percent** fields must total 100 percent.
@@ -505,11 +542,13 @@ Next, you can create an end-of-period promotion in the deduction workbench. To c
 
 ## Perform a mass update of deductions
 
+<!-- KFM: This section is copied from AX2012. Needs to be verified -->
+
 If you have to make the same change to multiple deductions, you can select those deductions and perform a mass update of their fields.
 
 To perform a mass update, follow these steps.
 
 1. Select **Trade allowance management \> Common \> Deduction workbench**.
 1. In the **Show** field below the Action Pane, select the type of deductions to view ( **Created**, **Open**, or **Closed** ).
-1. Select the **Mark** check box next to each deduction to update. On the Action Pane, in the **Maintain** group, select **Mass update**.
+1. Select the **Mark** check box next to each deduction to update. On the Action Pane, select **Maintain \> Mass update**.
 1. The selected deductions are listed in the **Mass update** page. Update the fields as you require, and then select **OK** at the top of the page to accept the changes.
