@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 06/21/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -75,7 +75,7 @@ These components depend on the following system software:
 - Optional but **highly** recommended: Active Directory Certificate Services (AD CS) on Windows Server
 
 [!IMPORTANT]
-> For supported versions check the [software compatibility page](./onprem-compatibility.md)
+> For supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md).
 
 ## LCS
 
@@ -119,7 +119,7 @@ The hardware configuration includes the following components:
 For more information, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md).
 
 [!IMPORTANT]
-> For supported versions check the [software compatibility page](./onprem-compatibility.md)
+> For supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md).
 
 ### Hardware layout
 
