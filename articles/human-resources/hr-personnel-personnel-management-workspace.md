@@ -4,7 +4,7 @@
 title: Personnel management workspace
 description: This topic describes the conceptual elements of the Personnel management workspace. 
 author: andreabichsel
-ms.date: 06/23/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -48,7 +48,7 @@ When a worker is in one of these stages, specific actions are available as a but
 
 The **Candidates to hire** section of the workspace is filled in from multiple sources:
 
-- Odata entity
+- An Open Data Protocol (OData) entity
 - LinkedIn integration
 - Data that is manually entered in the product
 
@@ -59,7 +59,7 @@ When candidates appear in the **Candidates to hire** section, you can perform th
 - Hire
 
 > [!NOTE]
-> If the candidate list is filled in from the XXX entity in Microsoft Dataverse, the same candidates will appear across all legal entities, because a legal entity hasn't been associated with the candidate.
+> If the candidate list is being populated from Microsoft Dataverse, the same candidates will display across all legal entities because a legal entity has not been associated to the candidate.
 
 ### Starting soon
 
