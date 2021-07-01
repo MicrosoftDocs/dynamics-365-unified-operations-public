@@ -91,8 +91,8 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     When you've finished, follow these steps to refresh the list of tables:
 
-    1. Go to **Workspaces \> Data management**, select the **Data tables** tile, and make sure that the table list is filled in.
-    2. Go to **Workspaces \> Data management**, and select the **Framework parameters** tile. Then, on the **Entities** tab (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`), select **Refresh tables list**.
+    1. Go to **Workspaces \> Data management**, select the **Data entities** tile, and make sure that the entity list is filled in.
+    2. Go to **Workspaces \> Data management**, and select the **Framework parameters** tile. Then, on the **Entity settings** tab (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`), select **Refresh entity list**.
 
     **Related health check result:**<br>
     *The Dataverse can connect to the Finance and Operations app*<br>
