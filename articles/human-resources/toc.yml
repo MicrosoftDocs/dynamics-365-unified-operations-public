@@ -625,6 +625,8 @@
       items:
       - name: Organize your workforce
         href: hr-personnel-departments-jobs-positions.md
+      - name: Personnel management workspace
+        href: hr-personnel-personnel-management-workspace.md
       - name: Set up the components of a job
         href: hr-personnel-jobs.md
       - name: Define departments
@@ -633,6 +635,8 @@
         href: hr-personnel-add-department-hierarchy.md
       - name: Define jobs
         href: hr-personnel-define-jobs.md
+      - name: Positions
+        href: hr-personnel-positions.md
       - name: Create a working times calendar
         href: hr-personnel-create-working-time-calendar.md
       - name: Recruit job candidates
