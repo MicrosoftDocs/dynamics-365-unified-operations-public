@@ -124,13 +124,13 @@ To set up sales tax for POS in Commerce headquarters, follow these steps.
 1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**.
 1. In the **Sales tax group** and **Sales tax group for returns** fields, select the sales tax groups that you just created.
 1. Go to **Tax \> Indirect taxes \> Sales tax \> Item sales tax groups**.
-1. Create an item sales tax group that is named **Item sales tax groups for retail**, and add the sales tax codes that you created earlier.
+1. Create item sales tax groups for retail, and add the sales tax codes that you created earlier.
 1. Go to **Organization administration \> Setup \> Fiscal document source texts**.
 1. Create a fiscal document source text for retail tax burden. Set the **Restriction** field to **External** and the **Fiscal information** option to **No**.
 1. Go to **Organization administration \> Setup \> Brazilian parameters**.
 1. On the **Retail** tab, in the **Text ID** field, specify the source text for retail tax burden.
 1. Go to **Retail and Commerce \> Products and categories \> Released products by category**.
-1. Select the desired products, and set the following Brazil-specific fields:
+1. Select the desired products, and set the following fields:
 
     - On the **Sell** tab:
 
@@ -155,7 +155,7 @@ To set up a retail store in Commerce headquarters, follow these steps.
 1. Go to **Inventory management \> Setup \> Inventory breakdown \> Warehouses**.
 1. Create warehouses for the stores, and specify addresses.
 1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**.
-1. Create the stores, and set the following Brazil-specific fields:
+1. Create the stores, and set the following fields:
 
     - Prices include sales tax
     - Sales tax group
@@ -211,13 +211,13 @@ To set up the fiscal registration process in Commerce headquarters, follow these
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**.
 1. For each document provider that you just loaded the configuration for, create connector functional profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update data mapping settings as required.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
-1. Create three connector technical profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update connection settings as required.
+1. Create connector technical profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update connection settings as required.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector group**.
-1. Create three fiscal connector groups, one for each connector functional profile that you created earlier.
+1. Create fiscal connector groups, one for each connector functional profile that you created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Registration process**.
 1. Create a registration process. As registration steps, select the fiscal connector groups that you just created.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
-1. Select the functionality profile that is linked to the store where the registration process should be activated, and then, on the **Fiscal registration process** FastTab, select the registration process that you just created. To enable registration of non-fiscal events in POS, on the **Functions** FastTab, set the **Audit** option to **No**.
+1. Select the functionality profile that is linked to the store where the registration process should be activated, and then, on the **Fiscal registration process** FastTab, select the registration process number that you just created.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
 1. Select a hardware profile that is linked to the hardware station that the fiscal printer will be connected to.
 1. On the **Fiscal peripherals** FastTab, select the connector technical profile.
@@ -258,7 +258,7 @@ For more information about how to work with screen layouts and button grids, see
 This section provides deployment guidance that will help you enable Commerce components of the Commerce localization for Brazil.
 
 > [!NOTE]
-> Some steps in these procedures vary, depending on the product version that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
+> Some steps in these procedures vary, depending on the product version that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new-home-page.md).
 
 ### Use certificates for authentication with the tax authority service and digital signing of fiscal documents
 
