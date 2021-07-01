@@ -3,7 +3,7 @@
 
 title: Commerce localization for Russia
 description: This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Russia.
-author: v-ankvik
+author: akviklis
 ms.date: 06/30/2021
 ms.topic: article
 ms.prod: 
