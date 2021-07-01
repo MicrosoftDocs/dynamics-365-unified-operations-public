@@ -42,7 +42,8 @@ Both Microsoft Windows Server Standard and Microsoft Windows Server Datacenter a
 
 ## Microsoft SQL Server
 
-This covers the following components:
+This section covers the following SQL Server components:
+
  - Database Engine
  - SQL Server Reporting Services
  - SQL Server Integration Services
@@ -54,7 +55,7 @@ This covers the following components:
 
 ## Minimum Service Fabric runtime
 
-Your Service Fabric cluster should always be on a supported version according to the official documentation: [Service Fabric supported versions](/azure/service-fabric/service-fabric-versions)
+Your Service Fabric cluster should always be on a supported version according to the official documentation, [Service Fabric supported versions](/azure/service-fabric/service-fabric-versions).
 
 | Minimum Version            | Required since       |
 |----------------------------|----------------------|
@@ -63,7 +64,7 @@ Your Service Fabric cluster should always be on a supported version according to
 
 ## Microsoft Office Server
 
-This is an optional component. For more information see [Configure document preview](../../fin-ops/organization-administration/configure-document-management.md#for-a-microsoft-dynamics-365-finance--operations-on-premises-environment)
+Office Server is an optional component. For more information, see [Configure document preview](../../fin-ops/organization-administration/configure-document-management.md#for-a-microsoft-dynamics-365-finance--operations-on-premises-environment).
 
 | Version                      | Supported since    | End of life    |
 |------------------------------|--------------------|----------------|
