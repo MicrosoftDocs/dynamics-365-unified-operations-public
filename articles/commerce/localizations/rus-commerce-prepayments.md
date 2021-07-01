@@ -3,7 +3,7 @@
 
 title: Prepaymants in Retail for Russia
 description: This topic provides an overview of processing prepayment transactions in Microsoft Dynamics 365 Commerce for Russia.
-author: akviklis
+author: Andrey Kviklis
 ms.date: 06/28/2021
 ms.topic: article
 ms.prod: 
@@ -31,8 +31,7 @@ ms.dyn365.ops.version: 10.0.21
 
 This topic describes how Microsoft Dynamics 365 Commerce processes prepayment transactions for the following payment types in Rusian Retail:
 
-- **Customer account deposit payment** – A customer makes a prepayment at the Retail point of sale (POS). Microsoft Dynamics 365 Commerce processes the deposit payment as a prepayment transaction. When you post the transaction, a payment journal is posted in the Journal voucher form. The Prepayment journal voucher check box on the Payment tab in the Journal voucher form is automatically selected for the payment journal. For more information see [Prepayments management](../../finance/localizations/rus-prepayments-management
-).
+- **Customer account deposit payment** – A customer makes a prepayment at the Retail point of sale (POS). Microsoft Dynamics 365 Commerce processes the deposit payment as a prepayment transaction. When you post the transaction, a payment journal is posted in the Journal voucher form. The Prepayment journal voucher check box on the Payment tab in the Journal voucher form is automatically selected for the payment journal. For more information see [Prepayments management](../../finance/localizations/rus-prepayments-management.md).
 
 - **Customer order with deposit** – A customer provides a customer order at the Retail POS. The customer can deposit a payment for the order based on the parameters that you have set up in the Retail parameters form. Microsoft Dynamics 365 Commerce processes the deposit payment for the customer order as a prepayment transaction. When you post the transaction, a customer payment journal is created and posted in the Journal voucher form. The Prepayment journal voucher check box on the Payment tab in the Journal voucher form is automatically selected for the payment journal. The payment is settled and the customer invoice is issued automatically when the order is picked up or delivered.
 
