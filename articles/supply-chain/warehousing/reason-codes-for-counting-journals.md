@@ -96,7 +96,7 @@ You can also set up reason codes for individual warehouses and for products. The
 1. To assign a *Offset account*, key-in or select a value in the **Offset account** field
 
 > [!Note]
-> **Counting reason codes** with an assigned **Offset account** will via a counting journal posting result in using the assigned offset account rather than the defined posting profile.
+> During posting of counting journals with **Counting reason codes** that have an **Offset account** defined will result in posting against the assigned offset account rather than the default defined inventory posting profile account.
 
 
 ### Set up the Counting reason code groups
@@ -151,7 +151,7 @@ The following fields will be added to the mobile device menu item when **Adjustm
 When assigning a **Counting reason code group** value for the **Adjustment in** and **Adjustment out** mobile device menu items, the selection of the counting reason codes will get limited to within the group as part of the Warehouse management mobile app processing.
 
 > [!Note]
-> To avoid large adjustment quantities from happening when using the *Warehouse management mobile app* (e.g. when a worker by mistake barcode scans an item number instead of a quantity value) you can define a **Maximum adjustment quantity limit** on the **Worker** page and thereby prevent adjustments quantities above this limit from happening.
+> To avoid large adjustment quantities from happening when using the *Warehouse management mobile app* (e.g. when a worker by mistake barcode scans an item number instead of a quantity value) you can define a **Adjustment quantity limit** on the **Worker** page and thereby prevent adjustments quantities above this limit from happening.
 
 
 ## Processing with the use of counting reason code
