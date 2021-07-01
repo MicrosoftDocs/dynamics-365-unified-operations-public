@@ -122,16 +122,22 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 ### Dynamics 365 Retail POS version 10.0.18
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
-| adyen_v1_59p7 | adyen_v1_62p9 |
+| adyen_v1_59p7 | adyen_v1_64p7 |
 | | *Note: Please see details below regarding cash out of gift cards* |
 
 # [10.0.19](#tab/10-0-19)
 ### Dynamics 365 Retail POS version 10.0.19
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
-| adyen_v1_59p7 | adyen_v1_62p9 |
+| adyen_v1_59p7 | adyen_v1_64p7 |
 | | *Note: Please see details below regarding cash out of gift cards* |
 
+# [10.0.20](#tab/10-0-20)
+### Dynamics 365 Retail POS version 10.0.20
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_59p7 | adyen_v1_64p7 |
+| | *Note: Please see details below regarding cash out of gift cards* |
 ---
 
 > [!NOTE]
@@ -394,6 +400,8 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key | Required when "V002" is designated for the version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
+    | EnableRequestProtection | Use to enable incremental capture duplicate request protection. When "True", a tracking ID is added to the requests to the provider to prevent duplicate requests. If "False", incremental capture will not be enabled. | No | No | True/False |
+    | Non incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
 4. On the **Card verification value** tab, leave **Prompt for card verification value** and **Allow blank card verification value** set to **No**. 
 
@@ -453,6 +461,8 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key | *Card not present only*  |
+    | EnableRequestProtection | Use to enable incremental capture duplicate request protection. When "True", a tracking ID is added to the requests to the provider to prevent duplicate requests. If "False", incremental capture will not be enabled. | No | No | True/False |
+    | Non incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
 4. On the Action Pane, select **Save**.
 
@@ -484,6 +494,8 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key | *Card not present only* |
+    | EnableRequestProtection | Use to enable incremental capture duplicate request protection. When "True", a tracking ID is added to the requests to the provider to prevent duplicate requests. If "False", incremental capture will not be enabled. | No | No | True/False |
+    | Non incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
 4. On the Action Pane, select **Save**.
 
