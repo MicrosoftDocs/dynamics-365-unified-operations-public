@@ -31,13 +31,12 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Coverage options determine who should be covered or how much coverage is available in an insurance plan.  For example, for a medical plan you would have an **employee only** option, an **employee + 1** option, and a **family** option.  For life insurance, you may offer coverage for **1 x salary** or **2 x salary**.
+Coverage options determine who should be covered, or how much coverage is available in an insurance plan. For example, for a medical plan, you might have an **employee only** option, an **employee + 1** option, and a **family** option. For life insurance, you might offer coverage for **1 x salary** or **2 x salary**.
 
-Once defined, you can reuse benefit coverage options. You can associate an option with one or more plans.
+After benefit coverage options are defined, you can reuse them. You can associate an option with one or more plans.
 
-> [!Important]
-> 1. After you define coverage options, attach the coverage options to a benefit plan type. 
-> 2. The plan type is then associated with a benefit plan or program. Coverage options that are associated with a plan type are available to all plans that are created with that plan type. 
+> [!IMPORTANT]
+> After you define coverage options, attach them to a benefit plan type. The plan type is then associated with a benefit plan or program. Coverage options that are associated with a plan type are available to all plans of that type that are created.
 
 ## Create coverage options
 1. In the **Benefits management** workspace, under **Setup**, select **Coverage options**.
@@ -50,9 +49,9 @@ Once defined, you can reuse benefit coverage options. You can associate an optio
    | --- | --- |
    | **Coverage option** | A unique coverage option name. |
    | **Description** | A description of the coverage option. |
-   | **Coverage code** | Coverage codes assign minimum and maximum amounts for each eligible covered person type. A coverage code indicates who is covered or the amount of coverage allowed for a plan type. You can express the amount of coverage as a dollar amount or a percentage. For example:</br></br>- **Emp+1** – to be qualified, the employee must have one dependent selected (if more than one is selected, they no longer qualify).</br></br>- **Emp+family** – to be qualified, the employee must have at least two dependents selected. |
+   | **Coverage code** | Coverage codes assign minimum and maximum amounts for each eligible covered person type. A coverage code indicates who is covered or the amount of coverage allowed for a plan type. You can express the amount of coverage as a dollar amount or a percentage. For example:<ul><li>**Emp+1** – to be qualified, the employee must have one dependent selected (if more than one is selected, they no longer qualify).</li><li>**Emp+family** – to be qualified, the employee must have at least two dependents selected.</li></ul> |
    | **Maximum number** | The maximum number of dependents. |
-   | **Status** | The status of the coverage option. If the Coverage option status is set to Inactive, the Coverage option can’t be selected on plan types. |
+   | **Status** | The status of the coverage option. If the Coverage option status is set to Inactive, the Coverage option can't be selected on plan types. |
    | **Percent** | The percent amount. This field is only active if % x Salary was selected in the Coverage code field. |
    | **Divisor** | The divisor to use in the calculation when you select the coverage code % x salary. |
    | **Percent minimum** | The minimum percentage when you select the Percentage coverage code. |
