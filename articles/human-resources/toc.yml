@@ -355,6 +355,8 @@
       items:
       - name: Introduction
         href: hr-admin-integration-ats-api-introduction.md
+      - name: Server-to-server authentication for ATS integrations
+        href: hr-admin-integration-ats-api-s2s-auth.md
       - name: Recruiting request and related entities
         items:
           - name: Recruiting request
