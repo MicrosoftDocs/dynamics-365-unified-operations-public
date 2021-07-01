@@ -3,7 +3,7 @@
 
 title: Prepaymants in Retail for Russia
 description: This topic provides an overview of processing prepayment transactions in Microsoft Dynamics 365 Commerce for Russia.
-author: Andrey Kviklis
+author: 67962652
 ms.date: 06/28/2021
 ms.topic: article
 ms.prod: 
