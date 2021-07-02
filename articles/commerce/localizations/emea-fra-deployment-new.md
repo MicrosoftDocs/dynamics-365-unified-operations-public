@@ -1,28 +1,28 @@
 ---
 # required metadata
 
-title: Migrating from SDK to sealed extensions
-description: This topic provides guidelines on how to migrate from the legacy digital signing sample for France to the functionality that is based on the Fiscal integration framework
-author: josaw
+title: Deployment guidelines for cash registers for France
+description: This topic is a deployment guide for the Commerce localization for France.
+author: EvgenyPopovMBS
 manager: annbe
 ms.date: 07/02/2021
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: dynamics-365-retail
-ms.technology:
+ms.technology: 
 
 # optional metadata
 
-ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-audience: Application User
-# ms.devlang:
+# ms.search.form:  
+audience: Developer
+# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm:
-# ms.custom:
+# ms.tgt_pltfrm: 
+# ms.custom: 
 ms.search.region: France
 ms.search.industry: Retail
-ms.author: epopov
-ms.search.validFrom: 2021-03-01
+ms.author: josaw
+ms.search.validFrom: 2021-4-30
 ms.dyn365.ops.version: 10.0.18
 
 ---
@@ -32,10 +32,29 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](./emea-fra-cash-registers.md).
 
-This localization consists of extensions for the Commerce runtime (CRT) and POS. To run this sample, you must modify and build the POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
+## Setting up Commerce for France
 
-> [!NOTE]
-> In Commerce 10.0.8 and above, Retail Server is known as Commerce Scale Unit. Because this topic applies to multiple previous versions of the app, *Retail Server* is used throughout the topic.
+See [Setting up Commerce for France](./emea-fra-cash-registers.md#setting-up-commerce-for-france) for basic settings of Commerce for France.
+
+Complete the fiscal integration setup steps that are described in [Set up the fiscal integration for Commerce channels](./setting-up-fiscal-integration-for-retail-channel.md):
+
+- [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to note the settings for the fiscal registration process that are [specific to France](#set-up-the-registration-process).
+- [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+- [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+
+### Set up the registration process
+
+To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
+2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **???\\MicrosoftSequentialSignatureConnector.xml**.
+3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configuration. The file location is **???\\MicrosoftSequentialSignatureFRA.xml**.
+4. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile, and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
+5. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Set the connector type as **Internal**. Update the other connection settings as required.
+6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
+7. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
+8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
+9.  Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
 ### Prerequisites
 
@@ -156,19 +175,7 @@ Follow these steps to set up a development environment so that you can test and 
 3. Rebuild the solution.
 4. Run the solution by using the **Run** command and following the steps in the Retail SDK handbook.
 
-### Set up the registration process
 
-To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
-
-1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **???\\MicrosoftSequentialSignatureConnector.xml**.
-3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configuration. The file location is **???\\MicrosoftSequentialSignatureFRA.xml**.
-4. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile, and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
-5. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Set the connector type as **Internal**. Update the other connection settings as required.
-6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
-7. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
-8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
-9.  Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
 ### Production environment
 
