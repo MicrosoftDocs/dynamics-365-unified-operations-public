@@ -16,7 +16,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-# ms.custom: NotInToc
+ms.custom: ["intro-internal", "NotInToc"]
 ms.search.region: Global
 # ms.search.industry:
 ms.author: milindav

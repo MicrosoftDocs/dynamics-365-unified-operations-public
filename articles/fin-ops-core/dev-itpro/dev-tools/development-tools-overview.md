@@ -6,7 +6,7 @@ ms.date: 05/24/2017
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 23401
+ms.custom: ["23401", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global
 ms.author: jorisde

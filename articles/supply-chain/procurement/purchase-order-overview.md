@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 
 
 # ms.tgt_pltfrm: 
-ms.custom: 93083
+ms.custom: ["93083", "intro-internal"]
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
 # ms.search.industry: 
