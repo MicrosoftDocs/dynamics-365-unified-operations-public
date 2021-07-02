@@ -170,7 +170,7 @@ To set up the batch job for releasing sales orders, follow the steps.
 To set up the batch job for releasing transfer orders, follow the steps.
 
 1. Go to **Warehouse management > Release to warehouse > Automatic release of transfer orders**.
-2. In the opened dialog box, on the **Parameters** FastTab, set the following fields.
+1. In the opened dialog box, on the **Parameters** FastTab, set the following fields.
 
     - **Quantity to release** - Select whether the whole quantity or the physically reserved quantity should be released.
 
@@ -178,9 +178,9 @@ To set up the batch job for releasing transfer orders, follow the steps.
 
 	- **Group releases by destination warehouse** - Specify whether the system should release all transfer orders at once or first group transfer order lines by destination warehouse and then release each group to the warehouse separately.
 
-3. On the **Records to include** FastTab, select **Filter** button and define query for the transfer orders that you want to release to the warehouse.
-4. On the **Run in the background** FastTab, specify whether the job to be run in batch mode.
-5. Select **OK** to apply your settings and initiate release to warehouse process.
+1. On the **Records to include** FastTab, select **Filter** button and define query for the transfer orders that you want to release to the warehouse.
+1. On the **Run in the background** FastTab, specify whether the job to be run in batch mode.
+1. Select **OK** to apply your settings and initiate release to warehouse process.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
