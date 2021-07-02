@@ -4,7 +4,7 @@
 title: Linked refunds of previously approved and confirmed transactions
 description: This topic describes how to enable and use Linked refunds.
 author: josaw1
-ms.date: 7/29/2019
+ms.date: 06/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -42,7 +42,7 @@ By using linked refunds, retailers can greatly reduce risk by making sure that r
 
 [Payment method setup](../payment-methods.md) 
 
-[Omni channel payments setup](../omni-channel-payments.md)
+[Omni-channel payments setup](../omni-channel-payments.md)
 
 ### Additional setup
 
@@ -60,20 +60,29 @@ When you turn on the omni-channel payments functionality, you change the busines
 
 When the omni-channel payments functionality is turned on, the card payment tokens that are used in one channel (for example, a call center or Modern POS (MPOS)) will be available in all channels that are set up for the retailer. For POS applications, the linked refunds functionality will also be turned on. For call center, MPOS, and e-Commerce applications, customers can still manually enter card numbers for payment.
 
+
+
 ### Supported flows
 
 Cashiers can process a refund to the card that was used during the original transaction, even if the card isn't presented for the return.
 
-- Linked refunds for cash-and-carry transactions that use credit or debit cards
-- Linked refunds for customer orders that use credit or debit cards
+- Linked refunds for cash-and-carry transactions that use credit or debit cards.
+- Linked refunds for customer orders that use credit or debit cards.
  
 ### Unsupported flows
 
-- Linked refunds for transactions that use gift cards
-- Linked refunds for transactions that use loyalty cards
-- Linked refunds for exchange orders
-- Multiple return orders in the same transaction
-- Returns without a receipt or customer account details
+- Linked refunds for transactions that use gift cards.
+- Linked refunds for transactions that use loyalty cards.
+- Linked refunds for exchange orders.
+- Multiple return orders in the same transaction.
+- Returns without a receipt or customer account details.
+
+## Enable refunds over multiple captures
+
+This feature enables multiple linked refunds against the same customer order.
+1.	Go to the **Feature management** workspace and search for **Enable refunds over multiple captures**.
+2.	Select **Enable refunds over multiple orders** and then click **Enable**.
+
 
 ## Use case examples
 
