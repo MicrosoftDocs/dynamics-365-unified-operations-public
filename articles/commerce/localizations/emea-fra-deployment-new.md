@@ -203,7 +203,7 @@ Follow these steps to set up a development environment so that you can test and 
 
 ## Production environment
 
-Follow the steps described in the [Development environment](#development-environment) section. In addition, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment:
+Follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment:
 
 1. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
@@ -232,7 +232,7 @@ Follow the steps described in the [Development environment](#development-environ
     ```
 
 3. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
-4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-packaging).
 
 ## Enable digital signature in offline mode for Modern POS
 
