@@ -97,6 +97,7 @@ The following parameters or options from the **Item coverage** page aren't used 
     - **Capacity scheduling time fence (days)** – Pending *Scheduling* support.
     - **Approved requisition time fence (days)** – Pending *Requisition* support.
     - **Fulfill minimum** – The options *Today's date*, *First issue*, and *Coverage time fence* options aren't supported by Planning Optimization. Planning Optimization always uses the *Today's date + procurement time* option.
+    - **Minimum periods** – Pending *Minimum inventory level* support.
     - **Planning formula** – Pending *Formula versions with Co/By products* support.
     - **Default priority** – Pending *Formula versions with Co/By products* support.
     - **Current priority** – Pending *Formula versions with Co/By products* support.
