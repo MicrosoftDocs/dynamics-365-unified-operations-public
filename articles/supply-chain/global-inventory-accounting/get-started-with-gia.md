@@ -7,6 +7,7 @@ ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: "intro-internal"
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18

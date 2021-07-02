@@ -8,6 +8,7 @@ ms.date: 05/14/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
+ms.custom: "intro-internal"
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-05-31
