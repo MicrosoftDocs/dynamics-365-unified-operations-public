@@ -30,25 +30,25 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](./emea-fra-cash-registers.md).
+This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/emea-fra-cash-registers).
 
 ## Setting up Commerce for France
 
-See [Setting up Commerce for France](./emea-fra-cash-registers.md#setting-up-commerce-for-france) for basic settings of Commerce for France.
+See [Setting up Commerce for France](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/emea-fra-cash-registers#setting-up-commerce-for-france) for basic settings of Commerce for France.
 
-Complete the fiscal integration setup steps that are described in [Set up the fiscal integration for Commerce channels](./setting-up-fiscal-integration-for-retail-channel.md):
+Complete the fiscal integration setup steps that are described in [Set up the fiscal integration for Commerce channels](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/setting-up-fiscal-integration-for-retail-channel):
 
-- [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to note the settings for the fiscal registration process that are [specific to France](#set-up-the-registration-process).
-- [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-- [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+- [Set up a fiscal registration process](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/setting-up-fiscal-integration-for-retail-channel#set-up-a-fiscal-registration-process). Be sure to note the settings for the fiscal registration process that are [specific to France](#set-up-the-registration-process).
+- [Set error handling settings](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/setting-up-fiscal-integration-for-retail-channel#set-error-handling-settings).
+- [Enable manual execution of postponed fiscal registration](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/setting-up-fiscal-integration-for-retail-channel#enable-manual-execution-of-postponed-fiscal-registration).
 
 ### Set up the registration process
 
-To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up a fiscal registration process](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/setting-up-fiscal-integration-for-retail-channel#set-up-a-fiscal-registration-process).
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **???\\MicrosoftSequentialSignatureConnector.xml**.
-3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configuration. The file location is **???\\MicrosoftSequentialSignatureFRA.xml**.
+2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The configuration file can be [downloaded from GitHub](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.29/src/FiscalIntegration/SequentialSignatureFrance/Configurations/Connector/ConnectorMicrosoftSequentialSignatureFRA.xml).
+3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configuration. The configuration file can be [downloaded from GitHub](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.29/src/FiscalIntegration/SequentialSignatureFrance/Configurations/DocumentProvider/DocumentProviderMicrosoftSequentialSignatureFRA.xml).
 4. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile, and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
 5. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Set the connector type as **Internal**. Update the other connection settings as required.
 6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
