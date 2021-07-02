@@ -52,7 +52,7 @@ The list view of locations includes all stores and warehouses that are configure
 ![Inventory lookup operation list view](media/inventory-lookup-list-view.png)
 
 > [!NOTE]
-> Please make sure your current store is included in the associated fulfillment groups.
+> Make sure your current store is included in the associated fulfillment groups.
 
 The following actions are available on the POS app bar:
 
