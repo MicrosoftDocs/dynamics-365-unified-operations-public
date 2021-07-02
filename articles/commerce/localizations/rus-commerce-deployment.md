@@ -40,7 +40,7 @@ This section describes how to configure Commerce headquarters settings that are 
 To enable and use the Russia-specific functionality, you must configure the following settings in Commerce headquarters.
 
 1. In the primary address of the legal entity, set the **Country/region** field to **RUS** (Russia).
-1. In the POS functionality profile of every store that is located in Brazil, set the **ISO code** field to **RU** (Russia).
+1. In the POS functionality profile of every store that is located in Russia, set the **ISO** field to **RU** (Russia).
 1. Go to **System administration \> Workspaces \> Feature management**, and then, on the **All** tab, enable the following feature keys:
 
     - (Russia) Customer information management in Retail POS
@@ -57,59 +57,21 @@ To add the same address book for Russian customers, stores, and workers in Comme
 1. Go to **Retail and Commerce \> Employees \> Workers**.
 1. On the **Worker summary** tab, in the **Address books** field, add the address books for workers.
 
-## Set up sales tax for POS
-
-To set up sales tax for POS in Commerce headquarters, follow these steps.
-
-1. Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**.
-1. Create the required sales tax codes for different tax types and taxation codes. Include sales tax codes for returns.
-1. Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax group**.
-1. Create sales tax groups for retail sales and returns, and add the sales tax codes that you just created.
-1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**.
-1. In the **Sales tax group** and **Sales tax group for returns** fields, select the sales tax groups that you just created.
-1. Go to **Tax \> Indirect taxes \> Sales tax \> Item sales tax groups**.
-1. Create item sales tax groups for retail, and add the sales tax codes that you created earlier.
-1. Go to **Retail and Commerce \> Products and categories \> Released products by category**.
-1. Select the desired products, and set the following fields:
-
-    - On the **Sell** tab:
-
-        - Item sales tax group
-
-## Set up a retail store
-
-To set up a retail store in Commerce headquarters, follow these steps.
-
-1. Go to **Inventory management \> Setup \> Inventory breakdown \> Warehouses**.
-1. Create warehouses for the stores, and specify addresses.
-1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**.
-1. Create the stores, and set the following Brazil-specific fields:
-
-    - Prices include sales tax
-    - Sales tax group
-    - Sales tax group for returns
-    - Default customer
-
-        > [!NOTE]
-        > The default customer should be included in the same address book as the store.
-
-1. Set up payment methods for the stores that you created in the previous step.
-1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler**.
-1. Add the stores that you created earlier to the channel database that is used.
-1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
-1. Create POS registers
-1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Devices**.
-1. Create and configure devices for the POS registers that you just created.
-1. Go to **Organization administration \> Organizations \> Organization hierarchies**.
-1. Select **Retail Stores by Business Unit** organization hierarchy, select **View**, select **Edit \> Insert retail channel**, and add the stores that you created earlier to the appropriate business units in the hierarchy. Then publish the changes.
-1. Assign the **Retail POS posting** purpose to the **Retail Stores by Business Unit** organization hierarchy.
-1. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
-1. Publish the channel updates.
-1. Go to **Retail and Commerce \> Channel setup \> POS profiles \> Receipt profiles**.
-
 ## Customer information management
 
 **(Russia) Customer information management in Retail POS** feature impacts the Retail POS functionality for Russia. It enables the inquiry of customer information (such as email address or phone number) in sales transactions.
+
+## Customer account deposit
+
+The **Customer account deposit** feature can be used to make prepayments at the Retail point of sale (POS). for more information see [Prepaymants in Retail for Russia](rus-commerce-prepayments.md).
+
+To configure the **Customer account deposit** operation in Commerce headquarters, follow these steps.
+
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Button grids**.
+1. Select the button grid where the operation should appear, and then open **Button grid designer**.
+1. Add a button, and then, in the **Action** field, select **Customer account deposit**.
+
+For more information about how to work with screen layouts and button grids, see [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md).
 
 ## Set up parameters for statements
 
