@@ -47,20 +47,20 @@ Complete the fiscal integration setup steps that are described in [Set up the fi
 To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up a fiscal registration process](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/setting-up-fiscal-integration-for-retail-channel#set-up-a-fiscal-registration-process).
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The configuration file can be [downloaded from GitHub](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.29/src/FiscalIntegration/SequentialSignatureFrance/Configurations/Connector/ConnectorMicrosoftSequentialSignatureFRA.xml).
-3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configuration. The configuration file can be [downloaded from GitHub](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.29/src/FiscalIntegration/SequentialSignatureFrance/Configurations/DocumentProvider/DocumentProviderMicrosoftSequentialSignatureFRA.xml).
-4. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile, and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
-5. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Set the connector type as **Internal**. Update the other connection settings as required.
+2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors** and load the connector configuration. The configuration file can be [downloaded from GitHub](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.29/src/FiscalIntegration/SequentialSignatureFrance/Configurations/Connector/ConnectorMicrosoftSequentialSignatureFRA.xml).
+3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers** and load the document provider configuration. The configuration file can be [downloaded from GitHub](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.29/src/FiscalIntegration/SequentialSignatureFrance/Configurations/DocumentProvider/DocumentProviderMicrosoftSequentialSignatureFRA.xml).
+4. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
+5. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile and select the connector that you loaded earlier. Set the connector type as **Internal**. Update the other connection settings as required.
 6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
 7. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
 8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
 9.  Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
-### Configure the digital signature parameters for Headquarters
+### Configure the digital signature parameters
 
 You need to configure certificates to be used for digital signing of sales transactions and audit events. The [User-defined certificate profiles for retail stores](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/certificate-profiles-for-retail-stores) feature  enables configuring certificates that are stored in a Microsoft Azure Key Vault storage and supports failover to offline when Key Vault or Headquarters are not available. The feature extends the [Manage secrets for retail channels](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/manage-secrets) feature.
 
-The following steps must be completed before you can use a digital certificate stored in an Azure Key Vault storage :
+The following steps must be completed before you can use a digital certificate stored in an Azure Key Vault storage:
 
 - The Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Commerce Scale Unit.
 - The certificate must be uploaded to the Key Vault storage.
@@ -80,7 +80,7 @@ Finally, you need to configure a certificate profile for your certificates store
 
 1. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Certificate profiles**. 
 2. Create a new certificate profile.
-3. On the **Legal entities** FastTab, add requred legal entities.
+3. On the **Legal entities** FastTab, add required legal entities.
 4. Click **Settings**.
 5. Add a new certificate. Certificate stored in Key Vault and local certificates are supported. You can add as many certificates as you need and set priorities of the certificates. If a certificate with a higher priority is not available, another certificate will be used according to priority.
    - For a certificate stored in Key Vault, you must select the certificate from the dropdown list.
@@ -231,7 +231,7 @@ Follow these steps to create deployable packages that contain Commerce component
     }
     ```
 
-3. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
+3. Start the MSBuild Command Prompt for Visual Studio utility and run **msbuild** under the Retail SDK folder to create deployable packages.
 4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-packaging).
 
 ## Enable digital signature in offline mode for Modern POS
