@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for Adyen
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 07/02/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -138,6 +138,7 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | --- | --- |
 | adyen_v1_62p9 | adyen_v1_64p7 |
 | | *Note: Please see details below regarding cash out of gift cards* |
+---
 
 > [!NOTE]
 > Adyen may release minor version updates after Microsoft has tested the major version. As long as a major version is supported, it's okay to have minor version updates within the same major version. These updates are normally very targeted fixes and don't meet the bar for full retesting, as long as the same major firmare version was previously tested. Updates shouldn't exceed the maximum Adyen firmware version listed in documentation. 
@@ -399,8 +400,8 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key | Required when "V002" is designated for the version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
-    | EnableRequestProtection | Adds retry logic to each payment call, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to the provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
-    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
+    | EnableRequestProtection | Adds retry logic to card not present payment calls, reducing potential for duplicate calls using a Correlation ID. When "True", a Correlation ID is added to the requests to the provider to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
+    | Non incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
 4. On the **Card verification value** tab, leave **Prompt for card verification value** and **Allow blank card verification value** set to **No**. 
 
@@ -460,8 +461,8 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key | *Card not present only*  |
-    | EnableRequestProtection | Adds retry logic to each payment call, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to the provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
-    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
+    | EnableRequestProtection |Adds retry logic to card not present payment calls, reducing potential for duplicate calls using a Correlation ID. When "True", a Correlation ID is added to the requests to the provider to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
+    | Non incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
 4. On the Action Pane, select **Save**.
 
@@ -493,8 +494,8 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key | *Card not present only* |
-    | EnableRequestProtection | Adds retry logic to each payment call, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to the provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
-    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
+    | EnableRequestProtection |Adds retry logic to card not present payment calls, reducing potential for duplicate calls using a Correlation ID. When "True", a Correlation ID is added to the requests to the provider to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
+    | Non incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
 4. On the Action Pane, select **Save**.
 
@@ -576,8 +577,8 @@ To configure the Dynamics 365 Payment Connector for Adyen for call center paymen
     | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key | *e-Commerce Only* Only required when "V002" is designated for the version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
-    | EnableRequestProtection | Adds retry logic to each payment call, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to the provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
-    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
+    | EnableRequestProtection |Adds retry logic to card not present payment calls, reducing potential for duplicate calls using a Correlation ID. When "True", a Correlation ID is added to the requests to the provider to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
+    | Non incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
 6. On the Action Pane, select **Save**.
 
@@ -665,7 +666,7 @@ When payment transactions aren't successfully processed through the Adyen paymen
 #### Invoicing sales orders failed due to stale authorization
 
 | Title | Capture failed due to stale authorization |
-|---|---|---|
+|---|---|
 | Symptom | Invoicing sales orders fails with "Exception has been thrown by the target of an invocation. System.ArgumentNullException: Value cannot be null." The underlying error in the logs is "The following error occurred during the capture call - Dynamics 365 Payment Connector for Adyen: Error code Decline message Capture failed due to stale authorization." |
 | Root cause | This error happens when an authorization older than the **Authorization stale period (days)** is sent to the payment connector for capture. |
 | Fix | Ensure the value of **Number of days before expired** in **Accounts receivable parameters, Credit Card** is set to **1 less day** than the value set in merchant properties for all channels and then retry invoicing. The recommended value for **Authorization stale period (days)** is 14 in Adyen merchant properties and 13 in Accounts receivables parameters. |
