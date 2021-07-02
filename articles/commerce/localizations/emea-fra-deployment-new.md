@@ -95,7 +95,7 @@ Then, you need to configure a certificate profile for your certificates stored i
 
 Follow these steps to set up a development environment so that you can test and extend the localization functionality.
 
-### CRT extension components
+### Enable CRT extension components
 
 #### RegisterAuditEventFrance component
 
@@ -201,11 +201,9 @@ Follow these steps to set up a development environment so that you can test and 
 3. Rebuild the solution.
 4. Run the solution by using the **Run** command and following the steps in the Retail SDK handbook.
 
+## Production environment
 
-
-### Production environment
-
-The previous procedure enables the extensions that are components of the fiscal registration service integration sample. In addition to completing that procedure, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
+Follow the steps described in the [Development environment](#development-environment) section. In addition, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment:
 
 1. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
@@ -236,7 +234,7 @@ The previous procedure enables the extensions that are components of the fiscal 
 3. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
-### Enable the digital signature in offline mode for Modern POS
+## Enable the digital signature in offline mode for Modern POS
 
 To enable the digital signature in offline mode for Modern POS, you must follow these steps after you activate Modern POS on a new device.
 
