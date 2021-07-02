@@ -51,6 +51,9 @@ The list view of locations includes all stores and warehouses that are configure
 
 ![Inventory lookup operation list view](media/inventory-lookup-list-view.png)
 
+> [!NOTE]
+> Make sure your current store is included in the associated fulfillment groups.
+
 The following actions are available on the POS app bar:
 
 - **Sort** - This action lets the POS user sort the data in the list view based on various criteria. Location-based sorting is the default sort option. 
@@ -69,7 +72,7 @@ The following actions are available on the POS app bar:
 - **Add to transaction** - This action adds the product to the cart and redirects the user to the transaction screen.
 
 > [!NOTE]
-> For a location-based sort, the distance between a location and current store is determined by the coordinates (latitude and longitude) defined in Commerce headquarters. For a store, the location information is defined in the primary address of the operating unit associated with the store. For a non-store warehouse, the location information is defined in the warehouse address. If the current store doesn't have coordinates properly defined, the location-based sort option will display the current store at the top of the list and then sort other locations by name.
+> For a location-based sort, the distance between a location and current store is determined by the coordinates (latitude and longitude) defined in Commerce headquarters. For a store, the location information is defined in the primary address of the operating unit associated with the store. For a non-store warehouse, the location information is defined in the warehouse address. If the current store doesn't have coordinates defined, the location-based sort option will display the current store at the top of the list and then sort other locations by name.
 
 > [!NOTE]
 > The **Show store availability**, **Show store location**, **Pick up in store**, and **Ship product** actions are not available for non-store locations.
