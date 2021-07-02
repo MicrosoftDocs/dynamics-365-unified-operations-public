@@ -51,11 +51,12 @@ The docs.microsoft.com site ([docs.microsoft.com/dynamics365](/dynamics365/)) is
 
 You can find content on docs.microsoft.com by using any search engine. For the best results, we recommend that you use a site search, such as **site:docs.microsoft.com dynamics 365 "search term"**.
 
-## Get notified about changes through an RSS feed
+<!--## Get notified about changes through an RSS feed
 
 To subscribe to a Really Simple Syndication (RSS) feed of all updates that are to the content on docs.microsoft.com, use the following link:
 
 [RSS feed](/api/search/rss?$filter=scopes%2fany(t%3a+t+eq+%27Unified+Operations%27)&locale=en-us)
+Commenting out this section until we have a reliable RSS feed again. We're experimenting in the BC docs with not very satisfactory results, though.-->
 
 ### Leave us feedback
 
