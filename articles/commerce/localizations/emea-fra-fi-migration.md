@@ -5,7 +5,7 @@ title: Migrating from SDK to sealed extensions
 description: This topic provides guidelines on how to migrate from the legacy digital signing sample for France to the functionality that is based on the Fiscal integration framework
 author: josaw
 manager: annbe
-ms.date: 03/01/2021
+ms.date: 07/02/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
