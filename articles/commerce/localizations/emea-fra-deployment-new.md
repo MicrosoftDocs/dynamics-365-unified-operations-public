@@ -82,7 +82,7 @@ Finally, you need to configure a certificate profile for your certificates store
 2. Create a new certificate profile.
 3. On the **Legal entities** FastTab, add required legal entities.
 4. Click **Settings**.
-5. Add a new certificate. Certificate stored in Key Vault and local certificates are supported. You can add as many certificates as you need and set priorities of the certificates. If a certificate with a higher priority is not available, another certificate will be used according to priority.
+5. Add a new certificate. Certificates stored in Key Vault and local certificates are supported. You can add as many certificates as you need and set priorities of the certificates. If a certificate with a higher priority is not available, the next certificate will be used according to priority.
    - For a certificate stored in Key Vault, you must select the certificate from the dropdown list.
    - For a certificate stored locally, you must specify the thumbprint of the certificate.
 6. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
