@@ -45,7 +45,8 @@ To enable the channel return policy functionality, do the following:
 
 1. Go to the **Feature Management** workspace in Dynamics 365 Commerce.
 2. Search for the **Enable channel return policies** feature in the list of feature names.
-3. Select **Enable now**. 
+3. Select **Enable now**.
+4. On the **Distribution schedule** page, run the **1110** (Global configuration) job to distribute the feature change. 
 
 ## Configure return policy
 
