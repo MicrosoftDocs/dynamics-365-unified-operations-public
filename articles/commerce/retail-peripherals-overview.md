@@ -17,7 +17,7 @@ audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 268444
+ms.custom: ["268444", "intro-internal"]
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel

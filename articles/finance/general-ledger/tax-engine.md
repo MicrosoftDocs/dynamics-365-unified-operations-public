@@ -16,6 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
+ms.custom: "intro-internal"
 ms.search.region: India
 # ms.search.industry: 
 ms.author: riluan

@@ -17,7 +17,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 6154
+ms.custom: ["6154", "intro-internal"]
 ms.assetid: ejchoGIT
 ms.search.region: Global
 # ms.search.industry: 

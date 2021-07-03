@@ -17,7 +17,7 @@ audience: IT Pro, Application User
 ms.reviewer: kfend
 # ms.suite:
 # ms.tgt_pltfrm:
-ms.custom: 1587884
+ms.custom: ["1587884", "intro-internal"]
 ms.search.region: India
 # ms.search.industry:
 ms.author: ralin

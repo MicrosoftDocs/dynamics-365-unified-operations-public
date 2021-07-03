@@ -17,7 +17,7 @@ audience: IT Pro, Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 69161
+ms.custom: ["69161", "intro-internal"]
 ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
 ms.search.region: Global
 # ms.search.industry: 

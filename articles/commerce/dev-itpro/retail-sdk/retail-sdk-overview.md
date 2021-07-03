@@ -17,7 +17,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom: 17771
+ms.custom: ["17771", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sijoshi
