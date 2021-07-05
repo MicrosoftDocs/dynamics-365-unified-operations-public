@@ -155,7 +155,7 @@
           "Unified Operations",
           "Human Resources"
         ],
-        finance/**/**.md": [
+        "finance/**/**.md": [
           "dynamics365-finance",
           "Dynamics 365",
           "Unified Operations",
