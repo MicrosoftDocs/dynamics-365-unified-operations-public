@@ -493,6 +493,7 @@ According to the official documentation for the SII system, the following values
 | 14              | Invoice with VAT pending accrual on work certifications with Public Administration recipients for the first half of 2017.                                                                                                                    |
 | 15              | Invoice with VAT pending accrual on transactions of a consecutive nature.                                                                                                                                                                    |
 | 16              | First half 2017.                                                                                                                                                                                                                             |
+| 17              | Operation under any of the regimes provided for in Chapter XI of Title IX (OSS and IOSS) |
 
 You can set up automatically defined rules for any value from the preceding list. You can also adjust the list of possible values. For automatically defined rules, the following criteria are available:
 
