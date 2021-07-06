@@ -28,6 +28,7 @@ ms.dyn365.ops.version: 10.0.21
 # Commerce localization for Russia
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Russia, and describes the scope of Commerce functionality that is specific to Russia. It includes information about features and functionality that are designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that typically affect retail businesses in Russia (within the scope of [Russian localization](../../finance/localizations/russia.md)).
 
