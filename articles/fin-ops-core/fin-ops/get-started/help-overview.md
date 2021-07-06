@@ -53,14 +53,14 @@ You can find content on docs.microsoft.com by using any search engine. For the b
 
 <!--## Get notified about changes through an RSS feed
 
-To subscribe to a Really Simple Syndication (RSS) feed of all updates that are to the content on docs.microsoft.com across the finance and operations apps, use the following link:
+To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the Finance and Operations apps, use the following link:
 
 [RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
 > [!NOTE]
-> The RSS feed returns a list of the 100 articles most recently updated. The list is not sorted by date.  
+> The RSS feed returns a list of the 100 topics most recently updated. The list is not sorted by date.  
 
-Alternatively, subscribe to an RSS feed by app:
+Alternatively, you can subscribe to an RSS feed by app:
 
 - [Commerce](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&locale=en-us)  
 - [Finance](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&locale=en-us)  
