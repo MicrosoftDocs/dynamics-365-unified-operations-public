@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.21
 ---
 
-# Device, market, and Geo IP targeting in Dynamics 365 Commerce
+# Device, market, and Geo IP targeting
 Dynamics 365 Commerce enables you to target specific groups of customers with different page content based on their device information, geolocation, and other dynamically derived attributes from their browser request. This will help you personalize content in near real-time for these target groups known as **audiences** and drive increased user engagement and satisfaction.
 
 You can create and manage audiences in site builder based on customer data such as location, device information, sign-in status, referrer, or query string parameters, gathered from the customer's web request. These audiences can then be targeted with module or fragment variations called **targets**, also authored and managed in site builder.
