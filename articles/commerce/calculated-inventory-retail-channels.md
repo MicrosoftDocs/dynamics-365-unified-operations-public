@@ -109,7 +109,7 @@ In the Commerce release 10.0.9 and earlier, the **Inventory lookup** operation i
 
 When channel-side calculation is correctly configured and managed, it can provide a more reliable estimate of the current store inventory because it uses the transactional data that is in the Commerce channel database but that headquarters might not yet have information about. For example, if you use the existing real-time service call for inventory lookups in POS, headquarters probably won't yet have information about a cash-and-carry sale that just occurred for a product. Therefore, the on-hand inventory value that headquarters returns for that product will probably exceed the store's actual on-hand inventory by one unit. However, if you use channel-side calculation, the cash-and-carry sale can be factored into the calculation and deducted from the on-hand value that is shown. Although the values that both the channel-side calculation and the real-time service call provide are only estimates of on-hand inventory, the value that the channel-side calculation provides is much more likely to be accurate for the current store.
 
-To configure the POS **Inventory lookup** operation in headquarters to use the channel-side calculation logic and turn off real-time service call, follow these steps.
+To configure the POS **Inventory lookup** operation in headquarters to use the channel-side calculation logic and turn off real-time service call, you must firstly enable the **Optimized product availability calculation** feature through the **Feature management** workspace in headquarters, and then follow these steps.
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
 1. Select a functionality profile.
