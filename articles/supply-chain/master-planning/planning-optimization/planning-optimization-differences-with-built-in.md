@@ -1,5 +1,5 @@
 ---
-title: Differences between classic master planning and Planning Optimization
+title: Differences between built-in master planning and Planning Optimization
 description: This topic lists features that are not yet supported by Planning Optimization and are not listed in the Planning Optimization fit analysis page.
 author: crytt
 ms.date: 07/06/2021
@@ -12,7 +12,7 @@ ms.search.validFrom: 2021-07-06
 ms.dyn365.ops.version: 10.0.21
 ---
 
-# Differences between classic master planning and Planning Optimization
+# Differences between built-in master planning and Planning Optimization
 
 [!include [banner](../../includes/banner.md)]
 
