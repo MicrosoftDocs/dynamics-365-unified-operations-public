@@ -34,7 +34,7 @@ This topic provides information about import tax engine configuration.
 1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
 2. In the **Configuration providers** section, click **Repositories** on the **Microsoft** provider tile.
 
-![Load configuration](media/gte-extension-repositories.png)
+![Load configuration.](media/gte-extension-repositories.png)
 
 3. Click **Add**. 
 4. Select the **LCS** option. 
@@ -49,7 +49,7 @@ This topic provides information about import tax engine configuration.
 5. In the tree, select the latest tax document (for example, select **Tax (India GST)**).
 6. In the **Versions** section, click **Import**.
 
-![Load configuration](media/gte-extension-import-configurations.png)
+![Load configuration.](media/gte-extension-import-configurations.png)
 
 7. Click **Yes** to confirm the import.
 

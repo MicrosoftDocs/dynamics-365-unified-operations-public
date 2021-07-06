@@ -39,7 +39,7 @@ When you generate pay statements, all worker deductions and employer contributio
 
 The following illustration shows where the generation of pay statements fits into the larger picture of payroll processing. Other tasks that this topic describes aren't part of the end-to-end payroll process.
 
-![Basic steps for processing earnings](https://i-technet.sec.s-msft.com/dynimg/IC766964.gif "Basic steps for processing earnings")
+![Basic steps for processing earnings.](https://i-technet.sec.s-msft.com/dynimg/IC766964.gif "Basic steps for processing earnings")
 
 ## Prerequisites
 

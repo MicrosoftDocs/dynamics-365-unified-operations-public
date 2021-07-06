@@ -41,7 +41,7 @@ to record payments in a single legal entity on behalf of the other legal entitie
 
 **Business processes**
 
-[![Business process](./media/AR-process.PNG)](./media/AR-process.PNG)
+[![Business process.](./media/AR-process.PNG)](./media/AR-process.PNG)
 
 ## Set up Accounts receivable
 

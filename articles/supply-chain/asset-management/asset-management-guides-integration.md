@@ -61,38 +61,38 @@ To associate a guide with a maintenance checklist template, follow these steps.
     1. On the **Maintenance checklist lines** FastTab, select the line that you want to associate the guide with.
     1. On the **Associated guides** FastTab, select **Add Guide**.
 
-        ![Associate a guide with a maintenance checklist line](media/am-guides-integration-add-guide.png "Associate a guide with a maintenance checklist line")
+        ![Associate a guide with a maintenance checklist line.](media/am-guides-integration-add-guide.png "Associate a guide with a maintenance checklist line")
 
     1. In the **Name** field, select a guide, and then select **Save**.
 
-        ![Select a guide in the Name field](media/am-guides-integration-select-guide.png "Select a guide in the Name field")
+        ![Select a guide in the Name field.](media/am-guides-integration-select-guide.png "Select a guide in the Name field")
 
 1. Associate the maintenance checklist template with a job type:
 
     1. [Create a maintenance job type](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-job-type), or select an existing maintenance job type.
     1. On the Action Pane, select **Maintenance job type defaults**.
 
-        ![Maintenance job type defaults button](media/am-guides-integration-job-defaults.png "Maintenance job type defaults button")
+        ![Maintenance job type defaults button.](media/am-guides-integration-job-defaults.png "Maintenance job type defaults button")
 
     1. Create a line, and then select **Save**.
 
-        ![Create a line](media/am-guides-integration-add-line.png "Create a line")
+        ![Create a line.](media/am-guides-integration-add-line.png "Create a line")
 
     1. On the Action Pane, select **Maintenance checklist**.
 
-        ![Maintenance checklist button](media/am-guides-integration-maintenance-checklist.png "Maintenance checklist button")
+        ![Maintenance checklist button.](media/am-guides-integration-maintenance-checklist.png "Maintenance checklist button")
 
     1. On the **Maintenance checklist lines** FastTab, add a line, and then change the value of the **Type** field to **Template**.
 
-        ![Change the Type value](media/am-guides-integration-checklist-lines.png "Change the Type value")
+        ![Change the Type value.](media/am-guides-integration-checklist-lines.png "Change the Type value")
 
     1. On the **Line details** FastTab, in the **Template** field, select the template that you associated the guide with, and then select **Save**.
 
-        ![Select the template](media/am-guides-integration-checklist-line-details.png "Select the template")
+        ![Select the template.](media/am-guides-integration-checklist-line-details.png "Select the template")
 
 1. [Create a work order](work-orders/manually-created-workorders.md#create-work-order), and then select the maintenance job type that uses the maintenance checklist template that you associated the guide with. The guide is automatically associated with the work order.
 
-    ![Select a maintenance job type](media/am-guides-integration-create-work-order.png "Select a maintenance job type")
+    ![Select a maintenance job type.](media/am-guides-integration-create-work-order.png "Select a maintenance job type")
 
 1. View the guide that is associated with the work order and workers:
 
@@ -100,11 +100,11 @@ To associate a guide with a maintenance checklist template, follow these steps.
     1. [Open the maintenance checklist](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job) for the work order.
     1. Select a checklist line to see the associated guide.
 
-        ![Guide associated with a checklist line](media/am-guides-integration-show-guide.png "Guide associated with a checklist line")
+        ![Guide associated with a checklist line.](media/am-guides-integration-show-guide.png "Guide associated with a checklist line")
 
     1. Open the guide on HoloLens.
 
-        ![Open the guide on HoloLens](media/am-guides-integration-hololens-select.png "Open the guide on HoloLens")
+        ![Open the guide on HoloLens.](media/am-guides-integration-hololens-select.png "Open the guide on HoloLens")
 
 > [!NOTE]
 > You can also associate a guide directly in the maintenance checklist of a work order or a job type.

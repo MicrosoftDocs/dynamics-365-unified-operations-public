@@ -247,7 +247,7 @@ To set up a shipment consolidation policy, follow these steps.
 1. Select the **Default** policy in the list.
 1. On the Action Pane, select **Edit**.
 1. On the **Consolidation fields** FastTab, in the **Selected fields** list, select the row where the **Field name** field is set to *Order number*.
-1. Select the **Remove** button ![Left arrow](media/backward-button.png) to move the field to the **Remaining fields** list.
+1. Select the **Remove** button ![Left arrow.](media/backward-button.png) to move the field to the **Remaining fields** list.
 1. On the Action Pane, select **Save**.
 
 ### Set up physical dimensions for the product

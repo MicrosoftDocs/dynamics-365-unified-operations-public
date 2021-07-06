@@ -993,7 +993,7 @@ For more information about how to use the script, see the documentation that is 
 .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
 ```
 
-![Application group properties](./media/OPSetup_05_ApplicatioGroupProperties.png)
+![Application group properties.](./media/OPSetup_05_ApplicatioGroupProperties.png)
 
 Finally, verify that you can access the AD FS OpenID configuration URL on a Service Fabric node of the **AOSNodeType** type. To do this check, try to open `https://<adfs-dns-name>/adfs/.well-known/openid-configuration` in a web browser. If you receive a message that states that the site isn't secure, you haven't added your AD FS SSL certificate to the Trusted Root Certification Authorities store. This step is described in the AD FS deployment guide. If you're using remoting, you can run the following command to install the certificate on all nodes in the Service Fabric cluster.
 
@@ -1059,29 +1059,29 @@ If the previous remoting Windows PowerShell window was accidentally closed, and 
 
     During the preparation phase, LCS assembles the Service Fabric application packages for your environment. It then sends a message to the local agent to start deployment. You should notice that the environment state is **Preparing**.
 
-    ![Environment in a Preparing state](./media/Preparing2021.png)
+    ![Environment in a Preparing state.](./media/Preparing2021.png)
 
 4. Select **Full details** to open the environment details page. Notice that the upper-right corner of the page shows the environment status as **Preparing**.
 
-    ![Environment details page showing Preparing status](./media/Details_Preparing2021.png)
+    ![Environment details page showing Preparing status.](./media/Details_Preparing2021.png)
 
     The local agent picks up the deployment request, starts the deployment, and communicates back to LCS when the environment is ready. When deployment is started, you should notice that the environment state is changed to **Deploying**.
 
-    ![Environment in a Deploying state](./media/Deploying2021.png)
+    ![Environment in a Deploying state.](./media/Deploying2021.png)
 
 5. Select **Full details** to open the environment details page. Notice that the upper-right corner of the page shows the environment status as **Deploying**.
 
-    ![Environment details page showing Deploying status](./media/Details_Deploying2021.png)
+    ![Environment details page showing Deploying status.](./media/Details_Deploying2021.png)
 
 6. If the deployment fails, the environment state is changed to **Failed**, and the **Reconfigure** button becomes available for the environment. Fix the underlying issue, select **Reconfigure**, update any configuration changes, and then select **Deploy** to retry the deployment.
 
-    ![Reconfigure button for an environment in a Failed state](./media/Failed2021.png)
+    ![Reconfigure button for an environment in a Failed state.](./media/Failed2021.png)
 
     For information about how to reconfigure an environment, see [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md).
 
 The following illustration shows a successful deployment. Notice that the upper-right corner of the page shows the environment status as **Deployed**.
 
-![Successfully deployed environment](./media/Deployed2021.png)
+![Successfully deployed environment.](./media/Deployed2021.png)
 
 ### <a name="connect"></a>Step 22. Connect to your Finance + Operations environment
 

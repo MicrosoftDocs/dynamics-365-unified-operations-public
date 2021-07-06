@@ -57,14 +57,14 @@ Preventive maintenance scheduling generates calendar entries on assets, based on
 
 5. Click **OK** to start the generation of maintenance schedule entries on assets. The generated entries will be shown in the **All maintenance schedule** list page. The following illustration shows an example of the **Schedule maintenance plans** dialog.
 
-![Figure 1](media/09-preventive-maintenance.png)
+![Figure 1.](media/09-preventive-maintenance.png)
 
 - In the **Schedule maintenance plans** dialog, you can set up batch jobs on the **Run in the background** FastTab to automatically generate calendar entries at regular intervals.  
 - When you schedule preventive maintenance, maintenance schedule lines with expected start date and time earlier than the system date and time will not be created.  
 
 The figure below provides a graphic illustration of a time-based maintenance plan calculation.  
 
-![Figure 2](media/10-preventive-maintenance.jpg)
+![Figure 2.](media/10-preventive-maintenance.jpg)
 
 Regarding counter-based maintenance plans: In the figures below, two different counter registration cycles are shown. They are based on a maintenance plan set up for asset "V0001", expecting the asset (a car) to run approx. 2,000 km every month.
 
@@ -74,9 +74,9 @@ In the next figure, 2,000 km or more are registered every month. Therefore, thre
 
 The examples described here show that all counter registrations made on an asset show a trend describing wear and tear on the asset. That trend is used as calculation basis at the time of maintenance plan scheduling.
 
-![Figure 3](media/11-preventive-maintenance.png)
+![Figure 3.](media/11-preventive-maintenance.png)
 
-![Figure 4](media/12-preventive-maintenance.png)
+![Figure 4.](media/12-preventive-maintenance.png)
 
 
 

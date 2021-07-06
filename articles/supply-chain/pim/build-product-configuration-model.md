@@ -146,7 +146,7 @@ The API is implemented by using a set of **PCAdaptor** classes that expose the d
 
 The following API flow diagram outlines the process.  
 
-[![Flow diagram](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
+[![Flow diagram.](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
 
 ## Configure products
 

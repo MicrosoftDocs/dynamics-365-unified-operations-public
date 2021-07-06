@@ -40,7 +40,7 @@ Customer data can be mastered in more than one Dynamics 365 application. For exa
 
 *Customer* is a well-defined concept in applications. Therefore, the integration of customer data just involves harmonizing the customer concept between the two applications. The following illustration shows the customer data flow.
 
-![Customer data flow](media/dual-write-customer-data-flow.png)
+![Customer data flow.](media/dual-write-customer-data-flow.png)
 
 Customers can be broadly classified into two types: commercial/organizational customers and consumers/end users. These two types of customers are stored and handled differently in Finance and Operations and Dataverse.
 

@@ -39,7 +39,7 @@ The Workspace Page Filter Group subpattern is used as part of the Operational Wo
 
 ## Wireframe
 
-[![Wireframe for Workspace Page Filter Group subpattern](./media/workspacepagefiltergroupwireframe.png)](./media/workspacepagefiltergroupwireframe.png)
+[![Wireframe for Workspace Page Filter Group subpattern.](./media/workspacepagefiltergroupwireframe.png)](./media/workspacepagefiltergroupwireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
 This pattern didn't exist in Microsoft Dynamics AX 2012.
@@ -70,7 +70,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **ReqCreatePlanWorkspace** (**All workspaces** &gt; **Master Planning**) 
 
-[![workspace Page Filter Group example](./media/workspacepagefiltergroupexample.png)](./media/workspacepagefiltergroupexample.png)
+[![workspace Page Filter Group example.](./media/workspacepagefiltergroupexample.png)](./media/workspacepagefiltergroupexample.png)
 
 ## Appendix
 ### Frequently asked questions

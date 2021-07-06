@@ -44,7 +44,7 @@ You can use Inventory management to perform the following tasks:
 The following learning map shows the major concepts and tasks that make up the framework of the Inventory management module. Click the learning map below to expand it. This learning map will help you get started.
 
 
-[![Inventory learning map](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
+[![Inventory learning map.](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
 
 ## Additional resources
 

@@ -80,7 +80,7 @@ If you're using the BYOD feature for integration with a business intelligence (B
 
     In this connection string, the logical server name should resemble **nnnn.database.windows.net**. You should be able to find the logical server name in Azure portal. The following illustration shows an example of a connection string.
 
-    ![Connection string on the New record page](media/NewRecord.png)
+    ![Connection string on the New record page.](media/NewRecord.png)
     
     
 > [!NOTE]
@@ -95,7 +95,7 @@ For scenarios in which reporting systems read data from BYOD, there is always th
 
 When the validation is passed, the database that you configured for entity export appears in lists of databases, as shown in the following illustration.
 
-![Database for entity export](media/e3bcecdb0ff1532d890915903b378c60.png)
+![Database for entity export.](media/e3bcecdb0ff1532d890915903b378c60.png)
 
 You can now publish one or more entities to the new database by selecting the **Publish** option on the menu.
 
@@ -130,7 +130,7 @@ Change tracking is a feature that is provided in SQL Server and SQL Database. Ch
 
 The **Change tracking** option on the **Publish** page lets you configure how changes are tracked on the underlying entity.
 
-![Change tracking on the underlying entity](media/8918ed89bcc966252727af5a1b75e0fb.png)
+![Change tracking on the underlying entity.](media/8918ed89bcc966252727af5a1b75e0fb.png)
 
 The following table describes the change tracking options that are available.
 
@@ -157,7 +157,7 @@ After entities are published to the destination database, you can use the Export
 
 You can use the **Export** page to export data into many target data formats, such as a comma-separated values (CSV) file. This page also supports SQL databases as another destination.
 
-![Export page](media/091eb0da74bf94c620c3785bca92b41e.png)
+![Export page.](media/091eb0da74bf94c620c3785bca92b41e.png)
 
 You can create a data project that has multiple entities. You can schedule this data project to run by using the batch framework. You also schedule the data export job to run on a periodic basis by selecting the **Export in batch** option.
 

@@ -35,7 +35,7 @@ You use the **Landed cost parameters** page to set up general information and co
 
 To work with the parameters, go to **Landed cost \> Setup \> Landed cost parameters**, and then set the fields as described in the following subsections.
 
-![Landed cost parameters page](media/landed-cost-parameters.png "Landed cost parameters page")
+![Landed cost parameters page.](media/landed-cost-parameters.png "Landed cost parameters page")
 
 ## General tab
 

@@ -128,7 +128,7 @@ To view the transaction details for a specific accrual amount, select an accrual
 - Details about the accrual period and rates
 - Any changes made to leave plan configurations
 
-![Display leave accrual transaction auditing](media/hr-leave-and-absence-accrue-audit.png)
+![Display leave accrual transaction auditing.](media/hr-leave-and-absence-accrue-audit.png)
 
 ## See also
 

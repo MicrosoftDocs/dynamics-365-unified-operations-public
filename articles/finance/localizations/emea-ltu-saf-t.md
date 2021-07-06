@@ -57,7 +57,7 @@ For more information about how to download ER configurations, see [Download ER 
 | SAF-T General model mapping | Model mapping | 128.251 | The model mapping that provides general data source mapping. |
 | SAF-T Format (LT)           | Format        | 128.198 | The XML format that represents the SAF-T report in accordance with the requirements for Lithuania. |
 
-![SAF-T general model mapping configuration for Lithuania](media/lt-saf-t-ger-configurations.png)
+![SAF-T general model mapping configuration for Lithuania.](media/lt-saf-t-ger-configurations.png)
 
 The **SAF-T General model mapping** configuration provides general data source mapping for the following master data:
 
@@ -85,7 +85,7 @@ Import the most recent versions of the configurations. The version description u
 > [!IMPORTANT]
 > After all the ER configurations from the previous table are imported, set the **Default for model mapping** option to **Yes** for the **SAF-T General model mapping** configuration.
 >
-> ![Default for model mapping option set to Yes for the SAF-T General model mapping configuration](media/lt-saf-t-default-model-mapping.png)
+> ![Default for model mapping option set to Yes for the SAF-T General model mapping configuration.](media/lt-saf-t-default-model-mapping.png)
 
 ### <a name="application"></a>Set up application-specific parameters for the SAF-T Format (LT) configuration
 
@@ -126,7 +126,7 @@ The **Company** node of the SAF-T report must include information for a contact.
 2. Select **New** to create a new contact for your legal entity. Be sure to select **Legal entity** in the **Contact for** field. 
 3. Check by **Party ID** value to make sure that you select the legal entity that SAF-T will be reported from.
 
-![ER configurations for the SAF-T report for Lithuania](media/lt-saf-t-contact-person.png)
+![ER configurations for the SAF-T report for Lithuania.](media/lt-saf-t-contact-person.png)
 
 ## Generate the SAF-T report
 

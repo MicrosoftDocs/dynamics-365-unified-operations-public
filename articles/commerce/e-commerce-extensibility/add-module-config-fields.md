@@ -35,7 +35,7 @@ Configuration fields can be added to a module to expose them to page authors and
 
 The following illustration shows how these fields appear in the page authoring tools.
 
-![Module configuration fields in the authoring tools](media/module-config-fields.png)
+![Module configuration fields in the authoring tools.](media/module-config-fields.png)
 
 ## Add new module configuration fields
 

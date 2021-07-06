@@ -65,5 +65,5 @@ You can post and print any free text, customer, and project invoice or credit no
 
 Open the **Attachments** page for the printed invoice. On the **Attachment** FastTab, in the **Additional details** field group, in **Document hash number** field, find the stored hash number calculated for the printed invoice.
 
-![Attachment hash number](media/attach-hash-num.jpg)
+![Attachment hash number.](media/attach-hash-num.jpg)
 

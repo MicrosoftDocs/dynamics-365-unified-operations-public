@@ -85,7 +85,7 @@ For the following ER-related reasons, we recommend that you design ER configurat
 
 ER configurations that are designed in the development environment can be [uploaded](#data-persistence-consideration) to the test environment for the configuration evaluation (proper process integration, correctness of results, and performance) and quality assurance, such as correctness of role-driven access rights and segregation of duties. The features that enable ER configuration interchange can be used for this purpose. Proven ER configurations can be uploaded to LCS to share them with service subscribers, or they can be [imported](#data-persistence-consideration) to the production environment for internal use.
 
-![ER configuration lifecycle](./media/ger-configuration-lifecycle.png)
+![ER configuration lifecycle.](./media/ger-configuration-lifecycle.png)
 
 ## <a name="data-persistence-consideration" />Data persistence consideration
 

@@ -73,7 +73,7 @@ When updating an existing time off request, you can add an attachment. You can a
 
 4. In the **Cancellation details** pane, enter a comment and then select **Submit**.
 
-   ![Cancel leave request](media/hr-leave-and-absence-cancel.png)
+   ![Cancel leave request.](media/hr-leave-and-absence-cancel.png)
 
 ## See also
 

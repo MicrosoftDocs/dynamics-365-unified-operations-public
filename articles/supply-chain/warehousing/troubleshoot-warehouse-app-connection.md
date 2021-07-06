@@ -37,7 +37,7 @@ This topic describes how to fix common issues that you might encounter while con
 
 This section explains what to do if the warehousing app shows a **Trust anchor for certification path not found** error when trying to connect to Supply Chain Management.
 
-![Error on mobile device](media/WMA_TrustAnchor_Error.png "Error on mobile device")
+![Error on mobile device.](media/WMA_TrustAnchor_Error.png "Error on mobile device")
 
 ### Scope
 

@@ -46,7 +46,7 @@ Electronic messaging is based on the following entities:
 
 The following illustration shows the flow of data for electronic messaging.
 
-![Electronic messaging data flow](media/electronic-messaging-data-flow.png)
+![Electronic messaging data flow.](media/electronic-messaging-data-flow.png)
 
 The Electronic messages functionality supports the following scenarios:
 
@@ -344,11 +344,11 @@ The **Message items** FastTab shows all the message items that are related to th
 
 All reports that have already been generated and received for a message are attached to that message. To review the attachments that are related to a message, select the message, and then select the **Attachment** button (the paper clip symbol) in the upper-right corner of the page.
 
-![Attachment button](media/attachment-icon.png)
+![Attachment button.](media/attachment-icon.png)
 
 The **Attachments** page shows all the attachments that are related to the selected message. To view a file, select it in the list on the left, and then select **Open** on the Action Pane.
 
-![Open button](media/open-button.png)
+![Open button.](media/open-button.png)
 
 You can also review attachments that are related to a specific action that was previously run for a message. On the **Electronic messages** page, select the message on the **Messages** FastTab, select the action on **Action log** FastTab, and then select the **Attachment** button in the upper-right corner of the page.
 
@@ -442,11 +442,11 @@ Select **Electronic messages** on the Action Pane to review an electronic messag
 
 You can also review all the files that are related to a specific message item. Select the **Message** field for the message item, or select **Electronic messages** on the Action Pane. Then, on the **Electronic message** page, select the message to review files for, and then select the **Attachment** button (the paper clip symbol) in the upper-right corner of the page.
 
-![Attachment button](media/attachment-icon.png)
+![Attachment button.](media/attachment-icon.png)
 
 The **Attachments** page shows all the attachments that are related to the message. To view a file, select it in the list on the left, and then select **Open** on the Action Pane.
 
-![Open button](media/open-button.png)
+![Open button.](media/open-button.png)
 
 #### Original document
 
@@ -466,7 +466,7 @@ This section provides an example that shows how you can set up electronic messag
 
 When you build processing, it's helpful if you first define the processing actions and statuses that will be set up. The following illustration shows what the processing looks like for this example.
 
-![Processing scheme](media/processing-scheme.png)
+![Processing scheme.](media/processing-scheme.png)
 
 #### Create message statuses
 
@@ -477,7 +477,7 @@ When you build processing, it's helpful if you first define the processing actio
     - Prepared
     - Generated
 
-    ![Message statuses](media/message-statuses.png)
+    ![Message statuses.](media/message-statuses.png)
 
 3. On the line for the **New** status, select the **Allow delete** check box to let users delete messages that have this status.
 
@@ -486,7 +486,7 @@ When you build processing, it's helpful if you first define the processing actio
 1. Go to **Tax \> Setup \> Electronic messages \> Additional fields**.
 2. Add an additional field and its values. Here is an example.
 
-    ![Additional fields](media/additional-fields.png)
+    ![Additional fields.](media/additional-fields.png)
 
 3. Set the **User edit** option to **Yes** to let users edit the field.
 
@@ -513,7 +513,7 @@ For this example, you will create the following actions:
     - On the **Initial statuses** FastTab, in the **Message status** field, select **Prepared**.
     - On the **Result statuses** FastTab, in the **Message status** field, select **Generated**. In the **Response type** field, enter **Successfully executed**.
 
-    ![Generate report action](media/generate-report-action.png)
+    ![Generate report action.](media/generate-report-action.png)
 
 5. Optional: To let users regenerate a report several times, you can create an **Update to initial status** action and set the following fields:
 
@@ -531,13 +531,13 @@ In this example, all the actions should be set up so that they run separately. T
 4. Go to **Tax \> Inquires and reports \> Electronic messages \> Electronic messages**.
 5. Select **New** to create a message. At this point, you can add dates and a description. You can also update the value of the additional field as you require.
 
-    ![Create an electronic message](media/create-electronic-message.png)
+    ![Create an electronic message.](media/create-electronic-message.png)
 
 The grid on the **Action log** FastTab is automatically filled in with a log of all actions that are performed on the message.
 
 You can now either delete or update the message status. To update the message status, select **Update status**. In the **New status** field, select **Prepared**, and then select **OK**.
 
-![Update the message status](media/update-status.png)
+![Update the message status.](media/update-status.png)
 
 The message status is updated to **Prepared**, and you can now generate the report by selecting **Generate report**. The report is generated, and the message status and action log are updated. To view the generated report, select the **Attachment** button (the paper clip symbol) in the upper-right corner of the page.
 

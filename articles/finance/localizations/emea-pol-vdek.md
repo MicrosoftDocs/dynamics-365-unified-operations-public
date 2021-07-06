@@ -72,7 +72,7 @@ Import the latest versions of these configurations. The version description usua
 > [!NOTE]
 > After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the **Standard Audit File model mapping** configuration on the **Configurations** page.
 >
-> ![Standard audit file model mapping configuration](media/default-mm.jpg)
+> ![Standard audit file model mapping configuration.](media/default-mm.jpg)
 
 For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -97,14 +97,14 @@ The format includes the following lookup fields for setup.
 2. On the **Configurations** page, expand **Standard Audit File (SAF-T)**, and select **JPK-V7M XML format (PL)**.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 
-    ![Application specific parameters group](media/setup-app-spec-params.jpg)
+    ![Application specific parameters group.](media/setup-app-spec-params.jpg)
 
 4. On the **Application specific parameters** page, select the latest version of the format that you want to define conditions for.
 5. On the **Lookups** FastTab, select each lookup, and define appropriate conditions for it.
 6. On the **Conditions** FastTab, define which tax codes or other available criteria must correspond to a specific lookup result. If conditions are defined on one line, the system applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. As soon as a tax transaction from the reporting period meets a condition in the list, the related marker from the lookup result will be reported for the related document. For more information about the setup of each lookup field, see the subsections that follow.
 7. In the **State** field, select **Completed**, and then save the configuration.
 
-    ![State field](media/complete-app-spec-params.jpg)
+    ![State field.](media/complete-app-spec-params.jpg)
 
 #### Import transactions (ImportTransaction)
 
@@ -358,11 +358,11 @@ You must now import data from the PL JPK_V7M EM setup.zip file into the selected
 4. Select **Close** when entities from the package are listed in the grid.
 5. Select **Import** on the Action Pane to start importing data from the data entities.
 
-    ![PL JPK_V7M EM setup page](media/import-data-entities.jpg)
+    ![PL JPK_V7M EM setup page.](media/import-data-entities.jpg)
 
 You will receive a notification in **Messages**, or you can manually refresh the page to view the progress of the data import. When the import process is completed, the **Execution summary** page shows the results.
 
-![Execution summary page](media/data-entities-imported.jpg)
+![Execution summary page.](media/data-entities-imported.jpg)
 
 > [!IMPORTANT]
 > Some records in the data entities in the package include a link to ER configurations. Therefore, be sure to import ER configurations into Finance before you start to import the data entities package.
@@ -409,7 +409,7 @@ Follow these steps to enter an office code in the **KodUrzedu** additional field
 
 The JPK-V7M reporting process is predefined by the data entities that are delivered in the PL JPK_V7M EM setup.zip package. The following illustration shows an overview of the process.
 
-![JPK_V7M reporting process flow](media/vdek-em-processing.jpg)
+![JPK_V7M reporting process flow.](media/vdek-em-processing.jpg)
 
 The PL JPK_V7M EM setup.zip package provides a setup for the JPK-V7M processing that supports the process of JPK-V7M reporting. This setup consists of the following steps:
 
@@ -468,12 +468,12 @@ The following table shows the sales tax reporting codes that are used in the JPK
 2. Select **JPK-V7M**, and then, on the **Messages** FastTab, select **New**.
 3. In the **Run processing** dialog box, select **OK**.
 
-    ![Run processing dialog box](media/create-em.jpg)
+    ![Run processing dialog box.](media/create-em.jpg)
 
 4. A new electronic message is created. Enter a description, and specify the start and end dates of the period that you want to generate the JPK-V7M report for.
 5. On the **Message additional fields** FastTab, specify any additional values that are required for the declaration part of the JPK-V7M report.
 
-    ![Message additional fields FastTab](media/message-additional-fields.jpg)
+    ![Message additional fields FastTab.](media/message-additional-fields.jpg)
 
 6. In the **CelZlozenia** additional field, specify whether this submission is an original report or a correction. Two values are allowed:
 
@@ -502,7 +502,7 @@ The **P_54_Powód** additional field is available as of version 98.194 of the **
 2. In the **Run processing** dialog box, in the **Action** field, select **Podgląd w programie Excel**.
 3. Select **OK**.
 
-    ![Run processing dialog box, Action field](media/generate-vdek.jpg)
+    ![Run processing dialog box, Action field.](media/generate-vdek.jpg)
 
 4. To run report generation in a batch, specify parameters on the **Run in the background** FastTab. When the report is generated, it's attached to the electronic message as a file.
 5. To view the file, select the electronic message, and then select the **Attachments** button (paper clip symbol) in the upper-right corner of the page.
@@ -513,7 +513,7 @@ The **P_54_Powód** additional field is available as of version 98.194 of the **
 1. When all the data is ready in the system, select **Generate report** on the **Messages** FastTab.
 2. In the **Run processing** dialog box, select **OK**.
 
-    ![Messages FastTab, Run processing dialog box](media/generate-xml-vdek.jpg)
+    ![Messages FastTab, Run processing dialog box.](media/generate-xml-vdek.jpg)
 
 3. To run report generation in a batch, specify parameters on the **Run in the background** FastTab.
 

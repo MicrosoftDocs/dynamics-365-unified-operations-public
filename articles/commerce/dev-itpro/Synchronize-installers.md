@@ -49,7 +49,7 @@ The **Retail Self-service package** subsection in the **Shared asset library** s
 
 The following illustration shows a generic example of the **Retail Self-service package** subsection in the Shared asset library (or Asset library).
 
-![Retail Self-service package subsection in the Shared asset library](media/SharedAssets.jpg)
+![Retail Self-service package subsection in the Shared asset library.](media/SharedAssets.jpg)
 
 ## Upload or modify the self-service installer packages
 

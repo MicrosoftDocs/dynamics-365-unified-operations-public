@@ -46,7 +46,7 @@ The overall upgrade process can be visualized as three overarching phases: Analy
 
 The following diagram shows the end-to-end upgrade process, and the activities that we consider part of each phase. 
 
-![Upgrade process](./media/upgrade-process.png)
+![Upgrade process.](./media/upgrade-process.png)
 
 To learn the most important elements and best practices for successfully upgrading your Dynamics AX 2012 solution to Finance and Operations apps, see [Upgrade Dynamics AX 2012 to Finance and Operations apps](/learn/paths/upgrade-ax-2012-finance-operations/).
 
@@ -131,7 +131,7 @@ After your code upgrade tasks are completed, you can upgrade your database for t
 
 The following illustration shows the process. Just back up the AX 2012 database, upload it to Azure, restore it to the Finance and Operations environment, and then run the data upgrade.
 
-![Data upgrade in a development environment](./media/data-upgrade-dev.png)
+![Data upgrade in a development environment.](./media/data-upgrade-dev.png)
  
 Data upgrade is done through a special type of deployable package. The same mechanism is used to deploy new code from one environment to another environment.
 
@@ -147,7 +147,7 @@ When data upgrade in a development environment is completed, the same process ca
 
 The following illustration shows the process for running data upgrade in a sandbox environment. The difference here is that the bacpac tool is used instead of a traditional SQL backup. This tool is required in order to convert between Microsoft SQL Server and Azure SQL Database. It's a standard SQL tool, and isn't specific to Finance and Operations.
 
-![Data upgrade in a sandbox environment](./media/data-upgrade-sandbox.png)
+![Data upgrade in a sandbox environment.](./media/data-upgrade-sandbox.png)
 
 For details, see [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md).
 

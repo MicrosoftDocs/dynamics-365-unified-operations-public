@@ -61,9 +61,9 @@ When you have created the lifecycle states required for your functional location
 1. Select **Asset management** > **Setup** > **Functional locations** > **Lifecycle models**.
 2. Select **New** to create a new lifecycle model.
 3. Insert the lifecycle model ID in the **Lifecycle model** field and a name for the lifecycle model in the **Name** field. In the **Functional location types** and **Lifecycle states** fields, you can see the number of functional location types that uses the lifecycle model and the number of states selected in the lifecycle model.
-4. On the **Lifecycle states** FastTab, select the states that should be included in the model. This is done by clicking on a state in the **Lifecycle states remaining** section and clicking the ![forward arrow](media/02-setup-for-functional-locations.png) button.
-5. If you want to select all the available states for a model, click the ![select all available stages](media/03-setup-for-functional-locations.png) button. All states are transferred to the **Lifecycle states selected** section.
-6. If you want to remove a selected state from the model, select the state in the **Lifecycle states selected** section and then select the ![back arrow](media/04-setup-for-functional-locations.png) button.
+4. On the **Lifecycle states** FastTab, select the states that should be included in the model. This is done by clicking on a state in the **Lifecycle states remaining** section and clicking the ![forward arrow.](media/02-setup-for-functional-locations.png) button.
+5. If you want to select all the available states for a model, click the ![select all available stages.](media/03-setup-for-functional-locations.png) button. All states are transferred to the **Lifecycle states selected** section.
+6. If you want to remove a selected state from the model, select the state in the **Lifecycle states selected** section and then select the ![back arrow.](media/04-setup-for-functional-locations.png) button.
 7. Select **Lifecycle state updates** to define which lifecycle states can follow a selected state.
 
 

@@ -23,11 +23,11 @@ In summary, the way the tables interact has changed, but the table permissions i
 
 This diagram shows the table relationship **without** the party and global address book data model:
 
-   ![without party model](media/without-party-model.PNG)
+   ![without party model.](media/without-party-model.PNG)
 
 This diagram shows the table relationship **with** the party and global address book data model:
 
-   ![with party model](media/with-party-model.png)
+   ![with party model.](media/with-party-model.png)
 
 ## Create a new table permission
 

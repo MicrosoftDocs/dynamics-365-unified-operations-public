@@ -54,7 +54,7 @@ To enable Teams integration in Commerce headquarters, follow these steps.
 
 The following illustration shows an example of the configuration of Teams integration in Commerce headquarters.
 
-![Teams integration configuration in Commerce headquarters](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)
+![Teams integration configuration in Commerce headquarters.](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)
 
 ## Disable Teams integration
 

@@ -94,16 +94,16 @@ To deploy the environment, follow these steps.
 1. In the **Application version** field, select the most current version. If you have a specific need to select an application version other than the most current version, do not select a version prior to **10.0.14**.
 1. In the **Platform version** field, use the platform version that is automatically chosen for the application version you selected. 
 
-    ![Selecting application and platform versions](./media/project1.png)
+    ![Selecting application and platform versions.](./media/project1.png)
 
 1. Select **Next**.
 1. Select **Demo** as the environment topology.
 
-    ![Selecting the environment topology 1](./media/project2.png)
+    ![Selecting the environment topology 1.](./media/project2.png)
 
 1. On the **Deploy environment** page, enter an environment name. Leave the advanced settings as they are.
 
-    ![Deploy environment page](./media/project4.png)
+    ![Deploy environment page.](./media/project4.png)
 
 1. Adjust the VM size as required. (We recommend VM stock keeping unit \[SKU\] **D13 v2**.)
 1. Review the pricing and licensing terms, and then select the check box to indicate that you agree to them.

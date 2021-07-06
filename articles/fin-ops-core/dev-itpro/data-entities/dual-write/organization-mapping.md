@@ -41,7 +41,7 @@ Although Dataverse doesn't have the concept of an organization hierarchy, it doe
 
 A business ecosystem that consists of Finance and Operations apps and Dataverse will continue to have an organization hierarchy. This organization hierarchy is built on Finance and Operations apps, but it's exposed in Dataverse for informational and extensibility purposes. The following illustration shows the organization hierarchy information that is exposed in Dataverse as a one-way data flow from Finance and Operations apps to Dataverse.
 
-![Architecture image](media/dual-write-data-flow.png)
+![Architecture image.](media/dual-write-data-flow.png)
 
 Organization hierarchy table maps are available for one-way synchronization of data from Finance and Operations apps to Dataverse.
 

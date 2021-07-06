@@ -54,7 +54,7 @@ This topic explains how to create a Modern Point of Sale (MPOS) packaging projec
     3. On the **Active solution platform** menu, select **Edit**.
     4. Remove all platforms except **x86**.
 
-    ![Platform configuration](media/platform.png)
+    ![Platform configuration.](media/platform.png)
 
 6. Edit the JavaScript project file (.jsproj file) file to remove unsupported platform configurations:
 

@@ -941,7 +941,7 @@ For more information about how to use the script, see the documentation that is 
 .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
 ```
 
-![Application group properties](./media/OPSetup_05_ApplicatioGroupProperties.png)
+![Application group properties.](./media/OPSetup_05_ApplicatioGroupProperties.png)
 
 Finally, make sure that you can access the AD FS OpenID Configuration URL on a Service Fabric node of the **AOSNodeType** type. To perform this check, try to open `https://<adfs-dns-name>/adfs/.well-known/openid-configuration` in a web browser. If you receive a message that states that the site isn't secure, you haven't added your AD FS SSL certificate to the Trusted Root Certification Authorities store. This step is described in the AD FS deployment guide, and if you are using remoting, you can use the following script to install the certificate on all nodes in the Service Fabric cluster:
 
@@ -959,13 +959,13 @@ You've now completed the setup of the infrastructure. The following sections des
 1. Sign in to [LCS](https://lcs.dynamics.com/), and open the on-premises implementation project.
 2. On the hamburger menu, select **Project settings**.
 
-    ![Project settings command](./media/OPSetup_06_ProjectSettings.png)
+    ![Project settings command.](./media/OPSetup_06_ProjectSettings.png)
 
 3. Select **On-premises connectors**.
 4. Select **Add** to create a new connector. 
 5. On the **Setup host infrastructure** tab, download the agent installer.
 
-    ![Download agent installer button on the Setup host infrastructure tab](./media/OPSetup_07_DownloadAgentInstaller.png)
+    ![Download agent installer button on the Setup host infrastructure tab.](./media/OPSetup_07_DownloadAgentInstaller.png)
     
 6. Verify that the zip file is unblocked. Right-click the file, and then select **Properties**. In the dialog box, select **Unblock**.
 7. Unzip the agent installer on one of the Service Fabric nodes of the **OrchestratorType** type.
@@ -977,7 +977,7 @@ You've now completed the setup of the infrastructure. The following sections des
 
 9. Save the configuration, and then select **Download configurations** to download the localagent-config.json configuration file.
 
-    ![Download configurations button on the Configure agent tab](./media/OPSetup_08_DownloadConfigurations.png)
+    ![Download configurations button on the Configure agent tab.](./media/OPSetup_08_DownloadConfigurations.png)
 
 10. Copy the localagent-config.json file to the machine where the agent installer package is located.
 11. In a **Command Prompt** window, run the following command by navigating to the folder that contains the agent installer.
@@ -992,7 +992,7 @@ You've now completed the setup of the infrastructure. The following sections des
 12. After the local agent is successfully installed, navigate back to your on-premises connector in LCS.
 13. On the **Validate setup** tab, select **Message agent** to test for LCS connectivity to your local agent. When a connection is successfully established, the page will resemble the following illustration.
 
-    ![Validate the agent](./media/ValidateAgent.PNG)
+    ![Validate the agent.](./media/ValidateAgent.PNG)
 
 ### <a name="teardowncredssp"></a> 20. Tear down CredSSP, if remoting was used
 
@@ -1014,7 +1014,7 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
 
 2. For new deployments, select your environment topology, and then complete the wizard to start your deployment.
 
-    ![Deploy your environment](./media/Deploy.png)
+    ![Deploy your environment.](./media/Deploy.png)
 
 3. If you have an existing Platform update 8 or Platform update 11 deployment: 
     - Update the local agent. See [Update the local agent](../lifecycle-services/update-local-agent.md) for more details.
@@ -1022,25 +1022,25 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
     - Deploy Platform update 12 while going through the steps in [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md).
 4. LCS will assemble the Service Fabric application packages for your environment during the preparation phase. It then sends a message to the local agent to start deployment. You will notice the **Preparing** status as below.
 
-    ![Preparation phase](./media/Preparing.png)
+    ![Preparation phase.](./media/Preparing.png)
 
     Click **Full details** to take you to the environment details page, as shown below.
 
-    ![Environment details page](./media/Details_Preparing.png)
+    ![Environment details page.](./media/Details_Preparing.png)
 
 5. The local agent will now pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready. When deployment starts, the status will change to **Deploying**, as shown.
 
-    ![Status changes to Deploying](./media/Deploying.png)
+    ![Status changes to Deploying.](./media/Deploying.png)
 
-    ![Environment is deploying](./media/Details_Deploying.png)
+    ![Environment is deploying.](./media/Details_Deploying.png)
 
     If the deployment fails, the **Reconfigure** button will become available for your environment in LCS, as shown below. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.
 
-    ![Reconfigure button is available](./media/Failed.png)
+    ![Reconfigure button is available.](./media/Failed.png)
 
     See the [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md) topic for details about how to reconfigure. The following graphic shows a successful deployment.
 
-    ![Environment successfully deployed](./media/Deployed.png)
+    ![Environment successfully deployed.](./media/Deployed.png)
 
 ### <a name="connect"></a> 22. Connect to your Finance + Operations environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this topic.

@@ -38,7 +38,7 @@ Inside every accordion module, one or more accordion item modules can be added. 
 
 The following image shows an example of an accordion module that is used to organize information on a store's frequently asked questions (FAQ) page.
 
-![Example of an accordion module](./media/ecommerce-accordion.PNG)
+![Example of an accordion module.](./media/ecommerce-accordion.PNG)
 
 ## Accordion module properties
 
