@@ -73,11 +73,11 @@ The following buy box module settings can be configured at **Site Settings \> Ex
 
 - **Cart line quantity limit** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
 - **Inventory** – For information about how to apply inventory settings, see [Apply inventory settings](inventory-settings.md).
-- **Add product to cart** - For information about how to apply **Add product to cart settings**, see [Add_product_to cart settings](add-cart-settings.md) 
+- **Add product to cart** – For information about how to apply **Add product to cart** settings, see [Add product to cart settings](add-cart-settings.md).
 
 ## Buy box module definition extensions in the Adventure Works theme
 
-The buy box module provided in the Adventure Works theme has a module definition extension that supports implementation of a product specifications module within an accordion module in a PDP buy box. To showcase product specification attributes in a PDP buy box, add a product specification module to the accordion module slot within the buy box slot.
+The buy box module that the Adventure Works theme provides has a module definition extension that supports implementation of a product specifications module within an accordion module in a PDP buy box. To showcase product specification attributes in a PDP buy box, add a product specification module to the accordion module slot in the buy box slot.
 
 > [!IMPORTANT]
 > The Adventure Works theme is available as of the Dynamics 365 Commerce version 10.0.20 release.
@@ -134,7 +134,7 @@ To add a buy box module to a new page and set the required properties, follow th
 
 [Social share module](social-share-module.md)
 
-[Add to cart settings](add-cart-settings.md)
+[Add product to cart settings](add-cart-settings.md)
 
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
 
