@@ -102,7 +102,7 @@ If you see this error for a prolonged period of time, contact Support.
 ### Status codes with extended errors
 When an error occurs in a table that you added to Export to Data Lake, you may see an error code in the status column. The following error codes provide the cause of the error and how to correct the issue.
 
-**Error status codes 4xx indicate an issue with the table** 
+**Error status codes 4xx indicate an issue with the table or the configuration** 
 
 | Error code | Issue                                                                  | Next steps                                                                                                                                                                                                                                                                                                                                                                     |
 |------------|-----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
