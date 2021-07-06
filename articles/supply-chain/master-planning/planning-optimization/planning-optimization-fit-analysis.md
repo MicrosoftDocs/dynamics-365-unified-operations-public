@@ -109,6 +109,10 @@ The following table shows the various results that can be shown after a fit anal
 
 [Get started with Planning Optimization](get-started.md)
 
+[Differences between classic master planning and Planning Optimization](planning-optimization-differences-with-classic.md)
+
+[Parameters not used by Planning Optimization](not-used-parameters.md)
+
 [View plan history and planning logs](plan-history-logs.md)
 
 [Apply filters to a plan](plan-filters.md)
