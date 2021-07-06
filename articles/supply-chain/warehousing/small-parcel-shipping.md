@@ -279,7 +279,7 @@ Follow these steps to pack the shipment.
 
     The shipping label should now be printed on the ZPL printer that you selected earlier. It should resemble the following example.
 
-    ![Example shipping label](media/sps-label-example.png "Example shipping label")
+    ![Example shipping label.](media/sps-label-example.png "Example shipping label")
 
 1. Notice that the **Container manifest ID** and **Total freight** values have been added as received from the carrier.
 

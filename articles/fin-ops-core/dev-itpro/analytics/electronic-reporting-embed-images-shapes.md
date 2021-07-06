@@ -108,7 +108,7 @@ Next, delete the Excel template from the ER format, and attach the Word template
 
 Next, save the Word template for the current ER format to your local computer. Open the template, and open the **XML Mapping** pane. Find the custom XML part that is named **Report**, and then point to the **CELL** element in the ER report that is bound to a data source that returns an image in binary format. Map this XML part's item to the selected **Picture Content** control, and save your changes.
 
-[![embed images](./media/embed-images-shapes-01.png)](./media/embed-images-shapes-01.png)
+[![embed images.](./media/embed-images-shapes-01.png)](./media/embed-images-shapes-01.png)
 
 Finally, delete the Word template from the ER format, and attach the Word document that includes the mapped custom XML parts. Update the format reference to the template, and save the changes that you made to this ER format.
 
@@ -129,7 +129,7 @@ The following table lists the files that are required in order to complete the *
 
 The following graphic provides an example of the test printout for a payment check that is generated from the Excel template.
 
-[![Payment check test printout](./media/embed-images-shapes-02.png)](./media/embed-images-shapes-02.png)
+[![Payment check test printout.](./media/embed-images-shapes-02.png)](./media/embed-images-shapes-02.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,7 +65,7 @@ ms.dyn365.ops.version: 10.0.4
 5. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
 6. On the **Overview** tab, select **Voucher**.
 
-![Example](media/Annotation-2019-05-21-134817.png)
+![Example.](media/Annotation-2019-05-21-134817.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,7 +53,7 @@ If a transaction or order is found that matches the search criteria, the **Retur
 
 For each order line in the list of returnable products, POS shows information about the original purchase quantity and the quantities from any returns that were previously processed. The return quantity that a user enters for an order line must be less than or equal to the value of the **Available to return** field.
 
-![Returnable products page](media/returnslist.png)
+![Returnable products page.](media/returnslist.png)
 
 During return processing, if a user has the physical product, and that product has a bar code, the user can scan the bar code to register the return. Each scan of the bar code increases the return quantity by one item. However, if the bar code label has an embedded quantity, that quantity will be entered in the **Returning now** field.
 

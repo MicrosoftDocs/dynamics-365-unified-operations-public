@@ -81,7 +81,7 @@ Complete the following procedure in the environment that you intend to export a 
    |     <strong>Language locale</strong>      |     EN-US      |
    | <strong>Multiple value separator</strong> |       ;        |
 
-   ![DIXF settings for Configuration manager](./media/dixfconfigurationmanager.png)
+   ![DIXF settings for Configuration manager.](./media/dixfconfigurationmanager.png)
 
 5. Repeat this procedure in the environment that you intend to import the configuration to.
 
@@ -127,7 +127,7 @@ Complete the following procedure in the environment that you intend to export a 
     </tbody>
     </table>
 
-    ![System diagnostic discovery for Config manager](./media/systemdiagnosticconfigurationmanagerdiscoverysettings.png)
+    ![System diagnostic discovery for Config manager.](./media/systemdiagnosticconfigurationmanagerdiscoverysettings.png)
 
 5.  Repeat this procedure in the environment that you intend to import a configuration to.
 

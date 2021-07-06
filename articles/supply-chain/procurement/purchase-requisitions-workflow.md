@@ -56,7 +56,7 @@ The following illustration shows how a purchase requisition can flow through the
 -   **Purchasing agent** – The user who performs a procurement review and can approve the document.
 -   **The requester's manager** – The user who performs a managerial review and can approve the document.
 
-![Purchase requisition workflow review process](./media/purchreqworkflowoverview_submission.gif)  
+![Purchase requisition workflow review process.](./media/purchreqworkflowoverview_submission.gif)  
 In this example, the workflow process for the purchase requisition includes the following steps:
 
 1.  The preparer submits a purchase requisition for review.
@@ -79,7 +79,7 @@ The following roles are included in the workflow process for this example:
 -   **Department manager** – The user who performs an expenditure review and can approve the document.
 -   **Group manager** – The user who performs a signature authority review and can approve the document.
 
-![Purchase requisition line workflow review process](./media/purchreqlineworkflowoverview.gif)  
+![Purchase requisition line workflow review process.](./media/purchreqlineworkflowoverview.gif)  
 In this example, the workflow process for the purchase requisition lines includes the following steps:
 
 1.  The preparer submits a purchase requisition for review. Each line is routed to the reviewer who is configured to receive it in the workflow process.

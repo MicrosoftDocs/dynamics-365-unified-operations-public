@@ -35,7 +35,7 @@ Follow these steps to set up dual-write from LCS **Environment Details** page:
 
 2. Select the **Dual-write application** button.
 
-    ![Power Platform Integration](media/powerplat_integration_step2.png)
+    ![Power Platform Integration.](media/powerplat_integration_step2.png)
 
 3. Review the terms and conditions, and then select **Configure**.
 
@@ -47,7 +47,7 @@ Follow these steps to set up dual-write from LCS **Environment Details** page:
 
 7. Select **Link to Power Platform environment** to create a link between Dataverse and the current environment's databases. This typically takes less than 5 minutes.
 
-    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link to Power Platform environment":::
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link to Power Platform environment.":::
 
 8. When the linking is complete, a hyperlink is displayed. Use the link to sign in to the dual-write administration area in the Finance and Operations environment. From there, you can set up entity mappings.
 

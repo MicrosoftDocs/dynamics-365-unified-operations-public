@@ -45,7 +45,7 @@ All three CDN implementation options deliver only dynamic HTML content from cust
 
 The following illustration shows an overview of the Commerce architecture.
 
-![Overview of the Commerce architecture](media/Commerce_CDN-Option_ComparisonModels.png)
+![Overview of the Commerce architecture.](media/Commerce_CDN-Option_ComparisonModels.png)
 
 For more information about how to set up an instance of Azure Front Door for your Commerce site, see [Add CDN Support](add-cdn-support.md).
 
@@ -59,7 +59,7 @@ The following table lists the pros and cons of using the Commerce-provided insta
 
 The following illustration shows the architecture of the Commerce-provided Azure Front Door instance.
 
-![Commerce-provided Azure Front Door instance](media/Commerce_CDN-Option_CommerceFrontDoor.png)
+![Commerce-provided Azure Front Door instance.](media/Commerce_CDN-Option_CommerceFrontDoor.png)
 
 ## Use a customer-owned Azure Front Door instance
 
@@ -71,7 +71,7 @@ The following table lists the pros and cons of using a customer-owned instance o
 
 The following illustration shows a Commerce infrastructure that includes a customer-owned Azure Front Door instance.
 
-![Commerce infrastructure that includes a customer-owned Azure Front Door instance](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png)
+![Commerce infrastructure that includes a customer-owned Azure Front Door instance.](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png)
 
 ## Use an external CDN service
 
@@ -83,7 +83,7 @@ The following table lists the pros and cons of using an external CDN service to 
 
 The following illustration shows a Commerce infrastructure that includes an external CDN service.
 
-![Commerce infrastructure that includes an external CDN service](media/Commerce_CDN-Option_ExternalFrontDoor.png)
+![Commerce infrastructure that includes an external CDN service.](media/Commerce_CDN-Option_ExternalFrontDoor.png)
 
 ## Additional resources
 

@@ -40,7 +40,7 @@ assets are handled must correspond to both international accounting standards an
 Requirements might include rules for recording acquisition and disposal transactions, depreciation, lifetimes, and write-ups and 
 write-downs of fixed assets. The Fixed assets functionality incorporates many of these standards and rules.
 
-[![Business process](./media/FA-process.PNG)](./media/FA-process.PNG)
+[![Business process.](./media/FA-process.PNG)](./media/FA-process.PNG)
 
 
 

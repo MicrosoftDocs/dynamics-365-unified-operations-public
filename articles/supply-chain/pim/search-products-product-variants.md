@@ -62,7 +62,7 @@ If you type 'speak 05' you will not get any results. This is because the search
 You can limit the number of search results by using the **Number of results** field on the **Sales and marketing &gt; Setup &gt; Search &gt; Search parameters** page. If you set this field to 0, all search results will be returned. If you set it to 10, for example, it will return a maximum 10 search results.
 
 ## Configure the product search
-Before you can use the product and product variant search feature, follow these steps to configure the product search. [![3 steps to configure product search\_AXAppFall](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
+Before you can use the product and product variant search feature, follow these steps to configure the product search. [![3 steps to configure product search\_AXAppFall.](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
 
 ### Step 1: Include all the relevant product and product variant identifiers and dimensions in the search criteria
 

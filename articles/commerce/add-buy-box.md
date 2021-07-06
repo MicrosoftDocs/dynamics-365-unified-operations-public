@@ -40,7 +40,7 @@ The URL of a product details page includes the product ID. All the information t
 
 The following image shows an example of a buy box module on a product details page.
 
-![Example of a buy box module](./media/ecommerce-pdp-buybox.PNG)
+![Example of a buy box module.](./media/ecommerce-pdp-buybox.PNG)
 
 ## Buy box module properties and slots 
 
@@ -79,7 +79,7 @@ The following buy box module settings can be configured at **Site Settings \> Ex
 
 The following image shows an example of an "added to cart" confirmation notification on the Fabrikam site.
 
-![Example of a notification module](./media/ecommerce-addtocart-notifications.PNG)
+![Example of a notification module.](./media/ecommerce-addtocart-notifications.PNG)
 
 ## Commerce Scale Unit interaction
 

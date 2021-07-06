@@ -44,14 +44,14 @@ The following prerequisites must be met before you invoice:
 2. On the **Ledger and sales tax** tab, on **Usual exporters** FastTab, in **Usual exporter sales tax group** field, define a sales tax group that is used only for usual exporters.
 3. Set the **Automatic intent letter assignment** option to **Yes** to turn on the automatic assignment of intent letters during invoicing.
 
-![Setting up Accounts receivable parameters](media/emea-ita-exil-intent-AR-parm.jpg)
+![Setting up Accounts receivable parameters.](media/emea-ita-exil-intent-AR-parm.jpg)
 
 ## Set up sales tax codes
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax code**.
 2. Select a sales tax code, and then, on the **General** FastTab, in the **Invoicing** section, set the **Affect intent letters** option to **Yes**.
 
-![Setting up a sales tax code](media/emea-ita-exil-intent-tax-setup.jpg)
+![Setting up a sales tax code.](media/emea-ita-exil-intent-tax-setup.jpg)
 
 ## Set up customers
 
@@ -86,13 +86,13 @@ The following actions are available for existing intent letters:
 
 When you create a sales order or a free text invoice for a customer who is categorized as a usual exporter, if the creation date is in the validity period of the intent letter, the **Usual exporter sales tax group** value is used in the order or invoice. Additionally, the intent letter number is entered if the **Automatic intent letter assignment** option is set to **Yes**.
 
-![New sales order](media/emea-ita-exil-intent-new-order.jpg)
+![New sales order.](media/emea-ita-exil-intent-new-order.jpg)
 
 The amount of the invoice transaction will be subject to sales tax calculation only if it doesn't exceed the amount of the intent letter.
 
 The details of the intent letter will be also included in a printable layout of the invoice.
 
-![Print invoice](media/emea-ita-exil-intent-inv-print.jpg)
+![Print invoice.](media/emea-ita-exil-intent-inv-print.jpg)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

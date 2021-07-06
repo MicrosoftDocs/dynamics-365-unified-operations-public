@@ -37,7 +37,7 @@ This article provides information about the architecture and configuration of Co
 
 The following diagram shows the components of the Microsoft Dynamics 365 Commerce Runtime (CRT). 
 
-[![Commerce Runtime components](./media/crt-architecture-1024x793.jpg)](./media/crt-architecture.jpg)
+[![Commerce Runtime components.](./media/crt-architecture-1024x793.jpg)](./media/crt-architecture.jpg)
 
 ### Data access
 

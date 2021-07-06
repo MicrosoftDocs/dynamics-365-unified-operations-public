@@ -40,7 +40,7 @@ Store managers can use task management to assign tasks to individual workers, se
 
 The following illustration shows the conceptual architecture of task management in Commerce.
 
-![Task management conceptual architecture](media/Tasks-management-conceptual-architecture.png)
+![Task management conceptual architecture.](media/Tasks-management-conceptual-architecture.png)
 
 ## Additional resources
 

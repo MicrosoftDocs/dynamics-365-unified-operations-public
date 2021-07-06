@@ -71,17 +71,17 @@ To allow recruiters to source jobs through LinkedIn Recruiter, you must configur
 1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**. Alternatively, go to <https://attract.talent.dynamics.com/adminsettings>.
 2. Select the **LinkedIn Integration** tab.
 
-    [![Attract Admin view to start LinkedIn Recruiter integration](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
+    [![Attract Admin view to start LinkedIn Recruiter integration.](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
 
 3. Select **Connect** to start the setup. You will be guided through the LinkedIn sign-in process.
 4. If you have seats on multiple LinkedIn contracts, select the contract that you want to connect to the Attract system. If you have a seat on only one LinkedIn contract, you can skip this step.
 5. Under **Recruiter System Connect (RSC)**, select **Request**.
 
-    [![Attract Admin view to Request LinkedIn Recruiter integration](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
+    [![Attract Admin view to Request LinkedIn Recruiter integration.](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
 
 6. The **Recruiter System Connect (RSC)** setting should now appear as **Partner ready**. If you see **Notify partner** on this page, wait a few seconds, select **Notify partner**, and then refresh the page. The setting should now appear as **Partner ready**.
 
-    [![Attract Admin view to indicate Attract side of requests have been completed](./media/PartnerReadyRSC.png)](./media/PartnerReadyRSC.png)
+    [![Attract Admin view to indicate Attract side of requests have been completed.](./media/PartnerReadyRSC.png)](./media/PartnerReadyRSC.png)
 
 7. To complete the following steps, you must have admin privileges on your LinkedIn Recruiter contract.
 
@@ -89,11 +89,11 @@ To allow recruiters to source jobs through LinkedIn Recruiter, you must configur
     2. On the **More** menu at the top of the page, select **Admin Settings**, and then select the **ATS** tab.
     3. To enable one-click export for just one contract, turn on **Contract Level access (for every seat on this contract**. To enable it for the whole company, turn on **Company Level access (for every contract in your company**.
 
-    [![Turn on Attract integration from LinkedIn Recruiter Admin view](./media/EnableRSC.png)](./media/EnableRSC.png)
+    [![Turn on Attract integration from LinkedIn Recruiter Admin view.](./media/EnableRSC.png)](./media/EnableRSC.png)
 
 8. In the Attract Admin center, select the **LinkedIn integration** tab. The **Recruiter System Connect (RSC)** setting should now appear as **Enabled**.
 
-    [![LinkedIn Recruiter integration complete](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
+    [![LinkedIn Recruiter integration complete.](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
 
 ## Set up Apply with LinkedIn in Attract
 
@@ -104,7 +104,7 @@ This feature is currently in preview. Before you follow these steps, make sure t
 1. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**. Alternatively, go to <https://attract.talent.dynamics.com/adminsettings>.
 2. Select the **LinkedIn Integration** tab.
 
-    [![Attract Admin view to start LinkedIn Recruiter integration](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
+    [![Attract Admin view to start LinkedIn Recruiter integration.](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
 
 3. Next to **Apply with LinkedIn**, select **Connect** to start the setup. You will be guided through the rest of the process with LinkedIn.
 

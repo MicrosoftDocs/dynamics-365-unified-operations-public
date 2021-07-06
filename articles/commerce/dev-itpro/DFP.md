@@ -81,7 +81,7 @@ Here is the flow for purchase events.
 
 If Fraud Protection purchase protection causes an order to be terminated, the user receives the following error message: "The order cannot be processed at this time. Please try again later."
 
-![Example of a rejected order from a reference storefront](../media/Payments/SampleDFPReject.png)
+![Example of a rejected order from a reference storefront.](../media/Payments/SampleDFPReject.png)
 
 Alternatively, if the merchant rules determine that the order should be approved, the response that is sent to the storefront includes the fraud score and the reason code that were determined by Fraud Protection. For the initial integration, the Fraud Protection assessment isn't used in any way, and the response for both approval and rejection scenarios isn't saved.
 
@@ -121,7 +121,7 @@ Next, select the Key Vault URL that is used to store the Fraud Protection secret
 
 4. The **Dynamics Fraud Protection endpoint URL** field must be set. This URL is provided by Fraud Protection and will vary across user acceptance testing (UAT) and production environments.
 
-![Fraud Protection setup in Retail parameters](../media/Payments/DFPSetupParams1.png)
+![Fraud Protection setup in Retail parameters.](../media/Payments/DFPSetupParams1.png)
 
 > [!NOTE]
 > The Key Vault and Fraud Protection settings are company-specific. To enable Fraud Protection for production environments, you don't enter the Azure AD client ID through the user interface (UI). Instead, you must create and submit a [service request](../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md). In the title of your request, clearly indicate that the request is to configure Fraud Protection purchase protection for a production Commerce or Retail environment.

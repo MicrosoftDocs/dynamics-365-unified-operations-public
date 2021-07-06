@@ -45,7 +45,7 @@ Workflow is a system that runs on the Application Object Server (AOS). The workf
 
 A workflow represents a business process. It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document. For example, the following illustration shows a workflow for expense reports.
 
-![Workflow with elements that are assigned to users](./media/workflow_user.gif)
+![Workflow with elements that are assigned to users.](./media/workflow_user.gif)
 
 To better understand this workflow, suppose that Sam submits an expense report for USD 7,000. In this scenario, Ivan must review the receipts that Sam routes to him. Then Frank and Sue must approve the expense report. Now suppose that Sam submits an expense report for USD 11,000. In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.
 

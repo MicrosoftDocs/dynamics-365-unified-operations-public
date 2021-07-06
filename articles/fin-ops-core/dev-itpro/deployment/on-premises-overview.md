@@ -48,11 +48,11 @@ On-premises deployment defines two types of Service Fabric standalone clusters: 
 
 Figure 1 shows a logical diagram of the node types deployed in a Service Fabric standalone cluster. 
 
-[![Service fabric standalone cluster](./media/on-premises-overview-01.png)](./media/on-premises-overview-01.png)
+[![Service fabric standalone cluster.](./media/on-premises-overview-01.png)](./media/on-premises-overview-01.png)
 
 Application lifecycle management for on-premises deployments is orchestrated through LCS. Customers can use the proven tools and methodologies in LCS to help manage their on-premises deployments (Figure 2). The development experience continues to be the same as in cloud deployments through 1-box VHDs. 
 
-[![Application lifecycle management for Local Business Data deployments](./media/on-premises-overview-02.png)](./media/on-premises-overview-02.png)
+[![Application lifecycle management for Local Business Data deployments.](./media/on-premises-overview-02.png)](./media/on-premises-overview-02.png)
 
 ## Data storage 
 The on-premises deployment option stores core customer data on-premises. Core customer data is a subset of the customer data definition provided in the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/privacy/how-microsoft-defines-customer-data). Table 1 outlines the categories of customer data that are stored in Microsoft Azure data centers located in the United States by services such as LCS, Azure Active Directory, and Microsoft Office signup portal. All other customer data, referred to as core customer data, is stored on-premises.  

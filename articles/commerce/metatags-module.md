@@ -40,7 +40,7 @@ One or more general meta tags can be added to a template. However, page-specific
 
 The following illustration shows an example where a metatags module has been added to the **HTML Head** slot of a template.
 
-![Metatags modules in the HTML Head slot of a template](media/metatags-module-1.png)
+![Metatags modules in the HTML Head slot of a template.](media/metatags-module-1.png)
 
 ## Metatags module properties
 
@@ -56,11 +56,11 @@ To add a metatags module to a template, follow these steps.
 1. Select a template, and then select **Edit**.
 1. In the **HTML Head** slot, select the ellipsis (**...**), and then select **Add module**.
 
-    ![Adding a new module](media/metatags-module-2.png)
+    ![Adding a new module.](media/metatags-module-2.png)
 
 1. In the **Add Module** dialog box, select the **Metatags** module, and then select **OK**.
 
-    ![Adding a metatags module](media/metatags-module-3.png)
+    ![Adding a metatags module.](media/metatags-module-3.png)
 
 1. To add meta tags, select the **Metatags** slot. Then, in the module properties pane, select **Add Meta Tag** to add each meta tag. You can reorder the meta tags by using the up arrow and down arrow buttons.
 1. When you've finished editing the template, select **Save**, select **Finish editing**, and then select **Publish** to publish it.

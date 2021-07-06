@@ -70,11 +70,11 @@ In the **Lines** section, you can define one or more charges by currency, as you
 
 Companies often configure tiered charges. In this case, the amount that customers pay for delivery is based on the order value. To configure tiered charges, enter values in the **From amount** and **To amount** fields in addition to defining the charge itself in the **Charges value** field. For example, for orders that have a value that is less than $50, a retailer charges $5.95 for ground shipping. For orders that have a value that is equal to or more than $50, but less than $100, the retailer charges $7.95. Finally, for orders that have a value that is equal to or more than $100, the retailer provides free shipping. The following illustration shows the configuration of these charges.
 
-![Fixed tiered charges example](media/fixedtieredcharges.png)
+![Fixed tiered charges example.](media/fixedtieredcharges.png)
 
 You can use a mixture of categories for charges, depending on your business requirements. For example, for all orders that have a value that is less than $100, there is a fixed charge of $9.95 for shipping. Then, for orders that have a value that is equal to or more than $100, delivery charges are calculated at a rate of 5 percent of the order value. The following illustration shows the configuration of these charges.
 
-![Mixed tiered charges example](media/mixedtieredcharges.png)
+![Mixed tiered charges example.](media/mixedtieredcharges.png)
 
 ## Apply delivery modes during order entry in a call center
 

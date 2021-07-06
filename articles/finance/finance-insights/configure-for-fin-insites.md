@@ -63,7 +63,7 @@ Use the following steps to configure Dataverse for Finance insights.
 
     1. Open the **Environments** page.
 
-        [![Environments page](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
+        [![Environments page.](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
 
     2. Select the Dataverse environment created above and then select **Settings**.
     3. Select **Resources \> All Legacy Settings**.

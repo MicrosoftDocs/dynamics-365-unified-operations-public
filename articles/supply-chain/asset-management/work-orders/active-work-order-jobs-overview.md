@@ -41,7 +41,7 @@ In the **%** column, a number shows completion of the work order as a percentage
 
 The illustration below shows an example of the **Active work order maintenance jobs** list page.
 
-![Figure 1](media/23-work-orders.png)
+![Figure 1.](media/23-work-orders.png)
 
 For a short description of the buttons on the **Active work order maintenance jobs** list page, refer to [Introduction to work orders](../work-orders/introduction-to-work-orders.md) where identical buttons are described.
 

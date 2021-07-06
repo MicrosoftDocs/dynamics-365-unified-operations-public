@@ -41,7 +41,7 @@ For more information about how to configure email, see [Configure and send email
 
 The following image shows the **Create alert rule** dialog box, which now includes a **Send email** option.
 
-[![Create alert rule dialog box, where the Send email option is set to Yes](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)
+[![Create alert rule dialog box, where the Send email option is set to Yes.](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)
 
 > [!NOTE]
 > When the **Send email** option is set to **Yes**, alert notifications will continue to be delivered from the Action Center.
@@ -52,7 +52,7 @@ The service sends email notifications by using predefined email templates that d
 
 The following image shows the structure of the alert notifications when they are received by email.
 
-[![Template-based alert notifications for record creation, field changes, and template deletion](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+[![Template-based alert notifications for record creation, field changes, and template deletion.](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

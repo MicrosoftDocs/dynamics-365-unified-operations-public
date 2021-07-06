@@ -36,7 +36,7 @@ This topic provides an overview of the Retail software development kit (SDK). Mi
 
 The Retail SDK includes the code, code samples, templates, and tools that are required to extend or customize existing Commerce functionality. The SDK supports rapid development, full MSBuild integration, and package generation. The following image shows the relationship between the development environment and the cloud components.
 
-![Commerce components](media/developer-environment.png)
+![Commerce components.](media/developer-environment.png)
 
 > [!NOTE]
 > The Retail SDK supports the Transport Layer Security (TLS) 1.2 standard. Any customization that you build by using the Retail SDK should follow the TLS 1.2 standard.
@@ -102,7 +102,7 @@ Before you start development via the Retail SDK, you must restore all the packag
 > [!NOTE]
 > Starting in Retail SDK version 10.0.18 or later, by default the retail SDK MSBuild will check whether the SDK prerequisites are installed, if not it will show the error message and scripts to run to install the prerequisites. You can skip the prerequisites check by passing the parameter MSBuild /p:CheckVSDependencies=false.
 
- ![Running MSBuild from a Command Prompt window](media/retail-sdk-command-prompt.png)
+ ![Running MSBuild from a Command Prompt window.](media/retail-sdk-command-prompt.png)
 
 ## Retail SDK components
 
@@ -437,13 +437,13 @@ Both the key file for the strong name and the app package signing certificate ca
 
 It's easy to add new projects to the Retail SDK's build system. You can either clone one of the many existing projects or start a new project. You just have to make some adjustments in a text editor, as shown in the following illustration. The relative path of the **Import** elements should be adjusted, and the **AssemblyName** element should use the predefined **AssemblyNamePrefix** property. These adjustments are required to get various tasks for free, such as versioning, code signing, uniform assembly naming, and automatic dropping to the References folder.
 
-![Code for adding new projects](media/retailsdk09.png)
+![Code for adding new projects.](media/retailsdk09.png)
 
 ### Changing the build order or adding to the build
 
 MSBuild traversal files (dirs.proj files) are used to build the whole directory tree of the Retail SDK. The following illustration shows the main traversal file of the Retail SDK. Similar files might also exist in subdirectories. Notice that Visual Studio solution files (.sln files) are similar to traversal files. Both types of file direct the MSBuild engine to process other build scripts.
 
-![Code for changing the build order or adding to the build](media/retailsdk10.png)
+![Code for changing the build order or adding to the build.](media/retailsdk10.png)
 
 After new code is added, most of it should be put in a new folder. You must also add it to the traversal structure by adding it to one or more dirs.proj files. In the previous illustration, the Extensions folder is highlighted on line 10. The quickest way to get started with a new dirs.proj file is to copy an existing file, correct the paths in the **Import** elements, and update the **ProjectFiles** elements in the **ItemGroup** element.
 
@@ -457,7 +457,7 @@ If only one project requires special handling, it's better to explicitly make th
 
 The **CommerceRuntime** and **RetailServer** extension dynamic-link libraries (DLLs) must be copied into the bin folder of the locally installed RetailServer web application. Users can configure the Customization.setting file so that the DLLs are automatically copied into the bin folder of the local RetailServer web application whenever new versions of these files are built from the extension project.
 
-![Code for automatically adding new DLLs](media/retailsdk11.png)
+![Code for automatically adding new DLLs.](media/retailsdk11.png)
 
 ## Application Lifecycle Management
 
@@ -467,7 +467,7 @@ A good Application Lifecycle Management (ALM) solution provides version control,
 
 To work efficiently in a team, or even just to be able to go back and look at some changes that were made earlier, you must have a good branching strategy and versioning discipline. The following illustration shows a simple branching strategy that might work well for most teams. The version numbers are fictitious. For more information, see, [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance).
 
-![Branching and merging](media/retailsdk12.png)
+![Branching and merging.](media/retailsdk12.png)
 
 ### Retail SDK mirror branch
 

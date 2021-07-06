@@ -45,11 +45,11 @@ The user must be added to the Environment Maker role for the environment in Micr
 
 3. On the **Security** tab, on the **Environment roles** tab, select **Environment Maker**.
 
-    ![Environment roles tab](media/environment-roles.png)
+    ![Environment roles tab.](media/environment-roles.png)
 
 4. On the **Users** tab, add the user or your organization.
 
-    ![Users tab](media/environment-maker.png)
+    ![Users tab.](media/environment-maker.png)
 
 5. Select **Save**.
 
@@ -57,7 +57,7 @@ The user must be added to the Environment Maker role for the environment in Micr
 
 7. Select **Sync** to update the user apps.
 
-    ![Sync button](media/get-more.png)
+    ![Sync button.](media/get-more.png)
 
     After synchronization is completed, Human Resources will appear on the home page.
 

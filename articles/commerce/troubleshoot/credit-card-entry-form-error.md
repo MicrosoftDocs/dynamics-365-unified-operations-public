@@ -37,7 +37,7 @@ This topic provides troubleshooting guidance that can help when the **Payment me
 
 When you open the checkout page of an online store, the **Payment method** section isn't loaded, and the following error message is shown: "Something went wrong. Please try again later."
 
-![Payment module error](media/payment-module-error.jpg)
+![Payment module error.](media/payment-module-error.jpg)
 
 ## Resolution
 

@@ -79,11 +79,11 @@ To generate a SAF Accounting books file, click **General ledger > Inquiries and 
 
 By default, the **Show all dimensions** check box is cleared. Select it if you want to include the **KodKontaMa** and **KodKontaWinien** fields in the **KontoZapis** node as financial dimensions. 
 
-![KontoZapis example dimensions off](media/jpk-kr-dim-off.png)
+![KontoZapis example dimensions off.](media/jpk-kr-dim-off.png)
 
 If the **Show all dimensions** check box is selected, the **KontoZapis** node shows all the dimensions.
 
-![KontoZapis example dimensions on](media/jpk-kr-dim-on.png)
+![KontoZapis example dimensions on.](media/jpk-kr-dim-on.png)
 
 As of **version 98.59.49**, the **Accounting Books (PL)** ER format can generate a SAF Accounting books file. However, before the file can be generated, you must complete the following setup:
 
@@ -116,7 +116,7 @@ The **KodKategorii**, **OpisKategorii**, **KodPodkategorii**, and **OpisPodKateg
 1. Go to **General ledger \> Chart of accounts \> Accounts \> Consolidation account groups**.
 2. Create two new groups: one for categories and one for subcategories.
 
-    ![Consolidation account groups page](media/cons-acc-grp.png)
+    ![Consolidation account groups page.](media/cons-acc-grp.png)
 
 3. Go to **General ledger \> Chart of accounts \> Accounts \> Additional consolidation accounts**.
 4. Create categories and subcategories for all main accounts, based on the consolidation account groups that you created in step 2. 
@@ -124,7 +124,7 @@ The **KodKategorii**, **OpisKategorii**, **KodPodkategorii**, and **OpisPodKateg
     - For categories, specify the value that must be reported in the **KodKategorii** field of the report in the **Consolidation account** column, and in the **OpisKategorii** field of the report in the **Consolidation account name** column. Also specify a description.
     - For subcategories, specify the value that must be reported in the **KodPodKategorii** field of the report in the **Consolidation account** column, and in the **OpisPodKategorii** field of the report in the **Consolidation account name** column. Also specify a description.
 
-    ![Additional consolidation accounts page](media/add-cons-acc.png)
+    ![Additional consolidation accounts page.](media/add-cons-acc.png)
 
 5. When you've finished setting up categories and subcategories, define the consolidation accounts groups that the ER format must consider. Open the **Electronic reporting** workspace, and then, in the configuration tree, select **Standard Audit File (SAF-T) \> SAF Poland \> Accounting Books (PL)**.
 6. On the Action Pane, select **Configurations \> Applications specific parameters \> Setup**.
@@ -134,7 +134,7 @@ The **KodKategorii**, **OpisKategorii**, **KodPodkategorii**, and **OpisPodKateg
 10. As the last two lines, add lines that have the conditions **Not blank** and **Blank** for the **Other** lookup result.
 11. In the **State** field, select **Completed**, and save the configuration.
 
-    ![Application-specific parameter for consolidation account](media/cons-acco-app-params.png)
+    ![Application-specific parameter for consolidation account.](media/cons-acco-app-params.png)
 
 ### RodzajDowodu and OpisDziennika fields under the Dziennik node
 The **RodzajDowodu** field under the **Dziennik** node of the report must represent the type of accounting voucher according to article 23, paragraph 2, item 2 of the Act (UoR). The **OpisDziennika** field must represent the journal description according to article 14, paragraphs 3 and 4 of the Act. To support this requirement, new free-text application-specific parameters are introduced in the format of the report.
@@ -146,7 +146,7 @@ The **RodzajDowodu** field under the **Dziennik** node of the report must repres
 5. On the **Conditions** FastTab, define the required conditions. Manually specify the values in the **Lookup result** column according to article 23, paragraph 2, item 2 of the Act.
 6. As the last two lines, add lines that have the conditions **Not blank** and **Blank**.
 
-    ![RodzajDowoduSelector application-specific parameter example](media/example-app-params-setup.png)
+    ![RodzajDowoduSelector application-specific parameter example.](media/example-app-params-setup.png)
 
 7. On the **Lookups** FastTab, select **OpisDziennikaSelector**.
 8. On the **Conditions** FastTab, define the required conditions. Manually specify the values in the **Lookup result** column according to article 14, paragraphs 3 and 4 of the Act.

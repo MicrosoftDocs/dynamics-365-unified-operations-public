@@ -39,7 +39,7 @@ print bank data on standard reports.
 
 **Business processes**
 
-[![Business process](./media/Cash-process.PNG)](./media/Cash-process.PNG)
+[![Business process.](./media/Cash-process.PNG)](./media/Cash-process.PNG)
 
 -   [Cash discounts](cash-discounts.md)
 -   [Settlement overview](settlement-overview.md)

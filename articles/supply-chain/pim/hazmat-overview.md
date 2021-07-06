@@ -32,7 +32,7 @@ To remain compliant with shipping and transport regulations, organizations that 
 
 The following diagram illustrates the steps needed to set up and use the hazardous materials feature.
 
-![Setup and use of the hazardous materials feature](media/hazmat-overview.png "Setup and use of the hazardous materials feature")
+![Setup and use of the hazardous materials feature.](media/hazmat-overview.png "Setup and use of the hazardous materials feature")
 
 The hazardous materials feature is set up in Product information management and provides documents that can be printed through Warehouse management. Therefore, broadly speaking, those areas are the two main areas where you will review, set up, and use this feature's functionality:
 

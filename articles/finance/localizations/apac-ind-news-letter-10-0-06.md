@@ -37,14 +37,14 @@ During the process of importing tax setup, the system will validate the data cor
 as well as data duplication. Duplicate data means the lookup records result in the same tax rate, load on inventory percentage, etc. 
 This functionality can be turned on in the **Feature management** workspace.
 
-![Tax setup validation feature](media/GST-tax-setup-validation-1-10-0-06.PNG)
+![Tax setup validation feature.](media/GST-tax-setup-validation-1-10-0-06.PNG)
 
 ### Tax information enabled for procurement category
 Tax information has been enabled for procurement categories. Tax information can be added on the **Tax information** FastTab on the **Procurement categories** page. 
 
 **Path : Procurement and Sourcing > Consignment > Procurement categories** 
 
-![Procurement categories page, Tax information FastTab](media/GST-tax-setup-validation-2-10-0-06.png)
+![Procurement categories page, Tax information FastTab.](media/GST-tax-setup-validation-2-10-0-06.png)
  
 ### Enable multi-batch processing for GSTR reports
 

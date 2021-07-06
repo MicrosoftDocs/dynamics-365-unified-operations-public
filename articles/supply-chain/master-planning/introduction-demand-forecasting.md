@@ -65,7 +65,7 @@ Three major themes are implemented in demand forecasting:
 
 The following diagram shows the basic flow in demand forecasting.
 
-[![demand forecasting introduction diagram](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
+[![demand forecasting introduction diagram.](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
 
 Demand forecast generation starts in Supply Chain Management. Historical transactional data from the Supply Chain Management transactional database is gathered and populates a staging table. This staging table is later fed to a Machine Learning service. By performing minimal customization, you can plug various data sources into the staging table. The data sources can include Microsoft Excel files, comma-separated value (CSV) files, and data from Microsoft Dynamics AX 2009 and Microsoft Dynamics AX 2012. Therefore, you can generate demand forecasts that consider historical data that is spread among multiple systems. However, the master data, such as item names and units of measure, must be the same across the various data sources.
 

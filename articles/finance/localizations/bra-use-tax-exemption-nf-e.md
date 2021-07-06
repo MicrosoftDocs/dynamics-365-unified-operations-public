@@ -82,7 +82,7 @@ The **Add exempt tags** and **Validate benefit codes** parameters must be set up
 2. On the **Web services** tab, in the **Authority** field, select the same authority that is configured in the fiscal establishment.
 3. On the **States using authority** tab, select or clear the **Add exempt tags** and **Validate benefit codes** check boxes according to the state legislation.
 
-![Fiscal establishment and authority settings](media/bra_tax_benefits_from_NT2019_001_parameters.png)
+![Fiscal establishment and authority settings.](media/bra_tax_benefits_from_NT2019_001_parameters.png)
 
 ## Set up benefit codes
 
@@ -98,14 +98,14 @@ The benefit codes that are provided by the **cBenef x CST** table must be entere
     - **Occurrence code:** Enter the numeric part of the benefit code that is given by the **cBenef x CST** table.
     - **Adjustment code:** This code is formed from the state and the occurrence code. This code should match the benefit code that is given by the **cBenef x CST** table.
 
-![Properties for adjustment codes](media/bra_tax_benefits_from_NT2019_001_adjustment_codes.png)
+![Properties for adjustment codes.](media/bra_tax_benefits_from_NT2019_001_adjustment_codes.png)
 
 Note the following special properties for adjustment codes:
 
 - **Literal adjustment code** – Set this option to **Yes** only in scenarios where you issue electronic fiscal documents models 55 and 65 that have regular taxation that has no benefits or exemptions, when the **cBenef x CST** table requires or allows the adjustment code to be used as a fixed value or a literal word, such as "NULO" or "SEM BENEF," in the **\<cBenef\>** tag.
 - **Suppress code** – Set this option to **Yes** only in scenarios where you issue electronic fiscal documents models 55 and 65 that have regular taxation that has no benefits or exemptions, when the **cBenef x CST** table requires or allows the empty **\<cBenef\>** tag to be used.
 
-![Special properties for adjustment codes](media/bra_tax_benefits_from_NT2019_001_adjustment_codes_special_controls.png)
+![Special properties for adjustment codes.](media/bra_tax_benefits_from_NT2019_001_adjustment_codes_special_controls.png)
 
 ## Set up Taxation code by benefit code
 
@@ -114,7 +114,7 @@ The Taxation code by benefit code that is given by the **cBenef x CST** table mu
 1. Go to **Fiscal books \> Setup \> Tax adjustment codes \> Adjustment and information for fiscal documents**.
 2. Select **Add** to enter **Taxation code** for the adjustment code.
 
-![Taxation codes FastTab on the Adjustment and information for fiscal documents page](media/bra_tax_benefits_from_NT2019_001_adjustment_codes_CST.png)
+![Taxation codes FastTab on the Adjustment and information for fiscal documents page.](media/bra_tax_benefits_from_NT2019_001_adjustment_codes_CST.png)
 
 ## Set up benefit codes by item/state
 
@@ -125,7 +125,7 @@ Follow these steps to set up rules to validate benefit codes by CST for a given 
 3. On the **NF-e federal parameters** page, in the **State** field, select a value.
 4. Select **Add** to enter a new relation.
 
-![State field on the Benefit code per Item/State page](media/bra_tax_benefits_from_NT2019_001_benefit_codes_per_item_state.png)
+![State field on the Benefit code per Item/State page.](media/bra_tax_benefits_from_NT2019_001_benefit_codes_per_item_state.png)
 
 ## Validations that are done when fiscal documents are posted
 

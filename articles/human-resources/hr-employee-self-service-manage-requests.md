@@ -46,7 +46,7 @@ This feature provides the following enhancements:
 - You can select multiple leave requests and perform the same action on all of them.
 - The ribbon across the top and a new workflow button on the page show the actions you can take on leave requests.
 
-![Manager experience](media/hr-leave-and-absence-manager-experience.png)
+![Manager experience.](media/hr-leave-and-absence-manager-experience.png)
 
 ## See also
 

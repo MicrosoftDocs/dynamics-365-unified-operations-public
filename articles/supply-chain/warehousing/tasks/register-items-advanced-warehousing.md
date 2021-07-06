@@ -55,14 +55,14 @@ The following scenario shows how to create an item arrival journal header that u
 1. Set **Account number** to *1001*.
 1. Set **Number** to the number of the purchase order that you identified for this exercise.
 
-    ![Item arrival journal](../media/item-arrival-journal-header.png "Item arrival journal")
+    ![Item arrival journal.](../media/item-arrival-journal-header.png "Item arrival journal")
 
 1. Select the **OK** to create the journal header.
 1. In the **Journal lines** section, select **Add line** and enter the following data:
     - **Item number** – Set to *M9200*. The **Site**, **Warehouse**, and **Quantity** will get set based on the inventory transaction data for the 10 pallets (1000 ea.).
     - **Location** – Set to  *001*. This specific location does not track license plates.
 
-    ![Item arrival journal line](../media/item-arrival-journal-line.png "Item arrival journal line")
+    ![Item arrival journal line.](../media/item-arrival-journal-line.png "Item arrival journal line")
 
     > [!NOTE]
     > The **Date** field determines the date on which the on-hand quantity of this item will be registered in the inventory.  

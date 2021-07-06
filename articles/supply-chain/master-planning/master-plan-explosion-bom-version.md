@@ -38,7 +38,7 @@ A demand explosion of a bill of materials (BOM) version creates a demand for eac
 -   The site dimension is mandatory and must be entered on the demand transaction.
 -   The site dimension is consistent. Therefore, the site for lower-level demand is the same as the site on the initial demand transaction.
 
-The following illustration shows how the process for master planning demand explosion. ![Demand explosion using BOM version](./media/multisitedemandexplosionscenariousingbomversion.gif)
+The following illustration shows how the process for master planning demand explosion. ![Demand explosion using BOM version.](./media/multisitedemandexplosionscenariousingbomversion.gif)
 
 ## Additional resources
 

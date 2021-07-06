@@ -37,7 +37,7 @@ You can enter vendor invoices manually or receive them electronically through a 
 
 **Business processes**
 
-[![Diagram of business processes](./media/AP-process.PNG)](./media/AP-process.PNG)
+[![Diagram of business processes.](./media/AP-process.PNG)](./media/AP-process.PNG)
 
 ## Set up Accounts payable
 

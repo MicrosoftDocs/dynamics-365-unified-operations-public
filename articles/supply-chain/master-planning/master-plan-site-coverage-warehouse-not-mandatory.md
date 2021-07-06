@@ -45,7 +45,7 @@ The following graphic illustrates how master planning proceeds. The parameters t
 -   Refill relations are defined for the warehouse. Click **Inventory management &gt; Setup &gt; Inventory breakdown &gt; Warehouses**. On the **Master planning** tab, see the **Main warehouse** field group.
 -   The default order type is set to Production, Purchase order or Kanban. Click **Product information management &gt; Products&gt; Released products**. Select the item, and then click **Plan &gt; Default order settings**. In the **Default order settings** form, see the **Default order type** field.
 
-![Demand for site coverage warehouse not mandatory](./media/multisitedemandexplosionscenarioforsitecoveragewarehousenotmandatory.jpg)
+![Demand for site coverage warehouse not mandatory.](./media/multisitedemandexplosionscenarioforsitecoveragewarehousenotmandatory.jpg)
 
 
 
