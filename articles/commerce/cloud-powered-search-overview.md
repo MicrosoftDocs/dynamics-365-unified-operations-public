@@ -45,7 +45,7 @@ Search relevance and performance are key factors in the omnichannel experience, 
 
 The following illustration shows an example of typical browse and search functionality.
 
-![Search landing page](./media/SearchLanding.png)
+![Search landing page.](./media/SearchLanding.png)
 
 ## Faceted navigation and choice summary 
 
@@ -55,7 +55,7 @@ By using faceted navigation, you can configure different refiners for different 
 
 The following illustration shows an example where faceted navigation is used in a search.
 
-![Choice summary](./media/ChoiceSummary.png)
+![Choice summary.](./media/ChoiceSummary.png)
 
 ## Immersive autosuggest
 
@@ -65,7 +65,7 @@ Dynamics 365 Commerce also supports functionality for keyword matches in various
 
 The following illustration shows an example where immersive autosuggest is being used.
 
-![immersive autosuggest](./media/ImmersiveAutoSuggestUX.png)
+![immersive autosuggest.](./media/ImmersiveAutoSuggestUX.png)
 
 ## Sort
 
@@ -73,7 +73,7 @@ Enhanced sorting in Dynamics 365 Commerce lets customers sort, search, and brows
 
 >[!NOTE]
 >These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that under **Commerce Parameters > Configuration Parameters** there is an entry for "ProductSearch.UseAzureSearch set to 'true'". 
-![Configuration parameters for cloud-powered search](./media/CloudPoweredSearchConfigurationParameters.png)
+![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## Additional resources
 

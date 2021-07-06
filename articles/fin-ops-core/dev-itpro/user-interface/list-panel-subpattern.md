@@ -41,7 +41,7 @@ List Panel is the subpattern that application teams use to manage two lists that
 -   Group control
 
 ## Wireframe
-[![List Panel wireframe](./media/listpanel1-1024x339.png)](./media/listpanel1.png)
+[![List Panel wireframe.](./media/listpanel1-1024x339.png)](./media/listpanel1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -100,7 +100,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **SalesSummaryParameters (GroupQuotation)** 
 
-[![List Panel example](./media/listpanel3.png)](./media/listpanel3.png)
+[![List Panel example.](./media/listpanel3.png)](./media/listpanel3.png)
 
 ## Resources
 ### Typically used by patterns
@@ -122,7 +122,7 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 content
 
-[![List Panel example](./media/listpanel4.png)](./media/listpanel4.png)
+[![List Panel example.](./media/listpanel4.png)](./media/listpanel4.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

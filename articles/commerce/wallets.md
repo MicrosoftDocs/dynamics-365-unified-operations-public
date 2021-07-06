@@ -73,15 +73,15 @@ To support processor payment methods, payment connectors need to populate the **
 
 The **Processor payment method mapping** page can be used to map processor payment methods to configured card or wallet types. To access this page, select the **Processor mapping** link on the **Card types** page.
 
-![Procesor payment mapping link](media/Payments/ProcPmtMap.png)
+![Procesor payment mapping link.](media/Payments/ProcPmtMap.png)
 
 When this page opens, it queries available payment connectors to collect a set or payment methods with the **PaymentMethodVariant** field populated. It then checks to determine if those payment methods have an existing mapping to a card or wallet. Payment methods that do not have a mapping are listed in the center column of the page. 
 
-![Unmapped processor payment method](media/Payments/Unmapped.png)
+![Unmapped processor payment method.](media/Payments/Unmapped.png)
 
 To map a processor payment method to a card or wallet, select the card or wallet, select the processor payment method, and then select **Add**. The processor payment method moves to the **Mapped** column. When a matching payment authorization is received, it will be mapped to the chosen card or wallet.
 
-![Mapped processor payment method](media/Payments/Mapped.png)
+![Mapped processor payment method.](media/Payments/Mapped.png)
 
 > [!NOTE]
 > The **Processor payment method mapping** capability adds a new table that must be synchronized to the channel database. To add this data to the Commerce scheduler, you need to initialize the Commerce scheduler. For details, please refer to documentation related to [updating commerce scheduler configurations](./dev-itpro/cdx-best-practices.md#updating-configurations). 
@@ -94,7 +94,7 @@ In certain cases, processor payment method mapping may not be granular enough fo
 
 In some scenarios, a payment connector may return a card that does not have a BIN range or processor payment method mapping. If this occurs, the payment is authorized by the payment terminal, but is then reversed when the point of sale (POS) can't map the authorization response to a specific card type. To address this, a capability is provided to map unknown authorization responses to a default card type. 
 
-![Default for unmapped cards](media/Payments/DefaultUnmapped.png)
+![Default for unmapped cards.](media/Payments/DefaultUnmapped.png)
 
 This capability ensures that the payment is never authorized by the terminal and then reversed by the POS. This helps avoid confusion for customers and store associates. When this setting is used, the default card for unknown authorizations should be checked periodically to ensure that wanted card types are not accidentally being mapped to the default for unknown card types. If a card type is truly unwanted for processing, it should be turned off at the processor level.
 

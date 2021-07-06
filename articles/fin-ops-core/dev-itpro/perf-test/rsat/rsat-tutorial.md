@@ -69,11 +69,11 @@ RSAT lets you use the same task recording with multiple test cases, enabling a t
 
 This feature can be used to validate whether an action occurred. For example, when a production order is created, estimated, and then started, the app shows a "Production – Start" message to notify you that the production order has been started.
 
-![Production – Start notification](./media/use_rsa_tool_05.png)
+![Production – Start notification.](./media/use_rsa_tool_05.png)
 
 You can validate this message through RSAT by entering the message text on the **MessageValidation** tab of the Excel parameter file for the appropriate recording.
 
-![Message Validation tab](./media/use_rsa_tool_06.png)
+![Message Validation tab.](./media/use_rsa_tool_06.png)
 
 After the test case is run, the message in the Excel parameter file is compared to the message that is shown. If the messages don't match, the test case will fail.
 
@@ -106,11 +106,11 @@ When your run the test case, RSAT will generate snapshots (images) of the steps 
 
 The following illustration shows the flow for this scenario.
 
-![Flow for the demo scenario](./media/use_rsa_tool_14.png)
+![Flow for the demo scenario.](./media/use_rsa_tool_14.png)
 
 The following illustration shows the business processes hierarchy for this scenario in the LCS Business Process Modeler.
 
-![Business processes for the demo scenario](./media/use_rsa_tool_15.png)
+![Business processes for the demo scenario.](./media/use_rsa_tool_15.png)
 
 ## Strategy – Key learning
 

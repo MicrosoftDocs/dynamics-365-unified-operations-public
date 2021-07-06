@@ -126,12 +126,12 @@ Download and install the Finance and Operations mobile app:
 4.  The first time that you sign in, you’re prompted for your user name and password. Enter your credentials.
 5.  After you sign in, the available workspaces for your company are shown. Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.
 
-    [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Pull to refresh.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## Use the Vendor collaboration mobile workspace
 When you select the **Vendor collaboration** workspace, you’ll see the following options.
 
-![Vendor collaboration mobile workspace](./media/vendor-collaboration-mobile-app.png)
+![Vendor collaboration mobile workspace.](./media/vendor-collaboration-mobile-app.png)
 
 The **Vendor collaboration** workspace includes the following pages.
 

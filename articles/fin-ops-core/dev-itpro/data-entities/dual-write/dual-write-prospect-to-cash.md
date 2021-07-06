@@ -37,7 +37,7 @@ An important goal of most businesses is to convert prospects to customers and th
 
 In the app interfaces, you can access the processing statuses and invoice information in real time. Therefore, you can more easily manage functions such as product stocking, inventory handling, and fulfillment in Supply Chain Management, without having to re-create the quotations and orders.
 
-![Dual-write dataflow in prospect-to-cash](../dual-write/media/dual-write-prospect-to-cash[1].png)
+![Dual-write dataflow in prospect-to-cash.](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
 For information about customer and contact integration, see [Integrated customer master](customer-mapping.md). For information about product integration, see [Unified product experience](product-mapping.md).
 

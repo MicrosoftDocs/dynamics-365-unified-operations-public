@@ -47,7 +47,7 @@ The RFQ process consists of the following tasks:
 
 The following illustration shows an overview of the RFQ process.
 
-[![RFQ process](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
+[![RFQ process.](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
 
 You can create an RFQ case from planned orders, from a purchase requisition, or
 by manual entry. The RFQ case is the base document that you use to issue an RFQ

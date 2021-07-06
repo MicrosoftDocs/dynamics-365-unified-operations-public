@@ -29,15 +29,15 @@ The following coverage codes can be used in Planning Optimization:
 
 - **Period** – The replenishment method combines all the demand for a period into one order for the product. The order will be planned for the first day of the period, and its quantity will fulfill the net requirements during the established period. The period starts with the first demand of the product and covers the defined length of time. The next period will start with the next requirements of the product. The *Period* coverage code is often used for non-predictable inventory draw, season-influenced products, or high-cost products. The following illustration shows an example.
 
-    ![Example of Period coverage code use](./media/coverage-code-period.png "Example of Period coverage code use")
+    ![Example of Period coverage code use.](./media/coverage-code-period.png "Example of Period coverage code use")
 
 - **Requirement** – In the replenishment method, the system creates a planned purchase, transfer, or production order per requirement for the product. This method is used for expensive products that have intermittent demand. The *Requirement* coverage code is often used for configurable products or make-to-order scenarios. The following illustration shows an example.
 
-    ![Example of Requirement coverage code use](./media/coverage-code-requirement.png "Example of Requirement coverage code use")
+    ![Example of Requirement coverage code use.](./media/coverage-code-requirement.png "Example of Requirement coverage code use")
 
 - **Min./Max.** – The replenishment method is based on the inventory level. It defines the replenishment of inventory up to a specific level when the predicted on-hand level is below a specific threshold. The replenishment quantity will be the difference between the maximum level and the predicted on-hand level. The *Min./Max.* coverage code is often used for predictable inventory draw, high runners, or less expensive products. The following illustration shows an example.
 
-    ![Example of Min./Max. coverage code use](./media/coverage-code-min-max.png "Example of Min./Max. coverage code use")
+    ![Example of Min./Max. coverage code use.](./media/coverage-code-min-max.png "Example of Min./Max. coverage code use")
 
 - **Manual** – In the replenishment method, the system doesn't suggest purchase, transfer, or production orders for the product. Instead, the planner for the product is responsible for creating the required orders for the replenishment of the product. The *Manual* coverage code is often used for products that system-generated planned orders aren't wanted for.
 

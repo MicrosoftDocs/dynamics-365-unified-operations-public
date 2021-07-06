@@ -55,11 +55,11 @@ Follow these steps to configure a return policy for a retail store or online ret
 
 1. Select **New** to create a new return policy template. To use an existing template, select the template in the left pane. For new templates, add a name and description that will help you identify the policy when it is being applied to the channel.
 
-   ![Add new return policy](media/Return-policy-page1.png)
+   ![Add new return policy.](media/Return-policy-page1.png)
      
    
 1. In the **Allowed refund payment methods** section, define **Allowed** return payment tenders that are specific to each payment method.
-   ![Set allowed payment methods per payment typ](media/Return-policy-page2.png)
+   ![Set allowed payment methods per payment typ.](media/Return-policy-page2.png)
    
     > [!IMPORTANT]
     > - The payment methods are derived from the payment methods set for the organization.
@@ -72,7 +72,7 @@ Follow these steps to configure a return policy for a retail store or online ret
     - Use the arrow buttons to select stores, regions, or organizations.
     - The effective date on the policy will be the date on which the policies are applied to the channels and the channel jobs are run. 
 
-    ![Choose organization nodes dialog box](media/Return-policy-page3.png)
+    ![Choose organization nodes dialog box.](media/Return-policy-page3.png)
 
 1. On the **Distribution schedule** page, run the **1070** job to make the channel return policy available to the POS.
 
@@ -98,11 +98,11 @@ Follow the steps in either of the following examples to view the allowed return 
     - If the payment tender selected is not allowed, an error message is displayed.
     - Select **Amount Due** to display a list of all the allowed return tender types.
 
-![Refund type not allowed](media/Return-policy-page6.png)
+![Refund type not allowed.](media/Return-policy-page6.png)
 
 
 
-![Refund types allowed](media/Return-policy-page5.png)
+![Refund types allowed.](media/Return-policy-page5.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

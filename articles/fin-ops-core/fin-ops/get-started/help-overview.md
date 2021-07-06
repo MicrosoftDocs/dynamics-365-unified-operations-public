@@ -40,7 +40,7 @@ Users of the following apps can access context-sensitive Help and other content 
 
 In all these apps, you can access product-specific Help from the **Help** pane.
 
-![Help pane](./media/help-pane-ops-help.png)
+![Help pane.](./media/help-pane-ops-help.png)
 
 ## Help on docs.microsoft.com
 
@@ -66,7 +66,7 @@ If you have feedback or questions about a topic, leave us a comment at the botto
 
 2. Start typing your comments, and then select **Submit feedback**.
 
-    ![Post comment](./media/feedback.png)
+    ![Post comment.](./media/feedback.png)
 
 > [!NOTE]
 > If you want to submit documentation feedback, you must sign in by using a GitHub account. For more information, see [Setting up and managing your GitHub profile](https://help.github.com/github/setting-up-and-managing-your-github-profile).
@@ -90,11 +90,11 @@ A task guide is a controlled, guided, interactive experience that leads you thro
 
 Microsoft released task guide libraries for product versions through the December 2017 release of Dynamics 365 for Finance and Operations. The [Accessing task guides from the Help pane](#accessing-task-guides-from-the-help-pane) section of this topic explains how to find the correct task guides for your product.
 
-![Task guide reading view](./media/task-guide-ops.png)
+![Task guide reading view.](./media/task-guide-ops.png)
 
 To begin the guided, interactive experience, select **Start task guide** at the bottom of the **Help** pane. A black pointer shows you where to go first. Follow the instructions that appear in the user interface (UI), and enter data as directed.
 
-![Task guide step instruction](./media/task-guide-step-1-ops.png)
+![Task guide step instruction.](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT]
 > The data that you enter when you play a task guide is real. If you're in a production environment, the data will be entered in the company that you're currently using.
@@ -107,7 +107,7 @@ Some fields have field descriptions to help users get unblocked when they are un
 
 To access Help content, select the **Help** button (**?**), and then select **Help**. Alternatively, press **Ctrl+Shift+?**. In both cases, the **Help** pane appears. From the **Help** pane, you can access conceptual topics or task guides that are relevant to the area of the product that you're currently in.
 
-![Help pane](./media/help-pane-ops-help.png)
+![Help pane.](./media/help-pane-ops-help.png)
 
 ### Accessing Help topics from the Help pane
 
@@ -124,13 +124,13 @@ Before you can access task guides from the **Help** pane, a system admin must co
 > - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
 > - It is not possible to connect to an LCS library from an instance of the app running in a local virtual hard drive (VHD).
 
-![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
+![System Parameters form with Help settings.](./media/system-parameters_ops-1024x437.png)
 
 On the **System parameters** page, follow these steps:
 
 1. **Important:** The first time that you open the Help tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the parameters form.
 
-    ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
+    ![Connect to LCS.](./media/connect-to-lcs-crop-1024x365.png)
 
 2. Select the Lifecycle Services project to connect to.
 3. Select BPM libraries (within the selected project) to retrieve task recordings from.
@@ -138,7 +138,7 @@ On the **System parameters** page, follow these steps:
 
 After a System administrator has completed these steps, you can open the **Help** pane and select the **Task guides** tab. You'll now see the task guides that apply to the page that you're currently on. If no task guides are found, you can enter keywords to refine your search. After you select a task guide in the **Help** pane, the **Help** pane shows the step-by-step instructions, and you can play the task guide.
 
-![Task guide reading view](./media/task-guide-ops.png)
+![Task guide reading view.](./media/task-guide-ops.png)
 
 ### Where are the translated task guides for Microsoft libraries?
 

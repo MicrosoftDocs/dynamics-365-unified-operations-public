@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.4
 4. On the **General** Tab, verify that the **Exempt** option is set to **Yes**.
 5. Select **OK**.
 
-![Tax information dialog box](media/Annotation-2019-05-15-175528.png)
+![Tax information dialog box.](media/Annotation-2019-05-15-175528.png)
 
 ## Validate the tax details
 
@@ -43,7 +43,7 @@ ms.dyn365.ops.version: 10.0.4
 2. Verify that the **Exempt** field is set to **Yes**, and that the **Tax computed** field is set to **0.00**.
 3. Select **Close**, and then select **Confirm**.
 
-![Tax document page](media/Annotation-2019-05-15-175726.png)
+![Tax document page.](media/Annotation-2019-05-15-175726.png)
 
 ### Post the purchase invoice
 
@@ -54,7 +54,7 @@ ms.dyn365.ops.version: 10.0.4
 5. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
 6. On the **Overview** tab, select **Voucher**.
 
-![Example](media/Annotation-2019-05-15-175635.png)
+![Example.](media/Annotation-2019-05-15-175635.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

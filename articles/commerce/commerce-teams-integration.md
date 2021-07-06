@@ -53,7 +53,7 @@ The following prerequisites must be in place before you can start to use Microso
 
 The following illustration shows the conceptual architecture of Dynamics 365 Commerce and Microsoft Teams integration, using a San Francisco store as an example. Both Teams and the Commerce POS application use Microsoft Planner as a repository so that tasks published from Teams appear in the POS application and ad hoc tasks created by store managers in the POS application appear in Teams, resulting in a seamless task management experience between the applications.    
 
-![Architecture of Commerce and Teams integration](media/d365-commerce-teams-integration-conceptual-architecture.png)
+![Architecture of Commerce and Teams integration.](media/d365-commerce-teams-integration-conceptual-architecture.png)
 
 ## Additional resources
 

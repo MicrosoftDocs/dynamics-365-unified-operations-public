@@ -80,7 +80,7 @@ The following image shows examples of these types of notifications.
 
 - **Message box** - This will appear over the interface and must be interacted with before you can continue to use the product.  
 
-![The following image shows an example of a message box](media/user-interface-07.png)
+![The following image shows an example of a message box.](media/user-interface-07.png)
 
 ## Toolbars, grids, and lists
 

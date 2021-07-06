@@ -47,7 +47,7 @@ The setup of Asset Management determines whether you can work with inbound and o
 3. Select **Update maintenance request state**.
 4. Select **Inbound** (or another lifecycle state that you've created for inbound assets), and then select **OK**.
 
-![Register assets as inbound](media/07-manage-maintenance-requests.png)
+![Register assets as inbound.](media/07-manage-maintenance-requests.png)
 
 ## Register inbound assets as received
 
@@ -56,7 +56,7 @@ The setup of Asset Management determines whether you can work with inbound and o
 3. Select **Receive assets**.
 4. In the **Received** field, enter the date and time. Then select **OK**. The record is removed from the **Inbound assets** list page.
 
-![Register inbound assets as received](media/08-manage-maintenance-requests.png)
+![Register inbound assets as received.](media/08-manage-maintenance-requests.png)
 
 ## Register assets as outbound
 

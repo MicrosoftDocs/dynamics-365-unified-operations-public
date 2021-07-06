@@ -89,7 +89,7 @@ You can set up the cells of a report either manually or by copying them from ano
 #### Manually create report cells
 1. On the **Reports** page, select **Setup** to open the **Requisites setup** page. The upper pane shows a list of report cells and their main parameters.
 
-    ![Setup of report cells](media/cells-setup.jpg)
+    ![Setup of report cells.](media/cells-setup.jpg)
 
 2. In the upper pane, create a line. In the **Code** field, enter a unique identifier for the report cell.
 
@@ -111,7 +111,7 @@ Use the following procedure to create operations for report cells.
 
     For each report cell, you can set up one or more lines that have parameters for calculating amounts. The lines are linked by mathematical operators.
 
-    ![Setup of operations for report cells](media/cells-setup-operations.jpg)
+    ![Setup of operations for report cells.](media/cells-setup-operations.jpg)
 
 3. In the **Operator** field, select the mathematical operator that should be applied to the cell value.
 
@@ -233,7 +233,7 @@ The following example shows how to configure ER to use the results of financial 
    | Text | String | This field gets the value of the report cell if the calculated value is a value of the **String** type. |
    | Value | Real | This field gets the value of the report cell if the calculated value is a value of the **Real** type. |
 
-    ![Data model](media/model.jpg)
+    ![Data model.](media/model.jpg)
 
 5. Create a new ER model mapping configuration under the added ER model configuration. For more information, see [Define ER model mappings and select data sources for them]( ../../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md).
 
@@ -245,17 +245,17 @@ The following example shows how to configure ER to use the results of financial 
         2. In the **Data sources** pane on the right, select **Add root**. 
         3. In the **Name** field, enter **FinancialReport\_UIP** as the name of the User input parameter. In the **Operations data type name (EDT, enum)** field, select the **LedgerRRGRepCode\_RU** extended data type (EDT).
 
-            ![User input parameter for Report code](media/uip.jpg)
+            ![User input parameter for Report code.](media/uip.jpg)
 
     2. Create the User input parameter for **Base date** in the same manner. However, enter **BaseDate\_UIP** in the **Name** field, and select the **BaseDate** EDT in the **Operations data type name (EDT, enum)** field.
 
-        ![User input parameter for Base date](media/base-date-uip.jpg)
+        ![User input parameter for Base date.](media/base-date-uip.jpg)
 
     3. Create and set up the User input parameter for **Reporting date** (for example, use the **ReportingDate\_RU** EDT):
 
     4. Add the **LedgerRRGCustomReportHelper\_RU** class as a data source that is named **$RRGCustom**.
 
-        ![$RRGCustom data source](media/data-source-rrg-custom.jpg)
+        ![$RRGCustom data source.](media/data-source-rrg-custom.jpg)
 
     5. Create a calculated field that is named **$DataCustom**, and that has the following expression:
 
@@ -280,7 +280,7 @@ The following example shows how to configure ER to use the results of financial 
            - Items \> Value \<-\> ParmFieldAmount 
            - Items \> ReportCode \<-\> FinancialReport\_UIP
 
-    ![List of bound fields](media/binding.jpg)
+    ![List of bound fields.](media/binding.jpg)
 
 7. Set up the format of the report. For more derails on how to add a new format congfiguration, see [ER Create a format configuration]( ../../dev-itpro/analytics/tasks/er-format-configuration-2016-11.md). 
 
@@ -292,7 +292,7 @@ In the format configuration, filter the **Items** record list by a constant valu
     - **Report code** – Select the code for the financial report.
     - **Reporting date** – Optionally specify the date that you're generating the report.
 
-    ![Run the report](media/run-report.jpg)
+    ![Run the report.](media/run-report.jpg)
 
     > [!NOTE]
     > - If you're generating a corrective report for closed periods, and you set the **Reporting date** field, the calculation of cells on financial reports considers transactions of the base period and all later transactions, up to the reporting date, that correct the base period. (The reporting date in the posted transaction belongs to the base period.)
@@ -313,7 +313,7 @@ For more information, see [Electronic messaging](../general-ledger/electronic-me
         - In the **Format mapping** field, select the ER format that you created earlier. 
         - In the **File name** field, define the default name of the generated file.
 
-    ![Message processing actions](media/message-processing-action.jpg)
+    ![Message processing actions.](media/message-processing-action.jpg)
 
 4. On the **Electronic message processing** page, define the processing flow for the report.
 
@@ -324,7 +324,7 @@ For more information, see [Electronic messaging](../general-ledger/electronic-me
 7. In the **From date** and **To date** fields, specify the dates of the reporting period.
 8. Update the status to **Ready to generate**.
 
-    ![Electronic messages](media/electronic-messages.jpg)
+    ![Electronic messages.](media/electronic-messages.jpg)
 
 9. Select **Generate report** to run the ER format for the financial report.
 10. If you're prompted, enter user parameters in the dialog box.

@@ -85,7 +85,7 @@ To find the client ID of the managed identity for your Node application, follow 
 
 The following example image highlights the **Client ID** value on the Azure Portal **Overview** page.
 
-![Azure Portal Overview page with the Client ID value highlighted](media/key-vault-01.png)
+![Azure Portal Overview page with the Client ID value highlighted.](media/key-vault-01.png)
 
 ### Add your Node application details into Retail Server’s authentication allow list
 
@@ -104,11 +104,11 @@ To add your Node application details into Retail Server's authentication allow l
 1.	In the third section named **SERVER RESOURCE IDS**, add an entry with the server resource ID of `https://commerce.dynamics.com`, and then select **Save**.
 
 You should now have a configuration similar to the one in the following example.
-![Retail Server authentication allow list](media/key-vault-02.png)
+![Retail Server authentication allow list.](media/key-vault-02.png)
 
 To synchronize the changes into the channel database, in Commerce headquarters go to **Distribution schedule** and execute job 1110 (Global configuration), as shown in the following image. 
 
-![Execute job 1110 on the Distribution schedule page](media/distribution-schedule.png)
+![Execute job 1110 on the Distribution schedule page.](media/distribution-schedule.png)
  
 Your Node application will now be able to securely communicate and request Key Vault secrets from Retail Server.
 
@@ -133,7 +133,7 @@ To create a new app registration, follow these steps.
 1. Under **Expires**, select **Never**, and then select **OK**.
 1. On the **Certificates & secrets** page, copy the secret value In the **Value** box of your new client secret and store it in a safe place. This secret value is what will enable communication between Retail Server and your Key Vault.
 
-    ![App registration](media/key-vault-03.png)
+    ![App registration.](media/key-vault-03.png)
  
  > [!NOTE]
  > You will only have one opportunity to copy the secret value so it's important to do so now.
@@ -162,7 +162,7 @@ Next, to add the Key Vault details in Retail Server, follow these steps.
 1.	Add the secrets you want to access from Retail Server. For example, if the secret name is "retail-server-test-secret", add "retail-server-test-secret" as the **Name**, and "vault:///retail-server-test-secret" as the **Secret**. The **Secret type** should be set to **Manual**.
 1.	Select **Validate** to test your configuration. If everything was configured correctly, you will see a message that says, "Validation successful."
  
- ![Key Vault Secrets page with secret selected](media/key-vault-04.png)
+ ![Key Vault Secrets page with secret selected.](media/key-vault-04.png)
  
  > [!IMPORTANT]
  > Note the operating unit number of the store that was used to configure the secret key and values. This can be found in Commerce headquarters at **Retail and Commerce \> Channels \> Online stores**. You will need to specify this value in the platform settings JSON file.

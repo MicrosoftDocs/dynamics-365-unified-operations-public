@@ -34,7 +34,7 @@ The flushing principles reflect different consumption strategies for raw materia
 
 Before material consumption, the materials are moved to the input location. The following illustration shows the process.
 
-[![scenario4a](./media/scenario4a.png)](./media/scenario4a.png)
+[![scenario4a.](./media/scenario4a.png)](./media/scenario4a.png)
 
 1. Material warehouse
 2. Raw material picking

@@ -51,7 +51,7 @@ For more information about the Date of VAT register feature, see [Tax point date
 
 When the Date of VAT register feature is turned on, users in legal entities that have their primary address in Italy will be able to set the **Date of VAT register** option on **General ledger parameters** page to **Yes**.
 
-![General ledger parameters page, Sales tax tab, Date of VAT register field is highlighted](./media/date-of-vat-gl-parameter.png)
+![General ledger parameters page, Sales tax tab, Date of VAT register field is highlighted.](./media/date-of-vat-gl-parameter.png)
 
 When this option is set to **Yes**, the **Settle and post sales tax** process and the **Italian sales tax payment** report will consider sales tax transactions based on the date when the VAT was registered instead of the date when the transaction was posted.
 

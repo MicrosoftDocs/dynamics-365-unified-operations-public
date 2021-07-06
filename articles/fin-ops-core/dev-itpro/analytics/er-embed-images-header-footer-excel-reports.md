@@ -86,7 +86,7 @@ The procedures in this topic can be completed in the **USMF** company. No coding
 3. In the **Select image file to upload** dialog box, select **Browse**, and select the **Company logo.png** file that you downloaded earlier.
 4. Select **Save**, and then close the **Legal entities** page.
 
-![Company logo image selected on the Legal entities page](./media/er-embed-images-header-footer-excel-reports-company-logo-image.png)
+![Company logo image selected on the Legal entities page.](./media/er-embed-images-header-footer-excel-reports-company-logo-image.png)
 
 ## <a id="ConfigureFramework"></a>Configure the ER framework
 
@@ -146,7 +146,7 @@ To add the standard ER configurations to your current instance of Dynamics 365 F
 5. On the **Versions** FastTab, select the latest version (for example, **240.112**) of the selected ER format configuration.
 6. Select **Import** to download the selected version from the Global repository to the current Finance instance.
 
-![Importing the standard ER configurations on the Configuration repository page](./media/er-embed-images-header-footer-excel-reports-import-solution.png)
+![Importing the standard ER configurations on the Configuration repository page.](./media/er-embed-images-header-footer-excel-reports-import-solution.png)
 
 > [!TIP]
 > If you have trouble accessing the [Global repository](er-download-configurations-global-repo.md), you can [download configurations](download-electronic-reporting-configuration-lcs.md) from Microsoft Dynamics Lifecycle Services (LCS) instead.
@@ -162,7 +162,7 @@ To add the standard ER configurations to your current instance of Dynamics 365 F
     - **Invoice model mapping** – This configuration contains the [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that describes how the data model is filled in with application data at runtime.
     - **Free text invoice (Excel)** – This configuration contains the [format](general-electronic-reporting.md#FormatComponentOutbound) and format mapping ER components. The format component specifies the report layout, based on a template in Excel format. The format mapping component contains the model data source and specifies how this data source is used to fill in the report layout at runtime.
 
-![Imported ER configurations on the Configurations page](./media/er-embed-images-header-footer-excel-reports-imported-solution.png)
+![Imported ER configurations on the Configurations page.](./media/er-embed-images-header-footer-excel-reports-imported-solution.png)
 
 ## <a id="PrintInvoice1"></a>Print a free text invoice by using the standard ER format
 
@@ -174,7 +174,7 @@ To add the standard ER configurations to your current instance of Dynamics 365 F
 4. In the **Report format** field, select **Free text invoice (Excel)**.
 5. Select the **Esc** key to leave the **Print management setup** page and return to the **Free text invoice** page.
 
-![Print management settings for a free text invoice in the standard ER format on the Print management setup page](./media/er-embed-images-header-footer-excel-reports-print-management.png)
+![Print management settings for a free text invoice in the standard ER format on the Print management setup page.](./media/er-embed-images-header-footer-excel-reports-print-management.png)
 
 ### <a id="ProcessInvoice1"></a>Print a free text invoice
 
@@ -182,7 +182,7 @@ To add the standard ER configurations to your current instance of Dynamics 365 F
 2. Download the generated invoice in Excel format, and open it for preview.
 3. Notice that, in accordance with the structure of the Excel template for the provided ER format, the page footer of the generated invoice contains information about the current page number and the total number of pages in the report.
 
-![Generated free text invoice](./media/er-embed-images-header-footer-excel-reports-print-invoice1.gif)
+![Generated free text invoice.](./media/er-embed-images-header-footer-excel-reports-print-invoice1.gif)
 
 ## <a id="CustomizeProvidedFormat"></a>Customize the standard ER format
 
@@ -199,11 +199,11 @@ In this case, as the representative of Litware, Inc., you must create (derive) a
 5. In the **Name** field, enter **Free text invoice (Excel) custom**.
 6. Select **Create configuration**.
 
-![Creating a configuration for a custom payment format in the Create configuration drop-down dialog box](./media/er-embed-images-header-footer-excel-reports-add-derived-format.png)
+![Creating a configuration for a custom payment format in the Create configuration drop-down dialog box.](./media/er-embed-images-header-footer-excel-reports-add-derived-format.png)
 
 Version 240.112.1 of the **Free text invoice (Excel) custom** ER format configuration is created. This version has a [status](general-electronic-reporting.md#component-versioning) of **Draft** and can be edited. The current content of your custom ER format matches the content of the format that is provided by Microsoft.
 
-![New version of the ER format configuration created on the Configurations page](./media/er-embed-images-header-footer-excel-reports-derived-format-configuration1.png)
+![New version of the ER format configuration created on the Configurations page.](./media/er-embed-images-header-footer-excel-reports-derived-format-configuration1.png)
 
 ### <a id="ConfigureDerivedFormat"></a>Edit the custom format
 
@@ -222,7 +222,7 @@ Configure your custom format so that a company logo image is put in the footer o
 
 7. Select the **Free text invoice \\ Invoice \\ Footer** element.
 
-    ![Footer element in the ER Operations designer](./media/er-embed-images-header-footer-excel-reports-derived-format0.png)
+    ![Footer element in the ER Operations designer.](./media/er-embed-images-header-footer-excel-reports-derived-format0.png)
 
     > [!NOTE]
     > Every page footer of a generated invoice contains information about the current page number and the total number of pages in the report. As you can see, the **Free text invoice \\ Invoice \\ Footer** element contains no child elements. Therefore, the Excel template that is being used is configured to show paging details in the center of every report's footer.
@@ -237,13 +237,13 @@ Configure your custom format so that a company logo image is put in the footer o
         > [!NOTE]
         > The **Excel \\ Picture** element is used to add a company logo image and align it on right side of the page footer.
 
-    ![Properties of the Picture element in the Component properties dialog box](./media/er-embed-images-header-footer-excel-reports-derived-format1.png)
+    ![Properties of the Picture element in the Component properties dialog box.](./media/er-embed-images-header-footer-excel-reports-derived-format1.png)
 
 9. In the format structure tree on the left, select the **Picture** element that you just added, and then, on the **Mapping** tab, expand the **model** data source.
 10. Expand **model.Payment** \> **model.InvoiceBase \> model.InvoiceBase.CompanyInfo**, and then select the **model.InvoiceBase.CompanyInfo.Logo** data source field. The data source field of the [Container](er-formula-supported-data-types-composite.md#container) type exposes the company logo image as media content.
 11. Select **Bind**. The **Picture** format element is now bound with the **model.InvoiceBase.CompanyInfo.Logo** data source field. Therefore, at runtime, a company logo image will be put in the footer of generated invoices.
 
-    ![Picture format element bound with the model.InvoiceBase.CompanyInfo.Logo data source field in the ER Operations designer](./media/er-embed-images-header-footer-excel-reports-derived-format2.png)
+    ![Picture format element bound with the model.InvoiceBase.CompanyInfo.Logo data source field in the ER Operations designer.](./media/er-embed-images-header-footer-excel-reports-derived-format2.png)
 
 12. Select **Save**, and then close the **Designer** page.
 
@@ -259,7 +259,7 @@ To use the draft version of an ER format, you must explicitly mark the ER format
 4. Select **Edit** to make the current page editable, and then, in the configuration tree in the left pane, select **Free text invoice (Excel) custom**.
 5. Set the **Run Draft** option to **Yes**.
 
-![Marking the custom format as runnable on the Configurations page](./media/er-embed-images-header-footer-excel-reports-derived-format-configuration2.png)
+![Marking the custom format as runnable on the Configurations page.](./media/er-embed-images-header-footer-excel-reports-derived-format-configuration2.png)
 
 ## <a id="PrintInvoice2"></a>Print a free text invoice by using the custom ER format
 
@@ -277,7 +277,7 @@ To use the draft version of an ER format, you must explicitly mark the ER format
 2. Download the generated invoice in Excel format, and open it for preview.
 3. Notice that, in accordance with the structure of the custom ER format, the page footer of the generated invoice contains a company logo image in addition to information about the report's paging.
 
-![Generated free text invoice with a company logo image in the page footer](./media/er-embed-images-header-footer-excel-reports-print-invoice2.gif)
+![Generated free text invoice with a company logo image in the page footer.](./media/er-embed-images-header-footer-excel-reports-print-invoice2.gif)
 
 ## <a id="References"></a>Additional resources
 

@@ -35,7 +35,7 @@ This topic shows how to extend existing application menu items so that, after on
 
 This topic focuses on the process of extending existing application menu items so that, after only minimal code changes, navigations are redirected to a custom reporting solution. By using this technique, you will avoid the inconvenience of tracking down and replacing all references to an existing application report. Just extend an existing application menu item to redirect application navigations to reports that are defined in an extension model. The following illustration shows a typical application customization.
 
-[![extendingmenuitem](./media/extendingmenuitem.png)](./media/extendingmenuitem.png)
+[![extendingmenuitem.](./media/extendingmenuitem.png)](./media/extendingmenuitem.png)
 
 ## What's important to know?
 There are a few basic assumptions that you should be aware of before you apply this solution.
@@ -47,13 +47,13 @@ There are a few basic assumptions that you should be aware of before you apply t
 ## Extend report menu items
 The following walkthrough shows how to use menu item extensions to redirect user navigations in the application to a custom solution. The solution includes a custom **Customer list** report for the Fleet Management application and defines all the application customizations in a pure extension model. The following illustration shows the menu item that you use to access the custom **Customer list** report.
 
-[![fleet-workspace-customer-list](./media/fleet-workspace-customer-list.png)](./media/fleet-workspace-customer-list.png)
+[![fleet-workspace-customer-list.](./media/fleet-workspace-customer-list.png)](./media/fleet-workspace-customer-list.png)
 
 1. **Create a new model for your application customizations.** For more information about extension models, see [Customize through extension and overlayering](../extensibility/customization-overlayering-extensions.md).
 2. **Create a new project in Microsoft Visual Studio,** **and add your custom report.** Additionally, add all the solution artifacts. These artifacts include the RDP class or source query, the controller class, and UI builders, if they are present.
 3. **Create an extension of the menu item that is used to access the report.** In this example, the output menu item is named **FMCustomerListReport**. Use the menu item structure to find the menu item name that is exposed in the application. The following illustration shows the action in Application Explorer.
 
-    [![Creating an extension of the menu item that is used to access the report](./media/fleet-extension-create-menu-extension-1024x632.png)](./media/fleet-extension-create-menu-extension.png)
+    [![Creating an extension of the menu item that is used to access the report.](./media/fleet-extension-create-menu-extension-1024x632.png)](./media/fleet-extension-create-menu-extension.png)
 
 4. **Modify the properties of the menu item extension.** Update the report design or controller reference in the menu item to direct navigations to your custom solution.
 

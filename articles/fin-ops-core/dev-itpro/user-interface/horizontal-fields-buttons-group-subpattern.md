@@ -43,7 +43,7 @@ This subpattern is used when actions must be defined for an individual field on 
 -   1–3 buttons
 
 ## Wireframe
-[![Wireframe for Horizontal Fields and Buttons Group form subpattern](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)
+[![Wireframe for Horizontal Fields and Buttons Group form subpattern.](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -85,7 +85,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **SalesTable (GroupHeaderAddressHeaderOverview)** 
 
-[![Example of form](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)
+[![Example of form.](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)
 
 ## Resources
 ### Typically used by patterns
@@ -107,7 +107,7 @@ This section will have answers to frequently asked questions that are related to
 ### Dynamics AX 2012 content
 **SalesTable** 
 
-[![Example of form](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
+[![Example of form.](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

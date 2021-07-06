@@ -40,7 +40,7 @@ There are three main workstreams during a cutover:
 
 The following illustration shows the overall process for cutover to go-live as it will occur in the production environment.
 
-![Cutover process](./media/cutover_1.png)
+![Cutover process.](./media/cutover_1.png)
 
 The mock cutover process is very similar to a basic data upgrade validation in a sandbox environment. We assume that you are familiar with that process, and have already performed it. Mock cutover differs in the following ways:
 

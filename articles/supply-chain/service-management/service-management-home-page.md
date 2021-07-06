@@ -51,7 +51,7 @@ Use the reporting tools to monitor service order margins and subscription transa
 
 The following diagram illustrates the high level business processes for **Service management**, and shows where service processes integrate with other modules.
 
-[![Service management business process diagram](./media/sm_home_page.gif)](./media/sm_home_page.gif)
+[![Service management business process diagram.](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 
 ## Service management at a glance
 

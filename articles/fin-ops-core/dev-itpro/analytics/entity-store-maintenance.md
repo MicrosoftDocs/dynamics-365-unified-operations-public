@@ -42,7 +42,7 @@ To resolve issues with these components, complete the procedures in this topic.
 
 Application analytical workspaces and reports may not render data after certain maintenance operations are completed. The following screenshot shows an example of this.
 
-![Analytical report is blank](media/blank-powerbi.png)
+![Analytical report is blank.](media/blank-powerbi.png)
 
 To resolve this issue:
 

@@ -112,7 +112,7 @@ During development it can be useful to attach a debugger to get more detailed in
 
     Expand the nodes to find the workspace JavaScript, such as **File** > (no domain) > **ExpenseMobile.js**. Click the JavaScript file to view it and add breakpoints.
     
-    ![Expense management mobile workspace](./media/expense-management-mobile-workspace.png)
+    ![Expense management mobile workspace.](./media/expense-management-mobile-workspace.png)
     
 5. Reflect the mobile device on your desktop so that you can interact with it on the desktop screen. 
 

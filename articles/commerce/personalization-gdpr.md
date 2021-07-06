@@ -48,11 +48,11 @@ In Account management in Commerce back office, retailers can opt out on behalf o
 1. From the back-office home page, search for **all customers**.
 1. Search for and select a customer, and then select the **Retail** FastTab.
 
-    ![Retail FastTab](./media/Disablepersonalizationpart1.png)
+    ![Retail FastTab.](./media/Disablepersonalizationpart1.png)
 
 1. Under **Privacy**, set the **Disable personalization** option to **Yes**.
 
-    ![Privacy settings](./media/Disablepersonalizationpart2.png)
+    ![Privacy settings.](./media/Disablepersonalizationpart2.png)
 
 1. Select **Save**, and close the page.
 

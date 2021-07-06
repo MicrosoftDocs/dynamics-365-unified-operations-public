@@ -70,19 +70,19 @@ To set up the **Automatically run the procedure of restoring the broken template
 > [!NOTE]
 > This parameter is defined as application user and logged company specific.
 
-![ER configurations page](./media/GER-BackupTemplates-1.png)
+![ER configurations page.](./media/GER-BackupTemplates-1.png)
 
 The following illustration shows an example of the message that appears when the **Automatically run the procedure of restoring the broken templates in batch** parameter is set to **On**.
 
-![Vendor payment journal page](./media/GER-BackupTemplates-2.png)
+![Vendor payment journal page.](./media/GER-BackupTemplates-2.png)
 
 The following illustration shows the **Restore broken templates from internal database backup** batch process on the **Batch job** page.
 
-![Batch job page](./media/GER-BackupTemplates-3.png)
+![Batch job page.](./media/GER-BackupTemplates-3.png)
 
 The execution log of the completed **Restore broken templates from internal database backup** batch process includes information about the templates that have been restored from the backup storage location to the primary storage location.
 
-![Batch job history page](./media/GER-BackupTemplates-4.png)
+![Batch job history page.](./media/GER-BackupTemplates-4.png)
 
 By default, the process of automatically creating backup copies of templates that reside in ER format configurations is turned on. To stop making backup copies of templates, set the **Stop making backup copies of template** option to **Yes** on the **Attachments** tab of the **Electronic reporting parameters** page. You can open this page from the **Electronic reporting** workspace.
 
@@ -90,7 +90,7 @@ If you set the **Stop making backup copies of templates** option to **Yes** and 
 
 If you upgraded your environment to Finance and Operations version 10.0.5 (October 2019) and want to migrate to a new environment that includes ER format configurations that can be run, select **Fill in backup storage** on the **Electronic reporting parameters** page before the migration occurs. This button starts the process of making backup copies of all available templates, so that they can be stored in the ER backup storage location for templates.
 
-![Electronic reporting parameters page](./media/GER-BackupTemplates-5.png)
+![Electronic reporting parameters page.](./media/GER-BackupTemplates-5.png)
 
 ## Manual recovery
 

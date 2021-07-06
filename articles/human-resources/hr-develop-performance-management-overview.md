@@ -39,7 +39,7 @@ As the following diagram shows, there are three pages that help you manage the p
 -   Goals
 -   Performance review
 
-The following diagram shows how the primary components of performance management are related to each other. [![Performance process overview](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+The following diagram shows how the primary components of performance management are related to each other. [![Performance process overview.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## Performance journal
 

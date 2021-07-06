@@ -36,7 +36,7 @@ This article describes what an assortment is and explains how to set up assortme
 
 An assortment is a collection of related products that you assign to a commerce channel, such as a brick-and-mortar store or an online store. You use assortments to identify the products that are available in each store. An assortment can include categories of products. Therefore, all products that are assigned to a specific category are included in the assortment. An assortment can also include specific products and specific variants of products. By setting up an assortment, you can assign thousands of products to your channels at that same time, in any combination that your stores require. You can set up as many product assortments as you require. Each product can be included in one or more assortments, and each assortment can be assigned to one or more channels. For example, you define one assortment that includes a base set of products. All stores receive this assortment. You then define another assortment that includes only large sporting equipment. Only your larger stores receive this assortment. The following diagram shows how products can be assigned to assortments, and how those assortments can be assigned to channels.
 
-![Product assortment relationships](./media/assortments_relationship.gif)
+![Product assortment relationships.](./media/assortments_relationship.gif)
 
 ## Prerequisites
 

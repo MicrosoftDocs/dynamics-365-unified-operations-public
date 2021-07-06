@@ -42,7 +42,7 @@ Ratings and reviews functionality in Dynamics 365 Commerce is an omnichannel sol
 
 The following illustration shows how the ratings and reviews solution works in Dynamics 365 Commerce.
 
-![Ratings and reviews in Dynamics 365 for Commerce](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
+![Ratings and reviews in Dynamics 365 for Commerce.](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
 
 The ratings and reviews solution in Dynamics 365 Commerce uses Azure Cognitive Services to offer automatic moderation of profane words in 40 languages. Because human approval isn't required, moderation costs are reduced. The system also offers moderator tools that can be used to respond to customer concerns, feedback, and take-down requests, and to address data requests from users.
 

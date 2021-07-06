@@ -1607,6 +1607,8 @@
           href: master-planning/planning-optimization/get-started.md
         - name: Planning Optimization fit analysis
           href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
+        - name: Parameters not used by Planning Optimization
+          href: master-planning/planning-optimization/not-used-parameters.md
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with demand forecast
@@ -1620,6 +1622,8 @@
         - name: Purchase requisitions
           href: master-planning/planning-optimization/purchase-requisitions.md
         - name: Production planning
+          href: master-planning/planning-optimization/production-planning.md
+        - name: Scheduling with infinite capacity
           href: master-planning/planning-optimization/production-planning.md
         - name: Inventory marking with Planning Optimization
           href: master-planning/planning-optimization/marking.md

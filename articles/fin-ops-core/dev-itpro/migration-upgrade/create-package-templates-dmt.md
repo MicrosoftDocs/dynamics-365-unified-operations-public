@@ -32,7 +32,7 @@ Packages are created by following a predefined sequence. This sequence is based 
 
 The Data migration tool (DMT) provides twenty predefined templates, as shown in the following illustration.
 
-[![Data entity import template list](./media/data-entity-templates.png)](./media/data-entity-templates.png)
+[![Data entity import template list.](./media/data-entity-templates.png)](./media/data-entity-templates.png)
 
 You can customize an existing template, or you can create your own templates as you require.
 

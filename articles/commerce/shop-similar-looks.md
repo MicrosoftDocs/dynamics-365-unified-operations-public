@@ -72,7 +72,7 @@ To enable the "shop similar looks" recommendations feature in Commerce headquart
 
 The following illustration shows the **Shop similar looks** feature on the **Feature management** page in Commerce headquarters.
 
-![The Shop similar looks feature on the Feature management page in Commerce headquarters](./media/enableshopsimilarlooks.png)
+![The Shop similar looks feature on the Feature management page in Commerce headquarters.](./media/enableshopsimilarlooks.png)
 
 After the preceding tasks been completed, POS terminals are automatically enhanced with a contextual **Shop similar products** panel. By selecting **See more**, POS terminal users can be taken to a dedicated "shop similar looks" page that can be filtered further.
 
@@ -92,7 +92,7 @@ To add a **Shop similar looks** button to a PDP by using Commerce site builder, 
 
 The following illustration shows the **Enable Shop Similar Looks Link** check box and **Shop similar looks** button on an example PDP in site builder.
 
-![Enable Shop Similar Looks Link check box and Shop similar looks button on a PDP in site builder](./media/SSLecomtooling.png)
+![Enable Shop Similar Looks Link check box and Shop similar looks button on a PDP in site builder.](./media/SSLecomtooling.png)
 
 ## Additional resources
 

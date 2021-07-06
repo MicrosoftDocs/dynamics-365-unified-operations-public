@@ -53,15 +53,15 @@ You might want to turn off integration in these situations:
 
 1. In the Human Resources instance where you want to view or configure settings for the integration with Dataverse, select the **System administration** tile.
 
-    [![System administration tile](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
+    [![System administration tile.](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
 2. Select the **Links** tab.
 
-    [![Links tab](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
+    [![Links tab.](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
 3. Under **Integrations**, select **Dataverse configuration**.
 
-    [![Dataverse configuration link](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
+    [![Dataverse configuration link.](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
 
 ## Turn data integration between Human Resources and Dataverse on or off
 
@@ -72,7 +72,7 @@ You might want to turn off integration in these situations:
 
 - To turn off integration, set the option to **No**.
 
-[![Turning the Dataverse integration on or off](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
+[![Turning the Dataverse integration on or off.](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
 
 > [!WARNING]
 > We strongly recommend turning off Dataverse integration while performing data migration tasks. Large data uploads can significantly impact performance. For example, uploading 2000 workers can take several hours when integration is enabled, and less than one hour when it's disabled. The numbers provided in this example are for demonstration purposes only. The exact amount of time it takes to import records can vary greatly based on many factors.
@@ -103,7 +103,7 @@ If you experience issues during data synchronization between Human Resources and
 
 - To remove the association of a Human Resources record and a Dataverse row, select the table in the **Dataverse table** field, and then select **Clear tracking information**.
 
-[![Clearing tracking information](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
+[![Clearing tracking information.](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
 
 To run a full synchronization on the table after you clear the tracking, see the next procedure.
 
@@ -121,7 +121,7 @@ To run a full synchronization on a table between Human Resources and Dataverse:
 
 2. Select **Sync now**.
 
-[![Running a full synchronization](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
+[![Running a full synchronization.](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
 
 ## See also
 

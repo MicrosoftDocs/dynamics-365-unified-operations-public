@@ -68,7 +68,7 @@ Lookups for fields in the mobile app don't have a correlation to the advanced lo
 2.  After you've finished designing the action, select the field to add rich lookup functionality to, and then click **Properties**.
 3.  In the **Control properties** dialog box, select the list view page that you identified or created in step 1, and set the other related properties. 
 
-![Setting the control properties](media/lookupdesigner.png)
+![Setting the control properties.](media/lookupdesigner.png)
 
 4.  Save and publish your changes to the action.
 

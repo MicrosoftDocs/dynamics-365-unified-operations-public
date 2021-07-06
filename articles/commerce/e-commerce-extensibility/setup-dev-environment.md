@@ -39,7 +39,7 @@ We recommend that you use a source code editor such as Visual Studio Code. Visua
 
 Go to the [Visual Studio Code site](https://code.visualstudio.com), and download and install the latest build. After installation is completed, Visual Studio Code is automatically opened and should resemble the following screenshot.
 
-![Visual Studio Code](media/setup-vs-code.png)
+![Visual Studio Code.](media/setup-vs-code.png)
 
 ## Install Node.js
 

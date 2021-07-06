@@ -37,7 +37,7 @@ To use this functionality, turn on the **Support for multiple pickup delivery mo
 
 In Commerce version 10.0.15 and earlier, organizations can define only one mode of delivery as the designated pickup delivery mode. This definition is done on the **Commerce parameters** page. In version 10.0.16 and later, when you turn on the **Support for multiple pickup delivery modes** feature, the mode of delivery that was previously defined as the pickup delivery mode on the **Commerce parameters** page is automatically copied into the new configuration for pickup delivery modes.
 
-![Pickup delivery modes on the Commerce parameters page](media/multiplepickupparameter.png)
+![Pickup delivery modes on the Commerce parameters page.](media/multiplepickupparameter.png)
 
 After you turn on the **Support for multiple pickup delivery modes** feature, you can define multiple pickup delivery modes in the **Pickup mode of delivery** grid on the **Modes of delivery** FastTab on the **Customer orders** tab of the **Commerce parameters** page.
 
@@ -45,7 +45,7 @@ The **Carry Out mode of delivery** and **Electronic mode of delivery** fields, a
 
 Before you configure additional pickup delivery modes, you must define the modes of delivery. On the **Modes of delivery** page in Commerce headquarters, add the modes of delivery that should be considered pickup delivery modes. Make sure that all configuration is completed. For example, if you are offering curbside pickup as a delivery option for your online shoppers for certain stores, you need to create a new delivery mode for this purpose. You can create this delivery mode using "curbside pickup" as the description. You'll then want to ensure that the "curbside pickup" mode of delivery is mapped to all of the Commerce channels that can offer it, including online stores that may offer this option and the individual store channels that will offer this method of fulfillment. Modes of delivery must also be linked to the products. In this example, if there are certain products that can't be fulfilled using "curbside pickup", you need to ensure that those items are excluded. When you've finished adding any new modes of delivery, run the **Process delivery modes** job to create the relationships between the mode of delivery, channels, and items. When the job is completed, open the **Distribution schedule** page in Commerce headquarters, and run the **1120** distribution job to ensure that the relevant Commerce channel databases are updated with your new delivery mode configuration.
 
-![Example of a mode of delivery configuration for curbside pickup](media/pickupmodes.png)
+![Example of a mode of delivery configuration for curbside pickup.](media/pickupmodes.png)
 
 After you define the additional pickup delivery modes, add them to the **Pickup mode of delivery** grid on the **Commerce parameters** page. Then run the appropriate distribution jobs to update the relevant Commerce channel databases with the configuration change.
 
@@ -74,16 +74,16 @@ When multiple pickup delivery modes are available for a channel, an enhanced exp
 
 - In e-commerce channels, shoppers can select any valid pickup delivery mode that is available. For example, a retailer defines two pickup delivery modes (in-store pickup and curbside pickup), both are configured in the **Pickup mode of delivery** grid, and both are valid for the order fulfillment channel and the product that a shopper is currently purchasing. In this case, the shopper can select their preferred pickup delivery mode. The selected pickup delivery mode then becomes the mode of delivery that is linked to the sales order line when the order is created in Commerce headquarters.
 
-    ![Selecting a pickup option in e-commerce](media/pickupecommerce.png)
+    ![Selecting a pickup option in e-commerce.](media/pickupecommerce.png)
 
 - In store channels, if a customer order for pickup is created through the point of sale (POS) application, the sales associate is prompted to choose among the available pickup delivery modes, if any have been configured. If only one valid pickup delivery mode is available for the channel and item, the sales associate isn't prompted to select it. Instead, the available pickup delivery mode is automatically applied to the order lines.
 
-    ![Selecting a pickup option in the POS application](media/pickuppos.png)
+    ![Selecting a pickup option in the POS application.](media/pickuppos.png)
 
 - In call center channels, when users create pickup orders, they can manually select any defined pickup delivery mode that is linked to the call center channel. The system then validates that the selected pickup delivery mode can be used when the item that is being linked to it is ordered. When a pickup delivery mode is selected in call center channels, the sales order lines must be linked to a valid store warehouse. If a non-store warehouse is defined on a call center sales line, a pickup delivery mode can't be set on that sales line.
 - Sales associates can use the **Order recall** or **Order fulfillment** operation in the POS application to retrieve a list of orders or order lines for pickup. If a sales associate uses a predefined search filter to show all orders that will be picked up at the current store, the queries are modified to ensure that the search results include all eligible orders that use any pickup delivery mode. POS users can also use existing filters to narrow down the list of orders to a specific pickup delivery mode. For example, they can show only orders for curbside pickup.
 
-    ![Filter for pickup delivery modes applied to a list of recall orders](media/pickuprecallorder.png)
+    ![Filter for pickup delivery modes applied to a list of recall orders.](media/pickuprecallorder.png)
 
 ## Considerations for distributed order management
 

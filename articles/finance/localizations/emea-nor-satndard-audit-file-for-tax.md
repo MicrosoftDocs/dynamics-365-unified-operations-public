@@ -60,14 +60,14 @@ Import the most recent versions of the configurations. The version description u
 > [!NOTE]
 > After you import all the ER configurations from the preceding table, set the **Default for model mapping** option to **Yes** for the **SAF-T Financial data model mapping** configuration.
 >
-> ![Default for model mapping option set to Yes](media/nor-saf-default-model-mapping.jpg)
+> ![Default for model mapping option set to Yes.](media/nor-saf-default-model-mapping.jpg)
 
 ### <a name="parameters"></a>Set up the ER format 
 
 1. In Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **General ledger parameters** page, on the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **SAF-T Format (NO)**.
 
-![Standard Audit File for Tax (SAF-T) field on the General ledger parameters page](media/nor-saf-gl-parameters.jpg)
+![Standard Audit File for Tax (SAF-T) field on the General ledger parameters page.](media/nor-saf-gl-parameters.jpg)
 
 ### <a name="sales"></a>Associate sales tax codes with Norwegian standard value-added tax (VAT) tax codes
 
@@ -78,11 +78,11 @@ To associate sales tax codes that are used in Finance with Norwegian standard VA
 1. In Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 2. On the **Sales tax code** page, select the **Sales tax code** record, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
 
-    ![External codes button on the Action Pane of the Sales tax code page](media/nor-saf-standard-tax-codes.jpg)
+    ![External codes button on the Action Pane of the Sales tax code page.](media/nor-saf-standard-tax-codes.jpg)
 
 3. On the **External codes** page, specify the Norwegian standard VAT tax codes that should be used for the selected sales tax code record for the purpose of SAF-T reporting. On the **External codes** page, in the **Overview** section, in the **Code** field, select the identifier for the external code definition and enter a standard tax code that corresponds to the selected **Sales tax code** in **Value** field in **Value** section.
 
-    ![Setup Standard tax code for the selected Sales tax code](media/not-saf-external-codes-tax.png)
+    ![Setup Standard tax code for the selected Sales tax code.](media/not-saf-external-codes-tax.png)
 
 ### <a name="main"></a>Associate main accounts with Norwegian standard accounts
 
@@ -101,7 +101,7 @@ To associate **Main accounts** that are used in Finance with Norwegian standard 
 6. Select the value, **NA** as the last condition in the list. It must be set to **\*Not blank\*** in **Main account** column. Verify the value in the **Line** column that **“NA”** is the last condition in the table.
 7. When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
 
-![Standard account field on the Main accounts page](media/nor-saf-standard-main-accounts-appsppar.jpg)
+![Standard account field on the Main accounts page.](media/nor-saf-standard-main-accounts-appsppar.jpg)
 
 You can easily export the setup of application-specific parameters from one version of a report and import it into another version by selecting **Export** or **Import** on the Action Pane. You can also export the setup from one report and import it into the same report in another company if the Main accounts are the same in both companies.
 

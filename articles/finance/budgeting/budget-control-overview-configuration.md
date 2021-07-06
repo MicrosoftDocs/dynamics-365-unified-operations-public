@@ -43,7 +43,7 @@ Expenditures can be recorded by using main accounts and financial dimensions. Yo
 
 The following chart shows the place of budget control in the stages of a typical budget cycle.
 
-[![Typical budgeting cycle](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) 
+[![Typical budgeting cycle.](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) 
 
 You can configure budget control according to several factors:
 
