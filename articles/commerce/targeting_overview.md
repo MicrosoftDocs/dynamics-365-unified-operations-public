@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: E-commerce Segmentation and Targeting
+title: Device, market, and GEO IP targeting
 description: This topic describes how to create, edit and manage audiences and target variations in site builder. Basic segmentation and targeting based on information available in the user's browser such as device type or location is enabled for e-commerce modules and fragments within a page.
 author:  sushma-rao 
 ms.date: 7/31/2021
@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.21
 ---
 
-# Customer segmentation and targeting in Dynamics 365 Commerce
+# Device, market, and Geo IP targeting in Dynamics 365 Commerce
 Dynamics 365 Commerce enables you to target specific groups of customers with different page content based on their device information, geolocation, and other dynamically derived attributes from their browser request. This will help you personalize content in near real-time for these target groups known as **audiences** and drive increased user engagement and satisfaction.
 
 You can create and manage audiences in site builder based on customer data such as location, device information, sign-in status, referrer, or query string parameters, gathered from the customer's web request. These audiences can then be targeted with module or fragment variations called **targets**, also authored and managed in site builder.
@@ -45,7 +45,7 @@ To create an audience in Commerce site builder, follow these steps.
     > You can have up to 100 values in a list with up to 50 characters in each item.
 6. Once you are satisfied with your audience, select **Finish editing**. You can also select **Publish** if you want to make the audience available for use in a live target or publish it along with the target.
 
-You can edit an audience by clicking on it's blue link in the **Audiences** tab and the **Edit** button in the audience editor that opens up. You can also select an audience in the list view and select **View Assignments** to view the list of targets, experiments and pages that are referencing it. To delete an audience in the audience list view or in the audience editor, select **Delete** in the top command bar.
+You can edit an audience by clicking on it's blue link in the **Audiences** tab and the **Edit** button in the audience editor that opens up. You can also select an audience in the list view and select **View Assignments** to view the list of targets and pages that are referencing it. To delete an audience in the audience list view or in the audience editor, unpublish it if it is published and select **Delete** in the top command bar.
 
 ## Targets
 A target is the user experience that will be shown to members of the chosen audience. You can target modules in the **Pages** tab or fragments in the **Fragments** tab.
@@ -54,11 +54,11 @@ A target is the user experience that will be shown to members of the chosen audi
 To target page modules in Commerce site builder, follow these steps.
 1. Select **Pages** in the left navigation pane, and then select the blue link for the page that has the module(s) you want to target.
 2. Click **Edit** to check out the page for editing.
-3. Click the **Default** drop-down and then **New target** to create a new target shell.
+3. Click the **Target** drop-down and then **New target** to create a new target shell. <TODO: check with Jane on command bar entry point>
 4. Give your target a name and description and click **Next**.
 5. Click **Add** to include or exclude audiences that will see this targeted experience and click **Next**. 
     > [!NOTE]
-    > Assigning audiences is an optional step for target creation but you will need to assign audiences before publishing the target to ensure the right groups of users see it.
+    > Assigning audiences is an optional step for target creation but you will need to assign at least one audience in the **include** list before publishing the target to ensure the right groups of users see it.
 6. Select the time zone, start and end dates/times to display your target. You can also set the target to show at all times during this window or choose specific days and times and click **Next**.
 7. Review the details and once everything looks good, click **Create target experience** and **Go to target**. This creates the target shell to which you can now add modules. 
 8. Select the module to be targeted, select the ellipsis (...), and then select **Add to current target**. The targeted module will be highlighted with a green color.
