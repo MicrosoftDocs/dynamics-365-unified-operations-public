@@ -1607,6 +1607,8 @@
           href: master-planning/planning-optimization/get-started.md
         - name: Planning Optimization fit analysis
           href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
+        - name: Parameters not used by Planning Optimization
+          href: master-planning/planning-optimization/not-used-parameters.md
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with demand forecast
