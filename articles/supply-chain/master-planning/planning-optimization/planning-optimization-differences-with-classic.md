@@ -23,7 +23,7 @@ Planning Optimization results may differ from built-in master planning. This can
 | Catch weight products | Catch weight products are considered as usual products.|
 | Extensible dimensions | Extensible dimensions are empty on planned orders even when **Coverage plan by dimension** check box is checked on the **Storage dimension groups** page or **Tracking dimension groups** page. |
 | Filtered production runs | For details, see [Production planning - Filters](production-planning.md#filters) |
-| Forecast planning | Forecast planning is not yet supported |
+| Forecast planning | Forecast planning is not supported. It is recommended to use Master planning with a forecast model assigned to the Master plan. |
 | Plan copy, Delete plan and Plan version cleanup | **Plan copy**, **Delete plan** and **Plan version cleanup** menu items are disabled. |
 | Return orders | Return orders are not considered. |
 | Scheduling related features | For details, see [Scheduling with infinite capacity](infinite-capacity-planning#limitations.md) |
