@@ -51,7 +51,7 @@ Promo banners can be used in the site header to show site-wide promotions or mes
 
 The following image shows an example of a promo banner.
 
-![Example of a promo banner module](./media/ecommerce-Promobanner.PNG)
+![Example of a promo banner module.](./media/ecommerce-Promobanner.PNG)
 
 ## Promo banner module properties
 

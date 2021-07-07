@@ -17,7 +17,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 26441
+ms.custom: ["26441", "intro-internal"]
 ms.assetid: 8aa25787-5920-4277-acff-7011200133f4
 ms.search.region: Global
 # ms.search.industry: 
@@ -54,7 +54,7 @@ Integration through the data management platform provides more capabilities and 
 
 The following diagram shows an inbound flow.
 
-![Inbound flow](./media/over6.png)
+![Inbound flow.](./media/over6.png)
 
 ## Known limitations in data import/export
 When you import text files, string sizes are limited to 32,768 characters. If there is a string larger than this, the imported string will be truncated. This is a limitation in the underlying implementation and is due to SQL Server Integration Services (SSIS).

@@ -48,16 +48,16 @@ After you install the package deployer tool, install the solution package by fol
 
 1. Download the latest solution package file from Yammer.com. After the package zip file is downloaded, right-click it, and select **Properties**. Select the **Unblock** check box, and then select **Apply**. If you don't see the **Unblock** check box, the zip file is already unblocked, and you can skip this step.
 
-    ![Properties dialog box](media/unblock_option.png)
+    ![Properties dialog box.](media/unblock_option.png)
 
 2. Extract the package zip file, and copy all the files in the **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438** folder.
 
-    ![Contents of the Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438 folder](media/extract_package.png)
+    ![Contents of the Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438 folder.](media/extract_package.png)
 
 3. Paste all the copied files into the **Tools** folder of the package deployer tool. 
 4. Run **PackageDeployer.exe** to select the Dataverse environment and install the solutions.
 
-    ![Content of the Tools folder](media/paste_copied_files.png)
+    ![Content of the Tools folder.](media/paste_copied_files.png)
 
 ## <a id="enable-view-trace"></a>Enable and view the plug-in trace log in Dataverse to view error details
 

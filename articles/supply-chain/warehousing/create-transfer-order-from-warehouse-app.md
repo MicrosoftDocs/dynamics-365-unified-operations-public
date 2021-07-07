@@ -102,7 +102,7 @@ In addition to setting up the create transfer order in the mobile device menu it
 
 You are a retailer and have multiple license plates, each containing a mix of items placed at a specific location within one of your warehouses (*Warehouse 51*). You would like to enable the process that allows workers to create a transfer order to another warehouse (*Warehouse 61*) for a collection of scanned license plates. You will automatically ship-update the transfer order as soon as the last license plate for the order has been identified.
 
-![Automated transfer order process example](media/create-transfer-order-from-app-example.png "Automated transfer order process example")
+![Automated transfer order process example.](media/create-transfer-order-from-app-example.png "Automated transfer order process example")
 
 ### Create a mobile device menu item for creating transfer orders
 

@@ -17,7 +17,7 @@ audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
@@ -41,7 +41,7 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 Dual-write provides tightly coupled, bidirectional integration between Finance and Operations apps and Dataverse. Any data change in Finance and Operations apps causes writes to Dataverse, and any data change in Dataverse causes writes to Finance and Operations apps. This automated data flow provides an integrated user experience across the apps.
 
-![Data relationship between apps](media/dual-write-overview.jpg)
+![Data relationship between apps.](media/dual-write-overview.jpg)
 
 Dual-write has two aspects: an *infrastructure* aspect and an *application* aspect.
 

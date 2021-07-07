@@ -4,7 +4,7 @@
 title: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
 description: This topic describes how to set up and use Microsoft Dynamics 365 Finance to interoperate with the SII system of Spain.
 author: liza-golub
-ms.date: 06/16/2021
+ms.date: 07/05/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -86,7 +86,7 @@ The process of setting up the electronic message functionality to interoperate w
 1.  In [Microsoft Dynamics Lifecycle Service (LCS)](https://lcs.dynamics.com/v2), go to the Shared asset library, and select the **Data package** asset type.
 2.  In the list of data package files, find and download **ES SII setup.zip**.
 
-![LCS Shared asset library](media/emea-esp-sii-data-package-file.png)
+![LCS Shared asset library.](media/emea-esp-sii-data-package-file.png)
 
 3.  After the file is downloaded, open Finance, and select the company that you will interoperate with the SII system from.
 4.  Go to **Workspaces \> Data management**.
@@ -103,7 +103,7 @@ Import data from the **ES SII setup.zip** file into the selected company. In the
 10.  Select **Upload and add**, select the **ES SII setup.zip** file on your computer, and upload it.
 11.  After the data entities are uploaded, on the Action Pane, select **Import**.
 
-![ES SII setup page](media/emea-esp-sii-data-entities-upload.png)
+![ES SII setup page.](media/emea-esp-sii-data-entities-upload.png)
 
 You will receive a notification in **Action center**, or you can manually refresh the page to view the progress of the data import. When the import is completed, the **Execution summary** page shows the results.
 
@@ -158,7 +158,7 @@ Internet addresses are subject to change by AEAT. Therefore, we recommend that y
 
 6.  On the **General** tab, in the **Key vault certificate** field, select the security certificate that you set up for all web services that you will use for interoperation with the SII system: **Cust invoice**, **Vend invoice**, **Intra-community**, **Cust payment**, **Vend payment**, and **CollectionInCash**.
 
-![Web services settings page](media/emea-esp-sii-setup-key-vault-certificate.png)
+![Web services settings page.](media/emea-esp-sii-setup-key-vault-certificate.png)
 
 ## Set up EM parameters for the SII system
 
@@ -215,7 +215,7 @@ For filled-in EM items, this class evaluates values for the following additional
 
 4.  Select **OK** to initiate the executable class.
 
-![Add new Electronic message items pane](media/emea-esp-sii-siigenerateitems-executable-class.png)
+![Add new Electronic message items pane.](media/emea-esp-sii-siigenerateitems-executable-class.png)
 
 ### Set up the SIIPartyAttributesEvaluation executable class
 
@@ -231,7 +231,7 @@ For filled-in EM items, this class evaluates values for the following additional
 
 4.  Select **OK** to initiate the executable class.
 
-![Add fields evaluation parameters pane](media/emea-esp-sii-siipartyattributesevaluation-executable-class.png)
+![Add fields evaluation parameters pane.](media/emea-esp-sii-siipartyattributesevaluation-executable-class.png)
 
 ### Set up the MonitorCollectionInCash executable class
 
@@ -246,7 +246,7 @@ For filled-in EM items, this class evaluates values for the following additional
 
 4.  Select **OK** to initiate the executable class.
 
-![SII Collections in cash monitoring parameters pane](media/emea-esp-sii-monitorcollectionincash-executable-class.png)
+![SII Collections in cash monitoring parameters pane.](media/emea-esp-sii-monitorcollectionincash-executable-class.png)
 
 ## Set up additional fields and automatically defined rules
 
@@ -493,6 +493,7 @@ According to the official documentation for the SII system, the following values
 | 14              | Invoice with VAT pending accrual on work certifications with Public Administration recipients for the first half of 2017.                                                                                                                    |
 | 15              | Invoice with VAT pending accrual on transactions of a consecutive nature.                                                                                                                                                                    |
 | 16              | First half 2017.                                                                                                                                                                                                                             |
+| 17              | Operation under any of the regimes provided for in Chapter XI of Title IX (OSS and IOSS). |
 
 You can set up automatically defined rules for any value from the preceding list. You can also adjust the list of possible values. For automatically defined rules, the following criteria are available:
 
@@ -532,7 +533,7 @@ The search by **Sales tax group** and **Item sales tax group** can be divided in
 
 The following illustration shows the algorithm schema for each of these four substages.
 
-![Algorithm schema for substages](media/emea-esp-sii-claveregimenespecialotrascendencia-additional-field.png)
+![Algorithm schema for substages.](media/emea-esp-sii-claveregimenespecialotrascendencia-additional-field.png)
 
 ## Set up number sequences for electronic messages
 
@@ -564,7 +565,7 @@ If the **Negative sales tax percentage** check box is cleared on the **General l
 -   Invoices that have only tax transactions that have negative sales tax percentages won't be filled in as electronic message items for SII processing.
 -   Only sales tax transactions that have sales tax codes where the **Negative sales tax percentage** check box is cleared will be included in the XML file that is reported to the SII system.
 
-![General ledger parameters page, Ledger tab](media/emea-esp-sii-negative-sales-tax-percentage.png)
+![General ledger parameters page, Ledger tab.](media/emea-esp-sii-negative-sales-tax-percentage.png)
 
 The **Negative sales tax percentage** check box on the **General ledger parameters** page doesn't affect reporting of reverse change transactions.
 
@@ -582,7 +583,7 @@ To correctly report both the preceding scenarios that involve a VAT rate of 0.00
 | ImportePorArticulos7_14_Otros | VAT 0%                |
 | ImporteTAIReglasLocalizacion  | Other                 |
 
-![Sales tax codes page](media/emea-esp-sii-zero-percent-vat-rates.png)
+![Sales tax codes page.](media/emea-esp-sii-zero-percent-vat-rates.png)
 
 ### Intra-community sales tax reporting to the SII system
 
@@ -606,7 +607,7 @@ EM functionality automatically runs actions that are included in the processing 
 
 The **ES SII setup.zip** package provides the setup for **SII** processing in the EM functionality that supports interoperation with the SII system. The following illustration shows the schema for general **SII** processing. Manual user actions aren't included in this illustration but are explained later in this topic.
 
-![Schema for general SII processing](media/emea-esp-sii-process.png)
+![Schema for general SII processing.](media/emea-esp-sii-process.png)
 
 ### Actions of SII processing
 
@@ -707,7 +708,7 @@ Use the EM functionality to generate an XML report of data that is generated on 
 
 The **ES SII setup.zip** package provides the setup for **CollectionInCash** processing in the EM functionality that supports interoperation with the SII system. The following illustration shows the schema for **CollectionInCash** processing.
 
-![Schema for CollectionInCash processing](media/emea-esp-sii-collection-in-cash-process.png)
+![Schema for CollectionInCash processing.](media/emea-esp-sii-collection-in-cash-process.png)
 
 ### Actions of CollectionInCash processing
 

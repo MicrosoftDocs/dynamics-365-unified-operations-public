@@ -77,7 +77,7 @@ The following setup is required for the calculation of GST:
 - An HSN code should be defined for the **Item** product type, or an SAC should be defined for the **Service** product type.
 - The item sales tax group should be removed.
 
-![Assign HSN codes and SACs to products](media/Assign-codes-to-product_upd.png)
+![Assign HSN codes and SACs to products.](media/Assign-codes-to-product_upd.png)
 
 ## Assign SACs to miscellaneous charges
 

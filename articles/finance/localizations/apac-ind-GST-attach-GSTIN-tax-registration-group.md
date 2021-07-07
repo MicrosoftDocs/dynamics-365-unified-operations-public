@@ -42,7 +42,7 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 
 To attach the GSTIN to a tax registration group, go to **Tax** \> **Setup** \> **Sales tax** \> **Tax registration group**, create a group, and define the required GSTIN.
 
-![GSTINs attached to a tax registration group](media/tax-registration-group_upd.png)
+![GSTINs attached to a tax registration group.](media/tax-registration-group_upd.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

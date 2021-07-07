@@ -42,7 +42,7 @@ Commerce uses price groups to define channel-specific discounts. Price groups ca
 
 ## Price groups
 
-[![Price groups](./media/price-groups-1024x608.png)](./media/price-groups.png)
+[![Price groups.](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
 The diagram above illustrates the relationship between entities that may be on a transaction (channel, catalog, affiliation, customer, loyalty card) and the various discount types that can be configured. All transactions occur in a channel, so the channel is guaranteed to be present on a transaction. The remaining entities are optional. On each master data pages there is a link to a related price groups page where you can view and add price groups as needed. A price group is used to relate four different types of entities to discounts, price adjustments, and trade agreements. We recommend that you plan a strategy for how you will name your price groups to keep them organized. One option would be to use a letter or number prefix or suffix to distinguish between the different types. For example, 1-xxxxx for channel price groups and 2-xxxxx for catalog price groups. There are four inquiry pages that focus on each of the commerce entities that can have discounts associated to them.
 

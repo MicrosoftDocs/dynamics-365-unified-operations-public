@@ -47,7 +47,7 @@ You can use the **Quantity limit** field on the **Threshold discount lines** Fas
 
 The following illustration shows the configuration for the "spend $200 on dress shirts and get two ties for free" promotion example in Commerce headquarters. 
 
-![Gift with purchase example configuration in Commerce headquarters](./media/gift-with-purchase.png)
+![Gift with purchase example configuration in Commerce headquarters.](./media/gift-with-purchase.png)
 
 As has been mentioned, the **Quantity limit** field on the **Threshold discount lines** FastTab lets you to limit the number of items that should be discounted. If this field is set to **0.00**, there is no limit on the number of items that can be discounted. Therefore, for the previous example, if the **Quantity limit** field for the **Ties** category is set to **0.00**, customers who meet the qualifying threshold can get any number of ties for free. 
 

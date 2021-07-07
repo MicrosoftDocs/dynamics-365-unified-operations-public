@@ -58,7 +58,7 @@ Follow these steps to save a task recording to LCS.
 10. Create a task recording.
 11. When you've finished, select **Save to Lifecycle Services**.
 
-    ![Save to Lifecycle Services](media/task-guides.png)
+    ![Save to Lifecycle Services.](media/task-guides.png)
 
 12. Select the BPM library and node to save the task recording to.
 

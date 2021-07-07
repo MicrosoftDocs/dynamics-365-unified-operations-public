@@ -104,7 +104,7 @@ The fields described in the following list all relate to calculated rating score
 
 ## The Document types tab
 
-Select the document types that should be available for printing attachments related to a work order report. This is done by selecting a document type in the **Available** section and selecting ![forward arrow](media/15-setup-for-objects.png). If you want to remove a selected document type, select the document type in the **Selected** section and select ![back arrow](media/16-setup-for-objects.png).
+Select the document types that should be available for printing attachments related to a work order report. This is done by selecting a document type in the **Available** section and selecting ![forward arrow.](media/15-setup-for-objects.png). If you want to remove a selected document type, select the document type in the **Selected** section and select ![back arrow](media/16-setup-for-objects.png).
 
 ## The Number sequences tab
 

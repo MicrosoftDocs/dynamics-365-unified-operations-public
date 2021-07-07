@@ -43,19 +43,19 @@ Follow these steps to add a company or legal entity after dual-write has been se
 
 1. On the **Dual-write table map** list page, select the **Environment details** button.
 
-![Select the Environment details button](media/select-environment-details.png)
+![Select the Environment details button.](media/select-environment-details.png)
 
 2. On the **Legal entities** tab, you see the company that you selected as part of the dual-write wizard to link environments. In this example, the company is USMF.
 
-![Legal entities tab displaying the selected company](media/legal-entities.png)
+![Legal entities tab displaying the selected company.](media/legal-entities.png)
 
 3. Select **Add legal entity** to add one or more companies to dual-write. In this example, GBSI. Select **Save**.
 
-![Add new legal entity](media/add-legal-entity.png)
+![Add new legal entity.](media/add-legal-entity.png)
 
   At this point, the legal entities start updating. The table maps that are currently running or paused go through the initial write process by copying pre-existing data. Until the process is completed, we recommend that you do not perform any actions to modify your table maps. 
 
-![Update legal entities is in progress](media/update-progress.png)
+![Update legal entities is in progress.](media/update-progress.png)
 
   >[!NOTE]
   > This operation may fail if either of the following conditions are true: 
@@ -66,7 +66,7 @@ Follow these steps to add a company or legal entity after dual-write has been se
 
 4. After the process is complete, a banner displays informing you that the legal entities have been updated successfully. You can now resume updates to your table maps. 
 
-![Legal entities update succeeded](media/legal-entities-updated.png)
+![Legal entities update succeeded.](media/legal-entities-updated.png)
 
 
 

@@ -57,7 +57,7 @@ You can add faults that were set up in the fault designer to a work order. One o
 
 The illustration below shows an example of a fault registration.
 
-![Figure 1](media/19-work-orders.png)
+![Figure 1.](media/19-work-orders.png)
 
 
 ## View asset faults

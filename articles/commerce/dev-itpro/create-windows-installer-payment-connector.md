@@ -54,7 +54,7 @@ The installer must install the required files in the following structure:
 
 The following illustration shows the file structure for a connector that is named TestConnector. 
 
-[![File structure for TestConnector](./media/paymentconnectorinstaller.png)](./media/paymentconnectorinstaller.png)
+[![File structure for TestConnector.](./media/paymentconnectorinstaller.png)](./media/paymentconnectorinstaller.png)
 
 
 

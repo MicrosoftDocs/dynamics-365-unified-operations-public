@@ -51,7 +51,7 @@ To configure a site to show ratings and reviews, follow these steps.
 
 The following illustration shows what this configuration looks like in Dynamics 365 Commerce.
 
-![Configuring a site to show ratings and reviews](media/rnr-eCommerce-site-appsettings.png)
+![Configuring a site to show ratings and reviews.](media/rnr-eCommerce-site-appsettings.png)
 
 ## Link a product rating to the Reviews section of a PDP
 
@@ -65,7 +65,7 @@ To link a product rating to the **Reviews** section of the PDP, follow these ste
 
 The following illustration shows what this configuration looks like in Dynamics 365 Commerce.
 
-![Linking a product rating to the Reviews section of a PDP](media/rnr-eCommerce-buy-box-rating-summary.png)
+![Linking a product rating to the Reviews section of a PDP.](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## Configure the link for the privacy and policy page
 
@@ -80,7 +80,7 @@ To configure the link for the privacy and policy page, follow these steps.
 
 The following illustration shows what this configuration looks like in Dynamics 365 Commerce.
 
-![Configuring the link for the privacy and policy page](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+![Configuring the link for the privacy and policy page.](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
 ## Configure ratings and reviews modules on product details pages
 

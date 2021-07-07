@@ -79,21 +79,21 @@ If data exists on both sides, and you've confirmed that the issue isn't data-rel
 
 You might receive a "Bad Request" error message that resembles the following example when you create data in a Finance and Operations app.
 
-![Example of the Bad Request error message](media/error_record_id_source.png)
+![Example of the Bad Request error message.](media/error_record_id_source.png)
 
 To fix the issue, you must assign the correct security role to the team of the mapped Dynamics 365 Sales or Dynamics 365 Customer Service business unit to enable the missing privilege.
 
 1. In the Finance and Operations app, find the business unit that is mapped in the Data Integration connection set.
 
-    ![Organization mapping](media/mapped_business_unit.png)
+    ![Organization mapping.](media/mapped_business_unit.png)
 
 2. Sign in to the environment in the model-driven app in Dynamics 365, navigate to **Setting \> Security**, and find the team of the mapped business unit.
 
-    ![Team of the mapped business unit](media/setting_security_page.png)
+    ![Team of the mapped business unit.](media/setting_security_page.png)
 
 3. Open the page for the team for editing, and then select **Manage roles** to open the **Manage Team Roles** dialog box.
 
-    ![Manage roles button](media/manage_team_roles.png)
+    ![Manage roles button.](media/manage_team_roles.png)
 
 4. Assign the role that has the read/write privilege for the relevant tables, and then select **OK**.
 

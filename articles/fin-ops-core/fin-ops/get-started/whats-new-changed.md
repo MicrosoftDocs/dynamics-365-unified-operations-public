@@ -18,7 +18,7 @@ audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 27141
+ms.custom: ["27141", "intro-internal"]
 ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ms.search.region: Global
 # ms.search.industry: 

@@ -39,7 +39,7 @@ To implement the Customer portal, you must have the following licenses:
 
 The Customer portal depends on Power Apps portals and dual-write, as shown in the following illustration.
 
-![Customer portal dependencies](media/customer-portal-elements.png "Customer portal dependencies")
+![Customer portal dependencies.](media/customer-portal-elements.png "Customer portal dependencies")
 
 Unlike other features from Supply Chain Management, the Customer portal template resides in Power Apps portals. Therefore, the Customer portal is limited by the functionality and capabilities that are provided by Power Apps portals and the tables in dual-write.
 

@@ -47,7 +47,7 @@ To access preview features, you must first enable them in your environment. Enab
 2. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**.
 3. On the **Feature management** tab, select the option next to **Preview features** so that it turns blue and says **On**.
 
-    ![Enable preview features in Attract](./media/attract-enable-preview-features.png)
+    ![Enable preview features in Attract.](./media/attract-enable-preview-features.png)
 
 4. Select or cancel the selection of individual preview features. If you do nothing, all available preview features are enabled.
 5. Refresh your browser to start to see the new features. Any users who are already signed in will see the features the next time they sign in, or they can refresh their browser to see the features immediately.

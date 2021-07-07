@@ -52,7 +52,7 @@ For this example, we will stage the aggregate models that the Commerce analytica
 
 The following illustration shows the administrator dialog box that is used to configure the frequency of updates for the aggregate model.
 
-![Configure refresh dialog box](media/Configure-refresh.png)
+![Configure refresh dialog box.](media/Configure-refresh.png)
 
 To monitor the progress of the job that stages the data, you can use the batch job monitoring page. (Select **System administration** \> **Database** \> **Batch jobs**.) If you're using demo data, the job should take about a minute. After the data is in the Entity Store, you can write reports. 
 
@@ -62,13 +62,13 @@ To monitor the progress of the job that stages the data, you can use the batch j
 
     Alternatively, when Power BI Desktop starts, you can select **Get Data** \> **SQL Server**. 
 
-    ![Get Data menu in Power BI Desktop](media/Power-BI-Desktop-Get-Data.png)
+    ![Get Data menu in Power BI Desktop.](media/Power-BI-Desktop-Get-Data.png)
 
 3. In the **SQL Server Database** dialog box, enter **.** as the server name and **AxDW** as the database name. Then select the **DirectQuery** option. 
 
     The following illustration shows the settings that enable Power BI Desktop to access the local Entity Store database.
 
-    ![Settings for accessing the local Entity Store database](media/Connect-to-SQL-Database.png)
+    ![Settings for accessing the local Entity Store database.](media/Connect-to-SQL-Database.png)
 
     > [!NOTE]
     > The **Import** option isn't currently supported.
@@ -84,7 +84,7 @@ You can now create a report. You can drag measures and fields to the canvas, and
 
 The following illustration shows a basic report that uses the local Entity Store database as its source.
 
-![Power BI Desktop report](media/Power-BI-Desktop-Report.png)
+![Power BI Desktop report.](media/Power-BI-Desktop-Report.png)
 
 Power BI Desktop also supports the creation of calculations and lets you combine data from multiple aggregate measurements. Within minutes, you can create analytical reports by using data in the local development environment. When you're satisfied with the report, you can migrate it to the production environment, so that users can use the report to interact with production data.
 

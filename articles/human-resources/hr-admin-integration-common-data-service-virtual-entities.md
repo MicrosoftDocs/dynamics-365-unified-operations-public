@@ -45,7 +45,7 @@ All Open Data Protocol (OData) entities in Human Resources are available as virt
 
 You can view the list of virtual tables enabled in the environment, and begin working with the tables in [Power Apps](https://make.powerapps.com), in the **Dynamics 365 HR Virtual Tables** solution.
 
-![Dynamics 365 HR Virtual Tables in Power Apps](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
+![Dynamics 365 HR Virtual Tables in Power Apps.](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
 
 ## Virtual tables versus native tables
 
@@ -151,7 +151,7 @@ The next step is to configure the virtual table data source in the Power Apps en
 
    - **AAD Application Secret**: The client secret created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
-   ![Microsoft HR Data Source](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+   ![Microsoft HR Data Source.](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
 
 9. Select **Save & Close**.
 
@@ -191,7 +191,7 @@ When setup completes, you can select the virtual tables you want to generate and
 
 4. Select **Generate/refresh**.
 
-![Dataverse Integraton](./media/hr-admin-integration-dataverse-integration.png)
+![Dataverse Integraton.](./media/hr-admin-integration-dataverse-integration.png)
 
 ## Check table generation status
 

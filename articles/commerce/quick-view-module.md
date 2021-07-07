@@ -42,7 +42,7 @@ The quick view module is supported by the [product collection](product-collectio
 
 The following illustration shows an example of a quick view module on a product list page.
 
-![Example of a quick view module on a product list page](./media/ecommerce-quickview.PNG)
+![Example of a quick view module on a product list page.](./media/ecommerce-quickview.PNG)
 
 ## Module properties
 

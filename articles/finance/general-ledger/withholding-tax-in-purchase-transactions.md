@@ -70,15 +70,15 @@ The default Withholding tax group and Item withholding tax group will be carried
 
 The temporary amount of withholding tax is available in the field **Adjusted withholding tax** of the **Totals** tab on the **Purchase order** page.
 
-![Withholding tax is included on the purchase order](media/withholding-tax-adjusted.png)
+![Withholding tax is included on the purchase order.](media/withholding-tax-adjusted.png)
 
 Withholding tax is calculated on **Vendor payment journal**. You can manually adjust the applicable withholding tax codes as well as the actual withholding tax amounts in the **Withholding tax** tab on the **Settle transactions** page.
 
-![Withholding can be manually adjusted on the Settle transactions page](media/withholding-tax-vendor-payment-tab.png)
+![Withholding can be manually adjusted on the Settle transactions page.](media/withholding-tax-vendor-payment-tab.png)
 
 The derived withholding tax amount will be deducted from the vendor payment and posted to the **Withholding tax account** in a related voucher.
 
-![Withholding tax account showing a related voucher](media/withholding-tax-adjusted.png)
+![Withholding tax account showing a related voucher.](media/withholding-tax-adjusted.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

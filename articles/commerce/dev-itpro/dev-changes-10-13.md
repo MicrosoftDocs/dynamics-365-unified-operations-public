@@ -86,7 +86,7 @@ For a general overview of each application release, always check the "What's new
         4. Find the **Microsoft.Dynamics.Framework.Tools.Installer.vsix** file. The size of this file should be about 150 megabytes (MB).
         5. Right-click the file, and then select **Open**.
 
-            ![Opening the installer for the Visual Studio 2017 Dynamics 365 extension](media/vs2017-extensions.png)
+            ![Opening the installer for the Visual Studio 2017 Dynamics 365 extension.](media/vs2017-extensions.png)
 
         For more information, see [Update the Visual Studio development tools](../../fin-ops-core/dev-itpro/dev-tools/update-development-tools.md).
 

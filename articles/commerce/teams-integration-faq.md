@@ -48,7 +48,7 @@ To assign the retail task manager role to an employee in Commerce headquarters, 
 
 In Commerce headquarters, every organization's hierarchy is associated with one or more purposes. Make sure the hierarchy that you want to provision into Microsoft Teams has the **Retail reporting** purpose associated with it, as shown in the following example image. 
 
-![Example of an organization hierarchy purpose in Commerce headquarters](media/d365-commerce-organization-hierarchies-purpose.png)
+![Example of an organization hierarchy purpose in Commerce headquarters.](media/d365-commerce-organization-hierarchies-purpose.png)
 
 ### How do I enable retail store workers to sign in to Commerce point of sale (POS) using Azure Active Directory (Azure AD)?
 

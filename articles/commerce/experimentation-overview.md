@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
@@ -43,7 +43,7 @@ You can create, edit, and manage page and content treatments known as **variatio
 ## Experimentation lifecycle
 Setting up an experiment, creating variations, and running an experiment is an iterative process. The diagram below illustrates the experimentation lifecycle in Commerce and the third-party service. 
 
-[ ![Experimentation lifecycle](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+[ ![Experimentation lifecycle.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 To learn more about each step in the experimentation process, refer to the following topics.
 - [Identify a hypothesis and determine metrics for an experiment](experimentation-identify.md)

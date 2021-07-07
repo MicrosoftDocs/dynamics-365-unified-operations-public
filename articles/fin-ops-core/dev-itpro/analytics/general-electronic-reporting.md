@@ -17,7 +17,7 @@ audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 58941
+ms.custom: ["58941", "intro-internal"]
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 # ms.search.industry: 
@@ -106,7 +106,7 @@ A format component lets you attach specific files that can be used in the report
 
 The following illustration shows how the data flows for these formats.
 
-[![Data flow for outgoing format components](./media/ER-overview-02.png)](./media/ER-overview-02.png)
+[![Data flow for outgoing format components.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
 
 To run a single ER format configuration and generate an outgoing electronic document, you must identify the mapping of the format configuration.
 
@@ -120,7 +120,7 @@ A format component is the scheme of the incoming document that is imported at ru
 
 The following illustration shows how the data flows for these formats.
 
-[![Data flow for incoming format components](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+[![Data flow for incoming format components.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
 
 To run a single ER format configuration to import data from an incoming electronic document, you must identify the desired mapping of a format configuration, and also the integration point of a model mapping. You can use the same model mapping and destinations together with different formats for different type of incoming documents.
 
@@ -295,7 +295,7 @@ ER lets you automatically adopt changes of the latest version of the base compon
 
 The list of ER configurations for Finance is constantly updated. Open the [Global repository](er-download-configurations-global-repo.md) to review the list of ER configurations that are currently supported. On the **Discontinuation details** FastTab, you can review the information about configurations that have been discontinued or that are no longer being maintained. 
 
-![Content of the Global repository on the Configuration repository page](./media/er-overview-03.gif)
+![Content of the Global repository on the Configuration repository page.](./media/er-overview-03.gif)
 
 ## Additional resources
 

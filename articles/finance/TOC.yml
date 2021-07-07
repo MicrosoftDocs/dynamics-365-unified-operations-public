@@ -687,7 +687,15 @@
       - name: Use cost control workspace for mobile application
         href: cost-accounting/cost-controlling-mobile-workspace.md
     - name: Electronic messaging
-      href: general-ledger/electronic-messaging.md
+      items: 
+      - name: Electronic messaging overview
+        href: general-ledger/electronic-messaging.md
+      - name: Set up Electronic messages
+        href: general-ledger/electronic-messaging-setup.md
+      - name: Work with the Electronic messages functionality
+        href: general-ledger/electronic-messaging-work-with-em.md
+      - name: Call a simple exporting ER format to generate an Excel report
+        href: general-ledger/electronic-messaging-example.md
     - name: Expense management
       items:
       - name: Expense management overview
@@ -1212,11 +1220,11 @@
       items:
       - name: Finance insights home page
         href: finance-insights/finance-insights-home-page.md
-      - name: Configuration and administration
+      - name: Setup and administration
         items:
         - name: Configure Finance insights for public preview
           href: finance-insights/configure-for-fin-insites-PubPrvw.md
-        - name: Configure Finance insights
+        - name: Configure Finance insights for private preview
           href: finance-insights/configure-for-fin-insites.md
         - name: Enable Customer payment predictions
           href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1226,6 +1234,16 @@
           href: finance-insights/enable-budget-proposal.md
         - name: Create data integrator project
           href: finance-insights/create-data-integrate-project.md
+        - name: Refine and improve your predictions
+          items: 
+          - name: Results of machine learning models
+            href: finance-insights/confusion-matrix.md
+          - name: Evaluate the initial customer payment prediction model
+            href: finance-insights/evaluate-payment-prediction.md
+          - name: Improve the prediction model
+            href: finance-insights/improve-model.md
+          - name: Model management lifecycle
+            href: finance-insights/model-manage-lifecycle.md
       - name: Use Finance insights
         items: 
         - name: Budget proposals
@@ -1242,12 +1260,6 @@
           href: finance-insights/use-customer-payment-predictions.md
         - name: Snapshots overview
           href: finance-insights/payment-snapshots.md
-        - name: Results of machine learning models
-          href: finance-insights/confusion-matrix.md
-        - name: Evaluate the initial customer payment prediction model
-          href: finance-insights/evaluate-payment-prediction.md
-        - name: Improve the prediction model
-          href: finance-insights/improve-model.md
     - name: Project management and accounting
       items:
       - name: Project management and accounting overview
@@ -1492,8 +1504,6 @@
               href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Get started with Electronic Invoicing for Egypt
               href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
-            - name: Get started with Electronic Invoicing for Italy
-              href: localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Get started with the Electronic Invoicing for Mexico
               href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Set up Electronic Invoicing
@@ -2197,37 +2207,39 @@
         - name: Scope of the Indian localizations
           href: localizations/apac-ind-scope.md
         - name: What's new or changed for India localization
-          items: 
-          - name: What's new or changed in 10.0.0
-            href: localizations/apac-ind-news-letter-10-0-00.md
-          - name: What's new or changed in 10.0.01
-            href: localizations/apac-ind-news-letter-10-0-01.md
-          - name: What's new or changed in 10.0.02
-            href: localizations/apac-ind-news-letter-10-0-02.md
-          - name: What's new or changed in 10.0.03
-            href: localizations/apac-ind-news-letter-10-0-03.md
-          - name: What's new or changed in 10.0.04
-            href: localizations/apac-ind-news-letter-10-0-04.md 
-          - name: What's new or changed in 10.0.05
-            href: localizations/apac-ind-news-letter-10-0-05.md
-          - name: What's new or changed in 10.0.06
-            href: localizations/apac-ind-news-letter-10-0-06.md
-          - name: What's new or changed in 10.0.07
-            href: localizations/apac-ind-news-letter-10-0-07.md
-          - name: What's new or changed in 10.0.08
-            href: localizations/apac-ind-news-letter-10-0-08.md
-          - name: What's new or changed in 10.0.09
-            href: localizations/apac-ind-news-letter-10-0-09.md
-          - name: What's new or changed in 10.0.10
-            href: localizations/apac-ind-news-letter-10-0-10.md
-          - name: What's new or changed in 10.0.11
-            href: localizations/apac-ind-news-letter-10-0-11.md
-          - name: What's new or changed in 10.0.12
-            href: localizations/apac-ind-news-letter-10-0-12.md
+          items:
+          - name: What's new or changed in 10.0.15 - 10.0.19
+            href: localizations/ind-news-letter-10-0-15-19.md
+          - name: What's new or changed in 10.0.14
+            href: localizations/apac-ind-news-letter-10-0-14.md
           - name: What's new or changed in 10.0.13
             href: localizations/ind-news-letter-10-0-13.md
-          - name: What's new or changed in 10.0.14
-            href: localizations/apac-ind-news-letter-10-0-14.md 
+          - name: What's new or changed in 10.0.12
+            href: localizations/apac-ind-news-letter-10-0-12.md
+          - name: What's new or changed in 10.0.11
+            href: localizations/apac-ind-news-letter-10-0-11.md
+          - name: What's new or changed in 10.0.10
+            href: localizations/apac-ind-news-letter-10-0-10.md
+          - name: What's new or changed in 10.0.09
+            href: localizations/apac-ind-news-letter-10-0-09.md
+          - name: What's new or changed in 10.0.08
+            href: localizations/apac-ind-news-letter-10-0-08.md
+          - name: What's new or changed in 10.0.07
+            href: localizations/apac-ind-news-letter-10-0-07.md
+          - name: What's new or changed in 10.0.06
+            href: localizations/apac-ind-news-letter-10-0-06.md
+          - name: What's new or changed in 10.0.05
+            href: localizations/apac-ind-news-letter-10-0-05.md
+          - name: What's new or changed in 10.0.04
+            href: localizations/apac-ind-news-letter-10-0-04.md 
+          - name: What's new or changed in 10.0.03
+            href: localizations/apac-ind-news-letter-10-0-03.md
+          - name: What's new or changed in 10.0.02
+            href: localizations/apac-ind-news-letter-10-0-02.md
+          - name: What's new or changed in 10.0.01
+            href: localizations/apac-ind-news-letter-10-0-01.md
+          - name: What's new or changed in 10.0.0
+            href: localizations/apac-ind-news-letter-10-0-00.md
         - name: Indirect taxes
           items: 
           - name: India GST
@@ -2438,6 +2450,8 @@
                 href: localizations/apac-ind-GST-troubleshooting-records-fields-not-showing-GSTR-report.md
               - name: Setoff rule error when a tax settlement is run
                 href: localizations/apac-ind-GST-troubleshooting-setoff-rule-error-transactions-on-voucher-not%20balance.md
+              - name: Default field value in tax information isn't as expected
+                href: localizations/apac-ind-GST-troubleshooting-default-value-in-tax-information-not-expected.md
         - name: Direct taxes
           items:
           - name: India withholding tax
@@ -4351,6 +4365,8 @@
             href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/finance/toc.json
           - name: Configure approval steps
             href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/finance/toc.json
+          - name: Configure expenditure reviewers
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/finance/toc.json
           - name: Configure manual decisions
             href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/finance/toc.json
           - name: Configure conditional decisions

@@ -56,7 +56,7 @@ This topic explains how to turn on and configure the Customer payment prediction
 
     1. Go to **Credit and collections \> Setup \> Finance insights \> Finance insights parameters**.
 
-        [![Financial insights parameters page before the feature is configured](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
+        [![Financial insights parameters page before the feature is configured.](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
 
     2. On the **Financial insights parameters** page, on the **Customer payment insights** tab, select the **View the data fields used in the prediction model** link to open the **Data fields for prediction model** page. There, you can view the default list of fields that are used to create the artificial intelligence (AI) prediction model for customer payment predictions.
 
@@ -82,7 +82,7 @@ This topic explains how to turn on and configure the Customer payment prediction
 
 After the feature has been turned on and configured, and the prediction model has been created and is working, the **Prediction model** section of the **Financial insights parameters** page shows the accuracy of the model, as shown in the following illustration.
 
-[![Accuracy of the prediction model on the Financial insights parameters page](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
+[![Accuracy of the prediction model on the Financial insights parameters page.](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
 
 ## Release details
 

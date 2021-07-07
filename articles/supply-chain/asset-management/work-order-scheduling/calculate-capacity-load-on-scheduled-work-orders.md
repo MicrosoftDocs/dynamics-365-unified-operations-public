@@ -53,7 +53,7 @@ You can calculate capacity load on scheduled work orders to get an overview of t
 
 The figure below shows the result of a calculation covering three weeks for the load type **Reserved**.
 
-![Figure 1](media/08-work-order-scheduling.png)
+![Figure 1.](media/08-work-order-scheduling.png)
 
 [!NOTE]
 If you select the load types **Capacity** or **Remainder** for your calculation, the same result will be displayed if no reservations have been made for the resources in the selected period.

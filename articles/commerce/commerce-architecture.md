@@ -17,7 +17,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Retail
@@ -37,7 +37,7 @@ This topic provides an overview of all components in the Microsoft Dynamics 365 
 
 The following illustration shows an overview of Dynamics 365 Commerce components.
 
-<a href="/dynamics365/commerce/media/commerce-component-overview.jpg" target="_blank">![Dynamics 365 Commerce Component Overview](./media/commerce-component-overview.jpg)</a>
+<a href="/dynamics365/commerce/media/commerce-component-overview.jpg" target="_blank">![Dynamics 365 Commerce Component Overview.](./media/commerce-component-overview.jpg)</a>
 
 ## Architecture benefits
 

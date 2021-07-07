@@ -46,7 +46,7 @@ This topic provides troubleshooting information for dual-write integration betwe
 
 Errors on the **Setup link to Dataverse** page are usually caused by incomplete setup or permissions issues. Make sure that the whole health check passes on the **Setup link to Dataverse** page, as shown in the following illustration. You can't link dual-write unless the whole health check passes.
 
-![Successful health check](media/health_check.png)
+![Successful health check.](media/health_check.png)
 
 You must have Azure AD tenant admin credentials to link the Finance and Operations and Dataverse environments. After you link the environments, users can sign in by using their account credentials and update an existing table map.
 
@@ -81,7 +81,7 @@ To ensure that dual-write works correctly, the companies that you select during 
 4. Select the company that was linked when you configured dual-write.
 5. Verify that the **Default owning team** column has a value. In the following illustration, the **Default owning team** column is set to **USMF Dual Write**.
 
-    ![Verifying the default owning team](media/default_owning_team.png)
+    ![Verifying the default owning team.](media/default_owning_team.png)
 
 ## Find the limit on the number of legal tables or companies that can be linked for dual-write
 

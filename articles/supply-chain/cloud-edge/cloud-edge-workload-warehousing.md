@@ -76,7 +76,7 @@ The hub owns the following data:
 
 The scale units own the actual wave processing (such as work allocation, replenishment work, and demand work creation) after the release of the wave. Therefore, warehouse workers can process outbound work by using a Warehouse Management mobile app that is connected to the scale unit.
 
-![Wave processing flow](./media/wes-wave-processing-ga.png "Wave processing flow")
+![Wave processing flow.](./media/wes-wave-processing-ga.png "Wave processing flow")
 
 ### Process work and ship
 
@@ -84,7 +84,7 @@ As soon as the final work process puts the inventory at a final shipping locatio
 
 As soon as the hub has updated the transactions to *Picked*, it can process the outbound shipment confirmation and the associated sales packing slip or transfer order shipment for the load.
 
-![Outbound processing flow](./media/WES-outbound-processing-19.png "Outbound processing flow")
+![Outbound processing flow.](./media/WES-outbound-processing-19.png "Outbound processing flow")
 
 ## Inbound process flow
 
@@ -110,11 +110,11 @@ The worker can run the receiving process by using a Warehouse Management mobile 
 
 If you aren't using the *release to warehouse* process, and therefore aren't using *warehouse orders*, the hub can process warehouse receiving and work processing independently from scale units.
 
-![Inbound process flow](./media/wes-inbound-ga.png "Inbound process flow")
+![Inbound process flow.](./media/wes-inbound-ga.png "Inbound process flow")
 
 When performing inbound registration via a warehouse app receiving process against the scale unit warehouse order, the scale unit workload will signal the hub to updated the related purchase order line transactions to *Registered*. As soon as this is finished, you will be able to run a purchase order product receipt on the hub.
 
-![Inbound processing flow](./media/WES-inbound-processing-19.png "Inbound processing flow")
+![Inbound processing flow.](./media/WES-inbound-processing-19.png "Inbound processing flow")
 
 ## Supported processes and roles
 

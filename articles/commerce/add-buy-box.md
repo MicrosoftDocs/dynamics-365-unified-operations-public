@@ -41,7 +41,7 @@ The URL of a product details page includes the product ID. All the information t
 
 The following image shows an example of a buy box module on a product details page.
 
-![Example of a buy box module](./media/ecommerce-pdp-buybox.PNG)
+![Example of a buy box module.](./media/ecommerce-pdp-buybox.PNG)
 
 ## Buy box module properties and slots 
 
@@ -79,8 +79,10 @@ The following buy box module settings can be configured at **Site Settings \> Ex
 
 The buy box module that the Adventure Works theme provides has a module definition extension that supports implementation of a product specifications module within an accordion module in a PDP buy box. To showcase product specification attributes in a PDP buy box, add a product specification module to the accordion module slot in the buy box slot.
 
+
 > [!IMPORTANT]
 > The Adventure Works theme is available as of the Dynamics 365 Commerce version 10.0.20 release.
+
 
 ## Commerce Scale Unit interaction
 

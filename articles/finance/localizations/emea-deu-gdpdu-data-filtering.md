@@ -39,13 +39,13 @@ As explained in [German audit file (GDPdU/GoBD) overview](emea-deu-gdpdu-audit-d
 6. In the **Data sources** section on the **Model mapping design** page, search for **GeneralJournalEntry** and select this table.
 7. In the **Data sources** section, select **Edit** and then select the **Ask for query** check box for the **GeneralJournalEntry** table. Select **OK**.
 
-![Select Ask for quesry for General ledger entries table](media/ask-for-query-gl-entries.png)
+![Select Ask for quesry for General ledger entries table.](media/ask-for-query-gl-entries.png)
 
 8. Save, close, and complete the configuration.
 9. Unmark the **Default for model mapping** parameter for the parent configuration, **Data export model**, if it was marked. Select your derived configuration as **Default for model mapping**. 
 
 With this change, when you run **Data export** periodic tasks, you will see **Records to include** on the FastTab in the dialog box for the report for the **General journal entry** table. Select **Filter** to specify conditions for general ledger entries filtering.
 
-![Setup filtering conditions on Data export periodic tasks](media/filter-setup.png)
+![Setup filtering conditions on Data export periodic tasks.](media/filter-setup.png)
 
 To filter by the **Posting layer** field in the **General journal entry** table, select **Posting layer** in the **Field** column, and then select the necessary posting layer in the **Criteria** column.

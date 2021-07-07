@@ -38,7 +38,7 @@ The cart icon module represents the cart in the header module of the page, and s
 
 The following image shows an example of a cart icon module that displays a mini cart in the Fabrikam header.
 
-![Example of a cart icon module](./media/ecommerce-Minicart.PNG)
+![Example of a cart icon module.](./media/ecommerce-Minicart.PNG)
 
 ## Module properties
 

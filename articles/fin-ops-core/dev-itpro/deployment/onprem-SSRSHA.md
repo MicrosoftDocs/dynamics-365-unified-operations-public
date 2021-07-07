@@ -38,7 +38,7 @@ This topic doesn't cover the setup of Windows failover clusters. For information
 
 After the cluster is set up, you can configure your installation. The examples below will be based on the information displayed in the following illustration.
 
-![Example of a Windows failover cluster configuration](./media/WFC.png)
+![Example of a Windows failover cluster configuration.](./media/WFC.png)
 
 1. Update your configuration file (**ConfigTemplate.xml**):
 

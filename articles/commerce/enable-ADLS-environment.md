@@ -63,7 +63,7 @@ For a more in-depth overview of the steps required to enable Azure Data Lake Sto
 
 The following image shows an example Azure Data Lake Storage configuration.
 
-![Example of Azure Data Lake Storage configuration](./media/exampleADLSConfig1.png)
+![Example of Azure Data Lake Storage configuration.](./media/exampleADLSConfig1.png)
 
 ### Test the Azure Data Lake Storage connection
 
@@ -83,7 +83,7 @@ To enable automatic refresh for Entity store, follow these steps.
 
 The following image shows an example of Entity store with automatic refresh enabled.
 
-![Example of Entity store with automatic refresh enabled](./media/exampleADLSConfig2.png)
+![Example of Entity store with automatic refresh enabled.](./media/exampleADLSConfig2.png)
 
 Azure Data Lake Storage is now configured for the environment. 
 

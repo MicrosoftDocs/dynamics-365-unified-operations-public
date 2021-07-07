@@ -122,15 +122,15 @@ When an expression references a structured data source, you can use the path def
 
 If the path of a structured data source starts with an "at" sign (@), it's a relative path. The "at" sign is shown instead of the remaining part of the absolute path of the hierarchical tree structure that is used. The following illustration shows an example. Here, the absolute path `Ledger.'accountingCurrency()'` indicates that the accounting currency value from the **Ledger** data source is entered in the **AccountingCurrency** field of the data model.
 
-![Example of an absolute path on the ER model mapping designer page](./media/ER-FormulaLanguage-AbsolutePath.png)
+![Example of an absolute path on the ER model mapping designer page.](./media/ER-FormulaLanguage-AbsolutePath.png)
 
 The example in the following illustration shows how a relative path is used. The relative path `@.AccountNum` indicates that the **AccountNum** field of the **Intrastat** data source (which appears one level above the **AccountNum** field in the data model's hierarchical tree) is used to enter the customer or vendor account number in the data model's **AccountNum** field.
 
-![Example of a relative path on the ER model mapping designer page](./media/ER-FormulaLanguage-RelativePath1.png)
+![Example of a relative path on the ER model mapping designer page.](./media/ER-FormulaLanguage-RelativePath1.png)
 
 The remaining part of the absolute path is also shown in the [ER formula editor](general-electronic-reporting-formula-designer.md).
 
-![Remaining part of the absolute path on the ER formula designer page](./media/ER-FormulaLanguage-RelativePath2.png)
+![Remaining part of the absolute path on the ER formula designer page.](./media/ER-FormulaLanguage-RelativePath2.png)
 
 For more information, see [Use a relative path in data bindings of ER models and formats](relative-path-data-bindings-er-models-format.md).
 

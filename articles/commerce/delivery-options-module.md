@@ -46,7 +46,7 @@ If shipping charges apply to line items, they can be shown on the cart line for 
 
 The following illustration shows an example of a delivery options module on a checkout page.
 
-![Example of a delivery options module on a checkout page](./media/ecommerce-deliveryoptions.PNG)
+![Example of a delivery options module on a checkout page.](./media/ecommerce-deliveryoptions.PNG)
 
 ## Delivery options module properties
 

@@ -34,7 +34,7 @@ All these reports, except the **Multimodal dangerous goods** report, use the mod
 
 The following illustration shows the sequence of activities that occur when the system generates hazardous materials reports.
 
-![Sequence of activities for hazardous materials reports](media/hazmat-report-sequence.png "Sequence of activities for hazardous materials reports")
+![Sequence of activities for hazardous materials reports.](media/hazmat-report-sequence.png "Sequence of activities for hazardous materials reports")
 
 ## <a name="set-up"></a>Set up hazardous materials reporting
 

@@ -60,7 +60,7 @@ ms.dyn365.ops.version: 10.0.4
 6. Select **Post** \> **Post**.
 7. Select **Inquiries** \> **Voucher**.
 
-    ![Example](media/Annotation-2019-05-21-142658.png)
+    ![Example.](media/Annotation-2019-05-21-142658.png)
 
 > [!NOTE]
 > Tax adjustment functionality is available only for purchase orders and sales orders that are at the invoicing stage.

@@ -57,7 +57,7 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
 > The user who completes this procedure must have Admin rights for the tenant to register applications.
 
 2. Go to **Azure Active Directory** > **App registrations** > **New application registration**.<br>
-    ![Azure Portal App Registration](media/Azure-Portal-AppRegistration.png)
+    ![Azure Portal App Registration.](media/Azure-Portal-AppRegistration.png)
 
 3. Enter the following values:
 
@@ -73,7 +73,7 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
 6. Click **Settings** > **Required permissions** > **Add** > **Select an API** > **Power BI Service (Power BI)**.
 7. Click **Select**.
 8. Enable Access and click **Select**.<br>
-    ![Azure Portal App Permissions](media/Azure-Portal-AppPermissions.png)
+    ![Azure Portal App Permissions.](media/Azure-Portal-AppPermissions.png)
 
 9. Click **Done** and then click **Grant Permissions**.
 10. Click **Settings** > **Keys**.
@@ -84,7 +84,7 @@ Make a note of the **Application ID** and **Application Key**. You will use thes
 ## Specify Power BI settings in Finance and Operations
 
 1. In the client, open the **Power BI configuration** page.<br>
-    ![Power BI configuration dialog](./media/D365-PBI-Configuration.png)
+    ![Power BI configuration dialog.](./media/D365-PBI-Configuration.png)
 
 2. Select **Edit**.
 3. Set the **Enabled** option to **Yes**.
@@ -102,7 +102,7 @@ Complete the steps in the next section to verify the changes and enable PowerBI.
 1. To validate the PowerBI.com configuration, click **Get started**.<br>
 > [!NOTE]
 > You may need to refresh the browser to apply the changes. <br>
-> ![Authorize Power BI](./media/D365-PBI-GetStarted.png)
+> ![Authorize Power BI.](./media/D365-PBI-GetStarted.png)
 
 If you're starting Power BI from the application for the first time, you're prompted to authorize sign-in to Power BI from the client. Select **Click here to provide authorization to Power BI**.
 
@@ -113,7 +113,7 @@ Users must complete this step the first time they pin Power BI content.
 3. Because you're already signed in to Azure AD, you don't have to enter your credentials again. A new tab appears, where you're prompted to authorize the connection between the application and Power BI. Authorize the connection, and then return to the original tab.
 
 4. A list of tiles from your PowerBI.com account appears. Select one or more tiles to pin to the selected workspace.
-    ![Validate Power BI integration](./media/D365-PBI-Validation.png)
+    ![Validate Power BI integration.](./media/D365-PBI-Validation.png)
 
 ## Troubleshooting common errors
 

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configuration for Finance insights - vesrions upto 10.0.19
-description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights for versions upto 10.0.19.
+title: Configuration for Finance insights - before version 10.0.19
+description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights for versions before 10.0.19.
 author: ShivamPandey-msft
 ms.date: 06/03/2021
 ms.topic: article
@@ -26,7 +26,7 @@ ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Configuration for Finance insights (preview)
+# Configuration for Finance insights for private preview (preview) - before version 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 10.0.13
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> The following procedures for setting up Finance insights are valid for Microsoft Dynamics 365 Finance versions up to 10.0.19. To set up Finance insights on version 10.0.20 and later, see [Configuration for Finance Insights (preview) - versions 10.0.20 and beyond](configure-for-fin-insites-PubPrvw.md).
+> The following procedures for setting up Finance insights are valid for Microsoft Dynamics 365 Finance before version 10.0.19. To set up Finance insights on version 10.0.20 and later, see [Configuration for Finance Insights (preview) - versions 10.0.20 and beyond](configure-for-fin-insites-PubPrvw.md).
 
 Finance insights combines functionality from Microsoft Dynamics 365 Finance with Microsoft Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 
@@ -63,7 +63,7 @@ Use the following steps to configure Dataverse for Finance insights.
 
     1. Open the **Environments** page.
 
-        [![Environments page](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
+        [![Environments page.](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
 
     2. Select the Dataverse environment created above and then select **Settings**.
     3. Select **Resources \> All Legacy Settings**.
@@ -796,6 +796,8 @@ The add-in will be installed within a few minutes.
     | CDS Organization URL                                     | The Dataverse organization URL copied from above. |
     | CDS Org ID                                               | The Dataverse organization ID copied from above. |
 5. Enable **Is this the default environment for you Tenant**.
+
+The add-in might take several minutes to install.
     
 ## Configure the entity store
 

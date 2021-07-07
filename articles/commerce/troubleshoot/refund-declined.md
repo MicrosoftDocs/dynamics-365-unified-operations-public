@@ -39,7 +39,7 @@ A refund is declined when the credit card that is used to invoice a return order
 
 The payment authorization details will include the following error message: "Adyen gateway SendRequest() failed with status 'InternalServerError'.22144; Empty response returned from Adyen.(22001);"
 
-![Declined refund on a return order error](media/refund-order-decline.jpg)
+![Declined refund on a return order error.](media/refund-order-decline.jpg)
 
 ## Resolution
 

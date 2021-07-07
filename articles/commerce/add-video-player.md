@@ -49,7 +49,7 @@ The video player module also supports secondary audio tracks. When a video is up
 
 The following image shows an example of a video player module on a home page.
 
-![Example of a video player module](./media/ecommerce-videoplayer.PNG)
+![Example of a video player module.](./media/ecommerce-videoplayer.PNG)
 
 ### Video player module properties
 

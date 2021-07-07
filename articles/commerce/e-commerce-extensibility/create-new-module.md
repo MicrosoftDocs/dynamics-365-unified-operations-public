@@ -57,7 +57,7 @@ To preview the new module in a local web browser, follow these steps.
 
 2. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=product-feature`. Notice the module name in the **type=MODULE\_NAME** query string parameter.
 
-![Module preview](media/create-new-module.png)
+![Module preview.](media/create-new-module.png)
 
 ## Module naming conventions
 

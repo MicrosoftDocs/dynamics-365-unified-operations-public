@@ -39,7 +39,7 @@ The header module includes a site logo, links to the navigation hierarchy, links
 
 The following image shows an example of a header module on a home page.
 
-![Example of a header module](./media/ecommerce-header.png)
+![Example of a header module.](./media/ecommerce-header.png)
 
 ## Properties of a header module
 

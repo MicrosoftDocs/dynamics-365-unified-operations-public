@@ -43,11 +43,11 @@ To use this feature, enable **Custom links in Manager self-service** in the **Fe
 
 2. Under **Set up links for Managers**, you can add, edit, or remove a link. You can also group the links together so they display in a group in Manager self-service.
 
-   ![Set up custom links in Manager self-service](./media/hr-employee-manager-self-service-custom-links-setup.png)
+   ![Set up custom links in Manager self-service.](./media/hr-employee-manager-self-service-custom-links-setup.png)
 
 3. To see the links, go to the **My team** tab in Employee self-service.
 
-   ![View custom links in Manager self-service](./media/hr-employee-manager-self-service-custom-links-view.png)
+   ![View custom links in Manager self-service.](./media/hr-employee-manager-self-service-custom-links-view.png)
 
 ## See also
 

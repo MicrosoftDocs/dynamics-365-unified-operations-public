@@ -54,7 +54,7 @@ For example, if you apply a binary hotfix or platform update to a build VM, the 
 
 For test automation, concentrate on unit tests (use the SysTest framework) that are data independent or create their own data. Use a smaller number of functional scenario tests (based on Task Recorder) that rely on test data to execute. Scenario tests are more expensive to maintain. Unit tests can then be executed on any development environment easily and quickly. Review the [Test Automation Pyramid](/archive/blogs/dave_froslie/test-automation-pyramid) blog article and refer to [Automated testing guidance](/archive/blogs/axdevalm/automated-testing-guidance-for-ax-7).
 
-![media/testautomationpyramid1.png](media/testautomationpyramid1.png) Some key concepts to keep in mind:
+![media/testautomationpyramid1.png.](media/testautomationpyramid1.png) Some key concepts to keep in mind:
 
 - Write tests that run independently and do not assume any kind of ordering.
 - Task recorder tests should be limited to functional scenarios tests.
@@ -77,7 +77,7 @@ Create and manage your test database as follows:
 
 On a build environment, copy this backup over to the I:\\DynamicsBackupDatabases (on some environment it may be a different drive than i:). This database will be restored at the beginning of every build. This step is executed as part of the first step of the build definition called **Prepare for build**.
 
-![media/prepareforbuild.png](media/prepareforbuild.png)
+![media/prepareforbuild.png.](media/prepareforbuild.png)
 
 ### How do I distribute my application to customers?
 

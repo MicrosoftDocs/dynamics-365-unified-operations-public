@@ -58,7 +58,7 @@ To create an organizational hierarchy, follow these steps.
 
 The following image shows an example organizational hierarchy created for a fictitious "Adventure Works" set of stores.
 
-![Example organizational hierarchy](media/organizational-hierarchies.png)
+![Example organizational hierarchy.](media/organizational-hierarchies.png)
 
 ### Add organizations to a hierarchy
 
@@ -71,7 +71,7 @@ To add organizations to a hierarchy, follow these steps.
 
 The following image shows a legal entity added at the hierarchy root with four cost centers added for "Mall", "Outlet", "Online" and "Call Center" channels. Various retail, call center and online channels can then be added to each.
 
-![Example hierarchy designer](media/hierarchy-designer.png)
+![Example hierarchy designer.](media/hierarchy-designer.png)
 
 ## Additional resources
 
