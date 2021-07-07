@@ -13,7 +13,7 @@ ms.search.validFrom: 2020-06-29
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# Remove Cloud Scale Unit Extensions
+# Remove Cloud Scale Unit extensions
 
 [!include [banner](../../includes/banner.md)]
 
