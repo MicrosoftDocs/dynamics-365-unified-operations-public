@@ -2,9 +2,9 @@
 # required metadata
 
 title: Post TDS/TCS on non-filers at a higher rate of tax
-description: This topic explains how to post Tax Deducted at Source (TDS)/Tax Collected at Source (TCS) on non-filers at a higher rate of tax in Microsoft Dynamics 365.
+description: This topic explains how to post Tax Deducted at Source (TDS)/Tax Collected at Source (TCS) on non-filers at a higher rate of tax.
 author: kfend
-ms.date: 07/06/2021
+ms.date: 07/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -199,9 +199,9 @@ Define a threshold definition for the Rent TDS type
       - **Account code**: All
       - **Threshold**: Rent
 
-   You can leave the **Account or group** field blank for this threshold reference.
+  You can leave the **Account or group** field blank for this threshold reference.
  
-      ![Account or group field](media/tds-higher-rate-12.png)
+  ![Account or group field](media/tds-higher-rate-12.png)
       
 9.	Select **Threshold designer**.
 10.	On the **Threshold designer** page, select the first cumulative line that has the **Rent RNF** threshold. Then, on the **Tax value** FastTab, select **New**, and set the following values:
@@ -293,13 +293,13 @@ Define a threshold definition for the Rent TDS type
 3.	On the **Setup** FastTab, select **Add**.
 4.	In the **Withholding tax code** field, select **Rent 194 I**.
 
-      ![](media/tds-higher-rate-18.png)
+      ![Withholding tax code field, Rent 194 I](media/tds-higher-rate-18.png)
  
 5.	Select **Designer**.
 6.	On the **Designer** page, select **New**.
 7.	In the **Tax code** field, select **Rent 194 I**.
 
-      ![](media/tds-higher-rate-19.png)
+      ![Tax code field, Rent 194 I](media/tds-higher-rate-19.png)
  
 8.	Close the **Designer** page.
 
@@ -311,7 +311,7 @@ Define a threshold definition for the Rent TDS type
 4.	On the **Invoice and delivery** FastTab, set the **Calculate withholding tax** option to **Yes**.
 5.	In the **TDS group** field, select **Rent 194 I**.
  
-    ![](media/tds-higher-rate-20.png)
+    ![TDS group field, Rent 194 I](media/tds-higher-rate-20.png)
 
 ### Update the PAN information for a vendor
 
@@ -321,7 +321,7 @@ Define a threshold definition for the Rent TDS type
 4.	In the **Number** field, enter **AUNPP6767E**.
 5.	Close the page.
 
-    ![](media/tds-higher-rate-21.png)
+    ![Tax information FastTab](media/tds-higher-rate-21.png)
     
 ## Example scenarios
 
@@ -348,12 +348,12 @@ In this scenario, the vendor hasn't filed income tax returns for the last two ye
 5.	In the **Credit** field, enter **250,000.00**.
 6.	In the **Offset account type** field, select **Ledger**. Then, in the **Offset account** field, select **600120**.
  
-   ![](media/tds-higher-rate-22.png)
+   ![New vendor invoice journal line for scenario 1](media/tds-higher-rate-22.png)
  
 7.	Select **Withholding tax**.
 8.	On the **Temporary withholding tax transactions** page, notice that the withholding tax is calculated at the defined rate of 20.0 percent for this vendor, because the vendor hasn't filed income tax returns for the last two years.
 
-    ![](media/tds-higher-rate-23.png)
+    ![Temporary withholding tax transactions page for scenario 1](media/tds-higher-rate-23.png)
  
 ### Scenario 2: The vendor has filed returns for the last two years and provides PAN information
 
@@ -366,12 +366,12 @@ In this scenario, the vendor has filed income tax returns for the last two years
 5.	In the **Credit** field, enter **250000.00**.
 6.	In the **Offset account type** field, select **Ledger**. Then, in the **Offset account** field, select **600150**.
  
-    ![](media/tds-higher-rate-24.png)
+    ![New vendor invoice journal line for scenario 2](media/tds-higher-rate-24.png)
  
 7.	Select **Withholding tax**.
 8.	On the **Temporary withholding tax transactions** page, notice that the withholding tax is calculated at the defined rate of 10.0 percent.
  
-    ![](media/tds-higher-rate-25.png)
+    ![Temporary withholding tax transactions page for scenario 2](media/tds-higher-rate-25.png)
  
 
 
