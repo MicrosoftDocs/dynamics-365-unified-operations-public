@@ -62,14 +62,15 @@ To target page modules in Commerce site builder, follow these steps.
 5. Click **Add** to include or exclude audiences that will see this targeted experience and click **Next**. 
     > [!NOTE]
     > Assigning audiences is an optional step for target creation but you will need to assign at least one audience in the **include** list before publishing the target to ensure the right groups of users see it.
-6. Select the time zone, start and end dates/times to display your target. You can also set the target to show at all times during this window or choose specific days and times and click **Next**.
+6. Select the time zone, start and end dates/times to display your target. You can also set the target to show at all times during this window or choose specific days and times and click **Next**. 
     > [!NOTE]
+    > The times and timezone you specify are global. If you wish to target different locations at different times/zones, you will need to create different targets with the desired schedule for each location.
     > Scheduling your target dictates for how long it remains active and is separate from scheduling a publish group that publishes a collection of content at the prescribed time.
 8. Review the details and once everything looks good, click **Create target experience** and **Go to target**. This creates the target shell to which you can now add modules. 
-9. Select the module to be targeted, select the ellipsis (...), and then select **Add to current target**. The targeted module will be highlighted with a green color.
+9. Select the module to be targeted, select the ellipsis (...), and then select **Add to current target**. When you target a parent module, all its children become part of that target. The targeted modules are highlighted with a green color.
 10. Make the necessary updates to the targeted module and add more modules if required. Click **Save** to save all your changes.
 11. Before you publish your target, make sure to click on **Preview** in the command bar to review it first. You can then select from one of the following options:
-    - **Basic preview** to preview only the selected variation without any associated audiences.
+    - **Basic preview** to preview only the selected variation (default page or target) without any associated audiences.
     - **Advanced preview** if you have multiple targets on this page and want to preview them as a user belonging to a selected set of audiences. Click **Next** to choose from the list of relevent audiences or remove the filter to choose from all audiences.
 12. Once everything looks good, you will need to publish the page for the target to go live. Click on **Publish** to go live immediately or use a publish group to schedule when it goes live.
 
@@ -88,6 +89,6 @@ To manage your targets, go to the default page or fragment and follow these step
 Targets in pages and fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, you can delete the targets for locales that you don't need once the localized XLIFFs are imported. Targets are managed per locale so if you change the schedule for one of your targets, they will not automatically carry forward to the rest.
 
 <<TODO - C1 needs to get explicit cookie consent from C2 for targeting; need to include info on that module>>
-<<Analytics>>
+<<Analytics??>>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
