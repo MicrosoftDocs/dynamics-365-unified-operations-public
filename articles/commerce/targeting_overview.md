@@ -49,7 +49,7 @@ To create an audience in Commerce site builder, follow these steps.
 You can edit an audience by clicking on it's blue link in the **Audiences** tab and the **Edit** button in the audience editor that opens up. You can also select an audience in the list view and select **View Assignments** to view the list of targets and pages that are referencing it. To delete an audience in the audience list view or in the audience editor, unpublish it if it is already published and then select **Delete** in the top command bar.
 
 > [!NOTE]
-> Audiences are a site-level concept in site builder.
+> Audiences are a site-level concept in site builder. You can share the same audience across multiple targets.
 
 ## Targets
 A target is the user experience that will be shown to members of the chosen audience. It can either include variations of one or more modules within a page or a fragment. You can begin your targeting journey by creating an audience or a target but both are necessary parts to a successful targeting experience.
@@ -58,7 +58,7 @@ A target is the user experience that will be shown to members of the chosen audi
 To target page modules in Commerce site builder, follow these steps.
 1. Select **Pages** in the left navigation pane, and then select the blue link for the page that has the module(s) you want to target.
 2. Click **Edit** to check out the page for editing.
-3. Click the **Target** drop-down and then **New target** to create a new target shell. <TODO: check with Jane on command bar entry point>
+3. Click the **Target** drop-down and then **New target** to create a new target shell. You can have multiple targets on a page. <TODO: check with Jane on command bar entry point>
 4. Give your target a name and description and click **Next**.
 5. Click **Add** to include or exclude audiences that will see this targeted experience and click **Next**. 
     > [!NOTE]
@@ -69,7 +69,7 @@ To target page modules in Commerce site builder, follow these steps.
     > - Scheduling a target dictates for how long it remains active. This is separate from scheduling a publish group that determines when a collection of content will go live.
 8. Review the details and once everything looks good, click **Create target experience** and **Go to target**. This creates the target shell to which you can now add modules. 
 9. Select the module to be targeted, select the ellipsis (...), and then select **Add to current target**. When you target a parent module, all its children become part of that target. The targeted modules are highlighted with a green color.
-10. Make the necessary updates to the targeted module and add more modules if required. Click **Save** to save all your changes.
+10. Make the necessary content updates to the targeted module and add more modules to the target if required. Click **Save** to save all your changes.
 11. Before you publish your target, make sure to click on **Preview** in the command bar to review it first. You can then select from one of the following options:
     - **Basic preview** to preview only the selected variation (default page or target) without any associated audiences.
     - **Advanced preview** if you have multiple targets on this page and want to preview them as a user belonging to a selected set of audiences. Click **Next** to choose from the list of relevent audiences or remove the filter to choose from all audiences.
