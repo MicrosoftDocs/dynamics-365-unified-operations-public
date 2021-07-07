@@ -42,8 +42,8 @@ To create an audience in Commerce site builder, follow these steps.
 3. Click on **Create** and **Add new rule block** on the the following page. A rule block is a collection of rules joined together by AND conditions. You can also create multiple rule blocks with OR conditions between them.
 4. Select a data source for your segments, followed by the segment name, operator and value(s). You can create and delete more rules within a rule block or create and delete entire rule blocks. You can also move rule blocks up or down as needed.
     > [!NOTE]
-    > You can have up to 100 values in a list with up to 50 characters in each item.
-    > Please ensure that your use of cookies complies with applicable laws.
+    > - You can have up to 100 values in a list with up to 50 characters in each item.
+    > - Please ensure that your use of cookies complies with applicable laws.
 6. Once you are satisfied with your audience, select **Finish editing**. You can also select **Publish** if you want to make the audience available for use in a live target or publish it along with the target.
 
 You can edit an audience by clicking on it's blue link in the **Audiences** tab and the **Edit** button in the audience editor that opens up. You can also select an audience in the list view and select **View Assignments** to view the list of targets and pages that are referencing it. To delete an audience in the audience list view or in the audience editor, unpublish it if it is already published and then select **Delete** in the top command bar.
@@ -65,8 +65,8 @@ To target page modules in Commerce site builder, follow these steps.
     > Assigning audiences is an optional step for target creation but you will need to include at least one audience before publishing the target to ensure the right groups of users see it.
 6. Select the time zone, start and end dates/times to display your target. You can also set the target to show at all times during this window or choose specific days and times and click **Next**. 
     > [!NOTE]
-    > The times and timezone you specify are global. If you wish to target different locations at different times/zones, you will need to create different targets with the desired schedule for each location.
-    > Scheduling a target dictates for how long it remains active. This is separate from scheduling a publish group that determines when a collection of content will go live.
+    > - The times and timezone you specify are global. If you wish to target different locations at different times/zones, you will need to create different targets with the desired schedule for each location.
+    > - Scheduling a target dictates for how long it remains active. This is separate from scheduling a publish group that determines when a collection of content will go live.
 8. Review the details and once everything looks good, click **Create target experience** and **Go to target**. This creates the target shell to which you can now add modules. 
 9. Select the module to be targeted, select the ellipsis (...), and then select **Add to current target**. When you target a parent module, all its children become part of that target. The targeted modules are highlighted with a green color.
 10. Make the necessary updates to the targeted module and add more modules if required. Click **Save** to save all your changes.
