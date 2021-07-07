@@ -50,9 +50,9 @@ To create and generate financial reports for a legal entity, you must set up the
 -   Chart of accounts
 -   Currency
 -   Post a transaction to at least one account
--   MainAccount is listed in the Selected column in **General Ledger > Ledger Setup > Financial Reporting Setup**
+-   MainAccount is listed in the Selected column in **General ledger > Ledger setup > Financial reporting setup**
 
-## Granting security access to Financial Reporting
+## Granting security access to Financial reporting
 The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles. The following sections list these privileges and duties, together with the associated roles.
 
 ### Duties
@@ -163,19 +163,19 @@ Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
 Issue 2: The user hasn't been assigned the required permissions to use Financial Reporting. 
 
 * To verify if the user does not have permission, select **Yes** on the error, “Unable to connect to the Financial Reporting server. Select Yes if you want to continue and specify a different server address.” Then select **Test Connection**. If you don't have permission, you will see a message that says, "Connection attempt failed. User does not have appropriate permissions to connect to the server. Contact your system administrator.”
-* Required permissions are listed above in [Granting security access to Financial Reporting](#granting-security-access-to-financial-reporting). Security in Financial Reporting is based on these privileges. You won't have access unless these privileges (or another security role that includes these privileges) are assigned to you. 
+* Required permissions are listed above in [Granting security access to Financial eporting](#granting-security-access-to-financial-reporting). Security in Financial Reporting is based on these privileges. You won't have access unless these privileges (or another security role that includes these privileges) are assigned to you. 
 * The **Company Users Provider to Company** integration task (which is also responsible for and known as user integration) runs on a 5-minute interval. It may take up to 10 minutes for any permission changes to take effect in Financial Reporting. 
   If another user can open Report Designer, select **Tools**, and then select **Integration Status**. Verify that the integration map, "Company Users Provider to Company," has run successfully because you were assigned permission to use Financial Reporting. 
 * It may be possible that another error has prevented **Dynamics user to Financial Reporting user integration** from finishing. Or it's possible that a datamart reset has been initiated and not yet completed, or that another system error has occurred. Try running the process again later. If the problem persists, contact your system admin.
 
 Issue 3: You can proceed past the ClickOnce Report Designer sign-in page, but are unable to complete sign in within Report Designer. 
 
-* The time set on your local computer when you enter your login credentials must be within five minutes of the time on the Financial Reporting server. If there is a difference of more than five minutes, the system will not allow sign in. 
+* The time set on your local computer when you enter your login credentials must be within five minutes of the time on the Financial reporting server. If there is a difference of more than five minutes, the system will not allow sign in. 
 * In this case, we recommend enabling the Windows option to set your PC's time automatically. 
 
-## Using event viewer to troubleshoot report designer issues.
+## Use Event viewer to troubleshoot report designer issues.
 
-
+You can use the Event veiwer to analyze some issues that arise when using Financial reporting. 
 
 ### What happens when you have connections issues with Financial reporting? 
 
@@ -187,7 +187,7 @@ Submit copies of these logs together with your ticket when contacting support.
 
 > 1.	Copy the RegisterETW.zip to the client workstation (preferably the Desktop) and extract [RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster)
 
-> 2.	Make sure Windows Event Viewer is closed.
+> 2.	Make sure Windows Event viewer is closed.
 
 > 3.	Open an Administrator PowerShell command prompt and path (cd) to the directory where RegisterETW.ps1 is located.
 
@@ -207,7 +207,7 @@ Submit copies of these logs together with your ticket when contacting support.
    
 > 6. Export the MR-Logger events using the event viewer.
 
-## Troubleshooting connection issues to Financial Reporting
+## Troubleshoot issues connecting to Financial reporting
 
 Issue 1: You get this error message “Unable to Connect to the Financial reporting server”
 
