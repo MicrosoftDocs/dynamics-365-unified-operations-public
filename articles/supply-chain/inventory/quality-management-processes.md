@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm:
-ms.custom: 11574
+ms.custom: ["11574", "intro-internal"]
 ms.assetid: 5ac8a059-5cb4-4cb5-ba14-b944bd08dae9
 ms.search.region: Global
 # ms.search.industry:
@@ -67,7 +67,7 @@ Here are some of the ways that you can control the quality management process:
 - Document the cost of managing a nonconformance. This cost can include the items (such as spare parts), miscellaneous charges, and the timesheet hours that are required to correct the nonconformance.
 - Schedule error correction processes by using correction handling that is linked to quality orders.
 
-[![Quality management process](media/quality-management-process-diagram.png)](media/quality-management-process-diagram.png)
+[![Quality management process.](media/quality-management-process-diagram.png)](media/quality-management-process-diagram.png)
 
 ## Product testing and quality orders
 

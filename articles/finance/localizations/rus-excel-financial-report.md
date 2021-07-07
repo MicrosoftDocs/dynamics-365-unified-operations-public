@@ -80,7 +80,7 @@ Before you complete this procedure, see [ER Design a configuration for generatin
     11. Select **OK**.
     12. Review the cells that are created from the names in the Excel template.
 
-        ![Format mapping cells](media/rus-format-designer-mapping.jpg)
+        ![Format mapping cells.](media/rus-format-designer-mapping.jpg)
 
     13. Close the page.
 
@@ -122,7 +122,7 @@ Before you complete this procedure, see [ER Design a configuration for generatin
     1. On the **Mapping** tab, expand the **Calculations** container, expand the **\$Values** calculated field, and select the **Text** element.
     2. In the list of Excel format cells, select the **АктивВнеОбАНематАктПояснения** cell, and then select **Bind**.
 
-        ![Format mapping text string](media/rus-format-designer-mapping-text-string.jpg)
+        ![Format mapping text string.](media/rus-format-designer-mapping-text-string.jpg)
 
     3. On the **Mapping** tab, select the **Value** element.
     4. In the list of Excel format cells, select the **АктивВнеОбАНематАктСумОтч** cell, and then select **Bind**.

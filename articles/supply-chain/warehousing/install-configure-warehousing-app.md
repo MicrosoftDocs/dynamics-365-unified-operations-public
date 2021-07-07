@@ -68,28 +68,28 @@ To enable the warehouse app to interact with a specific Supply Chain Management 
 1. Enter the name and password of the user who has access to the Azure subscription.
 1. In the Azure portal, in the left navigation pane, select **Azure Active Directory**.
 
-    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Make sure that you're working with the instance of Azure AD that is used by Supply Chain Management.
 1. In the **Manage** list, select **App registrations**.
 
-    ![App registrations](media/app-connect-azure-register.png "App registrations")
+    ![App registrations.](media/app-connect-azure-register.png "App registrations")
 
 1. On the toolbar, select **New registration** to open the **Register an application** wizard.
 1. Enter a name for the application, select the **Accounts in this organizational directory only** option, and then select **Register**.
 
-    ![Register an application wizard](media/app-connect-azure-register-wizard.png "Register an application wizard")
+    ![Register an application wizard.](media/app-connect-azure-register-wizard.png "Register an application wizard")
 
 1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you will need it later. This ID will be referred to later in this topic as the *client ID*.
 
-    ![Application (client) ID](media/app-connect-azure-app-id.png "Application (client) ID")
+    ![Application (client) ID.](media/app-connect-azure-app-id.png "Application (client) ID")
 
 1. In the **Manage** list, select **Certificate & secrets**. Then select one of the following buttons, depending on how you want to configure the app for authentication. (For more information, see the [Authenticate by using a certificate or client secret](#authenticate) section later in this topic.)
 
     - **Upload certificate** – Upload a certificate to use as a secret. We recommend this approach, because it's more secure and can also be automated more completely. If you're running the warehouse app on Windows devices, make a note of the **Thumbprint** value that is shown after you upload the certificate. You will need this value when you configure the certificate on Windows devices.
     - **New client secret** – Create a key by entering a key description and a duration in the **Passwords** section, and then select **Add**. Make a copy of the key, and store it securely.
 
-    ![Certificate & secrets](media/app-connect-azure-authentication.png "Certificate & secrets")
+    ![Certificate & secrets.](media/app-connect-azure-authentication.png "Certificate & secrets")
 
 For more information about how to set up web service applications in Azure AD, see the following resources:
 
@@ -109,7 +109,7 @@ To enable Supply Chain Management to use your Azure AD application, follow these
     1. Create a user.
     1. Assign the warehousing mobile device user.
 
-    ![Assign the warehousing mobile device user](media/app-connect-app-users.png "Assign the warehousing mobile device user")
+    ![Assign the warehousing mobile device user.](media/app-connect-app-users.png "Assign the warehousing mobile device user")
 
 1. Associate your Azure AD application with the warehouse app user:
 
@@ -117,7 +117,7 @@ To enable Supply Chain Management to use your Azure AD application, follow these
     1. Create a line.
     1. Enter the client ID that you made a note of in the previous section, give it a name, and select the user that you just created. We recommend that you tag all your devices. Then, if they are lost, you can easily remove their access to Supply Chain Management from this page.
 
-    ![Azure Active Directory applications](media/app-connect-aad-apps.png "Azure Active Directory applications")
+    ![Azure Active Directory applications.](media/app-connect-aad-apps.png "Azure Active Directory applications")
 
 ## <a name="authenticate"></a>Authenticate by using a certificate or client secret
 
@@ -205,26 +205,26 @@ Follow these steps to import connection settings from a file or a QR code.
 1. Go to **Connection settings**.
 1. Set the **Use demo mode** option to _No_.
 
-    ![Use demo mode option](media/app-connect-app-demo-mode.png "Use demo mode option")
+    ![Use demo mode option.](media/app-connect-app-demo-mode.png "Use demo mode option")
 
 1. Select **Select file** or **Scan QR code**, depending on how you want to import the settings:
 
     - If you're importing the connection settings from a file, the app might already have found the file if the default name and the default location were used when it was saved. Otherwise, select **Select file**, browse to the file on your local device, and select it. If you select a custom location, the app will store it and automatically use it the next time.
     - If you're importing the connection settings by scanning a QR code, select **Scan QR code**. The app prompts you for permission to use the device's camera. After you give permission, the camera is started, so that you can use it for scanning. Depending on the quality of the device's camera and the complexity of the QR code, you might find it difficult to get a correct scan. In that case, try to reduce the complexity of the QR code by generating only one connection per QR code. (Currently, you can use only the device's camera to scan the QR code.)
 
-    ![Import connection settings](media/app-connect-app-select-file.png "Import connection settings")
+    ![Import connection settings.](media/app-connect-app-select-file.png "Import connection settings")
 
 1. When the connection settings are successfully loaded, select the **Back** (left arrow) button in the upper-left corner of the page.
 
-    ![Connection settings loaded](media/app-connect-app-settings-loaded.png "Connection settings loaded")
+    ![Connection settings loaded.](media/app-connect-app-settings-loaded.png "Connection settings loaded")
 
 1. If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
 
-    ![Choose certificate prompt on an Android device](media/app-connect-app-choose-cert.png "Choose certificate prompt on an Android device")
+    ![Choose certificate prompt on an Android device.](media/app-connect-app-choose-cert.png "Choose certificate prompt on an Android device")
 
 1. The app connects to your Supply Chain Management server and shows the sign-in page.
 
-    ![Sign-in page](media/app-connect-sign-in.png "Sign-in page")
+    ![Sign-in page.](media/app-connect-sign-in.png "Sign-in page")
 
 ## <a name="config-manually"></a>Manually configure the application
 
@@ -234,11 +234,11 @@ You can manually configure the app on the device so that it connects to the Supp
 1. Go to **Connection settings**.
 1. Set the **Use demo mode** option to _No_.
 
-    ![Demo mode turned off](media/app-connect-app-select-file.png "Demo mode turned off")
+    ![Demo mode turned off.](media/app-connect-app-select-file.png "Demo mode turned off")
 
 1. Tap in the **Select connection** field to expand the settings that are required to manually enter the connection details.
 
-    ![Manual connection fields](media/app-connect-manual-connect.png "Manual connection fields")
+    ![Manual connection fields.](media/app-connect-manual-connect.png "Manual connection fields")
 
 1. Enter the following information:
 

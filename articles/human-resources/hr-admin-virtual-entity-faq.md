@@ -123,7 +123,7 @@ If the **Install virtual table app** action on the **Microsoft Dataverse integra
 
 The installation takes a few minutes. When it completes, the **Finance and Operations Virtual Data Source Configurations** entity is generated in the environment.
 
-![Install the Dynamics 365 HR Virtual Table app from the Power Platform admin center](media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
+![Install the Dynamics 365 HR Virtual Table app from the Power Platform admin center.](media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 
 ### Can I generate virtual tables for HR from my Power Apps environment?
 

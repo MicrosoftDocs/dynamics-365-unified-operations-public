@@ -52,7 +52,7 @@ The **Scheduled work order maintenance jobs** page shows an overview of the work
 
 The following screenshot shows an example of the **Scheduled work order maintenance jobs** page.
 
-![Figure 1](media/07-work-order-scheduling.png)
+![Figure 1.](media/07-work-order-scheduling.png)
 
 
 

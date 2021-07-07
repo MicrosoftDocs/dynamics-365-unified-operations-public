@@ -46,23 +46,23 @@ Schedule an automatic task to clean up your batch job history. We recommend sett
 
 2. In the **Search** bar, enter **Batch job history clean-up**.
 
-   ![Search for batch job history cleanup](media/talent-batch-history-cleanup-search-bar.png)
+   ![Search for batch job history cleanup.](media/talent-batch-history-cleanup-search-bar.png)
 
 3. In **History limit (days)**, enter **30**.
 
-   ![Set history limit to 30](media/talent-batch-history-cleanup-history-limit.png)
+   ![Set history limit to 30.](media/talent-batch-history-cleanup-history-limit.png)
 
 4. Select **Run in the background** and then select **Recurrence**.
 
-   ![Set recurrence](media/talent-batch-history-cleanup-recurrence.png)
+   ![Set recurrence.](media/talent-batch-history-cleanup-recurrence.png)
 
 5. Under **Define recurrence**, set the **Start date** and **Start time** to occur during off-hours or the weekend, and then select **NO END DATE**. 
 
-   ![Define recurrence start date and time](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Define recurrence start date and time.](media/talent-batch-history-cleanup-define-recurrence.png)
 
 6. Under **RECURRENCE PATTERN**, select **Days** and set **REPEAT AFTER SPECIFIED INTERVAL** to **7**.
 
-   ![Set cleanup to repeat weekly](media/talent-batch-history-cleanup-recurrence-pattern.png)
+   ![Set cleanup to repeat weekly.](media/talent-batch-history-cleanup-recurrence-pattern.png)
 
 7. Select **OK**.
 

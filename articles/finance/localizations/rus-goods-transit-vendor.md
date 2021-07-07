@@ -51,7 +51,7 @@ To reflect the goods and materials that are in transit, you can set the kind of 
 8. On the **Matching priority** FastTab, select **Up** or **Down** to change the order of the inventory profile.
 9. Select **Save**, and close the page.
 
-  ![Inventory profiles page](media/goods-in-transit-vendor-01.png)
+  ![Inventory profiles page.](media/goods-in-transit-vendor-01.png)
  
 ## Set up a number sequence for the Counting act (INV-6) report
 
@@ -73,7 +73,7 @@ To reflect the goods and materials that are in transit, you can set the kind of 
 
 7. Select **Save**, and close the page.
 
-  ![Inventory journal names page](media/goods-in-transit-vendor-2.png)
+  ![Inventory journal names page.](media/goods-in-transit-vendor-2.png)
  
 ## Add officials to the Counting act (INV-6) report
 You can specify the company officials who are involved in the item counting process for the **Counting act (INV-6)** report.
@@ -88,7 +88,7 @@ You can specify the company officials who are involved in the item counting proc
 > [!NOTE]
 > By default, the job title is copied from the selected employee's record.
  
-  ![Officials page](media/goods-in-transit-vendor-03.png)
+  ![Officials page.](media/goods-in-transit-vendor-03.png)
  
 7. Select **Save**, and close the page.
 
@@ -104,7 +104,7 @@ You can specify the company officials who are involved in the item counting proc
 > [!NOTE]
 > To make the report reflect the details of shipping and payment documents, on the **Batch number** line, select the **Active** and **Physical inventory** check boxes.
 
-  ![Tracking dimension groups page](media/goods-in-transit-vendor-04.png)
+  ![Tracking dimension groups page.](media/goods-in-transit-vendor-04.png)
  
 7. Select **Save**.
 
@@ -121,7 +121,7 @@ You can specify the company officials who are involved in the item counting proc
 - In the **Kind of activity** field, select **Basic**.
 - In the **Inventory profile** field, select the inventory profile that you created earlier.
  
-  ![Purchase agreements page](media/goods-in-transit-vendor-05.png)
+  ![Purchase agreements page.](media/goods-in-transit-vendor-05.png)
  
 8. On the Action Pane, on the **Purchase agreement** tab, in the **Generate** group, select **Confirmation** to update the status of the purchase agreement to **Effective**.
 
@@ -134,7 +134,7 @@ You can specify the company officials who are involved in the item counting proc
 5. In the **Account** field, select the principal code. The **Name** field is filled in automatically.
 6. In the **Agreement ID** field, select the purchase agreement that you created earlier. In this way, you associate the new owner with the agreement.
 
-  ![Inventory owners page](media/goods-in-transit-vendor-06.png)
+  ![Inventory owners page.](media/goods-in-transit-vendor-06.png)
 
 7. Select **Save**.
 
@@ -148,7 +148,7 @@ You can specify the company officials who are involved in the item counting proc
 2. On the **Line details** FastTab, on the **Product** tab, in the **Tracking dimension** section, validate that the **Inventory profile** field is set to the inventory profile that you created earlier.
 3. In the **Owner** field, select the record that you created earlier.
 
-  ![Purchase order page page](media/goods-in-transit-vendor-07.png)
+  ![Purchase order page page.](media/goods-in-transit-vendor-07.png)
 
 4. Post the invoice in the usual way.
 
@@ -164,14 +164,14 @@ You can use the **Print of counting act (INV-6)** dialog box to generate a **Cou
 > [!NOTE]
 > You can also set the **Batch number** and **Warehouse** options to **Yes**, if those dimensions are applicable.
  
-  ![Dimensions display dialog](media/goods-in-transit-vendor-08.png)
+  ![Dimensions display dialog.](media/goods-in-transit-vendor-08.png)
  
 6. Select **OK** to create an inventory counting journal for the items in the transfer.
 7. On the **Counting** page, in the **Journal lines** FastTab, create a line, and select the item number that you created earlier.
 8. On the **Line details** FastTab, on the **Inventory dimensions** tab, in the **Inventory profile** and **Owner** fields, select the records that you created earlier. The **On-hand** field on the journal line is automatically updated.
 9. On the **Journal lines** FastTab, select **Functions** \> **Create counting list** to create a counting list. For each line, the **Counted** field is updated with the value that is specified in the **On-hand** field.
 
-  ![Counting page](media/goods-in-transit-vendor-09.png)
+  ![Counting page.](media/goods-in-transit-vendor-09.png)
 
 10.	On the Action Pane, select **Print** \> **Counting act (INV-6)** to open the **Print of counting act (INV-6)** dialog box.
 11.	In the **Date of act completion** field, select the date when the counting process is scheduled to be completed.
@@ -182,11 +182,11 @@ You can use the **Print of counting act (INV-6)** dialog box to generate a **Cou
 > [!NOTE]
 > The values in the **Journal**, **Dimension number**, and **Kind of inventory** fields are based on the inventory counting transactions. To change the values of these fields, select **Filter**. For example, you can modify these values to generate the report for a different journal or a different dimension.
 
-  ![Print of counting act (INV-6)](media/goods-in-transit-vendor-10.png)
+  ![Print of counting act (INV-6).](media/goods-in-transit-vendor-10.png)
  
 15.	Select **OK** to generate the **Counting act (INV-6)** report.
 
-  ![Printed Counting act (INV-6) report](media/goods-in-transit-vendor-11.png)
+  ![Printed Counting act (INV-6) report.](media/goods-in-transit-vendor-11.png)
  
 
 

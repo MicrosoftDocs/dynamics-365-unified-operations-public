@@ -58,11 +58,11 @@ Data is generated and flows in a specific direction (either download or upload).
 
 The following illustration shows the various pages in Commerce headquarters and how they are related to each other. (For descriptions of these pages, see the previous section.) CDX data generation can occur only if it's fully configured across all these pages. Data can be downloaded or uploaded. The data synchronization status is viewable on two different pages in Headquarters: Download sessions and Upload sessions. CDX data generation occurs through Headquarters and is synchronized down (download). Modern Point of Sale (POS) transactional data generated while offline requires the data to be synchronized up (upload).
 
-![Commerce Data Exchange association map](./media/CommerceDataExchange-AssociationMap.png)
+![Commerce Data Exchange association map.](./media/CommerceDataExchange-AssociationMap.png)
 
 The following illustration shows the data flows for download and upload. Data packages that are generated through CDX flow downward. A generated data package can apply to the Commerce Scale Unit and to Modern POS offline databases, based on the channel database groups that are configured. Transactional data flows upward from the Modern POS offline databases to the Commerce Scale Unit channel database.  All transactional data stores in the channel database is then uploaded to the Headquarters database.
 
-![Download and upload data flows](./media/CommerceArchitecture-DataSynchronization.jpg)
+![Download and upload data flows.](./media/CommerceArchitecture-DataSynchronization.jpg)
 
 ### Overview of package management
 

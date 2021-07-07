@@ -39,16 +39,14 @@ Manage time-off requests from the **Employee self-service** workspace in Dynamic
 
 3. View and approve your team members' time-off requests as necessary.
 
-## (Preview) Leave request workflow experience enhancements
+## Leave request workflow experience enhancements
 
-[!include [Preview feature](includes/preview-feature.md)]
-
-This preview feature provides the following enhancements:
+This feature provides the following enhancements:
 
 - You can select multiple leave requests and perform the same action on all of them.
 - The ribbon across the top and a new workflow button on the page show the actions you can take on leave requests.
 
-![Manager experience](media/hr-leave-and-absence-manager-experience.png)
+![Manager experience.](media/hr-leave-and-absence-manager-experience.png)
 
 ## See also
 

@@ -17,7 +17,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom: 21311
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -64,7 +64,7 @@ These topics describe dual-write integration.
 
 + [Customize table and column mappings](customizing-mappings.md)
 + [Handling multiple table maps](multiple-entity-maps.md)
-+ [Edit a legal table after dual-write setup](edit-legal-entity.md)
++ [Edit a legal entity after dual-write setup](edit-legal-entity.md)
 + [Error management and alert notifications](errors-and-alerts.md)
 + [Application lifecycle management](app-lifecycle-management.md)
 + [User-specified team owner](user-specified-team-owner.md)

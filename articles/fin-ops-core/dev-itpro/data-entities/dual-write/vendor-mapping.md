@@ -43,11 +43,11 @@ In both approaches, the vendor data is integrated between Dynamics 365 Supply Ch
 
 If you don't want to store vendor data in the **Account/Contact** table in Dataverse, you can use the new vendor design.
 
-![Vendor data flow](media/dual-write-vendor-data-flow.png)
+![Vendor data flow.](media/dual-write-vendor-data-flow.png)
 
 If you want to continue to store vendor data in the **Account/Contact** table, you can use the extended vendor design. To use the extended vendor design, you must configure the vendor workflows in the dual-write solution package. For more information, see [Switch between vendor designs](vendor-switch.md).
 
-![Extended vendor data flow](media/dual-write-vendor-detail.jpg)
+![Extended vendor data flow.](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
 > If you're using Power Apps portals for self-service vendors, the vendor information can flow directly to Finance and Operations apps.

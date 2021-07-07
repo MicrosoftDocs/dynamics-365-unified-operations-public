@@ -34,7 +34,7 @@ When this feature is turned on, the following changes occur:
 
 - On the **Active periods for batch jobs** page, a **Timezone** field is added for each active period. This field specifies the time zone that the active period uses. By default, every active period initially uses the Coordinated Universal Time (UTC) time zone.
 
-    ![Timezone field on the Active periods for batch jobs page](./media/active-periods-dst.png)
+    ![Timezone field on the Active periods for batch jobs page.](./media/active-periods-dst.png)
 
 - The start and end times of existing active periods are adjusted according to the UTC time zone. 'Although the active periods will continue to start and end at the same times that they previously started and ended, the times that are shown might change if the user's preferred time zone isn't UTC.
 - Active periods will follow the DST adjustments of the time zones that they are associated with.

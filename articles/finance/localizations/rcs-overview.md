@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 97423
+ms.custom: ["97423", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -45,7 +45,7 @@ RCS provides the following capabilities:
 
 You can sign up for or sign in to RCS from the [Regulatory Configuration Service page](https://marketing.configure.global.dynamics.com/).
 
-![RCS sign-up/sign-in](media/202103_RCS%20Marketing%20page_updated_1.jpg)
+![RCS sign-up/sign-in.](media/202103_RCS%20Marketing%20page_updated_1.jpg)
 
 On the **Regulatory Configuration Service** page, review and accept the supplemental terms and conditions for use of the service, and then select one of the following buttons:
 
@@ -95,7 +95,7 @@ For more information about related components, see the following topics:
 
 When you sign up for RCS from the service page, you might encounter an issue that is related to Azure Active Directory (Azure AD). The error message that you receive indicates that sign-up for RCS is currently turned off and must be turned on before you can complete the sign-up process.
 
-![RCS sign-up error message](media/01_RCSSignUpError.jpg)
+![RCS sign-up error message.](media/01_RCSSignUpError.jpg)
 
 The issue occurs because you're blocked from signing up for ad-hoc subscriptions, and the `AllowAdHocSubscriptions` property must be enabled in your tenant. 
 

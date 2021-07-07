@@ -48,7 +48,7 @@ The EM functionality is based on the following entities:
 
 The following illustration shows the flow of data for EM.
 
-![Electronic messaging data flow](media/electronic-messaging-data-flow.png)
+![Electronic messaging data flow.](media/electronic-messaging-data-flow.png)
 
 ## Scenarios supported by the EM functionality
 
@@ -85,3 +85,7 @@ The following table provides information about some country-specific regulatory 
 | Russia      | [Assessed tax declaration](../localizations/rus-assessed-tax-declaration.md) | |
 | Russia      | [Transport tax declaration](../localizations/rus-transport-tax-declaration.md) | |
 | Russia      | [Land tax declaration](../localizations/rus-land-tax-declaration.md) | |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

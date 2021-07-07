@@ -37,15 +37,15 @@ When a business ecosystem is made up of Dynamics 365 applications, such as Finan
 
 Here is the product data model from Sales.
 
-![Data model for products in CE](media/dual-write-product-4.jpg)
+![Data model for products in CE.](media/dual-write-product-4.jpg)
 
 Here is the product data model from Finance and Operations apps.
 
-![Data model for products in Finance and Operations](media/dual-write-products-5.jpg)
+![Data model for products in Finance and Operations.](media/dual-write-products-5.jpg)
 
 These two product data models have been integrated in Dataverse as shown below.
 
-![Data model for products in Dynamics 365 apps](media/dual-write-products-6.jpg)
+![Data model for products in Dynamics 365 apps.](media/dual-write-products-6.jpg)
 
 The dual-write table maps for products have been designed to flow data one-way only, in near-real time from Finance and Operations apps to Dataverse. However, the product infrastructure has been made open to make it bi-directional if required. Although you can customize it, it's at your own risk, as Microsoft does not recommend this approach.
 
@@ -90,7 +90,7 @@ Because the product is represented as a SKU, the concepts of distinct products, 
 - **Product masters** are used as generic products that hold the definition and rules that determine the behavior in business processes. Based on these definitions, distinct products that are known as product variants can be generated. For example, T-shirt is the product master, and it can have Color and Size as dimensions. Variants can be released that have different combinations of these dimensions, such a small blue T-shirt or a medium green T-shirt. In the integration, one row per variant is created in the product table. This row contains the variant-specific information, such as the different dimensions. The generic information for the product is stored in the **msdyn\_sharedproductdetails** table. (This generic information is held in the product master.) The product master information is synced to Dataverse as soon as the released product master is created (but before variants are released).
 - **Distinct products** refer to all the products subtype product and all the product variants. 
 
-![Data model for products](media/dual-write-product.png)
+![Data model for products.](media/dual-write-product.png)
 
 With the dual-write functionality enabled, the products from Finance and Operations will be synchronized in other Dynamics 365 products in **Draft** state. They are added to the first price list with the same currency. In other words, they are added to the first price list in a Dynamics 365 app that matches the currency of your legal table where the product is released in a Finance and Operations app. If there is no price list for the given currency, a price list will automatically be created and the product will be assigned to it. 
 
@@ -116,7 +116,7 @@ The synchronization of products happens from the Finance and Operations app to D
 
 Product dimensions are characteristics that identify a product variant. The four product dimensions (Color, Size, Style, and Configuration) are also mapped to Dataverse to define the product variants. The following illustration shows the data model for the product dimension Color. The same model is applied to Sizes, Styles and Configurations. 
 
-![Data model for product dimensions](media/dual-write-product-two.png)
+![Data model for product dimensions.](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -128,7 +128,7 @@ Product dimensions are characteristics that identify a product variant. The four
 
 When a product has different product dimensions (for example, a product master has Size and Color as product dimensions), each distinct product (that is, each product variant) is defined as a combination of those product dimensions. For example, product number B0001 is an extra-small black T-shirt, and product number B0002 is a small black T-shirt. In this case, the existing combinations of product dimensions are defined. For example, the T-shirt from the preceding example can be extra-small and black, small and black, medium and black, or large and black, but it can't be extra-large and black. In other words, the product dimensions that a product master can take are specified, and variants can be released based on these values.
 
-To keep track of the product dimensions that a product master can take, the following tables are created and mapped in Dataverse for each product dimension. For more information, see [Product information overview]../../../supply-chain/pim/product-information.md).
+To keep track of the product dimensions that a product master can take, the following tables are created and mapped in Dataverse for each product dimension. For more information, see [Product information overview](../../../../supply-chain/pim/product-information.md). 
 
 [!include [product colors](includes/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 
@@ -152,7 +152,7 @@ Default order settings define the site and warehouse where items will be sourced
 
 The units of measure and its respective conversion are available in the Dataverse following the data model shown in the diagram.
 
-![Data model for unit of measure](media/dual-write-product-three.png)
+![Data model for unit of measure.](media/dual-write-product-three.png)
 
 The unit of measure concept is integrated between Finance and Operations apps and other Dynamics 365 apps. For each unit class in a Finance and Operations app, a unit group is created in a Dynamics 365 app, which contains the units belonging to the unit class. A default base unit is also created for every unit group. 
 

@@ -17,7 +17,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 6154
+ms.custom: ["6154", "intro-internal"]
 ms.assetid: ejchoGIT
 ms.search.region: Global
 # ms.search.industry: 
@@ -37,7 +37,7 @@ DTS uses a machine translation (MT) system that is custom-trained for [Microsoft
 
 The following illustration shows, at a high level, how the service works.
 
-![How DTS works](./media/dts-overview.png "How DTS works")
+![How DTS works.](./media/dts-overview.png "How DTS works")
 
 ## Recycling existing translations
 Existing linguistic assets can be recycled only when the assets are uploaded in a zip file that contains translation memory (TM) files that use Localization Interchange File Format (XLIFF). For more information, see [Translation memory files](./use-translation-service-tm.md).
@@ -76,7 +76,7 @@ This option is convenient when you work on multiple product translation projects
 
 The following illustration shows an example of the DTS dashboard that you open from the LCS home page.
 
-![DTS dashboard that is opened from the LCS home page](./media/dts-home-dashboard.png "DTS dashboard that is opened from the LCS home page")
+![DTS dashboard that is opened from the LCS home page.](./media/dts-home-dashboard.png "DTS dashboard that is opened from the LCS home page")
 
 Because an LCS project is always tied to a product, any translation request that you submit from a project automatically carries the product type and version information from the project. You can't select a different product for the request.
 
@@ -84,7 +84,7 @@ In an LCS project, the project owner and the users will have permission to acces
 
 The following illustration shows an example of the DTS dashboard that you open from within an LCS project.
 
-![DTS dashboard that is opened from within a project](./media/dts-project-dashboard.png "DTS dashboard that is opened from within a project")
+![DTS dashboard that is opened from within a project.](./media/dts-project-dashboard.png "DTS dashboard that is opened from within a project")
 
 ## Glossary
 

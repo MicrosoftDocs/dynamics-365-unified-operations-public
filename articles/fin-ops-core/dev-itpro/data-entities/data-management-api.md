@@ -447,11 +447,11 @@ BODY
 
 The following illustration shows how the Data management package methods can be used to import data packages.
 
-![Data package file import that uses the Data management package methods](./media/data-package-import.png)
+![Data package file import that uses the Data management package methods.](./media/data-package-import.png)
 
 The following illustration shows how the Data management package methods can be used to export data packages.
 
-![Data package file export that uses the Data management package methods](./media/data-package-export.png)
+![Data package file export that uses the Data management package methods.](./media/data-package-export.png)
 
 A sample console application that showcases the data import and data export methods is available on GitHub. For more information, go to <https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/FileBasedIntegrationSamples/ConsoleAppSamples>.
 

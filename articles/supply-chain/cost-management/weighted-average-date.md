@@ -44,7 +44,7 @@ Weighted average = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2
 
 During inventory close, the calculation is performed every day through the closing period, as shown in the following illustration. 
 
-![Weighted average date daily calculation model](./media/weightedaveragedatedailycalculationmodel.gif) 
+![Weighted average date daily calculation model.](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 Inventory transactions that leave the inventory, such as sales orders, inventory journals, and production orders, occur at an estimated cost price on the date of posting. This estimated cost price is also referred to as the running average cost price. On the date of inventory close, the system analyzes the inventory transactions for previous periods, previous days, and the current day. This analysis is used to determine which of the following closing principles should be used:
 
@@ -77,7 +77,7 @@ The following illustration shows these transactions:
 -   2b. Inventory financial issue is updated for a quantity of 2 at a cost of USD 10.00 each.
 -   3. Inventory close is performed by using the direct settlement method to settle the inventory financial receipt to the inventory financial issue.
 
-![Weighted average date direct settlement without the Include physical value option](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![Weighted average date direct settlement without the Include physical value option.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Key to the illustration:**
 
@@ -131,7 +131,7 @@ The system generates and posts the summarized inventory transfer transaction. Ad
 
 The following illustration shows this series of transactions, and the effects of using the weighted average inventory model and the summarized settlement principle, but without using the **Include physical value** option. 
 
-![Weighted average date summarized settlement without the Include physical value option](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Weighted average date summarized settlement without the Include physical value option.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Key to the illustration**
 
@@ -180,7 +180,7 @@ You can mark an issue transaction to a receipt before the transaction is posted.
 
 The new running average cost price reflects the average of the financially and physically updated transactions at USD 27.50. The following illustration shows this series of transactions, and the effects of using the weighted average date inventory model and marking.
 
-![Weighted average date with marking](./media/weightedaveragedatewithmarking.gif) 
+![Weighted average date with marking.](./media/weightedaveragedatewithmarking.gif) 
 
 **Key to the illustration:**
 

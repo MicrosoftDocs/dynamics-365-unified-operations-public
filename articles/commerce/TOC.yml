@@ -1246,6 +1246,16 @@
           href: localizations/latam-bra-commerce-localization.md
         - name: Set up and deploy Commerce localization for Brazil
           href: localizations/latam-bra-deployment.md
+        - name: NFC-e fiscal document functionality in Commerce POS for Brazil
+          href: localizations/latam-bra-nfce.md 
+        - name: Manage customer information in POS for Brazil
+          href: localizations/latam-bra-customer-information.md     
+        - name: Cancellation and return of NFC-e documents in Commerce POS for Brazil
+          href: localizations/latam-bra-nfce-cancel-return.md 
+        - name: Postponed registration of NFC-e documents issued in offline contingency mode
+          href: localizations/latam-bra-nfce-contingency-mode.md          
+        - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters 
+          href: localizations/latam-bra-retail-statements.md
       - name: Eastern Europe
         items: 
         - name: Common
@@ -1304,6 +1314,10 @@
           href: localizations/emea-nor-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/emea-nor-loc-deployment-guidelines.md
+      - name: Russia
+        items:
+        - name: Commerce localization for Russia
+          href: localizations/rus-commerce-localization.md   
       - name: Sweden
         items:
         - name: Cash register functionality
@@ -2136,6 +2150,8 @@
             href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/commerce/toc.json
           - name: Configure approval steps
             href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/commerce/toc.json
+          - name: Configure expenditure reviewers
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/commerce/toc.json
           - name: Configure manual decisions
             href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/commerce/toc.json
           - name: Configure conditional decisions

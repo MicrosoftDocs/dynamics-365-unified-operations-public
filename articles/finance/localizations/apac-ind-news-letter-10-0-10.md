@@ -45,7 +45,7 @@ Complete the following steps to update the over delivery quantity.
 1. On the **Invoice registration** page, in the **Overview** pane, in the **Import invoice number** field, select the invoice you want to update.
 2. In the **Lines** pane, in the **Receive** field, update the quantity.
 
-![Invoice registration page](media/GST-over-delivery-1-10-0-10.PNG )
+![Invoice registration page.](media/GST-over-delivery-1-10-0-10.PNG )
 
 ### TDS on foreign vendor transactions
 TDS on a foreign vendor invoice results in a voucher imbalance error because the transactions on voucher do not balance. 
@@ -58,7 +58,7 @@ As per rule 26 of Income tax act, TDS on a foreign currency transaction is conve
 
 You can set up the **TDS exchange rate** as **TDS** and the **Accounting currency exchange rate type** as **Default** on the **Ledger** page.
 
-![Ledger page, Currency FastTab](media/GST-tds-exchange-rate-2-10-0-10.png )
+![Ledger page, Currency FastTab.](media/GST-tds-exchange-rate-2-10-0-10.png )
 
 **Accounting entries**
 

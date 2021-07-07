@@ -56,18 +56,18 @@ Follow these steps to turn on this feature for all legal entities.
 
 1. In the **Business document management** workspace, select **New document**.
 
-    ![Business document management workspace](./media/BDM_overview_new_template1.png)
+    ![Business document management workspace.](./media/BDM_overview_new_template1.png)
 
 2. On the **Select** tab, select the document to use as a template, and then select **Create document**.
 
-    ![Business documents dialog box](./media/BDM_overview_new_template2.png)
+    ![Business documents dialog box.](./media/BDM_overview_new_template2.png)
 
 3. In the new dialog box, in the **Title** field, change the title as you require. The title text is used to name the new ER format configuration that is automatically created. The draft version of this configuration (**Customer FTI report (GER) Copy**) will contain the edited template and will be used to run this ER format for the current user. The original template from the base ER format configuration will be used to run this ER format for every other user.
 4. In the **Name** field, change the name of the first revision of the editable template that will be automatically created.
 5. In the **Comment** field, update the remarks for the revision of the editable template that will be automatically created.
 6. Select **OK** to confirm the start of the editing process.
 
-    ![Document creation dialog box](./media/BDM_overview_new_template3.png)
+    ![Document creation dialog box.](./media/BDM_overview_new_template3.png)
 
 The **New document** button is used to create and edit a template in an ER format configuration that is provided by another provider. In this example, the provider is Microsoft. When you select **New document**, you can view all the templates that are owned by current and other providers. After you select the template, it's opened for editing. The edited template will then be stored in a new ER format configuration that is automatically generated.
 
@@ -76,16 +76,16 @@ Follow these steps to provide required information before you upload a template.
 
 1. In the **Business document management** workspace, select **New document**.
 
-    ![Business document management workspace](./media/BDM_overview_new_template1.png)
+    ![Business document management workspace.](./media/BDM_overview_new_template1.png)
     
 2. On the **Create a new template** page, on the **Upload** tab, on the **Template** tab, select **Browse** to find and select the Excel file that you want to use as a template. In the **Template** section, the **Title** and **Description** fields are automatically filled in. They specify the name and description of the new ER format configuration that is automatically created. You can edit these fields as you require.
 3. In the **Document Type** section, in the **Name** field, specify the type of business document. This value will be used to search the correct data source (that is, the ER model configuration).
 
-    ![Template tab](./media/BDM_overview_new_UI_import_21.jpg)
+    ![Template tab.](./media/BDM_overview_new_UI_import_21.jpg)
 
 4. On the **Data source** tab, on the **Filter** FastTab, select **Apply filter**. In the **Data source** section, the **Name** field is automatically filled in, or you can manually select a value. You can use the filter to search for the appropriate data source name by name, description, country/region code, and business document type.
 
-    ![Data source tab](./media/BDM_overview_new_UI_import_31.jpg)
+    ![Data source tab.](./media/BDM_overview_new_UI_import_31.jpg)
     
     > [!NOTE]
     > The **Filter** FastTab is used to search the correct data source (that is, the ER model configuration). You can edit all filter fields to find the most appropriate data source for the document that you're uploading.
@@ -94,7 +94,7 @@ Follow these steps to provide required information before you upload a template.
     
 5. On the **Mapping** tab, select **Auto detect**. The **Root definition** field is automatically filled in, or you can manually select a value. This tab shows the end mapping for the elements from the template and the model.
 
-    ![Mapping tab](./media/BDM_overview_new_UI_import_41.jpg)
+    ![Mapping tab.](./media/BDM_overview_new_UI_import_41.jpg)
     
    > [!NOTE]
    > The mapping in the **Template structure** section uses the full match of the labels or descriptions in the data source in the user's language, and in the cell name in the template.
@@ -107,11 +107,11 @@ If there isn't a provider in Electronic reporting, you can create one. If there'
 
 - To create a provider, change the name of the provider in the **Name** field, update the internet address of the new provider in the **Internet address** field, and select **OK** to confirm.
 
-    ![Create new provider in BDM](./media/bdm_create_provider.png)
+    ![Create new provider in BDM.](./media/bdm_create_provider.png)
     
 - To activate existing provider, choose the name of the provider in the **Configuration provider** field, and select **OK** to set provider as active.
 
-    ![Activate provider in BDM](./media/bdm_choose_provider.png)
+    ![Activate provider in BDM.](./media/bdm_choose_provider.png)
 
 > [!NOTE]
 > Each BDM template refers to the provider as the author of the configuration. This is why an active provider is required for the template.

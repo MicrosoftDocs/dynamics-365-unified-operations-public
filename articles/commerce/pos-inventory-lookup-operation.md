@@ -49,7 +49,10 @@ For an individual product, the inventory lookup operation provides an inventory 
 
 The list view of locations includes all stores and warehouses that are configured in the fulfillment groups that the current store is linked to, as shown in the following example image.
 
-![Inventory lookup operation list view](media/inventory-lookup-list-view.png)
+![Inventory lookup operation list view.](media/inventory-lookup-list-view.png)
+
+> [!NOTE]
+> Make sure your current store is included in the associated fulfillment groups.
 
 The following actions are available on the POS app bar:
 
@@ -69,7 +72,7 @@ The following actions are available on the POS app bar:
 - **Add to transaction** - This action adds the product to the cart and redirects the user to the transaction screen.
 
 > [!NOTE]
-> For a location-based sort, the distance between a location and current store is determined by the coordinates (latitude and longitude) defined in Commerce headquarters. For a store, the location information is defined in the primary address of the operating unit associated with the store. For a non-store warehouse, the location information is defined in the warehouse address. If the current store doesn't have coordinates properly defined, the location-based sort option will display the current store at the top of the list and then sort other locations by name.
+> For a location-based sort, the distance between a location and current store is determined by the coordinates (latitude and longitude) defined in Commerce headquarters. For a store, the location information is defined in the primary address of the operating unit associated with the store. For a non-store warehouse, the location information is defined in the warehouse address. If the current store doesn't have coordinates defined, the location-based sort option will display the current store at the top of the list and then sort other locations by name.
 
 > [!NOTE]
 > The **Show store availability**, **Show store location**, **Pick up in store**, and **Ship product** actions are not available for non-store locations.
@@ -80,7 +83,7 @@ For a master product with variants, the inventory lookup operation also provides
 
 The following example image shows the inventory lookup matrix view in POS.
 
-![Inventory lookup operation matrix view](media/inventory-lookup-matrix-view.png)
+![Inventory lookup operation matrix view.](media/inventory-lookup-matrix-view.png)
 
 In the matrix view, each cell represents an individual variant, and displays an on-hand inventory (available physical) value in the lower-right corner, as well as **reserved** (physical reserved) and **ordered** (ordered in total) values in the upper-left corner. The following table explains the meaning of the various on-hand values.
 
@@ -107,7 +110,7 @@ POS users can access the inventory lookup operation from other pages in POS.
 
 The following example image shows inventory lookup results from a PDP in POS.
 
-![Inventory lookup from product details page](media/inventory-lookup-from-product-details-page.png)
+![Inventory lookup from product details page.](media/inventory-lookup-from-product-details-page.png)
 
 On the PDP of a master product, you can use the **View all variants** action on the app bar to launch the inventory lookup matrix view that displays inventory availability information for the current store for all variants of a product. For an individual product, the PDP displays the on-hand inventory (available physical) value of that product for the current store. Additionally, you can select the **Other stores inventory** link to launch the inventory lookup operation to check the inventory availability of a product across other stores or warehouses.
 

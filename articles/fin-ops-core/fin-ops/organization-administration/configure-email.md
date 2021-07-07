@@ -4,7 +4,7 @@
 title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: jasongre
-ms.date: 06/10/2021
+ms.date: 06/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -267,7 +267,9 @@ The **Email parameters** page allows an administrator to select **Exchange** as 
 If troubleshooting is needed, ensure that it’s possible to sign in to the current user's account and that emails can be sent from that account to the intended recipients.
 
 > [!IMPORTANT]
-> The Exchange mail provider is not supported for external users, as those users will not have Exchange accounts on that tenant
+> The Exchange mail provider is: 
+> -  Not supported for external users, as those users will not have Exchange accounts on the system tenant.
+> -  Only available in Microsoft-managed environments.
 
 ## Troubleshooting
 

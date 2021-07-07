@@ -93,7 +93,7 @@ Modules that show images, such as the [content block module](../add-hero-module.
 
 The following illustration image shows an example where the **Disable Lazy Load** option is selected for a content block module in Commerce site builder.
 
-![Disable lazy load option selected in Commerce site builder](media/best-practices-dev-1.png)
+![Disable lazy load option selected in Commerce site builder.](media/best-practices-dev-1.png)
 
 ## Enable lazy loading for a product collection module
 
@@ -101,7 +101,7 @@ The data action calls for the [product collection module](../product-collection-
 
 The following illustration shows an example where the **Enable module lazy load** option is selected for a product collection module in Commerce site builder.
 
-![Enable module lazy load option selected in Commerce site builder](media/best-practices-dev-2.png)
+![Enable module lazy load option selected in Commerce site builder.](media/best-practices-dev-2.png)
 
 ## Cache configuration
 

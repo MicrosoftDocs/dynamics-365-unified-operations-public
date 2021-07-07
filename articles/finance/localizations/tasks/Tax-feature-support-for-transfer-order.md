@@ -44,7 +44,7 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
 
 1. On the **Tax features** page, on the **Versions** tab, select the draft feature version, and then select **Edit**.
 
-    ![Selecting Edit](../media/tax-feature-support-01.png)
+    ![Selecting Edit.](../media/tax-feature-support-01.png)
 
 2. On the **Tax features setup** page, on the **Tax codes** tab, select **Add** to create new tax codes. For this example, three tax codes are created: **NL-Exempt**, **BE-RC-21**, and **BE-RC+21**.
 
@@ -57,7 +57,7 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         4. Select **Add** in the **Rate** table.
         5. Swtich **Is Exempt** to **Yes** in the **General** section.
 
-        ![NL-Exempt tax code](../media/tax-feature-support-02.png)
+        ![NL-Exempt tax code.](../media/tax-feature-support-02.png)
 
     - When a transfer order is received at a Belgium warehouse, the reverse charge mechanism is applied by using the **BE-RC-21** and **BE-RC+21** tax codes.
         
@@ -70,7 +70,7 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         6. Swtich **Is Reverse Charge** to **Yes** in the **General** section.
         7. Select **Save**.
 
-        ![BE-RC-21 tax code for reverse charges](../media/tax-feature-support-03.png)
+        ![BE-RC-21 tax code for reverse charges.](../media/tax-feature-support-03.png)
         
         Create the tax code **BE-RC+21**.
         1. Select **Add**, enter **BE-RC-21** in the **Tax code** field.
@@ -80,7 +80,7 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         5. Enter **21** in the **Tax Rate** field.
         6. Select **Save**.
 
-        ![BE-RC+21 tax code for reverse charges](../media/tax-feature-support-04.png)
+        ![BE-RC+21 tax code for reverse charges.](../media/tax-feature-support-04.png)
 
 3. Define the applicability of the tax codes.
 
@@ -109,11 +109,11 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         6. In the **Tax codes** field, select **BE-RC+21** and **BE-RC-21**.
         7. In the **Tax Group** field and the **Item Tax Group**, enter the related sales tax group and item sales tax group which are defined in your Finance system.
 
-        ![Applicability rules](../media/image5.png)
+        ![Applicability rules.](../media/image5.png)
 
 4. Complete and publish the new tax feature version.
 
-    [![Changing the status of the new version](../media/image6.png)](../media/image6.png)
+    [![Changing the status of the new version.](../media/image6.png)](../media/image6.png)
 
 ## Set up Finance for transfer order transactions
 
@@ -125,7 +125,7 @@ Follow these steps to enable and set up taxes for transfer orders.
     > [!IMPORTANT]
     > The **Tax in transfer order** feature is fully dependent on the tax service. Therefore, it can be turned on only after you've installed the tax service.
 
-    ![Tax in transfer order feature](../media/image7.png)
+    ![Tax in transfer order feature.](../media/image7.png)
 
 3. Enable the tax service, and select the **Inventory** business process.
 
@@ -135,11 +135,11 @@ Follow these steps to enable and set up taxes for transfer orders.
     1. Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax service setup**.
     2. In the **Business process** field, select **Inventory**.
 
-    ![Setting the Business process field](../media/image8.png)
+    ![Setting the Business process field.](../media/image8.png)
 
 4. Verify that the reverse charge mechanism is set up. Go to **General ledger** \> **Setup** \> **Parameters**, and then, on the **Reverse charge** tab, verify that the **Enable reverse charge** option is set to **Yes**.
 
-    ![Enable reverse charge option](../media/image9.png)
+    ![Enable reverse charge option.](../media/image9.png)
 
 5. Verify that the related tax codes, tax groups, item tax groups, and VAT registration numbers have been set up in Finance according to the tax service guidance.
 6. Set up an interim transit account. This step is required only when the tax that is applied to a transfer order isn't applicable to a tax exempted or reverse charge mechanism.
@@ -147,7 +147,7 @@ Follow these steps to enable and set up taxes for transfer orders.
     1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Ledger posting groups**.
     2. In the **Interim transit** field, select a ledger account.
 
-    ![Selecting an interim transit account](../media/image10.png)
+    ![Selecting an interim transit account.](../media/image10.png)
 
 ## Set up basic inventory for transfer order transactions
 
@@ -162,7 +162,7 @@ Follow these steps to set up basic inventory to enable transfer order transactio
     > [!NOTE]
     > One of the sites that you create should be named **Transit**. In later steps of this procedure, you will assign this site to the transit warehouse, so that tax-related inventory vouchers can be posted in "ship" and "receive" transactions for transfer orders. The address of the transit site is irrelevant to tax calculation. Therefore, you can leave it blank.
 
-    ![Setting up sites](../media/image11.png)
+    ![Setting up sites.](../media/image11.png)
 
 2. Create ship-from, transit, and ship-to warehouses. Any address information that is maintained in a warehouse will override the site address during tax calculation.
 
@@ -170,24 +170,24 @@ Follow these steps to set up basic inventory to enable transfer order transactio
     2. Select **New** to create a warehouse, and assign it to the corresponding site.
     3. Repeat step 2 to create a warehouse for each site as required.
 
-    ![Setting up warehouses](../media/image12.png)
+    ![Setting up warehouses.](../media/image12.png)
 
     > [!NOTE]
     > For a ship-from warehouse, a transit warehouse must be selected in the **Transit warehouse** field for transfer order transactions.
     >
-    > ![Selecting a transit warehouse](../media/image13.png)
+    > ![Selecting a transit warehouse.](../media/image13.png)
 
 3. Verify that the inventory posting configuration is set up for transfer order transactions.
 
     1. Go to **Inventory management** \> **Setup** \> **Posting** \> **Posting**.
     2. On the **Inventory** tab, verify that a ledger account is set up for both **Inventory issue** and **Inventory receipt** posting.
 
-        ![Setting up Inventory issue and Inventory receipt posting](../media/image14.png)
+        ![Setting up Inventory issue and Inventory receipt posting.](../media/image14.png)
 
     3. Verify that a ledger account is set up for **Inter-unit payable** posting.
 
-        ![Setting up Inter-unit payable posting](../media/image15.png)
+        ![Setting up Inter-unit payable posting.](../media/image15.png)
 
     4. Verify that a ledger account is set up for **Inter-unit receivable** posting.
 
-        ![Setting up Inter-unit receivable posting](../media/image16.png)
+        ![Setting up Inter-unit receivable posting.](../media/image16.png)

@@ -33,7 +33,7 @@ This integration supports purchase order creation and, in most cases, updates fr
 
 The following illustration shows the tables in both systems and how they are mapped to each other. Purchase orders in Field Service reference an *account* row, whereas purchase orders in Supply Chain Management reference a *vendor* row. To resolve the integration, dual-write uses a reference to link *vendor* rows with *account* rows. For more information, see [Integrated vendor master](vendor-mapping.md).
 
-![Mappings for procurement](media/scm-field-service-tables.png)
+![Mappings for procurement.](media/scm-field-service-tables.png)
 
 ## Prerequisites
 

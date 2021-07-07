@@ -50,7 +50,7 @@ By itself, a price group is just a name, a description, and, optionally, a prici
 
 The following illustration shows how price groups are used. In this illustration, notice that "Price group" is literally at the center of pricing and discount management. The commerce entities that you can use to manage differential prices and discounts are on the left, and the actual price and discount records are on the right.
 
-![Price groups](./media/PriceGroups.png "Price groups")
+![Price groups.](./media/PriceGroups.png "Price groups")
 
 When you create price groups, you should not use a single price group for multiple types of commerce entities. Otherwise, it can be difficult to determine why a specific price or discount is being applied to a transaction.
 

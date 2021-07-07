@@ -18,7 +18,7 @@ audience: Application User
 ms.reviewer: roschlom
 
 # ms.tgt_pltfrm: 
-ms.custom: 4464
+ms.custom: ["4464", "intro-internal"]
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 

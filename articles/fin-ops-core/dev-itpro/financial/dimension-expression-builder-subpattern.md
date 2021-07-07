@@ -39,7 +39,7 @@ The Dimension Expression Builder pattern is used when you have a group or tab pa
 
 ## Wireframe
 
-[![Wireframe for container](media/dimensionexpressionbuilderwireframe.png)](./media/dimensionexpressionbuilderwireframe.png)
+[![Wireframe for container.](media/dimensionexpressionbuilderwireframe.png)](./media/dimensionexpressionbuilderwireframe.png)
 
 ## Model
 ### High-level structure
@@ -62,7 +62,7 @@ Dimension Expression Builder
 None
 
 ## Examples
-Form: **BudgetControlConfiguration (RulesDetailsCriteriaFastTabPage)** (**Budgeting** &gt; **Setup** &gt; **Budget control** &gt; **Budget control configuration**) [![Example of form](media/dimensionexpressionbuilderexample.png)](./media/dimensionexpressionbuilderexample.png)
+Form: **BudgetControlConfiguration (RulesDetailsCriteriaFastTabPage)** (**Budgeting** &gt; **Setup** &gt; **Budget control** &gt; **Budget control configuration**) [![Example of form.](media/dimensionexpressionbuilderexample.png)](./media/dimensionexpressionbuilderexample.png)
 
 ## Appendix
 ### Frequently asked questions

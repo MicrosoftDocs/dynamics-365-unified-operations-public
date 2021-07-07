@@ -38,12 +38,12 @@ You can create a new component with pre-defined rules that support GST behaviors
 reverse charge for purchases and sales. With this feature, you do not need to create a tax component, which includes adding tax measures, configuring the tax calculation formula, and configuring a tax posting profile. 
 
 You can enable the feature in **Feature management** workspace. The feature name is **Enable creating tax component with pre-defined rules**.
- ![Feature management, Enable creating tax component with pre-defined rules](media/GST-tax-component-pre-defined-rule-1-10-0-07.png )
+ ![Feature management, Enable creating tax component with pre-defined rules.](media/GST-tax-component-pre-defined-rule-1-10-0-07.png )
  
  With the feature enabled, there are several controls enabled in the dialog box. You can use them to control the behavior 
  of the tax component. For more information, see [Create tax components](tax-engine-create-tax-component.md).
  
- ![Tax component pane](media/GST-Tax-component-pre-defined-2-10-0-07.PNG )
+ ![Tax component pane.](media/GST-Tax-component-pre-defined-2-10-0-07.PNG )
  
 ## Critical fixes 
 

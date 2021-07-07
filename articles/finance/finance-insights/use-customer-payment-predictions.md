@@ -42,13 +42,13 @@ The **Manage customer credit and collections** workspace includes two new tiles,
 - The **Payment prediction per transaction** tile shows the number of open customer transactions that have a probability of payment that is less than 50 percent in the **On time** bucket. You can select this tile to open the **Payment predictions per transaction** list page.
 - The **Customers with predicted high late balances** tile shows the number of customers for which more than half (50 percent) of the total balance is predicted to be paid late and/or very late. You can select this tile to open the **Payment prediction per customer** list page.
 
-[![Manage customer credit and collections workspace](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
+[![Manage customer credit and collections workspace.](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
 
 ### Payment predictions per transaction list page
 
 On the **Payment predictions per transaction** list page, you can view the probability of payment for open transactions in the **On time**, **Late**, and **Very late** buckets. For each transaction in the grid, the **On time probability** column shows the probability that the invoice will be paid on or before the due date. If the probability of an on-time payment is less than 50 percent, a red circle appears next to the percentage in the **On time probability** column to indicate the risk of late payment.
 
-[![Payment prediction per transaction page](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
+[![Payment prediction per transaction page.](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
 
 The **Related information** pane on the right side of the page shows more details about the predictions:
 
@@ -58,13 +58,13 @@ The **Related information** pane on the right side of the page shows more detail
 
 The data in the **Top factors** section, and on the **Customer insights** and **Customer history** FastTabs, helps explain the payment predictions. It can help increase your confidence in the efficacy of the predictions.
 
-[![Graphical indicators for payment predictions in the Related information pane](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
+[![Graphical indicators for payment predictions in the Related information pane.](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
 ### Payment prediction per customer list page
 
 The **Payment prediction per customer** list page shows the total open balance, and the amount that is predicted to be paid in the **On time**, **Late** and **Very late** buckets.
 
-[![Payment predictions per customer page](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
+[![Payment predictions per customer page.](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
 The payment amount in each bucket is calculated as the sum of the weighted average of the transaction balance. This amount is calculated based on the payment probabilities in each bucket.
 
@@ -96,11 +96,11 @@ The data in the **Top factors** section, and on the **Customer insights** and **
 
 You can view the accuracy of payment predictions by going to **Credit and collections \> Setup \> Finance insights \> Finance insights parameters**. On the **Customer payment insights** tab, the **Prediction model** section shows the accuracy of the prediction model as a percentage.
 
-[![Accuracy of payment predictions](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
+[![Accuracy of payment predictions.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
 If you aren't satisfied with the accuracy, select the **Improve model accuracy** link to open the AI Builder extension experience. In the AI Builder extension experience, you can select or cancel the selection of fields until you've selected the fields that you believe are most important for accurately predicting payment probabilities. When you've finished, you can easily retrain the prediction model and publish your changes. The newly trained prediction model will automatically be picked up for predictions in Dynamics 365 Finance.
 
-[![AI Builder extension experience](./media/ai-builder.png)](./media/ai-builder.png)
+[![AI Builder extension experience.](./media/ai-builder.png)](./media/ai-builder.png)
 
 ## Release details
 

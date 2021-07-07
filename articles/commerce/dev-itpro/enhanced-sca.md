@@ -83,7 +83,7 @@ To enable the enhanced payments feature in Commerce site builder, follow these s
 3. Scroll down to **Cart and checkout**, and select the **Enable single payment authorization checkout** checkbox.
 4. Select **Save and publish**.
 
-![Enabling enhanced payments in storefront checkout in Commerce site builder](media/rfac.png)
+![Enabling enhanced payments in storefront checkout in Commerce site builder.](media/rfac.png)
 
 ## Additional resources
 
