@@ -31,6 +31,8 @@ Dynamics 365 Commerce enables you to target specific groups of customers with di
 
 You can create and manage audiences in site builder based on customer data such as location, device information, sign-in status, and other information gathered from the customer's web request. You can prepare special variations of your content for members of these audiences. These variations called **targets** are also authored and managed in site builder.
 
+You can begin your targeting journey by creating an audience or a target but both are necessary parts to a successful targeting experience.
+
 ## Audiences
 An audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information or segments available in the customer's request. Commerce natively supports segments such as device info (desktop/mobile/tablet, OS, browser), sign-in status, referrer and query string parameters. Additionally, Commerce also supports connecting to third-party geolocation and segmentation providers. You can purchase a third-party connector from [AppSource](https://appsource.microsoft.com) and follow the setup instructions provided by the publisher. You can alternatively use sample test connectors from Commerce to test without needing to configure an external service. For more information on setting up test connectors, see [Configure and enable connectors](e-commerce-extensibility/connectors.md). 
 
@@ -52,7 +54,7 @@ You can edit an audience by clicking on it's blue link in the **Audiences** tab 
 > Audiences are a site-level concept in site builder. You can share the same audience across multiple targets.
 
 ## Targets
-A target is the user experience that will be shown to members of the chosen audience. It can either include variations of one or more modules within a page or a fragment. You can begin your targeting journey by creating an audience or a target but both are necessary parts to a successful targeting experience.
+A target is the user experience that will be shown to members of the associated audience(s). It can either include variations of one or more modules within a page or a fragment. You can specify a schedule for your target to indicate how long it remains active. Note that this is separate from scheduling a publish group that determines when a collection of content will go live. You can also preview your target to see what it will look like to a member of selected audiences. Additionally you can prioritize your targets created against the same module to indicate which one should be shown in the case of a conflict.
 
 ### Create a target
 To target page modules in Commerce site builder, follow these steps.
@@ -66,7 +68,6 @@ To target page modules in Commerce site builder, follow these steps.
 6. Select the time zone, start and end dates/times to display your target. You can also set the target to show at all times during this window or choose specific days and times and click **Next**. 
     > [!NOTE]
     > - The times and timezone you specify are global. If you wish to target different locations at different times/zones, you will need to create different targets with the desired schedule for each location.
-    > - Scheduling a target dictates for how long it remains active. This is separate from scheduling a publish group that determines when a collection of content will go live.
 8. Review the details and once everything looks good, click **Create target experience** and **Go to target**. This creates the target shell to which you can now add modules. 
 9. Select the module to be targeted, select the ellipsis (...), and then select **Add to current target**. When you target a parent module, all its children become part of that target. The targeted modules are highlighted with a green color.
 10. Make the necessary content updates to the targeted module and add more modules to the target if required. Click **Save** to save all your changes.
