@@ -4,7 +4,7 @@
 title: Work with the Electronic messages functionality
 description: This topic provides information about how to work with the Electronic messages (EM) functionality.
 author: liza-golub
-ms.date: 06/29/2021
+ms.date: 07/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,7 +20,7 @@ ms.reviewer:
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: liza-golub
+ms.author: elgolu
 ms.search.validFrom: 2021-06-24
 ms.dyn365.ops.version: 10.0.21
 
