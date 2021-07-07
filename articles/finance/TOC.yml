@@ -687,7 +687,15 @@
       - name: Use cost control workspace for mobile application
         href: cost-accounting/cost-controlling-mobile-workspace.md
     - name: Electronic messaging
-      href: general-ledger/electronic-messaging.md
+      items: 
+      - name: Electronic messaging overview
+        href: general-ledger/electronic-messaging.md
+      - name: Set up Electronic messages
+        href: general-ledger/electronic-messaging-setup.md
+      - name: Work with the Electronic messages functionality
+        href: general-ledger/electronic-messaging-work-with-em.md
+      - name: Call a simple exporting ER format to generate an Excel report
+        href: general-ledger/electronic-messaging-example.md
     - name: Expense management
       items:
       - name: Expense management overview
@@ -2442,6 +2450,8 @@
                 href: localizations/apac-ind-GST-troubleshooting-records-fields-not-showing-GSTR-report.md
               - name: Setoff rule error when a tax settlement is run
                 href: localizations/apac-ind-GST-troubleshooting-setoff-rule-error-transactions-on-voucher-not%20balance.md
+              - name: Default field value in tax information isn't as expected
+                href: localizations/apac-ind-GST-troubleshooting-default-value-in-tax-information-not-expected.md
         - name: Direct taxes
           items:
           - name: India withholding tax
