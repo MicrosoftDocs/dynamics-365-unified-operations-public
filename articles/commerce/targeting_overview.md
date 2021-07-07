@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 10.0.21
 # Device, market, and Geo IP targeting
 Dynamics 365 Commerce enables you to target specific groups of customers with different page content based on their device information, geolocation, and other dynamically derived attributes from their browser request. This will help you personalize content in near real-time for these target groups known as **audiences** and drive increased user engagement and satisfaction.
 
-You can create and manage audiences in site builder based on customer data such as location, device information, sign-in status, referrer, or query string parameters, gathered from the customer's web request. You can prepare special variations of your content for members of these audiences. These variations called **targets** are also authored and managed in site builder.
+You can create and manage audiences in site builder based on customer data such as location, device information, sign-in status, and other information gathered from the customer's web request. You can prepare special variations of your content for members of these audiences. These variations called **targets** are also authored and managed in site builder.
 
 ## Audiences
 An audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information or segments available in the customer's request. Commerce natively supports segments such as device info (desktop/mobile/tablet, OS, browser), sign-in status, referrer and query string parameters. Additionally, Commerce also supports connecting to third-party geolocation and segmentation providers. You can purchase a third-party connector from [AppSource](https://appsource.microsoft.com) and follow the setup instructions provided by the publisher. You can alternatively use sample test connectors from Commerce to test without needing to configure an external service. For more information on setting up test connectors, see [Configure and enable connectors](e-commerce-extensibility/connectors.md). 
@@ -41,14 +41,15 @@ To create an audience in Commerce site builder, follow these steps.
 2. Give your audience a name and optionally add tags and a description. 
 3. Click on **Create** and **Add new rule block** on the the following page. A rule block is a collection of rules joined together by AND conditions. You can also create multiple rule blocks with OR conditions between them.
 4. Select a data source for your segments, followed by the segment name, operator and value(s). You can create and delete more rules within a rule block or create and delete entire rule blocks. You can also move rule blocks up or down as needed.
-
-<TODO - Add "Please ensure that your use of cookies complies with applicable laws.">
-
     > [!NOTE]
     > You can have up to 100 values in a list with up to 50 characters in each item.
+    > Please ensure that your use of cookies complies with applicable laws.
 6. Once you are satisfied with your audience, select **Finish editing**. You can also select **Publish** if you want to make the audience available for use in a live target or publish it along with the target.
 
 You can edit an audience by clicking on it's blue link in the **Audiences** tab and the **Edit** button in the audience editor that opens up. You can also select an audience in the list view and select **View Assignments** to view the list of targets and pages that are referencing it. To delete an audience in the audience list view or in the audience editor, unpublish it if it is already published and then select **Delete** in the top command bar.
+
+> [!NOTE]
+> Audiences are a site-level concept in site builder.
 
 ## Targets
 A target is the user experience that will be shown to members of the chosen audience. It can either include variations of one or more modules within a page or a fragment. You can begin your targeting journey by creating an audience or a target but both are necessary parts to a successful targeting experience.
@@ -61,11 +62,11 @@ To target page modules in Commerce site builder, follow these steps.
 4. Give your target a name and description and click **Next**.
 5. Click **Add** to include or exclude audiences that will see this targeted experience and click **Next**. 
     > [!NOTE]
-    > Assigning audiences is an optional step for target creation but you will need to assign at least one audience in the **include** list before publishing the target to ensure the right groups of users see it.
+    > Assigning audiences is an optional step for target creation but you will need to include at least one audience before publishing the target to ensure the right groups of users see it.
 6. Select the time zone, start and end dates/times to display your target. You can also set the target to show at all times during this window or choose specific days and times and click **Next**. 
     > [!NOTE]
     > The times and timezone you specify are global. If you wish to target different locations at different times/zones, you will need to create different targets with the desired schedule for each location.
-    > Scheduling your target dictates for how long it remains active and is separate from scheduling a publish group that publishes a collection of content at the prescribed time.
+    > Scheduling a target dictates for how long it remains active. This is separate from scheduling a publish group that determines when a collection of content will go live.
 8. Review the details and once everything looks good, click **Create target experience** and **Go to target**. This creates the target shell to which you can now add modules. 
 9. Select the module to be targeted, select the ellipsis (...), and then select **Add to current target**. When you target a parent module, all its children become part of that target. The targeted modules are highlighted with a green color.
 10. Make the necessary updates to the targeted module and add more modules if required. Click **Save** to save all your changes.
@@ -83,10 +84,10 @@ You can also target fragments in a similar way from the **Fragments** tab in the
 To manage your targets, go to the default page or fragment and follow these steps.
 1. Open the targets dropdown and click on **Manage targets**.
 2. Click on a target to **edit**, **duplicate** or **delete** it.
-3. If you have more than one target on the same module, click on **Prioritize targets** to specify the order in which they should be shown. If no priority is specified, the newest target will be picked by default.
+3. If you have more than one target on the same module, click on **Prioritize targets** to specify the order in which they should be shown. You will also see this button show up in the notifications bar whenever there is an unresolved conflict. If no priority is specified, the newest target will be picked by default.
 
 ### Localize targets
-Targets in pages and fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, you can delete the targets for locales that you don't need once the localized XLIFFs are imported. Targets are managed per locale so if you change the schedule for one of your targets, they will not automatically carry forward to the rest.
+Targets in pages and fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, you can delete the targets for locales that you don't need once the localized XLIFFs are imported. Targets are managed per channel and locale so any changes you make to targets in one channel/locale will not be automatically applied to the rest.
 
 <<TODO - C1 needs to get explicit cookie consent from C2 for targeting; need to include info on that module>>
 <<Analytics??>>
