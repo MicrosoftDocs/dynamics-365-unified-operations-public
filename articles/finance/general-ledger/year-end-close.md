@@ -4,7 +4,7 @@
 title: Year-end close
 description: This topic describes the required setup and steps for running the general ledger year-end close process. 
 author: kweekley
-ms.date: 04/13/2020
+ms.date: 07/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the required setup and steps for running the general ledger year-end close process. 
 
-At the end of a fiscal year, you must run the year-end close process to transfer opening balances to the new year. Most organizations will run the year-end close process multiple times. The first time would be to get the balances moved into the new fiscal year. The year-end close can then be run again, as many times are required, to move the balances from adjusting entries into the new fiscal year. 
+At the end of a fiscal year, you must run the year-end close process to transfer opening balances to the new year. Most organizations will run the year-end close process multiple times. The first time would be to get the balances moved into the new fiscal year. The year-end close can then be run again, as many times as required, to move the balances from adjusting entries into the new fiscal year. 
 
 During the year-end close process, there are two types of possible transactions created. An Opening transaction is always generated and is used to create the opening balances in the new fiscal year. The Opening transaction shows the balance sheet ledger account balances in the new fiscal year and balances from the profit and loss ledger account balances in the retained earnings ledger account in the new fiscal year. The Closing transaction is optionally created to bring the balances of the profit and loss accounts down to zero in the fiscal year being closed.
 
@@ -42,23 +42,26 @@ Before you run the year-end close process, validate the settings for the followi
 
 On the **Main account** page:
 
--   Validate the **Main account type** is defined properly for each main account. The Main account type is used to determine whether the balance of the main account will be brought forward as an opening balance or closed into retained earnings in the Opening transaction.
--   The **Opening account** field can be used to transfer the balance of the main account to a new main account during the year-end close. The new main account is entered in the **Opening account** field. Typically this will be used for balance sheet main accounts when the main account is inactivated and a new main account is used for the new fiscal year.
+- Validate the **Main account type** is defined properly for each main account. The Main account type is used to determine whether the balance of the main account will be brought forward as an opening balance or closed into retained earnings in the Opening transaction.
+- The **Opening account** field can be used to transfer the balance of the main account to a new main account during the year-end close. The new main account is entered in the **Opening account** field. Typically this will be used for balance sheet main accounts when the main account is inactivated and a new main account is used for the new fiscal year.
 
 On the **General ledger parameters** page under **Fiscal year close**:
 
--   The **Delete close of year transactions** option is used to specify whether the system-generated Opening transaction from a previous year-end close should be deleted when the year-end close is run again. If this option is set to **Yes**, the previous Opening transaction is deleted and a new Opening transaction is created based on the current balances. If this option is set to **No**, the previous Opening transaction remains and an additional Opening transaction is created to move the balances forward from adjusting transactions posted after the previous year-end close.
--   The **Create closing transactions during transfer** option is used to create Closing transactions in the fiscal year being closed in order to bring the balances of the profit and loss accounts to zero. If this option is set to **Yes**, both the Opening transaction and Closing transaction is created. If this option is set to **No**, only the Opening transaction is created in the next fiscal year to transfer the balances. The profit and loss account balances remain at the end of the fiscal year.
--   The **Set fiscal year status to permanently closed** option is used to set the fiscal year to a permanently closed status. Use this setting with caution, because all periods with a permanently closed status cannot be reopened, preventing adjustments from being posted to the fiscal year. It's a best practice to set this to **No**.
--   The **Voucher number must be filled in** option is used to define whether a voucher number is required when running the year-end close process. It’s a best practice to require a voucher number in order to easily identify the Opening transaction.
+- The **Delete existing year-end entries when re-closing the year** option is used to specify whether the system-generated Opening transaction from a previous year-end close should be deleted when the year-end close is run again. If this option is set to **Yes**, the previous Opening and Closing transactions are deleted and a new Opening or Closing transaction is created based on the current balances. If this option is set to **No**, the previous Opening transaction remains and an additional Opening transaction is created to move the balances forward from adjusting transactions posted after the previous year-end close.
+
+- The **Create closing transactions during transfer** option is used to create Closing transactions in the fiscal year being closed in order to bring the balances of the profit and loss accounts to zero. If this option is set to **Yes**, both the Opening transaction and Closing transaction is created. If this option is set to **No**, only the Opening transaction is created in the next fiscal year to transfer the balances. The profit and loss account balances remain at the end of the fiscal year.
+
+- The **Set fiscal year status to permanently closed** option is used to set the fiscal year to a permanently closed status. Use this setting with caution, because all periods with a permanently closed status cannot be reopened, preventing adjustments from being posted to the fiscal year. It's a best practice to set this to **No**.
+
+- The **Voucher number must be filled in** option is used to define whether a voucher number is required when running the year-end close process. It’s a best practice to require a voucher number in order to easily identify the Opening transaction.
 
 On the **Fiscal calendar** page:
 
--   The next fiscal year must exist before running the year-end close. The next fiscal year is required in order to create the beginning balances in the opening period.
+- The next fiscal year must exist before running the year-end close. The next fiscal year is required in order to create the beginning balances in the opening period.
 
 On the **Ledger calendar** page:
 
--   Optional: Each fiscal period for the fiscal year being closed can be set to **On hold** to prevent new transactions from being entered. When adjusting entries are identified, the On hold periods can be reopened to post adjusting entries, even if the year-end close process has already been run.
+- Optional: Each fiscal period for the fiscal year being closed can be set to **On hold** to prevent new transactions from being entered. When adjusting entries are identified, the On hold periods can be reopened to post adjusting entries, even if the year-end close process has already been run.
 
 ## Define year-end close templates
 After the system is configured, the year-end close process can be run. On the **Year-end close** page, a template can be defined for the group of legal entities for which the year-end close process will be run. The template will be reused at each year-end close, but can be modified if your organization changes. 
