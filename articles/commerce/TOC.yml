@@ -2561,7 +2561,7 @@
         - name: Channel database extensions
           href: dev-itpro/channel-db-extensions.md
         - name: Remove Cloud Scale Unit extensions
-          href: retail-sdk/remove-csu-package.md
+          href: dev-itpro/retail-sdk/remove-csu-package.md
         - name: Enable custom CDX synchronization via extension
           href: dev-itpro/cdx-extensibility.md
         - name: Define and set order attributes
