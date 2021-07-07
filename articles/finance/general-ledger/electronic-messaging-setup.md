@@ -4,7 +4,7 @@
 title: Set up Electronic messages
 description: This topic provides information about how to set up Electronic messages (EM) functionality.
 author: liza-golub
-ms.date: 06/29/2021
+ms.date: 07/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -287,7 +287,7 @@ The **Action** FastTab lets you add predefined actions to the processing. You ca
 
 Sometimes, several actions must be aggregated into a sequence, even though the first action is set up to run separately. For example, a user must initialize report generation. However, immediately after the report is generated, it must be sent to a web service, and the response from the web service must be reflected in the system. In this case, you can create an inseparable sequence for the actions that must always run together. On the **Action** FastTab, select **Inseparable sequences** above the grid, and create a sequence. Then, for all the actions that must run together in one sequence, select the sequence in the **Inseparable sequence** field. For this example, the **Run separately** field can be set to **Yes** for the first action in the sequence and **No** for all the other actions.
 
-Actions of the **Electronic reporting export** and **Electronic reporting export message** types run an ER that has input parameters. If your electronic message processing includes actions of either of those types, you must specify the values for the input parameters before report generation. In this way, the system can use a batch regime to generate the report. You can select **Parameters** above the grid to set up the parameters for the selected action type (**Electronic reporting export** or **Electronic reporting export message**). Select the **Use parameters** checkbox for the action that must be run with the specified parameters in a batch regime.
+Actions of the **Electronic reporting export** and **Electronic reporting export message** types run an ER format that has input parameters. If your electronic message processing includes actions of either of those types, you must specify the values for the input parameters before report generation. In this way, the system can use a batch regime to generate the report. You can select **Parameters** above the grid to set up the parameters for the selected action type (**Electronic reporting export** or **Electronic reporting export message**). Select the **Use parameters** checkbox for the action that must be run with the specified parameters in a batch regime.
 
 Use the **Message item additional fields** FastTab to add predefined additional fields that are related to message items. You must add additional fields for each type of message item that the fields are related to. You can specify a default value that will be assigned to the additional field during processing.
 
