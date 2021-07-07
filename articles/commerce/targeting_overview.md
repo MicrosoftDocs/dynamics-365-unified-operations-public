@@ -60,7 +60,7 @@ A target is the user experience that will be shown to members of the associated 
 To target page modules in Commerce site builder, follow these steps.
 1. Select **Pages** in the left navigation pane, and then select the blue link for the page that has the module(s) you want to target.
 2. Click **Edit** to check out the page for editing.
-3. Click the **Target** drop-down and then **New target** to create a new target shell. You can have multiple targets on a page. <TODO: check with Jane on command bar entry point>
+3. Click the **Target** drop-down and then **New target** to create a new target shell. You can create multiple targets on a page if needed. 
 4. Give your target a name and description and click **Next**.
 5. Click **Add** to include or exclude audiences that will see this targeted experience and click **Next**. 
     > [!NOTE]
