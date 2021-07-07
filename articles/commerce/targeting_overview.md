@@ -51,7 +51,9 @@ To create an audience in Commerce site builder, follow these steps.
 You can edit an audience by clicking on it's blue link in the **Audiences** tab and the **Edit** button in the audience editor that opens up. You can also select an audience in the list view and select **View Assignments** to view the list of targets and pages that are referencing it. To delete an audience in the audience list view or in the audience editor, unpublish it if it is already published and then select **Delete** in the top command bar.
 
 ## Targets
-A target is the user experience that will be shown to members of the chosen audience. You can target modules in the **Pages** tab or fragments in the **Fragments** tab.
+A target is the user experience that will be shown to members of the chosen audience. <TODO - add concepts/vocabulary overview for prioritization and preview> 
+
+You can target modules in the **Pages** tab or fragments in the **Fragments** tab.
 
 ### Create a target
 To target page modules in Commerce site builder, follow these steps.
@@ -68,8 +70,10 @@ To target page modules in Commerce site builder, follow these steps.
 8. Review the details and once everything looks good, click **Create target experience** and **Go to target**. This creates the target shell to which you can now add modules. 
 9. Select the module to be targeted, select the ellipsis (...), and then select **Add to current target**. The targeted module will be highlighted with a green color.
 10. Make the necessary updates to the targeted module and add more modules if required. Click **Save** to save all your changes.
-11. To preview the target as a member of an audience and on a particular day, click on **Preview** in the command bar, select **Advanced preview** and click **Next**. You can either choose from the list of relevent audiences shown here or remove the filter to choose from all audiences. 
-12. Once everything looks good, click on **Publish** to publish your target immediately or include within a publish group to schedule when it goes live. This also publishes the default page that the target is a part of.
+11. Before you publish your target, make sure to click on **Preview** in the command bar to review it first. You can then select from one of the following options:
+* **Basic preview** to preview only the selected variation without any associated audiences.
+* **Advanced preview** if you have multiple targets on this page and want to preview them as a user belonging to a selected set of audiences. Click **Next** to choose from the list of relevent audiences or remove the filter to choose from all audiences.
+12. Once everything looks good, you will need to publish the page for the target to go live. Click on **Publish** to go live immediately or use a publish group to schedule when it goes live.
 
 You can also target fragments in a similar way from the **Fragments** tab in the left navigation pane.
 
@@ -83,7 +87,7 @@ To manage your targets, go to the default page or fragment and follow these step
 3. If you have more than one target on the same module, click on **Prioritize targets** to specify the order in which they should be shown. If no priority is specified, the newest target will be picked by default.
 
 ### Localize targets
-Targets in pages and fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, delete the targets before the localization progress as explained above. If you need to create different schedules per locale, you will need to create different targets per each locale.
+Targets in pages and fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, you can delete the targets for locales that you don't need once the localized XLIFFs are imported. Targets are managed per locale so if you change the schedule for one of your targets, they will not automatically carry forward to the rest.
 
 <<TODO - C1 needs to get explicit cookie consent from C2 for targeting; need to include info on that module>>
 
