@@ -118,7 +118,7 @@ The store selector module can be used together with the map module to show the s
 
 ## Site settings
 
-The store selector module respects the [Add to cart site settings](add-cart-settings.md) and site users will see the appropriate configured workflows after an item is added to cart from the store selector module.
+The store selector module respects the [Add product to cart settings](add-cart-settings.md). After an item is added to the cart from the store selector module, site users will see the appropriate configured workflows.
 
 ## Add a store selector module to a page
 
