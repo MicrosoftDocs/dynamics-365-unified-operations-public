@@ -4,7 +4,7 @@
 title: Set up and run processing to call a simple exporting ER format to generate an Excel report
 description: This topic provides an example that shows how to set up and use electronic messages.
 author: liza-golub
-ms.date: 00/07/2021
+ms.date: 07/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
