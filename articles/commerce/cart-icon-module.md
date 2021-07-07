@@ -44,17 +44,16 @@ The following image shows an example of a cart icon module that displays a mini 
 
 - **Show mini cart** – When true, this property enables a cart summary (mini cart) to be displayed when the cart icon is hovered over. This functionality is only supported for desktop view ports.
 
-## Adventure Works theme module properties
+## Module properties in the Adventure Works theme
 
 In the Adventure Works theme, the cart icon module includes two additional slots for the mini cart. These slots are included as a module definition extension.
 
--**Empty cart promotions** - This slot takes a content block module. When the cart contents are empty, the specified content block module will be displayed. The content block module can be used for promotions, marketing content, and links to category pages to help customers continue their shopping journey.
+- **Empty cart promotions** – This slot takes a content block module. When the cart is empty, the specified content block module is shown. The content block module can be used for promotions, marketing content, and links to category pages, to help customers continue their shopping journey.
+- **Promotional content** – This slot can be used to showcase promotions, such as "Free shipping on orders over $100." Content block, text block, and image list modules can be used in the promotional content slot.
 
--**Promotional content** - This slot can be used to showcase promotions, for example "Free Shipping on orders over $100." Content block, text block, and image list modules can be used in the promotional content slot.
+The following image shows an example of a cart icon module in the Adventure Works theme that displays promotional content on the mini cart.
 
-The following example image shows a cart icon module in the Adventure Works theme that displays promotional content on the mini cart.
-
-![Example of a cart icon module in Adventure Works theme](./media/AW_minicart.PNG)
+![Example of a cart icon module in the Adventure Works theme](./media/AW_minicart.PNG)
 
 > [!IMPORTANT]
 > The Adventure Works theme slots are available as of the Dynamics 365 Commerce version 10.0.20 release.
