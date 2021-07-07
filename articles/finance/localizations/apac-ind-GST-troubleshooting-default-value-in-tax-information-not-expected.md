@@ -4,7 +4,7 @@
 title: Default field value in tax information isn't as expected
 description: This topic provides troubleshooting information that can help when the default value of a tax information field isn't what you expect.
 author: yungu
-ms.date: 06/29/2021
+ms.date: 07/07/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,7 +37,7 @@ If the default value of one of the following tax information fields isn't what y
 - Price inclusive
 
 > [!NOTE]
-> If the value of any other tax information field isn't what you expect, you can apply the general debug point that is provided at the end of this topic.
+> If the value of any other tax information field isn't what you expect, you can apply a general debug point.
 
 Each scenario in this topic lists the fields that the default value of the tax information field is derived from. The [appendix](#appendix) explains where you can find those fields.
 
@@ -49,7 +49,7 @@ The way that the default company location is determined varies, depending on the
 
 Set a breakpoint at the company primary address location, and start debugging.
 
-![Breakpoint set at transTaxInformation.CompanyLocation](./media/default-value-not-excepted-Picture1.png)
+![Breakpoint set at primary address location](./media/default-value-not-excepted-Picture1.png)
 
 ### Scenario: Project
 
@@ -115,15 +115,15 @@ When the HSN/SAC/Exempt/NonGST is a procurement category, set a breakpoint there
 
 #### HSN/SAC/Exempt/NonGST field
 
-For project transactions, the HSN/Exempt/NonGST is assigned differently.
+For project transactions, the HSN/SAC/Exempt/NonGST is assigned differently.
 
 - When the HSN/SAC/Exempt/NonGST is a project transaction, set the breakpoint there, and start debugging.
 
-    [![Breakpoint set for a project transaction](./media/default-value-not-excepted-Picture7.png)](./media/default-value-not-excepted-Picture7.png)
+    [![Breakpoint set for a project transaction for HSN/SAC/Exempt/NonGST](./media/default-value-not-excepted-Picture7.png)](./media/default-value-not-excepted-Picture7.png)
 
 - When the HSN/SAC/Exempt/NonGST is a project inventory item, such as an item journal or a project sales order, set a breakpoint there, and start debugging.
 
-    [![Breakpoint set for a project inventory item](./media/default-value-not-excepted-Picture8.png)](./media/default-value-not-excepted-Picture8.png)
+    [![Breakpoint for when the HSN/SAC/Exempt/NonGST is a project inventory item.](./media/default-value-not-excepted-Picture8.png)](./media/default-value-not-excepted-Picture8.png)
 
 #### SAC field
 
@@ -145,13 +145,13 @@ The **Price inclusive** field is set for the transaction line if a specific cond
 
 ### Scenario: Transactions that aren't related to a project
 
-In the general ledger journal, the journal header is marked as price inclusive. The customer or vendor account that is used on the journal line is marked as the default for the **Price inclusive** field.
+In the general ledger journal, the journal header is marked as price inclusive. The customer or vendor account that is used on the journal line is marked as the default account for the **Price inclusive** field.
 
 For other transactions that aren't related to a project, the transaction header is marked as price inclusive.
 
 ### Scenario: Project-related transactions
 
-The general ledger journal header is marked as price inclusive. The customer or vendor account that is used on the journal line is marked as the default for the **Price inclusive** field. Any tax information for the project and the account that is used in the project is also marked as price inclusive.
+The general ledger journal header is marked as price inclusive. The customer or vendor account that is used on the journal line is marked as the default account for the **Price inclusive** field. Any tax information for the project and the account that is used in the project is also marked as price inclusive.
 
 For other project-related transactions, the transaction header, the project tax information, and the account that is used in the project are marked as price inclusive.
 
