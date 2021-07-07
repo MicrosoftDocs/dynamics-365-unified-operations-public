@@ -1622,7 +1622,7 @@
         - name: Production planning
           href: master-planning/planning-optimization/production-planning.md
         - name: Scheduling with infinite capacity
-          href: master-planning/planning-optimization/production-planning.md
+          href: master-planning/planning-optimization/infinite-capacity-planning.md
         - name: Inventory marking with Planning Optimization
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning
