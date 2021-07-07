@@ -2450,6 +2450,8 @@
                 href: localizations/apac-ind-GST-troubleshooting-records-fields-not-showing-GSTR-report.md
               - name: Setoff rule error when a tax settlement is run
                 href: localizations/apac-ind-GST-troubleshooting-setoff-rule-error-transactions-on-voucher-not%20balance.md
+              - name: Default field value in tax information isn't as expected
+                href: localizations/apac-ind-GST-troubleshooting-default-value-in-tax-information-not-expected.md
         - name: Direct taxes
           items:
           - name: India withholding tax
