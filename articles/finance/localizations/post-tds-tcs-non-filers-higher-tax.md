@@ -72,11 +72,11 @@ Furthermore, subsection (2) of section 206AB provides for cases where both secti
 
 The following illustration summarizes the tax rates under sections 206AA and/or 206AB.
 
-MEDIA FILE 01
+ ![Summary of tax rates under sections 206AA and/or 206AB](media/tds-higher-rate-01.png)
 
 The following illustration summarizes the tax rates under sections 206CC and/or 206CCA.
 
-MEDIA FILE 02
+ ![Summary of tax rates under sections 206CC and/or 206CCA](media/tds-higher-rate-02.png)
 
 ## Set up TDS /TCS at a higher rate for non-filers of returns
 
@@ -92,7 +92,7 @@ Define a threshold definition for the Rent TDS type
 3. In the **Name** field, enter **Rent**.
 4. In the **Description** field, enter **Rent-194 I**.
 
-  MEDIA FILE 03
+   ![Description field, Rent-194 I](media/tds-higher-rate-03.png)
   
 ### Create an additional threshold definition for non-filing of returns
 
@@ -101,24 +101,24 @@ Define a threshold definition for the Rent TDS type
 3.	In the **Name** field, enter **Rent RNF**.
 4.	In the **Description** field, enter **Rent-194I return not filed**.
  
-  MEDIA FILE 04
+   ![Description field, Rent-194I return not filed](media/tds-higher-rate-04.png)
  
 5.	Select **Threshold designer**.
 6.	On the **Threshold designer** page, select **Rent**, and then select **New** to define the first slab.
 7.	On the **General** FastTab, in the **Effective from** field, enter **4/1/2021** (April 1, 2021). In the **Effective to** field, enter **3/31/2022** (March 31, 2022).
 8.	In the **Lower limit** field, enter **0.00**. In the **Upper limit** field, enter **240,000.00**.
-9.	On the **Calculation** FastTab, in the **Typev field, select **Cumulative**.
-10.	Set the **Final level** option to **Yes**.
+9.	On the **Calculation** FastTab, in the **Type** field, select **Cumulative**.
+10. Set the **Final level** option to **Yes**.
 
-  MEDIA FILE 05
+   ![Final level option set to Yes](media/tds-higher-rate-05.png)
  
-11.	Select **New** again to define the second slab.
-12.	On the **General** FastTab, in the **Effective from** field, enter **4/1/2021**. In the **Effective to** field, enter **3/31/2022**.
-13.	In the **Lower limit** field, enter **240,000.00**. In the **Upper limit** field, enter **0.00**.
-14.	On the **Calculation** FastTab, in the **Type** field, select **Cumulative**.
-15.	Set the **Final level** option to **Yes**.
+11. Select **New** again to define the second slab.
+12. On the **General** FastTab, in the **Effective from** field, enter **4/1/2021**. In the **Effective to** field, enter **3/31/2022**.
+13. In the **Lower limit** field, enter **240,000.00**. In the **Upper limit** field, enter **0.00**.
+14. On the **Calculation** FastTab, in the **Type** field, select **Cumulative**.
+15. Set the **Final level** option to **Yes**.
  
-  MEDIA FILE 06
+    ![Second slab, Final level option set to Yes](media/tds-higher-rate-06.png)
   
 16.	Close the **Threshold designer** page.
 
@@ -132,7 +132,7 @@ Define a threshold definition for the Rent TDS type
 6.	On the **Calculation** FastTab, in the **Type** field, select **Cumulative**.
 7.	Set the **Final level** option to **Yes**.
 
-   MEDIA FILE 07
+      ![Threshold definitions Final level option set to Yes](media/tds-higher-rate-07.png)
   
 8.	Select **New** again to define the second slab.
 9.	On the **General** FastTab, in the **Effective from** field, enter **4/1/2021**. In the **Effective to** field, enter **3/31/2022**.
@@ -140,7 +140,7 @@ Define a threshold definition for the Rent TDS type
 11.	On the **Calculation** FastTab, in the **Type** field, select **Cumulative**.
 12.	Set the **Final level** option to **Yes**.
 
-    MEDIA FILE 08
+       ![Second slab, threshold definitions Final level option set to Yes](media/tds-higher-rate-08.png)
  
 13.	Close the **Threshold designer** page.
 
@@ -154,16 +154,16 @@ Define a threshold definition for the Rent TDS type
 6.	In the **Section code** field, enter **94 I**.
 7.	Close the page.
 
-    MEDIA FILE 09
- 
+      ![Withholding tax component group for rent](media/tds-higher-rate-09.png)
+
 ### Create a withholding tax component for rent
 
 1.	Go to **Tax** > **Setup** > **Withholding tax component**.
 2.	Select **New**.
 3.	In the **Tax type** field, select **TDS**.
-4.	In the **Withholding tax component** and vDescription** fields, select **Rent**.
+4.	In the **Withholding tax component** and **Description** fields, select **Rent**.
 
-    MEDIA FILE 10
+      ![Withholding tax component for rent](media/tds-higher-rate-10.png)
     
 ### Create a withholding tax code for rent
 
@@ -180,7 +180,7 @@ Define a threshold definition for the Rent TDS type
       - **Enable threshold hierarchy**: Yes
       - **Withholding tax component**: Rent
 
-      MEDIA FILE 11
+         ![General FastTab, withholding tax code for rent fields](media/tds-higher-rate-11.png)
  
 6.	Select **Threshold references**.
 7.	On the **Threshold references** page, select **New**, and set the following values:
@@ -199,9 +199,9 @@ Define a threshold definition for the Rent TDS type
       - **Account code**: All
       - **Threshold**: Rent
 
-    You can leave the **Account or group** field blank for this threshold reference.
+   You can leave the **Account or group** field blank for this threshold reference.
  
-      MEDIA FILE 12
+      ![Account or group field](media/tds-higher-rate-12.png)
       
 9.	Select **Threshold designer**.
 10.	On the **Threshold designer** page, select the first cumulative line that has the **Rent RNF** threshold. Then, on the **Tax value** FastTab, select **New**, and set the following values:
@@ -219,8 +219,6 @@ Define a threshold definition for the Rent TDS type
       - **Calculate tax**: Yes
       - **Include in turnover base**: Yes
       - **Value**: 0.00
-
-       MEDIa FILE 13
  
 12.	Select the second cumulative line. Then, on the **Tax value** FastTab, select **New**, and set the following values:
 
@@ -237,8 +235,6 @@ Define a threshold definition for the Rent TDS type
       - **Calculate tax**: Yes
       - **Include in turnover base**: Yes
       - **Value**: 20.00
-
-      MEDIA FILE 14
  
 14.	Close the **Threshold designer** page.
 15.	On the **Threshold references** page, select **New**, and set the following values:
@@ -247,7 +243,7 @@ Define a threshold definition for the Rent TDS type
       - **Account code**: All
       - **Threshold**: Rent
       
-      MEDIA FILE 15
+         ![New threshold reference for vendor](media/tds-higher-rate-15.png)
  
 16.	Select **Threshold designer**.
 17.	Select the first cumulative line. Then, on the **Tax value** FastTab, select **New**, and set the following values:
@@ -266,8 +262,6 @@ Define a threshold definition for the Rent TDS type
       - **Include in turnover base**: Yes
       - **Value**: 0.00
  
-    MEDIA FILE 16
- 
 19.	Select the second cumulative line. Then, on the **Tax value** FastTab, select **New**, and set the following values:
 
       - **PAN status**: Not available
@@ -283,8 +277,6 @@ Define a threshold definition for the Rent TDS type
       - **Calculate tax**: Yes
       - **Include in turnover base**: Yes
       - **Value**: 10.00
-
-    MEDIA FILE 17
  
 21.	Close the **Threshold designer** page.
 22.	Go to **Tax** > **Indirect taxes** > **Withholding tax** > **Withholding tax groups**.
@@ -300,14 +292,14 @@ Define a threshold definition for the Rent TDS type
 2.	Select **New**, and name the new withholding tax group **Rent 194 I**.
 3.	On the **Setup** FastTab, select **Add**.
 4.	In the **Withholding tax code** field, select **Rent 194 I**.
- 
-    MEDIA FILE 18
+
+      ![](media/tds-higher-rate-18.png)
  
 5.	Select **Designer**.
 6.	On the **Designer** page, select **New**.
 7.	In the **Tax code** field, select **Rent 194 I**.
 
-    MEDIA FILE 19
+      ![](media/tds-higher-rate-19.png)
  
 8.	Close the **Designer** page.
 
@@ -319,7 +311,7 @@ Define a threshold definition for the Rent TDS type
 4.	On the **Invoice and delivery** FastTab, set the **Calculate withholding tax** option to **Yes**.
 5.	In the **TDS group** field, select **Rent 194 I**.
  
-    MEDIA FILE 20
+    ![](media/tds-higher-rate-20.png)
 
 ### Update the PAN information for a vendor
 
@@ -329,7 +321,7 @@ Define a threshold definition for the Rent TDS type
 4.	In the **Number** field, enter **AUNPP6767E**.
 5.	Close the page.
 
-    MEDIA FILE 21
+    ![](media/tds-higher-rate-21.png)
     
 ## Example scenarios
 
@@ -356,12 +348,12 @@ In this scenario, the vendor hasn't filed income tax returns for the last two ye
 5.	In the **Credit** field, enter **250,000.00**.
 6.	In the **Offset account type** field, select **Ledger**. Then, in the **Offset account** field, select **600120**.
  
-    MEDIA FILE 22
+   ![](media/tds-higher-rate-22.png)
  
 7.	Select **Withholding tax**.
 8.	On the **Temporary withholding tax transactions** page, notice that the withholding tax is calculated at the defined rate of 20.0 percent for this vendor, because the vendor hasn't filed income tax returns for the last two years.
 
-    MEDIA FILE 23
+    ![](media/tds-higher-rate-23.png)
  
 ### Scenario 2: The vendor has filed returns for the last two years and provides PAN information
 
@@ -374,12 +366,12 @@ In this scenario, the vendor has filed income tax returns for the last two years
 5.	In the **Credit** field, enter **250000.00**.
 6.	In the **Offset account type** field, select **Ledger**. Then, in the **Offset account** field, select **600150**.
  
-    MEDIA FILE 24
+    ![](media/tds-higher-rate-24.png)
  
 7.	Select **Withholding tax**.
 8.	On the **Temporary withholding tax transactions** page, notice that the withholding tax is calculated at the defined rate of 10.0 percent.
  
-    MEDIA FILE 25
+    ![](media/tds-higher-rate-25.png)
  
 
 
