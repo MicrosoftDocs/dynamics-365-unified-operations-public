@@ -87,7 +87,10 @@ To manage your targets, go to the default page or fragment and follow these step
 3. If you have more than one target on the same module, click on **Prioritize targets** to specify the order in which they should be shown. You will also see this button show up in the notifications bar whenever there is an unresolved conflict. If no priority is specified, the newest target will be picked by default.
 
 ### Localize targets
-Targets in pages and fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, you can delete the targets for locales that you don't need once the localized XLIFFs are imported. Targets are managed per channel and locale so any changes you make to targets in one channel/locale will not be automatically applied to the rest.
+Targets in pages and fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, you can delete the targets for locales that you don't need once the localized XLIFFs are imported. 
+
+> [!NOTE]
+> Targets are managed per channel and locale so any changes you make to targets in one channel/locale will not be automatically applied to the rest.
 
 <<TODO - C1 needs to get explicit cookie consent from C2 for targeting; need to include info on that module>>
 <<Analytics??>>
