@@ -932,6 +932,8 @@
           href: manage-ecommerce-users-roles.md
         - name: Apply inventory settings
           href: inventory-settings.md
+        - name: Apply add product to cart settings
+          href: add-cart-settings.md
         - name: Search engine optimization (SEO) considerations for your site
           href: search-engine-optimization-considerations.md
         - name: Manage Content Security Policy (CSP)
@@ -960,6 +962,8 @@
             href: add-logo.md 
           - name: Select a site theme
             href: select-site-theme.md
+          - name: Adventure Works theme
+            href: adventure-works-theme.md
           - name: Work with CSS override files
             href: css-override-files.md
           - name: Work with style presets
@@ -1070,6 +1074,16 @@
             href: add-hero-module.md 
           - name: Video player module
             href: add-video-player.md
+          - name: Active image module
+            href: active-image-module.md
+          - name: Image list module
+            href: image-list-module.md
+          - name: Interactive feature module
+            href: interactive-feature-module.md
+          - name: Subscribe module
+            href: subscribe-module.md
+          - name: Tile list module
+            href: tile-list-module.md
         - name: Header and footer modules
           items:
           - name: Header module
