@@ -976,10 +976,6 @@
             href: add-languages-to-site.md
           - name: Add script code to site pages to support telemetry
             href: add-telemetry.md
-        - name: Adventure Works theme
-          items:
-          - name: Adventure Works theme overview
-            href: adventure-works-theme.md
         - name: Modules
           items:
           - name: Work with modules
@@ -1022,6 +1018,10 @@
             href: customize-site-navigation.md
           - name: Create a page URL
             href: create-page-URL.md
+        - name: Adventure Works theme
+          items:
+          - name: Adventure Works theme overview
+            href: adventure-works-theme.md            
       - name: Manage digital assets
         items:
         - name: Digital asset management overview
