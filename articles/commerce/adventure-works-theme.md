@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Adventure Works theme
-description: This topic covers the Adventure Works theme and describes how to apply it to site pages in Microsoft Dynamics 365 Commerce.
+title: Adventure Works theme overview
+description: This topic gives an overview of the Adventure Works theme and describes how to apply it to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 07/08/2021
 ms.topic: article
@@ -25,12 +25,12 @@ ms.dyn365.ops.version: Release 10.0.8
 
 ---
 
-# Adventure Works theme
+# Adventure Works theme overview
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic covers the Adventure Works theme and describes how to apply it to site pages in Microsoft Dynamics 365 Commerce.
+This topic gives an overview of the Adventure Works theme and describes how to apply it to site pages in Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce has a theme for e-commerce that is named Adventure Works. The Adventure Works theme showcases sports and recreational products, and is optimized for a rich and enhanced storytelling experience. It provides a modern appearance, new layouts, and animation effects to create an immersive, engaging online shopping experience for e-commerce customers.
 
