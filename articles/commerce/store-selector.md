@@ -4,7 +4,8 @@
 title: Store selector module
 description: This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 04/02/2021
+manager: annbe
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -29,6 +30,7 @@ ms.dyn365.ops.version:
 # Store selector module
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
@@ -74,7 +76,6 @@ For the Autosuggest REST API, you must ensure that the following URLs are allowe
 - To the **script-src** directive, **add &#42;.bing.com, &#42;.virtualearth.net**.
 - To the **script style-src** directive, add **&#42;.bing.com**.
 
- 
 ## Pickup in store mode
 
 The store selector module supports a **Pick up in store** mode that shows a list of stores where a product is available for pickup. It also shows store hours and product inventory for each store in the list. The store selector module requires the context of a product to render product availability and to let the user add the product to the cart, if the product's delivery mode is set to **pickup** at the selected store. For more information, see [Inventory settings](inventory-settings.md). 
@@ -114,6 +115,10 @@ The store selector module can be used together with the map module to show the s
 | Autosuggest options: Max results | Number | This property defines the maximum number of autosuggest results that can be shown via the Bing Autosuggest API. |
 | Search radius | Number | This property defines the search radius for stores, in miles. If no value is specified, the default search radius of 50 miles is used. |
 | Terms of service | URL |  This property specifies the terms of service URL that is required to use the Bing Maps service. |
+
+## Site settings
+
+The store selector module respects the [Add product to cart settings](add-cart-settings.md). After an item is added to the cart from the store selector module, site users will see the appropriate configured workflows.
 
 ## Add a store selector module to a page
 
