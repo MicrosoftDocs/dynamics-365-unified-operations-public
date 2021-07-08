@@ -101,7 +101,7 @@ Rates are specific to the transaction date. Therefore, each transaction is indiv
 
 For historical currency translation, the pre-calculated period balances can be used instead of individual transaction details. This behavior differs from the behavior for current rate translation.
 
-## How does this affect performance?
+## How does historical currency translation affect performance?
 
 When data that is presented on the reports is updated, there might be a delay because amounts must be recalculated by checking transaction details. This delay is triggered every time that the rates are updated or more transactions are posted. For example, if thousands of accounts are set up for historical translation a couple times per day, there might be a delay of up to an hour before the data on the report is updated. On the other hand, if there is a smaller number of specific accounts, the processing times for updates to the report data can be reduced to minutes or less.
 
