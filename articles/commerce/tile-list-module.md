@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Tile list modules
+title: Tile list module
 description: This topic covers tile list modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 07/08/2021
@@ -26,7 +26,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Tile list modules
+# Tile list module
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
