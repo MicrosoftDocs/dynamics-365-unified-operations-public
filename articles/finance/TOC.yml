@@ -2300,6 +2300,8 @@
                 href: localizations/apac-ind-gst-reference-groups.md
             - name: Tax transactions
               items: 
+              - name: GST TDS on payment of goods and services
+                href: localizations/ind-gst-tds-payment-goods-services.md
               - name: Purchase transactions
                 items:
                 - name: Purchases from unregistered vendors
@@ -2464,6 +2466,10 @@
                 href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
               - name: Include GST when calculating tax collections
                 href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md  
+              - name: TDS on purchases of goods under 194Q
+                href: localizations/ind-tds-purchases-goods.md
+              - name: Post TDS/TCS on non-filers at a higher rate of tax
+                href: localizations/post-tds-tcs-non-filers-higher-tax.md
             - name: India TDS
               items: 
               - name: Indian Tax Deducted at Source (TDS) overview
