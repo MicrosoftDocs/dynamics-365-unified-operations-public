@@ -76,21 +76,21 @@ Follow these steps to set up GST TDS.
 
 1. Go to **Tax** > **Tax configuration** > **Setup** > **GST** > **GST TDS Tax component**, and set up the posting accounts.
 
-    MEDIA FILE 01
+    ![Posting account setup, Accounting tab.](media/gst-tds-payment-01.png)
   
 2. Go to **Accounts payable** > **Vendors** and open the vendor record that you're updating.
 3. Verify each contract individually. For each contract where the value exceeds INR 2,50,000, you must identify a vendor for deduction of GST TDS. On the **Tax information** FastTab, set the **Apply GST TDS** option to **Yes**. You can update this setting at any time.
 
-    MEDIA FILE 02
+    ![Vendors page, Tax information FastTab.](media/gst-tds-payment-02.png)
 
 4.	To record the GST TDS deduction that was made by the customer, go to **Accounts receivable** > **Customers**, and mark the customer as **Govt Company**.
  
-    MEDIA FILE 03
+    ![Customers page, Tax information FastTab.](media/gst-tds-payment-03.png)
  
 5.	When you're ready to post the journal, go to **Accounts receivable** > **Payment** > **Customer payment journal**, and select the appropriate journal.
 6.	In the **Tax information** dialog box, set the **Apply GST TDS** option to **Yesv.
 
-    MEDIA FILE 04
+    ![Tax information dialog box, Apply GST TDS option set to Yes.](media/gst-tds-payment-04.png)
  
 ## Scenario: GST TDS on payment to a vendor transaction
 
@@ -100,19 +100,19 @@ Follow these steps to set up GST TDS.
 4.	In the **Offset account type** field, select **Bank**, and then, in the **Offset account** field, select **Bank-IND OPER**.
 5.	Select **Tax Information**.
  
-    MEDIA FILE 05
+    ![Tax information dialog box.](media/gst-tds-payment-05.png)
 
     Notice that GST TDS is calculated based on the defined percentage (10.0).
     
-    MEDIA FILE 06
+    ![Tax details FastTab  showing GST TDS calculation based on defined percentage.](media/gst-tds-payment-06.png)
  
     Additionally, notice that the GST that is calculated on the invoice amount is excluded from the GST TDS calculation.
     
-    MEDIA FILE 07
+    ![Vendor payments page](media/gst-tds-payment-07.png)
  
     When the journal voucher is posted, it's shown on the Voucher transactions page.
     
-    MEDIA FILE 08
+    ![Voucher transactions page](media/gst-tds-payment-08.png)
  
     The GST TDS on payments from customers is posted in a similar manner when it’s posted to the GST TDS recoverable account.
     
