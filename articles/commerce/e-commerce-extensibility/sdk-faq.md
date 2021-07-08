@@ -271,7 +271,7 @@ The Commerce Online SDK version 1.31 introduced a change on how modules are rend
 
 Example of the error message displayed in developer mode:
 
-![Module render error message](media/ModuleError.jpg)
+![Module render error message](media/ModuleError.png)
 
 
 ## Additional resources
