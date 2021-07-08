@@ -265,6 +265,15 @@ The module library modules have been updated with the correct calling pattern to
 
 The "CartlineComponent" and "WishListIconComponent" components have been renamed to "CartLineItemComponent" and "WishlistIconComponent" respectively. If the previous component names are used in either a cloned module or a view extension, the build errors mentioned above will be displayed. To fix these issues, update the previous component names to the new component names in the cloned module or view extension code.
 
+### Module rendering fails after upgrading to SDK version 1.31
+
+The Commerce Online SDK version 1.31 introduced a change on how modules are rendered in DEVELOPER mode. Modules can be rendered on the server and/or on the client. However, it was not easy to check if there was an issue when attempting to render a module in the server. To make this more visual for the developer, the SDK now renders a message informing  that there is an issue rendering the module on the server and that the issue should be addressed. This validation only happens in DEVELOPER mode. PRODUCTION won’t get affected by it.
+
+Example of the error message displayed in developer mode:
+
+[Module render error message](media/ModuleError.jpg)
+
+
 ## Additional resources
 
 [Core data actions](core-data-actions.md)
