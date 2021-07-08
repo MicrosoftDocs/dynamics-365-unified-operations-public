@@ -148,11 +148,10 @@ The following fields will be added to the mobile device menu item when **Adjustm
 - Edit counting reason code
 - Counting reason code group
 
-When assigning a **Counting reason code group** value for the **Adjustment in** and **Adjustment out** mobile device menu items, the selection of the counting reason codes will get limited to within the group as part of the Warehouse management mobile app processing.
 
 > [!Note]
-> To avoid large adjustment quantities from happening when using the *Warehouse management mobile app* (e.g. when a worker by mistake barcode scans an item number instead of a quantity value) you can define a **Adjustment quantity limit** on the **Worker** page and thereby prevent adjustments quantities above this limit from happening.
-
+> For **Use process guide** enabled **Adjustment in** and **Adjustment out** mobile device menu items you can when assigning a **Counting reason code group** value get a limited list of the counting reason codes as part of the Warehouse management mobile app processing.
+> Besides this the **Use process guide** makes it possible to avoid large adjustment quantities from happening when using the *Warehouse management mobile app* (e.g. when a worker by mistake barcode scans an item number instead of a quantity value). Besides enabling **Use process guide** you must define a **Adjustment quantity limit** on the **Worker** page and thereby prevent adjustments quantities above this limit from happening.
 
 ## Processing with the use of counting reason code
 When using the Warehouse management mobile app the reason codes gets recorded and used right away as part of the following counting journal posting unless a counting approval process has been defined.  
