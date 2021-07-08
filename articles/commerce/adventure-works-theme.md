@@ -2,7 +2,7 @@
 # required metadata
 
 title: Adventure Works theme
-description: This topic covers the Adventure Works theme and describes how to apply the theme to site pages in Microsoft Dynamics 365 Commerce.
+description: This topic covers the Adventure Works theme and describes how to apply it to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 06/30/2021
 ms.topic: article
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Release 10.0.8
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic covers Adventure Works theme and describes how to apply the theme to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers the Adventure Works theme and describes how to apply it to site pages in Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce has a theme for e-commerce called Adventure Works that showcases sports and recreational products. The Adventure Works theme is optimized for a rich and enhanced storytelling experience and provides a modern appearance, new layouts, and animation effects to create an immersive, engaging online shopping experience for e-commerce customers. 
+Dynamics 365 Commerce has a theme for e-commerce that is named Adventure Works. The Adventure Works theme showcases sports and recreational products, and is optimized for a rich and enhanced storytelling experience. It provides a modern appearance, new layouts, and animation effects to create an immersive, engaging online shopping experience for e-commerce customers.
 
 The Adventure Works theme provides the following new workflows:
 
@@ -41,7 +41,7 @@ The Adventure Works theme provides the following new workflows:
 - The quick view module is a pane that slides in on both desktop and mobile viewports.
 - An empty cart can now showcase promotions.
 
-The Adventure Works theme includes the following storytelling modules in the Commerce module library: 
+The Adventure Works theme includes the following storytelling modules in the Commerce module library:
 
 - Tile list module
 - Interactive feature module
@@ -49,38 +49,38 @@ The Adventure Works theme includes the following storytelling modules in the Com
 - Active image module
 - Image list module
 
-The Adventure Works theme is fully responsive and provides an optimized experience for desktop, mobile, and tablet viewports. 
+The Adventure Works theme is fully responsive and provides an optimized experience for desktop, mobile, and tablet viewports.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > The Adventure Works theme and the new modules are available as of the Dynamics 365 Commerce version 10.0.20 release.
 
-The following example image shows a home page using the Adventure Works theme.
+The following illustration shows an example of a home page that uses the Adventure Works theme.
 
-![Example of a home page using the Adventure Works theme](./media/aw_b2c.PNG)
+![Example of a home page that uses the Adventure Works theme](./media/aw_b2c.PNG)
 
-The following example image shows a list page using the Adventure Works theme.
+The following illustration shows an example of a list page that uses the Adventure Works theme.
 
-![Example of a list page using the Adventure Works theme](./media/Aw_list.PNG)
+![Example of a list page that uses the Adventure Works theme](./media/Aw_list.PNG)
 
-The following example image shows a product details page (PDP) using the Adventure Works theme.
+The following illustration shows an example of a product details page (PDP) that uses the Adventure Works theme.
 
-![Example of a product details page (PDP) using the Adventure Works theme](./media/aw_pdp.PNG)
+![Example of a product details page (PDP) that uses the Adventure Works theme](./media/aw_pdp.PNG)
 
-## Use the Adventure Works theme for business-to-business (B2B) sites
+## Use the Adventure Works theme for B2B sites
 
-The Adventure Works theme is also a reference theme for business-to-business (B2B) sites. All B2B modules and workflows are showcased in Adventure Works theme. For information on how to set up a B2B site, see [B2B site setup](./b2b/set-up-b2b-site.md).
+The Adventure Works theme is also a reference theme for business-to-business (B2B) sites. All B2B modules and workflows are showcased in the Adventure Works theme. For information about how to set up a B2B site, see [B2B site setup](./b2b/set-up-b2b-site.md).
 
-The following example image shows a B2B home page using the Adventure Works theme.
+The following illustration shows an example of a B2B home page that uses the Adventure Works theme.
 
-![Example of a B2B home page using the Adventure Works theme](./media/aw_b2b.PNG)
+![Example of a B2B home page that uses the Adventure Works theme](./media/aw_b2b.PNG)
 
 ## Theme extensions
 
-The Adventure Works theme includes several theme extensions, including the **View extensions** and **Module definition** extensions. The Adventure Works theme can be used as a reference theme to build similar extensions. For example, the list page on the Adventure Works theme is implemented as a view extension that has a horizontal refiner compared to the left pane refiner used in the Fabrikam theme.
+The Adventure Works theme includes several theme extensions, such as the **View extensions** and **Module definition** extensions. The Adventure Works theme can be used as a reference theme to build similar extensions. For example, the list page in the Adventure Works theme is implemented as a view extension that has a horizontal refiner. (By contrast, a left pane refiner is used in the Fabrikam theme.)
 
-Similarly, there are other modules that include module definition extensions. For example, the [Cart icon module](cart-icon-module.md) includes two additional **Empty Cart** and **Promotional Content** slots that are implemented using module definition extensions. Another example is the header module, where a new **Mobile Logo** property has been added that supports a logo on mobile view ports. The **Mobile Logo** property is implemented as a header module definition extension.
+Likewise, other modules include module definition extensions. For example, the [cart icon module](cart-icon-module.md) includes two additional **Empty Cart** and **Promotional Content** slots that are implemented by using module definition extensions. Additionally, a new **Mobile Logo** property has been added to the header module to support a logo on mobile viewports. This property is implemented as a header module definition extension.
 
-For more information on theme extensions, see [Theme extensions](e-commerce-extensibility/theme-module-extensions.md).
+For more information about theme extensions, see [Theme extensions](e-commerce-extensibility/theme-module-extensions.md).
 
 ## Additional resources
 
@@ -102,7 +102,4 @@ For more information on theme extensions, see [Theme extensions](e-commerce-exte
 
 [Set up a B2B e-commerce site](./b2b/set-up-b2b-site.md)
 
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-
-
