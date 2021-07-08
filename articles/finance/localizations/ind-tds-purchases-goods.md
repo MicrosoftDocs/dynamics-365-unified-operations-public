@@ -97,13 +97,13 @@ To define the initial TDS threshold value for transactions that occur between Ap
 2. In the list, find and select the feature that is named **(India) Enable initial TDS threshold under section 194Q**.
 3. Select **Enable now**.
 
-    MEDIA FILE 01 ![Example.](media/Annotation-2019-05-16-113209.png)
+    ![Example.](media/tds-purchase-goods-01.png)
 
 4. You receive a message that prompts you to refresh your browser window after the feature is enabled. Refresh your browser window to verify that you can open the new page.
 
    After the feature is enabled, TDS is automatically reversed at the time of settlement if TDS is deducted on the invoice and the payment. However, you can disable the related feature, **(India) Reversal of vendor TDS at the time of settlement when deducted on both Invoice and payment** at any time in Feature management.
 
-    MEDIA FILE 02 ![Example.](media/Annotation-2019-05-16-113209.png)
+    ![Example.](media/tds-purchase-goods-02.png)
     
 ## Define the initial TDS threshold value for each vendor
 
@@ -112,7 +112,7 @@ To define the initial TDS threshold value for transactions that occur between Ap
 3. Select a vendor account, and then select a withholding tax code.
 4. In the **Initial threshold turnover amount** field, enter the invoice value of transactions that occurred between April 1 and June 30, 2021.
 
-    MEDIA FILE 03 ![Example.](media/Annotation-2019-05-16-113209.png)
+    ![Example.](media/tds-purchase-goods-03.png)
      
 ## Create a withholding tax component group
 
@@ -122,7 +122,7 @@ To define the initial TDS threshold value for transactions that occur between Ap
 4.	In the **Status** field, select **Resident**.
 5.	In the **Section** field, select **194Q**.
 
-    MEDIA FILE 04 ![Example.](media/Annotation-2019-05-16-113209.png)
+    ![Example.](media/tds-purchase-goods-04.png)
     
 
 ## Create a withholding tax component
@@ -133,7 +133,7 @@ To define the initial TDS threshold value for transactions that occur between Ap
 4.	In the **Withholding tax component group** field, select **POG**.
 5.	In the **Section** field, select **194Q**.
 
-    MEDIA FILE 05 ![Example.](media/Annotation-2019-05-16-113209.png)
+    ![Example.](media/tds-purchase-goods-05.png)
     
 ## Set up threshold definitions
 
@@ -150,7 +150,7 @@ To define the initial TDS threshold value for transactions that occur between Ap
 11.	In the **Lower limit** field, enter **5,000,000**. In the **Upper limit** field, enter **0**.
 12.	Set the **Final level** option to **Yes**, and then close the page.
 
-    MEDIA FILE 06 ![Example.](media/Annotation-2019-05-16-113209.png)
+    ![Example.](media/tds-purchase-goods-06.png)
 
 ## Set up a withholding tax code
 
@@ -174,7 +174,7 @@ To define the initial TDS threshold value for transactions that occur between Ap
 
 4. Close the **Withholding tax values** page.
 
-    MEDIA FILE 07 ![Example.](media/Annotation-2019-05-16-113209.png)
+    ![Example.](media/tds-purchase-goods-07.png)
     
 5. On the **Withholding tax codes** page, in the left pane, select **POG**.
 6. Mark **Apply threshold**.
@@ -210,7 +210,7 @@ To define the initial TDS threshold value for transactions that occur between Ap
 
 17.	Unmark **Calculate previously nontaxed transactions**, and then close the page.
 
-    MEDIA FILE 08 ![Example.](media/Annotation-2019-05-16-113209.png)
+    ![Example.](media/tds-purchase-goods-08.png)
 
 ## Create a withholding tax group
 
@@ -229,7 +229,7 @@ To define the initial TDS threshold value for transactions that occur between Ap
 7. In the **Taxable basis** field, select **Gross amount**.
 8. Close the page.
 
-    MEDIA FILE 09 ![Example.](media/Annotation-2019-05-16-113209.png)
+    ![Example.](media/tds-purchase-goods-09.png)
 
 ## Attach a withholding tax group to a vendor account
 
@@ -238,7 +238,7 @@ To define the initial TDS threshold value for transactions that occur between Ap
 3.	On the **Invoice and delivery** FastTab, set **Calculate withholding tax** to **Yes**.
 4.	In the **TDS group** field, select **POG**.
 
-    MEDIA FILE 10 ![Example.](media/Annotation-2019-05-16-113209.png)
+    ![Example.](media/tds-purchase-goods-10.png)
 
 ## Create and post the invoice journal
 
@@ -254,7 +254,7 @@ To define the initial TDS threshold value for transactions that occur between Ap
    - **Already posted transaction**: 2,000,000
    - **Initial threshold value**: 2,000,000
  
-     MEDIA FILE 11 ![Example.](media/Annotation-2019-05-16-113209.png)
+     ![Example.](media/tds-purchase-goods-11.png)
    
 3. Select **Withholding tax**.
 
@@ -266,7 +266,7 @@ To define the initial TDS threshold value for transactions that occur between Ap
    - **TDS**: Total cumulative value (55,00,000) – 50,00,000 = 5,00,000
    - **Threshold value**: 5,00,000 at a rate of 0.1 percent = 500
 
-    MEDIA FILE 12 ![Example.](media/Annotation-2019-05-16-113209.png)
+    ![Example.](media/tds-purchase-goods-12.png)
   
 ## Reversal of TDS on invoice settlement when TDS is deducted separately on the invoice and the payment
 
@@ -305,6 +305,6 @@ Because the invoice is posted first, the payment must be reversed up to the valu
 
 The following illustration shows the related voucher that is posted.
 
-MEDIA FILE 13 ![Example.](media/Annotation-2019-05-16-113209.png)
+![Example.](media/tds-purchase-goods-13.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
