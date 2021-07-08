@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add product to cart settings
+title: Apply add product to cart settings
 description: This topic covers "Add product to cart" settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 07/08/2021
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Add product to cart settings
+# Apply add product to cart settings
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
@@ -59,7 +59,7 @@ The following illustration shows an example of an "added to cart" confirmation n
 
 ![Example of an "added to cart" confirmation notification on the Adventure Works site](./media/AW_minicart.PNG)
 
-## Additional Resources
+## Additional resources
 
 [Module library overview](starter-kit-overview.md)
 
