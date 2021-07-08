@@ -4,7 +4,7 @@
 title: Add product to cart settings
 description: This topic covers "Add product to cart" settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 06/30/2021
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
