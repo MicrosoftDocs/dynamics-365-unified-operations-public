@@ -962,8 +962,6 @@
             href: add-logo.md 
           - name: Select a site theme
             href: select-site-theme.md
-          - name: Adventure Works theme
-            href: adventure-works-theme.md
           - name: Work with CSS override files
             href: css-override-files.md
           - name: Work with style presets
@@ -978,6 +976,10 @@
             href: add-languages-to-site.md
           - name: Add script code to site pages to support telemetry
             href: add-telemetry.md
+        - name: Adventure Works theme
+          items:
+          - name: Adventure Works theme overview
+            href: adventure-works-theme.md
         - name: Modules
           items:
           - name: Work with modules
