@@ -61,6 +61,12 @@ In the example in the following illustration, a buy box on a PDP hosts product i
 | Images | Images that are selected from site builder Media Library | In addition to being rendered from a product, images can be curated for a media gallery module. These images will be appended to any product images that are available. This capability is available in Commerce version 10.0.12. |
 | Thumbnail orientation | **Vertical** or **Horizontal** | This property specifies whether thumbnail images should be shown in a vertical strip or a horizontal strip. |
 | Hide master product images for variant | **True** or **False** | If this property is set to **True**, when a variant is selected, images of the master product are hidden unless the variant has no images. This property doesn't affect products that have no variants. |
+| Update media on dimension selection|  **True** or **False** | This property when enabled will update the images in the medio when any dimension such as Color, Style or Size is selected and if an image is available.  This simplifies browsing experience by not requiring a product variant (all available dimensions) to be selected for media images to be updated. This property is available in Advanced tab and in Dynamics 365 Commerce 10.0.21 release.|
+
+>[Important]
+> **Update media on dimension selection** is  available in Dynamics 365 Commerce 10.0.21 release and requires the respective SSK package to be installed (9.31)
+> 
+
 
 The following illustration shows an example of a media gallery module where the full-screen and zoom options are available.
 
