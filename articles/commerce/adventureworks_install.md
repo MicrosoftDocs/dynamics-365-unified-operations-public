@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.8
 This topic gives an overview of how to install the Adventure works theme. 
 
 > [!IMPORTANT]
-> The Adventure Works theme and the new modules are available as of the Dynamics 365 Commerce version 10.0.20 release.
+> The Adventure Works theme and the new modules are available as of the Dynamics 365 Commerce version 10.0.20 release. THis theme is available via Marketplace (Appsource) and will need to be installed  *new customer*  * old customers*
 
 ## Prerequisites
 
