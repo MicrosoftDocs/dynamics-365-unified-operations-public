@@ -43,8 +43,13 @@ The following image shows an example of a cart icon module that displays a mini 
 ## Module properties
 
 - **Show mini cart** – When true, this property enables a cart summary (mini cart) to be displayed when the cart icon is hovered over. This functionality is only supported for desktop view ports.
+- **Allow anonymous checkout** - When true, this property allows mini-cart to allow users to do a guest checkout if the user is not signed-in. This property is available in Dynamics 365 Commerce 10.0.21 release as part of the SSK package.
+- **Order of items** - This property controls the order in which items appear in the mini cart. **New items added to top of the list** this will ensure that as an item is added to cart, it will appear on the top of the mini-cart items. **New items added to bottom of the list** will be default behavior, where items are added to the bottom of the mini cart list. This property is available in Dynamics 365 Commerce 10.0.21 release as part of the SSK package.
 
-## Module properties in the Adventure Works theme
+>[Important]
+> **Allow anonymous checkout** and **Order of items** are available in Dynamics 365 Commerce 10.0.21 release and require the SSK package to be installed (9.31 version).
+
+## Module properties and slots in the Adventure Works theme
 
 In the Adventure Works theme, the cart icon module includes two additional slots for the mini cart. These slots are included as a module definition extension.
 
