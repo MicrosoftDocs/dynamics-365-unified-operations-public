@@ -70,7 +70,7 @@ To target page modules in Commerce site builder, follow these steps.
     > Assigning audiences is an optional step for target creation but you will need to include at least one audience before publishing the target to ensure the right groups of users see it.
 6. Select the time zone, start and end dates/times to display your target. You can also set the target to show at all times during this window or choose specific days and times and click **Next**. 
     > [!NOTE]
-    > - The times and timezone you specify are global. If you wish to target different locations at different times/zones, you will need to create different targets with the desired schedule for each location.
+    > The times and timezone you specify are global. If you wish to target different locations at different times/zones, you will need to create different targets with the desired schedule for each location.
 8. Review the details and once everything looks good, click **Create target experience** and **Go to target**. This creates the target shell to which you can now add modules. 
 9. Select the module to be targeted, select the ellipsis (...), and then select **Add to current target**. When you target a parent module, all its children become part of that target. The targeted modules are highlighted with a green color.
 10. Make the necessary content updates to the targeted module and add more modules to the target if required. Click **Save** to save all your changes.
