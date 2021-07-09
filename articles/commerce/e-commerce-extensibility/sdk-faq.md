@@ -271,8 +271,9 @@ The Microsoft Dynamics 365 Commerce online software development kit (SDK) versio
 
 Example of the error message displayed in developer mode:
 
-![Module render error message](media/ModuleError.png)
+*test-module' threw exception
 
+Error: Error during server side rendering for module test-module of type test-module. NOTE: This error is only displayed in DEVELOPER mode. This won't affect PRODUCTION. This is a safety measure so developer can address issues that happen on the server. Please, address the following issue: window is not defined*
 
 ## Additional resources
 
