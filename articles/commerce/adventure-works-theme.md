@@ -82,6 +82,11 @@ Likewise, other modules include module definition extensions. For example, the [
 
 For more information about theme extensions, see [Theme extensions](e-commerce-extensibility/theme-module-extensions.md).
 
+## Install the theme
+
+To install Adventure works theme, please refer to [Installing Adventure Works theme](adventureworks_install.md)
+
+
 ## Additional resources
 
 [Module library overview](starter-kit-overview.md)
