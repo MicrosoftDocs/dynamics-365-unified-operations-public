@@ -43,7 +43,7 @@ You can begin your targeting journey by first creating either an audience or a t
 
 ## Audiences
 
-An audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND/OR conditions run against basic information or segments available in customer requests. Commerce natively supports segments such as device information (desktop/mobile/tablet, OS, browser), sign-in status, referrer, and query string parameters. Additionally, Commerce also supports connecting to third-party geolocation and segmentation providers. For example, you can purchase a third-party connector from [AppSource](https://appsource.microsoft.com) and then simply follow the setup instructions provided by the publisher. Alternatively, You can use sample test connectors from Commerce to test without needing to configure an external service. For more information on setting up test connectors, see [Configure and enable connectors](e-commerce-extensibility/connectors.md). 
+An audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND/OR conditions run against basic information or segments available in customer requests. Commerce natively supports segments such as device information (desktop/mobile/tablet, OS, browser), sign-in status, referrer, and query string parameters. Additionally, Commerce also supports connecting to third-party geolocation and segmentation providers. For example, you can purchase a third-party connector from [AppSource](https://appsource.microsoft.com) and then simply follow the setup instructions provided by the publisher. Alternatively, you can use sample test connectors from Commerce to test without needing to configure an external service. For more information on setting up test connectors, see [Configure and enable connectors](e-commerce-extensibility/connectors.md). 
 
 **Disclaimer:** By enabling this feature, your data will be shared with third-party systems that you select. You control what data, if any, that you provide to the third-party. You understand that the data handling and compliance standards of the third-party may not be the same as Microsoft Dynamics 365 Commerce. Your privacy is important to us. To learn more read our [Privacy and Cookies notice](https://privacy.microsoft.com/en-us/privacystatement).
 
@@ -52,7 +52,7 @@ To create an audience in Commerce site builder, follow these steps.
 1. Select **Audiences** in the left navigation pane, and then select **New**.
 1. Enter a name for the audience. You can also optionally add tags and a description. 
 1. Select **Create** and **Add new rule block** on the following page. A rule block is a collection of rules joined together by AND conditions. You can also create multiple rule blocks with OR conditions between them.
-1. Select a data source for your segments, followed by the segment name, operator, and value(s). You can create and delete more rules within a rule block, or create and delete entire rule blocks. You can also move rule blocks up or down as needed.
+1. Select a data source for your segments, followed by the segment name, operator, and value(s). You can create and delete more rules within a rule block or create and delete entire rule blocks. You can also move rule blocks up or down as needed.
     > [!NOTE]
     > - You can have up to 100 values in a list, and each list item can contain up to 50 characters.
     > - Ensure that your use of cookies complies with applicable laws.
@@ -65,7 +65,7 @@ You can edit an audience by selecting its blue link on the **Audiences** tab and
 
 ## Targets
 
-A target is the user experience that will be shown to members of the chosen audience(s). It can include variations of one or more modules within a page or fragment. You can specify a schedule for your target to indicate how long it remains active. Note that this is a separate action from scheduling a publish group that determines when a collection of content will be published. You can also preview your target to see what it will look like to members of selected audiences. Additionally, you can prioritize your targets to indicate which target should be shown in case of a conflict.
+A target is the user experience that is shown to members of the chosen audience(s). It can include variations of one or more modules within a page or fragment. You can specify a schedule for your target to indicate how long it remains active. Note that this is a separate action from scheduling a publish group that determines when a collection of content will be published. You can also preview your target to see what it will look like to members of selected audiences. Additionally, you can prioritize your targets to indicate which target should be shown in case of a conflict.
 
 ### Create a target
 
@@ -86,8 +86,8 @@ To target page modules in Commerce site builder, follow these steps.
 1. Make the necessary content updates to the targeted module and add more modules to the target if required. Select **Save** to save all your changes.
 1. Before you publish your target, make sure to select **Preview** in the command bar to review it first. You can then select from one of the following options:
     - **Basic preview** to preview only the selected variation (default page or target) without any associated audiences.
-    - **Advanced preview** if you have multiple targets on this page and want to preview them as a user belonging to a selected set of audiences. Select **Next** to choose from the list of relevent audiences, or remove the filter to choose from all audiences.
-1. Once everything looks good, you will need to publish the page for the target to go live. Select **Publish** to go live immediately, or use a publish group to schedule when the page goes live.
+    - **Advanced preview** if you have multiple targets on this page and want to preview them as a user belonging to a selected set of audiences. Select **Next** to choose from the list of relevant audiences or remove the filter to choose from all audiences.
+1. Once everything looks good, you will need to publish the page for the target to go live. Select **Publish** to go live immediately or use a publish group to schedule when the page goes live.
 
 You can also target fragments in a similar way from the **Fragments** tab in the left navigation pane.
 
