@@ -57,39 +57,63 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
 > The user who completes this procedure must have Admin rights for the tenant to register applications.
 
 2. Go to **Azure Active Directory** > **App registrations** > **New application registration**.<br>
-    ![Azure Portal App Registration.](media/Azure-Portal-AppRegistration.png)
-
+    
 3. Enter the following values:
 
 - **Name** - Your app name.
-- **Application type** - Web app/API
-- **Sign-on URL** - The base URL of your client. For example, `https://contosoax7.cloud.dynamics.com`.
+- **Supported account types** Accounts in this organization directly only ( - Single tenant)
+- **Application type** - Web
+- **Redirect URI** - The base URL of your client. For example, `https://contosoax7.cloud.dynamics.com`.
 
 > [!NOTE]
 > Depending on your version, you may need to add /oauth as a suffix to the URL, or use http instead of https as the protocol, such as: `https://contosoax7.cloud.dynamics.com/oauth` or `http://contosoax7.cloud.dynamics.com/oauth`.
 			 
-4. Click **Create**.
-5. Copy the **Application ID**. This will be used to connect to the PowerBI.com service.
-6. Click **Settings** > **Required permissions** > **Add** > **Select an API** > **Power BI Service (Power BI)**.
-7. Click **Select**.
-8. Enable Access and click **Select**.<br>
-    ![Azure Portal App Permissions.](media/Azure-Portal-AppPermissions.png)
+4. Click **Register**.
+5. Copy the **Application (client) ID**. This will be used to connect to the PowerBI.com service.
+>[!NOTE] 
+>Make sure to copy off the **Appplication (client) ID**
 
-9. Click **Done** and then click **Grant Permissions**.
-10. Click **Settings** > **Keys**.
-11. Enter a value for **Key description** and **Expires**, and then click **Save**.
+6. Click **Manage** > **API permissions** > **+ Add a permission** > **Microsoft APIs** > **Power BI Service**.
+7. Click **Select Delegated permissions**.
+8. Enable the following permissions. 
+- **Content>** 
+- Content.Create
 
-Make a note of the **Application ID** and **Application Key**. You will use these values in the next procedure.
+- **Dashboard>**
+- Dashboard.Read.All
+- Dashboard.ReadWrite.All
+
+- **Dataset>**
+- Dataset.Read.All
+- Dataset.ReadWrite.All
+
+- **Report>**
+- Report.Read.All
+- Report.ReadWrite.All
+
+- **Workspace>**
+- Workspace.Read.All
+- Workspae.ReadWrite.All
+   
+9. Click **Add permissions**.
+
+10. Click **Manage** > **Certificates & secrets**.
+11. In Client secrets Click ** + New client secret**
+12. Enter a value for **Description** and **Expires**, and then click **Add**.
+
+Make a note of the **Application ID** and **Secret Value**. You will use these values in the next procedure.
+> [!NOTE]
+> It is important to capture the **Application (client) Id** and **Secret Value** before moving to the next step. 
 
 ## Specify Power BI settings in Finance and Operations
 
-1. In the client, open the **Power BI configuration** page.<br>
+1. In the Finance and Operations client, open the **Power BI configuration** page.<br>
     ![Power BI configuration dialog.](./media/D365-PBI-Configuration.png)
 
 2. Select **Edit**.
 3. Set the **Enabled** option to **Yes**.
 4. In the **Application ID** field, enter the **Application ID** value that you got from Power BI in the previous procedure.
-5. In the **Application Key** field, enter the **Application Key** value that you got from Power BI in the previous procedure.
+5. In the **Application Key** field, enter the **Secret Value** value that you got from Azure Active Directory in the previous procedure.
 
     You can apply the company filter only if your Power BI content has a table that is named **Company** and a column that is named **ID**. Ready-made Power BI content that is released uses this convention.
 
