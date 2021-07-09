@@ -94,6 +94,6 @@ To manage your targets, go to the default page or fragment and follow these step
 Targets in pages and fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, you can delete the targets for locales that you don't need once the localized XLIFFs are imported. 
 
 > [!NOTE]
-> Targets are managed per channel and locale so any changes you make to targets in one channel/locale will not be automatically applied to the rest.
+> Targets are managed per channel and locale. Any changes you make to targets in one channel/locale will not automatically carry forward to the rest.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
