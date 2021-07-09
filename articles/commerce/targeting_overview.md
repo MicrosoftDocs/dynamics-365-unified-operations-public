@@ -34,7 +34,7 @@ You can create and manage audiences in site builder based on customer data such 
 You can begin your targeting journey by creating an audience or a target but both are necessary parts to a successful targeting experience.
 
 > [!NOTE]
-> - Targeting relies on users' cookie consent. If they opt out, they will not be shown any targeted content. For more information on cookie compliance, see [Cookie compliance](commerce/cookie-compliance.md).
+> - Targeting relies on users' cookie consent. If they opt out, they will not be shown any targeted content. For more information on cookie compliance, see [Cookie compliance](cookie-compliance.md).
 
 ## Audiences
 An audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information or segments available in the customer's request. Commerce natively supports segments such as device info (desktop/mobile/tablet, OS, browser), sign-in status, referrer and query string parameters. Additionally, Commerce also supports connecting to third-party geolocation and segmentation providers. You can purchase a third-party connector from [AppSource](https://appsource.microsoft.com) and follow the setup instructions provided by the publisher. You can alternatively use sample test connectors from Commerce to test without needing to configure an external service. For more information on setting up test connectors, see [Configure and enable connectors](e-commerce-extensibility/connectors.md). 
