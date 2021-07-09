@@ -57,7 +57,7 @@ You can edit an audience by clicking on it's blue link in the **Audiences** tab 
 > Audiences are a site-level concept in site builder. You can share the same audience across multiple targets.
 
 ## Targets
-A target is the user experience that will be shown to members of the chosen audience(s). It can either include variations of one or more modules within a page or a fragment. You can specify a schedule for your target to indicate how long it remains active. Note that this is separate from scheduling a publish group that determines when a collection of content will go live. You can also preview your target to see what it will look like to members of selected audiences. Additionally you can prioritize your targets created against the same module to indicate which one should be shown in the case of a conflict.
+A target is the user experience that will be shown to members of the chosen audience(s). It can either include variations of one or more modules within a page or a fragment. You can specify a schedule for your target to indicate how long it remains active. Note that this is separate from scheduling a publish group that determines when a collection of content will go live. You can also preview your target to see what it will look like to members of selected audiences. Additionally you can prioritize your targets to indicate which one should be shown in the case of a conflict.
 
 ### Create a target
 To target page modules in Commerce site builder, follow these steps.
