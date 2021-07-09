@@ -267,9 +267,9 @@ The "CartlineComponent" and "WishListIconComponent" components have been renamed
 
 ### Module rendering fails after upgrading to SDK version 1.31
 
-The Microsoft Dynamics 365 Commerce online software development kit (SDK) version 1.31 introduced a change on how modules are rendered in **Development** environment. We have seen increased number of issues because Modules failed to load server side. Even though this happen during the development, since our modules can be rendered both on server and client, the issue is masked. Also, server side failures are less obvious to detect. To make this more visual for the developer, the SDK now renders a message informing developer that there is an issue rendering the module on the server and that the issue should be addressed to render the module successfully in development environment. This validation only happens in **Development** environment. **Production** environment won’t get affected by it. 
+The Microsoft Dynamics 365 Commerce online software development kit (SDK), version 1.31, introduced a change on how modules are rendered in **Development** environment. There were a number of issues because modules failed to load on the server side. Even though this happened during the development, because modules can be rendered both on server and client, the issue is masked. Also, server-side failures are less obvious, which makes them harder to detect. To make the failure more apparent, the SDK now renders a message that there is an issue rendering the module on the server and that the issue should be addressed to render the module successfully in development environment. This validation only happens in the **Development** environment. **Production** environment isn't affected. 
 
-Example of the error message displayed in developer mode:
+Here is an example of the error message displayed in developer mode:
 
 *test-module' threw exception*
 
