@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 10.0.21
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to create, edit, and manage audiences and target variations in Microsoft Dynamics 365 Commerce site builder using device, market, and geolocation information. Basic segmentation and targeting based on information available in the user's browser such as device type or location is enabled for e-commerce modules and fragments within a page.
+This topic describes how to create, edit, and manage audiences and target variations in Microsoft Dynamics 365 Commerce site builder using device, market, and geolocation information. 
 
-Dynamics 365 Commerce enables you to target specific groups of customers with different page content based on their device information, geolocation data, and other dynamically derived attributes from browser requests. This helps personalize content in near real-time for these target groups known as *audiences* and drives increased user engagement and satisfaction.
+Dynamics 365 Commerce enables you to target specific groups of customers with different page content based on their device information, geolocation data, and other dynamically derived attributes from browser requests. Basic segmentation and targeting based on information available in a site user's browser is enabled for e-commerce modules and fragments within a page. This helps personalize content in near real-time for these target groups known as *audiences* and drives increased user engagement and satisfaction.
 
 You can create and manage audiences in Commerce site builder based on customer data such as location, device information, sign-in status, and other information gathered from customer web requests. You can then prepare special variations of your content for members of these audiences. Such variations are called **targets** and are also authored and managed in site builder.
 
@@ -65,11 +65,11 @@ You can edit an audience by selecting its blue link on the **Audiences** tab and
 
 ## Targets
 
-A target is the user experience that is shown to members of the chosen audience(s). It can include variations of one or more modules within a page or fragment. You can specify a schedule for your target to indicate how long it remains active. Note that this is a separate action from scheduling a publish group that determines when a collection of content will be published. You can also preview your target to see what it will look like to members of selected audiences. Additionally, you can prioritize your targets to indicate which target should be shown in case of a conflict.
+A target is the user experience that is shown to members of a chosen audience(s). It can include variations of one or more modules within a page or fragment. You can specify a schedule for your target to indicate how long it remains active. Note that this is a separate action from scheduling a publish group that determines when a collection of content will be published. You can also preview your target to see what it will look like to members of selected audiences. Additionally, you can prioritize your targets to indicate which target should be shown in case of a conflict.
 
 ### Create a target
 
-To target page modules in Commerce site builder, follow these steps.
+To create a target shell for page modules in Commerce site builder, follow these steps.
 
 1. Select **Pages** in the left navigation pane, and then select the blue link for the page that has the module(s) you want to target.
 1. Select **Edit** to check out the page for editing.
@@ -77,22 +77,22 @@ To target page modules in Commerce site builder, follow these steps.
 1. Enter names for your target and description, and then select **Next**.
 1. Select **Add** to include or exclude audiences that will see this targeted experience, and then select **Next**. 
     > [!NOTE]
-    > Assigning audiences is an optional step for target creation, but you will need to include at least one audience before publishing the target to ensure the right groups of users see it.
-1. Select the time zone and start and end dates/times to display your target. You can also set the target to show at all times during this window or choose specific days and times. When done, select **Next**. 
+    > Assigning audiences is an optional step for target creation, but you will need to include at least one audience before publishing the target to ensure that the intended groups of users see it.
+1. Select the time zone and start/end dates and times to display your target. You can also set the target to show at all times during this window or choose specific days and times. When done, select **Next**. 
     > [!NOTE]
     > The times and time zone you specify are global. If you wish to target different locations at different times or time zones, you will need to create different targets with the desired schedule for each location.
 1. Review the details and once everything looks good, select **Create target experience** and **Go to target**. This creates the target shell to which you can now add modules. 
 1. Select the module to be targeted, select the ellipsis (...), and then select **Add to current target**. When you target a parent module, all of its children become part of that target. The targeted modules are highlighted with a green color.
-1. Make the necessary content updates to the targeted module and add more modules to the target if required. Select **Save** to save all your changes.
+1. Make the necessary content updates to the targeted module and add more modules to the target as needed. Select **Save** to save all your changes.
 1. Before you publish your target, make sure to select **Preview** in the command bar to review it first. You can then select from one of the following options:
     - **Basic preview** to preview only the selected variation (default page or target) without any associated audiences.
     - **Advanced preview** if you have multiple targets on this page and want to preview them as a user belonging to a selected set of audiences. Select **Next** to choose from the list of relevant audiences or remove the filter to choose from all audiences.
-1. Once everything looks good, you will need to publish the page for the target to go live. Select **Publish** to go live immediately or use a publish group to schedule when the page goes live.
+1. When you are satisfied with the target configuration, you will need to publish the page for the target to go live. Select **Publish** to go live immediately or use a publish group to schedule when the page goes live.
 
 You can also target fragments in a similar way from the **Fragments** tab in the left navigation pane.
 
 > [!NOTE]
-> To avoid any negative impact to your metrics, you can either have an experiment or targets on a page or fragment, but not both.
+> To avoid any negative impact to your metrics, you can have either an experiment or targets on a page or fragment, but not both.
 
 ### Manage targets
 
