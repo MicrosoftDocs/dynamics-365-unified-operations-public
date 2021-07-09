@@ -33,6 +33,9 @@ You can create and manage audiences in site builder based on customer data such 
 
 You can begin your targeting journey by creating an audience or a target but both are necessary parts to a successful targeting experience.
 
+> [!NOTE]
+> - Targeting relies on users' cookie consent. If they opt out, they will not be shown any targeted content. For more information on cookie compliance, see [Cookie compliance](commerce/cookie-compliance.md).
+
 ## Audiences
 An audience is a group of users whose membership is determined by a set of dynamic rules. These rules are simple AND or OR conditions against basic information or segments available in the customer's request. Commerce natively supports segments such as device info (desktop/mobile/tablet, OS, browser), sign-in status, referrer and query string parameters. Additionally, Commerce also supports connecting to third-party geolocation and segmentation providers. You can purchase a third-party connector from [AppSource](https://appsource.microsoft.com) and follow the setup instructions provided by the publisher. You can alternatively use sample test connectors from Commerce to test without needing to configure an external service. For more information on setting up test connectors, see [Configure and enable connectors](e-commerce-extensibility/connectors.md). 
 
@@ -79,7 +82,7 @@ To target page modules in Commerce site builder, follow these steps.
 You can also target fragments in a similar way from the **Fragments** tab in the left navigation pane.
 
 > [!NOTE]
-> You can currently either have an experiment or target on a page but not both.
+> - You can currently either have an experiment or target on a page but not both.
 
 ### Manage targets
 To manage your targets, go to the default page or fragment and follow these steps.
@@ -92,8 +95,5 @@ Targets in pages and fragments will be automatically included when exporting and
 
 > [!NOTE]
 > Targets are managed per channel and locale so any changes you make to targets in one channel/locale will not be automatically applied to the rest.
-
-<<TODO - C1 needs to get explicit cookie consent from C2 for targeting; need to include info on that module>>
-<<Analytics??>>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
