@@ -82,16 +82,16 @@ To target page modules in Commerce site builder, follow these steps.
 You can also target fragments in a similar way from the **Fragments** tab in the left navigation pane.
 
 > [!NOTE]
-> - You can currently either have an experiment or target on a page but not both.
+> - To avoid any dire impact to your metrics, you can either have an experiment or targets on a page/fragment but not both.
 
 ### Manage targets
 To manage your targets, go to the default page or fragment and follow these steps.
-1. Open the targets dropdown and click on **Manage targets**.
+1. Click on the **Target** drop-down and click on **Manage targets**.
 2. Click on a target to **edit**, **duplicate** or **delete** it.
-3. If you have multiple targets on the same module or multiple targets with conflicting schedules, click on **Prioritize targets** to specify the order in which they should be shown. You will also see this button show up in the notifications bar when you add more than one target on a page or fragment. If no priority is specified, the newest target will be picked by default.
+3. If you have multiple targets on the same module or multiple targets with conflicting schedules, click on **Prioritize targets** to specify the order in which they should be shown. This button will also appear in the notifications bar when you add more than one target on a page/fragment as a reminder to prioritize if necessary. If no priority is specified, the newest target will be picked by default.
 
 ### Localize targets
-Targets in pages and fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, you can delete the targets for locales that you don't need once the localized XLIFFs are imported. 
+Targets in pages/fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, you can delete the targets for locales that you don't need once the localized XLIFFs are imported. 
 
 > [!NOTE]
 > Targets are managed per channel and locale. Any changes you make to targets in one channel/locale will not automatically carry forward to the rest.
