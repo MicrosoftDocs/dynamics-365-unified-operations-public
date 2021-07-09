@@ -88,7 +88,7 @@ You can also target fragments in a similar way from the **Fragments** tab in the
 To manage your targets, go to the default page or fragment and follow these steps.
 1. Open the targets dropdown and click on **Manage targets**.
 2. Click on a target to **edit**, **duplicate** or **delete** it.
-3. If you have multiple targets on the same module or multiple targets with conflicting schedules, click on **Prioritize targets** to specify the order in which they should be shown. You will also see this button show up in the notifications bar whenever there is an unresolved conflict. If no priority is specified, the newest target will be picked by default.
+3. If you have multiple targets on the same module or multiple targets with conflicting schedules, click on **Prioritize targets** to specify the order in which they should be shown. You will also see this button show up in the notifications bar when you add more than one target on a page or fragment. If no priority is specified, the newest target will be picked by default.
 
 ### Localize targets
 Targets in pages and fragments will be automatically included when exporting and importing XLIFFs for localization. If this is not desirable, you can delete the targets for locales that you don't need once the localized XLIFFs are imported. 
