@@ -4,7 +4,7 @@
 title: Italian Intrastat
 description: This topic contains information about Intrastat reporting in Italy.
 author: andosip
-ms.date: 9/7/2021
+ms.date: 7/9/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfender
