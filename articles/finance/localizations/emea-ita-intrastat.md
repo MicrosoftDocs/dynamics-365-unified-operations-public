@@ -1,15 +1,22 @@
-﻿---
-title: 
-description: 
-ms.date: 07.10.2021
+---
+# required metadata
+
+title: Italian Intrastat
+description: This topic contains information about Intrastat reporting in Italy.
+author: andosip
+ms.date: 9/7/2021
 ms.topic: article
-ms.service: dynamics365-financials
-author: and
-ms.author: Andosip
-manager: anasyash
+audience: Application User
+ms.reviewer: kfender
+ms.search.region: Global
+ms.author: v-aosipov
+ms.search.validFrom: 
 ---
 
+
 # Italian Intrastat
+
+[!include[banner](../includes/banner.md)]
 
 ## Overview
 
@@ -17,30 +24,572 @@ The **Intrastat** page is used to generate and report information about trade am
 
 The following table shows the fields that appear on the Italian Intrastat declaration.
 
-| **Value**                                                                                    | **Intrastat journal field**                                                                                           | **Goods**      | **Services**  |                |               |     |     |
-|----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|----------------|---------------|----------------|---------------|-----|-----|
-|                                                                                              |                                                                                                                       | **Dispatches** | **Arrivals**  | **Dispatches** | **Arrivals**  |     |     |
-|                                                                                              |                                                                                                                       | **Monthly**    | **Quarterly** | **Monthly**    | **Quarterly** |     |     |
-| Your company's value-added tax (VAT) registration number                                     |                                                                                                                       | X              | X             | X              | X             | X   | X   |
-| The customer's or vendors tax-exempt number                                                  | **Tax exempt number** field in the **General** section                                                                | X              | X             | X              | X             | X   | X   |
-| The invoice amount in the accounting currency                                                | **Invoice amount** field in the **Invoice value** section                                                             | X              | X             | X              | X             | X   | X   |
-| The invoice amount in the transaction currency                                               | **Invoice amount in transaction currency** field in the **Invoice value** section                                     |                |               | X              | X             |     | X   |
-| The invoice number                                                                           | **Invoice** field in the **General** section                                                                          |                |               |                |               | X   | X   |
-| The invoice date                                                                             |                                                                                                                       |                |               |                |               | X   | X   |
-| The transaction code                                                                         | **Transaction code** field in the **Codes** section                                                                   | X              | X             | X              | X             |     |     |
-| The commodity code                                                                           | **Commodity** field in the **Codes** section                                                                          | X              | X             | X              | X             | X   | X   |
-| The weight                                                                                   | **Weight** field in the **Data** section                                                                              | X              |               | X              |               |     |     |
-| Additional units                                                                             | **Quantity of additional units** field in the **Unit** section                                                        | X              |               | X              |               |     |     |
-| The statistical value in the accounting currency                                             | **Statistical value** field in the **Statistical value** section                                                      | X              |               | X              |               |     |     |
-| The delivery terms                                                                           | **Delivery terms** field in the **Codes** section                                                                     | X              |               | X              |               |     |     |
-| The delivery schedule                                                                        | **Delivery schedule** field in the **Codes** section                                                                  |                |               |                |               | X   | X   |
-| The transport mode                                                                           | **Transport** field in the **Codes** section                                                                          | X              |               | X              |               |     |     |
-| The method of payment                                                                        | **Method of payment** field in the **Codes** section                                                                  |                |               |                |               | X   | X   |
-| The International Organization for Standardization (ISO) code for the payment country/region | The ISO code for your company's country/region (for dispatches) or the vendor company's country/region (for arrivals) |                |               |                |               | X   | X   |
-| The country/region                                                                           | **Country/region field** in the **Dispatches/destination** section                                                    | X              |               |                |               |     |     |
-| The county of origin or destination                                                          | **County of origin/destination** field in the **Dispatch/destination** section                                        | X              |               |                |               |     |     |
-| The country/region of origin                                                                 | **Country/region of origin** field in the **Country/region of origin** section                                        |                |               | X              |               |     |     |
-| The county of origin                                                                         | **County of origin** field in the **Country/region of origin** section                                                |                |               | X              |               |     |     |
+<table>
+<tbody>
+<tr>
+<td rowspan="3">
+<p><strong>Value</strong></p>
+</td>
+<td rowspan="3">
+<p><strong>Intrastat journal field</strong></p>
+</td>
+<td colspan="4">
+<p><strong>Goods</strong></p>
+</td>
+<td colspan="2">
+<p><strong>Services</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><strong>Dispatches</strong></p>
+</td>
+<td colspan="2">
+<p><strong>Arrivals</strong></p>
+</td>
+<td rowspan="2">
+<p><strong>Dispatches</strong></p>
+</td>
+<td rowspan="2">
+<p><strong>Arrivals</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Monthly</strong></p>
+</td>
+<td>
+<p><strong>Quarterly</strong></p>
+</td>
+<td>
+<p><strong>Monthly</strong></p>
+</td>
+<td>
+<p><strong>Quarterly</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Your company's value-added tax (VAT) registration number</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The customer's or vendors tax-exempt number</p>
+</td>
+<td>
+<p><strong>Tax exempt number</strong> field in the <strong>General</strong> section</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The invoice amount in the accounting currency</p>
+</td>
+<td>
+<p><strong>Invoice amount</strong> field in the <strong>Invoice value</strong> section</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The invoice amount in the transaction currency</p>
+</td>
+<td>
+<p><strong>Invoice amount in transaction currency</strong> field in the <strong>Invoice value</strong> section</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>X</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The invoice number</p>
+</td>
+<td>
+<p><strong>Invoice</strong> field in the <strong>General</strong> section</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The invoice date</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The transaction code</p>
+</td>
+<td>
+<p><strong>Transaction code</strong> field in the <strong>Codes</strong> section</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The commodity code</p>
+</td>
+<td>
+<p><strong>Commodity</strong> field in the <strong>Codes</strong> section</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The weight</p>
+</td>
+<td>
+<p><strong>Weight</strong> field in the <strong>Data</strong> section</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Additional units</p>
+</td>
+<td>
+<p><strong>Quantity of additional units</strong> field in the <strong>Unit</strong> section</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The statistical value in the accounting currency</p>
+</td>
+<td>
+<p><strong>Statistical value</strong> field in the <strong>Statistical value</strong> section</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The delivery terms</p>
+</td>
+<td>
+<p><strong>Delivery terms</strong> field in the <strong>Codes</strong> section</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The delivery schedule</p>
+</td>
+<td>
+<p><strong>Delivery schedule</strong> field in the <strong>Codes</strong> section</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The transport mode</p>
+</td>
+<td>
+<p><strong>Transport</strong> field in the <strong>Codes</strong> section</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The method of payment</p>
+</td>
+<td>
+<p><strong>Method of payment</strong> field in the <strong>Codes</strong> section</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The International Organization for Standardization (ISO) code for the payment country/region</p>
+</td>
+<td>
+<p>The ISO code for your company's country/region (for dispatches) or the vendor company's country/region (for arrivals)</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>X</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The country/region</p>
+</td>
+<td>
+<p><strong>Country/region field</strong> in the <strong>Dispatches/destination</strong> section</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The county of origin or destination</p>
+</td>
+<td>
+<p><strong>County of origin/destination</strong> field in the <strong>Dispatch/destination</strong> section</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The country/region of origin</p>
+</td>
+<td>
+<p><strong>Country/region of origin</strong> field in the <strong>Country/region of origin</strong> section</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The county of origin</p>
+</td>
+<td>
+<p><strong>County of origin</strong> field in the <strong>Country/region of origin</strong> section</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>X</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 You must send two reports to the authority. One report is for intracommunity dispatches, and the other is for intracommunity arrivals. Each report consists of five parts:
 
@@ -76,7 +625,7 @@ The following general information should be set up before you start to work with
 
 -   Agent contact information.
 
-For more information, see [Intrastat overview](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat).
+For more information, see [Intrastat overview](emea-intrastat.md).
 
 ### Set up Italian Intrastat
 
@@ -90,7 +639,7 @@ Follow these steps to set up Italian-specific options so that you can work with 
 
     -   Intrastat (IT)
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2.  In Dynamics 365 Finance, go to **Tax** &gt; **Setup** &gt; **Foreign trade parameters**.
 
@@ -120,11 +669,9 @@ For more information, see [Download Electronic reporting configurations from Lif
 
 6.  On the **Statistical value** FastTab, set the **Print and export statistical data** option to **Yes** if necessary. This setting activates transfer of the statistical section. The statistical section consists of data about weights, additional units, statistical values, delivery terms, delivery schedules, transport modes, and regions of origin.
 
-&gt; !Note
-
-&gt;
-
-&gt; For a quarterly declaration, the Intrastat report won't include the statistical section, or information about delivery terms and transport modes. For more information, see the table in the [Overview](#overview) section of this topic.
+>[!NOTE]
+>
+>For a quarterly declaration, the Intrastat report won't include the statistical section, or information about delivery terms and transport modes. For more information, see the table in the [Overview](#overview) section of this topic.
 
 7.  On the **Country/region properties** tab, list all the countries or regions that your organization does business with. For each country or region, set the following fields:
 
@@ -136,11 +683,9 @@ For more information, see [Download Electronic reporting configurations from Lif
 
 - **Country/region type** – Select the country's or region's type in relation to your organization. For the Intrastat journal, only countries or regions of the **EU** and **Special domestic** type will be transferred.
 
-&gt; !Note
-
-&gt;
-
-&gt; For countries or regions of the **Special domestic** type, the following fields are omitted from the Intrastat report file: **Weight**, **Additional units**, **Statistical value**, **Delivery terms**, **Transport code**, **Country/region of origin/destination**, and **County of origin/destination**. For example, in the **Party country/region** field, select **SMR (San Marino)**, and then, in the **Country/region type** field, select **Special domestic**.
+>[!NOTE]
+>
+>For countries or regions of the **Special domestic** type, the following fields are omitted from the Intrastat report file: **Weight**, **Additional units**, **Statistical value**, **Delivery terms**, **Transport code**, **Country/region of origin/destination**, and **County of origin/destination**. For example, in the **Party country/region** field, select **SMR (San Marino)**, and then, in the **Country/region type** field, select **Special domestic**.
 
 8.  Go to **Accounts payable** &gt; **Setup** &gt; **Terms of delivery**.
 
@@ -211,19 +756,14 @@ To open the Intrastat journal, go to **Tax** &gt; **Declarations** &gt; **Foreig
 | Invoice amount in transaction currency | The amount in the national currency of the partner.                                                                                                                                                                                                                                                                                                                                                                     |
 | Currency                               | The national currency of the partner.                                                                                                                                                                                                                                                                                                                                                                                   |
 
-&gt; !Note
-
-&gt;
-
-&gt; If you receive a negative correction (credit note) in the same period as the reporting period, you must manually change the Intrastat journal by following these steps.
-
-1.  Go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **Intrastat**.
-
-2.  Find and delete the transaction that is marked as a correction.
-
-3.  Find the original transaction, and change the value of the **Invoice amount** field as appropriate.
-
-&gt; For example, you have an invoice for 10,000, and you receive a credit note for -2,000. In this case, you must open the Intrastat journal, and find and delete the transaction for -2,000. Then find the original transaction for 10,000, and set the invoice amount to 8,000 (= 10,000 - 2,000).
+>[!NOTE]
+>
+>If you receive a negative correction (credit note) in the same period as the reporting period, you must manually change the Intrastat journal by following these steps.
+>
+>1.  Go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **Intrastat**.
+>2.  Find and delete the transaction that is marked as a correction.
+>3.  Find the original transaction, and change the value of the **Invoice amount** field as appropriate.
+>For example, you have an invoice for 10,000, and you receive a credit note for -2,000. In this case, you must open the Intrastat journal, and find and delete the transaction for -2,000. Then find the original transaction for 10,000, and set the invoice amount to 8,000 (= 10,000 - 2,000).
 
 ### Intrastat transfer
 
@@ -233,25 +773,136 @@ Alternatively, you can manually enter transactions by selecting **New** on the A
 
 For each transaction, you can set several Italy-specific parameters on the **General** tab.
 
-| **Field** | **Description** |
-|-------------------------|-------------------------|
-| **General** section |  |
-| Item type | This field can be set to **Goods** or **Services**.</br>For a transaction to be considered a service, your invoice line should be set up in one of the following ways:</br><ul></br><li>It has no commodity code.</li></br><li>It has a six-digit commodity code</li></br></ul> |
-| **Country/region of origin** section |  |
-| County of origin | The county of origin of the product or service. This value is specified on the **Released products** page. |
-| **Codes** section |  |
-| Mode of delivery | The mode of delivery. To specify the mode of delivery, go to **Sales and marketing** &gt; **Setup** &gt; **Distribution** &gt; **Modes of delivery**. |
-| **Corrections** section |  |
-| Month | The month of the original transaction. |
-| Quarter | The quarter of the original transaction. |
-| Correction year | The year of the original transaction. |
-| Original Intrastat record | For service corrections, enter the number of the original Intrastat record. |
-| **Invoice value** section |  |
-| Currency | The national currency of the partner. |
-| Invoice amount in transaction currency | The invoice amount in the national currency of the partner. |
-| Invoice charges amount in transaction currency | The invoice charges in the national currency of the partner. For more information, see [Intrastat overview prerequisites (Miscellaneous charges)](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#prerequisites). |
-| Invoice value in transaction currency | The invoice value in the national currency of the partner. |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p style="text-align: center;"><strong>General</strong> section</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Item type</p>
+</td>
+<td>
+<p>This field can be set to <strong>Goods</strong> or <strong>Services</strong>.</p>
+<p>For a transaction to be considered a service, your invoice line should be set up in one of the following ways:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It has no commodity code.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It has a six-digit commodity code</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p style="text-align: center;"><strong>Country/region of origin</strong> section</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>County of origin</p>
+</td>
+<td>
+<p>The county of origin of the product or service. This value is specified on the <strong>Released products</strong> page.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p style="text-align: center;"><strong>Codes</strong> section</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mode of delivery</p>
+</td>
+<td>
+<p>The mode of delivery. To specify the mode of delivery, go to <strong>Sales and marketing</strong> &gt; <strong>Setup</strong> &gt; <strong>Distribution</strong> &gt; <strong>Modes of delivery</strong>.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p style="text-align: center;"><strong>Corrections</strong> section</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Month</p>
+</td>
+<td>
+<p>The month of the original transaction.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Quarter</p>
+</td>
+<td>
+<p>The quarter of the original transaction.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Correction year</p>
+</td>
+<td>
+<p>The year of the original transaction.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Original Intrastat record</p>
+</td>
+<td>
+<p>For service corrections, enter the number of the original Intrastat record.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p style="text-align: center;"><strong>Invoice value</strong> section</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Currency</p>
+</td>
+<td>
+<p>The national currency of the partner.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Invoice amount in transaction currency</p>
+</td>
+<td>
+<p>The invoice amount in the national currency of the partner.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Invoice charges amount in transaction currency</p>
+</td>
+<td>
+<p>The invoice charges in the national currency of the partner.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Invoice value in transaction currency</p>
+</td>
+<td>
+<p>The invoice value in the national currency of the partner.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
+For more information about the invoice charges in the national currency of the partner, see [Intrastat overview prerequisites (Miscellaneous charges)](emea-intrastat.md).
 
 ### Generate an Intrastat report
 
@@ -261,17 +912,94 @@ For each transaction, you can set several Italy-specific parameters on the **Gen
 
 3.  In the **Intrastat Report** dialog box, set the following fields.
 
-| **Field**                       | **Description**                                                                                                                                 |
-|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Date** section                |                                                                                                                                                 |
-| From date                       | Select the start date for the report.                                                                                                           |
-| To date                         | Select the end date for the report.                                                                                                             |
-| **Export options** section      |                                                                                                                                                 |
-| Generate file                   | Set this option to **Yes** to generate a .txt file.                                                                                             |
-| File name                       | Enter the name of the .txt file for your Intrastat report.                                                                                      |
-| Generate report                 | Set this option to **Yes** to generate an .xlsx file.                                                                                           |
-| Report file name                | Enter the name of the .xlsx file for your Intrastat report.                                                                                     |
-| Direction                       | Select **Arrivals** for a report about intracommunity arrivals. Select **Dispatches** for a report about intracommunity dispatches.             |
-| **File format mapping** section |                                                                                                                                                 |
-| Reference number                | Enter the document number. This value will affect the **File number** code on the Intrastat file report. For more information, see File format. |
-
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><strong>Date</strong> section</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>From date</p>
+</td>
+<td>
+<p>Select the start date for the report.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>To date</p>
+</td>
+<td>
+<p>Select the end date for the report.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><strong>Export options</strong> section</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Generate file</p>
+</td>
+<td>
+<p>Set this option to <strong>Yes</strong> to generate a .txt file.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>File name</p>
+</td>
+<td>
+<p>Enter the name of the .txt file for your Intrastat report.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Generate report</p>
+</td>
+<td>
+<p>Set this option to <strong>Yes</strong> to generate an .xlsx file.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Report file name</p>
+</td>
+<td>
+<p>Enter the name of the .xlsx file for your Intrastat report.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Direction</p>
+</td>
+<td>
+<p>Select <strong>Arrivals</strong> for a report about intracommunity arrivals. Select <strong>Dispatches</strong> for a report about intracommunity dispatches.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><strong>File format mapping</strong> section</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reference number</p>
+</td>
+<td>
+<p>Enter the document number. This value will affect the <strong>File number</strong> code on the Intrastat file report. For more information, see File format.</p>
+</td>
+</tr>
+</tbody>
+</table>
