@@ -1,13 +1,18 @@
-﻿---
-title: 
-description: 
-ms.date: 07.10.2021
-ms.topic: article
-ms.service: dynamics365-financials
-author: and
-ms.author: Andosip
-manager: anasyash
 ---
+# required metadata
+
+title: French Intrastat
+description: This topic contains information about Intrastat declaration in France.
+author: andosip
+ms.date: 07/9/2021
+ms.topic: article
+audience: Application User
+ms.reviewer: roschlom
+ms.search.region: Global
+ms.author: v-aosipov
+ms.search.validFrom: 
+---
+
 
 # French Intrastat
 
@@ -183,7 +188,7 @@ The **NGP** column is specific to France. It shows the NGP code for the product.
 
 ### Intrastat transfer
 
-On the **Intrastat** page, on the Action Pane, you can select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts**,** project invoices, and transfer orders. Only documents that have an EU country as the country or region of destination (for dispatches) or consignment (for arrivals) will be transferred.
+On the **Intrastat** page, on the Action Pane, you can select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country or region of destination (for dispatches) or consignment (for arrivals) will be transferred.
 
 Because the DEB report is a combination of the EU Sales List and the Intrastat report, it also includes *triangular* transactions, where a direct delivery is made from one EU country (party A) to another EU country (party C), and a French legal entity (party B) is in the middle of the triangular deal.
 
