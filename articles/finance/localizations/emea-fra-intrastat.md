@@ -90,7 +90,7 @@ The following table shows the fields that are included in the French Intrastat d
 
 -   Intrastat SAISUNIC (FR)
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2.  In Dynamics 365 Finance, go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Foreign trade parameters**, and follow these steps:
 
@@ -108,7 +108,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 
 3.  Go to **Organization administration** &gt; **Organizations** &gt; **Legal entities**, select your company, and then follow these steps:
 
-    1.  On the **Registration numbers** FastTab, in the **NAF code** field, enter your NAF code. For more information, see [FR-00003 NAF codes and Siret numbers](https://docs.microsoft.com/dynamics365/finance/localizations/tasks/fr-00003-naf-codes-siret-numbers).
+    1.  On the **Registration numbers** FastTab, in the **NAF code** field, enter your NAF code. For more information, see [FR-00003 NAF codes and Siret numbers](tasks/fr-00003-naf-codes-siret-numbers.md).
 
     2.  On the **Foreign trade and logistics** FastTab, in the **Intrastat** section, set the **VAT exempt number export** and **VAT exempt number import** fields.
 
@@ -184,7 +184,7 @@ You must set up the NGP codes and assign them to related products. The **NGP** f
 
 ## Intrastat journal
 
-Go to **Tax** &gt; **Declarations** &gt; **Foreign** **trade** &gt; **Intrastat** to manage your transactions that are applicable to foreign trade with EU countries. For more information, see [Intrastat overview](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat).
+Go to **Tax** &gt; **Declarations** &gt; **Foreign** **trade** &gt; **Intrastat** to manage your transactions that are applicable to foreign trade with EU countries. For more information, see [Intrastat overview](emea-intrastat.md).
 
 The **NGP** column is specific to France. It shows the NGP code for the product. If the NGP isn't applicable to a product, **0** (zero) is shown. You can adjust the NGP code. Select the transaction, and then, on the **General** tab, in the **Codes** section, in the **NGP** field, select the required NGP code.
 
