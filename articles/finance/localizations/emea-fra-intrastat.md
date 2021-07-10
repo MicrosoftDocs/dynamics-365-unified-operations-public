@@ -16,6 +16,8 @@ ms.search.validFrom:
 
 # French Intrastat
 
+[!include[banner](../includes/banner.md)]
+
 Companies in France that are registered for value-added tax (VAT), and that trade with other European Union (EU) countries, must declare the exchange of goods and services to and from France. The Declaration d'exchanges de biens (Declaration of Trade in Goods, or DEB) is a combination of the EU Sales List and the Intrastat report. You must submit this report monthly for all intracommunity sales of goods.
 
 You can generate the DEB report in either of two electronic text file formats: SAISUNIC 330 or INTRACOM format.
