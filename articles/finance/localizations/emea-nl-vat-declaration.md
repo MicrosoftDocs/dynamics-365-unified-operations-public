@@ -29,6 +29,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
+**A new feature for VAT declaration in Netherlands is available. Consider using a new one: [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md)**
 
 This topic explains how to set up and generate the value-added tax (VAT) declaration for legal entities in the Netherlands. For general information about how to set up the VAT statement, see [VAT reporting for Europe](emea-vat-reporting.md).
 
