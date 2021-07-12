@@ -51,7 +51,7 @@ Currently, we support dual-write in the following regions:
 
 Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a Finance and Operations app environment to a Dataverse environment.
 
-You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environment, as shown in the following image. Alternatively, you can choose a model-driven app for Dynamics 365 environment that comes with Dataverse and already has **Enable Dynamics 365 apps** set to **Yes**.
+You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environment, as shown in the following image. Alternatively, you can choose a customer engagement app environment that comes with Dataverse and already has **Enable Dynamics 365 apps** set to **Yes**.
 
 :::image type="content" source="media/add_database_expanded2.png" alt-text="Enable apps switch.":::
 
