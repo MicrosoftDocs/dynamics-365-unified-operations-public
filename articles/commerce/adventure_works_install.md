@@ -45,21 +45,21 @@ The adventure works theme package is available in the dynamics365-commerce feed 
 
 Update.npmrc file to include the below registry entry
 
-  @msdyn365-commerce-theme:registry=https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/
-  @msdyn365-commerce-modules:registry=https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/
-  @msdyn365-commerce:registry=https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/
-  @msdyn365-commerce-thirdpartyconnectors:registry=https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/
-  	registry=https://registry.npmjs.org/
+  - @msdyn365-commerce-theme:registry=https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/
+  - @msdyn365-commerce-modules:registry=https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/
+  - @msdyn365-commerce:registry=https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/
+  - @msdyn365-commerce-thirdpartyconnectors:registry=https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/
+  	- registry=https://registry.npmjs.org/
 	always-auth=true
 	
 
 Update .yarnrc to include the below registry entry
-    registry "https://registry.npmjs.org/"
-    	"@msdyn365-commerce-modules:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"
-	"@msdyn365-commerce-theme:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"
-	"@msdyn365-commerce:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"
-	"@msdyn365-commerce-thirdpartyconnectors:registry" 
-	"https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"
+   - registry "https://registry.npmjs.org/"
+   -   "@msdyn365-commerce-modules:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"
+   -  "@msdyn365-commerce-theme:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"
+   -  "@msdyn365-commerce:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"
+   -  "@msdyn365-commerce-thirdpartyconnectors:registry" 
+   -  "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"
 	network-timeout 120000
 	
 	
@@ -74,10 +74,10 @@ You can should update theme version in package.json to a specific version by upd
 
 
 ### Step 2: Setup the fonts for adventure works theme
-Now that the adventure works theme is installed on your app, you need to add the font files required for this theme. For this, copy all the font files from "\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\public\webfonts" to partner application public folder font path "\public\webfonts".
+Now that the adventure works theme is installed on your app, you need to add the font files required for this theme. For this, copy all the font files from **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\public\webfonts** to partner application public folder font path **\public\webfonts**.
 
 ### Step 3: Setup the resources for adventure works theme
-Next step, is to update the required default resource for the theme. For this, copy the content of global.json file from "\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\resources\modules" to partner application global.json file under "\src\resources\modules". If this does not exists create the one as "\src\resources\modules\global.json" and update the content.
+Next step, is to update the required default resource for the theme. For this, copy the content of global.json file from **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\resources\modules** to partner application global.json file under **\src\resources\modules**. If this does not exists create the one as **\src\resources\modules\global.json** and update the content.
 
 ### Step 4: Validate the theme
 Run yarn on command prompt to make sure all the dependecies are downloaded. You might need to delete the yarn.lock file under partner application root. Run yarn build followed by yarn start. Browse application locally and with query string parameter **?theme=adventureworks**. Your page shoudl render with adventure works theme styles.
