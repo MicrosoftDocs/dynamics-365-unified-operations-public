@@ -137,7 +137,7 @@ On the swatch/dimension, there is additional capability to show the inventory av
 
 For this feature you must enable the **Update media on dimension selection** property on the [Media gallery module](media-gallery.md) for enhanced experience. This allows the images in the media gallery to update on a dimension selection thereby making the browsing experience better. 
 
-![Example of inventory awareness on the sizes of a product](../dev-itpro/media/)
+![Example of inventory awareness on the sizes of a product](../dev-itpro/media/swatch_inventory.png)
 
 
 ## Display swatches in POS and other channels
