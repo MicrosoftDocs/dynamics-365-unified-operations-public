@@ -125,5 +125,4 @@ These topics describe mapping between concepts in finance and operations apps an
 + [Troubleshoot issues from upgrades of Finance and Operations apps](dual-write-troubleshooting-finops-upgrades.md)
 + [General troubleshooting](dual-write-troubleshooting.md)
 
-
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
