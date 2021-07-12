@@ -52,7 +52,7 @@ The following illustration shows an example where colors appear as swatches on a
 
 ## Enable the display dimensions as swatches feature in Commerce headquarters
 
-To enable the display dimensions as swatches feature in Commerce headquarters, go to **Workspaces \> Feature management**, and turn on the **Enable image support for product dimension values** feature. When this feature flag is enabled, three new fields are added for each dimension in the appropriate tables in Commerce headquarters: **Hexcode**, **URL** (for images), and **RefinerGroup**.
+To enable the display dimensions as swatches feature in Commerce headquarters, go to **Workspaces \> Feature management**, and turn on the **Enable a mechanism to represent dimensions as swatch** feature. When this feature flag is enabled, three new fields are added for each dimension in the appropriate tables in Commerce headquarters: **Hexcode**, **URL** (for images), and **RefinerGroup**.
 
 ## Configure dimension values in Commerce headquarters
 
@@ -127,13 +127,22 @@ The following illustration shows an example where the **Upload files** dialog bo
 
 ## Enable swatch display on e-commerce site pages
 
-Before swatches can appear on e-commerce site pages that require dimension selection, such as PDPs and list pages, you must configure dimension site settings in Commerce headquarters. For more information, see [Apply site settings for dimensions](../dimension-settings.md).
+Before swatches can appear on e-commerce site pages that require dimension selection, such as PDPs and list pages, you must configure dimension site settings in Commerce headquarters. For more information, see [Apply site settings for dimensions](../dimension-settings.md). 
 
 In addition, you should enable the **Include product attributes in search results** property for search results modules. If your site uses customized category pages, you should update the search results modules that are used on those pages, so that the **Include product attributes in search results** property is enabled. For more information, see [Search results module](../search-result-module.md).
 
+
+## Inventory awareness on swatches on e-commerce site pages
+On the swatch/dimension, there is additional capability to show the inventory availability. For e.g. if a product is sold in multiple sizes and if some sizes are out of stock, the swatches have a special treatment to indicate they are unavailable. This reduces the number of clicks needed to find product availabilty.  This capability is available on both product details page and list pages (search/categroy) where the swatches are displayed.  This feature is available in Dynamics 365 Commerce 10.0.21 release and requires the respective SSK package (9.31).
+
+For this feature you must enable the **Update media on dimension selection** property on the [Media gallery module](media-gallery.md) for enhanced experience. This allows the images in the media gallery to update on a dimension selection thereby making the browsing experience better. 
+
+![Example of inventory awareness on the sizes of a product](../dev-itpro/media/)
+
+
 ## Display swatches in POS and other channels
 
-Commerce doesn't currently have an out-of-box implementation that supports the display of swatches in Point of Sale (POS) and other channels. However, you can implement swatch display functionality as an extension that makes channel APIs return the hex codes and image URLs that are required to render swatches.
+Commerce doesn't currently have an out-of-box implementation that supports the display of swatches in Point of Sale (POS) and other channels. However, you can implement swatch display functionality as an extension given the channel APIs return the hex codes and image URLs that are required to render swatches.
 
 ## Additional resources
 
