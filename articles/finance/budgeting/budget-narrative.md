@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.18
 
 When you're planning to publish budget books or documents, it's sometimes necessary to include a description and/or a revenue summary in a budget plan. This information can include a description of the budget plan, or a list of assumptions, performance measures, revenue information, or proposed changes to services that led to the amounts on specific budget lines. This feature will enable you to use an HTML editor to control budget planners to document the considerations that went into creating the plan.
 
-You can use the control to write new content or you can paste content that was written and formatted in another text editor, such as Microsoft Word. The narrative area also lets you change fonts and text formatting. More features, including a spell checker, can be turned on.
+You can use the control to write new content, or you can paste content that was written and formatted in another text editor, such as Microsoft Word. The narrative area also lets you change fonts and text formatting. More features can be turned on, such as a spell checker.
  
 The content that is added to these two sections can be printed separately in a budget plan narrative report.
  
@@ -40,25 +40,33 @@ The content that is added to these two sections can be printed separately in a b
 Complete the following steps to turn on the budget plan narrative area and use the most current HTML editor that's available in the product.
 1.	Enable the **Budget plan narrative** under feature management. You can also enable the **New HTML editor control** in the **Feature management** workspace to use a more current editor.
 2.	In the **Budget planning module**, select a budget plan. 
-3.	Select **Header** to expand the **Header** view and enable access to the **Budget plan narrative**. These fields are typically not visible from the **Line** view.
+3.	Select **Header** to open the **Header** view and enable access to the **Budget plan narrative** section. The fields in this section aren't typically visible in the **Line** view.
 4.	Expand the **Budget plan narrative** section and add descriptions or revenue information that should be included in the budget plan.
- 
-No extra permissions are required to modify the budget plan narrative. 
 
-## Include the budget plan narrative fields when copying budget plans
+No extra permissions are required to modify the budget plan narrative.
 
-Complete the following steps to allow copying of the budget plan narrative description and revenue summary to new budget plans.
+## Include budget plan narrative fields when you copy budget plans
 
-1. As a prerequisite, you need to have the **Budget plan narrative feature** enabled.
-2. Enable **Include budget plan narrative when copying budget plans** under feature management. This feature adds a **Budget plan narrative section** with **Include budget description** and **Include revenue summary** flags to budget plan copying.
-3. The new flags can be selected from the following pages.
-- Budget plans
-    - Go to **Budgeting > Budget plans**.
-    - Select the budget plan to be copied.
-    - On the Action pane, on the **Budget plan** tab, in the **New** group, click **Copy of**.
-    - The **Copy a budget plan** slider will open, which includes the **Budget plan narrative** flags.
-- Generate one budget plan from an existing budget plan
-    - Go to **Budgeting > Periodic > Generate budget plan from a budget plan**.
-    - The **Budget plan narrative** flags are included on this page. These flags will only be available when the **Action** field is set to **Create a new budget plan**.
-4. Select the narrative fields to copy to the new plan. if any. You can select narrative fields to copy from either the **Budget plans** or the **Generate budgter plan from a budget plan** pages. 
-5. After the budget plan has been copied, the selected budget plan narrative fields will be copied to the new plan.
+Follow these steps to enable the budget plan narrative description and revenue summary to be copied to new budget plans.
+
+1. Make sure that the **Budget plan narrative** feature is turned on in feature management, as described in the previous section.
+2. In feature management, turn on the **Include budget plan narrative when copying budget plans** feature. This feature adds a **Budget plan narrative** section and two flags that are used for budget plan copying: **Include budget description** and **Include revenue summary**.
+3. You can set the new flags from the following pages:
+
+    - **Budget plans:**
+
+        1. Go to **Budgeting \> Budget plans**.
+        2. Select the budget plan to copy.
+        3. On the Action pane, on the **Budget plan** tab, in the **New** group, select **Copy of**.
+
+        The **Copy a budget plan** dialog box that appears includes the new flags.
+
+    - **Generate budget plan from a budget plan:**
+
+        - Go to **Budgeting \> Periodic \> Generate budget plan from a budget plan**.
+
+        The page includes the new flags. However, the flags are available only when the **Action** field is set to **Create a new budget plan**.
+
+4. Select the narrative fields to copy to the new plan. You can complete this step from either the **Budget plans** page or the **Generate budget plan from a budget plan** page.
+
+After the budget plan has been copied, the selected budget plan narrative fields will be copied to the new plan.
