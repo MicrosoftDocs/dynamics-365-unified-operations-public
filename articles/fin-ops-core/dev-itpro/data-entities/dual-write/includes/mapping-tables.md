@@ -11,7 +11,7 @@ This template synchronizes data between Finance and Operations apps and Datavers
 
 Finance and Operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
-`PRODUCTNAME` | > | `msdyn_productname` |
+PRODUCTNAME | > | `msdyn_productname` |
 `PRODUCTNUMBER` | > | `msdyn_productnumber` |
 
 ###  <a name="119"></a>Asset management asset lifecycle models (msdyn_assetlifecyclemodels)
