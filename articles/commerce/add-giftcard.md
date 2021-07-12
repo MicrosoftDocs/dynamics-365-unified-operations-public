@@ -58,6 +58,11 @@ Supported values:
 -	PIN and expiration date 
 -	None
 
+- **Enable for guest users** - This property when enabled allows guest users to redeem or check balance on the gift card. This also requires anonymous access for gift cards to be enabled in headquarters.
+
+>[IMPORTANT]
+>**Enable for guest users** is available in Dynamics 365 Commerce 10.0.21 release along with the respective SSK package(9.31).
+
 ## Site settings for gift card modules
 
 In Commerce site builder under **Site Settings \> Extensions**, there is a gift card module setting called **Supported gift card type**. This setting supports three values:
