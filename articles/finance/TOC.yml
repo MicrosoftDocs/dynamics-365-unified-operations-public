@@ -1992,6 +1992,10 @@
             href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
           - name: Generate an EU Intrastat declaration
             href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
+          - name: French Intrastat
+            href: localizations/emea-fra-intrastat.md
+          - name: Italian Intrastat
+            href: localizations/emea-ita-intrastat.md
         - name: Inventory journal reports
           href: localizations/emea-set-up-report-inventory-journal-names.md
         - name: Invoice issue deadlines
