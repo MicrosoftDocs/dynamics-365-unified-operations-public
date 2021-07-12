@@ -11,7 +11,7 @@ ms.author: ramasri
 ms.search.validFrom: 2021-03-22
 ---
 
-# Using Power Portal with the Party data model
+# Using Microsoft Power Apps portals with the Party data model
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
