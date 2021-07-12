@@ -46,7 +46,7 @@ Microsoft will notify customers and switch back the environments to operate out 
 
 Dataverse for Teams environments do not support secondary replicas and hence this feature of providing business continuity is not available until such Dataverse for Teams environments are converted to Dataverse production instances using the upgrade process described in [Upgrade process](/power-platform/admin/about-teams-environment#upgrade-process).
 
-For more informaiton about Dataverse for Teams enivornoments, see [About the Microsoft Dataverse for Teams environment](/power-platform/admin/about-teams-environment).
+For more information about Dataverse for Teams environments, see [About the Microsoft Dataverse for Teams environment](/power-platform/admin/about-teams-environment).
 
 ## Finance and Operations apps
 Customers can deploy a production instance of a Finance and Operations app with the purchase of appropriate licenses. For more information, see [Cloud deployment overview](../deployment/cloud-deployment-overview.md).
