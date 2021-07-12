@@ -49,7 +49,7 @@ Dataverse for Teams environments do not support secondary replicas and hence thi
 [About the Microsoft Dataverse for Teams environment](/power-platform/admin/about-teams-environment)
 
 ## Finance and Operations apps
-Customers can deploy a production instance of Dynamics 365 for Finance and Operations apps with the purchase of appropriate licenses. For more information, see [Cloud deployment overview](../dev-itpro/deployment/cloud-deployment-overview.md).
+Customers can deploy a production instance of Dynamics 365 for Finance and Operations apps with the purchase of appropriate licenses. For more information, see [Cloud deployment overview](../deployment/cloud-deployment-overview.md).
 
 For environments of type production, replicas of the different storage services (Azure SQL and File storage) are established in the secondary region, at the time of deployment. These replicas are called the Geo-Secondaries. 
 
