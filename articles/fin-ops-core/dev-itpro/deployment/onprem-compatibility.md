@@ -35,10 +35,10 @@ This topic explains which versions of dependent software are compatible with dif
 
 Both Microsoft Windows Server Standard and Microsoft Windows Server Datacenter are supported.
 
-| Version                       | Supported since    | End of life        |
-|-------------------------------|--------------------|--------------------|
-| Microsoft Windows Server 2019 | Platform update 41 | N/A                |
-| Microsoft Windows Server 2016 | Original release   | Platform update 50 |
+| Version                       | Supported since    | End of life |
+|-------------------------------|--------------------|-------------|
+| Microsoft Windows Server 2019 | 10.0.17            | N/A         |
+| Microsoft Windows Server 2016 | Original release   | 10.0.26     |
 
 ## Microsoft SQL Server
 
@@ -48,27 +48,27 @@ This section covers the following SQL Server components:
  - SQL Server Reporting Services
  - SQL Server Integration Services
 
-| Version                       | Supported since    | End of life        |
-|-------------------------------|--------------------|--------------------|
-| Microsoft SQL Server 2016 SP2 | Platform update 33 | N/A                |
-| Microsoft SQL Server 2016 SP1 | Original release   | Platform update 38 |
+| Version                       | Supported since    | End of life |
+|-------------------------------|--------------------|-------------|
+| Microsoft SQL Server 2016 SP2 | 10.0.9             | N/A         |
+| Microsoft SQL Server 2016 SP1 | Original release   | 10.0.14     |
 
 ## Minimum Service Fabric runtime
 
 Your Service Fabric cluster should always be on a supported version according to the official documentation, [Service Fabric supported versions](/azure/service-fabric/service-fabric-versions).
 
-| Minimum Version            | Required since       |
-|----------------------------|----------------------|
-| Service Fabric runtime 7.2 | Platform update 41   |
-| Service Fabric runtime 7.1 | Platform update 38   |
+| Minimum Version            | Required since |
+|----------------------------|----------------|
+| Service Fabric runtime 7.2 | 10.0.17        |
+| Service Fabric runtime 7.1 | 10.0.14        |
 
 ## Microsoft Office Server
 
 Office Server is an optional component. For more information, see [Configure document preview](../../fin-ops/organization-administration/configure-document-management.md#for-a-microsoft-dynamics-365-finance--operations-on-premises-environment).
 
-| Version                      | Supported since    | End of life    |
-|------------------------------|--------------------|----------------|
-| Microsoft Office Server 2017 | Platform update 12 | N/A            |
+| Version                      | Supported since | End of life |
+|------------------------------|-----------------|-------------|
+| Microsoft Office Server 2017 | 10.0.0          | N/A         |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
