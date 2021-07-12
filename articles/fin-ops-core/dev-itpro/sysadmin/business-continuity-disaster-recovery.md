@@ -24,7 +24,7 @@ Dynamics 365 for customer engagement apps run on Dataverse platform. Tenant admi
 
 For production environments, a replica of the different storage services (Azure SQL and File storage) is established in the secondary region for each environment, at the time of deployment. For more information, see [Environments](/power-platform/admin/environments-overview). These replicas are referred to as geo-Secondary replicas. The geo-secondary replicas are kept synchronized with the primary instance through continuous data replication. There is a small replication latency or lag, typically less than a few minutes , between the primary data sources and their corresponding geo-secondary replicas. For more information, see [Ensure business continuity amd disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions).
 
-<image>
+![For production environments, a replica of the different storage services (Azure SQL and File storage) is established in the secondary region for each environment.](media/Dataverse-and-customer-engagement-apps.png)
 
 As seen in the preceding diagram, similar to data storage services, compute infrastructure is also provisioned in both regions in such a way that it can handle the traffic volume in case of an environment or region level failover. See following sections on the different types of failovers that are possible and how Microsoft manages service continuity in either of these situations.
 
@@ -55,7 +55,7 @@ For environments of type production, replicas of the different storage services 
 
 The geo-secondaries are kept synchronized with the primary instance through continuous data replication. There is a small replication latency or lag, <=15 minutes, between the geo-secondary and primary. For more information, see [Business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions).
 
-<image>
+![Geo-secondaries](media/Finance-and-Operations-apps.png)
   
 To learn more about data protection in non-production environments, see [Database movement operations home page](../database/dbmovement-operations.md).
 
