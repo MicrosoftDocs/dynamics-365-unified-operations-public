@@ -99,7 +99,7 @@ The year-end close process doesn’t adhere to account structures. This is becau
 
 After the process is complete, a record will be created for each legal entity/fiscal year combination. You will only see records for legal entities that you have access to. The record includes the system date and time when the process was run and a direct link to the voucher(s) created for the year-end close. 
 
-Illustration
+[![Illustration of year-end close history](./media/run-yr-end-close.png)](./media/run-yr-end-close.png)
 
 If the year end close is rerun, you will see one or multiple records for each legal entity/fiscal year depending on the GL parameters:
 - If the General ledger parameter **Delete existing year-end entries when re-closing the year** is set to **Yes**, the voucher for the previous year-end close will be deleted.  The record will be marked as Reversed, stamped with the dateand time it was reversed, and the link to the voucher number will be removed. A new record will be created for the new voucher created when the year-end close is complete.
@@ -112,7 +112,8 @@ A year end close can be reversed from the Year end close page. Select the record
 
 An option, **Show reversed**, is available above the grid to hide or show the records for reversed year-end close processes. After running the **Reverse year-end close** process, you may need to mark **Show reversed** to see the record. Additional filters can be used to view other information.
 
-Illustration
+[![Illustration of year-end close reversal](./media/rvrs-yr-end-close.png)](./media/rvrs-yr-end-close.png)
+
 
 For more information, see [Close the general ledger at period end](close-general-ledger-at-period-end.md) and [Close the fiscal year](tasks/close-fiscal-year.md).
 
