@@ -49,6 +49,7 @@ The following features are generally available with this release.
 | --- | --- | --- |
 | ## Employee is validated as ready to pay to enable payroll provider to process pay - (437498) | | |  
 | ## Test coverage for Absence Manager feature - (596464) | | |
+|  Years of service display toggle | |This feature provides the option to use different dates to calculate the years of service displayed in the **Streamlined employee entry** form and in the **People** form.  This will be available in Human Resources parameters.  [https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-setup-parameters] |
 
 ### Bug fixes
 
@@ -60,14 +61,13 @@ The following bug fixes are included in this release.
 | Issue number | Issue |  Description |
 | --- | --- | --- |
 | ## About pane in Human Resources has incorrect Dataverse terminology - (595871) | | |
-| ## HcmWorkerV2 overrides task() which can cause a crash when used with Saved Views - (598676) | | |
-| ## Workers comp section on position should be read-only when benefits management is enabled. - (592344) | | |
+| 598676 | Streamlined employee entry form overrides task() which can cause a crash when used with Saved View| When in the Worker form and the 'Streamlined Employee entry' feature is turned on,  the application may crash if 'Always open for editing' is set on the saved view. |
+| 592344 |Workers comp section on position should be read-only when benefits management is enabled. | Workers Comp information is created using legacy benefits functionality.  When benefits management is enabled, the fields will be read only.  When benefits managemetn is turned on AND hide legacy benefit forms is set to YES in HR shared parameters, the workers compensation tab will be hidden. |
 | ## HcmDiscussion form activating tab causes infinite loop when personalizations are applied - (598617) | | |
 | ## Fix PU45 BP Build Errors - (598282) | | |
 | ## Journal Date field in the Performance journal is showing in UTC - (593553) | | |
 | ## Approved requests not reflected on the Absence Manager tile - (596015) | | |
 | ## Opening activities for performance goals opens a completely different record - (586930) | | |
-| ## Manual Updates circumvent constraint on EmploymentId being unique - (594586) | | |
 | ## EV2 deployments failing with error about incorrect subscription ID - (595949) | | |
 
 ## In preview
@@ -84,7 +84,6 @@ The following new features are in preview. For more information about turning fe
 | Feature | Details |
 | --- | --- |
 | Platform update 10.0.19 (43) | Platform update 10.0.19 is scheduled to begin rolling out with the service release on June 28, 2021. For more information, see [Platform updates for version 10.0.19 of Finance and Operations apps (June 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
-|  Years of service display toggle | This feature provides the option to use different dates to calculate the years of service displayed in the **Streamlined employee entry** form and in the **People** form.  This will be available in Human Resources parameters. |
 |  Enable an absence manager to manage leave | [Enable an absence manager to manage leave](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-absence-manager-manage-leave) |
 |  Mandate attachments for specific leave types | This feature enables admins to mandate attachments to be added when submitting leave requests for specific leave types. |
 |  Configure leave units per leave type | This feature enables administrators to configure leave units (hours or days) for each leave type.  |
