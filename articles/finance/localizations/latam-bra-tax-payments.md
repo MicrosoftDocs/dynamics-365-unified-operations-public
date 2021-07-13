@@ -46,7 +46,7 @@ The difference between the tax amount that is collected on sales of goods and th
 -   **Create from assessment** – Collect and pay tax monthly, in accordance with the rules that are established by the tax authority.
 -   **Other debits** – Collect and pay a specific tax amount outside the regular process when the tax authority requires the payment.
 
-![Creating tax payments](./media/taxpaymentsbra.jpg) 
+![Creating tax payments.](./media/taxpaymentsbra.jpg) 
 
 
 ### Overview

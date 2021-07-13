@@ -34,7 +34,7 @@ Production and Sandbox can only be deployed in two different [types of environme
 
 This graphic and the following table list the phases of the go-live process, the environment type to which each phase applies with the expected duration, and who is responsible to take the action.
 
-![Go-live process](./media/go-live-process.PNG)
+![Go-live process.](./media/go-live-process.PNG)
 
 
 | Phase  | Action | Environment type | Duration/When | Who | Notes |

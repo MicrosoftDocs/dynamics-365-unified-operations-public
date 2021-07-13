@@ -187,7 +187,7 @@ To print the **Sales journal** report, follow these steps:
 7. In the **To date** field, select 4/30/2021.
 8. In the **Final print** field, select **Yes**. Select **OK** to review the report.
 
-    ![eSales journal report](media/emea-bel-journal-reports-sales-journal-report.png)
+    ![eSales journal report.](media/emea-bel-journal-reports-sales-journal-report.png)
 
 ### Print the Purchase journal report
 
@@ -213,10 +213,10 @@ To print the **Purchase journal** report, follow these steps:
 12. In the **To date** field, select 4/30/2021.
 13. In the **Final print** field, select **Yes**. Select **OK** to view the report.
 
-![Purchase journal report page 1](media/emea-bel-journal-reports-purchase-journal-report-1.png)
-![Purchase journal report page 2](media/emea-bel-journal-reports-purchase-journal-report-2.png)
-![Purchase journal report page 3](media/emea-bel-journal-reports-purchase-journal-report-3.png)
-![Purchase journal report page 4](media/emea-bel-journal-reports-purchase-journal-report-4.png)
+![Purchase journal report page 1.](media/emea-bel-journal-reports-purchase-journal-report-1.png)
+![Purchase journal report page 2.](media/emea-bel-journal-reports-purchase-journal-report-2.png)
+![Purchase journal report page 3.](media/emea-bel-journal-reports-purchase-journal-report-3.png)
+![Purchase journal report page 4.](media/emea-bel-journal-reports-purchase-journal-report-4.png)
 
 ### Print the Financial journal report
 
@@ -242,9 +242,9 @@ To print the **Financial journal** report, follow these steps:
 8. In the **To date** field, select 4/30/2021.
 9. In the **Final print** field select **Yes**. Select **OK** to review the report.
 
-![Financial journal report page 1](media/emea-bel-journal-reports-financial-journal-report.png)
+![Financial journal report page 1.](media/emea-bel-journal-reports-financial-journal-report.png)
 
-![Financial journal report page 2](media/emea-bel-journal-reports-financial-journal-report-2.png)
+![Financial journal report page 2.](media/emea-bel-journal-reports-financial-journal-report-2.png)
 
 ### Print the Other journal report
 
@@ -271,8 +271,8 @@ To print the **Other journal** report, follow these steps:
 9. In the **Final print** field, select **Yes**.
 10. Select **OK** and review the report result.
 
-![Other journals report page 1](media/emea-bel-journal-reports-other-journal-report-1.png)
-![Other journals report page 2](media/emea-bel-journal-reports-other-journal-report-2.png)
+![Other journals report page 1.](media/emea-bel-journal-reports-other-journal-report-1.png)
+![Other journals report page 2.](media/emea-bel-journal-reports-other-journal-report-2.png)
 
 ### Print overview journal report
 
@@ -283,4 +283,4 @@ To print the **Overview journal** report, follow these steps:
 3. In the **To date** field, select 5/31/2021.
 4. Select **OK** and review the report result.
 
-![Overview journal report](media/emea-bel-journal-reports-overview-journal-report.png)
+![Overview journal report.](media/emea-bel-journal-reports-overview-journal-report.png)

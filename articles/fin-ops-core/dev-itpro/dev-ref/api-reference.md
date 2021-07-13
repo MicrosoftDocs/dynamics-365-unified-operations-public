@@ -69,6 +69,8 @@ Documentation for the classes and functions that are listed under **System Docum
 
 The reference documentation for the system classes is in the .NET API browser.
 
+[API reference for finance and operations apps](/dotnet/api/fin-ops-api-landing)
+
 [Microsoft.Dynamics.Ax.Xpp namespace](/dotnet/api/microsoft.dynamics.ax.xpp)
 
 [Dynamics.AX.Application namespace](/dotnet/api/dynamics.ax.application)

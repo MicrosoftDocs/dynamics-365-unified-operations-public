@@ -98,7 +98,7 @@ If there is an unrecovered payment and the cashier takes one of the following ac
 - Attempts to void the transaction.
 - Attempts to suspend the transaction.
 
-![Recover Payment](media/Payments/Duplicate-Payment-Protection/Recover-Payment.png)
+![Recover Payment.](media/Payments/Duplicate-Payment-Protection/Recover-Payment.png)
 
 When the cashier clicks **OK**, the payment is recovered and added as a payment line to the cart.
 
@@ -120,7 +120,7 @@ In some cases, the cashier might explicitly choose to skip the duplicate payment
 
     A new dialog box will appear indicating that a recovered payment is available. Click **Ignore** to skip the payment recovery.
 
-![Skip Payment Recovery](media/Payments/Duplicate-Payment-Protection/Void-Transaction.png)
+![Skip Payment Recovery.](media/Payments/Duplicate-Payment-Protection/Void-Transaction.png)
 
 ### What to do if the customer leaves the store
 

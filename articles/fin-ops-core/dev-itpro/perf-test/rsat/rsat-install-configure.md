@@ -46,7 +46,7 @@ You must have an Azure DevOps project to store and manage your test cases, test 
 
 RSAT is designed to be installed on any Windows 10 computer and connect remotely via a web browser to an environment.
 
-![Client computer and environment](media/client-environment.png)
+![Client computer and environment.](media/client-environment.png)
 
 To enable secure authentication, RSAT requires a certificate to be installed on the RSAT client computer. The RSAT settings dialog box allows you to automatically create and install the authentication certificate. You will also need to configure the virtual machine (VM) to trust the connection. Follow the instructions in the next sections to install and configure RSAT.
 
@@ -63,9 +63,9 @@ Download the .msi file from the [Regression Suite Automation Tool Download](http
 
 RSAT requires Selenium and web browser driver libraries. RSAT will prompt you if needed libraries are missing and will automatically install them for you. Select Yes when you see the following (or similar) messages.
 
-![Selenium driver](media/driver-1.png)
+![Selenium driver.](media/driver-1.png)
 
-![Browser driver](media/driver-2.png)
+![Browser driver.](media/driver-2.png)
 
 RSAT uses [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13/selenium-dotnet-strongnamed-3.13.1.zip). The Webdriver library and browser-specific drivers are downloaded to **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium**.
 
@@ -73,11 +73,11 @@ RSAT uses [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13
 
 1. Open RSAT from your desktop.
 
-    ![RSAT desktop icon](media/desktop-icon.png)
+    ![RSAT desktop icon.](media/desktop-icon.png)
 
 2. Select the **Settings** tab on the upper left to configure RSAT.
 
-    ![RSAT settings](media/rsat-settings.png)
+    ![RSAT settings.](media/rsat-settings.png)
 
 ### General settings
 
@@ -117,7 +117,7 @@ Configure your connection to the test environment.
     1. Select **New** to create and install a new authentication certificate. When prompted, place the .cer file somewhere so you have it saved for your records.
     2. When the process completes, the new certification is installed in the local machine's trusted root store.
 
-        ![Successfully created](media/thumbprint-certificate.png)
+        ![Successfully created.](media/thumbprint-certificate.png)
 
     3. The thumbprint of the newly created certificate is automatically inserted on this form. Copy this thumbprint, you will use it in the next section to configure the AOS to trust the connection.
 
@@ -159,12 +159,12 @@ After creating the certificate, configure AOS to trust the test automation conne
 1. Open a Remote Desktop connection to the AOS machine.
 2. Open IIS and find AOSService in the list of sites.
 
-    ![Find AOS in IIS](media/configure-aos.png)
+    ![Find AOS in IIS.](media/configure-aos.png)
 
 3. Right-click **AOSService**, then select **Explore**.
 4. Open and find the file **wif.config**.
 
-    ![Open wif.config](media/open-wif-config.png)
+    ![Open wif.config.](media/open-wif-config.png)
 
 5. Update the **wif.config** file by adding a new authority entry, as shown in the following example. Use **127.0.0.1** for the authority name and paste your certificate thumbprint.
 
@@ -189,7 +189,7 @@ In cases where your Remote Desktop Protocol (RDP) access is removed, such as Mic
     - Download RSAT certificate
     - Regenerate RSAT certificate
 
-![Download and regenerate RSAT certificate options](media/rsat-lcs1.png)
+![Download and regenerate RSAT certificate options.](media/rsat-lcs1.png)
 
 Use the **Download** button to retrieve the certificate bundle as a .zip file.
 
@@ -206,7 +206,7 @@ Use the **Download** button to retrieve the certificate bundle as a .zip file.
    + Enter the password saved in step 2, and browse to the **Personal** store.
 
 6. Double-click the certificate file to open it. Browse to the **Details** tab, and scroll down until you see the **Thumbprint** section. Select **Thumbprint**, and note the ID in the text box. Select or paste this thumbprint in RSAT settings.
-![Thumbprint settings](media/rsat-lcs4.png)
+![Thumbprint settings.](media/rsat-lcs4.png)
 
 You can now run your tests against the environment using this certificate. The certificate will be autorotated by Microsoft before it expires, at which time you will need to download a new version of this certificate starting from step 1 above. For self-service environments, this will be rotated every 90 days during a downtime window that is closest to the expiry. These downtime windows include customer initiated package deployment, and database movement operations that target the environment.
 
@@ -247,7 +247,7 @@ To install the certificate, follow these steps:
 4. Leave the **Password** field blank.
 5. In the **Certificate** dialog box, browse to **Details** and look for **Thumbprint**.
 
-    ![Certificate dialog showing thumbprint listing](media/certificate-dialog.png)
+    ![Certificate dialog showing thumbprint listing.](media/certificate-dialog.png)
 
 6. Copy and save the thumbprint. You will need it to configure the AOS as described earlier in this topic.
 

@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.4
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
 2. Enter the appropriate values, and then select **OK**.
 
-![Sales tax settlement including corrections dialog box](media/Capture2019052109_upd.png)
+![Sales tax settlement including corrections dialog box.](media/Capture2019052109_upd.png)
 
 ## Validate tax settlement voucher entries
 
@@ -43,7 +43,7 @@ ms.dyn365.ops.version: 10.0.4
 3. Verify that the settlement for the selected registration for the period is successfully posted.
 4. Select **Print report**.
 
-![Sales tax payments report](media/Capture2019052110_upd.png)
+![Sales tax payments report.](media/Capture2019052110_upd.png)
 
 ## GST authority payment
 

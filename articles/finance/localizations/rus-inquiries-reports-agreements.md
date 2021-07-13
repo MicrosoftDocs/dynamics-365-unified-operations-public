@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 8.1
 
 1. On the **Sales agreements** page, select an agreement, and then, on the **Sales agreement** tab, in the **Related information** section, select **Agreement amount** to open the **Customer transactions** page.
 
-    ![Customer transactions page](media/14_Customer_transactions.png)
+    ![Customer transactions page.](media/14_Customer_transactions.png)
    
 2. In the **Start date** and **End date** fields, specify the period that you want to analyze agreement amounts for.
 3. In the lower part of the page, in the **Totals** section, review thefollowing information:
@@ -55,7 +55,7 @@ ms.dyn365.ops.version: 8.1
 
 1. On the **Purchase agreements** page, select an agreement, and then, on the **Purchase agreement** tab, in the **Related information** section, select **Agreement amount** to open the **Vendor transactions** page.
 
-    ![Vendor transactions page](media/15_Vendor_transactions.png)
+    ![Vendor transactions page.](media/15_Vendor_transactions.png)
 
 2. Review the amounts as described in the previous section of this topic, [View sales agreement amounts](#sales-agreement-amounts).
 
@@ -121,7 +121,7 @@ An Act of adjustment contains the following data in the context of the customer 
 
 5. Select **OK**.
 
-    ![Act of adjustment page](media/16_Act_of_adjustment_(customers).png)
+    ![Act of adjustment page.](media/16_Act_of_adjustment_(customers).png)
 
     > [!NOTE]
     > To view the customer transactions that have generated a line, select the line, and then, on the Action Pane, select **Transactions**. 
@@ -130,7 +130,7 @@ An Act of adjustment contains the following data in the context of the customer 
     >
     > To print the report, on the Action Pane, select **Print**.
 
-![Customer transactions that have generated a line](media/17_Act_of_adjustment.png)
+![Customer transactions that have generated a line.](media/17_Act_of_adjustment.png)
 
 ### Generate an Act of adjustment for a vendor
 

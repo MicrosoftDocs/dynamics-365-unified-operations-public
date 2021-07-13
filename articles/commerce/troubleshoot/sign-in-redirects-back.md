@@ -48,7 +48,7 @@ To confirm that the reply URL is correctly configured in the Azure AD B2C applic
 1. Select the application that you created during the Azure AD B2C setup.
 1. Under **Reply URL**, make sure that the list includes entries for both the site domain URL and the e-commerce-generated URL, as shown in the example in the following illustration.
 
-    ![Azure AD B2C Reply URL entries](media/aad-b2c-reply-url.jpg)
+    ![Azure AD B2C Reply URL entries.](media/aad-b2c-reply-url.jpg)
 
 > [!NOTE]
 > Both the site domain URL and the e-commerce-generated URL must be in a valid URL format that doesn't include leading or trailing slashes.

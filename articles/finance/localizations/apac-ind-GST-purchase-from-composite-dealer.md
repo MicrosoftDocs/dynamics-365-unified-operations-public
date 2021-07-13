@@ -34,15 +34,15 @@ ms.dyn365.ops.version: 10.0.4
 3. Create a purchase transaction for a composite vendor, and save the record.
 4. Select **Tax information**.
 
-    ![Tax information dialog box](media/Annotation-2019-05-16-101054.png)
+    ![Tax information dialog box.](media/Annotation-2019-05-16-101054.png)
 
 5. On the **GST** FastTab, in the **HSN codes** field, select a value.
 
-    ![GST FastTab](media/Annotation-2019-05-16-101138.png)
+    ![GST FastTab.](media/Annotation-2019-05-16-101138.png)
 
 6. On the **Vendor tax information** FastTab, verify the information.
 
-    ![Vendor tax information FastTab](media/Annotation-2019-05-16-101246.png)
+    ![Vendor tax information FastTab.](media/Annotation-2019-05-16-101246.png)
 
 7. Select **OK**.
 
@@ -57,7 +57,7 @@ ms.dyn365.ops.version: 10.0.4
 
 To validate a voucher, select **Inquiries** \> **Voucher**.
 
-![Example](media/Annotation-2019-05-16-100656.png)
+![Example.](media/Annotation-2019-05-16-100656.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

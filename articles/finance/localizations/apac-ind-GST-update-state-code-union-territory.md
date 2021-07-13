@@ -48,7 +48,7 @@ Follow these steps to update the state code and union territory.
 4. Set the **Union territory** option to **Yes** to identify the state as a union territory.
 5. Select **Close**.
 
-![Address setup](media/IND-GST-UpdateState.png)
+![Address setup.](media/IND-GST-UpdateState.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -84,7 +84,7 @@ The following activities are needed to prepare for the upgrade:
 
 10. After deployment, validate the datasets, data flow, and linked service of the data factory.
 
-   ![Datasets, data flow, and linked service](media/data-factory-validate.png)
+   ![Datasets, data flow, and linked service.](media/data-factory-validate.png)
 
 11. Navigate to **Manage**. Under **Connections**, select **Linked Service**. Select **DynamicsCrmLinkedService**. In the **Edit linked service (Dynamics CRM)** form, enter the following values.
 
@@ -149,7 +149,7 @@ The following activities are needed to prepare for the upgrade:
 
 7. In the data factory, run the template by selecting **Trigger now** as shown in the following image. This process might take a few hours to complete based on the data volume.
 
-    ![Trigger run](media/data-factory-trigger.png)
+    ![Trigger run.](media/data-factory-trigger.png)
 
     > [!NOTE]
     > If you have customizations for **Account**, **Contact**, and **Vendor**, then you need to modify the template.
@@ -159,7 +159,7 @@ The following activities are needed to prepare for the upgrade:
     + Download the `FONewParty.csv` file from Azure blob storage. The path is `partybootstrapping/output/FONewParty.csv`.
     + Convert the `FONewParty.csv` file into an Excel file and import the Excel file into the finance and operations app. If the csv import works for you, you can import the csv file directly. The import could take a few hours to run, depending on the data volume. For more information, see [Data import and export jobs overview](../data-import-export-job.md).
 
-    ![Import the Datavers party records](media/data-factory-import-party.png)
+    ![Import the Datavers party records.](media/data-factory-import-party.png)
 
 9. In the customer engagement apps, enable the following plug-in steps:
 
@@ -194,7 +194,7 @@ The following activities are needed to prepare for the upgrade:
 3. The data factory runs based on csv files that are comma-delimited. If there is a field value that has a comma, it may interfere with the results. You need to remove the commas.
 4. The **Monitoring** tab provides information about all steps and data processed. Select a specific step to debug it.
 
-    ![Monitoring tab](media/data-factory-monitor.png)
+    ![Monitoring tab.](media/data-factory-monitor.png)
 
 ## Learn more about the template
 

@@ -47,13 +47,13 @@ When the **add-theme** [command line interface (CLI)](cli-command-reference.md) 
 
 The following illustration shows an example (in Visual Studio Code) of a theme style definition file that was created by using the **add-theme** CLI command.
 
-![Theme style definition file](media/style-presets.png)
+![Theme style definition file.](media/style-presets.png)
 
 Each style that is defined under the **global** and **module** sections should also be defined in the theme's Sassy CSS (SCSS) file. The naming convention for that file is **THEME_NAME.scss** 
 
 In the example in the following illustration, SCSS variables have been defined for **brandPrimaryColor** in the theme.scss file. The default color is **#FFFFFF**. When the style preset is turned on, the color value is replaced with the default color value that is defined in the style preset definition file. Although both colors happen to be the same in this example, a site builder author can choose to override this property with any color. Modules that use this global SCSS variable will then automatically pick up the color change when the user applies the setting from within site builder.
 
-![SCSS file](media/style-presets-scss-file.png)
+![SCSS file.](media/style-presets-scss-file.png)
 
 ### Style preset definition schema
 

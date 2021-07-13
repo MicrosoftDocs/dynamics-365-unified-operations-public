@@ -42,7 +42,7 @@ The LCS code upgrade service automatically checks your upgraded code into Azure 
 ## Key concepts
 - **Export** is the project that contains the XML files after exporting from Microsoft Dynamics AX 2012. This project is your metadata in XML format before it is upgraded. This project is only relevant if you are upgrading from Dynamics AX 2012.
 - **Metadata** is your upgraded code (metadata XML file).
-- **Projects** are two solutions that you can use during upgrade. One solution, CodeMergeSolution, is the solution that contains projects with the elements that have conflicts and need to be resolved. The other solution, UpgradedSolution, contains a collection of projects, one for each upgraded model. For example, in Azure DevOps, you should see something like the following structure. [![Project](./media/filestructure_configuringyourvsosolution.png)](./media/filestructure_configuringyourvsosolution.png)
+- **Projects** are two solutions that you can use during upgrade. One solution, CodeMergeSolution, is the solution that contains projects with the elements that have conflicts and need to be resolved. The other solution, UpgradedSolution, contains a collection of projects, one for each upgraded model. For example, in Azure DevOps, you should see something like the following structure. [![Project.](./media/filestructure_configuringyourvsosolution.png)](./media/filestructure_configuringyourvsosolution.png)
 
 ## Map Azure DevOps to your development box
 1.  In Visual Studio, connect to your account by going to **Team explorer &gt; Select Team Projects &gt; Servers &gt; Add.**
@@ -59,9 +59,9 @@ The LCS code upgrade service automatically checks your upgraded code into Azure 
             -   If you are migrating from Dynamics AX 2012 R3 or earlier, you will be mapping to the metadata folder under the **Main** branch.
             -   If you are migrating between two product versions, you will be mapping to the metadata folder under one of the **Releases** branch.
 
-[![vstsmapping](./media/vstsmapping.png)](./media/vstsmapping.png) 
+[![vstsmapping.](./media/vstsmapping.png)](./media/vstsmapping.png) 
 
-After you have mapped these folders, you can synchronize the code to your local box. Right-click **Metadata** and select **Get latest**. Similarly synchronize the Projects folder. After synchronizing the metadata folder, refresh your models in Visual Studio from **Finance and Operations** &gt; **Model Management** &gt; **Refresh Models**. [![VSRefreshModels](./media/vsrefreshmodels.png)](./media/vsrefreshmodels.png) You are now ready to open your projects, resolve conflicts, build, test, and complete your code migration.
+After you have mapped these folders, you can synchronize the code to your local box. Right-click **Metadata** and select **Get latest**. Similarly synchronize the Projects folder. After synchronizing the metadata folder, refresh your models in Visual Studio from **Finance and Operations** &gt; **Model Management** &gt; **Refresh Models**. [![VSRefreshModels.](./media/vsrefreshmodels.png)](./media/vsrefreshmodels.png) You are now ready to open your projects, resolve conflicts, build, test, and complete your code migration.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

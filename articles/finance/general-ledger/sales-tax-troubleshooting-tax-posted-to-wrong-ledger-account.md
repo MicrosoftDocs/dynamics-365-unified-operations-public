@@ -35,26 +35,26 @@ During posting, tax might be posted to the wrong ledger account in the voucher. 
 
 1. On the **Voucher transactions** page, select the transaction that you want to work with, and then select **Posted sales tax**.
 
-    [![Posted sales tax button on the Voucher transactions page](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
+    [![Posted sales tax button on the Voucher transactions page.](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
 
 2. Review the value in the **Sales tax code** field. In this example, it's **VAT 19**.
 
-    [![Sales tax code field on the Posted sales tax page](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
+    [![Sales tax code field on the Posted sales tax page.](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
 
 ## Check the ledger posting group of the tax code
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 2. Find and select the tax code, and then review the value in the **Ledger posting group** field. In this example, it's **VAT**.
 
-    [![Ledger posting group field on the Sales tax codes page](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
+    [![Ledger posting group field on the Sales tax codes page.](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
 
 3. The value in the **Ledger posting group** field is a link. To view the details of the group's configuration, select the link. Alternatively, select and hold (or right-click) in the field, and then select **View details**.
 
-    [![View details command](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
+    [![View details command.](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
 
 4. In the **Sales tax payable** field, verify that the account number is correct, according to the transaction type. If it isn't, select the correct account to post to. In this example, the sales tax of the sales order should be posted to sales tax payable account 222200.
 
-    [![Sales tax payable field on the Ledger posting groups page](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)
+    [![Sales tax payable field on the Ledger posting groups page.](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)
 
     The following table provides information about each field on the **Ledger posting groups** page.
 
@@ -76,11 +76,11 @@ In the code, the posting account is determined by the ledger dimension. The ledg
 
 1. For a sales order, add a breakpoint at the **Tax::saveAndPost()** and **Tax::post()** methods. Pay attention to the value of **\_ledgerDimension**.
 
-    [![Sales order code sample that has a breakpoint](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
+    [![Sales order code sample that has a breakpoint.](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
 
     For a purchase order, add a breakpoint at the **TaxPost::saveAndPost()** and **TaxPost::postToTaxTrans()** methods. Pay attention to the value of **\_ledgerDimension**.
 
-    [![Purchase order code sample that has a breakpoint](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
+    [![Purchase order code sample that has a breakpoint.](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
 
 2. Run the following SQL query to find the display value of the account in the database, based on the record ID that is saved by the ledger dimension.
 
@@ -88,7 +88,7 @@ In the code, the posting account is determined by the ledger dimension. The ledg
     select * from DIMENSIONATTRIBUTEVALUECOMBINATION where recid={the value of _ledgerDimension}
     ```
 
-    [![Display value of the record ID](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
+    [![Display value of the record ID.](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
 
 3. Examine the callstack to find where the **_ledgerDimension** value is assigned. Usually, the value is from **TmpTaxWorkTrans**. In this case, you should add a breakpoint at **TmpTaxWorkTrans::insert()** and **TmpTaxWorkTrans::update()** to find where the value assigned.
 

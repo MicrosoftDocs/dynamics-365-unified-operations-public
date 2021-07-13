@@ -932,6 +932,8 @@
           href: manage-ecommerce-users-roles.md
         - name: Apply inventory settings
           href: inventory-settings.md
+        - name: Apply add product to cart settings
+          href: add-cart-settings.md
         - name: Search engine optimization (SEO) considerations for your site
           href: search-engine-optimization-considerations.md
         - name: Manage Content Security Policy (CSP)
@@ -1016,6 +1018,10 @@
             href: customize-site-navigation.md
           - name: Create a page URL
             href: create-page-URL.md
+        - name: Adventure Works theme
+          items:
+          - name: Adventure Works theme overview
+            href: adventure-works-theme.md            
       - name: Manage digital assets
         items:
         - name: Digital asset management overview
@@ -1070,6 +1076,16 @@
             href: add-hero-module.md 
           - name: Video player module
             href: add-video-player.md
+          - name: Active image module
+            href: active-image-module.md
+          - name: Image list module
+            href: image-list-module.md
+          - name: Interactive feature module
+            href: interactive-feature-module.md
+          - name: Subscribe module
+            href: subscribe-module.md
+          - name: Tile list module
+            href: tile-list-module.md
         - name: Header and footer modules
           items:
           - name: Header module
@@ -1246,6 +1262,16 @@
           href: localizations/latam-bra-commerce-localization.md
         - name: Set up and deploy Commerce localization for Brazil
           href: localizations/latam-bra-deployment.md
+        - name: NFC-e fiscal document functionality in Commerce POS for Brazil
+          href: localizations/latam-bra-nfce.md 
+        - name: Manage customer information in POS for Brazil
+          href: localizations/latam-bra-customer-information.md     
+        - name: Cancellation and return of NFC-e documents in Commerce POS for Brazil
+          href: localizations/latam-bra-nfce-cancel-return.md 
+        - name: Postponed registration of NFC-e documents issued in offline contingency mode
+          href: localizations/latam-bra-nfce-contingency-mode.md          
+        - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters 
+          href: localizations/latam-bra-retail-statements.md
       - name: Eastern Europe
         items: 
         - name: Common
@@ -1304,6 +1330,10 @@
           href: localizations/emea-nor-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/emea-nor-loc-deployment-guidelines.md
+      - name: Russia
+        items:
+        - name: Commerce localization for Russia
+          href: localizations/rus-commerce-localization.md   
       - name: Sweden
         items:
         - name: Cash register functionality
@@ -2136,6 +2166,8 @@
             href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/commerce/toc.json
           - name: Configure approval steps
             href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/commerce/toc.json
+          - name: Configure expenditure reviewers
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/commerce/toc.json
           - name: Configure manual decisions
             href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/commerce/toc.json
           - name: Configure conditional decisions
@@ -2548,6 +2580,8 @@
           href: dev-itpro/extensions-shipping-carrier-integration.md
         - name: Channel database extensions
           href: dev-itpro/channel-db-extensions.md
+        - name: Remove Cloud Scale Unit extensions
+          href: dev-itpro/retail-sdk/remove-csu-package.md
         - name: Enable custom CDX synchronization via extension
           href: dev-itpro/cdx-extensibility.md
         - name: Define and set order attributes

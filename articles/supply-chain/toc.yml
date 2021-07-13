@@ -246,8 +246,6 @@
               href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with Electronic Invoicing for Egypt
               href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Get started with Electronic Invoicing for Italy
-              href: ../finance/localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with the Electronic Invoicing for Mexico
               href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Set up Electronic Invoicing
@@ -1607,6 +1605,8 @@
           href: master-planning/planning-optimization/get-started.md
         - name: Planning Optimization fit analysis
           href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
+        - name: Parameters not used by Planning Optimization
+          href: master-planning/planning-optimization/not-used-parameters.md
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with demand forecast
@@ -1615,10 +1615,14 @@
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Safety margins
           href: master-planning/planning-optimization/safety-margins.md
+        - name: Delay tolerance (negative days)
+          href: master-planning/planning-optimization/delay-tolerance.md
         - name: Purchase requisitions
           href: master-planning/planning-optimization/purchase-requisitions.md
         - name: Production planning
           href: master-planning/planning-optimization/production-planning.md
+        - name: Scheduling with infinite capacity
+          href: master-planning/planning-optimization/infinite-capacity-planning.md
         - name: Inventory marking with Planning Optimization
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning
@@ -1859,6 +1863,8 @@
             href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/supply-chain/toc.json
           - name: Configure approval steps
             href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Configure expenditure reviewers
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/supply-chain/toc.json
           - name: Configure manual decisions
             href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
           - name: Configure conditional decisions
@@ -3351,6 +3357,8 @@
               href: warehousing/wave-execution-notifications.md
             - name: Wave label printing
               href: warehousing/configure-wave-label-printing.md
+            - name: Schedule wave label printing during wave
+              href: warehousing/configure-task-based-wave-label-printing.md
             - name: Containerization
               href: warehousing/wave-containerization.md
             - name: Container packing strategies

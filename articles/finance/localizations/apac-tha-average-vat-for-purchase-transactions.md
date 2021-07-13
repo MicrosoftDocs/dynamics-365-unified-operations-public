@@ -364,12 +364,12 @@ Revenue Department of Thailand every month.
 The following illustration shows an example of a detailed **Average
 VAT** report.
 
-![detailed Average VAT report](media/apac-tha-detailed-average-vat-report.png)
+![detailed Average VAT report.](media/apac-tha-detailed-average-vat-report.png)
 
 The following illustration shows an example of a summarized **Average
 VAT** report.
 
-![summarized Average VAT report](media/apac-tha-summarized-average-vat-report.png)
+![summarized Average VAT report.](media/apac-tha-summarized-average-vat-report.png)
 
 The following table explains the information that is shown on the
 **Average VAT** report.
@@ -476,7 +476,7 @@ The following transactions are created for the voucher:
 
 - **Deductible VAT:** THB 70 × 50 percent = THB 28
 
-    ![Voucher transactions](media/apac-tha-voucher-transactions.png)
+    ![Voucher transactions.](media/apac-tha-voucher-transactions.png)
 
 7.  Go to **Accounts payable &gt; Payments &gt; Vendor payment
     journal**, and settle the transaction.
@@ -504,4 +504,4 @@ and realized VAT](apac-tha-unrealized-vat.md).
 The difference between the old nondeductible VAT and the new
 nondeductible VAT amount is THB 10.50.
 
-![Average VAT report](media/apac-tha-average-vat-report.png)
+![Average VAT report.](media/apac-tha-average-vat-report.png)

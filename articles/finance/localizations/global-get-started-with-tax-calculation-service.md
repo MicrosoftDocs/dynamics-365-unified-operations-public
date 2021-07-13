@@ -17,7 +17,7 @@ audience: Application user
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: wangchen

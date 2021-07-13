@@ -4,7 +4,7 @@
 title: Finance and Operations apps data in Azure Data Lake
 description: This topic explains how to configure your Finance and Operations apps environment so that it has a data lake.
 author: MilindaV2
-ms.date: 01/04/2021
+ms.date: 06/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,8 +15,7 @@ ms.technology:
 # ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
-
+ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 ms.custom: 96283
 ms.assetid: 
@@ -34,8 +33,10 @@ ms.dyn365.ops.version: Platform Update 34
 
 > [!NOTE]
 > The **Export to Data Lake** feature is in public preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS).
->
-> In the coming months, Microsoft will enable this feature in additional regions, based on the demand. If your environment isn't in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join a [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
+> 
+> **The feature may be temporarily unavailable during the preview period in your environment or the feature may not be available in your region.**
+> 
+> In the coming months, Microsoft will enable this feature in additional regions, as well as in additional environments. If your environment isn't in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
 
 The **Export to Data Lake** feature lets you copy data from your Finance and Operations apps into your own data lake (Azure Data Lake Storage Gen2). The system lets you select the tables and entities that are included. After you select the data that you want, the system makes an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. After data changes in your Finance and Operations app instances, there might be a delay of a few minutes before the data is available in your data lake.
 
@@ -56,7 +57,7 @@ You can select the tables and entities that should be staged in Data Lake.
 2. On the **Export to Data Lake** page, on the **Choose Tables** tab, select the data tables that should be staged in Data Lake. You can search for tables by either display name or system name. You can also see whether a table is being synced. 
 3. When you've finished, select **Add Tables** to add the selected tables to Data Lake.
 
-    ![Selecting tables](./media/Export-Table-to-Data-lake-Tables-Running-state.png)
+    ![Selecting tables.](./media/Export-Table-to-Data-lake-Tables-Running-state.png)
 
 4. Select **Activate data feed**, and then select **OK**. When you add a table, the system might show its status as **Initializing**. This status indicates that the system is making an initial copy of data. When the initial copy is completed, the system changes the status to **Running**.
 
@@ -71,7 +72,7 @@ You can select the tables and entities that should be staged in Data Lake.
 
 5. On the **Choose using Entities** tab, select the entities, and then select **Add Tables using Entities**.
 
-    ![Selecting tables by using entities](./media/Export-Table-to-Data-lake-Entities-Running-state.png)
+    ![Selecting tables by using entities.](./media/Export-Table-to-Data-lake-Entities-Running-state.png)
 
     Regardless of the method that you use to select tables, the tables will be staged in Data Lake.
 

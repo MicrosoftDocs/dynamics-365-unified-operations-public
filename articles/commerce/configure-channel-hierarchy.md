@@ -49,7 +49,7 @@ To configure a channel to use a channel navigation hierarchy, follow these steps
 
 The following image shows how to configure a channel to use a channel navigation hierarchy.
 
-![Example channel configuration](media/configure-channel-hierarchy-1.png)
+![Example channel configuration.](media/configure-channel-hierarchy-1.png)
 
 ## Set attribute metadata
 
@@ -65,7 +65,7 @@ To set attribute metadata, follow these steps.
 
 The following image shows an example set of channel product attributes configured on a channel category node.
 
-![Channel attributes on a channel category node](media/configure-channel-hierarchy-2.png)
+![Channel attributes on a channel category node.](media/configure-channel-hierarchy-2.png)
 
 ## Publish changes
 
@@ -78,7 +78,7 @@ To publish changes, follow these steps.
 
 The following image shows how to publish channel updates.
 
-![Publish channel updates](media/configure-channel-hierarchy-3.png)
+![Publish channel updates.](media/configure-channel-hierarchy-3.png)
 
 ## Additional resources
 

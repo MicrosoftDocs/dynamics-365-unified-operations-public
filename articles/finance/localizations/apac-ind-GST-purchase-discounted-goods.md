@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.4
 2. Create a purchase order for a taxable item.
 3. In the **Discount percent** field, enter a value, and then save the record.
 
-  ![All purchase orders page](media/Annotation-2019-05-15-175044.png)
+  ![All purchase orders page.](media/Annotation-2019-05-15-175044.png)
 
 ## Validate the tax details
 
@@ -51,7 +51,7 @@ ms.dyn365.ops.version: 10.0.4
 5. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**. 
 6. On the **Overview** tab, select **Voucher**.
 
-![Example](media/Annotation-2019-05-15-174500.png)
+![Example.](media/Annotation-2019-05-15-174500.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

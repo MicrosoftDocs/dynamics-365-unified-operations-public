@@ -42,7 +42,7 @@ The configurability relies on the Electronic reporting (ER) format configuration
 
 The following illustration shows the main components of an Electronic invoicing feature.
 
-![Electronic invoicing feature overview](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
+![Electronic invoicing feature overview.](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
 Because of variations in invoice formats and action flows, the feature setup might vary according to country or region, or according to business requirements.
 
@@ -55,7 +55,7 @@ The setup process must be completed in your RCS environment. Follow these steps 
 3. On the **Electronic invoicing features** page, select **Import** to import the ER data model configuration from the Global repository.
 4. Select **Add** to create an Electronic invoicing feature. You can either create the feature from the scratch or derive it from an existing Electronic invoicing feature.
 
-    ![Adding an Electronic invoicing feature](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
+    ![Adding an Electronic invoicing feature.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
 > [!NOTE]
 > When you create a new Electronic invoicing feature, it has a version number, and its default status is set to **Draft**.
@@ -68,21 +68,21 @@ Follow these steps to add ER formats to the Electronic invoicing feature.
 
 1. On the **Electronic invoicing features** page, on the **Configurations** tab, select **Add** to add ER file format configurations for the Electronic invoicing feature.
 
-    ![Adding Electronic invoicing feature configurations](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
+    ![Adding Electronic invoicing feature configurations.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > When you create an Electronic invoicing feature from scratch, you must manually add all the ER file format configurations. When you derive an Electronic invoicing feature from an existing feature, the ER file format configurations are automatically created, because they are inherited from the original Electronic invoicing feature.
 
 2. Select **Edit** to open the **Format designer** page, where you can edit the ER file format configuration.
 
-    ![Editing Electronic invoicing feature configurations](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
+    ![Editing Electronic invoicing feature configurations.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > While you're editing the format, the status of the configuration version is set to **Draft**.
 
 3. Use the **Format designer** page to change the file format configuration. For more information, see [Create electronic document configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
-    ![Format designer page](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
+    ![Format designer page.](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 
 ### Feature setups
 
@@ -92,18 +92,18 @@ Follow these steps to add feature setups to the Electronic invoicing feature.
 
 1. On the **Electronic invoicing features** page, on the **Setups** tab, select **Add** to add feature setups to the Electronic invoicing feature.
 
-    ![Adding Electronic invoicing feature setups](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
+    ![Adding Electronic invoicing feature setups.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
     > When you create an Electronic invoicing feature from scratch, you must manually add all the feature setups that you require. When you derive an Electronic invoicing feature from an existing feature, all feature setups are automatically created, because they are inherited from the original Electronic invoicing feature.
 
 2. Select **Edit** to edit the feature version setup.
 
-    ![Editing Electronic invoicing feature setups](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
+    ![Editing Electronic invoicing feature setups.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
 3. Use the **Feature version setup** page to configure actions, applicability rules, and variables.
 
-    ![Actions, applicability rules, and variables](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
+    ![Actions, applicability rules, and variables.](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
 
 ### Actions
 
@@ -118,7 +118,7 @@ On the **Feature versions setup** page, on the **Actions** tab, on the **Actions
 - Select **New** or **Delete** to add new actions or delete existing actions.
 - Select **Up** or **Down** to move selected actions up or down in the grid and therefore change the order that they are run in. Actions are run in the order in which they appear in the grid, from top to bottom.
 
-![Managing actions](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
+![Managing actions.](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
 
 The following table describes the fields that are available on the **Actions** FastTab.
 
@@ -134,7 +134,7 @@ The following table describes the fields that are available on the **Actions** F
 
 The **Parameters** FastTab lists the parameters for the action that is selected on the **Actions** FastTab.
 
-![Parameters FastTab](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
+![Parameters FastTab.](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
 
 The following table describes the fields that are available on the **Parameters** FastTab.
 
@@ -264,20 +264,20 @@ Applicability rules let you create logical rules that determine the usage contex
 
 1. On the **Feature version setup** page, on **Applicability rules** tab, select **New** to add an applicability rule.
 
-    ![Managing applicability rules](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
+    ![Managing applicability rules.](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
 
 2. In the grid, select the clauses that should be grouped.
 3. Select **Group clause**.
 
-    ![Grouping clauses](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
+    ![Grouping clauses.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
 
     When clauses are grouped, a new column is added to the grid. This column specifies the logical operator for the grouped clauses.
 
-    ![Logical operator for grouped clauses](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
+    ![Logical operator for grouped clauses.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
 
 To ungroup clauses, select the grouped clauses to ungroup, and then select **Ungroup clause**.
 
-![Ungrouping clauses](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
+![Ungrouping clauses.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
 
 > [!NOTE]
 > When you ungroup a clause, always start from the innermost grouping level.
@@ -299,7 +299,7 @@ You can create variables and then use them as the input value for a parameter of
 
 - On the **Feature version setup** page, on the **Variables** tab, select **New** or **Delete** to manage variables.
 
-    ![Managing variables](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
+    ![Managing variables.](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
 
 The following table describes the fields that are available on the **Variables** tab.
 
@@ -315,7 +315,7 @@ The following table describes the fields that are available on the **Variables**
 
 - On the **Feature version setup** page, on the Action Pane, select **Validate** to validate the feature version setup.
 
-   ![Selecting the Validate button](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
+   ![Selecting the Validate button.](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
 
 The validation checks the consistency of the whole configuration. For example, if a specific parameter for an action is mandatory but its value remains blank, the validation detects this inconsistency, and you receive a warning.
 
@@ -328,7 +328,7 @@ Follow these steps to enable an Electronic invoicing environment for the Electro
 1. On the **Electronic invoicing features** page, on the **Environments** tab, select **Enable** to add an Electronic invoicing environment.
 2. In the **Effective from** field, enter the date when the new environment becomes effective.
 
-![Enabling an Electronic invoicing environment](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
+![Enabling an Electronic invoicing environment.](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
 ## Organizations
 

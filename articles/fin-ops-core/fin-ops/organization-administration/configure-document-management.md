@@ -4,7 +4,7 @@
 title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-ms.date: 05/26/2021
+ms.date: 06/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -55,7 +55,10 @@ To create a new document type, follow these steps.
 
 ## Configure SharePoint storage
 
-Microsoft SharePoint Online is one of the storage locations that are supported natively. Currently, only SharePoint Online is supported. Support for on-premises SharePoint (a local SharePoint server) may be added in the future.
+Microsoft SharePoint Online is one of the storage locations that is supported natively. Currently, only SharePoint Online is supported. Support for on-premises SharePoint (a local SharePoint server) may be added in the future. 
+
+> [!IMPORTANT]
+> SharePoint storage is only available in Microsoft-managed environments.
 
 To use SharePoint storage, set the **Location** field for a document type to **SharePoint**. Then, in the **SharePoint Address** field, enter a valid SharePoint address.
 

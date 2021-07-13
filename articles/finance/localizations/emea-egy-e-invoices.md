@@ -146,7 +146,7 @@ According to Egyptian legal requirements, products on electronic invoices must u
 4. At the **Brick** level, in the **Code** field, enter the code that will be applicable to selected products.
 5. On the **Products** FastTab, select **Add** to add all the products that the brick code will be applicable to.
 
-![GPC category hierarchy](media/emea-egy-gpc.jpg)
+![GPC category hierarchy.](media/emea-egy-gpc.jpg)
 
 > [!NOTE]
 > If neither GTIN codes nor GPC codes are defined for products, internal product numbers will be used on electronic invoices. If no products or services are involved in invoicing, for example, free text invoices, or various operations in project invoices, line descriptions will be used.

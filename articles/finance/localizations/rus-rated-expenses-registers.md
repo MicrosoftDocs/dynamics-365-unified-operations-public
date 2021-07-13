@@ -39,7 +39,7 @@ When used in counters, rates must be pre-configured. To set up rates, complete t
     - In the **Start date** field, enter the date from which the value of the rate will be used in the sequence of calculation.
     - In the **Value** field, enter the ratio value that will be used in the sequence of calculation.
 
-      ![Values FastTab, Start date and Value fields](media/values-fast-tab.png)
+      ![Values FastTab, Start date and Value fields.](media/values-fast-tab.png)
 
 6. If you selected **Interval**, on the **Values** FastTab, do the following:
 
@@ -75,7 +75,7 @@ Complete the following steps to create a sequence of calculation for rated expen
     - **Ratio**: The calculated amount using the ratio for the expense code from the sequences of calculation.
     - **Deferral amount**: The difference between the total amount and normalized amount accounted for in the expenses of the future period.
 
-     ![Values available in the Register field column](media/register-field-column.png)
+     ![Values available in the Register field column.](media/register-field-column.png)
 
 ### Assign calculation sequences to the register
 
@@ -83,7 +83,7 @@ Complete the following steps to create a sequence of calculation for rated expen
 2. Select the **Standard expenses in current period** tax register from the list.
 3. On the **Parameters** FastTab, in the **Value** column, choose the numbers of the calculation sequences to form the register from the list.
 
-    ![Parameters FastTab, Value column](media/parameters-fast-tab.PNG)
+    ![Parameters FastTab, Value column.](media/parameters-fast-tab.PNG)
 
 ## Standard expenses in current period register
 
@@ -91,7 +91,7 @@ Calculate the tax register as described in Profit tax registers journal.
 
 The **Standard expenses in current period** register reflects information about the expenses of the current period, their rated part, and the part that exceeds the standard.
 
-![Standard expenses in current period register](media/standard-expenses-current-period.png)
+![Standard expenses in current period register.](media/standard-expenses-current-period.png)
 
 View the following information on the register lines:
 

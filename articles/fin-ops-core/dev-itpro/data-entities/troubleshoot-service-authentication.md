@@ -58,7 +58,7 @@ When you troubleshoot service authentication issues, there are a few basic and c
 
 The following illustration shows an example of the contents of the JWT.
 
-[![Example of a JWT](./media/serviceauthenticationtroubleshooting01.png)](./media/serviceauthenticationtroubleshooting01.png)
+[![Example of a JWT.](./media/serviceauthenticationtroubleshooting01.png)](./media/serviceauthenticationtroubleshooting01.png)
 
 ## Review the event logs
 You can also look at the event logs of the instance machine, if you have access to the virtual machine (VM).
