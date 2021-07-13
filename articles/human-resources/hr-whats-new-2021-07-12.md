@@ -51,6 +51,7 @@ The following features are generally available with this release.
 | ## Test coverage for Absence Manager feature - (596464) | | |
 |  Years of service display toggle | |This feature provides the option to use different dates to calculate the years of service displayed in the **Streamlined employee entry** form and in the **People** form.  This will be available in Human Resources parameters.  [https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-setup-parameters] |
 
+
 ### Bug fixes
 
 The following bug fixes are included in this release.
@@ -69,6 +70,8 @@ The following bug fixes are included in this release.
 | ## Approved requests not reflected on the Absence Manager tile - (596015) | | |
 | ## Opening activities for performance goals opens a completely different record - (586930) | | |
 | ## EV2 deployments failing with error about incorrect subscription ID - (595949) | | |
+| 569959 |  HcmPositionWorkerAssignmentV2 entity doesn't work to assign a worker to a position | Users were receiving error when adding a position assignment record via the entity and the publish would fail. |
+
 
 ## In preview
 
