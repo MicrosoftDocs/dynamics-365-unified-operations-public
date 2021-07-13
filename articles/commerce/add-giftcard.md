@@ -4,7 +4,7 @@
 title: Gift card module
 description: This topic covers gift card modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/29/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,16 +52,16 @@ The following image shows an example of a gift card module on a checkout page.
 
 - **Show additional fields** – This property defines what fields should be displayed for gift cards in addition to the gift card number, which is always displayed by default. For example, some gift cards support displaying a personal identification number (PIN), and others support displaying a PIN and expiration date. Alternatively, this property could be set to "None", which would only display the gift card number and no additional fields.
 
-Supported values:
--	PIN
--	Expiration date
--	PIN and expiration date 
--	None
+    Supported values:
+    -	PIN
+    -	Expiration date
+    -	PIN and expiration date 
+    -	None
 
-- **Enable for guest users** - This property when enabled allows guest users to redeem or check balance on the gift card. This also requires anonymous access for gift cards to be enabled in headquarters.
+- **Enable for guest users** - When enabled, this property allows guest users to redeem or check balances on gift cards. This property requires anonymous (guest) access for gift cards to be enabled in Commerce headquarters. For more information, see [Enable gift card payments for guest checkout](#enable-gift-card-payments-for-guest-checkout).
 
->[IMPORTANT]
->**Enable for guest users** is available in Dynamics 365 Commerce 10.0.21 release along with the respective SSK package(9.31).
+> [!IMPORTANT]
+> The **Enable for guest users** property is available as of the Commerce version 10.0.21 release along with the respective Commerce module libary package (9.31).
 
 ## Site settings for gift card modules
 
