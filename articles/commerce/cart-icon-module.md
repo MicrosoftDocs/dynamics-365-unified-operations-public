@@ -46,7 +46,7 @@ The following image shows an example of a cart icon module that displays a mini 
 - **Allow anonymous checkout** - When true, this property enables the mini cart to allow users to do a guest checkout if they are not signed in. This property is available in the Commerce version 10.0.21 release as part of the Commerce module library package.
 - **Order of items** - This property controls the order in which items appear in the mini cart. When the **New items added to top of the list** option is selected, new items added to the cart will appear at the top of the list of mini cart items. When the default **New items added to bottom of the list** option is selected, new items added to the cart will appear at the bottom of the list of mini cart items. The **Order of items** property is available as of the Commerce version 10.0.21 release as part of the Commerce module library package.
 
->[Important]
+> [!IMPORTANT]
 > The **Allow anonymous checkout** and **Order of items** properties are available as of the Commerce version 10.0.21 release and requires Commerce module library package version 9.31 to be installed.
 
 ## Module properties and slots in the Adventure Works theme
