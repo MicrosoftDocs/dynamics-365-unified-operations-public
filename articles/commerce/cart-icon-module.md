@@ -5,7 +5,7 @@
 title: Cart icon module
 description: This topic covers the cart icon module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -43,11 +43,11 @@ The following image shows an example of a cart icon module that displays a mini 
 ## Module properties
 
 - **Show mini cart** – When true, this property enables a cart summary (mini cart) to be displayed when the cart icon is hovered over. This functionality is only supported for desktop view ports.
-- **Allow anonymous checkout** - When true, this property allows mini-cart to allow users to do a guest checkout if the user is not signed-in. This property is available in Dynamics 365 Commerce 10.0.21 release as part of the SSK package.
-- **Order of items** - This property controls the order in which items appear in the mini cart. **New items added to top of the list** this will ensure that as an item is added to cart, it will appear on the top of the mini-cart items. **New items added to bottom of the list** will be default behavior, where items are added to the bottom of the mini cart list. This property is available in Dynamics 365 Commerce 10.0.21 release as part of the SSK package.
+- **Allow anonymous checkout** - When true, this property enables the mini cart to allow users to do a guest checkout if they are not signed in. This property is available in the Commerce version 10.0.21 release as part of the Commerce module library package.
+- **Order of items** - This property controls the order in which items appear in the mini cart. When the **New items added to top of the list** option is selected, new items added to the cart will appear at the top of the list of mini cart items. When the default **New items added to bottom of the list** option is selected, new items added to the cart will appear at the bottom of the list of mini cart items. The **Order of items** property is available as of the Commerce version 10.0.21 release as part of the Commerce module library package.
 
 >[Important]
-> **Allow anonymous checkout** and **Order of items** are available in Dynamics 365 Commerce 10.0.21 release and require the SSK package to be installed (9.31 version).
+> The **Allow anonymous checkout** and **Order of items** properties are available as of the Commerce version 10.0.21 release and requires the Commerce module library package version 9.31 to be installed.
 
 ## Module properties and slots in the Adventure Works theme
 
