@@ -59,17 +59,17 @@ For more information, see [Manage features](hr-admin-manage-features.md).
 
 The process of configuring benefits involves the following tasks:
 
-- Set up required benefit information.
-- Set up optional benefit information.
-- Set up benefit plans.
-- Set up flex credit programs (optional).
-- Configure required employee information.
-- Configure optional employee information.
-- Process employees to determine eligibility.
-- Employees select plans via employee self-service.
-- Confirm employee plan selections.
-- Life event processing (optional).
-- Rate updates (optional).
+1.  Set up required benefit information.
+2.  Set up optional benefit information.
+3.  Set up benefit plans.
+4.  Set up flex credit programs (optional).
+5.  Configure required employee information.
+6.  Configure optional employee information.
+7.  Process employees to determine eligibility.
+8.  Employees select plans via employee self-service (optional).
+9.  Confirm employee plan selections.
+10. Life event processing (optional).
+11. Rate updates (optional).
 
 ## Set up required benefit information
 
@@ -114,7 +114,7 @@ You can use flex credit programs to enroll employees in benefits, based on a pre
 
 ## Configure required employee information
 
-Before you can enroll employees in benefits, you must provide required information for them. Every employee must have a position. You must enroll employees in a fixed compensation plan on their start date or have an annual benefits salary amount. Additionally, in the **Employment details** section of the **Worker** page, you must select a value in the **Benefit pay frequency** field.
+Before you can enroll employees in benefits, you must provide required information for them. Every employee must have a position. You must enroll employees in a fixed compensation plan on their start date, or they must have an annual benefits salary amount. Additionally, in the **Employment details** section of the **Worker** page, you must select a value in the **Benefit pay frequency** field.
 
 If you have an employee who receives supplemental compensation like commissions, you can add a **Benefits annual salary** amount from the employee record. Human Resources will use the **Benefits annual salary** amount when determining coverage amounts, instead of the fixed compensation annual amount. The **Benefits annual salary** must be valid as of the employee's start date or the beginning of the benefit period, whichever is latest. If both a fixed compensation and benefits annual salary amount is recorded for an employee, the benefits annual salary will be used in determining coverage amounts.
 
