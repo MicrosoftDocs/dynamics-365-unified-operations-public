@@ -4,7 +4,7 @@
 title: Create and update a returns and refunds policy for a channel
 description: This topic explains how to set up a returns and refunds policy for a channel.
 author: ShalabhjainMSFT
-ms.date: 07/02/2021
+ms.date: 07/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,18 +40,21 @@ The scope of the policy is currently limited to setting the payment tenders that
 
 ## Enable return policy
 
-To enable the channel return policy functionality, do the following:
+To enable the channel return policy functionality Commerce headquarters, follow these steps.
 
 1. Go to the **Feature Management** workspace in Dynamics 365 Commerce.
 1. Search for the **Enable channel return policies** feature in the list of feature names.
 1. Select **Enable now**.
 1. On the **Distribution schedule** page, run the **1110** (Global configuration) job to distribute the feature change.
 
-## Initialize the commerce scheduler
-After making the above feature changes, initialize Commerce scheduler to ensure any new feature database changes get added to CDX. To initialize the commerce scheduler, follow these steps.
+## Initialize the Commerce scheduler
 
-- Go to Retail and Commerce > Headquarters setup > Commerce scheduler > Initialize commerce scheduler. Alternatively, search for "Initialize commerce scheduler."
-- In the Initialize commerce scheduler dialog box, make sure that the Delete existing configuration option is set to No, and then select OK.
+After enabling the **Enable channel return policies** feature, you must initialize the Commerce scheduler to ensure that new feature database changes get added via Commerce Data Exchange (CDX) synchronization. 
+
+To initialize the Commerce scheduler in Commerce headquarters, follow these steps.
+
+- Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize commerce scheduler**. Alternatively, you can search for "Initialize Commerce scheduler."
+- In the **Initialize commerce scheduler** dialog box, ensure that the **Delete existing configuration** option is set to **No**, and then select **OK**.
 
 ## Configure return policy
 
