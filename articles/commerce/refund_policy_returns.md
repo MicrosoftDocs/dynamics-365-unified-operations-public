@@ -45,7 +45,13 @@ To enable the channel return policy functionality, do the following:
 1. Go to the **Feature Management** workspace in Dynamics 365 Commerce.
 1. Search for the **Enable channel return policies** feature in the list of feature names.
 1. Select **Enable now**.
-1. On the **Distribution schedule** page, run the **1110** (Global configuration) job to distribute the feature change. 
+1. On the **Distribution schedule** page, run the **1110** (Global configuration) job to distribute the feature change.
+
+## Initialize the commerce scheduler
+After making the above feature changes, initialize Commerce scheduler to ensure any new feature database changes get added to CDX. To initialize the commerce scheduler, follow these steps.
+
+- Go to Retail and Commerce > Headquarters setup > Commerce scheduler > Initialize commerce scheduler. Alternatively, search for "Initialize commerce scheduler."
+- In the Initialize commerce scheduler dialog box, make sure that the Delete existing configuration option is set to No, and then select OK.
 
 ## Configure return policy
 
