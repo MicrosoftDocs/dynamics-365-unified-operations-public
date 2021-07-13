@@ -71,6 +71,7 @@ The following bug fixes are included in this release.
 | ## Opening activities for performance goals opens a completely different record - (586930) | | |
 | ## EV2 deployments failing with error about incorrect subscription ID - (595949) | | |
 | 569959 |  HcmPositionWorkerAssignmentV2 entity doesn't work to assign a worker to a position | Users were receiving error when adding a position assignment record via the entity and the publish would fail. |
+| 582259 | VETS 4212 report uses the 2017 form instead of the 2020 form | Updated to 2020 format.  To load new format, navigate to Report configurations and delete the VETS-4212 report in the left column.  Then navigate to Electronic reporting - Repositories- HR resources and select open.  Select VETS-4212 PDF printout and select 'Import'.|
 
 
 ## In preview
