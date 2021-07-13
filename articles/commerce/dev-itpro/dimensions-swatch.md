@@ -137,7 +137,9 @@ Swatches have an optional capability to show the inventory availability of a pro
 
 To activate the swatch inventory availability feature you must enable the **Update media on dimension selection** property in the [media gallery module](media-gallery-module.md), which allows media gallery images to update on dimension selection. 
 
-![Example of inventory awareness on the sizes of a product](../dev-itpro/media/swatch_inventory.png)
+The following illustration shows an example of inventory awareness on the size swatches of a PDP.
+
+![Example of inventory awareness  on the size swatches of a PDP](../dev-itpro/media/swatch_inventory.png)
 
 ## Display swatches in POS and other channels
 
