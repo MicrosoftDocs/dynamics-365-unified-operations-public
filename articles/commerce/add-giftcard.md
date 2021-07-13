@@ -61,7 +61,7 @@ The following image shows an example of a gift card module on a checkout page.
 - **Enable for guest users** - When enabled, this property allows guest users to redeem or check balances on gift cards. This property requires anonymous (guest) access for gift cards to be enabled in Commerce headquarters. For more information, see [Enable gift card payments for guest checkout](#enable-gift-card-payments-for-guest-checkout).
 
 > [!IMPORTANT]
-> The **Enable for guest users** property is available as of the Commerce version 10.0.21 release along with the respective Commerce module libary package (9.31).
+> The **Enable for guest users** property is available as of the Commerce version 10.0.21 release and requires the Commerce module library package version 9.31 to be installed.
 
 ## Site settings for gift card modules
 
