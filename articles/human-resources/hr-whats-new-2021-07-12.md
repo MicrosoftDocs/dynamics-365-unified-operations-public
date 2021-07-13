@@ -60,14 +60,12 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| ## About pane in Human Resources has incorrect Dataverse terminology - (595871) | | |
+| 595871 | About pane in Human Resources has incorrect Dataverse terminology | With rebranding the Common Data Service to Dataverse, terminology has been updated in the Microsoft Dynamics 365 Human Resources information pane (Help & Support --> About) |
 | 598676 | Streamlined employee entry form overrides task() which can cause a crash when used with Saved View| When in the Worker form and the 'Streamlined Employee entry' feature is turned on,  the application may crash if 'Always open for editing' is set on the saved view. |
 | 592344 |Workers comp section on position should be read-only when benefits management is enabled. | Workers Comp information is created using legacy benefits functionality.  When benefits management is enabled, the fields will be read only.  When benefits managemetn is turned on AND hide legacy benefit forms is set to YES in HR shared parameters, the workers compensation tab will be hidden. |
-| ## HcmDiscussion form activating tab causes infinite loop when personalizations are applied - (598617) | | |
-| ## Fix PU45 BP Build Errors - (598282) | | |
-| ## Journal Date field in the Performance journal is showing in UTC - (593553) | | |
-| ## Opening activities for performance goals opens a completely different record - (586930) | | |
-| ## EV2 deployments failing with error about incorrect subscription ID - (595949) | | |
+| 598617 | HcmDiscussion form activating tab causes infinite loop when personalizations are applied | When both the grid and details view have "Always open for editing" turned on, the code activating the tab in the overridden task method fights with personalization about what control should have focus and creates an infinite loop. |
+| 593553 | Journal Date field in the Performance journal is showing in UTC | The Journal Date field for performance journals displays in the UTC time zone rather than the time zone defined in system date setup, causing the date to be incorrect for some time zones. |
+| 586930 | Opening activities for performance goals opens a completely different record | When the "Performance Journals extended reports view" feature is enabled in Feature Management, selecting the performance goals for extended reports on the My Team tab of Employee Self Service opens the goals for an employee other than the selected employee. |
 | 569959 |  HcmPositionWorkerAssignmentV2 entity doesn't work to assign a worker to a position | Users were receiving error when adding a position assignment record via the entity and the publish would fail. |
 | 582259 | VETS 4212 report uses the 2017 form instead of the 2020 form | Updated to 2020 format.  To load new format, navigate to Report configurations and delete the VETS-4212 report in the left column.  Then navigate to Electronic reporting - Repositories- HR resources and select open.  Select VETS-4212 PDF printout and select 'Import'.|
 
@@ -88,7 +86,7 @@ The following new features are in preview. For more information about turning fe
 
 | Feature | Details |
 | --- | --- |
-| Platform update 10.0.19 (43) | Platform update 10.0.19 is scheduled to begin rolling out with the service release on June 28, 2021. For more information, see [Platform updates for version 10.0.19 of Finance and Operations apps (June 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
+| Platform update 10.0.20 (44) | Platform update 10.0.20 is scheduled to begin rolling out with the service release on July 26, 2021. For more information, see [Platform updates for version 10.0.20 of Finance and Operations apps (August 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20). |
 | Enable employees to be marked as ready to be paid | [Enable employees to be marked as ready to be paid](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-employees-be-marked-as-ready-pay) |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
