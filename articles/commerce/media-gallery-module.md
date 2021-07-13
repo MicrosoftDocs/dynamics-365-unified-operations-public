@@ -4,7 +4,7 @@
 title: Media gallery module
 description: This topic covers media gallery modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 08/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -61,12 +61,10 @@ In the example in the following illustration, a buy box on a PDP hosts product i
 | Images | Images that are selected from site builder Media Library | In addition to being rendered from a product, images can be curated for a media gallery module. These images will be appended to any product images that are available. This capability is available in Commerce version 10.0.12. |
 | Thumbnail orientation | **Vertical** or **Horizontal** | This property specifies whether thumbnail images should be shown in a vertical strip or a horizontal strip. |
 | Hide master product images for variant | **True** or **False** | If this property is set to **True**, when a variant is selected, images of the master product are hidden unless the variant has no images. This property doesn't affect products that have no variants. |
-| Update media on dimension selection|  **True** or **False** | This property when enabled will update the images in the medio when any dimension such as Color, Style or Size is selected and if an image is available.  This simplifies browsing experience by not requiring a product variant (all available dimensions) to be selected for media images to be updated. This property is available in Advanced tab and in Dynamics 365 Commerce 10.0.21 release.|
+| Update media on dimension selection|  **True** or **False** | If this property is set to **True**, images in the media library will be updated when any dimension such as color, style, or size is selected and if an image is available. This simplifies the browsing experience by not requiring that each product variant dimension be selected for the respective image to be updated. This property is available on the **Advanced** tab.|
 
->[Important]
-> **Update media on dimension selection** is  available in Dynamics 365 Commerce 10.0.21 release and requires the respective SSK package to be installed (9.31)
-> 
-
+> [!IMPORTANT]
+> The **Update media on dimension selection** property is available as of the Commerce version 10.0.21 release and requires Commerce module library package version 9.31 to be installed.
 
 The following illustration shows an example of a media gallery module where the full-screen and zoom options are available.
 
