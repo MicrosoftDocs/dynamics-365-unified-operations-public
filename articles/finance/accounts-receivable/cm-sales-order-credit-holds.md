@@ -4,7 +4,7 @@
 title: Credit holds for sales orders
 description: This topic describes the setup of rules used to place a sales order on credit hold. 
 author: mikefalkner
-ms.date: 01/25/2019
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
