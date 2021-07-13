@@ -4,7 +4,7 @@
 title: Configure product dimension values to appear as swatches
 description: This topic describes how to configure product dimension values as swatches in Microsoft Dynamics 365 Commerce headquarters.
 author: anupamar-ms
-ms.date: 05/28/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -127,22 +127,21 @@ The following illustration shows an example where the **Upload files** dialog bo
 
 ## Enable swatch display on e-commerce site pages
 
-Before swatches can appear on e-commerce site pages that require dimension selection, such as PDPs and list pages, you must configure dimension site settings in Commerce headquarters. For more information, see [Apply site settings for dimensions](../dimension-settings.md). 
+Before swatches can appear on e-commerce site pages that require dimension selection, such as PDPs and list pages, you must configure dimension site settings in Commerce headquarters. For more information, see [Apply site settings for dimensions](../dimension-settings.md).
 
 In addition, you should enable the **Include product attributes in search results** property for search results modules. If your site uses customized category pages, you should update the search results modules that are used on those pages, so that the **Include product attributes in search results** property is enabled. For more information, see [Search results module](../search-result-module.md).
 
+## Inventory awareness on swatches
 
-## Inventory awareness on swatches on e-commerce site pages
-On the swatch/dimension, there is additional capability to show the inventory availability. For e.g. if a product is sold in multiple sizes and if some sizes are out of stock, the swatches have a special treatment to indicate they are unavailable. This reduces the number of clicks needed to find product availabilty.  This capability is available on both product details page and list pages (search/categroy) where the swatches are displayed.  This feature is available in Dynamics 365 Commerce 10.0.21 release and requires the respective SSK package (9.31).
+Swatches have an optional capability to show the inventory availability of a color or dimension. For example, if a product is sold in multiple sizes and if some sizes are out of stock, the swatches will render differently to indicate that they are unavailable. This functionality reduces the number of customer clicks needed to determine product availabilty. The swatch inventory availability capability is available on both PDPs and search or category list pages where swatches are displayed. The swatch inventory availability capability feature is available as of the Commerce version 10.0.21 release and requires Commerce module library package version 9.31 to be installed.
 
-For this feature you must enable the **Update media on dimension selection** property on the [Media gallery module](media-gallery.md) for enhanced experience. This allows the images in the media gallery to update on a dimension selection thereby making the browsing experience better. 
+To activate the swatch inventory availability feature you must enable the **Update media on dimension selection** property in the [media gallery module](media-gallery.md), which allows media gallery images to update on dimension selection. 
 
 ![Example of inventory awareness on the sizes of a product](../dev-itpro/media/swatch_inventory.png)
 
-
 ## Display swatches in POS and other channels
 
-Commerce doesn't currently have an out-of-box implementation that supports the display of swatches in Point of Sale (POS) and other channels. However, you can implement swatch display functionality as an extension given the channel APIs return the hex codes and image URLs that are required to render swatches.
+Commerce doesn't currently have an out-of-box implementation that supports the display of swatches in point of sale (POS) and other channels. However, you can implement swatch display functionality as an extension since channel APIs return the hex codes and image URLs that are required to render swatches.
 
 ## Additional resources
 
