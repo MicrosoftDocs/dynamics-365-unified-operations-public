@@ -72,7 +72,7 @@ These topics describe dual-write integration.
 
 ## Mapping concepts between apps
 
-These topics describe mapping between concepts in Finance and Operations applications and concepts in model-driven apps in Microsoft Dynamics 365.
+These topics describe mapping between concepts in finance and operations apps and concepts in customer engagement apps.
 
 + [Integrated customer master](customer-mapping.md)
 + [Integrated vendor master](vendor-mapping.md)
@@ -103,7 +103,7 @@ These topics describe mapping between concepts in Finance and Operations applica
 + [Integrated worker, job, and position](integrated-hr.md)
 + [Party and global address book](party-gab.md)
 
-    + [Using Power Portal with the Party data model](party-gab-portal.md)
+    + [Using Microsoft Power Apps portals with the Party data model](party-gab-portal.md)
     + [Upgrade to the party and global address book model](upgrade-party-gab.md)
 
 + [Note integration](notes-integration.md)
@@ -124,6 +124,5 @@ These topics describe mapping between concepts in Finance and Operations applica
 + [Troubleshoot issues related to solution awareness](dual-write-troubleshooting-solution-awareness.md)
 + [Troubleshoot issues from upgrades of Finance and Operations apps](dual-write-troubleshooting-finops-upgrades.md)
 + [General troubleshooting](dual-write-troubleshooting.md)
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
