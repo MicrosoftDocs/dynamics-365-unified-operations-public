@@ -46,6 +46,7 @@ If you want to see the Adventure works site you can do this using the following 
 The Adventure Works theme provides the following new capabilities:
 
 - The video player module now supports heading, paragraph, and links functionality for additional storytelling.
+- Better transition of content using animation
 - The add to cart action invokes the mini cart instead of providing a notification.
 - The quick view module is a pane that slides in on both desktop and mobile viewports.
 - New layouts for the site pages 
