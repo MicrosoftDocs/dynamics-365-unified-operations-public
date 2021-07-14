@@ -28,6 +28,7 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Ready to pay
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [preview feature](./includes/preview-feature.md)]
