@@ -1333,7 +1333,11 @@
       - name: Russia
         items:
         - name: Commerce localization for Russia
-          href: localizations/rus-commerce-localization.md   
+          href: localizations/rus-commerce-localization.md
+        - name: Set up Commerce localization for  Russia
+          href: localizations/rus-commerce-setup.md
+        - name: Prepayments in Retail for Russia
+          href: localizations/rus-commerce-prepayments.md          
       - name: Sweden
         items:
         - name: Cash register functionality
