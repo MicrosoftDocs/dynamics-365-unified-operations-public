@@ -1193,6 +1193,8 @@
         - name: Cash register functionality
           href: localizations/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
+          href: localizations/emea-fra-fif-deployment.md
+        - name: Deployment guidelines for cash registers (legacy)
           href: localizations/emea-fra-deployment.md
       - name: Germany
         items:
