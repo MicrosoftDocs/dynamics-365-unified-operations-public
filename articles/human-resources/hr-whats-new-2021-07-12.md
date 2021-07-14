@@ -47,7 +47,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-|  Years of service display toggle | |This feature provides the option to use different dates to calculate the years of service displayed in the **Streamlined employee entry** form and in the **People** form.  This will be available in Human Resources parameters.  [https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-setup-parameters] |
+|  Years of service display toggle | |This feature provides the option to use different dates to calculate the years of service displayed on the **Streamlined employee entry** page and on the **People** page.  This will be available in [Human Resources parameters](/dynamics365/human-resources/hr-setup-parameters). |
 
 
 ### Bug fixes
@@ -59,14 +59,14 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| 595871 | About pane in Human Resources has incorrect Dataverse terminology | With rebranding the Common Data Service to Dataverse, terminology has been updated in the Microsoft Dynamics 365 Human Resources information pane (Help & Support --> About) |
-| 598676 | Streamlined employee entry form overrides task() which can cause a crash when used with Saved View| When in the Worker form and the 'Streamlined Employee entry' feature is turned on,  the application may crash if 'Always open for editing' is set on the saved view. |
-| 592344 |Workers comp section on position should be read-only when benefits management is enabled. | Workers Comp information is created using legacy benefits functionality.  When benefits management is enabled, the fields will be read only.  When benefits managemetn is turned on AND hide legacy benefit forms is set to YES in HR shared parameters, the workers compensation tab will be hidden. |
-| 598617 | HcmDiscussion form activating tab causes infinite loop when personalizations are applied | When both the grid and details view have "Always open for editing" turned on, the code activating the tab in the overridden task method fights with personalization about what control should have focus and creates an infinite loop. |
-| 593553 | Journal Date field in the Performance journal is showing in UTC | The Journal Date field for performance journals displays in the UTC time zone rather than the time zone defined in system date setup, causing the date to be incorrect for some time zones. |
-| 586930 | Opening activities for performance goals opens a completely different record | When the "Performance Journals extended reports view" feature is enabled in Feature Management, selecting the performance goals for extended reports on the My Team tab of Employee Self Service opens the goals for an employee other than the selected employee. |
-| 569959 |  HcmPositionWorkerAssignmentV2 entity doesn't work to assign a worker to a position | Users were receiving error when adding a position assignment record via the entity and the publish would fail. |
-| 582259 | VETS 4212 report uses the 2017 form instead of the 2020 form | Updated to 2020 format.  To load new format, navigate to Report configurations and delete the VETS-4212 report in the left column.  Then navigate to Electronic reporting - Repositories- HR resources and select open.  Select VETS-4212 PDF printout and select 'Import'.|
+| 595871 | About pane in Human Resources has incorrect Dataverse terminology | With rebranding the Common Data Service to Dataverse, terminology has been updated in the Microsoft Dynamics 365 Human Resources information pane (**Help & Support > About**). |
+| 598676 | Streamlined employee entry form overrides task can create an error when used with Saved View| On the **Worker** page, if the 'Streamlined Employee entry' feature is turned on,  the application may fail if **Always open for editing** is set on the saved view. |
+| 592344 |Workers comp section on position should be read only when benefits management is enabled | Workers comp information is created using legacy benefits functionality.  When benefits management is enabled, the fields will be read only. When benefits management is turned on and **Hide legacy benefit forms** is set to **Yes** in HR shared parameters, the **Workers compensation** tab will be hidden. |
+| 598617 | **HcmDiscussion** form activating tab causes infinite loop when personalizations are applied | When both the grid and details view have **Always open for editing** turned on, the code activating the tab in the overridden task method conflicts with personalization about what control should have focus and creates an infinite loop. |
+| 593553 | Journal Date field in the Performance journal is showing in UTC | The **Journal Date** field for performance journals displays in the UTC time zone rather than the time zone defined in system date setup, causing the date to be incorrect for some time zones. |
+| 586930 | Opening activities for performance goals opens a completely different record | When the 'Performance Journals extended reports view' feature is enabled in Feature Management, selecting the performance goals for extended reports on the **My Team** tab in **Employee Self Service** opens the goals for an employee instead of the selected employee. |
+| 569959 |  HcmPositionWorkerAssignmentV2 entity doesn't assign a worker to a position | Users received an error when adding a position assignment record via the entity and  publishing failed. |
+| 582259 | VETS 4212 report uses the 2017 form instead of the 2020 form | Updated to 2020 format.  To load the new format, go to **Report configurations** and delete the VETS-4212 report in the left column. Go to **Electronic reporting - Repositories- HR resources** and select **Open**.  Select **VETS-4212 PDF printout** and then select **Import**.|
 
 
 ## In preview
