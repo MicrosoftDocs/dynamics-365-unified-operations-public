@@ -40,7 +40,7 @@ In some organizations, a people manager might not be managing the leave for thei
 - View the absence calendar.
 
 
-# Enable feature 
+## Enable feature 
 Before setting up the Absence manager role, the feature must be enabled by a System Administrator.
 
 1.  In the **System Administration** workspace, select **Feature management.**
@@ -50,7 +50,7 @@ Before setting up the Absence manager role, the feature must be enabled by a Sys
 3.  Enable **Absence manager** feature.
 
 
-# Define new custom hierarchy
+## Define new custom hierarchy
 This feature uses a custom hierarchy that need to be configured.
 
 1.  In the **Organization Administration** workspace, select **Position hierarchy types.**
@@ -79,7 +79,7 @@ Once you created the Leave hierarchy, you can check how it looks like following 
 
 2.  In the hierarchy type box select Leave.
 
-# Assign the Absence manager role to a user
+## Assign the Absence manager role to a user
 The Absence manager role needs to be assigned in order to allow an employee to approve or deny leave requests.
 
 1.  In the **System Administrator** workspace, select **Links**.
@@ -103,7 +103,7 @@ In the Absence manager section there are two tabs, Summary and Absence.
 
 -   **Absence** tab, select **Details**, and then **Time off**. In this section you will find three tabs: balances, approved time off, and time off request.
 
-# Approve time off request
+## Approve time off request
 The absence manager can approve or deny time off request for employees, only if the workflow has been edited to perform this action, review the following documentation to check how to create a leave request workflow. If needed, the absence manager can also create requests on behalf of the employee.
 
 In The **Employee Self-Service** workspace, select the **Absence manager** tab.
@@ -116,7 +116,7 @@ You will find the time off request, select the **Approval** option. A dropdown w
 
 -   Completed status means the request has been approved.
 
-# See time off in calendar 
+## See time off in calendar 
 From the Absence manager role, users are able to see time-off requests in calendar. Follow these steps to access the Leave calendar.
 
 1.  Log in the system as Manager with the Absence manager role.
@@ -126,7 +126,6 @@ From the Absence manager role, users are able to see time-off requests in calend
 3.  In the date box, enter the desired dates
 
 4.  All the records for the employee/s reporting to the manager in the absence hierarchy will show in **Absence manager calendar**.
-
 
 
 ## See also
