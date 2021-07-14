@@ -1314,6 +1314,14 @@
           href: localizations/emea-nor-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/emea-nor-loc-deployment-guidelines.md
+      - name: Russia
+        items:
+        - name: Commerce localization for Russia
+          href: localizations/rus-commerce-localization.md
+        - name: Set up Commerce localization for  Russia
+          href: localizations/rus-commerce-setup.md
+        - name: Prepaymants in Retail for Russia
+          href: localizations/rus-commerce-prepayments.md      
       - name: Sweden
         items:
         - name: Cash register functionality
