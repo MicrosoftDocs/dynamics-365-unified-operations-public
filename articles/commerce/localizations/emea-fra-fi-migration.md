@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Migrating from SDK to sealed extensions
+title: Migrating from legacy Commerce functionality for France
 description: This topic provides guidelines on how to migrate from the legacy digital signing sample for France to the functionality that is based on the Fiscal integration framework
 author: josaw
 manager: annbe
@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
 
 ---
-# Deployment guidelines for cash registers for France
+# Migrating from legacy Commerce functionality for France
 
 [!include [banner](../includes/banner.md)]
 
