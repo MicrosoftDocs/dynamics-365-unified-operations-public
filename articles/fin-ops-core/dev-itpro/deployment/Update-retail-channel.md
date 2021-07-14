@@ -67,6 +67,10 @@ Both **Apply updates** and **Apply extension** operations will involve a period 
 ## View history
 To view the history of recent operations on a Scale Unit, select **History** on the **Action** tab to open the **Scale Unit History** page. On this page, you can view recent operations such as initialize, service update, quality update, version, extension details, and other relevant information.
 
+## Restart Commerce Scale Unit
+For ad-hoc troublshooting, Commerce Scale Unit allows self-service restart of the service. Scale Unit restart can be useful for mitigation of service reliability or performance issues. To restart Commerce Scale Unit, select a Scale Unit and then select **Restart**. You will then be presented with a confirmation dialog. Select **Restart** to restart the service. Restarting Commerce Scale Unit will gracefully drain all active connections before restarting. You may also choose an immediate restart by selecting the **Force restart** option. This will immediately terminate all active connections and initiate a restart.
+
+
 ## CSU auto-update sequence
 
 > [!NOTE]
