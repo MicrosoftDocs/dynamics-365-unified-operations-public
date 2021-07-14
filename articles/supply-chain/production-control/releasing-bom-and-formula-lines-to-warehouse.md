@@ -66,7 +66,7 @@ In the query for the **Automatic release of BOM and formula lines** batch job, y
 
 The following illustration shows a production order that has two jobs, 10 and 20, that cover the assembly and packing for the production order. Each job is set up to consume a quantity of material. In this illustration, the release time fence that is indicated by the green arrow below the time line equals the number of days that has been specified in the **(LessThanDate())** criterion. For example, **(LessThanDate(2))** indicates that the job should look for unreleased quantities only within a time fence of two days.
 
-![Example of a production order that has two batch jobs](media/bach-job-setup.PNG)
+![Example of a production order that has two batch jobs.](media/bach-job-setup.PNG)
 
 ## Releasing material per operation number or in proportion to the amount of finished goods
 
@@ -83,7 +83,7 @@ To control the operations that material should be released to, use the **Release
 
 The following illustration shows a production order that has two operations, 10 and 20. In this example, if you limit the release to operation 10, only material M9203 will be released.
 
-![Example of the release of material per operation number](media/two-operations.PNG)
+![Example of the release of material per operation number.](media/two-operations.PNG)
 
 For a quick demonstration of how to release material in proportion to the amount of finished goods, watch this short YouTube video about 
 [enhancements to the production order release process](https://www.youtube.com/watch?v=Rm3ojAz6Zu0).

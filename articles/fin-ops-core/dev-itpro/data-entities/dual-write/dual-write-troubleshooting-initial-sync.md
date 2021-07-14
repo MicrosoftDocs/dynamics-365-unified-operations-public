@@ -42,7 +42,7 @@ This topic provides troubleshooting information for dual-write integration betwe
 
 After you enable the mapping templates, the status of the maps should be **Running**. If the status is **Not running**, errors occurred during initial synchronization. To view the errors, select the **Initial sync details** tab on the **Dual-write** page.
 
-![Error on the Initial sync details tab](media/initial_sync_status.png)
+![Error on the Initial sync details tab.](media/initial_sync_status.png)
 
 ## You can't complete initial synchronization: 400 Bad Request
 
@@ -89,7 +89,7 @@ To fix the issue, follow these steps.
 1. Sign in to the Finance and Operations app.
 2. On the **Azure Active Directory applications** page, delete the **DtAppID** client, and then add it again.
 
-![DtAppID client in the list of Azure AD applications](media/aad_applications.png)
+![DtAppID client in the list of Azure AD applications.](media/aad_applications.png)
 
 ## Self-reference or circular reference failures during initial synchronization
 
@@ -119,11 +119,11 @@ If any rows in the vendor table have values in the **PrimaryContactPersonId** an
     2. Search for **primarycontactperson** to find the **PrimaryContactPersonId** source column.
     3. Select **Actions**, and then select **Delete**.
 
-        ![Deleting the PrimaryContactPersonId column](media/vend_selfref3.png)
+        ![Deleting the PrimaryContactPersonId column.](media/vend_selfref3.png)
 
     4. Repeat these steps to delete the **InvoiceVendorAccountNumber** column.
 
-        ![Deleting the InvoiceVendorAccountNumber column](media/vend-selfref4.png)
+        ![Deleting the InvoiceVendorAccountNumber column.](media/vend-selfref4.png)
 
     5. Save your changes to the mapping.
 
@@ -133,11 +133,11 @@ If any rows in the vendor table have values in the **PrimaryContactPersonId** an
     2. Select the **Vendors V2** table.
     3. On the Action Pane, select **Options**, and then select **Change tracking**.
 
-        ![Selecting the Change tracking option](media/selfref_options.png)
+        ![Selecting the Change tracking option.](media/selfref_options.png)
 
     4. Select **Disable Change Tracking**.
 
-        ![Selecting Disable Change Tracking](media/selfref_tracking.png)
+        ![Selecting Disable Change Tracking.](media/selfref_tracking.png)
 
 3. Run initial synchronization for the **Vendors V2 (msdyn\_vendors)** mapping. The initial synchronization should run successfully, without any errors.
 4. Run initial synchronization for the **CDS Contacts V2 (contacts)** mapping. You must sync this mapping if you want to sync the primary contact column on the vendors table, because initial synchronization must also be done for the contact rows.
@@ -166,11 +166,11 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
     2. Search for **contactperson** to find the **ContactPersonID** source column.
     3. Select **Actions**, and then select **Delete**.
 
-        ![Deleting the ContactPersonID column](media/cust_selfref3.png)
+        ![Deleting the ContactPersonID column.](media/cust_selfref3.png)
 
     4. Repeat these steps to delete the **InvoiceAccount** column.
 
-        ![Deleting the InvoiceAccount column](media/cust_selfref4.png)
+        ![Deleting the InvoiceAccount column.](media/cust_selfref4.png)
 
     5. Save your changes to the mapping.
 
@@ -180,11 +180,11 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
     2. Select the **Customers V3** table.
     3. On the Action Pane, select **Options**, and then select **Change tracking**.
 
-        ![Selecting the Change tracking option](media/selfref_options.png)
+        ![Selecting the Change tracking option.](media/selfref_options.png)
 
     4. Select **Disable Change Tracking**.
 
-        ![Selecting Disable Change Tracking](media/selfref_tracking.png)
+        ![Selecting Disable Change Tracking.](media/selfref_tracking.png)
 
 3. Run initial synchronization for the **Customers V3 (Accounts)** mapping. The initial synchronization should run successfully, without any errors.
 4. Run initial synchronization for the **CDS Contacts V2 (contacts)** mapping.
@@ -200,7 +200,7 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
 
         The following illustration shows a project that updates **CustomerAccount** and **ContactPersonId**.
 
-        ![Data integration project to update CustomerAccount and ContactPersonId](media/cust_selfref6.png)
+        ![Data integration project to update CustomerAccount and ContactPersonId.](media/cust_selfref6.png)
 
     2. Add the company criteria in the filter on the Dataverse side, so that only rows that match the filter criteria will be updated in the Finance and Operations app. To add a filter, select the filter button. Then, in the **Edit query** dialog box, you can add a filter query such as **\_msdyn\_company\_value eq '\<guid\>'**. 
 
@@ -209,7 +209,7 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
 
         If you don't enter a filter query for **\_msdyn\_company\_value**, all the rows will be synced.
 
-        ![Adding a filter query](media/cust_selfref7.png)
+        ![Adding a filter query.](media/cust_selfref7.png)
 
     The initial synchronization of the rows is now completed.
 

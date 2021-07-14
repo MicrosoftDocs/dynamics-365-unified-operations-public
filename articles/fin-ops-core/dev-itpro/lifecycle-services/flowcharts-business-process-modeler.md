@@ -72,7 +72,7 @@ To view a connected flowchart, follow these steps:
 
 1.  Sign in to Lifecycle Services, open a project, and then click **Business process modeler**.
 2.  In the **Project libraries** section, select a library to display it. 
-3.  Expand the business process library and then click a library node that has a flowchart icon associated with it: [![Flowchart BPM topic1](./media/flowchart-bpm-topic1.jpg)](./media/flowchart-bpm-topic1.jpg)
+3.  Expand the business process library and then click a library node that has a flowchart icon associated with it: [![Flowchart BPM topic1.](./media/flowchart-bpm-topic1.jpg)](./media/flowchart-bpm-topic1.jpg)
 
     The flowchart is displayed. Each activity in the process is represented by a shape in the diagram. Process steps are displayed in the right pane. 
 
@@ -150,7 +150,7 @@ Unconnected flowcharts, such as a Visio diagram, can be very helpful for describ
 <!--
 ### View an unconnected flowchart
 
-A business process with an unconnected Visio flowchart associated with it will have a document icon on its title bar: [![Flowchart BPM topic2](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
+A business process with an unconnected Visio flowchart associated with it will have a document icon on its title bar: [![Flowchart BPM topic2.](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
 -   Click the document icon to view the flowchart.
 -   Click **Download** on the Visio page to download the flowchart.
 --->

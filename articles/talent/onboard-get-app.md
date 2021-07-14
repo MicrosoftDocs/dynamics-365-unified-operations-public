@@ -55,11 +55,11 @@ To get to the Onboard app, follow these steps.
 2. When you're prompted, enter your Microsoft 365 email address and password.
 3. Select the app launcher in the upper left, and then select **Dynamics 365**.
 
-    [![Accessing Dynamics 365](./media/onboard-start-dynamics365.png)](./media/onboard-start-dynamics365.png)
+    [![Accessing Dynamics 365.](./media/onboard-start-dynamics365.png)](./media/onboard-start-dynamics365.png)
 
 4. Select the **Talent: Onboard** tile.
 
-    [![Opening Onboard](./media/onboard-start-onboard.png)](./media/onboard-start-onboard.png)
+    [![Opening Onboard.](./media/onboard-start-onboard.png)](./media/onboard-start-onboard.png)
 
 Your first sign-in might take a few minutes, because the environment must be initialized.
 
@@ -69,7 +69,7 @@ When you first open Onboard, you can select **Start the walkthrough** to get sta
 
 If you skip the walkthrough, you can access it later by selecting the **Help** button (**?**) and then selecting **Get started**.
 
-![[Starting the Onboard walkthrough](./media/onboard-start-walkthrough.png)](./media/onboard-start-walkthrough.png)
+![[Starting the Onboard walkthrough.](./media/onboard-start-walkthrough.png)](./media/onboard-start-walkthrough.png)
 
 ## Change the domain name
 

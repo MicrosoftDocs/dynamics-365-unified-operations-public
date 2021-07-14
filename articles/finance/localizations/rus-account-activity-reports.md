@@ -62,11 +62,11 @@ For each row and column in the table, the totals are summarized. The summary for
     > [!NOTE]
     > This option is available only if you set the **Total accounts** option to **Yes**.
 
-    ![Turnover sheet with correspondence page, General tab](media/1_Turnover_sheet_with_correspondence.jpg)
+    ![Turnover sheet with correspondence page, General tab.](media/1_Turnover_sheet_with_correspondence.jpg)
 
 13. Select **ОК** to generate the report.
 
-    ![Turnover sheet with correspondence report](media/2_Activity_of_account.jpg)
+    ![Turnover sheet with correspondence report.](media/2_Activity_of_account.jpg)
 
 >  *Note.*
 >
@@ -77,7 +77,7 @@ For each row and column in the table, the totals are summarized. The summary for
 >
 >  -  Select **Print** to print the report in Microsoft Excel.
 
-   ![Turnover sheet with correspondence generated report](media/3_Activity_of_account.jpg)
+   ![Turnover sheet with correspondence generated report.](media/3_Activity_of_account.jpg)
 
 ## General ledger report
 
@@ -114,11 +114,11 @@ The **General ledger** report contains information about the balances and activi
 13. Set the **Credit activity** option to **Yes** to print the detailed account turnovers in credit correspondence.
 14. Set the **Use periods** option to **Yes** to print the report by interval, according to the reporting period. Set this option to **No** to print the report by months.
 
-    ![General ledger account activity report page, General tab](media/4_General_ledger.jpg)
+    ![General ledger account activity report page, General tab.](media/4_General_ledger.jpg)
 
 15. Select **ОК** to generate the report.
 
-    ![General ledger account activity report](media/5_Account_activity.jpg)
+    ![General ledger account activity report.](media/5_Account_activity.jpg)
 
 > [!NOTE]
 >
@@ -127,7 +127,7 @@ The **General ledger** report contains information about the balances and activi
 > - Select **Select** to change the report generation parameters.
 > - Select **Print** to print the report in Excel.
 
-   ![Generated General ledger account activity report ](media/6_Account_activity.jpg)
+   ![Generated General ledger account activity report .](media/6_Account_activity.jpg)
 
 ## Review of account report
 
@@ -161,12 +161,12 @@ The rows on the **Review of account** report contain information about the balan
 
 11. Set the **Main accounts only** option to **Yes** to view only main accounts.
 
-    ![Review of account report, General tab](media/7_Review_of_account.jpg)
+    ![Review of account report, General tab.](media/7_Review_of_account.jpg)
 
 12. On the **Records to include** tab, you can select **Filter** to specify filter criteria.
 13. Select **ОК** to generate the report.
 
-![Review of account report](media/8_Review_of_account.jpg)
+![Review of account report.](media/8_Review_of_account.jpg)
 
 > [!NOTE]
 >
@@ -174,7 +174,7 @@ The rows on the **Review of account** report contain information about the balan
 > - Select **Select** to change the report generation parameters.
 > - Select **Print** to print the report in Excel.
 
-   ![Generated Review of account report](media/9_Review_of_account.jpg)
+   ![Generated Review of account report.](media/9_Review_of_account.jpg)
 
 ## Journal order/account activity report
 
@@ -209,12 +209,12 @@ You can use the **Journal order/account activity** report to review movement on 
 11. Set the **Debit activity** option to **Yes** to print the detailed account turnovers in debit correspondence.
 12. Set the **Credit activity** option to **Yes** to print the detailed account turnovers in credit correspondence.
 
-    ![Journal order/account activity report, General tab](media/10_Journal_order_account_activity.jpg)
+    ![Journal order/account activity report, General tab.](media/10_Journal_order_account_activity.jpg)
 
 13. On the **Records to include** tab, you can select **Filter** to specifyfilter criteria.
 14. Select **ОК** to generate the report in Excel.
 
-![Generated Journal order/account activity report](media/11_Journal_order_and_account_activity.jpg)
+![Generated Journal order/account activity report.](media/11_Journal_order_and_account_activity.jpg)
 
 > [!NOTE]
 >   

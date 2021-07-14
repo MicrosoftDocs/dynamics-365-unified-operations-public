@@ -48,10 +48,10 @@ The Gantt chart can be opened in two different views, **Order view** and **Resou
 
 ## Order view
 
-[![Order view](./media/orderview.png)](./media/orderview.png)
+[![Order view.](./media/orderview.png)](./media/orderview.png)
 
 ## Resource view
-[![Resource view](./media/resview.png)](./media/resview.png)
+[![Resource view.](./media/resview.png)](./media/resview.png)
 
 ## Activities
 The activities appear as bars and are organized in a time scale grid with a scheduled start and end time, making the length of the bars proportional to the time that is necessary to complete the activity. The activities are shown according to a time scale. You can adjust the time scale on the menu where you select a start and end date and a time unit, for example, hours or days. By adjusting the time scale you can set focus on a time interval in which you want to manage activities. 
@@ -105,25 +105,25 @@ It is not possible to schedule a job outside the defined time interval of the Ga
 
 In a network of activities, such as jobs belonging to the same production order, you can use the **Schedule previous jobs** function to schedule the previous jobs relative to a selected job in the network. In the following example, the highlighted activity is the selected job. The diagram shows before a previous job is scheduled and after the previous job is scheduled. 
 
-[![Schedule previous job](./media/schprevjob3.png)](./media/schprevjob3.png)
+[![Schedule previous job.](./media/schprevjob3.png)](./media/schprevjob3.png)
 
 ### Schedule next jobs
 
 You can use the **Schedule next jobs** function to schedule the next jobs relative to a selected job in a network of activities. In the following example, the highlighted activity is the selected job. The diagram shows before the next job is scheduled and after the next job is scheduled. 
 
-[![Schedule next job](./media/schnxtjob.png)](./media/schnxtjob.png)
+[![Schedule next job.](./media/schnxtjob.png)](./media/schnxtjob.png)
 
 ### Schedule around job
 
 You can use the **Schedule around job** function to schedule the next job and the previous job relative to a selected job in a network of activities. In the following example, the highlighted activity is the selected job. The diagram shows before a job is scheduled and after the job is scheduled. 
 
-[![Schedule around job](./media/scharoundjob1.png)](./media/scharoundjob1.png)
+[![Schedule around job.](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
 ### Arrange jobs
 
 You can use the **Arrange** function to arrange selected activities on the same resource. These activities can be in the same network of activities, but can also belong to different networks. When you use the arrange function the time gaps between the selected activities will be eliminated. You can use this function to optimize the capacity utilization of the resources. The diagram shows before a job is scheduled and after the job is scheduled. 
 
-[![Arrange job](./media/arrangejobs1.png)](./media/arrangejobs1.png)
+[![Arrange job.](./media/arrangejobs1.png)](./media/arrangejobs1.png)
 
 ### Reassign activities from one resource to another
 

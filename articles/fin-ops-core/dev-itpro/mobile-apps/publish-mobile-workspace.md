@@ -42,7 +42,7 @@ This topic describes the steps that system administrators must follow to publish
 
 After a new workspace is published, users must pull to refresh the list of mobile workspaces. 
 
-[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Pull to refresh.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 
 

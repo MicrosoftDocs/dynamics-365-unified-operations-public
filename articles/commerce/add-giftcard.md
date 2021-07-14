@@ -46,7 +46,7 @@ There are two gift card modules available:
 
 The following image shows an example of a gift card module on a checkout page.
 
-![Example of a gift card module](./media/ecommerce-giftcard.PNG)
+![Example of a gift card module.](./media/ecommerce-giftcard.PNG)
 
 ## Module properties
 

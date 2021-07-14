@@ -18,7 +18,7 @@ audience: Application User
 ms.reviewer: roschlom
 # ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 15721
+ms.custom: ["15721", "intro-internal"]
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 # ms.search.industry: 

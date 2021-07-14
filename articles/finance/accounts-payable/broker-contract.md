@@ -57,7 +57,7 @@ A broker contract is a record of an agreement with a broker. It specifies the ne
 Broker contracts are registered on the **Broker contracts** page. To open the **Broker contracts** page, select **Accounts payable** \> **Broker and royalties** \> **Broker contracts**.
 
 
-![Broker claims page](./media/broker-contract-management-contract-page.png "Broker claims page")
+![Broker claims page.](./media/broker-contract-management-contract-page.png "Broker claims page")
 
 The contract includes a negotiated condition about who will incur in the broker fee (the customer that buys the product or the selling company). This condition is set up on the associated **Charges codes** page.
 
@@ -94,7 +94,7 @@ After claims are either fully or partially approved, the vendor invoice is creat
 
 You can view all the claims on the **Broker claims** page. For each fee, the **Qualified** field specifies the amount of the fee that, after it's approved, will be paid to vendor of brokerage services.
 
-![Broker claims page](./media/broker-contract-management-contract-page.png "Broker claims page")
+![Broker claims page.](./media/broker-contract-management-contract-page.png "Broker claims page")
 
 Note that the fields in the lower section of the page specify details about the originating sales invoice, such as the invoice number, invoice line net amount, and associated customer transactions.
 
@@ -121,7 +121,7 @@ If the **Approved** field for the claim line contains the same amount as the **Q
 
 If a customer returns some units of a sales order, the broker might no longer qualify for the fee that is related to the returned quantity. In this case, the second claim for the partial amount must be approved. Select **Accounts payable** \> **Broker and royalties** \> **Broker claims**, and select the claim. In the **Approving** field, enter the total quantity minus the returned units. Then, on the Action Pane, select **Approve**.
 
-![Partially processing a claim](./media/broker-contract-management-process-claim.png "Partially processing a claim")
+![Partially processing a claim.](./media/broker-contract-management-process-claim.png "Partially processing a claim")
 
 If there is a difference between the value in the **Approved** field and the value in the **Qualified** field, it is recorded in the **Difference** field. These values indicate that the claim is still outstanding, and that the difference must be handled before the claim can be considered closed.
 

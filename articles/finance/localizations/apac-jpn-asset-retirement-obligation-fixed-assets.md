@@ -44,7 +44,7 @@ Asset retirement obligation (ARO) is used to distribute the retirement cost of a
 > [!NOTE]
 >\* Steps 2 and 3 are repeated multiple times throughout the service life of the fixed asset.
 
-![T-account representation of the ARO transactions](./media/aro-t-account.png) 
+![T-account representation of the ARO transactions.](./media/aro-t-account.png) 
 
 ## Setup information
 To use ARO, you must complete the following setup tasks:

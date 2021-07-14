@@ -45,7 +45,7 @@ This section provides an overview of the elements of role-based security. The se
 
 The following illustration shows the elements of role-based security and their relationships. 
 
-[![Example of role-based security framework](./media/rbs.png)](./media/rbs.png)
+[![Example of role-based security framework.](./media/rbs.png)](./media/rbs.png)
 
 ## Security roles
 

@@ -112,9 +112,9 @@ This step aligns the application version, platform version, and customizations i
 1. Service the LBD environment with the combined application/platform package that you uploaded in the previous step.
 1. Service the LBD environment with the custom deployable package that you uploaded in the previous step.
 
-    ![Selecting Maintain > Apply updates in LCS](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "Selecting Maintain > Apply updates in LCS")
+    ![Selecting Maintain > Apply updates in LCS.](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "Selecting Maintain > Apply updates in LCS")
 
-    ![Selecting your customization package](media/cloud_edge-LBD-LCS-ServiceLBDEnv2.png "Selecting your customization package")
+    ![Selecting your customization package.](media/cloud_edge-LBD-LCS-ServiceLBDEnv2.png "Selecting your customization package")
 
 ## <a name="assign-edge-to-hub"></a>Assign your LBD edge scale unit to a hub
 

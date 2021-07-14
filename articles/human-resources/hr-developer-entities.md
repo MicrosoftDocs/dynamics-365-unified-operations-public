@@ -157,27 +157,27 @@ The following Dataverse tables are available based on Human Resources entities.
 
 ### Worker
 
-![Worker](./media/HCMCommon-worker-entity-diagram.png)
+![Worker.](./media/HCMCommon-worker-entity-diagram.png)
 
 ### Job and Job Position
 
-![Job and Job Position](./media/HCMCommon-job-and-job-position-entity-diagram.png)
+![Job and Job Position.](./media/HCMCommon-job-and-job-position-entity-diagram.png)
 
 ### Benefits
 
-![Benefits](./media/HCMCommon-benefits-entity-diagram.png)
+![Benefits.](./media/HCMCommon-benefits-entity-diagram.png)
 
 ### Compensation
 
-![Compensation](./media/HCMCommon-compensation-entity-diagram.png)
+![Compensation.](./media/HCMCommon-compensation-entity-diagram.png)
 
 ### Leave
 
-![Leave](./media/HCMCommon-leave-entity-diagram.png)
+![Leave.](./media/HCMCommon-leave-entity-diagram.png)
 
 ### Work Calendar
 
-![Work Calendar](./media/HCMCommon-work-calendar-entity-diagram.png)
+![Work Calendar.](./media/HCMCommon-work-calendar-entity-diagram.png)
 
 ## See also
 

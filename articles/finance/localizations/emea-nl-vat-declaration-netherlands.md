@@ -436,7 +436,7 @@ To automatically generate a VAT declaration, associate sales tax codes and repor
 </tbody>
 </table>
 
-![Application-parameters](media/App-parameters-VAT-XML-1.png)
+![Application-parameters.](media/App-parameters-VAT-XML-1.png)
 
 
 #### Set up XSD schema and namespaces
@@ -596,7 +596,7 @@ To modify target mapping, follow these steps:
 2. Select the data entity **Action class settings** and then select **Modify target mapping**.
 3. Make sure that the staging field **Action type** is mapped to the target.
 
-    ![Map staging to target](media/map-staging.png)
+    ![Map staging to target.](media/map-staging.png)
 
 4. You can map to the target manually, or on the **Mapping details** tab, select **Generate mapping \> Yes**.
 
@@ -624,7 +624,7 @@ To upload the electronic messages data package, follow these steps:
     - The executable class **NLOBGetStatusFromDidgipoort** has the **Electronic reporting import** action type.
     - The executable class **NLOBSendToDigipoort** has the **Web service** action type.
 
-    ![Executable class settings page](media/electronic-messages-NL.png)
+    ![Executable class settings page.](media/electronic-messages-NL.png)
 
 8.  For each line, select **Parameters**, and then select **NLOB Request ID** in the **Request ID** field.
 

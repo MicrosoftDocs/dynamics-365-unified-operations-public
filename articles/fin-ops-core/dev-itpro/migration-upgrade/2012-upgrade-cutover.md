@@ -35,7 +35,7 @@ After you have successfully completed upgrade testing in a Standard or Premier A
 
 The following illustration shows the overall process for cutover to go-live as it will occur in the production environment.
 
-![Cutover process](./media/cutover_1.png)
+![Cutover process.](./media/cutover_1.png)
 
 > [!NOTE]
 > In this topic, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.

@@ -45,7 +45,7 @@ Before you can start working with LinkedIn Recruiter through Attract, you must s
 2. Select **User settings**.
 3. On the **Connections** tab, select **Connect** next to **LinkedIn**. Follow the instructions that are provided by LinkedIn.
 
-    ![[Set up connection to LinkedIn Recruiter from Attract](./media/attract-set-up-linkedin-recruiter-connection.png)](./media/attract-set-up-linkedin-recruiter-connection.png)
+    ![[Set up connection to LinkedIn Recruiter from Attract.](./media/attract-set-up-linkedin-recruiter-connection.png)](./media/attract-set-up-linkedin-recruiter-connection.png)
 
 ## View LinkedIn candidates in Attract
 
@@ -57,11 +57,11 @@ After you're connected to LinkedIn Recruiter, you can view candidates' LinkedIn 
 
 1. In Attract, select **Jobs** or **Talent pools** on the left, and then select an applicant.
 
-    ![[View LinkedIn candidates in Attract](./media/attract-view-linkedin-candidates.png)](./media/attract-view-linkedin-candidates.png)
+    ![[View LinkedIn candidates in Attract.](./media/attract-view-linkedin-candidates.png)](./media/attract-view-linkedin-candidates.png)
 
 2. In the candidate's profile, select the **LinkedIn** tab. You can view the candidate's profile and InMail history.
 
-   ![View a candidate's LinkedIn information](./media/attract-candidate-linkedin-tab.png)
+   ![View a candidate's LinkedIn information.](./media/attract-candidate-linkedin-tab.png)
 
 From here, you can perform the following actions:
 
@@ -106,7 +106,7 @@ In LinkedIn Recruiter, you can track whether a candidate applied to other jobs i
     - **Interview Feedback** – See feedback that interviewers have submitted in Attract.
     - **Notes** – See any notes that have been entered for this candidate in Attract.
 
-    ![[View Attract information from LinkedIn Recruiter](./media/attract-view-information-from-linkedin-recruiter.png)](./media/attract-view-information-from-linkedin-recruiter.png)
+    ![[View Attract information from LinkedIn Recruiter.](./media/attract-view-information-from-linkedin-recruiter.png)](./media/attract-view-information-from-linkedin-recruiter.png)
 
 > [!NOTE]
 > Candidate and application data won't be synced with LinkedIn Recruiter if the candidate hasn't moved past the Prospect stage.

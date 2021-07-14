@@ -130,7 +130,7 @@ Batch requests are supported in the OData service. For more information, see [OD
 
 /data/$metadata provides annotations. EnumType is support in $metadata.
 
-![EnumType metadata](./media/metadata.png)
+![EnumType metadata.](./media/metadata.png)
 
 ### Cross-company behavior
 

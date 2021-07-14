@@ -106,7 +106,7 @@ If you created a new HQ table and a new channel database table, follow these ste
 4. Right-click the project, and then select **Add** &gt; **New Item**.
 5. In the **Add New item** dialog box, select **Resources**, name the resource file **RetailCDXSeedDataAX7_Custom**, and then select **Add**.
 
-    ![Add a new item](media/cdx-ext-1.png)
+    ![Add a new item.](media/cdx-ext-1.png)
 
 6. In the **Select a Resource file** dialog box, find the resource file that you created in step 2, and then select **Open**.
 7. Add a new class that should be used to handle the **registerCDXSeedDataExtension** event. Search for the **RetailCDXSeedDataBase** class, and then open it in the designer. Right-click the **registerCDXSeedDataExtension** delegate, and then select **Copy event handler**.

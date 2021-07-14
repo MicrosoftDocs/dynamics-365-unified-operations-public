@@ -28,7 +28,13 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic provides details and an example query for the Payroll fixed compensation plan entity in Dynamics 365 Human Resources.
+This topic describes the Payroll fixed compensation plan entity for Dynamics 365 Human Resources.
+
+### Description
+
+This entity provides the fixed compensation plan assigned for a given position of an employee.
+
+Physical name: mshr_payrollfixedcompensationplanentity.
 
 ## Properties
 
@@ -38,14 +44,14 @@ This topic provides details and an example query for the Payroll fixed compensat
 | **Pay rate**<br>mshr_payrate<br>*Decimal* | Read-only<br>Required | Pay rate defined in fixed compensation plan. |
 | **Plan ID**<br>mshr_planid<br>*String* | Read-only<br>Required |Specifies the compensation plan.  |
 | **Valid from**<br>mshr_validfrom<br>*Date Time Offset* |  Read-only<br>Required |Date the employee fixed compensation is valid from.  |
-| **Payroll Fixed Compensation Plan entity**<br>mshr_payrollfixedcompensationplanentityid<br>*GUID* | Required<br>Sytem generated | A system-generated GUID value to uniquely identify the compensation plan. |
+| **Payroll Fixed Compensation Plan entity**<br>mshr_payrollfixedcompensationplanentityid<br>*GUID* | Required<br>System generated | A system-generated GUID value to uniquely identify the compensation plan. |
 | **Pay frequency**<br>mshr_payfrequency<br>*String* | Read-only<br>Required |The frequency the employee will be paid.  |
 | **Valid to**<br>mshr_validto<br>*Date Time Offset* | Read-only <br>Required | Date the employee fixed compensation is valid to. |
-| **Position ID**<br>mshr_positionid<br>*String* | Read-only <br>Required | Postion ID associated with the employee and fixed compensation plan enrollment. |
+| **Position ID**<br>mshr_positionid<br>*String* | Read-only <br>Required | Position ID associated with the employee and fixed compensation plan enrollment. |
 | **Currency**<br>mshr_currency<br>*String* | Read-only <br>Required |The currency defined for the fixed compensation plan   |
 | **Personnel number**<br>mshr_personnelnumber<br>*String* | Read-only<br>Required |The employee's unique personnel number.  |
 
-**Query**
+## Example query
 
 **Request**
 
@@ -57,18 +63,24 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollfixedcompensationplanentities?$f
 
 ```json
 {
-            "mshr_planid": "GradeC",
-            "mshr_personnelnumber": "000041",
-            "mshr_payrate": 75200,
-            "mshr_positionid": "000276",
-            "mshr_validfrom": "2011-04-05T00:00:00Z",
-            "mshr_validto": "2154-12-31T00:00:00Z",
-            "mshr_payfrequency": "Annual",
-            "mshr_currency": "USD",
-            "_mshr_fk_employee_id_value": "00000d3c-0000-0000-d5ff-004105000000",
-            "_mshr_fk_plan_id_value": "0000070c-0000-0000-b328-fef003000000",
-            "_mshr_fk_job_id_value": "00010094-0000-0000-df00-014105000000",
-            "mshr_payrollfixedcompensationplanentityid": "0000029f-0000-0000-d5ff-004105000000",
-            "_mshr_fk_payroll_id_value": null
+    "mshr_planid": "GradeC",
+    "mshr_personnelnumber": "000041",
+    "mshr_payrate": 75200,
+    "mshr_positionid": "000276",
+    "mshr_validfrom": "2011-04-05T00:00:00Z",
+    "mshr_validto": "2154-12-31T00:00:00Z",
+    "mshr_payfrequency": "Annual",
+    "mshr_currency": "USD",
+    "_mshr_fk_employee_id_value": "00000d3c-0000-0000-d5ff-004105000000",
+    "_mshr_fk_plan_id_value": "0000070c-0000-0000-b328-fef003000000",
+    "_mshr_fk_job_id_value": "00010094-0000-0000-df00-014105000000",
+    "mshr_payrollfixedcompensationplanentityid": "0000029f-0000-0000-d5ff-004105000000",
+    "_mshr_fk_payroll_id_value": null
 }
 ```
+
+## See also
+
+[Payroll integration API introduction](hr-admin-integration-payroll-api-introduction.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

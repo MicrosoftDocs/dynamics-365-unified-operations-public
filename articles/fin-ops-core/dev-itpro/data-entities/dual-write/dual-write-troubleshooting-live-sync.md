@@ -33,8 +33,6 @@ ms.search.validFrom: 2020-03-16
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
 This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse. Specifically, it provides information that can help you fix issues with live synchronization.
 
 > [!IMPORTANT]
@@ -79,21 +77,21 @@ If data exists on both sides, and you've confirmed that the issue isn't data-rel
 
 You might receive a "Bad Request" error message that resembles the following example when you create data in a Finance and Operations app.
 
-![Example of the Bad Request error message](media/error_record_id_source.png)
+![Example of the Bad Request error message.](media/error_record_id_source.png)
 
 To fix the issue, you must assign the correct security role to the team of the mapped Dynamics 365 Sales or Dynamics 365 Customer Service business unit to enable the missing privilege.
 
 1. In the Finance and Operations app, find the business unit that is mapped in the Data Integration connection set.
 
-    ![Organization mapping](media/mapped_business_unit.png)
+    ![Organization mapping.](media/mapped_business_unit.png)
 
-2. Sign in to the environment in the model-driven app in Dynamics 365, navigate to **Setting \> Security**, and find the team of the mapped business unit.
+2. Sign in to the environment in the customer engagement app, navigate to **Setting \> Security**, and find the team of the mapped business unit.
 
-    ![Team of the mapped business unit](media/setting_security_page.png)
+    ![Team of the mapped business unit.](media/setting_security_page.png)
 
 3. Open the page for the team for editing, and then select **Manage roles** to open the **Manage Team Roles** dialog box.
 
-    ![Manage roles button](media/manage_team_roles.png)
+    ![Manage roles button.](media/manage_team_roles.png)
 
 4. Assign the role that has the read/write privilege for the relevant tables, and then select **OK**.
 
@@ -109,7 +107,7 @@ CustCustomerV3Entity**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseErr
 creation failed with error Invalid URI: The URI is
 empty."}\],"isErrorCountUpdated":true}*
 
-Here is what the error looks like in the model-driven app in Dynamics 365:
+Here is what the error looks like in the customer engagement app:
 
 *An unexpected error occurred from ISV code. (ErrorType = ClientError) Unexpected exception from plug-in (Execute): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: failed to process entity account - (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond*
 
@@ -135,6 +133,5 @@ To fix the issue, follow these steps.
 
 3. Make sure that the **externalenvironmentURL** column has the correct Dataverse or app URL. Delete any duplicate rows that point to the wrong Dataverse URL. Delete the corresponding rows in the DUALWRITEPROJECTFIELDCONFIGURATION and DUALWRITEPROJECTCONFIGURATION tables.
 4. Stop the table mapping, and then restart it
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

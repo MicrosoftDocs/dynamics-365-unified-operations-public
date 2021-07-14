@@ -48,6 +48,7 @@
       ],
       "layout": "Conceptual",
       "searchScope": [
+        "dynamics365-finops",
         "Dynamics 365",
         "Unified Operations"
       ],
@@ -137,19 +138,34 @@
       },
       "searchScope": {
         "talent/**.md": [
+          "dynamics365-talent",
           "Dynamics 365",
           "Unified Operations",
           "Talent"
         ],
-        "retail/**/**.md": [
+        "commerce/**/**.md": [
+          "dynamics365-commerce",
           "Dynamics 365",
           "Unified Operations",
           "Retail"
         ],
         "human-resources/**/**.md": [
+          "dynamics365-hr",
           "Dynamics 365",
           "Unified Operations",
           "Human Resources"
+        ],
+        "finance/**/**.md": [
+          "dynamics365-finance",
+          "Dynamics 365",
+          "Unified Operations",
+          "Finance"
+        ],
+        "supply-chain/**/**.md": [
+          "dynamics365-supplychain",
+          "Dynamics 365",
+          "Unified Operations",
+          "Supply Chain"
         ]
       },
       "titleSuffix": {

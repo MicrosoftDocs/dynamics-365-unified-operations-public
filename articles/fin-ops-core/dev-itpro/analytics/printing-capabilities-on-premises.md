@@ -44,7 +44,7 @@ The following options are available for document publishing:
 - **File** – Produce a PDF file that is downloaded directly to the browser for local printing.
 - **Print** – Send documents directly to network printers from all supported platforms. These platforms include mobile devices.
 
-![Document publishing services](media/document-publishing-services.png)
+![Document publishing services.](media/document-publishing-services.png)
 
 For a high-level summary of the options for information access that are available in the cloud-hosted solution, see [Document printing overview](print-documents.md).
 
@@ -53,7 +53,7 @@ Unlike the cloud-hosted service, the on-premises publishing service produces doc
 
 The following illustration shows the components that are involved in document printing.
 
-![Document printing](media/Cloud-vs-on-premises.png)
+![Document printing.](media/Cloud-vs-on-premises.png)
 
 For information about how to use extensions to manage availability of the embedded drill-through links in application reports, see the Appendix.
 
@@ -62,7 +62,7 @@ Administrators can use built-in administrative pages to manage access to network
 
 The following illustration shows the page that is used to manage network printers.
 
-![Manage network printers page](media/manage-network-printers.png)
+![Manage network printers page.](media/manage-network-printers.png)
 
 ## Appendix
 

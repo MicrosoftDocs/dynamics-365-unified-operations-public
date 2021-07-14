@@ -514,7 +514,7 @@ public sealed class CreateOrUpdateCustomerDataRequestHandler : SingleAsyncReques
         ThrowIf.Null(request, "request");
 
         using (var databaseContext = new DatabaseContext(request.RequestContext))
-        using (var transactionScope = new TransactionScope())
+        using (var transactionScope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
         {
             // Execute original functionality to save the customer.
             var response = await this.ExecuteNextAsync<SingleEntityDataServiceResponse<Customer>>(request).ConfigureAwait(false);
@@ -555,7 +555,7 @@ protected override async Task<Response> Process(SaveSalesTransactionDataRequest 
     NullResponse response;
 
     using (var databaseContext = new DatabaseContext(request.RequestContext))
-    using (var transactionScope = CreateReadCommittedTransactionScope())
+    using (var transactionScope = CreateReadCommittedTransactionScope(TransactionScopeAsyncFlowOption.Enabled))
     {
         // Execute original logic.
         var requestHandler = request.RequestContext.Runtime.GetNextAsyncRequestHandler(request.GetType(), this);
@@ -900,7 +900,7 @@ namespace Contoso
                 ThrowIf.Null(request, "request");
 
                 using (var databaseContext = new DatabaseContext(request.RequestContext))
-                using (var transactionScope = new TransactionScope())
+                using (var transactionScope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
                 {
                     // Execute original functionality to save the customer.
                     var requestHandler = new Microsoft.Dynamics.Commerce.Runtime.DataServices.SqlServer.CustomerSqlServerDataService();

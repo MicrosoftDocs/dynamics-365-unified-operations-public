@@ -36,7 +36,7 @@ The party model is often used to represent medium to complex relationships betwe
 
 The following illustration shows the data model for party.
 
-![Data model for party](media/party-gab-image1.png)
+![Data model for party.](media/party-gab-image1.png)
 
 > [!TIP]
 > When you're trying to create a new account record, use the **Party** field to search for the record by name. In this way, if you find the record, you just have to select it. The system then automatically fills in all the data from the party. You don't have to manually set all the required fields. This behavior can be found on the out-of-box **Account**, **Contact**, and **Vendor** pages.
@@ -53,7 +53,7 @@ Depending on the business context, a person or an organization might play more t
 
 The following illustration shows the data model for the global address book.
 
-![Data model for the global address book](media/party-gab-image2.png)
+![Data model for the global address book.](media/party-gab-image2.png)
 
 ## Contact
 
@@ -89,7 +89,7 @@ These relationships are stored in the **Contact for Party** table. You can find 
     + If you select a value in the **Associated Contact** field, you're selecting the striped contact of the **Person** type.
     + If you select a value in the **Associated Account** or **Associated Vendor** field, you're selecting an organization.
 
-    ![Associated Organizations tab on the Contact page](media/party-gab-image3.png)
+    ![Associated Organizations tab on the Contact page.](media/party-gab-image3.png)
 
     Regardless of your selection, the association is created at the party level, it applies to all the roles of the party, and it's stored in the **Contact for Party** entity.
 
@@ -104,7 +104,7 @@ When you open a **Contact** row where either the **Is Customer** field or the **
 
 A new **Addresses** tab has been introduced on the **Account**, **Contact**, and **Vendor** pages. This tab supports multiple postal addresses by using a grid, as shown in the following illustration.
 
-![Grid for postal addresses](media/party-gab-image4.png)
+![Grid for postal addresses.](media/party-gab-image4.png)
 
 The grid includes the following columns:
 
@@ -116,7 +116,7 @@ You can use the **New Address** button above the grid to create as many postal a
 
 The **Address 1** and **Address 2** fields on the **Summary** tab of the **Account** page correspond to the **Delivery** and **Invoice** addresses, respectively.
 
-![Summary tab for postal addresses](media/party-gab-image5.png)
+![Summary tab for postal addresses.](media/party-gab-image5.png)
 
 The **Address 1**, **Address 2**, and **Address 3** fields on the **Summary** tab of the **Contact** page correspond to the **Business**, **Delivery**, and **Invoice** addresses, respectively.
 
@@ -124,7 +124,7 @@ The **Address 1**, **Address 2**, and **Address 3** fields on the **Summary** ta
 
 A new **Electronic Addresses** tab has been introduced on the **Account**, **Contact**, and **Vendor** pages. This tab supports multiple electronic addresses by using a grid, as shown in the following illustration.
 
-![Grid for electronic addresses](media/party-gab-image6.png)
+![Grid for electronic addresses.](media/party-gab-image6.png)
 
 The grid includes the following columns:
 
@@ -200,7 +200,7 @@ Electronic addresses are available only in this grid. In future releases, all po
     | Party Id (field) | Exact Match |
     | Select (field) | (blank) |
 
-    ![Duplicate rule for Accounts](media/duplicate-rule-1.PNG)
+    ![Duplicate rule for Accounts.](media/duplicate-rule-1.PNG)
 
 10. Expand the duplicate detection rule for the **Contacts** table by setting the following fields.
 
@@ -216,7 +216,7 @@ Electronic addresses are available only in this grid. In future releases, all po
     | Party Id (field) | Exact Match |
     | Select (field) | (blank) |
 
-    ![Duplicate rule for Contacts](media/duplicate-rule-2.PNG)
+    ![Duplicate rule for Contacts.](media/duplicate-rule-2.PNG)
 
 11. If you are an existing dual-write user, follow the instructions in [Upgrade to the party and global address book model](upgrade-party-gab.md) and upgrade your data.
 
@@ -295,11 +295,11 @@ For more information, see [Dual-write mapping reference](mapping-reference.md).
 + Electronic addresses set on the electronic address tab of the **Account**, **Contact**, and **Vendor** forms come from the `msdyn_partyelectronicaddress` table. This information does not flow to its associated transactions like sales order, quotation, and purchase order. We plan to fix this issue in an incremental release. The existing data on the electronic address fields on the account and contact records will continue to work on transactions like sales order, quotation, and purchase order.
 + In Finance and Operations apps, you can create a contact record from the **Add Contact** form. When you try to create a new contact from the **View Contact** form, the action fails. This is a known issue.
 
-    ![Known issue with Add Contact](media/party-gab-contact-issue.png)
+    ![Known issue with Add Contact.](media/party-gab-contact-issue.png)
 
 + **Initial sync** does not support the **Available From** and **Available To** time fields on **ContactForParty**, because DIXF converts the value into a string instead of an integer. The conversion triggers the error `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
 + When a postal address is used for more than one reason, for example, business communication address and billing address, it should appear as `Business;Invoice` as shown in the following image. If you add a space in between the values, you will get an error.
 
-    ![Known issue with Address](media/party-gab-address-issue.png)
+    ![Known issue with Address.](media/party-gab-address-issue.png)
 
 + You can't enter a forward-dated postal address using a Finance and Operations app with dual-write, because Dataverse does not support date effectivity. If you enter a future-dated postal address using a Finance and Operations app, it synchronizes to Dataverse fully and you will see the address on the user interface immediately. Any updates to this record will result in an error as it is future-dated and not current in the Finance and Operations app.

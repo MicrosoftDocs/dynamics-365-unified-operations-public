@@ -38,7 +38,7 @@ The **Date of VAT register** field is shared globally and can be enabled in lega
 
 The **Date of VAT register** feature is enabled in the **Feature management** workspace.
 
-![Feature management workspace](./media/date-of-vat-activating.png)
+![Feature management workspace.](./media/date-of-vat-activating.png)
 
 After the feature is enabled, you can also define tax point transactions dates by using the **Date of VAT register** field in all of the legal entities in your application.
 
@@ -55,7 +55,7 @@ The **Date of VAT register** field is also included in the following reports:
 
 You can use the functionality in the **Date of VAT register** feature to auto-fill the **Date of VAT register** field. To set this up, set the **Date of VAT register filling** parameter on the **Sales tax groups** page.
 
-![Date of VAT register filling parameter on the Sales tax groups page](./media/date-of-vat-filling.png)
+![Date of VAT register filling parameter on the Sales tax groups page.](./media/date-of-vat-filling.png)
 
 When you create an invoice, the **Date of VAT register** field is automatically filled in. One of the following methods will be added based on the selection in the **Date of VAT register filling** field:
 
@@ -75,7 +75,7 @@ The **Date of VAT register** field is stored in a TaxTrans_W table. This table i
 
 To help avoid this issue, you can run the **Sales tax transactions extension** consistency check. Go to **System administration** \> **Periodical tasks** \> **Database** \> **Consistency check**. In the **Consistency check** dialog box, expand **Program** \> **General ledger** \> **Sales tax**, and then select the **Sales tax transactions extension** check box. You don't have to select the parent check boxes if you want to run only the **Sales tax transactions extension** consistency check.
 
-![ Consistency check dialog box with Sales tax transactions extension check box highlighted](./media/date-of-vat-consistency-check.png)
+![ Consistency check dialog box with Sales tax transactions extension check box highlighted.](./media/date-of-vat-consistency-check.png)
 
 When you run the **Sales tax transactions extension** consistency check, set the following options:
 

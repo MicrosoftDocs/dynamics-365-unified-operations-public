@@ -97,7 +97,7 @@ You should define all parameters before you begin to create your data. You can m
 ## Questionnaire components
 Questionnaires comprise three main elements: answer groups that contain the answers for multiple choice questions, questions, and the questionnaire itself. You can optionally group the questions on a questionnaire into result groups. Result groups let you categorize questions and provide further analysis on the questionnaire. 
 
-[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+[![QuestionnaireComponents.](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### Answer groups and answers
 

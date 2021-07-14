@@ -50,7 +50,7 @@ You can schedule only jobs of the **Process** type. The kanban job and its prope
 ## Kanban schedule board
 The **Kanban schedule board** page contains seven main elements, as shown in the following illustration. 
 
-![Kanban schedule board](./media/kanban-schedule-board-1024x554.png)
+![Kanban schedule board.](./media/kanban-schedule-board-1024x554.png)
 1.  Action Pane
 2.  Filter fields
 3.  Button for unplanned jobs
@@ -74,7 +74,7 @@ To enhance the overview that the Kanban schedule board provides, you can use col
 ## Plan unplanned jobs
 You can schedule unplanned kanban jobs from the **Plan unplanned jobs** dialog box. To open this dialog box, click the **Unplanned jobs** button that shows the current number of unplanned jobs. Alternatively, click **Plan unplanned jobs** on the **Board** tab of the Action Pane. The dialog box shows a list of the unplanned kanban jobs for the work cell. You can use the **Filter** field to filter on all fields in the grid. For example, you can filter on kanban jobs for a specific product. After you have a filtered list of the jobs that you want to schedule, select them in the list, and then click **OK**. To use automatic planning to schedule the jobs, set the **Automatic planning** option to **Yes**. In this case, the jobs are scheduled into a period according to their due date. You can also schedule the jobs by period. Just select a period in the **Period** field. The following illustration shows an example of the **Plan unplanned jobs** dialog box. 
 
-![Plan unplanned jobs dialog box](./media/plan-unplanned-jobs-1024x564.png)
+![Plan unplanned jobs dialog box.](./media/plan-unplanned-jobs-1024x564.png)
 
 ## Sequence kanban jobs within the same period
 You can change the sequence of one or more selected jobs within a period. This capability can be useful if you want to prioritize some jobs within the period. Alternatively, you might want to sequence jobs that have the same product attributes, to optimize job execution. You can change the sequence through a drag-and-drop operation, or by using the **Backward** and **Forward** menu items on the **Board** tab of the Action Pane.

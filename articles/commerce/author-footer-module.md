@@ -35,7 +35,7 @@ The footer module is a special container that is used to host the modules that a
 
 The following image shows an example of a footer module on a site page.
 
-![Example of a footer module](./media/ecommerce-footer.PNG)
+![Example of a footer module.](./media/ecommerce-footer.PNG)
 
 ## Footer module properties 
 

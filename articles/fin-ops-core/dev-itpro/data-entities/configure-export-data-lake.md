@@ -4,7 +4,7 @@
 title: Configure export to Azure Data Lake
 description: This topic provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
-ms.date: 06/24/2021
+ms.date: 06/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,8 +15,7 @@ ms.technology:
 # ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
-
+ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 ms.custom: 96283
 ms.assetid: 
@@ -35,7 +34,9 @@ ms.dyn365.ops.version: Platform Update 33
 > [!NOTE]
 > The **Export to Data Lake** feature is in public preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS).
 >
-> In the coming months, Microsoft will enable this feature in additional regions, based on the demand. If your environment isn't in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join a [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
+> **The feature may be temporarily unavailable during the preview period in your environment or the feature may not be available in your region.**
+> 
+> In the coming months, Microsoft will enable this feature in additional regions, as well as in additional environments. If your environment isn't in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
 >
 > The **Export to Data Lake** feature isn't available in Tier-1 (developer) environments. You must have a cloud-based Tier-2 or higher sandbox environment to enable this feature. 
 > 

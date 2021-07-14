@@ -60,13 +60,13 @@ Styles can be applied to card view controls only if the following requirements a
 
 The following illustration shows a card view that has no controls inside it.
 
-![Card view without elements](media/pfe-styles-empty-card.png)
+![Card view without elements.](media/pfe-styles-empty-card.png)
 
 The following illustrations show card views that have controls inside them.
 
-![Card with elements that show Hz](media/pfe-styles-elements.png)
+![Card with elements that show Hz.](media/pfe-styles-elements.png)
 
-![Card with elements for a maintenance request](media/pfe-styles-elements-maintenance.png)
+![Card with elements for a maintenance request.](media/pfe-styles-elements-maintenance.png)
 
 ## Business card
 
@@ -82,7 +82,7 @@ Set the following properties on the business card:
 - **Multi Select**: **No**
 - **Show Col Labels**: **No**
 
-![Business card](media/pfe-styles-business-card.png)
+![Business card.](media/pfe-styles-business-card.png)
 
 ## Radio button
 
@@ -98,17 +98,17 @@ Set the following properties on the radio button:
 
 The following illustration shows an example where the text appears below the radio buttons.
 
-![Radio buttons with text below](media/pfe-styles-radio-text-below.png)
+![Radio buttons with text below.](media/pfe-styles-radio-text-below.png)
 
 The following illustration shows an example where the text appears to the right of the radio buttons.
 
-![Radio buttons with text to the right](media/pfe-styles-radio-text-right.png)
+![Radio buttons with text to the right.](media/pfe-styles-radio-text-right.png)
 
 ### Radio buttons in Internet Explorer
 
 Radio button styles aren't supported in Internet Explorer. The following illustration shows what radio buttons look like in Internet Explorer.
 
-![Radio buttons in Internet Explorer](media/pfe-styles-browser.png)
+![Radio buttons in Internet Explorer.](media/pfe-styles-browser.png)
 
 ## Buttons
 
@@ -132,7 +132,7 @@ Styles can be applied to a primary button only if the following requirements are
 - The button is contained in a form group.
 - The group name starts with **DefaultButtonGroup** or **PrimaryButtonGroup** (for example, **DefaultButtonGroup10**).
 
-![Primary button](media/pfe-styles-first.png)
+![Primary button.](media/pfe-styles-first.png)
 
 ### Secondary button
 
@@ -141,7 +141,7 @@ Styles can be applied to a secondary button only if the following requirements a
 - The button is contained in a form group.
 - The group is named **Right panel**, or the group name starts with **SecondaryButtonGroup**.
 
-![Secondary button](media/pfe-styles-second.png)
+![Secondary button.](media/pfe-styles-second.png)
 
 ### Third-group button
 
@@ -150,7 +150,7 @@ Styles can be applied to a third-group button only if the following requirements
 - The button is contained in a form group.
 - The group is named **Left panel**, or the group name starts with **ThirdButtonGroup**.
 
-![Third-group button](media/pfe-styles-third.png)
+![Third-group button.](media/pfe-styles-third.png)
 
 ### Fourth-group button
 
@@ -167,7 +167,7 @@ Set the following properties on the button:
 - **Width**: **Auto**.
 - **Height**: **Auto**.
 
-![Fourth-group button](media/pfe-styles-fourth.png)
+![Fourth-group button.](media/pfe-styles-fourth.png)
 
 ### Flat button
 
@@ -184,7 +184,7 @@ Set the following properties on the button:
 - **Width**: **Auto**.
 - **Height**: **Auto**.
 
-![Flat button](media/pfe-styles-flat-button.png)
+![Flat button.](media/pfe-styles-flat-button.png)
 
 ## Combo box
 
@@ -236,7 +236,7 @@ Styles can be applied to a combo box only if the following requirements are met:
 
 The following illustration shows two combo box controls. The combo box on the left has an empty text box, and the **Clear** button is disabled. The combo box on the right has text in the text box, and the **Clear** button is enabled.
 
-![Combo boxes with and without a Clear button](media/pfe-styles-combo.png)
+![Combo boxes with and without a Clear button.](media/pfe-styles-combo.png)
 
 ## Quick filter
 
@@ -250,7 +250,7 @@ The quick filter control adds a search field to the page. You can apply styles t
 
 The following illustration shows two quick filter controls. The quick filter on the left has an empty quick filter, and the number of results isn't visible. The quick filter on the right contains a search string and shows the number of results.
 
-![Examples of a quick filter control with and without a search string](media/pfe-styles-quick-filter.png "Examples of a quick filter control with and without a search string")
+![Examples of a quick filter control with and without a search string.](media/pfe-styles-quick-filter.png "Examples of a quick filter control with and without a search string")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

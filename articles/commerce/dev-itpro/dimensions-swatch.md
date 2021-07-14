@@ -44,11 +44,11 @@ The display dimensions as swatches feature enables Commerce to use hexadecimal (
 
 The following illustration shows an example where colors appear as swatches on a Commerce PDP.
 
-![Example of colors shown as swatches on a product details page](../dev-itpro/media/swatch_pdp.png)
+![Example of colors shown as swatches on a product details page.](../dev-itpro/media/swatch_pdp.png)
 
 The following illustration shows an example where colors appear as swatches on a Commerce search results list page.
 
-![Example of colors shown as swatches on a search results list page](../dev-itpro/media/swatch_searchresults.PNG)
+![Example of colors shown as swatches on a search results list page.](../dev-itpro/media/swatch_searchresults.PNG)
 
 ## Enable the display dimensions as swatches feature in Commerce headquarters
 
@@ -62,15 +62,15 @@ The configuration can be done at any of the following levels:
 
 - **Dimension** – In Commerce headquarters, open the page for a dimension by searching for **Color**, **Size**, or **Style**. On each page, a grid lists the dimension values. You can manage the display order, hex code, and image URL values. The following illustration shows an example configuration on the **Colors** page.
 
-    ![Example of dimension configuration on the Colors page](../dev-itpro/media/swatch_Color.PNG)
+    ![Example of dimension configuration on the Colors page.](../dev-itpro/media/swatch_Color.PNG)
 
 - **Dimension group** – In Dynamics 365 Commerce, you can use the **RefinerGroup** property to create dimension groups. If dimension groups are defined, open the appropriate page by searching for **Color group**, **Size group**, or **Style group**. On each page, you can manage hex code, image URL, and refiner group values. The following illustration shows an example configuration on the **Color groups** page.
 
-    ![Example of dimension configuration on the Color groups page](../dev-itpro/media/swatch_colorGroup.PNG)
+    ![Example of dimension configuration on the Color groups page.](../dev-itpro/media/swatch_colorGroup.PNG)
 
 - **Product dimension (during product creation)** – When you create a new product, you can use the **Product dimensions** page to enter the dimension values. For existing products, the **Hexcode**, **URL** (for images), and **RefinerGroup** fields might already be set. However, you can change the values as you require. The following illustration shows an example configuration on the **Product dimensions** page.
 
-    ![Example of dimension configuration on the Product dimensions page](../dev-itpro/media/swatch_product_dimensions.PNG)
+    ![Example of dimension configuration on the Product dimensions page.](../dev-itpro/media/swatch_product_dimensions.PNG)
 
 > [!NOTE]
 > The process of managing hex code and image URL configurations follows the same pattern that is used to manage the display order of dimensions.
@@ -81,7 +81,7 @@ For most color dimensions, a hex code color value should be provided on dimensio
 
 The following illustration shows an example where color dimensions are configured by using hex code values.
 
-![Example of dimension configuration that uses hex codes](../dev-itpro/media/swatch_color_hexcode.png)
+![Example of dimension configuration that uses hex codes.](../dev-itpro/media/swatch_color_hexcode.png)
 
 ## Configure dimension values by using image URLs
 
@@ -91,13 +91,13 @@ You must upload each image to Commerce site builder and publish it. Then enter t
 
 The following illustration shows an example where image URLs are used for the configuration on the **Colors** page.
 
-![Example of dimension configuration that uses image URLs](../dev-itpro/media/swatch_color_urls.PNG)
+![Example of dimension configuration that uses image URLs.](../dev-itpro/media/swatch_color_urls.PNG)
 
 You can use a media template to define image URLs, just as you can for product and category images. When you upload images to site builder, file name conventions and file paths must be consistent.
 
 The following illustration shows an example where image URLs are used for the configuration of a media template.
 
-![Example of media template configuration](../dev-itpro/media/swatch_media_template.PNG)
+![Example of media template configuration.](../dev-itpro/media/swatch_media_template.PNG)
 
 ## Configure dimension values by using both hex codes and image URLs
 
@@ -105,7 +105,7 @@ For most color dimensions, you can configure both hex codes and image URLs. Comm
 
 The following illustration shows an example where both hex codes and image URLs are used for the configuration on the **Colors** page.
 
-![Example of dimension configuration that uses both hex codes and image URLs](../dev-itpro/media/swatch_color_hexandimage.png)
+![Example of dimension configuration that uses both hex codes and image URLs.](../dev-itpro/media/swatch_color_hexandimage.png)
 
 ## Configure refiner groups
 
@@ -115,7 +115,7 @@ For example, if your color dimension values are "blue," "blue plaid," "blue wash
 
 The example in the following illustration shows the relationship between the **Color** and **RefinerGroup** properties in Commerce headquarters.
 
-![Example of refiner group management](../dev-itpro/media/swatch_refiner_group.png)
+![Example of refiner group management.](../dev-itpro/media/swatch_refiner_group.png)
 
 ## Manage images in Commerce site builder
 
@@ -123,7 +123,7 @@ If image URLs are used for any dimension values, the corresponding images must b
 
 The following illustration shows an example where the **Upload files** dialog box is being used to upload images to the site builder media library. It highlights the **Size**, **Color**, and **Style** categories that are available for selection.
 
-![Example of image file categories during upload to the site builder media library](../dev-itpro/media/swatch_sitebuilder.png)
+![Example of image file categories during upload to the site builder media library.](../dev-itpro/media/swatch_sitebuilder.png)
 
 ## Enable swatch display on e-commerce site pages
 

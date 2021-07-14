@@ -96,7 +96,7 @@ The following table describes the parameters.
 
 The follow diagram shows the flow between the POS, Hardware station, and the hardware device.
 
-![Flow diagram](./media/POSDeviceExtension.png)
+![Flow diagram.](./media/POSDeviceExtension.png)
 
 ## Hardware station extension
 

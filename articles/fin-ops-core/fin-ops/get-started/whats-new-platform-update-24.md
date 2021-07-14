@@ -49,11 +49,11 @@ To make the **preview** status clear to users, each preproduction build will be 
 
 - Users will see the word "Preview" as a suffix to the product name in the navigation bar.  
 
-    ![Preview indicator in the navigation bar](media/previewCallout.png  "Preview indicator in the navigation bar")  
+    ![Preview indicator in the navigation bar.](media/previewCallout.png  "Preview indicator in the navigation bar")  
 
 - The title of the **About** box will include the word "Preview". 
 
-    ![Preview is also indicated in the About box](media/previewAboutBox.png  "Preview is also indicated in the About box")
+    ![Preview is also indicated in the About box.](media/previewAboutBox.png  "Preview is also indicated in the About box")
     
 
 ## Updated navigation bar that aligns with the Office header
@@ -63,11 +63,11 @@ The updated navigation bar is shown by default in Platform update 24. For custom
 
 The following image shows the updated navigation bar in Platform update 24.
 
-![Updated navigation bar in Platform update 24](media/updatedNavBar.png  "Updated navigation bar in Platform update 24")
+![Updated navigation bar in Platform update 24.](media/updatedNavBar.png  "Updated navigation bar in Platform update 24")
 
 The following image shows how the navigation bar appeared in Platform update 23.
 
-![Navigation bar in Platform update 23](media/existingNavBar.png  "Navigation bar in Platform update 23")
+![Navigation bar in Platform update 23.](media/existingNavBar.png  "Navigation bar in Platform update 23")
 
 ## Extensibility enhancements
 

@@ -139,7 +139,7 @@ RECONFIGURE WITH OVERRIDE
 
 The following publications will get created in the source database when setting up the replication.
 
-![Publications that will get created in the source database when setting up the replication](media/Replication.png)
+![Publications that will get created in the source database when setting up the replication.](media/Replication.png)
 
 ## Find the replication status and get an exception
 
@@ -161,27 +161,27 @@ To find the replication status configuration and status using SQL Server Managem
 
 - To determine if the replication feature is available and installed on the server, you should see the Replication folder in Object Explorer.
    
-   ![Replication folder](media/Replication1.png)
+   ![Replication folder.](media/Replication1.png)
 
 - After executing the **Replication_03_PublisherTables.ps1** script, you should be able to see the publisher configured under the Replication folder.
     
-    ![See publishers under the Replication folder](media/Replication2.png)
+    ![See publishers under the Replication folder.](media/Replication2.png)
 
 - To determine the replication status, right-click the **Replication** folder and select **Launch Replication Monitor**.
    
-   ![Select Launch Replication Monitor in the menu](media/Replication3.png)
+   ![Select Launch Replication Monitor in the menu.](media/Replication3.png)
 
 - In the **Replication Monitor** window, you can see all the publishers that have been created for replication.
     
-    ![All the publishers that have been created for replication](media/Replication4.png)
+    ![All the publishers that have been created for replication.](media/Replication4.png)
 
 - Select the **Snapshot** tab to see the status of the snapshot.
   
-  ![Select the Snapshot tab to see the status of the snapshot](media/Replication5.png)
+  ![Select the Snapshot tab to see the status of the snapshot.](media/Replication5.png)
 
 - To view the detail log/transaction, double-click the item.
    
-   ![To view the detail log/transaction, double-click on the item](media/Replication6.png)
+   ![To view the detail log/transaction, double-click on the item.](media/Replication6.png)
 
 - To view the data replication to the target, select the **All Subscription** tab and double-click the subscription for the item. 
 

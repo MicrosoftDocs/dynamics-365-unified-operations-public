@@ -52,14 +52,14 @@ The system gives priority to the setting for the journal header. By default, thi
 1. Go to **General ledger \> Ledger setup \> General ledger parameters**.
 2. On the **Sales tax** tab, on the **General** FastTab, set the **Delayed tax calculation** option to **Yes**.
 
-![General ledger parameters image](media/delayed-tax-calculation-gl.png)
+![General ledger parameters image.](media/delayed-tax-calculation-gl.png)
 
 ## Turn on delayed tax calculation at the journal name level
 
 1. Go to **General ledger \> Journal setup \> Journal names**.
 2. On the **General** FastTab, in the **Sales tax** section, set the **Delayed tax calculation** option to **Yes**.
 
-![Journal names image](media/delayed-tax-calculation-journal-name.png)
+![Journal names image.](media/delayed-tax-calculation-journal-name.png)
 
 ## Turn on delayed tax calculation at the journal header level
 
@@ -68,7 +68,7 @@ The system gives priority to the setting for the journal header. By default, thi
 3. Select a journal name.
 4. On the **Setup** tab, set the **Delayed tax calculation** option to **Yes**.
 
-![General journal page image](media/delayed-tax-calculation-journal-header.png)
+![General journal page image.](media/delayed-tax-calculation-journal-header.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

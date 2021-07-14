@@ -35,7 +35,7 @@ Finance and Operations apps offer an expanded collection of options to use while
 ## Overview
 The efficient publication and distribution of documents is not only a key component to many operations, but it’s also critical to daily business functions. Documents are used to capture transaction details and may represent an agreement between two parties. From quotations to sales invoices used in the packing slip process, which ultimately produces receipts and customer statements, business documents come in many forms. The document reporting preview options empower you to quickly take the appropriate action on documents.
 
-![Document previewer user options](./media/Document-preview-options-toolbar.png)
+![Document previewer user options.](./media/Document-preview-options-toolbar.png)
 
 Almost half of all document interactions involve the screen preview. The toolbar options that are available are for all supported devices and offer a simple and intuitive solution for exporting and printing documents rendered by Finance and Operations apps.
 
@@ -47,7 +47,7 @@ You can choose to print on locally connected devices using the **Print** button 
 
 Use the toolbar option to choose the network printer and establish print settings.
 
-![Access Print destination settings](./media/Document-preview-network-print-options.png)
+![Access Print destination settings.](./media/Document-preview-network-print-options.png)
 
 ## Access preview options
 Use the Feature Management area to access the document preview options. The two additional features are:

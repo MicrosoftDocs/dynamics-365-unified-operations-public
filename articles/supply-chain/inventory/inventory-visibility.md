@@ -148,7 +148,7 @@ After you have the prerequisites in place, use the following procedure if you pr
 
             For more information about this variable, see the [Set up Inventory Visibility integration](#setup-inventory-visibility-integration) section later in this topic.
 
-        ![Configuration trigger](media/configuration-trigger.png "Configuration trigger")
+        ![Configuration trigger.](media/configuration-trigger.png "Configuration trigger")
 
     1. Select **Turn on**.
 
@@ -162,7 +162,7 @@ To install the Inventory Visibility Add-in, do the following:
 1. On the environment page, scroll down until you see the **Environment add-ins** section in the **Power Platform integration** section, where you can find the Dataverse environment name.
 1. In the **Environment add-ins** section, select **Install a new add-in**.
 
-    ![The environment page in LCS](media/inventory-visibility-environment.png "The environment page in LCS")
+    ![The environment page in LCS.](media/inventory-visibility-environment.png "The environment page in LCS")
 
 1. Select the **Install a new add-in** link. A list of available add-ins opens.
 1. Select **Inventory Visibility** in the list.
@@ -171,7 +171,7 @@ To install the Inventory Visibility Add-in, do the following:
     - **AAD application (client) ID**
     - **AAD tenant ID**
 
-    ![Add in setup page](media/inventory-visibility-setup.png "Add-in setup page")
+    ![Add in setup page.](media/inventory-visibility-setup.png "Add-in setup page")
 
 1. Agree to the terms and condition by selecting the **Terms and conditions** check box.
 1. Select **Install**. The status of the add-in will show as **Installing**. When it's done, refresh the page to see the status change to **Installed**.

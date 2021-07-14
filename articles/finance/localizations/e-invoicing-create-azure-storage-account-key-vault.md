@@ -54,7 +54,7 @@ In this topic, you will complete two main steps:
 5. Select **Add policy** to add a stored access policy.
 6. Set the **Identifier** and **Permissions** fields as appropriate. In the **Permissions** field, you should select all permissions.
 
-    ![Granting Blob storage permission](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
+    ![Granting Blob storage permission.](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
 
 7. Enter the start and expiry dates. The expiry date should be in future.
 8. Select **OK** to save the policy, and then save your changes to the container.
@@ -62,7 +62,7 @@ In this topic, you will complete two main steps:
 10. Right-click the container, and then select **Get Shared Access Signature**.
 11. In the **Shared Access Signature** dialog box, copy and store the value in the **URI** field. This value will be used in the next procedure and will be referred to as the *shared access signature URI*.
 
-    ![Selecting and copying the URI value](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
+    ![Selecting and copying the URI value.](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
 
 ## Set up the key vault to store the storage account URI
 
@@ -74,11 +74,11 @@ In this topic, you will complete two main steps:
 6. Set up the access policy to grant Electronic invoicing the correct level of secure access to the secret you created. Go to **Settings \> Access policy**, and select **Add Access Policy**.
 7. Set the secret permissions for the **Get** and **List** operations.
 
-    ![Granting service access](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
+    ![Granting service access.](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
 
 8. Set the certificate permissions for **Get** and **List** operations.
 
-    ![Granting certificate permission](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
+    ![Granting certificate permission.](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
 9. In the **Select principal** field, select **None selected**.
 10. In the **Principal** dialog box, select the principal by adding **e-Invoicing Service**.

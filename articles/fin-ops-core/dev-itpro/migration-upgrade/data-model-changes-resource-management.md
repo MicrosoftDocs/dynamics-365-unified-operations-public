@@ -35,7 +35,7 @@ This topic provides information about the Project resource scheduling data model
 
 ## Physical data model for Project resource scheduling
 
-The following diagram represents the data design structure of the Project resource scheduling physical data model.   [![Resource management data model](./media/resource-management-data-model.jpg)](./media/resource-management-data-model.jpg)
+The following diagram represents the data design structure of the Project resource scheduling physical data model.   [![Resource management data model.](./media/resource-management-data-model.jpg)](./media/resource-management-data-model.jpg)
 
 ## Tables
 The following table provides a list of additional tables that support the Resource management data model.
