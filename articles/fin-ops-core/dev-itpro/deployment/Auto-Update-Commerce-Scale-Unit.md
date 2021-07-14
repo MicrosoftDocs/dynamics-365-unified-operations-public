@@ -37,7 +37,7 @@ Auto-update for Commerce Scale Unit enables [One Version](../lifecycle-services/
 
 
 >[!Note]
-> Auto-update for Commerce Scale Unit is being incrementally rolled-out to customers and planned for completion by end of CY2021.
+> Auto-update for Commerce Scale Unit is being incrementally rolled-out to customers and is expected to be available to all customers by end of CY2021.
 
 ## Limitations
 The following limitations currently exist and are planned to be resolved in upcoming updates:
