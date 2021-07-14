@@ -133,17 +133,20 @@ In addition, you should enable the **Include product attributes in search result
 
 ## Inventory awareness on swatches
 
-Swatches have an optional capability to show the inventory availability of a product variant color or dimension. For example, if a product is sold in multiple sizes and if some sizes are out of stock, the swatches for the out-of-stock products will render differently to indicate that they are unavailable. This functionality reduces the number of customer clicks needed to determine product availabilty. The swatch inventory availability capability can be configured for use on both PDPs and search or category list pages where swatches are displayed. The swatch inventory availability capability feature is available as of the Commerce version 10.0.21 release and requires Commerce module library package version 9.31 to be installed.
+Swatches have an optional capability to show the inventory availability of a product variant color or dimension. For example, a product is sold in multiple sizes, but some sizes are out of stock. In this case, the swatches for the out-of-stock products are rendered differently to indicate that they are unavailable. This capability helps reduce the number of customer clicks that are required to determine product availability.
 
-To activate the swatch inventory availability feature you must enable the **Update media on dimension selection** property in the [media gallery module](../media-gallery-module.md), which allows media gallery images to update on dimension selection. 
+The swatch inventory availability feature can be configured for use on both PDPs and search or category list pages where swatches are displayed. To activate it, you must set the **Update media on dimension selection** property to **True** in the [media gallery module](../media-gallery-module.md). That setting enables media gallery images to be updated when dimensions are selected. 
+
+> [!IMPORTANT]
+> The swatch inventory availability feature is available as of the Commerce version 10.0.21 release. It requires that Commerce module library package version 9.31 be installed.
 
 The following illustration shows an example of inventory awareness on the size swatches of a PDP.
 
-![Example of inventory awareness  on the size swatches of a PDP](../dev-itpro/media/swatch_inventory.png)
+![Example of inventory awareness on the size swatches of a PDP](../dev-itpro/media/swatch_inventory.png)
 
 ## Display swatches in POS and other channels
 
-Commerce doesn't currently have an out-of-box implementation that supports the display of swatches in point of sale (POS) and other channels. However, you can implement swatch display functionality as an extension since channel APIs return the hex codes and image URLs that are required to render swatches.
+Commerce doesn't currently have an out-of-box implementation that supports the display of swatches in point of sale (POS) and other channels. However, you can implement swatch display functionality as an extension, because channel APIs return the hex codes and image URLs that are required to render swatches.
 
 ## Additional resources
 
