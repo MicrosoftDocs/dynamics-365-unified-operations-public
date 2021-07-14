@@ -34,20 +34,33 @@ This topic gives an overview of the Adventure Works theme and describes how to a
 
 Dynamics 365 Commerce has a theme for e-commerce that is named Adventure Works. The Adventure Works theme showcases sports and recreational products, and is optimized for a rich and enhanced storytelling experience. It provides a modern appearance, new layouts, and animation effects to create an immersive, engaging online shopping experience for e-commerce customers.
 
-The Adventure Works theme provides the following new workflows:
+## Trial environments on Commerce
+
+If you want to see the Adventure works site you can do this using the following link to our trial sites.
+
+- **[Adventure Works B2C site](https://www.adventure-works.com/)**
+- **[Adventure Works Business site](https://www.adventure-works.com/business)**
+
+## Theme capabilities
+
+The Adventure Works theme provides the following new capabilities:
 
 - The video player module now supports heading, paragraph, and links functionality for additional storytelling.
 - The add to cart action invokes the mini cart instead of providing a notification.
 - The quick view module is a pane that slides in on both desktop and mobile viewports.
-- An empty cart can now showcase promotions.
+- New layouts for the site pages 
+- Cart and mini-cart allow marketing content to be configured when empty
+- Mini-cart can shows promotion such as *Free shipping on orders over $50*
+- Description card on search/category pages
 
-The Adventure Works theme includes the following storytelling modules in the Commerce module library:
 
-- Tile list module
-- Interactive feature module
-- Subscribe module
-- Active image module
-- Image list module
+The Adventure Works theme includes the following new storytelling modules in the Commerce module library:
+
+- [Tile list module](tile-list-module.md)
+- [Interactive feature module](interactive-feature-module.md)
+- [Active image module](active-image-module.md)
+- [Subscribe module](subscribe-module.md)
+- [Image list module](image-list-module.md)
 
 The Adventure Works theme is fully responsive and provides an optimized experience for desktop, mobile, and tablet viewports.
 
@@ -81,13 +94,6 @@ The Adventure Works theme includes several theme extensions, such as the **View 
 Likewise, other modules include module definition extensions. For example, the [cart icon module](cart-icon-module.md) includes two additional **Empty Cart** and **Promotional Content** slots that are implemented by using module definition extensions. Additionally, a new **Mobile Logo** property has been added to the header module to support a logo on mobile viewports. This property is implemented as a header module definition extension.
 
 For more information about theme extensions, see [Theme extensions](e-commerce-extensibility/theme-module-extensions.md).
-
-## Trial environments on Commerce
-
-If you want to see the Adventure works site you can do this using the following link to our trial sites.
-
-- **[Adventure Works B2C site](https://www.adventure-works.com/)**
-- **[Adventure Works Business site](https://www.adventure-works.com/business)**
 
 
 ## Installing the theme
