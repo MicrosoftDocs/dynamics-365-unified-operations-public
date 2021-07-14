@@ -34,7 +34,7 @@ This document describes the Dynamics 365 Human Resources Payroll integration API
 
 To enable the integration, Human Resources includes the following components:
 
-- [Functionality to mark an employee as ready to pay.](/hr-compensation-payroll.md)
+- [Functionality to mark an employee as ready to pay.](hr-compensation-payroll.md)
 - An integration API opening up the new functionality to integrating applications.
 
 ## Microsoft Dataverse
