@@ -27,6 +27,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
+# Ready to pay
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [preview feature](./includes/preview-feature.md)]
@@ -36,7 +37,7 @@ ms.dyn365.ops.version: Human Resources
 
 This feature enables human resources professionals to understand which employees are ready for payroll processing and which require action before being consumed by a third-party payroll provider.
 
-# Mark employee as ready to pay
+## Mark employee as ready to pay
 
 Gathering and validating employee information can be time-consuming and error prone. By providing a way for human resources professionals to review and easily update employee information, Dynamics 365 Human Resources helps to reduce the time spent getting ready to process payroll.
 
