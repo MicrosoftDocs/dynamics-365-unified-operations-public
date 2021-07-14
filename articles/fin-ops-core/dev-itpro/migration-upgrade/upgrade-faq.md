@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Data upgrade FAQ
-description: This topics answers some common questions about data upgrade when upgrading from AX 2012.
+description: This topic answers some frequently asked questions about data upgrade during an upgrade from Microsoft Dynamics AX 2012.
 author: ttreen
 ms.date: 07/01/2021
 ms.topic: article
@@ -14,32 +14,40 @@ ms.search.validFrom: 2021-07-01
 
 ---
 
-# Upgrade from AX 2012 - Data upgrade FAQ
+# Upgrade from AX 2012 – Data upgrade FAQ
 
 [!include[banner](../includes/banner.md)]
 
-This topic answers some common questions about the data upgrade when upgrading from AX 2012.
+This topic answers some frequently asked questions about data upgrade during an upgrade from Microsoft Dynamics AX 2012.
 
-## Is the Tier 2 Azure SQL database sized enough for large databases upgrades? 
-If the database size grows, Tier 2 sandbox deployed on “Elastic pool” should auto-resize as needed.
+## Is the Tier 2 Azure SQL database sized enough for upgrades of large databases?
 
-## Does the AX 2012 Database Upgrade Toolkit for Dynamics 365 support Microsoft's Government Community Cloud (GCC)?
-It’s currently not supported.
+If the database size grows, a Tier 2 sandbox that is deployed on an "elastic pool" should automatically be resized as required.
 
-## What kind of validations are being done as part of the AX 2012 Database Upgrade Toolkit for Dynamics 365?
-There are few validations in place e.g., validate whether you have installed required KBs (pre-requisites) in AX 2012 or not. If you haven’t installed required KBs in AX 2012, you will not be able to start the replication process. There is also the option to run a record count check on the replicated data.
+## Does the AX 2012 Database Upgrade Toolkit for Dynamics 365 support the Microsoft Government Community Cloud?
 
-## If source AX 2012 database is in different region than the target database, what's the recommendation in such scenario?
-Recommendation is to have both source and target in the same region for optimal replication performance. Customers can deploy the sandbox environment in the same region as the  source and complete data upgrade. After the upgrade, move the sandbox environemnt to the needed region. 
+No, the AX 2012 Database Upgrade Toolkit for Dynamics 365 doesn't currently support the Government Community Cloud (GCC).
 
-## Are the SQL BACPAC and DACPAC processes still supported for AX 2012 data upgrade in sandbox?
-No, both BACPAC and DACPAC processes are no longer supported for AX 2012 data upgrade in sandbox environments. The AX 2012 Database Upgrade Toolkit for Dynamics 365 is the only way for customers to perform data upgrade in sandbox environments. 
+## What type of validation is done as part of the AX 2012 Database Upgrade Toolkit for Dynamics 365?
 
-## I’ve upgraded an AX 2012 database in a DEV (Tier 1) environment and uploaded the upgraded BACPAC file into Lifecycle Services (LCS). I am getting the error below when importing this BACPAC file from LCS into a sandbox environment. How do I resolve this error? 
+Few validations are done as part of the AX 2012 Database Upgrade Toolkit for Dynamics 365. For example, the toolkit validates that you've installed the required KBs (prerequisites) in AX 2012. If you haven't installed them, you can't start the replication process. There is also an option to run a record count check on the replicated data.
 
-**Error: "Importing AX 2012 bacpac file into Dynamics 365 environment is not supported as it would result in a loss of the imported data and would put the environment in a failed state."**
+## What is the recommended approach if the source AX 2012 database is in a different region than the target database?
 
-We have validation not to allow BACPAC import into a sandbox environment if your project implementation type is **AX2012 data upgrade**. You must use the AX 2012 Database Upgrade Toolkit for Dynamics 365 for data upgrade and perform data upgrade in a sandbox environment. 
+For optimal replication performance, we recommend that the source AX 2012 database and the target database be in the same region. Customers can deploy the sandbox environment in the same region as the source and do the data upgrade. Then, after the upgrade is completed, the sandbox environment can be moved to the required region.
 
-## Can I filter on the table data that will be replicated e.g., to limit specific records only for replication to the target database?
-No, this is not supported within AX 2012 Database Upgrade Toolkit for Dynamics 365. 
+## Are the SQL BACPAC and DACPAC processes still supported for AX 2012 data upgrades in sandbox environments?
+
+No, the SQL BACPAC and DACPAC process are no longer supported for AX 2012 data upgrades in sandbox environments. Customers must use the AX 2012 Database Upgrade Toolkit for Dynamics 365 to do data upgrades in sandbox environments.
+
+## I've upgraded an AX 2012 database in a DEV (Tier 1) environment and uploaded the upgraded BACPAC file into Lifecycle Services. However, I receive an error message when I then try to import the BACPAC file into a sandbox environment. How do I fix the error?
+
+When you try to import an upgraded BACPAC file from Microsoft Dynamics Lifecycle Services (LCS) into a sandbox environment, you might receive the following error message:
+
+> Importing AX 2012 bacpac file into Dynamics 365 environment isn't supported as it would result in a loss of the imported data and would put the environment in a failed state.
+
+Validation that is done prevents a BACPAC file from being imported into a sandbox environment if your project implementation type is **AX2012 data upgrade**. You must use the AX 2012 Database Upgrade Toolkit for Dynamics 365 for data upgrade, and you must do the data upgrade in a sandbox environment.
+
+## Can I filter on the table data that will be replicated (for example, to limit specific records only for replication to the target database)?
+
+No, the AX 2012 Database Upgrade Toolkit for Dynamics 365 doesn't support filtering on the table data that will be replicated.
