@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: Leave and absence overview
-description: In Dynamics 365 Human Resources, the Leave and absence workspace provides a flexible framework for creating new leave plans. It also provides workflows for managing requests and an intuitive self-service page for employees to request time off. 
-author: andreabichsel
-ms.date: 06/01/2020
+title: Configure absence manager role
+description: This topic describes setting up the absence manager role for managing employees' leave.
+author: hasrivas
+ms.date: 07/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace , LeaveAbsenceManager
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -21,15 +21,17 @@ ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: hasrivas
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Leave and absence overview
+# Configure absence manager role
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+[!include [preview feature](./includes/preview-feature.md)]
 
 Dynamics 365 Human Resources helps you provide great leave benefits to your workers. The **Leave and absence** workspace provides a flexible framework for creating new leave plans. It also provides workflows for managing requests and an intuitive self service page for employees to request time off. Analytics help your organization measure and monitor leave balances and usage for your leave plans.
 
