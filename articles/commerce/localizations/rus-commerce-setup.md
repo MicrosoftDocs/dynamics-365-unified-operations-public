@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up and deploy the Dynamics 365 Commerce localization for Russia
-description: This topic covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Russia.
+title: Set up the Dynamics 365 Commerce localization for Russia
+description: This topic covers how to set up the Microsoft Dynamics 365 Commerce localization for Russia.
 author: akviklis@microsoft.com
 ms.date: 07/02/2021
 ms.topic: article
@@ -25,11 +25,11 @@ ms.search.validFrom: 07/01/2021
 ms.dyn365.ops.version: 
 
 ---
-# Set up and deploy the Dynamics 365 Commerce localization for Russia
+# Set up the Dynamics 365 Commerce localization for Russia
 
 [!include[banner](../includes/banner.md)]
 
-This topic covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Russia.
+This topic covers how to set up the Microsoft Dynamics 365 Commerce localization for Russia.
 
 For more information about the Commerce localization for Russia, see [Russian localization scope](../../finance/localizations/russia.md) and [Commerce localization for Russia](rus-commerce-localization.md).
 
@@ -46,17 +46,6 @@ To enable and use the Russia-specific functionality, you must configure the foll
     - (Russia) Customer information management in Retail POS
     - Enable Russian simplified customer address format
 
-## Set up address books
-
-To add the same address book for Russian customers, stores, and workers in Commerce headquarters, follow these steps.
-
-1. Go to **Retail and Commerce \> Customers \> All customers**.
-1. On the **General** tab, in the **Address books** field, add retail address books for customers as required.
-1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**.
-1. On the **General** tab, in the **Customer address book** and **Employee address book** fields, add the address books for the stores.
-1. Go to **Retail and Commerce \> Employees \> Workers**.
-1. On the **Worker summary** tab, in the **Address books** field, add the address books for workers.
-
 ## Customer information management
 
 **(Russia) Customer information management in Retail POS** feature impacts the Retail POS functionality for Russia. It enables the inquiry of customer information (such as email address or phone number) in sales transactions.
@@ -64,14 +53,6 @@ To add the same address book for Russian customers, stores, and workers in Comme
 ## Customer account deposit
 
 The **Customer account deposit** feature can be used to make prepayments at the Retail point of sale (POS). for more information see [Prepaymants in Retail for Russia](rus-commerce-prepayments.md).
-
-To configure the **Customer account deposit** operation in Commerce headquarters, follow these steps.
-
-1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Button grids**.
-1. Select the button grid where the operation should appear, and then open **Button grid designer**.
-1. Add a button, and then, in the **Action** field, select **Customer account deposit**.
-
-For more information about how to work with screen layouts and button grids, see [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md).
 
 ## Set up parameters for statements
 
