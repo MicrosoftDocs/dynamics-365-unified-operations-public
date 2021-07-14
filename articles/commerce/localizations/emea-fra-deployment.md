@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Deployment guidelines for cash registers for France
+title: Deployment guidelines for cash registers for France (legacy)
 description: This topic is a deployment guide for the Commerce localization for France.
-author: AlexChern0v
-manager: ezubov
-ms.date: 10/06/2020
+author: EvgenyPopovMBS
+manager: annbe
+ms.date: 14/07/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -26,9 +26,12 @@ ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
 
 ---
-# Deployment guidelines for cash registers for France
+# Deployment guidelines for cash registers for France (legacy)
 
 [!include [banner](../includes/banner.md)]
+
+> [!NOTE]
+> This sample fiscal integration functionality does not take advantage of the [fiscal integration framework](./fiscal-integration-for-retail-channel.md) and will be deprecated in later updates. You should use the [functionality that is based on the fiscal integration framework](./emea-fra-fif-deployment.md) instead.
 
 This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](./emea-fra-cash-registers.md).
 
