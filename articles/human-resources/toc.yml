@@ -255,6 +255,8 @@
       href: hr-admin-go-live-prepare.md
     - name: Go-live FAQ
       href: hr-admin-go-live-faq.md
+    - name: Human Resources infrastructure merge FAQ
+      href: hr-infrastructure-merge-faq.md
     - name: Documentation resources
       items:
       - name: Help system
