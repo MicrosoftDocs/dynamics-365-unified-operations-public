@@ -30,21 +30,21 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/emea-fra-cash-registers).
+This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](./emea-fra-cash-registers.md).
 
 ## Setting up Commerce for France
 
-See [Setting up Commerce for France](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/emea-fra-cash-registers#setting-up-commerce-for-france) for basic settings of Commerce for France.
+See [Setting up Commerce for France](./emea-fra-cash-registers.md#setting-up-commerce-for-france) for basic settings of Commerce for France.
 
-Complete the fiscal integration setup steps that are described in [Set up the fiscal integration for Commerce channels](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/setting-up-fiscal-integration-for-retail-channel):
+Complete the fiscal integration setup steps that are described in [Set up the fiscal integration for Commerce channels](./setting-up-fiscal-integration-for-retail-channel.md):
 
-- [Set up a fiscal registration process](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/setting-up-fiscal-integration-for-retail-channel#set-up-a-fiscal-registration-process). Be sure to note the settings for the fiscal registration process that are [specific to France](#set-up-the-registration-process).
-- [Set error handling settings](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/setting-up-fiscal-integration-for-retail-channel#set-error-handling-settings).
-- [Enable manual execution of postponed fiscal registration](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/setting-up-fiscal-integration-for-retail-channel#enable-manual-execution-of-postponed-fiscal-registration).
+- [Set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to note the settings for the fiscal registration process that are [specific to France](#set-up-the-registration-process).
+- [Set error handling settings](./setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+- [Enable manual execution of postponed fiscal registration](./setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
 
 ### Set up the registration process
 
-To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up a fiscal registration process](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/setting-up-fiscal-integration-for-retail-channel#set-up-a-fiscal-registration-process).
+To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors** and load the connector configuration. The configuration file can be [downloaded from GitHub](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.29/src/FiscalIntegration/SequentialSignatureFrance/Configurations/Connector/ConnectorMicrosoftSequentialSignatureFRA.xml).
@@ -58,7 +58,7 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 ### Configure the digital signature parameters
 
-You need to configure certificates to be used for digital signing of sales transactions and audit events. The [User-defined certificate profiles for retail stores](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/certificate-profiles-for-retail-stores) feature  enables configuring certificates that are stored in a Microsoft Azure Key Vault storage and supports failover to offline when Key Vault or Headquarters are not available. The feature extends the [Manage secrets for retail channels](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/manage-secrets) feature.
+You need to configure certificates to be used for digital signing of sales transactions and audit events. The [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature  enables configuring certificates that are stored in a Microsoft Azure Key Vault storage and supports failover to offline when Key Vault or Headquarters are not available. The feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets) feature.
 
 The following steps must be completed before you can use a digital certificate stored in an Azure Key Vault storage:
 
@@ -89,7 +89,7 @@ Finally, you need to configure a certificate profile for your certificates store
 7. On the **Settings** FastTab, you must specify the parameters for digital signatures:
    - Certificate profile – Select the certificate profile that you configured on the previous step.
    - Hash algorithm – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as SHA256.
-   - Activate health check – For more information about the Health Check feature, see [Fiscal registration health check](https://docs.microsoft.com/dynamics365/commerce/localizations/fiscal-integration-for-retail-channel#fiscal-registration-health-check).
+   - Activate health check – For more information about the Health Check feature, see [Fiscal registration health check](./fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
 
 ## Development environment
 
@@ -232,7 +232,7 @@ Follow these steps to create deployable packages that contain Commerce component
     ```
 
 3. Start the MSBuild Command Prompt for Visual Studio utility and run **msbuild** under the Retail SDK folder to create deployable packages.
-4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-packaging).
+4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ## Enable digital signature in offline mode for Modern POS
 
