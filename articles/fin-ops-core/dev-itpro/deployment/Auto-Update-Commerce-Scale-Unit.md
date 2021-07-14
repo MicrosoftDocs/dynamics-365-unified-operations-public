@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Auto-update Commerce Scale Unit (cloud)
+title: Auto-update for Commerce Scale Unit (cloud)
 description: This topic describes auto-updates for Commerce Scale Unit (cloud).
 author: AamirAllaq
 manager: tonyafehr
@@ -27,15 +27,13 @@ ms.search.validFrom: 2020-07-13
 ms.dyn365.ops.version: 8.0 
 ---
 
-# Auto-update Commerce Scale Unit (cloud)
+# Auto-update for Commerce Scale Unit (cloud)
 [!include[banner](../includes/banner.md)]
 
-> [!NOTE]
-> Auto-update Commerce Scale Unit (cloud) is currently in private preview. To enroll in this program, send a request to CSUAutoUpdate@microsoft.com. 
 
 This feature currently applies to cloud-hosted Commerce Scale Unit. Self-hosted Commerce Scale Unit is not included and must be self-updated.
 
-Auto-update for Commerce Scale Unit enables [One Version](../lifecycle-services/oneversion-overview.md) auto-update. All existing One Version processes, policies, and schedules apply to Auto-update Commerce Scale Unit.
+Auto-update for Commerce Scale Unit enables [One Version](../lifecycle-services/oneversion-overview.md) auto-update. All existing One Version processes, policies, and schedules apply to Auto-update for Commerce Scale Unit.
 
 ## Private preview limitations
 The following limitations currently exist for private preview:
@@ -61,7 +59,7 @@ Updates to components hosted in the cloud will continue to preserve backward com
 ## Updating in-store components
 You can choose to update self-hosted components manually at each store or use mass update tools such as Microsoft System Center Configuration Manager or Microsoft Intune.
 
-With Commerce Scale Unit auto-update, updates to in-store components can still be rolled-out in phases. The following controls are available to achieve this:
+With auto-update for Commerce Scale Unit , updates to in-store components can still be rolled-out in phases. The following controls are available to achieve this:
 
 - **Screen layout designer** – Most visual elements in POS are configured and centrally managed by an administrative user in the customer organization. This means that new POS operations will not automatically be displayed on POS unless explicitly configured for inclusion in corresponding screen layouts. Screen layouts are configured using Screen layout designer and can be specific to a store or POS device. For more information, see [POS user interface visual configurations](../../../commerce/pos-screen-layouts.md).
 - **Functionality profiles, POS permissions, Commerce parameters** – Many elements of POS functionality are typically configurable by the user. This can be configured through functionality profiles, POS permissions, Commerce parameters, or other controls which allow for device, register, store, or user-level functionality control in applicable scenarios.
