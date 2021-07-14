@@ -56,9 +56,9 @@ Before creating leave plans for your workers, you need to create leave and absen
 
 Your employees can submit time off requests, and you can manage them, in the **Employee self service** workspace.
 
-[Request time off](hr-employee-self-service-request-time-off.md)</br>
-[Manage leave and absence requests](hr-employee-self-service-manage-requests.md)</br>
-[Configure absence manager role](hr-configure-absence-manager.md)</br>
+- [Request time off](hr-employee-self-service-request-time-off.md)</br>
+- [Manage leave and absence requests](hr-employee-self-service-manage-requests.md)</br>
+- [Configure absence manager role](hr-configure-absence-manager.md)</br>
 
 
 
