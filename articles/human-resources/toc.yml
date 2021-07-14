@@ -691,6 +691,8 @@
         href: hr-compensation-define-process.md
       - name: Process compensation plans
         href: hr-compensation-process.md
+      - name: Mark an employee as ready to pay
+        href: hr-compensation-payroll.md
     - name: Manage benefits
       items:
       - name: Benefits management
