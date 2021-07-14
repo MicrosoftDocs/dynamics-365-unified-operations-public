@@ -52,16 +52,17 @@ The following image shows an example of a gift card module on a checkout page.
 
 - **Show additional fields** – This property defines what fields should be displayed for gift cards in addition to the gift card number, which is always displayed by default. For example, some gift cards support displaying a personal identification number (PIN), and others support displaying a PIN and expiration date. Alternatively, this property could be set to "None", which would only display the gift card number and no additional fields.
 
-    Supported values:
-    -	PIN
-    -	Expiration date
-    -	PIN and expiration date 
-    -	None
+    The following values are supported:
 
-- **Enable for guest users** - When enabled, this property allows guest users to redeem or check balances on gift cards. This property requires anonymous (guest) access for gift cards to be enabled in Commerce headquarters. For more information, see [Enable gift card payments for guest checkout](#enable-gift-card-payments-for-guest-checkout).
+    - PIN
+    - Expiration date
+    - PIN and expiration date 
+    - None
+
+- **Enable for guest users** – When this property is enabled, guest users can redeem or check balances on gift cards. This property requires that anonymous (guest) access for gift cards be enabled in Commerce headquarters. For more information, see [Enable gift card payments for guest checkout](#enable-gift-card-payments-for-guest-checkout).
 
 > [!IMPORTANT]
-> The **Enable for guest users** property is available as of the Commerce version 10.0.21 release and requires Commerce module library package version 9.31 to be installed.
+> The **Enable for guest users** property is available as of the Commerce version 10.0.21 release. It requires that Commerce module library package version 9.31 be installed.
 
 ## Site settings for gift card modules
 
