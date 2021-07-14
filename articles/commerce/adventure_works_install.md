@@ -36,7 +36,7 @@ This topic gives an overview of how to install the Adventure works theme.
 > The Adventure Works theme and the new modules are available as of the Dynamics 365 Commerce version 10.0.20 release. THis theme is available via Marketplace (Appsource).
 
 ## Prerequisites
-Before installing Adventure works theme, its required to have a Dynamics 365 Commerce environment installed. This includes RCSU, SDK and Module Library. Adventure works is supported on a minimum of 10.0.20 version of RCSU, SDK and Module Library. Refer to [Module Library and SDK updates](sdk-updates.md) for installation instructions. 
+Before installing Adventure works theme, its required to have a Dynamics 365 Commerce environment installed. This includes RCSU, SDK and Module Library. Adventure works is supported on a minimum of 10.0.20 version of RCSU, SDK and Module Library. Refer to [Module Library and SDK updates](sdk-updates.md) for installing SDK and Module Library. 
 
 ## Installation steps
 
