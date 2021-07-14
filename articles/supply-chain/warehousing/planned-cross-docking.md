@@ -120,6 +120,9 @@ Planned cross-docking is implemented as a load posting method. After you turn on
     - **Sequence number:** *1*
     - **Supply source:** *Purchase order*
 
+> [!NOTE]
+> You can set up a query to control when a particular cross docking template is used. The query for the cross docking template has only *InventTable* (items) and inner joined *WHSInventTable* (WHS items). When adding other tables to the query, they can only be joined as exist joins or not exist joins and filtering on then retrieves a record from the main table for each matching record in the joined table. When the join type is exist join, the search ends after the first match has been found. For example, the sales order line is joined to the items table, which means that the system will validate and return items for which at least one sales order line exists with the defined condition that essentially fetches the data from the parent (items) table and not from the child (sales order line) table. Therefore, filtering by source documents like sales order line or customer is not possible out-of-the-box. 
+
 ### Create a work class
 
 1. Go to **Warehouse management \> Setup \> Work \> Work classes**.
@@ -154,6 +157,8 @@ Planned cross-docking is implemented as a load posting method. After you turn on
     - **Work class ID:** *CrossDock*
 
 1. Select **Save**, and confirm that the **Valid** check box is selected for the *51 Cross Dock* template.
+1. Optional: Select **Edit query** to set the criteria that will apply to a particular work template. 
+    You can set up a query to control when a particular work template is used. For example, you can set a limitation so that a particular template can be used for work only in a specific location. If you want the created work template for the cross docking to be applied on the location, you should set the filter to the Start location and not to the Location. Because for the inbound processes (purchase, cross docking, replenishment) the work creation starts from the put line and at the time of work creation, the location directive populates location with the put location. However, the pick location will be written on the start location.
 
 > [!NOTE]
 > The work class IDs for the *Pick* and *Put* work types must be the same.
