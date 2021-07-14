@@ -30,12 +30,14 @@ ms.dyn365.ops.version: 8.0
 # Auto-update for Commerce Scale Unit (cloud)
 [!include[banner](../includes/banner.md)]
 
->[Note]
-> Auto-update for Commerce Scale Unit is being incrementally rolled-out to customers and planned for completion by end of CY2021.
 
 This feature currently applies to cloud-hosted Commerce Scale Unit. Self-hosted Commerce Scale Unit is not included and must be self-updated.
 
 Auto-update for Commerce Scale Unit enables [One Version](../lifecycle-services/oneversion-overview.md) auto-update. All existing One Version processes, policies, and schedules apply to Auto-update for Commerce Scale Unit.
+
+
+>[!Note]
+> Auto-update for Commerce Scale Unit is being incrementally rolled-out to customers and planned for completion by end of CY2021.
 
 ## Limitations
 The following limitations currently exist and are planned to be resolved in upcoming updates:
