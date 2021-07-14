@@ -255,6 +255,8 @@
       href: hr-admin-go-live-prepare.md
     - name: Go-live FAQ
       href: hr-admin-go-live-faq.md
+    - name: Human Resources infrastructure merge FAQ
+      href: hr-infrastructure-merge-faq.md
     - name: Documentation resources
       items:
       - name: Help system
@@ -691,6 +693,8 @@
         href: hr-compensation-define-process.md
       - name: Process compensation plans
         href: hr-compensation-process.md
+      - name: Mark an employee as ready to pay
+        href: hr-compensation-payroll.md
     - name: Manage benefits
       items:
       - name: Benefits management
