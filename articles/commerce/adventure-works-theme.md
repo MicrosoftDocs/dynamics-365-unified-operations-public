@@ -82,6 +82,15 @@ Likewise, other modules include module definition extensions. For example, the [
 
 For more information about theme extensions, see [Theme extensions](e-commerce-extensibility/theme-module-extensions.md).
 
+## Trial environments on Commerce
+If you want to see the Adventure works site you can do this by requesting a trial [Dynamics 365 Commerce Trial environment](https://dynamics.microsoft.com/en-us/commerce/overview/). 
+
+You can also use the following links to directly access the trial sites and learn more about the capabilities offered in this theme. 
+
+- **[Adventure Works B2C site](https://www.adventure-works.com/)**
+- **[Adventure Works Business site](https://www.adventure-works.com/business)**
+
+
 ## Installing the theme
 
 To install Adventure works theme, please refer to [Installing Adventure Works theme](adventureworks_install.md)
