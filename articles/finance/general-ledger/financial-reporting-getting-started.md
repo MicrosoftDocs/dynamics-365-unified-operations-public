@@ -163,7 +163,7 @@ Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
 Issue 2: The user hasn't been assigned the required permissions to use Financial Reporting. 
 
 * To verify if the user does not have permission, select **Yes** on the error, “Unable to connect to the Financial Reporting server. Select Yes if you want to continue and specify a different server address.” Then select **Test Connection**. If you don't have permission, you will see a message that says, "Connection attempt failed. User does not have appropriate permissions to connect to the server. Contact your system administrator.”
-* Required permissions are listed above in [Granting security access to Financial eporting](#granting-security-access-to-financial-reporting). Security in Financial reporting is based on these privileges. You won't have access unless these privileges (or another security role that includes these privileges) are assigned to you. 
+* Required permissions are listed above in [Granting security access to Financial reporting](#granting-security-access-to-financial-reporting). Security in Financial reporting is based on these privileges. You won't have access unless these privileges (or another security role that includes these privileges) are assigned to you. 
 * The **Company Users Provider to Company** integration task (which is also responsible for and known as user integration) runs on a 5-minute interval. It may take up to 10 minutes for any permission changes to take effect in Financial Reporting. 
   If another user can open Report Designer, select **Tools**, and then select **Integration Status**. Verify that the integration map, "Company Users Provider to Company," has run successfully because you were assigned permission to use Financial Reporting. 
 * It may be possible that another error has prevented **Dynamics user to Financial Reporting user integration** from finishing. Or it's possible that a datamart reset has been initiated and not yet completed, or that another system error has occurred. Try running the process again later. If the problem persists, contact your system admin.
@@ -175,7 +175,7 @@ Issue 3: You can proceed past the ClickOnce Report Designer sign-in page, but ar
 
 ## Use Event viewer to troubleshoot report designer issues.
 
-You can use the Event veiwer to analyze some issues that arise when using Financial reporting. 
+You can use the Event viewer to analyze some issues that arise when using Financial reporting. 
 
 ### What happens when you have connections issues with Financial reporting? 
 
