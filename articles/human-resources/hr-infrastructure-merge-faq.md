@@ -55,7 +55,7 @@ The capabilities and investments that have been made in Dynamics 365 Human Resou
 
 ### Will I lose any features or capabilities that I currently use?
 
-There will be functional parity between Dynamics 365 Human Resources and the HR module in Finance and Operations apps. Dynamics 365 Human Resources will take precedence for like features. For more information, see [Feature management overview](/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+There will be functional parity between Dynamics 365 Human Resources and the HR module in Finance and Operations apps. Dynamics 365 Human Resources will take precedence for like features. For more information, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Will the experience change for my users?
 
@@ -77,7 +77,7 @@ If your organization uses both Dynamics 365 Human Resources and other Finance an
 
 ### My organization uses Dynamics 365 Human Resources in Dynamics 365 Finance, Supply Chain Management, Commerce, or Project Operations. What do we have to plan for to migrate to the new experience?
 
-For organizations that are using the HR module in Finance and Operations apps, the new feature functionality from Dynamics 365 Human Resources will be applied to your environment through the standard One Version update process. You can expect to see the new functionality in your environment as it becomes available in each update. You can use Feature management to turn on new features. However, you should plan to validate those features. Follow the processes that you have in place for validating other updates to your environment. For more information about how updates are applied to Finance and Operations apps, see [One Version overview](/fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
+For organizations that are using the HR module in Finance and Operations apps, the new feature functionality from Dynamics 365 Human Resources will be applied to your environment through the standard One Version update process. You can expect to see the new functionality in your environment as it becomes available in each update. You can use Feature management to turn on new features. However, you should plan to validate those features. Follow the processes that you have in place for validating other updates to your environment. For more information about how updates are applied to Finance and Operations apps, see [One Version overview](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
 
 ### When will my organization be migrated?
 
