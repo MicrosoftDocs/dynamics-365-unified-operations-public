@@ -1334,9 +1334,9 @@
         items:
         - name: Commerce localization for Russia
           href: localizations/rus-commerce-localization.md
-        - name: Set up Commerce localization for  Russia
+        - name: Set up Commerce localization for Russia
           href: localizations/rus-commerce-setup.md
-        - name: Prepayments in Retail for Russia
+        - name: Prepayments in Commerce for Russia
           href: localizations/rus-commerce-prepayments.md          
       - name: Sweden
         items:
