@@ -1,4 +1,6 @@
-﻿The objective of this article is to guide you through the creation of a new Electronic invoicing feature, applicable in the scenario where the country's configurable Electronic invoicing feature is not provided out-of-box, and it is possible to use the Invoice model configuration provided out-of-box as is, leveraging the existing invoice mapping for the feature you want to create.
+# How to create a new Electronic invoicing feature
+
+The objective of this article is to guide you through the creation of a new Electronic invoicing feature, applicable in the scenario where the country's configurable Electronic invoicing feature is not provided out-of-box, and it is possible to use the Invoice model configuration provided out-of-box as is, leveraging the existing invoice mapping for the feature you want to create.
 
 ## Creating new file format configurations derived from existing Invoice model
 
@@ -34,65 +36,13 @@ The process begins at the **Electronic reporting** module, creating a new file f
 
 15. Select **Designer** and using the Format designer tool, configure the file layout and meet the specification requirements.
 
-After finishing the file format configuration, you can test your configuration running it in Finance or Supply Chain Management to make sure it contains all necessary data and meets the layout specifications.
+17. On **Versions** tab, select **Change status** to **Complete**.
 
-1.  Select the format configuration you are working on.
-
-2.  On **Versions** field group, select the **Exchange**, and then select **Export as XML file**.
-
-3.  Save the file.
-
-4.  Sign in to your Finance or Supply Chain Management and verify if you are in the correct legal entity.
-
-5.  In the **Electronic reporting** workspace, select **Repositories** from **Microsoft** Configuration provider.
-
-6.  Select **Global**, then select **Open**.
-
-7.  On the left panel, select and import **Invoice model** configuration. Except for Brazil, where you must import the **Fiscal documents** model configuration instead.
-
-8.  Close the page.
-
-9.  Close the page.
-
-10. In the **Electronic reporting** workspace, make sure that your company is **Active** as Configuration provider.
-
-11. Select **Reporting configurations** tile.
-
-12. On **Versions** field group, select the **Exchange**, and then select **Load from XML file**.
-
-13. Select the file name and select **OK**.
-
-14. Select the format configuration you are working on.
-
-15. Select **Run.**
-
-16. Expand **Records to include** tab and select **Filter.**
-
-17. Select **Add** or **Remove** to build the selection criteria.
-
-18. Select **OK.**
-
-19. Select **OK.**
-
-20. Save and inspect the file.
-
-If, after the validation in Finance and Supply Chain Management, the file format configuration is working properly, return to RCS and set the format configuration to Complete.
-
-1.  In RCS, in the **Electronic reporting** workspace, select **Reporting configurations** tile.
-
-2.  Select the format configuration you are working on.
-
-3.  On **Versions** tab, select **Change status** to **Complete**.
+18. On **Versions** tab, select **Change status** to **Share** for publishing in the Global repository.
 
 To allow the service consuming the format configuration, it needs to be shared with the Microsoft domain.
 
 1.  In RCS, select the format configuration you are working on.
-
-<!-- -->
-
-4.  On **Versions** tab, select **Change status** to **Share** for publishing in the Global repository.
-
-<!-- -->
 
 2.  With the format configuration with status **Shared,** on **Versions** tab, select **Advanced sharing**, and then select **Global repository.**
 
