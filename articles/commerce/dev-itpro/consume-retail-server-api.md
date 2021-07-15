@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Consume Retail Server APIs in external applications
-description: This topic describes how to consume the Retail Server APIs in external applications.
+title: Consume Headless Commerce APIs in external applications
+description: This topic describes how to consume the Headless Commerce APIs in external applications.
 author: mugunthanm
 ms.date: 03/02/2021
 ms.topic: article
@@ -27,22 +27,22 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Consume Retail Server APIs in external applications
+# Consume Headless Commerce APIs in external applications
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to consume the Retail Server APIs in external applications. Retail Server exposes the Open Data Protocol (OData) web endpoint so that external applications can consume the APIs. Retail Server also hosts the Commerce runtime (CRT) business logic and exposes it as OData endpoints. These endpoints are known as the Retail Server APIs.
+This topic describes how to consume the Headless Commerce APIs in external applications. Headless Commerce exposes the Open Data Protocol (OData) web endpoint so that external applications can consume the APIs. Headless Commerce hosts the Commerce runtime (CRT) business logic and exposes it as OData endpoints. These endpoints are known as the Headless Commerce APIs.
 
-External applications can consume the OData service through HTTPS. Retail Server provides multiple options for consuming the APIs:
+External applications can consume the OData service through HTTPS. Headless Commerce provides multiple options for consuming the APIs:
 
-- **Retail server proxy** – A strongly typed way to consume the APIs. There are multiple types of proxies that are exposed for different application types:
+- **Headless Commerce proxy** – A strongly typed way to consume the APIs. There are multiple types of proxies that are exposed for different application types:
 
     - **C\# proxy** – Server-side and native applications can consume the C\# binary (class library) to access the APIs and other entities.
     - **TypeScript proxy** – Client applications can consume the .ts proxy file to access the APIs and other entities.
 
-- **OData client** – The APIs can also be consumed from OData clients, from Postman, or by generating an HTTPS request to the Retail Server URL.
+- **OData client** – The APIs can also be consumed from OData clients, from Postman, or by generating an HTTPS request to the Headless Commerce URL.
 
-To browse the metadata, open the Retail Server URL in the following format in a web browser. The result is a list of all the Retail Server APIs, and input and output parameters.
+To browse the metadata, open the Headless Commerce URL in the following format in a web browser. The result is a list of all the Headless Commerce APIs, and input and output parameters.
 
 ```rest
 https://RS-URL/Commerce/$metadata
@@ -68,7 +68,7 @@ For more information about authentication flows, see [Dynamics 365 Commerce auth
 
 ## Register the application in Azure App registration
 
-### App registration for the Retail Server
+### App registration for the Headless Commerce
 
 Application registration establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: your app trusts the Microsoft identity platform, not the other way around. Follow these steps to create the app registration.
 
@@ -99,20 +99,20 @@ When registration is completed, the Azure portal shows the **Overview** pane for
 
 The client secret is also known as an *application password*. It's a string value that your app can use instead of a certificate to identity itself.
 
-1. In the Azure portal, in **App registrations**, select your application (App registered for the Retail server).
+1. In the Azure portal, in **App registrations**, select your application (App registered for the Headless Commerce).
 2. Select **Certificates & secrets** &gt; **New client secret**.
 3. Add a description for your client secret.
 4. Select a duration.
 5. Select **Add**.
 6. Be sure to record the secret's value so that you can use it in your client application code. **The secret's value is never displayed again after you leave this page.**
 
-## Register the app in the Finance and Operations app so that Retail Server trusts it
+## Register the app in the Finance and Operations app so that Headless Commerce trusts it
 
 1. In Commerce Headquarters, go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
 2. On the **Identity providers** FastTab, select the provider that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are set based on your selection.
-3. On the **Relying parties** FastTab, select **Add**. Enter the client ID that was generated during the Retail server app registration in Azure. Set the **Type** field to **Confidential** and the **UserType** field to **Application**.
+3. On the **Relying parties** FastTab, select **Add**. Enter the client ID that was generated during the Headless Commerce app registration in Azure. Set the **Type** field to **Confidential** and the **UserType** field to **Application**.
 4. On the Action Pane, select **Save**.
-5. Select the new relying party, and then on the **Server resource IDs** FastTab, select **Add**. In the **Server Resource ID** column, enter the Application ID URI (this is the API URI generated during the Retail Server app registration).
+5. Select the new relying party, and then on the **Server resource IDs** FastTab, select **Add**. In the **Server Resource ID** column, enter the Application ID URI (this is the API URI generated during the Headless Commerce app registration).
 6. On the Action Pane, select **Save**.
 7. Go to **Retail and commerce** &gt; **Retail and commerce IT** &gt; **Distribution Schedule**, and run Commerce Data Exchange (CDX) job **1110**.
 
@@ -144,11 +144,11 @@ For the full list of APIs, see [Commerce Scale Unit customer and consumer APIs](
     | Key            | Value                                                              |
     |----------------|--------------------------------------------------------------------|
     | grant\_type    | **client\_credentials**                                            |
-    | client\_id     | The client ID that was generated during Azure Retail Server app registration.     |
-    | client\_secret | The client secret that was generated during Azure Retail Server app registration. |
-    | resource       | Enter the Application ID URI (this is the API URI generated during the Retail Server app registration).       |
+    | client\_id     | The client ID that was generated during Azure Headless Commerce app registration.     |
+    | client\_secret | The client secret that was generated during Azure Headless Commerce app registration. |
+    | resource       | Enter the Application ID URI (this is the API URI generated during the Headless Commerce app registration).       |
 
-2. After the request has finished running, the **access\_token** value will be generated in the response body. Copy this token value. You will use it to connect to the Retail Server.
+2. After the request has finished running, the **access\_token** value will be generated in the response body. Copy this token value. You will use it to connect to the Headless Commerce.
 
 ### Get order history by using Postman
 
@@ -157,7 +157,7 @@ For the full list of APIs, see [Commerce Scale Unit customer and consumer APIs](
     **Request URL**
 
     ```rest
-    <https://Retail>serverurl/Commerce/Customers('2001')/GetOrderHistory
+    <https://HeadlessCommerce>serverurl/Commerce/Customers('2001')/GetOrderHistory
     ```
 
     > [!NOTE]
@@ -182,18 +182,18 @@ For the full list of APIs, see [Commerce Scale Unit customer and consumer APIs](
 
 After the request has finished running, the response body will contain the customer order history.
 
-## Access the Retail Server APIs by using a console application
+## Access the Headless Commerce APIs by using a console application
 
 1. Use Visual Studio 2017 to create a console application.
 2. In the **app.config** file, include the following configuration.
 
     ```xml
     <appSettings>
-        <add key="aadClientId" value="client id generated during Retail server app registration in Azure" />
-        <add key="aadClientSecret" value="client secret generated during Retail server app registration in Azure" />
+        <add key="aadClientId" value="client id generated during Headless Commerce app registration in Azure" />
+        <add key="aadClientSecret" value="client secret generated during Headless Commerce app registration in Azure" />
         <add key="aadAuthority" value="https://sts.windows.net/tenant id/" />
-        <add key="retailServerUrl" value="https://RetailserverURL/Commerce" /> 
-        <add key="resource" value="api://2fxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /> <!-- //Application ID URI generated during the Retail Server app registration -->
+        <add key="headlessCommerceUrl" value="https://RetailserverURL/Commerce" /> 
+        <add key="resource" value="api://2fxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /> <!-- //Application ID URI generated during the Headless Commerce app registration -->
         <add key="operatingUnitNumber" value="OUN value" />
     </appSettings>
     ```
@@ -203,16 +203,18 @@ After the request has finished running, the response body will contain the custo
 1. Use the NuGet package manager for the project to add the following NuGet packages.
 
     + Microsoft.IdentityModel.Clients.ActiveDirectory
-    + Microsoft.Dynamics.Commerce.RetailProxy
+    + Microsoft.Dynamics.Commerce.Proxy.ScaleUnit
 
-    The **Microsoft.Dynamics.Commerce.RetailProxy** NuGet package can be added from the **RetailSDK\\pkgs** folder. In the NuGet manager, add a local repository for the **RetailSDK\\pkgs** folder.
+**Microsoft.Dynamics.Commerce.Proxy.ScaleUnit** will work only in online mode, connected to Headless Commerce, for POS offline use the Headless commerce APIs.
+
+If you are using the Retail SDK version 10.0.21 or lower use the **Microsoft.Dynamics.Commerce.RetailProxy** NuGet package from the **RetailSDK\\pkgs** folder to consume the co troller classes, in the NuGet manager, add a local repository for the **RetailSDK\\pkgs** folder.
 
 2. In the **Program.cs** file, add the following variables.
 
     ```C#
     private static string clientId;
     private static string clientSecret;
-    private static Uri retailServerUrl;
+    private static Uri headlessCommerceUrl;
     private static string resource;
     private static string operatingUnitNumber;
     private static Uri authority;
@@ -226,7 +228,7 @@ After the request has finished running, the response body will contain the custo
         clientId = ConfigurationManager.AppSettings["aadClientId"];
         clientSecret = ConfigurationManager.AppSettings["aadClientSecret"];
         authority = new Uri(ConfigurationManager.AppSettings["aadAuthority"]);
-        retailServerUrl = new Uri(ConfigurationManager.AppSettings["retailServerUrl"]);
+        headlessCommerceUrl = new Uri(ConfigurationManager.AppSettings["HeadlessCommerceUrl"]);
         operatingUnitNumber = ConfigurationManager.AppSettings["operatingUnitNumber"];
         resource = ConfigurationManager.AppSettings["resource"];
     }
@@ -242,7 +244,7 @@ After the request has finished running, the response body will contain the custo
         authResult = await authenticationContext.AcquireTokenAsync(resource, new ClientCredential(clientId, clientSecret));
 
         ClientCredentialsToken clientCredentialsToken = new ClientCredentialsToken(authResult.AccessToken);
-        RetailServerContext retailServerContext = RetailServerContext.Create(retailServerUrl, operatingUnitNumber, clientCredentialsToken);
+        RetailServerContext retailServerContext = RetailServerContext.Create(headlessCommerceUrl, operatingUnitNumber, clientCredentialsToken);
         ManagerFactory factory = ManagerFactory.Create(retailServerContext);
         return  factory;
     }
@@ -275,5 +277,90 @@ After the request has finished running, the response body will contain the custo
     }
     ```
 
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]Url" value=https://RetailserverURL/Commerce /> 
+        <add key="resource" value="api://2fxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /> <!-- //Application ID URI generated during the Headless Commerce app registration -->
+        <add key="operatingUnitNumber" value="OUN value" />
+    </appSettings>
+    ```
+
+### Update the configuration settings with actual values
+
+1. Use the NuGet package manager for the project to add the following NuGet packages.
+
+    + Microsoft.IdentityModel.Clients.ActiveDirectory
+    + Microsoft.Dynamics.Commerce.Proxy.ScaleUnit
+
+**Microsoft.Dynamics.Commerce.Proxy.ScaleUnit** will work only in online mode, connected to Headless Commerce, for POS offline use the Headless commerce APIs library directly. 
+
+If you are using the Retail SDK version 10.0.21 or lower use the **Microsoft.Dynamics.Commerce.RetailProxy** NuGet package from the **RetailSDK\\pkgs** folder to consume the co troller classes, in the NuGet manager, add a local repository for the **RetailSDK\\pkgs** folder.
+
+2. In the **Program.cs** file, add the following variables.
+
+    ```C#
+    private static string clientId;
+    private static string clientSecret;
+    private static Uri headlessCommerceUrl;
+    private static string resource;
+    private static string operatingUnitNumber;
+    private static Uri authority;
+    ```
+
+3. In the **Program.cs** file, add the **GetConfiguration** method to read the app settings.
+
+    ```C#
+    private static void GetConfiguration()
+    {
+        clientId = ConfigurationManager.AppSettings["aadClientId"];
+        clientSecret = ConfigurationManager.AppSettings["aadClientSecret"];
+        authority = new Uri(ConfigurationManager.AppSettings["aadAuthority"]);
+        headlessCommerceUrl = new Uri(ConfigurationManager.AppSettings["HeadlessCommerceUrl"]);
+        operatingUnitNumber = ConfigurationManager.AppSettings["operatingUnitNumber"];
+        resource = ConfigurationManager.AppSettings["resource"];
+    }
+    ```
+
+4. In the **Program.cs** file, add the **CreateManagerFactory** method to get the access token.
+
+    ```C#
+    private static async Task<ManagerFactory> CreateManagerFactory()
+    {
+        Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authenticationContext = new   Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext(authority.ToString(), false);
+        AuthenticationResult authResult = null;
+        authResult = await authenticationContext.AcquireTokenAsync(resource, new ClientCredential(clientId, clientSecret));
+
+        ClientCredentialsToken clientCredentialsToken = new ClientCredentialsToken(authResult.AccessToken);
+        RetailServerContext retailServerContext = RetailServerContext.Create(headlessCommerceUrl, operatingUnitNumber, clientCredentialsToken);
+        ManagerFactory factory = ManagerFactory.Create(retailServerContext);
+        return  factory;
+    }
+    ```
+
+5. Add the **GetOrderHistory** method to read the orders.
+
+    ```C#
+    private static async Task<Microsoft.Dynamics.Commerce.RetailProxy.PagedResult<SalesOrder>> GetOrderHistory(string customerId)
+    {
+        QueryResultSettings querySettings = new QueryResultSettings
+        {
+            Paging = new PagingInfo() { Top = 10, Skip = 10 }
+        };
+
+        ManagerFactory managerFactory = await CreateManagerFactory();
+        ICustomerManager customerManage = managerFactory.GetManager<ICustomerManager>();
+        return await customerManage.GetOrderHistory(customerId, querySettings);
+    }
+    ```
+
+6. In the **main** method, call the **GetOrderHistory** method to read the records.
+
+    ```C#
+    static void Main(string[] args)
+    {
+        GetConfiguration();
+        Microsoft.Dynamics.Commerce.RetailProxy.PagedResult<SalesOrder> orderHistory = Task.Run(async () => await GetOrderHistory("2001")).Result;
+        Console.WriteLine(orderHistory.Results.GetEnumerator().Current.Id);
+    }
+    ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
