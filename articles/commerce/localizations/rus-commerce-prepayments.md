@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Prepaymants in Retail for Russia
+title: Prepayments in Dynamics 365 Commerce for Russia
 description: This topic provides an overview of processing prepayment transactions in Microsoft Dynamics 365 Commerce for Russia.
 author: akviklis@microsoft.com
-ms.date: 06/28/2021
+ms.date: 07/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 #ms.search.scope: Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -25,25 +25,27 @@ ms.search.validFrom: 2021-6-28
 ms.dyn365.ops.version: 10.0.21
 
 ---
-# Prepayments in Retail for Russia
+# Prepayments in Dynamics 365 Commerce for Russia
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes how Microsoft Dynamics 365 Commerce processes prepayment transactions for the following payment types in Rusian Retail:
+This topic provides an overview of processing prepayment transactions in Microsoft Dynamics 365 Commerce for Russia.
 
-- **Customer account deposit payment** – A customer makes a prepayment at the Retail point of sale (POS). Microsoft Dynamics 365 Commerce processes the deposit payment as a prepayment transaction. When you post the transaction, a payment journal is posted in the Journal voucher form. The Prepayment journal voucher check box on the Payment tab in the Journal voucher form is automatically selected for the payment journal. For more information see [Prepayments management](../../finance/localizations/rus-prepayments-management.md).
+Dynamics 365 Commerce processes prepayment transactions for the following payment types in Russian retail:
 
-- **Customer order with deposit** – A customer provides a customer order at the Retail POS. The customer can deposit a payment for the order based on the default deposit percentage that you have set up in the Commerce parameters form. Microsoft Dynamics 365 Commerce processes the deposit payment for the customer order as a prepayment transaction. When you post the transaction, a customer payment journal is created and posted in the Journal voucher form. The Prepayment journal voucher check box on the Payment tab in the Journal voucher form is automatically selected for the payment journal. The payment is settled and the customer invoice is issued automatically when the order is picked up or delivered.
+- **Customer account deposit payment** – A customer makes a prepayment at the point of sale (POS) and Commerce processes the deposit payment as a prepayment transaction. When you post the transaction, a payment journal is created and posted in the **Journal voucher** form and the **Prepayment journal voucher** check box on the **Payment** tab is automatically selected for the payment journal. For more information, see [Prepayments management](../../finance/localizations/rus-prepayments-management.md).
 
-Microsoft Dynamics 365 Commerce for Russia performs the following tasks to process a prepayment:
+- **Customer order with deposit** – A customer creates a customer order at the POS. The customer can deposit a payment for the order based on the default deposit percentage that is configured in the **Commerce parameters** form. Commerce processes the deposit payment for the customer order as a prepayment transaction. When you post the transaction, a payment journal is created and posted in the **Journal voucher** form and the **Prepayment journal voucher** check box on the **Payment** tab is automatically selected for the payment journal. The payment is settled and the customer invoice is automatically issued when the order is picked up or delivered.
 
-- **Processes a customer account deposit payment** – The payment that the customer deposits, is transferred to Microsoft Dynamics 365 Commerce using a service that synchronizes data. Microsoft Dynamics 365 Commerce creates a retail payment transaction for the payment. When you post the retail transaction, a cash journal or customer payment journal is posted. The Prepayment journal voucher check box on the Payment tab in the Journal voucher form is automatically selected for the payment journal. You cannot process the prepayments if the payment amount is negative.
+Dynamics 365 Commerce for Russia performs the following tasks to process a prepayment:
 
-- **Processes a customer order with a deposit** – The customer makes a required deposit for a customer order using the Real-time service. Whether Microsoft Dynamics 365 Commerce creates a customer payment journal or a cash journal depends on the method of payment that the customer uses. The Prepayment journal voucher check box on the Payment tab in the Journal voucher form is automatically selected for the journal. If the customer makes partial payments by using multiple methods of payment, Microsoft Dynamics 365 Commerce processes each partial payment by using the method of payment for that partial payment.
+- **Process a customer account deposit payment** – A payment that a customer deposits is transferred to Commerce using a service that synchronizes data and Commerce creates a retail payment transaction for the payment. When you post the retail transaction, a cash journal or customer payment journal is posted. The **Prepayment journal voucher** check box on the **Payment** tab of the **Journal voucher** form is automatically selected for the payment journal. Prepayments cannot be processed if the payment amount is negative.
 
-When you cancel a customer order, the prepayment amount is refunded and a refund payment journal is posted for the deposit amount. The refund amount is calculated and posted based on the method of payment that you specify when you post the refund payment. Microsoft Dynamics 365 Commerce may apply a cancellation charge based on the percentage that you set in the Commerce parameters form.
+- **Process a customer order with a deposit** – A customer makes a required deposit for a customer order using the Commerce Data Exchange: Real-time Service. Whether Commerce creates a customer payment journal or a cash journal depends on the method of payment that the customer uses. The **Prepayment journal voucher** check box on the **Payment** tab of the **Journal voucher** form is automatically selected for the journal. If a customer makes partial payments by using multiple methods of payment, Commerce processes each partial payment by using the method of payment for that partial payment.
 
-When you return a customer order, a return order and a refund payment journal are created. When you post the return order, Microsoft Dynamics 365 Commerce creates a customer payment journal or a cash journal. The type of journal that is created depends on the method of payment that is used by the customer for the original transaction.
+When you cancel a customer order, the prepayment amount is refunded and a refund payment journal is posted for the deposit amount. The refund amount is calculated and posted based on the method of payment that you specified when you posted the refund payment. Commerce may apply a cancellation charge based on the percentage that you set in the **Commerce parameters** form.
+
+When you return a customer order, a return order and a refund payment journal are created. When you post the return order, Commerce creates a customer payment journal or a cash journal. The type of journal that is created depends on the method of payment that is used by the customer for the original transaction.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
