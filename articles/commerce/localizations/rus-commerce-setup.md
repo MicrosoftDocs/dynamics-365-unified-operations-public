@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 This topic covers how to set up the Microsoft Dynamics 365 Commerce localization for Russia.
 
-The Dynamics 365 Commerce localization for Russia includes an extension of the point of sale (POS) component. This extension lets you use the **Enable Russian simplified customer address format** feature thst provides a possibility to enable the Russian address format in a simplified way for retail customers.
+The Dynamics 365 Commerce localization for Russia includes an extension of the point of sale (POS) component. This extension provides you a possibility to work with Russian address format in a simplified way for retail customers.
 
 For more information about the Commerce localization for Russia, see [Russian localization scope](../../finance/localizations/russia.md) and [Commerce localization for Russia](rus-commerce-localization.md).
 
@@ -45,9 +45,9 @@ To enable and use the Russia-specific functionality, you must configure the foll
 1. In the POS functionality profile of every store that is located in Russia, set the **ISO** field to **RU** (Russia).
 1. Go to **System administration \> Workspaces \> Feature management**, and then, on the **All** tab, enable the following feature keys:
 
-    - Enable Russian simplified customer address format
+    - Enable Russian simplified customer address format.
 
-## Enable Russia-specific Commerce functionality
+## Enable Russia-specific Commerce components
 
 This section provides deployment guidance that will help you enable Commerce components of the Commerce localization for Russia.
 	
