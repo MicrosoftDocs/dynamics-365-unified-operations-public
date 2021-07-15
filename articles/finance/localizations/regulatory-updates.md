@@ -3,8 +3,8 @@
 
 title: Regulatory updates
 description: This topic provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
-author: ShylaThompson
-ms.date: 02/04/2021
+author: VStamberg
+ms.date: 07/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,12 +46,12 @@ For the latest regulatory update plans, refer to the following table.
 |Country|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
 |      Australia         |   June 2021      | 10.0.21      |   AU - Payment Times Reporting Bill 2020 for Microsoft Dynamics 365 Finance   |
-|      Brazil         |   May 2021, Februaru 2021      | 10.0.20, 10.0.19      |   NF-e NT2020.006  - Identification of the digital platform intermediary (Layout and validation rules updates)   |
+|      Brazil         |   May 2021, February 2021      | 10.0.20, 10.0.19      |   NF-e NT2020.006  - Identification of the digital platform intermediary (Layout and validation rules updates)   |
 |      Brazil         |   March 2021         | 10.0.19         |    SPED REINF layout 1.5.1  |
 |      Brazil         |   April 2021         | 10.0.20        |    SPED ECD Layout 9  |
 |      Brazil         |   May 2021         | 10.0.20         |    SPED Contributions - Version Guide 1.34  |
 |      Brazil         |   June 2021         | 10.0.21         |    SPED ECF - Layout 7  |
-|      Brazil         |   May 2021         | 10.0.20         |    NF-e NT2020.005  v1.10 - Validation rules and updatesPED ECF - Layout 7  |
+|      Brazil         |   May 2021         | 10.0.20         |    NF-e NT2020.005  v1.10 - Validation rules and updates PED ECF - Layout 7  |
 |      Brazil         |   May 2021         | 10.0.21         |    SPED Reinf 1.5.1 - Changes in webservice method of EVENT 5011  |
 |      France        |   April 2021       | 10.0.20      |   French data archiving export (FEC) enhancement  |
 |      Germany        |   March 2021       | 10.0.19      |   GDPDU extensions for Fixed Assets table and transactions  |
