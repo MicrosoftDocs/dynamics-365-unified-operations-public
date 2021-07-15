@@ -81,19 +81,16 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
 
 - **Dashboard>**
 - Dashboard.Read.All
-- Dashboard.ReadWrite.All
 
 - **Dataset>**
 - Dataset.Read.All
 - Dataset.ReadWrite.All
 
 - **Report>**
-- Report.Read.All
-- Report.ReadWrite.All
+-   Report.Read.All
 
 - **Workspace>**
 - Workspace.Read.All
-- Workspae.ReadWrite.All
    
 9. Click **Add permissions**.
 
