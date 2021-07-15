@@ -39,7 +39,7 @@ The feature list includes the following information:
 - **Status** – A symbol indicates whether a feature has been enabled(check mark), hasn't been enabled (blank), is scheduled to be enabled (clock), is mandatorily enabled (lock), requires attention before you enable (warning), or can't be enabled (X). The setting that is shown is used for all legal entities. Note that even when a feature has been enabled on, it's still controlled by security. Therefore, the feature will be available only to users who have access to it, based on their security role. It will also be available only in legal entities that the user has access to.
 - **Enable date** – The date when the feature was enabled or is scheduled to be enabled.
 - **Feature added** – The date when the feature was added to your environment. This date is automatically entered when you update your environment during the monthly release cycles.
-- - **Feature state** – The current life cyle state of the feature: Preview, (blank), On by default and Mandatory. The states are covered in more details below. 
+- **Feature state** – The current life cyle state of the feature: Preview, (blank), On by default and Mandatory. The states are covered in more details below. 
 - **Module** – The module that is affected by the new feature.
 
 > [!NOTE]
@@ -74,13 +74,13 @@ Features that are updated to **On by default** are enabled by default, but can s
 
 ## Released features (Mandatory)
 
-This is the final state of for features and it means that they are enabled and cannot be disabled without contacting Microsoft. Optional feature are expected to become mandatory after two major releases. Critical features can exceptionally be introduced as mandatory. 
+This is the final state of for features and it means that they are enabled and cannot be disabled without contacting Microsoft. Optional feature are expected to become mandatory after two major releases. Critical features can by exception be introduced as mandatory. 
 
 ## Example of expected feature lifecycles
 
-Feature that can be disabled and were added as released and optional before or as part of the April release, are expected to move to On by default in the October release and to become Mandatory in April the following year.
+Feature that can be disabled and were added as released and optional before or as part of the April release, are expected to move to **On by default** in the October release and to become **Mandatory** in April the following year.
 
-Feature that cannot be disabled and were added as released and optional before or as part of the April release. are expected to become Mandatory in April the following year.
+Feature that cannot be disabled and were added as released and optional before or as part of the April release. are expected to become **Mandatory** in April the following year.
 
 ## Enable a feature
 
