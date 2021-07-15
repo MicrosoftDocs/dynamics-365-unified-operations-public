@@ -43,12 +43,16 @@ To enable and use the Russia-specific functionality, you must configure the foll
 1. In the POS functionality profile of every store that is located in Russia, set the **ISO** field to **RU** (Russia).
 1. Go to **System administration \> Workspaces \> Feature management**, and then, on the **All** tab, enable the following feature keys:
 
-    - (Russia) Customer information management in Retail POS
     - Enable Russian simplified customer address format
 
-## Customer information management
+## Set up micsellaniuos charges for customer order cancellations
 
-**(Russia) Customer information management in Retail POS** feature impacts the Retail POS functionality for Russia. It enables the inquiry of customer information (such as email address or phone number) in sales transactions.
+To set up charges that can be appiled to customer order cancellation operations, follow these steps.
+
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
+1. On the **Customer order** tab, in the **Cancellation charge percentage** field, specify the required value.
+1. Go to **Accounts receivable \> Charges setup \> Charges posting**.
+1. Set up accounts so that you can apply and post charges for a customer order cancellation. 
 
 ## Set up aggregation parameters for registering POS sales and return transactions
 You can set up the aggregation parameters that are used to aggregate the point of sale (POS) sales and return transactions when the transactions are registered in Microsoft Dynamics 365 Commerce. 
@@ -56,10 +60,8 @@ When you select the aggregation parameters, Microsoft Dynamics 365 Commerce aggr
 
 Use this procedure to set up the aggregation parameters that are used to aggregate POS sales and return transactions in Microsoft Dynamics 365 Commerce.
 
-1.  Click **Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce parameters**.
-
-1.  Click **Posting** tab, and then in the **Aggregation** field group, select the **Voucher transactions** check box to aggregate voucher transactions.
-
+1.  Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
+1.  Under the **Posting** tab, in the **Aggregation** field group, select the **Voucher transactions** check box to aggregate voucher transactions.
 1.  Select the **Sales and returns** check box to aggregate POS sales and return transactions.
     
     > [!NOTE]
@@ -68,6 +70,8 @@ Use this procedure to set up the aggregation parameters that are used to aggrega
 
 ## Additional resources
 
-[Commerce localization for Russia](rus-commerce-localization.md) 
+[Commerce home page](../index.md)
 
-[Prepaymants in Retail for Russia](rus-commerce-prepayments.md)
+[Russian localization scope](../../finance/localizations/russia.md)
+
+[Commerce localization for Russia](rus-commerce-localization.md)
