@@ -392,6 +392,8 @@
             href: deployment/on-premises-overview.md
           - name: Plan and prepare for on-premises deployments
             href: deployment/plan-onprem-deployment.md
+          - name: Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
+            href: deployment/onprem-compatibility.md
           - name: Hardware sizing requirements
             href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
           - name: Authentication in Dynamics 365 Finance + Operations (on-premises)
@@ -1604,6 +1606,8 @@
           href: migration-upgrade/upgrade-go-live-prep.md
         - name: AX 2012 upgrade - Go live
           href: migration-upgrade/2012-upgrade-cutover.md
+        - name: Upgrade from AX 2012 - Data upgrade FAQ
+          href: migration-upgrade/upgrade-faq.md
         - name: Changes that affect upgrade from AX 2012
           items:
           - name: Make the chart of accounts delimiter unique
