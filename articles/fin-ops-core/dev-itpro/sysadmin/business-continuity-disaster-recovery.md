@@ -17,10 +17,10 @@ ms.search.validFrom: 2021-07-31
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft provides business continuity and disaster recovery for production instances of Dynamics 365 software-as-a-service (SaaS) applications, in the event of an Azure region wide outage. This topic is going to cover...
+Microsoft provides business continuity and disaster recovery for production instances of Dynamics 365 software-as-a-service (SaaS) applications, in the event of an Azure region wide outage. 
 
 ## Dataverse and customer engagement apps 
-Customer engagement apps run on the Dataverse platform. Tenant admins can deploy a production instance of a Dynamics 365 customer engagement app and/or Dataverse with the purchase of appropriate licenses. For more information, see [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
+Customer engagement apps like  Dynamics 365 Sales, Customer Service, Field Service, Marketing and  Project Service Automation run on the Dataverse platform. Tenant admins can deploy a production instance of a Dynamics 365 customer engagement app and/or Dataverse with the purchase of appropriate licenses. For more information, see [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
 
 For production environments, a replica of the different storage services (Azure SQL and file storage) is established in the secondary region for each environment at the time of deployment. For more information, see [Environments](/power-platform/admin/environments-overview). These replicas are referred to as geo-secondary replicas. The geo-secondary replicas are kept synchronized with the primary instance through continuous data replication. There is a small replication latency or lag, typically less than a few minutes, between the primary data sources and their corresponding geo-secondary replicas. For more information, see [Ensure business continuity amd disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions).
 
@@ -33,7 +33,7 @@ To learn more about data protection in non-production environments, see [Back up
 ### Unplanned failover
 Dataverse is built for high availability and reliability, which ensures that in the event of underlying Azure platform issues, the platform automatically leverages resources in other zones within the same regions to ensure availability isn’t impacted. For more information about Azure availability zones, see [Regions and Availability Zones in Azure](/azure/availability-zones/az-overview).
 
-In the event of an unanticipated region wide outage, such as a natural disaster or a rare glitch in underlying Azure infastructure which affects the entire Azure region--and Microsoft determines the region will not become available within a reasonable amount of time--Microsoft will notify customers and switch over the traffic to route to the secondary instances. In this case, it possible that customers may experience a data loss of up to 15 minutes, depending on the nature and timing of the outage. 
+In the event of an unanticipated region wide outage, such as a natural disaster which affects the entire Azure region, and Microsoft determines that the region will not become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic to route to the secondary instances. In this case, it possible that customers may experience a data loss of up to 15 minutes, depending on the nature and timing of the outage. 
 
 ### Planned failover
 In the event that Microsoft determines there is a risk to the availability of the primary Azure region, for example if there is an impending hurricane, Microsoft will notify customers and switch over the traffic to route to the secondary replica instances. Users connected to customer engagement and Dataverse apps at the time of the failover will experience a brief disruption. There will be no data loss as both Azure regions are online and data is replicated fast enough on the secondary replica.
