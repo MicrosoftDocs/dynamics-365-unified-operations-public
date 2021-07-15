@@ -67,7 +67,7 @@ These features have **(blank)** as value for Feature state. Features initially a
 
 ## On by default features (Optional)
 
-Features that are updated to **On by default** are enabled by default, but can still be disabled. Released features that can be disabled are expected to move to this state in the major release that follows after the features have been in the released state for at least 6 months. Features that moved to **On by default** will be communicate in What's new (need link). The update is initiated by the owning product team.   
+Features that are updated to **On by default** are enabled by default, but can still be disabled. Released features, that can be disabled, are expected to move to this state in the major release that follows after they have been in the released state for at least 6 months. Features that moved to **On by default** will be communicate in What's new (need link). The update is initiated by the owning product team.   
 
 > [!NOTE]
 > Since these features will be enabled automatically, it is important to determine if your organization is ready to uptake these features or if more time is required. For the latter it will be required to at least temporarily disable applicable features.
