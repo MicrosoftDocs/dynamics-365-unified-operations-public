@@ -296,6 +296,7 @@ Users can access Finance + Operations by using the most recent versions of these
 
 > [!NOTE]
 > For optimal performance and an optimal experience, we recommend that you use the latest version of a modern browser, especially Microsoft Edge. 
+> 
 > **Update 10.0.21 and later**: Users on old versions of Microsoft Edge and Google Chrome (version 83 and lower) will see prompts to update their browser to the latest version. 
 
 ### Internal Explorer deprecation 
