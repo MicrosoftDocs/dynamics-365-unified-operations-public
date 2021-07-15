@@ -31,6 +31,8 @@ ms.dyn365.ops.version:
 
 This topic covers how to set up the Microsoft Dynamics 365 Commerce localization for Russia.
 
+The Dynamics 365 Commerce localization for Russia includes an extension of the point of sale (POS) component. This extension lets you use the **Enable Russian simplified customer address format** feature thst provides a possibility to enable the Russian address format in a simplified way for retail customers.
+
 For more information about the Commerce localization for Russia, see [Russian localization scope](../../finance/localizations/russia.md) and [Commerce localization for Russia](rus-commerce-localization.md).
 
 ## Enable Russia-specific Commerce functionality
@@ -44,6 +46,52 @@ To enable and use the Russia-specific functionality, you must configure the foll
 1. Go to **System administration \> Workspaces \> Feature management**, and then, on the **All** tab, enable the following feature keys:
 
     - Enable Russian simplified customer address format
+
+## Enable Russia-specific Commerce functionality
+
+This section provides deployment guidance that will help you enable Commerce components of the Commerce localization for Russia.
+	
+### Enable Modern POS extension components
+
+To enable Modern POS extension components, follow these steps.
+
+1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and make sure that it can be compiled without errors. Additionally, confirm that you can run Modern POS from Visual Studio by using the **Run** command.
+
+    > [!NOTE]
+    > Modern POS must not be customized. You must enable User Account Control (UAC), and you must uninstall previously installed instances of Modern POS as required.
+
+1. Enable the extensions to be loaded by adding the following lines in the **extensions.json** file.
+
+    ```json
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/Addresses.RU"
+            }
+        ]
+    }
+    ```
+
+    > [!NOTE]
+    > For more information, and for samples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file of the **Pos.Extensions** project.
+
+1. Rebuild the solution.
+1. Run Modern POS in the debugger, and test the functionality.
+
+### Enable Cloud POS extension components
+
+To enable the Cloud POS extension components to be loaded in the **extensions.json** file, add the following lines in the appropriate part of the file.
+
+```json
+{
+    "extensionPackages": [
+        {
+            "baseUrl": "Microsoft/Addresses.RU"
+        }
+    ]
+}
+```	
+	
 
 ## Set up micsellaniuos charges for customer order cancellations
 
