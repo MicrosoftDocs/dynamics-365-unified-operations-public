@@ -92,7 +92,6 @@ To enable the Cloud POS extension components to be loaded in the **extensions.js
 }
 ```	
 	
-
 ## Set up micsellaniuos charges for customer order cancellations
 
 To set up charges that can be appiled to customer order cancellation operations, follow these steps.
