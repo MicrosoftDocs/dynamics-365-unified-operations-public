@@ -67,13 +67,20 @@ These features have **(blank)** as value for Feature state. Features intially ad
 
 ## On by default features (Optional)
 
-Features that are updated to **On by default** are enabled by default, but can still be disabled. Released featureas are expected to move to this state in the major release that follows after 6 months in the released state. Features that moved to **On by default** will be communicate in What's new (need link) and it is important to determine if more time is required to 
+Features that are updated to **On by default** are enabled by default, but can still be disabled. Released featureas are expected to move to this state in the major release that follows after the features have been in the released state for at least 6 months. Features that moved to **On by default** will be communicate in What's new (need link). The update is initated by the owning product team.   
 
-The update is initated by the owning product team.     
+> [!NOTE]
+> Since these features will be enabled automatically, it is important to determine if your organization is ready to uptake these features or if more time is required. For the latter it will be required to at least temporarily disable these features.
 
 ## Released features (Mandatory)
 
-This is the final state of for features and it means that they are enabled and cannot be disabled. Optional feature are expected to become mandatory after two major releases. Critical features can exceptioanlly be introduced as mandatory. 
+This is the final state of for features and it means that they are enabled and cannot be disabled without contacting Microsoft. Optional feature are expected to become mandatory after two major releases. Critical features can exceptionally be introduced as mandatory. 
+
+## Example of expected feature lifecycles
+
+Feature that can be disabled and were added as released and optional before or as part of the April release, are expected to move to On by default in the October release and to become Mandatory in April the following year.
+
+Feature that cannot be disabled and were added as released and optional before or as part of the April release. are expected to become Mandatory in April the following year.
 
 ## Enable a feature
 
