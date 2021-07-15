@@ -181,15 +181,13 @@ You can use the Event viewer to analyze some issues that arise when using Financ
 
 Here are some steps you can take to make your conversation with support more effective and bring you to a quicker resolution. 
  
-In the following steps, we are going to walk you through how to enable event viewer messages for Financial reporting. These logs will allow support to quickly identify the source of the connection issue for you. 
- 
-Submit copies of these logs together with your ticket when contacting support.
+The following steps walk through the process of turning on Event viewer messages for Financial reporting. The logs that Event view generates will help support engineers to identify the source of the connection issue quickly. Submit copies of these logs together with your ticket when contacting support.
 
 > 1.	Copy the RegisterETW.zip to the client workstation (preferably the Desktop) and extract [RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster)
 
 > 2.	Make sure Windows Event viewer is closed.
 
-> 3.	Open an Administrator PowerShell command prompt and path (cd) to the directory where RegisterETW.ps1 is located.
+> 3.	Open an Administrator PowerShell command prompt and go to the directory where RegisterETW.ps1 is located.
 
 > 4.	Run the following command: .\RegisterETW.ps1
     A successful output in PowerShell will be verified with the message, **Competed RegisterETW script**.
@@ -209,15 +207,15 @@ Submit copies of these logs together with your ticket when contacting support.
 
 ## Troubleshoot issues connecting to Financial reporting
 
-Issue 1: You get this error message “Unable to Connect to the Financial reporting server”
+Issue 1: You receive the error message “Unable to Connect to the Financial reporting server.”
 
 * See if the issue occurs in Chrome and Edge internet browsers.
 * If the issue occurs only on one browser, it could be ClickOnce issue. 
 * When you get the connection error message, click **Test** to test the connection to see what message appears. 
-* The issue could be the result of another user not having access to Finance reporting. If a user doesn't have access, they'll receive a message stating they don't have the permission.
+* The issue could be the result of another user not having access to Financial reporting. If a user doesn't have access, they'll receive a message stating they don't have the permission.
 * If the issue occurs on multiple browsers, make sure the time clock on your workstation is set to Auto.
 * Work with a user that has security administrator's rights in Dynamics 365 Finance, and admin rights to the network domain, to log onto your workstation to see if they are able to connect. If they're able to connect, the issue is probably a network permissions issue.
-* On the workstation, temporarily disable the firewall. If you are then able to connect to Report Designer the issue is with your firewall. Work with your internal IT department to resolve the issue.
+* On the workstation, temporarily disable the firewall. If you are then able to connect to Report Designer the issue is with your firewall. Work with your organization's IT department to resolve the issue.
 
 ## Additional resources
 - [View financial reports](view-financial-reports.md)
