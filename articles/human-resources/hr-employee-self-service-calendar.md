@@ -45,6 +45,19 @@ You can view team and company calendars in Dynamics 365 Human Resources. Team ca
 
 Managers can also access the team calendar from **Pending time off requests from my team**, **Approved time off**, and **Time off requests**. 
 
+## View your absence manager calendar as the absence manager
+
+> [!NOTE]
+> To view the **Absence manager calendar**, you must first enable the **(Preview)Absence manager to manage leave** feature in Feature management. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).<br>
+
+From the Absence manager role, users are able to see time-off requests in calendar. Follow these steps to access the Leave calendar.
+
+1.  In the **Employee Self-Service** workspace, select **Absence manager** and then **Absence manager calendar**.
+
+3.  In the date box, enter the desired dates and update view options as necessary.
+
+4.  All the records for the employee's reporting to the absence manager in the leave hierarchy will show in **Absence manager calendar**.
+
 ## View a company calendar
 
 People who are in human resources roles can view company calendars. Company calendars display all employees. By default, the calendar displays today's date plus 28 days, but you can change the date range. You can also filter the calendar by **Name**, **Personnel number**, and **Leave type**.
