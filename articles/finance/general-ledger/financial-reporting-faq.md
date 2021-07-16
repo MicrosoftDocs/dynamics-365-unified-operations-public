@@ -85,7 +85,7 @@ The message indicates that an issue occurred when the system tried to retrieve f
 
 ## How does the selection of historical rate translation affect report performance?
 
-The historical rate is typically used with retained earnings, property, plant and equipment, and equity accounts. This might be required, based on guidelines of the Financial Accounting Standards Board (FASB) or generally accepted accounting principles (GAAP). For more information, see [Currency capabilities in financial reporting](financial-reporting-currency-capability.md).
+The historical rate is typically used with retained earnings, property, plant and equipment, and equity accounts. The historical rate might be required, based on guidelines of the Financial Accounting Standards Board (FASB) or generally accepted accounting principles (GAAP). For more information, see [Currency capabilities in financial reporting](financial-reporting-currency-capability.md).
 
 ## How many types of currency rate are there?
 
@@ -93,7 +93,7 @@ There are three types:
 
 - **Current rate** – This type is typically used with balance sheet accounts. It's usually known as the *spot exchange rate* and can be the rate on the last day of the month or another predetermined date.
 - **Average rate** – This type is typically used with income statement (profit/loss) accounts. You can set up the average rate to do either a simple average or a weighted average.
-- **Historical rate** – This type is typically used with retained earnings, property, plant and equipment, and equity accounts that might be required, based on FASB or GAAP guidelines.
+- **Historical rate** – This type is typically used with retained earnings, property, plant and equipment, and equity accounts. These accounts might be required, based on FASB or GAAP guidelines.
 
 ## How does historical currency translation work?
 
