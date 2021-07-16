@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure absence manager role
-description: This topic describes setting up the absence manager role for managing employees' leave.
+title: Configure the Absence manager role
+description: This topic explains how to set up the Absence manager role for management of employee leave.
 author: hasrivas
 ms.date: 07/14/2021
 ms.topic: article
@@ -27,108 +27,122 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Configure absence manager role
+# Configure the Absence manager role
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [preview feature](./includes/preview-feature.md)]
 
-In some organizations, a people manager might not be managing the leave for their team. Instead, an absence manager might handle this process for team members across multiple departments and teams. Absence managers will be able to manage leave with the following capabilities:
+In some organizations, people managers might not manage the leave for their team. Instead, an absence manager might handle this process for team members across multiple departments and teams. Absence managers have the following capabilities for leave management:
 
-- Review and approve time off based on an alternate hierarchy.
+- Review and approve time off, based on an alternate hierarchy.
 - View team member balances.
 - View the absence calendar.
 
+## Turn on the feature
 
-## Enable feature 
+1. In the **System administration** workspace, select **Feature management**.
 
-1.  In the **System administration** workspace, select **Feature management**.
+2. On the **Feature management** tab, enable the **(Preview) Absence manager to manage leave** feature.
 
-2.  From the **Feature management** tab, enable the **(Preview) Absence manager to manage leave** feature.
+## Define a custom hierarchy
 
-## Define new custom hierarchy
-The absence manager capability uses a custom hierarchy that needs to be configured.
+The absence manager functionality uses a custom hierarchy that must be configured.
 
-1.  In the **Organization administration** workspace, select **Position hierarchy types**.
+1. In the **Organization administration** workspace, select **Position hierarchy types**.
 
-2.  Create a new position hierarchy type named **Leave**.
+2. Create a position hierarchy type that is named **Leave**.
 
-3.  Go to **Leave and absence** workspace, under **Links**, select **Leave and Absence parameters**. In the **General** tab, select **Absence hierarchy** from the drop-down select the hierarchy type **Leave** created in the previous step. This leave hierarchy assoication needs to be completed for each leagal entity where the absence manager capability will be used. 
+3. In the **Leave and absence** workspace, under **Links**, select **Leave and Absence parameters**.
 
-Once the hierarchy type is defined then the position hierarchy report will be assigned to the position.
+4. On the **General** tab, select **Absence hierarchy** in the drop-down field select the **Leave** hierarchy type that you created earlier. This Leave hierarchy association must be completed for every legal entity where the absence manager functionality will be used.
 
-1.  In the **Organization Administration** workspace, select **All positions.**
+After the hierarchy type is defined, the position hierarchy report must be assigned to the position.
 
-2.  Select the position you want to add this **Leave hierarchy**.
+1. In the **Organization Administration** workspace, select **All positions**.
 
-3.  Under **Relationships** tab, select **Add**.
+2. Select the position to add the Leave hierarchy to.
 
-    - In the hierarchy name, select from the dropdown Leave.
+3. On the **Relationships** tab, select **Add**.
 
-    - In the Reports to position, select a position from the dropdown.
+4. In the **Hierarchy name** field, select **Leave**.
 
-The worker name will complete automatically once you select a position from the reports to position tab.
+5. In the **Reports to position** field, select a position. The worker name is automatically filled in after you select a position.
 
 ## Assign the Absence manager role to a user
-The Absence manager role needs to be assigned in order to allow an employee to approve or deny leave requests.
 
-1.  In the **System administrator** workspace, select **Links**.
+The Absence manager role must be assigned to employees to enable them to approve or deny leave requests.
 
-2.  Under **Users** section, select **Users** link.
+1. In the **System administrator** workspace, select **Links**.
 
-3.  From the list of users, select the user you want to assign the Absence manager role.
+2. In the **Users** section, select the **Users** link.
 
-4.  In the **User's role** tab, select **+Assign roles**.
+3. In the list of users, select the user to assign the Absence manager role to.
 
-5.  From the list, select the Absence manager role, and select **OK**. Make sure the user you want to assign with the Absence manager role has also been assigned the Employee role. If not, the worker will not be able to use this feature.
+4. On the **User's role** tab, select **Assign roles**.
 
-6. Once you created the Leave hierarchy, you can check how it looks like following these steps:
+5. In the list, select the **Absence manager** role. Then select **OK**.
 
-    1.  In the **Organization Administration** workspace, select **Position hierarchy**.
+    > [!IMPORTANT]
+    > Make sure that the Employee role has also been assigned to the user that you're assigning the Absence manager role to. Otherwise, the worker won't be able to use the feature.
 
-    2.  In the hierarchy type box select **Leave**.
+6. After you've created the Leave hierarchy, you can view it by following these steps:
 
-## Absence manager workspace 
+    1. In the **Organization Administration** workspace, select **Position hierarchy**.
+    
+    2. In the **Hierarchy type** field, select **Leave**.
 
-In the **Employee Self-Service** workspace, select the **Absence manager** tab. You will find the absence information about the employees assigned to you in the leave hierarchy. In the **Leave and absence** tab, for each employee there are a couple of options. 
+## Absence manager workspace
 
-- **Time off**: View balances, approved time off, and time off requests for the selected employee.
-- **Leave balances**: A list of the balances for the different leave plans for the selected employee.
+In the **Employee Self-Service** workspace, the **Absence manager** tab shows the absence information about the employees who are assigned to the absence manager in the Leave hierarchy.
 
-## Approve time off request
-The absence manager can approve or deny time off requests for employees, only if the workflow has been edited to perform this action, review the following documentation to check how to create a leave request workflow. If needed, the absence manager can also create requests on behalf of the employee.
+On the **Leave and absence** tab, the following options are available for each employee:
 
-> [!NOTE]
-> In order to configure the leave request workflow to assign leave request work items to the absence maanger for review, navigate to **Human resource workflows**, select or create the leave request workflow and use the **Associate hierarchy** opton and choose the Leve hierarchy under hierarchy name field. Also, be sure to update the workflow using the workflow designer to choose **Hierarchy** selection option under Assignment type and choose **Configurable hierarchy** under the Hierarchy selection tab.  
+- **Time off** – View balances, approved time off, and time-off requests for the selected employee.
+- **Leave balances** – View a list of the balances for the different leave plans for the selected employee.
 
-In The **Employee Self-Service** workspace, select the **Absence manager** tab.
+## Approve time-off requests
 
-In the **Absence manager** workspace tab, click on the desired employee. Select **Details** and **Time off**.
+Absence managers can approve or deny time-off requests for employees. They can also create requests on behalf of employees, as required.
 
-You will find the time off request, select the **Approval** option. A dropdown will open and you can approve or cancel the time off request.
+> [!IMPORTANT]
+> Before absence managers can approve or deny time-off requests, the leave request workflow must be configured to assign leave request work items to them for review.
+>
+> 1. On the **Human resource workflows** page, select or create the leave request workflow.
+> 2. Select the **Associate hierarchy** option, and then, in the **Hierarchy name** field, select **Leave**.
+> 3. Update the workflow in the workflow designer. Under **Assignment type**, select the **Hierarchy** option, and then, on the **Hierarchy selection** tab, select **Configurable hierarchy**.
+>
+> For information about how to create the leave request workflow, see [Create a leave request workflow](hr-leave-and-absence-workflow.md).
 
--   Cancel status mean that the request has been denied.
+1. In the **Employee Self-Service** workspace, select the **Absence manager** tab.
 
--   Completed status means the request has been approved.
+2. On the **Absence manager** tab, select the desired employee.
 
-## See time off in calendar 
-From the Absence manager role, users are able to see time-off requests in calendar. Follow these steps to access the Leave calendar.
+3. Select **Details** and then **Time off**.
 
-> [!NOTE]
-> In order to configure the view options for the absence manager calendar, System administrator can navigate to **Leave and absence parameters** and navigate to the **Calendar** tab. There are options available to hide or show birthdays, absence without detials, leave of absence and pending leave requests. There is also the option to filter the calendar view option based on worker type. 
+4. Find the time-off request, and select the **Approval** option. You can then select an option to approve or cancel the time-off request.
 
-1.  In the **Employee Self-Service** workspace, select **Absence manager** and then **Absence manager calendar**.
+A status of **Cancel** indicates that the request has been denied. A status of **Completed** indicates that the request has been approved.
 
-3.  In the date box, enter the desired dates and update view options as necessary.
+## View time off in the calendar
 
-4.  All the records for the employee's reporting to the absence manager in the leave hierarchy will show in **Absence manager calendar**.
+Users in the Absence manager role can view time-off requests in their calendar. Follow these steps to access the leave calendar.
 
+> [!IMPORTANT]
+> A system administrator must configure the view options for the absence manager calendar. On the **Leave and absence parameters** page, on the **Calendar** tab, there are options to hide or show birthdays, absences without details, leaves of absence, and pending leave requests. There is also an option to filter the calendar view option by worker type.
+
+1. In the **Employee Self-Service** workspace, select **Absence manager** and then **Absence manager calendar**.
+
+2. In the **Date** field, enter the desired dates.
+
+3. Update the view options as required.
+
+The absence manager calendar shows all the records for the employees who report to the absence manager in the Leave hierarchy.
 
 ## See also
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
 - [Create a leave request workflow](hr-leave-and-absence-workflow.md)
 - [View team and company calendars](hr-employee-self-service-calendar.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
