@@ -78,6 +78,11 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
  
 4. Define **Expiration rules** for the leave type. When you configure this option, you can choose the unit of days or months and set the duration for the expiration. The effective date of the expiration rule is used to determine when to start running the batch job that processes the leave expiration, or the date when the rule takes effect. The expiration itself will always occur on the accrual period start date. For example, if the accrual period start date is August 3, 2021, and the expiration rule was set at 6 months, the rule will be processed based on the expiration offset from the accrual period start date, so it would be executed on February 3, 2022. Any leave balances that exist at the time of expiry will be subtracted from the leave type and will be reflected in the leave balance.
  
+## Configure required attachment per leave type
+
+
+## Configure leave units (hours/days) per leave type
+
 ## See also
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
