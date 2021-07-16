@@ -65,7 +65,7 @@ Once the hierarchy type is defined then the position hierarchy report will be as
 
     - In the hierarchy name, select from the dropdown Leave.
 
-    = In the Reports to position, select a position from the dropdown.
+    - In the Reports to position, select a position from the dropdown.
 
 The worker name will complete automatically once you select a position from the reports to position tab.
 
