@@ -42,19 +42,18 @@ In some organizations, a people manager might not be managing the leave for thei
 
 ## Enable feature 
 
-1.  In the **System Administration** workspace, select **Feature management**.
+1.  In the **System administration** workspace, select **Feature management**.
 
-2.  From the **Feature management** tab, enable the **(Preview)Absence manager to manage leave** feature.
-
+2.  From the **Feature management** tab, enable the **(Preview) Absence manager to manage leave** feature.
 
 ## Define new custom hierarchy
-This absence manager capability uses a custom hierarchy that needs to be configured.
+The absence manager capability uses a custom hierarchy that needs to be configured.
 
-1.  In the **Organization Administration** workspace, select **Position hierarchy types**.
+1.  In the **Organization administration** workspace, select **Position hierarchy types**.
 
 2.  Create a new position hierarchy type named **Leave**.
 
-3.  Go to **Leave and Absence** workspace, under **Links**, select **Leave and Absence parameters**. In the general tab select **Absence hierarchy**, from the dropdown select the hierarchy type **Leave** created in the previous step. This leave hierarchy assoication needs to be completed for each leagal entity where the absence manager capability will be used. 
+3.  Go to **Leave and absence** workspace, under **Links**, select **Leave and Absence parameters**. In the **General** tab, select **Absence hierarchy** from the drop-down select the hierarchy type **Leave** created in the previous step. This leave hierarchy assoication needs to be completed for each leagal entity where the absence manager capability will be used. 
 
 Once the hierarchy type is defined then the position hierarchy report will be assigned to the position.
 
@@ -62,18 +61,18 @@ Once the hierarchy type is defined then the position hierarchy report will be as
 
 2.  Select the position you want to add this **Leave hierarchy**.
 
-3.  Under **Relationships** tab, select Add.
+3.  Under **Relationships** tab, select **Add**.
 
-- In the hierarchy name, select from the dropdown Leave.</br>
+    - In the hierarchy name, select from the dropdown Leave.
 
-= In the Reports to position, select a position from the dropdown.</br>
+    = In the Reports to position, select a position from the dropdown.
 
 The worker name will complete automatically once you select a position from the reports to position tab.
 
 ## Assign the Absence manager role to a user
 The Absence manager role needs to be assigned in order to allow an employee to approve or deny leave requests.
 
-1.  In the **System Administrator** workspace, select **Links**.
+1.  In the **System administrator** workspace, select **Links**.
 
 2.  Under **Users** section, select **Users** link.
 
@@ -81,28 +80,26 @@ The Absence manager role needs to be assigned in order to allow an employee to a
 
 4.  In the **User's role** tab, select **+Assign roles**.
 
-5.  From the list, select the Absence manager role, and select ok. Make sure the user you want to assign with the Absence manager role has also been assigned the Employee role. If not, the worker will not be able to use this feature.
+5.  From the list, select the Absence manager role, and select **OK**. Make sure the user you want to assign with the Absence manager role has also been assigned the Employee role. If not, the worker will not be able to use this feature.
 
+6. Once you created the Leave hierarchy, you can check how it looks like following these steps:
 
-Once you created the Leave hierarchy, you can check how it looks like following these steps:
+    1.  In the **Organization Administration** workspace, select **Position hierarchy**.
 
-1.  In the **Organization Administration** workspace, select **Position hierarchy**.
-
-2.  In the hierarchy type box select **Leave**.
-
+    2.  In the hierarchy type box select **Leave**.
 
 ## Absence manager workspace 
 
 In the **Employee Self-Service** workspace, select the **Absence manager** tab. You will find the absence information about the employees assigned to you in the leave hierarchy. In the **Leave and absence** tab, for each employee there are a couple of options. 
 
--   **Time off**, view balances, approved time off, and time off request for the selected employee.
--   **Leave balances**, a list of the balances for the different leave plans for the selected employee.
+- **Time off**: View balances, approved time off, and time off requests for the selected employee.
+- **Leave balances**: A list of the balances for the different leave plans for the selected employee.
 
 ## Approve time off request
-The absence manager can approve or deny time off request for employees, only if the workflow has been edited to perform this action, review the following documentation to check how to create a leave request workflow. If needed, the absence manager can also create requests on behalf of the employee.
+The absence manager can approve or deny time off requests for employees, only if the workflow has been edited to perform this action, review the following documentation to check how to create a leave request workflow. If needed, the absence manager can also create requests on behalf of the employee.
 
->[!NOTE]
->In order to configure the leave request workflow to assign leave request work items to the absence maanger for review, navigate to **Human resource workflows**, select or create the leave request workflow and use the **Associate hierarchy** opton and choose the Leve hierarchy under hierarchy name field. Also, please ensure to update the workflow using the workflow designer to choose **Hierarchy** selection option under Assignment type and choose **Configurable hierarchy** under the Hierarchy selection tab.  
+> [!NOTE]
+> In order to configure the leave request workflow to assign leave request work items to the absence maanger for review, navigate to **Human resource workflows**, select or create the leave request workflow and use the **Associate hierarchy** opton and choose the Leve hierarchy under hierarchy name field. Also, be sure to update the workflow using the workflow designer to choose **Hierarchy** selection option under Assignment type and choose **Configurable hierarchy** under the Hierarchy selection tab.  
 
 In The **Employee Self-Service** workspace, select the **Absence manager** tab.
 
@@ -117,8 +114,8 @@ You will find the time off request, select the **Approval** option. A dropdown w
 ## See time off in calendar 
 From the Absence manager role, users are able to see time-off requests in calendar. Follow these steps to access the Leave calendar.
 
->[!NOTE]
->In order to configure the view options for the absence manager calendar, System administrator can navigate to **Leave and absence parameters** and navigate to the **Calendar** tab. There are options available to hide or show birthdays, absence without detials, leave of absence and pending leave requests. There is also the option to filter the calendar view option based on worker type. 
+> [!NOTE]
+> In order to configure the view options for the absence manager calendar, System administrator can navigate to **Leave and absence parameters** and navigate to the **Calendar** tab. There are options available to hide or show birthdays, absence without detials, leave of absence and pending leave requests. There is also the option to filter the calendar view option based on worker type. 
 
 1.  In the **Employee Self-Service** workspace, select **Absence manager** and then **Absence manager calendar**.
 
@@ -129,9 +126,9 @@ From the Absence manager role, users are able to see time-off requests in calend
 
 ## See also
 
-[Leave and absence overview](hr-leave-and-absence-overview.md)</br>
-[Create a leave request workflow](hr-leave-and-absence-workflow.md)</br>
-[View team and company calendars](hr-employee-self-service-calendar.md)</br>
+[Leave and absence overview](hr-leave-and-absence-overview.md)
+[Create a leave request workflow](hr-leave-and-absence-workflow.md)
+[View team and company calendars](hr-employee-self-service-calendar.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
