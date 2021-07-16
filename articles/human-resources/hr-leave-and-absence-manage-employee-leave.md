@@ -50,10 +50,11 @@ You can manage an employee's leave by leave type. This includes expiring leave e
 
 You can include a reason code and comment when adjusting an employee's leave balance. 
 
-When hovering over any leave balance, you will now see:
-- **Available**: Total this year - Taken this year
-- **Total this year**: All accruals, adjustments, and carry forward for the year
-- **Taken this year**: All approved time off
+Now, when you hover over any leave balance, the following information is shown:
+
+- **Available** – The **Total this year** value minus the **Taken this year** value.
+- **Total this year** – All accruals, adjustments, and carry-forward for the year.
+- **Taken this year** – All approved time off.
 
 ## See also
 
