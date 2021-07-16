@@ -4,7 +4,7 @@
 title: Create a team calendar
 description: View and create team calendars in Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -48,13 +48,13 @@ Managers can also access the team calendar from **Pending time off requests from
 ## View your absence manager calendar as the absence manager
 
 > [!NOTE]
-> To view the **Absence manager calendar**, you must first enable the **(Preview)Absence manager to manage leave** feature in Feature management. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).<br>
+> To view the **Absence manager calendar**, you must first enable the **(Preview) Absence manager to manage leave** feature in Feature management. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).
 
-From the Absence manager role, users are able to see time-off requests in calendar. Follow these steps to access the Leave calendar.
+Using the Absence manager role, users are able to see time-off requests in the calendar. Follow these steps to access the leave calendar.
 
 1.  In the **Employee Self-Service** workspace, select **Absence manager** and then **Absence manager calendar**.
 
-3.  In the date box, enter the desired dates and update view options as necessary.
+3.  In the **Date** field, enter the desired dates and update view options as necessary.
 
 4.  All the records for the employee's reporting to the absence manager in the leave hierarchy will show in **Absence manager calendar**.
 
