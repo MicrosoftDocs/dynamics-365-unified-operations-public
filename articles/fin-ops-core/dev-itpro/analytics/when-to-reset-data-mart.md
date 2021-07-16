@@ -4,7 +4,7 @@
 title: Data mart resets FAQ
 description: This topic provides answers to some frequently asked questions about data mart resets.
 author: jinniew
-ms.date: 06/09/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,7 +44,7 @@ If one or more of the following statements apply to your situation, your organiz
 - The application database was restored.
 - You opened a support ticket, and a Support engineer instructed you to reset the data mart as part of a troubleshooting step.
  
- [!NOTE] Data Mart resets are impacted by the the number of GL/Budget transactions. Therefore a reset can take anywhere from 15 minutes to 4 hours, or longer. However, if your reset is taking longer than 4 hours, this would be a good time to contact support.
+ [!NOTE] The process of resetting a data mart is impacted by the the number of General ledger and Budget transactions in your database. Depending on the number of transactions in your system, resetting a data mart can be completed in as little as 15 minutes, or can take up to four hours. However, if your reset takes longer than four hours, we recommend contacting support.
  
 ## When is a data mart reset inappropriate?
 
