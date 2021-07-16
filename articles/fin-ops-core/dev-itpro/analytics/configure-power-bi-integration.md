@@ -4,7 +4,7 @@
 title: Configure PowerBI.com integration
 description: This topic describes how to configure a new Finance and Operations environment to support integration with PowerBI.com.
 author: MilindaV2
-ms.date: 07/14/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -70,37 +70,39 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
 			 
 4. Click **Register**.
 5. Copy the **Application (client) ID**. This will be used to connect to the PowerBI.com service.
->[!NOTE] 
->Make sure to copy off the **Appplication (client) ID**
+
+	> [!NOTE] 
+	> Make sure to copy off the **Appplication (client) ID**.
 
 6. Click **Manage** > **API permissions** > **+ Add a permission** > **Microsoft APIs** > **Power BI Service**.
 7. Click **Select Delegated permissions**.
 8. Enable the following permissions. 
-- **Content>** 
-- Content.Create
 
-- **Dashboard>**
-- Dashboard.Read.All
+	**Content** 
+	Content.Create
 
-- **Dataset>**
-- Dataset.Read.All
-- Dataset.ReadWrite.All
+	**Dashboard**
+	Dashboard.Read.All
 
-- **Report>**
--   Report.Read.All
+	**Dataset**
+	Dataset.Read.All
+	Dataset.ReadWrite.All
 
-- **Workspace>**
-- Workspace.Read.All
+	**Report**
+	Report.Read.All
+
+	**Workspace>**
+	Workspace.Read.All
    
 9. Click **Add permissions**.
-
 10. Click **Manage** > **Certificates & secrets**.
-11. In Client secrets Click ** + New client secret**
+11. In **Client secrets**, click **+ New client secret**.
 12. Enter a value for **Description** and **Expires**, and then click **Add**.
 
-Make a note of the **Application ID** and **Secret Value**. You will use these values in the next procedure.
-> [!NOTE]
-> It is important to capture the **Application (client) Id** and **Secret Value** before moving to the next step. 
+	Make a note of the **Application ID** and **Secret Value**. You will use these values in the next procedure.
+
+	> [!NOTE]
+	> It is important to capture the **Application (client) ID** and **Secret Value** before moving to the next step. 
 
 ## Specify Power BI settings in Finance and Operations
 
