@@ -47,6 +47,8 @@ You can submit requests for time off, view your vacation and leave balances, and
 
 6. Select **Submit** when you're ready to submit your request. Otherwise, select **Save draft**.
 
+When submitting a new leave request, employees can choose different leave types to construct their leave request. However, all leave types selected as part of the single leave request should be of the same leave unit. They can view the leave unit for each leave type as part of the **Request time off** form.
+
 ## Add an attachment to an existing request
 
 When updating an existing time off request, you can add an attachment. You can also see all of the related requests for a specific date.
