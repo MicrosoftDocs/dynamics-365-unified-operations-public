@@ -4,7 +4,7 @@
 title: Use Customer payment predictions (preview)
 description: This topic walks through the prerequisites and the broad steps that are required to use a trial version of Finance insights.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,6 @@ ms.dyn365.ops.version: AX 10.0.14
 # Use Customer payment predictions (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to use the Customer payment predictions. Before you use this feature, make sure that you've completed the setup steps for it. For more information, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md).
 
