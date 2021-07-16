@@ -4,7 +4,7 @@
 title: Configure leave and absence types
 description: Set up types of leave that employees can take in Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 06/15/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -81,31 +81,33 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 ## Configure required attachment per leave type
 
 > [!NOTE]
-> To view the **Attachment required** feature, you must first enable the **(Preview) Configure required attachment for leave requests** feature in Feature management. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).<br>
+> To view the **Attachment required** feature, you must first enable the **(Preview) Configure required attachment for leave requests** feature in Feature management. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).
 
 1. On the **Leave and absence** page, select the **Links** tab.
 
 2. Under **Setup**, select **Leave and absence types**.
 
-3. Select a leave and absence type from the list and in **General** section, use the field **Attachment required** to define whether an attachment is required to be uploaded when an employee submits a new leave request for that selected leave type. 
+3. Select a leave and absence type from the list and in the **General** section, use the **Attachment required** field to define whether an attachment is required to be uploaded when an employee submits a new leave request for that selected leave type. 
 
 Employees will be required to upload an attachment when they are submitting a new leave request with a leave type with **Attachment required** field enabled. Leave request approvers can view the attachments uploaded as part of a leave request using the **Attachments** option for the work items assigned to them. If the leave request is being accessed using the Human Resources app in Microsoft Teams, the details of the leave request along with attachments, if any, can be viewed using the **View details** option for each leave request.
 
 ## Configure leave units (hours/days) per leave type
 
 > [!NOTE]
-> To view the **leave units per leave type** feature, you must first enable the **(Preview) Configure leave units per leave type** feature in Feature management. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).<br>
+> To view the **leave units per leave type** feature, you must first enable the **(Preview) Configure leave units per leave type** feature in Feature management. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).
 
->[!IMPORTANT]
->The leave types in that legal entity will be defaulted to the leave units from the leave parameters configuration at the legal entity level.<br><br>
->The leave unit of a leave and absence type can be modified as long as there as no leave transactions for that leave type.<br><br>
->This feature cannot be turned on once it has been enabled. <br><br>
+> [!IMPORTANT]
+> The leave types in that legal entity will be defaulted to the leave units from the leave parameters configuration at the legal entity level.
+> 
+> The leave unit of a leave and absence type can be modified as long as there as no leave transactions for that leave type.
+> 
+> This feature cannot be turned on once it has been enabled.
 
 1. On the **Leave and absence** page, select the **Links** tab.
 
 2. Under **Setup**, select **Leave and absence types**.
 
-3. Select a leave and absence type from the list and in **General** section, use the field **Unit** to define the leave unit, you can choose **Hours** or **Days**. In case the leave unit selected is Hours, you can also enable the **Enable half day definition** to define whether employees can select first half day or second half day off in case they are requesting a half day leave. The Enable half day definition field is optional.
+3. Select a leave and absence type from the list and in the **General** section, use the **Unit** field to define the leave unit, you can choose **Hours** or **Days**. In case the leave unit selected is hours, you can also enable the **Enable half day definition** to define whether employees can select first half day or second half day off in case they are requesting a half day leave. The **Enable half day definition** field is optional.
 
 When submitting a new leave request, employees can choose different leave types to construct their leave request. However, all leave types selected as part of the single leave request should be of the same leave unit. They can view the leave unit for each leave type as part of the **Request time off** form.
 
