@@ -280,7 +280,8 @@ The following table shows the lookup results for **SalesDocumentTypesSelector**.
 > [!NOTE]
 > It's important that you add **Inne** (**Other**), which must collect data from other cases as the last item in the list. The **Line** value must be the last value in your table. In the **Tax code** column in the **Inne** lookup result, select **\*Not blank\***.
 
-For more information about how to report **RO** and **FP** document types for retail operations, see the "Report RO and FP document types for retail operations" section later in this topic.
+For more information about how to report **RO** and **FP** document types for retail operations, see the 
+[Report RO and FP document types for retail operations](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/liza-vdek-july/articles/finance/localizations/emea-pol-vdek-scenarios.md#report-ro-and-fp-document-types-for-retail-operations) section later in this topic.
 
 ### Output VAT – Margin (SprzedazVAT_MarzaSelector)
 
