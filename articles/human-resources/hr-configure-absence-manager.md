@@ -106,7 +106,7 @@ The absence manager can approve or deny time off request for employees, only if 
 
 In The **Employee Self-Service** workspace, select the **Absence manager** tab.
 
-In the **Absence** tab, click on the desired employee. Select **Details** \> **Time off**
+In the **Absence manager** workspace tab, click on the desired employee. Select **Details** and **Time off**.
 
 You will find the time off request, select the **Approval** option. A dropdown will open and you can approve or cancel the time off request.
 
@@ -117,13 +117,14 @@ You will find the time off request, select the **Approval** option. A dropdown w
 ## See time off in calendar 
 From the Absence manager role, users are able to see time-off requests in calendar. Follow these steps to access the Leave calendar.
 
-1.  Log in the system as Manager with the Absence manager role.
+>[!NOTE]
+>In order to configure the view options for the absence manager calendar, System administrator can navigate to **Leave and absence parameters** and navigate to the **Calendar** tab. There are options available to hide or show birthdays, absence without detials, leave of absence and pending leave requests. There is also the option to filter the calendar view option based on worker type. 
 
-2.  In the **Employee Self-Service** workspace, select **Absence manager** and then **Absence manager calendar.**
+1.  In the **Employee Self-Service** workspace, select **Absence manager** and then **Absence manager calendar**.
 
-3.  In the date box, enter the desired dates
+3.  In the date box, enter the desired dates and update view options as necessary.
 
-4.  All the records for the employee/s reporting to the manager in the absence hierarchy will show in **Absence manager calendar**.
+4.  All the records for the employee's reporting to the absence manager in the leave hierarchy will show in **Absence manager calendar**.
 
 
 ## See also
