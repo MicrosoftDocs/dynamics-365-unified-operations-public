@@ -32,8 +32,8 @@ The table below provides information about changes that was released to Planning
 
 | Changes | Release date |
 | --- | --- |
-| Resource type requirement support by infinite capacity scheduling. For details about infinite capacity scheduling, see [Scheduling with infinite capacity](infinite-capacity-planning).<br> Available in Feature management from version 10.0.20: Infinite capacity scheduling for Planning Optimization | July 6, 2021 |
-| Resource efficiency and calendar efficiency support by infinite capacity scheduling. For details about infinite capacity scheduling, see [Scheduling with infinite capacity](infinite-capacity-planning).<br> Available in Feature management from version 10.0.20: Infinite capacity scheduling for Planning Optimization | July 6, 2021 |
+| Resource type requirement support by infinite capacity scheduling. For details about infinite capacity scheduling, see [Scheduling with infinite capacity](infinite-capacity-planning.md).<br> Available in Feature management from version 10.0.20: Infinite capacity scheduling for Planning Optimization | July 6, 2021 |
+| Resource efficiency and calendar efficiency support by infinite capacity scheduling. For details about infinite capacity scheduling, see [Scheduling with infinite capacity](infinite-capacity-planning.md).<br> Available in Feature management from version 10.0.20: Infinite capacity scheduling for Planning Optimization | July 6, 2021 |
 | General quality improvements | July 6, 2021 |
 
 
