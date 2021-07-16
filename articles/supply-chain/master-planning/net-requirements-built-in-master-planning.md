@@ -40,7 +40,7 @@ In the upper section of the page, you can review:
 - On the **Overview** tab – The item requirements of the product dimensions.
 - On the **Item coverage** tab – The coverage settings that were used during requirements calculation.
 - On the **Summary** tab – The breakdown of the requirements totals according to transaction type.
-- On the **Period** tab – The receipts, issues, and projected available inventory for each of the periods defined by the period template. You can also get a graphical view of the pojected available inventory.
+- On the **Period** tab – The receipts, issues, and projected available inventory for each of the periods defined by the period template. You can also get a graphical view of the projected available inventory.
 
 In the bottom section of the **Net requirements** page, you can review:
 
