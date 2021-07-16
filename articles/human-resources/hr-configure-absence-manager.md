@@ -55,7 +55,7 @@ The absence manager functionality uses a custom hierarchy that must be configure
 
 3. In the **Leave and absence** workspace, under **Links**, select **Leave and Absence parameters**.
 
-4. On the **General** tab, select **Absence hierarchy** in the drop-down field select the **Leave** hierarchy type that you created earlier. This Leave hierarchy association must be completed for every legal entity where the absence manager functionality will be used.
+4. On the **General** tab, for the **Absence hierarchy** drop-down field, select the **Leave** hierarchy type that you created earlier. This Leave hierarchy association must be completed for every legal entity where the absence manager functionality will be used.
 
 After the hierarchy type is defined, the position hierarchy report must be assigned to the position.
 
