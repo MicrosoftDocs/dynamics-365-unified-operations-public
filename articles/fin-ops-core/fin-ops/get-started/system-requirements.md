@@ -4,7 +4,7 @@
 title: System requirements for cloud deployments
 description: This topic lists the system requirements for the current version of Finance and Operations apps.
 author: sericks007
-ms.date: 05/25/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
