@@ -126,9 +126,9 @@ From the Absence manager role, users are able to see time-off requests in calend
 
 ## See also
 
-[Leave and absence overview](hr-leave-and-absence-overview.md)
-[Create a leave request workflow](hr-leave-and-absence-workflow.md)
-[View team and company calendars](hr-employee-self-service-calendar.md)
+- [Leave and absence overview](hr-leave-and-absence-overview.md)
+- [Create a leave request workflow](hr-leave-and-absence-workflow.md)
+- [View team and company calendars](hr-employee-self-service-calendar.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
