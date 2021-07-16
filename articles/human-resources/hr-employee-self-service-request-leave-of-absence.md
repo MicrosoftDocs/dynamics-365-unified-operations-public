@@ -54,9 +54,9 @@ You can submit a request for a leave of absence and see the status of your leave
 
 2. To view your leave of absence requests, select **View leave of absence**.
 
-## Importing leave requests from other or legacy systems
+## Importing leave requests from other systems or older systems
 
-When importing leave requests from another system, you must go through regular workflow in order to create the appropriate leave transactions. An alternative would be to import the leave bank rtansactions and the leave requests in a completed state. Importing leave requests alone will not automatically create the leave bank transactions.
+To import leave requests from another system, you must go through the regular workflow to create the appropriate leave transactions. Alternatively, you can import the leave bank transactions and the leave requests in a completed state. Note that the leave bank transactions aren't automatically created if you import only the leave requests.
 
 ## See also
 
