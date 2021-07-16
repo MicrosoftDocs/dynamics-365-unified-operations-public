@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Retail 10.0.20 update
 # Configure product dimension values to appear as swatches
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 This topic describes how to configure product dimension values as swatches in Microsoft Dynamics 365 Commerce headquarters. For information about product dimensions, see [Product dimensions](../../supply-chain/pim/product-dimensions.md).
 
