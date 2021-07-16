@@ -83,6 +83,12 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 > [!NOTE]
 > To view the **Absence manager calendar**, you must first enable the **(Preview) Configure required attachment for leave requests** feature in Feature management. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).<br>
 
+1. On the **Leave and absence** page, select the **Links** tab.
+2. Under **Setup**, select **Leave and absence types**.
+3. Select a leave and absence type from the list and in **General** section, use the field **Attachment required** to define whether an attachment is required to be uploaded when an employee submits a new leave request for that selected leave type. 
+
+
+
 ## Configure leave units (hours/days) per leave type
 
 > [!NOTE]
