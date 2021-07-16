@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace , LeaveAbsenceManager
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace, LeaveAbsenceManager
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -91,20 +91,18 @@ Once you created the Leave hierarchy, you can check how it looks like following 
 2.  In the hierarchy type box select **Leave**.
 
 
-## Absence manager features 
-Once the system administrator assigns the absence manager role to an user, this user will be able to perform different activities related to absence for the employees assigned in Leave hierarchy.
+## Absence manager workspace 
 
-In the **Employee Self-Service** workspace, select the **Absence manager** tab. You will find the absence information about the employees assigned to you in Leave hierarchy.
+In the **Employee Self-Service** workspace, select the **Absence manager** tab. You will find the absence information about the employees assigned to you in the leave hierarchy. In the **Leave and absence** tab, for each employee there are a couple of options. 
 
-In the Absence manager section there are two tabs, Summary and Absence.
-
--   **Summary** you will find information about leave balances, a list of the balances for the different leave plans for the employees.
-
--   **Absence** tab, select **Details**, and then **Time off**. In this section you will find three tabs: balances, approved time off, and time off request.
-
+-   **Time off**, view balances, approved time off, and time off request for the selected employee.
+-   **Leave balances**, a list of the balances for the different leave plans for the selected employee.
 
 ## Approve time off request
 The absence manager can approve or deny time off request for employees, only if the workflow has been edited to perform this action, review the following documentation to check how to create a leave request workflow. If needed, the absence manager can also create requests on behalf of the employee.
+
+>[!NOTE]
+>In order to configure the leave request workflow to assign leave request work items to the absence maanger for review, navigate to **Human resource workflows**, select or create the leave request workflow and use the **Associate hierarchy** opton and choose the Leve hierarchy under hierarchy name field. Also, please ensure to update the workflow using the workflow designer to choose **Hierarchy** selection option under Assignment type and choose **Configurable hierarchy** under the Hierarchy selection tab.  
 
 In The **Employee Self-Service** workspace, select the **Absence manager** tab.
 
