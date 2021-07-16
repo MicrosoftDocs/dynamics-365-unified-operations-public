@@ -807,7 +807,7 @@
         href: hr-employee-self-service-request-time-off.md
       - name: View team and company calendars
         href: hr-employee-self-service-calendar.md
-      - name: Enable absence manager role
+      - name: Configure absence manager role
         href: hr-configure-absence-manager.md
       - name: Manage buy and sell leave policies
         href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
