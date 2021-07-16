@@ -33,19 +33,24 @@ This topics describes multiple reasons why transactions can't be reversed as wel
 
 ## Symptom
 
-Organizations may encounter situations where they have posted a transaction that they need to reverse.  Occasionally the system will prevent them from reversing these transactions, which leads to two questions:
+Organizations may encounter situations where they have posted a transaction that they need to reverse. Occasionally the system will prevent them from reversing these transactions, which leads to two questions:
 
 - Why can’t I reverse this transaction?  
 - And how does the Mass reversal feature affect this?
 
 ## Resolution
 
-Transactions must meet specific criteria to be reversed. The validation for each module area is provided below. This document is focused on transactions within Finance but some of the concepts and validation can be applied to other areas, such as Supply chain management. 
+Transactions must meet specific criteria to be reversed. The validation for each module area is provided below. This topic focuses on transactions within Finance but some of the concepts and validation can be applied to other areas, such as Supply chain management. 
 
-Turning on the **Mass reversal for multiple documents** feature (referred to as the Mass reversal feature) in the **Feature management** workspace impacts how many transactions can be reversed and where the transactions can be reversed from.  Turning this feature on does two things:
+Where a transaction is reversed may also impact whether or not it can be reversed. For example, a vendor payment (posted as a check) can only be reversed from the bank accounts’ transaction page, under **Checks**. It can't be reversed from the General ledger on the Voucher transaction page. Turning on the **Mass reversal for multiple documents** feature (referred to as the Mass reversal feature) in the **Feature management** workspace impacts how many transactions can be reversed and where the transactions can be reversed from.  Turning this feature on does two things:
 
-- Allows more than one transaction to be reversed at the same time. Before this feature, each transaction had to be reversed one at a time. Mass reversal lets you select and reverse multiple transactions from the journal each one was posted from, or from the **Voucher transactions** page, assuming the individual transactions could be reversed before the Mass reversal feature was turned on.
-- Allows reversal of subledger transactions from the journal (General journal) or Voucher transactions instead of requiring reversal from the subledger page. For example, previously a vendor invoice journal could only be reversed from the **Vendor transactions** page.  Now the invoice journal can also be reversed from the subledger through the journal, or from the **Voucher transactions** page. 
+- Allows more than one transaction to be reversed at the same time.  Before this feature, each transaction had to be reversed one at a time.  This feature allows more than one transaction, for some types of transactions, to be selected and reversed from the journal it was posted or from Voucher transactions, assuming the individual transactions could be reversed before enabling the feature.
+
+- *Allows more than one transaction to be reversed at the same time. Before this feature, each transaction had to be reversed one at a time. Mass reversal lets you select and reverse multiple transactions from the journal each one was posted from, or from the **Voucher transactions** page, assuming the individual transactions could be reversed before the Mass reversal feature was turned on.*
+
+- Allows reversal of *some* subledger transactions from the journal (General journal) or Voucher transactions instead of requiring reversal from the subledger page. For example, previously a vendor invoice journal could only be reversed from Vendor transactions. Now the invoice journal can also be reversed from the ‘General ledger’ side through the journal or Voucher transactions. But this isn’t true for all types of transactions, as defined in each section. 
+
+- *Allows reversal of subledger transactions from the journal (General journal) or Voucher transactions instead of requiring reversal from the subledger page. For example, previously a vendor invoice journal could only be reversed from the **Vendor transactions** page.  Now the invoice journal can also be reversed from the subledger through the journal, or from the **Voucher transactions** page.* 
 
 Turning on the Mass reversal feature does *not* allow more types of transactions to be reversed. If a transaction type couldn’t be reversed before, the transaction still can’t be reversed, even after the Mass reversal feature is turned on. For example, Purchase order vendor invoices can’t be reversed, regardless of whether or not the Mass reversal feature has been turned on. 
 
