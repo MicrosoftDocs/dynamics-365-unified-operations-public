@@ -35,30 +35,30 @@ Dynamics 365 Human Resources helps you provide great leave benefits to your work
 
 ## Set up Leave and absence
 
-Before creating leave plans for your employees, you need to do a few setup steps:
+Before creating leave plans for your employees, you need to do a few set up steps:
 
-- [Configure leave and absence parameters](hr-leave-and-absence-parameters.md)</br>
-- [Create a working time calendar](hr-leave-and-absence-working-time-calendar.md)</br>
-- [Create a leave request workflow](hr-leave-and-absence-workflow.md)</br>
-- [Configure absence manager role](hr-configure-absence-manager.md)</br>
+- [Configure leave and absence parameters](hr-leave-and-absence-parameters.md)
+- [Create a working time calendar](hr-leave-and-absence-working-time-calendar.md)
+- [Create a leave request workflow](hr-leave-and-absence-workflow.md)
+- [Configure absence manager role](hr-configure-absence-manager.md)
 
 ## Create and manage leave plans
 
 Before creating leave plans for your workers, you need to create leave and absence types. After you create a leave plan, you can then enroll workers into the plan. You can also run the accrue process, create alerts, and view analytics for your plans.
 
-- [Configure leave and absence types](hr-leave-and-absence-types.md)</br>
-- [Create a leave and absence plan](hr-leave-and-absence-plans.md)</br>
-- [Assign workers to a leave plan](hr-leave-and-absence-enroll.md)</br>
-- [Accrue leave and absence plans](hr-leave-and-absence-accrue.md)</br>
-- [View analytics for leave and absence](hr-leave-and-absence-analytics.md)</br>
+- [Configure leave and absence types](hr-leave-and-absence-types.md)
+- [Create a leave and absence plan](hr-leave-and-absence-plans.md)
+- [Assign workers to a leave plan](hr-leave-and-absence-enroll.md)
+- [Accrue leave and absence plans](hr-leave-and-absence-accrue.md)
+- [View analytics for leave and absence](hr-leave-and-absence-analytics.md)
 
 ## Request time off and manage requests
 
 Your employees can submit time off requests, and you can manage them, in the **Employee self service** workspace.
 
-- [Request time off](hr-employee-self-service-request-time-off.md)</br>
-- [Manage leave and absence requests](hr-employee-self-service-manage-requests.md)</br>
-- [Configure absence manager role](hr-configure-absence-manager.md)</br>
+- [Request time off](hr-employee-self-service-request-time-off.md)
+- [Manage leave and absence requests](hr-employee-self-service-manage-requests.md)
+- [Configure absence manager role](hr-configure-absence-manager.md)
 
 
 
