@@ -101,6 +101,14 @@ Employees will be required to upload an attachment when they are submitting a ne
 >The leave unit of a leave and absence type can be modified as long as there as no leave transactions for that leave type.<br><br>
 >This feature cannot be turned on once it has been enabled. <br><br>
 
+1. On the **Leave and absence** page, select the **Links** tab.
+
+2. Under **Setup**, select **Leave and absence types**.
+
+3. Select a leave and absence type from the list and in **General** section, use the field **Unit** to define the leave unit, you can choose **Hours** or **Days**. In case the leave unit selected is Hours, you can also enable the **Enable half day definition** to define whether employees can select first half day or second half day off in case they are requesting a half day leave. The Enable half day definition field is optional.
+
+When submitting a new leave request, employees can choose different leave types to construct their leave request. However, all leave types selected as part of the single leave request should be of the same leave unit. They can view the leave unit for each leave type as part of the **Request time off** form.
+
 ## See also
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
