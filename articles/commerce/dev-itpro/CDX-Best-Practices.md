@@ -54,7 +54,7 @@ The features will change from month to month, so it is valuable to check back re
 
 ## Update configurations
 
-You must initialize the base configuratiton data for Commerce scheduler after:
+You must initialize the base configuration data for Commerce scheduler after:
 
 - Applying a service udpate
 - Enabling a Commerce feature that impact a configuration key
@@ -63,7 +63,7 @@ You must initialize the base configuratiton data for Commerce scheduler after:
  
    You will be asked if you would like to proceed with initializing the base configuration data for Commerce scheduler. Performing this action after every update is key to maintaining functionality as it correctly sets the configuration data for new tables or columns. 
   
-2. There is a parameter to **Delete existing configuration**.  Unless explicitly told to do, so or working on a non-production environment where losing configuration will not create an impact, leave this set to **No**.
+2. There is a parameter to **Delete existing configuration**.  Unless you are explicitly instructed to do tihs, or you are working on a non-production environment where losing configuration will not create an impact, leave this set to **No**.
 
 ## Valuable configurations
 
