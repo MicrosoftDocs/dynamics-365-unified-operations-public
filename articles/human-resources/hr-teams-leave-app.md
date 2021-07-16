@@ -172,6 +172,10 @@ If you're having trouble signing into or using the Dynamics 365 Human Resources 
 
 If you can't sign into the app, it's possible that the account you're using to sign into Microsoft Teams isn't associated with an employee record in Dynamics 365 Human Resources. Contact your system administrator to ensure your employee record is correctly associated.
 
+### Can't find the Dynamics 365 Human Resources environment in Settings
+
+If you are unable to choose the right Dynamics 365 environment, it's possible that the user record has not synced properly. Contact your system administrator to re-create the user record and associate with the users credentials and try logging in to the Human Resources app for Microsoft Teams in a few minutes. 
+
 ### Translations don't display correctly
 
 If translations don't display as expected, make sure the language you select in Teams matches the language selected in Human Resources **User options**.
