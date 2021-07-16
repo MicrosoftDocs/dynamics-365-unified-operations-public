@@ -44,7 +44,7 @@ In some organizations, a people manager might not be managing the leave for thei
 
 1.  In the **System Administration** workspace, select **Feature management**.
 
-2.  From the **Feature management** tab, enable the **Absence manager to manage leave** feature.
+2.  From the **Feature management** tab, enable the **(Preview)Absence manager to manage leave** feature.
 
 
 ## Define new custom hierarchy
