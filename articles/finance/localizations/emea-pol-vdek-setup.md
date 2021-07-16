@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prepare for JPK-V7M reporting
-description: This topic walks you through the process of setting up VAT declaration with registers (also called JPK_V7M, VDEK) in Poland. 
+description: This topic walks you through the process of setting up VAT declaration with registers (also called JPK-V7M, VDEK) in Poland. 
 author: liza-golub
 ms.date: 07/16/2021
 ms.topic: article
@@ -101,11 +101,11 @@ For more information about the setup of each lookup field, see the subsections t
 You can easily export the setup of application-specific parameters from one version of a report and import it into another version. 
 You can also export the setup from one report and import it into another report, provided that both reports have the same structure of lookup fields.
 
-### Import transactions (ImportTransaction)
+### Import transactions (ImportSelector)
 
 | Name          | Label (En) | Label (Pl) | Description (En)                                                                                                                         | Description (Pl)                                                                                                            |
 |-------------------|----------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| ImportTransaction | Import         | Import         | A designation that is related to input tax on imports of goods, including goods that are taxed in accordance with article 33a of the VAT Act | Oznaczenie dotyczące podatku naliczonego z tytułu importu towarów, w tym importu towarów rozliczanego zgodnie z art. 33a ustawy |
+| ImportSelector | Import         | Import         | A designation that is related to input tax on imports of goods, including goods that are taxed in accordance with article 33a of the VAT Act | Oznaczenie dotyczące podatku naliczonego z tytułu importu towarów, w tym importu towarów rozliczanego zgodnie z art. 33a ustawy |
 
 For this lookup field, the following master data sources are available for setup:
 
@@ -138,18 +138,20 @@ For this lookup field, the following master data sources are available for the s
 - Sales tax group
 - Customer account ID
 - Customer group
-- Vendor account ID (as of KB4615826)
-- Vendor group (as of KB4615826)
+- Supplier account ID
+- Supplier group
 
 This lookup field defines conditions that are based on current company's master data sources. These conditions will produce a mark of **1** for the corresponding element from the list of designations that are related to the procedures under the **\<SprzedazWiersz\>** tag. Several designations can be marked for the same output VAT record. Therefore, if a company must report different designations, separate conditions must be defined.
+
+**Procedural markings** are not required for documents of **RO** (Internal summary document) type (**\<TypDokumentu\>** tag under the **\<SprzedazWiersz\>** tag).
 
 The following table shows the lookup results (designations) for **ProceduralMarkingsSelector**.
 
 | Name       | Label (En)                                                                                            | Label (Pl)                                                         | Description (En)                                                                                                                                                                                         | Description (Pl)                                                                                                                                                                               |
 |----------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SW             | Mail order sale                                                                                           | Sprzedaży wysyłkowej                                                   | Delivery as part of a mail order sale from the territory of the country, as referred to in article 23 of the VAT Act                                                                                         | Dostawa w ramach sprzedaży wysyłkowej z terytorium kraju, o której mowa w art. 23 ustawy                                                                                                           |
+| SW (*for reporting periods before July 1, 2021 only*) | Mail order sale                                                                                           | Sprzedaży wysyłkowej                                                   | Delivery as part of a mail order sale from the territory of the country, as referred to in article 23 of the VAT Act                                                                                         | Dostawa w ramach sprzedaży wysyłkowej z terytorium kraju, o której mowa w art. 23 ustawy                                                                                                           |
 | EE             | Telecommunications                                                                                        | Usług telekomunikacyjnych                                              | The provision of telecommunications, broadcasting, and electronic services that are referred to in article 28k of the VAT Act                                                                                | Świadczenie usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy                                                                                              |
-| TP             | Links between the buyer and the supplier                                                                  | Istniejące powiązania między nabywcą a dokonującym                     | Existing links between the buyer and the supplier of goods or the provider of services, as referred to in article 32, section 2, point 1 of the VAT Act                                                      | Istniejące powiązania między nabywcą a dokonującym dostawy towarów lub usługodawcą, o których mowa w art. 32 ust. 2 pkt 1 ustawy                                                                   |
+| TP             | Links between the buyer and the supplier                                                                  | Istniejące powiązania między nabywcą a dokonującym                     | Existing links between the buyer and the supplier of goods or the provider of services, as referred to in article 32, section 2, point 1 of the VAT Act. Except for the case of supplies of goods and the provision of services where the relationship between the purchaser and the supplying service provider arises solely from a link with the State Treasury or local authorities or their associations.                                                       | Istniejące powiązania między nabywcą a dokonującym dostawy towarów lub usługodawcą, o których mowa w art. 32 ust. 2 pkt 1 ustawy. Z wyjątkiem sytuacji, gdy przypadku dostaw towarów oraz świadczenia usług, gdy powiązania między nabywcą a dokonującym dostawy towarów lub usługodawcą wynikają wyłącznie z powiązania ze Skarbem Państwa lub jednostkami samorządu terytorialnego lub ich związkami.                                                                   |
 | TT_WNT         | Intra-community acquisition as part of a three-party transaction                                          | Wewnątrzwspólnotowe nabycie w ramach transakcji trójstronnej           | The intra-community acquisition of goods by the second-most-taxable person as part of a three-party transaction, under the simplified procedure that is referred to in section XII, chapter 8 of the VAT Act | Wewnątrzwspólnotowe nabycie towarów dokonane przez drugiego w kolejności podatnika VAT w ramach transakcji trójstronnej w procedurze uproszczonej, o której mowa w dziale XII rozdziale 8 ustawy   |
 | TT_D           | Delivery of goods outside Poland as part of a three-party transaction                                     | Dostawa towarów poza terytorium kraju w ramach transakcji trójstronnej | The supply of goods outside the territory of the country by the second VAT payer in a three-party transaction, under the simplified procedure that is referred to in section XII, chapter 8 of the VAT Act   | Dostawa towarów poza terytorium kraju dokonana przez drugiego w kolejności podatnika VAT w ramach transakcji trójstronnej w procedurze uproszczonej, o której mowa w dziale XII rozdziale 8 ustawy |
 | I_42           | Customs procedure 42 (import)                                                                             | Procedury celnej 42 (import)                                           | The intra-community supply of goods after they are imported under customs procedure 42 (import)                                                                                                              | Wewnątrzwspólnotowa dostawa towarów następująca po imporcie tych towarów w ramach procedury celnej 42 (import)                                                                                     |
@@ -175,7 +177,9 @@ For this lookup field, the following master data sources are available for setup
 - Customer account ID
 - Customer group
 
-This lookup field defines conditions that are based on current company's master data sources. These conditions will produce a mark of **1** for the corresponding element from the list of designations that are related to the supply of goods and services under the **\<SprzedazWiersz\>** tag. Several designations can be marked for the same output VAT record. Therefore, if a company must report different designations, separate conditions must be available in the company's master data.
+This lookup field defines conditions that are based on current company's master data sources. These conditions will produce a mark of **1** for the corresponding element from the list of designations that are related to the supply of goods and services (**GTU_\*** markers) under the **\<SprzedazWiersz\>** tag. Several designations can be marked for the same output VAT record. Therefore, if a company must report different designations, separate conditions must be available in the company's master data.
+
+**GTU_\*** markers are not required for documents of **WEW** (internal document) and **RO** (Internal summary document) type (**\<TypDokumentu\>** tag under the **\<SprzedazWiersz\>** tag).
 
 The following table shows the lookup results (designations) for **ServiceDeliverySelector**.
 
@@ -222,7 +226,7 @@ The following table shows the lookup results for **DeclarationMarkersSelector**.
 | Name | Label (En)                               | Label (Pl)                             | Description (En)                                                                                                                                               | Description (Pl)                                                                     |
 |----------|----------------------------------------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | P_65     | Activities that are mentioned in article 122 | Czynności o których mowa w art. 122 ustawy | Activities that the taxpayer performed and that are mentioned in article 122 of the VAT Act. Tax exemption for the supply, import, and purchase of investment gold | Podatnik wykonywał w okresie rozliczeniowym czynności, o których mowa w art. 122 ustawy  |
-| P_65     | Tax liability reduction                      | Obniżenie kwoty zobowiązania podatkowego   | The tax liability reduction that the taxpayer benefits from and that is mentioned in article 108d of the VAT Act                                                   | Podatnik korzysta z obniżenia zobowiązania podatkowego, o którym mowa w art. 108d ustawy |
+| P_67     | Tax liability reduction                      | Obniżenie kwoty zobowiązania podatkowego   | The tax liability reduction that the taxpayer benefits from and that is mentioned in article 108d of the VAT Act                                                   | Podatnik korzysta z obniżenia zobowiązania podatkowego, o którym mowa w art. 108d ustawy |
 | Inne     | Other                                        |                                            |                                                                                                                                                                    |                                                                                          |
 
 > [!NOTE]
@@ -332,10 +336,10 @@ The following table shows the lookup results for **PurchaseDocumentTypesSelector
 
 ## Import a package of data entities that includes a predefined electronic message setup
 
-The process of setting up the Electronic messaging functionality for JPK_V7M reporting has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
+The process of setting up the Electronic messaging functionality for JPK-V7M reporting has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
 
 1. In [LCS](https://lcs.dynamics.com/v2), in the **Shared asset library**, select the **Data package** asset type. Then find **PL JPK_V7M EM setup**.**zip** in the list of data package files, and download it to your computer.
-2. After the PL JPK_V7M EM setup.zip file has been downloaded, open Finance, select the company that you will generate the JPK_VDEK from, and then go to **Workspaces** \> **Data management**.
+2. After the **PL JPK_V7M EM setup.zip** file has been downloaded, open Finance, select the company that you will generate the JPK-V7M report from, and then go to **Workspaces** \> **Data management**.
 3. Before you import setup data from the package of data entities, follow these steps to make sure that the data entities in your application are refreshed and synced.
 4. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh has been completed. For more information about how to refresh the entity list, see [Entity list refresh](../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
 5. Validate that the source data and target data are correctly mapped. For more information, see the section about validation in [Data import and export jobs](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
@@ -345,7 +349,7 @@ The process of setting up the Electronic messaging functionality for JPK_V7M rep
 
 For more information about Data management, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
-You must now import data from the PL JPK_V7M EM setup.zip file into the selected company.
+You must now import data from the **PL JPK_V7M EM setup.zip** file into the selected company.
 
 1. In the **Data management** workspace, select **Import**, set the **Source data format** field to **Package**, and create a new importing project by selecting **New** on the Action Pane.
 2. Select **Add file** on the **Select entities** FastTab.
@@ -374,7 +378,7 @@ To work with the Electronic messaging functionality, you must define related num
 
 ## Save the executable class parameters for Electronic messaging
 
-The JPK_V7M processing uses the **EMGenerateJPKVDEKReportController_PL** executable class to initiate data collection for the report data provider and further report generation. Before you use this class for the first time, you must save its parameters.
+The JPK-V7M processing uses the **EMGenerateJPKVDEKReportController_PL** executable class to initiate data collection for the report data provider and further report generation. Before you use this class for the first time, you must save its parameters.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messaging** \> **Executable class settings**.
 2. Select the **Wygenerowanie JPK_V7M** executable class (which is set to call **EMGenerateJPKVDEKReportController_PL**), and then, on the Action Pane, select **Parameters**. In the **Generate Polish JPK_VDEK report** dialog box, select **OK**.
@@ -385,12 +389,12 @@ The dialog box for the executable class includes the **Consider VAT report date 
 
 ## Set up security roles for electronic message processing
 
-Different groups of users might require access to the JPK_V7M processing. You can limit access to the processing, based on security groups that are defined in the system.
+Different groups of users might require access to the JPK-V7M processing. You can limit access to the processing, based on security groups that are defined in the system.
 
-Follow these steps to limit access to the JPK_V7M processing.
+Follow these steps to limit access to the JPK-V7M processing.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
-2. Select the **JPK_V7M** processing, and add the security groups that must work with it on the **Security roles** FastTab. If no security group is defined for the processing, only a system admin can see it on the **Electronic messages** page.
+2. Select the **JPK-V7M** processing, and add the security groups that must work with it on the **Security roles** FastTab. If no security group is defined for the processing, only a system admin can see it on the **Electronic messages** page.
 
 ## Set up an office code for electronic message processing
 
