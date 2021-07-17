@@ -161,8 +161,23 @@ Receipts for France can include additional information that was implemented by u
     - Issuing a gift card
     - Adding funds to a gift card
 
-- **Certification data** – A receipt can include the category and number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements.
-- **Build number** – A receipt can include the POS build number.
+- **Certification data** – A receipt can include the category and number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements. By default, the values equal the category and the number of the certificate that is granted to Microsoft:
+
+    - Microsoft Dynamics 365 for Finance and Operations:
+
+        - **Certificate category**: C
+        - **Certificate number**: 0202
+
+    - Microsoft Dynamics 365 for Commerce:
+
+        - **Certificate category**: B
+        - **Certificate number**: 0203
+    > [!NOTE]
+    > By default, the certificate category and number that are assigned to Finance and Operations are printed. If you're implementing Commerce, you must override the certificate category and number.
+
+- **Software version**
+
+If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the certificate category and number, as well as specify a corresponding software version number. Otherwise, the default values for the certificate category and number will be printed.
 
 #### Restricting the duration of shifts
 
@@ -246,31 +261,29 @@ On the **Language text** page, add the following records for the labels of the c
 | en-US       | 900002  | Sequential number         |
 | en-US       | 900003  | Digital signature         |
 | en-US       | 900004  | Reprint number            |
-| en-US       | 900005  | Sales tax amount          |
-| en-US       | 900006  | Sales total               |
-| en-US       | 900007  | Sales total tax           |
-| en-US       | 900008  | Sales total including tax |
-| en-US       | 900009  | Build number              |
-| en-US       | 900010  | Certification category    |
-| en-US       | 900011  | Certificate number        |
-| en-US       | 900012  | Line count                |
+| en-US       | 900005  | Sales tax basis           |
+| en-US       | 900006  | Sales tax amount          |
+| en-US       | 900007  | Sales total               |
+| en-US       | 900008  | Sales total tax           |
+| en-US       | 900009  | Sales total including tax |
+| en-US       | 900010  | NF 525 Certificate        |
+| en-US       | 900011  | Line count                |
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
-| Name                  | Type    | Caption text ID |
-|-----------------------|---------|-----------------|
-| TRANSACTIONTYPE       | Receipt | 900001          |
-| SEQUENTIALNUMBER      | Receipt | 900002          |
-| DIGITALSIGNATURE      | Receipt | 900003          |
-| REPRINTNUMBER         | Receipt | 900004          |
-| SALESTAXAMOUNT        | Receipt | 900005          |
-| SALESTOTAL            | Receipt | 900006          |
-| SALESTOTALTAX         | Receipt | 900007          |
-| SALESTOTALINCLUDETAX  | Receipt | 900008          |
-| BUILDNUMBER           | Receipt | 900009          |
-| CERTIFICATIONCATEGORY | Receipt | 900010          |
-| CERTIFICATENUMBER     | Receipt | 900011          |
-| LINECOUNT             | Receipt | 900012          |
+| Name                            | Type    | Caption text ID |
+|---------------------------------|---------|-----------------|
+| TRANSACTIONTYPE_FR              | Receipt | 900001          |
+| SEQUENTIALNUMBER_FR             | Receipt | 900002          |
+| DIGITALSIGNATURE_FR             | Receipt | 900003          |
+| REPRINTNUMBER_FR                | Receipt | 900004          |
+| SALESTAXBASIS_FR                | Receipt | 900005          |
+| SALESTAXAMOUNT_FR               | Receipt | 900006          |
+| SALESTOTAL_FR                   | Receipt | 900007          |
+| SALESTOTALTAX_FR                | Receipt | 900008          |
+| SALESTOTALINCLUDETAX_FR         | Receipt | 900009          |
+| CERTIFICATENUMBERANDCATEGORY_FR | Receipt | 900010          |
+| LINECOUNT_FR                    | Receipt | 900011          |
 
 ### Configure receipt formats
 
@@ -294,13 +307,15 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Sales total tax** – This field prints the receipt's total tax amount for cash sales. Prepayments and gift card operations are excluded. 
     - **Sales total including tax** – This field prints the receipt's total cash sale amount. The amount includes tax. Prepayments and gift card operations are excluded.
     - **Tax ID** – This standard field enables a sales tax summary to be printed per sales tax code. The field must be added to a new line.
+    - **Sales tax basis** – This field prints the receipt's tax basis for cash sales per sales tax code. Prepayments and gift card operations are excluded. The field must be added to the same line as the **Tax ID** field.
     - **Sales tax amount** – This field prints the receipt's tax amount for cash sales per sales tax code. Prepayments and gift card operations are excluded. The field must be added to the same line as the **Tax ID** field.
     - **Sequential number** – This field prints the sequential number of a signed sales transaction.
     - **Digital signature** – This field prints the extract from the digital signature.
     - **Reprint number** – This field prints the number of a receipt copy.
-    - **Build number** – This field prints the POS build number.
-    - **Certification category** – This field prints the category of the certificate of compliance that an authorized body issued per the NF 525 certification requirements.
-    - **Certificate number** – This field prints the number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements.
+    - **Text** – Add a text field, and specify the version of software used to produce the receipt:
+        - **Microsoft Dynamics 365 Finance and Operations v.10.0**; or
+        - **Microsoft Dynamics 365 Commerce v.10.0**.
+    - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements.
     - **Line count** – This field prints the number of printed item lines on a receipt.
     - **Text** – Add a text field, and specify the VAT identifier of the organization.
     - **Text** – Add a text field, and specify the NAF code of the organization.
