@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.5
 # Configure site builder global configuration settings based on enabled features
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how global configuration properties in Microsoft Dynamics 365 Commerce site builder can be made visible, hidden, or disabled when specific Commerce features are turned on.
 

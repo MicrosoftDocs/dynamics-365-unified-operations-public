@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 # Apply display settings for product dimensions
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This topic covers the display settings for product dimensions and describes how to apply them in Microsoft Dynamics 365 Commerce.
 
