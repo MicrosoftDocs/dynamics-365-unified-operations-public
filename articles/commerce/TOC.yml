@@ -1194,6 +1194,10 @@
           href: localizations/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/emea-fra-fi-deployment.md
+        - name: Fiscal archive
+          href: localizations/emea-fra-fiscal-archive.md
+        - name: Fiscal archive integrity verification tool
+          href: localizations/emea-fra-integrity-verification.md
         - name: Migrating from legacy functionality for France
           href: localizations/emea-fra-fi-migration.md
         - name: Deployment guidelines for cash registers (legacy)
