@@ -32,13 +32,29 @@ ms.dyn365.ops.version: 7.3.2
 
 This topic provides an overview of the cash register functionality that is available for France in Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
 
+## Certification information
+
+This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted certificates of compliance with the following categories and numbers: 
+
+    - Microsoft Dynamics 365 Finance and Operations, version 10:
+
+        - **Certificate category**: B
+        - **Certificate number**: 0350
+
+    - Microsoft Dynamics 365 Commerce, version 10:
+
+        - **Certificate category**: B
+        - **Certificate number**: 0203
+
+Up-to-date certificates can be found on the [portal of the certification body](https://certificates.infocert.org/).
+
+## Overview
+
 The functionality consists of the following parts:
 
 - Common point-of-sale (POS) features that are available to customers in all countries or regions. Examples include an option to register various events in the POS audit log.
 - France-specific features, such as digital signatures for sales transactions.
-
-## Overview
-
+- 
 ### Common POS features
 
 To learn about POS features that are available to customers in all countries or regions, see [Commerce home page](../index.md).
@@ -161,19 +177,10 @@ Receipts for France can include additional information that was implemented by u
     - Issuing a gift card
     - Adding funds to a gift card
 
-- **Certification data** – A receipt can include the category and number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements. By default, the values equal the category and the number of the certificate that is granted to Microsoft:
+- **Certification data** – A receipt can include the category and number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements.
 
-    - Microsoft Dynamics 365 for Finance and Operations:
-
-        - **Certificate category**: C
-        - **Certificate number**: 0202
-
-    - Microsoft Dynamics 365 for Commerce:
-
-        - **Certificate category**: B
-        - **Certificate number**: 0203
     > [!NOTE]
-    > By default, the certificate category and number that are assigned to Finance and Operations are printed. If you're implementing Commerce, you must override the certificate category and number.
+    > By default, the certificate category and number that are assigned to [Finance and Operations](#certification-information) are printed. If you're implementing Commerce, you must override the certificate category and number.
 
 - **Software version**
 
@@ -313,8 +320,8 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Digital signature** – This field prints the extract from the digital signature.
     - **Reprint number** – This field prints the number of a receipt copy.
     - **Text** – Add a text field, and specify the version of software used to produce the receipt:
-        - **Microsoft Dynamics 365 Finance and Operations v.10.0**; or
-        - **Microsoft Dynamics 365 Commerce v.10.0**.
+        - **Microsoft Dynamics 365 Finance and Operations v.10**; or
+        - **Microsoft Dynamics 365 Commerce v.10**.
     - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements.
     - **Line count** – This field prints the number of printed item lines on a receipt.
     - **Text** – Add a text field, and specify the VAT identifier of the organization.
