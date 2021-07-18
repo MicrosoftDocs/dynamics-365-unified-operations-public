@@ -172,10 +172,12 @@ Receipts for France can include additional information that was implemented by u
 - **Reprint number** – An original receipt or a receipt copy can include the number of the receipt copy. For an original receipt, the value is **0** (zero).
 - **Line count** – A receipt can include the number of printed item lines on the receipt.
 - **Sales totals** – Custom fields for receipt totals exclude non-sales amounts from the total transaction amounts. Non-sales amounts include amounts for the following operations:
+
     - Prepayments (customer account deposits)
     - Prepayments for sales orders (customer order deposits)
     - Issuing a gift card
     - Adding funds to a gift card
+
 - **Certification data** – A receipt can include the category and number of a certificate of compliance that an authorized body issued per the NF 525 certification requirements.
 - **Software version** - A receipt can include the version of the software certified per the NF 525 certification requirements that is used to produce receipts.
 
