@@ -233,10 +233,15 @@ The migration process should consist of the following steps.
 4. Make sure that all offline transactions are synced from offline-enabled MPOS devices.
 5. Close shifts and logoff from all POS.
 6. Enable Fiscal integration and configure functional profile.
-7. Restart POS.
+7. Adjust receipt formats.
+8. Restart POS.
 
     > [!NOTE]
     > Depending on the type of environment, you can find more technical details about the migration process in either the [Migration in a development environment](#migration-in-a-development-environment) section or the [Migration in a production environment](#migration-in-a-production-environment) section.
+
+#### Adjust receipt formats
+
+You need to adjust your receipt formats to use updated custom fields. Review the [Configure custom fields so that they can be used in receipt formats for sales receipts](./emea-fra-cash-registers.md#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) section for up-to-date custom fields for France.
 
 #### Set up the registration process
 
