@@ -36,15 +36,12 @@ This topic provides an overview of the cash register functionality that is avail
 
 This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted certificates of compliance with the following categories and numbers: 
 
-    - Microsoft Dynamics 365 Finance and Operations, version 10:
-
-        - **Certificate category**: B
-        - **Certificate number**: 0350
-
-    - Microsoft Dynamics 365 Commerce, version 10:
-
-        - **Certificate category**: B
-        - **Certificate number**: 0203
+- Microsoft Dynamics 365 Finance and Operations, version 10:
+    - **Certificate category**: B
+    - **Certificate number**: 0350
+- Microsoft Dynamics 365 Commerce, version 10:
+    - **Certificate category**: B
+    - **Certificate number**: 0203
 
 Up-to-date certificates can be found on the [portal of the certification body](https://certificates.infocert.org/).
 
@@ -54,7 +51,7 @@ The functionality consists of the following parts:
 
 - Common point-of-sale (POS) features that are available to customers in all countries or regions. Examples include an option to register various events in the POS audit log.
 - France-specific features, such as digital signatures for sales transactions.
-- 
+
 ### Common POS features
 
 To learn about POS features that are available to customers in all countries or regions, see [Commerce home page](../index.md).
@@ -177,14 +174,8 @@ Receipts for France can include additional information that was implemented by u
     - Issuing a gift card
     - Adding funds to a gift card
 
-- **Certification data** – A receipt can include the category and number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements.
-
-    > [!NOTE]
-    > By default, the certificate category and number that are assigned to [Finance and Operations](#certification-information) are printed. If you're implementing Commerce, you must override the certificate category and number.
-
-- **Software version**
-
-If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the certificate category and number, as well as specify a corresponding software version number. Otherwise, the default values for the certificate category and number will be printed.
+- **Certification data** – A receipt can include the category and number of a certificate of compliance that an authorized body issued per the NF 525 certification requirements.
+- **Software version** - A receipt can include the version of the software certified per the NF 525 certification requirements that is used to produce receipts.
 
 #### Restricting the duration of shifts
 
@@ -241,9 +232,7 @@ You must make the following changes on the **Legal entities** page. These settin
 
 ### Set up VAT per French requirements
 
-
 You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
-
 
 You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in France.
 
@@ -319,10 +308,18 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Sequential number** – This field prints the sequential number of a signed sales transaction.
     - **Digital signature** – This field prints the extract from the digital signature.
     - **Reprint number** – This field prints the number of a receipt copy.
-    - **Text** – Add a text field, and specify the version of software used to produce the receipt:
+    - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements.
+
+    > [!NOTE]
+    > By default, the certificate category and number that are assigned to [Finance and Operations](#certification-information) are printed. If you're implementing Commerce, you must override the certificate category and number.
+
+    - **Text** – Add a text field, and specify the version of software certified per the NF 525 certification requirements that is used to produce receipts, for example:
         - **Microsoft Dynamics 365 Finance and Operations v.10**; or
         - **Microsoft Dynamics 365 Commerce v.10**.
-    - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements.
+
+    > [!NOTE]
+    > If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the certificate category and number, as well as specify a corresponding software version number. Otherwise, the default values for the certificate category and number will be printed.
+
     - **Line count** – This field prints the number of printed item lines on a receipt.
     - **Text** – Add a text field, and specify the VAT identifier of the organization.
     - **Text** – Add a text field, and specify the NAF code of the organization.
