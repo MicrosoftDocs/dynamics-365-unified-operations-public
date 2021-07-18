@@ -59,6 +59,10 @@ The following table shows the current reference list of cookies placed by Dynami
 | \_msdyn365___muid_                            | Used if experimentation is activated for the environment; used as a user ID for experimentation purposes. | 1 year |
 | \_msdyn365___exp_                             | Used if experimentation is activated for the environment; used to measure performance load balancing.         | 1 hour |
 | d365mkt                                       | Used if location-based detection to track a user's IP address for store location suggestions is enabled in Commerce site builder at **Site Settings \> General \> Enable location based store detection**.      | 1 hour |
+| \_msdyn365___tuid_                           | Used only if Experimentation feature is turned on, this cookie is a generated GUID to serve as a user identifier. Value will change if a user's sign-in status changes.      | 1 year |
+| \_msdyn365___aud_0                          | Used only if targeting is used on a page or fragment requested by a C2. This cookie stores segment values used by targeting. It is only dropped when the values come from a third-party segmentation provider.      | 7 days |
+| \_msdyn365___aud_1                           | Used only if targeting is used on a page or fragment requested by a C2. This cookie stores segment values used by targeting. It is only dropped when the values come from a third-party segmentation provider.      | 7 days |
+| \_msdyn365___aud_2                           | Used only if targeting is used on a page or fragment requested by a C2. This cookie stores segment values used by targeting. It is only dropped when the values come from a third-party segmentation provider.      | 7 days |
 
 If a site user selects any social media links within a site, the cookies in the following table will also be tracked on their browser.
 
