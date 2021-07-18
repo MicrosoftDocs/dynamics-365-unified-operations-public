@@ -36,12 +36,12 @@ This topic provides an overview of the cash register functionality that is avail
 
 This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted certificates of compliance with the following categories and numbers: 
 
-- Microsoft Dynamics 365 Finance and Operations, version 10:
-    - **Certificate category**: B
-    - **Certificate number**: 0350
-- Microsoft Dynamics 365 Commerce, version 10:
-    - **Certificate category**: B
-    - **Certificate number**: 0203
+- **Microsoft Dynamics 365 Finance and Operations, version 10**:
+    - Certificate category: B
+    - Certificate number: 0350
+- **Microsoft Dynamics 365 Commerce, version 10**:
+    - Certificate category: B
+    - Certificate number: 0203
 
 Up-to-date certificates can be found on the [portal of the certification body](https://certificates.infocert.org/).
 
@@ -73,24 +73,24 @@ The following France-specific POS features are enabled when the **ISO code** fie
 
 #### Digital signing overview
 
-The following types of data (transactions and events) are digitally signed in POS:
+The following types of records (transactions and events) are digitally signed in POS:
 
 - Sales transactions
 - Copies of receipts
-- Closed shift/Z reports
+- Closed shifts/Z reports
 - Audit events
 
-The signature is created and recorded in the channel database at the same time that the transaction is finalized or the event is registered. The data that is signed is a text string that consists of several data fields. These fields vary, depending on the type of data. The general signing process consists of the following steps:
+The signature is created and recorded in the channel database at the same time that the transaction is finalized or the event is registered. The data that is signed is a text string that consists of several data fields. These fields vary, depending on the type of record. The general signing process consists of the following steps:
 
-1. Based on the type of data, select the next sequential number for signing purposes.
-2. Extract the data fields that must be signed from the record that is being signed.
-3. Build a string that consists of a comma-separated list of the data fields.
-4. Add the previous signature for the same type of data.
-5. Calculate a hash code of the string by using the SHA-x algorithm.
-6. Encrypt the resulting string by using a digital certificate.
-7. Do the base64url transformation for the resulting string.
-8. Store the string that is used for signing, the sequential number, the signature, and the thumbprint of the certificate in a fiscal response record that is linked to the transaction or event.
-9. Transfer the fiscal response to the enterprise resource planning (ERP) system in Headquarters, together with the transaction or event.
+1. Select the next sequential number for signing purposes for the same register and type of record. 
+1. Extract the data fields that must be signed from the record that is being signed.
+1. Build a string that consists of a comma-separated list of the data fields.
+1. Add the previous signature for the same register and type of record.
+1. Calculate a hash code of the string by using the SHA-x algorithm.
+1. Encrypt the resulting string by using a digital certificate.
+1. Do the base64url transformation for the resulting string.
+1. Store the string that is used for signing, the sequential number, the signature, the hash algorithm identification and the thumbprint of the certificate in a fiscal response record that is linked to the transaction or event.
+1. Transfer the fiscal response to the enterprise resource planning (ERP) system in Headquarters, together with the transaction or event.
 
 #### Digital signing of sales transactions
 
@@ -104,8 +104,8 @@ Only transactions for cash sales are signed. Here are some examples of transacti
 
 The data that is signed for a sales transaction is a text string that consists of the following data fields:
 
-1. The total amount of sales lines. The amount includes tax per tax rate.
-2. The total amount of sales. The amount includes tax.
+1. The total amounts of sales lines including tax per tax rate.
+2. The total amount of sales including tax.
 3. The date and time of the transaction, in the format YYYYMMDDHHMMSS.
 4. The register number.
 5. The sequential number of the signed sales transaction.
@@ -119,14 +119,16 @@ You can view the transaction signature, together with the transaction data that 
 
 When a copy of a receipt is printed, the event is registered in the POS audit event log. Only copies of receipts for signed sales transactions are signed. The data that is signed for a receipt copy event is a text string that consists of the following data fields:
 
-1. The receipt number of the original sales transaction.
-2. The type of transaction for the original sales transaction.
-3. The number of the receipt copy for this sales transaction.
-4. The staff ID of the operator who is printing the receipt copy.
-5. The date and time of the receipt copy event, in the format YYYYMMDDHHMMSS.
-6. The sequential number of the signed receipt copy event.
-7. A value (Y/N) that indicates whether the transaction is the first signed receipt copy event for the register.
-8. The previous signature for the same register. A blank value is used for the first signed receipt copy event.
+1. The register number that the copy of receipt is printed from.
+2. The sequential number of the signed receipt copy event.
+3. The type of transaction for the original sales transaction.
+4. The number of the receipt copy for this sales transaction.
+5. The staff ID of the operator who prints the receipt copy.
+6. The date and time of the receipt copy event, in the format YYYYMMDDHHMMSS.
+7. The register number of the original sales transaction.
+8. The sequential number of the original sales transaction.
+9. A value (Y/N) that indicates whether the transaction is the first signed receipt copy event for the register.
+10. The previous signature for the same register. A blank value is used for the first signed receipt copy event.
 
 You can view the signature of the receipt copy, together with the event data that was used to generate it, on the **Signature** tab of the **Audit events** page in Headquarters.
 
@@ -134,12 +136,14 @@ You can view the signature of the receipt copy, together with the event data tha
 
 When a shift is closed, the event is registered in the POS audit event log. The data that is signed for a shift closing event is a text string that consists of the following data fields:
 
-1. The total amount of sales. The amount includes tax per tax rate.
-2. The total amount of sales. The amount includes tax.
-3. The date and time of the shift closing event, in the format YYYYMMDDHHMMSS.
-4. The sequential number of the shift closing event.
-5. A value (Y/N) that indicates whether the transaction is the first signed shift closing event for the register.
-6. The previous signature for the same register. A blank value is used for the first signed shift closing event.
+1. The total amount of sales and returns for the shift including tax per tax rate.
+2. The total amount of sales and returns for the shift including tax.
+3. The perpetual (cumulative) grand total of absolute values of sales and returns for shifts of the same register including tax. 
+4. The date and time of the shift closing event, in the format YYYYMMDDHHMMSS.
+5. The date and time of the shift.
+6. The sequential number of the shift closing event.
+7. A value (Y/N) that indicates whether the transaction is the first signed shift closing event for the register.
+8. The previous signature for the same register. A blank value is used for the first signed shift closing event.
 
 You can view the signature of a closed shift, together with the shift data that was used to generate it, on the **Signature** tab of the **Shifts** page in Headquarters.
 
