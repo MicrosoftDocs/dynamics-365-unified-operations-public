@@ -4,7 +4,7 @@
 title: Financial reporting (Russia)
 description: This topic provides information about financial reporting for Russia.
 author: Anasyash
-ms.date: 11/16/2018
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -216,16 +216,20 @@ Use the following procedure to create operations for report cells.
 14. After you've finished creating the operation lines, you can arrange them in the correct order. Select a line, and then select the **Up** or **Down** button to move it one position up or down.
 
 ## Run the report
-Before you can run a report, you should create electronic reporting format that will export the data calculated for financial report in some format. See more details how to create electronic reporting format in Excel, in [Configure financial reports in Excel](rus-excel-financial-report.md)
+Before you run a report, create an electronic reporting format that will export the data that's calculated for the financial report. For more information about how to create an  electronic reporting format in Excel, see [Configure financial reports in Excel](rus-excel-financial-report.md)
 
-Go to **General ledger > Inquiries and reports > Financial reports (Russia)**. In the field **Format mapping** select the electronic report format that you have created. Select **OK**. On the dialog **Electronic reporting parameters** fill necessary parameters to run the report: 
-- define the period for running the report, in the field **To date**.
-- define the financial report in the field **Report**
+1. Go to **General ledger > Inquiries and reports > Financial reports (Russia)**. 
+2. In the **Format mapping** field, select the electronic report format that you have created and then select **OK**. 
+3. On the **Electronic reporting parameters** dialog box, fill in the necessary parameters to run the report: 
+
+      - In the **To date** field, define the period to run the report.
+      - In the **Report** field, define the financial report.
  
   > [!NOTE]
-    > One of the parameters for report generation is **Reporting date**. You should use this field only if you post ledger transactions that are corrective to the closed financial period. Entering the Reporting date will allow you to report corrective transactions in the corrective report for the closed period and exclude corrective transactions from the current period reporting:
-    > - If you're generating a corrective report for closed periods, and you set the **Reporting date** field, the calculation of cells on financial reports considers transactions of the base period and all later transactions, up to the reporting date, that correct the base period. (The reporting date in the posted transaction belongs to the base period.)
-    >  - If you're generating the report for a recent period, and you set the **Reporting date** field, the calculation of cells on financial reports considers transactions of the base (recent) period but excludes transactions that correct previous (closed) periods. (The reporting date in the posted transaction belongs to previous closed period.)
+  > One of the parameters is **Reporting date**. Use this field only if you post ledger transactions that correct the closed financial period. Entering the reporting date allows you to report corrective transactions in the corrective report for the closed period and exclude corrective transactions from the current reporting period.
+  >
+  > If you're generating a corrective report for closed periods, and you set the **Reporting date** field, the cell calculations on financial reports considers transactions of the base period and all later transactions, up to the reporting date, that correct the base period. The reporting date in the posted transaction belongs to the base period.
+  > If you're generating the report for a recent period, and you set the **Reporting date** field, the cell calculation on financial reports considers transactions of the base, or recent period, but excludes transactions that correct previous, or closed periods. The reporting date in the posted transaction belongs to previous closed period.
 
 ## Run the report from Electronic messages.
 For more information, see [Electronic messaging](../general-ledger/electronic-messaging.md). The following example shows how to configure electronic messages to run the ER configuration for financial reports.
