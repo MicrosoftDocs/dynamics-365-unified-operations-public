@@ -65,7 +65,10 @@ The following POS localization features that are available to customers in all c
     - Printing a copy of a receipt
     - Starting offline mode
     - Ending offline mode
+    - Applying a manager override
+    - Voiding a transaction    - 
     - Cleanup of transactions from the channel database
+    - Applying a major update of the software with compliance impact
 
 ### France-specific POS features
 
@@ -199,7 +202,7 @@ The totals are also stored in the closed shift record and transferred to Headqua
 
 #### Period grand total journal
 
-Period grand total journals summarize sales totals per store and fiscal period.
+Period grand total journals summarize sales totals per store and fiscal period (e.g. month). In addition, an annual journal summarizes sales totals per store and fiscal year.
 
 Period grand total journals are maintained on the **Period grand total journal** page. To create a new journal, you must specify a store. If previous journals exist for the store, the next fiscal period after the last closed journal for the store is automatically used as the new journal period. If previous journals do not exist, you can specify the end date of the journal. In this case, the fiscal period that includes the specified date is used as the journal period.
 
@@ -209,9 +212,11 @@ After the journal is calculated, it can be closed. A closed journal can't be mod
 
 A closed journal is digitally signed. You can view the journal signature, together with the journal data that was used to generate it, on the **Signature details** tab of the **Period grand total journal** page in Headquarters.
 
+A period grand total journal can be marked as **Annual** when being created. An annual journal summarizes period grand total journals for the fiscal periods of a fiscal year. It is only possible to create an annual journal for a fiscal year if a journal for the last fiscal period of the fiscal year has been created, calculated and closed. It is not, however, required that journals for all fiscal periods of the fiscal year exist. For example, if a new store is opened in the middle of the year, the first journal will correspond to the fiscal period that the store is opened in. In this case the first annual journal will summarize jornals for fiscal periods from the fiscal period that the store is opened in to the last fiscal period of the fiscal year.
+
 #### Archive
 
-An archive is an XML file that can be exported from a Period grand total journal that has been closed. It includes the totals for the closed period, and also includes detailed data about sales transactions and events. The exported file is digitally signed, and the signature is contained in a separate file.
+An archive is an XML file that can be exported from a period grand total journal that has been closed. It includes the totals for the closed period, and also includes detailed data about sales transactions and events. The exported file is digitally signed, and the signature is contained in a separate file.
 
 The archive format is implemented by using [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md).
 
