@@ -49,9 +49,7 @@ Some of these features must be enabled using [Feature management](../../fin-ops/
 | <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
 | <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
 | <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
-| <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
-| System administration | [Enhanced support for full feature lifecycle in Feature management](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/NNN)  | [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
-
+| System administration | [Name of feature](Link to feature in the Release Plans)[Enhanced support for full feature lifecycle in Feature management](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/NNN)  | [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 
 ## Additional resources
 
