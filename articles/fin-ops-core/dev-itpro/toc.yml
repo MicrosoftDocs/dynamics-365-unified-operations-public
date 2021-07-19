@@ -364,6 +364,8 @@
             href: deployment/troubleshoot-newinfrastructure.md
           - name: Planned maintenance in self-service environments FAQ
             href: deployment/plannedmaintenance-selfservice.md
+          - name: Business continuity and disaster recovery
+            href: sysadmin/business-continuity-disaster-recovery.md
         - name: Complete Azure Resource Manager onboarding
           href: deployment/arm-onboarding.md
         - name: Azure ExpressRoute and Finance and Operations
