@@ -30,7 +30,7 @@ The geo-secondaries are kept synchronized with the primary instance through cont
 To learn more about data protection in non-production environments, see [Database movement operations home page](../database/dbmovement-operations.md).
 
 ## Planned failover
-In the event that Microsoft determines there is a risk to the availability of the primary Azure region, for example if there is an impending hurricane, Microsoft will notify customers and switch over the environment to operate out of the secondary region. There will be a short outage while the environment is configured to the secondary region. There will be no data loss as both Azure regions are online and the replication will be caught up.
+In the event that Microsoft determines there is a risk to availability of the primary Azure region, for example if there is an impending hurricane, Microsoft will notify customers and switch over the environment to operate out of the secondary region. There will be a short outage while the environment is configured to the secondary region. There will be no data loss as both Azure regions are online and the replication will be caught up.
 
 ## Unplanned failover
 In the event of an unanticipated region-wide outage, for example, a natural disaster such as an earthquake--and Microsoft determines the region will not become available within a reasonable amount of time--Microsoft will notify customers and switch the environment to operate out of the secondary region. In this case, it possible that customers may experience a data loss of up to 15 minutes, depending on the nature and timing of the outage.
