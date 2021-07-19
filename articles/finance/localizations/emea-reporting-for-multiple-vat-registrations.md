@@ -29,6 +29,8 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 This topic explains how to do reporting for multiple value-added tax (VAT) registrations.
 
 ## Prerequisites
