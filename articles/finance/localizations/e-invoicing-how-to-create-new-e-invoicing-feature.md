@@ -92,24 +92,4 @@ Continue the process at the **Electronic invoicing features** page, with creatio
 
 10. Close the page.
 
-## Publishing the new e-invoicing feature in the Global repository
-
-1.  On the **Versions** tab, select the Feature version in **Draft.**
-
-2.  Select **Change status** and select **Complete**.
-
-3.  Select **Change status** again and select **Share**.
-
-## Deploying the new e-invoicing feature
-
-1.  On the **Versions** tab, select **Deploy**.
-
-2.  On **Parameters**, set the **Deploy to connection application** toggle to No.
-
-3.  Set the **Deploy to service environment** toggle to Yes.
-
-4.  In the **Service environment** field, select the e-invoicing environment to deploy.
-
-5.  In the **From date** field, select the effective date.
-
-6.  Select **OK.**
+11. To deploy your new Electronic invoicing feature to the service environment, see [Deploy the Electronic invoicing feature to Service environment](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#deploy-the-electronic-invoicing-feature-to-service-environment).
