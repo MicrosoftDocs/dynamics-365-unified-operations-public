@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business continuity and disaster recovery
-description: This topics describes the business continuity and disaster recovery that Microsoft provides for production instances of Microsoft Dynamics 365 SaaS applications in the event of an Azure region-wide outage.
+description: This topics describes the business continuity and disaster recovery that Microsoft provides for production instances of Microsoft Dynamics 365 SaaS applications if an Azure region-wide outage occurs.
 author: MicroSri
 ms.date: 07/13/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-07-31
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft provides business continuity and disaster recovery for production instances of Dynamics 365 software as a service (SaaS) applications in the event of a Microsoft Azure region-wide outage.
+Microsoft provides business continuity and disaster recovery for production instances of Dynamics 365 software as a service (SaaS) applications if a Microsoft Azure region-wide outage occurs.
 
 Customers who have purchased the appropriate licenses can deploy a production instance of a Finance and Operations app. For more information, see [Cloud deployment overview](../deployment/cloud-deployment-overview.md).
 
@@ -35,7 +35,7 @@ If Microsoft determines that availability of the primary Azure region is at risk
 
 ## Unplanned failover
 
-In the event of an unanticipated region-wide outage (for example, because of a natural disaster such as an earthquake), if Microsoft determines that the region will not become available within a reasonable amount of time, we will notify customers and switch over the environment so that it operates out of the secondary region. In this case, customers might experience data loss of up to 15 minutes, depending on the nature and timing of the outage.
+If an unanticipated region-wide outage occurs (for example, because of a natural disaster such as an earthquake), and Microsoft determines that the region won't become available within a reasonable amount of time, we will notify customers and switch over the environment so that it operates out of the secondary region. In this case, customers might experience data loss of up to 15 minutes, depending on the nature and timing of the outage.
 
 > [!IMPORTANT]
 > While the environment is operating out of the secondary region, the Finance and Operations app environment will have reduced functionality. Financial Reporting and Power BI reporting won't be available. If Financial Reporting is critical for a customer during the disaster, the customer can request restoration of the service to Microsoft through a support ticket.
