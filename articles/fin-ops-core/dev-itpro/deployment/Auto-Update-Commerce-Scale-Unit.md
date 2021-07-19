@@ -5,7 +5,7 @@ title: Auto-update for Commerce Scale Unit (cloud)
 description: This topic describes auto-updates for Commerce Scale Unit (cloud).
 author: AamirAllaq
 manager: tonyafehr
-ms.date: 05/25/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
