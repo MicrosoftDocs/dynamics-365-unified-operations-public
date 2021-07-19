@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This topic explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
 author: sarvanisathish
-ms.date: 06/29/2021
+ms.date: 07/19/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -228,6 +228,8 @@ Before you begin the replication process, note that the LCS environment will be 
     > [!NOTE]
     > Repeat this step until the data upgrade is successful.
 
+For more information about the data upgrade process, see [Upgrade from AX 2012 – Data upgrade FAQ](upgrade-faq.md). This topic answers some frequently asked questions about data upgrade during an upgrade from Microsoft Dynamics AX 2012.
+
 ## Reporting section of the application
 
 You can use the following options to review the reports of the replication validation, replication status, and data upgrade status:
@@ -268,3 +270,4 @@ After step 3 of the data upgrade process is completed, you should find the publi
 - On the **Snapshot** tab, you can view the status of the snapshot.
 - To view the detail log/transaction, double-tap (or double-click) a grid item.
 - To view the data replication to the target, on the **All Subscription** tab, double-tap (or double-click) the subscription from the grid item.
+
