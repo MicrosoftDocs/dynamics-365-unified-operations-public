@@ -228,10 +228,11 @@ Before you run a report, create an electronic reporting format that will export 
   > [!NOTE]
   > One of the parameters is **Reporting date**. Use this field only if you post ledger transactions that correct the closed financial period. Entering the reporting date allows you to report corrective transactions in the corrective report for the closed period and exclude corrective transactions from the current reporting period.
   >
-  > If you're generating a corrective report for closed periods, and you set the **Reporting date** field, the cell calculations on financial reports considers transactions of the base period and all later transactions, up to the reporting date, that correct the base period. The reporting date in the posted transaction belongs to the base period.
-  > If you're generating the report for a recent period, and you set the **Reporting date** field, the cell calculation on financial reports considers transactions of the base, or recent period, but excludes transactions that correct previous, or closed periods. The reporting date in the posted transaction belongs to previous closed period.
+  > - If you're generating a corrective report for closed periods, and you set the **Reporting date** field, the calculation of cells on financial reports considers transactions of the base period and all later transactions, up to the reporting date, that correct the base period. The reporting date in the posted transaction belongs to the base period.
+  > 
+  > - If you're generating the report for a recent period, and you set the **Reporting date** field, the calculation of cells on financial reports considers transactions of the base (recent) period but excludes transactions that correct previous (closed) periods. The reporting date in the posted transaction belongs to previous closed period.
 
-## Run the report from Electronic messages.
+## Run the report from Electronic messages
 For more information, see [Electronic messaging](../general-ledger/electronic-messaging.md). The following example shows how to configure electronic messages to run the ER configuration for financial reports.
 
 1. On the **Message statuses** page, create message statuses that are applicable to the report (for example, **Created** and **Generated**).
@@ -262,6 +263,6 @@ For more information, see [Electronic messaging](../general-ledger/electronic-me
 10. If you're prompted, enter user parameters in the dialog box.
 11. Review the generated file in **Attachments**.
 
-Find more details about how to run report from electronic messages, on the example of Accounting reporting, in the topic [Accounting reporting in electronic format](rus-accounting-reporting.md)
+For more details about how to run a report from electronic messages using Accounting reporting, see [Accounting reporting in electronic format](rus-accounting-reporting.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
