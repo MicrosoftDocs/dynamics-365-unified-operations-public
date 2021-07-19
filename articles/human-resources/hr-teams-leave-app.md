@@ -4,7 +4,7 @@
 title: Manage leave requests in Teams
 description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
-ms.date: 05/25/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -171,6 +171,10 @@ If you're having trouble signing into or using the Dynamics 365 Human Resources 
 ### Can't sign into the Human Resources app in Teams
 
 If you can't sign into the app, it's possible that the account you're using to sign into Microsoft Teams isn't associated with an employee record in Dynamics 365 Human Resources. Contact your system administrator to ensure your employee record is correctly associated.
+
+### Can't find the Dynamics 365 Human Resources environment in Settings
+
+If you can't select the correct Dynamics 365 environment, the user record might not have been correctly synced. Contact your system administrator to re-create the user record and associate it with the user credentials. Then try to sign in to the Human Resources app for Microsoft Teams in a few minutes.
 
 ### Translations don't display correctly
 
