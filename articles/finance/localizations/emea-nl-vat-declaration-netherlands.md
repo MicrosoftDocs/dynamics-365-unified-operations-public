@@ -25,7 +25,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# VAT declaration for Netherlands (Preview)
+# VAT declaration for Netherlands
 
 [!include [banner](../includes/banner.md)]
 
