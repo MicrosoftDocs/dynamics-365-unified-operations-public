@@ -2,15 +2,15 @@
 # required metadata
 
 title: Subledger transfer to the General ledger
-description: This topic describes capabilities in Microsoft Dynamics 365 Finance related to the subledger transfer process in the general ledger.
+description: This topic describes capabilities in Microsoft Dynamics 365 Finance related to the subledger transfer process in General ledger.
 author: roschlom
-ms.date: 09/09/2019
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
-
+k
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 # ROBOTS: 
 audience: Application User
@@ -37,15 +37,18 @@ In version 8.1, changes were made to allow the transfer of rules, which deprecat
 
 The following options are available for transferring subledger batches. 
 
- - Asynchronous – This option will immediately schedule the transfer of the subledger accounting entries to the general ledger. The general ledger voucher will be recorded as soon as resources are free to process this request on the server. 
+- Asynchronous – This option will immediately schedule the transfer of the subledger accounting entries to the general ledger. The General ledger voucher will be recorded as soon as resources are free to process this request on the server. 
 
-- Scheduled batch – This option will add the subledger accounting entries that are being transferred to the processing queue in the general ledger, where the entries will be processed in order received. The general ledger voucher will be recorded at the scheduled time if resources are free to process this batch job on the server. 
+- Scheduled batch – This option will add the subledger accounting entries that are being transferred to the processing queue in the general ledger, where the entries will be processed in the order received. The General ledger voucher will be recorded at the scheduled time if resources are free to process this batch job on the server. 
  
 In version 10.0.8, improvements were made to enhance the performance of the Asynchronous option. This feature is enabled under the feature name **Subledger transfer to General Ledger performance optimization**. 
  
-This functionality improves the transfer of data from the subledger to the general ledger. It allows the process to be more efficient, and it groups together sets of smaller transactions to transfer. This allows for a more efficient use of the batch server. 
-This functionality requires that the batch server be set up, online, and functioning in order for the Asynchronous transfer option to work. 
-The efficiency change at the batch level is the use of just one recurring batch job for all legal entities in the system.  A new batch job is then created at runtime to process the required records not yet transferred. Additional settings can be controlled in process automation page in system administration. There you can edit the background process and change the frequency as well as define a sleep period.  
+The functionality for transferring subledger batches asynchronously improves the transfer of data from the subledger to the general ledger. It allows the process to be more efficient by grouping sets of smaller transactions together for transferring. Grouping transactions uses the batch server's resources more efficiently.
+
+This functionality requires that the batch server be set up, be online, and be functioning for the Asynchronous transfer option to work.
+
+The efficiency change at the batch level uses a single recurring batch job for all legal entities in the system. A new batch job is then created at runtime to process the required records that haven't yet transferred. More settings can be controlled from the **Process automation** page in system administration. From that page, you can modify the background process, change the frequency, and define a sleep period.
+
 For more information on process automation setup please see [Process Automations](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md). 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
