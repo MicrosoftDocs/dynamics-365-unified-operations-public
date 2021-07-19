@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Business continutiy and disaster recovery
+title: Business continuity and disaster recovery
 description: Microsoft provides business continuity and disaster recovery for production instances of Dynamics 365 SaaS applications, in the event of an Azure region wide outage. 
 author: MicroSri
 ms.date: 07/13/2021
@@ -13,7 +13,7 @@ ms.author: sriknair
 ms.search.validFrom: 2021-07-31
 ---
 
-# Business continutiy and disaster recovery
+# Business continuity and disaster recovery
 
 [!include[banner](../includes/banner.md)]
 
