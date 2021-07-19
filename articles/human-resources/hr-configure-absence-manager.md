@@ -4,7 +4,7 @@
 title: Configure the Absence manager role
 description: This topic explains how to set up the Absence manager role for management of employee leave.
 author: hasrivas
-ms.date: 07/14/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -55,7 +55,7 @@ The absence manager functionality uses a custom hierarchy that must be configure
 
 3. In the **Leave and absence** workspace, under **Links**, select **Leave and Absence parameters**.
 
-4. On the **General** tab, for the **Absence hierarchy** drop-down field, select the **Leave** hierarchy type that you created earlier. This Leave hierarchy association must be completed for every legal entity where the absence manager functionality will be used.
+4. On the **General** tab, in the **Absence hierarchy** drop-down list, select the **Leave** hierarchy type that you created earlier. This Leave hierarchy association must be completed for every legal entity where the absence manager functionality will be used.
 
 After the hierarchy type is defined, the position hierarchy report must be assigned to the position.
 
