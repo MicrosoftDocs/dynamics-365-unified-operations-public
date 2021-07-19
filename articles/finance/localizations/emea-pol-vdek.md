@@ -4,7 +4,7 @@
 title: VAT declaration with registers (JPK_V7M, VDEK)
 description: This topic walks you through the process of setting up VAT declaration with registers (also called JPK-V7M, VDEK) in Poland. 
 author: liza-golub
-ms.date: 04/27/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
