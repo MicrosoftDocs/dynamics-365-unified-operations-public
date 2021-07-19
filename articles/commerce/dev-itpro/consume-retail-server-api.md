@@ -279,9 +279,9 @@ If you are using the Retail SDK version 10.0.21 or lower use the **Microsoft.Dyn
     + Microsoft.IdentityModel.Clients.ActiveDirectory
     + Microsoft.Dynamics.Commerce.Proxy.ScaleUnit
 
-**Microsoft.Dynamics.Commerce.Proxy.ScaleUnit** will work only in online mode, connected to headless Commerce, for POS offline use the headless Commerce APIs library directly. 
+    **Microsoft.Dynamics.Commerce.Proxy.ScaleUnit** will work only in online mode, connected to headless Commerce, for POS offline use the headless Commerce APIs library directly. 
 
-If you are using the Retail SDK version 10.0.21 or lower use the **Microsoft.Dynamics.Commerce.RetailProxy** NuGet package from the **RetailSDK\\pkgs** folder to consume the co troller classes, in the NuGet manager, add a local repository for the **RetailSDK\\pkgs** folder.
+    If you are using the Retail SDK version 10.0.21 or lower, then use the **Microsoft.Dynamics.Commerce.RetailProxy** NuGet package from the **RetailSDK\\pkgs** folder to consume the controller classes. In the NuGet manager, add a local repository for the **RetailSDK\\pkgs** folder.
 
 2. In the **Program.cs** file, add the following variables.
 
