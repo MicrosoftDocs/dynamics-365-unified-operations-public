@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.21 of Finance and Operations apps (October 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.21 of Finance and Operations apps.
 author: sericks007
-ms.date: 07/15/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,7 +41,7 @@ This topic lists the features that are included in the platform updates for vers
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
-Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
+Some of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 | Feature area   | Feature                                                  | More information                                                                    |
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
@@ -50,8 +50,8 @@ Most of these features must be enabled using [Feature management](../../fin-ops/
 | <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
 | <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
 | <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
+| System administration | [Enhanced support for full feature lifecycle in Feature management](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/NNN)  | [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 
-Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 ## Additional resources
 
@@ -59,7 +59,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops/
 
 For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://lcs.dynamics.com).
 
-### Dynamics 365: 2021 release wave 1 plan
+### Dynamics 365: 2021 release wave 2 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
